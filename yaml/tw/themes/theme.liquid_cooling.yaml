@@ -1,6 +1,7 @@
 id: theme.liquid_cooling
 kind: theme
 name: 液冷散熱
+name_en: Liquid Cooling
 aliases:
 - 液冷
 - 水冷
@@ -11,11 +12,14 @@ stages:
 - id: parts
   name: 冷板、泵浦、快接頭等零件
   tier: upstream
+  name_en: Parts
 - id: modules
   name: 散熱模組與 CDU
   tier: midstream
+  name_en: Modules
 - id: system
   name: 機櫃與資料中心整合
   tier: downstream
+  name_en: Systems
 members: []
 as_of: null

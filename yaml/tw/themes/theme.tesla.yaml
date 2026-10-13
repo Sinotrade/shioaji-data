@@ -1,6 +1,7 @@
 id: theme.tesla
 kind: theme
 name: Tesla 供應鏈
+name_en: Tesla Supply Chain
 aliases:
 - Tesla
 - 特斯拉
@@ -10,11 +11,14 @@ stages:
 - id: components
   name: 電子與材料
   tier: upstream
+  name_en: Components
 - id: parts
   name: 零組件
   tier: midstream
+  name_en: Parts
 - id: system
   name: 模組與系統
   tier: downstream
+  name_en: Systems
 members: []
 as_of: null

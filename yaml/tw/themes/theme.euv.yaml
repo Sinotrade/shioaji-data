@@ -1,6 +1,7 @@
 id: theme.euv
 kind: theme
 name: EUV 極紫外光微影
+name_en: EUV Lithography
 aliases:
 - EUV
 related:
@@ -9,11 +10,14 @@ stages:
 - id: materials
   name: 光阻、光罩與耗材
   tier: upstream
+  name_en: Materials
 - id: equipment
   name: 設備零組件與服務
   tier: midstream
+  name_en: Equipment
 - id: fab
   name: 先進製程晶圓廠
   tier: downstream
+  name_en: Wafer Fabrication
 members: []
 as_of: null

@@ -1,6 +1,7 @@
 id: theme.apple
 kind: theme
 name: Apple 供應鏈
+name_en: Apple Supply Chain
 aliases:
 - Apple
 - 蘋果
@@ -9,11 +10,14 @@ stages:
 - id: components
   name: 零組件
   tier: upstream
+  name_en: Components
 - id: modules
   name: 模組
   tier: midstream
+  name_en: Modules
 - id: assembly
   name: 組裝
   tier: downstream
+  name_en: Assembly
 members: []
 as_of: null

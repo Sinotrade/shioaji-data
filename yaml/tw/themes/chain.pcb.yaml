@@ -1,6 +1,7 @@
 id: chain.pcb
 kind: chain
 name: 印刷電路板產業鏈
+name_en: PCB Value Chain
 aliases:
 - PCB
 related: []
@@ -8,14 +9,18 @@ stages:
 - id: materials
   name: 銅箔、玻纖布、樹脂
   tier: upstream
+  name_en: Materials
 - id: ccl
   name: 銅箔基板
   tier: midstream
+  name_en: Copper Clad Laminates
 - id: board
   name: 電路板與載板製造
   tier: midstream
+  name_en: PCB & Substrate Manufacturing
 - id: assembly
   name: 組裝與終端
   tier: downstream
+  name_en: Assembly
 members: []
 as_of: null

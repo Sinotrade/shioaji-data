@@ -1,6 +1,7 @@
 id: chain.server
 kind: chain
 name: 伺服器產業鏈
+name_en: Server Value Chain
 aliases:
 - 伺服器
 - Server
@@ -9,14 +10,18 @@ stages:
 - id: chips
   name: 晶片與記憶體
   tier: upstream
+  name_en: Chips & Memory
 - id: components
   name: 板卡、電源、散熱、機構件
   tier: midstream
+  name_en: Components
 - id: odm
   name: 主機板與系統組裝
   tier: downstream
+  name_en: Board & System Assembly
 - id: datacenter
   name: 雲端與資料中心
   tier: downstream
+  name_en: Cloud & Data Centers
 members: []
 as_of: null

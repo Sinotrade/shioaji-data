@@ -1,6 +1,7 @@
 id: theme.ai_server
 kind: theme
 name: AI 伺服器
+name_en: AI Servers
 aliases:
 - AI 伺服器
 - AI Server
@@ -13,14 +14,18 @@ stages:
 - id: chips
   name: 晶片與記憶體
   tier: upstream
+  name_en: Chips & Memory
 - id: board_materials
   name: 板材與載板
   tier: upstream
+  name_en: Boards & Substrates
 - id: components
   name: 電源、散熱、連接器、機構件
   tier: midstream
+  name_en: Components
 - id: assembly
   name: 系統與機櫃組裝
   tier: downstream
+  name_en: Assembly
 members: []
 as_of: null

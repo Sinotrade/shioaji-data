@@ -1,6 +1,7 @@
 id: theme.drone
 kind: theme
 name: 無人機
+name_en: Drones
 aliases:
 - 無人機
 - Drone
@@ -10,11 +11,14 @@ stages:
 - id: components
   name: 馬達、電池、通訊、感測
   tier: upstream
+  name_en: Components
 - id: modules
   name: 飛控與模組
   tier: midstream
+  name_en: Modules
 - id: system
   name: 整機與服務
   tier: downstream
+  name_en: Systems
 members: []
 as_of: null

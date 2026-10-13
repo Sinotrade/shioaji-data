@@ -1,6 +1,7 @@
 id: chain.display
 kind: chain
 name: 顯示器產業鏈
+name_en: Display Value Chain
 aliases:
 - 面板
 - Display
@@ -9,11 +10,14 @@ stages:
 - id: materials
   name: 玻璃、光學膜、驅動 IC
   tier: upstream
+  name_en: Materials
 - id: panel
   name: 面板與模組
   tier: midstream
+  name_en: Panels & Modules
 - id: device
   name: 終端產品
   tier: downstream
+  name_en: End Devices
 members: []
 as_of: null

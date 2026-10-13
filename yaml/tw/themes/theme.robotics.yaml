@@ -1,6 +1,7 @@
 id: theme.robotics
 kind: theme
 name: 機器人
+name_en: Robotics
 aliases:
 - 機器人
 - 人形機器人
@@ -10,11 +11,14 @@ stages:
 - id: components
   name: 減速機、傳動、馬達、感測
   tier: upstream
+  name_en: Components
 - id: control
   name: 控制器與模組
   tier: midstream
+  name_en: Controllers & Modules
 - id: system
   name: 整機與系統整合
   tier: downstream
+  name_en: Systems
 members: []
 as_of: null

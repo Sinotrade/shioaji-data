@@ -1,6 +1,7 @@
 id: theme.cpo
 kind: theme
 name: CPO 共封裝光學
+name_en: CPO (Co-Packaged Optics)
 aliases:
 - CPO
 - 共封裝光學
@@ -11,11 +12,14 @@ stages:
 - id: components
   name: 雷射與光學元件
   tier: upstream
+  name_en: Components
 - id: packaging
   name: 封裝與測試
   tier: midstream
+  name_en: Packaging
 - id: system
   name: 交換器與系統
   tier: downstream
+  name_en: Systems
 members: []
 as_of: null
