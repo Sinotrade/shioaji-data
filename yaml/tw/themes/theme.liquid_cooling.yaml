@@ -1,0 +1,21 @@
+id: theme.liquid_cooling
+kind: theme
+name: 液冷散熱
+aliases:
+- 液冷
+- 水冷
+- 散熱
+related:
+- theme.ai_server
+stages:
+- id: parts
+  name: 冷板、泵浦、快接頭等零件
+  tier: upstream
+- id: modules
+  name: 散熱模組與 CDU
+  tier: midstream
+- id: system
+  name: 機櫃與資料中心整合
+  tier: downstream
+members: []
+as_of: null

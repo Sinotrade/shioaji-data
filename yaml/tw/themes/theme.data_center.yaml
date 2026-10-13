@@ -1,0 +1,22 @@
+id: theme.data_center
+kind: theme
+name: 資料中心
+aliases:
+- 資料中心
+- Data Center
+related:
+- theme.ai_server
+- theme.power_grid
+- theme.liquid_cooling
+stages:
+- id: equipment
+  name: 電力、空調、機電設備
+  tier: upstream
+- id: it
+  name: 伺服器與網通
+  tier: midstream
+- id: operation
+  name: 建置與營運
+  tier: downstream
+members: []
+as_of: null

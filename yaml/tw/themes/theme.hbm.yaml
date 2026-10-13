@@ -1,0 +1,20 @@
+id: theme.hbm
+kind: theme
+name: HBM 高頻寬記憶體
+aliases:
+- HBM
+related:
+- theme.cowos
+- theme.ai_server
+stages:
+- id: equipment_materials
+  name: 設備與材料
+  tier: upstream
+- id: manufacturing
+  name: 記憶體製造與堆疊
+  tier: midstream
+- id: application
+  name: AI 加速器應用
+  tier: downstream
+members: []
+as_of: null

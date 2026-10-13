@@ -1,0 +1,22 @@
+id: chain.server
+kind: chain
+name: 伺服器產業鏈
+aliases:
+- 伺服器
+- Server
+related: []
+stages:
+- id: chips
+  name: 晶片與記憶體
+  tier: upstream
+- id: components
+  name: 板卡、電源、散熱、機構件
+  tier: midstream
+- id: odm
+  name: 主機板與系統組裝
+  tier: downstream
+- id: datacenter
+  name: 雲端與資料中心
+  tier: downstream
+members: []
+as_of: null

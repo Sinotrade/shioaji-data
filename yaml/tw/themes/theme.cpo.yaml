@@ -1,0 +1,21 @@
+id: theme.cpo
+kind: theme
+name: CPO 共封裝光學
+aliases:
+- CPO
+- 共封裝光學
+related:
+- theme.silicon_photonics
+- theme.ai_server
+stages:
+- id: components
+  name: 雷射與光學元件
+  tier: upstream
+- id: packaging
+  name: 封裝與測試
+  tier: midstream
+- id: system
+  name: 交換器與系統
+  tier: downstream
+members: []
+as_of: null

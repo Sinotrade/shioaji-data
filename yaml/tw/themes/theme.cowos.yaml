@@ -1,0 +1,29 @@
+id: theme.cowos
+kind: theme
+name: CoWoS 先進封裝
+aliases:
+- CoWoS
+- 先進封裝
+- 2.5D 封裝
+related:
+- theme.hbm
+- theme.abf
+- theme.ai_server
+stages:
+- id: equipment
+  name: 設備
+  tier: upstream
+- id: materials
+  name: 材料與載板
+  tier: upstream
+- id: manufacturing
+  name: 晶圓製造與封裝
+  tier: midstream
+- id: test
+  name: 測試
+  tier: midstream
+- id: design
+  name: ASIC 與晶片設計
+  tier: downstream
+members: []
+as_of: null

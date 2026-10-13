@@ -1,0 +1,21 @@
+id: chain.pcb
+kind: chain
+name: 印刷電路板產業鏈
+aliases:
+- PCB
+related: []
+stages:
+- id: materials
+  name: 銅箔、玻纖布、樹脂
+  tier: upstream
+- id: ccl
+  name: 銅箔基板
+  tier: midstream
+- id: board
+  name: 電路板與載板製造
+  tier: midstream
+- id: assembly
+  name: 組裝與終端
+  tier: downstream
+members: []
+as_of: null

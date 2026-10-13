@@ -1,0 +1,25 @@
+id: chain.semiconductor
+kind: chain
+name: 半導體產業鏈
+aliases:
+- 半導體
+- Semiconductor
+related: []
+stages:
+- id: ip_design
+  name: IP 與 IC 設計
+  tier: upstream
+- id: wafer_materials
+  name: 矽晶圓、材料與設備
+  tier: upstream
+- id: fab
+  name: 晶圓製造
+  tier: midstream
+- id: osat
+  name: 封裝測試
+  tier: downstream
+- id: distribution
+  name: IC 通路與模組
+  tier: downstream
+members: []
+as_of: null
