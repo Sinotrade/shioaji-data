@@ -23,9 +23,10 @@ v1/tw/relations/edges.*.json         關係邊表
 v1/tw/themes/themes.*.json           產業鏈與題材，含成員、階段、上中下游
 v1/tw/market/daily.*.json            收盤價與市值（每個交易日更新）
 v1/tw/revenue/latest.*.json          最新月營收
-pages/                               由同一份資料產生的 Markdown 頁面
-yaml/tw/companies/<code>.yaml        每家公司一個 YAML（固定路徑，方便閱讀與看歷史變更）
-yaml/tw/themes/<id>.yaml             每個產業鏈與題材一個 YAML
+v1/tw/companies/<code>.yaml          每家公司一個 YAML（固定檔名，方便閱讀與看歷史變更）
+v1/tw/companies/<code>.md            同一份資料的 Markdown 頁面；README.md 是全部公司索引
+v1/tw/themes/<id>.yaml               每個產業鏈與題材一個 YAML
+（.yaml 與 .md 給人看，App 讀 manifest 列出的 JSON）
 ```
 
 路徑依「版本 > 區域 > 資料類型」排列。同一版本內的所有區域與共用資料保證相容；有破壞性變更時才升 `v2`，`v1` 會保留一段時間。
