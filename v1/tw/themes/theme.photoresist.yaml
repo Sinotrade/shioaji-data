@@ -21,5 +21,23 @@ stages:
   name: 晶圓與面板製程
   tier: downstream
   name_en: Fab & Panel Processes
-members: []
-as_of: null
+members:
+- id: tw.4749
+  stage: make
+  tier: midstream
+  detail: IC與TFT-LCD光阻製造
+  as_of: '2026-10-14'
+  evidence:
+  - tw.4749#e3
+  - tw.4749#e4
+  confidence: ai_cross_checked
+- id: tw.5434
+  stage: make
+  tier: midstream
+  detail: 光阻材料銷售與代理
+  as_of: 2025-12
+  evidence:
+  - tw.5434#e3
+  - tw.5434#e1
+  confidence: ai_cross_checked
+as_of: '2026-10-14'

@@ -8,12 +8,537 @@ industry:
   l0_code: '24'
   l0_name: 半導體業
   l0_name_en: Semiconductor
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.semi
+  l2_name: 半導體
+  l2_name_en: Semiconductors
+  l3: semi.memory
+  l3_name: 記憶體製造
+  l3_name_en: Memory Manufacturing
+chain: chain.semiconductor
+primary_chain_position: midstream
+summary_short: 設計製造NOR、NAND、ROM與eMMC記憶體，另提供晶圓代工。
+summary_long: 旺宏以非揮發性記憶體的設計、製造與銷售為主，產品涵蓋NOR Flash、NAND Flash、ROM及eMMC，另提供晶圓代工服務。2025年Flash占合併營收77.55%，ROM占16.02%，晶圓代工占6.43%。ROM供應任天堂Switch 1；ArmorFlash應用於物聯網與車用安全儲存，並已整合至NVIDIA DRIVE平台。公司與NVIDIA有生態系合作，並曾與愛普共同開發NAND MCP。2026年公告向應用材料、KLA、Lam Research、Tokyo Electron及台灣艾司摩爾訂購生產設備。
+segments:
+- evidence_ids:
+  - e03
+  id: flash
+  name: Flash快閃記憶體
+  period: '2025'
+  revenue_share_pct: 77.55
+- evidence_ids:
+  - e04
+  id: rom
+  name: ROM唯讀記憶體
+  period: '2025'
+  revenue_share_pct: 16.02
+- evidence_ids:
+  - e05
+  id: foundry
+  name: 晶圓代工服務
+  period: '2025'
+  revenue_share_pct: 6.43
+main_theme: theme.5g
+themes:
+- stage: components
+  theme: theme.5g
+  tier: upstream
+relations:
+  competitors:
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: NOR Flash市場
+    details:
+    - NOR Flash市場
+    edge: e8657dceb7566
+    evidence_level: primary
+    id: eu.IFX
+    name: Infineon Technologies AG
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: NOR Flash市場
+    details:
+    - NOR Flash市場
+    edge: e46fb7d21054c
+    evidence_level: primary
+    id: tw.2344
+    name: 華邦電
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  customers:
+  - as_of: '2026-04-27'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: Switch 1用ROM
+    details:
+    - Switch 1用ROM
+    edge: e6063a94a3647
+    evidence_level: media
+    id: jp.7974
+    name: 任天堂
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2026-10
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 詮鼎集團代理Flash與NOR Flash
+    details:
+    - 詮鼎集團代理Flash與NOR Flash
+    edge: e6ee66f580608
+    evidence_level: primary
+    id: tw.3702
+    name: 大聯大
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  partners:
+  - as_of: '2017-01-12'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 共同開發NAND MCP
+    details:
+    - 共同開發NAND MCP
+    edge: ec0fd84b15e77
+    evidence_level: primary
+    id: tw.6531
+    name: 愛普*
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 快閃記憶體相容驗證與DRIVE平台安全儲存整合
+    details:
+    - 快閃記憶體相容驗證與DRIVE平台安全儲存整合
+    edge: e5472d95ef05b
+    evidence_level: primary
+    id: us.NVDA
+    name: NVIDIA
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司
+    details:
+    - 全資子公司
+    edge: e7bf6be922857
+    evidence_level: primary
+    id: org.macronix-america
+    name: Macronix America, Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司
+    details:
+    - 全資子公司
+    edge: e1062e731b9c3
+    evidence_level: primary
+    id: org.macronix-bvi
+    name: Macronix (BVI) Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司
+    details:
+    - 全資子公司
+    edge: edb887a0c30f1
+    evidence_level: primary
+    id: org.macronix-hong-kong
+    name: 旺宏(香港)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司
+    details:
+    - 全資子公司
+    edge: ebcab0cf6d1cd
+    evidence_level: primary
+    id: org.macronix-pte
+    name: Macronix Pte Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-04-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 旺宏香港旗下間接子公司
+    details:
+    - 旺宏香港旗下間接子公司
+    edge: e12ca3755e515
+    evidence_level: primary
+    id: org.macronix-suzhou
+    name: 旺宏微電子(蘇州)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股90.43%的子公司
+    details:
+    - 直接持股90.43%的子公司
+    edge: eee19d2ff2677
+    evidence_level: primary
+    id: org.mxtran
+    name: 全宏科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: '2026-06-11'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 半導體廠房工程實績
+    details:
+    - 半導體廠房工程實績
+    edge: e8aeae14ca433
+    evidence_level: primary
+    id: tw.2404
+    name: 漢唐
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 新台幣1,347,372,750元
+    as_of: '2026-05-12'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 2026年4月21日至5月12日期間設備採購
+    details:
+    - 2026年4月21日至5月12日期間設備採購
+    edge: e52ac7703429b
+    event_date: '2026-05-13'
+    events:
+    - amount: 新台幣1,347,372,750元
+      detail: 2026年4月21日至5月12日期間設備採購
+      event_date: '2026-05-13'
+    evidence_level: primary
+    id: jp.8035
+    name: Tokyo Electron
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣2,473,166仟元
+    as_of: '2026-04-17'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 訂購生產用機器設備
+    details:
+    - 訂購生產用機器設備
+    edge: ebcbee729d486
+    event_date: '2026-04-17'
+    events:
+    - amount: 新台幣2,473,166仟元
+      detail: 訂購生產用機器設備
+      event_date: '2026-04-17'
+    evidence_level: primary
+    id: org.applied-materials-south-east-asia
+    name: Applied Materials South East Asia Pte. Ltd.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣3,332,498,150元
+    as_of: '2026-07-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 2026年3月27日至7月14日期間設備採購
+    details:
+    - 2026年3月27日至7月14日期間設備採購
+    edge: eec9985711175
+    event_date: '2026-07-14'
+    events:
+    - amount: 新台幣3,332,498,150元
+      detail: 2026年3月27日至7月14日期間設備採購
+      event_date: '2026-07-14'
+    evidence_level: primary
+    id: org.asml-taiwan
+    name: 台灣艾司摩爾科技股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣3,509,862,650元
+    as_of: '2026-05-08'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 訂購生產用機器設備
+    details:
+    - 訂購生產用機器設備
+    edge: e975390444335
+    event_date: '2026-05-08'
+    events:
+    - amount: 新台幣3,509,862,650元
+      detail: 訂購生產用機器設備
+      event_date: '2026-05-08'
+    evidence_level: primary
+    id: org.lam-research-international-sdn-bhd
+    name: Lam Research International Sdn. Bhd.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣1,906,819仟元
+    as_of: '2026-05-05'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 訂購生產用機器設備
+    details:
+    - 訂購生產用機器設備
+    edge: ea950adc5fb7a
+    event_date: '2026-05-06'
+    events:
+    - amount: 新台幣1,906,819仟元
+      detail: 訂購生產用機器設備
+      event_date: '2026-05-06'
+    evidence_level: primary
+    id: us.KLAC
+    name: KLA
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 甲客戶：2025年報以代號揭露，未推定為任天堂或其他具名公司。
+- A供應商：2025年報以代號揭露。
+- 矽晶片、光阻劑化學品及特殊氣體的國內外供應商。
+- 全球一線GPU客戶。
+- 歐洲及美國衛星通訊廠商。
 website: http://www.macronix.com
 tax_id: '22099548'
 incorporated: '1989-12-09'
 listed: '1995-03-15'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-14'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2337#e01:
+    locator: Company Overview首段
+    published_date: null
+    publisher: Macronix International Co., Ltd.
+    quote_check: found
+    title: Macronix Company Overview
+    url: https://www.macronix.com/en-us/about/Pages/company-overview.aspx
+  tw.2337#e02:
+    locator: 自有晶圓廠段落
+    published_date: null
+    publisher: Macronix International Co., Ltd.
+    quote_check: found
+    title: Macronix Company Overview
+    url: https://www.macronix.com/en-us/about/Pages/company-overview.aspx
+  tw.2337#e03:
+    locator: 印刷第84頁，PDF第89頁，營業比重表；右側為114年度
+    published_date: '2026-03-07'
+    publisher: 旺宏電子股份有限公司
+    quote_check: found
+    title: 旺宏電子股份有限公司2025年度年報
+    url: https://www.macronix.com/zh-tw/about/investor-relations/Documents/annualreport_2025_ch.pdf
+  tw.2337#e04:
+    locator: 印刷第84頁，PDF第89頁，ROM營業比重；右側為114年度
+    published_date: '2026-03-07'
+    publisher: 旺宏電子股份有限公司
+    quote_check: found
+    title: 旺宏電子股份有限公司2025年度年報
+    url: https://www.macronix.com/zh-tw/about/investor-relations/Documents/annualreport_2025_ch.pdf
+  tw.2337#e05:
+    locator: 印刷第84頁，PDF第89頁，Foundry營業比重；右側為114年度
+    published_date: '2026-03-07'
+    publisher: 旺宏電子股份有限公司
+    quote_check: found
+    title: 旺宏電子股份有限公司2025年度年報
+    url: https://www.macronix.com/zh-tw/about/investor-relations/Documents/annualreport_2025_ch.pdf
+  tw.2337#e06:
+    locator: 印刷第84頁，PDF第89頁，產品與服務類別表之晶圓代工
+    published_date: '2026-03-07'
+    publisher: 旺宏電子股份有限公司
+    quote_check: found
+    title: 旺宏電子股份有限公司2025年度年報
+    url: https://www.macronix.com/zh-tw/about/investor-relations/Documents/annualreport_2025_ch.pdf
+  tw.2337#e07:
+    locator: 印刷第89頁，PDF第94頁，eMMC用途及功能
+    published_date: '2026-03-07'
+    publisher: 旺宏電子股份有限公司
+    quote_check: found
+    title: 旺宏電子股份有限公司2025年度年報
+    url: https://www.macronix.com/zh-tw/about/investor-relations/Documents/annualreport_2025_ch.pdf
+  tw.2337#e08:
+    locator: 產品介紹第四段
+    published_date: null
+    publisher: 旺宏電子股份有限公司
+    quote_check: found
+    title: 旺宏電子e.MMC記憶體
+    url: https://www.macronix.com/zh-tw/products/eMMC/Pages/default.aspx
+  tw.2337#e09:
+    locator: ArmorFlash產品介紹首段
+    published_date: null
+    publisher: 旺宏電子股份有限公司
+    quote_check: found
+    title: 旺宏電子ArmorFlash
+    url: https://www.macronix.com/zh-tw/products/ArmorFlash/Pages/default.aspx
+  tw.2337#e10:
+    locator: ROM產品段落，董事長吳敏求說明
+    published_date: '2026-04-27'
+    publisher: 中央通訊社
+    quote_check: found
+    title: 旺宏：下半年NAND Flash會漲價　未來1年大幅成長
+    url: https://www.cna.com.tw/news/afe/202604270213.aspx
+  tw.2337#e11:
+    locator: NVIDIA合作說明段落
+    published_date: null
+    publisher: 旺宏電子股份有限公司
+    quote_check: found
+    title: 旺宏電子Ecosystem Partnerships：NVIDIA
+    url: https://www.macronix.com/zh-tw/support/partnerships/Pages/nvidia.aspx
+  tw.2337#e12:
+    locator: 新聞稿首段
+    published_date: '2019-08-06'
+    publisher: Macronix International Co., Ltd.
+    quote_check: found
+    title: Macronix Secure Flash Memory Integrated in NVIDIA’s Next-Generation Autonomous Driving Platforms
+    url: https://www.macronix.com/en-us/about/news/Pages/Macronix-Secure-Flash-Memory-Integrated-in-NVIDIA%E2%80%99-sDriving-Platforms.aspx
+  tw.2337#e13:
+    locator: 新聞稿首段
+    published_date: '2017-01-12'
+    publisher: 旺宏電子股份有限公司
+    quote_check: found
+    title: 旺宏電子NAND MCP記憶體方案獲美國高通技術公司最新LTE物聯網晶片組採用入列
+    url: https://www.macronix.com/zh-tw/about/news/Pages/旺宏電子NAND-MCP記憶體方案-獲美國高通技術公司最新LTE物聯網晶片組採用入列.aspx
+  tw.2337#e14:
+    locator: 新聞稿第二段
+    published_date: '2017-01-12'
+    publisher: 旺宏電子股份有限公司
+    quote_check: found
+    title: 旺宏電子NAND MCP記憶體方案獲美國高通技術公司最新LTE物聯網晶片組採用入列
+    url: https://www.macronix.com/zh-tw/about/news/Pages/旺宏電子NAND-MCP記憶體方案-獲美國高通技術公司最新LTE物聯網晶片組採用入列.aspx
+  tw.2337#e15:
+    locator: 投影片第10頁，PDF第9頁，NOR Flash 2024全球市占率比較圖，五家公司為同圖比較對象
+    published_date: '2025-05-08'
+    publisher: Infineon Technologies AG
+    quote_check: found
+    title: Infineon FY2025 Q2 Investor Presentation
+    url: https://www.infineon.com/assets/row/public/documents/corporate/fy2025-q2-web-en.pdf
+  tw.2337#e16:
+    locator: 印刷第89頁，PDF第94頁，快閃記憶體用途及功能
+    published_date: '2026-03-07'
+    publisher: 旺宏電子股份有限公司
+    quote_check: found
+    title: 旺宏電子股份有限公司2025年度年報
+    url: https://www.macronix.com/zh-tw/about/investor-relations/Documents/annualreport_2025_ch.pdf
+  tw.2337#e17:
+    locator: 印刷第77頁，PDF第82頁，2025年底本公司投資及綜合持股表
+    published_date: '2026-03-07'
+    publisher: 旺宏電子股份有限公司
+    quote_check: found
+    title: 旺宏電子股份有限公司2025年度年報
+    url: https://www.macronix.com/zh-tw/about/investor-relations/Documents/annualreport_2025_ch.pdf
+  tw.2337#e18:
+    locator: 印刷第77頁，PDF第82頁，2025年底本公司投資及綜合持股表
+    published_date: '2026-03-07'
+    publisher: 旺宏電子股份有限公司
+    quote_check: found
+    title: 旺宏電子股份有限公司2025年度年報
+    url: https://www.macronix.com/zh-tw/about/investor-relations/Documents/annualreport_2025_ch.pdf
+  tw.2337#e19:
+    locator: 印刷第77頁，PDF第82頁，2025年底本公司投資及綜合持股表
+    published_date: '2026-03-07'
+    publisher: 旺宏電子股份有限公司
+    quote_check: found
+    title: 旺宏電子股份有限公司2025年度年報
+    url: https://www.macronix.com/zh-tw/about/investor-relations/Documents/annualreport_2025_ch.pdf
+  tw.2337#e20:
+    locator: 印刷第77頁，PDF第82頁，2025年底本公司投資及綜合持股表
+    published_date: '2026-03-07'
+    publisher: 旺宏電子股份有限公司
+    quote_check: found
+    title: 旺宏電子股份有限公司2025年度年報
+    url: https://www.macronix.com/zh-tw/about/investor-relations/Documents/annualreport_2025_ch.pdf
+  tw.2337#e21:
+    locator: 印刷第77頁，PDF第82頁，本公司投資、其他表列持有人投資及綜合投資三組欄位
+    published_date: '2026-03-07'
+    publisher: 旺宏電子股份有限公司
+    quote_check: found
+    title: 旺宏電子股份有限公司2025年度年報
+    url: https://www.macronix.com/zh-tw/about/investor-relations/Documents/annualreport_2025_ch.pdf
+  tw.2337#e22:
+    locator: 重大訊息第4項，交易對象及關係
+    published_date: '2025-04-23'
+    publisher: 旺宏電子股份有限公司／鉅亨網公告轉載
+    quote_check: found
+    title: 旺宏：代子公司旺宏(香港)有限公司公告取得使用權資產
+    url: https://news.cnyes.com/news/id/5947953
+  tw.2337#e23:
+    locator: 重大訊息第2、5、6及23項；事實發生日2026年4月17日
+    published_date: '2026-04-17'
+    publisher: 旺宏電子股份有限公司／MoneyDJ重大訊息轉載
+    quote_check: found
+    title: 旺宏本公司訂購機器設備公告
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=b7d54e1b-9bb8-49d7-ad01-990ed4a7e00f
+  tw.2337#e24:
+    locator: 重大訊息第2、5、6及23項；事實發生日2026年5月5日
+    published_date: '2026-05-06'
+    publisher: 旺宏電子股份有限公司／MoneyDJ重大訊息轉載
+    quote_check: found
+    title: 旺宏訂購機器設備一批，計約19.07億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=fe916608-84c3-45f5-af87-475a0f0c5acf
+  tw.2337#e25:
+    locator: 重大訊息第2、5、6及23項；事實發生日2026年5月8日
+    published_date: '2026-05-08'
+    publisher: 旺宏電子股份有限公司／MoneyDJ重大訊息轉載
+    quote_check: found
+    title: 旺宏本公司訂購機器設備公告
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=b7839f42-31e7-4099-967e-a8414250ec32
+  tw.2337#e26:
+    locator: 重大訊息第2、5、6及23項；事實發生期間2026年4月21日至5月12日
+    published_date: '2026-05-13'
+    publisher: 旺宏電子股份有限公司／MoneyDJ重大訊息轉載
+    quote_check: found
+    title: 旺宏4/21至5/12訂購機器設備一批，計約13.47億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=41c14993-a6d9-495f-b283-a3875f48ca73
+  tw.2337#e27:
+    locator: 重大訊息第2、5、6及23項；事實發生期間2026年3月27日至7月14日
+    published_date: '2026-07-14'
+    publisher: 旺宏電子股份有限公司／MoneyDJ重大訊息轉載
+    quote_check: found
+    title: 旺宏本公司訂購機器設備公告
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=1628a5c5-1433-44e2-b0ad-cca75439c36b

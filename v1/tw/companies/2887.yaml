@@ -8,12 +8,529 @@ industry:
   l0_code: '17'
   l0_name: 金融保險業
   l0_name_en: Financial and Insurance
-primary_chain_position: unknown
+  l1: finance
+  l1_name: 金融
+  l1_name_en: Financials
+  l2: fin.banking
+  l2_name: 銀行與金控
+  l2_name_en: Banks & Financial Holdings
+  l3: fin.holding
+  l3_name: 金融控股
+  l3_name_en: Financial Holding Companies
+chain: chain.finance
+primary_chain_position: not_applicable
+summary_short: 透過銀行、壽險、證券與投信子公司經營金融服務的金融控股公司。
+summary_long: 台新新光金以金融控股及被投資事業管理為主，旗下主要事業涵蓋銀行、壽險、證券與資產管理。主要子公司包括台新銀行、新光銀行、新光人壽、台新證券及台新投信。台新銀行經營Richart數位存款、外幣及信用卡服務，並與國際支付品牌及財金公司進行具名合作。金控於2025年7月完成與新光金控的換股合併；投信於同年11月、壽險於2026年1月、證券於同年4月完成子公司整併。近三年另有子公司不動產取得、處分、工程契約修訂及股權投資公告。
+segments:
+- evidence_ids:
+  - e2
+  - e3
+  - e4
+  id: banking
+  name: 銀行業務：台新銀行及新光銀行
+  period: 2026年上半年
+  revenue_share_pct: null
+- evidence_ids:
+  - e2
+  - e5
+  id: life_insurance
+  name: 壽險業務：新光人壽
+  period: 2026年上半年
+  revenue_share_pct: null
+- evidence_ids:
+  - e2
+  - e6
+  id: securities
+  name: 證券業務：台新證券
+  period: 2026年上半年
+  revenue_share_pct: null
+- evidence_ids:
+  - e7
+  - e16
+  id: asset_management
+  name: 投信與資產管理：台新投信
+  period: null
+  revenue_share_pct: null
+relations:
+  partners:
+  - as_of: '2024-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司台新銀行ATM跨行QR Code無卡提款合作
+    details:
+    - 子公司台新銀行ATM跨行QR Code無卡提款合作
+    edge: edcb7be2597b1
+    evidence_level: primary
+    id: org.fisc
+    name: 財金資訊股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司台新銀行支付品牌及收單合作
+    details:
+    - 子公司台新銀行支付品牌及收單合作
+    edge: e42c90ab7e828
+    evidence_level: primary
+    id: org.jcb
+    name: JCB
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司台新銀行Apple Pay感應加卡合作
+    details:
+    - 子公司台新銀行Apple Pay感應加卡合作
+    edge: eca07917a528f
+    evidence_level: primary
+    id: us.MA
+    name: 萬事達卡
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司台新銀行支付品牌及收單合作
+    details:
+    - 子公司台新銀行支付品牌及收單合作
+    edge: e6735dc3c5b30
+    evidence_level: primary
+    id: us.V
+    name: Visa
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2026-10-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 銀行子公司
+    details:
+    - 銀行子公司
+    edge: edaa4611a067c
+    evidence_level: primary
+    id: org.shin-kong-bank
+    name: 臺灣新光商業銀行股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 整併後壽險子公司
+    details:
+    - 整併後壽險子公司
+    edge: e81816de385d9
+    evidence_level: primary
+    id: org.shin-kong-life
+    name: 新光人壽保險股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 銀行子公司
+    details:
+    - 銀行子公司
+    edge: e60589a97b0bd
+    evidence_level: primary
+    id: org.taishin-bank
+    name: 台新國際商業銀行股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 投信子公司
+    details:
+    - 投信子公司
+    edge: e1ee1a6491887
+    evidence_level: primary
+    id: org.taishin-investment-trust
+    name: 台新證券投資信託股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 綜合證券子公司
+    details:
+    - 綜合證券子公司
+    edge: e4957b75f5317
+    evidence_level: primary
+    id: org.taishin-securities
+    name: 台新綜合證券股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 新臺幣2,696,937,686元
+    as_of: '2026-07-07'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司新光人壽修訂高雄租地委建工程契約
+    details:
+    - 子公司新光人壽修訂高雄租地委建工程契約
+    edge: ea396614f7df2
+    event_date: '2026-07-07'
+    events:
+    - amount: 新臺幣2,696,937,686元
+      detail: 子公司新光人壽修訂高雄租地委建工程契約
+      event_date: '2026-07-07'
+    evidence_level: primary
+    id: org.feng-yu-engineering
+    name: 豐譽聯合工程股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣 1,450,000,000 元
+    as_of: '2024-01-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司台新人壽取得台南永康土地及建物
+    details:
+    - 子公司台新人壽取得台南永康土地及建物
+    edge: e4d42c284c1f5
+    event_date: '2024-01-23'
+    events:
+    - amount: 新台幣 1,450,000,000 元
+      detail: 子公司台新人壽取得台南永康土地及建物
+      event_date: '2024-01-23'
+    evidence_level: primary
+    id: org.shan-tai-technology
+    name: 山汰科技股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2025-11-24'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司台新投信吸收合併新光投信
+    details:
+    - 子公司台新投信吸收合併新光投信
+    edge: e9e33e1b3f038
+    event_date: '2025-11-11'
+    events:
+    - amount: null
+      detail: 子公司台新投信吸收合併新光投信
+      event_date: '2025-11-11'
+    evidence_level: primary
+    id: org.shin-kong-investment-trust
+    name: 新光證券投資信託股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新臺幣27,045,516元(含稅)
+    as_of: '2026-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司新光銀行向集團壽險子公司取得使用權資產
+    details:
+    - 子公司新光銀行向集團壽險子公司取得使用權資產
+    edge: ef4f772ce289e
+    event_date: '2026-09-30'
+    events:
+    - amount: 新臺幣27,045,516元(含稅)
+      detail: 子公司新光銀行向集團壽險子公司取得使用權資產
+      event_date: '2026-09-30'
+    evidence_level: primary
+    id: org.shin-kong-life
+    name: 新光人壽保險股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2025-11-24'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司原新光人壽解除北士科T17、T18地上權
+    details:
+    - 子公司原新光人壽解除北士科T17、T18地上權
+    edge: ea3ea30ef53b4
+    event_date: '2025-11-21'
+    events:
+    - amount: null
+      detail: 子公司原新光人壽解除北士科T17、T18地上權
+      event_date: '2025-11-21'
+    evidence_level: primary
+    id: org.taipei-city-government
+    name: 臺北市政府
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: NTD 425,009,180
+    as_of: '2024-12-17'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司台新證券公告擬投資TWSE普通股
+    details:
+    - 子公司台新證券公告擬投資TWSE普通股
+    edge: ec0eefe9287a6
+    event_date: '2024-12-17'
+    events:
+    - amount: NTD 425,009,180
+      detail: 子公司台新證券公告擬投資TWSE普通股
+      event_date: '2024-12-17'
+    evidence_level: primary
+    id: org.twse
+    name: 臺灣證券交易所
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2026-04-06'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司台新證券吸收合併元富證券
+    details:
+    - 子公司台新證券吸收合併元富證券
+    edge: e4fabd04970b2
+    event_date: '2026-04-08'
+    events:
+    - amount: null
+      detail: 子公司台新證券吸收合併元富證券
+      event_date: '2026-04-08'
+    evidence_level: other
+    id: tw.2856
+    name: 元富證券股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2025-07-24'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 換股合併新光金控
+    details:
+    - 換股合併新光金控
+    edge: e8b38572d8ac0
+    event_date: '2025-04-01'
+    events:
+    - amount: null
+      detail: 換股合併新光金控
+      event_date: '2025-04-01'
+    evidence_level: primary
+    id: tw.2888
+    name: 新光金融控股股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 2026年6月新光人壽中正區不動產處分案之五位自然人買方，公告未揭露姓名。
 website: https://www.tsholdings.com.tw/
 tax_id: '80328055'
 incorporated: '2002-02-18'
 listed: '2002-02-18'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-14'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2887#e1:
+    locator: 封面；第16頁，附註一公司沿革
+    published_date: '2026-02-26'
+    publisher: 台新新光金融控股股份有限公司
+    quote_check: found
+    title: 台新新光金融控股股份有限公司及子公司2025年度合併財務報告
+    url: https://www.tsholdings.com.tw/tsh/relations/files/2025-4Q-consolidated-financial-statements_c.pdf
+  tw.2887#e10:
+    locator: 第1頁，既有支付品牌合作段落
+    published_date: null
+    publisher: 台新國際商業銀行股份有限公司
+    quote_check: found
+    title: 台新銀行與Discover及Diners Club收單合作邀請函
+    url: https://mcss.taishinbank.com.tw/MARS/template/Manual/News_Discover_invitation.pdf
+  tw.2887#e11:
+    locator: 新聞正文第一段；MDES服務說明
+    published_date: '2024-09-30'
+    publisher: 萬事達卡
+    quote_check: unreachable
+    title: 亞洲第一 萬事達卡即日推出Apple Pay感應加卡服務
+    url: https://www.mastercard.com/tw/zh/news-and-trends/press/2024/september/asia-first-apple-pay-tap-to-provision.html
+  tw.2887#e12:
+    locator: 新聞正文第一段
+    published_date: '2024-09-30'
+    publisher: 台新國際商業銀行股份有限公司
+    quote_check: found
+    title: 台新ATM 無卡跨提免序號 手機一掃就可領鈔
+    url: https://web.taishinbank.com.tw/TSB/personal/common/news/TSBankNews-006169/
+  tw.2887#e14:
+    locator: 重大訊息，說明第5項
+    published_date: '2025-04-01'
+    publisher: 台新金融控股股份有限公司
+    quote_check: found
+    title: 台新金控公告訂定與新光金融控股股份有限公司合併基準日
+    url: https://www.tsholdings.com.tw/tsh/relations/major/1743500760000/
+  tw.2887#e15:
+    locator: 頁面合併公告區，存續及消滅公司說明
+    published_date: '2025-04-01'
+    publisher: 台新金融控股股份有限公司
+    quote_check: found
+    title: 台新金控公告訂定與新光金融控股股份有限公司合併基準日
+    url: https://www.tsholdings.com.tw/tsh/relations/major/1743500760000/
+  tw.2887#e16:
+    locator: 基金公告第一項；正文載有雙方全名
+    published_date: '2025-11-11'
+    publisher: 台新國際商業銀行股份有限公司
+    quote_check: found
+    title: 公告新光證券投資信託股份有限公司與台新證券投資信託股份有限公司合併事宜
+    url: https://www.taishinbank.com.tw/invst/public/fund/01780e2a-bed2-11f0-b50f-0050568c09e3/
+  tw.2887#e17:
+    locator: 公司介紹第一段
+    published_date: null
+    publisher: 新光人壽保險股份有限公司
+    quote_check: found
+    title: 新光人壽關於我們
+    url: https://www.skl.com.tw/087b46cc14.html
+  tw.2887#e18:
+    locator: 公告主旨及公告事項第一、二項
+    published_date: '2026-04-08'
+    publisher: 聯博證券投資信託股份有限公司
+    quote_check: found
+    title: 為台新證券與元富證券合併事公告本公司之基金銷售機構異動
+    url: https://www.abfunds.com.tw/zh-tw/service-centre/announcements/2026/04-08-taishin.html
+  tw.2887#e19:
+    locator: 重大訊息，說明第3、4、21項
+    published_date: '2024-01-23'
+    publisher: 台新金融控股股份有限公司
+    quote_check: found
+    title: 台新金控代子公司台新人壽公告取得位於台南市之建物及土地
+    url: https://www.tsholdings.com.tw/tsh/relations/major/1706001120000/?__locale=zh
+  tw.2887#e2:
+    locator: 第37頁，台新新光金控及主要子公司損益表；欄序為台新銀行、新光銀行、新光人壽、台新證券、其他子公司、金控及調整項、合併；單位百萬元
+    published_date: '2026-09-01'
+    publisher: 台新新光金融控股股份有限公司
+    quote_check: found
+    title: 台新新光金控2026第二季營運說明會
+    url: https://www.tsholdings.com.tw/tsh/relations/files/2Q26_TS-Holdings_Analyst-meeting_CHI_final.pdf
+  tw.2887#e20:
+    locator: 重大訊息，變動緣由及主要內容
+    published_date: '2025-11-21'
+    publisher: 台新新光金融控股股份有限公司
+    quote_check: found
+    title: 本公司代子公司新光人壽公告臺北市市有土地設定地上權契約解約事宜(T17)
+    url: https://www.tsholdings.com.tw/tsh/relations/major/1763717040000/
+  tw.2887#e21:
+    locator: 新聞正文；Data update及Review Date
+    published_date: '2025-11-24'
+    publisher: 臺北市政府
+    quote_check: found
+    title: 北市府今天塗銷北士科T17、T18地上權，土地回歸市府
+    url: https://english.udd.gov.taipei/News_Content.aspx?n=DD9CEC17A97FBC64&s=6038B78598033BEE&sms=72544237BBE4C5F6
+  tw.2887#e22:
+    locator: 重大訊息，修訂後契約總金額、工程相對人及完工日期
+    published_date: '2026-07-07'
+    publisher: 台新新光金融控股股份有限公司
+    quote_check: found
+    title: 本公司代子公司新光人壽補充公告租地委建工程承攬契約總金額及完工日期
+    url: https://www.tsholdings.com.tw/tsh/relations/major/1783421820000/
+  tw.2887#e23:
+    locator: 重大訊息，交易總金額及交易相對人項目
+    published_date: '2026-06-17'
+    publisher: 台新新光金融控股股份有限公司
+    quote_check: found
+    title: 本公司代子公司新光人壽公告臺北市中正區不動產處分案
+    url: https://www.tsholdings.com.tw/tsh/relations/major/1781687880000/
+  tw.2887#e24:
+    locator: Statement第1、3、15、28項
+    published_date: '2024-12-17'
+    publisher: Taishin Financial Holding Co., Ltd.
+    quote_check: found
+    title: Taishin FHC announces on behalf of its subsidiary Taishin Securities Co., Ltd., the acquisition of Common Stock of Taiwan Stock Exchange Corporation
+    url: https://www.tsholdings.com.tw/tsh/relations/major/1734432060000/?__locale=en
+  tw.2887#e25:
+    locator: 重大訊息，說明第5、6、10、23項
+    published_date: '2026-09-30'
+    publisher: 台新新光金融控股股份有限公司
+    quote_check: found
+    title: 本公司代子公司新光銀行公告向新光人壽保險股份有限公司取得使用權資產
+    url: https://www.tsholdings.com.tw/tsh/relations/major/1790758140000/
+  tw.2887#e26:
+    locator: 新聞末段，子公司合併進度
+    published_date: '2026-09-01'
+    publisher: 台新新光金融控股股份有限公司
+    quote_check: found
+    title: 台新新光金控上半年稅後淨利438億元 年增329% 銀行、保險、證券三大事業動能強勁
+    url: https://www.tsholdings.com.tw/tsh/news/latest/1788229920000/
+  tw.2887#e3:
+    locator: 企業成員架構；台新銀行及其持股比例段落
+    published_date: null
+    publisher: 台新新光金融控股股份有限公司
+    quote_check: not_found
+    title: 台新新光金控企業成員
+    url: https://www.tsholdings.com.tw/tsh/about/member/
+  tw.2887#e4:
+    locator: 企業成員架構；新光銀行及其持股比例段落
+    published_date: null
+    publisher: 台新新光金融控股股份有限公司
+    quote_check: not_found
+    title: 台新新光金控企業成員
+    url: https://www.tsholdings.com.tw/tsh/about/member/
+  tw.2887#e5:
+    locator: 企業成員架構；新光人壽及其持股比例段落
+    published_date: null
+    publisher: 台新新光金融控股股份有限公司
+    quote_check: not_found
+    title: 台新新光金控企業成員
+    url: https://www.tsholdings.com.tw/tsh/about/member/
+  tw.2887#e6:
+    locator: 企業成員架構；台新證券公司簡介及持股比例段落
+    published_date: null
+    publisher: 台新新光金融控股股份有限公司
+    quote_check: not_found
+    title: 台新新光金控企業成員
+    url: https://www.tsholdings.com.tw/tsh/about/member/
+  tw.2887#e7:
+    locator: 企業成員架構；台新投信公司簡介、子公司身分及全權委託業務段落
+    published_date: null
+    publisher: 台新新光金融控股股份有限公司
+    quote_check: not_found
+    title: 台新新光金控企業成員
+    url: https://www.tsholdings.com.tw/tsh/about/member/
+  tw.2887#e8:
+    locator: 新聞正文，帳戶、外幣與信用卡整合服務段落
+    published_date: '2026-10-08'
+    publisher: 台新國際商業銀行股份有限公司
+    quote_check: found
+    title: 連假出國旺季來了！台新Richart搶攻旅遊族
+    url: https://www.taishinbank.com.tw/TSB/personal/common/news/TSBankNews-008404/
+  tw.2887#e9:
+    locator: 台新Richart卡產品名稱下方品牌列表；頁尾營業人資料
+    published_date: null
+    publisher: 台新國際商業銀行股份有限公司
+    quote_check: found
+    title: 信用卡－台新Richart卡
+    url: https://richart.tw/TSDIB_RichartWeb/card/credit-card

@@ -8,12 +8,518 @@ industry:
   l0_code: '31'
   l0_name: 其他電子業
   l0_name_en: Other Electronic
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.hardware
+  l2_name: 電腦與硬體
+  l2_name_en: Computers & Hardware
+  l3: hw.ems
+  l3_name: 電子製造服務（EMS）
+  l3_name_en: Electronics Manufacturing Services
+primary_chain_position: midstream
+summary_short: 以遊戲機等消費電子製造服務為主，另生產機構件、散熱及液冷產品。
+summary_long: 鴻準提供消費電子系統組裝與機構零組件製造服務，承接任天堂Switch 2組裝及機殼訂單。2025年營收分類中，電子產品貿易占89.51%，機構、零配件生產及銷售占9.91%，其他占0.58%。產品涵蓋AI伺服器液冷模組與分流器、電動車金屬零組件，以及機器人製造、組裝與關鍵零件開發。具名報導確認其供應BMW輕量化車殼，並為Tesla第一階供應商；Apple與Sony的明確供應證據屬歷史資料。近三年事件包括子公司出售Vizio股權予Walmart、認購RoboTemi特別股、取得美國與太原廠房使用權，以及投資陽程與增資顯示業務子公司。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_electronics
+  name: 電子產品貿易
+  period: '2025'
+  revenue_share_pct: 89.51
+- evidence_ids:
+  - e2
+  id: seg_components
+  name: 機構、零配件生產及銷售
+  period: '2025'
+  revenue_share_pct: 9.91
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 0.58
+main_theme: theme.ev
+themes:
+- stage: parts
+  theme: theme.ev
+  tier: midstream
+- stage: components
+  theme: theme.ai_server
+  tier: midstream
+- stage: components
+  theme: theme.robotics
+  tier: upstream
+- stage: system
+  theme: theme.robotics
+  tier: downstream
+- stage: modules
+  theme: theme.liquid_cooling
+  tier: midstream
+relations:
+  customers:
+  - as_of: '2025-02-05'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 輕量化車殼
+    details:
+    - 輕量化車殼
+    edge: e32866089a042
+    evidence_level: media
+    id: eu.BMW
+    name: BMW Group
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-04-25'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: Switch 2組裝代工與機殼供應
+    details:
+    - Switch 2組裝代工與機殼供應
+    edge: eedcfdcf7edcb
+    evidence_level: media
+    id: jp.7974
+    name: 任天堂
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2016-10-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: iPhone機殼供應（歷史關係）
+    details:
+    - iPhone機殼供應（歷史關係）
+    edge: e147ea20f5fef
+    evidence_level: media
+    id: us.AAPL
+    name: Apple
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-02-05'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: Tier1供應關係，未揭露具體品項
+    details:
+    - Tier1供應關係，未揭露具體品項
+    edge: edf1c5b55ff93
+    evidence_level: media
+    id: us.TSLA
+    name: Tesla
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資控股子公司
+    details:
+    - 全資控股子公司
+    edge: e0c2def6bcb72
+    evidence_level: primary
+    id: org.foxconn-precision-components-holding
+    name: Foxconn Precision Components Holding Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-08-06'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資顯示業務子公司
+    details:
+    - 全資顯示業務子公司
+    edge: e20ba0eab256b
+    evidence_level: primary
+    id: org.heng-zhun-intelligent-display
+    name: 衡準智能顯示股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-10'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 國內投資子公司
+    details:
+    - 國內投資子公司
+    edge: e93a65fb10014
+    evidence_level: primary
+    id: org.hua-zhun-investment
+    name: 華準投資股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資控股子公司
+    details:
+    - 全資控股子公司
+    edge: edabac49bef31
+    evidence_level: primary
+    id: org.q-run-holdings
+    name: Q-Run Holdings Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團合併列示的進貨來源，未分拆品項
+    details:
+    - 集團合併列示的進貨來源，未分拆品項
+    edge: e84d358f6d2eb
+    evidence_level: primary
+    id: org.foxconn-far-east-ltd-及所屬子公司
+    name: Foxconn (Far East) Ltd.及所屬子公司
+    ranking_basis: disclosed
+    share_basis: purchases
+    share_pct: 83
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 關係人進貨，未分拆供應品項
+    details:
+    - 關係人進貨，未分拆供應品項
+    edge: e75833b95f055
+    evidence_level: primary
+    id: tw.2317
+    name: 鴻海
+    ranking_basis: disclosed
+    share_basis: purchases
+    share_pct: 2
+    weight: 1
+  transactions:
+  - amount: 美金12,868,336.92元
+    as_of: '2025-10-17'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 美國子公司取得肯塔基州廠房使用權
+    details:
+    - 美國子公司取得肯塔基州廠房使用權
+    edge: ef471cf7aad6f
+    event_date: '2025-10-17'
+    events:
+    - amount: 美金12,868,336.92元
+      detail: 美國子公司取得肯塔基州廠房使用權
+      event_date: '2025-10-17'
+    evidence_level: primary
+    id: org.delcour-industrial-4
+    name: Delcour Industrial 4, LLC.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 人民幣15,977,590.26元
+    as_of: '2026-04-24'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 太原子公司取得廠房使用權
+    details:
+    - 太原子公司取得廠房使用權
+    edge: e026a792a84d4
+    event_date: '2026-04-24'
+    events:
+    - amount: 人民幣15,977,590.26元
+      detail: 太原子公司取得廠房使用權
+      event_date: '2026-04-24'
+    evidence_level: primary
+    id: org.foxconn-precision-electronics-taiyuan
+    name: 富士康精密電子（太原）有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 美金11,600,000元
+    as_of: '2026-08-24'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 顯示業務子公司認購新加坡公司增資
+    details:
+    - 顯示業務子公司認購新加坡公司增資
+    edge: e47cc46ce1cc2
+    event_date: '2026-08-24'
+    events:
+    - amount: 美金11,600,000元
+      detail: 顯示業務子公司認購新加坡公司增資
+      event_date: '2026-08-24'
+    evidence_level: primary
+    id: org.ftc-display-technology
+    name: FTC DISPLAY TECHNOLOGY PTE. LTD.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣310,000,000元
+    as_of: '2026-08-06'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 認購子公司現金增資
+    details:
+    - 認購子公司現金增資
+    edge: e3f260bbcd560
+    event_date: '2026-08-06'
+    events:
+    - amount: 新台幣310,000,000元
+      detail: 認購子公司現金增資
+      event_date: '2026-08-06'
+    evidence_level: primary
+    id: org.heng-zhun-intelligent-display
+    name: 衡準智能顯示股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 10,000,000美元
+    as_of: '2025-08-07'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司決議認購特別股
+    details:
+    - 子公司決議認購特別股
+    edge: e52327b52a657
+    event_date: '2025-08-07'
+    events:
+    - amount: 10,000,000美元
+      detail: 子公司決議認購特別股
+      event_date: '2025-08-07'
+    evidence_level: primary
+    id: org.robotemi-global
+    name: RoboTemi Global Limited
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣578,388,000元
+    as_of: '2026-04-10'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司取得陽程私募普通股
+    details:
+    - 子公司取得陽程私募普通股
+    edge: e9f8838dbd951
+    event_date: '2026-04-10'
+    events:
+    - amount: 新台幣578,388,000元
+      detail: 子公司取得陽程私募普通股
+      event_date: '2026-04-10'
+    evidence_level: primary
+    id: tw.3498
+    name: 陽程
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 美金165,739,322.5元
+    as_of: '2024-12-05'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司出售Vizio股權
+    details:
+    - 子公司出售Vizio股權
+    edge: e3e6630cc10da
+    event_date: '2024-12-05'
+    events:
+    - amount: 美金165,739,322.5元
+      detail: 子公司出售Vizio股權
+      event_date: '2024-12-05'
+    evidence_level: primary
+    id: us.WMT
+    name: Walmart Inc
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 2025年年報主要供應商「HY廠商」為匿名關係企業，未與任何具名公司等同。
+- 2025年年報主要銷貨對象「A客戶」未具名，未推定為任天堂。
+- Foxconn (Far East) Ltd.及所屬子公司的進貨比例為整組合計…
+- 機器人製造及組裝業務未揭露客戶名稱。
+- 連接器與PCB屬候選零件類別，未查得對應具名供應商。
 website: www.foxconntech.com.tw
 tax_id: '23707801'
 incorporated: '1990-04-26'
 listed: '1996-10-08'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-14'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2354#e1:
+    locator: 公司概述第一段
+    published_date: null
+    publisher: 鴻準精密工業股份有限公司
+    quote_check: found
+    title: 鴻準概述
+    url: https://www.foxconntech.com.tw/about/group-profile/
+  tw.2354#e11:
+    locator: 鄭淑芳報導，BMW供應段落
+    published_date: '2025-02-05'
+    publisher: 工商時報，IEK產業情報網刊載
+    quote_check: found
+    title: 川普揮刀歐盟 台廠一喜一憂
+    url: https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=ae1922c61a5a43aab02eaf0c76fd5731
+  tw.2354#e12:
+    locator: 鄭淑芳報導，Tesla供應段落
+    published_date: '2025-02-05'
+    publisher: 工商時報，IEK產業情報網刊載
+    quote_check: found
+    title: 川普揮刀歐盟 台廠一喜一憂
+    url: https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=ae1922c61a5a43aab02eaf0c76fd5731
+  tw.2354#e13:
+    locator: PDF第72頁，附表四；鴻準個體進貨列，金額單位仟元，比率欄為2
+    published_date: null
+    publisher: 鴻準精密工業股份有限公司
+    quote_check: found
+    title: 民國115年及114年第一季合併財務報告
+    url: https://www.foxconntech.com.tw/media/quarterly_reports/202601_2354_AI1_20260522_143242.pdf
+  tw.2354#e14:
+    locator: PDF第72頁，附表四；鴻準向Foxconn (Far East) Ltd.及所屬子公司進貨列
+    published_date: null
+    publisher: 鴻準精密工業股份有限公司
+    quote_check: found
+    title: 民國115年及114年第一季合併財務報告
+    url: https://www.foxconntech.com.tw/media/quarterly_reports/202601_2354_AI1_20260522_143242.pdf
+  tw.2354#e15:
+    locator: PDF第75頁，附表七；鴻準直接投資Q-Run，持股比率100
+    published_date: null
+    publisher: 鴻準精密工業股份有限公司
+    quote_check: found
+    title: 民國115年及114年第一季合併財務報告
+    url: https://www.foxconntech.com.tw/media/quarterly_reports/202601_2354_AI1_20260522_143242.pdf
+  tw.2354#e16:
+    locator: PDF第75頁，附表七；鴻準直接投資列，持股比率100
+    published_date: null
+    publisher: 鴻準精密工業股份有限公司
+    quote_check: found
+    title: 民國115年及114年第一季合併財務報告
+    url: https://www.foxconntech.com.tw/media/quarterly_reports/202601_2354_AI1_20260522_143242.pdf
+  tw.2354#e17:
+    locator: 公告標題
+    published_date: '2026-04-10'
+    publisher: 公開資訊觀測站公告，鉅亨網刊載
+    quote_check: found
+    title: 鴻準：代子公司華準投資股份有限公司公告取得私募有價證券
+    url: https://news.cnyes.com/news/id/6416589
+  tw.2354#e2:
+    locator: 印刷頁59／PDF第63頁，營業比重；欄序為電子產品貿易、機構與零配件、其他、合計
+    published_date: null
+    publisher: 鴻準精密工業股份有限公司
+    quote_check: found
+    title: 民國一一四年度年報
+    url: https://www.foxconntech.com.tw/media/shareholders_meeting_files/2025%E5%B9%B4%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1-%E4%B8%AD%E6%96%87.pdf
+  tw.2354#e20:
+    locator: 公告標題及說明第3至4項
+    published_date: '2024-12-05'
+    publisher: 公開資訊觀測站公告，鉅亨網刊載
+    quote_check: found
+    title: 鴻準：代子公司Q-Run Holdings Ltd.公告處分Vizio, Inc股權
+    url: https://news.cnyes.com/news/id/5799473
+  tw.2354#e21:
+    locator: 公告標題、說明第1至5項
+    published_date: '2025-08-07'
+    publisher: 公開資訊觀測站公告，鉅亨網刊載
+    quote_check: found
+    title: 鴻準：代子公司Q-Run Holdings Limited公告董事會決議參與認購RoboTemi Global Limited之特別股
+    url: https://news.cnyes.com/news/id/6096718
+  tw.2354#e22:
+    locator: 說明第5至6項；使用權金額與交易相對人
+    published_date: '2025-10-17'
+    publisher: 公開資訊觀測站公告，鉅亨網刊載
+    quote_check: found
+    title: 鴻準：代子公司Foxconn Technology USA Corporation公告取得廠房之使用權資產
+    url: https://news.cnyes.com/news/id/6196123
+  tw.2354#e23:
+    locator: 說明第1至4項；證券標的、金額與三家出售股東
+    published_date: '2026-04-10'
+    publisher: 公開資訊觀測站公告，鉅亨網刊載
+    quote_check: found
+    title: 鴻準：代子公司華準投資股份有限公司公告取得私募有價證券
+    url: https://news.cnyes.com/news/id/6416589
+  tw.2354#e24:
+    locator: 公告標題、說明第5至6項
+    published_date: '2026-04-24'
+    publisher: 公開資訊觀測站公告，鉅亨網刊載
+    quote_check: found
+    title: 鴻準：代子公司鴻富晉精密工業（太原）有限公司公告取得廠房之使用權資產
+    url: https://news.cnyes.com/news/id/6432055
+  tw.2354#e25:
+    locator: 公告標題、說明第5及14項；交易後持股100%
+    published_date: '2026-08-06'
+    publisher: 公開資訊觀測站公告，鉅亨網刊載
+    quote_check: found
+    title: 鴻準：公告本公司董事會決議通過子公司衡準智能顯示股份有限公司現金增資案
+    url: https://news.cnyes.com/news/id/6562961
+  tw.2354#e26:
+    locator: 公告標題、說明第1至6項
+    published_date: '2026-08-24'
+    publisher: 公開資訊觀測站公告，鉅亨網刊載
+    quote_check: found
+    title: 鴻準：代子公司衡準智能顯示股份有限公司公告取得FTC DISPLAY TECHNOLOGY PTE. LTD.普通股
+    url: https://news.cnyes.com/news/id/6585372
+  tw.2354#e27:
+    locator: 說明第1至5項及第13項；交易相對人未揭露
+    published_date: '2026-03-18'
+    publisher: 公開資訊觀測站公告，MoneyDJ刊載
+    quote_check: found
+    title: 鴻準：代子公司華準投資股份有限公司公告實際處分群創光電股份有限公司持股
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=3b3e1370-1d60-4bc0-a37f-642c4067e54a
+  tw.2354#e3:
+    locator: PDF第8頁，製造服務介紹
+    published_date: '2026-06-30'
+    publisher: 鴻準精密工業股份有限公司
+    quote_check: found
+    title: 2026 Q2 Investor Conference
+    url: https://www.foxconntech.com.tw/media/investor_conference_files/%E9%B4%BB%E6%BA%96%E6%B3%95%E8%AA%AA_%E8%8B%B1%E6%96%87%E7%89%88_2026_Q2_o8jjz8n.pdf
+  tw.2354#e4:
+    locator: 印刷頁60／PDF第64頁，目前之產品項目第4項
+    published_date: null
+    publisher: 鴻準精密工業股份有限公司
+    quote_check: found
+    title: 民國一一四年度年報
+    url: https://www.foxconntech.com.tw/media/shareholders_meeting_files/2025%E5%B9%B4%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1-%E4%B8%AD%E6%96%87.pdf
+  tw.2354#e5:
+    locator: PDF第12頁，Development - Robotics and Intelligent Products
+    published_date: '2026-03-17'
+    publisher: 鴻準精密工業股份有限公司
+    quote_check: found
+    title: 2026 Q1 Investor Conference
+    url: https://www.foxconntech.com.tw/media/investor_conference_files/%E9%B4%BB%E6%BA%96%E6%B3%95%E8%AA%AA_%E8%8B%B1%E6%96%87%E7%89%88_2026_Q1_v2.pdf
+  tw.2354#e6:
+    locator: 印刷頁60／PDF第64頁，目前之產品項目第2項
+    published_date: null
+    publisher: 鴻準精密工業股份有限公司
+    quote_check: found
+    title: 民國一一四年度年報
+    url: https://www.foxconntech.com.tw/media/shareholders_meeting_files/2025%E5%B9%B4%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1-%E4%B8%AD%E6%96%87.pdf
+  tw.2354#e8:
+    locator: 曾仁凱報導，Switch 2組裝及機殼供應段落
+    published_date: '2025-04-25'
+    publisher: 中央社
+    quote_check: found
+    title: 任天堂Switch 2預購熱賣 鴻準等概念股沾光
+    url: https://www.cna.com.tw/news/afe/202504250145.aspx
+  tw.2354#e9:
+    locator: 鄭盈芷報導，機殼業務介紹段落
+    published_date: '2016-10-13'
+    publisher: MoneyDJ
+    quote_check: found
+    title: 鴻準下半年營運走揚；續關注材質轉換議題
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=d36f90b4-20bb-4c72-a6bf-4ce87a6ad134

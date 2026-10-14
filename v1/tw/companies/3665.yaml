@@ -8,13 +8,785 @@ industry:
   l0_code: '31'
   l0_name: 其他電子業
   l0_name_en: Other Electronic
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.connector
+  l3_name: 連接器與線材
+  l3_name_en: Connectors & Cables
+chain: chain.server
+primary_chain_position: midstream
+summary_short: 以線束、連接器及客製化線纜組件供應資料中心、工業、車用與家電市場。
+summary_long: 貿聯控股的核心產品為線束、連接器與客製化線纜組件。2026年第二季，IT DataComm占合併營收42%，工業占35%，家電占12%，車用占10%。資料中心產品包括GB200伺服器內部匯流排、Power Whip電源連接線組，以及液冷漏液偵測線纜與冷板；車用產品包含電動車匯流排組件。公司公開與NVIDIA合作開發加速運算平台互連方案，亦與ams OSRAM共同開發AI資料中心光學互連。集團於2024年收購EASYS及Cable Connection，2025年透過德國子公司收購Alpha軌道列車事業，2026年完成XFS、PAS墨西哥及Interplex Datacom收購，擴充光纖互連、家電線束與資料中心機構整合業務。
+segments:
+- evidence_ids:
+  - e2
+  id: it_datacomm
+  name: IT DataComm
+  period: 2026-Q2
+  revenue_share_pct: 42
+- evidence_ids:
+  - e3
+  id: industrial
+  name: 工業
+  period: 2026-Q2
+  revenue_share_pct: 35
+- evidence_ids:
+  - e4
+  id: electrical_appliances
+  name: 家電
+  period: 2026-Q2
+  revenue_share_pct: 12
+- evidence_ids:
+  - e5
+  id: automotive
+  name: 車用
+  period: 2026-Q2
+  revenue_share_pct: 10
+main_theme: theme.ev
+themes:
+- stage: parts
+  theme: theme.ev
+  tier: midstream
+- stage: components
+  theme: theme.ai_server
+  tier: midstream
+- stage: equipment
+  theme: theme.data_center
+  tier: upstream
+- stage: parts
+  theme: theme.liquid_cooling
+  tier: upstream
+- stage: components
+  theme: theme.nvidia
+  tier: midstream
+- stage: components
+  theme: theme.cpo
+  tier: upstream
+relations:
+  customers:
+  - as_of: '2024-04-19'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 家電品牌客戶關係
+    details:
+    - 家電品牌客戶關係
+    edge: e2e6f08b455d9
+    evidence_level: media
+    id: org.dyson
+    name: 戴森（Dyson）
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2014-11-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 醫療設備歷史客戶關係
+    details:
+    - 醫療設備歷史客戶關係
+    edge: e00f1a17cf3a4
+    evidence_level: media
+    id: org.ge-healthcare
+    name: GE Healthcare
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-04-19'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 家電品牌客戶關係
+    details:
+    - 家電品牌客戶關係
+    edge: efe4a8109b088
+    evidence_level: media
+    id: org.robert-bosch
+    name: 博世（Bosch）
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-04-19'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 資料中心連接線束訂單
+    details:
+    - 資料中心連接線束訂單
+    edge: ed8df8fd5c0ec
+    evidence_level: media
+    id: us.AMZN
+    name: Amazon
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2020-06-29'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 資訊產品歷史客戶關係
+    details:
+    - 資訊產品歷史客戶關係
+    edge: e4335c4139314
+    evidence_level: media
+    id: us.DELL
+    name: Dell
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2020-06-29'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 資訊產品歷史客戶關係
+    details:
+    - 資訊產品歷史客戶關係
+    edge: e35194b3ddfe3
+    evidence_level: media
+    id: us.HPQ
+    name: HP
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-08-21'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 半導體設備供應關係
+    details:
+    - 半導體設備供應關係
+    edge: e8a01bfa58c26
+    evidence_level: primary
+    id: us.LRCX
+    name: Lam Research
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-04-19'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 資料中心連接線束訂單
+    details:
+    - 資料中心連接線束訂單
+    edge: e1f864d4dc471
+    evidence_level: media
+    id: us.MSFT
+    name: Microsoft
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2019-11-06'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: Model 3電池管理系統線束
+    details:
+    - Model 3電池管理系統線束
+    edge: e102ed67ffd8d
+    evidence_level: media
+    id: us.TSLA
+    name: Tesla
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  partners:
+  - as_of: '2026-09-21'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: AI資料中心多通道光學互連共同開發
+    details:
+    - AI資料中心多通道光學互連共同開發
+    edge: eb60963180c96
+    evidence_level: primary
+    id: eu.AMS
+    name: ams OSRAM
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: OCP短距離微型發光元件光學互連規格工作小組
+    details:
+    - OCP短距離微型發光元件光學互連規格工作小組
+    edge: ebc47620c9598
+    evidence_level: primary
+    id: us.CRDO
+    name: Credo
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-16'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 加速運算平台電力、散熱與資料互連合作
+    details:
+    - 加速運算平台電力、散熱與資料互連合作
+    edge: ecd69e88b8c0e
+    evidence_level: primary
+    id: us.NVDA
+    name: NVIDIA
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2026-01-05'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 執行XFS收購的昆山子公司
+    details:
+    - 執行XFS收購的昆山子公司
+    edge: ebb218220b1ca
+    evidence_level: primary
+    id: org.bizlink-electronics-kunshan
+    name: BizLink Electronics (Kunshan) Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-06-02'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 德國子公司
+    details:
+    - 德國子公司
+    edge: eb09e333e35d1
+    evidence_level: primary
+    id: org.bizlink-elocab-gmbh
+    name: BizLink elocab GmbH
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-08-06'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 貿聯國際子公司
+    details:
+    - 貿聯國際子公司
+    edge: e8e520e61606a
+    evidence_level: primary
+    id: org.bizlink-international
+    name: BizLink International Corp.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 線纜、PCBA及機櫃組裝子公司
+    details:
+    - 線纜、PCBA及機櫃組裝子公司
+    edge: e5fd6c348e3ef
+    evidence_level: primary
+    id: org.bizlink-speedy
+    name: BizLink Speedy Pte. Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 17,854,000瑞士法郎（財報列示收購對價）
+    as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過BizLink elocab GmbH收購軌道列車事業
+    details:
+    - 透過BizLink elocab GmbH收購軌道列車事業
+    edge: e662078c7dd88
+    event_date: '2025-05-30'
+    events:
+    - amount: 17,854,000瑞士法郎（財報列示收購對價）
+      detail: 透過BizLink elocab GmbH收購軌道列車事業
+      event_date: '2025-05-30'
+    evidence_level: primary
+    id: org.alpha-elektrotechnik
+    name: Alpha Elektrotechnik AG
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣250,000,000元（董事會決議認購額）
+    as_of: '2025-09-15'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 董事會決議由貿聯國際認購醫療科技基金
+    details:
+    - 董事會決議由貿聯國際認購醫療科技基金
+    edge: ec98857869335
+    event_date: '2025-03-11'
+    events:
+    - amount: 新台幣250,000,000元（董事會決議認購額）
+      detail: 董事會決議由貿聯國際認購醫療科技基金
+      event_date: '2025-03-11'
+    evidence_level: primary
+    id: org.amed-health-technology-vc-lp
+    name: Amed Health Technology Venture Capital Limited Partnership Fund
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 7,887,000美元
+    as_of: '2024-11-01'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資收購客製化線束與線纜組裝公司
+    details:
+    - 全資收購客製化線束與線纜組裝公司
+    edge: ec88a088b4370
+    event_date: '2024-11-01'
+    events:
+    - amount: 7,887,000美元
+      detail: 全資收購客製化線束與線纜組裝公司
+      event_date: '2024-11-01'
+    evidence_level: primary
+    id: org.cable-connection
+    name: Cable Connection, Inc.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 54,083,000歐元（調整後收購對價）
+    as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資收購系統整合公司EASYS
+    details:
+    - 全資收購系統整合公司EASYS
+    edge: e97762c71eb0d
+    event_date: '2024-10-31'
+    events:
+    - amount: 54,083,000歐元（調整後收購對價）
+      detail: 全資收購系統整合公司EASYS
+      event_date: '2024-10-31'
+    evidence_level: primary
+    id: org.easys
+    name: EASYS s.r.o.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 企業價值850,000,000美元，另最高50,000,000美元或有對價
+    as_of: '2026-09-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 收購資料中心機構與精密互連事業
+    details:
+    - 收購資料中心機構與精密互連事業
+    edge: ebd368d4ef336
+    event_date: '2026-09-23'
+    events:
+    - amount: 企業價值850,000,000美元，另最高50,000,000美元或有對價
+      detail: 收購資料中心機構與精密互連事業
+      event_date: '2026-09-23'
+    evidence_level: primary
+    id: org.interplex-datacom
+    name: Interplex Datacom
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 人民幣236,000,000元
+    as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 廈門子公司委建營運廠房
+    details:
+    - 廈門子公司委建營運廠房
+    edge: e5e018bf4b6cb
+    event_date: '2024-03-29'
+    events:
+    - amount: 人民幣236,000,000元
+      detail: 廈門子公司委建營運廠房
+      event_date: '2024-03-29'
+    evidence_level: primary
+    id: org.jiangsu-jiangdu-construction-group
+    name: Jiangsu Jiangdu Construction Group Co., Ltd.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2026-05-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 收購墨西哥家電線束公司PAS MX
+    details:
+    - 收購墨西哥家電線束公司PAS MX
+    edge: e421f8f6ff989
+    event_date: '2026-05-14'
+    events:
+    - amount: null
+      detail: 收購墨西哥家電線束公司PAS MX
+      event_date: '2026-05-14'
+    evidence_level: primary
+    id: org.pas-appliance-systems-mexico
+    name: PAS Appliance Systems SA De CV
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2024-05-29'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司貿聯國際參與保利馬增資
+    details:
+    - 子公司貿聯國際參與保利馬增資
+    edge: ee27ece935557
+    event_date: '2024-05-29'
+    events:
+    - amount: null
+      detail: 子公司貿聯國際參與保利馬增資
+      event_date: '2024-05-29'
+    evidence_level: media
+    id: org.porrima
+    name: 保利馬
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣100,000,000元（認購承諾）
+    as_of: '2026-08-06'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 貿聯國際董事會決議認購半導體基金
+    details:
+    - 貿聯國際董事會決議認購半導體基金
+    edge: ed3ca99f722d2
+    event_date: '2025-12-16'
+    events:
+    - amount: 新台幣100,000,000元（認購承諾）
+      detail: 貿聯國際董事會決議認購半導體基金
+      event_date: '2025-12-16'
+    evidence_level: primary
+    id: org.taishin-aiot-semiconductor-lp
+    name: Taishin AIoT Semiconductor LP
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2026-01-05'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過昆山子公司收購光纖互連公司
+    details:
+    - 透過昆山子公司收購光纖互連公司
+    edge: e300f9f0bf657
+    event_date: '2026-01-05'
+    events:
+    - amount: null
+      detail: 透過昆山子公司收購光纖互連公司
+      event_date: '2026-01-05'
+    evidence_level: primary
+    id: org.xfs-communications
+    name: XFS Communications, Inc.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 鏡週刊提及兩家荷蘭半導體設備客戶，其中一家為全球大型微影設備業者，未具名確認交…
+- Credo的SRMO Workstream公告提及一家具領導地位的hypers…
 website: http://www.bizlinktech.com
 tax_id: '26644007'
 incorporated: '2000-06-01'
 listed: '2011-04-21'
 foreign_registration: KY 開曼群島
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-14'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3665#e1:
+    locator: About us，核心產品介紹
+    published_date: null
+    publisher: BizLink
+    quote_check: found
+    title: Company Overview
+    url: https://www.bizlinktech.com/company-overview
+  tw.3665#e10:
+    locator: AI Data Center頁面開頭
+    published_date: null
+    publisher: BizLink
+    quote_check: found
+    title: AI Data Center — Advanced Connectivity Solutions
+    url: https://www.bizlinktech.com/industry/ai-data-center
+  tw.3665#e11:
+    locator: 導言及「電纜技術 獨霸資料中心」段落
+    published_date: '2024-04-19'
+    publisher: 鏡週刊
+    quote_check: found
+    title: 搭上亞馬遜 微軟巨人肩膀 連接線束龍頭貿聯狂吃AI商機
+    url: https://www.mirrormedia.mg/story/20240412ind003
+  tw.3665#e12:
+    locator: 「電纜技術 獨霸資料中心」具名客戶段落
+    published_date: '2024-04-19'
+    publisher: 鏡週刊
+    quote_check: found
+    title: 搭上亞馬遜 微軟巨人肩膀 連接線束龍頭貿聯狂吃AI商機
+    url: https://www.mirrormedia.mg/story/20240412ind003
+  tw.3665#e13:
+    locator: 正文第二段
+    published_date: '2019-11-06'
+    publisher: Taipei Times
+    quote_check: found
+    title: Revenues rise at Tesla suppliers
+    url: https://www.taipeitimes.com/News/biz/archives/2019/11/06/2003725313
+  tw.3665#e14:
+    locator: 公告第一段及New Product Enablement說明
+    published_date: '2026-08-21'
+    publisher: BizLink
+    quote_check: found
+    title: BizLink Receives Lam Research 2026 Supplier Excellence Award
+    url: https://www.bizlinktech.com/de/news/lam-research-2026-supplier-excellence-award
+  tw.3665#e15:
+    locator: 正文開頭的具名訂單段落
+    published_date: '2020-06-29'
+    publisher: 遠見雜誌
+    quote_check: found
+    title: 國際大廠加持 貿聯連三年狠賺一個股本
+    url: https://www.gvm.com.tw/article/73455
+  tw.3665#e16:
+    locator: 「積極搶先機 海外增設新據點」客戶介紹
+    published_date: '2014-11-26'
+    publisher: 經貿透視雙周刊
+    quote_check: found
+    title: 搶占先機勇敢踏進非主流電子產品市場
+    url: https://www.trademag.org.tw/page/itemsd/?id=646258&no=50
+  tw.3665#e17:
+    locator: 公告第一段
+    published_date: '2026-03-16'
+    publisher: BizLink
+    quote_check: found
+    title: GTC 2026
+    url: https://www.bizlinktech.com/events/gtc-2026
+  tw.3665#e18:
+    locator: Next-Generation AI Data Center Solutions，液冷匯流排產品項目
+    published_date: '2026-03-16'
+    publisher: BizLink
+    quote_check: found
+    title: GTC 2026
+    url: https://www.bizlinktech.com/events/gtc-2026
+  tw.3665#e19:
+    locator: Advanced Automotive and Network Interconnects，低損耗多芯光纖連接器項目
+    published_date: '2026-03-16'
+    publisher: BizLink
+    quote_check: found
+    title: GTC 2026
+    url: https://www.bizlinktech.com/events/gtc-2026
+  tw.3665#e2:
+    locator: Product Mix頁籤，Consolid表，IT DataComm列與2Q26欄交叉儲存格；已透過瀏覽器讀取表格
+    published_date: null
+    publisher: BizLink
+    quote_check: not_found
+    title: Financial Information — Product Mix
+    url: https://www.bizlinktech.com/financial-information
+  tw.3665#e20:
+    locator: 公告標題、首段及ECOC 2026實機展示
+    published_date: '2026-09-21'
+    publisher: BizLink
+    quote_check: found
+    title: 貿聯與 ams OSRAM 展開合作，推動 AI 資料中心光學互連技術發展
+    url: https://www.bizlinktech.com/zh-tw/news/bizlink-partners-with-ams-osram-to-advance-photonics-for-ai-data-center-interconnects
+  tw.3665#e21:
+    locator: Why We’re Leading the Push to Standardize it，SRMO Workstream夥伴段落
+    published_date: '2026-10-13'
+    publisher: Credo
+    quote_check: found
+    title: Why Credo Is Pushing for Micro-Emitter Optics in AI Infrastructure
+    url: https://credosemi.com/blogs/wider-slower-better-why-credo-is-pushing-for-micro-emitter-optics-in-ai-infrastructure/
+  tw.3665#e22:
+    locator: 2024年「收購EASYS及Cable Connection」
+    published_date: null
+    publisher: BizLink
+    quote_check: found
+    title: Company Overview — 公司里程碑
+    url: https://www.bizlinktech.com/zh-tw/company-overview
+  tw.3665#e23:
+    locator: PDF第4頁收購查核事項；第79頁附註6(34)(b)列取得日及對價調整
+    published_date: null
+    publisher: BizLink／SGX
+    quote_check: found
+    title: BizLink Holding Inc. and Subsidiaries — 2025 Consolidated Financial Statements
+    url: https://links.sgx.com/FileOpen/BizLink%20Holding%20Inc%2020251231.ashx?App=Announcement&FileID=889554
+  tw.3665#e24:
+    locator: PDF第79頁，附註6(34)(c)，Cable Connection於2024-11-01取得100%股權
+    published_date: null
+    publisher: BizLink／SGX
+    quote_check: found
+    title: BizLink Holding Inc. and Subsidiaries — 2025 Consolidated Financial Statements
+    url: https://links.sgx.com/FileOpen/BizLink%20Holding%20Inc%2020251231.ashx?App=Announcement&FileID=889554
+  tw.3665#e25:
+    locator: PDF第78頁，附註6(34)(a)，Alpha取得日與瑞士法郎對價
+    published_date: null
+    publisher: BizLink／SGX
+    quote_check: found
+    title: BizLink Holding Inc. and Subsidiaries — 2025 Consolidated Financial Statements
+    url: https://links.sgx.com/FileOpen/BizLink%20Holding%20Inc%2020251231.ashx?App=Announcement&FileID=889554
+  tw.3665#e26:
+    locator: 首段收購完成公告；第三段說明Disconnector事業仍留Pfiffner
+    published_date: '2025-06-02'
+    publisher: BizLink
+    quote_check: found
+    title: BizLink Completes Acquisition of Alpha Elektrotechnik AG’s Rolling Stock Business
+    url: https://www.bizlinktech.com/news/bizlink-completes-acquisition-of-alpha-elektrotechnik-ags-rolling-stock-business-accelerating-growth-in-the-railway-sector-2
+  tw.3665#e27:
+    locator: 公告首段，執行收購的德國子公司
+    published_date: '2025-06-02'
+    publisher: BizLink
+    quote_check: found
+    title: BizLink Completes Acquisition of Alpha Elektrotechnik AG’s Rolling Stock Business
+    url: https://www.bizlinktech.com/news/bizlink-completes-acquisition-of-alpha-elektrotechnik-ags-rolling-stock-business-accelerating-growth-in-the-railway-sector-2
+  tw.3665#e28:
+    locator: 公告首段
+    published_date: '2026-01-05'
+    publisher: BizLink
+    quote_check: found
+    title: BizLink Completes Acquisition of XFS Communications, Inc.
+    url: https://www.bizlinktech.com/news/bizlink-completes-acquisition-of-xfs-communications-inc-advancing-optical-interconnect-leadership-for-ai-and-data-center-applications
+  tw.3665#e29:
+    locator: 公告首段，收購執行主體
+    published_date: '2026-01-05'
+    publisher: BizLink
+    quote_check: found
+    title: BizLink Completes Acquisition of XFS Communications, Inc.
+    url: https://www.bizlinktech.com/news/bizlink-completes-acquisition-of-xfs-communications-inc-advancing-optical-interconnect-leadership-for-ai-and-data-center-applications
+  tw.3665#e3:
+    locator: Product Mix頁籤，Consolid表，Industrial列與2Q26欄交叉儲存格
+    published_date: null
+    publisher: BizLink
+    quote_check: not_found
+    title: Financial Information — Product Mix
+    url: https://www.bizlinktech.com/financial-information
+  tw.3665#e30:
+    locator: 首段，向Prettl Group收購、納入家電事業群及更名
+    published_date: '2026-05-14'
+    publisher: BizLink
+    quote_check: found
+    title: BizLink Completes Acquisition of PAS Appliance Systems SA De CV
+    url: https://www.bizlinktech.com/news/bizlink-completes-acquisition-of-pas-appliance-systems-sa-de-cv-expanding-north-american-manufacturing-footprint
+  tw.3665#e31:
+    locator: 公告首段
+    published_date: '2026-09-23'
+    publisher: BizLink
+    quote_check: found
+    title: BizLink Completes Acquisition of Interplex Datacom
+    url: https://www.bizlinktech.com/news/bizlink-completes-acquisition-of-interplex-datacom-expanding-global-market-presence-and-deepening-customer-partnerships
+  tw.3665#e32:
+    locator: 首段，企業價值及或有對價
+    published_date: '2026-09-23'
+    publisher: BizLink
+    quote_check: found
+    title: BizLink Completes Acquisition of Interplex Datacom
+    url: https://www.bizlinktech.com/news/bizlink-completes-acquisition-of-interplex-datacom-expanding-global-market-presence-and-deepening-customer-partnerships
+  tw.3665#e33:
+    locator: 保利馬現增完成後的法人股東清單
+    published_date: '2024-05-29'
+    publisher: 中央社
+    quote_check: found
+    title: 施振榮完成零碳排科技船募資8億 打造藍色未來
+    url: https://netzero.cna.com.tw/news/202405290114/
+  tw.3665#e34:
+    locator: PDF第382頁，附註9(C)，2025-12-16董事會決議及分期付款安排
+    published_date: '2026-08-06'
+    publisher: BizLink／SGX
+    quote_check: found
+    title: BizLink Holding Inc. — Offering Memorandum dated 6 August 2026
+    url: https://links.sgx.com/FileOpen/Bizlink%20Holding%20Inc.%20-%20Offering%20Memorandum%20dated%206%20August%202026.ashx?App=Prospectus&FileID=70774
+  tw.3665#e35:
+    locator: PDF第382頁，附註9(C)，決議認購的子公司
+    published_date: '2026-08-06'
+    publisher: BizLink／SGX
+    quote_check: found
+    title: BizLink Holding Inc. — Offering Memorandum dated 6 August 2026
+    url: https://links.sgx.com/FileOpen/Bizlink%20Holding%20Inc.%20-%20Offering%20Memorandum%20dated%206%20August%202026.ashx?App=Prospectus&FileID=70774
+  tw.3665#e36:
+    locator: PDF第386頁，附註11(4)，2025-03-11投資決議
+    published_date: '2025-09-15'
+    publisher: BizLink／SGX
+    quote_check: found
+    title: BizLink Holding Inc. — Offering Memorandum dated 15 September 2025
+    url: https://links.sgx.com/FileOpen/BizLink%20Holding%20Inc.%20-%20Offering%20Memorandum%20dated%2015%20September%202025.ashx?App=Prospectus&FileID=67402
+  tw.3665#e37:
+    locator: PDF第386頁，附註11(4)，Amed基金認購額
+    published_date: '2025-09-15'
+    publisher: BizLink／SGX
+    quote_check: found
+    title: BizLink Holding Inc. — Offering Memorandum dated 15 September 2025
+    url: https://links.sgx.com/FileOpen/BizLink%20Holding%20Inc.%20-%20Offering%20Memorandum%20dated%2015%20September%202025.ashx?App=Prospectus&FileID=67402
+  tw.3665#e38:
+    locator: PDF第424頁，2024年取得不動產附表5；BizLink Technology (Xiamen) Ltd.列，對象Jiangsu Jiangdu Construction Group Co., Ltd.，金額RMB 236,000，單位仟元
+    published_date: '2025-09-15'
+    publisher: BizLink／SGX
+    quote_check: found
+    title: BizLink Holding Inc. — Offering Memorandum dated 15 September 2025
+    url: https://links.sgx.com/FileOpen/BizLink%20Holding%20Inc.%20-%20Offering%20Memorandum%20dated%2015%20September%202025.ashx?App=Prospectus&FileID=67402
+  tw.3665#e39:
+    locator: PDF第21頁，子公司、主要業務及Ownership表，BizLink Speedy列持股100%
+    published_date: null
+    publisher: BizLink／SGX
+    quote_check: found
+    title: BizLink Holding Inc. and Subsidiaries — 2025 Consolidated Financial Statements
+    url: https://links.sgx.com/FileOpen/BizLink%20Holding%20Inc%2020251231.ashx?App=Announcement&FileID=889554
+  tw.3665#e4:
+    locator: Product Mix頁籤，Consolid表，EA列與2Q26欄交叉儲存格
+    published_date: null
+    publisher: BizLink
+    quote_check: not_found
+    title: Financial Information — Product Mix
+    url: https://www.bizlinktech.com/financial-information
+  tw.3665#e5:
+    locator: Product Mix頁籤，Consolid表，Automotive列與2Q26欄交叉儲存格
+    published_date: null
+    publisher: BizLink
+    quote_check: not_found
+    title: Financial Information — Product Mix
+    url: https://www.bizlinktech.com/financial-information
+  tw.3665#e6:
+    locator: 產品名稱、說明及Product Features
+    published_date: null
+    publisher: BizLink
+    quote_check: found
+    title: GB-NVL72 12V Inner Busbar
+    url: https://www.bizlinktech.com/products/gb-nvl72-12v-inner-busbar-copy
+  tw.3665#e7:
+    locator: All Products產品清單
+    published_date: null
+    publisher: BizLink
+    quote_check: found
+    title: Power Whips — Data Center Power Solutions
+    url: https://www.bizlinktech.com/product-categories/power-whip
+  tw.3665#e8:
+    locator: EV Busbar分類的All Products清單
+    published_date: null
+    publisher: BizLink
+    quote_check: found
+    title: EV Busbar
+    url: https://www.bizlinktech.com/product-categories/ev-busbar
+  tw.3665#e9:
+    locator: All Products：漏液偵測線纜與冷板產品
+    published_date: null
+    publisher: BizLink
+    quote_check: found
+    title: Liquid Cooled Solution
+    url: https://www.bizlinktech.com/product-categories/liquid-cooled-solution

@@ -8,12 +8,583 @@ industry:
   l0_code: '03'
   l0_name: 塑膠工業
   l0_name_en: Plastics
-primary_chain_position: unknown
+  l1: materials
+  l1_name: 原物料
+  l1_name_en: Materials
+  l2: mat.chemicals
+  l2_name: 化工
+  l2_name_en: Chemicals
+  l3: chem.petrochem
+  l3_name: 石化與塑膠原料
+  l3_name_en: Petrochemicals & Plastics
+chain: chain.petrochem
+primary_chain_position: midstream
+summary_short: 以石化中間原料、塑膠樹脂及纖維產品製銷為主要業務。
+summary_long: 台化製銷苯、對二甲苯、苯乙烯、合成酚、丙酮、PTA及PIA等石化產品，另有PP、PS、ABS、PC及PC/ABS塑膠原料，以及耐隆絲與合成纖維紗。2025年合併營收中，石化占58.1%、塑膠占21.4%，其他與福懋部門分別占13.8%及6.7%。台塑、南亞與台塑化均與台化有雙向商品交易，其中台塑化占台化2025年個體進貨總額80%。主要子公司包括台化興業（寧波）、越南台灣興業、福懋興業、台塑生醫及台化出光。台化亦生產採質量平衡方法的生質特性PS，參與Sony可再生塑膠供應鏈合作。近三年公告事件包括台塑新智能增資、機光科技策略入股、土地處分，以及擬參與台塑中華先進化學合資案。
+segments:
+- evidence_ids:
+  - e3
+  id: petrochem
+  name: 石化
+  period: '2025'
+  revenue_share_pct: 58.1
+- evidence_ids:
+  - e3
+  id: plastics
+  name: 塑膠
+  period: '2025'
+  revenue_share_pct: 21.4
+- evidence_ids:
+  - e3
+  id: other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 13.8
+- evidence_ids:
+  - e3
+  id: formosa_taffeta
+  name: 福懋
+  period: '2025'
+  revenue_share_pct: 6.7
+relations:
+  customers:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 商品銷售，品項未於交易表細分
+    details:
+    - 商品銷售，品項未於交易表細分
+    edge: e769968c39dd8
+    evidence_level: primary
+    id: tw.6505
+    name: 台塑化
+    ranking_basis: disclosed
+    share_basis: revenue
+    share_pct: 17
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: PTA
+    details:
+    - PTA
+    - 商品銷售，品項未於交易表細分
+    edge: eef682b489dfe
+    evidence_level: primary
+    id: tw.1303
+    name: 南亞
+    ranking_basis: disclosed
+    share_basis: revenue
+    share_pct: 9
+    weight: 2
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 商品銷售，品項未於交易表細分
+    details:
+    - 商品銷售，品項未於交易表細分
+    edge: e96604fcbacf2
+    evidence_level: primary
+    id: tw.1301
+    name: 台塑
+    ranking_basis: disclosed
+    share_basis: revenue
+    share_pct: 1
+    weight: 1
+  - as_of: '2026-05-15'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 化工原料供貨合約
+    details:
+    - 化工原料供貨合約
+    edge: efa9d530b9048
+    evidence_level: primary
+    id: tw.1717
+    name: 長興
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  partners:
+  - as_of: '2026-02-06'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 可再生塑膠供應鏈合作
+    details:
+    - 可再生塑膠供應鏈合作
+    edge: ea649ec8e657f
+    evidence_level: primary
+    id: org.sony-corporation
+    name: Sony Corporation
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 台化出光子公司
+    details:
+    - 台化出光子公司
+    edge: e93c72243654e
+    evidence_level: primary
+    id: org.fcfc-idemitsu-petrochemical
+    name: 台化出光石油化學公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 寧波子公司
+    details:
+    - 寧波子公司
+    edge: efbb95a0c949d
+    evidence_level: primary
+    id: org.fcfc-ningbo
+    name: 台化興業(寧波)公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 台塑生醫子公司
+    details:
+    - 台塑生醫子公司
+    edge: e21a6b910dff6
+    evidence_level: primary
+    id: org.formosa-biomedical
+    name: 台塑生醫科技公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 越南子公司
+    details:
+    - 越南子公司
+    edge: e4655282bcf19
+    evidence_level: primary
+    id: org.formosa-industries-vietnam
+    name: 越南台灣興業公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 合併範圍內子公司
+    details:
+    - 合併範圍內子公司
+    edge: e2ef42dcba9a4
+    evidence_level: primary
+    id: tw.1434
+    name: 福懋
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares:
+    - as_of: '2025-12-31'
+      basis: revenue
+      of: tw.6505
+      pct: 17.86
+    detail: 商品進貨；2024年原料表列示芳香烴混合物、乙烯及丙烯
+    details:
+    - 商品進貨；2024年原料表列示芳香烴混合物、乙烯及丙烯
+    - 商品銷售，品項未逐家細分
+    edge: e670c57940463
+    evidence_level: primary
+    id: tw.6505
+    name: 台塑化
+    ranking_basis: disclosed
+    share_basis: purchases
+    share_pct: 80
+    weight: 2
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 商品進貨；2024年原料表列示丙烯腈
+    details:
+    - 商品進貨；2024年原料表列示丙烯腈
+    edge: ec07dc9be3d21
+    evidence_level: primary
+    id: tw.1301
+    name: 台塑
+    ranking_basis: disclosed
+    share_basis: purchases
+    share_pct: 2
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 商品進貨，品項未於交易表細分
+    details:
+    - 商品進貨，品項未於交易表細分
+    edge: ed50fc58d8ca2
+    evidence_level: primary
+    id: tw.1303
+    name: 南亞
+    ranking_basis: disclosed
+    share_basis: purchases
+    share_pct: 2
+    weight: 1
+  transactions:
+  - amount: 新台幣6億元
+    as_of: '2026-09-29'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 擬出資成立合資公司
+    details:
+    - 擬出資成立合資公司
+    edge: e98da3f2d159c
+    event_date: '2026-09-29'
+    events:
+    - amount: 新台幣6億元
+      detail: 擬出資成立合資公司
+      event_date: '2026-09-29'
+    evidence_level: primary
+    id: org.formosa-chung-hwa-advanced-chemicals
+    name: 台塑中華先進化學股份有限公司
+    ranking_basis: unranked
+    role: party
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣20億元
+    as_of: '2024-05-03'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 參與現金增資
+    details:
+    - 參與現金增資
+    edge: e9581e26a19b4
+    event_date: '2024-05-03'
+    events:
+    - amount: 新台幣20億元
+      detail: 參與現金增資
+      event_date: '2024-05-03'
+    evidence_level: media
+    id: org.formosa-smart-energy
+    name: 台塑新智能科技股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣237,760千元
+    as_of: '2026-05-08'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 處分雲林縣麥寮鄉許厝寮土地
+    details:
+    - 處分雲林縣麥寮鄉許厝寮土地
+    edge: e8e92393d71e7
+    event_date: '2026-05-08'
+    events:
+    - amount: 新台幣237,760千元
+      detail: 處分雲林縣麥寮鄉許厝寮土地
+      event_date: '2026-05-08'
+    evidence_level: primary
+    id: org.mailiao-power
+    name: 麥寮汽電公司
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣2,805,144千元
+    as_of: '2026-05-27'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 公告處分臺灣證券交易所股權
+    details:
+    - 公告處分臺灣證券交易所股權
+    edge: e04816f14b24a
+    event_date: '2026-05-27'
+    events:
+    - amount: 新台幣2,805,144千元
+      detail: 公告處分臺灣證券交易所股權
+      event_date: '2026-05-27'
+    evidence_level: primary
+    id: org.yuanta-commercial-bank
+    name: 元大商業銀行股份有限公司
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣667,600千元
+    as_of: '2024-03-08'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 取得一套儲能設備；交易對象名稱待核實
+    details:
+    - 取得一套儲能設備；交易對象名稱待核實
+    edge: e618b83f4b4b7
+    event_date: '2024-03-08'
+    events:
+    - amount: 新台幣667,600千元
+      detail: 取得一套儲能設備；交易對象名稱待核實
+      event_date: '2024-03-08'
+    evidence_level: primary
+    id: org.台新智能科技股份有限公司
+    name: 台新智能科技股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣6125萬元
+    as_of: '2025-09-01'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 認購私募普通股
+    details:
+    - 認購私募普通股
+    edge: e12bb3444f63d
+    event_date: '2025-09-01'
+    events:
+    - amount: 新台幣6125萬元
+      detail: 認購私募普通股
+      event_date: '2025-09-01'
+    evidence_level: media
+    id: org.機光科技
+    name: 機光科技
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 桃園龜山土地交易買方：未揭露姓名的非關係自然人。
+- 部分原料供應商僅列進口及國內供應，未具名。
+- 2024年儲能設備公告的交易對象記為台新智能科技股份有限公司，名稱待核實。
 website: http://www.fcfc.com.tw
 tax_id: '58650902'
 incorporated: '1965-03-05'
 listed: '1984-12-20'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-14'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1326#e1:
+    locator: 主要經營業務
+    published_date: '2026-02-02'
+    publisher: 台灣化學纖維股份有限公司
+    quote_check: found
+    title: 公司基本資料
+    url: https://www.fcfc.com.tw/company-profile
+  tw.1326#e10:
+    locator: PDF第78頁，附表四
+    published_date: '2026-03-13'
+    publisher: 台灣化學纖維股份有限公司
+    quote_check: found
+    title: 民國114年度及113年度個體財務報告
+    url: https://www.fcfc.com.tw/download/631175
+  tw.1326#e11:
+    locator: 第56頁，關係人名稱及關係；引號表示同上
+    published_date: '2026-03-13'
+    publisher: 台灣化學纖維股份有限公司
+    quote_check: found
+    title: 民國114年度及113年度個體財務報告
+    url: https://www.fcfc.com.tw/download/631175
+  tw.1326#e12:
+    locator: PDF第80頁，附表五之關係欄
+    published_date: '2026-03-13'
+    publisher: 台灣化學纖維股份有限公司
+    quote_check: found
+    title: 民國114年度及113年度個體財務報告
+    url: https://www.fcfc.com.tw/download/631175
+  tw.1326#e13:
+    locator: 關於Formosa Chemicals & Fibre Corporation
+    published_date: '2026-02-09'
+    publisher: 台灣化學纖維股份有限公司
+    quote_check: found
+    title: 全球首創¹供應鏈，將可再生塑膠導入Sony高性能產品
+    url: https://www.fcfc.com.tw/data-366771
+  tw.1326#e14:
+    locator: Overview of the Entire Supply Chain
+    published_date: '2026-02-06'
+    publisher: Sony Corporation
+    quote_check: found
+    title: Establishment of the World's First Global Supply Chain to Introduce the Use of Renewable Plastics in Sony's High-Performance Products
+    url: https://www.sony.co.jp/en/news-release/202602/26-0206E/
+  tw.1326#e15:
+    locator: 供應鏈合作說明
+    published_date: '2026-02-06'
+    publisher: Sony Corporation
+    quote_check: found
+    title: Establishment of the World's First Global Supply Chain to Introduce the Use of Renewable Plastics in Sony's High-Performance Products
+    url: https://www.sony.co.jp/en/news-release/202602/26-0206E/
+  tw.1326#e16:
+    locator: 台化與台塑生醫增資段落
+    published_date: '2024-05-03'
+    publisher: 中央社
+    quote_check: found
+    title: 台塑新智能拚7月量產 台塑四寶宣布增資100億元
+    url: https://www.cna.com.tw/news/afe/202405030191.aspx
+  tw.1326#e17:
+    locator: 首段
+    published_date: '2025-09-01'
+    publisher: 中央社
+    quote_check: found
+    title: 瞄準特化品市場 台化入股機光科技拿下逾9%股權
+    url: https://www.cna.com.tw/news/afe/202509010243.aspx
+  tw.1326#e18:
+    locator: 公告主旨
+    published_date: '2025-08-12'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ轉載
+    quote_check: found
+    title: 台化 公告本公司處分桃園市龜山區土地
+    url: https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=d3fe6ed6-9d81-4c82-9941-9d37efdb9000
+  tw.1326#e19:
+    locator: 第5項，交易數量及金額
+    published_date: '2025-08-12'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ轉載
+    quote_check: found
+    title: 台化 公告本公司處分桃園市龜山區土地
+    url: https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=d3fe6ed6-9d81-4c82-9941-9d37efdb9000
+  tw.1326#e2:
+    locator: 產品類別／塑膠原料
+    published_date: null
+    publisher: 台灣化學纖維股份有限公司
+    quote_check: found
+    title: 台灣化學纖維股份有限公司
+    url: https://www.fcfc.com.tw/
+  tw.1326#e20:
+    locator: 第6項，交易相對人
+    published_date: '2025-08-12'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ轉載
+    quote_check: found
+    title: 台化 公告本公司處分桃園市龜山區土地
+    url: https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=d3fe6ed6-9d81-4c82-9941-9d37efdb9000
+  tw.1326#e21:
+    locator: 重大訊息主旨及第2項
+    published_date: '2026-05-11'
+    publisher: 財訊新聞／富聯網
+    quote_check: found
+    title: 台化處分雲林縣麥寮鄉許厝寮土地約14,642坪
+    url: https://ww2.money-link.com.tw/RealtimeNews/NewsContent.aspx?PU=0010&SN=2363374002
+  tw.1326#e22:
+    locator: 第5項，交易數量及金額
+    published_date: '2026-05-11'
+    publisher: 財訊新聞／富聯網
+    quote_check: found
+    title: 台化處分雲林縣麥寮鄉許厝寮土地約14,642坪
+    url: https://ww2.money-link.com.tw/RealtimeNews/NewsContent.aspx?PU=0010&SN=2363374002
+  tw.1326#e23:
+    locator: 第6項，交易相對人
+    published_date: '2026-05-11'
+    publisher: 財訊新聞／富聯網
+    quote_check: found
+    title: 台化處分雲林縣麥寮鄉許厝寮土地約14,642坪
+    url: https://ww2.money-link.com.tw/RealtimeNews/NewsContent.aspx?PU=0010&SN=2363374002
+  tw.1326#e24:
+    locator: 公告主旨
+    published_date: '2026-05-27'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ轉載
+    quote_check: found
+    title: 台化 公告本公司處分臺灣證券交易所股份有限公司股份
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=3c298e69-4e8a-49b4-83d1-074b327f6f42
+  tw.1326#e25:
+    locator: 第5至6項
+    published_date: '2026-05-27'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ轉載
+    quote_check: found
+    title: 台化 公告本公司處分臺灣證券交易所股份有限公司股份
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=3c298e69-4e8a-49b4-83d1-074b327f6f42
+  tw.1326#e26:
+    locator: 第30項，其他敘明事項
+    published_date: '2026-05-27'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ轉載
+    quote_check: found
+    title: 台化 公告本公司處分臺灣證券交易所股份有限公司股份
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=3c298e69-4e8a-49b4-83d1-074b327f6f42
+  tw.1326#e27:
+    locator: 公告主旨
+    published_date: '2026-09-29'
+    publisher: 公開資訊觀測站重大訊息／台視財經轉載
+    quote_check: found
+    title: 台化擬參與投資成立台塑中華先進化學，計6億元
+    url: https://www.ttv.com.tw/finance/view/09202629163204FF8518005A46858FA5B53B5D88330C1AAD/587
+  tw.1326#e28:
+    locator: 第30項，其他敘明事項
+    published_date: '2026-09-29'
+    publisher: 公開資訊觀測站重大訊息／台視財經轉載
+    quote_check: found
+    title: 台化擬參與投資成立台塑中華先進化學，計6億元
+    url: https://www.ttv.com.tw/finance/view/09202629163204FF8518005A46858FA5B53B5D88330C1AAD/587
+  tw.1326#e29:
+    locator: 第1至3項
+    published_date: '2024-03-08'
+    publisher: 公開資訊觀測站重大訊息／鉅亨網轉載
+    quote_check: found
+    title: 台化：公告本公司取得其他固定資產
+    url: https://news.cnyes.com/news/id/5480460
+  tw.1326#e3:
+    locator: 第8頁，合併營收結構－部門別
+    published_date: '2026-04-23'
+    publisher: 台灣化學纖維股份有限公司
+    quote_check: found
+    title: 2026年第一季及2025年度財報暨經營績效說明會
+    url: https://www.fcfc.com.tw/pdf/663321/115%E5%B9%B44%E6%9C%88%E5%8F%B0%E5%8C%96%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83%E6%8A%95%E5%BD%B1%E7%89%87_%E4%B8%AD%E6%96%87.pdf
+  tw.1326#e30:
+    locator: 第4項，交易相對人
+    published_date: '2024-03-08'
+    publisher: 公開資訊觀測站重大訊息／鉅亨網轉載
+    quote_check: found
+    title: 台化：公告本公司取得其他固定資產
+    url: https://news.cnyes.com/news/id/5480460
+  tw.1326#e4:
+    locator: 印刷頁138／PDF第143頁，主要原料供應狀況
+    published_date: '2025-06-18'
+    publisher: 台灣化學纖維股份有限公司
+    quote_check: found
+    title: 113年度年報
+    url: https://www.fcfc.com.tw/download/472051
+  tw.1326#e5:
+    locator: PDF第78頁，附表四；2024年品項另參年報印刷頁138
+    published_date: '2026-03-13'
+    publisher: 台灣化學纖維股份有限公司
+    quote_check: found
+    title: 民國114年度及113年度個體財務報告
+    url: https://www.fcfc.com.tw/download/631175
+  tw.1326#e6:
+    locator: PDF第78頁，附表四
+    published_date: '2026-03-13'
+    publisher: 台灣化學纖維股份有限公司
+    quote_check: found
+    title: 民國114年度及113年度個體財務報告
+    url: https://www.fcfc.com.tw/download/631175
+  tw.1326#e7:
+    locator: PDF第78頁，附表四
+    published_date: '2026-03-13'
+    publisher: 台灣化學纖維股份有限公司
+    quote_check: found
+    title: 民國114年度及113年度個體財務報告
+    url: https://www.fcfc.com.tw/download/631175
+  tw.1326#e8:
+    locator: PDF第78頁，附表四
+    published_date: '2026-03-13'
+    publisher: 台灣化學纖維股份有限公司
+    quote_check: found
+    title: 民國114年度及113年度個體財務報告
+    url: https://www.fcfc.com.tw/download/631175
+  tw.1326#e9:
+    locator: PDF第78頁，附表四
+    published_date: '2026-03-13'
+    publisher: 台灣化學纖維股份有限公司
+    quote_check: found
+    title: 民國114年度及113年度個體財務報告
+    url: https://www.fcfc.com.tw/download/631175

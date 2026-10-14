@@ -27,5 +27,583 @@ stages:
   name: 系統與機櫃組裝
   tier: downstream
   name_en: Assembly
-members: []
-as_of: null
+members:
+- id: tw.1303
+  stage: board_materials
+  tier: upstream
+  detail: AI伺服器用板材及電子材料
+  as_of: 2026-07
+  evidence:
+  - tw.1303#e23
+  - tw.1303#e8
+  - tw.1303#e9
+  - tw.1303#e10
+  confidence: ai_cross_checked
+- id: tw.1721
+  stage: board_materials
+  tier: upstream
+  detail: AI伺服器用PCB、CCL化學材料開發
+  as_of: '2025-11-14'
+  evidence:
+  - tw.1721#e23
+  - tw.1721#e24
+  - tw.1721#e25
+  confidence: ai_cross_checked
+- id: tw.1802
+  stage: board_materials
+  tier: upstream
+  detail: AI伺服器用高階玻纖材料
+  as_of: '2026-06-12'
+  evidence:
+  - tw.1802#e3
+  - tw.1802#e4
+  confidence: ai_cross_checked
+- id: tw.1815
+  stage: board_materials
+  tier: upstream
+  detail: AI伺服器用Low DK玻纖材料
+  as_of: 2025-12
+  evidence:
+  - tw.1815#e6
+  confidence: ai_cross_checked
+- id: tw.2059
+  stage: components
+  tier: midstream
+  detail: AI伺服器導軌機構件
+  as_of: '2026-05-18'
+  evidence:
+  - tw.2059#e11
+  - tw.2059#e12
+  confidence: ai_cross_checked
+- id: tw.2308
+  stage: components
+  tier: midstream
+  detail: AI伺服器電源與散熱
+  as_of: '2026-10-14'
+  evidence:
+  - tw.2308#e02
+  confidence: ai_cross_checked
+- id: tw.2313
+  stage: board_materials
+  tier: upstream
+  detail: AI伺服器用PCB技術開發
+  as_of: '2025-12-31'
+  evidence:
+  - tw.2313#e09
+  confidence: ai_cross_checked
+- id: tw.2317
+  stage: assembly
+  tier: downstream
+  detail: AI伺服器系統與機櫃
+  as_of: '2025-03-18'
+  evidence:
+  - tw.2317#e04
+  confidence: ai_cross_checked
+- id: tw.2324
+  stage: assembly
+  tier: downstream
+  detail: AI伺服器與機櫃級系統整合
+  as_of: 2026-09
+  evidence:
+  - tw.2324#e13
+  - tw.2324#e14
+  confidence: ai_cross_checked
+- id: tw.2327
+  stage: components
+  tier: midstream
+  detail: AI伺服器電源用電流感測器
+  as_of: 2025-07
+  evidence:
+  - tw.2327#e6
+  - tw.2327#e7
+  confidence: ai_cross_checked
+- id: tw.2330
+  stage: chips
+  tier: upstream
+  detail: AI資料中心CPU製造
+  as_of: '2026-03-24'
+  evidence:
+  - tw.2330#e_arm
+  - tw.2330#e_arm_ai
+  confidence: ai_cross_checked
+- id: tw.2344
+  stage: chips
+  tier: upstream
+  detail: AI伺服器用安全快閃記憶體
+  as_of: '2025-05-07'
+  evidence:
+  - tw.2344#e8
+  confidence: ai_cross_checked
+- id: tw.2345
+  stage: assembly
+  tier: downstream
+  detail: AI伺服器機櫃L11組裝研發與導入規畫
+  as_of: '2025-11-07'
+  evidence:
+  - tw.2345#e25
+  confidence: ai_cross_checked
+- id: tw.2353
+  stage: assembly
+  tier: downstream
+  detail: 透過安圖斯提供AI伺服器系統
+  as_of: 2025-12
+  evidence:
+  - tw.2353#e37
+  - tw.2353#e38
+  confidence: ai_cross_checked
+- id: tw.2354
+  stage: components
+  tier: midstream
+  detail: AI伺服器液冷模組與分流器
+  as_of: '2025-12-31'
+  evidence:
+  - tw.2354#e4
+  confidence: ai_cross_checked
+- id: tw.2356
+  stage: assembly
+  tier: downstream
+  detail: AI伺服器與機櫃組裝
+  as_of: 2026-09
+  evidence:
+  - tw.2356#e_ai_rack
+  - tw.2356#e_assembly
+  confidence: ai_cross_checked
+- id: tw.2357
+  stage: assembly
+  tier: downstream
+  detail: AI伺服器與機櫃系統整合
+  as_of: '2025-10-30'
+  evidence:
+  - tw.2357#e07
+  - tw.2357#e08
+  confidence: ai_cross_checked
+- id: tw.2368
+  stage: board_materials
+  tier: upstream
+  detail: AI伺服器電路板
+  as_of: '2026-03-31'
+  evidence:
+  - tw.2368#e3
+  confidence: ai_cross_checked
+- id: tw.2379
+  stage: chips
+  tier: upstream
+  detail: 地端AI伺服器平台的10GbE晶片
+  as_of: '2025-12-31'
+  evidence:
+  - tw.2379#e16
+  confidence: ai_cross_checked
+- id: tw.2382
+  stage: assembly
+  tier: downstream
+  detail: AI伺服器系統與機櫃組裝
+  as_of: 2026-06
+  evidence:
+  - tw.2382#e.ai_share
+  - tw.2382#e.qct_products
+  confidence: ai_cross_checked
+- id: tw.2383
+  stage: board_materials
+  tier: upstream
+  detail: AI伺服器板材
+  as_of: '2026-10-14'
+  evidence:
+  - tw.2383#e3
+  confidence: ai_cross_checked
+- id: tw.2395
+  stage: assembly
+  tier: downstream
+  detail: GPU伺服器系統
+  as_of: '2025-11-18'
+  evidence:
+  - tw.2395#e6
+  confidence: ai_cross_checked
+- id: tw.2408
+  stage: chips
+  tier: upstream
+  detail: AI基礎設施與伺服器記憶體
+  as_of: '2026-09-30'
+  evidence:
+  - tw.2408#e09
+  confidence: ai_cross_checked
+- id: tw.2454
+  stage: chips
+  tier: upstream
+  detail: 資料中心AI加速器ASIC設計
+  as_of: '2026-07-31'
+  evidence:
+  - tw.2454#e15
+  confidence: ai_cross_checked
+- id: tw.2474
+  stage: components
+  tier: midstream
+  detail: AI伺服器機構與功能零組件
+  as_of: '2026-06-02'
+  evidence:
+  - tw.2474#e03
+  confidence: ai_cross_checked
+- id: tw.2481
+  stage: chips
+  tier: upstream
+  detail: AI伺服器用橋式整流功率元件
+  as_of: '2025-06-26'
+  evidence:
+  - tw.2481#e10
+  confidence: ai_cross_checked
+- id: tw.2492
+  stage: components
+  tier: midstream
+  detail: AI伺服器用X6S高容值MLCC
+  as_of: '2024-09-24'
+  evidence:
+  - tw.2492#e3
+  confidence: ai_cross_checked
+- id: tw.3017
+  stage: components
+  tier: midstream
+  detail: AI伺服器液冷散熱
+  as_of: '2026-03-11'
+  evidence:
+  - tw.3017#e7
+  confidence: ai_cross_checked
+- id: tw.3026
+  stage: components
+  tier: midstream
+  detail: AI伺服器電源用MLCC
+  as_of: '2026-03-24'
+  evidence:
+  - tw.3026#e4
+  confidence: ai_cross_checked
+- id: tw.3037
+  stage: board_materials
+  tier: upstream
+  detail: AI運算用載板與電路板
+  as_of: '2026-06-30'
+  evidence:
+  - tw.3037#e9
+  - tw.3037#e10
+  confidence: ai_cross_checked
+- id: tw.3042
+  stage: components
+  tier: midstream
+  detail: AI伺服器與雲端設備用頻率元件
+  as_of: 2025-12
+  evidence:
+  - tw.3042#e13
+  confidence: ai_cross_checked
+- id: tw.3044
+  stage: board_materials
+  tier: upstream
+  detail: AI伺服器用PCB開發
+  as_of: '2026-03-31'
+  evidence:
+  - tw.3044#e04
+  confidence: ai_cross_checked
+- id: tw.3163
+  stage: components
+  tier: midstream
+  detail: AI伺服器光纖連接零組件
+  as_of: '2026-03-10'
+  evidence:
+  - tw.3163#e5
+  - tw.3163#e6
+  - tw.3163#e7
+  confidence: ai_cross_checked
+- id: tw.3189
+  stage: board_materials
+  tier: upstream
+  detail: AI資料中心與伺服器用FCBGA載板
+  as_of: '2026-10-14'
+  evidence:
+  - tw.3189#e4
+  - tw.3189#e5
+  confidence: ai_cross_checked
+- id: tw.3211
+  stage: components
+  tier: midstream
+  detail: AI伺服器電力備援零組件
+  as_of: '2026-07-29'
+  evidence:
+  - tw.3211#e7
+  - tw.3211#e11
+  confidence: ai_cross_checked
+- id: tw.3260
+  stage: chips
+  tier: upstream
+  detail: AI伺服器記憶體與企業級儲存
+  as_of: '2025-10-09'
+  evidence:
+  - tw.3260#e8
+  - tw.3260#e12
+  confidence: ai_cross_checked
+- id: tw.3324
+  stage: components
+  tier: midstream
+  detail: AI伺服器液冷散熱模組
+  as_of: '2026-05-29'
+  evidence:
+  - tw.3324#e07
+  confidence: ai_cross_checked
+- id: tw.3363
+  stage: components
+  tier: midstream
+  detail: AI伺服器光纖耦合封裝研發
+  as_of: '2025-03-14'
+  evidence:
+  - tw.3363#e10
+  confidence: ai_cross_checked
+- id: tw.3443
+  stage: chips
+  tier: upstream
+  detail: 資料中心AI推論ASIC設計
+  as_of: '2025-11-24'
+  evidence:
+  - tw.3443#e16
+  confidence: ai_cross_checked
+- id: tw.3529
+  stage: chips
+  tier: upstream
+  detail: AI伺服器相關晶片硬體安全矽智財
+  as_of: '2026-02-11'
+  evidence:
+  - tw.3529#e20
+  - tw.3529#e21
+  confidence: ai_cross_checked
+- id: tw.3533
+  stage: components
+  tier: midstream
+  detail: AI伺服器互連零組件
+  as_of: '2026-06-02'
+  evidence:
+  - tw.3533#e06
+  confidence: ai_cross_checked
+- id: tw.3653
+  stage: components
+  tier: midstream
+  detail: AI運算均熱片與AI伺服器液冷零組件
+  as_of: '2026-10-14'
+  evidence:
+  - tw.3653#e3
+  - tw.3653#e6
+  confidence: ai_cross_checked
+- id: tw.3661
+  stage: chips
+  tier: upstream
+  detail: AI加速器與資料中心晶片
+  as_of: '2026-06-02'
+  evidence:
+  - tw.3661#e15
+  confidence: ai_cross_checked
+- id: tw.3665
+  stage: components
+  tier: midstream
+  detail: AI伺服器連接器、線纜與電力零組件
+  as_of: '2026-10-14'
+  evidence:
+  - tw.3665#e6
+  - tw.3665#e10
+  confidence: ai_cross_checked
+- id: tw.3706
+  stage: assembly
+  tier: downstream
+  detail: AI伺服器與整機櫃組裝
+  as_of: '2026-06-03'
+  evidence:
+  - tw.3706#e5
+  confidence: ai_cross_checked
+- id: tw.4919
+  stage: chips
+  tier: upstream
+  detail: Arbel整合型BMC支援AI伺服器系統設計
+  as_of: '2026-08-04'
+  evidence:
+  - tw.4919#e_ai_server
+  - tw.4919#e_bmc
+  confidence: ai_cross_checked
+- id: tw.4938
+  stage: assembly
+  tier: downstream
+  detail: AI伺服器與機櫃
+  as_of: '2026-07-24'
+  evidence:
+  - tw.4938#e4
+  - tw.4938#e6
+  confidence: ai_cross_checked
+- id: tw.4958
+  stage: board_materials
+  tier: upstream
+  detail: AI伺服器高階HDI及高層數PCB
+  as_of: 2025-08
+  evidence:
+  - tw.4958#e21
+  confidence: ai_cross_checked
+- id: tw.5269
+  stage: chips
+  tier: upstream
+  detail: 伺服器及AI/HPC應用的PCIe Gen4交換晶片
+  as_of: '2025-01-06'
+  evidence:
+  - tw.5269#e04
+  - tw.5269#e05
+  confidence: ai_cross_checked
+- id: tw.5289
+  stage: chips
+  tier: upstream
+  detail: AI伺服器用PCIe Gen5／EDSFF SSD
+  as_of: '2025-05-19'
+  evidence:
+  - tw.5289#e16
+  confidence: ai_cross_checked
+- id: tw.5347
+  stage: chips
+  tier: upstream
+  detail: AI伺服器周邊電源晶片及分離式元件製程
+  as_of: '2026-08-04'
+  evidence:
+  - tw.5347#e21
+  confidence: ai_cross_checked
+- id: tw.5434
+  stage: board_materials
+  tier: upstream
+  detail: AI伺服器高頻高速板材用石英布
+  as_of: '2026-05-13'
+  evidence:
+  - tw.5434#e7
+  - tw.5434#e8
+  confidence: ai_cross_checked
+- id: tw.6121
+  stage: components
+  tier: midstream
+  detail: AI伺服器相關備援電池BBU
+  as_of: '2025-12-31'
+  evidence:
+  - tw.6121#e16
+  confidence: ai_cross_checked
+- id: tw.6213
+  stage: board_materials
+  tier: upstream
+  detail: AI伺服器低損耗板材
+  as_of: '2025-12-31'
+  evidence:
+  - tw.6213#e6
+  confidence: ai_cross_checked
+- id: tw.6239
+  stage: chips
+  tier: upstream
+  detail: AI伺服器用多晶片FCBGA封裝
+  as_of: '2025-12-31'
+  evidence:
+  - tw.6239#e3
+  confidence: ai_cross_checked
+- id: tw.6274
+  stage: board_materials
+  tier: upstream
+  detail: AI伺服器用ThunderClad 4系列基板材料
+  as_of: '2023-10-13'
+  evidence:
+  - tw.6274#e07
+  confidence: ai_cross_checked
+- id: tw.6415
+  stage: chips
+  tier: upstream
+  detail: 人工智慧資料中心核心供電晶片
+  as_of: '2025-12-31'
+  evidence:
+  - tw.6415#e11
+  confidence: ai_cross_checked
+- id: tw.6425
+  stage: assembly
+  tier: downstream
+  detail: AI貨櫃算力櫃整合與概念驗證
+  as_of: '2025-12-23'
+  evidence:
+  - tw.6425#e14
+  - tw.6425#e15
+  - tw.6425#e16
+  confidence: ai_cross_checked
+- id: tw.6531
+  stage: components
+  tier: midstream
+  detail: AI伺服器與HPC系統使用的矽電容及中介層
+  as_of: '2025-12-17'
+  evidence:
+  - tw.6531#e19
+  confidence: ai_cross_checked
+- id: tw.6548
+  stage: components
+  tier: midstream
+  detail: AI伺服器電源管理及高壓直流架構用導線架
+  as_of: '2026-06-15'
+  evidence:
+  - tw.6548#e18
+  confidence: ai_cross_checked
+- id: tw.6669
+  stage: assembly
+  tier: downstream
+  detail: AI伺服器與機櫃系統整合
+  as_of: '2026-10-12'
+  evidence:
+  - tw.6669#e3
+  - tw.6669#e4
+  confidence: ai_cross_checked
+- id: tw.6781
+  stage: components
+  tier: midstream
+  detail: AI伺服器備援電池模組
+  as_of: '2025-01-21'
+  evidence:
+  - tw.6781#e5
+  - tw.6781#e4
+  confidence: ai_cross_checked
+- id: tw.8021
+  stage: board_materials
+  tier: upstream
+  detail: AI伺服器電路板微型鑽孔方案
+  as_of: '2026-06-10'
+  evidence:
+  - tw.8021#e7
+  confidence: ai_cross_checked
+- id: tw.8039
+  stage: board_materials
+  tier: upstream
+  detail: AI伺服器高頻高速PCB板材開發
+  as_of: '2025-12-31'
+  evidence:
+  - tw.8039#e9
+  confidence: ai_cross_checked
+- id: tw.8046
+  stage: board_materials
+  tier: upstream
+  detail: AI伺服器ASIC及CPU應用載板開發
+  as_of: 2026-08
+  evidence:
+  - tw.8046#e04
+  confidence: ai_cross_checked
+- id: tw.8210
+  stage: components
+  tier: midstream
+  detail: AI伺服器機殼與機構件
+  as_of: '2026-06-02'
+  evidence:
+  - tw.8210#e04
+  - tw.8210#e08
+  confidence: ai_cross_checked
+- id: tw.8358
+  stage: board_materials
+  tier: upstream
+  detail: AI伺服器PCB銅箔材料
+  as_of: '2026-02-28'
+  evidence:
+  - tw.8358#e3
+  confidence: ai_cross_checked
+- id: tw.8996
+  stage: components
+  tier: midstream
+  detail: 子公司高力熱能科技之AI伺服器液冷產品
+  as_of: '2026-10-14'
+  evidence:
+  - tw.8996#e03
+  - tw.8996#e04
+  - tw.8996#e05
+  confidence: ai_cross_checked
+as_of: '2026-10-14'

@@ -20,5 +20,90 @@ stages:
   name: 工程與營運
   tier: downstream
   name_en: Engineering & Operations
-members: []
-as_of: null
+members:
+- id: tw.1503
+  stage: equipment
+  tier: midstream
+  detail: 變壓器與變配電設備
+  as_of: 2026-10
+  evidence:
+  - tw.1503#e3
+  - tw.1503#e4
+  confidence: ai_cross_checked
+- id: tw.1503
+  stage: engineering
+  tier: downstream
+  detail: 升壓站與電廠統包工程
+  as_of: 2026-10
+  evidence:
+  - tw.1503#e10
+  confidence: ai_cross_checked
+- id: tw.1504
+  stage: engineering
+  tier: downstream
+  detail: 電網儲能統包工程
+  as_of: '2024-01-22'
+  evidence:
+  - tw.1504#e7
+  confidence: ai_cross_checked
+- id: tw.1504
+  stage: equipment
+  tier: midstream
+  detail: 子公司變壓器及集團配電設備
+  as_of: '2025-12-31'
+  evidence:
+  - tw.1504#e5
+  - tw.1504#e18
+  confidence: ai_cross_checked
+- id: tw.1513
+  stage: equipment
+  tier: midstream
+  detail: GIS供配電設備
+  as_of: '2026-10-14'
+  evidence:
+  - tw.1513#e02
+  confidence: ai_cross_checked
+- id: tw.1513
+  stage: engineering
+  tier: downstream
+  detail: 發變電統包與系統整合
+  as_of: '2026-10-14'
+  evidence:
+  - tw.1513#e03
+  confidence: ai_cross_checked
+- id: tw.1519
+  stage: engineering
+  tier: downstream
+  detail: 電網設備汰換工程
+  as_of: '2025-12-31'
+  evidence:
+  - tw.1519#e7
+  confidence: ai_cross_checked
+- id: tw.1605
+  stage: materials
+  tier: upstream
+  detail: 電力輸配電用電線電纜
+  as_of: 2026-10
+  evidence:
+  - tw.1605#e13
+  confidence: ai_cross_checked
+- id: tw.2371
+  stage: equipment
+  tier: midstream
+  detail: 變壓器與配電設備
+  as_of: 2026-10
+  evidence:
+  - tw.2371#e6
+  - tw.2371#e7
+  - tw.2371#e10
+  - tw.2371#e12
+  confidence: ai_cross_checked
+- id: tw.2634
+  stage: engineering
+  tier: downstream
+  detail: STATCOM統包建置
+  as_of: '2026-10-14'
+  evidence:
+  - tw.2634#e9
+  confidence: ai_cross_checked
+as_of: '2026-10-14'

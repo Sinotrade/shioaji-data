@@ -8,12 +8,484 @@ industry:
   l0_code: '17'
   l0_name: 金融保險業
   l0_name_en: Financial and Insurance
-primary_chain_position: unknown
+  l1: finance
+  l1_name: 金融
+  l1_name_en: Financials
+  l2: fin.banking
+  l2_name: 銀行與金控
+  l2_name_en: Banks & Financial Holdings
+  l3: fin.holding
+  l3_name: 金融控股
+  l3_name_en: Financial Holding Companies
+chain: chain.finance
+primary_chain_position: not_applicable
+summary_short: 以銀行存放款、財富管理及信用卡為主，並經營證券、基金與壽險。
+summary_long: 玉山金控透過玉山銀行提供存放款、外匯、信用卡與財富管理服務，2026年上半年銀行業務是集團最大淨收益來源。玉山證券提供證券經紀、承銷、自營及債券服務，玉山投信經營共同基金、ETF與全權委託等資產管理業務，玉山創投亦為旗下子公司。玉山金控於2025年完成保德信投信股權收購，標的同年更名為玉山投信；2026年9月完成三商美邦人壽股權交割，並全數認購其160億元現金增資。另已公告投信剩餘股權及三商美邦保險代理人收購案，兩案仍須依公告程序完成交割。
+segments:
+- evidence_ids:
+  - e11
+  id: seg_bank
+  name: 銀行業務
+  period: 2026年上半年
+  revenue_share_pct: null
+- evidence_ids:
+  - e11
+  id: seg_securities
+  name: 證券業務
+  period: 2026年上半年
+  revenue_share_pct: null
+- evidence_ids:
+  - e11
+  id: seg_other
+  name: 其他業務
+  period: 2026年上半年
+  revenue_share_pct: null
+- evidence_ids:
+  - e9
+  - e18
+  id: seg_life
+  name: 人壽保險業務
+  period: 2026年9月起
+  revenue_share_pct: null
+relations:
+  partners:
+  - as_of: '2024-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司玉山銀行ATM跨行無卡提款QR Code合作
+    details:
+    - 子公司玉山銀行ATM跨行無卡提款QR Code合作
+    edge: eb400b74af7ec
+    evidence_level: primary
+    id: org.fisc
+    name: 財金資訊股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-07-16'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司玉山銀行信用卡演唱會購票禮遇合作
+    details:
+    - 子公司玉山銀行信用卡演唱會購票禮遇合作
+    edge: e1b876b8a5502
+    evidence_level: primary
+    id: us.MA
+    name: 萬事達卡
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2023-11-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司玉山銀行參與數位企業卡合作
+    details:
+    - 子公司玉山銀行參與數位企業卡合作
+    edge: e956659f59ffb
+    evidence_level: media
+    id: us.V
+    name: Visa
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2026-10-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 100%持股銀行子公司
+    details:
+    - 100%持股銀行子公司
+    edge: ef0d7a3869749
+    evidence_level: primary
+    id: org.esun-bank
+    name: 玉山商業銀行股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-09-01'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股91.1995%的投信子公司
+    details:
+    - 持股91.1995%的投信子公司
+    edge: ed64c3d624a13
+    evidence_level: primary
+    id: org.esun-investment-trust
+    name: 玉山證券投資信託股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 100%持股證券子公司
+    details:
+    - 100%持股證券子公司
+    edge: e4bbe876d421e
+    evidence_level: primary
+    id: org.esun-securities
+    name: 玉山綜合證券股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 100%持股創投子公司
+    details:
+    - 100%持股創投子公司
+    edge: e05fd5d8eae22
+    evidence_level: primary
+    id: org.esun-venture-capital
+    name: 玉山創業投資股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-09-01'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 股份轉換取得100%股權的壽險子公司
+    details:
+    - 股份轉換取得100%股權的壽險子公司
+    edge: e06f7eac26f9f
+    evidence_level: primary
+    id: tw.2867
+    name: 三商美邦人壽保險股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 新臺幣2,831,979仟元
+    as_of: '2026-10-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 收購保德信投信約91.2%股權
+    details:
+    - 收購保德信投信約91.2%股權
+    - 董事會通過以現金股份轉換取得投信剩餘股權
+    edge: ef0ab3c9b45b6
+    event_date: '2025-03-18'
+    events:
+    - amount: 每股普通股現金對價新台幣168元
+      detail: 董事會通過以現金股份轉換取得投信剩餘股權
+      event_date: '2026-09-01'
+    - amount: 新臺幣2,831,979仟元
+      detail: 收購保德信投信約91.2%股權
+      event_date: '2025-03-18'
+    evidence_level: primary
+    id: org.esun-investment-trust
+    name: 玉山證券投資信託股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新臺幣7,500萬元
+    as_of: '2026-10-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 收購保險代理人100%股權，已核准待交割
+    details:
+    - 收購保險代理人100%股權，已核准待交割
+    edge: e9a6939fed9a9
+    event_date: '2026-10-05'
+    events:
+    - amount: 新臺幣7,500萬元
+      detail: 收購保險代理人100%股權，已核准待交割
+      event_date: '2026-10-05'
+    evidence_level: primary
+    id: org.mercuries-life-insurance-agency
+    name: 三商美邦保險代理人股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2026-09-18'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司玉山銀行台中西屯分行購置案共同出售方
+    details:
+    - 子公司玉山銀行台中西屯分行購置案共同出售方
+    edge: ecf7460424e08
+    event_date: '2026-09-18'
+    events:
+    - amount: null
+      detail: 子公司玉山銀行台中西屯分行購置案共同出售方
+      event_date: '2026-09-18'
+    evidence_level: primary
+    id: org.信和開發股份有限公司
+    name: 信和開發股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新臺幣5.276億元
+    as_of: '2026-09-18'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司玉山銀行購置新北中和分行不動產
+    details:
+    - 子公司玉山銀行購置新北中和分行不動產
+    edge: e89067addf002
+    event_date: '2026-09-18'
+    events:
+    - amount: 新臺幣5.276億元
+      detail: 子公司玉山銀行購置新北中和分行不動產
+      event_date: '2026-09-18'
+    evidence_level: primary
+    id: org.寶亞國際開發建設股份有限公司
+    name: 寶亞國際開發建設股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新臺幣3.75億元（整筆交易總額）
+    as_of: '2026-09-18'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司玉山銀行購置台中西屯分行不動產
+    details:
+    - 子公司玉山銀行購置台中西屯分行不動產
+    edge: e8c0c5fe5fccf
+    event_date: '2026-09-18'
+    events:
+    - amount: 新臺幣3.75億元（整筆交易總額）
+      detail: 子公司玉山銀行購置台中西屯分行不動產
+      event_date: '2026-09-18'
+    evidence_level: primary
+    id: org.寶急開發股份有限公司
+    name: 寶急開發股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣160億元
+    as_of: '2026-09-29'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 以股份轉換取得三商美邦人壽100%股權
+    details:
+    - 以股份轉換取得三商美邦人壽100%股權
+    - 全數認購三商壽160億元現金增資
+    edge: ebf552d1276d1
+    event_date: '2025-11-05'
+    events:
+    - amount: 新台幣160億元
+      detail: 全數認購三商壽160億元現金增資
+      event_date: '2026-09-29'
+    - amount: null
+      detail: 以股份轉換取得三商美邦人壽100%股權
+      event_date: '2025-11-05'
+    evidence_level: primary
+    id: tw.2867
+    name: 三商美邦人壽保險股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 玉山投信除玉山金控以外的其餘全體股東（不含異議股東）；現金股份轉換公告未逐一具…
 website: https://www.esunfhc.com
 tax_id: '70796305'
 incorporated: '2002-01-28'
 listed: '2002-01-28'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-14'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2884#e1:
+    locator: 公司名稱、簡稱及股票代碼
+    published_date: null
+    publisher: 玉山金融控股股份有限公司
+    quote_check: found
+    title: 基本資料
+    url: https://www.esunfhc.com/zh-tw/investor-relations/company-overview/company-profile
+  tw.2884#e10:
+    locator: 第1頁，主旨
+    published_date: '2025-11-05'
+    publisher: 玉山金融控股股份有限公司
+    quote_check: found
+    title: 董事會決議以股份轉換方式取得三商美邦人壽100%股權
+    url: https://www.esunbank.com/zh-tw/-/media/ESUNFHC/Files/Investor-Relations/mna/mna01.pdf
+  tw.2884#e11:
+    locator: 印刷頁130，附表六，2026年上半年業務別財務資訊；依序為銀行、證券、其他及合併，單位新臺幣仟元
+    published_date: null
+    publisher: 玉山金融控股股份有限公司
+    quote_check: unreachable
+    title: 玉山金控2026年度第二季合併財務報告
+    url: https://www.esunbank.com/zh-tw/-/media/ESUNFHC/Files/Investor-Relations/Financials/Financial-Reports/ESUNFHC/zh_TW/2026/FHC_26Q2_con.pdf
+  tw.2884#e12:
+    locator: 記者溫子豪報導，第1段
+    published_date: '2023-11-13'
+    publisher: 卡優新聞網
+    quote_check: found
+    title: 數位企業卡管控支出 差旅智能核銷省成本
+    url: https://www.cardu.com.tw/news/detail.php?50114=
+  tw.2884#e13:
+    locator: 第2段
+    published_date: '2026-07-16'
+    publisher: 玉山金融控股股份有限公司
+    quote_check: found
+    title: 玉山銀行首度攜手萬事達卡及Live Nation 推出卡友演唱會購票禮遇
+    url: https://www.esunfhc.com/zh-tw/news-center/news-center/news/detail?id=B4CF7A5764664DCAA667603BAA622385&p=C184F013F5EA4654A68BF10BF86AA6F5
+  tw.2884#e14:
+    locator: 第1段
+    published_date: '2024-09-30'
+    publisher: 玉山金融控股股份有限公司
+    quote_check: found
+    title: 落實金融友善服務 玉山銀行推出「ATM跨行無卡提款QR Code」服務
+    url: https://www.esunfhc.com/zh-tw/news-center/news-center/news/detail?id=CF7AF97A0BDF4347BC0CAA1DEB00B0E4&p=2B4822BDE7BF44D3BFB4B81E00E842A6
+  tw.2884#e15:
+    locator: 玉山銀行，商業銀行業務
+    published_date: null
+    publisher: 玉山金融控股股份有限公司
+    quote_check: found
+    title: 子公司簡介
+    url: https://www.esunfhc.com/zh-tw/about-esun/intro/Subsidiaries
+  tw.2884#e16:
+    locator: 第6項
+    published_date: '2026-09-01'
+    publisher: 公開資訊觀測站重大訊息公告（MoneyDJ刊載）
+    quote_check: found
+    title: 玉山金 公告本公司董事會決議通過現金股份轉換案
+    url: https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=e19a3191-3cdf-4948-829b-a765d27a2113
+  tw.2884#e17:
+    locator: 玉山投信，基金管理及投資產品
+    published_date: null
+    publisher: 玉山金融控股股份有限公司
+    quote_check: found
+    title: 子公司簡介
+    url: https://www.esunfhc.com/zh-tw/about-esun/intro/Subsidiaries
+  tw.2884#e18:
+    locator: 三商美邦人壽，人身保險及健康醫療險
+    published_date: null
+    publisher: 玉山金融控股股份有限公司
+    quote_check: found
+    title: 子公司簡介
+    url: https://www.esunfhc.com/zh-tw/about-esun/intro/Subsidiaries
+  tw.2884#e19:
+    locator: 第7項，第2及第3款
+    published_date: '2026-09-01'
+    publisher: 公開資訊觀測站重大訊息公告（MoneyDJ刊載）
+    quote_check: found
+    title: 玉山金 公告本公司董事會決議通過現金股份轉換案
+    url: https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=e19a3191-3cdf-4948-829b-a765d27a2113
+  tw.2884#e2:
+    locator: 玉山銀行，第1段
+    published_date: null
+    publisher: 玉山金融控股股份有限公司
+    quote_check: found
+    title: 子公司簡介
+    url: https://www.esunfhc.com/zh-tw/about-esun/intro/Subsidiaries
+  tw.2884#e20:
+    locator: 第23項
+    published_date: '2026-09-01'
+    publisher: 公開資訊觀測站重大訊息公告（MoneyDJ刊載）
+    quote_check: found
+    title: 玉山金 公告本公司董事會決議通過現金股份轉換案
+    url: https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=e19a3191-3cdf-4948-829b-a765d27a2113
+  tw.2884#e21:
+    locator: 記者蘇思云報導，第1段
+    published_date: '2026-09-29'
+    publisher: 中央社
+    quote_check: found
+    title: 玉山金注資三商壽160億元到位 強化資本體質
+    url: https://www.cna.com.tw/news/afe/202609290319.aspx
+  tw.2884#e22:
+    locator: 第5項
+    published_date: '2026-10-05'
+    publisher: 公開資訊觀測站重大訊息公告（玉山證券刊載）
+    quote_check: found
+    title: 取得三商美邦保險代理人100%股權案之股份買賣交割基準日
+    url: https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B41C63581-3AFE-4F99-BFEE-06DC46B41841%7D
+  tw.2884#e23:
+    locator: 記者林勁傑報導，第1段
+    published_date: '2026-10-05'
+    publisher: 經濟日報
+    quote_check: found
+    title: 玉山金收購三商美邦保代已獲金管會及公平會同意 11月6日完成交割
+    url: https://money.udn.com/money/story/5613/9796207?from=edn_related_storybottom
+  tw.2884#e24:
+    locator: 公告標題；第1、3及23項
+    published_date: '2026-09-18'
+    publisher: 公開資訊觀測站（PChome刊載）
+    quote_check: not_found
+    title: 玉山金控代子公司玉山銀行公告購置不動產
+    url: https://stock.pchome.com.tw/m/news/cat2/20260918/9700002884202609183.html
+  tw.2884#e25:
+    locator: 第5及第6項，台中西屯購置案
+    published_date: '2026-09-18'
+    publisher: 公開資訊觀測站（PChome刊載）
+    quote_check: not_found
+    title: 玉山金控代子公司玉山銀行公告購置不動產
+    url: https://stock.pchome.com.tw/m/news/cat2/20260918/9700002884202609183.html
+  tw.2884#e26:
+    locator: 公告標題；第1、3及23項，新北中和購置案
+    published_date: '2026-09-18'
+    publisher: 公開資訊觀測站（PChome刊載）
+    quote_check: not_found
+    title: 玉山金控代子公司玉山銀行公告購置不動產
+    url: https://pchome.megatime.com.tw/m/news/cat2/20260918/9700002884202609184.html
+  tw.2884#e27:
+    locator: 第5及第6項
+    published_date: '2026-09-18'
+    publisher: 公開資訊觀測站（PChome刊載）
+    quote_check: not_found
+    title: 玉山金控代子公司玉山銀行公告購置不動產
+    url: https://pchome.megatime.com.tw/m/news/cat2/20260918/9700002884202609184.html
+  tw.2884#e3:
+    locator: 玉山證券，第1段
+    published_date: null
+    publisher: 玉山金融控股股份有限公司
+    quote_check: found
+    title: 子公司簡介
+    url: https://www.esunfhc.com/zh-tw/about-esun/intro/Subsidiaries
+  tw.2884#e4:
+    locator: 玉山創投，第1段
+    published_date: null
+    publisher: 玉山金融控股股份有限公司
+    quote_check: found
+    title: 子公司簡介
+    url: https://www.esunfhc.com/zh-tw/about-esun/intro/Subsidiaries
+  tw.2884#e6:
+    locator: 第2段
+    published_date: '2025-10-03'
+    publisher: 玉山證券投資信託股份有限公司
+    quote_check: found
+    title: 玉山壯大金控版圖 啟動投信新篇章
+    url: https://www.esunam.com/Unit/Detail1?cID=5102&fID=7107
+  tw.2884#e7:
+    locator: 第1段
+    published_date: '2025-10-03'
+    publisher: 玉山證券投資信託股份有限公司
+    quote_check: found
+    title: 玉山壯大金控版圖 啟動投信新篇章
+    url: https://www.esunam.com/Unit/Detail1?cID=5102&fID=7107
+  tw.2884#e8:
+    locator: 印刷頁109，附註五一企業合併；移轉對價單位為新臺幣仟元
+    published_date: null
+    publisher: 玉山金融控股股份有限公司
+    quote_check: unreachable
+    title: 玉山金控2026年度第二季合併財務報告
+    url: https://www.esunbank.com/zh-tw/-/media/ESUNFHC/Files/Investor-Relations/Financials/Financial-Reports/ESUNFHC/zh_TW/2026/FHC_26Q2_con.pdf
+  tw.2884#e9:
+    locator: 第1段
+    published_date: '2026-09-02'
+    publisher: 玉山金融控股股份有限公司
+    quote_check: found
+    title: 玉山金控完成合意併購三商美邦人壽 啟動金控2.0新篇章
+    url: https://www.esunfhc.com/zh-tw/news-center/news-center/news/detail?id=D0565FF2DAE34916B079E1F26A048B1C&p=148DB1EBDC2B47629ED09DC9820A2155

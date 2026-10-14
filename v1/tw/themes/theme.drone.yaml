@@ -20,5 +20,70 @@ stages:
   name: 整機與服務
   tier: downstream
   name_en: Systems
-members: []
-as_of: null
+members:
+- id: tw.1504
+  stage: components
+  tier: upstream
+  detail: 商用無人機馬達與動力系統
+  as_of: '2026-07-15'
+  evidence:
+  - tw.1504#e15
+  confidence: ai_cross_checked
+- id: tw.2395
+  stage: modules
+  tier: midstream
+  detail: 無人機伴隨運算與AI任務模組
+  as_of: '2026-09-29'
+  evidence:
+  - tw.2395#e7
+  confidence: ai_cross_checked
+- id: tw.2634
+  stage: system
+  tier: downstream
+  detail: 無人機整機研發與系統整合
+  as_of: '2026-10-06'
+  evidence:
+  - tw.2634#e6
+  confidence: ai_cross_checked
+- id: tw.2634
+  stage: modules
+  tier: midstream
+  detail: AIxVNAV無人機視覺導航定位系統
+  as_of: '2026-08-20'
+  evidence:
+  - tw.2634#e7
+  confidence: ai_cross_checked
+- id: tw.2645
+  stage: system
+  tier: downstream
+  detail: 商用無人機產品開發
+  as_of: '2026-05-20'
+  evidence:
+  - tw.2645#e6
+  confidence: ai_cross_checked
+- id: tw.3005
+  stage: system
+  tier: downstream
+  detail: 子公司神基科技CommandCore無人機地面控制方案
+  as_of: '2026-03-25'
+  evidence:
+  - tw.3005#e6
+  - tw.3005#e14
+  confidence: ai_cross_checked
+- id: tw.3023
+  stage: components
+  tier: upstream
+  detail: 商用無人機連接零組件
+  as_of: '2024-09-23'
+  evidence:
+  - tw.3023#e22
+  confidence: ai_cross_checked
+- id: tw.6121
+  stage: components
+  tier: upstream
+  detail: 無人機相關電池模組
+  as_of: '2025-12-31'
+  evidence:
+  - tw.6121#e8
+  confidence: ai_cross_checked
+as_of: '2026-10-06'

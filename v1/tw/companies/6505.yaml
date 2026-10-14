@@ -8,12 +8,561 @@ industry:
   l0_code: '23'
   l0_name: 油電燃氣業
   l0_name_en: Oil, Gas and Electricity
-primary_chain_position: unknown
+  l1: energy
+  l1_name: 能源
+  l1_name_en: Energy & Utilities
+  l2: energy.traditional
+  l2_name: 傳統能源
+  l2_name_en: Conventional Energy & Utilities
+  l3: energy.oil_gas
+  l3_name: 油品與燃氣
+  l3_name_en: Oil & Gas
+chain: chain.petrochem
+primary_chain_position: upstream
+summary_short: 以煉製及銷售油品為主，兼營石化基本原料與電力、蒸汽供應。
+summary_long: 台塑石化煉製與銷售汽油、柴油及航空燃油，並透過輕油裂解生產乙烯、丙烯、丁二烯，另供應六輕園區電力與蒸汽。2024年油品、石化品及電力蒸汽占營業額分別為75.5%、18.1%及6.0%。具名購買方包括台塑、台化、南亞、國喬集團、台橡、全國加油站、山隆及福懋，華航亦採購其自產永續航空燃油。近三年交易包括2024年台塑新智能增資、2025年台順貿易注資，以及2026年向台朔重工購置設備與擬出資成立台塑中華先進化學。另與台積電合作碳封存研究。
+segments:
+- evidence_ids:
+  - e01
+  id: oil
+  name: 汽油、柴油等石油製品
+  period: '2024'
+  revenue_share_pct: 75.5
+- evidence_ids:
+  - e01
+  id: petrochem
+  name: 乙烯、丙烯等石油化學品
+  period: '2024'
+  revenue_share_pct: 18.1
+- evidence_ids:
+  - e01
+  id: utilities
+  name: 電力、蒸汽
+  period: '2024'
+  revenue_share_pct: 6.0
+- evidence_ids:
+  - e01
+  id: other
+  name: 其他
+  period: '2024'
+  revenue_share_pct: 0.4
+relations:
+  competitors:
+  - as_of: 2026-10
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 國內液化石油氣供應市場
+    details:
+    - 國內液化石油氣供應市場
+    edge: eaebc6a9dc185
+    evidence_level: primary
+    id: org.cpc-corporation-taiwan
+    name: 台灣中油
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  customers:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares:
+    - as_of: '2025-12-31'
+      basis: purchases
+      of: tw.1326
+      pct: 80
+    detail: 商品進貨；2024年原料表列示芳香烴混合物、乙烯及丙烯
+    details:
+    - 商品進貨；2024年原料表列示芳香烴混合物、乙烯及丙烯
+    - 商品銷售，品項未逐家細分
+    edge: e670c57940463
+    evidence_level: primary
+    id: tw.1326
+    name: 台化
+    ranking_basis: disclosed
+    share_basis: revenue
+    share_pct: 17.86
+    weight: 2
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares:
+    - as_of: 2025-12
+      basis: purchases
+      of: tw.1301
+      pct: 36.38
+    detail: 乙烯、丙烯原料
+    details:
+    - 乙烯、丙烯原料
+    - 商品銷售，品項未逐家細分
+    edge: ebaf40035333c
+    evidence_level: primary
+    id: tw.1301
+    name: 台塑
+    ranking_basis: disclosed
+    share_basis: revenue
+    share_pct: 9.57
+    weight: 2
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares:
+    - as_of: 2025-12
+      basis: purchases
+      of: tw.1303
+      pct: 10.88
+    detail: 原料進貨
+    details:
+    - 原料進貨
+    - 商品銷售，品項未逐家細分
+    edge: e41cde1df8b21
+    evidence_level: primary
+    id: tw.1303
+    name: 南亞
+    ranking_basis: disclosed
+    share_basis: revenue
+    share_pct: 3.44
+    weight: 2
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 商品銷售，品項未逐家細分
+    details:
+    - 商品銷售，品項未逐家細分
+    edge: e619b4be06335
+    evidence_level: primary
+    id: tw.1434
+    name: 福懋
+    ranking_basis: disclosed
+    share_basis: revenue
+    share_pct: 1.41
+    weight: 1
+  - as_of: '2024-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 國喬集團採購丁二烯
+    details:
+    - 國喬集團採購丁二烯
+    edge: e8a3949bd5707
+    evidence_level: primary
+    id: tw.1312
+    name: 國喬
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 丁二烯原料
+    details:
+    - 丁二烯原料
+    edge: e5f78b9171139
+    evidence_level: primary
+    id: tw.2103
+    name: 台橡
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-07-22'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 自產永續航空燃油SAF
+    details:
+    - 自產永續航空燃油SAF
+    edge: e0cc50d21c132
+    evidence_level: primary
+    id: tw.2610
+    name: 華航
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2026-10
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 加油站油品
+    details:
+    - 加油站油品
+    edge: ea061863b0dd2
+    evidence_level: primary
+    id: tw.2616
+    name: 山隆
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 加油站油品
+    details:
+    - 加油站油品
+    edge: ea9ecdeb9af01
+    evidence_level: primary
+    id: tw.9937
+    name: 全國
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  partners:
+  - as_of: '2026-09-29'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 碳封存研究
+    details:
+    - 碳封存研究
+    edge: ec9ee48567364
+    evidence_level: media
+    id: tw.2330
+    name: 台積電
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股57%的子公司
+    details:
+    - 持股57%的子公司
+    edge: e3376d4e9433e
+    evidence_level: primary
+    id: org.fg-inc
+    name: FG INC.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股100%的子公司
+    details:
+    - 持股100%的子公司
+    edge: ec9c2612211d9
+    evidence_level: primary
+    id: org.fpcc-usa
+    name: FPCC USA, INC.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股88%的子公司
+    details:
+    - 持股88%的子公司
+    edge: e9472ebe55720
+    evidence_level: primary
+    id: org.sixth-naphtha-cracker-trucking
+    name: 六輕汽車貨運(股)公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股60%的子公司
+    details:
+    - 持股60%的子公司
+    edge: e56b9ae56eb6d
+    evidence_level: primary
+    id: org.taishun-trading
+    name: 台順貿易(股)公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股100%的子公司
+    details:
+    - 持股100%的子公司
+    edge: ee7d0fc7b75bb
+    evidence_level: primary
+    id: org.taiya-oil
+    name: 台亞石油(股)公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares:
+    - as_of: '2025-12-31'
+      basis: revenue
+      of: tw.1326
+      pct: 17
+    detail: 商品銷售，品項未於交易表細分
+    details:
+    - 商品銷售，品項未於交易表細分
+    edge: e769968c39dd8
+    evidence_level: primary
+    id: tw.1326
+    name: 台化
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 新台幣6億元
+    as_of: '2026-09-29'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 擬出資成立電子級硫酸合資公司
+    details:
+    - 擬出資成立電子級硫酸合資公司
+    edge: ead2ccf031e7a
+    event_date: '2026-09-29'
+    events:
+    - amount: 新台幣6億元
+      detail: 擬出資成立電子級硫酸合資公司
+      event_date: '2026-09-29'
+    evidence_level: media
+    id: org.formosa-china-advanced-chemicals
+    name: 台塑中華先進化學股份有限公司
+    ranking_basis: unranked
+    role: party
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣306,889千元
+    as_of: '2026-09-24'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 取得生產用機械設備
+    details:
+    - 取得生產用機械設備
+    edge: e49915babb02d
+    event_date: '2026-09-24'
+    events:
+    - amount: 新台幣306,889千元
+      detail: 取得生產用機械設備
+      event_date: '2026-09-24'
+    evidence_level: media
+    id: org.formosa-heavy-industries
+    name: 台朔重工股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣25億元
+    as_of: '2024-05-03'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 參與現金增資
+    details:
+    - 參與現金增資
+    edge: e6232caede5df
+    event_date: '2024-05-03'
+    events:
+    - amount: 新台幣25億元
+      detail: 參與現金增資
+      event_date: '2024-05-03'
+    evidence_level: media
+    id: org.formosa-smart-energy
+    name: 台塑新智能科技股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣572,400千元
+    as_of: 2025-02
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 履行現金增資注資
+    details:
+    - 履行現金增資注資
+    edge: e896b79bab1c0
+    event_date: null
+    events:
+    - amount: 新台幣572,400千元
+      detail: 履行現金增資注資
+      event_date: null
+    evidence_level: primary
+    id: org.taishun-trading
+    name: 台順貿易(股)公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 國際大型油商：年報提及長期供油合約，未逐一具名。
+- SAF生質原料供應之國內油商：華航新聞稿未揭露公司名稱。
 website: WWW.FPCC.COM.TW
 tax_id: '86522210'
 incorporated: '1992-04-06'
 listed: '2003-12-26'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-14'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6505#e01:
+    locator: 年報第105頁，營業比重（113年度）
+    published_date: '2025-04-30'
+    publisher: 台塑石化股份有限公司
+    quote_check: found
+    title: 台塑石化113年度年報
+    url: https://www.fpcc.com.tw/uploads/images/ir/%E5%8F%B0%E5%A1%91%E7%9F%B3%E5%8C%96113%E5%B9%B4%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
+  tw.6505#e02:
+    locator: PDF第154頁，OL-3廠GHU製程改善計畫
+    published_date: '2025-04-30'
+    publisher: 台塑石化股份有限公司
+    quote_check: found
+    title: 台塑石化113年度年報
+    url: https://www.fpcc.com.tw/uploads/images/ir/%E5%8F%B0%E5%A1%91%E7%9F%B3%E5%8C%96113%E5%B9%B4%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
+  tw.6505#e03:
+    locator: 產品與產能首段
+    published_date: null
+    publisher: 台塑石化股份有限公司
+    quote_check: found
+    title: 產品與產能
+    url: https://fpcc-esg.com/content_detail.php?id=34&page=content
+  tw.6505#e04:
+    locator: 石化產業結構與上下游關聯圖
+    published_date: null
+    publisher: 台塑石化股份有限公司
+    quote_check: found
+    title: 石化產業結構與價值鏈定位
+    url: https://fpcc-esg.com/content_detail.php?id=5&page=content
+  tw.6505#e05:
+    locator: 第65頁銷貨明細；第87至88頁進銷貨附表，2025年度銷貨比率
+    published_date: '2026-03-05'
+    publisher: 台塑石化股份有限公司
+    quote_check: found
+    title: 台塑石化114年度及113年度個體財務報告
+    url: https://www.fpcc.com.tw/uploads/images/ir/114Q4%E4%B8%AD%E6%96%87%E5%80%8B%E9%AB%94.pdf
+  tw.6505#e06:
+    locator: 報表第73頁，重大或有負債及未認列之合約承諾第10項
+    published_date: '2024-11-11'
+    publisher: 國喬石油化學股份有限公司
+    quote_check: found
+    title: 國喬石油化學113年及112年第3季合併財務報告
+    url: https://www.gppc.com.tw/gppc/Accounting_PDF/202403_1312_AI1_20241115_080929.pdf
+  tw.6505#e07:
+    locator: 年報第73頁，主要原料之供應狀況
+    published_date: '2026-03-31'
+    publisher: 台橡股份有限公司
+    quote_check: found
+    title: 台橡2025年報
+    url: https://www.tsrc.com.tw/app/uploads/2026/05/2025%E4%B8%AD%E6%96%87%E5%B9%B4%E5%A0%B1.pdf
+  tw.6505#e08:
+    locator: 常見問題Q5
+    published_date: null
+    publisher: 山隆通運股份有限公司
+    quote_check: found
+    title: 企業用油
+    url: https://w3.slc.com.tw/page/fuel-sale
+  tw.6505#e09:
+    locator: 第三項活動適用通路
+    published_date: '2024-06-24'
+    publisher: 台塑石化股份有限公司
+    quote_check: not_found
+    title: 台塑石油尚安心 汽油在地回饋活動2024/7/1至2024/12/31
+    url: https://www.fpcc.com.tw/tw/events/articles/3/%E5%8F%B0%E5%A1%91%E7%9F%B3%E6%B2%B9%E5%B0%9A%E5%AE%89%E5%BF%83-%E6%B1%BD%E6%B2%B9%E5%9C%A8%E5%9C%B0%E5%9B%9E%E9%A5%8B%E6%B4%BB%E5%8B%95-20247120241231
+  tw.6505#e10:
+    locator: 第八項第4點供應商關係
+    published_date: null
+    publisher: 全國加油站股份有限公司
+    quote_check: found
+    title: 公司治理運作情形
+    url: https://inv.npcgas.com.tw/html/investors/27.aspx
+  tw.6505#e11:
+    locator: 第88頁，與關係人進銷貨附表之福懋興業列
+    published_date: '2026-03-05'
+    publisher: 台塑石化股份有限公司
+    quote_check: found
+    title: 台塑石化114年度及113年度個體財務報告
+    url: https://www.fpcc.com.tw/uploads/images/ir/114Q4%E4%B8%AD%E6%96%87%E5%80%8B%E9%AB%94.pdf
+  tw.6505#e12:
+    locator: 新聞稿第一及第二段
+    published_date: '2025-07-22'
+    publisher: 中華航空股份有限公司
+    quote_check: unreachable
+    title: 華航與台塑石化擴大採購萬噸永續航空燃油 航向淨零未來
+    url: https://www.china-airlines.com/au/zh/about-china-airlines/media/news/20250722.html
+  tw.6505#e13:
+    locator: 國內液化石油氣之供應來源問答
+    published_date: null
+    publisher: 台灣中油股份有限公司
+    quote_check: found
+    title: 液化石油氣每月價格檢討調整機制問答集
+    url: https://www.cpc.com.tw/cp.aspx?n=64
+  tw.6505#e14:
+    locator: 第41頁，採用權益法之投資／本公司之子公司
+    published_date: '2026-03-05'
+    publisher: 台塑石化股份有限公司
+    quote_check: found
+    title: 台塑石化114年度及113年度個體財務報告
+    url: https://www.fpcc.com.tw/uploads/images/ir/114Q4%E4%B8%AD%E6%96%87%E5%80%8B%E9%AB%94.pdf
+  tw.6505#e15:
+    locator: 第41頁，本公司之子公司／FG INC.列
+    published_date: '2026-03-05'
+    publisher: 台塑石化股份有限公司
+    quote_check: found
+    title: 台塑石化114年度及113年度個體財務報告
+    url: https://www.fpcc.com.tw/uploads/images/ir/114Q4%E4%B8%AD%E6%96%87%E5%80%8B%E9%AB%94.pdf
+  tw.6505#e16:
+    locator: 第41頁，本公司之子公司／FPCC USA, INC.列
+    published_date: '2026-03-05'
+    publisher: 台塑石化股份有限公司
+    quote_check: found
+    title: 台塑石化114年度及113年度個體財務報告
+    url: https://www.fpcc.com.tw/uploads/images/ir/114Q4%E4%B8%AD%E6%96%87%E5%80%8B%E9%AB%94.pdf
+  tw.6505#e17:
+    locator: 重大訊息記者會報導第二段
+    published_date: '2024-05-03'
+    publisher: 中央通訊社
+    quote_check: found
+    title: 台塑新智能拚7月量產 台塑四寶宣布增資100億元
+    url: https://www.cna.com.tw/news/afe/202405030191.aspx
+  tw.6505#e18:
+    locator: 轉載重大訊息第3至4項
+    published_date: '2024-05-03'
+    publisher: 鉅亨網
+    quote_check: found
+    title: 台塑化：公告本公司增加投資台塑新智能科技股份有限公司
+    url: https://news.cnyes.com/news/id/5545716
+  tw.6505#e19:
+    locator: 第42頁，採用權益法之投資附註第5項
+    published_date: '2026-03-05'
+    publisher: 台塑石化股份有限公司
+    quote_check: found
+    title: 台塑石化114年度及113年度個體財務報告
+    url: https://www.fpcc.com.tw/uploads/images/ir/114Q4%E4%B8%AD%E6%96%87%E5%80%8B%E9%AB%94.pdf
+  tw.6505#e20:
+    locator: 轉載重大訊息第1、5及6項
+    published_date: '2026-09-24'
+    publisher: MoneyDJ理財網
+    quote_check: found
+    title: 台塑化公告本公司取得其他固定資產
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=fc7099a2-3d7c-4155-b124-f976644e2fe9
+  tw.6505#e21:
+    locator: 轉載重大訊息第6及31項
+    published_date: '2026-09-24'
+    publisher: MoneyDJ理財網
+    quote_check: found
+    title: 台塑化公告本公司取得其他固定資產
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=fc7099a2-3d7c-4155-b124-f976644e2fe9
+  tw.6505#e22:
+    locator: 台塑中華先進化學資本額與出資比例段落
+    published_date: '2026-09-29'
+    publisher: 中央通訊社
+    quote_check: found
+    title: 台塑集團4公司攜手中華化 合資60億布局電子級硫酸
+    url: https://www.cna.com.tw/news/afe/202609290275.aspx
+  tw.6505#e23:
+    locator: 採訪台塑化總經理林克彥段落
+    published_date: '2026-09-29'
+    publisher: 中央通訊社
+    quote_check: found
+    title: AI淨零／與台積電合作碳封存 台塑化林克彥：不是1年、2年的事
+    url: https://www.cna.com.tw/news/afe/202609290079.aspx

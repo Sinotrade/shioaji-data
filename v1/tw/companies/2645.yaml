@@ -8,12 +8,101 @@ industry:
   l0_code: '15'
   l0_name: 航運業
   l0_name_en: Shipping and Transportation
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.transport
+  l2_name: 運輸
+  l2_name_en: Transportation
+  l3: trans.airline
+  l3_name: 航空
+  l3_name_en: Airlines
+primary_chain_position: not_applicable
+summary_short: 主要提供航空器維修服務，並製造航太零組件。
+summary_long: 長榮航太以航空器維修及航太零組件製造為主要業務，維修範圍包括機體、發動機與飛機零組件，製造部門從事相關零組件的製造、加工及銷售。2026年上半年，維修與製造部門的外部收入分別為新台幣78.14億元及21.47億元，維修為主要營收來源。公司亦取得半導體設備零組件製造訂單，進行開發量產作業，並投入商用無人機與次世代產品開發。長榮航空為其母公司，於2026年6月底持有55.05%普通股。
+segments:
+- evidence_ids:
+  - e1
+  - e3
+  id: maintenance
+  name: 航空器維修
+  period: 2026年上半年
+  revenue_share_pct: null
+- evidence_ids:
+  - e2
+  - e3
+  id: manufacturing
+  name: 航空器零組件製造、加工及銷售
+  period: 2026年上半年
+  revenue_share_pct: null
+main_theme: theme.drone
+themes:
+- stage: system
+  theme: theme.drone
+  tier: downstream
+relations:
+  parents:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 母公司及最終控制者
+    details:
+    - 母公司及最終控制者
+    edge: ece95e2f1c3e0
+    evidence_level: primary
+    id: tw.2618
+    name: 長榮航
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.egat.com.tw/
 tax_id: '16097775'
 incorporated: '1997-11-10'
 listed: '2023-03-14'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-14'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2645#e1:
+    locator: 印刷頁38，附註十四、部門資訊
+    published_date: '2026-08-11'
+    publisher: 長榮航太科技股份有限公司
+    quote_check: unreachable
+    title: 長榮航太科技股份有限公司民國115年及114年第二季個別財務報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52179/2026/RNS/52179_rns_2026-08-21_633d6490-56d5-4985-8d08-55939b285f6b.pdf
+  tw.2645#e2:
+    locator: 印刷頁38，附註十四、部門資訊
+    published_date: '2026-08-11'
+    publisher: 長榮航太科技股份有限公司
+    quote_check: unreachable
+    title: 長榮航太科技股份有限公司民國115年及114年第二季個別財務報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52179/2026/RNS/52179_rns_2026-08-21_633d6490-56d5-4985-8d08-55939b285f6b.pdf
+  tw.2645#e3:
+    locator: 印刷頁39，115年1月至6月部門資訊；金額單位為新台幣千元
+    published_date: '2026-08-11'
+    publisher: 長榮航太科技股份有限公司
+    quote_check: unreachable
+    title: 長榮航太科技股份有限公司民國115年及114年第二季個別財務報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52179/2026/RNS/52179_rns_2026-08-21_633d6490-56d5-4985-8d08-55939b285f6b.pdf
+  tw.2645#e4:
+    locator: 印刷頁31，附註七（一）母公司與最終控制者
+    published_date: '2026-08-11'
+    publisher: 長榮航太科技股份有限公司
+    quote_check: unreachable
+    title: 長榮航太科技股份有限公司民國115年及114年第二季個別財務報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52179/2026/RNS/52179_rns_2026-08-21_633d6490-56d5-4985-8d08-55939b285f6b.pdf
+  tw.2645#e5:
+    locator: 第14頁，製造營運策略
+    published_date: '2026-05-20'
+    publisher: 長榮航太科技股份有限公司
+    quote_check: found
+    title: 長榮航太法人說明會，2026年5月20日
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52179/2026/RNS/52179_rns_2026-05-20_e066c9c4-3764-468a-bbd5-f2be704cbac4.pdf
+  tw.2645#e6:
+    locator: 第14頁，Corporate Strategy
+    published_date: '2026-05-20'
+    publisher: 長榮航太科技股份有限公司
+    quote_check: found
+    title: EGAT Investor Conference, May 20, 2026
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52179/2026/RNS/52179_rns_2026-05-20_5ed13282-168d-4f2b-bcb4-b25b14a63027.pdf

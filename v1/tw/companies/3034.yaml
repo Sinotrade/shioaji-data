@@ -8,12 +8,679 @@ industry:
   l0_code: '24'
   l0_name: 半導體業
   l0_name_en: Semiconductor
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.semi
+  l2_name: 半導體
+  l2_name_en: Semiconductors
+  l3: semi.ic_design
+  l3_name: IC 設計
+  l3_name_en: IC Design
+chain: chain.semiconductor
+primary_chain_position: upstream
+summary_short: 聯詠設計及銷售顯示驅動晶片與數位影音系統單晶片。
+summary_long: 聯詠是以顯示驅動晶片與數位影音SoC為主的無晶圓廠IC設計公司。2025年平面顯示器驅動晶片占營收62.87%，SoC占36.47%，其他占0.66%；產品涵蓋LCD及AMOLED顯示驅動。聯華電子為晶圓供應商，2025年占合併進貨淨額29.90%。2025年具名報導列友達、群創為客戶；京東方、LGD與Apple則僅保留已確認的歷史供應紀錄。瑞鼎、奇景、天鈺、敦泰與矽創是年報列示的面板驅動晶片競爭者。公司設有投資與海外服務子公司，近三年公告子公司股權投資、研發中心工程契約及私募基金投資。
+segments:
+- evidence_ids:
+  - e02
+  id: display_driver
+  name: 平面顯示器驅動晶片
+  period: '2025'
+  revenue_share_pct: 62.87
+- evidence_ids:
+  - e02
+  id: soc
+  name: SoC晶片
+  period: '2025'
+  revenue_share_pct: 36.47
+- evidence_ids:
+  - e02
+  id: other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 0.66
+relations:
+  competitors:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 面板驅動晶片
+    details:
+    - 面板驅動晶片
+    edge: e5cdcec0bb9ac
+    evidence_level: primary
+    id: tw.3545
+    name: 敦泰
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 面板驅動晶片
+    details:
+    - 面板驅動晶片
+    edge: e3d132d99be90
+    evidence_level: primary
+    id: tw.3592
+    name: 瑞鼎
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 面板驅動晶片
+    details:
+    - 面板驅動晶片
+    edge: e2c1a7ac1dfcf
+    evidence_level: primary
+    id: tw.4961
+    name: 天鈺
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 面板驅動晶片
+    details:
+    - 面板驅動晶片
+    edge: e536d2244f8c1
+    evidence_level: primary
+    id: tw.8016
+    name: 矽創
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 面板驅動晶片
+    details:
+    - 面板驅動晶片
+    edge: e3ae011bd32c5
+    evidence_level: primary
+    id: us.HIMX
+    name: Himax Technologies, Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  customers:
+  - as_of: '2025-07-24'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 顯示驅動IC，2018年度歷史揭露
+    details:
+    - 顯示驅動IC，2018年度歷史揭露
+    - 面板驅動晶片
+    edge: e4becd93bf432
+    evidence_level: primary
+    id: tw.2409
+    name: 友達
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 2
+  - as_of: '2020-07-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: OLED驅動晶片；歷史供應關係
+    details:
+    - OLED驅動晶片；歷史供應關係
+    edge: e7c907af36d4c
+    evidence_level: media
+    id: cn.000725
+    name: BOE
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2020-07-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: OLED驅動晶片；歷史供應關係
+    details:
+    - OLED驅動晶片；歷史供應關係
+    edge: e00acf07e3e2f
+    evidence_level: media
+    id: kr.034220
+    name: LGD
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-07-24'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 面板驅動晶片
+    details:
+    - 面板驅動晶片
+    edge: e11f4e9ca1a01
+    evidence_level: media
+    id: tw.3481
+    name: 群創
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2022-09
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 2022財年供應商名單列示；產品未揭露
+    details:
+    - 2022財年供應商名單列示；產品未揭露
+    edge: ecd14aec595e4
+    evidence_level: primary
+    id: us.AAPL
+    name: Apple
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資投資子公司
+    details:
+    - 全資投資子公司
+    edge: e5ffe5052b2f1
+    evidence_level: primary
+    id: org.cheertek-international
+    name: Cheertek International Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資投資子公司
+    details:
+    - 全資投資子公司
+    edge: edf4e46c936e2
+    evidence_level: primary
+    id: org.novatek-international-bvi
+    name: Novatek International (BVI) Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過BVI子公司持有的全資間接子公司
+    details:
+    - 透過BVI子公司持有的全資間接子公司
+    edge: ee36f332a0849
+    evidence_level: primary
+    id: org.novatek-international-samoa
+    name: Novatek International (SAMOA) Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資投資子公司
+    details:
+    - 全資投資子公司
+    edge: e1693f62999f3
+    evidence_level: primary
+    id: org.novatek-investment
+    name: 詠旭投資(股)公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 日本全資子公司
+    details:
+    - 日本全資子公司
+    edge: e359f53ff9c98
+    evidence_level: primary
+    id: org.novatek-japan
+    name: Novatek Japan Kabushiki-Kaisha
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 韓國全資工程支援子公司
+    details:
+    - 韓國全資工程支援子公司
+    edge: e4d4e4bdaed65
+    evidence_level: primary
+    id: org.novatek-korea
+    name: Novatek Korea LLC.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 美國全資子公司
+    details:
+    - 美國全資子公司
+    edge: e6f7b64b09768
+    evidence_level: primary
+    id: org.novatek-usa
+    name: Novatek USA Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司
+    details:
+    - 全資子公司
+    edge: e668fa40673b4
+    evidence_level: primary
+    id: org.ntk-international
+    name: NTK International Limited(迅捷)
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 晶圓代工服務
+    details:
+    - 晶圓代工服務
+    - 晶圓代工
+    edge: ee6e8f5e469db
+    evidence_level: primary
+    id: tw.2303
+    name: 聯電
+    ranking_basis: disclosed
+    share_basis: purchases
+    share_pct: 29.9
+    weight: 2
+  - as_of: 2026-03
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 半導體測試服務
+    details:
+    - 半導體測試服務
+    edge: e829823c37fd2
+    evidence_level: primary
+    id: tw.2449
+    name: 京元電子
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2012-11-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 驅動IC封裝測試歷史客戶
+    details:
+    - 驅動IC封裝測試歷史客戶
+    edge: e88d0de90e1b5
+    evidence_level: media
+    id: tw.6147
+    name: 頎邦
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: NT$2.334 billion
+    as_of: '2024-10-04'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 台南研發中心營建工程契約
+    details:
+    - 台南研發中心營建工程契約
+    edge: e4ef8a4f434e8
+    event_date: '2024-10-04'
+    events:
+    - amount: NT$2.334 billion
+      detail: 台南研發中心營建工程契約
+      event_date: '2024-10-04'
+    evidence_level: primary
+    id: org.fortune-construction
+    name: FORTUNE CONSTRUCTION CO., LTD.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2025-04-29'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司股權投資公告
+    details:
+    - 子公司股權投資公告
+    edge: eaa550fbbbb5f
+    event_date: '2024-02-29'
+    events:
+    - amount: null
+      detail: 子公司股權投資公告
+      event_date: '2025-04-29'
+    - amount: null
+      detail: 子公司股權投資公告
+      event_date: '2024-07-29'
+    - amount: null
+      detail: 子公司股權投資公告
+      event_date: '2024-02-29'
+    evidence_level: primary
+    id: org.novatek-international-bvi
+    name: Novatek International (BVI) Ltd.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: USD 10,000,000
+    as_of: '2026-08-04'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 私募基金投資決議
+    details:
+    - 私募基金投資決議
+    edge: ebcf8a221e139
+    event_date: '2026-08-04'
+    events:
+    - amount: USD 10,000,000
+      detail: 私募基金投資決議
+      event_date: '2026-08-04'
+    evidence_level: primary
+    id: org.oceanus-growth-fund
+    name: Oceanus Growth Fund, L.P.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: NT$500,000,000
+    as_of: '2026-08-04'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 私募基金投資
+    details:
+    - 私募基金投資
+    edge: eb391e91cb022
+    event_date: '2026-08-04'
+    events:
+    - amount: NT$500,000,000
+      detail: 私募基金投資
+      event_date: '2026-08-04'
+    evidence_level: primary
+    id: org.tgvest-asia-partners-iii-taiwan
+    name: TGVest Asia Partners III (Taiwan), L.P.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: NT$1,365 million
+    as_of: '2026-08-18'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 銅鑼第一期研發運算中心機電工程契約
+    details:
+    - 銅鑼第一期研發運算中心機電工程契約
+    edge: eea4e999c38b4
+    event_date: '2026-08-18'
+    events:
+    - amount: NT$1,365 million
+      detail: 銅鑼第一期研發運算中心機電工程契約
+      event_date: '2026-08-18'
+    evidence_level: primary
+    id: org.xuan-tong-system-integration-co-ltd
+    name: Xuan Tong System Integration Co. Ltd.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: NT$1,542.33 million
+    as_of: '2026-07-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 銅鑼第一期研發運算中心土建工程契約
+    details:
+    - 銅鑼第一期研發運算中心土建工程契約
+    edge: e4ba0c4ca9d52
+    event_date: '2026-07-31'
+    events:
+    - amount: NT$1,542.33 million
+      detail: 銅鑼第一期研發運算中心土建工程契約
+      event_date: '2026-07-31'
+    evidence_level: primary
+    id: tw.2597
+    name: 潤弘
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 年報匿名銷貨客戶A、B
+- 年報匿名供應商甲、乙
+- 韓國面板廠
+- 國際一線手機品牌
+- 國際IP大廠
 website: www.novatek.com.tw
 tax_id: '84149955'
 incorporated: '1997-05-28'
 listed: '2002-08-26'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-14'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3034#e01:
+    locator: About Us／Overview，公司業務介紹
+    published_date: null
+    publisher: 聯詠科技股份有限公司
+    quote_check: found
+    title: Overview
+    url: https://www.novatek.com.tw/en-global/Html/aboutus_overview
+  tw.3034#e02:
+    locator: 印刷頁77，PDF第81頁，各產品營業比重
+    published_date: '2026-04-30'
+    publisher: 聯詠科技股份有限公司
+    quote_check: found
+    title: 聯詠科技股份有限公司2025年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52267/2026/RNS/52267_rns_2026-06-08_19a2c14f-8c49-40d9-bb6c-d99c65dd24c4.pdf
+  tw.3034#e03:
+    locator: 印刷頁77，主要產品及服務項目
+    published_date: '2026-04-30'
+    publisher: 聯詠科技股份有限公司
+    quote_check: found
+    title: 聯詠科技股份有限公司2025年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52267/2026/RNS/52267_rns_2026-06-08_19a2c14f-8c49-40d9-bb6c-d99c65dd24c4.pdf
+  tw.3034#e04:
+    locator: 大尺吋驅動晶片／應用端
+    published_date: null
+    publisher: 聯詠科技股份有限公司
+    quote_check: found
+    title: 平面顯示器驅動晶片
+    url: https://www.novatek.com.tw/zh-TW/Product/product/Index/display_driver_ic
+  tw.3034#e05:
+    locator: 完整的數位影音多媒體解決方案
+    published_date: null
+    publisher: 聯詠科技股份有限公司
+    quote_check: found
+    title: SoC晶片
+    url: https://www.novatek.com.tw/zh-TW/Product/product/Index/system_single_chip_solution
+  tw.3034#e06:
+    locator: 印刷頁94至95，主要原料供應狀況及114年度主要供應商表
+    published_date: '2026-04-30'
+    publisher: 聯詠科技股份有限公司
+    quote_check: found
+    title: 聯詠科技股份有限公司2025年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52267/2026/RNS/52267_rns_2026-06-08_19a2c14f-8c49-40d9-bb6c-d99c65dd24c4.pdf
+  tw.3034#e07:
+    locator: 印刷頁86，面板驅動晶片主要競爭對手
+    published_date: '2026-04-30'
+    publisher: 聯詠科技股份有限公司
+    quote_check: found
+    title: 聯詠科技股份有限公司2025年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52267/2026/RNS/52267_rns_2026-06-08_19a2c14f-8c49-40d9-bb6c-d99c65dd24c4.pdf
+  tw.3034#e08:
+    locator: 公司簡介，主要客戶段落
+    published_date: '2025-07-24'
+    publisher: 科技島；記者彭夢竺
+    quote_check: found
+    title: 半導體產業鏈／聯詠Q2達成財測目標 下半年有望大啖摺疊iPhone商機
+    url: https://www.technice.com.tw/project/tech-frontline/183857/
+  tw.3034#e09:
+    locator: 內文既有OLED驅動晶片供應關係段落
+    published_date: '2020-07-30'
+    publisher: 鉅亨網；記者魏志豪
+    quote_check: found
+    title: 蘋果扶植LGD成OLED供應鏈 聯詠DDI出貨添想像
+    url: https://news.cnyes.com/news/id/4509670
+  tw.3034#e10:
+    locator: 第1頁標明2022財年；第14頁供應商名稱表
+    published_date: null
+    publisher: Apple；副本由USPTO公開訴訟附件保存
+    quote_check: found
+    title: Apple Supplier List FY22
+    url: https://ptacts.uspto.gov/ptacts/public-informations/petitions/1558161/download-documents?artifactId=HmrjpLfy7rGRemX8q645a52cIa3_Gt-0PwWF-Vjk3tcVGz8bZ1spFBw
+  tw.3034#e11:
+    locator: 印刷頁72，本公司轉投資持股表
+    published_date: '2026-04-30'
+    publisher: 聯詠科技股份有限公司
+    quote_check: found
+    title: 聯詠科技股份有限公司2025年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52267/2026/RNS/52267_rns_2026-06-08_19a2c14f-8c49-40d9-bb6c-d99c65dd24c4.pdf
+  tw.3034#e12:
+    locator: 印刷頁72，本公司轉投資持股表
+    published_date: '2026-04-30'
+    publisher: 聯詠科技股份有限公司
+    quote_check: found
+    title: 聯詠科技股份有限公司2025年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52267/2026/RNS/52267_rns_2026-06-08_19a2c14f-8c49-40d9-bb6c-d99c65dd24c4.pdf
+  tw.3034#e13:
+    locator: 印刷頁72，本公司轉投資持股表
+    published_date: '2026-04-30'
+    publisher: 聯詠科技股份有限公司
+    quote_check: found
+    title: 聯詠科技股份有限公司2025年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52267/2026/RNS/52267_rns_2026-06-08_19a2c14f-8c49-40d9-bb6c-d99c65dd24c4.pdf
+  tw.3034#e14:
+    locator: 印刷頁72，本公司轉投資持股表
+    published_date: '2026-04-30'
+    publisher: 聯詠科技股份有限公司
+    quote_check: found
+    title: 聯詠科技股份有限公司2025年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52267/2026/RNS/52267_rns_2026-06-08_19a2c14f-8c49-40d9-bb6c-d99c65dd24c4.pdf
+  tw.3034#e15:
+    locator: 印刷頁72，本公司轉投資持股表
+    published_date: '2026-04-30'
+    publisher: 聯詠科技股份有限公司
+    quote_check: found
+    title: 聯詠科技股份有限公司2025年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52267/2026/RNS/52267_rns_2026-06-08_19a2c14f-8c49-40d9-bb6c-d99c65dd24c4.pdf
+  tw.3034#e16:
+    locator: 印刷頁72，本公司轉投資持股表
+    published_date: '2026-04-30'
+    publisher: 聯詠科技股份有限公司
+    quote_check: found
+    title: 聯詠科技股份有限公司2025年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52267/2026/RNS/52267_rns_2026-06-08_19a2c14f-8c49-40d9-bb6c-d99c65dd24c4.pdf
+  tw.3034#e17:
+    locator: 附註4(3)，合併個體表及韓國子公司成立日期註記
+    published_date: null
+    publisher: 聯詠科技股份有限公司
+    quote_check: found
+    title: 聯詠2026年上半年合併財務報告英文版
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52267/2026/RNS/52267_rns_2026-08-26_da758dcf-3ca8-419b-9f3e-b2fa6d7db8dd.pdf
+  tw.3034#e18:
+    locator: 附註4(3)，BVI持有SAMOA子公司的合併個體表列
+    published_date: null
+    publisher: 聯詠科技股份有限公司
+    quote_check: found
+    title: 聯詠2026年上半年合併財務報告英文版
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52267/2026/RNS/52267_rns_2026-08-26_da758dcf-3ca8-419b-9f3e-b2fa6d7db8dd.pdf
+  tw.3034#e19:
+    locator: 第1頁，第4項
+    published_date: '2024-10-04'
+    publisher: 聯詠科技股份有限公司
+    quote_check: unreachable
+    title: 'Supplemental Announcement: construction of Tainan RD center—Signing the construction contract'
+    url: https://www.novatek.com.tw/upload/website/_20241004_Tainan%20RD%20center_e_24100417_339.pdf
+  tw.3034#e20:
+    locator: 第1頁，第4項
+    published_date: '2026-07-31'
+    publisher: 聯詠科技股份有限公司
+    quote_check: unreachable
+    title: Tongluo Science Park first-phased RD computing center—Signing the construction contract
+    url: https://www.novatek.com.tw/upload/website/_20260731_The%20construction%20of%20Tongluo%20Science%20Park_e_26073115_673.pdf
+  tw.3034#e21:
+    locator: 第1頁，第4項
+    published_date: '2026-08-18'
+    publisher: 聯詠科技股份有限公司
+    quote_check: unreachable
+    title: Tongluo Science Park first-phased RD computing center—Signing the electromechanical contract
+    url: https://www.novatek.com.tw/upload/website/_20260818_Tongluo%20Science%20Park_e_26081814_117.pdf
+  tw.3034#e22:
+    locator: 第1頁，Subject
+    published_date: '2026-08-04'
+    publisher: 聯詠科技股份有限公司
+    quote_check: unreachable
+    title: Investment in TGVest Asia Partners III (Taiwan), L.P.
+    url: https://www.novatek.com.tw/upload/website/_20260804_The%20board%20of%20directors%20approved%20the%20investment%20in%20TGVest%20Asia%20Partners%20III%20(Taiwan),%20L.P._e_26080508_819.pdf
+  tw.3034#e23:
+    locator: 第1頁，第3項交易金額；第2頁第9項付款條件
+    published_date: '2026-08-04'
+    publisher: 聯詠科技股份有限公司
+    quote_check: unreachable
+    title: Investment in TGVest Asia Partners III (Taiwan), L.P.
+    url: https://www.novatek.com.tw/upload/website/_20260804_The%20board%20of%20directors%20approved%20the%20investment%20in%20TGVest%20Asia%20Partners%20III%20(Taiwan),%20L.P._e_26080508_819.pdf
+  tw.3034#e24:
+    locator: 第1頁，Subject及第3項交易金額
+    published_date: '2026-08-04'
+    publisher: 聯詠科技股份有限公司
+    quote_check: unreachable
+    title: Investment in Oceanus Growth Fund, L.P.
+    url: https://www.novatek.com.tw/upload/website/_20260804_The%20board%20of%20directors%20approved%20the%20investment%20in%20Oceanus%20Growth%20Fund,%20L.P._e_26080508_646.pdf
+  tw.3034#e25:
+    locator: 第2頁，第9項交易條件
+    published_date: '2026-08-04'
+    publisher: 聯詠科技股份有限公司
+    quote_check: unreachable
+    title: Investment in Oceanus Growth Fund, L.P.
+    url: https://www.novatek.com.tw/upload/website/_20260804_The%20board%20of%20directors%20approved%20the%20investment%20in%20Oceanus%20Growth%20Fund,%20L.P._e_26080508_646.pdf
+  tw.3034#e27:
+    locator: 29 Feb.，BVI股份取得公告索引
+    published_date: '2024-02-29'
+    publisher: 聯詠科技股份有限公司
+    quote_check: found
+    title: 2024 Press Releases
+    url: https://www.novatek.com.tw/en-global/News/news_activity/Index/press_releases/2024/3
+  tw.3034#e28:
+    locator: 29 Jul.，BVI股份取得公告索引
+    published_date: '2024-07-29'
+    publisher: 聯詠科技股份有限公司
+    quote_check: found
+    title: 2024 Press Releases
+    url: https://www.novatek.com.tw/en-global/News/news_activity/Index/press_releases/2024/1
+  tw.3034#e29:
+    locator: 29 Apr.，BVI股份取得公告索引
+    published_date: '2025-04-29'
+    publisher: 聯詠科技股份有限公司
+    quote_check: found
+    title: 2025 Press Releases
+    url: https://www.novatek.com.tw/en-global/News/news_activity/Index/press_releases/2025/1

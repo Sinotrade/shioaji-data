@@ -19,5 +19,96 @@ stages:
   name: 組裝
   tier: downstream
   name_en: Assembly
-members: []
-as_of: null
+members:
+- id: tw.2313
+  stage: components
+  tier: upstream
+  detail: Apple供應鏈電路板零組件
+  as_of: 2023-09
+  evidence:
+  - tw.2313#e01
+  - tw.2313#e11
+  confidence: ai_cross_checked
+- id: tw.2317
+  stage: assembly
+  tier: downstream
+  detail: Apple iPhone製造組裝
+  as_of: '2025-04-10'
+  evidence:
+  - tw.2317#e09
+  confidence: ai_cross_checked
+- id: tw.2330
+  stage: components
+  tier: upstream
+  detail: Apple半導體製造供應鏈
+  as_of: '2025-03-04'
+  evidence:
+  - tw.2330#e_customers25
+  - tw.2330#e_foundry
+  confidence: ai_cross_checked
+- id: tw.3008
+  stage: components
+  tier: upstream
+  detail: Apple供應鏈光學零組件
+  as_of: '2026-04-14'
+  evidence:
+  - tw.3008#e6
+  - tw.3008#e7
+  - tw.3008#e2
+  confidence: ai_cross_checked
+- id: tw.3044
+  stage: components
+  tier: upstream
+  detail: Apple製造供應鏈
+  as_of: 2022-03
+  evidence:
+  - tw.3044#e08
+  - tw.3044#e09
+  confidence: ai_cross_checked
+- id: tw.3406
+  stage: components
+  tier: upstream
+  detail: Apple供應鏈光學零組件
+  as_of: '2026-02-12'
+  evidence:
+  - tw.3406#e9
+  - tw.3406#e10
+  - tw.3406#e11
+  - tw.3406#e12
+  confidence: ai_cross_checked
+- id: tw.4938
+  stage: assembly
+  tier: downstream
+  detail: Apple iPhone組裝
+  as_of: '2025-06-17'
+  evidence:
+  - tw.4938#e9
+  confidence: ai_cross_checked
+- id: tw.4958
+  stage: components
+  tier: upstream
+  detail: Apple供應鏈零組件
+  as_of: 2023-09
+  evidence:
+  - tw.4958#e09
+  - tw.4958#e02
+  confidence: ai_cross_checked
+- id: tw.6278
+  stage: assembly
+  tier: downstream
+  detail: Apple供應鏈製造加工
+  as_of: 2023-09
+  evidence:
+  - tw.6278#e_apple
+  - tw.6278#e_service
+  confidence: ai_cross_checked
+- id: tw.7610
+  stage: components
+  tier: upstream
+  detail: Apple鎢材料供應鏈冶煉端
+  as_of: '2025-04-17'
+  evidence:
+  - tw.7610#e12
+  - tw.7610#e13
+  confidence: ai_cross_checked
+as_of: '2026-04-14'

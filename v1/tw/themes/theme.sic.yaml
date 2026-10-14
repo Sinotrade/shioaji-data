@@ -21,5 +21,53 @@ stages:
   name: 模組與應用
   tier: downstream
   name_en: Applications
-members: []
-as_of: null
+members:
+- id: tw.1504
+  stage: application
+  tier: downstream
+  detail: 235kW SiC直驅動力系統
+  as_of: '2025-04-29'
+  evidence:
+  - tw.1504#e17
+  confidence: ai_cross_checked
+- id: tw.2308
+  stage: application
+  tier: downstream
+  detail: 碳化矽MOSFET不斷電系統應用
+  as_of: 2025-12
+  evidence:
+  - tw.2308#e12
+  confidence: ai_cross_checked
+- id: tw.2481
+  stage: devices
+  tier: midstream
+  detail: 碳化矽功率元件
+  as_of: '2026-10-14'
+  evidence:
+  - tw.2481#e7
+  confidence: ai_cross_checked
+- id: tw.5347
+  stage: devices
+  tier: midstream
+  detail: 八吋SiC晶圓製造技術開發
+  as_of: '2024-09-10'
+  evidence:
+  - tw.5347#e18
+  confidence: ai_cross_checked
+- id: tw.6147
+  stage: application
+  tier: downstream
+  detail: SiC元件凸塊製程服務
+  as_of: '2026-10-14'
+  evidence:
+  - tw.6147#e10
+  confidence: ai_cross_checked
+- id: tw.6488
+  stage: substrate
+  tier: upstream
+  detail: 碳化矽基板與磊晶
+  as_of: '2026-10-14'
+  evidence:
+  - tw.6488#e5
+  confidence: ai_cross_checked
+as_of: '2026-10-14'

@@ -8,12 +8,184 @@ industry:
   l0_code: '31'
   l0_name: 其他電子業
   l0_name_en: Other Electronic
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.semi
+  l2_name: 半導體
+  l2_name_en: Semiconductors
+  l3: semi.equipment
+  l3_name: 半導體設備
+  l3_name_en: Semiconductor Equipment
+chain: chain.semiconductor
+primary_chain_position: upstream
+summary_short: 以真空濺鍍與電漿蝕刻設備銷售為主，另提供鍍膜代工服務。
+summary_long: 友威科技以真空濺鍍與電漿蝕刻設備銷售為主要業務，另提供鍍膜代工服務。2025年度設備占營收74.67%，代工及其他占25.33%。設備產品包括先進封裝鈦銅種子層濺鍍系統及乾式電漿蝕刻設備，可用於UBM、RDL與ABF材料處理，並提供CoWoS先進製程所需設備及FOPLP製程設備。2026年報導明確指出公司供應群創面板級封裝設備；台積電列於公司歷史客戶里程碑，日月光投控則於2022年報導列為半導體封測終端客戶，後兩項關係保留歷史時點與揭露範圍。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_equipment
+  name: 設備
+  period: '2025'
+  revenue_share_pct: 74.67
+- evidence_ids:
+  - e2
+  id: seg_coating_other
+  name: 代工及其他
+  period: '2025'
+  revenue_share_pct: 25.33
+- evidence_ids:
+  - e3
+  id: seg_semiconductor_2024
+  name: 半導體設備（歷史應用別，與設備部門重疊）
+  period: '2024'
+  revenue_share_pct: 70
+main_theme: theme.cowos
+themes:
+- stage: equipment
+  theme: theme.cowos
+  tier: upstream
+- stage: materials
+  theme: theme.abf
+  tier: upstream
+relations:
+  customers:
+  - as_of: '2022-11-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 歷史客戶紀錄；未據此認定當期CoWoS直接採購
+    details:
+    - 歷史客戶紀錄；未據此認定當期CoWoS直接採購
+    edge: e72d4e7972569
+    evidence_level: primary
+    id: tw.2330
+    name: 台積電
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-05-18'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: FOPLP濺鍍及電漿蝕刻設備
+    details:
+    - FOPLP濺鍍及電漿蝕刻設備
+    edge: e3c84182abcfc
+    evidence_level: primary
+    id: tw.3481
+    name: 群創
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2022-12-21'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 半導體封測終端客戶（集團層級）
+    details:
+    - 半導體封測終端客戶（集團層級）
+    edge: e480cbb8b7d19
+    evidence_level: primary
+    id: tw.3711
+    name: 日月光投控
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 年報以A、B、C代號揭露的設備客戶，未揭露名稱，不對應任何具名公司。
+- 年報以D、E代號揭露的自動化模組及靶材供應商，未揭露名稱。
+- 台系封測廠與國際車用IDM的FOPLP客戶，相關報導未具名。
+- 日月光投控集團內實際採購設備的子公司，所引用報導未指出。
 website: www.uvat.com
 tax_id: '80072814'
 incorporated: '2002-11-04'
 listed: '2010-07-09'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-13'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3580#e1:
+    locator: 印刷頁73／PDF第76頁，主要商品及營業比重；欄序為113年度、114年度
+    published_date: '2026-05-12'
+    publisher: 友威科技股份有限公司
+    quote_check: found
+    title: 友威科技股份有限公司114年度年報
+    url: https://www.uvat.com/assets/file/Stockhloder/115/11503.pdf
+  tw.3580#e10:
+    locator: 第6頁，里程碑
+    published_date: '2022-11-23'
+    publisher: 友威科技股份有限公司
+    quote_check: found
+    title: 友威科技營運簡報
+    url: https://www.uvat.com/assets/file/StockService/20221123.pdf
+  tw.3580#e11:
+    locator: 新聞內文，台灣半導體封測與載板終端客戶段落
+    published_date: '2022-12-21'
+    publisher: MoneyDJ理財網
+    quote_check: found
+    title: 友威科明年半導體增；ABF、FOPLP續洽新單
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=e1a17c65-e345-48b7-85fa-ef2816ff45ae
+  tw.3580#e12:
+    locator: 第17頁，IC載板產業應用／內埋晶片製程
+    published_date: '2022-11-23'
+    publisher: 友威科技股份有限公司
+    quote_check: found
+    title: 友威科技營運簡報
+    url: https://www.uvat.com/assets/file/StockService/20221123.pdf
+  tw.3580#e2:
+    locator: 印刷頁73／PDF第76頁，主要商品及營業比重；欄序為113年度、114年度
+    published_date: '2026-05-12'
+    publisher: 友威科技股份有限公司
+    quote_check: found
+    title: 友威科技股份有限公司114年度年報
+    url: https://www.uvat.com/assets/file/Stockhloder/115/11503.pdf
+  tw.3580#e3:
+    locator: 新聞內文，2025年展望段；去年指2024年
+    published_date: '2025-04-22'
+    publisher: MoneyDJ理財網
+    quote_check: found
+    title: 友威科Q2營收估回升，全年拚持穩表現
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=cddf7a35-4017-49eb-8541-9335a8337bc5
+  tw.3580#e4:
+    locator: 印刷頁3／PDF第6頁，研究發展狀況，CoWoS蝕刻設備段落
+    published_date: '2026-05-12'
+    publisher: 友威科技股份有限公司
+    quote_check: found
+    title: 友威科技股份有限公司114年度年報
+    url: https://www.uvat.com/assets/file/Stockhloder/115/11503.pdf
+  tw.3580#e5:
+    locator: 第5頁，關於友威／服務項目
+    published_date: '2022-11-23'
+    publisher: 友威科技股份有限公司
+    quote_check: found
+    title: 友威科技營運簡報
+    url: https://www.uvat.com/assets/file/StockService/20221123.pdf
+  tw.3580#e6:
+    locator: 鈦銅種子層鍍膜／產品說明／先進封裝製程
+    published_date: null
+    publisher: 友威科技股份有限公司
+    quote_check: found
+    title: 設備服務：半導體產業（封裝、載板）
+    url: https://www.uvat.com/equimentsemi.html
+  tw.3580#e7:
+    locator: 乾式微等離子設備／產品說明
+    published_date: null
+    publisher: 友威科技股份有限公司
+    quote_check: found
+    title: 設備服務：電漿蝕刻應用
+    url: https://www.uvat.com/equimentplasma.html
+  tw.3580#e8:
+    locator: 新聞內文，友威科供應群創及RDL設備應用段落
+    published_date: '2026-05-18'
+    publisher: 經濟日報
+    quote_check: found
+    title: 國際大廠在面板級封裝部署重兵 東捷、友威科神助攻
+    url: https://money.udn.com/money/amp/story/5612/9508736
+  tw.3580#e9:
+    locator: 第12頁，客戶里程碑
+    published_date: '2019-12-03'
+    publisher: 友威科技股份有限公司
+    quote_check: found
+    title: 友威科技法說會簡報
+    url: https://www.uvat.com/assets/file/StockService/20191203.pdf

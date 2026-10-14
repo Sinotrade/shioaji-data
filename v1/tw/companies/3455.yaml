@@ -8,12 +8,271 @@ industry:
   l0_code: '26'
   l0_name: 光電業
   l0_name_en: Optoelectronic
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.semi
+  l2_name: 半導體
+  l2_name_en: Semiconductors
+  l3: semi.equipment
+  l3_name: 半導體設備
+  l3_name_en: Semiconductor Equipment
+chain: chain.semiconductor
+primary_chain_position: upstream
+summary_short: 研發與銷售半導體、PCB／IC載板及顯示器自動光學檢測設備。
+summary_long: 由田以機器視覺為核心，研發與供應自動光學檢測設備。2025年SEMI檢測系統占營收41.77%，PCB／IC載板占28.45%，LCD檢測系統占22.47%，其他占7.31%。半導體產品包含CoWoS、RDL及Interposer黃光製程用螢光細線路晶圓AOI，以及FOPLP面板級封裝檢測設備，另將CPO封裝檢測設備列為2025年研發成果。載板設備用於出貨前外觀檢查，年報列示欣興、南亞電與景碩採購；顯示器設備已導入友達與群創。另有矽品向由田採購營業用機器設備的具名公告。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_semi
+  name: SEMI檢測系統
+  period: '2025'
+  revenue_share_pct: 41.77
+- evidence_ids:
+  - e2
+  id: seg_pcb
+  name: PCB／IC載板
+  period: '2025'
+  revenue_share_pct: 28.45
+- evidence_ids:
+  - e2
+  id: seg_lcd
+  name: LCD檢測系統
+  period: '2025'
+  revenue_share_pct: 22.47
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 7.31
+main_theme: theme.cpo
+themes:
+- stage: packaging
+  theme: theme.cpo
+  tier: midstream
+- stage: equipment
+  theme: theme.cowos
+  tier: upstream
+- stage: materials
+  theme: theme.abf
+  tier: upstream
+relations:
+  customers:
+  - as_of: '2026-07-06'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 營業用機器設備；公告未揭露設備型號
+    details:
+    - 營業用機器設備；公告未揭露設備型號
+    edge: ebed9222f96a2
+    evidence_level: primary
+    id: org.spil
+    name: 矽品精密工業(股)公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: IC載板出貨前成品自動光學檢測設備
+    details:
+    - IC載板出貨前成品自動光學檢測設備
+    edge: ec0007f348948
+    evidence_level: primary
+    id: org.日月光
+    name: 日月光
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: IC載板出貨前成品自動光學檢測設備
+    details:
+    - IC載板出貨前成品自動光學檢測設備
+    edge: eb2327a4a8da5
+    evidence_level: primary
+    id: org.臻鼎
+    name: 臻鼎
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 彩色濾光片、配向膜及框膠自動光學檢測設備
+    details:
+    - 彩色濾光片、配向膜及框膠自動光學檢測設備
+    edge: e3dd92da9a6d3
+    evidence_level: primary
+    id: tw.2409
+    name: 友達
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: IC載板出貨前成品自動光學檢測設備
+    details:
+    - IC載板出貨前成品自動光學檢測設備
+    edge: e1a1d3eb201eb
+    evidence_level: primary
+    id: tw.3037
+    name: 欣興
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: IC載板出貨前成品自動光學檢測設備
+    details:
+    - IC載板出貨前成品自動光學檢測設備
+    edge: e738d20bc230e
+    evidence_level: primary
+    id: tw.3189
+    name: 景碩
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 彩色濾光片、配向膜及框膠自動光學檢測設備
+    details:
+    - 彩色濾光片、配向膜及框膠自動光學檢測設備
+    edge: e140c8e7920dc
+    evidence_level: primary
+    id: tw.3481
+    name: 群創
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: IC載板出貨前成品自動光學檢測設備
+    details:
+    - IC載板出貨前成品自動光學檢測設備
+    edge: e9b96ce6fd5c7
+    evidence_level: primary
+    id: tw.8046
+    name: 南電
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 鏡頭、光源、電腦系統設備及運動控制元件的具名供應商
+- 台灣一線封裝大廠：產品導入段落未具名
+- 日月光：年報僅列簡稱，買方法律主體未明
+- 臻鼎：年報未明確指出集團內交易法人
+- 年報匿名客戶A003、A028、A002及匿名供應商B001
 website: http://www.utechzone.com.tw
 tax_id: '86710418'
 incorporated: '1992-05-23'
 listed: '2007-12-27'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-13'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3455#e10:
+    locator: 印刷頁87，PDF第91頁；彩色濾光片、配向膜、框膠自動光學檢測設備
+    published_date: '2026-04-30'
+    publisher: 由田新技股份有限公司
+    quote_check: found
+    title: 由田新技股份有限公司一一四年度年報
+    url: https://www.utechzone.com.tw/upload/editor/files/20260706163002.pdf
+  tw.3455#e11:
+    locator: 公告主體及第6項交易相對人
+    published_date: '2026-07-07'
+    publisher: MoneyDJ理財網；刊載公開資訊觀測站重大訊息
+    quote_check: found
+    title: 日月光投控：矽品精密工業114/9/16~115/7/6自由田取得營業用機器設備14批，計約14.7億
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=08223001-f0cc-4728-95a6-a86e34798d28
+  tw.3455#e12:
+    locator: 第2項事實發生日、第5項數量與金額、第6項交易相對人
+    published_date: '2026-07-07'
+    publisher: MoneyDJ理財網；刊載公開資訊觀測站重大訊息
+    quote_check: found
+    title: 日月光投控：矽品精密工業114/9/16~115/7/6自由田取得營業用機器設備14批，計約14.7億
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=08223001-f0cc-4728-95a6-a86e34798d28
+  tw.3455#e13:
+    locator: 緊密把握ABF成長契機
+    published_date: '2021-08-06'
+    publisher: 由田新技股份有限公司
+    quote_check: found
+    title: 向投資人報告：董事長報告
+    url: https://www.utechzone.com.tw/tw/html/news/show.php?nid=120
+  tw.3455#e14:
+    locator: 印刷頁84，PDF第88頁；114年度研發成果
+    published_date: '2026-04-30'
+    publisher: 由田新技股份有限公司
+    quote_check: found
+    title: 由田新技股份有限公司一一四年度年報
+    url: https://www.utechzone.com.tw/upload/editor/files/20260706163002.pdf
+  tw.3455#e2:
+    locator: 印刷頁51，PDF第55頁；營業比重表，114年度
+    published_date: '2026-04-30'
+    publisher: 由田新技股份有限公司
+    quote_check: found
+    title: 由田新技股份有限公司一一四年度年報
+    url: https://www.utechzone.com.tw/upload/editor/files/20260706163002.pdf
+  tw.3455#e3:
+    locator: 公司簡介首段
+    published_date: null
+    publisher: 由田新技股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.utechzone.com.tw/tw/html/page/page.php?cid=10&cid2=36
+  tw.3455#e4:
+    locator: 由田百萬片晶圓量產里程碑；頁面更新日期2025/07
+    published_date: null
+    publisher: 由田新技股份有限公司
+    quote_check: found
+    title: 向投資人報告：由田百萬片晶圓量產里程碑
+    url: https://www.utechzone.com.tw/tw/html/page/page.php?cid=17&cid2=131
+  tw.3455#e5:
+    locator: QUAD 2500產品介紹
+    published_date: null
+    publisher: 由田新技股份有限公司
+    quote_check: found
+    title: 面板級封裝檢測設備 QUAD 2500
+    url: https://www.utechzone.com.tw/tw/html/product/show.php?pid=333
+  tw.3455#e6:
+    locator: PCB外觀檢查機
+    published_date: null
+    publisher: 由田新技股份有限公司
+    quote_check: found
+    title: PCB檢測設備
+    url: https://www.utechzone.com.tw/tw/html/product/index.php?cid=60&cid2=83
+  tw.3455#e7:
+    locator: M CLASS產品介紹
+    published_date: null
+    publisher: 由田新技股份有限公司
+    quote_check: found
+    title: IC載板最終外觀自動檢查機 M CLASS
+    url: https://www.utechzone.com.tw/tw/html/product/show.php?cid=60&cid2=84&pid=143
+  tw.3455#e8:
+    locator: Array高解析度自動光學檢測設備
+    published_date: null
+    publisher: 由田新技股份有限公司
+    quote_check: found
+    title: LCD自動光學檢測設備
+    url: https://www.utechzone.com.tw/tw/html/product/index.php?cid=61&cid2=86
+  tw.3455#e9:
+    locator: 印刷頁86，PDF第90頁；IC載板出貨前成品自動光學檢測設備
+    published_date: '2026-04-30'
+    publisher: 由田新技股份有限公司
+    quote_check: found
+    title: 由田新技股份有限公司一一四年度年報
+    url: https://www.utechzone.com.tw/upload/editor/files/20260706163002.pdf

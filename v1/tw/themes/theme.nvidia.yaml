@@ -21,5 +21,216 @@ stages:
   name: 系統與機櫃
   tier: downstream
   name_en: Systems
-members: []
-as_of: null
+members:
+- id: tw.2059
+  stage: components
+  tier: midstream
+  detail: NVIDIA系統導軌套件
+  as_of: '2026-09-16'
+  evidence:
+  - tw.2059#e12
+  - tw.2059#e13
+  - tw.2059#e14
+  confidence: ai_cross_checked
+- id: tw.2308
+  stage: components
+  tier: midstream
+  detail: NVIDIA平台電源與散熱共同設計
+  as_of: 2025-04
+  evidence:
+  - tw.2308#e03
+  confidence: ai_cross_checked
+- id: tw.2317
+  stage: system
+  tier: downstream
+  detail: NVIDIA平台伺服器機櫃
+  as_of: '2025-03-18'
+  evidence:
+  - tw.2317#e04
+  confidence: ai_cross_checked
+- id: tw.2324
+  stage: system
+  tier: downstream
+  detail: NVIDIA加速運算機櫃系統
+  as_of: 2026-09
+  evidence:
+  - tw.2324#e13
+  - tw.2324#e14
+  confidence: ai_cross_checked
+- id: tw.2330
+  stage: chips
+  tier: upstream
+  detail: NVIDIA晶圓與CoWoS封裝供應鏈
+  as_of: '2025-03-04'
+  evidence:
+  - tw.2330#e_customers25
+  - tw.2330#e_nv_cowos
+  confidence: ai_cross_checked
+- id: tw.2356
+  stage: system
+  tier: downstream
+  detail: NVIDIA平台機櫃
+  as_of: 2026-09
+  evidence:
+  - tw.2356#e_nvidia_partner
+  - tw.2356#e_ai_rack
+  confidence: ai_cross_checked
+- id: tw.2357
+  stage: system
+  tier: downstream
+  detail: NVIDIA GB300 NVL72系統與機櫃
+  as_of: '2025-10-30'
+  evidence:
+  - tw.2357#e07
+  - tw.2357#e08
+  confidence: ai_cross_checked
+- id: tw.2382
+  stage: system
+  tier: downstream
+  detail: 搭載NVIDIA加速技術的系統與機櫃
+  as_of: '2025-03-19'
+  evidence:
+  - tw.2382#e.qct_products
+  confidence: ai_cross_checked
+- id: tw.2383
+  stage: components
+  tier: midstream
+  detail: NVIDIA伺服器用銅箔基板
+  as_of: '2023-08-23'
+  evidence:
+  - tw.2383#e5
+  confidence: ai_cross_checked
+- id: tw.2449
+  stage: chips
+  tier: upstream
+  detail: NVIDIA晶片測試供應鏈
+  as_of: '2026-10-13'
+  evidence:
+  - tw.2449#e06
+  - tw.2449#e09
+  - tw.2449#e45
+  - tw.2449#e46
+  confidence: ai_cross_checked
+- id: tw.2474
+  stage: components
+  tier: midstream
+  detail: MGX生態系精密機構製程
+  as_of: '2026-05-29'
+  evidence:
+  - tw.2474#e07
+  confidence: ai_cross_checked
+- id: tw.3017
+  stage: components
+  tier: midstream
+  detail: NVIDIA認證液冷零件
+  as_of: '2024-10-04'
+  evidence:
+  - tw.3017#e9
+  confidence: ai_cross_checked
+- id: tw.3163
+  stage: components
+  tier: midstream
+  detail: NVIDIA矽光子生態系光纖元件
+  as_of: '2026-03-10'
+  evidence:
+  - tw.3163#e9
+  - tw.3163#e8
+  confidence: ai_cross_checked
+- id: tw.3231
+  stage: system
+  tier: downstream
+  detail: NVIDIA最終產品代工
+  as_of: '2026-01-25'
+  evidence:
+  - tw.3231#e06
+  confidence: ai_cross_checked
+- id: tw.3324
+  stage: components
+  tier: midstream
+  detail: 輝達平台水冷板與分歧管
+  as_of: '2024-11-13'
+  evidence:
+  - tw.3324#e10
+  confidence: ai_cross_checked
+- id: tw.3533
+  stage: components
+  tier: midstream
+  detail: NVIDIA MGX互連零組件
+  as_of: '2026-06-02'
+  evidence:
+  - tw.3533#e06
+  confidence: ai_cross_checked
+- id: tw.3665
+  stage: components
+  tier: midstream
+  detail: GB200與NVIDIA加速運算平台互連零組件
+  as_of: '2026-03-16'
+  evidence:
+  - tw.3665#e6
+  - tw.3665#e17
+  confidence: ai_cross_checked
+- id: tw.3706
+  stage: system
+  tier: downstream
+  detail: NVIDIA MGX架構AI伺服器
+  as_of: '2026-03-17'
+  evidence:
+  - tw.3706#e16
+  confidence: ai_cross_checked
+- id: tw.3711
+  stage: chips
+  tier: upstream
+  detail: 子公司矽品為NVIDIA提供封測支援
+  as_of: '2025-01-16'
+  evidence:
+  - tw.3711#e12
+  confidence: ai_cross_checked
+- id: tw.4938
+  stage: system
+  tier: downstream
+  detail: NVIDIA GB300 NVL72機櫃
+  as_of: '2025-05-19'
+  evidence:
+  - tw.4938#e4
+  confidence: ai_cross_checked
+- id: tw.4958
+  stage: components
+  tier: midstream
+  detail: MGX生態系高階PCB
+  as_of: '2026-06-02'
+  evidence:
+  - tw.4958#e12
+  confidence: ai_cross_checked
+- id: tw.6669
+  stage: system
+  tier: downstream
+  detail: NVIDIA Vera Rubin NVL72系統與機櫃平台
+  as_of: '2026-10-12'
+  evidence:
+  - tw.6669#e3
+  confidence: ai_cross_checked
+- id: tw.6805
+  stage: components
+  tier: midstream
+  detail: GB300平台NV QD快接頭
+  as_of: '2025-07-25'
+  evidence:
+  - tw.6805#e17
+  confidence: ai_cross_checked
+- id: tw.8210
+  stage: components
+  tier: midstream
+  detail: NVIDIA MGX平台機構方案
+  as_of: '2026-06-02'
+  evidence:
+  - tw.8210#e04
+  confidence: ai_cross_checked
+- id: tw.8996
+  stage: components
+  tier: midstream
+  detail: 子公司高力熱能科技之Vera Rubin NVL72參考設計相容Manifold
+  as_of: '2026-10-14'
+  evidence:
+  - tw.8996#e05
+  confidence: ai_cross_checked
+as_of: '2026-10-14'

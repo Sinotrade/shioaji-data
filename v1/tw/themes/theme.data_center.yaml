@@ -22,5 +22,429 @@ stages:
   name: 建置與營運
   tier: downstream
   name_en: Construction & Operations
-members: []
-as_of: null
+members:
+- id: tw.1503
+  stage: equipment
+  tier: upstream
+  detail: AI資料中心電力設備
+  as_of: '2026-06-29'
+  evidence:
+  - tw.1503#e28
+  confidence: ai_cross_checked
+- id: tw.1504
+  stage: operation
+  tier: downstream
+  detail: 資料中心機電建置與模組化解決方案
+  as_of: '2025-07-30'
+  evidence:
+  - tw.1504#e4
+  - tw.1504#e12
+  confidence: ai_cross_checked
+- id: tw.1513
+  stage: equipment
+  tier: upstream
+  detail: IDC／AIDC機房空調
+  as_of: '2026-06-22'
+  evidence:
+  - tw.1513#e25
+  - tw.1513#e05
+  confidence: ai_cross_checked
+- id: tw.1519
+  stage: equipment
+  tier: upstream
+  detail: 星際之門資料中心專案變壓器
+  as_of: '2025-10-15'
+  evidence:
+  - tw.1519#e12
+  - tw.1519#e13
+  confidence: ai_cross_checked
+- id: tw.2308
+  stage: equipment
+  tier: upstream
+  detail: 資料中心電源、配電與液冷設備
+  as_of: '2026-10-14'
+  evidence:
+  - tw.2308#e02
+  confidence: ai_cross_checked
+- id: tw.2313
+  stage: it
+  tier: midstream
+  detail: 資料中心用電路板
+  as_of: '2026-06-30'
+  evidence:
+  - tw.2313#e01
+  - tw.2313#e07
+  - tw.2313#e08
+  confidence: ai_cross_checked
+- id: tw.2345
+  stage: it
+  tier: midstream
+  detail: 資料中心網通與運算硬體
+  as_of: 2026-10
+  evidence:
+  - tw.2345#e6
+  - tw.2345#e7
+  - tw.2345#e10
+  confidence: ai_cross_checked
+- id: tw.2347
+  stage: it
+  tier: midstream
+  detail: 資料中心記憶體、SSD與儲存產品通路
+  as_of: 2026-06
+  evidence:
+  - tw.2347#e15
+  confidence: ai_cross_checked
+- id: tw.2356
+  stage: it
+  tier: midstream
+  detail: 資料中心伺服器、儲存與網路設備
+  as_of: '2026-10-14'
+  evidence:
+  - tw.2356#e_datacenter
+  confidence: ai_cross_checked
+- id: tw.2357
+  stage: it
+  tier: midstream
+  detail: 資料中心AI運算系統
+  as_of: '2025-10-30'
+  evidence:
+  - tw.2357#e07
+  - tw.2357#e08
+  - tw.2357#e09
+  confidence: ai_cross_checked
+- id: tw.2371
+  stage: operation
+  tier: downstream
+  detail: AI資料中心建置概念驗證
+  as_of: '2026-08-18'
+  evidence:
+  - tw.2371#e16
+  confidence: ai_cross_checked
+- id: tw.2379
+  stage: it
+  tier: midstream
+  detail: 資料中心與邊緣伺服器100G光通訊晶片
+  as_of: '2026-01-05'
+  evidence:
+  - tw.2379#e17
+  confidence: ai_cross_checked
+- id: tw.2408
+  stage: it
+  tier: midstream
+  detail: 資料中心伺服器RDIMM記憶體模組
+  as_of: '2025-12-31'
+  evidence:
+  - tw.2408#e05b
+  confidence: ai_cross_checked
+- id: tw.2412
+  stage: operation
+  tier: downstream
+  detail: IDC資料中心營運
+  as_of: '2026-10-14'
+  evidence:
+  - tw.2412#e5
+  confidence: ai_cross_checked
+- id: tw.2451
+  stage: it
+  tier: midstream
+  detail: 資料中心企業級SSD
+  as_of: '2025-12-05'
+  evidence:
+  - tw.2451#e4
+  confidence: ai_cross_checked
+- id: tw.2454
+  stage: it
+  tier: midstream
+  detail: 資料中心AI運算晶片
+  as_of: '2026-07-31'
+  evidence:
+  - tw.2454#e15
+  confidence: ai_cross_checked
+- id: tw.2464
+  stage: equipment
+  tier: upstream
+  detail: 資料中心冷卻設備系統
+  as_of: '2026-10-13'
+  evidence:
+  - tw.2464#e11
+  - tw.2464#e12
+  confidence: ai_cross_checked
+- id: tw.3045
+  stage: operation
+  tier: downstream
+  detail: IDC及AIDC建置與營運
+  as_of: '2025-08-01'
+  evidence:
+  - tw.3045#e14
+  confidence: ai_cross_checked
+- id: tw.3081
+  stage: it
+  tier: midstream
+  detail: 資料中心光通訊磊晶產品
+  as_of: '2026-10-14'
+  evidence:
+  - tw.3081#e5
+  - tw.3081#e6
+  - tw.3081#e7
+  confidence: ai_cross_checked
+- id: tw.3105
+  stage: it
+  tier: midstream
+  detail: AI資料中心高速光通訊元件
+  as_of: '2026-05-26'
+  evidence:
+  - tw.3105#e9
+  confidence: ai_cross_checked
+- id: tw.3163
+  stage: it
+  tier: midstream
+  detail: 資料中心高速光纖連接
+  as_of: '2026-03-10'
+  evidence:
+  - tw.3163#e5
+  - tw.3163#e6
+  confidence: ai_cross_checked
+- id: tw.3211
+  stage: equipment
+  tier: upstream
+  detail: 資料中心備援電池設備
+  as_of: '2026-05-19'
+  evidence:
+  - tw.3211#e7
+  confidence: ai_cross_checked
+- id: tw.3260
+  stage: it
+  tier: midstream
+  detail: 資料中心企業級儲存
+  as_of: '2025-10-09'
+  evidence:
+  - tw.3260#e8
+  - tw.3260#e12
+  confidence: ai_cross_checked
+- id: tw.3363
+  stage: it
+  tier: midstream
+  detail: 資料中心用主動式光纜
+  as_of: '2026-10-14'
+  evidence:
+  - tw.3363#e06
+  confidence: ai_cross_checked
+- id: tw.3450
+  stage: it
+  tier: midstream
+  detail: 資料中心用高速傳輸光模組
+  as_of: '2026-05-06'
+  evidence:
+  - tw.3450#e6
+  confidence: ai_cross_checked
+- id: tw.3577
+  stage: equipment
+  tier: upstream
+  detail: AI機房紅外線溫度監控
+  as_of: '2026-10-13'
+  evidence:
+  - tw.3577#e11
+  confidence: ai_cross_checked
+- id: tw.3665
+  stage: equipment
+  tier: upstream
+  detail: 資料中心電力連接與配電基礎設施
+  as_of: '2026-10-14'
+  evidence:
+  - tw.3665#e7
+  - tw.3665#e10
+  confidence: ai_cross_checked
+- id: tw.3706
+  stage: it
+  tier: midstream
+  detail: 資料中心伺服器與機櫃整合
+  as_of: '2026-10-14'
+  evidence:
+  - tw.3706#e4
+  confidence: ai_cross_checked
+- id: tw.4938
+  stage: it
+  tier: midstream
+  detail: 資料中心AI伺服器與機櫃
+  as_of: '2026-07-24'
+  evidence:
+  - tw.4938#e4
+  - tw.4938#e6
+  - tw.4938#e15
+  confidence: ai_cross_checked
+- id: tw.4979
+  stage: it
+  tier: midstream
+  detail: 資料中心光通訊產品
+  as_of: '2025-03-31'
+  evidence:
+  - tw.4979#e5
+  confidence: ai_cross_checked
+- id: tw.4991
+  stage: it
+  tier: midstream
+  detail: 資料中心光通訊元件
+  as_of: 2025-12
+  evidence:
+  - tw.4991#e19
+  confidence: ai_cross_checked
+- id: tw.5274
+  stage: it
+  tier: midstream
+  detail: 資料中心伺服器管理與控制SoC
+  as_of: '2026-05-28'
+  evidence:
+  - tw.5274#e9
+  - tw.5274#e19
+  confidence: ai_cross_checked
+- id: tw.5289
+  stage: it
+  tier: midstream
+  detail: 資料中心用儲存裝置
+  as_of: '2025-05-19'
+  evidence:
+  - tw.5289#e16
+  confidence: ai_cross_checked
+- id: tw.5536
+  stage: equipment
+  tier: upstream
+  detail: 資料中心機電設施整合
+  as_of: '2026-10-14'
+  evidence:
+  - tw.5536#e10
+  confidence: ai_cross_checked
+- id: tw.6121
+  stage: equipment
+  tier: upstream
+  detail: 資料中心BBU與備援電池
+  as_of: '2026-10-14'
+  evidence:
+  - tw.6121#e6
+  confidence: ai_cross_checked
+- id: tw.6139
+  stage: operation
+  tier: downstream
+  detail: 資料中心建置統包
+  as_of: 2025-12
+  evidence:
+  - tw.6139#e9
+  confidence: ai_cross_checked
+- id: tw.6196
+  stage: operation
+  tier: downstream
+  detail: AI資料中心機電與機房工程建置
+  as_of: '2026-10-14'
+  evidence:
+  - tw.6196#e6
+  confidence: ai_cross_checked
+- id: tw.6285
+  stage: it
+  tier: midstream
+  detail: 資料中心網路交換器
+  as_of: '2026-03-01'
+  evidence:
+  - tw.6285#e6
+  - tw.6285#e7
+  confidence: ai_cross_checked
+- id: tw.6409
+  stage: equipment
+  tier: upstream
+  detail: 伺服器及資料中心UPS
+  as_of: 2026-09
+  evidence:
+  - tw.6409#e14
+  confidence: ai_cross_checked
+- id: tw.6425
+  stage: equipment
+  tier: upstream
+  detail: 貨櫃級資料中心機電與散熱整合
+  as_of: '2025-12-23'
+  evidence:
+  - tw.6425#e15
+  - tw.6425#e16
+  confidence: ai_cross_checked
+- id: tw.6442
+  stage: it
+  tier: midstream
+  detail: 資料中心光纖連接產品
+  as_of: 2025-04
+  evidence:
+  - tw.6442#e2
+  confidence: ai_cross_checked
+- id: tw.6526
+  stage: it
+  tier: midstream
+  detail: 資料中心機架互連光模組晶片
+  as_of: '2026-10-14'
+  evidence:
+  - tw.6526#e06
+  - tw.6526#e06b
+  confidence: ai_cross_checked
+- id: tw.6531
+  stage: it
+  tier: midstream
+  detail: 資料中心AI推論用VHM記憶體開發
+  as_of: '2026-10-13'
+  evidence:
+  - tw.6531#e20
+  confidence: ai_cross_checked
+- id: tw.6669
+  stage: it
+  tier: midstream
+  detail: 資料中心伺服器、儲存及機櫃IT設備
+  as_of: 2026-10
+  evidence:
+  - tw.6669#e1
+  confidence: ai_cross_checked
+- id: tw.6691
+  stage: operation
+  tier: downstream
+  detail: 資料中心EPC工程建置
+  as_of: '2026-06-30'
+  evidence:
+  - tw.6691#e4
+  - tw.6691#e12
+  confidence: ai_cross_checked
+- id: tw.6781
+  stage: equipment
+  tier: upstream
+  detail: 資料中心備用電池
+  as_of: '2026-10-14'
+  evidence:
+  - tw.6781#e1
+  confidence: ai_cross_checked
+- id: tw.6903
+  stage: null
+  tier: null
+  detail: 資料中心電力、空調與機電系統工程整合
+  as_of: '2026-10-13'
+  evidence:
+  - tw.6903#e16
+  - tw.6903#e17
+  confidence: ai_cross_checked
+- id: tw.8210
+  stage: it
+  tier: midstream
+  detail: 資料中心伺服器機殼
+  as_of: 2026-10
+  evidence:
+  - tw.8210#e07
+  confidence: ai_cross_checked
+- id: tw.8299
+  stage: it
+  tier: midstream
+  detail: 資料中心用Pascari企業級SSD
+  as_of: '2024-11-13'
+  evidence:
+  - tw.8299#e5
+  confidence: ai_cross_checked
+- id: tw.8996
+  stage: equipment
+  tier: upstream
+  detail: 子公司高力熱能科技之資料中心液冷設備
+  as_of: '2026-10-14'
+  evidence:
+  - tw.8996#e03
+  - tw.8996#e04
+  confidence: ai_cross_checked
+as_of: '2026-10-14'

@@ -8,12 +8,434 @@ industry:
   l0_code: '20'
   l0_name: 其他業
   l0_name_en: Others
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.construction
+  l2_name: 營建與工程
+  l2_name_en: Engineering & Construction
+  l3: cons.engineering
+  l3_name: 工程與統包
+  l3_name_en: Engineering & EPC
+primary_chain_position: not_applicable
+summary_short: 以工程承攬、房地銷售、商用不動產及商場經營取得收入。
+summary_long: 潤泰新經營工程承攬、房地開發銷售及商用不動產。2025年合併工程合約收入223.65億元，房地銷售收入84.12億元，工程為最大收入來源。子公司潤弘精密承攬建案施工並運用預鑄技術，潤泰精材供應泥作建材。商場採CITYLINK品牌經營，書店業務曾由子公司力勝開發加盟TSUTAYA BOOKSTORE。2025年完成向三菱地所收購開發子公司剩餘30%股權；2026年公告由該子公司向凱基人壽處分玉成廣場，並安排部分標的售後租回。
+segments:
+- evidence_ids:
+  - e02
+  id: seg.construction
+  name: 營建事業部
+  period: '2025'
+  revenue_share_pct: 79.12
+- evidence_ids:
+  - e02
+  id: seg.commercial
+  name: 商用不動產
+  period: '2025'
+  revenue_share_pct: 5.39
+- evidence_ids:
+  - e02
+  id: seg.materials
+  name: 建材事業部
+  period: '2025'
+  revenue_share_pct: 11.64
+- evidence_ids:
+  - e02
+  id: seg.other
+  name: 其他營運事業部
+  period: '2025'
+  revenue_share_pct: 3.85
+relations:
+  customers:
+  - as_of: '2026-09-24'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 承租子公司玉成廣場辦公樓層
+    details:
+    - 承租子公司玉成廣場辦公樓層
+    edge: e05863fe89ece
+    evidence_level: primary
+    id: us.NVDA
+    name: NVIDIA
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 松山車站BOT子公司
+    details:
+    - 松山車站BOT子公司
+    edge: ea412d883c14b
+    evidence_level: primary
+    id: org.ruentex-baiyi
+    name: 潤泰百益股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資不動產開發子公司
+    details:
+    - 全資不動產開發子公司
+    edge: e1ee9b43130b8
+    evidence_level: primary
+    id: org.ruentex-development-subsidiary
+    name: 潤泰創新開發股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 南港車站BOT子公司
+    details:
+    - 南港車站BOT子公司
+    edge: e71cdcc799463
+    evidence_level: primary
+    id: org.ruentex-xuzhan
+    name: 潤泰旭展股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 營造工程子公司
+    details:
+    - 營造工程子公司
+    edge: ecf91ae148ee5
+    evidence_level: primary
+    id: tw.2597
+    name: 潤弘
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 建材子公司
+    details:
+    - 建材子公司
+    edge: e0428c1d99631
+    evidence_level: primary
+    id: tw.8463
+    name: 潤泰材
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: '2026-10-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 建案營造承攬
+    details:
+    - 建案營造承攬
+    edge: e080a64c0d25a
+    evidence_level: primary
+    id: tw.2597
+    name: 潤弘
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 泥作建材供應
+    details:
+    - 泥作建材供應
+    edge: e869fd93f4feb
+    evidence_level: primary
+    id: tw.8463
+    name: 潤泰材
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 新台幣2,678,507,000元
+    as_of: '2025-11-24'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 收購潤泰創新開發剩餘30%股權
+    details:
+    - 收購潤泰創新開發剩餘30%股權
+    edge: ea282aa50c622
+    event_date: '2025-10-14'
+    events:
+    - amount: 新台幣2,678,507,000元
+      detail: 收購潤泰創新開發剩餘30%股權
+      event_date: '2025-10-14'
+    evidence_level: primary
+    id: jp.8802
+    name: 三菱地所株式會社
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣1,564,347,967元
+    as_of: '2024-09-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司潤泰精材投資德欣先進35%股權
+    details:
+    - 子公司潤泰精材投資德欣先進35%股權
+    edge: e958de3f6670e
+    event_date: '2024-09-20'
+    events:
+    - amount: 新台幣1,564,347,967元
+      detail: 子公司潤泰精材投資德欣先進35%股權
+      event_date: '2024-09-20'
+    evidence_level: primary
+    id: org.dexin-advanced
+    name: 德欣先進股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣20,218,311仟元（未稅）
+    as_of: '2026-09-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司處分玉成廣場土地、建物及停車位
+    details:
+    - 子公司處分玉成廣場土地、建物及停車位
+    edge: ef5d267f96e4a
+    event_date: '2026-09-23'
+    events:
+    - amount: 新台幣20,218,311仟元（未稅）
+      detail: 子公司處分玉成廣場土地、建物及停車位
+      event_date: '2026-09-23'
+    evidence_level: primary
+    id: org.kgi-life
+    name: 凱基人壽保險股份有限公司
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣不超過6億元
+    as_of: '2019-06-19'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 歷史現金增資認購決議
+    details:
+    - 歷史現金增資認購決議
+    edge: e6ffeffe8e338
+    event_date: '2019-06-19'
+    events:
+    - amount: 新台幣不超過6億元
+      detail: 歷史現金增資認購決議
+      event_date: '2019-06-19'
+    evidence_level: media
+    id: org.nan-shan-life
+    name: 南山人壽保險股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣約13.03億元
+    as_of: '2021-10-22'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 歷史大潤發股權出售決議
+    details:
+    - 歷史大潤發股權出售決議
+    edge: ed94b61193a80
+    event_date: '2021-10-22'
+    events:
+    - amount: 新台幣約13.03億元
+      detail: 歷史大潤發股權出售決議
+      event_date: '2021-10-22'
+    evidence_level: media
+    id: org.pxmart
+    name: 全聯實業
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2024-08-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 取得北投新洲美段114地號合建權利
+    details:
+    - 取得北投新洲美段114地號合建權利
+    edge: eba72d1d1a1c9
+    event_date: '2024-08-13'
+    events:
+    - amount: null
+      detail: 取得北投新洲美段114地號合建權利
+      event_date: '2024-08-13'
+    evidence_level: primary
+    id: org.qiaoda-development
+    name: 喬大開發(股)公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新臺幣20,600,000,000元整
+    as_of: '2026-09-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司凱基人壽公告取得台北市南港不動產
+    details:
+    - 子公司凱基人壽公告取得台北市南港不動產
+    edge: e9e848ec67819
+    event_date: '2026-09-23'
+    events:
+    - amount: 新臺幣20,600,000,000元整
+      detail: 子公司凱基人壽公告取得台北市南港不動產
+      event_date: '2026-09-23'
+    evidence_level: primary
+    id: tw.2883
+    name: 凱基金
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 北投區新洲美段114地號合建案之未具名自然人地主
+- 未具名建材供應商、建築設計團隊及專業技術顧問
 website: www.rt-develop.com.tw
 tax_id: '12139612'
 incorporated: '1977-09-12'
 listed: '1992-04-30'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-14'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.9945#e01:
+    locator: 第80頁，營業收入；金額單位新台幣仟元，前欄為114年度
+    published_date: null
+    publisher: 潤泰創新國際股份有限公司
+    quote_check: found
+    title: 民國114年度及113年度合併財務報告
+    url: https://www.rt-develop.com.tw/upload/2026_03_263/2026032614511177mba5Yba1.pdf
+  tw.9945#e02:
+    locator: 印刷第73頁、PDF第76頁，營業比重表
+    published_date: null
+    publisher: 潤泰創新國際股份有限公司
+    quote_check: not_found
+    title: 114年度年報
+    url: https://www.rt-develop.com.tw/upload/2026_07_073/202607071033369m7bvmr341.pdf
+  tw.9945#e03:
+    locator: 安全開發設計，施工說明
+    published_date: null
+    publisher: 潤泰創新國際股份有限公司
+    quote_check: found
+    title: 打造永續建築
+    url: https://esg.rt-develop.com.tw/p43/
+  tw.9945#e04:
+    locator: 相關事業總覽
+    published_date: null
+    publisher: 潤泰創新國際股份有限公司
+    quote_check: found
+    title: 相關事業
+    url: https://www.rt-develop.com.tw/tw/About/Relate
+  tw.9945#e05:
+    locator: 第33頁，CITYLINK商場
+    published_date: '2026-07-02'
+    publisher: 潤泰創新國際股份有限公司
+    quote_check: found
+    title: 2026年7月2日法人說明會簡報
+    url: https://www.rt-develop.com.tw/upload/2026_07_023/202607021501171zvf2lIMh1.pdf
+  tw.9945#e06:
+    locator: 印刷第19頁、PDF第23頁，TSUTAYA BOOKSTORE
+    published_date: null
+    publisher: 潤泰創新國際股份有限公司
+    quote_check: found
+    title: 2018企業社會責任報告書
+    url: https://www.rt-develop.com.tw/upload/2021_03_094/20210309185720ov24xpjyN2.pdf
+  tw.9945#e07:
+    locator: 產業價值鏈
+    published_date: null
+    publisher: 潤泰創新國際股份有限公司
+    quote_check: found
+    title: 供應鏈管理
+    url: https://esg.rt-develop.com.tw/p57/
+  tw.9945#e08:
+    locator: 安全開發設計，材料說明
+    published_date: null
+    publisher: 潤泰創新國際股份有限公司
+    quote_check: found
+    title: 打造永續建築
+    url: https://esg.rt-develop.com.tw/p43/
+  tw.9945#e09:
+    locator: 公告第5、6、14項
+    published_date: '2025-10-16'
+    publisher: 公開資訊觀測站重大訊息，鉅亨網刊載
+    quote_check: found
+    title: 補充公告本公司購買潤泰創新開發股份有限公司股權事宜
+    url: https://news.cnyes.com/news/print/6194292
+  tw.9945#e10:
+    locator: 第26頁，子公司股權收購註5
+    published_date: null
+    publisher: 潤泰創新國際股份有限公司
+    quote_check: found
+    title: 民國114年度及113年度合併財務報告
+    url: https://www.rt-develop.com.tw/upload/2026_03_263/2026032614511177mba5Yba1.pdf
+  tw.9945#e11:
+    locator: 第1頁，致股東報告書
+    published_date: null
+    publisher: 潤泰創新國際股份有限公司
+    quote_check: found
+    title: 113年度年報
+    url: https://www.rt-develop.com.tw/upload/2025_05_233/20250523170835gve3rgAWY1.pdf
+  tw.9945#e12:
+    locator: 公告第5、6、31項
+    published_date: '2026-09-23'
+    publisher: 公開資訊觀測站重大訊息，鉅亨網刊載
+    quote_check: found
+    title: 代子公司潤泰創新開發公告擬處分玉成廣場之建築物及其座落土地
+    url: https://news.cnyes.com/news/id/6614300
+  tw.9945#e13:
+    locator: 公告第4項，合建權利移轉
+    published_date: '2024-08-14'
+    publisher: 公開資訊觀測站重大訊息，MoneyDJ刊載
+    quote_check: found
+    title: 潤泰新擬開發北投區新洲美段114地號案
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=0c914f34-3b68-4955-bd48-8aaba8c4179d
+  tw.9945#e14:
+    locator: 公告第3、12項
+    published_date: '2024-09-26'
+    publisher: 潤泰精密材料股份有限公司
+    quote_check: found
+    title: 補充公告本公司購買德欣先進股份有限公司股權事宜
+    url: https://www.rtm.com.tw/chinese/ir/news-detail.php?NID=191
+  tw.9945#e15:
+    locator: 玉成廣場承租情形
+    published_date: '2026-09-24'
+    publisher: MoneyDJ
+    quote_check: found
+    title: 潤泰新出售南港玉成廣場 尚可認列獲利約35億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=98e4ab58-2c11-49d4-b293-566607abf333
+  tw.9945#e16:
+    locator: 潤泰創新副總經理說明認購決議
+    published_date: '2019-06-19'
+    publisher: 中央通訊社
+    quote_check: found
+    title: 南山人壽現金增資 潤泰雙雄將再加碼認購
+    url: https://www.cna.com.tw/news/afe/201906190272.aspx
+  tw.9945#e17:
+    locator: 潤泰新出售股權公告
+    published_date: '2021-10-22'
+    publisher: 中央通訊社
+    quote_check: found
+    title: 潤泰新、潤泰全處分大潤發 獲利達23.25億元
+    url: https://www.cna.com.tw/news/afe/202110220315.aspx

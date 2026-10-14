@@ -8,12 +8,420 @@ industry:
   l0_code: '17'
   l0_name: 金融保險業
   l0_name_en: Financial and Insurance
-primary_chain_position: unknown
+  l1: finance
+  l1_name: 金融
+  l1_name_en: Financials
+  l2: fin.banking
+  l2_name: 銀行與金控
+  l2_name_en: Banks & Financial Holdings
+  l3: fin.bank
+  l3_name: 銀行
+  l3_name_en: Banks
+chain: chain.finance
+primary_chain_position: not_applicable
+summary_short: 提供存款、授信及理財服務，主要收益來自利息與手續費。
+summary_long: 臺企銀提供存款、授信、外匯、投資及信託等金融服務，主要收益來源為利息與手續費。2025年利息淨收益占合併淨收益58.73%，手續費占19.07%，財務操作與其他淨收益占22.20%。具名授信客戶包括日勝生活科技及海能風力發電，分別涉及都市更新與離岸風電再融資。數位服務方面，與中信銀行、財金資訊合作試辦ATM跨行身分驗證，證券部門的e點成金由三竹資訊開發。旗下子公司提供租賃、創投、管理顧問及柬埔寨融資服務。銀行於2026年獲准辦理高資產財富管理業務。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_interest
+  name: 利息淨收益
+  period: 2025年度
+  revenue_share_pct: 58.73
+- evidence_ids:
+  - e3
+  id: seg_fee
+  name: 手續費淨收益
+  period: 2025年度
+  revenue_share_pct: 19.07
+- evidence_ids:
+  - e4
+  id: seg_financial
+  name: 財務操作與其他淨收益
+  period: 2025年度
+  revenue_share_pct: 22.2
+relations:
+  customers:
+  - as_of: '2026-04-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 離岸風電再融資專案聯貸
+    details:
+    - 離岸風電再融資專案聯貸
+    edge: e841ac8bea90a
+    evidence_level: primary
+    id: org.formosa2-wind-power
+    name: 海能風力發電股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-03-10'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 償還借款及營運週轉金聯合授信
+    details:
+    - 償還借款及營運週轉金聯合授信
+    edge: e40f303346e6f
+    evidence_level: primary
+    id: org.xieyao-steel
+    name: 劦耀鋼鐵股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 都市更新聯合授信
+    details:
+    - 都市更新聯合授信
+    edge: e0de0e18dbd8e
+    evidence_level: primary
+    id: tw.2547
+    name: 日勝生
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  partners:
+  - as_of: '2025-07-02'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過中信銀行ATM辦理跨行身分驗證
+    details:
+    - 透過中信銀行ATM辦理跨行身分驗證
+    edge: eb59c65d887f8
+    evidence_level: primary
+    id: org.ctbc-bank
+    name: 中國信託商業銀行
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-07-02'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: ATM跨行身分驗證服務試辦
+    details:
+    - ATM跨行身分驗證服務試辦
+    edge: ee05e0fe26e4b
+    evidence_level: primary
+    id: org.fisc
+    name: 財金資訊股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-07-29'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 災害復舊及企業小頭家貸款信用保證合作
+    details:
+    - 災害復舊及企業小頭家貸款信用保證合作
+    edge: e02c0f4eb5397
+    evidence_level: primary
+    id: org.smeg
+    name: 財團法人中小企業信用保證基金
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2026-10-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 柬埔寨直接持股100%的融資子公司
+    details:
+    - 柬埔寨直接持股100%的融資子公司
+    edge: e672012d7c9cd
+    evidence_level: primary
+    id: org.tbb-cambodia-microfinance
+    name: 臺灣企銀微型財務公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過國際租賃子公司間接持有的中國孫公司
+    details:
+    - 透過國際租賃子公司間接持有的中國孫公司
+    edge: e9b3f1f5658c2
+    evidence_level: primary
+    id: org.tbb-china-leasing
+    name: 台企銀國際融資租賃有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的租賃子公司
+    details:
+    - 直接持股100%的租賃子公司
+    edge: e16118e7b583c
+    evidence_level: primary
+    id: org.tbb-international-leasing
+    name: 臺灣企銀國際租賃股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的管理顧問子公司
+    details:
+    - 直接持股100%的管理顧問子公司
+    edge: ed567c7f6151d
+    evidence_level: primary
+    id: org.tbb-management-consulting
+    name: 臺企銀管理顧問股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的創投子公司
+    details:
+    - 直接持股100%的創投子公司
+    edge: ecce718152240
+    evidence_level: primary
+    id: org.tbb-venture-capital
+    name: 臺企銀創業投資股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: '2026-10-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 臺企銀證券e點成金軟體開發
+    details:
+    - 臺企銀證券e點成金軟體開發
+    edge: ed647b852a3c8
+    evidence_level: primary
+    id: tw.8284
+    name: 三竹
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 新台幣4億2815萬元
+    as_of: '2024-02-21'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 向富邦證券取得證交所普通股的董事會決議
+    details:
+    - 向富邦證券取得證交所普通股的董事會決議
+    edge: e88045c298857
+    event_date: '2024-02-21'
+    events:
+    - amount: 新台幣4億2815萬元
+      detail: 向富邦證券取得證交所普通股的董事會決議
+      event_date: '2024-02-21'
+    evidence_level: media
+    id: org.fubon-securities
+    name: 富邦證券
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新臺幣1,251,558仟元
+    as_of: '2025-03-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 投資台北金融大樓普通股的董事會決議
+    details:
+    - 投資台北金融大樓普通股的董事會決議
+    edge: e6091cf37d049
+    event_date: '2025-03-14'
+    events:
+    - amount: 新臺幣1,251,558仟元
+      detail: 投資台北金融大樓普通股的董事會決議
+      event_date: '2025-03-14'
+    evidence_level: primary
+    id: org.taipei-financial-center
+    name: 台北金融大樓股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2026-09-17'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司華南銀行授信資產轉讓新增對象
+    details:
+    - 子公司華南銀行授信資產轉讓新增對象
+    edge: e58dc1172e944
+    event_date: '2026-09-17'
+    events:
+    - amount: null
+      detail: 子公司華南銀行授信資產轉讓新增對象
+      event_date: '2026-09-17'
+    evidence_level: primary
+    id: tw.2880
+    name: 華南金
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.tbb.com.tw
 tax_id: 03793407
 incorporated: '1950-09-23'
 listed: '1998-01-03'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-14'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2834#e1:
+    locator: 企業概況表：股票代號、統一編號及主要業務
+    published_date: null
+    publisher: 臺灣中小企業銀行
+    quote_check: found
+    title: 企業概況
+    url: https://www.tbb.com.tw/zh-tw/about/intro/brief/profile
+  tw.2834#e10:
+    locator: PDF第1頁第1段：合作機構全名與臺企銀客戶服務範圍
+    published_date: '2025-07-02'
+    publisher: 中國信託
+    quote_check: found
+    title: 領先同業！中信銀行ATM跨行身分驗證服務上線
+    url: https://www.ctbcholding.com/content/dam/twhoo/file/news/2025/20250702.pdf
+  tw.2834#e11:
+    locator: 正文第1至2段：借款公司、聯貸金額、都更用途及銀行角色
+    published_date: '2026-04-13'
+    publisher: 臺灣中小企業銀行
+    quote_check: found
+    title: 臺灣企銀主辦日勝生33.94億元聯貸 圓滿簽約
+    url: https://www.tbb.com.tw/zh-tw/about/information/announcement/news/press-announcements/20260413
+  tw.2834#e12:
+    locator: 正文第1段：借款公司、16年期再融資聯貸及共同主辦角色
+    published_date: '2026-04-28'
+    publisher: 臺灣中小企業銀行
+    quote_check: found
+    title: 臺灣企銀支持淨零排放 共同主辦海能風力發電589億元聯貸案
+    url: https://www.tbb.com.tw/zh-tw/about/information/announcement/news/press-announcements/20260428
+  tw.2834#e13:
+    locator: 照片說明及正文第1段：聯貸簽約、金額與用途
+    published_date: '2025-03-10'
+    publisher: 臺灣中小企業銀行
+    quote_check: found
+    title: 臺灣企銀主辦劦耀鋼鐵新臺幣14.8億元聯貸
+    url: https://www.tbb.com.tw/zh-tw/about/information/announcement/news/press-announcements/20250310
+  tw.2834#e14:
+    locator: 公司簡介第1段
+    published_date: null
+    publisher: 臺灣中小企業銀行
+    quote_check: found
+    title: 臺灣企銀國際租賃股份有限公司
+    url: https://www.tbb.com.tw/zh-tw/about/intro/affiliate/tbb-international-leasing
+  tw.2834#e15:
+    locator: 公司簡介第1段
+    published_date: null
+    publisher: 臺灣中小企業銀行
+    quote_check: found
+    title: 臺灣企銀微型財務公司(柬埔寨)
+    url: https://www.tbb.com.tw/zh-tw/about/intro/affiliate/tbb-micro-finance
+  tw.2834#e16:
+    locator: 公司簡介第1段
+    published_date: null
+    publisher: 臺灣中小企業銀行
+    quote_check: found
+    title: 臺企銀創業投資股份有限公司
+    url: https://www.tbb.com.tw/zh-tw/about/intro/affiliate/tbb-venture-captial
+  tw.2834#e17:
+    locator: 公司簡介第1段
+    published_date: null
+    publisher: 臺灣中小企業銀行
+    quote_check: found
+    title: 臺企銀管理顧問股份有限公司
+    url: https://www.tbb.com.tw/zh-tw/about/intro/affiliate/tbb-consulting
+  tw.2834#e18:
+    locator: 公司簡介第1段
+    published_date: null
+    publisher: 臺灣中小企業銀行
+    quote_check: found
+    title: 台企銀國際融資租賃有限公司（中國）
+    url: https://www.tbb.com.tw/zh-tw/about/intro/affiliate/tbb-international-leasing-china
+  tw.2834#e19:
+    locator: 正文：交易價格段、陳紹晃說明董事會決議及待核准段
+    published_date: '2024-02-21'
+    publisher: 中央通訊社
+    quote_check: found
+    title: 賣證交所股票給台企銀 富邦證獲利1.26億元
+    url: https://www.cna.com.tw/news/afe/202402210347.aspx
+  tw.2834#e2:
+    locator: 簡報第3頁：近五年淨收益分布情形（合併），2025年利息淨收益占比
+    published_date: '2026-03-19'
+    publisher: 臺灣中小企業銀行
+    quote_check: found
+    title: 2025年第四季法人說明會
+    url: https://mopsov.twse.com.tw/nas/STR/283420260319M001.pdf
+  tw.2834#e20:
+    locator: PDF第1頁，2025/03/14第17屆董事會第4次臨時董事會議
+    published_date: null
+    publisher: 臺灣中小企業銀行
+    quote_check: found
+    title: 2025年董事會重要決議
+    url: https://www.tbb.com.tw/zh-tw/-/media/tbb/files/zh-tw/about/intro/governance/board/resolutions/2025/2025.pdf?hash=8F94F3F5EB2CA3BB3367A498D894DB1D&sc_lang=zh-tw
+  tw.2834#e3:
+    locator: 簡報第3頁：2025年手續費淨收益占比；第9頁：手續費淨收益分類
+    published_date: '2026-03-19'
+    publisher: 臺灣中小企業銀行
+    quote_check: found
+    title: 2025年第四季法人說明會
+    url: https://mopsov.twse.com.tw/nas/STR/283420260319M001.pdf
+  tw.2834#e4:
+    locator: 簡報第3頁：2025年財務操作與其他淨收益占比；第8頁：淨收益分類
+    published_date: '2026-03-19'
+    publisher: 臺灣中小企業銀行
+    quote_check: found
+    title: 2025年第四季法人說明會
+    url: https://mopsov.twse.com.tw/nas/STR/283420260319M001.pdf
+  tw.2834#e5:
+    locator: 正文第2段：高資產業務核准日期
+    published_date: '2026-06-18'
+    publisher: 臺灣中小企業銀行
+    quote_check: found
+    title: 臺灣企銀開辦高資產業務 財富管理版圖全面擴張
+    url: https://www.tbb.com.tw/zh-tw/about/information/announcement/news/press-announcements/1150618
+  tw.2834#e6:
+    locator: 關於這個應用程式；開發人員資訊
+    published_date: null
+    publisher: 臺灣中小企業銀行股份有限公司
+    quote_check: found
+    title: 臺企銀證券「e點成金」
+    url: https://play.google.com/store/apps/details?hl=zh-TW&id=com.tbb
+  tw.2834#e7:
+    locator: 正文第1段：兩項貸款與信保基金合作
+    published_date: '2024-07-29'
+    publisher: 臺灣中小企業銀行
+    quote_check: found
+    title: 凱米釀災 臺灣企銀金融援助颱風過後災害復舊
+    url: https://www.tbb.com.tw/zh-tw/about/information/announcement/news/press-announcements/20240729
+  tw.2834#e8:
+    locator: 正文第2段及頁尾：合作機制與基金正式名稱
+    published_date: '2019-03-26'
+    publisher: 財團法人中小企業信用保證基金
+    quote_check: unreachable
+    title: 經濟部獎勵辦理信用保證業務績優金融機構及授信經理人
+    url: https://www.smeg.org.tw/basic/?mode=detail&node=304
+  tw.2834#e9:
+    locator: 正文末段：2025年合作試辦服務
+    published_date: '2025-07-03'
+    publisher: 臺灣中小企業銀行
+    quote_check: found
+    title: 臺灣企銀攜手中信銀試辦ATM跨行身分驗證服務
+    url: https://www.tbb.com.tw/zh-tw/about/information/announcement/news/press-announcements/20250702

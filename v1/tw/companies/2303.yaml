@@ -8,12 +8,679 @@ industry:
   l0_code: '24'
   l0_name: 半導體業
   l0_name_en: Semiconductor
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.semi
+  l2_name: 半導體
+  l2_name_en: Semiconductors
+  l3: semi.foundry
+  l3_name: 晶圓代工
+  l3_name_en: Wafer Foundry
+chain: chain.semiconductor
+primary_chain_position: midstream
+summary_short: 以邏輯與特殊製程提供晶圓代工服務，營收來自客戶晶片製造。
+summary_long: 聯電以12吋及8吋晶圓代工服務為主要業務，提供邏輯／混合訊號、嵌入式高壓、eNVM、RFSOI及BCD等製程。2026年第二季22／28奈米製程占晶圓營收37%。具名客戶包括MediaTek、Realtek、Novatek與Texas Instruments；矽晶圓供應来源包括GlobalWafers與Sumco Group。公司與Intel合作開發美國製造的12奈米FinFET平台，並與Polar簽署美國8吋製造合作備忘錄。2026年與SILITH完成新加坡廠矽光子晶圓量產交付。近三年交易包括向Intel採購設備及參與欣興現增；和艦處分聯暻股權與聯旭合併普利恩，則屬子公司交易。
+segments:
+- evidence_ids:
+  - e01
+  - e02
+  id: seg_foundry
+  name: 晶圓代工服務
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e03
+  id: seg_22_28nm
+  name: 22／28奈米晶圓代工（製程別細項）
+  period: 2026-Q2
+  revenue_share_pct: 37
+relations:
+  competitors:
+  - as_of: '2026-01-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 特殊製程晶圓代工服務
+    details:
+    - 特殊製程晶圓代工服務
+    edge: e07a0b9a19d48
+    evidence_level: primary
+    id: tw.5347
+    name: 世界
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-12-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 成熟製程晶圓代工
+    details:
+    - 成熟製程晶圓代工
+    edge: ec4ec1d25819a
+    evidence_level: media
+    id: tw.6770
+    name: 力積電
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  customers:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 晶圓代工服務
+    details:
+    - 晶圓代工服務
+    - 晶圓代工
+    edge: efaab4f199c40
+    evidence_level: primary
+    id: tw.2379
+    name: 瑞昱
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 2
+  - as_of: 2026-10
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 晶圓代工服務
+    details:
+    - 晶圓代工服務
+    - 資料中心晶圓代工供應鏈
+    edge: e828ce8fc69c9
+    evidence_level: primary
+    id: tw.2454
+    name: 聯發科
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 2
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares:
+    - as_of: '2025-12-31'
+      basis: purchases
+      of: tw.3034
+      pct: 29.9
+    detail: 晶圓代工服務
+    details:
+    - 晶圓代工服務
+    - 晶圓代工
+    edge: ee6e8f5e469db
+    evidence_level: primary
+    id: tw.3034
+    name: 聯詠
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 2
+  - as_of: 2016-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 歷史晶圓代工客戶
+    details:
+    - 歷史晶圓代工客戶
+    edge: e6bc0daa9aa10
+    evidence_level: primary
+    id: us.QCOM
+    name: Qualcomm
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 晶圓代工服務
+    details:
+    - 晶圓代工服務
+    edge: e6bb8fa43c9e2
+    evidence_level: primary
+    id: us.TXN
+    name: Texas Instruments
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  partners:
+  - as_of: '2021-09-03'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 驅動IC前後段製程及化合物半導體策略合作
+    details:
+    - 驅動IC前後段製程及化合物半導體策略合作
+    edge: e63201dbdc55f
+    evidence_level: primary
+    id: tw.6147
+    name: 頎邦
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: 2024-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 蘇州晶圓製造子公司
+    details:
+    - 蘇州晶圓製造子公司
+    edge: ec73e1f8079a7
+    evidence_level: primary
+    id: org.hejian-technology-suzhou
+    name: Hejian Technology (Suzhou) Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-08-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接投資控制之能源服務子公司
+    details:
+    - 間接投資控制之能源服務子公司
+    edge: e0937cad99dc8
+    evidence_level: primary
+    id: org.tera-energy-development
+    name: 聯旭能源開發股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2024-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 日本晶圓製造子公司USJC
+    details:
+    - 日本晶圓製造子公司USJC
+    edge: e38cb82adcc77
+    evidence_level: primary
+    id: org.united-semiconductor-japan
+    name: United Semiconductor Japan Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2024-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 廈門晶圓製造子公司
+    details:
+    - 廈門晶圓製造子公司
+    edge: e91a61285746d
+    evidence_level: primary
+    id: org.united-semiconductor-xiamen
+    name: United Semiconductor (Xiamen) Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: '2025-12-03'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 矽晶圓
+    details:
+    - 矽晶圓
+    - 具名供應商關係
+    edge: ed06c81e0ae56
+    evidence_level: primary
+    id: tw.6488
+    name: 環球晶
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 2
+  - as_of: '2026-05-22'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 半導體製造機器設備
+    details:
+    - 半導體製造機器設備
+    edge: eade97ff560cd
+    evidence_level: primary
+    id: jp.8035
+    name: Tokyo Electron
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 矽晶圓（集團口徑）
+    details:
+    - 矽晶圓（集團口徑）
+    edge: ed86007e2ea17
+    evidence_level: primary
+    id: org.sumco-group
+    name: Sumco Group
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2021-03
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 再生晶圓
+    details:
+    - 再生晶圓
+    edge: e5bf0ec2d90eb
+    evidence_level: primary
+    id: tw.1560
+    name: 中砂
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2023-08-09'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 自動化設備及解決方案
+    details:
+    - 自動化設備及解決方案
+    edge: e933fe3486ab4
+    evidence_level: primary
+    id: tw.2464
+    name: 盟立
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-11'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 矽智財技術授權
+    details:
+    - 矽智財技術授權
+    edge: ebca096bb8f27
+    evidence_level: primary
+    id: tw.3529
+    name: 力旺
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2017-09-21'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 半導體製造用矽晶圓
+    details:
+    - 半導體製造用矽晶圓
+    edge: e21e6e898f873
+    evidence_level: media
+    id: tw.3532
+    name: 台勝科
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-05-05'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 精密化學品供應
+    details:
+    - 精密化學品供應
+    edge: ea947f4fccd25
+    evidence_level: primary
+    id: tw.4755
+    name: 三福化
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-15'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 半導體材料客戶
+    details:
+    - 半導體材料客戶
+    edge: ec438e0933d1b
+    evidence_level: media
+    id: tw.5434
+    name: 崇越
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2023-08-06'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 電子材料業務客戶，2023年歷史媒體揭露
+    details:
+    - 電子材料業務客戶，2023年歷史媒體揭露
+    edge: eb56cce370ed9
+    evidence_level: primary
+    id: tw.5493
+    name: 三聯
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-19'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 供應商合作；設備採購另由其新加坡法人公告
+    details:
+    - 供應商合作；設備採購另由其新加坡法人公告
+    edge: eda50f0efc756
+    evidence_level: primary
+    id: us.AMAT
+    name: Applied Materials
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-02-25'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 供應商合作；設備採購另由ASML新加坡法人公告
+    details:
+    - 供應商合作；設備採購另由ASML新加坡法人公告
+    edge: ee5126e8825c1
+    evidence_level: primary
+    id: us.ASML
+    name: ASML Holding N.V.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 新台幣1,027,730,259元
+    as_of: '2026-05-22'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 取得機器設備一批
+    details:
+    - 取得機器設備一批
+    edge: eede8eb37e85d
+    event_date: '2026-05-22'
+    events:
+    - amount: 新台幣1,027,730,259元
+      detail: 取得機器設備一批
+      event_date: '2026-05-22'
+    evidence_level: primary
+    id: jp.8035
+    name: Tokyo Electron
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣1,259,089,982元
+    as_of: '2025-12-19'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 取得生產及研發用機器設備一批
+    details:
+    - 取得生產及研發用機器設備一批
+    edge: e6c2615c4fd8c
+    event_date: '2025-12-19'
+    events:
+    - amount: 新台幣1,259,089,982元
+      detail: 取得生產及研發用機器設備一批
+      event_date: '2025-12-19'
+    evidence_level: primary
+    id: org.applied-materials-south-east-asia
+    name: Applied Materials South East Asia Pte. Ltd.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣1,578,719,526元
+    as_of: '2026-02-25'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 取得生產及研發用機器設備
+    details:
+    - 取得生產及研發用機器設備
+    edge: ef1c9e9e1e631
+    event_date: '2026-02-25'
+    events:
+    - amount: 新台幣1,578,719,526元
+      detail: 取得生產及研發用機器設備
+      event_date: '2026-02-25'
+    evidence_level: media
+    id: org.asml-singapore
+    name: ASML SINGAPORE PTE. LTD.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣17元／普通股（現金對價）
+    as_of: '2025-08-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司聯旭以現金對價合併普利恩
+    details:
+    - 子公司聯旭以現金對價合併普利恩
+    edge: e58bdbe17408d
+    event_date: '2025-08-13'
+    events:
+    - amount: 新台幣17元／普通股（現金對價）
+      detail: 子公司聯旭以現金對價合併普利恩
+      event_date: '2025-08-13'
+    evidence_level: primary
+    id: org.puriumfil
+    name: 普利恩股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 人民幣77,000,000元（約新台幣337,722,000元）
+    as_of: '2024-08-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司和艦處分聯暻半導體100%股權
+    details:
+    - 子公司和艦處分聯暻半導體100%股權
+    edge: e606a7269a460
+    event_date: '2024-08-14'
+    events:
+    - amount: 人民幣77,000,000元（約新台幣337,722,000元）
+      detail: 子公司和艦處分聯暻半導體100%股權
+      event_date: '2024-08-14'
+    evidence_level: primary
+    id: org.sis-semiconductor-shandong
+    name: 矽統半導體（山東）有限公司
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣7億元（投資上限）
+    as_of: '2025-12-17'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 董事會決議參與現金增資
+    details:
+    - 董事會決議參與現金增資
+    edge: e695693bc2283
+    event_date: '2025-12-17'
+    events:
+    - amount: 新台幣7億元（投資上限）
+      detail: 董事會決議參與現金增資
+      event_date: '2025-12-17'
+    evidence_level: media
+    id: tw.3037
+    name: 欣興
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣1,856,907,501元
+    as_of: '2024-12-19'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 取得研發用機器設備一批
+    details:
+    - 取得研發用機器設備一批
+    edge: e8d46359bcd24
+    event_date: '2024-12-19'
+    events:
+    - amount: 新台幣1,856,907,501元
+      detail: 取得研發用機器設備一批
+      event_date: '2024-12-19'
+    evidence_level: primary
+    id: us.INTC
+    name: Intel
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- leading cloud infrastructure customer：S…
+- Customer A：2025年合併財報列出的匿名重大客戶，不能自行對應至具名…
 website: WWW.UMC.COM
 tax_id: '47217677'
 incorporated: '1980-05-22'
 listed: '1985-07-16'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-14'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2303#e01:
+    locator: 印刷頁80–81，業務內容
+    published_date: null
+    publisher: 聯華電子股份有限公司
+    quote_check: found
+    title: 聯華電子股份有限公司民國114年度年報：營運概況
+    url: https://www.umc.com/upload/media/08_Investors/Annual_Reports/annual_report_chinese_pdf/2025/2025AR_Operations_Overview_c5.pdf
+  tw.2303#e02:
+    locator: About UMC
+    published_date: '2026-04-30'
+    publisher: United Microelectronics Corporation
+    quote_check: unreachable
+    title: UMC Files Form 20-F for 2025 with US Securities and Exchange Commission
+    url: https://www.umc.com/en/News/press_release/Content/investor/20260430-1
+  tw.2303#e03:
+    locator: 第1頁，Second Quarter 2026 Overview
+    published_date: '2026-07-29'
+    publisher: United Microelectronics Corporation
+    quote_check: unreachable
+    title: UMC Reports Second Quarter 2026 Results
+    url: https://www.umc.com/upload/media/08_Investors/Financials/Quarterly_Results/Quarterly_2020-2029_English_pdf/2026/Q2_2026/UMC26Q2_report.pdf
+  tw.2303#e06:
+    locator: 印刷頁28，Raw Materials
+    published_date: '2026-04-30'
+    publisher: United Microelectronics Corporation
+    quote_check: found
+    title: UMC Form 20-F for the Year Ended December 31, 2025
+    url: https://www.umc.com/upload/media/08_Investors/Annual_Reports/Form-20_pdf_eng/Form_20-F_December_31_2025.pdf
+  tw.2303#e07:
+    locator: 印刷頁23，Business Strategy，Our customers include industry leaders段落
+    published_date: '2026-04-30'
+    publisher: United Microelectronics Corporation
+    quote_check: found
+    title: UMC Form 20-F for the Year Ended December 31, 2025
+    url: https://www.umc.com/upload/media/08_Investors/Annual_Reports/Form-20_pdf_eng/Form_20-F_December_31_2025.pdf
+  tw.2303#e08:
+    locator: 2021 Outstanding Supplier Award Ceremony，Award Winners／Excellent Collaboration and Partnership Award
+    published_date: '2022-04-01'
+    publisher: United Microelectronics Corporation
+    quote_check: unreachable
+    title: UMC and suppliers join forces to build a low carbon supply chain
+    url: https://www.umc.com/en/Html/latest_newsletters/HasLeftContent/2022Q1_3
+  tw.2303#e09:
+    locator: 印刷頁25，Business Strategy，客戶段落
+    published_date: null
+    publisher: United Microelectronics Corporation
+    quote_check: found
+    title: UMC Form 20-F for the Year Ended December 31, 2016
+    url: https://www.umc.com/upload/media/08_Investors/Annual_Reports/Form-20_pdf_eng/Form_20-F_December_31_2016.pdf
+  tw.2303#e16:
+    locator: 印刷頁38，Organizational Structure，主要子公司表；另列United Semiconductor Japan Co., Ltd.
+    published_date: '2025-04-24'
+    publisher: United Microelectronics Corporation
+    quote_check: found
+    title: UMC Form 20-F for the Year Ended December 31, 2024
+    url: https://www.umc.com/upload/media/08_Investors/Annual_Reports/Form-20_pdf_eng/Form_20-F_December_31_2024.pdf
+  tw.2303#e17:
+    locator: 取得機器設備公告，第6項交易相對人
+    published_date: '2025-12-19'
+    publisher: 公開資訊觀測站重大訊息公告（MoneyDJ收錄）
+    quote_check: found
+    title: 聯電1/7~12/19取得機器設備一批，計約12.59億元
+    url: https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=2edd9cd1-3cf6-4cc1-8802-d829871acfcd
+  tw.2303#e18:
+    locator: 正文第一段，金額與實際交易法人；第二段列交易期間
+    published_date: '2026-02-25'
+    publisher: 經濟日報
+    quote_check: found
+    title: 聯電公告向ASML購設備 交易總金額15.79億元
+    url: https://money.udn.com/money/story/5612/9344573
+  tw.2303#e19:
+    locator: 取得機器設備公告，第6項交易相對人
+    published_date: '2026-05-22'
+    publisher: 公開資訊觀測站重大訊息公告（MoneyDJ收錄）
+    quote_check: found
+    title: 聯電114/5/27~115/5/22取得機器設備一批，計約10.28億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=2252de6f-6124-48b8-a3dd-0c6c8d79f192
+  tw.2303#e20:
+    locator: 公告第3項金額；第4項為Intel Corporation
+    published_date: '2024-12-19'
+    publisher: 聯電公告（雲投資收錄）
+    quote_check: found
+    title: 聯電（2303）公告本公司取得機器設備之相關資料
+    url: https://winvest.tw/News/Detail/48189
+  tw.2303#e21:
+    locator: 公告第4項交易相對人；第21項供研發使用
+    published_date: '2024-12-19'
+    publisher: 聯電公告（雲投資收錄）
+    quote_check: found
+    title: 聯電（2303）公告本公司取得機器設備之相關資料
+    url: https://winvest.tw/News/Detail/48189
+  tw.2303#e22:
+    locator: 公告第5項交易金額；第2項交易期間
+    published_date: '2025-12-19'
+    publisher: 公開資訊觀測站重大訊息公告（MoneyDJ收錄）
+    quote_check: found
+    title: 聯電1/7~12/19取得機器設備一批，計約12.59億元
+    url: https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=2edd9cd1-3cf6-4cc1-8802-d829871acfcd
+  tw.2303#e23:
+    locator: 公告第5項交易金額；第2項交易期間
+    published_date: '2026-05-22'
+    publisher: 公開資訊觀測站重大訊息公告（MoneyDJ收錄）
+    quote_check: found
+    title: 聯電114/5/27~115/5/22取得機器設備一批，計約10.28億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=2252de6f-6124-48b8-a3dd-0c6c8d79f192
+  tw.2303#e24:
+    locator: 正文第一段
+    published_date: '2025-12-17'
+    publisher: 中央通訊社
+    quote_check: found
+    title: 聯電決議參與欣興現增 投資上限7億元
+    url: https://www.cna.com.tw/news/afe/202512170219.aspx
+  tw.2303#e25:
+    locator: 公告第2項實際賣方、處分標的與比例
+    published_date: '2024-08-14'
+    publisher: 公開資訊觀測站重大訊息公告（MoneyDJ台新銀行資訊頁收錄）
+    quote_check: found
+    title: 聯電代子公司和艦公告處分聯暻半導體（山東）（補充113/04/02公告）
+    url: https://taishinbankrwd.moneydj.com/ETFWeb/HTML/ETKMDJNEWSContent.DJHTM?A=%7B1F80CA0E-C20B-40D7-8191-D89AF07A9BAD%7D&cls=26,17&type=1
+  tw.2303#e26:
+    locator: 公告第3項金額；第12項交易相對人為矽統半導體（山東）有限公司
+    published_date: '2024-08-14'
+    publisher: 公開資訊觀測站重大訊息公告（MoneyDJ台新銀行資訊頁收錄）
+    quote_check: found
+    title: 聯電代子公司和艦公告處分聯暻半導體（山東）（補充113/04/02公告）
+    url: https://taishinbankrwd.moneydj.com/ETFWeb/HTML/ETKMDJNEWSContent.DJHTM?A=%7B1F80CA0E-C20B-40D7-8191-D89AF07A9BAD%7D&cls=26,17&type=1
+  tw.2303#e27:
+    locator: 公告第6項子公司關係；第4項列存續與消滅公司
+    published_date: '2025-08-13'
+    publisher: 公開資訊觀測站重大訊息公告（MoneyDJ收錄）
+    quote_check: found
+    title: 聯電：聯旭能源開發合併普利恩，預計合併基準日10/3
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=1356fa0d-e952-492b-a9c3-d5091338722c
+  tw.2303#e28:
+    locator: 公告第7項合併對價；第17項預定基準日
+    published_date: '2025-08-13'
+    publisher: 公開資訊觀測站重大訊息公告（MoneyDJ收錄）
+    quote_check: found
+    title: 聯電：聯旭能源開發合併普利恩，預計合併基準日10/3
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=1356fa0d-e952-492b-a9c3-d5091338722c

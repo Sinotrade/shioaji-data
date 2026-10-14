@@ -21,5 +21,234 @@ stages:
   name: 機櫃與資料中心整合
   tier: downstream
   name_en: Systems
-members: []
-as_of: null
+members:
+- id: tw.1605
+  stage: parts
+  tier: upstream
+  detail: 液冷伺服器快接頭用冷精棒材料
+  as_of: '2025-12-16'
+  evidence:
+  - tw.1605#e14
+  confidence: ai_cross_checked
+- id: tw.2308
+  stage: modules
+  tier: midstream
+  detail: 液對液CDU
+  as_of: '2026-10-14'
+  evidence:
+  - tw.2308#e04
+  confidence: ai_cross_checked
+- id: tw.2317
+  stage: system
+  tier: downstream
+  detail: AI機櫃液冷整合
+  as_of: '2025-03-18'
+  evidence:
+  - tw.2317#e04
+  - tw.2317#e05
+  confidence: ai_cross_checked
+- id: tw.2324
+  stage: system
+  tier: downstream
+  detail: 機櫃與AI資料中心液冷整合
+  as_of: 2026-09
+  evidence:
+  - tw.2324#e13
+  - tw.2324#e14
+  confidence: ai_cross_checked
+- id: tw.2345
+  stage: system
+  tier: downstream
+  detail: 晶片至機櫃的液冷熱管理整合
+  as_of: 2026-10
+  evidence:
+  - tw.2345#e24
+  confidence: ai_cross_checked
+- id: tw.2354
+  stage: modules
+  tier: midstream
+  detail: 液冷散熱模組
+  as_of: '2025-12-31'
+  evidence:
+  - tw.2354#e4
+  confidence: ai_cross_checked
+- id: tw.2356
+  stage: system
+  tier: downstream
+  detail: 液冷伺服器系統整合
+  as_of: 2026-09
+  evidence:
+  - tw.2356#e_liquid
+  confidence: ai_cross_checked
+- id: tw.2357
+  stage: system
+  tier: downstream
+  detail: 液冷AI機櫃整合
+  as_of: '2025-10-30'
+  evidence:
+  - tw.2357#e07
+  - tw.2357#e09
+  confidence: ai_cross_checked
+- id: tw.2382
+  stage: system
+  tier: downstream
+  detail: 子公司雲達科技AI機櫃液冷整合
+  as_of: 2025-12
+  evidence:
+  - tw.2382#e.qct_ownership
+  - tw.2382#e.qct_products
+  confidence: ai_cross_checked
+- id: tw.2464
+  stage: system
+  tier: downstream
+  detail: 兩相浸沒式冷卻系統
+  as_of: '2026-10-13'
+  evidence:
+  - tw.2464#e11
+  - tw.2464#e12
+  confidence: ai_cross_checked
+- id: tw.3017
+  stage: parts
+  tier: upstream
+  detail: 液冷水冷板與分歧管
+  as_of: '2024-10-04'
+  evidence:
+  - tw.3017#e9
+  confidence: ai_cross_checked
+- id: tw.3017
+  stage: modules
+  tier: midstream
+  detail: CDU液冷設備
+  as_of: '2026-03-11'
+  evidence:
+  - tw.3017#e8
+  confidence: ai_cross_checked
+- id: tw.3017
+  stage: system
+  tier: downstream
+  detail: 液冷機櫃整合
+  as_of: '2026-06-04'
+  evidence:
+  - tw.3017#e11
+  confidence: ai_cross_checked
+- id: tw.3231
+  stage: system
+  tier: downstream
+  detail: 全液冷機架級平台與AI資料中心整合
+  as_of: '2026-10-13'
+  evidence:
+  - tw.3231#e21
+  - tw.3231#e23
+  confidence: ai_cross_checked
+- id: tw.3324
+  stage: parts
+  tier: upstream
+  detail: 水冷板、泵浦、分歧管與快接頭
+  as_of: '2025-03-18'
+  evidence:
+  - tw.3324#e04
+  - tw.3324#e05
+  confidence: ai_cross_checked
+- id: tw.3324
+  stage: modules
+  tier: midstream
+  detail: CDU與液冷散熱模組
+  as_of: '2026-05-29'
+  evidence:
+  - tw.3324#e06
+  - tw.3324#e07
+  confidence: ai_cross_checked
+- id: tw.3533
+  stage: parts
+  tier: upstream
+  detail: 液冷快接頭與盲插連接器
+  as_of: '2026-10-14'
+  evidence:
+  - tw.3533#e05
+  confidence: ai_cross_checked
+- id: tw.3653
+  stage: parts
+  tier: upstream
+  detail: 冷板與直接液冷Microchannel Lid
+  as_of: '2026-10-14'
+  evidence:
+  - tw.3653#e5
+  - tw.3653#e7
+  confidence: ai_cross_checked
+- id: tw.3653
+  stage: modules
+  tier: midstream
+  detail: 客製化液冷散熱模組
+  as_of: '2026-10-14'
+  evidence:
+  - tw.3653#e6
+  confidence: ai_cross_checked
+- id: tw.3665
+  stage: parts
+  tier: upstream
+  detail: 冷板、漏液偵測線纜與液冷匯流排
+  as_of: '2026-10-14'
+  evidence:
+  - tw.3665#e9
+  - tw.3665#e18
+  confidence: ai_cross_checked
+- id: tw.3706
+  stage: system
+  tier: downstream
+  detail: AI液冷機櫃系統整合
+  as_of: '2026-06-03'
+  evidence:
+  - tw.3706#e5
+  confidence: ai_cross_checked
+- id: tw.4938
+  stage: modules
+  tier: midstream
+  detail: 自行開發CDU
+  as_of: '2025-05-19'
+  evidence:
+  - tw.4938#e5
+  confidence: ai_cross_checked
+- id: tw.4938
+  stage: system
+  tier: downstream
+  detail: 液冷機櫃整合
+  as_of: '2025-05-19'
+  evidence:
+  - tw.4938#e4
+  - tw.4938#e5
+  confidence: ai_cross_checked
+- id: tw.6669
+  stage: system
+  tier: downstream
+  detail: 液冷AI機櫃與資料中心冷卻整合
+  as_of: '2026-10-12'
+  evidence:
+  - tw.6669#e3
+  - tw.6669#e5b
+  confidence: ai_cross_checked
+- id: tw.8210
+  stage: system
+  tier: downstream
+  detail: 液冷機殼與液冷櫃專案
+  as_of: '2026-05-08'
+  evidence:
+  - tw.8210#e05
+  - tw.8210#e10
+  confidence: ai_cross_checked
+- id: tw.8996
+  stage: parts
+  tier: upstream
+  detail: 子公司高力熱能科技之機櫃Manifold
+  as_of: '2026-10-14'
+  evidence:
+  - tw.8996#e05
+  confidence: ai_cross_checked
+- id: tw.8996
+  stage: modules
+  tier: midstream
+  detail: 子公司高力熱能科技之CDU與冷卻系統
+  as_of: '2026-10-14'
+  evidence:
+  - tw.8996#e03
+  confidence: ai_cross_checked
+as_of: '2026-10-14'

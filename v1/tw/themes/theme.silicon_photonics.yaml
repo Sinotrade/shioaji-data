@@ -20,5 +20,98 @@ stages:
   name: 光收發模組與系統
   tier: downstream
   name_en: Modules
-members: []
-as_of: null
+members:
+- id: tw.2330
+  stage: devices
+  tier: midstream
+  detail: TSMC-COUPE矽光子IC技術
+  as_of: '2025-09-24'
+  evidence:
+  - tw.2330#e_syn
+  confidence: ai_cross_checked
+- id: tw.3081
+  stage: materials
+  tier: upstream
+  detail: 矽光子雷射磊晶材料
+  as_of: '2026-10-14'
+  evidence:
+  - tw.3081#e6
+  confidence: ai_cross_checked
+- id: tw.3163
+  stage: modules
+  tier: downstream
+  detail: 矽光子生態系的光纖連接模組
+  as_of: '2026-03-10'
+  evidence:
+  - tw.3163#e9
+  - tw.3163#e7
+  - tw.3163#e8
+  confidence: ai_cross_checked
+- id: tw.3363
+  stage: modules
+  tier: downstream
+  detail: 矽光子光收發模組用保偏光纖陣列封裝
+  as_of: '2026-10-14'
+  evidence:
+  - tw.3363#e09
+  confidence: ai_cross_checked
+- id: tw.3450
+  stage: modules
+  tier: downstream
+  detail: 矽光子高速傳輸光模組
+  as_of: '2026-05-06'
+  evidence:
+  - tw.3450#e3
+  confidence: ai_cross_checked
+- id: tw.4979
+  stage: devices
+  tier: midstream
+  detail: 矽光子應用技術開發
+  as_of: '2026-03-31'
+  evidence:
+  - tw.4979#e6
+  confidence: ai_cross_checked
+- id: tw.4991
+  stage: devices
+  tier: midstream
+  detail: 矽光子光源用CW雷射研發
+  as_of: '2026-04-05'
+  evidence:
+  - tw.4991#e11
+  - tw.4991#e12
+  confidence: ai_cross_checked
+- id: tw.6182
+  stage: materials
+  tier: upstream
+  detail: 子公司睿晶科技供矽光子應用的SOI晶圓
+  as_of: '2026-10-14'
+  evidence:
+  - tw.6182#e8
+  - tw.6182#e9
+  - tw.6182#e11
+  confidence: ai_cross_checked
+- id: tw.6488
+  stage: materials
+  tier: upstream
+  detail: 矽光子用SOI晶圓
+  as_of: '2026-08-04'
+  evidence:
+  - tw.6488#e6
+  confidence: ai_cross_checked
+- id: tw.6706
+  stage: devices
+  tier: midstream
+  detail: 矽光子元件耦光貼合設備
+  as_of: '2026-10-13'
+  evidence:
+  - tw.6706#e10
+  confidence: ai_cross_checked
+- id: tw.6789
+  stage: devices
+  tier: midstream
+  detail: 矽光子主被動光學元件製程
+  as_of: '2026-10-14'
+  evidence:
+  - tw.6789#e6
+  confidence: ai_cross_checked
+as_of: '2026-10-14'

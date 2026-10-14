@@ -19,5 +19,87 @@ stages:
   name: 顯示器與終端
   tier: downstream
   name_en: Displays & End Devices
-members: []
-as_of: null
+members:
+- id: tw.1717
+  stage: packaging
+  tier: midstream
+  detail: Mini LED封裝矽膠材料
+  as_of: 2026-10
+  evidence:
+  - tw.1717#e11
+  confidence: ai_cross_checked
+- id: tw.2409
+  stage: display
+  tier: downstream
+  detail: Micro LED顯示產品
+  as_of: 2026-10
+  evidence:
+  - tw.2409#e09
+  confidence: ai_cross_checked
+- id: tw.3481
+  stage: display
+  tier: downstream
+  detail: MicroLED顯示方案
+  as_of: 2026-04
+  evidence:
+  - tw.3481#e4
+  confidence: ai_cross_checked
+- id: tw.3535
+  stage: null
+  tier: null
+  detail: Micro LED背板製程檢量測設備
+  as_of: '2026-10-13'
+  evidence:
+  - tw.3535#e7
+  confidence: ai_cross_checked
+- id: tw.4749
+  stage: display
+  tier: downstream
+  detail: Micro LED顯示用QD量子點材料
+  as_of: '2026-10-14'
+  evidence:
+  - tw.4749#e11
+  confidence: ai_cross_checked
+- id: tw.6278
+  stage: packaging
+  tier: midstream
+  detail: Mini LED背光模組加工與打件
+  as_of: '2025-04-22'
+  evidence:
+  - tw.6278#e_mini
+  confidence: ai_cross_checked
+- id: tw.6548
+  stage: packaging
+  tier: midstream
+  detail: Mini LED背光封裝導線架
+  as_of: '2024-04-16'
+  evidence:
+  - tw.6548#e16
+  confidence: ai_cross_checked
+- id: tw.6706
+  stage: chips
+  tier: upstream
+  detail: Mini／Micro LED晶粒測試與分選設備
+  as_of: '2025-11-25'
+  evidence:
+  - tw.6706#e14
+  confidence: ai_cross_checked
+- id: tw.8070
+  stage: packaging
+  tier: midstream
+  detail: Mini LED封裝類BT基板通路及子公司導線架產品
+  as_of: '2026-10-13'
+  evidence:
+  - tw.8070#e10
+  - tw.8070#e11
+  - tw.8070#e15
+  confidence: ai_cross_checked
+- id: tw.8150
+  stage: packaging
+  tier: midstream
+  detail: Micro-LED電視顯示用雙層COF技術
+  as_of: 2025-12
+  evidence:
+  - tw.8150#e18
+  confidence: ai_cross_checked
+as_of: '2026-10-14'

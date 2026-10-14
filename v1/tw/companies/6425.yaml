@@ -8,12 +8,390 @@ industry:
   l0_code: '05'
   l0_name: 電機機械
   l0_name_en: Electric Machinery
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.machinery
+  l2_name: 機械與自動化
+  l2_name_en: Machinery & Automation
+  l3: mach.automation
+  l3_name: 工業自動化與機器人
+  l3_name_en: Industrial Automation & Robotics
+primary_chain_position: not_applicable
+summary_short: 易發集團銷售自動化製程設備、設備代工及鋁擠型機械架構。
+summary_long: 易發集團的營收涵蓋鋁擠型機械架構、設備代工及跨產業自動化設備。2025年合併營收中，鋁擠型機械架構占31.89%，半導體設備占20.54%，設備代工占18.97%；鋁擠型設計製造及設備代工業務涉及子公司東野精機。易發本身的產品包括全自動晶圓檢查機、ILB內引線鍵合機及AI伺服器自動化組裝線。公司與南亞科技合作導入晶圓檢測專利及AI軟體技術，並與美超微、群光電能等業者參與貨櫃式超級算力櫃的概念驗證。官網亦揭露曾切入CoWoS先進封裝製程供應鏈。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_frame
+  name: 鋁擠型機械架構產品
+  period: '2025'
+  revenue_share_pct: 31.89
+- evidence_ids:
+  - e3
+  id: seg_oem
+  name: 設備代工業務
+  period: '2025'
+  revenue_share_pct: 18.97
+- evidence_ids:
+  - e4
+  id: seg_semi
+  name: 半導體產業設備業務
+  period: '2025'
+  revenue_share_pct: 20.54
+- evidence_ids:
+  - e5
+  id: seg_automation
+  name: 其他產業自動化設備
+  period: '2025'
+  revenue_share_pct: 16.83
+- evidence_ids:
+  - e6
+  id: seg_display
+  name: 光電產業設備
+  period: '2025'
+  revenue_share_pct: 5.35
+- evidence_ids:
+  - e7
+  id: seg_battery
+  name: 動力電池產業設備
+  period: '2025'
+  revenue_share_pct: 6.42
+main_theme: theme.ai_server
+themes:
+- stage: assembly
+  theme: theme.ai_server
+  tier: downstream
+- stage: equipment
+  theme: theme.data_center
+  tier: upstream
+- stage: equipment
+  theme: theme.cowos
+  tier: upstream
+relations:
+  customers:
+  - as_of: '2025-12-01'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 公司法說揭露的客戶；採購品項未揭露
+    details:
+    - 公司法說揭露的客戶；採購品項未揭露
+    edge: ef4d725643e27
+    evidence_level: primary
+    id: tw.2330
+    name: 台積電
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  partners:
+  - as_of: '2024-12-18'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 儲能產品台灣代理權
+    details:
+    - 儲能產品台灣代理權
+    edge: e83858f2cd1bc
+    evidence_level: primary
+    id: org.freedom-won
+    name: Freedom Won
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-03-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 晶圓檢測與SiC製程測試方案合作
+    details:
+    - 晶圓檢測與SiC製程測試方案合作
+    edge: eadb802c55fc4
+    evidence_level: primary
+    id: org.pentamaster
+    name: Pentamaster
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-05-12'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: WIC晶圓檢測專利授權與AI軟體技術移轉
+    details:
+    - WIC晶圓檢測專利授權與AI軟體技術移轉
+    edge: e76e1b6cd8612
+    evidence_level: primary
+    id: tw.2408
+    name: 南亞科
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 貨櫃式超級算力櫃聯合概念驗證
+    details:
+    - 貨櫃式超級算力櫃聯合概念驗證
+    edge: e3602648c73d6
+    evidence_level: primary
+    id: tw.6412
+    name: 群電
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 貨櫃式超級算力櫃聯合概念驗證
+    details:
+    - 貨櫃式超級算力櫃聯合概念驗證
+    edge: ebbb0efb534c4
+    evidence_level: primary
+    id: us.SMCI
+    name: Supermicro
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2025-12-01'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 設備代工與系統化組件子公司
+    details:
+    - 設備代工與系統化組件子公司
+    edge: ee289206115b5
+    evidence_level: primary
+    id: org.east-field-corporation
+    name: 東野精機股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: '2026-03-20'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 電控元件
+    details:
+    - 電控元件
+    edge: e415699507958
+    evidence_level: primary
+    id: jp.6645
+    name: OMRON
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-20'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 電控元件
+    details:
+    - 電控元件
+    edge: e3ad0701798ce
+    evidence_level: primary
+    id: jp.6861
+    name: KEYENCE
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-20'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 傳動元件
+    details:
+    - 傳動元件
+    edge: e018d4056407d
+    evidence_level: primary
+    id: tw.2049
+    name: 上銀
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 全球晶圓代工製造大廠：官網CoWoS供應鏈公告未具名，未自行認定為台積電。
+- 伺服器大廠：官網提及AI伺服器生產線設備建置，未揭露名稱。
+- 國內半導體大廠：官網提及導入高階封裝AOI設備，未揭露名稱。
+- T客戶：2025年年報以代號揭露銷貨集中度，未對應任何具名公司。
+- L廠商及H廠商：年報進貨集中度表使用匿名代號，未對應任何具名供應商。
 website: https://www.efctw.com
 tax_id: '22994919'
 incorporated: '1988-08-22'
 listed: '2019-01-18'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-13'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6425#e10:
+    locator: 設備特性與優點首段
+    published_date: null
+    publisher: 易發精機股份有限公司
+    quote_check: found
+    title: Wafer Auto Inspection Machine（OM）全自動晶圓檢查機
+    url: https://www.efctw.com/index.php?path=93&route=product/product
+  tw.6425#e11:
+    locator: AI伺服器組裝線段落
+    published_date: '2025-09-08'
+    publisher: 易發精機股份有限公司
+    quote_check: found
+    title: 易發精機推多元智能設備解決方案 以創新整合滿足跨產業需求
+    url: https://www.efctw.com/index.php?path=119&route=news/news_detail
+  tw.6425#e12:
+    locator: 先進鍵合方案段落
+    published_date: '2025-10-03'
+    publisher: 易發精機股份有限公司
+    quote_check: found
+    title: 易發精機以解決方案思維 協助半導體產業客戶提升產能與品質
+    url: https://www.efctw.com/index.php?path=121&route=news/news_detail
+  tw.6425#e13:
+    locator: 首段，易發精機與合作團隊名單
+    published_date: '2025-12-24'
+    publisher: 經濟日報
+    quote_check: found
+    title: 易發精機搶攻AI商機 結合供應鏈推高度集成超級算力櫃
+    url: https://money.udn.com/money/story/5640/9223051
+  tw.6425#e14:
+    locator: 首段POC成果；次段記載12月23日於易發集團廠區展示
+    published_date: '2025-12-24'
+    publisher: 經濟日報
+    quote_check: found
+    title: 易發精機搶攻AI商機 結合供應鏈推高度集成超級算力櫃
+    url: https://money.udn.com/money/story/5640/9223051
+  tw.6425#e15:
+    locator: 首段合作團隊名單
+    published_date: '2025-12-29'
+    publisher: 科技新報
+    quote_check: found
+    title: 台灣AI算力國家隊成軍：易發攜手資策會與美超微，打造L13貨櫃式算力中心
+    url: https://technews.tw/2025/12/29/efc-iii-supermicro-taiwan-ai-computing-team/
+  tw.6425#e16:
+    locator: L13貨櫃級資料中心段落，說明工廠端整合工作
+    published_date: '2025-12-29'
+    publisher: 科技新報
+    quote_check: found
+    title: 台灣AI算力國家隊成軍：易發攜手資策會與美超微，打造L13貨櫃式算力中心
+    url: https://technews.tw/2025/12/29/efc-iii-supermicro-taiwan-ai-computing-team/
+  tw.6425#e17:
+    locator: 首段，記載5月12日合作儀式及授權方向
+    published_date: '2025-05-15'
+    publisher: 易發精機股份有限公司
+    quote_check: found
+    title: 易發精機與南亞科技攜手推動WIC專利授權與AI軟體技轉合作
+    url: https://www.efctw.com/index.php?path=116&route=news/news_detail
+  tw.6425#e18:
+    locator: 迎接第三代半導體浪潮段落
+    published_date: '2025-03-26'
+    publisher: 易發精機股份有限公司
+    quote_check: found
+    title: 易發精機強化半導體設備研發 持續深耕先進封裝與智能製造
+    url: https://www.efctw.com/index.php?path=113&route=news/news_detail
+  tw.6425#e19:
+    locator: 首段，台灣產品代理權公告
+    published_date: '2024-12-18'
+    publisher: 易發精機股份有限公司
+    quote_check: found
+    title: 易發精機攜手Freedom Won啟動儲能設備合作
+    url: https://www.efctw.com/index.php?path=112&route=news/news_detail
+  tw.6425#e2:
+    locator: 印刷第66頁／PDF第70頁，營業比重表，鋁擠型機械架構產品列，114年度金額及比重；單位千元、%
+    published_date: null
+    publisher: 易發精機股份有限公司
+    quote_check: unreachable
+    title: 易發精機股份有限公司114年度年報
+    url: https://www.efctw.com/download/20260612085928.pdf
+  tw.6425#e20:
+    locator: PDF第16頁，客戶章節標題；下一頁為客戶名單
+    published_date: '2025-12-01'
+    publisher: 易發精機股份有限公司
+    quote_check: not_found
+    title: 易發精機股份有限公司2025年12月1日法人說明會簡報
+    url: https://www.efctw.com/download/20251202020458.pdf
+  tw.6425#e21:
+    locator: PDF第17頁，客戶夥伴名單，半導體事業部
+    published_date: '2025-12-01'
+    publisher: 易發精機股份有限公司
+    quote_check: not_found
+    title: 易發精機股份有限公司2025年12月1日法人說明會簡報
+    url: https://www.efctw.com/download/20251202020458.pdf
+  tw.6425#e22:
+    locator: 印刷第91頁／PDF第95頁，主要原料供應狀況，電控元件供應來源；資料日期2026年3月20日
+    published_date: null
+    publisher: 易發精機股份有限公司
+    quote_check: unreachable
+    title: 易發精機股份有限公司114年度年報
+    url: https://www.efctw.com/download/20260612085928.pdf
+  tw.6425#e23:
+    locator: 印刷第91頁／PDF第95頁，主要原料供應狀況，傳動元件供應來源；資料日期2026年3月20日
+    published_date: null
+    publisher: 易發精機股份有限公司
+    quote_check: unreachable
+    title: 易發精機股份有限公司114年度年報
+    url: https://www.efctw.com/download/20260612085928.pdf
+  tw.6425#e24:
+    locator: 印刷第54頁／PDF第58頁，2025年8月11日董事會決議，子公司總經理變更案
+    published_date: null
+    publisher: 易發精機股份有限公司
+    quote_check: unreachable
+    title: 易發精機股份有限公司114年度年報
+    url: https://www.efctw.com/download/20260612085928.pdf
+  tw.6425#e25:
+    locator: 半導體領域供應鏈段落
+    published_date: '2023-12-08'
+    publisher: 易發精機股份有限公司
+    quote_check: found
+    title: 易發AI視覺檢測 拓展應用商機
+    url: https://www.efctw.com/index.php?path=103&route=news/news_detail
+  tw.6425#e3:
+    locator: 印刷第66頁／PDF第70頁，營業比重表，設備代工業務列，114年度金額及比重
+    published_date: null
+    publisher: 易發精機股份有限公司
+    quote_check: unreachable
+    title: 易發精機股份有限公司114年度年報
+    url: https://www.efctw.com/download/20260612085928.pdf
+  tw.6425#e4:
+    locator: 印刷第66頁／PDF第70頁，營業比重表，半導體產業設備業務列，114年度金額及比重
+    published_date: null
+    publisher: 易發精機股份有限公司
+    quote_check: unreachable
+    title: 易發精機股份有限公司114年度年報
+    url: https://www.efctw.com/download/20260612085928.pdf
+  tw.6425#e5:
+    locator: 印刷第66頁／PDF第70頁，營業比重表，其他產業自動化設備列，114年度金額及比重
+    published_date: null
+    publisher: 易發精機股份有限公司
+    quote_check: unreachable
+    title: 易發精機股份有限公司114年度年報
+    url: https://www.efctw.com/download/20260612085928.pdf
+  tw.6425#e6:
+    locator: 印刷第66頁／PDF第70頁，營業比重表，光電產業設備列，114年度金額及比重
+    published_date: null
+    publisher: 易發精機股份有限公司
+    quote_check: unreachable
+    title: 易發精機股份有限公司114年度年報
+    url: https://www.efctw.com/download/20260612085928.pdf
+  tw.6425#e7:
+    locator: 印刷第66頁／PDF第70頁，營業比重表，動力電池產業設備列，114年度金額及比重
+    published_date: null
+    publisher: 易發精機股份有限公司
+    quote_check: unreachable
+    title: 易發精機股份有限公司114年度年報
+    url: https://www.efctw.com/download/20260612085928.pdf
+  tw.6425#e8:
+    locator: 印刷第86頁／PDF第90頁，競爭利基C，東野精機鋁擠型設計製造段落
+    published_date: null
+    publisher: 易發精機股份有限公司
+    quote_check: unreachable
+    title: 易發精機股份有限公司114年度年報
+    url: https://www.efctw.com/download/20260612085928.pdf
+  tw.6425#e9:
+    locator: PDF第7頁，營運範疇，東野精機欄
+    published_date: '2025-12-01'
+    publisher: 易發精機股份有限公司
+    quote_check: found
+    title: 易發精機股份有限公司2025年12月1日法人說明會簡報
+    url: https://www.efctw.com/download/20251202020458.pdf

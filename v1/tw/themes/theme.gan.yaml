@@ -21,5 +21,78 @@ stages:
   name: 快充、基站與應用
   tier: downstream
   name_en: Applications
-members: []
-as_of: null
+members:
+- id: tw.3105
+  stage: devices
+  tier: midstream
+  detail: 氮化鎵元件製造
+  as_of: '2026-10-14'
+  evidence:
+  - tw.3105#e4
+  confidence: ai_cross_checked
+- id: tw.4919
+  stage: devices
+  tier: midstream
+  detail: 日本子公司GaN功率元件製造
+  as_of: '2024-12-31'
+  evidence:
+  - tw.4919#e_gan_devices
+  confidence: ai_cross_checked
+- id: tw.4991
+  stage: devices
+  tier: midstream
+  detail: GaN HEMT元件製造製程
+  as_of: '2026-10-14'
+  evidence:
+  - tw.4991#e17
+  confidence: ai_cross_checked
+- id: tw.5347
+  stage: devices
+  tier: midstream
+  detail: 功率GaN製程平台
+  as_of: '2026-01-28'
+  evidence:
+  - tw.5347#e03
+  - tw.5347#e04
+  confidence: ai_cross_checked
+- id: tw.6147
+  stage: application
+  tier: downstream
+  detail: GaN元件封裝、凸塊及測試製程服務
+  as_of: '2026-10-14'
+  evidence:
+  - tw.6147#e9
+  confidence: ai_cross_checked
+- id: tw.6182
+  stage: substrate
+  tier: upstream
+  detail: 氮化鎵磊晶材料
+  as_of: '2026-10-14'
+  evidence:
+  - tw.6182#e10
+  confidence: ai_cross_checked
+- id: tw.6488
+  stage: substrate
+  tier: upstream
+  detail: GaN on Si晶圓
+  as_of: '2026-10-14'
+  evidence:
+  - tw.6488#e5
+  confidence: ai_cross_checked
+- id: tw.6548
+  stage: application
+  tier: downstream
+  detail: GaN應用之封裝導線架
+  as_of: '2024-04-16'
+  evidence:
+  - tw.6548#e15
+  confidence: ai_cross_checked
+- id: tw.6770
+  stage: devices
+  tier: midstream
+  detail: GaN-on-silicon元件製造技術
+  as_of: '2025-07-01'
+  evidence:
+  - tw.6770#e14
+  confidence: ai_cross_checked
+as_of: '2026-10-14'

@@ -8,12 +8,418 @@ industry:
   l0_code: '38'
   l0_name: 居家生活
   l0_name_en: Home Life
-primary_chain_position: unknown
+  l1: consumer
+  l1_name: 消費
+  l1_name_en: Consumer
+  l2: cons.discretionary
+  l2_name: 非必需消費
+  l2_name_en: Consumer Discretionary
+  l3: consumer.furniture
+  l3_name: 家具與居家用品
+  l3_name_en: Furniture & Home Furnishings
+primary_chain_position: not_applicable
+summary_short: 億豐製造與銷售客製化及固定尺寸窗簾，並經營NORMAN自有品牌。
+summary_long: 億豐以各式窗簾製造與銷售為主，2025年窗簾占合併營收96.9%，客製化窗簾占72.9%。產品包括百葉窗、百葉簾及軟質窗簾，並以NORMAN自有品牌經營客製化商品；其他產品包含PVC塑膠管，其他業務合計占營收3.1%。Home Depot是具名客戶，Hunter Douglas與慶豐富則有窗簾市場競爭證據。集團透過Norman Mexico及Norman Vietnam等子公司營運，並在2024至2026年間公告墨西哥廠房工程、越南土地使用權及越南子公司投資。越南一期投資與Veneta Vietnam二期投資分屬不同計畫，核准上限與實際匯出款分別揭露。
+segments:
+- evidence_ids:
+  - e2
+  id: seg.window_coverings
+  name: 窗簾
+  period: '2025'
+  revenue_share_pct: 96.9
+- evidence_ids:
+  - e4
+  id: seg.custom_window_coverings
+  name: 客製化窗簾（窗簾業務子分類）
+  period: '2025'
+  revenue_share_pct: 72.9
+- evidence_ids:
+  - e5
+  - e6
+  id: seg.other
+  name: 其他產品
+  period: '2025'
+  revenue_share_pct: 3.1
+relations:
+  competitors:
+  - as_of: '2023-04-27'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 北美客製化窗簾市場
+    details:
+    - 北美客製化窗簾市場
+    edge: e96ec4bd767d5
+    evidence_level: primary
+    id: org.hunter-douglas
+    name: Hunter Douglas
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 北美窗簾市場
+    details:
+    - 北美窗簾市場
+    edge: e6271e02833d8
+    evidence_level: primary
+    id: tw.9935
+    name: 慶豐富
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  customers:
+  - as_of: '2025-10-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 窗簾通路及門市窗簾裁切機服務
+    details:
+    - 窗簾通路及門市窗簾裁切機服務
+    edge: eb002b997361b
+    evidence_level: primary
+    id: us.HD
+    name: Home Depot
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的控股子公司
+    details:
+    - 直接持股100%的控股子公司
+    edge: e01be15a0e4ba
+    evidence_level: primary
+    id: org.nien-made-bvi-enterprise
+    name: Nien Made (BVI) Enterprise Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 墨西哥窗簾製造子公司
+    details:
+    - 墨西哥窗簾製造子公司
+    edge: ee53151666d6e
+    evidence_level: primary
+    id: org.norman-mexico
+    name: Norman Mexico Company Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-01-15'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資越南子公司
+    details:
+    - 全資越南子公司
+    edge: eada78f96b1b3
+    evidence_level: primary
+    id: org.norman-vietnam
+    name: Norman Vietnam Company Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司供應母公司的窗簾產品進貨
+    details:
+    - 子公司供應母公司的窗簾產品進貨
+    edge: e81c7844a6aa0
+    evidence_level: primary
+    id: org.norman-mexico
+    name: Norman Mexico Company Limited
+    ranking_basis: disclosed
+    share_basis: purchases
+    share_pct: 21.86
+    weight: 1
+  transactions:
+  - amount: null
+    as_of: '2024-06-04'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司Norman Mexico自地委建廠房工程
+    details:
+    - 子公司Norman Mexico自地委建廠房工程
+    edge: e7ed37541ad19
+    event_date: '2024-06-04'
+    events:
+    - amount: null
+      detail: 子公司Norman Mexico自地委建廠房工程
+      event_date: '2024-06-04'
+    evidence_level: primary
+    id: org.construccion-de-obras-lozano
+    name: CONSTRUCCIÓN DE OBRAS LOZANO S.A. de C.V.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2024-06-04'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司Norman Mexico自地委建廠房工程
+    details:
+    - 子公司Norman Mexico自地委建廠房工程
+    edge: e6f6df3168f43
+    event_date: '2024-06-04'
+    events:
+    - amount: null
+      detail: 子公司Norman Mexico自地委建廠房工程
+      event_date: '2024-06-04'
+    evidence_level: primary
+    id: org.grupo-integral-de-ingeniera-civil
+    name: GRUPO INTEGRAL DE INGENIERÁ CIVIL, S.A. DE C.V.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 核准上限美金124,100仟元；累計投資美金57,046仟元
+    as_of: '2026-07-09'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 越南一期全資子公司投資計畫
+    details:
+    - 越南一期全資子公司投資計畫
+    edge: e0fa455e0a592
+    event_date: '2025-01-15'
+    events:
+    - amount: 核准上限美金124,100仟元；累計投資美金57,046仟元
+      detail: 越南一期全資子公司投資計畫
+      event_date: '2025-01-15'
+    evidence_level: primary
+    id: org.norman-vietnam
+    name: Norman Vietnam Company Limited
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 越南盾392,977,763,490元（稅費外加）
+    as_of: '2026-02-02'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 越南老街省土地使用權原則性合約
+    details:
+    - 越南老街省土地使用權原則性合約
+    edge: e483b1a3bcc17
+    event_date: '2026-02-02'
+    events:
+    - amount: 越南盾392,977,763,490元（稅費外加）
+      detail: 越南老街省土地使用權原則性合約
+      event_date: '2026-02-02'
+    evidence_level: primary
+    id: org.viglacera-corporation
+    name: VIGLACERA CORPORATION
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2024-11-11'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司Norman Vietnam取得越南一期土地使用權
+    details:
+    - 子公司Norman Vietnam取得越南一期土地使用權
+    edge: e803920268386
+    event_date: '2024-11-11'
+    events:
+    - amount: null
+      detail: 子公司Norman Vietnam取得越南一期土地使用權
+      event_date: '2024-11-11'
+    evidence_level: primary
+    id: org.viglacera-real-estate-company
+    name: VIGLACERA REAL ESTATE COMPANY
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 2024年1月追加投資公告未具名的墨西哥全資子公司
+- 其他大型連鎖量販店客戶
+- 北美在地窗簾門市與設計師
+- 2025年年報億發建設有限公司及大成建設工程合約所涉未具名子公司
 website: http://www.nienmade.com.tw/
 tax_id: '28696894'
 incorporated: '2007-07-26'
 listed: '2015-12-22'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-14'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.8464#e1:
+    locator: 公司名稱、統一編號及主要經營業務欄
+    published_date: null
+    publisher: 億豐綜合工業股份有限公司
+    quote_check: found
+    title: 企業簡介－公司基本資料
+    url: https://www.nienmade.com.tw/CorpInfo.aspx
+  tw.8464#e10:
+    locator: 印刷頁67，市場及產銷概況－市場占有率
+    published_date: null
+    publisher: 慶豐富實業股份有限公司
+    quote_check: found
+    title: 慶豐富113年度年報
+    url: https://www.chingfeng.com/proimages/Investors/Shareholders_Meeting/Company_Annual_Report/113%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1%281%29.pdf
+  tw.8464#e11:
+    locator: 印刷頁12，Note 4(3)合併範圍表；Investor為The Company，BVI持股比例100.00%
+    published_date: '2026-08-12'
+    publisher: 億豐綜合工業股份有限公司
+    quote_check: found
+    title: 2026年上半年合併財務報告英文版
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52748/2026/RNS/52748_rns_2026-08-12_c4400d04-de47-4b0f-8825-f2493f67249b.pdf
+  tw.8464#e12:
+    locator: 印刷頁53，Attachment 3關係人進銷貨交易，Norman Mexico列；表註明合併時沖銷
+    published_date: '2026-08-12'
+    publisher: 億豐綜合工業股份有限公司
+    quote_check: found
+    title: 2026年上半年合併財務報告英文版
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52748/2026/RNS/52748_rns_2026-08-12_c4400d04-de47-4b0f-8825-f2493f67249b.pdf
+  tw.8464#e13:
+    locator: 公告第3項，投資對象及全資子公司關係
+    published_date: '2025-01-15'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ轉載
+    quote_check: found
+    title: 億豐董事會決議對Norman Vietnam投資、不超過約1.24億美元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=a7826c8f-c7c9-4632-a97a-d22c88557856
+  tw.8464#e14:
+    locator: 公告第3項，董事會核准投資上限
+    published_date: '2025-01-15'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ轉載
+    quote_check: found
+    title: 億豐董事會決議對Norman Vietnam投資、不超過約1.24億美元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=a7826c8f-c7c9-4632-a97a-d22c88557856
+  tw.8464#e15:
+    locator: 公告第14及27項，Norman Vietnam累計投資金額
+    published_date: '2026-07-09'
+    publisher: 公開資訊觀測站重大訊息／鉅亨網轉載
+    quote_check: found
+    title: 億豐：公告本公司一年內累積投資Norman Vietnam達新台幣三億元以上
+    url: https://news.cnyes.com/news/id/6528674
+  tw.8464#e19:
+    locator: 公告第2項，董事會決議對墨西哥全資子公司追加投資
+    published_date: '2024-01-23'
+    publisher: 公開資訊觀測站重大訊息／鉅亨網轉載
+    quote_check: found
+    title: 億豐：補充公告本公司董事會決議直接或間接投資計畫達公司股本百分之二十以上
+    url: https://news.cnyes.com/news/id/5435947
+  tw.8464#e2:
+    locator: 印刷頁77，5.1業務內容，主要產品營業比重表，窗簾列2025年金額及比例
+    published_date: '2026-05-13'
+    publisher: 億豐綜合工業股份有限公司
+    quote_check: found
+    title: 億豐114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52748/2026/RNS/52748_rns_2026-05-27_33e6d1e5-dc6a-4fce-ac6d-920a08a20bae.pdf
+  tw.8464#e20:
+    locator: 公告第2及7項，追加投資金額
+    published_date: '2024-01-23'
+    publisher: 公開資訊觀測站重大訊息／鉅亨網轉載
+    quote_check: found
+    title: 億豐：補充公告本公司董事會決議直接或間接投資計畫達公司股本百分之二十以上
+    url: https://news.cnyes.com/news/id/5435947
+  tw.8464#e21:
+    locator: 公告主旨，億豐代重要子公司Norman Mexico Company Limited公告
+    published_date: '2024-06-04'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ轉載
+    quote_check: found
+    title: 億豐：Norman Mexico自地委建興建廠房工程合約
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=b7f4cc7e-578e-474c-bf37-e25646390ebe
+  tw.8464#e22:
+    locator: 公告第3項，兩家非關係人契約相對人
+    published_date: '2024-06-04'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ轉載
+    quote_check: found
+    title: 億豐：Norman Mexico自地委建興建廠房工程合約
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=b7f4cc7e-578e-474c-bf37-e25646390ebe
+  tw.8464#e23:
+    locator: 補充公告第3項，Norman Vietnam正式轉租合約
+    published_date: '2024-11-12'
+    publisher: 公開資訊觀測站重大訊息／第一銀行轉載
+    quote_check: found
+    title: 億豐：越南子公司取得越南富壽省土地使用權案，簽訂轉租合約（補充）
+    url: https://wealth.firstbank.com.tw/investment-tips/trend-insight/news/news-detail?id=%7B3E50AC30-9730-4CB9-96D0-E706F4A1660D%7D
+  tw.8464#e24:
+    locator: 公告主旨及第1至3項，億豐董事會決議
+    published_date: '2026-02-02'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ轉載
+    quote_check: found
+    title: 億豐本公司董事會決議簽署越南土地使用權之原則性合約
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=4b79a7b4-2503-4647-83a8-37dc4e527bf5
+  tw.8464#e25:
+    locator: 公告第6項，交易相對人
+    published_date: '2026-02-02'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ轉載
+    quote_check: found
+    title: 億豐本公司董事會決議簽署越南土地使用權之原則性合約
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=4b79a7b4-2503-4647-83a8-37dc4e527bf5
+  tw.8464#e26:
+    locator: 公告第5項，土地使用權交易金額
+    published_date: '2026-02-02'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ轉載
+    quote_check: found
+    title: 億豐本公司董事會決議簽署越南土地使用權之原則性合約
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=4b79a7b4-2503-4647-83a8-37dc4e527bf5
+  tw.8464#e3:
+    locator: 印刷頁77，5.1目前之商品項目，百葉窗、百葉簾及軟質窗簾分類
+    published_date: '2026-05-13'
+    publisher: 億豐綜合工業股份有限公司
+    quote_check: found
+    title: 億豐114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52748/2026/RNS/52748_rns_2026-05-27_33e6d1e5-dc6a-4fce-ac6d-920a08a20bae.pdf
+  tw.8464#e4:
+    locator: 印刷頁4，2025年度營業報告書，客製化窗簾營收占比
+    published_date: '2026-05-13'
+    publisher: 億豐綜合工業股份有限公司
+    quote_check: found
+    title: 億豐114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52748/2026/RNS/52748_rns_2026-05-27_33e6d1e5-dc6a-4fce-ac6d-920a08a20bae.pdf
+  tw.8464#e5:
+    locator: 印刷頁77，主要產品營業比重表，其他列2025年金額及比例
+    published_date: '2026-05-13'
+    publisher: 億豐綜合工業股份有限公司
+    quote_check: found
+    title: 億豐114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52748/2026/RNS/52748_rns_2026-05-27_33e6d1e5-dc6a-4fce-ac6d-920a08a20bae.pdf
+  tw.8464#e6:
+    locator: 印刷頁77，目前商品項目表，其他產品列
+    published_date: '2026-05-13'
+    publisher: 億豐綜合工業股份有限公司
+    quote_check: found
+    title: 億豐114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52748/2026/RNS/52748_rns_2026-05-27_33e6d1e5-dc6a-4fce-ac6d-920a08a20bae.pdf
+  tw.8464#e7:
+    locator: NORMAN自有品牌介紹段
+    published_date: null
+    publisher: 億豐綜合工業股份有限公司
+    quote_check: found
+    title: 品牌介紹
+    url: https://www.nienmade.com.tw/brand.aspx
+  tw.8464#e8:
+    locator: 2025年10月31日新聞，Home Depot客戶及裁切機更新段
+    published_date: '2025-10-31'
+    publisher: 億豐綜合工業股份有限公司
+    quote_check: found
+    title: 億豐獲Home Depot雙重殊榮
+    url: https://www.nienmade.com.tw/News.aspx
+  tw.8464#e9:
+    locator: 簡報頁21，窗簾市場簡說，客製化窗簾競爭者欄
+    published_date: '2023-04-27'
+    publisher: 億豐綜合工業股份有限公司
+    quote_check: found
+    title: Nien Made 2023 QIC法人說明會簡報
+    url: https://www.nienmade.com.tw/file/Shareholders/2023/20230427-Nien%20Made_2023_QIC_CN.pdf

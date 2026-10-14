@@ -21,5 +21,37 @@ stages:
   name: 光通訊模組
   tier: downstream
   name_en: Modules
-members: []
-as_of: null
+members:
+- id: tw.3081
+  stage: substrate
+  tier: upstream
+  detail: InP基板上的磊晶片製造
+  as_of: '2026-10-14'
+  evidence:
+  - tw.3081#e1
+  confidence: ai_cross_checked
+- id: tw.3105
+  stage: devices
+  tier: midstream
+  detail: InP元件製程開發
+  as_of: '2026-05-26'
+  evidence:
+  - tw.3105#e6
+  confidence: ai_cross_checked
+- id: tw.4979
+  stage: devices
+  tier: midstream
+  detail: InP光電元件製程
+  as_of: '2025-12-22'
+  evidence:
+  - tw.4979#e4
+  confidence: ai_cross_checked
+- id: tw.4991
+  stage: devices
+  tier: midstream
+  detail: InP光電元件晶圓製造
+  as_of: '2026-04-05'
+  evidence:
+  - tw.4991#e18
+  confidence: ai_cross_checked
+as_of: '2026-10-14'

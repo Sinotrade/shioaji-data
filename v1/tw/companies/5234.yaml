@@ -8,12 +8,176 @@ industry:
   l0_code: '26'
   l0_name: 光電業
   l0_name_en: Optoelectronic
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.display
+  l2_name: 光電與顯示
+  l2_name_en: Optoelectronics & Displays
+  l3: disp.materials
+  l3_name: 顯示器材料與零組件
+  l3_name_en: Display Materials & Components
+chain: chain.display
+primary_chain_position: upstream
+summary_short: 以顯示器化學材料為主要收入來源，另銷售半導體材料及關鍵原材料。
+summary_long: 達興材料研發、設計及製造特用化學材料，業務涵蓋顯示器材料、半導體材料與關鍵原材料。2026年上半年三項營收占比分別為77%、21%及2%，以顯示器材料為主要收入來源。顯示器產品包括用於彩色濾光片的黑色矩陣光阻及電視面板配向膜；半導體產品包括暫時接著用離型層、線路重佈層感光介電材料及光阻剝離液。關鍵原材料包括酸酐單體與特用高分子。2025年對友達銷貨占全年銷貨淨額43.80%。公司年報將CoWoS列入先進封裝材料的應用技術。
+segments:
+- evidence_ids:
+  - e2
+  id: display
+  name: 顯示器材料
+  period: 2026-H1
+  revenue_share_pct: 77
+- evidence_ids:
+  - e2
+  id: semiconductor
+  name: 半導體材料
+  period: 2026-H1
+  revenue_share_pct: 21
+- evidence_ids:
+  - e2
+  id: raw_materials
+  name: 關鍵原材料
+  period: 2026-H1
+  revenue_share_pct: 2
+relations:
+  competitors:
+  - as_of: '2025-07-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 配向膜市場競爭
+    details:
+    - 配向膜市場競爭
+    edge: ec3969bd318b4
+    evidence_level: primary
+    id: jp.4021
+    name: Nissan Chem.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-07-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 顯影液市場競爭
+    details:
+    - 顯影液市場競爭
+    edge: eda425af66325
+    evidence_level: primary
+    id: tw.1711
+    name: 永光
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  customers:
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 材料銷貨；占2025年全年銷貨淨額43.80%
+    details:
+    - 材料銷貨；占2025年全年銷貨淨額43.80%
+    edge: e7c1c937658e0
+    evidence_level: primary
+    id: tw.2409
+    name: 友達
+    ranking_basis: disclosed
+    share_basis: revenue
+    share_pct: 43.8
+    weight: 1
+unresolved_mentions:
+- 甲公司（年報主要進貨廠商，未揭露名稱）
+- 國際半導體客戶
+- 國際材料大廠
 website: https://www.daxinmat.com/
 tax_id: '28357108'
 incorporated: '2006-07-12'
 listed: '2012-07-16'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-13'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.5234#e1:
+    locator: 進一步探索達興材料
+    published_date: null
+    publisher: 達興材料股份有限公司
+    quote_check: found
+    title: 達興材料官網
+    url: https://www.daxinmat.com/
+  tw.5234#e10:
+    locator: 印刷第76頁（PDF第79頁），最近二年度主要銷貨客戶表／114年度
+    published_date: '2026-03-24'
+    publisher: 達興材料股份有限公司
+    quote_check: unreachable
+    title: 達興材料股份有限公司114年度年報
+    url: https://www.daxinmat.com/d/gkl/114_Annual%20Report_CN.pdf
+  tw.5234#e12:
+    locator: 市場銷售與競爭／國內外競爭廠商／各產品主要競爭對手表；頁尾更新日期2025/07/23
+    published_date: null
+    publisher: MoneyDJ理財網／嘉實投顧
+    quote_check: found
+    title: 達興材料股份有限公司
+    url: https://www.moneydj.com/KMDJ/wiki/wikiViewer.aspx?keyid=4933fd6a-b8c5-41d0-91b0-f053278ee485
+  tw.5234#e13:
+    locator: 市場銷售與競爭／國內外競爭廠商／各產品主要競爭對手表；頁尾更新日期2025/07/23
+    published_date: null
+    publisher: MoneyDJ理財網／嘉實投顧
+    quote_check: found
+    title: 達興材料股份有限公司
+    url: https://www.moneydj.com/KMDJ/wiki/wikiViewer.aspx?keyid=4933fd6a-b8c5-41d0-91b0-f053278ee485
+  tw.5234#e2:
+    locator: 簡報第15頁（PDF第16頁），主要產品；三欄依序為半導體材料、顯示器材料、關鍵原材料
+    published_date: '2026-08-14'
+    publisher: 達興材料股份有限公司
+    quote_check: found
+    title: 達興材料2026年8月14日法人說明會簡報
+    url: https://www.daxinmat.com/d/PMy/1150814_Investor%20Conference_CN.pdf
+  tw.5234#e3:
+    locator: 應用
+    published_date: null
+    publisher: 達興材料股份有限公司
+    quote_check: found
+    title: 黑色矩陣光阻
+    url: https://www.daxinmat.com/products/display-materials/lcd-materials/black-matrix-resist
+  tw.5234#e4:
+    locator: 應用
+    published_date: null
+    publisher: 達興材料股份有限公司
+    quote_check: found
+    title: 聚醯亞胺配向膜（PSA-mode）
+    url: https://www.daxinmat.com/products/display-materials/lcd-materials/PSA-mode
+  tw.5234#e5:
+    locator: 暫時貼合／剝離材料產品
+    published_date: null
+    publisher: 達興材料股份有限公司
+    quote_check: found
+    title: 暫時貼合／剝離材料
+    url: https://www.daxinmat.com/products/semiconductor-materials/laser-release-layer
+  tw.5234#e6:
+    locator: 應用
+    published_date: null
+    publisher: 達興材料股份有限公司
+    quote_check: found
+    title: 線路重佈層
+    url: https://www.daxinmat.com/products/semiconductor-materials/photosensitive-dielectric-pass/redistribution-layer
+  tw.5234#e7:
+    locator: 應用
+    published_date: null
+    publisher: 達興材料股份有限公司
+    quote_check: found
+    title: 剝離液／去除液
+    url: https://www.daxinmat.com/products/semiconductor-materials/high-purity-wet-chemicals/Strippers-Removers
+  tw.5234#e8:
+    locator: 酸酐單體產品
+    published_date: null
+    publisher: 達興材料股份有限公司
+    quote_check: found
+    title: 酸酐單體
+    url: https://www.daxinmat.com/products/key-raw-materials/functional-monomer
+  tw.5234#e9:
+    locator: 相關產品／特用高分子
+    published_date: null
+    publisher: 達興材料股份有限公司
+    quote_check: found
+    title: 關鍵原材料
+    url: https://www.daxinmat.com/products/key-raw-materials

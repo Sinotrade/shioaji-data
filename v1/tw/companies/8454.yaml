@@ -8,12 +8,201 @@ industry:
   l0_code: '36'
   l0_name: 數位雲端
   l0_name_en: Digital and Cloud Services
-primary_chain_position: unknown
+  l1: consumer
+  l1_name: 消費
+  l1_name_en: Consumer
+  l2: cons.discretionary
+  l2_name: 非必需消費
+  l2_name_en: Consumer Discretionary
+  l3: retail.online
+  l3_name: 網路零售
+  l3_name_en: Online Retail
+primary_chain_position: downstream
+summary_short: 以momo購物網經營網路零售，另提供電視購物、商家平台與廣告服務。
+summary_long: 富邦媒體科技以momo購物網經營網路零售，並提供電視購物服務。2025年電商事業群占營收97.21%，影音事業群占2.72%，其他部門占0.07%。公司另經營mo店+平台，提供商家銷售通路，並透過零售媒體聯播網運用第一方數據與消費洞察提供廣告服務。旗下富昇物流從事物流運輸，富昇商貿從事商品批發，兩者均為全資子公司；另有富立綜合保險代理人經營保險代理業。直接母公司為大富媒體科技，最終母公司為台灣大哥大。
+segments:
+- evidence_ids:
+  - e3
+  id: seg_ecommerce
+  name: 電商事業群
+  period: '2025'
+  revenue_share_pct: 97.21
+- evidence_ids:
+  - e4
+  id: seg_audiovisual
+  name: 影音事業群
+  period: '2025'
+  revenue_share_pct: 2.72
+- evidence_ids:
+  - e5
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 0.07
+relations:
+  parents:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: momo零售業務子公司
+    details:
+    - momo零售業務子公司
+    - 最終母公司
+    edge: e0b709c9b21a8
+    evidence_level: primary
+    id: tw.3045
+    name: 台灣大
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 2
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接母公司
+    details:
+    - 直接母公司
+    edge: eeec7e44962be
+    evidence_level: primary
+    id: org.da-fu-media-technology
+    name: 大富媒體科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  partners:
+  - as_of: '2026-10-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司台北富邦銀行與momo合作聯名信用卡
+    details:
+    - 子公司台北富邦銀行與momo合作聯名信用卡
+    edge: ec705e76a39b3
+    evidence_level: primary
+    id: tw.2881
+    name: 富邦金
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 保險代理子公司
+    details:
+    - 保險代理子公司
+    edge: eaebeffd80f17
+    evidence_level: primary
+    id: org.fu-li-insurance-agency
+    name: 富立綜合保險代理人股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資物流運輸子公司
+    details:
+    - 全資物流運輸子公司
+    edge: e4294c8a33b91
+    evidence_level: primary
+    id: org.fu-sheng-logistics
+    name: 富昇物流股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資商品批發子公司
+    details:
+    - 全資商品批發子公司
+    edge: e868dbb4d73eb
+    evidence_level: primary
+    id: org.fu-sheng-trading
+    name: 富昇商貿股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://corp.momo.com.tw/
 tax_id: '27365925'
 incorporated: '2004-09-27'
 listed: '2014-12-19'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-14'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.8454#e10:
+    locator: 第16頁，附註十二（一）子公司明細，115年6月30日欄
+    published_date: '2026-07-31'
+    publisher: 富邦媒體科技股份有限公司
+    quote_check: unreachable
+    title: 富邦媒體科技股份有限公司及子公司民國115及114年第2季合併財務報告
+    url: https://corp.momo.com.tw/file/investor/financeReport/2026Q2_FR.pdf
+  tw.8454#e11:
+    locator: 第16頁，附註十二（一）子公司明細，投資公司為本公司
+    published_date: '2026-07-31'
+    publisher: 富邦媒體科技股份有限公司
+    quote_check: unreachable
+    title: 富邦媒體科技股份有限公司及子公司民國115及114年第2季合併財務報告
+    url: https://corp.momo.com.tw/file/investor/financeReport/2026Q2_FR.pdf
+  tw.8454#e2:
+    locator: 關於momo
+    published_date: null
+    publisher: 富邦媒體科技股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://corp.momo.com.tw/about/aboutmomo/
+  tw.8454#e3:
+    locator: 第87頁，營運概況／業務範圍／營業比重，114年度欄
+    published_date: '2026-01-31'
+    publisher: 富邦媒體科技股份有限公司
+    quote_check: found
+    title: 富邦媒體科技股份有限公司2025年報
+    url: https://corp.momo.com.tw/file/investor/shareholdersMeeting/202601211911/20260508153630.pdf
+  tw.8454#e4:
+    locator: 第87頁，營運概況／業務範圍／營業比重，114年度欄
+    published_date: '2026-01-31'
+    publisher: 富邦媒體科技股份有限公司
+    quote_check: found
+    title: 富邦媒體科技股份有限公司2025年報
+    url: https://corp.momo.com.tw/file/investor/shareholdersMeeting/202601211911/20260508153630.pdf
+  tw.8454#e5:
+    locator: 第87頁，營運概況／業務範圍／營業比重，114年度欄
+    published_date: '2026-01-31'
+    publisher: 富邦媒體科技股份有限公司
+    quote_check: found
+    title: 富邦媒體科技股份有限公司2025年報
+    url: https://corp.momo.com.tw/file/investor/shareholdersMeeting/202601211911/20260508153630.pdf
+  tw.8454#e6:
+    locator: 零售、平台雙引擎成長／平台商家突破萬家
+    published_date: '2026-07-31'
+    publisher: 富邦媒體科技股份有限公司
+    quote_check: found
+    title: 富邦媒Q2營運動能升溫 營收年增4.1%、營業利益年增2.5%
+    url: https://corp.momo.com.tw/news/news_page/1719
+  tw.8454#e7:
+    locator: 零售、平台雙引擎成長／平台商家突破萬家
+    published_date: '2026-07-31'
+    publisher: 富邦媒體科技股份有限公司
+    quote_check: found
+    title: 富邦媒Q2營運動能升溫 營收年增4.1%、營業利益年增2.5%
+    url: https://corp.momo.com.tw/news/news_page/1719
+  tw.8454#e8:
+    locator: 第36頁，附註二七（一）關係人名稱及其關係
+    published_date: '2026-07-31'
+    publisher: 富邦媒體科技股份有限公司
+    quote_check: unreachable
+    title: 富邦媒體科技股份有限公司及子公司民國115及114年第2季合併財務報告
+    url: https://corp.momo.com.tw/file/investor/financeReport/2026Q2_FR.pdf
+  tw.8454#e9:
+    locator: 第16頁，附註十二（一）子公司明細，115年6月30日欄
+    published_date: '2026-07-31'
+    publisher: 富邦媒體科技股份有限公司
+    quote_check: unreachable
+    title: 富邦媒體科技股份有限公司及子公司民國115及114年第2季合併財務報告
+    url: https://corp.momo.com.tw/file/investor/financeReport/2026Q2_FR.pdf

@@ -8,12 +8,478 @@ industry:
   l0_code: '27'
   l0_name: 通信網路業
   l0_name_en: Communications and Internet
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.network
+  l2_name: 通信網路
+  l2_name_en: Communications & Networking
+  l3: net.optical
+  l3_name: 光通訊元件與模組
+  l3_name_en: Optical Communication Components & Modules
+chain: chain.networking
+primary_chain_position: midstream
+summary_short: 以光通訊主被動元件、光纖跳接線及高頻連接器的製造銷售為主。
+summary_long: 光聖的營運分為光通訊與高頻連接器，2025年營收占比分別為91%與9%。光通訊產品包括MPO/MTP多芯光纖跳接線及XGSPON ONU BOSA，應用於資料中心與光纖接取網路；RF產品包含5G連接器、轉接器及線組。公司年報列出Furukawa與Sumitomo的光纖供應關係，經濟日報則具名報導Google為其主要客戶。光聖集團投入CPO外部雷射光源模組開發，並公告與IET-KY進行策略換股合作。2024年完成向精英電腦購買原承租土地及廠房的過戶，另於2024、2025年參與合聖科技增資；合聖為關聯企業，並非合併子公司。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_optical
+  name: 光通訊
+  period: '2025'
+  revenue_share_pct: 91
+- evidence_ids:
+  - e1
+  id: seg_rf
+  name: 高頻連接器
+  period: '2025'
+  revenue_share_pct: 9
+main_theme: theme.data_center
+themes:
+- stage: it
+  theme: theme.data_center
+  tier: midstream
+- stage: components
+  theme: theme.5g
+  tier: upstream
+- stage: components
+  theme: theme.cpo
+  tier: upstream
+relations:
+  customers:
+  - as_of: '2025-11-24'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 光通訊客戶關係
+    details:
+    - 光通訊客戶關係
+    edge: eae684db55a33
+    evidence_level: media
+    id: us.GOOGL
+    name: Alphabet
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  partners:
+  - as_of: '2025-12-04'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 策略換股及CPO光源技術合作
+    details:
+    - 策略換股及CPO光源技術合作
+    edge: eb3101f76d52f
+    evidence_level: primary
+    id: tw.4971
+    name: IET-KY
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過德國子公司持有的捷克孫公司
+    details:
+    - 透過德國子公司持有的捷克孫公司
+    edge: ea29ae10fb6f7
+    evidence_level: primary
+    id: org.ezconn-czech-as
+    name: EZconn Czech a.s.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 德國直接子公司
+    details:
+    - 德國直接子公司
+    edge: eb546c69ae680
+    evidence_level: primary
+    id: org.ezconn-europe-gmbh
+    name: EZconn Europe GmbH
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過EC-Link及Light-Master持有的中國間接子公司
+    details:
+    - 透過EC-Link及Light-Master持有的中國間接子公司
+    edge: ea4a6d0a4f380
+    evidence_level: primary
+    id: org.ezconn-ningbo
+    name: 光聖科技（寧波）有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 菲律賓全資子公司設立及注資
+    details:
+    - 菲律賓全資子公司設立及注資
+    edge: e1d8face4d13d
+    evidence_level: primary
+    id: org.ezconn-technology-corporation-ph
+    name: EZconn Technology Corporation
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 美國直接子公司
+    details:
+    - 美國直接子公司
+    edge: ecde09be2d660
+    evidence_level: primary
+    id: org.ezconn-usa-inc
+    name: EZConn USA Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 台灣全資投資子公司設立及注資
+    details:
+    - 台灣全資投資子公司設立及注資
+    edge: e1e993d182372
+    evidence_level: primary
+    id: org.huasheng-investment-ezconn
+    name: 華聖投資股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 光纖原料
+    details:
+    - 光纖原料
+    edge: ec35ee13d1019
+    evidence_level: primary
+    id: org.furukawa
+    name: Furukawa
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 光纖原料
+    details:
+    - 光纖原料
+    edge: ec9a3ddad6a49
+    evidence_level: primary
+    id: org.sumitomo
+    name: Sumitomo
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 關係人進貨，品項未揭露
+    details:
+    - 關係人進貨，品項未揭露
+    edge: ec5764bf7f3f7
+    evidence_level: primary
+    id: tw.7928
+    name: 合聖科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 新台幣5.6億元
+    as_of: 2024-01
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 購買淡水上達廠土地及廠房
+    details:
+    - 購買淡水上達廠土地及廠房
+    edge: ee38f3f10be5e
+    event_date: '2023-12-14'
+    events:
+    - amount: 新台幣5.6億元
+      detail: 購買淡水上達廠土地及廠房
+      event_date: '2023-12-14'
+    evidence_level: primary
+    id: tw.2331
+    name: 精英
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2026-04-24'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 以增資新股進行股份交換
+    details:
+    - 以增資新股進行股份交換
+    - 2025年現金取得普通股
+    edge: e3b54a0e66801
+    event_date: '2025-12-04'
+    events:
+    - amount: null
+      detail: 以增資新股進行股份交換
+      event_date: '2025-12-04'
+    - amount: null
+      detail: 2025年現金取得普通股
+      event_date: null
+    evidence_level: primary
+    id: tw.4971
+    name: IET-KY
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: 2024-11
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 2024年3月及11月參與現金增資
+    details:
+    - 2024年3月及11月參與現金增資
+    edge: ee0981794402d
+    event_date: null
+    events:
+    - amount: null
+      detail: 2024年3月及11月參與現金增資
+      event_date: null
+    evidence_level: primary
+    id: tw.7812
+    name: 稜研科技*-創
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 2024年4月認購現金增資
+    details:
+    - 2024年4月認購現金增資
+    - 2025年12月認購現金增資
+    edge: e93cab5e380dd
+    event_date: null
+    events:
+    - amount: null
+      detail: 2024年4月認購現金增資
+      event_date: null
+    evidence_level: primary
+    id: tw.7928
+    name: 合聖科技股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 資料中心、雲端服務、CSP：應用市場或業者類型，不能直接作為具名公司客戶。
+- 2025年報的Company A銷售客戶：未具名，未將其占比套用到Google。
+- 2025年報的Company A、Company B採購供應商：未具名，未與F…
+- B公司：公司財報揭露的銷售協助及佣金合作對象，未具名。
+- 光環科技及萊德光電股票處分案的買方：未揭露。
 website: www.ezconn.com
 tax_id: '97119975'
 incorporated: '1996-09-04'
 listed: '2015-07-14'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-14'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6442#e1:
+    locator: 印刷頁82／PDF第85頁，Operating proportion；依序為2024、2025
+    published_date: '2026-03-28'
+    publisher: 光紅建聖股份有限公司（FinancialReports保存原始PDF）
+    quote_check: found
+    title: EZconn Corporation 2025 Annual Report
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52563/2026/RNS/52563_rns_2026-04-29_7199edd4-08c0-4c8d-bb84-aa2b07010ca2.pdf
+  tw.6442#e10:
+    locator: 第3、4項交易金額及相對人
+    published_date: '2023-12-14'
+    publisher: 公司重大訊息（鉅亨網轉載）
+    quote_check: found
+    title: 光聖:本公司董事會決議購置不動產
+    url: https://news.cnyes.com/news/id/5410784
+  tw.6442#e11:
+    locator: 印刷頁31／PDF第32頁，Property, plant and equipment
+    published_date: null
+    publisher: 光紅建聖股份有限公司
+    quote_check: found
+    title: EZconn Corporation and Subsidiaries — Consolidated Financial Statements for 2024 and 2023
+    url: https://www.ezconn.com/index.php/download/0325110611df268275?open=0
+  tw.6442#e12:
+    locator: 第35頁，採用權益法之投資，2024年4月增資
+    published_date: null
+    publisher: 光紅建聖股份有限公司
+    quote_check: unreachable
+    title: 光紅建聖股份有限公司及子公司合併財務報表暨會計師查核報告—民國114及113年度
+    url: https://www.ezconn.com/download/0326040109xi895502?open=0
+  tw.6442#e13:
+    locator: 第35頁，採用權益法之投資，2025年12月增資
+    published_date: null
+    publisher: 光紅建聖股份有限公司
+    quote_check: unreachable
+    title: 光紅建聖股份有限公司及子公司合併財務報表暨會計師查核報告—民國114及113年度
+    url: https://www.ezconn.com/download/0326040109xi895502?open=0
+  tw.6442#e14:
+    locator: 第65頁，關係人名稱及其關係
+    published_date: null
+    publisher: 光紅建聖股份有限公司
+    quote_check: unreachable
+    title: 光紅建聖股份有限公司及子公司合併財務報表暨會計師查核報告—民國114及113年度
+    url: https://www.ezconn.com/download/0326040109xi895502?open=0
+  tw.6442#e15:
+    locator: 第30頁，策略股權投資
+    published_date: null
+    publisher: 光紅建聖股份有限公司
+    quote_check: unreachable
+    title: 光紅建聖股份有限公司及子公司合併財務報表暨會計師查核報告—民國114及113年度
+    url: https://www.ezconn.com/download/0326040109xi895502?open=0
+  tw.6442#e16:
+    locator: 第30頁，策略股權投資
+    published_date: null
+    publisher: 光紅建聖股份有限公司
+    quote_check: unreachable
+    title: 光紅建聖股份有限公司及子公司合併財務報表暨會計師查核報告—民國114及113年度
+    url: https://www.ezconn.com/download/0326040109xi895502?open=0
+  tw.6442#e17:
+    locator: 第30頁，光環科技股票處分
+    published_date: null
+    publisher: 光紅建聖股份有限公司
+    quote_check: unreachable
+    title: 光紅建聖股份有限公司及子公司合併財務報表暨會計師查核報告—民國114及113年度
+    url: https://www.ezconn.com/download/0326040109xi895502?open=0
+  tw.6442#e18:
+    locator: 第30頁，萊德光電股票處分
+    published_date: null
+    publisher: 光紅建聖股份有限公司
+    quote_check: unreachable
+    title: 光紅建聖股份有限公司及子公司合併財務報表暨會計師查核報告—民國114及113年度
+    url: https://www.ezconn.com/download/0326040109xi895502?open=0
+  tw.6442#e19:
+    locator: 第65頁，關係人交易之進貨；依序為2025、2024
+    published_date: null
+    publisher: 光紅建聖股份有限公司
+    quote_check: unreachable
+    title: 光紅建聖股份有限公司及子公司合併財務報表暨會計師查核報告—民國114及113年度
+    url: https://www.ezconn.com/download/0326040109xi895502?open=0
+  tw.6442#e2:
+    locator: 印刷頁78／PDF第82頁，光通訊產品發展趨勢
+    published_date: null
+    publisher: 光紅建聖股份有限公司
+    quote_check: unreachable
+    title: 光紅建聖股份有限公司2024年度年報
+    url: https://www.ezconn.com/download/0325121515ne842331?open=0
+  tw.6442#e20:
+    locator: 第34頁，列入合併財報之子公司，本公司投資項下
+    published_date: null
+    publisher: 光紅建聖股份有限公司
+    quote_check: unreachable
+    title: 光紅建聖股份有限公司及子公司合併財務報表暨會計師查核報告—民國114及113年度
+    url: https://www.ezconn.com/download/0326040109xi895502?open=0
+  tw.6442#e21:
+    locator: 第34頁，列入合併財報之子公司，EZconn Europe GmbH投資項下
+    published_date: null
+    publisher: 光紅建聖股份有限公司
+    quote_check: unreachable
+    title: 光紅建聖股份有限公司及子公司合併財務報表暨會計師查核報告—民國114及113年度
+    url: https://www.ezconn.com/download/0326040109xi895502?open=0
+  tw.6442#e22:
+    locator: 第34頁，子公司明細及EC-Link、Light-Master持股路徑
+    published_date: null
+    publisher: 光紅建聖股份有限公司
+    quote_check: unreachable
+    title: 光紅建聖股份有限公司及子公司合併財務報表暨會計師查核報告—民國114及113年度
+    url: https://www.ezconn.com/download/0326040109xi895502?open=0
+  tw.6442#e23:
+    locator: 第34頁，菲律賓子公司設立、注資及持股
+    published_date: null
+    publisher: 光紅建聖股份有限公司
+    quote_check: unreachable
+    title: 光紅建聖股份有限公司及子公司合併財務報表暨會計師查核報告—民國114及113年度
+    url: https://www.ezconn.com/download/0326040109xi895502?open=0
+  tw.6442#e24:
+    locator: 第34頁，華聖投資設立、注資及持股
+    published_date: null
+    publisher: 光紅建聖股份有限公司
+    quote_check: unreachable
+    title: 光紅建聖股份有限公司及子公司合併財務報表暨會計師查核報告—民國114及113年度
+    url: https://www.ezconn.com/download/0326040109xi895502?open=0
+  tw.6442#e25:
+    locator: 第34頁，列入合併財報之子公司，EZConn USA Inc.列
+    published_date: null
+    publisher: 光紅建聖股份有限公司
+    quote_check: unreachable
+    title: 光紅建聖股份有限公司及子公司合併財務報表暨會計師查核報告—民國114及113年度
+    url: https://www.ezconn.com/download/0326040109xi895502?open=0
+  tw.6442#e3:
+    locator: 產品介紹
+    published_date: null
+    publisher: 光紅建聖股份有限公司
+    quote_check: found
+    title: XGSPON ONU BOSA
+    url: https://www.ezconn.com/tw/product/FiberOpticsProducts/OSA/XGSPONONUBOSA
+  tw.6442#e4:
+    locator: 5G / 6G
+    published_date: null
+    publisher: 光紅建聖股份有限公司
+    quote_check: found
+    title: RF Products
+    url: https://www.ezconn.com/tw/product/RFProducts
+  tw.6442#e5:
+    locator: CPO技術開發段落
+    published_date: '2025-12-04'
+    publisher: 光紅建聖股份有限公司
+    quote_check: found
+    title: 本公司與英屬開曼群島商英特磊科技股份有限公司進行股份交換合作案之重大訊息說明記者會新聞稿
+    url: https://www.ezconn.com/tw/news/CompanyNews/ezconn_iet
+  tw.6442#e6:
+    locator: 記者秦鈺翔報導，正文第二段
+    published_date: '2025-11-24'
+    publisher: 經濟日報
+    quote_check: found
+    title: 光聖領頭 帶動光通訊族群齊漲
+    url: https://money.udn.com/money/story/5607/9159782
+  tw.6442#e7:
+    locator: 印刷頁116／PDF第119頁，Main raw material supply status
+    published_date: '2026-03-28'
+    publisher: 光紅建聖股份有限公司（FinancialReports保存原始PDF）
+    quote_check: found
+    title: EZconn Corporation 2025 Annual Report
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52563/2026/RNS/52563_rns_2026-04-29_7199edd4-08c0-4c8d-bb84-aa2b07010ca2.pdf
+  tw.6442#e8:
+    locator: 股份交換條件
+    published_date: '2025-12-04'
+    publisher: 光紅建聖股份有限公司
+    quote_check: found
+    title: 本公司與英屬開曼群島商英特磊科技股份有限公司進行股份交換合作案之重大訊息說明記者會新聞稿
+    url: https://www.ezconn.com/tw/news/CompanyNews/ezconn_iet
+  tw.6442#e9:
+    locator: 第4項；事實發生日2026-04-24
+    published_date: '2026-04-27'
+    publisher: 公開資訊觀測站重大訊息（MoneyDJ轉載）
+    quote_check: found
+    title: 光聖：與IET-KY股份交換案之基準日調整為5/5
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=abb17e79-ca97-4981-898c-770d4e8b5dca

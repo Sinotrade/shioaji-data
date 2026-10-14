@@ -8,12 +8,523 @@ industry:
   l0_code: '25'
   l0_name: 電腦及週邊設備業
   l0_name_en: Computer and Peripheral Equipment
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.hardware
+  l2_name: 電腦與硬體
+  l2_name_en: Computers & Hardware
+  l3: hw.server
+  l3_name: 伺服器與資料中心設備
+  l3_name_en: Servers & Data Center Equipment
+chain: chain.server
+primary_chain_position: midstream
+summary_short: 以神雲伺服器設計製造為主要營收，另經營車用電子與智能服務。
+summary_long: 神達控股透過神雲科技、神達數位及神達電腦經營相關事業。2026年第一季，神雲科技占合併營收90.1%，神達數位占7.8%，神達電腦占2.1%。神雲提供伺服器ODM與機櫃整合服務，並展示52U AI液冷整機櫃；其TYAN伺服器品牌於2024年10月整合至MiTAC。神雲與AMD共同開發伺服器平台，並與Intel、NVIDIA、Samsung及Micron有具名技術或產品合作。神達數位提供Mio行車記錄器。近年事件包括越南子公司增資建廠、神雲投資設立美國子公司、取得楊梅土地使用權，以及神達電腦公告擬處分新聚思持股。
+segments:
+- evidence_ids:
+  - e1
+  - e3
+  id: seg_cloud
+  name: 神雲科技：雲端運算與人工智慧
+  period: 2026Q1
+  revenue_share_pct: 90.1
+- evidence_ids:
+  - e1
+  - e3
+  id: seg_auto
+  name: 神達數位：車用電子與智聯網
+  period: 2026Q1
+  revenue_share_pct: 7.8
+- evidence_ids:
+  - e1
+  - e3
+  id: seg_services
+  name: 神達電腦：智能服務
+  period: 2026Q1
+  revenue_share_pct: 2.1
+main_theme: theme.ai_server
+themes:
+- stage: assembly
+  theme: theme.ai_server
+  tier: downstream
+- stage: it
+  theme: theme.data_center
+  tier: midstream
+- stage: system
+  theme: theme.liquid_cooling
+  tier: downstream
+- stage: system
+  theme: theme.nvidia
+  tier: downstream
+- stage: application
+  theme: theme.hbm
+  tier: downstream
+relations:
+  customers:
+  - as_of: '2026-10-08'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 神達集團伺服器訂單
+    details:
+    - 神達集團伺服器訂單
+    edge: e6d2bf5b26b79
+    evidence_level: media
+    id: us.ORCL
+    name: Oracle
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  partners:
+  - as_of: '2025-08-06'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 神雲科技開放運算伺服器與記憶體、儲存技術合作
+    details:
+    - 神雲科技開放運算伺服器與記憶體、儲存技術合作
+    edge: ebe1a3037f401
+    evidence_level: primary
+    id: kr.005930
+    name: Samsung Electronics
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 神雲科技伺服器授權經銷合作
+    details:
+    - 神雲科技伺服器授權經銷合作
+    edge: e95b78eb7ef08
+    evidence_level: primary
+    id: org.petacom
+    name: 朔宇科技
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-08-11'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 共同開發C2810Z6與C2610Z6伺服器
+    details:
+    - 共同開發C2810Z6與C2610Z6伺服器
+    edge: e13ee1bc50364
+    evidence_level: primary
+    id: us.AMD
+    name: AMD
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-17'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 神雲科技加速運算與資料中心技術合作
+    details:
+    - 神雲科技加速運算與資料中心技術合作
+    edge: ed704147b0dd1
+    evidence_level: primary
+    id: us.INTC
+    name: Intel
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-09-29'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 神雲科技AI伺服器記憶體與儲存方案合作
+    details:
+    - 神雲科技AI伺服器記憶體與儲存方案合作
+    edge: e54a5d22c577e
+    evidence_level: primary
+    id: us.MU
+    name: Micron
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-17'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 神雲科技加速運算與資料中心策略合作
+    details:
+    - 神雲科技加速運算與資料中心策略合作
+    edge: e8db179c4236a
+    evidence_level: primary
+    id: us.NVDA
+    name: NVIDIA
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2026-10-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 主要子公司；雲端運算與人工智慧
+    details:
+    - 主要子公司；雲端運算與人工智慧
+    edge: ea7bd9a0652d4
+    evidence_level: primary
+    id: org.mitac-computing-technology
+    name: 神雲科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 主要子公司；智能服務
+    details:
+    - 主要子公司；智能服務
+    edge: e4501dab4feca
+    evidence_level: primary
+    id: org.mitac-international
+    name: 神達電腦股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-05-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 神達電腦旗下越南子公司設立決議
+    details:
+    - 神達電腦旗下越南子公司設立決議
+    edge: ee224110b3a5e
+    evidence_level: primary
+    id: org.mitac-property-vietnam
+    name: MiTAC Property (Vietnam) Company Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 主要子公司；車用電子與智聯網
+    details:
+    - 主要子公司；車用電子與智聯網
+    edge: eb60e6f98c329
+    evidence_level: primary
+    id: tw.7821
+    name: 神數
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團商品採購；品項未細分
+    details:
+    - 集團商品採購；品項未細分
+    edge: ef18bb10a5971
+    evidence_level: primary
+    id: tw.2347
+    name: 聯強
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 新台幣797,568,639元
+    as_of: '2026-10-08'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 神雲科技取得桃園楊梅土地使用權資產
+    details:
+    - 神雲科技取得桃園楊梅土地使用權資產
+    edge: e69f160d08160
+    event_date: '2026-10-08'
+    events:
+    - amount: 新台幣797,568,639元
+      detail: 神雲科技取得桃園楊梅土地使用權資產
+      event_date: '2026-10-08'
+    evidence_level: primary
+    id: org.lien-hwa-property
+    name: 聯華置產股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2025-11-10'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 參與認購神雲科技現金增資
+    details:
+    - 參與認購神雲科技現金增資
+    edge: e1f0e03ae5305
+    event_date: '2025-11-10'
+    events:
+    - amount: null
+      detail: 參與認購神雲科技現金增資
+      event_date: '2025-11-10'
+    evidence_level: primary
+    id: org.mitac-computing-technology
+    name: 神雲科技股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 美金4,700萬元
+    as_of: '2026-01-07'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 神雲科技投資設立美國子公司
+    details:
+    - 神雲科技投資設立美國子公司
+    edge: e94a3b2b1b683
+    event_date: '2026-01-07'
+    events:
+    - amount: 美金4,700萬元
+      detail: 神雲科技投資設立美國子公司
+      event_date: '2026-01-07'
+    evidence_level: media
+    id: org.mitac-computing-technology-holdings
+    name: Mitac Computing Technology Holdings Corp.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2024-01-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 越南子公司增資暨興建廠房
+    details:
+    - 越南子公司增資暨興建廠房
+    edge: e5a460372d843
+    event_date: '2024-01-23'
+    events:
+    - amount: null
+      detail: 越南子公司增資暨興建廠房
+      event_date: '2024-01-23'
+    evidence_level: primary
+    id: org.mitac-technology-vietnam
+    name: MiTAC Technology (Vietnam) Company Limited
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 其他雲端服務供應商（CSP）客戶，未具名
+- 獲頒傑出供應商獎所涉及的全球雲端平台客戶，未具名
+- TD SYNNEX持股處分計畫的買方，未具名
+- MITAC Benelux NV不動產處分的買方，未具名
+- 神達數位釋股作業的受讓人，所引董事會決議未具名
 website: www.mitac.com
 tax_id: '53677966'
 incorporated: '2013-09-12'
 listed: '2013-09-12'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-14'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3706#e1:
+    locator: 公司名稱、股票代號及主要子公司欄
+    published_date: null
+    publisher: 神達控股股份有限公司
+    quote_check: found
+    title: 基本資料
+    url: https://www.mitac.com/zh-TW/basic_information/index
+  tw.3706#e10:
+    locator: 首段，C2810Z6與C2610Z6
+    published_date: '2026-08-11'
+    publisher: 神達控股股份有限公司
+    quote_check: found
+    title: 神雲科技於 OCP APAC 高峰會展出多元化架構 打造代理型 AI 運作系統
+    url: https://www.mitac.com/zh-TW/news_room/detail/OCP_APAC_2026
+  tw.3706#e11:
+    locator: 展出平台及合作段落
+    published_date: '2025-08-06'
+    publisher: 神達控股股份有限公司
+    quote_check: found
+    title: 神雲科技攜手產業夥伴 於 OCP APAC Summit 2025 展示開放式 AI 伺服器解決方案
+    url: https://www.mitac.com/zh-TW/news_room/detail/OCP_APAC_Summit_2025
+  tw.3706#e12:
+    locator: AI伺服器與Micron共同展示段落
+    published_date: '2026-09-29'
+    publisher: 神達控股股份有限公司
+    quote_check: found
+    title: 神雲科技於Data Centre World Asia 2026展示代理式AI世代創新成果
+    url: https://mitac.com/zh-TW/news_room/detail/DCWA_2026
+  tw.3706#e13:
+    locator: HPC與雲端運算框架，G4520G6段落
+    published_date: '2025-11-18'
+    publisher: 神達控股股份有限公司
+    quote_check: found
+    title: 神雲科技將在 Supercomputing 2025 亮相高階 AI 叢集與液冷解決方案
+    url: https://www.mitac.com/zh-TW/news_room/detail/SC_2025
+  tw.3706#e14:
+    locator: Ideal for Enterprise AI Inference規格表
+    published_date: null
+    publisher: MiTAC Computing Technology Corporation
+    quote_check: found
+    title: AMD Instinct™ MI350P PCIe® Cards
+    url: https://www.mitaccomputing.com/solutions/13
+  tw.3706#e15:
+    locator: Deploy AMD Instinct MI350P PCIe Cards with MiTAC，TN85-B8261
+    published_date: null
+    publisher: MiTAC Computing Technology Corporation
+    quote_check: found
+    title: AMD Instinct™ MI350P PCIe® Cards
+    url: https://www.mitaccomputing.com/solutions/13
+  tw.3706#e16:
+    locator: 新聞稿首段
+    published_date: '2026-03-17'
+    publisher: MiTAC Computing Technology Corporation
+    quote_check: found
+    title: MiTAC Accelerates Next-Gen AI with Turnkey Solutions and Flexible NVIDIA MGX at NVIDIA GTC 2026
+    url: https://www.mitaccomputing.com/news/31
+  tw.3706#e17:
+    locator: 首段
+    published_date: '2025-12-23'
+    publisher: 神達控股股份有限公司
+    quote_check: found
+    title: 神雲科技與朔宇科技簽署經銷合作協議
+    url: https://www.mitac.com/zh-TW/news_room/detail/Petacom_Taiwan
+  tw.3706#e18:
+    locator: 北美擴產段落
+    published_date: '2026-10-08'
+    publisher: 經濟日報／記者吳凱中
+    quote_check: found
+    title: 神達衝刺 AI 伺服器業務 桃園租地蓋新廠
+    url: https://money.udn.com/money/amp/story/5612/9803162
+  tw.3706#e19:
+    locator: 公告主旨
+    published_date: '2026-10-08'
+    publisher: 公開資訊觀測站重大訊息／玉山證券轉載
+    quote_check: found
+    title: 神達：神雲科技取得桃園市楊梅區不動產使用權資產，計約7.98億元
+    url: https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7BF6C76F6A-3284-42A3-A37B-08B7E1CF1529%7D
+  tw.3706#e2:
+    locator: 神達控股概況
+    published_date: null
+    publisher: 神達控股股份有限公司
+    quote_check: found
+    title: 投資人專區
+    url: https://www.mitac.com/zh-TW/investors_overview/index
+  tw.3706#e20:
+    locator: 第6項，交易相對人
+    published_date: '2026-10-08'
+    publisher: 公開資訊觀測站重大訊息／玉山證券轉載
+    quote_check: found
+    title: 神達：神雲科技取得桃園市楊梅區不動產使用權資產，計約7.98億元
+    url: https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7BF6C76F6A-3284-42A3-A37B-08B7E1CF1529%7D
+  tw.3706#e21:
+    locator: 第5項，使用權資產金額
+    published_date: '2026-10-08'
+    publisher: 公開資訊觀測站重大訊息／玉山證券轉載
+    quote_check: found
+    title: 神達：神雲科技取得桃園市楊梅區不動產使用權資產，計約7.98億元
+    url: https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7BF6C76F6A-3284-42A3-A37B-08B7E1CF1529%7D
+  tw.3706#e22:
+    locator: 新設子公司及交易金額段落
+    published_date: '2026-01-07'
+    publisher: 經濟日報／記者吳凱中
+    quote_check: found
+    title: 神達旗下神雲科技 增設美國子公司
+    url: https://money.udn.com/money/amp/story/5612/9250842
+  tw.3706#e23:
+    locator: 神達電腦董事會處分決議段落
+    published_date: '2025-10-21'
+    publisher: 中央社／記者曾仁凱
+    quote_check: found
+    title: 聯強與神達再處分新聚思股票 合計市值95億元
+    url: https://www.cna.com.tw/news/afe/202510210027.aspx
+  tw.3706#e24:
+    locator: 報告第50頁，關係人交易／進貨／2026年上半年商品購買
+    published_date: '2026-08-11'
+    publisher: 神達控股股份有限公司
+    quote_check: found
+    title: 神達控股股份有限公司及子公司2026年第二季合併財務報告
+    url: https://www.mitac.com/zh-TW/investors_overview/download/74/115%E5%B9%B4%E7%AC%AC%E4%BA%8C%E5%AD%A3%E5%90%88%E4%BD%B5%E5%A0%B1%E5%91%8A
+  tw.3706#e25:
+    locator: 113.01.23，第四屆第十次董事會
+    published_date: null
+    publisher: 神達控股股份有限公司
+    quote_check: found
+    title: 董事會重要決議
+    url: https://www.mitac.com/zh-TW/corporate_governance/index/Resolutions_by_BOD
+  tw.3706#e26:
+    locator: 114.01.23，第四屆第十七次董事會
+    published_date: null
+    publisher: 神達控股股份有限公司
+    quote_check: found
+    title: 董事會重要決議
+    url: https://www.mitac.com/zh-TW/corporate_governance/index/Resolutions_by_BOD
+  tw.3706#e27:
+    locator: 114.05.13，第四屆第二十次董事會
+    published_date: null
+    publisher: 神達控股股份有限公司
+    quote_check: found
+    title: 董事會重要決議
+    url: https://www.mitac.com/zh-TW/corporate_governance/index/Resolutions_by_BOD
+  tw.3706#e28:
+    locator: 113.12.27，第四屆第十六次董事會
+    published_date: null
+    publisher: 神達控股股份有限公司
+    quote_check: found
+    title: 董事會重要決議
+    url: https://www.mitac.com/zh-TW/corporate_governance/index/Resolutions_by_BOD
+  tw.3706#e29:
+    locator: 114.11.10，第五屆第四次董事會
+    published_date: null
+    publisher: 神達控股股份有限公司
+    quote_check: found
+    title: 董事會重要決議
+    url: https://www.mitac.com/zh-TW/corporate_governance/index/Resolutions_by_BOD
+  tw.3706#e3:
+    locator: 第7頁，2026年第一季事業體營收比重（合併）
+    published_date: '2026-05-28'
+    publisher: 神達控股股份有限公司
+    quote_check: found
+    title: 神達控股股份有限公司線上法人說明會
+    url: https://www.mitac.com/upload/media/Investors/IR_information/2026/20260528-MHC_IR_C.pdf
+  tw.3706#e4:
+    locator: 神雲科技，雲端服務供應商段落
+    published_date: null
+    publisher: 神達控股股份有限公司
+    quote_check: found
+    title: 雲端運算與人工智慧
+    url: https://www.mitac.com/zh-TW/Cloud_and_IPC/index
+  tw.3706#e5:
+    locator: 展覽五大亮點
+    published_date: '2026-06-03'
+    publisher: 神達控股股份有限公司
+    quote_check: found
+    title: COMPUTEX 2026：神雲科技引領多元化 AI 解決方案
+    url: https://www.mitac.com/zh-TW/news_room/detail/COMPUTEX_2026
+  tw.3706#e7:
+    locator: 首段
+    published_date: '2024-10-01'
+    publisher: 神達控股股份有限公司
+    quote_check: found
+    title: 神雲科技實現MiTAC品牌整合 伺服器事業奮力躍進
+    url: https://www.mitac.com/zh-TW/news_room/detail/brand_integration
+  tw.3706#e8:
+    locator: 首段，品牌整合生效日期
+    published_date: '2024-10-01'
+    publisher: 神達控股股份有限公司
+    quote_check: found
+    title: 神雲科技實現MiTAC品牌整合 伺服器事業奮力躍進
+    url: https://www.mitac.com/zh-TW/news_room/detail/brand_integration
+  tw.3706#e9:
+    locator: 策略合作段落
+    published_date: '2026-03-17'
+    publisher: 神達控股股份有限公司
+    quote_check: found
+    title: 神雲科技於 GTC 2026 展示一站式解決方案與彈性NVIDIA MGX
+    url: https://www.mitac.com/zh-TW/news_room/detail/GTC2026

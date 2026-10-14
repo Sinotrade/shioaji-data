@@ -8,12 +8,582 @@ industry:
   l0_code: '24'
   l0_name: 半導體業
   l0_name_en: Semiconductor
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.semi
+  l2_name: 半導體
+  l2_name_en: Semiconductors
+  l3: semi.test_interface
+  l3_name: 測試介面（探針卡、測試座）
+  l3_name_en: Test Interfaces (Probe Cards, Sockets)
+chain: chain.semiconductor
+primary_chain_position: midstream
+summary_short: 主要靠晶圓探針卡及半導體測試設備銷售賺取營收。
+summary_long: 旺矽主要銷售晶圓探針卡與半導體測試設備；2025年營收比重分別為72.22%與26.11%。探針卡涵蓋懸臂式、垂直式及MEMS，設備包括光電晶圓與晶粒點測、分選、矽光子晶圓測試及溫度循環測試。2025年法說會客戶頁列有TSMC、NVIDIA、AMD、MediaTek及Broadcom。公司與Lightium及AxiomaticAI合作開發光子元件自動化測試方案。2025年完成ATV收購，2026年完成Focus Microwaves收購，並公告向聯城工業購入湖口土地與廠房。
+segments:
+- evidence_ids:
+  - e1
+  id: probe_card
+  name: 晶圓探針卡
+  period: '2025'
+  revenue_share_pct: 72.22
+- evidence_ids:
+  - e1
+  id: equipment
+  name: 半導體設備
+  period: '2025'
+  revenue_share_pct: 26.11
+- evidence_ids:
+  - e1
+  id: other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 1.67
+main_theme: theme.cpo
+themes:
+- stage: packaging
+  theme: theme.cpo
+  tier: midstream
+- stage: equipment_materials
+  theme: theme.hbm
+  tier: upstream
+relations:
+  customers:
+  - as_of: 2025-05
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 探針卡客戶
+    details:
+    - 探針卡客戶
+    edge: e0d9e9a7db311
+    evidence_level: primary
+    id: tw.2330
+    name: 台積電
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2011-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: IC探針卡；歷史供應關係
+    details:
+    - IC探針卡；歷史供應關係
+    edge: e02582796d96e
+    evidence_level: primary
+    id: tw.2449
+    name: 京元電子
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2025-05
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 探針卡客戶
+    details:
+    - 探針卡客戶
+    edge: e30fbb08750b4
+    evidence_level: primary
+    id: tw.2454
+    name: 聯發科
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2025-05
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 探針卡客戶
+    details:
+    - 探針卡客戶
+    edge: e67f7b69a693b
+    evidence_level: primary
+    id: us.AMD
+    name: AMD
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2025-05
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 探針卡客戶
+    details:
+    - 探針卡客戶
+    edge: e7fc2aae6a246
+    evidence_level: primary
+    id: us.AVGO
+    name: Broadcom
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2025-05
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 探針卡客戶
+    details:
+    - 探針卡客戶
+    edge: e578da826ec1a
+    evidence_level: primary
+    id: us.NVDA
+    name: NVIDIA
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  partners:
+  - as_of: '2025-08-05'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 共同開發IAITS光子元件測試方案
+    details:
+    - 共同開發IAITS光子元件測試方案
+    edge: e0da17d0da54f
+    evidence_level: primary
+    id: org.axiomatic-ai
+    name: Axiomatic_AI Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-08-05'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 共同開發IAITS光子元件測試方案
+    details:
+    - 共同開發IAITS光子元件測試方案
+    edge: e63a98d6629ce
+    evidence_level: primary
+    id: org.lightium
+    name: Lightium AG
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%股權的德國子公司
+    details:
+    - 直接持有100%股權的德國子公司
+    edge: e785a557961a8
+    evidence_level: primary
+    id: org.atv-systems
+    name: ATV Systems GmbH
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過MPI AMERICA間接持有的子公司
+    details:
+    - 透過MPI AMERICA間接持有的子公司
+    edge: ef60a540cd5a7
+    evidence_level: primary
+    id: org.celadon-systems
+    name: Celadon Systems, Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%股權的加拿大子公司
+    details:
+    - 直接持有100%股權的加拿大子公司
+    edge: e0b0cbdcc7dbe
+    evidence_level: primary
+    id: org.focus-microwaves
+    name: Focus Microwaves Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 高頻晶圓量測探針子公司
+    details:
+    - 高頻晶圓量測探針子公司
+    edge: ee905017315bc
+    evidence_level: primary
+    id: org.jun-yang-electronics
+    name: 均揚電子股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%股權的子公司
+    details:
+    - 直接持有100%股權的子公司
+    edge: eea7d48b29301
+    evidence_level: primary
+    id: org.megtas
+    name: MEGTAS CO.,LTD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過MMI HOLDING間接持有的子公司
+    details:
+    - 透過MMI HOLDING間接持有的子公司
+    edge: ea764dcd32cd4
+    evidence_level: primary
+    id: org.mpi-suzhou
+    name: 旺矽科技(蘇州)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: '2026-03-09'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 自地委建廠房工程服務
+    details:
+    - 自地委建廠房工程服務
+    - 湖口廠機電工程
+    edge: eeb7628d7b2ba
+    evidence_level: primary
+    id: tw.6903
+    name: 巨漢
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 2
+  - as_of: '2025-05-20'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 自地委建廠房工程服務
+    details:
+    - 自地委建廠房工程服務
+    edge: e2e78fceb6570
+    evidence_level: primary
+    id: org.weishun-construction
+    name: 暐順營造股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 14,000,000歐元（折合新台幣488,910千元）
+    as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 收購ATV全部股權
+    details:
+    - 收購ATV全部股權
+    edge: e9c0a913dfefc
+    event_date: '2025-10-08'
+    events:
+    - amount: 14,000,000歐元（折合新台幣488,910千元）
+      detail: 收購ATV全部股權
+      event_date: '2025-10-08'
+    evidence_level: primary
+    id: org.atv-systems
+    name: ATV Systems GmbH
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 26,087,417.61美元及984,277.87加幣（共折合新台幣848,918千元）
+    as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 收購Focus全部股權
+    details:
+    - 收購Focus全部股權
+    edge: e46329ea7ffdb
+    event_date: '2025-11-17'
+    events:
+    - amount: 26,087,417.61美元及984,277.87加幣（共折合新台幣848,918千元）
+      detail: 收購Focus全部股權
+      event_date: '2025-11-17'
+    evidence_level: primary
+    id: org.focus-microwaves
+    name: Focus Microwaves Inc.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣2,000,000,000元
+    as_of: '2026-04-08'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 購入新竹湖口土地及廠房
+    details:
+    - 購入新竹湖口土地及廠房
+    edge: e168fe2a6b219
+    event_date: '2026-04-08'
+    events:
+    - amount: 新台幣2,000,000,000元
+      detail: 購入新竹湖口土地及廠房
+      event_date: '2026-04-08'
+    evidence_level: primary
+    id: org.lien-cheng-industrial
+    name: 聯城工業股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣18,256千元；每股8,300韓元
+    as_of: '2025-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 增購MEGTAS剩餘20%股權
+    details:
+    - 增購MEGTAS剩餘20%股權
+    edge: e3f2db8bcff0d
+    event_date: '2025-06-30'
+    events:
+    - amount: 新台幣18,256千元；每股8,300韓元
+      detail: 增購MEGTAS剩餘20%股權
+      event_date: '2025-06-30'
+    evidence_level: primary
+    id: org.megtas
+    name: MEGTAS CO.,LTD.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2024-09-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 機器設備及廠務工程採購
+    details:
+    - 機器設備及廠務工程採購
+    edge: eb63105451aca
+    event_date: '2024-09-23'
+    events:
+    - amount: null
+      detail: 機器設備及廠務工程採購
+      event_date: '2024-09-23'
+    evidence_level: primary
+    id: org.ming-feng-engineering-consultant
+    name: 鳴豐工程顧問股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2024-09-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 機器設備及廠務工程採購
+    details:
+    - 機器設備及廠務工程採購
+    edge: eb01708998d17
+    event_date: '2024-09-23'
+    events:
+    - amount: null
+      detail: 機器設備及廠務工程採購
+      event_date: '2024-09-23'
+    evidence_level: primary
+    id: org.roku-roku-smart-technology
+    name: ROKU-ROKU SMART TECHNOLOGY CO.,LTD.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- PCB、探針與套管供應商：年報確認原料類別，但未具名。
+- 高層數PCB委外製造商：產品頁未揭露公司名稱。
+- 2025年度匿名o客戶：年報揭露占銷貨15.31%，無法對應任何具名客戶。
+- 2025年3月17日湖口135地號土地交易之未具名自然人賣方。
+- 2024年9月設備及廠務工程採購公告中，以「等」概括的其他交易相對人。
 website: www.mpi.com.tw
 tax_id: '89647050'
 incorporated: '1995-07-25'
 listed: '2003-01-06'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-14'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6223#e1:
+    locator: 紙本第59頁／PDF第63頁，營業比重表
+    published_date: '2026-05-29'
+    publisher: 旺矽科技股份有限公司
+    quote_check: found
+    title: 旺矽科技股份有限公司114年度年報
+    url: https://www.mpi.com.tw/wp-content/uploads/2026/05/04_%E6%97%BA%E7%9F%BD1150617%E8%82%A1%E6%9D%B1%E6%9C%83-114%E5%B9%B4%E5%A0%B1.pdf
+  tw.6223#e10:
+    locator: 新聞稿首段及合作分工
+    published_date: '2025-08-05'
+    publisher: 旺矽科技股份有限公司
+    quote_check: found
+    title: Lightium、旺矽科技與Axiomatic_AI宣佈建立策略聯盟
+    url: https://www.mpi.com.tw/news/lightium-mpi-corporation-and-axiomatic_ai-announce-strategic-partnership/
+  tw.6223#e11:
+    locator: 紙本第14頁／PDF第16頁子公司表註4；附註六（廿三）取得ATV
+    published_date: '2026-08-12'
+    publisher: 旺矽科技股份有限公司
+    quote_check: found
+    title: 旺矽科技股份有限公司及其子公司115年第二季合併財務報告
+    url: https://www.mpi.com.tw/wp-content/uploads/2026/08/%E6%97%BA%E7%9F%BD115.06%E5%90%88%E4%BD%B5%E8%B2%A1%E7%B0%BDIFRS%E4%B8%8A%E5%82%B3%E6%9C%AC.pdf
+  tw.6223#e12:
+    locator: 紙本第14頁／PDF第16頁子公司表註5；附註六（廿三）取得Focus
+    published_date: '2026-08-12'
+    publisher: 旺矽科技股份有限公司
+    quote_check: found
+    title: 旺矽科技股份有限公司及其子公司115年第二季合併財務報告
+    url: https://www.mpi.com.tw/wp-content/uploads/2026/08/%E6%97%BA%E7%9F%BD115.06%E5%90%88%E4%BD%B5%E8%B2%A1%E7%B0%BDIFRS%E4%B8%8A%E5%82%B3%E6%9C%AC.pdf
+  tw.6223#e13:
+    locator: 紙本第13至14頁／PDF第15至16頁，附註四（三）2子公司表；逐列核對投資公司、子公司、115.06.30持股與業務性質
+    published_date: '2026-08-12'
+    publisher: 旺矽科技股份有限公司
+    quote_check: found
+    title: 旺矽科技股份有限公司及其子公司115年第二季合併財務報告
+    url: https://www.mpi.com.tw/wp-content/uploads/2026/08/%E6%97%BA%E7%9F%BD115.06%E5%90%88%E4%BD%B5%E8%B2%A1%E7%B0%BDIFRS%E4%B8%8A%E5%82%B3%E6%9C%AC.pdf
+  tw.6223#e14:
+    locator: 紙本第14頁／PDF第16頁，子公司表註1
+    published_date: '2026-08-12'
+    publisher: 旺矽科技股份有限公司
+    quote_check: found
+    title: 旺矽科技股份有限公司及其子公司115年第二季合併財務報告
+    url: https://www.mpi.com.tw/wp-content/uploads/2026/08/%E6%97%BA%E7%9F%BD115.06%E5%90%88%E4%BD%B5%E8%B2%A1%E7%B0%BDIFRS%E4%B8%8A%E5%82%B3%E6%9C%AC.pdf
+  tw.6223#e15:
+    locator: 新聞稿首段，收購名稱及基準日
+    published_date: '2025-10-08'
+    publisher: 旺矽科技股份有限公司
+    quote_check: found
+    title: 旺矽科技斥資歐元1400萬元 收購德國ATV拓展歐洲市場
+    url: https://www.mpi.com.tw/news/mpi-technology-approves-overseas-acquisition-to-acquire-100-stake-in-german-semiconductor-automation-measurement-systems-integrator-atv-eyeing-eu-market-expansion/
+  tw.6223#e16:
+    locator: 新聞稿首段；此為初始公告，最終對價另採第二季財報
+    published_date: '2025-11-17'
+    publisher: 旺矽科技股份有限公司
+    quote_check: found
+    title: 旺矽科技收購Focus Microwaves
+    url: https://www.mpi.com.tw/news/mpi-corporation-acquires-focus-microwaves-strengthening-leadership-in-rf-and-millimeter-wave-test-solutions/
+  tw.6223#e17:
+    locator: 重大訊息原文第1、5、6項；未使用頁面AI摘要
+    published_date: '2026-04-08'
+    publisher: 鉅亨網
+    quote_check: found
+    title: 旺矽：公告本公司取得土地與廠房
+    url: https://news.cnyes.com/news/id/6411205
+  tw.6223#e18:
+    locator: 記者鍾榮峰報導，首段
+    published_date: '2026-04-08'
+    publisher: 中央通訊社
+    quote_check: found
+    title: 旺矽投資20億擴產 首季營收創新高
+    url: https://www.cna.com.tw/news/afe/202604080366.aspx
+  tw.6223#e19:
+    locator: 公開資訊觀測站重大訊息原文第1至4項
+    published_date: '2024-09-23'
+    publisher: MoneyDJ理財網
+    quote_check: found
+    title: 旺矽取得機器設備及廠務工程一批，計約8.04億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=78bb07dd-f83d-4125-8c26-555e63d76989
+  tw.6223#e2:
+    locator: PDF第4頁下半部，Advanced Wafer Sort Test Solutions產品圖
+    published_date: null
+    publisher: 旺矽科技股份有限公司
+    quote_check: found
+    title: MPI Goldman Sachs TechNET Taiwan 2025法說會簡報
+    url: https://www.mpi.com.tw/wp-content/uploads/2025/05/MPI_2025_May19-Goldman-Sachs-TechNet-Taiwan-Corp-Day-2025_2pages_CH.pdf
+  tw.6223#e20:
+    locator: 重大訊息原文第2至4項；事實發生日2024-07-04
+    published_date: '2024-07-05'
+    publisher: MoneyDJ理財網
+    quote_check: found
+    title: 旺矽自地委建廠房工程案，契約總金額約13.95億元（補充）
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=7d96c0d4-432d-48ee-a2bb-0e23552fb363
+  tw.6223#e21:
+    locator: 重大訊息原文第2至4項；事實發生日2025-05-20
+    published_date: '2025-05-21'
+    publisher: MoneyDJ理財網
+    quote_check: found
+    title: 旺矽自地委建廠房追加二期工程案，契約總金額約6.23億元（補充）
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=a4ecf55e-e6ef-47db-aff4-2771a97d989d
+  tw.6223#e22:
+    locator: 紙本第65至66頁產業上下游關係；第74頁主要原料供應狀況
+    published_date: '2026-05-29'
+    publisher: 旺矽科技股份有限公司
+    quote_check: found
+    title: 旺矽科技股份有限公司114年度年報
+    url: https://www.mpi.com.tw/wp-content/uploads/2026/05/04_%E6%97%BA%E7%9F%BD1150617%E8%82%A1%E6%9D%B1%E6%9C%83-114%E5%B9%B4%E5%A0%B1.pdf
+  tw.6223#e24:
+    locator: 記者王怡茹報導，土地廠房購入段落
+    published_date: '2025-03-18'
+    publisher: MoneyDJ理財網
+    quote_check: found
+    title: 旺矽3月營收估回升，Q1拚同期高
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=98850d52-c650-43ee-8110-f055d7b3e76e
+  tw.6223#e25:
+    locator: 土地建物表，2025-03-17交易列
+    published_date: null
+    publisher: 富聯網
+    quote_check: found
+    title: 旺矽6223土地資產異動
+    url: https://ww2.money-link.com.tw/TWStock/StockBasic.aspx?SymId=6223&TWMId=Basic_inv02
+  tw.6223#e3:
+    locator: MPI Photonics Automation Systems Overview
+    published_date: null
+    publisher: 旺矽科技股份有限公司
+    quote_check: found
+    title: MPI Photonics Automation產品及解決方案
+    url: https://www.mpi.com.tw/pa/products/
+  tw.6223#e4:
+    locator: MPI Solutions首段
+    published_date: null
+    publisher: 旺矽科技股份有限公司
+    quote_check: found
+    title: Silicon Photonics On-Wafer Test
+    url: https://www.mpi.com.tw/ast/applications/silicon-photonics-on-wafer-test/
+  tw.6223#e5:
+    locator: 溫度循環測試設備再進化
+    published_date: null
+    publisher: 旺矽科技股份有限公司
+    quote_check: found
+    title: MPI Thermal Test溫度循環測試設備
+    url: https://www.mpi.com.tw/thermal-test/
+  tw.6223#e6:
+    locator: PCB技術
+    published_date: null
+    publisher: 旺矽科技股份有限公司
+    quote_check: found
+    title: MPI Probe Card探針卡技術
+    url: https://www.mpi.com.tw/probecard/
+  tw.6223#e7:
+    locator: PDF第10頁下半部，MPI Probe Card的Our Customer頁；已目視核對TSMC、NVIDIA、AMD、MediaTek及Broadcom標誌
+    published_date: null
+    publisher: 旺矽科技股份有限公司
+    quote_check: found
+    title: MPI Goldman Sachs TechNET Taiwan 2025法說會簡報
+    url: https://www.mpi.com.tw/wp-content/uploads/2025/05/MPI_2025_May19-Goldman-Sachs-TechNet-Taiwan-Corp-Day-2025_2pages_CH.pdf
+  tw.6223#e8:
+    locator: 記者鍾榮峰報導，首段公司發言人說明
+    published_date: '2025-05-22'
+    publisher: 中央通訊社
+    quote_check: found
+    title: 旺矽：續擴探針卡明年攻2奈米 新台幣升值恐匯損
+    url: https://www.cna.com.tw/news/afe/202505220178.aspx
+  tw.6223#e9:
+    locator: 公司簡介第二段，產品與技術範圍
+    published_date: null
+    publisher: 旺矽科技股份有限公司
+    quote_check: found
+    title: 關於旺矽（MPI Corporation）
+    url: https://www.mpi.com.tw/about/

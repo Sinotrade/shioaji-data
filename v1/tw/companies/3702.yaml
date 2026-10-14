@@ -8,12 +8,619 @@ industry:
   l0_code: '29'
   l0_name: 電子通路業
   l0_name_en: Electronic Products Distribution
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.semi
+  l2_name: 半導體
+  l2_name_en: Semiconductors
+  l3: semi.distribution
+  l3_name: IC 通路
+  l3_name_en: IC Distribution
+chain: chain.semiconductor
+primary_chain_position: downstream
+summary_short: 透過旗下通路事業代理經銷半導體零組件，並提供採購與設計整合服務。
+summary_long: 大聯大透過旗下通路事業代理經銷半導體零組件，並提供採購與設計整合服務。2025年營業比重以核心元件37.45%及記憶元件27.68%為主，其餘包括類比及混合訊號、離散及邏輯、光學與被動及連接器元件。官方代理頁列有Infineon、NXP、Intel、Alliance Memory、旺宏與群聯，承接業務的集團成員各有不同。集團架構調整後由世平與詮鼎構成通路雙核心，友尚與品佳轉為詮鼎旗下公司。近三年公告包括投資零壹、公開收購華經、參與鑫聯大增資及內部物流股權整合；另有電動車與機器人應用方案。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_core
+  name: 核心元件
+  period: '2025'
+  revenue_share_pct: 37.45
+- evidence_ids:
+  - e2
+  id: seg_analog
+  name: 類比及混合訊號元件
+  period: '2025'
+  revenue_share_pct: 8.43
+- evidence_ids:
+  - e2
+  id: seg_discrete
+  name: 離散及邏輯元件
+  period: '2025'
+  revenue_share_pct: 8.72
+- evidence_ids:
+  - e2
+  id: seg_memory
+  name: 記憶元件
+  period: '2025'
+  revenue_share_pct: 27.68
+- evidence_ids:
+  - e2
+  id: seg_optical
+  name: 光學元件
+  period: '2025'
+  revenue_share_pct: 7.74
+- evidence_ids:
+  - e2
+  id: seg_passive
+  name: 被動、電磁及連接器元件
+  period: '2025'
+  revenue_share_pct: 7.69
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 2.29
+main_theme: theme.ev
+themes:
+- stage: parts
+  theme: theme.ev
+  tier: midstream
+- stage: control
+  theme: theme.robotics
+  tier: midstream
+relations:
+  subsidiaries:
+  - as_of: '2026-03-10'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的通路子公司
+    details:
+    - 直接持股100%的通路子公司
+    edge: e058faec989a7
+    evidence_level: primary
+    id: org.ait
+    name: 詮鼎科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-01-21'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司
+    details:
+    - 全資子公司
+    edge: eb1c72daae2dd
+    evidence_level: primary
+    id: org.laas
+    name: 共創智能股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-10'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 經詮鼎持有的間接子公司
+    details:
+    - 經詮鼎持有的間接子公司
+    edge: ebe1338677613
+    evidence_level: primary
+    id: org.sac
+    name: 品佳股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-01-21'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資投資子公司
+    details:
+    - 全資投資子公司
+    edge: e8527e596b8f0
+    evidence_level: primary
+    id: org.shiyou_investment
+    name: 世友投資股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2026-10
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 半導體零組件通路主要子公司
+    details:
+    - 半導體零組件通路主要子公司
+    edge: e2e28e2722b21
+    evidence_level: primary
+    id: org.wpi
+    name: 世平興業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-10'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 經詮鼎持有的間接子公司
+    details:
+    - 經詮鼎持有的間接子公司
+    edge: e9b6662304cef
+    evidence_level: primary
+    id: org.yosun
+    name: 友尚股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-04'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 控股子公司
+    details:
+    - 控股子公司
+    edge: e3353edee2420
+    evidence_level: primary
+    id: tw.3709
+    name: 鑫聯大投控
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: 2026-10
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 由品佳承接的Infineon半導體代理產線
+    details:
+    - 由品佳承接的Infineon半導體代理產線
+    edge: ea757ee85161c
+    evidence_level: primary
+    id: eu.IFX
+    name: Infineon Technologies AG
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2026-10
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: WPG Americas及WPG EMEA代理的記憶體
+    details:
+    - WPG Americas及WPG EMEA代理的記憶體
+    edge: ea9a7d99159a0
+    evidence_level: primary
+    id: org.alliance_memory
+    name: Alliance Memory, Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2026-10
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 詮鼎集團代理Flash與NOR Flash
+    details:
+    - 詮鼎集團代理Flash與NOR Flash
+    edge: e6ee66f580608
+    evidence_level: primary
+    id: tw.2337
+    name: 旺宏
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2026-10
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 股務代理服務
+    details:
+    - 股務代理服務
+    edge: e781a73183dd7
+    evidence_level: primary
+    id: tw.6005
+    name: 群益證
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2026-10
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 由友尚承接的Phison代理產線
+    details:
+    - 由友尚承接的Phison代理產線
+    edge: e2ceb69547277
+    evidence_level: primary
+    id: tw.8299
+    name: 群聯
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2026-10
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: Intel處理器等半導體代理產線
+    details:
+    - Intel處理器等半導體代理產線
+    edge: ed7ae9d86478a
+    evidence_level: primary
+    id: us.INTC
+    name: Intel
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2026-10
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 由世平集團及WPG Korea承接的NXP代理產線
+    details:
+    - 由世平集團及WPG Korea承接的NXP代理產線
+    edge: efd8e2f53fd41
+    evidence_level: primary
+    id: us.NXPI
+    name: 恩智浦半導體股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 新台幣21,312,991仟元
+    as_of: '2026-03-10'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 以友尚及品佳股份交換詮鼎新股
+    details:
+    - 以友尚及品佳股份交換詮鼎新股
+    edge: e5f5067c5da23
+    event_date: '2025-11-11'
+    events:
+    - amount: 新台幣21,312,991仟元
+      detail: 以友尚及品佳股份交換詮鼎新股
+      event_date: '2025-11-11'
+    evidence_level: primary
+    id: org.ait
+    name: 詮鼎科技股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣1,057,262仟元
+    as_of: '2026-01-21'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 物流轉投資業務分割對價取得共創智能股份
+    details:
+    - 物流轉投資業務分割對價取得共創智能股份
+    edge: e4d60dcd91b12
+    event_date: '2025-10-28'
+    events:
+    - amount: 新台幣1,057,262仟元
+      detail: 物流轉投資業務分割對價取得共創智能股份
+      event_date: '2025-10-28'
+    evidence_level: primary
+    id: org.laas
+    name: 共創智能股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 每股現金新臺幣25元
+    as_of: '2025-04-29'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 公開收購華經普通股
+    details:
+    - 公開收購華經普通股
+    edge: e11127ac62065
+    event_date: '2025-02-28'
+    events:
+    - amount: 每股現金新臺幣25元
+      detail: 公開收購華經普通股
+      event_date: '2025-02-28'
+    evidence_level: primary
+    id: tw.2468
+    name: 華經
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 不高於新台幣1,080,000,000元
+    as_of: '2024-07-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 董事會決議認購零壹私募普通股
+    details:
+    - 董事會決議認購零壹私募普通股
+    edge: eb9794a3a8d8d
+    event_date: '2024-07-30'
+    events:
+    - amount: 不高於新台幣1,080,000,000元
+      detail: 董事會決議認購零壹私募普通股
+      event_date: '2024-07-30'
+    evidence_level: primary
+    id: tw.3029
+    name: 零壹
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣282,528仟元；另授權新臺幣150,000仟元
+    as_of: '2026-06-04'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 2025年鑫聯大現金增資認購決議
+    details:
+    - 2025年鑫聯大現金增資認購決議
+    - 2026年鑫聯大現金增資認購決議
+    edge: edf757dc1a84e
+    event_date: '2025-02-28'
+    events:
+    - amount: 新台幣651,477仟元；另授權新臺幣170,000仟元
+      detail: 2026年鑫聯大現金增資認購決議
+      event_date: '2026-06-04'
+    - amount: 新台幣282,528仟元；另授權新臺幣150,000仟元
+      detail: 2025年鑫聯大現金增資認購決議
+      event_date: '2025-02-28'
+    evidence_level: primary
+    id: tw.3709
+    name: 鑫聯大投控
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 工業電腦：候選為客戶應用類別，沒有具名客戶可供確認。
+- 申請交換取得文曄普通股的交換公司債債權人：公告未具名。
+- 先進車系統股份有限公司投資：官網揭露投資資訊，但未確認事件日期是否落在2024…
 website: www.WPGholdings.com
 tax_id: '27928328'
 incorporated: '2005-11-09'
 listed: '2005-11-09'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-14'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3702#e1:
+    locator: 控股簡介首段及集團架構說明
+    published_date: null
+    publisher: 大聯大控股
+    quote_check: found
+    title: 控股簡介
+    url: https://www.wpgholdings.com/about/info/zhtw/about-group
+  tw.3702#e10:
+    locator: 押注關節與靈巧手，大聯大補齊機器人執行端能力
+    published_date: '2026-10-09'
+    publisher: 大聯大控股
+    quote_check: found
+    title: 大聯大人形機器人佈局曝光，行業商機或不在整機？
+    url: https://www.wpgholdings.com/news/detail/zhtw/operation/26059
+  tw.3702#e11:
+    locator: 提升電動汽車關鍵技術的方案開發
+    published_date: null
+    publisher: 大聯大控股
+    quote_check: found
+    title: 潔淨科技策略與發展
+    url: https://www.wpgholdings.com/esg_area/info/zhtw/2718
+  tw.3702#e14:
+    locator: 第3項，交易數量、價格及總金額
+    published_date: '2024-07-30'
+    publisher: 大聯大控股
+    quote_check: found
+    title: 公告本公司董事會決議認購零壹科技股份有限公司私募普通股
+    url: https://www.wpgholdings.com/investors_msg/detail/zhtw/resolved/2808
+  tw.3702#e15:
+    locator: 第7項第2款，公開收購對價
+    published_date: '2025-02-28'
+    publisher: 大聯大控股
+    quote_check: found
+    title: 本公司董事會決議通過公開收購華經公司普通股
+    url: https://www.wpgholdings.com/investors_msg/detail/zhtw/resolved/2879
+  tw.3702#e16:
+    locator: 第5項，發生緣由
+    published_date: '2025-04-29'
+    publisher: 大聯大控股
+    quote_check: found
+    title: 本公司依公司法369條之8第一項規定通知已取得華經資訊企業股份有限公司已發行股份總數三分之一以上
+    url: https://www.wpgholdings.com/investors_msg/detail/zhtw/other/2894
+  tw.3702#e17:
+    locator: 第3項，交易數量、價格及總金額
+    published_date: '2025-02-28'
+    publisher: 大聯大控股
+    quote_check: found
+    title: 本公司董事會決議參與鑫聯大投資控股(股)公司現金增資認購
+    url: https://www.wpgholdings.com/investors_msg/detail/zhtw/resolved/2878
+  tw.3702#e18:
+    locator: 第7項，架構調整及双核心說明
+    published_date: '2025-11-11'
+    publisher: 大聯大控股
+    quote_check: found
+    title: 公告本公司及子公司董事會通過集團架構調整案
+    url: https://www.wpgholdings.com/investors_msg/detail/zhtw/resolved/2967
+  tw.3702#e19:
+    locator: 第5項，交易總金額
+    published_date: '2026-03-10'
+    publisher: 大聯大控股
+    quote_check: found
+    title: 公告本公司取得100%轉投資子公司詮鼎科技(股)公司之普通股(補充114/11/11公告)
+    url: https://www.wpgholdings.com/investors_msg/detail/zhtw/resolved/3009
+  tw.3702#e2:
+    locator: 印刷頁74／PDF頁78，營業比重（114年度）
+    published_date: '2026-06-11'
+    publisher: 大聯大控股股份有限公司
+    quote_check: found
+    title: 大聯大控股股份有限公司2025年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52368/2026/RNS/52368_rns_2026-06-11_dc0bd29a-a98a-48bd-b7af-1c12471287cd.pdf
+  tw.3702#e20:
+    locator: 第6項，交易相對人及其與公司之關係
+    published_date: '2026-03-10'
+    publisher: 大聯大控股
+    quote_check: found
+    title: 公告本公司取得100%轉投資子公司詮鼎科技(股)公司之普通股(補充114/11/11公告)
+    url: https://www.wpgholdings.com/investors_msg/detail/zhtw/resolved/3009
+  tw.3702#e21:
+    locator: 第5項，交易總金額
+    published_date: '2026-01-21'
+    publisher: 大聯大控股
+    quote_check: found
+    title: 公告本公司取得100%轉投資子公司共創智能(股)公司普通股(補充114/10/28公告)
+    url: https://www.wpgholdings.com/investors_msg/detail/zhtw/other/2995
+  tw.3702#e22:
+    locator: 第7項，選定關係人為交易對象之原因
+    published_date: '2026-01-21'
+    publisher: 大聯大控股
+    quote_check: found
+    title: 公告本公司取得100%轉投資子公司共創智能(股)公司普通股(補充114/10/28公告)
+    url: https://www.wpgholdings.com/investors_msg/detail/zhtw/other/2995
+  tw.3702#e23:
+    locator: 第5項，交易數量、價格及總金額
+    published_date: '2026-06-04'
+    publisher: 大聯大控股
+    quote_check: found
+    title: 本公司董事會決議參與鑫聯大投資控股(股)公司現金增資認購
+    url: https://www.wpgholdings.com/investors_msg/detail/zhtw/resolved/3042
+  tw.3702#e24:
+    locator: 第6項，交易相對人及其與公司之關係
+    published_date: '2026-06-04'
+    publisher: 大聯大控股
+    quote_check: found
+    title: 本公司董事會決議參與鑫聯大投資控股(股)公司現金增資認購
+    url: https://www.wpgholdings.com/investors_msg/detail/zhtw/resolved/3042
+  tw.3702#e25:
+    locator: 第5項，交易數量與總金額
+    published_date: '2026-08-12'
+    publisher: 大聯大控股
+    quote_check: found
+    title: 本公司以發行無擔保交換公司債方式處分所持有之部分文曄科技(股)公司普通股股票(補充114/11/11公告)
+    url: https://www.wpgholdings.com/investors_msg/detail/zhtw/other/3084
+  tw.3702#e25a:
+    locator: 第10項，處分目的
+    published_date: '2026-08-12'
+    publisher: 大聯大控股
+    quote_check: found
+    title: 本公司以發行無擔保交換公司債方式處分所持有之部分文曄科技(股)公司普通股股票(補充114/11/11公告)
+    url: https://www.wpgholdings.com/investors_msg/detail/zhtw/other/3084
+  tw.3702#e26:
+    locator: 第7項，股份轉換原因
+    published_date: '2026-03-10'
+    publisher: 大聯大控股
+    quote_check: found
+    title: 公告本公司處分100%轉投資子公司友尚(股)公司之普通股(補充114/11/11公告)
+    url: https://www.wpgholdings.com/investors_msg/detail/zhtw/resolved/3007
+  tw.3702#e27:
+    locator: 第7項，股份轉換原因
+    published_date: '2026-03-10'
+    publisher: 大聯大控股
+    quote_check: found
+    title: 公告本公司處分100%轉投資子公司品佳(股)公司之普通股(補充114/11/11公告)
+    url: https://www.wpgholdings.com/investors_msg/detail/zhtw/resolved/3008
+  tw.3702#e3:
+    locator: 採購服務
+    published_date: null
+    publisher: 大聯大控股
+    quote_check: found
+    title: 加值服務
+    url: https://www.wpgholdings.com/about/info/zhtw/wpg-add-value
+  tw.3702#e3a:
+    locator: 整合解決方案與設計應用
+    published_date: null
+    publisher: 大聯大控股
+    quote_check: found
+    title: 加值服務
+    url: https://www.wpgholdings.com/about/info/zhtw/wpg-add-value
+  tw.3702#e4:
+    locator: 關於Infineon／製造廠商與授權經銷商
+    published_date: null
+    publisher: 大聯大控股
+    quote_check: found
+    title: 英飛淩科技：代理產線
+    url: https://www.wpgholdings.com/productline/detail/zhtw/Infineon
+  tw.3702#e4a:
+    locator: 產品類別
+    published_date: null
+    publisher: 大聯大控股
+    quote_check: found
+    title: 英飛淩科技：代理產線
+    url: https://www.wpgholdings.com/productline/detail/zhtw/Infineon
+  tw.3702#e4b:
+    locator: 產品類別
+    published_date: null
+    publisher: 大聯大控股
+    quote_check: found
+    title: 英飛淩科技：代理產線
+    url: https://www.wpgholdings.com/productline/detail/zhtw/Infineon
+  tw.3702#e5:
+    locator: 製造廠商與授權經銷商
+    published_date: null
+    publisher: 大聯大控股
+    quote_check: found
+    title: NXP：代理產線
+    url: https://www.wpgholdings.com/productline/detail/zhtw/NXP
+  tw.3702#e6:
+    locator: 製造廠商與授權經銷商
+    published_date: null
+    publisher: 大聯大控股
+    quote_check: found
+    title: 英特爾股份有限公司：代理產線
+    url: https://www.wpgholdings.com/productline/detail/zhtw/Intel
+  tw.3702#e6a:
+    locator: 產品類別
+    published_date: null
+    publisher: 大聯大控股
+    quote_check: found
+    title: 英特爾股份有限公司：代理產線
+    url: https://www.wpgholdings.com/productline/detail/zhtw/Intel
+  tw.3702#e6b:
+    locator: 產品類別
+    published_date: null
+    publisher: 大聯大控股
+    quote_check: found
+    title: 英特爾股份有限公司：代理產線
+    url: https://www.wpgholdings.com/productline/detail/zhtw/Intel
+  tw.3702#e7:
+    locator: 製造廠商與授權經銷商
+    published_date: null
+    publisher: 大聯大控股
+    quote_check: found
+    title: Alliance Memory, Inc.：代理產線
+    url: https://www.wpgholdings.com/productline/detail/zhtw/ALLIANCE%20MEMORY
+  tw.3702#e7a:
+    locator: 產品類別
+    published_date: null
+    publisher: 大聯大控股
+    quote_check: found
+    title: Alliance Memory, Inc.：代理產線
+    url: https://www.wpgholdings.com/productline/detail/zhtw/ALLIANCE%20MEMORY
+  tw.3702#e8:
+    locator: 製造廠商與授權經銷商
+    published_date: null
+    publisher: 大聯大控股
+    quote_check: found
+    title: Macronix：代理產線
+    url: https://www.wpgholdings.com/productline/detail/zhtw/Macronix
+  tw.3702#e8a:
+    locator: 產品類別
+    published_date: null
+    publisher: 大聯大控股
+    quote_check: found
+    title: Macronix：代理產線
+    url: https://www.wpgholdings.com/productline/detail/zhtw/Macronix
+  tw.3702#e9:
+    locator: 製造廠商與授權經銷商
+    published_date: null
+    publisher: 大聯大控股
+    quote_check: found
+    title: Phison：代理產線
+    url: https://www.wpgholdings.com/productline/detail/zhtw/Phison

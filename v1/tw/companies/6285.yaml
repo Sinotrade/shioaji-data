@@ -8,12 +8,501 @@ industry:
   l0_code: '27'
   l0_name: 通信網路業
   l0_name_en: Communications and Internet
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.network
+  l2_name: 通信網路
+  l2_name_en: Communications & Networking
+  l3: net.wireless
+  l3_name: 無線通訊與射頻
+  l3_name_en: Wireless & RF
+chain: chain.networking
+primary_chain_position: downstream
+summary_short: 設計、研發與製造無線通訊設備，產品涵蓋Wi-Fi、5G、衛星終端及交換器。
+summary_long: 啟碁以通訊產品設計、研發與製造為主要業務，2025年無線通訊產品占營收96.85%。產品包括Wi-Fi路由器與閘道器、5G開放式無線單元、低軌道衛星寬頻終端設備及資料中心交換器。其800G交換器採用Broadcom Trident 5-X12方案，並與聯發科進行網通及FWA生態系合作。Reuters報導啟碁向SpaceX供應零組件。2024年取得Resideo墨西哥製造事業，該廠持續生產Resideo家居舒適及安防產品；2025年決議增資越南不動產子公司，2026年越南製造子公司公告取得機器設備。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_wireless
+  name: 無線通訊產品
+  period: 2025年度
+  revenue_share_pct: 96.85
+- evidence_ids:
+  - e1
+  id: seg_other
+  name: 其它
+  period: 2025年度
+  revenue_share_pct: 3.15
+main_theme: theme.data_center
+themes:
+- stage: it
+  theme: theme.data_center
+  tier: midstream
+- stage: equipment
+  theme: theme.5g
+  tier: midstream
+- stage: equipment
+  theme: theme.leo_satellite
+  tier: midstream
+relations:
+  customers:
+  - as_of: '2026-06-09'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 衛星相關零組件供應
+    details:
+    - 衛星相關零組件供應
+    edge: ec26114a462b0
+    evidence_level: media
+    id: org.spacex
+    name: SpaceX
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-04-08'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 墨西哥製造事業代工家居舒適及居家安防產品
+    details:
+    - 墨西哥製造事業代工家居舒適及居家安防產品
+    edge: ef8e8515a24c0
+    evidence_level: primary
+    id: us.REZI
+    name: Resideo Technologies Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  partners:
+  - as_of: '2026-05-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 網通及固定無線接取FWA生態系合作
+    details:
+    - 網通及固定無線接取FWA生態系合作
+    edge: e90ea84cf5814
+    evidence_level: primary
+    id: tw.2454
+    name: 聯發科
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-01'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: NVIDIA AI Aerial平台與6G、AI-RAN技術合作
+    details:
+    - NVIDIA AI Aerial平台與6G、AI-RAN技術合作
+    edge: e76e75ef3e6e7
+    evidence_level: primary
+    id: us.NVDA
+    name: NVIDIA
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資控股子公司
+    details:
+    - 全資控股子公司
+    edge: e21ab3f7bfb7b
+    evidence_level: primary
+    id: org.neweb-holding
+    name: NeWeb Holding Corporation
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-05-07'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 越南直接持股100%子公司
+    details:
+    - 越南直接持股100%子公司
+    edge: e2e98b031d6ec
+    evidence_level: primary
+    id: org.neweb-property-vietnam
+    name: NeWeb Property Vietnam Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 越南全資通訊產品製造子公司
+    details:
+    - 越南全資通訊產品製造子公司
+    edge: e31bd82cc5280
+    evidence_level: primary
+    id: org.neweb-vietnam
+    name: NeWeb Vietnam Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 墨西哥全資子公司
+    details:
+    - 墨西哥全資子公司
+    edge: ead4c072380da
+    evidence_level: primary
+    id: org.w-neweb-mexico
+    name: W-Neweb Mexico, S. de R.L. de C.V.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 2025年第二季新設印度全資子公司
+    details:
+    - 2025年第二季新設印度全資子公司
+    edge: efb1d85862a0d
+    evidence_level: primary
+    id: org.wnc-neweb-india
+    name: WNC NeWeb India Private Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 2024年第一季新設美國全資子公司
+    details:
+    - 2024年第一季新設美國全資子公司
+    edge: e63ac78da03c0
+    evidence_level: primary
+    id: org.wnc-usa
+    name: WNC USA Corporation
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: '2025-02-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 800G交換器採用Trident 5-X12晶片方案
+    details:
+    - 800G交換器採用Trident 5-X12晶片方案
+    edge: e1f4c9ad2c6ff
+    evidence_level: primary
+    id: us.AVGO
+    name: Broadcom
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 約越南盾4,026.32億元(約新台幣5.23億)
+    as_of: '2025-01-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 越南子公司取得土地使用權
+    details:
+    - 越南子公司取得土地使用權
+    edge: e3461b980086d
+    event_date: '2025-01-14'
+    events:
+    - amount: 約越南盾4,026.32億元(約新台幣5.23億)
+      detail: 越南子公司取得土地使用權
+      event_date: '2025-01-14'
+    evidence_level: primary
+    id: org.kim-bang-industrial-zone
+    name: KIM BANG INDUSTRIAL ZONE COMPANY LIMITED
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 美金2,700萬元
+    as_of: '2025-05-07'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 董事會決議增資越南子公司
+    details:
+    - 董事會決議增資越南子公司
+    edge: e32b25d63d66b
+    event_date: '2025-05-07'
+    events:
+    - amount: 美金2,700萬元
+      detail: 董事會決議增資越南子公司
+      event_date: '2025-05-07'
+    evidence_level: primary
+    id: org.neweb-property-vietnam
+    name: NeWeb Property Vietnam Co., Ltd.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: 2025-09
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 2025年第三季對越南製造子公司現金增資
+    details:
+    - 2025年第三季對越南製造子公司現金增資
+    edge: e72bc36f27a16
+    event_date: null
+    events:
+    - amount: null
+      detail: 2025年第三季對越南製造子公司現金增資
+      event_date: null
+    evidence_level: primary
+    id: org.neweb-vietnam
+    name: NeWeb Vietnam Co., Ltd.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: USD 24,906,523
+    as_of: '2026-07-24'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 越南子公司取得機器設備
+    details:
+    - 越南子公司取得機器設備
+    edge: eb80c8664d77e
+    event_date: '2026-07-24'
+    events:
+    - amount: USD 24,906,523
+      detail: 越南子公司取得機器設備
+      event_date: '2026-07-24'
+    evidence_level: primary
+    id: org.panasonic-industrial-devices-sales-taiwan
+    name: Panasonic Industrial Devices Sales Taiwan Co., Ltd.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣214,424,566元及41,341,452元
+    as_of: '2025-03-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 緯穎智造承租台南廠房並取得使用權資產
+    details:
+    - 緯穎智造承租台南廠房並取得使用權資產
+    edge: e0b9938277fd3
+    event_date: '2025-03-28'
+    events:
+    - amount: 新台幣214,424,566元及41,341,452元
+      detail: 緯穎智造承租台南廠房並取得使用權資產
+      event_date: '2025-03-28'
+    evidence_level: media
+    id: tw.6669
+    name: 緯穎
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2024-04-08'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 取得Resideo墨西哥製造事業及華雷斯城工廠營運
+    details:
+    - 取得Resideo墨西哥製造事業及華雷斯城工廠營運
+    edge: ef2e302e841c4
+    event_date: '2024-04-08'
+    events:
+    - amount: null
+      detail: 取得Resideo墨西哥製造事業及華雷斯城工廠營運
+      event_date: '2024-04-08'
+    evidence_level: primary
+    id: us.REZI
+    name: Resideo Technologies Inc.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 年報以A公司代稱的主要客戶，未揭露名稱。
+- 年報未具名的主要供應商。
+- 儲存器供應商，年報揭露原料類別但未具名。
+- 公司簡介泛稱的網通設備品牌商、tier-1電信業者、車廠及車用電子產品公司。
+- 後量子密碼模組的策略夥伴，MWC 2026新聞稿未具名。
 website: www.wnc.com.tw
 tax_id: '97331723'
 incorporated: '1996-12-07'
 listed: '2003-09-22'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-14'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6285#e1:
+    locator: 印刷頁82／PDF第86頁，產品項目別之營業比重
+    published_date: null
+    publisher: 啓碁科技股份有限公司
+    quote_check: unreachable
+    title: 啓碁科技股份有限公司114年度年報
+    url: https://www.wnc.com.tw/uploads/files/shares/annual-reports/2025_WNC_Annual_Report_TC.pdf
+  tw.6285#e10:
+    locator: 'The Highway of the AI Era: 6G and Wi-Fi 8 Connectivity，FWA生態系段落'
+    published_date: '2026-05-28'
+    publisher: MediaTek Inc.
+    quote_check: found
+    title: MediaTek to Empower the Agentic AI Era with Edge-to-Cloud Tech at Computex 2026
+    url: https://www.mediatek.com/press-room/mediatek-to-empower-the-agentic-ai-era-with-edge-to-cloud-tech-at-computex-2026
+  tw.6285#e11:
+    locator: 加入NVIDIA AI Aerial打造AI-RAN生態系段落
+    published_date: '2026-03-01'
+    publisher: 啓碁科技股份有限公司
+    quote_check: found
+    title: 啓碁於MWC 2026首度展示與NVIDIA AI Aerial整合的O-RU與AI-RAN通訊解決方案
+    url: https://www.wnc.com.tw/news/mwc2026/detail
+  tw.6285#e12:
+    locator: 新聞稿首段
+    published_date: '2024-04-08'
+    publisher: 啓碁科技股份有限公司
+    quote_check: found
+    title: 啓碁科技擴大佈局墨西哥，強化全球製造能力
+    url: https://www.wnc.com.tw/news/news-2024-04-08/detail
+  tw.6285#e13:
+    locator: 執行長高健榮談後續生產安排段落
+    published_date: '2024-04-08'
+    publisher: 啓碁科技股份有限公司
+    quote_check: found
+    title: 啓碁科技擴大佈局墨西哥，強化全球製造能力
+    url: https://www.wnc.com.tw/news/news-2024-04-08/detail
+  tw.6285#e14:
+    locator: 印刷頁72／PDF第76頁，轉投資事業持股表
+    published_date: null
+    publisher: 啓碁科技股份有限公司
+    quote_check: unreachable
+    title: 啓碁科技股份有限公司114年度年報
+    url: https://www.wnc.com.tw/uploads/files/shares/annual-reports/2025_WNC_Annual_Report_TC.pdf
+  tw.6285#e15:
+    locator: 印刷頁12／PDF第14頁，列入合併財務報告之子公司
+    published_date: null
+    publisher: 啟碁科技股份有限公司
+    quote_check: unreachable
+    title: 啟碁科技股份有限公司及子公司114年度合併財務報告
+    url: https://www.wnc.com.tw/uploads/files/shares/financial/WNC_2025_Q4_Consolidated_tc.pdf
+  tw.6285#e16:
+    locator: 交易相對人及其與公司之關係
+    published_date: '2025-05-07'
+    publisher: 啓碁科技股份有限公司
+    quote_check: found
+    title: 董事會決議對啟碁越南子公司NeWeb Property Vietnam Co., Ltd.增資
+    url: https://www.wnc.com.tw/news/Announcement-2025-05-07/detail
+  tw.6285#e17:
+    locator: 交易總金額及交付或付款條件
+    published_date: '2025-05-07'
+    publisher: 啓碁科技股份有限公司
+    quote_check: found
+    title: 董事會決議對啟碁越南子公司NeWeb Property Vietnam Co., Ltd.增資
+    url: https://www.wnc.com.tw/news/Announcement-2025-05-07/detail
+  tw.6285#e18:
+    locator: 交易總金額及交易相對人；公告事實發生期間114/11/18至115/7/24
+    published_date: '2026-07-24'
+    publisher: 啓碁科技股份有限公司
+    quote_check: found
+    title: 代子公司NEWEB VIETNAM CO., LTD.公告取得機器設備
+    url: https://www.wnc.com.tw/news/Announcement-2026-07-24/detail
+  tw.6285#e19:
+    locator: 公告第1至4項
+    published_date: '2025-01-14'
+    publisher: MoneyDJ理財網（公開資訊觀測站重大訊息全文）
+    quote_check: found
+    title: 啟碁子公司NEWEB VIETNAM取得土地使用權，計約4026億越南盾
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=13c36ad8-c594-4b89-91b6-08853bacf1ab
+  tw.6285#e2:
+    locator: 公司簡介首段
+    published_date: null
+    publisher: 啓碁科技股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.wnc.com.tw/about/wnc
+  tw.6285#e20:
+    locator: 印刷頁12／PDF第14頁，子公司表及註四
+    published_date: null
+    publisher: 啟碁科技股份有限公司
+    quote_check: unreachable
+    title: 啟碁科技股份有限公司及子公司114年度合併財務報告
+    url: https://www.wnc.com.tw/uploads/files/shares/financial/WNC_2025_Q4_Consolidated_tc.pdf
+  tw.6285#e21:
+    locator: 印刷頁12／PDF第14頁，WNC USA Corporation子公司表及註一
+    published_date: null
+    publisher: 啟碁科技股份有限公司
+    quote_check: unreachable
+    title: 啟碁科技股份有限公司及子公司114年度合併財務報告
+    url: https://www.wnc.com.tw/uploads/files/shares/financial/WNC_2025_Q4_Consolidated_tc.pdf
+  tw.6285#e22:
+    locator: 印刷頁12／PDF第14頁，列入合併財務報告之子公司
+    published_date: null
+    publisher: 啟碁科技股份有限公司
+    quote_check: unreachable
+    title: 啟碁科技股份有限公司及子公司114年度合併財務報告
+    url: https://www.wnc.com.tw/uploads/files/shares/financial/WNC_2025_Q4_Consolidated_tc.pdf
+  tw.6285#e23:
+    locator: 印刷頁12／PDF第14頁，子公司附註註五
+    published_date: null
+    publisher: 啟碁科技股份有限公司
+    quote_check: unreachable
+    title: 啟碁科技股份有限公司及子公司114年度合併財務報告
+    url: https://www.wnc.com.tw/uploads/files/shares/financial/WNC_2025_Q4_Consolidated_tc.pdf
+  tw.6285#e3:
+    locator: AI驅動智慧家庭升級段落
+    published_date: '2026-03-01'
+    publisher: 啓碁科技股份有限公司
+    quote_check: found
+    title: 啓碁於MWC 2026首度展示與NVIDIA AI Aerial整合的O-RU與AI-RAN通訊解決方案
+    url: https://www.wnc.com.tw/news/mwc2026/detail
+  tw.6285#e4:
+    locator: 印刷頁83／PDF第87頁，目前之商品項目
+    published_date: null
+    publisher: 啓碁科技股份有限公司
+    quote_check: unreachable
+    title: 啓碁科技股份有限公司114年度年報
+    url: https://www.wnc.com.tw/uploads/files/shares/annual-reports/2025_WNC_Annual_Report_TC.pdf
+  tw.6285#e5:
+    locator: 加入NVIDIA AI Aerial打造AI-RAN生態系段落
+    published_date: '2026-03-01'
+    publisher: 啓碁科技股份有限公司
+    quote_check: found
+    title: 啓碁於MWC 2026首度展示與NVIDIA AI Aerial整合的O-RU與AI-RAN通訊解決方案
+    url: https://www.wnc.com.tw/news/mwc2026/detail
+  tw.6285#e6:
+    locator: 產品特色
+    published_date: null
+    publisher: 啓碁科技股份有限公司
+    quote_check: found
+    title: 32埠400 GbE資料中心交換器
+    url: https://www.wnc.com.tw/network-access/network-infrastructure/32port-400gbe-data-center-switch
+  tw.6285#e7:
+    locator: 光交換器與後量子密碼模組段落
+    published_date: '2026-03-01'
+    publisher: 啓碁科技股份有限公司
+    quote_check: found
+    title: 啓碁於MWC 2026首度展示與NVIDIA AI Aerial整合的O-RU與AI-RAN通訊解決方案
+    url: https://www.wnc.com.tw/news/mwc2026/detail
+  tw.6285#e8:
+    locator: TAIWAN FOCUS第二段
+    published_date: '2026-06-09'
+    publisher: Reuters（刊載於Investing.com）
+    quote_check: unreachable
+    title: SpaceX IPO fever sparks hunt for proxy plays in Asia
+    url: https://www.investing.com/news/stock-market-news/spacex-ipo-fever-sparks-hunt-for-proxy-plays-in-asia-4732023
+  tw.6285#e9:
+    locator: High-speed connectivity solutions，800G交換器段落
+    published_date: '2025-02-26'
+    publisher: WNC
+    quote_check: found
+    title: WNC to Exhibit Advanced Communications Technologies and High-speed Connectivity Solutions at MWC 2025
+    url: https://www.wnc.com.tw/en/news/wnc-at-mwc-2025/detail

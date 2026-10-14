@@ -20,5 +20,90 @@ stages:
   name: AI 加速器應用
   tier: downstream
   name_en: Applications
-members: []
-as_of: null
+members:
+- id: tw.2467
+  stage: equipment_materials
+  tier: upstream
+  detail: HBM封裝自動烘烤設備
+  as_of: '2023-11-02'
+  evidence:
+  - tw.2467#e14
+  confidence: ai_cross_checked
+- id: tw.3167
+  stage: equipment_materials
+  tier: upstream
+  detail: HBM進料檢查AOI設備
+  as_of: '2026-04-09'
+  evidence:
+  - tw.3167#e2
+  - tw.3167#e5
+  confidence: ai_cross_checked
+- id: tw.3443
+  stage: application
+  tier: downstream
+  detail: HBM4E IP導入AI ASIC
+  as_of: '2026-09-22'
+  evidence:
+  - tw.3443#e12
+  - tw.3443#e13
+  confidence: ai_cross_checked
+- id: tw.3532
+  stage: equipment_materials
+  tier: upstream
+  detail: HBM相關晶圓及貼合用carrier wafer
+  as_of: '2026-04-10'
+  evidence:
+  - tw.3532#e06
+  confidence: ai_cross_checked
+- id: tw.3661
+  stage: application
+  tier: downstream
+  detail: HBM3整合設計
+  as_of: '2026-10-14'
+  evidence:
+  - tw.3661#e6
+  confidence: ai_cross_checked
+- id: tw.3706
+  stage: application
+  tier: downstream
+  detail: 支援配備HBM3E的AMD Instinct MI350P加速卡
+  as_of: '2026-10-14'
+  evidence:
+  - tw.3706#e14
+  - tw.3706#e15
+  confidence: ai_cross_checked
+- id: tw.5434
+  stage: equipment_materials
+  tier: upstream
+  detail: HBM先進封裝材料布局
+  as_of: '2025-08-05'
+  evidence:
+  - tw.5434#e6
+  confidence: ai_cross_checked
+- id: tw.6223
+  stage: equipment_materials
+  tier: upstream
+  detail: 高頻寬記憶體測試技術
+  as_of: '2026-10-14'
+  evidence:
+  - tw.6223#e9
+  confidence: ai_cross_checked
+- id: tw.6239
+  stage: manufacturing
+  tier: midstream
+  detail: HBM封裝設備與晶粒連接技術布局
+  as_of: '2025-10-28'
+  evidence:
+  - tw.6239#e8
+  - tw.6239#e9
+  confidence: ai_cross_checked
+- id: tw.6770
+  stage: manufacturing
+  tier: midstream
+  detail: HBM先進封裝後段晶圓製造
+  as_of: '2026-03-16'
+  evidence:
+  - tw.6770#e10
+  - tw.6770#e11
+  confidence: ai_cross_checked
+as_of: '2026-10-14'

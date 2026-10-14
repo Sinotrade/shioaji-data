@@ -8,12 +8,145 @@ industry:
   l0_code: '17'
   l0_name: 金融保險業
   l0_name_en: Financial and Insurance
-primary_chain_position: unknown
+  l1: finance
+  l1_name: 金融
+  l1_name_en: Financials
+  l2: fin.insurance
+  l2_name: 保險
+  l2_name_en: Insurance
+  l3: fin.property
+  l3_name: 產物保險
+  l3_name_en: Property & Casualty Insurance
+chain: chain.finance
+primary_chain_position: not_applicable
+summary_short: 經營財產保險，以汽車險為主要保費來源，另提供火災、工程、責任及運輸保險。
+summary_long: 新光產物保險以財產保險為主要業務，2025年度簽單保費組成以車險45.50%最高，其次為火險18.88%及工程險16.24%；責任險、水險與傷健險分別占8.60%、5.18%及5.59%。汽車保險涵蓋任意車體、竊盜與責任保障，以及強制汽車責任險。住宅商品提供火災及基本地震保障；工程商品涵蓋營造與安裝工程綜合保險、營建機具及電子設備險。另提供僱主意外責任保險與貨物運輸險，貨物保障涵蓋海上、航空、內陸運輸及郵寄。
+segments:
+- evidence_ids:
+  - e3
+  id: seg_auto
+  name: 車險
+  period: 2025年度（簽單保費收入比重）
+  revenue_share_pct: 45.5
+- evidence_ids:
+  - e4
+  id: seg_fire
+  name: 火險
+  period: 2025年度（簽單保費收入比重）
+  revenue_share_pct: 18.88
+- evidence_ids:
+  - e5
+  id: seg_engineering
+  name: 工程險
+  period: 2025年度（簽單保費收入比重）
+  revenue_share_pct: 16.24
+- evidence_ids:
+  - e6
+  id: seg_liability
+  name: 責任險
+  period: 2025年度（簽單保費收入比重）
+  revenue_share_pct: 8.6
+- evidence_ids:
+  - e7
+  id: seg_health_accident
+  name: 傷健險
+  period: 2025年度（簽單保費收入比重）
+  revenue_share_pct: 5.59
+- evidence_ids:
+  - e8
+  id: seg_marine
+  name: 水險
+  period: 2025年度（簽單保費收入比重）
+  revenue_share_pct: 5.18
 website: www.skinsurance.com.tw
 tax_id: 03458403
 incorporated: '1963-04-26'
 listed: '2000-05-22'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-14'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2850#e10:
+    locator: 住宅火災險／商品標題
+    published_date: null
+    publisher: 新光產物保險股份有限公司
+    quote_check: found
+    title: 新光產物保險－住宅火險及基本地震險
+    url: https://www.skinsurance.com.tw/SKI/Doc.aspx?ST=&sID=1834&uID=22
+  tw.2850#e11:
+    locator: 理賠申請應檢附文件／險種欄
+    published_date: null
+    publisher: 新光產物保險股份有限公司
+    quote_check: found
+    title: 工程險理賠
+    url: https://www.skinsurance.com.tw/SKI/Doc.aspx?ST=&sID=3961&uID=35
+  tw.2850#e12:
+    locator: 商品標題及介紹
+    published_date: null
+    publisher: 新光產物保險股份有限公司
+    quote_check: found
+    title: 新光產物保險－僱主意外責任保險
+    url: https://www.skinsurance.com.tw/SKI/Doc.aspx?ST=&sID=1656&uID=24
+  tw.2850#e13:
+    locator: 商品特色
+    published_date: null
+    publisher: 新光產物保險股份有限公司
+    quote_check: found
+    title: 新光產物保險－貨物運輸險
+    url: https://www.skinsurance.com.tw/SKI/Doc.aspx?ST=&sID=1660&uID=25
+  tw.2850#e2:
+    locator: 印刷頁79，肆、營運概況／業務範圍
+    published_date: null
+    publisher: 新光產物保險股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.skinsurance.com.tw/SKI/DocUpLoad/114%E5%B9%B4%E4%B8%AD%E6%96%87%E5%B9%B4%E5%A0%B1.pdf
+  tw.2850#e3:
+    locator: 印刷頁79，一一四年度營業比重表／車險列
+    published_date: null
+    publisher: 新光產物保險股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.skinsurance.com.tw/SKI/DocUpLoad/114%E5%B9%B4%E4%B8%AD%E6%96%87%E5%B9%B4%E5%A0%B1.pdf
+  tw.2850#e4:
+    locator: 印刷頁79，一一四年度營業比重表／火險列
+    published_date: null
+    publisher: 新光產物保險股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.skinsurance.com.tw/SKI/DocUpLoad/114%E5%B9%B4%E4%B8%AD%E6%96%87%E5%B9%B4%E5%A0%B1.pdf
+  tw.2850#e5:
+    locator: 印刷頁79，一一四年度營業比重表／工程險列
+    published_date: null
+    publisher: 新光產物保險股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.skinsurance.com.tw/SKI/DocUpLoad/114%E5%B9%B4%E4%B8%AD%E6%96%87%E5%B9%B4%E5%A0%B1.pdf
+  tw.2850#e6:
+    locator: 印刷頁79，一一四年度營業比重表／責任險列
+    published_date: null
+    publisher: 新光產物保險股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.skinsurance.com.tw/SKI/DocUpLoad/114%E5%B9%B4%E4%B8%AD%E6%96%87%E5%B9%B4%E5%A0%B1.pdf
+  tw.2850#e7:
+    locator: 印刷頁79，一一四年度營業比重表／傷健險列
+    published_date: null
+    publisher: 新光產物保險股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.skinsurance.com.tw/SKI/DocUpLoad/114%E5%B9%B4%E4%B8%AD%E6%96%87%E5%B9%B4%E5%A0%B1.pdf
+  tw.2850#e8:
+    locator: 印刷頁79，一一四年度營業比重表／水險列
+    published_date: null
+    publisher: 新光產物保險股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.skinsurance.com.tw/SKI/DocUpLoad/114%E5%B9%B4%E4%B8%AD%E6%96%87%E5%B9%B4%E5%A0%B1.pdf
+  tw.2850#e9:
+    locator: 印刷頁79，目前之商品項目／汽車保險
+    published_date: null
+    publisher: 新光產物保險股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.skinsurance.com.tw/SKI/DocUpLoad/114%E5%B9%B4%E4%B8%AD%E6%96%87%E5%B9%B4%E5%A0%B1.pdf

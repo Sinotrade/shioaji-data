@@ -8,12 +8,1130 @@ industry:
   l0_code: '26'
   l0_name: 光電業
   l0_name_en: Optoelectronic
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.optical_component
+  l3_name: 光學元件與鏡頭
+  l3_name_en: Optical Components & Lenses
+primary_chain_position: midstream
+summary_short: 以手機相機鏡頭為主，研發、製造及銷售光學元件。
+summary_long: 大立光以光學元件研發、製造與銷售為核心，手機相機鏡頭是產銷主力；2025年光學元件占合併營收99.48%。Apple官方名單列其為供應商，LG Innotek的2025年度採購表亦列大立光為鏡頭採購來源。車用與ADAS鏡頭產品由子公司大根光學工業提供。公司官網列有CPO用稜鏡微透鏡陣列及光纖陣列，2026年10月法說會確認FA已通過客戶認證。2026年公告與大陽科技進行股份轉換，規劃納為全資子公司，並向多家企業購置台中土地及廠房；另透過八方國際投資取得Halo Industries股份。
+segments:
+- evidence_ids:
+  - e1
+  id: optical
+  name: 光學元件
+  period: '2025'
+  revenue_share_pct: 99.48
+- evidence_ids:
+  - e1
+  id: other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 0.52
+main_theme: theme.apple
+themes:
+- stage: components
+  theme: theme.apple
+  tier: upstream
+- stage: components
+  theme: theme.cpo
+  tier: upstream
+relations:
+  competitors:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 光學鏡頭市場
+    details:
+    - 光學鏡頭市場
+    - 精密光學元件市場競爭
+    edge: e1cfacdb987bb
+    evidence_level: primary
+    id: tw.3406
+    name: 玉晶光
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 2
+  - as_of: '2023-07-06'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 光學鏡頭市場
+    details:
+    - 光學鏡頭市場
+    edge: e45e8ebee1503
+    evidence_level: media
+    id: hk.2382
+    name: Sunny Optical Technology Group Co
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  customers:
+  - as_of: '2020-02-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 手機品牌鏡頭客戶（歷史關係）
+    details:
+    - 手機品牌鏡頭客戶（歷史關係）
+    edge: e6eee4b360081
+    evidence_level: media
+    id: hk.1810
+    name: 小米
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2020-02-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 手機品牌鏡頭客戶（歷史關係）
+    details:
+    - 手機品牌鏡頭客戶（歷史關係）
+    edge: e4df4e85dd10c
+    evidence_level: media
+    id: kr.005930
+    name: Samsung Electronics
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 鏡頭；採購方為LG Innotek合併集團
+    details:
+    - 鏡頭；採購方為LG Innotek合併集團
+    edge: e4945734aed48
+    evidence_level: primary
+    id: kr.011070
+    name: LG Innotek Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2020-02-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 手機品牌鏡頭客戶（歷史關係）
+    details:
+    - 手機品牌鏡頭客戶（歷史關係）
+    edge: ebe1281ec50e6
+    evidence_level: media
+    id: org.oppo
+    name: OPPO
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2020-02-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 手機品牌鏡頭客戶（歷史關係）
+    details:
+    - 手機品牌鏡頭客戶（歷史關係）
+    edge: edbda3b9f4e30
+    evidence_level: media
+    id: org.vivo
+    name: Vivo
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 手機鏡頭；Apple官方供應商名單
+    details:
+    - 手機鏡頭；Apple官方供應商名單
+    edge: e7293c6f072f4
+    evidence_level: primary
+    id: us.AAPL
+    name: Apple
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2023-05-17'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 車用鏡頭訂單（歷史關係）
+    details:
+    - 車用鏡頭訂單（歷史關係）
+    edge: ed66fe260d713
+    evidence_level: media
+    id: us.TSLA
+    name: Tesla
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資海外投資子公司
+    details:
+    - 全資海外投資子公司
+    edge: e14808cf9a5b4
+    evidence_level: primary
+    id: org.astro-international-largan
+    name: Astro International Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-07-27'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資投資子公司
+    details:
+    - 全資投資子公司
+    edge: e4a71c55b55d9
+    evidence_level: primary
+    id: org.bafang-international-investment
+    name: 八方國際投資股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-07-27'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 光電及光學器材零組件子公司
+    details:
+    - 光電及光學器材零組件子公司
+    edge: e664d38ccae29
+    evidence_level: primary
+    id: org.dalux-technology
+    name: 大陽科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 其他通訊傳播設備製造子公司
+    details:
+    - 其他通訊傳播設備製造子公司
+    edge: e4fdc2c71d7fe
+    evidence_level: primary
+    id: org.largan-electronic-technology
+    name: 大根電子科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 醫療器材批發及零售子公司
+    details:
+    - 醫療器材批發及零售子公司
+    edge: e9847d4ec2f63
+    evidence_level: primary
+    id: org.largan-health-technology-tw
+    name: 大立雲康科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 光學儀器製造子公司
+    details:
+    - 光學儀器製造子公司
+    edge: ea858d907f3c3
+    evidence_level: primary
+    id: org.largan-industrial-optics
+    name: 大根光學工業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 儀器、光學與通信器材子公司
+    details:
+    - 儀器、光學與通信器材子公司
+    edge: ee964e1bece51
+    evidence_level: primary
+    id: org.photonicore
+    name: 萊凌科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過八方國際投資持有的子公司
+    details:
+    - 透過八方國際投資持有的子公司
+    edge: ed0d656433c25
+    evidence_level: primary
+    id: org.taiwan-applied-crystal
+    name: 台灣應用晶體股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過八方國際投資持有的子公司
+    details:
+    - 透過八方國際投資持有的子公司
+    edge: e7a8af6765b09
+    evidence_level: primary
+    id: org.wanyi-energy-materials
+    name: 萬溢能源材料股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 真空技術應用設備；個別機型未揭露
+    details:
+    - 真空技術應用設備；個別機型未揭露
+    edge: ef0387f8e36c3
+    evidence_level: primary
+    id: jp.6384
+    name: 株式会社昭和真空
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 工程承攬契約
+    details:
+    - 工程承攬契約
+    edge: eb8cbda1f8bb9
+    evidence_level: primary
+    id: tw.6691
+    name: 洋基工程
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 新台幣697,059,099元
+    as_of: '2024-04-22'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 2024年2月26日至4月22日訂購機器設備一批
+    details:
+    - 2024年2月26日至4月22日訂購機器設備一批
+    edge: e54dd5262e22d
+    event_date: '2024-04-22'
+    events:
+    - amount: 新台幣697,059,099元
+      detail: 2024年2月26日至4月22日訂購機器設備一批
+      event_date: '2024-04-22'
+    evidence_level: primary
+    id: jp.6384
+    name: 株式会社昭和真空
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣15,863,850千元
+    as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 2024年海外全資子公司現金增資
+    details:
+    - 2024年海外全資子公司現金增資
+    - 2025年海外全資子公司現金增資
+    - 2025年以公司債金融資產作價增資
+    edge: ed49e6bd130bb
+    event_date: null
+    events:
+    - amount: 新台幣15,863,850千元
+      detail: 2024年海外全資子公司現金增資
+      event_date: null
+    - amount: 新台幣23,418,545千元
+      detail: 2025年海外全資子公司現金增資
+      event_date: null
+    - amount: 新台幣7,794,925千元
+      detail: 2025年以公司債金融資產作價增資
+      event_date: null
+    evidence_level: primary
+    id: org.astro-international-largan
+    name: Astro International Limited
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣20億元
+    as_of: '2026-07-27'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 對全資子公司現金增資
+    details:
+    - 對全資子公司現金增資
+    edge: e7af5200bbcdb
+    event_date: '2026-07-27'
+    events:
+    - amount: 新台幣20億元
+      detail: 對全資子公司現金增資
+      event_date: '2026-07-27'
+    evidence_level: primary
+    id: org.bafang-international-investment
+    name: 八方國際投資股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2026-07-27'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 股份轉換，規劃取得全資控制
+    details:
+    - 股份轉換，規劃取得全資控制
+    edge: e77458f8c0acc
+    event_date: '2026-07-27'
+    events:
+    - amount: null
+      detail: 股份轉換，規劃取得全資控制
+      event_date: '2026-07-27'
+    evidence_level: primary
+    id: org.dalux-technology
+    name: 大陽科技股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 美金16,999,996.21元
+    as_of: '2026-08-27'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司八方國際投資取得Series B-2優先股
+    details:
+    - 子公司八方國際投資取得Series B-2優先股
+    edge: e7f23e281381d
+    event_date: '2026-08-27'
+    events:
+    - amount: 美金16,999,996.21元
+      detail: 子公司八方國際投資取得Series B-2優先股
+      event_date: '2026-08-27'
+    evidence_level: primary
+    id: org.halo-industries
+    name: Halo Industries, Inc.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣606,800,000元
+    as_of: '2026-09-04'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 取得台中市西屯區土地及工業區14路3號建物
+    details:
+    - 取得台中市西屯區土地及工業區14路3號建物
+    edge: ef5a0cafa671d
+    event_date: '2026-09-04'
+    events:
+    - amount: 新台幣606,800,000元
+      detail: 取得台中市西屯區土地及工業區14路3號建物
+      event_date: '2026-09-04'
+    evidence_level: primary
+    id: org.hsing-kuang-heat-treatment
+    name: 興光熱處理廠股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣6億5120萬7480元
+    as_of: '2026-08-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 取得台中市南屯區土地及建物
+    details:
+    - 取得台中市南屯區土地及建物
+    edge: e910e500f4866
+    event_date: '2026-08-28'
+    events:
+    - amount: 新台幣6億5120萬7480元
+      detail: 取得台中市南屯區土地及建物
+      event_date: '2026-08-28'
+    evidence_level: media
+    id: org.jt-international
+    name: 喜特麗國際股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣30.8億元
+    as_of: '2026-08-25'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 取得台中市南屯區土地及廠房
+    details:
+    - 取得台中市南屯區土地及廠房
+    edge: e24c703128367
+    event_date: '2026-08-25'
+    events:
+    - amount: 新台幣30.8億元
+      detail: 取得台中市南屯區土地及廠房
+      event_date: '2026-08-25'
+    evidence_level: media
+    id: org.ke-hung-industrial
+    name: 科宏工業股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣100,000千元
+    as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司八方國際投資：2025年設立投資
+    details:
+    - 子公司八方國際投資：2025年設立投資
+    edge: e466d8b4a2a1b
+    event_date: null
+    events:
+    - amount: 新台幣100,000千元
+      detail: 子公司八方國際投資：2025年設立投資
+      event_date: null
+    evidence_level: primary
+    id: org.largan-electronic-technology
+    name: 大根電子科技股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣44,000千元
+    as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 2024年對醫療器材子公司現金增資
+    details:
+    - 2024年對醫療器材子公司現金增資
+    edge: ec4638f37547f
+    event_date: null
+    events:
+    - amount: 新台幣44,000千元
+      detail: 2024年對醫療器材子公司現金增資
+      event_date: null
+    evidence_level: primary
+    id: org.largan-health-technology-tw
+    name: 大立雲康科技股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣260,000千元
+    as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 2024年對光學子公司現金增資
+    details:
+    - 2024年對光學子公司現金增資
+    - 2025年對光學子公司現金增資
+    edge: edf43bb25a336
+    event_date: null
+    events:
+    - amount: 新台幣260,000千元
+      detail: 2024年對光學子公司現金增資
+      event_date: null
+    evidence_level: primary
+    id: org.largan-industrial-optics
+    name: 大根光學工業股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣80,295千元
+    as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司八方國際投資：2024年現金增資
+    details:
+    - 子公司八方國際投資：2024年現金增資
+    - 子公司八方國際投資：2025年現金增資
+    edge: eebd9b140b3be
+    event_date: null
+    events:
+    - amount: 新台幣80,295千元
+      detail: 子公司八方國際投資：2024年現金增資
+      event_date: null
+    - amount: 新台幣173,494千元
+      detail: 子公司八方國際投資：2025年現金增資
+      event_date: null
+    evidence_level: primary
+    id: org.taiwan-applied-crystal
+    name: 台灣應用晶體股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣1,172,000,000元
+    as_of: '2026-09-17'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 取得台中市南屯區土地及精科東路10號建物
+    details:
+    - 取得台中市南屯區土地及精科東路10號建物
+    edge: e10730013968e
+    event_date: '2026-09-17'
+    events:
+    - amount: 新台幣1,172,000,000元
+      detail: 取得台中市南屯區土地及精科東路10號建物
+      event_date: '2026-09-17'
+    evidence_level: primary
+    id: org.taiwan-gu-er-mei-industrial
+    name: 台灣固而美工業股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣12,500千元
+    as_of: 2024-02
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司八方國際投資：設立投資
+    details:
+    - 子公司八方國際投資：設立投資
+    - 子公司八方國際投資：現金增資
+    edge: eeeed65418f14
+    event_date: null
+    events:
+    - amount: 新台幣12,500千元
+      detail: 子公司八方國際投資：設立投資
+      event_date: null
+    - amount: 新台幣437,500千元
+      detail: 子公司八方國際投資：現金增資
+      event_date: null
+    evidence_level: primary
+    id: org.wanyi-energy-materials
+    name: 萬溢能源材料股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣1,379,545,200元
+    as_of: '2026-07-24'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 取得台中市西屯區土地及工業區2路5號建物
+    details:
+    - 取得台中市西屯區土地及工業區2路5號建物
+    edge: eb8ddf8680961
+    event_date: '2026-07-24'
+    events:
+    - amount: 新台幣1,379,545,200元
+      detail: 取得台中市西屯區土地及工業區2路5號建物
+      event_date: '2026-07-24'
+    evidence_level: primary
+    id: org.ya-tai-cold-storage
+    name: 亞泰冷藏股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣561,379,500元
+    as_of: '2026-07-21'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 取得台中市南屯區土地及工業區21路2號建物
+    details:
+    - 取得台中市南屯區土地及工業區21路2號建物
+    edge: e9032ca69ab31
+    event_date: '2026-07-21'
+    events:
+    - amount: 新台幣561,379,500元
+      detail: 取得台中市南屯區土地及工業區21路2號建物
+      event_date: '2026-07-21'
+    evidence_level: primary
+    id: org.yong-quan-feng-enterprise
+    name: 永泉豐企業股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣628,262,250元
+    as_of: '2026-06-24'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 取得台中市南屯區土地及工業區21路19號建物
+    details:
+    - 取得台中市南屯區土地及工業區21路19號建物
+    edge: e05ce28ab0519
+    event_date: '2026-06-24'
+    events:
+    - amount: 新台幣628,262,250元
+      detail: 取得台中市南屯區土地及工業區21路19號建物
+      event_date: '2026-06-24'
+    evidence_level: primary
+    id: org.zhen-feng-enterprise
+    name: 振鋒企業股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣531,195,000元（含稅）
+    as_of: '2025-09-18'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 2023年12月5日至2024年4月9日取得廠務工程及設備一批
+    details:
+    - 2023年12月5日至2024年4月9日取得廠務工程及設備一批
+    - 2024年5月6日至11月18日取得廠務工程及設備一批
+    - 2024年11月21日至2025年9月18日取得廠務工程及設備一批
+    edge: e203aa4417de6
+    event_date: '2024-04-09'
+    events:
+    - amount: 新台幣504,581,700元（含稅）
+      detail: 2024年11月21日至2025年9月18日取得廠務工程及設備一批
+      event_date: '2025-09-18'
+    - amount: 新台幣513,849,000元（含稅）
+      detail: 2024年5月6日至11月18日取得廠務工程及設備一批
+      event_date: '2024-11-18'
+    - amount: 新台幣531,195,000元（含稅）
+      detail: 2023年12月5日至2024年4月9日取得廠務工程及設備一批
+      event_date: '2024-04-09'
+    evidence_level: primary
+    id: org.zhong-rui-engineering
+    name: 中瑞工程股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣1,544,346,300元（含稅）
+    as_of: '2026-04-20'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 2025年4月21日至2026年4月20日取得廠務工程及設備
+    details:
+    - 2025年4月21日至2026年4月20日取得廠務工程及設備
+    edge: eccf00ab6c218
+    event_date: '2026-04-20'
+    events:
+    - amount: 新台幣1,544,346,300元（含稅）
+      detail: 2025年4月21日至2026年4月20日取得廠務工程及設備
+      event_date: '2026-04-20'
+    evidence_level: primary
+    id: tw.6691
+    name: 洋基工程
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 2025年報匿名客戶：653021、632019、643006、622020
+- 2025年報匿名供應商：100107、100902、110185、110059
+- CPO光纖陣列認證客戶（未具名）
 website: www.largan.com.tw
 tax_id: '22480876'
 incorporated: '1987-04-17'
 listed: '2002-03-11'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-14'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3008#e1:
+    locator: 印刷第54頁，目前主要產品及其營業比重，114年度欄
+    published_date: '2026-04-20'
+    publisher: 大立光電股份有限公司
+    quote_check: found
+    title: 大立光電股份有限公司2025年報
+    url: https://www.largan.com.tw/tw/tool-download/page_size/file/227/2025-%E5%B9%B4%E5%A0%B1?note=
+  tw.3008#e10:
+    locator: 陳湘庭、喬大龍報導，第2段
+    published_date: '2023-05-17'
+    publisher: 台視新聞／非凡新聞
+    quote_check: found
+    title: 專利戰逼和Tesla 大立光「奪單喊漲」一舉二得
+    url: https://news.ttv.com.tw/news/11205170024600F
+  tw.3008#e10b:
+    locator: 記者劉芳妙報導，末段
+    published_date: '2026-04-14'
+    publisher: 經濟日報
+    quote_check: found
+    title: 大立光布局新應用 兼顧技術、利潤
+    url: https://money.udn.com/money/story/5612/9439598
+  tw.3008#e11:
+    locator: 印刷第81頁，當期主要客戶表，單位千日圓；年度2025-04-01至2026-03-31
+    published_date: '2026-06-25'
+    publisher: 株式会社昭和真空
+    quote_check: found
+    title: 株式会社昭和真空 第68期有価証券報告書
+    url: https://www.showashinku.co.jp/ir/security/pdf/2026/68yuho.pdf
+  tw.3008#e12:
+    locator: 正文主要競爭者段
+    published_date: '2023-07-06'
+    publisher: Taipei Times
+    quote_check: found
+    title: Largan declares 10.31% revenue fall
+    url: https://www.taipeitimes.com/News/biz/archives/2023/07/06/2003802731
+  tw.3008#e13:
+    locator: 印刷第12頁，列入合併財務報告之子公司表；本公司直接持股100%
+    published_date: null
+    publisher: 大立光電股份有限公司
+    quote_check: found
+    title: 大立光電2025年度合併財務報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52244/2026/RNS/52244_rns_2026-04-25_27884de4-7ed7-4e58-99b7-ad07c1f00dcd.pdf
+  tw.3008#e14:
+    locator: 重大訊息第6項
+    published_date: '2026-07-27'
+    publisher: 公開資訊觀測站／台視財經轉載
+    quote_check: found
+    title: 大立光董事會決議通過與大陽科技股份轉換案
+    url: https://www.ttv.com.tw/finance/view/default.asp?from=588&i=07202627182450F29A7747B6478F853F567D1085C80F3CE0
+  tw.3008#e15:
+    locator: 重大訊息第1項
+    published_date: '2026-07-27'
+    publisher: 公開資訊觀測站／台視財經轉載
+    quote_check: found
+    title: 大立光董事會決議增資子公司八方國際投資20億元
+    url: https://www.ttv.com.tw/finance/view/default.asp?from=588&i=072026271824FA6B15A16A184584ACA27D52142F2B0637F7
+  tw.3008#e15b:
+    locator: 重大訊息第5、6項
+    published_date: '2026-07-27'
+    publisher: 公開資訊觀測站／台視財經轉載
+    quote_check: found
+    title: 大立光董事會決議增資子公司八方國際投資20億元
+    url: https://www.ttv.com.tw/finance/view/default.asp?from=588&i=072026271824FA6B15A16A184584ACA27D52142F2B0637F7
+  tw.3008#e16:
+    locator: 印刷第12頁，合併子公司表；八方國際持股79.16%
+    published_date: null
+    publisher: 大立光電股份有限公司
+    quote_check: found
+    title: 大立光電2025年度合併財務報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52244/2026/RNS/52244_rns_2026-04-25_27884de4-7ed7-4e58-99b7-ad07c1f00dcd.pdf
+  tw.3008#e17:
+    locator: 印刷第12頁，合併子公司表及註1；八方國際持股90%
+    published_date: null
+    publisher: 大立光電股份有限公司
+    quote_check: found
+    title: 大立光電2025年度合併財務報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52244/2026/RNS/52244_rns_2026-04-25_27884de4-7ed7-4e58-99b7-ad07c1f00dcd.pdf
+  tw.3008#e18:
+    locator: 印刷第12頁，合併子公司表；八方國際持股100%
+    published_date: null
+    publisher: 大立光電股份有限公司
+    quote_check: found
+    title: 大立光電2025年度合併財務報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52244/2026/RNS/52244_rns_2026-04-25_27884de4-7ed7-4e58-99b7-ad07c1f00dcd.pdf
+  tw.3008#e19:
+    locator: 印刷第12頁，合併子公司表；本公司直接持股100%
+    published_date: null
+    publisher: 大立光電股份有限公司
+    quote_check: found
+    title: 大立光電2025年度合併財務報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52244/2026/RNS/52244_rns_2026-04-25_27884de4-7ed7-4e58-99b7-ad07c1f00dcd.pdf
+  tw.3008#e2:
+    locator: 印刷第1頁，2026年度營業計劃；第55頁產業表將光學元件列為中游
+    published_date: '2026-04-20'
+    publisher: 大立光電股份有限公司
+    quote_check: found
+    title: 大立光電股份有限公司2025年報
+    url: https://www.largan.com.tw/tw/tool-download/page_size/file/227/2025-%E5%B9%B4%E5%A0%B1?note=
+  tw.3008#e20:
+    locator: 印刷第12頁，合併子公司表；本公司直接持股76.04%
+    published_date: null
+    publisher: 大立光電股份有限公司
+    quote_check: found
+    title: 大立光電2025年度合併財務報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52244/2026/RNS/52244_rns_2026-04-25_27884de4-7ed7-4e58-99b7-ad07c1f00dcd.pdf
+  tw.3008#e22:
+    locator: 印刷第12頁，合併子公司表；本公司直接持股88%
+    published_date: null
+    publisher: 大立光電股份有限公司
+    quote_check: found
+    title: 大立光電2025年度合併財務報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52244/2026/RNS/52244_rns_2026-04-25_27884de4-7ed7-4e58-99b7-ad07c1f00dcd.pdf
+  tw.3008#e23:
+    locator: 第7項換股比例及基準日；第8項預期效益
+    published_date: '2026-07-27'
+    publisher: 公開資訊觀測站／台視財經轉載
+    quote_check: found
+    title: 大立光董事會決議通過與大陽科技股份轉換案
+    url: https://www.ttv.com.tw/finance/view/default.asp?from=588&i=07202627182450F29A7747B6478F853F567D1085C80F3CE0
+  tw.3008#e24:
+    locator: 標的物名稱
+    published_date: '2026-08-27'
+    publisher: 公開資訊觀測站／鉅亨網轉載
+    quote_check: found
+    title: 大立光代子公司八方國際投資公告取得Halo Industries股份
+    url: https://news.cnyes.com/news/id/6589046
+  tw.3008#e24b:
+    locator: 第5項總金額；第14項完全稀釋後持股約4.8%；第28項資金來源為八方
+    published_date: '2026-08-27'
+    publisher: 公開資訊觀測站／鉅亨網轉載
+    quote_check: found
+    title: 大立光代子公司八方國際投資公告取得Halo Industries股份
+    url: https://news.cnyes.com/news/id/6589046
+  tw.3008#e25:
+    locator: 印刷第15頁，採用權益法之投資第1項；2024年1月設立投資，初始持股20%
+    published_date: null
+    publisher: 大立光電股份有限公司
+    quote_check: unreachable
+    title: 大立光電2024年第1季合併財務報告
+    url: https://www.largan.com.tw/cn/tool-download/investor_finance_2_cn_size/file/9/113%E5%B9%B4(2024)Season1?note=
+  tw.3008#e26:
+    locator: 印刷第15頁，採用權益法之投資第1項；2024年2月萬溢增資、取得90%股權及控制
+    published_date: null
+    publisher: 大立光電股份有限公司
+    quote_check: unreachable
+    title: 大立光電2024年第1季合併財務報告
+    url: https://www.largan.com.tw/cn/tool-download/investor_finance_2_cn_size/file/9/113%E5%B9%B4(2024)Season1?note=
+  tw.3008#e27:
+    locator: 印刷第13頁，子公司表註3；八方國際2025年增資台灣應用晶體
+    published_date: null
+    publisher: 大立光電股份有限公司
+    quote_check: found
+    title: 大立光電2025年度合併財務報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52244/2026/RNS/52244_rns_2026-04-25_27884de4-7ed7-4e58-99b7-ad07c1f00dcd.pdf
+  tw.3008#e28:
+    locator: 印刷第13頁，子公司表註3；八方國際2024年增資台灣應用晶體
+    published_date: null
+    publisher: 大立光電股份有限公司
+    quote_check: found
+    title: 大立光電2025年度合併財務報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52244/2026/RNS/52244_rns_2026-04-25_27884de4-7ed7-4e58-99b7-ad07c1f00dcd.pdf
+  tw.3008#e29:
+    locator: 印刷第13頁，子公司表註4；2024、2025年度各參與增資
+    published_date: null
+    publisher: 大立光電股份有限公司
+    quote_check: found
+    title: 大立光電2025年度合併財務報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52244/2026/RNS/52244_rns_2026-04-25_27884de4-7ed7-4e58-99b7-ad07c1f00dcd.pdf
+  tw.3008#e29b:
+    locator: 印刷第13頁，子公司表註4，兩年個別增資金額
+    published_date: null
+    publisher: 大立光電股份有限公司
+    quote_check: found
+    title: 大立光電2025年度合併財務報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52244/2026/RNS/52244_rns_2026-04-25_27884de4-7ed7-4e58-99b7-ad07c1f00dcd.pdf
+  tw.3008#e3:
+    locator: 車用鏡頭型錄
+    published_date: null
+    publisher: 大根光學工業股份有限公司
+    quote_check: found
+    title: 大根光學工業股份有限公司：車用鏡頭
+    url: https://www.larganindustrialoptics.com/_index.php
+  tw.3008#e30:
+    locator: 印刷第13頁，子公司表註5；現金增資及2025年另以公司債作價增資
+    published_date: null
+    publisher: 大立光電股份有限公司
+    quote_check: found
+    title: 大立光電2025年度合併財務報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52244/2026/RNS/52244_rns_2026-04-25_27884de4-7ed7-4e58-99b7-ad07c1f00dcd.pdf
+  tw.3008#e30b:
+    locator: 印刷第13頁，子公司表註5，依序為2025及2024年現金增資金額
+    published_date: null
+    publisher: 大立光電股份有限公司
+    quote_check: found
+    title: 大立光電2025年度合併財務報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52244/2026/RNS/52244_rns_2026-04-25_27884de4-7ed7-4e58-99b7-ad07c1f00dcd.pdf
+  tw.3008#e30c:
+    locator: 印刷第13頁，子公司表註5，2025年公司債金融資產作價增資
+    published_date: null
+    publisher: 大立光電股份有限公司
+    quote_check: found
+    title: 大立光電2025年度合併財務報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52244/2026/RNS/52244_rns_2026-04-25_27884de4-7ed7-4e58-99b7-ad07c1f00dcd.pdf
+  tw.3008#e31:
+    locator: 印刷第13頁，子公司表註6；2025年設立大根電子
+    published_date: null
+    publisher: 大立光電股份有限公司
+    quote_check: found
+    title: 大立光電2025年度合併財務報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52244/2026/RNS/52244_rns_2026-04-25_27884de4-7ed7-4e58-99b7-ad07c1f00dcd.pdf
+  tw.3008#e31b:
+    locator: 印刷第13頁，子公司表註6，設立投資金額及持股100%
+    published_date: null
+    publisher: 大立光電股份有限公司
+    quote_check: found
+    title: 大立光電2025年度合併財務報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52244/2026/RNS/52244_rns_2026-04-25_27884de4-7ed7-4e58-99b7-ad07c1f00dcd.pdf
+  tw.3008#e32:
+    locator: 印刷第12頁，子公司表註2，2024年參與大立雲康科技現金增資
+    published_date: null
+    publisher: 大立光電股份有限公司
+    quote_check: found
+    title: 大立光電2025年度合併財務報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52244/2026/RNS/52244_rns_2026-04-25_27884de4-7ed7-4e58-99b7-ad07c1f00dcd.pdf
+  tw.3008#e4:
+    locator: CPO應用
+    published_date: null
+    publisher: 大立光電股份有限公司
+    quote_check: found
+    title: 產品與服務
+    url: https://www.largan.com.tw/tw/product
+  tw.3008#e4b:
+    locator: CPO應用
+    published_date: null
+    publisher: 大立光電股份有限公司
+    quote_check: found
+    title: 產品與服務
+    url: https://www.largan.com.tw/tw/product
+  tw.3008#e5:
+    locator: 記者趙敏雅報導，法說會CPO進度段
+    published_date: '2026-10-08'
+    publisher: 中央社
+    quote_check: found
+    title: 大立光衝刺CPO　林恩平：FA通過認證FAU拚明年量產
+    url: https://www.cna.com.tw/news/afe/202610080326.aspx
+  tw.3008#e6:
+    locator: PDF第11頁，供應商名稱及製造地點欄；名單涵蓋FY2023
+    published_date: null
+    publisher: Apple
+    quote_check: found
+    title: Supplier List
+    url: https://www.supplychainreports.apple/Apple-Supplier-List
+  tw.3008#e7:
+    locator: 記者劉芳妙報導，第4段
+    published_date: '2026-04-14'
+    publisher: 經濟日報
+    quote_check: found
+    title: 大立光布局新應用 兼顧技術、利潤
+    url: https://money.udn.com/money/story/5612/9439598
+  tw.3008#e8:
+    locator: 記者韓婷婷報導，末段；僅支持報導當時客戶
+    published_date: '2020-02-13'
+    publisher: 中央社
+    quote_check: found
+    title: 手機相機規格戰拉高 大立光營運進補
+    url: https://www.cna.com.tw/news/afe/202002130054.aspx
+  tw.3008#e9:
+    locator: II. 사업의 내용／3-1. 주요 원재료 등의 현황，Lens列主要採購來源欄；表註為合併口徑
+    published_date: '2026-03-12'
+    publisher: LG Innotek／韓國交易所
+    quote_check: found
+    title: LG이노텍 주식회사 사업보고서（第50期，2025年度）
+    url: https://kind.krx.co.kr/external/2026/03/12/002144/20260312004856/11011.htm
+  tw.3008#et1:
+    locator: 取得不動產公告，第1、2、5、6及20項
+    published_date: '2026-06-24'
+    publisher: 公開資訊觀測站／台視財經轉載
+    quote_check: found
+    title: 大立光取得台中市南屯區不動產，計約6.28億元
+    url: https://www.ttv.com.tw/finance/view/06202624184857FE2EA8DA4D439497B21E82E5D122BD7BE6/587
+  tw.3008#et10:
+    locator: 取得廠務工程及設備公告，金額與交易相對人欄
+    published_date: '2024-11-18'
+    publisher: 公開資訊觀測站／MoneyDJ轉載
+    quote_check: found
+    title: 大立光5/6~11/18取得廠務工程及設備一批，計約5.14億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=a399aa49-4341-4775-8976-a043ee058d28
+  tw.3008#et11:
+    locator: 取得廠務工程及設備公告，金額與交易相對人欄
+    published_date: '2025-09-18'
+    publisher: 公開資訊觀測站／MoneyDJ轉載
+    quote_check: found
+    title: 大立光113/11/21~114/9/18取得廠務工程及設備一批，計約5.05億元
+    url: https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=b967f2bc-eab1-4af4-8eaf-af425ff2f273
+  tw.3008#et12:
+    locator: 取得廠務工程及設備公告，金額與交易相對人欄
+    published_date: '2026-04-20'
+    publisher: 公開資訊觀測站／台視財經轉載
+    quote_check: found
+    title: 大立光向洋基工程取得廠務工程及設備，計約15.44億元
+    url: https://www.ttv.com.tw/finance/view/042026201817C56D188E670C4EA28E960255135D5D3C0ABD/587
+  tw.3008#et2:
+    locator: 取得不動產公告，交易標的、金額、對手及用途
+    published_date: '2026-07-21'
+    publisher: 公開資訊觀測站／MoneyDJ轉載
+    quote_check: found
+    title: 大立光取得台中市南屯區不動產，計約5.61億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=66c30c97-3c57-49e7-95dd-8da82f1991b7
+  tw.3008#et3:
+    locator: 取得不動產公告，交易標的、金額、對手及用途
+    published_date: '2026-07-24'
+    publisher: 公開資訊觀測站／MoneyDJ轉載
+    quote_check: found
+    title: 大立光取得台中市西屯區不動產，計約13.8億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=26e82d58-a27c-43f8-8ea0-3cf501d8d300
+  tw.3008#et4:
+    locator: 引述大立光公告的交易金額、交易人及擴產用途段
+    published_date: '2026-08-25'
+    publisher: 經濟日報
+    quote_check: found
+    title: 大立光今年第四度出手獵地 斥資逾30億元購進台中南屯區土地
+    url: https://udn.com/news/story/7240/9713190
+  tw.3008#et5:
+    locator: 引述大立光取得不動產重大訊息段
+    published_date: '2026-08-28'
+    publisher: TVBS新聞網
+    quote_check: found
+    title: 大立光股價再創天價！發重訊宣布好消息 猛砸63億布局
+    url: https://news.tvbs.com.tw/money/4014315
+  tw.3008#et6:
+    locator: 取得不動產公告，交易標的、金額、對手及用途
+    published_date: '2026-09-04'
+    publisher: 公開資訊觀測站／玉山證券轉載
+    quote_check: found
+    title: 大立光取得台中市西屯區不動產，計約6.07億元
+    url: https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B95D9F55D-3D06-455D-AF9A-74E664272589%7D
+  tw.3008#et7:
+    locator: 取得不動產公告，交易標的、金額、對手及用途
+    published_date: '2026-09-17'
+    publisher: 公開資訊觀測站／MoneyDJ轉載
+    quote_check: found
+    title: 大立光 公告本公司取得不動產相關訊息
+    url: https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=3a280cd4-3de6-495c-8d9f-0d8b454174e2
+  tw.3008#et8:
+    locator: 取得廠務工程及設備公告，交易相對人欄
+    published_date: '2024-04-09'
+    publisher: 公開資訊觀測站／鉅亨網轉載
+    quote_check: found
+    title: 大立光:公告本公司取得廠務工程及設備相關訊息
+    url: https://news.cnyes.com/news/id/5518048
+  tw.3008#et8b:
+    locator: 交易數量及含稅總金額欄
+    published_date: '2024-04-09'
+    publisher: 公開資訊觀測站／鉅亨網轉載
+    quote_check: found
+    title: 大立光:公告本公司取得廠務工程及設備相關訊息
+    url: https://news.cnyes.com/news/id/5518048
+  tw.3008#et9:
+    locator: 訂購機器設備公告，交易相對人欄
+    published_date: '2024-04-22'
+    publisher: 公開資訊觀測站／Win投資轉載
+    quote_check: found
+    title: 大立光 (3008) 公告本公司訂購機器設備相關訊息
+    url: https://winvest.tw/News/Detail/12795
+  tw.3008#et9b:
+    locator: 交易數量及總金額欄
+    published_date: '2024-04-22'
+    publisher: 公開資訊觀測站／Win投資轉載
+    quote_check: found
+    title: 大立光 (3008) 公告本公司訂購機器設備相關訊息
+    url: https://winvest.tw/News/Detail/12795

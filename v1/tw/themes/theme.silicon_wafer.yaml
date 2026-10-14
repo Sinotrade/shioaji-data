@@ -19,5 +19,42 @@ stages:
   name: 晶圓廠
   tier: downstream
   name_en: Wafer Fabrication
-members: []
-as_of: null
+members:
+- id: tw.3532
+  stage: wafer
+  tier: midstream
+  detail: 半導體用矽晶圓製造
+  as_of: '2025-05-16'
+  evidence:
+  - tw.3532#e02
+  confidence: ai_cross_checked
+- id: tw.5483
+  stage: wafer
+  tier: midstream
+  detail: 透過子公司環球晶圓經營矽晶圓製造
+  as_of: '2026-10-07'
+  evidence:
+  - tw.5483#e1
+  - tw.5483#e2
+  - tw.5483#e7
+  confidence: ai_cross_checked
+- id: tw.6182
+  stage: wafer
+  tier: midstream
+  detail: 半導體矽晶圓製造
+  as_of: '2026-10-14'
+  evidence:
+  - tw.6182#e3
+  - tw.6182#e4
+  confidence: ai_cross_checked
+- id: tw.6488
+  stage: wafer
+  tier: midstream
+  detail: 半導體矽晶圓製造
+  as_of: '2026-10-14'
+  evidence:
+  - tw.6488#e1
+  - tw.6488#e2
+  - tw.6488#e4
+  confidence: ai_cross_checked
+as_of: '2026-10-14'

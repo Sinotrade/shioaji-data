@@ -8,12 +8,375 @@ industry:
   l0_code: '28'
   l0_name: 電子零組件業
   l0_name_en: Electronic Parts and Components
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.passive
+  l3_name: 被動元件
+  l3_name_en: Passive Components
+chain: chain.server
+primary_chain_position: upstream
+summary_short: 製造銷售自有品牌MLCC及陶瓷基板金屬化產品，並代理電子零組件。
+summary_long: 禾伸堂製造銷售自有品牌積層陶瓷電容（MLCC），並經營半導體與電子零組件代理業務。2025年合併營收中，被動元件占42%、主動元件占23%、系統模組占14%、其他占21%。自製產品另包括陶瓷基板金屬化加工；MLCC涵蓋AI伺服器電源與BBU使用的低損耗、高壓、高容NP0產品，以及5G網通等應用。公司官網與原廠資料確認VISHAY、Azoteq的代理關係，DELTA則為電源元件代理原廠。2026年公告向ALPHADESIGN CORPORATION取得設備、向中傳企業購置龍潭不動產，以及向孫公司Everplus Material Co., Ltd.購入機器設備。
+segments:
+- evidence_ids:
+  - e3
+  id: seg_passive
+  name: 被動元件
+  period: '2025'
+  revenue_share_pct: 42
+- evidence_ids:
+  - e3
+  id: seg_active
+  name: 主動元件
+  period: '2025'
+  revenue_share_pct: 23
+- evidence_ids:
+  - e3
+  id: seg_system
+  name: 系統模組
+  period: '2025'
+  revenue_share_pct: 14
+- evidence_ids:
+  - e3
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 21
+main_theme: theme.ai_server
+themes:
+- stage: components
+  theme: theme.ai_server
+  tier: midstream
+- stage: components
+  theme: theme.5g
+  tier: upstream
+relations:
+  subsidiaries:
+  - as_of: '2024-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 2024年出售廠辦公告時的孫公司
+    details:
+    - 2024年出售廠辦公告時的孫公司
+    edge: eb06a94f4c12f
+    evidence_level: primary
+    id: org.dahe-iot
+    name: 大賀智聯網股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-08-05'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 孫公司
+    details:
+    - 孫公司
+    edge: eaf4c2b0e1ffa
+    evidence_level: primary
+    id: org.everplus-material
+    name: Everplus Material Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-08-04'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 重要子公司及現金增資決議
+    details:
+    - 重要子公司及現金增資決議
+    edge: e935b28b05262
+    evidence_level: primary
+    id: org.holy-stone-holdings
+    name: Holy Stone Holdings Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: '2026-10-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: Azoteq產品台灣經銷
+    details:
+    - Azoteq產品台灣經銷
+    edge: ef17a360198a4
+    evidence_level: primary
+    id: org.azoteq
+    name: Azoteq
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 電源元件代理原廠
+    details:
+    - 電源元件代理原廠
+    edge: e1d3751594ee7
+    evidence_level: primary
+    id: tw.2308
+    name: 台達電
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 消費性電子零組件代理原廠
+    details:
+    - 消費性電子零組件代理原廠
+    edge: ed0f2e9b47e51
+    evidence_level: primary
+    id: us.VSH
+    name: VISHAY
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 折合新台幣約812,240仟元
+    as_of: '2026-09-15'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 2025-09-14至2026-09-15累計取得機器設備
+    details:
+    - 2025-09-14至2026-09-15累計取得機器設備
+    edge: ea1ce4ba126fd
+    event_date: '2026-09-15'
+    events:
+    - amount: 折合新台幣約812,240仟元
+      detail: 2025-09-14至2026-09-15累計取得機器設備
+      event_date: '2026-09-15'
+    evidence_level: primary
+    id: org.alphadesign-corporation
+    name: ALPHADESIGN CORPORATION
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣約553,215仟元
+    as_of: '2026-08-05'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 向孫公司購入營業用機器設備
+    details:
+    - 向孫公司購入營業用機器設備
+    edge: e8fef0aed6983
+    event_date: '2026-08-05'
+    events:
+    - amount: 新台幣約553,215仟元
+      detail: 向孫公司購入營業用機器設備
+      event_date: '2026-08-05'
+    evidence_level: primary
+    id: org.everplus-material
+    name: Everplus Material Co., Ltd.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣465,750,000元
+    as_of: '2024-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 孫公司大賀智聯網出售中和廠辦大樓
+    details:
+    - 孫公司大賀智聯網出售中和廠辦大樓
+    edge: e04ac8b084db7
+    event_date: '2024-09-30'
+    events:
+    - amount: 新台幣465,750,000元
+      detail: 孫公司大賀智聯網出售中和廠辦大樓
+      event_date: '2024-09-30'
+    evidence_level: primary
+    id: org.klamath
+    name: 克拉瑪斯股份有限公司
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣440,000,000元
+    as_of: '2026-09-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 取得桃園龍潭潛龍段土地及工二路建物
+    details:
+    - 取得桃園龍潭潛龍段土地及工二路建物
+    edge: e034f5d9eb9ee
+    event_date: '2026-09-23'
+    events:
+    - amount: 新台幣440,000,000元
+      detail: 取得桃園龍潭潛龍段土地及工二路建物
+      event_date: '2026-09-23'
+    evidence_level: primary
+    id: org.zhongchuan-enterprise
+    name: 中傳企業（股）公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 國內外電源大廠
+- AI Server Power供應商
+- 全球主要CSP
+- 日系A
+- 日系B
 website: http://www.holystone.com.tw
 tax_id: '20891326'
 incorporated: '1981-06-01'
 listed: '2002-08-26'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-14'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3026#e1:
+    locator: 公司簡介第二段
+    published_date: null
+    publisher: 禾伸堂企業股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.holystone.com.tw/page_list.php?lang=ch&mlevel1=6&mlevel2=32
+  tw.3026#e10:
+    locator: 公告標題
+    published_date: '2026-08-04'
+    publisher: 公開資訊觀測站（鉅亨網轉載）
+    quote_check: found
+    title: 禾伸堂：代重要子公司Holy Stone Holdings Co., Ltd.公告董事會決議現金增資發行新股
+    url: https://news.cnyes.com/news/id/6558730
+  tw.3026#e11:
+    locator: 公告第6項
+    published_date: '2026-08-05'
+    publisher: 公開資訊觀測站（鉅亨網轉載）
+    quote_check: found
+    title: 禾伸堂：本公司取得營業用機器設備
+    url: https://news.cnyes.com/news/id/6560897
+  tw.3026#e12:
+    locator: 公告第5項
+    published_date: '2026-08-05'
+    publisher: 公開資訊觀測站（鉅亨網轉載）
+    quote_check: found
+    title: 禾伸堂：本公司取得營業用機器設備
+    url: https://news.cnyes.com/news/id/6560897
+  tw.3026#e13:
+    locator: 公告第1、5項
+    published_date: '2026-09-23'
+    publisher: 公開資訊觀測站（MoneyDJ轉載）
+    quote_check: found
+    title: 禾伸堂 補充公告本公司取得不動產
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=fa0f7efb-c9c5-4d22-95ac-fc5129589826
+  tw.3026#e14:
+    locator: 公告第6項
+    published_date: '2026-09-23'
+    publisher: 公開資訊觀測站（MoneyDJ轉載）
+    quote_check: found
+    title: 禾伸堂 補充公告本公司取得不動產
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=fa0f7efb-c9c5-4d22-95ac-fc5129589826
+  tw.3026#e15:
+    locator: 公告第5項
+    published_date: '2026-09-15'
+    publisher: 公開資訊觀測站（MoneyDJ轉載）
+    quote_check: found
+    title: 禾伸堂114/9/14~115/9/15取得營業用機器設備一批，計約8.12億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=90e8da37-8523-40b9-a76e-244c4e60315f
+  tw.3026#e16:
+    locator: 公告第6項
+    published_date: '2026-09-15'
+    publisher: 公開資訊觀測站（MoneyDJ轉載）
+    quote_check: found
+    title: 禾伸堂114/9/14~115/9/15取得營業用機器設備一批，計約8.12億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=90e8da37-8523-40b9-a76e-244c4e60315f
+  tw.3026#e17:
+    locator: 公告標題
+    published_date: '2024-09-30'
+    publisher: 公開資訊觀測站（鉅亨網轉載）
+    quote_check: found
+    title: 禾伸堂：代孫公司大賀智聯網股份有限公司公告出售廠辦大樓
+    url: https://news.cnyes.com/news/id/5727887
+  tw.3026#e18:
+    locator: 公告第3項
+    published_date: '2024-09-30'
+    publisher: 公開資訊觀測站（鉅亨網轉載）
+    quote_check: found
+    title: 禾伸堂：代孫公司大賀智聯網股份有限公司公告出售廠辦大樓
+    url: https://news.cnyes.com/news/id/5727887
+  tw.3026#e19:
+    locator: 公告第4項
+    published_date: '2024-09-30'
+    publisher: 公開資訊觀測站（鉅亨網轉載）
+    quote_check: found
+    title: 禾伸堂：代孫公司大賀智聯網股份有限公司公告出售廠辦大樓
+    url: https://news.cnyes.com/news/id/5727887
+  tw.3026#e2:
+    locator: 公司簡介第二段
+    published_date: null
+    publisher: 禾伸堂企業股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.holystone.com.tw/page_list.php?lang=ch&mlevel1=6&mlevel2=32
+  tw.3026#e20:
+    locator: 公告第2項
+    published_date: '2026-09-15'
+    publisher: 公開資訊觀測站（MoneyDJ轉載）
+    quote_check: found
+    title: 禾伸堂114/9/14~115/9/15取得營業用機器設備一批，計約8.12億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=90e8da37-8523-40b9-a76e-244c4e60315f
+  tw.3026#e3:
+    locator: PDF第11頁，產品營收占比年度趨勢，2025年柱狀圖由上至下：其他、系統模組、被動元件、主動元件
+    published_date: '2026-03-24'
+    publisher: 禾伸堂企業股份有限公司
+    quote_check: found
+    title: 2025全年營運成果法人說明會
+    url: https://www.holystone.com.tw/downloads/files/Investor%20Forum/20260324%20Investor%20Forum_CH.pdf
+  tw.3026#e4:
+    locator: PDF第16頁，AI Server Power、BBU用NP0產品
+    published_date: '2026-03-24'
+    publisher: 禾伸堂企業股份有限公司
+    quote_check: found
+    title: 2025全年營運成果法人說明會
+    url: https://www.holystone.com.tw/downloads/files/Investor%20Forum/20260324%20Investor%20Forum_CH.pdf
+  tw.3026#e5:
+    locator: 第37頁，2.1技術創新，自製產品說明
+    published_date: null
+    publisher: 禾伸堂企業股份有限公司
+    quote_check: found
+    title: 2024年永續報告書
+    url: https://www.holystone.com.tw/downloads/files/CSR/2024%20CSR%20Report_CH.pdf
+  tw.3026#e6:
+    locator: 第11頁，事業簡介，MLCC應用
+    published_date: null
+    publisher: 禾伸堂企業股份有限公司
+    quote_check: found
+    title: 2024年永續報告書
+    url: https://www.holystone.com.tw/downloads/files/CSR/2024%20CSR%20Report_CH.pdf
+  tw.3026#e7:
+    locator: Overview
+    published_date: null
+    publisher: 禾伸堂企業股份有限公司
+    quote_check: found
+    title: Consumer Components Dept.
+    url: https://www.holystone.com.tw/brand_2.php?DetailId=QD48PyomJTRAKCsjJV4r
+  tw.3026#e8:
+    locator: LOCAL & ONLINE SALES，Holy Stone條目
+    published_date: null
+    publisher: Azoteq
+    quote_check: found
+    title: Sales
+    url: https://www.azoteq.com/sales-support/
+  tw.3026#e9:
+    locator: Overview
+    published_date: null
+    publisher: 禾伸堂企業股份有限公司
+    quote_check: found
+    title: Power Components Dept.
+    url: https://www.holystone.com.tw/brand_2.php?DetailId=QD48PyomJTVAKCsjJV4r

@@ -8,12 +8,101 @@ industry:
   l0_code: '24'
   l0_name: 半導體業
   l0_name_en: Semiconductor
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.semi
+  l2_name: 半導體
+  l2_name_en: Semiconductors
+  l3: semi.ic_design
+  l3_name: IC 設計
+  l3_name_en: IC Design
+chain: chain.semiconductor
+primary_chain_position: upstream
+summary_short: 以利基型記憶體為主的IC設計公司，銷售DRAM、Flash及混合訊號晶片。
+summary_long: 晶豪科為專業IC設計公司，從事記憶體與相關積體電路的設計開發及銷售。記憶體產品包括利基型DRAM、低功耗LPDRAM、PSRAM，以及NOR Flash與SLC NAND Flash，另提供多晶片記憶體及KGD晶粒。非記憶體產品涵蓋音訊放大器、電源管理、馬達驅動、無線通訊及溫度與光感測IC。2025年度年報揭露，積體電路銷售收入為新台幣145.75億元，占營業收入百分之百。
+segments:
+- evidence_ids:
+  - e7
+  id: seg_ic
+  name: 積體電路（IC）
+  period: '2025'
+  revenue_share_pct: 100
 website: www.esmt.com.tw
 tax_id: '16130280'
 incorporated: '1998-06-02'
 listed: '2002-03-04'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-14'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3006#e1:
+    locator: 關於晶豪
+    published_date: null
+    publisher: 晶豪科技股份有限公司
+    quote_check: found
+    title: 晶豪科技官網
+    url: https://www.esmt.com.tw/tw
+  tw.3006#e10:
+    locator: 第3頁／主要產品
+    published_date: '2026-03-10'
+    publisher: 晶豪科技股份有限公司／公開資訊觀測站
+    quote_check: found
+    title: 晶豪科技股份有限公司近期營運概況（2026年3月）
+    url: https://mopsov.twse.com.tw/nas/STR/300620260310M001.pdf
+  tw.3006#e2:
+    locator: 探索晶豪的產品／Memory
+    published_date: null
+    publisher: 晶豪科技股份有限公司
+    quote_check: found
+    title: 晶豪科技官網
+    url: https://www.esmt.com.tw/tw
+  tw.3006#e3:
+    locator: DRAM介紹
+    published_date: null
+    publisher: 晶豪科技股份有限公司
+    quote_check: found
+    title: Memory產品目錄
+    url: https://www.esmt.com.tw/tw/product/category/memory
+  tw.3006#e4:
+    locator: NOR Flash產品分類
+    published_date: null
+    publisher: 晶豪科技股份有限公司
+    quote_check: found
+    title: Memory產品目錄
+    url: https://www.esmt.com.tw/tw/product/category/memory
+  tw.3006#e5:
+    locator: NAND Flash介紹
+    published_date: null
+    publisher: 晶豪科技股份有限公司
+    quote_check: found
+    title: Memory產品目錄
+    url: https://www.esmt.com.tw/tw/product/category/memory
+  tw.3006#e6:
+    locator: 第3頁／公司簡介
+    published_date: '2026-03-10'
+    publisher: 晶豪科技股份有限公司／公開資訊觀測站
+    quote_check: found
+    title: 晶豪科技股份有限公司近期營運概況（2026年3月）
+    url: https://mopsov.twse.com.tw/nas/STR/300620260310M001.pdf
+  tw.3006#e7:
+    locator: 營運概況／一、業務內容／（一）業務範圍
+    published_date: '2026-08-05'
+    publisher: FinancialFilings（轉載晶豪科技年報）
+    quote_check: unreachable
+    title: 晶豪科技114年度年報轉載全文
+    url: https://financialfilings.com/filings/esmt-3006/annual-report/2026/49967692/
+  tw.3006#e8:
+    locator: 第3頁／主要產品
+    published_date: '2026-03-10'
+    publisher: 晶豪科技股份有限公司／公開資訊觀測站
+    quote_check: found
+    title: 晶豪科技股份有限公司近期營運概況（2026年3月）
+    url: https://mopsov.twse.com.tw/nas/STR/300620260310M001.pdf
+  tw.3006#e9:
+    locator: 第3頁／主要產品
+    published_date: '2026-03-10'
+    publisher: 晶豪科技股份有限公司／公開資訊觀測站
+    quote_check: found
+    title: 晶豪科技股份有限公司近期營運概況（2026年3月）
+    url: https://mopsov.twse.com.tw/nas/STR/300620260310M001.pdf

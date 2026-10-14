@@ -8,12 +8,429 @@ industry:
   l0_code: '17'
   l0_name: 金融保險業
   l0_name_en: Financial and Insurance
-primary_chain_position: unknown
+  l1: finance
+  l1_name: 金融
+  l1_name_en: Financials
+  l2: fin.banking
+  l2_name: 銀行與金控
+  l2_name_en: Banks & Financial Holdings
+  l3: fin.bank
+  l3_name: 銀行
+  l3_name_en: Banks
+chain: chain.finance
+primary_chain_position: not_applicable
+summary_short: 提供企業與消費金融、信用卡、財富信託及投資等銀行服務。
+summary_long: 聯邦銀行提供企業授信、房屋與汽車等消費性貸款、信用卡、財富管理及信託服務，並經營New New Bank數位存款帳戶。2025年業務收益以投資及其他業務36.71%為最大單項，消費金融占34.43%、企業金融占17.24%、財富信託占11.62%。信用卡合作對象包括LINE Bank、Visa、Mastercard及JCB，合作內容涵蓋聯名發卡、商店綁卡及感應支付。主要子公司包含聯邦國際租賃、聯邦證券投資信託、聯邦創業投資、聯邦網通科技及聯邦證券；聯邦證券於2026年5月由本行分割新設。
+segments:
+- evidence_ids:
+  - e1
+  id: investment_other
+  name: 投資及其他業務
+  period: '2025'
+  revenue_share_pct: 36.71
+- evidence_ids:
+  - e1
+  id: consumer_finance
+  name: 消費金融業務
+  period: '2025'
+  revenue_share_pct: 34.43
+- evidence_ids:
+  - e1
+  id: corporate_finance
+  name: 企業金融業務
+  period: '2025'
+  revenue_share_pct: 17.24
+- evidence_ids:
+  - e1
+  id: wealth_trust
+  name: 財富信託業務
+  period: '2025'
+  revenue_share_pct: 11.62
+relations:
+  partners:
+  - as_of: '2026-10-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 吉鶴卡Apple Pay與日本QUICPay支付
+    details:
+    - 吉鶴卡Apple Pay與日本QUICPay支付
+    edge: e4f02c9afba0c
+    evidence_level: primary
+    id: org.jcb
+    name: JCB
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: LINE Bank聯名信用卡合作發行
+    details:
+    - LINE Bank聯名信用卡合作發行
+    edge: e70a87e28ecab
+    evidence_level: primary
+    id: org.line-bank-taiwan
+    name: LINE Bank
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-09'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 聯邦M世界卡無磁條信用卡
+    details:
+    - 聯邦M世界卡無磁條信用卡
+    edge: e572828cc53dd
+    evidence_level: primary
+    id: us.MA
+    name: 萬事達卡
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2022-10-06'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 商店快綁服務
+    details:
+    - 商店快綁服務
+    edge: ebeae69737283
+    evidence_level: media
+    id: us.V
+    name: Visa
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2026-10-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 租賃子公司
+    details:
+    - 租賃子公司
+    edge: e123b181cd23c
+    evidence_level: primary
+    id: org.union-finance-leasing
+    name: 聯邦國際租賃股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 資訊科技子公司
+    details:
+    - 資訊科技子公司
+    edge: e94ac63e3f213
+    evidence_level: primary
+    id: org.union-information-technology
+    name: 聯邦網通科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-09-01'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 2026年分割新設證券子公司
+    details:
+    - 2026年分割新設證券子公司
+    edge: e407d2a3b3f4c
+    evidence_level: media
+    id: org.union-securities
+    name: 聯邦證券股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 投信子公司
+    details:
+    - 投信子公司
+    edge: e5cd86b628a5c
+    evidence_level: primary
+    id: org.union-securities-investment-trust
+    name: 聯邦證券投資信託股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 創投子公司
+    details:
+    - 創投子公司
+    edge: ef1e3afdb5ed8
+    evidence_level: primary
+    id: org.union-venture-capital
+    name: 聯邦創業投資股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 晶片信用卡代工製發
+    details:
+    - 晶片信用卡代工製發
+    edge: eed40d7a7854b
+    evidence_level: primary
+    id: tw.6593
+    name: 台灣銘板
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 新臺幣250,000仟元
+    as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 參與LINE Bank現金增資
+    details:
+    - 參與LINE Bank現金增資
+    edge: e98bcd274816a
+    event_date: '2025-04-01'
+    events:
+    - amount: 新臺幣250,000仟元
+      detail: 參與LINE Bank現金增資
+      event_date: '2025-04-01'
+    evidence_level: primary
+    id: org.line-bank-taiwan
+    name: LINE Bank
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2026-05-11'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 原擬股權投資案不予執行
+    details:
+    - 原擬股權投資案不予執行
+    edge: ef88b75e5bb2b
+    event_date: '2026-05-11'
+    events:
+    - amount: null
+      detail: 原擬股權投資案不予執行
+      event_date: '2026-05-11'
+    evidence_level: media
+    id: org.modernity-financial-holdings-ltd-cayman-islands
+    name: Modernity Financial Holdings, Ltd(Cayman Islands)
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣600,000,000元
+    as_of: '2026-09-01'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 決議認購子公司現金增資，尚待核准
+    details:
+    - 決議認購子公司現金增資，尚待核准
+    edge: ef43f3e6f1ffa
+    event_date: '2026-08-31'
+    events:
+    - amount: 新台幣600,000,000元
+      detail: 決議認購子公司現金增資，尚待核准
+      event_date: '2026-08-31'
+    evidence_level: media
+    id: org.union-securities
+    name: 聯邦證券股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新臺幣800,000元（含稅）
+    as_of: '2025-07-07'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 承租停車位取得不動產使用權資產
+    details:
+    - 承租停車位取得不動產使用權資產
+    edge: e337765450f30
+    event_date: '2025-07-07'
+    events:
+    - amount: 新臺幣800,000元（含稅）
+      detail: 承租停車位取得不動產使用權資產
+      event_date: '2025-07-07'
+    evidence_level: media
+    id: org.友邦股份有限公司
+    name: 友邦股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 未具名企業授信戶
+- 未具名房屋、汽車及個人信用貸款客戶
+- 未具名信用卡持卡人
 website: www.ubot.com.tw
 tax_id: '86380802'
 incorporated: '1991-12-31'
 listed: '1998-06-29'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-14'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2838#e1:
+    locator: 印刷頁83，業務別收益佔營收比重；數字依序為114年度、113年度及增減比例
+    published_date: '2026-05-08'
+    publisher: 聯邦商業銀行股份有限公司
+    quote_check: found
+    title: 聯邦銀行2025年報
+    url: https://www.ubot.com.tw/file/2025%E5%B9%B4%E5%A0%B1_web.pdf
+  tw.2838#e10:
+    locator: 子公司成員表，聯邦國際租賃列
+    published_date: null
+    publisher: 聯邦商業銀行股份有限公司
+    quote_check: not_found
+    title: 關於聯邦
+    url: https://www.ubot.com.tw/about
+  tw.2838#e11:
+    locator: 子公司成員表，聯邦證券投資信託列
+    published_date: null
+    publisher: 聯邦商業銀行股份有限公司
+    quote_check: not_found
+    title: 關於聯邦
+    url: https://www.ubot.com.tw/about
+  tw.2838#e12:
+    locator: 子公司成員表，聯邦創業投資列
+    published_date: null
+    publisher: 聯邦商業銀行股份有限公司
+    quote_check: not_found
+    title: 關於聯邦
+    url: https://www.ubot.com.tw/about
+  tw.2838#e13:
+    locator: 子公司成員表，聯邦網通科技列
+    published_date: null
+    publisher: 聯邦商業銀行股份有限公司
+    quote_check: not_found
+    title: 關於聯邦
+    url: https://www.ubot.com.tw/about
+  tw.2838#e14:
+    locator: 刊載重大訊息第27項
+    published_date: '2026-09-01'
+    publisher: MoneyDJ理財網
+    quote_check: found
+    title: 聯邦銀董事會通過認購聯邦證券現增股4000萬股，計6億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=3ca7bc4d-7b67-445e-91e7-e5659bcfa42b
+  tw.2838#e15:
+    locator: 印刷頁42，附註九（一）；前文載明2025年4月1日董事決議
+    published_date: null
+    publisher: 聯邦商業銀行股份有限公司
+    quote_check: unreachable
+    title: 聯邦商業銀行股份有限公司及子公司2025年度合併財務報告
+    url: https://www.ubot.com.tw/file/114%E5%B9%B4%E5%BA%A6%E8%81%AF%E9%82%A6%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf
+  tw.2838#e16:
+    locator: 刊載重大訊息標題
+    published_date: '2026-09-01'
+    publisher: MoneyDJ理財網
+    quote_check: found
+    title: 聯邦銀董事會通過認購聯邦證券現增股4000萬股，計6億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=3ca7bc4d-7b67-445e-91e7-e5659bcfa42b
+  tw.2838#e17:
+    locator: 刊載重大訊息第11項
+    published_date: '2026-09-01'
+    publisher: MoneyDJ理財網
+    quote_check: found
+    title: 聯邦銀董事會通過認購聯邦證券現增股4000萬股，計6億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=3ca7bc4d-7b67-445e-91e7-e5659bcfa42b
+  tw.2838#e18:
+    locator: 印刷頁104，重要契約；基準日2026年3月31日
+    published_date: '2026-05-08'
+    publisher: 聯邦商業銀行股份有限公司
+    quote_check: found
+    title: 聯邦銀行2025年報
+    url: https://www.ubot.com.tw/file/2025%E5%B9%B4%E5%A0%B1_web.pdf
+  tw.2838#e19:
+    locator: 刊載重大訊息第3項
+    published_date: '2026-05-11'
+    publisher: MoneyDJ理財網
+    quote_check: found
+    title: 聯邦銀公告預計投資Modernity股權案不予執行
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=7d7b0099-581b-4319-8371-20d02866d827
+  tw.2838#e2:
+    locator: 印刷頁82，主要業務內容第2項
+    published_date: '2025-05-12'
+    publisher: 聯邦商業銀行股份有限公司
+    quote_check: found
+    title: 聯邦銀行2024年報
+    url: https://www.ubot.com.tw/file/113%E9%9B%BB%E5%AD%90%E4%B8%AD%E6%96%87%E5%B9%B4%E5%A0%B10512.pdf
+  tw.2838#e20:
+    locator: 刊載重大訊息標題及第1項
+    published_date: '2025-07-07'
+    publisher: MoneyDJ理財網
+    quote_check: found
+    title: 聯邦銀公告向友邦取得不動產使用權資產
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=46a6e69a-85e8-4bb2-bc1e-e25656f4b50d
+  tw.2838#e21:
+    locator: 刊載重大訊息第5項
+    published_date: '2025-07-07'
+    publisher: MoneyDJ理財網
+    quote_check: found
+    title: 聯邦銀公告向友邦取得不動產使用權資產
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=46a6e69a-85e8-4bb2-bc1e-e25656f4b50d
+  tw.2838#e3:
+    locator: 印刷頁82，主要業務內容第4項
+    published_date: '2025-05-12'
+    publisher: 聯邦商業銀行股份有限公司
+    quote_check: found
+    title: 聯邦銀行2024年報
+    url: https://www.ubot.com.tw/file/113%E9%9B%BB%E5%AD%90%E4%B8%AD%E6%96%87%E5%B9%B4%E5%A0%B10512.pdf
+  tw.2838#e4:
+    locator: 印刷頁82，主要業務內容第5項
+    published_date: '2025-05-12'
+    publisher: 聯邦商業銀行股份有限公司
+    quote_check: found
+    title: 聯邦銀行2024年報
+    url: https://www.ubot.com.tw/file/113%E9%9B%BB%E5%AD%90%E4%B8%AD%E6%96%87%E5%B9%B4%E5%A0%B10512.pdf
+  tw.2838#e5:
+    locator: 文件頁17，壹拾、數位存款電子銀行服務約定事項
+    published_date: null
+    publisher: 聯邦商業銀行股份有限公司
+    quote_check: found
+    title: 聯邦銀行線上開立數位綜合存款帳戶約定書
+    url: https://www.ubot.com.tw/file/%E8%81%AF%E9%82%A6%E9%8A%80%E8%A1%8C%E7%B7%9A%E4%B8%8A%E9%96%8B%E7%AB%8B%E6%95%B8%E4%BD%8D%E7%B6%9C%E5%90%88%E5%AD%98%E6%AC%BE%E5%B8%B3%E6%88%B6%E7%B4%84%E5%AE%9A%E6%9B%B8.pdf
+  tw.2838#e6:
+    locator: LINE Bank聯名卡介紹，Q1
+    published_date: null
+    publisher: 聯邦商業銀行股份有限公司
+    quote_check: found
+    title: LINE Bank聯名卡Q&A
+    url: https://activity.ubot.com.tw/LINEBankCard/faq.htm
+  tw.2838#e7:
+    locator: 正文第2段
+    published_date: '2022-10-06'
+    publisher: 自由財經
+    quote_check: found
+    title: 聯邦銀攜手兩大國際組織「商店快綁」服務同時上線
+    url: https://ec.ltn.com.tw/article/breakingnews/4080701
+  tw.2838#e8:
+    locator: 新聞稿正文首段
+    published_date: '2026-04-09'
+    publisher: Mastercard
+    quote_check: unreachable
+    title: 萬事達卡在台宣告卡片無磁條時代來臨，攜手聯邦銀行推出全台首張無磁條萬事達卡
+    url: https://www.mastercard.com/tw/zh/local/archive/Mastercard-announces-the-arrival-of-the-magnetic-stripe-free-era-in-Taiwan,-launching-Taiwan-s-first-magnetic-stripe-free-Mastercard-in-partnership-with-Union-Bank-.html
+  tw.2838#e9:
+    locator: 頁首合作說明
+    published_date: null
+    publisher: 聯邦商業銀行股份有限公司
+    quote_check: found
+    title: 聯邦銀行吉鶴卡QUICPay教學
+    url: https://card.ubot.com.tw/ECARD/ACTIVITY/JiHoCard_manual/

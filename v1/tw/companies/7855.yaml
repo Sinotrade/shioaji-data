@@ -9,6 +9,41 @@ industry:
   l0_name: 其他業
   l0_name_en: Others
 primary_chain_position: unknown
+relations:
+  parents:
+  - as_of: 2026-06
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過和展投資持有的租賃子公司
+    details:
+    - 透過和展投資持有的租賃子公司
+    edge: e445291aacd16
+    evidence_level: primary
+    id: tw.2207
+    name: 和泰車
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: 2026-06
+    confidence: ai_cross_checked
+    counterparty_shares:
+    - as_of: 2026-06
+      basis: revenue
+      of: tw.2207
+      pct: 1
+    detail: 購買車輛供租賃使用
+    details:
+    - 購買車輛供租賃使用
+    edge: e1254290751e1
+    evidence_level: primary
+    id: tw.2207
+    name: 和泰車
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.hotaileasing.com.tw
 tax_id: '70364778'
 incorporated: '1999-05-24'

@@ -20,5 +20,199 @@ stages:
   name: 整機與系統整合
   tier: downstream
   name_en: Systems
-members: []
-as_of: null
+members:
+- id: tw.1504
+  stage: components
+  tier: upstream
+  detail: 機器人關節動力模組
+  as_of: '2026-07-15'
+  evidence:
+  - tw.1504#e13
+  confidence: ai_cross_checked
+- id: tw.1590
+  stage: components
+  tier: upstream
+  detail: 自動化裝配線及機械手臂用元件
+  as_of: '2026-03-31'
+  evidence:
+  - tw.1590#e7
+  confidence: ai_cross_checked
+- id: tw.2049
+  stage: components
+  tier: upstream
+  detail: 機器人用諧波減速機與行星式滾柱螺桿
+  as_of: '2026-08-19'
+  evidence:
+  - tw.2049#e06
+  - tw.2049#e08
+  confidence: ai_cross_checked
+- id: tw.2049
+  stage: system
+  tier: downstream
+  detail: 多軸工業機器人整機
+  as_of: '2026-10-14'
+  evidence:
+  - tw.2049#e04
+  confidence: ai_cross_checked
+- id: tw.2308
+  stage: system
+  tier: downstream
+  detail: D-Bot協作機器人整機
+  as_of: 2026-10
+  evidence:
+  - tw.2308#e11
+  confidence: ai_cross_checked
+- id: tw.2347
+  stage: control
+  tier: midstream
+  detail: 機器人運算模組通路
+  as_of: 2026-10
+  evidence:
+  - tw.2347#e13
+  - tw.2347#e13b
+  - tw.2347#e14
+  confidence: ai_cross_checked
+- id: tw.2354
+  stage: components
+  tier: upstream
+  detail: 機器人關鍵零件開發與供應
+  as_of: '2026-03-17'
+  evidence:
+  - tw.2354#e5
+  confidence: ai_cross_checked
+- id: tw.2354
+  stage: system
+  tier: downstream
+  detail: 服務型與人形機器人製造、組裝
+  as_of: '2026-03-17'
+  evidence:
+  - tw.2354#e5
+  confidence: ai_cross_checked
+- id: tw.2379
+  stage: components
+  tier: upstream
+  detail: 機器人單對線乙太網PHY
+  as_of: '2026-10-08'
+  evidence:
+  - tw.2379#e8
+  confidence: ai_cross_checked
+- id: tw.2379
+  stage: control
+  tier: midstream
+  detail: 機械手臂SoC控制器及EtherCAT MCU
+  as_of: '2026-10-08'
+  evidence:
+  - tw.2379#e9
+  confidence: ai_cross_checked
+- id: tw.2395
+  stage: control
+  tier: midstream
+  detail: 機器人邊緣AI運算模組與控制平台
+  as_of: '2026-03-17'
+  evidence:
+  - tw.2395#e4
+  - tw.2395#e5
+  confidence: ai_cross_checked
+- id: tw.2464
+  stage: null
+  tier: null
+  detail: 機器人整機與系統應用
+  as_of: '2026-10-13'
+  evidence:
+  - tw.2464#e2
+  - tw.2464#e7
+  - tw.2464#e10
+  confidence: ai_cross_checked
+- id: tw.3023
+  stage: components
+  tier: upstream
+  detail: 機器人連接線與連接器
+  as_of: '2024-09-23'
+  evidence:
+  - tw.3023#e23
+  confidence: ai_cross_checked
+- id: tw.3406
+  stage: components
+  tier: upstream
+  detail: 機器人視覺光學感測零組件
+  as_of: '2026-10-14'
+  evidence:
+  - tw.3406#e6
+  confidence: ai_cross_checked
+- id: tw.3577
+  stage: control
+  tier: midstream
+  detail: EtherCAT單軸機器人運動控制
+  as_of: '2026-10-13'
+  evidence:
+  - tw.3577#e5
+  - tw.3577#e6
+  confidence: ai_cross_checked
+- id: tw.3702
+  stage: control
+  tier: midstream
+  detail: 詮鼎集團的機器人關節與靈巧手參考方案
+  as_of: '2026-10-09'
+  evidence:
+  - tw.3702#e10
+  confidence: ai_cross_checked
+- id: tw.4919
+  stage: control
+  tier: midstream
+  detail: M3351微控制器支援機器人控制
+  as_of: '2026-09-18'
+  evidence:
+  - tw.4919#e_robotics
+  - tw.4919#e_mcu
+  confidence: ai_cross_checked
+- id: tw.6414
+  stage: system
+  tier: downstream
+  detail: 機器人與數位雙生之軟體及平台整合應用
+  as_of: 2026-10
+  evidence:
+  - tw.6414#e6
+  - tw.6414#e9
+  confidence: ai_cross_checked
+- id: tw.6548
+  stage: components
+  tier: upstream
+  detail: 機器人應用之半導體封裝材料
+  as_of: '2026-07-29'
+  evidence:
+  - tw.6548#e17
+  confidence: ai_cross_checked
+- id: tw.6570
+  stage: control
+  tier: midstream
+  detail: 機械手臂視覺檢測運算平台
+  as_of: '2024-08-19'
+  evidence:
+  - tw.6570#e11
+  confidence: ai_cross_checked
+- id: tw.7750
+  stage: control
+  tier: midstream
+  detail: 機器人控制器
+  as_of: 2026-10
+  evidence:
+  - tw.7750#e7
+  confidence: ai_cross_checked
+- id: tw.7750
+  stage: system
+  tier: downstream
+  detail: 透過聯達智能提供機器人與自動化系統整合
+  as_of: 2026-08
+  evidence:
+  - tw.7750#e8
+  - tw.7750#e14
+  confidence: ai_cross_checked
+- id: tw.9105
+  stage: system
+  tier: downstream
+  detail: 透過子公司提供機器手臂及自動化系統
+  as_of: '2024-12-31'
+  evidence:
+  - tw.9105#E17
+  confidence: ai_cross_checked
+as_of: '2026-10-14'

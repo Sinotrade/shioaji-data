@@ -19,5 +19,21 @@ stages:
   name: 先進製程晶圓廠
   tier: downstream
   name_en: Wafer Fabrication
-members: []
-as_of: null
+members:
+- id: tw.4749
+  stage: materials
+  tier: upstream
+  detail: EUV製程用BARC周邊材料
+  as_of: 2025-12
+  evidence:
+  - tw.4749#e9
+  confidence: ai_cross_checked
+- id: tw.6196
+  stage: equipment
+  tier: midstream
+  detail: 極紫外光設備模組製造服務
+  as_of: '2023-06-02'
+  evidence:
+  - tw.6196#e14
+  confidence: ai_cross_checked
+as_of: 2025-12
