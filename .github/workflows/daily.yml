@@ -1,0 +1,54 @@
+name: daily-build
+
+# 每個交易日抓官方開放資料（基本資料、收盤價、市值、月營收），與研究資料一起建置後發布到這個 repo。
+# 建置程式在私有的 Sinotrade/shioaji-data-pipeline，用唯讀 deploy key（PIPELINE_DEPLOY_KEY）拿下來跑。
+on:
+  schedule:
+    # 10/14 實測：證交所個股日成交 13:56、櫃買上櫃股票行情 14:55 就有當日資料
+    - cron: "10 7 * * 1-5"    # 15:10 台北時間
+    - cron: "30 9 * * 1-5"    # 17:30 補跑（內容沒變就不發布）
+    - cron: "30 13 * * 1-5"   # 21:30 再補一次
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+jobs:
+  build-publish:
+    runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Taipei
+    steps:
+      - name: Checkout data repo
+        uses: actions/checkout@v4
+        with:
+          path: site
+      - name: Checkout pipeline (private)
+        uses: actions/checkout@v4
+        with:
+          repository: Sinotrade/shioaji-data-pipeline
+          ssh-key: ${{ secrets.PIPELINE_DEPLOY_KEY }}
+          path: pipeline
+      - uses: astral-sh/setup-uv@v6
+      - name: Build (fetch official data)
+        working-directory: pipeline
+        run: |
+          uv sync --frozen
+          uv run python -m sjdata.build --fetch
+          uv run python -m sjdata.validate dist
+      - name: Merge build into data repo
+        working-directory: pipeline
+        run: uv run python -m sjdata.publish --build dist --site ../site
+      - name: Commit and push
+        working-directory: site
+        run: |
+          git config user.name "shioaji-data-bot"
+          git config user.email "shioaji-data-bot@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then echo "no changes"; exit 0; fi
+          git commit -m "release $(jq -r .release_id v1/manifest.json)"
+          git push origin HEAD:main
