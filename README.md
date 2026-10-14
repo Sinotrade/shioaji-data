@@ -8,7 +8,7 @@
 
 這個 repo 就是資料本身，兩種方式讀的是同一份內容：
 
-- HTTPS：讀 `v1/manifest.json`，依其中的路徑與 sha256 下載需要的檔案（檔名帶 content hash，內容永不改變）。
+- HTTPS：讀 `v1/manifest.json`，依其中的路徑下載需要的檔案；sha256 沒變就不用重抓，下載時加 `?v=<sha256>` 可避開 CDN 快取。
 - 本機：`git clone https://github.com/Sinotrade/shioaji-data.git`，之後 `git pull` 更新，讀本機的 `v1/manifest.json`。
 
 ```text
@@ -17,12 +17,12 @@ v1/manifest.json                     檔案清單、sha256、各資料集 schema
 v1/global/entities/                  實體字典：tw.2330、us.NVDA、jp.8035、theme.cowos …
 v1/global/sources/                   來源、授權與標示文字
 v1/global/taxonomy/                  產業分類（類別 > 產業群 > 產業）
-v1/tw/companies/cards.*.json         每家公司的小卡
-v1/tw/companies/<code>.*.json        單一公司完整資料（雙向關係、出處）
-v1/tw/relations/edges.*.json         關係邊表
-v1/tw/themes/themes.*.json           產業鏈與題材，含成員、階段、上中下游
-v1/tw/market/daily.*.json            收盤價與市值（每個交易日更新）
-v1/tw/revenue/latest.*.json          最新月營收
+v1/tw/companies/cards.json           每家公司的小卡
+v1/tw/companies/json/<code>.json     單一公司完整資料（雙向關係、出處）
+v1/tw/relations/edges.json         關係邊表
+v1/tw/themes/themes.json           產業鏈與題材，含成員、階段、上中下游
+v1/tw/market/daily.json            收盤價與市值（每個交易日更新）
+v1/tw/revenue/latest.json          最新月營收
 v1/tw/companies/<code>.yaml          每家公司一個 YAML（固定檔名，方便閱讀與看歷史變更）
 v1/tw/companies/<code>.md            同一份資料的 Markdown 頁面；README.md 是全部公司索引
 v1/tw/themes/<id>.yaml               每個產業鏈與題材一個 YAML
