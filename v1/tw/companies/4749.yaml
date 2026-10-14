@@ -40,15 +40,15 @@ themes:
 - stage: display
   theme: theme.mini_led
   tier: downstream
+- stage: make
+  theme: theme.photoresist
+  tier: midstream
 - stage: packaging
   theme: theme.cpo
   tier: midstream
 - stage: materials
   theme: theme.cowos
   tier: upstream
-- stage: make
-  theme: theme.photoresist
-  tier: midstream
 - stage: materials
   theme: theme.euv
   tier: upstream

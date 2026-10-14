@@ -57,15 +57,15 @@ themes:
 - stage: board_materials
   theme: theme.ai_server
   tier: upstream
+- stage: make
+  theme: theme.photoresist
+  tier: midstream
 - stage: materials
   theme: theme.cowos
   tier: upstream
 - stage: equipment_materials
   theme: theme.hbm
   tier: upstream
-- stage: make
-  theme: theme.photoresist
-  tier: midstream
 relations:
   customers:
   - as_of: '2025-12-15'

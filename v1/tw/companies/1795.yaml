@@ -8,12 +8,206 @@ industry:
   l0_code: '22'
   l0_name: 生技醫療業
   l0_name_en: Biotechnology and Medical Care
-primary_chain_position: unknown
+  l1: health
+  l1_name: 醫療保健
+  l1_name_en: Healthcare
+  l2: health.pharma
+  l2_name: 製藥與生技
+  l2_name_en: Pharmaceuticals & Biotech
+  l3: bio.generic
+  l3_name: 學名藥與原料藥
+  l3_name_en: Generics & APIs
+chain: chain.biotech
+primary_chain_position: midstream
+summary_short: 以困難學名藥及腫瘤用藥的研發、製造與銷售為核心。
+summary_long: 美時以高門檻腫瘤用藥及困難學名藥的開發、製造與商業化為核心，產品組合亦涵蓋品牌藥及生物相似藥。2026年上半年，學名藥占營收76%，品牌藥占20%，生物相似藥占4%。主要藥品包括Lenalidomide、Suboxone、Nintedanib及Enzalutamide學名藥。集團透過韓國子公司Alvogen Korea及美國間接子公司Alvogen, Inc.與Norwich Pharmaceuticals, Inc.拓展藥品業務。
+segments:
+- evidence_ids:
+  - e03
+  id: generic
+  name: 學名藥
+  period: 2026年上半年
+  revenue_share_pct: 76
+- evidence_ids:
+  - e03
+  id: brand
+  name: 品牌藥
+  period: 2026年上半年
+  revenue_share_pct: 20
+- evidence_ids:
+  - e03
+  id: biosimilar
+  name: 生物相似藥
+  period: 2026年上半年
+  revenue_share_pct: 4
+relations:
+  subsidiaries:
+  - as_of: '2026-09-24'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 美國間接營運子公司
+    details:
+    - 美國間接營運子公司
+    edge: e44ad3cc3b6dc
+    evidence_level: primary
+    id: org.alvogen-inc
+    name: Alvogen, Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-07'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過Alvogen Korea Holdings持有的韓國營運子公司
+    details:
+    - 透過Alvogen Korea Holdings持有的韓國營運子公司
+    edge: ed26e1f241c59
+    evidence_level: primary
+    id: org.alvogen-korea
+    name: Alvogen Korea Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有的韓國控股子公司
+    details:
+    - 直接持有的韓國控股子公司
+    edge: ed9f8059d9133
+    evidence_level: primary
+    id: org.alvogen-korea-holdings
+    name: Alvogen Korea Holdings Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-08-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 美國間接子公司
+    details:
+    - 美國間接子公司
+    edge: eb3548b730e02
+    evidence_level: primary
+    id: org.alvogen-pharma-us
+    name: Alvogen Pharma US Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有的新加坡子公司
+    details:
+    - 直接持有的新加坡子公司
+    edge: e4b0c562802f6
+    evidence_level: primary
+    id: org.lotus-international
+    name: Lotus International Pte. Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-08-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: Alvogen Pharma US旗下的美國間接子公司
+    details:
+    - Alvogen Pharma US旗下的美國間接子公司
+    edge: ef36ca345006d
+    evidence_level: primary
+    id: org.norwich-pharmaceuticals
+    name: Norwich Pharmaceuticals, Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.lotuspharm.com.tw
 tax_id: '11456110'
 incorporated: '1966-06-30'
 listed: '2019-12-16'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-15'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1795#e01:
+    locator: 印刷頁64，肆、營運概況／公司所營業務主要內容
+    published_date: '2026-04-10'
+    publisher: 美時化學製藥股份有限公司
+    quote_check: found
+    title: 美時化學製藥股份有限公司2025年度年報
+    url: https://api.lotuspharm.com/shareholders-meeting/download?id=14&index=3&locale=zh_TW
+  tw.1795#e02:
+    locator: 成長策略／多元產品組合
+    published_date: null
+    publisher: 美時化學製藥股份有限公司
+    quote_check: found
+    title: 投資美時
+    url: https://www.lotuspharm.com/zh-TW/investors
+  tw.1795#e03:
+    locator: 第12頁，Revenue Breakdown右側產品類別圖；Generic 76%、Brand 20%、Biosimilar 4%，已核對圖表標籤及顏色
+    published_date: '2026-08-14'
+    publisher: 美時化學製藥股份有限公司
+    quote_check: found
+    title: Lotus Pharmaceutical 1H26 Financial Results
+    url: https://api.lotuspharm.com/storage/consolidated-financial-reports/Lotus%202Q26%20earnings%20presentation%20vF.pdf
+  tw.1795#e04:
+    locator: 多元產品組合／困難學名藥段落
+    published_date: null
+    publisher: 美時化學製藥股份有限公司
+    quote_check: found
+    title: 美時
+    url: https://www.lotuspharm.com/zh-TW
+  tw.1795#e05:
+    locator: 2026 YTD營運亮點／研發方面
+    published_date: '2026-08-13'
+    publisher: 美時化學製藥股份有限公司
+    quote_check: found
+    title: 美時製藥公告2026年上半年合併營收創歷史新高；第二季獲利表現改善
+    url: https://www.lotuspharm.com/zh-TW/newsroom/news-page/334
+  tw.1795#e06:
+    locator: PDF第13頁，附註4(2)A合併子公司清單；Investor為The Company
+    published_date: null
+    publisher: 美時化學製藥股份有限公司
+    quote_check: unreachable
+    title: Lotus Pharmaceutical Co., Ltd. and Subsidiaries：2026年上半年合併財務報告
+    url: https://api.lotuspharm.com/storage/consolidated-financial-reports/202602_1795_AIA_20260817_154505.pdf
+  tw.1795#e07:
+    locator: PDF第13頁，附註4(2)A合併子公司清單；Investor為The Company
+    published_date: null
+    publisher: 美時化學製藥股份有限公司
+    quote_check: unreachable
+    title: Lotus Pharmaceutical Co., Ltd. and Subsidiaries：2026年上半年合併財務報告
+    url: https://api.lotuspharm.com/storage/consolidated-financial-reports/202602_1795_AIA_20260817_154505.pdf
+  tw.1795#e08:
+    locator: PDF第13頁，附註4(2)A合併子公司清單；Investor為Alvogen Korea Holdings
+    published_date: null
+    publisher: 美時化學製藥股份有限公司
+    quote_check: unreachable
+    title: Lotus Pharmaceutical Co., Ltd. and Subsidiaries：2026年上半年合併財務報告
+    url: https://api.lotuspharm.com/storage/consolidated-financial-reports/202602_1795_AIA_20260817_154505.pdf
+  tw.1795#e09:
+    locator: 首段及韓國營運說明
+    published_date: '2026-10-07'
+    publisher: 美時化學製藥股份有限公司
+    quote_check: found
+    title: 美時製藥宣布完成韓國 UroVaxom® 收購案，取得韓國藥證
+    url: https://www.lotuspharm.com/zh-TW/newsroom/news-page/342
+  tw.1795#e10:
+    locator: 首段
+    published_date: '2026-09-24'
+    publisher: 美時化學製藥股份有限公司
+    quote_check: found
+    title: 美時製藥宣布Diazoxide Choline緩釋錠學名藥藥證申請獲FDA受理，成為唯一首家申請藥廠
+    url: https://www.lotuspharm.com/zh-TW/newsroom/news-page/341
+  tw.1795#e11:
+    locator: 首段
+    published_date: '2026-08-26'
+    publisher: 美時化學製藥股份有限公司
+    quote_check: found
+    title: 美時製藥宣布子公司Norwich之Rifaximin學名藥藥證申請獲美國聯邦上訴法院有利判決
+    url: https://www.lotuspharm.com/zh-TW/newsroom/news-page/338

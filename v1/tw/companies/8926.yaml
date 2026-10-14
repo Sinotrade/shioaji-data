@@ -8,12 +8,252 @@ industry:
   l0_code: '23'
   l0_name: 油電燃氣業
   l0_name_en: Oil, Gas and Electricity
-primary_chain_position: unknown
+  l1: energy
+  l1_name: 能源
+  l1_name_en: Energy & Utilities
+  l2: energy.traditional
+  l2_name: 傳統能源
+  l2_name_en: Conventional Energy & Utilities
+  l3: energy.power_gen
+  l3_name: 發電與售電
+  l3_name_en: Power Generation & Retail
+primary_chain_position: not_applicable
+summary_short: 經營汽電共生與天然氣發電，並提供電業工程、運維及綠電售電服務。
+summary_long: 台汽電以汽電共生、天然氣發電及電業工程服務為主要業務，汽電共生業務供應電力與蒸汽，天然氣電廠由星能電力、森霸電力及星元電力等子公司營運。2026年第一季合併營收中，銷貨占91%、工程占8%、運轉及服務占1%。集團提供電廠與輸變電工程統包及運轉維護服務；子公司星能股份承攬電力工程，台汽電綠能經營再生能源購售電與輔助服務。地熱業務目前評估其他開發專案及籌組鑽井團隊。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_sales
+  name: 銷貨收入
+  period: 2026Q1
+  revenue_share_pct: 91
+- evidence_ids:
+  - e3
+  id: seg_engineering
+  name: 工程收入
+  period: 2026Q1
+  revenue_share_pct: 8
+- evidence_ids:
+  - e4
+  id: seg_services
+  name: 運轉及服務收入
+  period: 2026Q1
+  revenue_share_pct: 1
+main_theme: theme.power_grid
+themes:
+- stage: engineering
+  theme: theme.power_grid
+  tier: downstream
+relations:
+  subsidiaries:
+  - as_of: '2026-08-21'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 再生能源購售電子公司
+    details:
+    - 再生能源購售電子公司
+    edge: e948123f05ec6
+    evidence_level: primary
+    id: org.台汽電綠能股份有限公司
+    name: 台汽電綠能股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-08-21'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 天然氣發電子公司
+    details:
+    - 天然氣發電子公司
+    edge: e401372122e9f
+    evidence_level: primary
+    id: org.星元電力股份有限公司
+    name: 星元電力股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-08-21'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資電力工程子公司
+    details:
+    - 全資電力工程子公司
+    edge: efdccfc1e2b8a
+    evidence_level: primary
+    id: org.星能股份有限公司
+    name: 星能股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-08-21'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 天然氣發電子公司
+    details:
+    - 天然氣發電子公司
+    edge: eea14602b7053
+    evidence_level: primary
+    id: org.星能電力股份有限公司
+    name: 星能電力股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-08-21'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 天然氣發電子公司
+    details:
+    - 天然氣發電子公司
+    edge: ec4ac3708bc56
+    evidence_level: primary
+    id: org.森霸電力股份有限公司
+    name: 森霸電力股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-08-21'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資風力發電子公司
+    details:
+    - 全資風力發電子公司
+    edge: e2e65bc9d657a
+    evidence_level: primary
+    id: org.苗栗風力股份有限公司
+    name: 苗栗風力股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.cogen.com.tw
 tax_id: '86685142'
 incorporated: '1992-05-07'
 listed: '2003-08-25'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-15'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.8926#e10:
+    locator: 簡報第19頁，地熱開發
+    published_date: '2026-08-21'
+    publisher: 台灣汽電共生股份有限公司
+    quote_check: found
+    title: 115年8月21日法人說明會簡報
+    url: https://www.cogen.com.tw/files/04c44371353E6C97Da721d07325003767f791ff7.pdf
+  tw.8926#e11:
+    locator: 第24頁，附註十四子公司；表列星能股份、台汽電綠能、苗栗風力、森霸電力、星能電力及星元電力
+    published_date: '2026-05-12'
+    publisher: 台灣汽電共生股份有限公司
+    quote_check: unreachable
+    title: 民國115及114年第1季合併財務報表暨會計師核閱報告
+    url: https://www.cogen.com.tw/files/f9C1AF84Ff307921bA14456E0c46E07b8F8DC86C.pdf
+  tw.8926#e12:
+    locator: 星能電力股份有限公司，公司簡介
+    published_date: null
+    publisher: 台灣汽電共生股份有限公司
+    quote_check: found
+    title: 台灣汽電共生｜集團企業
+    url: https://www.cogen.com.tw/tw/TCC-Group
+  tw.8926#e13:
+    locator: 森霸電力股份有限公司，公司簡介
+    published_date: null
+    publisher: 台灣汽電共生股份有限公司
+    quote_check: found
+    title: 台灣汽電共生｜集團企業
+    url: https://www.cogen.com.tw/tw/TCC-Group
+  tw.8926#e14:
+    locator: 星元電力股份有限公司，公司簡介
+    published_date: null
+    publisher: 台灣汽電共生股份有限公司
+    quote_check: found
+    title: 台灣汽電共生｜集團企業
+    url: https://www.cogen.com.tw/tw/TCC-Group
+  tw.8926#e15:
+    locator: 星能電力、森霸電力及星元電力各公司簡介的主要業務欄
+    published_date: null
+    publisher: 台灣汽電共生股份有限公司
+    quote_check: found
+    title: 台灣汽電共生｜集團企業
+    url: https://www.cogen.com.tw/tw/TCC-Group
+  tw.8926#e16:
+    locator: 苗栗風力股份有限公司，公司簡介
+    published_date: null
+    publisher: 台灣汽電共生股份有限公司
+    quote_check: found
+    title: 台灣汽電共生｜集團企業
+    url: https://www.cogen.com.tw/tw/TCC-Group
+  tw.8926#e17:
+    locator: 公司概況，星能股份有限公司介紹
+    published_date: null
+    publisher: 台灣汽電共生股份有限公司
+    quote_check: found
+    title: 台灣汽電共生｜公司概況
+    url: https://www.cogen.com.tw/tw/Profile
+  tw.8926#e18:
+    locator: 公司概況，台汽電綠能介紹
+    published_date: null
+    publisher: 台灣汽電共生股份有限公司
+    quote_check: found
+    title: 台灣汽電共生｜公司概況
+    url: https://www.cogen.com.tw/tw/Profile
+  tw.8926#e2:
+    locator: 第6頁，合併綜合損益表，115年第一季金額及百分比欄
+    published_date: '2026-05-12'
+    publisher: 台灣汽電共生股份有限公司
+    quote_check: unreachable
+    title: 民國115及114年第1季合併財務報表暨會計師核閱報告
+    url: https://www.cogen.com.tw/files/f9C1AF84Ff307921bA14456E0c46E07b8F8DC86C.pdf
+  tw.8926#e3:
+    locator: 第6頁，合併綜合損益表，115年第一季金額及百分比欄
+    published_date: '2026-05-12'
+    publisher: 台灣汽電共生股份有限公司
+    quote_check: unreachable
+    title: 民國115及114年第1季合併財務報表暨會計師核閱報告
+    url: https://www.cogen.com.tw/files/f9C1AF84Ff307921bA14456E0c46E07b8F8DC86C.pdf
+  tw.8926#e4:
+    locator: 第6頁，合併綜合損益表，115年第一季金額及百分比欄
+    published_date: '2026-05-12'
+    publisher: 台灣汽電共生股份有限公司
+    quote_check: unreachable
+    title: 民國115及114年第1季合併財務報表暨會計師核閱報告
+    url: https://www.cogen.com.tw/files/f9C1AF84Ff307921bA14456E0c46E07b8F8DC86C.pdf
+  tw.8926#e5:
+    locator: 簡報第10頁，合併營收，115年1至7月；單位新台幣仟元
+    published_date: '2026-08-21'
+    publisher: 台灣汽電共生股份有限公司
+    quote_check: found
+    title: 115年8月21日法人說明會簡報
+    url: https://www.cogen.com.tw/files/04c44371353E6C97Da721d07325003767f791ff7.pdf
+  tw.8926#e6:
+    locator: 第130頁，主要產品及用途
+    published_date: '2026-03-31'
+    publisher: 台灣汽電共生股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.cogen.com.tw/files/57700f18b821825124DEa1f3Bdb75871B91ED140.pdf
+  tw.8926#e7:
+    locator: 工程承攬業務介紹
+    published_date: null
+    publisher: 台灣汽電共生股份有限公司
+    quote_check: found
+    title: 台灣汽電共生｜工程承攬
+    url: https://www.cogen.com.tw/tw/Engineering-Contracting
+  tw.8926#e8:
+    locator: 運轉維護業務介紹
+    published_date: null
+    publisher: 台灣汽電共生股份有限公司
+    quote_check: found
+    title: 台灣汽電共生｜運轉維護
+    url: https://www.cogen.com.tw/tw/Operation-and-Maintenance
+  tw.8926#e9:
+    locator: 技術諮詢與集團服務介紹
+    published_date: null
+    publisher: 台灣汽電共生股份有限公司
+    quote_check: found
+    title: 台灣汽電共生｜技術諮詢
+    url: https://www.cogen.com.tw/tw/Technical-Consultation

@@ -22,6 +22,14 @@ stages:
   tier: downstream
   name_en: Applications
 members:
+- id: tw.3016
+  stage: substrate
+  tier: upstream
+  detail: 矽基氮化鎵磊晶材料
+  as_of: '2026-10-15'
+  evidence:
+  - tw.3016#e6
+  confidence: ai_cross_checked
 - id: tw.3105
   stage: devices
   tier: midstream
@@ -71,6 +79,14 @@ members:
   evidence:
   - tw.6182#e10
   confidence: ai_cross_checked
+- id: tw.6271
+  stage: application
+  tier: downstream
+  detail: GaN功率元件與模組封裝測試
+  as_of: '2026-04-15'
+  evidence:
+  - tw.6271#e6
+  confidence: ai_cross_checked
 - id: tw.6488
   stage: substrate
   tier: upstream
@@ -95,4 +111,12 @@ members:
   evidence:
   - tw.6770#e14
   confidence: ai_cross_checked
-as_of: '2026-10-14'
+- id: tw.8028
+  stage: devices
+  tier: midstream
+  detail: GaN晶圓薄化加工
+  as_of: '2026-10-14'
+  evidence:
+  - tw.8028#e7
+  confidence: ai_cross_checked
+as_of: '2026-10-15'
