@@ -8,12 +8,111 @@ industry:
   l0_code: '25'
   l0_name: 電腦及週邊設備業
   l0_name_en: Computer and Peripheral Equipment
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.hardware
+  l2_name: 電腦與硬體
+  l2_name_en: Computers & Hardware
+  l3: hw.server
+  l3_name: 伺服器與資料中心設備
+  l3_name_en: Servers & Data Center Equipment
+chain: chain.server
+primary_chain_position: midstream
+summary_short: 以伺服器主機板與整機系統的開發及銷售為主要業務。
+summary_long: 永擎電子以伺服器主機板與整機系統的開發及銷售為主要業務，2025年伺服器周邊產品占營收93.57%，其他占6.43%。產品涵蓋HGX B300平台AI GPU伺服器及IGX Thor平台邊緣AI伺服器，其中AI GPU伺服器用於資料中心AI訓練與推論。公司並在伺服器導入兩相式直接液冷技術。華擎科技為母公司，和碩聯合科技為最終母公司；永擎持有美國子公司全部股權，該子公司負責美洲地區銷售服務。
+segments:
+- evidence_ids:
+  - e2
+  id: seg.server
+  name: 伺服器周邊產品
+  period: '2025'
+  revenue_share_pct: 93.57
+- evidence_ids:
+  - e2
+  id: seg.other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 6.43
+relations:
+  parents:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 伺服器業務子公司
+    details:
+    - 伺服器業務子公司
+    - 母公司
+    edge: ec006c7bb3339
+    evidence_level: primary
+    id: tw.3515
+    name: 華擎
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 2
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 最終母公司
+    details:
+    - 最終母公司
+    edge: e356ad7b9afc5
+    evidence_level: primary
+    id: tw.4938
+    name: 和碩
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資美國子公司
+    details:
+    - 全資美國子公司
+    edge: e6570f01bb513
+    evidence_level: primary
+    id: org.asrock-rack-america
+    name: ASROCK RACK AMERICA INC.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.asrockrack.com
 tax_id: '54161333'
 incorporated: '2013-01-29'
 listed: '2025-11-19'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-15'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.7711#e1:
+    locator: 印刷頁 56，肆、營運概況，一、業務內容
+    published_date: null
+    publisher: 永擎電子股份有限公司
+    quote_check: found
+    title: 永擎電子股份有限公司 2025 年度年報
+    url: https://www.asrockrack.com/general/Investor/AnnualReport(115).pdf
+  tw.7711#e2:
+    locator: 印刷頁 56，主要產品之營業比重，114 年度
+    published_date: null
+    publisher: 永擎電子股份有限公司
+    quote_check: found
+    title: 永擎電子股份有限公司 2025 年度年報
+    url: https://www.asrockrack.com/general/Investor/AnnualReport(115).pdf
+  tw.7711#e3:
+    locator: 印刷頁 46，七、關係人交易，關係人名稱及關係
+    published_date: '2026-08-04'
+    publisher: 永擎電子股份有限公司
+    quote_check: found
+    title: 永擎電子股份有限公司及子公司 2026 年第二季合併財務報告
+    url: https://www.asrockrack.com/general/Investor/Merger(115Q2).pdf
+  tw.7711#e4:
+    locator: 印刷頁 13，四、重大會計政策之彙總說明，合併概況；權益百分比欄含 115.06.30
+    published_date: '2026-08-04'
+    publisher: 永擎電子股份有限公司
+    quote_check: found
+    title: 永擎電子股份有限公司及子公司 2026 年第二季合併財務報告
+    url: https://www.asrockrack.com/general/Investor/Merger(115Q2).pdf

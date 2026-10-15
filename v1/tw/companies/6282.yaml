@@ -8,12 +8,133 @@ industry:
   l0_code: '28'
   l0_name: 電子零組件業
   l0_name_en: Electronic Parts and Components
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.power
+  l3_name: 電源供應器與電源管理模組
+  l3_name_en: Power Supplies & Power Modules
+chain: chain.server
+primary_chain_position: upstream
+summary_short: 研發、製造及銷售電源供應器，並提供車用電源與綠能服務。
+summary_long: 康舒以電源供應器與電源管理產品為主要業務，2025年電源及零組件占營收93.92%，五金零件及其他占6.08%。產品涵蓋消費性電子、企業雲端伺服器、資料中心及電信應用，並提供電動車車載充電器與充電設備。公司亦提供綠能服務，並規劃開發採用SiC的高壓車載充電器。AI雲端伺服器電源屬其企業用產品範圍；OmniOn Power Inc.為其間接全資子公司。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_power
+  name: 電源及零組件
+  period: '2025'
+  revenue_share_pct: 93.92
+- evidence_ids:
+  - e1
+  id: seg_other
+  name: 五金零件及其他
+  period: '2025'
+  revenue_share_pct: 6.08
+main_theme: theme.ev
+themes:
+- stage: parts
+  theme: theme.ev
+  tier: midstream
+- stage: vehicle
+  theme: theme.ev
+  tier: downstream
+- stage: components
+  theme: theme.ai_server
+  tier: midstream
+- stage: equipment
+  theme: theme.data_center
+  tier: upstream
+- stage: application
+  theme: theme.sic
+  tier: downstream
+relations:
+  subsidiaries:
+  - as_of: '2026-03-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接全資子公司
+    details:
+    - 間接全資子公司
+    edge: ed4817f9895e7
+    evidence_level: primary
+    id: org.omnion-power
+    name: OmniOn Power Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.acbel.com
 tax_id: '12341051'
 incorporated: '1981-07-29'
 listed: '2003-09-08'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-15'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6282#e1:
+    locator: 印刷頁71，主要產（商）品之營業比重
+    published_date: '2026-03-30'
+    publisher: 康舒科技股份有限公司
+    quote_check: found
+    title: 康舒科技114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52551/2026/RNS/52551_rns_2026-06-15_df7b3b12-4986-4761-8808-f67c9472973b.pdf
+  tw.6282#e10:
+    locator: 印刷頁63，直接或間接控制事業之持股表；欄位依序為本公司投資、受控制事業投資及綜合投資
+    published_date: '2026-03-30'
+    publisher: 康舒科技股份有限公司
+    quote_check: found
+    title: 康舒科技114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52551/2026/RNS/52551_rns_2026-06-15_df7b3b12-4986-4761-8808-f67c9472973b.pdf
+  tw.6282#e3:
+    locator: 第6頁，主要產品
+    published_date: '2026-09-14'
+    publisher: 康舒科技股份有限公司
+    quote_check: found
+    title: 康舒科技2026年9月法說簡報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52551/2026/RNS/52551_rns_2026-09-14_f81eb648-78a9-4b02-a7f0-15932a4cf0cb.pdf
+  tw.6282#e4:
+    locator: 第6頁，主要產品
+    published_date: '2026-09-14'
+    publisher: 康舒科技股份有限公司
+    quote_check: found
+    title: 康舒科技2026年9月法說簡報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52551/2026/RNS/52551_rns_2026-09-14_f81eb648-78a9-4b02-a7f0-15932a4cf0cb.pdf
+  tw.6282#e5:
+    locator: 第6頁，主要產品
+    published_date: '2026-09-14'
+    publisher: 康舒科技股份有限公司
+    quote_check: found
+    title: 康舒科技2026年9月法說簡報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52551/2026/RNS/52551_rns_2026-09-14_f81eb648-78a9-4b02-a7f0-15932a4cf0cb.pdf
+  tw.6282#e6:
+    locator: 第6頁，主要產品
+    published_date: '2026-09-14'
+    publisher: 康舒科技股份有限公司
+    quote_check: found
+    title: 康舒科技2026年9月法說簡報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52551/2026/RNS/52551_rns_2026-09-14_f81eb648-78a9-4b02-a7f0-15932a4cf0cb.pdf
+  tw.6282#e7:
+    locator: 第9頁，營收組成與產品應用
+    published_date: '2026-09-14'
+    publisher: 康舒科技股份有限公司
+    quote_check: not_found
+    title: 康舒科技2026年9月法說簡報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52551/2026/RNS/52551_rns_2026-09-14_f81eb648-78a9-4b02-a7f0-15932a4cf0cb.pdf
+  tw.6282#e8:
+    locator: 印刷頁71，企業用雲端電源供應器應用
+    published_date: '2026-03-30'
+    publisher: 康舒科技股份有限公司
+    quote_check: found
+    title: 康舒科技114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52551/2026/RNS/52551_rns_2026-06-15_df7b3b12-4986-4761-8808-f67c9472973b.pdf
+  tw.6282#e9:
+    locator: 印刷頁73，計畫開發的新商品，電動車車載電源
+    published_date: '2026-03-30'
+    publisher: 康舒科技股份有限公司
+    quote_check: found
+    title: 康舒科技114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52551/2026/RNS/52551_rns_2026-06-15_df7b3b12-4986-4761-8808-f67c9472973b.pdf

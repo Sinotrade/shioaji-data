@@ -35,14 +35,14 @@ segments:
   name: 顯示器應用材料
   period: '2025'
   revenue_share_pct: null
-main_theme: theme.mini_led
+main_theme: theme.photoresist
 themes:
-- stage: display
-  theme: theme.mini_led
-  tier: downstream
 - stage: make
   theme: theme.photoresist
   tier: midstream
+- stage: display
+  theme: theme.mini_led
+  tier: downstream
 - stage: packaging
   theme: theme.cpo
   tier: midstream

@@ -8,12 +8,191 @@ industry:
   l0_code: '26'
   l0_name: 光電業
   l0_name_en: Optoelectronic
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.display
+  l2_name: 光電與顯示
+  l2_name_en: Optoelectronics & Displays
+  l3: disp.led
+  l3_name: LED 與 Micro／Mini LED
+  l3_name_en: LED & Micro/Mini LED
+primary_chain_position: downstream
+summary_short: 以LED裝飾燈、光耦合器及繼電器製造銷售為主，另經營節淨蒸汽。
+summary_long: 冠西電主要經營LED裝飾燈、光耦合器與繼電器，並提供節淨蒸汽。2025年營收組成為裝飾燈58.28%、光電元件36.54%、能源及材料貿易5.18%。光耦合器用於電路隔離，繼電器用於電路控制與切換；裝飾燈包含聖誕節慶產品。公司官網列有光纖模組及工業機器人應用產品，2025年法說揭露電動車、5G與AI伺服器光纖模組布局。年報另列香港及印尼的百分之百持股子公司。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_lighting
+  name: 裝飾燈
+  period: '2025'
+  revenue_share_pct: 58.28
+- evidence_ids:
+  - e2
+  id: seg_opto
+  name: 光電元件
+  period: '2025'
+  revenue_share_pct: 36.54
+- evidence_ids:
+  - e2
+  id: seg_energy
+  name: 能源及材料貿易
+  period: '2025'
+  revenue_share_pct: 5.18
+main_theme: theme.ev
+themes:
+- stage: parts
+  theme: theme.ev
+  tier: midstream
+- stage: components
+  theme: theme.ai_server
+  tier: midstream
+- stage: components
+  theme: theme.5g
+  tier: upstream
+- stage: control
+  theme: theme.robotics
+  tier: midstream
+relations:
+  subsidiaries:
+  - as_of: '2025-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 百分之百持股香港子公司
+    details:
+    - 百分之百持股香港子公司
+    edge: e9ff63b7b6770
+    evidence_level: primary
+    id: org.cosmo-electronics-hk-company-limited
+    name: COSMO ELECTRONICS (HK) COMPANY LIMITED
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 百分之百持股印尼子公司
+    details:
+    - 百分之百持股印尼子公司
+    edge: ec3ef35647197
+    evidence_level: primary
+    id: org.pt-cosmo-technology
+    name: PT COSMO TECHNOLOGY
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.cosmo-inc.com
 tax_id: '34348590'
 incorporated: '1981-05-25'
 listed: '2001-09-17'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-15'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2466#e10:
+    locator: PDF第23頁／營運策略與展望－光電元件產品
+    published_date: '2025-12-11'
+    publisher: 冠西電子企業股份有限公司
+    quote_check: found
+    title: 冠西電子2025年法人說明會簡報
+    url: https://www.cosmo-inc.com/upload/005Investors/004ShareholdersServices/001InvestorConference/2025/%E5%86%A0%E8%A5%BF%E9%9B%BB%E5%AD%902025%E5%B9%B4%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83%E7%B0%A1%E5%A0%B1.pdf
+  tw.2466#e11:
+    locator: PDF第23頁／營運策略與展望－光電元件產品
+    published_date: '2025-12-11'
+    publisher: 冠西電子企業股份有限公司
+    quote_check: found
+    title: 冠西電子2025年法人說明會簡報
+    url: https://www.cosmo-inc.com/upload/005Investors/004ShareholdersServices/001InvestorConference/2025/%E5%86%A0%E8%A5%BF%E9%9B%BB%E5%AD%902025%E5%B9%B4%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83%E7%B0%A1%E5%A0%B1.pdf
+  tw.2466#e12:
+    locator: 工業應用／應用標題及下列產品規格
+    published_date: null
+    publisher: 冠西電子企業股份有限公司
+    quote_check: found
+    title: 冠西電子－工業應用
+    url: https://www.cosmo-ic.com/tw/field/show.aspx?kind=3
+  tw.2466#e13:
+    locator: PDF第25頁／冠西電子AI轉型新紀元
+    published_date: '2025-12-11'
+    publisher: 冠西電子企業股份有限公司
+    quote_check: found
+    title: 冠西電子2025年法人說明會簡報
+    url: https://www.cosmo-inc.com/upload/005Investors/004ShareholdersServices/001InvestorConference/2025/%E5%86%A0%E8%A5%BF%E9%9B%BB%E5%AD%902025%E5%B9%B4%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83%E7%B0%A1%E5%A0%B1.pdf
+  tw.2466#e14:
+    locator: 印刷頁50／2025年3月31日轉投資事業綜合持股比例
+    published_date: null
+    publisher: 冠西電子企業股份有限公司
+    quote_check: found
+    title: 冠西電子113年報
+    url: https://www.cosmo-inc.com/upload/005Investors/004ShareholdersServices/002ShareholdersInformation/001AnnualReports/113%20%E5%B9%B4%E5%A0%B1.pdf
+  tw.2466#e15:
+    locator: 印刷頁50／2025年3月31日轉投資事業綜合持股比例
+    published_date: null
+    publisher: 冠西電子企業股份有限公司
+    quote_check: found
+    title: 冠西電子113年報
+    url: https://www.cosmo-inc.com/upload/005Investors/004ShareholdersServices/002ShareholdersInformation/001AnnualReports/113%20%E5%B9%B4%E5%A0%B1.pdf
+  tw.2466#e16:
+    locator: 印刷頁85／PT Cosmo Technology基本資料及印尼地址
+    published_date: null
+    publisher: 冠西電子企業股份有限公司
+    quote_check: found
+    title: 冠西電子113年報
+    url: https://www.cosmo-inc.com/upload/005Investors/004ShareholdersServices/002ShareholdersInformation/001AnnualReports/113%20%E5%B9%B4%E5%A0%B1.pdf
+  tw.2466#e2:
+    locator: 基本資料／營收比重
+    published_date: null
+    publisher: 富邦證券
+    quote_check: found
+    title: 冠西電（2466）基本資料
+    url: https://fubon-ebrokerdj.fbs.com.tw/z/zc/zca/zca_2466.djhtm
+  tw.2466#e3:
+    locator: PDF第5頁／產品介紹
+    published_date: '2025-12-11'
+    publisher: 冠西電子企業股份有限公司
+    quote_check: not_found
+    title: 冠西電子2025年法人說明會簡報
+    url: https://www.cosmo-inc.com/upload/005Investors/004ShareholdersServices/001InvestorConference/2025/%E5%86%A0%E8%A5%BF%E9%9B%BB%E5%AD%902025%E5%B9%B4%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83%E7%B0%A1%E5%A0%B1.pdf
+  tw.2466#e4:
+    locator: 印刷頁66／主要產品之重要用途
+    published_date: null
+    publisher: 冠西電子企業股份有限公司
+    quote_check: found
+    title: 冠西電子113年報
+    url: https://www.cosmo-inc.com/upload/005Investors/004ShareholdersServices/002ShareholdersInformation/001AnnualReports/113%20%E5%B9%B4%E5%A0%B1.pdf
+  tw.2466#e5:
+    locator: PDF第6頁／光電元件生產歷程
+    published_date: '2025-12-11'
+    publisher: 冠西電子企業股份有限公司
+    quote_check: found
+    title: 冠西電子2025年法人說明會簡報
+    url: https://www.cosmo-inc.com/upload/005Investors/004ShareholdersServices/001InvestorConference/2025/%E5%86%A0%E8%A5%BF%E9%9B%BB%E5%AD%902025%E5%B9%B4%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83%E7%B0%A1%E5%A0%B1.pdf
+  tw.2466#e6:
+    locator: 印刷頁66／光耦合器系列重要用途
+    published_date: null
+    publisher: 冠西電子企業股份有限公司
+    quote_check: found
+    title: 冠西電子113年報
+    url: https://www.cosmo-inc.com/upload/005Investors/004ShareholdersServices/002ShareholdersInformation/001AnnualReports/113%20%E5%B9%B4%E5%A0%B1.pdf
+  tw.2466#e7:
+    locator: 印刷頁66／繼電器系列重要用途
+    published_date: null
+    publisher: 冠西電子企業股份有限公司
+    quote_check: found
+    title: 冠西電子113年報
+    url: https://www.cosmo-inc.com/upload/005Investors/004ShareholdersServices/002ShareholdersInformation/001AnnualReports/113%20%E5%B9%B4%E5%A0%B1.pdf
+  tw.2466#e8:
+    locator: 印刷頁66／節淨蒸汽重要用途
+    published_date: null
+    publisher: 冠西電子企業股份有限公司
+    quote_check: found
+    title: 冠西電子113年報
+    url: https://www.cosmo-inc.com/upload/005Investors/004ShareholdersServices/002ShareholdersInformation/001AnnualReports/113%20%E5%B9%B4%E5%A0%B1.pdf
+  tw.2466#e9:
+    locator: 產品分類／光纖模組
+    published_date: null
+    publisher: 冠西電子企業股份有限公司
+    quote_check: found
+    title: 冠西電子－光纖模組產品
+    url: https://www.cosmo-ic.com/tw/product/index.aspx?kind=104

@@ -8,8 +8,118 @@ industry:
   l0_code: '20'
   l0_name: 其他業
   l0_name_en: Others
-primary_chain_position: unknown
+  l1: materials
+  l1_name: 原物料
+  l1_name_en: Materials
+  l2: mat.other
+  l2_name: 其他原物料
+  l2_name_en: Other Materials
+  l3: matl.packaging
+  l3_name: 包裝材料與容器
+  l3_name_en: Packaging & Containers
+primary_chain_position: midstream
+summary_short: 製造冷軋鋼材、馬口鐵及包裝容器，並提供飲料充填服務。
+summary_long: 統一實主要經營鐵產品及飲料包裝，2026年上半年合併營收占比分別為43%與57%。鐵產品涵蓋冷軋鋼材、馬口鐵皮、彩印鐵皮及空罐。集團飲料包裝業務涵蓋PET瓶蓋、瓶胚、吹瓶與無菌充填，並生產利樂包茶飲、果汁、奶茶及咖啡等飲料。新型鋁瓶罐業務提供包材與飲料充填服務，其中中國大陸昆山、無錫設有充填作業。統一企業為其最終母公司；旗下子公司包括開曼統一實業控股、越南統盟製罐及無錫統一實業包裝。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_iron
+  name: 鐵產品
+  period: 2026年上半年
+  revenue_share_pct: 43
+- evidence_ids:
+  - e2
+  id: seg_beverage_packaging
+  name: 飲料包裝
+  period: 2026年上半年
+  revenue_share_pct: 57
 relations:
+  parents:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 最終母公司
+    details:
+    - 最終母公司
+    edge: ecb082f343c32
+    evidence_level: primary
+    id: tw.1216
+    name: 統一
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2026-07-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 重要子公司
+    details:
+    - 重要子公司
+    edge: e85651282f619
+    evidence_level: primary
+    id: org.cayman-ton-yi-china-holdings-limited
+    name: Cayman Ton Yi (China) Holdings Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-07-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 重要子公司
+    details:
+    - 重要子公司
+    edge: e2b6a7b36aebc
+    evidence_level: primary
+    id: org.cayman-ton-yi-holdings-limited
+    name: Cayman Ton Yi Holdings Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-07-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 重要子公司
+    details:
+    - 重要子公司
+    edge: eea1069b2aa9f
+    evidence_level: primary
+    id: org.cayman-ton-yi-industrial-holdings-limited
+    name: CAYMAN TON YI INDUSTRIAL HOLDINGS LIMITED
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接子公司
+    details:
+    - 間接子公司
+    edge: e7199ac7c951b
+    evidence_level: primary
+    id: org.無錫統一實業包裝有限公司
+    name: 無錫統一實業包裝有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股51%的製罐子公司
+    details:
+    - 直接持股51%的製罐子公司
+    edge: e1ee0eb2ef472
+    evidence_level: primary
+    id: org.越南統盟製罐有限公司
+    name: 越南統盟製罐有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   suppliers:
   - as_of: '2025-06-30'
     confidence: ai_cross_checked
@@ -29,7 +139,105 @@ website: https://www.tonyi.com.tw
 tax_id: '73252657'
 incorporated: '1969-04-14'
 listed: '1991-01-29'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-15'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.9907#e10:
+    locator: 2026-07-14重要子公司公告標題
+    published_date: '2026-07-14'
+    publisher: 統一實業股份有限公司
+    quote_check: found
+    title: 重要子公司公告
+    url: https://www.tonyi.com.tw/news.php
+  tw.9907#e11:
+    locator: 2026-07-14 Cayman Ton Yi Holdings Limited公告標題
+    published_date: '2026-07-14'
+    publisher: 統一實業股份有限公司
+    quote_check: found
+    title: 重要子公司董事會決議發放股利公告
+    url: https://www.tonyi.com.tw/news.php
+  tw.9907#e12:
+    locator: 2026-07-14 Cayman Ton Yi (China) Holdings Limited公告標題
+    published_date: '2026-07-14'
+    publisher: 統一實業股份有限公司
+    quote_check: found
+    title: 重要子公司董事會公告
+    url: https://www.tonyi.com.tw/news.php
+  tw.9907#e13:
+    locator: 報告第15頁，合併報表子公司明細；投資公司、子公司、業務及持股百分比欄
+    published_date: null
+    publisher: 統一實業股份有限公司及子公司
+    quote_check: found
+    title: 115年第二季合併財務報告
+    url: https://www.tonyi.com.tw/include/kindeditor/attached/file/20260805/20260805024012_12593.pdf
+  tw.9907#e14:
+    locator: 重大訊息標題
+    published_date: '2025-05-29'
+    publisher: 統一實業股份有限公司
+    quote_check: found
+    title: 代子公司無錫統一實業包裝有限公司公告取得使用權資產
+    url: https://www.tonyi.com.tw/show.php?id=850
+  tw.9907#e15:
+    locator: 報告第15頁，合併報表子公司明細；投資公司為開曼統一實業控股有限公司的列
+    published_date: null
+    publisher: 統一實業股份有限公司及子公司
+    quote_check: found
+    title: 115年第二季合併財務報告
+    url: https://www.tonyi.com.tw/include/kindeditor/attached/file/20260805/20260805024012_12593.pdf
+  tw.9907#e2:
+    locator: 第4頁，部門別合併營收；2026YH1鐵產品43%、飲料包裝57%
+    published_date: '2026-08-31'
+    publisher: 統一實業股份有限公司
+    quote_check: not_found
+    title: 2026年第二季業績報告
+    url: https://www.tonyi.com.tw/include/kindeditor/attached/file/20260831/20260831082337_73874.pdf
+  tw.9907#e3:
+    locator: 公司介紹第二段，產品清單
+    published_date: null
+    publisher: 統一實業股份有限公司
+    quote_check: found
+    title: 公司介紹
+    url: https://www.tonyi.com.tw/about.php
+  tw.9907#e4:
+    locator: 產品介紹，生產線說明
+    published_date: null
+    publisher: 統一實業股份有限公司
+    quote_check: found
+    title: 馬口鐵產品
+    url: https://www.tonyi.com.tw/show_products.php?id=6
+  tw.9907#e5:
+    locator: 寶特瓶相關產品第一段
+    published_date: null
+    publisher: 統一實業股份有限公司
+    quote_check: found
+    title: 寶特瓶相關產品
+    url: https://www.tonyi.com.tw/show_products.php?id=8
+  tw.9907#e6:
+    locator: 利樂包產品第一段
+    published_date: null
+    publisher: 統一實業股份有限公司
+    quote_check: found
+    title: 利樂包產品
+    url: https://www.tonyi.com.tw/show_products.php?id=18
+  tw.9907#e7:
+    locator: 產品介紹第4點
+    published_date: null
+    publisher: 統一實業股份有限公司
+    quote_check: found
+    title: 新型鋁瓶罐產品
+    url: https://www.tonyi.com.tw/show_products.php?id=19
+  tw.9907#e8:
+    locator: 馬口鐵罐產品介紹
+    published_date: null
+    publisher: 統一實業股份有限公司
+    quote_check: found
+    title: 馬口鐵罐產品
+    url: https://www.tonyi.com.tw/show_products.php?id=7
+  tw.9907#e9:
+    locator: 報告第13頁，公司沿革（三）
+    published_date: null
+    publisher: 統一實業股份有限公司及子公司
+    quote_check: found
+    title: 115年第二季合併財務報告
+    url: https://www.tonyi.com.tw/include/kindeditor/attached/file/20260805/20260805024012_12593.pdf

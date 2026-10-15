@@ -8,8 +8,63 @@ industry:
   l0_code: '27'
   l0_name: 通信網路業
   l0_name_en: Communications and Internet
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.hardware
+  l2_name: 電腦與硬體
+  l2_name_en: Computers & Hardware
+  l3: hw.consumer
+  l3_name: 消費性電子產品
+  l3_name_en: Consumer Electronics
+primary_chain_position: downstream
+summary_short: 銷售智慧型手機、VIVE頭戴裝置與AI眼鏡，並提供沉浸式平台及5G專網。
+summary_long: 宏達電提供智慧型手機、VIVE虛擬實境頭戴裝置及AI智慧眼鏡，並經營VIVERSE沉浸式內容平台。VIVE Focus Vision可獨立運作或連接電腦；VIVE Eagle整合語音助理、拍攝與翻譯功能；HTC U24 pro則支援5G行動通訊。VIVERSE提供跨裝置虛擬世界的託管、探索與創作功能，並支援WebXR開發。集團另透過子公司REIGN Technology Corporation（G REIGNS）提供REIGN CORE系列5G專網設備，供企業快速部署網路。
+segments:
+- evidence_ids:
+  - e8
+  id: seg_devices
+  name: 虛擬實境裝置與智慧行動裝置相關業務
+  period: 2025Q1
+  revenue_share_pct: null
+main_theme: theme.5g
+themes:
+- stage: devices
+  theme: theme.5g
+  tier: downstream
+- stage: equipment
+  theme: theme.5g
+  tier: midstream
 relations:
+  subsidiaries:
+  - as_of: '2025-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有之子公司
+    details:
+    - 直接持有之子公司
+    edge: e1420ce421569
+    evidence_level: primary
+    id: org.htc-bvi-corp
+    name: H.T.C. (B.V.I.) Corp.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-15'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: G REIGNS 5G專網業務子公司
+    details:
+    - G REIGNS 5G專網業務子公司
+    edge: e5a84b1e5f82b
+    evidence_level: primary
+    id: org.reign-technology-corporation
+    name: REIGN Technology Corporation
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   transactions:
   - amount: 新台幣56.38億元
     as_of: '2025-05-14'
@@ -36,7 +91,63 @@ website: http://www.htc.com
 tax_id: '16003518'
 incorporated: '1997-05-15'
 listed: '2002-03-26'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-15'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2498#e2:
+    locator: 延伸實境體驗大躍進
+    published_date: null
+    publisher: HTC VIVE
+    quote_check: found
+    title: VIVE Focus Vision產品總覽
+    url: https://www.vive.com/tw/product/vive-focus-vision/overview/
+  tw.2498#e3:
+    locator: 新聞稿開頭功能說明
+    published_date: '2025-08-14'
+    publisher: HTC
+    quote_check: found
+    title: HTC Unveils VIVE Eagle AI Glasses
+    url: https://www.vive.com/us/newsroom/2025-08-14/
+  tw.2498#e4:
+    locator: 產品規格／連線服務
+    published_date: null
+    publisher: HTC
+    quote_check: found
+    title: HTC U24 pro產品介紹與規格
+    url: https://www.htc.com/tw/smartphones/htc-u24-pro/
+  tw.2498#e5:
+    locator: Business Operations／VIVERSE，2025年度營運說明
+    published_date: null
+    publisher: HTC
+    quote_check: found
+    title: Letter to Shareholders
+    url: https://investors.htc.com/en/corporate-governance/letter-to-shareholders/
+  tw.2498#e6:
+    locator: 產品介紹首段
+    published_date: '2025-02-11'
+    publisher: G REIGNS
+    quote_check: found
+    title: REIGN CORE Series Product Info
+    url: https://www.reignnet.com/stories/reign-core-series-product-info
+  tw.2498#e7:
+    locator: Overview／Connecting VIVERSE
+    published_date: null
+    publisher: REIGN Technology Corporation
+    quote_check: found
+    title: About Us | G REIGNS
+    url: https://www.reignnet.com/about-us
+  tw.2498#e8:
+    locator: 附註37，印刷頁57，PDF第58頁
+    published_date: '2025-05-08'
+    publisher: HTC
+    quote_check: found
+    title: HTC Corporation and Subsidiaries 2025年第1季合併財務報告
+    url: https://investors.htc.com/documents/1408/HTC2025Q1_EN.pdf
+  tw.2498#e9:
+    locator: 附註13子公司表，印刷頁18，PDF第19頁
+    published_date: '2025-05-08'
+    publisher: HTC
+    quote_check: found
+    title: HTC Corporation and Subsidiaries 2025年第1季合併財務報告
+    url: https://investors.htc.com/documents/1408/HTC2025Q1_EN.pdf

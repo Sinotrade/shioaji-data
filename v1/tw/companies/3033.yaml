@@ -8,12 +8,185 @@ industry:
   l0_code: '29'
   l0_name: 電子通路業
   l0_name_en: Electronic Products Distribution
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.semi
+  l2_name: 半導體
+  l2_name_en: Semiconductors
+  l3: semi.distribution
+  l3_name: IC 通路
+  l3_name_en: IC Distribution
+chain: chain.semiconductor
+primary_chain_position: downstream
+summary_short: 威健以半導體電子零組件、電腦周邊代理經銷及技術服務取得營收。
+summary_long: 威健實業以半導體電子零組件及電腦周邊設備的代理經銷、技術服務為主要業務，2025年度相關銷售約占營收100%。代理產品包括嵌入式處理器、微控制器、MOSFET與IGBT，並提供應用技術支援及供應鏈管理服務。集團開發並陸續提供AI伺服器、5G通訊及電動車相關參考解決方案，涵蓋運算、通訊與車用電子應用，業務角色以零組件通路與應用支援為主。
+segments:
+- evidence_ids:
+  - e1
+  - e2
+  id: seg_distribution
+  name: 電子零組件及電腦周邊設備代理經銷與技術服務
+  period: '2025'
+  revenue_share_pct: 100
+main_theme: theme.ev
+themes:
+- stage: parts
+  theme: theme.ev
+  tier: midstream
+- stage: chips
+  theme: theme.ai_server
+  tier: upstream
+- stage: components
+  theme: theme.5g
+  tier: upstream
+relations:
+  subsidiaries:
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的子公司
+    details:
+    - 直接持股100%的子公司
+    edge: ecc7c4e70dd43
+    evidence_level: primary
+    id: org.weikeng-international
+    name: Weikeng International Co., Ltd
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的子公司
+    details:
+    - 直接持股100%的子公司
+    edge: e8416017d34db
+    evidence_level: primary
+    id: org.weikeng-technology
+    name: Weikeng Technology Co., Ltd
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的子公司
+    details:
+    - 直接持股100%的子公司
+    edge: edabbf4e5e216
+    evidence_level: primary
+    id: org.weikeng-technology-pte
+    name: Weikeng Technology Pte Ltd
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.weikeng.com.tw
 tax_id: 04648938
 incorporated: '1977-01-20'
 listed: '2002-08-26'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-15'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3033#e1:
+    locator: （一）業務範圍－主要業務內容
+    published_date: null
+    publisher: 威健實業股份有限公司
+    quote_check: found
+    title: 威健實業股份有限公司－業務內容
+    url: https://www.weikeng.com.tw/content.php?no=86
+  tw.3033#e10:
+    locator: 計劃開發之新商品（服務）－汽車電子應用
+    published_date: null
+    publisher: 威健實業股份有限公司
+    quote_check: found
+    title: 威健實業股份有限公司－技術支援
+    url: https://www.weikeng.com.tw/content.php?no=54
+  tw.3033#e11:
+    locator: 計劃開發之新商品（服務）－參考方案提供狀態
+    published_date: null
+    publisher: 威健實業股份有限公司
+    quote_check: found
+    title: 威健實業股份有限公司－技術支援
+    url: https://www.weikeng.com.tw/content.php?no=54
+  tw.3033#e12:
+    locator: 第169頁，Ownership of Shares in Affiliated Enterprises；2026/3/31，Ownership by the Company欄
+    published_date: '2026-05-12'
+    publisher: 威健實業股份有限公司
+    quote_check: unreachable
+    title: 2025 Annual Report
+    url: https://www.weikeng.com.tw/files/AR/2025_annual_report_en.pdf
+  tw.3033#e13:
+    locator: 第169頁，Ownership of Shares in Affiliated Enterprises；2026/3/31，Ownership by the Company欄
+    published_date: '2026-05-12'
+    publisher: 威健實業股份有限公司
+    quote_check: unreachable
+    title: 2025 Annual Report
+    url: https://www.weikeng.com.tw/files/AR/2025_annual_report_en.pdf
+  tw.3033#e14:
+    locator: 第169頁，Ownership of Shares in Affiliated Enterprises；2026/3/31，Ownership by the Company欄
+    published_date: '2026-05-12'
+    publisher: 威健實業股份有限公司
+    quote_check: unreachable
+    title: 2025 Annual Report
+    url: https://www.weikeng.com.tw/files/AR/2025_annual_report_en.pdf
+  tw.3033#e2:
+    locator: 第178頁，Major Business Content and Sales Percentage (2025)
+    published_date: '2026-05-12'
+    publisher: 威健實業股份有限公司
+    quote_check: unreachable
+    title: 2025 Annual Report
+    url: https://www.weikeng.com.tw/files/AR/2025_annual_report_en.pdf
+  tw.3033#e3:
+    locator: （一）業務範圍－主要業務內容
+    published_date: null
+    publisher: 威健實業股份有限公司
+    quote_check: found
+    title: 威健實業股份有限公司－業務內容
+    url: https://www.weikeng.com.tw/content.php?no=86
+  tw.3033#e4:
+    locator: 代理產品線總覽－微控制器產品表
+    published_date: null
+    publisher: 威健實業股份有限公司
+    quote_check: not_found
+    title: 威健代理產品線－微控制器
+    url: https://www.weikeng.com.tw/qsearch_info.php?classify=microcontroller&type=product
+  tw.3033#e5:
+    locator: 功率半導體元件產品表－MOSFET列
+    published_date: null
+    publisher: 威健實業股份有限公司
+    quote_check: found
+    title: 威健代理產品線－功率半導體元件
+    url: https://www.weikeng.com.tw/qsearch_info.php?classify=semiconductor&type=product
+  tw.3033#e6:
+    locator: 功率半導體元件產品表－IGBT列
+    published_date: null
+    publisher: 威健實業股份有限公司
+    quote_check: not_found
+    title: 威健代理產品線－功率半導體元件
+    url: https://www.weikeng.com.tw/qsearch_info.php?classify=semiconductor&type=product
+  tw.3033#e7:
+    locator: 代理產品線總覽－嵌入式處理器產品表
+    published_date: null
+    publisher: 威健實業股份有限公司
+    quote_check: found
+    title: 威健代理產品線－嵌入式處理器
+    url: https://www.weikeng.com.tw/qsearch_info.php?classify=emb_processor&type=product
+  tw.3033#e8:
+    locator: 計劃開發之新商品（服務）－AI伺服器供應服務
+    published_date: null
+    publisher: 威健實業股份有限公司
+    quote_check: found
+    title: 威健實業股份有限公司－技術支援
+    url: https://www.weikeng.com.tw/content.php?no=54
+  tw.3033#e9:
+    locator: 計劃開發之新商品（服務）－5G應用
+    published_date: null
+    publisher: 威健實業股份有限公司
+    quote_check: found
+    title: 威健實業股份有限公司－業務內容
+    url: https://www.weikeng.com.tw/content.php?no=86

@@ -8,12 +8,129 @@ industry:
   l0_code: '12'
   l0_name: 汽車工業
   l0_name_en: Automobile
-primary_chain_position: unknown
+  l1: auto
+  l1_name: 汽車與運具
+  l1_name_en: Automotive & Mobility
+  l2: auto.vehicles
+  l2_name: 汽機車
+  l2_name_en: Autos & Motorcycles
+  l3: auto.oem
+  l3_name: 整車與機車
+  l3_name_en: Vehicles & Motorcycles
+chain: chain.auto
+primary_chain_position: downstream
+summary_short: 以汽車與零組件製造銷售為本業，另提供電池製造服務。
+summary_long: 裕隆汽車主要從事汽車及相關零組件製造與銷售，2025年年報揭露該項業務占母公司營業比重87.7%。整車製造涵蓋多品牌車型，MG G50 Plus與Foxtron Bria已於2025年相繼量產，其中Bria為採用磷酸鋰鐵電池的電動休旅車。公司另提供動力與儲能鋰電池包封裝，以及電池模組雷射焊接代工服務。合併體系包含裕融企業，格上汽車租賃則為裕融全資持有的間接子公司；其他子公司包括從事汽車產品設計的華創車電及裕隆建設。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_auto
+  name: 汽車及相關零組件製造銷售（母公司口徑）
+  period: '2025'
+  revenue_share_pct: 87.7
+main_theme: theme.ev
+themes:
+- stage: vehicle
+  theme: theme.ev
+  tier: downstream
+relations:
+  subsidiaries:
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過裕融持有的間接子公司；車輛租賃及買賣
+    details:
+    - 透過裕融持有的間接子公司；車輛租賃及買賣
+    edge: ea27613dc6b5b
+    evidence_level: primary
+    id: org.car-plus
+    name: 格上汽車租賃股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司；汽車產品設計
+    details:
+    - 直接子公司；汽車產品設計
+    edge: ee31bb4b5a33b
+    evidence_level: primary
+    id: org.haitec
+    name: 華創車電技術中心股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司；建築業
+    details:
+    - 直接子公司；建築業
+    edge: e071e8f233253
+    evidence_level: primary
+    id: org.yulon-construction
+    name: 裕隆建設股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.yulon-motor.com.tw
 tax_id: 03489200
 incorporated: '1953-09-10'
 listed: '1976-07-08'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-15'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2201#e10:
+    locator: 第31頁，附註十七－裕隆建設子公司列示
+    published_date: '2026-05-14'
+    publisher: 裕隆汽車製造股份有限公司
+    quote_check: unreachable
+    title: 裕隆汽車及子公司115年第1季合併財務報告
+    url: https://www.yulon-motor.com.tw/upload_img/files/115%E5%B9%B4Q1%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
+  tw.2201#e2:
+    locator: 第68頁，主要營業項目及比重
+    published_date: null
+    publisher: 裕隆汽車製造股份有限公司
+    quote_check: found
+    title: 裕隆汽車114年度年報
+    url: https://ylesg.yulon-motor.com.tw/dl/file/pgTKJKdjgdmtDcm8
+  tw.2201#e3:
+    locator: 第1頁，致股東報告書－整車製造
+    published_date: null
+    publisher: 裕隆汽車製造股份有限公司
+    quote_check: found
+    title: 裕隆汽車114年度年報
+    url: https://ylesg.yulon-motor.com.tw/dl/file/pgTKJKdjgdmtDcm8
+  tw.2201#e4:
+    locator: 第69頁，公司主要之產品－Foxtron
+    published_date: null
+    publisher: 裕隆汽車製造股份有限公司
+    quote_check: found
+    title: 裕隆汽車114年度年報
+    url: https://ylesg.yulon-motor.com.tw/dl/file/pgTKJKdjgdmtDcm8
+  tw.2201#e7:
+    locator: 第30頁，附註十七－列入合併財務報告之子公司
+    published_date: '2026-05-14'
+    publisher: 裕隆汽車製造股份有限公司
+    quote_check: unreachable
+    title: 裕隆汽車及子公司115年第1季合併財務報告
+    url: https://www.yulon-motor.com.tw/upload_img/files/115%E5%B9%B4Q1%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
+  tw.2201#e8:
+    locator: 第31頁，附註十七－裕融子公司及持股比例
+    published_date: '2026-05-14'
+    publisher: 裕隆汽車製造股份有限公司
+    quote_check: unreachable
+    title: 裕隆汽車及子公司115年第1季合併財務報告
+    url: https://www.yulon-motor.com.tw/upload_img/files/115%E5%B9%B4Q1%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
+  tw.2201#e9:
+    locator: 第31頁，附註十七－華創車電子公司列示
+    published_date: '2026-05-14'
+    publisher: 裕隆汽車製造股份有限公司
+    quote_check: unreachable
+    title: 裕隆汽車及子公司115年第1季合併財務報告
+    url: https://www.yulon-motor.com.tw/upload_img/files/115%E5%B9%B4Q1%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf

@@ -20,6 +20,22 @@ stages:
   tier: downstream
   name_en: Modules & Applications
 members:
+- id: tw.2340
+  stage: chip
+  tier: midstream
+  detail: VCSEL發射晶粒
+  as_of: '2026-10-15'
+  evidence:
+  - tw.2340#e4
+  confidence: ai_cross_checked
+- id: tw.2426
+  stage: chip
+  tier: midstream
+  detail: VCSEL元件開發
+  as_of: 2026-04
+  evidence:
+  - tw.2426#e7
+  confidence: ai_cross_checked
 - id: tw.3081
   stage: epi
   tier: upstream
@@ -36,6 +52,23 @@ members:
   evidence:
   - tw.3105#e5
   confidence: ai_cross_checked
+- id: tw.3234
+  stage: chip
+  tier: midstream
+  detail: VCSEL晶片製造
+  as_of: '2026-10-15'
+  evidence:
+  - tw.3234#e3
+  confidence: ai_cross_checked
+- id: tw.4971
+  stage: epi
+  tier: upstream
+  detail: VCSEL磊晶
+  as_of: '2026-10-15'
+  evidence:
+  - tw.4971#e10
+  - tw.4971#e11
+  confidence: ai_cross_checked
 - id: tw.4991
   stage: chip
   tier: midstream
@@ -44,4 +77,13 @@ members:
   evidence:
   - tw.4991#e10
   confidence: ai_cross_checked
-as_of: '2026-10-14'
+- id: tw.8086
+  stage: chip
+  tier: midstream
+  detail: VCSEL晶片製造
+  as_of: 2026-05
+  evidence:
+  - tw.8086#e7
+  - tw.8086#e8
+  confidence: ai_cross_checked
+as_of: '2026-10-15'

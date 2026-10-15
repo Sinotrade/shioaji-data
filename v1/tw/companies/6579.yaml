@@ -8,7 +8,48 @@ industry:
   l0_code: '25'
   l0_name: 電腦及週邊設備業
   l0_name_en: Computer and Peripheral Equipment
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.hardware
+  l2_name: 電腦與硬體
+  l2_name_en: Computers & Hardware
+  l3: hw.industrial_pc
+  l3_name: 工業電腦與嵌入式系統
+  l3_name_en: Industrial PCs & Embedded Systems
+primary_chain_position: midstream
+summary_short: 以工業電腦、單板電腦及嵌入式系統產品為主要營收來源。
+summary_long: 研揚以工業電腦與嵌入式運算平台為主業，2025年合併營收中，單板電腦及周邊裝置占49.54%，工業用系統產品占45.34%，其他占5.12%。主要產品包括嵌入式單板電腦、BOXER無風扇電腦、強固型平板、邊緣AI系統與工業級伺服器。邊緣AI系統採用NVIDIA Jetson平台，PICO-MTU4-SEMI可整合於工業機器人與自動導引車。華碩電腦為其最終母公司，醫揚科技與捷波資訊為納入合併的子公司。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_sbc
+  name: 單板電腦及周邊裝置
+  period: '2025'
+  revenue_share_pct: 49.54
+- evidence_ids:
+  - e1
+  id: seg_system
+  name: 工業用系統產品
+  period: '2025'
+  revenue_share_pct: 45.34
+- evidence_ids:
+  - e1
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 5.12
+main_theme: theme.ai_server
+themes:
+- stage: assembly
+  theme: theme.ai_server
+  tier: downstream
+- stage: control
+  theme: theme.robotics
+  tier: midstream
+- stage: system
+  theme: theme.nvidia
+  tier: downstream
 relations:
   parents:
   - as_of: '2026-06-30'
@@ -17,10 +58,40 @@ relations:
     detail: 研揚合併子公司
     details:
     - 研揚合併子公司
+    - 最終母公司
     edge: eda83bb677e87
     evidence_level: primary
     id: tw.2357
     name: 華碩
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 2
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 納入合併財報的受控制子公司
+    details:
+    - 納入合併財報的受控制子公司
+    edge: eb539124710f2
+    evidence_level: primary
+    id: tw.6161
+    name: 捷波
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 納入合併財報的受控制子公司
+    details:
+    - 納入合併財報的受控制子公司
+    edge: ec4d2572db0cf
+    evidence_level: primary
+    id: tw.6569
+    name: 醫揚
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -29,7 +100,84 @@ website: http://www.aaeon.com
 tax_id: '53113073'
 incorporated: '2010-12-01'
 listed: '2017-08-21'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-15'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6579#e1:
+    locator: 印刷第78頁，主要產品之營業比重；欄位依序為113年度及114年度
+    published_date: null
+    publisher: 研揚科技股份有限公司
+    quote_check: found
+    title: 研揚科技股份有限公司114年度年報
+    url: https://newdata.aaeon.com.tw/DOWNLOAD/prenentations/Y114_annual_report.pdf
+  tw.6579#e10:
+    locator: 印刷第16頁，合併子公司表，捷波列及註2
+    published_date: '2026-08-07'
+    publisher: 研揚科技股份有限公司
+    quote_check: found
+    title: 研揚科技股份有限公司及子公司115年及114年第二季合併財務報告
+    url: https://newdata.aaeon.com.tw/DOWNLOAD/prenentations/Consolidated_Financial_Report_for_the_Second_Quarter_of_Year_115.pdf
+  tw.6579#e11:
+    locator: 印刷第17頁，合併子公司表註2
+    published_date: '2026-08-07'
+    publisher: 研揚科技股份有限公司
+    quote_check: found
+    title: 研揚科技股份有限公司及子公司115年及114年第二季合併財務報告
+    url: https://newdata.aaeon.com.tw/DOWNLOAD/prenentations/Consolidated_Financial_Report_for_the_Second_Quarter_of_Year_115.pdf
+  tw.6579#e2:
+    locator: 產品介紹首句
+    published_date: null
+    publisher: 研揚科技股份有限公司
+    quote_check: found
+    title: 嵌入式單板電腦
+    url: https://www.aaeon.com/tw/product/list/embedded-single-board-computers
+  tw.6579#e3:
+    locator: BOXER系列產品介紹
+    published_date: null
+    publisher: 研揚科技股份有限公司
+    quote_check: found
+    title: 無風扇嵌入式電腦
+    url: https://www.aaeon.com/tw/product/list/fanless-embedded-box-pc
+  tw.6579#e4:
+    locator: 產品介紹第一段
+    published_date: null
+    publisher: 研揚科技股份有限公司
+    quote_check: found
+    title: 強固型平板電腦
+    url: https://www.aaeon.com/tw/product/list/rugged-tablet-computers
+  tw.6579#e5:
+    locator: 產品介紹第一段
+    published_date: null
+    publisher: 研揚科技股份有限公司
+    quote_check: found
+    title: NVIDIA AI Solutions
+    url: https://www.aaeon.com/tw/product/list/aaeon-nvidia-ai-solutions
+  tw.6579#e6:
+    locator: 產品介紹第一段
+    published_date: null
+    publisher: 研揚科技股份有限公司
+    quote_check: found
+    title: 邊緣AI伺服器/工作站
+    url: https://www.aaeon.com/tw/product/list/industrial-grade-server
+  tw.6579#e7:
+    locator: 介紹PICO-MTU4-SEMI無風扇設計與應用的段落
+    published_date: null
+    publisher: AAEON Technology Inc.
+    quote_check: found
+    title: AAEON’s PICO-MTU4-SEMI Hits the Market as the World’s Smallest Intel Core Ultra-Powered Mini PC
+    url: https://www.aaeon.com/en/news/detail/pico-mtu4-semi_announcement
+  tw.6579#e8:
+    locator: 印刷第51頁，附註七、關係人交易
+    published_date: '2026-08-07'
+    publisher: 研揚科技股份有限公司
+    quote_check: found
+    title: 研揚科技股份有限公司及子公司115年及114年第二季合併財務報告
+    url: https://newdata.aaeon.com.tw/DOWNLOAD/prenentations/Consolidated_Financial_Report_for_the_Second_Quarter_of_Year_115.pdf
+  tw.6579#e9:
+    locator: 印刷第16頁，合併子公司表，醫揚列及註2
+    published_date: '2026-08-07'
+    publisher: 研揚科技股份有限公司
+    quote_check: found
+    title: 研揚科技股份有限公司及子公司115年及114年第二季合併財務報告
+    url: https://newdata.aaeon.com.tw/DOWNLOAD/prenentations/Consolidated_Financial_Report_for_the_Second_Quarter_of_Year_115.pdf

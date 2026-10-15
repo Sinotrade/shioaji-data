@@ -8,12 +8,84 @@ industry:
   l0_code: '38'
   l0_name: 居家生活
   l0_name_en: Home Life
-primary_chain_position: unknown
+  l1: consumer
+  l1_name: 消費
+  l1_name_en: Consumer
+  l2: cons.staples
+  l2_name: 民生消費
+  l2_name_en: Consumer Staples
+  l3: retail.convenience
+  l3_name: 量販與便利商店
+  l3_name_en: Hypermarkets & Convenience Stores
+primary_chain_position: downstream
+summary_short: 以便利商店販售食品、飲料與日用品，並提供生活服務。
+summary_long: 全家以連鎖便利商店零售為主，2025年合併營收中，零售業務占93.7%、物流業務占3.0%、其他占3.3%。主要商品包括金飯糰、uno pasta義大利麵、Let’s Café咖啡與Fami!ce霜淇淋。全家APP提供支付、累點、寄取件與隨買服務。子公司晉欣食品與福比從事食品製造，全台物流從事物流業，全盈支付金融科技從事電子支付業；四家公司均列入合併財務報告。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_retail
+  name: 零售業務
+  period: '2025'
+  revenue_share_pct: 93.7
+- evidence_ids:
+  - e1
+  id: seg_logistics
+  name: 物流業務
+  period: '2025'
+  revenue_share_pct: 3
+- evidence_ids:
+  - e1
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 3.3
 website: www.family.com.tw
 tax_id: '23060248'
 incorporated: '1988-08-18'
 listed: '2002-02-25'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-15'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.5903#e1:
+    locator: 第63頁，2025年主要部門別營收與佔比
+    published_date: '2026-03-04'
+    publisher: 全家便利商店股份有限公司
+    quote_check: not_found
+    title: 全家便利商店股份有限公司2025年年報
+    url: https://www.family.com.tw/web_enterprise/PDFWebShow.ashx?ID=202643&Lagu=0
+  tw.5903#e2:
+    locator: 第63頁，主要營業項目；第64頁，產業概況
+    published_date: '2026-03-04'
+    publisher: 全家便利商店股份有限公司
+    quote_check: not_found
+    title: 全家便利商店股份有限公司2025年年報
+    url: https://www.family.com.tw/web_enterprise/PDFWebShow.ashx?ID=202643&Lagu=0
+  tw.5903#e3:
+    locator: 產品差異化及明星品類段落
+    published_date: null
+    publisher: 全家便利商店股份有限公司
+    quote_check: found
+    title: 2025年全家便利商店股份有限公司年度財報
+    url: https://www.family.com.tw/web_enterprise/page/NewsContent.aspx?ID=2960
+  tw.5903#e4:
+    locator: 產品差異化及明星品類段落
+    published_date: null
+    publisher: 全家便利商店股份有限公司
+    quote_check: found
+    title: 2025年全家便利商店股份有限公司年度財報
+    url: https://www.family.com.tw/web_enterprise/page/NewsContent.aspx?ID=2960
+  tw.5903#e5:
+    locator: Fami!ce商品介紹
+    published_date: null
+    publisher: 全家便利商店股份有限公司
+    quote_check: found
+    title: 關於FamilyMart－業務及商品介紹
+    url: https://www.family.com.tw/web_enterprise/page/introduction.aspx
+  tw.5903#e6:
+    locator: APP服務介紹
+    published_date: null
+    publisher: 全家便利商店股份有限公司
+    quote_check: found
+    title: 關於FamilyMart－業務及商品介紹
+    url: https://www.family.com.tw/web_enterprise/page/introduction.aspx

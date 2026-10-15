@@ -8,8 +8,76 @@ industry:
   l0_code: '26'
   l0_name: 光電業
   l0_name_en: Optoelectronic
-primary_chain_position: unknown
+  l1: energy
+  l1_name: 能源
+  l1_name_en: Energy & Utilities
+  l2: energy.green
+  l2_name: 綠能
+  l2_name_en: Renewable Energy
+  l3: green.solar
+  l3_name: 太陽能
+  l3_name_en: Solar
+chain: chain.solar
+primary_chain_position: midstream
+summary_short: 以太陽能電池與模組銷售為主，另提供太陽能系統工程、維運及儲能服務。
+summary_long: 聯合再生以太陽能電池及模組銷售為主要收入來源，並經營太陽能系統工程與維運業務。模組產品包含TOPCon系列，儲能業務則包含台南廠區自建的表後儲能示範案場。2025年度合併財報揭露，太陽能產品收入為新台幣20億7,399萬5,000元，其他產品及勞務收入為9億7,256萬5,000元，太陽能產品為最大收入類別。旗下直接子公司包括從事太陽能相關業務的新日光系統開發及中陽光電，以及從事電子零組件製造的昱成光能。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_solar
+  name: 太陽能產品
+  period: 2025年度
+  revenue_share_pct: null
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他產品及勞務
+  period: 2025年度
+  revenue_share_pct: null
 relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 從事太陽能相關業務的直接子公司
+    details:
+    - 從事太陽能相關業務的直接子公司
+    edge: ea13597cf13d5
+    evidence_level: primary
+    id: org.chung-yang-photovoltaic
+    name: 中陽光電股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 從事太陽能相關業務的直接子公司
+    details:
+    - 從事太陽能相關業務的直接子公司
+    edge: e39915ec8cd58
+    evidence_level: primary
+    id: org.nsp-systems-development
+    name: 新日光系統開發股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 從事電子零組件製造的直接子公司
+    details:
+    - 從事電子零組件製造的直接子公司
+    edge: e472738fb2c7f
+    evidence_level: primary
+    id: org.yu-cheng-solar
+    name: 昱成光能股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   transactions:
   - amount: 總投資金額約4,000萬美元
     as_of: '2026-07-21'
@@ -36,7 +104,49 @@ website: http://www.urecorp.com
 tax_id: '27763753'
 incorporated: '2005-08-26'
 listed: '2009-01-12'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-15'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3576#e1:
+    locator: 第5頁，關鍵查核事項：特定客戶之銷貨收入真實性
+    published_date: null
+    publisher: 聯合再生能源股份有限公司
+    quote_check: unreachable
+    title: 聯合再生能源股份有限公司及子公司民國114及113年度合併財務報告暨會計師查核報告
+    url: https://www.urecorp.com/upload/investors_page_file/2025-consolidate-CN.pdf
+  tw.3576#e2:
+    locator: 第86頁，附註四十四（三）產品別及勞務別資訊；金額單位為新台幣仟元，首欄為114年度
+    published_date: null
+    publisher: 聯合再生能源股份有限公司
+    quote_check: unreachable
+    title: 聯合再生能源股份有限公司及子公司民國114及113年度合併財務報告暨會計師查核報告
+    url: https://www.urecorp.com/upload/investors_page_file/2025-consolidate-CN.pdf
+  tw.3576#e3:
+    locator: 第1至2頁，2025智慧能源週展出內容
+    published_date: null
+    publisher: 聯合再生能源股份有限公司（SEMI官網刊載）
+    quote_check: found
+    title: 「光的連結」點亮能源週 聯合再生能源唯一勇奪3項金能獎
+    url: https://www.semi.org/sites/semi.org/files/2025-10/Energy-Taiwan-Net-Zero-Taiwan-2025-UREcorp.pdf
+  tw.3576#e5:
+    locator: 第40頁，附註十六、子公司；投資公司欄為聯合再生能源股份有限公司
+    published_date: null
+    publisher: 聯合再生能源股份有限公司
+    quote_check: unreachable
+    title: 聯合再生能源股份有限公司及子公司民國114及113年度合併財務報告暨會計師查核報告
+    url: https://www.urecorp.com/upload/investors_page_file/2025-consolidate-CN.pdf
+  tw.3576#e6:
+    locator: 第40頁，附註十六、子公司；投資公司欄為聯合再生能源股份有限公司
+    published_date: null
+    publisher: 聯合再生能源股份有限公司
+    quote_check: unreachable
+    title: 聯合再生能源股份有限公司及子公司民國114及113年度合併財務報告暨會計師查核報告
+    url: https://www.urecorp.com/upload/investors_page_file/2025-consolidate-CN.pdf
+  tw.3576#e7:
+    locator: 第40頁，附註十六、子公司；投資公司欄為聯合再生能源股份有限公司
+    published_date: null
+    publisher: 聯合再生能源股份有限公司
+    quote_check: unreachable
+    title: 聯合再生能源股份有限公司及子公司民國114及113年度合併財務報告暨會計師查核報告
+    url: https://www.urecorp.com/upload/investors_page_file/2025-consolidate-CN.pdf

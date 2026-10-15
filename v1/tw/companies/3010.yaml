@@ -8,7 +8,73 @@ industry:
   l0_code: '29'
   l0_name: 電子通路業
   l0_name_en: Electronic Products Distribution
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.distribution
+  l2_name: 電子通路
+  l2_name_en: Electronics Distribution
+  l3: dist.components
+  l3_name: 電子零組件通路
+  l3_name_en: Electronic Components Distribution
+chain: chain.semiconductor
+primary_chain_position: upstream
+summary_short: 以半導體、電子構裝、工程塑膠及光電材料與設備通路為主要業務。
+summary_long: 華立以高科技材料與設備通路為主要業務，產品涵蓋半導體製程材料、電子構裝材料、工程塑膠及光電材料。半導體產品包括光阻液、研磨液、製程化學品及特殊氣體；電子構裝產品涵蓋高頻高速基板、高階製程乾膜與功率模組封裝材料。公司供應ABF載板用高解析度乾膜，並參與新一代CoWoS封裝材料的驗證與測試。光電產品包括平面顯示器材料及Mini／Micro LED封裝元件。氖氣純化廠由子公司華科工業營運，錦德氣體亦列於公司揭露的子公司名單。
+segments:
+- evidence_ids:
+  - e03
+  id: seg_semi
+  name: 半導體產業（母公司未沖銷口徑）
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e03
+  id: seg_ict
+  name: 電子通訊產業（母公司未沖銷口徑）
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e03
+  id: seg_pcb
+  name: 印刷電路板／主機板產業（母公司未沖銷口徑）
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e03
+  id: seg_display
+  name: 平面顯示器產業（母公司未沖銷口徑）
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e03
+  id: seg_green
+  name: 綠能產業（母公司未沖銷口徑）
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e03
+  id: seg_other
+  name: 其他產業（母公司未沖銷口徑）
+  period: '2025'
+  revenue_share_pct: null
+main_theme: theme.ai_server
+themes:
+- stage: board_materials
+  theme: theme.ai_server
+  tier: upstream
+- stage: make
+  theme: theme.photoresist
+  tier: midstream
+- stage: packaging
+  theme: theme.mini_led
+  tier: midstream
+- stage: materials
+  theme: theme.cowos
+  tier: upstream
+- stage: materials
+  theme: theme.abf
+  tier: upstream
 relations:
   customers:
   - as_of: '2026-06-30'
@@ -29,11 +95,232 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  subsidiaries:
+  - as_of: '2026-10-15'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 國內子公司
+    details:
+    - 國內子公司
+    edge: e59012929de23
+    evidence_level: primary
+    id: org.chuan-shun-logistics
+    name: 全順物流股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-15'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 國內子公司
+    details:
+    - 國內子公司
+    edge: e74a41543f257
+    evidence_level: primary
+    id: org.guo-xuan-technology
+    name: 國軒科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-15'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司；氖氣純化
+    details:
+    - 子公司；氖氣純化
+    edge: e3f7a3733f9a4
+    evidence_level: primary
+    id: org.hua-ke-industrial
+    name: 華科工業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-15'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司；特殊氣體混配
+    details:
+    - 子公司；特殊氣體混配
+    edge: e6b06f11b5601
+    evidence_level: primary
+    id: org.jin-de-gas
+    name: 錦德氣體股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-15'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 海外子公司
+    details:
+    - 海外子公司
+    edge: ee180c51b2091
+    evidence_level: primary
+    id: org.wah-kong-industrial-products
+    name: 華港工業物品 (香港) 有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-15'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 海外子公司
+    details:
+    - 海外子公司
+    edge: eb7f95c252bb2
+    evidence_level: primary
+    id: org.wah-lee-holding
+    name: Wah Lee Holding Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 多家指標ABF載板客戶
+- 全球多家主要伺服器PCB製造商
 website: http://www.wahlee.com
 tax_id: '75514419'
 incorporated: '1968-10-01'
 listed: '2002-07-22'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-15'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3010#e01:
+    locator: 供應鏈上、下游關聯圖
+    published_date: null
+    publisher: 華立企業股份有限公司
+    quote_check: found
+    title: 公司簡介－公司治理
+    url: https://esg.wahlee.com/profile.html
+  tw.3010#e02:
+    locator: 公司概況／公司名稱與股票代號
+    published_date: null
+    publisher: 華立企業股份有限公司
+    quote_check: found
+    title: 公司簡介－公司治理
+    url: https://esg.wahlee.com/profile.html
+  tw.3010#e03:
+    locator: 供應鏈上、下游關聯圖／2025年度產品項目之內外銷營業額表；半導體內銷12,223,476仟元、外銷8,102,162仟元
+    published_date: null
+    publisher: 華立企業股份有限公司
+    quote_check: found
+    title: 公司簡介－公司治理
+    url: https://esg.wahlee.com/profile.html
+  tw.3010#e04:
+    locator: 半導體材料概要
+    published_date: null
+    publisher: 華立企業股份有限公司
+    quote_check: found
+    title: 半導體材料
+    url: https://www.wahlee.com/zh-TW/product-classes-2/8e71c69daa86fc85
+  tw.3010#e05:
+    locator: 主要產品與服務／電子構裝
+    published_date: null
+    publisher: 華立企業股份有限公司
+    quote_check: found
+    title: 公司簡介－公司治理
+    url: https://esg.wahlee.com/profile.html
+  tw.3010#e06:
+    locator: 電子連接器高溫工程塑膠
+    published_date: null
+    publisher: 華立企業股份有限公司
+    quote_check: found
+    title: ICT工程用塑膠
+    url: https://www.wahlee.com/zh-TW/product-classes-2/fbb32821b3dbad09
+  tw.3010#e07:
+    locator: 光電材料產品清單
+    published_date: null
+    publisher: 華立企業股份有限公司
+    quote_check: found
+    title: 首頁－產品介紹
+    url: https://www.wahlee.com/zh-TW
+  tw.3010#e08:
+    locator: 第二段
+    published_date: null
+    publisher: 華立企業股份有限公司
+    quote_check: found
+    title: 華立併購錦德氣體 切入半導體高門檻混配氣市場
+    url: https://www.wahlee.com/zh-TW/news-detail/5940d561282dc78/675def7ff66ae7b7
+  tw.3010#e09:
+    locator: 氣體業務整合說明
+    published_date: null
+    publisher: 華立企業股份有限公司
+    quote_check: found
+    title: 華立併購錦德氣體 切入半導體高門檻混配氣市場
+    url: https://www.wahlee.com/zh-TW/news-detail/5940d561282dc78/675def7ff66ae7b7
+  tw.3010#e10:
+    locator: 聚焦先進封裝材料與設備布局／第一段
+    published_date: null
+    publisher: 華立企業股份有限公司
+    quote_check: found
+    title: 《SEMICON》華立深化先進封裝材料與設備布局 加速全球半導體供應鏈拓展
+    url: https://www.wahlee.com/zh-TW/news-detail/5940d561282dc78/1d69487fba42ca46
+  tw.3010#e11:
+    locator: ABF載板產業段落
+    published_date: '2026-03-11'
+    publisher: 華立企業股份有限公司
+    quote_check: found
+    title: 華立去年財報亮眼 全年合併毛利、營業利益同創史上新高
+    url: https://www.wahlee.com/zh-TW/news-detail/5940d561282dc78/c5905a3e64881b8e
+  tw.3010#e12:
+    locator: 高階銅箔基板與AI伺服器段落
+    published_date: '2026-03-11'
+    publisher: 華立企業股份有限公司
+    quote_check: found
+    title: 華立去年財報亮眼 全年合併毛利、營業利益同創史上新高
+    url: https://www.wahlee.com/zh-TW/news-detail/5940d561282dc78/c5905a3e64881b8e
+  tw.3010#e13:
+    locator: 國內外子公司／國內
+    published_date: null
+    publisher: 華立企業股份有限公司
+    quote_check: found
+    title: 公司簡介－公司治理
+    url: https://esg.wahlee.com/profile.html
+  tw.3010#e14:
+    locator: 國內外子公司／國內
+    published_date: null
+    publisher: 華立企業股份有限公司
+    quote_check: found
+    title: 公司簡介－公司治理
+    url: https://esg.wahlee.com/profile.html
+  tw.3010#e15:
+    locator: 第一段
+    published_date: null
+    publisher: 華立企業股份有限公司
+    quote_check: found
+    title: 華立併購錦德氣體 切入半導體高門檻混配氣市場
+    url: https://www.wahlee.com/zh-TW/news-detail/5940d561282dc78/675def7ff66ae7b7
+  tw.3010#e16:
+    locator: 國內外子公司／國內
+    published_date: null
+    publisher: 華立企業股份有限公司
+    quote_check: found
+    title: 公司簡介－公司治理
+    url: https://esg.wahlee.com/profile.html
+  tw.3010#e17:
+    locator: 國內外子公司／國內
+    published_date: null
+    publisher: 華立企業股份有限公司
+    quote_check: found
+    title: 公司簡介－公司治理
+    url: https://esg.wahlee.com/profile.html
+  tw.3010#e18:
+    locator: 國內外子公司／海外
+    published_date: null
+    publisher: 華立企業股份有限公司
+    quote_check: found
+    title: 公司簡介－公司治理
+    url: https://esg.wahlee.com/profile.html
+  tw.3010#e19:
+    locator: 國內外子公司／海外
+    published_date: null
+    publisher: 華立企業股份有限公司
+    quote_check: found
+    title: 公司簡介－公司治理
+    url: https://esg.wahlee.com/profile.html

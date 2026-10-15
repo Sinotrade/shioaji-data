@@ -8,12 +8,165 @@ industry:
   l0_code: '24'
   l0_name: 半導體業
   l0_name_en: Semiconductor
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.semi
+  l2_name: 半導體
+  l2_name_en: Semiconductors
+  l3: semi.ic_design
+  l3_name: IC 設計
+  l3_name_en: IC Design
+chain: chain.semiconductor
+primary_chain_position: upstream
+summary_short: 設計與銷售觸控、主動筆、電池管理及混合訊號晶片，並提供設計服務。
+summary_long: 矽統從事人機介面與混合訊號IC設計，產品包括電容式觸控晶片、主動筆控制晶片、MEMS麥克風專用晶片、電池管理晶片與混合訊號微控制器。觸控方案支援多點觸控與雜訊抑制，主動筆控制器提供USI及MPP協定產品；電池管理產品涵蓋單節及多節電池保護。2026年上半年合併營收分為商品銷售與勞務兩類。主要營運子公司包括直接持有的華矽半導體，以及透過投資架構間接持有的聯暻半導體與廈門凌陽華芯。
+segments:
+- evidence_ids:
+  - e8
+  id: seg_goods
+  name: 商品銷售
+  period: 2026年上半年
+  revenue_share_pct: null
+- evidence_ids:
+  - e9
+  id: seg_services
+  name: 勞務
+  period: 2026年上半年
+  revenue_share_pct: null
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過聯暻半導體間接持有的子公司
+    details:
+    - 透過聯暻半導體間接持有的子公司
+    edge: e609f8392173b
+    evidence_level: primary
+    id: org.廈門凌陽華芯科技股份有限公司
+    name: 廈門凌陽華芯科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持有的積體電路設計服務子公司
+    details:
+    - 間接持有的積體電路設計服務子公司
+    edge: ec48cc2bf23ca
+    evidence_level: primary
+    id: org.聯暻半導體-山東-有限公司
+    name: 聯暻半導體(山東)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有的半導體設計子公司
+    details:
+    - 直接持有的半導體設計子公司
+    edge: ee3a2ae536634
+    evidence_level: primary
+    id: org.華矽半導體股份有限公司
+    name: 華矽半導體股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.sis.com
 tax_id: '22099202'
 incorporated: '1987-08-26'
 listed: '1997-08-01'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-15'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2363#e1:
+    locator: 關於矽統科技，第一段
+    published_date: null
+    publisher: 矽統科技
+    quote_check: found
+    title: 公司簡介
+    url: https://www.sis.com/zh-tw/Company/Profile
+  tw.2363#e10:
+    locator: 第15頁，合併財務報表編製主體表；華矽半導體列示權益50.78%
+    published_date: '2026-07-27'
+    publisher: 矽統科技股份有限公司
+    quote_check: found
+    title: 民國115年上半年度合併財務報告
+    url: https://www.sis.com/dl/Inv/Report/2026/2026Q2.pdf
+  tw.2363#e11:
+    locator: 第15頁，合併財務報表編製主體表；聯暻半導體及廈門凌陽華芯各列
+    published_date: '2026-07-27'
+    publisher: 矽統科技股份有限公司
+    quote_check: found
+    title: 民國115年上半年度合併財務報告
+    url: https://www.sis.com/dl/Inv/Report/2026/2026Q2.pdf
+  tw.2363#e12:
+    locator: 第16頁，合併財務報表編製主體註4
+    published_date: '2026-07-27'
+    publisher: 矽統科技股份有限公司
+    quote_check: found
+    title: 民國115年上半年度合併財務報告
+    url: https://www.sis.com/dl/Inv/Report/2026/2026Q2.pdf
+  tw.2363#e2:
+    locator: 核心技術與產品線
+    published_date: null
+    publisher: 矽統科技
+    quote_check: found
+    title: SiS矽統科技官方網站
+    url: https://www.sis.com/zh-tw
+  tw.2363#e3:
+    locator: SiS97產品系列及規格表
+    published_date: null
+    publisher: 矽統科技
+    quote_check: found
+    title: 產品資訊：Active Pen Controller
+    url: https://www.sis.com/zh-tw/Product/Active%20Pen%20Controller
+  tw.2363#e4:
+    locator: SiS35產品系列
+    published_date: null
+    publisher: 矽統科技
+    quote_check: found
+    title: 產品資訊：ASIC for MEMS MIC
+    url: https://www.sis.com/zh-tw/Product/ASIC%20for%20MEMS%20MIC
+  tw.2363#e5:
+    locator: 產品分類：單節電池保護
+    published_date: null
+    publisher: 矽統科技
+    quote_check: found
+    title: 產品資訊：Battery Management IC
+    url: https://www.sis.com/zh-tw/Product/Battery%20Management%20IC
+  tw.2363#e6:
+    locator: 產品分類：多節電池保護
+    published_date: null
+    publisher: 矽統科技
+    quote_check: found
+    title: 產品資訊：Battery Management IC
+    url: https://www.sis.com/zh-tw/Product/Battery%20Management%20IC
+  tw.2363#e7:
+    locator: HY10P系列規格說明
+    published_date: null
+    publisher: 矽統科技
+    quote_check: found
+    title: 產品資訊：Mixed-Signal Microcontroller
+    url: https://www.sis.com/zh-tw/Product/Mixed-Signal%20Microcontroller
+  tw.2363#e8:
+    locator: 第32頁，附註六.17營業收入；2026年上半年商品銷售收入2,122,221千元
+    published_date: '2026-07-27'
+    publisher: 矽統科技股份有限公司
+    quote_check: found
+    title: 民國115年上半年度合併財務報告
+    url: https://www.sis.com/dl/Inv/Report/2026/2026Q2.pdf
+  tw.2363#e9:
+    locator: 第32頁，附註六.17營業收入；2026年上半年勞務收入88,860千元
+    published_date: '2026-07-27'
+    publisher: 矽統科技股份有限公司
+    quote_check: not_found
+    title: 民國115年上半年度合併財務報告
+    url: https://www.sis.com/dl/Inv/Report/2026/2026Q2.pdf

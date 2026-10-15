@@ -8,8 +8,130 @@ industry:
   l0_code: '03'
   l0_name: 塑膠工業
   l0_name_en: Plastics
-primary_chain_position: unknown
+  l1: materials
+  l1_name: 原物料
+  l1_name_en: Materials
+  l2: mat.chemicals
+  l2_name: 化工
+  l2_name_en: Chemicals
+  l3: chem.petrochem
+  l3_name: 石化與塑膠原料
+  l3_name_en: Petrochemicals & Plastics
+chain: chain.petrochem
+primary_chain_position: downstream
+summary_short: 製造銷售苯乙烯、ABS與尼龍，子公司生產丙烯及聚丙烯。
+summary_long: 國喬以苯乙烯及塑膠原料的製造與銷售為核心，主要產品包括SM、ABS與尼龍66，子公司國亨化學生產PS，泉州國亨則生產丙烯與聚丙烯。2025年合併營收中，塑膠銷貨占39.56%，石化銷貨占39.51%，廣告、視訊及頻道經營占6.64%，其他業務占14.29%。集團子公司另包括緯來電視網、高冠企業及英屬維京群島海陸投資公司，營運涵蓋石化塑膠與媒體等業務。
+segments:
+- evidence_ids:
+  - e2
+  id: plastics
+  name: 塑膠銷貨收入（ABS、HIPS、PP）
+  period: '2025'
+  revenue_share_pct: 39.56
+- evidence_ids:
+  - e2
+  id: petrochemicals
+  name: 石化銷貨收入（SM、Propylene）
+  period: '2025'
+  revenue_share_pct: 39.51
+- evidence_ids:
+  - e2
+  id: media
+  name: 廣告、視訊及頻道經營收入
+  period: '2025'
+  revenue_share_pct: 6.64
+- evidence_ids:
+  - e2
+  id: others
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 14.29
 relations:
+  subsidiaries:
+  - as_of: 2026-03
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 塑膠製造子公司
+    details:
+    - 塑膠製造子公司
+    edge: e9e70f243a3f4
+    evidence_level: primary
+    id: org.grand-pacific-chemical
+    name: 國亨化學股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2026-03
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團子公司
+    details:
+    - 集團子公司
+    edge: efca7e51d06dd
+    evidence_level: primary
+    id: org.guoheng-development
+    name: 國亨開發股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2026-03
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團子公司
+    details:
+    - 集團子公司
+    edge: edf4a3fa69555
+    evidence_level: primary
+    id: org.kao-kuan-enterprise
+    name: 高冠企業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2026-03
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 投資子公司
+    details:
+    - 投資子公司
+    edge: e21c19a4ae0cb
+    evidence_level: primary
+    id: org.land-and-sea-capital
+    name: 英屬維京群島海陸投資公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2026-03
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 石化產品製造子公司
+    details:
+    - 石化產品製造子公司
+    edge: ec909a783f042
+    evidence_level: primary
+    id: org.quanzhou-grand-pacific-chemical
+    name: 泉州國亨化學有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2026-03
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團子公司
+    details:
+    - 集團子公司
+    edge: e6ee314ffde05
+    evidence_level: primary
+    id: org.videoland
+    name: 緯來電視網股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   suppliers:
   - as_of: '2024-09-30'
     confidence: ai_cross_checked
@@ -29,7 +151,70 @@ website: http://www.gppc.com.tw
 tax_id: '04212250'
 incorporated: '1973-09-25'
 listed: '1988-12-21'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-15'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1312#e10:
+    locator: 第86頁，114年12月22日董事會重要決議
+    published_date: '2026-03-31'
+    publisher: 國喬石油化學股份有限公司
+    quote_check: found
+    title: 國喬石油化學股份有限公司一一四年度年報
+    url: https://www.gppc.com.tw/gppc/Shareholders_PDF/國喬114年年報-中文版-上傳版.pdf
+  tw.1312#e2:
+    locator: 第101頁，各項產品之營業比重，國喬集團
+    published_date: '2026-03-31'
+    publisher: 國喬石油化學股份有限公司
+    quote_check: found
+    title: 國喬石油化學股份有限公司一一四年度年報
+    url: https://www.gppc.com.tw/gppc/Shareholders_PDF/國喬114年年報-中文版-上傳版.pdf
+  tw.1312#e3:
+    locator: 公司簡介首段
+    published_date: null
+    publisher: 國喬石油化學股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.gppc.com.tw/gppc/company.asp
+  tw.1312#e4:
+    locator: 苯乙烯產品說明
+    published_date: null
+    publisher: 國喬石油化學股份有限公司
+    quote_check: found
+    title: 產品介紹－苯乙烯
+    url: https://www.gppc.com.tw/gppc/product-2.asp
+  tw.1312#e5:
+    locator: 尼龍產品說明
+    published_date: null
+    publisher: 國喬石油化學股份有限公司
+    quote_check: found
+    title: 產品介紹－尼龍
+    url: https://www.gppc.com.tw/gppc/product-6.asp
+  tw.1312#e6:
+    locator: PS塑膠產品說明首句
+    published_date: null
+    publisher: 國喬石油化學股份有限公司
+    quote_check: found
+    title: 產品介紹－PS塑膠
+    url: https://www.gppc.com.tw/gppc/product-4.asp
+  tw.1312#e7:
+    locator: 2020年大事紀
+    published_date: null
+    publisher: 國喬石油化學股份有限公司
+    quote_check: found
+    title: 公司簡介－大事紀
+    url: https://www.gppc.com.tw/gppc/company-2.asp
+  tw.1312#e8:
+    locator: 第56頁，子公司溫室氣體盤查範圍
+    published_date: '2026-03-31'
+    publisher: 國喬石油化學股份有限公司
+    quote_check: found
+    title: 國喬石油化學股份有限公司一一四年度年報
+    url: https://www.gppc.com.tw/gppc/Shareholders_PDF/國喬114年年報-中文版-上傳版.pdf
+  tw.1312#e9:
+    locator: 第82頁，董事會利益迴避事項
+    published_date: '2026-03-31'
+    publisher: 國喬石油化學股份有限公司
+    quote_check: found
+    title: 國喬石油化學股份有限公司一一四年度年報
+    url: https://www.gppc.com.tw/gppc/Shareholders_PDF/國喬114年年報-中文版-上傳版.pdf

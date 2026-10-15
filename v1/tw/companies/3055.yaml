@@ -8,12 +8,206 @@ industry:
   l0_code: '29'
   l0_name: 電子通路業
   l0_name_en: Electronic Products Distribution
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.semi
+  l2_name: 半導體
+  l2_name_en: Semiconductors
+  l3: semi.equipment
+  l3_name: 半導體設備
+  l3_name_en: Semiconductor Equipment
+chain: chain.semiconductor
+primary_chain_position: upstream
+summary_short: 銷售半導體測試、封裝與檢測設備，提供工程服務並開發自有光學檢測系統。
+summary_long: 蔚華科技以半導體測試、封裝、檢測與驗證設備銷售及應用工程服務為主要業務，兼有經銷代理與自有品牌設備。2024年合併營收中，銷貨占95.44%，勞務及其他收入占1.79%，裝機及維修占2.77%。自有SP8000S非破壞性TSV檢測系統已於2025年公告通過驗證並取得訂單，應用涵蓋HBM相關製程；2026年另發表SP7000G玻璃基板TGV微裂紋掃描系統。產品應用亦包括CoWoS熱壓鍵合、CPO相關檢測及矽光子WAT檢測。
+segments:
+- evidence_ids:
+  - e3
+  id: seg_sales
+  name: 銷貨收入
+  period: '2024'
+  revenue_share_pct: 95.44
+- evidence_ids:
+  - e4
+  id: seg_services
+  name: 勞務收入及其他收入
+  period: '2024'
+  revenue_share_pct: 1.79
+- evidence_ids:
+  - e5
+  id: seg_maintenance
+  name: 裝機及維修收入
+  period: '2024'
+  revenue_share_pct: 2.77
+main_theme: theme.cpo
+themes:
+- stage: packaging
+  theme: theme.cpo
+  tier: midstream
+- stage: equipment
+  theme: theme.cowos
+  tier: upstream
+- stage: devices
+  theme: theme.silicon_photonics
+  tier: midstream
+- stage: equipment_materials
+  theme: theme.hbm
+  tier: upstream
+relations:
+  subsidiaries:
+  - as_of: '2025-06-25'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團子公司
+    details:
+    - 集團子公司
+    edge: e0889c21fb386
+    evidence_level: primary
+    id: org.jetek-technology
+    name: 思衛科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-06-25'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團子公司
+    details:
+    - 集團子公司
+    edge: e18f518dd54f7
+    evidence_level: primary
+    id: org.southport-corporation
+    name: 南方科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 重要子公司
+    details:
+    - 重要子公司
+    edge: eb5cd5459b0c4
+    evidence_level: primary
+    id: org.spirox-shanghai
+    name: 蔚華電子科技（上海）有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.spirox.com.tw
 tax_id: '22729784'
 incorporated: '1987-12-11'
 listed: '2002-12-12'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-15'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3055#e1:
+    locator: 公司介紹首段
+    published_date: null
+    publisher: 蔚華科技股份有限公司
+    quote_check: found
+    title: 關於蔚華
+    url: https://www.spirox.com.tw/tw/about/
+  tw.3055#e10:
+    locator: CoWoS及混合鍵合應用分類
+    published_date: null
+    publisher: 蔚華科技股份有限公司
+    quote_check: found
+    title: CoWoS－產品及應用
+    url: https://www.spirox.com.tw/tw/solution/Advanced-Packaging/CoWoS/
+  tw.3055#e11:
+    locator: 共同封裝光學(CPO)分類下產品
+    published_date: null
+    publisher: 蔚華科技股份有限公司
+    quote_check: found
+    title: 共同封裝光學（CPO）－產品及應用
+    url: https://www.spirox.com.tw/tw/solution/Advanced-Packaging/CPO/
+  tw.3055#e12:
+    locator: 附件一，印刷頁8，民國113年度營業報告書
+    published_date: null
+    publisher: 蔚華科技股份有限公司
+    quote_check: found
+    title: 2025年度股東常會議事錄
+    url: https://file.spirox.com.tw/Shareholders%20Meeting/2025/%E8%82%A1%E6%9D%B1%E6%9C%83%E8%AD%B0%E4%BA%8B%E9%8C%84%2820250625%3B%E4%B8%AD%E6%96%87%E7%89%88%29.pdf
+  tw.3055#e13:
+    locator: 印刷頁3，公司回覆第6點
+    published_date: null
+    publisher: 蔚華科技股份有限公司
+    quote_check: found
+    title: 2025年度股東常會議事錄
+    url: https://file.spirox.com.tw/Shareholders%20Meeting/2025/%E8%82%A1%E6%9D%B1%E6%9C%83%E8%AD%B0%E4%BA%8B%E9%8C%84%2820250625%3B%E4%B8%AD%E6%96%87%E7%89%88%29.pdf
+  tw.3055#e14:
+    locator: 印刷頁1，報告邊界與範疇，集團據點表
+    published_date: null
+    publisher: 蔚華科技股份有限公司
+    quote_check: found
+    title: 蔚華科技113年度永續報告書
+    url: https://file.spirox.com.tw/ESG%20Report/%E8%94%9A%E8%8F%AF%E7%A7%91%E6%8A%80113%E5%B9%B4%E5%BA%A6%E6%B0%B8%E7%BA%8C%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf
+  tw.3055#e15:
+    locator: 115/09/30公告列；以瀏覽器頁面核讀
+    published_date: null
+    publisher: 蔚華科技股份有限公司
+    quote_check: found
+    title: 2026年重大訊息公告
+    url: https://www.spirox.com.tw/tw/investor/ir/material-information/2026/
+  tw.3055#e2:
+    locator: 關於蔚華科技
+    published_date: '2025-12-08'
+    publisher: 蔚華科技股份有限公司
+    quote_check: found
+    title: 看準HBM記憶體應用需求 蔚華雷射斷層掃描技術再突破
+    url: https://www.spirox.com.tw/tw/news-detail/650/
+  tw.3055#e3:
+    locator: 印刷頁21，民國113年度合併營業收入分析
+    published_date: null
+    publisher: 蔚華科技股份有限公司
+    quote_check: found
+    title: 蔚華科技113年度永續報告書
+    url: https://file.spirox.com.tw/ESG%20Report/%E8%94%9A%E8%8F%AF%E7%A7%91%E6%8A%80113%E5%B9%B4%E5%BA%A6%E6%B0%B8%E7%BA%8C%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf
+  tw.3055#e4:
+    locator: 印刷頁21，民國113年度合併營業收入分析
+    published_date: null
+    publisher: 蔚華科技股份有限公司
+    quote_check: found
+    title: 蔚華科技113年度永續報告書
+    url: https://file.spirox.com.tw/ESG%20Report/%E8%94%9A%E8%8F%AF%E7%A7%91%E6%8A%80113%E5%B9%B4%E5%BA%A6%E6%B0%B8%E7%BA%8C%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf
+  tw.3055#e5:
+    locator: 印刷頁21，民國113年度合併營業收入分析
+    published_date: null
+    publisher: 蔚華科技股份有限公司
+    quote_check: found
+    title: 蔚華科技113年度永續報告書
+    url: https://file.spirox.com.tw/ESG%20Report/%E8%94%9A%E8%8F%AF%E7%A7%91%E6%8A%80113%E5%B9%B4%E5%BA%A6%E6%B0%B8%E7%BA%8C%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf
+  tw.3055#e6:
+    locator: 首段
+    published_date: '2025-12-08'
+    publisher: 蔚華科技股份有限公司
+    quote_check: found
+    title: 看準HBM記憶體應用需求 蔚華雷射斷層掃描技術再突破
+    url: https://www.spirox.com.tw/tw/news-detail/650/
+  tw.3055#e7:
+    locator: 首段
+    published_date: '2025-12-08'
+    publisher: 蔚華科技股份有限公司
+    quote_check: found
+    title: 看準HBM記憶體應用需求 蔚華雷射斷層掃描技術再突破
+    url: https://www.spirox.com.tw/tw/news-detail/650/
+  tw.3055#e8:
+    locator: TSV應用說明
+    published_date: '2025-12-08'
+    publisher: 蔚華科技股份有限公司
+    quote_check: found
+    title: 看準HBM記憶體應用需求 蔚華雷射斷層掃描技術再突破
+    url: https://www.spirox.com.tw/tw/news-detail/650/
+  tw.3055#e9:
+    locator: SP7000G產品說明
+    published_date: '2026-09-08'
+    publisher: 蔚華科技股份有限公司
+    quote_check: found
+    title: 蔚華發表TGV微裂紋快速掃描系統 助力玻璃基板量產檢測
+    url: https://www.spirox.com.tw/tw/news-detail/699/

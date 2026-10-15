@@ -8,12 +8,215 @@ industry:
   l0_code: '24'
   l0_name: 半導體業
   l0_name_en: Semiconductor
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.semi
+  l2_name: 半導體
+  l2_name_en: Semiconductors
+  l3: semi.ic_design
+  l3_name: IC 設計
+  l3_name_en: IC Design
+chain: chain.semiconductor
+primary_chain_position: upstream
+summary_short: 設計與銷售光學導航、CMOS影像感測及其他感測晶片。
+summary_long: 原相從事感測晶片設計與銷售，產品採委外生產模式，2025年CMOS影像感測元配件占合併營收98.17%，其他產品占1.83%。主要產品包括光學導航感測器、CMOS影像感測器、健康管理與熱感測器、物體動態感測器，以及射頻與低功耗藍牙晶片。光學導航產品涵蓋滑鼠、手指導航、光學追蹤及編碼器；影像感測產品包括影像感測系統單晶片與全域快門感測器。集團產品應用涵蓋掃地機，並已揭露無人機影像感測晶片需求，對應機器人及無人機的感測零組件領域。
+segments:
+- evidence_ids:
+  - e3
+  id: seg_cmos
+  name: CMOS影像感測元配件
+  period: '2025'
+  revenue_share_pct: 98.17
+- evidence_ids:
+  - e3
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 1.83
+main_theme: theme.robotics
+themes:
+- stage: components
+  theme: theme.robotics
+  tier: upstream
+- stage: components
+  theme: theme.drone
+  tier: upstream
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 芬蘭全資子公司
+    details:
+    - 芬蘭全資子公司
+    edge: ed8e523d96388
+    evidence_level: primary
+    id: org.pixart-imaging-finland
+    name: PixArt Imaging Finland Oy
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 馬來西亞間接全資子公司
+    details:
+    - 馬來西亞間接全資子公司
+    edge: e409080e6d436
+    evidence_level: primary
+    id: org.pixart-imaging-penang
+    name: PixArt Imaging (Penang) SDN. BHD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 深圳間接全資子公司
+    details:
+    - 深圳間接全資子公司
+    edge: e2cc65d5fbc01
+    evidence_level: primary
+    id: org.pixart-imaging-shenzhen
+    name: 原相科技(深圳)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 美國全資子公司
+    details:
+    - 美國全資子公司
+    edge: ebecfdfcd4df1
+    evidence_level: primary
+    id: org.pixart-imaging-usa
+    name: PixArt Imaging (USA) Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 控股子公司
+    details:
+    - 控股子公司
+    edge: e7be7045c345e
+    evidence_level: primary
+    id: org.tian-guang-materials-technology
+    name: 天光材料科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.pixart.com
 tax_id: '16633261'
 incorporated: '1998-07-13'
 listed: '2006-05-04'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-15'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3227#e10:
+    locator: 第1頁，致股東報告書
+    published_date: '2026-03-29'
+    publisher: 原相科技股份有限公司
+    quote_check: unreachable
+    title: 原相科技股份有限公司114年度年報
+    url: https://financialfilings.com/filings/company-426/annual-report/2026/47859592/
+  tw.3227#e11:
+    locator: 第46頁，轉投資事業持股表，本公司投資欄
+    published_date: '2026-03-29'
+    publisher: 原相科技股份有限公司
+    quote_check: found
+    title: 原相科技股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/73186/2026/RNS/73186_rns_2026-05-28_16f9d5e1-3286-4962-bc1d-b7a00e1a4fde.pdf
+  tw.3227#e12:
+    locator: 第46頁，轉投資事業持股表，本公司投資欄
+    published_date: '2026-03-29'
+    publisher: 原相科技股份有限公司
+    quote_check: found
+    title: 原相科技股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/73186/2026/RNS/73186_rns_2026-05-28_16f9d5e1-3286-4962-bc1d-b7a00e1a4fde.pdf
+  tw.3227#e13:
+    locator: 第46頁持股表及第72頁關係企業組織圖
+    published_date: '2026-03-29'
+    publisher: 原相科技股份有限公司
+    quote_check: found
+    title: 原相科技股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/73186/2026/RNS/73186_rns_2026-05-28_16f9d5e1-3286-4962-bc1d-b7a00e1a4fde.pdf
+  tw.3227#e14:
+    locator: 第46頁持股表及第72頁關係企業組織圖
+    published_date: '2026-03-29'
+    publisher: 原相科技股份有限公司
+    quote_check: found
+    title: 原相科技股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/73186/2026/RNS/73186_rns_2026-05-28_16f9d5e1-3286-4962-bc1d-b7a00e1a4fde.pdf
+  tw.3227#e15:
+    locator: 第46頁持股表、第72頁關係企業組織圖及第74頁關係企業合併財務報表說明
+    published_date: '2026-03-29'
+    publisher: 原相科技股份有限公司
+    quote_check: found
+    title: 原相科技股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/73186/2026/RNS/73186_rns_2026-05-28_16f9d5e1-3286-4962-bc1d-b7a00e1a4fde.pdf
+  tw.3227#e2:
+    locator: 第60頁，主要產品之產製過程
+    published_date: '2026-03-29'
+    publisher: 原相科技股份有限公司
+    quote_check: unreachable
+    title: 原相科技股份有限公司114年度年報
+    url: https://financialfilings.com/filings/company-426/annual-report/2026/47859592/
+  tw.3227#e3:
+    locator: 第54頁，各產品營業比重；欄序為113年度金額、占比及114年度金額、占比
+    published_date: '2026-03-29'
+    publisher: 原相科技股份有限公司
+    quote_check: found
+    title: 原相科技股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/73186/2026/RNS/73186_rns_2026-05-28_16f9d5e1-3286-4962-bc1d-b7a00e1a4fde.pdf
+  tw.3227#e4:
+    locator: 第54頁，公司目前之商品項目a
+    published_date: '2026-03-29'
+    publisher: 原相科技股份有限公司
+    quote_check: unreachable
+    title: 原相科技股份有限公司114年度年報
+    url: https://financialfilings.com/filings/company-426/annual-report/2026/47859592/
+  tw.3227#e5:
+    locator: 第54頁，公司目前之商品項目b
+    published_date: '2026-03-29'
+    publisher: 原相科技股份有限公司
+    quote_check: unreachable
+    title: 原相科技股份有限公司114年度年報
+    url: https://financialfilings.com/filings/company-426/annual-report/2026/47859592/
+  tw.3227#e6:
+    locator: 第54頁，公司目前之商品項目c
+    published_date: '2026-03-29'
+    publisher: 原相科技股份有限公司
+    quote_check: unreachable
+    title: 原相科技股份有限公司114年度年報
+    url: https://financialfilings.com/filings/company-426/annual-report/2026/47859592/
+  tw.3227#e7:
+    locator: 第54頁，公司目前之商品項目d
+    published_date: '2026-03-29'
+    publisher: 原相科技股份有限公司
+    quote_check: unreachable
+    title: 原相科技股份有限公司114年度年報
+    url: https://financialfilings.com/filings/company-426/annual-report/2026/47859592/
+  tw.3227#e8:
+    locator: 第54頁，公司目前之商品項目e
+    published_date: '2026-03-29'
+    publisher: 原相科技股份有限公司
+    quote_check: unreachable
+    title: 原相科技股份有限公司114年度年報
+    url: https://financialfilings.com/filings/company-426/annual-report/2026/47859592/
+  tw.3227#e9:
+    locator: 第59頁，競爭利基：多元之產品組合
+    published_date: '2026-03-29'
+    publisher: 原相科技股份有限公司
+    quote_check: unreachable
+    title: 原相科技股份有限公司114年度年報
+    url: https://financialfilings.com/filings/company-426/annual-report/2026/47859592/

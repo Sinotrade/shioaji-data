@@ -8,12 +8,143 @@ industry:
   l0_code: '22'
   l0_name: 生技醫療業
   l0_name_en: Biotechnology and Medical Care
-primary_chain_position: unknown
+  l1: health
+  l1_name: 醫療保健
+  l1_name_en: Healthcare
+  l2: health.pharma
+  l2_name: 製藥與生技
+  l2_name_en: Pharmaceuticals & Biotech
+  l3: bio.new_drug
+  l3_name: 新藥研發
+  l3_name_en: New Drug Development
+chain: chain.biotech
+primary_chain_position: upstream
+summary_short: 以新藥研發與銷售為主，產品涵蓋傷口藥品、醫材及抗體與小核酸新藥。
+summary_long: 合一的營收以新生物藥為主，2025年占64.05%，農業科技與其他業務分占7.24%及28.71%。主要產品包括治療糖尿病足部潰瘍的ON101乳膏，以及傷口照護醫材Bonvadis。研發管線涵蓋針對異位性皮膚炎與過敏性氣喘的抗體新藥FB825、抑制冠狀病毒複製的小核酸藥物SNS812，以及針對肥胖及過重合併代謝異常的SNS851。
+segments:
+- evidence_ids:
+  - e_revenue_drugs
+  id: seg_drugs
+  name: 新生物藥
+  period: '2025'
+  revenue_share_pct: 64.05
+- evidence_ids:
+  - e_revenue_agriculture
+  id: seg_agriculture
+  name: 農業科技
+  period: '2025'
+  revenue_share_pct: 7.24
+- evidence_ids:
+  - e_revenue_other
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 28.71
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股51%的子公司
+    details:
+    - 持股51%的子公司
+    edge: ee57f3df5a9c7
+    evidence_level: primary
+    id: org.cotton-field-organic-farm
+    name: Cotton Field Organic Farm Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股51%的子公司
+    details:
+    - 持股51%的子公司
+    edge: e1fe3a25e41f2
+    evidence_level: primary
+    id: org.microsoy-international
+    name: Microsoy International Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.onenessbio.com
 tax_id: '29108260'
 incorporated: '2008-06-02'
 listed: '2011-09-23'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-15'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4743#e_bonvadis:
+    locator: 核心產品及研發Pipeline，ON101項下Bonvadis介紹
+    published_date: null
+    publisher: 合一生技股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://onenessbio.com/about/company-profile/
+  tw.4743#e_fb825:
+    locator: 開發進度表
+    published_date: null
+    publisher: 合一生技股份有限公司
+    quote_check: found
+    title: FB825
+    url: https://onenessbio.com/pipeline/development-progress/fb825/
+  tw.4743#e_on101:
+    locator: ON101產品頁，適應症與開發進度
+    published_date: null
+    publisher: 合一生技股份有限公司
+    quote_check: found
+    title: ON101
+    url: https://onenessbio.com/pipeline/development-progress/on101/
+  tw.4743#e_revenue_agriculture:
+    locator: 印刷頁134／PDF第138頁，Operating revenue percentage，2025年Agricultural technology列
+    published_date: '2026-03-27'
+    publisher: 合一生技股份有限公司
+    quote_check: found
+    title: Annual Report 2025
+    url: https://onenessbio.com/wp-content/uploads/2026/05/%E5%90%88%E4%B8%80%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1%E5%BD%99%E6%95%B4-%E8%8B%B1%E6%96%87final.pdf
+  tw.4743#e_revenue_drugs:
+    locator: 印刷頁134／PDF第138頁，Operating revenue percentage，2025年New biological drugs列
+    published_date: '2026-03-27'
+    publisher: 合一生技股份有限公司
+    quote_check: found
+    title: Annual Report 2025
+    url: https://onenessbio.com/wp-content/uploads/2026/05/%E5%90%88%E4%B8%80%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1%E5%BD%99%E6%95%B4-%E8%8B%B1%E6%96%87final.pdf
+  tw.4743#e_revenue_other:
+    locator: 印刷頁134／PDF第138頁，Operating revenue percentage，2025年Other列
+    published_date: '2026-03-27'
+    publisher: 合一生技股份有限公司
+    quote_check: found
+    title: Annual Report 2025
+    url: https://onenessbio.com/wp-content/uploads/2026/05/%E5%90%88%E4%B8%80%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1%E5%BD%99%E6%95%B4-%E8%8B%B1%E6%96%87final.pdf
+  tw.4743#e_sns812:
+    locator: 作用機制
+    published_date: null
+    publisher: 合一生技股份有限公司
+    quote_check: found
+    title: SNS812
+    url: https://onenessbio.com/pipeline/development-progress/sns812/
+  tw.4743#e_sns851:
+    locator: 適應症與作用機制
+    published_date: null
+    publisher: 合一生技股份有限公司
+    quote_check: found
+    title: SNS851
+    url: https://onenessbio.com/pipeline/development-progress/sns851/
+  tw.4743#e_sub_ownership:
+    locator: 印刷頁193／PDF第197頁，關係企業組織圖；合一對Cotton Field Organic Farm及Microsoy International的持股比例
+    published_date: '2026-03-27'
+    publisher: 合一生技股份有限公司
+    quote_check: not_found
+    title: Annual Report 2025
+    url: https://onenessbio.com/wp-content/uploads/2026/05/%E5%90%88%E4%B8%80%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1%E5%BD%99%E6%95%B4-%E8%8B%B1%E6%96%87final.pdf
+  tw.4743#e_subsidiaries:
+    locator: 印刷頁6／PDF第10頁，子公司營運說明
+    published_date: '2026-03-27'
+    publisher: 合一生技股份有限公司
+    quote_check: found
+    title: Annual Report 2025
+    url: https://onenessbio.com/wp-content/uploads/2026/05/%E5%90%88%E4%B8%80%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1%E5%BD%99%E6%95%B4-%E8%8B%B1%E6%96%87final.pdf

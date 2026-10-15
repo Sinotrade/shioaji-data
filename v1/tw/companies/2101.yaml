@@ -8,12 +8,211 @@ industry:
   l0_code: '11'
   l0_name: 橡膠工業
   l0_name_en: Rubber
-primary_chain_position: unknown
+  l1: materials
+  l1_name: 原物料
+  l1_name_en: Materials
+  l2: mat.other
+  l2_name: 其他原物料
+  l2_name_en: Other Materials
+  l3: matl.rubber
+  l3_name: 橡膠與輪胎
+  l3_name_en: Rubber & Tires
+chain: chain.auto
+primary_chain_position: midstream
+summary_short: 製造銷售汽機車輪胎，並由子公司經營不動產開發。
+summary_long: 南港輪胎主要製造與銷售汽車、機車輪胎，2025年汽車輪胎占合併營收97.10%，機車輪胎占0.99%，其他輪胎占0.02%，營建業務占1.89%。公司開發AS-3EV電動車專用胎，採高強度胎面設計增加輪胎剛性並降低滾動阻力，可歸入電動車零組件題材。營建業務由全資子公司南榮開發建築經營，其投資興建的世界明珠包括住宅、辦公及商場。
+segments:
+- evidence_ids:
+  - e1
+  id: tires_auto
+  name: 汽車輪胎
+  period: '2025'
+  revenue_share_pct: 97.1
+- evidence_ids:
+  - e1
+  id: tires_motorcycle
+  name: 機車輪胎
+  period: '2025'
+  revenue_share_pct: 0.99
+- evidence_ids:
+  - e1
+  id: tires_other
+  name: 其他輪胎
+  period: '2025'
+  revenue_share_pct: 0.02
+- evidence_ids:
+  - e1
+  - e10
+  id: construction
+  name: 營建業務（子公司南榮開發建築）
+  period: '2025'
+  revenue_share_pct: 1.89
+main_theme: theme.ev
+themes:
+- stage: parts
+  theme: theme.ev
+  tier: midstream
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%的子公司
+    details:
+    - 直接持有100%的子公司
+    edge: eb35430926f2c
+    evidence_level: primary
+    id: org.南榮開發建築股份有限公司
+    name: 南榮開發建築股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過南港國際及新加坡子公司間接持有100%
+    details:
+    - 透過南港國際及新加坡子公司間接持有100%
+    edge: e3db2119ac3a0
+    evidence_level: primary
+    id: org.南港-張家港保稅區-橡膠工業有限公司
+    name: 南港(張家港保稅區)橡膠工業有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%的子公司
+    details:
+    - 直接持有100%的子公司
+    edge: e9ac9c790c9e1
+    evidence_level: primary
+    id: org.南港國際-股-公司
+    name: 南港國際(股)公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%的子公司
+    details:
+    - 直接持有100%的子公司
+    edge: e6ae08ed9aaa8
+    evidence_level: primary
+    id: org.南港輪胎-新加坡-私人有限公司
+    name: 南港輪胎(新加坡)私人有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%的子公司
+    details:
+    - 直接持有100%的子公司
+    edge: e2362cd5e3565
+    evidence_level: primary
+    id: org.南港輪胎荷蘭有限公司
+    name: 南港輪胎荷蘭有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%的子公司
+    details:
+    - 直接持有100%的子公司
+    edge: e187b12e6f957
+    evidence_level: primary
+    id: org.台北南鴻輪胎-股-公司
+    name: 台北南鴻輪胎(股)公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.nankang-tyre.com/
 tax_id: '11520909'
 incorporated: '1959-02-25'
 listed: '1963-11-01'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-15'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2101#e1:
+    locator: 印刷第77頁，主要產品及其營業比重；各列最後兩欄為合併營收及占比
+    published_date: '2026-03-28'
+    publisher: 南港輪胎股份有限公司
+    quote_check: found
+    title: 南港輪胎股份有限公司114年度年報
+    url: https://www.nankang-tyre.com/files/investors_shareholder_info/1781063361658.pdf
+  tw.2101#e10:
+    locator: 印刷第77頁，主要產品及其營業比重，註1
+    published_date: '2026-03-28'
+    publisher: 南港輪胎股份有限公司
+    quote_check: found
+    title: 南港輪胎股份有限公司114年度年報
+    url: https://www.nankang-tyre.com/files/investors_shareholder_info/1781063361658.pdf
+  tw.2101#e2:
+    locator: 印刷第78頁，公司目前之商品（服務）項目，第1項
+    published_date: '2026-03-28'
+    publisher: 南港輪胎股份有限公司
+    quote_check: not_found
+    title: 南港輪胎股份有限公司114年度年報
+    url: https://www.nankang-tyre.com/files/investors_shareholder_info/1781063361658.pdf
+  tw.2101#e3:
+    locator: 印刷第78頁，公司目前之商品（服務）項目，第2項
+    published_date: '2026-03-28'
+    publisher: 南港輪胎股份有限公司
+    quote_check: not_found
+    title: 南港輪胎股份有限公司114年度年報
+    url: https://www.nankang-tyre.com/files/investors_shareholder_info/1781063361658.pdf
+  tw.2101#e4:
+    locator: 簡報第18頁，電動車胎擴大規格
+    published_date: '2025-12-11'
+    publisher: 南港輪胎股份有限公司
+    quote_check: found
+    title: 南港輪胎2025年法人說明會簡報
+    url: https://www.nankang-tyre.com/files/investors_stock_legal/1765441806396.pdf
+  tw.2101#e5:
+    locator: 產品特色，第3項
+    published_date: null
+    publisher: 南港輪胎股份有限公司
+    quote_check: found
+    title: 全新世代電動車胎
+    url: https://www.nankang-tyre.com/product/detail/96
+  tw.2101#e6:
+    locator: 簡報第34頁，世界明珠建築規劃
+    published_date: '2025-12-11'
+    publisher: 南港輪胎股份有限公司
+    quote_check: found
+    title: 南港輪胎2025年法人說明會簡報
+    url: https://www.nankang-tyre.com/files/investors_stock_legal/1765441806396.pdf
+  tw.2101#e7:
+    locator: 簡報第34頁，世界明珠建築規劃
+    published_date: '2025-12-11'
+    publisher: 南港輪胎股份有限公司
+    quote_check: found
+    title: 南港輪胎2025年法人說明會簡報
+    url: https://www.nankang-tyre.com/files/investors_stock_legal/1765441806396.pdf
+  tw.2101#e8:
+    locator: 第17頁，合併基礎、列入合併財務報告之子公司；所有權權益表兩欄分別為2025及2024年底
+    published_date: null
+    publisher: 南港輪胎股份有限公司
+    quote_check: found
+    title: 南港輪胎股份有限公司及子公司114年度合併財務報告
+    url: https://www.nankang-tyre.com/files/investors_financial_reports/1780539509893.pdf
+  tw.2101#e9:
+    locator: 第76頁，附表八大陸投資資訊，註1
+    published_date: null
+    publisher: 南港輪胎股份有限公司
+    quote_check: found
+    title: 南港輪胎股份有限公司及子公司114年度合併財務報告
+    url: https://www.nankang-tyre.com/files/investors_financial_reports/1780539509893.pdf

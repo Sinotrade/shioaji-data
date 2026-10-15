@@ -8,12 +8,229 @@ industry:
   l0_code: '25'
   l0_name: 電腦及週邊設備業
   l0_name_en: Computer and Peripheral Equipment
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.chassis
+  l3_name: 機殼與機構件
+  l3_name_en: Chassis & Mechanical Parts
+chain: chain.server
+primary_chain_position: midstream
+summary_short: 設計、製造與銷售伺服器機箱、系統平台及儲存設備。
+summary_long: 營邦以伺服器機箱、系統平台與儲存設備的設計、製造及銷售為主要業務。2025年營收以伺服器機箱占35.61%最多，系統平台占32.36%，儲存系統占4.33%。主要產品涵蓋伺服器主機板、GPU伺服器、JBOD與JBOF儲存設備，並提供採無泵液冷設計的1U伺服器。公司亦提供AI訓練、推論與資料中心使用的運算及儲存平台，並具備NVIDIA STX架構硬體平台的設計與系統整合能力。年報列示的三家主要子公司中，兩家持股100%，另一家持股51%。
+segments:
+- evidence_ids:
+  - e2
+  id: esg
+  name: 伺服器機箱（ESG）
+  period: '2025'
+  revenue_share_pct: 35.61
+- evidence_ids:
+  - e3
+  id: psg
+  name: 系統平台（PSG）
+  period: '2025'
+  revenue_share_pct: 32.36
+- evidence_ids:
+  - e4
+  id: ssg
+  name: 儲存系統（SSG）
+  period: '2025'
+  revenue_share_pct: 4.33
+- evidence_ids:
+  - e5
+  id: iag
+  name: 產業設備（IAG）
+  period: '2025'
+  revenue_share_pct: 0.07
+- evidence_ids:
+  - e6
+  id: other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 27.63
+main_theme: theme.ai_server
+themes:
+- stage: assembly
+  theme: theme.ai_server
+  tier: downstream
+- stage: it
+  theme: theme.data_center
+  tier: midstream
+- stage: system
+  theme: theme.nvidia
+  tier: downstream
+relations:
+  subsidiaries:
+  - as_of: '2026-05-18'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股100%的子公司
+    details:
+    - 持股100%的子公司
+    edge: e09b1f8878849
+    evidence_level: primary
+    id: org.advanced-industrial-computer
+    name: Advanced Industrial Computer, Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-05-18'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股100%的子公司
+    details:
+    - 持股100%的子公司
+    edge: eb7af25af7fcf
+    evidence_level: primary
+    id: org.advanced-industrial-computer-europe
+    name: Advanced Industrial Computer Europe B.V.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-05-18'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股51%的子公司
+    details:
+    - 持股51%的子公司
+    edge: e1f02cdc8c320
+    evidence_level: primary
+    id: org.advanced-industrial-server
+    name: Advanced Industrial Server CO,. LTD
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.aicipc.com
 tax_id: '96994977'
 incorporated: '1996-05-03'
 listed: '2013-11-27'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-15'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3693#e10:
+    locator: Storage產品分類
+    published_date: null
+    publisher: 營邦企業股份有限公司
+    quote_check: not_found
+    title: Products
+    url: https://www.aicipc.com/products/
+  tw.3693#e11:
+    locator: 解決方案介紹
+    published_date: null
+    publisher: 營邦企業股份有限公司
+    quote_check: found
+    title: 雲端資料中心
+    url: https://www.aicipc.com/tw/solutions-detail/cloud-data-center/
+  tw.3693#e12:
+    locator: 伺服器主機板介紹
+    published_date: null
+    publisher: 營邦企業股份有限公司
+    quote_check: found
+    title: 伺服器主機板產品介紹
+    url: https://www.aicipc.com/tw/products/server-board/
+  tw.3693#e13:
+    locator: KEY FEATURE及System Cooling
+    published_date: null
+    publisher: 營邦企業股份有限公司
+    quote_check: found
+    title: SB102-SU
+    url: https://www.aicipc.com/tw/products-detail/sb102-su/
+  tw.3693#e14:
+    locator: GPU伺服器段落
+    published_date: '2026-06-11'
+    publisher: 營邦企業股份有限公司
+    quote_check: found
+    title: AIC於ISC 2026展示HPC與AI Workloads專用AI儲存與運算解決方案
+    url: https://www.aicipc.com/tw/resources-detail/363/
+  tw.3693#e15:
+    locator: 重要亮點
+    published_date: '2026-06-01'
+    publisher: 營邦企業股份有限公司
+    quote_check: found
+    title: AIC成為NVIDIA生態系夥伴，導入BlueField-4 STX儲存架構
+    url: https://www.aicipc.com/tw/resources-detail/360/
+  tw.3693#e16:
+    locator: 印刷第35頁，PDF第39頁，轉投資持股表；第63頁投資明細
+    published_date: '2026-05-18'
+    publisher: 營邦企業股份有限公司
+    quote_check: not_found
+    title: 營邦企業股份有限公司一一四年度年報
+    url: https://www.aicipc.com/tw/investor_document-detail/202601/
+  tw.3693#e17:
+    locator: 印刷第35頁，PDF第39頁，轉投資持股表；第63頁投資明細
+    published_date: '2026-05-18'
+    publisher: 營邦企業股份有限公司
+    quote_check: not_found
+    title: 營邦企業股份有限公司一一四年度年報
+    url: https://www.aicipc.com/tw/investor_document-detail/202601/
+  tw.3693#e18:
+    locator: 印刷第35頁，PDF第39頁，轉投資持股表；第63頁投資明細
+    published_date: '2026-05-18'
+    publisher: 營邦企業股份有限公司
+    quote_check: not_found
+    title: 營邦企業股份有限公司一一四年度年報
+    url: https://www.aicipc.com/tw/investor_document-detail/202601/
+  tw.3693#e2:
+    locator: 印刷第40頁，PDF第44頁，營業比重；末兩欄為114年度營收與占比
+    published_date: '2026-05-18'
+    publisher: 營邦企業股份有限公司
+    quote_check: found
+    title: 營邦企業股份有限公司一一四年度年報
+    url: https://www.aicipc.com/tw/investor_document-detail/202601/
+  tw.3693#e3:
+    locator: 印刷第40頁，PDF第44頁，營業比重；末兩欄為114年度營收與占比
+    published_date: '2026-05-18'
+    publisher: 營邦企業股份有限公司
+    quote_check: found
+    title: 營邦企業股份有限公司一一四年度年報
+    url: https://www.aicipc.com/tw/investor_document-detail/202601/
+  tw.3693#e4:
+    locator: 印刷第40頁，PDF第44頁，營業比重；末兩欄為114年度營收與占比
+    published_date: '2026-05-18'
+    publisher: 營邦企業股份有限公司
+    quote_check: found
+    title: 營邦企業股份有限公司一一四年度年報
+    url: https://www.aicipc.com/tw/investor_document-detail/202601/
+  tw.3693#e5:
+    locator: 印刷第40頁，PDF第44頁，營業比重；末兩欄為114年度營收與占比
+    published_date: '2026-05-18'
+    publisher: 營邦企業股份有限公司
+    quote_check: found
+    title: 營邦企業股份有限公司一一四年度年報
+    url: https://www.aicipc.com/tw/investor_document-detail/202601/
+  tw.3693#e6:
+    locator: 印刷第40頁，PDF第44頁，營業比重；末兩欄為114年度營收與占比
+    published_date: '2026-05-18'
+    publisher: 營邦企業股份有限公司
+    quote_check: found
+    title: 營邦企業股份有限公司一一四年度年報
+    url: https://www.aicipc.com/tw/investor_document-detail/202601/
+  tw.3693#e7:
+    locator: 主營事業、產品與服務內文
+    published_date: null
+    publisher: 營邦企業股份有限公司
+    quote_check: found
+    title: 主營事業、產品與服務
+    url: https://www.aicipc.com/tw/investor-detail/126/
+  tw.3693#e8:
+    locator: CB502-NM產品規格
+    published_date: null
+    publisher: 營邦企業股份有限公司
+    quote_check: found
+    title: GPU伺服器產品介紹
+    url: https://www.aicipc.com/tw/products/server/gpu-server/
+  tw.3693#e9:
+    locator: AIC產品／儲存產品
+    published_date: null
+    publisher: 營邦企業股份有限公司
+    quote_check: found
+    title: AIC營邦企業官網
+    url: https://www.aicipc.com/tw/

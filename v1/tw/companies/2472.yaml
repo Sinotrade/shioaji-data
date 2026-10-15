@@ -8,12 +8,137 @@ industry:
   l0_code: '28'
   l0_name: 電子零組件業
   l0_name_en: Electronic Parts and Components
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.passive
+  l3_name: 被動元件
+  l3_name_en: Passive Components
+primary_chain_position: midstream
+summary_short: 製造與銷售鋁電解電容器，合併業務另包含子公司的鋁箔產品。
+summary_long: 立隆電主要製造與銷售鋁電解電容器，產品涵蓋鋁質電解、高分子固態及高分子固液混合電容，應用於汽車電子、電信、雲端與電力電子設備。2025年合併營收中，鋁電解電容器占66.8%，鋁箔占33.2%。集團透過子公司立敦科技經營電蝕箔與化成箔；截至2026年6月底，立隆持有立敦29.13%，因實質控制而將其納入合併財報。其他主要直接子公司包括控股公司LIRO及全資持有的泰國電容製造公司。公司年報亦明確揭露布局AI伺服器相關應用。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_capacitors
+  name: 鋁電解電容器
+  period: '2025'
+  revenue_share_pct: 66.8
+- evidence_ids:
+  - e1
+  id: seg_foil
+  name: 鋁箔
+  period: '2025'
+  revenue_share_pct: 33.2
+main_theme: theme.ai_server
+themes:
+- stage: components
+  theme: theme.ai_server
+  tier: midstream
+- stage: it
+  theme: theme.data_center
+  tier: midstream
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 泰國鋁質電解電容器子公司
+    details:
+    - 泰國鋁質電解電容器子公司
+    edge: ebfed4c5ad153
+    evidence_level: primary
+    id: org.lelon-electronics-thailand
+    name: LELON ELECTRONICS (Thailand) CO., LTD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 大陸地區投資控股子公司
+    details:
+    - 大陸地區投資控股子公司
+    edge: ef19d2d1b8734
+    evidence_level: primary
+    id: org.liro-electronics
+    name: LIRO ELECTRONICS CO., LTD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 具實質控制的鋁箔子公司
+    details:
+    - 具實質控制的鋁箔子公司
+    edge: eb9648a60908c
+    evidence_level: primary
+    id: tw.6175
+    name: 立敦
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.lelon.com.tw
 tax_id: '52358985'
 incorporated: '1976-02-12'
 listed: '2001-09-17'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-15'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2472#e1:
+    locator: 印刷頁 52，業務範圍／營業比重；同頁產業上下游關聯圖
+    published_date: '2026-06-04'
+    publisher: 立隆電子工業股份有限公司
+    quote_check: unreachable
+    title: 立隆電子 114 年度年報
+    url: https://www.lelon.com.tw/upload/inves32/178056506676.pdf
+  tw.2472#e2:
+    locator: 全方位的服務、優勢的競爭力
+    published_date: null
+    publisher: 立隆電子工業股份有限公司
+    quote_check: found
+    title: 立隆簡介
+    url: https://www.lelon.com.tw/tw/about2.php
+  tw.2472#e3:
+    locator: 產品分類清單
+    published_date: null
+    publisher: 立隆電子工業股份有限公司
+    quote_check: found
+    title: 產品資訊
+    url: https://www.lelon.com.tw/tw/product.php
+  tw.2472#e4:
+    locator: 頁 14–15，附註四、3：合併主體、立敦持股與實質控制說明
+    published_date: '2026-08-14'
+    publisher: 立隆電子工業股份有限公司
+    quote_check: found
+    title: 2026 年第二季合併財務報告
+    url: https://www.lelon.com.tw/upload/inves31/178911589557.pdf
+  tw.2472#e5:
+    locator: 頁 14，合併財務報表編製主體，LIRO 列
+    published_date: '2026-08-14'
+    publisher: 立隆電子工業股份有限公司
+    quote_check: found
+    title: 2026 年第二季合併財務報告
+    url: https://www.lelon.com.tw/upload/inves31/178911589557.pdf
+  tw.2472#e6:
+    locator: 頁 14，合併財務報表編製主體，泰國子公司列
+    published_date: '2026-08-14'
+    publisher: 立隆電子工業股份有限公司
+    quote_check: found
+    title: 2026 年第二季合併財務報告
+    url: https://www.lelon.com.tw/upload/inves31/178911589557.pdf
+  tw.2472#e7:
+    locator: 印刷頁 85，The market's future growth potential
+    published_date: '2026-06-04'
+    publisher: 立隆電子工業股份有限公司
+    quote_check: found
+    title: Lelon Electronics Corp. 2025 Annual Report
+    url: https://www.lelon.com.tw/upload/inves32/178056508834.pdf

@@ -8,7 +8,43 @@ industry:
   l0_code: '28'
   l0_name: 電子零組件業
   l0_name_en: Electronic Parts and Components
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.semi
+  l2_name: 半導體
+  l2_name_en: Semiconductors
+  l3: semi.equipment
+  l3_name: 半導體設備
+  l3_name_en: Semiconductor Equipment
+chain: chain.pcb
+primary_chain_position: upstream
+summary_short: 以ABF載板用真空壓膜設備為主要收入來源，另銷售膜材及提供勞務。
+summary_long: 長廣精機以ABF載板用真空壓膜設備為主要業務，產品涵蓋單段、二段及三段式機型，並銷售膜材及提供勞務。2025年營收中，設備占93.74%、膜材占5.76%、勞務占0.50%。母公司為長興材料工業，旗下全資子公司包括日本Nikko-Materials與長廣精機（廣州）。最新法說揭露日本子公司占2025年營收85%。公司亦開發玻璃基板與承載玻璃用真空壓膜設備，以及晶圓ABF真空貼膜設備。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_equipment
+  name: 設備
+  period: '2025'
+  revenue_share_pct: 93.74
+- evidence_ids:
+  - e1
+  id: seg_film
+  name: 膜材
+  period: '2025'
+  revenue_share_pct: 5.76
+- evidence_ids:
+  - e1
+  id: seg_service
+  name: 勞務
+  period: '2025'
+  revenue_share_pct: 0.5
+main_theme: theme.abf
+themes:
+- stage: materials
+  theme: theme.abf
+  tier: upstream
 relations:
   customers:
   - as_of: '2024-11-29'
@@ -26,16 +62,46 @@ relations:
     share_pct: null
     weight: 1
   parents:
-  - as_of: '2024-12-31'
+  - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
     detail: 真空壓膜設備子公司
     details:
     - 真空壓膜設備子公司
+    - 母公司
     edge: ececad54f5e3f
     evidence_level: primary
     id: tw.1717
     name: 長興
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 2
+  subsidiaries:
+  - as_of: '2026-08-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 日本全資子公司
+    details:
+    - 日本全資子公司
+    edge: efc282542be97
+    evidence_level: primary
+    id: org.nikko-materials
+    name: Nikko-Materials Co., Ltd.
+    ranking_basis: disclosed
+    share_basis: other
+    share_pct: 85
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 廣州全資子公司
+    details:
+    - 廣州全資子公司
+    edge: ec52f5bb13bf7
+    evidence_level: primary
+    id: org.eternal-precision-mechanics-guangzhou
+    name: 長廣精機（廣州）有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -44,7 +110,77 @@ website: https://www.eternal-epm.com
 tax_id: '90078176'
 incorporated: '2022-10-21'
 listed: '2026-01-16'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-15'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.7795#e1:
+    locator: 印刷頁52、PDF第55頁；114年度主要產品占營業比重
+    published_date: '2026-06-05'
+    publisher: 長廣精機股份有限公司
+    quote_check: found
+    title: 長廣精機股份有限公司114年度年報
+    url: https://www.eternal-epm.com/wp-content/uploads/2026/06/%E9%95%B7%E5%BB%A3%E7%B2%BE%E6%A9%9F114%E5%B9%B4%E5%B9%B4%E5%A0%B1%E8%82%A1%E6%9D%B1%E5%B8%B8%E6%9C%83115.06.24-0605-CH.pdf
+  tw.7795#e10:
+    locator: 第17頁；附註九、列入合併財務報告之子公司，115年6月30日持股欄
+    published_date: '2026-08-05'
+    publisher: 長廣精機股份有限公司
+    quote_check: unreachable
+    title: 長廣精機股份有限公司及子公司115年第2季合併財務報告
+    url: https://www.eternal-epm.com/wp-content/uploads/2026/08/EPM335A4202602-IFRS%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1%E5%91%8A-.pdf
+  tw.7795#e2:
+    locator: 印刷頁55、PDF第58頁；產業上、中、下游之關聯性
+    published_date: '2026-06-05'
+    publisher: 長廣精機股份有限公司
+    quote_check: found
+    title: 長廣精機股份有限公司114年度年報
+    url: https://www.eternal-epm.com/wp-content/uploads/2026/06/%E9%95%B7%E5%BB%A3%E7%B2%BE%E6%A9%9F114%E5%B9%B4%E5%B9%B4%E5%A0%B1%E8%82%A1%E6%9D%B1%E5%B8%B8%E6%9C%83115.06.24-0605-CH.pdf
+  tw.7795#e3:
+    locator: 真空壓膜機系統機型
+    published_date: null
+    publisher: 長廣精機股份有限公司
+    quote_check: found
+    title: 產品服務
+    url: https://www.eternal-epm.com/%E7%94%A2%E5%93%81%E6%9C%8D%E5%8B%99/
+  tw.7795#e4:
+    locator: 自動切膜預貼機
+    published_date: null
+    publisher: 長廣精機股份有限公司
+    quote_check: found
+    title: 產品服務
+    url: https://www.eternal-epm.com/%E7%94%A2%E5%93%81%E6%9C%8D%E5%8B%99/
+  tw.7795#e5:
+    locator: 第23頁；玻璃基板與承載玻璃設備開發
+    published_date: '2026-08-26'
+    publisher: 長廣精機股份有限公司
+    quote_check: found
+    title: 2026年8月26日法人說明會簡報
+    url: https://www.eternal-epm.com/wp-content/uploads/2026/08/20260826-%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83%E7%B0%A1%E5%A0%B1_CH.pdf
+  tw.7795#e6:
+    locator: 第25頁；晶圓真空壓膜機
+    published_date: '2026-08-26'
+    publisher: 長廣精機股份有限公司
+    quote_check: found
+    title: 2026年8月26日法人說明會簡報
+    url: https://www.eternal-epm.com/wp-content/uploads/2026/08/20260826-%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83%E7%B0%A1%E5%A0%B1_CH.pdf
+  tw.7795#e7:
+    locator: 第10頁；附註一、公司沿革
+    published_date: '2026-08-05'
+    publisher: 長廣精機股份有限公司
+    quote_check: unreachable
+    title: 長廣精機股份有限公司及子公司115年第2季合併財務報告
+    url: https://www.eternal-epm.com/wp-content/uploads/2026/08/EPM335A4202602-IFRS%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-.pdf
+  tw.7795#e8:
+    locator: 長廣精機股份有限公司介紹
+    published_date: null
+    publisher: 長廣精機股份有限公司
+    quote_check: found
+    title: 長廣精機股份有限公司官網首頁
+    url: https://www.eternal-epm.com/
+  tw.7795#e9:
+    locator: 第9頁；營收分析，資料來源為2025年簽證合併財務報告
+    published_date: '2026-08-26'
+    publisher: 長廣精機股份有限公司
+    quote_check: found
+    title: 2026年8月26日法人說明會簡報
+    url: https://www.eternal-epm.com/wp-content/uploads/2026/08/20260826-%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83%E7%B0%A1%E5%A0%B1_CH.pdf

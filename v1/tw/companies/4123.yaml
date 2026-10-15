@@ -8,12 +8,115 @@ industry:
   l0_code: '22'
   l0_name: 生技醫療業
   l0_name_en: Biotechnology and Medical Care
-primary_chain_position: unknown
+  l1: health
+  l1_name: 醫療保健
+  l1_name_en: Healthcare
+  l2: health.pharma
+  l2_name: 製藥與生技
+  l2_name_en: Pharmaceuticals & Biotech
+  l3: bio.generic
+  l3_name: 學名藥與原料藥
+  l3_name_en: Generics & APIs
+chain: chain.biotech
+primary_chain_position: midstream
+summary_short: 以西藥口服液劑及子公司豐華的益生菌產品、代工服務取得營收。
+summary_long: 晟德的營收業務涵蓋西藥製劑及子公司豐華生技的益生菌產品與代工服務。晟德本體專精多元疾病類別口服液劑與特殊藥物開發，官網將產品分為一般用藥及中樞神經作用劑，年報亦揭露持續開發學名藥。2024年合併營收中，西藥占60.06%，益生菌占39.94%。豐華為晟德全資子公司，提供菌粉研發製造與ODM整合服務；公司另揭露，豐華於2026年第一季約貢獻集團53%營收，該季占比與全年營收組成採不同期間。
+segments:
+- evidence_ids:
+  - e5
+  id: western_medicine
+  name: 西藥
+  period: '2024'
+  revenue_share_pct: 60.06
+- evidence_ids:
+  - e5
+  id: probiotics
+  name: 益生菌
+  period: '2024'
+  revenue_share_pct: 39.94
+- evidence_ids:
+  - e7
+  id: glac_2026q1
+  name: 豐華生技營收貢獻
+  period: 2026Q1
+  revenue_share_pct: 53
+relations:
+  subsidiaries:
+  - as_of: 2026-08
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資益生菌事業子公司
+    details:
+    - 全資益生菌事業子公司
+    edge: ebd47244b5e13
+    evidence_level: primary
+    id: org.glac-biotech
+    name: 豐華生物科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.centerlab.com.tw
 tax_id: '18606304'
 incorporated: '1959-11-04'
 listed: '2003-10-07'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-15'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4123#e1:
+    locator: 晟德產品組合
+    published_date: null
+    publisher: 晟德大藥廠股份有限公司
+    quote_check: found
+    title: 晟德大藥廠－產品資訊
+    url: https://www.centerlab.com.tw/business/product_info
+  tw.4123#e2:
+    locator: 頁面標題
+    published_date: null
+    publisher: 晟德大藥廠股份有限公司
+    quote_check: not_found
+    title: 晟德大藥廠－一般用藥
+    url: https://www.centerlab.com.tw/business/product_list/1
+  tw.4123#e3:
+    locator: 頁面標題
+    published_date: null
+    publisher: 晟德大藥廠股份有限公司
+    quote_check: found
+    title: 晟德大藥廠－中樞神經作用劑
+    url: https://www.centerlab.com.tw/business/product_list/2
+  tw.4123#e5:
+    locator: 印刷頁82，主要產品營業比重；PDF第86頁
+    published_date: null
+    publisher: 晟德大藥廠股份有限公司
+    quote_check: found
+    title: 晟德大藥廠股份有限公司113年度年報
+    url: https://www.centerlab.com.tw/investor/shareholder_service/annual_report_download/20?name=113%E5%B9%B4%E5%A0%B1.pdf
+  tw.4123#e6:
+    locator: 印刷頁83，計劃開發之新商品及服務項目；PDF第87頁
+    published_date: null
+    publisher: 晟德大藥廠股份有限公司
+    quote_check: found
+    title: 晟德大藥廠股份有限公司113年度年報
+    url: https://www.centerlab.com.tw/investor/shareholder_service/annual_report_download/20?name=113%E5%B9%B4%E5%A0%B1.pdf
+  tw.4123#e7:
+    locator: 豐華營收貢獻段落
+    published_date: '2026-05-13'
+    publisher: 晟德大藥廠股份有限公司
+    quote_check: found
+    title: 晟德Q1 EPS 2.62元 核心事業與投資布局同步收成
+    url: https://www.centerlab.com.tw/news/detail/198
+  tw.4123#e8:
+    locator: 豐華生技介紹
+    published_date: null
+    publisher: 晟德大藥廠股份有限公司
+    quote_check: found
+    title: 晟德大藥廠－豐華生技
+    url: https://www.centerlab.com.tw/industrial/company/7
+  tw.4123#e9:
+    locator: 財務架構段落
+    published_date: '2026-08-11'
+    publisher: 晟德大藥廠股份有限公司
+    quote_check: found
+    title: 轉投資公司遭受資本市場逆風 晟德法說強調營運韌性
+    url: https://www.centerlab.com.tw/news/detail/202

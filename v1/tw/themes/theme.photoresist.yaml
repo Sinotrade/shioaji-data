@@ -22,6 +22,15 @@ stages:
   tier: downstream
   name_en: Fab & Panel Processes
 members:
+- id: tw.1711
+  stage: make
+  tier: midstream
+  detail: 光阻劑製造
+  as_of: 2026-10
+  evidence:
+  - tw.1711#e7
+  - tw.1711#e10
+  confidence: ai_cross_checked
 - id: tw.1773
   stage: raw
   tier: upstream
@@ -30,6 +39,15 @@ members:
   evidence:
   - tw.1773#e2
   - tw.1773#e5
+  confidence: ai_cross_checked
+- id: tw.3010
+  stage: make
+  tier: midstream
+  detail: 光阻液通路
+  as_of: '2026-10-15'
+  evidence:
+  - tw.3010#e01
+  - tw.3010#e04
   confidence: ai_cross_checked
 - id: tw.4749
   stage: make
@@ -49,4 +67,4 @@ members:
   - tw.5434#e3
   - tw.5434#e1
   confidence: ai_cross_checked
-as_of: '2026-10-14'
+as_of: '2026-10-15'

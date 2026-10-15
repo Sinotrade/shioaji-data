@@ -8,12 +8,129 @@ industry:
   l0_code: '25'
   l0_name: 電腦及週邊設備業
   l0_name_en: Computer and Peripheral Equipment
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.hardware
+  l2_name: 電腦與硬體
+  l2_name_en: Computers & Hardware
+  l3: hw.pc_nb
+  l3_name: 筆電與桌機品牌、代工
+  l3_name_en: Notebooks & Desktops (Brand / ODM)
+primary_chain_position: midstream
+summary_short: 主要從事筆記型電腦設計製造，另經營百腦匯商場租賃業務。
+summary_long: 藍天以筆記型電腦研發、設計、生產與銷售為主要業務，產品包括高階電競、商務及創作者應用機種，另開發迷你電腦。2025年度電腦部門銷貨收入占合併營收85%，百腦匯商場租賃及其他營業收入占15%。商務與創作者產品包含V550ENx/KNx/-D系列，迷你電腦包含R100系列。海外子公司分別承接製造基地與商場轉投資業務，其中昆山筆電生產基地透過薩摩亞子公司投資，新加坡子公司則轉投資百腦匯商場。
+segments:
+- evidence_ids:
+  - e1
+  id: computer
+  name: 電腦部門
+  period: '2025'
+  revenue_share_pct: 85
+- evidence_ids:
+  - e1
+  id: buynow
+  name: 百腦匯商場租賃及其他營業收入
+  period: '2025'
+  revenue_share_pct: 15
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 轉投資百腦匯商場的海外子公司
+    details:
+    - 轉投資百腦匯商場的海外子公司
+    edge: e8f148a2e96fd
+    evidence_level: primary
+    id: org.clevo-computer-singapore-pte-ltd
+    name: CLEVO COMPUTER SINGAPORE PTE LTD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持有昆山筆電製造基地的海外子公司
+    details:
+    - 持有昆山筆電製造基地的海外子公司
+    edge: e363c1efd6206
+    evidence_level: primary
+    id: org.kapok-computer-samoa-corporation
+    name: KAPOK COMPUTER(SAMOA) CORPORATION
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.clevo.com.tw
 tax_id: 09424319
 incorporated: '1983-10-04'
 listed: '1997-04-02'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-15'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2362#e1:
+    locator: 第71頁，業務範圍／營業比重
+    published_date: null
+    publisher: 藍天電腦股份有限公司
+    quote_check: found
+    title: 藍天電腦股份有限公司114年度年報
+    url: https://www.clevo.com.tw/tw/download_files/QBXo70YDJethw9zFpUBCbPkbXwawgAlp.pdf
+  tw.2362#e2:
+    locator: 第71頁，業務主要內容
+    published_date: null
+    publisher: 藍天電腦股份有限公司
+    quote_check: found
+    title: 藍天電腦股份有限公司114年度年報
+    url: https://www.clevo.com.tw/tw/download_files/QBXo70YDJethw9zFpUBCbPkbXwawgAlp.pdf
+  tw.2362#e3:
+    locator: 關於藍天介紹
+    published_date: null
+    publisher: 藍天電腦股份有限公司
+    quote_check: found
+    title: 關於藍天
+    url: https://www.clevo.com.tw/tw/load_page/about_clevo
+  tw.2362#e4:
+    locator: 第83頁，技術及研發概況／V550ENx/KNx/-D(Pantone)
+    published_date: null
+    publisher: 藍天電腦股份有限公司
+    quote_check: found
+    title: 藍天電腦股份有限公司114年度年報
+    url: https://www.clevo.com.tw/tw/download_files/QBXo70YDJethw9zFpUBCbPkbXwawgAlp.pdf
+  tw.2362#e5:
+    locator: 第83頁，技術及研發概況／產品系列
+    published_date: null
+    publisher: 藍天電腦股份有限公司
+    quote_check: found
+    title: 藍天電腦股份有限公司114年度年報
+    url: https://www.clevo.com.tw/tw/download_files/QBXo70YDJethw9zFpUBCbPkbXwawgAlp.pdf
+  tw.2362#e6:
+    locator: 第65頁，轉投資事業綜合持股比例表，2025年12月31日
+    published_date: null
+    publisher: 藍天電腦股份有限公司
+    quote_check: found
+    title: 藍天電腦股份有限公司114年度年報
+    url: https://www.clevo.com.tw/tw/download_files/QBXo70YDJethw9zFpUBCbPkbXwawgAlp.pdf
+  tw.2362#e7:
+    locator: 第102頁，最近年度轉投資政策／KAPOK COMPUTER(SAMOA) CORPORATION
+    published_date: null
+    publisher: 藍天電腦股份有限公司
+    quote_check: found
+    title: 藍天電腦股份有限公司114年度年報
+    url: https://www.clevo.com.tw/tw/download_files/QBXo70YDJethw9zFpUBCbPkbXwawgAlp.pdf
+  tw.2362#e8:
+    locator: 第65頁，轉投資事業綜合持股比例表，2025年12月31日
+    published_date: null
+    publisher: 藍天電腦股份有限公司
+    quote_check: found
+    title: 藍天電腦股份有限公司114年度年報
+    url: https://www.clevo.com.tw/tw/download_files/QBXo70YDJethw9zFpUBCbPkbXwawgAlp.pdf
+  tw.2362#e9:
+    locator: 第102頁，最近年度轉投資政策／CLEVO COMPUTER SINGAPORE PTE LTD.
+    published_date: null
+    publisher: 藍天電腦股份有限公司
+    quote_check: found
+    title: 藍天電腦股份有限公司114年度年報
+    url: https://www.clevo.com.tw/tw/download_files/QBXo70YDJethw9zFpUBCbPkbXwawgAlp.pdf

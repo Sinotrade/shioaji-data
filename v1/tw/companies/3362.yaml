@@ -8,12 +8,197 @@ industry:
   l0_code: '26'
   l0_name: 光電業
   l0_name_en: Optoelectronic
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.optical_component
+  l3_name: 光學元件與鏡頭
+  l3_name_en: Optical Components & Lenses
+primary_chain_position: midstream
+summary_short: 以光學鏡頭、鏡片及集團指紋辨識模組業務取得營收。
+summary_long: 先進光主要產品為光學鏡頭與鏡片，應用包含筆記型電腦及平板電腦，鏡片材質涵蓋塑膠與玻璃。2024年光學產品占營收68.90%，電子零組件占31.10%。官網另列行車紀錄器CCM及數位監控應用產品。集團旗下科雅光電經營指紋辨識模組，耀崴科技從事車用產品，越南子公司製造光學鏡頭鏡片，鎮江子公司負責鏡頭組裝，智匯創新從事產品設計。年報亦揭露朝無人空拍機鏡頭應用拓展，此項列為應用布局。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_optical
+  name: 光學產品
+  period: '2024'
+  revenue_share_pct: 68.9
+- evidence_ids:
+  - e3
+  id: seg_electronic
+  name: 電子零組件產品
+  period: '2024'
+  revenue_share_pct: 31.1
+main_theme: theme.drone
+themes:
+- stage: components
+  theme: theme.drone
+  tier: upstream
+relations:
+  subsidiaries:
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司；光學鏡頭組裝
+    details:
+    - 直接子公司；光學鏡頭組裝
+    edge: ec7d1b0c0fe9b
+    evidence_level: primary
+    id: org.先進光電科技-鎮江-有限公司
+    name: 先進光電科技(鎮江)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 越南直接子公司；光學鏡頭鏡片製造
+    details:
+    - 越南直接子公司；光學鏡頭鏡片製造
+    edge: e6c7cfa5600be
+    evidence_level: primary
+    id: org.先進光電科技責任有限公司
+    name: 先進光電科技責任有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司；產品設計
+    details:
+    - 直接子公司；產品設計
+    edge: ecb48ef0fcb35
+    evidence_level: primary
+    id: org.智匯創新科技股份有限公司
+    name: 智匯創新科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司；指紋辨識模組買賣
+    details:
+    - 直接子公司；指紋辨識模組買賣
+    edge: e233c95b2ae36
+    evidence_level: primary
+    id: org.科雅光電股份有限公司
+    name: 科雅光電股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司；車用產品製造
+    details:
+    - 直接子公司；車用產品製造
+    edge: eaa6790c6526e
+    evidence_level: primary
+    id: org.耀崴科技股份有限公司
+    name: 耀崴科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.aoet.com.tw
 tax_id: '22301825'
 incorporated: '1986-11-19'
 listed: '2005-09-06'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-15'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3362#e10:
+    locator: 第62頁，附表七：被投資公司名稱、所在地區等相關資訊
+    published_date: null
+    publisher: 先進光電科技股份有限公司
+    quote_check: unreachable
+    title: 先進光電科技股份有限公司及子公司114年第三季合併財務報告
+    url: https://www.aoet.com/investor/download/financialstatement/69427011e0cea/q3_file
+  tw.3362#e11:
+    locator: 第13頁，附註四（三）列入合併財務報告之子公司
+    published_date: null
+    publisher: 先進光電科技股份有限公司
+    quote_check: unreachable
+    title: 先進光電科技股份有限公司及子公司114年第三季合併財務報告
+    url: https://www.aoet.com/investor/download/financialstatement/69427011e0cea/q3_file
+  tw.3362#e12:
+    locator: 第13頁，附註四（三）列入合併財務報告之子公司
+    published_date: null
+    publisher: 先進光電科技股份有限公司
+    quote_check: unreachable
+    title: 先進光電科技股份有限公司及子公司114年第三季合併財務報告
+    url: https://www.aoet.com/investor/download/financialstatement/69427011e0cea/q3_file
+  tw.3362#e13:
+    locator: 第77頁，產業概況之公司產品應用
+    published_date: '2025-04-30'
+    publisher: 先進光電科技股份有限公司
+    quote_check: found
+    title: 先進光電科技股份有限公司113年度年報
+    url: https://www.aoet.com/investor/download/shareholdermeetingrelated/6942737fab59e/journal_file
+  tw.3362#e2:
+    locator: 第76頁，營業比重；欄序為113年度金額、比重及112年度金額、比重
+    published_date: '2025-04-30'
+    publisher: 先進光電科技股份有限公司
+    quote_check: found
+    title: 先進光電科技股份有限公司113年度年報
+    url: https://www.aoet.com/investor/download/shareholdermeetingrelated/6942737fab59e/journal_file
+  tw.3362#e3:
+    locator: 第76頁，營業比重；欄序為113年度金額、比重及112年度金額、比重
+    published_date: '2025-04-30'
+    publisher: 先進光電科技股份有限公司
+    quote_check: found
+    title: 先進光電科技股份有限公司113年度年報
+    url: https://www.aoet.com/investor/download/shareholdermeetingrelated/6942737fab59e/journal_file
+  tw.3362#e4:
+    locator: 第76頁，商品項目之光學鏡頭用途
+    published_date: '2025-04-30'
+    publisher: 先進光電科技股份有限公司
+    quote_check: found
+    title: 先進光電科技股份有限公司113年度年報
+    url: https://www.aoet.com/investor/download/shareholdermeetingrelated/6942737fab59e/journal_file
+  tw.3362#e5:
+    locator: 第76頁，商品項目
+    published_date: '2025-04-30'
+    publisher: 先進光電科技股份有限公司
+    quote_check: found
+    title: 先進光電科技股份有限公司113年度年報
+    url: https://www.aoet.com/investor/download/shareholdermeetingrelated/6942737fab59e/journal_file
+  tw.3362#e6:
+    locator: 行車應用產品頁
+    published_date: null
+    publisher: 先進光電科技股份有限公司
+    quote_check: found
+    title: 產品介紹：行車應用產品
+    url: https://www.aoet.com/product/56527cac95c5a/detail
+  tw.3362#e7:
+    locator: 產品類別標題
+    published_date: null
+    publisher: 先進光電科技股份有限公司
+    quote_check: found
+    title: 產品介紹：數位監控應用產品
+    url: https://www.aoet.com/product/56527cbfdf668/detail
+  tw.3362#e8:
+    locator: 第13頁，附註四（三）列入合併財務報告之子公司
+    published_date: null
+    publisher: 先進光電科技股份有限公司
+    quote_check: unreachable
+    title: 先進光電科技股份有限公司及子公司114年第三季合併財務報告
+    url: https://www.aoet.com/investor/download/financialstatement/69427011e0cea/q3_file
+  tw.3362#e9:
+    locator: 第13頁，附註四（三）列入合併財務報告之子公司
+    published_date: null
+    publisher: 先進光電科技股份有限公司
+    quote_check: unreachable
+    title: 先進光電科技股份有限公司及子公司114年第三季合併財務報告
+    url: https://www.aoet.com/investor/download/financialstatement/69427011e0cea/q3_file

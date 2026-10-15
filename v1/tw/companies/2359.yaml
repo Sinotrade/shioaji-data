@@ -8,12 +8,190 @@ industry:
   l0_code: '31'
   l0_name: 其他電子業
   l0_name_en: Other Electronic
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.electrical
+  l2_name: 電機與重電
+  l2_name_en: Electrical Equipment & Power Grid
+  l3: elec.heavy
+  l3_name: 重電與電網設備
+  l3_name_en: Heavy Electrical & Grid Equipment
+primary_chain_position: not_applicable
+summary_short: 經營電力設備、智動化與AI視覺系統，兼營液晶顯示及電子通路。
+summary_long: 所羅門經營電力設備、智動化產品、液晶顯示零組件與電子通路。2025年年報揭露，機電事業群占營收40%、智動化29%、光電製造21%、電子通路8%、其他2%。電力產品涵蓋發電機、不斷電設備與配電盤；視覺產品包括SolVision人工智慧瑕疵檢測及AccuPick 3D料箱揀選系統。光電業務銷售自有品牌客製化液晶模組及人機介面。合併子公司包含從事液晶顯示器製造銷售的富相科技，以及經營再生能源自用發電設備的盈門能源科技。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_power
+  name: 機電事業群：不斷電系統
+  period: '2025'
+  revenue_share_pct: 40
+- evidence_ids:
+  - e1
+  id: seg_automation
+  name: 智動化業群：智動化產品
+  period: '2025'
+  revenue_share_pct: 29
+- evidence_ids:
+  - e1
+  id: seg_display
+  name: 光電製造業：TN/STN/TFT-LCD零組件
+  period: '2025'
+  revenue_share_pct: 21
+- evidence_ids:
+  - e1
+  id: seg_distribution
+  name: 電子通路業：IC及其他通路
+  period: '2025'
+  revenue_share_pct: 8
+- evidence_ids:
+  - e1
+  id: seg_other
+  name: 其他電子業
+  period: '2025'
+  revenue_share_pct: 2
+main_theme: theme.power_grid
+themes:
+- stage: equipment
+  theme: theme.power_grid
+  tier: midstream
+- stage: system
+  theme: theme.robotics
+  tier: downstream
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: IC Card製造及銷售子公司
+    details:
+    - IC Card製造及銷售子公司
+    edge: e8ba0f3bc2a16
+    evidence_level: primary
+    id: org.三門科技股份有限公司
+    name: 三門科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 液晶顯示器製造及銷售子公司
+    details:
+    - 液晶顯示器製造及銷售子公司
+    edge: eaa05df8295fc
+    evidence_level: primary
+    id: org.富相科技股份有限公司
+    name: 富相科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 再生能源自用發電設備子公司
+    details:
+    - 再生能源自用發電設備子公司
+    edge: e77bb15236ea5
+    evidence_level: primary
+    id: org.盈門能源科技股份有限公司
+    name: 盈門能源科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 液晶面板製造及銷售子公司
+    details:
+    - 液晶面板製造及銷售子公司
+    edge: ef8af1a7ebf1d
+    evidence_level: primary
+    id: tw.5432
+    name: 新門
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.solomon.com.tw
 tax_id: '23640801'
 incorporated: '1990-05-07'
 listed: '1996-12-19'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-15'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2359#e1:
+    locator: 第87頁，主要業務內容及其比重
+    published_date: '2026-04-30'
+    publisher: 所羅門股份有限公司
+    quote_check: found
+    title: 所羅門114年度年報
+    url: https://www.solomon.com.tw/wp-content/uploads/2026/06/所羅門114年度年報.pdf
+  tw.2359#e10:
+    locator: 第16頁，列入合併財務報告之子公司
+    published_date: '2026-08-12'
+    publisher: 所羅門股份有限公司
+    quote_check: found
+    title: 所羅門115年第二季合併財務報告
+    url: https://www.solomon.com.tw/wp-content/uploads/2026/08/所羅門115Q2合併財報.pdf
+  tw.2359#e2:
+    locator: 第87頁，目前主要商品項目／電力品質事業處
+    published_date: '2026-04-30'
+    publisher: 所羅門股份有限公司
+    quote_check: found
+    title: 所羅門114年度年報
+    url: https://www.solomon.com.tw/wp-content/uploads/2026/06/所羅門114年度年報.pdf
+  tw.2359#e3:
+    locator: 第87頁，電力品質事業處／PQ機電產品
+    published_date: '2026-04-30'
+    publisher: 所羅門股份有限公司
+    quote_check: found
+    title: 所羅門114年度年報
+    url: https://www.solomon.com.tw/wp-content/uploads/2026/06/所羅門114年度年報.pdf
+  tw.2359#e4:
+    locator: SolVision讓AI解決AOI瑕疵檢測難題
+    published_date: null
+    publisher: 所羅門股份有限公司視覺事業處
+    quote_check: found
+    title: 所羅門AI瑕疵檢測 SolVision
+    url: https://www.solomon-3d.com/tw/products/solvision/
+  tw.2359#e5:
+    locator: 智慧料箱揀選功能／高度相容性
+    published_date: null
+    publisher: 所羅門股份有限公司視覺事業處
+    quote_check: found
+    title: AccuPick 3D智慧料箱揀選解決方案
+    url: https://www.solomon-3d.com/tw/products/accupick-3d-bin-picking/
+  tw.2359#e6:
+    locator: 第89頁，光電事業處商品項目
+    published_date: '2026-04-30'
+    publisher: 所羅門股份有限公司
+    quote_check: found
+    title: 所羅門114年度年報
+    url: https://www.solomon.com.tw/wp-content/uploads/2026/06/所羅門114年度年報.pdf
+  tw.2359#e7:
+    locator: 第16頁，列入合併財務報告之子公司
+    published_date: '2026-08-12'
+    publisher: 所羅門股份有限公司
+    quote_check: found
+    title: 所羅門115年第二季合併財務報告
+    url: https://www.solomon.com.tw/wp-content/uploads/2026/08/所羅門115Q2合併財報.pdf
+  tw.2359#e8:
+    locator: 第16至17頁，列入合併財務報告之子公司及註1
+    published_date: '2026-08-12'
+    publisher: 所羅門股份有限公司
+    quote_check: found
+    title: 所羅門115年第二季合併財務報告
+    url: https://www.solomon.com.tw/wp-content/uploads/2026/08/所羅門115Q2合併財報.pdf
+  tw.2359#e9:
+    locator: 第17頁，列入合併財務報告之子公司
+    published_date: '2026-08-12'
+    publisher: 所羅門股份有限公司
+    quote_check: found
+    title: 所羅門115年第二季合併財務報告
+    url: https://www.solomon.com.tw/wp-content/uploads/2026/08/所羅門115Q2合併財報.pdf

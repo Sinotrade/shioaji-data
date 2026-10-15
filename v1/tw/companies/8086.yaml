@@ -8,7 +8,37 @@ industry:
   l0_code: '24'
   l0_name: 半導體業
   l0_name_en: Semiconductor
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.semi
+  l2_name: 半導體
+  l2_name_en: Semiconductors
+  l3: semi.compound
+  l3_name: 化合物半導體
+  l3_name_en: Compound Semiconductors
+chain: chain.semiconductor
+primary_chain_position: midstream
+summary_short: 以六吋砷化鎵晶圓代工為主，提供射頻及VCSEL光電製程。
+summary_long: 宏捷科以六吋砷化鎵晶圓代工為主要業務，提供HBT、pHEMT與BiHEMT等射頻製程，應用涵蓋手機及Wi-Fi功率放大器、射頻開關與低雜訊放大器。其0.25微米ED BiHEMT可整合PA、開關及LNA，ED pHEMT支援5G射頻應用。光電業務包括用於3D感測及光通訊的VCSEL製程，2026年5月揭露400G／800G產品持續放量。另已完成低軌衛星Ku頻段HBT PA技術開發，並為中美矽晶製品股份有限公司之子公司。
+segments:
+- evidence_ids:
+  - e11
+  id: non_rf
+  name: 非射頻產品
+  period: '2025'
+  revenue_share_pct: null
+main_theme: theme.5g
+themes:
+- stage: components
+  theme: theme.5g
+  tier: upstream
+- stage: components
+  theme: theme.leo_satellite
+  tier: upstream
+- stage: chip
+  theme: theme.vcsel
+  tier: midstream
 relations:
   parents:
   - as_of: '2026-06-30'
@@ -17,6 +47,7 @@ relations:
     detail: 砷化鎵晶片製造及貿易
     details:
     - 砷化鎵晶片製造及貿易
+    - 母公司
     edge: e5b63638664a2
     evidence_level: primary
     id: tw.5483
@@ -24,12 +55,89 @@ relations:
     ranking_basis: unranked
     share_basis: null
     share_pct: null
-    weight: 1
+    weight: 2
 website: http://www.awsc.com.tw
 tax_id: '16130423'
 incorporated: '1998-12-30'
 listed: '2009-06-01'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-15'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.8086#e1:
+    locator: 公司簡介第一段
+    published_date: null
+    publisher: 宏捷科技股份有限公司
+    quote_check: found
+    title: 宏捷科技－公司簡介
+    url: https://www.awsc.com.tw/profile.aspx?Lang=Chinese
+  tw.8086#e10:
+    locator: 第3頁，中美矽晶集團
+    published_date: '2025-06-04'
+    publisher: 宏捷科技股份有限公司
+    quote_check: unreachable
+    title: 宏捷科技2025年6月4日法人說明會簡報
+    url: https://www.awsc.com.tw/Files/Financial/%E6%B3%95%E8%AA%AA%E6%9C%83/%E6%B3%95%E8%AA%AA%E6%9C%83_%E4%B8%AD%E6%96%87_AWSC_06-04-2025Final.pdf
+  tw.8086#e11:
+    locator: 2026-05-28公司新聞稿，非射頻產品段落
+    published_date: '2026-05-28'
+    publisher: 宏捷科技股份有限公司
+    quote_check: found
+    title: 宏捷科技115年股東會順利召開，營運體質顯著優化，深化5G與WiFi7布局 迎接新世代商機
+    url: https://www.awsc.com.tw/news.aspx?Lang=Chinese
+  tw.8086#e2:
+    locator: InGaP HBT／HBT226／Application
+    published_date: null
+    publisher: 宏捷科技股份有限公司
+    quote_check: found
+    title: 宏捷科技－Product Summary
+    url: https://www.awsc.com.tw/product_summary.aspx?Lang=Chinese
+  tw.8086#e3:
+    locator: Applications
+    published_date: null
+    publisher: 宏捷科技股份有限公司
+    quote_check: found
+    title: 宏捷科技－InGaP HBT
+    url: https://www.awsc.com.tw/HBT.aspx?Lang=Chinese
+  tw.8086#e4:
+    locator: Applications
+    published_date: null
+    publisher: 宏捷科技股份有限公司
+    quote_check: found
+    title: 宏捷科技－0.25um ED pHEMT
+    url: https://www.awsc.com.tw/ED25_pHEMT.aspx?Lang=Chinese
+  tw.8086#e5:
+    locator: Features
+    published_date: null
+    publisher: 宏捷科技股份有限公司
+    quote_check: found
+    title: 宏捷科技－ED BiHEMT技術頁
+    url: https://www.awsc.com.tw/ED25_BHEMT.aspx?Lang=Chinese
+  tw.8086#e6:
+    locator: Applications
+    published_date: null
+    publisher: 宏捷科技股份有限公司
+    quote_check: found
+    title: 宏捷科技－ED BiHEMT技術頁
+    url: https://www.awsc.com.tw/ED25_BHEMT.aspx?Lang=Chinese
+  tw.8086#e7:
+    locator: Applications
+    published_date: null
+    publisher: 宏捷科技股份有限公司
+    quote_check: found
+    title: 宏捷科技－VCSEL
+    url: https://www.awsc.com.tw/VCSEL.aspx?Lang=Chinese
+  tw.8086#e8:
+    locator: 2026/05條目
+    published_date: null
+    publisher: 宏捷科技股份有限公司
+    quote_check: found
+    title: 宏捷科技－大事記要
+    url: https://www.awsc.com.tw/events.aspx
+  tw.8086#e9:
+    locator: 2023/08條目
+    published_date: null
+    publisher: 宏捷科技股份有限公司
+    quote_check: found
+    title: 宏捷科技－大事記要
+    url: https://www.awsc.com.tw/events.aspx

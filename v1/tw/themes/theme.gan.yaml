@@ -22,6 +22,31 @@ stages:
   tier: downstream
   name_en: Applications
 members:
+- id: tw.2340
+  stage: devices
+  tier: midstream
+  detail: 透過子公司冠亞經營GaN功率元件
+  as_of: '2026-10-15'
+  evidence:
+  - tw.2340#e7
+  - tw.2340#e11
+  confidence: ai_cross_checked
+- id: tw.2393
+  stage: devices
+  tier: midstream
+  detail: GaN功率封裝元件
+  as_of: '2026-10-15'
+  evidence:
+  - tw.2393#e10
+  confidence: ai_cross_checked
+- id: tw.2426
+  stage: devices
+  tier: midstream
+  detail: GaN功率電晶體開發
+  as_of: 2026-04
+  evidence:
+  - tw.2426#e8
+  confidence: ai_cross_checked
 - id: tw.3016
   stage: substrate
   tier: upstream
@@ -38,6 +63,15 @@ members:
   evidence:
   - tw.3105#e4
   confidence: ai_cross_checked
+- id: tw.3707
+  stage: devices
+  tier: midstream
+  detail: 氮化鎵元件晶圓代工
+  as_of: '2026-10-15'
+  evidence:
+  - tw.3707#e1
+  - tw.3707#e5
+  confidence: ai_cross_checked
 - id: tw.4919
   stage: devices
   tier: midstream
@@ -45,6 +79,14 @@ members:
   as_of: '2024-12-31'
   evidence:
   - tw.4919#e_gan_devices
+  confidence: ai_cross_checked
+- id: tw.4971
+  stage: substrate
+  tier: upstream
+  detail: 氮化鎵磊晶及二次生長
+  as_of: '2026-08-27'
+  evidence:
+  - tw.4971#e12
   confidence: ai_cross_checked
 - id: tw.4991
   stage: devices
@@ -86,6 +128,14 @@ members:
   as_of: '2026-04-15'
   evidence:
   - tw.6271#e6
+  confidence: ai_cross_checked
+- id: tw.6412
+  stage: application
+  tier: downstream
+  detail: 氮化鎵筆電電源應用
+  as_of: '2024-12-26'
+  evidence:
+  - tw.6412#e4
   confidence: ai_cross_checked
 - id: tw.6488
   stage: substrate

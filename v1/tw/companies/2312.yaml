@@ -8,7 +8,49 @@ industry:
   l0_code: '31'
   l0_name: 其他電子業
   l0_name_en: Other Electronic
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.hardware
+  l2_name: 電腦與硬體
+  l2_name_en: Computers & Hardware
+  l3: hw.ems
+  l3_name: 電子製造服務（EMS）
+  l3_name_en: Electronics Manufacturing Services
+primary_chain_position: midstream
+summary_short: 以電子製造與設計代工賺取營收，涵蓋消費電子、儲存、列印及網通產品。
+summary_long: 金寶從事電子產品製造與設計代工，產品涵蓋電子計算器、家用電器、印表機與多功能事務機、網路通訊設備及儲存產品。2025年全年營收組合中，消費性電子占43.43%、儲存裝置23.78%、影像產品21.37%、網路通訊10.18%、其他1.24%。公司亦列有充電樁研發、製造與銷售業務，並將AI伺服器電源及HVDC電源機櫃列為計畫開發產品。持股子公司包括凱碩科技與Kinpo International Ltd.。
+segments:
+- evidence_ids:
+  - e2
+  id: seg.consumer
+  name: 消費性電子產品
+  period: '2025'
+  revenue_share_pct: 43.43
+- evidence_ids:
+  - e2
+  id: seg.storage
+  name: 儲存裝置產品
+  period: '2025'
+  revenue_share_pct: 23.78
+- evidence_ids:
+  - e2
+  id: seg.imaging
+  name: 影像產品
+  period: '2025'
+  revenue_share_pct: 21.37
+- evidence_ids:
+  - e2
+  id: seg.network
+  name: 網路通訊產品
+  period: '2025'
+  revenue_share_pct: 10.18
+- evidence_ids:
+  - e2
+  id: seg.other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 1.24
 relations:
   subsidiaries:
   - as_of: '2026-06-30'
@@ -51,7 +93,21 @@ website: www.kinpo.com.tw
 tax_id: 04370927
 incorporated: '1973-04-24'
 listed: '1989-11-07'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-15'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2312#e1:
+    locator: 印刷頁2，致股東報告書
+    published_date: null
+    publisher: 金寶電子工業股份有限公司
+    quote_check: unreachable
+    title: 金寶電子工業股份有限公司民國一一四年度年報
+    url: https://www.kinpo.com.tw/kpo_file/2026_Kinpo_Annual_Report.pdf
+  tw.2312#e2:
+    locator: 第6頁，2025季度及年度營收組合，2025全年圓餅圖
+    published_date: '2026-03-19'
+    publisher: 金寶電子工業股份有限公司
+    quote_check: unreachable
+    title: 金寶電子2026法人說明會
+    url: https://www.kinpo.com.tw/kpo_file/20260319_Investor_Conference.pdf

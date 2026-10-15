@@ -8,12 +8,172 @@ industry:
   l0_code: '26'
   l0_name: 光電業
   l0_name_en: Optoelectronic
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.display
+  l2_name: 光電與顯示
+  l2_name_en: Optoelectronics & Displays
+  l3: disp.materials
+  l3_name: 顯示器材料與零組件
+  l3_name_en: Display Materials & Components
+chain: chain.display
+primary_chain_position: upstream
+summary_short: 以光電玻璃加工為主，供應保護玻璃、車用曲面玻璃及建築節能玻璃。
+summary_long: 正達從事光電玻璃加工，產品涵蓋消費性電子保護玻璃、車用多曲面3D蓋板與建築節能玻璃。2025年營收以智能光電為主，占79.58%，智能汽車占10.35%，另有智能建築業務。公司亦提供扇出型面板級封裝用玻璃載板，並開發AI伺服器硬碟玻璃碟盤，年報揭露後者仍處樣品試作驗證階段。主要製造子公司包括間接持有的睿志達光電（成都）及直接持有的SD GLOBAL VIETNAM；正達戰術科技規劃從事無人機加工製造與組裝，年報揭露仍在建置。
+segments:
+- evidence_ids:
+  - e3
+  id: seg_opto
+  name: 智能光電
+  period: '2025'
+  revenue_share_pct: 79.58
+- evidence_ids:
+  - e3
+  id: seg_auto
+  name: 智能汽車
+  period: '2025'
+  revenue_share_pct: 10.35
+- evidence_ids:
+  - e3
+  id: seg_building
+  name: 智能建築
+  period: '2025'
+  revenue_share_pct: null
+main_theme: theme.ai_server
+themes:
+- stage: components
+  theme: theme.ai_server
+  tier: midstream
+- stage: system
+  theme: theme.drone
+  tier: downstream
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%股權
+    details:
+    - 直接持有100%股權
+    edge: e40b2bbecd801
+    evidence_level: primary
+    id: org.g-tech-optoelectronics-vietnam
+    name: G-TECH OPTOELECTRONICS (VIETNAM) CO., LTD
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%股權
+    details:
+    - 直接持有100%股權
+    edge: e7878955831bb
+    evidence_level: primary
+    id: org.g-tech-tactical-technology
+    name: 正達戰術科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持有100%股權
+    details:
+    - 間接持有100%股權
+    edge: ed828ed549f85
+    evidence_level: primary
+    id: org.ruizhida-optoelectronics-chengdu
+    name: 睿志達光電(成都)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%股權
+    details:
+    - 直接持有100%股權
+    edge: eaa2c8262e46f
+    evidence_level: primary
+    id: org.sd-global-vietnam
+    name: SD GLOBAL VIETNAM LIMITED LTD
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.gtoc.com.tw
 tax_id: '97049373'
 incorporated: '1996-06-27'
 listed: '2011-11-23'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-15'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3149#e10:
+    locator: 第63頁，觸控面板產業鏈說明
+    published_date: '2026-05-12'
+    publisher: 正達國際光電股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52299/2026/RNS/52299_rns_2026-05-12_eed13872-4244-4452-8247-fb7d12e5e020.pdf
+  tw.3149#e2:
+    locator: 正達主要產品為何
+    published_date: null
+    publisher: 正達國際光電股份有限公司
+    quote_check: found
+    title: 投資人專區：常見問答
+    url: https://www.gtoc.com.tw/webc/html/investor/index.aspx?nav=6
+  tw.3149#e3:
+    locator: 第60頁，公司主要產品及其營業比重；欄序為113年度銷值、比重及114年度銷值、比重
+    published_date: '2026-05-12'
+    publisher: 正達國際光電股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52299/2026/RNS/52299_rns_2026-05-12_eed13872-4244-4452-8247-fb7d12e5e020.pdf
+  tw.3149#e4:
+    locator: 第62頁，產品應用：智能汽車
+    published_date: '2026-05-12'
+    publisher: 正達國際光電股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52299/2026/RNS/52299_rns_2026-05-12_eed13872-4244-4452-8247-fb7d12e5e020.pdf
+  tw.3149#e5:
+    locator: 建築玻璃
+    published_date: null
+    publisher: 正達國際光電股份有限公司
+    quote_check: found
+    title: 關於正達
+    url: https://www.gtoc.com.tw/webc/html/about/index.aspx?nav=1
+  tw.3149#e6:
+    locator: 第63頁，智能光電
+    published_date: '2026-05-12'
+    publisher: 正達國際光電股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52299/2026/RNS/52299_rns_2026-05-12_eed13872-4244-4452-8247-fb7d12e5e020.pdf
+  tw.3149#e7:
+    locator: 第63頁，AI伺服器存儲用硬碟玻璃碟盤段落
+    published_date: '2026-05-12'
+    publisher: 正達國際光電股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52299/2026/RNS/52299_rns_2026-05-12_eed13872-4244-4452-8247-fb7d12e5e020.pdf
+  tw.3149#e8:
+    locator: 第47頁，114年12月31日直接及間接投資持股表；並參照第90至92頁關係企業組織及持股資料
+    published_date: '2026-05-12'
+    publisher: 正達國際光電股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52299/2026/RNS/52299_rns_2026-05-12_eed13872-4244-4452-8247-fb7d12e5e020.pdf
+  tw.3149#e9:
+    locator: 第91頁，各關係企業所經營業務分工情形
+    published_date: '2026-05-12'
+    publisher: 正達國際光電股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52299/2026/RNS/52299_rns_2026-05-12_eed13872-4244-4452-8247-fb7d12e5e020.pdf

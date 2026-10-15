@@ -8,12 +8,141 @@ industry:
   l0_code: '10'
   l0_name: 鋼鐵工業
   l0_name_en: Iron and Steel
-primary_chain_position: unknown
+  l1: materials
+  l1_name: 原物料
+  l1_name_en: Materials
+  l2: mat.metals
+  l2_name: 金屬
+  l2_name_en: Metals
+  l3: metal.steel
+  l3_name: 鋼鐵
+  l3_name_en: Steel
+chain: chain.steel
+primary_chain_position: midstream
+summary_short: 以鍍面及烤漆鋼捲製造銷售為主，兼營鋼結構與天車設備。
+summary_long: 燁輝以鍍面及烤漆鋼捲製造與銷售為主要業務。2024年個體營收中，鍍面鋼捲占55.26%、烤漆鋼捲占37.18%；鋼構工程、天車工程與其他收入分別占2.35%、1.05%及4.16%。鍍面產品包括熱浸鍍鋅、鋁鋅及鋅鋁鎂鋼捲，工程事業提供鋼結構與運搬機械、天車設備。主要投資事業包括全資子公司鑫陽鋼鐵及燁輝（中國）；前者經營鋼管製造與銷售，後者為熱浸鍍鋅與烤漆鋼捲生產中心。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_coated
+  name: 鍍面鋼捲（個體）
+  period: '2024'
+  revenue_share_pct: 55.26
+- evidence_ids:
+  - e3
+  id: seg_painted
+  name: 烤漆鋼捲（個體）
+  period: '2024'
+  revenue_share_pct: 37.18
+- evidence_ids:
+  - e4
+  id: seg_structure
+  name: 鋼構工程（個體）
+  period: '2024'
+  revenue_share_pct: 2.35
+- evidence_ids:
+  - e5
+  id: seg_crane
+  name: 天車工程（個體）
+  period: '2024'
+  revenue_share_pct: 1.05
+- evidence_ids:
+  - e6
+  id: seg_other
+  name: 其他（個體）
+  period: '2024'
+  revenue_share_pct: 4.16
+relations:
+  subsidiaries:
+  - as_of: '2026-10-15'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司；鋼管製造與銷售
+    details:
+    - 全資子公司；鋼管製造與銷售
+    edge: e71989a76c03b
+    evidence_level: primary
+    id: org.shin-yang-steel
+    name: 鑫陽鋼鐵股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-15'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資轉投資子公司；中國大陸鍍烤鋼捲生產中心
+    details:
+    - 全資轉投資子公司；中國大陸鍍烤鋼捲生產中心
+    edge: e77d61e439d18
+    evidence_level: primary
+    id: org.yieh-phui-china
+    name: 燁輝(中國)科技材料有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.yiehphui.com.tw
 tax_id: '75947936'
 incorporated: '1978-04-14'
 listed: '1995-07-28'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-15'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2023#e1:
+    locator: 企業概要介紹／主要產品
+    published_date: null
+    publisher: 燁輝企業股份有限公司
+    quote_check: found
+    title: 企業概要介紹
+    url: https://www.yiehphui.com.tw/content.php?id=AR201211300018
+  tw.2023#e2:
+    locator: 第26頁／4.01.4產品與銷售（個體營收）／鍍面鋼捲列，2024年銷量、銷值及占比欄
+    published_date: 2025-08
+    publisher: 燁輝企業股份有限公司
+    quote_check: found
+    title: 2024年永續報告書
+    url: https://www.yiehphui.com.tw/upload/myfiles/csr/ESG_2024.pdf
+  tw.2023#e3:
+    locator: 第26頁／4.01.4產品與銷售（個體營收）／烤漆鋼捲列，2024年銷量、銷值及占比欄
+    published_date: 2025-08
+    publisher: 燁輝企業股份有限公司
+    quote_check: found
+    title: 2024年永續報告書
+    url: https://www.yiehphui.com.tw/upload/myfiles/csr/ESG_2024.pdf
+  tw.2023#e4:
+    locator: 第26頁／4.01.4產品與銷售（個體營收）／鋼構工程列，2024年銷量、銷值及占比欄
+    published_date: 2025-08
+    publisher: 燁輝企業股份有限公司
+    quote_check: found
+    title: 2024年永續報告書
+    url: https://www.yiehphui.com.tw/upload/myfiles/csr/ESG_2024.pdf
+  tw.2023#e5:
+    locator: 第26頁／4.01.4產品與銷售（個體營收）／天車工程列，2024年銷量、銷值及占比欄
+    published_date: 2025-08
+    publisher: 燁輝企業股份有限公司
+    quote_check: found
+    title: 2024年永續報告書
+    url: https://www.yiehphui.com.tw/upload/myfiles/csr/ESG_2024.pdf
+  tw.2023#e6:
+    locator: 第26頁／4.01.4產品與銷售（個體營收）／其他列，2024年銷量、銷值及占比欄
+    published_date: 2025-08
+    publisher: 燁輝企業股份有限公司
+    quote_check: found
+    title: 2024年永續報告書
+    url: https://www.yiehphui.com.tw/upload/myfiles/csr/ESG_2024.pdf
+  tw.2023#e7:
+    locator: 台灣地區／鑫陽鋼鐵股份有限公司
+    published_date: null
+    publisher: 燁輝企業股份有限公司
+    quote_check: found
+    title: 主要投資事業
+    url: https://www.yiehphui.com.tw/content.php?id=AR201211300013
+  tw.2023#e8:
+    locator: 大陸地區／燁輝(中國)科技材料有限公司／公司介紹
+    published_date: null
+    publisher: 燁輝企業股份有限公司
+    quote_check: found
+    title: 主要投資事業
+    url: https://www.yiehphui.com.tw/content.php?id=AR201211300013

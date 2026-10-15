@@ -8,12 +8,128 @@ industry:
   l0_code: '15'
   l0_name: 航運業
   l0_name_en: Shipping and Transportation
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.transport
+  l2_name: 運輸
+  l2_name_en: Transportation
+  l3: trans.shipping
+  l3_name: 貨櫃與散裝航運
+  l3_name_en: Container & Bulk Shipping
+primary_chain_position: not_applicable
+summary_short: 以散裝乾貨與原油海運為主，另提供船舶管理服務。
+summary_long: 新興航運集團主要提供乾散貨與原油海上運輸，另有船舶管理收入。2025年散裝輪占營收64.71%、油輪占34.84%、船舶管理占0.45%，以散裝輪為最大營收來源。依2026年8月法說會揭露的6月底基準，集團自有船隊共13艘，包括4艘Kamsarmax、6艘Capesize、1艘VLOC及2艘VLCC。乾散貨船承運礦砂、煤炭等大宗物資，油輪則承運原油，營運涵蓋乾散貨與能源運輸。
+segments:
+- evidence_ids:
+  - e2
+  id: dry_bulk
+  name: 散裝輪
+  period: '2025'
+  revenue_share_pct: 64.71
+- evidence_ids:
+  - e2
+  id: tanker
+  name: 油輪
+  period: '2025'
+  revenue_share_pct: 34.84
+- evidence_ids:
+  - e2
+  id: ship_management
+  name: 船舶管理
+  period: '2025'
+  revenue_share_pct: 0.45
+relations:
+  subsidiaries:
+  - as_of: '2026-05-06'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的子公司
+    details:
+    - 直接持股100%的子公司
+    edge: e274817fdc151
+    evidence_level: primary
+    id: org.heywood-limited
+    name: 海德股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-05-06'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的子公司
+    details:
+    - 直接持股100%的子公司
+    edge: ead21c8eedfc6
+    evidence_level: primary
+    id: org.norley-corporation-inc
+    name: 樂利航運公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-05-06'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的子公司
+    details:
+    - 直接持股100%的子公司
+    edge: e443e2e03fbf3
+    evidence_level: primary
+    id: org.sincere-navigation-singapore
+    name: 新興航運(新加坡)公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.snc.com.tw/
 tax_id: '11812103'
 incorporated: '1968-02-27'
 listed: '1989-12-08'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-15'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2605#e2:
+    locator: 印刷頁65／PDF第69頁，最近二年度本集團營業收入總額；金額單位為新台幣仟元
+    published_date: '2026-05-06'
+    publisher: 新興航運股份有限公司
+    quote_check: found
+    title: 新興航運股份有限公司2025年報
+    url: https://www.snc.com.tw/wp-content/uploads/SNC_AR2025.pdf
+  tw.2605#e3:
+    locator: 印刷頁70／PDF第74頁，市場分析之航線
+    published_date: '2026-05-06'
+    publisher: 新興航運股份有限公司
+    quote_check: found
+    title: 新興航運股份有限公司2025年報
+    url: https://www.snc.com.tw/wp-content/uploads/SNC_AR2025.pdf
+  tw.2605#e4:
+    locator: PDF第3頁，核心重點；船隊基準日為2026年6月30日
+    published_date: '2026-08-21'
+    publisher: 新興航運股份有限公司
+    quote_check: found
+    title: 新興航運2026年第三季法說會
+    url: https://www.snc.com.tw/wp-content/uploads/SNC_2026-08-21.pdf
+  tw.2605#e5:
+    locator: 印刷頁60／PDF第64頁，轉投資事業持股表；本公司持股比例欄
+    published_date: '2026-05-06'
+    publisher: 新興航運股份有限公司
+    quote_check: found
+    title: 新興航運股份有限公司2025年報
+    url: https://www.snc.com.tw/wp-content/uploads/SNC_AR2025.pdf
+  tw.2605#e6:
+    locator: 印刷頁60／PDF第64頁，轉投資事業持股表；本公司持股比例欄
+    published_date: '2026-05-06'
+    publisher: 新興航運股份有限公司
+    quote_check: found
+    title: 新興航運股份有限公司2025年報
+    url: https://www.snc.com.tw/wp-content/uploads/SNC_AR2025.pdf
+  tw.2605#e7:
+    locator: 印刷頁60／PDF第64頁，轉投資事業持股表；本公司持股比例欄
+    published_date: '2026-05-06'
+    publisher: 新興航運股份有限公司
+    quote_check: found
+    title: 新興航運股份有限公司2025年報
+    url: https://www.snc.com.tw/wp-content/uploads/SNC_AR2025.pdf

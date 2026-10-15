@@ -8,13 +8,85 @@ industry:
   l0_code: '21'
   l0_name: 化學工業
   l0_name_en: Chemical
-primary_chain_position: unknown
+  l1: materials
+  l1_name: 原物料
+  l1_name_en: Materials
+  l2: mat.chemicals
+  l2_name: 化工
+  l2_name_en: Chemicals
+  l3: chem.specialty
+  l3_name: 特用化學品
+  l3_name_en: Specialty Chemicals
+primary_chain_position: not_applicable
+summary_short: 以醋酸纖維絲束為主，並生產醋酸纖維素、醋酸酐與長絲。
+summary_long: 材料-KY以醋酸纖維絲束為主要營收來源，產品大部分用於菸用過濾嘴；2024年絲束占營收90.00%，二醋酸纖維素占9.96%，醋酸酐占0.04%。集團亦製造紡絲級與塑膠級醋酸纖維素，前者可用於紡絲，後者用於眼鏡鏡框及工具手柄。孟玄新材料負責醋酸酐生產，中峰化學生產醋酸纖維素；阿斯泰克（山東）環保纖維生產醋酸纖維長絲，長絲可製成服飾面料。
+segments:
+- evidence_ids:
+  - e04
+  id: seg.tow
+  name: 二醋酸纖維絲束
+  period: 2024年度
+  revenue_share_pct: 90
+- evidence_ids:
+  - e05
+  id: seg.cellulose_acetate
+  name: 二醋酸纖維素
+  period: 2024年度
+  revenue_share_pct: 9.96
+- evidence_ids:
+  - e06
+  id: seg.acetic_anhydride
+  name: 醋酸酐
+  period: 2024年度
+  revenue_share_pct: 0.04
 website: www.acetekgroup.com
 tax_id: '42328858'
 incorporated: '2014-09-25'
 listed: '2015-11-09'
 foreign_registration: KY 開曼群島
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-15'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4763#e03:
+    locator: PDF第74頁／印刷第69頁：二醋酸纖維絲束產品用途
+    published_date: null
+    publisher: 濟南大自然新材料股份有限公司
+    quote_check: unreachable
+    title: 2024年度年報
+    url: https://www.acetekgroup.com/static/upload/file/20260122/1769043353123462.pdf
+  tw.4763#e04:
+    locator: PDF第67頁／印刷第62頁：營業比重表，二醋酸纖維絲束列，2024年度營業額及比重
+    published_date: null
+    publisher: 濟南大自然新材料股份有限公司
+    quote_check: unreachable
+    title: 2024年度年報
+    url: https://www.acetekgroup.com/static/upload/file/20260122/1769043353123462.pdf
+  tw.4763#e05:
+    locator: PDF第67頁／印刷第62頁：營業比重表，二醋酸纖維素列，2024年度營業額及比重
+    published_date: null
+    publisher: 濟南大自然新材料股份有限公司
+    quote_check: unreachable
+    title: 2024年度年報
+    url: https://www.acetekgroup.com/static/upload/file/20260122/1769043353123462.pdf
+  tw.4763#e06:
+    locator: PDF第67頁／印刷第62頁：營業比重表，醋酸酐列，2024年度營業額及比重
+    published_date: null
+    publisher: 濟南大自然新材料股份有限公司
+    quote_check: unreachable
+    title: 2024年度年報
+    url: https://www.acetekgroup.com/static/upload/file/20260122/1769043353123462.pdf
+  tw.4763#e16:
+    locator: 產品介紹第三段
+    published_date: null
+    publisher: 濟南大自然新材料股份有限公司
+    quote_check: unreachable
+    title: 醋酸酐－產品中心
+    url: https://acetekgroup.com/product/28.html
+  tw.4763#e17:
+    locator: PDF第51頁／印刷第50頁，32. SEGMENT INFORMATION，主要產品收入表；2025及2024年度，單位新臺幣仟元
+    published_date: null
+    publisher: 濟南大自然新材料股份有限公司
+    quote_check: unreachable
+    title: 2025及2024年度英文合併財務報告
+    url: https://www.acetekgroup.com/static/upload/file/20260831/1788146327206790.pdf

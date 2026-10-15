@@ -8,12 +8,165 @@ industry:
   l0_code: '12'
   l0_name: 汽車工業
   l0_name_en: Automobile
-primary_chain_position: unknown
+  l1: auto
+  l1_name: 汽車與運具
+  l1_name_en: Automotive & Mobility
+  l2: auto.vehicles
+  l2_name: 汽機車
+  l2_name_en: Autos & Motorcycles
+  l3: auto.parts
+  l3_name: 汽車零組件
+  l3_name_en: Auto Parts
+chain: chain.auto
+primary_chain_position: midstream
+summary_short: 帝寶以汽車車燈製造與銷售為主，另提供汽車百貨及零件。
+summary_long: 帝寶以汽車車燈製造與銷售為核心，並提供汽車百貨及零件。2025年汽車車燈占合併營收98.14%，汽車百貨及零件占1.86%；官網列出的產品也包含後視鏡。其綠能頭燈採用LED光源與反射式光學設計，整合日行燈、近燈、遠燈及方向燈功能。集團旗下包括投資公司Depo Auto、美國車燈營運子公司Maxzone、泰國子公司及台灣內銷子公司宏佳寶。
+segments:
+- evidence_ids:
+  - e1
+  id: s1
+  name: 汽車車燈
+  period: '2025'
+  revenue_share_pct: 98.14
+- evidence_ids:
+  - e2
+  id: s2
+  name: 汽車百貨及零件
+  period: '2025'
+  revenue_share_pct: 1.86
+relations:
+  subsidiaries:
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團投資公司
+    details:
+    - 集團投資公司
+    edge: eda3ba01438c8
+    evidence_level: primary
+    id: org.depo-auto
+    name: Depo Auto Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 泰國子公司
+    details:
+    - 泰國子公司
+    edge: e5efb12d1b94d
+    evidence_level: primary
+    id: org.depo-traffic-facilities-thailand
+    name: Depo Traffic Facilities (Thailand) Co.,Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 台灣內銷子公司
+    details:
+    - 台灣內銷子公司
+    edge: e6667345c9e4b
+    evidence_level: primary
+    id: org.hongjiabao
+    name: 宏佳寶股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 美國車燈營運子公司
+    details:
+    - 美國車燈營運子公司
+    edge: eaf228c6ea40d
+    evidence_level: primary
+    id: org.maxzone-vehicle-lighting
+    name: Maxzone Vehicle Lighting Corp.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.depoautolamp.com
 tax_id: '59347422'
 incorporated: '1980-04-25'
 listed: '2004-03-17'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-15'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6605#e1:
+    locator: 印刷頁54，PDF第58頁，主要商品及其營業比重；單位：新台幣仟元、%
+    published_date: '2026-05-13'
+    publisher: 帝寶工業股份有限公司
+    quote_check: found
+    title: 帝寶工業股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52594/2026/RNS/52594_rns_2026-06-29_a611db65-2023-45fb-9e28-491919eb3190.pdf
+  tw.6605#e10:
+    locator: 印刷頁74，PDF第78頁，最近年度轉投資事業表
+    published_date: '2026-05-13'
+    publisher: 帝寶工業股份有限公司
+    quote_check: found
+    title: 帝寶工業股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52594/2026/RNS/52594_rns_2026-06-29_a611db65-2023-45fb-9e28-491919eb3190.pdf
+  tw.6605#e2:
+    locator: 印刷頁54，PDF第58頁，主要商品及其營業比重；單位：新台幣仟元、%
+    published_date: '2026-05-13'
+    publisher: 帝寶工業股份有限公司
+    quote_check: found
+    title: 帝寶工業股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52594/2026/RNS/52594_rns_2026-06-29_a611db65-2023-45fb-9e28-491919eb3190.pdf
+  tw.6605#e3:
+    locator: Q8：目前帝寶能提供什麼類型的產品
+    published_date: null
+    publisher: 帝寶工業股份有限公司
+    quote_check: found
+    title: 商務層面－問與答
+    url: https://www.depoautolamp.com/faq_tw.php?id=2352
+  tw.6605#e4:
+    locator: 產品名稱及型號
+    published_date: '2025-11-03'
+    publisher: 帝寶工業股份有限公司
+    quote_check: found
+    title: 榮獲34屆台灣精品獎－綠能頭燈
+    url: https://www.depoautolamp.com/newsdetail_tw.php?id=2684
+  tw.6605#e5:
+    locator: 產品光學設計與功能說明
+    published_date: '2025-11-03'
+    publisher: 帝寶工業股份有限公司
+    quote_check: found
+    title: 榮獲34屆台灣精品獎－綠能頭燈
+    url: https://www.depoautolamp.com/newsdetail_tw.php?id=2684
+  tw.6605#e6:
+    locator: 印刷頁49，PDF第53頁，轉投資事業持股表
+    published_date: '2026-05-13'
+    publisher: 帝寶工業股份有限公司
+    quote_check: found
+    title: 帝寶工業股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52594/2026/RNS/52594_rns_2026-06-29_a611db65-2023-45fb-9e28-491919eb3190.pdf
+  tw.6605#e7:
+    locator: 印刷頁74，PDF第78頁，最近年度轉投資事業表
+    published_date: '2026-05-13'
+    publisher: 帝寶工業股份有限公司
+    quote_check: found
+    title: 帝寶工業股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52594/2026/RNS/52594_rns_2026-06-29_a611db65-2023-45fb-9e28-491919eb3190.pdf
+  tw.6605#e8:
+    locator: 印刷頁74，PDF第78頁，最近年度轉投資事業表
+    published_date: '2026-05-13'
+    publisher: 帝寶工業股份有限公司
+    quote_check: found
+    title: 帝寶工業股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52594/2026/RNS/52594_rns_2026-06-29_a611db65-2023-45fb-9e28-491919eb3190.pdf
+  tw.6605#e9:
+    locator: 2018年6月公司沿革
+    published_date: null
+    publisher: 帝寶工業股份有限公司
+    quote_check: found
+    title: 歷史與榮耀
+    url: https://www.depoautolamp.com/company_tw_2.php

@@ -8,7 +8,43 @@ industry:
   l0_code: '28'
   l0_name: 電子零組件業
   l0_name_en: Electronic Parts and Components
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.pcb
+  l3_name: 印刷電路板
+  l3_name_en: Printed Circuit Boards
+chain: chain.pcb
+primary_chain_position: midstream
+summary_short: 以印刷電路板製造為主，另提供電路板置件及整機組裝服務。
+summary_long: 楠梓電子以印刷電路板製造、加工及銷售為主要業務，並提供電路板置件與整機組裝服務。2025年合併營收中，印刷電路板占77.08%，印刷電路板組裝占22.92%。其產品涵蓋AI高速運算板，以及用於IC測試與AI應用的高密度類載板PCB，官網亦列示AI伺服器相關應用。集團透過新加坡子公司從事電路板銷售與工程服務，昆山先創電子則從事電子產品週邊設備的組裝及銷售。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_pcb
+  name: 印刷電路板
+  period: '2025'
+  revenue_share_pct: 77.08
+- evidence_ids:
+  - e1
+  id: seg_pcba
+  name: 印刷電路板組裝
+  period: '2025'
+  revenue_share_pct: 22.92
+- evidence_ids:
+  - e1
+  id: seg_other
+  name: 商品及其他
+  period: '2025'
+  revenue_share_pct: 0
+main_theme: theme.ai_server
+themes:
+- stage: board_materials
+  theme: theme.ai_server
+  tier: upstream
 relations:
   partners:
   - as_of: '2026-05-08'
@@ -29,7 +65,49 @@ website: www.wus.com.tw
 tax_id: '76026851'
 incorporated: '1978-05-02'
 listed: '1991-02-05'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-15'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2316#e1:
+    locator: 印刷頁42，PDF第46頁，產品及營業比重表
+    published_date: '2026-04-30'
+    publisher: 楠梓電子股份有限公司
+    quote_check: found
+    title: 楠梓電子股份有限公司114年度年報
+    url: https://www.wus.com.tw/images/pdf/114.pdf
+  tw.2316#e2:
+    locator: 印刷頁42，PDF第46頁，所營業務之主要內容
+    published_date: '2026-04-30'
+    publisher: 楠梓電子股份有限公司
+    quote_check: found
+    title: 楠梓電子股份有限公司114年度年報
+    url: https://www.wus.com.tw/images/pdf/114.pdf
+  tw.2316#e3:
+    locator: 印刷頁42，PDF第46頁，印刷電路板組裝
+    published_date: '2026-04-30'
+    publisher: 楠梓電子股份有限公司
+    quote_check: found
+    title: 楠梓電子股份有限公司114年度年報
+    url: https://www.wus.com.tw/images/pdf/114.pdf
+  tw.2316#e4:
+    locator: 2020年沿革項目
+    published_date: null
+    publisher: 楠梓電子股份有限公司
+    quote_check: found
+    title: 公司沿革
+    url: https://www.wus.com.tw/index.php/zh-tw/2017-10-12-01-57-35/2017-10-12-02-02-25
+  tw.2316#e5:
+    locator: 公司介紹第三段
+    published_date: null
+    publisher: 楠梓電子股份有限公司
+    quote_check: found
+    title: About Wus
+    url: https://www.wus.com.tw/index.php/en/
+  tw.2316#e6:
+    locator: 公司介紹第二段，產品及應用
+    published_date: null
+    publisher: 楠梓電子股份有限公司
+    quote_check: found
+    title: About Wus
+    url: https://www.wus.com.tw/index.php/en/

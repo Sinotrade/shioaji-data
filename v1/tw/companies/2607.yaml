@@ -8,7 +8,58 @@ industry:
   l0_code: '15'
   l0_name: 航運業
   l0_name_en: Shipping and Transportation
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.transport
+  l2_name: 運輸
+  l2_name_en: Transportation
+  l3: trans.logistics
+  l3_name: 物流與倉儲
+  l3_name_en: Logistics & Warehousing
+primary_chain_position: not_applicable
+summary_short: 以海空運貨物承攬、內陸貨櫃運輸、貨櫃場及倉儲服務取得收入。
+summary_long: 榮運以貨物承攬、內陸貨櫃運輸、貨櫃場及倉儲等物流服務取得收入。依2025年上半年合併財報，貨物承攬業為最大營收來源，另有國際海運、內陸運輸、貨櫃場、加油站及其他部門。海空運貨物承攬由子公司長榮物流辦理，Gaining Enterprise S.A.亦列為子公司。本體提供船邊與內陸貨櫃場間拖運，台中港貨櫃場提供貨櫃裝卸及儲轉；另經營船舶租賃，並透過大園物流園區提供現代化倉儲及辦公空間。
+segments:
+- evidence_ids:
+  - e2
+  - e3
+  id: freight_forwarding
+  name: 貨物承攬業
+  period: 2025-01-01至2025-06-30
+  revenue_share_pct: null
+- evidence_ids:
+  - e2
+  id: international_shipping
+  name: 國際海運
+  period: 2025-01-01至2025-06-30
+  revenue_share_pct: null
+- evidence_ids:
+  - e2
+  id: inland_transport
+  name: 內陸運輸
+  period: 2025-01-01至2025-06-30
+  revenue_share_pct: null
+- evidence_ids:
+  - e2
+  id: container_terminal
+  name: 貨櫃場
+  period: 2025-01-01至2025-06-30
+  revenue_share_pct: null
+- evidence_ids:
+  - e2
+  - e3
+  id: gas_station
+  name: 加油站
+  period: 2025-01-01至2025-06-30
+  revenue_share_pct: null
+- evidence_ids:
+  - e2
+  - e3
+  id: other
+  name: 其他部門
+  period: 2025-01-01至2025-06-30
+  revenue_share_pct: null
 relations:
   customers:
   - as_of: '2024-04-18'
@@ -21,6 +72,35 @@ relations:
     evidence_level: media
     id: tw.2603
     name: 長榮
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2025-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 海空運貨運承攬子公司
+    details:
+    - 海空運貨運承攬子公司
+    edge: e916509191c33
+    evidence_level: primary
+    id: org.evergreen-logistics
+    name: 長榮物流股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 國際海運子公司
+    details:
+    - 國際海運子公司
+    edge: e36b2de8f7029
+    evidence_level: primary
+    id: org.gaining-enterprise
+    name: Gaining Enterprise S.A.
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -51,7 +131,63 @@ website: www.evergreen-eitc.com.tw
 tax_id: 04406559
 incorporated: '1973-10-05'
 listed: '1990-12-14'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-15'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2607#e2:
+    locator: 第37頁，附註六（二十）營業收入，114年1月1日至6月30日
+    published_date: null
+    publisher: 長榮國際儲運股份有限公司
+    quote_check: found
+    title: 民國114年及113年第二季合併財務報告
+    url: https://www.evergreen-eitc.com.tw/eitchtdocs/download/D03-0-Financial/WPWBD026-A05001ZHPDF-53115720250814161356.PDF
+  tw.2607#e3:
+    locator: 第37頁，2025年上半年營收合計列末四欄，單位為新台幣仟元
+    published_date: null
+    publisher: 長榮國際儲運股份有限公司
+    quote_check: found
+    title: 民國114年及113年第二季合併財務報告
+    url: https://www.evergreen-eitc.com.tw/eitchtdocs/download/D03-0-Financial/WPWBD026-A05001ZHPDF-53115720250814161356.PDF
+  tw.2607#e4:
+    locator: 第17頁，附註四（三）列入合併財務報告之子公司；正式全名另見第72頁附表五
+    published_date: null
+    publisher: 長榮國際儲運股份有限公司
+    quote_check: found
+    title: 民國114年及113年第二季合併財務報告
+    url: https://www.evergreen-eitc.com.tw/eitchtdocs/download/D03-0-Financial/WPWBD026-A05001ZHPDF-53115720250814161356.PDF
+  tw.2607#e5:
+    locator: 第13頁，附註一（二）
+    published_date: null
+    publisher: 長榮國際儲運股份有限公司
+    quote_check: found
+    title: 民國114年及113年第二季合併財務報告
+    url: https://www.evergreen-eitc.com.tw/eitchtdocs/download/D03-0-Financial/WPWBD026-A05001ZHPDF-53115720250814161356.PDF
+  tw.2607#e6:
+    locator: 主要服務項目第1項
+    published_date: null
+    publisher: 長榮國際儲運股份有限公司
+    quote_check: found
+    title: 內陸貨櫃運輸－業務簡介
+    url: https://www.evergreen-eitc.com.tw/eitchtdocs/zh/B02-1-Intro.html
+  tw.2607#e7:
+    locator: 貨櫃裝卸船及轉船、儲轉作業
+    published_date: null
+    publisher: 長榮國際儲運股份有限公司
+    quote_check: found
+    title: 台中港貨櫃場－主要服務項目
+    url: https://www.evergreen-eitc.com.tw/eitchtdocs/zh/B03-1-Intro.html
+  tw.2607#e8:
+    locator: 企業合併後的業務範疇段落
+    published_date: null
+    publisher: 長榮國際儲運股份有限公司
+    quote_check: not_found
+    title: 公司簡介
+    url: https://www.evergreen-eitc.com.tw/eitchtdocs/zh/A01-0-Profile.html
+  tw.2607#e9:
+    locator: 大園物流園區段落
+    published_date: null
+    publisher: 長榮國際儲運股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.evergreen-eitc.com.tw/eitchtdocs/zh/A01-0-Profile.html

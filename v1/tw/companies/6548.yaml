@@ -54,12 +54,12 @@ themes:
 - stage: components
   theme: theme.robotics
   tier: upstream
-- stage: packaging
-  theme: theme.mini_led
-  tier: midstream
 - stage: components
   theme: theme.leo_satellite
   tier: upstream
+- stage: packaging
+  theme: theme.mini_led
+  tier: midstream
 - stage: application
   theme: theme.gan
   tier: downstream

@@ -40,13 +40,13 @@ segments:
   name: 先進封裝
   period: '2025'
   revenue_share_pct: 2
-main_theme: theme.hbm
+main_theme: theme.gan
 themes:
-- stage: manufacturing
-  theme: theme.hbm
-  tier: midstream
 - stage: devices
   theme: theme.gan
+  tier: midstream
+- stage: manufacturing
+  theme: theme.hbm
   tier: midstream
 relations:
   competitors:

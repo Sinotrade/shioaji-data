@@ -8,8 +8,135 @@ industry:
   l0_code: '17'
   l0_name: 金融保險業
   l0_name_en: Financial and Insurance
-primary_chain_position: unknown
+  l1: finance
+  l1_name: 金融
+  l1_name_en: Financials
+  l2: fin.banking
+  l2_name: 銀行與金控
+  l2_name_en: Banks & Financial Holdings
+  l3: fin.bank
+  l3_name: 銀行
+  l3_name_en: Banks
+chain: chain.finance
+primary_chain_position: not_applicable
+summary_short: 以企業授信、個人放款、財富管理與金融交易取得收入的商業銀行。
+summary_long: 王道銀行以企業授信、個人放款及財富管理等金融服務取得收入，另提供利匯率避險、結構型商品與信託服務。依2025年年報的個體淨收益分類，企金授信占66%，個金放款占15%，財富管理占2%；其他金融交易與股債投資分別占14%及4%。主要子公司包括中華票券、IBT Holdings Corp.、台灣工銀科技顧問與台灣工銀柒創投，並透過IBT Holdings Corp.控股美國華信銀行。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_corporate_credit
+  name: 企金授信業務
+  period: 2025年度（個體淨收益口徑）
+  revenue_share_pct: 66
+- evidence_ids:
+  - e2
+  id: seg_personal_credit
+  name: 個金放款業務
+  period: 2025年度（個體淨收益口徑）
+  revenue_share_pct: 15
+- evidence_ids:
+  - e3
+  id: seg_wealth
+  name: 財富管理業務
+  period: 2025年度（個體淨收益口徑）
+  revenue_share_pct: 2
+- evidence_ids:
+  - e4
+  id: seg_investment
+  name: 股債投資業務
+  period: 2025年度（個體淨收益口徑）
+  revenue_share_pct: 4
+- evidence_ids:
+  - e5
+  id: seg_financial_trading
+  name: 其他金融交易
+  period: 2025年度（個體淨收益口徑）
+  revenue_share_pct: 14
+- evidence_ids:
+  - e6
+  id: seg_trust
+  name: 信託業務（企金）
+  period: 2025年度（個體淨收益口徑）
+  revenue_share_pct: null
+- evidence_ids:
+  - e7
+  id: seg_equity_method_other
+  name: 權益法轉投資業務及其他
+  period: 2025年度（個體淨收益口徑）
+  revenue_share_pct: -1
 relations:
+  subsidiaries:
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 年報列示之控制公司，持股28.36%
+    details:
+    - 年報列示之控制公司，持股28.36%
+    - 票券金融子公司
+    edge: e71eb613dcb0e
+    evidence_level: primary
+    id: tw.2820
+    name: 華票
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 2
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司，控股美國華信銀行
+    details:
+    - 直接子公司，控股美國華信銀行
+    edge: efe643d18c68b
+    evidence_level: primary
+    id: org.ibt-holdings
+    name: IBT Holdings Corp.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 創投事業子公司
+    details:
+    - 創投事業子公司
+    edge: ef72c1ad70305
+    evidence_level: primary
+    id: org.台灣工銀柒創業投資股份有限公司
+    name: 台灣工銀柒創業投資股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 創投事業子公司
+    details:
+    - 創投事業子公司
+    edge: ea7be53610f01
+    evidence_level: primary
+    id: org.台灣工銀科技顧問股份有限公司
+    name: 台灣工銀科技顧問股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過IBT Holdings Corp.間接控制
+    details:
+    - 透過IBT Holdings Corp.間接控制
+    edge: e8895df216fa4
+    evidence_level: primary
+    id: org.美國華信銀行
+    name: 美國華信銀行
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   transactions:
   - amount: 不超過新台幣8,000萬元
     as_of: '2024-08-08'
@@ -36,7 +163,119 @@ website: www.o-bank.com
 tax_id: '70745361'
 incorporated: '1999-07-27'
 listed: '2017-05-05'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-15'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2897#e1:
+    locator: 印刷頁128，主要營業比重之收入表，2025年度欄
+    published_date: null
+    publisher: 王道商業銀行股份有限公司
+    quote_check: found
+    title: 王道銀行2025年年報
+    url: https://www.o-bank.com/-/media/c3bae093a9d24fa49230d46c79ea6602.pdf
+  tw.2897#e10:
+    locator: Trust、Escrow小節
+    published_date: null
+    publisher: O-Bank
+    quote_check: found
+    title: Trust
+    url: https://www.o-bank.com/en/corporate/trust
+  tw.2897#e11:
+    locator: 印刷頁1，致股東報告書子公司段落；印刷頁112，本行投資表
+    published_date: null
+    publisher: 王道商業銀行股份有限公司
+    quote_check: found
+    title: 王道銀行2025年年報
+    url: https://www.o-bank.com/-/media/c3bae093a9d24fa49230d46c79ea6602.pdf
+  tw.2897#e12:
+    locator: 印刷頁112，本行投資表
+    published_date: null
+    publisher: 王道商業銀行股份有限公司
+    quote_check: found
+    title: 王道銀行2025年年報
+    url: https://www.o-bank.com/-/media/c3bae093a9d24fa49230d46c79ea6602.pdf
+  tw.2897#e13:
+    locator: 第6頁，中華票券與美國華信銀行營運績效表；第10頁，子公司架構圖
+    published_date: '2026-05-14'
+    publisher: 王道商業銀行股份有限公司
+    quote_check: found
+    title: 王道銀行2026年第1季營運概況
+    url: https://www.o-bank.com/-/media/a01fbfbe634d40db82383b514297a40e.pdf
+  tw.2897#e14:
+    locator: 印刷頁112，本行投資表
+    published_date: null
+    publisher: 王道商業銀行股份有限公司
+    quote_check: found
+    title: 王道銀行2025年年報
+    url: https://www.o-bank.com/-/media/c3bae093a9d24fa49230d46c79ea6602.pdf
+  tw.2897#e15:
+    locator: 印刷頁112，本行投資表
+    published_date: null
+    publisher: 王道商業銀行股份有限公司
+    quote_check: found
+    title: 王道銀行2025年年報
+    url: https://www.o-bank.com/-/media/c3bae093a9d24fa49230d46c79ea6602.pdf
+  tw.2897#e16:
+    locator: 第10頁，王道銀行主要子公司及關聯企業架構圖，創投事業
+    published_date: '2026-05-14'
+    publisher: 王道商業銀行股份有限公司
+    quote_check: found
+    title: 王道銀行2026年第1季營運概況
+    url: https://www.o-bank.com/-/media/a01fbfbe634d40db82383b514297a40e.pdf
+  tw.2897#e2:
+    locator: 印刷頁128，收入表「個金放款業務」列，2025年度金額及比重
+    published_date: null
+    publisher: 王道商業銀行股份有限公司
+    quote_check: found
+    title: 王道銀行2025年年報
+    url: https://www.o-bank.com/-/media/c3bae093a9d24fa49230d46c79ea6602.pdf
+  tw.2897#e3:
+    locator: 印刷頁128，收入表「財富管理業務」列，2025年度金額及比重
+    published_date: null
+    publisher: 王道商業銀行股份有限公司
+    quote_check: found
+    title: 王道銀行2025年年報
+    url: https://www.o-bank.com/-/media/c3bae093a9d24fa49230d46c79ea6602.pdf
+  tw.2897#e4:
+    locator: 印刷頁128，收入表「股債投資業務」列，2025年度金額及比重
+    published_date: null
+    publisher: 王道商業銀行股份有限公司
+    quote_check: found
+    title: 王道銀行2025年年報
+    url: https://www.o-bank.com/-/media/c3bae093a9d24fa49230d46c79ea6602.pdf
+  tw.2897#e5:
+    locator: 印刷頁128，收入表「其他金融交易」列，2025年度金額及比重
+    published_date: null
+    publisher: 王道商業銀行股份有限公司
+    quote_check: found
+    title: 王道銀行2025年年報
+    url: https://www.o-bank.com/-/media/c3bae093a9d24fa49230d46c79ea6602.pdf
+  tw.2897#e6:
+    locator: 印刷頁128，收入表「信託業務(企金)」列，2025年度金額及比重
+    published_date: null
+    publisher: 王道商業銀行股份有限公司
+    quote_check: not_found
+    title: 王道銀行2025年年報
+    url: https://www.o-bank.com/-/media/c3bae093a9d24fa49230d46c79ea6602.pdf
+  tw.2897#e7:
+    locator: 印刷頁128，收入表「權益法轉投資業務及其他」列，2025年度金額及比重
+    published_date: null
+    publisher: 王道商業銀行股份有限公司
+    quote_check: found
+    title: 王道銀行2025年年報
+    url: https://www.o-bank.com/-/media/c3bae093a9d24fa49230d46c79ea6602.pdf
+  tw.2897#e8:
+    locator: 企業授信介紹首段
+    published_date: null
+    publisher: O-Bank
+    quote_check: found
+    title: Corp. Loan
+    url: https://www.o-bank.com/en/corporate/corpbk/corpbk-corploan
+  tw.2897#e9:
+    locator: Financial MKT介紹及Exchange Rate Products、Interest Rate Products、Structured Products小節
+    published_date: null
+    publisher: O-Bank
+    quote_check: found
+    title: Financial MKT
+    url: https://www.o-bank.com/en/corporate/financial

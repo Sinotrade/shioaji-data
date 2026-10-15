@@ -8,7 +8,50 @@ industry:
   l0_code: '25'
   l0_name: 電腦及週邊設備業
   l0_name_en: Computer and Peripheral Equipment
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.hardware
+  l2_name: 電腦與硬體
+  l2_name_en: Computers & Hardware
+  l3: hw.ems
+  l3_name: 電子製造服務（EMS）
+  l3_name_en: Electronics Manufacturing Services
+chain: chain.display
+primary_chain_position: downstream
+summary_short: 以顯示器與投影機設計製造為主，並經營醫療、智能方案及網通事業。
+summary_long: 佳世達以顯示器與投影機設計製造為主要產品線，並透過集團經營醫療、智慧解決方案與網路通訊業務。顯示器涵蓋家用、商用、專業及醫療用途，投影機涵蓋商用、教育、家用與行動應用。2025年醫療、智慧解決方案與網通事業分別占合併營收15%、17%及11%。品牌產品由子公司明基電通經營，友通資訊與拍檔科技分別提供工業電腦板卡及端點銷售系統，明泰科技從事寬頻、無線網路及網路系統設備。智能方案並規劃客製化AI伺服器與邊緣運算產品。
+segments:
+- evidence_ids:
+  - e4
+  - e5
+  id: information
+  name: 資訊產品：顯示器與投影機
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e3
+  id: medical
+  name: 醫療事業
+  period: '2025'
+  revenue_share_pct: 15
+- evidence_ids:
+  - e3
+  id: solutions
+  name: 智慧解決方案
+  period: '2025'
+  revenue_share_pct: 17
+- evidence_ids:
+  - e3
+  id: networking
+  name: 網通事業
+  period: '2025'
+  revenue_share_pct: 11
+main_theme: theme.ai_server
+themes:
+- stage: assembly
+  theme: theme.ai_server
+  tier: downstream
 relations:
   transactions:
   - amount: 新台幣301,375仟元
@@ -36,7 +79,56 @@ website: Qisda.com.tw
 tax_id: '12490306'
 incorporated: '1984-04-21'
 listed: '1996-07-22'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-15'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2352#e10:
+    locator: 董事長的話：2025年事業布局
+    published_date: null
+    publisher: 佳世達科技股份有限公司
+    quote_check: found
+    title: 經營者的話
+    url: https://esg.qisda.com/operator/Letter
+  tw.2352#e2:
+    locator: 第102頁，十四、部門資訊；欄位依序為設計製造服務、品牌營銷、材料科學、醫療服務及網路通訊，單位新台幣千元
+    published_date: '2026-03-11'
+    publisher: 佳世達科技股份有限公司
+    quote_check: unreachable
+    title: 佳世達2025年度合併財務報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52023/2025/RNS/52023_rns_2025-12-30_3780ef6b-349a-44f9-a250-0463a1fc3721.pdf
+  tw.2352#e3:
+    locator: 第1頁，致股東報告書
+    published_date: '2026-03-31'
+    publisher: 佳世達科技股份有限公司
+    quote_check: unreachable
+    title: 佳世達科技股份有限公司2025年報
+    url: https://financialfilings.com/filings/qisda-2352/annual-report/2026/47980070/
+  tw.2352#e4:
+    locator: 第62頁，產品範疇
+    published_date: '2026-03-31'
+    publisher: 佳世達科技股份有限公司
+    quote_check: unreachable
+    title: 佳世達科技股份有限公司2025年報
+    url: https://financialfilings.com/filings/qisda-2352/annual-report/2026/47980070/
+  tw.2352#e5:
+    locator: 第62頁，產品範疇
+    published_date: '2026-03-31'
+    publisher: 佳世達科技股份有限公司
+    quote_check: unreachable
+    title: 佳世達科技股份有限公司2025年報
+    url: https://financialfilings.com/filings/qisda-2352/annual-report/2026/47980070/
+  tw.2352#e6:
+    locator: 四大營運方針：優化現有事業經營
+    published_date: null
+    publisher: 佳世達科技股份有限公司
+    quote_check: found
+    title: 經營績效
+    url: https://esg.qisda.com/responsible-governance/Organization-and-Operation-of-Corporate-Governance/operating-performance
+  tw.2352#e9:
+    locator: 四大營運方針：加速解決方案開發
+    published_date: null
+    publisher: 佳世達科技股份有限公司
+    quote_check: found
+    title: 經營績效
+    url: https://esg.qisda.com/responsible-governance/Organization-and-Operation-of-Corporate-Governance/operating-performance

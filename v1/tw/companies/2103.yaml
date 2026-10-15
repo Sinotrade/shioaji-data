@@ -8,7 +8,32 @@ industry:
   l0_code: '11'
   l0_name: 橡膠工業
   l0_name_en: Rubber
-primary_chain_position: unknown
+  l1: materials
+  l1_name: 原物料
+  l1_name_en: Materials
+  l2: mat.other
+  l2_name: 其他原物料
+  l2_name_en: Other Materials
+  l3: matl.rubber
+  l3_name: 橡膠與輪胎
+  l3_name_en: Rubber & Tires
+chain: chain.petrochem
+primary_chain_position: midstream
+summary_short: 製造與銷售合成橡膠及熱可塑性彈性體，供輪胎、工業與醫療材料使用。
+summary_long: 台橡以合成橡膠製造與銷售為核心，2025年合成橡膠占營收98%，非合成橡膠應用材料占2%。主要產品包括SBR、SSBR、BR、NBR及含SEBS的熱可塑性彈性體。SBR用於輪胎、鞋底與輸送帶，SSBR用於節能及高性能輪胎，BR用於輪胎與塑膠改質，NBR用於油管、油封等工業製品；VECTOR SEBS則涵蓋醫療管材、輸液袋膜等用途。主要製造子公司包括申華化學、台橡宇部（南通）、台橡（南通）實業及美國TSRC Specialty Materials LLC。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_rubber
+  name: 合成橡膠
+  period: '2025'
+  revenue_share_pct: 98
+- evidence_ids:
+  - e1
+  id: seg_applied
+  name: 非合成橡膠／應用材料
+  period: '2025'
+  revenue_share_pct: 2
 relations:
   customers:
   - as_of: 2011-12
@@ -21,6 +46,63 @@ relations:
     evidence_level: primary
     id: tw.2105
     name: 正新
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接子公司；乳聚丁苯橡膠製造及銷售
+    details:
+    - 間接子公司；乳聚丁苯橡膠製造及銷售
+    edge: ee60d76125aca
+    evidence_level: primary
+    id: org.shen-hua-chemical-industrial
+    name: 申華化學工業有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接子公司；熱可塑性彈性體製造及銷售
+    details:
+    - 間接子公司；熱可塑性彈性體製造及銷售
+    edge: e78d835120fe2
+    evidence_level: primary
+    id: org.tsrc-nantong-industrial
+    name: 台橡（南通）實業有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 美國間接子公司；熱可塑性彈性體製造及銷售
+    details:
+    - 美國間接子公司；熱可塑性彈性體製造及銷售
+    edge: e05fa4678ae94
+    evidence_level: primary
+    id: org.tsrc-specialty-materials
+    name: TSRC Specialty Materials LLC
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接子公司；順丁橡膠製造及銷售
+    details:
+    - 間接子公司；順丁橡膠製造及銷售
+    edge: e9e25319f809c
+    evidence_level: primary
+    id: org.tsrc-ube-nantong-chemical-industrial
+    name: 台橡宇部（南通）化學工業有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -44,7 +126,84 @@ website: www.tsrc.com.tw
 tax_id: '03553737'
 incorporated: '1973-11-22'
 listed: '1982-09-25'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-15'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2103#e1:
+    locator: 印刷第65頁／PDF第67頁，營業比重；單位為新台幣千元
+    published_date: '2026-03-31'
+    publisher: 台橡股份有限公司
+    quote_check: found
+    title: 台橡2025年報
+    url: https://www.tsrc.com.tw/app/uploads/2026/05/2025%E4%B8%AD%E6%96%87%E5%B9%B4%E5%A0%B1.pdf
+  tw.2103#e10:
+    locator: 第18頁，附註十一「列入合併財務報告之子公司」，Polybus投資台橡南通實業列
+    published_date: null
+    publisher: 台橡股份有限公司
+    quote_check: unreachable
+    title: 台橡股份有限公司及子公司2026年第二季合併財務報告
+    url: https://www.tsrc.com.tw/app/uploads/2026/08/2026Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1_%E4%B8%AD.pdf
+  tw.2103#e11:
+    locator: 第18頁附註十一子公司表；第60頁附表七列註冊地Texas, U.S.A.
+    published_date: null
+    publisher: 台橡股份有限公司
+    quote_check: unreachable
+    title: 台橡股份有限公司及子公司2026年第二季合併財務報告
+    url: https://www.tsrc.com.tw/app/uploads/2026/08/2026Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1_%E4%B8%AD.pdf
+  tw.2103#e2:
+    locator: SBR產品頁，應用
+    published_date: null
+    publisher: 台橡股份有限公司
+    quote_check: found
+    title: SBR | Taipol
+    url: https://www.tsrc.com.tw/tw/products-services/sbr/
+  tw.2103#e3:
+    locator: SSBR產品頁，應用
+    published_date: null
+    publisher: 台橡股份有限公司
+    quote_check: found
+    title: SSBR | Taipol
+    url: https://www.tsrc.com.tw/tw/products-services/ssbr/
+  tw.2103#e4:
+    locator: BR產品頁，應用
+    published_date: null
+    publisher: 台橡股份有限公司
+    quote_check: found
+    title: BR | Taipol
+    url: https://www.tsrc.com.tw/tw/products-services/br/
+  tw.2103#e5:
+    locator: NBR產品頁，應用
+    published_date: null
+    publisher: 台橡股份有限公司
+    quote_check: found
+    title: NBR | Taipol
+    url: https://www.tsrc.com.tw/tw/products-services/nbr/
+  tw.2103#e6:
+    locator: 印刷第65頁／PDF第67頁，業務主要內容及產品項目
+    published_date: '2026-03-31'
+    publisher: 台橡股份有限公司
+    quote_check: found
+    title: 台橡2025年報
+    url: https://www.tsrc.com.tw/app/uploads/2026/05/2025%E4%B8%AD%E6%96%87%E5%B9%B4%E5%A0%B1.pdf
+  tw.2103#e7:
+    locator: 您的醫療解決方案夥伴、VECTOR SEBS及應用段落
+    published_date: null
+    publisher: 台橡股份有限公司
+    quote_check: found
+    title: 醫療解決方案
+    url: https://www.tsrc.com.tw/tw/products-services/medical-solution/
+  tw.2103#e8:
+    locator: 第18頁，附註十一「列入合併財務報告之子公司」，Polybus投資申華化學列
+    published_date: null
+    publisher: 台橡股份有限公司
+    quote_check: unreachable
+    title: 台橡股份有限公司及子公司2026年第二季合併財務報告
+    url: https://www.tsrc.com.tw/app/uploads/2026/08/2026Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1_%E4%B8%AD.pdf
+  tw.2103#e9:
+    locator: 第18頁，附註十一「列入合併財務報告之子公司」，Polybus投資台橡宇部列
+    published_date: null
+    publisher: 台橡股份有限公司
+    quote_check: unreachable
+    title: 台橡股份有限公司及子公司2026年第二季合併財務報告
+    url: https://www.tsrc.com.tw/app/uploads/2026/08/2026Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1_%E4%B8%AD.pdf

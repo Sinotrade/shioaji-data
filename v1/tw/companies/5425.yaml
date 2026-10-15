@@ -8,12 +8,118 @@ industry:
   l0_code: '24'
   l0_name: 半導體業
   l0_name_en: Semiconductor
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.hardware
+  l2_name: 電腦與硬體
+  l2_name_en: Computers & Hardware
+  l3: hw.peripheral
+  l3_name: 周邊與輸入裝置
+  l3_name_en: Peripherals & Input Devices
+primary_chain_position: not_applicable
+summary_short: 經營功率半導體，並透過鼎翰銷售條碼印表機；合併營收以印表機為主。
+summary_long: 台半集團經營整流器與條碼印表機兩項事業，條碼印表機由子公司鼎翰科技經營。2025年合併營收中，條碼印表機占64.21%，整流器占35.79%，依最大營收來源歸入周邊與輸入裝置。台半半導體產品涵蓋整流二極體、MOSFET、TVS保護元件及電源管理IC，其中電源管理產品包括LED驅動器與類比IC。公司另推出1200V碳化矽蕭特基二極體，官方列示應用包含電動車快速充電站，可對應碳化矽元件及電動車功率元件題材。
+segments:
+- evidence_ids:
+  - e1
+  - e2
+  - e3
+  id: seg_printer
+  name: 條碼印表機事業（子公司鼎翰科技）
+  period: '2025'
+  revenue_share_pct: 64.21
+- evidence_ids:
+  - e1
+  id: seg_semiconductor
+  name: 整流器事業
+  period: '2025'
+  revenue_share_pct: 35.79
+main_theme: theme.ev
+themes:
+- stage: materials
+  theme: theme.ev
+  tier: upstream
+- stage: devices
+  theme: theme.sic
+  tier: midstream
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 經營條碼印表機事業的子公司
+    details:
+    - 經營條碼印表機事業的子公司
+    edge: e82182d3d0259
+    evidence_level: primary
+    id: tw.3611
+    name: 鼎翰
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.taiwansemi.com
 tax_id: '34286449'
 incorporated: '1979-01-18'
 listed: '2000-02-21'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-15'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.5425#e1:
+    locator: 第112頁，114年度相關營運部門銷售資訊
+    published_date: '2026-04-19'
+    publisher: 台灣半導體股份有限公司
+    quote_check: found
+    title: 台灣半導體股份有限公司2025年度年報
+    url: https://www.taiwansemi.com/zh_tw/wp-content/uploads/2026/09/IR-Annual-Report-114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf
+  tw.5425#e2:
+    locator: 第1頁，致股東報告書
+    published_date: '2026-04-19'
+    publisher: 台灣半導體股份有限公司
+    quote_check: found
+    title: 台灣半導體股份有限公司2025年度年報
+    url: https://www.taiwansemi.com/zh_tw/wp-content/uploads/2026/09/IR-Annual-Report-114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf
+  tw.5425#e3:
+    locator: 報告書邊界
+    published_date: null
+    publisher: 台灣半導體股份有限公司
+    quote_check: found
+    title: 報告書下載
+    url: https://taiwansemi.com/zh_tw/report-download/
+  tw.5425#e4:
+    locator: 產品組合介紹
+    published_date: null
+    publisher: 台灣半導體股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.taiwansemi.com/zh_tw/company-profile/
+  tw.5425#e5:
+    locator: 產品分類，保護二極管
+    published_date: null
+    publisher: 台灣半導體股份有限公司
+    quote_check: found
+    title: TVS產品篩選
+    url: https://www.taiwansemi.com/zh_tw/product-filter/?category=tvs-18
+  tw.5425#e6:
+    locator: 產品新聞，首段
+    published_date: '2025-07-30'
+    publisher: 台灣半導體股份有限公司
+    quote_check: found
+    title: 1200V Wide-Bandgap SiC Schottky Diodes with MPS design for High-Frequency, High-Reliability Applications
+    url: https://www.taiwansemi.com/en/1200v-wide-bandgap-sic-schottky-diodes/
+  tw.5425#e7:
+    locator: 產品組合介紹
+    published_date: null
+    publisher: 台灣半導體股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.taiwansemi.com/zh_tw/company-profile/
+  tw.5425#e8:
+    locator: Applications
+    published_date: '2025-07-30'
+    publisher: 台灣半導體股份有限公司
+    quote_check: found
+    title: 1200V Wide-Bandgap SiC Schottky Diodes with MPS design for High-Frequency, High-Reliability Applications
+    url: https://www.taiwansemi.com/en/1200v-wide-bandgap-sic-schottky-diodes/
