@@ -8,7 +8,43 @@ industry:
   l0_code: '21'
   l0_name: 化學工業
   l0_name_en: Chemical
-primary_chain_position: unknown
+  l1: materials
+  l1_name: 原物料
+  l1_name_en: Materials
+  l2: mat.chemicals
+  l2_name: 化工
+  l2_name_en: Chemicals
+  l3: chem.petrochem
+  l3_name: 石化與塑膠原料
+  l3_name_en: Petrochemicals & Plastics
+chain: chain.petrochem
+primary_chain_position: midstream
+summary_short: 製造與銷售乙二醇、環氧乙烷、特用化學品及工業氣體。
+summary_long: 東聯主要製造與銷售乙二醇、環氧乙烷、特用化學品及工業氣體。2025年合併營收中，乙二醇事業占66%、特化事業占27%、氣體事業占7%。乙二醇產品可作為聚酯纖維、PET瓶及抗凍劑原料；環氧乙烷衍生物則應用於日化、紡織、建築與塗料等產業。溶劑產品包括乙醇胺、乙二醇丁醚及碳酸乙烯酯，其中碳酸乙烯酯可作為鋰電池電解液與聚碳酸酯原料。公司亦布局電動車電池材料應用，遠東聯石化（揚州）有限公司為其重要子公司。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_eg
+  name: 乙二醇事業（含環氧乙烷）
+  period: '2025'
+  revenue_share_pct: 66
+- evidence_ids:
+  - e2
+  id: seg_sc
+  name: 特化事業
+  period: '2025'
+  revenue_share_pct: 27
+- evidence_ids:
+  - e2
+  id: seg_gas
+  name: 氣體事業
+  period: '2025'
+  revenue_share_pct: 7
+main_theme: theme.ev
+themes:
+- stage: materials
+  theme: theme.ev
+  tier: upstream
 relations:
   customers:
   - as_of: '2026-05-05'
@@ -25,11 +61,117 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 揚州重要營運子公司
+    details:
+    - 揚州重要營運子公司
+    edge: ef942d881e469
+    evidence_level: primary
+    id: org.far-eastern-union-petrochemical-yangzhou
+    name: 遠東聯石化（揚州）有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-21'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資持有之控股子公司
+    details:
+    - 全資持有之控股子公司
+    edge: e2dfc79df7229
+    evidence_level: primary
+    id: org.pacific-petrochemical-holding
+    name: Pacific Petrochemical (Holding) Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.oucc.com.tw
 tax_id: '14057995'
 incorporated: '1975-12-22'
 listed: '1987-10-21'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-15'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1710#e10:
+    locator: 第4頁，2026年未來營運展望
+    published_date: null
+    publisher: 東聯化學股份有限公司
+    quote_check: found
+    title: 東聯化學114年年報
+    url: https://www.oucc.com.tw/storage/system/investor/PDF/annual_report/2025.pdf
+  tw.1710#e11:
+    locator: 第68頁，環保支出資訊之揚州廠區
+    published_date: null
+    publisher: 東聯化學股份有限公司
+    quote_check: found
+    title: 東聯化學114年年報
+    url: https://www.oucc.com.tw/storage/system/investor/PDF/annual_report/2025.pdf
+  tw.1710#e12:
+    locator: 第51頁，轉投資事業持股表；本公司投資欄
+    published_date: null
+    publisher: 東聯化學股份有限公司
+    quote_check: found
+    title: 東聯化學114年年報
+    url: https://www.oucc.com.tw/storage/system/investor/PDF/annual_report/2025.pdf
+  tw.1710#e2:
+    locator: 第54頁，公司及子公司營業比重；114年欄
+    published_date: null
+    publisher: 東聯化學股份有限公司
+    quote_check: found
+    title: 東聯化學114年年報
+    url: https://www.oucc.com.tw/storage/system/investor/PDF/annual_report/2025.pdf
+  tw.1710#e3:
+    locator: 乙二醇產品系列
+    published_date: null
+    publisher: 東聯化學股份有限公司
+    quote_check: found
+    title: 乙二醇事業
+    url: https://www.oucc.com.tw/eg-products
+  tw.1710#e4:
+    locator: 乙二醇（MEG）用途
+    published_date: null
+    publisher: 東聯化學股份有限公司
+    quote_check: found
+    title: 乙二醇事業
+    url: https://www.oucc.com.tw/eg-products
+  tw.1710#e5:
+    locator: 第54頁，公司及子公司目前之商品項目
+    published_date: null
+    publisher: 東聯化學股份有限公司
+    quote_check: found
+    title: 東聯化學114年年報
+    url: https://www.oucc.com.tw/storage/system/investor/PDF/annual_report/2025.pdf
+  tw.1710#e6:
+    locator: 特化產品系列，環氧乙烷衍生物段落
+    published_date: null
+    publisher: 東聯化學股份有限公司
+    quote_check: found
+    title: 特用化學事業
+    url: https://www.oucc.com.tw/sc-products
+  tw.1710#e7:
+    locator: 溶劑化學品
+    published_date: null
+    publisher: 東聯化學股份有限公司
+    quote_check: found
+    title: 特用化學事業
+    url: https://www.oucc.com.tw/sc-products
+  tw.1710#e8:
+    locator: 溶劑化學品，碳酸乙烯酯用途
+    published_date: null
+    publisher: 東聯化學股份有限公司
+    quote_check: found
+    title: 特用化學事業
+    url: https://www.oucc.com.tw/sc-products
+  tw.1710#e9:
+    locator: 電池材料
+    published_date: null
+    publisher: 東聯化學股份有限公司
+    quote_check: found
+    title: 特殊化學品及材料
+    url: https://www.oucc.com.tw/5-product-series-04

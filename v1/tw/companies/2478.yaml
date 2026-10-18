@@ -8,12 +8,252 @@ industry:
   l0_code: '28'
   l0_name: 電子零組件業
   l0_name_en: Electronic Parts and Components
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.passive
+  l3_name: 被動元件
+  l3_name_en: Passive Components
+primary_chain_position: midstream
+summary_short: 以晶片電阻製造與銷售為主，並提供電流感測及電路保護元件。
+summary_long: 大毅以晶片電阻製造與銷售為主要業務，2025年晶片電阻占合併營收88.86%，其他產品占11.14%。產品涵蓋厚膜晶片電阻與排阻、高精密薄膜電阻、電流感測元件、晶片保險絲及靜電抑制器，提供電阻、電流量測與電路保護用途。公司已針對5G及電動車推出被動元件方案，並將產品應用於AI伺服器。集團透過大毅控股及大毅國際分別持有蘇州與東莞生產子公司，另直接持有越南海陽大毅，形成跨區域製造布局。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_resistors
+  name: 晶片電阻
+  period: '2025'
+  revenue_share_pct: 88.86
+- evidence_ids:
+  - e1
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 11.14
+main_theme: theme.ev
+themes:
+- stage: parts
+  theme: theme.ev
+  tier: midstream
+- stage: components
+  theme: theme.ai_server
+  tier: midstream
+- stage: components
+  theme: theme.5g
+  tier: upstream
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%的控股子公司
+    details:
+    - 直接持有100%的控股子公司
+    edge: eaf8cc6aa4600
+    evidence_level: primary
+    id: org.tai-holdings-samoa
+    name: 大毅控股(薩摩亞)股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%的控股子公司
+    details:
+    - 直接持有100%的控股子公司
+    edge: e6e4ff83ec139
+    evidence_level: primary
+    id: org.tai-international-bvi
+    name: 大毅國際(BVI)股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有99.99%的子公司
+    details:
+    - 直接持有99.99%的子公司
+    edge: e5f5483296b93
+    evidence_level: primary
+    id: org.tai-shiang-tai-enterprise
+    name: 祥泰企業有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%的子公司
+    details:
+    - 直接持有100%的子公司
+    edge: e633d1b0b64a3
+    evidence_level: primary
+    id: org.tai-sima-shiang-tai-resistor
+    name: 東莞常平司馬祥泰電阻有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%的子公司
+    details:
+    - 直接持有100%的子公司
+    edge: eef97b670347a
+    evidence_level: primary
+    id: org.tai-smart-technology
+    name: 大毅思瑪特科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持有49%且具有實質控制力的子公司
+    details:
+    - 持有49%且具有實質控制力的子公司
+    edge: e108535e9d72f
+    evidence_level: primary
+    id: org.tai-ta-yih-malaysia
+    name: 大益電子廠(馬)股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過大毅國際間接持有100%的生產子公司
+    details:
+    - 透過大毅國際間接持有100%的生產子公司
+    edge: e731e03d3404d
+    evidence_level: primary
+    id: org.tai-technology-dongguan
+    name: 大毅科技電子(東莞)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%的越南生產子公司
+    details:
+    - 直接持有100%的越南生產子公司
+    edge: e9c2fe0c351d5
+    evidence_level: primary
+    id: org.tai-technology-hai-duong
+    name: 海陽大毅科技責任有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過大毅控股間接持有100%的生產子公司
+    details:
+    - 透過大毅控股間接持有100%的生產子公司
+    edge: ecc72d5e3b795
+    evidence_level: primary
+    id: org.tai-technology-suzhou
+    name: 大毅科技(蘇州)電子有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.tai.com.tw
 tax_id: '23534301'
 incorporated: '1989-12-28'
 listed: '2001-09-17'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-15'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2478#e1:
+    locator: 第68頁，業務範圍／營業比重；封面載公司全名、代號及網址
+    published_date: '2026-04-29'
+    publisher: 大毅科技股份有限公司
+    quote_check: found
+    title: 大毅科技股份有限公司114年度年報
+    url: https://www.tai.com.tw/files/uploads/Download/Investors/Shareholders/2026%E5%B9%B4%E8%82%A1%E6%9C%83%E8%B3%87%E6%96%99/2026-%E5%B9%B4%E5%A0%B1.pdf
+  tw.2478#e10:
+    locator: 第15頁，合併財務報告編製範圍註10
+    published_date: '2026-08-12'
+    publisher: 大毅科技股份有限公司
+    quote_check: found
+    title: 大毅科技股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.tai.com.tw/files/uploads/Download/Investors/Financial%20Release/Fiancial/2026Q2-CH.pdf
+  tw.2478#e11:
+    locator: 第14頁，子公司表：投資公司、子公司、業務性質及115.06.30持股比例；第14頁註7為越南地址
+    published_date: '2026-08-12'
+    publisher: 大毅科技股份有限公司
+    quote_check: found
+    title: 大毅科技股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.tai.com.tw/files/uploads/Download/Investors/Financial%20Release/Fiancial/2026Q2-CH.pdf
+  tw.2478#e2:
+    locator: 永續價值鏈／製造營運與技術研發
+    published_date: null
+    publisher: 大毅科技股份有限公司
+    quote_check: found
+    title: 產品與價值鏈
+    url: https://www.tai.com.tw/TAI_ESG/page/product
+  tw.2478#e3:
+    locator: 第7頁，大毅科技產品簡介／厚膜電阻
+    published_date: '2026-08-12'
+    publisher: 大毅科技股份有限公司
+    quote_check: found
+    title: 2026年8月法人說明會簡報
+    url: https://www.tai.com.tw/files/uploads/Download/Investors/Financial%20Release/Conference/%E6%9C%80%E6%96%B0%E6%B3%95%E8%AA%AA-CH_2026.pdf
+  tw.2478#e4:
+    locator: 第6頁，大毅科技產品簡介／薄膜與保護元件
+    published_date: '2026-08-12'
+    publisher: 大毅科技股份有限公司
+    quote_check: found
+    title: 2026年8月法人說明會簡報
+    url: https://www.tai.com.tw/files/uploads/Download/Investors/Financial%20Release/Conference/%E6%9C%80%E6%96%B0%E6%B3%95%E8%AA%AA-CH_2026.pdf
+  tw.2478#e5:
+    locator: 第5頁，大毅科技產品簡介／電流感測元件
+    published_date: '2026-08-12'
+    publisher: 大毅科技股份有限公司
+    quote_check: found
+    title: 2026年8月法人說明會簡報
+    url: https://www.tai.com.tw/files/uploads/Download/Investors/Financial%20Release/Conference/%E6%9C%80%E6%96%B0%E6%B3%95%E8%AA%AA-CH_2026.pdf
+  tw.2478#e6:
+    locator: 第6頁，大毅科技產品簡介／薄膜與保護元件
+    published_date: '2026-08-12'
+    publisher: 大毅科技股份有限公司
+    quote_check: found
+    title: 2026年8月法人說明會簡報
+    url: https://www.tai.com.tw/files/uploads/Download/Investors/Financial%20Release/Conference/%E6%9C%80%E6%96%B0%E6%B3%95%E8%AA%AA-CH_2026.pdf
+  tw.2478#e7:
+    locator: 第73頁，競爭利基及發展遠景之有利因素／產業前景
+    published_date: '2026-04-29'
+    publisher: 大毅科技股份有限公司
+    quote_check: found
+    title: 大毅科技股份有限公司114年度年報
+    url: https://www.tai.com.tw/files/uploads/Download/Investors/Shareholders/2026%E5%B9%B4%E8%82%A1%E6%9C%83%E8%B3%87%E6%96%99/2026-%E5%B9%B4%E5%A0%B1.pdf
+  tw.2478#e8:
+    locator: 2025年營運績效／低碳產品研發
+    published_date: null
+    publisher: 大毅科技股份有限公司
+    quote_check: found
+    title: 企業發展與永續願景
+    url: https://www.tai.com.tw/TAI_ESG/about2
+  tw.2478#e9:
+    locator: 關係企業；階層式持股架構，並與2026年第二季合併財報第14頁核對
+    published_date: null
+    publisher: 大毅科技股份有限公司
+    quote_check: found
+    title: 企業發展與永續願景
+    url: https://www.tai.com.tw/TAI_ESG/about2

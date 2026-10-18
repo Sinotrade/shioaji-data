@@ -8,12 +8,171 @@ industry:
   l0_code: '24'
   l0_name: 半導體業
   l0_name_en: Semiconductor
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.semi
+  l2_name: 半導體
+  l2_name_en: Semiconductors
+  l3: semi.materials
+  l3_name: 半導體材料與耗材
+  l3_name_en: Semiconductor Materials & Consumables
+chain: chain.semiconductor
+primary_chain_position: upstream
+summary_short: 集團主要銷售半導體CMP研磨墊與耗材，另有健康鞋墊及PU材料。
+summary_long: 頌勝科技集團以半導體研磨墊與耗材為主要營收來源，另有醫療與運動產品、環保黏著劑及PU彈性體業務。2026年9月法說會揭露的2026Q2產品組合中，三類營收占比分別為66%、26%及8%。半導體業務由子公司智勝科技經營，產品包含CMP研磨墊與周邊耗材，可用於晶圓研磨製程。子公司久陞昌企業開發生產功能性健康鞋墊。集團亦提供PU黏著劑、PU彈性體及軟硬PU發泡材料，應用於車燈組立、織布貼合、鞋墊及家具等用途。
+segments:
+- evidence_ids:
+  - e01
+  id: seg_semiconductor
+  name: 半導體研磨墊與耗材
+  period: 2026Q2
+  revenue_share_pct: 66
+- evidence_ids:
+  - e01
+  id: seg_health_sports
+  name: 醫療與運動產品
+  period: 2026Q2
+  revenue_share_pct: 26
+- evidence_ids:
+  - e01
+  id: seg_pu_materials
+  name: 綠色環保黏著劑、PU彈性體等材料
+  period: 2026Q2
+  revenue_share_pct: 8
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 半導體研磨墊與耗材業務子公司
+    details:
+    - 半導體研磨墊與耗材業務子公司
+    edge: e641d6226507f
+    evidence_level: primary
+    id: org.iv-technologies
+    name: 智勝科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 健康鞋墊業務子公司
+    details:
+    - 健康鞋墊業務子公司
+    edge: e0a40688bffe1
+    evidence_level: primary
+    id: org.yuan-chang-enterprise
+    name: 久陞昌企業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 東莞子公司
+    details:
+    - 東莞子公司
+    edge: e878986958264
+    evidence_level: primary
+    id: org.頌勝材料科技-東莞-有限公司
+    name: 頌勝材料科技(東莞)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.pvichem.com.tw/
 tax_id: '22231552'
 incorporated: '1986-07-25'
 listed: '2026-05-07'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-15'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.7768#e01:
+    locator: 第4頁主要產品與占比；第7頁2026Q2產品結構
+    published_date: '2026-09-01'
+    publisher: 頌勝科技材料股份有限公司
+    quote_check: found
+    title: 頌勝科技材料2026年法人說明會
+    url: https://www.pvichem.com.tw/archive/公司治理/法說會簡報/頌勝科技7768_20260901法說會.pdf
+  tw.7768#e02:
+    locator: 上市前業績發表會報導內文
+    published_date: null
+    publisher: 頌勝科技材料股份有限公司
+    quote_check: found
+    title: 上市前業績發表會，晶圓研磨墊新兵頌勝將上市
+    url: https://www.pvichem.com.tw/最新消息/最新消息/上市前業績發表會-，-晶圓研磨墊新兵頌勝將上市
+  tw.7768#e03:
+    locator: 研磨墊產品／應用範圍
+    published_date: null
+    publisher: 頌勝科技材料股份有限公司
+    quote_check: found
+    title: CMP研磨墊產品
+    url: https://www.pvichem.com.tw/產品資訊/半導體耗材設計與開發/CMP
+  tw.7768#e04:
+    locator: 周邊耗材／產品種類
+    published_date: null
+    publisher: 頌勝科技材料股份有限公司
+    quote_check: found
+    title: CMP周邊耗材
+    url: https://www.pvichem.com.tw/產品資訊/半導體耗材設計與開發/CMP--1
+  tw.7768#e05:
+    locator: 公司沿革／1992年
+    published_date: null
+    publisher: 頌勝科技材料股份有限公司
+    quote_check: found
+    title: 頌勝科技官方網站
+    url: https://www.pvichem.com.tw/
+  tw.7768#e06:
+    locator: 產品與應用
+    published_date: null
+    publisher: 頌勝科技材料股份有限公司
+    quote_check: found
+    title: 頌勝科技官方網站
+    url: https://www.pvichem.com.tw/
+  tw.7768#e07:
+    locator: PU彈性體產品說明
+    published_date: null
+    publisher: 頌勝科技材料股份有限公司
+    quote_check: found
+    title: PU彈性體／MDI type
+    url: https://www.pvichem.com.tw/產品資訊/pu彈性體產品與規格/PU彈性體-MDI-type
+  tw.7768#e08:
+    locator: 軟質發泡產品用途
+    published_date: null
+    publisher: 頌勝科技材料股份有限公司
+    quote_check: found
+    title: 軟質發泡／Soft Foam
+    url: https://www.pvichem.com.tw/產品資訊/軟、硬pu發泡產品與規格/軟質發泡
+  tw.7768#e09:
+    locator: 硬質發泡產品特性
+    published_date: null
+    publisher: 頌勝科技材料股份有限公司
+    quote_check: found
+    title: 硬質發泡／Rigid Foam
+    url: https://www.pvichem.com.tw/產品資訊/軟、硬pu發泡產品與規格/硬質發泡
+  tw.7768#e10:
+    locator: 第35頁／員工認股權之子公司分配資訊
+    published_date: null
+    publisher: 頌勝科技材料股份有限公司
+    quote_check: found
+    title: 頌勝科技材料股份有限公司114年度個體財務報告
+    url: https://www.pvichem.com.tw/archive/公司治理/財報/114%20年第四季IFRSs個體財報.pdf
+  tw.7768#e11:
+    locator: 第35頁／員工認股權之子公司分配資訊
+    published_date: null
+    publisher: 頌勝科技材料股份有限公司
+    quote_check: found
+    title: 頌勝科技材料股份有限公司114年度個體財務報告
+    url: https://www.pvichem.com.tw/archive/公司治理/財報/114%20年第四季IFRSs個體財報.pdf
+  tw.7768#e12:
+    locator: 公司沿革／2025年
+    published_date: null
+    publisher: 頌勝科技材料股份有限公司
+    quote_check: found
+    title: 頌勝科技官方網站
+    url: https://www.pvichem.com.tw/

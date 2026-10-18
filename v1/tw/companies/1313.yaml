@@ -8,12 +8,270 @@ industry:
   l0_code: '03'
   l0_name: 塑膠工業
   l0_name_en: Plastics
-primary_chain_position: unknown
+  l1: materials
+  l1_name: 原物料
+  l1_name_en: Materials
+  l2: mat.chemicals
+  l2_name: 化工
+  l2_name_en: Chemicals
+  l3: chem.petrochem
+  l3_name: 石化與塑膠原料
+  l3_name_en: Petrochemicals & Plastics
+chain: chain.petrochem
+primary_chain_position: midstream
+summary_short: 主要產銷可塑劑、苯酐及塑膠樹脂，另有運輸與倉儲物流收入。
+summary_long: 聯成主要產銷苯酐、可塑劑等石化產品，合併收入分為產品銷售及運輸與倉儲物流兩類。官網產品包括泛用可塑劑、特殊可塑劑、聚氯乙烯、酸酐與酸，以及不飽和聚酯樹脂。泛用可塑劑用於PVC加工；特殊可塑劑包含UniHydro UN899。聚氯乙烯產品採乙烯法生產懸浮粉；酸酐與酸可供可塑劑及樹脂等化學品合成；不飽和聚酯樹脂用於玻璃纖維增強複合材料。集團透過中山、珠海、鎮江、泰州、盤錦、南充及馬來西亞子公司經營可塑劑與苯酐產銷。
+segments:
+- evidence_ids:
+  - e_revenue
+  id: seg_products
+  name: 產品銷售
+  period: 2026年上半年
+  revenue_share_pct: null
+- evidence_ids:
+  - e_revenue
+  id: seg_logistics
+  name: 運輸及倉儲物流
+  period: 2026年上半年
+  revenue_share_pct: null
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有的投資控股子公司
+    details:
+    - 直接持有的投資控股子公司
+    edge: e1a525896caf5
+    evidence_level: primary
+    id: org.constant-holdings
+    name: Constant Holdings Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持有的可塑劑及苯酐產銷子公司
+    details:
+    - 間接持有的可塑劑及苯酐產銷子公司
+    edge: edf24527ccc0a
+    evidence_level: primary
+    id: org.nanchong-upc
+    name: 南充聯成化學工業有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持有的可塑劑及苯酐產銷子公司
+    details:
+    - 間接持有的可塑劑及苯酐產銷子公司
+    edge: e66d7a352ced7
+    evidence_level: primary
+    id: org.panjin-upc
+    name: 盤錦聯成化學工業有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持有的可塑劑及苯酐產銷子公司
+    details:
+    - 間接持有的可塑劑及苯酐產銷子公司
+    edge: ebf1c039deba9
+    evidence_level: primary
+    id: org.taizhou-upc
+    name: 泰州聯成化學工業有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 馬來西亞可塑劑及苯酐產銷子公司
+    details:
+    - 馬來西亞可塑劑及苯酐產銷子公司
+    edge: ec639a2dd31c3
+    evidence_level: primary
+    id: org.upc-chemicals-malaysia
+    name: 聯成化學(馬來西亞)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持有的可塑劑及苯酐產銷子公司
+    details:
+    - 間接持有的可塑劑及苯酐產銷子公司
+    edge: eaf5aff5cc2d9
+    evidence_level: primary
+    id: org.zhenjiang-upc
+    name: 鎮江聯成化學工業有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持有的可塑劑及苯酐產銷子公司
+    details:
+    - 間接持有的可塑劑及苯酐產銷子公司
+    edge: e6b2ff86a5b30
+    evidence_level: primary
+    id: org.zhongshan-upc
+    name: 中山聯成化學工業有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持有的可塑劑及苯酐產銷子公司
+    details:
+    - 間接持有的可塑劑及苯酐產銷子公司
+    edge: ec8ce4fd48939
+    evidence_level: primary
+    id: org.zhuhai-upc
+    name: 珠海聯成化學工業有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.upc.com.tw
 tax_id: 04748660
 incorporated: '1976-08-14'
 listed: '1989-03-27'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-15'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1313#e_business:
+    locator: 第10頁，附註一、公司沿革
+    published_date: null
+    publisher: 聯成化學科技股份有限公司
+    quote_check: unreachable
+    title: 民國115及114年第2季合併財務報告
+    url: https://www.upc.com.tw/upload/media/ir/051_Financials/2_Quarterly_Statement/2026/Audit_Report_CHT_2026Q2_consolidated.pdf
+  tw.1313#e_catalog:
+    locator: 特殊可塑劑及酸酐與酸產品清單
+    published_date: null
+    publisher: 聯成化學科技股份有限公司
+    quote_check: not_found
+    title: 公司產品
+    url: https://www.upc.com.tw/zh-TW/Product/products
+  tw.1313#e_names:
+    locator: 業務窗口，各地公司正式名稱；與財報附註十三之簡稱交叉核對
+    published_date: null
+    publisher: 聯成化學科技股份有限公司
+    quote_check: found
+    title: 公司產品及業務窗口
+    url: https://www.upc.com.tw/zh-TW/Product/products
+  tw.1313#e_p1:
+    locator: 泛用可塑劑介紹
+    published_date: null
+    publisher: 聯成化學科技股份有限公司
+    quote_check: found
+    title: 公司產品－泛用可塑劑
+    url: https://www.upc.com.tw/zh-TW/Product/products/Detail/General_Plasticizers/DOP
+  tw.1313#e_p2:
+    locator: 產品介紹
+    published_date: null
+    publisher: 聯成化學科技股份有限公司
+    quote_check: found
+    title: 公司產品－UniHydro UN899
+    url: https://www.upc.com.tw/zh-TW/Product/products/Detail/UniHydro_UN899/UniHydro_UN899
+  tw.1313#e_p3:
+    locator: 產品介紹
+    published_date: null
+    publisher: 聯成化學科技股份有限公司
+    quote_check: found
+    title: 公司產品－聚氯乙烯
+    url: https://www.upc.com.tw/zh-TW/Product/products/Detail/PVC
+  tw.1313#e_p4:
+    locator: 苯酐產品介紹
+    published_date: null
+    publisher: 聯成化學科技股份有限公司
+    quote_check: found
+    title: 公司產品－酸酐與酸／苯酐
+    url: https://www.upc.com.tw/zh-TW/Product/products/Detail/Anhydrides_and_Acids/PA
+  tw.1313#e_p5:
+    locator: 產品介紹
+    published_date: null
+    publisher: 聯成化學科技股份有限公司
+    quote_check: found
+    title: 公司產品－不飽和聚酯樹脂
+    url: https://www.upc.com.tw/zh-TW/Product/products/Detail/UPR
+  tw.1313#e_revenue:
+    locator: 第30頁，附註二五、收入；115年1月1日至6月30日欄
+    published_date: null
+    publisher: 聯成化學科技股份有限公司
+    quote_check: unreachable
+    title: 民國115及114年第2季合併財務報告
+    url: https://www.upc.com.tw/upload/media/ir/051_Financials/2_Quarterly_Statement/2026/Audit_Report_CHT_2026Q2_consolidated.pdf
+  tw.1313#e_s1:
+    locator: 第18頁，附註十三、子公司；投資公司為本公司
+    published_date: null
+    publisher: 聯成化學科技股份有限公司
+    quote_check: unreachable
+    title: 民國115及114年第2季合併財務報告
+    url: https://www.upc.com.tw/upload/media/ir/051_Financials/2_Quarterly_Statement/2026/Audit_Report_CHT_2026Q2_consolidated.pdf
+  tw.1313#e_s2:
+    locator: 第18頁，附註十三、子公司；投資公司為本公司
+    published_date: null
+    publisher: 聯成化學科技股份有限公司
+    quote_check: unreachable
+    title: 民國115及114年第2季合併財務報告
+    url: https://www.upc.com.tw/upload/media/ir/051_Financials/2_Quarterly_Statement/2026/Audit_Report_CHT_2026Q2_consolidated.pdf
+  tw.1313#e_s3:
+    locator: 第18頁，附註十三、子公司；投資公司為Goldendust
+    published_date: null
+    publisher: 聯成化學科技股份有限公司
+    quote_check: unreachable
+    title: 民國115及114年第2季合併財務報告
+    url: https://www.upc.com.tw/upload/media/ir/051_Financials/2_Quarterly_Statement/2026/Audit_Report_CHT_2026Q2_consolidated.pdf
+  tw.1313#e_s4:
+    locator: 第18頁，附註十三、子公司；鎮江聯成列
+    published_date: null
+    publisher: 聯成化學科技股份有限公司
+    quote_check: unreachable
+    title: 民國115及114年第2季合併財務報告
+    url: https://www.upc.com.tw/upload/media/ir/051_Financials/2_Quarterly_Statement/2026/Audit_Report_CHT_2026Q2_consolidated.pdf
+  tw.1313#e_s5:
+    locator: 第18頁，附註十三、子公司；泰州聯成列
+    published_date: null
+    publisher: 聯成化學科技股份有限公司
+    quote_check: unreachable
+    title: 民國115及114年第2季合併財務報告
+    url: https://www.upc.com.tw/upload/media/ir/051_Financials/2_Quarterly_Statement/2026/Audit_Report_CHT_2026Q2_consolidated.pdf
+  tw.1313#e_s6:
+    locator: 第18頁，附註十三、子公司；珠海聯成列
+    published_date: null
+    publisher: 聯成化學科技股份有限公司
+    quote_check: unreachable
+    title: 民國115及114年第2季合併財務報告
+    url: https://www.upc.com.tw/upload/media/ir/051_Financials/2_Quarterly_Statement/2026/Audit_Report_CHT_2026Q2_consolidated.pdf
+  tw.1313#e_s7:
+    locator: 第18頁，附註十三、子公司；盤錦聯成列
+    published_date: null
+    publisher: 聯成化學科技股份有限公司
+    quote_check: unreachable
+    title: 民國115及114年第2季合併財務報告
+    url: https://www.upc.com.tw/upload/media/ir/051_Financials/2_Quarterly_Statement/2026/Audit_Report_CHT_2026Q2_consolidated.pdf
+  tw.1313#e_s8:
+    locator: 第18頁，附註十三、子公司；南充聯成列
+    published_date: null
+    publisher: 聯成化學科技股份有限公司
+    quote_check: unreachable
+    title: 民國115及114年第2季合併財務報告
+    url: https://www.upc.com.tw/upload/media/ir/051_Financials/2_Quarterly_Statement/2026/Audit_Report_CHT_2026Q2_consolidated.pdf

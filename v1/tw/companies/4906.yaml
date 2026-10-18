@@ -8,12 +8,163 @@ industry:
   l0_code: '27'
   l0_name: 通信網路業
   l0_name_en: Communications and Internet
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.network
+  l2_name: 通信網路
+  l2_name_en: Communications & Networking
+  l3: net.wireless
+  l3_name: 無線通訊與射頻
+  l3_name_en: Wireless & RF
+chain: chain.networking
+primary_chain_position: downstream
+summary_short: 正文以無線網路閘道器、網路卡及通訊模組的研發製造與銷售為主。
+summary_long: 正文科技主要產品包括無線網路閘道器、無線網路卡及無線通訊模組。2025年營收以無線網路閘道器占72.42%為主，網路卡占10.91%，無線通訊模組占0.73%，其他占15.94%。公司亦開發固定無線接取設備，其WoMT方案將Wi-Fi 7技術延伸至5G毫米波頻段；另推出400G與800G高速光模組，拓展資料中心應用。研發規劃包含低軌衛星主動陣列天線與無人機長距離通訊裝置。主要子公司包括Gemtek Vietnam、普羅通信及G-Technology Investment。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_gateway
+  name: 無線網路閘道器
+  period: '2025'
+  revenue_share_pct: 72.42
+- evidence_ids:
+  - e1
+  id: seg_card
+  name: 無線網路卡
+  period: '2025'
+  revenue_share_pct: 10.91
+- evidence_ids:
+  - e1
+  id: seg_module
+  name: 無線通訊模組
+  period: '2025'
+  revenue_share_pct: 0.73
+- evidence_ids:
+  - e1
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 15.94
+main_theme: theme.5g
+themes:
+- stage: equipment
+  theme: theme.5g
+  tier: midstream
+- stage: it
+  theme: theme.data_center
+  tier: midstream
+- stage: components
+  theme: theme.drone
+  tier: upstream
+- stage: components
+  theme: theme.leo_satellite
+  tier: upstream
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股50.47%的子公司
+    details:
+    - 直接持股50.47%的子公司
+    edge: e11527e0c8571
+    evidence_level: primary
+    id: org.browan-communications
+    name: 普羅通信股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的子公司
+    details:
+    - 直接持股100%的子公司
+    edge: edeb3c02aab1e
+    evidence_level: primary
+    id: org.g-technology-investment
+    name: G-Technology Investment Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的子公司
+    details:
+    - 直接持股100%的子公司
+    edge: ebbbbe4a79578
+    evidence_level: primary
+    id: org.gemtek-vietnam
+    name: Gemtek Vietnam Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.gemteks.com
 tax_id: '22960571'
 incorporated: '1988-06-29'
 listed: '2003-06-30'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-15'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4906#e1:
+    locator: 印刷頁148，2025 Proportion of each product (service) to total business operations
+    published_date: '2026-04-20'
+    publisher: 正文科技股份有限公司
+    quote_check: found
+    title: Gemtek Technology Co., Ltd. 2025 Annual Report
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52434/2026/RNS/52434_rns_2026-06-10_ebf1885f-0585-4e17-a70d-4d71b8a2f1ee.pdf
+  tw.4906#e2:
+    locator: WoMT與Fixed Wireless Access段落
+    published_date: '2026-02-23'
+    publisher: Gemtek（透過PR Newswire發布）
+    quote_check: found
+    title: Gemtek Unveils Wi-Fi 8 Vision at MWC 2026, Advancing Intelligent, AI-Driven Connectivity
+    url: https://www.prnewswire.co.uk/news-releases/gemtek-unveils-wi-fi-8-vision-at-mwc-2026-advancing-intelligent-ai-driven-connectivity-302694365.html
+  tw.4906#e3:
+    locator: 印刷頁3，Letter to Shareholders，Data Center市場段落
+    published_date: '2026-04-20'
+    publisher: 正文科技股份有限公司
+    quote_check: found
+    title: Gemtek Technology Co., Ltd. 2025 Annual Report
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52434/2026/RNS/52434_rns_2026-06-10_ebf1885f-0585-4e17-a70d-4d71b8a2f1ee.pdf
+  tw.4906#e4:
+    locator: 印刷頁22，計劃開發之新產品L項
+    published_date: '2026-03-16'
+    publisher: 正文科技股份有限公司
+    quote_check: found
+    title: 正文科技股份有限公司公開說明書（發行115年度員工認股權憑證申報用稿本）
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52434/2026/RNS/52434_rns_2026-04-14_4999a6b9-a880-4f92-9602-90ee167ac46a.pdf
+  tw.4906#e5:
+    locator: 印刷頁22，計劃開發之新產品N項；英文括註明示Drone
+    published_date: '2026-03-16'
+    publisher: 正文科技股份有限公司
+    quote_check: found
+    title: 正文科技股份有限公司公開說明書（發行115年度員工認股權憑證申報用稿本）
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52434/2026/RNS/52434_rns_2026-04-14_4999a6b9-a880-4f92-9602-90ee167ac46a.pdf
+  tw.4906#e6:
+    locator: 印刷頁9，關係企業名稱、與公司關係及持股比例表，2025年12月31日
+    published_date: '2026-03-16'
+    publisher: 正文科技股份有限公司
+    quote_check: found
+    title: 正文科技股份有限公司公開說明書（發行115年度員工認股權憑證申報用稿本）
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52434/2026/RNS/52434_rns_2026-04-14_4999a6b9-a880-4f92-9602-90ee167ac46a.pdf
+  tw.4906#e7:
+    locator: 印刷頁9，關係企業名稱、與公司關係及持股比例表，2025年12月31日
+    published_date: '2026-03-16'
+    publisher: 正文科技股份有限公司
+    quote_check: found
+    title: 正文科技股份有限公司公開說明書（發行115年度員工認股權憑證申報用稿本）
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52434/2026/RNS/52434_rns_2026-04-14_4999a6b9-a880-4f92-9602-90ee167ac46a.pdf
+  tw.4906#e8:
+    locator: 印刷頁9，關係企業名稱、與公司關係及持股比例表，2025年12月31日
+    published_date: '2026-03-16'
+    publisher: 正文科技股份有限公司
+    quote_check: found
+    title: 正文科技股份有限公司公開說明書（發行115年度員工認股權憑證申報用稿本）
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52434/2026/RNS/52434_rns_2026-04-14_4999a6b9-a880-4f92-9602-90ee167ac46a.pdf

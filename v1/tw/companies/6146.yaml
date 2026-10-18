@@ -8,12 +8,190 @@ industry:
   l0_code: '31'
   l0_name: 其他電子業
   l0_name_en: Other Electronic
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.services
+  l2_name: 商業服務
+  l2_name_en: Business Services
+  l3: svc.business
+  l3_name: 人力、顧問與專業服務
+  l3_name_en: Staffing, Consulting & Professional Services
+primary_chain_position: not_applicable
+summary_short: 以電子產品檢測認證服務為主，另銷售防磁零組件。
+summary_long: 耕興以電子產品檢測、認證與驗證服務為主要收入來源，另銷售防磁零組件。2025年合併部門收入中，檢測認證及驗證服務為39.19億元，零件事業為5.75億元。主要服務涵蓋電磁相容、產品安全規範、5G NR FR1及FR2終端法規測試，以及6GHz頻段Wi-Fi 6E、7與8產品測試及報告發行。零件事業提供共模扼流圈、功率扼流圈及鐵氧體磁芯。主要營運子公司包含全球檢測與美國子公司，並透過境外投資架構持有昆山、深圳及東莞營運實體。
+segments:
+- evidence_ids:
+  - e1
+  id: testing
+  name: 檢測認證及驗證服務
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e1
+  id: components
+  name: 零件事業部
+  period: '2025'
+  revenue_share_pct: null
+main_theme: theme.5g
+themes:
+- stage: devices
+  theme: theme.5g
+  tier: downstream
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 由深圳耕興持有的間接子公司
+    details:
+    - 由深圳耕興持有的間接子公司
+    edge: e0a727402a49d
+    evidence_level: primary
+    id: org.dongguan-sporton-electronic-technology
+    name: 東莞耕興電子科技有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%股權的子公司
+    details:
+    - 直接持有100%股權的子公司
+    edge: e2e038ee96da2
+    evidence_level: primary
+    id: org.international-certification-corp
+    name: 全球檢測股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過Sporton Holding (SAMOA) Inc.持有的間接子公司
+    details:
+    - 透過Sporton Holding (SAMOA) Inc.持有的間接子公司
+    edge: e9d6488765a07
+    evidence_level: primary
+    id: org.kunshan-haoxing-electronic-technology
+    name: 昆山浩興電子科技有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過Sporton Investment (SAMOA) Inc.持有的間接子公司
+    details:
+    - 透過Sporton Investment (SAMOA) Inc.持有的間接子公司
+    edge: e14ec45272a8b
+    evidence_level: primary
+    id: org.shenzhen-sporton-electronic-technology
+    name: 深圳耕興電子科技有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%股權的美國子公司
+    details:
+    - 直接持有100%股權的美國子公司
+    edge: eec089d6268a1
+    evidence_level: primary
+    id: org.sporton-international-usa
+    name: Sporton International (USA) Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.sporton.com.tw
 tax_id: '97491093'
 incorporated: '1997-05-01'
 listed: '2002-01-23'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-15'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6146#e1:
+    locator: 第48頁，附註二八、部門資訊；114年度部門收入，單位為新台幣仟元
+    published_date: null
+    publisher: 耕興股份有限公司
+    quote_check: unreachable
+    title: 耕興股份有限公司及子公司民國114年度合併財務報告
+    url: https://www.sporton.com.tw/UserFiles/Fin/114Consolidated%20Financial%20Statement(zh-TW).pdf
+  tw.6146#e10:
+    locator: 第29頁，附註十、子公司；投資公司與子公司對照表
+    published_date: null
+    publisher: 耕興股份有限公司
+    quote_check: unreachable
+    title: 耕興股份有限公司及子公司民國114年度合併財務報告
+    url: https://www.sporton.com.tw/UserFiles/Fin/114Consolidated%20Financial%20Statement(zh-TW).pdf
+  tw.6146#e11:
+    locator: 第29頁，附註十、子公司；投資公司與子公司對照表
+    published_date: null
+    publisher: 耕興股份有限公司
+    quote_check: unreachable
+    title: 耕興股份有限公司及子公司民國114年度合併財務報告
+    url: https://www.sporton.com.tw/UserFiles/Fin/114Consolidated%20Financial%20Statement(zh-TW).pdf
+  tw.6146#e2:
+    locator: 主要產品，第1及第2項
+    published_date: null
+    publisher: 耕興股份有限公司
+    quote_check: found
+    title: 公司現況
+    url: https://www.sporton.com.tw/page.aspx?uid=137
+  tw.6146#e3:
+    locator: 主要產品，第4項
+    published_date: null
+    publisher: 耕興股份有限公司
+    quote_check: found
+    title: 公司現況
+    url: https://www.sporton.com.tw/page.aspx?uid=137
+  tw.6146#e4:
+    locator: 印刷頁碼第4頁，2026年度營運計畫，已完成項目F
+    published_date: '2026-04-27'
+    publisher: Sporton International Inc.
+    quote_check: found
+    title: 2025 Annual Report
+    url: https://www.sporton.com.tw/UserFiles/FIN/2025financial_statement_Year_en2.pdf
+  tw.6146#e5:
+    locator: 主要產品，第5項
+    published_date: null
+    publisher: 耕興股份有限公司
+    quote_check: found
+    title: 公司現況
+    url: https://www.sporton.com.tw/page.aspx?uid=137
+  tw.6146#e6:
+    locator: 部門簡介，主要產品
+    published_date: null
+    publisher: 耕興股份有限公司
+    quote_check: found
+    title: 零件事業－部門簡介
+    url: https://www.sporton.com.tw/page.aspx?uid=141
+  tw.6146#e7:
+    locator: 第29頁，附註十、子公司；投資公司為耕興股份有限公司，114年12月31日持股欄
+    published_date: null
+    publisher: 耕興股份有限公司
+    quote_check: unreachable
+    title: 耕興股份有限公司及子公司民國114年度合併財務報告
+    url: https://www.sporton.com.tw/UserFiles/Fin/114Consolidated%20Financial%20Statement(zh-TW).pdf
+  tw.6146#e8:
+    locator: 第29頁，附註十、子公司；投資公司為耕興股份有限公司，114年12月31日持股欄
+    published_date: null
+    publisher: 耕興股份有限公司
+    quote_check: unreachable
+    title: 耕興股份有限公司及子公司民國114年度合併財務報告
+    url: https://www.sporton.com.tw/UserFiles/Fin/114Consolidated%20Financial%20Statement(zh-TW).pdf
+  tw.6146#e9:
+    locator: 第29頁，附註十、子公司；投資公司與子公司對照表
+    published_date: null
+    publisher: 耕興股份有限公司
+    quote_check: unreachable
+    title: 耕興股份有限公司及子公司民國114年度合併財務報告
+    url: https://www.sporton.com.tw/UserFiles/Fin/114Consolidated%20Financial%20Statement(zh-TW).pdf

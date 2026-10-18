@@ -8,12 +8,89 @@ industry:
   l0_code: '28'
   l0_name: 電子零組件業
   l0_name_en: Electronic Parts and Components
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.connector
+  l3_name: 連接器與線材
+  l3_name_en: Connectors & Cables
+chain: chain.server
+primary_chain_position: midstream
+summary_short: 製造伺服器高功率與高速連接器、線材，以及車用與筆電連接器。
+summary_long: 凡甲科技以連接器與連接線為主要產品，涵蓋伺服器高功率、高速傳輸、車用與筆記型電腦等應用。2026年第一季產品營收以伺服器為主，占50%至57%，車用占30%至35%，其餘為筆電。伺服器產品包含高功率連接器、電源線、高速連接器與高速線材，另提供車用及儲能用免焊防水連接器。公司於2026年7月法說會表示，AI伺服器連接器與連接線為出貨主力。其子公司包括ALLTOP HOLDING LTD.及A-LIST INTERNATIONAL LTD.。
+segments:
+- evidence_ids:
+  - e1
+  - e3
+  id: seg_server
+  name: 伺服器連接器與連接線
+  period: 2026Q1
+  revenue_share_pct: null
+- evidence_ids:
+  - e1
+  - e3
+  id: seg_auto
+  name: 車用連接器
+  period: 2026Q1
+  revenue_share_pct: null
+- evidence_ids:
+  - e1
+  - e3
+  id: seg_notebook
+  name: 筆記型電腦連接器
+  period: 2026Q1
+  revenue_share_pct: null
+main_theme: theme.ev
+themes:
+- stage: parts
+  theme: theme.ev
+  tier: midstream
+- stage: components
+  theme: theme.ai_server
+  tier: midstream
 website: https://www.alltopconnector.com
 tax_id: '16691156'
 incorporated: '1998-11-06'
 listed: '2007-11-02'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-15'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3526#e1:
+    locator: 第5頁，基本資料／主要產品
+    published_date: '2026-07-01'
+    publisher: 凡甲科技股份有限公司
+    quote_check: found
+    title: 2026第1季營運成果及未來展望
+    url: https://mopsov.twse.com.tw/nas/STR/352620260701M001.pdf
+  tw.3526#e2:
+    locator: 第12頁，車用及儲能產品
+    published_date: '2026-07-01'
+    publisher: 凡甲科技股份有限公司
+    quote_check: found
+    title: 2026第1季營運成果及未來展望
+    url: https://mopsov.twse.com.tw/nas/STR/352620260701M001.pdf
+  tw.3526#e3:
+    locator: 內文第2段，第一季產品營收組成
+    published_date: '2026-07-01'
+    publisher: 經濟日報
+    quote_check: found
+    title: 凡甲法說會／衝刺 AI 伺服器與車用儲能 全年業績續戰新高
+    url: https://money.udn.com/money/story/5612/9600615
+  tw.3526#e4:
+    locator: 總經理張一偉說明下半年至2027年展望段落
+    published_date: '2026-07-01'
+    publisher: 經濟日報
+    quote_check: found
+    title: 凡甲法說會／衝刺 AI 伺服器與車用儲能 全年業績續戰新高
+    url: https://money.udn.com/money/story/5612/9600615
+  tw.3526#e5:
+    locator: 內文第2段，公司法說會說明
+    published_date: '2026-01-08'
+    publisher: 自由時報
+    quote_check: found
+    title: 凡甲2025全年營收創新高 看好今年伺服器業績大增三成
+    url: https://ec.ltn.com.tw/article/breakingnews/5303848

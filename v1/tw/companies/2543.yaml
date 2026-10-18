@@ -8,12 +8,121 @@ industry:
   l0_code: '14'
   l0_name: 建材營造業
   l0_name_en: Building Material and Construction
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.construction
+  l2_name: 營建與工程
+  l2_name_en: Engineering & Construction
+  l3: cons.engineering
+  l3_name: 工程與統包
+  l3_name_en: Engineering & EPC
+primary_chain_position: midstream
+summary_short: 主要承攬土木建築及海事工程，合併業務另含預拌混凝土產銷。
+summary_long: 皇昌營造以承攬土木與建築工程為主要業務，工程範圍涵蓋捷運、鐵路地下化、國道交流道及社會住宅統包，並承作防波堤、圍堤造地與液化天然氣卸收碼頭等海事工程。2025年度營收組成為營建工程89.34%、混凝土銷售10.54%、租賃收入0.12%。合併子公司包括從事預拌混凝土產銷的和昌國際工業，以及經營擋土支撐與土方工程的宏昌基礎科技；截至2026年3月底，持股分別為49%與90%，和昌因具實質控制力而納入合併報表。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_engineering
+  name: 營建工程
+  period: '2025'
+  revenue_share_pct: 89.34
+- evidence_ids:
+  - e2
+  id: seg_concrete
+  name: 混凝土銷售
+  period: '2025'
+  revenue_share_pct: 10.54
+- evidence_ids:
+  - e2
+  id: seg_rental
+  name: 租賃收入
+  period: '2025'
+  revenue_share_pct: 0.12
+relations:
+  subsidiaries:
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股49%的受控制子公司；預拌混凝土產銷
+    details:
+    - 持股49%的受控制子公司；預拌混凝土產銷
+    edge: e795e681d60db
+    evidence_level: primary
+    id: org.ho-chang-international-industry
+    name: 和昌國際工業(股)公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股90%的子公司；擋土支撐及土方工程
+    details:
+    - 持股90%的子公司；擋土支撐及土方工程
+    edge: e2db5e5c1248e
+    evidence_level: primary
+    id: org.hong-chang-foundation-technology
+    name: 宏昌基礎科技(股)公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.hcgc.com.tw
 tax_id: '34342717'
 incorporated: '1981-02-16'
 listed: '1999-10-15'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-15'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2543#e1:
+    locator: 第48頁，業務範圍
+    published_date: '2026-04-30'
+    publisher: 皇昌營造股份有限公司
+    quote_check: found
+    title: 皇昌營造股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52151/2026/RNS/52151_rns_2026-08-06_8576ed06-25dc-42f5-88dc-259f38fde32e.pdf
+  tw.2543#e2:
+    locator: 第48頁，各項業務之營業比重；欄序為114年度、113年度
+    published_date: '2026-04-30'
+    publisher: 皇昌營造股份有限公司
+    quote_check: found
+    title: 皇昌營造股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52151/2026/RNS/52151_rns_2026-08-06_8576ed06-25dc-42f5-88dc-259f38fde32e.pdf
+  tw.2543#e3:
+    locator: 第9頁，公司沿革（二）主要承包工程
+    published_date: null
+    publisher: 皇昌營造股份有限公司
+    quote_check: found
+    title: 皇昌營造股份有限公司及其子公司115年及114年第1季合併財務季報告
+    url: https://www.hcgc.com.tw/attach_file/download/info_financial/fef4256fc972a2989c1195240f67a883.pdf
+  tw.2543#e4:
+    locator: 民國115年
+    published_date: null
+    publisher: 皇昌營造股份有限公司
+    quote_check: found
+    title: 公司沿革
+    url: https://www.hcgc.com.tw/about/history
+  tw.2543#e5:
+    locator: 第11頁，列入合併財務報表之子公司；欄序為115.03.31、114.12.31、114.03.31
+    published_date: null
+    publisher: 皇昌營造股份有限公司
+    quote_check: found
+    title: 皇昌營造股份有限公司及其子公司115年及114年第1季合併財務季報告
+    url: https://www.hcgc.com.tw/attach_file/download/info_financial/fef4256fc972a2989c1195240f67a883.pdf
+  tw.2543#e6:
+    locator: 第11頁，列入合併財務報表之子公司；欄序為115.03.31、114.12.31、114.03.31
+    published_date: null
+    publisher: 皇昌營造股份有限公司
+    quote_check: found
+    title: 皇昌營造股份有限公司及其子公司115年及114年第1季合併財務季報告
+    url: https://www.hcgc.com.tw/attach_file/download/info_financial/fef4256fc972a2989c1195240f67a883.pdf
+  tw.2543#e7:
+    locator: 第11頁，子公司表註（1）
+    published_date: null
+    publisher: 皇昌營造股份有限公司
+    quote_check: found
+    title: 皇昌營造股份有限公司及其子公司115年及114年第1季合併財務季報告
+    url: https://www.hcgc.com.tw/attach_file/download/info_financial/fef4256fc972a2989c1195240f67a883.pdf

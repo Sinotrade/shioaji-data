@@ -8,12 +8,77 @@ industry:
   l0_code: '20'
   l0_name: 其他業
   l0_name_en: Others
-primary_chain_position: unknown
+  l1: consumer
+  l1_name: 消費
+  l1_name_en: Consumer
+  l2: cons.discretionary
+  l2_name: 非必需消費
+  l2_name_en: Consumer Discretionary
+  l3: consumer.education
+  l3_name: 教育與生活服務
+  l3_name_en: Education & Personal Services
+primary_chain_position: not_applicable
+summary_short: 以生前契約、生命禮儀服務及塔墓商品銷售為主要業務。
+summary_long: 龍巖以生命服務為主要業務，提供生前契約、禮儀服務及塔墓商品。2025年塔墓銷售及生命禮儀服務占營收89.74%，租賃收入占2.31%，其他占7.95%。生前契約讓消費者預先約定身後事宜；禮儀服務則依逝者心願、家屬共識及宗教信仰規劃流程。白沙灣陵園的設施包括真龍殿及戶外墓園。集團的合併子公司宇錡建設經營殯葬服務，其子公司龍富事業亦經營殯葬服務。
+segments:
+- evidence_ids:
+  - e5
+  id: seg1
+  name: 塔墓銷售及生命禮儀服務
+  period: '2025'
+  revenue_share_pct: 89.74
+- evidence_ids:
+  - e5
+  id: seg2
+  name: 租賃收入
+  period: '2025'
+  revenue_share_pct: 2.31
+- evidence_ids:
+  - e5
+  id: seg3
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 7.95
 website: www.lyls.com.tw
 tax_id: '22415496'
 incorporated: '1987-03-27'
 listed: '2000-10-04'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-15'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.5530#e2:
+    locator: 全方位的生命服務
+    published_date: null
+    publisher: 龍巖股份有限公司
+    quote_check: found
+    title: 關於龍巖｜生命服務品牌與企業介紹
+    url: https://www.lyls.com.tw/about
+  tw.5530#e3:
+    locator: 什麼是生前契約
+    published_date: null
+    publisher: 龍巖股份有限公司
+    quote_check: found
+    title: 龍巖生前契約｜提前規劃，為愛安心準備
+    url: https://www.lyls.com.tw/contract
+  tw.5530#e4:
+    locator: 臨終時需要注意什麼
+    published_date: null
+    publisher: 龍巖股份有限公司
+    quote_check: found
+    title: 龍巖禮儀服務｜24小時專業治喪服務
+    url: https://www.lyls.com.tw/funeral
+  tw.5530#e5:
+    locator: 印刷第86頁／PDF第90頁，營運概況之營業比重，114年12月31日
+    published_date: null
+    publisher: 龍巖股份有限公司
+    quote_check: found
+    title: 龍巖股份有限公司114年度年報
+    url: https://www.lyls.com.tw/uploads/InvestorsFinance/4b37877c-907f-4d8a-a98a-11d38ff9ffb0.pdf
+  tw.5530#e6:
+    locator: 園區介紹
+    published_date: null
+    publisher: 龍巖股份有限公司
+    quote_check: found
+    title: 龍巖白沙灣陵園｜龍巖股份有限公司
+    url: https://www.lyls.com.tw/cemetery/park/4

@@ -8,12 +8,144 @@ industry:
   l0_code: '22'
   l0_name: 生技醫療業
   l0_name_en: Biotechnology and Medical Care
-primary_chain_position: unknown
+  l1: health
+  l1_name: 醫療保健
+  l1_name_en: Healthcare
+  l2: health.pharma
+  l2_name: 製藥與生技
+  l2_name_en: Pharmaceuticals & Biotech
+  l3: bio.new_drug
+  l3_name: 新藥研發
+  l3_name_en: New Drug Development
+chain: chain.biotech
+primary_chain_position: midstream
+summary_short: 研發、製造與銷售人用疫苗，主要營收來自腸病毒71型及流感疫苗。
+summary_long: 高端疫苗以人用疫苗研發、製造及銷售為主，主要營收來自腸病毒71型與季節性流感疫苗。2024年腸病毒71型疫苗占營收85%，四價季節流感疫苗占15%。恩穩健腸病毒71型疫苗適用於2個月至未滿6歲兒童；現行產品亦包括福喜健三價流感疫苗，用於預防季節性流感。公司竹北廠具細胞培養、抗原生產、無菌充填及品管放行能力，並持續開發第二代多價型腸病毒疫苗。基亞生物科技為最終母公司，富聿資本為全資子公司。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_ev71
+  name: 腸病毒71型疫苗
+  period: '2024'
+  revenue_share_pct: 85
+- evidence_ids:
+  - e1
+  id: seg_flu
+  name: 四價季節流感疫苗
+  period: '2024'
+  revenue_share_pct: 15
+- evidence_ids:
+  - e1
+  id: seg_other
+  name: 其他
+  period: '2024'
+  revenue_share_pct: 0
+relations:
+  parents:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 最終母公司
+    details:
+    - 最終母公司
+    edge: e7506a0ef4052
+    evidence_level: primary
+    id: tw.3176
+    name: 基亞
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 註銷程序辦理中的子公司
+    details:
+    - 註銷程序辦理中的子公司
+    edge: e12bfa41918a2
+    evidence_level: primary
+    id: org.mvc-bio-supply-sdn-bhd
+    name: MVC Bio Supply Sdn. Bhd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資投資業務子公司
+    details:
+    - 全資投資業務子公司
+    edge: ec753e0d25104
+    evidence_level: primary
+    id: org.富聿資本股份有限公司
+    name: 富聿資本股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.medigenvac.com
 tax_id: '53943057'
 incorporated: '2012-10-12'
 listed: '2018-04-17'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-15'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6547#e1:
+    locator: 第38頁，主要產品之營業比重
+    published_date: '2025-04-30'
+    publisher: 高端疫苗生物製劑股份有限公司
+    quote_check: found
+    title: 高端疫苗113年度年報
+    url: https://www.medigenvac.com/files.php?file=09c23d235fbaebdbea5a749b15cc6735
+  tw.6547#e2:
+    locator: 產品介紹及適用對象
+    published_date: null
+    publisher: 高端疫苗生物製劑股份有限公司
+    quote_check: found
+    title: 恩穩健腸病毒71型疫苗
+    url: https://pro.medigenvac.com/product/1
+  tw.6547#e3:
+    locator: 產品介紹
+    published_date: null
+    publisher: 高端疫苗生物製劑股份有限公司
+    quote_check: found
+    title: 福喜健三價流感疫苗
+    url: https://pro.medigenvac.com/product/3
+  tw.6547#e4:
+    locator: 以新型細胞培養技術，驅動疫苗創新與量產
+    published_date: null
+    publisher: 高端疫苗生物製劑股份有限公司
+    quote_check: found
+    title: 關於我們
+    url: https://pro.medigenvac.com/about
+  tw.6547#e5:
+    locator: 新聞稿首段
+    published_date: '2026-07-15'
+    publisher: 高端疫苗生物製劑股份有限公司
+    quote_check: found
+    title: 高端多價型腸病毒疫苗開發計畫獲CDE/TFDA指標案件，奠基EV71疫苗成功經驗，推進第二代多價型腸病毒疫苗研發
+    url: https://pro.medigenvac.com/news/153
+  tw.6547#e6:
+    locator: 第9頁，公司沿革
+    published_date: null
+    publisher: 高端疫苗生物製劑股份有限公司
+    quote_check: found
+    title: 高端疫苗及子公司115年及114年第2季合併財務報告
+    url: https://pro.medigenvac.com/data/financial/files/1790820090078104584.pdf
+  tw.6547#e7:
+    locator: 第11頁，合併主體及所持股權百分比
+    published_date: null
+    publisher: 高端疫苗生物製劑股份有限公司
+    quote_check: found
+    title: 高端疫苗及子公司115年及114年第2季合併財務報告
+    url: https://pro.medigenvac.com/data/financial/files/1790820090078104584.pdf
+  tw.6547#e8:
+    locator: 第12頁，合併主體註3
+    published_date: null
+    publisher: 高端疫苗生物製劑股份有限公司
+    quote_check: found
+    title: 高端疫苗及子公司115年及114年第2季合併財務報告
+    url: https://pro.medigenvac.com/data/financial/files/1790820090078104584.pdf
