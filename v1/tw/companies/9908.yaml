@@ -8,12 +8,216 @@ industry:
   l0_code: '23'
   l0_name: 油電燃氣業
   l0_name_en: Oil, Gas and Electricity
-primary_chain_position: unknown
+  l1: energy
+  l1_name: 能源
+  l1_name_en: Energy & Utilities
+  l2: energy.traditional
+  l2_name: 傳統能源
+  l2_name_en: Conventional Energy & Utilities
+  l3: energy.gas_utility
+  l3_name: 天然氣公用事業
+  l3_name_en: Gas Utilities
+primary_chain_position: downstream
+summary_short: 以導管天然氣銷售、瓦斯設備裝置及不動產出租取得營收。
+summary_long: 大台北區瓦斯以導管天然氣銷售為主要業務，供應臺北市部分行政區的民生用天然氣。2025年氣體收入占營收69.79%，裝置收入占19.17%，租賃收入占7.89%。公司另提供瓦斯設備裝置工程、瓦斯器具販售與安裝、市內及國內長途陸纜電路出租，以及辦公大樓出租服務。合併子公司包括百勳投資、千島投資、台北太陽能實業、啟業化工與大台北寬頻網路，並透過千島投資及百勳投資間接控制台灣永光能源。
+segments:
+- evidence_ids:
+  - e3
+  id: gas
+  name: 氣體收入
+  period: '2025'
+  revenue_share_pct: 69.79
+- evidence_ids:
+  - e3
+  id: installation
+  name: 裝置收入
+  period: '2025'
+  revenue_share_pct: 19.17
+- evidence_ids:
+  - e3
+  id: appliances
+  name: 器具收入
+  period: '2025'
+  revenue_share_pct: 0.85
+- evidence_ids:
+  - e3
+  id: telecom
+  name: 通信收入
+  period: '2025'
+  revenue_share_pct: 1.78
+- evidence_ids:
+  - e3
+  id: services
+  name: 勞務收入
+  period: '2025'
+  revenue_share_pct: 0.52
+- evidence_ids:
+  - e3
+  id: leasing
+  name: 租賃收入
+  period: '2025'
+  revenue_share_pct: 7.89
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接控制之投資子公司
+    details:
+    - 直接控制之投資子公司
+    edge: e58d115f691da
+    evidence_level: primary
+    id: org.千島投資股份有限公司
+    name: 千島投資股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接及透過百勳投資持有之子公司
+    details:
+    - 直接及透過百勳投資持有之子公司
+    edge: ef92ee5bc8ec8
+    evidence_level: primary
+    id: org.台北太陽能實業股份有限公司
+    name: 台北太陽能實業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過千島投資及百勳投資間接控制
+    details:
+    - 透過千島投資及百勳投資間接控制
+    edge: ed34cbefe0869
+    evidence_level: primary
+    id: org.台灣永光能源股份有限公司
+    name: 台灣永光能源股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 具董事會控制力之子公司
+    details:
+    - 具董事會控制力之子公司
+    edge: eb0fb6678ac29
+    evidence_level: primary
+    id: org.啟業化工股份有限公司
+    name: 啟業化工股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 具實質控制力之網路通訊子公司
+    details:
+    - 具實質控制力之網路通訊子公司
+    edge: e00032869db6a
+    evidence_level: primary
+    id: org.大台北寬頻網路股份有限公司
+    name: 大台北寬頻網路股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接控制之投資子公司
+    details:
+    - 直接控制之投資子公司
+    edge: ec0c2295a167d
+    evidence_level: primary
+    id: org.百勳投資股份有限公司
+    name: 百勳投資股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.taipeigas.com.tw
 tax_id: '11072304'
 incorporated: '1964-10-24'
 listed: '1991-02-06'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-18'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.9908#e10:
+    locator: 第20至21頁，附註十二（一）子公司明細及註三
+    published_date: null
+    publisher: 大台北區瓦斯股份有限公司
+    quote_check: unreachable
+    title: 115年第2季合併財務報告
+    url: https://www.taipeigas.com.tw/ReadFile2?n=%E5%A4%A7%E5%8F%B0%E5%8C%97115Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E9%9B%BB%E5%AD%90%E6%9B%B8.pdf&p=IRFinancial
+  tw.9908#e11:
+    locator: 第20至21頁，附註十二（一）千島投資、百勳投資持有子公司明細及註四
+    published_date: null
+    publisher: 大台北區瓦斯股份有限公司
+    quote_check: unreachable
+    title: 115年第2季合併財務報告
+    url: https://www.taipeigas.com.tw/ReadFile2?n=%E5%A4%A7%E5%8F%B0%E5%8C%97115Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E9%9B%BB%E5%AD%90%E6%9B%B8.pdf&p=IRFinancial
+  tw.9908#e2:
+    locator: 公司簡介第一段
+    published_date: null
+    publisher: 大台北區瓦斯股份有限公司
+    quote_check: found
+    title: 永續經營－公司簡介
+    url: https://www.taipeigas.com.tw/ESG/operate/
+  tw.9908#e3:
+    locator: 第64頁，營業比重表
+    published_date: '2026-04-10'
+    publisher: 大台北區瓦斯股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.taipeigas.com.tw/ReadFile2?n=%E5%A4%A7%E5%8F%B0%E5%8C%97%E7%93%A6%E6%96%AF114%E5%B9%B4%E5%A0%B1.pdf&p=IRShareholder
+  tw.9908#e4:
+    locator: 第64頁，公司目前之商品（服務）項目
+    published_date: '2026-04-10'
+    publisher: 大台北區瓦斯股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.taipeigas.com.tw/ReadFile2?n=%E5%A4%A7%E5%8F%B0%E5%8C%97%E7%93%A6%E6%96%AF114%E5%B9%B4%E5%A0%B1.pdf&p=IRShareholder
+  tw.9908#e5:
+    locator: 第65頁，產業概況
+    published_date: '2026-04-10'
+    publisher: 大台北區瓦斯股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.taipeigas.com.tw/ReadFile2?n=%E5%A4%A7%E5%8F%B0%E5%8C%97%E7%93%A6%E6%96%AF114%E5%B9%B4%E5%A0%B1.pdf&p=IRShareholder
+  tw.9908#e6:
+    locator: 第20頁，附註十二（一）列入合併財務報告之子公司，百勳投資列
+    published_date: null
+    publisher: 大台北區瓦斯股份有限公司
+    quote_check: unreachable
+    title: 115年第2季合併財務報告
+    url: https://www.taipeigas.com.tw/ReadFile2?n=%E5%A4%A7%E5%8F%B0%E5%8C%97115Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E9%9B%BB%E5%AD%90%E6%9B%B8.pdf&p=IRFinancial
+  tw.9908#e7:
+    locator: 第20頁，附註十二（一）列入合併財務報告之子公司，千島投資列
+    published_date: null
+    publisher: 大台北區瓦斯股份有限公司
+    quote_check: unreachable
+    title: 115年第2季合併財務報告
+    url: https://www.taipeigas.com.tw/ReadFile2?n=%E5%A4%A7%E5%8F%B0%E5%8C%97115Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E9%9B%BB%E5%AD%90%E6%9B%B8.pdf&p=IRFinancial
+  tw.9908#e8:
+    locator: 第20頁，附註十二（一）子公司明細及註一
+    published_date: null
+    publisher: 大台北區瓦斯股份有限公司
+    quote_check: unreachable
+    title: 115年第2季合併財務報告
+    url: https://www.taipeigas.com.tw/ReadFile2?n=%E5%A4%A7%E5%8F%B0%E5%8C%97115Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E9%9B%BB%E5%AD%90%E6%9B%B8.pdf&p=IRFinancial
+  tw.9908#e9:
+    locator: 第20至21頁，附註十二（一）子公司明細及註二
+    published_date: null
+    publisher: 大台北區瓦斯股份有限公司
+    quote_check: unreachable
+    title: 115年第2季合併財務報告
+    url: https://www.taipeigas.com.tw/ReadFile2?n=%E5%A4%A7%E5%8F%B0%E5%8C%97115Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E9%9B%BB%E5%AD%90%E6%9B%B8.pdf&p=IRFinancial

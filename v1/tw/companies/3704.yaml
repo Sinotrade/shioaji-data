@@ -8,12 +8,148 @@ industry:
   l0_code: '27'
   l0_name: 通信網路業
   l0_name_en: Communications and Internet
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.network
+  l2_name: 通信網路
+  l2_name_en: Communications & Networking
+  l3: net.telecom_equipment
+  l3_name: 電信設備
+  l3_name_en: Telecom Equipment
+chain: chain.networking
+primary_chain_position: downstream
+summary_short: 透過子公司經營寬頻接取、企業網通設備、雲端網管與客製化製研服務。
+summary_long: 合勤投控透過合勤科技、兆勤科技與盟創科技等子公司經營網通設備及服務。2025年營收中，寬頻設備占76.92%，企業網通設備占15.00%，其他占8.08%。合勤科技的技術方案涵蓋光纖寬頻接取與5G固定無線接取，並展示50G PON光纖技術。兆勤科技提供WiFi 7無線基地台、USG FLEX資安防火牆及Nebula雲端網管平台，服務中小企業網路管理需求；盟創科技則提供客製化製研服務。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_broadband
+  name: 寬頻設備
+  period: '2025'
+  revenue_share_pct: 76.92
+- evidence_ids:
+  - e1
+  id: seg_enterprise
+  name: 企業網通設備
+  period: '2025'
+  revenue_share_pct: 15
+- evidence_ids:
+  - e1
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 8.08
+main_theme: theme.5g
+themes:
+- stage: equipment
+  theme: theme.5g
+  tier: midstream
+relations:
+  subsidiaries:
+  - as_of: '2026-10-15'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 主要子公司及客製化製研服務
+    details:
+    - 主要子公司及客製化製研服務
+    edge: ebceee8248491
+    evidence_level: primary
+    id: org.mitrastar-technology
+    name: 盟創科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-15'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 主要子公司
+    details:
+    - 主要子公司
+    edge: e9a94a5487b0d
+    evidence_level: primary
+    id: org.zyxel-communications
+    name: 合勤科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-15'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 主要子公司
+    details:
+    - 主要子公司
+    edge: ebf4f6f667954
+    evidence_level: primary
+    id: org.zyxel-networks
+    name: 兆勤科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.zyxelgroup.com
 tax_id: '28999503'
 incorporated: '2010-08-16'
 listed: '2010-08-16'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-18'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3704#e1:
+    locator: 第68頁，1.1.2營業比重及公司目前主要之商品項目；欄序為114年度、113年度
+    published_date: '2026-04-17'
+    publisher: 合勤投資控股股份有限公司
+    quote_check: found
+    title: 合勤投資控股股份有限公司民國114年度年報
+    url: https://www.irpro.co/3704/annual/2025/CH/20260527161815-1.pdf
+  tw.3704#e2:
+    locator: 關於合勤投控
+    published_date: null
+    publisher: 合勤投資控股股份有限公司
+    quote_check: found
+    title: 合勤投控官網
+    url: https://www.zyxelgroup.com/
+  tw.3704#e3:
+    locator: 產品與服務首段
+    published_date: null
+    publisher: 合勤投資控股股份有限公司
+    quote_check: found
+    title: 產品與服務
+    url: https://www.zyxelgroup.com/products
+  tw.3704#e4:
+    locator: 展品焦點：50G PON光纖接入解決方案
+    published_date: '2026-02-25'
+    publisher: 合勤投資控股股份有限公司
+    quote_check: found
+    title: 合勤科技 MWC 2026 聚焦 Wi-Fi 8、50G PON 光纖、及雲端智能管理解決方案
+    url: https://www.zyxelgroup.com/Press_Room&show_type=D&id=298
+  tw.3704#e5:
+    locator: 打造智慧化家庭連網體驗
+    published_date: '2026-09-30'
+    publisher: 合勤投資控股股份有限公司
+    quote_check: found
+    title: 合勤科技 Network X 2026 聚焦 AI 寬頻生態系 展示雲端管理到智慧家庭完整布局
+    url: https://www.zyxelgroup.com/Press_Room&show_type=D&id=307
+  tw.3704#e6:
+    locator: 新聞稿首段及副標題
+    published_date: '2026-01-21'
+    publisher: 兆勤科技
+    quote_check: found
+    title: Zyxel 推出首款工業級 WiFi 7 無線基地台，加速企業邁向工業 4.0 轉型
+    url: https://www.zyxel.com/tw/zh/newsroom/press-releases/zyxel-networks-launches-first-industrial-wifi-7-access-point-to-accelerate-industry-4-0
+  tw.3704#e7:
+    locator: The Zyxel Family of Firewalls
+    published_date: null
+    publisher: Zyxel Networks
+    quote_check: found
+    title: Introducing the new USG FLEX Series
+    url: https://info.zyxel.com/usgflex
+  tw.3704#e8:
+    locator: 以AI資安與雲端網管創新獲國際市場肯定
+    published_date: '2026-06-09'
+    publisher: 合勤投資控股股份有限公司
+    quote_check: found
+    title: 兆勤科技榮獲台灣金根獎 研發實力與全球布局獲肯定
+    url: https://www.zyxelgroup.com/Press_Room&show_type=D&id=304

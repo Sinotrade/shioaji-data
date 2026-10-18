@@ -8,12 +8,169 @@ industry:
   l0_code: '17'
   l0_name: 金融保險業
   l0_name_en: Financial and Insurance
-primary_chain_position: unknown
+  l1: finance
+  l1_name: 金融
+  l1_name_en: Financials
+  l2: fin.capital
+  l2_name: 證券與資產管理
+  l2_name_en: Securities & Asset Management
+  l3: fin.securities
+  l3_name: 證券與期貨
+  l3_name_en: Securities & Futures
+chain: chain.finance
+primary_chain_position: not_applicable
+summary_short: 以證券自營投資、經紀與融資服務取得收入，並提供承銷及結構型商品。
+summary_long: 美好證券以證券自營投資、經紀與融資服務為主要業務。2025年合併收入中，投資部占62.44%，客戶夥伴部占34.37%，另有投資銀行、期貨及其他部門收入。經紀服務涵蓋受託買賣、期貨、融資融券及不限用途借貸；自營業務包括有價證券買賣、債券附條件交易與衍生性金融商品。公司亦辦理證券承銷，提供債券＋保本結構型商品與ELN不保本股權連結商品。旗下全資子公司為美好證券投資顧問及美好私募股權。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_investment
+  name: 投資部
+  period: '2025'
+  revenue_share_pct: 62.44
+- evidence_ids:
+  - e3
+  id: seg_brokerage
+  name: 客戶夥伴部
+  period: '2025'
+  revenue_share_pct: 34.37
+- evidence_ids:
+  - e4
+  id: seg_investment_banking
+  name: 投資銀行部
+  period: '2025'
+  revenue_share_pct: 0.5
+- evidence_ids:
+  - e5
+  id: seg_futures
+  name: 期貨部
+  period: '2025'
+  revenue_share_pct: 1.02
+- evidence_ids:
+  - e6
+  id: seg_other
+  name: 其他部門
+  period: '2025'
+  revenue_share_pct: 1.68
+relations:
+  subsidiaries:
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資私募股權子公司
+    details:
+    - 全資私募股權子公司
+    edge: e4318e390d9f1
+    evidence_level: primary
+    id: org.good-private-equity
+    name: 美好私募股權股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資投資顧問子公司
+    details:
+    - 全資投資顧問子公司
+    edge: e3452e74b813b
+    evidence_level: primary
+    id: org.good-securities-investment-consulting
+    name: 美好證券投資顧問股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.goodfinance.com
 tax_id: '22957098'
 incorporated: '1988-07-07'
 listed: '2003-04-21'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-18'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6021#e10:
+    locator: 常見問題解答：什麼是債券＋系列
+    published_date: null
+    publisher: 美好證券股份有限公司
+    quote_check: found
+    title: 債券＋系列
+    url: https://goodfinance.com/asset-management
+  tw.6021#e11:
+    locator: 商品頁標題
+    published_date: null
+    publisher: 美好證券股份有限公司
+    quote_check: found
+    title: ELN不保本股權連結結構型商品
+    url: https://goodfinance.com/eln
+  tw.6021#e12:
+    locator: 印刷第124頁，2026年3月31日關係企業組織圖
+    published_date: '2026-03-31'
+    publisher: 美好證券股份有限公司
+    quote_check: found
+    title: 美好證券股份有限公司2025年報
+    url: https://based-cms.goodfinance.com/app/uploads/2026/06/114%E5%B9%B4%E7%BE%8E%E5%A5%BD%E8%AD%89%E5%88%B8%E5%B9%B4%E5%A0%B1_%E4%B8%AD%E6%96%87%E4%B8%8A%E5%82%B3%E7%89%88%E6%9C%AC.pdf
+  tw.6021#e13:
+    locator: 印刷第124頁，2026年3月31日關係企業組織圖
+    published_date: '2026-03-31'
+    publisher: 美好證券股份有限公司
+    quote_check: found
+    title: 美好證券股份有限公司2025年報
+    url: https://based-cms.goodfinance.com/app/uploads/2026/06/114%E5%B9%B4%E7%BE%8E%E5%A5%BD%E8%AD%89%E5%88%B8%E5%B9%B4%E5%A0%B1_%E4%B8%AD%E6%96%87%E4%B8%8A%E5%82%B3%E7%89%88%E6%9C%AC.pdf
+  tw.6021#e2:
+    locator: 印刷第97頁，主要營業比重表；投資部列，114年度金額（新台幣仟元）及百分比欄
+    published_date: '2026-03-31'
+    publisher: 美好證券股份有限公司
+    quote_check: found
+    title: 美好證券股份有限公司2025年報
+    url: https://based-cms.goodfinance.com/app/uploads/2026/06/114%E5%B9%B4%E7%BE%8E%E5%A5%BD%E8%AD%89%E5%88%B8%E5%B9%B4%E5%A0%B1_%E4%B8%AD%E6%96%87%E4%B8%8A%E5%82%B3%E7%89%88%E6%9C%AC.pdf
+  tw.6021#e3:
+    locator: 印刷第97頁，主要營業比重表；客戶夥伴部列，114年度金額（新台幣仟元）及百分比欄
+    published_date: '2026-03-31'
+    publisher: 美好證券股份有限公司
+    quote_check: found
+    title: 美好證券股份有限公司2025年報
+    url: https://based-cms.goodfinance.com/app/uploads/2026/06/114%E5%B9%B4%E7%BE%8E%E5%A5%BD%E8%AD%89%E5%88%B8%E5%B9%B4%E5%A0%B1_%E4%B8%AD%E6%96%87%E4%B8%8A%E5%82%B3%E7%89%88%E6%9C%AC.pdf
+  tw.6021#e4:
+    locator: 印刷第97頁，主要營業比重表；投資銀行部列，114年度金額（新台幣仟元）及百分比欄
+    published_date: '2026-03-31'
+    publisher: 美好證券股份有限公司
+    quote_check: found
+    title: 美好證券股份有限公司2025年報
+    url: https://based-cms.goodfinance.com/app/uploads/2026/06/114%E5%B9%B4%E7%BE%8E%E5%A5%BD%E8%AD%89%E5%88%B8%E5%B9%B4%E5%A0%B1_%E4%B8%AD%E6%96%87%E4%B8%8A%E5%82%B3%E7%89%88%E6%9C%AC.pdf
+  tw.6021#e5:
+    locator: 印刷第97頁，主要營業比重表；期貨部列，114年度金額（新台幣仟元）及百分比欄
+    published_date: '2026-03-31'
+    publisher: 美好證券股份有限公司
+    quote_check: found
+    title: 美好證券股份有限公司2025年報
+    url: https://based-cms.goodfinance.com/app/uploads/2026/06/114%E5%B9%B4%E7%BE%8E%E5%A5%BD%E8%AD%89%E5%88%B8%E5%B9%B4%E5%A0%B1_%E4%B8%AD%E6%96%87%E4%B8%8A%E5%82%B3%E7%89%88%E6%9C%AC.pdf
+  tw.6021#e6:
+    locator: 印刷第97頁，主要營業比重表；其他部門列，114年度金額（新台幣仟元）及百分比欄
+    published_date: '2026-03-31'
+    publisher: 美好證券股份有限公司
+    quote_check: found
+    title: 美好證券股份有限公司2025年報
+    url: https://based-cms.goodfinance.com/app/uploads/2026/06/114%E5%B9%B4%E7%BE%8E%E5%A5%BD%E8%AD%89%E5%88%B8%E5%B9%B4%E5%A0%B1_%E4%B8%AD%E6%96%87%E4%B8%8A%E5%82%B3%E7%89%88%E6%9C%AC.pdf
+  tw.6021#e7:
+    locator: 印刷第98頁，公司目前之商品（服務）項目
+    published_date: '2026-03-31'
+    publisher: 美好證券股份有限公司
+    quote_check: not_found
+    title: 美好證券股份有限公司2025年報
+    url: https://based-cms.goodfinance.com/app/uploads/2026/06/114%E5%B9%B4%E7%BE%8E%E5%A5%BD%E8%AD%89%E5%88%B8%E5%B9%B4%E5%A0%B1_%E4%B8%AD%E6%96%87%E4%B8%8A%E5%82%B3%E7%89%88%E6%9C%AC.pdf
+  tw.6021#e8:
+    locator: 印刷第98頁，公司目前之商品（服務）項目
+    published_date: '2026-03-31'
+    publisher: 美好證券股份有限公司
+    quote_check: not_found
+    title: 美好證券股份有限公司2025年報
+    url: https://based-cms.goodfinance.com/app/uploads/2026/06/114%E5%B9%B4%E7%BE%8E%E5%A5%BD%E8%AD%89%E5%88%B8%E5%B9%B4%E5%A0%B1_%E4%B8%AD%E6%96%87%E4%B8%8A%E5%82%B3%E7%89%88%E6%9C%AC.pdf
+  tw.6021#e9:
+    locator: 印刷第97頁，公司所營業務之主要內容第6項
+    published_date: '2026-03-31'
+    publisher: 美好證券股份有限公司
+    quote_check: not_found
+    title: 美好證券股份有限公司2025年報
+    url: https://based-cms.goodfinance.com/app/uploads/2026/06/114%E5%B9%B4%E7%BE%8E%E5%A5%BD%E8%AD%89%E5%88%B8%E5%B9%B4%E5%A0%B1_%E4%B8%AD%E6%96%87%E4%B8%8A%E5%82%B3%E7%89%88%E6%9C%AC.pdf

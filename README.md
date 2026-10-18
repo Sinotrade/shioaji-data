@@ -22,7 +22,9 @@ v1/tw/companies/json/<code>.json     單一公司完整資料（雙向關係、�
 v1/tw/relations/edges.json         關係邊表
 v1/tw/themes/themes.json           產業鏈與題材，含成員、階段、上中下游
 v1/tw/market/daily.json            收盤價與市值（每個交易日更新）
-v1/tw/revenue/latest.json          最新月營收
+v1/tw/revenue/latest.json          最新月營收（全部公司一份，方便跨公司篩選）
+v1/tw/financials/json/<code>.json  單一公司財務狀況：monthly_revenue 為歷史月營收（千元，由舊到新，2023-10 起逐月累積不刪減）；之後會加入季度財報
+v1/tw/financials/<code>.md         同一份資料的 Markdown 頁面（月營收表由新到舊）
 v1/tw/companies/<code>.yaml          每家公司一個 YAML（固定檔名，方便閱讀與看歷史變更）
 v1/tw/companies/<code>.md            同一份資料的 Markdown 頁面；README.md 是全部公司索引
 v1/tw/themes/<id>.yaml               每個產業鏈與題材一個 YAML
@@ -37,7 +39,7 @@ v1/tw/themes/<id>.yaml               每個產業鏈與題材一個 YAML
 | --- | --- | --- |
 | 公司基本資料、產業別 | 證交所、櫃買中心開放資料（政府資料開放授權條款第 1 版） | 每個交易日 |
 | 收盤價、市值 | 證交所、櫃買中心開放資料；市值＝收盤價 × 已發行普通股數 | 每個交易日 |
-| 月營收 | 證交所、櫃買中心開放資料 | 每月 |
+| 月營收 | 證交所、櫃買中心開放資料；2023-10 起的歷史由公開資訊觀測站每月營業收入彙總表回補，之後每天以開放資料更新當月（有更正時覆蓋該月） | 每月 |
 | 業務、關係、分類、題材 | AI 依公開文件研究（`rules/research.md`），每筆附出處與逐字引文；再由另一個模型逐條核對、程式驗證引文確實在來源中，意見不同時由第三個模型判定 | 每季與重大事件 |
 
 研究線索參考自 [My-TW-Coverage](https://github.com/Timeverse/My-TW-Coverage)（MIT License），所有內容都經重新查證，不直接沿用其文字；其財務資料（來自 Yahoo Finance）完全不使用。

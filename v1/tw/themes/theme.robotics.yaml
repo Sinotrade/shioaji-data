@@ -200,6 +200,14 @@ members:
   evidence:
   - tw.3019#e6
   confidence: ai_cross_checked
+- id: tw.3022
+  stage: control
+  tier: midstream
+  detail: 自主移動機器人控制器
+  as_of: '2026-10-18'
+  evidence:
+  - tw.3022#e5
+  confidence: ai_cross_checked
 - id: tw.3023
   stage: components
   tier: upstream
@@ -223,6 +231,14 @@ members:
   as_of: '2026-10-14'
   evidence:
   - tw.3406#e6
+  confidence: ai_cross_checked
+- id: tw.3416
+  stage: control
+  tier: midstream
+  detail: 機器人控制器與操作介面
+  as_of: '2025-06-26'
+  evidence:
+  - tw.3416#e8
   confidence: ai_cross_checked
 - id: tw.3577
   stage: control
@@ -407,4 +423,12 @@ members:
   evidence:
   - tw.9917#e13
   confidence: ai_cross_checked
-as_of: '2026-10-15'
+- id: tw.9925
+  stage: system
+  tier: downstream
+  detail: 服務型機器人整機與保全應用
+  as_of: 2026-10
+  evidence:
+  - tw.9925#e8
+  confidence: ai_cross_checked
+as_of: '2026-10-18'

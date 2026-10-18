@@ -8,12 +8,85 @@ industry:
   l0_code: '22'
   l0_name: 生技醫療業
   l0_name_en: Biotechnology and Medical Care
-primary_chain_position: unknown
+  l1: health
+  l1_name: 醫療保健
+  l1_name_en: Healthcare
+  l2: health.pharma
+  l2_name: 製藥與生技
+  l2_name_en: Pharmaceuticals & Biotech
+  l3: bio.generic
+  l3_name: 學名藥與原料藥
+  l3_name_en: Generics & APIs
+chain: chain.biotech
+primary_chain_position: midstream
+summary_short: 以自製與外購藥品銷售為主，核心技術涵蓋吸入劑、鼻噴劑與特殊劑型。
+summary_long: 健喬以自製產品與外購產品銷售為主要收入來源。2025年合併營收中，自製產品占69.52%、外購產品占27.79%，其他占2.69%。集團核心技術平台涵蓋氫氟烷定量噴霧吸入劑、鼻噴劑、發泡錠、性荷爾蒙及顆粒劑。主要子公司包括優良化學製藥、七星化學製藥、瑞安大藥廠、益得生物科技及優良生技醫藥；2026年第二季合併財報亦將人人化學製藥與韓國公司Synmosa Biopharma Korea Limited列為子公司。
+segments:
+- evidence_ids:
+  - e03
+  id: seg.self_manufactured
+  name: 自製產品
+  period: '2025'
+  revenue_share_pct: 69.52
+- evidence_ids:
+  - e04
+  id: seg.purchased
+  name: 外購產品
+  period: '2025'
+  revenue_share_pct: 27.79
+- evidence_ids:
+  - e05
+  id: seg.other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 2.69
 website: http://www.synmosa.com.tw
 tax_id: '43199950'
 incorporated: '1970-08-25'
 listed: '2003-05-12'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-18'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4114#e02:
+    locator: 印刷第2頁，本年度營業計畫概要
+    published_date: null
+    publisher: 健喬信元醫藥生技股份有限公司
+    quote_check: unreachable
+    title: 2025年度公司年報
+    url: https://www.synmosa.com.tw/tw/ImgSynmosa/2025%E5%B9%B4%E5%BA%A6%E5%85%AC%E5%8F%B8%E5%B9%B4%E5%A0%B1.pdf
+  tw.4114#e03:
+    locator: 印刷第87頁，114年度營業比重（合併），自製小計列
+    published_date: null
+    publisher: 健喬信元醫藥生技股份有限公司
+    quote_check: unreachable
+    title: 2025年度公司年報
+    url: https://www.synmosa.com.tw/tw/ImgSynmosa/2025%E5%B9%B4%E5%BA%A6%E5%85%AC%E5%8F%B8%E5%B9%B4%E5%A0%B1.pdf
+  tw.4114#e04:
+    locator: 印刷第87頁，114年度營業比重（合併），外購小計列
+    published_date: null
+    publisher: 健喬信元醫藥生技股份有限公司
+    quote_check: unreachable
+    title: 2025年度公司年報
+    url: https://www.synmosa.com.tw/tw/ImgSynmosa/2025%E5%B9%B4%E5%BA%A6%E5%85%AC%E5%8F%B8%E5%B9%B4%E5%A0%B1.pdf
+  tw.4114#e05:
+    locator: 印刷第87頁，114年度營業比重（合併），其他列
+    published_date: null
+    publisher: 健喬信元醫藥生技股份有限公司
+    quote_check: unreachable
+    title: 2025年度公司年報
+    url: https://www.synmosa.com.tw/tw/ImgSynmosa/2025%E5%B9%B4%E5%BA%A6%E5%85%AC%E5%8F%B8%E5%B9%B4%E5%A0%B1.pdf
+  tw.4114#e06:
+    locator: 關於健喬，集團技術平台介紹
+    published_date: null
+    publisher: 健喬信元醫藥生技股份有限公司
+    quote_check: found
+    title: 關於健喬
+    url: https://www.synmosa.com.tw/tw/AboutUsSynmosa/ugC_Company.asp
+  tw.4114#e07:
+    locator: 特色介紹
+    published_date: null
+    publisher: 健喬信元醫藥生技股份有限公司
+    quote_check: found
+    title: 定量噴霧吸入劑技術平台
+    url: https://www.synmosa.com.tw/tw/AboutUs03/ugC_Company.asp?hidCompanyID=4
