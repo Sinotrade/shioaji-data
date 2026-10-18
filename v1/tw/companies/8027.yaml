@@ -20,10 +20,13 @@ industry:
 chain: chain.semiconductor
 chain_stage:
   agreement: both
-  also: []
-  reason: 雷射設備占48.81%為最大收入，另有電漿設備及包裝材料。
-  stage: wafer_materials
-  stage_name: 矽晶圓、材料與設備
+  also:
+  - stage: wafer_materials
+    stage_name: 矽晶圓與材料
+    tier: upstream
+  reason: 雷射與電漿設備合計占59.56%，另有占18.83%的SMD包裝材料業務。
+  stage: tools
+  stage_name: 設備與廠務
   tier: upstream
 primary_chain_position: upstream
 summary_short: 以半導體雷射、電漿製程設備及集團SMD包裝材料取得營收。

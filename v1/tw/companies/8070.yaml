@@ -20,10 +20,13 @@ industry:
 chain: chain.semiconductor
 chain_stage:
   agreement: both
-  also: []
-  reason: 導線架占合併營收48.91%為最大項，另代理封膠樹脂、基板與設備，均屬材料設備端。
+  also:
+  - stage: tools
+    stage_name: 設備與廠務
+    tier: upstream
+  reason: 合併營收以導線架占48.91%最高，另代理封膠樹酯、基板與封裝設備。
   stage: wafer_materials
-  stage_name: 矽晶圓、材料與設備
+  stage_name: 矽晶圓與材料
   tier: upstream
 primary_chain_position: upstream
 summary_short: 代理半導體封裝材料與設備，並透過子公司製造導線架。

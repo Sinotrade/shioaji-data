@@ -20,8 +20,11 @@ industry:
 chain: chain.semiconductor
 chain_stage:
   agreement: both
-  also: []
-  reason: 影像感測器占營收76.13%，主業為彩色濾光膜與微透鏡的晶圓級光學代工。
+  also:
+  - stage: osat
+    stage_name: 封裝測試
+    tier: downstream
+  reason: 主要提供影像感測器彩色濾光膜與微透鏡晶圓級代工，另提供工程測試服務。
   stage: fab
   stage_name: 晶圓製造
   tier: midstream

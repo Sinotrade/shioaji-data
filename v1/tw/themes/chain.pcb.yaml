@@ -10,6 +10,10 @@ stages:
   name: 銅箔、玻纖布、樹脂
   tier: upstream
   name_en: Materials
+- id: tools
+  name: 設備與廠務
+  tier: upstream
+  name_en: Equipment & Facilities
 - id: ccl
   name: 銅箔基板
   tier: midstream
@@ -24,7 +28,7 @@ stages:
   name_en: Assembly
 members:
 - id: tw.1303
-  detail: 電子材料為最大事業，以銅箔基板為主，兼產玻纖布、銅箔與樹脂，並合併子公司製板業務。
+  detail: 電子材料及電路板為最大事業，涵蓋銅箔基板、玻纖布等材料及子公司製板業務；細項營收未拆分。
   as_of: '2026-10-14'
   evidence: &id001
   - tw.1303#e2
@@ -37,7 +41,7 @@ members:
   tier: midstream
   stage_role: primary
 - id: tw.1303
-  detail: 電子材料為最大事業，以銅箔基板為主，兼產玻纖布、銅箔與樹脂，並合併子公司製板業務。
+  detail: 電子材料及電路板為最大事業，涵蓋銅箔基板、玻纖布等材料及子公司製板業務；細項營收未拆分。
   as_of: '2026-10-14'
   evidence: *id001
   confidence: ai_cross_checked
@@ -46,7 +50,7 @@ members:
   tier: upstream
   stage_role: also
 - id: tw.1802
-  detail: 鏈內業務為電子級玻纖紗與玻纖布，供銅箔基板廠製作PCB材料。
+  detail: 鏈內業務為電子級玻纖布，以自製玻纖紗織造並供應銅箔基板廠。
   as_of: '2026-10-14'
   evidence:
   - tw.1802#e1
@@ -57,7 +61,7 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.1815
-  detail: 玻纖布占營收52.27%，另產玻纖紗，均屬PCB板材上游材料。
+  detail: 玻纖布占營收52.27%，另生產玻纖紗，均屬PCB板材上游材料。
   as_of: '2026-10-14'
   evidence:
   - tw.1815#e2
@@ -68,7 +72,7 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.2313
-  detail: 主要營收來自HDI、軟板等電路板製造，另提供SMT組裝，占營收13%。
+  detail: 主要營收來自HDI、軟板等電路板製造，另有SMT組裝服務，占營收13%。
   as_of: '2026-10-14'
   evidence: &id002
   - tw.2313#e01
@@ -79,7 +83,7 @@ members:
   tier: midstream
   stage_role: primary
 - id: tw.2313
-  detail: 主要營收來自HDI、軟板等電路板製造，另提供SMT組裝，占營收13%。
+  detail: 主要營收來自HDI、軟板等電路板製造，另有SMT組裝服務，占營收13%。
   as_of: '2026-10-14'
   evidence: *id002
   confidence: ai_cross_checked
@@ -88,7 +92,7 @@ members:
   tier: downstream
   stage_role: also
 - id: tw.2316
-  detail: 印刷電路板占營收77.08%，另有電路板置件與整機組裝，占22.92%。
+  detail: 印刷電路板占營收77.08%，另有電路板置件及整機組裝，占22.92%。
   as_of: '2026-10-15'
   evidence: &id003
   - tw.2316#e1
@@ -99,7 +103,7 @@ members:
   tier: midstream
   stage_role: primary
 - id: tw.2316
-  detail: 印刷電路板占營收77.08%，另有電路板置件與整機組裝，占22.92%。
+  detail: 印刷電路板占營收77.08%，另有電路板置件及整機組裝，占22.92%。
   as_of: '2026-10-15'
   evidence: *id003
   confidence: ai_cross_checked
@@ -108,7 +112,7 @@ members:
   tier: downstream
   stage_role: also
 - id: tw.2355
-  detail: 印刷電路板製造、加工及買賣占營業比重約100%，產品包含多層板與HDI板。
+  detail: 印刷電路板製造、加工及買賣占營業比重約100%，產品涵蓋多層板與HDI。
   as_of: '2026-10-15'
   evidence:
   - tw.2355#e2
@@ -118,7 +122,7 @@ members:
   tier: midstream
   stage_role: primary
 - id: tw.2367
-  detail: 主要營收產品均為電路板，以HDI占比最高，另有軟硬結合板及高頻板。
+  detail: 主要營收產品均為電路板，以HDI占比46%最高，另有軟硬結合板等。
   as_of: '2026-10-15'
   evidence:
   - tw.2367#e1
@@ -129,7 +133,7 @@ members:
   tier: midstream
   stage_role: primary
 - id: tw.2368
-  detail: 印刷電路板占合併營收100%，主要製造雙面與多層PCB。
+  detail: 營收100%來自印刷電路板，主要製造雙面及多層PCB。
   as_of: '2026-10-14'
   evidence:
   - tw.2368#e1
@@ -141,7 +145,7 @@ members:
   tier: midstream
   stage_role: primary
 - id: tw.2383
-  detail: 銅箔基板占營收56.24%，黏合片占42.85%，主要供應PCB製造用板材。
+  detail: 銅箔基板占營收56.24%，為最大產品來源，另供應同屬板材環節的黏合片。
   as_of: '2026-10-14'
   evidence:
   - tw.2383#e1
@@ -152,7 +156,7 @@ members:
   tier: midstream
   stage_role: primary
 - id: tw.2402
-  detail: 電子整合元件占營收80%，涵蓋FPC、PCB及類載板製造，另提供PCBA組裝。
+  detail: 電子整合元件占營收80%，涵蓋FPC、PCB及類載板製造，另提供PCBA組裝與測試。
   as_of: '2026-10-15'
   evidence: &id004
   - tw.2402#e8
@@ -165,7 +169,7 @@ members:
   tier: midstream
   stage_role: primary
 - id: tw.2402
-  detail: 電子整合元件占營收80%，涵蓋FPC、PCB及類載板製造，另提供PCBA組裝。
+  detail: 電子整合元件占營收80%，涵蓋FPC、PCB及類載板製造，另提供PCBA組裝與測試。
   as_of: '2026-10-15'
   evidence: *id004
   confidence: ai_cross_checked
@@ -174,7 +178,7 @@ members:
   tier: downstream
   stage_role: also
 - id: tw.2493
-  detail: 主要供應PCB濕式製程設備及耗材，未明示製造指定材料、基板、電路板或從事組裝。
+  detail: 機器設備占營收60.30%，以PCB濕製程設備為主，另銷售電著光阻等製程材料。
   as_of: '2026-10-15'
   evidence:
   - tw.2493#e1
@@ -182,10 +186,11 @@ members:
   - tw.2493#e3
   confidence: ai_cross_checked
   source: classification
-  stage: null
-  tier: null
+  stage: tools
+  tier: upstream
+  stage_role: primary
 - id: tw.3037
-  detail: ABF載板占營收52%，另製造BT載板、HDI、PCB及FPC，均屬電路板與載板製造。
+  detail: ABF載板占營收52%，為最大產品來源，另製造BT載板、HDI及其他電路板。
   as_of: '2026-10-14'
   evidence:
   - tw.3037#e1
@@ -209,17 +214,18 @@ members:
   tier: midstream
   stage_role: primary
 - id: tw.3167
-  detail: 主要供應PCB鑽孔、成型與背鑽設備，屬設備周邊業務，無適用階段。
+  detail: 2025年上半年PCB設備占營收90%，主要供應鑽孔、成型及背鑽設備。
   as_of: '2026-10-13'
   evidence:
   - tw.3167#e1
   - tw.3167#e3
   confidence: ai_cross_checked
   source: classification
-  stage: null
-  tier: null
+  stage: tools
+  tier: upstream
+  stage_role: primary
 - id: tw.3189
-  detail: IC載板占合併營收82.11%，產品包括ABF、BT與FCBGA載板。
+  detail: IC載板占合併營收82.11%，主要供應ABF、BT及FCBGA載板。
   as_of: '2026-10-14'
   evidence:
   - tw.3189#e2
@@ -230,17 +236,18 @@ members:
   tier: midstream
   stage_role: primary
 - id: tw.3485
-  detail: IC載板製程設備占營收94.11%，供應製造設備而非生產載板，無適用階段。
+  detail: IC載板製程設備占營收94.11%，主要供應ABF等載板濕製程設備。
   as_of: '2026-10-13'
   evidence:
   - tw.3485#e2
   - tw.3485#e3
   confidence: ai_cross_checked
   source: classification
-  stage: null
-  tier: null
+  stage: tools
+  tier: upstream
+  stage_role: primary
 - id: tw.3498
-  detail: 主要供應CCL與PCB自動化設備，屬周邊製程設備，未對應所列四個階段。
+  detail: CCL及PCB自動化設備占營收74.30%，主要供應製程設備與系統整合。
   as_of: '2026-10-18'
   evidence:
   - tw.3498#e1
@@ -248,20 +255,22 @@ members:
   - tw.3498#e6
   confidence: ai_cross_checked
   source: classification
-  stage: null
-  tier: null
+  stage: tools
+  tier: upstream
+  stage_role: primary
 - id: tw.3563
-  detail: 主要供應PCB與載板檢測設備及服務，非材料、基板、電路板製造或組裝。
+  detail: 主要收入來自檢測設備及服務，供應PCB與載板光學檢測及電測設備。
   as_of: '2026-10-15'
   evidence:
   - tw.3563#e1
   - tw.3563#e9
   confidence: ai_cross_checked
   source: classification
-  stage: null
-  tier: null
+  stage: tools
+  tier: upstream
+  stage_role: primary
 - id: tw.3645
-  detail: 主要製造PI薄膜，供軟板與軟性銅箔基板使用，屬上游材料。
+  detail: 個體產品銷售全為PI薄膜，供軟板及軟性銅箔基板使用，屬上游材料。
   as_of: '2026-10-18'
   evidence:
   - tw.3645#e1
@@ -273,7 +282,7 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.3715
-  detail: 印刷電路板占營收99.7%，主要製造多層板、HDI等電路板。
+  detail: 印刷電路板占合併營收99.7%，主要製造多層板與HDI等電路板。
   as_of: '2026-10-15'
   evidence:
   - tw.3715#e1
@@ -284,7 +293,7 @@ members:
   tier: midstream
   stage_role: primary
 - id: tw.4542
-  detail: 主要製造輸送爐、烤箱等製程設備，屬周邊設備，未對應所列階段。
+  detail: 輸送爐為最大營收項目，並供應PCB與載板製程烤箱及固化設備。
   as_of: '2026-10-18'
   evidence:
   - tw.4542#e1
@@ -294,10 +303,11 @@ members:
   - tw.4542#e7
   confidence: ai_cross_checked
   source: classification
-  stage: null
-  tier: null
+  stage: tools
+  tier: upstream
+  stage_role: primary
 - id: tw.4722
-  detail: 鏈內業務為高頻高速CCL樹脂與PSMA，屬銅箔基板上游材料。
+  detail: 鏈內業務為高頻高速銅箔基板用樹脂及PSMA，屬上游材料。
   as_of: '2026-10-15'
   evidence:
   - tw.4722#e1
@@ -309,7 +319,7 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.4927
-  detail: 主要製造硬式印刷電路板，多層板占營收77.73%。
+  detail: 製造及銷售硬式印刷電路板，多層板占營收77.73%，為主要收入來源。
   as_of: '2026-10-18'
   evidence:
   - tw.4927#e1
@@ -320,7 +330,7 @@ members:
   tier: midstream
   stage_role: primary
 - id: tw.4939
-  detail: 保護膠片占營收89.45%，屬軟板材料；另有軟性銅箔基板業務。
+  detail: 保護膠片占營收89.45%，以軟板材料為主，另有軟性銅箔基板業務。
   as_of: '2026-10-18'
   evidence: &id005
   - tw.4939#e1
@@ -334,7 +344,7 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.4939
-  detail: 保護膠片占營收89.45%，屬軟板材料；另有軟性銅箔基板業務。
+  detail: 保護膠片占營收89.45%，以軟板材料為主，另有軟性銅箔基板業務。
   as_of: '2026-10-18'
   evidence: *id005
   confidence: ai_cross_checked
@@ -343,7 +353,7 @@ members:
   tier: midstream
   stage_role: also
 - id: tw.4958
-  detail: 營收全數來自印刷電路板，製造軟板、硬板、HDI及IC載板。
+  detail: 各式印刷電路板占營收100%，製造軟板、硬板、HDI及BT、ABF載板。
   as_of: '2026-10-14'
   evidence:
   - tw.4958#e01
@@ -355,7 +365,7 @@ members:
   tier: midstream
   stage_role: primary
 - id: tw.4989
-  detail: 主要製造電解銅箔，供應PCB與銅箔基板所需上游材料。
+  detail: 主要製造及銷售電解銅箔，供PCB與銅箔基板使用，屬上游材料。
   as_of: '2026-10-18'
   evidence:
   - tw.4989#e1
@@ -377,7 +387,7 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.5439
-  detail: 多層印刷電路板占營收98.82%，主要業務為電路板製造。
+  detail: 多層印刷電路板占營收98.82%，主要業務為電路板製造與銷售。
   as_of: '2026-10-15'
   evidence:
   - tw.5439#e2
@@ -389,7 +399,7 @@ members:
   tier: midstream
   stage_role: primary
 - id: tw.5469
-  detail: PCB製造部門收入最大，另有EMS部門提供電路板組裝服務。
+  detail: PCB部門收入最大，以電路板製造為主；另有EMS電路板組裝銷售服務。
   as_of: '2026-10-15'
   evidence: &id006
   - tw.5469#e1
@@ -401,7 +411,7 @@ members:
   tier: midstream
   stage_role: primary
 - id: tw.5469
-  detail: PCB製造部門收入最大，另有EMS部門提供電路板組裝服務。
+  detail: PCB部門收入最大，以電路板製造為主；另有EMS電路板組裝銷售服務。
   as_of: '2026-10-15'
   evidence: *id006
   confidence: ai_cross_checked
@@ -410,7 +420,7 @@ members:
   tier: downstream
   stage_role: also
 - id: tw.5475
-  detail: 玻璃纖維布占營收98.40%，屬銅箔基板與PCB上游材料。
+  detail: 電子級玻纖布占合併營收98.40%，屬銅箔基板及PCB上游材料。
   as_of: '2026-10-15'
   evidence:
   - tw.5475#e1
@@ -421,18 +431,28 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.5498
-  detail: 鑽針占營收53%，另供鑽孔代工及基板銷售，未明確涉及所列製造階段。
+  detail: 鑽針占營收53%，屬PCB製程刀具；另提供鑽孔、雷射與成型加工服務。
   as_of: '2026-10-18'
-  evidence:
+  evidence: &id007
   - tw.5498#e2
   - tw.5498#e3
   - tw.5498#e4
   confidence: ai_cross_checked
   source: classification
-  stage: null
-  tier: null
+  stage: tools
+  tier: upstream
+  stage_role: primary
+- id: tw.5498
+  detail: 鑽針占營收53%，屬PCB製程刀具；另提供鑽孔、雷射與成型加工服務。
+  as_of: '2026-10-18'
+  evidence: *id007
+  confidence: ai_cross_checked
+  source: classification
+  stage: board
+  tier: midstream
+  stage_role: also
 - id: tw.6153
-  detail: 主要從事軟性電路板設計、製造、加工及銷售，屬電路板製造。
+  detail: 主要從事軟性電路板設計、製造、加工及銷售，屬電路板製造階段。
   as_of: '2026-10-18'
   evidence:
   - tw.6153#e01
@@ -443,9 +463,9 @@ members:
   tier: midstream
   stage_role: primary
 - id: tw.6191
-  detail: PCB製造占營收74.93%為主，另有占24.28%的EMS基板及系統組裝業務。
+  detail: PCB製造占營收74.93%為主，另有EMS基板加工與系統組裝業務。
   as_of: '2026-10-15'
-  evidence: &id007
+  evidence: &id008
   - tw.6191#e2
   confidence: ai_cross_checked
   source: classification
@@ -453,16 +473,16 @@ members:
   tier: midstream
   stage_role: primary
 - id: tw.6191
-  detail: PCB製造占營收74.93%為主，另有占24.28%的EMS基板及系統組裝業務。
+  detail: PCB製造占營收74.93%為主，另有EMS基板加工與系統組裝業務。
   as_of: '2026-10-15'
-  evidence: *id007
+  evidence: *id008
   confidence: ai_cross_checked
   source: classification
   stage: assembly
   tier: downstream
   stage_role: also
 - id: tw.6213
-  detail: 銅箔基板占營收72.20%為主，另提供多層壓合基板代工服務。
+  detail: 銅箔基板占營收72.20%為主，另提供多層壓合代工服務。
   as_of: '2026-10-14'
   evidence:
   - tw.6213#e1
@@ -474,9 +494,9 @@ members:
   tier: midstream
   stage_role: primary
 - id: tw.6269
-  detail: 軟式印刷電路板占營收94.91%為主，另提供SMT零件組裝及模組組裝。
+  detail: 軟式印刷電路板占營收94.91%，另提供SMT零件組裝及模組組裝。
   as_of: '2026-10-15'
-  evidence: &id008
+  evidence: &id009
   - tw.6269#e1
   - tw.6269#e2
   confidence: ai_cross_checked
@@ -485,18 +505,18 @@ members:
   tier: midstream
   stage_role: primary
 - id: tw.6269
-  detail: 軟式印刷電路板占營收94.91%為主，另提供SMT零件組裝及模組組裝。
+  detail: 軟式印刷電路板占營收94.91%，另提供SMT零件組裝及模組組裝。
   as_of: '2026-10-15'
-  evidence: *id008
+  evidence: *id009
   confidence: ai_cross_checked
   source: classification
   stage: assembly
   tier: downstream
   stage_role: also
 - id: tw.6274
-  detail: 銅箔基板占營收61.83%為主，另有占3.06%的PCB前段多層壓合代工。
+  detail: 銅箔基板占營收61.83%，另有占3.06%的PCB前段壓合代工。
   as_of: '2026-10-14'
-  evidence:
+  evidence: &id010
   - tw.6274#e01
   - tw.6274#e02
   confidence: ai_cross_checked
@@ -504,8 +524,17 @@ members:
   stage: ccl
   tier: midstream
   stage_role: primary
+- id: tw.6274
+  detail: 銅箔基板占營收61.83%，另有占3.06%的PCB前段壓合代工。
+  as_of: '2026-10-14'
+  evidence: *id010
+  confidence: ai_cross_checked
+  source: classification
+  stage: board
+  tier: midstream
+  stage_role: also
 - id: tw.6438
-  detail: 主要供應載板與PCB自動化設備，屬製程設備周邊業務，所列階段無適合項目。
+  detail: 載板與PCB自動化設備占營收55.94%，主要供應製程搬運與生產設備。
   as_of: '2026-10-18'
   evidence:
   - tw.6438#e2
@@ -514,10 +543,11 @@ members:
   - tw.6438#e5
   confidence: ai_cross_checked
   source: classification
-  stage: null
-  tier: null
+  stage: tools
+  tier: upstream
+  stage_role: primary
 - id: tw.6664
-  detail: 設備銷售占營收96.98%，供應塗佈、壓膜及烘烤設備，未自行製造板材或電路板。
+  detail: 設備銷售占營收96.98%，供應PCB及載板塗佈、壓膜與烘烤設備。
   as_of: '2026-10-13'
   evidence:
   - tw.6664#e1
@@ -525,10 +555,11 @@ members:
   - tw.6664#e14
   confidence: ai_cross_checked
   source: classification
-  stage: null
-  tier: null
+  stage: tools
+  tier: upstream
+  stage_role: primary
 - id: tw.6672
-  detail: 主要生產銅箔基板、黏合片及散熱金屬基板，整體屬PCB基材供應業務。
+  detail: 主要生產銅箔基板、黏合片及散熱金屬基板，整體業務屬PCB基材供應。
   as_of: '2026-10-15'
   evidence:
   - tw.6672#e1
@@ -541,38 +572,50 @@ members:
   tier: midstream
   stage_role: primary
 - id: tw.6727
-  detail: PCB基材製程設備占營收92.78%，供應含浸及塗佈貼合設備，無對應階段。
+  detail: PCB基材製程設備占營收92.78%，供應含浸、塗佈及貼合設備。
   as_of: '2026-10-18'
   evidence:
   - tw.6727#e1
   - tw.6727#e2
   confidence: ai_cross_checked
   source: classification
-  stage: null
-  tier: null
+  stage: tools
+  tier: upstream
+  stage_role: primary
 - id: tw.7795
-  detail: 設備占營收93.74%，主營載板真空壓膜設備；膜材種類不足以判定其他階段。
+  detail: 設備占營收93.74%，主力為ABF載板真空壓膜設備；膜材種類未明。
   as_of: '2026-10-15'
   evidence:
   - tw.7795#e1
   - tw.7795#e2
   confidence: ai_cross_checked
   source: classification
-  stage: null
-  tier: null
+  stage: tools
+  tier: upstream
+  stage_role: primary
 - id: tw.8021
-  detail: 鑽針占營收68%，其餘為鑽孔加工，屬製程刀具及加工服務，未明示製造完整電路板。
+  detail: PCB鑽針占營收68%，屬製程刀具；另有占32%的機械及雷射鑽孔加工。
   as_of: '2026-10-14'
-  evidence:
+  evidence: &id011
   - tw.8021#e2
   - tw.8021#e3
   - tw.8021#e5
   confidence: ai_cross_checked
   source: classification
-  stage: null
-  tier: null
+  stage: tools
+  tier: upstream
+  stage_role: primary
+- id: tw.8021
+  detail: PCB鑽針占營收68%，屬製程刀具；另有占32%的機械及雷射鑽孔加工。
+  as_of: '2026-10-14'
+  evidence: *id011
+  confidence: ai_cross_checked
+  source: classification
+  stage: board
+  tier: midstream
+  stage_role: also
 - id: tw.8039
-  detail: 電子材料占營收96.44%，主要提供軟性銅箔基板及覆蓋膜等軟板基材。
+  detail: 主業為軟性銅箔基板及軟板材料，另供應多層板接合用純膠。
   as_of: '2026-10-14'
   evidence:
   - tw.8039#e1
@@ -583,7 +626,7 @@ members:
   tier: midstream
   stage_role: primary
 - id: tw.8046
-  detail: IC載板業績接近九成，以ABF及BT載板製造為核心，另生產一般PCB。
+  detail: IC載板業績接近九成，以ABF及BT載板製造為主，另生產一般PCB。
   as_of: '2026-10-14'
   evidence:
   - tw.8046#e03
@@ -594,7 +637,7 @@ members:
   tier: midstream
   stage_role: primary
 - id: tw.8155
-  detail: 印刷電路板為最大收入來源，主要製造多層PCB及HDI。
+  detail: 主要收入來自印刷電路板，製造多層PCB與HDI，供伺服器及測試設備使用。
   as_of: '2026-10-15'
   evidence:
   - tw.8155#e1
@@ -605,7 +648,7 @@ members:
   tier: midstream
   stage_role: primary
 - id: tw.8213
-  detail: 印刷電路板占營業比重100%，主要製造顯示器用板及HDI多層板。
+  detail: 印刷電路板占營業比重100%，製造顯示器用板及HDI多層板。
   as_of: '2026-10-18'
   evidence:
   - tw.8213#e1
@@ -616,7 +659,7 @@ members:
   tier: midstream
   stage_role: primary
 - id: tw.8358
-  detail: 電解銅箔占營業比重100%，產品為銅箔基板及印刷電路板的上游原料。
+  detail: 電解銅箔占營業比重100%，供應銅箔基板與印刷電路板所需原料。
   as_of: '2026-10-14'
   evidence:
   - tw.8358#e1

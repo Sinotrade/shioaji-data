@@ -20,10 +20,13 @@ industry:
 chain: chain.semiconductor
 chain_stage:
   agreement: both
-  also: []
-  reason: 自製及代理設備占營收59%，產品涵蓋晶圓加工與CoWoS量測設備。
-  stage: wafer_materials
-  stage_name: 矽晶圓、材料與設備
+  also:
+  - stage: wafer_materials
+    stage_name: 矽晶圓與材料
+    tier: upstream
+  reason: 自製及代理設備占59%，涵蓋晶圓加工與封裝檢測；另供應元件封裝載帶。
+  stage: tools
+  stage_name: 設備與廠務
   tier: upstream
 primary_chain_position: upstream
 summary_short: 製造雷射設備與SMD捲裝材料，並代理半導體及SMT量測設備。

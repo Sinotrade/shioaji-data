@@ -20,11 +20,14 @@ industry:
 chain: chain.pcb
 chain_stage:
   agreement: both
-  also: []
-  reason: 鑽針占營收53%，另供鑽孔代工及基板銷售，未明確涉及所列製造階段。
-  stage: null
-  stage_name: null
-  tier: null
+  also:
+  - stage: board
+    stage_name: 電路板與載板製造
+    tier: midstream
+  reason: 鑽針占營收53%，屬PCB製程刀具；另提供鑽孔、雷射與成型加工服務。
+  stage: tools
+  stage_name: 設備與廠務
+  tier: upstream
 primary_chain_position: upstream
 summary_short: 製造銷售PCB鑽針與銑刀，提供鑽孔代工並銷售基板及耗材。
 summary_long: 凱崴經營印刷電路板製程所需的鑽針、銑刀等切削刀具，提供鑽孔、雷射與成型代工服務，另銷售基板、PP及相關耗材。2025年上半年營收組成中，鑽針占53%，鑽孔及基板合計占47%。鑽針產品包含用於超厚多層板的高縱橫比鍍膜鑽針，以及用於增層法多層板加工的ABF專用鑽針。公司2025年法說資料列示，鑽針與鑽孔代工的應用涵蓋AI伺服器及車載板，鑽孔代工亦涵蓋低軌衛星相關電路板。

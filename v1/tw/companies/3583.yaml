@@ -20,10 +20,13 @@ industry:
 chain: chain.semiconductor
 chain_stage:
   agreement: both
-  also: []
-  reason: 自製設備與晶圓再生合計占52%，其餘主要為設備代理，均屬材料設備環節。
-  stage: wafer_materials
-  stage_name: 矽晶圓、材料與設備
+  also:
+  - stage: wafer_materials
+    stage_name: 矽晶圓與材料
+    tier: upstream
+  reason: 主要經營自製與代理製程設備，另提供12吋晶圓再生服務，跨足材料環節。
+  stage: tools
+  stage_name: 設備與廠務
   tier: upstream
 primary_chain_position: upstream
 summary_short: 以半導體製程設備研發製造、設備代理與12吋晶圓再生服務取得營收。

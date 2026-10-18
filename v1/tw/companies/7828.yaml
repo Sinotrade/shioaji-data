@@ -20,10 +20,13 @@ industry:
 chain: chain.semiconductor
 chain_stage:
   agreement: both
-  also: []
-  reason: 半導體自動化設備占營收98.26%，另供探針卡材料與銅柱封裝元件，皆屬材料設備端。
-  stage: wafer_materials
-  stage_name: 矽晶圓、材料與設備
+  also:
+  - stage: wafer_materials
+    stage_name: 矽晶圓與材料
+    tier: upstream
+  reason: 半導體自動化設備占營收98.26%，另供應探針卡材料包及先進封裝銅柱端子。
+  stage: tools
+  stage_name: 設備與廠務
   tier: upstream
 primary_chain_position: upstream
 summary_short: 主要研製半導體MEMS探針卡自動化設備，另提供銅柱封裝產品與探針卡服務。

@@ -20,10 +20,13 @@ industry:
 chain: chain.semiconductor
 chain_stage:
   agreement: both
-  also: []
-  reason: 濕製程設備占營收65%，另供應蝕刻液與去光阻液，均屬材料與設備環節。
-  stage: wafer_materials
-  stage_name: 矽晶圓、材料與設備
+  also:
+  - stage: wafer_materials
+    stage_name: 矽晶圓與材料
+    tier: upstream
+  reason: 濕製程設備占營收65%為最大宗；另有占18%的蝕刻液、去光阻液等化學材料。
+  stage: tools
+  stage_name: 設備與廠務
   tier: upstream
 primary_chain_position: upstream
 summary_short: 以半導體濕製程設備為主，集團另有化學藥品、設備代理與軟體業務。

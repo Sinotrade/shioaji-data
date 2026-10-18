@@ -24,9 +24,12 @@ chain_stage:
   - stage: distribution
     stage_name: IC 通路與模組
     tier: downstream
-  reason: 主要供應半導體製程材料、化學品、氣體及設備，另代理顯示控制與電源管理IC。
+  - stage: tools
+    stage_name: 設備與廠務
+    tier: upstream
+  reason: 主要供應半導體製程材料、化學品與氣體，另經銷設備及驅動、控制IC。
   stage: wafer_materials
-  stage_name: 矽晶圓、材料與設備
+  stage_name: 矽晶圓與材料
   tier: upstream
 primary_chain_position: upstream
 summary_short: 以半導體、電子構裝、工程塑膠及光電材料與設備通路為主要業務。

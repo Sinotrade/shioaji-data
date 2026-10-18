@@ -20,8 +20,11 @@ industry:
 chain: chain.pcb
 chain_stage:
   agreement: both
-  also: []
-  reason: 銅箔基板占營收61.83%為主，另有占3.06%的PCB前段多層壓合代工。
+  also:
+  - stage: board
+    stage_name: 電路板與載板製造
+    tier: midstream
+  reason: 銅箔基板占營收61.83%，另有占3.06%的PCB前段壓合代工。
   stage: ccl
   stage_name: 銅箔基板
   tier: midstream

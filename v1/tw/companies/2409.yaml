@@ -20,8 +20,11 @@ industry:
 chain: chain.display
 chain_stage:
   agreement: both
-  also: []
-  reason: 顯示科技占營收48%，為最大業務，主要提供顯示面板及車用顯示整合方案。
+  also:
+  - stage: device
+    stage_name: 終端產品
+    tier: downstream
+  reason: 顯示科技占營收48%，以面板為主；另提供Micro LED顯示產品及場域整合應用。
   stage: panel
   stage_name: 面板與模組
   tier: midstream

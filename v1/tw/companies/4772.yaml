@@ -20,10 +20,13 @@ industry:
 chain: chain.semiconductor
 chain_stage:
   agreement: both
-  also: []
-  reason: 設備零件清潔服務占42%為最大單項，另有鍍膜服務與製程特殊氣體。
-  stage: wafer_materials
-  stage_name: 矽晶圓、材料與設備
+  also:
+  - stage: wafer_materials
+    stage_name: 矽晶圓與材料
+    tier: upstream
+  reason: 設備零件清潔服務占營收42%為最大單項，另有鍍膜服務及占36%的特殊氣體業務。
+  stage: tools
+  stage_name: 設備與廠務
   tier: upstream
 primary_chain_position: upstream
 summary_short: 透過弘潔科技提供半導體設備零件服務，並製造與代理電子級特殊氣體。

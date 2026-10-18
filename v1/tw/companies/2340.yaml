@@ -21,10 +21,13 @@ chain: chain.semiconductor
 chain_stage:
   agreement: both
   also:
+  - stage: ip_design
+    stage_name: IP 與 IC 設計
+    tier: upstream
   - stage: osat
     stage_name: 封裝測試
     tier: downstream
-  reason: 感測元件占營收58.90%，以晶粒製造為主；子公司另提供功率元件封裝服務。
+  reason: 感測元件占營收58.90%，具設計與晶粒製造能力；子公司另提供設計及封裝服務。
   stage: fab
   stage_name: 晶圓製造
   tier: midstream

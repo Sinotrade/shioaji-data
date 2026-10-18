@@ -20,10 +20,13 @@ industry:
 chain: chain.semiconductor
 chain_stage:
   agreement: both
-  also: []
-  reason: 核心為銲錫材料，供應BGA錫球及晶圓封裝用錫膏，另代理半導體回焊設備。
+  also:
+  - stage: tools
+    stage_name: 設備與廠務
+    tier: upstream
+  reason: 主業為錫球、錫膏等封裝接合材料；另揭露代理HBM堆疊製程回焊爐。
   stage: wafer_materials
-  stage_name: 矽晶圓、材料與設備
+  stage_name: 矽晶圓與材料
   tier: upstream
 primary_chain_position: upstream
 summary_short: 製造與銷售電子組裝及半導體封裝用錫棒、錫絲、錫膏與錫球。

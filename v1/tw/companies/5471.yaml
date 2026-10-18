@@ -20,8 +20,11 @@ industry:
 chain: chain.semiconductor
 chain_stage:
   agreement: both
-  also: []
-  reason: 主要設計銷售多媒體、微控制器與語音IC，另提供OID光學辨識模組。
+  also:
+  - stage: distribution
+    stage_name: IC 通路與模組
+    tier: downstream
+  reason: 主要設計多媒體、微控制器及語音IC，另提供OID光學辨識模組。
   stage: ip_design
   stage_name: IP 與 IC 設計
   tier: upstream

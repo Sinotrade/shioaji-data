@@ -12,9 +12,13 @@ stages:
   tier: upstream
   name_en: IP & IC Design
 - id: wafer_materials
-  name: 矽晶圓、材料與設備
+  name: 矽晶圓與材料
   tier: upstream
-  name_en: Wafers, Materials & Equipment
+  name_en: Wafers & Materials
+- id: tools
+  name: 設備與廠務
+  tier: upstream
+  name_en: Equipment & Facilities
 - id: fab
   name: 晶圓製造
   tier: midstream
@@ -29,7 +33,7 @@ stages:
   name_en: IC Distribution & Modules
 members:
 - id: tw.1560
-  detail: 測試及再生矽晶圓占營收46%，另供應CMP鑽石碟與研磨耗材，屬材料供應。
+  detail: 測試及再生矽晶圓占營收46%為最大事業，另供應CMP鑽石碟與研磨耗材。
   as_of: '2026-10-13'
   evidence:
   - tw.1560#e1
@@ -41,7 +45,7 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.1773
-  detail: 溶劑系列占營收83.93%，電子級產品供半導體清洗與光阻製程使用，屬化學材料。
+  detail: 溶劑系列占營收83.93%，電子級溶劑用於半導體清洗與光阻製造，屬製程材料。
   as_of: '2026-10-15'
   evidence:
   - tw.1773#e5
@@ -65,7 +69,7 @@ members:
   tier: midstream
   stage_role: primary
 - id: tw.2329
-  detail: 封裝及測試占營收58.66%，為最大業務，提供記憶體及邏輯晶片封測。
+  detail: 封裝及測試占營收58.66%，為最大收入來源，提供記憶體及邏輯晶片封測。
   as_of: '2026-10-15'
   evidence:
   - tw.2329#e1
@@ -76,7 +80,7 @@ members:
   tier: downstream
   stage_role: primary
 - id: tw.2330
-  detail: 晶圓製造占營收約86%，為主要業務，另提供CoWoS先進封裝服務。
+  detail: 晶圓製造占營收約86%為主業，另自行提供CoWoS先進封裝服務。
   as_of: '2026-10-13'
   evidence: &id001
   - tw.2330#e_foundry
@@ -87,7 +91,7 @@ members:
   tier: midstream
   stage_role: primary
 - id: tw.2330
-  detail: 晶圓製造占營收約86%，為主要業務，另提供CoWoS先進封裝服務。
+  detail: 晶圓製造占營收約86%為主業，另自行提供CoWoS先進封裝服務。
   as_of: '2026-10-13'
   evidence: *id001
   confidence: ai_cross_checked
@@ -96,7 +100,7 @@ members:
   tier: downstream
   stage_role: also
 - id: tw.2337
-  detail: Flash與ROM合占營收93.57%，於自有晶圓廠設計製造，另提供晶圓代工。
+  detail: Flash與ROM合占營收93.57%，於自有晶圓廠設計製造記憶體，另提供晶圓代工。
   as_of: '2026-10-14'
   evidence: &id002
   - tw.2337#e01
@@ -109,7 +113,7 @@ members:
   tier: midstream
   stage_role: primary
 - id: tw.2337
-  detail: Flash與ROM合占營收93.57%，於自有晶圓廠設計製造，另提供晶圓代工。
+  detail: Flash與ROM合占營收93.57%，於自有晶圓廠設計製造記憶體，另提供晶圓代工。
   as_of: '2026-10-14'
   evidence: *id002
   confidence: ai_cross_checked
@@ -118,7 +122,7 @@ members:
   tier: upstream
   stage_role: also
 - id: tw.2338
-  detail: 光罩本業約占營收六成，產品供半導體製程使用，屬材料與耗材。
+  detail: 半導體用光罩本業約占營收六成，光罩屬晶圓製程使用的材料與耗材。
   as_of: '2026-10-18'
   evidence:
   - tw.2338#e2
@@ -129,7 +133,7 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.2340
-  detail: 感測元件占營收58.90%，以晶粒製造為主；子公司另提供功率元件封裝服務。
+  detail: 感測元件占營收58.90%，具設計與晶粒製造能力；子公司另提供設計及封裝服務。
   as_of: '2026-10-15'
   evidence: &id003
   - tw.2340#e2
@@ -140,7 +144,16 @@ members:
   tier: midstream
   stage_role: primary
 - id: tw.2340
-  detail: 感測元件占營收58.90%，以晶粒製造為主；子公司另提供功率元件封裝服務。
+  detail: 感測元件占營收58.90%，具設計與晶粒製造能力；子公司另提供設計及封裝服務。
+  as_of: '2026-10-15'
+  evidence: *id003
+  confidence: ai_cross_checked
+  source: classification
+  stage: ip_design
+  tier: upstream
+  stage_role: also
+- id: tw.2340
+  detail: 感測元件占營收58.90%，具設計與晶粒製造能力；子公司另提供設計及封裝服務。
   as_of: '2026-10-15'
   evidence: *id003
   confidence: ai_cross_checked
@@ -149,7 +162,7 @@ members:
   tier: downstream
   stage_role: also
 - id: tw.2344
-  detail: 記憶體合占營收86%，具自有晶圓廠與產品開發團隊，另合併新唐邏輯晶片業務。
+  detail: 客製化與快閃記憶體合占營收86%，具自有晶圓廠、製程技術及記憶體設計能力。
   as_of: '2026-10-14'
   evidence: &id004
   - tw.2344#e1
@@ -161,7 +174,7 @@ members:
   tier: midstream
   stage_role: primary
 - id: tw.2344
-  detail: 記憶體合占營收86%，具自有晶圓廠與產品開發團隊，另合併新唐邏輯晶片業務。
+  detail: 客製化與快閃記憶體合占營收86%，具自有晶圓廠、製程技術及記憶體設計能力。
   as_of: '2026-10-14'
   evidence: *id004
   confidence: ai_cross_checked
@@ -170,7 +183,7 @@ members:
   tier: upstream
   stage_role: also
 - id: tw.2347
-  detail: 半導體為最大營收業務，經營晶片與運算模組代理及分銷，屬IC通路。
+  detail: 半導體為最大營收業務，經營晶片、記憶體及運算模組代理分銷。
   as_of: '2026-10-14'
   evidence:
   - tw.2347#e09
@@ -183,7 +196,7 @@ members:
   tier: downstream
   stage_role: primary
 - id: tw.2351
-  detail: 導線架及電子沖壓件占營收85%，供應半導體封裝材料，並非提供封測服務。
+  detail: 導線架及電子沖壓件占營收85%，提供半導體封裝材料，未揭露承作封測服務。
   as_of: '2026-10-15'
   evidence:
   - tw.2351#e1
@@ -195,7 +208,7 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.2360
-  detail: 量測儀器為最大營收來源，供應半導體測試及先進封裝量測設備，屬設備供應。
+  detail: 量測儀器為最大營收部門，供應半導體測試與先進封裝量測設備。
   as_of: '2026-10-14'
   evidence:
   - tw.2360#e11
@@ -203,11 +216,11 @@ members:
   - tw.2360#e04
   confidence: ai_cross_checked
   source: classification
-  stage: wafer_materials
+  stage: tools
   tier: upstream
   stage_role: primary
 - id: tw.2363
-  detail: 從事觸控、主動筆、電池管理及混合訊號IC設計與銷售，屬IC設計。
+  detail: 從事觸控、主動筆、電池管理及混合訊號IC設計，並提供設計服務。
   as_of: '2026-10-15'
   evidence:
   - tw.2363#e1
@@ -219,7 +232,7 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.2369
-  detail: 封裝測試服務占營收99%，涵蓋積體電路、感測元件與功率元件封測。
+  detail: 封裝測試服務占營收99%，涵蓋積體電路、感測元件及功率元件封測。
   as_of: '2026-10-18'
   evidence:
   - tw.2369#e2
@@ -230,7 +243,7 @@ members:
   tier: downstream
   stage_role: primary
 - id: tw.2379
-  detail: 積體電路產品占營收99.76%，主要設計與銷售網通、音訊及周邊晶片。
+  detail: 積體電路產品占營收99.76%，主要設計開發網通、音訊與顯示等晶片。
   as_of: '2026-10-14'
   evidence:
   - tw.2379#e1
@@ -241,7 +254,7 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.2388
-  detail: IC相關產品占營收逾90%，研究將處理器等產品業務定位為IC設計。
+  detail: IC相關產品營收逾90%，主要經營處理器等晶片，另提供晶圓瑕疵檢測方案。
   as_of: '2026-10-15'
   evidence:
   - tw.2388#e2
@@ -252,7 +265,7 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.2401
-  detail: IC收入占營收93.72%，負責規格制定與晶片設計，產品涵蓋車用及智慧運算。
+  detail: IC收入占營收93.72%，負責車用、聲學及智慧運算晶片的規格與設計。
   as_of: '2026-10-18'
   evidence:
   - tw.2401#e1
@@ -263,7 +276,7 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.2404
-  detail: 系統整合占營收99.54%，主要承攬無塵室與機電廠務工程，現有階段未涵蓋廠務建置。
+  detail: 系統整合占營收99.54%，主要提供半導體廠無塵室、機電及二次配工程。
   as_of: '2026-10-14'
   evidence:
   - tw.2404#e01
@@ -271,10 +284,11 @@ members:
   - tw.2404#e03
   confidence: ai_cross_checked
   source: classification
-  stage: null
-  tier: null
+  stage: tools
+  tier: upstream
+  stage_role: primary
 - id: tw.2408
-  detail: 主業為DRAM設計與製造，另有RDIMM模組銷售；封測廠仍屬建置規劃。
+  detail: 主業為DRAM研發、設計與製造，另有RDIMM模組銷售；封測廠仍屬建置規劃。
   as_of: '2026-10-14'
   evidence: &id005
   - tw.2408#e01
@@ -286,7 +300,7 @@ members:
   tier: midstream
   stage_role: primary
 - id: tw.2408
-  detail: 主業為DRAM設計與製造，另有RDIMM模組銷售；封測廠仍屬建置規劃。
+  detail: 主業為DRAM研發、設計與製造，另有RDIMM模組銷售；封測廠仍屬建置規劃。
   as_of: '2026-10-14'
   evidence: *id005
   confidence: ai_cross_checked
@@ -295,7 +309,7 @@ members:
   tier: downstream
   stage_role: also
 - id: tw.2408
-  detail: 主業為DRAM設計與製造，另有RDIMM模組銷售；封測廠仍屬建置規劃。
+  detail: 主業為DRAM研發、設計與製造，另有RDIMM模組銷售；封測廠仍屬建置規劃。
   as_of: '2026-10-14'
   evidence: *id005
   confidence: ai_cross_checked
@@ -316,7 +330,7 @@ members:
   tier: midstream
   stage_role: primary
 - id: tw.2436
-  detail: 以自有電源管理與智慧應用IC設計為主，合計業務大於代理，另兼營電子零組件通路。
+  detail: 自有電源管理與智慧應用IC業務合計大於代理業務，並兼營電子零組件代理。
   as_of: '2026-10-18'
   evidence: &id006
   - tw.2436#e1
@@ -327,7 +341,7 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.2436
-  detail: 以自有電源管理與智慧應用IC設計為主，合計業務大於代理，另兼營電子零組件通路。
+  detail: 自有電源管理與智慧應用IC業務合計大於代理業務，並兼營電子零組件代理。
   as_of: '2026-10-18'
   evidence: *id006
   confidence: ai_cross_checked
@@ -336,7 +350,7 @@ members:
   tier: downstream
   stage_role: also
 - id: tw.2441
-  detail: 封裝占營收76.9%，另提供晶圓凸塊、晶圓測試及成品測試服務。
+  detail: 封裝占營收76.9%，另提供晶圓凸塊及晶圓、成品測試服務。
   as_of: '2026-10-14'
   evidence:
   - tw.2441#e2
@@ -359,7 +373,7 @@ members:
   tier: downstream
   stage_role: primary
 - id: tw.2451
-  detail: 主要銷售嵌入式儲存產品及DRAM模組，採購記憶體顆粒製作模組與儲存裝置。
+  detail: 主要銷售嵌入式儲存產品、DRAM模組及SSD，屬記憶體模組環節。
   as_of: '2026-10-14'
   evidence:
   - tw.2451#e1
@@ -372,7 +386,7 @@ members:
   tier: downstream
   stage_role: primary
 - id: tw.2454
-  detail: 主要設計並銷售手機、智慧裝置及電源管理晶片，IC產品占營收98.43%。
+  detail: 以無晶圓廠模式設計手機、智慧裝置與電源管理晶片，IC產品占營收98.43%。
   as_of: '2026-10-14'
   evidence:
   - tw.2454#e01
@@ -384,7 +398,7 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.2455
-  detail: 製造砷化鎵、磷化銦及氮化鎵磊晶片，供應後續半導體元件製造所需材料。
+  detail: 製造砷化鎵、磷化銦及氮化鎵磊晶片，供後續半導體元件製造使用。
   as_of: '2026-10-14'
   evidence:
   - tw.2455#e1
@@ -396,7 +410,7 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.2458
-  detail: 筆電輸入裝置模組占營收69.92%為最大業務，另自行設計觸控與人機介面IC。
+  detail: 筆電輸入裝置模組占營收69.92%為最大業務，另自行設計觸控與指紋辨識晶片。
   as_of: '2026-10-15'
   evidence: &id007
   - tw.2458#e2
@@ -407,7 +421,7 @@ members:
   tier: downstream
   stage_role: primary
 - id: tw.2458
-  detail: 筆電輸入裝置模組占營收69.92%為最大業務，另自行設計觸控與人機介面IC。
+  detail: 筆電輸入裝置模組占營收69.92%為最大業務，另自行設計觸控與指紋辨識晶片。
   as_of: '2026-10-15'
   evidence: *id007
   confidence: ai_cross_checked
@@ -416,7 +430,7 @@ members:
   tier: upstream
   stage_role: also
 - id: tw.2464
-  detail: 半導體自動化系統占營收58.18%，供應工廠搬運、儲存與設備前端模組。
+  detail: 半導體自動化系統占營收58.18%，供應晶圓廠及封裝廠搬運、儲存設備。
   as_of: '2026-10-13'
   evidence:
   - tw.2464#e1
@@ -424,11 +438,11 @@ members:
   - tw.2464#e8
   confidence: ai_cross_checked
   source: classification
-  stage: wafer_materials
+  stage: tools
   tier: upstream
   stage_role: primary
 - id: tw.2467
-  detail: 半導體製程設備占營收50%為最大業務，供應烘烤、電漿、壓膜及鍵合等設備。
+  detail: 半導體製程設備占營收50%為最大業務，供應烘烤、電漿、貼膜及鍵合設備。
   as_of: '2026-10-14'
   evidence:
   - tw.2467#e1
@@ -436,11 +450,11 @@ members:
   - tw.2467#e3
   confidence: ai_cross_checked
   source: classification
-  stage: wafer_materials
+  stage: tools
   tier: upstream
   stage_role: primary
 - id: tw.2481
-  detail: 以MOSFET與二極體製造銷售為主，擁有晶圓廠，並具設計及封裝能力。
+  detail: 以功率半導體製造銷售為主，擁有晶圓廠，並具備IDM設計及封裝能力。
   as_of: '2026-10-14'
   evidence: &id008
   - tw.2481#e1
@@ -452,7 +466,7 @@ members:
   tier: midstream
   stage_role: primary
 - id: tw.2481
-  detail: 以MOSFET與二極體製造銷售為主，擁有晶圓廠，並具設計及封裝能力。
+  detail: 以功率半導體製造銷售為主，擁有晶圓廠，並具備IDM設計及封裝能力。
   as_of: '2026-10-14'
   evidence: *id008
   confidence: ai_cross_checked
@@ -461,7 +475,7 @@ members:
   tier: upstream
   stage_role: also
 - id: tw.2481
-  detail: 以MOSFET與二極體製造銷售為主，擁有晶圓廠，並具設計及封裝能力。
+  detail: 以功率半導體製造銷售為主，擁有晶圓廠，並具備IDM設計及封裝能力。
   as_of: '2026-10-14'
   evidence: *id008
   confidence: ai_cross_checked
@@ -470,7 +484,7 @@ members:
   tier: downstream
   stage_role: also
 - id: tw.3006
-  detail: 專業IC設計公司，設計記憶體與類比混合訊號晶片，積體電路銷售占營收100%。
+  detail: 為記憶體及混合訊號IC設計公司，積體電路銷售占營收100%。
   as_of: '2026-10-14'
   evidence:
   - tw.3006#e1
@@ -482,7 +496,7 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.3010
-  detail: 主要供應半導體製程材料、化學品、氣體及設備，另代理顯示控制與電源管理IC。
+  detail: 主要供應半導體製程材料、化學品與氣體，另經銷設備及驅動、控制IC。
   as_of: '2026-10-15'
   evidence: &id009
   - tw.3010#e01
@@ -494,7 +508,7 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.3010
-  detail: 主要供應半導體製程材料、化學品、氣體及設備，另代理顯示控制與電源管理IC。
+  detail: 主要供應半導體製程材料、化學品與氣體，另經銷設備及驅動、控制IC。
   as_of: '2026-10-15'
   evidence: *id009
   confidence: ai_cross_checked
@@ -502,8 +516,17 @@ members:
   stage: distribution
   tier: downstream
   stage_role: also
+- id: tw.3010
+  detail: 主要供應半導體製程材料、化學品與氣體，另經銷設備及驅動、控制IC。
+  as_of: '2026-10-15'
+  evidence: *id009
+  confidence: ai_cross_checked
+  source: classification
+  stage: tools
+  tier: upstream
+  stage_role: also
 - id: tw.3014
-  detail: 從事電腦控制、影音介面及電子紙控制IC設計銷售，IC占營收99.92%。
+  detail: 研發設計電腦控制、影音介面及電子紙控制IC，IC占營收99.92%。
   as_of: '2026-10-15'
   evidence:
   - tw.3014#e1
@@ -516,7 +539,7 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.3016
-  detail: 磊晶晶片占營收100%，生產及代工矽、碳化矽、氮化鎵與鍺矽磊晶材料。
+  detail: 磊晶晶片占營收100%，生產矽、碳化矽、氮化鎵及鍺矽磊晶材料。
   as_of: '2026-10-15'
   evidence:
   - tw.3016#e1
@@ -528,7 +551,7 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.3028
-  detail: 代理銷售半導體零組件及記憶卡、SSD等儲存產品，並提供應用參考設計。
+  detail: 代理銷售半導體零組件及儲存產品，並提供參考設計與整合支援。
   as_of: '2026-10-18'
   evidence:
   - tw.3028#e1
@@ -539,7 +562,7 @@ members:
   tier: downstream
   stage_role: primary
 - id: tw.3033
-  detail: 電子零組件及電腦周邊代理經銷與技術服務約占營收100%，以通路業務為主。
+  detail: 電子零組件及電腦周邊代理經銷與技術服務約占營收100%。
   as_of: '2026-10-15'
   evidence:
   - tw.3033#e1
@@ -551,7 +574,7 @@ members:
   tier: downstream
   stage_role: primary
 - id: tw.3034
-  detail: 無晶圓廠IC設計公司，主要設計顯示驅動晶片，占營收62.87%，另有影音SoC。
+  detail: 為無晶圓廠IC設計公司，顯示驅動晶片占營收62.87%，另設計影音SoC。
   as_of: '2026-10-14'
   evidence:
   - tw.3034#e01
@@ -562,7 +585,7 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.3035
-  detail: 提供客製化ASIC設計、量產服務與矽智財授權，主要收入為ASIC及晶圓產品。
+  detail: 以客製化ASIC設計及量產服務為主，另提供委託設計與矽智財授權。
   as_of: '2026-10-15'
   evidence:
   - tw.3035#e1
@@ -577,7 +600,7 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.3036
-  detail: 主要代理經銷半導體及電子零組件，最大商品類別為特定應用積體電路。
+  detail: 主要代理經銷半導體及電子零組件，並提供供應鏈管理與參考設計服務。
   as_of: '2026-10-14'
   evidence:
   - tw.3036#e01
@@ -589,7 +612,7 @@ members:
   tier: downstream
   stage_role: primary
 - id: tw.3048
-  detail: 以代理銷售半導體零組件為主，積體電路占營收87.11%，另經營記憶體通路。
+  detail: 以半導體零組件代理銷售為主，積體電路占營收87.11%，另經銷記憶體。
   as_of: '2026-10-18'
   evidence:
   - tw.3048#e1
@@ -600,7 +623,7 @@ members:
   tier: downstream
   stage_role: primary
 - id: tw.3055
-  detail: 主業為半導體測試、封裝與檢測設備銷售及工程服務，屬設備供應環節。
+  detail: 主要銷售半導體測試、封裝與檢測設備，銷貨占營收95.44%，屬設備供應。
   as_of: '2026-10-15'
   evidence:
   - tw.3055#e1
@@ -608,11 +631,11 @@ members:
   - tw.3055#e3
   confidence: ai_cross_checked
   source: classification
-  stage: wafer_materials
+  stage: tools
   tier: upstream
   stage_role: primary
 - id: tw.3105
-  detail: 晶圓代工占營收95.73%，主要提供砷化鎵及氮化鎵等化合物半導體製造服務。
+  detail: 三五族化合物半導體晶圓代工占營收95.73%，以晶圓製造服務為主。
   as_of: '2026-10-14'
   evidence:
   - tw.3105#e1
@@ -623,20 +646,29 @@ members:
   tier: midstream
   stage_role: primary
 - id: tw.3131
-  detail: 濕製程設備占營收65%，另供應蝕刻液與去光阻液，均屬材料與設備環節。
+  detail: 濕製程設備占營收65%為最大宗；另有占18%的蝕刻液、去光阻液等化學材料。
   as_of: '2026-10-13'
-  evidence:
+  evidence: &id010
   - tw.3131#e1
   - tw.3131#e2
   - tw.3131#e3
   - tw.3131#e4
   confidence: ai_cross_checked
   source: classification
-  stage: wafer_materials
+  stage: tools
   tier: upstream
   stage_role: primary
+- id: tw.3131
+  detail: 濕製程設備占營收65%為最大宗；另有占18%的蝕刻液、去光阻液等化學材料。
+  as_of: '2026-10-13'
+  evidence: *id010
+  confidence: ai_cross_checked
+  source: classification
+  stage: wafer_materials
+  tier: upstream
+  stage_role: also
 - id: tw.3135
-  detail: 主要開發及銷售記憶體模組與SSD，DRAM產品占營收80.9%，屬模組環節。
+  detail: 主要開發、製造及銷售記憶體模組與SSD，DRAM產品占營收80.9%。
   as_of: '2026-10-18'
   evidence:
   - tw.3135#e2
@@ -649,7 +681,7 @@ members:
   tier: downstream
   stage_role: primary
 - id: tw.3209
-  detail: 主業為網路通訊半導體代理銷售，無線通訊元件占營收56.65%，屬IC通路。
+  detail: 主業為網路通訊半導體代理銷售，無線通訊元件占營收56.65%。
   as_of: '2026-10-18'
   evidence:
   - tw.3209#e1
@@ -661,7 +693,7 @@ members:
   tier: downstream
   stage_role: primary
 - id: tw.3227
-  detail: 從事感測晶片設計與銷售，產品委外製造，CMOS影像感測元配件占營收98.17%。
+  detail: 設計與銷售感測晶片，產品委外製造，CMOS影像感測元配件占營收98.17%。
   as_of: '2026-10-15'
   evidence:
   - tw.3227#e2
@@ -672,7 +704,7 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.3228
-  detail: 核心業務為微控制器、x86處理器及周邊控制晶片設計，屬IC設計。
+  detail: 業務為微控制器、x86處理器及周邊控制晶片設計，雖無營收細分，設計角色明確。
   as_of: '2026-10-18'
   evidence:
   - tw.3228#e1
@@ -696,7 +728,7 @@ members:
   tier: downstream
   stage_role: primary
 - id: tw.3264
-  detail: 主要提供晶圓、成品及Burn-in測試，晶圓測試為最大收入來源，屬封裝測試。
+  detail: 主要提供晶圓、成品及Burn-in測試，晶圓測試為最大收入來源。
   as_of: '2026-10-14'
   evidence:
   - tw.3264#e02
@@ -708,7 +740,7 @@ members:
   tier: downstream
   stage_role: primary
 - id: tw.3265
-  detail: 晶圓級封裝占營收60.06%，測試占38.98%，主業明確為半導體封裝測試。
+  detail: 晶圓級封裝占營收60.06%，測試占38.98%，主業明確為封裝測試。
   as_of: '2026-10-15'
   evidence:
   - tw.3265#e2
@@ -720,7 +752,7 @@ members:
   tier: downstream
   stage_role: primary
 - id: tw.3289
-  detail: 檢測服務占營收100%，提供晶片故障分析、可靠度驗證與光電測試，依測試性質歸類。
+  detail: 檢測服務占營收100%，提供晶片故障分析、可靠度驗證及光電測試，對應測試環節。
   as_of: '2026-10-13'
   evidence:
   - tw.3289#e1
@@ -731,9 +763,9 @@ members:
   tier: downstream
   stage_role: primary
 - id: tw.3305
-  detail: 核心為銲錫材料，供應BGA錫球及晶圓封裝用錫膏，另代理半導體回焊設備。
+  detail: 主業為錫球、錫膏等封裝接合材料；另揭露代理HBM堆疊製程回焊爐。
   as_of: '2026-10-18'
-  evidence:
+  evidence: &id011
   - tw.3305#e1
   - tw.3305#e3
   - tw.3305#e4
@@ -744,8 +776,17 @@ members:
   stage: wafer_materials
   tier: upstream
   stage_role: primary
+- id: tw.3305
+  detail: 主業為錫球、錫膏等封裝接合材料；另揭露代理HBM堆疊製程回焊爐。
+  as_of: '2026-10-18'
+  evidence: *id011
+  confidence: ai_cross_checked
+  source: classification
+  stage: tools
+  tier: upstream
+  stage_role: also
 - id: tw.3312
-  detail: 主業為IC通路與應用方案，數位通訊方案與元件占個體營收85.32%。
+  detail: 以IC代理通路與應用方案為主，數位通訊方案與元件占個體營收85.32%。
   as_of: '2026-10-18'
   evidence:
   - tw.3312#e2
@@ -756,7 +797,7 @@ members:
   tier: downstream
   stage_role: primary
 - id: tw.3374
-  detail: 營收主要來自測試服務及晶圓級封裝，分別占47.86%及合計50.16%。
+  detail: 提供晶圓與最終測試及晶圓級封裝，測試服務占營收47.86%，為最大單項。
   as_of: '2026-10-14'
   evidence:
   - tw.3374#e02
@@ -767,7 +808,7 @@ members:
   tier: downstream
   stage_role: primary
 - id: tw.3402
-  detail: 以製程管路及廠務系統整合為主，並供應特氣、廢氣處理與濕製程設備，歸設備環節。
+  detail: 製程管路工程占營收79.74%，另提供無塵室機電統包與特氣設備，屬廠務環節。
   as_of: '2026-10-18'
   evidence:
   - tw.3402#e1
@@ -775,11 +816,11 @@ members:
   - tw.3402#e6
   confidence: ai_cross_checked
   source: classification
-  stage: wafer_materials
+  stage: tools
   tier: upstream
   stage_role: primary
 - id: tw.3413
-  detail: 關鍵零組件占營收52%，半導體設備及系統組裝占45.52%，屬設備供應環節。
+  detail: 半導體設備關鍵零組件占營收52%，設備及系統組裝占45.52%，屬設備供應。
   as_of: '2026-10-15'
   evidence:
   - tw.3413#e1
@@ -787,11 +828,11 @@ members:
   - tw.3413#e3
   confidence: ai_cross_checked
   source: classification
-  stage: wafer_materials
+  stage: tools
   tier: upstream
   stage_role: primary
 - id: tw.3443
-  detail: 提供客製化ASIC設計及IP，晶圓產品收入來自量產統合服務，非自行晶圓製造。
+  detail: 晶圓產品營收來自客製ASIC量產統合，晶圓由台積電供應，核心為ASIC設計與IP。
   as_of: '2026-10-14'
   evidence:
   - tw.3443#e1
@@ -804,7 +845,7 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.3450
-  detail: 功率半導體封裝及測試占合併營收62%，為集團最大營收來源。
+  detail: 功率半導體封裝測試占合併營收62%，為集團最大業務。
   as_of: '2026-10-14'
   evidence:
   - tw.3450#e1
@@ -815,17 +856,17 @@ members:
   tier: downstream
   stage_role: primary
 - id: tw.3455
-  detail: SEMI檢測系統占營收41.77%為最大類別，供應晶圓及先進封裝AOI設備。
+  detail: 研發銷售自動光學檢測設備，半導體檢測系統占營收41.77%，為最大產品類別。
   as_of: '2026-10-13'
   evidence:
   - tw.3455#e2
   confidence: ai_cross_checked
   source: classification
-  stage: wafer_materials
+  stage: tools
   tier: upstream
   stage_role: primary
 - id: tw.3529
-  detail: 提供嵌入式記憶體及晶片安全IP，技術權利金占營收67.5%，屬矽智財授權。
+  detail: 提供嵌入式記憶體與晶片安全IP，技術權利金占營收67.5%，屬矽智財授權。
   as_of: '2026-10-14'
   evidence:
   - tw.3529#e1
@@ -836,7 +877,7 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.3532
-  detail: 半導體用矽晶圓占營收100%，主要供應拋光、熱處理及磊晶晶圓。
+  detail: 矽晶圓占營收100%，供應拋光、熱處理及磊晶晶圓，屬上游材料。
   as_of: '2026-10-14'
   evidence:
   - tw.3532#e01
@@ -847,7 +888,7 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.3545
-  detail: 營收全數來自人機介面晶片，主要研發觸控、顯示驅動及指紋辨識IC。
+  detail: 營收全數來自人機介面應用晶片，主要研發觸控、顯示驅動及指紋辨識IC。
   as_of: '2026-10-18'
   evidence:
   - tw.3545#e1
@@ -860,7 +901,7 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.3551
-  detail: 設備零組件潔淨再生占營收93.40%，並提供設備維修及零組件銷售。
+  detail: 設備零組件潔淨再生服務占營收93.40%，另提供設備維修與零組件銷售。
   as_of: '2026-10-18'
   evidence:
   - tw.3551#e1
@@ -868,11 +909,11 @@ members:
   - tw.3551#e8
   confidence: ai_cross_checked
   source: classification
-  stage: wafer_materials
+  stage: tools
   tier: upstream
   stage_role: primary
 - id: tw.3580
-  detail: 設備占營收74.67%，主要供應濺鍍與電漿蝕刻設備，包含先進封裝用途。
+  detail: 設備占營收74.67%，主要供應濺鍍與電漿蝕刻設備；封裝應用屬設備用途。
   as_of: '2026-10-13'
   evidence:
   - tw.3580#e1
@@ -881,13 +922,13 @@ members:
   - tw.3580#e4
   confidence: ai_cross_checked
   source: classification
-  stage: wafer_materials
+  stage: tools
   tier: upstream
   stage_role: primary
 - id: tw.3583
-  detail: 自製設備與晶圓再生合計占52%，其餘主要為設備代理，均屬材料設備環節。
+  detail: 主要經營自製與代理製程設備，另提供12吋晶圓再生服務，跨足材料環節。
   as_of: '2026-10-13'
-  evidence:
+  evidence: &id012
   - tw.3583#e1
   - tw.3583#e2
   - tw.3583#e3
@@ -895,11 +936,20 @@ members:
   - tw.3583#e7
   confidence: ai_cross_checked
   source: classification
-  stage: wafer_materials
+  stage: tools
   tier: upstream
   stage_role: primary
+- id: tw.3583
+  detail: 主要經營自製與代理製程設備，另提供12吋晶圓再生服務，跨足材料環節。
+  as_of: '2026-10-13'
+  evidence: *id012
+  confidence: ai_cross_checked
+  source: classification
+  stage: wafer_materials
+  tier: upstream
+  stage_role: also
 - id: tw.3587
-  detail: 提供故障分析、可靠度驗證及晶片光電測試，對應測試環節，未揭露量產封裝業務。
+  detail: 提供可靠度、晶圓及晶片光電測試與封裝驗證，最接近測試階段，非量產封裝代工。
   as_of: '2026-10-18'
   evidence:
   - tw.3587#e0
@@ -912,7 +962,7 @@ members:
   tier: downstream
   stage_role: primary
 - id: tw.3592
-  detail: 主要開發與設計顯示驅動、時序控制、電源管理及觸控IC。
+  detail: 主要開發設計顯示驅動、時序控制、電源管理及觸控整合IC。
   as_of: '2026-10-15'
   evidence:
   - tw.3592#e1
@@ -924,7 +974,7 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.3661
-  detail: ASIC及晶片量產占98.45%，業務核心為客製化設計與委外量產管理。
+  detail: ASIC及晶片量產占營收98.45%，核心為客製晶片設計與量產管理，封裝設計屬整合能力。
   as_of: '2026-10-14'
   evidence:
   - tw.3661#e1
@@ -935,7 +985,7 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.3675
-  detail: 二極體及電晶體占64.12%，具分離式元件IDM製造及功率元件晶圓廠業務。
+  detail: 二極體及電晶體占營收64.12%，具IDM製造業務及功率元件晶圓廠，屬元件製造。
   as_of: '2026-10-18'
   evidence:
   - tw.3675#e2
@@ -946,7 +996,7 @@ members:
   tier: midstream
   stage_role: primary
 - id: tw.3680
-  detail: 光罩與晶圓載具分占35%及30%，主要供應製程傳載耗材。
+  detail: 光罩與晶圓載具合計占營收65%，依研究所述傳載耗材性質歸入材料環節。
   as_of: '2026-10-13'
   evidence:
   - tw.3680#e01
@@ -960,7 +1010,7 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.3702
-  detail: 主要代理經銷半導體零組件，核心元件與記憶元件為最大營收類別。
+  detail: 透過旗下通路代理經銷半導體零組件，核心元件與記憶元件為主要營收來源。
   as_of: '2026-10-14'
   evidence:
   - tw.3702#e1
@@ -971,9 +1021,9 @@ members:
   tier: downstream
   stage_role: primary
 - id: tw.3707
-  detail: 合併營收以嘉晶磊晶材料最大，本公司另提供功率元件及GaN晶圓代工。
+  detail: 合併營收以子公司磊晶材料最大，本公司另提供功率元件製造及晶圓代工。
   as_of: '2026-10-15'
-  evidence: &id010
+  evidence: &id013
   - tw.3707#e2
   - tw.3707#e3
   - tw.3707#e7
@@ -983,18 +1033,18 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.3707
-  detail: 合併營收以嘉晶磊晶材料最大，本公司另提供功率元件及GaN晶圓代工。
+  detail: 合併營收以子公司磊晶材料最大，本公司另提供功率元件製造及晶圓代工。
   as_of: '2026-10-15'
-  evidence: *id010
+  evidence: *id013
   confidence: ai_cross_checked
   source: classification
   stage: fab
   tier: midstream
   stage_role: also
 - id: tw.3711
-  detail: 封裝、測試與材料事業占59.7%，高於電子製造服務，另明列材料業務。
+  detail: 封裝、測試與材料占營收59.7%，以封測為主，另有材料供應業務。
   as_of: '2026-10-14'
-  evidence: &id011
+  evidence: &id014
   - tw.3711#e01
   - tw.3711#e02
   confidence: ai_cross_checked
@@ -1003,16 +1053,16 @@ members:
   tier: downstream
   stage_role: primary
 - id: tw.3711
-  detail: 封裝、測試與材料事業占59.7%，高於電子製造服務，另明列材料業務。
+  detail: 封裝、測試與材料占營收59.7%，以封測為主，另有材料供應業務。
   as_of: '2026-10-14'
-  evidence: *id011
+  evidence: *id014
   confidence: ai_cross_checked
   source: classification
   stage: wafer_materials
   tier: upstream
   stage_role: also
 - id: tw.4749
-  detail: 半導體應用材料占87%，主要供應光阻、抗反射層及清洗等特用化學材料。
+  detail: 半導體應用材料占營收87%，供應光阻、抗反射層及製程清洗等特用化學材料。
   as_of: '2026-10-14'
   evidence:
   - tw.4749#e1
@@ -1025,7 +1075,7 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.4755
-  detail: 精密化學品占71.97%，供應半導體製程顯影液、蝕刻液及光阻剝離劑。
+  detail: 精密化學品占營收71.97%，供應半導體顯影液、蝕刻液及光阻剝離劑。
   as_of: '2026-10-13'
   evidence:
   - tw.4755#e1
@@ -1038,9 +1088,9 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.4768
-  detail: 精密化學品占96.73%，以蝕刻與清洗特殊氣體為主，另有晶圓再生及基板材料。
+  detail: 精密化學品占營收96.73%，以製程特殊氣體為主，另有設備暨零組件收入0.6%。
   as_of: '2026-10-15'
-  evidence:
+  evidence: &id015
   - tw.4768#e1
   - tw.4768#e2
   - tw.4768#e3
@@ -1050,33 +1100,60 @@ members:
   stage: wafer_materials
   tier: upstream
   stage_role: primary
-- id: tw.4770
-  detail: 氟素內襯設備占71.92%，供應半導體化學品處理系統、管件及材料。
+- id: tw.4768
+  detail: 精密化學品占營收96.73%，以製程特殊氣體為主，另有設備暨零組件收入0.6%。
   as_of: '2026-10-15'
-  evidence:
+  evidence: *id015
+  confidence: ai_cross_checked
+  source: classification
+  stage: tools
+  tier: upstream
+  stage_role: also
+- id: tw.4770
+  detail: 氟素內襯設備占營收71.92%，另供應氟素應用材料，占13.89%。
+  as_of: '2026-10-15'
+  evidence: &id016
   - tw.4770#e2
   - tw.4770#e6
   - tw.4770#e7
   confidence: ai_cross_checked
   source: classification
-  stage: wafer_materials
+  stage: tools
   tier: upstream
   stage_role: primary
-- id: tw.4772
-  detail: 設備零件清潔服務占42%為最大單項，另有鍍膜服務與製程特殊氣體。
+- id: tw.4770
+  detail: 氟素內襯設備占營收71.92%，另供應氟素應用材料，占13.89%。
   as_of: '2026-10-15'
-  evidence:
-  - tw.4772#e2
-  - tw.4772#e10
+  evidence: *id016
   confidence: ai_cross_checked
   source: classification
   stage: wafer_materials
   tier: upstream
+  stage_role: also
+- id: tw.4772
+  detail: 設備零件清潔服務占營收42%為最大單項，另有鍍膜服務及占36%的特殊氣體業務。
+  as_of: '2026-10-15'
+  evidence: &id017
+  - tw.4772#e2
+  - tw.4772#e10
+  confidence: ai_cross_checked
+  source: classification
+  stage: tools
+  tier: upstream
   stage_role: primary
+- id: tw.4772
+  detail: 設備零件清潔服務占營收42%為最大單項，另有鍍膜服務及占36%的特殊氣體業務。
+  as_of: '2026-10-15'
+  evidence: *id017
+  confidence: ai_cross_checked
+  source: classification
+  stage: wafer_materials
+  tier: upstream
+  stage_role: also
 - id: tw.4919
-  detail: 一般IC占營收93%，以微控制器等晶片設計為主，另有5%晶圓代工業務。
+  detail: 一般IC占營收93%，以晶片設計為主；另有晶圓代工占5%及子公司GaN製造服務。
   as_of: '2026-10-14'
-  evidence: &id012
+  evidence: &id018
   - tw.4919#e_classification
   - tw.4919#e_revenue_ic
   - tw.4919#e_revenue_foundry
@@ -1086,16 +1163,16 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.4919
-  detail: 一般IC占營收93%，以微控制器等晶片設計為主，另有5%晶圓代工業務。
+  detail: 一般IC占營收93%，以晶片設計為主；另有晶圓代工占5%及子公司GaN製造服務。
   as_of: '2026-10-14'
-  evidence: *id012
+  evidence: *id018
   confidence: ai_cross_checked
   source: classification
   stage: fab
   tier: midstream
   stage_role: also
 - id: tw.4961
-  detail: 主要設計行動顯示、顯示驅動及電源管理IC，行動IC占38.64%為最大項。
+  detail: 主要設計行動顯示、顯示驅動、電源管理及時序控制晶片，行動IC為最大營收項目。
   as_of: '2026-10-15'
   evidence:
   - tw.4961#e2
@@ -1109,7 +1186,7 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.4966
-  detail: 採無晶圓廠模式，設計高速介面與顯示晶片，高速介面產品為最大營收來源。
+  detail: 採無晶圓廠IC設計模式，高速介面晶片占營收48.75%，為最大產品類別。
   as_of: '2026-10-15'
   evidence:
   - tw.4966#e2
@@ -1120,7 +1197,7 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.4967
-  detail: 主要生產自有品牌記憶體模組與儲存裝置，DRAM產品占營收70.94%。
+  detail: 主要供應記憶體模組與儲存裝置，DRAM產品占營收70.94%。
   as_of: '2026-10-15'
   evidence:
   - tw.4967#e1
@@ -1143,7 +1220,7 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.4971
-  detail: 主要製造供元件製程使用的化合物半導體磊晶片，以磷化銦產品營收最高。
+  detail: 提供化合物半導體磊晶片，供後續元件製造使用，磷化銦為最大營收來源。
   as_of: '2026-10-15'
   evidence:
   - tw.4971#e2
@@ -1167,7 +1244,7 @@ members:
   tier: downstream
   stage_role: primary
 - id: tw.4991
-  detail: 自有光電元件占營收68.72%，並提供化合物半導體晶圓代工，核心為晶片製造。
+  detail: 自有光電元件占營收68.72%，並提供化合物半導體晶圓代工，屬元件與晶圓製造。
   as_of: '2026-10-14'
   evidence:
   - tw.4991#e2
@@ -1180,7 +1257,7 @@ members:
   tier: midstream
   stage_role: primary
 - id: tw.5269
-  detail: 主要設計銷售高速傳輸控制晶片，高速介面控制晶片占營收78.81%。
+  detail: 主要設計高速傳輸控制晶片，高速介面控制晶片占營收78.81%。
   as_of: '2026-10-14'
   evidence:
   - tw.5269#e01
@@ -1203,7 +1280,7 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.5285
-  detail: 主要製造功率半導體封裝用導線架與Clip，屬封裝材料供應商。
+  detail: 主要製造功率半導體封裝用導線架與搭接元件架，屬封裝材料供應。
   as_of: '2026-10-18'
   evidence:
   - tw.5285#e2
@@ -1214,7 +1291,7 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.5289
-  detail: 工業用DRAM模組占營收55.24%，嵌入式儲存占37.17%，以記憶體模組為主。
+  detail: 工業用DRAM模組占營收55.24%，嵌入式儲存占37.17%，以模組與儲存裝置為主。
   as_of: '2026-10-14'
   evidence:
   - tw.5289#e1
@@ -1226,7 +1303,7 @@ members:
   tier: downstream
   stage_role: primary
 - id: tw.5292
-  detail: 提供半導體製程廢氣處理設備及系統整合，屬半導體設備供應端。
+  detail: 工程收入占86%，提供半導體製程廢氣處理設備與系統整合服務。
   as_of: '2026-10-18'
   evidence:
   - tw.5292#e2
@@ -1234,11 +1311,11 @@ members:
   - tw.5292#e4
   confidence: ai_cross_checked
   source: classification
-  stage: wafer_materials
+  stage: tools
   tier: upstream
   stage_role: primary
 - id: tw.5347
-  detail: 以特殊製程晶圓代工為主，電源管理IC代工占平台別營收77%。
+  detail: 主要提供特殊製程晶圓代工，電源管理IC代工占平台別營收77%。
   as_of: '2026-10-14'
   evidence:
   - tw.5347#e01
@@ -1249,9 +1326,9 @@ members:
   tier: midstream
   stage_role: primary
 - id: tw.5351
-  detail: 以無晶圓廠記憶體及邏輯IC設計為主，子公司另供應3D視覺感測模組。
+  detail: 以無晶圓廠模式設計記憶體與系統晶片為主，子公司另供應3D視覺感測模組。
   as_of: '2026-10-15'
-  evidence: &id013
+  evidence:
   - tw.5351#e1
   - tw.5351#e2
   confidence: ai_cross_checked
@@ -1259,17 +1336,8 @@ members:
   stage: ip_design
   tier: upstream
   stage_role: primary
-- id: tw.5351
-  detail: 以無晶圓廠記憶體及邏輯IC設計為主，子公司另供應3D視覺感測模組。
-  as_of: '2026-10-15'
-  evidence: *id013
-  confidence: ai_cross_checked
-  source: classification
-  stage: distribution
-  tier: downstream
-  stage_role: also
 - id: tw.5386
-  detail: 以品牌代理及通路銷售為主，記憶體產品占營收83.89%。
+  detail: 主要經營品牌代理與通路銷售，記憶體產品占營收83.89%。
   as_of: '2026-10-18'
   evidence:
   - tw.5386#e2
@@ -1281,9 +1349,9 @@ members:
   tier: downstream
   stage_role: primary
 - id: tw.5434
-  detail: 半導體相關產品占營收84.6%，主要供應光阻、晶圓、石英製品與研磨液。
+  detail: 半導體材料相關產品占營收84.6%，另有純廢水、無塵室及廠務工程業務。
   as_of: '2026-10-14'
-  evidence:
+  evidence: &id019
   - tw.5434#e1
   - tw.5434#e3
   confidence: ai_cross_checked
@@ -1291,8 +1359,17 @@ members:
   stage: wafer_materials
   tier: upstream
   stage_role: primary
+- id: tw.5434
+  detail: 半導體材料相關產品占營收84.6%，另有純廢水、無塵室及廠務工程業務。
+  as_of: '2026-10-14'
+  evidence: *id019
+  confidence: ai_cross_checked
+  source: classification
+  stage: tools
+  tier: upstream
+  stage_role: also
 - id: tw.5443
-  detail: 半導體業務占營收62%，主要供應檢測、研磨與晶圓再生拋光設備。
+  detail: 半導體業務占營收62%，主要供應檢測、研磨及晶圓再生拋光設備。
   as_of: '2026-10-13'
   evidence:
   - tw.5443#e1
@@ -1301,13 +1378,13 @@ members:
   - tw.5443#e4
   confidence: ai_cross_checked
   source: classification
-  stage: wafer_materials
+  stage: tools
   tier: upstream
   stage_role: primary
 - id: tw.5471
-  detail: 主要設計銷售多媒體、微控制器與語音IC，另提供OID光學辨識模組。
+  detail: 主要設計多媒體、微控制器及語音IC，另提供OID光學辨識模組。
   as_of: '2026-10-18'
-  evidence:
+  evidence: &id020
   - tw.5471#e1
   - tw.5471#e2
   - tw.5471#e3
@@ -1317,10 +1394,19 @@ members:
   stage: ip_design
   tier: upstream
   stage_role: primary
+- id: tw.5471
+  detail: 主要設計多媒體、微控制器及語音IC，另提供OID光學辨識模組。
+  as_of: '2026-10-18'
+  evidence: *id020
+  confidence: ai_cross_checked
+  source: classification
+  stage: distribution
+  tier: downstream
+  stage_role: also
 - id: tw.5483
-  detail: 環球晶圓矽晶圓及磊晶貢獻營收77.52%，集團另有宏捷科砷化鎵晶片製造。
+  detail: 環球晶矽晶圓及磊晶貢獻營收77.52%，集團另有半導體元件製造與設備零件服務。
   as_of: '2026-10-14'
-  evidence:
+  evidence: &id021
   - tw.5483#e1
   - tw.5483#e7
   confidence: ai_cross_checked
@@ -1328,8 +1414,26 @@ members:
   stage: wafer_materials
   tier: upstream
   stage_role: primary
+- id: tw.5483
+  detail: 環球晶矽晶圓及磊晶貢獻營收77.52%，集團另有半導體元件製造與設備零件服務。
+  as_of: '2026-10-14'
+  evidence: *id021
+  confidence: ai_cross_checked
+  source: classification
+  stage: fab
+  tier: midstream
+  stage_role: also
+- id: tw.5483
+  detail: 環球晶矽晶圓及磊晶貢獻營收77.52%，集團另有半導體元件製造與設備零件服務。
+  as_of: '2026-10-14'
+  evidence: *id021
+  confidence: ai_cross_checked
+  source: classification
+  stage: tools
+  tier: upstream
+  stage_role: also
 - id: tw.5493
-  detail: 電子材料占營收90.56%，子公司供應CMP研磨液、顯影液等半導體特用化學品。
+  detail: 電子材料占營收90.56%，子公司供應CMP研磨液、顯影液及TEOS等製程化學品。
   as_of: '2026-10-13'
   evidence:
   - tw.5493#e3
@@ -1341,7 +1445,7 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.5536
-  detail: 工程收入占98%，主業為無塵室機電及廠務統包工程，現有階段未涵蓋此類服務。
+  detail: 工程收入占98%，主要承攬半導體等高科技廠房無塵室、機電及製程設施工程。
   as_of: '2026-10-14'
   evidence:
   - tw.5536#e2
@@ -1350,8 +1454,9 @@ members:
   - tw.5536#e7
   confidence: ai_cross_checked
   source: classification
-  stage: null
-  tier: null
+  stage: tools
+  tier: upstream
+  stage_role: primary
 - id: tw.6104
   detail: 積體電路晶片占營收99.9%，主要設計USB及PCIe介面控制晶片。
   as_of: '2026-10-18'
@@ -1364,7 +1469,7 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.6138
-  detail: 電源管理與放大驅動IC合計占營收55.09%，以IC設計為主，未明示晶圓製造業務。
+  detail: 電源管理與放大驅動IC合計占55.09%；集團功率元件亦以設計銷售為主。
   as_of: '2026-10-15'
   evidence:
   - tw.6138#e1
@@ -1376,7 +1481,7 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.6139
-  detail: 主要承攬統包、機電及無塵室工程，屬建廠服務，未直接對應所列五階段。
+  detail: 以整廠統包、機電、無塵室及製程管路工程為主，提供半導體建廠服務。
   as_of: '2026-10-14'
   evidence:
   - tw.6139#e1
@@ -1384,10 +1489,11 @@ members:
   - tw.6139#e3
   confidence: ai_cross_checked
   source: classification
-  stage: null
-  tier: null
+  stage: tools
+  tier: upstream
+  stage_role: primary
 - id: tw.6147
-  detail: 封裝及測試占營收74.86%，另提供凸塊及晶圓級封裝服務。
+  detail: 封裝測試占74.86%，另提供凸塊製程並製造封裝用柔性捲帶電路基板。
   as_of: '2026-10-14'
   evidence:
   - tw.6147#e1
@@ -1398,7 +1504,7 @@ members:
   tier: downstream
   stage_role: primary
 - id: tw.6182
-  detail: 半導體產品占營收99.39%，主要供應矽晶棒、拋光矽晶圓及磊晶晶圓。
+  detail: 半導體產品占99.39%，主要製造矽晶棒、拋光矽晶圓及磊晶晶圓。
   as_of: '2026-10-14'
   evidence:
   - tw.6182#e2
@@ -1410,18 +1516,18 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.6187
-  detail: 半導體封測設備營收逾九成，供應點膠、貼合及檢測設備，屬設備供應端。
+  detail: 半導體封測設備營收逾九成，供應點膠、貼合、檢測及自動化設備。
   as_of: '2026-10-14'
   evidence:
   - tw.6187#e1
   - tw.6187#e5
   confidence: ai_cross_checked
   source: classification
-  stage: wafer_materials
+  stage: tools
   tier: upstream
   stage_role: primary
 - id: tw.6189
-  detail: 以半導體元件代理經銷為主，線性／分散式元件及影像處理IC為主要收入。
+  detail: 主要代理經銷半導體元件，提供設計導入與技術支援，屬IC通路。
   as_of: '2026-10-18'
   evidence:
   - tw.6189#e2
@@ -1432,7 +1538,7 @@ members:
   tier: downstream
   stage_role: primary
 - id: tw.6196
-  detail: 自動化供應系統占營收36.57%居首，另有半導體設備材料代理及設備製造。
+  detail: 自動化供應系統占36.57%居首，另提供廠務工程、設備代工及材料代理。
   as_of: '2026-10-14'
   evidence:
   - tw.6196#e1
@@ -1442,11 +1548,11 @@ members:
   - tw.6196#e8
   confidence: ai_cross_checked
   source: classification
-  stage: wafer_materials
+  stage: tools
   tier: upstream
   stage_role: primary
 - id: tw.6202
-  detail: 微控制器IC占營收76%，主要從事MCU及周邊IC設計、研發與銷售。
+  detail: 微控制器IC占76%，主要從事MCU及周邊IC設計、研發與銷售。
   as_of: '2026-10-18'
   evidence:
   - tw.6202#e2
@@ -1458,9 +1564,9 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.6207
-  detail: 自製及代理設備占營收59%，產品涵蓋晶圓加工與CoWoS量測設備。
+  detail: 自製及代理設備占59%，涵蓋晶圓加工與封裝檢測；另供應元件封裝載帶。
   as_of: '2026-10-13'
-  evidence:
+  evidence: &id022
   - tw.6207#e1
   - tw.6207#e3
   - tw.6207#e4
@@ -1468,11 +1574,20 @@ members:
   - tw.6207#e12
   confidence: ai_cross_checked
   source: classification
-  stage: wafer_materials
+  stage: tools
   tier: upstream
   stage_role: primary
+- id: tw.6207
+  detail: 自製及代理設備占59%，涵蓋晶圓加工與封裝檢測；另供應元件封裝載帶。
+  as_of: '2026-10-13'
+  evidence: *id022
+  confidence: ai_cross_checked
+  source: classification
+  stage: wafer_materials
+  tier: upstream
+  stage_role: also
 - id: tw.6223
-  detail: 晶圓探針卡占營收72.22%，另銷售半導體測試設備，屬測試器材供應端。
+  detail: 晶圓探針卡占72.22%，另銷售半導體測試設備，屬測試工具供應。
   as_of: '2026-10-14'
   evidence:
   - tw.6223#e1
@@ -1480,11 +1595,11 @@ members:
   - tw.6223#e22
   confidence: ai_cross_checked
   source: classification
-  stage: wafer_materials
+  stage: tools
   tier: upstream
   stage_role: primary
 - id: tw.6227
-  detail: 半導體電子零組件占營收98.37%，主要業務為代理買賣與技術服務。
+  detail: 半導體電子零組件占98.37%，主要從事代理買賣及技術服務。
   as_of: '2026-10-18'
   evidence:
   - tw.6227#e1
@@ -1495,9 +1610,9 @@ members:
   tier: downstream
   stage_role: primary
 - id: tw.6239
-  detail: IC封裝占營收61.76%，並提供晶圓級封測；另有占10.77%的模組加工服務。
+  detail: IC封裝占61.76%為最大收入，另提供晶圓級封測及占10.77%的模組加工。
   as_of: '2026-10-14'
-  evidence: &id014
+  evidence: &id023
   - tw.6239#e2
   confidence: ai_cross_checked
   source: classification
@@ -1505,16 +1620,16 @@ members:
   tier: downstream
   stage_role: primary
 - id: tw.6239
-  detail: IC封裝占營收61.76%，並提供晶圓級封測；另有占10.77%的模組加工服務。
+  detail: IC封裝占61.76%為最大收入，另提供晶圓級封測及占10.77%的模組加工。
   as_of: '2026-10-14'
-  evidence: *id014
+  evidence: *id023
   confidence: ai_cross_checked
   source: classification
   stage: distribution
   tier: downstream
   stage_role: also
 - id: tw.6257
-  detail: 測試占營收80.87%、封裝占18.33%，核心為IC與晶圓測試及封裝服務。
+  detail: 測試占80.87%、封裝占18.33%，核心為IC與晶圓測試及封裝服務。
   as_of: '2026-10-14'
   evidence:
   - tw.6257#e1
@@ -1526,9 +1641,9 @@ members:
   tier: downstream
   stage_role: primary
 - id: tw.6261
-  detail: 測試代工約占營收51%居首，另有切割挑檢；自有半導體設備銷售約占39%。
+  detail: 測試代工約占51%居首，另有切割挑檢；自有測試及封裝設備銷售約占39%。
   as_of: '2026-10-18'
-  evidence: &id015
+  evidence: &id024
   - tw.6261#e2
   - tw.6261#e3
   confidence: ai_cross_checked
@@ -1537,18 +1652,18 @@ members:
   tier: downstream
   stage_role: primary
 - id: tw.6261
-  detail: 測試代工約占營收51%居首，另有切割挑檢；自有半導體設備銷售約占39%。
+  detail: 測試代工約占51%居首，另有切割挑檢；自有測試及封裝設備銷售約占39%。
   as_of: '2026-10-18'
-  evidence: *id015
+  evidence: *id024
   confidence: ai_cross_checked
   source: classification
-  stage: wafer_materials
+  stage: tools
   tier: upstream
   stage_role: also
 - id: tw.6271
-  detail: 影像封測產品占營收49.50%居首，另製造陶瓷電路板及開發封裝陶瓷Core。
+  detail: 影像產品占49.50%，以感測器封測為主；另製造占17.56%的陶瓷電路板。
   as_of: '2026-10-15'
-  evidence: &id016
+  evidence: &id025
   - tw.6271#e1
   - tw.6271#e2
   confidence: ai_cross_checked
@@ -1557,16 +1672,16 @@ members:
   tier: downstream
   stage_role: primary
 - id: tw.6271
-  detail: 影像封測產品占營收49.50%居首，另製造陶瓷電路板及開發封裝陶瓷Core。
+  detail: 影像產品占49.50%，以感測器封測為主；另製造占17.56%的陶瓷電路板。
   as_of: '2026-10-15'
-  evidence: *id016
+  evidence: *id025
   confidence: ai_cross_checked
   source: classification
   stage: wafer_materials
   tier: upstream
   stage_role: also
 - id: tw.6415
-  detail: 主要研發設計與銷售電源管理、類比及數位混合IC，屬晶片設計端。
+  detail: 主要研發設計及銷售電源管理與類比混合訊號IC，屬晶片設計端。
   as_of: '2026-10-14'
   evidence:
   - tw.6415#e01
@@ -1578,7 +1693,7 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.6435
-  detail: 營收全數來自功率半導體產品，主要從事MOSFET、IGBT及高壓IC設計開發。
+  detail: 營收全數來自功率半導體，業務為MOSFET、IGBT及高壓IC的設計開發銷售。
   as_of: '2026-10-18'
   evidence:
   - tw.6435#e1
@@ -1590,7 +1705,7 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.6451
-  detail: 高速光纖收發模組占營收61.55%，主要業務為半導體模組組裝、封裝及測試。
+  detail: 高速光纖收發模組占61.55%，主要活動為半導體模組組裝、封裝與測試。
   as_of: '2026-10-15'
   evidence:
   - tw.6451#e1
@@ -1602,7 +1717,7 @@ members:
   tier: downstream
   stage_role: primary
 - id: tw.6462
-  detail: 生物辨識IC占營收36.25%居首，另提供ASIC設計、IP授權及封裝設計服務。
+  detail: 生物辨識IC占36.25%居首，另有ASIC設計、IP授權及封裝架構設計服務。
   as_of: '2026-10-18'
   evidence:
   - tw.6462#e2
@@ -1617,7 +1732,7 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.6488
-  detail: 主要製造矽晶圓、晶棒及磊晶片，屬晶片製造上游材料。
+  detail: 主要收入來自矽晶圓，產品包含晶棒、磊晶片及SOI，屬晶片製造上游材料。
   as_of: '2026-10-14'
   evidence:
   - tw.6488#e1
@@ -1629,7 +1744,7 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.6510
-  detail: 晶圓測試卡占營收73%，供應測試介面與板卡，屬測試設備零組件。
+  detail: 晶圓測試卡占營收73%，提供探針卡及測試板等測試工具與介面。
   as_of: '2026-10-14'
   evidence:
   - tw.6510#e1
@@ -1637,11 +1752,11 @@ members:
   - tw.6510#e3
   confidence: ai_cross_checked
   source: classification
-  stage: wafer_materials
+  stage: tools
   tier: upstream
   stage_role: primary
 - id: tw.6515
-  detail: 同軸測試座占營收46%，另供探針卡等測試介面，屬設備零組件供應。
+  detail: 同軸測試座占營收46%最高，另供應探針卡及溫控方案，屬測試工具。
   as_of: '2026-10-14'
   evidence:
   - tw.6515#e02
@@ -1652,7 +1767,7 @@ members:
   - tw.6515#e07
   confidence: ai_cross_checked
   source: classification
-  stage: wafer_materials
+  stage: tools
   tier: upstream
   stage_role: primary
 - id: tw.6525
@@ -1679,9 +1794,9 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.6531
-  detail: 客製化記憶體占營收71%，採無晶圓廠設計模式；另供矽電容中介層材料。
+  detail: 客製化記憶體設計占營收71%為主，另供應CoWoS封裝用矽電容中介層材料。
   as_of: '2026-10-13'
-  evidence: &id017
+  evidence: &id026
   - tw.6531#e1
   - tw.6531#e4
   confidence: ai_cross_checked
@@ -1690,16 +1805,16 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.6531
-  detail: 客製化記憶體占營收71%，採無晶圓廠設計模式；另供矽電容中介層材料。
+  detail: 客製化記憶體設計占營收71%為主，另供應CoWoS封裝用矽電容中介層材料。
   as_of: '2026-10-13'
-  evidence: *id017
+  evidence: *id026
   confidence: ai_cross_checked
   source: classification
   stage: wafer_materials
   tier: upstream
   stage_role: also
 - id: tw.6533
-  detail: 處理器矽智財授權占營收65%，另收權利金與維護費，屬IP設計。
+  detail: 處理器矽智財授權占營收65%，另收取權利金，屬IP設計端。
   as_of: '2026-10-18'
   evidence:
   - tw.6533#e1
@@ -1711,7 +1826,7 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.6548
-  detail: IC導線架占營收72.09%，另有環氧樹脂，均屬半導體封裝材料。
+  detail: IC導線架占營收72.09%，另有環氧樹脂，屬半導體封裝材料供應。
   as_of: '2026-10-14'
   evidence:
   - tw.6548#e01
@@ -1722,7 +1837,7 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.6613
-  detail: 製程供應系統設備銷售占49.32%最高，另供晶圓濕製程設備。
+  detail: 製程供應設備銷售占49.32%最高，另承作化學品與氣體供應系統工程。
   as_of: '2026-10-15'
   evidence:
   - tw.6613#e2
@@ -1730,22 +1845,22 @@ members:
   - tw.6613#e4
   confidence: ai_cross_checked
   source: classification
-  stage: wafer_materials
+  stage: tools
   tier: upstream
   stage_role: primary
 - id: tw.6640
-  detail: 半導體製程設備及模具占營收93.90%，主要供應黏晶、封膠等封裝設備。
+  detail: 半導體製程設備及精密模具占營收93.90%，供應黏晶、挑選及封膠設備。
   as_of: '2026-10-15'
   evidence:
   - tw.6640#e1
   - tw.6640#e2
   confidence: ai_cross_checked
   source: classification
-  stage: wafer_materials
+  stage: tools
   tier: upstream
   stage_role: primary
 - id: tw.6643
-  detail: 主要設計與授權基礎及高速介面矽智財，授權金占營收82.2%。
+  detail: 主要提供基礎與高速介面矽智財，授權金占營收82.2%。
   as_of: '2026-10-15'
   evidence:
   - tw.6643#e1
@@ -1758,7 +1873,7 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.6667
-  detail: 廠務供應系統整合占92.37%，提供化學品、研磨液及氣體供應設備系統。
+  detail: 廠務供應系統整合占營收92.37%，提供化學品、研磨液及氣體系統工程。
   as_of: '2026-10-18'
   evidence:
   - tw.6667#e1
@@ -1766,11 +1881,11 @@ members:
   - tw.6667#e5
   confidence: ai_cross_checked
   source: classification
-  stage: wafer_materials
+  stage: tools
   tier: upstream
   stage_role: primary
 - id: tw.6679
-  detail: 明確定位為IC設計公司，產品涵蓋MEMS麥克風、感測與電源管理晶片。
+  detail: 明確定位為IC設計公司，產品涵蓋MEMS麥克風、感測器及電源管理晶片。
   as_of: '2026-10-18'
   evidence:
   - tw.6679#e1
@@ -1782,18 +1897,18 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.6683
-  detail: 後段測試載板占營收61.58%，供應測試介面產品，屬測試設備零組件。
+  detail: 後段測試載板占營收61.58%，另供應探針卡及老化板，屬測試介面工具。
   as_of: '2026-10-15'
   evidence:
   - tw.6683#e6
   - tw.6683#e7
   confidence: ai_cross_checked
   source: classification
-  stage: wafer_materials
+  stage: tools
   tier: upstream
   stage_role: primary
 - id: tw.6691
-  detail: 主要承作無塵室與機電空調統包工程，屬建廠周邊服務，無適合階段。
+  detail: 無塵室及機電空調統包工程為主要業務，半導體客戶營收占60.30%。
   as_of: '2026-10-13'
   evidence:
   - tw.6691#e2
@@ -1802,10 +1917,11 @@ members:
   - tw.6691#e6
   confidence: ai_cross_checked
   source: classification
-  stage: null
-  tier: null
+  stage: tools
+  tier: upstream
+  stage_role: primary
 - id: tw.6693
-  detail: 主要設計銷售功率元件，MOSFET占營收67.82%，公司定位為IC設計。
+  detail: 主要設計與銷售功率元件，MOSFET占營收67.82%，屬IC設計端。
   as_of: '2026-10-18'
   evidence:
   - tw.6693#e1
@@ -1816,29 +1932,29 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.6706
-  detail: 設備占已揭露前三季營收58.28%，另提供雷射二極體晶粒測試分選代工。
+  detail: 設備占已揭露前三季營收58.28%，以測試與雷射設備為主，另提供晶粒測試分選代工。
   as_of: '2026-10-13'
-  evidence: &id018
+  evidence: &id027
   - tw.6706#e1
   - tw.6706#e5
   - tw.6706#e9
   - tw.6706#e13
   confidence: ai_cross_checked
   source: classification
-  stage: wafer_materials
+  stage: tools
   tier: upstream
   stage_role: primary
 - id: tw.6706
-  detail: 設備占已揭露前三季營收58.28%，另提供雷射二極體晶粒測試分選代工。
+  detail: 設備占已揭露前三季營收58.28%，以測試與雷射設備為主，另提供晶粒測試分選代工。
   as_of: '2026-10-13'
-  evidence: *id018
+  evidence: *id027
   confidence: ai_cross_checked
   source: classification
   stage: osat
   tier: downstream
   stage_role: also
 - id: tw.6719
-  detail: 採無晶圓廠模式，主要設計電源管理晶片與MOSFET，屬IC設計。
+  detail: 採無晶圓廠IC設計模式，主要設計電源管理晶片與功率MOSFET。
   as_of: '2026-10-15'
   evidence:
   - tw.6719#e1
@@ -1849,7 +1965,7 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.6739
-  detail: 提供半導體製程設備自動操控、資料採集與監控系統，屬設備智慧化供應端。
+  detail: 智能自動操作系統占營收36.46%最高，提供半導體製程設備自動化與監控整合。
   as_of: '2026-10-15'
   evidence:
   - tw.6739#e2
@@ -1857,11 +1973,11 @@ members:
   - tw.6739#e9
   confidence: ai_cross_checked
   source: classification
-  stage: wafer_materials
+  stage: tools
   tier: upstream
   stage_role: primary
 - id: tw.6742
-  detail: 半導體晶圓材料光學鍍膜占營收54.05%，另供封裝玻璃載板與石英耗材。
+  detail: 半導體晶圓材料光學鍍膜占營收54.05%，另供應先進封裝玻璃載板與石英耗材。
   as_of: '2026-10-13'
   evidence:
   - tw.6742#e1
@@ -1874,9 +1990,9 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.6770
-  detail: 邏輯與記憶體晶圓代工合計占營收98%，另有占2%的先進封裝服務。
+  detail: 邏輯與記憶體晶圓代工合占營收98%，另有先進封裝收入2%。
   as_of: '2026-10-14'
-  evidence: &id019
+  evidence: &id028
   - tw.6770#e1
   - tw.6770#e2
   confidence: ai_cross_checked
@@ -1885,16 +2001,16 @@ members:
   tier: midstream
   stage_role: primary
 - id: tw.6770
-  detail: 邏輯與記憶體晶圓代工合計占營收98%，另有占2%的先進封裝服務。
+  detail: 邏輯與記憶體晶圓代工合占營收98%，另有先進封裝收入2%。
   as_of: '2026-10-14'
-  evidence: *id019
+  evidence: *id028
   confidence: ai_cross_checked
   source: classification
   stage: osat
   tier: downstream
   stage_role: also
 - id: tw.6788
-  detail: 主要供應半導體微汙染防治、氮氣充填與物料追蹤設備，屬設備供應端。
+  detail: 供應半導體微汙染防治、氮氣充填及物料追蹤設備，屬設備供應端。
   as_of: '2026-10-18'
   evidence:
   - tw.6788#e1
@@ -1902,13 +2018,13 @@ members:
   - tw.6788#e3
   confidence: ai_cross_checked
   source: classification
-  stage: wafer_materials
+  stage: tools
   tier: upstream
   stage_role: primary
 - id: tw.6789
-  detail: 影像感測器占營收76.13%，主業為彩色濾光膜與微透鏡的晶圓級光學代工。
+  detail: 主要提供影像感測器彩色濾光膜與微透鏡晶圓級代工，另提供工程測試服務。
   as_of: '2026-10-14'
-  evidence:
+  evidence: &id029
   - tw.6789#e1
   - tw.6789#e2
   confidence: ai_cross_checked
@@ -1916,8 +2032,17 @@ members:
   stage: fab
   tier: midstream
   stage_role: primary
+- id: tw.6789
+  detail: 主要提供影像感測器彩色濾光膜與微透鏡晶圓級代工，另提供工程測試服務。
+  as_of: '2026-10-14'
+  evidence: *id029
+  confidence: ai_cross_checked
+  source: classification
+  stage: osat
+  tier: downstream
+  stage_role: also
 - id: tw.6829
-  detail: 光電及半導體設備零組件占營收72.18%，供應CVD、PVD製程腔體及關鍵零件。
+  detail: 光電及半導體設備零組件占營收72.18%，供應CVD、PVD真空腔體及關鍵零件。
   as_of: '2026-10-18'
   evidence:
   - tw.6829#e1
@@ -1925,11 +2050,11 @@ members:
   - tw.6829#e7
   confidence: ai_cross_checked
   source: classification
-  stage: wafer_materials
+  stage: tools
   tier: upstream
   stage_role: primary
 - id: tw.6830
-  detail: 營收全數來自材料與故障分析等研發檢測服務，未明確屬於所列製造、封測或設備供應階段。
+  detail: 營收全來自材料與故障分析等研發檢測服務，未明確提供量產封測，現有階段無合適項目。
   as_of: '2026-10-15'
   evidence:
   - tw.6830#e1
@@ -1939,7 +2064,7 @@ members:
   stage: null
   tier: null
 - id: tw.6903
-  detail: 營收全數來自無塵室與機電空調統包工程，屬廠務工程，所列階段無適合項目。
+  detail: 營收全來自無塵室及機電空調統包工程，包含半導體廠房管路與配電等廠務服務。
   as_of: '2026-10-13'
   evidence:
   - tw.6903#e2
@@ -1949,10 +2074,11 @@ members:
   - tw.6903#e8
   confidence: ai_cross_checked
   source: classification
-  stage: null
-  tier: null
+  stage: tools
+  tier: upstream
+  stage_role: primary
 - id: tw.6907
-  detail: 32位元微控制器研發設計與銷售為主業，微控制器占營收99.94%。
+  detail: 主要研發設計與銷售32位元微控制器，微控制器占2025年營收99.94%。
   as_of: '2026-10-18'
   evidence:
   - tw.6907#e1
@@ -1963,7 +2089,7 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.6937
-  detail: 主要收入為半導體設備技術服務、主設備及客製零組件，皆屬設備供應業務。
+  detail: 技術服務、主設備及客製化零組件為主要收入，均圍繞半導體製程設備。
   as_of: '2026-10-15'
   evidence:
   - tw.6937#e02
@@ -1974,11 +2100,11 @@ members:
   - tw.6937#e08
   confidence: ai_cross_checked
   source: classification
-  stage: wafer_materials
+  stage: tools
   tier: upstream
   stage_role: primary
 - id: tw.6944
-  detail: 工程收入占79.4%，主業為純水、廢水及回收系統工程，所列階段無適合項目。
+  detail: 工程收入占79.4%，主做半導體超純水與廢水系統廠務工程，另銷售水系統耗材及化學品。
   as_of: '2026-10-14'
   evidence:
   - tw.6944#e1
@@ -1988,10 +2114,11 @@ members:
   - tw.6944#e11
   confidence: ai_cross_checked
   source: classification
-  stage: null
-  tier: null
+  stage: tools
+  tier: upstream
+  stage_role: primary
 - id: tw.6962
-  detail: 顯示器驅動IC占營收100%，主要從事顯示驅動與觸控IC設計研發。
+  detail: 從事顯示驅動與觸控IC設計，2024年顯示器驅動IC類別占營收100%。
   as_of: '2026-10-18'
   evidence:
   - tw.6962#e2
@@ -2002,7 +2129,7 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.7556
-  detail: 半導體零組件占營收88.13%，供應製程設備陶瓷零件、密封材及吸盤。
+  detail: 半導體零組件占營收88.13%，主要供應製程設備精密零件、密封材並提供維修。
   as_of: '2026-10-18'
   evidence:
   - tw.7556#e1
@@ -2013,11 +2140,11 @@ members:
   - tw.7556#e6
   confidence: ai_cross_checked
   source: classification
-  stage: wafer_materials
+  stage: tools
   tier: upstream
   stage_role: primary
 - id: tw.7728
-  detail: 主要研製光電量測與晶圓檢測設備，半導體光電轉換測試儀器占營收51.26%。
+  detail: 主要研製光電轉換測試及晶圓級光電檢測儀器，屬測試設備供應商。
   as_of: '2026-10-18'
   evidence:
   - tw.7728#e1
@@ -2025,11 +2152,11 @@ members:
   - tw.7728#e5
   confidence: ai_cross_checked
   source: classification
-  stage: wafer_materials
+  stage: tools
   tier: upstream
   stage_role: primary
 - id: tw.7730
-  detail: 機台銷售占營收84.84%，主供半導體封裝與載板製程用電漿蝕刻及清洗設備。
+  detail: 機台銷售占營收84.84%，供應封裝及載板製程使用的電漿蝕刻與清洗設備。
   as_of: '2026-10-18'
   evidence:
   - tw.7730#e1
@@ -2038,22 +2165,22 @@ members:
   - tw.7730#e6
   confidence: ai_cross_checked
   source: classification
-  stage: wafer_materials
+  stage: tools
   tier: upstream
   stage_role: primary
 - id: tw.7734
-  detail: 最大收入為氣動與熱能製程設備，供應封裝除泡、翹曲抑制及預燒測試機台。
+  detail: 最大收入來自封裝氣動與熱能製程設備，另供應自動化及預燒測試機台。
   as_of: '2026-10-14'
   evidence:
   - tw.7734#e01
   - tw.7734#e02
   confidence: ai_cross_checked
   source: classification
-  stage: wafer_materials
+  stage: tools
   tier: upstream
   stage_role: primary
 - id: tw.7749
-  detail: 自設計聲學ASIC產品占營收63.09%，另提供演算法智財授權與技術服務。
+  detail: 自行設計AI聲學ASIC，占2026年第一季營收63.09%，另提供演算法智財授權。
   as_of: '2026-10-18'
   evidence:
   - tw.7749#e1
@@ -2065,7 +2192,7 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.7751
-  detail: 機台設備為最大收入來源，研製半導體封裝製程、外觀與電性檢測設備。
+  detail: 機台設備為最大營收來源，供應半導體封裝製程、外觀及電性檢測設備。
   as_of: '2026-10-15'
   evidence:
   - tw.7751#e2
@@ -2076,11 +2203,11 @@ members:
   - tw.7751#e8
   confidence: ai_cross_checked
   source: classification
-  stage: wafer_materials
+  stage: tools
   tier: upstream
   stage_role: primary
 - id: tw.7768
-  detail: 半導體研磨墊與耗材占營收66%，供應晶圓CMP製程使用的材料與耗材。
+  detail: 半導體研磨墊與耗材占營收66%，主要供應晶圓CMP製程所需材料及耗材。
   as_of: '2026-10-15'
   evidence:
   - tw.7768#e01
@@ -2091,14 +2218,14 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.7769
-  detail: 測試分類機占營收42%為最大產品，另供主動溫控系統與水冷板，屬測試設備供應端。
+  detail: 最大單項收入為測試分類機42%，另供應主動溫控系統與水冷板等測試設備產品。
   as_of: '2026-10-14'
   evidence:
   - tw.7769#e1
   - tw.7769#e2
   confidence: ai_cross_checked
   source: classification
-  stage: wafer_materials
+  stage: tools
   tier: upstream
   stage_role: primary
 - id: tw.7822
@@ -2109,23 +2236,32 @@ members:
   - tw.7822#E2
   confidence: ai_cross_checked
   source: classification
-  stage: wafer_materials
+  stage: tools
   tier: upstream
   stage_role: primary
 - id: tw.7828
-  detail: 半導體自動化設備占營收98.26%，另供探針卡材料與銅柱封裝元件，皆屬材料設備端。
+  detail: 半導體自動化設備占營收98.26%，另供應探針卡材料包及先進封裝銅柱端子。
   as_of: '2026-10-14'
-  evidence:
+  evidence: &id030
   - tw.7828#e1
   - tw.7828#e3
   - tw.7828#e4
   confidence: ai_cross_checked
   source: classification
-  stage: wafer_materials
+  stage: tools
   tier: upstream
   stage_role: primary
+- id: tw.7828
+  detail: 半導體自動化設備占營收98.26%，另供應探針卡材料包及先進封裝銅柱端子。
+  as_of: '2026-10-14'
+  evidence: *id030
+  confidence: ai_cross_checked
+  source: classification
+  stage: wafer_materials
+  tier: upstream
+  stage_role: also
 - id: tw.7856
-  detail: 設備與客製化產品占52%，另供應探針卡及耗材，屬設備材料供應端。
+  detail: 設備與客製化產品占52%，另提供測試設備工程及探針卡，屬設備供應端。
   as_of: '2026-10-14'
   evidence:
   - tw.7856#e02
@@ -2133,13 +2269,13 @@ members:
   - tw.7856#e07
   confidence: ai_cross_checked
   source: classification
-  stage: wafer_materials
+  stage: tools
   tier: upstream
   stage_role: primary
 - id: tw.8016
-  detail: 以無晶圓廠顯示驅動IC設計為主，子公司另經營半導體製程與測試設備。
+  detail: 以顯示驅動與感測晶片設計為主，子公司新特系統另經營製程與測試設備。
   as_of: '2026-10-15'
-  evidence: &id020
+  evidence: &id031
   - tw.8016#e2
   - tw.8016#e7
   - tw.8016#e8
@@ -2149,28 +2285,37 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.8016
-  detail: 以無晶圓廠顯示驅動IC設計為主，子公司另經營半導體製程與測試設備。
+  detail: 以顯示驅動與感測晶片設計為主，子公司新特系統另經營製程與測試設備。
   as_of: '2026-10-15'
-  evidence: *id020
+  evidence: *id031
   confidence: ai_cross_checked
   source: classification
-  stage: wafer_materials
+  stage: tools
   tier: upstream
   stage_role: also
 - id: tw.8027
-  detail: 雷射設備占48.81%為最大收入，另有電漿設備及包裝材料。
+  detail: 雷射與電漿設備合計占59.56%，另有占18.83%的SMD包裝材料業務。
   as_of: '2026-10-15'
-  evidence:
+  evidence: &id032
   - tw.8027#e1
   - tw.8027#e2
   - tw.8027#e5
   confidence: ai_cross_checked
   source: classification
-  stage: wafer_materials
+  stage: tools
   tier: upstream
   stage_role: primary
+- id: tw.8027
+  detail: 雷射與電漿設備合計占59.56%，另有占18.83%的SMD包裝材料業務。
+  as_of: '2026-10-15'
+  evidence: *id032
+  confidence: ai_cross_checked
+  source: classification
+  stage: wafer_materials
+  tier: upstream
+  stage_role: also
 - id: tw.8028
-  detail: 提供再生晶圓、測試晶圓及薄化服務，暫歸晶圓材料；再生與薄化營收未拆分。
+  detail: 提供再生晶圓、測試晶圓及薄化服務，依產品性質歸材料端；再生與薄化營收未拆分。
   as_of: '2026-10-15'
   evidence:
   - tw.8028#e1
@@ -2182,7 +2327,7 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.8040
-  detail: 主要研發設計乙太網路收發器、交換器及PoE控制晶片，生產委外。
+  detail: 研發設計乙太網路收發器、交換器及PoE控制晶片，產品委外生產。
   as_of: '2026-10-18'
   evidence:
   - tw.8040#e1
@@ -2194,7 +2339,7 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.8054
-  detail: NRE設計服務及ASIC晶圓產品占56.43%，並提供ASIC與IP設計。
+  detail: NRE設計服務及ASIC晶圓產品占56.43%，核心為ASIC與IP設計服務。
   as_of: '2026-10-18'
   evidence:
   - tw.8054#e1
@@ -2206,9 +2351,9 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.8070
-  detail: 導線架占合併營收48.91%為最大項，另代理封膠樹脂、基板與設備，均屬材料設備端。
+  detail: 合併營收以導線架占48.91%最高，另代理封膠樹酯、基板與封裝設備。
   as_of: '2026-10-13'
-  evidence:
+  evidence: &id033
   - tw.8070#e2
   - tw.8070#e3
   - tw.8070#e15
@@ -2217,8 +2362,17 @@ members:
   stage: wafer_materials
   tier: upstream
   stage_role: primary
+- id: tw.8070
+  detail: 合併營收以導線架占48.91%最高，另代理封膠樹酯、基板與封裝設備。
+  as_of: '2026-10-13'
+  evidence: *id033
+  confidence: ai_cross_checked
+  source: classification
+  stage: tools
+  tier: upstream
+  stage_role: also
 - id: tw.8081
-  detail: 以類比及混合訊號IC設計為主，電源管理IC占82%，製造封裝委外。
+  detail: 電源管理IC占82%，從事類比與混合訊號IC設計，製造及封裝委外。
   as_of: '2026-10-15'
   evidence:
   - tw.8081#e1
@@ -2229,7 +2383,7 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.8086
-  detail: 以六吋砷化鎵晶圓代工為主，提供射頻與VCSEL製程。
+  detail: 主要提供六吋砷化鎵晶圓代工，涵蓋射頻元件及VCSEL晶片製程。
   as_of: '2026-10-15'
   evidence:
   - tw.8086#e1
@@ -2241,7 +2395,7 @@ members:
   tier: midstream
   stage_role: primary
 - id: tw.8091
-  detail: 主要供應半導體設備客製化零件、離子植入機耗材及設備模組整合服務。
+  detail: 主要供應半導體設備關鍵零組件、耗材及模組整合，並提供維修與表面處理。
   as_of: '2026-10-18'
   evidence:
   - tw.8091#e1
@@ -2249,11 +2403,11 @@ members:
   - tw.8091#e7
   confidence: ai_cross_checked
   source: classification
-  stage: wafer_materials
+  stage: tools
   tier: upstream
   stage_role: primary
 - id: tw.8096
-  detail: 以半導體零組件通路為主，經銷記憶體、影像感測器與LSI晶片。
+  detail: 以半導體零組件通路為主，經銷記憶體、影像感測器及LSI晶片。
   as_of: '2026-10-18'
   evidence:
   - tw.8096#e1
@@ -2266,7 +2420,7 @@ members:
   tier: downstream
   stage_role: primary
 - id: tw.8110
-  detail: 提供記憶體IC封裝測試代工，封裝占63%、測試占37%。
+  detail: 核心為記憶體IC封裝與測試代工，營收占比分別為63%及37%。
   as_of: '2026-10-15'
   evidence:
   - tw.8110#e1
@@ -2277,7 +2431,7 @@ members:
   tier: downstream
   stage_role: primary
 - id: tw.8112
-  detail: 經銷半導體零組件，DRAM占銷售63%、Flash占25%，屬記憶體通路。
+  detail: 經銷半導體零組件，DRAM與Flash合計占銷售88%，屬記憶體通路。
   as_of: '2026-10-15'
   evidence:
   - tw.8112#e1
@@ -2289,9 +2443,9 @@ members:
   tier: downstream
   stage_role: primary
 - id: tw.8131
-  detail: 以記憶體封裝測試為核心，另提供模組OEM與ODM；未揭露各業務營收占比。
+  detail: 主要提供記憶體封裝與測試，另有記憶體模組OEM及ODM業務。
   as_of: '2026-10-15'
-  evidence: &id021
+  evidence: &id034
   - tw.8131#e1
   - tw.8131#e2
   - tw.8131#e3
@@ -2301,16 +2455,16 @@ members:
   tier: downstream
   stage_role: primary
 - id: tw.8131
-  detail: 以記憶體封裝測試為核心，另提供模組OEM與ODM；未揭露各業務營收占比。
+  detail: 主要提供記憶體封裝與測試，另有記憶體模組OEM及ODM業務。
   as_of: '2026-10-15'
-  evidence: *id021
+  evidence: *id034
   confidence: ai_cross_checked
   source: classification
   stage: distribution
   tier: downstream
   stage_role: also
 - id: tw.8150
-  detail: 主要提供封裝、測試及晶圓凸塊服務，記憶體封測占第二季營收51%。
+  detail: 提供後段封裝、測試及晶圓凸塊服務，記憶體封測占營收51%。
   as_of: '2026-10-14'
   evidence:
   - tw.8150#e01
@@ -2323,7 +2477,7 @@ members:
   tier: downstream
   stage_role: primary
 - id: tw.8227
-  detail: 設計服務收入占60.23%，提供ASIC、SoC及IP服務；晶圓製造與封裝委外。
+  detail: 設計服務占60.23%，提供ASIC、SoC及IP服務，晶圓製造與封裝委外。
   as_of: '2026-10-13'
   evidence:
   - tw.8227#e1
@@ -2335,7 +2489,7 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.8261
-  detail: 定位為功率半導體設計公司，主要研發設計MOSFET，低壓產品占49.07%。
+  detail: 以功率半導體元件設計與銷售為主，低、中、高壓MOSFET為主要營收來源。
   as_of: '2026-10-15'
   evidence:
   - tw.8261#e1
@@ -2346,7 +2500,7 @@ members:
   tier: upstream
   stage_role: primary
 - id: tw.8271
-  detail: 記憶體模組占50.48%為最大收入，另以SSD等快閃儲存產品為主。
+  detail: 記憶體模組占50.48%，快閃儲存產品占48.14%，主要位於模組端。
   as_of: '2026-10-15'
   evidence:
   - tw.8271#e2
@@ -2357,9 +2511,9 @@ members:
   tier: downstream
   stage_role: primary
 - id: tw.8299
-  detail: 快閃記憶體模組占72.41%為主，另有自主控制晶片設計，控制晶片占19.26%。
+  detail: 快閃記憶體模組占72.41%為最大收入，另自主研發控制晶片，占19.26%。
   as_of: '2026-10-14'
-  evidence: &id022
+  evidence: &id035
   - tw.8299#e2
   confidence: ai_cross_checked
   source: classification
@@ -2367,16 +2521,16 @@ members:
   tier: downstream
   stage_role: primary
 - id: tw.8299
-  detail: 快閃記憶體模組占72.41%為主，另有自主控制晶片設計，控制晶片占19.26%。
+  detail: 快閃記憶體模組占72.41%為最大收入，另自主研發控制晶片，占19.26%。
   as_of: '2026-10-14'
-  evidence: *id022
+  evidence: *id035
   confidence: ai_cross_checked
   source: classification
   stage: ip_design
   tier: upstream
   stage_role: also
 - id: tw.8383
-  detail: 鏈內可明確對應的業務為子公司半導體設備真空腔體與零組件；廠務工程無適合階段。
+  detail: 廠務工程占48%，提供無塵室與排氣工程；子公司另製造半導體設備腔體及零件。
   as_of: '2026-10-18'
   evidence:
   - tw.8383#e2
@@ -2385,7 +2539,7 @@ members:
   - tw.8383#e9
   confidence: ai_cross_checked
   source: classification
-  stage: wafer_materials
+  stage: tools
   tier: upstream
   stage_role: primary
 as_of: '2026-10-18'

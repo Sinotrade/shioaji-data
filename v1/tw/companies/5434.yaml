@@ -20,10 +20,13 @@ industry:
 chain: chain.semiconductor
 chain_stage:
   agreement: both
-  also: []
-  reason: 半導體相關產品占營收84.6%，主要供應光阻、晶圓、石英製品與研磨液。
+  also:
+  - stage: tools
+    stage_name: 設備與廠務
+    tier: upstream
+  reason: 半導體材料相關產品占營收84.6%，另有純廢水、無塵室及廠務工程業務。
   stage: wafer_materials
-  stage_name: 矽晶圓、材料與設備
+  stage_name: 矽晶圓與材料
   tier: upstream
 primary_chain_position: upstream
 summary_short: 銷售半導體關鍵材料，並透過集團提供廠務與環保工程服務。

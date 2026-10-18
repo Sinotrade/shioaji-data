@@ -20,10 +20,16 @@ industry:
 chain: chain.semiconductor
 chain_stage:
   agreement: both
-  also: []
-  reason: 環球晶圓矽晶圓及磊晶貢獻營收77.52%，集團另有宏捷科砷化鎵晶片製造。
+  also:
+  - stage: fab
+    stage_name: 晶圓製造
+    tier: midstream
+  - stage: tools
+    stage_name: 設備與廠務
+    tier: upstream
+  reason: 環球晶矽晶圓及磊晶貢獻營收77.52%，集團另有半導體元件製造與設備零件服務。
   stage: wafer_materials
-  stage_name: 矽晶圓、材料與設備
+  stage_name: 矽晶圓與材料
   tier: upstream
 primary_chain_position: upstream
 summary_short: 合併營收以環球晶圓矽晶圓為主，另經營車用元件、特氣及再生能源。
