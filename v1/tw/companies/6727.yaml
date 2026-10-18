@@ -8,7 +8,50 @@ industry:
   l0_code: '28'
   l0_name: 電子零組件業
   l0_name_en: Electronic Parts and Components
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.machinery
+  l2_name: 機械與自動化
+  l2_name_en: Machinery & Automation
+  l3: mach.equipment
+  l3_name: 專用設備（非半導體）
+  l3_name_en: Specialty Equipment (Non-semiconductor)
+chain: chain.pcb
+primary_chain_position: upstream
+summary_short: 製造銅箔基板含浸、塗佈貼合及陶瓷薄膜製程設備。
+summary_long: 亞泰金屬以印刷電路板基材製程設備為主要業務，2025年營收占比92.78%，薄膜製程設備占3.25%，其餘為舊機整改搬遷、售服及其他業務。主要產品包括銅箔基板直立式含浸機、PTFE鐵氟龍含浸機與軟性銅箔基板塗佈貼合機，另提供MLCC及LTCC陶瓷塗佈設備。其設備服務銅箔基板、軟性電路板基材與被動元件材料製程。集團持有薩摩亞天崴環球及泰國子公司，並透過天崴間接持有昆山睿平。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_pcb_equipment
+  name: 印刷電路板基材製程設備
+  period: '2025'
+  revenue_share_pct: 92.78
+- evidence_ids:
+  - e1
+  id: seg_film_equipment
+  name: 薄膜製程設備
+  period: '2025'
+  revenue_share_pct: 3.25
+- evidence_ids:
+  - e1
+  id: seg_relocation
+  name: 舊機整改搬遷設備
+  period: '2025'
+  revenue_share_pct: 1.44
+- evidence_ids:
+  - e1
+  id: seg_service
+  name: 售服
+  period: '2025'
+  revenue_share_pct: 0.97
+- evidence_ids:
+  - e1
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 1.56
 relations:
   customers:
   - as_of: '2026-05-04'
@@ -94,7 +137,56 @@ website: www.asiametalinc.com
 tax_id: 04393941
 incorporated: '1973-10-29'
 listed: '2020-12-01'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-18'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6727#e1:
+    locator: 第56頁，肆、營運概況／一、業務內容／營業比重
+    published_date: '2026-06-05'
+    publisher: 亞泰金屬工業股份有限公司
+    quote_check: found
+    title: 亞泰金屬工業股份有限公司114年度年報
+    url: https://www.asiametalinc.com/proimage/images/1789538880.pdf
+  tw.6727#e2:
+    locator: 公司簡介首段
+    published_date: null
+    publisher: 亞泰金屬工業股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.asiametalinc.com/about/about-a
+  tw.6727#e3:
+    locator: 銅箔基板產品清單
+    published_date: null
+    publisher: 亞泰金屬工業股份有限公司
+    quote_check: found
+    title: 銅箔基板
+    url: https://www.asiametalinc.com/product/category9
+  tw.6727#e4:
+    locator: 高頻銅箔基板產品清單
+    published_date: null
+    publisher: 亞泰金屬工業股份有限公司
+    quote_check: found
+    title: 高頻銅箔基板
+    url: https://www.asiametalinc.com/product/category4
+  tw.6727#e5:
+    locator: 產品頁標題及應用領域
+    published_date: null
+    publisher: 亞泰金屬工業股份有限公司
+    quote_check: found
+    title: 軟性銅箔基板 (FCCL)塗佈貼合機
+    url: https://www.asiametalinc.com/product/category6
+  tw.6727#e6:
+    locator: 被動元件產品清單
+    published_date: null
+    publisher: 亞泰金屬工業股份有限公司
+    quote_check: found
+    title: 被動元件
+    url: https://www.asiametalinc.com/product/category5
+  tw.6727#e7:
+    locator: 被動元件產品清單
+    published_date: null
+    publisher: 亞泰金屬工業股份有限公司
+    quote_check: found
+    title: 被動元件
+    url: https://www.asiametalinc.com/product/category5

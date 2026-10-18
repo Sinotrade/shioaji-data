@@ -8,12 +8,66 @@ industry:
   l0_code: '17'
   l0_name: 金融保險業
   l0_name_en: Financial and Insurance
-primary_chain_position: unknown
+  l1: finance
+  l1_name: 金融
+  l1_name_en: Financials
+  l2: fin.insurance
+  l2_name: 保險
+  l2_name_en: Insurance
+  l3: fin.property
+  l3_name: 產物保險
+  l3_name_en: Property & Casualty Insurance
+chain: chain.finance
+primary_chain_position: not_applicable
+summary_short: 經營產物保險，提供車險、火險、傷害險、工程險及責任險。
+summary_long: 台產提供車體損失、商業火災、意外傷害、工程及一般責任等產物保險商品。車體損失險分為甲式、乙式與丙式，依不同契約設計承保車輛毀損風險；商業火險承保非住宅建築、機器設備與貨物等財產。意外傷害險依契約提供意外事故所致身故或失能給付。工程險涵蓋營造工程、機械設備安裝及施工機具等風險。一般責任險包含營業處所與活動事件的公共意外責任保障，承保約定事故造成第三人體傷或財物損失所生的法定賠償責任。
 website: https://www.tfmi.com.tw
 tax_id: '03557115'
 incorporated: '1948-03-12'
 listed: '1997-09-30'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-18'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2832#e2:
+    locator: 印刷頁100，肆、營運概況／業務範圍
+    published_date: '2026-03-31'
+    publisher: 臺灣產物保險股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.tfmi.com.tw/Files/TFMI/%E5%90%84%E5%96%AE%E4%BD%8D%E4%B8%8A%E5%82%B3/%E8%B2%A1%E5%8B%99%E9%83%A8/%E8%B2%A1%E5%8B%99%E8%A8%8A%E6%81%AF/%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1/%E5%8F%B0%E7%94%A2114%E5%B9%B4%E5%A0%B1.pdf
+  tw.2832#e3:
+    locator: 商品介紹及甲式、乙式、丙式承保範圍
+    published_date: null
+    publisher: 臺灣產物保險股份有限公司
+    quote_check: found
+    title: 車體損失保險
+    url: https://www.tfmi.com.tw/product-personal-detail?id=P11
+  tw.2832#e4:
+    locator: 商業火災保險／商品介紹及承保範圍
+    published_date: null
+    publisher: 臺灣產物保險股份有限公司
+    quote_check: found
+    title: 商業火災保險及其附加險
+    url: https://www.tfmi.com.tw/product-business-detail?id=B11
+  tw.2832#e5:
+    locator: 個人傷害保險／承保範圍
+    published_date: null
+    publisher: 臺灣產物保險股份有限公司
+    quote_check: found
+    title: 意外傷害保險
+    url: https://www.tfmi.com.tw/product-personal-detail?id=P31
+  tw.2832#e6:
+    locator: 工程保險介紹及常見類別
+    published_date: null
+    publisher: 臺灣產物保險股份有限公司
+    quote_check: found
+    title: 工程險
+    url: https://www.tfmi.com.tw/product-business-detail?id=B21
+  tw.2832#e7:
+    locator: 營業處所及活動事件公共意外責任保險／承保範圍
+    published_date: null
+    publisher: 臺灣產物保險股份有限公司
+    quote_check: found
+    title: 一般責任保險
+    url: https://www.tfmi.com.tw/product-business-detail?id=B41

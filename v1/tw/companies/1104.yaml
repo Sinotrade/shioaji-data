@@ -9,6 +9,37 @@ industry:
   l0_name: 水泥工業
   l0_name_en: Cement
 primary_chain_position: unknown
+relations:
+  customers:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 卜特蘭水泥採購
+    details:
+    - 卜特蘭水泥採購
+    edge: ed98f481423b0
+    evidence_level: primary
+    id: tw.9930
+    name: 中聯資源
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: 2025-01
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 爐石粉銷售
+    details:
+    - 爐石粉銷售
+    edge: e609bc7b2a19b
+    evidence_level: primary
+    id: tw.9930
+    name: 中聯資源
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.ucctw.com
 tax_id: 07568009
 incorporated: '1960-03-21'
