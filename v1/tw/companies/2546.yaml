@@ -8,79 +8,19 @@ industry:
   l0_code: '14'
   l0_name: 建材營造業
   l0_name_en: Building Material and Construction
-  l1: industrials
-  l1_name: 工業
-  l1_name_en: Industrials
-  l2: ind.construction
-  l2_name: 營建與工程
-  l2_name_en: Engineering & Construction
-  l3: cons.engineering
-  l3_name: 工程與統包
-  l3_name_en: Engineering & EPC
-primary_chain_position: not_applicable
-summary_short: 承攬住宅商辦、科技廠房與公共土木工程，以綜合營造服務取得收入。
-summary_long: 根基營造以綜合營造工程承攬為核心，服務涵蓋住宅商辦、公共及醫療建築、交通與土木橋梁，以及科技廠辦。依2025年度年報揭露，合併營收分為建設工程20.17%、土建工程19.69%及其它工程60.14%，其中其它工程包含高科技與民間廠房等工程。母公司為冠德建設；直接控制的公司包括冠慶機電與捷群投資，年報列示根基對兩家公司持股分別為99.97%與99.98%。
-segments:
-- evidence_ids:
-  - e2
-  id: seg.construction
-  name: 建設工程
-  period: '2025'
-  revenue_share_pct: 20.17
-- evidence_ids:
-  - e3
-  id: seg.civil
-  name: 土建工程
-  period: '2025'
-  revenue_share_pct: 19.69
-- evidence_ids:
-  - e4
-  id: seg.other
-  name: 其它工程
-  period: '2025'
-  revenue_share_pct: 60.14
+primary_chain_position: unknown
 relations:
   parents:
-  - as_of: 2026-10
+  - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
     detail: 綜合營造子公司
     details:
     - 綜合營造子公司
-    - 母公司
     edge: e96bbe1b21ef5
     evidence_level: primary
     id: tw.2520
     name: 冠德
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 2
-  subsidiaries:
-  - as_of: '2026-03-27'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 直接控制子公司
-    details:
-    - 直接控制子公司
-    edge: e8a585dea2b99
-    evidence_level: primary
-    id: org.冠慶機電股份有限公司
-    name: 冠慶機電股份有限公司
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
-  - as_of: '2026-03-27'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 直接控制子公司
-    details:
-    - 直接控制子公司
-    edge: e10539d5f4e18
-    evidence_level: primary
-    id: org.捷群投資股份有限公司
-    name: 捷群投資股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -89,63 +29,7 @@ website: http://www.kedge.com.tw
 tax_id: '43876760'
 incorporated: '1982-04-13'
 listed: '2000-09-11'
-as_of: '2026-10-18'
-confidence: ai_cross_checked
-has_research: true
-evidence:
-  tw.2546#e1:
-    locator: 業務與規模；競爭優勢與展望
-    published_date: null
-    publisher: 根基營造股份有限公司
-    quote_check: found
-    title: 1.3公司概況
-    url: https://esg.kedge.com.tw/company-profile/
-  tw.2546#e2:
-    locator: 印刷頁73，營業比重表：合併公司114年度營業收入
-    published_date: null
-    publisher: 根基營造股份有限公司
-    quote_check: found
-    title: 根基營造114年度股東會年報
-    url: https://www.kedge.com.tw/wp-content/uploads/2026/06/%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
-  tw.2546#e3:
-    locator: 印刷頁73，營業比重表：合併公司114年度營業收入
-    published_date: null
-    publisher: 根基營造股份有限公司
-    quote_check: found
-    title: 根基營造114年度股東會年報
-    url: https://www.kedge.com.tw/wp-content/uploads/2026/06/%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
-  tw.2546#e4:
-    locator: 印刷頁73，營業比重表：合併公司114年度營業收入
-    published_date: null
-    publisher: 根基營造股份有限公司
-    quote_check: found
-    title: 根基營造114年度股東會年報
-    url: https://www.kedge.com.tw/wp-content/uploads/2026/06/%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
-  tw.2546#e5:
-    locator: 印刷頁73，業務範圍／所營業務主要內容／其它工程
-    published_date: null
-    publisher: 根基營造股份有限公司
-    quote_check: found
-    title: 根基營造114年度股東會年報
-    url: https://www.kedge.com.tw/wp-content/uploads/2026/06/%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
-  tw.2546#e6:
-    locator: 公司簡介
-    published_date: null
-    publisher: 根基營造股份有限公司
-    quote_check: found
-    title: 公司治理
-    url: https://www.kedge.com.tw/csr/%E5%85%AC%E5%8F%B8%E6%B2%BB%E7%90%86/
-  tw.2546#e7:
-    locator: 印刷頁69，綜合持股比例表／本公司投資欄
-    published_date: null
-    publisher: 根基營造股份有限公司
-    quote_check: found
-    title: 根基營造114年度股東會年報
-    url: https://www.kedge.com.tw/wp-content/uploads/2026/06/%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
-  tw.2546#e8:
-    locator: 印刷頁69，綜合持股比例表／本公司投資欄
-    published_date: null
-    publisher: 根基營造股份有限公司
-    quote_check: found
-    title: 根基營造114年度股東會年報
-    url: https://www.kedge.com.tw/wp-content/uploads/2026/06/%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
+confidence: official
+has_research: false
+quality_flags:
+- no_research

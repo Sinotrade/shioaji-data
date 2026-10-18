@@ -8,129 +8,13 @@ industry:
   l0_code: '28'
   l0_name: 電子零組件業
   l0_name_en: Electronic Parts and Components
-  l1: tech
-  l1_name: 科技
-  l1_name_en: Technology
-  l2: tech.components
-  l2_name: 電子零組件
-  l2_name_en: Electronic Components
-  l3: comp.pcb
-  l3_name: 印刷電路板
-  l3_name_en: Printed Circuit Boards
-chain: chain.pcb
-primary_chain_position: midstream
-summary_short: 透過子公司製造及銷售硬式印刷電路板，以多層板為主要營收來源。
-summary_long: 泰鼎國際透過子公司經營印刷電路板製造與銷售，主要產品包括多層板、雙面板及單面板，應用於液晶電視、視訊轉換盒、硬碟、印表機與車用多媒體設備。2025年營收以多層板為主，占77.73%，雙面板占18.95%，單面板占3.04%，其他項目占0.28%。集團直接子公司APT從事印刷電路板生產及銷售，另一直接子公司AET負責供應鏈整合，並透過APT持有泰國電路板公司APS。
-segments:
-- evidence_ids:
-  - e2
-  id: multilayer
-  name: 多層板
-  period: '2025'
-  revenue_share_pct: 77.73
-- evidence_ids:
-  - e2
-  id: double_sided
-  name: 雙面板
-  period: '2025'
-  revenue_share_pct: 18.95
-- evidence_ids:
-  - e2
-  id: single_sided
-  name: 單面板
-  period: '2025'
-  revenue_share_pct: 3.04
-- evidence_ids:
-  - e2
-  id: other
-  name: 其他
-  period: '2025'
-  revenue_share_pct: 0.28
-relations:
-  subsidiaries:
-  - as_of: '2026-06-30'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 泰國直接子公司，簡稱APT
-    details:
-    - 泰國直接子公司，簡稱APT
-    edge: e2ce02abbfe01
-    evidence_level: primary
-    id: org.apex-circuit-thailand
-    name: Apex Circuit (Thailand) Co., Ltd.
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
-  - as_of: '2026-06-30'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 直接子公司，簡稱AET
-    details:
-    - 直接子公司，簡稱AET
-    edge: ecbb7c5a95747
-    evidence_level: primary
-    id: org.approach-excellence-trading
-    name: Approach Excellence Trading Ltd.
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
-  - as_of: '2026-06-30'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 透過APT持有之泰國間接子公司，簡稱APS
-    details:
-    - 透過APT持有之泰國間接子公司，簡稱APS
-    edge: ef8c18fbdf3a3
-    evidence_level: primary
-    id: org.shye-feng-enterprise-thailand
-    name: Shye Feng Enterprise (Thailand) Co., Ltd.
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
+primary_chain_position: unknown
 website: http://www.apex-intl.com.tw
 tax_id: '54384828'
 incorporated: '2009-10-28'
 listed: '2015-09-08'
 foreign_registration: KY 開曼群島
-as_of: '2026-10-18'
-confidence: ai_cross_checked
-has_research: true
-evidence:
-  tw.4927#e1:
-    locator: 集團簡介第一段
-    published_date: null
-    publisher: 泰鼎國際股份有限公司
-    quote_check: found
-    title: 集團簡介
-    url: https://www.apex-intl.com.tw/about/apex/group
-  tw.4927#e2:
-    locator: 印刷頁57，伍、營運概況／主要營業項目及營業比重；數字依序為2024年金額、比重及2025年金額、比重
-    published_date: null
-    publisher: 泰鼎國際股份有限公司
-    quote_check: found
-    title: 114年度年報
-    url: https://www.apex-intl.com.tw/files/investor/2025_4927_20260429F04_20260417_183402.pdf
-  tw.4927#e3:
-    locator: 印刷頁10，附註四（二）合併基礎，列入合併財務報告之子公司表；投資公司為本公司
-    published_date: null
-    publisher: 泰鼎國際股份有限公司
-    quote_check: unreachable
-    title: 115年及114年第二季合併財務報告暨會計師查核報告
-    url: https://www.apex-intl.com.tw/files/quarterly_results/202602_4927_AI1_20260814_182955.pdf
-  tw.4927#e4:
-    locator: 印刷頁10，附註四（二）合併基礎，列入合併財務報告之子公司表；投資公司為本公司
-    published_date: null
-    publisher: 泰鼎國際股份有限公司
-    quote_check: unreachable
-    title: 115年及114年第二季合併財務報告暨會計師查核報告
-    url: https://www.apex-intl.com.tw/files/quarterly_results/202602_4927_AI1_20260814_182955.pdf
-  tw.4927#e5:
-    locator: 印刷頁10，附註四（二）合併基礎，列入合併財務報告之子公司表；投資公司為APT
-    published_date: null
-    publisher: 泰鼎國際股份有限公司
-    quote_check: unreachable
-    title: 115年及114年第二季合併財務報告暨會計師查核報告
-    url: https://www.apex-intl.com.tw/files/quarterly_results/202602_4927_AI1_20260814_182955.pdf
+confidence: official
+has_research: false
+quality_flags:
+- no_research
