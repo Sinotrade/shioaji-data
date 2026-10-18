@@ -50,6 +50,7 @@ relations:
     detail: LCD驅動IC後段封裝測試市場
     details:
     - LCD驅動IC後段封裝測試市場
+    - 獨立半導體封裝與測試市場
     edge: e3cafede8ebdd
     evidence_level: primary
     id: tw.8150
@@ -57,7 +58,7 @@ relations:
     ranking_basis: unranked
     share_basis: null
     share_pct: null
-    weight: 1
+    weight: 2
   customers:
   - as_of: '2012-11-23'
     confidence: ai_cross_checked
@@ -83,6 +84,20 @@ relations:
     evidence_level: media
     id: tw.3034
     name: 聯詠
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-29'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 封裝捲帶材料（Tape）
+    details:
+    - 封裝捲帶材料（Tape）
+    edge: ec3d4a69ae115
+    evidence_level: primary
+    id: tw.3592
+    name: 瑞鼎
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -254,7 +269,7 @@ evidence:
     locator: 印刷頁79，5.6.3研發計畫表；矽光子封裝項目之進度列為產品驗證
     published_date: null
     publisher: 頎邦科技股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: 頎邦科技股份有限公司113年度年報
     url: https://www.chipbond.com.tw/upload/media/investor/股東專區/114年股東常會/114年股東常會_CN/114年頎邦股東常會年報-中文.pdf
   tw.6147#e12:
@@ -264,6 +279,13 @@ evidence:
     quote_check: found
     title: Himax Technologies, Inc. 2025 Annual Report
     url: https://www.himax.com.tw/wp-content/uploads/2026/06/Himax_2025_Annual_Report.pdf
+  tw.6147#e13:
+    locator: PDF頁77，印刷頁75，主要原料之供應狀況；公司年報公開鏡像
+    published_date: '2026-03-29'
+    publisher: 瑞鼎科技股份有限公司
+    quote_check: found
+    title: 瑞鼎科技股份有限公司2025年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52350/2026/RNS/52350_rns_2026-06-16_8b7c54b2-36b8-4683-95f4-77a46fb7e4aa.pdf
   tw.6147#e14:
     locator: 記者羅毓嘉報導，首段
     published_date: '2012-11-23'
@@ -303,14 +325,14 @@ evidence:
     locator: 印刷頁81，6.1.1.1關係企業組織圖及6.1.1.5 Chipmore Holding Co., Ltd. (Cayman)持股表
     published_date: null
     publisher: 頎邦科技股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: 頎邦科技股份有限公司113年度年報
     url: https://www.chipbond.com.tw/upload/media/investor/股東專區/114年股東常會/114年股東常會_CN/114年頎邦股東常會年報-中文.pdf
   tw.6147#e2:
     locator: 印刷頁53，4.1.1.2 本公司113年度產品項目及其營業比重
     published_date: null
     publisher: 頎邦科技股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: 頎邦科技股份有限公司113年度年報
     url: https://www.chipbond.com.tw/upload/media/investor/股東專區/114年股東常會/114年股東常會_CN/114年頎邦股東常會年報-中文.pdf
   tw.6147#e21:

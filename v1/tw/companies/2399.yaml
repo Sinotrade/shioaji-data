@@ -8,12 +8,205 @@ industry:
   l0_code: '25'
   l0_name: 電腦及週邊設備業
   l0_name_en: Computer and Peripheral Equipment
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.hardware
+  l2_name: 電腦與硬體
+  l2_name_en: Computers & Hardware
+  l3: hw.gaming
+  l3_name: 電競與消費性硬體
+  l3_name_en: Gaming & Consumer Hardware
+primary_chain_position: midstream
+summary_short: 以BIOSTAR品牌銷售主機板、顯示卡與工業及邊緣運算硬體。
+summary_long: 映泰以BIOSTAR品牌經營電腦板卡與運算硬體，2025年營收以電腦主機板為最大來源，占49%，顯示卡16%、工業電腦11%，其他24%。產品涵蓋Intel與AMD平台主機板、顯示卡、固態硬碟與記憶體，並提供工業及邊緣運算平台。EdgeComp MS-NAT4000支援NVIDIA Jetson Thor T4000模組，面向工業邊緣AI運算；另展示MW-W88U4-S 4U AI工作站，處理企業本地運算。公司亦提供電動車充電樁運算解決方案，相關產品為工業主機板。
+segments:
+- evidence_ids:
+  - e_revenue
+  id: motherboard
+  name: 電腦主機板
+  period: '2025'
+  revenue_share_pct: 49
+- evidence_ids:
+  - e_revenue_graphics
+  id: graphics
+  name: 顯示卡
+  period: '2025'
+  revenue_share_pct: 16
+- evidence_ids:
+  - e_revenue_industrial
+  id: industrial
+  name: 工業電腦
+  period: '2025'
+  revenue_share_pct: 11
+- evidence_ids:
+  - e_revenue_other
+  id: other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 24
+main_theme: theme.ev
+themes:
+- stage: parts
+  theme: theme.ev
+  tier: midstream
+- stage: system
+  theme: theme.nvidia
+  tier: downstream
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%的投資子公司
+    details:
+    - 直接持有100%的投資子公司
+    edge: eeb2ac14cc4c8
+    evidence_level: primary
+    id: org.biostar-microtech-europe-holding-b-v
+    name: Biostar Microtech Europe Holding B.V.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%的美國銷售子公司
+    details:
+    - 直接持有100%的美國銷售子公司
+    edge: eb18ad092b77a
+    evidence_level: primary
+    id: org.biostar-microtech-u-s-a-corp
+    name: Biostar Microtech (U.S.A.) Corp.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%的投資子公司
+    details:
+    - 直接持有100%的投資子公司
+    edge: ec175d2220408
+    evidence_level: primary
+    id: org.garnet-international-corp
+    name: Garnet International Corp.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.biostar.com.tw/app/tw/
 tax_id: '23826200'
 incorporated: '1990-08-29'
 listed: '1999-12-16'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-18'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2399#e_business:
+    locator: 公司基本資料－主要業務
+    published_date: null
+    publisher: 映泰股份有限公司
+    quote_check: found
+    title: 投資人專區－企業簡介
+    url: https://www.biostar.com.tw/app/tw/about/investors.php
+  tw.2399#e_edge:
+    locator: Introduction－產品發表首段
+    published_date: '2026-07-07'
+    publisher: 映泰股份有限公司
+    quote_check: found
+    title: BIOSTAR INTRODUCES EDGECOMP MS-NAT4000 COMPACT EDGE AI COMPUTING SYSTEM
+    url: https://www.biostar.com.tw/app/de/news/news.php?S_ID=696
+  tw.2399#e_ev:
+    locator: 主文開頭－解決方案說明
+    published_date: null
+    publisher: 映泰股份有限公司
+    quote_check: found
+    title: 電動車充電樁解決方案
+    url: https://www.biostar.com.tw/app/tw/solutions/new_solutions_detail.php?S_ID=9
+  tw.2399#e_ev_board:
+    locator: 相關產品－工業主機板，列示RASL-D5DE、BIRPL-PAT、BIAST-PAT、BIELK-PAT
+    published_date: null
+    publisher: 映泰股份有限公司
+    quote_check: not_found
+    title: 電動車充電樁解決方案
+    url: https://www.biostar.com.tw/app/tw/solutions/new_solutions_detail.php?S_ID=9
+  tw.2399#e_mb:
+    locator: Dual-Engine Strategy Across Industrial and Consumer Platforms
+    published_date: '2026-06-03'
+    publisher: 映泰股份有限公司
+    quote_check: found
+    title: BIOSTAR SHOWCASES NEXT-GEN EDGE AI COMPUTING SOLUTIONS AT COMPUTEX 2026
+    url: https://www.biostar.com.tw/app/es/news/news.php?S_ID=692
+  tw.2399#e_products:
+    locator: About－品牌產品說明
+    published_date: null
+    publisher: 映泰股份有限公司
+    quote_check: found
+    title: 關於BIOSTAR映泰
+    url: https://www.biostar.com.tw/app/tw/about/about_aboutus.php
+  tw.2399#e_revenue:
+    locator: 印刷頁26／PDF第30頁，主要產品營業比重：電腦主機板850,307仟元，占49%
+    published_date: '2026-05-13'
+    publisher: 映泰股份有限公司
+    quote_check: found
+    title: 映泰股份有限公司114年度年報
+    url: https://www.biostar.com.tw/upload/Investor/股東會年報_中文版_114年.pdf
+  tw.2399#e_revenue_graphics:
+    locator: 印刷頁26／PDF第30頁，114年產品營收表：顯示卡273,899仟元，百分比欄16%
+    published_date: '2026-05-13'
+    publisher: 映泰股份有限公司
+    quote_check: not_found
+    title: 映泰股份有限公司114年度年報
+    url: https://www.biostar.com.tw/upload/Investor/股東會年報_中文版_114年.pdf
+  tw.2399#e_revenue_industrial:
+    locator: 印刷頁26／PDF第30頁，114年產品營收表：工業電腦198,241仟元，百分比欄11%
+    published_date: '2026-05-13'
+    publisher: 映泰股份有限公司
+    quote_check: not_found
+    title: 映泰股份有限公司114年度年報
+    url: https://www.biostar.com.tw/upload/Investor/股東會年報_中文版_114年.pdf
+  tw.2399#e_revenue_other:
+    locator: 印刷頁26／PDF第30頁，114年產品營收表：其他411,718仟元，百分比欄24%
+    published_date: '2026-05-13'
+    publisher: 映泰股份有限公司
+    quote_check: not_found
+    title: 映泰股份有限公司114年度年報
+    url: https://www.biostar.com.tw/upload/Investor/股東會年報_中文版_114年.pdf
+  tw.2399#e_sub1:
+    locator: 印刷頁27／PDF第28頁，附註12；Investor為The Company，Garnet列，2025年底持股100%，主要業務Investment business
+    published_date: null
+    publisher: 映泰股份有限公司
+    quote_check: found
+    title: Biostar Microtech Int’L Corp. and Subsidiaries－2025及2024年度合併財務報表
+    url: https://www.biostar.com.tw/upload/Investor/Consolidated%20Financial%20Statements_2025.pdf
+  tw.2399#e_sub2:
+    locator: 印刷頁27／PDF第28頁，附註12；Investor為The Company，美國子公司列，2025年底持股100%，業務為銷售主機板、工業電腦及顯示卡
+    published_date: null
+    publisher: 映泰股份有限公司
+    quote_check: found
+    title: Biostar Microtech Int’L Corp. and Subsidiaries－2025及2024年度合併財務報表
+    url: https://www.biostar.com.tw/upload/Investor/Consolidated%20Financial%20Statements_2025.pdf
+  tw.2399#e_sub3:
+    locator: 印刷頁27／PDF第28頁，附註12；Investor為The Company，Europe Holding列，2025年底持股100%，主要業務Investment business
+    published_date: null
+    publisher: 映泰股份有限公司
+    quote_check: found
+    title: Biostar Microtech Int’L Corp. and Subsidiaries－2025及2024年度合併財務報表
+    url: https://www.biostar.com.tw/upload/Investor/Consolidated%20Financial%20Statements_2025.pdf
+  tw.2399#e_subs:
+    locator: 印刷頁27／PDF第28頁，附註12 SUBSIDIARIES，納入合併財報之子公司表
+    published_date: null
+    publisher: 映泰股份有限公司
+    quote_check: found
+    title: Biostar Microtech Int’L Corp. and Subsidiaries－2025及2024年度合併財務報表
+    url: https://www.biostar.com.tw/upload/Investor/Consolidated%20Financial%20Statements_2025.pdf
+  tw.2399#e_workstation:
+    locator: Enterprise AI Workstation Built on Intel W880
+    published_date: '2026-06-03'
+    publisher: 映泰股份有限公司
+    quote_check: found
+    title: BIOSTAR SHOWCASES NEXT-GEN EDGE AI COMPUTING SOLUTIONS AT COMPUTEX 2026
+    url: https://www.biostar.com.tw/app/es/news/news.php?S_ID=692

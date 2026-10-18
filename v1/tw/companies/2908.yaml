@@ -8,12 +8,156 @@ industry:
   l0_code: '18'
   l0_name: 貿易百貨業
   l0_name_en: Trading and Consumers' Goods
-primary_chain_position: unknown
+  l1: consumer
+  l1_name: 消費
+  l1_name_en: Consumer
+  l2: cons.discretionary
+  l2_name: 非必需消費
+  l2_name_en: Consumer Discretionary
+  l3: retail.department
+  l3_name: 百貨與零售
+  l3_name_en: Department Stores & Retail
+primary_chain_position: midstream
+summary_short: 以生活百貨貿易、採購整合服務及居家零售為主要業務。
+summary_long: 特力以生活百貨用品貿易及採購整合服務為核心，商品涵蓋五金工具、衛浴收納、家電、戶外家具與園藝用品。2024年合併營收中，貿易事業占53.7%、零售事業占37.2%、其他占9.1%。集團零售業務透過特力屋等通路銷售居家商品，並提供廚房、衛浴與系統家具整合裝修服務。2025年第一季財報列示的主要子公司包括特力屋、和樂家居及中欣實業，其中中欣實業從事營建管理與機械五金買賣。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_trade
+  name: 貿易事業
+  period: '2024'
+  revenue_share_pct: 53.7
+- evidence_ids:
+  - e2
+  id: seg_retail
+  name: 零售事業
+  period: '2024'
+  revenue_share_pct: 37.2
+- evidence_ids:
+  - e3
+  id: seg_other
+  name: 其他
+  period: '2024'
+  revenue_share_pct: 9.1
+relations:
+  subsidiaries:
+  - as_of: '2025-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 營建管理與機械五金買賣子公司
+    details:
+    - 營建管理與機械五金買賣子公司
+    edge: e15aa0f7c5fde
+    evidence_level: primary
+    id: org.中欣實業股份有限公司
+    name: 中欣實業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 家具、寢具及家居用品零售子公司
+    details:
+    - 家具、寢具及家居用品零售子公司
+    edge: e91f152dfefbf
+    evidence_level: primary
+    id: org.和樂家居股份有限公司
+    name: 和樂家居股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 居家建材、設備及裝設品批發零售子公司
+    details:
+    - 居家建材、設備及裝設品批發零售子公司
+    edge: e1ee64b241688
+    evidence_level: primary
+    id: org.特力屋股份有限公司
+    name: 特力屋股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.testritegroup.com
 tax_id: '20795246'
 incorporated: '1978-08-10'
 listed: '1993-02-18'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-18'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2908#e1:
+    locator: 印刷頁67，合併營業收入比重，113年度欄
+    published_date: null
+    publisher: 特力股份有限公司
+    quote_check: found
+    title: 2024年特力股份有限公司年報
+    url: https://www.testritegroup.com/uploads/2024_069db0ff1f.pdf
+  tw.2908#e10:
+    locator: 印刷頁23，附註十二「子公司」
+    published_date: null
+    publisher: 特力股份有限公司
+    quote_check: found
+    title: 特力股份有限公司及子公司民國114年第1季合併財務報告
+    url: https://www.testritegroup.com/uploads/2025_Q1_cf33c09068.pdf
+  tw.2908#e2:
+    locator: 印刷頁67，合併營業收入比重，113年度欄
+    published_date: null
+    publisher: 特力股份有限公司
+    quote_check: found
+    title: 2024年特力股份有限公司年報
+    url: https://www.testritegroup.com/uploads/2024_069db0ff1f.pdf
+  tw.2908#e3:
+    locator: 印刷頁67，合併營業收入比重，113年度欄
+    published_date: null
+    publisher: 特力股份有限公司
+    quote_check: found
+    title: 2024年特力股份有限公司年報
+    url: https://www.testritegroup.com/uploads/2024_069db0ff1f.pdf
+  tw.2908#e4:
+    locator: 印刷頁68，目前之主要商品（服務）項目
+    published_date: null
+    publisher: 特力股份有限公司
+    quote_check: found
+    title: 2024年特力股份有限公司年報
+    url: https://www.testritegroup.com/uploads/2024_069db0ff1f.pdf
+  tw.2908#e5:
+    locator: 貿易事業介紹首段
+    published_date: null
+    publisher: 特力股份有限公司
+    quote_check: not_found
+    title: 特力集團－貿易事業
+    url: https://www.testritegroup.com/industry/trading-business
+  tw.2908#e6:
+    locator: 自有通路介紹首段
+    published_date: null
+    publisher: 特力股份有限公司
+    quote_check: not_found
+    title: 特力集團－自有通路
+    url: https://www.testritegroup.com/industry/retail-business/online-and-offline-channels
+  tw.2908#e7:
+    locator: 特力屋段落
+    published_date: null
+    publisher: 特力股份有限公司
+    quote_check: not_found
+    title: 特力集團－自有通路
+    url: https://www.testritegroup.com/industry/retail-business/online-and-offline-channels
+  tw.2908#e8:
+    locator: 印刷頁23，附註十二「子公司」
+    published_date: null
+    publisher: 特力股份有限公司
+    quote_check: found
+    title: 特力股份有限公司及子公司民國114年第1季合併財務報告
+    url: https://www.testritegroup.com/uploads/2025_Q1_cf33c09068.pdf
+  tw.2908#e9:
+    locator: 印刷頁23，附註十二「子公司」
+    published_date: null
+    publisher: 特力股份有限公司
+    quote_check: found
+    title: 特力股份有限公司及子公司民國114年第1季合併財務報告
+    url: https://www.testritegroup.com/uploads/2025_Q1_cf33c09068.pdf

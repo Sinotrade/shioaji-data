@@ -8,12 +8,73 @@ industry:
   l0_code: '24'
   l0_name: 半導體業
   l0_name_en: Semiconductor
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.hardware
+  l2_name: 電腦與硬體
+  l2_name_en: Computers & Hardware
+  l3: hw.storage
+  l3_name: 儲存裝置與記憶體模組
+  l3_name_en: Storage & Memory Modules
+chain: chain.semiconductor
+primary_chain_position: downstream
+summary_short: 銷售記憶體模組、SSD、隨身碟、記憶卡及外接式硬碟。
+summary_long: 廣穎電通主要銷售記憶體模組與儲存裝置，產品涵蓋SSD、DRAM模組、隨身碟、記憶卡及外接式硬碟。記憶體產品包含工業級DRAM與XPOWER Cyclone R DDR5電競系列；SSD亦有工業級產品。公司在2026年COMPUTEX展示工控SSD用於AMR自主移動機器人平台，將儲存產品延伸至機器人應用。依公司2026年7月公布的營收結構說明，當年6月工控產品占整體營收超過五成。
+segments:
+- evidence_ids:
+  - e6
+  id: seg_industrial
+  name: 工控產品
+  period: 2026-06
+  revenue_share_pct: null
+main_theme: theme.robotics
+themes:
+- stage: components
+  theme: theme.robotics
+  tier: upstream
+unresolved_mentions:
+- 海外子公司：官網簡介提及荷蘭、日本、美國、香港及印度子公司，尚未核對法人全名。
 website: www.silicon-power.com
 tax_id: '80161908'
 incorporated: '2003-02-18'
 listed: '2012-06-19'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-18'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4973#e2:
+    locator: 記憶獨一無二
+    published_date: null
+    publisher: 廣穎電通
+    quote_check: found
+    title: 公司與品牌簡介－廣穎電通
+    url: https://www.silicon-power.com/tw/about/
+  tw.4973#e3:
+    locator: 聚焦四大AI工業應用
+    published_date: '2026-06-02'
+    publisher: 廣穎電通
+    quote_check: found
+    title: SP廣穎電通 COMPUTEX 2026 展現 AI 時代資料架構實力
+    url: https://www.silicon-power.com/tw/news-detail/Silicon-Power-Presents-AI-Data-Innovation-at-COMPUTEX-2026/
+  tw.4973#e4:
+    locator: 新聞內文首段
+    published_date: '2026-05-26'
+    publisher: 廣穎電通
+    quote_check: found
+    title: SP 廣穎電通推出 XPOWER Cyclone R DDR5 電競記憶體
+    url: https://www.silicon-power.com/tw/news-detail/XPOWER-Cyclone-R-DDR5-RGB-UDIMM-release/
+  tw.4973#e5:
+    locator: AMR自主移動機器人展示項目
+    published_date: '2026-06-02'
+    publisher: 廣穎電通
+    quote_check: found
+    title: SP廣穎電通 COMPUTEX 2026 展現 AI 時代資料架構實力
+    url: https://www.silicon-power.com/tw/news-detail/Silicon-Power-Presents-AI-Data-Innovation-at-COMPUTEX-2026/
+  tw.4973#e6:
+    locator: 產品結構說明段落
+    published_date: '2026-07-13'
+    publisher: 廣穎電通
+    quote_check: found
+    title: AI與工控需求雙引擎發威 廣穎電通第二季、上半年營收同步創新高
+    url: https://www.silicon-power.com/tw/news-detail/2026q2-financial-info/

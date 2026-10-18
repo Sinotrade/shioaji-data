@@ -8,12 +8,184 @@ industry:
   l0_code: 09
   l0_name: 造紙工業
   l0_name_en: Paper and Pulp
-primary_chain_position: unknown
+  l1: realestate
+  l1_name: 不動產
+  l1_name_en: Real Estate
+  l2: re.dev
+  l2_name: 不動產
+  l2_name_en: Real Estate
+  l3: re.commercial
+  l3_name: 商用不動產與資產管理
+  l3_name_en: Commercial Real Estate & Asset Management
+primary_chain_position: not_applicable
+summary_short: 以不動產出租、旅館客房及濕紙巾、保養品等消費品銷售取得營收。
+summary_long: 士紙的營收來自不動產出租、旅館客房及民生消費品銷售。2026年上半年租賃收入3,996萬元，客房收入1,869萬元，商品銷售收入1,797萬元，以租賃收入為最大來源。消費品涵蓋獅子寶寶濕紙巾、嬰幼兒洗沐保養與防護用品，以及子公司日和士林經營的氧顏森活面膜與保養品。直接子公司另有陽光士林開發、士林環境淨化；大地都更建設由陽光士林開發持有，屬間接子公司。
+segments:
+- evidence_ids:
+  - e_revenue
+  id: rental
+  name: 不動產租賃收入
+  period: 2026年上半年
+  revenue_share_pct: null
+- evidence_ids:
+  - e_revenue
+  id: hotel
+  name: 旅館客房收入
+  period: 2026年上半年
+  revenue_share_pct: null
+- evidence_ids:
+  - e_sales
+  id: consumer
+  name: 商品銷售收入
+  period: 2026年上半年
+  revenue_share_pct: null
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: eb9116a27ed4e
+    evidence_level: primary
+    id: org.士林環境淨化股份有限公司
+    name: 士林環境淨化股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過陽光士林開發持有的間接子公司
+    details:
+    - 透過陽光士林開發持有的間接子公司
+    edge: e0527fd93da77
+    evidence_level: primary
+    id: org.大地都更建設股份有限公司
+    name: 大地都更建設股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: ea5c7647666fe
+    evidence_level: primary
+    id: org.日和士林股份有限公司
+    name: 日和士林股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: e91b915582906
+    evidence_level: primary
+    id: org.陽光士林開發股份有限公司
+    name: 陽光士林開發股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.shihlin.com.tw
 tax_id: '11038101'
 incorporated: '1959-09-08'
 listed: '1963-12-09'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-18'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1903#e_cleansing:
+    locator: 業務範圍，第1項第3款
+    published_date: null
+    publisher: 士林紙業股份有限公司
+    quote_check: found
+    title: 公司簡介與業務範圍
+    url: https://www.shihlin.com.tw/about.html
+  tw.1903#e_hotel:
+    locator: PDF第62頁，陽光士林開發股份有限公司主要營業項目
+    published_date: '2026-04-20'
+    publisher: 士林紙業股份有限公司
+    quote_check: found
+    title: 士林紙業股份有限公司114年度年報
+    url: https://www.shihlin.com.tw/download/3_2/1/2025ap.pdf
+  tw.1903#e_property:
+    locator: PDF第62頁，整體關係企業經營業務所涵蓋之行業，士林紙業項下
+    published_date: '2026-04-20'
+    publisher: 士林紙業股份有限公司
+    quote_check: found
+    title: 士林紙業股份有限公司114年度年報
+    url: https://www.shihlin.com.tw/download/3_2/1/2025ap.pdf
+  tw.1903#e_revenue:
+    locator: PDF第31頁，附註六17營業收入；第三個金額欄為115年1月至6月，單位為新台幣千元
+    published_date: null
+    publisher: 士林紙業股份有限公司
+    quote_check: found
+    title: 士林紙業股份有限公司及其子公司民國115年及114年第二季合併財務報表
+    url: https://www.shihlin.com.tw/download/2026/202602co.pdf
+  tw.1903#e_sales:
+    locator: PDF第31頁，附註六17商品銷售收入列；115年1月至6月金額17,970千元
+    published_date: null
+    publisher: 士林紙業股份有限公司
+    quote_check: found
+    title: 士林紙業股份有限公司及其子公司民國115年及114年第二季合併財務報表
+    url: https://www.shihlin.com.tw/download/2026/202602co.pdf
+  tw.1903#e_skincare_brand:
+    locator: 公司概述
+    published_date: null
+    publisher: 士林紙業股份有限公司
+    quote_check: found
+    title: 公司簡介與業務範圍
+    url: https://www.shihlin.com.tw/about.html
+  tw.1903#e_skincare_products:
+    locator: 業務範圍，第2項氧顏森活Forest Beauty
+    published_date: null
+    publisher: 士林紙業股份有限公司
+    quote_check: found
+    title: 公司簡介與業務範圍
+    url: https://www.shihlin.com.tw/about.html
+  tw.1903#e_sub_dadi:
+    locator: PDF第47頁附表五，投資公司陽光士林開發及被投資公司大地都更建設列
+    published_date: null
+    publisher: 士林紙業股份有限公司
+    quote_check: found
+    title: 士林紙業股份有限公司及其子公司民國115年及114年第二季合併財務報表
+    url: https://www.shihlin.com.tw/download/2026/202602co.pdf
+  tw.1903#e_sub_environment:
+    locator: PDF第47頁附表五，投資公司士林紙業項下的被投資公司列
+    published_date: null
+    publisher: 士林紙業股份有限公司
+    quote_check: found
+    title: 士林紙業股份有限公司及其子公司民國115年及114年第二季合併財務報表
+    url: https://www.shihlin.com.tw/download/2026/202602co.pdf
+  tw.1903#e_sub_rihe:
+    locator: PDF第47頁附表五，投資公司士林紙業項下的被投資公司列
+    published_date: null
+    publisher: 士林紙業股份有限公司
+    quote_check: found
+    title: 士林紙業股份有限公司及其子公司民國115年及114年第二季合併財務報表
+    url: https://www.shihlin.com.tw/download/2026/202602co.pdf
+  tw.1903#e_sub_sunny:
+    locator: PDF第47頁附表五，投資公司士林紙業項下的被投資公司列
+    published_date: null
+    publisher: 士林紙業股份有限公司
+    quote_check: found
+    title: 士林紙業股份有限公司及其子公司民國115年及114年第二季合併財務報表
+    url: https://www.shihlin.com.tw/download/2026/202602co.pdf
+  tw.1903#e_wipes:
+    locator: 業務範圍，第1項獅子寶寶Baby Lion
+    published_date: null
+    publisher: 士林紙業股份有限公司
+    quote_check: found
+    title: 公司簡介與業務範圍
+    url: https://www.shihlin.com.tw/about.html

@@ -39,14 +39,14 @@ themes:
 - stage: chips
   theme: theme.ai_server
   tier: upstream
-- stage: it
-  theme: theme.data_center
-  tier: midstream
 - stage: components
   theme: theme.robotics
   tier: upstream
 - stage: control
   theme: theme.robotics
+  tier: midstream
+- stage: it
+  theme: theme.data_center
   tier: midstream
 relations:
   competitors:
@@ -103,6 +103,34 @@ relations:
     evidence_level: primary
     id: tw.8069
     name: 元太
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2020-08-04'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 晶片客戶；歷史關係
+    details:
+    - 晶片客戶；歷史關係
+    edge: e58a2677463ef
+    evidence_level: media
+    id: us.DELL
+    name: Dell
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2020-08-04'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 晶片客戶；歷史關係
+    details:
+    - 晶片客戶；歷史關係
+    edge: e8ba9b40e7bb7
+    evidence_level: media
+    id: us.HPQ
+    name: HP
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -289,6 +317,13 @@ evidence:
     quote_check: found
     title: 瑞昱加入Arm Total Design，強化與Arm Neoverse運算子系統(CSS)在邊緣運算領域的合作
     url: https://www.realtek.com/Article/NewsDetail?app_id=18&id=4454
+  tw.2379#e13:
+    locator: 二、基本面分析，具名客戶段落
+    published_date: '2020-08-04'
+    publisher: Smart智富／商周
+    quote_check: unreachable
+    title: Wi-Fi 6商機勢不可擋　瑞昱下半年出貨看旺（2020-08-04）
+    url: https://smarttest.businessweekly.com.tw/e-subscription/article?a=4000287&at=6&c=GROUP00007584&p=PROD000010947
   tw.2379#e14:
     locator: 表七，矽品客戶表標題
     published_date: '2001-03-05'

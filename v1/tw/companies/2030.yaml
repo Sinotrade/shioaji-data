@@ -8,12 +8,276 @@ industry:
   l0_code: '10'
   l0_name: 鋼鐵工業
   l0_name_en: Iron and Steel
-primary_chain_position: unknown
+  l1: materials
+  l1_name: 原物料
+  l1_name_en: Materials
+  l2: mat.metals
+  l2_name: 金屬
+  l2_name_en: Metals
+  l3: metal.steel
+  l3_name: 鋼鐵
+  l3_name_en: Steel
+chain: chain.steel
+primary_chain_position: midstream
+summary_short: 以不鏽鋼管製造銷售為主，另經營不鏽鋼捲板及角鋼產品。
+summary_long: 彰源主要製造及銷售不鏽鋼管，並經營不鏽鋼捲板買賣。2025年度營業比重以不鏽鋼管88.84%為主，不鏽鋼捲板10.87%，其他0.29%。鋼管品項包括工業配管與機械構造管；工業配管用於石化、造紙、釀酒、供水及污水處理，構造管則用於一般機械、家具與欄杆。另有等邊不鏽鋼角鋼及不鏽鋼板捲產品。直接子公司包括彰源開曼、彰源維京、彰源薩摩亞及彰源非洲維京公司。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_pipe
+  name: 不鏽鋼管
+  period: '2025'
+  revenue_share_pct: 88.84
+- evidence_ids:
+  - e1
+  id: seg_coil
+  name: 不鏽鋼捲板
+  period: '2025'
+  revenue_share_pct: 10.87
+- evidence_ids:
+  - e1
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 0.29
+relations:
+  subsidiaries:
+  - as_of: '2026-04-27'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 彰源維京公司；直接子公司
+    details:
+    - 彰源維京公司；直接子公司
+    edge: e20662a099d57
+    evidence_level: primary
+    id: org.century-nova-steel
+    name: Century Nova Steel Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-27'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 彰源非洲維京公司；直接子公司
+    details:
+    - 彰源非洲維京公司；直接子公司
+    edge: e884059b5550b
+    evidence_level: primary
+    id: org.froch-africa
+    name: Froch Africa Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-27'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 彰源開曼公司；直接子公司
+    details:
+    - 彰源開曼公司；直接子公司
+    edge: e96e5c4d982c9
+    evidence_level: primary
+    id: org.froch-enterprise-international
+    name: Froch Enterprise International Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-27'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 彰源貿易公司；間接子公司
+    details:
+    - 彰源貿易公司；間接子公司
+    edge: ea53b832aea18
+    evidence_level: primary
+    id: org.froch-international-trading
+    name: 彰源國際貿易有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-27'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 彰源蘇州公司；間接子公司
+    details:
+    - 彰源蘇州公司；間接子公司
+    edge: e5f17b8b052e6
+    evidence_level: primary
+    id: org.froch-metal-suzhou
+    name: 彰源金屬(蘇州)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-27'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 彰源摩洛哥公司；間接子公司
+    details:
+    - 彰源摩洛哥公司；間接子公司
+    edge: e1e17465a30a6
+    evidence_level: primary
+    id: org.froch-morocco
+    name: 彰源摩洛哥有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-27'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 彰源薩摩亞公司；直接子公司
+    details:
+    - 彰源薩摩亞公司；直接子公司
+    edge: e8000db8b8ac8
+    evidence_level: primary
+    id: org.froch-stainless
+    name: Froch Stainless Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-27'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 彰源無錫公司；間接子公司
+    details:
+    - 彰源無錫公司；間接子公司
+    edge: ef695fc31357a
+    evidence_level: primary
+    id: org.wuxi-froch-metal-products
+    name: 無錫彰源金屬製品有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-27'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 彰源不銹鋼公司；間接子公司
+    details:
+    - 彰源不銹鋼公司；間接子公司
+    edge: e094e151fc56d
+    evidence_level: primary
+    id: org.wuxi-froch-stainless
+    name: 無錫彰源不銹鋼有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.froch.com
 tax_id: '60330130'
 incorporated: '1984-10-05'
 listed: '1998-12-24'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-18'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2030#e1:
+    locator: 印刷第97頁，營業比重表；114年度銷售金額及占全年銷售比例
+    published_date: '2026-04-27'
+    publisher: 彰源企業股份有限公司
+    quote_check: found
+    title: 彰源企業股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51956/2026/RNS/51956_rns_2026-04-24_517c26d4-b5b7-49ef-9efb-832fcc55080b.pdf
+  tw.2030#e10:
+    locator: 印刷第119頁，關係企業圖及基本資料；圖中對應Froch Africa Co., Ltd.
+    published_date: '2026-04-27'
+    publisher: 彰源企業股份有限公司
+    quote_check: found
+    title: 彰源企業股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51956/2026/RNS/51956_rns_2026-04-24_517c26d4-b5b7-49ef-9efb-832fcc55080b.pdf
+  tw.2030#e11:
+    locator: 印刷第119頁，關係企業圖及基本資料；彰源蘇州公司
+    published_date: '2026-04-27'
+    publisher: 彰源企業股份有限公司
+    quote_check: found
+    title: 彰源企業股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51956/2026/RNS/51956_rns_2026-04-24_517c26d4-b5b7-49ef-9efb-832fcc55080b.pdf
+  tw.2030#e12:
+    locator: 印刷第119頁，關係企業圖及基本資料；彰源無錫公司
+    published_date: '2026-04-27'
+    publisher: 彰源企業股份有限公司
+    quote_check: found
+    title: 彰源企業股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51956/2026/RNS/51956_rns_2026-04-24_517c26d4-b5b7-49ef-9efb-832fcc55080b.pdf
+  tw.2030#e13:
+    locator: 印刷第119頁，關係企業圖及基本資料；彰源不銹鋼公司
+    published_date: '2026-04-27'
+    publisher: 彰源企業股份有限公司
+    quote_check: found
+    title: 彰源企業股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51956/2026/RNS/51956_rns_2026-04-24_517c26d4-b5b7-49ef-9efb-832fcc55080b.pdf
+  tw.2030#e14:
+    locator: 印刷第119頁，關係企業圖及基本資料；彰源摩洛哥公司
+    published_date: '2026-04-27'
+    publisher: 彰源企業股份有限公司
+    quote_check: found
+    title: 彰源企業股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51956/2026/RNS/51956_rns_2026-04-24_517c26d4-b5b7-49ef-9efb-832fcc55080b.pdf
+  tw.2030#e15:
+    locator: 印刷第119頁，關係企業圖及基本資料；彰源貿易公司
+    published_date: '2026-04-27'
+    publisher: 彰源企業股份有限公司
+    quote_check: found
+    title: 彰源企業股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51956/2026/RNS/51956_rns_2026-04-24_517c26d4-b5b7-49ef-9efb-832fcc55080b.pdf
+  tw.2030#e2:
+    locator: 印刷第97至98頁，產業上、中、下游之關聯性
+    published_date: '2026-04-27'
+    publisher: 彰源企業股份有限公司
+    quote_check: found
+    title: 彰源企業股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51956/2026/RNS/51956_rns_2026-04-24_517c26d4-b5b7-49ef-9efb-832fcc55080b.pdf
+  tw.2030#e3:
+    locator: 工業配管用不銹鋼管，產品用途
+    published_date: null
+    publisher: 彰源企業股份有限公司
+    quote_check: unreachable
+    title: 彰源企業股份有限公司－工業配管用不銹鋼管
+    url: https://www.froch.com/TCHI/Major_Products_%E5%B7%A5%E6%A5%AD%E9%85%8D%E7%AE%A1%E7%94%A8%E4%B8%8D%E9%8A%B9%E9%8B%BC%E7%AE%A1.html
+  tw.2030#e4:
+    locator: 印刷第102頁，主要產品之重要用途
+    published_date: '2026-04-27'
+    publisher: 彰源企業股份有限公司
+    quote_check: found
+    title: 彰源企業股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51956/2026/RNS/51956_rns_2026-04-24_517c26d4-b5b7-49ef-9efb-832fcc55080b.pdf
+  tw.2030#e5:
+    locator: 印刷第97頁，公司目前之商品及服務項目
+    published_date: '2026-04-27'
+    publisher: 彰源企業股份有限公司
+    quote_check: found
+    title: 彰源企業股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51956/2026/RNS/51956_rns_2026-04-24_517c26d4-b5b7-49ef-9efb-832fcc55080b.pdf
+  tw.2030#e6:
+    locator: 主要產品導覽
+    published_date: null
+    publisher: 彰源企業股份有限公司
+    quote_check: unreachable
+    title: 彰源企業股份有限公司－主要產品導覽
+    url: https://www.froch.com/TCHI/Major_Products_%E5%B7%A5%E6%A5%AD%E9%85%8D%E7%AE%A1%E7%94%A8%E4%B8%8D%E9%8A%B9%E9%8B%BC%E7%AE%A1.html
+  tw.2030#e7:
+    locator: 印刷第119頁，關係企業圖及基本資料；圖中對應Froch Enterprise International Co., Ltd.
+    published_date: '2026-04-27'
+    publisher: 彰源企業股份有限公司
+    quote_check: found
+    title: 彰源企業股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51956/2026/RNS/51956_rns_2026-04-24_517c26d4-b5b7-49ef-9efb-832fcc55080b.pdf
+  tw.2030#e8:
+    locator: 印刷第119頁，關係企業圖及基本資料；圖中對應Century Nova Steel Co., Ltd.
+    published_date: '2026-04-27'
+    publisher: 彰源企業股份有限公司
+    quote_check: found
+    title: 彰源企業股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51956/2026/RNS/51956_rns_2026-04-24_517c26d4-b5b7-49ef-9efb-832fcc55080b.pdf
+  tw.2030#e9:
+    locator: 印刷第119頁，關係企業圖及基本資料；圖中對應Froch Stainless Co., Ltd.
+    published_date: '2026-04-27'
+    publisher: 彰源企業股份有限公司
+    quote_check: found
+    title: 彰源企業股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51956/2026/RNS/51956_rns_2026-04-24_517c26d4-b5b7-49ef-9efb-832fcc55080b.pdf

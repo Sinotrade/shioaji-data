@@ -162,6 +162,35 @@ relations:
     share_pct: null
     weight: 1
   subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有控制性股權之期貨子公司
+    details:
+    - 直接持有控制性股權之期貨子公司
+    - 母公司及集團最終控制者
+    edge: e6e3d31d88bf3
+    evidence_level: primary
+    id: tw.6024
+    name: 群益期
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 2
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接全資控股子公司
+    details:
+    - 直接全資控股子公司
+    edge: e22f29891e523
+    evidence_level: primary
+    id: org.csc-international-holdings
+    name: 群益國際控股有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
@@ -176,16 +205,16 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-03-28'
+  - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持有控制性股權之期貨子公司
+    detail: 透過群益國際控股持有的間接全資子公司
     details:
-    - 直接持有控制性股權之期貨子公司
-    edge: e6e3d31d88bf3
+    - 透過群益國際控股持有的間接全資子公司
+    edge: e19adaee1d838
     evidence_level: primary
-    id: tw.6024
-    name: 群益期
+    id: org.csc-securities-hk
+    name: 群益證券(香港)有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -301,6 +330,20 @@ evidence:
     quote_check: found
     title: 群益金鼎證券股份有限公司2025年年報
     url: https://cdn.financialreports.eu/financialreports/media/filings/52498/2026/RNS/52498_rns_2026-05-27_ff4a6889-1115-4b81-b522-925fc69586b8.pdf
+  tw.6005#e10:
+    locator: 重大會計政策之彙總說明－列入合併財務報表之子公司，群益國際控股列
+    published_date: null
+    publisher: 群益金鼎證券股份有限公司（FinancialFilings鏡像）
+    quote_check: unreachable
+    title: 群益金鼎證券2025年第4季合併財務報告
+    url: https://financialfilings.com/filings/csc-6005/annual-report/2026/60569943/
+  tw.6005#e11:
+    locator: 列入合併財務報表之子公司，群益國際控股投資群益證券(香港)列
+    published_date: null
+    publisher: 群益金鼎證券股份有限公司（FinancialFilings鏡像）
+    quote_check: unreachable
+    title: 群益金鼎證券2025年第4季合併財務報告
+    url: https://financialfilings.com/filings/csc-6005/annual-report/2026/60569943/
   tw.6005#e12:
     locator: 列入合併財務報表之子公司，群益私募股權列
     published_date: null

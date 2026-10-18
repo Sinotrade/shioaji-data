@@ -8,13 +8,165 @@ industry:
   l0_code: '37'
   l0_name: 運動休閒
   l0_name_en: Sports and Leisure
-primary_chain_position: unknown
+  l1: consumer
+  l1_name: 消費
+  l1_name_en: Consumer
+  l2: cons.discretionary
+  l2_name: 非必需消費
+  l2_name_en: Consumer Discretionary
+  l3: apparel.footwear
+  l3_name: 製鞋
+  l3_name_en: Footwear
+chain: chain.textile
+primary_chain_position: midstream
+summary_short: 以運動鞋與休閒鞋代工製造為主要收入來源。
+summary_long: 志強-KY集團以鞋類代工製造為主要業務，產品涵蓋足球鞋、美式足球鞋、棒球鞋，以及供慢跑、健行與一般休閒使用的鞋類，屬鞋業中游製造商。2025年度運動鞋占營收80.59%，為最大收入來源；休閒鞋占18.10%，其他產品占1.31%。集團的子公司架構包括直接持有的薩摩亞志強，以及間接持有的越南志雄、志寧與柬埔寨Can Sports Shoes等公司。
+segments:
+- evidence_ids:
+  - e3
+  id: seg_sports
+  name: 運動鞋
+  period: '2025'
+  revenue_share_pct: 80.59
+- evidence_ids:
+  - e3
+  id: seg_casual
+  name: 休閒鞋
+  period: '2025'
+  revenue_share_pct: 18.1
+- evidence_ids:
+  - e3
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 1.31
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 柬埔寨間接子公司
+    details:
+    - 柬埔寨間接子公司
+    edge: e4a07e306a351
+    evidence_level: primary
+    id: org.can-sports-shoes
+    name: Can Sports Shoes Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 越南志寧，間接子公司
+    details:
+    - 越南志寧，間接子公司
+    edge: e35b2f205aa3f
+    evidence_level: primary
+    id: org.can-sports-vietnam
+    name: Can Sports Vietnam Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 越南志雄，間接子公司
+    details:
+    - 越南志雄，間接子公司
+    edge: e362da0bda722
+    evidence_level: primary
+    id: org.chi-hung
+    name: Chi Hung Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 薩摩亞志強，直接子公司
+    details:
+    - 薩摩亞志強，直接子公司
+    edge: e643841bc2f5c
+    evidence_level: primary
+    id: org.sports-gear-samoa
+    name: Sports Gear Co., Ltd. (Samoa)
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.sportsgear.com.tw/
 tax_id: '88173202'
 incorporated: '2017-03-28'
 listed: '2021-04-22'
 foreign_registration: KY 開曼群島
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-18'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6768#e10:
+    locator: 附註十「子公司」；合併財務報告編製主體清單
+    published_date: null
+    publisher: 志強國際企業股份有限公司（FinancialFilings公開鏡像）
+    quote_check: unreachable
+    title: 民國114及113年度合併財務報告：子公司
+    url: https://financialfilings.com/filings/spg-ky-6768/annual-report/2026/33889398/
+  tw.6768#e2:
+    locator: 第55頁業務範圍；第59頁產業上、中、下游之關聯性
+    published_date: '2026-03-31'
+    publisher: 志強國際企業股份有限公司（FinancialFilings公開鏡像）
+    quote_check: unreachable
+    title: 2025年度年報：業務範圍與產業鏈位置
+    url: https://financialfilings.com/filings/spg-ky-6768/annual-report/2026/47929178/
+  tw.6768#e3:
+    locator: 第55頁，PDF第62頁；欄序為2024年度金額、占比及2025年度金額、占比
+    published_date: '2026-03-31'
+    publisher: 志強國際企業股份有限公司（公開PDF鏡像）
+    quote_check: found
+    title: 2025年度年報：營業比重
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52624/2026/RNS/52624_rns_2026-06-02_93254aad-0276-401d-b6c1-676c504b2b7f.pdf
+  tw.6768#e4:
+    locator: 第55頁，業務範圍之公司目前商品項目
+    published_date: '2026-03-31'
+    publisher: 志強國際企業股份有限公司（FinancialFilings公開鏡像）
+    quote_check: unreachable
+    title: 2025年度年報：現有商品項目
+    url: https://financialfilings.com/filings/spg-ky-6768/annual-report/2026/47929178/
+  tw.6768#e5:
+    locator: 第55頁，業務範圍之公司目前商品項目
+    published_date: '2026-03-31'
+    publisher: 志強國際企業股份有限公司（FinancialFilings公開鏡像）
+    quote_check: unreachable
+    title: 2025年度年報：現有商品項目
+    url: https://financialfilings.com/filings/spg-ky-6768/annual-report/2026/47929178/
+  tw.6768#e6:
+    locator: 第55頁，業務範圍之公司目前商品項目
+    published_date: '2026-03-31'
+    publisher: 志強國際企業股份有限公司（FinancialFilings公開鏡像）
+    quote_check: unreachable
+    title: 2025年度年報：現有商品項目
+    url: https://financialfilings.com/filings/spg-ky-6768/annual-report/2026/47929178/
+  tw.6768#e7:
+    locator: 附註十「子公司」；投資公司為本公司，子公司名稱欄
+    published_date: null
+    publisher: 志強國際企業股份有限公司（FinancialFilings公開鏡像）
+    quote_check: unreachable
+    title: 民國114及113年度合併財務報告：子公司
+    url: https://financialfilings.com/filings/spg-ky-6768/annual-report/2026/33889398/
+  tw.6768#e8:
+    locator: 附註十「子公司」；投資公司為All Wells，子公司名稱欄
+    published_date: null
+    publisher: 志強國際企業股份有限公司（FinancialFilings公開鏡像）
+    quote_check: unreachable
+    title: 民國114及113年度合併財務報告：子公司
+    url: https://financialfilings.com/filings/spg-ky-6768/annual-report/2026/33889398/
+  tw.6768#e9:
+    locator: 附註十「子公司」；投資公司為Elephant，子公司名稱欄
+    published_date: null
+    publisher: 志強國際企業股份有限公司（FinancialFilings公開鏡像）
+    quote_check: unreachable
+    title: 民國114及113年度合併財務報告：子公司
+    url: https://financialfilings.com/filings/spg-ky-6768/annual-report/2026/33889398/

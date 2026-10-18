@@ -8,8 +8,116 @@ industry:
   l0_code: '26'
   l0_name: 光電業
   l0_name_en: Optoelectronic
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.display
+  l2_name: 光電與顯示
+  l2_name_en: Optoelectronics & Displays
+  l3: disp.touch
+  l3_name: 觸控與顯示模組
+  l3_name_en: Touch & Display Modules
+chain: chain.display
+primary_chain_position: midstream
+summary_short: 以顯示器與背光模組製造、導光板及智慧顯示系統整合賺取營收。
+summary_long: 達運精密以顯示器與背光模組製造為核心，產品涵蓋商用顯示器、桌上型顯示器、工控顯示器、筆記型電腦及液晶電視。2025年上半年，製造服務占合併營收96.50%，系統整合占3.44%，多元布局占0.06%。其導光板技術包括防窺、高亮度、前光與曲面設計，另提供Mini LED背光。系統整合涵蓋專業顯示、智慧移動、醫療、零售與育樂應用，多元產品包括微針及器官晶片解決方案。友達光電為其母公司，遠近科技、微一生醫及新一智能列入子公司名單。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_manufacturing
+  name: 製造服務
+  period: 2025年上半年
+  revenue_share_pct: 96.5
+- evidence_ids:
+  - e1
+  id: seg_integration
+  name: 系統整合
+  period: 2025年上半年
+  revenue_share_pct: 3.44
+- evidence_ids:
+  - e1
+  id: seg_diversified
+  name: 多元布局
+  period: 2025年上半年
+  revenue_share_pct: 0.06
+main_theme: theme.mini_led
+themes:
+- stage: display
+  theme: theme.mini_led
+  tier: downstream
 relations:
+  parents:
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 母公司及最終控制者
+    details:
+    - 母公司及最終控制者
+    edge: ed968acfbed55
+    evidence_level: primary
+    id: tw.2409
+    name: 友達
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接製造子公司
+    details:
+    - 間接製造子公司
+    edge: e7ebf34d7a33a
+    evidence_level: primary
+    id: org.darwin-precisions-xiamen
+    name: 達運精密工業(廈門)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: ebb606ae552f1
+    evidence_level: primary
+    id: org.microdr
+    name: 微一生醫股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: e4d4b65b86c48
+    evidence_level: primary
+    id: org.onesmart-solution
+    name: 新一智能股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: e75dced717777
+    evidence_level: primary
+    id: org.vixora-technology
+    name: 遠近科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   transactions:
   - amount: 新台幣1,780,000,000元（未稅）
     as_of: '2026-01-27'
@@ -36,7 +144,84 @@ website: www.darwinprecisions.com
 tax_id: '23504361'
 incorporated: '1989-10-13'
 listed: '2006-09-13'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-18'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6120#e1:
+    locator: PDF第17頁，產品別合併營收佔比，114年上半年度
+    published_date: '2025-10-23'
+    publisher: 達運精密工業股份有限公司
+    quote_check: found
+    title: 達運精密2025年法人說明會
+    url: https://www.darwinprecisions.com/data/conference/files/1762757977073532540.pdf
+  tw.6120#e10:
+    locator: 印刷頁10，附註四（二）列入合併財務報告之子公司，遠近科技、微一生醫及新一智能各列
+    published_date: '2026-04-29'
+    publisher: 達運精密工業股份有限公司
+    quote_check: found
+    title: 達運精密及子公司民國115年及114年第一季合併財務報告
+    url: https://www.darwinprecisions.com/data/financial/files/1779070909292091697.pdf
+  tw.6120#e11:
+    locator: 印刷頁10，合併子公司表，投資公司DPHK列
+    published_date: '2026-04-29'
+    publisher: 達運精密工業股份有限公司
+    quote_check: found
+    title: 達運精密及子公司民國115年及114年第一季合併財務報告
+    url: https://www.darwinprecisions.com/data/financial/files/1779070909292091697.pdf
+  tw.6120#e2:
+    locator: 印刷頁72，各產品營業比重；印刷頁74，產業結構
+    published_date: '2025-04-13'
+    publisher: 達運精密工業股份有限公司
+    quote_check: found
+    title: 達運精密民國113年度年報
+    url: https://www.darwinprecisions.com/data/shareholders/files/1748225681806462439.pdf
+  tw.6120#e3:
+    locator: 生產產品
+    published_date: null
+    publisher: 達運精密工業股份有限公司
+    quote_check: found
+    title: 顯示器模組－製造服務
+    url: https://www.darwinprecisions.com/zh-tw/manufacture.php?act=view&id=2
+  tw.6120#e4:
+    locator: 認識達運
+    published_date: null
+    publisher: 達運精密工業股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.darwinprecisions.com/zh-tw/about.php
+  tw.6120#e5:
+    locator: 產品技術章節標題
+    published_date: null
+    publisher: 達運精密工業股份有限公司
+    quote_check: found
+    title: 導光－精密元件
+    url: https://www.darwinprecisions.com/zh-tw/component.php?act=list&cid=6
+  tw.6120#e6:
+    locator: Mini LED背光產品介紹
+    published_date: null
+    publisher: 達運精密工業股份有限公司
+    quote_check: found
+    title: Mini LED背光－精密元件
+    url: https://www.darwinprecisions.com/zh-tw/component.php?act=list&cid=4
+  tw.6120#e7:
+    locator: 服務分類：專業顯示器、智慧移動、智慧醫療、智慧零售、智慧育樂
+    published_date: null
+    publisher: 達運精密工業股份有限公司
+    quote_check: found
+    title: 系統整合
+    url: https://www.darwinprecisions.com/zh-tw/integration.php
+  tw.6120#e8:
+    locator: PDF第20頁，多元發展
+    published_date: '2025-10-23'
+    publisher: 達運精密工業股份有限公司
+    quote_check: found
+    title: 達運精密2025年法人說明會
+    url: https://www.darwinprecisions.com/data/conference/files/1762757977073532540.pdf
+  tw.6120#e9:
+    locator: 印刷頁31，附註七（一）母公司與最終控制者
+    published_date: '2026-04-29'
+    publisher: 達運精密工業股份有限公司
+    quote_check: found
+    title: 達運精密及子公司民國115年及114年第一季合併財務報告
+    url: https://www.darwinprecisions.com/data/financial/files/1779070909292091697.pdf

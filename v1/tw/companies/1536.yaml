@@ -8,7 +8,46 @@ industry:
   l0_code: '12'
   l0_name: 汽車工業
   l0_name_en: Automobile
-primary_chain_position: unknown
+  l1: auto
+  l1_name: 汽車與運具
+  l1_name_en: Automotive & Mobility
+  l2: auto.vehicles
+  l2_name: 汽機車
+  l2_name_en: Autos & Motorcycles
+  l3: auto.parts
+  l3_name: 汽車零組件
+  l3_name_en: Auto Parts
+chain: chain.auto
+primary_chain_position: midstream
+summary_short: 主要製造汽車傳動零組件，產品涵蓋變速箱組件、減速齒輪與差速器。
+summary_long: 和大工業以車輛傳動零組件為主要業務，產品包含變速箱零組件與總成、電動車減速箱齒輪組、差速器，以及電機與馬達軸。2026年7月法說會列示的產品營收組成為汽車85%、機車4%、其他11%，該圖表未註明統計期間。公司另展示電輔車變速齒輪組與ODM中置電機，以及人形機器人相關的諧波減速器、行星減速器與複合材料，產品範圍涵蓋汽車、電輔車及機器人傳動應用。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_auto
+  name: 汽車
+  period: null
+  revenue_share_pct: 85
+- evidence_ids:
+  - e2
+  id: seg_motorbike
+  name: 機車
+  period: null
+  revenue_share_pct: 4
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他
+  period: null
+  revenue_share_pct: 11
+main_theme: theme.ev
+themes:
+- stage: parts
+  theme: theme.ev
+  tier: midstream
+- stage: components
+  theme: theme.robotics
+  tier: upstream
 relations:
   customers:
   - as_of: '2024-12-31'
@@ -18,7 +57,7 @@ relations:
     details:
     - 進貨，品項未揭露
     edge: e76da25d42055
-    evidence_level: primary
+    evidence_level: other
     id: tw.4510
     name: 高鋒
     ranking_basis: unranked
@@ -33,7 +72,7 @@ relations:
     details:
     - 合資和大芯及先進封裝檢測設備合作
     edge: ec1ed227a05a2
-    evidence_level: primary
+    evidence_level: other
     id: tw.4510
     name: 高鋒
     ranking_basis: unranked
@@ -48,7 +87,7 @@ relations:
     details:
     - 產品銷售及加工服務
     edge: e1a8218a794f7
-    evidence_level: primary
+    evidence_level: other
     id: tw.4510
     name: 高鋒
     ranking_basis: unranked
@@ -59,7 +98,63 @@ website: www.hota.com.tw
 tax_id: '52264848'
 incorporated: '1973-01-16'
 listed: '2001-09-17'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-18'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1536#e2:
+    locator: 第4頁，產品營收組成圓餅圖；未標統計期間
+    published_date: '2026-07-22'
+    publisher: 和大工業股份有限公司
+    quote_check: found
+    title: 和大工業股份有限公司2026年7月22日法人說明會
+    url: https://mopsov.twse.com.tw/nas/STR/153620260721M003.pdf
+  tw.1536#e3:
+    locator: 第5頁，Core Competency
+    published_date: '2026-07-22'
+    publisher: 和大工業股份有限公司
+    quote_check: found
+    title: 和大工業股份有限公司2026年7月22日法人說明會
+    url: https://mopsov.twse.com.tw/nas/STR/153620260721M003.pdf
+  tw.1536#e4:
+    locator: 第6頁，電動車產品展示
+    published_date: '2026-07-22'
+    publisher: 和大工業股份有限公司
+    quote_check: found
+    title: 和大工業股份有限公司2026年7月22日法人說明會
+    url: https://mopsov.twse.com.tw/nas/STR/153620260721M003.pdf
+  tw.1536#e5:
+    locator: 第10頁，電輔車產品
+    published_date: '2026-07-22'
+    publisher: 和大工業股份有限公司
+    quote_check: found
+    title: 和大工業股份有限公司2026年7月22日法人說明會
+    url: https://mopsov.twse.com.tw/nas/STR/153620260721M003.pdf
+  tw.1536#e6:
+    locator: 第10頁，電輔車產品
+    published_date: '2026-07-22'
+    publisher: 和大工業股份有限公司
+    quote_check: found
+    title: 和大工業股份有限公司2026年7月22日法人說明會
+    url: https://mopsov.twse.com.tw/nas/STR/153620260721M003.pdf
+  tw.1536#e7:
+    locator: 第11頁，Humanoid Robot Components
+    published_date: '2026-07-22'
+    publisher: 和大工業股份有限公司
+    quote_check: not_found
+    title: 和大工業股份有限公司2026年7月22日法人說明會
+    url: https://mopsov.twse.com.tw/nas/STR/153620260721M003.pdf
+  tw.1536#e8:
+    locator: 第11頁，Humanoid Robot Components
+    published_date: '2026-07-22'
+    publisher: 和大工業股份有限公司
+    quote_check: not_found
+    title: 和大工業股份有限公司2026年7月22日法人說明會
+    url: https://mopsov.twse.com.tw/nas/STR/153620260721M003.pdf
+  tw.1536#e9:
+    locator: 第11頁，Humanoid Robot Components
+    published_date: '2026-07-22'
+    publisher: 和大工業股份有限公司
+    quote_check: not_found
+    title: 和大工業股份有限公司2026年7月22日法人說明會
+    url: https://mopsov.twse.com.tw/nas/STR/153620260721M003.pdf

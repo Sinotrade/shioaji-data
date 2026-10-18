@@ -40,23 +40,70 @@ segments:
   name: 光電
   period: '2025'
   revenue_share_pct: 17
-main_theme: theme.leo_satellite
+main_theme: theme.ev
 themes:
+- stage: vehicle
+  theme: theme.ev
+  tier: downstream
+- stage: components
+  theme: theme.ai_server
+  tier: midstream
+- stage: equipment
+  theme: theme.data_center
+  tier: upstream
+- stage: application
+  theme: theme.sic
+  tier: downstream
 - stage: components
   theme: theme.leo_satellite
   tier: upstream
+- stage: modules
+  theme: theme.liquid_cooling
+  tier: midstream
+- stage: application
+  theme: theme.gan
+  tier: downstream
 relations:
   competitors:
   - as_of: 2026-05
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 電源供應器
+    detail: 雲端及資訊電子電源供應器
     details:
+    - 雲端及資訊電子電源供應器
     - 電源供應器
     edge: e3aa3a3dce37a
-    evidence_level: other
+    evidence_level: primary
     id: tw.2308
     name: 台達電
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 2
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 雲端及資訊電子電源供應器
+    details:
+    - 雲端及資訊電子電源供應器
+    edge: ef557aa36f75a
+    evidence_level: primary
+    id: tw.6282
+    name: 康舒
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 雲端及資訊電子電源供應器
+    details:
+    - 雲端及資訊電子電源供應器
+    edge: e231c85e9d61d
+    evidence_level: primary
+    id: tw.6412
+    name: 群電
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -176,6 +223,20 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: '2025-05-20'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: AI平台電源及800V HVDC方案合作開發
+    details:
+    - AI平台電源及800V HVDC方案合作開發
+    edge: e6409370b58f6
+    evidence_level: primary
+    id: us.NVDA
+    name: NVIDIA
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
   - as_of: '2026-10-02'
     confidence: ai_cross_checked
@@ -187,6 +248,48 @@ relations:
     evidence_level: primary
     id: org.leotek-electronics-usa-corporation
     name: Leotek Electronics U.S.A. Corporation
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 2025年合併子公司名單所列LEOTEK法人
+    details:
+    - 2025年合併子公司名單所列LEOTEK法人
+    edge: ec008d008ecc5
+    evidence_level: primary
+    id: org.leotek-electronics-usa-llc
+    name: LEOTEK ELECTRONICS USA LLC
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 美國間接子公司
+    details:
+    - 美國間接子公司
+    edge: e9b6794aa86c0
+    evidence_level: primary
+    id: org.lite-on-inc
+    name: LITE-ON, INC.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 新加坡子公司
+    details:
+    - 新加坡子公司
+    edge: e3d6ed8e4e576
+    evidence_level: primary
+    id: org.lite-on-singapore
+    name: LITE-ON SINGAPORE PTE. LTD.
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -221,6 +324,27 @@ relations:
     share_pct: null
     weight: 1
   transactions:
+  - amount: US$5.8 million
+    as_of: '2024-07-29'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: LEOTEK ELECTRONICS USA LLC取得北美交通訊號燈事業
+    details:
+    - LEOTEK ELECTRONICS USA LLC取得北美交通訊號燈事業
+    edge: e23217a8d4a84
+    event_date: '2024-07-29'
+    events:
+    - amount: US$5.8 million
+      detail: LEOTEK ELECTRONICS USA LLC取得北美交通訊號燈事業
+      event_date: '2024-07-29'
+    evidence_level: primary
+    id: eu.DIA
+    name: Dialight plc
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
   - amount: 新台幣25.3億元
     as_of: '2024-04-30'
     confidence: ai_cross_checked
@@ -443,6 +567,13 @@ as_of: '2026-10-14'
 confidence: ai_cross_checked
 has_research: true
 evidence:
+  tw.2301#e_adas:
+    locator: 成就全方位的行車安全／監測駕駛分心和疲勞狀況
+    published_date: null
+    publisher: 光寶科技
+    quote_check: found
+    title: 車用視覺解決方案
+    url: https://www.liteon.com/zh-tw/product/automotive-electronics/adas-solutions/
   tw.2301#e_ampup:
     locator: 第7項反三角合併與股份對價；第17項預估完成日為2026年底
     published_date: '2026-10-02'
@@ -454,28 +585,42 @@ evidence:
     locator: 印刷頁107／PDF第112頁，4.1.1.1營收結構表，Cloud and AIoT Department列
     published_date: null
     publisher: 光寶科技
-    quote_check: unreachable
+    quote_check: not_found
+    title: 2025 LITEON Annual Report
+    url: https://www.liteon.com/upload/media/ir/annual/2025%20LITEON%20Anual%20Report.pdf
+  tw.2301#e_annual_competitors:
+    locator: 4.1.2 Industry Overview／Product competitors表，Cloud and ITCE products- power supply units列
+    published_date: null
+    publisher: 光寶科技
+    quote_check: found
+    title: 2025 LITEON Annual Report
+    url: https://www.liteon.com/upload/media/ir/annual/2025%20LITEON%20Anual%20Report.pdf
+  tw.2301#e_annual_ev:
+    locator: 印刷頁107／PDF第112頁，4.1.1.1營收結構表，光電部門產品欄
+    published_date: null
+    publisher: 光寶科技
+    quote_check: found
     title: 2025 LITEON Annual Report
     url: https://www.liteon.com/upload/media/ir/annual/2025%20LITEON%20Anual%20Report.pdf
   tw.2301#e_annual_it:
     locator: 印刷頁107／PDF第112頁，4.1.1.1營收結構表，Information Technologies Department列
     published_date: null
     publisher: 光寶科技
-    quote_check: unreachable
+    quote_check: not_found
     title: 2025 LITEON Annual Report
     url: https://www.liteon.com/upload/media/ir/annual/2025%20LITEON%20Anual%20Report.pdf
   tw.2301#e_annual_opto:
     locator: 印刷頁107／PDF第112頁，4.1.1.1營收結構表，Opto-electronics Department列
     published_date: null
     publisher: 光寶科技
-    quote_check: unreachable
+    quote_check: not_found
     title: 2025 LITEON Annual Report
     url: https://www.liteon.com/upload/media/ir/annual/2025%20LITEON%20Anual%20Report.pdf
   tw.2301#e_annual_power:
     locator: 4.1.2 Industry Overview，三大產品類別說明
     published_date: null
     publisher: 光寶科技
-    quote_check: unreachable
+    quote_check: found
     title: 2025 LITEON Annual Report
     url: https://www.liteon.com/upload/media/ir/annual/2025%20LITEON%20Anual%20Report.pdf
   tw.2301#e_aws:
@@ -531,7 +676,7 @@ evidence:
     locator: 首段，投資標的正式法人名稱；交割後持股條件
     published_date: '2026-09-03'
     publisher: 光寶科技
-    quote_check: unreachable
+    quote_check: found
     title: LITEON Announces Strategic Investment in Liquid Cooling Technology Company DCX
     url: https://www.liteon.com/en/news/press-center/content/liteon-dcx-liquid-cooling-systems-strategic-investment-2026
   tw.2301#e_dell_hp:
@@ -545,7 +690,7 @@ evidence:
     locator: 首段，標的正式名稱、金額及交割後約21%股權條件
     published_date: '2026-07-31'
     publisher: 光寶科技
-    quote_check: unreachable
+    quote_check: found
     title: 光寶科技宣布策略投資新加坡InP光通訊元件廠DenseLight
     url: https://www.liteon.com/zh-tw/news/press-center/content/liteon-denselight-investment-2026
   tw.2301#e_denselight_share:
@@ -555,6 +700,13 @@ evidence:
     quote_check: found
     title: 光寶科上調資本支出至180億元　投資星國光通訊元件廠
     url: https://www.cna.com.tw/news/afe/202607310227.aspx
+  tw.2301#e_dialight:
+    locator: RNS Number 1738Y，出售Traffic Business段落
+    published_date: '2024-07-29'
+    publisher: Dialight plc／RNS，London South East刊載
+    quote_check: unreachable
+    title: Non-core disposal
+    url: https://www.lse.co.uk/rns/DIA/non-core-disposal-yyk8sz3klr3ctkg.html
   tw.2301#e_game:
     locator: 邱森彬談非AI產品段落；原稿2025-10-29，轉載更新2025-10-30
     published_date: '2025-10-29'
@@ -569,6 +721,20 @@ evidence:
     quote_check: found
     title: Lite-on uses Infineon’s CoolSiC MOSFETs for SMPS achieving 80 PLUS Titanium certificate
     url: https://www.semiconductor-today.com/news_items/2020/sep/infineon-250920.shtml
+  tw.2301#e_led_indicator:
+    locator: 光電部門高階可見光產品說明
+    published_date: '2026-10-08'
+    publisher: 光寶科技
+    quote_check: found
+    title: 光寶科技九月份全球合併營收NT$ 188億元 年增22%
+    url: https://www.liteon.com/zh-tw/news/press-center/content/liteon-monthly-sales-sep-2026
+  tw.2301#e_legacy_leotek:
+    locator: 附註十三子公司明細，LEOTEK列；2025及2024年末股權欄均列100.00
+    published_date: null
+    publisher: 光寶科技；FinancialFilings收錄文件全文
+    quote_check: unreachable
+    title: 光寶科技股份有限公司及子公司民國114及113年度合併財務報告
+    url: https://financialfilings.com/filings/ltc-2301/annual-report/2026/33152794/
   tw.2301#e_leotek:
     locator: 第3項參與併購公司及母子公司關係
     published_date: '2026-10-02'
@@ -576,6 +742,13 @@ evidence:
     quote_check: found
     title: 光寶科代子公司Leotek Electronics U.S.A. Corporation公告取得AmpUp, Inc. 100%股權
     url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=cfa04d03-7b2b-4670-82f8-93ac55b3fbf7
+  tw.2301#e_liteon_inc_sub:
+    locator: 附表三應收關係人款項，LITE-ON, INC.列之關係欄為孫公司
+    published_date: null
+    publisher: 光寶科技；FinancialFilings收錄文件全文
+    quote_check: unreachable
+    title: 光寶科技股份有限公司及子公司民國114及113年度合併財務報告
+    url: https://financialfilings.com/filings/ltc-2301/annual-report/2026/33152794/
   tw.2301#e_msft:
     locator: 正文開頭，微軟ChatGPT伺服器電源供貨段落
     published_date: '2023-04-04'
@@ -597,13 +770,41 @@ evidence:
     quote_check: found
     title: 光寶擬收購南京能利芯科技　總交易金額估約新台幣37億元
     url: https://www.knews.com.tw/news/A1AA612D36E980DC5BE6E26BF2EF3653
+  tw.2301#e_nvidia:
+    locator: 邱森彬談合作及後續800V HVDC共同開發段落
+    published_date: '2025-05-20'
+    publisher: 光寶科技
+    quote_check: found
+    title: COMPUTEX 2025光寶出擊，盛大展示NVIDIA MGX系統方案
+    url: https://www.liteon.com/zh-tw/news/press-center/content/liteon-computex-nv-2025
   tw.2301#e_ocp2026:
     locator: 800 VDC驅動能源架構全面升級，NVIDIA Vera Rubin NVL72平台段落
     published_date: '2026-10-14'
     publisher: 光寶科技
-    quote_check: unreachable
+    quote_check: found
     title: 光寶科技前進2026 OCP Global Summit 聚焦NVIDIA 800 VDC架構、液冷散熱核心布局
     url: https://www.liteon.com/zh-tw/news/press-center/content/liteon-ocp-2026
+  tw.2301#e_photocoupler:
+    locator: 光電部門產品及應用說明
+    published_date: '2026-10-08'
+    publisher: 光寶科技
+    quote_check: found
+    title: 光寶科技九月份全球合併營收NT$ 188億元 年增22%
+    url: https://www.liteon.com/zh-tw/news/press-center/content/liteon-monthly-sales-sep-2026
+  tw.2301#e_sic_gan:
+    locator: 最新電源管理解決方案段落
+    published_date: '2025-05-20'
+    publisher: 光寶科技
+    quote_check: found
+    title: COMPUTEX 2025光寶出擊，盛大展示NVIDIA MGX系統方案
+    url: https://www.liteon.com/zh-tw/news/press-center/content/liteon-computex-nv-2025
+  tw.2301#e_singapore_sub:
+    locator: 附表三應收關係人款項，LITE-ON SINGAPORE列之關係欄為子公司
+    published_date: null
+    publisher: 光寶科技；FinancialFilings收錄文件全文
+    quote_check: unreachable
+    title: 光寶科技股份有限公司及子公司民國114及113年度合併財務報告
+    url: https://financialfilings.com/filings/ltc-2301/annual-report/2026/33152794/
   tw.2301#e_spacex:
     locator: 光寶家戶式地面接收設備供貨段落
     published_date: '2026-02-04'

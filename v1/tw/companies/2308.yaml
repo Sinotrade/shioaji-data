@@ -54,12 +54,12 @@ themes:
 - stage: components
   theme: theme.ai_server
   tier: midstream
-- stage: equipment
-  theme: theme.data_center
-  tier: upstream
 - stage: system
   theme: theme.robotics
   tier: downstream
+- stage: equipment
+  theme: theme.data_center
+  tier: upstream
 - stage: application
   theme: theme.sic
   tier: downstream
@@ -74,17 +74,18 @@ relations:
   - as_of: 2026-05
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 電源供應器
+    detail: 雲端及資訊電子電源供應器
     details:
+    - 雲端及資訊電子電源供應器
     - 電源供應器
     edge: e3aa3a3dce37a
-    evidence_level: other
+    evidence_level: primary
     id: tw.2301
     name: 光寶科
     ranking_basis: unranked
     share_basis: null
     share_pct: null
-    weight: 1
+    weight: 2
   customers:
   - as_of: 2018-08
     confidence: ai_cross_checked
@@ -419,6 +420,27 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  - amount: 新台幣2,251,800仟元（含營業稅）
+    as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 中壢一廠重建工程契約
+    details:
+    - 中壢一廠重建工程契約
+    edge: e389038c0c717
+    event_date: '2024-01-05'
+    events:
+    - amount: 新台幣2,251,800仟元（含營業稅）
+      detail: 中壢一廠重建工程契約
+      event_date: '2024-01-05'
+    evidence_level: primary
+    id: org.li-ming-construction
+    name: 麗明營造股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
   - amount: 新台幣4,788,880仟元（含營業稅）
     as_of: '2024-12-31'
     confidence: ai_cross_checked
@@ -582,7 +604,7 @@ evidence:
     locator: 第135頁（PDF第139頁），5.1.1 Scope of business；封面印製日2026-03-30
     published_date: null
     publisher: 台達電子工業股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: Delta Electronics, Inc. 2025 Annual Report
     url: https://filecenter.deltaww.com/IR/download/annual_report/2025annual.pdf
   tw.2308#e02:
@@ -687,14 +709,14 @@ evidence:
     locator: 第107頁附表五，取得內湖瑞光路68、70號土地及建物列；金額單位仟元，註1含營業稅
     published_date: '2025-02-26'
     publisher: 台達電子工業股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: 2024年度合併財務報告
     url: https://filecenter.deltaww.com/ir/download/financial_report/Q42024_chi_Consolidated%20Financial%20Report.pdf
   tw.2308#e17:
     locator: 第108頁附表五，取得竹北土地及建物列；金額單位仟元
     published_date: '2025-02-26'
     publisher: 台達電子工業股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: 2024年度合併財務報告
     url: https://filecenter.deltaww.com/ir/download/financial_report/Q42024_chi_Consolidated%20Financial%20Report.pdf
   tw.2308#e18:
@@ -715,7 +737,7 @@ evidence:
     locator: 第64頁附註六(三十)1.(1)，1/6交割、現金2,169,278仟元；買方另見取得非流動資產附表
     published_date: '2025-10-29'
     publisher: 台達電子工業股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: 2025年第三季合併財務報告
     url: https://filecenter.deltaww.com/ir/download/financial_report/Q3%202025_chi_%20Consolidated%20Financial%20Report.pdf
   tw.2308#e21:
@@ -729,7 +751,7 @@ evidence:
     locator: 第69頁九(二)2及第70頁十一，ACT Holding收購ACT Genomics；現金2,171,775仟元
     published_date: '2025-10-29'
     publisher: 台達電子工業股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: 2025年第三季合併財務報告
     url: https://filecenter.deltaww.com/ir/download/financial_report/Q3%202025_chi_%20Consolidated%20Financial%20Report.pdf
   tw.2308#e23:
@@ -743,7 +765,7 @@ evidence:
     locator: 第30頁四(三)F註；第21頁子公司表68列持股100%，第63頁六(31)現金3,732,884仟元
     published_date: '2026-04-29'
     publisher: 台達電子工業股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: 2026 First Quarter Consolidated Financial Statements
     url: https://filecenter.deltaww.com/ir/download/financial_report/Q1%202026_eng_%20Consolidated%20Financial%20Report.pdf
   tw.2308#e25:
@@ -757,7 +779,7 @@ evidence:
     locator: 第70頁六(30)A.(a)，Noda於6/1交割並取得控制，現金989,273仟元
     published_date: '2026-07-29'
     publisher: 台達電子工業股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: 2026 Second Quarter Consolidated Financial Statements
     url: https://filecenter.deltaww.com/ir/download/financial_report/Q22026_eng_Consolidated%20Financial%20Report.pdf
   tw.2308#e27:
@@ -771,7 +793,7 @@ evidence:
     locator: 第70頁六(30)A.(b)，3/2收購DCG100%；現金669,087仟元，第71頁另有或有對價46,139仟元
     published_date: '2026-07-29'
     publisher: 台達電子工業股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: 2026 Second Quarter Consolidated Financial Statements
     url: https://filecenter.deltaww.com/ir/download/financial_report/Q22026_eng_Consolidated%20Financial%20Report.pdf
   tw.2308#e29:
@@ -792,27 +814,34 @@ evidence:
     locator: 第108頁附表五，日本子公司取得東京港區土地及建物，113/8/30；共同交易3,095,972仟元，註2含取得費用
     published_date: '2025-02-26'
     publisher: 台達電子工業股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: 2024年度合併財務報告
     url: https://filecenter.deltaww.com/ir/download/financial_report/Q42024_chi_Consolidated%20Financial%20Report.pdf
   tw.2308#e32:
     locator: 第22頁四(三)B子公司表78：母公司、DEIL-SG與DIH合計持股62.66%
     published_date: '2026-04-29'
     publisher: 台達電子工業股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: 2026 First Quarter Consolidated Financial Statements
     url: https://filecenter.deltaww.com/ir/download/financial_report/Q1%202026_eng_%20Consolidated%20Financial%20Report.pdf
   tw.2308#e33:
     locator: 第16頁四(三)2合併子公司表第4列，母公司持股乾坤科技100%
     published_date: '2025-10-29'
     publisher: 台達電子工業股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: 2025年第三季合併財務報告
     url: https://filecenter.deltaww.com/ir/download/financial_report/Q3%202025_chi_%20Consolidated%20Financial%20Report.pdf
+  tw.2308#e34:
+    locator: 第107頁附表五，中壢一廠重建工程，金額單位仟元，註1含營業稅
+    published_date: '2025-02-26'
+    publisher: 台達電子工業股份有限公司
+    quote_check: found
+    title: 2024年度合併財務報告
+    url: https://filecenter.deltaww.com/ir/download/financial_report/Q42024_chi_Consolidated%20Financial%20Report.pdf
   tw.2308#e35:
     locator: 第72頁六(31)B：上半年出售DET0.41%股權，對價8,699,479仟元，仍持股62.66%
     published_date: '2026-07-29'
     publisher: 台達電子工業股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: 2026 Second Quarter Consolidated Financial Statements
     url: https://filecenter.deltaww.com/ir/download/financial_report/Q22026_eng_Consolidated%20Financial%20Report.pdf

@@ -66,12 +66,12 @@ themes:
 - stage: components
   theme: theme.leo_satellite
   tier: upstream
-- stage: materials
-  theme: theme.cowos
-  tier: upstream
 - stage: application
   theme: theme.gan
   tier: downstream
+- stage: materials
+  theme: theme.cowos
+  tier: upstream
 relations:
   subsidiaries:
   - as_of: '2025-12-31'

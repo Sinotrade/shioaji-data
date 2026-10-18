@@ -8,12 +8,259 @@ industry:
   l0_code: '35'
   l0_name: 綠能環保
   l0_name_en: Green Energy and Environmental Services
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.environment
+  l2_name: 環保服務
+  l2_name_en: Environmental Services
+  l3: env.water
+  l3_name: 水處理
+  l3_name_en: Water Treatment
+primary_chain_position: not_applicable
+summary_short: 銷售含金屬廢水電解設備與耗材，並提供再生金屬回收及營運服務。
+summary_long: 衛司特銷售含金屬廢水電解設備與耗材，並提供再生金屬回收服務。2025年電解設備與耗材占營收53.24%，再生金屬服務占46.10%。RecoCell系統可將電子製造業含銅廢水回收為純度逾99%的金屬銅，並透過BOO模式提供設備營運服務。其他產品包括PCB電鍍不溶性陽極、萃取前處理及酸性與鹼性蝕刻液循環再生系統；不溶性陽極的應用涵蓋ABF載板。2026年第二季合併子公司包括城鋒科技，其業務為鉛酸電池回收及再生鉛資源化。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_equipment
+  name: 電解設備與耗材
+  period: '2025'
+  revenue_share_pct: 53.24
+- evidence_ids:
+  - e1
+  id: seg_recovery
+  name: 再生金屬服務收入
+  period: '2025'
+  revenue_share_pct: 46.1
+- evidence_ids:
+  - e1
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 0.66
+main_theme: theme.abf
+themes:
+- stage: materials
+  theme: theme.abf
+  tier: upstream
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有的合併子公司
+    details:
+    - 直接持有的合併子公司
+    edge: edb2759e2f8b3
+    evidence_level: primary
+    id: org.waste-recovery-technology-sea-pte-ltd
+    name: Waste Recovery Technology (SEA) PTE. Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有的合併子公司
+    details:
+    - 直接持有的合併子公司
+    edge: ecb0563ed2e84
+    evidence_level: primary
+    id: org.waste-recovery-technology-thailand-co-ltd
+    name: Waste Recovery Technology (Thailand) Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有的合併子公司
+    details:
+    - 直接持有的合併子公司
+    edge: e5f56faf1e566
+    evidence_level: primary
+    id: org.waste-recovery-technology-vietnam-co-ltd
+    name: Waste Recovery Technology Vietnam Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過昆山衛司特持有的間接合併子公司
+    details:
+    - 透過昆山衛司特持有的間接合併子公司
+    edge: e2633ae49fc6f
+    evidence_level: primary
+    id: org.上海衛司特環保設備有限公司
+    name: 上海衛司特環保設備有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-08-11'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 鉛酸電池回收子公司
+    details:
+    - 鉛酸電池回收子公司
+    edge: ef6642dc7a26c
+    evidence_level: primary
+    id: org.城鋒科技股份有限公司
+    name: 城鋒科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有的合併子公司
+    details:
+    - 直接持有的合併子公司
+    edge: ecfcbe94b4028
+    evidence_level: primary
+    id: org.昆山衛司特環保設備有限公司
+    name: 昆山衛司特環保設備有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有的合併子公司
+    details:
+    - 直接持有的合併子公司
+    edge: eff352770a943
+    evidence_level: primary
+    id: org.衛司特環保科技-東莞-有限公司
+    name: 衛司特環保科技(東莞)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.recotech.com.tw
 tax_id: '12739475'
 incorporated: '2001-01-19'
 listed: '2023-11-29'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-18'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6894#e1:
+    locator: 第54頁（PDF第58頁），主要產品及營業比重，114年度
+    published_date: '2026-04-30'
+    publisher: 衛司特科技股份有限公司
+    quote_check: found
+    title: 衛司特科技股份有限公司114年度年報
+    url: https://www.recotech.com.tw/uploads/finance/waste-114-annual_reports.pdf
+  tw.6894#e10:
+    locator: 第13頁，附註四、3，合併財務報表編製主體／投資公司名稱與子公司名稱欄
+    published_date: '2026-08-07'
+    publisher: 衛司特科技股份有限公司
+    quote_check: found
+    title: 衛司特科技股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.recotech.com.tw/uploads/finance/115-q2.pdf
+  tw.6894#e11:
+    locator: 第13頁，附註四、3，合併財務報表編製主體／投資公司名稱與子公司名稱欄
+    published_date: '2026-08-07'
+    publisher: 衛司特科技股份有限公司
+    quote_check: found
+    title: 衛司特科技股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.recotech.com.tw/uploads/finance/115-q2.pdf
+  tw.6894#e12:
+    locator: 第13頁，附註四、3，合併財務報表編製主體／投資公司名稱與子公司名稱欄
+    published_date: '2026-08-07'
+    publisher: 衛司特科技股份有限公司
+    quote_check: found
+    title: 衛司特科技股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.recotech.com.tw/uploads/finance/115-q2.pdf
+  tw.6894#e13:
+    locator: 第13頁，附註四、3，合併財務報表編製主體／投資公司名稱與子公司名稱欄
+    published_date: '2026-08-07'
+    publisher: 衛司特科技股份有限公司
+    quote_check: found
+    title: 衛司特科技股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.recotech.com.tw/uploads/finance/115-q2.pdf
+  tw.6894#e14:
+    locator: 第13頁，附註四、3，合併財務報表編製主體／投資公司名稱與子公司名稱欄
+    published_date: '2026-08-07'
+    publisher: 衛司特科技股份有限公司
+    quote_check: found
+    title: 衛司特科技股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.recotech.com.tw/uploads/finance/115-q2.pdf
+  tw.6894#e15:
+    locator: 第13頁，附註四、3，合併財務報表編製主體／投資公司名稱與子公司名稱欄
+    published_date: '2026-08-07'
+    publisher: 衛司特科技股份有限公司
+    quote_check: found
+    title: 衛司特科技股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.recotech.com.tw/uploads/finance/115-q2.pdf
+  tw.6894#e16:
+    locator: 第11頁，公司主力產品與服務／子公司城鋒科技
+    published_date: '2026-08-11'
+    publisher: 衛司特科技股份有限公司
+    quote_check: found
+    title: 衛司特2026年8月11日法人說明會簡報
+    url: https://mopsov.twse.com.tw/nas/STR/689420260811M001.pdf
+  tw.6894#e2:
+    locator: 產品介紹
+    published_date: null
+    publisher: 衛司特科技股份有限公司
+    quote_check: found
+    title: RecoCell電解回收系統
+    url: https://www.recotech.com.tw/zh-tw/products/recocell
+  tw.6894#e3:
+    locator: 第54頁（PDF第58頁），目前主要產品及服務項目／再生金屬服務收入
+    published_date: '2026-04-30'
+    publisher: 衛司特科技股份有限公司
+    quote_check: found
+    title: 衛司特科技股份有限公司114年度年報
+    url: https://www.recotech.com.tw/uploads/finance/waste-114-annual_reports.pdf
+  tw.6894#e4:
+    locator: 產品介紹，DeNora DT系列陽極
+    published_date: null
+    publisher: 衛司特科技股份有限公司
+    quote_check: found
+    title: 不溶性陽極產品介紹
+    url: https://www.recotech.com.tw/zh-tw/products/denora
+  tw.6894#e5:
+    locator: 產品介紹
+    published_date: null
+    publisher: 衛司特科技股份有限公司
+    quote_check: found
+    title: 萃取系統
+    url: https://www.recotech.com.tw/zh-tw/products/extraction
+  tw.6894#e6:
+    locator: 產品介紹
+    published_date: null
+    publisher: 衛司特科技股份有限公司
+    quote_check: found
+    title: 酸性蝕刻液循環再生系統
+    url: https://www.recotech.com.tw/zh-tw/products/pcb-acidity
+  tw.6894#e7:
+    locator: 產品介紹
+    published_date: null
+    publisher: 衛司特科技股份有限公司
+    quote_check: found
+    title: 鹼性蝕刻液循環再生系統
+    url: https://www.recotech.com.tw/zh-tw/products/pcb-alkaline
+  tw.6894#e8:
+    locator: 第10頁，公司主力產品與服務／PCB電鍍不溶性陽極耗材
+    published_date: '2026-08-11'
+    publisher: 衛司特科技股份有限公司
+    quote_check: found
+    title: 衛司特2026年8月11日法人說明會簡報
+    url: https://mopsov.twse.com.tw/nas/STR/689420260811M001.pdf
+  tw.6894#e9:
+    locator: 第13頁，附註四、3，合併財務報表編製主體／投資公司名稱與子公司名稱欄
+    published_date: '2026-08-07'
+    publisher: 衛司特科技股份有限公司
+    quote_check: found
+    title: 衛司特科技股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.recotech.com.tw/uploads/finance/115-q2.pdf

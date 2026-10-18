@@ -54,6 +54,9 @@ themes:
 - stage: components
   theme: theme.5g
   tier: upstream
+- stage: it
+  theme: theme.data_center
+  tier: midstream
 - stage: parts
   theme: theme.liquid_cooling
   tier: upstream
@@ -80,7 +83,7 @@ evidence:
     locator: 印刷頁60，PDF第63頁，肆、營運概況／營業比重
     published_date: null
     publisher: 佳必琪國際股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: 佳必琪民國114年度股東會年報
     url: https://www.jpcco.com/storage/uploads/1779787286_%E4%BD%B3%E5%BF%85%E7%90%AA%E6%B0%91%E5%9C%8B114%E5%B9%B4%E5%BA%A6%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
   tw.6197#e10:
@@ -125,18 +128,25 @@ evidence:
     quote_check: found
     title: Riser Cable (PCIe Gen6)
     url: https://www.jpcco.com/lang/tw/product/find/Riser_Cable__PCIe_Gen6_
+  tw.6197#e19:
+    locator: Applications Target Markets／Datacenter Switch
+    published_date: null
+    publisher: 佳必琪國際股份有限公司
+    quote_check: unreachable
+    title: 800G OSFP SR8
+    url: https://www.jpcco.com/lang/tw/product/find/800G_OSFP_SR8
   tw.6197#e2:
     locator: 印刷頁60，PDF第63頁，114年度合併營業比重表／物聯網IoT列
     published_date: null
     publisher: 佳必琪國際股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: 佳必琪民國114年度股東會年報
     url: https://www.jpcco.com/storage/uploads/1779787286_%E4%BD%B3%E5%BF%85%E7%90%AA%E6%B0%91%E5%9C%8B114%E5%B9%B4%E5%BA%A6%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
   tw.6197#e3:
     locator: 印刷頁60，PDF第63頁，114年度合併營業比重表／其他產業列
     published_date: null
     publisher: 佳必琪國際股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: 佳必琪民國114年度股東會年報
     url: https://www.jpcco.com/storage/uploads/1779787286_%E4%BD%B3%E5%BF%85%E7%90%AA%E6%B0%91%E5%9C%8B114%E5%B9%B4%E5%BA%A6%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
   tw.6197#e4:

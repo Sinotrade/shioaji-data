@@ -8,12 +8,175 @@ industry:
   l0_code: '29'
   l0_name: 電子通路業
   l0_name_en: Electronic Products Distribution
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.semi
+  l2_name: 半導體
+  l2_name_en: Semiconductors
+  l3: semi.distribution
+  l3_name: IC 通路
+  l3_name_en: IC Distribution
+chain: chain.semiconductor
+primary_chain_position: midstream
+summary_short: 代理銷售網路通訊半導體，以無線通訊及有線寬頻元件為主要營收來源。
+summary_long: 全科以代理銷售網路通訊半導體為主要業務，產品涵蓋有線寬頻、無線通訊，以及光通訊、語音處理與通訊保護元件。2025年營收組成以無線通訊元件占56.65%最高，有線寬頻元件占23.08%，其他占20.27%。有線產品應用包括數據迴路與乙太網路交換機，無線產品用於藍牙、5G及無線區域網路；資料中心亦列為業務布局。公司另開發電動載具充電資訊的BLE無線傳輸整合方案，以及結合人工智慧晶片與Wi-Fi HaLow的長距離監視設備。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_wireless
+  name: 無線通訊元件
+  period: '2025'
+  revenue_share_pct: 56.65
+- evidence_ids:
+  - e2
+  id: seg_wired
+  name: 有線寬頻元件
+  period: '2025'
+  revenue_share_pct: 23.08
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 20.27
+main_theme: theme.ev
+themes:
+- stage: parts
+  theme: theme.ev
+  tier: midstream
+- stage: components
+  theme: theme.5g
+  tier: upstream
+- stage: it
+  theme: theme.data_center
+  tier: midstream
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股52.76%的子公司
+    details:
+    - 直接持股52.76%的子公司
+    edge: e891f3074b4a0
+    evidence_level: primary
+    id: org.alltek-marine-electronics
+    name: 全科綜電(股)公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的香港子公司
+    details:
+    - 直接持股100%的香港子公司
+    edge: e3fe07573d05f
+    evidence_level: primary
+    id: org.alltek-technology-hk
+    name: Alltek Technology (H.K.) Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的子公司
+    details:
+    - 直接持股100%的子公司
+    edge: e0f5fa4cbdf8e
+    evidence_level: primary
+    id: org.pantek-technology
+    name: 嵩森科技(股)公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.alltek.com
 tax_id: '86027892'
 incorporated: '1991-04-15'
 listed: '2008-11-26'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-18'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3209#e1:
+    locator: 第77頁，業務範圍／目前商品項目
+    published_date: '2026-04-30'
+    publisher: 全科科技股份有限公司
+    quote_check: found
+    title: 全科科技股份有限公司114年度年報
+    url: https://www.alltek.com/wp-content/uploads/2026/06/114%E5%B9%B4%E5%A0%B1.pdf
+  tw.3209#e10:
+    locator: 第71頁，轉投資事業持股表／本公司投資欄，114年12月31日
+    published_date: '2026-04-30'
+    publisher: 全科科技股份有限公司
+    quote_check: found
+    title: 全科科技股份有限公司114年度年報
+    url: https://www.alltek.com/wp-content/uploads/2026/06/114%E5%B9%B4%E5%A0%B1.pdf
+  tw.3209#e11:
+    locator: 第71頁，轉投資事業持股表／本公司投資欄，114年12月31日
+    published_date: '2026-04-30'
+    publisher: 全科科技股份有限公司
+    quote_check: found
+    title: 全科科技股份有限公司114年度年報
+    url: https://www.alltek.com/wp-content/uploads/2026/06/114%E5%B9%B4%E5%A0%B1.pdf
+  tw.3209#e2:
+    locator: 第77頁，114年度營業比重表；金額單位億元
+    published_date: '2026-04-30'
+    publisher: 全科科技股份有限公司
+    quote_check: found
+    title: 全科科技股份有限公司114年度年報
+    url: https://www.alltek.com/wp-content/uploads/2026/06/114%E5%B9%B4%E5%A0%B1.pdf
+  tw.3209#e3:
+    locator: 第83頁，主要產品之用途
+    published_date: '2026-04-30'
+    publisher: 全科科技股份有限公司
+    quote_check: found
+    title: 全科科技股份有限公司114年度年報
+    url: https://www.alltek.com/wp-content/uploads/2026/06/114%E5%B9%B4%E5%A0%B1.pdf
+  tw.3209#e4:
+    locator: 第81頁，114年度開發成功之技術或產品／電動載具充電量測無線通訊方案
+    published_date: '2026-04-30'
+    publisher: 全科科技股份有限公司
+    quote_check: found
+    title: 全科科技股份有限公司114年度年報
+    url: https://www.alltek.com/wp-content/uploads/2026/06/114%E5%B9%B4%E5%A0%B1.pdf
+  tw.3209#e5:
+    locator: 第81頁，114年度開發成功之技術或產品／嵌入式人工智慧長距離數位監視設備
+    published_date: '2026-04-30'
+    publisher: 全科科技股份有限公司
+    quote_check: found
+    title: 全科科技股份有限公司114年度年報
+    url: https://www.alltek.com/wp-content/uploads/2026/06/114%E5%B9%B4%E5%A0%B1.pdf
+  tw.3209#e6:
+    locator: 第78頁，產業上、中、下游之關聯性
+    published_date: '2026-04-30'
+    publisher: 全科科技股份有限公司
+    quote_check: found
+    title: 全科科技股份有限公司114年度年報
+    url: https://www.alltek.com/wp-content/uploads/2026/06/114%E5%B9%B4%E5%A0%B1.pdf
+  tw.3209#e7:
+    locator: 第83頁，其他產品之重要用途
+    published_date: '2026-04-30'
+    publisher: 全科科技股份有限公司
+    quote_check: found
+    title: 全科科技股份有限公司114年度年報
+    url: https://www.alltek.com/wp-content/uploads/2026/06/114%E5%B9%B4%E5%A0%B1.pdf
+  tw.3209#e8:
+    locator: 第16頁，業務方向與策略
+    published_date: '2026-08-13'
+    publisher: 全科科技股份有限公司
+    quote_check: found
+    title: 全科科技115年8月13日法人說明會簡報
+    url: https://www.alltek.com/wp-content/uploads/2026/08/%E6%B3%95%E8%AA%AA%E6%9C%83-115%E5%B9%B4-0813-%E4%B8%AD%E6%96%87.pdf
+  tw.3209#e9:
+    locator: 第71頁，轉投資事業持股表／本公司投資欄，114年12月31日
+    published_date: '2026-04-30'
+    publisher: 全科科技股份有限公司
+    quote_check: found
+    title: 全科科技股份有限公司114年度年報
+    url: https://www.alltek.com/wp-content/uploads/2026/06/114%E5%B9%B4%E5%A0%B1.pdf

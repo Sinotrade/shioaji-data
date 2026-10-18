@@ -112,6 +112,20 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: '2026-09-16'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 航空聯盟會員合作
+    details:
+    - 航空聯盟會員合作
+    edge: e47a009e6eb7b
+    evidence_level: primary
+    id: org.skyteam
+    name: 天合聯盟
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
@@ -269,6 +283,20 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: '2025-11-05'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 永續航空燃油SAF
+    details:
+    - 永續航空燃油SAF
+    edge: e82c838b0d198
+    evidence_level: primary
+    id: org.cpc-corporation-taiwan
+    name: 台灣中油
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   - as_of: '2023-10-04'
     confidence: ai_cross_checked
     counterparty_shares: []
@@ -279,6 +307,20 @@ relations:
     evidence_level: primary
     id: org.pratt-whitney
     name: Pratt & Whitney
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: Trent XWB及Trent XWB-97發動機
+    details:
+    - Trent XWB及Trent XWB-97發動機
+    edge: ee29afeb855ec
+    evidence_level: primary
+    id: org.rolls-royce
+    name: Rolls-Royce
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -752,6 +794,13 @@ evidence:
     quote_check: unreachable
     title: 合作聯盟－大中華攜手飛
     url: https://www.china-airlines.com/tw/zh/member/planning/partners?tab=GreaterChinaConnection
+  tw.2610#e_cpc:
+    locator: 正文台灣SAF採購段
+    published_date: '2025-11-05'
+    publisher: 中華航空股份有限公司
+    quote_check: unreachable
+    title: 華航首次在美添加 SAF 淨零碳目標再邁進一步
+    url: https://www.china-airlines.com/tw/zh/about-china-airlines/media/news/20251105.html
   tw.2610#e_delta:
     locator: PDF第14頁，達美航空共用班號
     published_date: null
@@ -829,6 +878,20 @@ evidence:
     quote_check: unreachable
     title: China Airlines 2025 Annual Report
     url: https://calec.china-airlines.com/annual-report/annual_2025.pdf
+  tw.2610#e_rr:
+    locator: 新聞稿第一段
+    published_date: '2007-12-11'
+    publisher: Rolls-Royce
+    quote_check: found
+    title: China Airlines selects Rolls-Royce for A350 XWBs
+    url: https://www.rolls-royce.com/media/press-releases-archive/yr-2007/china-airlines-selects-rr.aspx
+  tw.2610#e_rr97:
+    locator: 新聞稿最後一段
+    published_date: '2025-03-31'
+    publisher: 中華航空股份有限公司
+    quote_check: unreachable
+    title: 華航與空中巴士簽署 A350-1000 訂單 打造旗艦新機隊
+    url: https://www.china-airlines.com/tw/zh/about-china-airlines/media/news/20250331.html
   tw.2610#e_simulator_amount:
     locator: 第3項
     published_date: '2025-05-09'
@@ -843,6 +906,13 @@ evidence:
     quote_check: found
     title: 華航處分B787飛航模擬訓練設備2部，交易總金額約2334萬美元
     url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=ccd5a4b2-0106-4b39-b26d-8147b538a48b
+  tw.2610#e_skyteam:
+    locator: 新聞稿第一段
+    published_date: '2026-09-16'
+    publisher: 中華航空股份有限公司
+    quote_check: unreachable
+    title: 華航加入天合聯盟 15 週年 全球布局再啟新篇章
+    url: https://www.china-airlines.com/us/zh/about-china-airlines/media/news/20260916
   tw.2610#e_swire_jv:
     locator: 華膳的創立
     published_date: null
@@ -896,14 +966,14 @@ evidence:
     locator: 印刷頁26，七(二)關係人名稱及關係；七(一)定義母公司為中華航空
     published_date: null
     publisher: 台灣虎航股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: 台灣虎航股份有限公司民國114及113年第1季財務報告
     url: https://strapi-assets.tigerairtw.com/2025_Q1_2025_03_02a6c3027a.pdf
   tw.2610#e_tiger_parent:
     locator: 印刷頁26，七(一)母公司與最終控制者
     published_date: null
     publisher: 台灣虎航股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: 台灣虎航股份有限公司民國114及113年第1季財務報告
     url: https://strapi-assets.tigerairtw.com/2025_Q1_2025_03_02a6c3027a.pdf
   tw.2610#e_tiger_sale:

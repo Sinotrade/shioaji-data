@@ -64,6 +64,50 @@ segments:
   name: 其他
   period: '2025'
   revenue_share_pct: 27
+relations:
+  subsidiaries:
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 住宅及商業大樓租售子公司
+    details:
+    - 住宅及商業大樓租售子公司
+    edge: e1e57fc6f5b60
+    evidence_level: primary
+    id: org.南紡建設股份有限公司
+    name: 南紡建設股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 百貨業務子公司
+    details:
+    - 百貨業務子公司
+    edge: e420876c83ecd
+    evidence_level: primary
+    id: org.南紡流通事業股份有限公司
+    name: 南紡流通事業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 越南棉紗產銷子公司
+    details:
+    - 越南棉紗產銷子公司
+    edge: e9a3d1cb468ae
+    evidence_level: primary
+    id: org.臺南紡織-越南-有限公司
+    name: 臺南紡織(越南)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.tainanspin.com.tw/
 tax_id: '68919301'
 incorporated: '1955-03-21'
@@ -79,6 +123,13 @@ evidence:
     quote_check: found
     title: 主營事業或產品、服務介紹
     url: https://www.tainanspin.com.tw/index.php?id=32&index=5&lang=cht&option=module&task=pageinfo
+  tw.1440#e10:
+    locator: 列入合併財務報表之子公司，南紡建設列；附表被投資公司資訊另列正式全名
+    published_date: null
+    publisher: 臺南紡織股份有限公司；FinancialFilings公開鏡像
+    quote_check: unreachable
+    title: 2025年第4季合併財務報告
+    url: https://financialfilings.com/filings/tainan-spinning-1440/annual-report/2026/60569454/
   tw.1440#e2:
     locator: 主要產品用途及114年度營業比重，聚酯棉列；引文為營業金額及營業比重欄
     published_date: null
@@ -121,3 +172,17 @@ evidence:
     quote_check: found
     title: 主營事業或產品、服務介紹
     url: https://www.tainanspin.com.tw/index.php?id=32&index=5&lang=cht&option=module&task=pageinfo
+  tw.1440#e8:
+    locator: 重大會計政策之彙總說明／列入合併財務報表之子公司，臺南紡織(越南)有限公司列
+    published_date: null
+    publisher: 臺南紡織股份有限公司；FinancialFilings公開鏡像
+    quote_check: unreachable
+    title: 2025年第4季合併財務報告
+    url: https://financialfilings.com/filings/tainan-spinning-1440/annual-report/2026/60569454/
+  tw.1440#e9:
+    locator: 列入合併財務報表之子公司，南紡流通事業列；附表被投資公司資訊另列正式全名
+    published_date: null
+    publisher: 臺南紡織股份有限公司；FinancialFilings公開鏡像
+    quote_check: unreachable
+    title: 2025年第4季合併財務報告
+    url: https://financialfilings.com/filings/tainan-spinning-1440/annual-report/2026/60569454/

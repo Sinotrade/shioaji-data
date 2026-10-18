@@ -8,12 +8,97 @@ industry:
   l0_code: '28'
   l0_name: 電子零組件業
   l0_name_en: Electronic Parts and Components
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.ccl
+  l3_name: 銅箔基板與上游材料
+  l3_name_en: Copper Clad Laminates & Materials
+chain: chain.pcb
+primary_chain_position: upstream
+summary_short: 製造及銷售電解銅箔，供應印刷電路板與銅箔基板材料。
+summary_long: 榮科以電解銅箔為主要業務，供應印刷電路板及銅箔基板所需材料，位於印刷電路板產業鏈上游。產品包含 PK-HTE-LP3、反轉銅箔及高頻高速銅箔；反轉銅箔透過亮面處理降低壓合面的粗糙度，HVLP／VLP 產品則用於 5G 通訊、AI 伺服器與高頻網通設備。2026 年第一季財報以銅箔單一產品說明營運，未分別揭露各等級產品的營收占比。公司另全資持有從事投資業務的子公司 LCYT Holdings Corp.。
+segments:
+- evidence_ids:
+  - e5
+  id: seg_copper_foil
+  name: 銅箔
+  period: 2026-Q1
+  revenue_share_pct: null
+main_theme: theme.ai_server
+themes:
+- stage: board_materials
+  theme: theme.ai_server
+  tier: upstream
+- stage: components
+  theme: theme.5g
+  tier: upstream
+relations:
+  subsidiaries:
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資投資業務子公司
+    details:
+    - 全資投資業務子公司
+    edge: ee151343cd59f
+    evidence_level: primary
+    id: org.lcyt-holdings
+    name: LCYT Holdings Corp.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://lcyt.lcycic.com/
 tax_id: '97173920'
 incorporated: '1997-01-16'
 listed: '2018-06-28'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-18'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4989#e1:
+    locator: 組織架構首段
+    published_date: null
+    publisher: 李長榮科技股份有限公司
+    quote_check: found
+    title: 企業介紹－組織架構
+    url: https://lcyt.lcycic.com/zh/company/about-us/structure
+  tw.4989#e2:
+    locator: 產品介紹首段
+    published_date: null
+    publisher: 李長榮科技股份有限公司
+    quote_check: found
+    title: PK-HTE-LP3
+    url: https://lcyt.lcycic.com/zh/product/interconnect/pk-hte-lp3
+  tw.4989#e3:
+    locator: 產品介紹首段
+    published_date: null
+    publisher: 李長榮科技股份有限公司
+    quote_check: found
+    title: PK-HTE-RTF
+    url: https://lcyt.lcycic.com/zh/product/interconnect/pk-hte-rtf
+  tw.4989#e4:
+    locator: 常見問題－榮科提供哪些類型的電解銅箔
+    published_date: null
+    publisher: 李長榮科技股份有限公司
+    quote_check: found
+    title: 互連技術－電解銅箔
+    url: https://lcyt.lcycic.com/zh/product/interconnect
+  tw.4989#e5:
+    locator: 第51頁，部門資訊
+    published_date: null
+    publisher: 李長榮科技股份有限公司
+    quote_check: found
+    title: 李長榮科技股份有限公司及子公司115年第1季合併財務報告
+    url: https://lcyt.lcycic.com/zh/uploads/2026_Q1_de51d7eaf0.pdf
+  tw.4989#e6:
+    locator: 第25頁，附註十一子公司；持股欄依序為115年3月31日、114年12月31日及114年3月31日
+    published_date: null
+    publisher: 李長榮科技股份有限公司
+    quote_check: found
+    title: 李長榮科技股份有限公司及子公司115年第1季合併財務報告
+    url: https://lcyt.lcycic.com/zh/uploads/2026_Q1_de51d7eaf0.pdf

@@ -8,12 +8,122 @@ industry:
   l0_code: '22'
   l0_name: 生技醫療業
   l0_name_en: Biotechnology and Medical Care
-primary_chain_position: unknown
+  l1: health
+  l1_name: 醫療保健
+  l1_name_en: Healthcare
+  l2: health.pharma
+  l2_name: 製藥與生技
+  l2_name_en: Pharmaceuticals & Biotech
+  l3: bio.generic
+  l3_name: 學名藥與原料藥
+  l3_name_en: Generics & APIs
+chain: chain.biotech
+primary_chain_position: midstream
+summary_short: 以學名藥等西藥製劑及保健食品的製造銷售為主。
+summary_long: 生達以西藥製劑研發、製造及銷售為核心，產品涵蓋高血壓、糖尿病、精神科及胃腸科用藥，並開發特殊學名藥。依2025年年報營運概況，合併營收中人用藥品占45.8%、保健食品占31.4%，其他產品占22.8%。保健食品同時包含自有品牌與ODM，品項涵蓋納豆紅麴及乳酸菌；集團產品也包含原料藥。截至2026年6月底，生展生物科技與生泰合成工業均為納入合併財報的子公司。
+segments:
+- evidence_ids:
+  - e1
+  id: human_medicine
+  name: 人用藥品（合併口徑）
+  period: '2025'
+  revenue_share_pct: 45.8
+- evidence_ids:
+  - e1
+  id: health_food
+  name: 保健食品（合併口徑）
+  period: '2025'
+  revenue_share_pct: 31.4
+- evidence_ids:
+  - e1
+  id: other
+  name: 其他（合併口徑）
+  period: '2025'
+  revenue_share_pct: 22.8
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 納入合併財務報告的子公司
+    details:
+    - 納入合併財務報告的子公司
+    edge: eb933a0fcd9e0
+    evidence_level: primary
+    id: tw.1777
+    name: 生泰
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 納入合併財務報告的子公司
+    details:
+    - 納入合併財務報告的子公司
+    edge: e89514b1095c8
+    evidence_level: primary
+    id: tw.8279
+    name: 生展
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.standard.com.tw
 tax_id: '71122503'
 incorporated: '1967-06-30'
 listed: '1995-12-12'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-18'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1720#e1:
+    locator: 印刷第63頁，肆、營運概況／業務內容／營業比重
+    published_date: null
+    publisher: 生達化學製藥股份有限公司
+    quote_check: found
+    title: 生達化學製藥股份有限公司114年度年報
+    url: https://www.standard.com.tw/_upload/files/00_114_%E5%B9%B4%E5%A0%B1%28%E4%B8%AD%E6%96%87%29_%E4%B8%8A%E5%82%B3%E6%AA%94-Final.pdf
+  tw.1720#e2:
+    locator: 印刷第68頁，技術及研發概況／開發成功之技術或產品
+    published_date: null
+    publisher: 生達化學製藥股份有限公司
+    quote_check: found
+    title: 生達化學製藥股份有限公司114年度年報
+    url: https://www.standard.com.tw/_upload/files/00_114_%E5%B9%B4%E5%A0%B1%28%E4%B8%AD%E6%96%87%29_%E4%B8%8A%E5%82%B3%E6%AA%94-Final.pdf
+  tw.1720#e3:
+    locator: 印刷第68頁，技術及研發概況／開發成功之技術或產品
+    published_date: null
+    publisher: 生達化學製藥股份有限公司
+    quote_check: found
+    title: 生達化學製藥股份有限公司114年度年報
+    url: https://www.standard.com.tw/_upload/files/00_114_%E5%B9%B4%E5%A0%B1%28%E4%B8%AD%E6%96%87%29_%E4%B8%8A%E5%82%B3%E6%AA%94-Final.pdf
+  tw.1720#e4:
+    locator: 印刷第68頁，技術及研發概況／生化營養品
+    published_date: null
+    publisher: 生達化學製藥股份有限公司
+    quote_check: found
+    title: 生達化學製藥股份有限公司114年度年報
+    url: https://www.standard.com.tw/_upload/files/00_114_%E5%B9%B4%E5%A0%B1%28%E4%B8%AD%E6%96%87%29_%E4%B8%8A%E5%82%B3%E6%AA%94-Final.pdf
+  tw.1720#e5:
+    locator: 印刷第63頁，肆、營運概況／業務範圍
+    published_date: null
+    publisher: 生達化學製藥股份有限公司
+    quote_check: found
+    title: 生達化學製藥股份有限公司114年度年報
+    url: https://www.standard.com.tw/_upload/files/00_114_%E5%B9%B4%E5%A0%B1%28%E4%B8%AD%E6%96%87%29_%E4%B8%8A%E5%82%B3%E6%AA%94-Final.pdf
+  tw.1720#e6:
+    locator: 印刷第16頁，附註四（三）列入合併財務報告之子公司；生展列，115年6月30日持股46.68%；控制判斷見第17頁註3
+    published_date: '2026-08-07'
+    publisher: 生達化學製藥股份有限公司
+    quote_check: found
+    title: 生達化學製藥股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.standard.com.tw/_upload/files/(%E5%A5%97%E5%8D%B0)%E7%94%9F%E9%81%94115Q2%E5%90%88%E4%BD%B5%E9%9B%BB%E5%AD%90%E6%9B%B8.pdf
+  tw.1720#e7:
+    locator: 印刷第16頁，附註四（三）列入合併財務報告之子公司；生泰列，115年6月30日持股28.43%；控制判斷見第17頁註4
+    published_date: '2026-08-07'
+    publisher: 生達化學製藥股份有限公司
+    quote_check: found
+    title: 生達化學製藥股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.standard.com.tw/_upload/files/(%E5%A5%97%E5%8D%B0)%E7%94%9F%E9%81%94115Q2%E5%90%88%E4%BD%B5%E9%9B%BB%E5%AD%90%E6%9B%B8.pdf

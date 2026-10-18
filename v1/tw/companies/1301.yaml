@@ -75,6 +75,20 @@ relations:
   - as_of: 2025-12
     confidence: ai_cross_checked
     counterparty_shares: []
+    detail: 關聯企業銷售對象
+    details:
+    - 關聯企業銷售對象
+    edge: ee97572636c72
+    evidence_level: primary
+    id: org.formosa-plastics-corporation-usa
+    name: 台塑美國公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
     detail: 塑膠粉
     details:
     - 塑膠粉
@@ -114,6 +128,49 @@ relations:
     evidence_level: primary
     id: tw.3532
     name: 台勝科
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持有的寧波電子事業
+    details:
+    - 間接持有的寧波電子事業
+    edge: eda20f73d9555
+    evidence_level: primary
+    id: org.formosa-electronics-ningbo
+    name: 台塑電子(寧波)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 海外投資子公司
+    details:
+    - 海外投資子公司
+    edge: e400416f481b3
+    evidence_level: primary
+    id: org.formosa-plastics-cayman
+    name: 台塑工業(開曼)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持有的寧波塑膠事業
+    details:
+    - 間接持有的寧波塑膠事業
+    edge: ed6369ca90794
+    evidence_level: primary
+    id: org.formosa-plastics-ningbo
+    name: 台塑工業(寧波)有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -234,6 +291,27 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  - amount: 新台幣448,000千元
+    as_of: '2025-10-15'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 參與合資公司現金增資
+    details:
+    - 參與合資公司現金增資
+    edge: e8ec326253b9b
+    event_date: '2025-10-15'
+    events:
+    - amount: 新台幣448,000千元
+      detail: 參與合資公司現金增資
+      event_date: '2025-10-15'
+    evidence_level: primary
+    id: org.formosa-daikin-advanced-chemicals
+    name: 台塑大金股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
   - amount: 新台幣336,573,671元
     as_of: '2026-03-20'
     confidence: ai_cross_checked
@@ -259,6 +337,48 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  - amount: 新台幣75,000千元
+    as_of: '2025-11-17'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 合資成立台塑特博贏
+    details:
+    - 合資成立台塑特博贏
+    edge: eb4b46cea3615
+    event_date: '2025-11-17'
+    events:
+    - amount: 新台幣75,000千元
+      detail: 合資成立台塑特博贏
+      event_date: '2025-11-17'
+    evidence_level: primary
+    id: org.formosa-heavy-industries
+    name: 台朔重工股份有限公司
+    ranking_basis: unranked
+    role: party
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣10,394千元（匯回資金）
+    as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司投資的合資公司清算
+    details:
+    - 子公司投資的合資公司清算
+    edge: e76e4f245aab1
+    event_date: '2025-10-23'
+    events:
+    - amount: 新台幣10,394千元（匯回資金）
+      detail: 子公司投資的合資公司清算
+      event_date: '2025-10-23'
+    evidence_level: primary
+    id: org.formosa-mitsui-advanced-chemicals
+    name: 台塑三井精密化學公司
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
   - amount: null
     as_of: '2026-08-01'
     confidence: ai_cross_checked
@@ -280,19 +400,65 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  - amount: 新台幣935,478千元（退還股款）
+    as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 關聯企業清算退還股款
+    details:
+    - 關聯企業清算退還股款
+    edge: ef5afed295e4d
+    event_date: null
+    events:
+    - amount: 新台幣935,478千元（退還股款）
+      detail: 關聯企業清算退還股款
+      event_date: null
+    evidence_level: primary
+    id: org.formosa-plastics-group-cayman
+    name: 台塑集團(開曼)有限公司
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣2,500,000千元
+    as_of: '2024-05-17'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 參與關聯企業現金增資
+    details:
+    - 參與關聯企業現金增資
+    edge: e77ac90004d84
+    event_date: '2024-05-17'
+    events:
+    - amount: 新台幣2,500,000千元
+      detail: 參與關聯企業現金增資
+      event_date: '2024-05-17'
+    evidence_level: primary
+    id: org.formosa-smart-energy
+    name: 台塑新智能股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
   - amount: 新台幣500,000,000元
     as_of: '2026-05-28'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 核准參與合資公司現金增資
+    detail: 以台灣德亞瑪股權換取台塑德山新股
     details:
+    - 以台灣德亞瑪股權換取台塑德山新股
     - 核准參與合資公司現金增資
     edge: e2802868b5f30
-    event_date: '2026-05-28'
+    event_date: '2024-12-11'
     events:
     - amount: 新台幣500,000,000元
       detail: 核准參與合資公司現金增資
       event_date: '2026-05-28'
+    - amount: null
+      detail: 以台灣德亞瑪股權換取台塑德山新股
+      event_date: '2024-12-11'
     evidence_level: primary
     id: org.formosa-tokuyama-advanced-chemicals
     name: 台塑德山精密化學股份有限公司
@@ -343,6 +509,27 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  - amount: 美金530,000千元（折合新台幣17,103,630千元）
+    as_of: '2024-11-12'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 參與關聯企業增資，供其增資福建福欣特殊鋼
+    details:
+    - 參與關聯企業增資，供其增資福建福欣特殊鋼
+    edge: ecf86eb5cc676
+    event_date: '2024-11-12'
+    events:
+    - amount: 美金530,000千元（折合新台幣17,103,630千元）
+      detail: 參與關聯企業增資，供其增資福建福欣特殊鋼
+      event_date: '2024-11-12'
+    evidence_level: primary
+    id: org.tian-long-investment-samoa
+    name: 天龍投資（薩摩亞）有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
 unresolved_mentions:
 - 台塑中華先進化學相關報導所稱「國內半導體大廠」未具名，不推定為台塑客戶。
 - 南亞科技股票處分公告未揭露受讓交易對手。
@@ -362,11 +549,32 @@ evidence:
     quote_check: found
     title: 台灣塑膠工業股份有限公司114年度年報
     url: https://cdn.financialreports.eu/financialreports/media/filings/51762/2026/RNS/51762_rns_2026-06-11_fa537737-f64f-4320-b957-4e0a6e267018.pdf
+  tw.1301#e10:
+    locator: 印刷頁33，合資第4點
+    published_date: null
+    publisher: 台灣塑膠工業股份有限公司
+    quote_check: found
+    title: 台灣塑膠工業股份有限公司114年度個體財務報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51762/2026/RNS/51762_rns_2026-04-24_55cfb02a-67d3-406a-b739-822fc87b49f4.pdf
+  tw.1301#e11:
+    locator: 印刷頁75，大陸投資資訊，台塑工業(寧波)有限公司列；投資方式（二）、持股比例100.00%
+    published_date: null
+    publisher: 台灣塑膠工業股份有限公司
+    quote_check: found
+    title: 台灣塑膠工業股份有限公司114年度個體財務報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51762/2026/RNS/51762_rns_2026-04-24_55cfb02a-67d3-406a-b739-822fc87b49f4.pdf
+  tw.1301#e12:
+    locator: 印刷頁75，大陸投資資訊，台塑電子(寧波)有限公司列；投資方式（二）、持股比例100.00%
+    published_date: null
+    publisher: 台灣塑膠工業股份有限公司
+    quote_check: found
+    title: 台灣塑膠工業股份有限公司114年度個體財務報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51762/2026/RNS/51762_rns_2026-04-24_55cfb02a-67d3-406a-b739-822fc87b49f4.pdf
   tw.1301#e13:
     locator: 印刷頁32，關聯企業第4點
     published_date: null
     publisher: 台灣塑膠工業股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: 台灣塑膠工業股份有限公司114年度個體財務報告
     url: https://cdn.financialreports.eu/financialreports/media/filings/51762/2026/RNS/51762_rns_2026-04-24_55cfb02a-67d3-406a-b739-822fc87b49f4.pdf
   tw.1301#e14:
@@ -376,6 +584,41 @@ evidence:
     quote_check: found
     title: 台塑重大訊息：補充說明取得台灣德亞瑪股權總金額
     url: https://toalpha.tw/stock/1301
+  tw.1301#e15:
+    locator: 印刷頁32，關聯企業第4點，股份轉換說明
+    published_date: null
+    publisher: 台灣塑膠工業股份有限公司
+    quote_check: found
+    title: 台灣塑膠工業股份有限公司114年度個體財務報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51762/2026/RNS/51762_rns_2026-04-24_55cfb02a-67d3-406a-b739-822fc87b49f4.pdf
+  tw.1301#e16:
+    locator: 印刷頁32，關聯企業第5點
+    published_date: null
+    publisher: 台灣塑膠工業股份有限公司
+    quote_check: found
+    title: 台灣塑膠工業股份有限公司114年度個體財務報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51762/2026/RNS/51762_rns_2026-04-24_55cfb02a-67d3-406a-b739-822fc87b49f4.pdf
+  tw.1301#e17:
+    locator: 印刷頁32，關聯企業第6點
+    published_date: null
+    publisher: 台灣塑膠工業股份有限公司
+    quote_check: found
+    title: 台灣塑膠工業股份有限公司114年度個體財務報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51762/2026/RNS/51762_rns_2026-04-24_55cfb02a-67d3-406a-b739-822fc87b49f4.pdf
+  tw.1301#e18:
+    locator: 印刷頁33，合資第3點
+    published_date: null
+    publisher: 台灣塑膠工業股份有限公司
+    quote_check: found
+    title: 台灣塑膠工業股份有限公司114年度個體財務報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51762/2026/RNS/51762_rns_2026-04-24_55cfb02a-67d3-406a-b739-822fc87b49f4.pdf
+  tw.1301#e19:
+    locator: 印刷頁33，合資第5點
+    published_date: null
+    publisher: 台灣塑膠工業股份有限公司
+    quote_check: found
+    title: 台灣塑膠工業股份有限公司114年度個體財務報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51762/2026/RNS/51762_rns_2026-04-24_55cfb02a-67d3-406a-b739-822fc87b49f4.pdf
   tw.1301#e2:
     locator: 印刷頁111，營業比重表，聚烯事業部列
     published_date: '2026-03-30'
@@ -488,6 +731,27 @@ evidence:
     quote_check: found
     title: 台塑重大訊息：取得台塑德山精密化學股份有限公司股權
     url: https://toalpha.tw/stock/1301
+  tw.1301#e34:
+    locator: 印刷頁32，關聯企業第3點
+    published_date: null
+    publisher: 台灣塑膠工業股份有限公司
+    quote_check: found
+    title: 台灣塑膠工業股份有限公司114年度個體財務報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51762/2026/RNS/51762_rns_2026-04-24_55cfb02a-67d3-406a-b739-822fc87b49f4.pdf
+  tw.1301#e35:
+    locator: 印刷頁33，關聯企業第7點
+    published_date: null
+    publisher: 台灣塑膠工業股份有限公司
+    quote_check: found
+    title: 台灣塑膠工業股份有限公司114年度個體財務報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51762/2026/RNS/51762_rns_2026-04-24_55cfb02a-67d3-406a-b739-822fc87b49f4.pdf
+  tw.1301#e36:
+    locator: 印刷頁33，合資第4點
+    published_date: null
+    publisher: 台灣塑膠工業股份有限公司
+    quote_check: found
+    title: 台灣塑膠工業股份有限公司114年度個體財務報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51762/2026/RNS/51762_rns_2026-04-24_55cfb02a-67d3-406a-b739-822fc87b49f4.pdf
   tw.1301#e4:
     locator: 印刷頁111，營業比重表，台麗朗事業部列
     published_date: '2026-03-30'
@@ -523,3 +787,10 @@ evidence:
     quote_check: unreachable
     title: 台灣塑膠工業股份有限公司114年度年報全文
     url: https://financialfilings.com/filings/fpc-1301/annual-report/2026/48046964/
+  tw.1301#e9:
+    locator: 印刷頁30，重大關聯企業表，台塑美國公司列
+    published_date: null
+    publisher: 台灣塑膠工業股份有限公司
+    quote_check: found
+    title: 台灣塑膠工業股份有限公司114年度個體財務報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51762/2026/RNS/51762_rns_2026-04-24_55cfb02a-67d3-406a-b739-822fc87b49f4.pdf

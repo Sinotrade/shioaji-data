@@ -47,16 +47,60 @@ themes:
   tier: downstream
 relations:
   parents:
-  - as_of: '2025-12-31'
+  - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
     detail: 直接持股 40.30% 的合併子公司
     details:
     - 直接持股 40.30% 的合併子公司
+    - 財報明示之母公司
     edge: e6d64a1eec1c2
     evidence_level: primary
     id: tw.5469
     name: 瀚宇博
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 2
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的PCB子公司
+    details:
+    - 直接持股100%的PCB子公司
+    edge: e1fb3f196ba34
+    evidence_level: primary
+    id: org.lincstech
+    name: Lincstech Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過Lincstech持有的PCB子公司
+    details:
+    - 透過Lincstech持有的PCB子公司
+    edge: e0c31ef095296
+    evidence_level: primary
+    id: org.lincstech-circuit-singapore
+    name: Lincstech Circuit Singapore Pte. Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的PCB子公司，原名ELNA Printed Circuits
+    details:
+    - 直接持股100%的PCB子公司，原名ELNA Printed Circuits
+    edge: e3d19889b0669
+    evidence_level: primary
+    id: org.lincstech-epc
+    name: Lincstech EPC Co., Ltd.
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -69,6 +113,20 @@ as_of: '2026-10-15'
 confidence: ai_cross_checked
 has_research: true
 evidence:
+  tw.6191#e10:
+    locator: 第21頁，附註十二子公司註7
+    published_date: null
+    publisher: 精成科技股份有限公司
+    quote_check: found
+    title: 精成科技115年第2季合併財務報告
+    url: https://invest.gbm.com.tw/wp-content/uploads/2026/08/精成科技115Q2合併報告用印.pdf
+  tw.6191#e11:
+    locator: 第21頁，附註十二子公司，Lincstech Circuit Singapore列
+    published_date: null
+    publisher: 精成科技股份有限公司
+    quote_check: not_found
+    title: 精成科技115年第2季合併財務報告
+    url: https://invest.gbm.com.tw/wp-content/uploads/2026/08/精成科技115Q2合併報告用印.pdf
   tw.6191#e2:
     locator: 印刷頁44／PDF第48頁，營業比重；右側為114年度
     published_date: null
@@ -104,10 +162,24 @@ evidence:
     quote_check: found
     title: 精成科技114年度年報
     url: https://invest.gbm.com.tw/wp-content/uploads/2026/06/115年精成科股東會年報_上傳檔.pdf
+  tw.6191#e7:
+    locator: 第44頁，附註三二關係人交易
+    published_date: null
+    publisher: 精成科技股份有限公司
+    quote_check: found
+    title: 精成科技115年第2季合併財務報告
+    url: https://invest.gbm.com.tw/wp-content/uploads/2026/08/精成科技115Q2合併報告用印.pdf
   tw.6191#e8:
     locator: 第20頁，附註十二子公司，115年6月30日持股比例
     published_date: null
     publisher: 精成科技股份有限公司
-    quote_check: unreachable
+    quote_check: found
+    title: 精成科技115年第2季合併財務報告
+    url: https://invest.gbm.com.tw/wp-content/uploads/2026/08/精成科技115Q2合併報告用印.pdf
+  tw.6191#e9:
+    locator: 第20頁，附註十二子公司，115年6月30日持股比例
+    published_date: null
+    publisher: 精成科技股份有限公司
+    quote_check: found
     title: 精成科技115年第2季合併財務報告
     url: https://invest.gbm.com.tw/wp-content/uploads/2026/08/精成科技115Q2合併報告用印.pdf

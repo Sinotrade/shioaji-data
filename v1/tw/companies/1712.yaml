@@ -8,12 +8,127 @@ industry:
   l0_code: '21'
   l0_name: 化學工業
   l0_name_en: Chemical
-primary_chain_position: unknown
+  l1: materials
+  l1_name: 原物料
+  l1_name_en: Materials
+  l2: mat.chemicals
+  l2_name: 化工
+  l2_name_en: Chemicals
+  l3: chem.fertilizer
+  l3_name: 農化與肥料
+  l3_name_en: Agrochemicals & Fertilizers
+primary_chain_position: not_applicable
+summary_short: 以農藥、肥料等植物保護產品為主，並透過子公司經營超市與團膳。
+summary_long: 興農主要經營植物保護產品，產品包括農業用殺蟲劑、殺菌劑、除草劑及肥料，另有微生物農藥、微生物肥料、精密化學品及其中間體與塑膠包材。2026年1至7月，植物保護占合併營收57.7%，超市百貨占21.2%，家用品食品占16.8%，其他占4.3%。子公司台灣楓康超市經營生鮮超市；玉美生技經營農產運銷、食品團膳及家庭用品，集團業務因此涵蓋農業資材、食品與民生消費。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_crop
+  name: 植物保護
+  period: 2026-01至2026-07
+  revenue_share_pct: 57.7
+- evidence_ids:
+  - e1
+  id: seg_supermarket
+  name: 超市百貨
+  period: 2026-01至2026-07
+  revenue_share_pct: 21.2
+- evidence_ids:
+  - e1
+  id: seg_household_food
+  name: 家用品食品
+  period: 2026-01至2026-07
+  revenue_share_pct: 16.8
+- evidence_ids:
+  - e1
+  id: seg_other
+  name: 其他
+  period: 2026-01至2026-07
+  revenue_share_pct: 4.3
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 經營生鮮超市的子公司
+    details:
+    - 經營生鮮超市的子公司
+    edge: e49ec4715aeea
+    evidence_level: primary
+    id: org.taiwan-funcom-supermarket
+    name: 台灣楓康超市股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 經營農產運銷、食品團膳與家庭用品的子公司
+    details:
+    - 經營農產運銷、食品團膳與家庭用品的子公司
+    edge: e18390a127832
+    evidence_level: primary
+    id: org.yumei-biotec
+    name: 玉美生技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.sinon.com.tw
 tax_id: '51911712'
 incorporated: '1963-11-20'
 listed: '1989-12-14'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-15'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1712#e1:
+    locator: 第18頁，營業項目佔比，右側2026年1至7月圓餅圖
+    published_date: '2026-08-19'
+    publisher: 興農股份有限公司
+    quote_check: found
+    title: 20260819法人說明會簡報
+    url: https://www.sinon.com.tw/investors/act_report_item.php?act=6&index_id=57&item=370&type=item
+  tw.1712#e2:
+    locator: 印刷頁65，肆、營運概況／一、業務內容／業務範圍
+    published_date: null
+    publisher: 興農股份有限公司
+    quote_check: found
+    title: 興農股份有限公司114年度年報
+    url: https://www.sinon.com.tw/investors/act_report.php?act=6&index_id=52&file=year
+  tw.1712#e4:
+    locator: 植物保護產品品質管理／ISO 9001:2015品質管理系統
+    published_date: null
+    publisher: 興農股份有限公司
+    quote_check: found
+    title: 產品品質把關
+    url: https://www.sinon.com.tw/sustainability/crop-protection/35/
+  tw.1712#e5:
+    locator: 塑膠部，介紹首段
+    published_date: null
+    publisher: 興農股份有限公司
+    quote_check: found
+    title: 塑膠事業
+    url: https://www.sinon.com.tw/careers-detail/32/
+  tw.1712#e6:
+    locator: 第31頁，附註十一、子公司；投資公司為本公司，股權欄為114及113年12月31日
+    published_date: null
+    publisher: 興農股份有限公司
+    quote_check: found
+    title: 興農股份有限公司及子公司114年度合併財務報告
+    url: https://www.sinon.com.tw/investors/act_report.php?act=6&index_id=52&file=q4
+  tw.1712#e7:
+    locator: 事業版圖／楓康超市，介紹首段及業務標語
+    published_date: null
+    publisher: 興農股份有限公司
+    quote_check: found
+    title: 台灣楓康超市(股)公司
+    url: https://www.sinon.com.tw/careers-detail/31/
+  tw.1712#e8:
+    locator: 營運概況／持續創造價值，各事業經營表現段落
+    published_date: null
+    publisher: 興農股份有限公司
+    quote_check: found
+    title: 經營績效
+    url: https://www.sinon.com.tw/sustainability/governance/48/

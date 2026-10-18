@@ -39,6 +39,64 @@ themes:
 - stage: equipment
   theme: theme.cowos
   tier: upstream
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持有之蘇州技術服務子公司
+    details:
+    - 間接持有之蘇州技術服務子公司
+    edge: ecff641242273
+    evidence_level: primary
+    id: org.horng-terng-technology-suzhou
+    name: 竑騰科技（蘇州）有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持有之科技服務子公司
+    details:
+    - 間接持有之科技服務子公司
+    edge: eb55ebb7176b6
+    evidence_level: primary
+    id: org.shanghai-horng-terng-technology
+    name: 上海竑騰科技有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持有之自動化技術服務子公司
+    details:
+    - 間接持有之自動化技術服務子公司
+    edge: eca16d5b41698
+    evidence_level: primary
+    id: org.shanghai-horng-terng-trading
+    name: 上海竑騰貿易有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有之投資控股子公司
+    details:
+    - 直接持有之投資控股子公司
+    edge: e8f5fa3315f18
+    evidence_level: primary
+    id: org.yi-advantage-holdings
+    name: YI ADVANTAGE HOLDINGS LIMITED
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.hta.com.tw/
 tax_id: '89999982'
 incorporated: '1994-12-27'
@@ -47,6 +105,27 @@ as_of: '2026-10-15'
 confidence: ai_cross_checked
 has_research: true
 evidence:
+  tw.7751#e10:
+    locator: 第28頁，附註十，YI ADVANTAGE HOLDINGS LIMITED之子公司及持股表
+    published_date: '2026-05-11'
+    publisher: 竑騰科技股份有限公司
+    quote_check: found
+    title: 民國114及113年度合併財務報告
+    url: https://www.hta.com.tw/archive/doc/download/114%E5%B9%B4%20%E7%AC%AC%E5%9B%9B%E5%AD%A3%20%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E6%9B%B8%20IFRSs%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
+  tw.7751#e11:
+    locator: 第28頁，附註十，YI ADVANTAGE HOLDINGS LIMITED之子公司及持股表
+    published_date: '2026-05-11'
+    publisher: 竑騰科技股份有限公司
+    quote_check: found
+    title: 民國114及113年度合併財務報告
+    url: https://www.hta.com.tw/archive/doc/download/114%E5%B9%B4%20%E7%AC%AC%E5%9B%9B%E5%AD%A3%20%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E6%9B%B8%20IFRSs%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
+  tw.7751#e12:
+    locator: 第28頁，附註十，YI ADVANTAGE HOLDINGS LIMITED之子公司及持股表
+    published_date: '2026-05-11'
+    publisher: 竑騰科技股份有限公司
+    quote_check: found
+    title: 民國114及113年度合併財務報告
+    url: https://www.hta.com.tw/archive/doc/download/114%E5%B9%B4%20%E7%AC%AC%E5%9B%9B%E5%AD%A3%20%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E6%9B%B8%20IFRSs%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
   tw.7751#e2:
     locator: DS3200產品頁，適用範圍
     published_date: '2024-10-07'
@@ -93,6 +172,13 @@ evidence:
     locator: 第52頁，附註二九（一）主要產品之收入；欄位依序為114年度、113年度
     published_date: '2026-05-11'
     publisher: 竑騰科技股份有限公司
-    quote_check: unreachable
+    quote_check: found
+    title: 民國114及113年度合併財務報告
+    url: https://www.hta.com.tw/archive/doc/download/114%E5%B9%B4%20%E7%AC%AC%E5%9B%9B%E5%AD%A3%20%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E6%9B%B8%20IFRSs%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
+  tw.7751#e9:
+    locator: 第28頁，附註十子公司表，投資公司及子公司名稱欄
+    published_date: '2026-05-11'
+    publisher: 竑騰科技股份有限公司
+    quote_check: found
     title: 民國114及113年度合併財務報告
     url: https://www.hta.com.tw/archive/doc/download/114%E5%B9%B4%20%E7%AC%AC%E5%9B%9B%E5%AD%A3%20%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E6%9B%B8%20IFRSs%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf

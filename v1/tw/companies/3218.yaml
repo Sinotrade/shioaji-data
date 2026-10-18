@@ -8,12 +8,134 @@ industry:
   l0_code: '22'
   l0_name: 生技醫療業
   l0_name_en: Biotechnology and Medical Care
-primary_chain_position: unknown
+  l1: health
+  l1_name: 醫療保健
+  l1_name_en: Healthcare
+  l2: health.devices
+  l2_name: 醫療器材與服務
+  l2_name_en: Medical Devices & Services
+  l3: med.services
+  l3_name: 醫療服務與通路
+  l3_name_en: Healthcare Services & Distribution
+chain: chain.biotech
+primary_chain_position: downstream
+summary_short: 以眼科品牌授權、技術顧問、設備租賃及眼視光商品銷售取得收入。
+summary_long: 大學光以眼視光商品銷售及診所支援服務取得收入，向合作診所提供品牌授權、眼科設備租賃與技術服務。2025年合併營收中，品牌授權、技術與醫學服務占49.82%，商品銷售占25.98%，醫療耗材占15.34%，其餘為顧問及租金收入。商品涵蓋光學眼鏡、隱形眼鏡及大學金三明葉黃素等眼睛保健品，亦銷售眼科藥品耗材。主要直接子公司為太學投資控股與UNIVERSAL GROUP (BVI) INC.，均從事投資控股。
+segments:
+- evidence_ids:
+  - e2
+  id: s1
+  name: 品牌授權、技術與醫學服務收入
+  period: '2025'
+  revenue_share_pct: 49.82
+- evidence_ids:
+  - e2
+  id: s2
+  name: 商品銷售收入
+  period: '2025'
+  revenue_share_pct: 25.98
+- evidence_ids:
+  - e2
+  id: s3
+  name: 醫療耗材收入
+  period: '2025'
+  revenue_share_pct: 15.34
+- evidence_ids:
+  - e2
+  id: s4
+  name: 顧問收入
+  period: '2025'
+  revenue_share_pct: 3.75
+- evidence_ids:
+  - e2
+  id: s5
+  name: 租金收入
+  period: '2025'
+  revenue_share_pct: 5.11
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%之投資控股子公司
+    details:
+    - 直接持有100%之投資控股子公司
+    edge: e8bad9a7484e3
+    evidence_level: primary
+    id: org.universal-group-bvi-inc
+    name: UNIVERSAL GROUP (BVI) INC.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%之投資控股子公司
+    details:
+    - 直接持有100%之投資控股子公司
+    edge: e137b55eb5577
+    evidence_level: primary
+    id: org.太學投資控股股份有限公司
+    name: 太學投資控股股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.uvb.com.tw/
 tax_id: '84926791'
 incorporated: '1994-08-03'
 listed: '2004-11-29'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-18'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3218#e2:
+    locator: 第103頁／肆、營運概況／營業比重；2025年合併營收組成
+    published_date: '2026-03-31'
+    publisher: 大學光學科技股份有限公司
+    quote_check: found
+    title: 大學光學科技股份有限公司114年度年報
+    url: https://www.uvb.com.tw/file/annual/2025-2.pdf
+  tw.3218#e3:
+    locator: 「e大學」品牌授權 發展通路平台
+    published_date: null
+    publisher: 大學光學科技股份有限公司
+    quote_check: not_found
+    title: 合作診所 顧問諮詢
+    url: https://uvb.com.tw/service/
+  tw.3218#e4:
+    locator: 公司基本資訊／主要經營業務
+    published_date: null
+    publisher: 大學光學科技股份有限公司
+    quote_check: not_found
+    title: 公司基本資訊
+    url: https://uvb.com.tw/investor/
+  tw.3218#e5:
+    locator: 大學眼鏡服務項目
+    published_date: null
+    publisher: 大學光學科技股份有限公司
+    quote_check: not_found
+    title: 大學眼鏡
+    url: https://uvb.com.tw/service/service_a02/
+  tw.3218#e6:
+    locator: 第103頁／目前商品（服務）項目
+    published_date: '2026-03-31'
+    publisher: 大學光學科技股份有限公司
+    quote_check: found
+    title: 大學光學科技股份有限公司114年度年報
+    url: https://www.uvb.com.tw/file/annual/2025-2.pdf
+  tw.3218#e7:
+    locator: 第33頁／附註十三、子公司／投資公司為大學光學科技股份有限公司之列
+    published_date: null
+    publisher: 大學光學科技股份有限公司
+    quote_check: found
+    title: 大學光學科技股份有限公司及子公司114年度合併財務報告
+    url: https://www.uvb.com.tw/file/quarterly/2025-4.pdf
+  tw.3218#e8:
+    locator: 第33頁／附註十三、子公司／投資公司為大學光學科技股份有限公司之列
+    published_date: null
+    publisher: 大學光學科技股份有限公司
+    quote_check: found
+    title: 大學光學科技股份有限公司及子公司114年度合併財務報告
+    url: https://www.uvb.com.tw/file/quarterly/2025-4.pdf

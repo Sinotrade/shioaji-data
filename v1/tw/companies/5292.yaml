@@ -8,12 +8,220 @@ industry:
   l0_code: '35'
   l0_name: 綠能環保
   l0_name_en: Green Energy and Environmental Services
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.construction
+  l2_name: 營建與工程
+  l2_name_en: Engineering & Construction
+  l3: cons.engineering
+  l3_name: 工程與統包
+  l3_name_en: Engineering & EPC
+chain: chain.semiconductor
+primary_chain_position: upstream
+summary_short: 以VOCs廢氣處理設備工程、維修及除濕設備取得收入。
+summary_long: 華懋從事半導體製程VOCs廢氣處理及污染防治設備業務，提供相關設備與系統整合服務。2026年第一季合併營收中，工程收入占86%、維修收入占13%、銷貨收入占1%。主要產品包括沸石濃縮轉輪、直燃式焚化爐、蓄熱式焚化爐與低露點除濕機，應用於有機廢氣處理及空氣除濕。直接子公司包括勁順科技、XYRA Research Corp.、薩摩亞Desiccant Technology Corp.，以及美國與新加坡的子公司。
+segments:
+- evidence_ids:
+  - e4
+  id: engineering
+  name: 工程收入
+  period: 2026Q1
+  revenue_share_pct: 86
+- evidence_ids:
+  - e4
+  id: maintenance
+  name: 維修收入
+  period: 2026Q1
+  revenue_share_pct: 13
+- evidence_ids:
+  - e4
+  id: sales
+  name: 銷貨收入
+  period: 2026Q1
+  revenue_share_pct: 1
+relations:
+  subsidiaries:
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 薩摩亞直接子公司
+    details:
+    - 薩摩亞直接子公司
+    edge: e4d88b97ac800
+    evidence_level: primary
+    id: org.desiccant-technology-samoa
+    name: Desiccant Technology Corp.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 美國直接子公司
+    details:
+    - 美國直接子公司
+    edge: eba233a796560
+    evidence_level: primary
+    id: org.desiccant-technology-us
+    name: DESICCANT TECHNOLOGY CORP.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: eea7c6e7fc523
+    evidence_level: primary
+    id: org.jin-shun-technology
+    name: 勁順科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過薩摩亞子公司持有的間接子公司
+    details:
+    - 透過薩摩亞子公司持有的間接子公司
+    edge: ef3dbaa47b548
+    evidence_level: primary
+    id: org.shanghai-huamao-environmental
+    name: 上海華懋環保節能設備有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 新加坡直接子公司
+    details:
+    - 新加坡直接子公司
+    edge: e18fbddcc5ed3
+    evidence_level: primary
+    id: org.singapore-huamao-technology
+    name: Singapore Huamao Technology Pte. Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: e770a7ea90610
+    evidence_level: primary
+    id: org.xyra-research
+    name: XYRA Research Corp.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.dtech.com.tw
 tax_id: '23492169'
 incorporated: '1989-09-21'
 listed: '2023-11-21'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-18'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.5292#e10:
+    locator: 第19頁，附註十二子公司
+    published_date: null
+    publisher: 華懋科技股份有限公司
+    quote_check: found
+    title: 民國115及114年第1季合併財務報告暨會計師核閱報告
+    url: https://www.dtech.com.tw/storage/files/%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A/115%E5%B9%B4%E7%AC%AC%E4%B8%80%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf
+  tw.5292#e11:
+    locator: 第49頁，附表二；華懋直接投資項目，所在地區為薩摩亞
+    published_date: null
+    publisher: 華懋科技股份有限公司
+    quote_check: found
+    title: 民國115及114年第1季合併財務報告暨會計師核閱報告
+    url: https://www.dtech.com.tw/storage/files/%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A/115%E5%B9%B4%E7%AC%AC%E4%B8%80%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf
+  tw.5292#e12:
+    locator: 第19頁附註十二及第49頁附表二，美國子公司
+    published_date: null
+    publisher: 華懋科技股份有限公司
+    quote_check: found
+    title: 民國115及114年第1季合併財務報告暨會計師核閱報告
+    url: https://www.dtech.com.tw/storage/files/%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A/115%E5%B9%B4%E7%AC%AC%E4%B8%80%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf
+  tw.5292#e13:
+    locator: 第19頁，附註十二子公司
+    published_date: null
+    publisher: 華懋科技股份有限公司
+    quote_check: found
+    title: 民國115及114年第1季合併財務報告暨會計師核閱報告
+    url: https://www.dtech.com.tw/storage/files/%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A/115%E5%B9%B4%E7%AC%AC%E4%B8%80%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf
+  tw.5292#e14:
+    locator: 第19頁，附註十二子公司；投資公司及子公司對應列
+    published_date: null
+    publisher: 華懋科技股份有限公司
+    quote_check: found
+    title: 民國115及114年第1季合併財務報告暨會計師核閱報告
+    url: https://www.dtech.com.tw/storage/files/%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A/115%E5%B9%B4%E7%AC%AC%E4%B8%80%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf
+  tw.5292#e2:
+    locator: 公司簡介首段
+    published_date: null
+    publisher: 華懋科技股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.dtech.com.tw/about/8
+  tw.5292#e3:
+    locator: 系統整合服務段落標題
+    published_date: null
+    publisher: 華懋科技股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.dtech.com.tw/about/8
+  tw.5292#e4:
+    locator: 第5頁，合併綜合損益表；金額單位為新台幣仟元，後列百分比
+    published_date: null
+    publisher: 華懋科技股份有限公司
+    quote_check: found
+    title: 民國115及114年第1季合併財務報告暨會計師核閱報告
+    url: https://www.dtech.com.tw/storage/files/%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A/115%E5%B9%B4%E7%AC%AC%E4%B8%80%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf
+  tw.5292#e5:
+    locator: 產品描述首句
+    published_date: null
+    publisher: 華懋科技股份有限公司
+    quote_check: found
+    title: 沸石濃縮轉輪
+    url: https://www.dtech.com.tw/products/9/47/125
+  tw.5292#e6:
+    locator: 產品描述，熱回收說明
+    published_date: null
+    publisher: 華懋科技股份有限公司
+    quote_check: found
+    title: 直燃式焚化爐 (TO)
+    url: https://www.dtech.com.tw/products/9/48/133
+  tw.5292#e7:
+    locator: 產品描述，熱回收效率
+    published_date: null
+    publisher: 華懋科技股份有限公司
+    quote_check: found
+    title: 蓄熱式焚化爐 (RTO)
+    url: https://www.dtech.com.tw/products/9/49/134
+  tw.5292#e8:
+    locator: 產品描述，露點溫度
+    published_date: null
+    publisher: 華懋科技股份有限公司
+    quote_check: found
+    title: 低露點除濕機
+    url: https://www.dtech.com.tw/products/10/9/136
+  tw.5292#e9:
+    locator: 第19頁，附註十二子公司；投資公司名稱及子公司名稱欄
+    published_date: null
+    publisher: 華懋科技股份有限公司
+    quote_check: found
+    title: 民國115及114年第1季合併財務報告暨會計師核閱報告
+    url: https://www.dtech.com.tw/storage/files/%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A/115%E5%B9%B4%E7%AC%AC%E4%B8%80%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf

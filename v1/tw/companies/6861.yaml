@@ -8,7 +8,38 @@ industry:
   l0_code: '22'
   l0_name: 生技醫療業
   l0_name_en: Biotechnology and Medical Care
-primary_chain_position: unknown
+  l1: health
+  l1_name: 醫療保健
+  l1_name_en: Healthcare
+  l2: health.devices
+  l2_name: 醫療器材與服務
+  l2_name_en: Medical Devices & Services
+  l3: med.devices
+  l3_name: 醫療器材
+  l3_name_en: Medical Devices
+chain: chain.biotech
+primary_chain_position: midstream
+summary_short: 研發、製造及銷售醫療用X光平板感測器元件與模組，並提供工業檢測設備。
+summary_long: 睿生光電以數位X光平板感測器元件及模組的研發、設計與製造為主要業務，產品主要用於人體及動物醫療。2025年合併營收中，感測器元件占70.17%、模組占27.83%，其他業務占2%。元件產品涵蓋非晶矽、軟性基板與IGZO系列，提供標準品及客製化設計。公司亦提供工業用X光檢測設備客製化、設備代理及樣品委測服務。群創光電為其母公司；年報列示歐洲、日本、美國、寧波及印度五家子公司。
+segments:
+- evidence_ids:
+  - e02
+  id: s01
+  name: X光平板感測器元件
+  period: '2025'
+  revenue_share_pct: 70.17
+- evidence_ids:
+  - e02
+  id: s02
+  name: X光平板感測器模組
+  period: '2025'
+  revenue_share_pct: 27.83
+- evidence_ids:
+  - e02
+  id: s03
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 2
 relations:
   parents:
   - as_of: '2025-12-31'
@@ -17,10 +48,82 @@ relations:
     detail: 數位X光感測器子公司
     details:
     - 數位X光感測器子公司
+    - 母公司
     edge: e498841f6993b
     evidence_level: primary
     id: tw.3481
     name: 群創
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 2
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的子公司
+    details:
+    - 直接持股100%的子公司
+    edge: e856bfdd5ec9b
+    evidence_level: primary
+    id: org.innocare-optoelectronics-europe
+    name: InnoCare Optoelectronics Europe B.V.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的子公司
+    details:
+    - 直接持股100%的子公司
+    edge: e4aeac5e1d32d
+    evidence_level: primary
+    id: org.innocare-optoelectronics-japan
+    name: InnoCare Optoelectronics Japan Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的子公司
+    details:
+    - 直接持股100%的子公司
+    edge: e6408f8445f3f
+    evidence_level: primary
+    id: org.innocare-optoelectronics-usa
+    name: InnoCare Optoelectronics USA, INC.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 印度子公司，直接持股99.90%
+    details:
+    - 印度子公司，直接持股99.90%
+    edge: ebbf693ac7fbe
+    evidence_level: primary
+    id: org.innocare-solutions-private-limited
+    name: InnoCare Solutions Private Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的子公司
+    details:
+    - 直接持股100%的子公司
+    edge: e982528192d25
+    evidence_level: primary
+    id: org.ningbo-qunan-electronics-technology
+    name: 寧波群安電子科技有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -44,7 +147,84 @@ website: http://www.innocare-x.com
 tax_id: '69764396'
 incorporated: '2019-04-02'
 listed: '2023-03-27'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-18'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6861#e01:
+    locator: 首頁／關於睿生光電
+    published_date: null
+    publisher: 睿生光電股份有限公司
+    quote_check: found
+    title: 關於睿生光電
+    url: https://www.innocare-x.com/
+  tw.6861#e02:
+    locator: 印刷第67頁／民國114年度各項業務之合併營業比重
+    published_date: '2026-03-31'
+    publisher: 睿生光電股份有限公司
+    quote_check: found
+    title: 睿生光電股份有限公司民國114年度年報
+    url: https://www.innocare-x.com/wp-content/uploads/2026/05/20260513155232_0_b609c2.pdf
+  tw.6861#e03:
+    locator: 印刷第6頁／預期銷售量及其依據
+    published_date: '2026-03-31'
+    publisher: 睿生光電股份有限公司
+    quote_check: found
+    title: 睿生光電股份有限公司民國114年度年報
+    url: https://www.innocare-x.com/wp-content/uploads/2026/05/20260513155232_0_b609c2.pdf
+  tw.6861#e04:
+    locator: 產品與服務／標準化產品、客製化產品
+    published_date: null
+    publisher: 睿生光電股份有限公司
+    quote_check: found
+    title: 薄膜電晶體&閃爍體
+    url: https://www.innocare-x.com/%E7%94%A2%E5%93%81%E8%88%87%E6%9C%8D%E5%8B%99/%E8%96%84%E8%86%9C%E9%9B%BB%E6%99%B6%E9%AB%94%E8%88%87%E9%96%83%E7%88%8D%E9%AB%94/
+  tw.6861#e05:
+    locator: 非破壞工業檢測／服務說明
+    published_date: null
+    publisher: 睿生光電股份有限公司
+    quote_check: found
+    title: 非破壞工業檢測
+    url: https://www.innocare-x.com/%E9%9D%9E%E7%A0%B4%E5%A3%9E%E5%B7%A5%E6%A5%AD%E6%AA%A2%E6%B8%AC/
+  tw.6861#e06:
+    locator: 印刷第82頁／民國114年度主要供應商表之關係欄
+    published_date: '2026-03-31'
+    publisher: 睿生光電股份有限公司
+    quote_check: found
+    title: 睿生光電股份有限公司民國114年度年報
+    url: https://www.innocare-x.com/wp-content/uploads/2026/05/20260513155232_0_b609c2.pdf
+  tw.6861#e07:
+    locator: 印刷第59頁／轉投資事業持股表，本公司投資欄，基準日2025年12月31日
+    published_date: '2026-03-31'
+    publisher: 睿生光電股份有限公司
+    quote_check: found
+    title: 睿生光電股份有限公司民國114年度年報
+    url: https://www.innocare-x.com/wp-content/uploads/2026/05/20260513155232_0_b609c2.pdf
+  tw.6861#e08:
+    locator: 印刷第59頁／轉投資事業持股表，本公司投資欄，基準日2025年12月31日
+    published_date: '2026-03-31'
+    publisher: 睿生光電股份有限公司
+    quote_check: found
+    title: 睿生光電股份有限公司民國114年度年報
+    url: https://www.innocare-x.com/wp-content/uploads/2026/05/20260513155232_0_b609c2.pdf
+  tw.6861#e09:
+    locator: 印刷第59頁／轉投資事業持股表，本公司投資欄，基準日2025年12月31日
+    published_date: '2026-03-31'
+    publisher: 睿生光電股份有限公司
+    quote_check: found
+    title: 睿生光電股份有限公司民國114年度年報
+    url: https://www.innocare-x.com/wp-content/uploads/2026/05/20260513155232_0_b609c2.pdf
+  tw.6861#e10:
+    locator: 印刷第59頁／轉投資事業持股表，本公司投資欄，基準日2025年12月31日
+    published_date: '2026-03-31'
+    publisher: 睿生光電股份有限公司
+    quote_check: found
+    title: 睿生光電股份有限公司民國114年度年報
+    url: https://www.innocare-x.com/wp-content/uploads/2026/05/20260513155232_0_b609c2.pdf
+  tw.6861#e11:
+    locator: 印刷第59頁／轉投資事業持股表，本公司投資及綜合投資欄，基準日2025年12月31日
+    published_date: '2026-03-31'
+    publisher: 睿生光電股份有限公司
+    quote_check: found
+    title: 睿生光電股份有限公司民國114年度年報
+    url: https://www.innocare-x.com/wp-content/uploads/2026/05/20260513155232_0_b609c2.pdf

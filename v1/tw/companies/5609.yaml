@@ -8,8 +8,67 @@ industry:
   l0_code: '15'
   l0_name: 航運業
   l0_name_en: Shipping and Transportation
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.transport
+  l2_name: 運輸
+  l2_name_en: Transportation
+  l3: trans.logistics
+  l3_name: 物流與倉儲
+  l3_name_en: Logistics & Warehousing
+primary_chain_position: midstream
+summary_short: 以國際空運、海運承攬及倉儲配送等合同物流服務取得營收。
+summary_long: 中菲行主要以國際空運、海運承攬及合同物流服務取得營收，2025年營收組成分別為64.1%、30.8%及5.1%，以空運為最大來源。空運服務涵蓋半導體、電子、航太、醫療與時尚等高時效性產業；海運則以無船承運人模式提供整櫃與散貨運輸。合同物流提供倉儲、配送、保稅倉庫及維修零件物流解決方案。公司另提供報關與貿易合規服務，整合運輸與海關專業，透過單一窗口提供貨運承攬服務。
+segments:
+- evidence_ids:
+  - e2
+  id: air
+  name: 空運
+  period: '2025'
+  revenue_share_pct: 64.1
+- evidence_ids:
+  - e3
+  id: ocean
+  name: 海運
+  period: '2025'
+  revenue_share_pct: 30.8
+- evidence_ids:
+  - e4
+  id: contract_logistics
+  name: 合同物流
+  period: '2025'
+  revenue_share_pct: 5.1
 relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接全資控股子公司
+    details:
+    - 直接全資控股子公司
+    edge: e21c23ce7a297
+    evidence_level: primary
+    id: org.dimerco-express-holding
+    name: Dimerco Express Holding Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接全資物流子公司
+    details:
+    - 直接全資物流子公司
+    edge: ec8808a347eb9
+    evidence_level: primary
+    id: org.dimerco-express-singapore
+    name: Dimerco Express (Singapore) Pte Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   suppliers:
   - as_of: '2024-12-31'
     confidence: ai_cross_checked
@@ -29,7 +88,77 @@ website: http://www.dimerco.com
 tax_id: '01176152'
 incorporated: '1985-08-02'
 listed: '2001-10-15'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-18'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.5609#e10:
+    locator: 附註4(c)(ii)，第12頁，納入合併報表子公司表；投資者The Company，2025年12月31日持股欄
+    published_date: null
+    publisher: 中菲行國際物流股份有限公司
+    quote_check: found
+    title: 中菲行2025年度合併財務報告
+    url: https://dimerco.com/wp-content/uploads/2026/04/2025Q4_DIMTW_Eng.pdf
+  tw.5609#e11:
+    locator: 附註4(c)(ii)，第12頁，納入合併報表子公司表；投資者The Company，2025年12月31日持股欄
+    published_date: null
+    publisher: 中菲行國際物流股份有限公司
+    quote_check: found
+    title: 中菲行2025年度合併財務報告
+    url: https://dimerco.com/wp-content/uploads/2026/04/2025Q4_DIMTW_Eng.pdf
+  tw.5609#e2:
+    locator: 第68頁，營業比重表，114年度空運營業額占比欄
+    published_date: null
+    publisher: 中菲行國際物流股份有限公司
+    quote_check: not_found
+    title: 中菲行國際物流股份有限公司114年度年報
+    url: https://tw.dimerco.com/wp-content/uploads/sites/7/2026/06/4.-114%E5%B9%B4%E5%B9%B4%E5%A0%B1.pdf
+  tw.5609#e3:
+    locator: 第68頁，營業比重表，114年度海運營業額占比欄
+    published_date: null
+    publisher: 中菲行國際物流股份有限公司
+    quote_check: not_found
+    title: 中菲行國際物流股份有限公司114年度年報
+    url: https://tw.dimerco.com/wp-content/uploads/sites/7/2026/06/4.-114%E5%B9%B4%E5%B9%B4%E5%A0%B1.pdf
+  tw.5609#e4:
+    locator: 第68頁，營業比重表，114年度合同物流營業額占比欄
+    published_date: null
+    publisher: 中菲行國際物流股份有限公司
+    quote_check: not_found
+    title: 中菲行國際物流股份有限公司114年度年報
+    url: https://tw.dimerco.com/wp-content/uploads/sites/7/2026/06/4.-114%E5%B9%B4%E5%B9%B4%E5%A0%B1.pdf
+  tw.5609#e5:
+    locator: 第68頁，3-1-1國際空運服務
+    published_date: null
+    publisher: 中菲行國際物流股份有限公司
+    quote_check: found
+    title: 中菲行國際物流股份有限公司114年度年報
+    url: https://tw.dimerco.com/wp-content/uploads/sites/7/2026/06/4.-114%E5%B9%B4%E5%B9%B4%E5%A0%B1.pdf
+  tw.5609#e6:
+    locator: 第69頁，3-1-2國際海運服務
+    published_date: null
+    publisher: 中菲行國際物流股份有限公司
+    quote_check: found
+    title: 中菲行國際物流股份有限公司114年度年報
+    url: https://tw.dimerco.com/wp-content/uploads/sites/7/2026/06/4.-114%E5%B9%B4%E5%B9%B4%E5%A0%B1.pdf
+  tw.5609#e7:
+    locator: 第70頁，3-2合同物流服務
+    published_date: null
+    publisher: 中菲行國際物流股份有限公司
+    quote_check: found
+    title: 中菲行國際物流股份有限公司114年度年報
+    url: https://tw.dimerco.com/wp-content/uploads/sites/7/2026/06/4.-114%E5%B9%B4%E5%B9%B4%E5%A0%B1.pdf
+  tw.5609#e8:
+    locator: 第70頁，3-1-5報關與合規
+    published_date: null
+    publisher: 中菲行國際物流股份有限公司
+    quote_check: found
+    title: 中菲行國際物流股份有限公司114年度年報
+    url: https://tw.dimerco.com/wp-content/uploads/sites/7/2026/06/4.-114%E5%B9%B4%E5%B9%B4%E5%A0%B1.pdf
+  tw.5609#e9:
+    locator: 第75頁，產業上、中、下游之關聯性圖，中游欄
+    published_date: null
+    publisher: 中菲行國際物流股份有限公司
+    quote_check: not_found
+    title: 中菲行國際物流股份有限公司114年度年報
+    url: https://tw.dimerco.com/wp-content/uploads/sites/7/2026/06/4.-114%E5%B9%B4%E5%B9%B4%E5%A0%B1.pdf

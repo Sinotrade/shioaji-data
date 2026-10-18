@@ -55,6 +55,49 @@ themes:
   theme: theme.ai_server
   tier: midstream
 relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的美國子公司
+    details:
+    - 直接持股100%的美國子公司
+    edge: ebcb1f42c99f2
+    evidence_level: primary
+    id: org.genesis-technology-usa
+    name: GENESIS TECHNOLOGY USA, INC.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的子公司
+    details:
+    - 直接持股100%的子公司
+    edge: ea276a66eb88f
+    evidence_level: primary
+    id: org.kuang-ying-new-industrial
+    name: 廣迎新工業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股99.86%的子公司
+    details:
+    - 直接持股99.86%的子公司
+    edge: eced97a4fefc2
+    evidence_level: primary
+    id: org.mec-imex
+    name: 龍翰科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   suppliers:
   - as_of: '2025-11-18'
     confidence: ai_cross_checked
@@ -85,6 +128,27 @@ evidence:
     quote_check: found
     title: ACES－EV產品
     url: https://www.acesconn.com/tw/series_list_type_2/EV%20%E7%94%A2%E5%93%81/4
+  tw.3605#e11:
+    locator: 第67頁，114年12月31日轉投資持股表；本公司投資欄
+    published_date: '2026-05-08'
+    publisher: 宏致電子股份有限公司
+    quote_check: unreachable
+    title: 宏致電子股份有限公司114年度年報
+    url: https://financialfilings.com/filings/aces-3605/annual-report/2026/47969343/
+  tw.3605#e12:
+    locator: 第68頁，114年12月31日轉投資持股表；本公司投資欄
+    published_date: '2026-05-08'
+    publisher: 宏致電子股份有限公司
+    quote_check: unreachable
+    title: 宏致電子股份有限公司114年度年報
+    url: https://financialfilings.com/filings/aces-3605/annual-report/2026/47969343/
+  tw.3605#e13:
+    locator: 第68頁，114年12月31日轉投資持股表；本公司投資欄
+    published_date: '2026-05-08'
+    publisher: 宏致電子股份有限公司
+    quote_check: unreachable
+    title: 宏致電子股份有限公司114年度年報
+    url: https://financialfilings.com/filings/aces-3605/annual-report/2026/47969343/
   tw.3605#e2:
     locator: 第80頁，肆、營運概況／一、業務內容／營業比重；連接器列，114年度營收及占比
     published_date: '2026-05-08'

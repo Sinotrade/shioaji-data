@@ -42,8 +42,14 @@ segments:
   name: 筆記型電腦轉軸
   period: null
   revenue_share_pct: null
-main_theme: theme.nvidia
+main_theme: theme.ai_server
 themes:
+- stage: components
+  theme: theme.ai_server
+  tier: midstream
+- stage: parts
+  theme: theme.liquid_cooling
+  tier: upstream
 - stage: components
   theme: theme.nvidia
   tier: midstream
@@ -321,7 +327,7 @@ evidence:
     locator: 第50頁，肆、營運概況，公司目前之商品項目
     published_date: '2026-04-02'
     publisher: 富世達股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: 富世達股份有限公司114年度年報
     url: https://cdn.financialreports.eu/financialreports/media/filings/52636/2026/RNS/52636_rns_2026-05-12_b3e3970c-32dd-431c-975c-696c1e2244b1.pdf
   tw.6805#e4:

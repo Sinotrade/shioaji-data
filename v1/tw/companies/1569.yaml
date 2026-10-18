@@ -8,7 +8,37 @@ industry:
   l0_code: '25'
   l0_name: 電腦及週邊設備業
   l0_name_en: Computer and Peripheral Equipment
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.chassis
+  l3_name: 機殼與機構件
+  l3_name_en: Chassis & Mechanical Parts
+primary_chain_position: midstream
+summary_short: 以筆電、平板電腦金屬機殼及鍵盤金屬支架為主要營收來源。
+summary_long: 濱川以金屬沖壓及CNC加工製造資訊與消費性電子產品的機構、外觀零件，並自行開發模具。2025年度營收以筆電及平板電腦金屬機殼為主，占77%；筆電鍵盤金屬支架占15%，其他占8%。既有業務亦包括外科醫療器材與手術器械。2026年度營業計畫列入AI伺服器水冷散熱相關產品，包括分歧管及快接頭，屬公司揭露的產品發展與營運規劃。集團直接或間接持有泰國、馬來西亞、蘇州及重慶等地子公司。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_chassis
+  name: 筆電及平板電腦金屬機殼
+  period: 2025年度
+  revenue_share_pct: 77
+- evidence_ids:
+  - e2
+  id: seg_keyboard
+  name: 筆電鍵盤金屬支架
+  period: 2025年度
+  revenue_share_pct: 15
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他
+  period: 2025年度
+  revenue_share_pct: 8
 relations:
   customers:
   - as_of: '2026-01-20'
@@ -21,6 +51,119 @@ relations:
     evidence_level: media
     id: tw.3324
     name: 雙鴻
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持有100%股權的子公司
+    details:
+    - 間接持有100%股權的子公司
+    edge: eb38df3f63b5f
+    evidence_level: primary
+    id: org.chongqing-fengchuan-electronic-technology
+    name: 重慶豐川電子科技有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有51%股權的子公司
+    details:
+    - 直接持有51%股權的子公司
+    edge: e7a7179e3c5a3
+    evidence_level: primary
+    id: org.feng-rong-precision-enterprise
+    name: 豐榮精密企業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%股權的子公司
+    details:
+    - 直接持有100%股權的子公司
+    edge: e187f2235ba8c
+    evidence_level: primary
+    id: org.hamagawa-corp
+    name: Hamagawa Corp.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%股權的子公司
+    details:
+    - 直接持有100%股權的子公司
+    edge: e02c72ce684cf
+    evidence_level: primary
+    id: org.hamagawa-holdings-limited
+    name: Hamagawa Holdings Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持有58%股權的馬來西亞子公司
+    details:
+    - 間接持有58%股權的馬來西亞子公司
+    edge: e3fac2e907696
+    evidence_level: primary
+    id: org.hamagawa-industrial-m
+    name: Hamagawa Industrial (M) Sdn. Bhd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%股權的泰國子公司
+    details:
+    - 直接持有100%股權的泰國子公司
+    edge: e2a02459b888c
+    evidence_level: primary
+    id: org.hamagawa-industries-thailand
+    name: Hamagawa Industries (Thailand) Co.,Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持有100%股權的子公司
+    details:
+    - 間接持有100%股權的子公司
+    edge: e45e80e90ea14
+    evidence_level: primary
+    id: org.suzhou-fengchuan-electronic-technology
+    name: 蘇州豐川電子科技有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持有100%股權的子公司
+    details:
+    - 間接持有100%股權的子公司
+    edge: e5b5b2e261c8d
+    evidence_level: primary
+    id: org.suzhou-hamagawa-precision-industry
+    name: 蘇州濱川精密工業有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -55,7 +198,63 @@ website: https://www.hamagawa.com.tw/
 tax_id: '76404919'
 incorporated: '1983-03-30'
 listed: '2005-07-29'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-18'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1569#e2:
+    locator: 第46頁，業務範圍／營業比重，114年度銷貨淨額及比重表
+    published_date: '2026-06-05'
+    publisher: 濱川企業股份有限公司
+    quote_check: not_found
+    title: 濱川企業股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=1569&colorchg=1&filename=2025_1569_20260629F04.pdf&kind=F&step=9
+  tw.1569#e3:
+    locator: 第46頁，產業概況／產業之現況與發展
+    published_date: '2026-06-05'
+    publisher: 濱川企業股份有限公司
+    quote_check: not_found
+    title: 濱川企業股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=1569&colorchg=1&filename=2025_1569_20260629F04.pdf&kind=F&step=9
+  tw.1569#e4:
+    locator: 第46頁，業務之主要內容第3、4項
+    published_date: '2026-06-05'
+    publisher: 濱川企業股份有限公司
+    quote_check: not_found
+    title: 濱川企業股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=1569&colorchg=1&filename=2025_1569_20260629F04.pdf&kind=F&step=9
+  tw.1569#e5:
+    locator: 第1頁，115年度營業計畫概要
+    published_date: '2026-06-05'
+    publisher: 濱川企業股份有限公司
+    quote_check: not_found
+    title: 濱川企業股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=1569&colorchg=1&filename=2025_1569_20260629F04.pdf&kind=F&step=9
+  tw.1569#e6:
+    locator: 第40頁，114年12月31日轉投資事業持股表；本公司投資欄
+    published_date: '2026-06-05'
+    publisher: 濱川企業股份有限公司
+    quote_check: not_found
+    title: 濱川企業股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=1569&colorchg=1&filename=2025_1569_20260629F04.pdf&kind=F&step=9
+  tw.1569#e7:
+    locator: 第40頁，114年12月31日轉投資事業持股表；馬來西亞及泰國公司列
+    published_date: '2026-06-05'
+    publisher: 濱川企業股份有限公司
+    quote_check: not_found
+    title: 濱川企業股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=1569&colorchg=1&filename=2025_1569_20260629F04.pdf&kind=F&step=9
+  tw.1569#e8:
+    locator: 第40頁，114年12月31日轉投資事業持股表；蘇州濱川、蘇州豐川及重慶豐川列
+    published_date: '2026-06-05'
+    publisher: 濱川企業股份有限公司
+    quote_check: not_found
+    title: 濱川企業股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=1569&colorchg=1&filename=2025_1569_20260629F04.pdf&kind=F&step=9
+  tw.1569#e9:
+    locator: 第40頁，114年12月31日轉投資事業持股表；豐榮與泰美本公司投資欄，分別摘錄
+    published_date: '2026-06-05'
+    publisher: 濱川企業股份有限公司
+    quote_check: not_found
+    title: 濱川企業股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=1569&colorchg=1&filename=2025_1569_20260629F04.pdf&kind=F&step=9

@@ -8,12 +8,124 @@ industry:
   l0_code: '17'
   l0_name: 金融保險業
   l0_name_en: Financial and Insurance
-primary_chain_position: unknown
+  l1: finance
+  l1_name: 金融
+  l1_name_en: Financials
+  l2: fin.insurance
+  l2_name: 保險
+  l2_name_en: Insurance
+  l3: fin.property
+  l3_name: 產物保險
+  l3_name_en: Property & Casualty Insurance
+chain: chain.finance
+primary_chain_position: not_applicable
+summary_short: 經營產物保險，以汽車保險為主要保費來源。
+summary_long: 第一保以財產保險為主要業務，承作汽車、火災、海上、工程與責任，以及傷害與健康保險。依2025年度直接簽單保費收入，汽車保險占57.79%，火災保險占15.20%，傷害與健康保險占9.49%，工程與責任保險占6.33%，海上保險占5.83%。汽車保險商品包括強制汽車責任及汽車第三人責任保險，住宅商品則包括住宅火災及地震基本保險。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_auto
+  name: 汽車保險
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e2
+  id: seg_fire
+  name: 火災保險
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e3
+  id: seg_marine
+  name: 海上保險
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e4
+  id: seg_engineering_liability
+  name: 工程與責任保險
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e5
+  id: seg_accident_health
+  name: 傷害與健康保險
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e6
+  id: seg_other
+  name: 其他保險
+  period: '2025'
+  revenue_share_pct: null
 website: http://www.firstins.com.tw
 tax_id: 03359109
 incorporated: '1962-09-04'
 listed: '2000-11-28'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-18'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2852#e1:
+    locator: 第95頁，114年度各業務類別集中度；直接簽單保費收入及百分比欄
+    published_date: null
+    publisher: 第一產物保險股份有限公司
+    quote_check: found
+    title: 第一產物保險股份有限公司民國114及113年度財務報告暨會計師查核報告
+    url: https://www.firstins.com.tw/download/76rp3G/file/%E7%AC%AC%E4%B8%80%E4%BF%9D114Q4%E8%B2%A1%E5%A0%B1.pdf
+  tw.2852#e2:
+    locator: 第95頁，114年度各業務類別集中度；直接簽單保費收入及百分比欄
+    published_date: null
+    publisher: 第一產物保險股份有限公司
+    quote_check: found
+    title: 第一產物保險股份有限公司民國114及113年度財務報告暨會計師查核報告
+    url: https://www.firstins.com.tw/download/76rp3G/file/%E7%AC%AC%E4%B8%80%E4%BF%9D114Q4%E8%B2%A1%E5%A0%B1.pdf
+  tw.2852#e3:
+    locator: 第95頁，114年度各業務類別集中度；直接簽單保費收入及百分比欄
+    published_date: null
+    publisher: 第一產物保險股份有限公司
+    quote_check: found
+    title: 第一產物保險股份有限公司民國114及113年度財務報告暨會計師查核報告
+    url: https://www.firstins.com.tw/download/76rp3G/file/%E7%AC%AC%E4%B8%80%E4%BF%9D114Q4%E8%B2%A1%E5%A0%B1.pdf
+  tw.2852#e4:
+    locator: 第95頁，114年度各業務類別集中度；直接簽單保費收入及百分比欄
+    published_date: null
+    publisher: 第一產物保險股份有限公司
+    quote_check: found
+    title: 第一產物保險股份有限公司民國114及113年度財務報告暨會計師查核報告
+    url: https://www.firstins.com.tw/download/76rp3G/file/%E7%AC%AC%E4%B8%80%E4%BF%9D114Q4%E8%B2%A1%E5%A0%B1.pdf
+  tw.2852#e5:
+    locator: 第95頁，114年度各業務類別集中度；直接簽單保費收入及百分比欄
+    published_date: null
+    publisher: 第一產物保險股份有限公司
+    quote_check: found
+    title: 第一產物保險股份有限公司民國114及113年度財務報告暨會計師查核報告
+    url: https://www.firstins.com.tw/download/76rp3G/file/%E7%AC%AC%E4%B8%80%E4%BF%9D114Q4%E8%B2%A1%E5%A0%B1.pdf
+  tw.2852#e6:
+    locator: 第95頁，114年度各業務類別集中度；直接簽單保費收入及百分比欄
+    published_date: null
+    publisher: 第一產物保險股份有限公司
+    quote_check: found
+    title: 第一產物保險股份有限公司民國114及113年度財務報告暨會計師查核報告
+    url: https://www.firstins.com.tw/download/76rp3G/file/%E7%AC%AC%E4%B8%80%E4%BF%9D114Q4%E8%B2%A1%E5%A0%B1.pdf
+  tw.2852#e7:
+    locator: 強制險
+    published_date: null
+    publisher: 第一產物保險股份有限公司
+    quote_check: found
+    title: 個人保險
+    url: https://www.firstins.com.tw/insurance/personal
+  tw.2852#e8:
+    locator: 汽車第三人責任保險
+    published_date: null
+    publisher: 第一產物保險股份有限公司
+    quote_check: found
+    title: 個人保險
+    url: https://www.firstins.com.tw/insurance/personal
+  tw.2852#e9:
+    locator: 住宅火災保險
+    published_date: null
+    publisher: 第一產物保險股份有限公司
+    quote_check: found
+    title: 個人保險
+    url: https://www.firstins.com.tw/insurance/personal

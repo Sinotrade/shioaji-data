@@ -8,12 +8,162 @@ industry:
   l0_code: '10'
   l0_name: 鋼鐵工業
   l0_name_en: Iron and Steel
-primary_chain_position: unknown
+  l1: materials
+  l1_name: 原物料
+  l1_name_en: Materials
+  l2: mat.metals
+  l2_name: 金屬
+  l2_name_en: Metals
+  l3: metal.fasteners
+  l3_name: 螺絲螺帽與金屬製品
+  l3_name_en: Fasteners & Metal Products
+chain: chain.steel
+primary_chain_position: downstream
+summary_short: 以車用螺絲、螺帽等扣件的製造與銷售為主要業務。
+summary_long: 恆耀國際以車用扣件為核心，主要經營螺絲、螺帽及金屬零組件的製造與銷售。2025年合併營收以外牙扣件為主，占78.49%，內牙扣件占18.83%，其他零組件占2.68%。集團產品涵蓋輕量化鋁螺栓與超高強度鋼扣件，公司亦開發車用電子微型扣件，並已通過測試及陸續量產。官網另揭露開發電動車用新一代扣件。主要子公司包括BOLTUN BVI、恆德投資及越南BOLTUN INTERNATIONAL，德國ESKA則透過恆德投資體系間接控制，從事汽車扣件製造與銷售。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_external
+  name: 外牙扣件
+  period: '2025'
+  revenue_share_pct: 78.49
+- evidence_ids:
+  - e2
+  id: seg_internal
+  name: 內牙扣件
+  period: '2025'
+  revenue_share_pct: 18.83
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他零組件
+  period: '2025'
+  revenue_share_pct: 2.68
+main_theme: theme.ev
+themes:
+- stage: parts
+  theme: theme.ev
+  tier: midstream
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有的投資控股子公司
+    details:
+    - 直接持有的投資控股子公司
+    edge: ee99d631033b1
+    evidence_level: primary
+    id: org.boltun-bvi-corporation
+    name: BOLTUN BVI CORPORATION
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 越南扣件及成型沖壓產品製造子公司
+    details:
+    - 越南扣件及成型沖壓產品製造子公司
+    edge: e44acd5a1d31a
+    evidence_level: primary
+    id: org.boltun-international-company-limited
+    name: BOLTUN INTERNATIONAL COMPANY LIMITED
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 德國汽車扣件製造及銷售子公司
+    details:
+    - 德國汽車扣件製造及銷售子公司
+    edge: e67998e8ed791
+    evidence_level: primary
+    id: org.eska-automotive
+    name: ESKA Automotive GmbH
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有的投資控股子公司
+    details:
+    - 直接持有的投資控股子公司
+    edge: e8c249bdbf279
+    evidence_level: primary
+    id: org.heng-de-investment
+    name: 恆德投資股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.qst.com.tw
 tax_id: '69916350'
 incorporated: '1985-04-10'
 listed: '2006-03-10'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-18'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.8349#e2:
+    locator: 印刷頁80，肆、營運概況，一、業務內容，主要產品及佔營業比重；表格依序列示2024及2025年銷貨金額與比重
+    published_date: '2026-04-25'
+    publisher: 恆耀國際股份有限公司
+    quote_check: found
+    title: 恆耀國際股份有限公司一一四年年報
+    url: https://www.qst.com.tw/cht/OpenFile.aspx?action=3&FileId=278&DetailNo=001
+  tw.8349#e3:
+    locator: 印刷頁2，致股東報告書，研究發展狀況
+    published_date: '2026-04-25'
+    publisher: 恆耀國際股份有限公司
+    quote_check: found
+    title: 恆耀國際股份有限公司一一四年年報
+    url: https://www.qst.com.tw/cht/OpenFile.aspx?action=3&FileId=278&DetailNo=001
+  tw.8349#e4:
+    locator: Leading Technologies：由德國子公司ESKA主導的輕量化扣接方案
+    published_date: null
+    publisher: 恆耀國際股份有限公司
+    quote_check: found
+    title: QST Profile
+    url: https://www.qst.com.tw/sub_1_1.html
+  tw.8349#e5:
+    locator: Leading Technologies：電動車扣件開發
+    published_date: null
+    publisher: 恆耀國際股份有限公司
+    quote_check: found
+    title: QST Profile
+    url: https://www.qst.com.tw/sub_1_1.html
+  tw.8349#e6:
+    locator: 頁17，附註十、子公司，列入合併財務報告之子公司；投資公司名稱與子公司名稱欄
+    published_date: '2026-08-10'
+    publisher: 恆耀國際股份有限公司
+    quote_check: found
+    title: 民國115年及114年第2季合併財務報告暨會計師核閱報告
+    url: https://www.qst.com.tw/cht/OpenFile.aspx?action=2&FileId=93&DetailNo=001
+  tw.8349#e7:
+    locator: 頁18，附註十、子公司，恆德及其持有BEH的列示；頁64附表六列示恆德投資完整名稱
+    published_date: '2026-08-10'
+    publisher: 恆耀國際股份有限公司
+    quote_check: found
+    title: 民國115年及114年第2季合併財務報告暨會計師核閱報告
+    url: https://www.qst.com.tw/cht/OpenFile.aspx?action=2&FileId=93&DetailNo=001
+  tw.8349#e8:
+    locator: 頁19，附註十、子公司，BEH持有ESKA列；頁64附表六列示所在地為德國
+    published_date: '2026-08-10'
+    publisher: 恆耀國際股份有限公司
+    quote_check: found
+    title: 民國115年及114年第2季合併財務報告暨會計師核閱報告
+    url: https://www.qst.com.tw/cht/OpenFile.aspx?action=2&FileId=93&DetailNo=001
+  tw.8349#e9:
+    locator: 頁18，附註十、子公司，投資公司為本公司；頁64附表六列示所在地為越南
+    published_date: '2026-08-10'
+    publisher: 恆耀國際股份有限公司
+    quote_check: found
+    title: 民國115年及114年第2季合併財務報告暨會計師核閱報告
+    url: https://www.qst.com.tw/cht/OpenFile.aspx?action=2&FileId=93&DetailNo=001

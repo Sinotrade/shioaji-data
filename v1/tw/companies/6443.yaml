@@ -8,12 +8,192 @@ industry:
   l0_code: '26'
   l0_name: 光電業
   l0_name_en: Optoelectronic
-primary_chain_position: unknown
+  l1: energy
+  l1_name: 能源
+  l1_name_en: Energy & Utilities
+  l2: energy.green
+  l2_name: 綠能
+  l2_name_en: Renewable Energy
+  l3: green.solar
+  l3_name: 太陽能
+  l3_name_en: Solar
+chain: chain.solar
+primary_chain_position: midstream
+summary_short: 製造及銷售太陽能模組與電池，並提供電廠興建及維運服務。
+summary_long: 元晶以太陽能電池與模組的製造及銷售為主要業務，營收集中於模組產品。2025年度太陽能模組占營收93.35%，太陽能電池占3.99%，其他項目占2.66%。主要產品涵蓋PERC與TOPCon高效能太陽能電池，以及高效能太陽能模組。除產品銷售外，公司亦提供電廠興建與長期維運的系統整合服務；工程服務包含施工圖繪製、材料與設備採購管理、施工品質控制及安全衛生管理，維運則包括監控、障礙排除、定期巡檢與營運報表。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_module
+  name: 太陽能模組
+  period: '2025'
+  revenue_share_pct: 93.35
+- evidence_ids:
+  - e2
+  id: seg_cell
+  name: 太陽能電池
+  period: '2025'
+  revenue_share_pct: 3.99
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 2.66
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司；太陽能設備出租與發電銷售
+    details:
+    - 直接子公司；太陽能設備出租與發電銷售
+    edge: e8f07e9591144
+    evidence_level: primary
+    id: org.hengli-energy
+    name: 恆立能源股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司；儲能系統營運
+    details:
+    - 直接子公司；儲能系統營運
+    edge: e6dcff28689e1
+    evidence_level: primary
+    id: org.houchang-energy
+    name: 厚昌能源股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司；太陽能設備出租與發電銷售
+    details:
+    - 直接子公司；太陽能設備出租與發電銷售
+    edge: e677ba50b0f19
+    evidence_level: primary
+    id: org.yuanjin-energy
+    name: 元金創能股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: ecef9df01d888
+    evidence_level: primary
+    id: org.yujing-geothermal-development
+    name: 昱晶地熱開發股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司；太陽能設備出租與發電銷售
+    details:
+    - 直接子公司；太陽能設備出租與發電銷售
+    edge: efcb9395c9a68
+    evidence_level: primary
+    id: org.yunsheng-photovoltaic
+    name: 雲生光電股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.tsecpv.com
 tax_id: '28997300'
 incorporated: '2010-06-24'
 listed: '2015-10-01'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-18'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6443#e10:
+    locator: 第35頁，附註十一；投資公司為元晶之子公司明細
+    published_date: '2026-03-12'
+    publisher: 元晶太陽能科技股份有限公司
+    quote_check: found
+    title: 元晶及子公司114及113年度合併財務報表
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52564/2026/RNS/52564_rns_2026-04-14_553b48ff-fbfc-42a1-aab6-7397c03a5e96.pdf
+  tw.6443#e11:
+    locator: 第36頁，附註十一續表；投資公司為元晶之子公司明細
+    published_date: '2026-03-12'
+    publisher: 元晶太陽能科技股份有限公司
+    quote_check: found
+    title: 元晶及子公司114及113年度合併財務報表
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52564/2026/RNS/52564_rns_2026-04-14_553b48ff-fbfc-42a1-aab6-7397c03a5e96.pdf
+  tw.6443#e12:
+    locator: 第36頁，附註十一續表；投資公司為元晶之子公司明細
+    published_date: '2026-03-12'
+    publisher: 元晶太陽能科技股份有限公司
+    quote_check: found
+    title: 元晶及子公司114及113年度合併財務報表
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52564/2026/RNS/52564_rns_2026-04-14_553b48ff-fbfc-42a1-aab6-7397c03a5e96.pdf
+  tw.6443#e2:
+    locator: 第59頁，114年度營業比重；金額單位為新台幣仟元
+    published_date: '2026-03-31'
+    publisher: 元晶太陽能科技股份有限公司
+    quote_check: found
+    title: 元晶太陽能科技股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52564/2026/RNS/52564_rns_2026-04-30_f4c81ef4-45e5-4af9-a08d-66facd48bd50.pdf
+  tw.6443#e3:
+    locator: 第59頁，公司目前主要銷售之商品項目；年報文字鏡像
+    published_date: '2026-03-31'
+    publisher: 元晶太陽能科技股份有限公司
+    quote_check: unreachable
+    title: 元晶太陽能科技股份有限公司114年度年報
+    url: https://financialfilings.com/filings/tsec-6443/annual-report/2026/39868156/
+  tw.6443#e4:
+    locator: 公司簡介第一段
+    published_date: null
+    publisher: 元晶太陽能科技股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.tsecpv.com/company/
+  tw.6443#e5:
+    locator: 施工管理
+    published_date: null
+    publisher: 元晶太陽能科技股份有限公司
+    quote_check: found
+    title: 整合服務
+    url: https://www.tsecpv.com/service/integrated-services/
+  tw.6443#e6:
+    locator: 維運管理
+    published_date: null
+    publisher: 元晶太陽能科技股份有限公司
+    quote_check: found
+    title: 整合服務
+    url: https://www.tsecpv.com/service/integrated-services/
+  tw.6443#e7:
+    locator: 附註四（四）合併基礎；附註十一列示各投資公司及其子公司
+    published_date: '2026-03-12'
+    publisher: 元晶太陽能科技股份有限公司
+    quote_check: unreachable
+    title: 元晶及子公司114及113年度合併財務報表
+    url: https://financialfilings.com/filings/tsec-6443/annual-report/2026/34460969/
+  tw.6443#e8:
+    locator: 第35頁，附註十一；投資公司為元晶之子公司明細
+    published_date: '2026-03-12'
+    publisher: 元晶太陽能科技股份有限公司
+    quote_check: found
+    title: 元晶及子公司114及113年度合併財務報表
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52564/2026/RNS/52564_rns_2026-04-14_553b48ff-fbfc-42a1-aab6-7397c03a5e96.pdf
+  tw.6443#e9:
+    locator: 第35頁，附註十一；投資公司為元晶之子公司明細
+    published_date: '2026-03-12'
+    publisher: 元晶太陽能科技股份有限公司
+    quote_check: found
+    title: 元晶及子公司114及113年度合併財務報表
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52564/2026/RNS/52564_rns_2026-04-14_553b48ff-fbfc-42a1-aab6-7397c03a5e96.pdf

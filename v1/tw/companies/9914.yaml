@@ -33,6 +33,50 @@ segments:
   name: 自行車車架及零組件
   period: null
   revenue_share_pct: 8.52
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持有的自行車製造銷售子公司
+    details:
+    - 間接持有的自行車製造銷售子公司
+    edge: e3f5ca4401a93
+    evidence_level: primary
+    id: org.merida-bicycle-china
+    name: 美利達自行車（中國）有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持有的助動自行車及自行車製造子公司
+    details:
+    - 間接持有的助動自行車及自行車製造子公司
+    edge: e2603cf635c88
+    evidence_level: primary
+    id: org.merida-bicycle-shandong
+    name: 美利達自行車（山東）有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 自行車買賣子公司
+    details:
+    - 自行車買賣子公司
+    edge: e9da2ce0b9274
+    evidence_level: primary
+    id: org.merida-centurion-germany
+    name: 美利達仙度那有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.merida-bikes.com/zh-tw/
 tax_id: '59052361'
 incorporated: '1972-09-29'
@@ -69,3 +113,24 @@ evidence:
     quote_check: unreachable
     title: 2025 Annual Report原文鏡像
     url: https://financialfilings.com/filings/mic-9914/annual-report/2026/48410399/
+  tw.9914#e5:
+    locator: 列入合併財務報表之子公司，美利達仙度那公司列
+    published_date: '2026-03-31'
+    publisher: 美利達工業股份有限公司；FinancialFilings鏡像
+    quote_check: unreachable
+    title: 美利達2025年第4季合併財務報告原文鏡像
+    url: https://financialfilings.com/filings/mic-9914/annual-report/2026/60570997/
+  tw.9914#e6:
+    locator: 列入合併財務報表之子公司，美利達中國公司列
+    published_date: '2026-03-31'
+    publisher: 美利達工業股份有限公司；FinancialFilings鏡像
+    quote_check: unreachable
+    title: 美利達2025年第4季合併財務報告原文鏡像
+    url: https://financialfilings.com/filings/mic-9914/annual-report/2026/60570997/
+  tw.9914#e7:
+    locator: 列入合併財務報表之子公司，美利達山東公司列
+    published_date: '2026-03-31'
+    publisher: 美利達工業股份有限公司；FinancialFilings鏡像
+    quote_check: unreachable
+    title: 美利達2025年第4季合併財務報告原文鏡像
+    url: https://financialfilings.com/filings/mic-9914/annual-report/2026/60570997/

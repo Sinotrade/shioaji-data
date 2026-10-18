@@ -39,12 +39,99 @@ themes:
 - stage: components
   theme: theme.5g
   tier: upstream
-- stage: packaging
-  theme: theme.cpo
-  tier: midstream
 - stage: modules
   theme: theme.silicon_photonics
   tier: downstream
+- stage: packaging
+  theme: theme.cpo
+  tier: midstream
+relations:
+  parents:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接母公司，持有流通在外普通股59.52%
+    details:
+    - 直接母公司，持有流通在外普通股59.52%
+    edge: e78f9750ca34a
+    evidence_level: primary
+    id: org.foxconn-far-east
+    name: Foxconn (Far East) Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團最終控制者
+    details:
+    - 集團最終控制者
+    edge: e8cc74a87faf5
+    evidence_level: primary
+    id: tw.2317
+    name: 鴻海
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接全資控股子公司
+    details:
+    - 直接全資控股子公司
+    edge: e658b322b2981
+    evidence_level: primary
+    id: org.shunsin-technology-hong-kong
+    name: 訊芯科技(香港)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接全資子公司，提供通訊模組及積體電路組裝測試
+    details:
+    - 間接全資子公司，提供通訊模組及積體電路組裝測試
+    edge: eba388eadec28
+    evidence_level: primary
+    id: org.shunsin-technology-vietnam
+    name: ShunSin Technology (Vietnam) Company Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接全資子公司，提供通訊模組及積體電路組裝測試
+    details:
+    - 間接全資子公司，提供通訊模組及積體電路組裝測試
+    edge: e327410dda140
+    evidence_level: primary
+    id: org.shunsin-technology-zhongshan
+    name: 訊芯電子科技(中山)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持股78.05%，製造高速光纖收發模組
+    details:
+    - 間接持股78.05%，製造高速光纖收發模組
+    edge: e0d611dc68f57
+    evidence_level: primary
+    id: org.shunyun-technology-zhongshan
+    name: 訊芸電子科技(中山)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.shunsintech.com/
 tax_id: '38649225'
 incorporated: '2008-01-08'
@@ -58,7 +145,42 @@ evidence:
     locator: 附註一公司沿革，印刷第8頁
     published_date: '2026-03-11'
     publisher: 訊芯科技控股股份有限公司
-    quote_check: unreachable
+    quote_check: found
+    title: 2025年度及2024年度合併財務報告
+    url: https://www.shunsintech.com/FinanceReport/2025Q4.pdf
+  tw.6451#e10:
+    locator: 附註七(一)母公司與最終控制者，印刷第57頁
+    published_date: '2026-03-11'
+    publisher: 訊芯科技控股股份有限公司
+    quote_check: found
+    title: 2025年度及2024年度合併財務報告
+    url: https://www.shunsintech.com/FinanceReport/2025Q4.pdf
+  tw.6451#e11:
+    locator: 附註四(三)2列入合併財報之子公司，印刷第10頁；2025年底持股欄
+    published_date: '2026-03-11'
+    publisher: 訊芯科技控股股份有限公司
+    quote_check: found
+    title: 2025年度及2024年度合併財務報告
+    url: https://www.shunsintech.com/FinanceReport/2025Q4.pdf
+  tw.6451#e12:
+    locator: 附註四(三)2列入合併財報之子公司，印刷第10頁
+    published_date: '2026-03-11'
+    publisher: 訊芯科技控股股份有限公司
+    quote_check: found
+    title: 2025年度及2024年度合併財務報告
+    url: https://www.shunsintech.com/FinanceReport/2025Q4.pdf
+  tw.6451#e13:
+    locator: 附註四(三)2列入合併財報之子公司，印刷第11頁
+    published_date: '2026-03-11'
+    publisher: 訊芯科技控股股份有限公司
+    quote_check: found
+    title: 2025年度及2024年度合併財務報告
+    url: https://www.shunsintech.com/FinanceReport/2025Q4.pdf
+  tw.6451#e14:
+    locator: 附註四(三)2列入合併財報之子公司，印刷第11頁
+    published_date: '2026-03-11'
+    publisher: 訊芯科技控股股份有限公司
+    quote_check: found
     title: 2025年度及2024年度合併財務報告
     url: https://www.shunsintech.com/FinanceReport/2025Q4.pdf
   tw.6451#e2:
@@ -110,3 +232,10 @@ evidence:
     quote_check: found
     title: 訊芯中山－SiP系統封裝模組
     url: https://www.shunsintech.com/zs/tw/prodIntro.aspx
+  tw.6451#e9:
+    locator: 附註七(一)母公司與最終控制者，印刷第57頁
+    published_date: '2026-03-11'
+    publisher: 訊芯科技控股股份有限公司
+    quote_check: found
+    title: 2025年度及2024年度合併財務報告
+    url: https://www.shunsintech.com/FinanceReport/2025Q4.pdf

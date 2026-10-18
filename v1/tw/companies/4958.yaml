@@ -61,12 +61,28 @@ themes:
   theme: theme.abf
   tier: midstream
 relations:
+  competitors:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 印刷電路板產品市場
+    details:
+    - 印刷電路板產品市場
+    edge: eff83d0c33d81
+    evidence_level: primary
+    id: tw.2313
+    name: 華通
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   customers:
   - as_of: 2025-12
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 鴻海集團合計商品採購
+    detail: 集團層級商品銷售，品項未細分
     details:
+    - 集團層級商品銷售，品項未細分
     - 鴻海集團合計商品採購
     edge: eab6a2dcfffa7
     evidence_level: primary
@@ -75,7 +91,7 @@ relations:
     ranking_basis: unranked
     share_basis: null
     share_pct: null
-    weight: 1
+    weight: 2
   - as_of: 2023-09
     confidence: ai_cross_checked
     counterparty_shares: []

@@ -21,6 +21,15 @@ stages:
   tier: downstream
   name_en: Applications
 members:
+- id: tw.2376
+  stage: application
+  tier: downstream
+  detail: 技鋼G593伺服器搭載含HBM3e的H200加速器
+  as_of: '2024-08-15'
+  evidence:
+  - tw.2376#e05
+  - tw.2376#e16
+  confidence: ai_cross_checked
 - id: tw.2467
   stage: equipment_materials
   tier: upstream
@@ -130,5 +139,14 @@ members:
   evidence:
   - tw.6770#e10
   - tw.6770#e11
+  confidence: ai_cross_checked
+- id: tw.8096
+  stage: application
+  tier: downstream
+  detail: AI晶片與HPC應用的HBM記憶體通路
+  as_of: '2025-12-31'
+  evidence:
+  - tw.8096#e13
+  - tw.8096#e9
   confidence: ai_cross_checked
 as_of: '2026-10-14'

@@ -35,12 +35,140 @@ segments:
   period: '2025'
   revenue_share_pct: null
 relations:
+  partners:
+  - as_of: '2026-10-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 飛行常客哩程累計合作
+    details:
+    - 飛行常客哩程累計合作
+    edge: eb5e0fa34d517
+    evidence_level: primary
+    id: eu.LHA
+    name: 漢莎航空
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 共用班號合作
+    details:
+    - 共用班號合作
+    edge: e829163f8d554
+    evidence_level: primary
+    id: org.air-canada
+    name: 加拿大航空
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-03-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 台灣與澳門航線共用班號合作
+    details:
+    - 台灣與澳門航線共用班號合作
+    edge: ed5bd80016a72
+    evidence_level: primary
+    id: org.air-macau
+    name: 澳門航空
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 共用班號合作
+    details:
+    - 共用班號合作
+    edge: e1467a3e871ff
+    evidence_level: primary
+    id: org.all-nippon-airways
+    name: 全日空
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 共用班號合作
+    details:
+    - 共用班號合作
+    edge: ed9a6a875dfc7
+    evidence_level: primary
+    id: org.asiana-airlines
+    name: 韓亞航空
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 共用班號合作
+    details:
+    - 共用班號合作
+    edge: e475117e49a43
+    evidence_level: primary
+    id: org.singapore-airlines
+    name: 新加坡航空
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 聯盟航網及飛行常客計畫合作
+    details:
+    - 聯盟航網及飛行常客計畫合作
+    edge: e91257ad4a998
+    evidence_level: primary
+    id: org.star-alliance
+    name: Star Alliance
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 共用班號合作
+    details:
+    - 共用班號合作
+    edge: e26e432092911
+    evidence_level: primary
+    id: org.turkish-airlines
+    name: 土耳其航空
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 共用班號合作
+    details:
+    - 共用班號合作
+    edge: ee45df0ca4366
+    evidence_level: primary
+    id: org.united-airlines
+    name: 聯合航空
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 母公司及最終控制者
+    detail: 合併子公司
     details:
+    - 合併子公司
     - 母公司及最終控制者
     edge: ece95e2f1c3e0
     evidence_level: primary
@@ -49,8 +177,92 @@ relations:
     ranking_basis: unranked
     share_basis: null
     share_pct: null
+    weight: 2
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 合併子公司
+    details:
+    - 合併子公司
+    edge: ed64991171d31
+    evidence_level: primary
+    id: org.evergreen-air-cargo-services
+    name: 長榮空運倉儲(股)公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 合併子公司
+    details:
+    - 合併子公司
+    edge: e9f558c471f25
+    evidence_level: primary
+    id: org.evergreen-airline-services
+    name: 長榮航勤(股)公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 合併子公司
+    details:
+    - 合併子公司
+    edge: e772b56dc3132
+    evidence_level: primary
+    id: org.evergreen-sky-catering
+    name: 長榮空廚(股)公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
     weight: 1
   suppliers:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 航太維修等關係人進貨
+    details:
+    - 航太維修等關係人進貨
+    edge: e8bcc1910c869
+    evidence_level: primary
+    id: tw.2645
+    name: 長榮航太
+    ranking_basis: disclosed
+    share_basis: purchases
+    share_pct: 3.78
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 空廚等關係人進貨
+    details:
+    - 空廚等關係人進貨
+    edge: efacab047adcc
+    evidence_level: primary
+    id: org.evergreen-sky-catering
+    name: 長榮空廚(股)公司
+    ranking_basis: disclosed
+    share_basis: purchases
+    share_pct: 2.82
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 地勤等關係人進貨
+    details:
+    - 地勤等關係人進貨
+    edge: ef5ac9d1ec437
+    evidence_level: primary
+    id: org.evergreen-airline-services
+    name: 長榮航勤(股)公司
+    ranking_basis: disclosed
+    share_basis: purchases
+    share_pct: 2.36
+    weight: 1
   - as_of: '2025-04-07'
     confidence: ai_cross_checked
     counterparty_shares: []
@@ -89,6 +301,34 @@ relations:
     evidence_level: primary
     id: org.mtu-maintenance
     name: MTU Maintenance
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2025-05
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: Trent XWB97備份發動機
+    details:
+    - Trent XWB97備份發動機
+    edge: ebab49a8956dc
+    evidence_level: primary
+    id: org.rolls-royce-plc
+    name: Rolls-Royce PLC
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: Boeing 787等航空器
+    details:
+    - Boeing 787等航空器
+    edge: ec120a596ea02
+    evidence_level: primary
+    id: us.BA
+    name: 波音
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -154,6 +394,73 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  - amount: 美金282,000千元
+    as_of: 2025-05
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 採購5具Trent XWB97備份發動機
+    details:
+    - 採購5具Trent XWB97備份發動機
+    - 採購1具Trent XWB97備份發動機
+    edge: e776c0cdc3949
+    event_date: null
+    events:
+    - amount: 美金282,000千元
+      detail: 採購5具Trent XWB97備份發動機
+      event_date: null
+    - amount: 美金73,000千元
+      detail: 採購1具Trent XWB97備份發動機
+      event_date: null
+    evidence_level: primary
+    id: org.rolls-royce-plc
+    name: Rolls-Royce PLC
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 董事會核准採購4架787-9
+    details:
+    - 董事會核准採購4架787-9
+    edge: e79e1c529ba86
+    event_date: null
+    events:
+    - amount: null
+      detail: 董事會核准採購4架787-9
+      event_date: null
+    evidence_level: primary
+    id: us.BA
+    name: 波音
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 美金36,830千元
+    as_of: 2024-05
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 採購1具GEnx-1B74/75備份發動機
+    details:
+    - 採購1具GEnx-1B74/75備份發動機
+    edge: ea231a23e8b6e
+    event_date: null
+    events:
+    - amount: 美金36,830千元
+      detail: 採購1具GEnx-1B74/75備份發動機
+      event_date: null
+    evidence_level: primary
+    id: us.GE
+    name: GE Aerospace
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
 unresolved_mentions:
 - AI伺服器貨運需求：未具名揭露購買運輸服務的公司。
 - 半導體貨運需求：未具名揭露購買運輸服務的公司。
@@ -174,6 +481,62 @@ evidence:
     quote_check: unreachable
     title: 營運統計資料
     url: https://www.evaair.com/zh-tw/about-eva-air/about-us/market-and-sales-overview/operational-data/
+  tw.2618#e10:
+    locator: PDF第75頁，附表二；本公司進貨列，占總進貨比率欄
+    published_date: null
+    publisher: 長榮航空股份有限公司
+    quote_check: unreachable
+    title: 長榮航空股份有限公司及子公司114年度合併財務報告
+    url: https://www.evaair.com/zh-tw/images/combined-quartely-results-2025-q4_tcm27-97686.pdf
+  tw.2618#e11:
+    locator: PDF第75頁，附表二；本公司進貨列，占總進貨比率欄
+    published_date: null
+    publisher: 長榮航空股份有限公司
+    quote_check: unreachable
+    title: 長榮航空股份有限公司及子公司114年度合併財務報告
+    url: https://www.evaair.com/zh-tw/images/combined-quartely-results-2025-q4_tcm27-97686.pdf
+  tw.2618#e12:
+    locator: PDF第75頁，附表二；本公司與長榮空運倉儲交易列
+    published_date: null
+    publisher: 長榮航空股份有限公司
+    quote_check: unreachable
+    title: 長榮航空股份有限公司及子公司114年度合併財務報告
+    url: https://www.evaair.com/zh-tw/images/combined-quartely-results-2025-q4_tcm27-97686.pdf
+  tw.2618#e13:
+    locator: 星空聯盟網絡
+    published_date: null
+    publisher: 長榮航空股份有限公司
+    quote_check: unreachable
+    title: 星空聯盟網路
+    url: https://www.evaair.com/zh-tw/plan-and-book/where-we-fly/star-alliance-networks/
+  tw.2618#e14:
+    locator: 共用班號夥伴之行李資訊，說明及具名航空公司清單
+    published_date: null
+    publisher: 長榮航空股份有限公司
+    quote_check: unreachable
+    title: 託運行李
+    url: https://www.evaair.com/zh-tw/fly-prepare/baggage/free-baggage/checked-baggage/
+  tw.2618#e15:
+    locator: 共用班號夥伴之行李資訊；加拿大航空、全日空、韓亞航空、新加坡航空、土耳其航空、聯合航空清單
+    published_date: null
+    publisher: 長榮航空股份有限公司
+    quote_check: unreachable
+    title: 託運行李
+    url: https://www.evaair.com/zh-tw/fly-prepare/baggage/free-baggage/checked-baggage/
+  tw.2618#e16:
+    locator: 星盟航班哩程累計標準表／注意事項
+    published_date: null
+    publisher: 長榮航空股份有限公司
+    quote_check: unreachable
+    title: 無限萬哩遊－漢莎航空
+    url: https://www.evaair.com/zh-tw/infinity-mileagelands/mileage-award-program/earning-mileage/star-alliance-airline-partners/mileage-table/lufthansa.html
+  tw.2618#e17:
+    locator: PDF第69頁，附註9(b)(i)，December 2025董事會核准案
+    published_date: null
+    publisher: 長榮航空股份有限公司
+    quote_check: unreachable
+    title: EVA Airways Corp. 2025 Parent-Company-Only Financial Statements
+    url: https://www.evaair.com/en-global/images/evaair-2025-q4-quarterly-company-en-0506_tcm33-97960.pdf
   tw.2618#e18:
     locator: 重訊記者會及董事會決議說明
     published_date: '2024-06-26'
@@ -195,6 +558,20 @@ evidence:
     quote_check: unreachable
     title: 營運統計資料
     url: https://www.evaair.com/zh-tw/about-eva-air/about-us/market-and-sales-overview/operational-data/
+  tw.2618#e22:
+    locator: PDF第48頁，附註九(二)4
+    published_date: null
+    publisher: 長榮航空股份有限公司
+    quote_check: unreachable
+    title: 長榮航空股份有限公司及子公司114年第二季合併財務報告
+    url: https://www.evaair.com/zh-tw/images/combined-quartely-results-2025-q2-zh_tcm27-95954.pdf
+  tw.2618#e23:
+    locator: PDF第49頁，附註九(二)7
+    published_date: null
+    publisher: 長榮航空股份有限公司
+    quote_check: unreachable
+    title: 長榮航空股份有限公司及子公司114年第二季合併財務報告
+    url: https://www.evaair.com/zh-tw/images/combined-quartely-results-2025-q2-zh_tcm27-95954.pdf
   tw.2618#e24:
     locator: PDF第49頁，附註九(二)6
     published_date: null
@@ -209,6 +586,13 @@ evidence:
     quote_check: found
     title: MTU Maintenance and EVA Air sign exclusive engine MRO contract for CFM56-5B fleet
     url: https://www.mtu.de/newsroom/press/latest-press-releases/press-release-detail/mtu-maintenance-and-eva-air-sign-exclusive-engine-mro-contract-for-cfm56-5b-fleet/
+  tw.2618#e26:
+    locator: 新聞稿首段
+    published_date: '2025-03-17'
+    publisher: 長榮航空股份有限公司
+    quote_check: unreachable
+    title: 長榮航空攜手澳門航空 共用班號聯營合作提升台澳航線優勢
+    url: https://www.evaair.com/zh-tw/about-eva-air/news/news-releases/2025-03-17-evaair-cooperates-with-airmacau.html
   tw.2618#e3:
     locator: PDF第18頁，貨運營收
     published_date: null
@@ -216,6 +600,13 @@ evidence:
     quote_check: unreachable
     title: 長榮航空法人說明會簡報
     url: https://www.evaair.com/zh-tw/images/investor-conference-2025q2-zh_tcm27-95096.pdf
+  tw.2618#e4:
+    locator: PDF第69頁，附註9(b)(i)
+    published_date: null
+    publisher: 長榮航空股份有限公司
+    quote_check: unreachable
+    title: EVA Airways Corp. 2025 Parent-Company-Only Financial Statements
+    url: https://www.evaair.com/en-global/images/evaair-2025-q4-quarterly-company-en-0506_tcm33-97960.pdf
   tw.2618#e5:
     locator: 新聞稿首段
     published_date: '2024-01-09'
@@ -244,3 +635,10 @@ evidence:
     quote_check: found
     title: 台灣中油113年股東會年報
     url: https://ws.cpc.com.tw/Download.ashx?n=5Lit5rK5KDEzMjgpLTExM%2BW5tOW6puiCoeadseacg%2BW5tOWgsS3moLjlrprniYhf5Y676IOMLnBkZg%3D%3D&u=LzAwMS9VcGxvYWQvMS9yZWxmaWxlLzg5ODAvMTEwOTMxL2EwODYyNWJiLTE0ZDItNDZkNi04YjNmLTk4MDNjYTExYjgxYi5wZGY%3D
+  tw.2618#e9:
+    locator: PDF第75頁，附表二；本公司進貨列，占總進貨比率欄
+    published_date: null
+    publisher: 長榮航空股份有限公司
+    quote_check: unreachable
+    title: 長榮航空股份有限公司及子公司114年度合併財務報告
+    url: https://www.evaair.com/zh-tw/images/combined-quartely-results-2025-q4_tcm27-97686.pdf

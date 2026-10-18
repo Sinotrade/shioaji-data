@@ -21,6 +21,14 @@ stages:
   tier: downstream
   name_en: Modules
 members:
+- id: tw.2303
+  stage: devices
+  tier: midstream
+  detail: 12吋光子IC晶圓製造
+  as_of: '2026-07-14'
+  evidence:
+  - tw.2303#e14
+  confidence: ai_cross_checked
 - id: tw.2330
   stage: devices
   tier: midstream
@@ -37,6 +45,14 @@ members:
   evidence:
   - tw.3016#e7
   - tw.3016#e8
+  confidence: ai_cross_checked
+- id: tw.3048
+  stage: devices
+  tier: midstream
+  detail: 矽光子元件相關方案整合
+  as_of: '2026-05-25'
+  evidence:
+  - tw.3048#e12
   confidence: ai_cross_checked
 - id: tw.3055
   stage: devices
@@ -139,6 +155,14 @@ members:
   evidence:
   - tw.6209#e10
   confidence: ai_cross_checked
+- id: tw.6426
+  stage: devices
+  tier: midstream
+  detail: 矽光子波導與邊緣耦合器鍍膜研發方向
+  as_of: 2025-12
+  evidence:
+  - tw.6426#e8
+  confidence: ai_cross_checked
 - id: tw.6451
   stage: modules
   tier: downstream
@@ -178,5 +202,13 @@ members:
   as_of: '2026-10-15'
   evidence:
   - tw.6830#e5
+  confidence: ai_cross_checked
+- id: tw.8111
+  stage: devices
+  tier: midstream
+  detail: 矽光子系統外部雷射光源
+  as_of: '2026-09-04'
+  evidence:
+  - tw.8111#e5
   confidence: ai_cross_checked
 as_of: '2026-10-15'

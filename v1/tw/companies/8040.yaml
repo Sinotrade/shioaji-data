@@ -8,15 +8,28 @@ industry:
   l0_code: '24'
   l0_name: 半導體業
   l0_name_en: Semiconductor
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.semi
+  l2_name: 半導體
+  l2_name_en: Semiconductors
+  l3: semi.ic_design
+  l3_name: IC 設計
+  l3_name_en: IC Design
+chain: chain.semiconductor
+primary_chain_position: upstream
+summary_short: 研發、設計及銷售乙太網路收發器、交換器與PoE供電控制晶片。
+summary_long: 九暘電子以乙太網路通訊IC的研發、設計與銷售為主要業務，產品採委外生產模式。主要產品包括10/100Mbps與Gigabit乙太網路實體層收發器、乙太網路交換器晶片，以及PoE供電端控制器。官網產品涵蓋單埠收發器、多埠交換器及不同埠數的PoE控制器，交換器系列包含結合FE與Gigabit埠的配置。公司官網將達發科技列為母公司；聯發科技財報另揭露，集團已取得九暘控制力，並將其納入合併報表。
 relations:
   parents:
-  - as_of: 2025-03
+  - as_of: '2025-03-31'
     confidence: ai_cross_checked
     counterparty_shares: []
     detail: 經達發控制的集團子公司
     details:
     - 經達發控制的集團子公司
+    - 集團控制母公司
     edge: e7716ca211a53
     evidence_level: primary
     id: tw.2454
@@ -24,12 +37,105 @@ relations:
     ranking_basis: unranked
     share_basis: null
     share_pct: null
+    weight: 2
+  - as_of: '2026-10-18'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過董事會過半席次取得實質控制
+    details:
+    - 透過董事會過半席次取得實質控制
+    - 母公司
+    edge: efed7383b570e
+    evidence_level: primary
+    id: tw.6526
+    name: 達發
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 2
+  transactions:
+  - amount: 新台幣1,932,774千元
+    as_of: '2024-07-01'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 參與私募增資並取得控制權
+    details:
+    - 參與私募增資並取得控制權
+    edge: eeb272e310084
+    event_date: '2024-06-17'
+    events:
+    - amount: 新台幣1,932,774千元
+      detail: 參與私募增資並取得控制權
+      event_date: '2024-06-17'
+    evidence_level: primary
+    id: tw.6526
+    name: 達發
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
     weight: 1
 website: www.icplus.com.tw
 tax_id: '16069953'
 incorporated: '1997-07-19'
 listed: '2007-04-30'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-18'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.8040#e1:
+    locator: 關於九暘電子／主要業務；同頁列示公司全名與股票代號8040
+    published_date: null
+    publisher: 九暘電子股份有限公司
+    quote_check: found
+    title: 公司基本資料
+    url: https://www.icplus.com.tw/zh_TW/公司基本資料
+  tw.8040#e2:
+    locator: 公司介紹首段
+    published_date: null
+    publisher: 九暘電子股份有限公司
+    quote_check: found
+    title: 關於九暘
+    url: https://www.icplus.com.tw/zh_TW/關於九暘
+  tw.8040#e3:
+    locator: PHY Transceiver產品表；IP1001C列，同表另列IP101GA／GR／GRI單埠FE PHY
+    published_date: null
+    publisher: 九暘電子股份有限公司
+    quote_check: found
+    title: 產品介紹
+    url: https://www.icplus.com.tw/products?locale=zh_TW
+  tw.8040#e4:
+    locator: Ethernet Switch產品表／IP1829A／IP1829AI列
+    published_date: null
+    publisher: 九暘電子股份有限公司
+    quote_check: found
+    title: 產品介紹
+    url: https://www.icplus.com.tw/products?locale=zh_TW
+  tw.8040#e5:
+    locator: PoE PSE Controller產品表；IP802AR、IP804AR、IP808AR、IP8002、IP8008列
+    published_date: null
+    publisher: 九暘電子股份有限公司
+    quote_check: found
+    title: 產品介紹
+    url: https://www.icplus.com.tw/products?locale=zh_TW
+  tw.8040#e6:
+    locator: 廢污水與廢棄物管理
+    published_date: null
+    publisher: 九暘電子股份有限公司
+    quote_check: found
+    title: 節能減碳
+    url: https://www.icplus.com.tw/zh_TW/節能減碳
+  tw.8040#e7:
+    locator: 溫室氣體排放統計表下方附註
+    published_date: null
+    publisher: 九暘電子股份有限公司
+    quote_check: found
+    title: 節能減碳
+    url: https://www.icplus.com.tw/zh_TW/節能減碳
+  tw.8040#e8:
+    locator: 財報第48頁／附註六、32企業合併／九暘之收購
+    published_date: null
+    publisher: 聯發科技股份有限公司
+    quote_check: found
+    title: 聯發科技股份有限公司及子公司2025年第一季合併財務報告
+    url: https://www.mediatek.com/hubfs/MediaTek%20Assets/Pdfs/Financial%20Reports/2025/%E7%AC%AC1%E5%AD%A3-%E5%90%88%E5%B9%B6%E8%B4%A2%E5%8A%A1%E6%8A%A5%E5%91%8A.pdf?hsLang=zh-cn

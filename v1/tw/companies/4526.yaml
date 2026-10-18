@@ -8,8 +8,110 @@ industry:
   l0_code: '05'
   l0_name: 電機機械
   l0_name_en: Electric Machinery
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.machinery
+  l2_name: 機械與自動化
+  l2_name_en: Machinery & Automation
+  l3: mach.machine_tool
+  l3_name: 工具機
+  l3_name_en: Machine Tools
+primary_chain_position: midstream
+summary_short: 以加工中心機、CNC車床與PCB加工設備製造銷售為主，並提供維修服務。
+summary_long: 東台以工具機製造銷售為主，2025年合併營收中，綜合加工中心機占51.43%、電腦數值控制車床占17.63%，維修及整修收入占14.59%，印刷電路板加工機占9.84%。切削設備涵蓋五軸加工中心機及整合車削、銑削與鑽孔的複合式車削中心機；電子設備包含PCB鑽孔機、雷射加工機，以及晶圓研磨與封裝平坦化設備。公司亦提供機械手臂、自動上下料及彈性製造系統整合。主要製造子公司包括亞太菁英、譁泰精機及間接持有的蘇州東昱。
+segments:
+- evidence_ids:
+  - e2
+  id: machining_centers
+  name: 綜合加工中心機
+  period: '2025'
+  revenue_share_pct: 51.43
+- evidence_ids:
+  - e2
+  id: cnc_lathes
+  name: 電腦數值控制車床
+  period: '2025'
+  revenue_share_pct: 17.63
+- evidence_ids:
+  - e2
+  id: pcb_machines
+  name: 印刷電路板加工機
+  period: '2025'
+  revenue_share_pct: 9.84
+- evidence_ids:
+  - e2
+  id: special_machines
+  name: 專用機
+  period: '2025'
+  revenue_share_pct: 1.62
+- evidence_ids:
+  - e2
+  id: other_equipment
+  name: 其他設備
+  period: '2025'
+  revenue_share_pct: 1.71
+- evidence_ids:
+  - e2
+  id: parts
+  name: 零部件製造收入
+  period: '2025'
+  revenue_share_pct: 3.18
+- evidence_ids:
+  - e2
+  id: maintenance
+  name: 維修及整修收入
+  period: '2025'
+  revenue_share_pct: 14.59
+main_theme: theme.robotics
+themes:
+- stage: system
+  theme: theme.robotics
+  tier: downstream
 relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 機械設備製造子公司
+    details:
+    - 機械設備製造子公司
+    edge: eb8a45d249249
+    evidence_level: primary
+    id: org.apec-cnc
+    name: 亞太菁英股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 機器設備子公司
+    details:
+    - 機器設備子公司
+    edge: e676e05ff74fb
+    evidence_level: primary
+    id: org.quick-tech
+    name: 譁泰精機股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過Union Top間接持有的製造子公司
+    details:
+    - 透過Union Top間接持有的製造子公司
+    edge: e9088477d3a91
+    evidence_level: primary
+    id: org.suzhou-tongtai
+    name: 蘇州東昱精機有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   transactions:
   - amount: 新台幣15.2億元
     as_of: '2024-11-14'
@@ -36,7 +138,98 @@ website: http://www.tongtai.com.tw/
 tax_id: '88120872'
 incorporated: '1969-01-09'
 listed: '2003-09-15'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-18'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4526#e10:
+    locator: 印刷頁19，附註十二，列入合併財務報告之子公司／東台精機公司投資項目
+    published_date: null
+    publisher: 東台精機股份有限公司
+    quote_check: found
+    title: 東台精機114及113年第2季合併財務報告
+    url: https://www.tongtaimachinetool.com/download/48/
+  tw.4526#e11:
+    locator: 印刷頁20，附註十二，Union Top持有之重要子公司
+    published_date: null
+    publisher: 東台精機股份有限公司
+    quote_check: found
+    title: 東台精機114及113年第2季合併財務報告
+    url: https://www.tongtaimachinetool.com/download/48/
+  tw.4526#e12:
+    locator: 印刷頁105，2025年12月31日關係企業組織圖；東台直接持有之子公司
+    published_date: '2026-04-30'
+    publisher: 東台精機股份有限公司
+    quote_check: found
+    title: 東台精機114年度年報
+    url: https://www.tongtaimachinetool.com/download/114AnnualReoprt_Chinese/
+  tw.4526#e13:
+    locator: 印刷頁105，2025年12月31日關係企業組織圖；東台直接持有之子公司
+    published_date: '2026-04-30'
+    publisher: 東台精機股份有限公司
+    quote_check: found
+    title: 東台精機114年度年報
+    url: https://www.tongtaimachinetool.com/download/114AnnualReoprt_Chinese/
+  tw.4526#e14:
+    locator: 印刷頁105，2025年12月31日關係企業組織圖；Union Top下屬製造公司
+    published_date: '2026-04-30'
+    publisher: 東台精機股份有限公司
+    quote_check: found
+    title: 東台精機114年度年報
+    url: https://www.tongtaimachinetool.com/download/114AnnualReoprt_Chinese/
+  tw.4526#e2:
+    locator: 印刷頁75，所營業務之營業比重；114年度合併產品收入表
+    published_date: '2026-04-30'
+    publisher: 東台精機股份有限公司
+    quote_check: found
+    title: 東台精機114年度年報
+    url: https://www.tongtaimachinetool.com/download/114AnnualReoprt_Chinese/
+  tw.4526#e3:
+    locator: 產品介紹／五軸加工中心機
+    published_date: null
+    publisher: 東台精機股份有限公司
+    quote_check: found
+    title: 東台精機｜精密工具機與全方位加工解決方案
+    url: https://www.tongtaimachinetool.com/
+  tw.4526#e4:
+    locator: 產品介紹／複合式車削中心機
+    published_date: null
+    publisher: 東台精機股份有限公司
+    quote_check: found
+    title: 東台精機｜精密工具機與全方位加工解決方案
+    url: https://www.tongtaimachinetool.com/
+  tw.4526#e5:
+    locator: 產品介紹／數控電路板鑽孔機
+    published_date: null
+    publisher: 東台精機股份有限公司
+    quote_check: found
+    title: 東台精機｜精密工具機與全方位加工解決方案
+    url: https://www.tongtaimachinetool.com/
+  tw.4526#e6:
+    locator: 雷射製程段落
+    published_date: '2026-09-02'
+    publisher: 東台精機股份有限公司
+    quote_check: found
+    title: 從晶圓製程設備到零組件加工解決方案 東台SEMICON打造半導體一站式精密製造平台
+    url: https://www.tongtaimachinetool.com/news-detail/719/
+  tw.4526#e7:
+    locator: 晶圓與封裝平坦化段落
+    published_date: '2026-09-02'
+    publisher: 東台精機股份有限公司
+    quote_check: found
+    title: 從晶圓製程設備到零組件加工解決方案 東台SEMICON打造半導體一站式精密製造平台
+    url: https://www.tongtaimachinetool.com/news-detail/719/
+  tw.4526#e8:
+    locator: 自動化服務內容
+    published_date: null
+    publisher: 東台精機股份有限公司
+    quote_check: found
+    title: 自動化｜產線整合與智慧製造｜東台精機
+    url: https://www.tongtaimachinetool.com/technology/technical-solutions/automation/
+  tw.4526#e9:
+    locator: 印刷頁19，附註十二，列入合併財務報告之子公司／東台精機公司投資項目
+    published_date: null
+    publisher: 東台精機股份有限公司
+    quote_check: found
+    title: 東台精機114及113年第2季合併財務報告
+    url: https://www.tongtaimachinetool.com/download/48/

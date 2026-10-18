@@ -60,6 +60,36 @@ themes:
 - stage: system
   theme: theme.nvidia
   tier: downstream
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 美國主要營運子公司
+    details:
+    - 美國主要營運子公司
+    edge: e3fbd0f808e42
+    evidence_level: primary
+    id: org.amax-engineering-corporation
+    name: AMAX Engineering Corporation
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 中國主要營運子公司
+    details:
+    - 中國主要營運子公司
+    edge: ea47c99b60e84
+    evidence_level: primary
+    id: org.suzhou-supercluster-information-technology
+    name: 蘇州超集信息科技有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.amax.tw/
 tax_id: '92778956'
 incorporated: '2022-01-04'
@@ -118,3 +148,10 @@ evidence:
     quote_check: found
     title: AMAX-KY法人說明會簡報
     url: https://mopsov.twse.com.tw/nas/STR/693320251105M001.pdf
+  tw.6933#e9:
+    locator: 第89頁，其他風險及因應措施
+    published_date: '2026-08-06'
+    publisher: 艾瑪斯科技控股股份有限公司；FinancialFilings年報全文鏡像
+    quote_check: unreachable
+    title: 艾瑪斯科技控股股份有限公司2025年度年報修訂本
+    url: https://financialfilings.com/filings/amax-6933/annual-report/2026/49993605/

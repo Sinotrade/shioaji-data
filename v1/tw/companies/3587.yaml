@@ -21,16 +21,16 @@ chain: chain.semiconductor
 primary_chain_position: midstream
 summary_short: 提供半導體與電子產品的材料、故障分析及可靠度檢測服務。
 summary_long: 閎康提供半導體與電子產品的材料分析、故障分析、可靠度測試、表面分析及物理化學分析服務。材料分析支援新材料結構與製程研發，故障分析用於找出產品失效根因，可靠度驗證包含電測、環測及機械應力測試。公司亦提供矽光子晶圓與晶片的光電測試、插入損耗量測及失效定位，支援矽光子元件與CPO封裝驗證，並已完成CoWoS專案的高功率Latch-Up測試。
-main_theme: theme.cpo
+main_theme: theme.silicon_photonics
 themes:
+- stage: devices
+  theme: theme.silicon_photonics
+  tier: midstream
 - stage: packaging
   theme: theme.cpo
   tier: midstream
 - stage: test
   theme: theme.cowos
-  tier: midstream
-- stage: devices
-  theme: theme.silicon_photonics
   tier: midstream
 relations:
   competitors:
@@ -41,7 +41,7 @@ relations:
     details:
     - 台灣半導體檢測分析服務
     edge: e95d55e2216cf
-    evidence_level: primary
+    evidence_level: other
     id: tw.3289
     name: 宜特
     ranking_basis: unranked

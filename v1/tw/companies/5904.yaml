@@ -46,6 +46,35 @@ segments:
   period: '2025'
   revenue_share_pct: 8.83
 relations:
+  suppliers:
+  - as_of: 2019-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 歷史揭露之商品供應關係
+    details:
+    - 歷史揭露之商品供應關係
+    edge: efd8c231852c5
+    evidence_level: primary
+    id: org.p-g寶僑
+    name: P&G寶僑
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2019-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 歷史揭露之美妝商品供應關係
+    details:
+    - 歷史揭露之美妝商品供應關係
+    edge: efa3e12ef6286
+    evidence_level: primary
+    id: org.巴黎萊雅
+    name: 巴黎萊雅
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   transactions:
   - amount: 新台幣8,777,525元
     as_of: '2024-10-28'
@@ -116,6 +145,13 @@ evidence:
     quote_check: found
     title: 個股基本資料－5904
     url: https://5850web.moneydj.com/z/zc/zca/zca_5904.djhtm
+  tw.5904#e3:
+    locator: 第12頁，3.5供應商企業社會責任規範
+    published_date: null
+    publisher: 寶雅國際股份有限公司
+    quote_check: unreachable
+    title: 2019企業社會責任報告書
+    url: https://webgraphql.poya.com.tw/storage/files/Hif0eA0MQ8ShvbN28mWFc4OZnVOcYcA1VsWbKj5N.pdf
   tw.5904#e4:
     locator: 我可以在哪裡買到Maybelline媚比琳產品？
     published_date: null

@@ -8,12 +8,96 @@ industry:
   l0_code: '21'
   l0_name: 化學工業
   l0_name_en: Chemical
-primary_chain_position: unknown
+  l1: materials
+  l1_name: 原物料
+  l1_name_en: Materials
+  l2: mat.chemicals
+  l2_name: 化工
+  l2_name_en: Chemicals
+  l3: chem.specialty
+  l3_name: 特用化學品
+  l3_name_en: Specialty Chemicals
+primary_chain_position: upstream
+summary_short: 製造及銷售硫酸等基礎化學品、特用化學品與電子製程化學品。
+summary_long: 中華化以基礎、特用及電子化學品為主要業務，2025年營收比重分別為46%、25%及29%，其中基礎化學品為最大來源。基礎產品包含濃硫酸、發煙硫酸及稀硫酸；特用產品包含機能性纖維中間體、甲苯磺化系列及特殊改質塑膠樹脂單體。電子產品包含高純度半導體級硫酸、顯影劑、去光阻劑及電子級溶劑。官網另列PGMEA可作光阻助溶劑及稀釋劑，電子級硫酸則用於矽晶片清洗、微影及蝕刻。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_basic
+  name: 基礎化學品
+  period: '2025'
+  revenue_share_pct: 46
+- evidence_ids:
+  - e2
+  id: seg_specialty
+  name: 特用化學品
+  period: '2025'
+  revenue_share_pct: 25
+- evidence_ids:
+  - e2
+  id: seg_electronic
+  name: 電子化學品
+  period: '2025'
+  revenue_share_pct: 29
+main_theme: theme.photoresist
+themes:
+- stage: raw
+  theme: theme.photoresist
+  tier: upstream
 website: www.chciw.com.tw
 tax_id: 03558206
 incorporated: '1956-10-30'
 listed: '2000-09-11'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-18'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1727#e2:
+    locator: 印刷第45頁，114年度合併營業比重
+    published_date: '2026-03-31'
+    publisher: 臺灣中華化學工業股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.chciworld.com.tw/wp-content/uploads/2026/06/%E3%80%90%E6%99%AE%E9%80%9A%E3%80%912025%E5%B9%B4%E5%85%AC%E5%8F%B8%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
+  tw.1727#e3:
+    locator: 印刷第45頁，目前之商品項目
+    published_date: '2026-03-31'
+    publisher: 臺灣中華化學工業股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.chciworld.com.tw/wp-content/uploads/2026/06/%E3%80%90%E6%99%AE%E9%80%9A%E3%80%912025%E5%B9%B4%E5%85%AC%E5%8F%B8%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
+  tw.1727#e4:
+    locator: 印刷第45頁，特用化學品自行開發項目
+    published_date: '2026-03-31'
+    publisher: 臺灣中華化學工業股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.chciworld.com.tw/wp-content/uploads/2026/06/%E3%80%90%E6%99%AE%E9%80%9A%E3%80%912025%E5%B9%B4%E5%85%AC%E5%8F%B8%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
+  tw.1727#e5:
+    locator: 印刷第45頁，電子化學品目前之商品項目
+    published_date: '2026-03-31'
+    publisher: 臺灣中華化學工業股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.chciworld.com.tw/wp-content/uploads/2026/06/%E3%80%90%E6%99%AE%E9%80%9A%E3%80%912025%E5%B9%B4%E5%85%AC%E5%8F%B8%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
+  tw.1727#e6:
+    locator: 產品用途-ppt/ppb 電子級硫酸
+    published_date: null
+    publisher: 臺灣中華化學工業股份有限公司
+    quote_check: found
+    title: ppt/ppb 電子級硫酸
+    url: https://www.chciworld.com.tw/product/ppt_ppb_electronic_grade_sulfuric_acid/
+  tw.1727#e7:
+    locator: 產品用途-丙二醇單甲醚醋酸酯
+    published_date: null
+    publisher: 臺灣中華化學工業股份有限公司
+    quote_check: found
+    title: 丙二醇單甲醚醋酸酯(PGMEA)
+    url: https://www.chciworld.com.tw/product/pgmea/
+  tw.1727#e8:
+    locator: 印刷第46頁，基礎化學品產業概況
+    published_date: '2026-03-31'
+    publisher: 臺灣中華化學工業股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.chciworld.com.tw/wp-content/uploads/2026/06/%E3%80%90%E6%99%AE%E9%80%9A%E3%80%912025%E5%B9%B4%E5%85%AC%E5%8F%B8%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf

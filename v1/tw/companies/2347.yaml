@@ -46,13 +46,13 @@ segments:
   name: 通訊
   period: 2026Q3
   revenue_share_pct: null
-main_theme: theme.data_center
+main_theme: theme.robotics
 themes:
-- stage: it
-  theme: theme.data_center
-  tier: midstream
 - stage: control
   theme: theme.robotics
+  tier: midstream
+- stage: it
+  theme: theme.data_center
   tier: midstream
 relations:
   customers:
@@ -105,7 +105,7 @@ relations:
     details:
     - 記憶體IC、CPU原料類別
     edge: eec870e4d06d5
-    evidence_level: primary
+    evidence_level: other
     id: tw.6570
     name: 維田
     ranking_basis: unranked

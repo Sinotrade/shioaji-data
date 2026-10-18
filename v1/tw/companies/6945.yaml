@@ -8,12 +8,145 @@ industry:
   l0_code: '22'
   l0_name: 生技醫療業
   l0_name_en: Biotechnology and Medical Care
-primary_chain_position: unknown
+  l1: health
+  l1_name: 醫療保健
+  l1_name_en: Healthcare
+  l2: health.pharma
+  l2_name: 製藥與生技
+  l2_name_en: Pharmaceuticals & Biotech
+  l3: bio.new_drug
+  l3_name: 新藥研發
+  l3_name_en: New Drug Development
+chain: chain.biotech
+primary_chain_position: upstream
+summary_short: 研發眼科及腫瘤抗體新藥，以藥物授權及相關變動價金為收入來源。
+summary_long: 圓祥生技以抗體及蛋白藥物研發與授權為業務，開發眼科及腫瘤新藥。IBI302針對濕性黃斑部病變與糖尿病黃斑部水腫，已達成第三期臨床試驗主要療效指標。AP505針對肝癌、大腸直腸癌等適應症，已在中國進入第二期臨床。AP203開發非小細胞肺癌等實體瘤療法；AP402針對既有HER2標靶治療後復發或無效的乳癌與胃癌；AP601則針對三陰性乳癌等實體瘤。全資子公司APBIO PTY LTD執行AP601澳洲臨床試驗。
+segments:
+- evidence_ids:
+  - e3
+  id: seg1
+  name: 抗體新藥授權及相關變動價金
+  period: '2024'
+  revenue_share_pct: null
+relations:
+  subsidiaries:
+  - as_of: '2026-02-24'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司，執行澳洲抗癌新藥臨床試驗
+    details:
+    - 全資子公司，執行澳洲抗癌新藥臨床試驗
+    edge: e5c3725294014
+    evidence_level: primary
+    id: org.apbio-pty-ltd
+    name: APBIO PTY LTD
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.apbioinc.com
 tax_id: '54326052'
 incorporated: '2013-05-27'
 listed: '2026-06-05'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-18'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6945#e1:
+    locator: 公司基本資料表，主要經營業務
+    published_date: null
+    publisher: 圓祥生技股份有限公司
+    quote_check: not_found
+    title: 公司基本資料 ∣ 圓祥生技
+    url: https://www.apbioinc.com/investor-detail2-0-0.htm
+  tw.6945#e10:
+    locator: AP402，適應症
+    published_date: null
+    publisher: 圓祥生技股份有限公司
+    quote_check: found
+    title: 技術與產品：AP402 ∣ 圓祥生技
+    url: https://www.apbioinc.com/pipeline-detail6.htm
+  tw.6945#e11:
+    locator: AP601，適應症
+    published_date: null
+    publisher: 圓祥生技股份有限公司
+    quote_check: found
+    title: 技術與產品：AP601 ∣ 圓祥生技
+    url: https://www.apbioinc.com/pipeline-detail5.htm
+  tw.6945#e12:
+    locator: 第7頁，臨床階段雙特異性抗體產品線概況
+    published_date: null
+    publisher: 圓祥生技股份有限公司
+    quote_check: found
+    title: 圓祥生技上櫃前業績發表會簡報
+    url: https://www.apbioinc.com/Upload/202605/investor_2026051315284608.pdf
+  tw.6945#e13:
+    locator: 公告主旨
+    published_date: '2026-02-24'
+    publisher: 圓祥生技股份有限公司
+    quote_check: found
+    title: 代子公司APBIO PTY LTD公告研發中雙特異性抗體抗癌新藥AP601，於澳洲治療實體腫瘤第一期臨床試驗完成第一例受試者收案
+    url: https://www.apbioinc.com/news-detail64.htm
+  tw.6945#e14:
+    locator: 說明，第2至4項
+    published_date: '2026-02-24'
+    publisher: 圓祥生技股份有限公司
+    quote_check: found
+    title: 代子公司APBIO PTY LTD公告AP601澳洲臨床一期首例受試者收案
+    url: https://www.apbioinc.com/news-detail64.htm
+  tw.6945#e2:
+    locator: 公司簡介
+    published_date: null
+    publisher: 圓祥生技股份有限公司
+    quote_check: found
+    title: 關於圓祥 ∣ 圓祥生技
+    url: https://www.apbioinc.com/about.htm
+  tw.6945#e3:
+    locator: 第30頁，附註六（十四）營業收入
+    published_date: '2025-03-21'
+    publisher: 圓祥生技股份有限公司
+    quote_check: unreachable
+    title: 圓祥生技股份有限公司及子公司民國113年度及112年度合併財務報告
+    url: https://www.apbioinc.com/Upload/202505/investor_2025051313373608.pdf
+  tw.6945#e4:
+    locator: 作用機制
+    published_date: null
+    publisher: 圓祥生技股份有限公司
+    quote_check: found
+    title: 技術與產品：IBI302 ∣ 圓祥生技
+    url: https://www.apbioinc.com/pipeline-detail4.htm
+  tw.6945#e5:
+    locator: 適應症
+    published_date: null
+    publisher: 圓祥生技股份有限公司
+    quote_check: found
+    title: 技術與產品：IBI302 ∣ 圓祥生技
+    url: https://www.apbioinc.com/pipeline-detail4.htm
+  tw.6945#e6:
+    locator: 常見問題，Q2
+    published_date: '2026-05-14'
+    publisher: 圓祥生技股份有限公司
+    quote_check: found
+    title: 5/14 圓祥生技業績發表會：IBI302 完成第三期臨床主要療效指標，推進藥證申請與全球授權布局
+    url: https://www.apbioinc.com/news-detail73.htm
+  tw.6945#e7:
+    locator: AP505，適應症
+    published_date: null
+    publisher: 圓祥生技股份有限公司
+    quote_check: found
+    title: 技術與產品：AP505 ∣ 圓祥生技
+    url: https://www.apbioinc.com/pipeline-detail3.htm
+  tw.6945#e8:
+    locator: 全球授權布局
+    published_date: '2026-05-14'
+    publisher: 圓祥生技股份有限公司
+    quote_check: found
+    title: 5/14 圓祥生技業績發表會：IBI302 完成第三期臨床主要療效指標，推進藥證申請與全球授權布局
+    url: https://www.apbioinc.com/news-detail73.htm
+  tw.6945#e9:
+    locator: AP203，適應症
+    published_date: null
+    publisher: 圓祥生技股份有限公司
+    quote_check: found
+    title: 技術與產品：AP203 ∣ 圓祥生技
+    url: https://www.apbioinc.com/pipeline-detail1.htm

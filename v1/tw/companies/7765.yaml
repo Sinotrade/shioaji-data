@@ -8,7 +8,36 @@ industry:
   l0_code: '36'
   l0_name: 數位雲端
   l0_name_en: Digital and Cloud Services
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.software
+  l2_name: 軟體與資訊服務
+  l2_name_en: Software & IT Services
+  l3: sw.security
+  l3_name: 資訊安全
+  l3_name_en: Cybersecurity
+primary_chain_position: not_applicable
+summary_short: 提供上網資安、專業檢測與監控服務，並銷售資安軟硬體及自有產品。
+summary_long: 中華資安主要經營上網資安服務、資安專業服務與資安商品銷售，2025年前三季以資安專業服務營收最高。服務涵蓋資安檢測、SOC監控、MDR威脅偵測應變與事件鑑識。2026年上半年持續性營收占47%，一次性營收占53%。產品包括提供封包側錄與威脅偵測的SecuTex NP、端點安全與合規檢測的SecuTex ED、硬體式端對端加密通訊系統CypherCom，以及外部曝險管理服務HorusEyes。公司另提供無人機資安檢測服務。
+segments:
+- evidence_ids:
+  - e3
+  id: recurring
+  name: 持續性營收
+  period: 2026年上半年
+  revenue_share_pct: 47
+- evidence_ids:
+  - e4
+  id: non_recurring
+  name: 一次性營收
+  period: 2026年上半年
+  revenue_share_pct: 53
+main_theme: theme.drone
+themes:
+- stage: system
+  theme: theme.drone
+  tier: downstream
 relations:
   parents:
   - as_of: '2026-05-05'
@@ -17,6 +46,7 @@ relations:
     detail: 資安子公司
     details:
     - 資安子公司
+    - 財報揭露之母公司
     edge: ebb86b9cf0fe7
     evidence_level: primary
     id: tw.2412
@@ -24,12 +54,89 @@ relations:
     ranking_basis: unranked
     share_basis: null
     share_pct: null
-    weight: 1
+    weight: 2
 website: https://www.chtsecurity.com/
 tax_id: '55765649'
 incorporated: '2017-12-14'
 listed: '2025-09-08'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-18'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.7765#e1:
+    locator: 第9頁，營運說明，單位億元；欄序為Q3 2025、9M 2025、9M 2024、成長率
+    published_date: '2025-11-05'
+    publisher: 中華資安國際股份有限公司
+    quote_check: found
+    title: 2025年第三季法人說明會
+    url: https://www.chtsecurity.com/investor/download/false/158343be-5dde-4efc-a2cf-705f802b72cc
+  tw.7765#e10:
+    locator: 第10頁，附註一公司沿革
+    published_date: null
+    publisher: 中華資安國際股份有限公司
+    quote_check: found
+    title: 民國113年及112年第二季財務報告暨會計師核閱報告
+    url: https://www.chtsecurity.com/investor/download/true/33b8f0a0-2b89-4397-ab15-59789d8bcbe1
+  tw.7765#e11:
+    locator: 服務概述，全方位資安檢測
+    published_date: null
+    publisher: 中華資安國際股份有限公司
+    quote_check: found
+    title: 無人機檢測服務
+    url: https://www.chtsecurity.com/service/m116
+  tw.7765#e2:
+    locator: 第9頁，資安專業服務
+    published_date: '2025-11-05'
+    publisher: 中華資安國際股份有限公司
+    quote_check: found
+    title: 2025年第三季法人說明會
+    url: https://www.chtsecurity.com/investor/download/false/158343be-5dde-4efc-a2cf-705f802b72cc
+  tw.7765#e3:
+    locator: 內文第二段
+    published_date: '2026-08-07'
+    publisher: 中華資安國際股份有限公司
+    quote_check: found
+    title: 中華資安上半年EPS 6.16元創同期新高， AI成為營收成長新動能
+    url: https://www.chtsecurity.com/news/6369ab0c-b20e-4a54-be53-4d9c3f4674a1
+  tw.7765#e4:
+    locator: 內文第二段
+    published_date: '2026-08-07'
+    publisher: 中華資安國際股份有限公司
+    quote_check: found
+    title: 中華資安上半年EPS 6.16元創同期新高， AI成為營收成長新動能
+    url: https://www.chtsecurity.com/news/6369ab0c-b20e-4a54-be53-4d9c3f4674a1
+  tw.7765#e5:
+    locator: 產品簡介
+    published_date: null
+    publisher: 中華資安國際股份有限公司
+    quote_check: found
+    title: SecuTex 先進資安威脅防禦系統
+    url: https://www.chtsecurity.com/solution/ms101
+  tw.7765#e6:
+    locator: 解決方案
+    published_date: null
+    publisher: 中華資安國際股份有限公司
+    quote_check: found
+    title: SecuTex ED
+    url: https://www.chtsecurity.com/solution/ms107
+  tw.7765#e7:
+    locator: 產品特色與核心價值，合規基準檢測
+    published_date: null
+    publisher: 中華資安國際股份有限公司
+    quote_check: found
+    title: SecuTex ED
+    url: https://www.chtsecurity.com/solution/ms107
+  tw.7765#e8:
+    locator: 產品簡介
+    published_date: null
+    publisher: 中華資安國際股份有限公司
+    quote_check: found
+    title: CypherCom 端對端加密通訊系統
+    url: https://www.chtsecurity.com/solution/ms302
+  tw.7765#e9:
+    locator: 產品簡介
+    published_date: null
+    publisher: 中華資安國際股份有限公司
+    quote_check: found
+    title: 資安眼HorusEyes
+    url: https://www.chtsecurity.com/solution/ms417

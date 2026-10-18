@@ -34,13 +34,13 @@ segments:
   name: 其他
   period: '2025'
   revenue_share_pct: 0.61
-main_theme: theme.silicon_photonics
+main_theme: theme.gan
 themes:
-- stage: materials
-  theme: theme.silicon_photonics
-  tier: upstream
 - stage: substrate
   theme: theme.gan
+  tier: upstream
+- stage: materials
+  theme: theme.silicon_photonics
   tier: upstream
 - stage: wafer
   theme: theme.silicon_wafer
@@ -112,7 +112,7 @@ relations:
     details:
     - 2025年最大客戶
     edge: e8c019732e22e
-    evidence_level: primary
+    evidence_level: other
     id: tw.6903
     name: 巨漢
     ranking_basis: unranked

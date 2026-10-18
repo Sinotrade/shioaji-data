@@ -8,12 +8,293 @@ industry:
   l0_code: '30'
   l0_name: 資訊服務業
   l0_name_en: Information Service
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.distribution
+  l2_name: 電子通路
+  l2_name_en: Electronics Distribution
+  l3: dist.it
+  l3_name: 資訊產品通路
+  l3_name_en: IT Products Distribution
+primary_chain_position: downstream
+summary_short: 以資通訊軟硬體代理經銷為主，提供雲端託管、AI應用與資安整合服務。
+summary_long: 邁達特以資通訊軟硬體的代理、經銷及整合服務為主，提供企業運算、網路、儲存與雲地整合方案。2025年營業比重以數據運算及應用61.40%為最大，其次為雲端應用、軟體及服務16.35%、資通訊基礎架構14.22%、數位化整合7.43%。服務涵蓋雲端託管與監控、AI及資料應用，並於2026年推出AI資安判斷與預測平台。母公司為佳世達，主要子公司包含聚上雲、逐鹿數位、德鴻科技、啟迪國際、前進國際及典通。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_computing
+  name: 數據運算及應用
+  period: '2025'
+  revenue_share_pct: 61.4
+- evidence_ids:
+  - e2
+  id: seg_cloud
+  name: 雲端應用、軟體及服務
+  period: '2025'
+  revenue_share_pct: 16.35
+- evidence_ids:
+  - e2
+  id: seg_infrastructure
+  name: 資通訊基礎架構
+  period: '2025'
+  revenue_share_pct: 14.22
+- evidence_ids:
+  - e2
+  id: seg_integration
+  name: 數位化整合
+  period: '2025'
+  revenue_share_pct: 7.43
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他產品
+  period: '2025'
+  revenue_share_pct: 0.6
+main_theme: theme.data_center
+themes:
+- stage: it
+  theme: theme.data_center
+  tier: midstream
+relations:
+  parents:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 母公司及集團最終控制者
+    details:
+    - 母公司及集團最終控制者
+    edge: efcc340edb7cd
+    evidence_level: primary
+    id: tw.2352
+    name: 佳世達
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: ec00622c8cccb
+    evidence_level: primary
+    id: org.brainstorm-corporation
+    name: Brainstorm Corporation
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: ece325b480fbd
+    evidence_level: primary
+    id: org.corex
+    name: COREX (PTY) LTD
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: ef86949b5f5a2
+    evidence_level: primary
+    id: org.epic-cloud
+    name: 聚上雲股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: ec96804672176
+    evidence_level: primary
+    id: org.metaguru
+    name: 逐鹿數位股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 由邁達特及聚上雲持股之子公司
+    details:
+    - 由邁達特及聚上雲持股之子公司
+    edge: e672b66144780
+    evidence_level: primary
+    id: org.典通股份有限公司
+    name: 典通股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: e5999fe2a23e2
+    evidence_level: primary
+    id: org.前進國際股份有限公司
+    name: 前進國際股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 由邁達特及聚上雲持股之子公司
+    details:
+    - 由邁達特及聚上雲持股之子公司
+    edge: e8666e9c0f187
+    evidence_level: primary
+    id: org.啟迪國際資訊股份有限公司
+    name: 啟迪國際資訊股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: e9f79e6c9ff3d
+    evidence_level: primary
+    id: tw.6910
+    name: 德鴻
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.metaage.com.tw/
 tax_id: '16428796'
 incorporated: '1998-04-16'
 listed: '2003-08-04'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-18'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6112#e1:
+    locator: 印刷頁58，營運概況／所營業務之主要內容
+    published_date: '2026-03-31'
+    publisher: 邁達特數位股份有限公司
+    quote_check: found
+    title: 邁達特2025年報
+    url: https://www.metaage.com.tw/file/ovhqzboohgtd7gtj
+  tw.6112#e10:
+    locator: 印刷頁10，附註四（二）合併基礎，子公司名單
+    published_date: '2026-05-06'
+    publisher: 邁達特數位股份有限公司
+    quote_check: found
+    title: 邁達特115年第一季合併財務報告
+    url: https://www.metaage.com.tw/files/investor_relations/financial_reports/115/115年第一季中文合併報告.pdf
+  tw.6112#e11:
+    locator: 印刷頁10，附註四（二）合併基礎，子公司名單
+    published_date: '2026-05-06'
+    publisher: 邁達特數位股份有限公司
+    quote_check: found
+    title: 邁達特115年第一季合併財務報告
+    url: https://www.metaage.com.tw/files/investor_relations/financial_reports/115/115年第一季中文合併報告.pdf
+  tw.6112#e12:
+    locator: 印刷頁10，附註四（二）合併基礎，子公司名單
+    published_date: '2026-05-06'
+    publisher: 邁達特數位股份有限公司
+    quote_check: found
+    title: 邁達特115年第一季合併財務報告
+    url: https://www.metaage.com.tw/files/investor_relations/financial_reports/115/115年第一季中文合併報告.pdf
+  tw.6112#e13:
+    locator: 印刷頁10，附註四（二）合併基礎，子公司名單
+    published_date: '2026-05-06'
+    publisher: 邁達特數位股份有限公司
+    quote_check: found
+    title: 邁達特115年第一季合併財務報告
+    url: https://www.metaage.com.tw/files/investor_relations/financial_reports/115/115年第一季中文合併報告.pdf
+  tw.6112#e14:
+    locator: 印刷頁10，附註四（二）合併基礎，子公司名單
+    published_date: '2026-05-06'
+    publisher: 邁達特數位股份有限公司
+    quote_check: found
+    title: 邁達特115年第一季合併財務報告
+    url: https://www.metaage.com.tw/files/investor_relations/financial_reports/115/115年第一季中文合併報告.pdf
+  tw.6112#e15:
+    locator: 印刷頁10，附註四（二）合併基礎，子公司名單
+    published_date: '2026-05-06'
+    publisher: 邁達特數位股份有限公司
+    quote_check: found
+    title: 邁達特115年第一季合併財務報告
+    url: https://www.metaage.com.tw/files/investor_relations/financial_reports/115/115年第一季中文合併報告.pdf
+  tw.6112#e2:
+    locator: 印刷頁59，公司目前之商品、服務項目及其營業比重，2025年度
+    published_date: '2026-03-31'
+    publisher: 邁達特數位股份有限公司
+    quote_check: found
+    title: 邁達特2025年報
+    url: https://www.metaage.com.tw/file/ovhqzboohgtd7gtj
+  tw.6112#e3:
+    locator: 方案概述
+    published_date: null
+    publisher: 邁達特數位股份有限公司
+    quote_check: found
+    title: 超融合解決方案
+    url: https://www.metaage.com.tw/solutions/hyper-converged-infrastructure
+  tw.6112#e4:
+    locator: 方案概述
+    published_date: null
+    publisher: 邁達特數位股份有限公司
+    quote_check: found
+    title: 雲端託管服務（MSP）
+    url: https://www.metaage.com.tw/solutions/msp-services
+  tw.6112#e5:
+    locator: 方案概述
+    published_date: null
+    publisher: 邁達特數位股份有限公司
+    quote_check: found
+    title: AI及資料應用解決方案
+    url: https://www.metaage.com.tw/solutions/ai-big-data
+  tw.6112#e6:
+    locator: MetaAge邁達特打造「AI資安治理平台」段落
+    published_date: '2026-05-27'
+    publisher: 邁達特數位股份有限公司
+    quote_check: found
+    title: 明基佳世達旗下邁達特2026 COMPUTEX揭示「AI時代智慧企業」全景圖：核心營運、智慧客服與資安治理
+    url: https://www.metaage.com.tw/news/latest/993
+  tw.6112#e7:
+    locator: 印刷頁47，附註七（一）母公司與最終控制者
+    published_date: null
+    publisher: 邁達特數位股份有限公司
+    quote_check: found
+    title: 邁達特114年度個體財務報告
+    url: https://www.metaage.com.tw/files/investor_relations/financial_reports/114/114年度中文個體財務報告書.pdf
+  tw.6112#e8:
+    locator: 印刷頁10，附註四（二）合併基礎，子公司名單
+    published_date: '2026-05-06'
+    publisher: 邁達特數位股份有限公司
+    quote_check: found
+    title: 邁達特115年第一季合併財務報告
+    url: https://www.metaage.com.tw/files/investor_relations/financial_reports/115/115年第一季中文合併報告.pdf
+  tw.6112#e9:
+    locator: 印刷頁10，附註四（二）合併基礎，子公司名單
+    published_date: '2026-05-06'
+    publisher: 邁達特數位股份有限公司
+    quote_check: found
+    title: 邁達特115年第一季合併財務報告
+    url: https://www.metaage.com.tw/files/investor_relations/financial_reports/115/115年第一季中文合併報告.pdf

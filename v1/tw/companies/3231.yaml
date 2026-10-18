@@ -53,16 +53,44 @@ segments:
   name: 其他產品（年報彙總口徑）
   period: 2025年度
   revenue_share_pct: 1.5
-main_theme: theme.liquid_cooling
+main_theme: theme.ai_server
 themes:
+- stage: assembly
+  theme: theme.ai_server
+  tier: downstream
+- stage: it
+  theme: theme.data_center
+  tier: midstream
 - stage: system
   theme: theme.liquid_cooling
   tier: downstream
 - stage: system
   theme: theme.nvidia
   tier: downstream
+- stage: system
+  theme: theme.cpo
+  tier: downstream
 relations:
   customers:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares:
+    - as_of: '2025-12-31'
+      basis: purchases
+      of: tw.6669
+      pct: 8.09
+    detail: 集團內銷貨；產品未於該表具名
+    details:
+    - 集團內銷貨；產品未於該表具名
+    - 年報具名進貨供應商，產品項目未細分
+    edge: ece7e3f532105
+    evidence_level: primary
+    id: tw.6669
+    name: 緯穎
+    ranking_basis: disclosed
+    share_basis: revenue
+    share_pct: 5.45
+    weight: 2
   - as_of: 2026-03
     confidence: ai_cross_checked
     counterparty_shares: []
@@ -77,20 +105,16 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2025-12-31'
+  - as_of: 2022-12
     confidence: ai_cross_checked
-    counterparty_shares:
-    - as_of: '2025-12-31'
-      basis: purchases
-      of: tw.6669
-      pct: 8.09
-    detail: 年報具名進貨供應商，產品項目未細分
+    counterparty_shares: []
+    detail: 最終組裝
     details:
-    - 年報具名進貨供應商，產品項目未細分
-    edge: ece7e3f532105
+    - 最終組裝
+    edge: eac8213636036
     evidence_level: primary
-    id: tw.6669
-    name: 緯穎
+    id: tw.2353
+    name: 宏碁
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -119,6 +143,20 @@ relations:
     evidence_level: media
     id: us.DELL
     name: Dell
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2012-01-12'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 筆電代工；歷史關係
+    details:
+    - 筆電代工；歷史關係
+    edge: eb6ccfe12d4f3
+    evidence_level: primary
+    id: us.HPQ
+    name: HP
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -180,17 +218,74 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: '2026-06-02'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: AI代理與數位分身智慧工廠平台
+    details:
+    - AI代理與數位分身智慧工廠平台
+    edge: e275c7b622907
+    evidence_level: primary
+    id: us.NVDA
+    name: NVIDIA
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 母公司及最終控制者
+    detail: 緯穎科技服務股份有限公司；受控制子公司
     details:
+    - 緯穎科技服務股份有限公司；受控制子公司
     - 母公司及最終控制者
     edge: e46d21b773103
     evidence_level: primary
     id: tw.6669
     name: 緯穎
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 2
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 2025年第三季取得控制
+    details:
+    - 2025年第三季取得控制
+    edge: ee6dcb5576f84
+    evidence_level: primary
+    id: org.goaltop-technology
+    name: GOALTOP Technology Corporation
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 2025年第三季收購後納入子公司
+    details:
+    - 2025年第三季收購後納入子公司
+    edge: eddac66caae04
+    evidence_level: primary
+    id: org.taiwan-space-and-communications
+    name: Taiwan Space and Communications CO., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-05-06'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 100%持股美國子公司
+    details:
+    - 100%持股美國子公司
+    edge: e66288429394c
+    evidence_level: primary
+    id: org.wistron-infocomm-usa
+    name: Wistron InfoComm (USA) Corporation
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -239,6 +334,48 @@ relations:
     share_pct: null
     weight: 1
   transactions:
+  - amount: 美金2,000萬元
+    as_of: '2026-05-08'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 取得SAFE未來股權協議
+    details:
+    - 取得SAFE未來股權協議
+    edge: e4b01b3c8db79
+    event_date: '2026-05-08'
+    events:
+    - amount: 美金2,000萬元
+      detail: 取得SAFE未來股權協議
+      event_date: '2026-05-08'
+    evidence_level: primary
+    id: org.eridu
+    name: Eridu Corporation
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 美金4.55億元
+    as_of: '2025-05-06'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 增資美國全資子公司
+    details:
+    - 增資美國全資子公司
+    edge: efa0209bb1e79
+    event_date: '2025-05-06'
+    events:
+    - amount: 美金4.55億元
+      detail: 增資美國全資子公司
+      event_date: '2025-05-06'
+    evidence_level: primary
+    id: org.wistron-infocomm-usa
+    name: Wistron InfoComm (USA) Corporation
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
   - amount: null
     as_of: '2025-08-01'
     confidence: ai_cross_checked
@@ -378,6 +515,13 @@ evidence:
     quote_check: unreachable
     title: NVIDIA Corporation Form 10-K, fiscal year ended January 25, 2026
     url: https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm
+  tw.3231#e07:
+    locator: Building an Intelligent Factory AI Platform段落
+    published_date: '2026-06-02'
+    publisher: Wistron Corporation
+    quote_check: unreachable
+    title: Wistron Introduces NVIDIA AI Agent Platform to Build a Factory Brain and Accelerate Smart Manufacturing
+    url: https://www.wistron.com/en/Newsroom/ai-factory-brain
   tw.3231#e08:
     locator: Ecosystem Accelerates AMD Helios Deployment
     published_date: '2026-05-21'
@@ -406,6 +550,34 @@ evidence:
     quote_check: found
     title: Lenovo Manufacturing Sites and Suppliers
     url: https://www.lenovo.com/content/dam/lenovo/site-design/esg-document-library/global/corp-policies/gsc/List_of_Lenovo_Mfg_Sites_and_Suppliers.pdf
+  tw.3231#e12:
+    locator: PDF第10頁，Strong and diverse customer base
+    published_date: '2012-01-12'
+    publisher: Wistron Corporation
+    quote_check: unreachable
+    title: Wistron Corporation Offering Circular
+    url: https://www.wistron.com/file/60528cf2-7c16-41cc-913e-5f294d893021/Final_OC_2012.pdf
+  tw.3231#e13:
+    locator: PDF第15頁，子公司Note 3；第12頁WYHQ名稱對照
+    published_date: '2026-08-04'
+    publisher: Wistron Corporation
+    quote_check: unreachable
+    title: Q2 2026 Consolidated Financial Report
+    url: https://www.wistron.com/file/ac89527f-3611-4aa9-b0a7-b922d25ef08b/274415_115Q2_%E5%90%88%E4%BD%B5_%E8%8B%B1%E6%96%87%E5%AE%8C%E7%A8%BF%E8%B2%A1%E5%A0%B1_IMSv5.pdf.pdf
+  tw.3231#e14:
+    locator: PDF第77頁Table 4銷貨列；第85、93頁合併沖銷註記
+    published_date: '2026-08-04'
+    publisher: Wistron Corporation
+    quote_check: unreachable
+    title: Q2 2026 Consolidated Financial Report
+    url: https://www.wistron.com/file/ac89527f-3611-4aa9-b0a7-b922d25ef08b/274415_115Q2_%E5%90%88%E4%BD%B5_%E8%8B%B1%E6%96%87%E5%AE%8C%E7%A8%BF%E8%B2%A1%E5%A0%B1_IMSv5.pdf.pdf
+  tw.3231#e15:
+    locator: 公告議案第1項
+    published_date: '2025-05-06'
+    publisher: 緯創資通股份有限公司
+    quote_check: unreachable
+    title: 緯創資通董事會通過114年度第一季財務報表及重要議案
+    url: https://www.wistron.com/ch/Newsroom/2025-05-06
   tw.3231#e17:
     locator: 吳家豪具名報導，正文第1段
     published_date: '2024-06-26'
@@ -420,6 +592,13 @@ evidence:
     quote_check: found
     title: 緯創投資10億元參與經緯航私募 布局無人載具
     url: https://www.cna.com.tw/news/afe/202404030449.aspx
+  tw.3231#e19:
+    locator: 公告議案第3項
+    published_date: '2026-05-08'
+    publisher: 緯創資通股份有限公司
+    quote_check: unreachable
+    title: 緯創資通董事會通過115年度第一季財務報表及重要議案
+    url: https://www.wistron.com/ch/Newsroom/2026-05-08
   tw.3231#e20:
     locator: 江明晏具名報導，正文第3段
     published_date: '2026-10-12'
@@ -448,3 +627,24 @@ evidence:
     quote_check: unreachable
     title: 緯創參加2026 OCP全球高峰會 聚焦AI新世代運算與儲存系統
     url: https://www.wistron.com/ch/Newsroom/2026-10-13
+  tw.3231#e24:
+    locator: PDF第15頁Note 1；第12頁TASC子公司表
+    published_date: '2026-08-04'
+    publisher: Wistron Corporation
+    quote_check: unreachable
+    title: Q2 2026 Consolidated Financial Report
+    url: https://www.wistron.com/file/ac89527f-3611-4aa9-b0a7-b922d25ef08b/274415_115Q2_%E5%90%88%E4%BD%B5_%E8%8B%B1%E6%96%87%E5%AE%8C%E7%A8%BF%E8%B2%A1%E5%A0%B1_IMSv5.pdf.pdf
+  tw.3231#e25:
+    locator: PDF第15頁Note 2；第12頁GOALTOP子公司表
+    published_date: '2026-08-04'
+    publisher: Wistron Corporation
+    quote_check: unreachable
+    title: Q2 2026 Consolidated Financial Report
+    url: https://www.wistron.com/file/ac89527f-3611-4aa9-b0a7-b922d25ef08b/274415_115Q2_%E5%90%88%E4%BD%B5_%E8%8B%B1%E6%96%87%E5%AE%8C%E7%A8%BF%E8%B2%A1%E5%A0%B1_IMSv5.pdf.pdf
+  tw.3231#e28:
+    locator: Networking Switch段落
+    published_date: null
+    publisher: Wistron Corporation
+    quote_check: unreachable
+    title: Enterprise & Networking
+    url: https://www.wistron.com/en/Product&Services/Enterprise&Networking

@@ -52,14 +52,14 @@ segments:
   name: 其他自動化產品
   period: '2025'
   revenue_share_pct: 11.79
-main_theme: theme.data_center
+main_theme: theme.robotics
 themes:
-- stage: equipment
-  theme: theme.data_center
-  tier: upstream
 - stage: null
   theme: theme.robotics
   tier: null
+- stage: equipment
+  theme: theme.data_center
+  tier: upstream
 - stage: system
   theme: theme.liquid_cooling
   tier: downstream
@@ -78,7 +78,7 @@ relations:
     details:
     - 營業用機器設備
     edge: e95e15dd3f6c7
-    evidence_level: primary
+    evidence_level: other
     id: org.ase-semiconductor
     name: 日月光半導體製造(股)公司
     ranking_basis: unranked
@@ -92,7 +92,7 @@ relations:
     details:
     - 營業用機器設備
     edge: efba575fb073e
-    evidence_level: primary
+    evidence_level: other
     id: org.spil
     name: 矽品精密工業(股)公司
     ranking_basis: unranked
@@ -106,7 +106,7 @@ relations:
     details:
     - 自動化設備及解決方案
     edge: e933fe3486ab4
-    evidence_level: primary
+    evidence_level: other
     id: tw.2303
     name: 聯電
     ranking_basis: unranked
@@ -120,7 +120,7 @@ relations:
     details:
     - 自動化設備及解決方案
     edge: e9b63f9d50d9c
-    evidence_level: primary
+    evidence_level: other
     id: tw.2330
     name: 台積電
     ranking_basis: unranked
@@ -134,7 +134,7 @@ relations:
     details:
     - 自動化設備及解決方案
     edge: e93cf0d35a96f
-    evidence_level: primary
+    evidence_level: other
     id: tw.2409
     name: 友達
     ranking_basis: unranked
@@ -148,7 +148,7 @@ relations:
     details:
     - 自動化設備及解決方案
     edge: eda9c45fc586f
-    evidence_level: primary
+    evidence_level: other
     id: tw.3481
     name: 群創
     ranking_basis: unranked
@@ -162,7 +162,7 @@ relations:
     details:
     - 大園物流中心穿梭車式密集倉儲系統
     edge: eb5ce9c5ca96a
-    evidence_level: primary
+    evidence_level: other
     id: tw.8044
     name: 網家
     ranking_basis: unranked
@@ -177,7 +177,7 @@ relations:
     details:
     - 合資成立奧威科技
     edge: e61adcbfca35a
-    evidence_level: primary
+    evidence_level: other
     id: tw.3162
     name: 精確
     ranking_basis: unranked

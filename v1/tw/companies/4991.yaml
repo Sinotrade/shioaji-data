@@ -54,15 +54,15 @@ themes:
 - stage: it
   theme: theme.data_center
   tier: midstream
-- stage: components
-  theme: theme.cpo
-  tier: upstream
-- stage: devices
-  theme: theme.silicon_photonics
-  tier: midstream
 - stage: devices
   theme: theme.gan
   tier: midstream
+- stage: devices
+  theme: theme.silicon_photonics
+  tier: midstream
+- stage: components
+  theme: theme.cpo
+  tier: upstream
 - stage: chip
   theme: theme.vcsel
   tier: midstream

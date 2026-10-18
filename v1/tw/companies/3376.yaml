@@ -8,12 +8,103 @@ industry:
   l0_code: '28'
   l0_name: 電子零組件業
   l0_name_en: Electronic Parts and Components
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.chassis
+  l3_name: 機殼與機構件
+  l3_name_en: Chassis & Mechanical Parts
+primary_chain_position: midstream
+summary_short: 研發、製造及銷售電子產品樞紐、MIM製件與精密金屬零組件。
+summary_long: 新日興主要從事筆記型電腦、液晶顯示器、手機與其他3C電子產品樞紐的研發、製造及銷售。公司亦提供金屬射出成型製件，結合粉末冶金與射出成型技術，製造精密金屬零件。其他產品包括車銑製件與精密彈簧，應用涵蓋自行車、電子產品、醫療器材及機械設備。官網另列有AI伺服器精密機構件與液冷零組件，包含分歧管及UQD接頭，屬零組件製造環節。新日興於2026年8月的官方公告中，將定盈投資股份有限公司列為重要子公司。
+main_theme: theme.ai_server
+themes:
+- stage: components
+  theme: theme.ai_server
+  tier: midstream
+- stage: parts
+  theme: theme.liquid_cooling
+  tier: upstream
+relations:
+  subsidiaries:
+  - as_of: '2026-08-21'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 重要子公司
+    details:
+    - 重要子公司
+    edge: eb12bd73d589d
+    evidence_level: primary
+    id: org.定盈投資股份有限公司
+    name: 定盈投資股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.szs-group.com/
 tax_id: '35424073'
 incorporated: '1968-06-28'
 listed: '2007-12-31'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-15'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3376#e1:
+    locator: 主要經營業務
+    published_date: null
+    publisher: 新日興股份有限公司
+    quote_check: found
+    title: 公司基本資料
+    url: https://www.szs-group.com/page/company-information
+  tw.3376#e2:
+    locator: 主要產品及服務項目
+    published_date: null
+    publisher: 新日興股份有限公司
+    quote_check: found
+    title: 關於新日興
+    url: https://www.szs-group.com/page/about-company
+  tw.3376#e3:
+    locator: 金屬射出成型技術介紹
+    published_date: null
+    publisher: 新日興股份有限公司
+    quote_check: found
+    title: 金屬射出成型
+    url: https://www.szs-group.com/page/metal-injection-molding
+  tw.3376#e4:
+    locator: 快速生產、隨時交貨，提供客戶多樣化的選擇
+    published_date: null
+    publisher: 新日興股份有限公司
+    quote_check: found
+    title: 車銑製件
+    url: https://www.szs-group.com/page/lathe
+  tw.3376#e5:
+    locator: 台灣彈簧專業 OEM / ODM 大廠
+    published_date: null
+    publisher: 新日興股份有限公司
+    quote_check: found
+    title: 彈簧製件
+    url: https://www.szs-group.com/page/spring
+  tw.3376#e6:
+    locator: AI 伺服器液冷零組件
+    published_date: null
+    publisher: 新日興股份有限公司
+    quote_check: found
+    title: AI 伺服器與液冷
+    url: https://www.szs-group.com/page/AIServerLiquidCoolingApplications
+  tw.3376#e7:
+    locator: AI 伺服器組件與應用
+    published_date: null
+    publisher: 新日興股份有限公司
+    quote_check: found
+    title: AI 伺服器與液冷
+    url: https://www.szs-group.com/page/AIServerLiquidCoolingApplications
+  tw.3376#e8:
+    locator: 公告標題
+    published_date: '2026-08-21'
+    publisher: 新日興股份有限公司
+    quote_check: found
+    title: 代重要子公司定盈投資股份有限公司公告董事會推舉董事長事宜
+    url: https://www.szs-group.com/investor/news/detail/31ezIeBMm2WMesw2

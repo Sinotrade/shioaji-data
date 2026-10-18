@@ -8,7 +8,43 @@ industry:
   l0_code: '27'
   l0_name: 通信網路業
   l0_name_en: Communications and Internet
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.network
+  l2_name: 通信網路
+  l2_name_en: Communications & Networking
+  l3: net.switch
+  l3_name: 網通設備（交換器、路由器）
+  l3_name_en: Networking Equipment (Switches, Routers)
+chain: chain.networking
+primary_chain_position: downstream
+summary_short: 以網路安全硬體平台為主，研發製造網通設備與運算系統。
+summary_long: 瑞祺電通以網路通訊安全硬體平台為主要營收來源，2025年占營收75.09%，其他網通產品占24.91%。產品涵蓋SD-WAN、uCPE及vCPE等軟體定義網路平台，並提供雲端與AI運算伺服器、網路交換器及工業控制設備。其CAR-6050為用於資料中心、雲端及企業網路安全的2U機架式設備。樺漢科技為母公司；合併範圍包括澔楷科技、CASO及CASWELL AMERICAS等子公司，並透過海外投資子公司持有北京瑞祺電通科技有限公司。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_security
+  name: 網路通訊安全產品
+  period: '2025'
+  revenue_share_pct: 75.09
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 網路通訊其他產品
+  period: '2025'
+  revenue_share_pct: 24.91
+main_theme: theme.ai_server
+themes:
+- stage: assembly
+  theme: theme.ai_server
+  tier: downstream
+- stage: equipment
+  theme: theme.5g
+  tier: midstream
+- stage: it
+  theme: theme.data_center
+  tier: midstream
 relations:
   parents:
   - as_of: 2026-10
@@ -17,10 +53,96 @@ relations:
     detail: 官網列示之子公司
     details:
     - 官網列示之子公司
+    - 母公司
     edge: e126bb9fb9a2d
     evidence_level: primary
     id: tw.6414
     name: 樺漢
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 2
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: ee9f324e276c9
+    evidence_level: primary
+    id: org.apligo
+    name: APLIGO GmbH
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過凱斯威持有的間接子公司
+    details:
+    - 透過凱斯威持有的間接子公司
+    edge: e4de9f3dd1a72
+    evidence_level: primary
+    id: org.beijing-caswell
+    name: 北京瑞祺電通科技有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: e56ff645d5ee9
+    evidence_level: primary
+    id: org.caso
+    name: CASO, INC.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: e972dc61e4e35
+    evidence_level: primary
+    id: org.caswell-americas
+    name: CASWELL AMERICAS, INC.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司，財報簡稱凱斯威
+    details:
+    - 直接子公司，財報簡稱凱斯威
+    edge: e305555178370
+    evidence_level: primary
+    id: org.caswell-international-investment
+    name: CASWELL INTERNATIONAL INVESTMENT CO., LTD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: edbae6f555ae2
+    evidence_level: primary
+    id: org.highaim-technology
+    name: 澔楷科技股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -29,7 +151,112 @@ website: www.cas-well.com
 tax_id: '28488592'
 incorporated: '2007-04-19'
 listed: '2018-04-16'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-18'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6416#e1:
+    locator: 第64頁，營業比重；欄位依序為113年度及114年度
+    published_date: null
+    publisher: 瑞祺電通股份有限公司
+    quote_check: found
+    title: 瑞祺電通股份有限公司114年度年報
+    url: https://www.cas-well.com/wp-content/uploads/2026_AnnualReport_6416.pdf
+  tw.6416#e10:
+    locator: 第11頁，子公司表；投資公司為本公司
+    published_date: '2026-03-04'
+    publisher: 瑞祺電通股份有限公司
+    quote_check: found
+    title: 瑞祺電通股份有限公司及子公司114年度合併財務報告
+    url: https://www.cas-well.com/wp-content/uploads/FR_202504_6416.pdf
+  tw.6416#e11:
+    locator: 第12頁，子公司表；投資公司為本公司
+    published_date: '2026-03-04'
+    publisher: 瑞祺電通股份有限公司
+    quote_check: found
+    title: 瑞祺電通股份有限公司及子公司114年度合併財務報告
+    url: https://www.cas-well.com/wp-content/uploads/FR_202504_6416.pdf
+  tw.6416#e12:
+    locator: 第12頁，子公司表；投資公司為本公司
+    published_date: '2026-03-04'
+    publisher: 瑞祺電通股份有限公司
+    quote_check: found
+    title: 瑞祺電通股份有限公司及子公司114年度合併財務報告
+    url: https://www.cas-well.com/wp-content/uploads/FR_202504_6416.pdf
+  tw.6416#e13:
+    locator: 第12頁，子公司表；投資公司為本公司
+    published_date: '2026-03-04'
+    publisher: 瑞祺電通股份有限公司
+    quote_check: found
+    title: 瑞祺電通股份有限公司及子公司114年度合併財務報告
+    url: https://www.cas-well.com/wp-content/uploads/FR_202504_6416.pdf
+  tw.6416#e14:
+    locator: 第12頁，子公司表；投資公司為本公司
+    published_date: '2026-03-04'
+    publisher: 瑞祺電通股份有限公司
+    quote_check: found
+    title: 瑞祺電通股份有限公司及子公司114年度合併財務報告
+    url: https://www.cas-well.com/wp-content/uploads/FR_202504_6416.pdf
+  tw.6416#e15:
+    locator: 第12頁，子公司表；投資公司為凱斯威
+    published_date: '2026-03-04'
+    publisher: 瑞祺電通股份有限公司
+    quote_check: found
+    title: 瑞祺電通股份有限公司及子公司114年度合併財務報告
+    url: https://www.cas-well.com/wp-content/uploads/FR_202504_6416.pdf
+  tw.6416#e2:
+    locator: 第64頁，營業比重；欄位依序為113年度及114年度
+    published_date: null
+    publisher: 瑞祺電通股份有限公司
+    quote_check: found
+    title: 瑞祺電通股份有限公司114年度年報
+    url: https://www.cas-well.com/wp-content/uploads/2026_AnnualReport_6416.pdf
+  tw.6416#e3:
+    locator: 第65頁，網路安全與管理產品線
+    published_date: null
+    publisher: 瑞祺電通股份有限公司
+    quote_check: found
+    title: 瑞祺電通股份有限公司114年度年報
+    url: https://www.cas-well.com/wp-content/uploads/2026_AnnualReport_6416.pdf
+  tw.6416#e4:
+    locator: 第65頁，軟體定義網路產品線
+    published_date: null
+    publisher: 瑞祺電通股份有限公司
+    quote_check: found
+    title: 瑞祺電通股份有限公司114年度年報
+    url: https://www.cas-well.com/wp-content/uploads/2026_AnnualReport_6416.pdf
+  tw.6416#e5:
+    locator: 第1頁，致股東報告書之產品範圍
+    published_date: null
+    publisher: 瑞祺電通股份有限公司
+    quote_check: found
+    title: 瑞祺電通股份有限公司114年度年報
+    url: https://www.cas-well.com/wp-content/uploads/2026_AnnualReport_6416.pdf
+  tw.6416#e6:
+    locator: 第65頁，工業控制與自動化產品線
+    published_date: null
+    publisher: 瑞祺電通股份有限公司
+    quote_check: found
+    title: 瑞祺電通股份有限公司114年度年報
+    url: https://www.cas-well.com/wp-content/uploads/2026_AnnualReport_6416.pdf
+  tw.6416#e7:
+    locator: 產品新聞稿首段
+    published_date: '2026-09-01'
+    publisher: CASwell Inc.
+    quote_check: found
+    title: CASwell Introduces CAR-6050 2U Network Appliance Powered by AMD EPYC for High-Performance Data Center and Enterprise Security
+    url: https://www.cas-well.com/news-room/product-releases/caswell-introduces-car-6050-2u-network-appliance-powered-by-amd-epyc-for-high-performance-data-center-and-enterprise-security/
+  tw.6416#e8:
+    locator: 第44頁，附註七、關係人名稱及關係
+    published_date: '2026-03-04'
+    publisher: 瑞祺電通股份有限公司
+    quote_check: found
+    title: 瑞祺電通股份有限公司及子公司114年度合併財務報告
+    url: https://www.cas-well.com/wp-content/uploads/FR_202504_6416.pdf
+  tw.6416#e9:
+    locator: 第11至12頁，附註四、合併基礎之子公司表
+    published_date: '2026-03-04'
+    publisher: 瑞祺電通股份有限公司
+    quote_check: found
+    title: 瑞祺電通股份有限公司及子公司114年度合併財務報告
+    url: https://www.cas-well.com/wp-content/uploads/FR_202504_6416.pdf

@@ -8,12 +8,84 @@ industry:
   l0_code: '20'
   l0_name: 其他業
   l0_name_en: Others
-primary_chain_position: unknown
+  l1: materials
+  l1_name: 原物料
+  l1_name_en: Materials
+  l2: mat.other
+  l2_name: 其他原物料
+  l2_name_en: Other Materials
+  l3: matl.textile_fiber
+  l3_name: 紡織纖維與機能布料
+  l3_name_en: Textiles, Fibers & Functional Fabrics
+chain: chain.textile
+primary_chain_position: midstream
+summary_short: 製造與銷售TPU機能性布料、薄膜及醫療、戶外用充氣成品。
+summary_long: 八貫企業主要生產TPU機能性布料、薄膜及充氣式成品，產品涵蓋材料與成品組件。皮布料事業群生產機能性皮布料及TPU薄膜，部分貼合布料用於航空逃生滑梯與救生筏；成品組件產品包括醫療等級氣墊床及充氣露營睡墊。依2024年度年報，戶外應用占營收55.96%，為最大來源；救生與醫療分別占16.74%及16.53%，軍事工業占10.77%。上述營收組成按產品應用領域劃分，涵蓋戶外、醫療、救生與軍事工業四類。這些產品包括供後續加工使用的機能性材料，以及醫療與露營用充氣產品。
+segments:
+- evidence_ids:
+  - e6
+  id: outdoor
+  name: 戶外
+  period: '2024'
+  revenue_share_pct: 55.96
+- evidence_ids:
+  - e6
+  id: lifesaving
+  name: 救生
+  period: '2024'
+  revenue_share_pct: 16.74
+- evidence_ids:
+  - e6
+  id: medical
+  name: 醫療
+  period: '2024'
+  revenue_share_pct: 16.53
+- evidence_ids:
+  - e6
+  id: military
+  name: 軍事工業
+  period: '2024'
+  revenue_share_pct: 10.77
 website: http://www.cathayconsolidated.com
 tax_id: '12386676'
 incorporated: '1982-06-17'
 listed: '2020-11-24'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-18'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1342#e2:
+    locator: 皮布料事業群介紹首段
+    published_date: null
+    publisher: 八貫企業股份有限公司
+    quote_check: found
+    title: 皮布料事業群
+    url: https://www.cathayconsolidated.com/IN_Html/business-a.html
+  tw.1342#e3:
+    locator: 主要產品／醫療應用
+    published_date: null
+    publisher: 八貫企業股份有限公司
+    quote_check: found
+    title: 成品組件事業群
+    url: https://www.cathayconsolidated.com/IN_Html/business-b.html
+  tw.1342#e4:
+    locator: 主要產品／戶外用品
+    published_date: null
+    publisher: 八貫企業股份有限公司
+    quote_check: found
+    title: 成品組件事業群
+    url: https://www.cathayconsolidated.com/IN_Html/business-b.html
+  tw.1342#e5:
+    locator: 主要產品及特性／雙面貼合系列
+    published_date: null
+    publisher: 八貫企業股份有限公司
+    quote_check: found
+    title: 皮布料事業群
+    url: https://www.cathayconsolidated.com/IN_Html/business-a.html
+  tw.1342#e6:
+    locator: 印刷頁65，PDF第68頁，1.1.2 Business proportion；欄位依序為2023及2024
+    published_date: '2025-05-09'
+    publisher: 八貫企業股份有限公司
+    quote_check: found
+    title: Cathay Consolidated, Inc. Annual Report of 2024
+    url: https://www.cathayconsolidated.com/IMG/investor/investor_c/investor_c2025-7.pdf

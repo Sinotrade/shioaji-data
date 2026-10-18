@@ -35,6 +35,14 @@ segments:
   name: 22／28奈米晶圓代工（製程別細項）
   period: 2026-Q2
   revenue_share_pct: 37
+main_theme: theme.5g
+themes:
+- stage: components
+  theme: theme.5g
+  tier: upstream
+- stage: devices
+  theme: theme.silicon_photonics
+  tier: midstream
 relations:
   competitors:
   - as_of: '2026-01-28'
@@ -115,6 +123,20 @@ relations:
     share_basis: null
     share_pct: null
     weight: 2
+  - as_of: '2026-03-20'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 晶圓代工供應關係
+    details:
+    - 晶圓代工供應關係
+    edge: ea27d21e1ba9d
+    evidence_level: primary
+    id: us.INTC
+    name: Intel
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   - as_of: 2016-12
     confidence: ai_cross_checked
     counterparty_shares: []
@@ -144,6 +166,48 @@ relations:
     share_pct: null
     weight: 1
   partners:
+  - as_of: '2025-12-04'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 美國明尼蘇達8吋晶圓製造合作備忘錄
+    details:
+    - 美國明尼蘇達8吋晶圓製造合作備忘錄
+    edge: e04c209d3e456
+    evidence_level: primary
+    id: org.polar-semiconductor
+    name: Polar Semiconductor, LLC
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-07-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 矽光子設計與12吋晶圓量產合作
+    details:
+    - 矽光子設計與12吋晶圓量產合作
+    edge: eab3e132d3a95
+    evidence_level: primary
+    id: org.silith-technology
+    name: SILITH Technology
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司日月光半導體及矽品為測試封裝夥伴
+    details:
+    - 子公司日月光半導體及矽品為測試封裝夥伴
+    edge: ed0627522fa61
+    evidence_level: primary
+    id: tw.3711
+    name: 日月光投控
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   - as_of: '2021-09-03'
     confidence: ai_cross_checked
     counterparty_shares: []
@@ -154,6 +218,20 @@ relations:
     evidence_level: primary
     id: tw.6147
     name: 頎邦
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-01-25'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 美國製造的12奈米FinFET製程平台
+    details:
+    - 美國製造的12奈米FinFET製程平台
+    edge: e6f52329c5fab
+    evidence_level: primary
+    id: us.INTC
+    name: Intel
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -215,6 +293,20 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: '2026-03-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 聯電子公司聯穎光電
+    details:
+    - 聯電子公司聯穎光電
+    edge: eb81dead46595
+    evidence_level: primary
+    id: org.wavetek-microelectronics
+    name: Wavetek Microelectronics Corporation
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   suppliers:
   - as_of: '2025-12-03'
     confidence: ai_cross_checked
@@ -266,7 +358,7 @@ relations:
     details:
     - 再生晶圓
     edge: e5bf0ec2d90eb
-    evidence_level: primary
+    evidence_level: other
     id: tw.1560
     name: 中砂
     ranking_basis: unranked
@@ -280,7 +372,7 @@ relations:
     details:
     - 自動化設備及解決方案
     edge: e933fe3486ab4
-    evidence_level: primary
+    evidence_level: other
     id: tw.2464
     name: 盟立
     ranking_basis: unranked
@@ -322,7 +414,7 @@ relations:
     details:
     - 精密化學品供應
     edge: ea947f4fccd25
-    evidence_level: primary
+    evidence_level: other
     id: tw.4755
     name: 三福化
     ranking_basis: unranked
@@ -350,7 +442,7 @@ relations:
     details:
     - 電子材料業務客戶，2023年歷史媒體揭露
     edge: eb56cce370ed9
-    evidence_level: primary
+    evidence_level: other
     id: tw.5493
     name: 三聯
     ranking_basis: unranked
@@ -381,6 +473,20 @@ relations:
     evidence_level: primary
     id: us.ASML
     name: ASML Holding N.V.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2022-04-01'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 優良供應商合作（該來源未揭露個別供應品項）
+    details:
+    - 優良供應商合作（該來源未揭露個別供應品項）
+    edge: e734287de0b81
+    evidence_level: primary
+    id: us.LRCX
+    name: Lam Research
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -562,9 +668,23 @@ evidence:
     locator: 第1頁，Second Quarter 2026 Overview
     published_date: '2026-07-29'
     publisher: United Microelectronics Corporation
-    quote_check: unreachable
+    quote_check: found
     title: UMC Reports Second Quarter 2026 Results
     url: https://www.umc.com/upload/media/08_Investors/Financials/Quarterly_Results/Quarterly_2020-2029_English_pdf/2026/Q2_2026/UMC26Q2_report.pdf
+  tw.2303#e04:
+    locator: Leading Foundry Solutions，特殊製程服務市場
+    published_date: null
+    publisher: United Microelectronics Corporation
+    quote_check: unreachable
+    title: Overview — Leading Foundry Solutions
+    url: https://www.umc.com/en/About/about_overview
+  tw.2303#e05:
+    locator: 能源管理，嵌入式非揮發記憶體與MCU
+    published_date: null
+    publisher: 聯華電子股份有限公司
+    quote_check: found
+    title: 永續創新
+    url: https://www.umc.com/zh-TW/Html/sustainable-innovation
   tw.2303#e06:
     locator: 印刷頁28，Raw Materials
     published_date: '2026-04-30'
@@ -593,6 +713,48 @@ evidence:
     quote_check: found
     title: UMC Form 20-F for the Year Ended December 31, 2016
     url: https://www.umc.com/upload/media/08_Investors/Annual_Reports/Form-20_pdf_eng/Form_20-F_December_31_2016.pdf
+  tw.2303#e10:
+    locator: Jason Wang談合作範圍的引述
+    published_date: '2024-01-25'
+    publisher: Intel Corporation
+    quote_check: unreachable
+    title: Intel and UMC Announce New Foundry Collaboration
+    url: https://www.intel.com/content/www/us/en/newsroom/news/ifs-manufacturing-news-2024.html
+  tw.2303#e11:
+    locator: 首段，Intel供應商獎
+    published_date: '2026-03-20'
+    publisher: United Microelectronics Corporation
+    quote_check: found
+    title: UMC Earns Intel’s 2026 EPIC Supplier Award
+    url: https://www.umc.com/en/News/press_release/Content/events/20260320
+  tw.2303#e12:
+    locator: MOU合作範圍，第二段
+    published_date: '2025-12-04'
+    publisher: United Microelectronics Corporation
+    quote_check: unreachable
+    title: UMC and Polar Collaborate to Meet Growing Demand for U.S.-Made Chips
+    url: https://www.umc.com/en/News/press_release/Content/corporate/20251204
+  tw.2303#e13:
+    locator: 新聞重點，SILITH與聯電合作
+    published_date: '2026-07-14'
+    publisher: United Microelectronics Corporation
+    quote_check: found
+    title: SILITH and UMC Achieve Mass Production Milestone for Silicon Photonics
+    url: https://www.umc.com/en/News/press_release/Content/technology_related/20260714
+  tw.2303#e14:
+    locator: 首段，量產晶圓交付
+    published_date: '2026-07-14'
+    publisher: United Microelectronics Corporation
+    quote_check: found
+    title: SILITH and UMC Achieve Mass Production Milestone for Silicon Photonics
+    url: https://www.umc.com/en/News/press_release/Content/technology_related/20260714
+  tw.2303#e15:
+    locator: 首段，Wavetek與聯電關係
+    published_date: '2026-03-13'
+    publisher: United Microelectronics Corporation
+    quote_check: unreachable
+    title: HyperLight and UMC Collaborate with Jabil to Bring TFLN Photonics to Data-Center Scale Deployment
+    url: https://www.umc.com/en/News/press_release/Content/corporate/20260313
   tw.2303#e16:
     locator: 印刷頁38，Organizational Structure，主要子公司表；另列United Semiconductor Japan Co., Ltd.
     published_date: '2025-04-24'

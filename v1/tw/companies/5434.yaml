@@ -139,6 +139,34 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: '2024-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 純廢水與無塵室環境工程子公司
+    details:
+    - 純廢水與無塵室環境工程子公司
+    edge: ed4ccbb053e27
+    evidence_level: primary
+    id: org.jianyue-technology-engineering
+    name: 建越科技工程股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 永越先進機電暨水處理工程子公司
+    details:
+    - 永越先進機電暨水處理工程子公司
+    edge: e75577ba5eec8
+    evidence_level: primary
+    id: org.yong-yue-advanced-engineering
+    name: Yong Yue Advanced Engineering Sdn Bhd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   suppliers:
   - as_of: '2026-04-30'
     confidence: ai_cross_checked
@@ -190,6 +218,48 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  - amount: null
+    as_of: 2024-08
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 2024年8月投資設立永越先進
+    details:
+    - 2024年8月投資設立永越先進
+    edge: efdd5d5335ef5
+    event_date: null
+    events:
+    - amount: null
+      detail: 2024年8月投資設立永越先進
+      event_date: null
+    evidence_level: primary
+    id: org.yong-yue-advanced-engineering
+    name: Yong Yue Advanced Engineering Sdn Bhd.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣5,350,000千元
+    as_of: 2024-03
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 內湖洲子街辦公大樓取得，2024年完成過戶
+    details:
+    - 內湖洲子街辦公大樓取得，2024年完成過戶
+    edge: e4b9c607bb4aa
+    event_date: '2023-01-17'
+    events:
+    - amount: 新台幣5,350,000千元
+      detail: 內湖洲子街辦公大樓取得，2024年完成過戶
+      event_date: '2023-01-17'
+    evidence_level: primary
+    id: org.中國開發資產管理股份有限公司
+    name: 中國開發資產管理股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
 unresolved_mentions:
 - 記憶體廠商：候選僅為產業泛稱，未指定法人。
 - 半導體客戶：候選僅為產業泛稱，未指定法人。
@@ -217,6 +287,41 @@ evidence:
     quote_check: found
     title: 崇越旗下光宇工程重申未投資或得標東部風電標案
     url: https://www.topco-global.com/archives/129723
+  tw.5434#e11:
+    locator: 第11頁，子公司表，Yong Yue Advanced Engineering Sdn Bhd.列之說明
+    published_date: '2024-10-30'
+    publisher: 崇越科技股份有限公司
+    quote_check: found
+    title: 崇越科技股份有限公司及子公司民國一一三年及一一二年第三季合併財務報告
+    url: https://www.topco-global.com/wp-content/uploads/2024/10/202403_5434_AI1.pdf
+  tw.5434#e12:
+    locator: 第11頁，崇越科技直接投資之子公司名稱及業務性質表
+    published_date: '2024-10-30'
+    publisher: 崇越科技股份有限公司
+    quote_check: found
+    title: 崇越科技股份有限公司及子公司民國一一三年及一一二年第三季合併財務報告
+    url: https://www.topco-global.com/wp-content/uploads/2024/10/202403_5434_AI1.pdf
+  tw.5434#e13:
+    locator: 第55頁，附表三取得不動產，本公司土地及建築物列；金額單位千元
+    published_date: '2024-10-30'
+    publisher: 崇越科技股份有限公司
+    quote_check: found
+    title: 崇越科技股份有限公司及子公司民國一一三年及一一二年第三季合併財務報告
+    url: https://www.topco-global.com/wp-content/uploads/2024/10/202403_5434_AI1.pdf
+  tw.5434#e14:
+    locator: 第55頁，附表三，本公司土地及建築物之交易對象欄
+    published_date: '2024-10-30'
+    publisher: 崇越科技股份有限公司
+    quote_check: found
+    title: 崇越科技股份有限公司及子公司民國一一三年及一一二年第三季合併財務報告
+    url: https://www.topco-global.com/wp-content/uploads/2024/10/202403_5434_AI1.pdf
+  tw.5434#e15:
+    locator: 第19頁，不動產、廠房及設備，內湖洲子街辦公大樓購置說明
+    published_date: '2024-10-30'
+    publisher: 崇越科技股份有限公司
+    quote_check: found
+    title: 崇越科技股份有限公司及子公司民國一一三年及一一二年第三季合併財務報告
+    url: https://www.topco-global.com/wp-content/uploads/2024/10/202403_5434_AI1.pdf
   tw.5434#e16:
     locator: 企業沿革，2026年列；2026年10月14日直接讀取現行網頁
     published_date: null
@@ -273,3 +378,10 @@ evidence:
     quote_check: found
     title: 崇越卡位AI與先進製程，四大動能推動長線成長
     url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=af320b01-de2f-47bd-b956-aa28fc047f04
+  tw.5434#e9:
+    locator: 第10頁，列入合併財務報告之子公司表，建越科技列
+    published_date: '2024-10-30'
+    publisher: 崇越科技股份有限公司
+    quote_check: found
+    title: 崇越科技股份有限公司及子公司民國一一三年及一一二年第三季合併財務報告
+    url: https://www.topco-global.com/wp-content/uploads/2024/10/202403_5434_AI1.pdf

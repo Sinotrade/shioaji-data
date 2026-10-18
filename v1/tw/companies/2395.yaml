@@ -52,6 +52,20 @@ themes:
   tier: midstream
 relations:
   competitors:
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 嵌入式板卡與工業電腦市場
+    details:
+    - 嵌入式板卡與工業電腦市場
+    edge: edb81f1e358b9
+    evidence_level: primary
+    id: org.kontron
+    name: Kontron
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   - as_of: '2025-05-20'
     confidence: ai_cross_checked
     counterparty_shares: []
@@ -59,7 +73,7 @@ relations:
     details:
     - PAC可程式自動化控制器市場
     edge: e80dd68a03271
-    evidence_level: primary
+    evidence_level: other
     id: tw.3577
     name: 泓格
     ranking_basis: unranked
@@ -73,7 +87,7 @@ relations:
     details:
     - 工業級擴充式液晶顯示電腦
     edge: efcc914d7f8bb
-    evidence_level: primary
+    evidence_level: other
     id: tw.6570
     name: 維田
     ranking_basis: unranked
@@ -204,6 +218,21 @@ relations:
     evidence_level: primary
     id: org.aures-technologies
     name: AURES Technologies SA
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: '2026-09-02'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 記憶體採購
+    details:
+    - 記憶體採購
+    edge: e62b0d7f4e2b2
+    evidence_level: media
+    id: tw.5289
+    name: 宜鼎
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -419,7 +448,7 @@ evidence:
     locator: 印刷第147頁，PDF第151頁，Major products and business ratio
     published_date: null
     publisher: 研華股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: Advantech 2025 Annual Report
     url: https://advcloudfiles.advantech.com/investor/Shareholder-Annual-Report/115/1-en.pdf
   tw.2395#e10:
@@ -590,6 +619,13 @@ evidence:
     quote_check: found
     title: Advantech Launches ASR-D501 AI Companion Computer for Autonomous Drone Applications
     url: https://www.advantech.com/en-us/resources/news/asr-d501-grand-launch
+  tw.2395#e8:
+    locator: 印刷第155頁，PDF第159頁，Market share and competition landscape
+    published_date: null
+    publisher: 研華股份有限公司
+    quote_check: found
+    title: Advantech 2025 Annual Report
+    url: https://advcloudfiles.advantech.com/investor/Shareholder-Annual-Report/115/1-en.pdf
   tw.2395#e9:
     locator: PDF第82頁，附表五；金額單位新台幣仟元
     published_date: null

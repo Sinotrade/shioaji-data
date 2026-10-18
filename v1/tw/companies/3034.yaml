@@ -151,7 +151,7 @@ relations:
     edge: e00acf07e3e2f
     evidence_level: media
     id: kr.034220
-    name: LGD
+    name: LG Display
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -341,6 +341,20 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 半導體封裝測試服務
+    details:
+    - 半導體封裝測試服務
+    edge: e73e2a0e0395f
+    evidence_level: primary
+    id: tw.8150
+    name: 南茂
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   transactions:
   - amount: NT$2.334 billion
     as_of: '2024-10-04'
@@ -363,16 +377,20 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
-  - amount: null
-    as_of: '2025-04-29'
+  - amount: 美金18,000,000元
+    as_of: '2026-03-10'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 子公司股權投資公告
+    detail: 取得全資子公司股權
     details:
+    - 取得全資子公司股權
     - 子公司股權投資公告
     edge: eaa550fbbbb5f
-    event_date: '2024-02-29'
+    event_date: '2026-03-10'
     events:
+    - amount: 美金18,000,000元
+      detail: 取得全資子公司股權
+      event_date: '2026-03-10'
     - amount: null
       detail: 子公司股權投資公告
       event_date: '2025-04-29'
@@ -618,51 +636,58 @@ evidence:
     locator: 第1頁，第4項
     published_date: '2024-10-04'
     publisher: 聯詠科技股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: 'Supplemental Announcement: construction of Tainan RD center—Signing the construction contract'
     url: https://www.novatek.com.tw/upload/website/_20241004_Tainan%20RD%20center_e_24100417_339.pdf
   tw.3034#e20:
     locator: 第1頁，第4項
     published_date: '2026-07-31'
     publisher: 聯詠科技股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: Tongluo Science Park first-phased RD computing center—Signing the construction contract
     url: https://www.novatek.com.tw/upload/website/_20260731_The%20construction%20of%20Tongluo%20Science%20Park_e_26073115_673.pdf
   tw.3034#e21:
     locator: 第1頁，第4項
     published_date: '2026-08-18'
     publisher: 聯詠科技股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: Tongluo Science Park first-phased RD computing center—Signing the electromechanical contract
     url: https://www.novatek.com.tw/upload/website/_20260818_Tongluo%20Science%20Park_e_26081814_117.pdf
   tw.3034#e22:
     locator: 第1頁，Subject
     published_date: '2026-08-04'
     publisher: 聯詠科技股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: Investment in TGVest Asia Partners III (Taiwan), L.P.
     url: https://www.novatek.com.tw/upload/website/_20260804_The%20board%20of%20directors%20approved%20the%20investment%20in%20TGVest%20Asia%20Partners%20III%20(Taiwan),%20L.P._e_26080508_819.pdf
   tw.3034#e23:
     locator: 第1頁，第3項交易金額；第2頁第9項付款條件
     published_date: '2026-08-04'
     publisher: 聯詠科技股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: Investment in TGVest Asia Partners III (Taiwan), L.P.
     url: https://www.novatek.com.tw/upload/website/_20260804_The%20board%20of%20directors%20approved%20the%20investment%20in%20TGVest%20Asia%20Partners%20III%20(Taiwan),%20L.P._e_26080508_819.pdf
   tw.3034#e24:
     locator: 第1頁，Subject及第3項交易金額
     published_date: '2026-08-04'
     publisher: 聯詠科技股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: Investment in Oceanus Growth Fund, L.P.
     url: https://www.novatek.com.tw/upload/website/_20260804_The%20board%20of%20directors%20approved%20the%20investment%20in%20Oceanus%20Growth%20Fund,%20L.P._e_26080508_646.pdf
   tw.3034#e25:
     locator: 第2頁，第9項交易條件
     published_date: '2026-08-04'
     publisher: 聯詠科技股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: Investment in Oceanus Growth Fund, L.P.
     url: https://www.novatek.com.tw/upload/website/_20260804_The%20board%20of%20directors%20approved%20the%20investment%20in%20Oceanus%20Growth%20Fund,%20L.P._e_26080508_646.pdf
+  tw.3034#e26:
+    locator: 公告主旨、第2項事實期間、第5項交易金額
+    published_date: '2026-03-10'
+    publisher: 聯詠科技重大訊息；Goodinfo轉載
+    quote_check: unreachable
+    title: 公告聯詠取得子公司Novatek International(BVI) Ltd.股權
+    url: https://goodinfo.tw/tw/StockAnnounceDetail.asp?CLAIM_TIME=2026%2F03%2F10+18%3A15%3A56&STOCK_ID=3034&SUBJECT=%E5%85%AC%E5%91%8A%E6%9C%AC%E5%85%AC%E5%8F%B8%E5%8F%96%E5%BE%97%E5%AD%90%E5%85%AC%E5%8F%B8Novatek+International%28BVI%29+Ltd.%E8%82%A1%E6%AC%8A
   tw.3034#e27:
     locator: 29 Feb.，BVI股份取得公告索引
     published_date: '2024-02-29'

@@ -274,6 +274,27 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  - amount: 新台幣47,251仟元
+    as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 2024年度取得普通股
+    details:
+    - 2024年度取得普通股
+    edge: e2ffe23c8e340
+    event_date: null
+    events:
+    - amount: 新台幣47,251仟元
+      detail: 2024年度取得普通股
+      event_date: null
+    evidence_level: primary
+    id: org.xinhe-energy-development
+    name: 新和能源開發股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
   - amount: 新台幣733,950仟元（含稅）
     as_of: '2024-11-08'
     confidence: ai_cross_checked
@@ -296,12 +317,13 @@ relations:
     share_pct: null
     weight: 1
   - amount: 新台幣300,000,000元
-    as_of: '2025-02-25'
+    as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
     detail: 董事會決議參與現金增資
     details:
     - 董事會決議參與現金增資
+    - 2025年度另行取得普通股
     - 實際預付股權投資款及增資完成
     edge: eba5cbbf5eefe
     event_date: '2024-11-08'
@@ -312,6 +334,9 @@ relations:
     - amount: 新台幣300,000,000元
       detail: 董事會決議參與現金增資
       event_date: '2024-11-08'
+    - amount: 新台幣26,705仟元
+      detail: 2025年度另行取得普通股
+      event_date: null
     evidence_level: primary
     id: org.zhongwei-energy
     name: 眾意能源股份有限公司
@@ -373,14 +398,14 @@ evidence:
     locator: 第31頁，子公司所有權權益及表決權百分比；同頁列正式名稱
     published_date: null
     publisher: 華城電機股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: 114年度個體財務報告
     url: https://www.fortune.com.tw/WEB_Manage/attached/file/financial/tw/20260313/20254_%E8%8F%AF%E5%9F%8E%E9%9B%BB%E6%A9%9F114%E5%B9%B4%E5%BA%A6%E5%80%8B%E9%AB%94%E8%B2%A1%E5%A0%B1%E7%94%A8%E5%8D%B0%E7%89%88Final.pdf
   tw.1519#e15:
     locator: 第31頁，子公司所有權權益及表決權百分比；第一數值為2025年底
     published_date: null
     publisher: 華城電機股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: 114年度個體財務報告
     url: https://www.fortune.com.tw/WEB_Manage/attached/file/financial/tw/20260313/20254_%E8%8F%AF%E5%9F%8E%E9%9B%BB%E6%A9%9F114%E5%B9%B4%E5%BA%A6%E5%80%8B%E9%AB%94%E8%B2%A1%E5%A0%B1%E7%94%A8%E5%8D%B0%E7%89%88Final.pdf
   tw.1519#e16:
@@ -415,7 +440,7 @@ evidence:
     locator: 第38頁，附註十七；第70頁附表二註2列本公司投資日期及完成日期
     published_date: null
     publisher: 華城電機股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: 113年度合併財務報告
     url: https://www.fortune.com.tw/WEB_Manage/attached/file/financial/tw/20250314/20244_%E8%8F%AF%E5%9F%8E%E9%9B%BB%E6%A9%9F113Q4-IFRS%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-S.pdf
   tw.1519#e21:
@@ -425,39 +450,53 @@ evidence:
     quote_check: unreachable
     title: 114年度合併財務報告
     url: https://www.fortune.com.tw/WEB_Manage/attached/file/financial/tw/20260313/20254_%E8%8F%AF%E5%9F%8E%E9%9B%BB%E6%A9%9F114%E5%B9%B4%E5%BA%A6%E5%90%88%E4BD%B5%E8%B2%A1%E5%A0%B1%E7%94%A8%E5%8D%B0%E7%89%88Final.pdf
+  tw.1519#e22:
+    locator: 第63頁，附註三二（八），新和能源開發公司取得金融資產
+    published_date: null
+    publisher: 華城電機股份有限公司
+    quote_check: found
+    title: 113年度合併財務報告
+    url: https://www.fortune.com.tw/WEB_Manage/attached/file/financial/tw/20250314/20244_%E8%8F%AF%E5%9F%8E%E9%9B%BB%E6%A9%9F113Q4-IFRS%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-S.pdf
+  tw.1519#e23:
+    locator: 第64頁，附註三三（八），眾崴能源取得金融資產；第29頁載明正式名稱及眾意能源更名
+    published_date: null
+    publisher: 華城電機股份有限公司
+    quote_check: found
+    title: 114年度合併財務報告
+    url: https://www.fortune.com.tw/WEB_Manage/attached/file/financial/tw/20260313/20254_%E8%8F%AF%E5%9F%8E%E9%9B%BB%E6%A9%9F114%E5%B9%B4%E5%BA%A6%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1%E7%94%A8%E5%8D%B0%E7%89%88Final.pdf
   tw.1519#e24:
     locator: 第32頁，附註十二，華城匯直接及間接持股列與註1設立日期
     published_date: null
     publisher: 華城電機股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: 114年度合併財務報告
     url: https://www.fortune.com.tw/WEB_Manage/attached/file/financial/tw/20260313/20254_%E8%8F%AF%E5%9F%8E%E9%9B%BB%E6%A9%9F114%E5%B9%B4%E5%BA%A6%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1%E7%94%A8%E5%8D%B0%E7%89%88Final.pdf
   tw.1519#e25:
     locator: 第32頁，附註十二，華曜能源持股列與註2設立日期
     published_date: null
     publisher: 華城電機股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: 114年度合併財務報告
     url: https://www.fortune.com.tw/WEB_Manage/attached/file/financial/tw/20260313/20254_%E8%8F%AF%E5%9F%8E%E9%9B%BB%E6%A9%9F114%E5%B9%B4%E5%BA%A6%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1%E7%94%A8%E5%8D%B0%E7%89%88Final.pdf
   tw.1519#e3:
     locator: 第68頁，附註三八，114年度部門收入欄
     published_date: null
     publisher: 華城電機股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: 114年度合併財務報告
     url: https://www.fortune.com.tw/WEB_Manage/attached/file/financial/tw/20260313/20254_%E8%8F%AF%E5%9F%8E%E9%9B%BB%E6%A9%9F114%E5%B9%B4%E5%BA%A6%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1%E7%94%A8%E5%8D%B0%E7%89%88Final.pdf
   tw.1519#e4:
     locator: 第68頁，附註三八，114年度部門收入欄；單位新台幣仟元
     published_date: null
     publisher: 華城電機股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: 114年度合併財務報告
     url: https://www.fortune.com.tw/WEB_Manage/attached/file/financial/tw/20260313/20254_%E8%8F%AF%E5%9F%8E%E9%9B%BB%E6%A9%9F114%E5%B9%B4%E5%BA%A6%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1%E7%94%A8%E5%8D%B0%E7%89%88Final.pdf
   tw.1519#e6:
     locator: 第68頁，附註三八，部門業務定義
     published_date: null
     publisher: 華城電機股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: 114年度合併財務報告
     url: https://www.fortune.com.tw/WEB_Manage/attached/file/financial/tw/20260313/20254_%E8%8F%AF%E5%9F%8E%E9%9B%BB%E6%A9%9F114%E5%B9%B4%E5%BA%A6%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1%E7%94%A8%E5%8D%B0%E7%89%88Final.pdf
   tw.1519#e7:

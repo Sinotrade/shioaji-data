@@ -48,6 +48,21 @@ themes:
   tier: downstream
 relations:
   customers:
+  - as_of: 2022-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 最終組裝
+    details:
+    - 最終組裝
+    - 2022年最終組裝
+    edge: ee945935a3c5f
+    evidence_level: primary
+    id: tw.2353
+    name: 宏碁
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 2
   - as_of: 2026-02
     confidence: ai_cross_checked
     counterparty_shares: []
@@ -119,6 +134,20 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: '2026-08-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 量子電腦硬體基礎設施共同開發
+    details:
+    - 量子電腦硬體基礎設施共同開發
+    edge: e9d2889bd9e89
+    evidence_level: primary
+    id: us.QNT
+    name: Quantinuum
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
   - as_of: '2026-08-13'
     confidence: ai_cross_checked
@@ -162,6 +191,20 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 母公司及最終控制者
+    details:
+    - 母公司及最終控制者
+    edge: e68db184fbfbc
+    evidence_level: primary
+    id: tw.6188
+    name: 廣明
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   suppliers:
   - as_of: '2025-09-23'
     confidence: ai_cross_checked
@@ -200,7 +243,7 @@ relations:
     edge: e38f134fa967c
     evidence_level: primary
     id: kr.034220
-    name: LGD
+    name: LG Display
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -452,6 +495,27 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  - amount: 約美金3,500萬元
+    as_of: '2025-04-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 購入Rigetti普通股
+    details:
+    - 購入Rigetti普通股
+    edge: e95feeb30c9b0
+    event_date: '2025-04-30'
+    events:
+    - amount: 約美金3,500萬元
+      detail: 購入Rigetti普通股
+      event_date: '2025-04-30'
+    evidence_level: primary
+    id: us.RGTI
+    name: Rigetti Computing, Inc.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
 unresolved_mentions:
 - 公開說明書所稱全球四大CSP客戶，未具名。
 - 法說所稱NeoCloud、CSP及ASIC專案客戶，未具名。
@@ -465,6 +529,13 @@ as_of: '2026-10-14'
 confidence: ai_cross_checked
 has_research: true
 evidence:
+  tw.2382#e.acer:
+    locator: 第1頁限定2022年生產供應商；第2頁Final Assembly Suppliers
+    published_date: null
+    publisher: Acer
+    quote_check: unreachable
+    title: Acer Supplier
+    url: https://www.acer.com/sustainability/uploads/files/shares/responsible-supply-chain/supplier-list.pdf
   tw.2382#e.achi_fund:
     locator: 第1、2、4至6項：基金名稱、核決日期、投資金額與Capital Call
     published_date: '2026-08-13'
@@ -598,6 +669,13 @@ evidence:
     quote_check: found
     title: 廣達公告參與Quantinuum Inc.特別股現金增資案
     url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=19652f6b-ebfc-49dc-a17c-951c39318433
+  tw.2382#e.quantinuum_partner:
+    locator: 共同開發協議首段及合作範圍段落
+    published_date: '2026-08-13'
+    publisher: Quantinuum
+    quote_check: unreachable
+    title: Quanta Computer and Quantinuum Partner to Build an Industrial Foundation for Large-Scale Quantum Computing
+    url: https://ir.quantinuum.com/news-releases/news-release-details/quanta-computer-and-quantinuum-partner-build-industrial
   tw.2382#e.rigetti_agreement:
     locator: 2025年2月27日生效契約；首段締約主體及Background C
     published_date: null
@@ -605,6 +683,13 @@ evidence:
     quote_check: unreachable
     title: Rigetti and Quanta Collaboration Agreement, Exhibit 10.1
     url: https://www.sec.gov/Archives/edgar/data/1838359/000110465925018599/tm257789d1_ex10-1.htm
+  tw.2382#e.rigetti_investment:
+    locator: 首段投資完成公告
+    published_date: '2025-04-30'
+    publisher: Rigetti Computing, Inc.
+    quote_check: unreachable
+    title: Rigetti Computing Closes Investment by Quanta Computer
+    url: https://investors.rigetti.com/news-releases/news-release-details/rigetti-computing-closes-investment-quanta-computer
   tw.2382#e.server_share:
     locator: 營收結構段落
     published_date: '2026-08-13'

@@ -40,14 +40,14 @@ segments:
   name: 其他
   period: '2025'
   revenue_share_pct: 2.15
-main_theme: theme.cpo
+main_theme: theme.silicon_photonics
 themes:
-- stage: components
-  theme: theme.cpo
-  tier: upstream
 - stage: devices
   theme: theme.silicon_photonics
   tier: midstream
+- stage: components
+  theme: theme.cpo
+  tier: upstream
 relations:
   competitors:
   - as_of: '2022-05-25'

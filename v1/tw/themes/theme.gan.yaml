@@ -22,6 +22,14 @@ stages:
   tier: downstream
   name_en: Applications
 members:
+- id: tw.2301
+  stage: application
+  tier: downstream
+  detail: GaN器件應用於電源管理
+  as_of: '2025-05-20'
+  evidence:
+  - tw.2301#e_sic_gan
+  confidence: ai_cross_checked
 - id: tw.2340
   stage: devices
   tier: midstream
@@ -39,6 +47,14 @@ members:
   evidence:
   - tw.2393#e10
   confidence: ai_cross_checked
+- id: tw.2420
+  stage: application
+  tier: downstream
+  detail: GaN應用於鈦金級伺服器電源
+  as_of: 2026-06
+  evidence:
+  - tw.2420#e6
+  confidence: ai_cross_checked
 - id: tw.2426
   stage: devices
   tier: midstream
@@ -47,6 +63,30 @@ members:
   evidence:
   - tw.2426#e8
   confidence: ai_cross_checked
+- id: tw.2436
+  stage: application
+  tier: downstream
+  detail: GaN快充電源SiP應用
+  as_of: '2024-04-24'
+  evidence:
+  - tw.2436#e6
+  confidence: ai_cross_checked
+- id: tw.2455
+  stage: substrate
+  tier: upstream
+  detail: 氮化鎵磊晶
+  as_of: '2026-06-08'
+  evidence:
+  - tw.2455#e2
+  confidence: ai_cross_checked
+- id: tw.2457
+  stage: application
+  tier: downstream
+  detail: GaN技術電源與充電應用
+  as_of: '2026-10-18'
+  evidence:
+  - tw.2457#e5
+  confidence: ai_cross_checked
 - id: tw.3016
   stage: substrate
   tier: upstream
@@ -54,6 +94,14 @@ members:
   as_of: '2026-10-15'
   evidence:
   - tw.3016#e6
+  confidence: ai_cross_checked
+- id: tw.3078
+  stage: application
+  tier: downstream
+  detail: GaN PD充電器應用
+  as_of: '2026-10-18'
+  evidence:
+  - tw.3078#e5
   confidence: ai_cross_checked
 - id: tw.3105
   stage: devices
@@ -103,6 +151,23 @@ members:
   as_of: '2026-10-14'
   evidence:
   - tw.4991#e17
+  confidence: ai_cross_checked
+- id: tw.5222
+  stage: devices
+  tier: midstream
+  detail: 氮化鎵HEMT製程與元件製造
+  as_of: '2025-12-24'
+  evidence:
+  - tw.5222#e2
+  - tw.5222#e8
+  confidence: ai_cross_checked
+- id: tw.5285
+  stage: application
+  tier: downstream
+  detail: GaN功率元件封裝用導線架開發
+  as_of: '2026-04-30'
+  evidence:
+  - tw.5285#e6
   confidence: ai_cross_checked
 - id: tw.5347
   stage: devices
@@ -193,4 +258,4 @@ members:
   evidence:
   - tw.8261#e6
   confidence: ai_cross_checked
-as_of: '2026-10-15'
+as_of: '2026-10-18'

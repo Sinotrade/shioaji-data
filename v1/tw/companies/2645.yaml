@@ -41,12 +41,32 @@ themes:
   theme: theme.drone
   tier: downstream
 relations:
+  customers:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares:
+    - as_of: '2025-12-31'
+      basis: purchases
+      of: tw.2618
+      pct: 3.78
+    detail: 航太維修等關係人進貨
+    details:
+    - 航太維修等關係人進貨
+    edge: e8bcc1910c869
+    evidence_level: primary
+    id: tw.2618
+    name: 長榮航
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   parents:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 母公司及最終控制者
+    detail: 合併子公司
     details:
+    - 合併子公司
     - 母公司及最終控制者
     edge: ece95e2f1c3e0
     evidence_level: primary
@@ -55,7 +75,7 @@ relations:
     ranking_basis: unranked
     share_basis: null
     share_pct: null
-    weight: 1
+    weight: 2
 website: https://www.egat.com.tw/
 tax_id: '16097775'
 incorporated: '1997-11-10'
@@ -68,28 +88,28 @@ evidence:
     locator: 印刷頁38，附註十四、部門資訊
     published_date: '2026-08-11'
     publisher: 長榮航太科技股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: 長榮航太科技股份有限公司民國115年及114年第二季個別財務報告
     url: https://cdn.financialreports.eu/financialreports/media/filings/52179/2026/RNS/52179_rns_2026-08-21_633d6490-56d5-4985-8d08-55939b285f6b.pdf
   tw.2645#e2:
     locator: 印刷頁38，附註十四、部門資訊
     published_date: '2026-08-11'
     publisher: 長榮航太科技股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: 長榮航太科技股份有限公司民國115年及114年第二季個別財務報告
     url: https://cdn.financialreports.eu/financialreports/media/filings/52179/2026/RNS/52179_rns_2026-08-21_633d6490-56d5-4985-8d08-55939b285f6b.pdf
   tw.2645#e3:
     locator: 印刷頁39，115年1月至6月部門資訊；金額單位為新台幣千元
     published_date: '2026-08-11'
     publisher: 長榮航太科技股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: 長榮航太科技股份有限公司民國115年及114年第二季個別財務報告
     url: https://cdn.financialreports.eu/financialreports/media/filings/52179/2026/RNS/52179_rns_2026-08-21_633d6490-56d5-4985-8d08-55939b285f6b.pdf
   tw.2645#e4:
     locator: 印刷頁31，附註七（一）母公司與最終控制者
     published_date: '2026-08-11'
     publisher: 長榮航太科技股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: 長榮航太科技股份有限公司民國115年及114年第二季個別財務報告
     url: https://cdn.financialreports.eu/financialreports/media/filings/52179/2026/RNS/52179_rns_2026-08-21_633d6490-56d5-4985-8d08-55939b285f6b.pdf
   tw.2645#e5:

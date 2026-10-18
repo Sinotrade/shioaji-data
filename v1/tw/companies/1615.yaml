@@ -8,7 +8,66 @@ industry:
   l0_code: '06'
   l0_name: 電器電纜
   l0_name_en: Electrical and Cable
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.electrical
+  l2_name: 電機與重電
+  l2_name_en: Electrical Equipment & Power Grid
+  l3: elec.wire_cable
+  l3_name: 電線電纜
+  l3_name_en: Wires & Cables
+primary_chain_position: midstream
+summary_short: 製造電力電纜、通訊電纜、電子線及裸銅線，收入以電線電纜為主。
+summary_long: 大山主要生產電線電纜，產品包括電力電纜、通訊電纜、電子線及裸銅線。依2025年度合併財報，電線電纜為最大收入來源，另有高壓接續材料、銅板、租賃、工程及其他收入。依其自行揭露的電力電纜產品，研究分類將其對應至重電與電網題材的材料階段，產業分類歸入電線電纜。集團旗下的大鏵投資從事投資業，昕邑建設從事建設業；截至2025年底，兩者均為大山直接持股百分之百的子公司。
+segments:
+- evidence_ids:
+  - e2
+  - e3
+  id: seg_wire_cable
+  name: 電線電纜
+  period: '2025'
+  revenue_share_pct: 91.3
+- evidence_ids:
+  - e2
+  - e3
+  id: seg_hv_joint_materials
+  name: 高壓接續材料
+  period: '2025'
+  revenue_share_pct: 3.69
+- evidence_ids:
+  - e2
+  - e3
+  id: seg_copper_plate
+  name: 銅板
+  period: '2025'
+  revenue_share_pct: 1.36
+- evidence_ids:
+  - e2
+  - e3
+  id: seg_rental
+  name: 租賃收入
+  period: '2025'
+  revenue_share_pct: 0.05
+- evidence_ids:
+  - e2
+  - e3
+  id: seg_engineering
+  name: 工程收入
+  period: '2025'
+  revenue_share_pct: 0.52
+- evidence_ids:
+  - e2
+  - e3
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 3.07
+main_theme: theme.power_grid
+themes:
+- stage: materials
+  theme: theme.power_grid
+  tier: upstream
 relations:
   customers:
   - as_of: '2025-12-31'
@@ -25,11 +84,75 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的投資業子公司
+    details:
+    - 直接持股100%的投資業子公司
+    edge: e6b1902e0f189
+    evidence_level: primary
+    id: org.大鏵投資股份有限公司
+    name: 大鏵投資股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的建設業子公司
+    details:
+    - 直接持股100%的建設業子公司
+    edge: efe57968e7cd9
+    evidence_level: primary
+    id: org.昕邑建設股份有限公司
+    name: 昕邑建設股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.dahsan.com.tw
 tax_id: '64829434'
 incorporated: '1974-04-15'
 listed: '2000-03-30'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-18'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1615#e1:
+    locator: 首頁「產品多樣化」段落
+    published_date: null
+    publisher: 大山電線電纜股份有限公司
+    quote_check: found
+    title: 大山電線電纜股份有限公司官網
+    url: https://www.dahsan.com.tw/
+  tw.1615#e2:
+    locator: 第38頁，附註六（十七）1「收入之細分」，主要產品／服務線
+    published_date: '2026-03-13'
+    publisher: 大山電線電纜股份有限公司；FinancialFilings文件鏡像
+    quote_check: unreachable
+    title: 大山電線電纜股份有限公司及子公司民國一一四年度及一一三年度合併財務報告
+    url: https://financialfilings.com/filings/dah-san-1615/annual-report/2026/33411948/
+  tw.1615#e3:
+    locator: 第38頁，附註六（十七）1「收入之細分」114年度欄；依序為電線電纜、高壓接續材料、銅板、租賃收入、工程收入、其他及合計，單位新台幣千元
+    published_date: '2026-03-13'
+    publisher: 大山電線電纜股份有限公司；FinancialFilings文件鏡像
+    quote_check: unreachable
+    title: 大山電線電纜股份有限公司及子公司民國一一四年度及一一三年度合併財務報告
+    url: https://financialfilings.com/filings/dah-san-1615/annual-report/2026/33411948/
+  tw.1615#e4:
+    locator: 第11頁，附註四（三）「列入合併財務報告之子公司」表；投資公司為本公司，114.12.31兩家公司所持股權百分比均為100%，業務依序為投資業及建設業
+    published_date: '2026-03-13'
+    publisher: 大山電線電纜股份有限公司；FinancialFilings文件鏡像
+    quote_check: unreachable
+    title: 大山電線電纜股份有限公司及子公司民國一一四年度及一一三年度合併財務報告
+    url: https://financialfilings.com/filings/dah-san-1615/annual-report/2026/33411948/
+  tw.1615#e5:
+    locator: 第11頁，附註四（三）合併基礎，子公司清單引言
+    published_date: '2026-03-13'
+    publisher: 大山電線電纜股份有限公司；FinancialFilings文件鏡像
+    quote_check: unreachable
+    title: 大山電線電纜股份有限公司及子公司民國一一四年度及一一三年度合併財務報告
+    url: https://financialfilings.com/filings/dah-san-1615/annual-report/2026/33411948/

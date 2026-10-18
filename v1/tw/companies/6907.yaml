@@ -8,13 +8,177 @@ industry:
   l0_code: '24'
   l0_name: 半導體業
   l0_name_en: Semiconductor
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.semi
+  l2_name: 半導體
+  l2_name_en: Semiconductors
+  l3: semi.ic_design
+  l3_name: IC 設計
+  l3_name_en: IC Design
+chain: chain.semiconductor
+primary_chain_position: upstream
+summary_short: 研發設計與銷售32位元微控制器，應用於智慧設備、馬達控制及車載電子。
+summary_long: 雅特力-KY以32位元微控制器的研發設計與銷售為主，2025年微控制器占營收99.94%。產品涵蓋高效能、馬達控制與車規級MCU，其中AT32F435主頻最高288MHz，AT32M416可用於機器人驅動與控制。2026年第二季應用營收以AIoT占25%最高，智慧運輸占19%，智慧家居占18%，智慧工業與智慧商業各占16%，其他占6%。截至2026年3月，台灣雅特力及重慶雅特力均為持股100%的子公司。
+segments:
+- evidence_ids:
+  - e3
+  id: aiot
+  name: AIoT
+  period: 2026-Q2
+  revenue_share_pct: 25
+- evidence_ids:
+  - e3
+  id: smart_mobility
+  name: 智慧運輸
+  period: 2026-Q2
+  revenue_share_pct: 19
+- evidence_ids:
+  - e3
+  id: smart_home
+  name: 智慧家居
+  period: 2026-Q2
+  revenue_share_pct: 18
+- evidence_ids:
+  - e3
+  id: smart_industrial
+  name: 智慧工業
+  period: 2026-Q2
+  revenue_share_pct: 16
+- evidence_ids:
+  - e3
+  id: smart_business
+  name: 智慧商業
+  period: 2026-Q2
+  revenue_share_pct: 16
+- evidence_ids:
+  - e3
+  id: others
+  name: 其他應用
+  period: 2026-Q2
+  revenue_share_pct: 6
+main_theme: theme.robotics
+themes:
+- stage: control
+  theme: theme.robotics
+  tier: midstream
+- stage: components
+  theme: theme.drone
+  tier: upstream
+relations:
+  subsidiaries:
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股100%的重慶子公司
+    details:
+    - 持股100%的重慶子公司
+    edge: ee62b0f7d8afe
+    evidence_level: primary
+    id: org.artery-technology-chongqing
+    name: 雅特力科技(重慶)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股100%的台灣子公司
+    details:
+    - 持股100%的台灣子公司
+    edge: e8d50fe3fcb65
+    evidence_level: primary
+    id: org.artery-technology-taiwan
+    name: 雅特力科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.arterychip.com/tw/
 tax_id: '61215582'
 incorporated: '2016-03-15'
 listed: '2026-01-29'
 foreign_registration: KY 開曼群島
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-18'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6907#e1:
+    locator: 關於雅特力，首段
+    published_date: null
+    publisher: 雅特力科技
+    quote_check: found
+    title: 公司簡介
+    url: https://www.arterychip.com/tw/about/index.jsp
+  tw.6907#e10:
+    locator: 印刷頁81、PDF第86頁，關係企業圖及持股表；重慶雅特力正式名稱見圖及附註
+    published_date: '2026-04-02'
+    publisher: 雅特力科技(開曼)股份有限公司
+    quote_check: found
+    title: 2025年度年報
+    url: https://www.arterychip.com/download/AnnualReport/2025AnnualReport_tw.pdf
+  tw.6907#e11:
+    locator: 第3頁，2025年2月18日決議第六案；確認台灣子公司全名
+    published_date: null
+    publisher: 雅特力科技
+    quote_check: found
+    title: 審計委員會組織與運作
+    url: https://arterychip.com/download/AnnualReport/AuditCommittee/2.AuditCommittee_Operation_20250623.pdf
+  tw.6907#e2:
+    locator: 印刷頁57、PDF第62頁，業務內容及營業比重表；依序為2024年金額、占比及2025年金額、占比
+    published_date: '2026-04-02'
+    publisher: 雅特力科技(開曼)股份有限公司
+    quote_check: found
+    title: 2025年度年報
+    url: https://www.arterychip.com/download/AnnualReport/2025AnnualReport_tw.pdf
+  tw.6907#e3:
+    locator: 第10頁，季度營收分析－應用佔比；外圈為2026年第二季，依圖例對應AIoT、智慧運輸、智慧家居、智慧工業、智慧商業及其他
+    published_date: '2026-09-10'
+    publisher: 雅特力科技(開曼)股份有限公司
+    quote_check: found
+    title: 2026年第二季財務及營運報告
+    url: https://www.arterychip.com/download/AnnualReport/InvestorConference/2026Q2_FinancialResult_BusinessUpdate_CH_01.pdf
+  tw.6907#e4:
+    locator: 主要特性，效能／性能
+    published_date: null
+    publisher: 雅特力科技
+    quote_check: found
+    title: AT32F435系列
+    url: https://www.arterychip.com/tw/product/AT32F435.jsp
+  tw.6907#e5:
+    locator: 產品介紹首段
+    published_date: null
+    publisher: 雅特力科技
+    quote_check: found
+    title: AT32M416系列
+    url: https://www.arterychip.com/tw/product/AT32M416.jsp
+  tw.6907#e6:
+    locator: 產品介紹第二段
+    published_date: null
+    publisher: 雅特力科技
+    quote_check: found
+    title: AT32A423系列
+    url: https://www.arterychip.com/tw/product/AT32A423.jsp
+  tw.6907#e7:
+    locator: AT32M416與AT32F456機器人應用段落
+    published_date: '2025-11-07'
+    publisher: 雅特力科技
+    quote_check: found
+    title: 喜訊！雅特力科技榮獲“2025年度優秀電機控制技術產品獎”
+    url: https://www.arterychip.com/tw/news/251107_cht.jsp
+  tw.6907#e8:
+    locator: 第20頁，MCU在無人機中的應用，FMU飛行控制器欄
+    published_date: '2025-12-30'
+    publisher: 雅特力科技(開曼)股份有限公司
+    quote_check: found
+    title: 上櫃前業績發表會簡報
+    url: https://www.arterychip.com/download/AnnualReport/InvestorConference/20251230_IPO_PPT.pdf
+  tw.6907#e9:
+    locator: 印刷頁81、PDF第86頁，公司與關係企業間相互持股表；兩列均列示子公司及100%持股
+    published_date: '2026-04-02'
+    publisher: 雅特力科技(開曼)股份有限公司
+    quote_check: found
+    title: 2025年度年報
+    url: https://www.arterychip.com/download/AnnualReport/2025AnnualReport_tw.pdf

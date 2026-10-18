@@ -40,17 +40,17 @@ segments:
   name: 裝機及維修收入
   period: '2024'
   revenue_share_pct: 2.77
-main_theme: theme.cpo
+main_theme: theme.silicon_photonics
 themes:
+- stage: devices
+  theme: theme.silicon_photonics
+  tier: midstream
 - stage: packaging
   theme: theme.cpo
   tier: midstream
 - stage: equipment
   theme: theme.cowos
   tier: upstream
-- stage: devices
-  theme: theme.silicon_photonics
-  tier: midstream
 - stage: equipment_materials
   theme: theme.hbm
   tier: upstream

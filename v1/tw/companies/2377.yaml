@@ -42,6 +42,26 @@ segments:
   name: 其他產品（含伺服器）
   period: '2025'
   revenue_share_pct: 8
+main_theme: theme.ev
+themes:
+- stage: vehicle
+  theme: theme.ev
+  tier: downstream
+- stage: assembly
+  theme: theme.ai_server
+  tier: downstream
+- stage: system
+  theme: theme.robotics
+  tier: downstream
+- stage: it
+  theme: theme.data_center
+  tier: midstream
+- stage: system
+  theme: theme.liquid_cooling
+  tier: downstream
+- stage: system
+  theme: theme.nvidia
+  tier: downstream
 relations:
   competitors:
   - as_of: '2026-05-18'
@@ -87,6 +107,20 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: '2025-06-01'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 伺服器技術移轉、設計與系統建置
+    details:
+    - 伺服器技術移轉、設計與系統建置
+    edge: e0e6393145b79
+    evidence_level: media
+    id: org.viettel-group
+    name: Viettel Group
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   - as_of: '2026-03-13'
     confidence: ai_cross_checked
     counterparty_shares: []
@@ -101,7 +135,35 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: '2026-10-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 核心硬體平台研發與技術合作
+    details:
+    - 核心硬體平台研發與技術合作
+    edge: ed5a2671fa6ff
+    evidence_level: primary
+    id: us.NVDA
+    name: NVIDIA
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
+  - as_of: '2026-05-12'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 荷蘭全資子公司
+    details:
+    - 荷蘭全資子公司
+    edge: e940a7309f5f7
+    evidence_level: primary
+    id: org.micro-star-netherlands-holding
+    name: MICRO-STAR NETHERLANDS HOLDING B.V.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   - as_of: '2025-04-15'
     confidence: ai_cross_checked
     counterparty_shares: []
@@ -288,6 +350,27 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  - amount: EUR 14,999,998
+    as_of: '2026-05-12'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 荷蘭子公司現金增資
+    details:
+    - 荷蘭子公司現金增資
+    edge: e2c1219349602
+    event_date: '2026-05-12'
+    events:
+    - amount: EUR 14,999,998
+      detail: 荷蘭子公司現金增資
+      event_date: '2026-05-12'
+    evidence_level: primary
+    id: org.micro-star-netherlands-holding
+    name: MICRO-STAR NETHERLANDS HOLDING B.V.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
   - amount: 33,000,000美元
     as_of: '2025-04-15'
     confidence: ai_cross_checked
@@ -370,6 +453,13 @@ evidence:
     quote_check: found
     title: MICRO-STAR INTERNATIONAL CO., LTD. 2025 ANNUAL REPORT
     url: https://storage-asset.msi.com/file/pdf/investor/book/2025_2377_5.pdf
+  tw.2377#e05:
+    locator: 策略合作夥伴段落
+    published_date: null
+    publisher: 微星科技股份有限公司
+    quote_check: unreachable
+    title: 'MSI Global: Innovation DNA'
+    url: https://www.msi.com/about/innovation
   tw.2377#e06:
     locator: 記者王郁倫報導，黃金請說明記憶體合作對象段落
     published_date: '2026-03-14'
@@ -384,6 +474,27 @@ evidence:
     quote_check: unreachable
     title: 微星科技於GTC 2026發表NVIDIA MGX伺服器與DGX工作站，加速企業級AI應用發展
     url: https://tw.msi.com/news/detail/MSI-Accelerates-Enterprise-AI-with-NVIDIA-MGX-Servers-and-DGX-Workstations-at-GTC-2026-148306
+  tw.2377#e08:
+    locator: AMR自主移動機器人 × 智慧製造
+    published_date: '2025-05-19'
+    publisher: 微星科技股份有限公司
+    quote_check: unreachable
+    title: 微星加速AI驅動轉型 COMPUTEX 2025發表AIoT跨域解決方案
+    url: https://tw.msi.com/news/detail/MSI-Showcases-AI-Driven--High-Performance-Innovations-at-COMPUTEX-2025-146301
+  tw.2377#e09:
+    locator: 首段及Eco系列智慧充電樁上市資訊
+    published_date: '2026-03-18'
+    publisher: 微星科技股份有限公司
+    quote_check: unreachable
+    title: MSI Eco系列智慧充電樁2/25在台上市
+    url: https://tw.msi.com/news/detail/MSI-Eco%E7%B3%BB%E5%88%97%E6%99%BA%E6%85%A7%E5%85%85%E9%9B%BB%E6%A8%81-2-25-%E5%9C%A8%E5%8F%B0%E4%B8%8A%E5%B8%82-%E4%BB%A5%E8%BB%9F%E7%A1%AC%E6%95%B4%E5%90%88%E7%AD%96%E7%95%A5-%E5%AE%8C%E5%96%84%E5%B1%85%E5%AE%B6-%E7%A4%BE%E5%8D%80%E8%88%87%E5%95%86%E7%94%A8%E4%B8%89%E5%A4%A7%E5%A0%B4%E6%99%AF%E7%9A%84%E6%99%BA%E6%85%A7%E7%A7%BB%E5%8B%95%E4%BD%88%E5%B1%80-148307
+  tw.2377#e10:
+    locator: 記者王郁倫報導，合作協議及伺服器技術合作段落
+    published_date: '2025-06-01'
+    publisher: 經濟日報
+    quote_check: unreachable
+    title: 獨家／微星插旗越南！與電信集團Viettel結盟 搶攻輝達AI商機
+    url: https://money.udn.com/money/story/5612/8777862
   tw.2377#e11:
     locator: 重大訊息第3、4項
     published_date: '2024-01-11'
@@ -412,6 +523,13 @@ evidence:
     quote_check: found
     title: 微星董事會通過增資MSI Computer，計3300萬美元
     url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=d21ed08c-1a94-4b73-aeb8-8ac2107f53e7
+  tw.2377#e15:
+    locator: 重大訊息第5、6、14項
+    published_date: '2026-05-12'
+    publisher: 公開資訊觀測站（Goodinfo轉載）
+    quote_check: unreachable
+    title: 公告本公司董事會決議通過對荷蘭子公司增資案
+    url: https://goodinfo.tw/tw/StockAnnounceDetail.asp?CLAIM_TIME=2026%2F05%2F12+17%3A30%3A08&STOCK_ID=2377&SUBJECT=%E5%85%AC%E5%91%8A%E6%9C%AC%E5%85%AC%E5%8F%B8%E8%91%A3%E4%BA%8B%E6%B1%BA%E8%AD%B0%E9%80%9A%E9%81%8E%E5%B0%8D%E8%8D%B7%E8%98%AD%E5%AD%90%E5%85%AC%E5%8F%B8%E5%A2%9E%E8%B3%87%E6%A1%88
   tw.2377#e16:
     locator: 記者方韋傑報導，美國子公司購置廠房段落
     published_date: '2025-04-15'

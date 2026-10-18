@@ -27,14 +27,14 @@ segments:
   name: 遠端控制器、工控介面卡及其他產品合計
   period: '2025'
   revenue_share_pct: 100
-main_theme: theme.data_center
+main_theme: theme.robotics
 themes:
-- stage: equipment
-  theme: theme.data_center
-  tier: upstream
 - stage: control
   theme: theme.robotics
   tier: midstream
+- stage: equipment
+  theme: theme.data_center
+  tier: upstream
 relations:
   competitors:
   - as_of: '2025-05-20'
@@ -44,7 +44,7 @@ relations:
     details:
     - PAC可程式自動化控制器市場
     edge: e00955b93b969
-    evidence_level: primary
+    evidence_level: other
     id: org.moxa
     name: Moxa
     ranking_basis: unranked
@@ -58,7 +58,7 @@ relations:
     details:
     - PAC可程式自動化控制器市場
     edge: e80dd68a03271
-    evidence_level: primary
+    evidence_level: other
     id: tw.2395
     name: 研華
     ranking_basis: unranked
@@ -72,7 +72,7 @@ relations:
     details:
     - PAC可程式自動化控制器市場
     edge: eca7a112b18fc
-    evidence_level: primary
+    evidence_level: other
     id: tw.6166
     name: 凌華
     ranking_basis: unranked
@@ -87,7 +87,7 @@ relations:
     details:
     - AVEVA Edge工業監控圖控軟體合作
     edge: ec98f276a9190
-    evidence_level: primary
+    evidence_level: other
     id: org.aveva
     name: AVEVA
     ranking_basis: unranked

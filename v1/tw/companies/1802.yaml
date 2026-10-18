@@ -45,6 +45,9 @@ themes:
 - stage: board_materials
   theme: theme.ai_server
   tier: upstream
+- stage: components
+  theme: theme.5g
+  tier: upstream
 relations:
   competitors:
   - as_of: '2026-06-12'
@@ -77,6 +80,48 @@ relations:
     share_pct: null
     weight: 1
   subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 汽車玻璃銷售及投資子公司
+    details:
+    - 汽車玻璃銷售及投資子公司
+    edge: eca94b096c7ce
+    evidence_level: primary
+    id: org.taiwan-auto-glass
+    name: 台灣汽車玻璃股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 大陸地區投資控股子公司
+    details:
+    - 大陸地區投資控股子公司
+    edge: eaa9436a02730
+    evidence_level: primary
+    id: org.taiwan-glass-china-holding
+    name: 台灣玻璃中國控股有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 玻璃銷售及投資子公司
+    details:
+    - 玻璃銷售及投資子公司
+    edge: e1b87158a4c72
+    evidence_level: primary
+    id: org.taiwan-glass-usa-sales
+    name: 台灣玻璃美國銷售有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   - as_of: '2024-07-09'
     confidence: ai_cross_checked
     counterparty_shares: []
@@ -103,6 +148,28 @@ relations:
     id: org.shihlien-chemical-industrial-jiangsu
     name: 實聯化工江蘇有限公司
     ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 人民幣15,000仟元
+    as_of: '2025-05-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司台玻青島玻璃收購青島光電30%股權
+    details:
+    - 子公司台玻青島玻璃收購青島光電30%股權
+    edge: e24b3072c1259
+    event_date: '2025-05-31'
+    events:
+    - amount: 人民幣15,000仟元
+      detail: 子公司台玻青島玻璃收購青島光電30%股權
+      event_date: '2025-05-31'
+    evidence_level: primary
+    id: org.深圳台智光電材料科技有限公司
+    name: 深圳台智光電材料科技有限公司
+    ranking_basis: unranked
+    role: buyer
     share_basis: null
     share_pct: null
     weight: 1
@@ -133,6 +200,41 @@ evidence:
     quote_check: found
     title: 台玻擴產高階玻纖布　林伯豐：供不應求至2027年底
     url: https://www.cna.com.tw/news/afe/202606120123.aspx
+  tw.1802#e11:
+    locator: 第19頁，合併財務報表編製主體；投資公司欄〃承接本公司
+    published_date: '2026-03-12'
+    publisher: 台灣玻璃工業股份有限公司（FinancialFilings轉載）
+    quote_check: unreachable
+    title: 台灣玻璃工業股份有限公司及子公司2025年度合併財務報告
+    url: https://financialfilings.com/filings/tgi-1802/annual-report/2026/33479334/
+  tw.1802#e12:
+    locator: 第19頁，合併財務報表編製主體
+    published_date: '2026-03-12'
+    publisher: 台灣玻璃工業股份有限公司（FinancialFilings轉載）
+    quote_check: unreachable
+    title: 台灣玻璃工業股份有限公司及子公司2025年度合併財務報告
+    url: https://financialfilings.com/filings/tgi-1802/annual-report/2026/33479334/
+  tw.1802#e13:
+    locator: 第19頁，合併財務報表編製主體；投資公司欄〃承接本公司
+    published_date: '2026-03-12'
+    publisher: 台灣玻璃工業股份有限公司（FinancialFilings轉載）
+    quote_check: unreachable
+    title: 台灣玻璃工業股份有限公司及子公司2025年度合併財務報告
+    url: https://financialfilings.com/filings/tgi-1802/annual-report/2026/33479334/
+  tw.1802#e14:
+    locator: 第71頁，附註六之31／收購子公司已發行之股份
+    published_date: '2026-03-12'
+    publisher: 台灣玻璃工業股份有限公司（FinancialFilings轉載）
+    quote_check: unreachable
+    title: 台灣玻璃工業股份有限公司及子公司2025年度合併財務報告
+    url: https://financialfilings.com/filings/tgi-1802/annual-report/2026/33479334/
+  tw.1802#e15:
+    locator: 第20頁，合併財務報表編製主體之註
+    published_date: '2026-03-12'
+    publisher: 台灣玻璃工業股份有限公司（FinancialFilings轉載）
+    quote_check: unreachable
+    title: 台灣玻璃工業股份有限公司及子公司2025年度合併財務報告
+    url: https://financialfilings.com/filings/tgi-1802/annual-report/2026/33479334/
   tw.1802#e16:
     locator: 重大訊息公告，第1至2項
     published_date: '2024-03-12'
@@ -168,6 +270,13 @@ evidence:
     quote_check: found
     title: 台玻擴產高階玻纖布，第三期估2027年完成
     url: https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=b44e6130-e1e9-4e05-a39c-1752ae8ce5a3
+  tw.1802#e5:
+    locator: 第54頁，玻布及玻纖
+    published_date: '2026-05-06'
+    publisher: 台灣玻璃工業股份有限公司（FinancialFilings轉載）
+    quote_check: unreachable
+    title: 台灣玻璃工業股份有限公司2025年度年報
+    url: https://financialfilings.com/filings/tgi-1802/annual-report/2026/46760604/
   tw.1802#e6:
     locator: 純鹼工廠及供應規劃段落
     published_date: '2009-09-29'

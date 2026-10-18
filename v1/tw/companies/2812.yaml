@@ -8,8 +8,86 @@ industry:
   l0_code: '17'
   l0_name: 金融保險業
   l0_name_en: Financial and Insurance
-primary_chain_position: unknown
+  l1: finance
+  l1_name: 金融
+  l1_name_en: Financials
+  l2: fin.banking
+  l2_name: 銀行與金控
+  l2_name_en: Banks & Financial Holdings
+  l3: fin.bank
+  l3_name: 銀行
+  l3_name_en: Banks
+chain: chain.finance
+primary_chain_position: not_applicable
+summary_short: 以存放款、資金運用、信用卡與信託等金融服務取得收益。
+summary_long: 台中銀行以存款、放款與資金運用產生利息收益，並經營信用卡、信託與數位金融服務。企業金融提供中小企業營運週轉及設備、土地、廠房等資本性支出融資，亦參與永䥶營造及永䥶工業的聯合授信。數位服務包括網路銀行、行動銀行與QR Code支付；卡片產品包括悠遊VISA金融卡及MasterCard世界卡。台中銀證券、台中銀租賃與台中銀保險經紀人均為百分之百持有子公司。2024年董事會通過對租賃子公司增資六億元，同年向該子公司承租臺北辦公空間與停車位，取得十年使用權資產。
+segments:
+- evidence_ids:
+  - e1
+  - e2
+  - e3
+  id: seg_bank
+  name: 存放款與資金運用
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e4
+  - e17
+  - e18
+  id: seg_corporate
+  name: 企業金融
+  period: null
+  revenue_share_pct: null
+- evidence_ids:
+  - e5
+  id: seg_wealth
+  name: 信託與投資理財
+  period: null
+  revenue_share_pct: null
+- evidence_ids:
+  - e6
+  id: seg_digital
+  name: 數位金融與支付
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e7
+  - e8
+  - e9
+  id: seg_cards
+  name: 信用卡與簽帳金融卡
+  period: null
+  revenue_share_pct: null
 relations:
+  customers:
+  - as_of: '2025-05-15'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 聯合授信融資服務
+    details:
+    - 聯合授信融資服務
+    edge: ec8e9f95f3901
+    evidence_level: media
+    id: org.yongli-construction
+    name: 永䥶營造股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-05-15'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 聯合授信融資服務
+    details:
+    - 聯合授信融資服務
+    edge: ef4b9852317d1
+    evidence_level: media
+    id: org.yongli-industry
+    name: 永䥶工業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   parents:
   - as_of: '2024-12-31'
     confidence: ai_cross_checked
@@ -25,11 +103,266 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  partners:
+  - as_of: '2026-03-17'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 中小企業融資信用保證
+    details:
+    - 中小企業融資信用保證
+    edge: eaccfb225f1e7
+    evidence_level: primary
+    id: org.smeg
+    name: 財團法人中小企業信用保證基金
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-05-15'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 共同主辦永䥶集團聯合授信
+    details:
+    - 共同主辦永䥶集團聯合授信
+    edge: ea366e7909a62
+    evidence_level: media
+    id: tw.2834
+    name: 臺企銀
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2021-04-22'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: MySense悠遊御璽卡合作發行
+    details:
+    - MySense悠遊御璽卡合作發行
+    edge: e5a4045090944
+    evidence_level: media
+    id: us.V
+    name: Visa
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2026-10-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 百分之百持有的保險經紀子公司
+    details:
+    - 百分之百持有的保險經紀子公司
+    edge: e39cbefc2966c
+    evidence_level: primary
+    id: org.taichung-bank-insurance-brokers
+    name: 台中銀保險經紀人股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 百分之百持有的租賃子公司
+    details:
+    - 百分之百持有的租賃子公司
+    edge: eb9cb427d27d2
+    evidence_level: primary
+    id: org.taichung-bank-leasing
+    name: 台中銀租賃事業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 百分之百持有的證券子公司
+    details:
+    - 百分之百持有的證券子公司
+    edge: e98970e738bdd
+    evidence_level: primary
+    id: org.taichung-bank-securities
+    name: 台中銀證券股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 新臺幣6億元
+    as_of: '2024-09-19'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 認購租賃子公司普通股現金增資
+    details:
+    - 認購租賃子公司普通股現金增資
+    - 承租臺北辦公空間及停車位、取得使用權資產
+    edge: ec280884a825b
+    event_date: '2024-06-20'
+    events:
+    - amount: 新臺幣106,514,376元（含稅租金總額）
+      detail: 承租臺北辦公空間及停車位、取得使用權資產
+      event_date: '2024-09-19'
+    - amount: 新臺幣6億元
+      detail: 認購租賃子公司普通股現金增資
+      event_date: '2024-06-20'
+    evidence_level: primary
+    id: org.taichung-bank-leasing
+    name: 台中銀租賃事業股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 製卡廠商
+- 帳單印製廠商
 website: http://www.tcbbank.com.tw
 tax_id: '51816908'
 incorporated: '1953-08-26'
 listed: '1984-05-15'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-14'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2812#e1:
+    locator: 印刷頁125，財務績效分析；單位為新臺幣仟元
+    published_date: null
+    publisher: 台中商業銀行股份有限公司
+    quote_check: unreachable
+    title: 台中銀行114年年報
+    url: https://www.tcbbank.com.tw/pdf/Intro/AnnualReport2025.pdf
+  tw.2812#e10:
+    locator: 記者玉女報導，合作發卡段落
+    published_date: '2021-04-22'
+    publisher: TNN台灣地方新聞
+    quote_check: found
+    title: 台中銀行「MySense悠遊御璽卡」發行上市　提升數位消費體驗
+    url: https://news.tnn.tw/news.html?c=5&id=150397
+  tw.2812#e11:
+    locator: 第15頁，參、第二十二問，可辦理批次信用保證措施的金融機構名單
+    published_date: '2023-06-12'
+    publisher: 財團法人中小企業信用保證基金
+    quote_check: found
+    title: 疫後振興及低碳智慧納管貸款相關信用保證措施問與答
+    url: https://www.smeg.org.tw/archive/file/1120612%E7%96%AB%E5%BE%8C%E6%8C%AF%E8%88%88%E3%80%81%E4%BD%8E%E7%A2%B3%E6%99%BA%E6%85%A7%E7%B4%8D%E7%AE%A1%E8%B2%B8%E6%AC%BE%E4%B9%8B%E7%9B%B8%E9%97%9C%E4%BF%9D%E8%AD%89%E6%8E%AA%E6%96%BD-%E5%95%8F%E8%88%87%E7%AD%94.pdf
+  tw.2812#e12:
+    locator: 黃奇鐘報導，信用保證機制段落
+    published_date: '2026-03-17'
+    publisher: 經濟日報
+    quote_check: found
+    title: 台中銀行推動綠色金融 成果卓越
+    url: https://money.udn.com/money/story/5636/9383549
+  tw.2812#e13:
+    locator: 公司簡介首段
+    published_date: null
+    publisher: 台中銀證券股份有限公司
+    quote_check: found
+    title: 台中銀證券－公司簡介
+    url: https://www.tcbs.com.tw/Home/About
+  tw.2812#e14:
+    locator: Company Profile
+    published_date: null
+    publisher: 台中銀租賃事業股份有限公司
+    quote_check: found
+    title: 台中銀租賃－公司簡介
+    url: https://www.tcbl.com.tw/
+  tw.2812#e15:
+    locator: 公司簡介首段
+    published_date: null
+    publisher: 台中銀保險經紀人股份有限公司
+    quote_check: found
+    title: 公司簡介－台中銀保險經紀人
+    url: https://www.tcba.com.tw/WebSite/about
+  tw.2812#e17:
+    locator: 記者夏淑賢報導，首段授信對象；原文「有限司」為來源用字
+    published_date: '2025-05-15'
+    publisher: 經濟日報
+    quote_check: unreachable
+    title: 台企銀主辦永䥶營造永䥶工業16億元聯貸 連結永續指標
+    url: https://money.udn.com/money/story/5613/8742731
+  tw.2812#e18:
+    locator: 首段共同主辦銀行
+    published_date: '2025-05-15'
+    publisher: 經濟日報
+    quote_check: unreachable
+    title: 台企銀主辦永䥶營造永䥶工業16億元聯貸 連結永續指標
+    url: https://money.udn.com/money/story/5613/8742731
+  tw.2812#e19:
+    locator: 公告主旨；第2項事實發生日、第4項交易相對人、第9項核准條件
+    published_date: '2024-06-21'
+    publisher: 公開資訊觀測站重大訊息公告（MoneyDJ轉載）
+    quote_check: found
+    title: 台中銀董事會通過認購台中銀租賃事業現增股6000萬股，計6億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=a81d6156-6727-4c3d-99b2-e52bf9aa90a5
+  tw.2812#e2:
+    locator: 印刷頁125，財務績效分析；單位為新臺幣仟元
+    published_date: null
+    publisher: 台中商業銀行股份有限公司
+    quote_check: unreachable
+    title: 台中銀行114年年報
+    url: https://www.tcbbank.com.tw/pdf/Intro/AnnualReport2025.pdf
+  tw.2812#e20:
+    locator: 公告主旨；第1至4項交易標的、租期及交易相對人
+    published_date: '2024-09-19'
+    publisher: 台中商業銀行重大訊息公告（Win投資轉載）
+    quote_check: found
+    title: 台中銀公告向關係人台中銀租賃事業股份有限公司取得使用權資產
+    url: https://winvest.tw/News/Detail/33728
+  tw.2812#e21:
+    locator: 第3項交易總金額
+    published_date: '2024-09-19'
+    publisher: 台中商業銀行重大訊息公告（Win投資轉載）
+    quote_check: found
+    title: 台中銀公告向關係人台中銀租賃事業股份有限公司取得使用權資產
+    url: https://winvest.tw/News/Detail/33728
+  tw.2812#e3:
+    locator: 業務項目
+    published_date: null
+    publisher: 台中商業銀行股份有限公司
+    quote_check: unreachable
+    title: 業務項目〖台中銀行〗
+    url: https://www.tcbbank.com.tw/Intro/B_03.html
+  tw.2812#e4:
+    locator: 用途
+    published_date: null
+    publisher: 台中商業銀行股份有限公司
+    quote_check: unreachable
+    title: 中小企業SME貸款〖台中銀行〗
+    url: https://www.tcbbank.com.tw/Corporate/G_13.html
+  tw.2812#e5:
+    locator: 投資理財服務
+    published_date: null
+    publisher: 台中商業銀行股份有限公司
+    quote_check: found
+    title: 台中銀行金融友善專區－到府服務一覽表
+    url: https://rate.tcbbank.com.tw/CB501019.html
+  tw.2812#e6:
+    locator: 線上服務化
+    published_date: null
+    publisher: 台中商業銀行股份有限公司
+    quote_check: unreachable
+    title: 數位金融〖台中銀行〗
+    url: https://www.tcbbank.com.tw/ESG/E_26.html
+  tw.2812#e7:
+    locator: 產品頁標題
+    published_date: null
+    publisher: 台中商業銀行股份有限公司
+    quote_check: unreachable
+    title: 悠遊VISA金融卡〖台中銀行〗
+    url: https://www.tcbbank.com.tw/product/C_17.html
+  tw.2812#e8:
+    locator: 產品名稱；頁內優惠期間為115年
+    published_date: null
+    publisher: 台中商業銀行股份有限公司
+    quote_check: unreachable
+    title: 台中銀行MasterCard世界卡
+    url: https://www.tcbbank.com.tw/CreditCard/J_Credit_World/index.html
+  tw.2812#e9:
+    locator: 申請書第4頁，國外交易授權結匯費用；文件版本11507A001
+    published_date: null
+    publisher: 台中商業銀行股份有限公司
+    quote_check: unreachable
+    title: 台中銀行一般信用卡申請書
+    url: https://www.tcbbank.com.tw/pdf/CreditCard/normal11101A001.pdf?v1.7.50=

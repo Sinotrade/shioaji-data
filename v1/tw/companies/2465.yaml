@@ -8,12 +8,136 @@ industry:
   l0_code: '25'
   l0_name: 電腦及週邊設備業
   l0_name_en: Computer and Peripheral Equipment
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.distribution
+  l2_name: 電子通路
+  l2_name_en: Electronics Distribution
+  l3: dist.it
+  l3_name: 資訊產品通路
+  l3_name_en: IT Products Distribution
+primary_chain_position: downstream
+summary_short: 以 GPU 繪圖卡代理銷售為核心，另提供 AI 工作站、伺服器與管理軟體。
+summary_long: 麗臺以 GPU 繪圖卡代理銷售為核心，產品涵蓋 NVIDIA RTX 專業繪圖卡與 GeForce 顯示卡。2025 年電腦產品占營收 99.66%，其他產品占 0.34%，智慧醫療產品列示為 0.00%。公司另提供 WinFast AI 工作站與伺服器，並展示從桌面到資料中心的運算產品布局。軟體方面提供 AIDMS，支援地端 AI 代理應用。依 2025 年底資料，公司直接持有 Leadtek Holding 全數股權，並透過該公司持有上海行銷服務子公司全數股權。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_computer
+  name: 電腦產品
+  period: '2025'
+  revenue_share_pct: 99.66
+- evidence_ids:
+  - e2
+  id: seg_medical
+  name: 智慧醫療產品
+  period: '2025'
+  revenue_share_pct: 0
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 0.34
+main_theme: theme.ai_server
+themes:
+- stage: assembly
+  theme: theme.ai_server
+  tier: downstream
+- stage: it
+  theme: theme.data_center
+  tier: midstream
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股 100% 的子公司
+    details:
+    - 直接持股 100% 的子公司
+    edge: e72f5bcb926c7
+    evidence_level: primary
+    id: org.leadtek-holding
+    name: Leadtek Holding Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過 Leadtek Holding 間接持股 100%
+    details:
+    - 透過 Leadtek Holding 間接持股 100%
+    edge: e0a7b16c17373
+    evidence_level: primary
+    id: org.leadtek-shanghai
+    name: 麗台(上海)信息科技有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.leadtek.com.tw
 tax_id: '22325002'
 incorporated: '1986-10-24'
 listed: '2001-09-19'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-18'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2465#e2:
+    locator: 印刷頁43，營業比重；數值依序為113、114年度
+    published_date: null
+    publisher: 麗臺科技股份有限公司
+    quote_check: found
+    title: 麗臺科技股份有限公司114年度年報
+    url: https://www.leadtek.com/cht/company/pdf/LR_2025_annual.pdf
+  tw.2465#e3:
+    locator: 印刷頁48，技術及研發概況
+    published_date: null
+    publisher: 麗臺科技股份有限公司
+    quote_check: found
+    title: 麗臺科技股份有限公司114年度年報
+    url: https://www.leadtek.com/cht/company/pdf/LR_2025_annual.pdf
+  tw.2465#e4:
+    locator: 競爭優勢
+    published_date: null
+    publisher: 麗臺科技股份有限公司
+    quote_check: found
+    title: 企業簡介
+    url: https://www.leadtek.com/cht/about/profile/
+  tw.2465#e5:
+    locator: NVIDIA 認證系統 滿足多樣化配置
+    published_date: '2026-05-27'
+    publisher: 麗臺科技股份有限公司
+    quote_check: found
+    title: 把資料中心搬進辦公室：麗臺於 COMPUTEX 2026 推出終極 AI 工作站，打造高彈性 AI 解決方案
+    url: https://www.leadtek.com/cht/news/event_detail/20509
+  tw.2465#e6:
+    locator: 軟硬整合：AI 代理與物理 AI 落地應用
+    published_date: '2026-05-27'
+    publisher: 麗臺科技股份有限公司
+    quote_check: found
+    title: 把資料中心搬進辦公室：麗臺於 COMPUTEX 2026 推出終極 AI 工作站，打造高彈性 AI 解決方案
+    url: https://www.leadtek.com/cht/news/event_detail/20509
+  tw.2465#e7:
+    locator: 導言
+    published_date: '2026-06-30'
+    publisher: 麗臺科技股份有限公司
+    quote_check: found
+    title: 從桌邊到資料中心，直擊麗臺在 COMPUTEX 2026 怎麼滿足代理式 AI 落地新顯學
+    url: https://www.leadtek.com/cht/news/news_detail/11406
+  tw.2465#e8:
+    locator: 印刷頁39，2025年12月31日轉投資事業持股表
+    published_date: null
+    publisher: 麗臺科技股份有限公司
+    quote_check: found
+    title: 麗臺科技股份有限公司114年度年報
+    url: https://www.leadtek.com/cht/company/pdf/LR_2025_annual.pdf
+  tw.2465#e9:
+    locator: 印刷頁39、64至65，間接持股表與關係企業經營業務
+    published_date: null
+    publisher: 麗臺科技股份有限公司
+    quote_check: found
+    title: 麗臺科技股份有限公司114年度年報
+    url: https://www.leadtek.com/cht/company/pdf/LR_2025_annual.pdf

@@ -40,6 +40,11 @@ segments:
   name: 薄膜濾光片及光學鍍膜
   period: '2025'
   revenue_share_pct: 2.22
+main_theme: theme.cowos
+themes:
+- stage: materials
+  theme: theme.cowos
+  tier: upstream
 relations:
   customers:
   - as_of: '2022-02-10'
@@ -49,7 +54,7 @@ relations:
     details:
     - 單眼數位相機OLPF歷史訂單
     edge: ed0eb4d7bda76
-    evidence_level: primary
+    evidence_level: other
     id: jp.6758
     name: Sony
     ranking_basis: unranked
@@ -63,7 +68,7 @@ relations:
     details:
     - 單眼數位相機OLPF歷史訂單
     edge: e9eb9a8c4ab34
-    evidence_level: primary
+    evidence_level: other
     id: jp.7731
     name: Nikon
     ranking_basis: unranked
@@ -78,7 +83,7 @@ relations:
     details:
     - 間接持有的越南玻璃與石英加工子公司
     edge: e931c8687ddb7
-    evidence_level: primary
+    evidence_level: other
     id: org.澤有科技有限公司
     name: 澤有科技有限公司
     ranking_basis: unranked
@@ -103,21 +108,21 @@ evidence:
     locator: 印刷頁52／PDF第56頁，主要產品之營業比重表，114年度半導體光學鍍膜營業比重％欄
     published_date: '2026-05-21'
     publisher: 澤米科技股份有限公司
-    quote_check: unreachable
+    quote_check: not_found
     title: 澤米科技股份有限公司114年度年報
     url: https://www.vactronics.com.tw/archive/file/MTE15bm06IKh5p2x5bi45pyDLeiCoeadseacg_W5tOWgsSjlsJrmnKrpgannlKjmsLjnuozmj63pnLLmupbliYcpLeS4reaWh1-kuIrlgrPniYguODgyODU5MjQ2.pdf
   tw.6742#e10:
     locator: 2025年業務介紹，石英耗材
     published_date: null
     publisher: 澤米科技股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: 關於澤米
     url: https://www.vactronics.com.tw/article/%E9%97%9C%E6%96%BC%E6%BE%A4%E7%B1%B3
   tw.6742#e11:
     locator: 2025年業務介紹，光通訊基板
     published_date: null
     publisher: 澤米科技股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: 關於澤米
     url: https://www.vactronics.com.tw/article/%E9%97%9C%E6%96%BC%E6%BE%A4%E7%B1%B3
   tw.6742#e12:
@@ -131,28 +136,28 @@ evidence:
     locator: 印刷頁82／PDF第86頁，關係企業組織圖及基本資料；組織圖顯示經Beauty Surplus Int’l Co., Ltd.持有越南子公司
     published_date: '2026-05-21'
     publisher: 澤米科技股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: 澤米科技股份有限公司114年度年報
     url: https://www.vactronics.com.tw/archive/file/MTE15bm06IKh5p2x5bi45pyDLeiCoeadseacg_W5tOWgsSjlsJrmnKrpgannlKjmsLjnuozmj63pnLLmupbliYcpLeS4reaWh1-kuIrlgrPniYguODgyODU5MjQ2.pdf
   tw.6742#e14:
     locator: 澤米科技（6742）越南生產基地，首段
     published_date: null
     publisher: 澤米科技股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: 子公司(越南澤有廠)
     url: https://www.vactronics.com.tw/article/%E5%AD%90%E5%85%AC%E5%8F%B8(%E8%B6%8A%E5%8D%97%E6%BE%A4%E6%9C%89%E5%BB%A0)
   tw.6742#e2:
     locator: 印刷頁52／PDF第56頁，主要產品之營業比重表，114年度精密光學元件製造營業比重％欄
     published_date: '2026-05-21'
     publisher: 澤米科技股份有限公司
-    quote_check: unreachable
+    quote_check: not_found
     title: 澤米科技股份有限公司114年度年報
     url: https://www.vactronics.com.tw/archive/file/MTE15bm06IKh5p2x5bi45pyDLeiCoeadseacg_W5tOWgsSjlsJrmnKrpgannlKjmsLjnuozmj63pnLLmupbliYcpLeS4reaWh1-kuIrlgrPniYguODgyODU5MjQ2.pdf
   tw.6742#e3:
     locator: 印刷頁52／PDF第56頁，主要產品之營業比重表，114年度薄膜濾光片及光學鍍膜營業比重％欄
     published_date: '2026-05-21'
     publisher: 澤米科技股份有限公司
-    quote_check: unreachable
+    quote_check: not_found
     title: 澤米科技股份有限公司114年度年報
     url: https://www.vactronics.com.tw/archive/file/MTE15bm06IKh5p2x5bi45pyDLeiCoeadseacg_W5tOWgsSjlsJrmnKrpgannlKjmsLjnuozmj63pnLLmupbliYcpLeS4reaWh1-kuIrlgrPniYguODgyODU5MjQ2.pdf
   tw.6742#e4:
@@ -166,27 +171,34 @@ evidence:
     locator: 精密光學玻璃微加工能力
     published_date: null
     publisher: 澤米科技股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: 石英／精密光學玻璃／Wafer 精密加工
     url: https://www.vactronics.com.tw/article/%E5%86%B7%E5%8A%A0%E5%B7%A5
   tw.6742#e6:
     locator: 印刷頁53／PDF第57頁，公司目前之產品及服務項目，薄膜濾光片及光學鍍膜項下B
     published_date: '2026-05-21'
     publisher: 澤米科技股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: 澤米科技股份有限公司114年度年報
     url: https://www.vactronics.com.tw/archive/file/MTE15bm06IKh5p2x5bi45pyDLeiCoeadseacg_W5tOWgsSjlsJrmnKrpgannlKjmsLjnuozmj63pnLLmupbliYcpLeS4reaWh1-kuIrlgrPniYguODgyODU5MjQ2.pdf
   tw.6742#e7:
     locator: OLPF光學低通濾波器技術之應用，首段
     published_date: null
     publisher: 澤米科技股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: 單眼相機
     url: https://www.vactronics.com.tw/article/%E5%96%AE%E7%9C%BC%E7%9B%B8%E6%A9%9F
   tw.6742#e8:
     locator: 2025年業務介紹，先進封裝產品
     published_date: null
     publisher: 澤米科技股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: 關於澤米
     url: https://www.vactronics.com.tw/article/%E9%97%9C%E6%96%BC%E6%BE%A4%E7%B1%B3
+  tw.6742#e9:
+    locator: 波導光學元件（LOE）
+    published_date: null
+    publisher: 澤米科技股份有限公司
+    quote_check: found
+    title: 石英／精密光學玻璃／Wafer 精密加工
+    url: https://www.vactronics.com.tw/article/%E5%86%B7%E5%8A%A0%E5%B7%A5

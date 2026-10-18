@@ -8,12 +8,192 @@ industry:
   l0_code: '15'
   l0_name: 航運業
   l0_name_en: Shipping and Transportation
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.transport
+  l2_name: 運輸
+  l2_name_en: Transportation
+  l3: trans.logistics
+  l3_name: 物流與倉儲
+  l3_name_en: Logistics & Warehousing
+primary_chain_position: not_applicable
+summary_short: 提供零擔貨運、多溫層倉儲、冷鏈與專業物流服務。
+summary_long: 嘉里大榮以路線零擔貨運及供應鏈整合物流為主要服務，涵蓋企業貨件、個人宅配、多溫層倉儲、流通加工與冷鏈配送。2025年貨運運輸占營業比重84%，物流倉儲及其他占16%。醫藥業務由間接子公司嘉里醫藥物流提供，包含符合GDP規範的藥品倉儲與配送；子公司科學城物流則在新竹及台南科學園區提供保稅倉儲、運輸與報關服務。嘉里控股有限公司為其控制股東。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_transport
+  name: 貨運運輸
+  period: '2025'
+  revenue_share_pct: 84
+- evidence_ids:
+  - e2
+  id: seg_warehousing_other
+  name: 物流倉儲及其他
+  period: '2025'
+  revenue_share_pct: 16
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司
+    details:
+    - 全資子公司
+    edge: e9e7f2084a9cc
+    evidence_level: primary
+    id: org.kerry-express-taiwan
+    name: 嘉里快遞股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過融星投資持有之間接子公司
+    details:
+    - 透過融星投資持有之間接子公司
+    edge: e7679909023b2
+    evidence_level: primary
+    id: org.kerry-pharma-logistics
+    name: 嘉里醫藥物流股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股64%之子公司
+    details:
+    - 直接持股64%之子公司
+    edge: eedf1e1d9d2b1
+    evidence_level: primary
+    id: org.kerry-refrigeration-equipment
+    name: 嘉里冷鏈設備股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司
+    details:
+    - 全資子公司
+    edge: e1488641d28b1
+    evidence_level: primary
+    id: org.rong-xing-investment
+    name: 融星投資股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股60%之子公司
+    details:
+    - 直接持股60%之子公司
+    edge: ecd26efb88481
+    evidence_level: primary
+    id: org.science-park-logistics
+    name: 科學城物流股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司
+    details:
+    - 全資子公司
+    edge: eacc329d65d3a
+    evidence_level: primary
+    id: org.ta-jung-transportation
+    name: 大榮汽車貨運股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.kerrytj.com
 tax_id: '51015548'
 incorporated: '1959-12-21'
 listed: '1990-12-20'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-18'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2608#e12:
+    locator: 第65頁，綜合持股比例；第106頁，組織圖
+    published_date: '2026-03-31'
+    publisher: 嘉里大榮物流股份有限公司
+    quote_check: not_found
+    title: 嘉里大榮114年度年報－主要轉投資
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52162/2026/RNS/52162_rns_2026-06-12_7e31b8ad-7270-47b5-9bd5-3c127cab945d.pdf
+  tw.2608#e13:
+    locator: 第65頁，綜合持股比例；第106頁，組織圖
+    published_date: '2026-03-31'
+    publisher: 嘉里大榮物流股份有限公司
+    quote_check: not_found
+    title: 嘉里大榮114年度年報－嘉里快遞持股
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52162/2026/RNS/52162_rns_2026-06-12_7e31b8ad-7270-47b5-9bd5-3c127cab945d.pdf
+  tw.2608#e2:
+    locator: 第71頁，營業比重
+    published_date: '2026-03-31'
+    publisher: 嘉里大榮物流股份有限公司
+    quote_check: not_found
+    title: 嘉里大榮114年度年報－營業比重
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52162/2026/RNS/52162_rns_2026-06-12_7e31b8ad-7270-47b5-9bd5-3c127cab945d.pdf
+  tw.2608#e3:
+    locator: 第69、78頁，主要服務
+    published_date: '2026-03-31'
+    publisher: 嘉里大榮物流股份有限公司
+    quote_check: not_found
+    title: 嘉里大榮114年度年報－路線運輸
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52162/2026/RNS/52162_rns_2026-06-12_7e31b8ad-7270-47b5-9bd5-3c127cab945d.pdf
+  tw.2608#e4:
+    locator: 第78頁，主要產品之重要用途
+    published_date: '2026-03-31'
+    publisher: 嘉里大榮物流股份有限公司
+    quote_check: not_found
+    title: 嘉里大榮114年度年報－整合物流
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52162/2026/RNS/52162_rns_2026-06-12_7e31b8ad-7270-47b5-9bd5-3c127cab945d.pdf
+  tw.2608#e5:
+    locator: 第78頁，關係企業主要服務
+    published_date: '2026-03-31'
+    publisher: 嘉里大榮物流股份有限公司
+    quote_check: not_found
+    title: 嘉里大榮114年度年報－醫藥物流服務
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52162/2026/RNS/52162_rns_2026-06-12_7e31b8ad-7270-47b5-9bd5-3c127cab945d.pdf
+  tw.2608#e6:
+    locator: 第78頁，關係企業主要服務
+    published_date: '2026-03-31'
+    publisher: 嘉里大榮物流股份有限公司
+    quote_check: not_found
+    title: 嘉里大榮114年度年報－科學城物流服務
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52162/2026/RNS/52162_rns_2026-06-12_7e31b8ad-7270-47b5-9bd5-3c127cab945d.pdf
+  tw.2608#e7:
+    locator: 第105頁
+    published_date: '2026-03-31'
+    publisher: 嘉里大榮物流股份有限公司
+    quote_check: not_found
+    title: 嘉里大榮114年度年報－間接子公司
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52162/2026/RNS/52162_rns_2026-06-12_7e31b8ad-7270-47b5-9bd5-3c127cab945d.pdf
+  tw.2608#e8:
+    locator: 第65頁，綜合持股比例
+    published_date: '2026-03-31'
+    publisher: 嘉里大榮物流股份有限公司
+    quote_check: not_found
+    title: 嘉里大榮114年度年報－科學城持股
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52162/2026/RNS/52162_rns_2026-06-12_7e31b8ad-7270-47b5-9bd5-3c127cab945d.pdf
+  tw.2608#e9:
+    locator: 公司沿革
+    published_date: null
+    publisher: 科學城物流股份有限公司
+    quote_check: found
+    title: 科學城物流－關於我們
+    url: https://www.spl.com.tw/about.php

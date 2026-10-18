@@ -52,15 +52,15 @@ themes:
 - stage: chips
   theme: theme.mini_led
   tier: upstream
+- stage: devices
+  theme: theme.silicon_photonics
+  tier: midstream
 - stage: packaging
   theme: theme.cpo
   tier: midstream
 - stage: equipment
   theme: theme.cowos
   tier: upstream
-- stage: devices
-  theme: theme.silicon_photonics
-  tier: midstream
 relations:
   customers:
   - as_of: '2020-05-07'
@@ -70,7 +70,7 @@ relations:
     details:
     - Mini LED點測分選設備及分選製程代工
     edge: e6326e4f8b87c
-    evidence_level: primary
+    evidence_level: other
     id: tw.2448
     name: 晶電
     ranking_basis: unranked
@@ -84,7 +84,7 @@ relations:
     details:
     - 設備製造外包：惠特承接萬潤設備代工訂單
     edge: e85b32c289d13
-    evidence_level: primary
+    evidence_level: other
     id: tw.6187
     name: 萬潤
     ranking_basis: unranked

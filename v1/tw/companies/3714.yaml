@@ -8,12 +8,179 @@ industry:
   l0_code: '26'
   l0_name: 光電業
   l0_name_en: Optoelectronic
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.display
+  l2_name: 光電與顯示
+  l2_name_en: Optoelectronics & Displays
+  l3: disp.led
+  l3_name: LED 與 Micro／Mini LED
+  l3_name_en: LED & Micro/Mini LED
+chain: chain.display
+primary_chain_position: upstream
+summary_short: 透過富采光電經營LED磊晶、晶粒、封裝與模組，涵蓋顯示、車用及感測。
+summary_long: 富采控股透過旗下富采光電經營LED磊晶、晶粒、封裝與模組，應用涵蓋車用、顯示及感測。晶元光電於2025年10月更名為富采光電，隆達電子於2026年1月併入。2026年第二季營收組成為車用20%、感測13%、專業照明12%、電視背光16%、筆電／顯示器／手機背光14%、顯示看板17%及其他9%。產品包括Mini LED背光、Micro LED晶片，並開發VCSEL、CW-DFB雷射與Micro LED光通訊光源。
+segments:
+- evidence_ids:
+  - e11
+  id: seg_auto
+  name: 車用
+  period: 2026Q2
+  revenue_share_pct: 20
+- evidence_ids:
+  - e11
+  id: seg_sensing
+  name: 感測應用
+  period: 2026Q2
+  revenue_share_pct: 13
+- evidence_ids:
+  - e11
+  id: seg_lighting
+  name: 專業照明
+  period: 2026Q2
+  revenue_share_pct: 12
+- evidence_ids:
+  - e11
+  id: seg_tv
+  name: 電視背光
+  period: 2026Q2
+  revenue_share_pct: 16
+- evidence_ids:
+  - e11
+  id: seg_it
+  name: 筆電／顯示器／手機背光
+  period: 2026Q2
+  revenue_share_pct: 14
+- evidence_ids:
+  - e11
+  id: seg_signage
+  name: 顯示看板
+  period: 2026Q2
+  revenue_share_pct: 17
+- evidence_ids:
+  - e11
+  id: seg_other
+  name: 其他
+  period: 2026Q2
+  revenue_share_pct: 9
+main_theme: theme.mini_led
+themes:
+- stage: chips
+  theme: theme.mini_led
+  tier: upstream
+relations:
+  subsidiaries:
+  - as_of: '2026-08-05'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: LED及光電半導體營運子公司
+    details:
+    - LED及光電半導體營運子公司
+    edge: e7c2cfe12a29d
+    evidence_level: primary
+    id: org.ennostar-corporation
+    name: 富采光電
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-02-24'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 歷史子公司，2026年1月已併入富采光電
+    details:
+    - 歷史子公司，2026年1月已併入富采光電
+    edge: efcabf1f3b5ff
+    evidence_level: primary
+    id: org.lextar-electronics
+    name: 隆達電子
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.ennostar.com
 tax_id: '83202930'
 incorporated: '2021-01-06'
 listed: '2021-01-06'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-15'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3714#e10:
+    locator: 光通訊光源技術介紹
+    published_date: null
+    publisher: 富采光電
+    quote_check: found
+    title: 光通訊
+    url: https://www.ennostar.com/domain/emerging-market/optical-interconnects
+  tw.3714#e11:
+    locator: 第4頁，2Q26產品應用營收圓餅圖：車用20%、感測應用13%、專業照明12%、電視背光16%、筆電／顯示器／手機背光14%、顯示看板17%、其他9%
+    published_date: '2026-08-07'
+    publisher: 富采控股
+    quote_check: found
+    title: 富采控股2026年第二季法人說明會
+    url: https://www.ennostar.com/uploads/files/shares/Investors/2026Q2ENNOSTAR%20Inc(%E4%B8%AD%E6%96%87%E7%89%88).pdf
+  tw.3714#e12:
+    locator: Laser Platform產品表
+    published_date: null
+    publisher: 富采光電
+    quote_check: not_found
+    title: 晶粒產品
+    url: https://www.ennostar.com/products/chip
+  tw.3714#e2:
+    locator: 新聞正文首段
+    published_date: '2026-08-05'
+    publisher: 富采
+    quote_check: found
+    title: 富采 Micro LED光通訊技術躍進！藍光調變頻寬衝上2.1 GHz
+    url: https://www.ennostar.com/news/news/6a72d45d24fe3
+  tw.3714#e3:
+    locator: 2025年10月
+    published_date: null
+    publisher: 富采
+    quote_check: found
+    title: 公司沿革
+    url: https://www.ennostar.com/history
+  tw.3714#e4:
+    locator: 2026年1月
+    published_date: null
+    publisher: 富采
+    quote_check: found
+    title: 公司沿革
+    url: https://www.ennostar.com/history
+  tw.3714#e5:
+    locator: 公司簡介／垂直整合範圍
+    published_date: null
+    publisher: 富采
+    quote_check: found
+    title: 富采公司簡介
+    url: https://www.ennostar.com/about
+  tw.3714#e6:
+    locator: 新聞正文首段
+    published_date: '2025-02-24'
+    publisher: 富采控股
+    quote_check: found
+    title: 富采宣布子公司晶元光電與隆達電子合併為富采光電
+    url: https://esg.ennostar.com/news_detail?id=113&lang=tw&page=4&type=news
+  tw.3714#e7:
+    locator: 晶粒產品平台表
+    published_date: null
+    publisher: 富采光電
+    quote_check: found
+    title: 晶粒產品
+    url: https://www.ennostar.com/products/chip
+  tw.3714#e8:
+    locator: 先進顯示應用介紹
+    published_date: null
+    publisher: 富采光電
+    quote_check: found
+    title: 先進顯示
+    url: https://www.ennostar.com/domain/advanced-display
+  tw.3714#e9:
+    locator: 54吋Micro LED透明顯示器
+    published_date: null
+    publisher: 富采光電
+    quote_check: found
+    title: Micro LED｜富采 Touch Taiwan 2026
+    url: https://www.ennostar.com/event/2026TouchTaiwan/micro-led

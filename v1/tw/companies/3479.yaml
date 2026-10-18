@@ -8,12 +8,199 @@ industry:
   l0_code: '25'
   l0_name: 電腦及週邊設備業
   l0_name_en: Computer and Peripheral Equipment
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.hardware
+  l2_name: 電腦與硬體
+  l2_name_en: Computers & Hardware
+  l3: hw.industrial_pc
+  l3_name: 工業電腦與嵌入式系統
+  l3_name_en: Industrial PCs & Embedded Systems
+primary_chain_position: midstream
+summary_short: 製造工業電腦、嵌入式板卡與系統，提供醫療、零售及AI運算產品。
+summary_long: 安勤主要從事工業電腦與嵌入式運算產品業務，產品涵蓋工業主機板、單板電腦、嵌入式模組、邊緣AI系統、醫療半強固平板及銷售點終端機。公司位於電子製造業中游，從工業電腦製造延伸至系統整合。2025年營收中，工業用電腦占46.29%，嵌入式電腦占44.08%，其他占9.63%。另提供資料中心及企業級應用的伺服器主機板與系統，支援AI模型訓練、資料處理及集中式管理，並有整合CPU、GPU與NPU的邊緣AI系統。
+segments:
+- evidence_ids:
+  - e_revenue
+  id: seg_industrial
+  name: 工業用電腦
+  period: '2025'
+  revenue_share_pct: 46.29
+- evidence_ids:
+  - e_revenue
+  id: seg_embedded
+  name: 嵌入式電腦
+  period: '2025'
+  revenue_share_pct: 44.08
+- evidence_ids:
+  - e_revenue
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 9.63
+main_theme: theme.ai_server
+themes:
+- stage: assembly
+  theme: theme.ai_server
+  tier: downstream
+- stage: it
+  theme: theme.data_center
+  tier: midstream
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 工業電腦業務子公司
+    details:
+    - 工業電腦業務子公司
+    edge: e134c3d3a7d2f
+    evidence_level: primary
+    id: org.bcm-technology
+    name: BCM Technology Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 醫療推車及週邊業務子公司
+    details:
+    - 醫療推車及週邊業務子公司
+    edge: efd3f9f8c037d
+    evidence_level: primary
+    id: org.bytec-healthcare
+    name: Bytec Healthcare Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 工業電腦及週邊業務子公司
+    details:
+    - 工業電腦及週邊業務子公司
+    edge: e0ae65c25a0ec
+    evidence_level: primary
+    id: org.瑞勤股份有限公司
+    name: 瑞勤股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 智慧顯示業務子公司
+    details:
+    - 智慧顯示業務子公司
+    edge: e683feadf016c
+    evidence_level: primary
+    id: org.誠屏科技股份有限公司
+    name: 誠屏科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.avalue.com
 tax_id: '70604376'
 incorporated: '2000-07-19'
 listed: '2010-06-08'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-18'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3479#e_board:
+    locator: Avalue's Industrial and Embedded Motherboard Series
+    published_date: null
+    publisher: 安勤科技股份有限公司
+    quote_check: found
+    title: Industrial & Embedded Motherboard
+    url: https://www.avalue.com/tw/product/Industrial-Embedded-Motherboard
+  tw.3479#e_edge:
+    locator: 將即時AI推論部署於更接近資料來源的位置
+    published_date: '2026-10-01'
+    publisher: 安勤科技股份有限公司
+    quote_check: found
+    title: 安勤科技拓展AI運算產品布局，從資料中心基礎架構延伸至智慧邊緣應用
+    url: https://www.avalue.com/tw/news/list/Avalue-Expands-Its-AI-Computing-Portfolio-from-Data-Center-Infrastructure-to-Intelligent-Edge-Applications?category=Press-Release
+  tw.3479#e_module:
+    locator: 產品系列介紹
+    published_date: null
+    publisher: 安勤科技股份有限公司
+    quote_check: found
+    title: Computer-on-Module
+    url: https://www.avalue.com/tw/product/Computer-on-Module
+  tw.3479#e_pos:
+    locator: POS Terminal系列介紹
+    published_date: null
+    publisher: 安勤科技股份有限公司
+    quote_check: found
+    title: POS Terminal
+    url: https://www.avalue.com/tw/product/Panel-PC-Monitor-Mobile/POS-Terminal
+  tw.3479#e_position:
+    locator: 公司營運活動與價值鏈
+    published_date: '2026-08-31'
+    publisher: 安勤科技股份有限公司
+    quote_check: found
+    title: 公司簡介與背景介紹
+    url: https://www.avalue.com/tw/esg/article/公司簡介與背景介紹?category=all
+  tw.3479#e_revenue:
+    locator: 印刷第55頁／PDF第59頁，營業比重；右側為114年度
+    published_date: '2026-04-11'
+    publisher: 安勤科技股份有限公司
+    quote_check: found
+    title: 安勤科技股份有限公司一一四年度年報
+    url: https://downloadweb.avalue.com/public/upload/2026_05_22/81_20260522140225kchu1wDF81.pdf
+  tw.3479#e_server:
+    locator: 高效能基礎架構支援集中式AI運算
+    published_date: '2026-10-01'
+    publisher: 安勤科技股份有限公司
+    quote_check: found
+    title: 安勤科技拓展AI運算產品布局，從資料中心基礎架構延伸至智慧邊緣應用
+    url: https://www.avalue.com/tw/news/list/Avalue-Expands-Its-AI-Computing-Portfolio-from-Data-Center-Infrastructure-to-Intelligent-Edge-Applications?category=Press-Release
+  tw.3479#e_sub_bcm:
+    locator: 印刷第10頁／PDF第11頁，子公司表，115.6.30持股欄
+    published_date: '2026-08-13'
+    publisher: 安勤科技股份有限公司
+    quote_check: not_found
+    title: 安勤科技股份有限公司及子公司115年第二季合併財務報告
+    url: https://downloadweb.avalue.com/public/upload/2026_08_16/81_20260816152855fhrft0bx20.pdf
+  tw.3479#e_sub_bytec:
+    locator: 印刷第10頁／PDF第11頁，子公司表，115.6.30持股欄
+    published_date: '2026-08-13'
+    publisher: 安勤科技股份有限公司
+    quote_check: not_found
+    title: 安勤科技股份有限公司及子公司115年第二季合併財務報告
+    url: https://downloadweb.avalue.com/public/upload/2026_08_16/81_20260816152855fhrft0bx20.pdf
+  tw.3479#e_sub_cheng:
+    locator: 印刷第10頁／PDF第11頁，子公司表，115.6.30持股欄
+    published_date: '2026-08-13'
+    publisher: 安勤科技股份有限公司
+    quote_check: not_found
+    title: 安勤科技股份有限公司及子公司115年第二季合併財務報告
+    url: https://downloadweb.avalue.com/public/upload/2026_08_16/81_20260816152855fhrft0bx20.pdf
+  tw.3479#e_sub_heading:
+    locator: 印刷第10頁／PDF第11頁，合併基礎及子公司表
+    published_date: '2026-08-13'
+    publisher: 安勤科技股份有限公司
+    quote_check: found
+    title: 安勤科技股份有限公司及子公司115年第二季合併財務報告
+    url: https://downloadweb.avalue.com/public/upload/2026_08_16/81_20260816152855fhrft0bx20.pdf
+  tw.3479#e_sub_rui:
+    locator: 印刷第10頁／PDF第11頁，子公司表，115.6.30持股欄
+    published_date: '2026-08-13'
+    publisher: 安勤科技股份有限公司
+    quote_check: not_found
+    title: 安勤科技股份有限公司及子公司115年第二季合併財務報告
+    url: https://downloadweb.avalue.com/public/upload/2026_08_16/81_20260816152855fhrft0bx20.pdf
+  tw.3479#e_tablet:
+    locator: CAXA0產品說明
+    published_date: null
+    publisher: 安勤科技股份有限公司
+    quote_check: found
+    title: CAXA0 | Medical Tablet
+    url: https://www.avalue.com/tw/product/Intelligent-Healthcare/Medical-Tablet/CAXA0

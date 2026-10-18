@@ -21,6 +21,14 @@ stages:
   tier: downstream
   name_en: Systems
 members:
+- id: tw.1503
+  stage: system
+  tier: downstream
+  detail: Robot整合應用
+  as_of: 2026-10
+  evidence:
+  - tw.1503#e9
+  confidence: ai_cross_checked
 - id: tw.1504
   stage: components
   tier: upstream
@@ -29,6 +37,15 @@ members:
   evidence:
   - tw.1504#e13
   confidence: ai_cross_checked
+- id: tw.1536
+  stage: components
+  tier: upstream
+  detail: 機器人減速器
+  as_of: '2026-07-22'
+  evidence:
+  - tw.1536#e7
+  - tw.1536#e8
+  confidence: ai_cross_checked
 - id: tw.1590
   stage: components
   tier: upstream
@@ -36,6 +53,39 @@ members:
   as_of: '2026-03-31'
   evidence:
   - tw.1590#e7
+  confidence: ai_cross_checked
+- id: tw.1597
+  stage: components
+  tier: upstream
+  detail: 機器人用線性滑軌
+  as_of: '2026-10-18'
+  evidence:
+  - tw.1597#e6
+  confidence: ai_cross_checked
+- id: tw.1597
+  stage: control
+  tier: midstream
+  detail: 機械手臂整合控制平台
+  as_of: '2026-10-18'
+  evidence:
+  - tw.1597#e9
+  confidence: ai_cross_checked
+- id: tw.1597
+  stage: system
+  tier: downstream
+  detail: 微型六軸機械手臂整機
+  as_of: '2026-10-18'
+  evidence:
+  - tw.1597#e7
+  confidence: ai_cross_checked
+- id: tw.2010
+  stage: components
+  tier: upstream
+  detail: 機器人用矽鋼產品與馬達鐵芯
+  as_of: 2026-10
+  evidence:
+  - tw.2010#e5
+  - tw.2010#e6
   confidence: ai_cross_checked
 - id: tw.2049
   stage: components
@@ -53,6 +103,15 @@ members:
   as_of: '2026-10-14'
   evidence:
   - tw.2049#e04
+  confidence: ai_cross_checked
+- id: tw.2233
+  stage: components
+  tier: upstream
+  detail: 人形機器人相關減速機開發
+  as_of: '2025-06-27'
+  evidence:
+  - tw.2233#e6
+  - tw.2233#e7
   confidence: ai_cross_checked
 - id: tw.2308
   stage: system
@@ -123,6 +182,14 @@ members:
   - tw.2374#e7
   - tw.2374#e9
   confidence: ai_cross_checked
+- id: tw.2377
+  stage: system
+  tier: downstream
+  detail: 自主移動機器人整機
+  as_of: '2025-05-19'
+  evidence:
+  - tw.2377#e08
+  confidence: ai_cross_checked
 - id: tw.2379
   stage: components
   tier: upstream
@@ -155,6 +222,15 @@ members:
   evidence:
   - tw.2395#e4
   - tw.2395#e5
+  confidence: ai_cross_checked
+- id: tw.2401
+  stage: components
+  tier: upstream
+  detail: 自走機器人用AI視覺運算晶片
+  as_of: '2026-10-18'
+  evidence:
+  - tw.2401#e7
+  - tw.2401#e11
   confidence: ai_cross_checked
 - id: tw.2402
   stage: control
@@ -216,6 +292,47 @@ members:
   evidence:
   - tw.3023#e23
   confidence: ai_cross_checked
+- id: tw.3048
+  stage: control
+  tier: midstream
+  detail: 機器人運算平台通路
+  as_of: '2026-10-18'
+  evidence:
+  - tw.3048#e6
+  confidence: ai_cross_checked
+- id: tw.3059
+  stage: components
+  tier: upstream
+  detail: 機器人3D視覺感測
+  as_of: '2026-06-01'
+  evidence:
+  - tw.3059#e4
+  - tw.3059#e6
+  confidence: ai_cross_checked
+- id: tw.3088
+  stage: control
+  tier: midstream
+  detail: 自主移動機器人控制器
+  as_of: 2026-10
+  evidence:
+  - tw.3088#e6
+  confidence: ai_cross_checked
+- id: tw.3162
+  stage: components
+  tier: upstream
+  detail: 機器人結構件加工
+  as_of: '2026-10-18'
+  evidence:
+  - tw.3162#e7
+  confidence: ai_cross_checked
+- id: tw.3162
+  stage: system
+  tier: downstream
+  detail: 自有品牌機器人
+  as_of: '2026-10-18'
+  evidence:
+  - tw.3162#e6
+  confidence: ai_cross_checked
 - id: tw.3227
   stage: components
   tier: upstream
@@ -240,6 +357,22 @@ members:
   evidence:
   - tw.3416#e8
   confidence: ai_cross_checked
+- id: tw.3441
+  stage: components
+  tier: upstream
+  detail: AI機器人光學玻璃毛胚
+  as_of: '2025-12-31'
+  evidence:
+  - tw.3441#e5
+  confidence: ai_cross_checked
+- id: tw.3498
+  stage: system
+  tier: downstream
+  detail: 工業型機器人物料搬運與系統整合
+  as_of: '2026-10-18'
+  evidence:
+  - tw.3498#e7
+  confidence: ai_cross_checked
 - id: tw.3577
   stage: control
   tier: midstream
@@ -249,6 +382,14 @@ members:
   - tw.3577#e5
   - tw.3577#e6
   confidence: ai_cross_checked
+- id: tw.3645
+  stage: components
+  tier: upstream
+  detail: PI薄膜的機器人材料應用
+  as_of: 2025-12
+  evidence:
+  - tw.3645#e9
+  confidence: ai_cross_checked
 - id: tw.3702
   stage: control
   tier: midstream
@@ -257,6 +398,14 @@ members:
   evidence:
   - tw.3702#e10
   confidence: ai_cross_checked
+- id: tw.3708
+  stage: system
+  tier: downstream
+  detail: 子公司研發人形及四足機器人
+  as_of: 2026-10
+  evidence:
+  - tw.3708#e7
+  confidence: ai_cross_checked
 - id: tw.4506
   stage: system
   tier: downstream
@@ -264,6 +413,30 @@ members:
   as_of: '2025-11-26'
   evidence:
   - tw.4506#e6
+  confidence: ai_cross_checked
+- id: tw.4526
+  stage: system
+  tier: downstream
+  detail: 機械手臂與自動化產線系統整合
+  as_of: '2026-10-18'
+  evidence:
+  - tw.4526#e8
+  confidence: ai_cross_checked
+- id: tw.4566
+  stage: components
+  tier: upstream
+  detail: 旋轉關節零組件
+  as_of: 2026-10
+  evidence:
+  - tw.4566#e8
+  confidence: ai_cross_checked
+- id: tw.4571
+  stage: components
+  tier: upstream
+  detail: 工業機器人用諧波減速器
+  as_of: '2026-04-21'
+  evidence:
+  - tw.4571#e8
   confidence: ai_cross_checked
 - id: tw.4576
   stage: control
@@ -291,6 +464,14 @@ members:
   - tw.4585#e1
   - tw.4585#e2
   confidence: ai_cross_checked
+- id: tw.4760
+  stage: components
+  tier: upstream
+  detail: 機器人感測材料應用布局
+  as_of: 2026-05
+  evidence:
+  - tw.4760#e11
+  confidence: ai_cross_checked
 - id: tw.4915
   stage: components
   tier: upstream
@@ -316,6 +497,14 @@ members:
   - tw.4919#e_robotics
   - tw.4919#e_mcu
   confidence: ai_cross_checked
+- id: tw.4973
+  stage: components
+  tier: upstream
+  detail: AMR自主移動機器人用工控SSD
+  as_of: '2026-06-02'
+  evidence:
+  - tw.4973#e5
+  confidence: ai_cross_checked
 - id: tw.5351
   stage: components
   tier: upstream
@@ -323,6 +512,33 @@ members:
   as_of: '2026-05-12'
   evidence:
   - tw.5351#e7
+  confidence: ai_cross_checked
+- id: tw.5386
+  stage: control
+  tier: midstream
+  detail: 機器人AI控制器與同步運算基礎架構
+  as_of: 2026-10
+  evidence:
+  - tw.5386#e7
+  - tw.5386#e8
+  - tw.5386#e9
+  confidence: ai_cross_checked
+- id: tw.6125
+  stage: system
+  tier: downstream
+  detail: AMR整機與多機協作系統
+  as_of: 2026-10
+  evidence:
+  - tw.6125#e4
+  - tw.6125#e5
+  confidence: ai_cross_checked
+- id: tw.6153
+  stage: components
+  tier: upstream
+  detail: 機器人感測模組用軟板開發
+  as_of: 2026-05
+  evidence:
+  - tw.6153#e08
   confidence: ai_cross_checked
 - id: tw.6166
   stage: control
@@ -349,6 +565,14 @@ members:
   - tw.6188#e6
   - tw.6188#e7
   confidence: ai_cross_checked
+- id: tw.6227
+  stage: system
+  tier: downstream
+  detail: 機械手臂與AI視覺系統整合
+  as_of: 2025-08
+  evidence:
+  - tw.6227#e7
+  confidence: ai_cross_checked
 - id: tw.6414
   stage: system
   tier: downstream
@@ -357,6 +581,23 @@ members:
   evidence:
   - tw.6414#e6
   - tw.6414#e9
+  confidence: ai_cross_checked
+- id: tw.6438
+  stage: system
+  tier: downstream
+  detail: 晶圓傳輸機器人
+  as_of: '2026-04-15'
+  evidence:
+  - tw.6438#e7
+  confidence: ai_cross_checked
+- id: tw.6462
+  stage: components
+  tier: upstream
+  detail: 機器人避障感測
+  as_of: '2025-09-25'
+  evidence:
+  - tw.6462#e12
+  - tw.6462#e20
   confidence: ai_cross_checked
 - id: tw.6548
   stage: components
@@ -382,6 +623,14 @@ members:
   evidence:
   - tw.6579#e7
   confidence: ai_cross_checked
+- id: tw.6693
+  stage: components
+  tier: upstream
+  detail: 人形機器人電源與電池管理功率元件
+  as_of: '2026-10-18'
+  evidence:
+  - tw.6693#e10
+  confidence: ai_cross_checked
 - id: tw.6739
   stage: system
   tier: downstream
@@ -389,6 +638,14 @@ members:
   as_of: '2026-10-15'
   evidence:
   - tw.6739#e8
+  confidence: ai_cross_checked
+- id: tw.6907
+  stage: control
+  tier: midstream
+  detail: 機器人驅動與控制用MCU
+  as_of: '2025-11-07'
+  evidence:
+  - tw.6907#e7
   confidence: ai_cross_checked
 - id: tw.7750
   stage: control
@@ -406,6 +663,47 @@ members:
   evidence:
   - tw.7750#e8
   - tw.7750#e14
+  confidence: ai_cross_checked
+- id: tw.8050
+  stage: control
+  tier: midstream
+  detail: 機器人應用之邊緣運算平台
+  as_of: '2026-10-18'
+  evidence:
+  - tw.8050#e4
+  confidence: ai_cross_checked
+- id: tw.8234
+  stage: control
+  tier: midstream
+  detail: 集團機器人控制器
+  as_of: '2026-06-02'
+  evidence:
+  - tw.8234#e6
+  - tw.8234#e12
+  confidence: ai_cross_checked
+- id: tw.8234
+  stage: system
+  tier: downstream
+  detail: 子公司自主移動機器人整機
+  as_of: '2025-01-10'
+  evidence:
+  - tw.8234#e7
+  confidence: ai_cross_checked
+- id: tw.8374
+  stage: system
+  tier: downstream
+  detail: 機器視覺與機器人系統整合
+  as_of: 2026-10
+  evidence:
+  - tw.8374#e17
+  confidence: ai_cross_checked
+- id: tw.8938
+  stage: components
+  tier: upstream
+  detail: 複合材料機器人手臂配件
+  as_of: '2026-10-18'
+  evidence:
+  - tw.8938#e6
   confidence: ai_cross_checked
 - id: tw.9105
   stage: system
@@ -430,5 +728,13 @@ members:
   as_of: 2026-10
   evidence:
   - tw.9925#e8
+  confidence: ai_cross_checked
+- id: tw.9942
+  stage: components
+  tier: upstream
+  detail: 機械手臂用油封及密封元件
+  as_of: 2026-10
+  evidence:
+  - tw.9942#e04
   confidence: ai_cross_checked
 as_of: '2026-10-18'

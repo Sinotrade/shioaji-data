@@ -8,13 +8,241 @@ industry:
   l0_code: '31'
   l0_name: 其他電子業
   l0_name_en: Other Electronic
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.other
+  l3_name: 其他電子零組件
+  l3_name_en: Other Electronic Components
+primary_chain_position: midstream
+summary_short: 透過子公司研發、生產及銷售電子材料與電子衡器。
+summary_long: 鼎炫-KY透過子公司經營電子材料與電子衡器，2025年營收占比分別為75.47%與24.53%。材料事業由隆揚電子等公司執行，產品包括電磁遮蔽與導熱材料、導電膠帶及鐵氧體，應用涵蓋消費電子與新能源車電子。隆揚旗下聚赫新材開發高頻低損耗銅箔，面向AI伺服器等用途，年報仍載有客戶驗證及量產條件。衡器事業由台衡等公司經營，提供電子衡器及智慧秤重系統，應用於商業、工業、實驗室與醫療保健領域。
+segments:
+- evidence_ids:
+  - e4
+  id: materials
+  name: 電子材料
+  period: 2025年度
+  revenue_share_pct: 75.47
+- evidence_ids:
+  - e4
+  id: weighing
+  name: 電子衡器
+  period: 2025年度
+  revenue_share_pct: 24.53
+main_theme: theme.ev
+themes:
+- stage: parts
+  theme: theme.ev
+  tier: midstream
+- stage: board_materials
+  theme: theme.ai_server
+  tier: upstream
+- stage: components
+  theme: theme.apple
+  tier: upstream
+relations:
+  subsidiaries:
+  - as_of: '2026-05-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 電子材料經營子公司
+    details:
+    - 電子材料經營子公司
+    edge: e5cfdebb88dea
+    evidence_level: primary
+    id: cn.301389
+    name: 隆揚電子（昆山）股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-05-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 隆揚旗下電子銅箔研發公司
+    details:
+    - 隆揚旗下電子銅箔研發公司
+    edge: ee8065fc82d39
+    evidence_level: primary
+    id: org.juhe-new-materials
+    name: 聚赫新材股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-05-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 香港子公司
+    details:
+    - 香港子公司
+    edge: e48515851d75e
+    evidence_level: primary
+    id: org.ly-international
+    name: LY International Co., Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-05-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 薩摩亞子公司
+    details:
+    - 薩摩亞子公司
+    edge: e046cb118bb1b
+    evidence_level: primary
+    id: org.tscale-international
+    name: TSCALE INTERNATIONAL CORP.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-05-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 電子衡器經營子公司
+    details:
+    - 電子衡器經營子公司
+    edge: eadee46a0d8ec
+    evidence_level: primary
+    id: org.tscale-kunshan
+    name: 台衡精密測控（昆山）股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 共同開發下一世代AI伺服器、交換器及AI PC用銅箔基板的幾家主要企業，來源未…
 website: http://topbright.taiwanscale.com
 tax_id: '72780928'
 incorporated: '2013-11-08'
 listed: '2017-11-24'
 foreign_registration: KY 開曼群島
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-18'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.8499#e1:
+    locator: 公司簡介，第1、3段
+    published_date: null
+    publisher: 鼎炫投資控股股份有限公司
+    quote_check: not_found
+    title: 公司簡介
+    url: https://topbright.taiwanscale.com/cn/aboutus_cn.asp?aboutus_class=profile
+  tw.8499#e10:
+    locator: 台衡公司介紹
+    published_date: null
+    publisher: 鼎炫投資控股股份有限公司
+    quote_check: not_found
+    title: 公司簡介
+    url: https://topbright.taiwanscale.com/cn/aboutus_cn.asp?aboutus_class=profile
+  tw.8499#e11:
+    locator: 第1頁
+    published_date: '2025-11-10'
+    publisher: 臺灣證券交易所
+    quote_check: found
+    title: 鼎炫-KY違反重大訊息規定公告
+    url: https://wwwc.twse.com.tw/staticFiles/news/news/tsecnews/8a8216d69a3d6cf9019a6d281d4d00f5.pdf
+  tw.8499#e12:
+    locator: 封裡，香港子公司
+    published_date: '2026-05-14'
+    publisher: 鼎炫投資控股股份有限公司
+    quote_check: found
+    title: 2025年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52758/2026/RNS/52758_rns_2026-09-26_3d46a25e-e732-4a93-88cb-dd110200749f.pdf
+  tw.8499#e13:
+    locator: 封裡，薩摩亞子公司
+    published_date: '2026-05-14'
+    publisher: 鼎炫投資控股股份有限公司
+    quote_check: found
+    title: 2025年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52758/2026/RNS/52758_rns_2026-09-26_3d46a25e-e732-4a93-88cb-dd110200749f.pdf
+  tw.8499#e14:
+    locator: PDF第5頁，隆揚電子基本資料
+    published_date: '2025-07-09'
+    publisher: 鼎炫投資控股股份有限公司
+    quote_check: found
+    title: 2025年7月9日法人說明會簡報
+    url: https://mopsov.twse.com.tw/nas/STR/849920250709M003.pdf
+  tw.8499#e15:
+    locator: 印刷第48頁，集團轉投資事業持股表
+    published_date: '2026-05-14'
+    publisher: 鼎炫投資控股股份有限公司
+    quote_check: found
+    title: 2025年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52758/2026/RNS/52758_rns_2026-09-26_3d46a25e-e732-4a93-88cb-dd110200749f.pdf
+  tw.8499#e16:
+    locator: 印刷第53頁，目前之商品項目
+    published_date: '2026-05-14'
+    publisher: 鼎炫投資控股股份有限公司
+    quote_check: found
+    title: 2025年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52758/2026/RNS/52758_rns_2026-09-26_3d46a25e-e732-4a93-88cb-dd110200749f.pdf
+  tw.8499#e17:
+    locator: PDF第7頁，傳統業務營收與毛利
+    published_date: '2025-07-09'
+    publisher: 鼎炫投資控股股份有限公司
+    quote_check: found
+    title: 2025年7月9日法人說明會簡報
+    url: https://mopsov.twse.com.tw/nas/STR/849920250709M003.pdf
+  tw.8499#e2:
+    locator: 隆揚公司主要產品
+    published_date: null
+    publisher: 鼎炫投資控股股份有限公司
+    quote_check: not_found
+    title: 材料事業－產品介紹
+    url: https://topbright.taiwanscale.com/cn/longyoung_cn.asp?longyoung_class=history
+  tw.8499#e3:
+    locator: 隆揚產品清單
+    published_date: null
+    publisher: 鼎炫投資控股股份有限公司
+    quote_check: not_found
+    title: 材料事業－產品介紹
+    url: https://topbright.taiwanscale.com/cn/longyoung_cn.asp?longyoung_class=history
+  tw.8499#e4:
+    locator: 印刷第53頁，所營業務之營業比重；單位千元、%
+    published_date: '2026-05-14'
+    publisher: 鼎炫投資控股股份有限公司
+    quote_check: found
+    title: 2025年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52758/2026/RNS/52758_rns_2026-09-26_3d46a25e-e732-4a93-88cb-dd110200749f.pdf
+  tw.8499#e5:
+    locator: 電子材料事業介紹
+    published_date: null
+    publisher: 鼎炫投資控股股份有限公司
+    quote_check: not_found
+    title: 公司簡介
+    url: https://topbright.taiwanscale.com/cn/aboutus_cn.asp?aboutus_class=profile
+  tw.8499#e6:
+    locator: 衡器產品介紹
+    published_date: null
+    publisher: 鼎炫投資控股股份有限公司
+    quote_check: not_found
+    title: 公司簡介
+    url: https://topbright.taiwanscale.com/cn/aboutus_cn.asp?aboutus_class=profile
+  tw.8499#e7:
+    locator: PDF第17頁，銅箔事業情況說明
+    published_date: '2025-07-09'
+    publisher: 鼎炫投資控股股份有限公司
+    quote_check: found
+    title: 2025年7月9日法人說明會簡報
+    url: https://mopsov.twse.com.tw/nas/STR/849920250709M003.pdf
+  tw.8499#e8:
+    locator: 印刷第79頁，公司開發銅箔新產品
+    published_date: '2026-05-14'
+    publisher: 鼎炫投資控股股份有限公司
+    quote_check: found
+    title: 2025年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52758/2026/RNS/52758_rns_2026-09-26_3d46a25e-e732-4a93-88cb-dd110200749f.pdf
+  tw.8499#e9:
+    locator: 印刷第48頁，集團轉投資事業持股表
+    published_date: '2026-05-14'
+    publisher: 鼎炫投資控股股份有限公司
+    quote_check: found
+    title: 2025年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52758/2026/RNS/52758_rns_2026-09-26_3d46a25e-e732-4a93-88cb-dd110200749f.pdf

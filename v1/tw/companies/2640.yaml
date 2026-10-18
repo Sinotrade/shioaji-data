@@ -8,12 +8,109 @@ industry:
   l0_code: '36'
   l0_name: 數位雲端
   l0_name_en: Digital and Cloud Services
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.software
+  l2_name: 軟體與資訊服務
+  l2_name_en: Software & IT Services
+  l3: sw.internet
+  l3_name: 網路平台與電子商務
+  l3_name_en: Internet Platforms & E-commerce
+primary_chain_position: not_applicable
+summary_short: 以55688平台經營叫車、生活服務媒合及廣告業務。
+summary_long: 大車隊以55688 APP提供叫車與生活服務媒合，透過數位平台連結乘車需求與駕駛。集團服務延伸至即時快遞、代駕與居家清潔；即時快遞可在APP下單並追蹤配送，酒後代駕則由駕手駕駛使用者自有車輛。生活服務提供一般清潔、深度打掃與裝潢後清潔等預約項目，廣告業務則整合計程車、影城、貨卡與APP媒體。歷史董事會資料另揭露台灣大車隊投資控股及台灣智慧生活網為子公司。
+relations:
+  subsidiaries:
+  - as_of: '2022-03-21'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司，依2022年董事會揭露
+    details:
+    - 直接子公司，依2022年董事會揭露
+    edge: e1a0b0a10f443
+    evidence_level: primary
+    id: org.taiwan-smart-life-network
+    name: 台灣智慧生活網股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-11-12'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司，依2024年董事會揭露
+    details:
+    - 直接子公司，依2024年董事會揭露
+    edge: e966f5cbd1591
+    evidence_level: primary
+    id: org.taiwan-taxi-investment-holding
+    name: 台灣大車隊投資控股股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.taiwantaxi.com.tw
 tax_id: '27767961'
 incorporated: '2005-09-09'
 listed: '2012-11-07'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-18'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2640#e1:
+    locator: 公司資料／主要經營業務；公司名稱及股票代號欄
+    published_date: null
+    publisher: 台灣大車隊股份有限公司
+    quote_check: found
+    title: 投資人專區－公司資料
+    url: https://www.55688.com.tw/investor-relations/company-info
+  tw.2640#e2:
+    locator: 叫車服務
+    published_date: null
+    publisher: 台灣大車隊股份有限公司
+    quote_check: found
+    title: 服務總覽－車輛服務
+    url: https://www.55688.com.tw/services/vehicle-services
+  tw.2640#e3:
+    locator: 即時快遞
+    published_date: null
+    publisher: 台灣大車隊股份有限公司
+    quote_check: found
+    title: 服務總覽－快遞服務
+    url: https://www.55688.com.tw/services/delivery-services
+  tw.2640#e4:
+    locator: 酒後代駕
+    published_date: null
+    publisher: 台灣大車隊股份有限公司
+    quote_check: found
+    title: 服務總覽－代駕服務
+    url: https://www.55688.com.tw/services/chauffeur-services
+  tw.2640#e5:
+    locator: 居家清潔
+    published_date: null
+    publisher: 台灣大車隊股份有限公司
+    quote_check: found
+    title: 服務總覽－生活幫手
+    url: https://www.55688.com.tw/services/lifestyle-services
+  tw.2640#e6:
+    locator: 媒體整合
+    published_date: null
+    publisher: 台灣大車隊股份有限公司
+    quote_check: found
+    title: 服務總覽－廣告合作
+    url: https://www.55688.com.tw/services/advertisement
+  tw.2640#e7:
+    locator: 第七次113.11.12，第7案
+    published_date: null
+    publisher: 台灣大車隊股份有限公司
+    quote_check: found
+    title: 2024年董事會重要決議
+    url: https://www.55688.com.tw/significant-board-resolutions/2024
+  tw.2640#e8:
+    locator: 第一次111.03.21，第5案
+    published_date: null
+    publisher: 台灣大車隊股份有限公司
+    quote_check: found
+    title: 2022年董事會重要決議
+    url: https://www.55688.com.tw/significant-board-resolutions/2022

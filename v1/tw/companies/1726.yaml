@@ -8,12 +8,193 @@ industry:
   l0_code: '21'
   l0_name: 化學工業
   l0_name_en: Chemical
-primary_chain_position: unknown
+  l1: materials
+  l1_name: 原物料
+  l1_name_en: Materials
+  l2: mat.chemicals
+  l2_name: 化工
+  l2_name_en: Chemicals
+  l3: chem.specialty
+  l3_name: 特用化學品
+  l3_name_en: Specialty Chemicals
+chain: chain.petrochem
+primary_chain_position: downstream
+summary_short: 以虹牌油漆經營建築與工業塗料製造銷售，並承攬塗裝工程。
+summary_long: 永記以自有品牌「虹牌油漆」經營塗料製造與銷售，2025年合併財報列示銷貨收入占92%、塗裝工程收入占8%。建築塗料包含乳膠漆，應用於住宅、辦公大樓等室內牆面與天花板；重防蝕塗料用於橋樑、發電廠及石化設備等鋼結構。船舶產品涵蓋船底防污漆、船用面漆與底漆，另有鋼骨樑柱防火塗料。公司亦銷售彩色光阻用顏料分散液。2025年底合併範圍包括嘉興、越南、馬來西亞及美國的間接子公司。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_paint
+  name: 油漆事業
+  period: '2025'
+  revenue_share_pct: 92
+- evidence_ids:
+  - e2
+  id: seg_engineering
+  name: 塗裝工程
+  period: '2025'
+  revenue_share_pct: 8
+main_theme: theme.photoresist
+themes:
+- stage: raw
+  theme: theme.photoresist
+  tier: upstream
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 美國間接子公司
+    details:
+    - 美國間接子公司
+    edge: e4bc3369863e8
+    evidence_level: primary
+    id: org.continental-coatings-inc
+    name: Continental Coatings, Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接子公司
+    details:
+    - 間接子公司
+    edge: e701ce049288d
+    evidence_level: primary
+    id: org.永記造漆工業-嘉興-有限公司
+    name: 永記造漆工業（嘉興）有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接子公司
+    details:
+    - 間接子公司
+    edge: ece8ab5d3b49e
+    evidence_level: primary
+    id: org.永記造漆工業-越南-有限公司
+    name: 永記造漆工業（越南）有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接子公司
+    details:
+    - 間接子公司
+    edge: e9867d18dd412
+    evidence_level: primary
+    id: org.永記造漆工業-馬來西亞-有限公司
+    name: 永記造漆工業（馬來西亞）有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 彩色光阻用顏料分散液之未具名認證大廠
 website: www.rainbowpaint.com.tw
 tax_id: '75137605'
 incorporated: '1957-05-29'
 listed: '2000-09-11'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-18'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1726#e1:
+    locator: 公司全名及營業項目
+    published_date: null
+    publisher: 永記造漆工業股份有限公司
+    quote_check: found
+    title: 公司介紹－關於永記
+    url: https://www.rainbowpaint.com.tw/abouts
+  tw.1726#e10:
+    locator: 印刷頁31，附註十二「子公司」，Dmass所持子公司列
+    published_date: null
+    publisher: 永記造漆工業股份有限公司
+    quote_check: found
+    title: 民國114及113年度合併財務報告
+    url: https://www.rainbowpaint.com.tw/ir/overall/c665b526-c1e8-46c4-a605-081caacfa145/download?69f87ed6b14f7=
+  tw.1726#e11:
+    locator: 印刷頁31，附註十二「子公司」，永記美國所持子公司列；印刷頁68附表七列所在地美國
+    published_date: null
+    publisher: 永記造漆工業股份有限公司
+    quote_check: found
+    title: 民國114及113年度合併財務報告
+    url: https://www.rainbowpaint.com.tw/ir/overall/c665b526-c1e8-46c4-a605-081caacfa145/download?69f87ed6b14f7=
+  tw.1726#e12:
+    locator: 印刷頁53，品牌說明
+    published_date: null
+    publisher: 永記造漆工業股份有限公司
+    quote_check: found
+    title: 113年度年報
+    url: https://www.rainbowpaint.com.tw/ir/meeting/annual_report/0cf7c712-4701-41f6-b25f-2c36f6e0bebb/download?69f87ed6b1a3a=
+  tw.1726#e13:
+    locator: 印刷頁55，一般塗料生產流程簡圖
+    published_date: null
+    publisher: 永記造漆工業股份有限公司
+    quote_check: found
+    title: 113年度年報
+    url: https://www.rainbowpaint.com.tw/ir/meeting/annual_report/0cf7c712-4701-41f6-b25f-2c36f6e0bebb/download?69f87ed6b1a3a=
+  tw.1726#e2:
+    locator: 印刷頁9，合併綜合損益表；114年度金額及百分比欄
+    published_date: null
+    publisher: 永記造漆工業股份有限公司
+    quote_check: found
+    title: 民國114及113年度合併財務報告
+    url: https://www.rainbowpaint.com.tw/ir/overall/c665b526-c1e8-46c4-a605-081caacfa145/download?69f87ed6b14f7=
+  tw.1726#e3:
+    locator: 產品資訊－用途
+    published_date: null
+    publisher: 永記造漆工業股份有限公司
+    quote_check: found
+    title: 455 虹牌乳膠漆
+    url: https://www.rainbowpaint.com.tw/products/architecture-coatings/45af865e-68f2-4d11-9ded-574002fa9aa4/51f1a345-f99d-4701-a781-6964d145ecf8
+  tw.1726#e4:
+    locator: 產品資訊－用途
+    published_date: null
+    publisher: 永記造漆工業股份有限公司
+    quote_check: found
+    title: T200F 永特龍面漆（矽變性壓克力樹脂漆）
+    url: https://www.rainbowpaint.com.tw/products/heavy-duty-coatings/top-long/t-200f-toplong-coatingsilicone-acrylic
+  tw.1726#e5:
+    locator: 產品應用領域－船舶塗料
+    published_date: null
+    publisher: 永記造漆工業股份有限公司
+    quote_check: found
+    title: 產品介紹－船舶塗料
+    url: https://www.rainbowpaint.com.tw/products
+  tw.1726#e6:
+    locator: 產品資訊－用途
+    published_date: null
+    publisher: 永記造漆工業股份有限公司
+    quote_check: found
+    title: FM-906 火壩水性膨脹型防火泥塗料
+    url: https://www.rainbowpaint.com.tw/products/fire-retardant-series/fire-protection/fm-906-water-based-intumescent-fire-resistance-mastic-coating
+  tw.1726#e7:
+    locator: 研發成果末項
+    published_date: null
+    publisher: 永記造漆工業股份有限公司
+    quote_check: found
+    title: 研究發展－關於永記
+    url: https://www.rainbowpaint.com.tw/abouts/rd
+  tw.1726#e8:
+    locator: 印刷頁31，附註十二「子公司」，Bmass所持子公司列
+    published_date: null
+    publisher: 永記造漆工業股份有限公司
+    quote_check: found
+    title: 民國114及113年度合併財務報告
+    url: https://www.rainbowpaint.com.tw/ir/overall/c665b526-c1e8-46c4-a605-081caacfa145/download?69f87ed6b14f7=
+  tw.1726#e9:
+    locator: 印刷頁31，附註十二「子公司」，Dmass所持子公司列
+    published_date: null
+    publisher: 永記造漆工業股份有限公司
+    quote_check: found
+    title: 民國114及113年度合併財務報告
+    url: https://www.rainbowpaint.com.tw/ir/overall/c665b526-c1e8-46c4-a605-081caacfa145/download?69f87ed6b14f7=

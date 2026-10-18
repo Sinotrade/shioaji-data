@@ -8,12 +8,263 @@ industry:
   l0_code: '26'
   l0_name: 光電業
   l0_name_en: Optoelectronic
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.optical_component
+  l3_name: 光學元件與鏡頭
+  l3_name_en: Optical Components & Lenses
+primary_chain_position: midstream
+summary_short: 設計製造取像鏡頭、光學元件、車用光學、3D列印系統及微投光機。
+summary_long: 揚明光學主要業務包括取像光學、光學元件、車用光學、3D列印系統及微投光機。2025年營收以取像光學占36%最高，其次為光學元件23%、車用16%、3D列印機12%、微投光機10%，其他占3%。產品涵蓋取像鏡頭模組、波導鏡片、DLP光機、智慧頭燈及光達鏡頭。取像光學應用包含低軌衛星與無人機，CPO相關元件則持續推進送樣及試量產。中強光電為具實質控制能力的母公司，子公司包括昆山揚明、蘇州揚明及Young Optics (BD) Ltd.。
+segments:
+- evidence_ids:
+  - e02
+  id: seg_imaging
+  name: 取像光學
+  period: '2025'
+  revenue_share_pct: 36
+- evidence_ids:
+  - e02
+  id: seg_components
+  name: 光學元件
+  period: '2025'
+  revenue_share_pct: 23
+- evidence_ids:
+  - e02
+  id: seg_automotive
+  name: 車用
+  period: '2025'
+  revenue_share_pct: 16
+- evidence_ids:
+  - e02
+  id: seg_3d
+  name: 3D列印機
+  period: '2025'
+  revenue_share_pct: 12
+- evidence_ids:
+  - e02
+  id: seg_projection
+  name: 微投光機
+  period: '2025'
+  revenue_share_pct: 10
+- evidence_ids:
+  - e02
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 3
+main_theme: theme.drone
+themes:
+- stage: components
+  theme: theme.drone
+  tier: upstream
+- stage: components
+  theme: theme.leo_satellite
+  tier: upstream
+- stage: components
+  theme: theme.cpo
+  tier: upstream
+relations:
+  parents:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股32.63%並具實質控制能力
+    details:
+    - 持股32.63%並具實質控制能力
+    edge: e0bb2c9d63cd7
+    evidence_level: primary
+    id: tw.5371
+    name: 中強光電股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持股100%子公司
+    details:
+    - 間接持股100%子公司
+    edge: efb1d7e2a3f34
+    evidence_level: primary
+    id: org.best-alpha-investments-limited
+    name: Best Alpha Investments Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持股100%子公司
+    details:
+    - 間接持股100%子公司
+    edge: e23e781c235b4
+    evidence_level: primary
+    id: org.grace-china-investments-limited
+    name: Grace China Investments Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持股100%子公司
+    details:
+    - 間接持股100%子公司
+    edge: e510b1d93153d
+    evidence_level: primary
+    id: org.kunshan-young-optics
+    name: 昆山揚明光學有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%子公司
+    details:
+    - 直接持股100%子公司
+    edge: e2231ba3463c7
+    evidence_level: primary
+    id: org.masterview-enterprises-limited
+    name: Masterview Enterprises Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持股100%子公司
+    details:
+    - 間接持股100%子公司
+    edge: e98f4eeed73b6
+    evidence_level: primary
+    id: org.suzhou-young-optics
+    name: 蘇州揚明光學有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持股100%子公司
+    details:
+    - 間接持股100%子公司
+    edge: e54d433391015
+    evidence_level: primary
+    id: org.young-optics-bd
+    name: Young Optics (BD) Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.youngoptics.com
 tax_id: '12800061'
 incorporated: '2002-02-18'
 listed: '2007-01-26'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-18'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3504#e02:
+    locator: 第61頁，營業比重；欄位依序為項目、金額及營收比重(%)
+    published_date: '2026-05-04'
+    publisher: 揚明光學股份有限公司
+    quote_check: found
+    title: 揚明光學股份有限公司114年度年報
+    url: https://www.youngoptics.com/storage/system/Investor/Annual-Report/yo-ar-114.pdf
+  tw.3504#e03:
+    locator: 光學模組介紹
+    published_date: null
+    publisher: 揚明光學股份有限公司
+    quote_check: found
+    title: 客製化光學取像鏡頭模組｜揚明光學｜精密先進製程成就卓越品質
+    url: https://www.youngoptics.com/top-96
+  tw.3504#e04:
+    locator: 光機引擎介紹
+    published_date: null
+    publisher: 揚明光學股份有限公司
+    quote_check: found
+    title: 光機引擎－產品
+    url: https://www.youngoptics.com/top-95
+  tw.3504#e05:
+    locator: 光學元件介紹
+    published_date: null
+    publisher: 揚明光學股份有限公司
+    quote_check: found
+    title: 光學元件－產品
+    url: https://www.youngoptics.com/top-91
+  tw.3504#e06:
+    locator: 波導鏡片製造介紹
+    published_date: null
+    publisher: 揚明光學股份有限公司
+    quote_check: found
+    title: 世界頂尖AR波導鏡片｜揚明光學｜高規格品質的波導製造
+    url: https://www.youngoptics.com/top-91-product80
+  tw.3504#e07:
+    locator: 第62頁，公司目前之商品項目第4項
+    published_date: '2026-05-04'
+    publisher: 揚明光學股份有限公司
+    quote_check: found
+    title: 揚明光學股份有限公司114年度年報
+    url: https://www.youngoptics.com/storage/system/Investor/Annual-Report/yo-ar-114.pdf
+  tw.3504#e08:
+    locator: 產品清單：迎賓燈、智慧頭燈及光達鏡頭
+    published_date: null
+    publisher: 揚明光學股份有限公司
+    quote_check: not_found
+    title: 客製化光學取像鏡頭模組｜揚明光學｜精密先進製程成就卓越品質
+    url: https://www.youngoptics.com/top-96
+  tw.3504#e09:
+    locator: 第62頁，公司目前之商品項目第2項，取像光學應用
+    published_date: '2026-05-04'
+    publisher: 揚明光學股份有限公司
+    quote_check: found
+    title: 揚明光學股份有限公司114年度年報
+    url: https://www.youngoptics.com/storage/system/Investor/Annual-Report/yo-ar-114.pdf
+  tw.3504#e10:
+    locator: 第2頁，115年營業計畫概要
+    published_date: '2026-05-04'
+    publisher: 揚明光學股份有限公司
+    quote_check: found
+    title: 揚明光學股份有限公司114年度年報
+    url: https://www.youngoptics.com/storage/system/Investor/Annual-Report/yo-ar-114.pdf
+  tw.3504#e11:
+    locator: 第89頁，從屬公司與控制公司間之關係概況
+    published_date: '2026-05-04'
+    publisher: 揚明光學股份有限公司
+    quote_check: found
+    title: 揚明光學股份有限公司114年度年報
+    url: https://www.youngoptics.com/storage/system/Investor/Annual-Report/yo-ar-114.pdf
+  tw.3504#e12:
+    locator: 第56頁，轉投資事業持股表；本公司投資及綜合投資欄
+    published_date: '2026-05-04'
+    publisher: 揚明光學股份有限公司
+    quote_check: found
+    title: 揚明光學股份有限公司114年度年報
+    url: https://www.youngoptics.com/storage/system/Investor/Annual-Report/yo-ar-114.pdf
+  tw.3504#e13:
+    locator: 第56頁，轉投資事業持股表；直接或間接控制事業投資欄
+    published_date: '2026-05-04'
+    publisher: 揚明光學股份有限公司
+    quote_check: found
+    title: 揚明光學股份有限公司114年度年報
+    url: https://www.youngoptics.com/storage/system/Investor/Annual-Report/yo-ar-114.pdf
+  tw.3504#e14:
+    locator: 第56頁，轉投資事業持股表；直接或間接控制事業投資欄
+    published_date: '2026-05-04'
+    publisher: 揚明光學股份有限公司
+    quote_check: found
+    title: 揚明光學股份有限公司114年度年報
+    url: https://www.youngoptics.com/storage/system/Investor/Annual-Report/yo-ar-114.pdf

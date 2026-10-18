@@ -8,12 +8,220 @@ industry:
   l0_code: '10'
   l0_name: 鋼鐵工業
   l0_name_en: Iron and Steel
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.construction
+  l2_name: 營建與工程
+  l2_name_en: Engineering & Construction
+  l3: cons.engineering
+  l3_name: 工程與統包
+  l3_name_en: Engineering & EPC
+chain: chain.steel
+primary_chain_position: downstream
+summary_short: 以鋼結構工程、鋼材加工銷售為主，另供應馬達鐵芯及倉儲設備。
+summary_long: 春源以鋼結構工程與鋼材加工銷售為主要業務。2025年年報揭露工程收入占54.42%、鋼板占32.54%，另有特殊鋼帶板、特殊鋼品、矽鋼材、倉儲設備及加工收入。產品涵蓋熱軋與冷軋鋼板、特殊鋼、馬達積層鐵芯、自動倉儲及鋼結構工程，工程服務包含製作加工與安裝。矽鋼產品的應用產業包括機器人。海外子公司架構以新加坡春宇投資企業私人有限公司為直接投資平台，另經該公司及維京春源間接持有中國營運公司。
+segments:
+- evidence_ids:
+  - e1
+  id: engineering
+  name: 工程收入
+  period: '2025'
+  revenue_share_pct: 54.42
+- evidence_ids:
+  - e1
+  id: steel_sheet
+  name: 鋼板
+  period: '2025'
+  revenue_share_pct: 32.54
+- evidence_ids:
+  - e1
+  id: special_strip
+  name: 特殊鋼帶板
+  period: '2025'
+  revenue_share_pct: 4.27
+- evidence_ids:
+  - e1
+  id: special_steel
+  name: 特殊鋼品
+  period: '2025'
+  revenue_share_pct: 4.08
+- evidence_ids:
+  - e1
+  id: electrical_steel
+  name: 矽鋼材
+  period: '2025'
+  revenue_share_pct: 2.26
+- evidence_ids:
+  - e1
+  id: storage
+  name: 倉儲設備
+  period: '2025'
+  revenue_share_pct: 1.59
+- evidence_ids:
+  - e1
+  id: processing
+  name: 加工收入
+  period: '2025'
+  revenue_share_pct: 0.6
+- evidence_ids:
+  - e1
+  id: structural_sections
+  name: 型鋼
+  period: '2025'
+  revenue_share_pct: 0.24
+main_theme: theme.robotics
+themes:
+- stage: components
+  theme: theme.robotics
+  tier: upstream
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 經新加坡春宇間接持有的投資子公司
+    details:
+    - 經新加坡春宇間接持有的投資子公司
+    edge: e49e22cf2124d
+    evidence_level: primary
+    id: org.chun-yuan-investment-bvi
+    name: 維京春源投資股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有的海外投資子公司
+    details:
+    - 直接持有的海外投資子公司
+    edge: ebd4faade0058
+    evidence_level: primary
+    id: org.chun-yuan-investment-singapore
+    name: 新加坡春宇投資企業私人有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 經維京春源間接持有
+    details:
+    - 經維京春源間接持有
+    edge: e0b1343129272
+    evidence_level: primary
+    id: org.qingdao-chun-yuan-precision
+    name: 青島春源精密機電有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 經維京春源間接持有
+    details:
+    - 經維京春源間接持有
+    edge: e6fd4aaf631cd
+    evidence_level: primary
+    id: org.shanghai-hua-teng-metal
+    name: 上海華藤金屬加工有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 經海外投資子公司間接持有
+    details:
+    - 經海外投資子公司間接持有
+    edge: e9648c2ceb782
+    evidence_level: primary
+    id: org.shenzhen-chun-yuan-steel
+    name: 深圳春源鋼鐵工業有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 經海外子公司間接持有
+    details:
+    - 經海外子公司間接持有
+    edge: e1b14f1f7140d
+    evidence_level: primary
+    id: org.shenzhen-hong-yuan-metal
+    name: 深圳宏源金屬工業有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.cysco.com.tw/
 tax_id: '11529802'
 incorporated: '1966-01-07'
 listed: '1989-12-22'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-18'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2010#e1:
+    locator: 印刷頁52，業務內容及營業比重
+    published_date: null
+    publisher: 春源鋼鐵工業股份有限公司
+    quote_check: found
+    title: 春源鋼鐵工業股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51942/2026/RNS/51942_rns_2026-05-19_d7e76a44-7dfd-414b-b95c-c60f3bc656ee.pdf
+  tw.2010#e2:
+    locator: 營業內容第1點
+    published_date: null
+    publisher: 春源鋼鐵工業股份有限公司
+    quote_check: found
+    title: 營建事業部 - 春源鋼鐵
+    url: https://www.cysco.com.tw/businessdepartmentintroduction-07-page75
+  tw.2010#e3:
+    locator: 服務產業／鋼板事業部
+    published_date: null
+    publisher: 春源鋼鐵工業股份有限公司
+    quote_check: found
+    title: 鋼板事業部 - 春源鋼鐵
+    url: https://www.cysco.com.tw/businessdepartmentintroduction-01-page65
+  tw.2010#e4:
+    locator: 產品與服務
+    published_date: null
+    publisher: 春源鋼鐵工業股份有限公司
+    quote_check: found
+    title: 特殊鋼事業部 - 春源鋼鐵
+    url: https://www.cysco.com.tw/businessdepartmentintroduction-04-page71
+  tw.2010#e5:
+    locator: 營業內容／矽鋼產品
+    published_date: null
+    publisher: 春源鋼鐵工業股份有限公司
+    quote_check: found
+    title: 矽鋼事業部 - 春源鋼鐵
+    url: https://www.cysco.com.tw/businessdepartmentintroduction-03-page70
+  tw.2010#e6:
+    locator: 營業內容／矽鋼產品／應用產業
+    published_date: null
+    publisher: 春源鋼鐵工業股份有限公司
+    quote_check: found
+    title: 矽鋼事業部 - 春源鋼鐵
+    url: https://www.cysco.com.tw/businessdepartmentintroduction-03-page70
+  tw.2010#e7:
+    locator: 營業內容
+    published_date: null
+    publisher: 春源鋼鐵工業股份有限公司
+    quote_check: found
+    title: 自動倉儲事業部 - 春源鋼鐵
+    url: https://www.cysco.com.tw/businessdepartmentintroduction-06-page74
+  tw.2010#e8:
+    locator: 印刷頁76關係企業組織圖；頁79至80各關係企業董事、監察人及總經理資料，圖示及持股表共同支持直接與間接持有方向
+    published_date: null
+    publisher: 春源鋼鐵工業股份有限公司
+    quote_check: found
+    title: 春源鋼鐵工業股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51942/2026/RNS/51942_rns_2026-05-19_d7e76a44-7dfd-414b-b95c-c60f3bc656ee.pdf

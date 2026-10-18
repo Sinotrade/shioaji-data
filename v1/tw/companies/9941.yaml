@@ -82,6 +82,22 @@ themes:
   theme: theme.ev
   tier: downstream
 relations:
+  parents:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司；汽車相關產品銷售及租賃
+    details:
+    - 直接子公司；汽車相關產品銷售及租賃
+    - 母公司
+    edge: eed7f9dd68bf8
+    evidence_level: primary
+    id: tw.2201
+    name: 裕隆
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 2
   subsidiaries:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
@@ -93,6 +109,34 @@ relations:
     evidence_level: primary
     id: org.新鑫股份有限公司
     name: 新鑫股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接全資子公司
+    details:
+    - 直接全資子公司
+    edge: ecc669376b4bc
+    evidence_level: primary
+    id: org.格上汽車租賃股份有限公司
+    name: 格上汽車租賃股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過格上汽車租賃間接控制
+    details:
+    - 透過格上汽車租賃間接控制
+    edge: ebe08bbb10a9a
+    evidence_level: primary
+    id: org.行將企業股份有限公司
+    name: 行將企業股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -224,18 +268,67 @@ evidence:
     quote_check: unreachable
     title: 裕融企業股份有限公司｜產品及服務
     url: https://www.tac.com.tw/Tw/product-service
+  tw.9941#e15:
+    locator: 台灣／機車、商品分期業務，連結指向裕富數位官網
+    published_date: null
+    publisher: 裕融企業股份有限公司
+    quote_check: unreachable
+    title: 裕融企業股份有限公司｜產品及服務
+    url: https://www.tac.com.tw/Tw/product-service
+  tw.9941#e16:
+    locator: 台灣／租車業務，連結指向格上官網
+    published_date: null
+    publisher: 裕融企業股份有限公司
+    quote_check: unreachable
+    title: 裕融企業股份有限公司｜產品及服務
+    url: https://www.tac.com.tw/Tw/product-service
   tw.9941#e17:
     locator: 第27頁，附註十五「列入合併財務報告之子公司」，投資公司為本公司，新鑫列，115年6月30日欄
     published_date: null
     publisher: 裕融企業股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: 裕融企業股份有限公司及子公司115及114年第2季合併財務報告
     url: https://www.tac.com.tw/JsonFile/financial_report/202609091345051.pdf
   tw.9941#e18:
     locator: 第27頁，附註十五，投資公司為本公司，裕富數位資融列，115年6月30日欄
     published_date: null
     publisher: 裕融企業股份有限公司
-    quote_check: unreachable
+    quote_check: found
+    title: 裕融企業股份有限公司及子公司115及114年第2季合併財務報告
+    url: https://www.tac.com.tw/JsonFile/financial_report/202609091345051.pdf
+  tw.9941#e19:
+    locator: 第27頁，附註十五，投資公司為本公司，格上汽車租賃列，115年6月30日欄
+    published_date: null
+    publisher: 裕融企業股份有限公司
+    quote_check: found
+    title: 裕融企業股份有限公司及子公司115及114年第2季合併財務報告
+    url: https://www.tac.com.tw/JsonFile/financial_report/202609091345051.pdf
+  tw.9941#e20:
+    locator: 第83頁，被投資公司資訊，格上汽車租賃為投資公司、行將企業為被投資公司
+    published_date: null
+    publisher: 裕融企業股份有限公司
+    quote_check: found
+    title: 裕融企業股份有限公司及子公司115及114年第2季合併財務報告
+    url: https://www.tac.com.tw/JsonFile/financial_report/202609091345051.pdf
+  tw.9941#e21:
+    locator: 第83頁，格上汽車租賃投資行將企業列，期末持有股數與比率欄
+    published_date: null
+    publisher: 裕融企業股份有限公司
+    quote_check: found
+    title: 裕融企業股份有限公司及子公司115及114年第2季合併財務報告
+    url: https://www.tac.com.tw/JsonFile/financial_report/202609091345051.pdf
+  tw.9941#e22:
+    locator: 第27頁，附註十五，現行行將企業名稱與原名
+    published_date: null
+    publisher: 裕融企業股份有限公司
+    quote_check: found
+    title: 裕融企業股份有限公司及子公司115及114年第2季合併財務報告
+    url: https://www.tac.com.tw/JsonFile/financial_report/202609091345051.pdf
+  tw.9941#e23:
+    locator: 第62頁，附註三十一，關係人名稱及其關係
+    published_date: null
+    publisher: 裕融企業股份有限公司
+    quote_check: found
     title: 裕融企業股份有限公司及子公司115及114年第2季合併財務報告
     url: https://www.tac.com.tw/JsonFile/financial_report/202609091345051.pdf
   tw.9941#e24:
@@ -256,7 +349,7 @@ evidence:
     locator: 第27頁，附註十五，格上汽車租賃旗下列入合併之子公司
     published_date: null
     publisher: 裕融企業股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: 裕融企業股份有限公司及子公司115及114年第2季合併財務報告
     url: https://www.tac.com.tw/JsonFile/financial_report/202609091345051.pdf
   tw.9941#e27:

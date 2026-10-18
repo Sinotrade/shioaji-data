@@ -61,6 +61,105 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過CEH-BVI持有的投資子公司
+    details:
+    - 透過CEH-BVI持有的投資子公司
+    edge: e0eba18a2a22f
+    evidence_level: primary
+    id: org.centron-electronics-hk
+    name: Centron Electronics (HK) Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有的投資子公司
+    details:
+    - 直接持有的投資子公司
+    edge: e6a1bc81f6126
+    evidence_level: primary
+    id: org.china-electronic-bvi-holdings
+    name: China Electronic (BVI) Holdings Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 電子產品週邊設備組裝及銷售子公司
+    details:
+    - 電子產品週邊設備組裝及銷售子公司
+    edge: edb3830644002
+    evidence_level: primary
+    id: org.kunshan-centron-electronics
+    name: 昆山先創電子有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有的投資子公司
+    details:
+    - 直接持有的投資子公司
+    edge: ea8a0ff30ba88
+    evidence_level: primary
+    id: org.wus-group-bvi-holdings
+    name: WUS Group (BVI) Holdings Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有的投資子公司
+    details:
+    - 直接持有的投資子公司
+    edge: e337772981186
+    evidence_level: primary
+    id: org.wus-group-holdings
+    name: WUS Group Holdings Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 印刷電路板銷售及工程服務子公司
+    details:
+    - 印刷電路板銷售及工程服務子公司
+    edge: e0974235793e4
+    evidence_level: primary
+    id: org.wus-printed-circuit-singapore
+    name: WUS Printed Circuit (Singapore) Pte., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有的投資子公司
+    details:
+    - 直接持有的投資子公司
+    edge: e8d165a44ba7e
+    evidence_level: primary
+    id: org.yong-xu-investment
+    name: 永續投資股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.wus.com.tw
 tax_id: '76026851'
 incorporated: '1978-05-02'
@@ -76,6 +175,20 @@ evidence:
     quote_check: found
     title: 楠梓電子股份有限公司114年度年報
     url: https://www.wus.com.tw/images/pdf/114.pdf
+  tw.2316#e10:
+    locator: 印刷頁19，PDF第19頁，附註十二子公司；WUS-BVI投資欄
+    published_date: null
+    publisher: 楠梓電子股份有限公司
+    quote_check: found
+    title: 楠梓電子股份有限公司及子公司115年第2季合併財務報告
+    url: https://www.wus.com.tw/images/pdf/1152.pdf
+  tw.2316#e11:
+    locator: 印刷頁19，PDF第19頁，附註十二子公司；CEK投資欄
+    published_date: null
+    publisher: 楠梓電子股份有限公司
+    quote_check: found
+    title: 楠梓電子股份有限公司及子公司115年第2季合併財務報告
+    url: https://www.wus.com.tw/images/pdf/1152.pdf
   tw.2316#e2:
     locator: 印刷頁42，PDF第46頁，所營業務之主要內容
     published_date: '2026-04-30'
@@ -111,3 +224,24 @@ evidence:
     quote_check: found
     title: About Wus
     url: https://www.wus.com.tw/index.php/en/
+  tw.2316#e7:
+    locator: 印刷頁19，PDF第19頁，附註十二子公司；本公司直接投資欄
+    published_date: null
+    publisher: 楠梓電子股份有限公司
+    quote_check: found
+    title: 楠梓電子股份有限公司及子公司115年第2季合併財務報告
+    url: https://www.wus.com.tw/images/pdf/1152.pdf
+  tw.2316#e8:
+    locator: 印刷頁19，PDF第19頁，附註十二子公司；本公司直接投資欄
+    published_date: null
+    publisher: 楠梓電子股份有限公司
+    quote_check: found
+    title: 楠梓電子股份有限公司及子公司115年第2季合併財務報告
+    url: https://www.wus.com.tw/images/pdf/1152.pdf
+  tw.2316#e9:
+    locator: 印刷頁19，PDF第19頁，附註十二子公司；CEH-BVI投資欄
+    published_date: null
+    publisher: 楠梓電子股份有限公司
+    quote_check: found
+    title: 楠梓電子股份有限公司及子公司115年第2季合併財務報告
+    url: https://www.wus.com.tw/images/pdf/1152.pdf

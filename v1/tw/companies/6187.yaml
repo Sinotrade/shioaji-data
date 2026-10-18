@@ -159,7 +159,7 @@ relations:
     details:
     - 設備製造外包：惠特承接萬潤設備代工訂單
     edge: e85b32c289d13
-    evidence_level: primary
+    evidence_level: other
     id: tw.6706
     name: 惠特
     ranking_basis: unranked
@@ -229,6 +229,27 @@ relations:
     evidence_level: primary
     id: org.bo-run-investment
     name: 鉑潤投資股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣144,000,000元
+    as_of: '2026-04-08'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 取得臺中西屯土地及建物
+    details:
+    - 取得臺中西屯土地及建物
+    edge: e55c67e0ed538
+    event_date: '2026-04-08'
+    events:
+    - amount: 新台幣144,000,000元
+      detail: 取得臺中西屯土地及建物
+      event_date: '2026-04-08'
+    evidence_level: primary
+    id: org.hong-yuan-metal
+    name: 鴻園金屬工業股份有限公司
     ranking_basis: unranked
     role: buyer
     share_basis: null
@@ -462,6 +483,20 @@ evidence:
     quote_check: found
     title: 萬潤 本公司擬新設台灣子公司
     url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=0fd10f0a-6cac-42ec-8f9b-fdac3480152b
+  tw.6187#e23:
+    locator: 公告第6項
+    published_date: '2026-04-10'
+    publisher: 公開資訊觀測站重大訊息公告（Goodinfo刊載）
+    quote_check: unreachable
+    title: 更正本公司取得不動產公告(更正第二期款付款方式說明)
+    url: https://goodinfo.tw/tw/StockAnnounceDetail.asp?CLAIM_TIME=2026%2F04%2F10+13%3A58%3A46&STOCK_ID=6187&SUBJECT=%E6%9B%B4%E6%AD%A3%E6%9C%AC%E5%85%AC%E5%8F%B8%E5%8F%96%E5%BE%97%E4%B8%8D%E5%8B%95%E7%94%A2%E5%85%AC%E5%91%8A%28%E6%9B%B4%E6%AD%A3%E7%AC%AC%E4%BA%8C%E6%9C%9F%E6%AC%BE%E4%BB%98%E6%AC%BE%E6%96%B9%E5%BC%8F%E8%AA%AA%E6%98%8E%29
+  tw.6187#e23b:
+    locator: 公告第1、2、5、6項；兩組不動產各別金額
+    published_date: '2026-04-10'
+    publisher: 公開資訊觀測站重大訊息公告（Goodinfo刊載）
+    quote_check: unreachable
+    title: 更正本公司取得不動產公告(更正第二期款付款方式說明)
+    url: https://goodinfo.tw/tw/StockAnnounceDetail.asp?CLAIM_TIME=2026%2F04%2F10+13%3A58%3A46&STOCK_ID=6187&SUBJECT=%E6%9B%B4%E6%AD%A3%E6%9C%AC%E5%85%AC%E5%8F%B8%E5%8F%96%E5%BE%97%E4%B8%8D%E5%8B%95%E7%94%A2%E5%85%AC%E5%91%8A%28%E6%9B%B4%E6%AD%A3%E7%AC%AC%E4%BA%8C%E6%9C%9F%E6%AC%BE%E4%BB%98%E6%AC%BE%E6%96%B9%E5%BC%8F%E8%AA%AA%E6%98%8E%29
   tw.6187#e3:
     locator: 產品說明
     published_date: null

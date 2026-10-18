@@ -42,6 +42,23 @@ segments:
   name: 其他產品
   period: '2025'
   revenue_share_pct: 4.55
+main_theme: theme.ai_server
+themes:
+- stage: assembly
+  theme: theme.ai_server
+  tier: downstream
+- stage: it
+  theme: theme.data_center
+  tier: midstream
+- stage: system
+  theme: theme.liquid_cooling
+  tier: downstream
+- stage: system
+  theme: theme.nvidia
+  tier: downstream
+- stage: application
+  theme: theme.hbm
+  tier: downstream
 relations:
   competitors:
   - as_of: '2026-05-18'
@@ -115,7 +132,50 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  partners:
+  - as_of: '2026-10-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: AMD EPYC Genoa伺服器架構及儲存方案合作
+    details:
+    - AMD EPYC Genoa伺服器架構及儲存方案合作
+    edge: ef207cc6cd683
+    evidence_level: primary
+    id: kr.005930
+    name: Samsung Electronics
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2025-05
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: GB300 NVL72機櫃級產品合作
+    details:
+    - GB300 NVL72機櫃級產品合作
+    edge: e9b4fef4ccba4
+    evidence_level: primary
+    id: us.NVDA
+    name: NVIDIA
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 伺服器子公司，技嘉直接持股83.92%
+    details:
+    - 伺服器子公司，技嘉直接持股83.92%
+    edge: ec1eafec565b5
+    evidence_level: primary
+    id: org.giga-computing
+    name: 技鋼科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   - as_of: '2024-04-17'
     confidence: ai_cross_checked
     counterparty_shares: []
@@ -126,6 +186,91 @@ relations:
     evidence_level: primary
     id: org.nippon-giga-byte
     name: Nippon Giga-Byte Corp.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團投資子公司
+    details:
+    - 集團投資子公司
+    edge: e912aaa03b7ef
+    evidence_level: primary
+    id: org.zhijia-investment
+    name: 智嘉投資股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2025-04
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 2025年4月取得控制，持股升至100%
+    details:
+    - 2025年4月取得控制，持股升至100%
+    edge: eda6a457f41a1
+    evidence_level: primary
+    id: org.邁爾凌科技股份有限公司
+    name: 邁爾凌科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 年報晶片組及IC供應來源，未細分記憶體品項
+    details:
+    - 年報晶片組及IC供應來源，未細分記憶體品項
+    edge: edfea3fa686a4
+    evidence_level: primary
+    id: kr.000660
+    name: SK hynix
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 主機板與顯示卡用晶片組及IC
+    details:
+    - 主機板與顯示卡用晶片組及IC
+    edge: e6ec849020234
+    evidence_level: primary
+    id: us.AMD
+    name: AMD
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 主機板與顯示卡用晶片組及IC
+    details:
+    - 主機板與顯示卡用晶片組及IC
+    edge: ed336418d3f10
+    evidence_level: primary
+    id: us.INTC
+    name: Intel
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 主機板與顯示卡用晶片組及IC
+    details:
+    - 主機板與顯示卡用晶片組及IC
+    edge: e70b666de95c2
+    evidence_level: primary
+    id: us.NVDA
+    name: NVIDIA
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -173,6 +318,69 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  - amount: 新臺幣210,752,000元
+    as_of: '2025-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司智嘉出售聲遠精密光學及其東莞子公司全部股權
+    details:
+    - 子公司智嘉出售聲遠精密光學及其東莞子公司全部股權
+    edge: e7fb28c401aa8
+    event_date: null
+    events:
+    - amount: 新臺幣210,752,000元
+      detail: 子公司智嘉出售聲遠精密光學及其東莞子公司全部股權
+      event_date: null
+    evidence_level: primary
+    id: org.giga-image-technology
+    name: 鉅嘉聯合科技股份有限公司
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新臺幣100,000,000元
+    as_of: '2025-03-06'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司智嘉投資鉅嘉聯合科技
+    details:
+    - 子公司智嘉投資鉅嘉聯合科技
+    edge: ede3083a3d840
+    event_date: null
+    events:
+    - amount: 新臺幣100,000,000元
+      detail: 子公司智嘉投資鉅嘉聯合科技
+      event_date: null
+    evidence_level: primary
+    id: org.giga-image-technology
+    name: 鉅嘉聯合科技股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新臺幣52,000元
+    as_of: '2024-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 取得剩餘0.14%股權並吸收合併
+    details:
+    - 取得剩餘0.14%股權並吸收合併
+    edge: ea1c7cd58f201
+    event_date: '2024-08-14'
+    events:
+    - amount: 新臺幣52,000元
+      detail: 取得剩餘0.14%股權並吸收合併
+      event_date: '2024-08-14'
+    evidence_level: primary
+    id: org.gigabyte-communications
+    name: 集嘉通訊股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
   - amount: JPY 1,800,000,000元
     as_of: '2024-04-17'
     confidence: ai_cross_checked
@@ -210,6 +418,27 @@ relations:
     evidence_level: media
     id: org.家崎科技
     name: 家崎科技
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新臺幣30,600,000元
+    as_of: 2025-04
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 收購邁爾凌剩餘60%股權
+    details:
+    - 收購邁爾凌剩餘60%股權
+    edge: e6a419b93c7a4
+    event_date: null
+    events:
+    - amount: 新臺幣30,600,000元
+      detail: 收購邁爾凌剩餘60%股權
+      event_date: null
+    evidence_level: primary
+    id: org.邁爾凌科技股份有限公司
+    name: 邁爾凌科技股份有限公司
     ranking_basis: unranked
     role: buyer
     share_basis: null
@@ -291,6 +520,41 @@ evidence:
     quote_check: unreachable
     title: 攜手產業領導者，技鋼於 SC25 推進 AI 與高效能運算極限
     url: https://www.gigabyte.com/tw/press/news/2331
+  tw.2376#e07:
+    locator: 綠色運算
+    published_date: null
+    publisher: 技嘉科技股份有限公司
+    quote_check: unreachable
+    title: GIGABYTE at COMPUTEX 2025：全域運算，AI為先
+    url: https://www.gigabyte.com/tw/Events/Computex/2025
+  tw.2376#e08:
+    locator: PDF第105頁，The supply of key materials；Mother board & Graphic card、Chipset & IC供應表
+    published_date: null
+    publisher: 技嘉科技股份有限公司
+    quote_check: unreachable
+    title: GIGA-BYTE TECHNOLOGY CO., LTD. ANNUAL REPORT, 2025
+    url: https://www.gigabyte.com/FileUpload/Global/SiteMap/83/images/AnnualReportEng-2025.pdf
+  tw.2376#e09:
+    locator: PDF第105頁，The supply of key materials；Chipset & IC供應表
+    published_date: null
+    publisher: 技嘉科技股份有限公司
+    quote_check: unreachable
+    title: GIGA-BYTE TECHNOLOGY CO., LTD. ANNUAL REPORT, 2025
+    url: https://www.gigabyte.com/FileUpload/Global/SiteMap/83/images/AnnualReportEng-2025.pdf
+  tw.2376#e11:
+    locator: GIGABYTE Strategic Partners for 4th Gen AMD EPYC Processors
+    published_date: null
+    publisher: 技嘉科技股份有限公司
+    quote_check: unreachable
+    title: 4th Gen AMD EPYC Solutions
+    url: https://www.gigabyte.com/jp/Solutions/amd-epyc-9004
+  tw.2376#e12:
+    locator: 異質高效能運算
+    published_date: null
+    publisher: 技嘉科技股份有限公司
+    quote_check: unreachable
+    title: GIGABYTE at COMPUTEX 2025：全域運算，AI為先
+    url: https://www.gigabyte.com/tw/Events/Computex/2025
   tw.2376#e13:
     locator: PDF第70頁、文件第60頁，Sales, Marketing and Customers；其後明示2023與2024分別對應CoreWeave與HPE
     published_date: '2026-05-18'
@@ -319,6 +583,27 @@ evidence:
     quote_check: unreachable
     title: 技嘉首發 推出支援 NVIDIA HGX™ H200 平台AI旗艦伺服器
     url: https://www.gigabyte.com/hk/press/news/2207
+  tw.2376#e17:
+    locator: PDF第16頁，合併基礎持股表；115年3月31日技鋼持股83.92%
+    published_date: null
+    publisher: 技嘉科技股份有限公司
+    quote_check: unreachable
+    title: 技嘉科技股份有限公司及子公司民國115年及114年第一季合併財務報告暨會計師核閱報告
+    url: https://www.gigabyte.com/FileUpload/TW/SiteMap/134/images/FinacialReportCombine-115Q1.pdf
+  tw.2376#e18:
+    locator: PDF第35頁，採用權益法之投資第5項；金額單位新臺幣仟元；其後明示持股100%及取得控制
+    published_date: null
+    publisher: 技嘉科技股份有限公司
+    quote_check: unreachable
+    title: 技嘉科技股份有限公司及子公司民國114年及113年第二季合併財務報告暨會計師核閱報告
+    url: https://www.gigabyte.com/FileUpload/TW/SiteMap/134/images/FinacialReportCombine-114Q2.pdf
+  tw.2376#e19:
+    locator: PDF第30頁，採用權益法之投資第6項；集嘉吸收合併、對價52仟元及合併基準日
+    published_date: null
+    publisher: 技嘉科技股份有限公司
+    quote_check: unreachable
+    title: 技嘉科技股份有限公司民國113年度及112年度個體財務報告暨會計師查核報告
+    url: https://www.gigabyte.com/FileUpload/TW/SiteMap/134/images/FinancialReport-2024Q4-CHT.pdf
   tw.2376#e20:
     locator: 重大訊息主旨及第1至5項
     published_date: '2025-11-14'
@@ -347,6 +632,27 @@ evidence:
     quote_check: found
     title: 家登子公司家崎引進技鋼入股 合攻伺服器散熱系統
     url: https://www.cna.com.tw/news/afe/202408130374.aspx
+  tw.2376#e24:
+    locator: PDF第18頁合併基礎註2；智嘉出售聲遠及其東莞子公司；出售日另見第57頁
+    published_date: null
+    publisher: 技嘉科技股份有限公司
+    quote_check: unreachable
+    title: 技嘉科技股份有限公司及子公司民國114年及113年第三季合併財務報告暨會計師核閱報告
+    url: https://www.gigabyte.com/FileUpload/TW/SiteMap/134/images/FinacialReportCombine-114Q3.pdf
+  tw.2376#e24b:
+    locator: PDF第18頁合併基礎註2；金額單位新臺幣仟元
+    published_date: null
+    publisher: 技嘉科技股份有限公司
+    quote_check: unreachable
+    title: 技嘉科技股份有限公司及子公司民國114年及113年第三季合併財務報告暨會計師核閱報告
+    url: https://www.gigabyte.com/FileUpload/TW/SiteMap/134/images/FinacialReportCombine-114Q3.pdf
+  tw.2376#e25:
+    locator: PDF第74頁附表六；投資日期另見第35頁；表內投資金額100,000仟元、持股29.41%
+    published_date: null
+    publisher: 技嘉科技股份有限公司
+    quote_check: unreachable
+    title: 技嘉科技股份有限公司及子公司民國114年及113年第一季合併財務報告暨會計師核閱報告
+    url: https://www.gigabyte.com/FileUpload/TW/SiteMap/134/images/FinacialReportCombine-114Q1.pdf
   tw.2376#e26:
     locator: PDF第81頁附表四，Nippon Giga-Byte Corp.取得土地、房屋及建築之交易對象欄
     published_date: null
@@ -368,6 +674,20 @@ evidence:
     quote_check: found
     title: 技嘉董事會決議取得Nippon Giga-Byte現增股，計18億日圓
     url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=4b29da0b-0b09-4a36-8889-01f615b7e46c
+  tw.2376#e30:
+    locator: GIGAPOD資料中心整合說明
+    published_date: '2025-11-18'
+    publisher: 技嘉科技股份有限公司
+    quote_check: unreachable
+    title: 攜手產業領導者，技鋼於 SC25 推進 AI 與高效能運算極限
+    url: https://www.gigabyte.com/tw/press/news/2331
+  tw.2376#e31:
+    locator: 合併基礎子公司表，智嘉投資列
+    published_date: null
+    publisher: 技嘉科技股份有限公司
+    quote_check: unreachable
+    title: 技嘉科技股份有限公司及子公司民國115年及114年第一季合併財務報告暨會計師核閱報告
+    url: https://www.gigabyte.com/FileUpload/TW/SiteMap/134/images/FinacialReportCombine-115Q1.pdf
   tw.2376#e32:
     locator: PDF第12頁、文件第2頁，主要產品營收表之網通產品分類
     published_date: '2026-05-18'

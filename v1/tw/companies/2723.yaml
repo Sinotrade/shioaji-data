@@ -8,13 +8,184 @@ industry:
   l0_code: '16'
   l0_name: 觀光餐旅
   l0_name_en: Tourism and Hospitality
-primary_chain_position: unknown
+  l1: consumer
+  l1_name: 消費
+  l1_name_en: Consumer
+  l2: cons.discretionary
+  l2_name: 非必需消費
+  l2_name_en: Consumer Discretionary
+  l3: tourism.restaurant
+  l3_name: 餐飲
+  l3_name_en: Restaurants
+primary_chain_position: not_applicable
+summary_short: 以85度C品牌經營咖啡烘焙連鎖門市，主要銷售麵包、西點及飲料。
+summary_long: 美食-KY為85度C咖啡烘焙連鎖品牌的控股公司，集團採直營與加盟模式經營門市，提供麵包、西點及飲料。2025年度產品營收中，麵包占42.3%，西點占35.1%，飲料占22.2%，其他占0.5%，麵包為最大收入來源。產品涵蓋菠蘿與芋頭麵包、生日與長條蛋糕，以及咖啡、茶飲等。主要子公司包括美食達人股份有限公司，其由集團透過85 Degree Co., Ltd.間接持有，從事烘焙食品製造及銷售。
+segments:
+- evidence_ids:
+  - e3
+  id: bread
+  name: 麵包
+  period: 2025年度
+  revenue_share_pct: 42.3
+- evidence_ids:
+  - e3
+  id: pastry
+  name: 西點
+  period: 2025年度
+  revenue_share_pct: 35.1
+- evidence_ids:
+  - e3
+  id: beverage
+  name: 飲料
+  period: 2025年度
+  revenue_share_pct: 22.2
+- evidence_ids:
+  - e3
+  id: other
+  name: 其他
+  period: 2025年度
+  revenue_share_pct: 0.5
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接全資投資控股子公司
+    details:
+    - 直接全資投資控股子公司
+    edge: ee7a2d93df50b
+    evidence_level: primary
+    id: org.85-degree-co-ltd
+    name: 85 Degree Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過85 Degree Co., Ltd.間接持有的全資子公司
+    details:
+    - 透過85 Degree Co., Ltd.間接持有的全資子公司
+    edge: e80d8e0981f1f
+    evidence_level: primary
+    id: org.mei-shih-ta-jen
+    name: 美食達人股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接全資烘焙食品子公司
+    details:
+    - 直接全資烘焙食品子公司
+    edge: e5e78e6554f34
+    evidence_level: primary
+    id: org.perfect-85-degrees-c
+    name: Perfect 85 Degrees C, Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接全資子公司
+    details:
+    - 直接全資子公司
+    edge: eead0786f1737
+    evidence_level: primary
+    id: org.百悅貿易有限公司
+    name: 百悅貿易有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.85cafe.com
 tax_id: '39682101'
 incorporated: '2008-09-26'
 listed: '2010-11-22'
 foreign_registration: KY 開曼群島
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-18'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2723#e1:
+    locator: 第7頁，03-1公司簡介
+    published_date: null
+    publisher: Gourmet Master Co. Ltd.
+    quote_check: found
+    title: 2025年永續報告書
+    url: https://www.85cafe.com/file/original/yearreport/2025_%E6%B0%B8%E7%BA%8C%E5%A0%B1%E5%91%8A%E6%9B%B8-OK.pdf
+  tw.2723#e10:
+    locator: 第27頁，附註十二、子公司；投資公司為本公司，114年12月31日持股欄
+    published_date: null
+    publisher: GOURMET MASTER CO. LTD.
+    quote_check: found
+    title: 民國114及113年度合併財務報告暨會計師查核報告
+    url: https://www.85cafe.com/file/original/seasonreport/2025Q4%20consolidate.pdf
+  tw.2723#e11:
+    locator: 第27頁，附註十二、子公司；85 Degree Co., Ltd.投資美食達人股份有限公司
+    published_date: null
+    publisher: GOURMET MASTER CO. LTD.
+    quote_check: found
+    title: 民國114及113年度合併財務報告暨會計師查核報告
+    url: https://www.85cafe.com/file/original/seasonreport/2025Q4%20consolidate.pdf
+  tw.2723#e2:
+    locator: 第7頁，03-1公司簡介，展店模式
+    published_date: null
+    publisher: Gourmet Master Co. Ltd.
+    quote_check: found
+    title: 2025年永續報告書
+    url: https://www.85cafe.com/file/original/yearreport/2025_%E6%B0%B8%E7%BA%8C%E5%A0%B1%E5%91%8A%E6%9B%B8-OK.pdf
+  tw.2723#e3:
+    locator: 印刷頁48／PDF第54頁，伍、營運概況，主要產品之營業比重；各列依序為2024年金額、比重及2025年金額、比重
+    published_date: '2026-04-30'
+    publisher: Gourmet Master Co. Ltd.
+    quote_check: found
+    title: 2025年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52189/2026/RNS/52189_rns_2026-04-29_dc494d9c-b9aa-45fe-bbf9-1d7e31e529a4.pdf
+  tw.2723#e4:
+    locator: 麵包商品清單，菠蘿麵包
+    published_date: null
+    publisher: 85度C
+    quote_check: not_found
+    title: 85度C商品專區：本土麵包
+    url: https://www.85cafe.com/Product.php?datasid=10&datatid=3
+  tw.2723#e5:
+    locator: 麵包商品清單，芋頭麵包
+    published_date: null
+    publisher: 85度C
+    quote_check: not_found
+    title: 85度C商品專區：本土麵包
+    url: https://www.85cafe.com/Product.php?datasid=10&datatid=3
+  tw.2723#e6:
+    locator: 蛋糕分類選單
+    published_date: null
+    publisher: 85度C
+    quote_check: found
+    title: 85度C商品專區：蛋糕
+    url: https://www.85cafe.com/Product.php?datasid=5&datatid=2
+  tw.2723#e7:
+    locator: 飲料分類選單
+    published_date: null
+    publisher: 85度C
+    quote_check: not_found
+    title: 85度C商品專區：飲料
+    url: https://www.85cafe.com/Product.php?datatid=1
+  tw.2723#e8:
+    locator: 第27頁，附註十二、子公司；114年12月31日持股欄
+    published_date: null
+    publisher: GOURMET MASTER CO. LTD.
+    quote_check: found
+    title: 民國114及113年度合併財務報告暨會計師查核報告
+    url: https://www.85cafe.com/file/original/seasonreport/2025Q4%20consolidate.pdf
+  tw.2723#e9:
+    locator: 第27頁，附註十二、子公司；投資公司為本公司，114年12月31日持股欄
+    published_date: null
+    publisher: GOURMET MASTER CO. LTD.
+    quote_check: found
+    title: 民國114及113年度合併財務報告暨會計師查核報告
+    url: https://www.85cafe.com/file/original/seasonreport/2025Q4%20consolidate.pdf

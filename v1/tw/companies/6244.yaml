@@ -8,12 +8,171 @@ industry:
   l0_code: '26'
   l0_name: 光電業
   l0_name_en: Optoelectronic
-primary_chain_position: unknown
+  l1: energy
+  l1_name: 能源
+  l1_name_en: Energy & Utilities
+  l2: energy.green
+  l2_name: 綠能
+  l2_name_en: Renewable Energy
+  l3: green.solar
+  l3_name: 太陽能
+  l3_name_en: Solar
+chain: chain.solar
+primary_chain_position: midstream
+summary_short: 製造銷售太陽能電池與模組，提供光電系統整合並經營發電售電。
+summary_long: 茂迪主要製造與銷售太陽能電池及模組，並提供太陽能發電系統整合服務。電池產品包含XN184BP單晶TOPCon雙面系列，雙玻雙面TOPCon模組則列有460W、510W及605W規格。系統服務涵蓋諮詢評估、場址勘查與設計、工程統籌及營運維護。2024年光電事業部占營收91.39%，電力事業部占8.54%。集團透過茂盛電業與東元茂迪等子公司經營發電售電，並由Power Islands持有茂迪蘇州子公司。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_pv
+  name: 光電事業部
+  period: '2024'
+  revenue_share_pct: 91.39
+- evidence_ids:
+  - e1
+  id: seg_power
+  name: 電力事業部
+  period: '2024'
+  revenue_share_pct: 8.54
+- evidence_ids:
+  - e1
+  id: seg_other
+  name: 其他
+  period: '2024'
+  revenue_share_pct: 0.07
+relations:
+  subsidiaries:
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的發電售電子公司
+    details:
+    - 直接持股100%的發電售電子公司
+    edge: e8455ddb9354e
+    evidence_level: primary
+    id: org.maosheng-electricity
+    name: 茂盛電業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過Power Islands持有的間接子公司
+    details:
+    - 透過Power Islands持有的間接子公司
+    edge: eef683295c684
+    evidence_level: primary
+    id: org.motech-suzhou-new-energy
+    name: 茂迪(蘇州)新能源有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的控股子公司
+    details:
+    - 直接持股100%的控股子公司
+    edge: ea087d95f77b6
+    evidence_level: primary
+    id: org.power-islands-limited
+    name: Power Islands Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股60%的發電售電子公司
+    details:
+    - 直接持股60%的發電售電子公司
+    edge: e3e0c804fb0c8
+    evidence_level: primary
+    id: org.teco-motech
+    name: 東元茂迪股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.motech.com.tw
 tax_id: '20889546'
 incorporated: '1981-06-03'
 listed: '2003-05-15'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-18'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6244#e1:
+    locator: 印刷頁65，營業比重
+    published_date: '2025-04-25'
+    publisher: 茂迪股份有限公司
+    quote_check: found
+    title: 茂迪股份有限公司113年度年報
+    url: https://www.motech.com.tw/doc/financial/year/2025%E5%B9%B4R1405000770%E8%8C%82%E8%BF%AA%E8%82%A1%E4%BB%BD%E5%B9%B4%E5%A0%B1.pdf
+  tw.6244#e10:
+    locator: 第10頁，列入合併財務報告之子公司；114.9.30欄
+    published_date: '2025-11-06'
+    publisher: 茂迪股份有限公司
+    quote_check: found
+    title: 茂迪股份有限公司及子公司114年第三季合併財務報告
+    url: https://motech.com.tw/doc/financial/quarter/2025Q3_%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf
+  tw.6244#e2:
+    locator: 重要股務資料，主要業務
+    published_date: null
+    publisher: 茂迪股份有限公司
+    quote_check: found
+    title: 重要股務資料
+    url: https://www.motech.com.tw/investors/stock_affairs.php
+  tw.6244#e3:
+    locator: 產品名稱
+    published_date: null
+    publisher: 茂迪股份有限公司
+    quote_check: found
+    title: 單晶TOPCon雙面系列－XN184BP Cell
+    url: https://www.motech.com.tw/products/XN184BP.php
+  tw.6244#e4:
+    locator: 產品名稱及輸出功率
+    published_date: null
+    publisher: 茂迪股份有限公司
+    quote_check: found
+    title: 雙玻雙面TOPCon模組
+    url: https://www.motech.com.tw/products/XNGHB.php
+  tw.6244#e5:
+    locator: 服務介紹，諮詢、設計與文件申請
+    published_date: null
+    publisher: 茂迪股份有限公司
+    quote_check: found
+    title: 太陽能發電系統
+    url: https://www.motech.com.tw/products/pv_system.php
+  tw.6244#e6:
+    locator: 服務介紹，工程與維運
+    published_date: null
+    publisher: 茂迪股份有限公司
+    quote_check: found
+    title: 太陽能發電系統
+    url: https://www.motech.com.tw/products/pv_system.php
+  tw.6244#e7:
+    locator: 第10頁，列入合併財務報告之子公司；114.9.30欄
+    published_date: '2025-11-06'
+    publisher: 茂迪股份有限公司
+    quote_check: found
+    title: 茂迪股份有限公司及子公司114年第三季合併財務報告
+    url: https://motech.com.tw/doc/financial/quarter/2025Q3_%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf
+  tw.6244#e8:
+    locator: 第10頁，列入合併財務報告之子公司；114.9.30欄
+    published_date: '2025-11-06'
+    publisher: 茂迪股份有限公司
+    quote_check: found
+    title: 茂迪股份有限公司及子公司114年第三季合併財務報告
+    url: https://motech.com.tw/doc/financial/quarter/2025Q3_%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf
+  tw.6244#e9:
+    locator: 第10頁，列入合併財務報告之子公司；114.9.30欄
+    published_date: '2025-11-06'
+    publisher: 茂迪股份有限公司
+    quote_check: found
+    title: 茂迪股份有限公司及子公司114年第三季合併財務報告
+    url: https://motech.com.tw/doc/financial/quarter/2025Q3_%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf

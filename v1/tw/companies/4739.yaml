@@ -8,12 +8,160 @@ industry:
   l0_code: '21'
   l0_name: 化學工業
   l0_name_en: Chemical
-primary_chain_position: unknown
+  l1: materials
+  l1_name: 原物料
+  l1_name_en: Materials
+  l2: mat.chemicals
+  l2_name: 化工
+  l2_name_en: Chemicals
+  l3: chem.specialty
+  l3_name: 特用化學品
+  l3_name_en: Specialty Chemicals
+chain: chain.auto
+primary_chain_position: upstream
+summary_short: 以動力電池材料為主要收入，另製造氧化觸媒、特用化學品與肥料。
+summary_long: 康普以動力電池材料為主要收入來源，2026年上半年占集團營收71%；其餘為特用化學12%、氧化觸媒10%、肥料4%與其他3%。公司生產硫酸鎳，供電動車電池市場使用，並提供PTA等氧化製程使用的催化劑。子公司天弘化學的產品包括硫酸鈷；恆誼化工的產品包括工業級與半導體級硫酸及肥料。主要子公司另有越南VINACOREMAX COMPANY LIMITED，從事無機鹽類及其晶體的製造與銷售。
+segments:
+- evidence_ids:
+  - e2
+  id: battery
+  name: 動力電池材料
+  period: 2026年上半年
+  revenue_share_pct: 71
+- evidence_ids:
+  - e2
+  id: specialty
+  name: 特用化學
+  period: 2026年上半年
+  revenue_share_pct: 12
+- evidence_ids:
+  - e2
+  id: catalyst
+  name: 氧化觸媒
+  period: 2026年上半年
+  revenue_share_pct: 10
+- evidence_ids:
+  - e2
+  id: fertilizer
+  name: 肥料
+  period: 2026年上半年
+  revenue_share_pct: 4
+- evidence_ids:
+  - e2
+  id: other
+  name: 其他
+  period: 2026年上半年
+  revenue_share_pct: 3
+main_theme: theme.ev
+themes:
+- stage: materials
+  theme: theme.ev
+  tier: upstream
+relations:
+  subsidiaries:
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 重要子公司
+    details:
+    - 重要子公司
+    edge: ec1b18e144191
+    evidence_level: primary
+    id: org.heng-i-chemical
+    name: 恆誼化工股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 重要子公司
+    details:
+    - 重要子公司
+    edge: e46a1e268d790
+    evidence_level: primary
+    id: org.uranus-chemicals
+    name: 天弘化學股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 越南子公司，無機鹽類及晶體製造銷售
+    details:
+    - 越南子公司，無機鹽類及晶體製造銷售
+    edge: efde443d870ba
+    evidence_level: primary
+    id: org.vinacoremax
+    name: VINACOREMAX COMPANY LIMITED
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.coremaxcorp.com
 tax_id: '86757124'
 incorporated: '1992-06-16'
 listed: '2017-09-08'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-18'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4739#e10:
+    locator: 關於康普，硫酸鎳生產線說明
+    published_date: null
+    publisher: 康普材料科技股份有限公司
+    quote_check: found
+    title: 集團簡介
+    url: https://www.coremaxcorp.com/zh-tw/16-2017-09-28-02-07-36
+  tw.4739#e2:
+    locator: 第11頁，2026年上半年度銷售分析；依序為動力電池、特用化學、氧化觸媒、肥料、其他、總營收
+    published_date: '2026-09-09'
+    publisher: 康普材料科技股份有限公司
+    quote_check: found
+    title: 2026年上半年度法人說明會
+    url: https://www.coremaxcorp.com/uploads/investment/legal_person/2026-CHI.pdf
+  tw.4739#e3:
+    locator: 動力電池材料介紹
+    published_date: null
+    publisher: 康普材料科技股份有限公司
+    quote_check: found
+    title: 動力電池材料
+    url: https://www.coremaxcorp.com/zh-tw/battery-materials
+  tw.4739#e4:
+    locator: 液體型態氧化觸媒產品表：醋酸鈷錳溴溶液(CMB)及用途欄
+    published_date: null
+    publisher: 康普材料科技股份有限公司
+    quote_check: found
+    title: 氧化觸媒
+    url: https://www.coremaxcorp.com/zh-tw/catalyst
+  tw.4739#e5:
+    locator: 第1頁，致股東報告書
+    published_date: null
+    publisher: 康普材料科技股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.coremaxcorp.com/uploads/investment/Aunnal_report/114_Aunnal_report.pdf
+  tw.4739#e6:
+    locator: 第7頁，核心業務，天弘化學區塊
+    published_date: '2026-09-09'
+    publisher: 康普材料科技股份有限公司
+    quote_check: found
+    title: 2026年上半年度法人說明會
+    url: https://www.coremaxcorp.com/uploads/investment/legal_person/2026-CHI.pdf
+  tw.4739#e7:
+    locator: 第7頁，核心業務，恆誼化工區塊
+    published_date: '2026-09-09'
+    publisher: 康普材料科技股份有限公司
+    quote_check: found
+    title: 2026年上半年度法人說明會
+    url: https://www.coremaxcorp.com/uploads/investment/legal_person/2026-CHI.pdf
+  tw.4739#e9:
+    locator: 附註四（二），第10頁，列入合併財務報告之子公司：VINACOREMAX列
+    published_date: '2026-08-06'
+    publisher: 康普材料科技股份有限公司
+    quote_check: found
+    title: 115年第二季合併財務報告
+    url: https://www.coremaxcorp.com/uploads/investment/financial_report/113/4739_115Q2.pdf

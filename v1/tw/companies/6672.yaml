@@ -34,6 +34,14 @@ segments:
   name: 歐美地域分部
   period: 2026年上半年
   revenue_share_pct: null
+main_theme: theme.ai_server
+themes:
+- stage: board_materials
+  theme: theme.ai_server
+  tier: upstream
+- stage: components
+  theme: theme.5g
+  tier: upstream
 relations:
   subsidiaries:
   - as_of: '2026-06-30'
@@ -105,9 +113,16 @@ evidence:
     locator: 投資人關係首段；列明公司全名、6672 TT及主要產品
     published_date: null
     publisher: 騰輝電子國際集團股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: 投資人關係
     url: https://www.ventec-group.com/cht/investors/
+  tw.6672#e10:
+    locator: 無玻纖pro-bond與thermal-bond配方及高頻訊號完整性說明
+    published_date: '2025-11-15'
+    publisher: Ventec International Group
+    quote_check: found
+    title: Ventec to exhibit latest materials and machinery for cutting-edge PCB production at Productronica 2025
+    url: https://www.ventec-group.com/news/ventec-to-exhibit-latest-materials-and-machinery-for-cutting-edge-pcb-production-at-productronica-2025/
   tw.6672#e11:
     locator: 第23頁，附註11子公司表；投資人VIG CAYMAN對應VIG SAMOA，2026年6月30日持股100%
     published_date: null
@@ -161,6 +176,55 @@ evidence:
     locator: 'tec-thermal: High-Performance IMS Material Technology'
     published_date: null
     publisher: Ventec International Group
-    quote_check: unreachable
+    quote_check: found
     title: tec-thermal / Thermal Management & IMS
     url: https://www.ventec-group.com/cht/products/tec-thermal-thermal-management-ims/
+  tw.6672#e3:
+    locator: 產品表下方的聚醯亞胺材料說明
+    published_date: null
+    publisher: Ventec International Group
+    quote_check: found
+    title: 聚醯亞胺
+    url: https://www.ventec-group.com/cht/products/polyimide/
+  tw.6672#e4:
+    locator: 產品表下方的應用說明
+    published_date: null
+    publisher: Ventec International Group
+    quote_check: found
+    title: 聚醯亞胺
+    url: https://www.ventec-group.com/cht/products/polyimide/
+  tw.6672#e5:
+    locator: 產品技術說明標題
+    published_date: null
+    publisher: Ventec International Group
+    quote_check: found
+    title: tec-speed與信號完整性
+    url: https://www.ventec-group.com/cht/products/tec-speed-signal-integrity/
+  tw.6672#e6:
+    locator: 產品表；tec-speed 30.0（VT-370X）說明欄
+    published_date: null
+    publisher: Ventec International Group
+    quote_check: found
+    title: 'tec-speed: 高頻材料技術'
+    url: https://www.ventec-group.com/cht/products/tec-speed-rf/
+  tw.6672#e7:
+    locator: pro-bond & thermal-bond材料說明
+    published_date: null
+    publisher: Ventec International Group
+    quote_check: found
+    title: bondply 黏合片
+    url: https://www.ventec-group.com/cht/products/bondply/
+  tw.6672#e8:
+    locator: Bondply dielectrics、Pro-Bond及Thermal-Bond應用段落
+    published_date: '2025-03-14'
+    publisher: Ventec International Group
+    quote_check: found
+    title: Ventec presents cutting edge innovations and high-performance formulas at IPC APEX EXPO 2025.
+    url: https://www.ventec-group.com/news/ventec-presents-cutting-edge-innovations-and-high-performance-formulas-at-ipc-apex-expo-2025/
+  tw.6672#e9:
+    locator: Bondply材料應用清單
+    published_date: '2025-03-14'
+    publisher: Ventec International Group
+    quote_check: found
+    title: Ventec presents cutting edge innovations and high-performance formulas at IPC APEX EXPO 2025.
+    url: https://www.ventec-group.com/news/ventec-presents-cutting-edge-innovations-and-high-performance-formulas-at-ipc-apex-expo-2025/

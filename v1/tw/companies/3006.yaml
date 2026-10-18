@@ -28,6 +28,36 @@ segments:
   name: 積體電路（IC）
   period: '2025'
   revenue_share_pct: 100
+relations:
+  subsidiaries:
+  - as_of: '2023-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 經長風投資持有的間接子公司
+    details:
+    - 經長風投資持有的間接子公司
+    edge: e50c00709bd48
+    evidence_level: primary
+    id: org.晶鎂電子股份有限公司
+    name: 晶鎂電子股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2023-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有的一般投資業子公司
+    details:
+    - 直接持有的一般投資業子公司
+    edge: ecea92d19f737
+    evidence_level: primary
+    id: org.長風投資股份有限公司
+    name: 長風投資股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.esmt.com.tw
 tax_id: '16130280'
 incorporated: '1998-06-02'
@@ -50,6 +80,20 @@ evidence:
     quote_check: found
     title: 晶豪科技股份有限公司近期營運概況（2026年3月）
     url: https://mopsov.twse.com.tw/nas/STR/300620260310M001.pdf
+  tw.3006#e11:
+    locator: 第66頁／附表四，晶豪科技投資長風投資列；持股比率100
+    published_date: '2024-02-27'
+    publisher: 晶豪科技股份有限公司
+    quote_check: unreachable
+    title: 晶豪科技112年度及111年度個體財務報告
+    url: https://www.esmt.com.tw/upload/FinanceReport/2023/%E6%99%B6%E8%B1%AA112Q4%E5%80%8B%E9%AB%94%E8%B2%A1%E5%A0%B1%E9%9B%BB%E5%AD%90%E6%9B%B8.CHT.IFRS_113.02.27.pdf
+  tw.3006#e12:
+    locator: 第66頁／附表四，長風投資持有晶鎂電子列；持股比率100
+    published_date: '2024-02-27'
+    publisher: 晶豪科技股份有限公司
+    quote_check: unreachable
+    title: 晶豪科技112年度及111年度個體財務報告
+    url: https://www.esmt.com.tw/upload/FinanceReport/2023/%E6%99%B6%E8%B1%AA112Q4%E5%80%8B%E9%AB%94%E8%B2%A1%E5%A0%B1%E9%9B%BB%E5%AD%90%E6%9B%B8.CHT.IFRS_113.02.27.pdf
   tw.3006#e2:
     locator: 探索晶豪的產品／Memory
     published_date: null

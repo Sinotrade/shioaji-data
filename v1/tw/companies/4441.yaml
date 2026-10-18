@@ -8,12 +8,200 @@ industry:
   l0_code: '04'
   l0_name: 紡織纖維
   l0_name_en: Textiles
-primary_chain_position: unknown
+  l1: consumer
+  l1_name: 消費
+  l1_name_en: Consumer
+  l2: cons.discretionary
+  l2_name: 非必需消費
+  l2_name_en: Consumer Discretionary
+  l3: apparel.garment
+  l3_name: 成衣與服飾
+  l3_name_en: Apparel
+chain: chain.textile
+primary_chain_position: downstream
+summary_short: 以休閒、流行、運動機能及無縫成衣的設計、代工製造與銷售為主。
+summary_long: 振大環球主要從事成衣設計、代工製造與銷售，產品涵蓋休閒、流行、運動機能、居家及無縫等針織成衣，法說會亦列有平織成衣。公司提供一站式ODM服務，範圍包含流行趨勢掌握、布料建議、成衣設計及門店櫥窗設計。2025年成衣銷售占營收99.96%，其他收入占0.04%。集團直接持有GLI、GVI、GAMA及BAOBAB等子公司，分別涉及投資、外發管理與成衣加工製造，並透過GLI持有從事成衣加工製造的GGI與GV。
+segments:
+- evidence_ids:
+  - e3
+  id: seg_garment
+  name: 成衣銷售收入
+  period: '2025'
+  revenue_share_pct: 99.96
+- evidence_ids:
+  - e3
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 0.04
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有的成衣加工製造子公司
+    details:
+    - 直接持有的成衣加工製造子公司
+    edge: ecb2886bcdc90
+    evidence_level: primary
+    id: org.gama-textile-madagascar
+    name: GAMA TEXTILE MADAGASCAR SARLU
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有的投資業子公司
+    details:
+    - 直接持有的投資業子公司
+    edge: ed3fc222f9966
+    evidence_level: primary
+    id: org.giant-lance-international
+    name: GIANT LANCE INTERNATIONAL LTD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過GLI持有的成衣加工製造子公司
+    details:
+    - 透過GLI持有的成衣加工製造子公司
+    edge: e3625328e8aaa
+    evidence_level: primary
+    id: org.golden-vigorous
+    name: GOLDEN VIGOROUS COMPANY LIMITED
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有的成衣加工製造子公司
+    details:
+    - 直接持有的成衣加工製造子公司
+    edge: e1ad412141dd9
+    evidence_level: primary
+    id: org.great-baobab-garment
+    name: GREAT BAOBAB GARMENT SARLU
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過GLI持有的成衣加工製造子公司
+    details:
+    - 透過GLI持有的成衣加工製造子公司
+    edge: ec7b7600b177a
+    evidence_level: primary
+    id: org.great-global-international
+    name: GREAT GLOBAL INTERNATIONAL CO., LTD
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有的外發管理中心子公司
+    details:
+    - 直接持有的外發管理中心子公司
+    edge: ef72ce86e221f
+    evidence_level: primary
+    id: org.great-victory-innotech
+    name: GREAT VICTORY INNOTECH COMPANY LIMITED
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.greatg.com.tw
 tax_id: '86010365'
 incorporated: '1991-02-21'
 listed: '2025-09-09'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-18'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4441#e1:
+    locator: 基本資料表：公司名稱、股票代號、營利事業統一編號及主要經營業務
+    published_date: null
+    publisher: 振大環球股份有限公司
+    quote_check: found
+    title: 振大環球股份有限公司－基本資料
+    url: https://www.greatg.com.tw/info.php
+  tw.4441#e10:
+    locator: 第10頁，附註四（二）合併基礎，GV列；投資公司為GLI，115.6.30持股91.76%，業務性質為成衣加工製造業
+    published_date: null
+    publisher: 振大環球股份有限公司
+    quote_check: found
+    title: 振大環球股份有限公司及子公司一一五年第二季合併財務報告
+    url: https://www.greatg.com.tw/_file/report_11_2026_6_260805.pdf
+  tw.4441#e11:
+    locator: 第37頁，附註十三（二）轉投資事業相關資訊；GVI列位於本公司直接投資項下，持股100%，業務為外發管理中心
+    published_date: null
+    publisher: 振大環球股份有限公司
+    quote_check: found
+    title: 振大環球股份有限公司及子公司一一五年第二季合併財務報告
+    url: https://www.greatg.com.tw/_file/report_11_2026_6_260805.pdf
+  tw.4441#e2:
+    locator: 成立 ODM整合，創新價值
+    published_date: null
+    publisher: 振大環球股份有限公司
+    quote_check: found
+    title: 振大環球股份有限公司－集團簡介
+    url: https://www.greatg.com.tw/about.php
+  tw.4441#e3:
+    locator: 印刷頁54／PDF第58頁，肆、營運概況，一、業務內容，營業比重；114年度
+    published_date: '2026-03-31'
+    publisher: 振大環球股份有限公司
+    quote_check: found
+    title: 振大環球股份有限公司一一四年度年報
+    url: https://www.greatg.com.tw/_file/shareholder_info_12_2026_3_260422.pdf
+  tw.4441#e4:
+    locator: 簡報第5頁／PDF第5頁，振大環球基本資料，主要產品
+    published_date: '2026-09-08'
+    publisher: 振大環球股份有限公司
+    quote_check: found
+    title: 振大環球股份有限公司2026年9月8日法人說明會公司簡報
+    url: https://www.greatg.com.tw/_file/investment_37_1_260901.pdf
+  tw.4441#e5:
+    locator: 第10頁，附註四（二）合併基礎，子公司表GLI列；投資公司為本公司，115.6.30持股100%，業務性質為投資業
+    published_date: null
+    publisher: 振大環球股份有限公司
+    quote_check: found
+    title: 振大環球股份有限公司及子公司一一五年第二季合併財務報告
+    url: https://www.greatg.com.tw/_file/report_11_2026_6_260805.pdf
+  tw.4441#e6:
+    locator: 印刷頁47／PDF第51頁，本公司投資持股表GVI列；印刷頁72業務項目為外發管理中心
+    published_date: '2026-03-31'
+    publisher: 振大環球股份有限公司
+    quote_check: found
+    title: 振大環球股份有限公司一一四年度年報
+    url: https://www.greatg.com.tw/_file/shareholder_info_12_2026_3_260422.pdf
+  tw.4441#e7:
+    locator: 第10頁，附註四（二）合併基礎，GAMA列；投資公司為本公司，115.6.30持股100%，業務性質為成衣加工製造業
+    published_date: null
+    publisher: 振大環球股份有限公司
+    quote_check: found
+    title: 振大環球股份有限公司及子公司一一五年第二季合併財務報告
+    url: https://www.greatg.com.tw/_file/report_11_2026_6_260805.pdf
+  tw.4441#e8:
+    locator: 第10頁，附註四（二）合併基礎，BAOBAB列；投資公司為本公司，115.6.30持股100%，業務性質為成衣加工製造業
+    published_date: null
+    publisher: 振大環球股份有限公司
+    quote_check: found
+    title: 振大環球股份有限公司及子公司一一五年第二季合併財務報告
+    url: https://www.greatg.com.tw/_file/report_11_2026_6_260805.pdf
+  tw.4441#e9:
+    locator: 第10頁，附註四（二）合併基礎，GGI列；投資公司為GLI，115.6.30持股100%，業務性質為成衣加工製造業
+    published_date: null
+    publisher: 振大環球股份有限公司
+    quote_check: found
+    title: 振大環球股份有限公司及子公司一一五年第二季合併財務報告
+    url: https://www.greatg.com.tw/_file/report_11_2026_6_260805.pdf

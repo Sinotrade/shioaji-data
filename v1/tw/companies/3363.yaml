@@ -72,12 +72,12 @@ themes:
 - stage: it
   theme: theme.data_center
   tier: midstream
-- stage: components
-  theme: theme.cpo
-  tier: upstream
 - stage: modules
   theme: theme.silicon_photonics
   tier: downstream
+- stage: components
+  theme: theme.cpo
+  tier: upstream
 relations:
   subsidiaries:
   - as_of: '2025-12-31'

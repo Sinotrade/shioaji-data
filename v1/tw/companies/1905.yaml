@@ -8,19 +8,111 @@ industry:
   l0_code: 09
   l0_name: 造紙工業
   l0_name_en: Paper and Pulp
-primary_chain_position: unknown
+  l1: materials
+  l1_name: 原物料
+  l1_name_en: Materials
+  l2: mat.other
+  l2_name: 其他原物料
+  l2_name_en: Other Materials
+  l3: matl.paper
+  l3_name: 造紙與紙器
+  l3_name_en: Paper & Paper Products
+primary_chain_position: midstream
+summary_short: 以紙張、紙板與紙漿製造銷售為主，另經營紙膠帶及林木業務。
+summary_long: 華紙以紙張、紙板與紙漿製造及銷售為主，2025年營收分別占68.50%、14.28%與11.25%，另有紙膠帶、林木及其他業務。印刷用紙提供不同塗佈與壓光規格；特殊紙涵蓋食品包裝、標籤與離型原紙，紙漿生產以短纖原生漿為主，紙板則供應各類包裝用途。膠帶產品包括遮蔽與包裝膠帶。母公司為永豐餘投資控股，子公司包括廣東鼎豐紙業與肇慶鼎豐林業等。
+segments:
+- evidence_ids:
+  - e1
+  id: paper
+  name: 紙張
+  period: '2025'
+  revenue_share_pct: 68.5
+- evidence_ids:
+  - e1
+  id: paperboard
+  name: 紙板
+  period: '2025'
+  revenue_share_pct: 14.28
+- evidence_ids:
+  - e1
+  id: pulp
+  name: 紙漿
+  period: '2025'
+  revenue_share_pct: 11.25
+- evidence_ids:
+  - e1
+  id: paper_tape
+  name: 紙膠帶
+  period: '2025'
+  revenue_share_pct: 3.73
+- evidence_ids:
+  - e1
+  id: forestry
+  name: 林木
+  period: '2025'
+  revenue_share_pct: 0.52
+- evidence_ids:
+  - e1
+  id: other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 1.72
 relations:
   parents:
-  - as_of: '2025-12-31'
+  - as_of: '2026-04-22'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 林漿紙營運子公司
+    detail: 母公司
     details:
+    - 母公司
     - 林漿紙營運子公司
     edge: eb4970caa4f42
     evidence_level: primary
     id: tw.1907
     name: 永豐餘
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 2
+  subsidiaries:
+  - as_of: '2026-04-22'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司
+    details:
+    - 子公司
+    edge: e7f708d6ee311
+    evidence_level: primary
+    id: org.chp-international-bvi
+    name: CHP INTERNATIONAL (BVI) CORP.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-22'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司
+    details:
+    - 子公司
+    edge: ec5ae0c3ac645
+    evidence_level: primary
+    id: org.guangdong-dingfeng-paper
+    name: 廣東鼎豐紙業有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-22'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司
+    details:
+    - 子公司
+    edge: ed18371e41d1a
+    evidence_level: primary
+    id: org.zhaoqing-dingfeng-forestry
+    name: 肇慶鼎豐林業有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -55,7 +147,84 @@ website: http://www.chp.com.tw
 tax_id: '94025264'
 incorporated: '1968-07-05'
 listed: '1975-02-07'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-18'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1905#e1:
+    locator: 印刷頁61，業務內容／各項業務營業比重；PDF第32頁
+    published_date: '2026-04-22'
+    publisher: 中華紙漿股份有限公司
+    quote_check: found
+    title: 中華紙漿股份有限公司2025年度年報
+    url: https://www.chp.com.tw/files/shareholder_file/1779957651974.pdf
+  tw.1905#e10:
+    locator: 印刷頁10，林谷豐董事獨立性說明；PDF第7頁
+    published_date: '2026-04-22'
+    publisher: 中華紙漿股份有限公司
+    quote_check: found
+    title: 中華紙漿股份有限公司2025年度年報
+    url: https://www.chp.com.tw/files/shareholder_file/1779957651974.pdf
+  tw.1905#e11:
+    locator: 印刷頁55，綜合持股比例表；PDF第29頁
+    published_date: '2026-04-22'
+    publisher: 中華紙漿股份有限公司
+    quote_check: found
+    title: 中華紙漿股份有限公司2025年度年報
+    url: https://www.chp.com.tw/files/shareholder_file/1779957651974.pdf
+  tw.1905#e2:
+    locator: 印刷產業介紹
+    published_date: null
+    publisher: 中華紙漿股份有限公司
+    quote_check: found
+    title: 華紙－紙與紙板事業：印刷產業
+    url: https://www.chp.com.tw/product/paper_paperboard/10
+  tw.1905#e3:
+    locator: 益利全紙回收食安用紙
+    published_date: null
+    publisher: 中華紙漿股份有限公司
+    quote_check: found
+    title: 華紙－特殊紙事業
+    url: https://www.chp.com.tw/product/special_paper/list
+  tw.1905#e4:
+    locator: 標籤產業
+    published_date: null
+    publisher: 中華紙漿股份有限公司
+    quote_check: found
+    title: 華紙－特殊紙事業
+    url: https://www.chp.com.tw/product/special_paper/list
+  tw.1905#e5:
+    locator: 紙漿事業介紹首段
+    published_date: null
+    publisher: 中華紙漿股份有限公司
+    quote_check: found
+    title: 華紙－紙漿事業
+    url: https://www.chp.com.tw/product/pulp
+  tw.1905#e6:
+    locator: 包裝產業介紹
+    published_date: null
+    publisher: 中華紙漿股份有限公司
+    quote_check: found
+    title: 華紙－紙與紙板事業：包裝產業
+    url: https://www.chp.com.tw/product/paper_paperboard/0
+  tw.1905#e7:
+    locator: 膠帶事業產品分類
+    published_date: null
+    publisher: 中華紙漿股份有限公司
+    quote_check: found
+    title: 華紙－膠帶事業
+    url: https://www.chp.com.tw/product/tape/list
+  tw.1905#e8:
+    locator: 印刷頁10，董事專業資格及獨立董事獨立性資訊；PDF第7頁
+    published_date: '2026-04-22'
+    publisher: 中華紙漿股份有限公司
+    quote_check: found
+    title: 中華紙漿股份有限公司2025年度年報
+    url: https://www.chp.com.tw/files/shareholder_file/1779957651974.pdf
+  tw.1905#e9:
+    locator: 印刷頁10，董事專業資格及獨立董事獨立性資訊；PDF第7頁
+    published_date: '2026-04-22'
+    publisher: 中華紙漿股份有限公司
+    quote_check: found
+    title: 中華紙漿股份有限公司2025年度年報
+    url: https://www.chp.com.tw/files/shareholder_file/1779957651974.pdf

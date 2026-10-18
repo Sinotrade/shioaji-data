@@ -8,12 +8,86 @@ industry:
   l0_code: '23'
   l0_name: 油電燃氣業
   l0_name_en: Oil, Gas and Electricity
-primary_chain_position: unknown
+  l1: energy
+  l1_name: 能源
+  l1_name_en: Energy & Utilities
+  l2: energy.traditional
+  l2_name: 傳統能源
+  l2_name_en: Conventional Energy & Utilities
+  l3: energy.gas_utility
+  l3_name: 天然氣公用事業
+  l3_name_en: Gas Utilities
+primary_chain_position: downstream
+summary_short: 以管線銷售民生天然氣，並提供天然氣管線與安全設備裝置服務。
+summary_long: 欣天然為以導管供應家庭、商業及服務業天然氣的公用事業，主要經營天然氣銷售，並提供用戶天然氣管線設備及緊急遮斷安全設備的設計與施工。114年度年報揭露的個體營收組成中，售氣收入占77.34%，裝置收入占13.08%，其他營業收入占9.58%，售氣為最大收入來源，裝置服務次之。公司另有子公司永發實業股份有限公司，列入115年第1季合併財務報告範圍。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_gas
+  name: 售氣收入
+  period: '2025'
+  revenue_share_pct: 77.34
+- evidence_ids:
+  - e2
+  id: seg_installation
+  name: 裝置收入
+  period: '2025'
+  revenue_share_pct: 13.08
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他營業收入
+  period: '2025'
+  revenue_share_pct: 9.58
+relations:
+  subsidiaries:
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 納入合併財務報告的子公司
+    details:
+    - 納入合併財務報告的子公司
+    edge: e69777b85fab4
+    evidence_level: primary
+    id: org.yung-fa-industrial
+    name: 永發實業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.shinshingas.com.tw
 tax_id: '33665843'
 incorporated: '1971-05-01'
 listed: '1994-04-26'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-18'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.9918#e1:
+    locator: 公司簡介第一段
+    published_date: null
+    publisher: 欣欣天然氣股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.shinshingas.com.tw/about_company/company_profile/
+  tw.9918#e2:
+    locator: 第70頁，肆、營運概況／營業比重；金額單位為仟元
+    published_date: '2026-04-30'
+    publisher: 欣欣天然氣股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.shinshingas.com.tw/upfile/5-114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf
+  tw.9918#e3:
+    locator: 第71頁，目前公司之商品及主要服務
+    published_date: '2026-04-30'
+    publisher: 欣欣天然氣股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.shinshingas.com.tw/upfile/5-114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf
+  tw.9918#e4:
+    locator: 第8頁，附註一（二）列入本合併報告之子公司
+    published_date: '2026-05-13'
+    publisher: 欣欣天然氣股份有限公司
+    quote_check: found
+    title: 115年第1季合併財務報告
+    url: https://www.shinshingas.com.tw/upfile/inv101/Inv101_20260514H281_115Q1(%E7%94%A8%E5%8D%B0%E7%89%88).pdf

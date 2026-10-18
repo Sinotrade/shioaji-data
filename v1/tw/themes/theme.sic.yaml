@@ -30,6 +30,14 @@ members:
   evidence:
   - tw.1504#e17
   confidence: ai_cross_checked
+- id: tw.2301
+  stage: application
+  tier: downstream
+  detail: SiC器件應用於電源管理
+  as_of: '2025-05-20'
+  evidence:
+  - tw.2301#e_sic_gan
+  confidence: ai_cross_checked
 - id: tw.2308
   stage: application
   tier: downstream
@@ -48,6 +56,14 @@ members:
   - tw.2340#e9
   - tw.2340#e10
   confidence: ai_cross_checked
+- id: tw.2369
+  stage: devices
+  tier: midstream
+  detail: 碳化矽二極體元件封裝
+  as_of: '2025-12-31'
+  evidence:
+  - tw.2369#e8
+  confidence: ai_cross_checked
 - id: tw.2393
   stage: devices
   tier: midstream
@@ -55,6 +71,22 @@ members:
   as_of: '2026-10-15'
   evidence:
   - tw.2393#e9
+  confidence: ai_cross_checked
+- id: tw.2420
+  stage: application
+  tier: downstream
+  detail: SiC應用於鈦金級伺服器電源
+  as_of: 2026-06
+  evidence:
+  - tw.2420#e6
+  confidence: ai_cross_checked
+- id: tw.2457
+  stage: application
+  tier: downstream
+  detail: SiC自行車充電器應用
+  as_of: 2025-12
+  evidence:
+  - tw.2457#e12
   confidence: ai_cross_checked
 - id: tw.2481
   stage: devices
@@ -89,6 +121,14 @@ members:
   evidence:
   - tw.3707#e1
   - tw.3707#e4
+  confidence: ai_cross_checked
+- id: tw.5285
+  stage: application
+  tier: downstream
+  detail: SiC功率元件封裝用導線架開發
+  as_of: '2026-04-30'
+  evidence:
+  - tw.5285#e6
   confidence: ai_cross_checked
 - id: tw.5347
   stage: devices
@@ -146,6 +186,14 @@ members:
   evidence:
   - tw.6525#e4
   confidence: ai_cross_checked
+- id: tw.6693
+  stage: devices
+  tier: midstream
+  detail: 碳化矽功率二極體
+  as_of: '2026-10-18'
+  evidence:
+  - tw.6693#e6
+  confidence: ai_cross_checked
 - id: tw.8028
   stage: devices
   tier: midstream
@@ -153,6 +201,14 @@ members:
   as_of: '2026-10-14'
   evidence:
   - tw.8028#e7
+  confidence: ai_cross_checked
+- id: tw.8255
+  stage: application
+  tier: downstream
+  detail: SiC MOSFET功率模組
+  as_of: '2026-10-18'
+  evidence:
+  - tw.8255#e5
   confidence: ai_cross_checked
 - id: tw.8261
   stage: devices
@@ -162,4 +218,4 @@ members:
   evidence:
   - tw.8261#e5
   confidence: ai_cross_checked
-as_of: '2026-10-15'
+as_of: '2026-10-18'

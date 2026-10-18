@@ -8,12 +8,200 @@ industry:
   l0_code: '28'
   l0_name: 電子零組件業
   l0_name_en: Electronic Parts and Components
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.passive
+  l3_name: 被動元件
+  l3_name_en: Passive Components
+primary_chain_position: midstream
+summary_short: 華容主要製造銷售塑膠薄膜電容器，另經營電子產品代理業務。
+summary_long: 華容以塑膠薄膜電容器製造與銷售為主，另經營電子產品代理業務。2025年薄膜電容器占營收85.31%，其他代理業務占14.69%。主要產品涵蓋金屬化聚酯、金屬化聚丙烯、抗電磁干擾安規及功率薄膜電容器。公司將AI伺服器電源供應器列為核心布局市場，並揭露產品已導入充電樁應用。集團透過華容國際持有華容電子（廣東），從事電子產品製造與買賣；另透過富晨科技持有富佐科技，經營電子產品買賣。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_film
+  name: 塑膠薄膜電容器
+  period: '2025'
+  revenue_share_pct: 85.31
+- evidence_ids:
+  - e1
+  id: seg_agency
+  name: 其他（代理）
+  period: '2025'
+  revenue_share_pct: 14.69
+main_theme: theme.ev
+themes:
+- stage: parts
+  theme: theme.ev
+  tier: midstream
+- stage: components
+  theme: theme.ai_server
+  tier: midstream
+relations:
+  subsidiaries:
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過富晨科技持有51%的電子產品買賣子公司
+    details:
+    - 透過富晨科技持有51%的電子產品買賣子公司
+    edge: eadb6fbcdb862
+    evidence_level: primary
+    id: org.富佐科技股份有限公司
+    name: 富佐科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%的電子產品買賣子公司
+    details:
+    - 直接持有100%的電子產品買賣子公司
+    edge: ecb577f0f42c1
+    evidence_level: primary
+    id: org.富晨科技股份有限公司
+    name: 富晨科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%的投資控股子公司
+    details:
+    - 直接持有100%的投資控股子公司
+    edge: ea332bcacb2dd
+    evidence_level: primary
+    id: org.華容國際股份有限公司
+    name: 華容國際股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過華容國際持有100%的製造子公司
+    details:
+    - 透過華容國際持有100%的製造子公司
+    edge: e4175c134a421
+    evidence_level: primary
+    id: org.華容電子-廣東-有限公司
+    name: 華容電子(廣東)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%的投資控股子公司
+    details:
+    - 直接持有100%的投資控股子公司
+    edge: e16ef640d0e6e
+    evidence_level: primary
+    id: org.華容電子有限公司
+    name: 華容電子有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.hjc.com.tw
 tax_id: '76409479'
 incorporated: '1983-04-20'
 listed: '1997-08-28'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-18'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.5328#e1:
+    locator: 印刷頁66，肆、營運概況／營業比重；PDF第70頁
+    published_date: '2026-04-29'
+    publisher: 華容股份有限公司
+    quote_check: found
+    title: 華容股份有限公司114年度年報
+    url: https://www.hjc.com.tw/doc/Investor/Inv-Governance/Gov-Shareholder/Sha-Report/114AnnualReport.pdf
+  tw.5328#e10:
+    locator: 第11頁，合併財務報表編製主體表，富晨科技列
+    published_date: '2026-05-14'
+    publisher: 華容股份有限公司
+    quote_check: found
+    title: 華容股份有限公司及子公司115年第一季合併財務報告
+    url: https://www.hjc.com.tw/doc/Investor/Inv-Finance/Fin-Reports/115Q1-Consolidated.pdf
+  tw.5328#e11:
+    locator: 第11頁，合併財務報表編製主體表，華容國際投資華容電子（廣東）列
+    published_date: '2026-05-14'
+    publisher: 華容股份有限公司
+    quote_check: found
+    title: 華容股份有限公司及子公司115年第一季合併財務報告
+    url: https://www.hjc.com.tw/doc/Investor/Inv-Finance/Fin-Reports/115Q1-Consolidated.pdf
+  tw.5328#e12:
+    locator: 第11頁，合併財務報表編製主體表，富晨科技投資富佐科技列
+    published_date: '2026-05-14'
+    publisher: 華容股份有限公司
+    quote_check: found
+    title: 華容股份有限公司及子公司115年第一季合併財務報告
+    url: https://www.hjc.com.tw/doc/Investor/Inv-Finance/Fin-Reports/115Q1-Consolidated.pdf
+  tw.5328#e2:
+    locator: 印刷頁69，AI算力成長與電源架構變革；PDF第73頁
+    published_date: '2026-04-29'
+    publisher: 華容股份有限公司
+    quote_check: found
+    title: 華容股份有限公司114年度年報
+    url: https://www.hjc.com.tw/doc/Investor/Inv-Governance/Gov-Shareholder/Sha-Report/114AnnualReport.pdf
+  tw.5328#e3:
+    locator: 印刷頁69，電動車與車用電子應用；PDF第73頁
+    published_date: '2026-04-29'
+    publisher: 華容股份有限公司
+    quote_check: found
+    title: 華容股份有限公司114年度年報
+    url: https://www.hjc.com.tw/doc/Investor/Inv-Governance/Gov-Shareholder/Sha-Report/114AnnualReport.pdf
+  tw.5328#e4:
+    locator: 產品頁標題
+    published_date: null
+    publisher: 華容股份有限公司
+    quote_check: not_found
+    title: Metallized Polyester Capacitors
+    url: https://www.hjc.com.tw/Products/Prod-MPP
+  tw.5328#e5:
+    locator: Products產品分類導覽
+    published_date: null
+    publisher: 華容股份有限公司
+    quote_check: not_found
+    title: 華容官網產品分類
+    url: https://www.hjc.com.tw/
+  tw.5328#e6:
+    locator: 產品頁標題及Class等級表
+    published_date: null
+    publisher: 華容股份有限公司
+    quote_check: not_found
+    title: EMI Suppression Capacitors
+    url: https://www.hjc.com.tw/Products/Prod-EMI
+  tw.5328#e7:
+    locator: 產品頁標題
+    published_date: null
+    publisher: 華容股份有限公司
+    quote_check: not_found
+    title: Power Film Capacitors
+    url: https://www.hjc.com.tw/Products/Prod-PowerFilm
+  tw.5328#e8:
+    locator: 第11頁，合併財務報表編製主體表，華容國際列
+    published_date: '2026-05-14'
+    publisher: 華容股份有限公司
+    quote_check: found
+    title: 華容股份有限公司及子公司115年第一季合併財務報告
+    url: https://www.hjc.com.tw/doc/Investor/Inv-Finance/Fin-Reports/115Q1-Consolidated.pdf
+  tw.5328#e9:
+    locator: 第11頁，合併財務報表編製主體表，華容電子列
+    published_date: '2026-05-14'
+    publisher: 華容股份有限公司
+    quote_check: found
+    title: 華容股份有限公司及子公司115年第一季合併財務報告
+    url: https://www.hjc.com.tw/doc/Investor/Inv-Finance/Fin-Reports/115Q1-Consolidated.pdf

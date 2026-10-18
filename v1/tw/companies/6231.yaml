@@ -8,12 +8,141 @@ industry:
   l0_code: '30'
   l0_name: 資訊服務業
   l0_name_en: Information Service
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.software
+  l2_name: 軟體與資訊服務
+  l2_name_en: Software & IT Services
+  l3: sw.enterprise
+  l3_name: 企業軟體
+  l3_name_en: Enterprise Software
+primary_chain_position: not_applicable
+summary_short: 提供UEFI BIOS、OpenBMC系統管理韌體授權及客製化工程服務。
+summary_long: 系微以電腦系統韌體授權及客製化工程服務為主要業務，應用涵蓋個人電腦、伺服器與資訊設備。2026年上半年，基本輸入輸出系統占合併營收83%，基板管理控制系統占17%。主要產品包括InsydeH2O UEFI BIOS、Supervyse OpenBMC管理韌體及TapRUUT平台信任根產品。Supervyse用於企業資料中心、AI及高效能運算伺服器的系統管理。集團直接持有Clean Slate Ltd.及系微軟件科技(上海)有限公司，並透過前者持有Insyde Software Inc.。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_bios
+  name: 基本輸入輸出系統（InsydeH2O）
+  period: 2026年上半年
+  revenue_share_pct: 83
+- evidence_ids:
+  - e2
+  id: seg_bmc
+  name: 基板管理控制系統（Supervyse OPF）
+  period: 2026年上半年
+  revenue_share_pct: 17
+main_theme: theme.data_center
+themes:
+- stage: it
+  theme: theme.data_center
+  tier: midstream
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%股權的子公司
+    details:
+    - 直接持有100%股權的子公司
+    edge: e5b7727af67f3
+    evidence_level: primary
+    id: org.clean-slate-ltd
+    name: Clean Slate Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過Clean Slate Ltd.間接持有100%股權的孫公司
+    details:
+    - 透過Clean Slate Ltd.間接持有100%股權的孫公司
+    edge: ee272bdcf7435
+    evidence_level: primary
+    id: org.insyde-software-inc
+    name: Insyde Software Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%股權的子公司
+    details:
+    - 直接持有100%股權的子公司
+    edge: e9847f52701c8
+    evidence_level: primary
+    id: org.insyde-software-shanghai
+    name: 系微軟件科技(上海)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.insyde.com
 tax_id: '16627697'
 incorporated: '1998-09-18'
 listed: '2003-01-23'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-18'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6231#e2:
+    locator: 附註十四（四）產品別銷售資訊，印刷頁34，PDF第41頁；115年上半年度欄
+    published_date: '2026-08-07'
+    publisher: 系微股份有限公司
+    quote_check: found
+    title: 民國115年及114年第二季合併財務報告
+    url: https://www.insyde.com/wp-content/uploads/2026Q2_6231_ZH.pdf
+  tw.6231#e3:
+    locator: InsydeH2O UEFI BIOS／Trusted, Reliable & Secure
+    published_date: null
+    publisher: Insyde Software
+    quote_check: found
+    title: InsydeH2O® UEFI BIOS for Data Center, AI & HPC Servers
+    url: https://www.insyde.com/products/insydeh2o-servers/
+  tw.6231#e4:
+    locator: Supervyse產品介紹
+    published_date: null
+    publisher: Insyde Software
+    quote_check: found
+    title: Supervyse® OpenBMC Firmware
+    url: https://www.insyde.com/products/supervyse/
+  tw.6231#e5:
+    locator: TapRUUT產品介紹
+    published_date: null
+    publisher: Insyde Software
+    quote_check: found
+    title: TapRUUT
+    url: https://www.insyde.com/products/tapruut/
+  tw.6231#e6:
+    locator: 附註四（三）2列入合併財務報告之子公司，印刷頁3，PDF第10頁；115.6.30欄
+    published_date: '2026-08-07'
+    publisher: 系微股份有限公司
+    quote_check: found
+    title: 民國115年及114年第二季合併財務報告
+    url: https://www.insyde.com/wp-content/uploads/2026Q2_6231_ZH.pdf
+  tw.6231#e7:
+    locator: 附註四（三）2列入合併財務報告之子公司續表，印刷頁4，PDF第11頁；115.6.30欄
+    published_date: '2026-08-07'
+    publisher: 系微股份有限公司
+    quote_check: found
+    title: 民國115年及114年第二季合併財務報告
+    url: https://www.insyde.com/wp-content/uploads/2026Q2_6231_ZH.pdf
+  tw.6231#e8:
+    locator: 附註四（三）2列入合併財務報告之子公司，印刷頁3，PDF第10頁；115.6.30欄
+    published_date: '2026-08-07'
+    publisher: 系微股份有限公司
+    quote_check: found
+    title: 民國115年及114年第二季合併財務報告
+    url: https://www.insyde.com/wp-content/uploads/2026Q2_6231_ZH.pdf
+  tw.6231#e9:
+    locator: 附註一公司沿革，印刷頁1，PDF第8頁
+    published_date: '2026-08-07'
+    publisher: 系微股份有限公司
+    quote_check: found
+    title: 民國115年及114年第二季合併財務報告
+    url: https://www.insyde.com/wp-content/uploads/2026Q2_6231_ZH.pdf

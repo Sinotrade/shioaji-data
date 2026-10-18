@@ -44,12 +44,12 @@ themes:
 - stage: display
   theme: theme.mini_led
   tier: downstream
-- stage: components
-  theme: theme.cpo
-  tier: upstream
 - stage: devices
   theme: theme.silicon_photonics
   tier: midstream
+- stage: components
+  theme: theme.cpo
+  tier: upstream
 relations:
   subsidiaries:
   - as_of: '2025-12-31'

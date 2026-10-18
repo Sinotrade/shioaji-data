@@ -8,12 +8,206 @@ industry:
   l0_code: '28'
   l0_name: 電子零組件業
   l0_name_en: Electronic Parts and Components
-primary_chain_position: unknown
+  l1: energy
+  l1_name: 能源
+  l1_name_en: Energy & Utilities
+  l2: energy.green
+  l2_name: 綠能
+  l2_name_en: Renewable Energy
+  l3: green.solar
+  l3_name: 太陽能
+  l3_name_en: Solar
+chain: chain.solar
+primary_chain_position: upstream
+summary_short: 製造太陽能電池及電子印刷用精密網版，並銷售網印耗材。
+summary_long: 倉和以精密印刷網版及網印耗材銷售為主要業務，核心產品用於太陽能電池製造。2024年合併營收中，太陽能電池印刷用網版占85.53%，非太陽能網版占2.16%，網印耗材買賣占12.31%。產品涵蓋CF系列3D無網結網版，並具備PI膜層開發與雷射雕刻技術；非太陽能應用包括光電觸控、精密電子元件與印刷電路板。公司另進行TOPCon、BC及HJT電池印刷研究。年報列示的子公司包括倉和精密製造（蘇州）、倉禾科技（成都）及光星（上海）國際貿易。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_solar
+  name: 太陽能電池之印刷用網版
+  period: '2024'
+  revenue_share_pct: 85.53
+- evidence_ids:
+  - e2
+  id: seg_non_solar
+  name: 非太陽能電池之印刷用網版
+  period: '2024'
+  revenue_share_pct: 2.16
+- evidence_ids:
+  - e3
+  id: seg_consumables
+  name: 網印耗材買賣
+  period: '2024'
+  revenue_share_pct: 12.31
+relations:
+  subsidiaries:
+  - as_of: '2025-04-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團持有100%股權之子公司
+    details:
+    - 集團持有100%股權之子公司
+    edge: e33d2450a596e
+    evidence_level: primary
+    id: org.brave-c-and-h-supply-holding
+    name: BRAVE C & H SUPPLY HOLDING CO., LTD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-04-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團持有100%股權之子公司
+    details:
+    - 集團持有100%股權之子公司
+    edge: e2d52c0852edd
+    evidence_level: primary
+    id: org.brave-precision-mfg-suzhou
+    name: 倉和精密製造（蘇州）有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-04-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團持有100%股權之子公司
+    details:
+    - 集團持有100%股權之子公司
+    edge: e549b89dd8c12
+    evidence_level: primary
+    id: org.brave-technology-chengdu
+    name: 倉禾科技（成都）有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-04-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團持有100%股權之子公司
+    details:
+    - 集團持有100%股權之子公司
+    edge: eb725b33e18fa
+    evidence_level: primary
+    id: org.guangxing-shanghai-international-trade
+    name: 光星（上海）國際貿易有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-04-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團持有100%股權之子公司
+    details:
+    - 集團持有100%股權之子公司
+    edge: e05b6900f2313
+    evidence_level: primary
+    id: org.possess-leadership
+    name: POSSESS LEADERSHIP CO., LTD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.bch.com.tw
 tax_id: '84819223'
 incorporated: '1994-04-01'
 listed: '2016-10-21'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-18'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6538#e1:
+    locator: 第58頁，營業比重表，113年度欄
+    published_date: '2025-04-30'
+    publisher: 倉和股份有限公司
+    quote_check: found
+    title: 倉和股份有限公司113年度年報
+    url: https://www.bch.com.tw/pdf/451225/11403.pdf
+  tw.6538#e10:
+    locator: 第51頁，轉投資事業持股表；第87頁，關係企業組織圖
+    published_date: '2025-04-30'
+    publisher: 倉和股份有限公司
+    quote_check: found
+    title: 倉和股份有限公司113年度年報
+    url: https://www.bch.com.tw/pdf/451225/11403.pdf
+  tw.6538#e11:
+    locator: 第51頁，轉投資事業持股表；第87頁，關係企業組織圖
+    published_date: '2025-04-30'
+    publisher: 倉和股份有限公司
+    quote_check: found
+    title: 倉和股份有限公司113年度年報
+    url: https://www.bch.com.tw/pdf/451225/11403.pdf
+  tw.6538#e12:
+    locator: 第51頁，轉投資事業持股表；第87頁，關係企業組織圖
+    published_date: '2025-04-30'
+    publisher: 倉和股份有限公司
+    quote_check: found
+    title: 倉和股份有限公司113年度年報
+    url: https://www.bch.com.tw/pdf/451225/11403.pdf
+  tw.6538#e13:
+    locator: 第51頁，轉投資事業持股表；第87頁，關係企業組織圖
+    published_date: '2025-04-30'
+    publisher: 倉和股份有限公司
+    quote_check: found
+    title: 倉和股份有限公司113年度年報
+    url: https://www.bch.com.tw/pdf/451225/11403.pdf
+  tw.6538#e2:
+    locator: 第58頁，營業比重表，113年度欄
+    published_date: '2025-04-30'
+    publisher: 倉和股份有限公司
+    quote_check: found
+    title: 倉和股份有限公司113年度年報
+    url: https://www.bch.com.tw/pdf/451225/11403.pdf
+  tw.6538#e3:
+    locator: 第58頁，營業比重表，113年度欄
+    published_date: '2025-04-30'
+    publisher: 倉和股份有限公司
+    quote_check: found
+    title: 倉和股份有限公司113年度年報
+    url: https://www.bch.com.tw/pdf/451225/11403.pdf
+  tw.6538#e4:
+    locator: 減膠重產品，商品規格
+    published_date: null
+    publisher: 倉和股份有限公司
+    quote_check: found
+    title: 太陽能
+    url: https://www.bch.com.tw/solar-energy
+  tw.6538#e5:
+    locator: 第4頁，外部競爭環境說明
+    published_date: '2025-04-30'
+    publisher: 倉和股份有限公司
+    quote_check: found
+    title: 倉和股份有限公司113年度年報
+    url: https://www.bch.com.tw/pdf/451225/11403.pdf
+  tw.6538#e6:
+    locator: 第61頁，技術及研發概況
+    published_date: '2025-04-30'
+    publisher: 倉和股份有限公司
+    quote_check: found
+    title: 倉和股份有限公司113年度年報
+    url: https://www.bch.com.tw/pdf/451225/11403.pdf
+  tw.6538#e7:
+    locator: 關於倉和，公司介紹首段
+    published_date: null
+    publisher: 倉和股份有限公司
+    quote_check: found
+    title: 關於我們
+    url: https://www.bch.com.tw/about-us
+  tw.6538#e8:
+    locator: 第63頁，113年度技術研發計畫
+    published_date: '2025-04-30'
+    publisher: 倉和股份有限公司
+    quote_check: found
+    title: 倉和股份有限公司113年度年報
+    url: https://www.bch.com.tw/pdf/451225/11403.pdf
+  tw.6538#e9:
+    locator: 第51頁，轉投資事業持股表；第87頁，關係企業組織圖
+    published_date: '2025-04-30'
+    publisher: 倉和股份有限公司
+    quote_check: found
+    title: 倉和股份有限公司113年度年報
+    url: https://www.bch.com.tw/pdf/451225/11403.pdf

@@ -107,8 +107,9 @@ relations:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 母公司及最終控制者
+    detail: 緯穎科技服務股份有限公司；受控制子公司
     details:
+    - 緯穎科技服務股份有限公司；受控制子公司
     - 母公司及最終控制者
     edge: e46d21b773103
     evidence_level: primary
@@ -117,7 +118,7 @@ relations:
     ranking_basis: unranked
     share_basis: null
     share_pct: null
-    weight: 1
+    weight: 2
   partners:
   - as_of: '2026-03-12'
     confidence: ai_cross_checked
@@ -247,11 +248,16 @@ relations:
     share_pct: null
     weight: 1
   suppliers:
-  - as_of: '2025-12-31'
+  - as_of: '2026-06-30'
     confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 年報具名進貨供應商，產品項目未細分
+    counterparty_shares:
+    - as_of: '2026-06-30'
+      basis: revenue
+      of: tw.3231
+      pct: 5.45
+    detail: 集團內銷貨；產品未於該表具名
     details:
+    - 集團內銷貨；產品未於該表具名
     - 年報具名進貨供應商，產品項目未細分
     edge: ece7e3f532105
     evidence_level: primary
@@ -260,7 +266,7 @@ relations:
     ranking_basis: disclosed
     share_basis: purchases
     share_pct: 8.09
-    weight: 1
+    weight: 2
   transactions:
   - amount: null
     as_of: '2026-09-10'
@@ -545,28 +551,28 @@ evidence:
     locator: 第10頁，合併基礎，WYMY子公司列及持股百分比
     published_date: '2025-11-07'
     publisher: 緯穎科技服務股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: 2025年第三季合併財務報告
     url: https://www.wiwynn.com/hubfs/Investors/Financial_Report/2025Q3_WYHQ_FS_CH.pdf
   tw.6669#e12:
     locator: 第10頁，合併基礎，WYMX子公司列及持股百分比
     published_date: '2025-11-07'
     publisher: 緯穎科技服務股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: 2025年第三季合併財務報告
     url: https://www.wiwynn.com/hubfs/Investors/Financial_Report/2025Q3_WYHQ_FS_CH.pdf
   tw.6669#e13:
     locator: 第10頁，合併基礎，WYMUS子公司列及持股百分比
     published_date: '2025-11-07'
     publisher: 緯穎科技服務股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: 2025年第三季合併財務報告
     url: https://www.wiwynn.com/hubfs/Investors/Financial_Report/2025Q3_WYHQ_FS_CH.pdf
   tw.6669#e14:
     locator: 第10頁，緯穎智造子公司列，持股100%
     published_date: '2025-11-07'
     publisher: 緯穎科技服務股份有限公司
-    quote_check: unreachable
+    quote_check: not_found
     title: 2025年第三季合併財務報告
     url: https://www.wiwynn.com/hubfs/Investors/Financial_Report/2025Q3_WYHQ_FS_CH.pdf
   tw.6669#e15:
@@ -622,7 +628,7 @@ evidence:
     locator: 第17頁，附註六（七）關聯企業，取得日期及297,000千元金額段落
     published_date: '2026-08-07'
     publisher: 緯穎科技服務股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: 2026年第二季合併財務報告
     url: https://www.wiwynn.com/hubfs/Investors/Financial_Report/2026Q2_WYHQ_FS_CH.pdf
   tw.6669#e1b:
@@ -762,6 +768,6 @@ evidence:
     locator: 第43頁，附註七（一）母公司與最終控制者
     published_date: '2026-08-07'
     publisher: 緯穎科技服務股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: 2026年第二季合併財務報告
     url: https://www.wiwynn.com/hubfs/Investors/Financial_Report/2026Q2_WYHQ_FS_CH.pdf

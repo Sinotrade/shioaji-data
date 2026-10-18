@@ -8,12 +8,171 @@ industry:
   l0_code: '20'
   l0_name: 其他業
   l0_name_en: Others
-primary_chain_position: unknown
+  l1: materials
+  l1_name: 原物料
+  l1_name_en: Materials
+  l2: mat.other
+  l2_name: 其他原物料
+  l2_name_en: Other Materials
+  l3: matl.rubber
+  l3_name: 橡膠與輪胎
+  l3_name_en: Rubber & Tires
+primary_chain_position: midstream
+summary_short: 製造與銷售汽機車、工業及農建礦設備用油封與橡膠密封製品。
+summary_long: 茂順以各類油封及橡膠密封製品的製造與銷售為主要業務，產品應用涵蓋汽機車、工業機械與農建礦設備。2025年營收組成為油封93.45%、混煉膠0.68%、其他5.87%，油封為主要收入來源。機械手臂用密封方案包含旋轉型油封、V型環、O型環與密封蓋；農建礦用AP密封元件則用於農業機具、建築與採礦設備。公司並將電動車齒輪箱油封列入2025年開發成功的產品，具有電動車零組件與機器人密封元件相關業務。
+segments:
+- evidence_ids:
+  - e02
+  id: seg_oil_seals
+  name: 油封
+  period: '2025'
+  revenue_share_pct: 93.45
+- evidence_ids:
+  - e02
+  id: seg_rubber_compounds
+  name: 混煉膠
+  period: '2025'
+  revenue_share_pct: 0.68
+- evidence_ids:
+  - e02
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 5.87
+main_theme: theme.ev
+themes:
+- stage: parts
+  theme: theme.ev
+  tier: midstream
+- stage: components
+  theme: theme.robotics
+  tier: upstream
+relations:
+  subsidiaries:
+  - as_of: 2026-03
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的子公司
+    details:
+    - 直接持股100%的子公司
+    edge: e06c987cb76e3
+    evidence_level: primary
+    id: org.nak-sealing-products-thailand
+    name: NAK SEALING PRODUCTS (THAILAND)CO., LTD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2026-03
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的子公司
+    details:
+    - 直接持股100%的子公司
+    edge: ebfd49bce6027
+    evidence_level: primary
+    id: org.showmost-international
+    name: SHOWMOST INTERNATIONAL CO., LTD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2026-03
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的子公司
+    details:
+    - 直接持股100%的子公司
+    edge: ea119ea514eef
+    evidence_level: primary
+    id: org.smooth-track-associates
+    name: SMOOTH-TRACK ASSOCIATES LIMITED
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2026-03
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的子公司
+    details:
+    - 直接持股100%的子公司
+    edge: ef3978913715c
+    evidence_level: primary
+    id: org.song-quan-international
+    name: 松全國際(股)公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.nak.com.tw
 tax_id: '61904541'
 incorporated: '1976-08-04'
 listed: '2002-01-28'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-18'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.9942#e02:
+    locator: 印刷頁67；目前之主要產品及營業比重；民國114年度
+    published_date: '2026-03-30'
+    publisher: 茂順密封元件科技股份有限公司
+    quote_check: found
+    title: 茂順密封元件科技股份有限公司114年年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52803/2026/RNS/52803_rns_2026-04-30_f5bf5916-cc2e-406f-a7bf-a6a88eb8ca60.pdf
+  tw.9942#e03:
+    locator: 印刷頁67；所營業務之主要內容及目前之產品
+    published_date: '2026-03-30'
+    publisher: 茂順密封元件科技股份有限公司
+    quote_check: found
+    title: 茂順密封元件科技股份有限公司114年年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52803/2026/RNS/52803_rns_2026-04-30_f5bf5916-cc2e-406f-a7bf-a6a88eb8ca60.pdf
+  tw.9942#e04:
+    locator: 機械手臂密封解決方案
+    published_date: null
+    publisher: 茂順密封元件科技股份有限公司
+    quote_check: found
+    title: 茂順官網－工業應用－機械手臂
+    url: https://www.nak.com.tw/index.php/zh-TW/market/market_subcategory?categoryid=43&parentid=2
+  tw.9942#e05:
+    locator: AP密封元件介紹
+    published_date: null
+    publisher: 茂順密封元件科技股份有限公司
+    quote_check: found
+    title: 茂順官網－農業、建築、礦產
+    url: https://www.nak.com.tw/index.php/zh-TW/market/market_section?categoryid=3
+  tw.9942#e06:
+    locator: 印刷頁2；114年研發成果；開發成功的技術或產品，第1項
+    published_date: '2026-03-30'
+    publisher: 茂順密封元件科技股份有限公司
+    quote_check: found
+    title: 茂順密封元件科技股份有限公司114年年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52803/2026/RNS/52803_rns_2026-04-30_f5bf5916-cc2e-406f-a7bf-a6a88eb8ca60.pdf
+  tw.9942#e07:
+    locator: 印刷頁61；綜合持股比例；本公司投資欄
+    published_date: '2026-03-30'
+    publisher: 茂順密封元件科技股份有限公司
+    quote_check: found
+    title: 茂順密封元件科技股份有限公司114年年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52803/2026/RNS/52803_rns_2026-04-30_f5bf5916-cc2e-406f-a7bf-a6a88eb8ca60.pdf
+  tw.9942#e08:
+    locator: 印刷頁61；綜合持股比例；本公司投資欄
+    published_date: '2026-03-30'
+    publisher: 茂順密封元件科技股份有限公司
+    quote_check: found
+    title: 茂順密封元件科技股份有限公司114年年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52803/2026/RNS/52803_rns_2026-04-30_f5bf5916-cc2e-406f-a7bf-a6a88eb8ca60.pdf
+  tw.9942#e09:
+    locator: 印刷頁61；綜合持股比例；本公司投資欄
+    published_date: '2026-03-30'
+    publisher: 茂順密封元件科技股份有限公司
+    quote_check: found
+    title: 茂順密封元件科技股份有限公司114年年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52803/2026/RNS/52803_rns_2026-04-30_f5bf5916-cc2e-406f-a7bf-a6a88eb8ca60.pdf
+  tw.9942#e10:
+    locator: 印刷頁61；綜合持股比例；本公司投資欄
+    published_date: '2026-03-30'
+    publisher: 茂順密封元件科技股份有限公司
+    quote_check: found
+    title: 茂順密封元件科技股份有限公司114年年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52803/2026/RNS/52803_rns_2026-04-30_f5bf5916-cc2e-406f-a7bf-a6a88eb8ca60.pdf

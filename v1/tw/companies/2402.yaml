@@ -45,6 +45,50 @@ themes:
 - stage: modules
   theme: theme.liquid_cooling
   tier: midstream
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 中國子公司
+    details:
+    - 中國子公司
+    edge: e5762ccda4202
+    evidence_level: primary
+    id: org.ichia-electronics-suzhou
+    name: 毅嘉電子(蘇州)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 馬來西亞子公司
+    details:
+    - 馬來西亞子公司
+    edge: e6dd53117d239
+    evidence_level: primary
+    id: org.ichia-technologies-malaysia
+    name: ICHIA TECHNOLOGIES MALAYSIA SDN.BHD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 中國子公司
+    details:
+    - 中國子公司
+    edge: ec914fe1016c7
+    evidence_level: primary
+    id: org.zhongshan-ichia-electronics
+    name: 中山毅永電子有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.ichia.com
 tax_id: '23588039'
 incorporated: '1989-11-07'
@@ -60,6 +104,27 @@ evidence:
     quote_check: found
     title: 軟性印刷電路板
     url: https://www.ichia.com/product_d.php?id=75&lang=tw&tb=1
+  tw.2402#e10:
+    locator: 第59頁，關係企業之控制從屬關係（PDF第63頁）
+    published_date: null
+    publisher: 毅嘉科技股份有限公司
+    quote_check: found
+    title: 毅嘉科技股份有限公司114年度年報
+    url: https://www.ichia.com/archive/doc/download/114%E6%AF%85%E5%98%89%E5%B9%B4%E5%A0%B1.pdf
+  tw.2402#e11:
+    locator: 第59頁，關係企業之控制從屬關係（PDF第63頁）
+    published_date: null
+    publisher: 毅嘉科技股份有限公司
+    quote_check: found
+    title: 毅嘉科技股份有限公司114年度年報
+    url: https://www.ichia.com/archive/doc/download/114%E6%AF%85%E5%98%89%E5%B9%B4%E5%A0%B1.pdf
+  tw.2402#e12:
+    locator: 第59頁，關係企業之控制從屬關係（PDF第63頁）
+    published_date: null
+    publisher: 毅嘉科技股份有限公司
+    quote_check: found
+    title: 毅嘉科技股份有限公司114年度年報
+    url: https://www.ichia.com/archive/doc/download/114%E6%AF%85%E5%98%89%E5%B9%B4%E5%A0%B1.pdf
   tw.2402#e2:
     locator: 核心能力與服務項目
     published_date: null
@@ -106,13 +171,13 @@ evidence:
     locator: 第37頁，營業比重（PDF第41頁）
     published_date: null
     publisher: 毅嘉科技股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: 毅嘉科技股份有限公司114年度年報
     url: https://www.ichia.com/archive/doc/download/114%E6%AF%85%E5%98%89%E5%B9%B4%E5%A0%B1.pdf
   tw.2402#e9:
     locator: 第37頁，營業比重（PDF第41頁）
     published_date: null
     publisher: 毅嘉科技股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: 毅嘉科技股份有限公司114年度年報
     url: https://www.ichia.com/archive/doc/download/114%E6%AF%85%E5%98%89%E5%B9%B4%E5%A0%B1.pdf

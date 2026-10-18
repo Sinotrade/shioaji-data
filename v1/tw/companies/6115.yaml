@@ -8,12 +8,145 @@ industry:
   l0_code: '28'
   l0_name: 電子零組件業
   l0_name_en: Electronic Parts and Components
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.connector
+  l3_name: 連接器與線材
+  l3_name_en: Connectors & Cables
+chain: chain.server
+primary_chain_position: midstream
+summary_short: 主要製造銷售電源線連接器、網路線及專用線組，另有塑膠加工材料。
+summary_long: 鎰勝以電源線連接器及相關線材的製造與銷售為主要業務，2025年電源線連接器占合併營收95.39%，塑膠加工材料占4.61%。電源線連接器用於個人電腦、筆記型電腦、監視器、家用電器及消費性電子，產品範圍亦包括AI伺服器用電源線連接器。其他主要產品包括區域網路線、太陽能專用線組及電動車充電專用線組。塑膠加工材料業務提供線材用塑膠原料與成型加工服務；集團間接子公司包括鎰勝電子科技(昆山)有限公司及鎰勝電子(深圳)有限公司。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_power
+  name: 電源線連接器
+  period: '2025'
+  revenue_share_pct: 95.39
+- evidence_ids:
+  - e2
+  id: seg_plastic
+  name: 塑膠加工材料
+  period: '2025'
+  revenue_share_pct: 4.61
+main_theme: theme.ev
+themes:
+- stage: parts
+  theme: theme.ev
+  tier: midstream
+- stage: components
+  theme: theme.ai_server
+  tier: midstream
+relations:
+  subsidiaries:
+  - as_of: '2026-06-24'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過Year Sweep Limited間接持有的子公司
+    details:
+    - 透過Year Sweep Limited間接持有的子公司
+    edge: ea90de8e805a2
+    evidence_level: primary
+    id: org.isheng-electronics-kunshan
+    name: 鎰勝電子科技(昆山)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-24'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過Waysboth控股架構間接持有的子公司
+    details:
+    - 透過Waysboth控股架構間接持有的子公司
+    edge: e25c72dafe87d
+    evidence_level: primary
+    id: org.isheng-electronics-shenzhen
+    name: 鎰勝電子(深圳)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.isheng.com.tw
 tax_id: '22304288'
 incorporated: '1986-11-25'
 listed: '2004-07-19'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-18'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6115#e1:
+    locator: 印刷頁24，肆、營運概況，一、業務內容，營業比重表，電源線連接器列之114年度金額與百分比
+    published_date: '2026-06-24'
+    publisher: 鎰勝工業股份有限公司
+    quote_check: found
+    title: 鎰勝工業股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52502/2026/RNS/52502_rns_2026-05-28_2c93e2f4-5ed6-4bdd-9208-88942423396b.pdf
+  tw.6115#e10:
+    locator: 印刷頁40，關係企業組織圖；印刷頁41，關係企業董事、監察人及總經理資料，深圳公司列
+    published_date: '2026-06-24'
+    publisher: 鎰勝工業股份有限公司
+    quote_check: found
+    title: 鎰勝工業股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52502/2026/RNS/52502_rns_2026-05-28_2c93e2f4-5ed6-4bdd-9208-88942423396b.pdf
+  tw.6115#e2:
+    locator: 印刷頁24，營業比重表，塑膠加工材料列之114年度金額與百分比
+    published_date: '2026-06-24'
+    publisher: 鎰勝工業股份有限公司
+    quote_check: found
+    title: 鎰勝工業股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52502/2026/RNS/52502_rns_2026-05-28_2c93e2f4-5ed6-4bdd-9208-88942423396b.pdf
+  tw.6115#e3:
+    locator: 印刷頁24，公司目前之商品及服務項目，第2項
+    published_date: '2026-06-24'
+    publisher: 鎰勝工業股份有限公司
+    quote_check: found
+    title: 鎰勝工業股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52502/2026/RNS/52502_rns_2026-05-28_2c93e2f4-5ed6-4bdd-9208-88942423396b.pdf
+  tw.6115#e4:
+    locator: 印刷頁24，公司目前之商品及服務項目，第5項
+    published_date: '2026-06-24'
+    publisher: 鎰勝工業股份有限公司
+    quote_check: found
+    title: 鎰勝工業股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52502/2026/RNS/52502_rns_2026-05-28_2c93e2f4-5ed6-4bdd-9208-88942423396b.pdf
+  tw.6115#e5:
+    locator: 印刷頁24，公司目前之商品及服務項目，第8項
+    published_date: '2026-06-24'
+    publisher: 鎰勝工業股份有限公司
+    quote_check: found
+    title: 鎰勝工業股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52502/2026/RNS/52502_rns_2026-05-28_2c93e2f4-5ed6-4bdd-9208-88942423396b.pdf
+  tw.6115#e6:
+    locator: 印刷頁13，公司簡介與核心產品；印刷頁16，公司價值鏈；年報印刷頁24另列電腦、家電及消費性電子應用
+    published_date: 2025-08
+    publisher: 鎰勝工業股份有限公司
+    quote_check: found
+    title: 鎰勝工業股份有限公司2024年永續報告書
+    url: https://www.isheng.com.tw/upload/users/1/2024%E6%B0%B8%E7%BA%8C%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf
+  tw.6115#e7:
+    locator: 印刷頁15，鎰勝主要產品，汽車用電源模組線材列
+    published_date: 2025-08
+    publisher: 鎰勝工業股份有限公司
+    quote_check: found
+    title: 鎰勝工業股份有限公司2024年永續報告書
+    url: https://www.isheng.com.tw/upload/users/1/2024%E6%B0%B8%E7%BA%8C%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf
+  tw.6115#e8:
+    locator: 印刷頁15，鎰勝主要產品，塑膠加工材料列
+    published_date: 2025-08
+    publisher: 鎰勝工業股份有限公司
+    quote_check: found
+    title: 鎰勝工業股份有限公司2024年永續報告書
+    url: https://www.isheng.com.tw/upload/users/1/2024%E6%B0%B8%E7%BA%8C%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf
+  tw.6115#e9:
+    locator: 印刷頁40，關係企業組織圖；印刷頁41，關係企業董事、監察人及總經理資料，昆山公司列
+    published_date: '2026-06-24'
+    publisher: 鎰勝工業股份有限公司
+    quote_check: found
+    title: 鎰勝工業股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52502/2026/RNS/52502_rns_2026-05-28_2c93e2f4-5ed6-4bdd-9208-88942423396b.pdf

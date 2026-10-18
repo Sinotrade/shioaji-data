@@ -8,12 +8,194 @@ industry:
   l0_code: '02'
   l0_name: 食品工業
   l0_name_en: Food
-primary_chain_position: unknown
+  l1: consumer
+  l1_name: 消費
+  l1_name_en: Consumer
+  l2: cons.staples
+  l2_name: 民生消費
+  l2_name_en: Consumer Staples
+  l3: food.processing
+  l3_name: 食品加工
+  l3_name_en: Food Processing
+primary_chain_position: downstream
+summary_short: 以大研品牌研發及銷售魚油、葉黃素等保健食品。
+summary_long: 大研生醫以保健食品研發及銷售為主要業務，2025年保健食品占營收100%。主要產品包括德國頂級魚油軟膠囊、視易適葉黃素、動易動非變性二型膠原蛋白、海藻鈣海洋精華膠囊及1000億益生菌粉包。公司經營保健食品品牌與銷售通路，位於產業鏈下游。尚凡國際創新科技為最終母公司；主要子公司包括日本及澳洲生技醫療公司，以及台灣的大研樂宿養生村與大研生醫併購投資，四家公司均為直接持有的全資子公司。
+segments:
+- evidence_ids:
+  - e02
+  id: seg_health_food
+  name: 保健食品
+  period: '2025'
+  revenue_share_pct: 100
+relations:
+  parents:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 最終母公司
+    details:
+    - 最終母公司
+    edge: e7035f81e32c7
+    evidence_level: primary
+    id: tw.5278
+    name: 尚凡*
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 澳洲生技醫療子公司
+    details:
+    - 澳洲生技醫療子公司
+    edge: e3821b0133a39
+    evidence_level: primary
+    id: org.daiken-biomedical-australia
+    name: Daiken Biomedical Australia Pty Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 日本生技醫療子公司
+    details:
+    - 日本生技醫療子公司
+    edge: e8f1ecbb961f5
+    evidence_level: primary
+    id: org.daiken-biomedical-japan
+    name: Daiken Biomedical Co.,Ltd.（Japan）
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 台灣一般投資子公司
+    details:
+    - 台灣一般投資子公司
+    edge: e4f335b4b3900
+    evidence_level: primary
+    id: org.daiken-biomedical-ma-investment
+    name: 大研生醫併購投資股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 台灣一般投資子公司
+    details:
+    - 台灣一般投資子公司
+    edge: e8258cc090e95
+    evidence_level: primary
+    id: org.daiken-lesu-health-village
+    name: 大研樂宿養生村股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.daikenshop.com
 tax_id: '50784323'
 incorporated: '2018-06-20'
 listed: '2025-09-09'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-18'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.7780#e02:
+    locator: 年報第73頁（PDF第77頁），營業比重表；113、114年度依序排列
+    published_date: '2026-04-30'
+    publisher: 大研生醫國際股份有限公司
+    quote_check: found
+    title: 大研生醫國際股份有限公司一一四年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52697/2026/RNS/52697_rns_2026-05-14_ac0c936e-53e9-417a-8cb0-1dce2621386e.pdf
+  tw.7780#e03:
+    locator: 年報第73頁（PDF第77頁），業務範圍
+    published_date: '2026-04-30'
+    publisher: 大研生醫國際股份有限公司
+    quote_check: found
+    title: 大研生醫國際股份有限公司一一四年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52697/2026/RNS/52697_rns_2026-05-14_ac0c936e-53e9-417a-8cb0-1dce2621386e.pdf
+  tw.7780#e04:
+    locator: 年報第77頁（PDF第81頁），產業上中下游關聯性及公司營運模式
+    published_date: '2026-04-30'
+    publisher: 大研生醫國際股份有限公司
+    quote_check: found
+    title: 大研生醫國際股份有限公司一一四年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52697/2026/RNS/52697_rns_2026-05-14_ac0c936e-53e9-417a-8cb0-1dce2621386e.pdf
+  tw.7780#e05:
+    locator: 年報第73頁（PDF第77頁），目前之商品項目
+    published_date: '2026-04-30'
+    publisher: 大研生醫國際股份有限公司
+    quote_check: found
+    title: 大研生醫國際股份有限公司一一四年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52697/2026/RNS/52697_rns_2026-05-14_ac0c936e-53e9-417a-8cb0-1dce2621386e.pdf
+  tw.7780#e06:
+    locator: 商品相關檢驗報告區標題
+    published_date: null
+    publisher: 大研生醫
+    quote_check: found
+    title: 動易動非變性二型膠原蛋白商品頁
+    url: https://www.daikenshop.com/product.php?code=0000000000117
+  tw.7780#e07:
+    locator: 商品名稱標題
+    published_date: null
+    publisher: 大研生醫
+    quote_check: found
+    title: 視易適葉黃素商品頁
+    url: https://www.daikenshop.com/product.php?code=0000000000028
+  tw.7780#e08:
+    locator: 商品名稱標題
+    published_date: null
+    publisher: 大研生醫
+    quote_check: found
+    title: 海藻鈣海洋精華膠囊商品頁
+    url: https://www.daikenshop.com/product.php?code=4710255451095
+  tw.7780#e09:
+    locator: 年報第73頁（PDF第77頁），目前之商品項目
+    published_date: '2026-04-30'
+    publisher: 大研生醫國際股份有限公司
+    quote_check: found
+    title: 大研生醫國際股份有限公司一一四年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52697/2026/RNS/52697_rns_2026-05-14_ac0c936e-53e9-417a-8cb0-1dce2621386e.pdf
+  tw.7780#e10:
+    locator: 第11頁，附註一公司沿革與業務範圍，尚凡持股及最終母公司敘述
+    published_date: '2026-08-07'
+    publisher: 大研生醫國際股份有限公司
+    quote_check: found
+    title: 大研生醫國際股份有限公司及子公司115年第二季合併財務報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52697/2026/RNS/52697_rns_2026-08-12_87467827-0f84-4f81-a569-c22084beda01.pdf
+  tw.7780#e11:
+    locator: 第44頁附表一，日本子公司列；所在地日本、主要營業項目生技醫療、持股100%
+    published_date: '2026-08-07'
+    publisher: 大研生醫國際股份有限公司
+    quote_check: found
+    title: 大研生醫國際股份有限公司及子公司115年第二季合併財務報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52697/2026/RNS/52697_rns_2026-08-12_87467827-0f84-4f81-a569-c22084beda01.pdf
+  tw.7780#e12:
+    locator: 第44頁附表一，澳洲生技醫療子公司列；所在地澳大利亞、主要營業項目生技醫療、持股100%
+    published_date: '2026-08-07'
+    publisher: 大研生醫國際股份有限公司
+    quote_check: found
+    title: 大研生醫國際股份有限公司及子公司115年第二季合併財務報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52697/2026/RNS/52697_rns_2026-08-12_87467827-0f84-4f81-a569-c22084beda01.pdf
+  tw.7780#e13:
+    locator: 第44頁附表一，大研樂宿養生村列；所在地台灣、主要營業項目一般投資、持股100%
+    published_date: '2026-08-07'
+    publisher: 大研生醫國際股份有限公司
+    quote_check: found
+    title: 大研生醫國際股份有限公司及子公司115年第二季合併財務報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52697/2026/RNS/52697_rns_2026-08-12_87467827-0f84-4f81-a569-c22084beda01.pdf
+  tw.7780#e14:
+    locator: 第44頁附表一，大研生醫併購投資列；所在地台灣、主要營業項目一般投資、持股100%
+    published_date: '2026-08-07'
+    publisher: 大研生醫國際股份有限公司
+    quote_check: found
+    title: 大研生醫國際股份有限公司及子公司115年第二季合併財務報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52697/2026/RNS/52697_rns_2026-08-12_87467827-0f84-4f81-a569-c22084beda01.pdf

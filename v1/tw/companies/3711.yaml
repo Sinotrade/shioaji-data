@@ -54,6 +54,21 @@ themes:
   theme: theme.cowos
   tier: midstream
 relations:
+  competitors:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 委外半導體封裝測試市場
+    details:
+    - 委外半導體封裝測試市場
+    edge: e9ea190852a04
+    evidence_level: primary
+    id: us.AMKR
+    name: Amkor Technology
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   customers:
   - as_of: 2023-09
     confidence: ai_cross_checked
@@ -126,6 +141,20 @@ relations:
     share_pct: null
     weight: 1
   partners:
+  - as_of: '2026-10-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司日月光半導體及矽品為測試封裝夥伴
+    details:
+    - 子公司日月光半導體及矽品為測試封裝夥伴
+    edge: ed0627522fa61
+    evidence_level: primary
+    id: tw.2303
+    name: 聯電
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   - as_of: '2026-05-08'
     confidence: ai_cross_checked
     counterparty_shares: []
@@ -219,7 +248,7 @@ relations:
     details:
     - 先進封裝設備客戶
     edge: e848898067732
-    evidence_level: primary
+    evidence_level: other
     id: tw.3131
     name: 弘塑
     ranking_basis: unranked
@@ -233,7 +262,7 @@ relations:
     details:
     - 半導體封測終端客戶（集團層級）
     edge: e480cbb8b7d19
-    evidence_level: primary
+    evidence_level: other
     id: tw.3580
     name: 友威科
     ranking_basis: unranked
@@ -247,7 +276,7 @@ relations:
     details:
     - 單晶旋轉機台供貨（歷史報導）
     edge: ef7b681cc0b58
-    evidence_level: primary
+    evidence_level: other
     id: tw.3583
     name: 辛耘
     ranking_basis: unranked
@@ -261,7 +290,7 @@ relations:
     details:
     - 半導體設備；來源以投控名稱描述，實際採購法人未揭露
     edge: e79447bb4209e
-    evidence_level: primary
+    evidence_level: other
     id: tw.5443
     name: 均豪
     ranking_basis: unranked
@@ -539,6 +568,13 @@ evidence:
     quote_check: unreachable
     title: ASE Technology Holding Co., Ltd. Reports Its Unaudited Consolidated Financial Results for the Second Quarter of 2026
     url: https://www.sec.gov/Archives/edgar/data/1122411/000095010326011351/dp250868_6k.htm
+  tw.3711#e03:
+    locator: VIPack產品介紹首段
+    published_date: null
+    publisher: 日月光高雄廠
+    quote_check: unreachable
+    title: Vipack™
+    url: https://asekh.aseglobal.com/ch/products-services/vipack.html
   tw.3711#e04:
     locator: 新聞稿第1段
     published_date: '2025-04-01'
@@ -609,6 +645,13 @@ evidence:
     quote_check: found
     title: TSMC 3DFabric® Alliance
     url: https://www.tsmc.com/english/dedicatedFoundry/oip/3dfabric_alliance
+  tw.3711#e14:
+    locator: 測試／封裝夥伴
+    published_date: null
+    publisher: 聯華電子
+    quote_check: found
+    title: 封裝解決方案研發
+    url: https://www.umc.com/zh-TW/StaticPage/package_solution_development
   tw.3711#e15:
     locator: 新聞稿末段
     published_date: '2025-05-07'
@@ -616,6 +659,13 @@ evidence:
     quote_check: found
     title: Henkel earns ASE 2024 Best Supplier Award, recognized for its part in carbon verification project
     url: https://www.henkel.com/press-and-media/press-releases-and-kits/2025-05-07-henkel-earns-ase-2024-best-supplier-award-recognized-for-its-part-in-carbon-verification-project-2057042
+  tw.3711#e16:
+    locator: 第13頁，COMPETITION
+    published_date: null
+    publisher: Amkor Technology, Inc.／SEC
+    quote_check: unreachable
+    title: Amkor Technology, Inc. — 2025 Form 10-K
+    url: https://www.sec.gov/Archives/edgar/data/1047127/000104712726000014/amkr-20251231.htm
   tw.3711#e17:
     locator: 新聞稿K18B製程規劃段落
     published_date: '2025-10-03'
@@ -690,7 +740,7 @@ evidence:
     locator: Our Presence in Malaysia，第2段
     published_date: null
     publisher: Advanced Semiconductor Engineering, Inc.
-    quote_check: unreachable
+    quote_check: found
     title: 日月光馬來西亞廠
     url: https://ase.aseglobal.com/ch/about-ase/manufacturing-facilities/ase-malaysia/
   tw.3711#e28:

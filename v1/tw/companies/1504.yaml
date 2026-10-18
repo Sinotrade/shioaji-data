@@ -56,12 +56,12 @@ themes:
 - stage: equipment
   theme: theme.power_grid
   tier: midstream
-- stage: operation
-  theme: theme.data_center
-  tier: downstream
 - stage: components
   theme: theme.robotics
   tier: upstream
+- stage: operation
+  theme: theme.data_center
+  tier: downstream
 - stage: components
   theme: theme.drone
   tier: upstream
@@ -362,6 +362,48 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  - amount: 新台幣20,829仟元
+    as_of: '2024-07-19'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 購入既有子公司額外10%股份
+    details:
+    - 購入既有子公司額外10%股份
+    edge: eb269c9fbc259
+    event_date: '2024-07-19'
+    events:
+    - amount: 新台幣20,829仟元
+      detail: 購入既有子公司額外10%股份
+      event_date: '2024-07-19'
+    evidence_level: primary
+    id: org.taian-etacom-technology
+    name: 安達康科技股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣236,671仟元
+    as_of: '2024-08-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 現金合併既有子公司
+    details:
+    - 現金合併既有子公司
+    edge: e78efc5a65b17
+    event_date: '2024-04-10'
+    events:
+    - amount: 新台幣236,671仟元
+      detail: 現金合併既有子公司
+      event_date: '2024-04-10'
+    evidence_level: primary
+    id: org.teco-electro-devices
+    name: 東元精電股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
   - amount: null
     as_of: '2026-06-22'
     confidence: ai_cross_checked
@@ -551,6 +593,27 @@ evidence:
     quote_check: unreachable
     title: 東元電機114年度合併財務報告
     url: https://www.teco.com.tw/Upload/att/2026-03/202603271700119623974199.pdf
+  tw.1504#e22:
+    locator: 第20頁註6，東元精電合併；第55頁，收購剩餘38.93%股份對價236,671仟元
+    published_date: null
+    publisher: 東元電機股份有限公司
+    quote_check: unreachable
+    title: 東元電機114年第一季合併財務報告
+    url: https://www.teco.com.tw/Content/filepool/64e04e70-4b6f-4eba-b1b6-709578f01d0f.pdf
+  tw.1504#e23:
+    locator: 第55頁，與非控制權益交易第2項，安達康額外10%股份；對價20,829仟元
+    published_date: null
+    publisher: 東元電機股份有限公司
+    quote_check: unreachable
+    title: 東元電機114年第一季合併財務報告
+    url: https://www.teco.com.tw/Content/filepool/64e04e70-4b6f-4eba-b1b6-709578f01d0f.pdf
+  tw.1504#e24:
+    locator: 第36頁，待出售非流動資產及停業單位；核准2024年11月12日，2025年2月完成，對價599,904仟元
+    published_date: null
+    publisher: 東元電機股份有限公司
+    quote_check: unreachable
+    title: 東元電機114年第一季合併財務報告
+    url: https://www.teco.com.tw/Content/filepool/64e04e70-4b6f-4eba-b1b6-709578f01d0f.pdf
   tw.1504#e25:
     locator: 第82頁，重大期後事項第2項；2026年2月11日董事會決議
     published_date: null

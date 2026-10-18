@@ -40,14 +40,14 @@ segments:
   name: 其他：LED模組應用設計與製造
   period: '2025'
   revenue_share_pct: 0.7
-main_theme: theme.cpo
+main_theme: theme.gan
 themes:
-- stage: components
-  theme: theme.cpo
-  tier: upstream
 - stage: devices
   theme: theme.gan
   tier: midstream
+- stage: components
+  theme: theme.cpo
+  tier: upstream
 - stage: chip
   theme: theme.vcsel
   tier: midstream

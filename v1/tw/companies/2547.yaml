@@ -8,8 +8,127 @@ industry:
   l0_code: '14'
   l0_name: 建材營造業
   l0_name_en: Building Material and Construction
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.environment
+  l2_name: 環保服務
+  l2_name_en: Environmental Services
+  l3: env.water
+  l3_name: 水處理
+  l3_name_en: Water Treatment
+primary_chain_position: not_applicable
+summary_short: 經營污水處理與再生水、住宅商辦開發租售及百貨事業。
+summary_long: 日勝生集團經營水資源循環、住宅與商辦開發租售，以及百貨等營運事業。2025年年報列示資源循環為最大營收部門，營業比重51.77%，此口徑含內部交易及另列沖銷。水務由間接子公司日鼎水務執行桃園污水下水道BOT案，寶鼎再生水負責再生水業務。建設產品包含美河市，康養樂齡產品則有日初不老莊園與樂陶居；集順生活科技從事都更與康養營運，泰誠發展營造為營造子公司，京站實業則為經營百貨商場的間接子公司。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_resource
+  name: 資源循環（含內部交易）
+  period: '2025'
+  revenue_share_pct: 51.77
+- evidence_ids:
+  - e2
+  id: seg_construction
+  name: 營建（含內部交易）
+  period: '2025'
+  revenue_share_pct: 37.24
+- evidence_ids:
+  - e2
+  id: seg_leasing
+  name: 租賃（含內部交易）
+  period: '2025'
+  revenue_share_pct: 23.17
+- evidence_ids:
+  - e2
+  id: seg_retail
+  name: 百貨（含內部交易）
+  period: '2025'
+  revenue_share_pct: 21.56
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他（含內部交易）
+  period: '2025'
+  revenue_share_pct: 6.8
+- evidence_ids:
+  - e2
+  id: seg_elimination
+  name: 調整及沖銷
+  period: '2025'
+  revenue_share_pct: -40.54
 relations:
+  subsidiaries:
+  - as_of: '2026-04-15'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 再生水事業子公司
+    details:
+    - 再生水事業子公司
+    edge: e4970267ded62
+    evidence_level: primary
+    id: org.寶鼎再生水股份有限公司
+    name: 寶鼎再生水股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 執行污水下水道BOT計畫的間接子公司
+    details:
+    - 執行污水下水道BOT計畫的間接子公司
+    edge: efe47cdcb7e0a
+    evidence_level: primary
+    id: org.日鼎水務企業股份有限公司
+    name: 日鼎水務企業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-15'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 營造子公司
+    details:
+    - 營造子公司
+    edge: e805a6cec322e
+    evidence_level: primary
+    id: org.泰誠發展營造股份有限公司
+    name: 泰誠發展營造股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-15'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 都更開發及康養營運子公司
+    details:
+    - 都更開發及康養營運子公司
+    edge: eb43266991a9c
+    evidence_level: primary
+    id: org.集順生活科技股份有限公司
+    name: 集順生活科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 經營京站百貨商場的間接子公司
+    details:
+    - 經營京站百貨商場的間接子公司
+    edge: e2409c68315fb
+    evidence_level: primary
+    id: tw.2942
+    name: 京站實業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   suppliers:
   - as_of: '2026-04-13'
     confidence: ai_cross_checked
@@ -29,7 +148,77 @@ website: https://www.radium.com.tw
 tax_id: '12373243'
 incorporated: '1982-03-26'
 listed: '2000-12-22'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-18'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2547#e10:
+    locator: 第64頁，附註三十（一）重大或有負債及未認列之合約承諾
+    published_date: null
+    publisher: 日勝生活科技股份有限公司
+    quote_check: unreachable
+    title: 日勝生活科技股份有限公司114及113年度個體財務報告
+    url: https://financialfilings.com/filings/radium-2547/annual-report/2026/33968295/
+  tw.2547#e11:
+    locator: 第122頁，企業形象及社會責任；正式公司名稱另見第119頁轉投資事業第11項
+    published_date: '2026-04-15'
+    publisher: 日勝生活科技股份有限公司
+    quote_check: found
+    title: 日勝生活科技股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52154/2026/RNS/52154_rns_2026-05-21_9eea922b-c099-4387-bcdf-68961776f854.pdf
+  tw.2547#e2:
+    locator: 第81頁，營業比重；欄序為營建、租賃、百貨、資源循環、其他、調整及沖銷、合計
+    published_date: '2026-04-15'
+    publisher: 日勝生活科技股份有限公司
+    quote_check: found
+    title: 日勝生活科技股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52154/2026/RNS/52154_rns_2026-05-21_9eea922b-c099-4387-bcdf-68961776f854.pdf
+  tw.2547#e3:
+    locator: 第1頁，致股東報告書，循環經濟與AI智慧水資源
+    published_date: '2026-04-15'
+    publisher: 日勝生活科技股份有限公司
+    quote_check: unreachable
+    title: 日勝生活科技股份有限公司114年度年報
+    url: https://financialfilings.com/filings/radium-2547/annual-report/2026/46705416/
+  tw.2547#e4:
+    locator: 第81頁，目前之商品及服務項目
+    published_date: '2026-04-15'
+    publisher: 日勝生活科技股份有限公司
+    quote_check: found
+    title: 日勝生活科技股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52154/2026/RNS/52154_rns_2026-05-21_9eea922b-c099-4387-bcdf-68961776f854.pdf
+  tw.2547#e5:
+    locator: 第81頁，目前之商品及服務項目
+    published_date: '2026-04-15'
+    publisher: 日勝生活科技股份有限公司
+    quote_check: found
+    title: 日勝生活科技股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52154/2026/RNS/52154_rns_2026-05-21_9eea922b-c099-4387-bcdf-68961776f854.pdf
+  tw.2547#e6:
+    locator: 第117頁，轉投資事業營運概況第3項
+    published_date: '2026-04-15'
+    publisher: 日勝生活科技股份有限公司
+    quote_check: found
+    title: 日勝生活科技股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52154/2026/RNS/52154_rns_2026-05-21_9eea922b-c099-4387-bcdf-68961776f854.pdf
+  tw.2547#e7:
+    locator: 第117頁，轉投資事業營運概況第1項
+    published_date: '2026-04-15'
+    publisher: 日勝生活科技股份有限公司
+    quote_check: unreachable
+    title: 日勝生活科技股份有限公司114年度年報
+    url: https://financialfilings.com/filings/radium-2547/annual-report/2026/46705416/
+  tw.2547#e8:
+    locator: 第117頁，轉投資事業營運概況第4項
+    published_date: '2026-04-15'
+    publisher: 日勝生活科技股份有限公司
+    quote_check: found
+    title: 日勝生活科技股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52154/2026/RNS/52154_rns_2026-05-21_9eea922b-c099-4387-bcdf-68961776f854.pdf
+  tw.2547#e9:
+    locator: 第58頁，附註二八（一）關係人名稱及其關係
+    published_date: null
+    publisher: 日勝生活科技股份有限公司
+    quote_check: unreachable
+    title: 日勝生活科技股份有限公司114及113年度個體財務報告
+    url: https://financialfilings.com/filings/radium-2547/annual-report/2026/33968295/

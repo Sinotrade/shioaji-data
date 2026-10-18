@@ -8,8 +8,130 @@ industry:
   l0_code: '31'
   l0_name: 其他電子業
   l0_name_en: Other Electronic
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.construction
+  l2_name: 營建與工程
+  l2_name_en: Engineering & Construction
+  l3: cons.cleanroom
+  l3_name: 無塵室與廠務工程
+  l3_name_en: Cleanroom & Facility Engineering
+chain: chain.semiconductor
+primary_chain_position: upstream
+summary_short: 以製程管路工程為主，提供無塵室機電統包、特氣設備及廢氣處理設備。
+summary_long: 漢科以高科技廠房的製程管路工程與系統整合服務為主要業務。2025年製程管路工程占營收79.74%，特殊氣體氣瓶櫃及廢氣處理機占11.95%，無塵室及機電統包占6.19%，濕製程設備、化學系統統包及其他占2.12%。服務涵蓋主系統與二次配管的規劃、設計、施工及測試，並提供氣瓶櫃與廠務監控、Local Scrubber及化學品供應設備。集團設有新加坡、美國、日本及德國子公司，上海營運公司則列為孫公司。
+segments:
+- evidence_ids:
+  - e6
+  id: seg_process_piping
+  name: 製程管路工程設計施工
+  period: '2025'
+  revenue_share_pct: 79.74
+- evidence_ids:
+  - e6
+  id: seg_cleanroom_mep
+  name: 無塵室及機電統包
+  period: '2025'
+  revenue_share_pct: 6.19
+- evidence_ids:
+  - e6
+  id: seg_gas_scrubber
+  name: 特殊氣體氣瓶櫃及廢氣處理機
+  period: '2025'
+  revenue_share_pct: 11.95
+- evidence_ids:
+  - e6
+  id: seg_wet_chemical
+  name: 濕製程設備、化學系統統包及其他
+  period: '2025'
+  revenue_share_pct: 2.12
 relations:
+  subsidiaries:
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持有之上海全資孫公司
+    details:
+    - 間接持有之上海全資孫公司
+    edge: eb94c96d2c283
+    evidence_level: primary
+    id: org.hanqun-trading-shanghai
+    name: 漢群貿易(上海)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 德國全資子公司
+    details:
+    - 德國全資子公司
+    edge: e75dee48bb01b
+    evidence_level: primary
+    id: org.wholetech-gmbh
+    name: WHOLETECH GmbH
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 日本全資子公司
+    details:
+    - 日本全資子公司
+    edge: e94baafd32e4f
+    evidence_level: primary
+    id: org.wholetech-system-hitech-japan
+    name: WHOLETECH SYSTEM HITECH JAPAN, INC.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持有之上海全資孫公司
+    details:
+    - 間接持有之上海全資孫公司
+    edge: e05ec57de057a
+    evidence_level: primary
+    id: org.wholetech-system-hitech-shanghai
+    name: 漢科系統科技(上海)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 新加坡全資子公司
+    details:
+    - 新加坡全資子公司
+    edge: e09144b27338f
+    evidence_level: primary
+    id: org.wholetech-system-hitech-singapore
+    name: WHOLETECH SYSTEM HITECH (S) PTE. LTD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 美國全資子公司
+    details:
+    - 美國全資子公司
+    edge: e51a7e4c91114
+    evidence_level: primary
+    id: org.wholetech-system-hitech-usa
+    name: WHOLETECH SYSTEM HITECH USA, INC.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   transactions:
   - amount: 新台幣1,226,400,000元（含稅）
     as_of: '2026-08-13'
@@ -36,7 +158,91 @@ website: www.wholetech.com.tw
 tax_id: '23830295'
 incorporated: '1990-08-08'
 listed: '2007-01-09'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-18'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3402#e1:
+    locator: 業務說明
+    published_date: null
+    publisher: 漢科系統科技股份有限公司
+    quote_check: found
+    title: 第一事業部－氣體／特殊管路工程
+    url: https://www.wholetech.com.tw/wholetech/views/DP/DP.php?dp=6&lang=tw
+  tw.3402#e10:
+    locator: 第121頁，關係企業持股表及註4
+    published_date: '2026-04-20'
+    publisher: 漢科系統科技股份有限公司
+    quote_check: found
+    title: 漢科系統科技股份有限公司114年度年報
+    url: https://www.wholetech.com.tw/wholetech/images/new_files/1780900296.pdf
+  tw.3402#e11:
+    locator: 第121頁，關係企業持股表，基準日2026年3月31日
+    published_date: '2026-04-20'
+    publisher: 漢科系統科技股份有限公司
+    quote_check: found
+    title: 漢科系統科技股份有限公司114年度年報
+    url: https://www.wholetech.com.tw/wholetech/images/new_files/1780900296.pdf
+  tw.3402#e12:
+    locator: 第121頁，關係企業持股表，基準日2026年3月31日
+    published_date: '2026-04-20'
+    publisher: 漢科系統科技股份有限公司
+    quote_check: found
+    title: 漢科系統科技股份有限公司114年度年報
+    url: https://www.wholetech.com.tw/wholetech/images/new_files/1780900296.pdf
+  tw.3402#e2:
+    locator: 業務說明
+    published_date: null
+    publisher: 漢科系統科技股份有限公司
+    quote_check: found
+    title: 第二事業部－無塵室＆機電統包
+    url: https://www.wholetech.com.tw/wholetech/views/DP/DP.php?dp=7&lang=tw
+  tw.3402#e3:
+    locator: 業務說明
+    published_date: null
+    publisher: 漢科系統科技股份有限公司
+    quote_check: found
+    title: 第四事業部－特氣供應＆監控系統整合
+    url: https://www.wholetech.com.tw/wholetech/views/DP/DP.php?dp=9&lang=tw
+  tw.3402#e4:
+    locator: 業務說明
+    published_date: null
+    publisher: 漢科系統科技股份有限公司
+    quote_check: found
+    title: 第五事業部－尾氣除害設備／先進產品事業部
+    url: https://www.wholetech.com.tw/wholetech/views/DP/DP.php?dp=10&lang=tw
+  tw.3402#e5:
+    locator: 業務說明
+    published_date: null
+    publisher: 漢科系統科技股份有限公司
+    quote_check: found
+    title: 第七事業部－濕製程設備＆化學系統
+    url: https://www.wholetech.com.tw/wholetech/views/DP/DP.php?dp=12&lang=tw
+  tw.3402#e6:
+    locator: 第77頁，營業比重；PDF第81頁
+    published_date: '2026-04-20'
+    publisher: 漢科系統科技股份有限公司
+    quote_check: found
+    title: 漢科系統科技股份有限公司114年度年報
+    url: https://www.wholetech.com.tw/wholetech/images/new_files/1780900296.pdf
+  tw.3402#e7:
+    locator: 第121頁，關係企業持股表，基準日2026年3月31日
+    published_date: '2026-04-20'
+    publisher: 漢科系統科技股份有限公司
+    quote_check: found
+    title: 漢科系統科技股份有限公司114年度年報
+    url: https://www.wholetech.com.tw/wholetech/images/new_files/1780900296.pdf
+  tw.3402#e8:
+    locator: 第121頁，關係企業持股表，基準日2026年3月31日
+    published_date: '2026-04-20'
+    publisher: 漢科系統科技股份有限公司
+    quote_check: found
+    title: 漢科系統科技股份有限公司114年度年報
+    url: https://www.wholetech.com.tw/wholetech/images/new_files/1780900296.pdf
+  tw.3402#e9:
+    locator: 第121頁，關係企業持股表，基準日2026年3月31日
+    published_date: '2026-04-20'
+    publisher: 漢科系統科技股份有限公司
+    quote_check: found
+    title: 漢科系統科技股份有限公司114年度年報
+    url: https://www.wholetech.com.tw/wholetech/images/new_files/1780900296.pdf

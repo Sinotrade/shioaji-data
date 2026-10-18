@@ -269,6 +269,21 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  suppliers:
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團內石化原料供應
+    details:
+    - 集團內石化原料供應
+    edge: e242510ee8fc5
+    evidence_level: primary
+    id: org.oriental-petrochemical
+    name: 亞東石化公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   transactions:
   - amount: 新台幣27.8億元
     as_of: '2026-01-27'
@@ -430,14 +445,21 @@ evidence:
     locator: 印刷頁70，附表一關係人明細表
     published_date: null
     publisher: 遠東新世紀股份有限公司
-    quote_check: unreachable
+    quote_check: found
+    title: 遠東新世紀2025年度個體財務報告
+    url: https://www.fenc.com/upload/ir/2025FinancialReport_TW.pdf
+  tw.1402#e09:
+    locator: 印刷頁72，附表二「營業成本及進貨／子公司」，114年度欄
+    published_date: null
+    publisher: 遠東新世紀股份有限公司
+    quote_check: found
     title: 遠東新世紀2025年度個體財務報告
     url: https://www.fenc.com/upload/ir/2025FinancialReport_TW.pdf
   tw.1402#e10:
     locator: 印刷頁93，附表九被投資公司明細，遠鼎投資列
     published_date: null
     publisher: 遠東新世紀股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: 遠東新世紀2025年度個體財務報告
     url: https://www.fenc.com/upload/ir/2025FinancialReport_TW.pdf
   tw.1402#e11:

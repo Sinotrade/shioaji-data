@@ -46,6 +46,11 @@ segments:
   name: 類比積體電路代理經銷
   period: '2025'
   revenue_share_pct: 10.7
+main_theme: theme.ai_server
+themes:
+- stage: components
+  theme: theme.ai_server
+  tier: midstream
 relations:
   customers:
   - as_of: 2021-07
@@ -105,6 +110,20 @@ relations:
     share_pct: null
     weight: 1
   subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團全資子公司
+    details:
+    - 集團全資子公司
+    edge: e9348757cdbd0
+    evidence_level: primary
+    id: org.future-electronics
+    name: Future Electronics Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   - as_of: '2025-10-15'
     confidence: ai_cross_checked
     counterparty_shares: []
@@ -148,6 +167,34 @@ relations:
     share_pct: null
     weight: 1
   suppliers:
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團半導體產品代理經銷
+    details:
+    - 集團半導體產品代理經銷
+    edge: e4e4d6ae3e3b7
+    evidence_level: primary
+    id: ch.STM
+    name: STMicroelectronics
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團半導體產品代理經銷
+    details:
+    - 集團半導體產品代理經銷
+    edge: e21ac13957fbf
+    evidence_level: primary
+    id: jp.6723
+    name: Renesas
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   - as_of: '2024-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
@@ -158,6 +205,62 @@ relations:
     evidence_level: primary
     id: tw.5269
     name: 祥碩
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團半導體產品代理經銷
+    details:
+    - 集團半導體產品代理經銷
+    edge: ed7b5100289ce
+    evidence_level: primary
+    id: us.AVGO
+    name: Broadcom
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團半導體產品代理經銷
+    details:
+    - 集團半導體產品代理經銷
+    edge: e458cd9068045
+    evidence_level: primary
+    id: us.MRVL
+    name: Marvell
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團半導體產品代理經銷
+    details:
+    - 集團半導體產品代理經銷
+    edge: e79bb9650b5f7
+    evidence_level: primary
+    id: us.ON
+    name: onsemi
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團半導體產品代理經銷
+    details:
+    - 集團半導體產品代理經銷
+    edge: ebbac02017ca6
+    evidence_level: primary
+    id: us.SWKS
+    name: Skyworks
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -179,6 +282,31 @@ relations:
     evidence_level: primary
     id: org.albert-phuay-yong-hen
     name: Albert Phuay Yong Hen
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 企業價值US$3.8 billion
+    as_of: '2025-06-06'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 完成收購Future Electronics
+    details:
+    - 完成收購Future Electronics
+    - 集團內取得Future Electronics Inc.(Distribution) Pte. Ltd.的51%股權
+    edge: e246780638b62
+    event_date: '2024-04-02'
+    events:
+    - amount: null
+      detail: 集團內取得Future Electronics Inc.(Distribution) Pte. Ltd.的51%股權
+      event_date: '2025-06-06'
+    - amount: 企業價值US$3.8 billion
+      detail: 完成收購Future Electronics
+      event_date: '2024-04-02'
+    evidence_level: primary
+    id: org.future-electronics
+    name: Future Electronics Inc.
     ranking_basis: unranked
     role: buyer
     share_basis: null
@@ -227,6 +355,31 @@ relations:
     share_pct: null
     weight: 1
   - amount: null
+    as_of: '2025-08-06'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團內取得Future Electronics Inc. (Distribution) Pte. Ltd.的49%股權
+    details:
+    - 集團內取得Future Electronics Inc. (Distribution) Pte. Ltd.的49%股權
+    - 對重要子公司現金增資
+    edge: e9068e7d0ead9
+    event_date: '2025-08-06'
+    events:
+    - amount: null
+      detail: 集團內取得Future Electronics Inc. (Distribution) Pte. Ltd.的49%股權
+      event_date: '2025-08-06'
+    - amount: null
+      detail: 對重要子公司現金增資
+      event_date: '2025-06-06'
+    evidence_level: primary
+    id: org.richpower-electronics-devices
+    name: 茂宣企業股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
     as_of: '2025-09-26'
     confidence: ai_cross_checked
     counterparty_shares: []
@@ -254,12 +407,16 @@ relations:
     detail: 以WT Semiconductor Holdings全部股權交換子公司新股
     details:
     - 以WT Semiconductor Holdings全部股權交換子公司新股
+    - 對新加坡子公司增資
     edge: ebc2b3f60f417
     event_date: '2025-10-15'
     events:
     - amount: 155,198,335 USD
       detail: 以WT Semiconductor Holdings全部股權交換子公司新股
       event_date: '2025-10-15'
+    - amount: null
+      detail: 對新加坡子公司增資
+      event_date: '2025-06-06'
     evidence_level: primary
     id: org.wt-microelectronics-singapore
     name: WT Microelectronics Singapore Pte. Ltd.
@@ -284,6 +441,27 @@ relations:
     evidence_level: primary
     id: org.yi-jing-technology
     name: 奕景科技股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2025-07-15'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 股份交換及被動元件通路策略合作
+    details:
+    - 股份交換及被動元件通路策略合作
+    edge: eb57a06c50afc
+    event_date: '2025-07-15'
+    events:
+    - amount: null
+      detail: 股份交換及被動元件通路策略合作
+      event_date: '2025-07-15'
+    evidence_level: primary
+    id: tw.3090
+    name: 日電貿
     ranking_basis: unranked
     role: buyer
     share_basis: null
@@ -362,6 +540,20 @@ evidence:
     quote_check: unreachable
     title: WT Microelectronics 2025 Annual Report
     url: https://www.wtmec.com/wp-content/uploads/2026/04/WT_2025-Annual-Report_ENG.pdf
+  tw.3036#e04:
+    locator: 新聞稿首段
+    published_date: '2024-04-02'
+    publisher: WT Microelectronics
+    quote_check: unreachable
+    title: WT Microelectronics Completes Acquisition of Future Electronics
+    url: https://www.wtmec.com/wt-microelectronics-completes-acquisition-of-future-electronics/?lang=en
+  tw.3036#e05:
+    locator: 印刷頁99，PDF第103頁，轉投資事業表；本公司投資、受控制事業投資及綜合投資欄
+    published_date: null
+    publisher: 文曄科技股份有限公司
+    quote_check: unreachable
+    title: 文曄科技2025年年報
+    url: https://www.wtmec.com/wp-content/uploads/2026/04/WT_2025-Annual-Report_CHINESE.pdf
   tw.3036#e06:
     locator: 2021年7月號，文曄科技小檔案／主要客戶
     published_date: null
@@ -376,6 +568,13 @@ evidence:
     quote_check: not_found
     title: 從公寓創業，文曄鄭文宗靠「價值創造」拚出3千億半導體銷售傳奇
     url: https://www.hbrtaiwan.com/article/20410/ceo-100-founder-of-wt-strives-to-the-second-semiconductor-distributor-in-asia
+  tw.3036#e10:
+    locator: 印刷頁136，PDF第140頁，開發成功之技術或產品
+    published_date: null
+    publisher: 文曄科技股份有限公司
+    quote_check: unreachable
+    title: 文曄科技2025年年報
+    url: https://www.wtmec.com/wp-content/uploads/2026/04/WT_2025-Annual-Report_CHINESE.pdf
   tw.3036#e11:
     locator: 重大訊息第7項，股東協議及買權交易說明
     published_date: '2024-12-16'
@@ -397,6 +596,13 @@ evidence:
     quote_check: unreachable
     title: WT Microelectronics and Subsidiaries 2025 Q1 Financial Reports
     url: https://www.wtmec.com/wp-content/uploads/2025/06/2025Q1_Financial-Reports_English.pdf
+  tw.3036#e14:
+    locator: 新聞稿第一段換股條件、第二段合作範圍
+    published_date: '2025-07-15'
+    publisher: 文曄科技
+    quote_check: unreachable
+    title: 文曄科技與日電貿透過換股深化策略合作
+    url: https://www.wtmec.com/wt-microelectronics-and-nichidenbo-corporation-to-deepen-strategic-partnership-through-share-swap/
   tw.3036#e15:
     locator: 重大訊息第1至6項，土地標的、日期、金額及相對人
     published_date: '2026-08-06'
@@ -481,3 +687,31 @@ evidence:
     quote_check: found
     title: 文曄：董事會通過參與子公司奕景科技股份有限公司現金增資案
     url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=d31fea1a-181b-41ae-8996-e16b2dfae6dc
+  tw.3036#e27:
+    locator: 2025-06-06第5案，向Future Electronics Inc.取得Future Electronics Inc.(Distribution) Pte. Ltd.股權
+    published_date: null
+    publisher: 文曄科技
+    quote_check: unreachable
+    title: 董事會重大決議
+    url: https://www.wtmec.com/corporate-governance/board-of-directors/major-resolutions/
+  tw.3036#e28:
+    locator: 2025-08-06第5案；前文載明茂宣為100%持有之子公司
+    published_date: null
+    publisher: 文曄科技
+    quote_check: unreachable
+    title: 董事會重大決議
+    url: https://www.wtmec.com/corporate-governance/board-of-directors/major-resolutions/
+  tw.3036#e29:
+    locator: 2025-06-06第8案
+    published_date: null
+    publisher: 文曄科技
+    quote_check: unreachable
+    title: 董事會重大決議
+    url: https://www.wtmec.com/corporate-governance/board-of-directors/major-resolutions/
+  tw.3036#e30:
+    locator: 2025-06-06第7案
+    published_date: null
+    publisher: 文曄科技
+    quote_check: unreachable
+    title: 董事會重大決議
+    url: https://www.wtmec.com/corporate-governance/board-of-directors/major-resolutions/

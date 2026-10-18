@@ -66,6 +66,9 @@ themes:
 - stage: chips
   theme: theme.nvidia
   tier: upstream
+- stage: devices
+  theme: theme.silicon_photonics
+  tier: midstream
 - stage: components
   theme: theme.apple
   tier: upstream
@@ -74,9 +77,6 @@ themes:
   tier: midstream
 - stage: manufacturing
   theme: theme.cowos
-  tier: midstream
-- stage: devices
-  theme: theme.silicon_photonics
   tier: midstream
 relations:
   customers:
@@ -246,7 +246,7 @@ relations:
     details:
     - 晶圓原料及晶圓代工
     edge: e5d35cb555eba
-    evidence_level: primary
+    evidence_level: other
     id: tw.8227
     name: 巨有科技
     ranking_basis: unranked
@@ -429,7 +429,7 @@ relations:
     details:
     - DRAM與邏輯晶片3D整合合作
     edge: e7cb8369b740e
-    evidence_level: primary
+    evidence_level: other
     id: tw.6531
     name: 愛普*
     ranking_basis: unranked
@@ -457,7 +457,7 @@ relations:
     details:
     - Design Center Alliance設計服務合作
     edge: e6197b1dadce9
-    evidence_level: primary
+    evidence_level: other
     id: tw.8227
     name: 巨有科技
     ranking_basis: unranked
@@ -685,7 +685,7 @@ relations:
     details:
     - 半導體供應關係，來源未拆分採購品項
     edge: e51fd29468a2b
-    evidence_level: primary
+    evidence_level: other
     id: tw.1560
     name: 中砂
     ranking_basis: unranked
@@ -727,7 +727,7 @@ relations:
     details:
     - 自動化設備及解決方案
     edge: e9b63f9d50d9c
-    evidence_level: primary
+    evidence_level: other
     id: tw.2464
     name: 盟立
     ranking_basis: unranked
@@ -755,7 +755,7 @@ relations:
     details:
     - 先進封裝設備供應
     edge: e56a443dce326
-    evidence_level: primary
+    evidence_level: other
     id: tw.3131
     name: 弘塑
     ranking_basis: unranked
@@ -769,7 +769,7 @@ relations:
     details:
     - 半導體量測、AOI及自動化設備；HBM來料檢測
     edge: e548fd659f0f6
-    evidence_level: primary
+    evidence_level: other
     id: tw.3167
     name: 大量
     ranking_basis: unranked
@@ -783,7 +783,7 @@ relations:
     details:
     - 半導體委外檢測分析
     edge: e2c4904dfe1f8
-    evidence_level: primary
+    evidence_level: other
     id: tw.3289
     name: 宜特
     ranking_basis: unranked
@@ -843,7 +843,7 @@ relations:
     details:
     - 歷史客戶紀錄；未據此認定當期CoWoS直接採購
     edge: e72d4e7972569
-    evidence_level: primary
+    evidence_level: other
     id: tw.3580
     name: 友威科
     ranking_basis: unranked
@@ -861,7 +861,7 @@ relations:
     details:
     - 年報揭露的銷貨客戶
     edge: e795334891857
-    evidence_level: primary
+    evidence_level: other
     id: tw.3583
     name: 辛耘
     ranking_basis: unranked
@@ -889,7 +889,7 @@ relations:
     details:
     - 半導體業務供應關係，個別採購品項未拆分
     edge: e95d4c02b3f37
-    evidence_level: primary
+    evidence_level: other
     id: tw.3680
     name: 家登
     ranking_basis: unranked
@@ -903,7 +903,7 @@ relations:
     details:
     - 精密化學品供應
     edge: ed825b96d9537
-    evidence_level: primary
+    evidence_level: other
     id: tw.4755
     name: 三福化
     ranking_basis: unranked
@@ -931,7 +931,7 @@ relations:
     details:
     - 半導體設備
     edge: e046db5d81288
-    evidence_level: primary
+    evidence_level: other
     id: tw.5443
     name: 均豪
     ranking_basis: unranked
@@ -945,7 +945,7 @@ relations:
     details:
     - 三聯集團電子材料事業供應先進製程研磨液
     edge: e1ab8e9955364
-    evidence_level: primary
+    evidence_level: other
     id: tw.5493
     name: 三聯
     ranking_basis: unranked
@@ -1015,7 +1015,7 @@ relations:
     details:
     - 採購雷科代理的CoWoS封裝量測設備
     edge: e6486b378011a
-    evidence_level: primary
+    evidence_level: other
     id: tw.6207
     name: 雷科
     ranking_basis: unranked
@@ -1043,7 +1043,7 @@ relations:
     details:
     - 公司法說揭露的客戶；採購品項未揭露
     edge: ef4d725643e27
-    evidence_level: primary
+    evidence_level: other
     id: tw.6425
     name: 易發
     ranking_basis: unranked
@@ -1071,7 +1071,7 @@ relations:
     details:
     - 先進封裝烘烤線設備
     edge: e1e1548833f91
-    evidence_level: primary
+    evidence_level: other
     id: tw.6664
     name: 群翊
     ranking_basis: unranked
@@ -1085,7 +1085,7 @@ relations:
     details:
     - AP6A無塵室與機電工程、先進封測五廠工程實績
     edge: e4e2e55ec0707
-    evidence_level: primary
+    evidence_level: other
     id: tw.6691
     name: 洋基工程
     ranking_basis: unranked

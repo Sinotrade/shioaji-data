@@ -320,7 +320,7 @@ relations:
     details:
     - 工程承攬契約
     edge: eb8cbda1f8bb9
-    evidence_level: primary
+    evidence_level: other
     id: tw.6691
     name: 洋基工程
     ranking_basis: unranked
@@ -328,6 +328,27 @@ relations:
     share_pct: null
     weight: 1
   transactions:
+  - amount: 新台幣647,560,741元
+    as_of: '2026-06-15'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 2025年9月4日至2026年6月15日訂購機器設備一批
+    details:
+    - 2025年9月4日至2026年6月15日訂購機器設備一批
+    edge: e8fed6cb75cf9
+    event_date: '2026-06-15'
+    events:
+    - amount: 新台幣647,560,741元
+      detail: 2025年9月4日至2026年6月15日訂購機器設備一批
+      event_date: '2026-06-15'
+    evidence_level: primary
+    id: cn.002008
+    name: 大族激光科技產業集團股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
   - amount: 新台幣697,059,099元
     as_of: '2024-04-22'
     confidence: ai_cross_checked
@@ -703,7 +724,7 @@ relations:
     share_pct: null
     weight: 1
   - amount: 新台幣531,195,000元（含稅）
-    as_of: '2025-09-18'
+    as_of: '2026-05-05'
     confidence: ai_cross_checked
     counterparty_shares: []
     detail: 2023年12月5日至2024年4月9日取得廠務工程及設備一批
@@ -711,9 +732,13 @@ relations:
     - 2023年12月5日至2024年4月9日取得廠務工程及設備一批
     - 2024年5月6日至11月18日取得廠務工程及設備一批
     - 2024年11月21日至2025年9月18日取得廠務工程及設備一批
+    - 2025年9月22日至2026年5月5日取得廠務工程及設備
     edge: e203aa4417de6
     event_date: '2024-04-09'
     events:
+    - amount: 新台幣503,492,850元（含稅）
+      detail: 2025年9月22日至2026年5月5日取得廠務工程及設備
+      event_date: '2026-05-05'
     - amount: 新台幣504,581,700元（含稅）
       detail: 2024年11月21日至2025年9月18日取得廠務工程及設備一批
       event_date: '2025-09-18'
@@ -901,14 +926,14 @@ evidence:
     locator: 印刷第15頁，採用權益法之投資第1項；2024年1月設立投資，初始持股20%
     published_date: null
     publisher: 大立光電股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: 大立光電2024年第1季合併財務報告
     url: https://www.largan.com.tw/cn/tool-download/investor_finance_2_cn_size/file/9/113%E5%B9%B4(2024)Season1?note=
   tw.3008#e26:
     locator: 印刷第15頁，採用權益法之投資第1項；2024年2月萬溢增資、取得90%股權及控制
     published_date: null
     publisher: 大立光電股份有限公司
-    quote_check: unreachable
+    quote_check: found
     title: 大立光電2024年第1季合併財務報告
     url: https://www.largan.com.tw/cn/tool-download/investor_finance_2_cn_size/file/9/113%E5%B9%B4(2024)Season1?note=
   tw.3008#e27:
@@ -1065,6 +1090,27 @@ evidence:
     quote_check: found
     title: 大立光向洋基工程取得廠務工程及設備，計約15.44億元
     url: https://www.ttv.com.tw/finance/view/042026201817C56D188E670C4EA28E960255135D5D3C0ABD/587
+  tw.3008#et13:
+    locator: 取得廠務工程及設備公告，金額與交易相對人欄
+    published_date: '2026-05-05'
+    publisher: 公開資訊觀測站／銀行證券資料庫轉載
+    quote_check: unreachable
+    title: 大立光公告本公司取得廠務工程及設備相關訊息
+    url: https://www.1458.com.tw/newsD535908.html
+  tw.3008#et14:
+    locator: 訂購機器設備公告，交易相對人欄
+    published_date: '2026-06-15'
+    publisher: 公開資訊觀測站／Goodinfo轉載
+    quote_check: unreachable
+    title: 3008 大立光 公告訊息－公告本公司訂購機器設備相關訊息
+    url: https://goodinfo.tw/tw/StockAnnounceDetail.asp?CLAIM_TIME=2026%2F06%2F15+14%3A24%3A12&STOCK_ID=3008&SUBJECT=%E5%85%AC%E5%91%8A%E6%9C%AC%E5%85%AC%E5%8F%B8%E8%A8%82%E8%B3%BC%E6%A9%9F%E5%99%A8%E8%A8%AD%E5%82%99%E7%9B%B8%E9%97%9C%E8%A8%8A%E6%81%AF
+  tw.3008#et14b:
+    locator: 交易數量及總金額欄
+    published_date: '2026-06-15'
+    publisher: 公開資訊觀測站／Goodinfo轉載
+    quote_check: unreachable
+    title: 3008 大立光 公告訊息－公告本公司訂購機器設備相關訊息
+    url: https://goodinfo.tw/tw/StockAnnounceDetail.asp?CLAIM_TIME=2026%2F06%2F15+14%3A24%3A12&STOCK_ID=3008&SUBJECT=%E5%85%AC%E5%91%8A%E6%9C%AC%E5%85%AC%E5%8F%B8%E8%A8%82%E8%B3%BC%E6%A9%9F%E5%99%A8%E8%A8%AD%E5%82%99%E7%9B%B8%E9%97%9C%E8%A8%8A%E6%81%AF
   tw.3008#et2:
     locator: 取得不動產公告，交易標的、金額、對手及用途
     published_date: '2026-07-21'

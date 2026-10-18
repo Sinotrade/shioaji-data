@@ -8,13 +8,157 @@ industry:
   l0_code: '22'
   l0_name: 生技醫療業
   l0_name_en: Biotechnology and Medical Care
-primary_chain_position: unknown
+  l1: health
+  l1_name: 醫療保健
+  l1_name_en: Healthcare
+  l2: health.pharma
+  l2_name: 製藥與生技
+  l2_name_en: Pharmaceuticals & Biotech
+  l3: bio.cdmo
+  l3_name: 生技代工（CDMO）
+  l3_name_en: Biologics CDMO
+chain: chain.biotech
+primary_chain_position: midstream
+summary_short: 主要提供生物藥品委託開發製造服務，另有生物相似藥銷售。
+summary_long: 泰福生技提供生物藥品委託開發暨製造服務，CDMO業務使用Bora Biologics品牌，並保有生物相似藥產品。2025年營收由委託服務、銷貨、銷售權利金及其他營業收入組成，其中委託服務收入209,881仟元，為最大項。主要產品為參考Neupogen的NYPOZI（TX01）及參考Herceptin的TX05；TX01於2024年6月取得美國FDA上市許可。集團旗下另有美國與台灣子公司，以及加拿大孫公司。
+segments:
+- evidence_ids:
+  - e1
+  id: s1
+  name: 委託服務收入
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e1
+  id: s2
+  name: 銷貨收入
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e1
+  id: s3
+  name: 銷售權利金收入
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e1
+  id: s4
+  name: 其他營業收入
+  period: '2025'
+  revenue_share_pct: null
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 台灣子公司
+    details:
+    - 台灣子公司
+    edge: e93f451d70bf2
+    evidence_level: primary
+    id: org.tanvex-biologics-taiwan
+    name: 台灣泰福生技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 加拿大孫公司
+    details:
+    - 加拿大孫公司
+    edge: ee3973882ad10
+    evidence_level: primary
+    id: org.tanvex-biopharma-canada
+    name: Tanvex BioPharma Canada, Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 美國子公司
+    details:
+    - 美國子公司
+    edge: e0c2a1792931f
+    evidence_level: primary
+    id: org.tanvex-biopharma-usa
+    name: Tanvex BioPharma USA, Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.tanvex.com
 tax_id: '24797816'
 incorporated: '2013-05-08'
 listed: '2017-10-26'
 foreign_registration: KY 開曼群島
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-18'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6541#e1:
+    locator: 第61頁，5.1.1（2）2025年度主要產品之營業比重；金額單位為新台幣仟元
+    published_date: null
+    publisher: 泰福生技股份有限公司
+    quote_check: found
+    title: 泰福生技2025年報
+    url: https://www.tanvex.com/PDF/Investor/%E6%B3%B0%E7%A6%8F2025%E4%B8%AD%E6%96%87%E5%B9%B4%E5%A0%B1.pdf
+  tw.6541#e2:
+    locator: PDF第1頁，英文首段
+    published_date: '2025-07-25'
+    publisher: 泰福生技股份有限公司
+    quote_check: found
+    title: 泰福生技國際級CDMO戰隊首度亮相Bio Asia–Taiwan
+    url: https://www.tanvex.com/PDF/News/20250725_%E6%B3%B0%E7%A6%8FBio%20Asia%20PR_CN_AL_cln.pdf
+  tw.6541#e3:
+    locator: 第1頁，第2段
+    published_date: '2024-07-01'
+    publisher: Tanvex BioPharma, Inc.
+    quote_check: found
+    title: Tanvex received BLA approval from FDA
+    url: https://www.tanvex.com/PDF/News/Tanvex%20received%20BLA%20approval%20from%20FDA.pdf
+  tw.6541#e4:
+    locator: 第1頁，第1段
+    published_date: '2024-07-01'
+    publisher: Tanvex BioPharma, Inc.
+    quote_check: found
+    title: Tanvex received BLA approval from FDA
+    url: https://www.tanvex.com/PDF/News/Tanvex%20received%20BLA%20approval%20from%20FDA.pdf
+  tw.6541#e5:
+    locator: 第1頁，第2段
+    published_date: '2024-08-01'
+    publisher: Tanvex BioPharma, Inc.
+    quote_check: found
+    title: FDA accepts TX05 BLA resubmission
+    url: https://www.tanvex.com/PDF/News/FDA%20accepts%20TX05%20BLA%20resubmission.pdf
+  tw.6541#e6:
+    locator: PDF第2頁，總公司、分公司、工廠之地址及電話
+    published_date: null
+    publisher: 泰福生技股份有限公司
+    quote_check: found
+    title: 泰福生技2025年報
+    url: https://www.tanvex.com/PDF/Investor/%E6%B3%B0%E7%A6%8F2025%E4%B8%AD%E6%96%87%E5%B9%B4%E5%A0%B1.pdf
+  tw.6541#e7:
+    locator: PDF第2頁，總公司、分公司、工廠之地址及電話
+    published_date: null
+    publisher: 泰福生技股份有限公司
+    quote_check: found
+    title: 泰福生技2025年報
+    url: https://www.tanvex.com/PDF/Investor/%E6%B3%B0%E7%A6%8F2025%E4%B8%AD%E6%96%87%E5%B9%B4%E5%A0%B1.pdf
+  tw.6541#e8:
+    locator: PDF第2頁，總公司、分公司、工廠之地址及電話
+    published_date: null
+    publisher: 泰福生技股份有限公司
+    quote_check: found
+    title: 泰福生技2025年報
+    url: https://www.tanvex.com/PDF/Investor/%E6%B3%B0%E7%A6%8F2025%E4%B8%AD%E6%96%87%E5%B9%B4%E5%A0%B1.pdf
+  tw.6541#e9:
+    locator: 集團沿革與大事紀要，2023年5月
+    published_date: null
+    publisher: 泰福生技股份有限公司
+    quote_check: found
+    title: 泰福生技公司簡介
+    url: https://www.tanvex.com/about-c.php
