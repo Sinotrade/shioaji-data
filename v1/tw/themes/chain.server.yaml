@@ -25,9 +25,7 @@ stages:
   name_en: Cloud & Data Centers
 members:
 - id: tw.2059
-  stage: null
-  tier: null
-  detail: null
+  detail: 導軌占營收98%，主要供應伺服器導軌與理線器等機構零組件。
   as_of: '2026-10-14'
   evidence:
   - tw.2059#e1
@@ -35,10 +33,11 @@ members:
   - tw.2059#e3
   confidence: ai_cross_checked
   source: classification
+  stage: components
+  tier: midstream
+  stage_role: primary
 - id: tw.2301
-  stage: null
-  tier: null
-  detail: null
+  detail: 以電源管理為主，提供AI伺服器機架電源及CDU液冷設備。
   as_of: '2026-10-14'
   evidence:
   - tw.2301#e_annual_cloud
@@ -48,31 +47,43 @@ members:
   - tw.2301#e_ocp2026
   confidence: ai_cross_checked
   source: classification
+  stage: components
+  tier: midstream
+  stage_role: primary
 - id: tw.2308
-  stage: null
-  tier: null
-  detail: null
+  detail: 電源及零組件占營收50%，供應伺服器電源、散熱及配電設備。
   as_of: '2026-10-14'
   evidence:
   - tw.2308#e01
   - tw.2308#e02
   confidence: ai_cross_checked
   source: classification
+  stage: components
+  tier: midstream
+  stage_role: primary
 - id: tw.2317
-  stage: null
-  tier: null
-  detail: null
+  detail: 雲端網路為最大營收類別，製造AI伺服器機櫃，並有液冷及AI工廠建置業務。
   as_of: '2026-10-14'
-  evidence:
+  evidence: &id001
   - tw.2317#e02
   - tw.2317#e03
   - tw.2317#e04
   confidence: ai_cross_checked
   source: classification
+  stage: odm
+  tier: downstream
+  stage_role: primary
+- id: tw.2317
+  detail: 雲端網路為最大營收類別，製造AI伺服器機櫃，並有液冷及AI工廠建置業務。
+  as_of: '2026-10-14'
+  evidence: *id001
+  confidence: ai_cross_checked
+  source: classification
+  stage: components
+  tier: midstream
+  stage_role: also
 - id: tw.2345
-  stage: null
-  tier: null
-  detail: null
+  detail: 最大產品線包含AI加速卡代工；機櫃組裝仍屬布局，尚未確認量產。
   as_of: '2026-10-14'
   evidence:
   - tw.2345#e2
@@ -80,10 +91,11 @@ members:
   - tw.2345#e25
   confidence: ai_cross_checked
   source: classification
+  stage: components
+  tier: midstream
+  stage_role: primary
 - id: tw.2356
-  stage: null
-  tier: null
-  detail: null
+  detail: 鏈內主要業務為伺服器主機板及整機櫃設計製造，提供液冷AI系統。
   as_of: '2026-10-14'
   evidence:
   - tw.2356#e_mix
@@ -91,42 +103,64 @@ members:
   - tw.2356#e_assembly
   confidence: ai_cross_checked
   source: classification
+  stage: odm
+  tier: downstream
+  stage_role: primary
 - id: tw.2376
-  stage: null
-  tier: null
-  detail: null
+  detail: 伺服器占營收61.64%為最大宗，另有主機板與顯示卡業務。
   as_of: '2026-10-14'
-  evidence:
+  evidence: &id002
   - tw.2376#e02
   - tw.2376#e32
   - tw.2376#e05
   - tw.2376#e06
   confidence: ai_cross_checked
   source: classification
-- id: tw.2382
-  stage: null
-  tier: null
-  detail: null
+  stage: odm
+  tier: downstream
+  stage_role: primary
+- id: tw.2376
+  detail: 伺服器占營收61.64%為最大宗，另有主機板與顯示卡業務。
   as_of: '2026-10-14'
-  evidence:
+  evidence: *id002
+  confidence: ai_cross_checked
+  source: classification
+  stage: components
+  tier: midstream
+  stage_role: also
+- id: tw.2382
+  detail: 伺服器占營收約八成，以系統製造整合為主，另提供側車式液冷設備。
+  as_of: '2026-10-14'
+  evidence: &id003
   - tw.2382#e.server_share
   - tw.2382#e.datacenter
   confidence: ai_cross_checked
   source: classification
+  stage: odm
+  tier: downstream
+  stage_role: primary
+- id: tw.2382
+  detail: 伺服器占營收約八成，以系統製造整合為主，另提供側車式液冷設備。
+  as_of: '2026-10-14'
+  evidence: *id003
+  confidence: ai_cross_checked
+  source: classification
+  stage: components
+  tier: midstream
+  stage_role: also
 - id: tw.2420
-  stage: null
-  tier: null
-  detail: null
+  detail: 鏈內業務為CRPS模組及備援式伺服器電源，屬電源零組件。
   as_of: '2026-10-18'
   evidence:
   - tw.2420#e2
   - tw.2420#e5
   confidence: ai_cross_checked
   source: classification
+  stage: components
+  tier: midstream
+  stage_role: primary
 - id: tw.2421
-  stage: null
-  tier: null
-  detail: null
+  detail: 風扇與散熱模組占77.22%，另提供水冷板、水泵及CDU。
   as_of: '2026-10-15'
   evidence:
   - tw.2421#e1
@@ -134,20 +168,22 @@ members:
   - tw.2421#e7
   confidence: ai_cross_checked
   source: classification
+  stage: components
+  tier: midstream
+  stage_role: primary
 - id: tw.2495
-  stage: null
-  tier: null
-  detail: null
+  detail: 核心為企業級儲存系統研發製造，另提供整合運算硬體與軟體的私有雲平台。
   as_of: '2026-10-18'
   evidence:
   - tw.2495#e2
   - tw.2495#e9
   confidence: ai_cross_checked
   source: classification
+  stage: odm
+  tier: downstream
+  stage_role: primary
 - id: tw.3013
-  stage: null
-  tier: null
-  detail: null
+  detail: 電腦與伺服器機殼占營收98%，液冷機櫃亦屬機構與散熱設備。
   as_of: '2026-10-15'
   evidence:
   - tw.3013#e1
@@ -155,10 +191,11 @@ members:
   - tw.3013#e3
   confidence: ai_cross_checked
   source: classification
+  stage: components
+  tier: midstream
+  stage_role: primary
 - id: tw.3015
-  stage: null
-  tier: null
-  detail: null
+  detail: 電源供應器為最大營收項目，已有高密度AI伺服器用54V CRPS產品。
   as_of: '2026-10-18'
   evidence:
   - tw.3015#e2
@@ -166,41 +203,54 @@ members:
   - tw.3015#e4
   confidence: ai_cross_checked
   source: classification
+  stage: components
+  tier: midstream
+  stage_role: primary
 - id: tw.3017
-  stage: null
-  tier: null
-  detail: null
+  detail: 散熱占營收63.60%為主，另有系統組裝及完整液冷機櫃整合交付業務。
   as_of: '2026-10-14'
-  evidence:
+  evidence: &id004
   - tw.3017#e2
   - tw.3017#e6
   - tw.3017#e7
   confidence: ai_cross_checked
   source: classification
+  stage: components
+  tier: midstream
+  stage_role: primary
+- id: tw.3017
+  detail: 散熱占營收63.60%為主，另有系統組裝及完整液冷機櫃整合交付業務。
+  as_of: '2026-10-14'
+  evidence: *id004
+  confidence: ai_cross_checked
+  source: classification
+  stage: odm
+  tier: downstream
+  stage_role: also
 - id: tw.3026
-  stage: null
-  tier: null
-  detail: null
+  detail: 被動元件占營收42%為最大項，供應AI伺服器電源與BBU用MLCC。
   as_of: '2026-10-14'
   evidence:
   - tw.3026#e3
   - tw.3026#e4
   confidence: ai_cross_checked
   source: classification
+  stage: components
+  tier: midstream
+  stage_role: primary
 - id: tw.3032
-  stage: null
-  tier: null
-  detail: null
+  detail: 電源供應器為最大營收項目，另製造伺服器機殼及整合液冷機櫃設備。
   as_of: '2026-10-18'
   evidence:
   - tw.3032#e2
   - tw.3032#e6
   confidence: ai_cross_checked
   source: classification
+  stage: components
+  tier: midstream
+  stage_role: primary
 - id: tw.3078
-  stage: null
-  tier: null
-  detail: null
+  detail: 主要研發製造電源供應器，CRPS產品明列資料中心與邊緣AI伺服器應用。
   as_of: '2026-10-18'
   evidence:
   - tw.3078#e1
@@ -208,10 +258,11 @@ members:
   - tw.3078#e4
   confidence: ai_cross_checked
   source: classification
+  stage: components
+  tier: midstream
+  stage_role: primary
 - id: tw.3147
-  stage: null
-  tier: null
-  detail: null
+  detail: 以企業資訊基礎建設整合為核心，提供資料中心、液冷機房及雲端建置。
   as_of: '2026-10-18'
   evidence:
   - tw.3147#e2
@@ -219,10 +270,11 @@ members:
   - tw.3147#e8
   confidence: ai_cross_checked
   source: classification
+  stage: datacenter
+  tier: downstream
+  stage_role: primary
 - id: tw.3217
-  stage: null
-  tier: null
-  detail: null
+  detail: 提供伺服器記憶體插槽與高速連接器，屬連接零組件。
   as_of: '2026-10-18'
   evidence:
   - tw.3217#e1
@@ -231,20 +283,22 @@ members:
   - tw.3217#e8
   confidence: ai_cross_checked
   source: classification
+  stage: components
+  tier: midstream
+  stage_role: primary
 - id: tw.3231
-  stage: null
-  tier: null
-  detail: null
+  detail: AI伺服器約占營收70%，主要提供平台製造、組裝與測試服務。
   as_of: '2026-10-14'
   evidence:
   - tw.3231#e01
   - tw.3231#e05
   confidence: ai_cross_checked
   source: classification
+  stage: odm
+  tier: downstream
+  stage_role: primary
 - id: tw.3324
-  stage: null
-  tier: null
-  detail: null
+  detail: 散熱模組占營收100%，供應伺服器水冷板、分歧管及CDU。
   as_of: '2026-10-14'
   evidence:
   - tw.3324#e02
@@ -253,10 +307,11 @@ members:
   - tw.3324#e05
   confidence: ai_cross_checked
   source: classification
+  stage: components
+  tier: midstream
+  stage_role: primary
 - id: tw.3483
-  stage: null
-  tier: null
-  detail: null
+  detail: 散熱模組及風扇占營收100%，另供應伺服器水冷板與CDU。
   as_of: '2026-10-18'
   evidence:
   - tw.3483#e2
@@ -264,30 +319,33 @@ members:
   - tw.3483#e9
   confidence: ai_cross_checked
   source: classification
+  stage: components
+  tier: midstream
+  stage_role: primary
 - id: tw.3515
-  stage: null
-  tier: null
-  detail: null
+  detail: 伺服器為第二季最大營收類別，透過永擎提供主機板與液冷伺服器系統。
   as_of: '2026-10-15'
   evidence:
   - tw.3515#e2
   - tw.3515#e3
   confidence: ai_cross_checked
   source: classification
+  stage: odm
+  tier: downstream
+  stage_role: primary
 - id: tw.3526
-  stage: null
-  tier: null
-  detail: null
+  detail: 伺服器連接器與線材占營收50%至57%，屬電源與高速傳輸零組件。
   as_of: '2026-10-15'
   evidence:
   - tw.3526#e1
   - tw.3526#e3
   confidence: ai_cross_checked
   source: classification
+  stage: components
+  tier: midstream
+  stage_role: primary
 - id: tw.3533
-  stage: null
-  tier: null
-  detail: null
+  detail: 連接器含線材占營收97.40%，提供CPU插槽及液冷快接頭。
   as_of: '2026-10-14'
   evidence:
   - tw.3533#e01
@@ -295,10 +353,11 @@ members:
   - tw.3533#e06
   confidence: ai_cross_checked
   source: classification
+  stage: components
+  tier: midstream
+  stage_role: primary
 - id: tw.3605
-  stage: null
-  tier: null
-  detail: null
+  detail: 連接器占營收61.62%，提供伺服器MCIO與高速連接器。
   as_of: '2026-10-15'
   evidence:
   - tw.3605#e2
@@ -306,10 +365,11 @@ members:
   - tw.3605#e7
   confidence: ai_cross_checked
   source: classification
+  stage: components
+  tier: midstream
+  stage_role: primary
 - id: tw.3617
-  stage: null
-  tier: null
-  detail: null
+  detail: 不斷電系統占營收55.98%，另提供資料中心備援電源及機櫃配電設備。
   as_of: '2026-10-15'
   evidence:
   - tw.3617#e1
@@ -318,10 +378,11 @@ members:
   - tw.3617#e11
   confidence: ai_cross_checked
   source: classification
+  stage: components
+  tier: midstream
+  stage_role: primary
 - id: tw.3653
-  stage: null
-  tier: null
-  detail: null
+  detail: 散熱產品占單月營收70.36%，供應伺服器均熱片與液冷散熱模組。
   as_of: '2026-10-14'
   evidence:
   - tw.3653#e2
@@ -329,10 +390,11 @@ members:
   - tw.3653#e6
   confidence: ai_cross_checked
   source: classification
+  stage: components
+  tier: midstream
+  stage_role: primary
 - id: tw.3665
-  stage: null
-  tier: null
-  detail: null
+  detail: 以線束、連接器及線纜組件為核心，提供AI伺服器匯流排與液冷零件。
   as_of: '2026-10-14'
   evidence:
   - tw.3665#e1
@@ -341,22 +403,33 @@ members:
   - tw.3665#e10
   confidence: ai_cross_checked
   source: classification
+  stage: components
+  tier: midstream
+  stage_role: primary
 - id: tw.3693
-  stage: null
-  tier: null
-  detail: null
+  detail: 伺服器機箱占營收35.61%，為最大單項；亦製造伺服器系統與儲存平台。
   as_of: '2026-10-15'
-  evidence:
+  evidence: &id005
   - tw.3693#e2
   - tw.3693#e3
   - tw.3693#e4
   - tw.3693#e11
   confidence: ai_cross_checked
   source: classification
+  stage: components
+  tier: midstream
+  stage_role: primary
+- id: tw.3693
+  detail: 伺服器機箱占營收35.61%，為最大單項；亦製造伺服器系統與儲存平台。
+  as_of: '2026-10-15'
+  evidence: *id005
+  confidence: ai_cross_checked
+  source: classification
+  stage: odm
+  tier: downstream
+  stage_role: also
 - id: tw.3706
-  stage: null
-  tier: null
-  detail: null
+  detail: 神雲占合併營收90.1%，主要提供伺服器ODM與AI液冷機櫃整合。
   as_of: '2026-10-14'
   evidence:
   - tw.3706#e3
@@ -364,10 +437,11 @@ members:
   - tw.3706#e5
   confidence: ai_cross_checked
   source: classification
+  stage: odm
+  tier: downstream
+  stage_role: primary
 - id: tw.4931
-  stage: null
-  tier: null
-  detail: null
+  detail: 主營鋰離子電池模組，研發伺服器及AI算力中心備援電池，屬電源零組件。
   as_of: '2026-10-18'
   evidence:
   - tw.4931#e1
@@ -375,20 +449,22 @@ members:
   - tw.4931#e8
   confidence: ai_cross_checked
   source: classification
+  stage: components
+  tier: midstream
+  stage_role: primary
 - id: tw.5284
-  stage: null
-  tier: null
-  detail: null
+  detail: 通訊業務占營收56%，產品包含AI及傳統伺服器儲存櫃機殼。
   as_of: '2026-10-18'
   evidence:
   - tw.5284#e_segment
   - tw.5284#e_server
   confidence: ai_cross_checked
   source: classification
+  stage: components
+  tier: midstream
+  stage_role: primary
 - id: tw.6115
-  stage: null
-  tier: null
-  detail: null
+  detail: 電源線連接器占營收95.39%，產品明列AI伺服器用電源線連接器。
   as_of: '2026-10-18'
   evidence:
   - tw.6115#e1
@@ -396,20 +472,22 @@ members:
   - tw.6115#e6
   confidence: ai_cross_checked
   source: classification
+  stage: components
+  tier: midstream
+  stage_role: primary
 - id: tw.6199
-  stage: null
-  tier: null
-  detail: null
+  detail: 潔淨業務占2025年營收56.91%，提供伺服器水冷零件與散熱模組清洗加工服務。
   as_of: '2026-10-18'
   evidence:
   - tw.6199#e_revenue
   - tw.6199#e_cleaning
   confidence: ai_cross_checked
   source: classification
+  stage: components
+  tier: midstream
+  stage_role: primary
 - id: tw.6230
-  stage: null
-  tier: null
-  detail: null
+  detail: 散熱模組占營收75.24%，提供伺服器均熱板、冷板與分水器。
   as_of: '2026-10-18'
   evidence:
   - tw.6230#e1
@@ -417,10 +495,11 @@ members:
   - tw.6230#e7
   confidence: ai_cross_checked
   source: classification
+  stage: components
+  tier: midstream
+  stage_role: primary
 - id: tw.6277
-  stage: null
-  tier: null
-  detail: null
+  detail: 主要經營KVM等IT管理設備，另明確供應資料中心PDU，對應電源設備環節。
   as_of: '2026-10-18'
   evidence:
   - tw.6277#e1
@@ -428,10 +507,11 @@ members:
   - tw.6277#e7
   confidence: ai_cross_checked
   source: classification
+  stage: components
+  tier: midstream
+  stage_role: primary
 - id: tw.6282
-  stage: null
-  tier: null
-  detail: null
+  detail: 電源及零組件占營收93.92%，提供伺服器與資料中心電源。
   as_of: '2026-10-15'
   evidence:
   - tw.6282#e1
@@ -439,10 +519,11 @@ members:
   - tw.6282#e8
   confidence: ai_cross_checked
   source: classification
+  stage: components
+  tier: midstream
+  stage_role: primary
 - id: tw.6290
-  stage: null
-  tier: null
-  detail: null
+  detail: 電源傳輸線組占營收91%，包含雲端伺服器用大電流電源線與線束。
   as_of: '2026-10-15'
   evidence:
   - tw.6290#e02
@@ -450,10 +531,11 @@ members:
   - tw.6290#e06
   confidence: ai_cross_checked
   source: classification
+  stage: components
+  tier: midstream
+  stage_role: primary
 - id: tw.6412
-  stage: null
-  tier: null
-  detail: null
+  detail: 主要產品為交換式電源供應器，涵蓋雲端與AI伺服器電源系統。
   as_of: '2026-10-15'
   evidence:
   - tw.6412#e1
@@ -461,10 +543,11 @@ members:
   - tw.6412#e6
   confidence: ai_cross_checked
   source: classification
+  stage: components
+  tier: midstream
+  stage_role: primary
 - id: tw.6449
-  stage: null
-  tier: null
-  detail: null
+  detail: 營收來自導電高分子固態電容，並揭露AI伺服器電容導入方向。
   as_of: '2026-10-15'
   evidence:
   - tw.6449#e1
@@ -472,10 +555,11 @@ members:
   - tw.6449#e4
   confidence: ai_cross_checked
   source: classification
+  stage: components
+  tier: midstream
+  stage_role: primary
 - id: tw.6561
-  stage: null
-  tier: null
-  detail: null
+  detail: IDC機房服務占營收45.04%為最大項目，並提供雲端運算與機房託管。
   as_of: '2026-10-15'
   evidence:
   - tw.6561#e2
@@ -485,10 +569,11 @@ members:
   - tw.6561#e6
   confidence: ai_cross_checked
   source: classification
+  stage: datacenter
+  tier: downstream
+  stage_role: primary
 - id: tw.6584
-  stage: null
-  tier: null
-  detail: null
+  detail: 鋼珠導軌占營收97.22%，提供伺服器導軌與CMA理線器等機構件。
   as_of: '2026-10-15'
   evidence:
   - tw.6584#e2
@@ -497,80 +582,97 @@ members:
   - tw.6584#e8
   confidence: ai_cross_checked
   source: classification
+  stage: components
+  tier: midstream
+  stage_role: primary
 - id: tw.6669
-  stage: null
-  tier: null
-  detail: null
+  detail: 以伺服器、儲存設備與機櫃設計製造整合為主，另提供液冷散熱方案。
   as_of: '2026-10-14'
   evidence:
   - tw.6669#e1
   - tw.6669#e2
   confidence: ai_cross_checked
   source: classification
+  stage: odm
+  tier: downstream
+  stage_role: primary
 - id: tw.6781
-  stage: null
-  tier: null
-  detail: null
+  detail: 鋰電池模組占營收99.7%，前三季伺服器BBU約占七成，屬備援電源零組件。
   as_of: '2026-10-14'
   evidence:
   - tw.6781#e2
   - tw.6781#e4
   confidence: ai_cross_checked
   source: classification
+  stage: components
+  tier: midstream
+  stage_role: primary
 - id: tw.6805
-  stage: null
-  tier: null
-  detail: null
+  detail: 伺服器應用占2026年上半年營收55.7%，產品為滑軌與液冷快接頭。
   as_of: '2026-10-14'
   evidence:
   - tw.6805#e2
   - tw.6805#e3
   confidence: ai_cross_checked
   source: classification
+  stage: components
+  tier: midstream
+  stage_role: primary
 - id: tw.6831
-  stage: null
-  tier: null
-  detail: null
+  detail: 散熱模組占營收99.95%，提供AI伺服器用均熱板、熱導管與水冷板。
   as_of: '2026-10-15'
   evidence:
   - tw.6831#e1
   - tw.6831#e6
   confidence: ai_cross_checked
   source: classification
+  stage: components
+  tier: midstream
+  stage_role: primary
 - id: tw.6933
-  stage: null
-  tier: null
-  detail: null
+  detail: AI高效能運算方案占營收58.89%，主要設計製造與整合伺服器及液冷整機櫃。
   as_of: '2026-10-18'
   evidence:
   - tw.6933#e2
   - tw.6933#e3
   confidence: ai_cross_checked
   source: classification
+  stage: odm
+  tier: downstream
+  stage_role: primary
 - id: tw.7711
-  stage: null
-  tier: null
-  detail: null
+  detail: 伺服器周邊產品占營收93.57%，實際業務為伺服器主機板與整機系統開發銷售。
   as_of: '2026-10-15'
   evidence:
   - tw.7711#e1
   - tw.7711#e2
   confidence: ai_cross_checked
   source: classification
+  stage: odm
+  tier: downstream
+  stage_role: primary
 - id: tw.7805
-  stage: null
-  tier: null
-  detail: null
+  detail: 以自主設計生產NAS整機為主，中小企業NAS占46.77%；另提供雲端儲存服務。
   as_of: '2026-10-15'
-  evidence:
+  evidence: &id006
   - tw.7805#e_nas
   - tw.7805#e_mix
   confidence: ai_cross_checked
   source: classification
+  stage: odm
+  tier: downstream
+  stage_role: primary
+- id: tw.7805
+  detail: 以自主設計生產NAS整機為主，中小企業NAS占46.77%；另提供雲端儲存服務。
+  as_of: '2026-10-15'
+  evidence: *id006
+  confidence: ai_cross_checked
+  source: classification
+  stage: datacenter
+  tier: downstream
+  stage_role: also
 - id: tw.8042
-  stage: null
-  tier: null
-  detail: null
+  detail: 主要製造鋁質電容器，液態電容占75.42%，並揭露伺服器用電容與AI產品開發。
   as_of: '2026-10-15'
   evidence:
   - tw.8042#e1
@@ -578,10 +680,11 @@ members:
   - tw.8042#e5
   confidence: ai_cross_checked
   source: classification
+  stage: components
+  tier: midstream
+  stage_role: primary
 - id: tw.8210
-  stage: null
-  tier: null
-  detail: null
+  detail: 伺服器機殼及周邊產品占營收99%，主要提供機殼與機櫃機構件。
   as_of: '2026-10-14'
   evidence:
   - tw.8210#e02
@@ -589,10 +692,11 @@ members:
   - tw.8210#e06
   confidence: ai_cross_checked
   source: classification
+  stage: components
+  tier: midstream
+  stage_role: primary
 - id: tw.8996
-  stage: null
-  tier: null
-  detail: null
+  detail: 2026年第一季散熱事業營收逾五成，子公司提供分歧管、CDU與液冷設備。
   as_of: '2026-10-14'
   evidence:
   - tw.8996#e02
@@ -601,4 +705,7 @@ members:
   - tw.8996#e06
   confidence: ai_cross_checked
   source: classification
+  stage: components
+  tier: midstream
+  stage_role: primary
 as_of: '2026-10-18'

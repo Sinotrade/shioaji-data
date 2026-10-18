@@ -18,6 +18,16 @@ industry:
   l3_name: 儲存裝置與記憶體模組
   l3_name_en: Storage & Memory Modules
 chain: chain.server
+chain_stage:
+  agreement: both
+  also:
+  - stage: datacenter
+    stage_name: 雲端與資料中心
+    tier: downstream
+  reason: 以自主設計生產NAS整機為主，中小企業NAS占46.77%；另提供雲端儲存服務。
+  stage: odm
+  stage_name: 主機板與系統組裝
+  tier: downstream
 primary_chain_position: midstream
 summary_short: 以 NAS 儲存設備為主要收入來源，提供網通、監控與雲端備份產品。
 summary_long: 威聯通以自研作業系統與 NAS 整機提供儲存及備份方案，2025 年營收以中小企業用 NAS 占 46.77% 為最大項目，另有企業級與家用 NAS、配件及其他收入。產品涵蓋全快閃儲存、100GbE 管理型交換器及整合錄影儲存與影像管理的 QVR 監控方案。雲端儲存服務提供 NAS 備份與還原；邊緣 AI 儲存伺服器支援選配 GPU，可執行本地模型推論與私有 RAG 搜尋。

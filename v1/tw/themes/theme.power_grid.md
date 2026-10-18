@@ -4,7 +4,7 @@
 
 - 英文：Heavy Electrical & Power Grid
 - 別名：重電、電網、強韌電網
-- 成員：24 家
+- 成員：19 家
 - 完整成員與證據見同目錄同名 YAML，或 themes.json
 
 ## 電線電纜與材料（上游，8 家）

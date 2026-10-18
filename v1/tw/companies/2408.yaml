@@ -18,6 +18,19 @@ industry:
   l3_name: 記憶體製造
   l3_name_en: Memory Manufacturing
 chain: chain.semiconductor
+chain_stage:
+  agreement: both
+  also:
+  - stage: distribution
+    stage_name: IC 通路與模組
+    tier: downstream
+  - stage: ip_design
+    stage_name: IP 與 IC 設計
+    tier: upstream
+  reason: 主業為DRAM設計與製造，另有RDIMM模組銷售；封測廠仍屬建置規劃。
+  stage: fab
+  stage_name: 晶圓製造
+  tier: midstream
 primary_chain_position: midstream
 summary_short: 以DRAM研發、設計、製造與銷售為主，供應消費、電腦及伺服器記憶體。
 summary_long: 南亞科以DRAM的研發、設計、製造與銷售為主業，供應DDR5、DDR4及低功率行動記憶體。2025年消費型電子應用占營收約55%，個人電腦約21%、低功率產品約19%、資料中心與伺服器約5%。公司已量產1B製程16Gb DDR5與8Gb DDR4，並供應工規記憶體；2026年第三季公告AI基礎設施相關產品占營收超過20%。公司與補丁科技開發客製化超高頻寬記憶體，另與鈺創合資成立智憶科技，並接受Sandisk等公司私募認購。

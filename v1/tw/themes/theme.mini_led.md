@@ -4,7 +4,7 @@
 
 - 英文：Mini / Micro LED
 - 別名：Mini LED、Micro LED
-- 成員：29 家
+- 成員：28 家
 - 完整成員與證據見同目錄同名 YAML，或 themes.json
 
 ## 磊晶與晶粒（上游，3 家）

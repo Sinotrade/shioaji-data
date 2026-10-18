@@ -4,7 +4,7 @@
 
 - 英文：Data Centers
 - 別名：資料中心、Data Center
-- 成員：116 家
+- 成員：115 家
 - 完整成員與證據見同目錄同名 YAML，或 themes.json
 
 ## 電力、空調、機電設備（上游，32 家）

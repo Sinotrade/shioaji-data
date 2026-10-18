@@ -20,29 +20,37 @@ stages:
   name_en: Systems
 members:
 - id: tw.2406
-  stage: null
-  tier: null
-  detail: null
+  detail: 導電漿占營收59.18%，屬材料周邊，非矽料與晶圓；另有系統施工及售電業務。
   as_of: '2026-10-18'
   evidence:
   - tw.2406#e1
   - tw.2406#e2
   confidence: ai_cross_checked
   source: classification
-- id: tw.3576
   stage: null
   tier: null
-  detail: null
+- id: tw.3576
+  detail: 最大收入類別為太陽能電池與模組，另經營案場開發、工程及維運。
   as_of: '2026-10-15'
-  evidence:
+  evidence: &id001
   - tw.3576#e1
   - tw.3576#e2
   confidence: ai_cross_checked
   source: classification
+  stage: cell
+  tier: midstream
+  stage_role: primary
+- id: tw.3576
+  detail: 最大收入類別為太陽能電池與模組，另經營案場開發、工程及維運。
+  as_of: '2026-10-15'
+  evidence: *id001
+  confidence: ai_cross_checked
+  source: classification
+  stage: system
+  tier: downstream
+  stage_role: also
 - id: tw.3691
-  stage: null
-  tier: null
-  detail: null
+  detail: 最大營收來源為電池用導電漿，屬材料周邊，無適合主階段；另有售電業務。
   as_of: '2026-10-18'
   evidence:
   - tw.3691#e2
@@ -50,46 +58,69 @@ members:
   - tw.3691#e4
   confidence: ai_cross_checked
   source: classification
-- id: tw.6244
   stage: null
   tier: null
-  detail: null
+- id: tw.6244
+  detail: 光電事業占營收91.39%，主製電池與模組，另提供系統整合及發電售電。
   as_of: '2026-10-18'
-  evidence:
+  evidence: &id002
   - tw.6244#e1
   - tw.6244#e2
   - tw.6244#e3
   - tw.6244#e4
   confidence: ai_cross_checked
   source: classification
-- id: tw.6443
-  stage: null
-  tier: null
-  detail: null
+  stage: cell
+  tier: midstream
+  stage_role: primary
+- id: tw.6244
+  detail: 光電事業占營收91.39%，主製電池與模組，另提供系統整合及發電售電。
   as_of: '2026-10-18'
-  evidence:
+  evidence: *id002
+  confidence: ai_cross_checked
+  source: classification
+  stage: system
+  tier: downstream
+  stage_role: also
+- id: tw.6443
+  detail: 太陽能模組占營收93.35%，另製造電池並提供電廠興建及長期維運。
+  as_of: '2026-10-18'
+  evidence: &id003
   - tw.6443#e2
   - tw.6443#e3
   confidence: ai_cross_checked
   source: classification
+  stage: cell
+  tier: midstream
+  stage_role: primary
+- id: tw.6443
+  detail: 太陽能模組占營收93.35%，另製造電池並提供電廠興建及長期維運。
+  as_of: '2026-10-18'
+  evidence: *id003
+  confidence: ai_cross_checked
+  source: classification
+  stage: system
+  tier: downstream
+  stage_role: also
 - id: tw.6538
-  stage: null
-  tier: null
-  detail: null
+  detail: 電池印刷用網版占營收85.53%，屬製造耗材，非矽料晶圓、電池模組或系統電廠。
   as_of: '2026-10-18'
   evidence:
   - tw.6538#e1
   - tw.6538#e4
   confidence: ai_cross_checked
   source: classification
-- id: tw.6873
   stage: null
   tier: null
-  detail: null
+- id: tw.6873
+  detail: 2026年上半年售電為最大收入，並提供光電案場設計、施工及維運。
   as_of: '2026-10-18'
   evidence:
   - tw.6873#e3
   - tw.6873#e9
   confidence: ai_cross_checked
   source: classification
+  stage: system
+  tier: downstream
+  stage_role: primary
 as_of: '2026-10-18'

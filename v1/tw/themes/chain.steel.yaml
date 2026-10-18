@@ -20,62 +20,128 @@ stages:
   name_en: Downstream
 members:
 - id: tw.1605
-  stage: null
-  tier: null
-  detail: null
+  detail: 不銹鋼占營收52%，以盤元、棒材及鋼捲等鋼材為主，另具煉鋼及鋼胚業務。
   as_of: '2026-10-14'
-  evidence:
+  evidence: &id001
   - tw.1605#e02
   - tw.1605#e06
   confidence: ai_cross_checked
   source: classification
-- id: tw.2002
-  stage: null
-  tier: null
-  detail: null
+  stage: midstream
+  tier: midstream
+  stage_role: primary
+- id: tw.1605
+  detail: 不銹鋼占營收52%，以盤元、棒材及鋼捲等鋼材為主，另具煉鋼及鋼胚業務。
   as_of: '2026-10-14'
-  evidence:
+  evidence: *id001
+  confidence: ai_cross_checked
+  source: classification
+  stage: upstream
+  tier: upstream
+  stage_role: also
+- id: tw.2002
+  detail: 以一貫煉鐵煉鋼為核心，涵蓋鋼胚及軋延鋼材，合併範圍另含鋼構製造。
+  as_of: '2026-10-14'
+  evidence: &id002
   - tw.2002#e2
   - tw.2002#e4
   confidence: ai_cross_checked
   source: classification
-- id: tw.2006
-  stage: null
-  tier: null
-  detail: null
+  stage: upstream
+  tier: upstream
+  stage_role: primary
+- id: tw.2002
+  detail: 以一貫煉鐵煉鋼為核心，涵蓋鋼胚及軋延鋼材，合併範圍另含鋼構製造。
   as_of: '2026-10-14'
-  evidence:
+  evidence: *id002
+  confidence: ai_cross_checked
+  source: classification
+  stage: downstream
+  tier: downstream
+  stage_role: also
+- id: tw.2002
+  detail: 以一貫煉鐵煉鋼為核心，涵蓋鋼胚及軋延鋼材，合併範圍另含鋼構製造。
+  as_of: '2026-10-14'
+  evidence: *id002
+  confidence: ai_cross_checked
+  source: classification
+  stage: midstream
+  tier: midstream
+  stage_role: also
+- id: tw.2006
+  detail: 鋼筋占營收51.53%，以軋延鋼材為主，兼具電爐煉鋼及子公司鋼構工程。
+  as_of: '2026-10-14'
+  evidence: &id003
   - tw.2006#e2
   - tw.2006#e3
   - tw.2006#e4
   - tw.2006#e7
   confidence: ai_cross_checked
   source: classification
+  stage: midstream
+  tier: midstream
+  stage_role: primary
+- id: tw.2006
+  detail: 鋼筋占營收51.53%，以軋延鋼材為主，兼具電爐煉鋼及子公司鋼構工程。
+  as_of: '2026-10-14'
+  evidence: *id003
+  confidence: ai_cross_checked
+  source: classification
+  stage: downstream
+  tier: downstream
+  stage_role: also
+- id: tw.2006
+  detail: 鋼筋占營收51.53%，以軋延鋼材為主，兼具電爐煉鋼及子公司鋼構工程。
+  as_of: '2026-10-14'
+  evidence: *id003
+  confidence: ai_cross_checked
+  source: classification
+  stage: upstream
+  tier: upstream
+  stage_role: also
 - id: tw.2010
-  stage: null
-  tier: null
-  detail: null
+  detail: 工程收入占54.42%，主要承作鋼構製作安裝，另有鋼板裁剪及鋼材銷售。
   as_of: '2026-10-18'
-  evidence:
+  evidence: &id004
   - tw.2010#e1
   - tw.2010#e2
   confidence: ai_cross_checked
   source: classification
-- id: tw.2013
-  stage: null
-  tier: null
-  detail: null
+  stage: downstream
+  tier: downstream
+  stage_role: primary
+- id: tw.2010
+  detail: 工程收入占54.42%，主要承作鋼構製作安裝，另有鋼板裁剪及鋼材銷售。
   as_of: '2026-10-18'
-  evidence:
+  evidence: *id004
+  confidence: ai_cross_checked
+  source: classification
+  stage: midstream
+  tier: midstream
+  stage_role: also
+- id: tw.2013
+  detail: 高樓鋼架占43.25%為最大項目，主業為鋼構製造安裝，另有鋼品貿易及型鋼供應。
+  as_of: '2026-10-18'
+  evidence: &id005
   - tw.2013#e_business
   - tw.2013#e_share_highrise
   - tw.2013#e_position
   confidence: ai_cross_checked
   source: classification
+  stage: downstream
+  tier: downstream
+  stage_role: primary
+- id: tw.2013
+  detail: 高樓鋼架占43.25%為最大項目，主業為鋼構製造安裝，另有鋼品貿易及型鋼供應。
+  as_of: '2026-10-18'
+  evidence: *id005
+  confidence: ai_cross_checked
+  source: classification
+  stage: midstream
+  tier: midstream
+  stage_role: also
 - id: tw.2014
-  stage: null
-  tier: null
-  detail: null
+  detail: 主要加工銷售熱冷軋鋼捲、酸洗鋼捲及鋼管，屬鋼材軋延與製管環節。
   as_of: '2026-10-15'
   evidence:
   - tw.2014#e1
@@ -84,52 +150,84 @@ members:
   - tw.2014#e8
   confidence: ai_cross_checked
   source: classification
+  stage: midstream
+  tier: midstream
+  stage_role: primary
 - id: tw.2015
-  stage: null
-  tier: null
-  detail: null
+  detail: 鋼筋占營收55.07%，另有條線與型鋼，主要為軋延鋼材，亦具煉鋼製程。
   as_of: '2026-10-15'
-  evidence:
+  evidence: &id006
   - tw.2015#e1
   - tw.2015#e8
   confidence: ai_cross_checked
   source: classification
-- id: tw.2023
-  stage: null
-  tier: null
-  detail: null
+  stage: midstream
+  tier: midstream
+  stage_role: primary
+- id: tw.2015
+  detail: 鋼筋占營收55.07%，另有條線與型鋼，主要為軋延鋼材，亦具煉鋼製程。
   as_of: '2026-10-15'
-  evidence:
+  evidence: *id006
+  confidence: ai_cross_checked
+  source: classification
+  stage: upstream
+  tier: upstream
+  stage_role: also
+- id: tw.2023
+  detail: 鍍面與烤漆鋼捲為主要營收來源，屬鋼材表面加工，另承作鋼構及天車工程。
+  as_of: '2026-10-15'
+  evidence: &id007
   - tw.2023#e1
   - tw.2023#e2
   - tw.2023#e3
   confidence: ai_cross_checked
   source: classification
+  stage: midstream
+  tier: midstream
+  stage_role: primary
+- id: tw.2023
+  detail: 鍍面與烤漆鋼捲為主要營收來源，屬鋼材表面加工，另承作鋼構及天車工程。
+  as_of: '2026-10-15'
+  evidence: *id007
+  confidence: ai_cross_checked
+  source: classification
+  stage: downstream
+  tier: downstream
+  stage_role: also
 - id: tw.2030
-  stage: null
-  tier: null
-  detail: null
+  detail: 不鏽鋼管占營收88.84%，另經營鋼捲板與角鋼，屬不鏽鋼材中游。
   as_of: '2026-10-18'
   evidence:
   - tw.2030#e1
   - tw.2030#e2
   confidence: ai_cross_checked
   source: classification
+  stage: midstream
+  tier: midstream
+  stage_role: primary
 - id: tw.2031
-  stage: null
-  tier: null
-  detail: null
+  detail: 鋼板占銷售45.7%最高，主營鋼材供料裁剪，另承作BOX及BH鋼構加工。
   as_of: '2026-10-18'
-  evidence:
+  evidence: &id008
   - tw.2031#e1
   - tw.2031#e2
   - tw.2031#e3
   confidence: ai_cross_checked
   source: classification
+  stage: midstream
+  tier: midstream
+  stage_role: primary
+- id: tw.2031
+  detail: 鋼板占銷售45.7%最高，主營鋼材供料裁剪，另承作BOX及BH鋼構加工。
+  as_of: '2026-10-18'
+  evidence: *id008
+  confidence: ai_cross_checked
+  source: classification
+  stage: downstream
+  tier: downstream
+  stage_role: also
 - id: tw.2034
-  stage: null
-  tier: null
-  detail: null
+  detail: 不鏽鋼管占營收64.9%，板捲占33.4%，以焊接製管及鋼材裁剪加工為主。
   as_of: '2026-10-18'
   evidence:
   - tw.2034#e1
@@ -137,10 +235,11 @@ members:
   - tw.2034#e5
   confidence: ai_cross_checked
   source: classification
+  stage: midstream
+  tier: midstream
+  stage_role: primary
 - id: tw.2035
-  stage: null
-  tier: null
-  detail: null
+  detail: 不鏽鋼等銷貨占營收100%，主要產品為冷熱軋鋼捲與硬板，屬軋延鋼材。
   as_of: '2026-10-18'
   evidence:
   - tw.2035#e1
@@ -149,30 +248,42 @@ members:
   - tw.2035#e4
   confidence: ai_cross_checked
   source: classification
+  stage: midstream
+  tier: midstream
+  stage_role: primary
 - id: tw.2211
-  stage: null
-  tier: null
-  detail: null
+  detail: 鋼構部門對外收入最高，主要製造廠房、大樓及橋樑鋼結構並提供吊裝。
   as_of: '2026-10-15'
   evidence:
   - tw.2211#e2
   - tw.2211#e8
   confidence: ai_cross_checked
   source: classification
+  stage: downstream
+  tier: downstream
+  stage_role: primary
 - id: tw.5007
-  stage: null
-  tier: null
-  detail: null
+  detail: 螺帽與螺絲合占營收80.53%，以金屬扣件為主，另有磨光盤元及鋼鐵線材業務。
   as_of: '2026-10-18'
-  evidence:
+  evidence: &id009
   - tw.5007#e2
   - tw.5007#e3
   confidence: ai_cross_checked
   source: classification
+  stage: downstream
+  tier: downstream
+  stage_role: primary
+- id: tw.5007
+  detail: 螺帽與螺絲合占營收80.53%，以金屬扣件為主，另有磨光盤元及鋼鐵線材業務。
+  as_of: '2026-10-18'
+  evidence: *id009
+  confidence: ai_cross_checked
+  source: classification
+  stage: midstream
+  tier: midstream
+  stage_role: also
 - id: tw.5009
-  stage: null
-  tier: null
-  detail: null
+  detail: 主要產品為特殊合金鋼材料，依條棒鋼及軋延、鍛造業務定位，屬鋼材中游。
   as_of: '2026-10-15'
   evidence:
   - tw.5009#e2
@@ -180,19 +291,21 @@ members:
   - tw.5009#e4
   confidence: ai_cross_checked
   source: classification
+  stage: midstream
+  tier: midstream
+  stage_role: primary
 - id: tw.8349
-  stage: null
-  tier: null
-  detail: null
+  detail: 外牙扣件占營收78.49%，另有內牙扣件，主業為車用螺絲螺帽等金屬製品。
   as_of: '2026-10-18'
   evidence:
   - tw.8349#e2
   confidence: ai_cross_checked
   source: classification
+  stage: downstream
+  tier: downstream
+  stage_role: primary
 - id: tw.8415
-  stage: null
-  tier: null
-  detail: null
+  detail: 螺絲螺帽占營收84.75%，主要經營工業扣件通路，對應下游金屬製品。
   as_of: '2026-10-15'
   evidence:
   - tw.8415#e1
@@ -200,14 +313,18 @@ members:
   - tw.8415#e7
   confidence: ai_cross_checked
   source: classification
+  stage: downstream
+  tier: downstream
+  stage_role: primary
 - id: tw.9958
-  stage: null
-  tier: null
-  detail: null
+  detail: 風電鋼構占營收89.05%，主要將鋼材加工製成風電基礎及建築鋼結構。
   as_of: '2026-10-15'
   evidence:
   - tw.9958#e2
   - tw.9958#e6
   confidence: ai_cross_checked
   source: classification
+  stage: downstream
+  tier: downstream
+  stage_role: primary
 as_of: '2026-10-18'

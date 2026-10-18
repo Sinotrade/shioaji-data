@@ -4,7 +4,7 @@
 
 - 英文：CoWoS Advanced Packaging
 - 別名：CoWoS、先進封裝、2.5D 封裝
-- 成員：59 家
+- 成員：57 家
 - 完整成員與證據見同目錄同名 YAML，或 themes.json
 
 ## 設備（上游，31 家）

@@ -20,9 +20,7 @@ stages:
   name_en: Apparel, Footwear & Brands
 members:
 - id: tw.1342
-  stage: null
-  tier: null
-  detail: null
+  detail: 主要製造TPU機能性布料與貼合材料，屬布料加工；充氣成品不屬成衣或製鞋。
   as_of: '2026-10-18'
   evidence:
   - tw.1342#e2
@@ -30,32 +28,53 @@ members:
   - tw.1342#e6
   confidence: ai_cross_checked
   source: classification
+  stage: fabric
+  tier: midstream
+  stage_role: primary
 - id: tw.1419
-  stage: null
-  tier: null
-  detail: null
+  detail: 機能布料占營收61%為主，另有服飾與團體制服零售占30%。
   as_of: '2026-10-15'
-  evidence:
+  evidence: &id001
   - tw.1419#e3
   - tw.1419#e4
   - tw.1419#e5
   - tw.1419#e6
   confidence: ai_cross_checked
   source: classification
-- id: tw.1434
-  stage: null
-  tier: null
-  detail: null
+  stage: fabric
+  tier: midstream
+  stage_role: primary
+- id: tw.1419
+  detail: 機能布料占營收61%為主，另有服飾與團體制服零售占30%。
   as_of: '2026-10-15'
-  evidence:
+  evidence: *id001
+  confidence: ai_cross_checked
+  source: classification
+  stage: garment
+  tier: downstream
+  stage_role: also
+- id: tw.1434
+  detail: 聚胺／聚酯布占營收45.97%為最大項目，提供織染整理，另生產紗線。
+  as_of: '2026-10-15'
+  evidence: &id002
   - tw.1434#e2
   - tw.1434#e3
   confidence: ai_cross_checked
   source: classification
+  stage: fabric
+  tier: midstream
+  stage_role: primary
+- id: tw.1434
+  detail: 聚胺／聚酯布占營收45.97%為最大項目，提供織染整理，另生產紗線。
+  as_of: '2026-10-15'
+  evidence: *id002
+  confidence: ai_cross_checked
+  source: classification
+  stage: fiber
+  tier: upstream
+  stage_role: also
 - id: tw.1440
-  stage: null
-  tier: null
-  detail: null
+  detail: 棉紗占營收30%，另有聚酯棉、原絲與加工絲，主要屬纖維及紗線。
   as_of: '2026-10-15'
   evidence:
   - tw.1440#e1
@@ -65,90 +84,117 @@ members:
   - tw.1440#e6
   confidence: ai_cross_checked
   source: classification
+  stage: fiber
+  tier: upstream
+  stage_role: primary
 - id: tw.1476
-  stage: null
-  tier: null
-  detail: null
+  detail: 成衣占營收66.39%為主，針織布占33.61%，並具織布與染整業務。
   as_of: '2026-10-14'
-  evidence:
+  evidence: &id003
   - tw.1476#e1
   - tw.1476#e2
   confidence: ai_cross_checked
   source: classification
+  stage: garment
+  tier: downstream
+  stage_role: primary
+- id: tw.1476
+  detail: 成衣占營收66.39%為主，針織布占33.61%，並具織布與染整業務。
+  as_of: '2026-10-14'
+  evidence: *id003
+  confidence: ai_cross_checked
+  source: classification
+  stage: fabric
+  tier: midstream
+  stage_role: also
 - id: tw.1477
-  stage: null
-  tier: null
-  detail: null
+  detail: 成衣設計製造占營業比重97.4%，另有布料買賣及其他業務占2.6%。
   as_of: '2026-10-15'
-  evidence:
+  evidence: &id004
   - tw.1477#e2
   - tw.1477#e3
   confidence: ai_cross_checked
   source: classification
+  stage: garment
+  tier: downstream
+  stage_role: primary
+- id: tw.1477
+  detail: 成衣設計製造占營業比重97.4%，另有布料買賣及其他業務占2.6%。
+  as_of: '2026-10-15'
+  evidence: *id004
+  confidence: ai_cross_checked
+  source: classification
+  stage: fabric
+  tier: midstream
+  stage_role: also
 - id: tw.1718
-  stage: null
-  tier: null
-  detail: null
+  detail: 個體化纖產品占營收48.4%，主要包括聚酯絲與加工絲，屬纖維與紗階段。
   as_of: '2026-10-15'
   evidence:
   - tw.1718#e1
   - tw.1718#e5
   confidence: ai_cross_checked
   source: classification
+  stage: fiber
+  tier: upstream
+  stage_role: primary
 - id: tw.4441
-  stage: null
-  tier: null
-  detail: null
+  detail: 成衣銷售占營收99.96%，主要從事各類成衣設計與代工製造。
   as_of: '2026-10-18'
   evidence:
   - tw.4441#e1
   - tw.4441#e3
   confidence: ai_cross_checked
   source: classification
+  stage: garment
+  tier: downstream
+  stage_role: primary
 - id: tw.6768
-  stage: null
-  tier: null
-  detail: null
+  detail: 運動鞋占營收80.59%，另製造休閒鞋；依本鏈定義，製鞋屬下游。
   as_of: '2026-10-18'
   evidence:
   - tw.6768#e2
   - tw.6768#e3
   confidence: ai_cross_checked
   source: classification
+  stage: garment
+  tier: downstream
+  stage_role: primary
 - id: tw.6890
-  stage: null
-  tier: null
-  detail: null
+  detail: 運動鞋占營收92%、休閒鞋占8%，主要業務為鞋類製造與銷售。
   as_of: '2026-10-15'
   evidence:
   - tw.6890#e_products
   - tw.6890#e_revenue
   confidence: ai_cross_checked
   source: classification
+  stage: garment
+  tier: downstream
+  stage_role: primary
 - id: tw.6965
-  stage: null
-  tier: null
-  detail: null
+  detail: 運動鞋占當季營收70%、休閒鞋占29%，以鞋類代工製造為主。
   as_of: '2026-10-18'
   evidence:
   - tw.6965#e1
   - tw.6965#e2
   confidence: ai_cross_checked
   source: classification
+  stage: garment
+  tier: downstream
+  stage_role: primary
 - id: tw.9802
-  stage: null
-  tier: null
-  detail: null
+  detail: 鞋類占營收99.69%，主要製造專業運動鞋與高功能戶外鞋。
   as_of: '2026-10-18'
   evidence:
   - tw.9802#e2
   - tw.9802#e3
   confidence: ai_cross_checked
   source: classification
+  stage: garment
+  tier: downstream
+  stage_role: primary
 - id: tw.9904
-  stage: null
-  tier: null
-  detail: null
+  detail: 鞋類製造占營收66.9%為主，另經營運動用品零售、批發與品牌代理。
   as_of: '2026-10-14'
   evidence:
   - tw.9904#e1
@@ -156,10 +202,11 @@ members:
   - tw.9904#e4
   confidence: ai_cross_checked
   source: classification
+  stage: garment
+  tier: downstream
+  stage_role: primary
 - id: tw.9910
-  stage: null
-  tier: null
-  detail: null
+  detail: 鞋類製造銷售占營收95%；依本鏈階段定義，製鞋歸入下游。
   as_of: '2026-10-14'
   evidence:
   - tw.9910#e1
@@ -167,10 +214,11 @@ members:
   - tw.9910#e3
   confidence: ai_cross_checked
   source: classification
+  stage: garment
+  tier: downstream
+  stage_role: primary
 - id: tw.9938
-  stage: null
-  tier: null
-  detail: null
+  detail: 織帶為最大營收項目，其次為經編緹花網布，主要屬織造與布料加工。
   as_of: '2026-10-18'
   evidence:
   - tw.9938#e1
@@ -178,4 +226,7 @@ members:
   - tw.9938#e7
   confidence: ai_cross_checked
   source: classification
+  stage: fabric
+  tier: midstream
+  stage_role: primary
 as_of: '2026-10-18'
