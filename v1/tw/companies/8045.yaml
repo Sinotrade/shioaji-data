@@ -8,12 +8,198 @@ industry:
   l0_code: '27'
   l0_name: 通信網路業
   l0_name_en: Communications and Internet
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.software
+  l2_name: 軟體與資訊服務
+  l2_name_en: Software & IT Services
+  l3: sw.it_services
+  l3_name: 系統整合與資訊服務
+  l3_name_en: System Integration & IT Services
+chain: chain.networking
+chain_stage:
+  agreement: both
+  also:
+  - stage: modules
+    stage_name: 模組與零組件
+    tier: midstream
+  reason: 智慧聯網平台及系統建置占營收69.02%，另有寬頻設備，並開發無人機通訊模組。
+  stage: equipment
+  stage_name: 網通設備與系統
+  tier: downstream
+primary_chain_position: midstream
+summary_short: 以智慧聯網系統整合及寬頻網路傳輸設備為主要收入來源。
+summary_long: 達運光電以智慧聯網與寬頻網路設備為兩大業務，2025年營收占比分別為69.02%及28.15%，其他業務占2.83%。智慧聯網提供物聯網智慧監測服務平台及複雜系統建置，寬頻產品涵蓋GaN射頻放大器、頭端光傳輸設備、光纖節點工作站，以及GPON光纖到戶設備。官網另列無人機偵測與反制系統，整合多感測器、光學追蹤與定向干擾。艾斯特物聯科技為旗下子公司，專注智慧聯網應用與國防工業。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_aiot
+  name: 智慧聯網（AIoT）
+  period: '2025'
+  revenue_share_pct: 69.02
+- evidence_ids:
+  - e2
+  id: seg_broadband
+  name: 寬頻網路設備
+  period: '2025'
+  revenue_share_pct: 28.15
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 2.83
+main_theme: theme.drone
+themes:
+- also: []
+  stage: components
+  theme: theme.drone
+  tier: upstream
+- also: []
+  stage: application
+  theme: theme.gan
+  tier: downstream
+relations:
+  subsidiaries:
+  - as_of: '2026-10-20'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 美國子公司
+    details:
+    - 美國子公司
+    edge: e7f3d11b469a2
+    evidence_level: primary
+    id: org.aci-communications
+    name: ACI Communications, Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-20'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 2025年成立之菲律賓子公司
+    details:
+    - 2025年成立之菲律賓子公司
+    edge: ecc4f3c8e0573
+    evidence_level: primary
+    id: org.aci-solution-philippines
+    name: ACI Solution Philippines Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-20'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 智慧聯網與國防應用子公司
+    details:
+    - 智慧聯網與國防應用子公司
+    edge: e6d0e3006c539
+    evidence_level: primary
+    id: org.aster-technology
+    name: 艾斯特物聯科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.twoway.com.tw
 tax_id: '86880449'
 incorporated: '1992-10-15'
 listed: '2024-12-11'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.8045#e1:
+    locator: 公司基本資料
+    published_date: null
+    publisher: 達運光電股份有限公司
+    quote_check: found
+    title: 公司資訊
+    url: https://www.twoway.com.tw/company-profile
+  tw.8045#e10:
+    locator: 主文首段，無人機通訊模組
+    published_date: null
+    publisher: 達運光電股份有限公司
+    quote_check: found
+    title: 艾斯特物聯科技
+    url: https://www.twoway.com.tw/registration
+  tw.8045#e11:
+    locator: 重要發展記事，2020年
+    published_date: null
+    publisher: 達運光電股份有限公司
+    quote_check: found
+    title: 關於我們
+    url: https://www.twoway.com.tw/about-twoway
+  tw.8045#e12:
+    locator: 美國據點
+    published_date: null
+    publisher: 達運光電股份有限公司
+    quote_check: found
+    title: 全球據點
+    url: https://www.twoway.com.tw/global-office
+  tw.8045#e13:
+    locator: 重要發展記事，2025年
+    published_date: null
+    publisher: 達運光電股份有限公司
+    quote_check: found
+    title: 關於我們
+    url: https://www.twoway.com.tw/about-twoway
+  tw.8045#e2:
+    locator: 印刷頁49，營業比重；欄位依序為113年度收入、比重及114年度收入、比重
+    published_date: '2026-05-14'
+    publisher: 達運光電股份有限公司
+    quote_check: found
+    title: 114年度年報（公司原件鏡像）
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52711/2026/RNS/52711_rns_2026-05-14_00533870-8370-4c08-93ea-0d1f2111f84a.pdf
+  tw.8045#e3:
+    locator: 印刷頁50，目前之商品服務項目
+    published_date: '2026-05-14'
+    publisher: 達運光電股份有限公司
+    quote_check: found
+    title: 114年度年報（公司原件鏡像）
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52711/2026/RNS/52711_rns_2026-05-14_00533870-8370-4c08-93ea-0d1f2111f84a.pdf
+  tw.8045#e4:
+    locator: 印刷頁62，產業上、中、下游之關聯性
+    published_date: '2026-05-14'
+    publisher: 達運光電股份有限公司
+    quote_check: unreachable
+    title: 114年度年報文字版
+    url: https://financialfilings.com/filings/twoway-8045/annual-report/2026/46370519/
+  tw.8045#e5:
+    locator: 重要發展記事，2022年
+    published_date: null
+    publisher: 達運光電股份有限公司
+    quote_check: found
+    title: 關於我們
+    url: https://www.twoway.com.tw/about-twoway
+  tw.8045#e6:
+    locator: SDA系列產品資料表
+    published_date: null
+    publisher: 達運光電股份有限公司
+    quote_check: found
+    title: 室外型射頻放大器
+    url: https://www.twoway.com.tw/outdoor-amplifier
+  tw.8045#e7:
+    locator: 光纖線路終端產品系列，LT500 Series
+    published_date: null
+    publisher: 達運光電股份有限公司
+    quote_check: found
+    title: 光纖到家GPON系列產品
+    url: https://www.twoway.com.tw/ftth-gpon
+  tw.8045#e8:
+    locator: 可擴充的空域防禦系統整合方案
+    published_date: null
+    publisher: 達運光電股份有限公司
+    quote_check: found
+    title: 無人機反制系統
+    url: https://www.twoway.com.tw/%E5%85%A8%E5%9F%9F%E7%84%A1%E4%BA%BA%E6%A9%9F%E5%8F%8D%E5%88%B6%E7%B3%BB%E7%B5%B1
+  tw.8045#e9:
+    locator: 主文首段
+    published_date: null
+    publisher: 達運光電股份有限公司
+    quote_check: found
+    title: 艾斯特物聯科技
+    url: https://www.twoway.com.tw/registration

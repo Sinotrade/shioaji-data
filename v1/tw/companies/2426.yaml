@@ -49,16 +49,20 @@ segments:
   revenue_share_pct: 0.7
 main_theme: theme.gan
 themes:
-- stage: devices
+- also: []
+  stage: devices
   theme: theme.gan
   tier: midstream
-- stage: components
+- also: []
+  stage: components
   theme: theme.cpo
   tier: upstream
-- stage: chip
+- also: []
+  stage: chip
   theme: theme.vcsel
   tier: midstream
-- stage: devices
+- also: []
+  stage: devices
   theme: theme.inp
   tier: midstream
 relations:

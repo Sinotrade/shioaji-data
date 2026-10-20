@@ -8,12 +8,229 @@ industry:
   l0_code: '05'
   l0_name: 電機機械
   l0_name_en: Electric Machinery
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.machinery
+  l2_name: 機械與自動化
+  l2_name_en: Machinery & Automation
+  l3: mach.automation
+  l3_name: 工業自動化與機器人
+  l3_name_en: Industrial Automation & Robotics
+primary_chain_position: upstream
+summary_short: 製造製程自動化感測器、流量計與電機氣動控制元件。
+summary_long: 桓達以製程自動化感測器為主要業務，製造物液位開關、連續式物液位傳送器、流量計及壓力、溫度感測產品，應用於水處理、石化、食品製藥等製程。2025年營收組成為製程自動化感測器90%、電機氣動控制元件4%、其他6%。公司另提供AI伺服器液冷感測方案，涵蓋流量、液位、溫度、壓力與漏液監測，適用於浸沒式冷卻、直接液冷及CDU冷卻管路。另有空氣鎚等電機氣動控制元件。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_sensors
+  name: 製程自動化感測器
+  period: 2025年度
+  revenue_share_pct: 90
+- evidence_ids:
+  - e2
+  id: seg_controls
+  name: 電機氣動控制元件
+  period: 2025年度
+  revenue_share_pct: 4
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他
+  period: 2025年度
+  revenue_share_pct: 6
+main_theme: theme.ai_server
+themes:
+- also: []
+  stage: components
+  theme: theme.ai_server
+  tier: midstream
+- also: []
+  stage: parts
+  theme: theme.liquid_cooling
+  tier: upstream
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接控制子公司
+    details:
+    - 間接控制子公司
+    edge: e694501e15799
+    evidence_level: primary
+    id: org.aplus-finetek-sensor
+    name: APLUS FINETEK SENSOR INC.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接控制子公司
+    details:
+    - 直接控制子公司
+    edge: ee0962a622b4e
+    evidence_level: primary
+    id: org.finetek-automation-indonesia
+    name: PT. Finetek Automation Indonesia
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接控制子公司
+    details:
+    - 間接控制子公司
+    edge: ec2be1a121b6c
+    evidence_level: primary
+    id: org.finetek-pte
+    name: FineTek Pte. Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接控制子公司
+    details:
+    - 間接控制子公司
+    edge: e0075e2937981
+    evidence_level: primary
+    id: org.mutec-instruments
+    name: Mutec Instruments GmbH
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接控制子公司
+    details:
+    - 間接控制子公司
+    edge: e165f91b51718
+    evidence_level: primary
+    id: org.shanghai-fineautomation
+    name: 上海凡宜科技電子有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.fine-tek.com
 tax_id: '80132123'
 incorporated: '2003-01-30'
 listed: '2014-11-27'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4549#e1:
+    locator: 公司簡介首段
+    published_date: null
+    publisher: 桓達科技股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.fine-tek.com/tw/about
+  tw.4549#e10:
+    locator: 印刷第71頁，114年12月31日轉投資持股表；區分本公司投資與控制事業投資
+    published_date: '2026-05-26'
+    publisher: 桓達科技股份有限公司
+    quote_check: found
+    title: 桓達科技114年報
+    url: https://www.fine-tek.com/uploads/investors/379/25ac8199bafe8b06c3f7a96377a96061.pdf
+  tw.4549#e11:
+    locator: 印刷第71頁，上海凡宜列，控制事業投資及綜合投資欄
+    published_date: '2026-05-26'
+    publisher: 桓達科技股份有限公司
+    quote_check: found
+    title: 桓達科技114年報
+    url: https://www.fine-tek.com/uploads/investors/379/25ac8199bafe8b06c3f7a96377a96061.pdf
+  tw.4549#e12:
+    locator: 印刷第71頁，APLUS列，控制事業投資及綜合投資欄
+    published_date: '2026-05-26'
+    publisher: 桓達科技股份有限公司
+    quote_check: found
+    title: 桓達科技114年報
+    url: https://www.fine-tek.com/uploads/investors/379/25ac8199bafe8b06c3f7a96377a96061.pdf
+  tw.4549#e13:
+    locator: 印刷第71頁，FineTek Pte.列，控制事業投資及綜合投資欄
+    published_date: '2026-05-26'
+    publisher: 桓達科技股份有限公司
+    quote_check: found
+    title: 桓達科技114年報
+    url: https://www.fine-tek.com/uploads/investors/379/25ac8199bafe8b06c3f7a96377a96061.pdf
+  tw.4549#e14:
+    locator: 印刷第71頁，Mutec列，控制事業投資及綜合投資欄
+    published_date: '2026-05-26'
+    publisher: 桓達科技股份有限公司
+    quote_check: found
+    title: 桓達科技114年報
+    url: https://www.fine-tek.com/uploads/investors/379/25ac8199bafe8b06c3f7a96377a96061.pdf
+  tw.4549#e15:
+    locator: 印刷第71頁，PT. Finetek Automation Indonesia列，本公司投資欄
+    published_date: '2026-05-26'
+    publisher: 桓達科技股份有限公司
+    quote_check: found
+    title: 桓達科技114年報
+    url: https://www.fine-tek.com/uploads/investors/379/25ac8199bafe8b06c3f7a96377a96061.pdf
+  tw.4549#e2:
+    locator: 印刷第79頁，營業比重，114年度金額與占營收比重
+    published_date: '2026-05-26'
+    publisher: 桓達科技股份有限公司
+    quote_check: found
+    title: 桓達科技114年報
+    url: https://www.fine-tek.com/uploads/investors/379/25ac8199bafe8b06c3f7a96377a96061.pdf
+  tw.4549#e3:
+    locator: 物液位開關產品介紹
+    published_date: null
+    publisher: 桓達科技股份有限公司
+    quote_check: found
+    title: 物液位開關
+    url: https://www.fine-tek.com/tw/products/dataList/925
+  tw.4549#e4:
+    locator: 物液位傳送器產品介紹
+    published_date: null
+    publisher: 桓達科技股份有限公司
+    quote_check: found
+    title: 物液位傳送器
+    url: https://www.fine-tek.com/tw/products/dataList/928
+  tw.4549#e5:
+    locator: 傳送器產品列表
+    published_date: null
+    publisher: 桓達科技股份有限公司
+    quote_check: found
+    title: 流量產品
+    url: https://www.fine-tek.com/tw/products/dataList/102
+  tw.4549#e6:
+    locator: 氣動產品
+    published_date: null
+    publisher: 桓達科技股份有限公司
+    quote_check: found
+    title: 下載專區
+    url: https://www.fine-tek.com/tw/download
+  tw.4549#e7:
+    locator: 封面；發布日期見官網下載專區；末頁載有公司全名
+    published_date: '2026-08-21'
+    publisher: 桓達科技股份有限公司
+    quote_check: found
+    title: AI伺服器液冷計量感測解決方案
+    url: https://www.fine-tek.com/uploads/download/577/cc60506b04221fa391360b6bdec33327.pdf
+  tw.4549#e8:
+    locator: 五大技術亮點，第1至4項
+    published_date: '2025-05-27'
+    publisher: 桓達科技股份有限公司
+    quote_check: found
+    title: FineTek 桓達科技 COMPUTEX 2025 智慧感測技術展現液冷與工業自動化解決方案
+    url: https://www.fine-tek.com/tw/news/display/231
+  tw.4549#e9:
+    locator: 印刷第1頁，液位感測應用
+    published_date: '2026-08-21'
+    publisher: 桓達科技股份有限公司
+    quote_check: found
+    title: AI伺服器液冷計量感測解決方案
+    url: https://www.fine-tek.com/uploads/download/577/cc60506b04221fa391360b6bdec33327.pdf

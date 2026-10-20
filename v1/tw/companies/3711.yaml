@@ -54,13 +54,16 @@ segments:
   revenue_share_pct: 0.4
 main_theme: theme.nvidia
 themes:
-- stage: chips
+- also: []
+  stage: chips
   theme: theme.nvidia
   tier: upstream
-- stage: packaging
+- also: []
+  stage: packaging
   theme: theme.cpo
   tier: midstream
-- stage: manufacturing
+- also: []
+  stage: manufacturing
   theme: theme.cowos
   tier: midstream
 relations:

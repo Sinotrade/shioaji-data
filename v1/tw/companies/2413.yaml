@@ -8,12 +8,233 @@ industry:
   l0_code: '28'
   l0_name: 電子零組件業
   l0_name_en: Electronic Parts and Components
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.power
+  l3_name: 電源供應器與電源管理模組
+  l3_name_en: Power Supplies & Power Modules
+primary_chain_position: midstream
+summary_short: 製造電源供應器、資通產品與磁性元件，並提供客製化電子設計及生產服務。
+summary_long: 環科以電源供應器、資通產品與電磁元件為主要業務，並提供電子產品客製化設計及生產服務。2025年電源供應器占營收46.56%，資通產品占42.71%，電磁零件占9.95%，其他占0.78%。電源產品包含DC/DC轉換器、開放式電源與電源轉接器，磁性元件涵蓋變壓器及電感；另有毫米波雷達與電動車、電池用充電器。公司文件揭露電感應用於AI伺服器，並列有無人機與低軌衛星電源應用。
+segments:
+- evidence_ids:
+  - e6
+  id: power
+  name: 電源供應器
+  period: '2025'
+  revenue_share_pct: 46.56
+- evidence_ids:
+  - e7
+  id: icp
+  name: 資通產品
+  period: '2025'
+  revenue_share_pct: 42.71
+- evidence_ids:
+  - e8
+  id: magnetic
+  name: 電磁零件
+  period: '2025'
+  revenue_share_pct: 9.95
+- evidence_ids:
+  - e9
+  id: other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 0.78
+main_theme: theme.ev
+themes:
+- also: []
+  stage: vehicle
+  theme: theme.ev
+  tier: downstream
+- also: []
+  stage: components
+  theme: theme.ai_server
+  tier: midstream
+- also: []
+  stage: equipment
+  theme: theme.data_center
+  tier: upstream
+- also: []
+  stage: components
+  theme: theme.drone
+  tier: upstream
+- also: []
+  stage: components
+  theme: theme.leo_satellite
+  tier: upstream
+relations:
+  subsidiaries:
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過UMEC Investment持有的間接子公司
+    details:
+    - 透過UMEC Investment持有的間接子公司
+    edge: e926e5502c4c9
+    evidence_level: primary
+    id: org.umec-global-development
+    name: Global Development Company Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: ead721c11d671
+    evidence_level: primary
+    id: org.umec-investment
+    name: UMEC Investment Co.,Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過Global持有的間接子公司
+    details:
+    - 透過Global持有的間接子公司
+    edge: e5f81ce728be5
+    evidence_level: primary
+    id: org.umec-jialong-shenzhen
+    name: 嘉隆科技(深圳)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: ec6996d242294
+    evidence_level: primary
+    id: org.umec-vietnam
+    name: 環隆科技(越南)責任有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.umec.com.tw
 tax_id: '52878846'
 incorporated: '1984-02-18'
 listed: '2000-09-11'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2413#e1:
+    locator: UMEC current major products are
+    published_date: null
+    publisher: 環隆科技股份有限公司
+    quote_check: found
+    title: 公司介紹
+    url: https://www.umec.com.tw/Company
+  tw.2413#e10:
+    locator: 第58頁，Market Trends and Product Positioning
+    published_date: 2026-08
+    publisher: 環隆科技股份有限公司
+    quote_check: found
+    title: 2025 Sustainability Report
+    url: https://www.umec.com.tw/file/CorporateSocialResponsibility/UMEC_2025_ESG_REPORT.pdf
+  tw.2413#e11:
+    locator: 第16頁，2025年產品開發紀錄
+    published_date: 2026-08
+    publisher: 環隆科技股份有限公司
+    quote_check: found
+    title: 2025 Sustainability Report
+    url: https://www.umec.com.tw/file/CorporateSocialResponsibility/UMEC_2025_ESG_REPORT.pdf
+  tw.2413#e12:
+    locator: 第16頁，合併報表所包括之子公司；投資公司名稱及子公司名稱欄
+    published_date: '2025-11-07'
+    publisher: 環隆科技股份有限公司
+    quote_check: found
+    title: 2025年第三季合併財務報告
+    url: https://www.umec.com.tw/file/FINANCE_BIZREPORT/2025_umecQ3.pdf
+  tw.2413#e13:
+    locator: 第16頁，合併報表所包括之子公司；投資公司名稱及子公司名稱欄
+    published_date: '2025-11-07'
+    publisher: 環隆科技股份有限公司
+    quote_check: found
+    title: 2025年第三季合併財務報告
+    url: https://www.umec.com.tw/file/FINANCE_BIZREPORT/2025_umecQ3.pdf
+  tw.2413#e14:
+    locator: 第16頁，合併報表所包括之子公司；投資公司名稱及子公司名稱欄
+    published_date: '2025-11-07'
+    publisher: 環隆科技股份有限公司
+    quote_check: found
+    title: 2025年第三季合併財務報告
+    url: https://www.umec.com.tw/file/FINANCE_BIZREPORT/2025_umecQ3.pdf
+  tw.2413#e15:
+    locator: 第16頁，合併報表所包括之子公司；投資公司名稱及子公司名稱欄
+    published_date: '2025-11-07'
+    publisher: 環隆科技股份有限公司
+    quote_check: found
+    title: 2025年第三季合併財務報告
+    url: https://www.umec.com.tw/file/FINANCE_BIZREPORT/2025_umecQ3.pdf
+  tw.2413#e2:
+    locator: 第4頁，Company Profile，POWER
+    published_date: '2025-12-17'
+    publisher: 環隆科技股份有限公司
+    quote_check: found
+    title: 2025年法人說明會簡報
+    url: https://www.umec.com.tw/file/COOP_SEMINAR/2025_UMEC法說會簡報稿_英文.pdf
+  tw.2413#e3:
+    locator: 第12頁，Drone Application，Power Supply
+    published_date: '2025-12-17'
+    publisher: 環隆科技股份有限公司
+    quote_check: found
+    title: 2025年法人說明會簡報
+    url: https://www.umec.com.tw/file/COOP_SEMINAR/2025_UMEC法說會簡報稿_英文.pdf
+  tw.2413#e4:
+    locator: 第14頁，Aerospace Application
+    published_date: '2025-12-17'
+    publisher: 環隆科技股份有限公司
+    quote_check: found
+    title: 2025年法人說明會簡報
+    url: https://www.umec.com.tw/file/COOP_SEMINAR/2025_UMEC法說會簡報稿_英文.pdf
+  tw.2413#e5:
+    locator: 第4頁，Company Profile，MAGNETIC
+    published_date: '2025-12-17'
+    publisher: 環隆科技股份有限公司
+    quote_check: found
+    title: 2025年法人說明會簡報
+    url: https://www.umec.com.tw/file/COOP_SEMINAR/2025_UMEC法說會簡報稿_英文.pdf
+  tw.2413#e6:
+    locator: 第14頁，Product types sold，2025年電源供應器
+    published_date: 2026-08
+    publisher: 環隆科技股份有限公司
+    quote_check: not_found
+    title: 2025 Sustainability Report
+    url: https://www.umec.com.tw/file/CorporateSocialResponsibility/UMEC_2025_ESG_REPORT.pdf
+  tw.2413#e7:
+    locator: 第14頁，Product types sold，2025年資通產品
+    published_date: 2026-08
+    publisher: 環隆科技股份有限公司
+    quote_check: not_found
+    title: 2025 Sustainability Report
+    url: https://www.umec.com.tw/file/CorporateSocialResponsibility/UMEC_2025_ESG_REPORT.pdf
+  tw.2413#e8:
+    locator: 第14頁，Product types sold，2025年電磁零件
+    published_date: 2026-08
+    publisher: 環隆科技股份有限公司
+    quote_check: not_found
+    title: 2025 Sustainability Report
+    url: https://www.umec.com.tw/file/CorporateSocialResponsibility/UMEC_2025_ESG_REPORT.pdf
+  tw.2413#e9:
+    locator: 第14頁，Product types sold，2025年其他
+    published_date: 2026-08
+    publisher: 環隆科技股份有限公司
+    quote_check: not_found
+    title: 2025 Sustainability Report
+    url: https://www.umec.com.tw/file/CorporateSocialResponsibility/UMEC_2025_ESG_REPORT.pdf

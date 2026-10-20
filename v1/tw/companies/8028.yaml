@@ -37,13 +37,16 @@ segments:
   revenue_share_pct: 100
 main_theme: theme.sic
 themes:
-- stage: devices
+- also: []
+  stage: devices
   theme: theme.sic
   tier: midstream
-- stage: devices
+- also: []
+  stage: devices
   theme: theme.gan
   tier: midstream
-- stage: wafer
+- also: []
+  stage: wafer
   theme: theme.silicon_wafer
   tier: midstream
 website: www.psi.com.tw

@@ -61,18 +61,20 @@ segments:
   revenue_share_pct: 10.54
 main_theme: theme.ev
 themes:
-- stage: parts
+- also: []
+  stage: parts
   theme: theme.ev
   tier: midstream
-- stage: components
+- also: []
+  stage: components
   theme: theme.ai_server
   tier: midstream
-- stage: parts
+- also:
+  - stage: modules
+    tier: midstream
+  stage: parts
   theme: theme.liquid_cooling
   tier: upstream
-- stage: modules
-  theme: theme.liquid_cooling
-  tier: midstream
 relations:
   customers:
   - as_of: '2025-11-25'

@@ -8,12 +8,269 @@ industry:
   l0_code: '28'
   l0_name: 電子零組件業
   l0_name_en: Electronic Parts and Components
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.distribution
+  l2_name: 電子通路
+  l2_name_en: Electronics Distribution
+  l3: dist.components
+  l3_name: 電子零組件通路
+  l3_name_en: Electronic Components Distribution
+primary_chain_position: midstream
+summary_short: 銷售電磁相容與線路保護元件，並提供測試認證與設計諮詢服務。
+summary_long: 穩得以電磁相容與線路保護元件銷售為核心，結合設計諮詢、前測及認證服務。產品包括電磁干擾抑制元件、TVS與ESD防護元件，以及PoE與電源防雷模組。2025年元件銷售收入約18.05億元，測試認證收入約1.70億元，後者占營收8.59%。整合服務涵蓋前期線路規劃、中期零件測試除錯與後期產品認證，測試領域包括電磁相容、無線射頻及安全規範。公司亦揭露AI伺服器周邊研發與電動車相關元件應用，旗下子公司包含穩得電性檢測及深圳千虹電子。
+segments:
+- evidence_ids:
+  - e1
+  id: components
+  name: 元件銷售
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e2
+  - e3
+  id: testing
+  name: 測試認證
+  period: '2025'
+  revenue_share_pct: 8.59
+main_theme: theme.ev
+themes:
+- also: []
+  stage: parts
+  theme: theme.ev
+  tier: midstream
+- also: []
+  stage: components
+  theme: theme.ai_server
+  tier: midstream
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: e7f75dff99b75
+    evidence_level: primary
+    id: org.shenzhen-qianhong-electronics
+    name: 深圳千虹電子有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過深圳千虹電子持有的間接子公司
+    details:
+    - 透過深圳千虹電子持有的間接子公司
+    edge: eb310e1442875
+    evidence_level: primary
+    id: org.shenzhen-qianhong-testing
+    name: 深圳千虹電性檢測有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: eda4edd4f1f1d
+    evidence_level: primary
+    id: org.wendell-electrical-testing
+    name: 穩得電性檢測股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: e1dda0d7eb4a6
+    evidence_level: primary
+    id: org.wendell-japan
+    name: 穩得實業株式會社
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: ead3cd0b2902e
+    evidence_level: primary
+    id: org.wendell-korea
+    name: Wendell Korea Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: efbf66e86f52a
+    evidence_level: primary
+    id: org.wendell-singapore
+    name: Wendell Pte. Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 工業電腦應用對象，未具名
+- AI伺服器及周邊系統應用對象，未具名
 website: https://www.wendell.com.tw/zh/
 tax_id: '05052033'
 incorporated: '1979-06-27'
 listed: '2021-11-08'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6761#e1:
+    locator: 第41頁，營業收入；單位為新台幣仟元，依序為114及113年度
+    published_date: '2026-03-04'
+    publisher: 穩得實業股份有限公司
+    quote_check: found
+    title: 穩得實業股份有限公司及子公司114年度合併財務報告
+    url: https://www.wendell.com.tw/wp-content/uploads/%E7%A9%A9%E5%BE%97-114%E5%B9%B4%E5%BA%A6%E5%90%88%E4%BD%B5%E5%A0%B1%E5%91%8A.pdf
+  tw.6761#e10:
+    locator: 一次性購足的服務流程
+    published_date: null
+    publisher: 穩得實業股份有限公司
+    quote_check: found
+    title: 穩得實業整合服務
+    url: https://www.wendell.com.tw/zh/services/
+  tw.6761#e11:
+    locator: 董事長的話，回顧2025年
+    published_date: null
+    publisher: 穩得實業股份有限公司
+    quote_check: found
+    title: 穩得實業永續發展
+    url: https://www.wendell.com.tw/zh/esg/
+  tw.6761#e12:
+    locator: 第90頁，主要技術發展方向，高頻寬電磁波抑制技術
+    published_date: '2026-03-31'
+    publisher: 穩得實業股份有限公司
+    quote_check: found
+    title: 穩得實業114年度年報
+    url: https://www.wendell.com.tw/wp-content/uploads/115%E5%B9%B4%E8%82%A1%E6%9D%B1%E5%B8%B8%E6%9C%83%E5%B9%B4%E5%A0%B1114%E5%B9%B4%E5%BA%A6.pdf
+  tw.6761#e13:
+    locator: 第83頁，公司目前之商品項目，Protection Devices及EMI Devices用途
+    published_date: '2026-03-31'
+    publisher: 穩得實業股份有限公司
+    quote_check: found
+    title: 穩得實業114年度年報
+    url: https://www.wendell.com.tw/wp-content/uploads/115%E5%B9%B4%E8%82%A1%E6%9D%B1%E5%B8%B8%E6%9C%83%E5%B9%B4%E5%A0%B1114%E5%B9%B4%E5%BA%A6.pdf
+  tw.6761#e14:
+    locator: 第13頁，列入合併財務報告之子公司，穩得實業持有之日本子公司列
+    published_date: '2026-08-05'
+    publisher: 穩得實業股份有限公司
+    quote_check: found
+    title: 穩得實業115年第二季合併財務報告
+    url: https://www.wendell.com.tw/wp-content/uploads/%E7%A9%A9%E5%BE%97-115Q2%E5%90%88%E4%BD%B5%E5%A0%B1%E5%91%8A.pdf
+  tw.6761#e15:
+    locator: 第13頁，列入合併財務報告之子公司，投資公司與子公司名稱欄
+    published_date: '2026-08-05'
+    publisher: 穩得實業股份有限公司
+    quote_check: found
+    title: 穩得實業115年第二季合併財務報告
+    url: https://www.wendell.com.tw/wp-content/uploads/%E7%A9%A9%E5%BE%97-115Q2%E5%90%88%E4%BD%B5%E5%A0%B1%E5%91%8A.pdf
+  tw.6761#e16:
+    locator: 第13頁，列入合併財務報告之子公司，投資公司與子公司名稱欄
+    published_date: '2026-08-05'
+    publisher: 穩得實業股份有限公司
+    quote_check: found
+    title: 穩得實業115年第二季合併財務報告
+    url: https://www.wendell.com.tw/wp-content/uploads/%E7%A9%A9%E5%BE%97-115Q2%E5%90%88%E4%BD%B5%E5%A0%B1%E5%91%8A.pdf
+  tw.6761#e17:
+    locator: 第13頁，列入合併財務報告之子公司，投資公司與子公司名稱欄
+    published_date: '2026-08-05'
+    publisher: 穩得實業股份有限公司
+    quote_check: found
+    title: 穩得實業115年第二季合併財務報告
+    url: https://www.wendell.com.tw/wp-content/uploads/%E7%A9%A9%E5%BE%97-115Q2%E5%90%88%E4%BD%B5%E5%A0%B1%E5%91%8A.pdf
+  tw.6761#e18:
+    locator: 第13頁，列入合併財務報告之子公司，投資公司與子公司名稱欄
+    published_date: '2026-08-05'
+    publisher: 穩得實業股份有限公司
+    quote_check: found
+    title: 穩得實業115年第二季合併財務報告
+    url: https://www.wendell.com.tw/wp-content/uploads/%E7%A9%A9%E5%BE%97-115Q2%E5%90%88%E4%BD%B5%E5%A0%B1%E5%91%8A.pdf
+  tw.6761#e19:
+    locator: 第14頁，列入合併財務報告之子公司，深圳千虹再投資列
+    published_date: '2026-08-05'
+    publisher: 穩得實業股份有限公司
+    quote_check: found
+    title: 穩得實業115年第二季合併財務報告
+    url: https://www.wendell.com.tw/wp-content/uploads/%E7%A9%A9%E5%BE%97-115Q2%E5%90%88%E4%BD%B5%E5%A0%B1%E5%91%8A.pdf
+  tw.6761#e2:
+    locator: 第41頁，營業收入；單位為新台幣仟元
+    published_date: '2026-03-04'
+    publisher: 穩得實業股份有限公司
+    quote_check: found
+    title: 穩得實業股份有限公司及子公司114年度合併財務報告
+    url: https://www.wendell.com.tw/wp-content/uploads/%E7%A9%A9%E5%BE%97-114%E5%B9%B4%E5%BA%A6%E5%90%88%E4%BD%B5%E5%A0%B1%E5%91%8A.pdf
+  tw.6761#e3:
+    locator: 第82頁，營業比重表之測試認證列；114年度收入169,560仟元、比重8.59%
+    published_date: '2026-03-31'
+    publisher: 穩得實業股份有限公司
+    quote_check: found
+    title: 穩得實業114年度年報
+    url: https://www.wendell.com.tw/wp-content/uploads/115%E5%B9%B4%E8%82%A1%E6%9D%B1%E5%B8%B8%E6%9C%83%E5%B9%B4%E5%A0%B1114%E5%B9%B4%E5%BA%A6.pdf
+  tw.6761#e4:
+    locator: 第87頁，產業上、中、下游之間的關聯性
+    published_date: '2026-03-31'
+    publisher: 穩得實業股份有限公司
+    quote_check: found
+    title: 穩得實業114年度年報
+    url: https://www.wendell.com.tw/wp-content/uploads/115%E5%B9%B4%E8%82%A1%E6%9D%B1%E5%B8%B8%E6%9C%83%E5%B9%B4%E5%A0%B1114%E5%B9%B4%E5%BA%A6.pdf
+  tw.6761#e5:
+    locator: Circuit Protection產品分類及產品列表
+    published_date: null
+    publisher: 穩得實業股份有限公司
+    quote_check: found
+    title: NichTek產品分類
+    url: https://www.wendell.com.tw/zh/nichtek/
+  tw.6761#e6:
+    locator: EMI Components分類及共模濾波器、電感、磁珠產品列表
+    published_date: null
+    publisher: 穩得實業股份有限公司
+    quote_check: found
+    title: EMI Components產品分類
+    url: https://www.wendell.com.tw/zh/products_category/emi-components/
+  tw.6761#e7:
+    locator: PoE Guard產品說明
+    published_date: null
+    publisher: 穩得實業股份有限公司
+    quote_check: found
+    title: Modular Products產品分類
+    url: https://www.wendell.com.tw/zh/products_category/modular-products/
+  tw.6761#e8:
+    locator: Surge Pro產品說明
+    published_date: null
+    publisher: 穩得實業股份有限公司
+    quote_check: found
+    title: Modular Products產品分類
+    url: https://www.wendell.com.tw/zh/products_category/modular-products/
+  tw.6761#e9:
+    locator: 專業實驗室設備及一站式服務流程
+    published_date: null
+    publisher: 穩得實業股份有限公司
+    quote_check: found
+    title: 穩得實業：EMC解決方案
+    url: https://www.wendell.com.tw/zh/

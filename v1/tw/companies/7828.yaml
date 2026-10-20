@@ -46,13 +46,14 @@ segments:
   revenue_share_pct: 1.74
 main_theme: theme.mini_led
 themes:
-- stage: packaging
+- also: []
+  stage: packaging
   theme: theme.mini_led
   tier: midstream
-- stage: equipment
-  theme: theme.cowos
-  tier: upstream
-- stage: materials
+- also:
+  - stage: materials
+    tier: upstream
+  stage: equipment
   theme: theme.cowos
   tier: upstream
 relations:

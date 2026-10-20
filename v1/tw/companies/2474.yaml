@@ -35,10 +35,12 @@ segments:
   revenue_share_pct: null
 main_theme: theme.ai_server
 themes:
-- stage: components
+- also: []
+  stage: components
   theme: theme.ai_server
   tier: midstream
-- stage: components
+- also: []
+  stage: components
   theme: theme.nvidia
   tier: midstream
 relations:
@@ -101,6 +103,21 @@ relations:
     share_pct: null
     weight: 1
   subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 實質控制並納入合併的醫療器材子公司
+    details:
+    - 實質控制並納入合併的醫療器材子公司
+    - 財報揭露之母公司
+    edge: e59d1e7100f10
+    evidence_level: primary
+    id: tw.4126
+    name: 太醫
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 2
   - as_of: '2024-10-25'
     confidence: ai_cross_checked
     counterparty_shares: []
@@ -111,20 +128,6 @@ relations:
     evidence_level: media
     id: org.catcher-keli-biomedical
     name: 可力生醫股份有限公司
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
-  - as_of: '2026-06-30'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 實質控制並納入合併的醫療器材子公司
-    details:
-    - 實質控制並納入合併的醫療器材子公司
-    edge: e59d1e7100f10
-    evidence_level: primary
-    id: tw.4126
-    name: 太醫
     ranking_basis: unranked
     share_basis: null
     share_pct: null

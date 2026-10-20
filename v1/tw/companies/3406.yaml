@@ -33,15 +33,18 @@ segments:
   name: 其他
   period: '2025'
   revenue_share_pct: 25
-main_theme: theme.robotics
+main_theme: theme.apple
 themes:
-- stage: components
-  theme: theme.robotics
-  tier: upstream
-- stage: components
+- also: []
+  stage: components
   theme: theme.apple
   tier: upstream
-- stage: components
+- also: []
+  stage: components
+  theme: theme.robotics
+  tier: upstream
+- also: []
+  stage: components
   theme: theme.cpo
   tier: upstream
 relations:

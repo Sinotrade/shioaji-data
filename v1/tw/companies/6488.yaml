@@ -43,16 +43,20 @@ segments:
   revenue_share_pct: null
 main_theme: theme.sic
 themes:
-- stage: substrate
+- also: []
+  stage: substrate
   theme: theme.sic
   tier: upstream
-- stage: substrate
+- also: []
+  stage: substrate
   theme: theme.gan
   tier: upstream
-- stage: materials
+- also: []
+  stage: materials
   theme: theme.silicon_photonics
   tier: upstream
-- stage: wafer
+- also: []
+  stage: wafer
   theme: theme.silicon_wafer
   tier: midstream
 relations:

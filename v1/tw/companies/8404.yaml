@@ -8,19 +8,133 @@ industry:
   l0_code: '20'
   l0_name: 其他業
   l0_name_en: Others
-primary_chain_position: unknown
+  l1: materials
+  l1_name: 原物料
+  l1_name_en: Materials
+  l2: mat.other
+  l2_name: 其他原物料
+  l2_name_en: Other Materials
+  l3: matl.textile_fiber
+  l3_name: 紡織纖維與機能布料
+  l3_name_en: Textiles, Fibers & Functional Fabrics
+chain: chain.textile
+chain_stage:
+  agreement: both
+  also: []
+  reason: 緹花網布占營收45%為最大項，並產製織帶、鞋帶、黏扣帶與鬆緊帶，主要屬織布階段。
+  stage: fabric
+  stage_name: 織布與染整
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 透過子公司產製及銷售緹花網布、鞋帶、織帶、黏扣帶與鬆緊帶。
+summary_long: 百和興業集團主要產製及銷售緹花網布、織帶與鞋帶、黏扣帶及鬆緊帶。2025年緹花網布占營收45.0%，織帶與鞋帶占24.7%，黏扣帶占12.2%，鬆緊帶占9.3%，另有房地銷售及其他產品收入。主要營運子公司包括江蘇百宏複合材料科技股份有限公司、東莞百宏實業有限公司及越南百宏責任有限公司。直接母公司為百和國際有限公司，最終母公司為台灣百和工業股份有限公司。
+segments:
+- evidence_ids:
+  - e1
+  id: mesh
+  name: 緹花網布
+  period: '2025'
+  revenue_share_pct: 45.0
+- evidence_ids:
+  - e1
+  id: webbing
+  name: 織帶（鞋帶）
+  period: '2025'
+  revenue_share_pct: 24.7
+- evidence_ids:
+  - e1
+  id: hook_loop
+  name: 黏扣帶
+  period: '2025'
+  revenue_share_pct: 12.2
+- evidence_ids:
+  - e1
+  id: elastic
+  name: 鬆緊帶
+  period: '2025'
+  revenue_share_pct: 9.3
+- evidence_ids:
+  - e1
+  id: real_estate
+  name: 房地（含車位）
+  period: '2025'
+  revenue_share_pct: 0.5
+- evidence_ids:
+  - e1
+  id: other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 8.3
 relations:
   parents:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 百和興業；透過百和國際公司持有的間接子公司
+    detail: 最終母公司
     details:
+    - 最終母公司
     - 百和興業；透過百和國際公司持有的間接子公司
     edge: edb6313e361a9
     evidence_level: primary
     id: tw.9938
     name: 百和
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 2
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接母公司
+    details:
+    - 直接母公司
+    edge: e46a33414da2f
+    evidence_level: primary
+    id: org.百和國際有限公司
+    name: 百和國際有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 中國主要營運子公司
+    details:
+    - 中國主要營運子公司
+    edge: edaec1c4bd89d
+    evidence_level: primary
+    id: org.東莞百宏實業有限公司
+    name: 東莞百宏實業有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 中國主要營運子公司
+    details:
+    - 中國主要營運子公司
+    edge: e1fc797e9d4a8
+    evidence_level: primary
+    id: org.江蘇百宏複合材料科技股份有限公司
+    name: 江蘇百宏複合材料科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 越南營運子公司
+    details:
+    - 越南營運子公司
+    edge: ee952aaa123ae
+    evidence_level: primary
+    id: org.越南百宏責任有限公司
+    name: 越南百宏責任有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -30,7 +144,63 @@ tax_id: '26829193'
 incorporated: '2006-11-06'
 listed: '2011-05-18'
 foreign_registration: KY 開曼群島
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.8404#e1:
+    locator: 第81頁，主要產品之營業比重；114年度，金額單位為新台幣仟元
+    published_date: '2026-03-31'
+    publisher: 百和興業股份有限公司（FinancialFilings全文鏡像）
+    quote_check: unreachable
+    title: 百和興業股份有限公司114年度年報
+    url: https://financialfilings.com/filings/paiho-shih-8404/annual-report/2026/48040372/
+  tw.8404#e2:
+    locator: 第5頁，公司及集團簡介
+    published_date: '2026-03-31'
+    publisher: 百和興業股份有限公司（FinancialFilings全文鏡像）
+    quote_check: unreachable
+    title: 百和興業股份有限公司114年度年報
+    url: https://financialfilings.com/filings/paiho-shih-8404/annual-report/2026/48040372/
+  tw.8404#e3:
+    locator: 第5頁，公司及集團簡介
+    published_date: '2026-03-31'
+    publisher: 百和興業股份有限公司（FinancialFilings全文鏡像）
+    quote_check: unreachable
+    title: 百和興業股份有限公司114年度年報
+    url: https://financialfilings.com/filings/paiho-shih-8404/annual-report/2026/48040372/
+  tw.8404#e4:
+    locator: 第117頁，從屬公司與控制公司間之關係概況；資料日期2025年12月31日
+    published_date: '2026-03-31'
+    publisher: 百和興業股份有限公司（FinancialFilings全文鏡像）
+    quote_check: unreachable
+    title: 百和興業股份有限公司114年度年報
+    url: https://financialfilings.com/filings/paiho-shih-8404/annual-report/2026/48040372/
+  tw.8404#e5:
+    locator: 第117頁，從屬公司與控制公司間之關係概況；資料日期2025年12月31日
+    published_date: '2026-03-31'
+    publisher: 百和興業股份有限公司（FinancialFilings全文鏡像）
+    quote_check: unreachable
+    title: 百和興業股份有限公司114年度年報
+    url: https://financialfilings.com/filings/paiho-shih-8404/annual-report/2026/48040372/
+  tw.8404#e6:
+    locator: 年報前置資訊，董事會名單
+    published_date: '2026-03-31'
+    publisher: 百和興業股份有限公司（FinancialFilings全文鏡像）
+    quote_check: unreachable
+    title: 百和興業股份有限公司114年度年報
+    url: https://financialfilings.com/filings/paiho-shih-8404/annual-report/2026/48040372/
+  tw.8404#e7:
+    locator: 公司基本資料，公司名稱及公司代號
+    published_date: null
+    publisher: 台灣百和工業股份有限公司
+    quote_check: unreachable
+    title: 公司簡介
+    url: https://www.paiho.com/tw/profile/
+  tw.8404#e8:
+    locator: 第115頁，整體關係企業經營業務所涵蓋之行業
+    published_date: '2026-03-31'
+    publisher: 百和興業股份有限公司（FinancialFilings全文鏡像）
+    quote_check: unreachable
+    title: 百和興業股份有限公司114年度年報
+    url: https://financialfilings.com/filings/paiho-shih-8404/annual-report/2026/48040372/

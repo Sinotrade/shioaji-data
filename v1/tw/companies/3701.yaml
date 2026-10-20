@@ -64,10 +64,12 @@ segments:
   revenue_share_pct: 5
 main_theme: theme.leo_satellite
 themes:
-- stage: equipment
+- also: []
+  stage: equipment
   theme: theme.leo_satellite
   tier: midstream
-- stage: packaging
+- also: []
+  stage: packaging
   theme: theme.cpo
   tier: midstream
 relations:

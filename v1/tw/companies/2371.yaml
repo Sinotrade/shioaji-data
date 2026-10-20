@@ -53,13 +53,16 @@ segments:
   revenue_share_pct: 1
 main_theme: theme.ev
 themes:
-- stage: parts
+- also: []
+  stage: parts
   theme: theme.ev
   tier: midstream
-- stage: equipment
+- also: []
+  stage: equipment
   theme: theme.power_grid
   tier: midstream
-- stage: operation
+- also: []
+  stage: operation
   theme: theme.data_center
   tier: downstream
 relations:
@@ -79,6 +82,21 @@ relations:
     share_pct: null
     weight: 1
   subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 列入合併財務報告的控制子公司
+    details:
+    - 列入合併財務報告的控制子公司
+    - 母公司
+    edge: e2db7a664d605
+    evidence_level: primary
+    id: tw.8099
+    name: 大世科
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 2
   - as_of: 2026-03
     confidence: ai_cross_checked
     counterparty_shares: []
@@ -131,20 +149,6 @@ relations:
     evidence_level: primary
     id: tw.2331
     name: 精英
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
-  - as_of: '2025-12-31'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 列入合併財務報告的控制子公司
-    details:
-    - 列入合併財務報告的控制子公司
-    edge: e2db7a664d605
-    evidence_level: primary
-    id: tw.8099
-    name: 大世科
     ranking_basis: unranked
     share_basis: null
     share_pct: null

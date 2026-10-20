@@ -61,10 +61,12 @@ segments:
   revenue_share_pct: 4
 main_theme: theme.data_center
 themes:
-- stage: operation
+- also: []
+  stage: operation
   theme: theme.data_center
   tier: downstream
-- stage: system
+- also: []
+  stage: system
   theme: theme.liquid_cooling
   tier: downstream
 relations:

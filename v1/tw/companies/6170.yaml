@@ -8,12 +8,108 @@ industry:
   l0_code: '27'
   l0_name: 通信網路業
   l0_name_en: Communications and Internet
-primary_chain_position: unknown
+  l1: telecom
+  l1_name: 電信與媒體
+  l1_name_en: Telecom & Media
+  l2: telecom.services
+  l2_name: 電信服務
+  l2_name_en: Telecom Services
+  l3: tel.operator
+  l3_name: 電信業者
+  l3_name_en: Telecom Operators
+primary_chain_position: downstream
+summary_short: 經營移工匯款、電信預付卡代理，並透過子公司銷售消費品及提供票務服務。
+summary_long: 統振以在台外籍移工為主要服務對象，經營Qpay薪資匯兌、電信預付卡代理及手機加值服務。2025年合併營收中，通訊服務占81.97%，IC及其他通路事業占18.03%，年報未另拆分匯款與預付卡營收。旗下東旺利從事電池、保健食品與化妝品零售批發；快速購旅行社提供國內外客票代購。統振持有兩家公司股權分別為92.26%及67%，相關消費品通路與票務業務由子公司營運。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_communications
+  name: 通訊服務
+  period: '2025'
+  revenue_share_pct: 81.97
+- evidence_ids:
+  - e1
+  id: seg_distribution
+  name: IC及其他通路事業部門
+  period: '2025'
+  revenue_share_pct: 18.03
+relations:
+  subsidiaries:
+  - as_of: '2026-04-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股67%的票務服務子公司
+    details:
+    - 持股67%的票務服務子公司
+    edge: e0c6888b7a0f7
+    evidence_level: primary
+    id: org.quickgo-travel
+    name: 快速購旅行社股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股92.26%的消費品通路子公司
+    details:
+    - 持股92.26%的消費品通路子公司
+    edge: e26a87ec1292e
+    evidence_level: primary
+    id: org.tung-dar
+    name: 東旺利股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: WWW.WELLDONE.COM.TW
 tax_id: '12135600'
 incorporated: '1977-08-19'
 listed: '2002-04-16'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6170#e1:
+    locator: 第54頁，營業比重
+    published_date: '2026-05-25'
+    publisher: 統振股份有限公司
+    quote_check: found
+    title: 統振股份有限公司114年度年報
+    url: https://www.welldone.com.tw/data/report/files/1783396305731320768.pdf
+  tw.6170#e2:
+    locator: 目前統振公司的主要營業內容
+    published_date: null
+    publisher: 統振股份有限公司
+    quote_check: found
+    title: 公司簡介_關於統振
+    url: https://www.welldone.com.tw/zh-tw/about_us.php
+  tw.6170#e3:
+    locator: 電信產品業務介紹
+    published_date: null
+    publisher: 統振股份有限公司
+    quote_check: found
+    title: 電信產品業務_營業項目
+    url: https://www.welldone.com.tw/zh-tw/overview.php?act=list&cid=2&id=1
+  tw.6170#e4:
+    locator: 第79頁，關係企業圖；第48頁，2026年4月30日轉投資持股資料
+    published_date: '2026-05-25'
+    publisher: 統振股份有限公司
+    quote_check: found
+    title: 統振股份有限公司114年度年報
+    url: https://www.welldone.com.tw/data/report/files/1783396305731320768.pdf
+  tw.6170#e5:
+    locator: 第80頁，關係企業基本資料，東旺利股份有限公司
+    published_date: '2026-05-25'
+    publisher: 統振股份有限公司
+    quote_check: found
+    title: 統振股份有限公司114年度年報
+    url: https://www.welldone.com.tw/data/report/files/1783396305731320768.pdf
+  tw.6170#e6:
+    locator: 第80頁，關係企業基本資料，快速購旅行社股份有限公司
+    published_date: '2026-05-25'
+    publisher: 統振股份有限公司
+    quote_check: found
+    title: 統振股份有限公司114年度年報
+    url: https://www.welldone.com.tw/data/report/files/1783396305731320768.pdf

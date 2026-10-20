@@ -63,13 +63,16 @@ segments:
   revenue_share_pct: 2.6
 main_theme: theme.ev
 themes:
-- stage: materials
+- also: []
+  stage: materials
   theme: theme.ev
   tier: upstream
-- stage: materials
+- also: []
+  stage: materials
   theme: theme.power_grid
   tier: upstream
-- stage: parts
+- also: []
+  stage: parts
   theme: theme.liquid_cooling
   tier: upstream
 relations:

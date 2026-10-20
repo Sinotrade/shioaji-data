@@ -56,7 +56,8 @@ segments:
   revenue_share_pct: null
 main_theme: theme.cowos
 themes:
-- stage: materials
+- also: []
+  stage: materials
   theme: theme.cowos
   tier: upstream
 relations:
@@ -127,6 +128,21 @@ relations:
     evidence_level: other
     id: us.INTC
     name: Intel
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 母公司
+    details:
+    - 母公司
+    edge: e9dfd92b51e86
+    evidence_level: primary
+    id: tw.6953
+    name: 家碩
     ranking_basis: unranked
     share_basis: null
     share_pct: null

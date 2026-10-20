@@ -8,13 +8,170 @@ industry:
   l0_code: '22'
   l0_name: 生技醫療業
   l0_name_en: Biotechnology and Medical Care
-primary_chain_position: unknown
+  l1: health
+  l1_name: 醫療保健
+  l1_name_en: Healthcare
+  l2: health.pharma
+  l2_name: 製藥與生技
+  l2_name_en: Pharmaceuticals & Biotech
+  l3: bio.cdmo
+  l3_name: 生技代工（CDMO）
+  l3_name_en: Biologics CDMO
+chain: chain.biotech
+chain_stage:
+  agreement: both
+  also:
+  - stage: rnd
+    stage_name: 研發與原料
+    tier: upstream
+  reason: 營收來自生物藥品CDMO，另從事抗癌新藥及多胜肽原料藥與製劑開發。
+  stage: manufacturing
+  stage_name: 製造與代工
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 以藥品委託開發製造服務取得營收，並研發抗癌新藥及多胜肽產品。
+summary_long: 北極星藥業集團2025年營收為新台幣4,060.2萬元，來自生物藥品委託開發暨製造服務。子公司霖揚生技提供原料藥至無菌製劑的開發、生產、品質管制及法規查登服務，涵蓋胜肽、大分子原料藥及注射劑。集團核心候選藥物為 pegargiminase（ADI-PEG 20），針對肺間皮癌及急性骨髓性白血病等癌症進行開發，2025年報載明尚無營業收入。多胜肽業務包含霖揚生技的 Semaglutide 原料藥、針劑與口服學名藥開發。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_cdmo
+  name: 生物藥品委託開發暨製造服務
+  period: '2025'
+  revenue_share_pct: null
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團重要子公司
+    details:
+    - 集團重要子公司
+    edge: efb4cb3746654
+    evidence_level: primary
+    id: org.designerx-pharmaceuticals
+    name: DesigneRx Pharmaceuticals, Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團重要子公司
+    details:
+    - 集團重要子公司
+    edge: eef2376cbb33f
+    evidence_level: primary
+    id: org.designerx-pharmaceuticals-chengdu
+    name: 迪瑞藥業(成都)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 從事原料藥及無菌製劑CDMO之子公司
+    details:
+    - 從事原料藥及無菌製劑CDMO之子公司
+    edge: ecd2a88d7a878
+    evidence_level: primary
+    id: org.genovior-biotech
+    name: 霖揚生技製藥股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團重要子公司
+    details:
+    - 集團重要子公司
+    edge: ed60a3fde86f6
+    evidence_level: primary
+    id: org.north-star-pharmaceuticals-fujian
+    name: 北瑞藥業(福建)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團重要子公司
+    details:
+    - 集團重要子公司
+    edge: ecf1a7abb8f55
+    evidence_level: primary
+    id: org.polaris-pharmaceuticals
+    name: Polaris Pharmaceuticals, Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團重要子公司
+    details:
+    - 集團重要子公司
+    edge: ee62a2dbfb383
+    evidence_level: primary
+    id: org.polaris-pharmaceuticals-taiwan
+    name: 北極星藥業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.polarispharma.com
 tax_id: '24792045'
 incorporated: '2006-02-09'
 listed: '2022-06-06'
 foreign_registration: KY 開曼群島
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6550#e1:
+    locator: 紙本第64頁，主要產品之營業比重；PDF第68頁
+    published_date: '2026-04-17'
+    publisher: 北極星藥業集團股份有限公司
+    quote_check: not_found
+    title: 北極星藥業集團股份有限公司一一四年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=6550&colorchg=1&filename=2025_6550_20260515F04.pdf&kind=F&step=9
+  tw.6550#e2:
+    locator: 紙本第64頁，CDMO服務介紹；PDF第68頁
+    published_date: '2026-04-17'
+    publisher: 北極星藥業集團股份有限公司
+    quote_check: not_found
+    title: 北極星藥業集團股份有限公司一一四年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=6550&colorchg=1&filename=2025_6550_20260515F04.pdf&kind=F&step=9
+  tw.6550#e3:
+    locator: 新聞稿首段
+    published_date: '2025-12-09'
+    publisher: 北極星藥業集團股份有限公司
+    quote_check: found
+    title: 北極星藥業集團使用ADI-PEG 20於急性骨髓性白血病的一期臨床試驗結果
+    url: https://polarispharma.com/2025/12/09/20251209001/
+  tw.6550#e4:
+    locator: 第51頁，多胜肽產品開發與製程優化
+    published_date: null
+    publisher: 北極星藥業集團股份有限公司
+    quote_check: not_found
+    title: 北極星藥業集團2024永續報告書
+    url: https://polarispharma.com/wp-content/uploads/2026/06/20251209-Polaris-2024ESG-CH.pdf
+  tw.6550#e5:
+    locator: 第51頁，司美格魯肽開發計畫
+    published_date: null
+    publisher: 北極星藥業集團股份有限公司
+    quote_check: not_found
+    title: 北極星藥業集團2024永續報告書
+    url: https://polarispharma.com/wp-content/uploads/2026/06/20251209-Polaris-2024ESG-CH.pdf
+  tw.6550#e6:
+    locator: 投資人專區，公司及重要子公司介紹
+    published_date: null
+    publisher: 北極星藥業集團股份有限公司
+    quote_check: found
+    title: 投資人專區
+    url: https://polarispharma.com/investors/

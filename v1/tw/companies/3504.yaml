@@ -59,13 +59,16 @@ segments:
   revenue_share_pct: 3
 main_theme: theme.drone
 themes:
-- stage: components
+- also: []
+  stage: components
   theme: theme.drone
   tier: upstream
-- stage: components
+- also: []
+  stage: components
   theme: theme.leo_satellite
   tier: upstream
-- stage: components
+- also: []
+  stage: components
   theme: theme.cpo
   tier: upstream
 relations:

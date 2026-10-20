@@ -8,12 +8,205 @@ industry:
   l0_code: '02'
   l0_name: 食品工業
   l0_name_en: Food
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.software
+  l2_name: 軟體與資訊服務
+  l2_name_en: Software & IT Services
+  l3: sw.it_services
+  l3_name: 系統整合與資訊服務
+  l3_name_en: System Integration & IT Services
+primary_chain_position: downstream
+summary_short: 集團經營網路通訊產品與安防整合，母公司另製造及銷售飼料。
+summary_long: 興泰母公司經營禽畜、水產及寵物配合飼料，並銷售玉米、樹薯粉等單味飼料。集團透過持股60%的子公司泰宇網通，經營網路通訊產品買賣及客製化門禁、監控設備建置服務。2025年合併營收為1億7,577.8萬元，其中泰宇部門收入1億5,934.8萬元，高於興泰部門的1,385.4萬元，為最大營收來源；同安部門收入為257.6萬元。其他子公司包括昇鋒投資、泰生海洋開發、安鼎投資、美安生化科技及同安化工企業。
+segments:
+- evidence_ids:
+  - e_revenue_taiyu
+  id: seg_taiyu
+  name: 泰宇部門
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e_revenue_shintai
+  id: seg_shintai
+  name: 興泰部門
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e_revenue_tongan
+  id: seg_tongan
+  name: 同安部門
+  period: '2025'
+  revenue_share_pct: null
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 化學原材料及製品批發子公司
+    details:
+    - 化學原材料及製品批發子公司
+    edge: eb16f665c6d31
+    evidence_level: primary
+    id: org.同安化工企業-股-公司
+    name: 同安化工企業(股)公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 一般投資業子公司
+    details:
+    - 一般投資業子公司
+    edge: e23cf00d4d67d
+    evidence_level: primary
+    id: org.安鼎投資-股-公司
+    name: 安鼎投資(股)公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 一般投資業子公司
+    details:
+    - 一般投資業子公司
+    edge: e8c39f5049ae6
+    evidence_level: primary
+    id: org.昇鋒投資-股-公司
+    name: 昇鋒投資(股)公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股60%的子公司
+    details:
+    - 直接持股60%的子公司
+    edge: ec45ec19e57cb
+    evidence_level: primary
+    id: org.泰宇網通-股-公司
+    name: 泰宇網通(股)公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 漁撈及水產養殖子公司
+    details:
+    - 漁撈及水產養殖子公司
+    edge: e2da3cd720990
+    evidence_level: primary
+    id: org.泰生海洋開發-股-公司
+    name: 泰生海洋開發(股)公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 化妝品批發業子公司
+    details:
+    - 化妝品批發業子公司
+    edge: e119ddcb0355a
+    evidence_level: primary
+    id: org.美安生化科技-股-公司
+    name: 美安生化科技(股)公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.goldenbrand.com.tw
 tax_id: '85617982'
 incorporated: '1972-11-15'
 listed: '2000-09-11'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1235#e_revenue_shintai:
+    locator: 第57頁，附註十四，114年度部門收入；單位為新臺幣仟元
+    published_date: '2026-03-13'
+    publisher: 興泰實業股份有限公司
+    quote_check: unreachable
+    title: 興泰實業股份有限公司及子公司114及113年度合併財務報告
+    url: https://financialfilings.com/filings/st-1235/audit-report-information/2026/33153611/
+  tw.1235#e_revenue_taiyu:
+    locator: 第57頁，附註十四，114年度部門收入；單位為新臺幣仟元
+    published_date: '2026-03-13'
+    publisher: 興泰實業股份有限公司
+    quote_check: unreachable
+    title: 興泰實業股份有限公司及子公司114及113年度合併財務報告
+    url: https://financialfilings.com/filings/st-1235/audit-report-information/2026/33153611/
+  tw.1235#e_revenue_tongan:
+    locator: 第57頁，附註十四，114年度部門收入；單位為新臺幣仟元
+    published_date: '2026-03-13'
+    publisher: 興泰實業股份有限公司
+    quote_check: unreachable
+    title: 興泰實業股份有限公司及子公司114及113年度合併財務報告
+    url: https://financialfilings.com/filings/st-1235/audit-report-information/2026/33153611/
+  tw.1235#e_revenue_total:
+    locator: 第57頁，附註十四，114年度部門收入；單位為新臺幣仟元
+    published_date: '2026-03-13'
+    publisher: 興泰實業股份有限公司
+    quote_check: unreachable
+    title: 興泰實業股份有限公司及子公司114及113年度合併財務報告
+    url: https://financialfilings.com/filings/st-1235/audit-report-information/2026/33153611/
+  tw.1235#e_service:
+    locator: 第50頁，轉投資政策表，泰宇網通列
+    published_date: null
+    publisher: 興泰實業股份有限公司
+    quote_check: unreachable
+    title: 興泰實業股份有限公司114年度年報
+    url: https://doc.twse.com.tw/pdf/2025_1235_20260629F04_20260725_222629.pdf
+  tw.1235#e_sub_anding:
+    locator: 第17頁，附註四（三），興泰實業名下列入合併報告之子公司
+    published_date: '2026-03-13'
+    publisher: 興泰實業股份有限公司
+    quote_check: unreachable
+    title: 興泰實業股份有限公司及子公司114及113年度合併財務報告
+    url: https://financialfilings.com/filings/st-1235/audit-report-information/2026/33153611/
+  tw.1235#e_sub_meian:
+    locator: 第17頁，附註四（三），興泰實業名下列入合併報告之子公司
+    published_date: '2026-03-13'
+    publisher: 興泰實業股份有限公司
+    quote_check: unreachable
+    title: 興泰實業股份有限公司及子公司114及113年度合併財務報告
+    url: https://financialfilings.com/filings/st-1235/audit-report-information/2026/33153611/
+  tw.1235#e_sub_shengfeng:
+    locator: 第17頁，附註四（三），興泰實業名下列入合併報告之子公司
+    published_date: '2026-03-13'
+    publisher: 興泰實業股份有限公司
+    quote_check: unreachable
+    title: 興泰實業股份有限公司及子公司114及113年度合併財務報告
+    url: https://financialfilings.com/filings/st-1235/audit-report-information/2026/33153611/
+  tw.1235#e_sub_taisheng:
+    locator: 第17頁，附註四（三），興泰實業名下列入合併報告之子公司
+    published_date: '2026-03-13'
+    publisher: 興泰實業股份有限公司
+    quote_check: unreachable
+    title: 興泰實業股份有限公司及子公司114及113年度合併財務報告
+    url: https://financialfilings.com/filings/st-1235/audit-report-information/2026/33153611/
+  tw.1235#e_sub_taiyu:
+    locator: 第17頁，附註四（三），興泰實業名下列入合併報告之子公司；比例依序為2025及2024年底
+    published_date: '2026-03-13'
+    publisher: 興泰實業股份有限公司
+    quote_check: unreachable
+    title: 興泰實業股份有限公司及子公司114及113年度合併財務報告
+    url: https://financialfilings.com/filings/st-1235/audit-report-information/2026/33153611/
+  tw.1235#e_sub_tongan:
+    locator: 第17頁，附註四（三），興泰實業名下列入合併報告之子公司
+    published_date: '2026-03-13'
+    publisher: 興泰實業股份有限公司
+    quote_check: unreachable
+    title: 興泰實業股份有限公司及子公司114及113年度合併財務報告
+    url: https://financialfilings.com/filings/st-1235/audit-report-information/2026/33153611/

@@ -8,12 +8,108 @@ industry:
   l0_code: '31'
   l0_name: 其他電子業
   l0_name_en: Other Electronic
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.machinery
+  l2_name: 機械與自動化
+  l2_name_en: Machinery & Automation
+  l3: mach.office
+  l3_name: 辦公與商用設備
+  l3_name_en: Office & Business Equipment
+primary_chain_position: not_applicable
+summary_short: 以辦公事務設備銷售、租賃、耗材維修及文件與通訊整合服務取得收入。
+summary_long: 互盛電以辦公設備銷售、租賃及售後服務為主要業務。2025年合併營收組成為辦公室自動化商品46%、租賃收入54%。商品與服務涵蓋A3數位影印機、A4單功能及多功能事務機、相關耗材與維修，並提供文件應用、資訊安全及管理流程優化建置。另有辦公室弱電工程、交換機、門禁、監視及視訊會議系統的規劃與施工服務。截至2026年3月底，持有從事事務機器買賣租賃的震旦開發100%股權，以及從事事務機器銷售、維修與租賃的互盛（中國）70%股權。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_oa
+  name: 辦公室自動化商品
+  period: '2025'
+  revenue_share_pct: 46
+- evidence_ids:
+  - e2
+  id: seg_rental
+  name: 租賃收入
+  period: '2025'
+  revenue_share_pct: 54
+relations:
+  subsidiaries:
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股100%的事務機器買賣租賃子公司
+    details:
+    - 持股100%的事務機器買賣租賃子公司
+    edge: e63dae5a46bb9
+    evidence_level: primary
+    id: org.aurora-development
+    name: 震旦開發股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股70%的事務機器銷售維修及租賃子公司
+    details:
+    - 持股70%的事務機器銷售維修及租賃子公司
+    edge: e071950ce8b77
+    evidence_level: primary
+    id: org.huxen-china
+    name: 互盛（中國）有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.eosasc.com.tw
 tax_id: '12516241'
 incorporated: '1984-08-30'
 listed: '2000-09-11'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2433#e2:
+    locator: 第55頁，營業比重；第68頁，銷貨集中風險
+    published_date: null
+    publisher: 互盛股份有限公司
+    quote_check: found
+    title: 互盛股份有限公司114年度公司年報
+    url: https://www.eosasc.com.tw/storage/architecture/page~108/page~121/page~163/114-new2.pdf
+  tw.2433#e3:
+    locator: 第55頁，主要商品及服務項目第1項
+    published_date: null
+    publisher: 互盛股份有限公司
+    quote_check: found
+    title: 互盛股份有限公司114年度公司年報
+    url: https://www.eosasc.com.tw/storage/architecture/page~108/page~121/page~163/114-new2.pdf
+  tw.2433#e4:
+    locator: 互盛的核心價值
+    published_date: null
+    publisher: 互盛股份有限公司
+    quote_check: found
+    title: 您辦公的好夥伴！互盛辦公設備整合專家
+    url: https://www.eosasc.com.tw/huxen1984
+  tw.2433#e5:
+    locator: 第55頁，主要商品及服務項目第4項
+    published_date: null
+    publisher: 互盛股份有限公司
+    quote_check: found
+    title: 互盛股份有限公司114年度公司年報
+    url: https://www.eosasc.com.tw/storage/architecture/page~108/page~121/page~163/114-new2.pdf
+  tw.2433#e6:
+    locator: 第55頁，主要商品及服務項目第5項
+    published_date: null
+    publisher: 互盛股份有限公司
+    quote_check: found
+    title: 互盛股份有限公司114年度公司年報
+    url: https://www.eosasc.com.tw/storage/architecture/page~108/page~121/page~163/114-new2.pdf
+  tw.2433#e7:
+    locator: 第19頁，附註十二、子公司；115年3月31日持股欄
+    published_date: null
+    publisher: 互盛股份有限公司
+    quote_check: found
+    title: 互盛股份有限公司及子公司115年第1季合併財務報告
+    url: https://www.eosasc.com.tw/storage/architecture/page~108/page~121/page~163/114.pdf

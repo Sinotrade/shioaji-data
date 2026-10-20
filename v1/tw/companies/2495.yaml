@@ -30,10 +30,12 @@ summary_short: 研發、製造及銷售企業級儲存系統，另提供企業�
 summary_long: 普安以企業級資料儲存系統為主要業務，產品涵蓋 EonStor GS 整合儲存、DS SAN 儲存、CS 橫向擴展 NAS 及 GSx 平行檔案儲存。GS 整合 SAN、NAS 與雲端服務，GSx 用於大量資料的平行存取及 AI、HPC 工作負載。公司另提供 KS 企業私有雲平臺，整合支援 GPU 的運算硬體與預載軟體，供企業部署 AI 訓練等應用。其儲存與私有雲產品應用於資料中心。
 main_theme: theme.ai_server
 themes:
-- stage: assembly
+- also: []
+  stage: assembly
   theme: theme.ai_server
   tier: downstream
-- stage: it
+- also: []
+  stage: it
   theme: theme.data_center
   tier: midstream
 relations:

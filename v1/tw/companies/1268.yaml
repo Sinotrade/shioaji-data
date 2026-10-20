@@ -8,12 +8,142 @@ industry:
   l0_code: '16'
   l0_name: 觀光餐旅
   l0_name_en: Tourism and Hospitality
-primary_chain_position: unknown
+  l1: consumer
+  l1_name: 消費
+  l1_name_en: Consumer
+  l2: cons.discretionary
+  l2_name: 非必需消費
+  l2_name_en: Consumer Discretionary
+  l3: tourism.restaurant
+  l3_name: 餐飲
+  l3_name_en: Restaurants
+primary_chain_position: not_applicable
+summary_short: 經營漢來海港、島語等多品牌餐廳，主要收入來自餐飲服務。
+summary_long: 漢來美食以多品牌餐廳經營為主，2026年上半年收入分為餐飲、商品銷貨及其他，以餐飲收入為最大來源。旗下漢來海港供應中、西、日式自助百匯，島語提供餐酒搭配的精緻百匯；漢來名人坊經營粵菜，漢來上海湯包提供手工湯包，漢來蔬食將港滬點心手藝導入蔬食料理。合併財報列有漢和股份有限公司與HI-LAI FOODS HOLDING CO., LTD.兩家子公司，董事會已決議清算，截至2026年8月6日財報通過日仍未完成程序。
+segments:
+- evidence_ids:
+  - e_revenue_dining
+  id: dining
+  name: 餐飲收入
+  period: 2026年上半年
+  revenue_share_pct: null
+- evidence_ids:
+  - e_revenue_goods
+  id: goods
+  name: 商品銷貨收入
+  period: 2026年上半年
+  revenue_share_pct: null
+- evidence_ids:
+  - e_revenue_other
+  id: other
+  name: 其他收入
+  period: 2026年上半年
+  revenue_share_pct: null
+relations:
+  subsidiaries:
+  - as_of: '2026-08-06'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司；已決議清算，尚未完成
+    details:
+    - 子公司；已決議清算，尚未完成
+    edge: e5bd9e8148681
+    evidence_level: primary
+    id: org.hi-lai-foods-holding-co-ltd
+    name: HI-LAI FOODS HOLDING CO., LTD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-08-06'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司；已決議清算，尚未完成
+    details:
+    - 子公司；已決議清算，尚未完成
+    edge: eccbf18acda34
+    evidence_level: primary
+    id: org.漢和股份有限公司
+    name: 漢和股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.hilai-foods.com
 tax_id: '80352343'
 incorporated: '2003-01-09'
 listed: '2017-09-27'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1268#e_celebrity:
+    locator: 品牌介紹
+    published_date: null
+    publisher: 漢來美食股份有限公司
+    quote_check: not_found
+    title: 漢來美食｜漢來名人坊
+    url: https://www.hilai-foods.com/brand-content/7/celebrity-cuisine
+  tw.1268#e_dumpling:
+    locator: 品牌介紹
+    published_date: null
+    publisher: 漢來美食股份有限公司
+    quote_check: not_found
+    title: 漢來美食｜漢來上海湯包
+    url: https://www.hilai-foods.com/brand-content/8/hilai-shanghainese-dumpling
+  tw.1268#e_harbour:
+    locator: 品牌介紹
+    published_date: null
+    publisher: 漢來美食股份有限公司
+    quote_check: not_found
+    title: 漢來美食｜漢來海港
+    url: https://www.hilai-foods.com/brand-content/1/hilai-harbour
+  tw.1268#e_island:
+    locator: 島語品牌介紹
+    published_date: null
+    publisher: 漢來美食股份有限公司
+    quote_check: not_found
+    title: 漢來美食｜品牌餐廳
+    url: https://www.hilai-foods.com/brand
+  tw.1268#e_revenue_dining:
+    locator: 第25頁，附註二十「營業收入」；115年1月1日至6月30日餐飲收入3,481,003千元
+    published_date: '2026-08-06'
+    publisher: 漢來美食股份有限公司
+    quote_check: not_found
+    title: 漢來美食股份有限公司及子公司民國115及114年第2季合併財務報告暨會計師核閱報告
+    url: https://admin.hilai-foods.com/storage/trix/rMH7AWwlLWZnA8Q9Lhar7yzG71MiPNPtSi76cMi5.pdf
+  tw.1268#e_revenue_goods:
+    locator: 第25頁，附註二十「營業收入」；115年1月1日至6月30日商品銷貨收入101,409千元
+    published_date: '2026-08-06'
+    publisher: 漢來美食股份有限公司
+    quote_check: found
+    title: 漢來美食股份有限公司及子公司民國115及114年第2季合併財務報告暨會計師核閱報告
+    url: https://admin.hilai-foods.com/storage/trix/rMH7AWwlLWZnA8Q9Lhar7yzG71MiPNPtSi76cMi5.pdf
+  tw.1268#e_revenue_other:
+    locator: 第25頁，附註二十「營業收入」；115年1月1日至6月30日其他收入93,229千元
+    published_date: '2026-08-06'
+    publisher: 漢來美食股份有限公司
+    quote_check: not_found
+    title: 漢來美食股份有限公司及子公司民國115及114年第2季合併財務報告暨會計師核閱報告
+    url: https://admin.hilai-foods.com/storage/trix/rMH7AWwlLWZnA8Q9Lhar7yzG71MiPNPtSi76cMi5.pdf
+  tw.1268#e_subsidiary_basis:
+    locator: 第12頁，附註四（二）「合併基礎」；第46頁附表二
+    published_date: '2026-08-06'
+    publisher: 漢來美食股份有限公司
+    quote_check: found
+    title: 漢來美食股份有限公司及子公司民國115及114年第2季合併財務報告暨會計師核閱報告
+    url: https://admin.hilai-foods.com/storage/trix/rMH7AWwlLWZnA8Q9Lhar7yzG71MiPNPtSi76cMi5.pdf
+  tw.1268#e_subsidiary_status:
+    locator: 第46頁，附表二註3
+    published_date: '2026-08-06'
+    publisher: 漢來美食股份有限公司
+    quote_check: found
+    title: 漢來美食股份有限公司及子公司民國115及114年第2季合併財務報告暨會計師核閱報告
+    url: https://admin.hilai-foods.com/storage/trix/rMH7AWwlLWZnA8Q9Lhar7yzG71MiPNPtSi76cMi5.pdf
+  tw.1268#e_vegetarian:
+    locator: 品牌介紹
+    published_date: null
+    publisher: 漢來美食股份有限公司
+    quote_check: not_found
+    title: 漢來美食｜漢來蔬食
+    url: https://www.hilai-foods.com/brand-content/5/hilai-vegetarian

@@ -70,7 +70,7 @@ members:
 - id: tw.1563
   detail: 鍛造鋁圈占營收90.88%，以零組件為主；另有鋁材與回收再生鋁業務。
   as_of: '2026-10-18'
-  evidence: &id001
+  evidence:
   - tw.1563#e1
   - tw.1563#e2
   confidence: ai_cross_checked
@@ -81,7 +81,9 @@ members:
 - id: tw.1563
   detail: 鍛造鋁圈占營收90.88%，以零組件為主；另有鋁材與回收再生鋁業務。
   as_of: '2026-10-18'
-  evidence: *id001
+  evidence:
+  - tw.1563#e1
+  - tw.1563#e2
   confidence: ai_cross_checked
   source: classification
   stage: materials
@@ -94,6 +96,17 @@ members:
   - tw.2101#e1
   - tw.2101#e2
   - tw.2101#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: parts
+  tier: midstream
+  stage_role: primary
+- id: tw.2102
+  detail: 汽車輪胎占2025年合併營業比重91%，主要業務屬汽車零組件。
+  as_of: '2026-10-20'
+  evidence:
+  - tw.2102#e2
+  - tw.2102#e3
   confidence: ai_cross_checked
   source: classification
   stage: parts
@@ -128,7 +141,7 @@ members:
 - id: tw.2201
   detail: 本業以整車製造銷售為主，已有量產車款；另製造相關零件並提供電池包封裝。
   as_of: '2026-10-15'
-  evidence: &id002
+  evidence:
   - tw.2201#e2
   - tw.2201#e3
   confidence: ai_cross_checked
@@ -139,7 +152,9 @@ members:
 - id: tw.2201
   detail: 本業以整車製造銷售為主，已有量產車款；另製造相關零件並提供電池包封裝。
   as_of: '2026-10-15'
-  evidence: *id002
+  evidence:
+  - tw.2201#e2
+  - tw.2201#e3
   confidence: ai_cross_checked
   source: classification
   stage: parts
@@ -148,7 +163,7 @@ members:
 - id: tw.2204
   detail: 整車及相關零組件製造銷售占98%，以乘用與商用整車為主，亦跨零組件製造。
   as_of: '2026-10-15'
-  evidence: &id003
+  evidence:
   - tw.2204#e2
   - tw.2204#e3
   - tw.2204#e4
@@ -160,7 +175,10 @@ members:
 - id: tw.2204
   detail: 整車及相關零組件製造銷售占98%，以乘用與商用整車為主，亦跨零組件製造。
   as_of: '2026-10-15'
-  evidence: *id003
+  evidence:
+  - tw.2204#e2
+  - tw.2204#e3
+  - tw.2204#e4
   confidence: ai_cross_checked
   source: classification
   stage: parts
@@ -169,7 +187,7 @@ members:
 - id: tw.2206
   detail: 汽車業務為整車製造，集團另以機車製造為最大收入來源，並經營相關零組件。
   as_of: '2026-10-15'
-  evidence: &id004
+  evidence:
   - tw.2206#e1
   - tw.2206#e2
   - tw.2206#e3
@@ -181,7 +199,10 @@ members:
 - id: tw.2206
   detail: 汽車業務為整車製造，集團另以機車製造為最大收入來源，並經營相關零組件。
   as_of: '2026-10-15'
-  evidence: *id004
+  evidence:
+  - tw.2206#e1
+  - tw.2206#e2
+  - tw.2206#e3
   confidence: ai_cross_checked
   source: classification
   stage: parts
@@ -213,6 +234,17 @@ members:
   stage: oem
   tier: downstream
   stage_role: primary
+- id: tw.2228
+  detail: 汽車零件占營收84.23%，主力為安全氣囊殼體、安全帶管件與轉向系統零配件。
+  as_of: '2026-10-20'
+  evidence:
+  - tw.2228#e2
+  - tw.2228#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: parts
+  tier: midstream
+  stage_role: primary
 - id: tw.2231
   detail: 車用開關與安全系統合占營收60.52%，產品為胎壓偵測及ADAS雷達等零組件與系統。
   as_of: '2026-10-18'
@@ -239,6 +271,17 @@ members:
   stage: parts
   tier: midstream
   stage_role: primary
+- id: tw.2241
+  detail: 逆變器散熱模組占營收91.85%，主要供電動車及油電混合車使用，屬汽車零組件與模組。
+  as_of: '2026-10-20'
+  evidence:
+  - tw.2241#e1
+  - tw.2241#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: parts
+  tier: midstream
+  stage_role: primary
 - id: tw.2247
   detail: 汽車銷售占營收90.05%，並提供維修保養，屬整車經銷與售後服務。
   as_of: '2026-10-15'
@@ -251,6 +294,30 @@ members:
   stage: oem
   tier: downstream
   stage_role: primary
+- id: tw.2254
+  detail: 最大收入為售後改裝用LED車燈，主要屬售後市場，另有汽車零組件及水箱護罩業務。
+  as_of: '2026-10-20'
+  evidence:
+  - tw.2254#e1
+  - tw.2254#e2
+  - tw.2254#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: oem
+  tier: downstream
+  stage_role: primary
+- id: tw.2254
+  detail: 最大收入為售後改裝用LED車燈，主要屬售後市場，另有汽車零組件及水箱護罩業務。
+  as_of: '2026-10-20'
+  evidence:
+  - tw.2254#e1
+  - tw.2254#e2
+  - tw.2254#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: parts
+  tier: midstream
+  stage_role: also
 - id: tw.2258
   detail: 整車銷售占營收98.98%，經營電動車設計製造及品牌銷售。
   as_of: '2026-10-14'
@@ -260,6 +327,17 @@ members:
   source: classification
   stage: oem
   tier: downstream
+  stage_role: primary
+- id: tw.2497
+  detail: 車用電子占營收93.93%，主要產品為HUD、車載影音及駕駛輔助系統，屬汽車零組件與模組。
+  as_of: '2026-10-20'
+  evidence:
+  - tw.2497#e2
+  - tw.2497#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: parts
+  tier: midstream
   stage_role: primary
 - id: tw.3162
   detail: 鋁合金材料件占營收約93%，主要為電池盒、鋁擠型及壓鑄汽車零件。
@@ -272,6 +350,28 @@ members:
   stage: parts
   tier: midstream
   stage_role: primary
+- id: tw.3310
+  detail: 車用零組件占營收五成以上，主營精密沖壓件；另製造用於車燈及感應器的導線架，涵蓋電子元件。
+  as_of: '2026-10-20'
+  evidence:
+  - tw.3310#e1
+  - tw.3310#e2
+  confidence: ai_cross_checked
+  source: classification
+  stage: parts
+  tier: midstream
+  stage_role: primary
+- id: tw.3310
+  detail: 車用零組件占營收五成以上，主營精密沖壓件；另製造用於車燈及感應器的導線架，涵蓋電子元件。
+  as_of: '2026-10-20'
+  evidence:
+  - tw.3310#e1
+  - tw.3310#e2
+  confidence: ai_cross_checked
+  source: classification
+  stage: materials
+  tier: upstream
+  stage_role: also
 - id: tw.3624
   detail: 精密電阻占營收57%，車用電阻與電感屬上游電子元件。
   as_of: '2026-10-15'
@@ -287,6 +387,30 @@ members:
   stage: materials
   tier: upstream
   stage_role: primary
+- id: tw.3717
+  detail: 車用LED燈模組及元件占營收93%，以車用照明模組為核心，另供應LED電子元件。
+  as_of: '2026-10-20'
+  evidence:
+  - tw.3717#e3
+  - tw.3717#e6
+  - tw.3717#e7
+  confidence: ai_cross_checked
+  source: classification
+  stage: parts
+  tier: midstream
+  stage_role: primary
+- id: tw.3717
+  detail: 車用LED燈模組及元件占營收93%，以車用照明模組為核心，另供應LED電子元件。
+  as_of: '2026-10-20'
+  evidence:
+  - tw.3717#e3
+  - tw.3717#e6
+  - tw.3717#e7
+  confidence: ai_cross_checked
+  source: classification
+  stage: materials
+  tier: upstream
+  stage_role: also
 - id: tw.4551
   detail: 汽車業務占營收55.19%，供應煞車、燃油噴嘴及溫控系統精密零件。
   as_of: '2026-10-15'
@@ -320,6 +444,17 @@ members:
   source: classification
   stage: materials
   tier: upstream
+  stage_role: primary
+- id: tw.4912
+  detail: 汽車零組件占營收53.94%，為最大業務，供應安全系統及電動車電源、電控與電池等金屬零件。
+  as_of: '2026-10-20'
+  evidence:
+  - tw.4912#e1
+  - tw.4912#e2
+  confidence: ai_cross_checked
+  source: classification
+  stage: parts
+  tier: midstream
   stage_role: primary
 - id: tw.5243
   detail: 汽車機構件占營收57.99%，主要製造車椅結構件與車架組件。
@@ -355,10 +490,21 @@ members:
   stage: parts
   tier: midstream
   stage_role: primary
+- id: tw.6235
+  detail: 車用部件占營收93.04%，主要製造鎂鋁合金汽車機構、殼體與支架，屬汽車零組件。
+  as_of: '2026-10-20'
+  evidence:
+  - tw.6235#e2
+  - tw.6235#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: parts
+  tier: midstream
+  stage_role: primary
 - id: tw.6279
   detail: 營收全數來自連接器及新能源連接器，以電子元件為主，另供應車用智慧配電模組。
   as_of: '2026-10-18'
-  evidence: &id005
+  evidence:
   - tw.6279#e1
   - tw.6279#e2
   - tw.6279#e3
@@ -370,7 +516,10 @@ members:
 - id: tw.6279
   detail: 營收全數來自連接器及新能源連接器，以電子元件為主，另供應車用智慧配電模組。
   as_of: '2026-10-18'
-  evidence: *id005
+  evidence:
+  - tw.6279#e1
+  - tw.6279#e2
+  - tw.6279#e3
   confidence: ai_cross_checked
   source: classification
   stage: parts
@@ -388,10 +537,22 @@ members:
   stage: parts
   tier: midstream
   stage_role: primary
+- id: tw.7736
+  detail: 車門把手占營收52.36%，主要設計製造售後維修零件，研究明列屬中游零組件製造。
+  as_of: '2026-10-20'
+  evidence:
+  - tw.7736#e1
+  - tw.7736#e2
+  - tw.7736#e9
+  confidence: ai_cross_checked
+  source: classification
+  stage: parts
+  tier: midstream
+  stage_role: primary
 - id: tw.8255
   detail: 整流二極體占營收75.86%，以功率半導體元件為主，另開發電動車功率模組。
   as_of: '2026-10-18'
-  evidence: &id006
+  evidence:
   - tw.8255#e2
   - tw.8255#e3
   confidence: ai_cross_checked
@@ -402,7 +563,9 @@ members:
 - id: tw.8255
   detail: 整流二極體占營收75.86%，以功率半導體元件為主，另開發電動車功率模組。
   as_of: '2026-10-18'
-  evidence: *id006
+  evidence:
+  - tw.8255#e2
+  - tw.8255#e3
   confidence: ai_cross_checked
   source: classification
   stage: parts
@@ -411,7 +574,7 @@ members:
 - id: tw.8937
   detail: 沙灘車占營收44.72%為最大單項，主要製造整車，另有車輛零件業務。
   as_of: '2026-10-18'
-  evidence: &id007
+  evidence:
   - tw.8937#e2
   - tw.8937#e3
   - tw.8937#e4
@@ -423,7 +586,10 @@ members:
 - id: tw.8937
   detail: 沙灘車占營收44.72%為最大單項，主要製造整車，另有車輛零件業務。
   as_of: '2026-10-18'
-  evidence: *id007
+  evidence:
+  - tw.8937#e2
+  - tw.8937#e3
+  - tw.8937#e4
   confidence: ai_cross_checked
   source: classification
   stage: parts
@@ -440,4 +606,4 @@ members:
   stage: materials
   tier: upstream
   stage_role: primary
-as_of: '2026-10-18'
+as_of: '2026-10-20'

@@ -59,13 +59,14 @@ segments:
   revenue_share_pct: 1
 main_theme: theme.robotics
 themes:
-- stage: control
+- also:
+  - stage: system
+    tier: downstream
+  stage: control
   theme: theme.robotics
   tier: midstream
-- stage: system
-  theme: theme.robotics
-  tier: downstream
-- stage: system
+- also: []
+  stage: system
   theme: theme.nvidia
   tier: downstream
 relations:

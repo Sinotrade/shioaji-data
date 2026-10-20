@@ -53,12 +53,12 @@ segments:
   revenue_share_pct: 14
 main_theme: theme.power_grid
 themes:
-- stage: materials
+- also:
+  - stage: engineering
+    tier: downstream
+  stage: materials
   theme: theme.power_grid
   tier: upstream
-- stage: engineering
-  theme: theme.power_grid
-  tier: downstream
 relations:
   subsidiaries:
   - as_of: '2026-06-30'

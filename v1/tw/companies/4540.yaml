@@ -8,12 +8,175 @@ industry:
   l0_code: '05'
   l0_name: 電機機械
   l0_name_en: Electric Machinery
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.machinery
+  l2_name: 機械與自動化
+  l2_name_en: Machinery & Automation
+  l3: mach.motion
+  l3_name: 傳動元件（滾珠螺桿、線性滑軌）
+  l3_name_en: Motion Components (Ball Screws, Linear Guides)
+primary_chain_position: not_applicable
+summary_short: 製造與銷售滾珠螺桿、線性滑軌等精密傳動元件。
+summary_long: 全球傳動以精密傳動元件製造與銷售為主要業務，產品包括滾珠螺桿、線性滑軌、滾珠花鍵、旋轉系列及單軸機器人。2026年第二季產品別營收中，滾珠螺桿占49%、線性滑軌占46%、滾珠花鍵占4%，其他占1%。公司旋轉系列產品明確應用於SCARA機械手臂及產業用機器人，屬機器人傳動零組件範疇。子公司包括臺灣的全傳智能科技、中國的全傳科技蘇州與江蘇公司，以及美國子公司。
+segments:
+- evidence_ids:
+  - e2
+  id: ball_screw
+  name: 滾珠螺桿
+  period: 2026年第2季
+  revenue_share_pct: 49
+- evidence_ids:
+  - e3
+  id: linear_guide
+  name: 線性滑軌
+  period: 2026年第2季
+  revenue_share_pct: 46
+- evidence_ids:
+  - e4
+  id: ball_spline
+  name: 滾珠花鍵
+  period: 2026年第2季
+  revenue_share_pct: 4
+- evidence_ids:
+  - e5
+  id: other
+  name: 其他
+  period: 2026年第2季
+  revenue_share_pct: 1
+main_theme: theme.robotics
+themes:
+- also: []
+  stage: components
+  theme: theme.robotics
+  tier: upstream
+relations:
+  subsidiaries:
+  - as_of: '2026-08-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 臺灣子公司
+    details:
+    - 臺灣子公司
+    edge: ed12898abdcf4
+    evidence_level: primary
+    id: org.tbi-motion-intelligence
+    name: 全傳智能科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-08-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 中國子公司
+    details:
+    - 中國子公司
+    edge: e4f59dd6fb673
+    evidence_level: primary
+    id: org.tbi-motion-jiangsu
+    name: 全傳科技（江蘇）有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-08-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 中國子公司
+    details:
+    - 中國子公司
+    edge: e38ecf4bb6057
+    evidence_level: primary
+    id: org.tbi-motion-suzhou
+    name: 全傳科技（蘇州）有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-08-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 美國子公司
+    details:
+    - 美國子公司
+    edge: e8365861ea82f
+    evidence_level: primary
+    id: org.tbi-motion-usa
+    name: TBI MOTION TECHNOLOGY(USA) LLC
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.tbimotion.com.tw
 tax_id: '29168533'
 incorporated: '2010-07-09'
 listed: '2018-08-15'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4540#e1:
+    locator: 傳動系統元件之品牌
+    published_date: null
+    publisher: 全球傳動科技股份有限公司
+    quote_check: found
+    title: 集團介紹
+    url: https://www.tbimotion.com.tw/company-profile/company-profile-01
+  tw.4540#e2:
+    locator: 第21頁，產品別營收，2Q/26滾珠螺桿
+    published_date: '2026-08-14'
+    publisher: 全球傳動科技股份有限公司
+    quote_check: not_found
+    title: 2026年第2季法人說明會
+    url: https://mopsov.twse.com.tw/nas/STR/454020260814M001.pdf
+  tw.4540#e3:
+    locator: 第21頁，產品別營收，2Q/26線性滑軌
+    published_date: '2026-08-14'
+    publisher: 全球傳動科技股份有限公司
+    quote_check: not_found
+    title: 2026年第2季法人說明會
+    url: https://mopsov.twse.com.tw/nas/STR/454020260814M001.pdf
+  tw.4540#e4:
+    locator: 第21頁，產品別營收，2Q/26滾珠花鍵
+    published_date: '2026-08-14'
+    publisher: 全球傳動科技股份有限公司
+    quote_check: not_found
+    title: 2026年第2季法人說明會
+    url: https://mopsov.twse.com.tw/nas/STR/454020260814M001.pdf
+  tw.4540#e5:
+    locator: 第21頁，產品別營收，2Q/26其他
+    published_date: '2026-08-14'
+    publisher: 全球傳動科技股份有限公司
+    quote_check: not_found
+    title: 2026年第2季法人說明會
+    url: https://mopsov.twse.com.tw/nas/STR/454020260814M001.pdf
+  tw.4540#e6:
+    locator: 螺帽旋轉式滾珠螺桿、旋轉式滾珠花鍵與旋轉式精密滾珠螺桿花鍵之應用
+    published_date: null
+    publisher: 全球傳動科技股份有限公司
+    quote_check: found
+    title: 旋轉系列
+    url: https://www.tbimotion.com.tw/category/rotary-series
+  tw.4540#e7:
+    locator: 第6頁，全球經銷據點，臺灣子公司
+    published_date: '2026-08-14'
+    publisher: 全球傳動科技股份有限公司
+    quote_check: found
+    title: 2026年第2季法人說明會
+    url: https://mopsov.twse.com.tw/nas/STR/454020260814M001.pdf
+  tw.4540#e8:
+    locator: 第6頁，全球經銷據點，中國子公司
+    published_date: '2026-08-14'
+    publisher: 全球傳動科技股份有限公司
+    quote_check: found
+    title: 2026年第2季法人說明會
+    url: https://mopsov.twse.com.tw/nas/STR/454020260814M001.pdf
+  tw.4540#e9:
+    locator: 第6頁，全球經銷據點，美國子公司
+    published_date: '2026-08-14'
+    publisher: 全球傳動科技股份有限公司
+    quote_check: found
+    title: 2026年第2季法人說明會
+    url: https://mopsov.twse.com.tw/nas/STR/454020260814M001.pdf

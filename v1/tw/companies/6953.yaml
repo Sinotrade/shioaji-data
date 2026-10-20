@@ -8,12 +8,158 @@ industry:
   l0_code: '24'
   l0_name: 半導體業
   l0_name_en: Semiconductor
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.semi
+  l2_name: 半導體
+  l2_name_en: Semiconductors
+  l3: semi.equipment
+  l3_name: 半導體設備
+  l3_name_en: Semiconductor Equipment
+chain: chain.semiconductor
+chain_stage:
+  agreement: both
+  also: []
+  reason: 機器設備占營收88.42%，主供半導體EUV與高階光罩傳載、清洗及檢查設備。
+  stage: tools
+  stage_name: 設備與廠務
+  tier: upstream
+primary_chain_position: upstream
+summary_short: 製造半導體EUV與高階光罩傳載、清洗、檢查及儲存自動化設備。
+summary_long: 家碩科技以半導體微影製程的光罩傳載自動化設備為主要業務，提供EUV與高階光罩的交換、儲存、清洗及檢查方案。產品包括EUV光罩交換儲存設備、光罩清洗機、智慧倉儲系統，以及EUV POD表面與光罩側邊檢查機，另投入PVD真空鍍膜相關設備研發。2025年營收組成為機器設備88.42%、其他11.58%。家登精密工業為其母公司，昇和精技為全資子公司；另設有投資業務子公司Gdauto Equipment Capital Ltd.，截至2025年底尚未完成注資。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_equipment
+  name: 機器設備
+  period: '2025'
+  revenue_share_pct: 88.42
+- evidence_ids:
+  - e1
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 11.58
+main_theme: theme.euv
+themes:
+- also: []
+  stage: equipment
+  theme: theme.euv
+  tier: midstream
+relations:
+  parents:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 母公司
+    details:
+    - 母公司
+    edge: e9dfd92b51e86
+    evidence_level: primary
+    id: tw.3680
+    name: 家登
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 投資業務子公司，年底尚未完成注資
+    details:
+    - 投資業務子公司，年底尚未完成注資
+    edge: e9b59bd6f2651
+    evidence_level: primary
+    id: org.gdauto-equipment-capital-ltd
+    name: Gdauto Equipment Capital Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股100%的子公司
+    details:
+    - 持股100%的子公司
+    edge: e3d2d339d4a35
+    evidence_level: primary
+    id: org.昇和精技股份有限公司
+    name: 昇和精技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.gdauto.com.tw
 tax_id: '47086838'
 incorporated: '2016-07-18'
 listed: '2024-05-13'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6953#e1:
+    locator: 第41頁，主要產品之營業比重；PDF第45頁
+    published_date: '2026-05-07'
+    publisher: 家碩科技股份有限公司
+    quote_check: found
+    title: 家碩科技股份有限公司2025年報
+    url: https://www.gdauto.com.tw/storage/investArticle/2026052514431455262025%E5%B9%B4%E5%A0%B1.pdf
+  tw.6953#e2:
+    locator: EUV Lite Exchanger／機台功能
+    published_date: null
+    publisher: 家碩科技股份有限公司
+    quote_check: found
+    title: 產品服務：EUV光罩傳載解決方案
+    url: https://www.gdauto.com.tw/products-01
+  tw.6953#e3:
+    locator: 全自動EUV POD表面檢查機／EUV光罩側邊檢查機
+    published_date: null
+    publisher: 家碩科技股份有限公司
+    quote_check: found
+    title: 產品服務：EUV光罩傳載解決方案
+    url: https://www.gdauto.com.tw/products-01
+  tw.6953#e4:
+    locator: 光罩清洗機
+    published_date: null
+    publisher: 家碩科技股份有限公司
+    quote_check: not_found
+    title: 產品服務：高階光罩傳載解決方案
+    url: https://www.gdauto.com.tw/products-02
+  tw.6953#e5:
+    locator: 光罩儲存智慧倉儲系統
+    published_date: null
+    publisher: 家碩科技股份有限公司
+    quote_check: found
+    title: 產品服務：高階光罩傳載解決方案
+    url: https://www.gdauto.com.tw/products-02
+  tw.6953#e6:
+    locator: PVD技術
+    published_date: null
+    publisher: 家碩科技股份有限公司
+    quote_check: found
+    title: 產品服務：關鍵零組件/PVD技術
+    url: https://www.gdauto.com.tw/products-03
+  tw.6953#e7:
+    locator: 第57頁，附註三二、關係人名稱及其關係
+    published_date: null
+    publisher: 家碩科技股份有限公司
+    quote_check: found
+    title: 家碩科技114及113年度合併財務報告
+    url: https://www.gdauto.com.tw/storage/productArticle/20260410173225562025%E5%B9%B4%E7%AC%AC%E5%9B%9B%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf
+  tw.6953#e8:
+    locator: 第37頁，公司轉投資事業持股表；PDF第41頁
+    published_date: '2026-05-07'
+    publisher: 家碩科技股份有限公司
+    quote_check: found
+    title: 家碩科技股份有限公司2025年報
+    url: https://www.gdauto.com.tw/storage/investArticle/2026052514431455262025%E5%B9%B4%E5%A0%B1.pdf
+  tw.6953#e9:
+    locator: 第33頁，附註十一、子公司，說明1
+    published_date: null
+    publisher: 家碩科技股份有限公司
+    quote_check: found
+    title: 家碩科技114及113年度合併財務報告
+    url: https://www.gdauto.com.tw/storage/productArticle/20260410173225562025%E5%B9%B4%E7%AC%AC%E5%9B%9B%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf

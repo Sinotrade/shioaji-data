@@ -44,22 +44,28 @@ segments:
   revenue_share_pct: 8
 main_theme: theme.ev
 themes:
-- stage: vehicle
+- also: []
+  stage: vehicle
   theme: theme.ev
   tier: downstream
-- stage: assembly
+- also: []
+  stage: assembly
   theme: theme.ai_server
   tier: downstream
-- stage: system
+- also: []
+  stage: system
   theme: theme.robotics
   tier: downstream
-- stage: it
+- also: []
+  stage: it
   theme: theme.data_center
   tier: midstream
-- stage: system
+- also: []
+  stage: system
   theme: theme.liquid_cooling
   tier: downstream
-- stage: system
+- also: []
+  stage: system
   theme: theme.nvidia
   tier: downstream
 relations:

@@ -37,18 +37,20 @@ segments:
   revenue_share_pct: 100
 main_theme: theme.ai_server
 themes:
-- stage: components
+- also: []
+  stage: components
   theme: theme.ai_server
   tier: midstream
-- stage: equipment
+- also: []
+  stage: equipment
   theme: theme.data_center
   tier: upstream
-- stage: parts
+- also:
+  - stage: modules
+    tier: midstream
+  stage: parts
   theme: theme.liquid_cooling
   tier: upstream
-- stage: modules
-  theme: theme.liquid_cooling
-  tier: midstream
 website: http://www.forcecon.com
 tax_id: '16266820'
 incorporated: '1997-11-13'

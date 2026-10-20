@@ -8,12 +8,127 @@ industry:
   l0_code: '27'
   l0_name: 通信網路業
   l0_name_en: Communications and Internet
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.battery
+  l3_name: 電池與電池模組
+  l3_name_en: Batteries & Battery Modules
+primary_chain_position: not_applicable
+summary_short: 透過子公司FDK銷售電池與電子裝置，另製造機構整合元件及汽車零組件。
+summary_long: 閎暉原有業務包括機構整合元件與汽車零組件，產品涵蓋彩色矽膠錶帶、異材質複合成型元件、汽車內飾與開關，以及開發中的車用曲面玻璃蓋板。公司持有FDK株式會社45%股權，並自2026年8月底將其營收納入合併報表；FDK主要製造、銷售電池及電子裝置。依2026年9月單月揭露，電池相關產品占合併營收68.5%，電子裝置占13.2%，機構整合元件占9.7%，汽車零組件占8.6%，當月營收結構已以電池業務為主。
+segments:
+- evidence_ids:
+  - e1
+  id: battery
+  name: 電池相關產品
+  period: 2026-09（單月）
+  revenue_share_pct: 68.5
+- evidence_ids:
+  - e1
+  id: electronic_devices
+  name: 電子裝置
+  period: 2026-09（單月）
+  revenue_share_pct: 13.2
+- evidence_ids:
+  - e1
+  id: mechanical_components
+  name: 機構整合元件
+  period: 2026-09（單月）
+  revenue_share_pct: 9.7
+- evidence_ids:
+  - e1
+  id: automotive_parts
+  name: 汽車零組件
+  period: 2026-09（單月）
+  revenue_share_pct: 8.6
+relations:
+  subsidiaries:
+  - as_of: 2026-09
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股45%的重要子公司
+    details:
+    - 持股45%的重要子公司
+    edge: e6f0527e8b5d1
+    evidence_level: primary
+    id: jp.6955
+    name: FDK株式會社
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.silitech.com
 tax_id: '12956063'
 incorporated: '2001-10-26'
 listed: '2004-03-08'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3311#e1:
+    locator: 正文第一段，產品營收組成
+    published_date: '2026-10-10'
+    publisher: 閎暉實業股份有限公司
+    quote_check: found
+    title: 閎暉實業自結2026年9月全球合併營收新台幣12.12億元
+    url: https://www.silitech.com/ch/event_detail.aspx?ID=951234ea-edec-45ab-ac7b-e4c5dddca052
+  tw.3311#e2:
+    locator: 正文第二段
+    published_date: '2026-08-26'
+    publisher: 閎暉實業股份有限公司
+    quote_check: found
+    title: 閎暉認購FDK可轉換公司債 深化策略合作並擴大能源事業布局
+    url: https://www.silitech.com/ch/event_detail.aspx?ID=f21d04e9-dc45-4b8f-8231-e31ac3c74132
+  tw.3311#e3:
+    locator: 正文第一段，合併範圍說明
+    published_date: '2026-10-10'
+    publisher: 閎暉實業股份有限公司
+    quote_check: found
+    title: 閎暉實業自結2026年9月全球合併營收新台幣12.12億元
+    url: https://www.silitech.com/ch/event_detail.aspx?ID=951234ea-edec-45ab-ac7b-e4c5dddca052
+  tw.3311#e4:
+    locator: 頁首技術說明
+    published_date: null
+    publisher: 閎暉實業股份有限公司
+    quote_check: found
+    title: 異材質結合成型
+    url: https://www.silitech.com/CH/material.aspx
+  tw.3311#e5:
+    locator: 頁首產品介紹
+    published_date: null
+    publisher: 閎暉實業股份有限公司
+    quote_check: found
+    title: 彩色矽膠錶帶
+    url: https://www.silitech.com/CH/watch.aspx
+  tw.3311#e6:
+    locator: 控制面板製造技術
+    published_date: null
+    publisher: 閎暉實業股份有限公司
+    quote_check: found
+    title: 多元化的裝飾技術
+    url: https://www.silitech.com/CH/decoration.aspx
+  tw.3311#e7:
+    locator: 具觸控功能的曲面玻璃面板
+    published_date: null
+    publisher: 閎暉實業股份有限公司
+    quote_check: found
+    title: 曲面玻璃面板技術
+    url: https://www.silitech.com/CH/glass.aspx
+  tw.3311#e8:
+    locator: Overview第一段
+    published_date: '2026-03-27'
+    publisher: FDK CORPORATION
+    quote_check: found
+    title: Mass production and shipment of PFAS-free nickel-metal hydride batteries begins
+    url: https://www.fdk.com/whatsnew-e/release20260327-e.html
+  tw.3311#e9:
+    locator: Stock Information
+    published_date: null
+    publisher: FDK CORPORATION
+    quote_check: found
+    title: Corporate Profile
+    url: https://www.fdk.com/company_e/gaiyo-e.html

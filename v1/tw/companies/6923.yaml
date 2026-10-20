@@ -8,12 +8,113 @@ industry:
   l0_code: '35'
   l0_name: 綠能環保
   l0_name_en: Green Energy and Environmental Services
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.environment
+  l2_name: 環保服務
+  l2_name_en: Environmental Services
+  l3: env.waste
+  l3_name: 廢棄物處理與資源回收
+  l3_name_en: Waste Management & Recycling
+primary_chain_position: not_applicable
+summary_short: 以事業廢棄物焚化處理、資源回收及銅粉銷售為主要收入來源。
+summary_long: 中台以事業廢棄物處理與資源回收服務為主要業務，透過焚化處理回收熱能發電，並處理廢光源與含汞廢棄物。公司亦將廢印刷電路板資源化，生產銅粉產品，另提供環境整治工程服務。依2026年9月法說簡報，2026年上半年營收組成為焚化處理等54%、回收處理26%、銷售銅粉等19%、環境工程1%，焚化處理等為最大來源。新技術方面，廢鋰電池前處理與材料回收列為研發項目，尚處技術成熟度驗證階段。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_incineration
+  name: 焚化處理等
+  period: 2026年上半年
+  revenue_share_pct: 54
+- evidence_ids:
+  - e2
+  id: seg_recycling
+  name: 回收處理
+  period: 2026年上半年
+  revenue_share_pct: 26
+- evidence_ids:
+  - e2
+  id: seg_material_sales
+  name: 銷售銅粉等
+  period: 2026年上半年
+  revenue_share_pct: 19
+- evidence_ids:
+  - e2
+  id: seg_remediation
+  name: 環境工程
+  period: 2026年上半年
+  revenue_share_pct: 1
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資持有的投資控股子公司
+    details:
+    - 全資持有的投資控股子公司
+    edge: e80bf0d8d8fba
+    evidence_level: primary
+    id: org.chung-tai-investment-co-ltd
+    name: CHUNG TAI INVESTMENT CO., LTD
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.chinalab.com.tw/index.html
 tax_id: '12862116'
 incorporated: '2001-05-09'
 listed: '2024-09-25'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6923#e2:
+    locator: 第20頁「營收占比」堆疊圖，2026Q2欄：銷售銅粉等19%、回收處理26%、焚化處理等54%、環境工程1%
+    published_date: null
+    publisher: 中台資源科技股份有限公司
+    quote_check: unreachable
+    title: 115年9月法人說明會簡報
+    url: https://mopsov.twse.com.tw/nas/STR/692320260924M002.pdf
+  tw.6923#e3:
+    locator: 焚化熱能發電及全方位處理研發中心
+    published_date: null
+    publisher: 中台資源科技股份有限公司
+    quote_check: found
+    title: 中台資源科技官網—解決方案
+    url: https://www.chinalab.com.tw/index.html
+  tw.6923#e4:
+    locator: 廢光源資源化：設備介紹及汞產品
+    published_date: null
+    publisher: 中台資源科技股份有限公司
+    quote_check: found
+    title: 服務項目—廢光源資源化
+    url: https://www.chinalab.com.tw/service-intro.html
+  tw.6923#e5:
+    locator: 銅粉產品
+    published_date: null
+    publisher: 中台資源科技股份有限公司
+    quote_check: found
+    title: 產品專區—資源化產品
+    url: https://www.chinalab.com.tw/service-case.html
+  tw.6923#e6:
+    locator: 第5頁主要經營業務
+    published_date: null
+    publisher: 中台資源科技股份有限公司
+    quote_check: found
+    title: 115年9月法人說明會簡報
+    url: https://mopsov.twse.com.tw/nas/STR/692320260924M002.pdf
+  tw.6923#e7:
+    locator: 第24頁「新技術回收與研發布局」；同欄說明持續進行技術成熟度驗證
+    published_date: null
+    publisher: 中台資源科技股份有限公司
+    quote_check: found
+    title: 115年9月法人說明會簡報
+    url: https://mopsov.twse.com.tw/nas/STR/692320260924M002.pdf
+  tw.6923#e8:
+    locator: 第127頁投資事業表
+    published_date: '2026-05-13'
+    publisher: 中台資源科技股份有限公司
+    quote_check: found
+    title: 2025 Annual Report
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52663/2026/RNS/52663_rns_2026-05-13_4f20e82f-9249-4000-b8ff-8c5b7f182374.pdf

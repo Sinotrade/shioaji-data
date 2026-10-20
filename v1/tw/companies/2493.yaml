@@ -49,10 +49,12 @@ segments:
   revenue_share_pct: 2.56
 main_theme: theme.photoresist
 themes:
-- stage: make
+- also: []
+  stage: make
   theme: theme.photoresist
   tier: midstream
-- stage: packaging
+- also: []
+  stage: packaging
   theme: theme.cpo
   tier: midstream
 relations:

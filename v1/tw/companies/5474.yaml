@@ -8,12 +8,102 @@ industry:
   l0_code: '25'
   l0_name: 電腦及週邊設備業
   l0_name_en: Computer and Peripheral Equipment
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.hardware
+  l2_name: 電腦與硬體
+  l2_name_en: Computers & Hardware
+  l3: hw.peripheral
+  l3_name: 周邊與輸入裝置
+  l3_name_en: Peripherals & Input Devices
+primary_chain_position: midstream
+summary_short: 聰泰以影像擷取、視訊轉換與影音串流設備為主，另提供邊緣AI平台及軟體。
+summary_long: 聰泰以影像擷取卡、擷取盒、視訊轉換器及影音串流編碼器為主要產品，支援 PCIe、M.2、USB 與 AV over IP 等介面。2024 年視訊產品占營收 99.84%，其他業務占 0.16%。影像產品應用於廣播、工控、教育、安防、交通及醫療。另提供 Pandora 邊緣 AI 運算平台，整合 Jetson Orin 系列模組，並以 NexVDO SDK 提供擷取、錄影、串流與 AI 分析工具。機器人平台涵蓋運算與感測整合，官網亦列有無人機巡檢及路徑規劃應用。
+segments:
+- evidence_ids:
+  - e1
+  id: video
+  name: 視訊產品
+  period: '2024'
+  revenue_share_pct: 99.84
+- evidence_ids:
+  - e1
+  id: other
+  name: 其他
+  period: '2024'
+  revenue_share_pct: 0.16
+main_theme: theme.robotics
+themes:
+- also: []
+  stage: control
+  theme: theme.robotics
+  tier: midstream
+- also: []
+  stage: modules
+  theme: theme.drone
+  tier: midstream
 website: https://www.yuan.com.tw
 tax_id: '23902678'
 incorporated: '1990-10-01'
 listed: '2001-03-20'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.5474#e1:
+    locator: 第91頁，目前之主要產品及營業比重
+    published_date: '2025-05-20'
+    publisher: 聰泰科技開發股份有限公司
+    quote_check: found
+    title: 聰泰科技開發股份有限公司一一三年度年報
+    url: https://www.yuan.com.tw/investor/down-load-annual-reports?id=71
+  tw.5474#e2:
+    locator: 公司概況產品介紹
+    published_date: null
+    publisher: 聰泰科技開發股份有限公司
+    quote_check: found
+    title: 公司概況 Fundamentals
+    url: https://www.yuan.com.tw/zh-tw/investor/fundamentals
+  tw.5474#e3:
+    locator: 產品應用領域
+    published_date: null
+    publisher: 聰泰科技開發股份有限公司
+    quote_check: found
+    title: 公司概況 Fundamentals
+    url: https://www.yuan.com.tw/zh-tw/investor/fundamentals
+  tw.5474#e4:
+    locator: 產品介紹首段；發布日見官網產品新聞索引
+    published_date: '2024-11-19'
+    publisher: 聰泰科技開發股份有限公司
+    quote_check: found
+    title: Discover Generative AI at the Edge with Pandora
+    url: https://www.yuan.com.tw/newscontent/156
+  tw.5474#e5:
+    locator: Discover Generative AI at the Edge
+    published_date: null
+    publisher: 聰泰科技開發股份有限公司
+    quote_check: found
+    title: Pandora
+    url: https://www.yuan.com.tw/pandora
+  tw.5474#e6:
+    locator: Build Professional Video AI Solutions with NexVDO SDK
+    published_date: null
+    publisher: 聰泰科技開發股份有限公司
+    quote_check: found
+    title: Pandora
+    url: https://www.yuan.com.tw/pandora
+  tw.5474#e7:
+    locator: 產品介紹首段與Key Features；發布日見官網產品新聞索引
+    published_date: '2025-12-29'
+    publisher: 聰泰科技開發股份有限公司
+    quote_check: found
+    title: YUAN Unveils High-Performance Robotic Edge-AI Platform ARC6N0 T5X powered by NVIDIA Jetson Thor
+    url: https://www.yuan.com.tw/newscontent/212
+  tw.5474#e8:
+    locator: Target Applications & Robotic Forms；發布日見官網Robot & Drone索引
+    published_date: '2026-07-17'
+    publisher: 聰泰科技開發股份有限公司
+    quote_check: found
+    title: 'YUAN Robotics Platform: Full-Stack Hardware & NexVDO SDK'
+    url: https://www.yuan.com.tw/newscontent/351

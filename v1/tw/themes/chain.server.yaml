@@ -64,7 +64,7 @@ members:
 - id: tw.2317
   detail: 雲端網路為最大營收類別，製造AI伺服器機櫃，並有液冷及AI工廠建置業務。
   as_of: '2026-10-14'
-  evidence: &id001
+  evidence:
   - tw.2317#e02
   - tw.2317#e03
   - tw.2317#e04
@@ -76,7 +76,10 @@ members:
 - id: tw.2317
   detail: 雲端網路為最大營收類別，製造AI伺服器機櫃，並有液冷及AI工廠建置業務。
   as_of: '2026-10-14'
-  evidence: *id001
+  evidence:
+  - tw.2317#e02
+  - tw.2317#e03
+  - tw.2317#e04
   confidence: ai_cross_checked
   source: classification
   stage: components
@@ -109,7 +112,7 @@ members:
 - id: tw.2376
   detail: 伺服器占營收61.64%為最大宗，另有主機板與顯示卡業務。
   as_of: '2026-10-14'
-  evidence: &id002
+  evidence:
   - tw.2376#e02
   - tw.2376#e32
   - tw.2376#e05
@@ -122,7 +125,11 @@ members:
 - id: tw.2376
   detail: 伺服器占營收61.64%為最大宗，另有主機板與顯示卡業務。
   as_of: '2026-10-14'
-  evidence: *id002
+  evidence:
+  - tw.2376#e02
+  - tw.2376#e32
+  - tw.2376#e05
+  - tw.2376#e06
   confidence: ai_cross_checked
   source: classification
   stage: components
@@ -131,7 +138,7 @@ members:
 - id: tw.2382
   detail: 伺服器占營收約八成，以系統製造整合為主，另提供側車式液冷設備。
   as_of: '2026-10-14'
-  evidence: &id003
+  evidence:
   - tw.2382#e.server_share
   - tw.2382#e.datacenter
   confidence: ai_cross_checked
@@ -142,7 +149,9 @@ members:
 - id: tw.2382
   detail: 伺服器占營收約八成，以系統製造整合為主，另提供側車式液冷設備。
   as_of: '2026-10-14'
-  evidence: *id003
+  evidence:
+  - tw.2382#e.server_share
+  - tw.2382#e.datacenter
   confidence: ai_cross_checked
   source: classification
   stage: components
@@ -209,7 +218,7 @@ members:
 - id: tw.3017
   detail: 散熱占營收63.60%為主，另有系統組裝及完整液冷機櫃整合交付業務。
   as_of: '2026-10-14'
-  evidence: &id004
+  evidence:
   - tw.3017#e2
   - tw.3017#e6
   - tw.3017#e7
@@ -221,7 +230,10 @@ members:
 - id: tw.3017
   detail: 散熱占營收63.60%為主，另有系統組裝及完整液冷機櫃整合交付業務。
   as_of: '2026-10-14'
-  evidence: *id004
+  evidence:
+  - tw.3017#e2
+  - tw.3017#e6
+  - tw.3017#e7
   confidence: ai_cross_checked
   source: classification
   stage: odm
@@ -305,6 +317,18 @@ members:
   - tw.3324#e03
   - tw.3324#e04
   - tw.3324#e05
+  confidence: ai_cross_checked
+  source: classification
+  stage: components
+  tier: midstream
+  stage_role: primary
+- id: tw.3338
+  detail: 散熱模組占營收85.37%，主要提供AI伺服器液冷模組、CDU及冷板等散熱零組件。
+  as_of: '2026-10-20'
+  evidence:
+  - tw.3338#e2
+  - tw.3338#e3
+  - tw.3338#e4
   confidence: ai_cross_checked
   source: classification
   stage: components
@@ -409,7 +433,7 @@ members:
 - id: tw.3693
   detail: 伺服器機箱占營收35.61%，為最大單項；亦製造伺服器系統與儲存平台。
   as_of: '2026-10-15'
-  evidence: &id005
+  evidence:
   - tw.3693#e2
   - tw.3693#e3
   - tw.3693#e4
@@ -422,7 +446,11 @@ members:
 - id: tw.3693
   detail: 伺服器機箱占營收35.61%，為最大單項；亦製造伺服器系統與儲存平台。
   as_of: '2026-10-15'
-  evidence: *id005
+  evidence:
+  - tw.3693#e2
+  - tw.3693#e3
+  - tw.3693#e4
+  - tw.3693#e11
   confidence: ai_cross_checked
   source: classification
   stage: odm
@@ -463,6 +491,18 @@ members:
   stage: components
   tier: midstream
   stage_role: primary
+- id: tw.5465
+  detail: 機殼及零組件占營收56%，電源供應器占42%，均屬伺服器零組件階段。
+  as_of: '2026-10-20'
+  evidence:
+  - tw.5465#e2
+  - tw.5465#e3
+  - tw.5465#e4
+  confidence: ai_cross_checked
+  source: classification
+  stage: components
+  tier: midstream
+  stage_role: primary
 - id: tw.6115
   detail: 電源線連接器占營收95.39%，產品明列AI伺服器用電源線連接器。
   as_of: '2026-10-18'
@@ -470,6 +510,44 @@ members:
   - tw.6115#e1
   - tw.6115#e3
   - tw.6115#e6
+  confidence: ai_cross_checked
+  source: classification
+  stage: components
+  tier: midstream
+  stage_role: primary
+- id: tw.6117
+  detail: 伺服器占營收58.79%，提供L11整合與整機組裝；另有機殼、電源及散熱業務，惟伺服器營收未拆分。
+  as_of: '2026-10-20'
+  evidence:
+  - tw.6117#e1
+  - tw.6117#e2
+  - tw.6117#e3
+  - tw.6117#e4
+  confidence: ai_cross_checked
+  source: classification
+  stage: odm
+  tier: downstream
+  stage_role: primary
+- id: tw.6117
+  detail: 伺服器占營收58.79%，提供L11整合與整機組裝；另有機殼、電源及散熱業務，惟伺服器營收未拆分。
+  as_of: '2026-10-20'
+  evidence:
+  - tw.6117#e1
+  - tw.6117#e2
+  - tw.6117#e3
+  - tw.6117#e4
+  confidence: ai_cross_checked
+  source: classification
+  stage: components
+  tier: midstream
+  stage_role: also
+- id: tw.6124
+  detail: 熱導管及熱導板占營收87.29%，產品應用含伺服器，屬散熱零組件。
+  as_of: '2026-10-20'
+  evidence:
+  - tw.6124#e2
+  - tw.6124#e3
+  - tw.6124#e4
   confidence: ai_cross_checked
   source: classification
   stage: components
@@ -629,6 +707,17 @@ members:
   stage: components
   tier: midstream
   stage_role: primary
+- id: tw.6895
+  detail: AI液冷零組件占營收69.15%，為最大來源，產品含冷板、分岐管及波紋管，屬散熱零組件。
+  as_of: '2026-10-20'
+  evidence:
+  - tw.6895#e1
+  - tw.6895#e5
+  confidence: ai_cross_checked
+  source: classification
+  stage: components
+  tier: midstream
+  stage_role: primary
 - id: tw.6933
   detail: AI高效能運算方案占營收58.89%，主要設計製造與整合伺服器及液冷整機櫃。
   as_of: '2026-10-18'
@@ -654,7 +743,7 @@ members:
 - id: tw.7805
   detail: 以自主設計生產NAS整機為主，中小企業NAS占46.77%；另提供雲端儲存服務。
   as_of: '2026-10-15'
-  evidence: &id006
+  evidence:
   - tw.7805#e_nas
   - tw.7805#e_mix
   confidence: ai_cross_checked
@@ -665,7 +754,9 @@ members:
 - id: tw.7805
   detail: 以自主設計生產NAS整機為主，中小企業NAS占46.77%；另提供雲端儲存服務。
   as_of: '2026-10-15'
-  evidence: *id006
+  evidence:
+  - tw.7805#e_nas
+  - tw.7805#e_mix
   confidence: ai_cross_checked
   source: classification
   stage: datacenter
@@ -708,4 +799,4 @@ members:
   stage: components
   tier: midstream
   stage_role: primary
-as_of: '2026-10-18'
+as_of: '2026-10-20'

@@ -37,13 +37,16 @@ segments:
   revenue_share_pct: 100
 main_theme: theme.cowos
 themes:
-- stage: materials
+- also: []
+  stage: materials
   theme: theme.cowos
   tier: upstream
-- stage: equipment_materials
+- also: []
+  stage: equipment_materials
   theme: theme.hbm
   tier: upstream
-- stage: wafer
+- also: []
+  stage: wafer
   theme: theme.silicon_wafer
   tier: midstream
 relations:

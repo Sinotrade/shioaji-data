@@ -4,7 +4,7 @@
 
 - 英文：NVIDIA Supply Chain
 - 別名：NVIDIA、輝達
-- 成員：39 家
+- 成員：40 家
 - 完整成員與證據見同目錄同名 YAML，或 themes.json
 
 ## 晶圓與封測（上游，4 家）
@@ -16,7 +16,7 @@
 | [3707](../companies/3707.md) | 漢磊 | 氮化鎵產品進入NVIDIA AI供應鏈 |
 | [3711](../companies/3711.md) | 日月光投控 | 子公司矽品為NVIDIA提供封測支援 |
 
-## 零組件與板材（中游，15 家）
+## 零組件與板材（中游，16 家）
 
 | 代號 | 名稱 | 說明 |
 | --- | --- | --- |
@@ -33,6 +33,7 @@
 | [6197](../companies/6197.md) | 佳必琪 | NVIDIA MGX平台電源與Busbar互連 |
 | [6584](../companies/6584.md) | 南俊國際 | NVIDIA MGX平台導軌 |
 | [6805](../companies/6805.md) | 富世達 | GB300平台NV QD快接頭 |
+| [6862](../companies/6862.md) | 三集瑞-KY | NVIDIA平台用低高度TLVR |
 | [8210](../companies/8210.md) | 勤誠 | NVIDIA MGX平台機構方案 |
 | [8996](../companies/8996.md) | 高力 | 子公司高力熱能科技之Vera Rubin NVL72參考設計相容Manifold |
 

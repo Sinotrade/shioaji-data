@@ -8,7 +8,51 @@ industry:
   l0_code: '22'
   l0_name: 生技醫療業
   l0_name_en: Biotechnology and Medical Care
-primary_chain_position: unknown
+  l1: health
+  l1_name: 醫療保健
+  l1_name_en: Healthcare
+  l2: health.devices
+  l2_name: 醫療器材與服務
+  l2_name_en: Medical Devices & Services
+  l3: med.consumables
+  l3_name: 醫療耗材
+  l3_name_en: Medical Consumables
+chain: chain.biotech
+chain_stage:
+  agreement: both
+  also: []
+  reason: 以醫療耗材製造為核心，主要營收來自管類、密閉式抽痰管與傷口引流產品。
+  stage: manufacturing
+  stage_name: 製造與代工
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 製造與銷售醫療管類、密閉式抽痰管、傷口引流套等醫療耗材。
+summary_long: 太醫以醫療耗材的製造與銷售為核心，產品涵蓋醫療管類、密閉式抽痰管、傷口引流套、客製化套組與袋類。2026年上半年，管類營收占比約26%、密閉式抽痰管約20%、傷口引流約13%、客製化套組約10%。密閉式抽痰套由接頭組件、真空控制閥及覆保護膜的抽痰管組成；真空傷口引流套供單一病人使用，用於收集傷口廢液。袋類產品包括用於收集尿液的精密尿袋。2026年第2季財報明列可成科技為母公司。
+segments:
+- evidence_ids:
+  - e3
+  id: tubings
+  name: 管類
+  period: 2026年上半年
+  revenue_share_pct: 26
+- evidence_ids:
+  - e3
+  id: closed_suction
+  name: 密閉式抽痰管
+  period: 2026年上半年
+  revenue_share_pct: 20
+- evidence_ids:
+  - e3
+  id: wound_drainage
+  name: 傷口引流
+  period: 2026年上半年
+  revenue_share_pct: 13
+- evidence_ids:
+  - e4
+  id: custom_kits
+  name: 客製化套組
+  period: 2026年上半年
+  revenue_share_pct: 10
 relations:
   parents:
   - as_of: '2026-06-30'
@@ -17,6 +61,7 @@ relations:
     detail: 實質控制並納入合併的醫療器材子公司
     details:
     - 實質控制並納入合併的醫療器材子公司
+    - 財報揭露之母公司
     edge: e59d1e7100f10
     evidence_level: primary
     id: tw.2474
@@ -24,12 +69,61 @@ relations:
     ranking_basis: unranked
     share_basis: null
     share_pct: null
-    weight: 1
+    weight: 2
 website: http://www.pahsco.com.tw
 tax_id: '20765714'
 incorporated: '1977-08-06'
 listed: '2004-02-09'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4126#e2:
+    locator: 關於我們首段
+    published_date: null
+    publisher: 太平洋醫材股份有限公司
+    quote_check: found
+    title: 關於我們
+    url: https://www.pahsco.com.tw/tw/about/
+  tw.4126#e3:
+    locator: 產品組合段落
+    published_date: '2026-08-18'
+    publisher: 東森財經新聞／財訊快報，記者何美如
+    quote_check: found
+    title: 個股：太醫(4126)上半年EPS 2.97元，聚焦北美拓展，下半年步旺季展望正向
+    url: https://fnc.ebc.net.tw/fncnews/stock/216545
+  tw.4126#e4:
+    locator: 產品組合段落
+    published_date: '2026-08-18'
+    publisher: 東森財經新聞／財訊快報，記者何美如
+    quote_check: found
+    title: 個股：太醫(4126)上半年EPS 2.97元，聚焦北美拓展，下半年步旺季展望正向
+    url: https://fnc.ebc.net.tw/fncnews/stock/216545
+  tw.4126#e5:
+    locator: 產品說明
+    published_date: null
+    publisher: 太平洋醫材股份有限公司
+    quote_check: found
+    title: 密閉式抽痰套
+    url: https://www.pahsco.com.tw/tw/product-detail/Closed-Suction-System-tn/
+  tw.4126#e6:
+    locator: 真空傷口引流套（漢堡型）產品說明
+    published_date: null
+    publisher: 太平洋醫材股份有限公司
+    quote_check: found
+    title: 真空傷口引流套
+    url: https://www.pahsco.com.tw/tw/product/respiratory-therapy/
+  tw.4126#e7:
+    locator: 精密尿袋產品說明
+    published_date: null
+    publisher: 太平洋醫材股份有限公司
+    quote_check: found
+    title: 袋類－產品介紹
+    url: https://www.pahsco.com.tw/tw/product/bags/
+  tw.4126#e8:
+    locator: 第33頁，附註二六「關係人交易」
+    published_date: null
+    publisher: 太平洋醫材股份有限公司
+    quote_check: found
+    title: 民國115及114年第2季財務報告暨會計師核閱報告
+    url: https://www.pahsco.com.tw/tw/investors/finance-download/1/finance-2026/data_file_individual_q2/

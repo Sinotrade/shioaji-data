@@ -8,8 +8,67 @@ industry:
   l0_code: '22'
   l0_name: 生技醫療業
   l0_name_en: Biotechnology and Medical Care
-primary_chain_position: unknown
+  l1: health
+  l1_name: 醫療保健
+  l1_name_en: Healthcare
+  l2: health.devices
+  l2_name: 醫療器材與服務
+  l2_name_en: Medical Devices & Services
+  l3: med.devices
+  l3_name: 醫療器材
+  l3_name_en: Medical Devices
+chain: chain.biotech
+chain_stage:
+  agreement: both
+  also: []
+  reason: 醫療器材占營收77%，主營手術器械代工，製造範圍涵蓋零組件至完整組裝，並生產植入物。
+  stage: manufacturing
+  stage_name: 製造與代工
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 以醫療器材代工為主，另製造植入物、微波開關及精密扣件。
+summary_long: 鐿鈦從事醫療器材代工，產品涵蓋微創手術及機器人輔助手術器械，製造範圍由零組件延伸至完整組裝。植入物業務提供牙科、創傷等醫療植入產品。其他產品包括同軸微波開關、開關矩陣，以及螺絲、螺栓、螺帽等工業扣件。依2024年上半年已揭露資料，醫療器材占營收77%、精密扣件17%、微波開關6%，醫材為最大營收來源。2024年報導另指出，瑞鈦醫療器材由鐿鈦分割成立，鐿鈦當時持股57.9%。
+segments:
+- evidence_ids:
+  - e6
+  id: medical
+  name: 醫療器材
+  period: 2024H1
+  revenue_share_pct: 77
+- evidence_ids:
+  - e6
+  id: fasteners
+  name: 精密扣件
+  period: 2024H1
+  revenue_share_pct: 17
+- evidence_ids:
+  - e6
+  id: microwave
+  name: 微波開關
+  period: 2024H1
+  revenue_share_pct: 6
+main_theme: theme.robotics
+themes:
+- also: []
+  stage: components
+  theme: theme.robotics
+  tier: upstream
 relations:
+  subsidiaries:
+  - as_of: '2024-09-04'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股過半之醫療器材子公司
+    details:
+    - 持股過半之醫療器材子公司
+    edge: ea47da0435dc9
+    evidence_level: media
+    id: org.瑞鈦醫療器材
+    name: 瑞鈦醫療器材
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   transactions:
   - amount: null
     as_of: '2026-06-26'
@@ -36,7 +95,49 @@ website: www.intai.com.tw
 tax_id: '27473348'
 incorporated: '2004-10-21'
 listed: '2012-11-15'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4163#e2:
+    locator: Medical／One-Stop Manufacturing Solution
+    published_date: null
+    publisher: 鐿鈦科技股份有限公司
+    quote_check: found
+    title: Medical Device Contract Manufacturing
+    url: https://www.intai.com.tw/en/market-and-products/medical
+  tw.4163#e3:
+    locator: Customized Implantable Product Development
+    published_date: null
+    publisher: 鐿鈦科技股份有限公司
+    quote_check: found
+    title: Dental & Orthopedic Implant Manufacturing
+    url: https://www.intai.com.tw/en/market-and-products/implant
+  tw.4163#e4:
+    locator: Tailored RF Testing Solution for Every Markets
+    published_date: null
+    publisher: 鐿鈦科技股份有限公司
+    quote_check: found
+    title: High-Frequency RF & Microwave Components
+    url: https://www.intai.com.tw/en/market-and-products/rf-microwave
+  tw.4163#e5:
+    locator: Industrial Application 首段
+    published_date: null
+    publisher: 鐿鈦科技股份有限公司
+    quote_check: found
+    title: Industrial Application
+    url: https://www.intai.com.tw/en/market-and-products/industrial-application
+  tw.4163#e6:
+    locator: 二、醫療器材營收占比穩居七成之上
+    published_date: '2024-09-04'
+    publisher: 生技投資第一站－Genet觀點
+    quote_check: found
+    title: 《Genet法說筆記》鐿鈦科技(4163)上半年營收12.08億元年減5%，EPS3.01元較去年同期4.52元減33%
+    url: https://www.genetinfo.com/investment/featured/item/82248.html
+  tw.4163#e7:
+    locator: 一、瞄準日本龐大銀髮市場今年設立子公司
+    published_date: '2024-09-04'
+    publisher: 生技投資第一站－Genet觀點
+    quote_check: found
+    title: 《Genet法說筆記》鐿鈦科技(4163)上半年營收12.08億元年減5%，EPS3.01元較去年同期4.52元減33%
+    url: https://www.genetinfo.com/investment/featured/item/82248.html

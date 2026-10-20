@@ -43,16 +43,20 @@ segments:
   revenue_share_pct: 42.5
 main_theme: theme.data_center
 themes:
-- stage: it
+- also: []
+  stage: it
   theme: theme.data_center
   tier: midstream
-- stage: substrate
+- also: []
+  stage: substrate
   theme: theme.gan
   tier: upstream
-- stage: epi
+- also: []
+  stage: epi
   theme: theme.vcsel
   tier: upstream
-- stage: substrate
+- also: []
+  stage: substrate
   theme: theme.inp
   tier: upstream
 relations:

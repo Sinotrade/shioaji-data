@@ -52,13 +52,16 @@ segments:
   revenue_share_pct: null
 main_theme: theme.ai_server
 themes:
-- stage: board_materials
+- also: []
+  stage: board_materials
   theme: theme.ai_server
   tier: upstream
-- stage: materials
+- also: []
+  stage: materials
   theme: theme.cowos
   tier: upstream
-- stage: substrate
+- also: []
+  stage: substrate
   theme: theme.abf
   tier: midstream
 relations:

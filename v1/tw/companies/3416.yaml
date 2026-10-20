@@ -41,10 +41,12 @@ segments:
   revenue_share_pct: 1.04
 main_theme: theme.robotics
 themes:
-- stage: control
+- also: []
+  stage: control
   theme: theme.robotics
   tier: midstream
-- stage: modules
+- also: []
+  stage: modules
   theme: theme.drone
   tier: midstream
 relations:

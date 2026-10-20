@@ -22,10 +22,12 @@ summary_short: 提供工業電腦、嵌入式系統、網通設備、醫療影�
 summary_long: 威強電提供工業電腦、嵌入式系統、邊緣運算平台及平板電腦，並承作ODM/OEM客製化服務，應用於智慧製造、網路通訊與數位醫療。網通產品包含PUZZLE系列，涵蓋防火牆、無線閘道器與網路安全應用；醫療產品包括EndoCap-3588影像擷取錄影系統。邊緣AI產品包括搭載NVIDIA Jetson Thor的GAIA-5000伺服器，另提供自主移動機器人控制平台。
 main_theme: theme.ai_server
 themes:
-- stage: assembly
+- also: []
+  stage: assembly
   theme: theme.ai_server
   tier: downstream
-- stage: control
+- also: []
+  stage: control
   theme: theme.robotics
   tier: midstream
 relations:

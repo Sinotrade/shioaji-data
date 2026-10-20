@@ -58,19 +58,20 @@ segments:
   revenue_share_pct: 8.5
 main_theme: theme.ai_server
 themes:
-- stage: components
+- also: []
+  stage: components
   theme: theme.ai_server
   tier: midstream
-- stage: parts
+- also:
+  - stage: modules
+    tier: midstream
+  - stage: system
+    tier: downstream
+  stage: parts
   theme: theme.liquid_cooling
   tier: upstream
-- stage: modules
-  theme: theme.liquid_cooling
-  tier: midstream
-- stage: system
-  theme: theme.liquid_cooling
-  tier: downstream
-- stage: components
+- also: []
+  stage: components
   theme: theme.nvidia
   tier: midstream
 relations:

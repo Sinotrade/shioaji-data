@@ -58,10 +58,12 @@ segments:
   revenue_share_pct: 4.8
 main_theme: theme.ev
 themes:
-- stage: parts
+- also: []
+  stage: parts
   theme: theme.ev
   tier: midstream
-- stage: application
+- also: []
+  stage: application
   theme: theme.sic
   tier: downstream
 relations:
@@ -82,6 +84,21 @@ relations:
     share_pct: null
     weight: 2
   subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 母公司
+    details:
+    - 母公司
+    - 台灣茂矽；直接子公司
+    edge: ed26b0010e327
+    evidence_level: primary
+    id: tw.2342
+    name: 茂矽
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 2
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
@@ -134,20 +151,6 @@ relations:
     evidence_level: primary
     id: org.rec-technology-corporation
     name: Rec Technology Corporation
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
-  - as_of: '2026-06-30'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 台灣茂矽；直接子公司
-    details:
-    - 台灣茂矽；直接子公司
-    edge: ed26b0010e327
-    evidence_level: primary
-    id: tw.2342
-    name: 茂矽
     ranking_basis: unranked
     share_basis: null
     share_pct: null

@@ -52,13 +52,16 @@ segments:
   revenue_share_pct: 2.36
 main_theme: theme.ev
 themes:
-- stage: parts
+- also: []
+  stage: parts
   theme: theme.ev
   tier: midstream
-- stage: modules
+- also: []
+  stage: modules
   theme: theme.drone
   tier: midstream
-- stage: display
+- also: []
+  stage: display
   theme: theme.mini_led
   tier: downstream
 relations:

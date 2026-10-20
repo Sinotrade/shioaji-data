@@ -8,13 +8,139 @@ industry:
   l0_code: '22'
   l0_name: 生技醫療業
   l0_name_en: Biotechnology and Medical Care
-primary_chain_position: unknown
+  l1: health
+  l1_name: 醫療保健
+  l1_name_en: Healthcare
+  l2: health.pharma
+  l2_name: 製藥與生技
+  l2_name_en: Pharmaceuticals & Biotech
+  l3: bio.new_drug
+  l3_name: 新藥研發
+  l3_name_en: New Drug Development
+chain: chain.biotech
+chain_stage:
+  agreement: both
+  also: []
+  reason: 以小分子新藥研發為主，透過授權及供貨取得收入，未明示自有製造或通路業務。
+  stage: rnd
+  stage_name: 研發與原料
+  tier: upstream
+primary_chain_position: upstream
+summary_short: 以小分子新藥研發為主，透過藥品授權與產品供貨取得收入。
+summary_long: 太景集團以小分子新藥研發為主要業務，商業模式包括藥品授權與產品供貨。旗下太捷信（奈諾沙星）為已上市的抗感染藥物；抗流感新藥Pixavir marboxil（TG-1000）則以抑制病毒搶帽機制為開發方向。研發產品另包括用於慢性腎臟病貧血的HIF-PHD抑制劑ISM-4808，以及開發非囊性纖維化型支氣管擴張症適應症的DPP1抑制劑TG-4318。集團持有太景生物科技全部股權，並透過該子公司間接持有太景北京全部股權。
+relations:
+  subsidiaries:
+  - as_of: '2025-11-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團持股100%的子公司
+    details:
+    - 集團持股100%的子公司
+    edge: e090acb714e71
+    evidence_level: primary
+    id: org.taigen-biomedical-food
+    name: 太景生醫食品股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-09'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股100%的子公司，簡稱太景台灣
+    details:
+    - 持股100%的子公司，簡稱太景台灣
+    edge: eb8a9305daa0a
+    evidence_level: primary
+    id: org.taigen-biotechnology
+    name: 太景生物科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-09'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過太景台灣及第三地公司間接持有的全資子公司
+    details:
+    - 透過太景台灣及第三地公司間接持有的全資子公司
+    edge: e9a91df9de1b1
+    evidence_level: primary
+    id: org.taigen-biotechnology-beijing
+    name: 太景醫藥研發(北京)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.taigenbiotech.com/
 tax_id: '31982484'
 incorporated: '2005-09-15'
 listed: '2014-01-17'
 foreign_registration: KY 開曼群島
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4157#e1:
+    locator: 關於太景
+    published_date: null
+    publisher: 太景生物科技
+    quote_check: found
+    title: 投資人關係
+    url: https://www.taigenbiotech.com/tw/investor
+  tw.4157#e2:
+    locator: 太景為何都沒有賺錢？
+    published_date: null
+    publisher: 太景生物科技
+    quote_check: found
+    title: 常見問題
+    url: https://www.taigenbiotech.com/tw/faq
+  tw.4157#e3:
+    locator: 太景第一個成功上市的藥物為何？
+    published_date: null
+    publisher: 太景生物科技
+    quote_check: found
+    title: 常見問題
+    url: https://www.taigenbiotech.com/tw/faq
+  tw.4157#e4:
+    locator: 發展計畫
+    published_date: null
+    publisher: 太景生物科技
+    quote_check: found
+    title: 流感抗病毒新藥 TG-1000
+    url: https://www.taigenbiotech.com/tw/product/detail/流感抗病毒新藥-TG-1000
+  tw.4157#e5:
+    locator: 發展計畫、開發中適應症及開發進展
+    published_date: null
+    publisher: 太景生物科技
+    quote_check: found
+    title: ISM-4808
+    url: https://www.taigenbiotech.com/tw/product/detail/ISM-4808
+  tw.4157#e6:
+    locator: 發展計畫及開發中適應症
+    published_date: null
+    publisher: 太景生物科技
+    quote_check: found
+    title: TG-4318
+    url: https://www.taigenbiotech.com/tw/product/detail/TG-4318
+  tw.4157#e7:
+    locator: 2026-03-09，第八屆第8次董事會，第2點
+    published_date: null
+    publisher: 太景生物科技
+    quote_check: found
+    title: 董事會暨重要決議
+    url: https://www.taigenbiotech.com/tw/about/board
+  tw.4157#e8:
+    locator: 2026-03-09，第八屆第8次董事會，第12點
+    published_date: null
+    publisher: 太景生物科技
+    quote_check: found
+    title: 董事會暨重要決議
+    url: https://www.taigenbiotech.com/tw/about/board
+  tw.4157#e9:
+    locator: 2025-11-13，第八屆第5次董事會，第13點
+    published_date: null
+    publisher: 太景生物科技
+    quote_check: found
+    title: 董事會暨重要決議
+    url: https://www.taigenbiotech.com/tw/about/board

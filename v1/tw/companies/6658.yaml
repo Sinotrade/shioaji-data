@@ -8,12 +8,312 @@ industry:
   l0_code: '31'
   l0_name: 其他電子業
   l0_name_en: Other Electronic
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.hardware
+  l2_name: 電腦與硬體
+  l2_name_en: Computers & Hardware
+  l3: hw.instruments
+  l3_name: 量測、檢測與科學儀器
+  l3_name_en: Test, Measurement & Scientific Instruments
+chain: chain.pcb
+chain_stage:
+  agreement: both
+  also: []
+  reason: 最大營收為AI機器視覺設備，提供PCB與ABF載板檢測、量測及濕製程設備。
+  stage: tools
+  stage_name: 設備與廠務
+  tier: upstream
+primary_chain_position: midstream
+summary_short: 提供機器視覺檢測、濕製程設備與生產智動化整合方案。
+summary_long: 聯策以機器視覺檢測、濕製程設備與生產智動化整合為主要業務。2025年合併營收中，AI機器視覺設備占41.17%，濕製程智慧化方案占29.04%，生產智動化整合占6.58%，印刷電路板表面處理占7.29%，其他占15.92%。產品包括玻璃／矽中介層自動光學檢測機、晶圓／面板槽式清洗蝕刻設備及i360智慧視覺系統。檢測設備應用涵蓋ABF載板與CoWoS先進封裝。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_vision
+  name: AI機器視覺設備
+  period: '2025'
+  revenue_share_pct: 41.17
+- evidence_ids:
+  - e3
+  id: seg_wet_process
+  name: 濕製程智慧化方案
+  period: '2025'
+  revenue_share_pct: 29.04
+- evidence_ids:
+  - e4
+  id: seg_automation
+  name: 生產智動化整合
+  period: '2025'
+  revenue_share_pct: 6.58
+- evidence_ids:
+  - e5
+  id: seg_surface
+  name: 印刷電路板表面處理
+  period: '2025'
+  revenue_share_pct: 7.29
+- evidence_ids:
+  - e6
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 15.92
+main_theme: theme.cowos
+themes:
+- also: []
+  stage: equipment
+  theme: theme.cowos
+  tier: upstream
+- also: []
+  stage: materials
+  theme: theme.abf
+  tier: upstream
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: ed8db2131aba6
+    evidence_level: primary
+    id: org.hk-synpower-ltd
+    name: HK Synpower Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: ed00b9084bc08
+    evidence_level: primary
+    id: org.syndia-india-private-limited
+    name: Syndia India Private Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: eb04249c1943e
+    evidence_level: primary
+    id: org.synpower-co-ltd
+    name: Synpower Co,. Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: e1e57830c98fb
+    evidence_level: primary
+    id: org.synthai-technology-thailand-company-limited
+    name: Synthai Technology (Thailand) Company Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 經HK Synpower持有的間接子公司
+    details:
+    - 經HK Synpower持有的間接子公司
+    edge: e3f1df15ecd89
+    evidence_level: primary
+    id: org.昆山聯策電子有限公司
+    name: 昆山聯策電子有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: e6926ef2fd5f3
+    evidence_level: primary
+    id: org.映利科技股份有限公司
+    name: 映利科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 經HK Synpower持有的間接子公司
+    details:
+    - 經HK Synpower持有的間接子公司
+    edge: e3f957acb02f2
+    evidence_level: primary
+    id: org.東莞市聯策貿易有限公司
+    name: 東莞市聯策貿易有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: e3674ee5ee412
+    evidence_level: primary
+    id: org.頎晶科技股份有限公司
+    name: 頎晶科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.synpower.com.tw
 tax_id: '13079649'
 incorporated: '2002-04-29'
 listed: '2023-11-02'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6658#e10:
+    locator: 產品說明
+    published_date: null
+    publisher: 聯策科技股份有限公司
+    quote_check: found
+    title: Wafer/Panel 全自動槽式清洗/蝕刻設備
+    url: https://www.synpower.com.tw/tw/Products_detail/1090/%E5%85%A8%E8%87%AA%E5%8B%95%E6%A7%BD%E5%BC%8F%E6%B8%85%E6%B4%97%E8%9D%95%E5%88%BB%E8%A8%AD%E5%82%99
+  tw.6658#e11:
+    locator: 產品說明
+    published_date: null
+    publisher: 聯策科技股份有限公司
+    quote_check: found
+    title: I360智慧視覺系統
+    url: https://www.synpower.com.tw/tw/Products_detail/1128/I360%E6%99%BA%E6%85%A7%E8%A6%96%E8%A6%BA%E7%B3%BB%E7%B5%B1
+  tw.6658#e12:
+    locator: 第18頁，附註十一，列入合併財務報表之子公司
+    published_date: null
+    publisher: 聯策科技股份有限公司
+    quote_check: found
+    title: 聯策科技股份有限公司及子公司民國115及114年第2季合併財務報表
+    url: https://www.synpower.com.tw/Download/inv_2/tw/%E5%AD%A3%E5%A0%B1_%E8%81%AF%E7%AD%96_2026Q2.pdf
+  tw.6658#e13:
+    locator: 第18頁，附註十一，列入合併財務報表之子公司
+    published_date: null
+    publisher: 聯策科技股份有限公司
+    quote_check: found
+    title: 聯策科技股份有限公司及子公司民國115及114年第2季合併財務報表
+    url: https://www.synpower.com.tw/Download/inv_2/tw/%E5%AD%A3%E5%A0%B1_%E8%81%AF%E7%AD%96_2026Q2.pdf
+  tw.6658#e14:
+    locator: 第18頁，附註十一，列入合併財務報表之子公司
+    published_date: null
+    publisher: 聯策科技股份有限公司
+    quote_check: found
+    title: 聯策科技股份有限公司及子公司民國115及114年第2季合併財務報表
+    url: https://www.synpower.com.tw/Download/inv_2/tw/%E5%AD%A3%E5%A0%B1_%E8%81%AF%E7%AD%96_2026Q2.pdf
+  tw.6658#e15:
+    locator: 第18頁，附註十一，列入合併財務報表之子公司
+    published_date: null
+    publisher: 聯策科技股份有限公司
+    quote_check: found
+    title: 聯策科技股份有限公司及子公司民國115及114年第2季合併財務報表
+    url: https://www.synpower.com.tw/Download/inv_2/tw/%E5%AD%A3%E5%A0%B1_%E8%81%AF%E7%AD%96_2026Q2.pdf
+  tw.6658#e16:
+    locator: 第18頁，附註十一，列入合併財務報表之子公司
+    published_date: null
+    publisher: 聯策科技股份有限公司
+    quote_check: found
+    title: 聯策科技股份有限公司及子公司民國115及114年第2季合併財務報表
+    url: https://www.synpower.com.tw/Download/inv_2/tw/%E5%AD%A3%E5%A0%B1_%E8%81%AF%E7%AD%96_2026Q2.pdf
+  tw.6658#e17:
+    locator: 第18頁，附註十一，列入合併財務報表之子公司
+    published_date: null
+    publisher: 聯策科技股份有限公司
+    quote_check: found
+    title: 聯策科技股份有限公司及子公司民國115及114年第2季合併財務報表
+    url: https://www.synpower.com.tw/Download/inv_2/tw/%E5%AD%A3%E5%A0%B1_%E8%81%AF%E7%AD%96_2026Q2.pdf
+  tw.6658#e18:
+    locator: 第18頁，附註十一，列入合併財務報表之子公司
+    published_date: null
+    publisher: 聯策科技股份有限公司
+    quote_check: found
+    title: 聯策科技股份有限公司及子公司民國115及114年第2季合併財務報表
+    url: https://www.synpower.com.tw/Download/inv_2/tw/%E5%AD%A3%E5%A0%B1_%E8%81%AF%E7%AD%96_2026Q2.pdf
+  tw.6658#e19:
+    locator: 第18頁，附註十一，列入合併財務報表之子公司
+    published_date: null
+    publisher: 聯策科技股份有限公司
+    quote_check: found
+    title: 聯策科技股份有限公司及子公司民國115及114年第2季合併財務報表
+    url: https://www.synpower.com.tw/Download/inv_2/tw/%E5%AD%A3%E5%A0%B1_%E8%81%AF%E7%AD%96_2026Q2.pdf
+  tw.6658#e2:
+    locator: 第72頁，目前主要產品之營業比重；114年度欄
+    published_date: '2026-03-31'
+    publisher: 聯策科技股份有限公司
+    quote_check: found
+    title: 聯策科技股份有限公司一一四年度年報
+    url: https://www.synpower.com.tw/Download/dl1set/tw/114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1(115%E8%82%A1%E6%9D%B1%E6%9C%83)-%E5%AE%8C%E7%A8%BF.pdf
+  tw.6658#e3:
+    locator: 第72頁，目前主要產品之營業比重；114年度欄
+    published_date: '2026-03-31'
+    publisher: 聯策科技股份有限公司
+    quote_check: found
+    title: 聯策科技股份有限公司一一四年度年報
+    url: https://www.synpower.com.tw/Download/dl1set/tw/114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1(115%E8%82%A1%E6%9D%B1%E6%9C%83)-%E5%AE%8C%E7%A8%BF.pdf
+  tw.6658#e4:
+    locator: 第72頁，目前主要產品之營業比重；114年度欄
+    published_date: '2026-03-31'
+    publisher: 聯策科技股份有限公司
+    quote_check: found
+    title: 聯策科技股份有限公司一一四年度年報
+    url: https://www.synpower.com.tw/Download/dl1set/tw/114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1(115%E8%82%A1%E6%9D%B1%E6%9C%83)-%E5%AE%8C%E7%A8%BF.pdf
+  tw.6658#e5:
+    locator: 第72頁，印刷電路板表面處理列；114年度欄
+    published_date: '2026-03-31'
+    publisher: 聯策科技股份有限公司
+    quote_check: found
+    title: 聯策科技股份有限公司一一四年度年報
+    url: https://www.synpower.com.tw/Download/dl1set/tw/114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1(115%E8%82%A1%E6%9D%B1%E6%9C%83)-%E5%AE%8C%E7%A8%BF.pdf
+  tw.6658#e6:
+    locator: 第72頁，目前主要產品之營業比重；114年度欄
+    published_date: '2026-03-31'
+    publisher: 聯策科技股份有限公司
+    quote_check: found
+    title: 聯策科技股份有限公司一一四年度年報
+    url: https://www.synpower.com.tw/Download/dl1set/tw/114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1(115%E8%82%A1%E6%9D%B1%E6%9C%83)-%E5%AE%8C%E7%A8%BF.pdf
+  tw.6658#e7:
+    locator: 第75頁，產業上、中、下游之關聯性
+    published_date: '2026-03-31'
+    publisher: 聯策科技股份有限公司
+    quote_check: found
+    title: 聯策科技股份有限公司一一四年度年報
+    url: https://www.synpower.com.tw/Download/dl1set/tw/114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1(115%E8%82%A1%E6%9D%B1%E6%9C%83)-%E5%AE%8C%E7%A8%BF.pdf
+  tw.6658#e8:
+    locator: 第86頁，AI機器視覺設備重要用途及功能
+    published_date: '2026-03-31'
+    publisher: 聯策科技股份有限公司
+    quote_check: found
+    title: 聯策科技股份有限公司一一四年度年報
+    url: https://www.synpower.com.tw/Download/dl1set/tw/114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1(115%E8%82%A1%E6%9D%B1%E6%9C%83)-%E5%AE%8C%E7%A8%BF.pdf
+  tw.6658#e9:
+    locator: 產品說明
+    published_date: null
+    publisher: 聯策科技股份有限公司
+    quote_check: found
+    title: 玻璃 矽中介層自動光學檢測機
+    url: https://www.synpower.com.tw/tw/Products_detail/1097/%E7%8E%BB%E7%92%83-%E7%9F%BD%E4%B8%AD%E4%BB%8B%E5%B1%A4%E8%87%AA%E5%8B%95%E5%85%89%E5%AD%B8%E6%AA%A2%E6%B8%AC%E6%A9%9F

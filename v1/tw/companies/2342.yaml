@@ -8,14 +8,69 @@ industry:
   l0_code: '24'
   l0_name: 半導體業
   l0_name_en: Semiconductor
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.semi
+  l2_name: 半導體
+  l2_name_en: Semiconductors
+  l3: semi.foundry
+  l3_name: 晶圓代工
+  l3_name_en: Wafer Foundry
+chain: chain.semiconductor
+chain_stage:
+  agreement: both
+  also: []
+  reason: 以功率元件晶圓代工為主，MOSFET／IGBT占銷售56%，屬晶圓製造。
+  stage: fab
+  stage_name: 晶圓製造
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 以MOSFET、IGBT及二極體等功率元件晶圓代工為主。
+summary_long: 茂矽以功率半導體晶圓代工為主要業務，製程涵蓋MOSFET、IGBT、蕭特基二極體及高壓CMOS類比IC。2025年產品銷售組成為MOSFET／IGBT56%、Diode／MCD25%、Analog10%、其他8%，比例依原簡報列示。公司布局電動車相關功率元件，並開發SiC MOSFET／JFET製程，2026年4月法說揭露當時即將送樣。依2025年第三季財報，朋程為母公司，敦茂科技及Giant Haven Investments為合併子公司。
+segments:
+- evidence_ids:
+  - e7
+  id: seg_mosfet_igbt
+  name: MOSFET／IGBT
+  period: 2025年度
+  revenue_share_pct: 56
+- evidence_ids:
+  - e7
+  id: seg_diode_mcd
+  name: Diode／MCD
+  period: 2025年度
+  revenue_share_pct: 25
+- evidence_ids:
+  - e7
+  id: seg_analog
+  name: Analog
+  period: 2025年度
+  revenue_share_pct: 10
+- evidence_ids:
+  - e7
+  id: seg_others
+  name: 其他
+  period: 2025年度
+  revenue_share_pct: 8
+main_theme: theme.ev
+themes:
+- also: []
+  stage: materials
+  theme: theme.ev
+  tier: upstream
+- also: []
+  stage: devices
+  theme: theme.sic
+  tier: midstream
 relations:
   parents:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 台灣茂矽；直接子公司
+    detail: 母公司
     details:
+    - 母公司
     - 台灣茂矽；直接子公司
     edge: ed26b0010e327
     evidence_level: primary
@@ -24,12 +79,118 @@ relations:
     ranking_basis: unranked
     share_basis: null
     share_pct: null
+    weight: 2
+  subsidiaries:
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 列入合併財報的子公司
+    details:
+    - 列入合併財報的子公司
+    edge: e5cde091f982d
+    evidence_level: primary
+    id: org.denmos-technology
+    name: 敦茂科技(股)公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 列入合併財報的子公司
+    details:
+    - 列入合併財報的子公司
+    edge: eb3c7fb3b3f83
+    evidence_level: primary
+    id: org.giant-haven-investments
+    name: Giant Haven Investments Ltd.(B.V.I)
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
     weight: 1
 website: http://www.mosel.com.tw
 tax_id: '22099110'
 incorporated: '1987-01-08'
 listed: '1995-09-19'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2342#e10:
+    locator: 第37頁，附註七（一）關係人之名稱及關係
+    published_date: '2025-11-04'
+    publisher: 台灣茂矽電子股份有限公司
+    quote_check: found
+    title: 民國114年第三季合併財務報告
+    url: https://www.mosel.com.tw/File_Upload/20251216112154.pdf
+  tw.2342#e11:
+    locator: 第14頁，列入合併財務報告之子公司表，投資公司為台灣茂矽
+    published_date: '2025-11-04'
+    publisher: 台灣茂矽電子股份有限公司
+    quote_check: found
+    title: 民國114年第三季合併財務報告
+    url: https://www.mosel.com.tw/File_Upload/20251216112154.pdf
+  tw.2342#e12:
+    locator: 第14頁，列入合併財務報告之子公司表，投資公司為台灣茂矽
+    published_date: '2025-11-04'
+    publisher: 台灣茂矽電子股份有限公司
+    quote_check: found
+    title: 民國114年第三季合併財務報告
+    url: https://www.mosel.com.tw/File_Upload/20251216112154.pdf
+  tw.2342#e2:
+    locator: 產品服務
+    published_date: null
+    publisher: 台灣茂矽電子股份有限公司
+    quote_check: found
+    title: 茂矽首頁
+    url: https://www.mosel.com.tw/
+  tw.2342#e3:
+    locator: 晶圓製造服務／Power Discrete
+    published_date: null
+    publisher: 台灣茂矽電子股份有限公司
+    quote_check: found
+    title: 茂矽首頁
+    url: https://www.mosel.com.tw/
+  tw.2342#e4:
+    locator: 晶圓製造服務／Power Discrete
+    published_date: null
+    publisher: 台灣茂矽電子股份有限公司
+    quote_check: found
+    title: 茂矽首頁
+    url: https://www.mosel.com.tw/
+  tw.2342#e5:
+    locator: 公司簡介第三段，溝槽式技術說明
+    published_date: null
+    publisher: 台灣茂矽電子股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.mosel.com.tw/about_1.html
+  tw.2342#e6:
+    locator: 晶圓製造服務／Analog
+    published_date: null
+    publisher: 台灣茂矽電子股份有限公司
+    quote_check: found
+    title: 茂矽首頁
+    url: https://www.mosel.com.tw/
+  tw.2342#e7:
+    locator: 第10頁，產品別銷售分析，2025年度圖
+    published_date: '2026-04-23'
+    publisher: 台灣茂矽電子股份有限公司
+    quote_check: found
+    title: 2026年4月23日法人說明會簡報
+    url: https://www.mosel.com.tw/File_Upload/20260430031247.pdf
+  tw.2342#e8:
+    locator: 第17頁，經營現況總結
+    published_date: '2026-04-23'
+    publisher: 台灣茂矽電子股份有限公司
+    quote_check: found
+    title: 2026年4月23日法人說明會簡報
+    url: https://www.mosel.com.tw/File_Upload/20260430031247.pdf
+  tw.2342#e9:
+    locator: 公司簡介第三段，布局產業市場說明
+    published_date: null
+    publisher: 台灣茂矽電子股份有限公司
+    quote_check: not_found
+    title: 公司簡介
+    url: https://www.mosel.com.tw/about_1.html

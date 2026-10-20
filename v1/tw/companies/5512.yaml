@@ -8,12 +8,136 @@ industry:
   l0_code: '14'
   l0_name: 建材營造業
   l0_name_en: Building Material and Construction
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.environment
+  l2_name: 環保服務
+  l2_name_en: Environmental Services
+  l3: env.water
+  l3_name: 水處理
+  l3_name_en: Water Treatment
+primary_chain_position: not_applicable
+summary_short: 經營不動產開發，合併營收以環境工程及污水處理為主，另有旅館業務。
+summary_long: 力麒建設從事住宅與商用不動產開發，並推動都市更新，合併業務另涵蓋環境工程、污水處理及觀光旅館。2025年前三季環境工程及污水處理部門對外收入為36.04億元，高於觀光旅館的7.13億元與建設部門的5.93億元。山林水環境工程列入其合併子公司，承擔環工相關業務；旅館相關合併子公司包括力麗酒店及力麗觀光開發，兩者為不同法人，其中股票代號5364對應力麗觀光開發。
+segments:
+- evidence_ids:
+  - e3
+  id: construction
+  name: 建設部門
+  period: 2025-01至2025-09
+  revenue_share_pct: null
+- evidence_ids:
+  - e3
+  id: environment_water
+  name: 環境工程及污水處理部門
+  period: 2025-01至2025-09
+  revenue_share_pct: null
+- evidence_ids:
+  - e3
+  id: hotels
+  name: 觀光旅館部門
+  period: 2025-01至2025-09
+  revenue_share_pct: null
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 環工合併子公司
+    details:
+    - 環工合併子公司
+    - 最終母公司
+    edge: efe49d29eb94d
+    evidence_level: primary
+    id: tw.8473
+    name: 山林水
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 2
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 旅館合併子公司
+    details:
+    - 旅館合併子公司
+    edge: e3448c84273ee
+    evidence_level: primary
+    id: org.力麗酒店股份有限公司
+    name: 力麗酒店股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 觀光合併子公司
+    details:
+    - 觀光合併子公司
+    edge: ecd7244589965
+    evidence_level: primary
+    id: tw.5364
+    name: 力麗店
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.rhd.com.tw
 tax_id: '86690644'
 incorporated: '1992-07-30'
 listed: '1998-12-04'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.5512#e2:
+    locator: 力麒視野：土地開發、市場調查
+    published_date: null
+    publisher: 力麒建設股份有限公司
+    quote_check: found
+    title: 關於力麒
+    url: https://rhd.com.tw/about/
+  tw.5512#e3:
+    locator: 附註十四部門資訊，印刷頁72，114年1月至9月；欄序為建設、環境工程及污水處理、觀光旅館、其他、調整及銷除、合計；單位新台幣千元
+    published_date: '2025-11-13'
+    publisher: 力麒建設股份有限公司
+    quote_check: found
+    title: 力麒建設股份有限公司及子公司114年第三季合併財務報告
+    url: https://www.rhd.com.tw/upload/download_files/1382a7122e3db3fface9f58114690e7c.pdf
+  tw.5512#e4:
+    locator: 公司沿革，2016年
+    published_date: null
+    publisher: 力麒建設股份有限公司
+    quote_check: found
+    title: 關於力麒
+    url: https://rhd.com.tw/about/
+  tw.5512#e5:
+    locator: 附註四（二）合併基礎，印刷頁10至11，列入合併財報之子公司表：山林水環境工程
+    published_date: '2025-11-13'
+    publisher: 力麒建設股份有限公司
+    quote_check: found
+    title: 力麒建設股份有限公司及子公司114年第三季合併財務報告
+    url: https://www.rhd.com.tw/upload/download_files/1382a7122e3db3fface9f58114690e7c.pdf
+  tw.5512#e6:
+    locator: 附註四（二）合併基礎，印刷頁10，列入合併財報之子公司表：力麗酒店
+    published_date: '2025-11-13'
+    publisher: 力麒建設股份有限公司
+    quote_check: found
+    title: 力麒建設股份有限公司及子公司114年第三季合併財務報告
+    url: https://www.rhd.com.tw/upload/download_files/1382a7122e3db3fface9f58114690e7c.pdf
+  tw.5512#e7:
+    locator: 附註四（二）合併基礎，印刷頁11，列入合併財報之子公司表：力麗觀光開發
+    published_date: '2025-11-13'
+    publisher: 力麒建設股份有限公司
+    quote_check: found
+    title: 力麒建設股份有限公司及子公司114年第三季合併財務報告
+    url: https://www.rhd.com.tw/upload/download_files/1382a7122e3db3fface9f58114690e7c.pdf
+  tw.5512#e8:
+    locator: 公司沿革，2016年
+    published_date: null
+    publisher: 力麒建設股份有限公司
+    quote_check: found
+    title: 關於力麒
+    url: https://rhd.com.tw/about/

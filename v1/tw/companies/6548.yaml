@@ -55,19 +55,24 @@ segments:
   revenue_share_pct: 2.16
 main_theme: theme.ai_server
 themes:
-- stage: components
+- also: []
+  stage: components
   theme: theme.ai_server
   tier: midstream
-- stage: components
+- also: []
+  stage: components
   theme: theme.robotics
   tier: upstream
-- stage: components
+- also: []
+  stage: components
   theme: theme.leo_satellite
   tier: upstream
-- stage: packaging
+- also: []
+  stage: packaging
   theme: theme.mini_led
   tier: midstream
-- stage: application
+- also: []
+  stage: application
   theme: theme.gan
   tier: downstream
 relations:

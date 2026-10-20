@@ -8,12 +8,284 @@ industry:
   l0_code: '28'
   l0_name: 電子零組件業
   l0_name_en: Electronic Parts and Components
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.passive
+  l3_name: 被動元件
+  l3_name_en: Passive Components
+primary_chain_position: midstream
+summary_short: 以晶片、功率及濾波電感器製造銷售為主，另有陶瓷散熱片與精密金屬零件。
+summary_long: 千如以電感器製造與銷售為主，產品涵蓋晶片電感、各式功率電感及SMD貼片電感，另有變壓器、LTCC元件、陶瓷散熱片與精密金屬零件。2024年電感器占營收96.27%，其餘為精密金屬零件、陶瓷散熱片及其他業務。公司揭露電感產品應用於5G通訊、工業控制、醫療器材、電動汽車及智慧駕駛。依2026年第一季財報，集團直接持有ATEC HOLDING COMPANY及ABC AMERICA ELECTRONICS CORP.，並透過間接子公司經營馬來西亞與中國的電子零組件製造業務。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_inductors
+  name: 電感器
+  period: '2024'
+  revenue_share_pct: 96.27
+- evidence_ids:
+  - e1
+  id: seg_ceramic
+  name: 陶瓷散熱片
+  period: '2024'
+  revenue_share_pct: 0.45
+- evidence_ids:
+  - e1
+  id: seg_metal
+  name: 精密金屬零件
+  period: '2024'
+  revenue_share_pct: 2.03
+- evidence_ids:
+  - e1
+  id: seg_other
+  name: 其他
+  period: '2024'
+  revenue_share_pct: 1.25
+main_theme: theme.ev
+themes:
+- also: []
+  stage: parts
+  theme: theme.ev
+  tier: midstream
+- also: []
+  stage: components
+  theme: theme.5g
+  tier: upstream
+relations:
+  subsidiaries:
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過AHC持有的全資孫公司
+    details:
+    - 透過AHC持有的全資孫公司
+    edge: eecbf2150b74d
+    evidence_level: primary
+    id: org.a-tec-international-company
+    name: A-TEC INTERNATIONAL COMPANY
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接全資電子零件銷售子公司
+    details:
+    - 直接全資電子零件銷售子公司
+    edge: e1308263861f1
+    evidence_level: primary
+    id: org.abc-america-electronics
+    name: ABC AMERICA ELECTRONICS CORP.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過AIC持有的全資曾孫公司
+    details:
+    - 透過AIC持有的全資曾孫公司
+    edge: e6bf32336ec20
+    evidence_level: primary
+    id: org.abc-electronics-shanghai
+    name: 千如電子（上海）有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 馬來西亞全資孫公司
+    details:
+    - 馬來西亞全資孫公司
+    edge: e27c6a994c47e
+    evidence_level: primary
+    id: org.aoba-technology-malaysia
+    name: AOBA TECHNOLOGY (M) SDN. BHD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接全資控股子公司
+    details:
+    - 直接全資控股子公司
+    edge: e416c03a61382
+    evidence_level: primary
+    id: org.atec-holding-company
+    name: ATEC HOLDING COMPANY
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過AHC持有的全資孫公司
+    details:
+    - 透過AHC持有的全資孫公司
+    edge: e223beccf2d7f
+    evidence_level: primary
+    id: org.atec-universal-company
+    name: ATEC UNIVERSAL COMPANY
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過AUC持有的全資曾孫公司
+    details:
+    - 透過AUC持有的全資曾孫公司
+    edge: eb66962a9ec22
+    evidence_level: primary
+    id: org.guangzhou-abc-electronics
+    name: 廣州千如電子有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 2025年設立的間接全資子公司
+    details:
+    - 2025年設立的間接全資子公司
+    edge: e764b11383c6c
+    evidence_level: primary
+    id: org.shanghai-qianchi-electronics-trading
+    name: 上海千弛電子貿易有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.atec-group.com
 tax_id: '45011782'
 incorporated: '1979-05-25'
 listed: '2004-12-02'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3236#e1:
+    locator: 第65頁，目前之主要商品及其營業比重
+    published_date: null
+    publisher: 千如電機工業股份有限公司
+    quote_check: found
+    title: 千如電機工業股份有限公司113年度年報
+    url: https://www.atec-group.com/storage/system/exo/shareholder/2025/千如電機113年股東會年報(中文).pdf
+  tw.3236#e10:
+    locator: 第18頁，附註十一子公司，AHC投資項下
+    published_date: null
+    publisher: 千如電機工業股份有限公司
+    quote_check: found
+    title: 千如電機及子公司115年第1季合併財務報告
+    url: https://www.atec-group.com/storage/system/exo/financial/2026/115Q1千如合併財報(上傳用電子檔).pdf
+  tw.3236#e11:
+    locator: 第18頁，附註十一子公司，AHC投資項下
+    published_date: null
+    publisher: 千如電機工業股份有限公司
+    quote_check: found
+    title: 千如電機及子公司115年第1季合併財務報告
+    url: https://www.atec-group.com/storage/system/exo/financial/2026/115Q1千如合併財報(上傳用電子檔).pdf
+  tw.3236#e12:
+    locator: 第18頁，附註十一子公司，AHC投資項下
+    published_date: null
+    publisher: 千如電機工業股份有限公司
+    quote_check: found
+    title: 千如電機及子公司115年第1季合併財務報告
+    url: https://www.atec-group.com/storage/system/exo/financial/2026/115Q1千如合併財報(上傳用電子檔).pdf
+  tw.3236#e13:
+    locator: 第18頁，附註十一子公司，AUC投資項下
+    published_date: null
+    publisher: 千如電機工業股份有限公司
+    quote_check: found
+    title: 千如電機及子公司115年第1季合併財務報告
+    url: https://www.atec-group.com/storage/system/exo/financial/2026/115Q1千如合併財報(上傳用電子檔).pdf
+  tw.3236#e14:
+    locator: 第18頁，附註十一子公司，AIC投資項下
+    published_date: null
+    publisher: 千如電機工業股份有限公司
+    quote_check: found
+    title: 千如電機及子公司115年第1季合併財務報告
+    url: https://www.atec-group.com/storage/system/exo/financial/2026/115Q1千如合併財報(上傳用電子檔).pdf
+  tw.3236#e15:
+    locator: 第18頁，附註十一子公司，AIC投資項下及表下注
+    published_date: null
+    publisher: 千如電機工業股份有限公司
+    quote_check: found
+    title: 千如電機及子公司115年第1季合併財務報告
+    url: https://www.atec-group.com/storage/system/exo/financial/2026/115Q1千如合併財報(上傳用電子檔).pdf
+  tw.3236#e16:
+    locator: 生產據點介紹
+    published_date: null
+    publisher: 千如電機工業股份有限公司
+    quote_check: found
+    title: 全球佈局
+    url: https://www.atec-group.com/tw/regions
+  tw.3236#e2:
+    locator: 電感器產品
+    published_date: null
+    publisher: 千如電機工業股份有限公司
+    quote_check: found
+    title: 供應鏈結構
+    url: https://www.atec-group.com/tw/csr-288-305-page659
+  tw.3236#e3:
+    locator: 功率電感介紹
+    published_date: null
+    publisher: 千如電機工業股份有限公司
+    quote_check: found
+    title: 功率電感
+    url: https://www.atec-group-market.com/zh-TW/category/power_inductor.html
+  tw.3236#e4:
+    locator: 專注研發創新的SMD貼片電感
+    published_date: null
+    publisher: 千如電機工業股份有限公司
+    quote_check: found
+    title: 千如電機｜SMD貼片電感
+    url: https://www.atec-group.com/tw/sq
+  tw.3236#e5:
+    locator: 供應鏈結構，業務項目
+    published_date: null
+    publisher: 千如電機工業股份有限公司
+    quote_check: found
+    title: 供應鏈結構
+    url: https://www.atec-group.com/tw/csr-288-305-page659
+  tw.3236#e6:
+    locator: 供應鏈結構，業務項目
+    published_date: null
+    publisher: 千如電機工業股份有限公司
+    quote_check: found
+    title: 供應鏈結構
+    url: https://www.atec-group.com/tw/csr-288-305-page659
+  tw.3236#e7:
+    locator: 第2頁，研究發展狀況
+    published_date: null
+    publisher: 千如電機工業股份有限公司
+    quote_check: found
+    title: 千如電機工業股份有限公司113年度年報
+    url: https://www.atec-group.com/storage/system/exo/shareholder/2025/千如電機113年股東會年報(中文).pdf
+  tw.3236#e8:
+    locator: 第18頁，附註十一子公司；欄位含投資公司、子公司及持股比例
+    published_date: null
+    publisher: 千如電機工業股份有限公司
+    quote_check: found
+    title: 千如電機及子公司115年第1季合併財務報告
+    url: https://www.atec-group.com/storage/system/exo/financial/2026/115Q1千如合併財報(上傳用電子檔).pdf
+  tw.3236#e9:
+    locator: 第18頁，附註十一子公司，本公司投資項下
+    published_date: null
+    publisher: 千如電機工業股份有限公司
+    quote_check: found
+    title: 千如電機及子公司115年第1季合併財務報告
+    url: https://www.atec-group.com/storage/system/exo/financial/2026/115Q1千如合併財報(上傳用電子檔).pdf

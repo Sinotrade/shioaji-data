@@ -8,12 +8,158 @@ industry:
   l0_code: '24'
   l0_name: 半導體業
   l0_name_en: Semiconductor
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.semi
+  l2_name: 半導體
+  l2_name_en: Semiconductors
+  l3: semi.discrete
+  l3_name: 分離式元件與功率半導體
+  l3_name_en: Discretes & Power Semiconductors
+chain: chain.semiconductor
+chain_stage:
+  agreement: both
+  also: []
+  reason: 主要從事功率半導體元件與模組設計，功率MOSFET占營收99.85%，歸入IC設計階段。
+  stage: ip_design
+  stage_name: IP 與 IC 設計
+  tier: upstream
+primary_chain_position: upstream
+summary_short: 以電源管理用功率MOSFET及功率模組的設計與銷售為主要業務。
+summary_long: 尼克森從事電源管理用功率半導體元件與功率模組設計，主要銷售產品為Power MOSFET。2024年度功率金氧半場效電晶體占營業比重99.85%，其他產品占0.15%。官網產品線另涵蓋SiC MOSFET、GaN HEMT及DrMOS，並提供SiC功率模組，涉及碳化矽與氮化鎵功率元件領域。公司亦提出AI資料中心機櫃電源液冷方案，相關文件列有半橋SiC功率模組及其樣品狀態。
+segments:
+- evidence_ids:
+  - e3
+  id: seg_mosfet
+  name: 功率金氧半場效電晶體
+  period: '2024'
+  revenue_share_pct: 99.85
+- evidence_ids:
+  - e3
+  id: seg_other
+  name: 其他
+  period: '2024'
+  revenue_share_pct: 0.15
+main_theme: theme.ai_server
+themes:
+- also: []
+  stage: components
+  theme: theme.ai_server
+  tier: midstream
+- also: []
+  stage: devices
+  theme: theme.sic
+  tier: midstream
+- also: []
+  stage: devices
+  theme: theme.gan
+  tier: midstream
+relations:
+  subsidiaries:
+  - as_of: '2025-04-15'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的子公司
+    details:
+    - 直接持股100%的子公司
+    edge: e0e2d17fb5abd
+    evidence_level: primary
+    id: org.power-up-tech-co-ltd
+    name: Power Up Tech.Co.,Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-04-15'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的子公司
+    details:
+    - 直接持股100%的子公司
+    edge: ede87479d20d0
+    evidence_level: primary
+    id: org.金榮投資-股-公司
+    name: 金榮投資(股)公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.niko-sem.com
 tax_id: '16752651'
 incorporated: '1998-10-08'
 listed: '2007-08-09'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3317#e10:
+    locator: 印刷頁47，轉投資事業持股表之本公司投資欄
+    published_date: '2025-04-15'
+    publisher: 尼克森微電子股份有限公司
+    quote_check: found
+    title: 尼克森微電子股份有限公司113年度年報
+    url: https://www.niko-sem.com/userfiles/nikosem/files/114AnnualReport.pdf
+  tw.3317#e11:
+    locator: 印刷頁47，轉投資事業持股表之本公司投資欄
+    published_date: '2025-04-15'
+    publisher: 尼克森微電子股份有限公司
+    quote_check: found
+    title: 尼克森微電子股份有限公司113年度年報
+    url: https://www.niko-sem.com/userfiles/nikosem/files/114AnnualReport.pdf
+  tw.3317#e2:
+    locator: 公司簡介第一段
+    published_date: null
+    publisher: 尼克森微電子股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.niko-sem.com/portal_a1.php?button_num=a1&owner_num=a1_46374
+  tw.3317#e3:
+    locator: 印刷頁53，營業比重（113年度）
+    published_date: '2025-04-15'
+    publisher: 尼克森微電子股份有限公司
+    quote_check: found
+    title: 尼克森微電子股份有限公司113年度年報
+    url: https://www.niko-sem.com/userfiles/nikosem/files/114AnnualReport.pdf
+  tw.3317#e4:
+    locator: 產品目錄標題
+    published_date: null
+    publisher: 尼克森微電子股份有限公司
+    quote_check: found
+    title: MOSFET產品目錄
+    url: https://www.niko-sem.com/portal_d743.php?button_num=d743&owner_num=d743_51730
+  tw.3317#e5:
+    locator: 產品目錄標題；下方列有SA3C0AU4C及S75C0CU4B
+    published_date: null
+    publisher: 尼克森微電子股份有限公司
+    quote_check: found
+    title: SiC MOSFET產品目錄
+    url: https://www.niko-sem.com/portal_d412.php?button_num=d412&owner_num=d412_77616
+  tw.3317#e6:
+    locator: 主要產品介紹
+    published_date: null
+    publisher: 尼克森微電子股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.niko-sem.com/portal_a1.php?button_num=a1&owner_num=a1_46374
+  tw.3317#e7:
+    locator: 產品目錄標題；下方列有NDA345FA等產品
+    published_date: null
+    publisher: 尼克森微電子股份有限公司
+    quote_check: not_found
+    title: DrMOS產品目錄
+    url: https://www.niko-sem.com/portal_d410.php?button_num=d410&owner_num=d410_77597
+  tw.3317#e8:
+    locator: PDF第10頁，Product Specification and Schedule - Module
+    published_date: '2025-09-30'
+    publisher: 尼克森微電子股份有限公司
+    quote_check: found
+    title: 480KW Double Power Density AI Data Center Rack with Liquid Cooling Solution
+    url: https://www.niko-sem.com/manager_admin/new_file_download.php?Pact=FileDownLoad&Pval=584330
+  tw.3317#e9:
+    locator: 產品新訊標題及附件下載
+    published_date: '2025-09-30'
+    publisher: 尼克森微電子股份有限公司
+    quote_check: found
+    title: AI資料中心機櫃液冷方案產品新訊
+    url: https://www.niko-sem.com/portal_b1_page.php?button_num=b1&cnt_id=16849&owner_num=b1_46375

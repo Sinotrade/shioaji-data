@@ -8,12 +8,231 @@ industry:
   l0_code: '29'
   l0_name: 電子通路業
   l0_name_en: Electronic Products Distribution
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.distribution
+  l2_name: 電子通路
+  l2_name_en: Electronics Distribution
+  l3: dist.it
+  l3_name: 資訊產品通路
+  l3_name_en: IT Products Distribution
+primary_chain_position: downstream
+summary_short: 代理及經銷資訊軟硬體、遊戲娛樂與家電，並提供企業資安及系統整合產品。
+summary_long: 展碁國際以資訊產品代理及經銷為主要業務，產品涵蓋電腦、儲存、網通、顯示及電源管理設備。軟體業務提供企業生產力工具、創意軟體與雲端服務，另經銷任天堂Switch 2遊戲產品及智慧家電。企業端提供網路管理、資安防護、資料備份與儲存管理解決方案，系統整合產品亦包括伺服器與機房設備。2026年上半年收入類別以系統資訊及數位娛樂為最大項，另有電腦軟體、橡膠、塑料及其他。宏碁為最終控制者，直接子公司包括好漾生活、沛捷生醫、博瑞達應用材料及Bluechip。
+segments:
+- evidence_ids:
+  - e7
+  id: software
+  name: 電腦軟體銷售
+  period: 2026年上半年
+  revenue_share_pct: null
+- evidence_ids:
+  - e7
+  id: system_digital
+  name: 系統資訊及數位娛樂產品銷售
+  period: 2026年上半年
+  revenue_share_pct: null
+- evidence_ids:
+  - e7
+  id: rubber
+  name: 橡膠產品
+  period: 2026年上半年
+  revenue_share_pct: null
+- evidence_ids:
+  - e8
+  id: plastics
+  name: 塑料產品
+  period: 2026年上半年
+  revenue_share_pct: null
+- evidence_ids:
+  - e8
+  id: other
+  name: 其他
+  period: 2026年上半年
+  revenue_share_pct: null
+main_theme: theme.data_center
+themes:
+- also: []
+  stage: it
+  theme: theme.data_center
+  tier: midstream
+relations:
+  parents:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 母公司及最終控制者
+    details:
+    - 母公司及最終控制者
+    edge: e270d4580746f
+    evidence_level: primary
+    id: tw.2353
+    name: 宏碁
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股53.86%的資訊產品通路子公司
+    details:
+    - 直接持股53.86%的資訊產品通路子公司
+    edge: e4f26962aa161
+    evidence_level: primary
+    id: org.bluechip-infotech
+    name: Bluechip Infotech Pty Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的家電及3C零售子公司
+    details:
+    - 直接持股100%的家電及3C零售子公司
+    edge: ed1b8e79bf9f4
+    evidence_level: primary
+    id: org.howyoung-life
+    name: 好漾生活股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股75%的保健產品通路子公司
+    details:
+    - 直接持股75%的保健產品通路子公司
+    edge: ebe9d0f901934
+    evidence_level: primary
+    id: org.peijie-biomedical
+    name: 沛捷生醫股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股59.91%的材料通路子公司
+    details:
+    - 直接持股59.91%的材料通路子公司
+    edge: ee52293a05964
+    evidence_level: primary
+    id: org.博瑞達應用材料股份有限公司
+    name: 博瑞達應用材料股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.weblink.com.tw
 tax_id: '20773257'
 incorporated: '1977-12-22'
 listed: '2021-03-31'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6776#e1:
+    locator: 產品說明
+    published_date: null
+    publisher: 展碁國際股份有限公司
+    quote_check: found
+    title: 代理品牌－IT基礎設施與運算
+    url: https://www.weblink.com.tw/brands1.htm
+  tw.6776#e10:
+    locator: 報表第10頁，列入合併財務報告之子公司；第一個比例為115年6月30日持股
+    published_date: null
+    publisher: 展碁國際股份有限公司
+    quote_check: found
+    title: 展碁國際2026年第二季合併財務報告
+    url: https://www.weblink.com.tw/Upload/202608/investor_2026082516462008.pdf
+  tw.6776#e11:
+    locator: 報表第10頁，列入合併財務報告之子公司；第一個比例為115年6月30日持股
+    published_date: null
+    publisher: 展碁國際股份有限公司
+    quote_check: found
+    title: 展碁國際2026年第二季合併財務報告
+    url: https://www.weblink.com.tw/Upload/202608/investor_2026082516462008.pdf
+  tw.6776#e12:
+    locator: 報表第10頁，列入合併財務報告之子公司；第一個比例為115年6月30日持股
+    published_date: null
+    publisher: 展碁國際股份有限公司
+    quote_check: found
+    title: 展碁國際2026年第二季合併財務報告
+    url: https://www.weblink.com.tw/Upload/202608/investor_2026082516462008.pdf
+  tw.6776#e13:
+    locator: 報表第10頁，列入合併財務報告之子公司；第一個比例為115年6月30日持股
+    published_date: null
+    publisher: 展碁國際股份有限公司
+    quote_check: found
+    title: 展碁國際2026年第二季合併財務報告
+    url: https://www.weblink.com.tw/Upload/202608/investor_2026082516462008.pdf
+  tw.6776#e14:
+    locator: 報表第66頁，主要產品之重要用途
+    published_date: '2025-03-30'
+    publisher: 展碁國際股份有限公司
+    quote_check: found
+    title: 展碁國際113年度年報
+    url: https://www.weblink.com.tw/Upload/202512/investor_2025120414180208.pdf
+  tw.6776#e2:
+    locator: 產品說明
+    published_date: null
+    publisher: 展碁國際股份有限公司
+    quote_check: found
+    title: 代理品牌－數位轉型與雲端軟體
+    url: https://www.weblink.com.tw/brands2.htm
+  tw.6776#e3:
+    locator: 產品說明
+    published_date: null
+    publisher: 展碁國際股份有限公司
+    quote_check: found
+    title: 代理品牌－數位娛樂與電競
+    url: https://www.weblink.com.tw/brands5.htm
+  tw.6776#e4:
+    locator: 第13頁，2025 Q4動能展望
+    published_date: '2025-12-12'
+    publisher: 展碁國際股份有限公司
+    quote_check: found
+    title: 2025展碁營運法人說明會
+    url: https://www.weblink.com.tw/Upload/202512/investor_2025121815123208.pdf
+  tw.6776#e5:
+    locator: 產品說明
+    published_date: null
+    publisher: 展碁國際股份有限公司
+    quote_check: found
+    title: 代理品牌－網路安全與數據防護
+    url: https://www.weblink.com.tw/brands6.htm
+  tw.6776#e6:
+    locator: 產品說明
+    published_date: null
+    publisher: 展碁國際股份有限公司
+    quote_check: found
+    title: 代理品牌－智慧家電與生活科技
+    url: https://www.weblink.com.tw/brands8.htm
+  tw.6776#e7:
+    locator: 報表第33頁，115年1月至6月主要產品／服務線收入；單位為新台幣千元，末欄為合計
+    published_date: null
+    publisher: 展碁國際股份有限公司
+    quote_check: found
+    title: 展碁國際2026年第二季合併財務報告
+    url: https://www.weblink.com.tw/Upload/202608/investor_2026082516462008.pdf
+  tw.6776#e8:
+    locator: 報表第33頁，115年1月至6月主要產品／服務線收入；單位為新台幣千元，末欄為合計
+    published_date: null
+    publisher: 展碁國際股份有限公司
+    quote_check: found
+    title: 展碁國際2026年第二季合併財務報告
+    url: https://www.weblink.com.tw/Upload/202608/investor_2026082516462008.pdf
+  tw.6776#e9:
+    locator: 報表第44頁，關係人交易
+    published_date: null
+    publisher: 展碁國際股份有限公司
+    quote_check: found
+    title: 展碁國際2026年第二季合併財務報告
+    url: https://www.weblink.com.tw/Upload/202608/investor_2026082516462008.pdf

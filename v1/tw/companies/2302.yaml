@@ -8,12 +8,184 @@ industry:
   l0_code: '24'
   l0_name: 半導體業
   l0_name_en: Semiconductor
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.semi
+  l2_name: 半導體
+  l2_name_en: Semiconductors
+  l3: semi.discrete
+  l3_name: 分離式元件與功率半導體
+  l3_name_en: Discretes & Power Semiconductors
+chain: chain.semiconductor
+chain_stage:
+  agreement: both
+  also: []
+  reason: 主業為整流二極體製造與銷售，但未說明晶圓製造或封測業務，無法判定適用階段。
+  stage: null
+  stage_name: null
+  tier: null
+primary_chain_position: midstream
+summary_short: 以整流二極體製造與銷售為主，提供橋式整流器、MOSFET及碳化矽元件。
+summary_long: 麗正以整流二極體製造與銷售為主要業務，產品包括橋式整流器、TVS 瞬態電壓抑制二極體及 MOSFET，另提供碳化矽蕭特基二極體。2025年度營業比重以半導體業95.63%為主，醫療器材業0.98%，其他業務3.39%。集團直接子公司包括麗正電子（中國）、美國銷售公司、聚鼎興業與上海麗正達，並透過麗正電子（中國）持有浙江麗正電子。碳化矽產品已公布具體型號與規格，可歸入碳化矽元件題材。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_semiconductor
+  name: 半導體業
+  period: '2025'
+  revenue_share_pct: 95.63
+- evidence_ids:
+  - e2
+  id: seg_medical
+  name: 醫療器材業
+  period: '2025'
+  revenue_share_pct: 0.98
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他業務
+  period: '2025'
+  revenue_share_pct: 3.39
+main_theme: theme.sic
+themes:
+- also: []
+  stage: devices
+  theme: theme.sic
+  tier: midstream
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司；菸酒批發及醫療器材製造銷售
+    details:
+    - 直接子公司；菸酒批發及醫療器材製造銷售
+    edge: ea108deb54227
+    evidence_level: primary
+    id: org.juding-xingye
+    name: 聚鼎興業(股)公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司；銷售整流器等電子元件
+    details:
+    - 直接子公司；銷售整流器等電子元件
+    edge: e7f43353889f5
+    evidence_level: primary
+    id: org.rectron-china
+    name: 麗正電子(中國)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 美國直接子公司；銷售整流器等電子元件
+    details:
+    - 美國直接子公司；銷售整流器等電子元件
+    edge: e671696f03988
+    evidence_level: primary
+    id: org.rectron-electronic-enterprises
+    name: Rectron Electronic Enterprises Inc. (USA)
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司；銷售整流器等電子元件
+    details:
+    - 直接子公司；銷售整流器等電子元件
+    edge: e94fd18283e7e
+    evidence_level: primary
+    id: org.shanghai-rectron-da
+    name: 上海麗正達實業有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過麗正電子(中國)有限公司持有的間接子公司
+    details:
+    - 透過麗正電子(中國)有限公司持有的間接子公司
+    edge: e5169149f6307
+    evidence_level: primary
+    id: org.zhejiang-rectron-electronic
+    name: 浙江麗正電子有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.rectron.com.tw
 tax_id: 04982433
 incorporated: '1976-01-23'
 listed: '1985-01-15'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2302#e1:
+    locator: 關於麗正／公司簡介，主要業務段落
+    published_date: null
+    publisher: 麗正國際科技股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://rt.rectron.com.tw/web/about/about.jsp?cp_id=CP1669704762315
+  tw.2302#e2:
+    locator: 印刷第54頁／PDF第58頁，肆、營運概況，一、業務內容（B）
+    published_date: null
+    publisher: 麗正國際科技股份有限公司
+    quote_check: found
+    title: 114年度年報（上冊）
+    url: https://rt.rectron.com.tw/uploads/download/tw/R1504001148%E9%BA%97%E6%AD%A3%E5%9C%8B%E9%9A%9B%E5%B9%B4%E5%A0%B1(%E4%B8%8A).pdf
+  tw.2302#e3:
+    locator: 產品介紹／橋式整流器，產品規格表
+    published_date: null
+    publisher: 麗正國際科技股份有限公司
+    quote_check: found
+    title: 橋式整流器產品目錄
+    url: https://rt.rectron.com.tw/web/product/bridge_rectifiers.jsp?npage=1
+  tw.2302#e4:
+    locator: 產品介紹／TVS二極管，產品規格表
+    published_date: null
+    publisher: 麗正國際科技股份有限公司
+    quote_check: found
+    title: TVS二極管產品目錄
+    url: https://rt.rectron.com.tw/web/product/tvs_diodes.jsp?npage=1
+  tw.2302#e5:
+    locator: 產品介紹／MOSFET，產品規格表及Polarity欄
+    published_date: null
+    publisher: 麗正國際科技股份有限公司
+    quote_check: found
+    title: MOSFET產品目錄
+    url: https://rt.rectron.com.tw/web/product/mosfet.jsp?npage=1
+  tw.2302#e6:
+    locator: 產品介紹／碳化矽肖特基，SC4S06510A等型號規格表
+    published_date: null
+    publisher: 麗正國際科技股份有限公司
+    quote_check: found
+    title: 碳化矽蕭特基產品目錄
+    url: https://rt.rectron.com.tw/web/product/silicon_carbide_schottky.jsp?npage=1
+  tw.2302#e7:
+    locator: 第1頁，產品名稱與Maximum Ratings；文件修訂標記2025-12
+    published_date: null
+    publisher: 麗正國際科技股份有限公司
+    quote_check: found
+    title: SC4S06510A產品規格書
+    url: https://rt.rectron.com.tw/uploads/silicon_carbide_schottky/sc4s06510a.pdf
+  tw.2302#e8:
+    locator: 印刷第12頁／PDF第16頁，附註四（三）2子公司表；投資公司、子公司名稱及業務性質各欄
+    published_date: '2026-03-11'
+    publisher: 麗正國際科技股份有限公司
+    quote_check: found
+    title: 114年度合併財務報告暨會計師查核報告
+    url: https://rt.rectron.com.tw/uploads/quarter_revenue/tw/%E9%BA%97%E6%AD%A3_114Q4_%E5%90%88%E4%BD%B5_%E9%9B%BB%E5%AD%90%E6%9B%B8.pdf

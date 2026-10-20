@@ -8,8 +8,130 @@ industry:
   l0_code: '05'
   l0_name: 電機機械
   l0_name_en: Electric Machinery
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.construction
+  l2_name: 營建與工程
+  l2_name_en: Engineering & Construction
+  l3: cons.engineering
+  l3_name: 工程與統包
+  l3_name_en: Engineering & EPC
+primary_chain_position: not_applicable
+summary_short: 承攬機電與環保工程，並提供資源回收廠代營運及機電維護服務。
+summary_long: 中宇以機電工程、環保工程，以及資源回收廠代營運與機電維護為主要業務，母公司為中國鋼鐵。2025年機電工程占營收53.04%，環保工程占17.09%，資源回收廠代營運及機電維護占28.48%，其他業務占1.39%。環保工程技術涵蓋水處理與回收，以及煙氣脫硫、脫硝。海外營運透過子公司架構進行，包括越南與印度的營造工程，以及廈門的設備材料進出口業務。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_mechanical
+  name: 機電工程
+  period: '2025'
+  revenue_share_pct: 53.04
+- evidence_ids:
+  - e2
+  id: seg_environmental
+  name: 環保工程
+  period: '2025'
+  revenue_share_pct: 17.09
+- evidence_ids:
+  - e3
+  id: seg_operation
+  name: 資源回收廠代營運及機電維護
+  period: '2025'
+  revenue_share_pct: 28.48
+- evidence_ids:
+  - e4
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 1.39
 relations:
+  parents:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 母公司及最終控制者
+    details:
+    - 母公司及最終控制者
+    edge: e60bc05e8cedf
+    evidence_level: primary
+    id: tw.2002
+    name: 中鋼
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有的投資子公司
+    details:
+    - 直接持有的投資子公司
+    edge: e76d5009ca8ba
+    evidence_level: primary
+    id: org.cec-development-corporation
+    name: CEC Development Corporation
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有的投資子公司
+    details:
+    - 直接持有的投資子公司
+    edge: ed415099a30c9
+    evidence_level: primary
+    id: org.cec-international-corporation
+    name: CEC International Corporation
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接及間接持有的印度工程子公司
+    details:
+    - 直接及間接持有的印度工程子公司
+    edge: eb3d38f515aa9
+    evidence_level: primary
+    id: org.china-ecotek-india
+    name: China Ecotek India Private Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持有的越南工程子公司
+    details:
+    - 間接持有的越南工程子公司
+    edge: ef9bb7894d806
+    evidence_level: primary
+    id: org.china-ecotek-vietnam
+    name: China Ecotek Vietnam Company Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持有的設備材料進出口子公司
+    details:
+    - 間接持有的設備材料進出口子公司
+    edge: eb7e33a8491d3
+    evidence_level: primary
+    id: org.xiamen-maoyu-import-export
+    name: 廈門茂宇進出口貿易有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   transactions:
   - amount: 不超過新台幣23.06億元
     as_of: '2026-02-26'
@@ -40,7 +162,91 @@ website: www.ecotek.com.tw
 tax_id: '84252401'
 incorporated: '1993-03-15'
 listed: '2001-09-17'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1535#e1:
+    locator: D. Business overview／I. Business activities／Revenue breakdown，機電工程列
+    published_date: '2026-05-06'
+    publisher: 中宇環保工程股份有限公司；FinancialFilings全文轉載
+    quote_check: unreachable
+    title: China Ecotek Corporation 2025 Annual Report（全文轉載）
+    url: https://financialfilings.com/filings/cec-1535/annual-report/2026/46908728/
+  tw.1535#e10:
+    locator: 被投資公司名稱、所在地區等相關資訊／CDC投資中宇越南列；營造工程業務，期末持股100.00%，備註子公司
+    published_date: '2026-02-24'
+    publisher: 中宇環保工程股份有限公司；FinancialFilings全文轉載
+    quote_check: unreachable
+    title: 中宇2025年第4季合併財務報告（申報全文轉載）
+    url: https://financialfilings.com/filings/cec-1535/annual-report/2026/60569518/
+  tw.1535#e11:
+    locator: 被投資公司名稱、所在地區等相關資訊／本公司及CIC投資中宇印度兩列；營造工程業務，持股分別0.10%及99.90%，備註子公司
+    published_date: '2026-02-24'
+    publisher: 中宇環保工程股份有限公司；FinancialFilings全文轉載
+    quote_check: unreachable
+    title: 中宇2025年第4季合併財務報告（申報全文轉載）
+    url: https://financialfilings.com/filings/cec-1535/annual-report/2026/60569518/
+  tw.1535#e12:
+    locator: 列入合併財務報表之子公司／CDC公司投資廈門茂宇列；設備材料進出口業務，持股100.00%
+    published_date: '2026-02-24'
+    publisher: 中宇環保工程股份有限公司；FinancialReports文件鏡像
+    quote_check: found
+    title: 中宇2025年第4季合併財務報告（原始申報HTML鏡像）
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51857/2026/RNS/51857_rns_2026-02-24_35ffecf4-0809-4d85-83f3-b70d6b1017f1.html
+  tw.1535#e2:
+    locator: D. Business overview／I. Business activities／Revenue breakdown，環保工程列
+    published_date: '2026-05-06'
+    publisher: 中宇環保工程股份有限公司；FinancialFilings全文轉載
+    quote_check: unreachable
+    title: China Ecotek Corporation 2025 Annual Report（全文轉載）
+    url: https://financialfilings.com/filings/cec-1535/annual-report/2026/46908728/
+  tw.1535#e3:
+    locator: D. Business overview／I. Business activities／Revenue breakdown，資源回收廠代營運及機電維護列
+    published_date: '2026-05-06'
+    publisher: 中宇環保工程股份有限公司；FinancialFilings全文轉載
+    quote_check: unreachable
+    title: China Ecotek Corporation 2025 Annual Report（全文轉載）
+    url: https://financialfilings.com/filings/cec-1535/annual-report/2026/46908728/
+  tw.1535#e4:
+    locator: D. Business overview／I. Business activities／Revenue breakdown，其他列
+    published_date: '2026-05-06'
+    publisher: 中宇環保工程股份有限公司；FinancialFilings全文轉載
+    quote_check: unreachable
+    title: China Ecotek Corporation 2025 Annual Report（全文轉載）
+    url: https://financialfilings.com/filings/cec-1535/annual-report/2026/46908728/
+  tw.1535#e5:
+    locator: D. Business overview／I. Business activities／Major business activities，第1項
+    published_date: '2026-05-06'
+    publisher: 中宇環保工程股份有限公司；FinancialFilings全文轉載
+    quote_check: unreachable
+    title: China Ecotek Corporation 2025 Annual Report（全文轉載）
+    url: https://financialfilings.com/filings/cec-1535/annual-report/2026/46908728/
+  tw.1535#e6:
+    locator: D. Business overview／Successfully developed technologies and products
+    published_date: '2026-05-06'
+    publisher: 中宇環保工程股份有限公司；FinancialFilings全文轉載
+    quote_check: unreachable
+    title: China Ecotek Corporation 2025 Annual Report（全文轉載）
+    url: https://financialfilings.com/filings/cec-1535/annual-report/2026/46908728/
+  tw.1535#e7:
+    locator: 財務報表附註／關係人交易／母公司及最終控制者之名稱
+    published_date: '2026-02-24'
+    publisher: 中宇環保工程股份有限公司；FinancialFilings全文轉載
+    quote_check: unreachable
+    title: 中宇2025年第4季合併財務報告（申報全文轉載）
+    url: https://financialfilings.com/filings/cec-1535/annual-report/2026/60569518/
+  tw.1535#e8:
+    locator: 被投資公司名稱、所在地區等相關資訊／本公司投資CDC列；期末持股100.00%，備註子公司
+    published_date: '2026-02-24'
+    publisher: 中宇環保工程股份有限公司；FinancialFilings全文轉載
+    quote_check: unreachable
+    title: 中宇2025年第4季合併財務報告（申報全文轉載）
+    url: https://financialfilings.com/filings/cec-1535/annual-report/2026/60569518/
+  tw.1535#e9:
+    locator: 被投資公司名稱、所在地區等相關資訊／本公司投資CIC列；期末持股100.00%，備註子公司
+    published_date: '2026-02-24'
+    publisher: 中宇環保工程股份有限公司；FinancialFilings全文轉載
+    quote_check: unreachable
+    title: 中宇2025年第4季合併財務報告（申報全文轉載）
+    url: https://financialfilings.com/filings/cec-1535/annual-report/2026/60569518/

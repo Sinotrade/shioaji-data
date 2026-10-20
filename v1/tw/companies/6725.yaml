@@ -8,12 +8,199 @@ industry:
   l0_code: '31'
   l0_name: 其他電子業
   l0_name_en: Other Electronic
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.semi
+  l2_name: 半導體
+  l2_name_en: Semiconductors
+  l3: semi.equipment
+  l3_name: 半導體設備
+  l3_name_en: Semiconductor Equipment
+chain: chain.semiconductor
+chain_stage:
+  agreement: both
+  also: []
+  reason: 製程供應系統設備占營收72.71%，另提供廠務整合工程與維護，屬設備與廠務。
+  stage: tools
+  stage_name: 設備與廠務
+  tier: upstream
+primary_chain_position: upstream
+summary_short: 以化學品供應系統設備為主，提供廠務整合工程與維護保養。
+summary_long: 矽科宏晟主要提供高科技產業製程供應系統設備、廠務系統整合工程及維護保養服務。2025年三項業務營收占比分別為72.71%、19.99%及7.30%，以供應系統設備為最大收入來源。主要產品包括化學品供應、混合、稀釋、廢液收集及藥品再生回收系統，涵蓋高純度化學品輸送、濃度調整與製程廢液回收再利用。公司在美國、日本、新加坡設有營運子公司，並透過境外控股公司間接持有上海協鎧，形成海外服務據點。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_equipment
+  name: 高科技產業製程供應系統設備及相關系統
+  period: '2025'
+  revenue_share_pct: 72.71
+- evidence_ids:
+  - e1
+  id: seg_engineering
+  name: 高科技產業製程廠務系統整合工程
+  period: '2025'
+  revenue_share_pct: 19.99
+- evidence_ids:
+  - e1
+  id: seg_maintenance
+  name: 高科技產業製程維護及保養
+  period: '2025'
+  revenue_share_pct: 7.3
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 新加坡營運子公司
+    details:
+    - 新加坡營運子公司
+    edge: e7fcd7084d4ac
+    evidence_level: primary
+    id: org.chct-singapore
+    name: CHCT SINGAPORE PTE. LTD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 美國營運子公司
+    details:
+    - 美國營運子公司
+    edge: e549b0f2f54f3
+    evidence_level: primary
+    id: org.cica-huntek-chemical-technology-usa
+    name: CICA-HUNTEK CHEMICAL TECHNOLOGY USA CORP.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 日本營運子公司
+    details:
+    - 日本營運子公司
+    edge: ed1fb7bc8767b
+    evidence_level: primary
+    id: org.tosho-technology-japan
+    name: 東晟科技株式會社
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過境外控股公司間接持有的上海營運子公司
+    details:
+    - 透過境外控股公司間接持有的上海營運子公司
+    edge: edb3d960cdb8d
+    evidence_level: primary
+    id: org.xiekai-automation-system-technology-shanghai
+    name: 協鎧自動化系統科技（上海）有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.cicahuntek.com.tw
 tax_id: '54803147'
 incorporated: '2014-04-15'
 listed: '2025-12-30'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6725#e1:
+    locator: 印刷頁71，主要業務之營業比重
+    published_date: '2026-06-05'
+    publisher: 台灣矽科宏晟科技股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.cicahuntek.com.tw/storage/investArticle/202610061426417399114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1v1%E5%90%AB%E7%94%A8%E5%8D%B0.pdf
+  tw.6725#e10:
+    locator: 第18頁，附註十五子公司，東晟科技列
+    published_date: '2026-10-06'
+    publisher: 台灣矽科宏晟科技股份有限公司
+    quote_check: found
+    title: 2026年第二季合併財務報告
+    url: https://www.cicahuntek.com.tw/storage/investArticle/202610061445059254%E7%9F%BD%E7%A7%91%E5%90%88%E4%BD%B52026Q2%E8%B2%A1%E5%A0%B1.pdf
+  tw.6725#e11:
+    locator: 第18頁，附註十五子公司，新加坡子公司列
+    published_date: '2026-10-06'
+    publisher: 台灣矽科宏晟科技股份有限公司
+    quote_check: found
+    title: 2026年第二季合併財務報告
+    url: https://www.cicahuntek.com.tw/storage/investArticle/202610061445059254%E7%9F%BD%E7%A7%91%E5%90%88%E4%BD%B52026Q2%E8%B2%A1%E5%A0%B1.pdf
+  tw.6725#e12:
+    locator: 第18頁，附註十五子公司，KIM MAN列
+    published_date: '2026-10-06'
+    publisher: 台灣矽科宏晟科技股份有限公司
+    quote_check: found
+    title: 2026年第二季合併財務報告
+    url: https://www.cicahuntek.com.tw/storage/investArticle/202610061445059254%E7%9F%BD%E7%A7%91%E5%90%88%E4%BD%B52026Q2%E8%B2%A1%E5%A0%B1.pdf
+  tw.6725#e13:
+    locator: 第18頁，附註十五子公司，境外控股及上海子公司列
+    published_date: '2026-10-06'
+    publisher: 台灣矽科宏晟科技股份有限公司
+    quote_check: found
+    title: 2026年第二季合併財務報告
+    url: https://www.cicahuntek.com.tw/storage/investArticle/202610061445059254%E7%9F%BD%E7%A7%91%E5%90%88%E4%BD%B52026Q2%E8%B2%A1%E5%A0%B1.pdf
+  tw.6725#e2:
+    locator: 第12頁，日本東晟科技
+    published_date: '2026-10-13'
+    publisher: 台灣矽科宏晟科技股份有限公司
+    quote_check: found
+    title: 2026年10月13日法人說明會簡報
+    url: https://www.cicahuntek.com.tw/storage/investArticle/202610131426407647%E7%9F%BD%E7%A7%91%E5%AE%8F%E6%99%9F%E6%B3%95%E8%AA%AA%E6%9C%83_QIC_(%E4%B8%AD%E6%96%87)_20261005%20-%20%E6%B3%95%E8%AA%AA%E7%89%88.pdf
+  tw.6725#e3:
+    locator: 系統特色
+    published_date: null
+    publisher: 台灣矽科宏晟科技股份有限公司
+    quote_check: found
+    title: 化學品供應系統
+    url: https://www.cicahuntek.com.tw/service?id=78
+  tw.6725#e4:
+    locator: 系統特色
+    published_date: null
+    publisher: 台灣矽科宏晟科技股份有限公司
+    quote_check: found
+    title: 化學品混合供應系統
+    url: https://www.cicahuntek.com.tw/service?id=79
+  tw.6725#e5:
+    locator: 系統特色
+    published_date: null
+    publisher: 台灣矽科宏晟科技股份有限公司
+    quote_check: found
+    title: 化學品稀釋供應系統
+    url: https://www.cicahuntek.com.tw/service?id=80
+  tw.6725#e6:
+    locator: 系統特色
+    published_date: null
+    publisher: 台灣矽科宏晟科技股份有限公司
+    quote_check: found
+    title: 廢液收集系統
+    url: https://www.cicahuntek.com.tw/service?id=81
+  tw.6725#e7:
+    locator: 系統特色
+    published_date: null
+    publisher: 台灣矽科宏晟科技股份有限公司
+    quote_check: found
+    title: 藥品再生回收設備系統
+    url: https://www.cicahuntek.com.tw/service?id=82
+  tw.6725#e8:
+    locator: 第13頁，美國子公司
+    published_date: '2026-10-13'
+    publisher: 台灣矽科宏晟科技股份有限公司
+    quote_check: found
+    title: 2026年10月13日法人說明會簡報
+    url: https://www.cicahuntek.com.tw/storage/investArticle/202610131426407647%E7%9F%BD%E7%A7%91%E5%AE%8F%E6%99%9F%E6%B3%95%E8%AA%AA%E6%9C%83_QIC_(%E4%B8%AD%E6%96%87)_20261005%20-%20%E6%B3%95%E8%AA%AA%E7%89%88.pdf
+  tw.6725#e9:
+    locator: 第12頁，日本東晟科技
+    published_date: '2026-10-13'
+    publisher: 台灣矽科宏晟科技股份有限公司
+    quote_check: found
+    title: 2026年10月13日法人說明會簡報
+    url: https://www.cicahuntek.com.tw/storage/investArticle/202610131426407647%E7%9F%BD%E7%A7%91%E5%AE%8F%E6%99%9F%E6%B3%95%E8%AA%AA%E6%9C%83_QIC_(%E4%B8%AD%E6%96%87)_20261005%20-%20%E6%B3%95%E8%AA%AA%E7%89%88.pdf

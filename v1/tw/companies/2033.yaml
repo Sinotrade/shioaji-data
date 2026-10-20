@@ -8,12 +8,70 @@ industry:
   l0_code: '10'
   l0_name: 鋼鐵工業
   l0_name_en: Iron and Steel
-primary_chain_position: unknown
+  l1: materials
+  l1_name: 原物料
+  l1_name_en: Materials
+  l2: mat.metals
+  l2_name: 金屬
+  l2_name_en: Metals
+  l3: metal.steel
+  l3_name: 鋼鐵
+  l3_name_en: Steel
+chain: chain.steel
+chain_stage:
+  agreement: both
+  also: []
+  reason: 一般鋼線占營收65.94%，為最大業務；研究將鋼線、鋼索及預力鋼絞線加工列為中游。
+  stage: midstream
+  stage_name: 軋延與鋼材
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 製造、加工及銷售一般鋼線、鍍鋅鋼線、預力鋼線與鋼纜。
+summary_long: 佳大世界主要從事鋼線、鍍鋅鋼線、預力鋼線、預力鋼絞線及鋼纜等產品的製造、加工與銷售。2025年營收以一般鋼線為主，占65.94%，其次為鋼纜26.38%、鍍鋅鋼線7.66%，其他占0.03%。一般鋼線及鋅鋼線應用於電纜心線、電信架空線、彈簧床、運動器材與機械五金彈簧。預力鋼線、預力鋼棒及預力鋼絞線用於基樁、電線桿、高壓水管及預力橋樑；鍍鋅與不鍍鋅鋼索、鋼纜則用於漁業、商船、林業及吊索。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_wire
+  name: 一般鋼線
+  period: '2025'
+  revenue_share_pct: 65.94
+- evidence_ids:
+  - e2
+  id: seg_galvanized
+  name: 鍍鋅鋼線
+  period: '2025'
+  revenue_share_pct: 7.66
+- evidence_ids:
+  - e2
+  id: seg_cable
+  name: 鋼纜
+  period: '2025'
+  revenue_share_pct: 26.38
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 0.03
 website: https://www.ctworld.com.tw/
 tax_id: '72072615'
 incorporated: '1973-04-23'
 listed: '2000-09-11'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2033#e2:
+    locator: 第44頁，營業比重
+    published_date: '2026-05-12'
+    publisher: 佳大世界股份有限公司
+    quote_check: not_found
+    title: 佳大世界股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=2033&colorchg=1&filename=2025_2033_20260618F04.pdf&kind=F&step=9
+  tw.2033#e6:
+    locator: 第45頁，中下游之關聯性
+    published_date: '2026-05-12'
+    publisher: 佳大世界股份有限公司
+    quote_check: not_found
+    title: 佳大世界股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=2033&colorchg=1&filename=2025_2033_20260618F04.pdf&kind=F&step=9

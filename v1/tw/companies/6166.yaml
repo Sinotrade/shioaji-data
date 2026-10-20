@@ -65,13 +65,16 @@ segments:
   revenue_share_pct: 3
 main_theme: theme.ai_server
 themes:
-- stage: assembly
+- also: []
+  stage: assembly
   theme: theme.ai_server
   tier: downstream
-- stage: control
+- also: []
+  stage: control
   theme: theme.robotics
   tier: midstream
-- stage: system
+- also: []
+  stage: system
   theme: theme.nvidia
   tier: downstream
 relations:

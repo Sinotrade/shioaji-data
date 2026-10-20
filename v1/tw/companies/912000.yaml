@@ -8,13 +8,161 @@ industry:
   l0_code: '91'
   l0_name: 存託憑證
   l0_name_en: Depositary Receipts
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.hardware
+  l2_name: 電腦與硬體
+  l2_name_en: Computers & Hardware
+  l3: hw.ems
+  l3_name: 電子製造服務（EMS）
+  l3_name_en: Electronics Manufacturing Services
+primary_chain_position: not_applicable
+summary_short: 透過子公司提供智慧終端設計製造代工，另經營物業租賃管理。
+summary_long: 晨訊科技為投資控股公司，透過子公司從事智慧終端設計製造代工及物業租賃管理。2026年上半年，智慧終端代工收入為1億7,306.9萬港元，物業出租收入為1,769萬港元，合計1億9,075.9萬港元。官網列示產品包括金融支付POS、掃碼手持終端、5G專業安全終端及AR眼鏡。集團亦投入機器人研發，首個項目已小批量交付樣機，但尚未量產。主要子公司包括上海晨興希姆通及上海希姆通，分別從事製造與設計開發業務。
+segments:
+- evidence_ids:
+  - e2
+  id: s1
+  name: 智慧終端設計製造代工
+  period: 2026年上半年
+  revenue_share_pct: null
+- evidence_ids:
+  - e2
+  id: s2
+  name: 物業租賃管理
+  period: 2026年上半年
+  revenue_share_pct: null
+main_theme: theme.5g
+themes:
+- also: []
+  stage: devices
+  theme: theme.5g
+  tier: downstream
+- also: []
+  stage: system
+  theme: theme.robotics
+  tier: downstream
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接全資製造子公司
+    details:
+    - 間接全資製造子公司
+    edge: e44d82e3df5ad
+    evidence_level: primary
+    id: org.上海晨興希姆通
+    name: 上海晨興希姆通
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 上海希姆通；設計開發子公司
+    details:
+    - 上海希姆通；設計開發子公司
+    edge: e2bbdb29332af
+    evidence_level: primary
+    id: org.希姆通信息技術-上海-有限公司
+    name: 希姆通信息技術（上海）有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.sim.com
 tax_id: '00000000'
 incorporated: '2004-10-27'
 listed: '2011-04-25'
 foreign_registration: BM 百慕達群島
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.912000#e1:
+    locator: 第19頁，附註1：一般資料及編製基準
+    published_date: '2026-09-23'
+    publisher: 晨訊科技集團有限公司
+    quote_check: found
+    title: 二零二六年中期報告
+    url: https://www.hkexnews.hk/listedco/listconews/sehk/2026/0923/2026092300399_c.pdf
+  tw.912000#e10:
+    locator: 第273頁，附註39：上海晨興希姆通主要業務欄
+    published_date: '2026-04-23'
+    publisher: 晨訊科技集團有限公司
+    quote_check: found
+    title: 二零二五年年報
+    url: https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0423/2026042300417_c.pdf
+  tw.912000#e11:
+    locator: 第27頁，附註5(i)
+    published_date: '2026-09-23'
+    publisher: 晨訊科技集團有限公司
+    quote_check: found
+    title: 二零二六年中期報告
+    url: https://www.hkexnews.hk/listedco/listconews/sehk/2026/0923/2026092300399_c.pdf
+  tw.912000#e12:
+    locator: 第273頁，附註39：上海希姆通主要業務欄
+    published_date: '2026-04-23'
+    publisher: 晨訊科技集團有限公司
+    quote_check: found
+    title: 二零二五年年報
+    url: https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0423/2026042300417_c.pdf
+  tw.912000#e2:
+    locator: 第21頁，附註3：收入；2026年上半年，單位千港元
+    published_date: '2026-09-23'
+    publisher: 晨訊科技集團有限公司
+    quote_check: found
+    title: 二零二六年中期報告
+    url: https://www.hkexnews.hk/listedco/listconews/sehk/2026/0923/2026092300399_c.pdf
+  tw.912000#e3:
+    locator: 新品產品：手持金融支付終端
+    published_date: null
+    publisher: 晨訊科技
+    quote_check: found
+    title: 晨訊科技官網
+    url: https://www.sim.com/index.html
+  tw.912000#e4:
+    locator: 產品中心：產業智慧終端
+    published_date: null
+    publisher: 晨訊科技
+    quote_check: found
+    title: 晨訊科技官網
+    url: https://www.sim.com/index.html
+  tw.912000#e5:
+    locator: 新品產品：5G專業安全終端
+    published_date: null
+    publisher: 晨訊科技
+    quote_check: found
+    title: 晨訊科技官網
+    url: https://www.sim.com/index.html
+  tw.912000#e6:
+    locator: 產品中心：穿戴式智慧終端
+    published_date: null
+    publisher: 晨訊科技
+    quote_check: found
+    title: 晨訊科技官網
+    url: https://www.sim.com/index.html
+  tw.912000#e7:
+    locator: 第2頁，主席報告書：智慧終端設計製造代工
+    published_date: '2026-09-23'
+    publisher: 晨訊科技集團有限公司
+    quote_check: found
+    title: 二零二六年中期報告
+    url: https://www.hkexnews.hk/listedco/listconews/sehk/2026/0923/2026092300399_c.pdf
+  tw.912000#e8:
+    locator: 第2頁，主席報告書：機器人業務
+    published_date: '2026-09-23'
+    publisher: 晨訊科技集團有限公司
+    quote_check: found
+    title: 二零二六年中期報告
+    url: https://www.hkexnews.hk/listedco/listconews/sehk/2026/0923/2026092300399_c.pdf
+  tw.912000#e9:
+    locator: 第273頁，附註39：附屬公司；上海晨興希姆通列，直接及間接持股欄
+    published_date: '2026-04-23'
+    publisher: 晨訊科技集團有限公司
+    quote_check: found
+    title: 二零二五年年報
+    url: https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0423/2026042300417_c.pdf

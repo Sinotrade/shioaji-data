@@ -58,13 +58,16 @@ segments:
   revenue_share_pct: 7
 main_theme: theme.cowos
 themes:
-- stage: equipment
+- also: []
+  stage: equipment
   theme: theme.cowos
   tier: upstream
-- stage: equipment_materials
+- also: []
+  stage: equipment_materials
   theme: theme.hbm
   tier: upstream
-- stage: materials
+- also: []
+  stage: materials
   theme: theme.abf
   tier: upstream
 relations:

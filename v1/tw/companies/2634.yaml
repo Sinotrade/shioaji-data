@@ -41,15 +41,16 @@ segments:
   revenue_share_pct: 2
 main_theme: theme.power_grid
 themes:
-- stage: engineering
+- also: []
+  stage: engineering
   theme: theme.power_grid
   tier: downstream
-- stage: system
+- also:
+  - stage: modules
+    tier: midstream
+  stage: system
   theme: theme.drone
   tier: downstream
-- stage: modules
-  theme: theme.drone
-  tier: midstream
 relations:
   subsidiaries:
   - as_of: '2025-09-30'

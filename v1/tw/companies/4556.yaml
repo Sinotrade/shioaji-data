@@ -8,12 +8,169 @@ industry:
   l0_code: '20'
   l0_name: 其他業
   l0_name_en: Others
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.machinery
+  l2_name: 機械與自動化
+  l2_name_en: Machinery & Automation
+  l3: mach.equipment
+  l3_name: 專用設備（非半導體）
+  l3_name_en: Specialty Equipment (Non-semiconductor)
+primary_chain_position: midstream
+summary_short: 以Filtrafine品牌銷售工業液體過濾設備、濾心、濾袋及過濾材料。
+summary_long: 旭然以Filtrafine品牌提供工業液體過濾設備與耗材，產品包括濾心、濾袋及濾殼。2026年第一季產品銷售組成以濾心／濾袋61%為主，濾殼占19%、材料占12%、UV設備占3%。其UV產品涵蓋純水殺菌與TOC降解，後者可用於超純水製程及廢水回收。公司亦推出半導體濕製程用PTFE濾心與濾殼，截至2026年6月仍處送樣測試驗證階段。已確認的海外子公司包括新加坡、越南及美國營運主體。
+segments:
+- evidence_ids:
+  - e2
+  id: filters
+  name: 濾心／濾袋
+  period: 2026-Q1
+  revenue_share_pct: 61
+- evidence_ids:
+  - e2
+  id: housings
+  name: 濾殼
+  period: 2026-Q1
+  revenue_share_pct: 19
+- evidence_ids:
+  - e2
+  id: materials
+  name: 材料
+  period: 2026-Q1
+  revenue_share_pct: 12
+- evidence_ids:
+  - e2
+  id: uv
+  name: UV設備
+  period: 2026-Q1
+  revenue_share_pct: 3
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 美國子公司
+    details:
+    - 美國子公司
+    edge: e7bd58c5a8138
+    evidence_level: primary
+    id: org.filtrafine-corporation
+    name: Filtrafine Corporation
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 新加坡子公司
+    details:
+    - 新加坡子公司
+    edge: e59316f9e73cd
+    evidence_level: primary
+    id: org.filtrafine-pte-ltd
+    name: Filtrafine Pte. Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 越南子公司
+    details:
+    - 越南子公司
+    edge: ed61aa526f439
+    evidence_level: primary
+    id: org.viet-nam-filtrafine-company-limited
+    name: (VIET NAM)Filtrafine Company Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.filtrafine.com.tw
 tax_id: '01517102'
 incorporated: '1985-11-05'
 listed: '2015-12-22'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4556#e10:
+    locator: PTFE產品測試驗證進度
+    published_date: '2026-06-08'
+    publisher: 旭然國際股份有限公司
+    quote_check: found
+    title: 旭然擘劃營運新藍圖，強攻半導體製程端過濾與AI液冷商機
+    url: https://www.filtrafine.com.tw/news-detail/show-1715486.htm
+  tw.4556#e11:
+    locator: 第3頁，報告書揭露範疇及邊界之公司名／地區／類別表；版本為2026年7月
+    published_date: null
+    publisher: 旭然國際股份有限公司
+    quote_check: found
+    title: 2025年永續報告書
+    url: https://www.filtrafine.com.tw/uploadfiles/718/%E9%97%9C%E6%96%BC%E6%88%91%E5%80%91/%E6%B0%B8%E7%BA%8C%E5%A0%B1%E5%91%8A%E6%9B%B8/2025-Sustainability_Report.pdf
+  tw.4556#e12:
+    locator: 第29頁，營運活動與價值鏈
+    published_date: null
+    publisher: 旭然國際股份有限公司
+    quote_check: found
+    title: 2025年永續報告書
+    url: https://www.filtrafine.com.tw/uploadfiles/718/%E9%97%9C%E6%96%BC%E6%88%91%E5%80%91/%E6%B0%B8%E7%BA%8C%E5%A0%B1%E5%91%8A%E6%9B%B8/2025-Sustainability_Report.pdf
+  tw.4556#e2:
+    locator: 第18頁，產品結構 v.s 毛利率；最後一欄為1Q26
+    published_date: '2026-06-08'
+    publisher: 旭然國際股份有限公司
+    quote_check: found
+    title: 115年6月8日法說會簡報
+    url: https://www.filtrafine.com.tw/uploadfiles/718/%E6%8A%95%E8%B3%87%E4%BA%BA%E5%B0%88%E5%8D%80/%E6%B3%95%E8%AA%AA%E6%9C%83/1150608%E6%B3%95%E8%AA%AA%E6%9C%83.pdf
+  tw.4556#e3:
+    locator: 濾心介紹
+    published_date: null
+    publisher: 旭然國際股份有限公司
+    quote_check: found
+    title: 液體過濾｜濾心系列產品
+    url: https://www.filtrafine.com.tw/cartridge.htm
+  tw.4556#e4:
+    locator: 濾袋介紹
+    published_date: null
+    publisher: 旭然國際股份有限公司
+    quote_check: found
+    title: 濾袋多種類型廣泛精密度範圍的過濾應用
+    url: https://www.filtrafine.com.tw/filter-bag.htm
+  tw.4556#e5:
+    locator: 過濾器介紹
+    published_date: null
+    publisher: 旭然國際股份有限公司
+    quote_check: found
+    title: 工業過濾器
+    url: https://www.filtrafine.com.tw/filter-housings.htm
+  tw.4556#e6:
+    locator: FUV系列產品介紹
+    published_date: null
+    publisher: 旭然國際股份有限公司
+    quote_check: found
+    title: UV Disinfection Unit
+    url: https://www.filtrafine.com.tw/fuv.html
+  tw.4556#e7:
+    locator: FTC系列產品介紹
+    published_date: null
+    publisher: 旭然國際股份有限公司
+    quote_check: found
+    title: TOC Reduction Unit
+    url: https://www.filtrafine.com.tw/ftc-series.html
+  tw.4556#e8:
+    locator: 聚丙烯纖維產品，型號PPSF
+    published_date: null
+    publisher: 旭然國際股份有限公司
+    quote_check: found
+    title: PP纖維
+    url: https://www.filtrafine.com.tw/pp-staple-fiber.htm
+  tw.4556#e9:
+    locator: 半導體製程端產品段落
+    published_date: '2026-06-08'
+    publisher: 旭然國際股份有限公司
+    quote_check: found
+    title: 旭然擘劃營運新藍圖，強攻半導體製程端過濾與AI液冷商機
+    url: https://www.filtrafine.com.tw/news-detail/show-1715486.htm

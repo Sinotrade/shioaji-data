@@ -47,20 +47,39 @@ segments:
   revenue_share_pct: 27.41
 main_theme: theme.ai_server
 themes:
-- stage: components
+- also: []
+  stage: components
   theme: theme.ai_server
   tier: midstream
-- stage: system
+- also: []
+  stage: system
   theme: theme.robotics
   tier: downstream
-- stage: it
+- also: []
+  stage: it
   theme: theme.data_center
   tier: midstream
-- stage: module
+- also: []
+  stage: module
   theme: theme.vcsel
   tier: downstream
 relations:
   subsidiaries:
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接控制子公司
+    details:
+    - 間接控制子公司
+    - 最終母公司
+    edge: ea7a0e631a701
+    evidence_level: primary
+    id: tw.3712
+    name: 永崴投控
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 2
   - as_of: '2026-10-15'
     confidence: ai_cross_checked
     counterparty_shares: []
@@ -71,20 +90,6 @@ relations:
     evidence_level: primary
     id: org.foxlink-arizona
     name: Foxlink Arizona Inc.
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
-  - as_of: '2026-03-31'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 間接控制子公司
-    details:
-    - 間接控制子公司
-    edge: ea7a0e631a701
-    evidence_level: primary
-    id: tw.3712
-    name: 永崴投控
     ranking_basis: unranked
     share_basis: null
     share_pct: null

@@ -37,13 +37,16 @@ segments:
   revenue_share_pct: 100
 main_theme: theme.ai_server
 themes:
-- stage: components
+- also: []
+  stage: components
   theme: theme.ai_server
   tier: midstream
-- stage: components
+- also: []
+  stage: components
   theme: theme.robotics
   tier: upstream
-- stage: parts
+- also: []
+  stage: parts
   theme: theme.liquid_cooling
   tier: upstream
 relations:
@@ -51,8 +54,9 @@ relations:
   - as_of: '2026-03-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 母公司
+    detail: 持股26.06%的合併子公司
     details:
+    - 持股26.06%的合併子公司
     - 母公司
     edge: eb726e324ae1b
     evidence_level: primary
@@ -61,7 +65,7 @@ relations:
     ranking_basis: unranked
     share_basis: null
     share_pct: null
-    weight: 1
+    weight: 2
   partners:
   - as_of: '2025-11-04'
     confidence: ai_cross_checked

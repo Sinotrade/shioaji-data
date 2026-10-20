@@ -8,12 +8,195 @@ industry:
   l0_code: '10'
   l0_name: 鋼鐵工業
   l0_name_en: Iron and Steel
-primary_chain_position: unknown
+  l1: materials
+  l1_name: 原物料
+  l1_name_en: Materials
+  l2: mat.metals
+  l2_name: 金屬
+  l2_name_en: Metals
+  l3: metal.steel
+  l3_name: 鋼鐵
+  l3_name_en: Steel
+chain: chain.steel
+chain_stage:
+  agreement: both
+  also:
+  - stage: downstream
+    stage_name: 金屬製品與螺絲
+    tier: downstream
+  reason: 線材占營收76.95%，以鋼材加工為主；另有電解拋光管件製品業務。
+  stage: midstream
+  stage_name: 軋延與鋼材
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 以碳鋼、合金鋼、不鏽鋼線材製造為主，另提供電解拋光管件。
+summary_long: 強新工業以鋼鐵線材製造為主，產品包括碳鋼、合金鋼與不鏽鋼線材，供扣件產業使用。2025年線材占營收76.95%，盤元占2.79%，電解拋光管件占13.57%，代工占6.22%，其他占0.47%。電解拋光產品包括超潔淨不鏽鋼管，應用於半導體、面板、生技醫療及高真空產業。主要海外營運子公司包括蘇州強新、滁州強新及越南強新，其中蘇州與滁州公司透過境外投資公司間接持有，越南公司則直接持有。
+segments:
+- evidence_ids:
+  - e1
+  id: wire
+  name: 線材
+  period: '2025'
+  revenue_share_pct: 76.95
+- evidence_ids:
+  - e2
+  id: wire_rod
+  name: 盤元
+  period: '2025'
+  revenue_share_pct: 2.79
+- evidence_ids:
+  - e3
+  id: ep
+  name: 電解拋光管件
+  period: '2025'
+  revenue_share_pct: 13.57
+- evidence_ids:
+  - e4
+  id: processing
+  name: 代工
+  period: '2025'
+  revenue_share_pct: 6.22
+- evidence_ids:
+  - e5
+  id: other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 0.47
+relations:
+  subsidiaries:
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過薩摩亞投資公司間接持有的營運子公司
+    details:
+    - 透過薩摩亞投資公司間接持有的營運子公司
+    edge: ea72d89a72eb9
+    evidence_level: primary
+    id: org.滁州強新潔淨材料科技有限公司
+    name: 滁州強新潔淨材料科技有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過模里西斯投資公司間接持有的營運子公司
+    details:
+    - 透過模里西斯投資公司間接持有的營運子公司
+    edge: e1e0433ae6607
+    evidence_level: primary
+    id: org.蘇州強新合金材料科技有限公司
+    name: 蘇州強新合金材料科技有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有的營運子公司
+    details:
+    - 直接持有的營運子公司
+    edge: e39ba0ff03caa
+    evidence_level: primary
+    id: org.越南強新材料科技責任有限公司
+    name: 越南強新材料科技責任有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 半導體產業：官網揭露的產品應用產業，非具名交易對象。
 website: www.newbest.com.tw
 tax_id: '84703335'
 incorporated: '1993-11-25'
 listed: '2000-05-08'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.5013#e1:
+    locator: 印刷頁69，PDF第73頁，目前之產品項目及其營業比重，線材列
+    published_date: '2026-04-30'
+    publisher: 強新工業股份有限公司
+    quote_check: not_found
+    title: 強新工業股份有限公司114年度年報
+    url: https://www.newbest.com.tw/download/114%E5%B9%B4%E5%B9%B4%E5%A0%B1(%E4%B8%8A%E5%82%B3%E7%89%88).pdf
+  tw.5013#e10:
+    locator: 印刷頁89至90，PDF第93至94頁，2026年3月31日關係企業組織圖及分工表，蘇州公司
+    published_date: '2026-04-30'
+    publisher: 強新工業股份有限公司
+    quote_check: not_found
+    title: 強新工業股份有限公司114年度年報
+    url: https://www.newbest.com.tw/download/114%E5%B9%B4%E5%B9%B4%E5%A0%B1(%E4%B8%8A%E5%82%B3%E7%89%88).pdf
+  tw.5013#e11:
+    locator: 印刷頁89至90，PDF第93至94頁，2026年3月31日關係企業組織圖及分工表，滁州公司
+    published_date: '2026-04-30'
+    publisher: 強新工業股份有限公司
+    quote_check: not_found
+    title: 強新工業股份有限公司114年度年報
+    url: https://www.newbest.com.tw/download/114%E5%B9%B4%E5%B9%B4%E5%A0%B1(%E4%B8%8A%E5%82%B3%E7%89%88).pdf
+  tw.5013#e12:
+    locator: 印刷頁89至90，PDF第93至94頁，2026年3月31日關係企業組織圖及分工表，越南公司
+    published_date: '2026-04-30'
+    publisher: 強新工業股份有限公司
+    quote_check: not_found
+    title: 強新工業股份有限公司114年度年報
+    url: https://www.newbest.com.tw/download/114%E5%B9%B4%E5%B9%B4%E5%A0%B1(%E4%B8%8A%E5%82%B3%E7%89%88).pdf
+  tw.5013#e2:
+    locator: 印刷頁69，PDF第73頁，目前之產品項目及其營業比重，盤元列
+    published_date: '2026-04-30'
+    publisher: 強新工業股份有限公司
+    quote_check: not_found
+    title: 強新工業股份有限公司114年度年報
+    url: https://www.newbest.com.tw/download/114%E5%B9%B4%E5%B9%B4%E5%A0%B1(%E4%B8%8A%E5%82%B3%E7%89%88).pdf
+  tw.5013#e3:
+    locator: 印刷頁69，PDF第73頁，目前之產品項目及其營業比重，電解拋光管件列
+    published_date: '2026-04-30'
+    publisher: 強新工業股份有限公司
+    quote_check: not_found
+    title: 強新工業股份有限公司114年度年報
+    url: https://www.newbest.com.tw/download/114%E5%B9%B4%E5%B9%B4%E5%A0%B1(%E4%B8%8A%E5%82%B3%E7%89%88).pdf
+  tw.5013#e4:
+    locator: 印刷頁69，PDF第73頁，目前之產品項目及其營業比重，代工列
+    published_date: '2026-04-30'
+    publisher: 強新工業股份有限公司
+    quote_check: not_found
+    title: 強新工業股份有限公司114年度年報
+    url: https://www.newbest.com.tw/download/114%E5%B9%B4%E5%B9%B4%E5%A0%B1(%E4%B8%8A%E5%82%B3%E7%89%88).pdf
+  tw.5013#e5:
+    locator: 印刷頁69，PDF第73頁，目前之產品項目及其營業比重，其他列
+    published_date: '2026-04-30'
+    publisher: 強新工業股份有限公司
+    quote_check: not_found
+    title: 強新工業股份有限公司114年度年報
+    url: https://www.newbest.com.tw/download/114%E5%B9%B4%E5%B9%B4%E5%A0%B1(%E4%B8%8A%E5%82%B3%E7%89%88).pdf
+  tw.5013#e6:
+    locator: 伸線事業部簡介，產品種類
+    published_date: null
+    publisher: 強新工業股份有限公司
+    quote_check: found
+    title: 伸線事業部簡介
+    url: https://www.newbest.com.tw/wire-intro.html
+  tw.5013#e7:
+    locator: 伸線事業部簡介，產品用途
+    published_date: null
+    publisher: 強新工業股份有限公司
+    quote_check: found
+    title: 伸線事業部簡介
+    url: https://www.newbest.com.tw/wire-intro.html
+  tw.5013#e8:
+    locator: 產品與服務，超潔淨管系列
+    published_date: null
+    publisher: 強新工業股份有限公司
+    quote_check: found
+    title: PIPE & TUBE超潔淨管系列
+    url: https://www.newbest.com.tw/ep-product.html
+  tw.5013#e9:
+    locator: 超潔淨管系列，適用產業說明
+    published_date: null
+    publisher: 強新工業股份有限公司
+    quote_check: found
+    title: PIPE & TUBE超潔淨管系列
+    url: https://www.newbest.com.tw/ep-product.html

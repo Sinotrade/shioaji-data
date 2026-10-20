@@ -49,12 +49,12 @@ segments:
   revenue_share_pct: null
 main_theme: theme.robotics
 themes:
-- stage: components
+- also:
+  - stage: system
+    tier: downstream
+  stage: components
   theme: theme.robotics
   tier: upstream
-- stage: system
-  theme: theme.robotics
-  tier: downstream
 relations:
   competitors:
   - as_of: '2022-12-31'

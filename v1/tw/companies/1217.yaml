@@ -8,12 +8,208 @@ industry:
   l0_code: '02'
   l0_name: 食品工業
   l0_name_en: Food
-primary_chain_position: unknown
+  l1: consumer
+  l1_name: 消費
+  l1_name_en: Consumer
+  l2: cons.staples
+  l2_name: 民生消費
+  l2_name_en: Consumer Staples
+  l3: food.beverage
+  l3_name: 飲料
+  l3_name_en: Beverages
+primary_chain_position: not_applicable
+summary_short: 製造銷售飲料、穀奶及加工食品，以飲料類為最大營收來源。
+summary_long: 愛之味以飲料、穀奶及加工食品為主要業務。2025年度營收以飲料類38.32%居首，其次為傳統類21.46%、穀奶類20.46%及甜點類14.04%，其餘為油品、保健與其他類。產品包括分解茶油切四季春、純濃燕麥、土豆麵筋及五穀開運八寶粥，涵蓋茶飲、燕麥飲品、傳統食品與甜點。合併子公司包括雲乳食品科技公司與愛健生命科學公司，另透過新加坡愛寶諾公司間接持有上海愛之味食品公司。
+segments:
+- evidence_ids:
+  - e02
+  id: seg_beverage
+  name: 飲料類
+  period: '2025'
+  revenue_share_pct: 38.32
+- evidence_ids:
+  - e02
+  id: seg_traditional
+  name: 傳統類
+  period: '2025'
+  revenue_share_pct: 21.46
+- evidence_ids:
+  - e03
+  id: seg_grain
+  name: 穀奶類
+  period: '2025'
+  revenue_share_pct: 20.46
+- evidence_ids:
+  - e02
+  id: seg_dessert
+  name: 甜點類
+  period: '2025'
+  revenue_share_pct: 14.04
+- evidence_ids:
+  - e04
+  id: seg_oil
+  name: 油品類
+  period: '2025'
+  revenue_share_pct: 1.08
+- evidence_ids:
+  - e05
+  id: seg_health
+  name: 保健類
+  period: '2025'
+  revenue_share_pct: 0.47
+- evidence_ids:
+  - e06
+  id: seg_other
+  name: 其他類
+  period: '2025'
+  revenue_share_pct: 4.17
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 經新加坡愛寶諾公司間接持有的合併子公司
+    details:
+    - 經新加坡愛寶諾公司間接持有的合併子公司
+    edge: e00a3df8ed02d
+    evidence_level: primary
+    id: org.上海愛之味食品公司
+    name: 上海愛之味食品公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接合併子公司
+    details:
+    - 直接合併子公司
+    edge: e2cfa349700e8
+    evidence_level: primary
+    id: org.愛健生命科學公司
+    name: 愛健生命科學公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接合併子公司
+    details:
+    - 直接合併子公司
+    edge: ec177603fe1e7
+    evidence_level: primary
+    id: org.雲乳食品科技公司
+    name: 雲乳食品科技公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.agv.com.tw
 tax_id: '65534366'
 incorporated: '1971-06-26'
 listed: '1989-10-28'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1217#e02:
+    locator: 內頁83，肆、營運概況，一、業務內容，(二)營業比重，114年度
+    published_date: null
+    publisher: 愛之味股份有限公司
+    quote_check: found
+    title: 愛之味股份有限公司114年度年報
+    url: https://www.agv.com.tw/wp-content/uploads/46b706b332f84267334dcb66005071a9.pdf
+  tw.1217#e03:
+    locator: 內頁83，(二)營業比重，114年度穀奶類銷售金額及比例
+    published_date: null
+    publisher: 愛之味股份有限公司
+    quote_check: found
+    title: 愛之味股份有限公司114年度年報
+    url: https://www.agv.com.tw/wp-content/uploads/46b706b332f84267334dcb66005071a9.pdf
+  tw.1217#e04:
+    locator: 內頁83，(二)營業比重，114年度油品類銷售金額及比例
+    published_date: null
+    publisher: 愛之味股份有限公司
+    quote_check: found
+    title: 愛之味股份有限公司114年度年報
+    url: https://www.agv.com.tw/wp-content/uploads/46b706b332f84267334dcb66005071a9.pdf
+  tw.1217#e05:
+    locator: 內頁83，(二)營業比重，114年度保健類銷售金額及比例
+    published_date: null
+    publisher: 愛之味股份有限公司
+    quote_check: found
+    title: 愛之味股份有限公司114年度年報
+    url: https://www.agv.com.tw/wp-content/uploads/46b706b332f84267334dcb66005071a9.pdf
+  tw.1217#e06:
+    locator: 內頁83，(二)營業比重，114年度其他類銷售金額及比例
+    published_date: null
+    publisher: 愛之味股份有限公司
+    quote_check: found
+    title: 愛之味股份有限公司114年度年報
+    url: https://www.agv.com.tw/wp-content/uploads/46b706b332f84267334dcb66005071a9.pdf
+  tw.1217#e07:
+    locator: 商品標題及飲料類分類
+    published_date: null
+    publisher: 愛之味股份有限公司
+    quote_check: found
+    title: 分解茶油切四季春 – 愛之味股份有限公司
+    url: https://www.agv.com.tw/product/%E5%88%86%E8%A7%A3%E8%8C%B6%E6%B2%B9%E5%88%87%E5%9B%9B%E5%AD%A3%E6%98%A5/
+  tw.1217#e08:
+    locator: 商品標題
+    published_date: null
+    publisher: 愛之味股份有限公司
+    quote_check: found
+    title: 純濃燕麥(天然原味) – 愛之味股份有限公司
+    url: https://www.agv.com.tw/product/oatdrink_original/
+  tw.1217#e09:
+    locator: 商品標題及傳統美食分類
+    published_date: null
+    publisher: 愛之味股份有限公司
+    quote_check: not_found
+    title: 土豆麵筋 – 愛之味股份有限公司
+    url: https://www.agv.com.tw/product/%E5%9C%9F%E8%B1%86%E9%BA%B5%E7%AD%8B/
+  tw.1217#e10:
+    locator: 商品標題及甜點類分類
+    published_date: null
+    publisher: 愛之味股份有限公司
+    quote_check: found
+    title: 五穀開運八寶粥 – 愛之味股份有限公司
+    url: https://www.agv.com.tw/product/%E4%BA%94%E7%A9%80%E9%96%8B%E9%81%8B%E5%85%AB%E5%AF%B6%E7%B2%A5/
+  tw.1217#e11:
+    locator: 內頁13，附註四(三)2，列入合併財務報表之子公司表，直接投資公司分組標頭
+    published_date: '2026-08-11'
+    publisher: 愛之味股份有限公司
+    quote_check: found
+    title: 愛之味股份有限公司及其子公司115及114年第2季合併財務報告
+    url: https://www.agv.com.tw/wp-content/uploads/de93b6ed582d0dd48ad620291f427e7c.pdf
+  tw.1217#e12:
+    locator: 內頁13，附註四(三)2，愛之味直接持有之合併子公司表，雲乳食品科技公司列
+    published_date: '2026-08-11'
+    publisher: 愛之味股份有限公司
+    quote_check: found
+    title: 愛之味股份有限公司及其子公司115及114年第2季合併財務報告
+    url: https://www.agv.com.tw/wp-content/uploads/de93b6ed582d0dd48ad620291f427e7c.pdf
+  tw.1217#e13:
+    locator: 內頁13，附註四(三)2，愛之味直接持有之合併子公司表，愛健生命科學公司列
+    published_date: '2026-08-11'
+    publisher: 愛之味股份有限公司
+    quote_check: found
+    title: 愛之味股份有限公司及其子公司115及114年第2季合併財務報告
+    url: https://www.agv.com.tw/wp-content/uploads/de93b6ed582d0dd48ad620291f427e7c.pdf
+  tw.1217#e14:
+    locator: 內頁13，附註四(三)2，(3)新加坡愛寶諾公司持有之合併子公司表
+    published_date: '2026-08-11'
+    publisher: 愛之味股份有限公司
+    quote_check: found
+    title: 愛之味股份有限公司及其子公司115及114年第2季合併財務報告
+    url: https://www.agv.com.tw/wp-content/uploads/de93b6ed582d0dd48ad620291f427e7c.pdf
+  tw.1217#e15:
+    locator: 內頁79，附表八註1
+    published_date: '2026-08-11'
+    publisher: 愛之味股份有限公司
+    quote_check: found
+    title: 愛之味股份有限公司及其子公司115及114年第2季合併財務報告
+    url: https://www.agv.com.tw/wp-content/uploads/de93b6ed582d0dd48ad620291f427e7c.pdf

@@ -43,10 +43,12 @@ segments:
   revenue_share_pct: 3.56
 main_theme: theme.ev
 themes:
-- stage: parts
+- also: []
+  stage: parts
   theme: theme.ev
   tier: midstream
-- stage: board_materials
+- also: []
+  stage: board_materials
   theme: theme.ai_server
   tier: upstream
 relations:

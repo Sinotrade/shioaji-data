@@ -41,13 +41,16 @@ segments:
   revenue_share_pct: 11
 main_theme: theme.ai_server
 themes:
-- stage: assembly
+- also: []
+  stage: assembly
   theme: theme.ai_server
   tier: downstream
-- stage: control
+- also: []
+  stage: control
   theme: theme.robotics
   tier: midstream
-- stage: modules
+- also: []
+  stage: modules
   theme: theme.drone
   tier: midstream
 relations:

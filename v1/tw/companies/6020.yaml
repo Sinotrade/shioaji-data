@@ -8,12 +8,142 @@ industry:
   l0_code: '17'
   l0_name: 金融保險業
   l0_name_en: Financial and Insurance
-primary_chain_position: unknown
+  l1: finance
+  l1_name: 金融
+  l1_name_en: Financials
+  l2: fin.capital
+  l2_name: 證券與資產管理
+  l2_name_en: Securities & Asset Management
+  l3: fin.securities
+  l3_name: 證券與期貨
+  l3_name_en: Securities & Futures
+chain: chain.finance
+chain_stage:
+  agreement: both
+  also: []
+  reason: 主要經營證券自營、經紀與承銷，自營部門收入最高，屬金融服務。
+  stage: na
+  stage_name: 金融服務
+  tier: not_applicable
+primary_chain_position: not_applicable
+summary_short: 經營證券自營、經紀、承銷、融資融券及期貨交易輔助業務。
+summary_long: 大展證券經營證券經紀、自營與承銷，並提供融資融券及期貨交易輔助服務。經紀業務受託買賣有價證券，自營業務在集中交易市場或營業處所自行買賣，承銷業務辦理有價證券承銷。依2025年合併財報揭露的部門收入比較，自營為三個應報導部門中收入最高者。集團持有大展證券投資顧問99.695%股權，並全資持有大展創業投資管理顧問及大展一號創業投資；三家子公司分別從事投資顧問、創業投資管理顧問與創業投資業務。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_brokerage
+  name: 經紀部門
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e2
+  id: seg_underwriting
+  name: 承銷部門
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e2
+  id: seg_proprietary
+  name: 自營部門
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他部門
+  period: '2025'
+  revenue_share_pct: null
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股99.695%的投資顧問子公司
+    details:
+    - 持股99.695%的投資顧問子公司
+    edge: e7f760d8d7d19
+    evidence_level: primary
+    id: org.tachan-investment-consulting
+    name: 大展證券投資顧問股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資創業投資子公司
+    details:
+    - 全資創業投資子公司
+    edge: e73ea8355c404
+    evidence_level: primary
+    id: org.tachan-no1-venture-capital
+    name: 大展一號創業投資股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資創業投資管理顧問子公司
+    details:
+    - 全資創業投資管理顧問子公司
+    edge: e38f591ca1eaf
+    evidence_level: primary
+    id: org.tachan-venture-capital-management-consulting
+    name: 大展創業投資管理顧問股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.tachan.com.tw
 tax_id: '22955802'
 incorporated: '1988-06-17'
 listed: '2003-01-23'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6020#e1:
+    locator: 第13頁，附註一、公司沿革
+    published_date: '2026-03-11'
+    publisher: 大展證券股份有限公司
+    quote_check: found
+    title: 大展證券股份有限公司及子公司114年度合併財務報告
+    url: https://www.tachan.com.tw/assets/corpgovernance/finance/大展_114年度財報(合併)Final.pdf
+  tw.6020#e2:
+    locator: 第82頁，附註十四、部門資訊；114年度收入合計依序為經紀、承銷、自營、其他、調節及銷除、合計，單位新臺幣千元
+    published_date: '2026-03-11'
+    publisher: 大展證券股份有限公司
+    quote_check: found
+    title: 大展證券股份有限公司及子公司114年度合併財務報告
+    url: https://www.tachan.com.tw/assets/corpgovernance/finance/大展_114年度財報(合併)Final.pdf
+  tw.6020#e3:
+    locator: 第19頁，合併財務報表編製主體表，第一家子公司
+    published_date: '2026-03-11'
+    publisher: 大展證券股份有限公司
+    quote_check: found
+    title: 大展證券股份有限公司及子公司114年度合併財務報告
+    url: https://www.tachan.com.tw/assets/corpgovernance/finance/大展_114年度財報(合併)Final.pdf
+  tw.6020#e4:
+    locator: 第19頁，合併財務報表編製主體表，第二家子公司
+    published_date: '2026-03-11'
+    publisher: 大展證券股份有限公司
+    quote_check: found
+    title: 大展證券股份有限公司及子公司114年度合併財務報告
+    url: https://www.tachan.com.tw/assets/corpgovernance/finance/大展_114年度財報(合併)Final.pdf
+  tw.6020#e5:
+    locator: 第19頁，合併財務報表編製主體表，第三家子公司
+    published_date: '2026-03-11'
+    publisher: 大展證券股份有限公司
+    quote_check: found
+    title: 大展證券股份有限公司及子公司114年度合併財務報告
+    url: https://www.tachan.com.tw/assets/corpgovernance/finance/大展_114年度財報(合併)Final.pdf
+  tw.6020#e6:
+    locator: 第19頁，合併財務報表編製主體表；依序對應大展投顧、大展創業投資管理顧問、大展一號創業投資，兩欄為2025及2024年底持有權益百分比
+    published_date: '2026-03-11'
+    publisher: 大展證券股份有限公司
+    quote_check: not_found
+    title: 大展證券股份有限公司及子公司114年度合併財務報告
+    url: https://www.tachan.com.tw/assets/corpgovernance/finance/大展_114年度財報(合併)Final.pdf

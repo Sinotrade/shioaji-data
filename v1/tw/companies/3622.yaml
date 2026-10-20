@@ -8,12 +8,149 @@ industry:
   l0_code: '26'
   l0_name: 光電業
   l0_name_en: Optoelectronic
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.electrical
+  l2_name: 電機與重電
+  l2_name_en: Electrical Equipment & Power Grid
+  l3: elec.wire_cable
+  l3_name: 電線電纜
+  l3_name_en: Wires & Cables
+primary_chain_position: not_applicable
+summary_short: 以高壓電纜附屬器材為主要營收，另製造觸控面板並提供顯示貼合與組裝。
+summary_long: 洋華經營機電與光電兩類業務，公司發言人揭露2025年兩者營收約為八比二，機電為主要收入來源。機電產品包含高壓電纜接續匣、終端匣與保護裝置，應用於電纜連接、防護及電力傳輸。光電產品包括電容式觸控面板、保護玻璃與表面處理，並提供電子紙前導光開發、顯示器全貼合及整機組裝服務。電容式產品涵蓋G/F/F、GF1與G/G結構。官網2025年溫室氣體盤查資料列示的子公司包括洋華光電（越南）責任有限公司與台灣適而優股份有限公司。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_mechanical
+  name: 機電業務（約數）
+  period: '2025'
+  revenue_share_pct: 80
+- evidence_ids:
+  - e2
+  id: seg_optoelectronics
+  name: 光電業務（約數）
+  period: '2025'
+  revenue_share_pct: 20
+main_theme: theme.power_grid
+themes:
+- also: []
+  stage: equipment
+  theme: theme.power_grid
+  tier: midstream
+relations:
+  subsidiaries:
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 台灣營運子公司
+    details:
+    - 台灣營運子公司
+    edge: e0cdd3727d1d6
+    evidence_level: primary
+    id: org.台灣適而優股份有限公司
+    name: 台灣適而優股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 越南營運子公司
+    details:
+    - 越南營運子公司
+    edge: ede7c2cb63b8b
+    evidence_level: primary
+    id: org.洋華光電-越南-責任有限公司
+    name: 洋華光電(越南)責任有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.yfo.com.tw
 tax_id: '80260061'
 incorporated: '2002-07-30'
 listed: '2009-03-25'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3622#e10:
+    locator: 製程整合服務
+    published_date: null
+    publisher: 洋華光電股份有限公司
+    quote_check: found
+    title: Monitor／整機組裝
+    url: https://www.yfo.com.tw/productdetail_tw.php?id=116
+  tw.3622#e11:
+    locator: 一、溫室氣體盤查；2024及2025年表格，母公司小計與子公司小計之間兩列
+    published_date: null
+    publisher: 洋華光電股份有限公司
+    quote_check: found
+    title: 環境永續
+    url: https://www.yfo.com.tw/esg_tw.php?id=103
+  tw.3622#e12:
+    locator: 印刷頁54，本公司投資及綜合持股比例；2024年12月31日
+    published_date: null
+    publisher: 洋華光電股份有限公司
+    quote_check: found
+    title: 洋華光電股份有限公司113年度年報
+    url: https://www.yfo.com.tw/_i/assets/upload/files/2025%20annual%20report.pdf
+  tw.3622#e2:
+    locator: 李宜秦報導；發言人何逢有說明營收組成段落
+    published_date: '2026-01-19'
+    publisher: MoneyDJ理財網
+    quote_check: found
+    title: 洋華增設光電產線，有望帶動業績上揚
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=4c89669e-d54a-4b80-9dd8-34733bf30481
+  tw.3622#e3:
+    locator: 印刷頁60，主要產品之營業比重；113年度欄
+    published_date: null
+    publisher: 洋華光電股份有限公司
+    quote_check: found
+    title: 洋華光電股份有限公司113年度年報
+    url: https://www.yfo.com.tw/_i/assets/upload/files/2025%20annual%20report.pdf
+  tw.3622#e4:
+    locator: 電力電纜附屬器材自製能力段落
+    published_date: null
+    publisher: 洋華光電股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.yfo.com.tw/about_tw_1.php
+  tw.3622#e5:
+    locator: 產品說明
+    published_date: null
+    publisher: 洋華光電股份有限公司
+    quote_check: found
+    title: 屋內／屋外型電纜終端匣EB-A
+    url: https://www.yfo.com.tw/productdetail_tw.php?id=112
+  tw.3622#e6:
+    locator: 產品介紹
+    published_date: null
+    publisher: 洋華光電股份有限公司
+    quote_check: found
+    title: 電容式觸控面板
+    url: https://www.yfo.com.tw/productdetail_tw.php?id=114
+  tw.3622#e7:
+    locator: 產品標題及介紹
+    published_date: null
+    publisher: 洋華光電股份有限公司
+    quote_check: found
+    title: 電子紙顯示器EPD／ChLCD前導光貼合技術
+    url: https://www.yfo.com.tw/productdetail_tw.php?id=117
+  tw.3622#e8:
+    locator: 保護玻璃產品介紹
+    published_date: null
+    publisher: 洋華光電股份有限公司
+    quote_check: found
+    title: 強化玻璃／表面處理
+    url: https://www.yfo.com.tw/productdetail_tw.php?id=111
+  tw.3622#e9:
+    locator: 組裝與全貼合技術介紹
+    published_date: null
+    publisher: 洋華光電股份有限公司
+    quote_check: found
+    title: Monitor／整機組裝
+    url: https://www.yfo.com.tw/productdetail_tw.php?id=116

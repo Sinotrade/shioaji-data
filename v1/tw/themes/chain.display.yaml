@@ -51,7 +51,7 @@ members:
 - id: tw.2409
   detail: 顯示科技占營收48%，以面板為主；另提供Micro LED顯示產品及場域整合應用。
   as_of: '2026-10-14'
-  evidence: &id001
+  evidence:
   - tw.2409#e01
   - tw.2409#e02
   - tw.2409#e06
@@ -63,7 +63,10 @@ members:
 - id: tw.2409
   detail: 顯示科技占營收48%，以面板為主；另提供Micro LED顯示產品及場域整合應用。
   as_of: '2026-10-14'
-  evidence: *id001
+  evidence:
+  - tw.2409#e01
+  - tw.2409#e02
+  - tw.2409#e06
   confidence: ai_cross_checked
   source: classification
   stage: device
@@ -122,7 +125,7 @@ members:
 - id: tw.3673
   detail: 觸控模組占營收85.38%，屬面板與模組；另提供上游保護外蓋。
   as_of: '2026-10-15'
-  evidence: &id002
+  evidence:
   - tw.3673#e1
   - tw.3673#e2
   confidence: ai_cross_checked
@@ -133,7 +136,9 @@ members:
 - id: tw.3673
   detail: 觸控模組占營收85.38%，屬面板與模組；另提供上游保護外蓋。
   as_of: '2026-10-15'
-  evidence: *id002
+  evidence:
+  - tw.3673#e1
+  - tw.3673#e2
   confidence: ai_cross_checked
   source: classification
   stage: materials
@@ -142,7 +147,7 @@ members:
 - id: tw.3714
   detail: 主要供應LED磊晶、晶粒及背光光源元件，屬上游；另明確提供顯示用模組。
   as_of: '2026-10-15'
-  evidence: &id003
+  evidence:
   - tw.3714#e5
   - tw.3714#e7
   - tw.3714#e8
@@ -156,7 +161,12 @@ members:
 - id: tw.3714
   detail: 主要供應LED磊晶、晶粒及背光光源元件，屬上游；另明確提供顯示用模組。
   as_of: '2026-10-15'
-  evidence: *id003
+  evidence:
+  - tw.3714#e5
+  - tw.3714#e7
+  - tw.3714#e8
+  - tw.3714#e9
+  - tw.3714#e11
   confidence: ai_cross_checked
   source: classification
   stage: panel
@@ -213,7 +223,7 @@ members:
 - id: tw.6120
   detail: 以顯示器與背光模組製造為主，另提供導光板及專業顯示系統整合。
   as_of: '2026-10-18'
-  evidence: &id004
+  evidence:
   - tw.6120#e1
   - tw.6120#e2
   - tw.6120#e3
@@ -225,7 +235,10 @@ members:
 - id: tw.6120
   detail: 以顯示器與背光模組製造為主，另提供導光板及專業顯示系統整合。
   as_of: '2026-10-18'
-  evidence: *id004
+  evidence:
+  - tw.6120#e1
+  - tw.6120#e2
+  - tw.6120#e3
   confidence: ai_cross_checked
   source: classification
   stage: device
@@ -234,16 +247,31 @@ members:
 - id: tw.6120
   detail: 以顯示器與背光模組製造為主，另提供導光板及專業顯示系統整合。
   as_of: '2026-10-18'
-  evidence: *id004
+  evidence:
+  - tw.6120#e1
+  - tw.6120#e2
+  - tw.6120#e3
   confidence: ai_cross_checked
   source: classification
   stage: materials
   tier: upstream
   stage_role: also
+- id: tw.6143
+  detail: 電子書閱讀器占合併營收六至七成，主要提供電子紙終端產品設計與OEM／ODM製造。
+  as_of: '2026-10-20'
+  evidence:
+  - tw.6143#e2
+  - tw.6143#e4
+  - tw.6143#e5
+  confidence: ai_cross_checked
+  source: classification
+  stage: device
+  tier: downstream
+  stage_role: primary
 - id: tw.6176
   detail: 背光模組為營收大宗，另透過子公司提供顯示器用高階光學鍍膜。
   as_of: '2026-10-15'
-  evidence: &id005
+  evidence:
   - tw.6176#e1
   - tw.6176#e2
   confidence: ai_cross_checked
@@ -254,7 +282,9 @@ members:
 - id: tw.6176
   detail: 背光模組為營收大宗，另透過子公司提供顯示器用高階光學鍍膜。
   as_of: '2026-10-15'
-  evidence: *id005
+  evidence:
+  - tw.6176#e1
+  - tw.6176#e2
   confidence: ai_cross_checked
   source: classification
   stage: materials
@@ -285,7 +315,7 @@ members:
 - id: tw.6854
   detail: MicroLED CoC晶片為最大收入項目，另銷售巨量轉移設備並經營顯示模組與面板。
   as_of: '2026-10-18'
-  evidence: &id006
+  evidence:
   - tw.6854#e1
   - tw.6854#e3
   - tw.6854#e4
@@ -299,7 +329,12 @@ members:
 - id: tw.6854
   detail: MicroLED CoC晶片為最大收入項目，另銷售巨量轉移設備並經營顯示模組與面板。
   as_of: '2026-10-18'
-  evidence: *id006
+  evidence:
+  - tw.6854#e1
+  - tw.6854#e3
+  - tw.6854#e4
+  - tw.6854#e5
+  - tw.6854#e6
   confidence: ai_cross_checked
   source: classification
   stage: panel
@@ -308,7 +343,12 @@ members:
 - id: tw.6854
   detail: MicroLED CoC晶片為最大收入項目，另銷售巨量轉移設備並經營顯示模組與面板。
   as_of: '2026-10-18'
-  evidence: *id006
+  evidence:
+  - tw.6854#e1
+  - tw.6854#e3
+  - tw.6854#e4
+  - tw.6854#e5
+  - tw.6854#e6
   confidence: ai_cross_checked
   source: classification
   stage: tools
@@ -328,7 +368,7 @@ members:
 - id: tw.8069
   detail: 研究內容以電子紙顯示器及模組定位中游，另製造電子紙薄膜與材料。
   as_of: '2026-10-14'
-  evidence: &id007
+  evidence:
   - tw.8069#e1
   - tw.8069#e2
   confidence: ai_cross_checked
@@ -339,12 +379,25 @@ members:
 - id: tw.8069
   detail: 研究內容以電子紙顯示器及模組定位中游，另製造電子紙薄膜與材料。
   as_of: '2026-10-14'
-  evidence: *id007
+  evidence:
+  - tw.8069#e1
+  - tw.8069#e2
   confidence: ai_cross_checked
   source: classification
   stage: materials
   tier: upstream
   stage_role: also
+- id: tw.8105
+  detail: 液晶顯示模組占2025年營收87.71%，為最大收入來源，主要屬面板與模組階段。
+  as_of: '2026-10-20'
+  evidence:
+  - tw.8105#e1
+  - tw.8105#e2
+  confidence: ai_cross_checked
+  source: classification
+  stage: panel
+  tier: midstream
+  stage_role: primary
 - id: tw.8215
   detail: 機能膜為主要業務，顯示器產品包括偏光片及智慧調光膜。
   as_of: '2026-10-18'
@@ -356,4 +409,16 @@ members:
   stage: materials
   tier: upstream
   stage_role: primary
-as_of: '2026-10-18'
+- id: tw.8240
+  detail: 2025年LCD材料占營收80.57%，主要供應擴散膜、反射片、增亮膜及導光板，屬上游光學材料。
+  as_of: '2026-10-20'
+  evidence:
+  - tw.8240#e2
+  - tw.8240#e3
+  - tw.8240#e4
+  confidence: ai_cross_checked
+  source: classification
+  stage: materials
+  tier: upstream
+  stage_role: primary
+as_of: '2026-10-20'

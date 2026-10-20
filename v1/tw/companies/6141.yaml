@@ -8,12 +8,204 @@ industry:
   l0_code: '28'
   l0_name: 電子零組件業
   l0_name_en: Electronic Parts and Components
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.pcb
+  l3_name: 印刷電路板
+  l3_name_en: Printed Circuit Boards
+chain: chain.pcb
+chain_stage:
+  agreement: both
+  also: []
+  reason: 印刷電路板占營收100%，主要製造半導體測試板、HDI及軟硬結合板。
+  stage: board
+  stage_name: 電路板與載板製造
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 製造與銷售印刷電路板，產品包括半導體測試板、HDI及軟硬結合板。
+summary_long: 柏承科技以印刷電路板製造與銷售為核心，2025年印刷電路板占營收100%。台灣廠提供半導體測試板及全製程自製服務，可承接急件樣品與小量生產。集團產品包含HDI高階電路板及HDI軟硬結合板，應用涵蓋5G通訊模組、物聯網與Mini／Micro LED直顯屏。零件封裝載板列為樣品階段。昆山與南通營運公司為間接子公司，業務均為印刷電路板生產及銷售。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_pcb
+  name: 印刷電路板
+  period: '2025'
+  revenue_share_pct: 100
+main_theme: theme.5g
+themes:
+- also: []
+  stage: components
+  theme: theme.5g
+  tier: upstream
+- also: []
+  stage: packaging
+  theme: theme.mini_led
+  tier: midstream
+relations:
+  subsidiaries:
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有的轉投資子公司
+    details:
+    - 直接持有的轉投資子公司
+    edge: e3674b871f10a
+    evidence_level: primary
+    id: org.plotech-bvi
+    name: PLOTECH (BVI) CO., LTD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 經BVI子公司間接持有的轉投資公司
+    details:
+    - 經BVI子公司間接持有的轉投資公司
+    edge: ed4b32924337b
+    evidence_level: primary
+    id: org.plotech-cayman
+    name: PLOTECH (CAYMAN) CO., LTD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持有的印刷電路板銷售子公司
+    details:
+    - 間接持有的印刷電路板銷售子公司
+    edge: ebe1d00556f02
+    evidence_level: primary
+    id: org.plotech-hong-kong
+    name: 柏承科技(香港)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持有的印刷電路板製造子公司
+    details:
+    - 間接持有的印刷電路板製造子公司
+    edge: e26da00ce4046
+    evidence_level: primary
+    id: org.plotech-kunshan
+    name: 柏承科技(昆山)股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持有的印刷電路板製造子公司
+    details:
+    - 間接持有的印刷電路板製造子公司
+    edge: e86ac923fa69f
+    evidence_level: primary
+    id: org.plotech-nantong-microelectronics
+    name: 柏承(南通)微電子科技有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.plotech.com
 tax_id: '23750095'
 incorporated: '1990-05-20'
 listed: '2003-10-22'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6141#e1:
+    locator: 第32頁，Business Overview，Sales breakdown；PDF第36頁
+    published_date: '2026-05-15'
+    publisher: 柏承科技股份有限公司
+    quote_check: unreachable
+    title: 柏承科技114年度年報英文版
+    url: https://doc.twse.com.tw/pdf/2025_6141_20260624FE4_20260913_121432.pdf
+  tw.6141#e10:
+    locator: 第13頁，附註四（三），昆山子公司列
+    published_date: null
+    publisher: 柏承科技股份有限公司
+    quote_check: found
+    title: 柏承科技114年第三季合併財務報告
+    url: https://www.plotech.com/wp-content/uploads/2025/11/114Q3-%E5%90%88%E4%BD%B5.pdf
+  tw.6141#e11:
+    locator: 第13頁，附註四（三），香港子公司列
+    published_date: null
+    publisher: 柏承科技股份有限公司
+    quote_check: found
+    title: 柏承科技114年第三季合併財務報告
+    url: https://www.plotech.com/wp-content/uploads/2025/11/114Q3-%E5%90%88%E4%BD%B5.pdf
+  tw.6141#e12:
+    locator: 第13頁，附註四（三），南通子公司列
+    published_date: null
+    publisher: 柏承科技股份有限公司
+    quote_check: found
+    title: 柏承科技114年第三季合併財務報告
+    url: https://www.plotech.com/wp-content/uploads/2025/11/114Q3-%E5%90%88%E4%BD%B5.pdf
+  tw.6141#e2:
+    locator: 我們的優勢
+    published_date: null
+    publisher: 柏承科技股份有限公司
+    quote_check: found
+    title: 柏承科技官網首頁
+    url: https://www.plotech.com/
+  tw.6141#e3:
+    locator: 我們的優勢
+    published_date: null
+    publisher: 柏承科技股份有限公司
+    quote_check: found
+    title: 柏承科技官網首頁
+    url: https://www.plotech.com/
+  tw.6141#e4:
+    locator: 未來發展，簡報標示03；PDF第4頁
+    published_date: '2025-12-26'
+    publisher: 柏承科技股份有限公司
+    quote_check: found
+    title: 柏承科技2025法人說明會簡報
+    url: https://mopsov.twse.com.tw/nas/STR/614120251226M001.pdf
+  tw.6141#e5:
+    locator: 未來發展，RGB直顯屏；PDF第4頁
+    published_date: '2025-12-26'
+    publisher: 柏承科技股份有限公司
+    quote_check: found
+    title: 柏承科技2025法人說明會簡報
+    url: https://mopsov.twse.com.tw/nas/STR/614120251226M001.pdf
+  tw.6141#e6:
+    locator: 未來發展，HDI軟硬結合板；PDF第4頁
+    published_date: '2025-12-26'
+    publisher: 柏承科技股份有限公司
+    quote_check: found
+    title: 柏承科技2025法人說明會簡報
+    url: https://mopsov.twse.com.tw/nas/STR/614120251226M001.pdf
+  tw.6141#e7:
+    locator: 未來發展，零件封裝載板；PDF第4頁
+    published_date: '2025-12-26'
+    publisher: 柏承科技股份有限公司
+    quote_check: found
+    title: 柏承科技2025法人說明會簡報
+    url: https://mopsov.twse.com.tw/nas/STR/614120251226M001.pdf
+  tw.6141#e8:
+    locator: 第13頁，附註四（三）合併基礎，列入合併財務報告之子公司
+    published_date: null
+    publisher: 柏承科技股份有限公司
+    quote_check: found
+    title: 柏承科技114年第三季合併財務報告
+    url: https://www.plotech.com/wp-content/uploads/2025/11/114Q3-%E5%90%88%E4%BD%B5.pdf
+  tw.6141#e9:
+    locator: 第13頁，附註四（三），BVI投資CAYMAN子公司列
+    published_date: null
+    publisher: 柏承科技股份有限公司
+    quote_check: found
+    title: 柏承科技114年第三季合併財務報告
+    url: https://www.plotech.com/wp-content/uploads/2025/11/114Q3-%E5%90%88%E4%BD%B5.pdf

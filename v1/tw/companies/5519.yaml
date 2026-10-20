@@ -8,12 +8,93 @@ industry:
   l0_code: '14'
   l0_name: 建材營造業
   l0_name_en: Building Material and Construction
-primary_chain_position: unknown
+  l1: realestate
+  l1_name: 不動產
+  l1_name_en: Real Estate
+  l2: re.dev
+  l2_name: 不動產
+  l2_name_en: Real Estate
+  l3: re.developer
+  l3_name: 建設開發
+  l3_name_en: Property Development
+primary_chain_position: not_applicable
+summary_short: 以住宅開發及建屋銷售為主，兼營工程承攬與租賃。
+summary_long: 隆大以住宅開發與建屋銷售為主，並承攬民間及公共營造工程，另有租賃收入。2025年度建屋銷售占營收90.70%，營造工程占8.77%，租賃占0.53%。自建案推案以大高雄為主，並逐步拓展北部及東部；營造承攬地區涵蓋北、中、南部。產品以新建電梯大樓與工程承攬為主，公司亦持有日本株式會社鳳凰全部股權，列為子公司。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_housing
+  name: 建屋銷售
+  period: '2025'
+  revenue_share_pct: 90.7
+- evidence_ids:
+  - e2
+  id: seg_construction
+  name: 營造工程
+  period: '2025'
+  revenue_share_pct: 8.77
+- evidence_ids:
+  - e2
+  id: seg_rental
+  name: 租賃
+  period: '2025'
+  revenue_share_pct: 0.53
+relations:
+  subsidiaries:
+  - as_of: '2026-03-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股100%的日本子公司
+    details:
+    - 持股100%的日本子公司
+    edge: e96d482a674be
+    evidence_level: primary
+    id: org.日本株式會社鳳凰
+    name: 日本株式會社鳳凰
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.longda.com.tw
 tax_id: '85898033'
 incorporated: '1982-04-30'
 listed: '2014-02-10'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.5519#e2:
+    locator: 第103頁，主要產品營業比重
+    published_date: '2026-05-07'
+    publisher: 隆大營建事業股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.longda.com.tw/upload/1782284255.pdf
+  tw.5519#e3:
+    locator: 第103頁，目前之商品項目
+    published_date: '2026-05-07'
+    publisher: 隆大營建事業股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.longda.com.tw/upload/1782284255.pdf
+  tw.5519#e4:
+    locator: 第108頁，工程之分佈區域／營造業務
+    published_date: '2026-05-07'
+    publisher: 隆大營建事業股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.longda.com.tw/upload/1782284255.pdf
+  tw.5519#e5:
+    locator: 第108頁，工程之分佈區域／建設業務
+    published_date: '2026-05-07'
+    publisher: 隆大營建事業股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.longda.com.tw/upload/1782284255.pdf
+  tw.5519#e6:
+    locator: 第92頁，轉投資事業持股表；資料日2026年3月30日
+    published_date: '2026-05-07'
+    publisher: 隆大營建事業股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.longda.com.tw/upload/1782284255.pdf

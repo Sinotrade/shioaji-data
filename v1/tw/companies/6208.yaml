@@ -8,12 +8,205 @@ industry:
   l0_code: '24'
   l0_name: 半導體業
   l0_name_en: Semiconductor
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.semi
+  l2_name: 半導體
+  l2_name_en: Semiconductors
+  l3: semi.equipment
+  l3_name: 半導體設備
+  l3_name_en: Semiconductor Equipment
+chain: chain.semiconductor
+chain_stage:
+  agreement: both
+  also: []
+  reason: 主要提供真空零組件、閥門、腔體及真空泵維修，屬半導體設備與相關服務。
+  stage: tools
+  stage_name: 設備與廠務
+  tier: upstream
+primary_chain_position: upstream
+summary_short: 製造銷售真空零組件、閥門與腔體，並提供真空泵維修及廢氣處理設備。
+summary_long: 日揚以真空零組件、真空閥及客製化真空腔體的設計製造與銷售，以及真空泵銷售維修為主要業務。產品包括真空法蘭、波紋管、管件、高真空與超高真空腔體，應用涵蓋半導體、光電及鍍膜製程。公司也提供微氣泡水洗式廢氣處理設備的銷售與保養服務。2025年報揭露，商品銷貨占營業收入61%、勞務收入占38%，其餘1%為租金及佣金收入。
+segments:
+- evidence_ids:
+  - e6
+  id: seg_goods
+  name: 商品銷貨收入
+  period: '2025'
+  revenue_share_pct: 61
+- evidence_ids:
+  - e6
+  id: seg_services
+  name: 勞務收入
+  period: '2025'
+  revenue_share_pct: 38
+- evidence_ids:
+  - e6
+  id: seg_other
+  name: 其他收入（租金及佣金）
+  period: '2025'
+  revenue_share_pct: 1
+main_theme: theme.sic
+themes:
+- also: []
+  stage: substrate
+  theme: theme.sic
+  tier: upstream
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的子公司
+    details:
+    - 直接持股100%的子公司
+    edge: e5dd628655cd2
+    evidence_level: primary
+    id: org.highlight-tech-international
+    name: Highlight Tech International Corp.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的美國子公司
+    details:
+    - 直接持股100%的美國子公司
+    edge: ec11778caf592
+    evidence_level: primary
+    id: org.highlight-tech-us
+    name: Highlight Tech US LLC
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的日本子公司
+    details:
+    - 直接持股100%的日本子公司
+    edge: e8b8f3d91bacc
+    evidence_level: primary
+    id: org.htc-vacuum-japan
+    name: Htc真空株式会社
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的子公司
+    details:
+    - 直接持股100%的子公司
+    edge: e95519c0a35a0
+    evidence_level: primary
+    id: org.lisuo-trading
+    name: 利梭貿易股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股75%的子公司
+    details:
+    - 直接持股75%的子公司
+    edge: e78ac9a09a2aa
+    evidence_level: primary
+    id: org.zhaohe-technology
+    name: 兆合科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.htcvacuum.com/
 tax_id: '16101031'
 incorporated: '1997-05-29'
 listed: '2002-12-23'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6208#e1:
+    locator: 印刷頁53，業務範圍
+    published_date: null
+    publisher: 日揚科技股份有限公司
+    quote_check: found
+    title: 日揚科技2025年度年報
+    url: https://www.htcvacuum.com/upload/media/investors/financial/annual_report/2025.pdf
+  tw.6208#e10:
+    locator: 印刷頁48，2025年12月31日轉投資持股表
+    published_date: null
+    publisher: 日揚科技股份有限公司
+    quote_check: found
+    title: 日揚科技2025年度年報
+    url: https://www.htcvacuum.com/upload/media/investors/financial/annual_report/2025.pdf
+  tw.6208#e11:
+    locator: 印刷頁76，未來研發計畫，晶圓化製程代工之目前研發進度
+    published_date: null
+    publisher: 日揚科技股份有限公司
+    quote_check: found
+    title: 日揚科技2025年度年報
+    url: https://www.htcvacuum.com/upload/media/investors/financial/annual_report/2025.pdf
+  tw.6208#e2:
+    locator: 真空零組件
+    published_date: null
+    publisher: 日揚科技股份有限公司
+    quote_check: found
+    title: Htc日揚真空營業真空產品項目
+    url: https://www.htcvacuum.com/zh-tw/about/index/products-line
+  tw.6208#e3:
+    locator: 超高真空-高真空腔體
+    published_date: null
+    publisher: 日揚科技股份有限公司
+    quote_check: found
+    title: Htc日揚真空營業真空產品項目
+    url: https://www.htcvacuum.com/zh-tw/about/index/products-line
+  tw.6208#e4:
+    locator: 真空泵銷售維修服務
+    published_date: null
+    publisher: 日揚科技股份有限公司
+    quote_check: found
+    title: Htc日揚真空營業真空產品項目
+    url: https://www.htcvacuum.com/zh-tw/about/index/products-line
+  tw.6208#e5:
+    locator: 設備介紹
+    published_date: null
+    publisher: 日揚科技股份有限公司
+    quote_check: found
+    title: Local Scrubber 濕式洗滌設備
+    url: https://www.htcvacuum.com/zh-tw/local-scrubber
+  tw.6208#e6:
+    locator: 印刷頁53，所營業務之營業比重
+    published_date: null
+    publisher: 日揚科技股份有限公司
+    quote_check: found
+    title: 日揚科技2025年度年報
+    url: https://www.htcvacuum.com/upload/media/investors/financial/annual_report/2025.pdf
+  tw.6208#e7:
+    locator: 印刷頁48，2025年12月31日轉投資持股表
+    published_date: null
+    publisher: 日揚科技股份有限公司
+    quote_check: found
+    title: 日揚科技2025年度年報
+    url: https://www.htcvacuum.com/upload/media/investors/financial/annual_report/2025.pdf
+  tw.6208#e8:
+    locator: 印刷頁48，2025年12月31日轉投資持股表
+    published_date: null
+    publisher: 日揚科技股份有限公司
+    quote_check: found
+    title: 日揚科技2025年度年報
+    url: https://www.htcvacuum.com/upload/media/investors/financial/annual_report/2025.pdf
+  tw.6208#e9:
+    locator: 印刷頁48，2025年12月31日轉投資持股表
+    published_date: null
+    publisher: 日揚科技股份有限公司
+    quote_check: found
+    title: 日揚科技2025年度年報
+    url: https://www.htcvacuum.com/upload/media/investors/financial/annual_report/2025.pdf

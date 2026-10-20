@@ -52,10 +52,12 @@ segments:
   revenue_share_pct: 2
 main_theme: theme.gan
 themes:
-- stage: devices
+- also: []
+  stage: devices
   theme: theme.gan
   tier: midstream
-- stage: manufacturing
+- also: []
+  stage: manufacturing
   theme: theme.hbm
   tier: midstream
 relations:

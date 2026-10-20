@@ -8,12 +8,226 @@ industry:
   l0_code: '28'
   l0_name: 電子零組件業
   l0_name_en: Electronic Parts and Components
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.connector
+  l3_name: 連接器與線材
+  l3_name_en: Connectors & Cables
+primary_chain_position: midstream
+summary_short: 以連接器與連接線製造銷售為主，產品涵蓋工控、車用及高速網通。
+summary_long: 詮欣以連接器及連接線的設計、生產與銷售為主要業務，產品應用涵蓋工業電腦、消費性電子、車用輔助駕駛及高速網路通訊。2025年營收組成為電子接頭53%、線材44%、其他3%。高速網通產品包括主動光纜與光收發模組，官方型錄列有200G至1.6T的AI叢集連接方案。車用產品包含FAKRA、Mini FAKRA及HSD連接器與線束。另提供800G以上交換器使用的CPO連接器與Cage散熱模組，並有應用於機器人訊號傳輸的連接產品。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_connector
+  name: 電子接頭
+  period: '2025'
+  revenue_share_pct: 53
+- evidence_ids:
+  - e2
+  id: seg_cable
+  name: 線材
+  period: '2025'
+  revenue_share_pct: 44
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 3
+main_theme: theme.ai_server
+themes:
+- also: []
+  stage: components
+  theme: theme.ai_server
+  tier: midstream
+- also: []
+  stage: components
+  theme: theme.robotics
+  tier: upstream
+- also: []
+  stage: components
+  theme: theme.cpo
+  tier: upstream
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有並納入合併的子公司
+    details:
+    - 直接持有並納入合併的子公司
+    edge: e9d320bd995e6
+    evidence_level: primary
+    id: org.ah-international-co-ltd
+    name: A&H INTERNATIONAL CO.,LTD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有並納入合併的子公司
+    details:
+    - 直接持有並納入合併的子公司
+    edge: ece417b4e309d
+    evidence_level: primary
+    id: org.chant-sincere-technology
+    name: CHANT SINCERE TECHNOLOGY CO., LTD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有並納入合併的泰國子公司
+    details:
+    - 直接持有並納入合併的泰國子公司
+    edge: e45e60c4eda0c
+    evidence_level: primary
+    id: org.chant-sincere-thailand
+    name: CHANT SINCERE (THAILAND) CO.,LTD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有並納入合併的子公司
+    details:
+    - 直接持有並納入合併的子公司
+    edge: e1dce0cddcda6
+    evidence_level: primary
+    id: org.david-electronics-taiwan
+    name: 大衛電子股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有並納入合併的子公司
+    details:
+    - 直接持有並納入合併的子公司
+    edge: ea6dc6248e2dc
+    evidence_level: primary
+    id: org.ding-jia-investment
+    name: 鼎佳投資股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.coxoc.com.tw
 tax_id: '22115625'
 incorporated: '1986-04-24'
 listed: '2008-01-21'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6205#e1:
+    locator: 公司介紹首段
+    published_date: null
+    publisher: 詮欣股份有限公司
+    quote_check: found
+    title: 公司介紹
+    url: https://www.coxoc.com.tw/about/company/
+  tw.6205#e10:
+    locator: 財報第14頁，附註四（三）2，列入合併財務報告之子公司表
+    published_date: '2026-08-05'
+    publisher: 詮欣股份有限公司
+    quote_check: found
+    title: 詮欣股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.coxoc.com.tw/wp-content/uploads/115%E5%B9%B4%E7%AC%AC%E4%BA%8C%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf
+  tw.6205#e11:
+    locator: 財報第14頁，附註四（三）2，列入合併財務報告之子公司表
+    published_date: '2026-08-05'
+    publisher: 詮欣股份有限公司
+    quote_check: found
+    title: 詮欣股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.coxoc.com.tw/wp-content/uploads/115%E5%B9%B4%E7%AC%AC%E4%BA%8C%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf
+  tw.6205#e12:
+    locator: 財報第14頁，附註四（三）2，列入合併財務報告之子公司表
+    published_date: '2026-08-05'
+    publisher: 詮欣股份有限公司
+    quote_check: found
+    title: 詮欣股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.coxoc.com.tw/wp-content/uploads/115%E5%B9%B4%E7%AC%AC%E4%BA%8C%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf
+  tw.6205#e13:
+    locator: 財報第14頁，附註四（三）2，列入合併財務報告之子公司表
+    published_date: '2026-08-05'
+    publisher: 詮欣股份有限公司
+    quote_check: found
+    title: 詮欣股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.coxoc.com.tw/wp-content/uploads/115%E5%B9%B4%E7%AC%AC%E4%BA%8C%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf
+  tw.6205#e14:
+    locator: 財報第14頁，附註四（三）2，列入合併財務報告之子公司表
+    published_date: '2026-08-05'
+    publisher: 詮欣股份有限公司
+    quote_check: found
+    title: 詮欣股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.coxoc.com.tw/wp-content/uploads/115%E5%B9%B4%E7%AC%AC%E4%BA%8C%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf
+  tw.6205#e2:
+    locator: 第65頁，營業比重，114年度
+    published_date: '2026-03-30'
+    publisher: 詮欣股份有限公司
+    quote_check: found
+    title: 詮欣股份有限公司一一四年度年報
+    url: https://www.coxoc.com.tw/wp-content/uploads/114%E5%B9%B4%E8%A9%AE%E6%AC%A3%E5%B9%B4%E5%A0%B1.pdf
+  tw.6205#e3:
+    locator: 產品應用說明
+    published_date: null
+    publisher: 詮欣股份有限公司
+    quote_check: found
+    title: 公司介紹
+    url: https://www.coxoc.com.tw/about/company/
+  tw.6205#e4:
+    locator: 第66頁，輔助駕駛連接器／線產品表
+    published_date: '2026-03-30'
+    publisher: 詮欣股份有限公司
+    quote_check: found
+    title: 詮欣股份有限公司一一四年度年報
+    url: https://www.coxoc.com.tw/wp-content/uploads/114%E5%B9%B4%E8%A9%AE%E6%AC%A3%E5%B9%B4%E5%A0%B1.pdf
+  tw.6205#e5:
+    locator: PDF第3頁，AI叢集高速連接方案
+    published_date: null
+    publisher: 詮欣股份有限公司
+    quote_check: found
+    title: AI-Ready High-Speed Network Solutions
+    url: https://www.coxoc.com.tw/wp-content/uploads/AI-Ready-High-Speed-Network-Solutions-2025.pdf
+  tw.6205#e6:
+    locator: PDF第3頁，產品速率
+    published_date: null
+    publisher: 詮欣股份有限公司
+    quote_check: found
+    title: AI-Ready High-Speed Network Solutions
+    url: https://www.coxoc.com.tw/wp-content/uploads/AI-Ready-High-Speed-Network-Solutions-2025.pdf
+  tw.6205#e7:
+    locator: 長期計劃，光纖連接器
+    published_date: null
+    publisher: 詮欣股份有限公司
+    quote_check: found
+    title: 發展策略
+    url: https://www.coxoc.com.tw/about/strategy/
+  tw.6205#e8:
+    locator: 記者曾仁凱報導，正文首段
+    published_date: '2025-12-24'
+    publisher: 中央通訊社
+    quote_check: found
+    title: 詮欣打進CPO供應鏈　明年營收拚雙位數成長
+    url: https://www.cna.com.tw/news/afe/202512240154.aspx
+  tw.6205#e9:
+    locator: 第66頁，機器人產品分類之產品用途
+    published_date: '2026-03-30'
+    publisher: 詮欣股份有限公司
+    quote_check: found
+    title: 詮欣股份有限公司一一四年度年報
+    url: https://www.coxoc.com.tw/wp-content/uploads/114%E5%B9%B4%E8%A9%AE%E6%AC%A3%E5%B9%B4%E5%A0%B1.pdf

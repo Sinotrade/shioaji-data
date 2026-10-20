@@ -35,16 +35,20 @@ segments:
   revenue_share_pct: 0.62
 main_theme: theme.ai_server
 themes:
-- stage: components
+- also: []
+  stage: components
   theme: theme.ai_server
   tier: midstream
-- stage: components
+- also: []
+  stage: components
   theme: theme.robotics
   tier: upstream
-- stage: materials
+- also: []
+  stage: materials
   theme: theme.cowos
   tier: upstream
-- stage: materials
+- also: []
+  stage: materials
   theme: theme.abf
   tier: upstream
 website: http://www.ampletec.com.tw/

@@ -55,13 +55,16 @@ segments:
   revenue_share_pct: 7.31
 main_theme: theme.cpo
 themes:
-- stage: packaging
+- also: []
+  stage: packaging
   theme: theme.cpo
   tier: midstream
-- stage: equipment
+- also: []
+  stage: equipment
   theme: theme.cowos
   tier: upstream
-- stage: materials
+- also: []
+  stage: materials
   theme: theme.abf
   tier: upstream
 relations:

@@ -8,12 +8,136 @@ industry:
   l0_code: '28'
   l0_name: 電子零組件業
   l0_name_en: Electronic Parts and Components
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.chassis
+  l3_name: 機殼與機構件
+  l3_name_en: Chassis & Mechanical Parts
+primary_chain_position: midstream
+summary_short: 主要研發製造摺疊手機、筆電及顯示器樞紐與支架，另供應光纖連接器。
+summary_long: 兆利以精密樞紐與光纖連接器為主要產品，2025年營收中樞紐占93.52%，光纖連接器占6.48%。樞紐產品涵蓋摺疊手機、筆記型電腦與車用裝置，另提供液晶顯示器及一體式電腦支架。摺疊手機樞紐包含內折水滴式與外折滑動式設計，筆電產品包含360度翻轉及平板腳架樞紐。光纖業務提供高階精密連接器及光電轉換零件的設計、組裝服務。公司位於樞紐產業中游，從事結構設計與樞紐成品組立。
+segments:
+- evidence_ids:
+  - e6
+  id: seg_hinge
+  name: 樞紐
+  period: '2025'
+  revenue_share_pct: 93.52
+- evidence_ids:
+  - e6
+  id: seg_optical
+  name: 光纖連接器
+  period: '2025'
+  revenue_share_pct: 6.48
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: e77264968d22d
+    evidence_level: primary
+    id: org.great-hinge-trading
+    name: Great Hinge Trading Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: e60e593851b88
+    evidence_level: primary
+    id: org.smart-hinge-holdings
+    name: Smart Hinge Holdings Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.jarlly.com
 tax_id: '27393491'
 incorporated: '2004-07-07'
 listed: '2008-03-27'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3548#e1:
+    locator: 產品項目
+    published_date: null
+    publisher: 兆利科技工業股份有限公司
+    quote_check: found
+    title: 折疊手機樞紐
+    url: https://www.jarlly.com/products/folding-phone-hub
+  tw.3548#e10:
+    locator: 第10頁，納入合併財務報告之子公司表；投資公司名稱及子公司名稱欄
+    published_date: null
+    publisher: 兆利科技工業股份有限公司
+    quote_check: found
+    title: 兆利科技工業股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.jarlly.com/uploads/5072c130-8b21-4cec-853b-4beef9aa32fb-115Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
+  tw.3548#e2:
+    locator: 產品項目
+    published_date: null
+    publisher: 兆利科技工業股份有限公司
+    quote_check: found
+    title: 折疊手機樞紐
+    url: https://www.jarlly.com/products/folding-phone-hub
+  tw.3548#e3:
+    locator: 產品介紹
+    published_date: null
+    publisher: 兆利科技工業股份有限公司
+    quote_check: found
+    title: 筆記型電腦樞紐
+    url: https://www.jarlly.com/products/laptop-hub
+  tw.3548#e4:
+    locator: 產品介紹
+    published_date: null
+    publisher: 兆利科技工業股份有限公司
+    quote_check: found
+    title: 液晶顯示器支架
+    url: https://www.jarlly.com/products/lcd-monitor-stand
+  tw.3548#e5:
+    locator: 產品項目
+    published_date: null
+    publisher: 兆利科技工業股份有限公司
+    quote_check: found
+    title: 車用型及其他樞紐
+    url: https://www.jarlly.com/products/vehicle-type-and-other-hubs
+  tw.3548#e6:
+    locator: 印刷頁77，肆、營運概況／一、業務內容／營業比重；欄位依序為113年度金額、占比、114年度金額、占比
+    published_date: '2026-05-19'
+    publisher: 兆利科技工業股份有限公司
+    quote_check: found
+    title: 兆利科技工業股份有限公司114年度年報
+    url: https://www.jarlly.com/uploads/df44eb95-f6a3-459c-a781-ebb1d99c323a-114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf
+  tw.3548#e7:
+    locator: 印刷頁79，產業上、中、下游關聯性；描述公司結構設計與樞紐成品組立的位置
+    published_date: '2026-05-19'
+    publisher: 兆利科技工業股份有限公司
+    quote_check: found
+    title: 兆利科技工業股份有限公司114年度年報
+    url: https://www.jarlly.com/uploads/df44eb95-f6a3-459c-a781-ebb1d99c323a-114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf
+  tw.3548#e8:
+    locator: 產品介紹
+    published_date: null
+    publisher: 兆利科技工業股份有限公司
+    quote_check: found
+    title: 光纖連結器
+    url: https://www.jarlly.com/products/fiber-optic-connector
+  tw.3548#e9:
+    locator: 第10頁，納入合併財務報告之子公司表；投資公司名稱及子公司名稱欄
+    published_date: null
+    publisher: 兆利科技工業股份有限公司
+    quote_check: found
+    title: 兆利科技工業股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.jarlly.com/uploads/5072c130-8b21-4cec-853b-4beef9aa32fb-115Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf

@@ -37,13 +37,16 @@ segments:
   revenue_share_pct: null
 main_theme: theme.5g
 themes:
-- stage: components
+- also: []
+  stage: components
   theme: theme.5g
   tier: upstream
-- stage: components
+- also: []
+  stage: components
   theme: theme.leo_satellite
   tier: upstream
-- stage: chip
+- also: []
+  stage: chip
   theme: theme.vcsel
   tier: midstream
 relations:

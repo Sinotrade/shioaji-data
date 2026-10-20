@@ -67,10 +67,12 @@ segments:
   revenue_share_pct: 3
 main_theme: theme.cpo
 themes:
-- stage: packaging
+- also: []
+  stage: packaging
   theme: theme.cpo
   tier: midstream
-- stage: test
+- also: []
+  stage: test
   theme: theme.cowos
   tier: midstream
 relations:

@@ -8,12 +8,111 @@ industry:
   l0_code: '23'
   l0_name: 油電燃氣業
   l0_name_en: Oil, Gas and Electricity
-primary_chain_position: unknown
+  l1: energy
+  l1_name: 能源
+  l1_name_en: Energy & Utilities
+  l2: energy.traditional
+  l2_name: 傳統能源
+  l2_name_en: Conventional Energy & Utilities
+  l3: energy.power_gen
+  l3_name: 發電與售電
+  l3_name_en: Power Generation & Retail
+primary_chain_position: not_applicable
+summary_short: 以汽電共生銷售電力與蒸汽，兼營廢棄物處理及代運轉服務。
+summary_long: 大汽電經營汽電共生業務，主要收入來自電力與蒸汽銷售，另提供廢棄物處理及代運轉服務。2026年上半年營收中，電力占55.50%、蒸汽占32.41%、廢棄物處理占7.09%、代運轉占5.00%。再生資源業務將事業機構產出的有機廢溶劑經物理處理後再利用為燃料，供發電與產汽使用，並回收廢塑膠、舊衣及破布製成固體再生燃料。代營運業務涵蓋焚化爐與衍生燃料製造機組。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_power
+  name: 電力
+  period: 2026H1
+  revenue_share_pct: 55.5
+- evidence_ids:
+  - e3
+  id: seg_steam
+  name: 蒸汽
+  period: 2026H1
+  revenue_share_pct: 32.41
+- evidence_ids:
+  - e4
+  id: seg_waste
+  name: 廢棄物處理
+  period: 2026H1
+  revenue_share_pct: 7.09
+- evidence_ids:
+  - e5
+  id: seg_operation
+  name: 代運轉
+  period: 2026H1
+  revenue_share_pct: 5
 website: http://www.tycc.com.tw
 tax_id: '84526079'
 incorporated: '1993-08-14'
 listed: '2001-05-10'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.8931#e1:
+    locator: 印刷第71頁，PDF第73頁，主要產品
+    published_date: '2026-05-15'
+    publisher: 大園汽電共生股份有限公司
+    quote_check: found
+    title: 大園汽電共生股份有限公司114年度年報
+    url: https://www.tycc.com.tw/public/uploads/web/tw/202605658.pdf
+  tw.8931#e2:
+    locator: 第14頁，營收比重(%)，115Q2欄；上半年累計期間由第10頁115H1財務資料核對
+    published_date: '2026-08-20'
+    publisher: 大園汽電共生股份有限公司
+    quote_check: not_found
+    title: 115年08月20日法人說明會
+    url: https://www.tycc.com.tw/public/uploads/web/tw/202608649.pdf
+  tw.8931#e3:
+    locator: 第14頁，營收比重(%)，115Q2欄
+    published_date: '2026-08-20'
+    publisher: 大園汽電共生股份有限公司
+    quote_check: found
+    title: 115年08月20日法人說明會
+    url: https://www.tycc.com.tw/public/uploads/web/tw/202608649.pdf
+  tw.8931#e4:
+    locator: 第14頁，營收比重(%)，115Q2欄
+    published_date: '2026-08-20'
+    publisher: 大園汽電共生股份有限公司
+    quote_check: found
+    title: 115年08月20日法人說明會
+    url: https://www.tycc.com.tw/public/uploads/web/tw/202608649.pdf
+  tw.8931#e5:
+    locator: 第14頁，營收比重(%)，115Q2欄
+    published_date: '2026-08-20'
+    publisher: 大園汽電共生股份有限公司
+    quote_check: not_found
+    title: 115年08月20日法人說明會
+    url: https://www.tycc.com.tw/public/uploads/web/tw/202608649.pdf
+  tw.8931#e6:
+    locator: 廢溶劑處理
+    published_date: null
+    publisher: 大園汽電共生股份有限公司
+    quote_check: found
+    title: 再生能源事業－業務
+    url: https://www.tycc.com.tw/green/index/2
+  tw.8931#e7:
+    locator: 代營運業務
+    published_date: null
+    publisher: 大園汽電共生股份有限公司
+    quote_check: found
+    title: 能源事業－業務
+    url: https://www.tycc.com.tw/energy/index/2
+  tw.8931#e8:
+    locator: SRF(固體再生燃料)處理
+    published_date: null
+    publisher: 大園汽電共生股份有限公司
+    quote_check: found
+    title: 再生能源事業－業務
+    url: https://www.tycc.com.tw/green/index/2
+  tw.8931#e9:
+    locator: 印刷第71頁，PDF第73頁，主要產品
+    published_date: '2026-05-15'
+    publisher: 大園汽電共生股份有限公司
+    quote_check: found
+    title: 大園汽電共生股份有限公司114年度年報
+    url: https://www.tycc.com.tw/public/uploads/web/tw/202605658.pdf

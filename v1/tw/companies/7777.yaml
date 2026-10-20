@@ -8,12 +8,96 @@ industry:
   l0_code: '20'
   l0_name: 其他業
   l0_name_en: Others
-primary_chain_position: unknown
+  l1: finance
+  l1_name: 金融
+  l1_name_en: Financials
+  l2: fin.capital
+  l2_name: 證券與資產管理
+  l2_name_en: Securities & Asset Management
+  l3: fin.asset_mgmt
+  l3_name: 資產管理與創投
+  l3_name_en: Asset Management & Venture Capital
+chain: chain.finance
+chain_stage:
+  agreement: both
+  also: []
+  reason: 以創業投資及股權投資為主，2024年投資收入占100%，屬金融服務。
+  stage: na
+  stage_name: 金融服務
+  tier: not_applicable
+primary_chain_position: not_applicable
+summary_short: 以股權投資賺取股票處分利益、股利及資產評價損益的創投公司。
+summary_long: 能率亞洲以創業投資為主要業務，透過股權投資參與企業發展，營收及獲利來自股票處分資本利得、股利收入與未處分股票的資產評價。2024年投資收入占營業收入100%。除資金投入外，公司也協助被投資企業整頓組織制度，提供資本市場規劃及財務建議，並運用日本資源協助企業發展與跨境整合。依2026年4月持股揭露，能率亞洲管理顧問股份有限公司為其全資子公司。
+segments:
+- evidence_ids:
+  - e3
+  id: s1
+  name: 投資收入（損失）
+  period: '2024'
+  revenue_share_pct: 100
+relations:
+  subsidiaries:
+  - as_of: 2026-04
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資管理顧問子公司
+    details:
+    - 全資管理顧問子公司
+    edge: e718714d86586
+    evidence_level: primary
+    id: org.abico-asia-management-consulting
+    name: 能率亞洲管理顧問股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.abicoasia.com.tw/
 tax_id: '54398718'
 incorporated: '2015-03-10'
 listed: '2025-12-22'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.7777#e1:
+    locator: 第8頁，基本資料／主要業務
+    published_date: '2026-08-26'
+    publisher: 能率亞洲資本股份有限公司
+    quote_check: found
+    title: 2026年第三季法人說明會
+    url: https://www.abicoasia.com.tw/download/investors/investors_talk260826.pdf
+  tw.7777#e2:
+    locator: 印刷頁56（PDF第60頁），營運概況／業務範圍
+    published_date: null
+    publisher: 能率亞洲資本股份有限公司
+    quote_check: found
+    title: 113年度年報
+    url: https://www.abicoasia.com.tw/download/investors/investors_financial2024.pdf
+  tw.7777#e3:
+    locator: 印刷頁56（PDF第60頁），營業比重表；113年金額及比重欄
+    published_date: null
+    publisher: 能率亞洲資本股份有限公司
+    quote_check: found
+    title: 113年度年報
+    url: https://www.abicoasia.com.tw/download/investors/investors_financial2024.pdf
+  tw.7777#e4:
+    locator: 串連業務合作加速擴充
+    published_date: null
+    publisher: 能率亞洲資本股份有限公司
+    quote_check: found
+    title: 投資策略
+    url: https://www.abicoasia.com.tw/strategy.php
+  tw.7777#e5:
+    locator: 跨境併購資源整合
+    published_date: null
+    publisher: 能率亞洲資本股份有限公司
+    quote_check: found
+    title: 投資策略
+    url: https://www.abicoasia.com.tw/strategy.php
+  tw.7777#e6:
+    locator: 第1頁，被投資公司資訊第1列；100為持股比例（%）
+    published_date: '2026-06-15'
+    publisher: 能率亞洲資本股份有限公司
+    quote_check: found
+    title: 創投公司每月投資情形：115年4月
+    url: https://www.abicoasia.com.tw/download/month/2026-4.pdf

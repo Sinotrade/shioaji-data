@@ -8,14 +8,47 @@ industry:
   l0_code: '24'
   l0_name: 半導體業
   l0_name_en: Semiconductor
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.semi
+  l2_name: 半導體
+  l2_name_en: Semiconductors
+  l3: semi.ic_design
+  l3_name: IC 設計
+  l3_name_en: IC Design
+chain: chain.semiconductor
+chain_stage:
+  agreement: both
+  also: []
+  reason: 主要研發及銷售顯示驅動與觸控整合驅動晶片，以車用產品為最大營收來源。
+  stage: ip_design
+  stage_name: IP 與 IC 設計
+  tier: upstream
+primary_chain_position: upstream
+summary_short: 研發及銷售車用、工控與AIoT顯示器驅動晶片及觸控整合驅動晶片。
+summary_long: 力領科技主要研發及銷售顯示器驅動晶片與觸控整合驅動晶片，產品以車用領域為主，應用涵蓋儀表板、中控台、抬頭顯示器、電子後視鏡與圓形旋鈕。2026年第二季，車用與工控分別占營收86.95%及13.05%。除車用產品外，公司亦提供用於POS系統、智慧家庭、消費及工控人機介面的AIoT顯示驅動晶片，以及特殊應用的客製化顯示驅動IC。中控用觸控顯示器驅動晶片已出貨後裝市場。矽創電子為其母公司。
+segments:
+- evidence_ids:
+  - e5
+  id: automotive
+  name: 車用
+  period: 2026Q2
+  revenue_share_pct: 86.95
+- evidence_ids:
+  - e5
+  id: industrial
+  name: 工控
+  period: 2026Q2
+  revenue_share_pct: 13.05
 relations:
   parents:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 車用顯示驅動晶片子公司
+    detail: 母公司
     details:
+    - 母公司
     - 車用顯示驅動晶片子公司
     edge: e54c897035907
     evidence_level: primary
@@ -24,12 +57,61 @@ relations:
     ranking_basis: unranked
     share_basis: null
     share_pct: null
-    weight: 1
+    weight: 2
 website: https://www.forcelead.com.tw/zh/index-zh/
 tax_id: '25086406'
 incorporated: '2009-12-11'
 listed: '2024-12-10'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6996#e1:
+    locator: 關於力領，第一段
+    published_date: null
+    publisher: 力領科技股份有限公司
+    quote_check: found
+    title: 關於力領
+    url: https://www.forcelead.com.tw/zh/index-zh/about-forcelead/
+  tw.6996#e2:
+    locator: 關於力領，第一段車用應用
+    published_date: null
+    publisher: 力領科技股份有限公司
+    quote_check: found
+    title: 關於力領
+    url: https://www.forcelead.com.tw/zh/index-zh/about-forcelead/
+  tw.6996#e3:
+    locator: 產品頁導言
+    published_date: null
+    publisher: 力領科技股份有限公司
+    quote_check: found
+    title: AIoT 應用顯示器驅動晶片
+    url: https://www.forcelead.com.tw/zh/index-zh/products/aiot-application-display-ic/
+  tw.6996#e4:
+    locator: 產品頁導言
+    published_date: null
+    publisher: 力領科技股份有限公司
+    quote_check: found
+    title: Customized/OLED/ASIC 顯示器驅動晶片
+    url: https://www.forcelead.com.tw/zh/index-zh/products/customized-oled-asic-display-driver-ic/
+  tw.6996#e5:
+    locator: 第16頁，營收占比；官網列為2026年9月22日法說簡報
+    published_date: null
+    publisher: 力領科技股份有限公司
+    quote_check: found
+    title: 2Q 2026 季度業績簡報
+    url: https://www.forcelead.com.tw/wp-content/uploads/2026/09/2Q2026_Forcelead_CH_20260918.pdf
+  tw.6996#e6:
+    locator: 第8頁，營運現況／新產品交付
+    published_date: null
+    publisher: 力領科技股份有限公司
+    quote_check: found
+    title: 2Q 2026 季度業績簡報
+    url: https://www.forcelead.com.tw/wp-content/uploads/2026/09/2Q2026_Forcelead_CH_20260918.pdf
+  tw.6996#e7:
+    locator: 第43頁，附註二八關係人交易／關係人名稱及其關係
+    published_date: null
+    publisher: 力領科技股份有限公司
+    quote_check: found
+    title: 民國115及114年第2季財務報告暨會計師核閱報告
+    url: https://www.forcelead.com.tw/wp-content/uploads/2026/08/115Q2%E5%8A%9B%E9%A0%98%E8%B2%A1%E5%A0%B1%E9%9B%BB%E5%AD%90%E6%9B%B8.pdf

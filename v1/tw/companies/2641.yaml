@@ -8,12 +8,155 @@ industry:
   l0_code: '15'
   l0_name: 航運業
   l0_name_en: Shipping and Transportation
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.transport
+  l2_name: 運輸
+  l2_name_en: Transportation
+  l3: trans.shipping
+  l3_name: 貨櫃與散裝航運
+  l3_name_en: Container & Bulk Shipping
+primary_chain_position: not_applicable
+summary_short: 以散裝船及雜貨船租賃為主要收入，另提供船舶管理與海運承攬服務。
+summary_long: 正德海運集團以散裝船與多功能重吊雜貨船租傭為核心，船型包括Handysize及Supramax，租約涵蓋中短期與長期出租。2025年合併營收以營業租賃為主，占89.68%；融資租賃占4.10%，房地銷售占6.22%。另提供船務代理、貨運承攬及船舶管理，管理內容包含船舶安全與環境保護。主要直接子公司包括New Lucky Lines S.A.、FWF Shipping Ltd.及正德資產管理。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_operating_lease
+  name: 營業租賃收入
+  period: '2025'
+  revenue_share_pct: 89.68
+- evidence_ids:
+  - e1
+  id: seg_property
+  name: 房地銷售收入
+  period: '2025'
+  revenue_share_pct: 6.22
+- evidence_ids:
+  - e1
+  id: seg_finance_lease
+  name: 融資租賃收入
+  period: '2025'
+  revenue_share_pct: 4.1
+- evidence_ids:
+  - e1
+  id: seg_contract
+  name: 客戶合約收入
+  period: '2025'
+  revenue_share_pct: null
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%子公司
+    details:
+    - 直接持股100%子公司
+    edge: ead02e64b5c91
+    evidence_level: primary
+    id: org.franbo-asset-management
+    name: 正德資產管理股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%子公司
+    details:
+    - 直接持股100%子公司
+    edge: ee6de3737eb79
+    evidence_level: primary
+    id: org.fwf-shipping
+    name: FWF Shipping Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%子公司
+    details:
+    - 直接持股100%子公司
+    edge: e6989c012b427
+    evidence_level: primary
+    id: org.new-lucky-lines
+    name: New Lucky Lines S.A.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.franbo.com.tw
 tax_id: '16467798'
 incorporated: '1998-09-29'
 listed: '2014-10-09'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2641#e1:
+    locator: 印刷頁56／PDF第60頁，肆、營運概況：各項產品及營業比重（合併報表）
+    published_date: '2026-04-30'
+    publisher: 正德海運股份有限公司
+    quote_check: found
+    title: 正德海運股份有限公司114年度年報
+    url: https://www.franbo.com.tw/cms/upload/investor/files/正德114年度年報.pdf
+  tw.2641#e2:
+    locator: 集團簡介，第3段
+    published_date: null
+    publisher: 正德海運股份有限公司
+    quote_check: found
+    title: 集團簡介
+    url: https://www.franbo.com.tw/intro
+  tw.2641#e3:
+    locator: 集團簡介，第2段
+    published_date: null
+    publisher: 正德海運股份有限公司
+    quote_check: found
+    title: 集團簡介
+    url: https://www.franbo.com.tw/intro
+  tw.2641#e4:
+    locator: 船舶管理：船舶管理業務涵蓋，第1項
+    published_date: null
+    publisher: 正德海運股份有限公司
+    quote_check: found
+    title: 顧客服務
+    url: https://www.franbo.com.tw/service
+  tw.2641#e5:
+    locator: 營運業務，第1段
+    published_date: null
+    publisher: 正德海運股份有限公司
+    quote_check: found
+    title: 顧客服務
+    url: https://www.franbo.com.tw/service
+  tw.2641#e6:
+    locator: 服務項目標題
+    published_date: null
+    publisher: 正德海運股份有限公司
+    quote_check: not_found
+    title: 顧客服務
+    url: https://www.franbo.com.tw/service
+  tw.2641#e7:
+    locator: 第19頁，附註四（三）2：列入合併財務報告之子公司，2025年底持股欄
+    published_date: null
+    publisher: 正德海運股份有限公司
+    quote_check: found
+    title: 正德海運股份有限公司及子公司114年度合併財務報告
+    url: https://www.franbo.com.tw/cms/upload/investor/files/正德海運2025年合併財報.pdf
+  tw.2641#e8:
+    locator: 第19頁，附註四（三）2：列入合併財務報告之子公司，2025年底持股欄
+    published_date: null
+    publisher: 正德海運股份有限公司
+    quote_check: found
+    title: 正德海運股份有限公司及子公司114年度合併財務報告
+    url: https://www.franbo.com.tw/cms/upload/investor/files/正德海運2025年合併財報.pdf
+  tw.2641#e9:
+    locator: 第19頁，附註四（三）2：列入合併財務報告之子公司，2025年底持股欄
+    published_date: null
+    publisher: 正德海運股份有限公司
+    quote_check: found
+    title: 正德海運股份有限公司及子公司114年度合併財務報告
+    url: https://www.franbo.com.tw/cms/upload/investor/files/正德海運2025年合併財報.pdf

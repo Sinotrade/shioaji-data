@@ -49,10 +49,12 @@ segments:
   revenue_share_pct: 8.85
 main_theme: theme.5g
 themes:
-- stage: components
+- also: []
+  stage: components
   theme: theme.5g
   tier: upstream
-- stage: components
+- also: []
+  stage: components
   theme: theme.drone
   tier: upstream
 relations:

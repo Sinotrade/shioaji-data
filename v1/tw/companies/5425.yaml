@@ -37,10 +37,12 @@ segments:
   revenue_share_pct: 35.79
 main_theme: theme.ev
 themes:
-- stage: materials
+- also: []
+  stage: materials
   theme: theme.ev
   tier: upstream
-- stage: devices
+- also: []
+  stage: devices
   theme: theme.sic
   tier: midstream
 relations:

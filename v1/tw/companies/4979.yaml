@@ -52,16 +52,20 @@ segments:
   revenue_share_pct: 2.6
 main_theme: theme.data_center
 themes:
-- stage: it
+- also: []
+  stage: it
   theme: theme.data_center
   tier: midstream
-- stage: devices
+- also: []
+  stage: devices
   theme: theme.silicon_photonics
   tier: midstream
-- stage: components
+- also: []
+  stage: components
   theme: theme.cpo
   tier: upstream
-- stage: devices
+- also: []
+  stage: devices
   theme: theme.inp
   tier: midstream
 relations:

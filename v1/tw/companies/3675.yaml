@@ -49,13 +49,16 @@ segments:
   revenue_share_pct: 2.23
 main_theme: theme.ai_server
 themes:
-- stage: chips
+- also: []
+  stage: chips
   theme: theme.ai_server
   tier: upstream
-- stage: devices
+- also: []
+  stage: devices
   theme: theme.sic
   tier: midstream
-- stage: devices
+- also: []
+  stage: devices
   theme: theme.gan
   tier: midstream
 relations:

@@ -8,7 +8,43 @@ industry:
   l0_code: '27'
   l0_name: 通信網路業
   l0_name_en: Communications and Internet
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.construction
+  l2_name: 營建與工程
+  l2_name_en: Engineering & Construction
+  l3: cons.engineering
+  l3_name: 工程與統包
+  l3_name_en: Engineering & EPC
+primary_chain_position: not_applicable
+summary_short: 以系統整合、機電與儲能工程為主，並製造銷售光纜。
+summary_long: 聯光通以系統整合工程及光纜銷售為主要業務，2025年營收中系統整合占91.13%、光纜銷售占8.09%，其他占0.78%。光纜產品涵蓋屋內及屋外型光纜；通訊工程包括捷運、交控與鐵路系統整合，另提供機電系統建置服務。智慧電網業務涵蓋儲能規劃、設備整合、監控與維運。2026年6月底，全資子公司包括從事綜合營造的台鋼工程、從事一般投資的聯光通投資，以及仍在清算中的品耀光電。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_system
+  name: 系統整合
+  period: '2025'
+  revenue_share_pct: 91.13
+- evidence_ids:
+  - e2
+  id: seg_cable
+  name: 光纜銷售
+  period: '2025'
+  revenue_share_pct: 8.09
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 0.78
+main_theme: theme.power_grid
+themes:
+- also: []
+  stage: engineering
+  theme: theme.power_grid
+  tier: downstream
 relations:
   customers:
   - as_of: 2026-10
@@ -25,11 +61,117 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司，清算中
+    details:
+    - 全資子公司，清算中
+    edge: ee2396d0c8630
+    evidence_level: primary
+    id: org.pin-yao-optoelectronics
+    name: 品耀光電股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資綜合營造子公司
+    details:
+    - 全資綜合營造子公司
+    edge: ecc0bb333a185
+    evidence_level: primary
+    id: org.taiwan-steel-engineering
+    name: 台鋼工程股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資投資子公司
+    details:
+    - 全資投資子公司
+    edge: eb289679c3153
+    evidence_level: primary
+    id: org.ufoc-investment
+    name: 聯光通投資股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.ufoc.com.tw
 tax_id: '21223267'
 incorporated: '1986-04-02'
 listed: '2001-05-14'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4903#e10:
+    locator: 第11頁，子公司附註一
+    published_date: '2026-08-28'
+    publisher: 聯合光纖通信股份有限公司
+    quote_check: found
+    title: 2026年第二季合併財務報告
+    url: https://www.ufoc.com.tw/file/download/1274/2026第二季(中文版).pdf
+  tw.4903#e2:
+    locator: PDF第82頁／印刷第78頁，營業比重；欄位依序為113及114年度金額與占比
+    published_date: '2026-04-10'
+    publisher: 聯合光纖通信股份有限公司
+    quote_check: found
+    title: 2025年年報
+    url: https://www.ufoc.com.tw/file/download/1267/2025中文版年報.pdf
+  tw.4903#e3:
+    locator: PDF第82頁／印刷第78頁，公司目前之商品（服務）項目
+    published_date: '2026-04-10'
+    publisher: 聯合光纖通信股份有限公司
+    quote_check: found
+    title: 2025年年報
+    url: https://www.ufoc.com.tw/file/download/1267/2025中文版年報.pdf
+  tw.4903#e4:
+    locator: 第10頁，光纖事業服務處
+    published_date: '2025-12-10'
+    publisher: 聯合光纖通信股份有限公司
+    quote_check: found
+    title: 2025年12月10日法人說明會簡報
+    url: https://www.ufoc.com.tw/uploads/editor/files/中文版_4903聯光通-20251210法說會簡報.pdf
+  tw.4903#e5:
+    locator: 主要營業範圍／工程與服務
+    published_date: null
+    publisher: 聯合光纖通信股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.ufoc.com.tw/company
+  tw.4903#e6:
+    locator: 智慧能源與儲能解決方案
+    published_date: null
+    publisher: 聯合光纖通信股份有限公司
+    quote_check: found
+    title: 智慧電網事業
+    url: https://www.ufoc.com.tw/page-5
+  tw.4903#e7:
+    locator: 第10頁，列入合併財務報告之子公司；持股欄依序為115.6.30、114.12.31、114.6.30
+    published_date: '2026-08-28'
+    publisher: 聯合光纖通信股份有限公司
+    quote_check: found
+    title: 2026年第二季合併財務報告
+    url: https://www.ufoc.com.tw/file/download/1274/2026第二季(中文版).pdf
+  tw.4903#e8:
+    locator: 第10頁，列入合併財務報告之子公司
+    published_date: '2026-08-28'
+    publisher: 聯合光纖通信股份有限公司
+    quote_check: found
+    title: 2026年第二季合併財務報告
+    url: https://www.ufoc.com.tw/file/download/1274/2026第二季(中文版).pdf
+  tw.4903#e9:
+    locator: 第10頁，列入合併財務報告之子公司
+    published_date: '2026-08-28'
+    publisher: 聯合光纖通信股份有限公司
+    quote_check: found
+    title: 2026年第二季合併財務報告
+    url: https://www.ufoc.com.tw/file/download/1274/2026第二季(中文版).pdf

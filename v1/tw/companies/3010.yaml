@@ -73,19 +73,24 @@ segments:
   revenue_share_pct: null
 main_theme: theme.ai_server
 themes:
-- stage: board_materials
+- also: []
+  stage: board_materials
   theme: theme.ai_server
   tier: upstream
-- stage: make
+- also: []
+  stage: make
   theme: theme.photoresist
   tier: midstream
-- stage: packaging
+- also: []
+  stage: packaging
   theme: theme.mini_led
   tier: midstream
-- stage: materials
+- also: []
+  stage: materials
   theme: theme.cowos
   tier: upstream
-- stage: materials
+- also: []
+  stage: materials
   theme: theme.abf
   tier: upstream
 relations:

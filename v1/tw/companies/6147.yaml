@@ -43,10 +43,12 @@ segments:
   revenue_share_pct: 74.86
 main_theme: theme.sic
 themes:
-- stage: application
+- also: []
+  stage: application
   theme: theme.sic
   tier: downstream
-- stage: application
+- also: []
+  stage: application
   theme: theme.gan
   tier: downstream
 relations:

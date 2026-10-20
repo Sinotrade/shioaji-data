@@ -70,22 +70,28 @@ segments:
   revenue_share_pct: 2
 main_theme: theme.ai_server
 themes:
-- stage: chips
+- also: []
+  stage: chips
   theme: theme.ai_server
   tier: upstream
-- stage: chips
-  theme: theme.nvidia
-  tier: upstream
-- stage: devices
-  theme: theme.silicon_photonics
-  tier: midstream
-- stage: components
+- also: []
+  stage: components
   theme: theme.apple
   tier: upstream
-- stage: packaging
+- also: []
+  stage: chips
+  theme: theme.nvidia
+  tier: upstream
+- also: []
+  stage: devices
+  theme: theme.silicon_photonics
+  tier: midstream
+- also: []
+  stage: packaging
   theme: theme.cpo
   tier: midstream
-- stage: manufacturing
+- also: []
+  stage: manufacturing
   theme: theme.cowos
   tier: midstream
 relations:

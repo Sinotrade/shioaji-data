@@ -8,12 +8,148 @@ industry:
   l0_code: '32'
   l0_name: 文化創意業
   l0_name_en: Cultural and Creative
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.software
+  l2_name: 軟體與資訊服務
+  l2_name_en: Software & IT Services
+  l3: sw.gaming
+  l3_name: 遊戲
+  l3_name_en: Games
+primary_chain_position: not_applicable
+summary_short: 以線上及手機遊戲營運為主，另經營企業服務與數位業務。
+summary_long: 橘子以線上及手機遊戲營運為主要收入來源，2025年占合併營收69%，勞務與銷貨收入分別占24%及7%。主要遊戲包括電腦端《新楓之谷》及手機端《天堂M》。集團透過子公司雲力橘子數位提供雲端機房、資安與系統整合服務，並涉及資料中心營運。另已發表自研UTUX系統，展示AI遊戲夥伴的互動場景。依2026年第二季財報，旗下直接子公司亦包括購物橘子與優服橘子。
+segments:
+- evidence_ids:
+  - e02
+  id: gaming
+  name: 線上及手機遊戲收入
+  period: '2025'
+  revenue_share_pct: 69
+- evidence_ids:
+  - e02
+  id: services
+  name: 勞務收入
+  period: '2025'
+  revenue_share_pct: 24
+- evidence_ids:
+  - e02
+  id: sales
+  name: 銷貨收入
+  period: '2025'
+  revenue_share_pct: 7
+main_theme: theme.data_center
+themes:
+- also: []
+  stage: operation
+  theme: theme.data_center
+  tier: downstream
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司，持股67.48%
+    details:
+    - 直接子公司，持股67.48%
+    edge: e21fa3c221e91
+    evidence_level: primary
+    id: org.cloudforce-gamania
+    name: 雲力橘子數位(股)公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司，持股100%
+    details:
+    - 直接子公司，持股100%
+    edge: e26c3f898c6b7
+    evidence_level: primary
+    id: org.gamania-customer-service
+    name: 優服橘子(股)公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司，持股99.75%
+    details:
+    - 直接子公司，持股99.75%
+    edge: ee25a841287a4
+    evidence_level: primary
+    id: org.gamania-shopping
+    name: 購物橘子(股)公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.gamania.com
 tax_id: '89550029'
 incorporated: '1995-06-12'
 listed: '2002-05-21'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6180#e02:
+    locator: 印刷頁54，所營業務之營業比重；PDF第58頁
+    published_date: null
+    publisher: 遊戲橘子數位科技股份有限公司
+    quote_check: found
+    title: 2025年年報
+    url: https://ir.gamania.com/file/wb8iunjj8hnw8t6n
+  tw.6180#e03:
+    locator: 數位遊戲／橘子遊戲
+    published_date: null
+    publisher: 遊戲橘子數位科技股份有限公司
+    quote_check: found
+    title: 事業介紹
+    url: https://ir.gamania.com/business
+  tw.6180#e04:
+    locator: 暑期遊戲營運說明
+    published_date: '2026-08-05'
+    publisher: 遊戲橘子數位科技股份有限公司
+    quote_check: found
+    title: 橘子集團發佈2026年第二季合併財務報告
+    url: https://ir.gamania.com/news/financial/revenue-q2-2026
+  tw.6180#e05:
+    locator: 企業服務／雲力橘子
+    published_date: null
+    publisher: 遊戲橘子數位科技股份有限公司
+    quote_check: found
+    title: 事業介紹
+    url: https://ir.gamania.com/business
+  tw.6180#e06:
+    locator: 第3頁，3Q26營運焦點／UTUX系統
+    published_date: '2026-08-05'
+    publisher: 遊戲橘子數位科技股份有限公司
+    quote_check: found
+    title: 2026年第二季財務營運報告
+    url: https://ir.gamania.com/file/vrdqlwjhkgse6x3q
+  tw.6180#e07:
+    locator: 第14頁，列入合併財務報告之子公司；115年6月30日持股欄
+    published_date: '2026-08-05'
+    publisher: 遊戲橘子數位科技股份有限公司
+    quote_check: found
+    title: 民國115年及114年第二季合併財務報告暨會計師核閱報告
+    url: https://ir.gamania.com/file/b2ynh90ghprbaarv
+  tw.6180#e08:
+    locator: 第14頁，列入合併財務報告之子公司；115年6月30日持股欄
+    published_date: '2026-08-05'
+    publisher: 遊戲橘子數位科技股份有限公司
+    quote_check: found
+    title: 民國115年及114年第二季合併財務報告暨會計師核閱報告
+    url: https://ir.gamania.com/file/b2ynh90ghprbaarv
+  tw.6180#e09:
+    locator: 第14頁，列入合併財務報告之子公司；115年6月30日持股欄
+    published_date: '2026-08-05'
+    publisher: 遊戲橘子數位科技股份有限公司
+    quote_check: found
+    title: 民國115年及114年第二季合併財務報告暨會計師核閱報告
+    url: https://ir.gamania.com/file/b2ynh90ghprbaarv

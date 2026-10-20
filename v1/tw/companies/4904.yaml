@@ -35,10 +35,12 @@ segments:
   revenue_share_pct: 48
 main_theme: theme.ev
 themes:
-- stage: vehicle
+- also: []
+  stage: vehicle
   theme: theme.ev
   tier: downstream
-- stage: devices
+- also: []
+  stage: devices
   theme: theme.5g
   tier: downstream
 relations:

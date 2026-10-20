@@ -8,14 +8,51 @@ industry:
   l0_code: '05'
   l0_name: 電機機械
   l0_name_en: Electric Machinery
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.machinery
+  l2_name: 機械與自動化
+  l2_name_en: Machinery & Automation
+  l3: mach.equipment
+  l3_name: 專用設備（非半導體）
+  l3_name_en: Specialty Equipment (Non-semiconductor)
+primary_chain_position: not_applicable
+summary_short: 主要生產銷售家用縫紉機，並透過子公司宇隆經營精密金屬零件。
+summary_long: 伸興以家庭用縫紉機及相關零組件的生產銷售為主要業務，並製造吸塵器及鋁合金壓鑄產品。2025年合併營收中，縫紉機占51.56%，精密金屬零件占40.41%，吸塵器占1.22%，其他項目占6.81%。精密金屬零件業務由子公司宇隆科技負責，涵蓋汽車、醫療、工業及自行車等應用；伸興截至2025年底持有宇隆26.06%股權。主要製造子公司另包括越南的伸興工業責任有限公司，以及中國的張家港伸興機電有限公司。
+segments:
+- evidence_ids:
+  - e1
+  id: sewing
+  name: 縫紉機
+  period: '2025'
+  revenue_share_pct: 51.56
+- evidence_ids:
+  - e2
+  id: precision_metal
+  name: 精密金屬零件
+  period: '2025'
+  revenue_share_pct: 40.41
+- evidence_ids:
+  - e3
+  id: vacuum
+  name: 吸塵器
+  period: '2025'
+  revenue_share_pct: 1.22
+- evidence_ids:
+  - e4
+  id: other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 6.81
 relations:
   subsidiaries:
   - as_of: '2026-03-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 母公司
+    detail: 持股26.06%的合併子公司
     details:
+    - 持股26.06%的合併子公司
     - 母公司
     edge: eb726e324ae1b
     evidence_level: primary
@@ -24,12 +61,103 @@ relations:
     ranking_basis: unranked
     share_basis: null
     share_pct: null
+    weight: 2
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 越南縫紉機製造子公司
+    details:
+    - 越南縫紉機製造子公司
+    edge: e9f665a56c699
+    evidence_level: primary
+    id: org.伸興工業責任有限公司-越南
+    name: 伸興工業責任有限公司(越南)
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過BVI控股公司持有的中國製造子公司
+    details:
+    - 透過BVI控股公司持有的中國製造子公司
+    edge: e7aa7549e227f
+    evidence_level: primary
+    id: org.張家港伸興機電有限公司
+    name: 張家港伸興機電有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
     weight: 1
 website: www.zenghsing.com.tw/
 tax_id: '55754185'
 incorporated: '1975-01-03'
 listed: '2014-12-23'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1558#e1:
+    locator: 印刷第85頁，主要產品項目及其營業比重，114年度縫紉機欄
+    published_date: null
+    publisher: 伸興工業股份有限公司
+    quote_check: found
+    title: 伸興工業股份有限公司2025年度年報
+    url: https://www.zenghsing.com.tw/wp-content/uploads/2026/05/2025%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf
+  tw.1558#e2:
+    locator: 印刷第85頁，主要產品項目及其營業比重，114年度精密金屬零件欄
+    published_date: null
+    publisher: 伸興工業股份有限公司
+    quote_check: found
+    title: 伸興工業股份有限公司2025年度年報
+    url: https://www.zenghsing.com.tw/wp-content/uploads/2026/05/2025%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf
+  tw.1558#e3:
+    locator: 印刷第85頁，主要產品項目及其營業比重，114年度吸塵器欄
+    published_date: null
+    publisher: 伸興工業股份有限公司
+    quote_check: found
+    title: 伸興工業股份有限公司2025年度年報
+    url: https://www.zenghsing.com.tw/wp-content/uploads/2026/05/2025%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf
+  tw.1558#e4:
+    locator: 印刷第85頁，主要產品項目及其營業比重，114年度其他欄
+    published_date: null
+    publisher: 伸興工業股份有限公司
+    quote_check: found
+    title: 伸興工業股份有限公司2025年度年報
+    url: https://www.zenghsing.com.tw/wp-content/uploads/2026/05/2025%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf
+  tw.1558#e5:
+    locator: 印刷第85頁，業務範圍／公司所營事業之主要內容
+    published_date: null
+    publisher: 伸興工業股份有限公司
+    quote_check: found
+    title: 伸興工業股份有限公司2025年度年報
+    url: https://www.zenghsing.com.tw/wp-content/uploads/2026/05/2025%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf
+  tw.1558#e6:
+    locator: 印刷第85頁，業務範圍／精密金屬零件業務
+    published_date: null
+    publisher: 伸興工業股份有限公司
+    quote_check: found
+    title: 伸興工業股份有限公司2025年度年報
+    url: https://www.zenghsing.com.tw/wp-content/uploads/2026/05/2025%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf
+  tw.1558#e7:
+    locator: 第21頁，合併財務報表編製主體，114年12月31日權益比例
+    published_date: null
+    publisher: 伸興工業股份有限公司
+    quote_check: found
+    title: 伸興工業股份有限公司及子公司114年度合併財務報告
+    url: https://www.zenghsing.com.tw/wp-content/uploads/2026/04/2025_%E5%90%88%E4%BD%B5.pdf
+  tw.1558#e8:
+    locator: 第21頁，合併財務報表編製主體；投資公司為ZENG HSING INDUSTRIAL CO., LTD. (BVI)
+    published_date: null
+    publisher: 伸興工業股份有限公司
+    quote_check: found
+    title: 伸興工業股份有限公司及子公司114年度合併財務報告
+    url: https://www.zenghsing.com.tw/wp-content/uploads/2026/04/2025_%E5%90%88%E4%BD%B5.pdf
+  tw.1558#e9:
+    locator: 第80頁，部門資訊／精密金屬件加工事業部
+    published_date: null
+    publisher: 伸興工業股份有限公司
+    quote_check: found
+    title: 伸興工業股份有限公司及子公司114年度合併財務報告
+    url: https://www.zenghsing.com.tw/wp-content/uploads/2026/04/2025_%E5%90%88%E4%BD%B5.pdf

@@ -8,12 +8,77 @@ industry:
   l0_code: '31'
   l0_name: 其他電子業
   l0_name_en: Other Electronic
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.other
+  l3_name: 其他電子零組件
+  l3_name_en: Other Electronic Components
+primary_chain_position: midstream
+summary_short: 以電子零組件製造為主，兼營零組件通路及產品測試驗證。
+summary_long: 敦吉科技的營運分為製造、通路與驗證三個事業群。2026年第一季，製造事業群營收6.71億元，通路3.94億元，驗證1.81億元，製造是最大營收來源。主要產品線包括音圈馬達、連接器及變壓器，當季營收占比分別為30.53%、7.45%及6.13%。驗證事業群提供電磁相容測試，並揭露持續擴充5G與Wi-Fi無線量測及AI伺服器檢測能力。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_manufacturing
+  name: 製造事業群
+  period: 2026Q1
+  revenue_share_pct: null
+- evidence_ids:
+  - e2
+  id: seg_distribution
+  name: 通路事業群
+  period: 2026Q1
+  revenue_share_pct: null
+- evidence_ids:
+  - e2
+  id: seg_testing
+  name: 驗證事業群
+  period: 2026Q1
+  revenue_share_pct: null
 website: www.audix.com
 tax_id: '20863763'
 incorporated: '1980-08-07'
 listed: '2001-09-17'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2459#e2:
+    locator: PDF第7頁，事業群表現；營業收入單位為新台幣億元
+    published_date: '2026-05-21'
+    publisher: 敦吉科技股份有限公司
+    quote_check: found
+    title: 敦吉科技2026年第一季法人說明會簡報
+    url: https://mopsov.twse.com.tw/nas/STR/245920260521M001.pdf
+  tw.2459#e3:
+    locator: PDF第8頁，第一季Highlights
+    published_date: '2026-05-21'
+    publisher: 敦吉科技股份有限公司
+    quote_check: found
+    title: 敦吉科技2026年第一季法人說明會簡報
+    url: https://mopsov.twse.com.tw/nas/STR/245920260521M001.pdf
+  tw.2459#e4:
+    locator: PDF第13頁，集團營收比重圖之電磁相容測試項目
+    published_date: '2025-11-19'
+    publisher: 敦吉科技股份有限公司
+    quote_check: found
+    title: 敦吉科技2025年第三季法人說明會簡報
+    url: https://mopsov.twse.com.tw/nas/STR/245920251119M001.pdf
+  tw.2459#e5:
+    locator: PDF第17頁，驗證事業群策略方向
+    published_date: '2025-11-19'
+    publisher: 敦吉科技股份有限公司
+    quote_check: found
+    title: 敦吉科技2025年第三季法人說明會簡報
+    url: https://mopsov.twse.com.tw/nas/STR/245920251119M001.pdf
+  tw.2459#e6:
+    locator: PDF第18頁，擴充AI伺服器產品檢測能力
+    published_date: '2025-11-19'
+    publisher: 敦吉科技股份有限公司
+    quote_check: found
+    title: 敦吉科技2025年第三季法人說明會簡報
+    url: https://mopsov.twse.com.tw/nas/STR/245920251119M001.pdf

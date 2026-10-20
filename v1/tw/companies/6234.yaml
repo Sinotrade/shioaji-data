@@ -8,7 +8,37 @@ industry:
   l0_code: '26'
   l0_name: 光電業
   l0_name_en: Optoelectronic
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.machinery
+  l2_name: 機械與自動化
+  l2_name_en: Machinery & Automation
+  l3: mach.automation
+  l3_name: 工業自動化與機器人
+  l3_name_en: Industrial Automation & Robotics
+primary_chain_position: not_applicable
+summary_short: 以自動化設備、倉儲物流系統及PCB微型鑽頭為主要營收來源。
+summary_long: 高僑以自動化設備及微型鑽頭為兩大業務，2024年營收占比分別為58.40%及41.60%。設備業務涵蓋整廠自動化、倉儲物流與半導體專用倉儲，並以無人搬運車等設備整合全廠物流。鑽頭業務提供PCB微型鑽頭及銑刀，2025年法說會另揭露用於AI伺服器電路板鑽孔的高長徑比微型鑽頭。其他業務包括CNC加工、真空腔體製造及三次元量測。集團透過Gold Honest及Honest Union逐層持有泰州敏晶機電，三層持股比例均為100%。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_automation
+  name: 自動化設備
+  period: '2024'
+  revenue_share_pct: 58.4
+- evidence_ids:
+  - e1
+  id: seg_drills
+  name: 微型鑽頭
+  period: '2024'
+  revenue_share_pct: 41.6
+main_theme: theme.robotics
+themes:
+- also: []
+  stage: system
+  theme: theme.robotics
+  tier: downstream
 relations:
   competitors:
   - as_of: '2025-12-31'
@@ -25,11 +55,131 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  subsidiaries:
+  - as_of: '2025-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%股權之子公司
+    details:
+    - 直接持有100%股權之子公司
+    edge: eb3b12f19eb2f
+    evidence_level: primary
+    id: org.gold-honest-technology
+    name: Gold Honest Technology Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過Gold Honest間接持有100%股權之子公司
+    details:
+    - 透過Gold Honest間接持有100%股權之子公司
+    edge: e96ed30792dca
+    evidence_level: primary
+    id: org.honest-union
+    name: Honest Union Company Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過Honest Union間接持有100%股權之子公司
+    details:
+    - 透過Honest Union間接持有100%股權之子公司
+    edge: e990a5c9bdabf
+    evidence_level: primary
+    id: org.taizhou-minjing
+    name: 泰州敏晶機電有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.teraauto.com.tw/
 tax_id: '23712277'
 incorporated: '1990-05-02'
 listed: '2003-03-12'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6234#e1:
+    locator: 印刷頁53，營業比重表；最後兩欄為113年度營收及占比
+    published_date: '2025-05-12'
+    publisher: 高僑自動化科技股份有限公司
+    quote_check: found
+    title: 高僑自動化科技股份有限公司113年度年報
+    url: https://www.teraauto.com.tw/Archive/_tw/file/INV/企業年報/113年股東常會年報.pdf
+  tw.6234#e10:
+    locator: 財報頁10，附註四（二）子公司表；投資公司為Gold Honest Technology Ltd.
+    published_date: null
+    publisher: 高僑自動化科技股份有限公司
+    quote_check: found
+    title: 高僑114年第2季合併財務報告
+    url: https://www.teraauto.com.tw/Archive/_tw/INV/Doc/財務報表/114年度/01-高僑(6234)114年Q2合併財務報告(上傳用印版).pdf
+  tw.6234#e11:
+    locator: 財報頁10，附註四（二）子公司表；投資公司為Honest Union Company Limited
+    published_date: null
+    publisher: 高僑自動化科技股份有限公司
+    quote_check: found
+    title: 高僑114年第2季合併財務報告
+    url: https://www.teraauto.com.tw/Archive/_tw/INV/Doc/財務報表/114年度/01-高僑(6234)114年Q2合併財務報告(上傳用印版).pdf
+  tw.6234#e2:
+    locator: 印刷頁53，所營業務之主要內容
+    published_date: '2025-05-12'
+    publisher: 高僑自動化科技股份有限公司
+    quote_check: found
+    title: 高僑自動化科技股份有限公司113年度年報
+    url: https://www.teraauto.com.tw/Archive/_tw/file/INV/企業年報/113年股東常會年報.pdf
+  tw.6234#e3:
+    locator: 產品資訊／倉儲物流系統／半導體自動化倉儲，正文
+    published_date: null
+    publisher: 高僑自動化科技股份有限公司
+    quote_check: found
+    title: 半導體自動化倉儲
+    url: https://www.teraauto.com.tw/pro.php?cid=91&f=30&m=l
+  tw.6234#e4:
+    locator: 印刷頁53，所營業務之主要內容
+    published_date: '2025-05-12'
+    publisher: 高僑自動化科技股份有限公司
+    quote_check: found
+    title: 高僑自動化科技股份有限公司113年度年報
+    url: https://www.teraauto.com.tw/Archive/_tw/file/INV/企業年報/113年股東常會年報.pdf
+  tw.6234#e5:
+    locator: PDF第17頁，High-Aspect-Ratio Micro Drills for AI PCB Applications
+    published_date: '2025-12-03'
+    publisher: 高僑自動化科技股份有限公司
+    quote_check: found
+    title: 2025 Investor Conference
+    url: https://mopsov.twse.com.tw/nas/STR/623420251203E001.pdf
+  tw.6234#e6:
+    locator: 印刷頁53，所營業務之主要內容
+    published_date: '2025-05-12'
+    publisher: 高僑自動化科技股份有限公司
+    quote_check: found
+    title: 高僑自動化科技股份有限公司113年度年報
+    url: https://www.teraauto.com.tw/Archive/_tw/file/INV/企業年報/113年股東常會年報.pdf
+  tw.6234#e7:
+    locator: 印刷頁53，所營業務之主要內容
+    published_date: '2025-05-12'
+    publisher: 高僑自動化科技股份有限公司
+    quote_check: not_found
+    title: 高僑自動化科技股份有限公司113年度年報
+    url: https://www.teraauto.com.tw/Archive/_tw/file/INV/企業年報/113年股東常會年報.pdf
+  tw.6234#e8:
+    locator: 產品資訊／倉儲物流系統／無塵室自動化倉儲，正文
+    published_date: null
+    publisher: 高僑自動化科技股份有限公司
+    quote_check: found
+    title: 無塵室自動化倉儲
+    url: https://www.teraauto.com.tw/pro.php?cid=112&f=30&m=l
+  tw.6234#e9:
+    locator: 財報頁10，附註四（二）列入合併財務報告之子公司；投資公司為本公司
+    published_date: null
+    publisher: 高僑自動化科技股份有限公司
+    quote_check: found
+    title: 高僑114年第2季合併財務報告
+    url: https://www.teraauto.com.tw/Archive/_tw/INV/Doc/財務報表/114年度/01-高僑(6234)114年Q2合併財務報告(上傳用印版).pdf

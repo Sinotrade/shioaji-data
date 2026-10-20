@@ -37,10 +37,12 @@ segments:
   revenue_share_pct: 100
 main_theme: theme.silicon_photonics
 themes:
-- stage: devices
+- also: []
+  stage: devices
   theme: theme.silicon_photonics
   tier: midstream
-- stage: packaging
+- also: []
+  stage: packaging
   theme: theme.cpo
   tier: midstream
 relations:

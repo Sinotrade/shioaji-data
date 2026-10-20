@@ -53,16 +53,20 @@ segments:
   revenue_share_pct: 6
 main_theme: theme.robotics
 themes:
-- stage: components
+- also: []
+  stage: components
   theme: theme.robotics
   tier: upstream
-- stage: components
+- also: []
+  stage: components
   theme: theme.drone
   tier: upstream
-- stage: parts
+- also: []
+  stage: parts
   theme: theme.liquid_cooling
   tier: upstream
-- stage: components
+- also: []
+  stage: components
   theme: theme.cpo
   tier: upstream
 relations:
@@ -91,6 +95,20 @@ relations:
     evidence_level: media
     id: org.精熙國際
     name: 精熙國際
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 財報認定之母公司
+    details:
+    - 財報認定之母公司
+    edge: ebe7a2917ba9b
+    evidence_level: primary
+    id: tw.4974
+    name: 亞泰
     ranking_basis: unranked
     share_basis: null
     share_pct: null

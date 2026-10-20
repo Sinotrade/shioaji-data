@@ -64,13 +64,16 @@ segments:
   revenue_share_pct: 8.25
 main_theme: theme.ai_server
 themes:
-- stage: chips
+- also: []
+  stage: chips
   theme: theme.ai_server
   tier: upstream
-- stage: packaging
+- also: []
+  stage: packaging
   theme: theme.cpo
   tier: midstream
-- stage: manufacturing
+- also: []
+  stage: manufacturing
   theme: theme.hbm
   tier: midstream
 relations:

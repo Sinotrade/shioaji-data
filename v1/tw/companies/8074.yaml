@@ -8,12 +8,155 @@ industry:
   l0_code: '28'
   l0_name: 電子零組件業
   l0_name_en: Electronic Parts and Components
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.ccl
+  l3_name: 銅箔基板與上游材料
+  l3_name_en: Copper Clad Laminates & Materials
+chain: chain.pcb
+chain_stage:
+  agreement: tiebreak
+  also: []
+  reason: PCB鑽孔用蓋墊板占營收59%，屬電路板與載板製程的上游材料及耗材。
+  stage: materials
+  stage_name: 銅箔、玻纖布、樹脂
+  tier: upstream
+primary_chain_position: upstream
+summary_short: 製造PCB鑽孔用蓋墊板、電木絕緣板及美耐裝飾板。
+summary_long: 鉅橡以PCB鑽孔製程用蓋墊板為主要業務，並供應電木板及美耐板。2026年第二季合併營收中，PCB墊板占59%、電木板占16%、美耐板占20%，其他產品占5%。蓋墊板為電路板加工輔助耗材，亦供應ABF等高階載板鑽孔應用；電木板產品可用於檢驗治具與電氣絕緣。公司直接控制鉅橡維京控股有限公司及鉅莊企業股份有限公司，並透過鉅橡維京控股間接控制昆山鉅橡複合材料有限公司。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_pcb
+  name: PCB墊板
+  period: 2026Q2
+  revenue_share_pct: 59
+- evidence_ids:
+  - e2
+  id: seg_insulation
+  name: 電木板
+  period: 2026Q2
+  revenue_share_pct: 16
+- evidence_ids:
+  - e2
+  id: seg_decorative
+  name: 美耐板
+  period: 2026Q2
+  revenue_share_pct: 20
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他
+  period: 2026Q2
+  revenue_share_pct: 5
+main_theme: theme.abf
+themes:
+- also: []
+  stage: materials
+  theme: theme.abf
+  tier: upstream
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接控制子公司
+    details:
+    - 直接控制子公司
+    edge: e125bb1e1ebd7
+    evidence_level: primary
+    id: org.aurona-bvi-holdings
+    name: 鉅橡維京控股有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接控制子公司
+    details:
+    - 直接控制子公司
+    edge: ef8650f13133f
+    evidence_level: primary
+    id: org.ju-zhuang-enterprise
+    name: 鉅莊企業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過鉅橡維京控股間接控制
+    details:
+    - 透過鉅橡維京控股間接控制
+    edge: e619783d431bb
+    evidence_level: primary
+    id: org.kunshan-aurona-composite-materials
+    name: 昆山鉅橡複合材料有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.aurona.com.tw/
 tax_id: '96865657'
 incorporated: '1996-02-01'
 listed: '2004-01-27'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.8074#e2:
+    locator: 第4頁，合併營收－產品別2026 Q2圓餅圖
+    published_date: '2026-08-10'
+    publisher: 鉅橡企業股份有限公司
+    quote_check: found
+    title: 2026 Q2營運說明
+    url: https://www.aurona.com.tw/picture/investor_service/6ad5d95387be1.pdf
+  tw.8074#e3:
+    locator: 內頁44，產業之現況與發展
+    published_date: '2026-03-31'
+    publisher: 鉅橡企業股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.aurona.com.tw/picture/investor_service/6ad5dc1252fd0.pdf
+  tw.8074#e4:
+    locator: 產品用途
+    published_date: null
+    publisher: 鉅橡企業股份有限公司
+    quote_check: found
+    title: 絕緣材料AU-1101
+    url: https://www.aurona.com.tw/product?main=114
+  tw.8074#e5:
+    locator: 內頁48，市場未來之供需狀況與成長性
+    published_date: '2026-03-31'
+    publisher: 鉅橡企業股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.aurona.com.tw/picture/investor_service/6ad5dc1252fd0.pdf
+  tw.8074#e6:
+    locator: PDF第69頁，控制與從屬關係表；欄位依序為轉投資事業名稱、主要股東
+    published_date: '2026-03-31'
+    publisher: 鉅橡企業股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.aurona.com.tw/picture/investor_service/6ad5dc1252fd0.pdf
+  tw.8074#e7:
+    locator: PDF第69頁，控制與從屬關係表；欄位依序為轉投資事業名稱、主要股東
+    published_date: '2026-03-31'
+    publisher: 鉅橡企業股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.aurona.com.tw/picture/investor_service/6ad5dc1252fd0.pdf
+  tw.8074#e8:
+    locator: PDF第69頁，控制與從屬關係表；欄位依序為轉投資事業名稱、主要股東
+    published_date: '2026-03-31'
+    publisher: 鉅橡企業股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.aurona.com.tw/picture/investor_service/6ad5dc1252fd0.pdf

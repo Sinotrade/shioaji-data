@@ -8,8 +8,91 @@ industry:
   l0_code: '27'
   l0_name: 通信網路業
   l0_name_en: Communications and Internet
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.network
+  l2_name: 通信網路
+  l2_name_en: Communications & Networking
+  l3: net.switch
+  l3_name: 網通設備（交換器、路由器）
+  l3_name_en: Networking Equipment (Switches, Routers)
+chain: chain.networking
+chain_stage:
+  agreement: both
+  also: []
+  reason: 主要產品為路由器、交換器、企業網路控制器、5G終端及衛星閘道器，屬網通設備與系統。
+  stage: equipment
+  stage_name: 網通設備與系統
+  tier: downstream
+primary_chain_position: downstream
+summary_short: 設計與製造寬頻網通設備，產品涵蓋路由器、交換器、5G終端及衛星閘道器。
+summary_long: 建漢以寬頻網路設備的設計與製造為核心，產品涵蓋Wi-Fi 7路由器、網管型交換器、企業無線網路控制器、5G CPE及衛星寬頻設備。企業控制器提供多據點集中管理與雲端網路管理，5G CPE支援5G／4G雙連結。依2026年6月法說會揭露，2026年第一季營收由消費產品占33%、電信產品占32%、企業產品占30%，其他占5%。公司亦列有低軌衛星寬頻網路服務閘道器，主要定位為通信網路產業鏈的設備與系統製造端。
+segments:
+- evidence_ids:
+  - e1
+  id: consumer
+  name: 消費產品
+  period: 2026Q1
+  revenue_share_pct: 33
+- evidence_ids:
+  - e1
+  id: telecom
+  name: 電信產品
+  period: 2026Q1
+  revenue_share_pct: 32
+- evidence_ids:
+  - e1
+  id: enterprise
+  name: 企業產品
+  period: 2026Q1
+  revenue_share_pct: 30
+- evidence_ids:
+  - e1
+  id: other
+  name: 其他
+  period: 2026Q1
+  revenue_share_pct: 5
+main_theme: theme.5g
+themes:
+- also: []
+  stage: devices
+  theme: theme.5g
+  tier: downstream
+- also: []
+  stage: equipment
+  theme: theme.leo_satellite
+  tier: midstream
 relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接全資製造子公司
+    details:
+    - 間接全資製造子公司
+    edge: e69d1410c48e9
+    evidence_level: primary
+    id: org.fu-hai-technology-company-limited
+    name: FU HAI Technology Company Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接全資製造子公司
+    details:
+    - 間接全資製造子公司
+    edge: e975f369ed6ab
+    evidence_level: primary
+    id: org.hon-yao-fu-technology-company-limited
+    name: HON YAO FU Technology Company Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   transactions:
   - amount: 新台幣21.88億元（含加值型營業稅）
     as_of: '2026-10-13'
@@ -36,7 +119,70 @@ website: www.cybertan.com.tw
 tax_id: '16594892'
 incorporated: '1998-06-10'
 listed: '2003-07-28'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3062#e1:
+    locator: 第10頁，營收比重－產品別，2026Q1
+    published_date: '2026-06-18'
+    publisher: 建漢科技股份有限公司
+    quote_check: found
+    title: 建漢科技2026年上半年法人說明會簡報
+    url: https://www.cybertan.com.tw/storage/investArticle/202606181544403949%28%E4%B8%8A%E5%82%B3%E6%AA%94%29%20%E5%BB%BA%E6%BC%A2%E6%B3%95%E8%AA%AA%E6%9C%83%28%E4%B8%AD%E6%96%87%292026H1%28Final%29%2020260618.pdf
+  tw.3062#e2:
+    locator: 第77頁，目前之產品第19項
+    published_date: '2026-03-31'
+    publisher: 建漢科技股份有限公司
+    quote_check: found
+    title: 建漢科技114年度年報
+    url: https://www.cybertan.com.tw/storage/investArticle/202605111616373169%28%E7%B6%B2%E7%AB%99%E4%B8%8A%E5%82%B3%E6%AA%94%29%20%E5%BB%BA%E6%BC%A2-114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1_%E4%B8%AD%E6%96%87%E7%89%88.pdf
+  tw.3062#e3:
+    locator: Managed Switch產品功能
+    published_date: null
+    publisher: 建漢科技股份有限公司
+    quote_check: found
+    title: Managed Switch
+    url: https://www.cybertan.com.tw/public/tw/products-01-03
+  tw.3062#e4:
+    locator: Enterprise AP Controller產品功能
+    published_date: null
+    publisher: 建漢科技股份有限公司
+    quote_check: found
+    title: Enterprise AP Controller
+    url: https://www.cybertan.com.tw/public/tw/products-01-02
+  tw.3062#e5:
+    locator: 5G CPE產品功能
+    published_date: null
+    publisher: 建漢科技股份有限公司
+    quote_check: found
+    title: 5G CPE
+    url: https://www.cybertan.com.tw/public/tw/products-02-02
+  tw.3062#e6:
+    locator: 產品名稱
+    published_date: null
+    publisher: 建漢科技股份有限公司
+    quote_check: found
+    title: Satellite Broadband Appliance
+    url: https://www.cybertan.com.tw/public/tw/products-02-01
+  tw.3062#e7:
+    locator: 第76頁，業務範圍，研究開發生產製造及銷售產品第7項
+    published_date: '2026-03-31'
+    publisher: 建漢科技股份有限公司
+    quote_check: unreachable
+    title: 建漢科技114年度年報
+    url: https://www.cybertan.com.tw/storage/investArticle/202605111616373169%28%E7%B6%B2%E7%AB%99%E4%B8%8A%E5%82%B3%E6%AA%94%29%20%E5%BB%BA%E6%BC%A2-114%E5%B9%B4%E5%BA%A6%E5%A0%B1_%E4%B8%AD%E6%96%87%E7%89%88.pdf
+  tw.3062#e8:
+    locator: 第16頁，合併子公司表；直接投資者CyberTAN (B.V.I) Investment Corp.，2026年6月30日持股欄
+    published_date: null
+    publisher: 建漢科技股份有限公司
+    quote_check: found
+    title: 2026Q2 Consolidated Financial Report
+    url: https://www.cybertan.com.tw/storage/investArticle/2026090409340447522026%20Q2%20consolidated%20financial%20report-CBT.pdf
+  tw.3062#e9:
+    locator: 第16頁，合併子公司表；直接投資者CyberTAN (B.V.I) Investment Corp.，2026年6月30日持股欄
+    published_date: null
+    publisher: 建漢科技股份有限公司
+    quote_check: found
+    title: 2026Q2 Consolidated Financial Report
+    url: https://www.cybertan.com.tw/storage/investArticle/2026090409340447522026%20Q2%20consolidated%20financial%20report-CBT.pdf

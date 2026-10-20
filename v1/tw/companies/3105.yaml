@@ -49,22 +49,28 @@ segments:
   revenue_share_pct: 11
 main_theme: theme.5g
 themes:
-- stage: components
+- also: []
+  stage: components
   theme: theme.5g
   tier: upstream
-- stage: it
+- also: []
+  stage: it
   theme: theme.data_center
   tier: midstream
-- stage: components
+- also: []
+  stage: components
   theme: theme.leo_satellite
   tier: upstream
-- stage: devices
+- also: []
+  stage: devices
   theme: theme.gan
   tier: midstream
-- stage: chip
+- also: []
+  stage: chip
   theme: theme.vcsel
   tier: midstream
-- stage: devices
+- also: []
+  stage: devices
   theme: theme.inp
   tier: midstream
 relations:

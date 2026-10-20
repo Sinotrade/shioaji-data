@@ -8,12 +8,193 @@ industry:
   l0_code: '24'
   l0_name: 半導體業
   l0_name_en: Semiconductor
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.semi
+  l2_name: 半導體
+  l2_name_en: Semiconductors
+  l3: semi.ic_design
+  l3_name: IC 設計
+  l3_name_en: IC Design
+chain: chain.semiconductor
+chain_stage:
+  agreement: both
+  also: []
+  reason: 以顯示驅動IC研發與銷售為主，顯示器驅動IC占營收91.46%。
+  stage: ip_design
+  stage_name: IP 與 IC 設計
+  tier: upstream
+primary_chain_position: upstream
+summary_short: 以液晶與電子紙顯示驅動IC設計、銷售為主要收入來源。
+summary_long: 晶宏以顯示驅動IC的研發與銷售為主要業務，產品涵蓋液晶顯示、電子紙及觸控控制。2025年顯示器驅動IC占營收91.46%，其他產品占8.54%。液晶產品應用於工控、醫療及車載顯示，電子紙產品包含電子貨架標籤驅動與控制IC。公司亦提供馬達控制IC與GaN預驅動IC，涉及水冷馬達控制及電源應用。主要子公司包括超核感科技、超炫科技及控股公司JPS Group Holdings, Ltd.。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_display
+  name: 顯示器驅動IC
+  period: '2025'
+  revenue_share_pct: 91.46
+- evidence_ids:
+  - e3
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 8.54
+main_theme: theme.ev
+themes:
+- also: []
+  stage: parts
+  theme: theme.ev
+  tier: midstream
+- also: []
+  stage: parts
+  theme: theme.liquid_cooling
+  tier: upstream
+- also: []
+  stage: application
+  theme: theme.gan
+  tier: downstream
+relations:
+  subsidiaries:
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資控股子公司
+    details:
+    - 全資控股子公司
+    edge: ee1c08eba3638
+    evidence_level: primary
+    id: org.jps-group-holdings
+    name: JPS Group Holdings, Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股97.26%的子公司
+    details:
+    - 直接持股97.26%的子公司
+    edge: e28400a9bf1a8
+    evidence_level: primary
+    id: org.ultra-capteur
+    name: 超核感科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股63.58%的子公司
+    details:
+    - 直接持股63.58%的子公司
+    edge: e6500292bfafd
+    evidence_level: primary
+    id: org.ultra-display
+    name: 超炫科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.ultrachip.com
 tax_id: '70392248'
 incorporated: '1999-08-14'
 listed: '2014-03-14'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3141#e1:
+    locator: 公司概況首段
+    published_date: null
+    publisher: 晶宏半導體
+    quote_check: found
+    title: 公司概況
+    url: https://www.ultrachip.com/zh/habout.php?id=31
+  tw.3141#e10:
+    locator: 印刷頁78，PDF第81頁，關係企業概況及基本資料
+    published_date: null
+    publisher: 晶宏半導體股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.ultrachip.com/images/epost/2026-%E5%B9%B4%E5%A0%B1.pdf
+  tw.3141#e11:
+    locator: 印刷頁60，PDF第63頁，馬達驅動控制IC
+    published_date: null
+    publisher: 晶宏半導體股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.ultrachip.com/images/epost/2026-%E5%B9%B4%E5%A0%B1.pdf
+  tw.3141#e12:
+    locator: 印刷頁60，PDF第63頁，GaN預驅動器及AI電源應用段落
+    published_date: null
+    publisher: 晶宏半導體股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.ultrachip.com/images/epost/2026-%E5%B9%B4%E5%A0%B1.pdf
+  tw.3141#e13:
+    locator: 印刷頁59，PDF第62頁，新能源電動車儀表顯示驅動晶片段落
+    published_date: null
+    publisher: 晶宏半導體股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.ultrachip.com/images/epost/2026-%E5%B9%B4%E5%A0%B1.pdf
+  tw.3141#e2:
+    locator: 印刷頁56，PDF第59頁，營業比重表
+    published_date: null
+    publisher: 晶宏半導體股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.ultrachip.com/images/epost/2026-%E5%B9%B4%E5%A0%B1.pdf
+  tw.3141#e3:
+    locator: 印刷頁56，PDF第59頁，營業比重表「其他」列
+    published_date: null
+    publisher: 晶宏半導體股份有限公司
+    quote_check: not_found
+    title: 114年度年報
+    url: https://www.ultrachip.com/images/epost/2026-%E5%B9%B4%E5%A0%B1.pdf
+  tw.3141#e4:
+    locator: 公司概況，產品應用說明
+    published_date: null
+    publisher: 晶宏半導體
+    quote_check: found
+    title: 公司概況
+    url: https://www.ultrachip.com/zh/habout.php?id=31
+  tw.3141#e5:
+    locator: 產品表，UC8151c列
+    published_date: null
+    publisher: 晶宏半導體
+    quote_check: found
+    title: EPD驅動及控制IC
+    url: https://www.ultrachip.com/zh/habout.php?id=133
+  tw.3141#e6:
+    locator: 電阻式觸控IC方案
+    published_date: null
+    publisher: 晶宏半導體
+    quote_check: found
+    title: 觸控
+    url: https://www.ultrachip.com/zh/habout.php?id=194
+  tw.3141#e7:
+    locator: BLDC Control IC產品說明
+    published_date: null
+    publisher: 晶宏半導體
+    quote_check: found
+    title: 馬達驅動IC
+    url: https://www.ultrachip.com/zh/habout.php?id=185
+  tw.3141#e8:
+    locator: 印刷頁78，PDF第81頁，關係企業概況；全名及持股基準見印刷頁43
+    published_date: null
+    publisher: 晶宏半導體股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.ultrachip.com/images/epost/2026-%E5%B9%B4%E5%A0%B1.pdf
+  tw.3141#e9:
+    locator: 印刷頁78，PDF第81頁，關係企業概況；全名及持股基準見印刷頁43
+    published_date: null
+    publisher: 晶宏半導體股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.ultrachip.com/images/epost/2026-%E5%B9%B4%E5%A0%B1.pdf

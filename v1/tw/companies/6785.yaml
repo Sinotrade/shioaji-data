@@ -8,12 +8,93 @@ industry:
   l0_code: '22'
   l0_name: 生技醫療業
   l0_name_en: Biotechnology and Medical Care
-primary_chain_position: unknown
+  l1: health
+  l1_name: 醫療保健
+  l1_name_en: Healthcare
+  l2: health.pharma
+  l2_name: 製藥與生技
+  l2_name_en: Pharmaceuticals & Biotech
+  l3: bio.new_drug
+  l3_name: 新藥研發
+  l3_name_en: New Drug Development
+chain: chain.biotech
+chain_stage:
+  agreement: both
+  also: []
+  reason: 以長效針劑新藥研發為主，收入來自授權金與委託實驗，尚未商業化生產銷售。
+  stage: rnd
+  stage_name: 研發與原料
+  tier: upstream
+primary_chain_position: upstream
+summary_short: 研發中樞神經系統長效針劑，收入來源包括授權金與委託實驗服務。
+summary_long: 昱展新藥以新藥開發為主要業務，自行研發 In-Relar 長效緩釋注射平台，作為藥物開發的核心技術。主要研發品項包括針對鴉片類成癮症的 ALA-1000、難治型憂鬱症的 ALA-3000、帕金森氏症的 ALA-4000，以及思覺失調症的 ALA-5000，均為皮下長效針劑。依2025年年報，公司新藥仍處於研發階段，尚未商業化生產銷售；2024及2025年的營業收入來源為授權金與委託服務實驗收入。
+segments:
+- evidence_ids:
+  - e7
+  id: licensing
+  name: 授權金收入
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e7
+  id: experimental_services
+  name: 委託服務實驗收入
+  period: '2025'
+  revenue_share_pct: null
 website: www.alarpharm.com
 tax_id: '52310651'
 incorporated: '2016-09-23'
 listed: '2024-01-24'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6785#e2:
+    locator: 第50頁，技術及研發概況
+    published_date: '2026-04-20'
+    publisher: 昱展新藥生技股份有限公司
+    quote_check: found
+    title: 114年年報
+    url: https://alarpharm.com/wp-content/uploads/114%E5%B9%B4%E5%A0%B1%E4%B8%AD-1.pdf
+  tw.6785#e3:
+    locator: 第42頁，產品品項表
+    published_date: '2026-04-20'
+    publisher: 昱展新藥生技股份有限公司
+    quote_check: found
+    title: 114年年報
+    url: https://alarpharm.com/wp-content/uploads/114%E5%B9%B4%E5%A0%B1%E4%B8%AD-1.pdf
+  tw.6785#e4:
+    locator: 第42頁，產品品項表
+    published_date: '2026-04-20'
+    publisher: 昱展新藥生技股份有限公司
+    quote_check: found
+    title: 114年年報
+    url: https://alarpharm.com/wp-content/uploads/114%E5%B9%B4%E5%A0%B1%E4%B8%AD-1.pdf
+  tw.6785#e5:
+    locator: 第42頁，產品品項表
+    published_date: '2026-04-20'
+    publisher: 昱展新藥生技股份有限公司
+    quote_check: found
+    title: 114年年報
+    url: https://alarpharm.com/wp-content/uploads/114%E5%B9%B4%E5%A0%B1%E4%B8%AD-1.pdf
+  tw.6785#e6:
+    locator: 第42頁，產品品項表
+    published_date: '2026-04-20'
+    publisher: 昱展新藥生技股份有限公司
+    quote_check: found
+    title: 114年年報
+    url: https://alarpharm.com/wp-content/uploads/114%E5%B9%B4%E5%A0%B1%E4%B8%AD-1.pdf
+  tw.6785#e7:
+    locator: 第58頁，最近二年度銷售量值
+    published_date: '2026-04-20'
+    publisher: 昱展新藥生技股份有限公司
+    quote_check: found
+    title: 114年年報
+    url: https://alarpharm.com/wp-content/uploads/114%E5%B9%B4%E5%A0%B1%E4%B8%AD-1.pdf
+  tw.6785#e8:
+    locator: 第41頁，目前之產品及其營業比重
+    published_date: '2026-04-20'
+    publisher: 昱展新藥生技股份有限公司
+    quote_check: found
+    title: 114年年報
+    url: https://alarpharm.com/wp-content/uploads/114%E5%B9%B4%E5%A0%B1%E4%B8%AD-1.pdf

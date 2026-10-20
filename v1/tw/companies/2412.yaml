@@ -47,10 +47,12 @@ segments:
   revenue_share_pct: 2.6
 main_theme: theme.5g
 themes:
-- stage: devices
+- also: []
+  stage: devices
   theme: theme.5g
   tier: downstream
-- stage: operation
+- also: []
+  stage: operation
   theme: theme.data_center
   tier: downstream
 relations:
@@ -173,6 +175,21 @@ relations:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
+    detail: 合併財報列示子公司
+    details:
+    - 合併財報列示子公司
+    - 最終母公司
+    edge: efe922fcbaccf
+    evidence_level: primary
+    id: tw.2450
+    name: 神腦
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 2
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
     detail: 集團上市櫃子公司
     details:
     - 集團上市櫃子公司
@@ -239,20 +256,6 @@ relations:
     evidence_level: primary
     id: org.chunghwa-telecom-europe
     name: Chunghwa Telecom Europe GmbH
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
-  - as_of: '2025-12-31'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 合併財報列示子公司
-    details:
-    - 合併財報列示子公司
-    edge: efe922fcbaccf
-    evidence_level: primary
-    id: tw.2450
-    name: 神腦
     ranking_basis: unranked
     share_basis: null
     share_pct: null

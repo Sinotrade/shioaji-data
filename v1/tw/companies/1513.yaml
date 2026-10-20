@@ -41,16 +41,18 @@ segments:
   revenue_share_pct: 10.81
 main_theme: theme.ev
 themes:
-- stage: parts
+- also: []
+  stage: parts
   theme: theme.ev
   tier: midstream
-- stage: equipment
+- also:
+  - stage: engineering
+    tier: downstream
+  stage: equipment
   theme: theme.power_grid
   tier: midstream
-- stage: engineering
-  theme: theme.power_grid
-  tier: downstream
-- stage: equipment
+- also: []
+  stage: equipment
   theme: theme.data_center
   tier: upstream
 relations:

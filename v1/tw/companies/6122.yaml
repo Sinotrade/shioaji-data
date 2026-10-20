@@ -8,12 +8,70 @@ industry:
   l0_code: '05'
   l0_name: 電機機械
   l0_name_en: Electric Machinery
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.construction
+  l2_name: 營建與工程
+  l2_name_en: Engineering & Construction
+  l3: cons.engineering
+  l3_name: 工程與統包
+  l3_name_en: Engineering & EPC
+primary_chain_position: not_applicable
+summary_short: 承作石化化工廠房、高科技機電及公共工程的規劃、設計與施工。
+summary_long: 擎邦以產業廠房與公共工程的規劃、設計及建造服務為主要業務。2025年石化及化工工程占營收55.50%，捷運、發電廠、空調機電系統及公共工程占42.51%，其他占1.98%。服務涵蓋石化化工廠、半導體與資料中心的整廠機電整合，以及特高壓電纜洞道等公共工程，並提供無塵室、空調、消防、給排水等系統工程。公司亦協助導入能源管理與工廠智慧化系統；2025年底全資子公司包括誠新建設及美國德州公司。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_petrochemical
+  name: 石化及化工工程
+  period: '2025'
+  revenue_share_pct: 55.5
+- evidence_ids:
+  - e1
+  id: seg_public_mep
+  name: 捷運、發電廠、空調機電系統及公共工程
+  period: '2025'
+  revenue_share_pct: 42.51
+- evidence_ids:
+  - e1
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 1.98
 website: www.kpec.com.tw
 tax_id: '05114306'
 incorporated: '1982-08-21'
 listed: '2000-07-14'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6122#e1:
+    locator: 第65頁，營業比重
+    published_date: '2026-04-25'
+    publisher: 擎邦國際科技工程股份有限公司
+    quote_check: not_found
+    title: 擎邦114年度年報：營業比重
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=6122&colorchg=1&filename=2025_6122_20260623F04.pdf&kind=F&step=9
+  tw.6122#e2:
+    locator: 第65頁，公司目前之商品（服務）項目
+    published_date: '2026-04-25'
+    publisher: 擎邦國際科技工程股份有限公司
+    quote_check: not_found
+    title: 擎邦114年度年報：主要服務項目
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=6122&colorchg=1&filename=2025_6122_20260623F04.pdf&kind=F&step=9
+  tw.6122#e3:
+    locator: 第66頁，高科技產業廠房興建之整廠機電系統整合
+    published_date: '2026-04-25'
+    publisher: 擎邦國際科技工程股份有限公司
+    quote_check: not_found
+    title: 擎邦114年度年報：高科技產業機電系統整合
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=6122&colorchg=1&filename=2025_6122_20260623F04.pdf&kind=F&step=9
+  tw.6122#e4:
+    locator: 第66頁，公共工程產業之各類工程
+    published_date: '2026-04-25'
+    publisher: 擎邦國際科技工程股份有限公司
+    quote_check: not_found
+    title: 擎邦114年度年報：公共工程服務
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=6122&colorchg=1&filename=2025_6122_20260623F04.pdf&kind=F&step=9

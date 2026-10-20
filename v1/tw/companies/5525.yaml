@@ -8,12 +8,151 @@ industry:
   l0_code: '14'
   l0_name: 建材營造業
   l0_name_en: Building Material and Construction
-primary_chain_position: unknown
+  l1: realestate
+  l1_name: 不動產
+  l1_name_en: Real Estate
+  l2: re.dev
+  l2_name: 不動產
+  l2_name_en: Real Estate
+  l3: re.developer
+  l3_name: 建設開發
+  l3_name_en: Property Development
+primary_chain_position: not_applicable
+summary_short: 以住宅及商業不動產開發租售為主，兼營辦公出租與工業區開發。
+summary_long: 順天建設以不動產開發及租售為主要業務，2024年度營業額中營建收入占92%。住宅產品包括透天別墅與社區大樓，商用不動產涵蓋商業大樓及辦公大樓出租，另從事工業廠房、工業區、都市更新及土地開發。公司經營順天經貿廣場辦公大樓出租，租金列為經常性營業收入。依2025年第三季財報，合併子公司包括建高工程、台大興興業、順鼎建設及順天環匯企業，其業務涵蓋營造、住宅與大樓開發租售、都市更新、旅館及不動產租賃。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_construction
+  name: 營建收入
+  period: 2024年度
+  revenue_share_pct: 92
+relations:
+  subsidiaries:
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 住宅開發及都市更新子公司
+    details:
+    - 住宅開發及都市更新子公司
+    edge: e3b0c5810f007
+    evidence_level: primary
+    id: org.台大興興業股份有限公司
+    name: 台大興興業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 營造及房地開發子公司
+    details:
+    - 營造及房地開發子公司
+    edge: eaf923855c44c
+    evidence_level: primary
+    id: org.建高工程股份有限公司
+    name: 建高工程股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 旅館及不動產租賃子公司
+    details:
+    - 旅館及不動產租賃子公司
+    edge: e2449557e4ddc
+    evidence_level: primary
+    id: org.順天環匯企業股份有限公司
+    name: 順天環匯企業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 住宅開發及都市更新子公司
+    details:
+    - 住宅開發及都市更新子公司
+    edge: e18c559cf52f3
+    evidence_level: primary
+    id: org.順鼎建設股份有限公司
+    name: 順鼎建設股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.sweeten.com.tw
 tax_id: '22764965'
 incorporated: '1987-11-28'
 listed: '2004-11-26'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.5525#e1:
+    locator: 第58頁，營業比重
+    published_date: '2025-04-17'
+    publisher: 順天建設股份有限公司
+    quote_check: found
+    title: 113年度年報
+    url: https://www.sweeten.com.tw/wp-content/uploads/2025/05/5525-順天113年度股東會年報-上傳檔中文.pdf
+  tw.5525#e2:
+    locator: 第58頁，所營主要業務
+    published_date: '2025-04-17'
+    publisher: 順天建設股份有限公司
+    quote_check: found
+    title: 113年度年報
+    url: https://www.sweeten.com.tw/wp-content/uploads/2025/05/5525-順天113年度股東會年報-上傳檔中文.pdf
+  tw.5525#e3:
+    locator: 第58頁，公司目前之商品項目
+    published_date: '2025-04-17'
+    publisher: 順天建設股份有限公司
+    quote_check: found
+    title: 113年度年報
+    url: https://www.sweeten.com.tw/wp-content/uploads/2025/05/5525-順天113年度股東會年報-上傳檔中文.pdf
+  tw.5525#e4:
+    locator: 第58頁，產業現況與發展
+    published_date: '2025-04-17'
+    publisher: 順天建設股份有限公司
+    quote_check: found
+    title: 113年度年報
+    url: https://www.sweeten.com.tw/wp-content/uploads/2025/05/5525-順天113年度股東會年報-上傳檔中文.pdf
+  tw.5525#e5:
+    locator: 順天主要業務
+    published_date: null
+    publisher: 順天建設股份有限公司
+    quote_check: found
+    title: 關於順天
+    url: https://www.sweeten.com.tw/about/
+  tw.5525#e6:
+    locator: 第11頁，列入合併財務報告之子公司
+    published_date: null
+    publisher: 順天建設股份有限公司
+    quote_check: found
+    title: 114年第3季合併財務報告
+    url: https://www.sweeten.com.tw/wp-content/uploads/2026/01/投資人專區-財務資訊-02財務報告-114年第3季合併財務.pdf
+  tw.5525#e7:
+    locator: 第11頁，列入合併財務報告之子公司
+    published_date: null
+    publisher: 順天建設股份有限公司
+    quote_check: found
+    title: 114年第3季合併財務報告
+    url: https://www.sweeten.com.tw/wp-content/uploads/2026/01/投資人專區-財務資訊-02財務報告-114年第3季合併財務.pdf
+  tw.5525#e8:
+    locator: 第11頁，列入合併財務報告之子公司
+    published_date: null
+    publisher: 順天建設股份有限公司
+    quote_check: found
+    title: 114年第3季合併財務報告
+    url: https://www.sweeten.com.tw/wp-content/uploads/2026/01/投資人專區-財務資訊-02財務報告-114年第3季合併財務.pdf
+  tw.5525#e9:
+    locator: 第11頁，列入合併財務報告之子公司
+    published_date: null
+    publisher: 順天建設股份有限公司
+    quote_check: found
+    title: 114年第3季合併財務報告
+    url: https://www.sweeten.com.tw/wp-content/uploads/2026/01/投資人專區-財務資訊-02財務報告-114年第3季合併財務.pdf

@@ -22,7 +22,7 @@ members:
 - id: tw.1605
   detail: 不銹鋼占營收52%，以盤元、棒材及鋼捲等鋼材為主，另具煉鋼及鋼胚業務。
   as_of: '2026-10-14'
-  evidence: &id001
+  evidence:
   - tw.1605#e02
   - tw.1605#e06
   confidence: ai_cross_checked
@@ -33,7 +33,9 @@ members:
 - id: tw.1605
   detail: 不銹鋼占營收52%，以盤元、棒材及鋼捲等鋼材為主，另具煉鋼及鋼胚業務。
   as_of: '2026-10-14'
-  evidence: *id001
+  evidence:
+  - tw.1605#e02
+  - tw.1605#e06
   confidence: ai_cross_checked
   source: classification
   stage: upstream
@@ -42,7 +44,7 @@ members:
 - id: tw.2002
   detail: 以一貫煉鐵煉鋼為核心，涵蓋鋼胚及軋延鋼材，合併範圍另含鋼構製造。
   as_of: '2026-10-14'
-  evidence: &id002
+  evidence:
   - tw.2002#e2
   - tw.2002#e4
   confidence: ai_cross_checked
@@ -53,7 +55,9 @@ members:
 - id: tw.2002
   detail: 以一貫煉鐵煉鋼為核心，涵蓋鋼胚及軋延鋼材，合併範圍另含鋼構製造。
   as_of: '2026-10-14'
-  evidence: *id002
+  evidence:
+  - tw.2002#e2
+  - tw.2002#e4
   confidence: ai_cross_checked
   source: classification
   stage: downstream
@@ -62,7 +66,9 @@ members:
 - id: tw.2002
   detail: 以一貫煉鐵煉鋼為核心，涵蓋鋼胚及軋延鋼材，合併範圍另含鋼構製造。
   as_of: '2026-10-14'
-  evidence: *id002
+  evidence:
+  - tw.2002#e2
+  - tw.2002#e4
   confidence: ai_cross_checked
   source: classification
   stage: midstream
@@ -71,7 +77,7 @@ members:
 - id: tw.2006
   detail: 鋼筋占營收51.53%，以軋延鋼材為主，兼具電爐煉鋼及子公司鋼構工程。
   as_of: '2026-10-14'
-  evidence: &id003
+  evidence:
   - tw.2006#e2
   - tw.2006#e3
   - tw.2006#e4
@@ -84,7 +90,11 @@ members:
 - id: tw.2006
   detail: 鋼筋占營收51.53%，以軋延鋼材為主，兼具電爐煉鋼及子公司鋼構工程。
   as_of: '2026-10-14'
-  evidence: *id003
+  evidence:
+  - tw.2006#e2
+  - tw.2006#e3
+  - tw.2006#e4
+  - tw.2006#e7
   confidence: ai_cross_checked
   source: classification
   stage: downstream
@@ -93,16 +103,42 @@ members:
 - id: tw.2006
   detail: 鋼筋占營收51.53%，以軋延鋼材為主，兼具電爐煉鋼及子公司鋼構工程。
   as_of: '2026-10-14'
-  evidence: *id003
+  evidence:
+  - tw.2006#e2
+  - tw.2006#e3
+  - tw.2006#e4
+  - tw.2006#e7
   confidence: ai_cross_checked
   source: classification
   stage: upstream
   tier: upstream
   stage_role: also
+- id: tw.2008
+  detail: 鋼管占營收91%，屬熱冷軋鋼品下游應用；另有冷軋、熱軋及鍍鋅鋼捲流通業務。
+  as_of: '2026-10-20'
+  evidence:
+  - tw.2008#e2
+  - tw.2008#e6
+  confidence: ai_cross_checked
+  source: classification
+  stage: downstream
+  tier: downstream
+  stage_role: primary
+- id: tw.2008
+  detail: 鋼管占營收91%，屬熱冷軋鋼品下游應用；另有冷軋、熱軋及鍍鋅鋼捲流通業務。
+  as_of: '2026-10-20'
+  evidence:
+  - tw.2008#e2
+  - tw.2008#e6
+  confidence: ai_cross_checked
+  source: classification
+  stage: midstream
+  tier: midstream
+  stage_role: also
 - id: tw.2010
   detail: 工程收入占54.42%，主要承作鋼構製作安裝，另有鋼板裁剪及鋼材銷售。
   as_of: '2026-10-18'
-  evidence: &id004
+  evidence:
   - tw.2010#e1
   - tw.2010#e2
   confidence: ai_cross_checked
@@ -113,7 +149,9 @@ members:
 - id: tw.2010
   detail: 工程收入占54.42%，主要承作鋼構製作安裝，另有鋼板裁剪及鋼材銷售。
   as_of: '2026-10-18'
-  evidence: *id004
+  evidence:
+  - tw.2010#e1
+  - tw.2010#e2
   confidence: ai_cross_checked
   source: classification
   stage: midstream
@@ -122,7 +160,7 @@ members:
 - id: tw.2013
   detail: 高樓鋼架占43.25%為最大項目，主業為鋼構製造安裝，另有鋼品貿易及型鋼供應。
   as_of: '2026-10-18'
-  evidence: &id005
+  evidence:
   - tw.2013#e_business
   - tw.2013#e_share_highrise
   - tw.2013#e_position
@@ -134,7 +172,10 @@ members:
 - id: tw.2013
   detail: 高樓鋼架占43.25%為最大項目，主業為鋼構製造安裝，另有鋼品貿易及型鋼供應。
   as_of: '2026-10-18'
-  evidence: *id005
+  evidence:
+  - tw.2013#e_business
+  - tw.2013#e_share_highrise
+  - tw.2013#e_position
   confidence: ai_cross_checked
   source: classification
   stage: midstream
@@ -156,7 +197,7 @@ members:
 - id: tw.2015
   detail: 鋼筋占營收55.07%，另有條線與型鋼，主要為軋延鋼材，亦具煉鋼製程。
   as_of: '2026-10-15'
-  evidence: &id006
+  evidence:
   - tw.2015#e1
   - tw.2015#e8
   confidence: ai_cross_checked
@@ -167,16 +208,31 @@ members:
 - id: tw.2015
   detail: 鋼筋占營收55.07%，另有條線與型鋼，主要為軋延鋼材，亦具煉鋼製程。
   as_of: '2026-10-15'
-  evidence: *id006
+  evidence:
+  - tw.2015#e1
+  - tw.2015#e8
   confidence: ai_cross_checked
   source: classification
   stage: upstream
   tier: upstream
   stage_role: also
+- id: tw.2020
+  detail: 鋼鐵為最大營收部門，主製碳鋼與不鏽鋼鋼管等加工金屬製品，屬產業鏈下游。
+  as_of: '2026-10-20'
+  evidence:
+  - tw.2020#e1
+  - tw.2020#e4
+  - tw.2020#e5
+  - tw.2020#e6
+  confidence: ai_cross_checked
+  source: classification
+  stage: downstream
+  tier: downstream
+  stage_role: primary
 - id: tw.2023
   detail: 鍍面與烤漆鋼捲為主要營收來源，屬鋼材表面加工，另承作鋼構及天車工程。
   as_of: '2026-10-15'
-  evidence: &id007
+  evidence:
   - tw.2023#e1
   - tw.2023#e2
   - tw.2023#e3
@@ -188,7 +244,62 @@ members:
 - id: tw.2023
   detail: 鍍面與烤漆鋼捲為主要營收來源，屬鋼材表面加工，另承作鋼構及天車工程。
   as_of: '2026-10-15'
-  evidence: *id007
+  evidence:
+  - tw.2023#e1
+  - tw.2023#e2
+  - tw.2023#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: downstream
+  tier: downstream
+  stage_role: also
+- id: tw.2028
+  detail: 鋼筋為最大營收來源，主要屬軋延與鋼材；另具煉鋼能力並銷售鋼胚，涵蓋上游。
+  as_of: '2026-10-20'
+  evidence:
+  - tw.2028#e1
+  - tw.2028#e2
+  - tw.2028#e3
+  - tw.2028#e4
+  confidence: ai_cross_checked
+  source: classification
+  stage: midstream
+  tier: midstream
+  stage_role: primary
+- id: tw.2028
+  detail: 鋼筋為最大營收來源，主要屬軋延與鋼材；另具煉鋼能力並銷售鋼胚，涵蓋上游。
+  as_of: '2026-10-20'
+  evidence:
+  - tw.2028#e1
+  - tw.2028#e2
+  - tw.2028#e3
+  - tw.2028#e4
+  confidence: ai_cross_checked
+  source: classification
+  stage: upstream
+  tier: upstream
+  stage_role: also
+- id: tw.2029
+  detail: 烤漆及鍍鋅鋼捲合計占營收97.72%，以鋼材加工為主，另提供太陽能支架製品。
+  as_of: '2026-10-20'
+  evidence:
+  - tw.2029#e1
+  - tw.2029#e2
+  - tw.2029#e3
+  - tw.2029#e4
+  confidence: ai_cross_checked
+  source: classification
+  stage: midstream
+  tier: midstream
+  stage_role: primary
+- id: tw.2029
+  detail: 烤漆及鍍鋅鋼捲合計占營收97.72%，以鋼材加工為主，另提供太陽能支架製品。
+  as_of: '2026-10-20'
+  evidence:
+  - tw.2029#e1
+  - tw.2029#e2
+  - tw.2029#e3
+  - tw.2029#e4
   confidence: ai_cross_checked
   source: classification
   stage: downstream
@@ -208,7 +319,7 @@ members:
 - id: tw.2031
   detail: 鋼板占銷售45.7%最高，主營鋼材供料裁剪，另承作BOX及BH鋼構加工。
   as_of: '2026-10-18'
-  evidence: &id008
+  evidence:
   - tw.2031#e1
   - tw.2031#e2
   - tw.2031#e3
@@ -220,12 +331,26 @@ members:
 - id: tw.2031
   detail: 鋼板占銷售45.7%最高，主營鋼材供料裁剪，另承作BOX及BH鋼構加工。
   as_of: '2026-10-18'
-  evidence: *id008
+  evidence:
+  - tw.2031#e1
+  - tw.2031#e2
+  - tw.2031#e3
   confidence: ai_cross_checked
   source: classification
   stage: downstream
   tier: downstream
   stage_role: also
+- id: tw.2033
+  detail: 一般鋼線占營收65.94%，為最大業務；研究將鋼線、鋼索及預力鋼絞線加工列為中游。
+  as_of: '2026-10-20'
+  evidence:
+  - tw.2033#e2
+  - tw.2033#e6
+  confidence: ai_cross_checked
+  source: classification
+  stage: midstream
+  tier: midstream
+  stage_role: primary
 - id: tw.2034
   detail: 不鏽鋼管占營收64.9%，板捲占33.4%，以焊接製管及鋼材裁剪加工為主。
   as_of: '2026-10-18'
@@ -265,7 +390,7 @@ members:
 - id: tw.5007
   detail: 螺帽與螺絲合占營收80.53%，以金屬扣件為主，另有磨光盤元及鋼鐵線材業務。
   as_of: '2026-10-18'
-  evidence: &id009
+  evidence:
   - tw.5007#e2
   - tw.5007#e3
   confidence: ai_cross_checked
@@ -276,7 +401,9 @@ members:
 - id: tw.5007
   detail: 螺帽與螺絲合占營收80.53%，以金屬扣件為主，另有磨光盤元及鋼鐵線材業務。
   as_of: '2026-10-18'
-  evidence: *id009
+  evidence:
+  - tw.5007#e2
+  - tw.5007#e3
   confidence: ai_cross_checked
   source: classification
   stage: midstream
@@ -294,6 +421,50 @@ members:
   stage: midstream
   tier: midstream
   stage_role: primary
+- id: tw.5013
+  detail: 線材占營收76.95%，以鋼材加工為主；另有電解拋光管件製品業務。
+  as_of: '2026-10-20'
+  evidence:
+  - tw.5013#e1
+  - tw.5013#e6
+  confidence: ai_cross_checked
+  source: classification
+  stage: midstream
+  tier: midstream
+  stage_role: primary
+- id: tw.5013
+  detail: 線材占營收76.95%，以鋼材加工為主；另有電解拋光管件製品業務。
+  as_of: '2026-10-20'
+  evidence:
+  - tw.5013#e1
+  - tw.5013#e6
+  confidence: ai_cross_checked
+  source: classification
+  stage: downstream
+  tier: downstream
+  stage_role: also
+- id: tw.5538
+  detail: 不鏽鋼緊固件占營收66.32%，以螺絲螺帽等下游製品為主，另有占17.27%的線材業務。
+  as_of: '2026-10-20'
+  evidence:
+  - tw.5538#e1
+  - tw.5538#e2
+  confidence: ai_cross_checked
+  source: classification
+  stage: downstream
+  tier: downstream
+  stage_role: primary
+- id: tw.5538
+  detail: 不鏽鋼緊固件占營收66.32%，以螺絲螺帽等下游製品為主，另有占17.27%的線材業務。
+  as_of: '2026-10-20'
+  evidence:
+  - tw.5538#e1
+  - tw.5538#e2
+  confidence: ai_cross_checked
+  source: classification
+  stage: midstream
+  tier: midstream
+  stage_role: also
 - id: tw.8349
   detail: 外牙扣件占營收78.49%，另有內牙扣件，主業為車用螺絲螺帽等金屬製品。
   as_of: '2026-10-18'
@@ -327,4 +498,4 @@ members:
   stage: downstream
   tier: downstream
   stage_role: primary
-as_of: '2026-10-18'
+as_of: '2026-10-20'

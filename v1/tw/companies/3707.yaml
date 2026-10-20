@@ -52,13 +52,16 @@ segments:
   revenue_share_pct: null
 main_theme: theme.sic
 themes:
-- stage: devices
+- also: []
+  stage: devices
   theme: theme.sic
   tier: midstream
-- stage: chips
+- also: []
+  stage: chips
   theme: theme.nvidia
   tier: upstream
-- stage: devices
+- also: []
+  stage: devices
   theme: theme.gan
   tier: midstream
 relations:

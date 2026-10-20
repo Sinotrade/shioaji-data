@@ -61,10 +61,12 @@ segments:
   revenue_share_pct: 3
 main_theme: theme.ai_server
 themes:
-- stage: chips
+- also: []
+  stage: chips
   theme: theme.ai_server
   tier: upstream
-- stage: application
+- also: []
+  stage: application
   theme: theme.gan
   tier: downstream
 relations:

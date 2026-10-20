@@ -41,19 +41,24 @@ segments:
   revenue_share_pct: 1
 main_theme: theme.ev
 themes:
-- stage: parts
+- also: []
+  stage: parts
   theme: theme.ev
   tier: midstream
-- stage: components
+- also: []
+  stage: components
   theme: theme.ai_server
   tier: midstream
-- stage: devices
+- also: []
+  stage: devices
   theme: theme.sic
   tier: midstream
-- stage: packaging
+- also: []
+  stage: packaging
   theme: theme.mini_led
   tier: midstream
-- stage: devices
+- also: []
+  stage: devices
   theme: theme.gan
   tier: midstream
 relations:

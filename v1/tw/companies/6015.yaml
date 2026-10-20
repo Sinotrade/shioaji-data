@@ -8,12 +8,191 @@ industry:
   l0_code: '17'
   l0_name: 金融保險業
   l0_name_en: Financial and Insurance
-primary_chain_position: unknown
+  l1: finance
+  l1_name: 金融
+  l1_name_en: Financials
+  l2: fin.capital
+  l2_name: 證券與資產管理
+  l2_name_en: Securities & Asset Management
+  l3: fin.securities
+  l3_name: 證券與期貨
+  l3_name_en: Securities & Futures
+chain: chain.finance
+chain_stage:
+  agreement: both
+  also: []
+  reason: 證券經紀為最大營收來源，占59.51%，並兼營自營、承銷及財富管理，屬金融服務。
+  stage: na
+  stage_name: 金融服務
+  tier: not_applicable
+primary_chain_position: not_applicable
+summary_short: 以證券經紀為主要營收來源，兼營自營、承銷、期貨及財富管理。
+summary_long: 宏遠證券主要經營證券經紀、自營與承銷，並提供期貨經紀、期貨顧問及財富管理服務。依2025年度年報業務別營收表，經紀業務占59.51%，自營業務占22.33%，承銷業務占18.22%。經紀服務包括國內證券交易及海外複委託；財富管理則提供資產配置、財務規劃與金融商品銷售。截至2025年底，公司全資持有宏遠證券投資顧問、宏遠證創業投資、宏遠創業投資管理顧問及宏遠私募股權四家子公司。
+segments:
+- evidence_ids:
+  - e4
+  id: seg_brokerage
+  name: 經紀業務
+  period: 2025年度
+  revenue_share_pct: 59.51
+- evidence_ids:
+  - e5
+  id: seg_underwriting
+  name: 承銷業務
+  period: 2025年度
+  revenue_share_pct: 18.22
+- evidence_ids:
+  - e6
+  id: seg_proprietary
+  name: 自營業務
+  period: 2025年度
+  revenue_share_pct: 22.33
+- evidence_ids:
+  - e7
+  id: seg_other
+  name: 其他
+  period: 2025年度
+  revenue_share_pct: -0.06
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司
+    details:
+    - 全資子公司
+    edge: ea872b3505924
+    evidence_level: primary
+    id: org.horizon-private-equity
+    name: 宏遠私募股權股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司
+    details:
+    - 全資子公司
+    edge: e7bcad079d0b8
+    evidence_level: primary
+    id: org.horizon-securities-investment-consulting
+    name: 宏遠證券投資顧問股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司
+    details:
+    - 全資子公司
+    edge: e315ab5a4dee6
+    evidence_level: primary
+    id: org.horizon-securities-venture-capital
+    name: 宏遠證創業投資股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司
+    details:
+    - 全資子公司
+    edge: e383a400d4f00
+    evidence_level: primary
+    id: org.horizon-venture-capital-management-consulting
+    name: 宏遠創業投資管理顧問股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.honsec.com.tw
 tax_id: '03027502'
 incorporated: '1961-12-08'
 listed: '1996-07-25'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6015#e1:
+    locator: 基本資料：股票代號、公司名稱、統一編號及主要業務
+    published_date: null
+    publisher: 宏遠證券股份有限公司
+    quote_check: found
+    title: 宏遠證券股份有限公司－基本資料
+    url: https://www.honsec.com.tw/about/?id=4&l=2
+  tw.6015#e10:
+    locator: 印刷頁74／PDF第78頁；截至114年12月31日轉投資事業持股表，本公司投資欄
+    published_date: '2026-05-28'
+    publisher: 宏遠證券股份有限公司
+    quote_check: found
+    title: 宏遠證券股份有限公司114年度年報
+    url: https://www.honsec.com.tw/uploads/files/%E8%82%A1%E5%8B%99%E8%B3%87%E8%A8%8A/%E5%B9%B4%E5%A0%B1/114%E5%B9%B4%E5%BA%A6%E5%AE%8F%E9%81%A0%E8%AD%89%E5%88%B8%E5%B9%B4%E5%A0%B1.pdf
+  tw.6015#e11:
+    locator: 印刷頁74／PDF第78頁；截至114年12月31日轉投資事業持股表，本公司投資欄
+    published_date: '2026-05-28'
+    publisher: 宏遠證券股份有限公司
+    quote_check: found
+    title: 宏遠證券股份有限公司114年度年報
+    url: https://www.honsec.com.tw/uploads/files/%E8%82%A1%E5%8B%99%E8%B3%87%E8%A8%8A/%E5%B9%B4%E5%A0%B1/114%E5%B9%B4%E5%BA%A6%E5%AE%8F%E9%81%A0%E8%AD%89%E5%88%B8%E5%B9%B4%E5%A0%B1.pdf
+  tw.6015#e2:
+    locator: 經紀業務處－業務管理部之職掌
+    published_date: null
+    publisher: 宏遠證券股份有限公司
+    quote_check: found
+    title: 宏遠證券股份有限公司－業務執掌
+    url: https://www.honsec.com.tw/about/?id=7&l=2
+  tw.6015#e3:
+    locator: 經紀業務處－國際金融業務部之職掌
+    published_date: null
+    publisher: 宏遠證券股份有限公司
+    quote_check: found
+    title: 宏遠證券股份有限公司－業務執掌
+    url: https://www.honsec.com.tw/about/?id=7&l=2
+  tw.6015#e4:
+    locator: 印刷頁83／PDF第87頁；商品服務項目及營業比重表，經紀業務列，114年度營業收入與百分比欄
+    published_date: '2026-05-28'
+    publisher: 宏遠證券股份有限公司
+    quote_check: found
+    title: 宏遠證券股份有限公司114年度年報
+    url: https://www.honsec.com.tw/uploads/files/%E8%82%A1%E5%8B%99%E8%B3%87%E8%A8%8A/%E5%B9%B4%E5%A0%B1/114%E5%B9%B4%E5%BA%A6%E5%AE%8F%E9%81%A0%E8%AD%89%E5%88%B8%E5%B9%B4%E5%A0%B1.pdf
+  tw.6015#e5:
+    locator: 印刷頁83／PDF第87頁；商品服務項目及營業比重表，承銷業務列，114年度營業收入與百分比欄
+    published_date: '2026-05-28'
+    publisher: 宏遠證券股份有限公司
+    quote_check: found
+    title: 宏遠證券股份有限公司114年度年報
+    url: https://www.honsec.com.tw/uploads/files/%E8%82%A1%E5%8B%99%E8%B3%87%E8%A8%8A/%E5%B9%B4%E5%A0%B1/114%E5%B9%B4%E5%BA%A6%E5%AE%8F%E9%81%A0%E8%AD%89%E5%88%B8%E5%B9%B4%E5%A0%B1.pdf
+  tw.6015#e6:
+    locator: 印刷頁83／PDF第87頁；商品服務項目及營業比重表，自營業務列，114年度營業收入與百分比欄
+    published_date: '2026-05-28'
+    publisher: 宏遠證券股份有限公司
+    quote_check: found
+    title: 宏遠證券股份有限公司114年度年報
+    url: https://www.honsec.com.tw/uploads/files/%E8%82%A1%E5%8B%99%E8%B3%87%E8%A8%8A/%E5%B9%B4%E5%A0%B1/114%E5%B9%B4%E5%BA%A6%E5%AE%8F%E9%81%A0%E8%AD%89%E5%88%B8%E5%B9%B4%E5%A0%B1.pdf
+  tw.6015#e7:
+    locator: 印刷頁83／PDF第87頁；商品服務項目及營業比重表，其他列，114年度營業收入與百分比欄
+    published_date: '2026-05-28'
+    publisher: 宏遠證券股份有限公司
+    quote_check: found
+    title: 宏遠證券股份有限公司114年度年報
+    url: https://www.honsec.com.tw/uploads/files/%E8%82%A1%E5%8B%99%E8%B3%87%E8%A8%8A/%E5%B9%B4%E5%A0%B1/114%E5%B9%B4%E5%BA%A6%E5%AE%8F%E9%81%A0%E8%AD%89%E5%88%B8%E5%B9%B4%E5%A0%B1.pdf
+  tw.6015#e8:
+    locator: 印刷頁74／PDF第78頁；截至114年12月31日轉投資事業持股表，本公司投資欄
+    published_date: '2026-05-28'
+    publisher: 宏遠證券股份有限公司
+    quote_check: found
+    title: 宏遠證券股份有限公司114年度年報
+    url: https://www.honsec.com.tw/uploads/files/%E8%82%A1%E5%8B%99%E8%B3%87%E8%A8%8A/%E5%B9%B4%E5%A0%B1/114%E5%B9%B4%E5%BA%A6%E5%AE%8F%E9%81%A0%E8%AD%89%E5%88%B8%E5%B9%B4%E5%A0%B1.pdf
+  tw.6015#e9:
+    locator: 印刷頁74／PDF第78頁；截至114年12月31日轉投資事業持股表，本公司投資欄
+    published_date: '2026-05-28'
+    publisher: 宏遠證券股份有限公司
+    quote_check: found
+    title: 宏遠證券股份有限公司114年度年報
+    url: https://www.honsec.com.tw/uploads/files/%E8%82%A1%E5%8B%99%E8%B3%87%E8%A8%8A/%E5%B9%B4%E5%A0%B1/114%E5%B9%B4%E5%BA%A6%E5%AE%8F%E9%81%A0%E8%AD%89%E5%88%B8%E5%B9%B4%E5%A0%B1.pdf

@@ -8,12 +8,145 @@ industry:
   l0_code: '10'
   l0_name: 鋼鐵工業
   l0_name_en: Iron and Steel
-primary_chain_position: unknown
+  l1: materials
+  l1_name: 原物料
+  l1_name_en: Materials
+  l2: mat.metals
+  l2_name: 金屬
+  l2_name_en: Metals
+  l3: metal.steel
+  l3_name: 鋼鐵
+  l3_name_en: Steel
+chain: chain.steel
+chain_stage:
+  agreement: both
+  also: []
+  reason: 鋼鐵為最大營收部門，主製碳鋼與不鏽鋼鋼管等加工金屬製品，屬產業鏈下游。
+  stage: downstream
+  stage_name: 金屬製品與螺絲
+  tier: downstream
+primary_chain_position: downstream
+summary_short: 以碳鋼與不鏽鋼鋼管製造銷售為主，另提供液冷機櫃分歧管。
+summary_long: 美亞以鋼管製造與銷售為主要業務，產品包括鍍鋅碳鋼鋼管、不鏽鋼管及機械結構用碳鋼鋼管。鍍鋅鋼管應用於瓦斯、冷凍與溫室配管，不鏽鋼管用於耐腐蝕、耐高低溫及消防給水，機械結構管則包括油壓與避震器用管。官網另列液冷機櫃分歧管，供AI伺服器與高效能運算機櫃分配冷卻液。依一一三年度年報，合併子公司包括越南美亞責任有限公司及美亞商旅股份有限公司，分別經營鋼管製造與旅館業務。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_steel
+  name: 鋼鐵
+  period: '2024'
+  revenue_share_pct: null
+- evidence_ids:
+  - e1
+  id: seg_real_estate
+  name: 不動產
+  period: '2024'
+  revenue_share_pct: null
+- evidence_ids:
+  - e1
+  id: seg_investment
+  name: 投資
+  period: '2024'
+  revenue_share_pct: null
+- evidence_ids:
+  - e1
+  id: seg_hotel
+  name: 旅館
+  period: '2024'
+  revenue_share_pct: null
+main_theme: theme.ai_server
+themes:
+- also: []
+  stage: components
+  theme: theme.ai_server
+  tier: midstream
+- also: []
+  stage: parts
+  theme: theme.liquid_cooling
+  tier: upstream
+relations:
+  subsidiaries:
+  - as_of: '2025-05-06'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 旅館業務子公司
+    details:
+    - 旅館業務子公司
+    edge: e7099878be0eb
+    evidence_level: primary
+    id: org.mayer-inn
+    name: 美亞商旅股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-05-06'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 越南鋼管製造子公司
+    details:
+    - 越南鋼管製造子公司
+    edge: edf6afc0868c7
+    evidence_level: primary
+    id: org.vietnam-mayer
+    name: 越南美亞責任有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.mayer.com.tw
 tax_id: '44680700'
 incorporated: '1959-09-29'
 listed: '1993-04-27'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2020#e1:
+    locator: 印刷頁77，業務範圍／營業比重表
+    published_date: '2025-05-06'
+    publisher: 美亞鋼管廠股份有限公司
+    quote_check: found
+    title: 美亞鋼管廠股份有限公司一一三年度年報
+    url: https://www.mayer.com.tw/data/10000/upload/files/17689811946136.pdf
+  tw.2020#e2:
+    locator: 印刷頁78至79，合併報表子公司第1項
+    published_date: '2025-05-06'
+    publisher: 美亞鋼管廠股份有限公司
+    quote_check: found
+    title: 美亞鋼管廠股份有限公司一一三年度年報
+    url: https://www.mayer.com.tw/data/10000/upload/files/17689811946136.pdf
+  tw.2020#e3:
+    locator: 印刷頁79，合併報表子公司第2項
+    published_date: '2025-05-06'
+    publisher: 美亞鋼管廠股份有限公司
+    quote_check: found
+    title: 美亞鋼管廠股份有限公司一一三年度年報
+    url: https://www.mayer.com.tw/data/10000/upload/files/17689811946136.pdf
+  tw.2020#e4:
+    locator: 產品介紹
+    published_date: null
+    publisher: 美亞鋼管廠股份有限公司
+    quote_check: found
+    title: 鍍鋅碳鋼鋼管－美亞鋼管
+    url: https://www.mayer.com.tw/zh-tw/product
+  tw.2020#e5:
+    locator: 產品介紹
+    published_date: null
+    publisher: 美亞鋼管廠股份有限公司
+    quote_check: found
+    title: 不銹鋼管－美亞鋼管
+    url: https://www.mayer.com.tw/zh-tw/product_2
+  tw.2020#e6:
+    locator: 機械結構用碳鋼鋼管產品應用／油壓用管
+    published_date: null
+    publisher: 美亞鋼管廠股份有限公司
+    quote_check: found
+    title: 機械結構用碳鋼鋼管－美亞鋼管
+    url: https://www.mayer.com.tw/zh-tw/product_3
+  tw.2020#e7:
+    locator: 主要產品應用第1項
+    published_date: null
+    publisher: 美亞鋼管廠股份有限公司
+    quote_check: found
+    title: 液冷機櫃分歧管－美亞鋼管
+    url: https://www.mayer.com.tw/zh-tw/product_4

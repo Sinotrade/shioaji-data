@@ -44,6 +44,28 @@ members:
   stage: downstream
   tier: downstream
   stage_role: primary
+- id: tw.1305
+  detail: 營收以PVC塑膠原料及加工製品為主，屬下游；另有VCM中間原料業務。
+  as_of: '2026-10-20'
+  evidence:
+  - tw.1305#e1
+  - tw.1305#e6
+  confidence: ai_cross_checked
+  source: classification
+  stage: downstream
+  tier: downstream
+  stage_role: primary
+- id: tw.1305
+  detail: 營收以PVC塑膠原料及加工製品為主，屬下游；另有VCM中間原料業務。
+  as_of: '2026-10-20'
+  evidence:
+  - tw.1305#e1
+  - tw.1305#e6
+  confidence: ai_cross_checked
+  source: classification
+  stage: midstream
+  tier: midstream
+  stage_role: also
 - id: tw.1307
   detail: 環保及PU合成皮革為主要收入來源，屬石化下游加工。
   as_of: '2026-10-18'
@@ -70,10 +92,34 @@ members:
   stage: downstream
   tier: downstream
   stage_role: primary
+- id: tw.1309
+  detail: EPS占營收44.97%最高，另有ABS及聚苯乙烯樹脂，主要屬塑膠製造。
+  as_of: '2026-10-20'
+  evidence:
+  - tw.1309#e1
+  - tw.1309#e2
+  - tw.1309#e3
+  - tw.1309#e4
+  confidence: ai_cross_checked
+  source: classification
+  stage: downstream
+  tier: downstream
+  stage_role: primary
+- id: tw.1310
+  detail: 苯乙烯單體占營收95.1%，為塑膠樹脂中間原料；另銷售基礎原料甲苯。
+  as_of: '2026-10-20'
+  evidence:
+  - tw.1310#e1
+  - tw.1310#e6
+  confidence: ai_cross_checked
+  source: classification
+  stage: midstream
+  tier: midstream
+  stage_role: primary
 - id: tw.1312
   detail: 塑膠銷貨39.56%為最大項；另製造中間原料苯乙烯及基礎原料丙烯。
   as_of: '2026-10-15'
-  evidence: &id001
+  evidence:
   - tw.1312#e2
   - tw.1312#e3
   - tw.1312#e4
@@ -85,7 +131,10 @@ members:
 - id: tw.1312
   detail: 塑膠銷貨39.56%為最大項；另製造中間原料苯乙烯及基礎原料丙烯。
   as_of: '2026-10-15'
-  evidence: *id001
+  evidence:
+  - tw.1312#e2
+  - tw.1312#e3
+  - tw.1312#e4
   confidence: ai_cross_checked
   source: classification
   stage: midstream
@@ -94,7 +143,10 @@ members:
 - id: tw.1312
   detail: 塑膠銷貨39.56%為最大項；另製造中間原料苯乙烯及基礎原料丙烯。
   as_of: '2026-10-15'
-  evidence: *id001
+  evidence:
+  - tw.1312#e2
+  - tw.1312#e3
+  - tw.1312#e4
   confidence: ai_cross_checked
   source: classification
   stage: upstream
@@ -103,7 +155,7 @@ members:
 - id: tw.1313
   detail: 主要產銷苯酐與可塑劑等中間原料，另製造PVC及不飽和聚酯樹脂。
   as_of: '2026-10-15'
-  evidence: &id002
+  evidence:
   - tw.1313#e_business
   - tw.1313#e_revenue
   - tw.1313#e_p1
@@ -117,7 +169,12 @@ members:
 - id: tw.1313
   detail: 主要產銷苯酐與可塑劑等中間原料，另製造PVC及不飽和聚酯樹脂。
   as_of: '2026-10-15'
-  evidence: *id002
+  evidence:
+  - tw.1313#e_business
+  - tw.1313#e_revenue
+  - tw.1313#e_p1
+  - tw.1313#e_p3
+  - tw.1313#e_p4
   confidence: ai_cross_checked
   source: classification
   stage: downstream
@@ -150,7 +207,7 @@ members:
 - id: tw.1326
   detail: 石化占營收58.1%，以中間原料為主，另涵蓋苯等基礎原料、塑膠樹脂及纖維。
   as_of: '2026-10-14'
-  evidence: &id003
+  evidence:
   - tw.1326#e1
   - tw.1326#e2
   - tw.1326#e3
@@ -163,7 +220,11 @@ members:
 - id: tw.1326
   detail: 石化占營收58.1%，以中間原料為主，另涵蓋苯等基礎原料、塑膠樹脂及纖維。
   as_of: '2026-10-14'
-  evidence: *id003
+  evidence:
+  - tw.1326#e1
+  - tw.1326#e2
+  - tw.1326#e3
+  - tw.1326#e4
   confidence: ai_cross_checked
   source: classification
   stage: downstream
@@ -172,7 +233,11 @@ members:
 - id: tw.1326
   detail: 石化占營收58.1%，以中間原料為主，另涵蓋苯等基礎原料、塑膠樹脂及纖維。
   as_of: '2026-10-14'
-  evidence: *id003
+  evidence:
+  - tw.1326#e1
+  - tw.1326#e2
+  - tw.1326#e3
+  - tw.1326#e4
   confidence: ai_cross_checked
   source: classification
   stage: upstream
@@ -181,7 +246,7 @@ members:
 - id: tw.1402
   detail: 生產事業為最大部門，固聚酯粒為最大具名產品，另有中間原料PTA。
   as_of: '2026-10-14'
-  evidence: &id004
+  evidence:
   - tw.1402#e01
   - tw.1402#e04
   - tw.1402#e05
@@ -193,7 +258,10 @@ members:
 - id: tw.1402
   detail: 生產事業為最大部門，固聚酯粒為最大具名產品，另有中間原料PTA。
   as_of: '2026-10-14'
-  evidence: *id004
+  evidence:
+  - tw.1402#e01
+  - tw.1402#e04
+  - tw.1402#e05
   confidence: ai_cross_checked
   source: classification
   stage: midstream
@@ -211,10 +279,20 @@ members:
   stage: downstream
   tier: downstream
   stage_role: primary
+- id: tw.1447
+  detail: 營收最大宗為石化品貿易，未揭露品項，無法判定主要階段；尼龍粒、尼龍絲與布料屬下游。
+  as_of: '2026-10-20'
+  evidence:
+  - tw.1447#e1
+  - tw.1447#e5
+  confidence: ai_cross_checked
+  source: classification
+  stage: null
+  tier: null
 - id: tw.1709
   detail: 烷化部門占80.88%，供應清潔劑及添加劑中間原料，另製造氫化石油樹脂。
   as_of: '2026-10-15'
-  evidence: &id005
+  evidence:
   - tw.1709#e1
   - tw.1709#e2
   - tw.1709#e3
@@ -226,7 +304,10 @@ members:
 - id: tw.1709
   detail: 烷化部門占80.88%，供應清潔劑及添加劑中間原料，另製造氫化石油樹脂。
   as_of: '2026-10-15'
-  evidence: *id005
+  evidence:
+  - tw.1709#e1
+  - tw.1709#e2
+  - tw.1709#e3
   confidence: ai_cross_checked
   source: classification
   stage: downstream
@@ -270,7 +351,7 @@ members:
 - id: tw.1721
   detail: 特用化學品占57.19%，以塑膠添加劑等中游材料為主，另供應TPU膠粒與PU樹脂。
   as_of: '2026-10-13'
-  evidence: &id006
+  evidence:
   - tw.1721#e2
   - tw.1721#e7
   confidence: ai_cross_checked
@@ -281,7 +362,33 @@ members:
 - id: tw.1721
   detail: 特用化學品占57.19%，以塑膠添加劑等中游材料為主，另供應TPU膠粒與PU樹脂。
   as_of: '2026-10-13'
-  evidence: *id006
+  evidence:
+  - tw.1721#e2
+  - tw.1721#e7
+  confidence: ai_cross_checked
+  source: classification
+  stage: downstream
+  tier: downstream
+  stage_role: also
+- id: tw.1725
+  detail: 化學品與溶劑經銷占營收39%為最大宗，屬中間原料；另經銷PVC、POM塑膠原料。
+  as_of: '2026-10-20'
+  evidence:
+  - tw.1725#e1
+  - tw.1725#e2
+  - tw.1725#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: midstream
+  tier: midstream
+  stage_role: primary
+- id: tw.1725
+  detail: 化學品與溶劑經銷占營收39%為最大宗，屬中間原料；另經銷PVC、POM塑膠原料。
+  as_of: '2026-10-20'
+  evidence:
+  - tw.1725#e1
+  - tw.1725#e2
+  - tw.1725#e3
   confidence: ai_cross_checked
   source: classification
   stage: downstream
@@ -360,10 +467,20 @@ members:
   stage: midstream
   tier: midstream
   stage_role: primary
+- id: tw.4721
+  detail: 營收72%來自PTA製程用氧化觸媒及相關原料，屬製程周邊，未見生產石化中間原料。
+  as_of: '2026-10-20'
+  evidence:
+  - tw.4721#e2
+  - tw.4721#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: null
+  tier: null
 - id: tw.4764
   detail: 塑膠添加劑占營收46%居首，另供應光固化原料，並製造下游數位印花墨水。
   as_of: '2026-10-18'
-  evidence: &id007
+  evidence:
   - tw.4764#e2
   - tw.4764#e3
   - tw.4764#e4
@@ -377,7 +494,12 @@ members:
 - id: tw.4764
   detail: 塑膠添加劑占營收46%居首，另供應光固化原料，並製造下游數位印花墨水。
   as_of: '2026-10-18'
-  evidence: *id007
+  evidence:
+  - tw.4764#e2
+  - tw.4764#e3
+  - tw.4764#e4
+  - tw.4764#e5
+  - tw.4764#e6
   confidence: ai_cross_checked
   source: classification
   stage: downstream
@@ -394,6 +516,18 @@ members:
   stage: upstream
   tier: upstream
   stage_role: primary
+- id: tw.6585
+  detail: TPU薄膜占營收91.31%，並製造密封件與管帶，主要屬塑膠材料與成品加工。
+  as_of: '2026-10-20'
+  evidence:
+  - tw.6585#e2
+  - tw.6585#e3
+  - tw.6585#e4
+  confidence: ai_cross_checked
+  source: classification
+  stage: downstream
+  tier: downstream
+  stage_role: primary
 - id: tw.9939
   detail: 包材占營收67.16%，主要供應PET瓶、瓶胚、塑膠瓶蓋及熱收縮膜等加工品。
   as_of: '2026-10-15'
@@ -405,4 +539,4 @@ members:
   stage: downstream
   tier: downstream
   stage_role: primary
-as_of: '2026-10-18'
+as_of: '2026-10-20'

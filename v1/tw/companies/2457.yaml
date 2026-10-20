@@ -41,19 +41,24 @@ segments:
   revenue_share_pct: 0
 main_theme: theme.ev
 themes:
-- stage: vehicle
+- also: []
+  stage: vehicle
   theme: theme.ev
   tier: downstream
-- stage: equipment
+- also: []
+  stage: equipment
   theme: theme.data_center
   tier: upstream
-- stage: application
+- also: []
+  stage: application
   theme: theme.sic
   tier: downstream
-- stage: components
+- also: []
+  stage: components
   theme: theme.leo_satellite
   tier: upstream
-- stage: application
+- also: []
+  stage: application
   theme: theme.gan
   tier: downstream
 relations:

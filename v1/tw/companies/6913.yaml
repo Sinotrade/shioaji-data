@@ -8,12 +8,254 @@ industry:
   l0_code: '28'
   l0_name: 電子零組件業
   l0_name_en: Electronic Parts and Components
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.connector
+  l3_name: 連接器與線材
+  l3_name_en: Connectors & Cables
+primary_chain_position: midstream
+summary_short: 研發製造各類電子連接線組，並經銷工程型塑膠機能材料。
+summary_long: 鴻呈主要研發、製造及銷售連接線組，另經銷工程型塑膠機能材料。2025年營收中，AIOT智能物聯網應用線組占43.41%，車載、醫療用等線組占29.10%，電腦消費性電子線組占7.57%，工程型塑膠機能材占19.92%。產品應用涵蓋工業、雲端伺服器與儲存、醫療、車載、再生能源及5G通訊，並具備高速傳輸與浸沒式液冷線組技術。公司亦提供AI伺服器高速互連解決方案，主要營運子公司包括允拓國際、吉安鴻呈及鴻呈電子的越南與蘇州公司。
+segments:
+- evidence_ids:
+  - e2
+  id: seg.aiot
+  name: AIOT智能物聯網應用連接線組
+  period: '2025'
+  revenue_share_pct: 43.41
+- evidence_ids:
+  - e3
+  id: seg.consumer
+  name: 電腦消費性電子連接線組
+  period: '2025'
+  revenue_share_pct: 7.57
+- evidence_ids:
+  - e4
+  id: seg.auto_medical
+  name: 車載、醫療用等連接線組
+  period: '2025'
+  revenue_share_pct: 29.1
+- evidence_ids:
+  - e5
+  id: seg.materials
+  name: 工程型塑膠機能材
+  period: '2025'
+  revenue_share_pct: 19.92
+main_theme: theme.ev
+themes:
+- also: []
+  stage: parts
+  theme: theme.ev
+  tier: midstream
+- also: []
+  stage: components
+  theme: theme.ai_server
+  tier: midstream
+- also: []
+  stage: components
+  theme: theme.5g
+  tier: upstream
+- also: []
+  stage: components
+  theme: theme.leo_satellite
+  tier: upstream
+- also: []
+  stage: parts
+  theme: theme.liquid_cooling
+  tier: upstream
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 吉安連接線材生產及銷售子公司
+    details:
+    - 吉安連接線材生產及銷售子公司
+    edge: ef787b482e45e
+    evidence_level: primary
+    id: org.jian-vso-electronics
+    name: 吉安鴻呈電子有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股60%的工程塑料銷售子公司
+    details:
+    - 直接持股60%的工程塑料銷售子公司
+    edge: e37c64a8b4790
+    evidence_level: primary
+    id: org.linkupon-international
+    name: 允拓國際股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 蘇州連接線材生產及銷售子公司
+    details:
+    - 蘇州連接線材生產及銷售子公司
+    edge: e7b818c820971
+    evidence_level: primary
+    id: org.vso-electronics-suzhou
+    name: 鴻呈電子(蘇州)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 越南連接線材生產及銷售子公司
+    details:
+    - 越南連接線材生產及銷售子公司
+    edge: e56150140726b
+    evidence_level: primary
+    id: org.vso-electronics-vietnam
+    name: 鴻呈電子(越南)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 河內連接線材生產及銷售子公司
+    details:
+    - 河內連接線材生產及銷售子公司
+    edge: e448e096e06fe
+    evidence_level: primary
+    id: org.vsovn-electronics-hanoi
+    name: Vsovn Electronics (HANOI) Company Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.vso-corp.com
 tax_id: '89238750'
 incorporated: '1994-08-13'
 listed: '2024-10-01'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6913#e1:
+    locator: 新聞正文首段
+    published_date: '2024-07-11'
+    publisher: 鴻呈實業股份有限公司
+    quote_check: found
+    title: 鴻呈於7/10通過櫃買中心上櫃案審議
+    url: https://www.vso-corp.com/zh-tw/news/the-tpex-listing-review-committee-approves-the-listing-application-of-vso-on-july-10
+  tw.6913#e10:
+    locator: 產品清單
+    published_date: null
+    publisher: 鴻呈實業股份有限公司
+    quote_check: found
+    title: 5G & 電信系統
+    url: https://www.vso-corp.com/zh-tw/product-categories/5g-communication
+  tw.6913#e11:
+    locator: 射頻纜線與天線技術介紹
+    published_date: null
+    publisher: 鴻呈實業股份有限公司
+    quote_check: found
+    title: 5G通訊應用與其他
+    url: https://www.vso-corp.com/zh-tw/product-categories/telecom-others
+  tw.6913#e12:
+    locator: 第11頁，合併財務報表編製主體，投資公司為鴻呈實業；持股欄依序為2026年6月底、2025年底、2025年6月底
+    published_date: '2026-08-12'
+    publisher: 鴻呈實業股份有限公司
+    quote_check: found
+    title: 鴻呈實業及子公司115年第2季合併財務報告
+    url: https://www.vso-corp.com/storage/media/investor/financial_information/2026/115Q2-%E9%B4%BB%E5%91%88%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf
+  tw.6913#e13:
+    locator: 第11頁，合併財務報表編製主體，鴻呈實業直接子公司及主要業務欄
+    published_date: '2026-08-12'
+    publisher: 鴻呈實業股份有限公司
+    quote_check: found
+    title: 鴻呈實業及子公司115年第2季合併財務報告
+    url: https://www.vso-corp.com/storage/media/investor/financial_information/2026/115Q2-%E9%B4%BB%E5%91%88%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf
+  tw.6913#e14:
+    locator: 第11至12頁，合併財務報表編製主體；透過Cable Garden Holdings Limited間接持有
+    published_date: '2026-08-12'
+    publisher: 鴻呈實業股份有限公司
+    quote_check: found
+    title: 鴻呈實業及子公司115年第2季合併財務報告
+    url: https://www.vso-corp.com/storage/media/investor/financial_information/2026/115Q2-%E9%B4%BB%E5%91%88%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf
+  tw.6913#e15:
+    locator: 第11至12頁，合併財務報表編製主體；透過Cable Garden Holdings Limited間接持有
+    published_date: '2026-08-12'
+    publisher: 鴻呈實業股份有限公司
+    quote_check: found
+    title: 鴻呈實業及子公司115年第2季合併財務報告
+    url: https://www.vso-corp.com/storage/media/investor/financial_information/2026/115Q2-%E9%B4%BB%E5%91%88%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf
+  tw.6913#e16:
+    locator: 第11至12頁，合併財務報表編製主體；透過Cable Garden Holdings Limited及Cleveland Investments Limited間接持有
+    published_date: '2026-08-12'
+    publisher: 鴻呈實業股份有限公司
+    quote_check: found
+    title: 鴻呈實業及子公司115年第2季合併財務報告
+    url: https://www.vso-corp.com/storage/media/investor/financial_information/2026/115Q2-%E9%B4%BB%E5%91%88%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf
+  tw.6913#e2:
+    locator: 印刷頁49，主要產品之營業比重；數值依序為2024年金額、比例及2025年金額、比例
+    published_date: '2026-04-20'
+    publisher: 鴻呈實業股份有限公司
+    quote_check: found
+    title: 鴻呈實業114年度年報
+    url: https://www.vso-corp.com/storage/media/investor/shareholder_services/%E5%B9%B4%E5%A0%B1/%E9%B4%BB%E5%91%88%E5%AF%A6%E6%A5%AD114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf
+  tw.6913#e3:
+    locator: 印刷頁49，主要產品之營業比重；末欄為2025年比例
+    published_date: '2026-04-20'
+    publisher: 鴻呈實業股份有限公司
+    quote_check: found
+    title: 鴻呈實業114年度年報
+    url: https://www.vso-corp.com/storage/media/investor/shareholder_services/%E5%B9%B4%E5%A0%B1/%E9%B4%BB%E5%91%88%E5%AF%A6%E6%A5%AD114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf
+  tw.6913#e4:
+    locator: 印刷頁49，主要產品之營業比重；末欄為2025年比例
+    published_date: '2026-04-20'
+    publisher: 鴻呈實業股份有限公司
+    quote_check: found
+    title: 鴻呈實業114年度年報
+    url: https://www.vso-corp.com/storage/media/investor/shareholder_services/%E5%B9%B4%E5%A0%B1/%E9%B4%BB%E5%91%88%E5%AF%A6%E6%A5%AD114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf
+  tw.6913#e5:
+    locator: 印刷頁49，主要產品之營業比重；末欄為2025年比例
+    published_date: '2026-04-20'
+    publisher: 鴻呈實業股份有限公司
+    quote_check: found
+    title: 鴻呈實業114年度年報
+    url: https://www.vso-corp.com/storage/media/investor/shareholder_services/%E5%B9%B4%E5%A0%B1/%E9%B4%BB%E5%91%88%E5%AF%A6%E6%A5%AD114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf
+  tw.6913#e6:
+    locator: 印刷頁51，產業上、中、下游之關聯性
+    published_date: '2026-04-20'
+    publisher: 鴻呈實業股份有限公司
+    quote_check: found
+    title: 鴻呈實業114年度年報
+    url: https://www.vso-corp.com/storage/media/investor/shareholder_services/%E5%B9%B4%E5%A0%B1/%E9%B4%BB%E5%91%88%E5%AF%A6%E6%A5%AD114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf
+  tw.6913#e7:
+    locator: 公司簡介
+    published_date: '2025-08-15'
+    publisher: 鴻呈實業股份有限公司
+    quote_check: found
+    title: 鴻呈VSO將於2025高效能智算中心與液冷技術峰會發表最新材料相容性研究成果
+    url: https://www.vso-corp.com/zh-tw/news/2025HPC_and_liquidcooling_summit
+  tw.6913#e8:
+    locator: 新聞正文第二段
+    published_date: '2026-01-02'
+    publisher: 鴻呈實業股份有限公司
+    quote_check: found
+    title: 鴻呈 VSO 首次參展 DesignCon 2026∣以設計實證，推進高速互連技術發展
+    url: https://www.vso-corp.com/zh-tw/news/Design_Con_2026
+  tw.6913#e9:
+    locator: 車載系統連接解決方案介紹
+    published_date: null
+    publisher: 鴻呈實業股份有限公司
+    quote_check: found
+    title: 車載與車聯網
+    url: https://www.vso-corp.com/zh-tw/product-categories/automotive

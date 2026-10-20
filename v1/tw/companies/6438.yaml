@@ -50,13 +50,16 @@ segments:
   revenue_share_pct: 0.47
 main_theme: theme.robotics
 themes:
-- stage: system
+- also: []
+  stage: system
   theme: theme.robotics
   tier: downstream
-- stage: equipment
+- also: []
+  stage: equipment
   theme: theme.cowos
   tier: upstream
-- stage: materials
+- also: []
+  stage: materials
   theme: theme.abf
   tier: upstream
 relations:

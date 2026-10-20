@@ -49,10 +49,12 @@ segments:
   revenue_share_pct: 40
 main_theme: theme.leo_satellite
 themes:
-- stage: components
+- also: []
+  stage: components
   theme: theme.leo_satellite
   tier: upstream
-- stage: display
+- also: []
+  stage: display
   theme: theme.mini_led
   tier: downstream
 relations:

@@ -35,26 +35,31 @@ segments:
   revenue_share_pct: 8.73
 main_theme: theme.ai_server
 themes:
-- stage: assembly
+- also: []
+  stage: assembly
   theme: theme.ai_server
   tier: downstream
-- stage: equipment
+- also: []
+  stage: equipment
   theme: theme.5g
   tier: midstream
-- stage: it
+- also: []
+  stage: assembly
+  theme: theme.apple
+  tier: downstream
+- also: []
+  stage: it
   theme: theme.data_center
   tier: midstream
-- stage: modules
+- also:
+  - stage: system
+    tier: downstream
+  stage: modules
   theme: theme.liquid_cooling
   tier: midstream
-- stage: system
-  theme: theme.liquid_cooling
-  tier: downstream
-- stage: system
+- also: []
+  stage: system
   theme: theme.nvidia
-  tier: downstream
-- stage: assembly
-  theme: theme.apple
   tier: downstream
 relations:
   customers:
@@ -212,6 +217,20 @@ relations:
     evidence_level: primary
     id: org.casetek-holdings-cayman
     name: CASETEK HOLDINGS LIMITED (CAYMAN)
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 母公司及最終控制者
+    details:
+    - 母公司及最終控制者
+    edge: ec01a41ed7bd1
+    evidence_level: primary
+    id: tw.3694
+    name: 海華
     ranking_basis: unranked
     share_basis: null
     share_pct: null

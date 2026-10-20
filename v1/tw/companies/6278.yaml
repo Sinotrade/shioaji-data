@@ -55,15 +55,18 @@ segments:
   revenue_share_pct: 28.26
 main_theme: theme.ev
 themes:
-- stage: parts
+- also: []
+  stage: parts
   theme: theme.ev
   tier: midstream
-- stage: packaging
-  theme: theme.mini_led
-  tier: midstream
-- stage: assembly
+- also: []
+  stage: assembly
   theme: theme.apple
   tier: downstream
+- also: []
+  stage: packaging
+  theme: theme.mini_led
+  tier: midstream
 relations:
   customers:
   - as_of: '2007-05-24'

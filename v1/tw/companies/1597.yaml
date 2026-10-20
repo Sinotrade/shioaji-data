@@ -41,15 +41,14 @@ segments:
   revenue_share_pct: 0.06
 main_theme: theme.robotics
 themes:
-- stage: components
+- also:
+  - stage: control
+    tier: midstream
+  - stage: system
+    tier: downstream
+  stage: components
   theme: theme.robotics
   tier: upstream
-- stage: control
-  theme: theme.robotics
-  tier: midstream
-- stage: system
-  theme: theme.robotics
-  tier: downstream
 relations:
   subsidiaries:
   - as_of: '2026-06-30'

@@ -49,12 +49,12 @@ segments:
   revenue_share_pct: 21.64
 main_theme: theme.data_center
 themes:
-- stage: it
+- also:
+  - stage: equipment
+    tier: upstream
+  stage: it
   theme: theme.data_center
   tier: midstream
-- stage: equipment
-  theme: theme.data_center
-  tier: upstream
 relations:
   subsidiaries:
   - as_of: '2025-12-31'

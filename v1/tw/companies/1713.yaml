@@ -8,12 +8,131 @@ industry:
   l0_code: '21'
   l0_name: 化學工業
   l0_name_en: Chemical
-primary_chain_position: unknown
+  l1: materials
+  l1_name: 原物料
+  l1_name_en: Materials
+  l2: mat.chemicals
+  l2_name: 化工
+  l2_name_en: Chemicals
+  l3: chem.specialty
+  l3_name: 特用化學品
+  l3_name_en: Specialty Chemicals
+primary_chain_position: not_applicable
+summary_short: 製造氧化鋅、吊白塊、重亞硫酸鈉等特用化學品。
+summary_long: 國化主要製造氧化鋅、吊白塊、重亞硫酸鈉、保險粉及鋅粉等特用化學品。2025年度氧化鋅占營收41.51%，吊白塊占28.87%，重亞硫酸鈉占19.69%，保險粉占9.31%，其他占0.62%。氧化鋅用於橡膠、陶瓷及電子材料；吊白塊可作還原漂白劑及合成橡膠製造助劑。重亞硫酸鈉可用於造紙漂白、紡織脫氯與水處理，保險粉用於染整及漂白，鋅粉則用於防鏽塗料與化學還原用途。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_zinc_oxide
+  name: 氧化鋅
+  period: '2025'
+  revenue_share_pct: 41.51
+- evidence_ids:
+  - e4
+  id: seg_rongalite
+  name: 吊白塊
+  period: '2025'
+  revenue_share_pct: 28.87
+- evidence_ids:
+  - e5
+  id: seg_metabisulfite
+  name: 重亞硫酸鈉
+  period: '2025'
+  revenue_share_pct: 19.69
+- evidence_ids:
+  - e6
+  id: seg_hydrosulfite
+  name: 保險粉
+  period: '2025'
+  revenue_share_pct: 9.31
+- evidence_ids:
+  - e7
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 0.62
 website: www.ccwi.com.tw
 tax_id: '03375001'
 incorporated: '1962-12-11'
 listed: '1990-01-31'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1713#e1:
+    locator: 關於國化
+    published_date: null
+    publisher: 國泰化工廠股份有限公司
+    quote_check: found
+    title: 國泰化工官方網站
+    url: https://www.ccwi.com.tw/
+  tw.1713#e10:
+    locator: 產品特性用途與包裝儲存，主要用途
+    published_date: null
+    publisher: 國泰化工廠股份有限公司
+    quote_check: found
+    title: 保險粉
+    url: https://www.ccwi.com.tw/products-detail/96/
+  tw.1713#e11:
+    locator: 包裝儲存與用途，主要用途
+    published_date: null
+    publisher: 國泰化工廠股份有限公司
+    quote_check: found
+    title: 鋅粉
+    url: https://www.ccwi.com.tw/products-detail/90/
+  tw.1713#e2:
+    locator: 第41頁，營業比重，氧化鋅列
+    published_date: '2026-04-26'
+    publisher: 國泰化工廠股份有限公司
+    quote_check: unreachable
+    title: 國泰化工廠股份有限公司114年年報
+    url: https://doc.twse.com.tw/pdf/2025_1713_20260624F04_20261020_040212.pdf
+  tw.1713#e3:
+    locator: 產品特性用途與包裝儲存
+    published_date: null
+    publisher: 國泰化工廠股份有限公司
+    quote_check: found
+    title: 輕質氧化鋅3A級
+    url: https://www.ccwi.com.tw/products-detail/101/
+  tw.1713#e4:
+    locator: 第41頁，營業比重，吊白塊列
+    published_date: '2026-04-26'
+    publisher: 國泰化工廠股份有限公司
+    quote_check: unreachable
+    title: 國泰化工廠股份有限公司114年年報
+    url: https://doc.twse.com.tw/pdf/2025_1713_20260624F04_20261020_040212.pdf
+  tw.1713#e5:
+    locator: 第41頁，營業比重，重亞硫酸鈉列
+    published_date: '2026-04-26'
+    publisher: 國泰化工廠股份有限公司
+    quote_check: unreachable
+    title: 國泰化工廠股份有限公司114年年報
+    url: https://doc.twse.com.tw/pdf/2025_1713_20260624F04_20261020_040212.pdf
+  tw.1713#e6:
+    locator: 第41頁，營業比重，保險粉列
+    published_date: '2026-04-26'
+    publisher: 國泰化工廠股份有限公司
+    quote_check: unreachable
+    title: 國泰化工廠股份有限公司114年年報
+    url: https://doc.twse.com.tw/pdf/2025_1713_20260624F04_20261020_040212.pdf
+  tw.1713#e7:
+    locator: 第41頁，營業比重，其他列
+    published_date: '2026-04-26'
+    publisher: 國泰化工廠股份有限公司
+    quote_check: unreachable
+    title: 國泰化工廠股份有限公司114年年報
+    url: https://doc.twse.com.tw/pdf/2025_1713_20260624F04_20261020_040212.pdf
+  tw.1713#e8:
+    locator: 吊白塊產品說明
+    published_date: null
+    publisher: 國泰化工廠股份有限公司
+    quote_check: found
+    title: 吊白塊－產品介紹
+    url: https://www.ccwi.com.tw/products/113/
+  tw.1713#e9:
+    locator: 產品特性用途與包裝儲存，用途
+    published_date: null
+    publisher: 國泰化工廠股份有限公司
+    quote_check: found
+    title: 重亞硫酸鈉
+    url: https://www.ccwi.com.tw/products-detail/92/

@@ -8,12 +8,181 @@ industry:
   l0_code: '22'
   l0_name: 生技醫療業
   l0_name_en: Biotechnology and Medical Care
-primary_chain_position: unknown
+  l1: health
+  l1_name: 醫療保健
+  l1_name_en: Healthcare
+  l2: health.pharma
+  l2_name: 製藥與生技
+  l2_name_en: Pharmaceuticals & Biotech
+  l3: bio.generic
+  l3_name: 學名藥與原料藥
+  l3_name_en: Generics & APIs
+chain: chain.biotech
+chain_stage:
+  agreement: both
+  also:
+  - stage: rnd
+    stage_name: 研發與原料
+    tier: upstream
+  reason: 療效用藥製造占營收61.43%為主，另有天然植物萃取原料及子公司新藥研發業務。
+  stage: manufacturing
+  stage_name: 製造與代工
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 以療效用藥與功能性食品的製造、銷售為主要收入來源。
+summary_long: 杏輝主要製造與銷售療效用藥及功能性食品，2025年度營收占比分別為61.43%與35.14%，其他產品占3.43%。藥品製造涵蓋抗癌針劑、固態製劑及賀爾蒙製劑，另有化妝品、天然植物萃取原料，並提供產品設計與委託製造服務。主要子公司包括加拿大中加康普、杏國新藥與杏力醫療器材生技；杏國從事新藥研發，杏力生產藥用級塑膠容器與醫療器材，相關子公司業務分別列示。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_drugs
+  name: 療效用藥
+  period: '2025'
+  revenue_share_pct: 61.43
+- evidence_ids:
+  - e2
+  id: seg_food
+  name: 功能性食品
+  period: '2025'
+  revenue_share_pct: 35.14
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 3.43
+relations:
+  subsidiaries:
+  - as_of: '2026-10-20'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 加拿大子公司
+    details:
+    - 加拿大子公司
+    edge: eee7a09ec69a9
+    evidence_level: primary
+    id: org.cancap-pharmaceutical
+    name: 中加康普製藥股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司；藥用級塑膠容器與醫療器材
+    details:
+    - 直接子公司；藥用級塑膠容器與醫療器材
+    edge: e293a2979763a
+    evidence_level: primary
+    id: org.zunimed
+    name: 杏力醫療器材生技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司；新藥研發
+    details:
+    - 直接子公司；新藥研發
+    edge: e75571a2ea783
+    evidence_level: primary
+    id: tw.4192
+    name: 杏國
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.sinphar.com
 tax_id: '42042734'
 incorporated: '1977-07-02'
 listed: '2002-08-26'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1734#e10:
+    locator: 第50頁，2026年3月31日本公司投資欄
+    published_date: null
+    publisher: 杏輝藥品工業股份有限公司
+    quote_check: found
+    title: 杏輝藥品工業股份有限公司2025年度年報
+    url: https://sinphar.com.tw/_upload/images/2606121325370.pdf
+  tw.1734#e11:
+    locator: 第4頁，新藥研發
+    published_date: null
+    publisher: 杏輝藥品工業股份有限公司
+    quote_check: found
+    title: 杏輝藥品工業股份有限公司2025年度年報
+    url: https://sinphar.com.tw/_upload/images/2606121325370.pdf
+  tw.1734#e12:
+    locator: 第50頁，2026年3月31日本公司投資欄
+    published_date: null
+    publisher: 杏輝藥品工業股份有限公司
+    quote_check: found
+    title: 杏輝藥品工業股份有限公司2025年度年報
+    url: https://sinphar.com.tw/_upload/images/2606121325370.pdf
+  tw.1734#e13:
+    locator: 藥包材廠
+    published_date: null
+    publisher: 杏輝醫藥集團
+    quote_check: found
+    title: 專業製造
+    url: https://sinphar.com/tech?id=1
+  tw.1734#e2:
+    locator: 第57頁，營業比重
+    published_date: null
+    publisher: 杏輝藥品工業股份有限公司
+    quote_check: found
+    title: 杏輝藥品工業股份有限公司2025年度年報
+    url: https://sinphar.com.tw/_upload/images/2606121325370.pdf
+  tw.1734#e3:
+    locator: 第1頁，致股東報告書
+    published_date: null
+    publisher: 杏輝藥品工業股份有限公司
+    quote_check: found
+    title: 杏輝藥品工業股份有限公司2025年度年報
+    url: https://sinphar.com.tw/_upload/images/2606121325370.pdf
+  tw.1734#e4:
+    locator: 公司介紹第2至3段
+    published_date: null
+    publisher: 杏輝醫藥集團
+    quote_check: found
+    title: 杏輝藥品工業股份有限公司（台灣宜蘭）
+    url: https://sinphar.com/relation
+  tw.1734#e5:
+    locator: 癌症製劑中心／一廠
+    published_date: null
+    publisher: 杏輝醫藥集團
+    quote_check: found
+    title: 專業製造
+    url: https://sinphar.com/tech?id=1
+  tw.1734#e6:
+    locator: 化妝品廠
+    published_date: null
+    publisher: 杏輝醫藥集團
+    quote_check: found
+    title: 專業製造
+    url: https://sinphar.com/tech?id=1
+  tw.1734#e7:
+    locator: 第57頁，目前商品及服務項目
+    published_date: null
+    publisher: 杏輝藥品工業股份有限公司
+    quote_check: found
+    title: 杏輝藥品工業股份有限公司2025年度年報
+    url: https://sinphar.com.tw/_upload/images/2606121325370.pdf
+  tw.1734#e8:
+    locator: 多項品質認證之專業藥廠
+    published_date: null
+    publisher: 杏輝醫藥集團
+    quote_check: found
+    title: 代工業務
+    url: https://sinphar.com/tech?id=4
+  tw.1734#e9:
+    locator: 第2段
+    published_date: null
+    publisher: 杏輝醫藥集團
+    quote_check: found
+    title: 集團介紹
+    url: https://sinphar.com.tw/about

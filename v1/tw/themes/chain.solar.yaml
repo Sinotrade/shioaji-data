@@ -36,7 +36,7 @@ members:
 - id: tw.3576
   detail: 主要收入來自太陽能電池與模組，另提供案場開發、系統工程及維運。
   as_of: '2026-10-15'
-  evidence: &id001
+  evidence:
   - tw.3576#e1
   - tw.3576#e2
   confidence: ai_cross_checked
@@ -47,7 +47,9 @@ members:
 - id: tw.3576
   detail: 主要收入來自太陽能電池與模組，另提供案場開發、系統工程及維運。
   as_of: '2026-10-15'
-  evidence: *id001
+  evidence:
+  - tw.3576#e1
+  - tw.3576#e2
   confidence: ai_cross_checked
   source: classification
   stage: system
@@ -67,7 +69,7 @@ members:
 - id: tw.6244
   detail: 光電事業占營收91.39%，主製電池與模組；另提供系統整合及發電售電。
   as_of: '2026-10-18'
-  evidence: &id002
+  evidence:
   - tw.6244#e1
   - tw.6244#e2
   - tw.6244#e3
@@ -80,7 +82,11 @@ members:
 - id: tw.6244
   detail: 光電事業占營收91.39%，主製電池與模組；另提供系統整合及發電售電。
   as_of: '2026-10-18'
-  evidence: *id002
+  evidence:
+  - tw.6244#e1
+  - tw.6244#e2
+  - tw.6244#e3
+  - tw.6244#e4
   confidence: ai_cross_checked
   source: classification
   stage: system
@@ -89,7 +95,7 @@ members:
 - id: tw.6443
   detail: 模組占營收93.35%，電池占3.99%；另提供電廠興建及長期維運。
   as_of: '2026-10-18'
-  evidence: &id003
+  evidence:
   - tw.6443#e2
   - tw.6443#e3
   confidence: ai_cross_checked
@@ -100,7 +106,9 @@ members:
 - id: tw.6443
   detail: 模組占營收93.35%，電池占3.99%；另提供電廠興建及長期維運。
   as_of: '2026-10-18'
-  evidence: *id003
+  evidence:
+  - tw.6443#e2
+  - tw.6443#e3
   confidence: ai_cross_checked
   source: classification
   stage: system

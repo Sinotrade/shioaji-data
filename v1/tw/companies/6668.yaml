@@ -8,8 +8,127 @@ industry:
   l0_code: '26'
   l0_name: 光電業
   l0_name_en: Optoelectronic
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.optical_component
+  l3_name: 光學元件與鏡頭
+  l3_name_en: Optical Components & Lenses
+primary_chain_position: midstream
+summary_short: 製造光學鏡頭、鏡片與精密光學模具，以鏡頭及鏡片為主要營收來源。
+summary_long: 中揚光電以光學鏡頭、鏡片與精密模具為主要業務，具備光學設計、模仁加工、鏡片成型、鍍膜及組裝能力。2025年度鏡頭及鏡片占營收55.33%，模具（含模座及模仁）占28.21%，其他業務占16.46%。產品包括非球面玻璃與塑膠鏡片、空拍機鏡頭；年報揭露空拍機鏡頭於泰國廠量產，AI伺服器冷卻快速接頭於東莞廠量產。此外亦開發CPO用模造玻璃準直透鏡，截至2026年8月已送樣驗證。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_lenses
+  name: 鏡頭及鏡片
+  period: '2025'
+  revenue_share_pct: 55.33
+- evidence_ids:
+  - e2
+  id: seg_molds
+  name: 模具（含模座及模仁）
+  period: '2025'
+  revenue_share_pct: 28.21
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 16.46
+main_theme: theme.ai_server
+themes:
+- also: []
+  stage: components
+  theme: theme.ai_server
+  tier: midstream
+- also: []
+  stage: components
+  theme: theme.drone
+  tier: upstream
+- also: []
+  stage: parts
+  theme: theme.liquid_cooling
+  tier: upstream
+- also: []
+  stage: components
+  theme: theme.cpo
+  tier: upstream
 relations:
+  subsidiaries:
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團全資轉投資控股公司
+    details:
+    - 集團全資轉投資控股公司
+    edge: ed0ede3268c80
+    evidence_level: primary
+    id: org.cheng-tian-photoelectric-technology-co-ltd-samoa
+    name: CHENG TIAN PHOTOELECTRIC TECHNOLOGY Co., Ltd (Samoa)
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團泰國全資子公司
+    details:
+    - 集團泰國全資子公司
+    edge: eba36671c9d70
+    evidence_level: primary
+    id: org.jmo-technology-thailand-co-ltd
+    name: JMO TECHNOLOGY (THAILAND) Co., Ltd
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團全資子公司
+    details:
+    - 集團全資子公司
+    edge: e3a8f6ef2b888
+    evidence_level: primary
+    id: org.展立光電-東莞-有限公司
+    name: 展立光電(東莞)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團全資子公司
+    details:
+    - 集團全資子公司
+    edge: e872ac7291bde
+    evidence_level: primary
+    id: org.東莞晶彩光學有限公司
+    name: 東莞晶彩光學有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司
+    details:
+    - 全資子公司
+    edge: e0ce6e8e550cb
+    evidence_level: primary
+    id: org.紘立光電股份有限公司
+    name: 紘立光電股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   transactions:
   - amount: null
     as_of: '2026-06-17'
@@ -32,11 +151,92 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+unresolved_mentions:
+- 年報所稱北美空拍機客戶，未具名。
+- CPO開發案所稱國際大型客戶，未具名。
+- AI伺服器冷卻元件所稱北美品牌廠家，未具名。
 website: http://www.jmo-corp.com
 tax_id: '54258218'
 incorporated: '2013-06-04'
 listed: '2018-12-12'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6668#e1:
+    locator: 公司介紹第01段
+    published_date: null
+    publisher: 中揚光電股份有限公司
+    quote_check: found
+    title: 公司介紹
+    url: https://www.jmo-corp.com/page/about/index.aspx?kind=1
+  tw.6668#e10:
+    locator: 印刷第47頁，轉投資事業表，本公司投資及綜合投資欄
+    published_date: '2026-05-07'
+    publisher: 中揚光電股份有限公司
+    quote_check: found
+    title: 中揚光電114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52604/2026/RNS/52604_rns_2026-05-29_c6a025f5-062b-466d-ba99-0f8fe3e3edb9.pdf
+  tw.6668#e11:
+    locator: 印刷第47頁，轉投資事業表，泰國公司列
+    published_date: '2026-05-07'
+    publisher: 中揚光電股份有限公司
+    quote_check: found
+    title: 中揚光電114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52604/2026/RNS/52604_rns_2026-05-29_c6a025f5-062b-466d-ba99-0f8fe3e3edb9.pdf
+  tw.6668#e2:
+    locator: 印刷第53頁，營業比重；114年度金額及比重欄
+    published_date: '2026-05-07'
+    publisher: 中揚光電股份有限公司
+    quote_check: found
+    title: 中揚光電114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52604/2026/RNS/52604_rns_2026-05-29_c6a025f5-062b-466d-ba99-0f8fe3e3edb9.pdf
+  tw.6668#e3:
+    locator: 產品名稱
+    published_date: null
+    publisher: 中揚光電股份有限公司
+    quote_check: found
+    title: 玻璃模造鏡片
+    url: https://www.jmo-corp.com/page/about/index.aspx?kind=1129
+  tw.6668#e4:
+    locator: 產品名稱
+    published_date: null
+    publisher: 中揚光電股份有限公司
+    quote_check: found
+    title: 塑料鏡片
+    url: https://www.jmo-corp.com/page/about/index.aspx?kind=1131
+  tw.6668#e5:
+    locator: 印刷第2頁，115年度營運計畫，預期產銷概況第6項
+    published_date: '2026-05-07'
+    publisher: 中揚光電股份有限公司
+    quote_check: found
+    title: 中揚光電114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52604/2026/RNS/52604_rns_2026-05-29_c6a025f5-062b-466d-ba99-0f8fe3e3edb9.pdf
+  tw.6668#e6:
+    locator: 記者歐宇祥報導，CPO開發段落
+    published_date: '2026-08-07'
+    publisher: 自由時報
+    quote_check: found
+    title: 無人機鏡頭將成長5倍 中揚光拼明年損益兩平
+    url: https://ec.ltn.com.tw/article/breakingnews/5532171
+  tw.6668#e7:
+    locator: 印刷第2頁，115年度營運計畫，預期產銷概況第7項
+    published_date: '2026-05-07'
+    publisher: 中揚光電股份有限公司
+    quote_check: found
+    title: 中揚光電114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52604/2026/RNS/52604_rns_2026-05-29_c6a025f5-062b-466d-ba99-0f8fe3e3edb9.pdf
+  tw.6668#e8:
+    locator: 印刷第54頁，產品之各種發展趨勢
+    published_date: '2026-05-07'
+    publisher: 中揚光電股份有限公司
+    quote_check: found
+    title: 中揚光電114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52604/2026/RNS/52604_rns_2026-05-29_c6a025f5-062b-466d-ba99-0f8fe3e3edb9.pdf
+  tw.6668#e9:
+    locator: 印刷第47頁，本公司投資股權比例100%之CHENG TIAN列；第68頁控股公司說明
+    published_date: '2026-05-07'
+    publisher: 中揚光電股份有限公司
+    quote_check: found
+    title: 中揚光電114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52604/2026/RNS/52604_rns_2026-05-29_c6a025f5-062b-466d-ba99-0f8fe3e3edb9.pdf

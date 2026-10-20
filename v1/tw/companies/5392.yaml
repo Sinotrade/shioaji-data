@@ -8,12 +8,218 @@ industry:
   l0_code: '26'
   l0_name: 光電業
   l0_name_en: Optoelectronic
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.distribution
+  l2_name: 電子通路
+  l2_name_en: Electronics Distribution
+  l3: dist.components
+  l3_name: 電子零組件通路
+  l3_name_en: Electronic Components Distribution
+primary_chain_position: downstream
+summary_short: 透過子公司經營電子產品製造與通路、精密塑膠及電動工具零組件。
+summary_long: 能率創新透過子公司經營電子產品製造與通路、電動工具與粉末冶金、精密塑膠零組件及金屬加工。2024年電子產品製造及通路占營收38.59%，為最大項目；電動工具及粉末冶金占32.42%，精密塑膠零組件占27.03%。主要子公司包括毅金精密、IKKA-KY、能率網通及宏羚，其中IKKA-KY為集團孫公司。機器人業務由毅金精密製造平價消費型機器手臂。母公司為能率國際，最終控制者為佳美投資。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_electronics
+  name: 電子產品製造及通路
+  period: '2024'
+  revenue_share_pct: 38.59
+- evidence_ids:
+  - e1
+  id: seg_tools
+  name: 電動手工具及粉末冶金
+  period: '2024'
+  revenue_share_pct: 32.42
+- evidence_ids:
+  - e1
+  id: seg_plastics
+  name: 精密塑膠零組件
+  period: '2024'
+  revenue_share_pct: 27.03
+- evidence_ids:
+  - e1
+  id: seg_metal
+  name: 金屬加工產品及塑膠製品
+  period: '2024'
+  revenue_share_pct: 1.96
+main_theme: theme.robotics
+themes:
+- also: []
+  stage: system
+  theme: theme.robotics
+  tier: downstream
+relations:
+  parents:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 母公司
+    details:
+    - 母公司
+    edge: e45f315c7c981
+    evidence_level: primary
+    id: org.abico-international
+    name: 能率國際股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 最終控制者
+    details:
+    - 最終控制者
+    edge: e2144d4b56884
+    evidence_level: primary
+    id: org.jia-mei-investment
+    name: 佳美投資股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 主要製造子公司
+    details:
+    - 主要製造子公司
+    edge: e7e285b5ec51c
+    evidence_level: primary
+    id: org.jbon
+    name: 毅金精密股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: IKKA-KY為納入合併報表的孫公司
+    details:
+    - IKKA-KY為納入合併報表的孫公司
+    edge: e524c2c4ee9ac
+    evidence_level: primary
+    id: tw.2250
+    name: IKKA-KY
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 主要通路子公司
+    details:
+    - 主要通路子公司
+    edge: edd1e944298ae
+    evidence_level: primary
+    id: tw.7885
+    name: 宏羚股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 主要製造及通路子公司
+    details:
+    - 主要製造及通路子公司
+    edge: efb83a8dc4f73
+    evidence_level: primary
+    id: tw.8071
+    name: 能率網通
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.avy.com.tw
 tax_id: '84901089'
 incorporated: '1994-12-29'
 listed: '1999-06-14'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.5392#e1:
+    locator: 第60頁，主要產品之營業比重：113年度
+    published_date: null
+    publisher: 能率創新股份有限公司
+    quote_check: found
+    title: 能率創新113年度年報
+    url: https://www.avy.com.tw/download/shareholders_meeting/2025-3.pdf
+  tw.5392#e10:
+    locator: 第60頁，公司目前之商品（服務）項目
+    published_date: null
+    publisher: 能率創新股份有限公司
+    quote_check: found
+    title: 能率創新113年度年報
+    url: https://www.avy.com.tw/download/shareholders_meeting/2025-3.pdf
+  tw.5392#e11:
+    locator: 第10頁，機器人事業發展
+    published_date: null
+    publisher: 能率創新股份有限公司
+    quote_check: found
+    title: 能率創新2025年法人說明會簡報
+    url: https://www.avy.com.tw/download/legal_seminars/2025zh.pdf
+  tw.5392#e2:
+    locator: 第94頁，產品別資訊，114年度欄
+    published_date: null
+    publisher: 能率創新股份有限公司
+    quote_check: found
+    title: 能率創新114年度及113年度合併財務報告
+    url: https://www.avy.com.tw/download/finance_report/2025-4.pdf
+  tw.5392#e3:
+    locator: 第5頁，公司基本資料／重要子公司
+    published_date: null
+    publisher: 能率創新股份有限公司
+    quote_check: found
+    title: 能率創新2025年法人說明會簡報
+    url: https://www.avy.com.tw/download/legal_seminars/2025zh.pdf
+  tw.5392#e4:
+    locator: 第56頁，附註六（十五）
+    published_date: null
+    publisher: 能率創新股份有限公司
+    quote_check: found
+    title: 能率創新114年度及113年度合併財務報告
+    url: https://www.avy.com.tw/download/finance_report/2025-4.pdf
+  tw.5392#e5:
+    locator: 第77頁，附註七（一）母公司與最終控制者
+    published_date: null
+    publisher: 能率創新股份有限公司
+    quote_check: found
+    title: 能率創新114年度及113年度合併財務報告
+    url: https://www.avy.com.tw/download/finance_report/2025-4.pdf
+  tw.5392#e6:
+    locator: 第77頁，附註七（一）母公司與最終控制者
+    published_date: null
+    publisher: 能率創新股份有限公司
+    quote_check: found
+    title: 能率創新114年度及113年度合併財務報告
+    url: https://www.avy.com.tw/download/finance_report/2025-4.pdf
+  tw.5392#e7:
+    locator: 第60頁，公司目前之商品（服務）項目
+    published_date: null
+    publisher: 能率創新股份有限公司
+    quote_check: found
+    title: 能率創新113年度年報
+    url: https://www.avy.com.tw/download/shareholders_meeting/2025-3.pdf
+  tw.5392#e8:
+    locator: 第81頁，主要產品用途
+    published_date: null
+    publisher: 能率創新股份有限公司
+    quote_check: found
+    title: 能率創新113年度年報
+    url: https://www.avy.com.tw/download/shareholders_meeting/2025-3.pdf
+  tw.5392#e9:
+    locator: 第81頁，主要產品用途
+    published_date: null
+    publisher: 能率創新股份有限公司
+    quote_check: found
+    title: 能率創新113年度年報
+    url: https://www.avy.com.tw/download/shareholders_meeting/2025-3.pdf

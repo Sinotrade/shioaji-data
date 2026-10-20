@@ -55,16 +55,20 @@ segments:
   revenue_share_pct: 5.1
 main_theme: theme.ai_server
 themes:
-- stage: board_materials
+- also: []
+  stage: board_materials
   theme: theme.ai_server
   tier: upstream
-- stage: components
-  theme: theme.nvidia
-  tier: midstream
-- stage: components
+- also: []
+  stage: components
   theme: theme.apple
   tier: upstream
-- stage: substrate
+- also: []
+  stage: components
+  theme: theme.nvidia
+  tier: midstream
+- also: []
+  stage: substrate
   theme: theme.abf
   tier: midstream
 relations:

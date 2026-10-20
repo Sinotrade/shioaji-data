@@ -8,12 +8,134 @@ industry:
   l0_code: '24'
   l0_name: 半導體業
   l0_name_en: Semiconductor
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.distribution
+  l2_name: 電子通路
+  l2_name_en: Electronics Distribution
+  l3: dist.it
+  l3_name: 資訊產品通路
+  l3_name_en: IT Products Distribution
+primary_chain_position: not_applicable
+summary_short: 主要經營遊戲娛樂產品通路、電子產品買賣及區塊鏈資訊系統開發。
+summary_long: 博士旺的營業收入來自消費性娛樂通路、電子產品銷售、資訊系統開發及生技產品。2026年第一季以消費性娛樂通路收入最高，其次為電子產品及資訊系統開發。消費娛樂業務銷售遊戲主機與軟體；數位金融業務提供資產保管、供應鏈金融及系統整合方案，另有Soteria分散式安全儲存與Pistis DID身分認證產品。集團直接子公司包括天行生技與博斯資訊安全，合流科技則由博斯資訊安全持有；威剛科技為集團最終母公司。
+segments:
+- evidence_ids:
+  - e1
+  id: seg.entertainment
+  name: 消費性娛樂通路
+  period: 2026Q1
+  revenue_share_pct: 48.58
+- evidence_ids:
+  - e1
+  id: seg.electronics
+  name: 電子產品
+  period: 2026Q1
+  revenue_share_pct: 39.39
+- evidence_ids:
+  - e1
+  id: seg.systems
+  name: 資訊系統開發
+  period: 2026Q1
+  revenue_share_pct: 11.98
+- evidence_ids:
+  - e1
+  id: seg.biotech
+  name: 生技及其他
+  period: 2026Q1
+  revenue_share_pct: 0.05
+relations:
+  subsidiaries:
+  - as_of: '2025-12-05'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股59.32%的子公司
+    details:
+    - 直接持股59.32%的子公司
+    edge: e561e59363ba5
+    evidence_level: primary
+    id: org.baasid
+    name: 博斯資訊安全股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-05'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 由博斯資訊安全全資持有的間接子公司
+    details:
+    - 由博斯資訊安全全資持有的間接子公司
+    edge: ef2e6f525ec30
+    evidence_level: primary
+    id: org.croxlink
+    name: 合流科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-05'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的子公司
+    details:
+    - 直接持股100%的子公司
+    edge: ec62844c65294
+    evidence_level: primary
+    id: org.tianxing-biotech
+    name: 天行生技有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.i-baas.com/
 tax_id: '80551862'
 incorporated: '2003-09-25'
 listed: '2011-11-08'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3555#e1:
+    locator: 第47頁，十四、營運部門資訊；欄序為消費性娛樂通路、資訊系統、電子、生技及其他、總計；單位為新台幣仟元
+    published_date: '2026-04-28'
+    publisher: 博士旺創新股份有限公司
+    quote_check: not_found
+    title: 博士旺創新股份有限公司及子公司115年第一季合併財務報告
+    url: https://drive.google.com/file/d/1PlNLUF_uTnY6Oy_C7jj6Qg9GB_9swF2H/view
+  tw.3555#e3:
+    locator: 第13頁，消費娛樂事業新品上市
+    published_date: '2025-12-05'
+    publisher: 博士旺創新股份有限公司
+    quote_check: found
+    title: 博士旺創新2025年12月5日法人說明會簡報
+    url: https://www.i-baas.com/wp-content/uploads/2025/12/114.12.05_2025-Q4%E6%B3%95%E8%AA%AA%E6%9C%83%E7%B0%A1%E5%A0%B1%E4%B8%AD%E6%96%87.pdf
+  tw.3555#e4:
+    locator: 第8頁，銀行數位資產基礎設施
+    published_date: '2026-09-14'
+    publisher: 博士旺創新股份有限公司
+    quote_check: found
+    title: 博士旺創新2026年9月14日法人說明會簡報
+    url: https://www.i-baas.com/wp-content/uploads/2026/09/%E5%8D%9A%E5%A3%AB%E6%97%BA_Q2%E6%B3%95%E8%AA%AA%E6%9C%83%E7%B0%A1%E5%A0%B1_%E4%B8%AD%E6%96%87-_260911.pdf
+  tw.3555#e5:
+    locator: 產品介紹
+    published_date: null
+    publisher: 博士旺創新股份有限公司
+    quote_check: found
+    title: BaaSid Soteria
+    url: https://www.i-baas.com/baasid-soteria/
+  tw.3555#e6:
+    locator: 符合W3C國際組織DID制定標準
+    published_date: null
+    publisher: 博士旺創新股份有限公司
+    quote_check: found
+    title: BaaSid Pistis DID
+    url: https://www.i-baas.com/baasid-pistis-did/
+  tw.3555#e7:
+    locator: 第6頁，集團控股架構圖；合流科技位於博斯資訊安全之下
+    published_date: '2025-12-05'
+    publisher: 博士旺創新股份有限公司
+    quote_check: found
+    title: 博士旺創新2025年12月5日法人說明會簡報
+    url: https://www.i-baas.com/wp-content/uploads/2025/12/114.12.05_2025-Q4%E6%B3%95%E8%AA%AA%E6%9C%83%E7%B0%A1%E5%A0%B1%E4%B8%AD%E6%96%87.pdf

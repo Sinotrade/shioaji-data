@@ -8,13 +8,144 @@ industry:
   l0_code: '12'
   l0_name: 汽車工業
   l0_name_en: Automobile
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.other
+  l3_name: 其他電子零組件
+  l3_name_en: Other Electronic Components
+primary_chain_position: midstream
+summary_short: 主要製造硬碟與汽機車精密金屬零組件，另經營沖壓設備及機器人業務。
+summary_long: 百達-KY以精密零組件製造為主要業務，旗下BIGL製造硬碟致動臂，並提供磁線圈繞線等次組裝服務。集團另供應汽機車引擎傳輸、排氣、煞車與安全系統零件，以及高精密機械沖壓機。機器人業務由Kabam體系提供，應用於保全、設施管理與智慧建築，涵蓋自主解決方案及連結技術。已查證的集團架構包括直接持有的PATEC PTE. LTD.，以及間接持有的BIGL與Kabam，產品說明依各子公司的實際業務區分。
+main_theme: theme.robotics
+themes:
+- also: []
+  stage: system
+  theme: theme.robotics
+  tier: downstream
+relations:
+  subsidiaries:
+  - as_of: 2026-10
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持有的硬碟零組件子公司BIGL
+    details:
+    - 間接持有的硬碟零組件子公司BIGL
+    edge: e260b0601ac6f
+    evidence_level: primary
+    id: org.broadway-industrial-group
+    name: Broadway Industrial Group Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過PATEC持有的機器人子公司
+    details:
+    - 透過PATEC持有的機器人子公司
+    edge: eadedb886bc00
+    evidence_level: primary
+    id: org.kabam-pte-ltd
+    name: Kabam Pte. Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有的子公司
+    details:
+    - 直接持有的子公司
+    edge: ecf2cba7ccb52
+    evidence_level: primary
+    id: org.patec-pte-ltd
+    name: PATEC PTE. LTD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.patec-intl.com
 tax_id: '42299452'
 incorporated: '2011-06-29'
 listed: '2015-06-03'
 foreign_registration: KY 開曼群島
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-20'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2236#e1:
+    locator: 第2頁，Core Business Segments
+    published_date: '2026-09-10'
+    publisher: 百達精密工業股份有限公司
+    quote_check: found
+    title: PATEC 2026上半年回顧及展望
+    url: https://mopsov.twse.com.tw/nas/STR/223620260910M001.pdf
+  tw.2236#e10:
+    locator: 第4頁，營運回顧
+    published_date: null
+    publisher: Broadway Industrial Group Limited
+    quote_check: found
+    title: Broadway Industrial Group Limited Annual Report 2024
+    url: https://links.sgx.com/FileOpen/BIGL%20AR2024.ashx?App=Announcement&FileID=839130
+  tw.2236#e2:
+    locator: '第11頁，Innovation in Robotics: Kabam Robotics'
+    published_date: '2026-09-10'
+    publisher: 百達精密工業股份有限公司
+    quote_check: found
+    title: PATEC 2026上半年回顧及展望
+    url: https://mopsov.twse.com.tw/nas/STR/223620260910M001.pdf
+  tw.2236#e3:
+    locator: HDD業務介紹
+    published_date: null
+    publisher: Broadway Industrial Group Limited
+    quote_check: found
+    title: HDD Business Unit
+    url: https://bw-grp.com/hdd-business-unit
+  tw.2236#e4:
+    locator: PATEC集團關係說明
+    published_date: null
+    publisher: Broadway Industrial Group Limited
+    quote_check: found
+    title: BIGL
+    url: https://bw-grp.com/
+  tw.2236#e5:
+    locator: 汽車及機車零部件應用
+    published_date: null
+    publisher: 百達精密工業股份有限公司
+    quote_check: found
+    title: 零部件製造
+    url: https://patec-intl.com/big5/bisunits_manufacturing.php
+  tw.2236#e6:
+    locator: 產品介紹首段
+    published_date: null
+    publisher: 百達精密工業股份有限公司
+    quote_check: found
+    title: 工藝技術解決方案
+    url: https://patec-intl.com/big5/bisunits_solutions.php
+  tw.2236#e7:
+    locator: 第17頁，附註十二：列入合併財務報告之子公司
+    published_date: '2024-11-13'
+    publisher: 百達精密工業股份有限公司
+    quote_check: found
+    title: 百達精密工業股份有限公司及子公司2024年第三季合併財務報告
+    url: https://patec-intl.com/files/PATEC2024Q3.pdf
+  tw.2236#e8:
+    locator: 第17頁，附註十二：Kabam子公司列
+    published_date: '2024-11-13'
+    publisher: 百達精密工業股份有限公司
+    quote_check: found
+    title: 百達精密工業股份有限公司及子公司2024年第三季合併財務報告
+    url: https://patec-intl.com/files/PATEC2024Q3.pdf
+  tw.2236#e9:
+    locator: 第7頁，2025Q3實際營收；欄序為Patec、BIGL、Total，單位千新加坡元
+    published_date: '2025-12-26'
+    publisher: 百達精密工業股份有限公司
+    quote_check: found
+    title: PATEC Group 2025年第三季回顧
+    url: https://mopsov.twse.com.tw/nas/STR/223620251226M001.pdf
