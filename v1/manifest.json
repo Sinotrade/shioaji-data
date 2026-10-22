@@ -1,17 +1,17 @@
 {
  "manifest_schema_version": "1.0.0",
- "release_id": "2026.10.21.2056",
- "built_at": "2026-10-21T20:56:33+0800",
- "official_fetched_at": "2026-10-21",
+ "release_id": "2026.10.22.2102",
+ "built_at": "2026-10-22T21:02:13+0800",
+ "official_fetched_at": "2026-10-22",
  "disclaimer": "本資料彙整自政府開放資料與公開文件，部分內容由 AI 整理並經多個模型交叉核對，可能過時或有誤，僅供參考，不構成投資建議或買賣推薦。各筆資料的時點與出處請見標示。",
  "files": {
   "tw/cards": {
    "path": "v1/tw/companies/cards.json",
-   "sha256": "8acf5cdb9f810a45de4d9fd7cac73556c7c50b5e18a7887e7a378d95ad70b5d5",
-   "bytes": 1775986,
-   "records": 1990,
+   "sha256": "994818d9a7792a1eea83b1fa39920a48814672a8e10bd1cdd794b099c73c8e21",
+   "bytes": 1776425,
+   "records": 1991,
    "schema_version": "1.3.0",
-   "as_of": "2026-10-21"
+   "as_of": "2026-10-22"
   },
   "tw/edges": {
    "path": "v1/tw/relations/edges.json",
@@ -19,7 +19,7 @@
    "bytes": 2578046,
    "records": 5873,
    "schema_version": "1.1.0",
-   "as_of": "2026-10-21"
+   "as_of": "2026-10-22"
   },
   "tw/themes": {
    "path": "v1/tw/themes/themes.json",
@@ -27,18 +27,18 @@
    "bytes": 494071,
    "records": 37,
    "schema_version": "1.2.0",
-   "as_of": "2026-10-21"
+   "as_of": "2026-10-22"
   },
   "tw/market": {
    "path": "v1/tw/market/daily.json",
-   "sha256": "a776b671b53310baa6c78539522f4666cf868759ba8548d555827faad058867a",
-   "bytes": 175499,
-   "records": 1962,
+   "sha256": "d779be7190c3c086a9c3ed36de8fef8b37c00622984db8fc48b3d6e23cb5109c",
+   "bytes": 174888,
+   "records": 1955,
    "schema_version": "2.0.0",
-   "as_of": "2026-10-21",
+   "as_of": "2026-10-22",
    "as_of_by_market": {
-    "twse": "2026-10-21",
-    "tpex": "2026-10-21"
+    "twse": "2026-10-22",
+    "tpex": "2026-10-22"
    }
   },
   "tw/revenue": {
@@ -51,11 +51,11 @@
   },
   "global/entities": {
    "path": "v1/global/entities/entities.json",
-   "sha256": "235614118d41a5b01899c14ba1c6565045fbd3e2a3d8696dec0157f2d0c20b6f",
-   "bytes": 1208181,
-   "records": 6376,
+   "sha256": "22a7bb9e59e0983bdbed030122128476c87d7aeee6ec96f1bf7ac33962207350",
+   "bytes": 1208375,
+   "records": 6377,
    "schema_version": "1.0.0",
-   "as_of": "2026-10-21"
+   "as_of": "2026-10-22"
   },
   "global/sources": {
    "path": "v1/global/sources/sources.json",
@@ -63,7 +63,7 @@
    "bytes": 4372,
    "records": 9,
    "schema_version": "1.0.0",
-   "as_of": "2026-10-21"
+   "as_of": "2026-10-22"
   },
   "global/taxonomy": {
    "path": "v1/global/taxonomy/taxonomy.json",
@@ -71,7 +71,7 @@
    "bytes": 18663,
    "records": 144,
    "schema_version": "1.1.0",
-   "as_of": "2026-10-21"
+   "as_of": "2026-10-22"
   }
  },
  "companies": {
@@ -1278,6 +1278,10 @@
   "2248": {
    "path": "v1/tw/companies/json/2248.json",
    "sha256": "8a6aab904aa3ddf09cdb04ef64921697e97fbc33aa411fe24dcc303ddc50b875"
+  },
+  "2249": {
+   "path": "v1/tw/companies/json/2249.json",
+   "sha256": "9b7fcc0976e395bd009432060a6b87849da0cf7883650c3d86f3d28d1a448c40"
   },
   "2250": {
    "path": "v1/tw/companies/json/2250.json",
@@ -7909,7 +7913,7 @@
   },
   "9917": {
    "path": "v1/tw/companies/json/9917.json",
-   "sha256": "464cff00cb8c4459846c3c8d6d0b0e9147df0b1312b25d2570ac5242981e59d4"
+   "sha256": "d24500254985bf5133126fc20634ab5974a3b125e81d5a417280455bf85675ea"
   },
   "9918": {
    "path": "v1/tw/companies/json/9918.json",
@@ -9542,6 +9546,11 @@
    "sha256": "c5e4950ba32c23c57dd50af1dbbf5e2fcf5bcaa807afca7a7707be5063d01a9f",
    "as_of": "2026-09"
   },
+  "2249": {
+   "path": "v1/tw/financials/json/2249.json",
+   "sha256": "a21f3fd469e5fe40f96d29c39e3f11629155fbeb54aeb32fe3f7232bd168da30",
+   "as_of": "2026Q2"
+  },
   "2250": {
    "path": "v1/tw/financials/json/2250.json",
    "sha256": "aa9324ee65a1a5f1ae01a7979b19dfb2c7ae19df8686a792d8dd878727ccad3f",
@@ -11014,7 +11023,7 @@
   },
   "3023": {
    "path": "v1/tw/financials/json/3023.json",
-   "sha256": "01569f57cc257851dd08b857da82b1ba67501774780c45ca9ca1de82681e1ea7",
+   "sha256": "446ff4430f86cd663ee65b7485a5bb7de997119bd94bbb03ddca1513fb4704bc",
    "as_of": "2026-09"
   },
   "3024": {
@@ -11539,7 +11548,7 @@
   },
   "3264": {
    "path": "v1/tw/financials/json/3264.json",
-   "sha256": "bb329e00917eb186d841b8f05bfa1d70d40548835b49ea5800197ca26c9129f6",
+   "sha256": "2b2128d9845f41997c88fde86d118ef42b6b7942742b81fa6ef62cda9e97d538",
    "as_of": "2026-09"
   },
   "3265": {
@@ -16246,6 +16255,11 @@
    "path": "v1/tw/financials/json/6895.json",
    "sha256": "722b8076d816dc72bb87d977281e917695e07f946c59c7e165b2f17474c501bb",
    "as_of": "2026-09"
+  },
+  "6898": {
+   "path": "v1/tw/financials/json/6898.json",
+   "sha256": "8ae355671d8c044b4d734904b5994c9f91de089ad1f614cb3ba5f995a37001c7",
+   "as_of": "2026Q2"
   },
   "6899": {
    "path": "v1/tw/financials/json/6899.json",
