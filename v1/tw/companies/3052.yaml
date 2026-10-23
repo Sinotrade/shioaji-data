@@ -8,12 +8,148 @@ industry:
   l0_code: '14'
   l0_name: 建材營造業
   l0_name_en: Building Material and Construction
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.construction
+  l2_name: 營建與工程
+  l2_name_en: Engineering & Construction
+  l3: cons.engineering
+  l3_name: 工程與統包
+  l3_name_en: Engineering & EPC
+primary_chain_position: not_applicable
+summary_short: 以營造及機電整合工程為主要收入，另經營園區開發、建設與光電產品。
+summary_long: 夆典以機電與營造整合工程為主要業務，提供可行性研究、設計規劃、採購製造、建造試車及售後服務。2025年合併營收中，建材營建占62.44%、電機機械占21.75%、光電產品占5.56%，其他收入占10.25%。建設業務涵蓋土地開發與建案規劃興建；園區業務辦理土地取得、工程規劃施工及租售管理，涵蓋馬稠後與七股開發案。光電產品包括單色液晶、TFT、OLED及LED顯示模組與元件。主要子公司包括昌吉營造與信鼎工程顧問。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_construction
+  name: 建材營建
+  period: '2025'
+  revenue_share_pct: 62.44
+- evidence_ids:
+  - e1
+  id: seg_electromechanical
+  name: 電機機械
+  period: '2025'
+  revenue_share_pct: 21.75
+- evidence_ids:
+  - e1
+  id: seg_optoelectronics
+  name: 光電產品
+  period: '2025'
+  revenue_share_pct: 5.56
+- evidence_ids:
+  - e1
+  id: seg_other
+  name: 其他收入
+  period: '2025'
+  revenue_share_pct: 10.25
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 營造子公司
+    details:
+    - 營造子公司
+    edge: eab4e9d18b9d2
+    evidence_level: primary
+    id: org.chang-ji-construction
+    name: 昌吉營造股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 工程顧問子公司
+    details:
+    - 工程顧問子公司
+    edge: ef8cef9698fc8
+    evidence_level: primary
+    id: org.xindin-engineering-consultants
+    name: 信鼎工程顧問股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.apexgrp.com.tw
 tax_id: '20730758'
 incorporated: '1976-08-09'
 listed: '1995-11-25'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3052#e1:
+    locator: 第97頁，主要產品營業比重表，2025年度
+    published_date: '2026-04-14'
+    publisher: 夆典科技開發股份有限公司（FinancialFilings收錄）
+    quote_check: unreachable
+    title: 2025 Annual Report
+    url: https://financialfilings.com/filings/apex-3052/annual-report/2026/47065719/
+  tw.3052#e10:
+    locator: 第14頁，列入合併財務報告之子公司
+    published_date: '2026-10-01'
+    publisher: 夆典科技開發股份有限公司（FinancialFilings收錄）
+    quote_check: unreachable
+    title: 2026年第二季合併財務報告英文版
+    url: https://financialfilings.com/filings/apex-3052/interim-quarterly-report/2026/64539250/
+  tw.3052#e2:
+    locator: 部門簡介，整合性工程服務說明
+    published_date: null
+    publisher: 夆典科技開發股份有限公司
+    quote_check: found
+    title: 工程事業－部門簡介
+    url: https://www.apexgrp.com.tw/web/bbs/board.php?bo_table=enginnering&wr_id=1
+  tw.3052#e3:
+    locator: 關於夆典，主要業務
+    published_date: null
+    publisher: 夆典科技開發股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.apexgrp.com.tw/web/bbs/board.php?bo_table=about&wr_id=1
+  tw.3052#e4:
+    locator: 工作項目，第2至4項
+    published_date: null
+    publisher: 夆典科技開發股份有限公司
+    quote_check: found
+    title: 園區開發事業－部門簡介
+    url: https://www.apexgrp.com.tw/web/bbs/board.php?bo_table=industrial_park&wr_id=1
+  tw.3052#e5:
+    locator: 工作項目第8項及開發案列表
+    published_date: null
+    publisher: 夆典科技開發股份有限公司
+    quote_check: found
+    title: 園區開發事業－部門簡介
+    url: https://www.apexgrp.com.tw/web/bbs/board.php?bo_table=industrial_park&wr_id=1
+  tw.3052#e6:
+    locator: 光電部門
+    published_date: null
+    publisher: 夆典科技開發股份有限公司
+    quote_check: found
+    title: 光電事業－公司介紹
+    url: https://oe.apexgrp.com.tw/zh-tw/bbs/board.php?bo_table=about&wr_id=1
+  tw.3052#e7:
+    locator: 公司重大訊息轉載標題；公司代號3052
+    published_date: '2025-05-12'
+    publisher: 鉅亨網
+    quote_check: found
+    title: 夆典：代重要子公司昌吉營造股份有限公司公告決議現金增資並訂定現金增資基準日
+    url: https://news.cnyes.com/news/id/5974782
+  tw.3052#e8:
+    locator: 第14頁，具重大性非控制權益之子公司；第65頁附表三
+    published_date: '2026-10-01'
+    publisher: 夆典科技開發股份有限公司（FinancialFilings收錄）
+    quote_check: unreachable
+    title: 2026年第二季合併財務報告英文版
+    url: https://financialfilings.com/filings/apex-3052/interim-quarterly-report/2026/64539250/
+  tw.3052#e9:
+    locator: 公司沿革，民國104年
+    published_date: null
+    publisher: 夆典科技開發股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.apexgrp.com.tw/web/bbs/board.php?bo_table=about&wr_id=1

@@ -8,12 +8,146 @@ industry:
   l0_code: '26'
   l0_name: 光電業
   l0_name_en: Optoelectronic
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.display
+  l2_name: 光電與顯示
+  l2_name_en: Optoelectronics & Displays
+  l3: disp.optics
+  l3_name: 光學與影像感測應用
+  l3_name_en: Optics & Imaging Applications
+primary_chain_position: midstream
+summary_short: 以攝影機、影像處理器、車載錄影設備及工業電腦銷售為主要業務。
+summary_long: 慧友電子以影像監控設備、網路影音傳輸系統及工業電腦為主要產品。2025年營收組成以CCD電子攝影機31.06%最高，其次為影像處理器27.43%與工業電腦26.16%，網路音視訊傳輸系統占3.04%，其他占12.30%。產品涵蓋車載數位錄影主機、邊緣AI運算平台，以及採用NVIDIA Jetson Orin NX的EAR-30N3機器人控制器。主要海外子公司包括慧友電子美國、日本公司及慧友安控電子深圳公司，年報列示均由慧友全資持有。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_camera
+  name: CCD電子攝影機
+  period: '2025'
+  revenue_share_pct: 31.06
+- evidence_ids:
+  - e1
+  id: seg_video
+  name: 影像處理器
+  period: '2025'
+  revenue_share_pct: 27.43
+- evidence_ids:
+  - e1
+  id: seg_ipc
+  name: 工業電腦
+  period: '2025'
+  revenue_share_pct: 26.16
+- evidence_ids:
+  - e1
+  id: seg_av
+  name: 網路音視訊傳輸系統
+  period: '2025'
+  revenue_share_pct: 3.04
+- evidence_ids:
+  - e1
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 12.3
+main_theme: theme.robotics
+themes:
+- also: []
+  stage: control
+  theme: theme.robotics
+  tier: midstream
+relations:
+  subsidiaries:
+  - as_of: '2026-04-27'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資海外子公司
+    details:
+    - 全資海外子公司
+    edge: e98f2e053d374
+    evidence_level: primary
+    id: org.everfocus-japan
+    name: 慧友電子(日本)公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-27'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資海外子公司
+    details:
+    - 全資海外子公司
+    edge: e41cccd9ae926
+    evidence_level: primary
+    id: org.everfocus-shenzhen
+    name: 慧友安控電子(深圳)公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-27'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資海外子公司
+    details:
+    - 全資海外子公司
+    edge: ed045e7f8b5ef
+    evidence_level: primary
+    id: org.everfocus-usa
+    name: 慧友電子(美國)公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.EverFocus.com
 tax_id: '89639615'
 incorporated: '1995-07-18'
 listed: '2003-08-25'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.5484#e1:
+    locator: 主要產品內容及其營業比重，PDF第92頁
+    published_date: '2026-04-27'
+    publisher: 慧友電子股份有限公司
+    quote_check: found
+    title: 慧友電子股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52479/2026/RNS/52479_rns_2026-04-30_4e0f5812-3b45-4524-8629-dc6dea5e677c.pdf
+  tw.5484#e2:
+    locator: 車載數位錄影主機／EMV400 FHD-N
+    published_date: null
+    publisher: 慧友電子股份有限公司
+    quote_check: found
+    title: MDVR車載數位錄影解決方案
+    url: https://www.everfocus.com/tw/products/commercial_vehicle_safety/mdvr_solutions/mobile_dvr/
+  tw.5484#e3:
+    locator: NVIDIA邊緣AI介紹
+    published_date: null
+    publisher: 慧友電子股份有限公司
+    quote_check: found
+    title: NVIDIA邊緣AI產品系列
+    url: https://www.everfocus.com/tw/products/intelligent-systems/NVIDIA-Edge-AI-Computing-Platforms/EAR-Series/
+  tw.5484#e4:
+    locator: 產品名稱與主要規格
+    published_date: null
+    publisher: 慧友電子股份有限公司
+    quote_check: found
+    title: EAR-30N3
+    url: https://www.everfocus.com/tw/products-detail/EAR-30N3/
+  tw.5484#e5:
+    locator: 風險管理及評估／資金貸與他人及背書保證
+    published_date: '2026-04-27'
+    publisher: 慧友電子股份有限公司
+    quote_check: unreachable
+    title: 慧友電子114年度年報之公司文件存檔
+    url: https://financialfilings.com/filings/everfocus-5484/annual-report/2026/39885908/
+  tw.5484#e6:
+    locator: 轉投資事業持股表，PDF第86頁；本公司投資及持股比例欄
+    published_date: '2026-04-27'
+    publisher: 慧友電子股份有限公司
+    quote_check: found
+    title: 慧友電子股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52479/2026/RNS/52479_rns_2026-04-30_4e0f5812-3b45-4524-8629-dc6dea5e677c.pdf

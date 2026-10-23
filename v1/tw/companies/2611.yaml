@@ -8,12 +8,136 @@ industry:
   l0_code: '15'
   l0_name: 航運業
   l0_name_en: Shipping and Transportation
-primary_chain_position: unknown
+  l1: consumer
+  l1_name: 消費
+  l1_name_en: Consumer
+  l2: cons.discretionary
+  l2_name: 非必需消費
+  l2_name_en: Consumer Discretionary
+  l3: tourism.hotel
+  l3_name: 觀光飯店
+  l3_name_en: Hotels
+primary_chain_position: not_applicable
+summary_short: 以美麗信花園酒店餐旅及內陸貨櫃運輸為主要收入來源，兼營不動產開發。
+summary_long: 志信國際主要經營餐旅及內陸運輸，2025年度合併營收中，餐旅占53.21%，運輸占46.79%，餐旅為最大收入來源。公司透過子公司美麗信酒店經營美麗信花園酒店，提供住宿服務，酒店設有203間客房。運輸業務提供進出口貨櫃承運，以及港區碼頭、貨櫃場與貨主倉庫間的貨櫃拖運，並涵蓋化學品、危險品及汽柴油運輸。營建業務包括商業大樓、住宅大樓及車位的興建、出售與出租，2025年度尚無建案入帳。
+segments:
+- evidence_ids:
+  - e2
+  id: hospitality
+  name: 餐旅
+  period: 2025年度
+  revenue_share_pct: 53.21
+- evidence_ids:
+  - e2
+  id: transport
+  name: 運輸（年報產品組合口徑）
+  period: 2025年度
+  revenue_share_pct: 46.79
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 汽車貨櫃相關業務子公司
+    details:
+    - 汽車貨櫃相關業務子公司
+    edge: e3615bb169991
+    evidence_level: primary
+    id: org.hsin-hai-transport
+    name: 新海運輸倉儲股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 觀光旅館開發經營子公司
+    details:
+    - 觀光旅館開發經營子公司
+    edge: ec93142b855c0
+    evidence_level: primary
+    id: org.miramar-hotel
+    name: 美麗信酒店股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 列入合併財報的渡假村子公司
+    details:
+    - 列入合併財報的渡假村子公司
+    edge: e39f06bb90748
+    evidence_level: primary
+    id: org.miramar-resort
+    name: 美麗灣渡假村股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.tsgroup.com.tw
 tax_id: '33853232'
 incorporated: '1973-11-15'
 listed: '1993-10-28'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2611#e2:
+    locator: 第46頁，合併營業收入比重
+    published_date: '2026-04-06'
+    publisher: 志信國際股份有限公司
+    quote_check: found
+    title: 志信國際股份有限公司114年度年報
+    url: https://www.tsgroup.com.tw/upload/files/114%E5%B9%B4%E5%A0%B1.pdf
+  tw.2611#e3:
+    locator: 第47頁，餐旅業
+    published_date: '2026-04-06'
+    publisher: 志信國際股份有限公司
+    quote_check: found
+    title: 志信國際股份有限公司114年度年報
+    url: https://www.tsgroup.com.tw/upload/files/114%E5%B9%B4%E5%A0%B1.pdf
+  tw.2611#e4:
+    locator: 運輸事業部介紹及服務項目
+    published_date: null
+    publisher: 志信國際股份有限公司
+    quote_check: found
+    title: 志信國際－運輸事業部
+    url: https://www.tsgroup.com.tw/menu/21.htm
+  tw.2611#e5:
+    locator: 運輸事業部業務介紹
+    published_date: null
+    publisher: 志信國際股份有限公司
+    quote_check: found
+    title: 志信國際－運輸事業部
+    url: https://www.tsgroup.com.tw/menu/21.htm
+  tw.2611#e6:
+    locator: 第37頁，附註十二、列入合併財務報告之子公司
+    published_date: null
+    publisher: 志信國際股份有限公司
+    quote_check: found
+    title: 志信國際股份有限公司及子公司民國114及113年度合併財務報告
+    url: https://www.tsgroup.com.tw/upload/files/114%E5%B9%B4%E5%BA%A6%E5%BF%97%E4%BF%A1%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1_Final.pdf
+  tw.2611#e7:
+    locator: 第37頁，附註十二、列入合併財務報告之子公司
+    published_date: null
+    publisher: 志信國際股份有限公司
+    quote_check: found
+    title: 志信國際股份有限公司及子公司民國114及113年度合併財務報告
+    url: https://www.tsgroup.com.tw/upload/files/114%E5%B9%B4%E5%BA%A6%E5%BF%97%E4%BF%A1%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1_Final.pdf
+  tw.2611#e8:
+    locator: 第37頁，附註十二、列入合併財務報告之子公司
+    published_date: null
+    publisher: 志信國際股份有限公司
+    quote_check: found
+    title: 志信國際股份有限公司及子公司民國114及113年度合併財務報告
+    url: https://www.tsgroup.com.tw/upload/files/114%E5%B9%B4%E5%BA%A6%E5%BF%97%E4%BF%A1%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1_Final.pdf
+  tw.2611#e9:
+    locator: 第47頁，營建業
+    published_date: '2026-04-06'
+    publisher: 志信國際股份有限公司
+    quote_check: found
+    title: 志信國際股份有限公司114年度年報
+    url: https://www.tsgroup.com.tw/upload/files/114%E5%B9%B4%E5%A0%B1.pdf

@@ -8,12 +8,182 @@ industry:
   l0_code: '05'
   l0_name: 電機機械
   l0_name_en: Electric Machinery
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.machinery
+  l2_name: 機械與自動化
+  l2_name_en: Machinery & Automation
+  l3: mach.hvac
+  l3_name: 空調與冷凍設備
+  l3_name_en: HVAC & Refrigeration
+primary_chain_position: not_applicable
+summary_short: 主要製造與銷售冰水機組及空調設備，並提供維修與工程服務。
+summary_long: 堃霖以冰水主機與空調設備的研發、製造及銷售為主要業務，產品包含磁浮直流變頻離心式、半密螺旋式與氣冷式冰水機，以及電腦房箱型機。2025年度冰水機組占營收57.65%，為最大收入來源；其他收入包括風機盤管及末端、維修、工程與冷凝機組。電腦房箱型機用於控制機房溫濕度；公司並於2025年投入貨櫃式算力中心InRow冰水式機櫃空調研發，布局資料中心冷卻設備。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_chillers
+  name: 冰水機組
+  period: '2025'
+  revenue_share_pct: 57.65
+- evidence_ids:
+  - e2
+  id: seg_condensing
+  name: 冷凝機組
+  period: '2025'
+  revenue_share_pct: 0.93
+- evidence_ids:
+  - e2
+  id: seg_maintenance
+  name: 維修收入
+  period: '2025'
+  revenue_share_pct: 8.39
+- evidence_ids:
+  - e2
+  id: seg_engineering
+  name: 工程
+  period: '2025'
+  revenue_share_pct: 7.74
+- evidence_ids:
+  - e2
+  id: seg_fan_coils
+  name: 風機盤管及末端
+  period: '2025'
+  revenue_share_pct: 10.67
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 14.62
+main_theme: theme.data_center
+themes:
+- also: []
+  stage: equipment
+  theme: theme.data_center
+  tier: upstream
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股83%的子公司
+    details:
+    - 直接持股83%的子公司
+    edge: e21bfd7b95e9e
+    evidence_level: primary
+    id: org.ching-chi-international
+    name: CHING CHI INTERNATIONAL LIMITED
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的子公司
+    details:
+    - 直接持股100%的子公司
+    edge: e200ad5854cce
+    evidence_level: primary
+    id: org.klean-air-enterprise
+    name: KLEAN AIR ENTERPRISE LTD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的子公司
+    details:
+    - 直接持股100%的子公司
+    edge: ebcbf1b2ca00d
+    evidence_level: primary
+    id: org.kuenling-air-conditioning
+    name: 堃霖冷氣空調股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 資料中心（候選線索為泛稱應用領域，未指向特定公司）
 website: www.kuenling.com.tw
 tax_id: '22551554'
 incorporated: '1988-04-05'
 listed: '2000-09-28'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4527#e1:
+    locator: 公司簡介首段
+    published_date: null
+    publisher: 堃霖冷凍機械股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.kuenling.com.tw/aboutmulti/公司簡介
+  tw.4527#e10:
+    locator: 第18頁，附註四（三）合併基礎，子公司與所持股權百分比表
+    published_date: null
+    publisher: 堃霖冷凍機械股份有限公司
+    quote_check: found
+    title: 民國114年度及113年度合併財務報告
+    url: https://www.kuenling.com.tw/upload-files/investors/financial-information/financial-statements/114/114Q4-D.pdf
+  tw.4527#e2:
+    locator: 第85頁，主要產品營業比重；PDF第89頁
+    published_date: '2026-05-04'
+    publisher: 堃霖冷凍機械股份有限公司
+    quote_check: found
+    title: 民國114年度年報
+    url: https://www.kuenling.com.tw/upload-files/investors/shareholder-services/115/114-annual_report-tw.pdf
+  tw.4527#e3:
+    locator: 產品名稱
+    published_date: null
+    publisher: 堃霖冷凍機械股份有限公司
+    quote_check: found
+    title: 磁浮直流變頻離心式冰水機（R-134a）
+    url: https://www.kuenling.com.tw/水冷冰水機/磁浮直流變頻離心式冰水機
+  tw.4527#e4:
+    locator: 產品名稱
+    published_date: null
+    publisher: 堃霖冷凍機械股份有限公司
+    quote_check: found
+    title: 半密螺旋式冰水機
+    url: https://www.kuenling.com.tw/水冷冰水機/半密螺旋式冰水機
+  tw.4527#e5:
+    locator: 產品名稱
+    published_date: null
+    publisher: 堃霖冷凍機械股份有限公司
+    quote_check: found
+    title: 氣冷式冰水機
+    url: https://www.kuenling.com.tw/氣冷式冰水機/氣冷式冰水機
+  tw.4527#e6:
+    locator: 產品簡介／精確控制
+    published_date: null
+    publisher: 堃霖冷凍機械股份有限公司
+    quote_check: found
+    title: 電腦房箱型機
+    url: https://www.kuenling.com.tw/電腦房箱型機/電腦房箱型機
+  tw.4527#e7:
+    locator: 第4頁，研究發展狀況；PDF第8頁
+    published_date: '2026-05-04'
+    publisher: 堃霖冷凍機械股份有限公司
+    quote_check: found
+    title: 民國114年度年報
+    url: https://www.kuenling.com.tw/upload-files/investors/shareholder-services/115/114-annual_report-tw.pdf
+  tw.4527#e8:
+    locator: 第18頁，附註四（三）合併基礎，子公司與所持股權百分比表
+    published_date: null
+    publisher: 堃霖冷凍機械股份有限公司
+    quote_check: found
+    title: 民國114年度及113年度合併財務報告
+    url: https://www.kuenling.com.tw/upload-files/investors/financial-information/financial-statements/114/114Q4-D.pdf
+  tw.4527#e9:
+    locator: 第18頁，附註四（三）合併基礎，子公司與所持股權百分比表
+    published_date: null
+    publisher: 堃霖冷凍機械股份有限公司
+    quote_check: found
+    title: 民國114年度及113年度合併財務報告
+    url: https://www.kuenling.com.tw/upload-files/investors/financial-information/financial-statements/114/114Q4-D.pdf

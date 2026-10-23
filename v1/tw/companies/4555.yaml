@@ -8,12 +8,177 @@ industry:
   l0_code: '05'
   l0_name: 電機機械
   l0_name_en: Electric Machinery
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.machinery
+  l2_name: 機械與自動化
+  l2_name_en: Machinery & Automation
+  l3: mach.automation
+  l3_name: 工業自動化與機器人
+  l3_name_en: Industrial Automation & Robotics
+primary_chain_position: midstream
+summary_short: 以氣動元件及電控自動化零組件的研發、生產與銷售為主要業務。
+summary_long: 氣立以空氣壓及電控自動化零組件為主要產品，供各類自動化設備使用，產品涵蓋氣缸、電磁閥、機械夾爪、真空與吸盤及電動缸。2025年度營收組成為氣動元件60.81%、其他業務39.19%。氣缸負責動作執行，夾爪用於夾持與抓取，真空吸盤用於吸取工件，電動缸則整合控制與驅動功能。公司官網說明氣動元件可控制機械臂運動，對應機器人零組件應用。上海氣立可與氣立可科技（浙江）屬間接持有子公司，氣立可科技（泰國）則為直接持有子公司。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_pneumatic
+  name: 氣動元件
+  period: '2025'
+  revenue_share_pct: 60.81
+- evidence_ids:
+  - e3
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 39.19
+main_theme: theme.robotics
+themes:
+- also: []
+  stage: components
+  theme: theme.robotics
+  tier: upstream
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有之子公司
+    details:
+    - 直接持有之子公司
+    edge: e6b886d00d2b8
+    evidence_level: primary
+    id: org.chelic-technology-thailand
+    name: 氣立可科技(泰國)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持有之孫公司
+    details:
+    - 間接持有之孫公司
+    edge: e8a9fb1fb9dd0
+    evidence_level: primary
+    id: org.chelic-technology-zhejiang
+    name: 氣立可科技(浙江)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持有之孫公司
+    details:
+    - 間接持有之孫公司
+    edge: e779bb0c38fbc
+    evidence_level: primary
+    id: org.shanghai-chelic-pneumatic-equipment
+    name: 上海氣立可氣動設備有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.chelic.com/
 tax_id: '22301178'
 incorporated: '1986-11-19'
 listed: '2015-10-27'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4555#e1:
+    locator: 公司簡介
+    published_date: null
+    publisher: 台灣氣立股份有限公司
+    quote_check: found
+    title: 台灣氣立 CHELIC｜公司簡介
+    url: https://www.chelic.com/About/AboutChelic
+  tw.4555#e10:
+    locator: 第2項：機械臂控制
+    published_date: null
+    publisher: 台灣氣立股份有限公司
+    quote_check: found
+    title: 台灣氣立 CHELIC｜智能製造
+    url: https://www.chelic.com/products_Info/Industry/10
+  tw.4555#e11:
+    locator: 第78頁，關係企業與公司之關係表，114年12月31日
+    published_date: null
+    publisher: 台灣氣立股份有限公司
+    quote_check: found
+    title: 台灣氣立2025年度年報
+    url: https://www.chelic.com/document/TW/MeetA/R1504000546%E5%8F%B0%E7%81%A3%E6%B0%A3%E7%AB%8B%E5%B9%B4%E5%A0%B1%28%E4%B8%8A%29.pdf
+  tw.4555#e12:
+    locator: 第78頁，關係企業與公司之關係表，114年12月31日
+    published_date: null
+    publisher: 台灣氣立股份有限公司
+    quote_check: found
+    title: 台灣氣立2025年度年報
+    url: https://www.chelic.com/document/TW/MeetA/R1504000546%E5%8F%B0%E7%81%A3%E6%B0%A3%E7%AB%8B%E5%B9%B4%E5%A0%B1%28%E4%B8%8A%29.pdf
+  tw.4555#e13:
+    locator: 第78頁，關係企業與公司之關係表，114年12月31日
+    published_date: null
+    publisher: 台灣氣立股份有限公司
+    quote_check: found
+    title: 台灣氣立2025年度年報
+    url: https://www.chelic.com/document/TW/MeetA/R1504000546%E5%8F%B0%E7%81%A3%E6%B0%A3%E7%AB%8B%E5%B9%B4%E5%A0%B1%28%E4%B8%8A%29.pdf
+  tw.4555#e2:
+    locator: 第51頁，主要產品營業比重；末兩欄為114年度
+    published_date: null
+    publisher: 台灣氣立股份有限公司
+    quote_check: found
+    title: 台灣氣立2025年度年報
+    url: https://www.chelic.com/document/TW/MeetA/R1504000546%E5%8F%B0%E7%81%A3%E6%B0%A3%E7%AB%8B%E5%B9%B4%E5%A0%B1%28%E4%B8%8A%29.pdf
+  tw.4555#e3:
+    locator: 第51頁，主要產品營業比重；末兩欄為114年度
+    published_date: null
+    publisher: 台灣氣立股份有限公司
+    quote_check: found
+    title: 台灣氣立2025年度年報
+    url: https://www.chelic.com/document/TW/MeetA/R1504000546%E5%8F%B0%E7%81%A3%E6%B0%A3%E7%AB%8B%E5%B9%B4%E5%A0%B1%28%E4%B8%8A%29.pdf
+  tw.4555#e4:
+    locator: 氣缸系列介紹
+    published_date: null
+    publisher: 台灣氣立股份有限公司
+    quote_check: found
+    title: 台灣氣立 CHELIC｜氣缸系列
+    url: https://www.chelic.com/products_Info/ProductSeries/3
+  tw.4555#e5:
+    locator: 電磁閥系列介紹
+    published_date: null
+    publisher: 台灣氣立股份有限公司
+    quote_check: found
+    title: 台灣氣立 CHELIC｜電磁閥系列
+    url: https://www.chelic.com/products_Info/ProductSeries/2
+  tw.4555#e6:
+    locator: 機械夾爪系列介紹
+    published_date: null
+    publisher: 台灣氣立股份有限公司
+    quote_check: found
+    title: 台灣氣立 CHELIC｜機械夾爪系列
+    url: https://www.chelic.com/products_Info/ProductSeries/4
+  tw.4555#e7:
+    locator: 真空與吸盤系列介紹
+    published_date: null
+    publisher: 台灣氣立股份有限公司
+    quote_check: found
+    title: 台灣氣立 CHELIC｜真空與吸盤系列
+    url: https://www.chelic.com/products_Info/ProductSeries/5
+  tw.4555#e8:
+    locator: 產品系列介紹
+    published_date: null
+    publisher: 台灣氣立股份有限公司
+    quote_check: found
+    title: 台灣氣立 CHELIC｜電動缸系列-一體式電機[內含驅動器]
+    url: https://www.chelic.com/products_Info/ProductSeries_v2/8/1340
+  tw.4555#e9:
+    locator: 第54頁，產業上、中、下游之關聯性
+    published_date: null
+    publisher: 台灣氣立股份有限公司
+    quote_check: found
+    title: 台灣氣立2025年度年報
+    url: https://www.chelic.com/document/TW/MeetA/R1504000546%E5%8F%B0%E7%81%A3%E6%B0%A3%E7%AB%8B%E5%B9%B4%E5%A0%B1%28%E4%B8%8A%29.pdf

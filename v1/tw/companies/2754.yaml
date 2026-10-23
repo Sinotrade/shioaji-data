@@ -8,12 +8,159 @@ industry:
   l0_code: '16'
   l0_name: 觀光餐旅
   l0_name_en: Tourism and Hospitality
-primary_chain_position: unknown
+  l1: consumer
+  l1_name: 消費
+  l1_name_en: Consumer
+  l2: cons.discretionary
+  l2_name: 非必需消費
+  l2_name_en: Consumer Discretionary
+  l3: tourism.restaurant
+  l3_name: 餐飲
+  l3_name_en: Restaurants
+primary_chain_position: not_applicable
+summary_short: 經營「くら寿司」連鎖迴轉壽司餐飲，銷售壽司、副餐、甜點及飲料。
+summary_long: 亞洲藏壽司以「くら寿司」品牌經營連鎖迴轉壽司餐飲，提供日式壽司、麵食、甜點及飲料。2025年度迴轉壽司業務占營業收入100%。用餐服務包含BIKKURA-PON扭蛋遊戲，投入空盤累積五盤後可觸發遊戲。日本藏壽司為母公司，2026年4月持股66.51%。香港全資子公司截至2026年6月底仍在清算，原間接持有的上海子公司已完成註銷。公司另於2026年7月成立泰國子公司，持股49%，推動當地餐飲營運布局。
+segments:
+- evidence_ids:
+  - e02
+  id: seg.sushi_restaurants
+  name: 迴轉壽司餐飲
+  period: 2025年度
+  revenue_share_pct: 100
+relations:
+  parents:
+  - as_of: '2026-04-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 日本母公司
+    details:
+    - 日本母公司
+    edge: e9c1f079d82ce
+    evidence_level: primary
+    id: jp.2695
+    name: KURA SUSHI, INC.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 香港全資投資子公司，清算中
+    details:
+    - 香港全資投資子公司，清算中
+    edge: e81a6335ffa6c
+    evidence_level: primary
+    id: org.kura-sushi-hong-kong
+    name: Kura Sushi Hong Kong Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 前間接餐飲子公司，已完成註銷
+    details:
+    - 前間接餐飲子公司，已完成註銷
+    edge: eed25eaf35513
+    evidence_level: primary
+    id: org.kura-sushi-shanghai
+    name: Kura Sushi Shanghai Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-09-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 泰國餐飲子公司，持股49%
+    details:
+    - 泰國餐飲子公司，持股49%
+    edge: e2739fa14c189
+    evidence_level: primary
+    id: org.kura-sushi-thailand
+    name: Kura Sushi (Thailand) Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://investor.kurasushi.tw/
 tax_id: '54669129'
 incorporated: '2014-01-21'
 listed: '2020-09-17'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2754#e02:
+    locator: 第53頁，主要產品之營業比重；欄序為113年度收入、比重及114年度收入、比重
+    published_date: null
+    publisher: 亞洲藏壽司股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://investor.kurasushi.tw/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBb3dDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--29eda38c56abd1121b47d3471b2875440f698685/%E4%BA%9E%E6%B4%B2%E8%97%8F%E5%A3%BD%E5%8F%B8114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1%E4%B8%8A%E5%82%B3%E6%AA%94.pdf?disposition=preview
+  tw.2754#e03:
+    locator: 第53頁，公司所營業務之主要內容
+    published_date: null
+    publisher: 亞洲藏壽司股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://investor.kurasushi.tw/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBb3dDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--29eda38c56abd1121b47d3471b2875440f698685/%E4%BA%9E%E6%B4%B2%E8%97%8F%E5%A3%BD%E5%8F%B8114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1%E4%B8%8A%E5%82%B3%E6%AA%94.pdf?disposition=preview
+  tw.2754#e04:
+    locator: 第53頁，公司目前之商品（服務）項目
+    published_date: null
+    publisher: 亞洲藏壽司股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://investor.kurasushi.tw/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBb3dDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--29eda38c56abd1121b47d3471b2875440f698685/%E4%BA%9E%E6%B4%B2%E8%97%8F%E5%A3%BD%E5%8F%B8114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1%E4%B8%8A%E5%82%B3%E6%AA%94.pdf?disposition=preview
+  tw.2754#e05:
+    locator: BIKKURA-PON遊戲方法，第2點
+    published_date: null
+    publisher: 亞洲藏壽司股份有限公司
+    quote_check: found
+    title: 對「舒適、有趣的用餐環境」的堅持
+    url: https://www.kurasushi.tw/feature/interesting
+  tw.2754#e06:
+    locator: 第1頁，開頭公告
+    published_date: '2020-09-17'
+    publisher: くら寿司株式会社
+    quote_check: found
+    title: 台湾子会社のTaipei Exchangeへの上場のお知らせ
+    url: https://www.kurasushi.co.jp/company/ir/upload_file/tdnrelease/2695_2022012517152702_P01_.pdf
+  tw.2754#e07:
+    locator: 2026年4月26日股東名單
+    published_date: null
+    publisher: 亞洲藏壽司股份有限公司
+    quote_check: found
+    title: 主要股東名單
+    url: https://investor.kurasushi.tw/major-shareholders
+  tw.2754#e08:
+    locator: 第16頁，附註九子公司；持股欄依序為115年6月底、114年底及114年6月底
+    published_date: null
+    publisher: 亞洲藏壽司股份有限公司
+    quote_check: found
+    title: 115年第2季合併財務報告
+    url: https://investor.kurasushi.tw/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdW9DIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--23847804bdd48bf8ee0fc187eb26c21ddb1e4c34/115%E5%B9%B4Q2%E5%90%88%E6%8B%BC%E8%B2%A1%E5%A0%B1.pdf?disposition=preview
+  tw.2754#e09:
+    locator: 第17頁，附註九子公司，解散清算進度
+    published_date: null
+    publisher: 亞洲藏壽司股份有限公司
+    quote_check: found
+    title: 115年第2季合併財務報告
+    url: https://investor.kurasushi.tw/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdW9DIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--23847804bdd48bf8ee0fc187eb26c21ddb1e4c34/115%E5%B9%B4Q2%E5%90%88%E6%8B%BC%E8%B2%A1%E5%A0%B1.pdf?disposition=preview
+  tw.2754#e10:
+    locator: 記者嚴雅芳，正文首段
+    published_date: '2026-08-03'
+    publisher: 經濟日報
+    quote_check: found
+    title: 亞洲藏壽司正式插旗泰國！子公司成立啟動徵才 明年第1季開首店
+    url: https://money.udn.com/money/story/10871/9666987?from=edn_newestlist_rank
+  tw.2754#e11:
+    locator: 簡報第4頁，大事記，2026年
+    published_date: '2026-09-14'
+    publisher: 亞洲藏壽司股份有限公司
+    quote_check: found
+    title: 2026年法人說明會簡報
+    url: https://investor.kurasushi.tw/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaGtEIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--3cb02273a375fd5029489c801cbda5558891cce7/2026%E5%B9%B4%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83%E7%B0%A1%E5%A0%B1%20v5%20_%20CN.pdf?disposition=preview

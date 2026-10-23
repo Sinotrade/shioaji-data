@@ -8,13 +8,185 @@ industry:
   l0_code: '36'
   l0_name: 數位雲端
   l0_name_en: Digital and Cloud Services
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.software
+  l2_name: 軟體與資訊服務
+  l2_name_en: Software & IT Services
+  l3: sw.security
+  l3_name: 資訊安全
+  l3_name_en: Cybersecurity
+primary_chain_position: not_applicable
+summary_short: 開發銷售AI自動化資安軟體，提供威脅曝險管理與模型安全服務。
+summary_long: 奧義賽博以 AI 自動化資安軟體與服務為主要業務。核心 XCockpit 平台整合端點偵測與回應、身分攻擊面管理及外部曝險管理，並運用語言模型產生鑑識摘要。模型安全產品包含 XecGuard 大語言模型防火牆，以及 XecART AI 紅隊安全評測服務；另提供 SEMI E187 合規檢測工具。公司亦研發 XecDefend 無人機防禦系統。2026 年上半年經常性收入占營收 84.5%。集團透過奧義智慧科技在台灣營運，並設有日本及新加坡子公司。
+segments:
+- evidence_ids:
+  - e09
+  id: recurring
+  name: 經常性收入
+  period: 2026H1
+  revenue_share_pct: 84.5
+- evidence_ids:
+  - e10
+  id: project_services
+  name: 專案服務收入
+  period: 2026H1
+  revenue_share_pct: null
+main_theme: theme.drone
+themes:
+- also: []
+  stage: system
+  theme: theme.drone
+  tier: downstream
+relations:
+  subsidiaries:
+  - as_of: '2026-09-03'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 台灣子公司與營運主體
+    details:
+    - 台灣子公司與營運主體
+    edge: ec95ec43ee7fc
+    evidence_level: primary
+    id: org.cycarrier-technology
+    name: 奧義智慧科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 日本子公司
+    details:
+    - 日本子公司
+    edge: e153aaac8a8d2
+    evidence_level: primary
+    id: org.cycraft-japan
+    name: 株式会社 CyCraft Japan
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 新加坡子公司
+    details:
+    - 新加坡子公司
+    edge: eb45bc6d4a96c
+    evidence_level: primary
+    id: org.cycraft-singapore
+    name: CyCraft Singapore Pte. Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.cycraft.com
 tax_id: '61334996'
 incorporated: '2017-08-24'
 listed: '2026-02-05'
 foreign_registration: KY 開曼群島
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.7823#e02:
+    locator: 第1頁，主要業務
+    published_date: '2025-10-14'
+    publisher: 臺灣證券交易所
+    quote_check: found
+    title: 上市審議委員會審議通過奧義賽博科技股份有限公司初次申請股票創新板第一上市案
+    url: https://wwwc.twse.com.tw/staticFiles/news/news/tsecnews/8a8216d6993bf1510199e21a058d02b1.pdf
+  tw.7823#e03:
+    locator: 威脅曝險管理平台
+    published_date: null
+    publisher: CyCraft
+    quote_check: found
+    title: 奧義智慧 XCockpit｜威脅曝險管理平台
+    url: https://www.cycraft.com/xcockpit
+  tw.7823#e04:
+    locator: PDF第29頁，資訊安全解決方案
+    published_date: '2026-09-03'
+    publisher: 奧義賽博科技股份有限公司
+    quote_check: found
+    title: 奧義賽博2026年9月3日法人說明會簡報
+    url: https://mopsov.twse.com.tw/server-java/FileDownLoad?fileName=782320260903M001.pdf&filePath=/home/html/nas/STR/&functionName=t100sb02_1&step=9
+  tw.7823#e05:
+    locator: XCockpit功能介紹
+    published_date: '2023-04-20'
+    publisher: CyCraft
+    quote_check: found
+    title: CyCraft Technology Introduces XCockpit – Automated Cybersecurity Threat Management Platform
+    url: https://www.cycraft.com/en/news/xcockpit-en-20230420
+  tw.7823#e06:
+    locator: 頁首產品名稱與說明
+    published_date: null
+    publisher: CyCraft
+    quote_check: found
+    title: 奧義智慧 SEMI E187｜半導體設備資安標準檢測工具
+    url: https://www.cycraft.com/e187
+  tw.7823#e07:
+    locator: XecGuard產品介紹
+    published_date: null
+    publisher: CyCraft
+    quote_check: found
+    title: XecGuard 守護信任的大型語言模型
+    url: https://www.cycraft.com/xecguard
+  tw.7823#e08:
+    locator: XecART服務介紹
+    published_date: null
+    publisher: CyCraft
+    quote_check: found
+    title: XecART 打造可信任的大型語言模型
+    url: https://www.cycraft.com/xecart
+  tw.7823#e09:
+    locator: PDF第6頁，1H26業績重點摘要
+    published_date: '2026-09-03'
+    publisher: 奧義賽博科技股份有限公司
+    quote_check: found
+    title: 奧義賽博2026年9月3日法人說明會簡報
+    url: https://mopsov.twse.com.tw/server-java/FileDownLoad?fileName=782320260903M001.pdf&filePath=/home/html/nas/STR/&functionName=t100sb02_1&step=9
+  tw.7823#e10:
+    locator: PDF第57頁，營收結構
+    published_date: '2026-09-03'
+    publisher: 奧義賽博科技股份有限公司
+    quote_check: found
+    title: 奧義賽博2026年9月3日法人說明會簡報
+    url: https://mopsov.twse.com.tw/server-java/FileDownLoad?fileName=782320260903M001.pdf&filePath=/home/html/nas/STR/&functionName=t100sb02_1&step=9
+  tw.7823#e11:
+    locator: PDF第43頁，XecDefend反無人機技術
+    published_date: '2026-09-03'
+    publisher: 奧義賽博科技股份有限公司
+    quote_check: found
+    title: 奧義賽博2026年9月3日法人說明會簡報
+    url: https://mopsov.twse.com.tw/server-java/FileDownLoad?fileName=782320260903M001.pdf&filePath=/home/html/nas/STR/&functionName=t100sb02_1&step=9
+  tw.7823#e12:
+    locator: PDF第14頁，集團企業版圖
+    published_date: '2026-09-03'
+    publisher: 奧義賽博科技股份有限公司
+    quote_check: found
+    title: 奧義賽博2026年9月3日法人說明會簡報
+    url: https://mopsov.twse.com.tw/server-java/FileDownLoad?fileName=782320260903M001.pdf&filePath=/home/html/nas/STR/&functionName=t100sb02_1&step=9
+  tw.7823#e13:
+    locator: PDF第54頁，生態圈布局
+    published_date: '2026-09-03'
+    publisher: 奧義賽博科技股份有限公司
+    quote_check: found
+    title: 奧義賽博2026年9月3日法人說明會簡報
+    url: https://mopsov.twse.com.tw/server-java/FileDownLoad?fileName=782320260903M001.pdf&filePath=/home/html/nas/STR/&functionName=t100sb02_1&step=9
+  tw.7823#e14:
+    locator: 海外據點，日本子公司
+    published_date: null
+    publisher: CyCraft
+    quote_check: found
+    title: 認識奧義｜奧義智慧科技
+    url: https://www.cycraft.com/about-cycraft
+  tw.7823#e15:
+    locator: 海外據點，新加坡子公司
+    published_date: null
+    publisher: CyCraft
+    quote_check: found
+    title: 認識奧義｜奧義智慧科技
+    url: https://www.cycraft.com/about-cycraft

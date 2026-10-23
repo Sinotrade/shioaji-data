@@ -8,7 +8,45 @@ industry:
   l0_code: '22'
   l0_name: 生技醫療業
   l0_name_en: Biotechnology and Medical Care
-primary_chain_position: unknown
+  l1: health
+  l1_name: 醫療保健
+  l1_name_en: Healthcare
+  l2: health.devices
+  l2_name: 醫療器材與服務
+  l2_name_en: Medical Devices & Services
+  l3: med.services
+  l3_name: 醫療服務與通路
+  l3_name_en: Healthcare Services & Distribution
+chain: chain.biotech
+chain_stage:
+  agreement: both
+  also:
+  - stage: manufacturing
+    stage_name: 製造與代工
+    tier: midstream
+  - stage: rnd
+    stage_name: 研發與原料
+    tier: upstream
+  reason: 主要營收來自西藥及醫美產品代理銷售，子公司另從事新藥研發與製造。
+  stage: channel
+  stage_name: 通路與醫療服務
+  tier: downstream
+primary_chain_position: downstream
+summary_short: 以西藥、營養保健品及醫學美容產品的代理與銷售為主要業務。
+summary_long: 友華經營西藥、營養保健及醫學美容產品的代理與銷售，處方藥涵蓋心血管、癌症、中樞神經、呼吸道及女性健康等領域。依2024年度年報，西藥品及醫學美容品占營收62.49%，營養保健品占37.51%。營養產品包括卡洛塔妮嬰幼兒奶粉及益膳液態營養系列，醫學美容產品包括代理的百洛護膚油與身體乳液。集團另透過子公司友霖及友杏從事新藥研發與製造，形成藥品通路、研發及製造的業務布局。
+segments:
+- evidence_ids:
+  - e2
+  id: pharma_beauty
+  name: 西藥品及醫學美容品
+  period: '2024'
+  revenue_share_pct: 62.49
+- evidence_ids:
+  - e2
+  id: nutrition
+  name: 營養保健品
+  period: '2024'
+  revenue_share_pct: 37.51
 relations:
   partners:
   - as_of: '2021-09-01'
@@ -29,8 +67,9 @@ relations:
   - as_of: '2026-10-20'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 母公司
+    detail: 新藥研發與製造子公司
     details:
+    - 新藥研發與製造子公司
     - 母公司
     edge: ef40999247504
     evidence_level: primary
@@ -39,12 +78,82 @@ relations:
     ranking_basis: unranked
     share_basis: null
     share_pct: null
+    weight: 2
+  - as_of: 2026-10
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 新藥研發與製造子公司
+    details:
+    - 新藥研發與製造子公司
+    edge: e48fee8d68df5
+    evidence_level: primary
+    id: org.opnano
+    name: 友杏生技醫藥股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
     weight: 1
 website: www.oep.com.tw
 tax_id: '12397982'
 incorporated: '1982-06-16'
 listed: '2003-11-05'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4120#e2:
+    locator: 印刷頁62，營業比重表；金額單位為新台幣仟元
+    published_date: null
+    publisher: 友華生技醫藥股份有限公司
+    quote_check: found
+    title: 友華113年度公司年報
+    url: https://www.oepgroup.com/upload/media/investors/2025%E8%82%A1%E6%9D%B1%E5%B8%B8%E6%9C%83%E5%8F%8A%E5%B9%B4%E5%A0%B1/9.%E5%8F%8B%E8%8F%AF113%E5%B9%B4%E5%BA%A6%E5%85%AC%E5%8F%B8%E5%B9%B4%E5%A0%B1(%E4%B8%AD%E6%96%87).pdf
+  tw.4120#e3:
+    locator: 產品總覽首段
+    published_date: null
+    publisher: 友華生技醫藥股份有限公司
+    quote_check: found
+    title: Product Portfolio 產品列表
+    url: https://www.oepgroup.com/zh-TW/product/index
+  tw.4120#e4:
+    locator: 卡洛塔妮品牌介紹
+    published_date: null
+    publisher: 友華生技醫藥股份有限公司
+    quote_check: found
+    title: Product Portfolio 產品列表：卡洛塔妮
+    url: https://www.oepgroup.com/zh-TW/product/levelTwo/karihome
+  tw.4120#e5:
+    locator: 成人保健產品列表
+    published_date: null
+    publisher: 友華生技醫藥股份有限公司
+    quote_check: found
+    title: Product Portfolio 產品列表：愛斯康
+    url: https://www.oepgroup.com/zh-TW/product/levelTwo/nutrifuel
+  tw.4120#e6:
+    locator: 品牌介紹
+    published_date: null
+    publisher: 友華生技醫藥股份有限公司
+    quote_check: found
+    title: Product Portfolio 產品列表：百洛
+    url: https://www.oepgroup.com/zh-TW/product/levelTwo/bio_oil
+  tw.4120#e7:
+    locator: 集團發展，從關注「人」的真正需求出發
+    published_date: null
+    publisher: 友華生技醫藥股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.oepgroup.com/zh-TW/about/profile
+  tw.4120#e8:
+    locator: 印刷頁58，轉投資事業表；確認子公司正式名稱
+    published_date: null
+    publisher: 友華生技醫藥股份有限公司
+    quote_check: found
+    title: 友華113年度公司年報
+    url: https://www.oepgroup.com/upload/media/investors/2025%E8%82%A1%E6%9D%B1%E5%B8%B8%E6%9C%83%E5%8F%8A%E5%B9%B4%E5%A0%B1/9.%E5%8F%8B%E8%8F%AF113%E5%B9%B4%E5%BA%A6%E5%85%AC%E5%8F%B8%E5%B9%B4%E5%A0%B1(%E4%B8%AD%E6%96%87).pdf
+  tw.4120#e9:
+    locator: 產品列表
+    published_date: null
+    publisher: 友華生技醫藥股份有限公司
+    quote_check: found
+    title: Product Portfolio 產品列表：百洛
+    url: https://www.oepgroup.com/zh-TW/product/levelTwo/bio_oil

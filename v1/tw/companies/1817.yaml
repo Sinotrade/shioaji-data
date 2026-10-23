@@ -8,12 +8,174 @@ industry:
   l0_code: 08
   l0_name: 玻璃陶瓷
   l0_name_en: Glass and Ceramics
-primary_chain_position: unknown
+  l1: materials
+  l1_name: 原物料
+  l1_name_en: Materials
+  l2: mat.other
+  l2_name: 其他原物料
+  l2_name_en: Other Materials
+  l3: matl.glass_ceramic
+  l3_name: 玻璃陶瓷
+  l3_name_en: Glass & Ceramics
+primary_chain_position: not_applicable
+summary_short: 以CAESAR品牌銷售馬桶、面盆、水龍頭等衛浴設備，瓷器類為最大營收來源。
+summary_long: 凱撒衛以CAESAR品牌銷售衛浴設備，主要產品涵蓋馬桶、面盆、水龍頭、溫水洗淨便座、浴鏡櫃及浴缸。2025年合併營收以瓷器類45.35%為最大來源，其次為出水類21.55%及電子自動化類12.21%；廚浴櫃類占6.03%、浴缸類占2.16%，其他類占12.70%。旗下越南凱撒衛浴從事衛浴設備與給水銅器製造及銷售，凱昇衛浴從事相關設備銷售，另有子公司POLARC經營油漆產品。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_ceramics
+  name: 瓷器類
+  period: '2025'
+  revenue_share_pct: 45.35
+- evidence_ids:
+  - e2
+  id: seg_water_fittings
+  name: 出水類
+  period: '2025'
+  revenue_share_pct: 21.55
+- evidence_ids:
+  - e2
+  id: seg_electronic
+  name: 電子自動化類
+  period: '2025'
+  revenue_share_pct: 12.21
+- evidence_ids:
+  - e3
+  id: seg_cabinets
+  name: 廚浴櫃類
+  period: '2025'
+  revenue_share_pct: 6.03
+- evidence_ids:
+  - e3
+  id: seg_bathtubs
+  name: 浴缸類
+  period: '2025'
+  revenue_share_pct: 2.16
+- evidence_ids:
+  - e3
+  id: seg_other
+  name: 其他類
+  period: '2025'
+  revenue_share_pct: 12.7
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 衛浴設備及給水銅器製造、銷售子公司
+    details:
+    - 衛浴設備及給水銅器製造、銷售子公司
+    edge: e6d0fc9ca9eaa
+    evidence_level: primary
+    id: org.caesar-vietnam
+    name: 越南凱撒衛浴股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 衛浴設備及給水銅器銷售子公司
+    details:
+    - 衛浴設備及給水銅器銷售子公司
+    edge: ede9557c7b5fe
+    evidence_level: primary
+    id: org.kaisheng-sanitary
+    name: 凱昇衛浴股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 油漆產品子公司
+    details:
+    - 油漆產品子公司
+    edge: ebb924f08308e
+    evidence_level: primary
+    id: org.polarc
+    name: POLARC CO., LTD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.caesar.com.tw/
 tax_id: '22746550'
 incorporated: '1988-01-26'
 listed: '2013-10-24'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1817#e10:
+    locator: 印刷頁89，計畫開發之新商品（服務）
+    published_date: null
+    publisher: 凱撒衛浴股份有限公司
+    quote_check: found
+    title: 凱撒衛浴股份有限公司114年年報
+    url: https://www.caesar.com.tw/files/fn/AnnualReport/114AnnualReport.pdf
+  tw.1817#e11:
+    locator: 印刷頁65，附表六；POLARC主要營業項目
+    published_date: null
+    publisher: 凱撒衛浴股份有限公司
+    quote_check: found
+    title: 凱撒衛浴股份有限公司及子公司114及113年度合併財務報告
+    url: https://www.caesar.com.tw/files/fn/114Q4FNREP.pdf
+  tw.1817#e2:
+    locator: 印刷頁89，營業比重；欄位依序為113年度金額、比例及114年度金額、比例
+    published_date: null
+    publisher: 凱撒衛浴股份有限公司
+    quote_check: found
+    title: 凱撒衛浴股份有限公司114年年報
+    url: https://www.caesar.com.tw/files/fn/AnnualReport/114AnnualReport.pdf
+  tw.1817#e3:
+    locator: 印刷頁89，營業比重；欄位依序為113年度金額、比例及114年度金額、比例
+    published_date: null
+    publisher: 凱撒衛浴股份有限公司
+    quote_check: found
+    title: 凱撒衛浴股份有限公司114年年報
+    url: https://www.caesar.com.tw/files/fn/AnnualReport/114AnnualReport.pdf
+  tw.1817#e4:
+    locator: 印刷頁89，公司目前之商品（服務）項目
+    published_date: null
+    publisher: 凱撒衛浴股份有限公司
+    quote_check: found
+    title: 凱撒衛浴股份有限公司114年年報
+    url: https://www.caesar.com.tw/files/fn/AnnualReport/114AnnualReport.pdf
+  tw.1817#e5:
+    locator: 品牌介紹
+    published_date: null
+    publisher: 凱撒衛浴股份有限公司
+    quote_check: found
+    title: 關於我們－關於CAESAR
+    url: https://www.caesar.com.tw/page/about
+  tw.1817#e6:
+    locator: CAESAR溫水洗淨便座／產品介紹
+    published_date: null
+    publisher: 凱撒衛浴股份有限公司
+    quote_check: found
+    title: 溫水洗淨便座－儲熱/瞬熱式溫水洗淨便座
+    url: https://www.caesar.com.tw/product/category/19azu40Qw5Zs2UX9
+  tw.1817#e7:
+    locator: 印刷頁34，附註十四（一）列入合併財務報告之子公司；持股欄依序為114及113年底
+    published_date: null
+    publisher: 凱撒衛浴股份有限公司
+    quote_check: found
+    title: 凱撒衛浴股份有限公司及子公司114及113年度合併財務報告
+    url: https://www.caesar.com.tw/files/fn/114Q4FNREP.pdf
+  tw.1817#e8:
+    locator: 印刷頁65，附表六；越南凱撒衛浴主要營業項目
+    published_date: null
+    publisher: 凱撒衛浴股份有限公司
+    quote_check: found
+    title: 凱撒衛浴股份有限公司及子公司114及113年度合併財務報告
+    url: https://www.caesar.com.tw/files/fn/114Q4FNREP.pdf
+  tw.1817#e9:
+    locator: 印刷頁65，附表六；凱昇衛浴主要營業項目
+    published_date: null
+    publisher: 凱撒衛浴股份有限公司
+    quote_check: found
+    title: 凱撒衛浴股份有限公司及子公司114及113年度合併財務報告
+    url: https://www.caesar.com.tw/files/fn/114Q4FNREP.pdf

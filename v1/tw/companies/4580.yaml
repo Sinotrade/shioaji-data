@@ -8,12 +8,184 @@ industry:
   l0_code: '05'
   l0_name: 電機機械
   l0_name_en: Electric Machinery
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.machinery
+  l2_name: 機械與自動化
+  l2_name_en: Machinery & Automation
+  l3: mach.equipment
+  l3_name: 專用設備（非半導體）
+  l3_name_en: Specialty Equipment (Non-semiconductor)
+primary_chain_position: not_applicable
+summary_short: 以蝶閥為主要收入來源，提供工業流體控制閥門及外購閥產品。
+summary_long: 捷流閥業以工業流體控制閥門為核心，產品包括三偏心蝶閥、雙偏心蝶閥、直軸型橡膠蝶閥、三片式螺紋球閥及V型控制球閥。2024年度營收組成為蝶閥58.81%、外購閥38.54%、其他2.65%，蝶閥為最大收入來源。三偏心與雙偏心蝶閥用於高低溫、高壓及防火等工況，直軸型橡膠蝶閥涵蓋造船、空調及水處理應用。集團直接持有佳和閥業與安圭拉投資公司，並透過境外子公司間接持有蘇州閥門製造與銷售公司。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_butterfly
+  name: 蝶閥
+  period: 2024年度
+  revenue_share_pct: 58.81
+- evidence_ids:
+  - e2
+  id: seg_purchased
+  name: 外購閥
+  period: 2024年度
+  revenue_share_pct: 38.54
+- evidence_ids:
+  - e3
+  id: seg_other
+  name: 其他
+  period: 2024年度
+  revenue_share_pct: 2.65
+relations:
+  subsidiaries:
+  - as_of: '2025-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有之閥類買賣及製造子公司
+    details:
+    - 直接持有之閥類買賣及製造子公司
+    edge: e41d24078766b
+    evidence_level: primary
+    id: org.chia-ho-valves
+    name: 佳和閥業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有之境外投資子公司
+    details:
+    - 直接持有之境外投資子公司
+    edge: e084e84ef3da1
+    evidence_level: primary
+    id: org.value-valves-anguilla
+    name: Value Valves (Anguilla) Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過Vista Investment間接持有之閥類製造及銷售子公司
+    details:
+    - 透過Vista Investment間接持有之閥類製造及銷售子公司
+    edge: ef0b46ba48dba
+    evidence_level: primary
+    id: org.value-valves-suzhou
+    name: 捷流閥業（蘇州）有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過安圭拉子公司間接持有之投資子公司
+    details:
+    - 透過安圭拉子公司間接持有之投資子公司
+    edge: ebdd4581a11d6
+    evidence_level: primary
+    id: org.vista-investment-samoa
+    name: Vista Investment (Samoa) Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.valuevalves.com
 tax_id: '15877936'
 incorporated: '1980-06-27'
 listed: '2020-01-06'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4580#e1:
+    locator: 第48頁，營業比重表；封面核對公司身分
+    published_date: '2025-06-15'
+    publisher: 捷流閥業股份有限公司
+    quote_check: found
+    title: 捷流閥業股份有限公司113年度年報
+    url: https://www.valuevalves.com/download/investors-annual-reports-2024/
+  tw.4580#e10:
+    locator: 第16頁，附註十一子公司；安圭拉公司列
+    published_date: null
+    publisher: 捷流閥業股份有限公司
+    quote_check: found
+    title: 捷流閥業114年第二季合併財務報告
+    url: https://www.valuevalves.com/download/investors-financial-reports-q2-2025/
+  tw.4580#e11:
+    locator: 第16頁，附註十一子公司；投資公司為Value Anguilla公司
+    published_date: null
+    publisher: 捷流閥業股份有限公司
+    quote_check: found
+    title: 捷流閥業114年第二季合併財務報告
+    url: https://www.valuevalves.com/download/investors-financial-reports-q2-2025/
+  tw.4580#e12:
+    locator: 第16頁，附註十一子公司；投資公司為Vista Investment公司，業務性質為閥類製造及銷售
+    published_date: null
+    publisher: 捷流閥業股份有限公司
+    quote_check: found
+    title: 捷流閥業114年第二季合併財務報告
+    url: https://www.valuevalves.com/download/investors-financial-reports-q2-2025/
+  tw.4580#e2:
+    locator: 第48頁，營業比重表
+    published_date: '2025-06-15'
+    publisher: 捷流閥業股份有限公司
+    quote_check: found
+    title: 捷流閥業股份有限公司113年度年報
+    url: https://www.valuevalves.com/download/investors-annual-reports-2024/
+  tw.4580#e3:
+    locator: 第48頁，營業比重表
+    published_date: '2025-06-15'
+    publisher: 捷流閥業股份有限公司
+    quote_check: found
+    title: 捷流閥業股份有限公司113年度年報
+    url: https://www.valuevalves.com/download/investors-annual-reports-2024/
+  tw.4580#e4:
+    locator: 三偏心蝶閥產品標題及產品介紹
+    published_date: null
+    publisher: 捷流閥業股份有限公司
+    quote_check: found
+    title: VF-8A三偏心蝶閥產品介紹
+    url: https://www.valuevalves.com/products-detail/Triple-Offset-A/
+  tw.4580#e5:
+    locator: 產品標題及產品介紹
+    published_date: null
+    publisher: 捷流閥業股份有限公司
+    quote_check: found
+    title: 高性能雙偏心蝶閥VF-9
+    url: https://www.valuevalves.com/products-detail/Double-Offset-BFV/
+  tw.4580#e6:
+    locator: 產品標題下方應用領域
+    published_date: null
+    publisher: 捷流閥業股份有限公司
+    quote_check: found
+    title: 直軸型橡膠蝶閥VF-7
+    url: https://www.valuevalves.com/products-detail/Centric/
+  tw.4580#e7:
+    locator: 產品標題及用途說明
+    published_date: null
+    publisher: 捷流閥業股份有限公司
+    quote_check: found
+    title: 三片式螺紋球閥1000 WOG
+    url: https://www.valuevalves.com/products-detail/3-piece-ball-valve-1000wog-ch/
+  tw.4580#e8:
+    locator: V型控制球閥項目
+    published_date: null
+    publisher: 捷流閥業股份有限公司
+    quote_check: found
+    title: 捷流閥業產品介紹
+    url: https://www.valuevalves.com/products/
+  tw.4580#e9:
+    locator: 第16頁，附註十一子公司；投資公司名稱為本公司
+    published_date: null
+    publisher: 捷流閥業股份有限公司
+    quote_check: found
+    title: 捷流閥業114年第二季合併財務報告
+    url: https://www.valuevalves.com/download/investors-financial-reports-q2-2025/

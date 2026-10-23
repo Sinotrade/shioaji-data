@@ -8,12 +8,122 @@ industry:
   l0_code: '22'
   l0_name: 生技醫療業
   l0_name_en: Biotechnology and Medical Care
-primary_chain_position: unknown
+  l1: consumer
+  l1_name: 消費
+  l1_name_en: Consumer
+  l2: cons.discretionary
+  l2_name: 非必需消費
+  l2_name_en: Consumer Discretionary
+  l3: retail.online
+  l3_name: 網路零售
+  l3_name_en: Online Retail
+primary_chain_position: downstream
+summary_short: 經營iQueen品牌電商，銷售美妝保養品、保健食品及生活用品。
+summary_long: 軒郁以品牌電商模式銷售美容保養品，並經營iQueen愛女人購物網，販售自有及其他品牌的美容保健品與居家生活用品。2025年網路平台商品及其他占營收55.42%，美妝保養品占44.58%。美妝品牌包括SEXYLOOK、MIRAE、LUDEYA及Dr.May，另有MIRAE美容儀器。子公司新普利從事保健食品銷售及委外製造；阿原工作室提供青草手工皂與清潔保養用品。2026年6月底，軒郁持有新普利100%及阿原42.46%股權，並對阿原具有控制力。
+segments:
+- evidence_ids:
+  - e1
+  id: online_goods_other
+  name: 網路平台商品及其他
+  period: '2025'
+  revenue_share_pct: 55.42
+- evidence_ids:
+  - e1
+  id: beauty_skincare
+  name: 美妝保養品
+  period: '2025'
+  revenue_share_pct: 44.58
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%之保健食品子公司
+    details:
+    - 直接持股100%之保健食品子公司
+    edge: eb46d9674b46b
+    evidence_level: primary
+    id: org.新普利股份有限公司
+    name: 新普利股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股42.46%且具有控制力之子公司
+    details:
+    - 直接持股42.46%且具有控制力之子公司
+    edge: e38e3051138ea
+    evidence_level: primary
+    id: org.阿原工作室股份有限公司
+    name: 阿原工作室股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.shinybrands.com/
 tax_id: '24347235'
 incorporated: '2009-05-18'
 listed: '2020-10-20'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6703#e1:
+    locator: 印刷頁76，主要產品之營業比重；114年度欄
+    published_date: '2026-03-28'
+    publisher: 軒郁國際股份有限公司
+    quote_check: found
+    title: 軒郁國際股份有限公司114年度年報
+    url: https://www.shinybrands.com/wp-content/uploads/2026/05/R1504001374%E8%BB%92%E9%83%81%E5%9C%8B%E9%9A%9B%E5%B9%B4%E5%A0%B1%E4%B8%8A115%E5%B9%B4.pdf
+  tw.6703#e2:
+    locator: 印刷頁76，業務範圍
+    published_date: '2026-03-28'
+    publisher: 軒郁國際股份有限公司
+    quote_check: found
+    title: 軒郁國際股份有限公司114年度年報
+    url: https://www.shinybrands.com/wp-content/uploads/2026/05/R1504001374%E8%BB%92%E9%83%81%E5%9C%8B%E9%9A%9B%E5%B9%B4%E5%A0%B1%E4%B8%8A115%E5%B9%B4.pdf
+  tw.6703#e3:
+    locator: 印刷頁77，公司目前之商品項目
+    published_date: '2026-03-28'
+    publisher: 軒郁國際股份有限公司
+    quote_check: found
+    title: 軒郁國際股份有限公司114年度年報
+    url: https://www.shinybrands.com/wp-content/uploads/2026/05/R1504001374%E8%BB%92%E9%83%81%E5%9C%8B%E9%9A%9B%E5%B9%B4%E5%A0%B1%E4%B8%8A115%E5%B9%B4.pdf
+  tw.6703#e4:
+    locator: 頁14，合併財務報表編製原則之子公司持股表，115.6.30欄
+    published_date: '2026-08-11'
+    publisher: 軒郁國際股份有限公司
+    quote_check: found
+    title: 軒郁國際股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.shinybrands.com/wp-content/uploads/2026/08/26Q2_%E8%BB%92%E9%83%81_%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1Final_0814.pdf
+  tw.6703#e5:
+    locator: 頁14，合併財務報表編製原則之子公司持股表，115.6.30欄
+    published_date: '2026-08-11'
+    publisher: 軒郁國際股份有限公司
+    quote_check: found
+    title: 軒郁國際股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.shinybrands.com/wp-content/uploads/2026/08/26Q2_%E8%BB%92%E9%83%81_%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1Final_0814.pdf
+  tw.6703#e6:
+    locator: 頁15，阿原工作室控制力說明
+    published_date: '2026-08-11'
+    publisher: 軒郁國際股份有限公司
+    quote_check: found
+    title: 軒郁國際股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.shinybrands.com/wp-content/uploads/2026/08/26Q2_%E8%BB%92%E9%83%81_%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1Final_0814.pdf
+  tw.6703#e7:
+    locator: 台灣青草植物應用專家阿原YUAN
+    published_date: null
+    publisher: 軒郁國際股份有限公司
+    quote_check: found
+    title: YUAN阿原品牌介紹
+    url: https://www.shinybrands.com/yuan%E9%98%BF%E5%8E%9F/
+  tw.6703#e8:
+    locator: 產品研發創新之進展，美妝保養商品表
+    published_date: null
+    publisher: 軒郁國際股份有限公司
+    quote_check: found
+    title: 產品研發與創新
+    url: https://www.esg-shinybrands.com/product/innovation

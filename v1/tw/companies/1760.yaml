@@ -8,12 +8,151 @@ industry:
   l0_code: '22'
   l0_name: 生技醫療業
   l0_name_en: Biotechnology and Medical Care
-primary_chain_position: unknown
+  l1: health
+  l1_name: 醫療保健
+  l1_name_en: Healthcare
+  l2: health.pharma
+  l2_name: 製藥與生技
+  l2_name_en: Pharmaceuticals & Biotech
+  l3: bio.generic
+  l3_name: 學名藥與原料藥
+  l3_name_en: Generics & APIs
+chain: chain.biotech
+chain_stage:
+  agreement: both
+  also:
+  - stage: channel
+    stage_name: 通路與醫療服務
+    tier: downstream
+  - stage: rnd
+    stage_name: 研發與原料
+    tier: upstream
+  reason: 藥品占營收36.70%為最大項，製藥為主業，另涵蓋新藥研發、原料藥與通路。
+  stage: manufacturing
+  stage_name: 製造與代工
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 以藥品、保健食品等產品銷售及新藥銷售權利金取得營收。
+summary_long: 寶齡富錦的營收來源包括藥品、食品、化工、原料藥、檢驗試劑、醫美醫材與銷售權利金。2025年藥品占合併營收36.70%，為最大項目；銷售權利金占21.58%，食品占17.44%。主要產品包括供接受透析治療之成年慢性腎病患者控制高磷血症的拿百磷、克羅利黴素膜衣錠、飛確家用新冠抗原快篩及營養保健食品。旗下正峰化學製藥為全資子公司，從事原料藥製造。公司業務涵蓋研發、製造與通路。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_drugs
+  name: 藥品
+  period: '2025'
+  revenue_share_pct: 36.7
+- evidence_ids:
+  - e2
+  id: seg_royalties
+  name: 銷售權利金
+  period: '2025'
+  revenue_share_pct: 21.58
+- evidence_ids:
+  - e2
+  id: seg_food
+  name: 食品
+  period: '2025'
+  revenue_share_pct: 17.44
+- evidence_ids:
+  - e2
+  id: seg_chemicals
+  name: 化工
+  period: '2025'
+  revenue_share_pct: 9.72
+- evidence_ids:
+  - e2
+  id: seg_api
+  name: 原料藥
+  period: '2025'
+  revenue_share_pct: 7.02
+- evidence_ids:
+  - e2
+  id: seg_diagnostics
+  name: 檢驗試劑
+  period: '2025'
+  revenue_share_pct: 6.65
+- evidence_ids:
+  - e2
+  id: seg_aesthetics
+  name: 醫美醫材
+  period: '2025'
+  revenue_share_pct: 0.52
+- evidence_ids:
+  - e2
+  id: seg_services
+  name: 其他營業收入（勞務）
+  period: '2025'
+  revenue_share_pct: 0.37
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資原料藥製造子公司
+    details:
+    - 全資原料藥製造子公司
+    edge: e2e19f73649f4
+    evidence_level: primary
+    id: org.cheng-fong-chemical
+    name: 正峰化學製藥股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.pbf.com.tw
 tax_id: 04742997
 incorporated: '1976-01-07'
 listed: '2018-01-23'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1760#e2:
+    locator: 印刷頁92，營業比重，114年合併金額與比重
+    published_date: null
+    publisher: 寶齡富錦生技股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.pbf.com.tw/wp-content/uploads/1150414寶齡年報lock-上傳檔.pdf
+  tw.1760#e3:
+    locator: 印刷頁124，轉投資政策；印刷頁132列示正峰公司全名
+    published_date: null
+    publisher: 寶齡富錦生技股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.pbf.com.tw/wp-content/uploads/1150414寶齡年報lock-上傳檔.pdf
+  tw.1760#e4:
+    locator: 產品描述：適應症
+    published_date: null
+    publisher: 寶齡富錦生技股份有限公司
+    quote_check: found
+    title: 拿百磷膠囊500毫克
+    url: https://www.pbf.com.tw/產品/拿百磷膠囊500毫克/
+  tw.1760#e5:
+    locator: 產品名稱及主要成分
+    published_date: null
+    publisher: 寶齡富錦生技股份有限公司
+    quote_check: found
+    title: 克羅利黴素膜衣錠
+    url: https://www.pbf.com.tw/產品/克羅利黴素膜衣錠/
+  tw.1760#e6:
+    locator: 產品標題
+    published_date: null
+    publisher: 寶齡富錦生技股份有限公司
+    quote_check: found
+    title: 飛確 RV2家用新型冠狀病毒抗原快速檢驗試劑
+    url: https://www.pbf.com.tw/產品/飛確-rv2家用新型冠狀病毒抗原快速檢驗試劑/
+  tw.1760#e7:
+    locator: 保健食品產品清單
+    published_date: null
+    publisher: 寶齡富錦生技股份有限公司
+    quote_check: found
+    title: 保健食品
+    url: https://www.pbf.com.tw/product-category/藥局專區/保健食品/
+  tw.1760#e8:
+    locator: PDF第3頁，公司簡介之整合能力
+    published_date: '2026-06-25'
+    publisher: 寶齡富錦生技股份有限公司
+    quote_check: found
+    title: 2026年第一次法人說明會簡報
+    url: https://www.pbf.com.tw/wp-content/uploads/260625_PBF_IR_26第一次法說會簡報-中文-公開.pdf

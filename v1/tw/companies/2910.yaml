@@ -8,12 +8,102 @@ industry:
   l0_code: '18'
   l0_name: 貿易百貨業
   l0_name_en: Trading and Consumers' Goods
-primary_chain_position: unknown
+  l1: realestate
+  l1_name: 不動產
+  l1_name_en: Real Estate
+  l2: re.dev
+  l2_name: 不動產
+  l2_name_en: Real Estate
+  l3: re.commercial
+  l3_name: 商用不動產與資產管理
+  l3_name_en: Commercial Real Estate & Asset Management
+primary_chain_position: not_applicable
+summary_short: 以不動產出租、百貨專櫃抽成及管理費取得收入，租賃為最大來源。
+summary_long: 統領百貨以不動產出租、百貨專櫃抽成及商場管理服務取得收入。2025年合併營業收入為新臺幣5億1,834.8萬元，其中租賃收入2億9,238.4萬元，為最大來源；百貨專櫃抽成收入1億7,301.2萬元。租賃業務包含投資性不動產出租及賣場分租，其他營業收入主要為管理費。旗下全資子公司德宏建設從事住宅及大樓開發租售；2025年合併報表未認列營建工程收入。
+segments:
+- evidence_ids:
+  - e1
+  - e2
+  id: rental
+  name: 租賃收入
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e1
+  - e3
+  id: department
+  name: 百貨專櫃抽成收入
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e1
+  - e4
+  id: other
+  name: 其他營業收入
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e1
+  id: construction
+  name: 營建工程收入
+  period: '2025'
+  revenue_share_pct: null
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司，從事住宅及大樓開發租售
+    details:
+    - 全資子公司，從事住宅及大樓開發租售
+    edge: ec7c916954a4b
+    evidence_level: primary
+    id: org.德宏建設股份有限公司
+    name: 德宏建設股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.tonlin.com.tw
 tax_id: '20937863'
 incorporated: '1982-08-18'
 listed: '1996-12-30'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2910#e1:
+    locator: 第47頁，附註二二（一）營業收入明細；金額單位為新臺幣仟元
+    published_date: null
+    publisher: 統領百貨股份有限公司
+    quote_check: found
+    title: 統領百貨股份有限公司及子公司民國114及113年度合併財務報表暨會計師查核報告
+    url: https://prod-tcrm.tonlin.com.tw/Files/85b3f1eb-53cc-4895-93d3-ed1736c309b0.pdf
+  tw.2910#e2:
+    locator: 第48頁，附註二二（四）租賃收入；第一欄為114年度
+    published_date: null
+    publisher: 統領百貨股份有限公司
+    quote_check: found
+    title: 統領百貨股份有限公司及子公司民國114及113年度合併財務報表暨會計師查核報告
+    url: https://prod-tcrm.tonlin.com.tw/Files/85b3f1eb-53cc-4895-93d3-ed1736c309b0.pdf
+  tw.2910#e3:
+    locator: 第47頁，附註二二（二）客戶合約收入之說明及細分資訊；第一欄為114年度
+    published_date: null
+    publisher: 統領百貨股份有限公司
+    quote_check: found
+    title: 統領百貨股份有限公司及子公司民國114及113年度合併財務報表暨會計師查核報告
+    url: https://prod-tcrm.tonlin.com.tw/Files/85b3f1eb-53cc-4895-93d3-ed1736c309b0.pdf
+  tw.2910#e4:
+    locator: 第48頁，附註二二（二）其他營業收入細分；第一欄為114年度
+    published_date: null
+    publisher: 統領百貨股份有限公司
+    quote_check: found
+    title: 統領百貨股份有限公司及子公司民國114及113年度合併財務報表暨會計師查核報告
+    url: https://prod-tcrm.tonlin.com.tw/Files/85b3f1eb-53cc-4895-93d3-ed1736c309b0.pdf
+  tw.2910#e5:
+    locator: 第34頁，附註十二、子公司；持股欄分別為114及113年底
+    published_date: null
+    publisher: 統領百貨股份有限公司
+    quote_check: found
+    title: 統領百貨股份有限公司及子公司民國114及113年度合併財務報表暨會計師查核報告
+    url: https://prod-tcrm.tonlin.com.tw/Files/85b3f1eb-53cc-4895-93d3-ed1736c309b0.pdf

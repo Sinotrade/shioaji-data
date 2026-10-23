@@ -8,12 +8,113 @@ industry:
   l0_code: '20'
   l0_name: 其他業
   l0_name_en: Others
-primary_chain_position: unknown
+  l1: consumer
+  l1_name: 消費
+  l1_name_en: Consumer
+  l2: cons.staples
+  l2_name: 民生消費
+  l2_name_en: Consumer Staples
+  l3: food.processing
+  l3_name: 食品加工
+  l3_name_en: Food Processing
+primary_chain_position: upstream
+summary_short: 以冷凍肉品、蔬品銷售為主，兼營食品加工、低溫倉儲及住宅開發。
+summary_long: 裕國以冷凍肉品與蔬品銷售為主要營收來源，進口牛肉、羊肉、薯條及青豆仁於國內販售，並在南投從事肉品加工，生產冷凍牛肉、火鍋肉片及罐頭。2024年商品銷售占營收75%，冷凍冷藏租賃占17%，物流占8%；營建亦有收入，年報四捨五入列示占比為0%。公司提供冷凍冷藏庫房租賃，子公司裕鵬物流經營汽車貨運及貨櫃貨運。另經營住宅開發銷售，以及裕國紅敞生鮮超市與線上購物通路。
+segments:
+- evidence_ids:
+  - e02
+  id: seg_goods
+  name: 商品銷售
+  period: '2024'
+  revenue_share_pct: 75
+- evidence_ids:
+  - e02
+  id: seg_storage
+  name: 冷凍冷藏租賃
+  period: '2024'
+  revenue_share_pct: 17
+- evidence_ids:
+  - e02
+  id: seg_logistics
+  name: 物流
+  period: '2024'
+  revenue_share_pct: 8
+- evidence_ids:
+  - e02
+  id: seg_construction
+  name: 營建
+  period: '2024'
+  revenue_share_pct: 0
+relations:
+  subsidiaries:
+  - as_of: 2024-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 經營汽車貨運及貨櫃貨運的子公司
+    details:
+    - 經營汽車貨運及貨櫃貨運的子公司
+    edge: ef4d13e3b7e73
+    evidence_level: primary
+    id: org.yupeng-logistics
+    name: 裕鵬物流股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.eaglegroup.com.tw
 tax_id: '23641978'
 incorporated: '1990-05-30'
 listed: '1996-01-31'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.8905#e02:
+    locator: 印刷頁37，肆、營運概況／營業比重；金額單位為新台幣仟元
+    published_date: null
+    publisher: 裕國冷凍冷藏股份有限公司
+    quote_check: found
+    title: 裕國冷凍冷藏股份有限公司113年度年報
+    url: https://www.eaglegroup.com.tw/upload/download/2506021645440000001.pdf
+  tw.8905#e03:
+    locator: 印刷頁37，公司目前之商品（服務）項目
+    published_date: null
+    publisher: 裕國冷凍冷藏股份有限公司
+    quote_check: found
+    title: 裕國冷凍冷藏股份有限公司113年度年報
+    url: https://www.eaglegroup.com.tw/upload/download/2506021645440000001.pdf
+  tw.8905#e04:
+    locator: 五大事業／食品業務
+    published_date: null
+    publisher: 裕國冷凍冷藏股份有限公司
+    quote_check: found
+    title: 集團介紹
+    url: https://www.eaglegroup.com.tw/about_1.php?Key=1
+  tw.8905#e05:
+    locator: 五大事業／營建業務
+    published_date: null
+    publisher: 裕國冷凍冷藏股份有限公司
+    quote_check: found
+    title: 集團介紹
+    url: https://www.eaglegroup.com.tw/about_1.php?Key=1
+  tw.8905#e06:
+    locator: 五大事業／電商業務
+    published_date: null
+    publisher: 裕國冷凍冷藏股份有限公司
+    quote_check: found
+    title: 集團介紹
+    url: https://www.eaglegroup.com.tw/about_1.php?Key=1
+  tw.8905#e07:
+    locator: 印刷頁40，長、短期業務發展計劃
+    published_date: null
+    publisher: 裕國冷凍冷藏股份有限公司
+    quote_check: found
+    title: 裕國冷凍冷藏股份有限公司113年度年報
+    url: https://www.eaglegroup.com.tw/upload/download/2506021645440000001.pdf
+  tw.8905#e08:
+    locator: 印刷頁50，轉投資事業
+    published_date: null
+    publisher: 裕國冷凍冷藏股份有限公司
+    quote_check: found
+    title: 裕國冷凍冷藏股份有限公司113年度年報
+    url: https://www.eaglegroup.com.tw/upload/download/2506021645440000001.pdf

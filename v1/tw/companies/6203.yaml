@@ -8,12 +8,142 @@ industry:
   l0_code: '28'
   l0_name: 電子零組件業
   l0_name_en: Electronic Parts and Components
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.power
+  l3_name: 電源供應器與電源管理模組
+  l3_name_en: Power Supplies & Power Modules
+primary_chain_position: not_applicable
+summary_short: 以自有品牌及代工業務銷售交換式電源供應器。
+summary_long: 海韻電主要從事交換式電源供應器的研發、設計、製造與銷售，經營自有品牌及客製貼牌代工。2025年電源供應器占營收99.66%，其他業務占0.34%。產品包含個人電腦電源、工業電腦用Flex12V及1U／2U電源，另有MagFlow磁吸串接風扇。公司於2025年6月法說會表示，已開發2200W電源，當時正開發2800至3200W電源，投入AI伺服器與工作站市場。主要海外子公司包括美國Seasonic Electronics及荷蘭Sea Sonic Europe；東莞海韻為間接持有的製造子公司。
+segments:
+- evidence_ids:
+  - e3
+  id: seg_power
+  name: 電源供應器
+  period: '2025'
+  revenue_share_pct: 99.66
+- evidence_ids:
+  - e3
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 0.34
+main_theme: theme.ai_server
+themes:
+- also: []
+  stage: components
+  theme: theme.ai_server
+  tier: midstream
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過Resonic Holdings間接持有的製造子公司
+    details:
+    - 透過Resonic Holdings間接持有的製造子公司
+    edge: eb9b476d3a660
+    evidence_level: primary
+    id: org.dongguan-sea-sonic-electronics
+    name: 東莞海韻電子有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-20'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 荷蘭子公司
+    details:
+    - 荷蘭子公司
+    edge: e1ce70f4b3f61
+    evidence_level: primary
+    id: org.sea-sonic-europe-bv
+    name: Sea Sonic Europe B.V.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-20'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 美國子公司
+    details:
+    - 美國子公司
+    edge: e3632abab600f
+    evidence_level: primary
+    id: org.seasonic-electronics-inc
+    name: Seasonic Electronics, Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.seasonic.com
 tax_id: 04329168
 incorporated: '1975-09-19'
 listed: '2002-12-26'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6203#e2:
+    locator: 第81頁，業務範圍
+    published_date: '2026-05-10'
+    publisher: 海韻電子工業股份有限公司
+    quote_check: found
+    title: 海韻電子工業股份有限公司114年度年報
+    url: https://investor.seasonic.com/wp-content/uploads/sites/3/2026/08/2025%E5%B9%B4%E5%A0%B1%E4%B8%AD%E6%96%87.pdf
+  tw.6203#e3:
+    locator: 第81頁，主要產品占營業比重；欄位依序為113年度金額、比重及114年度金額、比重
+    published_date: '2026-05-10'
+    publisher: 海韻電子工業股份有限公司
+    quote_check: found
+    title: 海韻電子工業股份有限公司114年度年報
+    url: https://investor.seasonic.com/wp-content/uploads/sites/3/2026/08/2025%E5%B9%B4%E5%A0%B1%E4%B8%AD%E6%96%87.pdf
+  tw.6203#e4:
+    locator: 第83頁，目前商品，N及P項
+    published_date: '2026-05-10'
+    publisher: 海韻電子工業股份有限公司
+    quote_check: found
+    title: 海韻電子工業股份有限公司114年度年報
+    url: https://investor.seasonic.com/wp-content/uploads/sites/3/2026/08/2025%E5%B9%B4%E5%A0%B1%E4%B8%AD%E6%96%87.pdf
+  tw.6203#e5:
+    locator: PDF第22頁，市場趨勢
+    published_date: '2025-06-06'
+    publisher: 海韻電子工業股份有限公司
+    quote_check: found
+    title: 海韻電子工業股份有限公司2025年6月6日法人說明會簡報
+    url: https://investor.seasonic.com/wp-content/uploads/sites/3/2025/09/2025-0606-earnings-call-slideshow-zh.pdf
+  tw.6203#e6:
+    locator: Daisy Chain Design
+    published_date: null
+    publisher: Sea Sonic
+    quote_check: found
+    title: Seasonic MagFlow ARGB 120 mm
+    url: https://seasonic.com/magflow-argb-120mm/
+  tw.6203#e7:
+    locator: 美國子公司
+    published_date: null
+    publisher: 海韻電子工業股份有限公司
+    quote_check: found
+    title: 聯絡我們
+    url: https://seasonic.com/tw/contact-us/
+  tw.6203#e8:
+    locator: 歐洲子公司；地址列示荷蘭Berlicum
+    published_date: null
+    publisher: 海韻電子工業股份有限公司
+    quote_check: found
+    title: 聯絡我們
+    url: https://seasonic.com/tw/contact-us/
+  tw.6203#e9:
+    locator: 第16頁，附註十一子公司；投資公司為Resonic Holdings Co., Ltd.
+    published_date: null
+    publisher: 海韻電子工業股份有限公司
+    quote_check: found
+    title: 海韻電子工業股份有限公司及子公司115年第二季合併財務報告
+    url: https://investor.seasonic.com/wp-content/uploads/sites/3/2026/09/2026-Q2-financial-report-seasonic-and-group.pdf

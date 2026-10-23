@@ -243,6 +243,17 @@ members:
   stage: upstream
   tier: upstream
   stage_role: also
+- id: tw.1341
+  detail: 乳膠皮占營收58.27%，主要產品為PVC人造皮革、PU／TPU皮革及膠布，屬塑膠加工製品。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.1341#e1
+  - tw.1341#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: downstream
+  tier: downstream
+  stage_role: primary
 - id: tw.1402
   detail: 生產事業為最大部門，固聚酯粒為最大具名產品，另有中間原料PTA。
   as_of: '2026-10-14'
@@ -442,6 +453,31 @@ members:
   stage: midstream
   tier: midstream
   stage_role: primary
+- id: tw.3430
+  detail: 紫外光吸收劑及光安定劑占營收60.59%，主要供應塑膠與塗料加工用特用化學添加劑，屬中間原料。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.3430#e2
+  - tw.3430#e3
+  - tw.3430#e4
+  - tw.3430#e5
+  confidence: ai_cross_checked
+  source: classification
+  stage: midstream
+  tier: midstream
+  stage_role: primary
+- id: tw.4303
+  detail: 乾式PU合成皮占營收52%為最大業務，另製造PVC塑膠皮、PU膜及TPU鞋材，屬塑膠加工。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.4303#e2
+  - tw.4303#e3
+  - tw.4303#e4
+  confidence: ai_cross_checked
+  source: classification
+  stage: downstream
+  tier: downstream
+  stage_role: primary
 - id: tw.4306
   detail: 膠帶製造占營收70.5%，主要產品為包裝膠帶、絕緣膠帶及BOPP薄膜。
   as_of: '2026-10-18'
@@ -450,6 +486,18 @@ members:
   - tw.4306#e2
   - tw.4306#e3
   - tw.4306#e4
+  confidence: ai_cross_checked
+  source: classification
+  stage: downstream
+  tier: downstream
+  stage_role: primary
+- id: tw.4706
+  detail: 營收最大宗為調製應用顏料，占67%，包含塑膠色母及加工著色料，屬石化下游加工。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.4706#e1
+  - tw.4706#e2
+  - tw.4706#e4
   confidence: ai_cross_checked
   source: classification
   stage: downstream
@@ -466,6 +514,46 @@ members:
   source: classification
   stage: midstream
   tier: midstream
+  stage_role: primary
+- id: tw.4714
+  detail: 營收以樹脂與化工為主，PU樹脂、TPU及高分子材料屬下游，另製造多元醇中間原料。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.4714#e2
+  - tw.4714#e3
+  - tw.4714#e6
+  - tw.4714#e7
+  - tw.4714#e10
+  confidence: ai_cross_checked
+  source: classification
+  stage: downstream
+  tier: downstream
+  stage_role: primary
+- id: tw.4714
+  detail: 營收以樹脂與化工為主，PU樹脂、TPU及高分子材料屬下游，另製造多元醇中間原料。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.4714#e2
+  - tw.4714#e3
+  - tw.4714#e6
+  - tw.4714#e7
+  - tw.4714#e10
+  confidence: ai_cross_checked
+  source: classification
+  stage: midstream
+  tier: midstream
+  stage_role: also
+- id: tw.4720
+  detail: 熱熔膠占營收73.78%，以合成樹脂配方加工製成接著劑，屬石化下游加工。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.4720#e2
+  - tw.4720#e3
+  - tw.4720#e15
+  confidence: ai_cross_checked
+  source: classification
+  stage: downstream
+  tier: downstream
   stage_role: primary
 - id: tw.4721
   detail: 營收72%來自PTA製程用氧化觸媒及相關原料，屬製程周邊，未見生產石化中間原料。
@@ -505,6 +593,18 @@ members:
   stage: downstream
   tier: downstream
   stage_role: also
+- id: tw.5452
+  detail: 塑膠粒占營收70.47%，主要銷售塑膠材料並提供染色、混鍊造粒加工，屬下游。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.5452#e2
+  - tw.5452#e3
+  - tw.5452#e4
+  confidence: ai_cross_checked
+  source: classification
+  stage: downstream
+  tier: downstream
+  stage_role: primary
 - id: tw.6505
   detail: 油品占營業額75.5%，並以輕油裂解生產乙烯、丙烯與丁二烯等基本原料。
   as_of: '2026-10-14'
@@ -539,4 +639,4 @@ members:
   stage: downstream
   tier: downstream
   stage_role: primary
-as_of: '2026-10-20'
+as_of: '2026-10-23'

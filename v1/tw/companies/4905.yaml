@@ -8,12 +8,246 @@ industry:
   l0_code: '22'
   l0_name: 生技醫療業
   l0_name_en: Biotechnology and Medical Care
-primary_chain_position: unknown
+  l1: health
+  l1_name: 醫療保健
+  l1_name_en: Healthcare
+  l2: health.devices
+  l2_name: 醫療器材與服務
+  l2_name_en: Medical Devices & Services
+  l3: med.consumables
+  l3_name: 醫療耗材
+  l3_name_en: Medical Consumables
+chain: chain.biotech
+chain_stage:
+  agreement: both
+  also: []
+  reason: 醫療包材占營收75%，由子公司欣德芮製造滅菌包材，提供醫療設備包裝解決方案。
+  stage: manufacturing
+  stage_name: 製造與代工
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 以子公司醫療滅菌包材為主要營收，另經營液態矽膠與通訊設備。
+summary_long: 台聯電訊集團以醫療包材為主要營收來源，並經營特用化學及通訊設備。2025年度醫療包材相關業務占營收75%，特用化學占16%，寬頻設備占7%，窄頻設備及租賃收入各占1%。醫療包材由子公司欣德芮製造，提供滅菌包材與醫療設備包裝解決方案；特用化學透過價值投資旗下台灣忍嘉，從事有機矽材料研發、生產與銷售。通訊產品包括xDSL接取設備、光電轉換器及4G／5G無線整合設備。
+segments:
+- evidence_ids:
+  - e1
+  - e6
+  id: medical_packaging
+  name: 醫療包材（年報營收分類列為醫療器材）
+  period: '2025'
+  revenue_share_pct: 75
+- evidence_ids:
+  - e2
+  id: specialty_chemicals
+  name: 特用化學
+  period: '2025'
+  revenue_share_pct: 16
+- evidence_ids:
+  - e3
+  id: narrowband
+  name: 窄頻設備
+  period: '2025'
+  revenue_share_pct: 1
+- evidence_ids:
+  - e4
+  id: broadband
+  name: 寬頻設備
+  period: '2025'
+  revenue_share_pct: 7
+- evidence_ids:
+  - e5
+  id: rental
+  name: 租賃收入
+  period: '2025'
+  revenue_share_pct: 1
+main_theme: theme.5g
+themes:
+- also: []
+  stage: equipment
+  theme: theme.5g
+  tier: midstream
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的投資子公司
+    details:
+    - 直接持股100%的投資子公司
+    edge: e458b3cdaaf05
+    evidence_level: primary
+    id: org.價值投資-股-公司
+    name: 價值投資(股)公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過價值投資持有58.27%權益之間接子公司
+    details:
+    - 透過價值投資持有58.27%權益之間接子公司
+    edge: e154aec1615d4
+    evidence_level: primary
+    id: org.台灣忍嘉-股-公司
+    name: 台灣忍嘉(股)公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股61.36%的醫療包材子公司
+    details:
+    - 直接持股61.36%的醫療包材子公司
+    edge: e196adce75bdd
+    evidence_level: primary
+    id: org.欣德芮-股-公司
+    name: 欣德芮(股)公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過聯創投資持有100%權益之間接子公司
+    details:
+    - 透過聯創投資持有100%權益之間接子公司
+    edge: e65a58e3ee1ca
+    evidence_level: primary
+    id: org.福億通訊-股-公司
+    name: 福億通訊(股)公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的投資子公司
+    details:
+    - 直接持股100%的投資子公司
+    edge: e0c765281ba46
+    evidence_level: primary
+    id: org.聯創投資-股-公司
+    name: 聯創投資(股)公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.tainet.com.tw
 tax_id: '23882531'
 incorporated: '1990-08-03'
 listed: '2001-12-07'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4905#e1:
+    locator: 印刷頁58／PDF第62頁，營業比重表，114年度欄
+    published_date: null
+    publisher: 台聯電訊股份有限公司
+    quote_check: found
+    title: 台聯電訊股份有限公司114年度年報
+    url: https://www.tainet.com.tw/wp-content/uploads/1150612%E5%8F%B0%E8%81%AF%E5%B9%B4%E5%A0%B1.pdf
+  tw.4905#e10:
+    locator: 產品列表，ENTU783
+    published_date: null
+    publisher: 台聯電訊股份有限公司
+    quote_check: found
+    title: 光纖網路轉換設備
+    url: https://www.tainet.com.tw/products/fiber-optic/
+  tw.4905#e11:
+    locator: 第15頁，合併財務報表編製主體，115.6.30欄
+    published_date: null
+    publisher: 台聯電訊股份有限公司
+    quote_check: found
+    title: 台聯電訊股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.tainet.com.tw/wp-content/uploads/26Q2_%E5%8F%B0%E8%81%AF_%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1-final%E7%94%A8%E5%8D%B0.pdf
+  tw.4905#e12:
+    locator: 第15頁，合併財務報表編製主體，115.6.30欄
+    published_date: null
+    publisher: 台聯電訊股份有限公司
+    quote_check: found
+    title: 台聯電訊股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.tainet.com.tw/wp-content/uploads/26Q2_%E5%8F%B0%E8%81%AF_%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1-final%E7%94%A8%E5%8D%B0.pdf
+  tw.4905#e13:
+    locator: 第15頁，合併財務報表編製主體，115.6.30欄
+    published_date: null
+    publisher: 台聯電訊股份有限公司
+    quote_check: found
+    title: 台聯電訊股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.tainet.com.tw/wp-content/uploads/26Q2_%E5%8F%B0%E8%81%AF_%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1-final%E7%94%A8%E5%8D%B0.pdf
+  tw.4905#e14:
+    locator: 第15頁，合併財務報表編製主體，115.6.30欄
+    published_date: null
+    publisher: 台聯電訊股份有限公司
+    quote_check: found
+    title: 台聯電訊股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.tainet.com.tw/wp-content/uploads/26Q2_%E5%8F%B0%E8%81%AF_%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1-final%E7%94%A8%E5%8D%B0.pdf
+  tw.4905#e15:
+    locator: 第15頁，合併財務報表編製主體，115.6.30欄
+    published_date: null
+    publisher: 台聯電訊股份有限公司
+    quote_check: found
+    title: 台聯電訊股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.tainet.com.tw/wp-content/uploads/26Q2_%E5%8F%B0%E8%81%AF_%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1-final%E7%94%A8%E5%8D%B0.pdf
+  tw.4905#e2:
+    locator: 印刷頁58／PDF第62頁，營業比重表，114年度欄
+    published_date: null
+    publisher: 台聯電訊股份有限公司
+    quote_check: found
+    title: 台聯電訊股份有限公司114年度年報
+    url: https://www.tainet.com.tw/wp-content/uploads/1150612%E5%8F%B0%E8%81%AF%E5%B9%B4%E5%A0%B1.pdf
+  tw.4905#e3:
+    locator: 印刷頁58／PDF第62頁，營業比重表，114年度欄
+    published_date: null
+    publisher: 台聯電訊股份有限公司
+    quote_check: not_found
+    title: 台聯電訊股份有限公司114年度年報
+    url: https://www.tainet.com.tw/wp-content/uploads/1150612%E5%8F%B0%E8%81%AF%E5%B9%B4%E5%A0%B1.pdf
+  tw.4905#e4:
+    locator: 印刷頁58／PDF第62頁，營業比重表，114年度欄
+    published_date: null
+    publisher: 台聯電訊股份有限公司
+    quote_check: not_found
+    title: 台聯電訊股份有限公司114年度年報
+    url: https://www.tainet.com.tw/wp-content/uploads/1150612%E5%8F%B0%E8%81%AF%E5%B9%B4%E5%A0%B1.pdf
+  tw.4905#e5:
+    locator: 印刷頁58／PDF第62頁，營業比重表，114年度欄
+    published_date: null
+    publisher: 台聯電訊股份有限公司
+    quote_check: not_found
+    title: 台聯電訊股份有限公司114年度年報
+    url: https://www.tainet.com.tw/wp-content/uploads/1150612%E5%8F%B0%E8%81%AF%E5%B9%B4%E5%A0%B1.pdf
+  tw.4905#e6:
+    locator: 印刷頁58／PDF第62頁，主要營業內容，醫療包材列
+    published_date: null
+    publisher: 台聯電訊股份有限公司
+    quote_check: found
+    title: 台聯電訊股份有限公司114年度年報
+    url: https://www.tainet.com.tw/wp-content/uploads/1150612%E5%8F%B0%E8%81%AF%E5%B9%B4%E5%A0%B1.pdf
+  tw.4905#e7:
+    locator: 印刷頁59／PDF第63頁，目前產品，特用化學產業
+    published_date: null
+    publisher: 台聯電訊股份有限公司
+    quote_check: found
+    title: 台聯電訊股份有限公司114年度年報
+    url: https://www.tainet.com.tw/wp-content/uploads/1150612%E5%8F%B0%E8%81%AF%E5%B9%B4%E5%A0%B1.pdf
+  tw.4905#e8:
+    locator: 印刷頁58／PDF第62頁，目前產品，寬頻數據通訊產品
+    published_date: null
+    publisher: 台聯電訊股份有限公司
+    quote_check: found
+    title: 台聯電訊股份有限公司114年度年報
+    url: https://www.tainet.com.tw/wp-content/uploads/1150612%E5%8F%B0%E8%81%AF%E5%B9%B4%E5%A0%B1.pdf
+  tw.4905#e9:
+    locator: 印刷頁59／PDF第63頁，目前產品，無線網路通訊產品之無線整合設備
+    published_date: null
+    publisher: 台聯電訊股份有限公司
+    quote_check: found
+    title: 台聯電訊股份有限公司114年度年報
+    url: https://www.tainet.com.tw/wp-content/uploads/1150612%E5%8F%B0%E8%81%AF%E5%B9%B4%E5%A0%B1.pdf

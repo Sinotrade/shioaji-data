@@ -8,12 +8,170 @@ industry:
   l0_code: '05'
   l0_name: 電機機械
   l0_name_en: Electric Machinery
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.machinery
+  l2_name: 機械與自動化
+  l2_name_en: Machinery & Automation
+  l3: mach.machine_tool
+  l3_name: 工具機
+  l3_name_en: Machine Tools
+primary_chain_position: not_applicable
+summary_short: 製造與銷售伺服沖床、機械沖床，提供自動化沖壓方案及維修服務。
+summary_long: 協易機械以伺服沖床、機械沖床及自動化沖壓方案為主要業務。SD系列伺服沖床用於汽車零件、消費電子與家電；SNS系列機械沖床提供薄板下料、沖孔、折曲與成型，並涵蓋電動車電池外殼加工應用。智慧沖壓線整合拆垛、送料、機械手及視覺檢測，屬機器人系統整合應用。2026年上半年合併收入主要來自商品銷售，另有維修及其他收入。子公司包括協易美國、協易歐洲、協易國際及協達投資，並透過集團架構持有協易中國。
+segments:
+- evidence_ids:
+  - e5
+  id: seg_goods
+  name: 商品銷售收入
+  period: 2026年上半年
+  revenue_share_pct: null
+- evidence_ids:
+  - e5
+  id: seg_services
+  name: 維修及其他收入
+  period: 2026年上半年
+  revenue_share_pct: null
+main_theme: theme.robotics
+themes:
+- also: []
+  stage: system
+  theme: theme.robotics
+  tier: downstream
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: ef36987b08db6
+    evidence_level: primary
+    id: org.hsieh-ta-investment
+    name: 協達投資股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司，協易美國公司
+    details:
+    - 直接子公司，協易美國公司
+    edge: ec9aa2ed6ceea
+    evidence_level: primary
+    id: org.seyi-america
+    name: SEYI-AMERICA, INC.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司，協易國際公司
+    details:
+    - 直接子公司，協易國際公司
+    edge: e394fad3f20da
+    evidence_level: primary
+    id: org.seyi-international-samoa
+    name: SEYI INTERNATIONAL (SAMOA) INC.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司，協易歐洲公司
+    details:
+    - 直接子公司，協易歐洲公司
+    edge: e8f8115612e47
+    evidence_level: primary
+    id: org.seyi-presses-europe
+    name: SEYI PRESSES EUROPE GMBH
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過協易國際及協易科技公司間接持有的子公司
+    details:
+    - 透過協易國際及協易科技公司間接持有的子公司
+    edge: e7f98eb3e5823
+    evidence_level: primary
+    id: org.seyi-technology-china
+    name: 協易科技精機（中國）有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.seyi.com
 tax_id: '36096704'
 incorporated: '1982-03-02'
 listed: '2002-04-26'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4533#e1:
+    locator: SD系列產品介紹
+    published_date: null
+    publisher: 協易機械工業股份有限公司
+    quote_check: found
+    title: SD Series｜Solid Frame Crank Servo Press
+    url: https://www.seyi.com/solid-frame-crank-servo-press_sd.html
+  tw.4533#e2:
+    locator: 產品介紹
+    published_date: null
+    publisher: 協易機械工業股份有限公司
+    quote_check: found
+    title: SNS系列｜直壁式曲軸沖床
+    url: https://zh-tw.seyi.com/solid-frame-crank-press_sns.html
+  tw.4533#e3:
+    locator: LT型式／多元產業應用
+    published_date: null
+    publisher: 協易機械工業股份有限公司
+    quote_check: found
+    title: SNS系列｜直壁式曲軸沖床
+    url: https://zh-tw.seyi.com/solid-frame-crank-press_sns.html
+  tw.4533#e4:
+    locator: 成功案例／沖壓模具產業智慧製造示範場域
+    published_date: null
+    publisher: 協易機械工業股份有限公司
+    quote_check: found
+    title: 智慧沖壓解決方案
+    url: https://zh-tw.seyi.com/applications_smart-stamping-solution.htm
+  tw.4533#e5:
+    locator: 第32頁，附註二三（二）客戶合約收入之細分；第一欄為2026年上半年，單位新台幣仟元
+    published_date: '2026-08-17'
+    publisher: 協易機械工業股份有限公司
+    quote_check: found
+    title: 協易機械工業股份有限公司及子公司民國115及114年第2季合併財務報告
+    url: https://zh-tw.seyi.com/uploadfiles/901/04_investor-relations/01_Financial_information/Quarterly/2026/seyi_2026q2_financial-report.pdf
+  tw.4533#e6:
+    locator: 第61頁，附註二八（一）關係人名稱及其關係
+    published_date: null
+    publisher: 協易機械工業股份有限公司
+    quote_check: found
+    title: 協易機械工業股份有限公司民國114及113年度個體財務報告
+    url: https://zh-tw.seyi.com/uploadfiles/901/04_investor-relations/01_Financial_information/Taiwan_annual/seyi_annual_tw_2025.pdf
+  tw.4533#e7:
+    locator: 第23頁，附註十三，投資公司及子公司對照表
+    published_date: '2026-08-17'
+    publisher: 協易機械工業股份有限公司
+    quote_check: found
+    title: 協易機械工業股份有限公司及子公司民國115及114年第2季合併財務報告
+    url: https://zh-tw.seyi.com/uploadfiles/901/04_investor-relations/01_Financial_information/Quarterly/2026/seyi_2026q2_financial-report.pdf
+  tw.4533#e8:
+    locator: 第23頁，附註十三，投資公司及子公司對照表
+    published_date: '2026-08-17'
+    publisher: 協易機械工業股份有限公司
+    quote_check: found
+    title: 協易機械工業股份有限公司及子公司民國115及114年第2季合併財務報告
+    url: https://zh-tw.seyi.com/uploadfiles/901/04_investor-relations/01_Financial_information/Quarterly/2026/seyi_2026q2_financial-report.pdf

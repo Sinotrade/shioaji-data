@@ -8,12 +8,167 @@ industry:
   l0_code: '26'
   l0_name: 光電業
   l0_name_en: Optoelectronic
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.display
+  l2_name: 光電與顯示
+  l2_name_en: Optoelectronics & Displays
+  l3: disp.materials
+  l3_name: 顯示器材料與零組件
+  l3_name_en: Display Materials & Components
+chain: chain.display
+chain_stage:
+  agreement: both
+  also: []
+  reason: 2025年營收全數列為增光膜，供液晶顯示器背光模組使用，屬上游光學膜材料。
+  stage: materials
+  stage_name: 玻璃、光學膜、驅動 IC
+  tier: upstream
+primary_chain_position: upstream
+summary_short: 製造顯示器用增亮膜、複合光學膜、量子點薄膜及保護膜。
+summary_long: 友輝光電主要製造顯示器用光學薄膜，2025年度營收組成以增光膜列示，占比100%，其中內銷60.71%、外銷39.29%。增亮膜利用微結構聚集與導引光線，提高顯示亮度及光效；複合膜則將不同功能薄膜貼合，以滿足輕薄化需求。量子點薄膜用於提高LCD面板色域，保護膜則降低載材在生產與出貨過程中的刮傷風險。公司為新光合成纖維旗下子公司，另持有建凱企業、友榮資本，並透過建凱企業持有從事增亮膜裁切加工的蘇州新友輝。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_optical_film
+  name: 增光膜
+  period: '2025'
+  revenue_share_pct: 100
+relations:
+  parents:
+  - as_of: 2026-10
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 母公司
+    details:
+    - 母公司
+    edge: e871c86d73636
+    evidence_level: primary
+    id: tw.1409
+    name: 新纖
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股100%的投資控股子公司
+    details:
+    - 持股100%的投資控股子公司
+    edge: e08256eca1731
+    evidence_level: primary
+    id: org.友榮資本股份有限公司
+    name: 友榮資本股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 香港子公司，持股100%，買賣增亮膜等
+    details:
+    - 香港子公司，持股100%，買賣增亮膜等
+    edge: eb84917626b5a
+    evidence_level: primary
+    id: org.建凱企業有限公司
+    name: 建凱企業有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過建凱企業持有的子公司，從事增亮膜裁切加工
+    details:
+    - 透過建凱企業持有的子公司，從事增亮膜裁切加工
+    edge: e21f39f5933b1
+    evidence_level: primary
+    id: org.蘇州新友輝光電有限公司
+    name: 蘇州新友輝光電有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: WWW.UBRIGHT.COM.TW
 tax_id: '80660088'
 incorporated: '2003-12-31'
 listed: '2011-07-29'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4933#e10:
+    locator: 第18頁，附註十二：子公司
+    published_date: null
+    publisher: 友輝光電股份有限公司
+    quote_check: found
+    title: 友輝光電股份有限公司及子公司2025年第3季合併財務報告
+    url: https://www.ubright.com.tw/wp-content/uploads/2025/11/2025-Q3-%E5%90%88%E4%BD%B5-%E4%B8%AD%E6%96%87.pdf
+  tw.4933#e11:
+    locator: 第53頁，綜合持股比例，資料日期2025年12月31日
+    published_date: '2026-05-15'
+    publisher: 友輝光電股份有限公司
+    quote_check: found
+    title: 友輝光電股份有限公司2025年度年報
+    url: https://www.ubright.com.tw/wp-content/uploads/2026/05/2025_4933_20260604F04.pdf
+  tw.4933#e2:
+    locator: 第60頁，公司目前主要業務之營業比重
+    published_date: '2026-05-15'
+    publisher: 友輝光電股份有限公司
+    quote_check: found
+    title: 友輝光電股份有限公司2025年度年報
+    url: https://www.ubright.com.tw/wp-content/uploads/2026/05/2025_4933_20260604F04.pdf
+  tw.4933#e3:
+    locator: 增亮膜 UB LEF
+    published_date: null
+    publisher: 友輝光電股份有限公司
+    quote_check: found
+    title: 背光模組：增亮膜
+    url: https://www.ubright.com.tw/products-tw/film-products-tw/incremental-tw/
+  tw.4933#e4:
+    locator: 複合膜 UB LLEF
+    published_date: null
+    publisher: 友輝光電股份有限公司
+    quote_check: found
+    title: 背光模組：複合膜
+    url: https://www.ubright.com.tw/products-tw/film-products-tw/incremental-tw/
+  tw.4933#e5:
+    locator: 量子點薄膜 QLEF
+    published_date: null
+    publisher: 友輝光電股份有限公司
+    quote_check: found
+    title: 背光模組：量子點薄膜
+    url: https://www.ubright.com.tw/products-tw/film-products-tw/incremental-tw/
+  tw.4933#e6:
+    locator: 第60頁，公司目前之商品項目
+    published_date: '2026-05-15'
+    publisher: 友輝光電股份有限公司
+    quote_check: found
+    title: 友輝光電股份有限公司2025年度年報
+    url: https://www.ubright.com.tw/wp-content/uploads/2026/05/2025_4933_20260604F04.pdf
+  tw.4933#e7:
+    locator: 友輝公司簡介
+    published_date: null
+    publisher: 友輝光電股份有限公司
+    quote_check: found
+    title: 關於友輝
+    url: https://www.ubright.com.tw/company/
+  tw.4933#e8:
+    locator: 第18頁，附註十二：子公司
+    published_date: null
+    publisher: 友輝光電股份有限公司
+    quote_check: found
+    title: 友輝光電股份有限公司及子公司2025年第3季合併財務報告
+    url: https://www.ubright.com.tw/wp-content/uploads/2025/11/2025-Q3-%E5%90%88%E4%BD%B5-%E4%B8%AD%E6%96%87.pdf
+  tw.4933#e9:
+    locator: 第18頁，附註十二：子公司
+    published_date: null
+    publisher: 友輝光電股份有限公司
+    quote_check: found
+    title: 友輝光電股份有限公司及子公司2025年第3季合併財務報告
+    url: https://www.ubright.com.tw/wp-content/uploads/2025/11/2025-Q3-%E5%90%88%E4%BD%B5-%E4%B8%AD%E6%96%87.pdf

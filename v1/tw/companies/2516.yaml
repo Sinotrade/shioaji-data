@@ -8,12 +8,114 @@ industry:
   l0_code: '14'
   l0_name: 建材營造業
   l0_name_en: Building Material and Construction
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.construction
+  l2_name: 營建與工程
+  l2_name_en: Engineering & Construction
+  l3: cons.engineering
+  l3_name: 工程與統包
+  l3_name_en: Engineering & EPC
+primary_chain_position: not_applicable
+summary_short: 以承攬公共工程為主，提供道路、軌道及住宅等土木與建築工程服務。
+summary_long: 新建以承攬政府公共工程為主，主要提供土木與建築工程服務。2025年度土木工程占營業比率52.43%，建築工程占47.54%，其他業務占0.03%。土木工程範圍包括道路、捷運、鐵路、高架橋樑、隧道、土方整地及天然氣儲槽；建築工程涵蓋社會住宅、廠房、學校、一般住宅與辦公大樓。公司全資持有以投資為主要業務的新加坡新亞科技開發，並透過該公司全資持有南通新悅健康管理，後者主要經營健康諮詢、健康管理及母嬰護理。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_civil
+  name: 土木工程
+  period: '2025'
+  revenue_share_pct: 52.43
+- evidence_ids:
+  - e2
+  id: seg_building
+  name: 建築工程
+  period: '2025'
+  revenue_share_pct: 47.54
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 0.03
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過新加坡新亞科技間接持有的全資子公司
+    details:
+    - 透過新加坡新亞科技間接持有的全資子公司
+    edge: ebaa6930239dc
+    evidence_level: primary
+    id: org.南通新悅健康管理有限公司
+    name: 南通新悅健康管理有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的投資控股子公司
+    details:
+    - 直接持股100%的投資控股子公司
+    edge: ed13404ec56d5
+    evidence_level: primary
+    id: org.新加坡新亞科技開發股份有限公司
+    name: 新加坡新亞科技開發股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.newasia.com.tw/
 tax_id: '11762504'
 incorporated: '1967-12-04'
 listed: '1993-05-25'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2516#e1:
+    locator: 新亞建設開發股份有限公司簡介
+    published_date: null
+    publisher: 新亞建設開發股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.newasia.com.tw/about
+  tw.2516#e2:
+    locator: 第55頁，二、市場及產銷概況／主要產品銷售；欄位依序為113、114年度營業比率
+    published_date: null
+    publisher: 新亞建設開發股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://firebasestorage.googleapis.com/v0/b/newasia-dev.firebasestorage.app/o/public-information%2Fannual-report%2F2026-be436f36%2FDownload-9280bfa6.pdf?alt=media&token=afeb98d6-6ae1-4cae-a369-22af17ea6000
+  tw.2516#e3:
+    locator: 第55頁，主要產品及用途／土木工程
+    published_date: null
+    publisher: 新亞建設開發股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://firebasestorage.googleapis.com/v0/b/newasia-dev.firebasestorage.app/o/public-information%2Fannual-report%2F2026-be436f36%2FDownload-9280bfa6.pdf?alt=media&token=afeb98d6-6ae1-4cae-a369-22af17ea6000
+  tw.2516#e4:
+    locator: 第55頁，主要產品及用途／建築工程
+    published_date: null
+    publisher: 新亞建設開發股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://firebasestorage.googleapis.com/v0/b/newasia-dev.firebasestorage.app/o/public-information%2Fannual-report%2F2026-be436f36%2FDownload-9280bfa6.pdf?alt=media&token=afeb98d6-6ae1-4cae-a369-22af17ea6000
+  tw.2516#e5:
+    locator: 附註四（二）合併基礎，第10頁，列入合併財務報告之子公司；115.6.30持股欄
+    published_date: null
+    publisher: 新亞建設開發股份有限公司
+    quote_check: found
+    title: 115年及114年第二季合併財務報告暨會計師核閱報告
+    url: https://firebasestorage.googleapis.com/v0/b/newasia-dev.firebasestorage.app/o/public-information%2Ffinancial-report%2F2026-aacae678%2FQ2consolidated-8dbc9233.pdf?alt=media&token=a41f0b6c-3e80-4e32-a44e-6701eebfda45
+  tw.2516#e6:
+    locator: 附註四（二）合併基礎，第10頁，列入合併財務報告之子公司；115.6.30持股欄
+    published_date: null
+    publisher: 新亞建設開發股份有限公司
+    quote_check: found
+    title: 115年及114年第二季合併財務報告暨會計師核閱報告
+    url: https://firebasestorage.googleapis.com/v0/b/newasia-dev.firebasestorage.app/o/public-information%2Ffinancial-report%2F2026-aacae678%2FQ2consolidated-8dbc9233.pdf?alt=media&token=a41f0b6c-3e80-4e32-a44e-6701eebfda45

@@ -8,7 +8,45 @@ industry:
   l0_code: '35'
   l0_name: 綠能環保
   l0_name_en: Green Energy and Environmental Services
-primary_chain_position: unknown
+  l1: energy
+  l1_name: 能源
+  l1_name_en: Energy & Utilities
+  l2: energy.green
+  l2_name: 綠能
+  l2_name_en: Renewable Energy
+  l3: green.solar
+  l3_name: 太陽能
+  l3_name_en: Solar
+chain: chain.solar
+chain_stage:
+  agreement: both
+  also: []
+  reason: 能源產品占營收79%，以逆變器、功率優化器及儲能系統為主，屬下游太陽能系統應用。
+  stage: system
+  stage_name: 系統與電廠
+  tier: downstream
+primary_chain_position: downstream
+summary_short: 以太陽能逆變器、優化器及儲能設備銷售為主，另經營液晶顯示器模組。
+summary_long: 新門科技以能源產品及液晶顯示器模組為主要業務，2025年營業比重分別為79%與21%。能源產品包含太陽能逆變器、功率優化器及家用、商用表後儲能系統；逆變器將太陽能板直流電轉為交流電，優化器用於調整模組電壓與電流。顯示業務提供液晶顯示器模組，並投入Mini-LED背光技術等特殊顯示方案開發。所羅門為母公司，2026年6月底直接及間接合計持股51.41%。
+segments:
+- evidence_ids:
+  - e1
+  id: energy
+  name: 能源產品
+  period: '2025'
+  revenue_share_pct: 79
+- evidence_ids:
+  - e1
+  id: display
+  name: TFT-LCM零組件
+  period: '2025'
+  revenue_share_pct: 21
+main_theme: theme.mini_led
+themes:
+- also: []
+  stage: display
+  theme: theme.mini_led
+  tier: downstream
 relations:
   parents:
   - as_of: '2026-06-30'
@@ -17,6 +55,7 @@ relations:
     detail: 液晶面板製造及銷售子公司
     details:
     - 液晶面板製造及銷售子公司
+    - 母公司；直接及間接合計持股51.41%
     edge: ef8af1a7ebf1d
     evidence_level: primary
     id: tw.2359
@@ -24,12 +63,61 @@ relations:
     ranking_basis: unranked
     share_basis: null
     share_pct: null
-    weight: 1
+    weight: 2
 website: https://www.solomon-es.com.tw
 tax_id: '23746488'
 incorporated: '1990-05-21'
 listed: '2000-03-21'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.5432#e1:
+    locator: 印刷頁68，主要業務內容及其比重
+    published_date: null
+    publisher: 新門科技股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.solomon-es.com.tw/wp-content/uploads/2026/06/114%E6%96%B0%E9%96%80%E7%A7%91%E6%8A%80%E5%B9%B4%E5%A0%B1.pdf
+  tw.5432#e2:
+    locator: 印刷頁68，目前主要商品項目
+    published_date: null
+    publisher: 新門科技股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.solomon-es.com.tw/wp-content/uploads/2026/06/114%E6%96%B0%E9%96%80%E7%A7%91%E6%8A%80%E5%B9%B4%E5%A0%B1.pdf
+  tw.5432#e3:
+    locator: 印刷頁68，目前主要商品項目之產品項目欄
+    published_date: null
+    publisher: 新門科技股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.solomon-es.com.tw/wp-content/uploads/2026/06/114%E6%96%B0%E9%96%80%E7%A7%91%E6%8A%80%E5%B9%B4%E5%A0%B1.pdf
+  tw.5432#e4:
+    locator: 產品資訊／太陽能變流器說明
+    published_date: null
+    publisher: 新門科技股份有限公司
+    quote_check: found
+    title: 太陽能變流器
+    url: https://www.solomon-es.com.tw/category/products/solar-inverter/
+  tw.5432#e5:
+    locator: 產品資訊／功率優化器說明
+    published_date: null
+    publisher: 新門科技股份有限公司
+    quote_check: found
+    title: 功率優化器
+    url: https://www.solomon-es.com.tw/category/products/power-optimizer/
+  tw.5432#e6:
+    locator: 印刷頁3，TFT LCM零組件之技術開發
+    published_date: null
+    publisher: 新門科技股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.solomon-es.com.tw/wp-content/uploads/2026/06/114%E6%96%B0%E9%96%80%E7%A7%91%E6%8A%80%E5%B9%B4%E5%A0%B1.pdf
+  tw.5432#e7:
+    locator: 第32頁，關係人交易之母公司控制關係
+    published_date: '2026-08-06'
+    publisher: 新門科技股份有限公司
+    quote_check: found
+    title: 2026年第2季財務報告英文版
+    url: https://www.solomon-es.com.tw/wp-content/uploads/2026/08/DAV-Financial-Statements-and-Independent-Auditors-Review-Report2026Q2.pdf

@@ -8,12 +8,171 @@ industry:
   l0_code: '28'
   l0_name: 電子零組件業
   l0_name_en: Electronic Parts and Components
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.connector
+  l3_name: 連接器與線材
+  l3_name_en: Connectors & Cables
+primary_chain_position: midstream
+summary_short: 以線材與連接器製造為主，兼營資訊系統整合及維護服務。
+summary_long: 鴻名主要經營線材暨連接器，以及電腦資訊系統整合與維護服務，2025年營收占比分別為61.88%及38.12%。製造業務涵蓋電腦、家電、汽車與事務機器相關線組、線材、連接器及電子零組件的研發、生產和銷售。資訊服務包含電腦軟硬體買賣、電腦系統及週邊整合銷售，以及系統建置、導入和維護。主要轉投資包括展昇資訊、JIUN TAI CORPORATION LIMITED，另持有菲律賓、泰國與印度相關子公司股權。
+segments:
+- evidence_ids:
+  - e2
+  id: wire_connector
+  name: 線材暨連接器
+  period: '2025'
+  revenue_share_pct: 61.88
+- evidence_ids:
+  - e2
+  id: it_services
+  name: 電腦資訊系統整合及維護服務
+  period: '2025'
+  revenue_share_pct: 38.12
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 菲律賓子公司；直接持股99.995%
+    details:
+    - 菲律賓子公司；直接持股99.995%
+    edge: e21a8c26de9b3
+    evidence_level: primary
+    id: org.celeraise-electronic-corporation
+    name: CELERAISE ELECTRONIC CORPORATION
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 印度子公司；直接持股70%
+    details:
+    - 印度子公司；直接持股70%
+    edge: e23a52ef8a306
+    evidence_level: primary
+    id: org.celeraise-electronics-india-private-limited
+    name: CELERAISE ELECTRONICS INDIA PRIVATE LIMITED
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 泰國子公司；直接持股99.9997%
+    details:
+    - 泰國子公司；直接持股99.9997%
+    edge: e260705199e1d
+    evidence_level: primary
+    id: org.celeraise-thailand-co-ltd
+    name: Celeraise (Thailand) Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的子公司
+    details:
+    - 直接持股100%的子公司
+    edge: e521184c6b054
+    evidence_level: primary
+    id: org.jiun-tai-corporation-limited
+    name: JIUN TAI CORPORATION LIMITED
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的子公司
+    details:
+    - 直接持股100%的子公司
+    edge: ed3613a881875
+    evidence_level: primary
+    id: org.展昇資訊股份有限公司
+    name: 展昇資訊股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.welltend.com.tw
 tax_id: '84274833'
 incorporated: '1993-05-25'
 listed: '2002-08-26'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3021#e10:
+    locator: 第90頁，114年12月31日轉投資事業綜合持股比例表
+    published_date: null
+    publisher: 鴻名企業股份有限公司
+    quote_check: found
+    title: 鴻名企業股份有限公司114年度年報
+    url: https://doc.twse.com.tw/pdf/2025_3021_20260617F04_20261023_180248.pdf
+  tw.3021#e2:
+    locator: 第97頁，主要營業收入來源及營業比重
+    published_date: null
+    publisher: 鴻名企業股份有限公司
+    quote_check: found
+    title: 鴻名企業股份有限公司114年度年報
+    url: https://doc.twse.com.tw/pdf/2025_3021_20260617F04_20261023_180248.pdf
+  tw.3021#e3:
+    locator: 第97頁，公司所營業務範圍第1項
+    published_date: null
+    publisher: 鴻名企業股份有限公司
+    quote_check: found
+    title: 鴻名企業股份有限公司114年度年報
+    url: https://doc.twse.com.tw/pdf/2025_3021_20260617F04_20261023_180248.pdf
+  tw.3021#e4:
+    locator: 第97頁，公司所營業務範圍第2項
+    published_date: null
+    publisher: 鴻名企業股份有限公司
+    quote_check: found
+    title: 鴻名企業股份有限公司114年度年報
+    url: https://doc.twse.com.tw/pdf/2025_3021_20260617F04_20261023_180248.pdf
+  tw.3021#e5:
+    locator: 第99頁，產業上、中、下游之關聯性
+    published_date: null
+    publisher: 鴻名企業股份有限公司
+    quote_check: found
+    title: 鴻名企業股份有限公司114年度年報
+    url: https://doc.twse.com.tw/pdf/2025_3021_20260617F04_20261023_180248.pdf
+  tw.3021#e6:
+    locator: 第90頁，114年12月31日轉投資事業綜合持股比例表
+    published_date: null
+    publisher: 鴻名企業股份有限公司
+    quote_check: found
+    title: 鴻名企業股份有限公司114年度年報
+    url: https://doc.twse.com.tw/pdf/2025_3021_20260617F04_20261023_180248.pdf
+  tw.3021#e7:
+    locator: 第90頁，114年12月31日轉投資事業綜合持股比例表
+    published_date: null
+    publisher: 鴻名企業股份有限公司
+    quote_check: found
+    title: 鴻名企業股份有限公司114年度年報
+    url: https://doc.twse.com.tw/pdf/2025_3021_20260617F04_20261023_180248.pdf
+  tw.3021#e8:
+    locator: 第90頁，114年12月31日轉投資事業綜合持股比例表
+    published_date: null
+    publisher: 鴻名企業股份有限公司
+    quote_check: found
+    title: 鴻名企業股份有限公司114年度年報
+    url: https://doc.twse.com.tw/pdf/2025_3021_20260617F04_20261023_180248.pdf
+  tw.3021#e9:
+    locator: 第90頁，114年12月31日轉投資事業綜合持股比例表
+    published_date: null
+    publisher: 鴻名企業股份有限公司
+    quote_check: found
+    title: 鴻名企業股份有限公司114年度年報
+    url: https://doc.twse.com.tw/pdf/2025_3021_20260617F04_20261023_180248.pdf

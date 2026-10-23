@@ -8,12 +8,233 @@ industry:
   l0_code: '05'
   l0_name: 電機機械
   l0_name_en: Electric Machinery
-primary_chain_position: unknown
+  l1: auto
+  l1_name: 汽車與運具
+  l1_name_en: Automotive & Mobility
+  l2: auto.vehicles
+  l2_name: 汽機車
+  l2_name_en: Autos & Motorcycles
+  l3: auto.parts
+  l3_name: 汽車零組件
+  l3_name_en: Auto Parts
+chain: chain.auto
+chain_stage:
+  agreement: both
+  also: []
+  reason: 最大營收部門為車身金屬沖壓焊接件，另供應車用光學部件與燈具。
+  stage: parts
+  stage_name: 汽車零組件與模組
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 以汽車金屬沖壓焊接件、車用光學產品及太陽能工程取得營收。
+summary_long: 元創精密以集團方式經營汽車零組件，主要產品涵蓋車身金屬沖壓焊接件、車用導光板、膠框、透鏡及相關模具，並提供車用照明與自行車LED燈具。2026年上半年以金屬沖壓為最大外部營收部門，其次為光學射出與太陽能事業。汽車金屬件業務透過襄陽元創、湖南寶元及河南寶合元等子公司營運，光學產品由坦德科技承作，太陽能案場設計、施工與維運則由元傑光電等子公司經營。公司雖僅持有坦德科技36.91%股權，仍因董事會控制安排將其納入合併報表。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_metal
+  name: 金屬沖壓
+  period: 2026-01-01至2026-06-30
+  revenue_share_pct: null
+- evidence_ids:
+  - e1
+  id: seg_optical
+  name: 光學射出
+  period: 2026-01-01至2026-06-30
+  revenue_share_pct: null
+- evidence_ids:
+  - e1
+  id: seg_solar
+  name: 太陽能事業
+  period: 2026-01-01至2026-06-30
+  revenue_share_pct: null
+main_theme: theme.ev
+themes:
+- also: []
+  stage: parts
+  theme: theme.ev
+  tier: midstream
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 再生能源設備建置及維運子公司
+    details:
+    - 再生能源設備建置及維運子公司
+    edge: eae36c98d66ed
+    evidence_level: primary
+    id: org.元傑光電系統股份有限公司
+    name: 元傑光電系統股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 投資控股子公司
+    details:
+    - 投資控股子公司
+    edge: e521ad22c8aef
+    evidence_level: primary
+    id: org.元創新綠能股份有限公司
+    name: 元創新綠能股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過襄陽元創持有的汽車零組件子公司
+    details:
+    - 透過襄陽元創持有的汽車零組件子公司
+    edge: ed7a4404d4e9d
+    evidence_level: primary
+    id: org.河南寶合元汽車配件有限公司
+    name: 河南寶合元汽車配件有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持有的汽車零組件子公司
+    details:
+    - 間接持有的汽車零組件子公司
+    edge: e9d558775c8f7
+    evidence_level: primary
+    id: org.湖南寶元汽車部件有限公司
+    name: 湖南寶元汽車部件有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接全資汽車零組件子公司
+    details:
+    - 間接全資汽車零組件子公司
+    edge: ef7c177004304
+    evidence_level: primary
+    id: org.襄陽元創汽車零部件實業有限公司
+    name: 襄陽元創汽車零部件實業有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 具控制力的光學業務子公司
+    details:
+    - 具控制力的光學業務子公司
+    edge: e08a3188c3542
+    evidence_level: primary
+    id: tw.6867
+    name: 坦德科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: Http://www.tradetools.com.tw
 tax_id: '52811070'
 incorporated: '1983-09-27'
 listed: '2010-12-08'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3685#e1:
+    locator: 第56頁，十四、部門資訊，2026年上半年外部收入
+    published_date: '2026-08-11'
+    publisher: 元創精密車業股份有限公司
+    quote_check: found
+    title: 2026年第二季合併財務報告
+    url: https://www.tradetools.com.tw/pdf/financial/115Q2.pdf
+  tw.3685#e10:
+    locator: 第14頁，合併財務報表編製主體表
+    published_date: '2026-08-11'
+    publisher: 元創精密車業股份有限公司
+    quote_check: found
+    title: 2026年第二季合併財務報告
+    url: https://www.tradetools.com.tw/pdf/financial/115Q2.pdf
+  tw.3685#e11:
+    locator: 第14頁，合併財務報表編製主體表
+    published_date: '2026-08-11'
+    publisher: 元創精密車業股份有限公司
+    quote_check: found
+    title: 2026年第二季合併財務報告
+    url: https://www.tradetools.com.tw/pdf/financial/115Q2.pdf
+  tw.3685#e12:
+    locator: 第14頁，合併財務報表編製主體表
+    published_date: '2026-08-11'
+    publisher: 元創精密車業股份有限公司
+    quote_check: found
+    title: 2026年第二季合併財務報告
+    url: https://www.tradetools.com.tw/pdf/financial/115Q2.pdf
+  tw.3685#e13:
+    locator: 第14頁，合併財務報表編製主體表
+    published_date: '2026-08-11'
+    publisher: 元創精密車業股份有限公司
+    quote_check: found
+    title: 2026年第二季合併財務報告
+    url: https://www.tradetools.com.tw/pdf/financial/115Q2.pdf
+  tw.3685#e2:
+    locator: 第17頁，產品技術－車用金屬部件沖壓焊接
+    published_date: '2025-12-29'
+    publisher: 元創精密車業股份有限公司
+    quote_check: found
+    title: 2025年12月法人說明會簡報
+    url: https://www.tradetools.com.tw/cn/pdf/investor-conference/2025.pdf
+  tw.3685#e3:
+    locator: 第18頁，產品技術－車用光學部件射出、車燈光學開發
+    published_date: '2025-12-29'
+    publisher: 元創精密車業股份有限公司
+    quote_check: found
+    title: 2025年12月法人說明會簡報
+    url: https://www.tradetools.com.tw/cn/pdf/investor-conference/2025.pdf
+  tw.3685#e4:
+    locator: 第16頁，公司簡介－基本資料
+    published_date: '2025-12-29'
+    publisher: 元創精密車業股份有限公司
+    quote_check: found
+    title: 2025年12月法人說明會簡報
+    url: https://www.tradetools.com.tw/cn/pdf/investor-conference/2025.pdf
+  tw.3685#e5:
+    locator: 第19頁，產品技術－再生能源發電設備建置
+    published_date: '2025-12-29'
+    publisher: 元創精密車業股份有限公司
+    quote_check: found
+    title: 2025年12月法人說明會簡報
+    url: https://www.tradetools.com.tw/cn/pdf/investor-conference/2025.pdf
+  tw.3685#e6:
+    locator: 第31頁，新能源車產品應用
+    published_date: '2025-12-29'
+    publisher: 元創精密車業股份有限公司
+    quote_check: found
+    title: 2025年12月法人說明會簡報
+    url: https://www.tradetools.com.tw/cn/pdf/investor-conference/2025.pdf
+  tw.3685#e7:
+    locator: 第32頁，集團分佈－坦德科技
+    published_date: '2025-12-29'
+    publisher: 元創精密車業股份有限公司
+    quote_check: found
+    title: 2025年12月法人說明會簡報
+    url: https://www.tradetools.com.tw/cn/pdf/investor-conference/2025.pdf
+  tw.3685#e8:
+    locator: 第14頁，合併概況，註1
+    published_date: '2026-08-11'
+    publisher: 元創精密車業股份有限公司
+    quote_check: found
+    title: 2026年第二季合併財務報告
+    url: https://www.tradetools.com.tw/pdf/financial/115Q2.pdf
+  tw.3685#e9:
+    locator: 第14頁，合併財務報表編製主體表
+    published_date: '2026-08-11'
+    publisher: 元創精密車業股份有限公司
+    quote_check: found
+    title: 2026年第二季合併財務報告
+    url: https://www.tradetools.com.tw/pdf/financial/115Q2.pdf

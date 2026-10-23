@@ -8,12 +8,136 @@ industry:
   l0_code: '22'
   l0_name: 生技醫療業
   l0_name_en: Biotechnology and Medical Care
-primary_chain_position: unknown
+  l1: consumer
+  l1_name: 消費
+  l1_name_en: Consumer
+  l2: cons.staples
+  l2_name: 民生消費
+  l2_name_en: Consumer Staples
+  l3: consumer.household
+  l3_name: 家用品與個人護理
+  l3_name_en: Household & Personal Products
+primary_chain_position: not_applicable
+summary_short: 以洗護髮、染髮及個人清潔用品為主，另經營醫藥產品銷售。
+summary_long: 美吾華以個人清潔與美髮用品為主要業務，產品涵蓋洗護髮、染髮、沐浴及個人保養，並具備研發、生產與品牌經營能力。另設醫藥事業部，從事國內外醫療健康產品引進與銷售，官網列有懷特血寶凍晶注射劑、懷特痛寶軟膠囊等品項。2026年上半年，美吾髮事業部收入高於醫藥事業部，為主要營收來源。海外架構包括直接持有的薩摩亞美吾華，以及經該公司間接持有的香港美吾華與美吾髮化妝品（上海）有限公司。
+segments:
+- evidence_ids:
+  - e_segments
+  id: seg_hair
+  name: 美吾髮事業部
+  period: 2026年上半年
+  revenue_share_pct: null
+- evidence_ids:
+  - e_segments
+  id: seg_pharma
+  name: 醫藥事業部
+  period: 2026年上半年
+  revenue_share_pct: null
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有之投資控股子公司
+    details:
+    - 直接持有之投資控股子公司
+    edge: eb9ef8af4d239
+    evidence_level: primary
+    id: org.maywufa-corporation-samoa
+    name: 薩摩亞 MAYWUFA CORPORATION
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過香港美吾華間接持有之化妝品批發子公司
+    details:
+    - 透過香港美吾華間接持有之化妝品批發子公司
+    edge: e113869bacff7
+    evidence_level: primary
+    id: org.maywufa-cosmetics-shanghai
+    name: 美吾髮化妝品（上海）有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過薩摩亞美吾華間接持有之子公司
+    details:
+    - 透過薩摩亞美吾華間接持有之子公司
+    edge: e1b375b257a14
+    evidence_level: primary
+    id: org.maywufa-hongkong-corporation
+    name: MAYWUFA HONGKONG CORPORATION LIMITED
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.maywufa.com.tw
 tax_id: '14089976'
 incorporated: '1976-10-01'
 listed: '2001-09-17'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1731#e_identity:
+    locator: 基本資料：公司名稱、股票代號及主要業務
+    published_date: null
+    publisher: 美吾華股份有限公司
+    quote_check: found
+    title: 基本資料
+    url: https://www.maywufa.com.tw/tw/basic
+  tw.1731#e_pharma_business:
+    locator: Deeply Rooted in the Market, Creating a Beautiful Life
+    published_date: null
+    publisher: 美吾華股份有限公司
+    quote_check: found
+    title: Company Overview
+    url: https://www.maywufa.com.tw/en/about/company
+  tw.1731#e_pharma_products:
+    locator: 醫藥保健
+    published_date: null
+    publisher: 美吾華股份有限公司
+    quote_check: found
+    title: 品牌介紹
+    url: https://www.maywufa.com.tw/tw/brand
+  tw.1731#e_products:
+    locator: 深耕市場，打造美麗生活
+    published_date: null
+    publisher: 美吾華股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.maywufa.com.tw/tw/about/company
+  tw.1731#e_segments:
+    locator: 第46頁，附註三五（一）部門收入與營運結果；金額單位為新台幣仟元
+    published_date: '2026-08-13'
+    publisher: 美吾華股份有限公司
+    quote_check: found
+    title: 美吾華股份有限公司及子公司民國115及114年第2季合併財務報告
+    url: https://www.maywufa.com.tw/uploads/images/M115Q2CON.pdf
+  tw.1731#e_sub_hongkong:
+    locator: 第49頁，附表二；投資公司為薩摩亞 MAYWUFA CORPORATION之列，持股比率100.00%
+    published_date: '2026-08-13'
+    publisher: 美吾華股份有限公司
+    quote_check: found
+    title: 美吾華股份有限公司及子公司民國115及114年第2季合併財務報告
+    url: https://www.maywufa.com.tw/uploads/images/M115Q2CON.pdf
+  tw.1731#e_sub_samoa:
+    locator: 第20頁，附註十一子公司；美吾華股份有限公司投資列
+    published_date: '2026-08-13'
+    publisher: 美吾華股份有限公司
+    quote_check: found
+    title: 美吾華股份有限公司及子公司民國115及114年第2季合併財務報告
+    url: https://www.maywufa.com.tw/uploads/images/M115Q2CON.pdf
+  tw.1731#e_sub_shanghai:
+    locator: 第49頁，附表二；投資公司為MAYWUFA HONGKONG CORPORATION LIMITED之列，持股比率100.00%
+    published_date: '2026-08-13'
+    publisher: 美吾華股份有限公司
+    quote_check: found
+    title: 美吾華股份有限公司及子公司民國115及114年第2季合併財務報告
+    url: https://www.maywufa.com.tw/uploads/images/M115Q2CON.pdf

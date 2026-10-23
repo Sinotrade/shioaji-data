@@ -8,12 +8,123 @@ industry:
   l0_code: '36'
   l0_name: 數位雲端
   l0_name_en: Digital and Cloud Services
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.software
+  l2_name: 軟體與資訊服務
+  l2_name_en: Software & IT Services
+  l3: sw.internet
+  l3_name: 網路平台與電子商務
+  l3_name_en: Internet Platforms & E-commerce
+chain: chain.finance
+chain_stage:
+  agreement: both
+  also: []
+  reason: 主要營收來自跨境金流與匯款服務，屬金融服務；電信預付卡銷售占比低。
+  stage: na
+  stage_name: 金融服務
+  tier: not_applicable
+primary_chain_position: not_applicable
+summary_short: 以跨境匯款平台提供外籍工作者金流服務，另銷售電信預付卡。
+summary_long: 東聯互動主要提供臺灣外籍工作者跨境金流服務，透過行動應用程式提供匯款服務。2025年度合併營收中，跨境金流服務收入為新臺幣559,481千元，商品銷售收入為5,629千元，商品主要為電信預付卡。公司官網說明，應用程式整合數位身分認證、數據探勘分析與人工智慧，應用於交易驗證及金融服務。依2025年底合併財報，東聯國際股份有限公司及Kabayan International Ltd.均為全資子公司，主要業務均為匯款服務。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_remittance
+  name: 跨境金流服務
+  period: 2025年度
+  revenue_share_pct: null
+- evidence_ids:
+  - e2
+  id: seg_telecom
+  name: 商品銷售，主要為電信預付卡
+  period: 2025年度
+  revenue_share_pct: null
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資匯款服務子公司
+    details:
+    - 全資匯款服務子公司
+    edge: e3d5eaa7eb06f
+    evidence_level: primary
+    id: org.eastern-union-international
+    name: 東聯國際股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資匯款服務子公司
+    details:
+    - 全資匯款服務子公司
+    edge: e712328752ff4
+    evidence_level: primary
+    id: org.kabayan-international
+    name: Kabayan International Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.eui.money
 tax_id: '65279409'
 incorporated: '2016-08-26'
 listed: '2025-10-16'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.7738#e1:
+    locator: 第39頁，附註六、14營業收入；欄序為114年度、113年度
+    published_date: '2026-03-13'
+    publisher: 東聯互動股份有限公司
+    quote_check: found
+    title: 東聯互動股份有限公司及子公司114年度合併財務報告
+    url: https://www.eui.money/wp-content/uploads/2026/03/114Q4_%E6%9D%B1%E8%81%AF%E4%BA%92%E5%8B%95_%E5%90%88%E4%BD%B5.pdf
+  tw.7738#e2:
+    locator: 第39頁，附註六、14營業收入；欄序為114年度、113年度
+    published_date: '2026-03-13'
+    publisher: 東聯互動股份有限公司
+    quote_check: found
+    title: 東聯互動股份有限公司及子公司114年度合併財務報告
+    url: https://www.eui.money/wp-content/uploads/2026/03/114Q4_%E6%9D%B1%E8%81%AF%E4%BA%92%E5%8B%95_%E5%90%88%E4%BD%B5.pdf
+  tw.7738#e3:
+    locator: 第18頁，附註四、3合併概況；子公司及所持有權益百分比
+    published_date: '2026-03-13'
+    publisher: 東聯互動股份有限公司
+    quote_check: found
+    title: 東聯互動股份有限公司及子公司114年度合併財務報告
+    url: https://www.eui.money/wp-content/uploads/2026/03/114Q4_%E6%9D%B1%E8%81%AF%E4%BA%92%E5%8B%95_%E5%90%88%E4%BD%B5.pdf
+  tw.7738#e4:
+    locator: 第18頁，附註四、3合併概況；子公司及所持有權益百分比
+    published_date: '2026-03-13'
+    publisher: 東聯互動股份有限公司
+    quote_check: found
+    title: 東聯互動股份有限公司及子公司114年度合併財務報告
+    url: https://www.eui.money/wp-content/uploads/2026/03/114Q4_%E6%9D%B1%E8%81%AF%E4%BA%92%E5%8B%95_%E5%90%88%E4%BD%B5.pdf
+  tw.7738#e5:
+    locator: 第56頁，附註十四部門資訊
+    published_date: '2026-03-13'
+    publisher: 東聯互動股份有限公司
+    quote_check: found
+    title: 東聯互動股份有限公司及子公司114年度合併財務報告
+    url: https://www.eui.money/wp-content/uploads/2026/03/114Q4_%E6%9D%B1%E8%81%AF%E4%BA%92%E5%8B%95_%E5%90%88%E4%BD%B5.pdf
+  tw.7738#e6:
+    locator: 公司介紹
+    published_date: null
+    publisher: 東聯互動股份有限公司
+    quote_check: found
+    title: HOME - EASTERN UNION INTERACTIVE
+    url: https://www.eui.money/
+  tw.7738#e7:
+    locator: 技術：我們的APP整合高端技術
+    published_date: null
+    publisher: 東聯互動股份有限公司
+    quote_check: found
+    title: 首頁 - EASTERN UNION INTERACTIVE
+    url: https://www.eui.money/zh/

@@ -8,12 +8,220 @@ industry:
   l0_code: '28'
   l0_name: 電子零組件業
   l0_name_en: Electronic Parts and Components
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.semi
+  l2_name: 半導體
+  l2_name_en: Semiconductors
+  l3: semi.materials
+  l3_name: 半導體材料與耗材
+  l3_name_en: Semiconductor Materials & Consumables
+chain: chain.semiconductor
+chain_stage:
+  agreement: both
+  also: []
+  reason: 半導體業務占營收49%為最大來源，主要產品導線架屬晶片封裝材料。
+  stage: wafer_materials
+  stage_name: 矽晶圓與材料
+  tier: upstream
+primary_chain_position: upstream
+summary_short: 製造銷售半導體導線架、電子零組件、繼電器與步進馬達。
+summary_long: 百容電子以半導體導線架、電子零組件、繼電器與步進馬達為主要業務。2025年營收中，半導體占49%，電子零組件占26%，繼電器占13%，步進馬達占12%。導線架產品涵蓋二極體、積體電路與橋式整流器用途；電子零組件包括程式開關、端子台及連接器。公司另提供IC/BGA用均溫片，依表面處理需求提供不同電鍍層產品。電動車相關開發方面，2024年度已完成充電樁電源模組用導線架開發與送樣。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_semiconductor
+  name: 半導體
+  period: '2025'
+  revenue_share_pct: 49
+- evidence_ids:
+  - e1
+  id: seg_components
+  name: 電子零組件
+  period: '2025'
+  revenue_share_pct: 26
+- evidence_ids:
+  - e1
+  id: seg_relay
+  name: 繼電器
+  period: '2025'
+  revenue_share_pct: 13
+- evidence_ids:
+  - e1
+  id: seg_motor
+  name: 步進馬達
+  period: '2025'
+  revenue_share_pct: 12
+main_theme: theme.ev
+themes:
+- also: []
+  stage: parts
+  theme: theme.ev
+  tier: midstream
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有子公司
+    details:
+    - 直接持有子公司
+    edge: e3e3505e939a4
+    evidence_level: primary
+    id: org.excel-cell-electronic-u-s-a-co-ltd
+    name: Excel Cell Electronic (U.S.A.) Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有子公司
+    details:
+    - 直接持有子公司
+    edge: e2e5c4e5acc42
+    evidence_level: primary
+    id: org.fulltron-investments-limited
+    name: Fulltron Investments Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有子公司
+    details:
+    - 直接持有子公司
+    edge: edfd67fa05ca3
+    evidence_level: primary
+    id: org.安徽百容電子有限公司
+    name: 安徽百容電子有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有子公司
+    details:
+    - 直接持有子公司
+    edge: e4fa3c93860be
+    evidence_level: primary
+    id: org.廣容科技股份有限公司
+    name: 廣容科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過Fulltron Samoa間接持有子公司
+    details:
+    - 透過Fulltron Samoa間接持有子公司
+    edge: e5c9c132fba04
+    evidence_level: primary
+    id: org.百容電子-蘇州-有限公司
+    name: 百容電子（蘇州）有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 電動車充電樁電源模組導線架開發案的新客戶未具名。
 website: http://www.ece.com.tw
 tax_id: '52753108'
 incorporated: '1981-12-08'
 listed: '2001-09-17'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2483#e1:
+    locator: 第55頁，營業比重；各列依序為2024及2025年度金額與百分比
+    published_date: '2026-03-31'
+    publisher: 百容電子股份有限公司
+    quote_check: found
+    title: 百容電子股份有限公司一一四年年報
+    url: https://www.ece.com.tw/uploads/invest/annual_report/2025_2483_2025_Annual_Report_C.pdf
+  tw.2483#e10:
+    locator: 第20頁，附註十一子公司；本公司投資Fulltron Samoa列，2026年6月30日持股100%
+    published_date: null
+    publisher: 百容電子股份有限公司
+    quote_check: found
+    title: 百容電子股份有限公司及子公司民國115及114年第2季合併財務報告
+    url: https://www.ece.com.tw/uploads/invest/financial_report/2026/115Q2.pdf
+  tw.2483#e11:
+    locator: 第20頁，附註十一子公司；本公司投資安徽百容列，2026年6月30日持股100%
+    published_date: null
+    publisher: 百容電子股份有限公司
+    quote_check: found
+    title: 百容電子股份有限公司及子公司民國115及114年第2季合併財務報告
+    url: https://www.ece.com.tw/uploads/invest/financial_report/2026/115Q2.pdf
+  tw.2483#e12:
+    locator: 第20頁，附註十一子公司；Fulltron Samoa投資百容電子（蘇州）列，2026年6月30日持股100%
+    published_date: null
+    publisher: 百容電子股份有限公司
+    quote_check: found
+    title: 百容電子股份有限公司及子公司民國115及114年第2季合併財務報告
+    url: https://www.ece.com.tw/uploads/invest/financial_report/2026/115Q2.pdf
+  tw.2483#e2:
+    locator: 第55頁，公司目前之商品及服務項目
+    published_date: '2026-03-31'
+    publisher: 百容電子股份有限公司
+    quote_check: found
+    title: 百容電子股份有限公司一一四年年報
+    url: https://www.ece.com.tw/uploads/invest/annual_report/2025_2483_2025_Annual_Report_C.pdf
+  tw.2483#e3:
+    locator: 產品頁標題
+    published_date: null
+    publisher: 百容電子股份有限公司
+    quote_check: found
+    title: 半導體導線架-二極體/積體電路/橋式整流器
+    url: https://www.ece.com.tw/zh-tw/lead-frame-of-semiconductors-for-discrete-devices-integrated-circuit
+  tw.2483#e4:
+    locator: 產品頁標題與規格表
+    published_date: null
+    publisher: 百容電子股份有限公司
+    quote_check: not_found
+    title: 光耦繼電器
+    url: https://www.ece.com.tw/zh-tw/relays/mos-relay
+  tw.2483#e5:
+    locator: 產品頁標題與規格表
+    published_date: null
+    publisher: 百容電子股份有限公司
+    quote_check: found
+    title: 永磁型步進馬達
+    url: https://www.ece.com.tw/zh-tw/stepping-motor/stepping-motor-pm-type
+  tw.2483#e6:
+    locator: 產品說明
+    published_date: null
+    publisher: 百容電子股份有限公司
+    quote_check: found
+    title: IC/BGA用均溫片
+    url: https://www.ece.com.tw/zh-tw/heat-spreader-for-bga
+  tw.2483#e7:
+    locator: 第9頁，2024年度營業報告書，研究發展狀況
+    published_date: null
+    publisher: 百容電子股份有限公司
+    quote_check: found
+    title: 百容電子股份有限公司一一四年股東常會議事手冊
+    url: https://www.ece.com.tw/uploads/invest/shareholders_meeting/114/2483_2025Meeting_Handbook-C.pdf
+  tw.2483#e8:
+    locator: 第20頁，附註十一子公司；本公司投資廣容科技列，2026年6月30日持股80%
+    published_date: null
+    publisher: 百容電子股份有限公司
+    quote_check: found
+    title: 百容電子股份有限公司及子公司民國115及114年第2季合併財務報告
+    url: https://www.ece.com.tw/uploads/invest/financial_report/2026/115Q2.pdf
+  tw.2483#e9:
+    locator: 第20頁，附註十一子公司；本公司投資ECE USA列，2026年6月30日持股100%
+    published_date: null
+    publisher: 百容電子股份有限公司
+    quote_check: found
+    title: 百容電子股份有限公司及子公司民國115及114年第2季合併財務報告
+    url: https://www.ece.com.tw/uploads/invest/financial_report/2026/115Q2.pdf

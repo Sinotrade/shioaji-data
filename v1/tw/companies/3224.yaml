@@ -8,12 +8,176 @@ industry:
   l0_code: '29'
   l0_name: 電子通路業
   l0_name_en: Electronic Products Distribution
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.distribution
+  l2_name: 電子通路
+  l2_name_en: Electronics Distribution
+  l3: dist.components
+  l3_name: 電子零組件通路
+  l3_name_en: Electronic Components Distribution
+primary_chain_position: downstream
+summary_short: 以連接器等電子零組件代理銷售為主，另經營細胞治療與細胞製造服務。
+summary_long: 三顧主要經營電子零組件代理銷售，產品包括電路板連接元件。2025年合併電子材料批發及零售收入為14.62億元，生醫相關收入為5,198.7萬元，電子業務為主要收入來源。生醫事業涵蓋自主研發的M Cell自體纖維母細胞療法、膝軟骨細胞層片與iPSC家族細胞儲存服務。2026年法說會另揭露以GMP製造能力承接人類血小板裂解液培養添加劑製造。樂迦再生為合併子公司，從事細胞治療產品委託開發與製造服務。
+segments:
+- evidence_ids:
+  - e3
+  id: electronics
+  name: 電子材料批發及零售
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e3
+  id: biomedical
+  name: 生醫相關事業
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e3
+  id: other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: null
+main_theme: theme.ai_server
+themes:
+- also: []
+  stage: components
+  theme: theme.ai_server
+  tier: midstream
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持有的新加坡電子材料通路子公司
+    details:
+    - 間接持有的新加坡電子材料通路子公司
+    edge: e2c731c2f4d1a
+    evidence_level: primary
+    id: org.metatech-s-pte-ltd
+    name: MetaTech (S) Pte Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持有的深圳電子材料通路子公司
+    details:
+    - 間接持有的深圳電子材料通路子公司
+    edge: e055d7072c9f2
+    evidence_level: primary
+    id: org.三顧貿易-深圳-有限公司
+    name: 三顧貿易(深圳)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 具控制能力並納入合併的細胞治療CDMO子公司
+    details:
+    - 具控制能力並納入合併的細胞治療CDMO子公司
+    edge: ef72cc4aa4d90
+    evidence_level: primary
+    id: tw.6891
+    name: 樂迦再生科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: WWW.METATECH.COM.TW
 tax_id: '16657495'
 incorporated: '1998-09-17'
 listed: '2004-06-03'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3224#e1:
+    locator: 公司簡介第二段
+    published_date: null
+    publisher: 三顧股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.metatech.com.tw/tw/company/about
+  tw.3224#e10:
+    locator: 第12頁，合併子公司表註1
+    published_date: null
+    publisher: 三顧股份有限公司
+    quote_check: found
+    title: 三顧股份有限公司及子公司114年度合併財務報告
+    url: https://www.metatech.com.tw/upload/quarterly/2025-CONSOL.pdf
+  tw.3224#e11:
+    locator: 第12頁，列入合併財務報告之子公司表
+    published_date: null
+    publisher: 三顧股份有限公司
+    quote_check: found
+    title: 三顧股份有限公司及子公司114年度合併財務報告
+    url: https://www.metatech.com.tw/upload/quarterly/2025-CONSOL.pdf
+  tw.3224#e12:
+    locator: 第12頁，列入合併財務報告之子公司表
+    published_date: null
+    publisher: 三顧股份有限公司
+    quote_check: found
+    title: 三顧股份有限公司及子公司114年度合併財務報告
+    url: https://www.metatech.com.tw/upload/quarterly/2025-CONSOL.pdf
+  tw.3224#e2:
+    locator: Samtec產品介紹
+    published_date: null
+    publisher: 三顧股份有限公司
+    quote_check: found
+    title: 產品線
+    url: https://www.metatech.com.tw/tw/electronic/productline
+  tw.3224#e3:
+    locator: 第56頁，十四、部門資訊，（二）產品別及勞務別資訊；金額單位新台幣千元
+    published_date: null
+    publisher: 三顧股份有限公司
+    quote_check: found
+    title: 三顧股份有限公司及子公司114年度合併財務報告
+    url: https://www.metatech.com.tw/upload/quarterly/2025-CONSOL.pdf
+  tw.3224#e4:
+    locator: 技術核心
+    published_date: null
+    publisher: 三顧生醫
+    quote_check: found
+    title: 關於我們
+    url: https://bio.metatech.com.tw/about/
+  tw.3224#e5:
+    locator: 生醫業務介紹
+    published_date: null
+    publisher: 三顧股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.metatech.com.tw/tw/company/about
+  tw.3224#e6:
+    locator: 歷史沿革，2024年
+    published_date: null
+    publisher: 三顧生醫
+    quote_check: found
+    title: 關於我們
+    url: https://bio.metatech.com.tw/about/
+  tw.3224#e7:
+    locator: 第11頁，hPL Supplement製造分工圖
+    published_date: '2026-10-15'
+    publisher: 三顧股份有限公司
+    quote_check: found
+    title: 2026法人說明會
+    url: https://www.metatech.com.tw/upload/results_call/mt_results_20261015.pdf
+  tw.3224#e8:
+    locator: 第7頁，電子事業群近三年績效變化及市場占比，2023至2025年
+    published_date: '2026-10-15'
+    publisher: 三顧股份有限公司
+    quote_check: found
+    title: 2026法人說明會
+    url: https://www.metatech.com.tw/upload/results_call/mt_results_20261015.pdf
+  tw.3224#e9:
+    locator: 第11頁，四（三）2、列入合併財務報告之子公司
+    published_date: null
+    publisher: 三顧股份有限公司
+    quote_check: found
+    title: 三顧股份有限公司及子公司114年度合併財務報告
+    url: https://www.metatech.com.tw/upload/quarterly/2025-CONSOL.pdf

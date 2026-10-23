@@ -8,14 +8,32 @@ industry:
   l0_code: '22'
   l0_name: 生技醫療業
   l0_name_en: Biotechnology and Medical Care
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.hardware
+  l2_name: 電腦與硬體
+  l2_name_en: Computers & Hardware
+  l3: hw.industrial_pc
+  l3_name: 工業電腦與嵌入式系統
+  l3_name_en: Industrial PCs & Embedded Systems
+primary_chain_position: not_applicable
+summary_short: 以醫療用電腦的設計、製造與銷售為主要業務。
+summary_long: 醫揚以醫療用電腦的設計、製造與銷售為主要業務，產品涵蓋醫療人工智慧運算平台。ACCEL-VM1000為支援雙顯示卡的醫療AI邊緣電腦；美國子公司官網另列MD116E醫療平板，具雙電池熱插拔設計，並支援選配5G。依2025年第三季財報，研揚為醫揚母公司；醫揚旗下美國與上海子公司從事醫療用電腦及週邊裝置銷售，荷蘭子公司則負責相關產品的行銷支援及維修。
+main_theme: theme.5g
+themes:
+- also: []
+  stage: devices
+  theme: theme.5g
+  tier: downstream
 relations:
   parents:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 納入合併財報的受控制子公司
+    detail: 直接母公司
     details:
+    - 直接母公司
     - 納入合併財報的受控制子公司
     edge: ec4d2572db0cf
     evidence_level: primary
@@ -24,12 +42,104 @@ relations:
     ranking_basis: unranked
     share_basis: null
     share_pct: null
+    weight: 2
+  subsidiaries:
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 荷蘭行銷支援及維修子公司
+    details:
+    - 荷蘭行銷支援及維修子公司
+    edge: e431583cf94ef
+    evidence_level: primary
+    id: org.onyx-healthcare-europe
+    name: ONYX HEALTHCARE EUROPE B.V.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 上海醫療電腦銷售子公司
+    details:
+    - 上海醫療電腦銷售子公司
+    edge: e69e28a04946c
+    evidence_level: primary
+    id: org.onyx-healthcare-shanghai
+    name: 醫揚電子科技(上海)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 美國醫療電腦銷售子公司
+    details:
+    - 美國醫療電腦銷售子公司
+    edge: e8300b5a9b1fa
+    evidence_level: primary
+    id: org.onyx-healthcare-usa
+    name: ONYX HEALTHCARE USA, INC.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
     weight: 1
 website: http://www.onyx-healthcare.com/
 tax_id: '29135647'
 incorporated: '2010-02-02'
 listed: '2016-12-21'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6569#e1:
+    locator: 第72頁，附表五；投資公司為研揚，醫揚列之主要營業項目、期末持股比例及備註
+    published_date: '2025-11-06'
+    publisher: 研揚科技股份有限公司
+    quote_check: found
+    title: 研揚科技股份有限公司及子公司民國114年及113年第三季合併財務報告
+    url: https://newdata.aaeon.com.tw/download/prenentations/Consolidated_Financial_Report_for_the_Third_Quarter_of_Year_114.pdf
+  tw.6569#e2:
+    locator: 第17頁，附註四(三)2子公司表；醫揚投資之美國子公司列，業務及三期持股比例均列於同列
+    published_date: '2025-11-06'
+    publisher: 研揚科技股份有限公司
+    quote_check: found
+    title: 研揚科技股份有限公司及子公司民國114年及113年第三季合併財務報告
+    url: https://newdata.aaeon.com.tw/download/prenentations/Consolidated_Financial_Report_for_the_Third_Quarter_of_Year_114.pdf
+  tw.6569#e3:
+    locator: 第17頁，附註四(三)2子公司表；醫揚投資之荷蘭子公司列，業務及三期持股比例均列於同列
+    published_date: '2025-11-06'
+    publisher: 研揚科技股份有限公司
+    quote_check: found
+    title: 研揚科技股份有限公司及子公司民國114年及113年第三季合併財務報告
+    url: https://newdata.aaeon.com.tw/download/prenentations/Consolidated_Financial_Report_for_the_Third_Quarter_of_Year_114.pdf
+  tw.6569#e4:
+    locator: 第17頁，附註四(三)2子公司表；醫揚投資之上海子公司列，業務及三期持股比例均列於同列
+    published_date: '2025-11-06'
+    publisher: 研揚科技股份有限公司
+    quote_check: found
+    title: 研揚科技股份有限公司及子公司民國114年及113年第三季合併財務報告
+    url: https://newdata.aaeon.com.tw/download/prenentations/Consolidated_Financial_Report_for_the_Third_Quarter_of_Year_114.pdf
+  tw.6569#e5:
+    locator: 型錄第14頁，ACCEL-VM1000產品標示
+    published_date: null
+    publisher: Onyx Healthcare Inc.（MedicalExpo刊載公司產品型錄）
+    quote_check: found
+    title: 2026 Products update brochure
+    url: https://pdf.medicalexpo.com/pdf/onyx-healthcare-inc/2026-products-update-brochure/78355-295781.html
+  tw.6569#e6:
+    locator: MD116E產品頁標題及主要特色
+    published_date: null
+    publisher: Onyx Healthcare USA, Inc.
+    quote_check: found
+    title: MD116E Medical Grade Tablet
+    url: https://www.onyxhealthcareusa.com/product/md116e-medical-grade-tablet-copy/
+  tw.6569#e7:
+    locator: Specification，LTE+GPS欄
+    published_date: null
+    publisher: Onyx Healthcare USA, Inc.
+    quote_check: found
+    title: MD116E Medical Grade Tablet
+    url: https://www.onyxhealthcareusa.com/product/md116e-medical-grade-tablet-copy/

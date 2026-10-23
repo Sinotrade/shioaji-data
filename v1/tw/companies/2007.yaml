@@ -8,12 +8,88 @@ industry:
   l0_code: '10'
   l0_name: 鋼鐵工業
   l0_name_en: Iron and Steel
-primary_chain_position: unknown
+  l1: materials
+  l1_name: 原物料
+  l1_name_en: Materials
+  l2: mat.metals
+  l2_name: 金屬
+  l2_name_en: Metals
+  l3: metal.steel
+  l3_name: 鋼鐵
+  l3_name_en: Steel
+chain: chain.steel
+chain_stage:
+  agreement: both
+  also: []
+  reason: 主要製造不鏽鋼、碳鋼等線材盤元，屬軋延鋼材，供下游加工為螺絲等製品。
+  stage: midstream
+  stage_name: 軋延與鋼材
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 製造與銷售不鏽鋼、碳鋼、合金鋼及快削鋼線材盤元。
+summary_long: 燁興主要製造與銷售線材盤元，產品涵蓋不鏽鋼、碳鋼、合金鋼及快削鋼線材，屬鋼鐵產業鏈的軋延鋼材中游。2025年營收中，不鏽鋼系列約占51%，非不鏽鋼系列及其他約占49%，公司僅有單一應報導部門。其線材供下游加工為螺絲、螺帽、細線、彈簧、磨光棒及焊條等製品，用於各式工業零件。燁輝企業股份有限公司為其母公司，依燁輝2025年報，截至2025年底直接持股57.41%。
+segments:
+- evidence_ids:
+  - e2
+  id: stainless
+  name: 不鏽鋼系列
+  period: '2025'
+  revenue_share_pct: 51
+- evidence_ids:
+  - e2
+  id: non_stainless_other
+  name: 非不鏽鋼系列及其他
+  period: '2025'
+  revenue_share_pct: 49
+relations:
+  parents:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 控制母公司
+    details:
+    - 控制母公司
+    edge: e01128161c94d
+    evidence_level: primary
+    id: tw.2023
+    name: 燁輝
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.yheco.com.tw
 tax_id: '75992214'
 incorporated: '1978-07-18'
 listed: '1988-10-04'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2007#e2:
+    locator: 第61頁，肆、營運概況／一、業務內容／營業比重
+    published_date: '2026-04-30'
+    publisher: 燁興企業股份有限公司（FinancialFilings轉載）
+    quote_check: unreachable
+    title: 燁興企業股份有限公司114年年度報告
+    url: https://financialfilings.com/filings/yh-2007/annual-report/2026/47965767/
+  tw.2007#e3:
+    locator: 第61頁，主要商品及服務項目；營業比重
+    published_date: '2026-04-30'
+    publisher: 燁興企業股份有限公司（FinancialFilings轉載）
+    quote_check: unreachable
+    title: 燁興企業股份有限公司114年年度報告
+    url: https://financialfilings.com/filings/yh-2007/annual-report/2026/47965767/
+  tw.2007#e4:
+    locator: 第63頁，產業上、中、下游之關聯性
+    published_date: '2026-04-30'
+    publisher: 燁興企業股份有限公司（FinancialFilings轉載）
+    quote_check: unreachable
+    title: 燁興企業股份有限公司114年年度報告
+    url: https://financialfilings.com/filings/yh-2007/annual-report/2026/47965767/
+  tw.2007#e5:
+    locator: 第80頁（PDF第84頁），截至114年12月31日綜合持股比例表；本公司投資欄
+    published_date: null
+    publisher: 燁輝企業股份有限公司
+    quote_check: found
+    title: 燁輝企業股份有限公司114年年報
+    url: https://yiehphui.com.tw/upload/myfiles/finance/annual/115/3.pdf

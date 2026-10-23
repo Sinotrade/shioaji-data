@@ -66,6 +66,18 @@ members:
   source: classification
   stage: null
   tier: null
+- id: tw.5432
+  detail: 能源產品占營收79%，以逆變器、功率優化器及儲能系統為主，屬下游太陽能系統應用。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.5432#e1
+  - tw.5432#e4
+  - tw.5432#e5
+  confidence: ai_cross_checked
+  source: classification
+  stage: system
+  tier: downstream
+  stage_role: primary
 - id: tw.6244
   detail: 光電事業占營收91.39%，主製電池與模組；另提供系統整合及發電售電。
   as_of: '2026-10-18'
@@ -113,6 +125,30 @@ members:
   source: classification
   stage: system
   tier: downstream
+  stage_role: also
+- id: tw.6477
+  detail: 售電收入占67.38%為最大來源，屬系統與電廠；另製造太陽能電池模組，占20.70%。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.6477#e1
+  - tw.6477#e2
+  - tw.6477#e5
+  confidence: ai_cross_checked
+  source: classification
+  stage: system
+  tier: downstream
+  stage_role: primary
+- id: tw.6477
+  detail: 售電收入占67.38%為最大來源，屬系統與電廠；另製造太陽能電池模組，占20.70%。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.6477#e1
+  - tw.6477#e2
+  - tw.6477#e5
+  confidence: ai_cross_checked
+  source: classification
+  stage: cell
+  tier: midstream
   stage_role: also
 - id: tw.6538
   detail: 太陽能電池印刷網版占營收85.53%，屬電池製造用工具及耗材。
@@ -136,4 +172,4 @@ members:
   stage: system
   tier: downstream
   stage_role: primary
-as_of: '2026-10-18'
+as_of: '2026-10-23'

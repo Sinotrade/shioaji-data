@@ -8,12 +8,128 @@ industry:
   l0_code: '05'
   l0_name: 電機機械
   l0_name_en: Electric Machinery
-primary_chain_position: unknown
+  l1: auto
+  l1_name: 汽車與運具
+  l1_name_en: Automotive & Mobility
+  l2: auto.vehicles
+  l2_name: 汽機車
+  l2_name_en: Autos & Motorcycles
+  l3: auto.parts
+  l3_name: 汽車零組件
+  l3_name_en: Auto Parts
+chain: chain.auto
+chain_stage:
+  agreement: both
+  also: []
+  reason: 氣體發生器占營收60.64%，為最大業務，產品包含汽車安全氣囊用氣體發生器，屬汽車零組件。
+  stage: parts
+  stage_name: 汽車零組件與模組
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 製造高壓充氣鋼瓶，並透過子公司經營安全氣囊氣體發生器。
+summary_long: 元翎集團以高壓充氣鋼瓶與氣體發生器為核心業務。2024年氣體發生器占合併營收60.64%，高壓充氣鋼瓶占36.32%，其他占3.04%。氣體發生器業務由全資子公司元翊精密工業經營，產品涵蓋汽車安全氣囊及穿戴式防護用途。公司亦提供小鋼瓶、奶油瓶與蘇打瓶等餐飲用品，另有商用電子式膨脹閥，應用於空調與熱泵系統；官網並列有純電垂直起降無人機產品。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_inflators
+  name: 氣體發生器
+  period: '2024'
+  revenue_share_pct: 60.64
+- evidence_ids:
+  - e2
+  id: seg_chargers
+  name: 高壓充氣鋼瓶
+  period: '2024'
+  revenue_share_pct: 36.32
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他
+  period: '2024'
+  revenue_share_pct: 3.04
+main_theme: theme.drone
+themes:
+- also: []
+  stage: system
+  theme: theme.drone
+  tier: downstream
+relations:
+  subsidiaries:
+  - as_of: '2025-04-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司，經營氣體發生器業務
+    details:
+    - 全資子公司，經營氣體發生器業務
+    edge: e79436aead999
+    evidence_level: primary
+    id: org.元翊精密工業股份有限公司
+    name: 元翊精密工業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.twmosa.com/tw
 tax_id: '23019109'
 incorporated: '1988-07-11'
 listed: '2019-03-07'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4564#e1:
+    locator: 公司簡介首段
+    published_date: null
+    publisher: 元翎精密工業股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.twmosa.com/aboutmosa
+  tw.4564#e2:
+    locator: 第63頁，所營業務之營業比重；欄序為112年度金額、占比及113年度金額、占比
+    published_date: '2025-04-30'
+    publisher: 元翎精密工業股份有限公司
+    quote_check: found
+    title: 元翎精密工業股份有限公司113年度年報
+    url: https://www.twmosa.com/storage/architecture/page~102/page~114/page~119/2025/2024_04.pdf
+  tw.4564#e3:
+    locator: 第63頁，所營業務主要內容
+    published_date: '2025-04-30'
+    publisher: 元翎精密工業股份有限公司
+    quote_check: found
+    title: 元翎精密工業股份有限公司113年度年報
+    url: https://www.twmosa.com/storage/architecture/page~102/page~114/page~119/2025/2024_04.pdf
+  tw.4564#e4:
+    locator: 產品應用，生活美食
+    published_date: null
+    publisher: 元翎精密工業股份有限公司
+    quote_check: found
+    title: 元翎精密工業股份有限公司官網
+    url: https://www.twmosa.com/
+  tw.4564#e5:
+    locator: 產品介紹
+    published_date: null
+    publisher: 元翎精密工業股份有限公司
+    quote_check: found
+    title: 商用電子式膨脹閥EXV
+    url: https://www.twmosa.com/exv
+  tw.4564#e6:
+    locator: 垂直起降無人機產品頁，無人機特色／高續航純電系統
+    published_date: null
+    publisher: 元翎精密工業股份有限公司
+    quote_check: found
+    title: UAV無人機－VTOL無人機整機製造，消防巡檢測繪首選－元翎精密
+    url: https://www.twmosa.com/vtol-uav
+  tw.4564#e7:
+    locator: 第58頁，轉投資事業持股表，本公司投資欄，資料日期2025年4月30日
+    published_date: '2025-04-30'
+    publisher: 元翎精密工業股份有限公司
+    quote_check: found
+    title: 元翎精密工業股份有限公司113年度年報
+    url: https://www.twmosa.com/storage/architecture/page~102/page~114/page~119/2025/2024_04.pdf
+  tw.4564#e8:
+    locator: 2019年
+    published_date: null
+    publisher: 元翎精密工業股份有限公司
+    quote_check: found
+    title: 公司沿革
+    url: https://www.twmosa.com/history-page196

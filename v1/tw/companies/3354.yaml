@@ -8,12 +8,165 @@ industry:
   l0_code: '28'
   l0_name: 電子零組件業
   l0_name_en: Electronic Parts and Components
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.ccl
+  l3_name: 銅箔基板與上游材料
+  l3_name_en: Copper Clad Laminates & Materials
+chain: chain.pcb
+chain_stage:
+  agreement: both
+  also:
+  - stage: ccl
+    stage_name: 銅箔基板
+    tier: midstream
+  reason: 純膠為營收最大項，屬軟板上游材料；另製造軟性銅箔基材，跨銅箔基板階段。
+  stage: materials
+  stage_name: 銅箔、玻纖布、樹脂
+  tier: upstream
+primary_chain_position: upstream
+summary_short: 研發製造軟板用純膠、銅箔基材、保護膠片及功能性聚醯亞胺材料。
+summary_long: 律勝研發與製造軟性電路板用材料，產品包括純膠、軟性銅箔基材及保護膠片。2024年個體財報以純膠營收最高，軟板基材及保護膠片次之，另列原料及在製品與其他收入。公司亦提供耐彎折透明聚醯亞胺薄膜，應用於捲曲式顯示器與可撓式電子產品；負型感光聚醯亞胺材料則用於先進封裝重配線層。5G高速FPC產品為低介電常數、低介電損失的高頻純膠，可接合銅箔基材與絕緣膜材。
+segments:
+- evidence_ids:
+  - e7
+  id: seg_adhesive
+  name: 純膠
+  period: 2024年度（個體）
+  revenue_share_pct: null
+- evidence_ids:
+  - e7
+  id: seg_fpc_materials
+  name: 軟板基材及保護膠片
+  period: 2024年度（個體）
+  revenue_share_pct: null
+- evidence_ids:
+  - e7
+  id: seg_raw_wip
+  name: 原料及在製品
+  period: 2024年度（個體）
+  revenue_share_pct: null
+- evidence_ids:
+  - e7
+  id: seg_other
+  name: 其他
+  period: 2024年度（個體）
+  revenue_share_pct: null
+main_theme: theme.5g
+themes:
+- also: []
+  stage: components
+  theme: theme.5g
+  tier: upstream
+relations:
+  subsidiaries:
+  - as_of: '2025-07-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 薩摩亞控股子公司
+    details:
+    - 薩摩亞控股子公司
+    edge: e089ffd2beb09
+    evidence_level: primary
+    id: org.microcosm-technology-samoa-holdings
+    name: 律勝科技（薩摩亞）控股有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-07-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 蘇州子公司
+    details:
+    - 蘇州子公司
+    edge: ec224c4286742
+    evidence_level: primary
+    id: org.microcosm-technology-suzhou
+    name: 律勝科技(蘇州)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 台灣子公司
+    details:
+    - 台灣子公司
+    edge: e543b444e5b6d
+    evidence_level: primary
+    id: org.xucan-materials
+    name: 旭燦材料股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.microcosm.com.tw
 tax_id: '97330127'
 incorporated: '1996-12-05'
 listed: '2005-12-08'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3354#e2:
+    locator: 產品標題
+    published_date: null
+    publisher: 律勝科技股份有限公司
+    quote_check: found
+    title: 單面軟性銅箔基材產品介紹
+    url: https://microcosmtech.com/fpcbnpcb/有膠系單面軟性銅箔基材/
+  tw.3354#e3:
+    locator: 高信賴性、低溢膠保護膠片
+    published_date: null
+    publisher: 律勝科技股份有限公司
+    quote_check: found
+    title: 保護膠片產品介紹
+    url: https://microcosmtech.com/fpcbnpcb/黃色保護膠片/
+  tw.3354#e4:
+    locator: 極致耐彎折透明聚醯亞胺薄膜；產品應用情境
+    published_date: null
+    publisher: 律勝科技股份有限公司
+    quote_check: found
+    title: 透明PI薄膜產品介紹
+    url: https://microcosmtech.com/displaymat/耐彎折透明聚醯亞胺膜/
+  tw.3354#e5:
+    locator: 高解析度RDL重配線層感光材料
+    published_date: null
+    publisher: 律勝科技股份有限公司
+    quote_check: found
+    title: 負型感光PI介電材料產品介紹
+    url: https://microcosmtech.com/scmaterials/n-pspi-負型感光介電材料/
+  tw.3354#e6:
+    locator: 高頻高速傳輸解決方案
+    published_date: null
+    publisher: 律勝科技股份有限公司
+    quote_check: found
+    title: 5G高速FPC膠材產品介紹
+    url: https://microcosmtech.com/fpcbnpcb/5g高速fpc材料/
+  tw.3354#e7:
+    locator: 印刷頁72／PDF第79頁，營業收入明細表，單位新台幣仟元
+    published_date: '2025-02-27'
+    publisher: 律勝科技股份有限公司
+    quote_check: unreachable
+    title: 113年度個體財務報告暨會計師查核報告
+    url: https://microcosmtech.com/wp-content/uploads/2026/04/113年第​​四季個體財報.pdf
+  tw.3354#e8:
+    locator: 114年度運作情形，114年7月30日議案
+    published_date: null
+    publisher: 律勝科技股份有限公司
+    quote_check: found
+    title: 審計委員會運作資訊
+    url: https://microcosmtech.com/audit_committee/
+  tw.3354#e9:
+    locator: 印刷頁46／PDF第46頁，關係人之名稱及關係
+    published_date: '2025-02-27'
+    publisher: 律勝科技股份有限公司
+    quote_check: found
+    title: 113年度個體財報之關係人資料
+    url: https://microcosmtech.com/wp-content/uploads/2026/04/113%E5%B9%B4%E7%AC%AC%E5%9B%9B%E5%AD%A3%E5%80%8B%E9%AB%94%E8%B2%A1%E5%A0%B1.pdf

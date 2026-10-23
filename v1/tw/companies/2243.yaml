@@ -8,13 +8,160 @@ industry:
   l0_code: '12'
   l0_name: 汽車工業
   l0_name_en: Automobile
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.machinery
+  l2_name: 機械與自動化
+  l2_name_en: Machinery & Automation
+  l3: mach.equipment
+  l3_name: 專用設備（非半導體）
+  l3_name_en: Specialty Equipment (Non-semiconductor)
+chain: chain.auto
+chain_stage:
+  agreement: both
+  also: []
+  reason: 營收93.72%來自汽車鈑金模具，屬製造用專用設備，非材料、電子元件、汽車零組件或整車售後。
+  stage: null
+  stage_name: null
+  tier: null
+primary_chain_position: upstream
+summary_short: 透過子公司研發、製造及銷售汽車車身鈑金模具與檢具。
+summary_long: 宏旭控股以集團方式經營汽車車身鈑金模具與檢具的研發、生產及銷售，產品用於車身鈑金成形及零件檢測。2025年汽車鈑金模具製造占營收93.72%，其他收入占6.28%，主要來自廢鐵料與廢材料等下腳料。公司另列有鋁合金材質模具的開發計畫。依2026年第二季財報，公司直接持有HORNG SHIUE INDUSTRIAL CO., LTD.全部股權，並透過該公司間接持有上海宏旭智能設備及浙江宏旭智能製造兩家汽車模具製造子公司全部股權。
+segments:
+- evidence_ids:
+  - e3
+  id: seg_molds
+  name: 汽車鈑金模具製造
+  period: '2025'
+  revenue_share_pct: 93.72
+- evidence_ids:
+  - e4
+  - e5
+  id: seg_other
+  name: 其他收入
+  period: '2025'
+  revenue_share_pct: 6.28
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%股權的控股子公司
+    details:
+    - 直接持有100%股權的控股子公司
+    edge: eeaceebd700b2
+    evidence_level: primary
+    id: org.horng-shiue-industrial
+    name: HORNG SHIUE INDUSTRIAL CO., LTD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過控股子公司間接持有100%股權
+    details:
+    - 透過控股子公司間接持有100%股權
+    edge: ef705c9f9e7f1
+    evidence_level: primary
+    id: org.shanghai-horng-shiue-intelligent-equipment
+    name: 上海宏旭智能設備有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過控股子公司間接持有100%股權
+    details:
+    - 透過控股子公司間接持有100%股權
+    edge: ee91b11a054b6
+    evidence_level: primary
+    id: org.zhejiang-horng-shiue-intelligent-manufacturing
+    name: 浙江宏旭智能製造有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.horngshiue.com
 tax_id: '55996613'
 incorporated: '2015-03-24'
 listed: '2017-09-27'
 foreign_registration: KY 開曼群島
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2243#e10:
+    locator: 財務報表附註，列入合併財務報表之子公司
+    published_date: '2026-08-31'
+    publisher: 宏旭控股股份有限公司；FinancialFilings轉載
+    quote_check: unreachable
+    title: 宏旭控股股份有限公司115年第二季合併財務報告
+    url: https://financialfilings.com/filings/hs-2243/interim-quarterly-report/2026/60579942/
+  tw.2243#e11:
+    locator: 財務報表附註，子公司表；引號承接上一列投資公司及業務性質
+    published_date: '2026-08-31'
+    publisher: 宏旭控股股份有限公司；FinancialFilings轉載
+    quote_check: unreachable
+    title: 宏旭控股股份有限公司115年第二季合併財務報告
+    url: https://financialfilings.com/filings/hs-2243/interim-quarterly-report/2026/60579942/
+  tw.2243#e2:
+    locator: 第40頁，伍、一、業務內容
+    published_date: '2026-08-05'
+    publisher: 宏旭控股股份有限公司
+    quote_check: found
+    title: 宏旭控股股份有限公司114年度年報（修訂版）
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51991/2026/RNS/51991_rns_2026-08-05_15c2a64f-1c6c-4e06-a46f-96018d766dc4.pdf
+  tw.2243#e3:
+    locator: 第40頁，公司目前之商品及其營業比重；依序為113、114年度
+    published_date: '2026-08-05'
+    publisher: 宏旭控股股份有限公司
+    quote_check: found
+    title: 宏旭控股股份有限公司114年度年報（修訂版）
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51991/2026/RNS/51991_rns_2026-08-05_15c2a64f-1c6c-4e06-a46f-96018d766dc4.pdf
+  tw.2243#e4:
+    locator: 第40頁，公司目前之商品及其營業比重；依序為113、114年度
+    published_date: '2026-08-05'
+    publisher: 宏旭控股股份有限公司
+    quote_check: found
+    title: 宏旭控股股份有限公司114年度年報（修訂版）
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51991/2026/RNS/51991_rns_2026-08-05_15c2a64f-1c6c-4e06-a46f-96018d766dc4.pdf
+  tw.2243#e5:
+    locator: 第40頁，公司目前之商品及其營業比重
+    published_date: '2026-08-05'
+    publisher: 宏旭控股股份有限公司
+    quote_check: found
+    title: 宏旭控股股份有限公司114年度年報（修訂版）
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51991/2026/RNS/51991_rns_2026-08-05_15c2a64f-1c6c-4e06-a46f-96018d766dc4.pdf
+  tw.2243#e6:
+    locator: 第41頁，產業概況
+    published_date: '2026-08-05'
+    publisher: 宏旭控股股份有限公司
+    quote_check: found
+    title: 宏旭控股股份有限公司114年度年報（修訂版）
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51991/2026/RNS/51991_rns_2026-08-05_15c2a64f-1c6c-4e06-a46f-96018d766dc4.pdf
+  tw.2243#e7:
+    locator: 第40頁，公司目前之商品及其營業比重
+    published_date: '2026-08-05'
+    publisher: 宏旭控股股份有限公司
+    quote_check: found
+    title: 宏旭控股股份有限公司114年度年報（修訂版）
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51991/2026/RNS/51991_rns_2026-08-05_15c2a64f-1c6c-4e06-a46f-96018d766dc4.pdf
+  tw.2243#e8:
+    locator: 第40頁，計劃開發之新商品項目
+    published_date: '2026-08-05'
+    publisher: 宏旭控股股份有限公司
+    quote_check: found
+    title: 宏旭控股股份有限公司114年度年報（修訂版）
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51991/2026/RNS/51991_rns_2026-08-05_15c2a64f-1c6c-4e06-a46f-96018d766dc4.pdf
+  tw.2243#e9:
+    locator: 財務報表附註，列入合併財務報表之子公司
+    published_date: '2026-08-31'
+    publisher: 宏旭控股股份有限公司；FinancialFilings轉載
+    quote_check: unreachable
+    title: 宏旭控股股份有限公司115年第二季合併財務報告
+    url: https://financialfilings.com/filings/hs-2243/interim-quarterly-report/2026/60579942/

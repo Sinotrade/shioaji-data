@@ -8,12 +8,205 @@ industry:
   l0_code: '31'
   l0_name: 其他電子業
   l0_name_en: Other Electronic
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.other
+  l3_name: 其他電子零組件
+  l3_name_en: Other Electronic Components
+primary_chain_position: not_applicable
+summary_short: 主要經營鍵盤導電薄膜、車用攝影機與特種電動車。
+summary_long: 淳安電子主要經營導電薄膜、車用電子及特種車。2025年營收以導電薄膜占46.12%最多，車電與特種車分別占32.70%及21.18%。集團旗下淳祥電子從事電腦鍵盤薄膜開關製造，淳敏電子研製車載攝影機與ECU，應用涵蓋倒車影像、環景及輔助駕駛系統；領鹿特種車產品包括電動高爾夫球車、觀光車、工具車與PTV。2026年另成立全資子公司淳臻科技，專注不鏽鋼無縫波紋管的研發、生產與銷售，布局AI伺服器液冷零組件。
+segments:
+- evidence_ids:
+  - e10
+  id: seg_membrane
+  name: 導電薄膜
+  period: '2025'
+  revenue_share_pct: 46.12
+- evidence_ids:
+  - e10
+  id: seg_auto_electronics
+  name: 車電
+  period: '2025'
+  revenue_share_pct: 32.7
+- evidence_ids:
+  - e10
+  id: seg_special_vehicle
+  name: 特種車
+  period: '2025'
+  revenue_share_pct: 21.18
+main_theme: theme.ev
+themes:
+- also: []
+  stage: vehicle
+  theme: theme.ev
+  tier: downstream
+- also: []
+  stage: components
+  theme: theme.ai_server
+  tier: midstream
+- also: []
+  stage: parts
+  theme: theme.liquid_cooling
+  tier: upstream
+relations:
+  subsidiaries:
+  - as_of: '2025-03-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團旗下車用電子公司
+    details:
+    - 集團旗下車用電子公司
+    edge: ec582da38916b
+    evidence_level: primary
+    id: org.jiaxing-chunmin-electronics
+    name: 嘉興淳敏電子有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-03-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團旗下導電薄膜製造公司
+    details:
+    - 集團旗下導電薄膜製造公司
+    edge: e04674ae517e0
+    evidence_level: primary
+    id: org.jiaxing-chunxiang-electronic-technology
+    name: 嘉興淳祥電子科技有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團旗下特種電動車公司
+    details:
+    - 集團旗下特種電動車公司
+    edge: efaa32bb9bf75
+    evidence_level: primary
+    id: org.jiaxing-linlu-special-vehicle
+    name: 嘉興領鹿特種車輛有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-19'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 新設全資液冷零組件子公司
+    details:
+    - 新設全資液冷零組件子公司
+    edge: edeeec8ae33bd
+    evidence_level: primary
+    id: org.淳臻科技
+    name: 淳臻科技
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.soe-ele.com
 tax_id: '89827686'
 incorporated: '1996-01-12'
 listed: '2008-01-21'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6283#e1:
+    locator: 集團簡介
+    published_date: null
+    publisher: 淳安電子
+    quote_check: found
+    title: 關於淳安
+    url: https://www.soe-ele.com/about/
+  tw.6283#e10:
+    locator: 基本資料／營收比重
+    published_date: null
+    publisher: 元富證券
+    quote_check: found
+    title: 個股基本資料－6283淳安
+    url: https://newjust.masterlink.com.tw/z/zc/zca/zca_6283.djhtm
+  tw.6283#e11:
+    locator: 事業體系／淳祥電子
+    published_date: null
+    publisher: 淳安電子
+    quote_check: found
+    title: 關於淳安
+    url: https://www.soe-ele.com/about/
+  tw.6283#e12:
+    locator: 事業體系／領鹿特種車
+    published_date: null
+    publisher: 淳安電子
+    quote_check: found
+    title: 關於淳安
+    url: https://www.soe-ele.com/about/
+  tw.6283#e13:
+    locator: 第82頁，關係企業基本資料註2及嘉興領鹿公司資料
+    published_date: '2025-04-29'
+    publisher: 淳安電子股份有限公司
+    quote_check: found
+    title: 淳安電子113年度年報
+    url: https://www.soe-ele.com/wp-content/uploads/2025/05/R1405000594%E6%B7%B3%E5%AE%89%E9%9B%BB%E5%AD%90%E5%B9%B4%E5%A0%B1%E4%B8%8A-1.pdf
+  tw.6283#e2:
+    locator: Membrane Switch 薄膜觸控開關
+    published_date: null
+    publisher: 淳安電子
+    quote_check: found
+    title: 3C薄膜
+    url: https://www.soe-ele.com/product/3cbaomo/
+  tw.6283#e3:
+    locator: 事業體系／淳敏電子
+    published_date: null
+    publisher: 淳安電子
+    quote_check: found
+    title: 關於淳安
+    url: https://www.soe-ele.com/about/
+  tw.6283#e4:
+    locator: 事業體系／領鹿特種車
+    published_date: null
+    publisher: 淳安電子
+    quote_check: found
+    title: 關於淳安
+    url: https://www.soe-ele.com/about/
+  tw.6283#e5:
+    locator: 第81頁，關係企業圖，資料日期114年3月13日
+    published_date: '2025-04-29'
+    publisher: 淳安電子股份有限公司
+    quote_check: found
+    title: 淳安電子113年度年報
+    url: https://www.soe-ele.com/wp-content/uploads/2025/05/R1405000594%E6%B7%B3%E5%AE%89%E9%9B%BB%E5%AD%90%E5%B9%B4%E5%A0%B1%E4%B8%8A-1.pdf
+  tw.6283#e6:
+    locator: 新聞稿第一段
+    published_date: '2026-03-19'
+    publisher: 淳安電子股份有限公司
+    quote_check: found
+    title: 淳安電子宣佈成立子公司「淳臻科技」，進軍AI高效能液冷市場
+    url: https://www.soe-ele.com/tou/news/chunanzixuanchenglizigongsichunzhenkejiaigaoxiaonengyelengshi.html
+  tw.6283#e7:
+    locator: 新聞稿第一段及工廠時程段落
+    published_date: '2026-03-19'
+    publisher: 淳安電子股份有限公司
+    quote_check: found
+    title: 淳安電子宣佈成立子公司「淳臻科技」，進軍AI高效能液冷市場
+    url: https://www.soe-ele.com/tou/news/chunanzixuanchenglizigongsichunzhenkejiaigaoxiaonengyelengshi.html
+  tw.6283#e8:
+    locator: 液冷系統應用說明
+    published_date: '2026-03-19'
+    publisher: 淳安電子股份有限公司
+    quote_check: found
+    title: 淳安電子宣佈成立子公司「淳臻科技」，進軍AI高效能液冷市場
+    url: https://www.soe-ele.com/tou/news/chunanzixuanchenglizigongsichunzhenkejiaigaoxiaonengyelengshi.html
+  tw.6283#e9:
+    locator: AI伺服器散熱應用說明
+    published_date: '2026-03-19'
+    publisher: 淳安電子股份有限公司
+    quote_check: found
+    title: 淳安電子宣佈成立子公司「淳臻科技」，進軍AI高效能液冷市場
+    url: https://www.soe-ele.com/tou/news/chunanzixuanchenglizigongsichunzhenkejiaigaoxiaonengyelengshi.html

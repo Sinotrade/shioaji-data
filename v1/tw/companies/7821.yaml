@@ -8,7 +8,51 @@ industry:
   l0_code: '12'
   l0_name: 汽車工業
   l0_name_en: Automobile
-primary_chain_position: unknown
+  l1: auto
+  l1_name: 汽車與運具
+  l1_name_en: Automotive & Mobility
+  l2: auto.vehicles
+  l2_name: 汽機車
+  l2_name_en: Autos & Motorcycles
+  l3: auto.electronics
+  l3_name: 車用電子
+  l3_name_en: Automotive Electronics
+chain: chain.auto
+chain_stage:
+  agreement: both
+  also: []
+  reason: 車用裝置及車載通訊系統占營收56.13%，主力為行車記錄器與車載平板，屬汽車電子零組件與模組。
+  stage: parts
+  stage_name: 汽車零組件與模組
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 以車用裝置、車載通訊系統及智慧聯網裝置的開發製造與銷售為主要業務。
+summary_long: 神數以車用裝置及車載通訊系統、智慧聯網裝置為兩大業務，2025年營收占比分別為56.13%、38.46%，其他業務占5.41%。車用產品包括K系列聯網型行車記錄器與MioWORK F840強固型車載平板，並提供VisionMax車隊雲端管理平台，整合車載影像與後台管理。智慧聯網產品涵蓋嵌入式邊緣運算系統、POS機及自助結帳系統。最新K系列導入5G通訊，支援多鏡頭影像傳輸。神達控股為其母公司。
+segments:
+- evidence_ids:
+  - e2
+  id: vehicle_devices
+  name: 車用裝置及車載通訊系統
+  period: '2025'
+  revenue_share_pct: 56.13
+- evidence_ids:
+  - e2
+  id: smart_connected_devices
+  name: 智慧聯網裝置
+  period: '2025'
+  revenue_share_pct: 38.46
+- evidence_ids:
+  - e2
+  id: other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 5.41
+main_theme: theme.5g
+themes:
+- also: []
+  stage: devices
+  theme: theme.5g
+  tier: downstream
 relations:
   parents:
   - as_of: '2026-10-14'
@@ -17,10 +61,54 @@ relations:
     detail: 主要子公司；車用電子與智聯網
     details:
     - 主要子公司；車用電子與智聯網
+    - 母公司
     edge: eb60e6f98c329
     evidence_level: primary
     id: tw.3706
     name: 神達
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 2
+  subsidiaries:
+  - as_of: '2025-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有的一般投資業子公司
+    details:
+    - 直接持有的一般投資業子公司
+    edge: e55fdffdd3119
+    evidence_level: primary
+    id: org.access-wisdom-holdings-ltd
+    name: Access Wisdom Holdings Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有的一般投資業子公司
+    details:
+    - 直接持有的一般投資業子公司
+    edge: e8e5cf2ebb99e
+    evidence_level: primary
+    id: org.mio-international-ltd
+    name: Mio International Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有的研發與技術諮詢子公司
+    details:
+    - 直接持有的研發與技術諮詢子公司
+    edge: e03a52994485c
+    evidence_level: primary
+    id: org.昆山研達電腦科技有限公司
+    name: 昆山研達電腦科技有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -29,7 +117,70 @@ website: https://www.mitacmdt.com
 tax_id: '69704320'
 incorporated: '2017-09-01'
 listed: '2026-04-20'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.7821#e10:
+    locator: 第13頁，附註四（三）2，子公司表；投資公司為神達數位，114年6月30日持股欄
+    published_date: null
+    publisher: 神達數位股份有限公司
+    quote_check: unreachable
+    title: 神達數位股份有限公司及子公司114年第二季合併財務報告
+    url: https://www.mitacmdt.com/media/zauatdlt/202502_7821_ai1_20250814_092548.pdf
+  tw.7821#e2:
+    locator: 第49頁，肆、營運概況／營業比重，114年度
+    published_date: null
+    publisher: 神達數位股份有限公司（FinancialFilings重刊）
+    quote_check: unreachable
+    title: 神達數位股份有限公司114年度年報
+    url: https://financialfilings.com/filings/mdt/annual-report/2026/48055359/
+  tw.7821#e3:
+    locator: 集團新訊，首段及頁尾公司名稱
+    published_date: '2026-04-20'
+    publisher: 神達控股股份有限公司
+    quote_check: found
+    title: 神達子公司神達數位（7821）掛牌上市
+    url: https://www.mitac.com/zh-TW/news_room/detail/MDT_Listing
+  tw.7821#e4:
+    locator: 軟硬深度整合：全方位360°零死角安全防護網
+    published_date: '2026-09-14'
+    publisher: 神達數位股份有限公司
+    quote_check: unreachable
+    title: 神達數位亮相2026 IAA Transportation
+    url: https://www.mitacmdt.com/tw/press-events-list/press-events-20260914/
+  tw.7821#e5:
+    locator: 最新K系列支援5G高速聯網與7路環景全記錄
+    published_date: '2026-09-14'
+    publisher: 神達數位股份有限公司
+    quote_check: unreachable
+    title: 神達數位亮相2026 IAA Transportation
+    url: https://www.mitacmdt.com/tw/press-events-list/press-events-20260914/
+  tw.7821#e6:
+    locator: 加速邊緣AI演進：兼具高效能與強固可靠性
+    published_date: '2026-03-11'
+    publisher: 神達數位股份有限公司
+    quote_check: unreachable
+    title: 神達數位亮相Embedded World 2026：以高效能強固型解決方案重新定義邊緣AI
+    url: https://www.mitacmdt.com/tw/press-events-list/press-events-20260311/
+  tw.7821#e7:
+    locator: 多角化布局AIoT與Edge AI打造第二成長引擎
+    published_date: '2026-04-20'
+    publisher: 神達數位股份有限公司
+    quote_check: unreachable
+    title: 工業Edge AI與智慧零售成就第二成長曲線
+    url: https://www.mitacmdt.com/tw/press-events-list/press-events-20260420/
+  tw.7821#e8:
+    locator: 第13頁，附註四（三）2，子公司表；投資公司為神達數位，114年6月30日持股欄
+    published_date: null
+    publisher: 神達數位股份有限公司
+    quote_check: unreachable
+    title: 神達數位股份有限公司及子公司114年第二季合併財務報告
+    url: https://www.mitacmdt.com/media/zauatdlt/202502_7821_ai1_20250814_092548.pdf
+  tw.7821#e9:
+    locator: 第13頁，附註四（三）2，子公司表；投資公司為神達數位，114年6月30日持股欄
+    published_date: null
+    publisher: 神達數位股份有限公司
+    quote_check: unreachable
+    title: 神達數位股份有限公司及子公司114年第二季合併財務報告
+    url: https://www.mitacmdt.com/media/zauatdlt/202502_7821_ai1_20250814_092548.pdf

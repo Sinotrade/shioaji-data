@@ -8,12 +8,123 @@ industry:
   l0_code: '24'
   l0_name: 半導體業
   l0_name_en: Semiconductor
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.semi
+  l2_name: 半導體
+  l2_name_en: Semiconductors
+  l3: semi.equipment
+  l3_name: 半導體設備
+  l3_name_en: Semiconductor Equipment
+chain: chain.semiconductor
+chain_stage:
+  agreement: both
+  also: []
+  reason: 半導體部門占營收68.97%，主營設備再生、零組件及ALD／PEALD設備。
+  stage: tools
+  stage_name: 設備與廠務
+  tier: upstream
+primary_chain_position: upstream
+summary_short: 集團主要經營半導體設備再生、零組件及PCB曝光設備。
+summary_long: 川寶集團以半導體設備再生與PCB曝光設備為主要業務。2025年半導體部門占營收68.97%，PCB部門占31.03%。PCB產品包括UV-LED防焊曝光機，以及適用內外層乾膜製程的LDI直接成像曝光機。子公司寶虹科技從事半導體設備再生，並提供自行開發的ALD／PEALD系統；寶驊科技亦為集團子公司。川寶另已完成TGV玻璃基板金屬化產線試產，拓展玻璃基板金屬化加工技術。
+segments:
+- evidence_ids:
+  - e1
+  id: semiconductor
+  name: 半導體部門
+  period: '2025'
+  revenue_share_pct: 68.97
+- evidence_ids:
+  - e1
+  id: pcb
+  name: PCB部門
+  period: '2025'
+  revenue_share_pct: 31.03
+relations:
+  subsidiaries:
+  - as_of: 2026-10
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團子公司
+    details:
+    - 集團子公司
+    edge: ee40078984c6a
+    evidence_level: primary
+    id: org.bao-hua-technology
+    name: 寶驊科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2026-10
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 半導體設備子公司
+    details:
+    - 半導體設備子公司
+    edge: e76c80c97d7ce
+    evidence_level: primary
+    id: org.bht-technology
+    name: 寶虹科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.cbtech.com.tw/
 tax_id: '16860440'
 incorporated: '1999-02-19'
 listed: '2011-10-04'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1595#e1:
+    locator: 第65頁，114年度營業比重
+    published_date: '2026-05-29'
+    publisher: 川寶科技股份有限公司
+    quote_check: found
+    title: 川寶科技股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/73115/2026/RNS/73115_rns_2026-06-01_c4113a87-550f-4c7f-82a3-ef10048b0290.pdf
+  tw.1595#e2:
+    locator: 產品名稱
+    published_date: null
+    publisher: 川寶科技股份有限公司
+    quote_check: found
+    title: Ledex-6710A/B全自動防焊UV-LED曝光機
+    url: https://www.cbtech.com.tw/web/product/product_in.jsp?pdid=PD1700710352725
+  tw.1595#e3:
+    locator: 產品介紹與適用製程
+    published_date: null
+    publisher: 川寶科技股份有限公司
+    quote_check: found
+    title: Gemini G25DAT/G40DAT/G50DAT LDI全自動內外層
+    url: https://www.cbtech.com.tw/web/product/product_in.jsp?pdid=PD1700795996045
+  tw.1595#e4:
+    locator: 公司簡介第二段
+    published_date: null
+    publisher: 川寶科技股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.cbtech.com.tw/web/about/about.jsp?lang=tw
+  tw.1595#e5:
+    locator: 為何選擇我們
+    published_date: null
+    publisher: 寶虹科技股份有限公司
+    quote_check: found
+    title: 寶虹科技官網
+    url: https://www.bhtsolution.com/index_tw.php
+  tw.1595#e6:
+    locator: BHT Offer
+    published_date: null
+    publisher: 寶虹科技股份有限公司
+    quote_check: found
+    title: ALD
+    url: https://www.bhtsolution.com/productdetail_en.php?id=5
+  tw.1595#e7:
+    locator: 第1頁，致股東報告書
+    published_date: '2026-05-29'
+    publisher: 川寶科技股份有限公司
+    quote_check: found
+    title: 川寶科技股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/73115/2026/RNS/73115_rns_2026-06-01_c4113a87-550f-4c7f-82a3-ef10048b0290.pdf

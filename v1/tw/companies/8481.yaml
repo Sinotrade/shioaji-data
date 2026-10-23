@@ -8,12 +8,230 @@ industry:
   l0_code: '20'
   l0_name: 其他業
   l0_name_en: Others
-primary_chain_position: unknown
+  l1: auto
+  l1_name: 汽車與運具
+  l1_name_en: Automotive & Mobility
+  l2: auto.bicycle
+  l2_name: 自行車
+  l2_name_en: Bicycles
+  l3: bike.parts
+  l3_name: 自行車零組件
+  l3_name_en: Bicycle Components
+primary_chain_position: midstream
+summary_short: 製造水轉、自黏及熱轉印貼標，主要用於自行車與運動器材外觀裝飾。
+summary_long: 政伸主要提供貼標印刷與轉印裝飾產品，包括水轉印、自黏、熱轉印及乾式感壓貼標，應用於自行車、運動用品及工業產品外觀裝飾。2025年營業比重為自行車產業63%、運動器材32%、其他產業5%；2026年第一季分別為66%、31%及3%。自黏貼標用於識別、包裝、警示及裝飾，熱轉印產品則應用於筆電外殼、手機殼、滑鼠與球桿。依2025年第三季合併財報，集團透過越南、福建及荷蘭子公司經營商標製造、加工與買賣。
+segments:
+- evidence_ids:
+  - e_mix
+  id: bike_2025
+  name: 自行車產業貼標
+  period: 2025年度
+  revenue_share_pct: 63
+- evidence_ids:
+  - e_mix
+  id: sports_2025
+  name: 運動器材產業貼標
+  period: 2025年度
+  revenue_share_pct: 32
+- evidence_ids:
+  - e_mix
+  id: other_2025
+  name: 其他產業貼標
+  period: 2025年度
+  revenue_share_pct: 5
+- evidence_ids:
+  - e_mix
+  id: bike_2026q1
+  name: 自行車產業貼標
+  period: 2026年第一季
+  revenue_share_pct: 66
+- evidence_ids:
+  - e_mix
+  id: sports_2026q1
+  name: 運動器材產業貼標
+  period: 2026年第一季
+  revenue_share_pct: 31
+- evidence_ids:
+  - e_mix
+  id: other_2026q1
+  name: 其他產業貼標
+  period: 2026年第一季
+  revenue_share_pct: 3
+relations:
+  subsidiaries:
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過歐洲政伸間接持有的荷蘭商標製造子公司
+    details:
+    - 透過歐洲政伸間接持有的荷蘭商標製造子公司
+    edge: e9850c75e3817
+    evidence_level: primary
+    id: org.doublepress-products
+    name: Doublepress Products B.V.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%的投資控股子公司
+    details:
+    - 直接持有100%的投資控股子公司
+    edge: e623fa461fe70
+    evidence_level: primary
+    id: org.transart-europe
+    name: Transart Europe B.V.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過Samoa政伸間接持有的投資控股子公司
+    details:
+    - 透過Samoa政伸間接持有的投資控股子公司
+    edge: eb791238750ec
+    evidence_level: primary
+    id: org.transart-graphics-hong-kong
+    name: 香港Transart Graphics Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%的商標製造子公司
+    details:
+    - 直接持有100%的商標製造子公司
+    edge: eed4f66f40a07
+    evidence_level: primary
+    id: org.transart-graphics-vietnam
+    name: Transart Graphics Vietnam Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%的投資控股子公司
+    details:
+    - 直接持有100%的投資控股子公司
+    edge: e023dea437b70
+    evidence_level: primary
+    id: org.transart-international-samoa
+    name: Transart International (Samoa) Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過香港政伸間接持有的商標製造子公司
+    details:
+    - 透過香港政伸間接持有的商標製造子公司
+    edge: e1bbbaa8887fd
+    evidence_level: primary
+    id: org.transart-packaging-printing-fujian
+    name: 政伸包裝印刷(福建)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.transart.com.tw/
 tax_id: '22396792'
 incorporated: '1987-02-23'
 listed: '2017-02-24'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.8481#e_adhesive:
+    locator: 自黏貼標產品說明
+    published_date: null
+    publisher: 政伸企業股份有限公司
+    quote_check: found
+    title: 產品介紹－自黏貼標
+    url: https://www.transart.com.tw/product/info/45
+  tw.8481#e_doublepress:
+    locator: PDF第11頁，子公司表荷蘭DP列；首欄持股日期為114.9.30
+    published_date: '2025-11-07'
+    publisher: 政伸企業股份有限公司
+    quote_check: found
+    title: 政伸企業股份有限公司及子公司民國114年第三季合併財務報告
+    url: https://www.transart.com.tw/uploads/tw/investor_finance_report/20251114282.pdf
+  tw.8481#e_europe:
+    locator: PDF第11頁，子公司表歐洲政伸列；首欄持股日期為114.9.30
+    published_date: '2025-11-07'
+    publisher: 政伸企業股份有限公司
+    quote_check: found
+    title: 政伸企業股份有限公司及子公司民國114年第三季合併財務報告
+    url: https://www.transart.com.tw/uploads/tw/investor_finance_report/20251114282.pdf
+  tw.8481#e_fujian:
+    locator: PDF第11頁，子公司表福建政伸列；首欄持股日期為114.9.30
+    published_date: '2025-11-07'
+    publisher: 政伸企業股份有限公司
+    quote_check: found
+    title: 政伸企業股份有限公司及子公司民國114年第三季合併財務報告
+    url: https://www.transart.com.tw/uploads/tw/investor_finance_report/20251114282.pdf
+  tw.8481#e_heat:
+    locator: 熱轉系列，產品應用段落
+    published_date: null
+    publisher: 政伸企業股份有限公司
+    quote_check: found
+    title: 產品介紹－熱轉系列
+    url: https://www.transart.com.tw/product/info/46
+  tw.8481#e_hongkong:
+    locator: PDF第11頁，子公司表香港政伸列；首欄持股日期為114.9.30
+    published_date: '2025-11-07'
+    publisher: 政伸企業股份有限公司
+    quote_check: found
+    title: 政伸企業股份有限公司及子公司民國114年第三季合併財務報告
+    url: https://www.transart.com.tw/uploads/tw/investor_finance_report/20251114282.pdf
+  tw.8481#e_mix:
+    locator: PDF第7頁，營業比重圖；三欄依序為2025年度、2025年Q1、2026年Q1
+    published_date: '2026-05-13'
+    publisher: 政伸企業股份有限公司
+    quote_check: found
+    title: 政伸企業股份有限公司2026年5月13日法人說明會簡報
+    url: https://www.transart.com.tw/uploads/tw/investor_introduction/20260512468.pdf
+  tw.8481#e_pressure:
+    locator: 乾式感壓產品說明
+    published_date: null
+    publisher: 政伸企業股份有限公司
+    quote_check: found
+    title: 產品介紹－乾式感壓
+    url: https://www.transart.com.tw/product/info/39
+  tw.8481#e_samoa:
+    locator: PDF第11頁，子公司表Samoa政伸列；首欄持股日期為114.9.30
+    published_date: '2025-11-07'
+    publisher: 政伸企業股份有限公司
+    quote_check: found
+    title: 政伸企業股份有限公司及子公司民國114年第三季合併財務報告
+    url: https://www.transart.com.tw/uploads/tw/investor_finance_report/20251114282.pdf
+  tw.8481#e_sub_basis:
+    locator: PDF第11頁，印刷頁10，附註四（二）合併基礎
+    published_date: '2025-11-07'
+    publisher: 政伸企業股份有限公司
+    quote_check: found
+    title: 政伸企業股份有限公司及子公司民國114年第三季合併財務報告
+    url: https://www.transart.com.tw/uploads/tw/investor_finance_report/20251114282.pdf
+  tw.8481#e_vietnam:
+    locator: PDF第11頁，子公司表越南政伸列；首欄持股日期為114.9.30
+    published_date: '2025-11-07'
+    publisher: 政伸企業股份有限公司
+    quote_check: found
+    title: 政伸企業股份有限公司及子公司民國114年第三季合併財務報告
+    url: https://www.transart.com.tw/uploads/tw/investor_finance_report/20251114282.pdf
+  tw.8481#e_water:
+    locator: 公司簡介，貼標技術及產品應用段落
+    published_date: null
+    publisher: 政伸企業股份有限公司
+    quote_check: found
+    title: 關於我們－公司簡介
+    url: https://www.transart.com.tw/about

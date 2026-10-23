@@ -8,12 +8,123 @@ industry:
   l0_code: '22'
   l0_name: 生技醫療業
   l0_name_en: Biotechnology and Medical Care
-primary_chain_position: unknown
+  l1: health
+  l1_name: 醫療保健
+  l1_name_en: Healthcare
+  l2: health.pharma
+  l2_name: 製藥與生技
+  l2_name_en: Pharmaceuticals & Biotech
+  l3: bio.cdmo
+  l3_name: 生技代工（CDMO）
+  l3_name_en: Biologics CDMO
+chain: chain.biotech
+chain_stage:
+  agreement: both
+  also:
+  - stage: rnd
+    stage_name: 研發與原料
+    tier: upstream
+  reason: 營收以抗體CDMO委託技術服務為主，涵蓋GMP製造，另有ADC及生物相似藥研發與授權。
+  stage: manufacturing
+  stage_name: 製造與代工
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 以抗體委託技術服務及藥物授權取得營收，並研發ADC與生物相似藥。
+summary_long: 醣聯提供抗體委託開發與製造服務，並研發醣抗原標靶抗體藥物複合體及生物相似藥。2025年營收包含委託技術服務2,736.6萬元與授權收入1,049.5萬元；2026年上半年營收1,395.4萬元全數來自委託技術服務。其CDMO涵蓋細胞株、製程開發及GMP製造。研發管線中，GNX1021處於第一期臨床，GNX201-ADC與GNX203處於臨床前；SPD8為denosumab生物相似藥，第三期試驗已達主要終點。旗下另有全資子公司醣聯投資股份有限公司，從事一般投資。
+segments:
+- evidence_ids:
+  - e02
+  id: seg_service_2025
+  name: 委託技術服務
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e02
+  id: seg_license_2025
+  name: 藥物授權
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e03
+  id: seg_service_2026h1
+  name: 委託技術服務
+  period: 2026-01-01至2026-06-30
+  revenue_share_pct: null
 website: http://www.glyconex.com.tw/
 tax_id: '12683520'
 incorporated: '2001-02-01'
 listed: '2012-12-18'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4168#e02:
+    locator: 第37頁，附註六（十九）營業收入；114年度，單位新台幣仟元
+    published_date: null
+    publisher: 台灣醣聯生技醫藥股份有限公司
+    quote_check: found
+    title: 114年度合併財務報告
+    url: https://ir.glyconex.com.tw/financials/reports/2025/114%E5%B9%B4%E5%BA%A6%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf
+  tw.4168#e03:
+    locator: 第28頁，附註六（十八）營業收入；115年1月1日至6月30日，單位新台幣仟元
+    published_date: '2026-08-13'
+    publisher: 台灣醣聯生技醫藥股份有限公司
+    quote_check: found
+    title: 115年第二季合併財務報告
+    url: https://ir.glyconex.com.tw/financials/reports/2026/115%E5%B9%B4%E5%BA%A6%E7%AC%AC2%E5%AD%A3%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf
+  tw.4168#e05:
+    locator: 01 — Overview
+    published_date: null
+    publisher: GlycoNex, Inc.
+    quote_check: found
+    title: Contract Development & Manufacturing
+    url: https://glyconex.com.tw/cdmo/
+  tw.4168#e06:
+    locator: 產品頁標題
+    published_date: null
+    publisher: GlycoNex, Inc.
+    quote_check: found
+    title: GNX1021 — Glycan-Targeted ADC for GI Cancers
+    url: https://glyconex.com.tw/pipeline/gnx1021
+  tw.4168#e07:
+    locator: Phase欄位
+    published_date: null
+    publisher: GlycoNex, Inc.
+    quote_check: found
+    title: GNX1021 — Glycan-Targeted ADC for GI Cancers
+    url: https://glyconex.com.tw/pipeline/gnx1021
+  tw.4168#e08:
+    locator: 02 — Programs，GNX201-ADC列；管線表最後更新2026年8月
+    published_date: null
+    publisher: GlycoNex, Inc.
+    quote_check: found
+    title: Pipeline Overview
+    url: https://glyconex.com.tw/pipeline/
+  tw.4168#e09:
+    locator: 02 — Programs，GNX203列；管線表最後更新2026年8月
+    published_date: null
+    publisher: GlycoNex, Inc.
+    quote_check: found
+    title: Pipeline Overview
+    url: https://glyconex.com.tw/pipeline/
+  tw.4168#e10:
+    locator: 03 — Strategy，Three glycan-targeted ADC programs
+    published_date: null
+    publisher: GlycoNex, Inc.
+    quote_check: found
+    title: Pipeline Overview
+    url: https://glyconex.com.tw/pipeline/
+  tw.4168#e11:
+    locator: 新聞稿第二段
+    published_date: '2026-06-11'
+    publisher: GlycoNex, Inc.
+    quote_check: found
+    title: SPD8 Phase 3 Trial Unblinded with Positive Top-Line Results
+    url: https://glyconex.com.tw/news/2026/2026-06-11-spd8-topline
+  tw.4168#e12:
+    locator: 新聞稿導言
+    published_date: '2026-06-11'
+    publisher: GlycoNex, Inc.
+    quote_check: found
+    title: SPD8 Phase 3 Trial Unblinded with Positive Top-Line Results
+    url: https://glyconex.com.tw/news/2026/2026-06-11-spd8-topline

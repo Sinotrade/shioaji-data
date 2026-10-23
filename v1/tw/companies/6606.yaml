@@ -8,12 +8,128 @@ industry:
   l0_code: '05'
   l0_name: 電機機械
   l0_name_en: Electric Machinery
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.machinery
+  l2_name: 機械與自動化
+  l2_name_en: Machinery & Automation
+  l3: mach.machine_tool
+  l3_name: 工具機
+  l3_name_en: Machine Tools
+primary_chain_position: not_applicable
+summary_short: 以精密磨床及加工中心製造銷售為主，另有零組件業務。
+summary_long: 建德工業以精密磨床與加工中心為主要業務，2025年度磨床及加工中心占營收96.11%，零組件占3.04%，其他占0.85%。官網產品涵蓋KGS三軸自動平面磨床、KGS-HT超精密平面磨床、KGS-CNC立柱移動式平面磨床、KGP定柱型龍門平面磨床及KGR軸承式旋轉工作台平面磨床。主要製造子公司包括直接持有的江蘇建德精密機械，以及間接持有的浙江榮德機械，業務涵蓋機床及相關配件。
+segments:
+- evidence_ids:
+  - e7
+  id: seg_machine_tools
+  name: 磨床及加工中心
+  period: 2025年度
+  revenue_share_pct: 96.11
+- evidence_ids:
+  - e7
+  id: seg_components
+  name: 零組件
+  period: 2025年度
+  revenue_share_pct: 3.04
+- evidence_ids:
+  - e7
+  id: seg_other
+  name: 其他
+  period: 2025年度
+  revenue_share_pct: 0.85
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接全資製造子公司
+    details:
+    - 直接全資製造子公司
+    edge: e76fe50dbba36
+    evidence_level: other
+    id: org.jiangsu-kent-precision-machinery
+    name: 江蘇建德精密機械有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接製造子公司
+    details:
+    - 間接製造子公司
+    edge: e3fbc83daa7bd
+    evidence_level: other
+    id: org.zhejiang-rongde-machinery
+    name: 浙江榮德機械有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.kentind.com
 tax_id: '35309102'
 incorporated: '1966-03-16'
 listed: '2023-03-24'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6606#e2:
+    locator: 產品頁標題
+    published_date: null
+    publisher: 建德工業股份有限公司
+    quote_check: found
+    title: KGS平面磨床｜三軸自動系列
+    url: https://www.kentind.com/product/kgs-ahd-series/
+  tw.6606#e3:
+    locator: 產品頁標題
+    published_date: null
+    publisher: 建德工業股份有限公司
+    quote_check: found
+    title: KGS-HT超精密平面磨床
+    url: https://www.kentind.com/product/kgs-ht-series/
+  tw.6606#e4:
+    locator: 產品頁標題
+    published_date: null
+    publisher: 建德工業股份有限公司
+    quote_check: found
+    title: KGS-CNC平面磨床｜立柱移動式
+    url: https://www.kentind.com/product/kgs-cnc-series/
+  tw.6606#e5:
+    locator: 產品頁標題
+    published_date: null
+    publisher: 建德工業股份有限公司
+    quote_check: found
+    title: KGP龍門平面磨床｜定柱型
+    url: https://www.kentind.com/product/kgp-ht-series/
+  tw.6606#e6:
+    locator: 產品頁標題
+    published_date: null
+    publisher: 建德工業股份有限公司
+    quote_check: found
+    title: KGR精密旋轉工作台平面磨床｜軸承式
+    url: https://www.kentind.com/product/kgr-basic/
+  tw.6606#e7:
+    locator: 年報第49頁，肆、營運概況／一、業務內容／2.營業比重
+    published_date: '2026-05-22'
+    publisher: FinancialFilings（轉載建德工業年報）
+    quote_check: unreachable
+    title: 建德工業114年度年報（轉載全文）
+    url: https://financialfilings.com/filings/kent-6606/annual-report/2026/46793179/
+  tw.6606#e8:
+    locator: 重大會計政策之彙總說明／列入合併財務報表之子公司；江蘇建德列
+    published_date: '2026-08-13'
+    publisher: FinancialFilings（轉載建德工業財務報告）
+    quote_check: unreachable
+    title: 建德工業2026年第二季財務報告（轉載全文）
+    url: https://financialfilings.com/filings/kent-6606/interim-quarterly-report/2026/60579803/
+  tw.6606#e9:
+    locator: 重大會計政策之彙總說明／列入合併財務報表之子公司；浙江榮德列
+    published_date: '2026-08-13'
+    publisher: FinancialFilings（轉載建德工業財務報告）
+    quote_check: unreachable
+    title: 建德工業2026年第二季財務報告（轉載全文）
+    url: https://financialfilings.com/filings/kent-6606/interim-quarterly-report/2026/60579803/

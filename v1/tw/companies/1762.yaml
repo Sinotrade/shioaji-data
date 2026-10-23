@@ -8,12 +8,142 @@ industry:
   l0_code: '22'
   l0_name: 生技醫療業
   l0_name_en: Biotechnology and Medical Care
-primary_chain_position: unknown
+  l1: health
+  l1_name: 醫療保健
+  l1_name_en: Healthcare
+  l2: health.pharma
+  l2_name: 製藥與生技
+  l2_name_en: Pharmaceuticals & Biotech
+  l3: bio.generic
+  l3_name: 學名藥與原料藥
+  l3_name_en: Generics & APIs
+chain: chain.biotech
+chain_stage:
+  agreement: both
+  also: []
+  reason: 主要收入來自製藥用原料藥，屬上游原料供應，並具備原料藥量產製造能力。
+  stage: rnd
+  stage_name: 研發與原料
+  tier: upstream
+primary_chain_position: upstream
+summary_short: 以原料藥製造與銷售為主，產品包括免疫抑制、抗癌及抗真菌原料藥。
+summary_long: 中化生以原料藥製造及銷售為主要業務，核心產品包括Everolimus、Caspofungin Acetate、Rapamycin、Tacrolimus及Selumetinib Sulfate。2026年上半年銷售市場以美國為主，占54%；亞洲占22%、歐洲占21%，台灣占3%。公司具備從小批量研發到量產的原料藥製造能力，並持有美國原料藥買賣子公司PHARMAPORTS, LLC全部股權。
+segments:
+- evidence_ids:
+  - e3
+  id: market_us
+  name: 銷售市場：美國
+  period: 2026年上半年
+  revenue_share_pct: 54
+- evidence_ids:
+  - e3
+  id: market_asia
+  name: 銷售市場：亞洲
+  period: 2026年上半年
+  revenue_share_pct: 22
+- evidence_ids:
+  - e3
+  id: market_europe
+  name: 銷售市場：歐洲
+  period: 2026年上半年
+  revenue_share_pct: 21
+- evidence_ids:
+  - e3
+  id: market_taiwan
+  name: 銷售市場：台灣
+  period: 2026年上半年
+  revenue_share_pct: 3
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股100%的美國原料藥買賣子公司
+    details:
+    - 持股100%的美國原料藥買賣子公司
+    edge: e22aed6a21a8c
+    evidence_level: primary
+    id: org.pharmaports
+    name: PHARMAPORTS, LLC
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.ccsb.com.tw
 tax_id: 03088704
 incorporated: '1964-05-19'
 listed: '2010-12-20'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1762#e1:
+    locator: 第6頁，核心產品
+    published_date: '2026-09-10'
+    publisher: 中化合成生技股份有限公司
+    quote_check: found
+    title: 2026上半年度法人說明會
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51917/2026/RNS/51917_rns_2026-09-10_a73843c8-464a-4b83-89b8-1becb156a56c.pdf
+  tw.1762#e10:
+    locator: 第50頁，附表四
+    published_date: '2026-08-12'
+    publisher: 中化合成生技股份有限公司
+    quote_check: found
+    title: 民國115年及114年第二季合併財務報告暨會計師核閱報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51917/2026/RNS/51917_rns_2026-08-12_758137f3-2efc-4b1a-af73-b89aebad06d2.pdf
+  tw.1762#e2:
+    locator: 第4頁，核心競爭力
+    published_date: '2026-09-10'
+    publisher: 中化合成生技股份有限公司
+    quote_check: found
+    title: 2026上半年度法人說明會
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51917/2026/RNS/51917_rns_2026-09-10_a73843c8-464a-4b83-89b8-1becb156a56c.pdf
+  tw.1762#e3:
+    locator: 第8頁，2026上半年度銷售市場分析
+    published_date: '2026-09-10'
+    publisher: 中化合成生技股份有限公司
+    quote_check: not_found
+    title: 2026上半年度法人說明會
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51917/2026/RNS/51917_rns_2026-09-10_a73843c8-464a-4b83-89b8-1becb156a56c.pdf
+  tw.1762#e4:
+    locator: 第6頁，核心產品
+    published_date: '2026-09-10'
+    publisher: 中化合成生技股份有限公司
+    quote_check: found
+    title: 2026上半年度法人說明會
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51917/2026/RNS/51917_rns_2026-09-10_a73843c8-464a-4b83-89b8-1becb156a56c.pdf
+  tw.1762#e5:
+    locator: 第6頁，核心產品
+    published_date: '2026-09-10'
+    publisher: 中化合成生技股份有限公司
+    quote_check: found
+    title: 2026上半年度法人說明會
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51917/2026/RNS/51917_rns_2026-09-10_a73843c8-464a-4b83-89b8-1becb156a56c.pdf
+  tw.1762#e6:
+    locator: 第6頁，核心產品
+    published_date: '2026-09-10'
+    publisher: 中化合成生技股份有限公司
+    quote_check: found
+    title: 2026上半年度法人說明會
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51917/2026/RNS/51917_rns_2026-09-10_a73843c8-464a-4b83-89b8-1becb156a56c.pdf
+  tw.1762#e7:
+    locator: 第6頁，核心產品
+    published_date: '2026-09-10'
+    publisher: 中化合成生技股份有限公司
+    quote_check: found
+    title: 2026上半年度法人說明會
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51917/2026/RNS/51917_rns_2026-09-10_a73843c8-464a-4b83-89b8-1becb156a56c.pdf
+  tw.1762#e8:
+    locator: 第6頁，核心產品
+    published_date: '2026-09-10'
+    publisher: 中化合成生技股份有限公司
+    quote_check: found
+    title: 2026上半年度法人說明會
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51917/2026/RNS/51917_rns_2026-09-10_a73843c8-464a-4b83-89b8-1becb156a56c.pdf
+  tw.1762#e9:
+    locator: 第45頁，十四、部門資訊
+    published_date: '2026-08-12'
+    publisher: 中化合成生技股份有限公司
+    quote_check: found
+    title: 民國115年及114年第二季合併財務報告暨會計師核閱報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51917/2026/RNS/51917_rns_2026-08-12_758137f3-2efc-4b1a-af73-b89aebad06d2.pdf

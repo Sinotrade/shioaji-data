@@ -8,12 +8,190 @@ industry:
   l0_code: '25'
   l0_name: 電腦及週邊設備業
   l0_name_en: Computer and Peripheral Equipment
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.hardware
+  l2_name: 電腦與硬體
+  l2_name_en: Computers & Hardware
+  l3: hw.industrial_pc
+  l3_name: 工業電腦與嵌入式系統
+  l3_name_en: Industrial PCs & Embedded Systems
+primary_chain_position: midstream
+summary_short: 以工業電腦、嵌入式板卡及強固型行動裝置銷售與客製化製造為主。
+summary_long: 磐儀以工業電腦、邊緣AI運算系統與嵌入式板卡為主要業務，並提供客製化設計及OEM／ODM製造服務。2025年營收組成為系統及其週邊67.49%、板卡類19.66%、其他類12.85%。產品涵蓋強固型手持裝置、Android及Windows平板電腦，以及工業面板電腦與顯示器。公司亦推出供AMR與AGV使用的運算平台，支援即時導航、感測器整合與作業控制。集團旗下磐旭智能從事智慧行動服務，磐雲智能提供系統整合與雲端服務。
+segments:
+- evidence_ids:
+  - e3
+  id: seg_system
+  name: 系統及其週邊
+  period: '2025'
+  revenue_share_pct: 67.49
+- evidence_ids:
+  - e3
+  id: seg_board
+  name: 板卡類
+  period: '2025'
+  revenue_share_pct: 19.66
+- evidence_ids:
+  - e3
+  id: seg_other
+  name: 其他類
+  period: '2025'
+  revenue_share_pct: 12.85
+main_theme: theme.robotics
+themes:
+- also: []
+  stage: control
+  theme: theme.robotics
+  tier: midstream
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 工業電腦及零配件買賣子公司
+    details:
+    - 工業電腦及零配件買賣子公司
+    edge: e30b60d4e5797
+    evidence_level: primary
+    id: org.arbor-solution
+    name: Arbor Solution Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 台灣磐旭，智慧行動服務子公司
+    details:
+    - 台灣磐旭，智慧行動服務子公司
+    edge: e8e9dcafdb02c
+    evidence_level: primary
+    id: org.磐旭智能股份有限公司
+    name: 磐旭智能股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 系統整合與雲端服務子公司
+    details:
+    - 系統整合與雲端服務子公司
+    edge: ec912150f5ed8
+    evidence_level: primary
+    id: org.磐雲智能股份有限公司
+    name: 磐雲智能股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.arbor-technology.com
 tax_id: '84469443'
 incorporated: '1993-10-19'
 listed: '2013-05-07'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3594#e10:
+    locator: 自主移動機器人（AMR）
+    published_date: '2025-04-22'
+    publisher: 磐儀科技股份有限公司
+    quote_check: found
+    title: 磐儀科技參展Automate 2025，發表最新自動化解決方案
+    url: https://www.arbor-technology.com/zh-tw/new/Automate-2025
+  tw.3594#e11:
+    locator: 印刷頁19，附註十二、列入合併財務報告之子公司；115年6月30日欄
+    published_date: null
+    publisher: 磐儀科技股份有限公司
+    quote_check: found
+    title: 115年第2季合併財務報告
+    url: https://partnerzone.arbor-technology.com/investor-financial/Financial_Statement-115_Q2.pdf
+  tw.3594#e12:
+    locator: 第2頁，關於磐儀集團
+    published_date: '2025-12-02'
+    publisher: 磐儀科技股份有限公司
+    quote_check: found
+    title: 磐儀科技114年度第四季法人說明會
+    url: https://partnerzone.arbor-technology.com/investor/stockholder/institutional_investors/ARBOR_Institutional_Investors_Conf._2025-TC.pdf
+  tw.3594#e13:
+    locator: 印刷頁19，附註十二、列入合併財務報告之子公司
+    published_date: null
+    publisher: 磐儀科技股份有限公司
+    quote_check: found
+    title: 115年第2季合併財務報告
+    url: https://partnerzone.arbor-technology.com/investor-financial/Financial_Statement-115_Q2.pdf
+  tw.3594#e14:
+    locator: 第2頁，關於磐儀集團
+    published_date: '2025-12-02'
+    publisher: 磐儀科技股份有限公司
+    quote_check: found
+    title: 磐儀科技114年度第四季法人說明會
+    url: https://partnerzone.arbor-technology.com/investor/stockholder/institutional_investors/ARBOR_Institutional_Investors_Conf._2025-TC.pdf
+  tw.3594#e15:
+    locator: 印刷頁18，附註十二、列入合併財務報告之子公司；Arbor Solution Inc.列
+    published_date: null
+    publisher: 磐儀科技股份有限公司
+    quote_check: found
+    title: 115年第2季合併財務報告
+    url: https://partnerzone.arbor-technology.com/investor-financial/Financial_Statement-115_Q2.pdf
+  tw.3594#e2:
+    locator: 印刷頁76，產業概況
+    published_date: null
+    publisher: 磐儀科技股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://partnerzone.arbor-technology.com/investor/stockholder/shareholders_meeting/114/2025-Annual-Report.pdf
+  tw.3594#e3:
+    locator: 印刷頁75，營業比重表；欄位依序為114年度與113年度
+    published_date: null
+    publisher: 磐儀科技股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://partnerzone.arbor-technology.com/investor/stockholder/shareholders_meeting/114/2025-Annual-Report.pdf
+  tw.3594#e4:
+    locator: 印刷頁79，產業上、中、下游之關聯性
+    published_date: null
+    publisher: 磐儀科技股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://partnerzone.arbor-technology.com/investor/stockholder/shareholders_meeting/114/2025-Annual-Report.pdf
+  tw.3594#e5:
+    locator: 工業級Edge AI運算解決方案
+    published_date: null
+    publisher: 磐儀科技股份有限公司
+    quote_check: found
+    title: 邊緣AI電腦
+    url: https://www.arbor-technology.com/zh-tw/product-cate-first/edge-ai-computing
+  tw.3594#e6:
+    locator: 嵌入式電腦產品介紹
+    published_date: null
+    publisher: 磐儀科技股份有限公司
+    quote_check: found
+    title: 嵌入式運算解決方案
+    url: https://www.arbor-technology.com/zh-tw/product-cate-first/Embedded_Computing
+  tw.3594#e7:
+    locator: 多元強固型行動裝置
+    published_date: null
+    publisher: 磐儀科技股份有限公司
+    quote_check: found
+    title: 強固型行動裝置
+    url: https://www.arbor-technology.com/zh-tw/product-cate-first/Rugged_Mobile_Computing
+  tw.3594#e8:
+    locator: 適用於工業環境的可靠HMI解決方案
+    published_date: null
+    publisher: 磐儀科技股份有限公司
+    quote_check: found
+    title: 工業面板電腦與工業顯示器
+    url: https://www.arbor-technology.com/zh-tw/product-cate-first/Panel-PCs_Monitors
+  tw.3594#e9:
+    locator: 設計和製造服務
+    published_date: null
+    publisher: 磐儀科技股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.arbor-technology.com/zh-tw/about-cate-first/about

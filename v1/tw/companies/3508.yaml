@@ -8,12 +8,185 @@ industry:
   l0_code: '31'
   l0_name: 其他電子業
   l0_name_en: Other Electronic
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.chassis
+  l3_name: 機殼與機構件
+  l3_name_en: Chassis & Mechanical Parts
+primary_chain_position: midstream
+summary_short: 以3C機構件加工、表面處理及組裝為主，另有觸控模組與光伏產品開發。
+summary_long: 位速主要提供3C產品機構件加工與組裝服務，涵蓋模具設計、製作、塑膠射出及表面處理。2024年3C產品加工組裝及其他收入占91.02%，觸控面板模組占8.98%。觸控產品以奈米碳管為核心技術；公司亦開發第三代光伏電池，年報記載已有鈣鈦礦電池及相關產品試產。官網另列石墨烯散熱與防腐蝕塗料，以及微型超級電容。主要營運子公司包括精泉科技、衛斯實業及位元奈米科技。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_3c
+  name: 3C產品加工組裝業務及其他收入
+  period: '2024'
+  revenue_share_pct: 91.02
+- evidence_ids:
+  - e3
+  id: seg_touch
+  name: 觸控面板模組
+  period: '2024'
+  revenue_share_pct: 8.98
+relations:
+  subsidiaries:
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股76.14%的子公司
+    details:
+    - 直接持股76.14%的子公司
+    edge: eabf33cd6ed49
+    evidence_level: primary
+    id: org.位元奈米科技股份有限公司
+    name: 位元奈米科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的子公司
+    details:
+    - 直接持股100%的子公司
+    edge: e84126aa5fb99
+    evidence_level: primary
+    id: org.精泉科技股份有限公司
+    name: 精泉科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的子公司
+    details:
+    - 直接持股100%的子公司
+    edge: e9f5c17068f60
+    evidence_level: primary
+    id: org.衛斯實業股份有限公司
+    name: 衛斯實業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.waystech.net
 tax_id: '12894840'
 incorporated: '2001-09-04'
 listed: '2007-10-17'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3508#e10:
+    locator: 產品介紹
+    published_date: null
+    publisher: 位速科技股份有限公司
+    quote_check: found
+    title: 產品項目：Miniature Super-Capacitor(MSC)
+    url: https://www.waystech.net/zh-tw/service/index/supercapacitors_zhtw
+  tw.3508#e11:
+    locator: 第49頁，113年12月31日轉投資事業持股表，本公司投資欄
+    published_date: '2025-05-25'
+    publisher: 位速科技股份有限公司
+    quote_check: found
+    title: 113年度年報
+    url: https://www.waystech.net/upload/media/investors/%E8%82%A1%E6%9D%B1%E6%9C%83/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf
+  tw.3508#e12:
+    locator: 第49頁，113年12月31日轉投資事業持股表，本公司投資欄
+    published_date: '2025-05-25'
+    publisher: 位速科技股份有限公司
+    quote_check: found
+    title: 113年度年報
+    url: https://www.waystech.net/upload/media/investors/%E8%82%A1%E6%9D%B1%E6%9C%83/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf
+  tw.3508#e13:
+    locator: 第49頁，113年12月31日轉投資事業持股表，本公司投資欄
+    published_date: '2025-05-25'
+    publisher: 位速科技股份有限公司
+    quote_check: found
+    title: 113年度年報
+    url: https://www.waystech.net/upload/media/investors/%E8%82%A1%E6%9D%B1%E6%9C%83/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf
+  tw.3508#e14:
+    locator: 第2項
+    published_date: null
+    publisher: 位速科技股份有限公司
+    quote_check: found
+    title: 團隊成員
+    url: https://waystech.net/zh-tw/about/index/group_members
+  tw.3508#e15:
+    locator: 2019年公司沿革
+    published_date: null
+    publisher: 位速科技股份有限公司
+    quote_check: found
+    title: 里程碑
+    url: https://www.waystech.net/zh-tw/about/index/milestone
+  tw.3508#e16:
+    locator: 2019年公司沿革
+    published_date: null
+    publisher: 位速科技股份有限公司
+    quote_check: found
+    title: 里程碑
+    url: https://www.waystech.net/zh-tw/about/index/milestone
+  tw.3508#e2:
+    locator: 第58頁，營業比重表，113年度3C產品加工組裝業務及其他收入欄
+    published_date: '2025-05-25'
+    publisher: 位速科技股份有限公司
+    quote_check: found
+    title: 113年度年報
+    url: https://www.waystech.net/upload/media/investors/%E8%82%A1%E6%9D%B1%E6%9C%83/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf
+  tw.3508#e3:
+    locator: 第58頁，營業比重表，113年度觸控面板模組欄
+    published_date: '2025-05-25'
+    publisher: 位速科技股份有限公司
+    quote_check: found
+    title: 113年度年報
+    url: https://www.waystech.net/upload/media/investors/%E8%82%A1%E6%9D%B1%E6%9C%83/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf
+  tw.3508#e4:
+    locator: 第59頁，3C產品加工及組裝業務
+    published_date: '2025-05-25'
+    publisher: 位速科技股份有限公司
+    quote_check: found
+    title: 113年度年報
+    url: https://www.waystech.net/upload/media/investors/%E8%82%A1%E6%9D%B1%E6%9C%83/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf
+  tw.3508#e5:
+    locator: Surface Treatment Center
+    published_date: null
+    publisher: 位速科技股份有限公司
+    quote_check: found
+    title: 產品項目：Over View
+    url: https://waystech.net/zh-tw/service/index/over_view
+  tw.3508#e6:
+    locator: 2006年公司沿革
+    published_date: null
+    publisher: 位速科技股份有限公司
+    quote_check: found
+    title: 里程碑
+    url: https://www.waystech.net/zh-tw/about/index/milestone
+  tw.3508#e7:
+    locator: 第61頁，觸控面板模組
+    published_date: '2025-05-25'
+    publisher: 位速科技股份有限公司
+    quote_check: found
+    title: 113年度年報
+    url: https://www.waystech.net/upload/media/investors/%E8%82%A1%E6%9D%B1%E6%9C%83/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf
+  tw.3508#e8:
+    locator: 第61頁，第三代光伏電池產品之各種發展趨勢及競爭情形
+    published_date: '2025-05-25'
+    publisher: 位速科技股份有限公司
+    quote_check: found
+    title: 113年度年報
+    url: https://www.waystech.net/upload/media/investors/%E8%82%A1%E6%9D%B1%E6%9C%83/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf
+  tw.3508#e9:
+    locator: Surface Treatment Center
+    published_date: null
+    publisher: 位速科技股份有限公司
+    quote_check: found
+    title: 產品項目：Over View
+    url: https://waystech.net/zh-tw/service/index/over_view

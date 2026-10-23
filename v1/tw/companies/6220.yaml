@@ -8,12 +8,175 @@ industry:
   l0_code: '28'
   l0_name: 電子零組件業
   l0_name_en: Electronic Parts and Components
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.connector
+  l3_name: 連接器與線材
+  l3_name_en: Connectors & Cables
+primary_chain_position: midstream
+summary_short: 製造銷售電源線、網路線及連接線組，並經營品牌通路與電子商務。
+summary_long: 岳豐科技主要製造銷售電源線、網路線及連接線組。2024年合併營收中，電源線占52.68%、網路線占28.08%、消費性電子產品占15.19%，其他產品占4.05%。集團旗下Monoprice經營品牌電子商務，Prime則經營品牌批發通路，業務涵蓋線材產品與終端銷售。官網產品亦包括機器人及機械手使用的耐彎曲、耐扭轉電纜，以及車載高壓電源線束與訊號線束，應用範圍涵蓋工業自動化及車載設備。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_power
+  name: 電源線
+  period: '2024'
+  revenue_share_pct: 52.68
+- evidence_ids:
+  - e3
+  id: seg_network
+  name: 網路線
+  period: '2024'
+  revenue_share_pct: 28.08
+- evidence_ids:
+  - e4
+  id: seg_consumer
+  name: 消費性電子產品
+  period: '2024'
+  revenue_share_pct: 15.19
+- evidence_ids:
+  - e5
+  id: seg_other
+  name: 其他
+  period: '2024'
+  revenue_share_pct: 4.05
+main_theme: theme.robotics
+themes:
+- also: []
+  stage: components
+  theme: theme.robotics
+  tier: upstream
+relations:
+  subsidiaries:
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團品牌電子商務子公司
+    details:
+    - 集團品牌電子商務子公司
+    edge: ef17833a94e49
+    evidence_level: primary
+    id: org.monoprice
+    name: MONOPRICE, INC.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持有之品牌通路子公司
+    details:
+    - 間接持有之品牌通路子公司
+    edge: ef4e1f52387b1
+    evidence_level: primary
+    id: org.prime-wire-cable
+    name: PRIME WIRE＆CABLE, INC.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.cables.com.tw
 tax_id: '45911735'
 incorporated: '1983-09-03'
 listed: '2003-01-09'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6220#e10:
+    locator: 車載用線產品清單
+    published_date: null
+    publisher: 岳豐科技股份有限公司
+    quote_check: found
+    title: 車載用線
+    url: https://www.cables.com.tw/c_product_71b.html
+  tw.6220#e11:
+    locator: 印刷頁63，生產將向上整合
+    published_date: '2025-05-29'
+    publisher: 岳豐科技股份有限公司
+    quote_check: found
+    title: 岳豐科技股份有限公司一一三年年報
+    url: https://static.iyp.tw/37703/files/f35f2700-1777-40bc-842c-0887adc2177c.pdf
+  tw.6220#e12:
+    locator: 印刷頁53，113年12月31日轉投資持股表；直接或間接控制事業之投資欄
+    published_date: '2025-05-29'
+    publisher: 岳豐科技股份有限公司
+    quote_check: found
+    title: 岳豐科技股份有限公司一一三年年報
+    url: https://static.iyp.tw/37703/files/f35f2700-1777-40bc-842c-0887adc2177c.pdf
+  tw.6220#e13:
+    locator: 近期期望第3項
+    published_date: null
+    publisher: 岳豐科技股份有限公司
+    quote_check: found
+    title: 關於岳豐集團
+    url: https://www.cables.com.tw/about_us-2.html
+  tw.6220#e14:
+    locator: 近期期望第2項
+    published_date: null
+    publisher: 岳豐科技股份有限公司
+    quote_check: found
+    title: 關於岳豐集團
+    url: https://www.cables.com.tw/about_us-2.html
+  tw.6220#e2:
+    locator: 印刷頁60，主要產品營業比重；113年度欄
+    published_date: '2025-05-29'
+    publisher: 岳豐科技股份有限公司
+    quote_check: found
+    title: 岳豐科技股份有限公司一一三年年報
+    url: https://static.iyp.tw/37703/files/f35f2700-1777-40bc-842c-0887adc2177c.pdf
+  tw.6220#e3:
+    locator: 印刷頁60，主要產品營業比重；113年度欄
+    published_date: '2025-05-29'
+    publisher: 岳豐科技股份有限公司
+    quote_check: found
+    title: 岳豐科技股份有限公司一一三年年報
+    url: https://static.iyp.tw/37703/files/f35f2700-1777-40bc-842c-0887adc2177c.pdf
+  tw.6220#e4:
+    locator: 印刷頁60，主要產品營業比重；113年度欄
+    published_date: '2025-05-29'
+    publisher: 岳豐科技股份有限公司
+    quote_check: found
+    title: 岳豐科技股份有限公司一一三年年報
+    url: https://static.iyp.tw/37703/files/f35f2700-1777-40bc-842c-0887adc2177c.pdf
+  tw.6220#e5:
+    locator: 印刷頁60，主要產品營業比重；113年度欄
+    published_date: '2025-05-29'
+    publisher: 岳豐科技股份有限公司
+    quote_check: found
+    title: 岳豐科技股份有限公司一一三年年報
+    url: https://static.iyp.tw/37703/files/f35f2700-1777-40bc-842c-0887adc2177c.pdf
+  tw.6220#e6:
+    locator: 電源線產品分類
+    published_date: null
+    publisher: 岳豐科技股份有限公司
+    quote_check: found
+    title: 產品中心
+    url: https://www.cables.com.tw/ct_product.html
+  tw.6220#e7:
+    locator: 公司業務介紹
+    published_date: null
+    publisher: 岳豐科技股份有限公司
+    quote_check: found
+    title: 關於岳豐集團
+    url: https://www.cables.com.tw/about_us-2.html
+  tw.6220#e8:
+    locator: 產品說明首段
+    published_date: null
+    publisher: 岳豐科技股份有限公司
+    quote_check: found
+    title: 機器人與機械手
+    url: https://www.cables.com.tw/c_product_71a.html
+  tw.6220#e9:
+    locator: 車載用線產品清單
+    published_date: null
+    publisher: 岳豐科技股份有限公司
+    quote_check: found
+    title: 車載用線
+    url: https://www.cables.com.tw/c_product_71b.html

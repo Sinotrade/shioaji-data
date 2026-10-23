@@ -8,12 +8,129 @@ industry:
   l0_code: '28'
   l0_name: 電子零組件業
   l0_name_en: Electronic Parts and Components
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.passive
+  l3_name: 被動元件
+  l3_name_en: Passive Components
+primary_chain_position: upstream
+summary_short: 以變壓器為主，提供線圈、電感及表面黏著式磁性元件。
+summary_long: 迅德以變壓器為主要產品，產品涵蓋低頻、高頻與平板式變壓器及線圈，也提供各種電感及線圈與表面黏著式產品。公司官網列明，相關變壓器應用於電動車及油電混合車的引擎充電、電池充電系統與車用音響電源。海外子公司包括東莞迅德電器有限公司，以及美國Acumen Electronics,Inc.；後者在官網營運據點中以Triad Magnetics名稱列示。
+main_theme: theme.ev
+themes:
+- also: []
+  stage: parts
+  theme: theme.ev
+  tier: midstream
+relations:
+  subsidiaries:
+  - as_of: '2026-10-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 美國子公司，使用Triad Magnetics名稱
+    details:
+    - 美國子公司，使用Triad Magnetics名稱
+    edge: ea11f4380aa5b
+    evidence_level: primary
+    id: org.acumen-electronics
+    name: Acumen Electronics,Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 東莞子公司
+    details:
+    - 東莞子公司
+    edge: e3a7ef9540510
+    evidence_level: primary
+    id: org.dongguan-xunde-electronics
+    name: 東莞迅德電器有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.axis.com.tw
 tax_id: '22133530'
 incorporated: '1986-05-19'
 listed: '2003-11-26'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6292#e1:
+    locator: 公司介紹／品牌故事
+    published_date: null
+    publisher: 迅德興業股份有限公司
+    quote_check: found
+    title: 關於我們
+    url: https://www.axis.com.tw/about-us/
+  tw.6292#e10:
+    locator: 產品應用／電動車及油電混合車類
+    published_date: null
+    publisher: 迅德興業股份有限公司
+    quote_check: found
+    title: 油電車用
+    url: https://www.axis.com.tw/projects/%E6%B2%B9%E9%9B%BB%E8%BB%8A%E7%94%A8/
+  tw.6292#e2:
+    locator: 所有商品
+    published_date: null
+    publisher: 迅德興業股份有限公司
+    quote_check: found
+    title: 產品介紹
+    url: https://www.axis.com.tw/shop/
+  tw.6292#e3:
+    locator: 所有商品
+    published_date: null
+    publisher: 迅德興業股份有限公司
+    quote_check: found
+    title: 產品介紹
+    url: https://www.axis.com.tw/shop/
+  tw.6292#e4:
+    locator: 所有商品
+    published_date: null
+    publisher: 迅德興業股份有限公司
+    quote_check: found
+    title: 產品介紹
+    url: https://www.axis.com.tw/shop/
+  tw.6292#e5:
+    locator: 所有商品
+    published_date: null
+    publisher: 迅德興業股份有限公司
+    quote_check: found
+    title: 產品介紹
+    url: https://www.axis.com.tw/shop/
+  tw.6292#e6:
+    locator: 所有商品
+    published_date: null
+    publisher: 迅德興業股份有限公司
+    quote_check: found
+    title: 產品介紹
+    url: https://www.axis.com.tw/shop/
+  tw.6292#e7:
+    locator: 營運據點／東莞子公司；同節列中文名稱東莞迅德電器有限公司
+    published_date: null
+    publisher: 迅德興業股份有限公司
+    quote_check: found
+    title: 關於我們
+    url: https://www.axis.com.tw/about-us/
+  tw.6292#e8:
+    locator: 公司里程碑／2003年11月
+    published_date: null
+    publisher: 迅德興業股份有限公司
+    quote_check: found
+    title: 關於我們
+    url: https://www.axis.com.tw/about-us/
+  tw.6292#e9:
+    locator: 營運據點／美國子公司
+    published_date: null
+    publisher: 迅德興業股份有限公司
+    quote_check: found
+    title: 關於我們
+    url: https://www.axis.com.tw/about-us/

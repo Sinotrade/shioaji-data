@@ -8,12 +8,163 @@ industry:
   l0_code: '10'
   l0_name: 鋼鐵工業
   l0_name_en: Iron and Steel
-primary_chain_position: unknown
+  l1: materials
+  l1_name: 原物料
+  l1_name_en: Materials
+  l2: mat.metals
+  l2_name: 金屬
+  l2_name_en: Metals
+  l3: metal.steel
+  l3_name: 鋼鐵
+  l3_name_en: Steel
+chain: chain.steel
+chain_stage:
+  agreement: both
+  also:
+  - stage: downstream
+    stage_name: 金屬製品與螺絲
+    tier: downstream
+  reason: 盤元占營收34.01%為最大單項，屬中游鋼材；另製造螺絲及牙條，跨足下游金屬製品。
+  stage: midstream
+  stage_name: 軋延與鋼材
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 以盤元、球化線材、鍍鋅鐵線、牙條及螺絲的製造銷售為主要業務。
+summary_long: 官田鋼鐵從事盤元與線材產品銷售，並製造球化線材、鍍鋅鐵線、牙條及螺絲。依2024年度合併營收組成，盤元占34.01%、螺絲占29.07%，另有餐飲收入18.92%及鍍鋅鋼鐵線6.84%。球化線材經球化熱處理或生抽加工，供冷打、冷鍛加工使用；鍍鋅鐵線採熱浸鍍鋅，牙條包含珠牙與尖牙產品，螺絲則有乾牆及塑板種類。2025年度合併財報另將夏都國際開發及美優實業列為子公司。
+segments:
+- evidence_ids:
+  - e6
+  id: seg_wire_rod
+  name: 盤元
+  period: '2024'
+  revenue_share_pct: 34.01
+- evidence_ids:
+  - e6
+  id: seg_galvanized
+  name: 鍍鋅鋼鐵線
+  period: '2024'
+  revenue_share_pct: 6.84
+- evidence_ids:
+  - e6
+  id: seg_iron_wire
+  name: 鐵線
+  period: '2024'
+  revenue_share_pct: 2.24
+- evidence_ids:
+  - e6
+  id: seg_screws
+  name: 螺絲
+  period: '2024'
+  revenue_share_pct: 29.07
+- evidence_ids:
+  - e7
+  id: seg_processing
+  name: 代工收入
+  period: '2024'
+  revenue_share_pct: 4.1
+- evidence_ids:
+  - e7
+  id: seg_catering
+  name: 餐飲收入
+  period: '2024'
+  revenue_share_pct: 18.92
+- evidence_ids:
+  - e7
+  id: seg_other
+  name: 其他
+  period: '2024'
+  revenue_share_pct: 4.82
+relations:
+  subsidiaries:
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 納入合併財報的子公司
+    details:
+    - 納入合併財報的子公司
+    edge: e8c8249717f86
+    evidence_level: primary
+    id: org.美優實業股份有限公司
+    name: 美優實業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 納入合併財報的子公司
+    details:
+    - 納入合併財報的子公司
+    edge: ea130788361df
+    evidence_level: primary
+    id: tw.2722
+    name: 夏都
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.quintain.com.tw
 tax_id: '72065240'
 incorporated: '1973-07-28'
 listed: '1992-11-02'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2017#e2:
+    locator: 產品介紹
+    published_date: null
+    publisher: 官田鋼鐵股份有限公司
+    quote_check: found
+    title: 球化線材
+    url: https://www.quintain.com.tw/zh-TW/pages/%E7%90%83%E5%8C%96%E7%B7%9A%E6%9D%90
+  tw.2017#e3:
+    locator: 產品介紹
+    published_date: null
+    publisher: 官田鋼鐵股份有限公司
+    quote_check: found
+    title: 鍍鋅鐵線
+    url: https://www.quintain.com.tw/zh-TW/pages/%E9%8D%8D%E9%8B%85%E9%90%B5%E7%B7%9A
+  tw.2017#e4:
+    locator: 產品介紹
+    published_date: null
+    publisher: 官田鋼鐵股份有限公司
+    quote_check: found
+    title: 牙條
+    url: https://www.quintain.com.tw/zh-TW/pages/%E7%89%99%E6%A2%9D
+  tw.2017#e5:
+    locator: 乾牆螺絲介紹、塑板螺絲介紹
+    published_date: null
+    publisher: 官田鋼鐵股份有限公司
+    quote_check: not_found
+    title: 螺絲
+    url: https://www.quintain.com.tw/zh-TW/pages/%E8%9E%BA%E7%B5%B2
+  tw.2017#e6:
+    locator: 第54頁，4.1.1 Revenue distribution of 2024
+    published_date: '2025-04-01'
+    publisher: 官田鋼鐵股份有限公司
+    quote_check: found
+    title: 2024 Annual Report
+    url: https://cdn1.cybassets.com/s/files/32483/ckeditor/attachments/113%E5%B9%B4%E5%A0%B1%E8%8B%B1%E6%96%87%E7%89%88_%E5%AE%9A%E7%A8%BF_.pdf
+  tw.2017#e7:
+    locator: 第54頁，營收組成表之代工、餐飲及其他列
+    published_date: '2025-04-01'
+    publisher: 官田鋼鐵股份有限公司
+    quote_check: found
+    title: 2024 Annual Report
+    url: https://cdn1.cybassets.com/s/files/32483/ckeditor/attachments/113%E5%B9%B4%E5%A0%B1%E8%8B%B1%E6%96%87%E7%89%88_%E5%AE%9A%E7%A8%BF_.pdf
+  tw.2017#e8:
+    locator: 財報第21頁，營運特許權
+    published_date: '2026-03-31'
+    publisher: 官田鋼鐵股份有限公司（FinancialFilings重刊）
+    quote_check: unreachable
+    title: 官田鋼鐵股份有限公司及子公司民國114及113年度合併財務報告
+    url: https://financialfilings.com/filings/quintain-steel-2017/interim-quarterly-report/2026/33165780/
+  tw.2017#e9:
+    locator: 財報第5頁，會計師查核報告其他事項
+    published_date: '2026-03-31'
+    publisher: 官田鋼鐵股份有限公司（FinancialFilings重刊）
+    quote_check: unreachable
+    title: 官田鋼鐵股份有限公司及子公司民國114及113年度合併財務報告
+    url: https://financialfilings.com/filings/quintain-steel-2017/interim-quarterly-report/2026/33165780/

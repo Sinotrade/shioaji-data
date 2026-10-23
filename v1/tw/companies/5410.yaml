@@ -8,12 +8,182 @@ industry:
   l0_code: '30'
   l0_name: 資訊服務業
   l0_name_en: Information Service
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.distribution
+  l2_name: 電子通路
+  l2_name_en: Electronics Distribution
+  l3: dist.it
+  l3_name: 資訊產品通路
+  l3_name_en: IT Products Distribution
+primary_chain_position: downstream
+summary_short: 以電腦與週邊設備銷售為主，提供系統整合、金融自動化及維護服務。
+summary_long: 國眾銷售個人電腦、筆電及週邊設備，2025年個人電腦占合併營收63.77%，為最大產品類別；其他、系統整合產品與自動化設備分別占30.37%、2.64%及3.22%。公司也提供資訊化規劃與建置、雲端運算系統整合，以及金融自動化設備整合與應用軟體開發。維護服務涵蓋資訊設備委外維修、彩券投注機裝置、故障維修與定期保養。另有結合雲端、物聯網及5G企業專網的ESG永續智慧AIoT系統平台。旗下直接子公司包括眾力科技與眾志智慧科技。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_pc
+  name: 個人電腦
+  period: '2025'
+  revenue_share_pct: 63.77
+- evidence_ids:
+  - e1
+  id: seg_integration
+  name: 系統整合產品
+  period: '2025'
+  revenue_share_pct: 2.64
+- evidence_ids:
+  - e1
+  id: seg_automation
+  name: 自動化（事務性）設備
+  period: '2025'
+  revenue_share_pct: 3.22
+- evidence_ids:
+  - e1
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 30.37
+main_theme: theme.5g
+themes:
+- also: []
+  stage: equipment
+  theme: theme.5g
+  tier: midstream
+relations:
+  subsidiaries:
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過眾力科技持有的間接子公司
+    details:
+    - 透過眾力科技持有的間接子公司
+    edge: ef0df8e0f9aa5
+    evidence_level: primary
+    id: org.易化服務科技發展有限公司
+    name: 易化服務科技發展有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過眾力科技持有的間接子公司
+    details:
+    - 透過眾力科技持有的間接子公司
+    edge: ebdfada91fea3
+    evidence_level: primary
+    id: org.深圳揚眾科技有限公司
+    name: 深圳揚眾科技有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%股權的子公司
+    details:
+    - 直接持有100%股權的子公司
+    edge: ed0efb9fd0a4a
+    evidence_level: primary
+    id: org.眾力科技股份有限公司
+    name: 眾力科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有90%股權的子公司
+    details:
+    - 直接持有90%股權的子公司
+    edge: ea2fe90048e32
+    evidence_level: primary
+    id: org.眾志智慧科技股份有限公司
+    name: 眾志智慧科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.leosys.com
 tax_id: '01517124'
 incorporated: '1985-09-13'
 listed: '1999-11-26'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.5410#e1:
+    locator: 第77頁，營業比重；PDF第81頁，114年度欄
+    published_date: '2026-04-30'
+    publisher: 國眾電腦股份有限公司
+    quote_check: not_found
+    title: 國眾電腦股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=5410&colorchg=1&filename=2025_5410_20260525F04.pdf&kind=F&step=9
+  tw.5410#e10:
+    locator: 第107頁，關係企業組織圖及115年3月31日關係企業基本資料；PDF第111頁
+    published_date: '2026-04-30'
+    publisher: 國眾電腦股份有限公司
+    quote_check: not_found
+    title: 國眾電腦股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=5410&colorchg=1&filename=2025_5410_20260525F04.pdf&kind=F&step=9
+  tw.5410#e2:
+    locator: 第77頁，公司目前之商品及服務項目，第1項
+    published_date: '2026-04-30'
+    publisher: 國眾電腦股份有限公司
+    quote_check: not_found
+    title: 國眾電腦股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=5410&colorchg=1&filename=2025_5410_20260525F04.pdf&kind=F&step=9
+  tw.5410#e3:
+    locator: 第78頁，本公司主要業務及核心專長
+    published_date: '2026-04-30'
+    publisher: 國眾電腦股份有限公司
+    quote_check: not_found
+    title: 國眾電腦股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=5410&colorchg=1&filename=2025_5410_20260525F04.pdf&kind=F&step=9
+  tw.5410#e4:
+    locator: 第77頁，公司目前之商品及服務項目，第8項
+    published_date: '2026-04-30'
+    publisher: 國眾電腦股份有限公司
+    quote_check: not_found
+    title: 國眾電腦股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=5410&colorchg=1&filename=2025_5410_20260525F04.pdf&kind=F&step=9
+  tw.5410#e5:
+    locator: 第77頁，公司目前之商品及服務項目，第5項
+    published_date: '2026-04-30'
+    publisher: 國眾電腦股份有限公司
+    quote_check: not_found
+    title: 國眾電腦股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=5410&colorchg=1&filename=2025_5410_20260525F04.pdf&kind=F&step=9
+  tw.5410#e6:
+    locator: 第81頁，產品之各種發展趨勢及競爭情形，銀行自動化設備列
+    published_date: '2026-04-30'
+    publisher: 國眾電腦股份有限公司
+    quote_check: not_found
+    title: 國眾電腦股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=5410&colorchg=1&filename=2025_5410_20260525F04.pdf&kind=F&step=9
+  tw.5410#e7:
+    locator: 第78頁，公司目前之商品及服務項目，第12項
+    published_date: '2026-04-30'
+    publisher: 國眾電腦股份有限公司
+    quote_check: not_found
+    title: 國眾電腦股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=5410&colorchg=1&filename=2025_5410_20260525F04.pdf&kind=F&step=9
+  tw.5410#e8:
+    locator: 第78頁，公司目前之商品及服務項目，第13項
+    published_date: '2026-04-30'
+    publisher: 國眾電腦股份有限公司
+    quote_check: not_found
+    title: 國眾電腦股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=5410&colorchg=1&filename=2025_5410_20260525F04.pdf&kind=F&step=9
+  tw.5410#e9:
+    locator: 產品介紹首段
+    published_date: null
+    publisher: 國眾電腦股份有限公司
+    quote_check: unreachable
+    title: ESG永續智慧AIoT系統平台
+    url: https://www.leosys.com/index.php/solutions/financial-products-and-applications/financial-products-and-applications-2/esg-aiot

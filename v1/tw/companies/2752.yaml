@@ -8,12 +8,185 @@ industry:
   l0_code: '16'
   l0_name: 觀光餐旅
   l0_name_en: Tourism and Hospitality
-primary_chain_position: unknown
+  l1: consumer
+  l1_name: 消費
+  l1_name_en: Consumer
+  l2: cons.discretionary
+  l2_name: 非必需消費
+  l2_name_en: Consumer Discretionary
+  l3: tourism.restaurant
+  l3_name: 餐飲
+  l3_name_en: Restaurants
+primary_chain_position: not_applicable
+summary_short: 經營多品牌亞洲料理連鎖餐廳，並銷售年菜、禮盒及即食商品。
+summary_long: 豆府以連鎖餐飲服務為主要收入來源，2025年度餐飲收入占99.71%，其他收入占0.29%。公司提供現場烹調的韓式、越式、泰式及日式料理，並搭配飲品與甜點，供消費者於店內客席或外帶食用。除現場餐飲服務外，亦銷售年菜、中秋禮盒及即食商品。依2026年3月底關係企業資料，豆府直接持有策聯國際及太魯閣國際全部股權，並透過策聯國際間接持有安廚食品及多富；另透過VNT International持有VT1 International。
+segments:
+- evidence_ids:
+  - e2
+  id: dining
+  name: 餐飲收入
+  period: '2025'
+  revenue_share_pct: 99.71
+- evidence_ids:
+  - e2
+  id: other
+  name: 其他收入
+  period: '2025'
+  revenue_share_pct: 0.29
+relations:
+  subsidiaries:
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有51%股權之子公司
+    details:
+    - 直接持有51%股權之子公司
+    edge: e270f418b3779
+    evidence_level: primary
+    id: org.vnt-international-co-ltd
+    name: VNT International Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過VNT International間接持有之子公司
+    details:
+    - 透過VNT International間接持有之子公司
+    edge: e40f5f8eb98e9
+    evidence_level: primary
+    id: org.vt1-international-co-ltd
+    name: VT1 International Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過策聯國際間接持有之全資子公司
+    details:
+    - 透過策聯國際間接持有之全資子公司
+    edge: ea4c8c2bdd9c5
+    evidence_level: primary
+    id: org.多富股份有限公司
+    name: 多富股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%股權之子公司
+    details:
+    - 直接持有100%股權之子公司
+    edge: ed8a159997bfd
+    evidence_level: primary
+    id: org.太魯閣國際股份有限公司
+    name: 太魯閣國際股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過策聯國際間接持有之子公司
+    details:
+    - 透過策聯國際間接持有之子公司
+    edge: ee84c7cab1f99
+    evidence_level: primary
+    id: org.安廚食品股份有限公司
+    name: 安廚食品股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%股權之子公司
+    details:
+    - 直接持有100%股權之子公司
+    edge: e5c81937295dc
+    evidence_level: primary
+    id: org.策聯國際股份有限公司
+    name: 策聯國際股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.tofuglobal.com/tw/home.html
 tax_id: '28841757'
 incorporated: '2008-01-23'
 listed: '2019-09-25'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2752#e10:
+    locator: 印刷第66頁，PDF第70頁，2026年3月31日關係企業組織圖；VNT至VT1連線標示100%
+    published_date: '2026-05-06'
+    publisher: 豆府股份有限公司
+    quote_check: found
+    title: 豆府股份有限公司114年度年報
+    url: https://www.tofuglobal.com/file/2026/R1505000869%E8%B1%86%E5%BA%9C%E5%B9%B4%E5%A0%B1(%E4%B8%8A).pdf
+  tw.2752#e2:
+    locator: 印刷第44頁，PDF第48頁，營業比重表；114年度餐飲收入4,060,616仟元、99.71%，其他收入11,747仟元、0.29%
+    published_date: '2026-05-06'
+    publisher: 豆府股份有限公司
+    quote_check: not_found
+    title: 豆府股份有限公司114年度年報
+    url: https://www.tofuglobal.com/file/2026/R1505000869%E8%B1%86%E5%BA%9C%E5%B9%B4%E5%A0%B1(%E4%B8%8A).pdf
+  tw.2752#e3:
+    locator: 印刷第44頁，PDF第48頁，公司目前之商品（服務）項目
+    published_date: '2026-05-06'
+    publisher: 豆府股份有限公司
+    quote_check: found
+    title: 豆府股份有限公司114年度年報
+    url: https://www.tofuglobal.com/file/2026/R1505000869%E8%B1%86%E5%BA%9C%E5%B9%B4%E5%A0%B1(%E4%B8%8A).pdf
+  tw.2752#e4:
+    locator: 印刷第45頁，PDF第49頁，商品項目表之其他類
+    published_date: '2026-05-06'
+    publisher: 豆府股份有限公司
+    quote_check: found
+    title: 豆府股份有限公司114年度年報
+    url: https://www.tofuglobal.com/file/2026/R1505000869%E8%B1%86%E5%BA%9C%E5%B9%B4%E5%A0%B1(%E4%B8%8A).pdf
+  tw.2752#e5:
+    locator: 印刷第66至67頁，PDF第70至71頁；組織圖及董事資料表策聯國際列，豆府持股100%
+    published_date: '2026-05-06'
+    publisher: 豆府股份有限公司
+    quote_check: found
+    title: 豆府股份有限公司114年度年報
+    url: https://www.tofuglobal.com/file/2026/R1505000869%E8%B1%86%E5%BA%9C%E5%B9%B4%E5%A0%B1(%E4%B8%8A).pdf
+  tw.2752#e6:
+    locator: 印刷第66至67頁，PDF第70至71頁；組織圖及董事資料表安廚食品列，策聯國際持股51%
+    published_date: '2026-05-06'
+    publisher: 豆府股份有限公司
+    quote_check: found
+    title: 豆府股份有限公司114年度年報
+    url: https://www.tofuglobal.com/file/2026/R1505000869%E8%B1%86%E5%BA%9C%E5%B9%B4%E5%A0%B1(%E4%B8%8A).pdf
+  tw.2752#e7:
+    locator: 印刷第66至67頁，PDF第70至71頁；組織圖及董事資料表多富列，策聯國際持股100%
+    published_date: '2026-05-06'
+    publisher: 豆府股份有限公司
+    quote_check: found
+    title: 豆府股份有限公司114年度年報
+    url: https://www.tofuglobal.com/file/2026/R1505000869%E8%B1%86%E5%BA%9C%E5%B9%B4%E5%A0%B1(%E4%B8%8A).pdf
+  tw.2752#e8:
+    locator: 印刷第66至67頁，PDF第70至71頁；組織圖及董事資料表太魯閣國際列，豆府持股100%
+    published_date: '2026-05-06'
+    publisher: 豆府股份有限公司
+    quote_check: found
+    title: 豆府股份有限公司114年度年報
+    url: https://www.tofuglobal.com/file/2026/R1505000869%E8%B1%86%E5%BA%9C%E5%B9%B4%E5%A0%B1(%E4%B8%8A).pdf
+  tw.2752#e9:
+    locator: 印刷第66頁，PDF第70頁，2026年3月31日關係企業組織圖；豆府至VNT連線標示51%
+    published_date: '2026-05-06'
+    publisher: 豆府股份有限公司
+    quote_check: found
+    title: 豆府股份有限公司114年度年報
+    url: https://www.tofuglobal.com/file/2026/R1505000869%E8%B1%86%E5%BA%9C%E5%B9%B4%E5%A0%B1(%E4%B8%8A).pdf

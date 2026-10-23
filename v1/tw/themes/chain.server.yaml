@@ -261,6 +261,30 @@ members:
   stage: components
   tier: midstream
   stage_role: primary
+- id: tw.3060
+  detail: 主要營收為伺服器等級硬碟用音圈馬達與上蓋，屬零組件及機構件。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.3060#e2
+  - tw.3060#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: components
+  tier: midstream
+  stage_role: primary
+- id: tw.3071
+  detail: 散熱風扇為最大營收部門，並提供AI伺服器用客製化散熱模組，屬散熱零組件階段。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.3071#e6
+  - tw.3071#e7
+  - tw.3071#e8
+  - tw.3071#e9
+  confidence: ai_cross_checked
+  source: classification
+  stage: components
+  tier: midstream
+  stage_role: primary
 - id: tw.3078
   detail: 主要研發製造電源供應器，CRPS產品明列資料中心與邊緣AI伺服器應用。
   as_of: '2026-10-18'
@@ -284,6 +308,18 @@ members:
   source: classification
   stage: datacenter
   tier: downstream
+  stage_role: primary
+- id: tw.3207
+  detail: 變壓器事業占營收58.5%，核心為變壓器與電感線圈，具伺服器及AI電源應用，屬電源零組件。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.3207#e1
+  - tw.3207#e3
+  - tw.3207#e4
+  confidence: ai_cross_checked
+  source: classification
+  stage: components
+  tier: midstream
   stage_role: primary
 - id: tw.3217
   detail: 提供伺服器記憶體插槽與高速連接器，屬連接零組件。
@@ -491,6 +527,18 @@ members:
   stage: components
   tier: midstream
   stage_role: primary
+- id: tw.5426
+  detail: 電腦外殼占營收76.53%，產品涵蓋伺服器機殼與GPU平台滑軌，屬機構零組件。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.5426#e2
+  - tw.5426#e3
+  - tw.5426#e7
+  confidence: ai_cross_checked
+  source: classification
+  stage: components
+  tier: midstream
+  stage_role: primary
 - id: tw.5465
   detail: 機殼及零組件占營收56%，電源供應器占42%，均屬伺服器零組件階段。
   as_of: '2026-10-20'
@@ -674,6 +722,17 @@ members:
   stage: odm
   tier: downstream
   stage_role: primary
+- id: tw.6689
+  detail: 雲端服務占營收99.51%，主要提供企業多雲整合、遷移與託管，歸屬雲端與資料中心階段。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.6689#e2
+  - tw.6689#e4
+  confidence: ai_cross_checked
+  source: classification
+  stage: datacenter
+  tier: downstream
+  stage_role: primary
 - id: tw.6781
   detail: 鋰電池模組占營收99.7%，前三季伺服器BBU約占七成，屬備援電源零組件。
   as_of: '2026-10-14'
@@ -799,4 +858,4 @@ members:
   stage: components
   tier: midstream
   stage_role: primary
-as_of: '2026-10-20'
+as_of: '2026-10-23'

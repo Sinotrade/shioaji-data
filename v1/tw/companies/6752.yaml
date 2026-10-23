@@ -8,12 +8,206 @@ industry:
   l0_code: '30'
   l0_name: 資訊服務業
   l0_name_en: Information Service
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.software
+  l2_name: 軟體與資訊服務
+  l2_name_en: Software & IT Services
+  l3: sw.it_services
+  l3_name: 系統整合與資訊服務
+  l3_name_en: System Integration & IT Services
+primary_chain_position: not_applicable
+summary_short: 以企業軟體、雲端訂閱、系統開發維護及資安服務取得收入。
+summary_long: 叡揚提供企業資訊軟體，涵蓋人力資源、公文管理及知識協作。Vital 雲端服務家族採 SaaS 模式，提供客戶關係管理與智慧表單等企業應用；C.ai 提供企業 AI 對話與代理人平台，另有 NLP、AI 與機器學習研發。Vital NetZero 零碳雲提供碳盤查與能源管理工具，資安業務則提供檢測、防禦及培訓服務。2026 年上半年穩定收入占68.5%，包含期間授權、維護及委外服務；專業服務與產品銷貨分別占26.9%及4.6%。
+segments:
+- evidence_ids:
+  - e_income_sales
+  id: seg_product_sales
+  name: 產品銷貨收入
+  period: 2026H1
+  revenue_share_pct: 4.6
+- evidence_ids:
+  - e_income_stable
+  - e_income_definition
+  id: seg_stable
+  name: 穩定收入：期間授權、維護及委外服務
+  period: 2026H1
+  revenue_share_pct: 68.5
+- evidence_ids:
+  - e_income_professional
+  id: seg_professional
+  name: 專業服務收入
+  period: 2026H1
+  revenue_share_pct: 26.9
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的資訊軟體服務子公司
+    details:
+    - 直接持股100%的資訊軟體服務子公司
+    edge: ef7ddf6efad67
+    evidence_level: primary
+    id: org.合泉系安股份有限公司
+    name: 合泉系安股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的投資控股子公司
+    details:
+    - 直接持股100%的投資控股子公司
+    edge: e10289b067c03
+    evidence_level: primary
+    id: org.數碼第一顧問-薩摩亞-有限公司
+    name: 數碼第一顧問(薩摩亞)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過數碼第一顧問間接持有的資訊軟體服務子公司
+    details:
+    - 透過數碼第一顧問間接持有的資訊軟體服務子公司
+    edge: e48bc6c0251a0
+    evidence_level: primary
+    id: org.睿又揚信息科技-上海-有限公司
+    name: 睿又揚信息科技(上海)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股50.96%的資訊軟體服務子公司
+    details:
+    - 直接持股50.96%的資訊軟體服務子公司
+    edge: efdcfe1586007
+    evidence_level: primary
+    id: org.網軟股份有限公司
+    name: 網軟股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.gss.com.tw
 tax_id: '22425662'
 incorporated: '1987-03-16'
 listed: '2020-12-10'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6752#e_cai:
+    locator: 產品頁主標題
+    published_date: null
+    publisher: 叡揚資訊股份有限公司
+    quote_check: found
+    title: iota C.ai 對話服務平台
+    url: https://www.gss.com.tw/iota
+  tw.6752#e_enterprise:
+    locator: 叡揚簡介首段
+    published_date: null
+    publisher: 叡揚資訊股份有限公司
+    quote_check: found
+    title: 叡揚簡介
+    url: https://www.gss.com.tw/about/introduction
+  tw.6752#e_fin_revenue:
+    locator: 印刷頁38，附註六（二十）客戶合約之收入
+    published_date: null
+    publisher: 叡揚資訊股份有限公司
+    quote_check: found
+    title: 民國114年度及113年度合併財務報告暨會計師查核報告
+    url: https://www.gss.com.tw/images/2026/2025_.pdf
+  tw.6752#e_income_definition:
+    locator: 第12頁，收入分析註解
+    published_date: '2026-09-02'
+    publisher: 叡揚資訊股份有限公司
+    quote_check: found
+    title: 2026年第3季法人說明會
+    url: https://www.gss.com.tw/files/20260902chi.pdf
+  tw.6752#e_income_professional:
+    locator: 第12頁，收入分析右圖，2026H1專業服務收入占比
+    published_date: '2026-09-02'
+    publisher: 叡揚資訊股份有限公司
+    quote_check: not_found
+    title: 2026年第3季法人說明會
+    url: https://www.gss.com.tw/files/20260902chi.pdf
+  tw.6752#e_income_sales:
+    locator: 第12頁，收入分析右圖，2026H1產品銷貨收入占比
+    published_date: '2026-09-02'
+    publisher: 叡揚資訊股份有限公司
+    quote_check: not_found
+    title: 2026年第3季法人說明會
+    url: https://www.gss.com.tw/files/20260902chi.pdf
+  tw.6752#e_income_stable:
+    locator: 第12頁，收入分析右圖，2026H1穩定收入占比
+    published_date: '2026-09-02'
+    publisher: 叡揚資訊股份有限公司
+    quote_check: not_found
+    title: 2026年第3季法人說明會
+    url: https://www.gss.com.tw/files/20260902chi.pdf
+  tw.6752#e_netzero:
+    locator: 產品頁功能標題
+    published_date: null
+    publisher: 叡揚資訊股份有限公司
+    quote_check: found
+    title: Vital NetZero 零碳雲
+    url: https://www.gsscloud.com/tw/vital-netzero
+  tw.6752#e_nlp:
+    locator: 第6頁，公司技術發展圖
+    published_date: '2026-09-02'
+    publisher: 叡揚資訊股份有限公司
+    quote_check: found
+    title: 2026年第3季法人說明會
+    url: https://www.gss.com.tw/files/20260902chi.pdf
+  tw.6752#e_security:
+    locator: 關於我們
+    published_date: null
+    publisher: 叡揚資訊股份有限公司
+    quote_check: found
+    title: 叡揚資安全方位資訊安全解決方案
+    url: https://www.gss.com.tw/sca
+  tw.6752#e_sub_digital:
+    locator: 印刷頁12，列入合併財務報告之子公司
+    published_date: null
+    publisher: 叡揚資訊股份有限公司
+    quote_check: found
+    title: 民國114年度及113年度合併財務報告暨會計師查核報告
+    url: https://www.gss.com.tw/images/2026/2025_.pdf
+  tw.6752#e_sub_hequan:
+    locator: 印刷頁12，列入合併財務報告之子公司
+    published_date: null
+    publisher: 叡揚資訊股份有限公司
+    quote_check: found
+    title: 民國114年度及113年度合併財務報告暨會計師查核報告
+    url: https://www.gss.com.tw/images/2026/2025_.pdf
+  tw.6752#e_sub_netsoft:
+    locator: 印刷頁12，列入合併財務報告之子公司
+    published_date: null
+    publisher: 叡揚資訊股份有限公司
+    quote_check: found
+    title: 民國114年度及113年度合併財務報告暨會計師查核報告
+    url: https://www.gss.com.tw/images/2026/2025_.pdf
+  tw.6752#e_sub_shanghai:
+    locator: 印刷頁12，列入合併財務報告之子公司
+    published_date: null
+    publisher: 叡揚資訊股份有限公司
+    quote_check: found
+    title: 民國114年度及113年度合併財務報告暨會計師查核報告
+    url: https://www.gss.com.tw/images/2026/2025_.pdf
+  tw.6752#e_vital:
+    locator: 第16頁，Vital Family SaaS產品圖
+    published_date: '2026-09-02'
+    publisher: 叡揚資訊股份有限公司
+    quote_check: found
+    title: 2026年第3季法人說明會
+    url: https://www.gss.com.tw/files/20260902chi.pdf

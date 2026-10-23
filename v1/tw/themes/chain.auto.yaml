@@ -31,6 +31,30 @@ members:
   stage: parts
   tier: midstream
   stage_role: primary
+- id: tw.1339
+  detail: 汽車零件占營收98.74%，主製AM保險桿、水箱護罩等碰撞替換件，屬零組件製造。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.1339#e1
+  - tw.1339#e2
+  - tw.1339#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: parts
+  tier: midstream
+  stage_role: primary
+- id: tw.1506
+  detail: 汽車零組件為主要營收來源，產品包括活塞、連桿及轉向與懸吊零件。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.1506#e2
+  - tw.1506#e3
+  - tw.1506#e4
+  confidence: ai_cross_checked
+  source: classification
+  stage: parts
+  tier: midstream
+  stage_role: primary
 - id: tw.1522
   detail: 汽車類占營收93%，主要供應車燈、後視鏡與冷卻零件，屬零組件與模組。
   as_of: '2026-10-18'
@@ -38,6 +62,34 @@ members:
   - tw.1522#e1
   - tw.1522#e2
   - tw.1522#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: parts
+  tier: midstream
+  stage_role: primary
+- id: tw.1524
+  detail: 汽車零件收入占98.92%，主要製造售後維修用車身碰撞件，屬零組件中游。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.1524#e2
+  - tw.1524#e3
+  - tw.1524#e6
+  confidence: ai_cross_checked
+  source: classification
+  stage: parts
+  tier: midstream
+  stage_role: primary
+- id: tw.1525
+  detail: 載台占營收36%為最大項目，另製造車架、電巴車架及懸吊零件，屬零組件中游。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.1525#e1
+  - tw.1525#e2
+  - tw.1525#e3
+  - tw.1525#e4
+  - tw.1525#e11
+  - tw.1525#e13
+  - tw.1525#e14
   confidence: ai_cross_checked
   source: classification
   stage: parts
@@ -55,6 +107,30 @@ members:
   stage: parts
   tier: midstream
   stage_role: primary
+- id: tw.1533
+  detail: 電動巴士占營收52.19%為最大業務，另有汽車電子及電池、電控零組件。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.1533#e2
+  - tw.1533#e4
+  - tw.1533#e7
+  confidence: ai_cross_checked
+  source: classification
+  stage: oem
+  tier: downstream
+  stage_role: primary
+- id: tw.1533
+  detail: 電動巴士占營收52.19%為最大業務，另有汽車電子及電池、電控零組件。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.1533#e2
+  - tw.1533#e4
+  - tw.1533#e7
+  confidence: ai_cross_checked
+  source: classification
+  stage: parts
+  tier: midstream
+  stage_role: also
 - id: tw.1536
   detail: 汽車營收占85%，核心產品為變速箱組件、減速齒輪與差速器。
   as_of: '2026-10-18'
@@ -89,6 +165,17 @@ members:
   stage: materials
   tier: upstream
   stage_role: also
+- id: tw.1568
+  detail: 汽車自動變速箱零組件占營收65.69%為最大宗，另製造新能源車馬達及卡車離合器零組件。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.1568#e1
+  - tw.1568#e6
+  confidence: ai_cross_checked
+  source: classification
+  stage: parts
+  tier: midstream
+  stage_role: primary
 - id: tw.2101
   detail: 汽車輪胎占合併營收97.10%，主要從事輪胎製造，屬汽車零組件。
   as_of: '2026-10-15'
@@ -133,6 +220,30 @@ members:
   - tw.2106#e3
   - tw.2106#e4
   - tw.2106#e5
+  confidence: ai_cross_checked
+  source: classification
+  stage: parts
+  tier: midstream
+  stage_role: primary
+- id: tw.2109
+  detail: 以輪胎製造與銷售為主，機車胎占營收55.06%，另有卡汽車胎，屬零組件。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.2109#e1
+  confidence: ai_cross_checked
+  source: classification
+  stage: parts
+  tier: midstream
+  stage_role: primary
+- id: tw.2115
+  detail: 主營輪胎氣門嘴及配件，汽車、卡車及非道路用車類占營收35.73%，屬汽車零組件。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.2115#e1
+  - tw.2115#e2
+  - tw.2115#e3
+  - tw.2115#e4
+  - tw.2115#e5
   confidence: ai_cross_checked
   source: classification
   stage: parts
@@ -282,6 +393,17 @@ members:
   stage: parts
   tier: midstream
   stage_role: primary
+- id: tw.2243
+  detail: 營收93.72%來自汽車鈑金模具，屬製造用專用設備，非材料、電子元件、汽車零組件或整車售後。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.2243#e2
+  - tw.2243#e3
+  - tw.2243#e6
+  confidence: ai_cross_checked
+  source: classification
+  stage: null
+  tier: null
 - id: tw.2247
   detail: 汽車銷售占營收90.05%，並提供維修保養，屬整車經銷與售後服務。
   as_of: '2026-10-15'
@@ -293,6 +415,17 @@ members:
   source: classification
   stage: oem
   tier: downstream
+  stage_role: primary
+- id: tw.2248
+  detail: 汽車LED內飾件占營收80.98%，另生產汽車內外飾件，均屬汽車零組件。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.2248#e2
+  - tw.2248#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: parts
+  tier: midstream
   stage_role: primary
 - id: tw.2254
   detail: 最大收入為售後改裝用LED車燈，主要屬售後市場，另有汽車零組件及水箱護罩業務。
@@ -350,6 +483,30 @@ members:
   stage: parts
   tier: midstream
   stage_role: primary
+- id: tw.3226
+  detail: 汽車零組件占營收93.59%，主力為車燈與車用LED燈組；另有電子零組件及照明封裝模組業務。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.3226#e2
+  - tw.3226#e3
+  - tw.3226#e4
+  confidence: ai_cross_checked
+  source: classification
+  stage: parts
+  tier: midstream
+  stage_role: primary
+- id: tw.3226
+  detail: 汽車零組件占營收93.59%，主力為車燈與車用LED燈組；另有電子零組件及照明封裝模組業務。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.3226#e2
+  - tw.3226#e3
+  - tw.3226#e4
+  confidence: ai_cross_checked
+  source: classification
+  stage: materials
+  tier: upstream
+  stage_role: also
 - id: tw.3310
   detail: 車用零組件占營收五成以上，主營精密沖壓件；另製造用於車燈及感應器的導線架，涵蓋電子元件。
   as_of: '2026-10-20'
@@ -372,6 +529,40 @@ members:
   stage: materials
   tier: upstream
   stage_role: also
+- id: tw.3346
+  detail: 車燈模組占營收64.44%為最大業務，另有車燈控制器；兼售LED晶粒及元件，跨上游電子元件。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.3346#e2
+  - tw.3346#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: parts
+  tier: midstream
+  stage_role: primary
+- id: tw.3346
+  detail: 車燈模組占營收64.44%為最大業務，另有車燈控制器；兼售LED晶粒及元件，跨上游電子元件。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.3346#e2
+  - tw.3346#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: materials
+  tier: upstream
+  stage_role: also
+- id: tw.3552
+  detail: 主業為車用電子設計與生產，提供超音波感測、停車輔助及影像系統，屬汽車零組件與模組。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.3552#e1
+  - tw.3552#e2
+  - tw.3552#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: parts
+  tier: midstream
+  stage_role: primary
 - id: tw.3624
   detail: 精密電阻占營收57%，車用電阻與電感屬上游電子元件。
   as_of: '2026-10-15'
@@ -386,6 +577,17 @@ members:
   source: classification
   stage: materials
   tier: upstream
+  stage_role: primary
+- id: tw.3685
+  detail: 最大營收部門為車身金屬沖壓焊接件，另供應車用光學部件與燈具。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.3685#e1
+  - tw.3685#e2
+  confidence: ai_cross_checked
+  source: classification
+  stage: parts
+  tier: midstream
   stage_role: primary
 - id: tw.3717
   detail: 車用LED燈模組及元件占營收93%，以車用照明模組為核心，另供應LED電子元件。
@@ -422,12 +624,49 @@ members:
   stage: parts
   tier: midstream
   stage_role: primary
+- id: tw.4557
+  detail: 主要營收來自煞車片、總分泵與卡鉗，屬零組件製造，產品主供售後市場。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.4557#e2
+  - tw.4557#e3
+  - tw.4557#e4
+  - tw.4557#e5
+  - tw.4557#e6
+  - tw.4557#e7
+  confidence: ai_cross_checked
+  source: classification
+  stage: parts
+  tier: midstream
+  stage_role: primary
+- id: tw.4564
+  detail: 氣體發生器占營收60.64%，為最大業務，產品包含汽車安全氣囊用氣體發生器，屬汽車零組件。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.4564#e2
+  - tw.4564#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: parts
+  tier: midstream
+  stage_role: primary
 - id: tw.4566
   detail: 汽車相關業務合計占營收47%，主要供應動力、安全及新能源車精密零件。
   as_of: '2026-10-18'
   evidence:
   - tw.4566#e1
   - tw.4566#e2
+  confidence: ai_cross_checked
+  source: classification
+  stage: parts
+  tier: midstream
+  stage_role: primary
+- id: tw.4569
+  detail: 汽車應用占營收56%，為最大業務，主要以CNC車削、銑削及沖壓製造精密金屬零件。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.4569#e3
+  - tw.4569#e4
   confidence: ai_cross_checked
   source: classification
   stage: parts
@@ -455,6 +694,19 @@ members:
   source: classification
   stage: parts
   tier: midstream
+  stage_role: primary
+- id: tw.5227
+  detail: 營收主要來自電池粉體製造，核心產品為電動車電池用磷酸系正極材料，屬材料端。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.5227#e1
+  - tw.5227#e2
+  - tw.5227#e3
+  - tw.5227#e5
+  confidence: ai_cross_checked
+  source: classification
+  stage: materials
+  tier: upstream
   stage_role: primary
 - id: tw.5243
   detail: 汽車機構件占營收57.99%，主要製造車椅結構件與車架組件。
@@ -501,6 +753,18 @@ members:
   stage: parts
   tier: midstream
   stage_role: primary
+- id: tw.6275
+  detail: 汽車電子占營收47%，為最大應用領域，主要供應座椅通風、中控系統用風扇與散熱模組。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.6275#e2
+  - tw.6275#e5
+  - tw.6275#e4
+  confidence: ai_cross_checked
+  source: classification
+  stage: parts
+  tier: midstream
+  stage_role: primary
 - id: tw.6279
   detail: 營收全數來自連接器及新能源連接器，以電子元件為主，另供應車用智慧配電模組。
   as_of: '2026-10-18'
@@ -525,6 +789,18 @@ members:
   stage: parts
   tier: midstream
   stage_role: also
+- id: tw.6465
+  detail: 衛星定位監控器占營收55.23%，並提供車聯網閘道器與車載影像終端，屬車用電子模組。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.6465#e1
+  - tw.6465#e5
+  - tw.6465#e7
+  confidence: ai_cross_checked
+  source: classification
+  stage: parts
+  tier: midstream
+  stage_role: primary
 - id: tw.6605
   detail: 汽車車燈占營收98.14%，主要角色為車燈零組件製造商。
   as_of: '2026-10-15'
@@ -537,6 +813,18 @@ members:
   stage: parts
   tier: midstream
   stage_role: primary
+- id: tw.6722
+  detail: 主要銷售車用電子系統，倒車雷達占營收69.18%，屬汽車零組件與模組。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.6722#e1
+  - tw.6722#e2
+  - tw.6722#e7
+  confidence: ai_cross_checked
+  source: classification
+  stage: parts
+  tier: midstream
+  stage_role: primary
 - id: tw.7736
   detail: 車門把手占營收52.36%，主要設計製造售後維修零件，研究明列屬中游零組件製造。
   as_of: '2026-10-20'
@@ -544,6 +832,17 @@ members:
   - tw.7736#e1
   - tw.7736#e2
   - tw.7736#e9
+  confidence: ai_cross_checked
+  source: classification
+  stage: parts
+  tier: midstream
+  stage_role: primary
+- id: tw.7821
+  detail: 車用裝置及車載通訊系統占營收56.13%，主力為行車記錄器與車載平板，屬汽車電子零組件與模組。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.7821#e2
+  - tw.7821#e4
   confidence: ai_cross_checked
   source: classification
   stage: parts
@@ -606,4 +905,40 @@ members:
   stage: materials
   tier: upstream
   stage_role: primary
-as_of: '2026-10-20'
+- id: tw.9110
+  detail: 機車製造銷售為最大營收來源，另有引擎與備用零件製造及對外銷售業務。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.9110#e1
+  - tw.9110#e2
+  - tw.9110#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: oem
+  tier: downstream
+  stage_role: primary
+- id: tw.9110
+  detail: 機車製造銷售為最大營收來源，另有引擎與備用零件製造及對外銷售業務。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.9110#e1
+  - tw.9110#e2
+  - tw.9110#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: parts
+  tier: midstream
+  stage_role: also
+- id: tw.9951
+  detail: 汽車窗簾占營收99.7%，主要產品為遮陽簾、遮物簾及內裝零組件，屬汽車零組件與模組。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.9951#e2
+  - tw.9951#e3
+  - tw.9951#e4
+  confidence: ai_cross_checked
+  source: classification
+  stage: parts
+  tier: midstream
+  stage_role: primary
+as_of: '2026-10-23'

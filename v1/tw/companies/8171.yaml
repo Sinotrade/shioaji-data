@@ -8,12 +8,186 @@ industry:
   l0_code: '35'
   l0_name: 綠能環保
   l0_name_en: Green Energy and Environmental Services
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.construction
+  l2_name: 營建與工程
+  l2_name_en: Engineering & Construction
+  l3: cons.engineering
+  l3_name: 工程與統包
+  l3_name_en: Engineering & EPC
+primary_chain_position: not_applicable
+summary_short: 提供工程建置服務，並銷售儲能設備與電池模組。
+summary_long: 天宇工業從事電池模組、儲能系統與設備，以及再生能源案場開發、系統整合與工程建置。2026年上半年工程收入為新台幣1億1,428.8萬元，高於銷貨收入的1億717.4萬元，另有售電及勞務收入。產品涵蓋工商儲能、AGV鋰電池組及通訊與伺服器機房用BBU備援電池；工商儲能支援備援供電、離峰充電與需量反應。夸克能源為納入合併財報的子公司，天宇持股40.44%，並透過過半數董事席次取得實質控制力。
+segments:
+- evidence_ids:
+  - e2
+  id: engineering
+  name: 工程收入
+  period: 2026-H1
+  revenue_share_pct: null
+- evidence_ids:
+  - e4
+  id: battery_modules
+  name: 電池模組
+  period: 2026-H1
+  revenue_share_pct: null
+- evidence_ids:
+  - e5
+  id: storage
+  name: 儲能系統及設備
+  period: 2026-H1
+  revenue_share_pct: null
+- evidence_ids:
+  - e5
+  id: cells
+  name: 電芯
+  period: 2026-H1
+  revenue_share_pct: null
+- evidence_ids:
+  - e2
+  id: services
+  name: 勞務收入
+  period: 2026-H1
+  revenue_share_pct: null
+- evidence_ids:
+  - e2
+  id: electricity
+  name: 售電收入
+  period: 2026-H1
+  revenue_share_pct: null
+- evidence_ids:
+  - e5
+  id: other
+  name: 其他
+  period: 2026-H1
+  revenue_share_pct: null
+main_theme: theme.data_center
+themes:
+- also: []
+  stage: equipment
+  theme: theme.data_center
+  tier: upstream
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接合併子公司
+    details:
+    - 直接合併子公司
+    edge: e2a10d5cdc6c5
+    evidence_level: primary
+    id: org.chengyu-new-energy
+    name: 成宇新能源科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 具實質控制力的合併子公司
+    details:
+    - 具實質控制力的合併子公司
+    edge: e0188a62fc525
+    evidence_level: primary
+    id: org.quark-energy
+    name: 夸克能源股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接合併子公司
+    details:
+    - 直接合併子公司
+    edge: e080cffeb840d
+    evidence_level: primary
+    id: org.tianchengyun-new-energy
+    name: 天成運新能源科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http：//www.feii.com.tw
 tax_id: '38426929'
 incorporated: '1983-10-01'
 listed: '2011-12-19'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.8171#e10:
+    locator: 第18頁，合併基礎註2
+    published_date: '2026-08-13'
+    publisher: 天宇工業股份有限公司
+    quote_check: found
+    title: 民國115年及114年第二季合併財務報告
+    url: https://www.feii.com.tw/_files/ugd/9132d3_4e9d83510b3646d5a2a2c048c1e2d0b4.pdf
+  tw.8171#e11:
+    locator: 第16頁，列入合併財務報告之子公司表
+    published_date: '2026-08-13'
+    publisher: 天宇工業股份有限公司
+    quote_check: not_found
+    title: 民國115年及114年第二季合併財務報告
+    url: https://www.feii.com.tw/_files/ugd/9132d3_4e9d83510b3646d5a2a2c048c1e2d0b4.pdf
+  tw.8171#e2:
+    locator: 第44頁，附註六（二十三）營業收入，115年1月1日至6月30日
+    published_date: '2026-08-13'
+    publisher: 天宇工業股份有限公司
+    quote_check: found
+    title: 民國115年及114年第二季合併財務報告
+    url: https://www.feii.com.tw/_files/ugd/9132d3_4e9d83510b3646d5a2a2c048c1e2d0b4.pdf
+  tw.8171#e3:
+    locator: 第13頁，附註一、公司沿革
+    published_date: '2026-08-13'
+    publisher: 天宇工業股份有限公司
+    quote_check: found
+    title: 民國115年及114年第二季合併財務報告
+    url: https://www.feii.com.tw/_files/ugd/9132d3_4e9d83510b3646d5a2a2c048c1e2d0b4.pdf
+  tw.8171#e4:
+    locator: 第45頁，客戶合約收入之細分，115年上半年電池模組收入
+    published_date: '2026-08-13'
+    publisher: 天宇工業股份有限公司
+    quote_check: found
+    title: 民國115年及114年第二季合併財務報告
+    url: https://www.feii.com.tw/_files/ugd/9132d3_4e9d83510b3646d5a2a2c048c1e2d0b4.pdf
+  tw.8171#e5:
+    locator: 第45頁，客戶合約收入之細分，115年上半年
+    published_date: '2026-08-13'
+    publisher: 天宇工業股份有限公司
+    quote_check: found
+    title: 民國115年及114年第二季合併財務報告
+    url: https://www.feii.com.tw/_files/ugd/9132d3_4e9d83510b3646d5a2a2c048c1e2d0b4.pdf
+  tw.8171#e6:
+    locator: 工商儲能：企業級儲能方案
+    published_date: null
+    publisher: 天宇工業股份有限公司
+    quote_check: found
+    title: 天宇工業｜工商貨櫃
+    url: https://www.feii.com.tw/products/industrial-energy-storage
+  tw.8171#e7:
+    locator: 高效AGV電池組，驅動智慧搬運系統
+    published_date: null
+    publisher: 天宇工業股份有限公司
+    quote_check: found
+    title: 天宇工業｜AGV電池組
+    url: https://www.feii.com.tw/products/agv
+  tw.8171#e8:
+    locator: 產品介紹及模組化彈性應用
+    published_date: null
+    publisher: 天宇工業股份有限公司
+    quote_check: found
+    title: 天宇工業｜BBU電池組
+    url: https://www.feii.com.tw/products/bbu
+  tw.8171#e9:
+    locator: 印刷第1頁，致股東報告書，營業計畫實施成果第3點
+    published_date: null
+    publisher: 天宇工業股份有限公司
+    quote_check: found
+    title: 天宇工業114年度年報
+    url: https://www.feii.com.tw/_files/ugd/9132d3_4e0c3776728e4f83aca0ff6f30a4e371.pdf

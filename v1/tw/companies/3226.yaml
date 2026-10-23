@@ -8,12 +8,107 @@ industry:
   l0_code: '05'
   l0_name: 電機機械
   l0_name_en: Electric Machinery
-primary_chain_position: unknown
+  l1: auto
+  l1_name: 汽車與運具
+  l1_name_en: Automotive & Mobility
+  l2: auto.vehicles
+  l2_name: 汽機車
+  l2_name_en: Autos & Motorcycles
+  l3: auto.parts
+  l3_name: 汽車零組件
+  l3_name_en: Auto Parts
+chain: chain.auto
+chain_stage:
+  agreement: both
+  also:
+  - stage: materials
+    stage_name: 材料與電子元件
+    tier: upstream
+  reason: 汽車零組件占營收93.59%，主力為車燈與車用LED燈組；另有電子零組件及照明封裝模組業務。
+  stage: parts
+  stage_name: 汽車零組件與模組
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 以汽車車燈、車用LED燈組及相關零組件的製造與銷售為主要業務。
+summary_long: 龍鋒科技從事車燈設計、研發、製造、行銷及進出口，主要產品包括頭燈、尾燈、霧燈、煞車燈及拖車遙控燈等汽車照明產品。2025年度營收由汽車零組件占93.59%、電子零組件占6.41%構成。公司亦提供車燈專用LED燈組、燈具照明用電源及照明封裝模組。官網列示的晶鑽光全LED皮卡車頭燈整合行車、晝行、迎賓及流光方向燈功能；鋒曜矩陣全LED皮卡尾燈則為改裝尾燈，採矩陣LED光源設計。
+segments:
+- evidence_ids:
+  - e3
+  id: seg_auto
+  name: 汽車零組件
+  period: '2025'
+  revenue_share_pct: 93.59
+- evidence_ids:
+  - e3
+  id: seg_electronic
+  name: 電子零組件
+  period: '2025'
+  revenue_share_pct: 6.41
+relations:
+  parents:
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 最終母公司及最終控制者
+    details:
+    - 最終母公司及最終控制者
+    edge: e3f2db68e245a
+    evidence_level: primary
+    id: org.至誠投資股份有限公司
+    name: 至誠投資股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 年報董事會決議所稱百分之百持股之貿易子公司：未確認名稱及實際成立情形。
 website: www.lfa.com.tw
 tax_id: '22193115'
 incorporated: '1986-09-13'
 listed: '2004-06-16'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3226#e2:
+    locator: 第60頁，肆、營運概況／業務內容
+    published_date: null
+    publisher: 龍鋒科技股份有限公司
+    quote_check: unreachable
+    title: 115年年報
+    url: https://www.lfa.com.tw/wp-content/uploads/2026/06/115%E5%B9%B4%E5%B9%B4%E5%A0%B1.pdf
+  tw.3226#e3:
+    locator: 第60頁，營業比重；欄序為114年度及113年度
+    published_date: null
+    publisher: 龍鋒科技股份有限公司
+    quote_check: unreachable
+    title: 115年年報
+    url: https://www.lfa.com.tw/wp-content/uploads/2026/06/115%E5%B9%B4%E5%B9%B4%E5%A0%B1.pdf
+  tw.3226#e4:
+    locator: 第60頁，目前之商品（服務）項目
+    published_date: null
+    publisher: 龍鋒科技股份有限公司
+    quote_check: unreachable
+    title: 115年年報
+    url: https://www.lfa.com.tw/wp-content/uploads/2026/06/115%E5%B9%B4%E5%B9%B4%E5%A0%B1.pdf
+  tw.3226#e5:
+    locator: 產品特色
+    published_date: null
+    publisher: 龍鋒科技股份有限公司
+    quote_check: found
+    title: 2024 – 晶鑽光 全LED皮卡車頭燈
+    url: https://www.lfa.com.tw/portfolio-item/2024-晶鑽光-全led皮卡車頭燈/
+  tw.3226#e6:
+    locator: 產品介紹
+    published_date: null
+    publisher: 龍鋒科技股份有限公司
+    quote_check: found
+    title: 2026 – 鋒曜矩陣全LED皮卡尾燈
+    url: https://www.lfa.com.tw/portfolio-item/2026-lfa-鋒曜矩陣全led皮卡尾燈/
+  tw.3226#e7:
+    locator: 第35頁，附註三一、關係人交易
+    published_date: null
+    publisher: 龍鋒科技股份有限公司
+    quote_check: found
+    title: 114年及113年第3季財務報告
+    url: https://www.lfa.com.tw/wp-content/uploads/2025/12/2025Q3.pdf

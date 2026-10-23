@@ -8,12 +8,137 @@ industry:
   l0_code: '27'
   l0_name: 通信網路業
   l0_name_en: Communications and Internet
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.network
+  l2_name: 通信網路
+  l2_name_en: Communications & Networking
+  l3: net.wireless
+  l3_name: 無線通訊與射頻
+  l3_name_en: Wireless & RF
+chain: chain.networking
+chain_stage:
+  agreement: both
+  also: []
+  reason: 無線通訊模組占營收99.82%，主要產品為Wi-Fi／藍牙、5G RedCap及SoM系統模組。
+  stage: modules
+  stage_name: 模組與零組件
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 以AMPAK品牌研發與銷售Wi-Fi、藍牙、5G及系統模組。
+summary_long: 正基以AMPAK自有品牌研發、設計與銷售無線通訊模組，供應全球AIoT企業客群。2024年無線通訊模組占營收99.82%，其他收入占0.18%。主要產品涵蓋Wi-Fi／藍牙複合模組、車規及寬溫模組、5G RedCap與SoM系統模組。其AP72619 SoM列有工業物聯網與倉儲物流機器人應用，另展示無人機無線通訊方案。2026年6月底，合併子公司為速連通訊，持有其92.44%所有權權益及表決權。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_wireless
+  name: 無線通訊模組
+  period: '2024'
+  revenue_share_pct: 99.82
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他
+  period: '2024'
+  revenue_share_pct: 0.18
+main_theme: theme.5g
+themes:
+- also: []
+  stage: components
+  theme: theme.5g
+  tier: upstream
+- also: []
+  stage: control
+  theme: theme.robotics
+  tier: midstream
+- also: []
+  stage: components
+  theme: theme.drone
+  tier: upstream
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 列入合併財報之通訊業子公司
+    details:
+    - 列入合併財報之通訊業子公司
+    edge: e395dd2dbf339
+    evidence_level: primary
+    id: org.silicon-radios
+    name: 速連通訊股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.ampak.com.tw
 tax_id: '12673109'
 incorporated: '2000-12-14'
 listed: '2022-05-24'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6546#e10:
+    locator: 首段展出方案介紹
+    published_date: '2026-06-10'
+    publisher: 正基科技股份有限公司
+    quote_check: found
+    title: 2026 Computex
+    url: https://www.ampak.com.tw/tw/news/2026Computex
+  tw.6546#e2:
+    locator: 第69頁，所營業務之營業比重；欄位依序為112、113年度
+    published_date: '2025-05-06'
+    publisher: 正基科技股份有限公司
+    quote_check: found
+    title: 正基科技113年度年報
+    url: https://www.ampak.com.tw/uploads/files/shares/stock/113%E5%B9%B4_%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
+  tw.6546#e3:
+    locator: 第70頁，產業之現況與發展
+    published_date: '2025-05-06'
+    publisher: 正基科技股份有限公司
+    quote_check: found
+    title: 正基科技113年度年報
+    url: https://www.ampak.com.tw/uploads/files/shares/stock/113%E5%B9%B4_%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
+  tw.6546#e4:
+    locator: AP6612X產品標題下方
+    published_date: null
+    publisher: 正基科技股份有限公司
+    quote_check: found
+    title: AP6612X產品介紹
+    url: https://www.ampak.com.tw/tw/product/WiFi-Bluetooth/stamp-type-1T1R/AP6612X
+  tw.6546#e5:
+    locator: 5G RedCap產品說明段
+    published_date: '2025-05-20'
+    publisher: 正基科技股份有限公司
+    quote_check: found
+    title: Computex 2025 AMPAK
+    url: https://www.ampak.com.tw/tw/news/computex2025_AMPAK
+  tw.6546#e6:
+    locator: 產品名稱及Market segment
+    published_date: null
+    publisher: 正基科技股份有限公司
+    quote_check: found
+    title: System on Module - AP72619
+    url: https://www.ampak.com.tw/tw/product/SOMM/som_AP72619
+  tw.6546#e7:
+    locator: Market segment，Industrial IoT & Smart Factory
+    published_date: null
+    publisher: 正基科技股份有限公司
+    quote_check: found
+    title: System on Module - AP72619
+    url: https://www.ampak.com.tw/tw/product/SOMM/som_AP72619
+  tw.6546#e8:
+    locator: 第69頁，目前之商品服務項目
+    published_date: '2025-05-06'
+    publisher: 正基科技股份有限公司
+    quote_check: found
+    title: 正基科技113年度年報
+    url: https://www.ampak.com.tw/uploads/files/shares/stock/113%E5%B9%B4_%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
+  tw.6546#e9:
+    locator: 第17頁，附註十二子公司；百分比依序為115年6月30日、114年12月31日、114年6月30日
+    published_date: null
+    publisher: 正基科技股份有限公司
+    quote_check: found
+    title: 正基科技及子公司115及114年第2季合併財務報告
+    url: https://www.ampak.com.tw/uploads/files/shares/financial/115_Q2_IFRSs%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf

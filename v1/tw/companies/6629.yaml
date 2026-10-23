@@ -8,13 +8,166 @@ industry:
   l0_code: '38'
   l0_name: 居家生活
   l0_name_en: Home Life
-primary_chain_position: unknown
+  l1: consumer
+  l1_name: 消費
+  l1_name_en: Consumer
+  l2: cons.discretionary
+  l2_name: 非必需消費
+  l2_name_en: Consumer Discretionary
+  l3: consumer.furniture
+  l3_name: 家具與居家用品
+  l3_name_en: Furniture & Home Furnishings
+primary_chain_position: midstream
+summary_short: 透過子公司製造家飾五金，產品涵蓋櫥櫃、衛浴、窗簾配件與水龍頭。
+summary_long: 泰金投資控股透過旗下公司經營家居裝飾五金製造，主要產品包括櫥櫃五金、衛浴掛件、水龍頭及窗簾五金。集團具備模具開發、壓鑄成型與表面處理能力，提供一站式製造服務，並與客戶共同投入產品設計及研發。2025年前三季合併財報將主要產品與服務列為傢俱裝飾五金。集團直接持有製造、銷售及控股子公司，並透過Royal Finishing持有Mira Home，後者屬間接子公司。
+segments:
+- evidence_ids:
+  - e8
+  id: seg_home_hardware
+  name: 傢俱裝飾五金
+  period: 2025年前三季
+  revenue_share_pct: null
+relations:
+  subsidiaries:
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接海外控股子公司
+    details:
+    - 直接海外控股子公司
+    edge: e250b29d271c5
+    evidence_level: primary
+    id: org.angel-win-limited
+    name: Angel Win Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 經Royal Finishing持有的間接銷售子公司
+    details:
+    - 經Royal Finishing持有的間接銷售子公司
+    edge: e711aa9fdd542
+    evidence_level: primary
+    id: org.mira-home-inc
+    name: Mira Home, Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接製造子公司
+    details:
+    - 直接製造子公司
+    edge: e6ccf6417acf2
+    evidence_level: primary
+    id: org.paokin-co-ltd
+    name: Paokin Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接製造子公司
+    details:
+    - 直接製造子公司
+    edge: e023376715a69
+    evidence_level: primary
+    id: org.royal-finishing-co-ltd
+    name: Royal Finishing Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接銷售子公司
+    details:
+    - 直接銷售子公司
+    edge: eb4c1c066261a
+    evidence_level: primary
+    id: org.thai-kin-company-limited
+    name: Thai Kin Company Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.thai-kin.com
 tax_id: '76347621'
 incorporated: '2016-02-03'
 listed: '2019-06-06'
 foreign_registration: KY 開曼群島
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6629#e1:
+    locator: 第11頁，產品及生產流程－產品系列涵蓋領域廣；身分見第1頁
+    published_date: '2026-05-27'
+    publisher: 泰金投資控股股份有限公司
+    quote_check: not_found
+    title: 泰金投資控股股份有限公司2026年5月27日法人說明會簡報
+    url: https://mopsov.twse.com.tw/nas/STR/662920260527M001.pdf
+  tw.6629#e2:
+    locator: 公司簡介正文
+    published_date: null
+    publisher: 泰金投資控股股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.thai-kin.com/about/company-profile/
+  tw.6629#e3:
+    locator: 公司簡介正文，設計研發與製造能力
+    published_date: null
+    publisher: 泰金投資控股股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.thai-kin.com/about/company-profile/
+  tw.6629#e4:
+    locator: PDF第10頁，附註四（二）合併基礎；欄序為投資公司名稱、子公司名稱、業務性質及各期持股比率
+    published_date: null
+    publisher: 泰金投資控股股份有限公司
+    quote_check: found
+    title: Thai Kin Co., Ltd.及子公司民國114年及113年第三季合併財務報告
+    url: https://www.thai-kin.com/wp-content/uploads/2026/01/202503_6629_AI1_20260129_112410.pdf?x57640=
+  tw.6629#e5:
+    locator: PDF第10頁，附註四（二）合併基礎
+    published_date: null
+    publisher: 泰金投資控股股份有限公司
+    quote_check: found
+    title: Thai Kin Co., Ltd.及子公司民國114年及113年第三季合併財務報告
+    url: https://www.thai-kin.com/wp-content/uploads/2026/01/202503_6629_AI1_20260129_112410.pdf?x57640=
+  tw.6629#e6:
+    locator: PDF第10頁，附註四（二）合併基礎
+    published_date: null
+    publisher: 泰金投資控股股份有限公司
+    quote_check: found
+    title: Thai Kin Co., Ltd.及子公司民國114年及113年第三季合併財務報告
+    url: https://www.thai-kin.com/wp-content/uploads/2026/01/202503_6629_AI1_20260129_112410.pdf?x57640=
+  tw.6629#e7:
+    locator: PDF第10頁，附註四（二）合併基礎
+    published_date: null
+    publisher: 泰金投資控股股份有限公司
+    quote_check: found
+    title: Thai Kin Co., Ltd.及子公司民國114年及113年第三季合併財務報告
+    url: https://www.thai-kin.com/wp-content/uploads/2026/01/202503_6629_AI1_20260129_112410.pdf?x57640=
+  tw.6629#e8:
+    locator: PDF第22頁，附註六（十九）客戶合約之收入；第三個數字為2025年前三季收入，單位新台幣千元
+    published_date: null
+    publisher: 泰金投資控股股份有限公司
+    quote_check: found
+    title: Thai Kin Co., Ltd.及子公司民國114年及113年第三季合併財務報告
+    url: https://www.thai-kin.com/wp-content/uploads/2026/01/202503_6629_AI1_20260129_112410.pdf?x57640=
+  tw.6629#e9:
+    locator: PDF第10頁，附註四（二）合併基礎
+    published_date: null
+    publisher: 泰金投資控股股份有限公司
+    quote_check: found
+    title: Thai Kin Co., Ltd.及子公司民國114年及113年第三季合併財務報告
+    url: https://www.thai-kin.com/wp-content/uploads/2026/01/202503_6629_AI1_20260129_112410.pdf?x57640=

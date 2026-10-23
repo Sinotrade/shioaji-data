@@ -8,12 +8,157 @@ industry:
   l0_code: '28'
   l0_name: 電子零組件業
   l0_name_en: Electronic Parts and Components
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.ccl
+  l3_name: 銅箔基板與上游材料
+  l3_name_en: Copper Clad Laminates & Materials
+chain: chain.pcb
+chain_stage:
+  agreement: both
+  also:
+  - stage: board
+    stage_name: 電路板與載板製造
+    tier: midstream
+  reason: PCB電鍍用磷銅球占營收61.52%，屬上游材料；另製造單面、雙面及多層電路板並提供鑽孔代工。
+  stage: materials
+  stage_name: 銅箔、玻纖布、樹脂
+  tier: upstream
+primary_chain_position: upstream
+summary_short: 製造PCB電鍍用磷銅球、印刷電路板，並提供鑽孔代工。
+summary_long: 晟鈦以磷銅球製造買賣、印刷電路板全製程生產及鑽孔代工為主要業務。2025年度營收以磷銅球占61.52%為最大來源，產品用於印刷電路板電鍍製程；多層板、雙面板及單面板分別占20.71%、6.22%與1.00%，鑽孔代工占9.35%。PCB業務採少量多樣、快速交件模式，對應研發與新產品導入時的短交期需求。年底全資子公司包括境外控股公司CHEER TIME CO.,LTD.及從事電子零組件製造的寶光電子股份有限公司。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_phosphor_copper
+  name: 磷銅球
+  period: 2025年度
+  revenue_share_pct: 61.52
+- evidence_ids:
+  - e2
+  id: seg_multilayer_pcb
+  name: 多層印刷電路板
+  period: 2025年度
+  revenue_share_pct: 20.71
+- evidence_ids:
+  - e1
+  id: seg_drilling
+  name: 鑽孔代工
+  period: 2025年度
+  revenue_share_pct: 9.35
+- evidence_ids:
+  - e2
+  id: seg_double_sided_pcb
+  name: 雙面印刷電路板
+  period: 2025年度
+  revenue_share_pct: 6.22
+- evidence_ids:
+  - e3
+  id: seg_other
+  name: 其他
+  period: 2025年度
+  revenue_share_pct: 1.2
+- evidence_ids:
+  - e2
+  id: seg_single_sided_pcb
+  name: 單面印刷電路板
+  period: 2025年度
+  revenue_share_pct: 1
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資電子零組件製造子公司
+    details:
+    - 全資電子零組件製造子公司
+    edge: e1c4f2fc86382
+    evidence_level: primary
+    id: org.bao-guang-electronics
+    name: 寶光電子股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資境外控股子公司
+    details:
+    - 全資境外控股子公司
+    edge: e5d6f495be135
+    evidence_level: primary
+    id: org.cheer-time-co-ltd
+    name: CHEER TIME CO.,LTD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.cheer-time.com.tw/
 tax_id: '22570840'
 incorporated: '1987-07-28'
 listed: '2009-12-31'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3229#e1:
+    locator: 第54頁，業務內容／營業比重，114年度欄
+    published_date: null
+    publisher: 晟鈦股份有限公司
+    quote_check: found
+    title: 晟鈦股份有限公司114年度年報（股東會後修訂本）
+    url: https://www.cheer-time.com.tw/uploads/files/晟鈦114年年報-中文版上傳檔(股東會後修訂本)-20260806.pdf
+  tw.3229#e2:
+    locator: 第54頁，業務內容／營業比重，114年度欄
+    published_date: null
+    publisher: 晟鈦股份有限公司
+    quote_check: found
+    title: 晟鈦股份有限公司114年度年報（股東會後修訂本）
+    url: https://www.cheer-time.com.tw/uploads/files/晟鈦114年年報-中文版上傳檔(股東會後修訂本)-20260806.pdf
+  tw.3229#e3:
+    locator: 第54頁，業務內容／營業比重，114年度欄
+    published_date: null
+    publisher: 晟鈦股份有限公司
+    quote_check: found
+    title: 晟鈦股份有限公司114年度年報（股東會後修訂本）
+    url: https://www.cheer-time.com.tw/uploads/files/晟鈦114年年報-中文版上傳檔(股東會後修訂本)-20260806.pdf
+  tw.3229#e4:
+    locator: 第1頁，致股東報告書
+    published_date: null
+    publisher: 晟鈦股份有限公司
+    quote_check: found
+    title: 晟鈦股份有限公司114年度年報（股東會後修訂本）
+    url: https://www.cheer-time.com.tw/uploads/files/晟鈦114年年報-中文版上傳檔(股東會後修訂本)-20260806.pdf
+  tw.3229#e5:
+    locator: 第1頁，致股東報告書／磷銅球用途
+    published_date: null
+    publisher: 晟鈦股份有限公司
+    quote_check: found
+    title: 晟鈦股份有限公司114年度年報（股東會後修訂本）
+    url: https://www.cheer-time.com.tw/uploads/files/晟鈦114年年報-中文版上傳檔(股東會後修訂本)-20260806.pdf
+  tw.3229#e6:
+    locator: 第1頁，致股東報告書／PCB全製程業務
+    published_date: null
+    publisher: 晟鈦股份有限公司
+    quote_check: found
+    title: 晟鈦股份有限公司114年度年報（股東會後修訂本）
+    url: https://www.cheer-time.com.tw/uploads/files/晟鈦114年年報-中文版上傳檔(股東會後修訂本)-20260806.pdf
+  tw.3229#e7:
+    locator: 第14頁，附註四（三）2，列入合併財務報告之子公司；114年12月31日持股欄
+    published_date: null
+    publisher: 晟鈦股份有限公司
+    quote_check: found
+    title: 晟鈦股份有限公司及子公司114年度及113年度合併財務報告暨會計師查核報告
+    url: https://www.cheer-time.com.tw/uploads/files/1774916895.pdf
+  tw.3229#e8:
+    locator: 第14頁，附註四（三）2，列入合併財務報告之子公司；114年12月31日持股欄
+    published_date: null
+    publisher: 晟鈦股份有限公司
+    quote_check: found
+    title: 晟鈦股份有限公司及子公司114年度及113年度合併財務報告暨會計師查核報告
+    url: https://www.cheer-time.com.tw/uploads/files/1774916895.pdf

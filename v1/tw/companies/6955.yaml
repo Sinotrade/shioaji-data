@@ -8,12 +8,179 @@ industry:
   l0_code: '22'
   l0_name: 生技醫療業
   l0_name_en: Biotechnology and Medical Care
-primary_chain_position: unknown
+  l1: health
+  l1_name: 醫療保健
+  l1_name_en: Healthcare
+  l2: health.devices
+  l2_name: 醫療器材與服務
+  l2_name_en: Medical Devices & Services
+  l3: med.devices
+  l3_name: 醫療器材
+  l3_name_en: Medical Devices
+chain: chain.biotech
+chain_stage:
+  agreement: both
+  also: []
+  reason: 精子檢測儀器與耗材占營收96.35%，核心業務為自行開發及製造生殖醫療器材。
+  stage: manufacturing
+  stage_name: 製造與代工
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 以LensHooke品牌銷售精子品質檢測儀器、試片、試劑及精子優選器。
+summary_long: 邦睿生技以LensHooke品牌銷售男性生殖醫療檢測儀器與耗材，產品涵蓋精子品質分析檢測儀、精子檢測片、精子DNA碎片檢測試劑及精子優選器。其人工智慧光學顯微技術結合微型鏡頭、硬體平台與影像演算法，應用於自動化精子檢測。2025年精子品質分析檢測儀及檢測耗材占營收96.35%，其他業務占3.65%。集團設有美國及薩摩亞直接子公司，並經薩摩亞公司間接持有四川醫療科技子公司。
+segments:
+- evidence_ids:
+  - e9
+  id: s1
+  name: 精子品質分析檢測儀及檢測耗材
+  period: '2025'
+  revenue_share_pct: 96.35
+- evidence_ids:
+  - e10
+  id: s2
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 3.65
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的薩摩亞控股子公司
+    details:
+    - 直接持股100%的薩摩亞控股子公司
+    edge: e3d6e7ea4bdde
+    evidence_level: primary
+    id: org.bonraybio-holding-samoa
+    name: BONRAYBIO HOLDING (SAMOA) CO.,LTD
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過薩摩亞子公司間接持股100%的孫公司
+    details:
+    - 透過薩摩亞子公司間接持股100%的孫公司
+    edge: ecf2a23fef066
+    evidence_level: primary
+    id: org.bonraybio-sichuan
+    name: 邦睿(四川)醫療科技有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的美國子公司
+    details:
+    - 直接持股100%的美國子公司
+    edge: ea918cbd7bbe7
+    evidence_level: primary
+    id: org.bonraybio-usa
+    name: BONRAYBIO USA CORP.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.bonraybio.com
 tax_id: '42686138'
 incorporated: '2016-01-12'
 listed: '2024-12-06'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6955#e1:
+    locator: 基本資料，所營事業
+    published_date: null
+    publisher: 邦睿生技股份有限公司
+    quote_check: found
+    title: 關於邦睿－基本資料
+    url: https://www.bonraybio.com/tw/about
+  tw.6955#e10:
+    locator: 營收分布－產品組合－114年度，其他列
+    published_date: null
+    publisher: Treelazy
+    quote_check: found
+    title: 邦睿生技-創年報查詢－114年度營收分布
+    url: https://treelazy.com/stock/6955
+  tw.6955#e11:
+    locator: 內頁第13頁，附註四（三）合併基礎，子公司表及註1
+    published_date: '2026-08-10'
+    publisher: 邦睿生技股份有限公司
+    quote_check: found
+    title: 邦睿生技115年第二季合併財務報告
+    url: https://www.bonraybio.com/UserFiles/Files/%E9%82%A6%E7%9D%BF_115Q2_%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1-%E7%94%A8%E5%8D%B0%E7%89%88.pdf
+  tw.6955#e12:
+    locator: 內頁第13頁，附註四（三）合併基礎，子公司表
+    published_date: '2026-08-10'
+    publisher: 邦睿生技股份有限公司
+    quote_check: found
+    title: 邦睿生技115年第二季合併財務報告
+    url: https://www.bonraybio.com/UserFiles/Files/%E9%82%A6%E7%9D%BF_115Q2_%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1-%E7%94%A8%E5%8D%B0%E7%89%88.pdf
+  tw.6955#e13:
+    locator: 內頁第13頁，附註四（三）合併基礎，子公司表，SAMOA投資四川邦睿列
+    published_date: '2026-08-10'
+    publisher: 邦睿生技股份有限公司
+    quote_check: found
+    title: 邦睿生技115年第二季合併財務報告
+    url: https://www.bonraybio.com/UserFiles/Files/%E9%82%A6%E7%9D%BF_115Q2_%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1-%E7%94%A8%E5%8D%B0%E7%89%88.pdf
+  tw.6955#e2:
+    locator: 產品名稱
+    published_date: null
+    publisher: 邦睿生技／LensHooke萊特兒
+    quote_check: found
+    title: LensHooke X3 PRO 精子品質分析檢測儀
+    url: https://tw.lenshooke.com/product.php?cat=30&id=204
+  tw.6955#e3:
+    locator: 產品名稱
+    published_date: null
+    publisher: 邦睿生技／LensHooke萊特兒
+    quote_check: found
+    title: LensHooke X12 PRO精子品質分析檢測儀
+    url: https://tw.lenshooke.com/product.php?cat=30&id=199
+  tw.6955#e4:
+    locator: 產品名稱
+    published_date: null
+    publisher: 邦睿生技／LensHooke萊特兒
+    quote_check: found
+    title: LensHooke CS3 精子檢測片
+    url: https://tw.lenshooke.com/product.php?cat=38&id=203
+  tw.6955#e5:
+    locator: 產品名稱
+    published_date: null
+    publisher: 邦睿生技／LensHooke萊特兒
+    quote_check: found
+    title: LensHooke R10 Plus 精子DNA碎片快速檢測試劑套組
+    url: https://tw.lenshooke.com/product.php?cat=39&id=205
+  tw.6955#e6:
+    locator: 產品名稱
+    published_date: null
+    publisher: 邦睿生技／LensHooke萊特兒
+    quote_check: found
+    title: LensHooke CA0/CA1 精子優選器
+    url: https://tw.lenshooke.com/product.php?cat=38&id=202
+  tw.6955#e7:
+    locator: 第10至14頁，三大創新核心技術、核心技術及精子品質分析檢測儀
+    published_date: '2026-06-25'
+    publisher: 邦睿生技股份有限公司
+    quote_check: found
+    title: 邦睿生技2026年6月25日法人說明會簡報
+    url: https://www.bonraybio.com/UserFiles/Files/TW_%E9%82%A6%E7%9D%BF%E7%94%9F%E6%8A%80%E6%B3%95%E8%AA%AA%E6%9C%83-20260625%E4%B8%8A%E5%82%B3_%E4%B8%AD.pdf
+  tw.6955#e8:
+    locator: 內頁第9頁，價值鏈簡介
+    published_date: 2026-08
+    publisher: 邦睿生技股份有限公司
+    quote_check: found
+    title: 邦睿生技2025年永續報告書
+    url: https://www.bonraybio.com/UserFiles/PageFiles/6955%E9%82%A6%E7%9D%BF%E7%94%9F%E6%8A%80-%E5%89%B5_2025%E5%B9%B4%E6%B0%B8%E7%BA%8C%E5%A0%B1%E5%91%8A%E6%9B%B8_%E4%B8%8A%E5%82%B3%E7%94%A8CH.pdf
+  tw.6955#e9:
+    locator: 營收分布－產品組合－114年度，精子品質分析檢測儀及檢測耗材列
+    published_date: null
+    publisher: Treelazy
+    quote_check: found
+    title: 邦睿生技-創年報查詢－114年度營收分布
+    url: https://treelazy.com/stock/6955

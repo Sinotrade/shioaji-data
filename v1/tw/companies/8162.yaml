@@ -8,12 +8,110 @@ industry:
   l0_code: '24'
   l0_name: 半導體業
   l0_name_en: Semiconductor
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.semi
+  l2_name: 半導體
+  l2_name_en: Semiconductors
+  l3: semi.osat
+  l3_name: 封裝測試
+  l3_name_en: Packaging & Testing (OSAT)
+chain: chain.semiconductor
+chain_stage:
+  agreement: both
+  also: []
+  reason: 積體電路測試占營收72.36%，並提供晶圓薄化、切割與封裝服務，屬封裝測試。
+  stage: osat
+  stage_name: 封裝測試
+  tier: downstream
+primary_chain_position: downstream
+summary_short: 以電源管理IC與功率元件測試為主，提供晶圓薄化及封裝服務。
+summary_long: 微矽電子提供電源管理IC與功率元件的後段製程服務，包括晶圓測試、成品測試、晶圓薄化及封裝。2025年積體電路測試占營收72.36%，其他服務占27.64%，測試為最大收入來源。測試服務涵蓋MOSFET、氮化鎵與碳化矽等產品。晶圓薄化服務包含晶圓正面金屬鍍膜，以及背面研磨與金屬鍍膜；封裝服務則包含晶圓切割與WLCSP-DPS封裝，形成測試、薄化與封裝的一站式服務組合。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_testing
+  name: 積體電路測試
+  period: '2025'
+  revenue_share_pct: 72.36
+- evidence_ids:
+  - e3
+  id: seg_other
+  name: 其他服務
+  period: '2025'
+  revenue_share_pct: 27.64
+main_theme: theme.sic
+themes:
+- also: []
+  stage: devices
+  theme: theme.sic
+  tier: midstream
+- also: []
+  stage: devices
+  theme: theme.gan
+  tier: midstream
 website: www.msec.com.tw
 tax_id: '22579547'
 incorporated: '1987-08-11'
 listed: '2024-03-07'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.8162#e2:
+    locator: Business overview／Scope of business／Business proportion
+    published_date: '2026-04-20'
+    publisher: 微矽電子股份有限公司（FinancialFilings收錄）
+    quote_check: unreachable
+    title: 2025 Annual Report
+    url: https://financialfilings.com/filings/msec-8162/annual-report/2026/49987431/
+  tw.8162#e3:
+    locator: Business overview／Scope of business／Business proportion
+    published_date: '2026-04-20'
+    publisher: 微矽電子股份有限公司（FinancialFilings收錄）
+    quote_check: unreachable
+    title: 2025 Annual Report
+    url: https://financialfilings.com/filings/msec-8162/annual-report/2026/49987431/
+  tw.8162#e4:
+    locator: Business overview／Current products (services)
+    published_date: '2026-04-20'
+    publisher: 微矽電子股份有限公司（FinancialFilings收錄）
+    quote_check: unreachable
+    title: 2025 Annual Report
+    url: https://financialfilings.com/filings/msec-8162/annual-report/2026/49987431/
+  tw.8162#e5:
+    locator: 第9頁，主要營業項目
+    published_date: '2025-01-13'
+    publisher: 微矽電子股份有限公司
+    quote_check: found
+    title: 2025年1月13日法人說明會簡報
+    url: https://www.twse.com.tw/staticFiles/news/event/8a8216d6942a222b01945e79628500d6.pdf
+  tw.8162#e6:
+    locator: 第9至10頁，主要營業項目與產品製程
+    published_date: '2025-01-13'
+    publisher: 微矽電子股份有限公司
+    quote_check: found
+    title: 2025年1月13日法人說明會簡報
+    url: https://www.twse.com.tw/staticFiles/news/event/8a8216d6942a222b01945e79628500d6.pdf
+  tw.8162#e7:
+    locator: 第9頁，半導體封裝
+    published_date: '2025-01-13'
+    publisher: 微矽電子股份有限公司
+    quote_check: found
+    title: 2025年1月13日法人說明會簡報
+    url: https://www.twse.com.tw/staticFiles/news/event/8a8216d6942a222b01945e79628500d6.pdf
+  tw.8162#e8:
+    locator: 第10頁，產品與製程
+    published_date: '2025-01-13'
+    publisher: 微矽電子股份有限公司
+    quote_check: found
+    title: 2025年1月13日法人說明會簡報
+    url: https://www.twse.com.tw/staticFiles/news/event/8a8216d6942a222b01945e79628500d6.pdf
+  tw.8162#e9:
+    locator: 第10頁，產品與製程
+    published_date: '2025-01-13'
+    publisher: 微矽電子股份有限公司
+    quote_check: found
+    title: 2025年1月13日法人說明會簡報
+    url: https://www.twse.com.tw/staticFiles/news/event/8a8216d6942a222b01945e79628500d6.pdf

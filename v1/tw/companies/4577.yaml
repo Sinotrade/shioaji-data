@@ -8,12 +8,85 @@ industry:
   l0_code: '31'
   l0_name: 其他電子業
   l0_name_en: Other Electronic
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.machinery
+  l2_name: 機械與自動化
+  l2_name_en: Machinery & Automation
+  l3: mach.equipment
+  l3_name: 專用設備（非半導體）
+  l3_name_en: Specialty Equipment (Non-semiconductor)
+chain: chain.pcb
+chain_stage:
+  agreement: both
+  also: []
+  reason: 專業服務占營收75.10%，以雷射加工及設備維護為主，另產銷PCB與載板鑽孔、成型設備。
+  stage: tools
+  stage_name: 設備與廠務
+  tier: upstream
+primary_chain_position: upstream
+summary_short: 主要提供PCB與IC載板雷射加工、設備維護，並產銷鑽孔及成型設備。
+summary_long: 達航科技主要提供電路板與IC載板製程的雷射加工、設備保養維護，以及自有設備產銷。2025年營收中，專業服務占75.10%、設備產銷占21.79%，其他收入占3.11%。公司自行開發CO2與UV雷射加工機、高精密鑽孔機、成型設備及高速主軸，並提供ABF載板精密加工及ABF專用雷射設備。其雷射加工解決方案亦已應用於探針卡基板。年報揭露的海外子公司包括CHINA EXPO LIMITED、MEGA TRADER INTERNATIONAL LIMITED、上海達航實業有限公司及大船企業日本株式會社。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_services
+  name: 專業服務
+  period: '2025'
+  revenue_share_pct: 75.1
+- evidence_ids:
+  - e1
+  id: seg_equipment
+  name: 設備產銷
+  period: '2025'
+  revenue_share_pct: 21.79
+- evidence_ids:
+  - e1
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 3.11
 website: www.ofunatech.com
 tax_id: '86078580'
 incorporated: '1991-02-25'
 listed: '2022-06-14'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4577#e1:
+    locator: 印刷頁58，營業比重；各列後兩欄為114年度營收千元及占比
+    published_date: null
+    publisher: 達航科技股份有限公司
+    quote_check: not_found
+    title: 達航科技股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=4577&colorchg=1&filename=2025_4577_20260525F04.pdf&kind=F&step=9
+  tw.4577#e2:
+    locator: 印刷頁58，目前商品及服務項目
+    published_date: null
+    publisher: 達航科技股份有限公司
+    quote_check: not_found
+    title: 達航科技股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=4577&colorchg=1&filename=2025_4577_20260525F04.pdf&kind=F&step=9
+  tw.4577#e3:
+    locator: 印刷頁59，專業服務
+    published_date: null
+    publisher: 達航科技股份有限公司
+    quote_check: not_found
+    title: 達航科技股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=4577&colorchg=1&filename=2025_4577_20260525F04.pdf&kind=F&step=9
+  tw.4577#e4:
+    locator: 印刷頁59，設備產銷
+    published_date: null
+    publisher: 達航科技股份有限公司
+    quote_check: not_found
+    title: 達航科技股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=4577&colorchg=1&filename=2025_4577_20260525F04.pdf&kind=F&step=9
+  tw.4577#e8:
+    locator: 內文第3段，公司說明雷射加工解決方案
+    published_date: '2025-06-04'
+    publisher: TechNews 科技新報
+    quote_check: found
+    title: 搶攻 AI 與高頻通訊應用市場，達航科技大秀次世代雷射裝備
+    url: https://technews.tw/2025/06/04/ofunatech-2025-jpca-show/

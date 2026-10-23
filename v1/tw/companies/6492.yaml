@@ -8,12 +8,92 @@ industry:
   l0_code: '22'
   l0_name: 生技醫療業
   l0_name_en: Biotechnology and Medical Care
-primary_chain_position: unknown
+  l1: health
+  l1_name: 醫療保健
+  l1_name_en: Healthcare
+  l2: health.pharma
+  l2_name: 製藥與生技
+  l2_name_en: Pharmaceuticals & Biotech
+  l3: bio.new_drug
+  l3_name: 新藥研發
+  l3_name_en: New Drug Development
+chain: chain.biotech
+chain_stage:
+  agreement: both
+  also: []
+  reason: 核心業務為小分子抗癌新藥研發，營收來自技術諮詢，尚無商業化生產銷售。
+  stage: rnd
+  stage_name: 研發與原料
+  tier: upstream
+primary_chain_position: upstream
+summary_short: 以小分子抗癌新藥研發為核心，已揭露營收來自技術諮詢勞務。
+summary_long: 生華科主要開發小分子抗癌新藥，兩項核心候選藥物為Pidnarulex（CX-5461）與Silmitasertib（CX-4945），前者為G-四鏈體穩定劑，後者為蛋白激酶CK2抑制劑。依2024年度年報，新藥仍在研發階段，尚無商業化生產銷售；當年度營收主要來自提供技術建議及諮詢服務，勞務收入為新台幣100萬元。截至該年報刊印日，公司持有Senhwa Biosciences Corporation百分之百股份。
+segments:
+- evidence_ids:
+  - e3
+  - e4
+  id: technical_consulting
+  name: 技術建議及諮詢服務勞務收入
+  period: '2024'
+  revenue_share_pct: null
+relations:
+  subsidiaries:
+  - as_of: '2025-04-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司
+    details:
+    - 全資子公司
+    edge: eae9f3710ea56
+    evidence_level: primary
+    id: org.senhwa-biosciences-corporation
+    name: Senhwa Biosciences Corporation
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 某國內生物科技公司：年報未具名揭露的技術建議及諮詢服務對象。
 website: http://www.senhwabio.com
 tax_id: '54021973'
 incorporated: '2012-11-16'
 listed: '2017-04-24'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6492#e1:
+    locator: 第56頁，營運概況／目前商品及服務項目
+    published_date: '2025-04-30'
+    publisher: 生華生物科技股份有限公司
+    quote_check: found
+    title: 生華生物科技股份有限公司113年度年報
+    url: https://www.senhwabio.com/uploads/annual_report/stackholder_book/19/2024_6492_20250625F04.pdf
+  tw.6492#e2:
+    locator: 第3頁，研究發展狀況／Silmitasertib
+    published_date: '2025-04-30'
+    publisher: 生華生物科技股份有限公司
+    quote_check: found
+    title: 生華生物科技股份有限公司113年度年報
+    url: https://www.senhwabio.com/uploads/annual_report/stackholder_book/19/2024_6492_20250625F04.pdf
+  tw.6492#e3:
+    locator: 第56頁，營運概況／營業比重
+    published_date: '2025-04-30'
+    publisher: 生華生物科技股份有限公司
+    quote_check: found
+    title: 生華生物科技股份有限公司113年度年報
+    url: https://www.senhwabio.com/uploads/annual_report/stackholder_book/19/2024_6492_20250625F04.pdf
+  tw.6492#e4:
+    locator: 第1頁，113年度營業成果
+    published_date: '2025-04-30'
+    publisher: 生華生物科技股份有限公司
+    quote_check: found
+    title: 生華生物科技股份有限公司113年度年報
+    url: https://www.senhwabio.com/uploads/annual_report/stackholder_book/19/2024_6492_20250625F04.pdf
+  tw.6492#e5:
+    locator: 第100頁，關係企業相關資料
+    published_date: '2025-04-30'
+    publisher: 生華生物科技股份有限公司
+    quote_check: found
+    title: 生華生物科技股份有限公司113年度年報
+    url: https://www.senhwabio.com/uploads/annual_report/stackholder_book/19/2024_6492_20250625F04.pdf

@@ -8,12 +8,168 @@ industry:
   l0_code: '28'
   l0_name: 電子零組件業
   l0_name_en: Electronic Parts and Components
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.quartz
+  l3_name: 石英元件與頻率元件
+  l3_name_en: Quartz & Frequency Components
+primary_chain_position: not_applicable
+summary_short: 研發、製造及銷售石英晶體與振盪器，以SMD石英元件為主要營收來源。
+summary_long: 安碁科技從事石英元件的研發、製造及銷售，2025年營收以SMD石英元件為主，占93.64%。主要產品涵蓋石英諧振器、石英振盪器、溫度補償振盪器與壓控振盪器，提供電子系統所需的頻率與時脈控制。公司推出312.5 MHz差分振盪器，供AI資料中心與高速光通訊應用選用；另提供5G網通、電動車控制器及充電器，以及無人機導航、控制與通訊使用的頻率元件方案。旗下設有美國、香港與深圳三家全資子公司。
+segments:
+- evidence_ids:
+  - e4
+  id: s1
+  name: SMD石英元件
+  period: '2025'
+  revenue_share_pct: 93.64
+- evidence_ids:
+  - e4
+  id: s2
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 6.51
+main_theme: theme.ev
+themes:
+- also: []
+  stage: parts
+  theme: theme.ev
+  tier: midstream
+- also: []
+  stage: components
+  theme: theme.5g
+  tier: upstream
+- also: []
+  stage: it
+  theme: theme.data_center
+  tier: midstream
+- also: []
+  stage: components
+  theme: theme.drone
+  tier: upstream
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 香港全資子公司
+    details:
+    - 香港全資子公司
+    edge: e824fccaed090
+    evidence_level: primary
+    id: org.aker-tech-hong-kong
+    name: AKER Tech (Hong Kong) Limited.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 深圳全資子公司
+    details:
+    - 深圳全資子公司
+    edge: ef0b0255c7818
+    evidence_level: primary
+    id: org.aker-technology-shenzhen
+    name: AKER Technology (Shen Zhen) Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 美國全資子公司
+    details:
+    - 美國全資子公司
+    edge: e15276cc7a43e
+    evidence_level: primary
+    id: org.aker-technology-usa
+    name: AKER Technology USA Corp.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.aker.com.tw
 tax_id: '22100469'
 incorporated: '1990-12-01'
 listed: '2002-05-02'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6174#e10:
+    locator: Aker無人機專用頻率解決方案
+    published_date: '2025-10-15'
+    publisher: 安碁科技股份有限公司
+    quote_check: found
+    title: 無人機應用的晶體與振盪器選型指南
+    url: https://www.aker.com.tw/news/新產品與應用/drone-crystal-oscillator-selection-guide
+  tw.6174#e11:
+    locator: 第67頁，114年12月31日關係企業組織圖，安碁科技下方三家子公司及100%持股標示；PDF第71頁
+    published_date: '2026-04-30'
+    publisher: 安碁科技股份有限公司
+    quote_check: found
+    title: 安碁科技股份有限公司一一四年度年報
+    url: https://www.aker.com.tw/upload-files/company/shareholders-meeting-ebook/______114______.pdf
+  tw.6174#e2:
+    locator: 營運概況
+    published_date: null
+    publisher: 安碁科技股份有限公司
+    quote_check: found
+    title: 投資人關係
+    url: https://www.aker.com.tw/investors
+  tw.6174#e3:
+    locator: 產品分類
+    published_date: null
+    publisher: 安碁科技股份有限公司
+    quote_check: found
+    title: 產品介紹
+    url: https://www.aker.com.tw/product
+  tw.6174#e4:
+    locator: 第49頁，營業比重表，SMD石英元件及其他兩列；PDF第53頁
+    published_date: '2026-04-30'
+    publisher: 安碁科技股份有限公司
+    quote_check: found
+    title: 安碁科技股份有限公司一一四年度年報
+    url: https://www.aker.com.tw/upload-files/company/shareholders-meeting-ebook/______114______.pdf
+  tw.6174#e5:
+    locator: 文章標題
+    published_date: '2026-01-16'
+    publisher: 安碁科技股份有限公司
+    quote_check: found
+    title: 安碁科技推出全新1612超小型溫度補償石英振盪器TCXO系列
+    url: https://www.aker.com.tw/news/新產品與應用/aker-1612-tcxo-series
+  tw.6174#e6:
+    locator: 文章標題
+    published_date: '2026-06-22'
+    publisher: 安碁科技股份有限公司
+    quote_check: found
+    title: 安碁科技推出VXON-211系列微型壓控石英振盪器
+    url: https://www.aker.com.tw/news/新產品與應用/aker-launches-vxon-211-vcxos-series
+  tw.6174#e7:
+    locator: 文章標題
+    published_date: '2026-10-08'
+    publisher: 安碁科技股份有限公司
+    quote_check: found
+    title: 312.5 MHz超低抖動差分振盪器，為AI資料中心與高速光通訊提供精準時脈
+    url: https://www.aker.com.tw/news/新產品與應用/aker-312-5mhz-differential-oscillators
+  tw.6174#e8:
+    locator: 車用產品系列清單前說明
+    published_date: null
+    publisher: 安碁科技股份有限公司
+    quote_check: found
+    title: 車用石英晶體振盪器
+    url: https://www.aker.com.tw/application/車用
+  tw.6174#e9:
+    locator: 5G和網絡的應用
+    published_date: null
+    publisher: 安碁科技股份有限公司
+    quote_check: found
+    title: 網路通訊晶體振盪器
+    url: https://www.aker.com.tw/application/網通

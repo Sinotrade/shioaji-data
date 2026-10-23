@@ -8,12 +8,151 @@ industry:
   l0_code: '10'
   l0_name: 鋼鐵工業
   l0_name_en: Iron and Steel
-primary_chain_position: unknown
+  l1: materials
+  l1_name: 原物料
+  l1_name_en: Materials
+  l2: mat.metals
+  l2_name: 金屬
+  l2_name_en: Metals
+  l3: metal.steel
+  l3_name: 鋼鐵
+  l3_name_en: Steel
+chain: chain.steel
+chain_stage:
+  agreement: both
+  also: []
+  reason: 不鏽鋼捲板占營收99.94%，主營裁切、分條、表面處理及精密冷軋，屬軋延與鋼材階段。
+  stage: midstream
+  stage_name: 軋延與鋼材
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 以不鏽鋼捲板加工製造與銷售為主，提供裁切、分條、表面處理及精密冷軋。
+summary_long: 運錩以不鏽鋼捲板加工製造與銷售為主要業務，2025年不鏽鋼捲板占合併營收99.94%，其他項目占0.06%。母公司提供不鏽鋼板捲裁切、分條與表面處理，依需求加工鋼材尺寸及表面。旗下寧波奇億金屬有限公司經營精密冷軋不鏽鋼帶材，生產厚度0.08至1.0毫米的軟態、硬態及超硬態冷軋BA／CSP板，應用涵蓋醫療器械、電腦配件、手機零件及汽車零部件。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_stainless
+  name: 不鏽鋼捲板
+  period: '2025'
+  revenue_share_pct: 99.94
+- evidence_ids:
+  - e1
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 0.06
+relations:
+  subsidiaries:
+  - as_of: 2026-10
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 寧波精密冷軋與帶材生產子公司
+    details:
+    - 寧波精密冷軋與帶材生產子公司
+    edge: ec4ae8ca31ee1
+    evidence_level: primary
+    id: org.ningbo-qiyi-metal
+    name: 寧波奇億金屬有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 開曼控股子公司
+    details:
+    - 開曼控股子公司
+    edge: ea28184a82486
+    evidence_level: primary
+    id: org.qiyi-precision-metals
+    name: QIYI PRECISION METALS CO., LTD
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 香港控股子公司
+    details:
+    - 香港控股子公司
+    edge: e338b78619beb
+    evidence_level: primary
+    id: org.surewin-global-hk
+    name: Surewin Global Limited (HK)
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.yuenchang.com.tw
 tax_id: '22533297'
 incorporated: '1987-07-24'
 listed: '2016-03-22'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2069#e1:
+    locator: 第70頁，主要商品佔合併營業收入淨額比重；欄位依序為113年度及114年度金額、比重
+    published_date: '2026-04-30'
+    publisher: 運錩鋼鐵股份有限公司
+    quote_check: unreachable
+    title: 運錩鋼鐵股份有限公司114年度年報
+    url: https://www.yuenchang.com.tw/files/%E8%82%A1%E5%8B%99/%E8%82%A1%E6%9D%B1%E6%9C%83/%E8%82%A1%E6%9D%B1%E6%9C%83114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1_%E4%B8%AD%E6%96%87%E7%89%88.pdf
+  tw.2069#e2:
+    locator: 第70頁，業務範圍
+    published_date: '2026-04-30'
+    publisher: 運錩鋼鐵股份有限公司
+    quote_check: found
+    title: 運錩鋼鐵股份有限公司114年度年報
+    url: https://www.yuenchang.com.tw/files/%E8%82%A1%E5%8B%99/%E8%82%A1%E6%9D%B1%E6%9C%83/%E8%82%A1%E6%9D%B1%E6%9C%83114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1_%E4%B8%AD%E6%96%87%E7%89%88.pdf
+  tw.2069#e3:
+    locator: 第70頁，主要服務項目
+    published_date: '2026-04-30'
+    publisher: 運錩鋼鐵股份有限公司
+    quote_check: found
+    title: 運錩鋼鐵股份有限公司114年度年報
+    url: https://www.yuenchang.com.tw/files/%E8%82%A1%E5%8B%99/%E8%82%A1%E6%9D%B1%E6%9C%83/%E8%82%A1%E6%9D%B1%E6%9C%83%3114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1_%E4%B8%AD%E6%96%87%E7%89%88.pdf
+  tw.2069#e4:
+    locator: 寧波奇億金屬有限公司介紹第一段
+    published_date: null
+    publisher: 運錩鋼鐵股份有限公司
+    quote_check: unreachable
+    title: 關係企業：寧波奇億金屬有限公司
+    url: https://www.yuenchang.com.tw/zh-TW/subsidiary
+  tw.2069#e5:
+    locator: 寧波奇億介紹第二段
+    published_date: null
+    publisher: 運錩鋼鐵股份有限公司
+    quote_check: found
+    title: 關係企業：寧波奇億產品與應用
+    url: https://www.yuenchang.com.tw/zh-TW/subsidiary
+  tw.2069#e6:
+    locator: 第13頁，列入合併財務報告之子公司表
+    published_date: '2026-05-07'
+    publisher: 運錩鋼鐵股份有限公司
+    quote_check: found
+    title: 運錩及子公司115年第一季合併財務報告
+    url: https://www.yuenchang.com.tw/files/%E8%B2%A1%E5%A0%B1/115Q1_%E9%81%8B%E9%8C%A9%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf
+  tw.2069#e7:
+    locator: 第13頁，列入合併財務報告之子公司表
+    published_date: '2026-05-07'
+    publisher: 運錩鋼鐵股份有限公司
+    quote_check: found
+    title: 運錩及子公司115年第一季合併財務報告
+    url: https://www.yuenchang.com.tw/files/%E8%B2%A1%E5%A0%B1/115Q1_%E9%81%8B%E9%8C%A9%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf
+  tw.2069#e8:
+    locator: Slitting服務說明
+    published_date: null
+    publisher: 運錩鋼鐵股份有限公司
+    quote_check: found
+    title: 產品服務：分條
+    url: https://www.yuenchang.com.tw/zh-TW/services/slitting
+  tw.2069#e9:
+    locator: Surface Polishing服務說明
+    published_date: null
+    publisher: 運錩鋼鐵股份有限公司
+    quote_check: unreachable
+    title: 產品服務：表面處理
+    url: https://www.yuenchang.com.tw/zh-TW/services/surface-polishing

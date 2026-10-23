@@ -8,12 +8,72 @@ industry:
   l0_code: '24'
   l0_name: 半導體業
   l0_name_en: Semiconductor
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.semi
+  l2_name: 半導體
+  l2_name_en: Semiconductors
+  l3: semi.ip_asic
+  l3_name: 矽智財與 ASIC 設計服務
+  l3_name_en: Silicon IP & ASIC Design Services
+chain: chain.semiconductor
+chain_stage:
+  agreement: both
+  also: []
+  reason: 專注嵌入式非揮發性記憶體矽智財研發與授權，權利金占營收75.69%。
+  stage: ip_design
+  stage_name: IP 與 IC 設計
+  tier: upstream
+primary_chain_position: upstream
+summary_short: 開發嵌入式非揮發性記憶體矽智財，收入來自權利金與技術服務。
+summary_long: 億而得專注於嵌入式非揮發性記憶體矽智財的研發與授權，以 ymtp 為核心技術，提供與邏輯製程相容、可多次寫入的記憶體方案。已量產產品包括 MTP、FTP、OTP plus 與 EEPROM，構成其非揮發性記憶體矽智財產品線。2025年度營收由權利金與技術服務構成，權利金占75.69%，技術服務占24.31%，主要收入來源為矽智財授權相關業務。
+segments:
+- evidence_ids:
+  - e3
+  id: seg_royalty
+  name: 權利金收入
+  period: 2025年度
+  revenue_share_pct: 75.69
+- evidence_ids:
+  - e4
+  id: seg_technical
+  name: 技術服務收入
+  period: 2025年度
+  revenue_share_pct: 24.31
 website: www.ymc.com.tw
 tax_id: '12894399'
 incorporated: '2001-09-04'
 listed: '2026-01-22'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6423#e2:
+    locator: About YMC 首段
+    published_date: null
+    publisher: 億而得微電子股份有限公司
+    quote_check: found
+    title: Yield Microelectronics Corporation－About YMC
+    url: https://www.ymc.com.tw/index_en.php?action=about
+  tw.6423#e3:
+    locator: 第1頁，114年度營業收入組成表
+    published_date: null
+    publisher: 億而得微電子股份有限公司
+    quote_check: found
+    title: 億而得微電子股份有限公司114年度年報
+    url: https://www.ymc.com.tw/upload/shareholders/20260507115237091.PDF
+  tw.6423#e4:
+    locator: 第1頁，114年度營業收入組成表
+    published_date: null
+    publisher: 億而得微電子股份有限公司
+    quote_check: found
+    title: 億而得微電子股份有限公司114年度年報
+    url: https://www.ymc.com.tw/upload/shareholders/20260507115237091.PDF
+  tw.6423#e5:
+    locator: 第65頁，短期業務發展計畫－研究發展及製造計畫
+    published_date: null
+    publisher: 億而得微電子股份有限公司
+    quote_check: found
+    title: 億而得微電子股份有限公司114年度年報
+    url: https://www.ymc.com.tw/upload/shareholders/20260507115237091.PDF

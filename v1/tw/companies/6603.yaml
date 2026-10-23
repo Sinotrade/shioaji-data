@@ -8,12 +8,157 @@ industry:
   l0_code: '05'
   l0_name: 電機機械
   l0_name_en: Electric Machinery
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.machinery
+  l2_name: 機械與自動化
+  l2_name_en: Machinery & Automation
+  l3: mach.equipment
+  l3_name: 專用設備（非半導體）
+  l3_name_en: Specialty Equipment (Non-semiconductor)
+primary_chain_position: not_applicable
+summary_short: 以塑膠射出成型機的研發、製造與銷售為主，另提供智慧製造系統。
+summary_long: 富強鑫主要從事塑膠射出成型機的研發、生產與銷售，設備涵蓋多組分及單組分成型。2026年第一季，多組分與單組分射出機分別占營收60%及31%。產品與技術包括全電式射出機、MuCell微發泡成型，以及iMF 4.0智慧製造工廠系統；後者可將生產設備聯網，提供品質監控與預警養護，法說簡報另列示導入AI技術。集團亦經營漆包線業務。已確認的子公司包括BVI富強鑫、東莞富強鑫及越南富強鑫。
+segments:
+- evidence_ids:
+  - e3
+  id: seg_multi
+  name: 多組分射出成型機
+  period: 2026Q1
+  revenue_share_pct: 60
+- evidence_ids:
+  - e4
+  id: seg_single
+  name: 單組分射出成型機
+  period: 2026Q1
+  revenue_share_pct: 31
+relations:
+  subsidiaries:
+  - as_of: '2025-12-19'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司
+    details:
+    - 子公司
+    edge: eba2a7edef959
+    evidence_level: primary
+    id: org.bvi-富強鑫
+    name: BVI 富強鑫
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-05-09'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 東莞射出機製造子公司
+    details:
+    - 東莞射出機製造子公司
+    edge: e0b66785a5517
+    evidence_level: primary
+    id: org.東莞富強鑫塑膠機械製造有限公司
+    name: 東莞富強鑫塑膠機械製造有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 越南子公司
+    details:
+    - 越南子公司
+    edge: eda99fd3a938c
+    evidence_level: primary
+    id: org.越南富強鑫公司
+    name: 越南富強鑫公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.fcs.com.tw
 tax_id: '86122164'
 incorporated: '1991-07-17'
 listed: '2004-04-05'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6603#e10:
+    locator: 2025年12月19日第3案；2025年5月9日第4案
+    published_date: null
+    publisher: 富強鑫精密工業股份有限公司
+    quote_check: found
+    title: 114年度董事會重要決議事項
+    url: https://zh-tw.fcs.com.tw/data-1926
+  tw.6603#e11:
+    locator: 東莞富強鑫
+    published_date: null
+    publisher: 富強鑫精密工業股份有限公司
+    quote_check: found
+    title: 射出機事業群
+    url: https://zh-tw.fcs.com.tw/business_i_g2017081800001
+  tw.6603#e12:
+    locator: 2026年3月13日第16案
+    published_date: null
+    publisher: 富強鑫精密工業股份有限公司
+    quote_check: found
+    title: 115年度董事會重要決議事項
+    url: https://zh-tw.fcs.com.tw/data-2119
+  tw.6603#e2:
+    locator: 台灣富強鑫
+    published_date: null
+    publisher: 富強鑫精密工業股份有限公司
+    quote_check: found
+    title: 射出機事業群
+    url: https://zh-tw.fcs.com.tw/business_i_g2017081800001
+  tw.6603#e3:
+    locator: 第16頁，多組分射出成型機
+    published_date: '2026-05-12'
+    publisher: 富強鑫精密工業股份有限公司
+    quote_check: found
+    title: 2026年5月12日法人說明會簡報
+    url: https://zh-tw.fcs.com.tw/pdf/7641/1150512%E6%B3%95%E8%AA%AA%E6%9C%83-%E8%8B%B1.pdf
+  tw.6603#e4:
+    locator: 第18頁，單組分射出成型機
+    published_date: '2026-05-12'
+    publisher: 富強鑫精密工業股份有限公司
+    quote_check: found
+    title: 2026年5月12日法人說明會簡報
+    url: https://zh-tw.fcs.com.tw/pdf/7641/1150512%E6%B3%95%E8%AA%AA%E6%9C%83-%E8%8B%B1.pdf
+  tw.6603#e5:
+    locator: 產品介紹
+    published_date: null
+    publisher: 富強鑫精密工業股份有限公司
+    quote_check: found
+    title: 射出成型全電機 CT-e 系列
+    url: https://zh-tw.fcs.com.tw/products_i_all-electric-injection-molding-machine
+  tw.6603#e6:
+    locator: MuCell製程及設備整合介紹
+    published_date: null
+    publisher: 富強鑫精密工業股份有限公司
+    quote_check: found
+    title: MuCell 微發泡射出成型解決方案
+    url: https://zh-tw.fcs.com.tw/products_i_mucell-foam-injection-molding-machine
+  tw.6603#e7:
+    locator: 無痛導入iMF 4.0；智慧管理
+    published_date: null
+    publisher: 富強鑫精密工業股份有限公司
+    quote_check: found
+    title: iMF 4.0 智慧製造工廠：射出機聯網
+    url: https://zh-tw.fcs.com.tw/products_i_Industry-4-0-Injection-Molding-Machine
+  tw.6603#e8:
+    locator: 第37頁，智慧射出產線
+    published_date: '2026-05-12'
+    publisher: 富強鑫精密工業股份有限公司
+    quote_check: found
+    title: 2026年5月12日法人說明會簡報
+    url: https://zh-tw.fcs.com.tw/pdf/7641/1150512%E6%B3%95%E8%AA%AA%E6%9C%83-%E8%8B%B1.pdf
+  tw.6603#e9:
+    locator: 事業部介紹首段
+    published_date: null
+    publisher: 富強鑫精密工業股份有限公司
+    quote_check: found
+    title: 纜線事業部
+    url: https://zh-tw.fcs.com.tw/business_i_g2017090700001

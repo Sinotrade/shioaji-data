@@ -8,12 +8,173 @@ industry:
   l0_code: '35'
   l0_name: 綠能環保
   l0_name_en: Green Energy and Environmental Services
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.environment
+  l2_name: 環保服務
+  l2_name_en: Environmental Services
+  l3: env.waste
+  l3_name: 廢棄物處理與資源回收
+  l3_name_en: Waste Management & Recycling
+primary_chain_position: not_applicable
+summary_short: 以污染整治與環境工程承攬為主，並提供廢棄物處理、再利用及檢測顧問服務。
+summary_long: 台境企業以環境工程與污染整治服務為主要收入來源，業務涵蓋土壤及地下水污染整治、廢水處理及工程施作管理。2024年營收組成為專案工程87.95%、廢棄物處理10.41%、其他收入1.64%，其他收入包含環境檢測、技術顧問及防治設備買賣。廢棄物處理服務包括污染土壤清洗復育、營建混合物再利用、焚化爐底渣處理及廢污泥減量乾燥。公司也提供環保議題調查評估、方案規劃、採樣與檢測分析。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_project
+  name: 專案工程
+  period: '2024'
+  revenue_share_pct: 87.95
+- evidence_ids:
+  - e2
+  id: seg_waste
+  name: 廢棄物處理
+  period: '2024'
+  revenue_share_pct: 10.41
+- evidence_ids:
+  - e2
+  - e7
+  id: seg_other
+  name: 其他：環境檢測、技術顧問及防治設備買賣等
+  period: '2024'
+  revenue_share_pct: 1.64
+relations:
+  subsidiaries:
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過境外控股公司間接持股100%的技術服務子公司
+    details:
+    - 透過境外控股公司間接持股100%的技術服務子公司
+    edge: e486186657eb0
+    evidence_level: primary
+    id: org.beijing-huajing-environmental-technology
+    name: 北京華境環保科技有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過TESC International間接持股100%的控股子公司
+    details:
+    - 透過TESC International間接持股100%的控股子公司
+    edge: e5f22e197cc54
+    evidence_level: primary
+    id: org.tesc-holdings-samoa
+    name: TESC Holdings (Samoa) Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的投資控股子公司
+    details:
+    - 直接持股100%的投資控股子公司
+    edge: e814767e54956
+    evidence_level: primary
+    id: org.tesc-international-investment
+    name: TESC International Investment Co., Ltd.（Samoa）
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的污染土生物復育子公司
+    details:
+    - 直接持股100%的污染土生物復育子公司
+    edge: e3ff7e532a4e3
+    evidence_level: primary
+    id: org.yao-jing
+    name: 耀境股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 2025年第三季財報另列直接持股51%的焚化爐底渣處理子公司，其名稱首字在PD…
 website: www.tesc.com.tw
 tax_id: '80369745'
 incorporated: '2003-12-23'
 listed: '2023-10-31'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.8476#e10:
+    locator: 印刷第10頁，列入合併財務報告之子公司
+    published_date: '2025-11-12'
+    publisher: 台境企業股份有限公司
+    quote_check: found
+    title: 台境企業股份有限公司及子公司114年第三季合併財務報告
+    url: https://www.tesc.com.tw/doc/reports/114Q3_%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
+  tw.8476#e11:
+    locator: 印刷第10頁，列入合併財務報告之子公司
+    published_date: '2025-11-12'
+    publisher: 台境企業股份有限公司
+    quote_check: found
+    title: 台境企業股份有限公司及子公司114年第三季合併財務報告
+    url: https://www.tesc.com.tw/doc/reports/114Q3_%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
+  tw.8476#e2:
+    locator: 印刷第66頁，營業比重表；欄位依序為112年度金額與占比、113年度金額與占比
+    published_date: '2025-04-30'
+    publisher: 台境企業股份有限公司
+    quote_check: found
+    title: 台境企業股份有限公司113年度年報
+    url: https://www.tesc.com.tw/doc/governance/annual_report/%E5%8F%B0%E5%A2%83113%E5%B9%B4%E5%BA%A6%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
+  tw.8476#e3:
+    locator: 印刷第66頁，公司目前之商品及服務項目
+    published_date: '2025-04-30'
+    publisher: 台境企業股份有限公司
+    quote_check: found
+    title: 台境企業股份有限公司113年度年報
+    url: https://www.tesc.com.tw/doc/governance/annual_report/%E5%8F%B0%E5%A2%83113%E5%B9%B4%E5%BA%A6%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
+  tw.8476#e4:
+    locator: 印刷第66頁，工程及廢棄物處理服務內容
+    published_date: '2025-04-30'
+    publisher: 台境企業股份有限公司
+    quote_check: found
+    title: 台境企業股份有限公司113年度年報
+    url: https://www.tesc.com.tw/doc/governance/annual_report/%E5%8F%B0%E5%A2%83113%E5%B9%B4%E5%BA%A6%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
+  tw.8476#e5:
+    locator: 印刷第66頁，規劃顧問服務內容
+    published_date: '2025-04-30'
+    publisher: 台境企業股份有限公司
+    quote_check: found
+    title: 台境企業股份有限公司113年度年報
+    url: https://www.tesc.com.tw/doc/governance/annual_report/%E5%8F%B0%E5%A2%83113%E5%B9%B4%E5%BA%A6%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
+  tw.8476#e6:
+    locator: 印刷第66頁，環境檢測服務內容
+    published_date: '2025-04-30'
+    publisher: 台境企業股份有限公司
+    quote_check: found
+    title: 台境企業股份有限公司113年度年報
+    url: https://www.tesc.com.tw/doc/governance/annual_report/%E5%8F%B0%E5%A2%83113%E5%B9%B4%E5%BA%A6%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
+  tw.8476#e7:
+    locator: 印刷第66頁，營業比重表註
+    published_date: '2025-04-30'
+    publisher: 台境企業股份有限公司
+    quote_check: found
+    title: 台境企業股份有限公司113年度年報
+    url: https://www.tesc.com.tw/doc/governance/annual_report/%E5%8F%B0%E5%A2%83113%E5%B9%B4%E5%BA%A6%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
+  tw.8476#e8:
+    locator: 印刷第10頁，列入合併財務報告之子公司；股權欄第一欄為114年9月30日
+    published_date: '2025-11-12'
+    publisher: 台境企業股份有限公司
+    quote_check: found
+    title: 台境企業股份有限公司及子公司114年第三季合併財務報告
+    url: https://www.tesc.com.tw/doc/reports/114Q3_%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
+  tw.8476#e9:
+    locator: 印刷第10頁，列入合併財務報告之子公司；股權欄第一欄為114年9月30日
+    published_date: '2025-11-12'
+    publisher: 台境企業股份有限公司
+    quote_check: found
+    title: 台境企業股份有限公司及子公司114年第三季合併財務報告
+    url: https://www.tesc.com.tw/doc/reports/114Q3_%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf

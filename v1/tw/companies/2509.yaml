@@ -8,12 +8,87 @@ industry:
   l0_code: '14'
   l0_name: 建材營造業
   l0_name_en: Building Material and Construction
-primary_chain_position: unknown
+  l1: realestate
+  l1_name: 不動產
+  l1_name_en: Real Estate
+  l2: re.dev
+  l2_name: 不動產
+  l2_name_en: Real Estate
+  l3: re.commercial
+  l3_name: 商用不動產與資產管理
+  l3_name_en: Commercial Real Estate & Asset Management
+primary_chain_position: not_applicable
+summary_short: 開發租售住宅與商業大樓，2025年主要收入來自不動產租金。
+summary_long: 全坤建以商業大樓及國民住宅的開發、出租與出售為主要業務，採委託營造廠商興建後租售的模式。2025年商業大樓及國民住宅興建、租售業務占營收68.88%，其他占31.12%，當年度營業收入主要來自投資性不動產租金。公司另投入台北市都市更新及危老重建，並建立都更開發團隊。旗下CHAINQUI HOLDING CO.,LTD為直接持有全部股權的子公司。
+segments:
+- evidence_ids:
+  - e2
+  id: seg1
+  name: 各種商業大樓及國民住宅興建、租售業務
+  period: '2025'
+  revenue_share_pct: 68.88
+- evidence_ids:
+  - e2
+  id: seg2
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 31.12
+relations:
+  subsidiaries:
+  - as_of: '2026-03-11'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有全部股權的子公司
+    details:
+    - 直接持有全部股權的子公司
+    edge: e4abbb8b93a0a
+    evidence_level: primary
+    id: org.chainqui-holding
+    name: CHAINQUI HOLDING CO.,LTD
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.gtg.com.tw
 tax_id: 04921056
 incorporated: '1973-01-27'
 listed: '1988-05-20'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2509#e1:
+    locator: 第35頁，營運概況／業務範圍
+    published_date: '2026-03-29'
+    publisher: 全坤建設開發股份有限公司
+    quote_check: found
+    title: 全坤建設開發股份有限公司一一四年度年報
+    url: https://www.gtg.com.tw/upload/shareholders/202605270807474.pdf
+  tw.2509#e2:
+    locator: 第35頁，營業比重表；114年為2025年
+    published_date: '2026-03-29'
+    publisher: 全坤建設開發股份有限公司
+    quote_check: found
+    title: 全坤建設開發股份有限公司一一四年度年報
+    url: https://www.gtg.com.tw/upload/shareholders/202605270807474.pdf
+  tw.2509#e3:
+    locator: 第1頁，致股東報告書／財務收支及獲利分析
+    published_date: '2026-03-29'
+    publisher: 全坤建設開發股份有限公司
+    quote_check: found
+    title: 全坤建設開發股份有限公司一一四年度年報
+    url: https://www.gtg.com.tw/upload/shareholders/202605270807474.pdf
+  tw.2509#e4:
+    locator: 第2頁，重要產銷政策
+    published_date: '2026-03-29'
+    publisher: 全坤建設開發股份有限公司
+    quote_check: found
+    title: 全坤建設開發股份有限公司一一四年度年報
+    url: https://www.gtg.com.tw/upload/shareholders/202605270807474.pdf
+  tw.2509#e5:
+    locator: 第28頁，115年董事會重要決議第5項
+    published_date: '2026-03-29'
+    publisher: 全坤建設開發股份有限公司
+    quote_check: found
+    title: 全坤建設開發股份有限公司一一四年度年報
+    url: https://www.gtg.com.tw/upload/shareholders/202605270807474.pdf

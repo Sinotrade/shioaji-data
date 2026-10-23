@@ -8,12 +8,172 @@ industry:
   l0_code: '26'
   l0_name: 光電業
   l0_name_en: Optoelectronic
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.display
+  l2_name: 光電與顯示
+  l2_name_en: Optoelectronics & Displays
+  l3: disp.led
+  l3_name: LED 與 Micro／Mini LED
+  l3_name_en: LED & Micro/Mini LED
+chain: chain.semiconductor
+chain_stage:
+  agreement: both
+  also: []
+  reason: 主要營收來自光電部門，以LED磊晶片與晶粒製造為主，對應晶圓製造階段。
+  stage: fab
+  stage_name: 晶圓製造
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 主要製造及銷售LED磊晶片與晶粒，另開發光通訊雷射晶片。
+summary_long: 泰谷主要製造及銷售LED磊晶片與晶粒，產品應用涵蓋消費性電子、家電、車用、背光與感測。2025年前三季合併營收以光電部門為主，另有半導體部門收入。公司亦開發雷射二極體，官網列有CWDM DFB雷射晶片，並說明雷射產品針對矽光子、CPO與外部雷射光源應用。截至2025年9月底，直接子公司包括泰士科技、承芯科技及正誠電子，前兩者從事電子材料銷售，後者從事電子零組件加工。
+segments:
+- evidence_ids:
+  - e3
+  id: seg_opto
+  name: 光電部門
+  period: 2025-01至2025-09
+  revenue_share_pct: null
+- evidence_ids:
+  - e3
+  id: seg_semi
+  name: 半導體部門
+  period: 2025-01至2025-09
+  revenue_share_pct: null
+main_theme: theme.silicon_photonics
+themes:
+- also: []
+  stage: devices
+  theme: theme.silicon_photonics
+  tier: midstream
+- also: []
+  stage: components
+  theme: theme.cpo
+  tier: upstream
+- also: []
+  stage: devices
+  theme: theme.inp
+  tier: midstream
+relations:
+  subsidiaries:
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司；電子材料銷售
+    details:
+    - 直接子公司；電子材料銷售
+    edge: e8465f77d416a
+    evidence_level: primary
+    id: org.承芯科技-股-公司
+    name: 承芯科技(股)公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司；電子零組件加工
+    details:
+    - 直接子公司；電子零組件加工
+    edge: ebbf66a2993ea
+    evidence_level: primary
+    id: org.正誠電子股份有限公司
+    name: 正誠電子股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司；電子材料銷售
+    details:
+    - 直接子公司；電子材料銷售
+    edge: ec5011a0e4756
+    evidence_level: primary
+    id: org.泰士科技-股-公司
+    name: 泰士科技(股)公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.tekcore.com.tw
 tax_id: '70774610'
 incorporated: '2000-05-31'
 listed: '2006-06-27'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3339#e10:
+    locator: 印刷頁10，列入合併財務報告之子公司；114.9.30欄
+    published_date: '2025-11-12'
+    publisher: 泰谷光電科技股份有限公司
+    quote_check: found
+    title: 114年第三季合併財務報告
+    url: https://www.tekcore.com.tw/uploads/tinymce/images/2bc6832c7b5ed356bbe261c5442fd3d5694e00fc54023.pdf
+  tw.3339#e11:
+    locator: 印刷頁10，列入合併財務報告之子公司；114.9.30欄及註3
+    published_date: '2025-11-12'
+    publisher: 泰谷光電科技股份有限公司
+    quote_check: found
+    title: 114年第三季合併財務報告
+    url: https://www.tekcore.com.tw/uploads/tinymce/images/2bc6832c7b5ed356bbe261c5442fd3d5694e00fc54023.pdf
+  tw.3339#e2:
+    locator: 印刷頁8，公司沿革
+    published_date: '2025-11-12'
+    publisher: 泰谷光電科技股份有限公司
+    quote_check: found
+    title: 114年第三季合併財務報告
+    url: https://www.tekcore.com.tw/uploads/tinymce/images/2bc6832c7b5ed356bbe261c5442fd3d5694e00fc54023.pdf
+  tw.3339#e3:
+    locator: 印刷頁39，部門資訊；114年1月至9月，依序為光電、半導體、調整及銷除、合計；單位新台幣千元
+    published_date: '2025-11-12'
+    publisher: 泰谷光電科技股份有限公司
+    quote_check: found
+    title: 114年第三季合併財務報告
+    url: https://www.tekcore.com.tw/uploads/tinymce/images/2bc6832c7b5ed356bbe261c5442fd3d5694e00fc54023.pdf
+  tw.3339#e4:
+    locator: LED產品介紹與產品表
+    published_date: null
+    publisher: 泰谷光電科技股份有限公司
+    quote_check: found
+    title: LED
+    url: https://www.tekcore.com.tw/zh-TW/product/category/optical-electronics-1-1
+  tw.3339#e5:
+    locator: 產品表，TLD100A32-XX
+    published_date: null
+    publisher: 泰谷光電科技股份有限公司
+    quote_check: found
+    title: Laser
+    url: https://www.tekcore.com.tw/zh-TW/product/category/laser
+  tw.3339#e6:
+    locator: 2025年
+    published_date: null
+    publisher: 泰谷光電科技股份有限公司
+    quote_check: found
+    title: 里程碑
+    url: https://www.tekcore.com.tw/zh-TW/about/milestone
+  tw.3339#e7:
+    locator: AI運算的大動脈
+    published_date: null
+    publisher: 泰谷光電科技股份有限公司
+    quote_check: found
+    title: 光電
+    url: https://www.tekcore.com.tw/zh-TW/product/category/optical-electronics
+  tw.3339#e8:
+    locator: 雷射應用介紹
+    published_date: null
+    publisher: 泰谷光電科技股份有限公司
+    quote_check: found
+    title: 光電
+    url: https://www.tekcore.com.tw/zh-TW/product/category/optical-electronics
+  tw.3339#e9:
+    locator: 印刷頁10，列入合併財務報告之子公司；114.9.30欄
+    published_date: '2025-11-12'
+    publisher: 泰谷光電科技股份有限公司
+    quote_check: found
+    title: 114年第三季合併財務報告
+    url: https://www.tekcore.com.tw/uploads/tinymce/images/2bc6832c7b5ed356bbe261c5442fd3d5694e00fc54023.pdf

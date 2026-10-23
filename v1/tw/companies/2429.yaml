@@ -8,12 +8,196 @@ industry:
   l0_code: '26'
   l0_name: 光電業
   l0_name_en: Optoelectronic
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.distribution
+  l2_name: 電子通路
+  l2_name_en: Electronics Distribution
+  l3: dist.components
+  l3_name: 電子零組件通路
+  l3_name_en: Electronic Components Distribution
+chain: chain.display
+chain_stage:
+  agreement: both
+  also:
+  - stage: device
+    stage_name: 終端產品
+    tier: downstream
+  reason: 光學面板占營收95.45%，主要銷售液晶面板與觸控模組，另有互動式電子白板終端產品。
+  stage: panel
+  stage_name: 面板與模組
+  tier: midstream
+primary_chain_position: downstream
+summary_short: 主要從事光學面板代理及觸控顯示產品銷售，另經營動力系統與能源整合。
+summary_long: 銘旺科以光學面板代理與觸控顯示產品銷售為主要業務，2024年光學面板占合併營收95.45%，其他占4.55%。其顯示產品包括互動式電子白板與液晶面板，另提供電動摩托車及電輔自行車中置動力系統。能源業務涵蓋太陽能設備安裝工程，以及太陽能、儲能和微電網整合；無人載具業務則提供無人機系統解決方案。已讀年報列有銘旺綠能、亮崴電力、銘電壹能源及銘電貳能源等子公司。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_panel
+  name: 光學面板
+  period: '2024'
+  revenue_share_pct: 95.45
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他
+  period: '2024'
+  revenue_share_pct: 4.55
+main_theme: theme.ev
+themes:
+- also: []
+  stage: parts
+  theme: theme.ev
+  tier: midstream
+- also: []
+  stage: engineering
+  theme: theme.power_grid
+  tier: downstream
+- also: []
+  stage: system
+  theme: theme.drone
+  tier: downstream
+relations:
+  subsidiaries:
+  - as_of: '2025-03-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 年報列示之子公司
+    details:
+    - 年報列示之子公司
+    edge: e7d1fa95af895
+    evidence_level: primary
+    id: org.liang-wei-power
+    name: 亮崴電力股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 年報列示之子公司
+    details:
+    - 年報列示之子公司
+    edge: ec2b9fb860aca
+    evidence_level: primary
+    id: org.ming-dian-one-energy
+    name: 銘電壹能源股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-02-07'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 年報列示之子公司
+    details:
+    - 年報列示之子公司
+    edge: e2b0bb5af8329
+    evidence_level: primary
+    id: org.ming-dian-two-energy
+    name: 銘電貳能源股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-03-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 年報列示之子公司
+    details:
+    - 年報列示之子公司
+    edge: e1d239affe1ab
+    evidence_level: primary
+    id: org.ming-wang-green-energy
+    name: 銘旺綠能股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.abonmax.com.tw
 tax_id: '12206203'
 incorporated: '1978-11-30'
 listed: '2000-09-11'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2429#e10:
+    locator: 印刷頁38，114年3月13日董事會決議第7項
+    published_date: null
+    publisher: 銘旺科技股份有限公司
+    quote_check: found
+    title: 銘旺科技113年度年報
+    url: https://www.abonmax.com.tw/download/1763693836.pdf
+  tw.2429#e11:
+    locator: 印刷頁37，董事會重要決議
+    published_date: null
+    publisher: 銘旺科技股份有限公司
+    quote_check: found
+    title: 銘旺科技113年度年報
+    url: https://www.abonmax.com.tw/download/1763693836.pdf
+  tw.2429#e12:
+    locator: 印刷頁38，114年2月7日董事會決議第1項
+    published_date: null
+    publisher: 銘旺科技股份有限公司
+    quote_check: found
+    title: 銘旺科技113年度年報
+    url: https://www.abonmax.com.tw/download/1763693836.pdf
+  tw.2429#e2:
+    locator: 印刷頁46，產品營業比重，113年度欄
+    published_date: null
+    publisher: 銘旺科技股份有限公司
+    quote_check: found
+    title: 銘旺科技113年度年報
+    url: https://www.abonmax.com.tw/download/1763693836.pdf
+  tw.2429#e3:
+    locator: 印刷頁53，市場分析
+    published_date: null
+    publisher: 銘旺科技股份有限公司
+    quote_check: found
+    title: 銘旺科技113年度年報
+    url: https://www.abonmax.com.tw/download/1763693836.pdf
+  tw.2429#e4:
+    locator: 第5頁，公司簡介之產品欄
+    published_date: '2025-06-19'
+    publisher: 銘旺科技股份有限公司
+    quote_check: found
+    title: 銘旺科技2025年法人說明會
+    url: https://www.abonmax.com.tw/image/files/20250619%E6%B3%95%E8%AA%AA%E6%9C%83_cht.pdf
+  tw.2429#e5:
+    locator: 產品介紹；電動摩托車中置系統分類
+    published_date: null
+    publisher: 銘旺科技股份有限公司
+    quote_check: found
+    title: 48V高效動力系統
+    url: https://www.abonmax.com.tw/index.php?path=142_150&product_id=197&route=product/product
+  tw.2429#e6:
+    locator: 產品分類與產品名稱
+    published_date: null
+    publisher: 銘旺科技股份有限公司
+    quote_check: found
+    title: 電動車輔助自行車中置系統
+    url: https://www.abonmax.com.tw/index.php?path=142_143&route=product/category
+  tw.2429#e7:
+    locator: 事業二：綠能、儲能與微電網
+    published_date: null
+    publisher: 銘旺科技股份有限公司
+    quote_check: found
+    title: 銘旺科技AbonMax以科技整合，打造事業版圖韌性未來
+    url: https://www.abonmax.com.tw/index.php?news_id=86&route=news/news_detail
+  tw.2429#e8:
+    locator: AI無人載具，國防應用介紹
+    published_date: null
+    publisher: 銘旺科技股份有限公司
+    quote_check: found
+    title: AI無人載具
+    url: https://www.abonmax.com.tw/index.php?information_id=55&route=information/nproduct
+  tw.2429#e9:
+    locator: 印刷頁38，董事會重要決議
+    published_date: null
+    publisher: 銘旺科技股份有限公司
+    quote_check: found
+    title: 銘旺科技113年度年報
+    url: https://www.abonmax.com.tw/download/1763693836.pdf

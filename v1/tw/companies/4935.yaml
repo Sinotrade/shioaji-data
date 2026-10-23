@@ -8,13 +8,160 @@ industry:
   l0_code: '26'
   l0_name: 光電業
   l0_name_en: Optoelectronic
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.display
+  l2_name: 光電與顯示
+  l2_name_en: Optoelectronics & Displays
+  l3: disp.materials
+  l3_name: 顯示器材料與零組件
+  l3_name_en: Display Materials & Components
+chain: chain.display
+chain_stage:
+  agreement: both
+  also:
+  - stage: panel
+    stage_name: 面板與模組
+    tier: midstream
+  reason: 導光板應用占營收82.74%，以背光光學零組件為主，另提供客製化背光模組。
+  stage: materials
+  stage_name: 玻璃、光學膜、驅動 IC
+  tier: upstream
+primary_chain_position: upstream
+summary_short: 以導光板應用及塑膠零組件的設計、製造與銷售為主要業務。
+summary_long: 茂林-KY以塑膠導光板應用與塑膠零組件的設計、製造及銷售為主要業務，技術核心為光學微結構。2025年導光板應用占營收82.74%，塑膠零組件占16.96%，其他占0.30%。導光產品用於電視與顯示器、發光鍵盤、平板電腦、電子書及筆記型電腦，也提供車內裝飾導光元件與客製化背光模組。消費性產品採超薄、可撓式導光膜板，最薄厚度可達0.1毫米。年報另揭露Mini-LED背光模組的研發成果。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_lgp
+  name: 導光板應用
+  period: '2025'
+  revenue_share_pct: 82.74
+- evidence_ids:
+  - e2
+  id: seg_plastic
+  name: 塑膠零組件
+  period: '2025'
+  revenue_share_pct: 16.96
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 0.3
+main_theme: theme.mini_led
+themes:
+- also: []
+  stage: display
+  theme: theme.mini_led
+  tier: downstream
+relations:
+  subsidiaries:
+  - as_of: '2026-04-08'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 上海產品開發及製造子公司
+    details:
+    - 上海產品開發及製造子公司
+    edge: e022382f6d82d
+    evidence_level: primary
+    id: org.上海向隆電子科技有限公司
+    name: 上海向隆電子科技有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-08'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 台灣產品開發及製造子公司
+    details:
+    - 台灣產品開發及製造子公司
+    edge: ead8f8b90ee05
+    evidence_level: primary
+    id: org.茂林光電科技股份有限公司
+    name: 茂林光電科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-08'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 蘇州產品開發及製造子公司
+    details:
+    - 蘇州產品開發及製造子公司
+    edge: ef3c1af4c25f8
+    evidence_level: primary
+    id: org.蘇州茂立光電科技有限公司
+    name: 蘇州茂立光電科技有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.glthome.com.tw/
 tax_id: '26797925'
 incorporated: '2000-07-28'
 listed: '2011-07-28'
 foreign_registration: KY 開曼群島
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4935#e1:
+    locator: 公司簡介第一段
+    published_date: null
+    publisher: 茂林光電科技(開曼)股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.glthome.com.tw/about-46
+  tw.4935#e2:
+    locator: 第66頁，主要產品之營業比重；欄序為113年度、114年度
+    published_date: '2026-04-08'
+    publisher: 茂林光電科技(開曼)股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.glthome.com.tw/storage/system/Finance/PDF/Sharesholders_meeting/114_year.pdf
+  tw.4935#e3:
+    locator: 產品介紹第二、三點
+    published_date: null
+    publisher: 茂林光電科技(開曼)股份有限公司
+    quote_check: found
+    title: TV / 顯示器
+    url: https://www.glthome.com.tw/product-02-102
+  tw.4935#e4:
+    locator: IT產品導光板應用
+    published_date: null
+    publisher: 茂林光電科技(開曼)股份有限公司
+    quote_check: found
+    title: IT應用
+    url: https://www.glthome.com.tw/product-02-103
+  tw.4935#e5:
+    locator: 產品介紹第二、三點
+    published_date: null
+    publisher: 茂林光電科技(開曼)股份有限公司
+    quote_check: found
+    title: 車載應用
+    url: https://www.glthome.com.tw/product-02-104
+  tw.4935#e6:
+    locator: 產品介紹第一段
+    published_date: null
+    publisher: 茂林光電科技(開曼)股份有限公司
+    quote_check: found
+    title: 消費性產品
+    url: https://www.glthome.com.tw/product-02-105
+  tw.4935#e7:
+    locator: 第70頁，近五年度開發成功之技術或產品，113年度成果
+    published_date: '2026-04-08'
+    publisher: 茂林光電科技(開曼)股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.glthome.com.tw/storage/system/Finance/PDF/Sharesholders_meeting/114_year.pdf
+  tw.4935#e8:
+    locator: 第7頁，公司及集團簡介
+    published_date: '2026-04-08'
+    publisher: 茂林光電科技(開曼)股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.glthome.com.tw/storage/system/Finance/PDF/Sharesholders_meeting/114_year.pdf

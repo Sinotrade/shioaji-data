@@ -8,12 +8,291 @@ industry:
   l0_code: '26'
   l0_name: 光電業
   l0_name_en: Optoelectronic
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.display
+  l2_name: 光電與顯示
+  l2_name_en: Optoelectronics & Displays
+  l3: disp.led
+  l3_name: LED 與 Micro／Mini LED
+  l3_name_en: LED & Micro/Mini LED
+chain: chain.semiconductor
+chain_stage:
+  agreement: both
+  also: []
+  reason: LED元器件及模組占營收100%，主要從事LED下游封裝製造。
+  stage: osat
+  stage_name: 封裝測試
+  tier: downstream
+primary_chain_position: downstream
+summary_short: 以LED封裝元件、顯示器及光模組銷售為主，另提供功率半導體產品。
+summary_long: 光鼎以LED封裝元件及模組的製造、加工與銷售為主，2025年報列示LED元器件及模組產品營收約新臺幣6.09億元，占全年營收100%。主要產品涵蓋LED指示燈、表面黏著型元件、數位顯示器與光模組，位於LED產業的下游封裝階段。公司另布局功率半導體，提供離散式IGBT及IGBT功率模組，並依官網公司簡介於2026年第一季推出SiC MOSFET產品。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_led
+  name: LED元器件及模組產品
+  period: '2025'
+  revenue_share_pct: 100
+main_theme: theme.sic
+themes:
+- also: []
+  stage: devices
+  theme: theme.sic
+  tier: midstream
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司
+    details:
+    - 全資子公司
+    edge: e010a7ceb9397
+    evidence_level: primary
+    id: org.para-light-corp
+    name: PARA LIGHT CORP.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司
+    details:
+    - 全資子公司
+    edge: e9b41a768fdbe
+    evidence_level: primary
+    id: org.para-light-hk
+    name: 香港光鼎電子有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 印度全資子公司
+    details:
+    - 印度全資子公司
+    edge: ef9c2119d0df4
+    evidence_level: primary
+    id: org.para-light-india
+    name: PARA LIGHT INDIA PRIVATE LIMITED
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司
+    details:
+    - 全資子公司
+    edge: efeca097fd652
+    evidence_level: primary
+    id: org.para-light-investments
+    name: Para Light Investments Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團子公司
+    details:
+    - 集團子公司
+    edge: e30691accb280
+    evidence_level: primary
+    id: org.para-light-lianyungang
+    name: 連雲港光鼎電子有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 緬甸全資子公司
+    details:
+    - 緬甸全資子公司
+    edge: e62ed5450318d
+    evidence_level: primary
+    id: org.para-light-myanmar
+    name: MYANMAR PARA LIGHT LED & LIGHTING ACCESSORY COMPANY LIMITED
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團子公司
+    details:
+    - 集團子公司
+    edge: e20178b8dddca
+    evidence_level: primary
+    id: org.para-light-nanjing
+    name: 南京華鼎電子有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司
+    details:
+    - 全資子公司
+    edge: ec5121a509e3a
+    evidence_level: primary
+    id: org.rui-ji-investment
+    name: 睿基投資股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.para.com.tw
 tax_id: '22601800'
 incorporated: '1987-09-23'
 listed: '2008-11-10'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6226#e1:
+    locator: 印刷頁44，營業收入及營業比重；114年度，單位新台幣千元
+    published_date: null
+    publisher: 光鼎電子股份有限公司
+    quote_check: found
+    title: 光鼎電子股份有限公司114年年報
+    url: https://www.para.com.tw/wp-content/uploads/114%E5%B9%B4%E5%A0%B1.pdf
+  tw.6226#e10:
+    locator: 印刷頁68，2025年12月31日各關係企業董事、監察人及總經理資料
+    published_date: null
+    publisher: 光鼎電子股份有限公司
+    quote_check: found
+    title: 光鼎電子股份有限公司114年年報
+    url: https://www.para.com.tw/wp-content/uploads/114%E5%B9%B4%E5%A0%B1.pdf
+  tw.6226#e11:
+    locator: 印刷頁38，2025年12月31日綜合持股比例表
+    published_date: null
+    publisher: 光鼎電子股份有限公司
+    quote_check: found
+    title: 光鼎電子股份有限公司114年年報
+    url: https://www.para.com.tw/wp-content/uploads/114%E5%B9%B4%E5%A0%B1.pdf
+  tw.6226#e12:
+    locator: 印刷頁38，2025年12月31日綜合持股比例表
+    published_date: null
+    publisher: 光鼎電子股份有限公司
+    quote_check: found
+    title: 光鼎電子股份有限公司114年年報
+    url: https://www.para.com.tw/wp-content/uploads/114%E5%B9%B4%E5%A0%B1.pdf
+  tw.6226#e13:
+    locator: 印刷頁38，2025年12月31日綜合持股比例表
+    published_date: null
+    publisher: 光鼎電子股份有限公司
+    quote_check: found
+    title: 光鼎電子股份有限公司114年年報
+    url: https://www.para.com.tw/wp-content/uploads/114%E5%B9%B4%E5%A0%B1.pdf
+  tw.6226#e14:
+    locator: 印刷頁38，2025年12月31日綜合持股比例表
+    published_date: null
+    publisher: 光鼎電子股份有限公司
+    quote_check: found
+    title: 光鼎電子股份有限公司114年年報
+    url: https://www.para.com.tw/wp-content/uploads/114%E5%B9%B4%E5%A0%B1.pdf
+  tw.6226#e15:
+    locator: 印刷頁66，關係企業組織圖之名稱
+    published_date: null
+    publisher: 光鼎電子股份有限公司
+    quote_check: found
+    title: 光鼎電子股份有限公司114年年報
+    url: https://www.para.com.tw/wp-content/uploads/114%E5%B9%B4%E5%A0%B1.pdf
+  tw.6226#e16:
+    locator: 印刷頁67，各關係企業基本資料
+    published_date: null
+    publisher: 光鼎電子股份有限公司
+    quote_check: found
+    title: 光鼎電子股份有限公司114年年報
+    url: https://www.para.com.tw/wp-content/uploads/114%E5%B9%B4%E5%A0%B1.pdf
+  tw.6226#e17:
+    locator: 印刷頁68，整體關係企業經營業務所涵蓋之行業
+    published_date: null
+    publisher: 光鼎電子股份有限公司
+    quote_check: found
+    title: 光鼎電子股份有限公司114年年報
+    url: https://www.para.com.tw/wp-content/uploads/114%E5%B9%B4%E5%A0%B1.pdf
+  tw.6226#e18:
+    locator: 印刷頁68，整體關係企業經營業務所涵蓋之行業
+    published_date: null
+    publisher: 光鼎電子股份有限公司
+    quote_check: found
+    title: 光鼎電子股份有限公司114年年報
+    url: https://www.para.com.tw/wp-content/uploads/114%E5%B9%B4%E5%A0%B1.pdf
+  tw.6226#e19:
+    locator: 印刷頁68，整體關係企業經營業務所涵蓋之行業
+    published_date: null
+    publisher: 光鼎電子股份有限公司
+    quote_check: found
+    title: 光鼎電子股份有限公司114年年報
+    url: https://www.para.com.tw/wp-content/uploads/114%E5%B9%B4%E5%A0%B1.pdf
+  tw.6226#e2:
+    locator: 印刷頁45，LED元件產品
+    published_date: null
+    publisher: 光鼎電子股份有限公司
+    quote_check: found
+    title: 光鼎電子股份有限公司114年年報
+    url: https://www.para.com.tw/wp-content/uploads/114%E5%B9%B4%E5%A0%B1.pdf
+  tw.6226#e3:
+    locator: 印刷頁44，所營業務之主要內容
+    published_date: null
+    publisher: 光鼎電子股份有限公司
+    quote_check: found
+    title: 光鼎電子股份有限公司114年年報
+    url: https://www.para.com.tw/wp-content/uploads/114%E5%B9%B4%E5%A0%B1.pdf
+  tw.6226#e4:
+    locator: 印刷頁46，研發完成之主要產品
+    published_date: null
+    publisher: 光鼎電子股份有限公司
+    quote_check: found
+    title: 光鼎電子股份有限公司114年年報
+    url: https://www.para.com.tw/wp-content/uploads/114%E5%B9%B4%E5%A0%B1.pdf
+  tw.6226#e5:
+    locator: 公司概況／功率半導體新事業
+    published_date: null
+    publisher: 光鼎電子股份有限公司
+    quote_check: found
+    title: 光鼎電子｜關於光鼎－公司簡介－公司概況
+    url: https://www.para.com.tw/關於光鼎/info/
+  tw.6226#e6:
+    locator: 公司概況／功率半導體新事業
+    published_date: null
+    publisher: 光鼎電子股份有限公司
+    quote_check: found
+    title: 光鼎電子｜關於光鼎－公司簡介－公司概況
+    url: https://www.para.com.tw/關於光鼎/info/
+  tw.6226#e7:
+    locator: 印刷頁38，2025年12月31日綜合持股比例表
+    published_date: null
+    publisher: 光鼎電子股份有限公司
+    quote_check: found
+    title: 光鼎電子股份有限公司114年年報
+    url: https://www.para.com.tw/wp-content/uploads/114%E5%B9%B4%E5%A0%B1.pdf
+  tw.6226#e8:
+    locator: 印刷頁38，2025年12月31日綜合持股比例表
+    published_date: null
+    publisher: 光鼎電子股份有限公司
+    quote_check: found
+    title: 光鼎電子股份有限公司114年年報
+    url: https://www.para.com.tw/wp-content/uploads/114%E5%B9%B4%E5%A0%B1.pdf
+  tw.6226#e9:
+    locator: 印刷頁38，2025年12月31日綜合持股比例表
+    published_date: null
+    publisher: 光鼎電子股份有限公司
+    quote_check: found
+    title: 光鼎電子股份有限公司114年年報
+    url: https://www.para.com.tw/wp-content/uploads/114%E5%B9%B4%E5%A0%B1.pdf

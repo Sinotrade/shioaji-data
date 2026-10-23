@@ -8,13 +8,221 @@ industry:
   l0_code: '12'
   l0_name: 汽車工業
   l0_name_en: Automobile
-primary_chain_position: unknown
+  l1: auto
+  l1_name: 汽車與運具
+  l1_name_en: Automotive & Mobility
+  l2: auto.vehicles
+  l2_name: 汽機車
+  l2_name_en: Autos & Motorcycles
+  l3: auto.electronics
+  l3_name: 車用電子
+  l3_name_en: Automotive Electronics
+chain: chain.auto
+chain_stage:
+  agreement: both
+  also: []
+  reason: 汽車LED內飾件占營收80.98%，另生產汽車內外飾件，均屬汽車零組件。
+  stage: parts
+  stage_name: 汽車零組件與模組
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 研發、生產及銷售汽車LED內飾件、氛圍燈與汽車內外飾件。
+summary_long: 華勝-KY從事汽車金屬與塑膠裝飾件、光電產品及車用電子的研發、生產與銷售，產品涵蓋內飾氛圍燈、LED光電系列及汽車內外飾件。2025年汽車LED內飾件占營收80.98%，汽車內外飾件占15.76%，其他占3.26%。門檻踏板產品結合金屬表面處理、沖壓及PCBA焊接工藝；光電產品運用曲面印刷與LED控制技術。集團透過華勝國際控股持有平湖、泰國及墨西哥子公司，並透過E-LAN HOLDING COMPANY持有美國車用電子元件銷售公司。
+segments:
+- evidence_ids:
+  - e3
+  id: seg_led
+  name: 汽車LED內飾件
+  period: '2025'
+  revenue_share_pct: 80.98
+- evidence_ids:
+  - e4
+  id: seg_trim
+  name: 汽車內外飾件
+  period: '2025'
+  revenue_share_pct: 15.76
+- evidence_ids:
+  - e5
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 3.26
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過華勝國際控股持有100%的墨西哥子公司
+    details:
+    - 透過華勝國際控股持有100%的墨西哥子公司
+    edge: e4f1c7047b040
+    evidence_level: primary
+    id: org.elan-car-components-mexico
+    name: E-LAN CAR COMPONENTS MEXICO
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過E-LAN HOLDING COMPANY持有100%的美國銷售子公司
+    details:
+    - 透過E-LAN HOLDING COMPANY持有100%的美國銷售子公司
+    edge: eccb5e7eaa095
+    evidence_level: primary
+    id: org.elan-car-components-usa
+    name: E-LAN CAR COMPONENTS (USA) INC.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過平湖公司持有100%的控股子公司
+    details:
+    - 透過平湖公司持有100%的控股子公司
+    edge: e143764da9e14
+    evidence_level: primary
+    id: org.elan-holding-company
+    name: E-LAN HOLDING COMPANY
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過華勝國際控股持有100%的營運子公司
+    details:
+    - 透過華勝國際控股持有100%的營運子公司
+    edge: eff4ecabb2f28
+    evidence_level: primary
+    id: org.elan-motor-electronic-pinghu
+    name: 宜蘭汽車配件製造（平湖）有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過華勝國際控股持有100%的泰國子公司
+    details:
+    - 透過華勝國際控股持有100%的泰國子公司
+    edge: ed927840f7510
+    evidence_level: primary
+    id: org.elan-motor-electronic-thailand
+    name: E-LAN MOTOR ELECTRONIC (THAILAND) CO., LTD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%的控股子公司
+    details:
+    - 直接持有100%的控股子公司
+    edge: e5b14256ee0eb
+    evidence_level: primary
+    id: org.shining-victory-international-holdings
+    name: 華勝國際控股有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://hs-elan.tw/
 tax_id: '73676873'
 incorporated: '2017-04-10'
 listed: '2025-03-13'
 foreign_registration: KY 開曼群島
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2248#e10:
+    locator: 第129頁，附註九、子公司／列入合併財務報表之子公司；華勝-KY投資華勝國際控股，持股100%
+    published_date: '2026-05-12'
+    publisher: 華勝汽車電子股份有限公司
+    quote_check: not_found
+    title: 華勝汽車電子股份有限公司2025年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=2248&colorchg=1&filename=2025_2248_20260612F04.pdf&kind=F&step=9
+  tw.2248#e11:
+    locator: 第129頁，附註九子公司表；華勝國際控股投資平湖公司，持股100%
+    published_date: '2026-05-12'
+    publisher: 華勝汽車電子股份有限公司
+    quote_check: not_found
+    title: 華勝汽車電子股份有限公司2025年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=2248&colorchg=1&filename=2025_2248_20260612F04.pdf&kind=F&step=9
+  tw.2248#e12:
+    locator: 第129頁，附註九子公司表；華勝國際控股投資泰國公司，持股100%
+    published_date: '2026-05-12'
+    publisher: 華勝汽車電子股份有限公司
+    quote_check: not_found
+    title: 華勝汽車電子股份有限公司2025年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=2248&colorchg=1&filename=2025_2248_20260612F04.pdf&kind=F&step=9
+  tw.2248#e13:
+    locator: 第129頁，附註九子公司表；華勝國際控股投資墨西哥公司，持股100%
+    published_date: '2026-05-12'
+    publisher: 華勝汽車電子股份有限公司
+    quote_check: not_found
+    title: 華勝汽車電子股份有限公司2025年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=2248&colorchg=1&filename=2025_2248_20260612F04.pdf&kind=F&step=9
+  tw.2248#e14:
+    locator: 第129頁，附註九子公司表；平湖公司投資E-LAN HOLDING COMPANY，持股100%
+    published_date: '2026-05-12'
+    publisher: 華勝汽車電子股份有限公司
+    quote_check: not_found
+    title: 華勝汽車電子股份有限公司2025年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=2248&colorchg=1&filename=2025_2248_20260612F04.pdf&kind=F&step=9
+  tw.2248#e15:
+    locator: 第129頁，附註九子公司表；E-LAN HOLDING COMPANY投資美國公司，持股100%，業務為車用電子元件銷售
+    published_date: '2026-05-12'
+    publisher: 華勝汽車電子股份有限公司
+    quote_check: not_found
+    title: 華勝汽車電子股份有限公司2025年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=2248&colorchg=1&filename=2025_2248_20260612F04.pdf&kind=F&step=9
+  tw.2248#e2:
+    locator: 第59頁，營運概況／業務內容／公司所營業務主要內容
+    published_date: '2026-05-12'
+    publisher: 華勝汽車電子股份有限公司
+    quote_check: not_found
+    title: 華勝汽車電子股份有限公司2025年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=2248&colorchg=1&filename=2025_2248_20260612F04.pdf&kind=F&step=9
+  tw.2248#e3:
+    locator: 第59頁，主要產品之營業比重表；汽車LED內飾件列，2025年度金額1,672,512仟元、比重80.98%
+    published_date: '2026-05-12'
+    publisher: 華勝汽車電子股份有限公司
+    quote_check: not_found
+    title: 華勝汽車電子股份有限公司2025年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=2248&colorchg=1&filename=2025_2248_20260612F04.pdf&kind=F&step=9
+  tw.2248#e4:
+    locator: 第59頁，主要產品之營業比重表；汽車內外飾件列，2025年度金額325,576仟元、比重15.76%
+    published_date: '2026-05-12'
+    publisher: 華勝汽車電子股份有限公司
+    quote_check: not_found
+    title: 華勝汽車電子股份有限公司2025年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=2248&colorchg=1&filename=2025_2248_20260612F04.pdf&kind=F&step=9
+  tw.2248#e5:
+    locator: 第59頁，主要產品之營業比重表；其他列，2025年度金額67,231仟元、比重3.26%
+    published_date: '2026-05-12'
+    publisher: 華勝汽車電子股份有限公司
+    quote_check: not_found
+    title: 華勝汽車電子股份有限公司2025年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=2248&colorchg=1&filename=2025_2248_20260612F04.pdf&kind=F&step=9
+  tw.2248#e6:
+    locator: 第59頁，公司目前之商品項目A，汽車門檻踏板
+    published_date: '2026-05-12'
+    publisher: 華勝汽車電子股份有限公司
+    quote_check: not_found
+    title: 華勝汽車電子股份有限公司2025年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=2248&colorchg=1&filename=2025_2248_20260612F04.pdf&kind=F&step=9
+  tw.2248#e7:
+    locator: 第59頁，公司目前之商品項目B
+    published_date: '2026-05-12'
+    publisher: 華勝汽車電子股份有限公司
+    quote_check: not_found
+    title: 華勝汽車電子股份有限公司2025年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=2248&colorchg=1&filename=2025_2248_20260612F04.pdf&kind=F&step=9

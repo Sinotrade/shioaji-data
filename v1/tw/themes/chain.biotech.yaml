@@ -20,6 +20,32 @@ stages:
   tier: downstream
   name_en: Distribution & Services
 members:
+- id: tw.1565
+  detail: 以隱形眼鏡製造及OEM、ODM代工為主，另有鏡片與彩片圖紋研發設計。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.1565#e1
+  - tw.1565#e2
+  - tw.1565#e3
+  - tw.1565#e4
+  confidence: ai_cross_checked
+  source: classification
+  stage: manufacturing
+  tier: midstream
+  stage_role: primary
+- id: tw.1565
+  detail: 以隱形眼鏡製造及OEM、ODM代工為主，另有鏡片與彩片圖紋研發設計。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.1565#e1
+  - tw.1565#e2
+  - tw.1565#e3
+  - tw.1565#e4
+  confidence: ai_cross_checked
+  source: classification
+  stage: rnd
+  tier: upstream
+  stage_role: also
 - id: tw.1707
   detail: 保健食品占營收76%，以製造為主，另供應發酵素材並經營通路銷售。
   as_of: '2026-10-18'
@@ -85,6 +111,28 @@ members:
   stage: rnd
   tier: upstream
   stage_role: also
+- id: tw.1733
+  detail: 測試片占營收77.19%，以檢測耗材製造為主，並明確從事檢驗儀器與試片研發。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.1733#e_business
+  - tw.1733#e_revenue
+  confidence: ai_cross_checked
+  source: classification
+  stage: manufacturing
+  tier: midstream
+  stage_role: primary
+- id: tw.1733
+  detail: 測試片占營收77.19%，以檢測耗材製造為主，並明確從事檢驗儀器與試片研發。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.1733#e_business
+  - tw.1733#e_revenue
+  confidence: ai_cross_checked
+  source: classification
+  stage: rnd
+  tier: upstream
+  stage_role: also
 - id: tw.1734
   detail: 療效用藥製造占營收61.43%為主，另有天然植物萃取原料及子公司新藥研發業務。
   as_of: '2026-10-20'
@@ -104,6 +152,141 @@ members:
   - tw.1734#e2
   - tw.1734#e3
   - tw.1734#e4
+  confidence: ai_cross_checked
+  source: classification
+  stage: rnd
+  tier: upstream
+  stage_role: also
+- id: tw.1752
+  detail: 西藥製劑製造及代工占營收96.34%，以輸液、注射劑與口服藥生產為主。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.1752#e1
+  - tw.1752#e2
+  - tw.1752#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: manufacturing
+  tier: midstream
+  stage_role: primary
+- id: tw.1760
+  detail: 藥品占營收36.70%為最大項，製藥為主業，另涵蓋新藥研發、原料藥與通路。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.1760#e2
+  - tw.1760#e3
+  - tw.1760#e5
+  - tw.1760#e8
+  confidence: ai_cross_checked
+  source: classification
+  stage: manufacturing
+  tier: midstream
+  stage_role: primary
+- id: tw.1760
+  detail: 藥品占營收36.70%為最大項，製藥為主業，另涵蓋新藥研發、原料藥與通路。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.1760#e2
+  - tw.1760#e3
+  - tw.1760#e5
+  - tw.1760#e8
+  confidence: ai_cross_checked
+  source: classification
+  stage: channel
+  tier: downstream
+  stage_role: also
+- id: tw.1760
+  detail: 藥品占營收36.70%為最大項，製藥為主業，另涵蓋新藥研發、原料藥與通路。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.1760#e2
+  - tw.1760#e3
+  - tw.1760#e5
+  - tw.1760#e8
+  confidence: ai_cross_checked
+  source: classification
+  stage: rnd
+  tier: upstream
+  stage_role: also
+- id: tw.1762
+  detail: 主要收入來自製藥用原料藥，屬上游原料供應，並具備原料藥量產製造能力。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.1762#e1
+  - tw.1762#e2
+  - tw.1762#e9
+  confidence: ai_cross_checked
+  source: classification
+  stage: rnd
+  tier: upstream
+  stage_role: primary
+- id: tw.1777
+  detail: 主要營收來自人用原料藥，並經營賦形劑，屬研發與原料階段。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.1777#e2
+  - tw.1777#e3
+  - tw.1777#e4
+  confidence: ai_cross_checked
+  source: classification
+  stage: rnd
+  tier: upstream
+  stage_role: primary
+- id: tw.1784
+  detail: 主要收入來自細胞儲存應用與產前檢測服務，另提供細胞委託研究、製備及開發製造。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.1784#e2
+  - tw.1784#e6
+  - tw.1784#e7
+  confidence: ai_cross_checked
+  source: classification
+  stage: channel
+  tier: downstream
+  stage_role: primary
+- id: tw.1784
+  detail: 主要收入來自細胞儲存應用與產前檢測服務，另提供細胞委託研究、製備及開發製造。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.1784#e2
+  - tw.1784#e6
+  - tw.1784#e7
+  confidence: ai_cross_checked
+  source: classification
+  stage: manufacturing
+  tier: midstream
+  stage_role: also
+- id: tw.1784
+  detail: 主要收入來自細胞儲存應用與產前檢測服務，另提供細胞委託研究、製備及開發製造。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.1784#e2
+  - tw.1784#e6
+  - tw.1784#e7
+  confidence: ai_cross_checked
+  source: classification
+  stage: rnd
+  tier: upstream
+  stage_role: also
+- id: tw.1786
+  detail: 透明質酸醫療器材占營收96.32%，以器材生產為主，亦自行研發交聯技術與產品。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.1786#e1
+  - tw.1786#e2
+  - tw.1786#e7
+  confidence: ai_cross_checked
+  source: classification
+  stage: manufacturing
+  tier: midstream
+  stage_role: primary
+- id: tw.1786
+  detail: 透明質酸醫療器材占營收96.32%，以器材生產為主，亦自行研發交聯技術與產品。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.1786#e1
+  - tw.1786#e2
+  - tw.1786#e7
   confidence: ai_cross_checked
   source: classification
   stage: rnd
@@ -190,6 +373,18 @@ members:
   stage: rnd
   tier: upstream
   stage_role: also
+- id: tw.2906
+  detail: 生技醫療為最大事業群，主要透過杏昌生技經銷血液透析醫療器材與耗材。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.2906#e3
+  - tw.2906#e5
+  - tw.2906#e10
+  confidence: ai_cross_checked
+  source: classification
+  stage: channel
+  tier: downstream
+  stage_role: primary
 - id: tw.3176
   detail: 新藥及疫苗開發占營收38.74%為最大項目，另有疫苗與學名藥製造及代檢服務。
   as_of: '2026-10-20'
@@ -354,6 +549,54 @@ members:
   stage: rnd
   tier: upstream
   stage_role: also
+- id: tw.4106
+  detail: 最大營收類別為壓瘡照護，占45%；從事減壓產品研發製造，並透過海外子公司經營醫材買賣。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.4106#e2
+  - tw.4106#e3
+  - tw.4106#e8
+  - tw.4106#e9
+  - tw.4106#e10
+  - tw.4106#e11
+  - tw.4106#e12
+  confidence: ai_cross_checked
+  source: classification
+  stage: manufacturing
+  tier: midstream
+  stage_role: primary
+- id: tw.4106
+  detail: 最大營收類別為壓瘡照護，占45%；從事減壓產品研發製造，並透過海外子公司經營醫材買賣。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.4106#e2
+  - tw.4106#e3
+  - tw.4106#e8
+  - tw.4106#e9
+  - tw.4106#e10
+  - tw.4106#e11
+  - tw.4106#e12
+  confidence: ai_cross_checked
+  source: classification
+  stage: channel
+  tier: downstream
+  stage_role: also
+- id: tw.4106
+  detail: 最大營收類別為壓瘡照護，占45%；從事減壓產品研發製造，並透過海外子公司經營醫材買賣。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.4106#e2
+  - tw.4106#e3
+  - tw.4106#e8
+  - tw.4106#e9
+  - tw.4106#e10
+  - tw.4106#e11
+  - tw.4106#e12
+  confidence: ai_cross_checked
+  source: classification
+  stage: rnd
+  tier: upstream
+  stage_role: also
 - id: tw.4107
   detail: 主要營收來自導管、血液迴路管及藥用軟袋等醫療耗材製造，另有研發及子公司醫材買賣業務。
   as_of: '2026-10-20'
@@ -440,6 +683,42 @@ members:
   source: classification
   stage: manufacturing
   tier: midstream
+  stage_role: also
+- id: tw.4120
+  detail: 主要營收來自西藥及醫美產品代理銷售，子公司另從事新藥研發與製造。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.4120#e2
+  - tw.4120#e3
+  - tw.4120#e7
+  confidence: ai_cross_checked
+  source: classification
+  stage: channel
+  tier: downstream
+  stage_role: primary
+- id: tw.4120
+  detail: 主要營收來自西藥及醫美產品代理銷售，子公司另從事新藥研發與製造。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.4120#e2
+  - tw.4120#e3
+  - tw.4120#e7
+  confidence: ai_cross_checked
+  source: classification
+  stage: manufacturing
+  tier: midstream
+  stage_role: also
+- id: tw.4120
+  detail: 主要營收來自西藥及醫美產品代理銷售，子公司另從事新藥研發與製造。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.4120#e2
+  - tw.4120#e3
+  - tw.4120#e7
+  confidence: ai_cross_checked
+  source: classification
+  stage: rnd
+  tier: upstream
   stage_role: also
 - id: tw.4123
   detail: 全年西藥占營收60.06%，以口服液劑及益生菌代工為主，另開發新藥及供應菌粉。
@@ -659,6 +938,30 @@ members:
   stage: rnd
   tier: upstream
   stage_role: also
+- id: tw.4168
+  detail: 營收以抗體CDMO委託技術服務為主，涵蓋GMP製造，另有ADC及生物相似藥研發與授權。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.4168#e02
+  - tw.4168#e03
+  - tw.4168#e05
+  confidence: ai_cross_checked
+  source: classification
+  stage: manufacturing
+  tier: midstream
+  stage_role: primary
+- id: tw.4168
+  detail: 營收以抗體CDMO委託技術服務為主，涵蓋GMP製造，另有ADC及生物相似藥研發與授權。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.4168#e02
+  - tw.4168#e03
+  - tw.4168#e05
+  confidence: ai_cross_checked
+  source: classification
+  stage: rnd
+  tier: upstream
+  stage_role: also
 - id: tw.4169
   detail: 藥品及醫材占營收88.86%，主要透過銷售代理取得收入，另開發新藥及肝癌檢測平台。
   as_of: '2026-10-18'
@@ -711,6 +1014,52 @@ members:
   stage: rnd
   tier: upstream
   stage_role: also
+- id: tw.4178
+  detail: 主要營收來自臍帶血與幹細胞私存服務，另製造臍帶血來源細胞製劑。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.4178#e2
+  - tw.4178#e3
+  - tw.4178#e5
+  confidence: ai_cross_checked
+  source: classification
+  stage: channel
+  tier: downstream
+  stage_role: primary
+- id: tw.4178
+  detail: 主要營收來自臍帶血與幹細胞私存服務，另製造臍帶血來源細胞製劑。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.4178#e2
+  - tw.4178#e3
+  - tw.4178#e5
+  confidence: ai_cross_checked
+  source: classification
+  stage: manufacturing
+  tier: midstream
+  stage_role: also
+- id: tw.4726
+  detail: 主要營收來自生物藥委託開發製造服務，提供GMP生產與無菌充填，並涵蓋細胞株及製程開發。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.4726#e1
+  - tw.4726#e7
+  confidence: ai_cross_checked
+  source: classification
+  stage: manufacturing
+  tier: midstream
+  stage_role: primary
+- id: tw.4726
+  detail: 主要營收來自生物藥委託開發製造服務，提供GMP生產與無菌充填，並涵蓋細胞株及製程開發。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.4726#e1
+  - tw.4726#e7
+  confidence: ai_cross_checked
+  source: classification
+  stage: rnd
+  tier: upstream
+  stage_role: also
 - id: tw.4728
   detail: 膠原蛋白植入劑占營收99.69%，以醫材製造為主，另供應生醫級膠原蛋白原料。
   as_of: '2026-10-15'
@@ -743,6 +1092,17 @@ members:
   evidence:
   - tw.4736#e02
   - tw.4736#e05
+  confidence: ai_cross_checked
+  source: classification
+  stage: manufacturing
+  tier: midstream
+  stage_role: primary
+- id: tw.4737
+  detail: 血糖檢測試片占營收61%，以血糖檢測耗材及儀器製造為主。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.4737#e1
+  - tw.4737#e2
   confidence: ai_cross_checked
   source: classification
   stage: manufacturing
@@ -812,6 +1172,29 @@ members:
   stage: channel
   tier: downstream
   stage_role: also
+- id: tw.4905
+  detail: 醫療包材占營收75%，由子公司欣德芮製造滅菌包材，提供醫療設備包裝解決方案。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.4905#e1
+  - tw.4905#e6
+  - tw.4905#e11
+  confidence: ai_cross_checked
+  source: classification
+  stage: manufacturing
+  tier: midstream
+  stage_role: primary
+- id: tw.4934
+  detail: 生技業務由子公司採購隱形眼鏡並以自有品牌銷售，屬通路階段。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.4934#e2
+  - tw.4934#e4
+  confidence: ai_cross_checked
+  source: classification
+  stage: channel
+  tier: downstream
+  stage_role: primary
 - id: tw.5312
   detail: 營收全數歸入眼鏡業務，主營眼鏡連鎖通路、隱形眼鏡銷售與驗光配鏡服務。
   as_of: '2026-10-20'
@@ -859,6 +1242,30 @@ members:
   source: classification
   stage: rnd
   tier: upstream
+  stage_role: also
+- id: tw.6461
+  detail: 勞務收入高於商品銷貨，且主要來自產品研究服務；另具吸入藥製造與生產服務。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.6461#e5
+  - tw.6461#e6
+  - tw.6461#e7
+  confidence: ai_cross_checked
+  source: classification
+  stage: rnd
+  tier: upstream
+  stage_role: primary
+- id: tw.6461
+  detail: 勞務收入高於商品銷貨，且主要來自產品研究服務；另具吸入藥製造與生產服務。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.6461#e5
+  - tw.6461#e6
+  - tw.6461#e7
+  confidence: ai_cross_checked
+  source: classification
+  stage: manufacturing
+  tier: midstream
   stage_role: also
 - id: tw.6469
   detail: 經營連鎖藥局，銷售婦嬰用品、藥品及健康照護商品，屬下游零售與調劑服務。
@@ -934,6 +1341,18 @@ members:
   stage: channel
   tier: downstream
   stage_role: also
+- id: tw.6492
+  detail: 核心業務為小分子抗癌新藥研發，營收來自技術諮詢，尚無商業化生產銷售。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.6492#e1
+  - tw.6492#e2
+  - tw.6492#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: rnd
+  tier: upstream
+  stage_role: primary
 - id: tw.6499
   detail: 上半年收入全來自醫療零件製銷及CDMO，另開發微創治療醫材。
   as_of: '2026-10-18'
@@ -1083,6 +1502,59 @@ members:
   stage: rnd
   tier: upstream
   stage_role: also
+- id: tw.6598
+  detail: 體外診斷試劑占營收50.17%，搭配分析儀產品，研究資料定位為中游醫療器材。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.6598#e02
+  - tw.6598#e06
+  - tw.6598#e08
+  - tw.6598#e09
+  - tw.6598#e10
+  confidence: ai_cross_checked
+  source: classification
+  stage: manufacturing
+  tier: midstream
+  stage_role: primary
+- id: tw.6612
+  detail: 醫材及射出成型銷售占營收61%為主，另有技術授權、表面處理技術服務及眼科器械通路。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.6612#e_revenue
+  - tw.6612#e_iol
+  - tw.6612#e_mbi
+  - tw.6612#e_astvc
+  confidence: ai_cross_checked
+  source: classification
+  stage: manufacturing
+  tier: midstream
+  stage_role: primary
+- id: tw.6612
+  detail: 醫材及射出成型銷售占營收61%為主，另有技術授權、表面處理技術服務及眼科器械通路。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.6612#e_revenue
+  - tw.6612#e_iol
+  - tw.6612#e_mbi
+  - tw.6612#e_astvc
+  confidence: ai_cross_checked
+  source: classification
+  stage: channel
+  tier: downstream
+  stage_role: also
+- id: tw.6612
+  detail: 醫材及射出成型銷售占營收61%為主，另有技術授權、表面處理技術服務及眼科器械通路。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.6612#e_revenue
+  - tw.6612#e_iol
+  - tw.6612#e_mbi
+  - tw.6612#e_astvc
+  confidence: ai_cross_checked
+  source: classification
+  stage: rnd
+  tier: upstream
+  stage_role: also
 - id: tw.6617
   detail: 主要營收來自已上市PTS302藥品銷售，另持續研發抗癌新藥。
   as_of: '2026-10-18'
@@ -1119,6 +1591,18 @@ members:
   stage: rnd
   tier: upstream
   stage_role: primary
+- id: tw.6657
+  detail: 科研試劑占營收61.99%，供應研究用途，另提供實驗分析服務並開發新藥，屬上游。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.6657#e1
+  - tw.6657#e2
+  - tw.6657#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: rnd
+  tier: upstream
+  stage_role: primary
 - id: tw.6712
   detail: 以細胞儲存及製備作業為主，另研發細胞療法並提供基因檢測。
   as_of: '2026-10-18'
@@ -1150,6 +1634,34 @@ members:
   - tw.6712#e1
   - tw.6712#e6
   - tw.6712#e8
+  confidence: ai_cross_checked
+  source: classification
+  stage: rnd
+  tier: upstream
+  stage_role: also
+- id: tw.6733
+  detail: 主要營收來自骨科醫材與藥品產品，屬製造端；另開發骨生長因子與生物性骨材。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.6733#e2
+  - tw.6733#e3
+  - tw.6733#e4
+  - tw.6733#e7
+  - tw.6733#e8
+  confidence: ai_cross_checked
+  source: classification
+  stage: manufacturing
+  tier: midstream
+  stage_role: primary
+- id: tw.6733
+  detail: 主要營收來自骨科醫材與藥品產品，屬製造端；另開發骨生長因子與生物性骨材。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.6733#e2
+  - tw.6733#e3
+  - tw.6733#e4
+  - tw.6733#e7
+  - tw.6733#e8
   confidence: ai_cross_checked
   source: classification
   stage: rnd
@@ -1188,6 +1700,71 @@ members:
   stage: rnd
   tier: upstream
   stage_role: primary
+- id: tw.6794
+  detail: 最大收入為幹細胞分泌物，屬生物原料；另有新藥研發、細胞CDMO及治療服務。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.6794#e2
+  - tw.6794#e3
+  - tw.6794#e4
+  - tw.6794#e5
+  confidence: ai_cross_checked
+  source: classification
+  stage: rnd
+  tier: upstream
+  stage_role: primary
+- id: tw.6794
+  detail: 最大收入為幹細胞分泌物，屬生物原料；另有新藥研發、細胞CDMO及治療服務。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.6794#e2
+  - tw.6794#e3
+  - tw.6794#e4
+  - tw.6794#e5
+  confidence: ai_cross_checked
+  source: classification
+  stage: channel
+  tier: downstream
+  stage_role: also
+- id: tw.6794
+  detail: 最大收入為幹細胞分泌物，屬生物原料；另有新藥研發、細胞CDMO及治療服務。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.6794#e2
+  - tw.6794#e3
+  - tw.6794#e4
+  - tw.6794#e5
+  confidence: ai_cross_checked
+  source: classification
+  stage: manufacturing
+  tier: midstream
+  stage_role: also
+- id: tw.6838
+  detail: 授權收入占50.17%為最大來源，核心為新藥研發，另有藥品銷售收入。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.6838#e1
+  - tw.6838#e2
+  - tw.6838#e5
+  - tw.6838#e7
+  confidence: ai_cross_checked
+  source: classification
+  stage: rnd
+  tier: upstream
+  stage_role: primary
+- id: tw.6838
+  detail: 授權收入占50.17%為最大來源，核心為新藥研發，另有藥品銷售收入。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.6838#e1
+  - tw.6838#e2
+  - tw.6838#e5
+  - tw.6838#e7
+  confidence: ai_cross_checked
+  source: classification
+  stage: channel
+  tier: downstream
+  stage_role: also
 - id: tw.6841
   detail: 業務為醫療影像AI軟體與雲端平台，未揭露分項營收，無法確認主要階段。
   as_of: '2026-10-20'
@@ -1213,6 +1790,80 @@ members:
   stage: manufacturing
   tier: midstream
   stage_role: primary
+- id: tw.6875
+  detail: 核心業務為長效吸入新藥及藥械組合研發；銷貨雖為主要收入，但未交代品項及製造或通路性質。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.6875#e1
+  - tw.6875#e2
+  - tw.6875#e3
+  - tw.6875#e9
+  confidence: ai_cross_checked
+  source: classification
+  stage: rnd
+  tier: upstream
+  stage_role: primary
+- id: tw.6885
+  detail: 基因定序檢測技術服務占合併營收65.64%為主，另有新藥轉譯開發服務及新藥研發。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.6885#e7
+  - tw.6885#e8
+  confidence: ai_cross_checked
+  source: classification
+  stage: channel
+  tier: downstream
+  stage_role: primary
+- id: tw.6885
+  detail: 基因定序檢測技術服務占合併營收65.64%為主，另有新藥轉譯開發服務及新藥研發。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.6885#e7
+  - tw.6885#e8
+  confidence: ai_cross_checked
+  source: classification
+  stage: rnd
+  tier: upstream
+  stage_role: also
+- id: tw.6918
+  detail: 骨科創傷及矯正醫材占營收73.86%，以製造為主，另有醫材研發及代理銷售業務。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.6918#e_revenue_trauma
+  - tw.6918#e_trauma
+  - tw.6918#e_correction
+  - tw.6918#e_manufacturing
+  confidence: ai_cross_checked
+  source: classification
+  stage: manufacturing
+  tier: midstream
+  stage_role: primary
+- id: tw.6918
+  detail: 骨科創傷及矯正醫材占營收73.86%，以製造為主，另有醫材研發及代理銷售業務。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.6918#e_revenue_trauma
+  - tw.6918#e_trauma
+  - tw.6918#e_correction
+  - tw.6918#e_manufacturing
+  confidence: ai_cross_checked
+  source: classification
+  stage: channel
+  tier: downstream
+  stage_role: also
+- id: tw.6918
+  detail: 骨科創傷及矯正醫材占營收73.86%，以製造為主，另有醫材研發及代理銷售業務。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.6918#e_revenue_trauma
+  - tw.6918#e_trauma
+  - tw.6918#e_correction
+  - tw.6918#e_manufacturing
+  confidence: ai_cross_checked
+  source: classification
+  stage: rnd
+  tier: upstream
+  stage_role: also
 - id: tw.6919
   detail: 已實現收入全來自健康食品銷售，另自主研發醫美及代謝相關新藥。
   as_of: '2026-10-14'
@@ -1234,6 +1885,43 @@ members:
   - tw.6919#e04
   - tw.6919#e05
   - tw.6919#e06
+  confidence: ai_cross_checked
+  source: classification
+  stage: rnd
+  tier: upstream
+  stage_role: also
+- id: tw.6931
+  detail: 長期照顧服務占營收94.51%，提供住宿式、社區式及居家式照顧，屬下游醫療照護服務。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.6931#e02
+  - tw.6931#e03
+  confidence: ai_cross_checked
+  source: classification
+  stage: channel
+  tier: downstream
+  stage_role: primary
+- id: tw.6934
+  detail: 最新半年銷貨收入高於勞務收入，以霧化醫材製造為主，另提供委託開發與測試服務。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.6934#e_product_pulmogine
+  - tw.6934#e_manufacturing
+  - tw.6934#e_revenue_header
+  - tw.6934#e_revenue_2026
+  confidence: ai_cross_checked
+  source: classification
+  stage: manufacturing
+  tier: midstream
+  stage_role: primary
+- id: tw.6934
+  detail: 最新半年銷貨收入高於勞務收入，以霧化醫材製造為主，另提供委託開發與測試服務。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.6934#e_product_pulmogine
+  - tw.6934#e_manufacturing
+  - tw.6934#e_revenue_header
+  - tw.6934#e_revenue_2026
   confidence: ai_cross_checked
   source: classification
   stage: rnd
@@ -1273,6 +1961,18 @@ members:
   stage: rnd
   tier: upstream
   stage_role: also
+- id: tw.6955
+  detail: 精子檢測儀器與耗材占營收96.35%，核心業務為自行開發及製造生殖醫療器材。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.6955#e1
+  - tw.6955#e8
+  - tw.6955#e9
+  confidence: ai_cross_checked
+  source: classification
+  stage: manufacturing
+  tier: midstream
+  stage_role: primary
 - id: tw.7799
   detail: 治療照射服務占56.94%為最大收入，另開發BNCT設備、軟體及藥物技術。
   as_of: '2026-10-14'
@@ -1306,6 +2006,19 @@ members:
   stage: rnd
   tier: upstream
   stage_role: primary
+- id: tw.8403
+  detail: 藥品、醫材及科技材料供應占營收81.02%，以經銷代理為主，另提供健康管理及設備租賃。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.8403#e2
+  - tw.8403#e5
+  - tw.8403#e6
+  - tw.8403#e7
+  confidence: ai_cross_checked
+  source: classification
+  stage: channel
+  tier: downstream
+  stage_role: primary
 - id: tw.8436
   detail: 保健食品占營收86.5%，採CDMO模式提供配方研發與產品製造。
   as_of: '2026-10-18'
@@ -1330,4 +2043,30 @@ members:
   stage: rnd
   tier: upstream
   stage_role: also
-as_of: '2026-10-20'
+- id: tw.9103
+  detail: 製造部門占營收76.26%，以醫療耗材與防護用品為主，另有醫院織品服務及通路。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.9103#e2
+  - tw.9103#e3
+  - tw.9103#e4
+  - tw.9103#e5
+  confidence: ai_cross_checked
+  source: classification
+  stage: manufacturing
+  tier: midstream
+  stage_role: primary
+- id: tw.9103
+  detail: 製造部門占營收76.26%，以醫療耗材與防護用品為主，另有醫院織品服務及通路。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.9103#e2
+  - tw.9103#e3
+  - tw.9103#e4
+  - tw.9103#e5
+  confidence: ai_cross_checked
+  source: classification
+  stage: channel
+  tier: downstream
+  stage_role: also
+as_of: '2026-10-23'

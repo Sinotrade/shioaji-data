@@ -8,13 +8,128 @@ industry:
   l0_code: '22'
   l0_name: 生技醫療業
   l0_name_en: Biotechnology and Medical Care
-primary_chain_position: unknown
+  l1: health
+  l1_name: 醫療保健
+  l1_name_en: Healthcare
+  l2: health.pharma
+  l2_name: 製藥與生技
+  l2_name_en: Pharmaceuticals & Biotech
+  l3: bio.cell
+  l3_name: 再生醫療與細胞治療
+  l3_name_en: Regenerative Medicine & Cell Therapy
+chain: chain.biotech
+chain_stage:
+  agreement: both
+  also:
+  - stage: manufacturing
+    stage_name: 製造與代工
+    tier: midstream
+  reason: 主要營收來自臍帶血與幹細胞私存服務，另製造臍帶血來源細胞製劑。
+  stage: channel
+  stage_name: 通路與醫療服務
+  tier: downstream
+primary_chain_position: downstream
+summary_short: 主要靠臍帶血與幹細胞私存服務取得營收，另提供公庫配對及細胞製劑。
+summary_long: 永笙-KY以臍帶血及幹細胞相關業務為核心，營收主要來自細胞私存服務。旗下台灣永生細胞提供新生兒臍帶血採集、處理與長期保存服務；集團另提供HLA基因分型檢測、公捐臍帶血庫預配對及公庫資源方案。美國子公司StemCyte, Inc.為REGENECYTE的申請人及製造商，該臍帶血來源造血前驅細胞製劑已取得美國FDA生物製劑許可，用於非親屬捐贈者移植程序中的造血與免疫系統重建。其業務涵蓋細胞保存服務與細胞產品製造。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_private_storage
+  name: 細胞私存服務
+  period: '2025'
+  revenue_share_pct: null
+relations:
+  subsidiaries:
+  - as_of: '2025-08-15'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 美國永生子公司
+    details:
+    - 美國永生子公司
+    edge: e787eea789aaa
+    evidence_level: primary
+    id: org.stemcyte-inc
+    name: StemCyte, Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-10-17'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 台灣永生子公司
+    details:
+    - 台灣永生子公司
+    edge: e29b30ea935f3
+    evidence_level: primary
+    id: org.stemcyte-taiwan
+    name: 台灣永生細胞股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://stemcytebio.com/
 tax_id: '60085392'
 incorporated: '2013-06-26'
 listed: '2026-04-30'
 foreign_registration: KY 開曼群島
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4178#e2:
+    locator: 末段，2025年營收組成
+    published_date: '2026-04-08'
+    publisher: 經濟日報
+    quote_check: found
+    title: 永笙暫定承銷價21元、4月下旬上市 細胞三箭助攻營運 今年拚授權
+    url: https://money.udn.com/money/story/5607/9430081
+  tw.4178#e3:
+    locator: 安心方案／臍帶血細胞儲存服務
+    published_date: null
+    publisher: 台灣永生細胞股份有限公司
+    quote_check: found
+    title: 台灣永生StemCyte
+    url: https://www.stemcyte.com.tw/
+  tw.4178#e4:
+    locator: 頁尾營運公司名稱
+    published_date: null
+    publisher: 台灣永生細胞股份有限公司
+    quote_check: found
+    title: 台灣永生StemCyte
+    url: https://www.stemcyte.com.tw/
+  tw.4178#e5:
+    locator: 產品基本資料
+    published_date: null
+    publisher: U.S. Food and Drug Administration
+    quote_check: found
+    title: REGENECYTE
+    url: https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/regenecyte
+  tw.4178#e6:
+    locator: REGENECYTE取得美國FDA生物製劑許可／產品資料表
+    published_date: null
+    publisher: 永笙生技
+    quote_check: found
+    title: 美國FDA核准臍帶血產品
+    url: https://stemcytebio.com/fda-approved-cord-blood-product/
+  tw.4178#e7:
+    locator: 二大服務內容／HLA檢測配對服務與公庫臍帶血資源方案
+    published_date: null
+    publisher: 永笙生技
+    quote_check: found
+    title: 臍帶血公庫配對服務
+    url: https://stemcytebio.com/products-and-services/public-cord-blood-bank-hla-matching-service/
+  tw.4178#e8:
+    locator: 公告說明第2至4點
+    published_date: '2025-08-15'
+    publisher: 公開資訊觀測站重大訊息公告／MoneyDJ刊載
+    quote_check: found
+    title: 永笙-KY代重要子公司StemCyte, Inc.公告提出REGENECYTE治療長新冠症候群三期臨床試驗申請
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=7b00d4c8-1e6c-4ef6-a3a5-55c4043049d2
+  tw.4178#e9:
+    locator: 公告主旨
+    published_date: '2025-10-17'
+    publisher: 公開資訊觀測站重大訊息公告／MoneyDJ刊載
+    quote_check: found
+    title: 永笙-KY代重要子公司台灣永生公告會計主管異動案
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f82b3050-5abd-4da7-bf9e-f47b3e61964d

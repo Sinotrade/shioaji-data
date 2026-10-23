@@ -8,12 +8,196 @@ industry:
   l0_code: '31'
   l0_name: 其他電子業
   l0_name_en: Other Electronic
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.other
+  l3_name: 其他電子零組件
+  l3_name_en: Other Electronic Components
+primary_chain_position: midstream
+summary_short: 以金屬與塑膠零組件表面處理及電鍍加工服務取得收入。
+summary_long: 匯鑽科技以金屬與塑膠零組件的表面處理研發及加工服務為主要業務，2025年加工收入占營收100%。服務涵蓋磁碟機、連接器、汽車、通訊、醫療及3C零組件，製程包括化學鍍鎳、珍珠鎳與連續鍍金、銀。官網亦列示半導體導線架、端子、料帶及LED支架電鍍代工。液冷相關項目包括水冷接頭、分岐管，以及AI伺服器冷板電鍍技術開發。集團透過中國深圳、泰國及越南等子公司經營表面處理業務。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_processing
+  name: 加工收入
+  period: '2025'
+  revenue_share_pct: 100
+main_theme: theme.ai_server
+themes:
+- also: []
+  stage: components
+  theme: theme.ai_server
+  tier: midstream
+- also: []
+  stage: parts
+  theme: theme.liquid_cooling
+  tier: upstream
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持有的深圳營運子公司
+    details:
+    - 間接持有的深圳營運子公司
+    edge: e40b5ac2ba341
+    evidence_level: primary
+    id: org.dingqun-technology-shenzhen
+    name: 頂群科技（深圳）有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有的投資控股子公司
+    details:
+    - 直接持有的投資控股子公司
+    edge: e9833e74bf370
+    evidence_level: primary
+    id: org.superior-plating-corp
+    name: Superior Plating Corp.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持有的深圳表面處理子公司
+    details:
+    - 間接持有的深圳表面處理子公司
+    edge: e41914b722fde
+    evidence_level: primary
+    id: org.superior-plating-shenzhen
+    name: 匯鑽實業（深圳）有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持有的泰國表面處理子公司
+    details:
+    - 間接持有的泰國表面處理子公司
+    edge: e487aeed41ca6
+    evidence_level: primary
+    id: org.superior-plating-technology-thailand
+    name: Superior Plating Technology (Thailand) Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有的越南表面處理子公司
+    details:
+    - 直接持有的越南表面處理子公司
+    edge: e4a6b0579a201
+    evidence_level: primary
+    id: org.superior-technology-vietnam
+    name: Superior Technology Vietnam Co., Ltd
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://superiortec.com/
 tax_id: '29061764'
 incorporated: '2008-09-24'
 listed: '2015-03-30'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.8431#e1:
+    locator: 印刷頁69，營業比重；單位為新台幣仟元、%
+    published_date: null
+    publisher: 匯鑽科技股份有限公司
+    quote_check: found
+    title: 匯鑽科技股份有限公司114年度年報
+    url: https://superiortec.com/articles/dl/180
+  tw.8431#e10:
+    locator: 印刷頁10，附註四、3（2）列入合併財務報告之子公司
+    published_date: null
+    publisher: 匯鑽科技股份有限公司
+    quote_check: found
+    title: 匯鑽科技股份有限公司及子公司115年第二季合併財務報告
+    url: https://superiortec.com/articles/dl/189
+  tw.8431#e11:
+    locator: 印刷頁11，附註四、3（2）列入合併財務報告之子公司，SPTH Seychelles持有列
+    published_date: null
+    publisher: 匯鑽科技股份有限公司
+    quote_check: found
+    title: 匯鑽科技股份有限公司及子公司115年第二季合併財務報告
+    url: https://superiortec.com/articles/dl/189
+  tw.8431#e12:
+    locator: 印刷頁10，附註四、3（2）列入合併財務報告之子公司
+    published_date: null
+    publisher: 匯鑽科技股份有限公司
+    quote_check: found
+    title: 匯鑽科技股份有限公司及子公司115年第二季合併財務報告
+    url: https://superiortec.com/articles/dl/189
+  tw.8431#e2:
+    locator: 公司介紹／主要業務
+    published_date: null
+    publisher: 匯鑽科技股份有限公司
+    quote_check: found
+    title: 公司介紹
+    url: https://superiortec.com/about-superior-company-intro
+  tw.8431#e3:
+    locator: 印刷頁69，公司目前之商品（服務）項目
+    published_date: null
+    publisher: 匯鑽科技股份有限公司
+    quote_check: found
+    title: 匯鑽科技股份有限公司114年度年報
+    url: https://superiortec.com/articles/dl/180
+  tw.8431#e4:
+    locator: 頁尾／匯鑽集團
+    published_date: null
+    publisher: 匯鑽科技股份有限公司
+    quote_check: found
+    title: 匯鑽科技股份有限公司
+    url: https://superiortec.com/
+  tw.8431#e5:
+    locator: 水冷散熱分岐管／描述
+    published_date: null
+    publisher: 匯鑽科技股份有限公司
+    quote_check: found
+    title: 表面處理製程－水冷散熱分岐管
+    url: https://superiortec.com/surface-process-product-detail/22
+  tw.8431#e6:
+    locator: 水冷接頭／描述
+    published_date: null
+    publisher: 匯鑽科技股份有限公司
+    quote_check: found
+    title: 表面處理製程－水冷接頭
+    url: https://superiortec.com/surface-process-product-detail/21
+  tw.8431#e7:
+    locator: 印刷頁4，研究發展狀況
+    published_date: null
+    publisher: 匯鑽科技股份有限公司
+    quote_check: found
+    title: 匯鑽科技股份有限公司114年度年報
+    url: https://superiortec.com/articles/dl/180
+  tw.8431#e8:
+    locator: 印刷頁10，附註四、3（2）列入合併財務報告之子公司
+    published_date: null
+    publisher: 匯鑽科技股份有限公司
+    quote_check: found
+    title: 匯鑽科技股份有限公司及子公司115年第二季合併財務報告
+    url: https://superiortec.com/articles/dl/189
+  tw.8431#e9:
+    locator: 印刷頁10，附註四、3（2）列入合併財務報告之子公司
+    published_date: null
+    publisher: 匯鑽科技股份有限公司
+    quote_check: found
+    title: 匯鑽科技股份有限公司及子公司115年第二季合併財務報告
+    url: https://superiortec.com/articles/dl/189

@@ -8,12 +8,188 @@ industry:
   l0_code: '26'
   l0_name: 光電業
   l0_name_en: Optoelectronic
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.optical_component
+  l3_name: 光學元件與鏡頭
+  l3_name_en: Optical Components & Lenses
+primary_chain_position: not_applicable
+summary_short: 以筆電用塑膠光學鏡頭為主要營收來源，另製作醫療、智慧家居與工業鏡頭。
+summary_long: 久禾光電從事塑膠光學鏡頭業務，筆電鏡頭是主要營收來源，應用於高畫質、高屏占比的窄邊框筆電。依2025年4月管理階層揭露，筆電與非筆電營收占比分別為95%及5%。產品另涵蓋生物辨識、醫療、智慧家居及工業鏡頭，應用包括臉部辨識、膠囊內視鏡、掃地機器人、智慧門鈴與無人機。集團透過久禾Samoa及Do Electronic間接持有江蘇久禾光電，由該子公司從事模組製造加工。
+segments:
+- evidence_ids:
+  - e10
+  id: seg_notebook
+  name: 筆電鏡頭
+  period: 2025-04管理階層揭露之當時營收結構
+  revenue_share_pct: 95
+- evidence_ids:
+  - e10
+  id: seg_non_notebook
+  name: 非筆電鏡頭
+  period: 2025-04管理階層揭露之當時營收結構
+  revenue_share_pct: 5
+main_theme: theme.robotics
+themes:
+- also: []
+  stage: components
+  theme: theme.robotics
+  tier: upstream
+- also: []
+  stage: components
+  theme: theme.drone
+  tier: upstream
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過今岳及今弘間接持有之控股子公司
+    details:
+    - 透過今岳及今弘間接持有之控股子公司
+    edge: ef1dfe0d22658
+    evidence_level: primary
+    id: org.do-electronic-technology
+    name: Do Electronic Technology Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接全資持有之模組製造加工子公司
+    details:
+    - 間接全資持有之模組製造加工子公司
+    edge: ee936587cf2aa
+    evidence_level: primary
+    id: org.jiangsu-powertip-image
+    name: 江蘇久禾光電有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%之投資子公司
+    details:
+    - 直接持有100%之投資子公司
+    edge: ecb53ea3e4ad0
+    evidence_level: primary
+    id: org.jinhong-international
+    name: 今弘國際股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%之投資子公司
+    details:
+    - 直接持有100%之投資子公司
+    edge: e24cdf37e8e1c
+    evidence_level: primary
+    id: org.jinyue-international
+    name: 今岳國際股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%之控股子公司
+    details:
+    - 直接持有100%之控股子公司
+    edge: e35623558cf94
+    evidence_level: primary
+    id: org.powertip-image-samoa
+    name: Powertip Image (Samoa) Corp.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://ptic.com.tw/
 tax_id: '80579685'
 incorporated: '2003-11-03'
 listed: '2025-05-20'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6498#e1:
+    locator: 公司簡介首段及公司基本資料
+    published_date: null
+    publisher: 久禾光電股份有限公司
+    quote_check: found
+    title: 久禾光電公司簡介
+    url: https://ptic.com.tw/zh-tw/company.php
+  tw.6498#e10:
+    locator: 記者姚惠茹報導，首段管理階層說明
+    published_date: '2025-04-24'
+    publisher: 科技新報
+    quote_check: found
+    title: 目標未來三年 NB 市占過半！微型化光學鏡頭廠久禾光 5 月底掛牌上櫃
+    url: https://finance.technews.tw/2025/04/24/optical-lens/
+  tw.6498#e2:
+    locator: PDF第17頁，簡報標示第18頁，產品應用
+    published_date: '2026-05-20'
+    publisher: 久禾光電股份有限公司
+    quote_check: found
+    title: 久禾光電2026年第一季法人說明會
+    url: https://ptic.com.tw/-pub/user_files/investor/zh-tw/法說會/本公司受邀參加宏遠證券舉辦之法說會;115年5月20日/檔案下載;中文版;久禾2026法說會簡報.pdf
+  tw.6498#e3:
+    locator: PDF第18頁，簡報標示第19頁，產品應用
+    published_date: '2026-05-20'
+    publisher: 久禾光電股份有限公司
+    quote_check: found
+    title: 久禾光電2026年第一季法人說明會
+    url: https://ptic.com.tw/-pub/user_files/investor/zh-tw/法說會/本公司受邀參加宏遠證券舉辦之法說會;115年5月20日/檔案下載;中文版;久禾2026法說會簡報.pdf
+  tw.6498#e4:
+    locator: PDF第18頁，簡報標示第19頁，產品應用
+    published_date: '2026-05-20'
+    publisher: 久禾光電股份有限公司
+    quote_check: found
+    title: 久禾光電2026年第一季法人說明會
+    url: https://ptic.com.tw/-pub/user_files/investor/zh-tw/法說會/本公司受邀參加宏遠證券舉辦之法說會;115年5月20日/檔案下載;中文版;久禾2026法說會簡報.pdf
+  tw.6498#e5:
+    locator: PDF第18頁，簡報標示第19頁，產品應用
+    published_date: '2026-05-20'
+    publisher: 久禾光電股份有限公司
+    quote_check: found
+    title: 久禾光電2026年第一季法人說明會
+    url: https://ptic.com.tw/-pub/user_files/investor/zh-tw/法說會/本公司受邀參加宏遠證券舉辦之法說會;115年5月20日/檔案下載;中文版;久禾2026法說會簡報.pdf
+  tw.6498#e6:
+    locator: 第10頁，附註四（二）合併基礎之子公司表
+    published_date: '2026-08-07'
+    publisher: 久禾光電股份有限公司
+    quote_check: found
+    title: 久禾光電及子公司115年第二季合併財務報告
+    url: https://ptic.com.tw/-pub/user_files/investor/zh-tw/財務季報/115年Q2合併財報.pdf
+  tw.6498#e7:
+    locator: 第10頁，附註四（二）合併基礎之子公司表
+    published_date: '2026-08-07'
+    publisher: 久禾光電股份有限公司
+    quote_check: found
+    title: 久禾光電及子公司115年第二季合併財務報告
+    url: https://ptic.com.tw/-pub/user_files/investor/zh-tw/財務季報/115年Q2合併財報.pdf
+  tw.6498#e8:
+    locator: 第10頁，附註四（二）合併基礎之子公司表
+    published_date: '2026-08-07'
+    publisher: 久禾光電股份有限公司
+    quote_check: found
+    title: 久禾光電及子公司115年第二季合併財務報告
+    url: https://ptic.com.tw/-pub/user_files/investor/zh-tw/財務季報/115年Q2合併財報.pdf
+  tw.6498#e9:
+    locator: 第10頁，附註四（二）合併基礎之子公司表
+    published_date: '2026-08-07'
+    publisher: 久禾光電股份有限公司
+    quote_check: found
+    title: 久禾光電及子公司115年第二季合併財務報告
+    url: https://ptic.com.tw/-pub/user_files/investor/zh-tw/財務季報/115年Q2合併財報.pdf

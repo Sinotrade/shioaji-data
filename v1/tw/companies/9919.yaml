@@ -8,12 +8,189 @@ industry:
   l0_code: '20'
   l0_name: 其他業
   l0_name_en: Others
-primary_chain_position: unknown
+  l1: consumer
+  l1_name: 消費
+  l1_name_en: Consumer
+  l2: cons.staples
+  l2_name: 民生消費
+  l2_name_en: Consumer Staples
+  l3: consumer.household
+  l3_name: 家用品與個人護理
+  l3_name_en: Household & Personal Products
+primary_chain_position: not_applicable
+summary_short: 製造銷售衛生棉、紙尿褲、濕巾與不織布，營收以衛生棉類為主。
+summary_long: 康那香以衛生用品及不織布產品的製造銷售為主要業務，產品涵蓋衛生棉、護墊、產墊、紙尿褲、濕巾、化妝棉與口罩。2026年上半年產品別營收以衛生棉類占51%為主，其次為濕巾類25%、紙尿褲類13%，不織布及其他占9%、口罩類占2%。自有品牌產品包括康乃馨衛生棉及蘭韻化妝棉。依2025年底合併財報，子公司包括康潔環境保護工程與OUTLOOK INVESTMENT PTE LTD，並透過後者持有康衛生活用品（揚州）有限公司。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_sanitary
+  name: 衛生棉類
+  period: 2026年上半年
+  revenue_share_pct: 51
+- evidence_ids:
+  - e2
+  id: seg_diapers
+  name: 紙尿褲類
+  period: 2026年上半年
+  revenue_share_pct: 13
+- evidence_ids:
+  - e3
+  id: seg_wipes
+  name: 濕巾類
+  period: 2026年上半年
+  revenue_share_pct: 25
+- evidence_ids:
+  - e4
+  id: seg_masks
+  name: 口罩類
+  period: 2026年上半年
+  revenue_share_pct: 2
+- evidence_ids:
+  - e5
+  id: seg_nonwoven_other
+  name: 不織布及其他
+  period: 2026年上半年
+  revenue_share_pct: 9
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: e69d8eb6a0009
+    evidence_level: primary
+    id: org.kang-jie-environmental-engineering
+    name: 康潔環境保護工程股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過OUTLOOK INVESTMENT PTE LTD持有的間接子公司
+    details:
+    - 透過OUTLOOK INVESTMENT PTE LTD持有的間接子公司
+    edge: eb29c9922fa88
+    evidence_level: primary
+    id: org.kang-wei-yangzhou
+    name: 康衛生活用品(揚州)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: ec02e45d3482e
+    evidence_level: primary
+    id: org.outlook-investment-pte-ltd
+    name: OUTLOOK INVESTMENT PTE LTD
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.knh.com.tw/homepage.html
 tax_id: '74231126'
 incorporated: '1971-12-10'
 listed: '1994-11-04'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.9919#e1:
+    locator: 第19頁，產品別營收佔比，2026Q2欄
+    published_date: '2026-10-02'
+    publisher: 康那香企業股份有限公司
+    quote_check: found
+    title: 康那香企業股份有限公司2026年Q2法說會
+    url: https://mopsov.twse.com.tw/nas/STR/991920261002M001.pdf
+  tw.9919#e10:
+    locator: 原文件第19頁，附註四（三），列入合併財務報告之子公司
+    published_date: '2026-03-09'
+    publisher: 康那香企業股份有限公司；FinancialFilings文件鏡像
+    quote_check: unreachable
+    title: 康那香企業股份有限公司及子公司114年度及113年度合併財務報告
+    url: https://financialfilings.com/filings/knh-9919/annual-report/2026/47001634/
+  tw.9919#e11:
+    locator: 原文件第19頁，附註四（三），列入合併財務報告之子公司
+    published_date: '2026-03-09'
+    publisher: 康那香企業股份有限公司；FinancialFilings文件鏡像
+    quote_check: unreachable
+    title: 康那香企業股份有限公司及子公司114年度及113年度合併財務報告
+    url: https://financialfilings.com/filings/knh-9919/annual-report/2026/47001634/
+  tw.9919#e12:
+    locator: 原文件第19頁，附註四（三），列入合併財務報告之子公司
+    published_date: '2026-03-09'
+    publisher: 康那香企業股份有限公司；FinancialFilings文件鏡像
+    quote_check: unreachable
+    title: 康那香企業股份有限公司及子公司114年度及113年度合併財務報告
+    url: https://financialfilings.com/filings/knh-9919/annual-report/2026/47001634/
+  tw.9919#e13:
+    locator: 產品介紹導覽層級
+    published_date: null
+    publisher: 康那香企業股份有限公司
+    quote_check: found
+    title: 衛生棉－康那香企業股份有限公司
+    url: https://www.knh.com.tw/product_10101.html
+  tw.9919#e14:
+    locator: 衛生棉產品列表
+    published_date: null
+    publisher: 康那香企業股份有限公司
+    quote_check: found
+    title: 衛生棉－康那香企業股份有限公司
+    url: https://www.knh.com.tw/product_10101.html
+  tw.9919#e2:
+    locator: 第19頁，產品別營收佔比，2026Q2欄
+    published_date: '2026-10-02'
+    publisher: 康那香企業股份有限公司
+    quote_check: found
+    title: 康那香企業股份有限公司2026年Q2法說會
+    url: https://mopsov.twse.com.tw/nas/STR/991920261002M001.pdf
+  tw.9919#e3:
+    locator: 第19頁，產品別營收佔比，2026Q2欄
+    published_date: '2026-10-02'
+    publisher: 康那香企業股份有限公司
+    quote_check: not_found
+    title: 康那香企業股份有限公司2026年Q2法說會
+    url: https://mopsov.twse.com.tw/nas/STR/991920261002M001.pdf
+  tw.9919#e4:
+    locator: 第19頁，產品別營收佔比，2026Q2欄
+    published_date: '2026-10-02'
+    publisher: 康那香企業股份有限公司
+    quote_check: not_found
+    title: 康那香企業股份有限公司2026年Q2法說會
+    url: https://mopsov.twse.com.tw/nas/STR/991920261002M001.pdf
+  tw.9919#e5:
+    locator: 第19頁，產品別營收佔比，2026Q2欄
+    published_date: '2026-10-02'
+    publisher: 康那香企業股份有限公司
+    quote_check: found
+    title: 康那香企業股份有限公司2026年Q2法說會
+    url: https://mopsov.twse.com.tw/nas/STR/991920261002M001.pdf
+  tw.9919#e6:
+    locator: 第9頁，衛生棉類產品
+    published_date: '2026-10-02'
+    publisher: 康那香企業股份有限公司
+    quote_check: found
+    title: 康那香企業股份有限公司2026年Q2法說會
+    url: https://mopsov.twse.com.tw/nas/STR/991920261002M001.pdf
+  tw.9919#e7:
+    locator: 第10頁，紙尿褲類產品
+    published_date: '2026-10-02'
+    publisher: 康那香企業股份有限公司
+    quote_check: not_found
+    title: 康那香企業股份有限公司2026年Q2法說會
+    url: https://mopsov.twse.com.tw/nas/STR/991920261002M001.pdf
+  tw.9919#e9:
+    locator: 第14頁，產品介紹
+    published_date: '2026-10-02'
+    publisher: 康那香企業股份有限公司
+    quote_check: found
+    title: 康那香企業股份有限公司2026年Q2法說會
+    url: https://mopsov.twse.com.tw/nas/STR/991920261002M001.pdf

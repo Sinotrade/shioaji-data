@@ -8,12 +8,235 @@ industry:
   l0_code: '12'
   l0_name: 汽車工業
   l0_name_en: Automobile
-primary_chain_position: unknown
+  l1: auto
+  l1_name: 汽車與運具
+  l1_name_en: Automotive & Mobility
+  l2: auto.vehicles
+  l2_name: 汽機車
+  l2_name_en: Autos & Motorcycles
+  l3: auto.parts
+  l3_name: 汽車零組件
+  l3_name_en: Auto Parts
+chain: chain.auto
+chain_stage:
+  agreement: both
+  also:
+  - stage: materials
+    stage_name: 材料與電子元件
+    tier: upstream
+  reason: 車燈模組占營收64.44%為最大業務，另有車燈控制器；兼售LED晶粒及元件，跨上游電子元件。
+  stage: parts
+  stage_name: 汽車零組件與模組
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 以LED車燈模組、車燈控制器及LED晶粒元件銷售為主要業務。
+summary_long: 麗清提供LED車燈模組OEM／ODM服務，產品應用涵蓋尾燈、煞車燈、霧燈、轉向燈及日間行車燈。2025年營收中，LED車燈模組占64.44%，車燈控制器占34.31%，LED晶粒及元件占0.32%，其他占0.93%。智能頭燈控制器可自動調節前照燈亮度、模式與方向，公司亦針對新能源車低能耗需求開發照明系統。集團的上海及東莞子公司從事車用照明研發、製造與銷售，美國子公司負責相關產品銷售，墨西哥子公司則從事製造與銷售。
+segments:
+- evidence_ids:
+  - e3
+  id: seg_led_modules
+  name: LED車燈模組
+  period: '2025'
+  revenue_share_pct: 64.44
+- evidence_ids:
+  - e3
+  id: seg_controllers
+  name: 車燈控制器
+  period: '2025'
+  revenue_share_pct: 34.31
+- evidence_ids:
+  - e3
+  id: seg_led_components
+  name: LED晶粒及元件
+  period: '2025'
+  revenue_share_pct: 0.32
+- evidence_ids:
+  - e3
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 0.93
+main_theme: theme.ev
+themes:
+- also: []
+  stage: parts
+  theme: theme.ev
+  tier: midstream
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接全資子公司；美國車用照明銷售
+    details:
+    - 直接全資子公司；美國車用照明銷售
+    edge: ed3a8686cf146
+    evidence_level: primary
+    id: org.laster-tech-automotive-america-incoporated
+    name: Laster Tech Automotive (America) Incoporated
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股99.99%子公司；墨西哥車用照明製造與銷售
+    details:
+    - 直接持股99.99%子公司；墨西哥車用照明製造與銷售
+    edge: e8e7acbe07c88
+    evidence_level: primary
+    id: org.laster-tech-automotive-mexico-inc-s-a-de-c-v
+    name: LASTER TECH AUTOMOTIVE MEXICO INC, S.A .DE C.V.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接全資子公司；照明產品及燈具銷售
+    details:
+    - 間接全資子公司；照明產品及燈具銷售
+    edge: e038b9daac36c
+    evidence_level: primary
+    id: org.laster-tech-thailand-co-ltd
+    name: Laster Tech (Thailand) Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接全資子公司；車用照明研發與製造
+    details:
+    - 間接全資子公司；車用照明研發與製造
+    edge: e34df147a0261
+    evidence_level: primary
+    id: org.麗清汽車科技-上海-有限公司
+    name: 麗清汽車科技(上海)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接全資子公司；LED晶粒及車用照明
+    details:
+    - 間接全資子公司；LED晶粒及車用照明
+    edge: e35f4fcaa1ce5
+    evidence_level: primary
+    id: org.麗清電子科技-東莞-有限公司
+    name: 麗清電子科技(東莞)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.lastertech.com
 tax_id: '16992625'
 incorporated: '1999-08-27'
 listed: '2016-12-19'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3346#e10:
+    locator: 印刷第52及92頁，綜合持股比例與各關係企業持股表；泰國公司及持股鏈
+    published_date: null
+    publisher: 麗清科技股份有限公司
+    quote_check: found
+    title: 麗清科技114年度年報
+    url: https://www.lastertech.com/files/1150602-%E9%BA%97%E6%B8%85%E5%B9%B4%E5%A0%B1%E4%B8%8A%E5%82%B3%E6%AA%94.pdf
+  tw.3346#e11:
+    locator: 印刷第91頁，PDF第95頁，關係企業分工F
+    published_date: null
+    publisher: 麗清科技股份有限公司
+    quote_check: found
+    title: 麗清科技114年度年報
+    url: https://www.lastertech.com/files/1150602-%E9%BA%97%E6%B8%85%E5%B9%B4%E5%A0%B1%E4%B8%8A%E5%82%B3%E6%AA%94.pdf
+  tw.3346#e12:
+    locator: 印刷第52及92頁，美國公司本公司投資與持股比例欄
+    published_date: null
+    publisher: 麗清科技股份有限公司
+    quote_check: found
+    title: 麗清科技114年度年報
+    url: https://www.lastertech.com/files/1150602-%E9%BA%97%E6%B8%85%E5%B9%B4%E5%A0%B1%E4%B8%8A%E5%82%B3%E6%AA%94.pdf
+  tw.3346#e13:
+    locator: 印刷第91頁，PDF第95頁，關係企業分工H
+    published_date: null
+    publisher: 麗清科技股份有限公司
+    quote_check: found
+    title: 麗清科技114年度年報
+    url: https://www.lastertech.com/files/1150602-%E9%BA%97%E6%B8%85%E5%B9%B4%E5%A0%B1%E4%B8%8A%E5%82%B3%E6%AA%94.pdf
+  tw.3346#e14:
+    locator: 印刷第92頁，PDF第96頁，墨西哥公司持股表；麗清持股99.99%
+    published_date: null
+    publisher: 麗清科技股份有限公司
+    quote_check: found
+    title: 麗清科技114年度年報
+    url: https://www.lastertech.com/files/1150602-%E9%BA%97%E6%B8%85%E5%B9%B4%E5%A0%B1%E4%B8%8A%E5%82%B3%E6%AA%94.pdf
+  tw.3346#e15:
+    locator: 印刷第91頁，PDF第95頁，關係企業分工I
+    published_date: null
+    publisher: 麗清科技股份有限公司
+    quote_check: found
+    title: 麗清科技114年度年報
+    url: https://www.lastertech.com/files/1150602-%E9%BA%97%E6%B8%85%E5%B9%B4%E5%A0%B1%E4%B8%8A%E5%82%B3%E6%AA%94.pdf
+  tw.3346#e2:
+    locator: LED模組OEM／ODM應用範圍
+    published_date: null
+    publisher: 麗清科技股份有限公司
+    quote_check: found
+    title: 汽車應用
+    url: https://www.lastertech.com/zh-tw/product-c75938/汽車應用.html
+  tw.3346#e3:
+    locator: 印刷第61頁，PDF第65頁，主要產品之營業比重；114年度欄
+    published_date: null
+    publisher: 麗清科技股份有限公司
+    quote_check: found
+    title: 麗清科技114年度年報
+    url: https://www.lastertech.com/files/1150602-%E9%BA%97%E6%B8%85%E5%B9%B4%E5%A0%B1%E4%B8%8A%E5%82%B3%E6%AA%94.pdf
+  tw.3346#e4:
+    locator: 印刷第62頁，PDF第66頁，智能頭燈控制器
+    published_date: null
+    publisher: 麗清科技股份有限公司
+    quote_check: found
+    title: 麗清科技114年度年報
+    url: https://www.lastertech.com/files/1150602-%E9%BA%97%E6%B8%85%E5%B9%B4%E5%A0%B1%E4%B8%8A%E5%82%B3%E6%AA%94.pdf
+  tw.3346#e5:
+    locator: 印刷第2頁，PDF第6頁，研究發展狀況第2項
+    published_date: null
+    publisher: 麗清科技股份有限公司
+    quote_check: found
+    title: 麗清科技114年度年報
+    url: https://www.lastertech.com/files/1150602-%E9%BA%97%E6%B8%85%E5%B9%B4%E5%A0%B1%E4%B8%8A%E5%82%B3%E6%AA%94.pdf
+  tw.3346#e6:
+    locator: 印刷第52及92頁，綜合持股比例與各關係企業持股表；東莞公司及持股鏈
+    published_date: null
+    publisher: 麗清科技股份有限公司
+    quote_check: found
+    title: 麗清科技114年度年報
+    url: https://www.lastertech.com/files/1150602-%E9%BA%97%E6%B8%85%E5%B9%B4%E5%A0%B1%E4%B8%8A%E5%82%B3%E6%AA%94.pdf
+  tw.3346#e7:
+    locator: 印刷第91頁，PDF第95頁，關係企業分工B
+    published_date: null
+    publisher: 麗清科技股份有限公司
+    quote_check: found
+    title: 麗清科技114年度年報
+    url: https://www.lastertech.com/files/1150602-%E9%BA%97%E6%B8%85%E5%B9%B4%E5%A0%B1%E4%B8%8A%E5%82%B3%E6%AA%94.pdf
+  tw.3346#e8:
+    locator: 印刷第52及92頁，綜合持股比例與各關係企業持股表；上海公司及持股鏈
+    published_date: null
+    publisher: 麗清科技股份有限公司
+    quote_check: found
+    title: 麗清科技114年度年報
+    url: https://www.lastertech.com/files/1150602-%E9%BA%97%E6%B8%85%E5%B9%B4%E5%A0%B1%E4%B8%8A%E5%82%B3%E6%AA%94.pdf
+  tw.3346#e9:
+    locator: 印刷第91頁，PDF第95頁，關係企業分工E
+    published_date: null
+    publisher: 麗清科技股份有限公司
+    quote_check: found
+    title: 麗清科技114年度年報
+    url: https://www.lastertech.com/files/1150602-%E9%BA%97%E6%B8%85%E5%B9%B4%E5%A0%B1%E4%B8%8A%E5%82%B3%E6%AA%94.pdf

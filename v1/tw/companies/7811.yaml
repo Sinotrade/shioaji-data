@@ -8,15 +8,46 @@ industry:
   l0_code: '37'
   l0_name: 運動休閒
   l0_name_en: Sports and Leisure
-primary_chain_position: unknown
+  l1: consumer
+  l1_name: 消費
+  l1_name_en: Consumer
+  l2: cons.discretionary
+  l2_name: 非必需消費
+  l2_name_en: Consumer Discretionary
+  l3: consumer.sports
+  l3_name: 運動用品與健身器材
+  l3_name_en: Sporting Goods & Fitness Equipment
+primary_chain_position: not_applicable
+summary_short: 開發製造競技運動功能鞋、頭盔及身體護具，以功能鞋為主要營收來源。
+summary_long: 民盛主要從事競技及競速運動用功能鞋與護具之開發、製造及銷售，功能鞋產品涵蓋冰上曲棍球靴、越野摩托車靴、花式滑冰靴及競速輪鞋，護具包括頭盔、護胸、手套及護膝。2025年度功能鞋占營收62.37%，護具占30.89%，其他占6.74%，以功能鞋為最大收入來源。集團由本公司與泰國四家子公司提供製造服務，範圍包括產品開發認證、量產製造與安全檢測。復盛應用科技股份有限公司為其母公司。
+segments:
+- evidence_ids:
+  - e_revenue
+  id: functional_footwear
+  name: 功能鞋
+  period: 2025年度
+  revenue_share_pct: 62.37
+- evidence_ids:
+  - e_revenue
+  id: protective_gear
+  name: 護具
+  period: 2025年度
+  revenue_share_pct: 30.89
+- evidence_ids:
+  - e_revenue
+  id: others
+  name: 其他
+  period: 2025年度
+  revenue_share_pct: 6.74
 relations:
   parents:
-  - as_of: '2025-09-30'
+  - as_of: '2026-06-04'
     confidence: ai_cross_checked
     counterparty_shares: []
     detail: 運動裝備子公司
     details:
     - 運動裝備子公司
+    - 母公司
     edge: edde1a3fc67e3
     evidence_level: primary
     id: tw.6670
@@ -24,12 +55,54 @@ relations:
     ranking_basis: unranked
     share_basis: null
     share_pct: null
-    weight: 1
+    weight: 2
 website: www.minson.com.tw
 tax_id: '83063590'
 incorporated: '2020-08-06'
 listed: '2026-03-25'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.7811#e_business:
+    locator: 印刷第49頁，業務內容；PDF第54頁
+    published_date: '2026-05-27'
+    publisher: 民盛應用企業股份有限公司
+    quote_check: unreachable
+    title: 民盛應用企業股份有限公司114年度年報
+    url: https://doc.twse.com.tw/pdf/2025_7811_20260624F04_20261016_022247.pdf
+  tw.7811#e_footwear:
+    locator: PRODUCTS／功能性鞋靴
+    published_date: null
+    publisher: 民盛應用企業股份有限公司
+    quote_check: found
+    title: 民盛應用企業股份有限公司官網
+    url: https://www.minson.com.tw/
+  tw.7811#e_parent:
+    locator: MINSON／民盛應用
+    published_date: null
+    publisher: 民盛應用企業股份有限公司
+    quote_check: found
+    title: 民盛應用企業股份有限公司－集團簡介
+    url: https://www.minson.com.tw/about.php
+  tw.7811#e_parent_current:
+    locator: 第4頁，資本結構
+    published_date: '2026-06-04'
+    publisher: 民盛應用企業股份有限公司
+    quote_check: found
+    title: 民盛應用企業股份有限公司2026年6月4日法人說明會簡報
+    url: https://mopsov.twse.com.tw/nas/STR/781120260604M001.pdf
+  tw.7811#e_protective:
+    locator: 第5頁，產品：從頭到腳的完整產品線布局
+    published_date: '2026-06-04'
+    publisher: 民盛應用企業股份有限公司
+    quote_check: found
+    title: 民盛應用企業股份有限公司2026年6月4日法人說明會簡報
+    url: https://mopsov.twse.com.tw/nas/STR/781120260604M001.pdf
+  tw.7811#e_revenue:
+    locator: 印刷第49頁，營業比重，113年度與114年度對照表；PDF第54頁
+    published_date: '2026-05-27'
+    publisher: 民盛應用企業股份有限公司
+    quote_check: unreachable
+    title: 民盛應用企業股份有限公司114年度年報
+    url: https://doc.twse.com.tw/pdf/2025_7811_20260624F04_20261016_022247.pdf

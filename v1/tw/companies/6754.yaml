@@ -8,12 +8,197 @@ industry:
   l0_code: '38'
   l0_name: 居家生活
   l0_name_en: Home Life
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.construction
+  l2_name: 營建與工程
+  l2_name_en: Engineering & Construction
+  l3: cons.engineering
+  l3_name: 工程與統包
+  l3_name_en: Engineering & EPC
+primary_chain_position: midstream
+summary_short: 以室內空間設計、裝修工程、專案管理與客製化道具生產取得收入。
+summary_long: 匯僑設計提供室內空間設計規劃、工程統籌、專案管理與客製化道具生產服務，工程統籌涵蓋品質、預算、時程及施工安全管理。專案管理服務則從基地分析、法規檢討、設計整合延伸至施工協調，道具生產可依專案需求訂製。2025年營收以商業空間為主，占62.79%；商務空間占17.44%、休閒旅遊占7.03%，其他業務占12.74%。年報列示的集團子公司包括匯僑設計興業、鴻僑傢俱、昱喬設計裝潢（上海）及嘉興鴻僑傢俱。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_commercial
+  name: 商業空間
+  period: '2025'
+  revenue_share_pct: 62.79
+- evidence_ids:
+  - e3
+  id: seg_business
+  name: 商務空間
+  period: '2025'
+  revenue_share_pct: 17.44
+- evidence_ids:
+  - e4
+  id: seg_leisure
+  name: 休閒旅遊
+  period: '2025'
+  revenue_share_pct: 7.03
+- evidence_ids:
+  - e5
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 12.74
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團子公司
+    details:
+    - 集團子公司
+    edge: ef6300d1a3c55
+    evidence_level: primary
+    id: org.匯僑設計興業股份有限公司
+    name: 匯僑設計興業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團子公司及工廠
+    details:
+    - 集團子公司及工廠
+    edge: e810491e3428d
+    evidence_level: primary
+    id: org.嘉興鴻僑傢俱有限公司
+    name: 嘉興鴻僑傢俱有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團子公司
+    details:
+    - 集團子公司
+    edge: e8fce93ed00af
+    evidence_level: primary
+    id: org.昱喬設計裝潢-上海-有限公司
+    name: 昱喬設計裝潢(上海)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團子公司及工廠
+    details:
+    - 集團子公司及工廠
+    edge: e8979f29b6921
+    evidence_level: primary
+    id: org.鴻僑傢俱有限公司
+    name: 鴻僑傢俱有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.richhonour.com
 tax_id: '24775812'
 incorporated: '2014-12-09'
 listed: '2020-08-25'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6754#e10:
+    locator: 服務項目－道具生產
+    published_date: null
+    publisher: 匯僑室內裝修設計股份有限公司
+    quote_check: found
+    title: 關於匯僑－全覽
+    url: https://www.richhonour.com/tw/about/service
+  tw.6754#e11:
+    locator: PDF第2頁，子公司地址及電話
+    published_date: '2026-05-07'
+    publisher: 匯僑室內裝修設計股份有限公司
+    quote_check: found
+    title: 2025年年報
+    url: https://www.richhonour.com/download/0926070819c9013563?open=1
+  tw.6754#e12:
+    locator: PDF第2頁，子公司地址及電話
+    published_date: '2026-05-07'
+    publisher: 匯僑室內裝修設計股份有限公司
+    quote_check: found
+    title: 2025年年報
+    url: https://www.richhonour.com/download/0926070819c9013563?open=1
+  tw.6754#e13:
+    locator: PDF第2頁，子公司地址及電話
+    published_date: '2026-05-07'
+    publisher: 匯僑室內裝修設計股份有限公司
+    quote_check: found
+    title: 2025年年報
+    url: https://www.richhonour.com/download/0926070819c9013563?open=1
+  tw.6754#e14:
+    locator: PDF第2頁，子公司地址及電話
+    published_date: '2026-05-07'
+    publisher: 匯僑室內裝修設計股份有限公司
+    quote_check: found
+    title: 2025年年報
+    url: https://www.richhonour.com/download/0926070819c9013563?open=1
+  tw.6754#e2:
+    locator: 印刷頁51，主要產品之營業比重，114年度欄
+    published_date: '2026-05-07'
+    publisher: 匯僑室內裝修設計股份有限公司
+    quote_check: found
+    title: 2025年年報
+    url: https://www.richhonour.com/download/0926070819c9013563?open=1
+  tw.6754#e3:
+    locator: 印刷頁51，主要產品之營業比重，114年度欄
+    published_date: '2026-05-07'
+    publisher: 匯僑室內裝修設計股份有限公司
+    quote_check: found
+    title: 2025年年報
+    url: https://www.richhonour.com/download/0926070819c9013563?open=1
+  tw.6754#e4:
+    locator: 印刷頁51，主要產品之營業比重，114年度欄
+    published_date: '2026-05-07'
+    publisher: 匯僑室內裝修設計股份有限公司
+    quote_check: found
+    title: 2025年年報
+    url: https://www.richhonour.com/download/0926070819c9013563?open=1
+  tw.6754#e5:
+    locator: 印刷頁51，主要產品之營業比重，114年度欄
+    published_date: '2026-05-07'
+    publisher: 匯僑室內裝修設計股份有限公司
+    quote_check: found
+    title: 2025年年報
+    url: https://www.richhonour.com/download/0926070819c9013563?open=1
+  tw.6754#e6:
+    locator: 印刷頁52，產業之現況與發展
+    published_date: '2026-05-07'
+    publisher: 匯僑室內裝修設計股份有限公司
+    quote_check: found
+    title: 2025年年報
+    url: https://www.richhonour.com/download/0926070819c9013563?open=1
+  tw.6754#e7:
+    locator: 服務項目－設計規劃
+    published_date: null
+    publisher: 匯僑室內裝修設計股份有限公司
+    quote_check: not_found
+    title: 關於匯僑－全覽
+    url: https://www.richhonour.com/tw/about/service
+  tw.6754#e8:
+    locator: 服務項目－工程統籌
+    published_date: null
+    publisher: 匯僑室內裝修設計股份有限公司
+    quote_check: found
+    title: 關於匯僑－全覽
+    url: https://www.richhonour.com/tw/about/service
+  tw.6754#e9:
+    locator: 服務項目－專案管理
+    published_date: null
+    publisher: 匯僑室內裝修設計股份有限公司
+    quote_check: found
+    title: 關於匯僑－全覽
+    url: https://www.richhonour.com/tw/about/service

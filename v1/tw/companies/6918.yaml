@@ -8,12 +8,157 @@ industry:
   l0_code: '22'
   l0_name: 生技醫療業
   l0_name_en: Biotechnology and Medical Care
-primary_chain_position: unknown
+  l1: health
+  l1_name: 醫療保健
+  l1_name_en: Healthcare
+  l2: health.devices
+  l2_name: 醫療器材與服務
+  l2_name_en: Medical Devices & Services
+  l3: med.devices
+  l3_name: 醫療器材
+  l3_name_en: Medical Devices
+chain: chain.biotech
+chain_stage:
+  agreement: both
+  also:
+  - stage: channel
+    stage_name: 通路與醫療服務
+    tier: downstream
+  - stage: rnd
+    stage_name: 研發與原料
+    tier: upstream
+  reason: 骨科創傷及矯正醫材占營收73.86%，以製造為主，另有醫材研發及代理銷售業務。
+  stage: manufacturing
+  stage_name: 製造與代工
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 研發製造骨科創傷及矯正醫材，並銷售代理醫療器材。
+summary_long: 愛派司以骨科創傷與矯正醫材為主要業務，研發與製造骨科醫療器材，並經營代理醫材。2025年創傷及矯正產品占營收73.86%，代理產品及其他占26.14%。創傷產品涵蓋骨板、骨釘、骨針、髓內釘、纜線與外固定器；矯正產品包括膝關節炎及拇趾外翻矯正系統、積層製造手術輔助工具。代理品項包括人工替代骨、止血產品及電動手術工具。集團透過開曼控股子公司持有上海醫材銷售公司，另持有愛立翰生技51%股權。
+segments:
+- evidence_ids:
+  - e_revenue_trauma
+  id: seg_trauma_correction
+  name: 創傷及矯正產品
+  period: '2025'
+  revenue_share_pct: 73.86
+- evidence_ids:
+  - e_revenue_agency
+  id: seg_agency_other
+  name: 代理產品及其他
+  period: '2025'
+  revenue_share_pct: 26.14
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有51%之醫療器材銷售子公司
+    details:
+    - 直接持有51%之醫療器材銷售子公司
+    edge: e3cf702841c02
+    evidence_level: primary
+    id: org.ailihan-biotech
+    name: 愛立翰生技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%之控股子公司
+    details:
+    - 直接持有100%之控股子公司
+    edge: e7d8cdd5724a8
+    evidence_level: primary
+    id: org.aplus-cayman-holding
+    name: A Plus(Cayman) Holding Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過開曼子公司間接持有100%之醫材銷售子公司
+    details:
+    - 透過開曼子公司間接持有100%之醫材銷售子公司
+    edge: ed19949f119f8
+    evidence_level: primary
+    id: org.aplus-shanghai
+    name: 愛湃斯(上海)商貿有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.aplusbio.com/
 tax_id: '24461404'
 incorporated: '2009-09-04'
 listed: '2025-06-10'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6918#e_agency:
+    locator: 公司目前之商品(服務)項目，第(3)項
+    published_date: null
+    publisher: 愛派司生技股份有限公司
+    quote_check: found
+    title: 公司介紹
+    url: https://www.aplusbio.com/tw/about/company
+  tw.6918#e_correction:
+    locator: 公司目前之商品(服務)項目，第(2)項
+    published_date: null
+    publisher: 愛派司生技股份有限公司
+    quote_check: found
+    title: 公司介紹
+    url: https://www.aplusbio.com/tw/about/company
+  tw.6918#e_manufacturing:
+    locator: Asian Curvature／符合亞洲人骨型的亞洲曲率
+    published_date: null
+    publisher: 愛派司生技股份有限公司
+    quote_check: found
+    title: Aplus 愛派司
+    url: https://www.aplusbio.com/tw
+  tw.6918#e_revenue_agency:
+    locator: 營業概況／114年度各產品項目之營業比重，代理產品及其他列，單位為占營業收入淨額比率(%)
+    published_date: null
+    publisher: 愛派司生技股份有限公司
+    quote_check: not_found
+    title: 公司介紹
+    url: https://www.aplusbio.com/tw/about/company
+  tw.6918#e_revenue_trauma:
+    locator: 營業概況／114年度各產品項目之營業比重，創傷及矯正產品列，單位為占營業收入淨額比率(%)
+    published_date: null
+    publisher: 愛派司生技股份有限公司
+    quote_check: not_found
+    title: 公司介紹
+    url: https://www.aplusbio.com/tw/about/company
+  tw.6918#e_sub_ailihan:
+    locator: 第14頁，附註四(三)合併基礎，列入合併財務報告之子公司表
+    published_date: '2026-08-13'
+    publisher: 愛派司生技股份有限公司
+    quote_check: found
+    title: 愛派司生技股份有限公司及子公司民國115年及114年第二季合併財務報告
+    url: https://storage.upage.cool/62bd37bbd08bef0018a02872/2026/08/14/019ffe66-97f5-77c8-8677-4906231ee374.pdf
+  tw.6918#e_sub_cayman:
+    locator: 第14頁，附註四(三)合併基礎，列入合併財務報告之子公司表
+    published_date: '2026-08-13'
+    publisher: 愛派司生技股份有限公司
+    quote_check: found
+    title: 愛派司生技股份有限公司及子公司民國115年及114年第二季合併財務報告
+    url: https://storage.upage.cool/62bd37bbd08bef0018a02872/2026/08/14/019ffe66-97f5-77c8-8677-4906231ee374.pdf
+  tw.6918#e_sub_shanghai:
+    locator: 第14頁，附註四(三)合併基礎，列入合併財務報告之子公司表
+    published_date: '2026-08-13'
+    publisher: 愛派司生技股份有限公司
+    quote_check: found
+    title: 愛派司生技股份有限公司及子公司民國115年及114年第二季合併財務報告
+    url: https://storage.upage.cool/62bd37bbd08bef0018a02872/2026/08/14/019ffe66-97f5-77c8-8677-4906231ee374.pdf
+  tw.6918#e_trauma:
+    locator: 公司目前之商品(服務)項目，第(1)項
+    published_date: null
+    publisher: 愛派司生技股份有限公司
+    quote_check: found
+    title: 公司介紹
+    url: https://www.aplusbio.com/tw/about/company

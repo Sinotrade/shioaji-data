@@ -8,12 +8,94 @@ industry:
   l0_code: '04'
   l0_name: 紡織纖維
   l0_name_en: Textiles
-primary_chain_position: unknown
+  l1: materials
+  l1_name: 原物料
+  l1_name_en: Materials
+  l2: mat.other
+  l2_name: 其他原物料
+  l2_name_en: Other Materials
+  l3: matl.textile_fiber
+  l3_name: 紡織纖維與機能布料
+  l3_name_en: Textiles, Fibers & Functional Fabrics
+chain: chain.textile
+chain_stage:
+  agreement: both
+  also: []
+  reason: 毛條占營收56.78%、防縮毛條占42.53%，主營羊毛纖維材料銷售與功能性加工。
+  stage: fiber
+  stage_name: 纖維與紗
+  tier: upstream
+primary_chain_position: upstream
+summary_short: 以毛條、防縮毛條銷售及功能性加工為主要業務。
+summary_long: 利華以毛條及防縮毛條的銷售與功能性加工為主要業務，另有炭化毛及短毛條等商品。2025年度毛條占營收56.78%，防縮毛條占42.53%，代工及脂肪酸占0.69%，營收主要來自前兩類產品。公司已移除高耗能的洗毛與防縮加工產線，依訂單外購毛條，再進行功能性產品加工。依年報所列產品與加工位置，歸屬紡織產業鏈的纖維與紗階段。年報另將中城投資列為控制公司，原因為指派人員擔任利華董事長。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_wool_tops
+  name: 毛條
+  period: '2025'
+  revenue_share_pct: 56.78
+- evidence_ids:
+  - e2
+  id: seg_shrinkproof_tops
+  name: 防縮毛條
+  period: '2025'
+  revenue_share_pct: 42.53
+- evidence_ids:
+  - e2
+  id: seg_processing_fatty_acids
+  name: 代工及脂肪酸
+  period: '2025'
+  revenue_share_pct: 0.69
+relations:
+  parents:
+  - as_of: '2026-04-20'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 年報揭露之控制公司
+    details:
+    - 年報揭露之控制公司
+    edge: eb39ada0554a4
+    evidence_level: primary
+    id: org.zhongcheng-investment
+    name: 中城投資(股)公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.reward.com.tw
 tax_id: '11311608'
 incorporated: '1964-07-23'
 listed: '1979-04-02'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1423#e2:
+    locator: 印刷頁62，肆、營運概況／一、業務內容／營業比重
+    published_date: '2026-04-20'
+    publisher: 利華羊毛工業股份有限公司
+    quote_check: found
+    title: 利華羊毛工業股份有限公司114年年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51795/2026/RNS/51795_rns_2026-06-24_ba9c1c3a-d091-4b3f-84b1-9d52552dd4a1.pdf
+  tw.1423#e3:
+    locator: 印刷頁62，肆、營運概況／一、業務內容
+    published_date: '2026-04-20'
+    publisher: 利華羊毛工業股份有限公司
+    quote_check: found
+    title: 利華羊毛工業股份有限公司114年年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51795/2026/RNS/51795_rns_2026-06-24_ba9c1c3a-d091-4b3f-84b1-9d52552dd4a1.pdf
+  tw.1423#e4:
+    locator: 印刷頁67，競爭利基及發展遠景／有利之因素C
+    published_date: '2026-04-20'
+    publisher: 利華羊毛工業股份有限公司
+    quote_check: found
+    title: 利華羊毛工業股份有限公司114年年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51795/2026/RNS/51795_rns_2026-06-24_ba9c1c3a-d091-4b3f-84b1-9d52552dd4a1.pdf
+  tw.1423#e5:
+    locator: 印刷頁81，陸、特別記載事項／從屬公司與控制公司間之關係概況
+    published_date: '2026-04-20'
+    publisher: 利華羊毛工業股份有限公司
+    quote_check: found
+    title: 利華羊毛工業股份有限公司114年年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51795/2026/RNS/51795_rns_2026-06-24_ba9c1c3a-d091-4b3f-84b1-9d52552dd4a1.pdf

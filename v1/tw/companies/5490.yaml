@@ -8,12 +8,155 @@ industry:
   l0_code: '25'
   l0_name: 電腦及週邊設備業
   l0_name_en: Computer and Peripheral Equipment
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.hardware
+  l2_name: 電腦與硬體
+  l2_name_en: Computers & Hardware
+  l3: hw.peripheral
+  l3_name: 周邊與輸入裝置
+  l3_name_en: Peripherals & Input Devices
+primary_chain_position: not_applicable
+summary_short: 研發製造支付交易安全設備、電子金融交易終端機及讀寫卡機。
+summary_long: 同亨以交易資料安全保護設備、電子金融交易終端機與讀寫卡機等產品取得營收，其中2026年上半年以交易資料安全保護設備收入最高。主要產品包括取得PCI PTS v7認證的AT150ED智慧支付終端，以及通過PCI PTS 6認證的AP20 Android智慧密碼鍵盤。AT150U用於無人值守自助付款，C10為可整合於POS與自助服務設備的NFC模組；另提供取得PCI MPoC軟體認證的SoftPOS方案。
+segments:
+- evidence_ids:
+  - e1
+  id: seg.security
+  name: 交易資料安全保護設備
+  period: 2026年上半年
+  revenue_share_pct: null
+- evidence_ids:
+  - e1
+  id: seg.terminal
+  name: 電子金融交易終端機
+  period: 2026年上半年
+  revenue_share_pct: null
+- evidence_ids:
+  - e1
+  id: seg.card_reader
+  name: 讀寫卡機
+  period: 2026年上半年
+  revenue_share_pct: null
+- evidence_ids:
+  - e1
+  id: seg.other
+  name: 其他
+  period: 2026年上半年
+  revenue_share_pct: null
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有的海外投資控股子公司
+    details:
+    - 直接持有的海外投資控股子公司
+    edge: e821f405f307d
+    evidence_level: primary
+    id: org.value-investment-xac
+    name: Value Investment Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過Value Investment Ltd.間接持有的子公司
+    details:
+    - 透過Value Investment Ltd.間接持有的子公司
+    edge: eaf66578f22b9
+    evidence_level: primary
+    id: org.xac-suzhou
+    name: 同亨科技(蘇州)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有的研發及市場調查子公司
+    details:
+    - 直接持有的研發及市場調查子公司
+    edge: e8c5ce7ff4e27
+    evidence_level: primary
+    id: org.zakus
+    name: Zakus, Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.xac.com.tw
 tax_id: '84149929'
 incorporated: '1997-04-08'
 listed: '2001-05-14'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.5490#e1:
+    locator: 印刷第22頁，附註六(十六)1收入之細分；欄序為2026第二季、2025第二季、2026上半年、2025上半年，單位為新台幣千元
+    published_date: '2026-08-06'
+    publisher: 同亨科技股份有限公司
+    quote_check: found
+    title: 同亨科技股份有限公司及子公司民國一一五年及一一四年第二季合併財務報告
+    url: https://www.xac.com.tw/download/505/
+  tw.5490#e2:
+    locator: 新聞內文第一段
+    published_date: '2025-08-25'
+    publisher: XAC Automation Corporation
+    quote_check: found
+    title: XAC Announces PCI PTS v7 Certification for AT150ED, Upholding Commitment to Global Security Standard
+    url: https://www.xac.com.tw/news-detail/48/
+  tw.5490#e3:
+    locator: 新聞內文第一段
+    published_date: '2025-05-02'
+    publisher: XAC Automation Corporation
+    quote_check: found
+    title: XAC's AP20 Android Smart PINPad Receives PCI PTS 6 Certification
+    url: https://www.xac.com.tw/news-detail/46/
+  tw.5490#e4:
+    locator: 產品介紹第一段
+    published_date: null
+    publisher: XAC Automation Corporation
+    quote_check: found
+    title: AT150U
+    url: https://www.xac.com.tw/products-detail/at150u/
+  tw.5490#e5:
+    locator: 新聞內文第一段
+    published_date: '2025-03-10'
+    publisher: XAC Automation Corporation
+    quote_check: found
+    title: XAC Introduces EMV-Enabled NFC Module C10 Empowers POS&Self Service Kiosks with SoftPOS Capabilities
+    url: https://www.xac.com.tw/news-detail/43/
+  tw.5490#e6:
+    locator: 新聞內文第一段
+    published_date: '2025-03-19'
+    publisher: XAC Automation Corporation
+    quote_check: found
+    title: XAC SoftPOS Solution Achieves PCI MPoC Software Certification
+    url: https://www.xac.com.tw/news-detail/44/
+  tw.5490#e7:
+    locator: 印刷第10頁，附註四(二)合併基礎，子公司及所持股權百分比表
+    published_date: '2026-08-06'
+    publisher: 同亨科技股份有限公司
+    quote_check: found
+    title: 同亨科技股份有限公司及子公司民國一一五年及一一四年第二季合併財務報告
+    url: https://www.xac.com.tw/download/505/
+  tw.5490#e8:
+    locator: 印刷第10頁，附註四(二)合併基礎，子公司及所持股權百分比表
+    published_date: '2026-08-06'
+    publisher: 同亨科技股份有限公司
+    quote_check: found
+    title: 同亨科技股份有限公司及子公司民國一一五年及一一四年第二季合併財務報告
+    url: https://www.xac.com.tw/download/505/
+  tw.5490#e9:
+    locator: 印刷第10頁，附註四(二)合併基礎，Value持有同亨蘇州股權列
+    published_date: '2026-08-06'
+    publisher: 同亨科技股份有限公司
+    quote_check: found
+    title: 同亨科技股份有限公司及子公司民國一一五年及一一四年第二季合併財務報告
+    url: https://www.xac.com.tw/download/505/

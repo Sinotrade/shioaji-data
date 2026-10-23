@@ -8,12 +8,133 @@ industry:
   l0_code: '22'
   l0_name: 生技醫療業
   l0_name_en: Biotechnology and Medical Care
-primary_chain_position: unknown
+  l1: health
+  l1_name: 醫療保健
+  l1_name_en: Healthcare
+  l2: health.devices
+  l2_name: 醫療器材與服務
+  l2_name_en: Medical Devices & Services
+  l3: med.devices
+  l3_name: 醫療器材
+  l3_name_en: Medical Devices
+chain: chain.biotech
+chain_stage:
+  agreement: both
+  also:
+  - stage: rnd
+    stage_name: 研發與原料
+    tier: upstream
+  reason: 最新半年銷貨收入高於勞務收入，以霧化醫材製造為主，另提供委託開發與測試服務。
+  stage: manufacturing
+  stage_name: 製造與代工
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 開發與銷售呼吸藥物霧化裝置，並提供藥械合一委託開發服務。
+summary_long: 心誠鎂開發、製造與銷售呼吸藥物遞送裝置，並提供藥械合一裝置委託開發服務。主要產品為 Pulmogine 連續式霧化裝置及 AdheResp 智慧型呼吸偵測霧化裝置。2025 年勞務服務占營收 71.16%，銷售產品及其他占 28.84%；2026 年上半年銷貨收入為新台幣 1,610.1 萬元，勞務收入為 371.3 萬元。英國全資子公司 HCMED UK LIMITED 提供測試實驗服務。
+segments:
+- evidence_ids:
+  - e_revenue_header
+  - e_revenue_2026
+  id: sales_2026h1
+  name: 銷貨收入
+  period: 2026-01-01至2026-06-30
+  revenue_share_pct: null
+- evidence_ids:
+  - e_revenue_header
+  - e_revenue_2026
+  id: services_2026h1
+  name: 勞務收入
+  period: 2026-01-01至2026-06-30
+  revenue_share_pct: null
+- evidence_ids:
+  - e_revenue_2025
+  id: services_2025
+  name: 勞務服務
+  period: '2025'
+  revenue_share_pct: 71.16
+- evidence_ids:
+  - e_revenue_2025
+  id: sales_other_2025
+  name: 銷售產品及其他
+  period: '2025'
+  revenue_share_pct: 28.84
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 英國全資測試實驗服務子公司
+    details:
+    - 英國全資測試實驗服務子公司
+    edge: ecadb60916275
+    evidence_level: primary
+    id: org.hcmed-uk-limited
+    name: HCMED UK LIMITED
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.hcmed-inno.com
 tax_id: '24754176'
 incorporated: '2014-10-06'
 listed: '2026-02-02'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6934#e_cdmo:
+    locator: Technology & Services
+    published_date: null
+    publisher: 心誠鎂行動醫電股份有限公司
+    quote_check: found
+    title: HCmed 官方網站
+    url: https://hcmed-inno.com/
+  tw.6934#e_manufacturing:
+    locator: 生產製造與商品化服務
+    published_date: null
+    publisher: 心誠鎂行動醫電股份有限公司
+    quote_check: found
+    title: 技術介紹：生產製造與商品化服務
+    url: https://hcmed-inno.com/tw/technology/manufacturing-and-commercialization
+  tw.6934#e_product_adheresp:
+    locator: 產品名稱與用途
+    published_date: null
+    publisher: 心誠鎂行動醫電股份有限公司
+    quote_check: found
+    title: AdheResp 產品介紹
+    url: https://hcmed-inno.com/tw/product/adheresp
+  tw.6934#e_product_pulmogine:
+    locator: 產品介紹首段
+    published_date: null
+    publisher: 心誠鎂行動醫電股份有限公司
+    quote_check: found
+    title: Pulmogine 產品介紹
+    url: https://hcmed-inno.com/tw/product/pulmogine
+  tw.6934#e_revenue_2025:
+    locator: 印刷頁 57，營業比重；欄位依序為 2024 年金額、比重及 2025 年金額、比重
+    published_date: '2026-05-06'
+    publisher: 心誠鎂行動醫電股份有限公司
+    quote_check: found
+    title: 114 年股東會年報
+    url: https://www.hcmed-inno.com/files/investor_file/1778751183722.pdf
+  tw.6934#e_revenue_2026:
+    locator: 印刷頁 32，2026 年 1 月 1 日至 6 月 30 日收入合計列；單位為新台幣仟元
+    published_date: '2026-08-13'
+    publisher: 心誠鎂行動醫電股份有限公司
+    quote_check: found
+    title: 115 年及 114 年第二季合併財務報告
+    url: https://www.hcmed-inno.com/files/investor_file/1789108937899.pdf
+  tw.6934#e_revenue_header:
+    locator: 印刷頁 32，附註六（十七）營業收入，2026 年上半年表格欄名
+    published_date: '2026-08-13'
+    publisher: 心誠鎂行動醫電股份有限公司
+    quote_check: found
+    title: 115 年及 114 年第二季合併財務報告
+    url: https://www.hcmed-inno.com/files/investor_file/1789108937899.pdf
+  tw.6934#e_subsidiary:
+    locator: PDF 第 47 頁，附表一：被投資公司名稱、所在地區等相關資訊
+    published_date: '2026-08-13'
+    publisher: 心誠鎂行動醫電股份有限公司
+    quote_check: found
+    title: 115 年及 114 年第二季合併財務報告
+    url: https://www.hcmed-inno.com/files/investor_file/1789108937899.pdf

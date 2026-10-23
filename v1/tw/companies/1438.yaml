@@ -8,12 +8,57 @@ industry:
   l0_code: '14'
   l0_name: 建材營造業
   l0_name_en: Building Material and Construction
-primary_chain_position: unknown
+  l1: realestate
+  l1_name: 不動產
+  l1_name_en: Real Estate
+  l2: re.dev
+  l2_name: 不動產
+  l2_name_en: Real Estate
+  l3: re.developer
+  l3_name: 建設開發
+  l3_name_en: Property Development
+primary_chain_position: midstream
+summary_short: 以住宅、商業及工業大樓開發租售與不動產買賣取得收入。
+summary_long: 三地開發主要從事房地產開發租售及不動產買賣，透過委託營造廠商興建商業大樓、工業大樓與住宅，再辦理出租或出售。2025年度營收中，銷售房地占99.58%，其他收入占0.42%，收入主要來自房地銷售。依2025年12月法說會資料，在建案包括高雄市三民區的艾美國際城、台南市中西區的艾美御之苑，以及台南市東區的艾美新時代；三案分別規劃地上31層、21層與15層。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_property_sales
+  name: 銷售房地
+  period: '2025'
+  revenue_share_pct: 99.58
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 0.42
 website: http://www.sandirealestate.com.tw/
 tax_id: '03561011'
 incorporated: '1955-10-11'
 listed: '1988-12-15'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1438#e2:
+    locator: 第42頁，114年度營業主要內容及其營業比重
+    published_date: null
+    publisher: 三地開發地產股份有限公司
+    quote_check: found
+    title: 三地開發地產股份有限公司114年度年報
+    url: https://www.sandirealestate.com.tw/files/San-di-group/Investor/1-3-2_Shareholders%27%20Meeting%20Information/20260625-3_Annual%20Report.pdf
+  tw.1438#e3:
+    locator: 第4頁，基本資料／主要業務
+    published_date: '2025-12-24'
+    publisher: 三地開發地產股份有限公司
+    quote_check: found
+    title: 三地開發地產股份有限公司2025年法人說明會簡報
+    url: https://mopsov.twse.com.tw/nas/STR/143820251224M001.pdf
+  tw.1438#e7:
+    locator: 第43頁，產業上、中、下游之關聯性
+    published_date: null
+    publisher: 三地開發地產股份有限公司
+    quote_check: found
+    title: 三地開發地產股份有限公司114年度年報
+    url: https://www.sandirealestate.com.tw/files/San-di-group/Investor/1-3-2_Shareholders%27%20Meeting%20Information/20260625-3_Annual%20Report.pdf

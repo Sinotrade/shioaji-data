@@ -8,12 +8,145 @@ industry:
   l0_code: '28'
   l0_name: 電子零組件業
   l0_name_en: Electronic Parts and Components
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.pcb
+  l3_name: 印刷電路板
+  l3_name_en: Printed Circuit Boards
+chain: chain.pcb
+chain_stage:
+  agreement: both
+  also: []
+  reason: 印刷電路板生產與銷售占營收41.70%，為最大業務，屬電路板製造階段。
+  stage: board
+  stage_name: 電路板與載板製造
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 松上集團以印刷電路板、磁性元件及運動護具的生產與銷售為主要收入來源。
+summary_long: 松上集團主要經營印刷電路板、磁性元件及運動護具。2025年合併營收中，印刷電路板占41.70%，為最大業務；磁性元件占35.34%，運動護具占22.86%，其他占0.10%。磁性元件涵蓋變壓器、線圈及電感器。年報列示印刷電路板應用包括AI伺服器電源模組與高頻高速低軌衛星天線板。子公司包括連盟興業與翔旭國際，其中翔旭國際從事運動護具業務。依全年營收結構，主要產業鏈位置為電路板製造。
+segments:
+- evidence_ids:
+  - e3
+  id: pcb
+  name: 印刷電路板
+  period: 2025年度
+  revenue_share_pct: 41.7
+- evidence_ids:
+  - e3
+  id: magnetic
+  name: 磁性元件
+  period: 2025年度
+  revenue_share_pct: 35.34
+- evidence_ids:
+  - e3
+  id: sports_protection
+  name: 運動護具
+  period: 2025年度
+  revenue_share_pct: 22.86
+- evidence_ids:
+  - e3
+  id: other
+  name: 其他
+  period: 2025年度
+  revenue_share_pct: 0.1
+main_theme: theme.ai_server
+themes:
+- also: []
+  stage: board_materials
+  theme: theme.ai_server
+  tier: upstream
+- also: []
+  stage: components
+  theme: theme.leo_satellite
+  tier: upstream
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 運動護具產銷子公司
+    details:
+    - 運動護具產銷子公司
+    edge: ee32c27f0b233
+    evidence_level: primary
+    id: org.翔旭國際股份有限公司
+    name: 翔旭國際股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 印刷電路板產銷子公司
+    details:
+    - 印刷電路板產銷子公司
+    edge: eead3ed22e391
+    evidence_level: primary
+    id: org.連盟興業股份有限公司
+    name: 連盟興業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.song-shang.com.tw
 tax_id: '22944019'
 incorporated: '1988-06-13'
 listed: '2002-02-19'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6156#e1:
+    locator: 關於我們
+    published_date: null
+    publisher: 松上電子股份有限公司
+    quote_check: found
+    title: 松上電子股份有限公司－公司簡介
+    url: https://www.song-shang.com.tw/about_tw_1.php
+  tw.6156#e2:
+    locator: 關於我們－磁性元件產品說明
+    published_date: null
+    publisher: 松上電子股份有限公司
+    quote_check: found
+    title: 松上電子股份有限公司－公司簡介
+    url: https://www.song-shang.com.tw/about_tw_1.php
+  tw.6156#e3:
+    locator: PDF第75頁／書頁71，肆、一、(一)、2、營業比重，114年度營業比重(%)
+    published_date: '2026-03-31'
+    publisher: 松上電子股份有限公司
+    quote_check: found
+    title: 松上電子股份有限公司一一四年度年報
+    url: https://www.song-shang.com.tw/_i/assets/file/shareholder/8a0ad3ff246d7941afdc1488bc966c86.pdf
+  tw.6156#e4:
+    locator: PDF第84頁／書頁80，(二)、1、(1)印刷電路板重要用途、B.工業控制品
+    published_date: '2026-03-31'
+    publisher: 松上電子股份有限公司
+    quote_check: found
+    title: 松上電子股份有限公司一一四年度年報
+    url: https://www.song-shang.com.tw/_i/assets/file/shareholder/8a0ad3ff246d7941afdc1488bc966c86.pdf
+  tw.6156#e5:
+    locator: PDF第84頁／書頁80，(二)、1、(1)印刷電路板重要用途、D.通訊產品
+    published_date: '2026-03-31'
+    publisher: 松上電子股份有限公司
+    quote_check: found
+    title: 松上電子股份有限公司一一四年度年報
+    url: https://www.song-shang.com.tw/_i/assets/file/shareholder/8a0ad3ff246d7941afdc1488bc966c86.pdf
+  tw.6156#e6:
+    locator: PDF第14頁，四、3.合併概況，合併財務報表編製主體表－連盟興業
+    published_date: '2026-08-05'
+    publisher: 松上電子股份有限公司
+    quote_check: found
+    title: 松上電子股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.song-shang.com.tw/_i/assets/file/financial/a7e92bc39c62aaf98dbb130967512e62.pdf
+  tw.6156#e7:
+    locator: PDF第14頁，四、3.合併概況，合併財務報表編製主體表－翔旭國際
+    published_date: '2026-08-05'
+    publisher: 松上電子股份有限公司
+    quote_check: found
+    title: 松上電子股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.song-shang.com.tw/_i/assets/file/financial/a7e92bc39c62aaf98dbb130967512e62.pdf

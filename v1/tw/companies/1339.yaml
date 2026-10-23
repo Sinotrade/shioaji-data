@@ -8,12 +8,221 @@ industry:
   l0_code: '12'
   l0_name: 汽車工業
   l0_name_en: Automobile
-primary_chain_position: unknown
+  l1: auto
+  l1_name: 汽車與運具
+  l1_name_en: Automotive & Mobility
+  l2: auto.vehicles
+  l2_name: 汽機車
+  l2_name_en: Autos & Motorcycles
+  l3: auto.aftermarket
+  l3_name: 售後市場零件（AM）
+  l3_name_en: Aftermarket Parts
+chain: chain.auto
+chain_stage:
+  agreement: both
+  also: []
+  reason: 汽車零件占營收98.74%，主製AM保險桿、水箱護罩等碰撞替換件，屬零組件製造。
+  stage: parts
+  stage_name: 汽車零組件與模組
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 製造汽車AM碰撞替換零件，主要產品為保險桿與水箱護罩。
+summary_long: 昭輝主要製造汽車售後維修市場（AM）碰撞替換零件，產品包括前後保險桿、水箱護罩、下飾板與大燈支架。2025年度汽車零件占合併營收98.74%，其他業務占1.26%。公司另提供保健食品配方研發及OEM／ODM代工，涵蓋軟膠囊等劑型。集團內遼寧和泰從事原廠配套（OE）內飾件製造，與昭輝本體的AM產品有所區別。年報列示的子公司另包括騰輝控股、華元控股、常熟富特、長頡科技、優能富創及賀得嘉生醫。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_auto
+  name: 汽車零件
+  period: '2025'
+  revenue_share_pct: 98.74
+- evidence_ids:
+  - e1
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 1.26
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團子公司
+    details:
+    - 集團子公司
+    edge: ead249dda0060
+    evidence_level: primary
+    id: org.優能富創股份有限公司
+    name: 優能富創股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 汽車飾件子公司
+    details:
+    - 汽車飾件子公司
+    edge: ee4f8691ff781
+    evidence_level: primary
+    id: org.常熟富特汽車飾件有限公司
+    name: 常熟富特汽車飾件有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團控股子公司
+    details:
+    - 集團控股子公司
+    edge: e53cfc7026a16
+    evidence_level: primary
+    id: org.薩摩亞華元控股有限公司
+    name: 薩摩亞華元控股有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團控股子公司
+    details:
+    - 集團控股子公司
+    edge: ecaae9545d25e
+    evidence_level: primary
+    id: org.薩摩亞騰輝控股有限公司
+    name: 薩摩亞騰輝控股有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團子公司
+    details:
+    - 集團子公司
+    edge: e9203f6ea6b63
+    evidence_level: primary
+    id: org.賀得嘉生醫股份有限公司
+    name: 賀得嘉生醫股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-08-06'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: OE內飾件子公司
+    details:
+    - OE內飾件子公司
+    edge: e7ab993a4454a
+    evidence_level: primary
+    id: org.遼寧和泰汽車零部件有限公司
+    name: 遼寧和泰汽車零部件有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 中國安徽子公司
+    details:
+    - 中國安徽子公司
+    edge: e07459539491d
+    evidence_level: primary
+    id: org.長頡科技股份有限公司
+    name: 長頡科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.yccco.com.tw
 tax_id: '22078327'
 incorporated: '1986-03-07'
 listed: '2012-04-24'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1339#e1:
+    locator: 年報第64頁，主要產品及其營業比重；欄位依序為2024年度及2025年度
+    published_date: '2026-05-06'
+    publisher: 昭輝實業股份有限公司
+    quote_check: found
+    title: 昭輝實業股份有限公司一一四年度年報
+    url: https://doc.twse.com.tw/pdf/2025_1339_20260529F04_20261023_153328.pdf
+  tw.1339#e10:
+    locator: 年報第82頁，昭輝實業股份有限公司關係企業組織圖
+    published_date: '2026-05-06'
+    publisher: 昭輝實業股份有限公司
+    quote_check: found
+    title: 昭輝實業股份有限公司一一四年度年報
+    url: https://doc.twse.com.tw/pdf/2025_1339_20260529F04_20261023_153328.pdf
+  tw.1339#e11:
+    locator: 年報第82頁，昭輝實業股份有限公司關係企業組織圖
+    published_date: '2026-05-06'
+    publisher: 昭輝實業股份有限公司
+    quote_check: found
+    title: 昭輝實業股份有限公司一一四年度年報
+    url: https://doc.twse.com.tw/pdf/2025_1339_20260529F04_20261023_153328.pdf
+  tw.1339#e2:
+    locator: PDF第5頁，公司簡介－廠區概況
+    published_date: '2026-08-06'
+    publisher: 昭輝實業股份有限公司
+    quote_check: found
+    title: 昭輝實業股份有限公司2026年8月6日法人說明會簡報
+    url: https://mopsov.twse.com.tw/nas/STR/133920260806M001.pdf
+  tw.1339#e3:
+    locator: PDF第7頁，公司簡介－產品介紹，昭輝（AM）主要產品
+    published_date: '2026-08-06'
+    publisher: 昭輝實業股份有限公司
+    quote_check: found
+    title: 昭輝實業股份有限公司2026年8月6日法人說明會簡報
+    url: https://mopsov.twse.com.tw/nas/STR/133920260806M001.pdf
+  tw.1339#e4:
+    locator: 年報第66頁，所營業務之技術層次；第1頁，保健食品事業
+    published_date: '2026-05-06'
+    publisher: 昭輝實業股份有限公司
+    quote_check: found
+    title: 昭輝實業股份有限公司一一四年度年報
+    url: https://doc.twse.com.tw/pdf/2025_1339_20260529F04_20261023_153328.pdf
+  tw.1339#e5:
+    locator: 年報第82頁，昭輝實業股份有限公司關係企業組織圖
+    published_date: '2026-05-06'
+    publisher: 昭輝實業股份有限公司
+    quote_check: found
+    title: 昭輝實業股份有限公司一一四年度年報
+    url: https://doc.twse.com.tw/pdf/2025_1339_20260529F04_20261023_153328.pdf
+  tw.1339#e6:
+    locator: 年報第82頁，昭輝實業股份有限公司關係企業組織圖
+    published_date: '2026-05-06'
+    publisher: 昭輝實業股份有限公司
+    quote_check: found
+    title: 昭輝實業股份有限公司一一四年度年報
+    url: https://doc.twse.com.tw/pdf/2025_1339_20260529F04_20261023_153328.pdf
+  tw.1339#e7:
+    locator: 年報第82頁，昭輝實業股份有限公司關係企業組織圖
+    published_date: '2026-05-06'
+    publisher: 昭輝實業股份有限公司
+    quote_check: found
+    title: 昭輝實業股份有限公司一一四年度年報
+    url: https://doc.twse.com.tw/pdf/2025_1339_20260529F04_20261023_153328.pdf
+  tw.1339#e8:
+    locator: 年報第82頁，昭輝實業股份有限公司關係企業組織圖
+    published_date: '2026-05-06'
+    publisher: 昭輝實業股份有限公司
+    quote_check: found
+    title: 昭輝實業股份有限公司一一四年度年報
+    url: https://doc.twse.com.tw/pdf/2025_1339_20260529F04_20261023_153328.pdf
+  tw.1339#e9:
+    locator: 年報第82頁，昭輝實業股份有限公司關係企業組織圖
+    published_date: '2026-05-06'
+    publisher: 昭輝實業股份有限公司
+    quote_check: found
+    title: 昭輝實業股份有限公司一一四年度年報
+    url: https://doc.twse.com.tw/pdf/2025_1339_20260529F04_20261023_153328.pdf

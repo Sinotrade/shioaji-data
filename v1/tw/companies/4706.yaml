@@ -8,12 +8,192 @@ industry:
   l0_code: '21'
   l0_name: 化學工業
   l0_name_en: Chemical
-primary_chain_position: unknown
+  l1: materials
+  l1_name: 原物料
+  l1_name_en: Materials
+  l2: mat.chemicals
+  l2_name: 化工
+  l2_name_en: Chemicals
+  l3: chem.specialty
+  l3_name: 特用化學品
+  l3_name_en: Specialty Chemicals
+chain: chain.petrochem
+chain_stage:
+  agreement: both
+  also: []
+  reason: 營收最大宗為調製應用顏料，占67%，包含塑膠色母及加工著色料，屬石化下游加工。
+  stage: downstream
+  stage_name: 塑膠、纖維與加工
+  tier: downstream
+primary_chain_position: downstream
+summary_short: 製造及銷售調製應用顏料、合成有機顏料與塑膠著色用色母。
+summary_long: 大恭主要製造及銷售合成有機顏料與調製應用顏料，2025年營收比重分別為30%與67%，其他占3%。合成有機顏料包含顏料色粉與濕式色餅，可供油墨、塑膠、橡膠及塗料等製品著色。調製應用產品包括PVC用色餅、色砂、色膏，聚烯烴用色母與色母粉，以及PU合成皮革用色片與色膏；水性顏料則用於印花、壓染及水性塗料。海外透過間接子公司大恭精細化工（昆山）有限公司，從事加工顏料製造及銷售。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_prepared
+  name: 調製應用顏料
+  period: '2025'
+  revenue_share_pct: 67
+- evidence_ids:
+  - e1
+  id: seg_organic
+  name: 合成有機顏料
+  period: '2025'
+  revenue_share_pct: 30
+- evidence_ids:
+  - e1
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 3
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接子公司；顏料及相關化工產品銷售
+    details:
+    - 間接子公司；顏料及相關化工產品銷售
+    edge: e46d80de1f320
+    evidence_level: primary
+    id: org.changshu-tkc-new-materials-trading
+    name: 常熟大恭新材料貿易有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司；一般投資業
+    details:
+    - 直接子公司；一般投資業
+    edge: e42d6a35cf317
+    evidence_level: primary
+    id: org.guang-you-international-investment
+    name: 廣佑國際投資股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接子公司；加工顏料製造及銷售
+    details:
+    - 間接子公司；加工顏料製造及銷售
+    edge: ec91f89d8b28a
+    evidence_level: primary
+    id: org.tkc-fine-chemicals-kunshan
+    name: 大恭精細化工(昆山)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接子公司；投資控股及國際貿易
+    details:
+    - 間接子公司；投資控股及國際貿易
+    edge: eb2ff869bd8c1
+    evidence_level: primary
+    id: org.tkc-global-investment
+    name: TKC GLOBAL INVESTMENT CORP.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司；投資控股
+    details:
+    - 直接子公司；投資控股
+    edge: e7279d4213464
+    evidence_level: primary
+    id: org.tkc-international-investment
+    name: TKC INTERNATIONAL INVESTMENT CORP.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.tkc.com.tw
 tax_id: '11051504'
 incorporated: '1966-04-20'
 listed: '1998-04-17'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4706#e1:
+    locator: 第70頁，肆、營運概況，一、業務內容，營業比重
+    published_date: null
+    publisher: 大恭化學工業股份有限公司
+    quote_check: found
+    title: 大恭化學工業股份有限公司114年度年報
+    url: https://www.tkc.com.tw/Upload/investor/investor_202606041014299641.pdf
+  tw.4706#e10:
+    locator: 第20頁，附註六（六），投資公司、子公司及持股比例表
+    published_date: null
+    publisher: 大恭化學工業股份有限公司
+    quote_check: found
+    title: 大恭化學工業股份有限公司及子公司114年度合併財務報告
+    url: https://www.tkc.com.tw/Upload/investor/investor_202606041006492931.pdf
+  tw.4706#e2:
+    locator: 第70頁，公司目前主要產品項目
+    published_date: null
+    publisher: 大恭化學工業股份有限公司
+    quote_check: found
+    title: 大恭化學工業股份有限公司114年度年報
+    url: https://www.tkc.com.tw/Upload/investor/investor_202606041014299641.pdf
+  tw.4706#e3:
+    locator: TKC Color產品說明
+    published_date: null
+    publisher: 大恭化學工業股份有限公司
+    quote_check: found
+    title: 產品介紹：塗料、油墨、塑膠用有機顏料
+    url: https://www.tkc.com.tw/tc/product5.php
+  tw.4706#e4:
+    locator: TEM產品特性
+    published_date: null
+    publisher: 大恭化學工業股份有限公司
+    quote_check: found
+    title: 產品介紹：聚烯烴類用色料
+    url: https://www.tkc.com.tw/tc/product3.php
+  tw.4706#e5:
+    locator: 水性顏料用途說明
+    published_date: null
+    publisher: 大恭化學工業股份有限公司
+    quote_check: found
+    title: 產品介紹：水性應用加工色料
+    url: https://www.tkc.com.tw/tc/product4.php
+  tw.4706#e6:
+    locator: 第20頁，附註六（六），列入合併財務報告之子公司
+    published_date: null
+    publisher: 大恭化學工業股份有限公司
+    quote_check: found
+    title: 大恭化學工業股份有限公司及子公司114年度合併財務報告
+    url: https://www.tkc.com.tw/Upload/investor/investor_202606041006492931.pdf
+  tw.4706#e7:
+    locator: 第20頁，附註六（六），投資公司、子公司及持股比例表
+    published_date: null
+    publisher: 大恭化學工業股份有限公司
+    quote_check: found
+    title: 大恭化學工業股份有限公司及子公司114年度合併財務報告
+    url: https://www.tkc.com.tw/Upload/investor/investor_202606041006492931.pdf
+  tw.4706#e8:
+    locator: 第20頁，附註六（六），投資公司、子公司及持股比例表
+    published_date: null
+    publisher: 大恭化學工業股份有限公司
+    quote_check: found
+    title: 大恭化學工業股份有限公司及子公司114年度合併財務報告
+    url: https://www.tkc.com.tw/Upload/investor/investor_202606041006492931.pdf
+  tw.4706#e9:
+    locator: 第41頁，附表四，大陸投資資訊及註2、註3；第20頁子公司表
+    published_date: null
+    publisher: 大恭化學工業股份有限公司
+    quote_check: found
+    title: 大恭化學工業股份有限公司及子公司114年度合併財務報告
+    url: https://www.tkc.com.tw/Upload/investor/investor_202606041006492931.pdf

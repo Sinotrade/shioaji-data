@@ -8,12 +8,162 @@ industry:
   l0_code: '24'
   l0_name: 半導體業
   l0_name_en: Semiconductor
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.semi
+  l2_name: 半導體
+  l2_name_en: Semiconductors
+  l3: semi.osat
+  l3_name: 封裝測試
+  l3_name_en: Packaging & Testing (OSAT)
+chain: chain.semiconductor
+chain_stage:
+  agreement: both
+  also: []
+  reason: 先進與傳統積體封裝及測試合計占營收96.53%，主要業務為半導體封裝測試。
+  stage: osat
+  stage_name: 封裝測試
+  tier: downstream
+primary_chain_position: downstream
+summary_short: 提供半導體IC封裝與測試，以先進基板及導線架型封測服務為主要營收來源。
+summary_long: 典範主要提供半導體IC封裝與測試服務。2025年營收中，先進基板或導線架型積體封裝及測試占65.23%，傳統導線架型封裝及測試占31.30%，其他占3.47%。產品涵蓋TSOP、SOP、TQFP、QFN／DFN、LGA與記憶卡封裝，亦提供MEMS感測晶片封裝及晶片加工服務，後者包括晶圓減薄、切割、光學檢測與晶粒挑選。公司揭露封測產品用於無人機及低軌衛星裝置，並持續發展氮化鎵電源晶片模組封裝與測試。
+segments:
+- evidence_ids:
+  - e2
+  id: advanced_packaging_testing
+  name: 先進基板或導線架型積體封裝及測試
+  period: '2025'
+  revenue_share_pct: 65.23
+- evidence_ids:
+  - e3
+  id: traditional_packaging_testing
+  name: 傳統導線架型積體封裝及測試
+  period: '2025'
+  revenue_share_pct: 31.3
+- evidence_ids:
+  - e4
+  id: other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 3.47
+main_theme: theme.drone
+themes:
+- also: []
+  stage: components
+  theme: theme.drone
+  tier: upstream
+- also: []
+  stage: components
+  theme: theme.leo_satellite
+  tier: upstream
+- also: []
+  stage: application
+  theme: theme.gan
+  tier: downstream
 website: http://www.ticp.com.tw
 tax_id: '22101544'
 incorporated: '1998-07-14'
 listed: '2005-12-16'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3372#e1:
+    locator: 公司基本資料表：公司名稱、股票代號、統一編號及主要經營業務
+    published_date: null
+    publisher: 台灣典範半導體股份有限公司
+    quote_check: found
+    title: 公司基本資料
+    url: https://www.ticp.com.tw/zh-tw/tw_company
+  tw.3372#e10:
+    locator: 頁42，3.1創新研發，現有產品
+    published_date: null
+    publisher: 台灣典範半導體股份有限公司
+    quote_check: found
+    title: 2025年永續報告書
+    url: https://www.ticp.com.tw/portals/0/Files/ESG/2025%E5%B9%B4ESG%E6%B0%B8%E7%BA%8C%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf
+  tw.3372#e11:
+    locator: 印刷頁51，4.1.3技術及研發概況，開發成功之技術或產品第c項
+    published_date: '2026-04-24'
+    publisher: 台灣典範半導體股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/72870/2026/RNS/72870_rns_2026-05-22_91575be5-a1be-4bdf-bc60-8c5c52f895fb.pdf
+  tw.3372#e12:
+    locator: 印刷頁1，封測產品終端應用；印刷頁51另列TLGA產品應用無人機
+    published_date: '2026-04-24'
+    publisher: 台灣典範半導體股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/72870/2026/RNS/72870_rns_2026-05-22_91575be5-a1be-4bdf-bc60-8c5c52f895fb.pdf
+  tw.3372#e13:
+    locator: 印刷頁53，產業垂直分工說明
+    published_date: '2026-04-24'
+    publisher: 台灣典範半導體股份有限公司
+    quote_check: not_found
+    title: 114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/72870/2026/RNS/72870_rns_2026-05-22_91575be5-a1be-4bdf-bc60-8c5c52f895fb.pdf
+  tw.3372#e14:
+    locator: 頁42，3.1創新研發，新開發產品
+    published_date: null
+    publisher: 台灣典範半導體股份有限公司
+    quote_check: found
+    title: 2025年永續報告書
+    url: https://www.ticp.com.tw/portals/0/Files/ESG/2025%E5%B9%B4ESG%E6%B0%B8%E7%BA%8C%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf
+  tw.3372#e2:
+    locator: 印刷頁49，主要產品之營業比重，先進基板或導線架型積體封裝及測試列
+    published_date: '2026-04-24'
+    publisher: 台灣典範半導體股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/72870/2026/RNS/72870_rns_2026-05-22_91575be5-a1be-4bdf-bc60-8c5c52f895fb.pdf
+  tw.3372#e3:
+    locator: 印刷頁49，主要產品之營業比重，傳統導線架型積體封裝及測試列
+    published_date: '2026-04-24'
+    publisher: 台灣典範半導體股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/72870/2026/RNS/72870_rns_2026-05-22_91575be5-a1be-4bdf-bc60-8c5c52f895fb.pdf
+  tw.3372#e4:
+    locator: 印刷頁49，主要產品之營業比重，其他列
+    published_date: '2026-04-24'
+    publisher: 台灣典範半導體股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/72870/2026/RNS/72870_rns_2026-05-22_91575be5-a1be-4bdf-bc60-8c5c52f895fb.pdf
+  tw.3372#e5:
+    locator: 產品規格表
+    published_date: null
+    publisher: 台灣典範半導體股份有限公司
+    quote_check: found
+    title: TSOP
+    url: https://www.ticp.com.tw/zh-tw/tw_TSOP
+  tw.3372#e6:
+    locator: 產品規格表
+    published_date: null
+    publisher: 台灣典範半導體股份有限公司
+    quote_check: found
+    title: SOP
+    url: https://www.ticp.com.tw/zh-tw/tw_SOP
+  tw.3372#e7:
+    locator: 產品規格表
+    published_date: null
+    publisher: 台灣典範半導體股份有限公司
+    quote_check: found
+    title: TQFP
+    url: https://www.ticp.com.tw/zh-tw/TQFP
+  tw.3372#e8:
+    locator: 產品介紹標題及規格表
+    published_date: null
+    publisher: 台灣典範半導體股份有限公司
+    quote_check: found
+    title: QFN/DFN
+    url: https://www.ticp.com.tw/zh-tw/QFNDFN
+  tw.3372#e9:
+    locator: 產品介紹標題及LGA規格表
+    published_date: null
+    publisher: 台灣典範半導體股份有限公司
+    quote_check: found
+    title: LGA/Memory Card
+    url: https://www.ticp.com.tw/zh-tw/LGAMemoryCard

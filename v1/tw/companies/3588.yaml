@@ -8,12 +8,145 @@ industry:
   l0_code: '24'
   l0_name: 半導體業
   l0_name_en: Semiconductor
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.semi
+  l2_name: 半導體
+  l2_name_en: Semiconductors
+  l3: semi.ic_design
+  l3_name: IC 設計
+  l3_name_en: IC Design
+chain: chain.semiconductor
+chain_stage:
+  agreement: both
+  also: []
+  reason: 電源管理IC設計與銷售占營收100%，主要產品為電源控制及快充協議晶片。
+  stage: ip_design
+  stage_name: IP 與 IC 設計
+  tier: upstream
+primary_chain_position: upstream
+summary_short: 設計與銷售電源管理IC，產品涵蓋AC/DC控制、同步整流及USB PD快充。
+summary_long: 通嘉科技以電源管理IC設計與銷售為主要業務，2025年度電源管理IC占營收100%。產品涵蓋AC/DC PWM控制器、功率因數校正與LLC諧振控制器、同步整流IC、USB PD協議晶片及LED照明控制方案，提供一次側至二次側電源控制功能。USB PD產品包含支援PD3.2的LD6618x；研發亦涵蓋搭配GaN元件的快充控制方案，並推出可直驅SiC的LD7597C。公司年報另揭露電源技術已導入低軌衛星電源系統，並持有通嘉科技(深圳)有限公司全部股權。
+segments:
+- evidence_ids:
+  - e3
+  id: seg_pmic
+  name: 電源管理IC
+  period: 2025年度
+  revenue_share_pct: 100
+main_theme: theme.sic
+themes:
+- also: []
+  stage: application
+  theme: theme.sic
+  tier: downstream
+- also: []
+  stage: components
+  theme: theme.leo_satellite
+  tier: upstream
+- also: []
+  stage: application
+  theme: theme.gan
+  tier: downstream
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股100%的子公司
+    details:
+    - 持股100%的子公司
+    edge: e2ebb4fc922f1
+    evidence_level: primary
+    id: org.通嘉科技-深圳-有限公司
+    name: 通嘉科技(深圳)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.leadtrend.com.tw
 tax_id: '80254357'
 incorporated: '2002-09-18'
 listed: '2009-08-14'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3588#e1:
+    locator: 關於我們，第106行
+    published_date: null
+    publisher: 通嘉科技股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.leadtrend.com.tw/tw/about/about-us
+  tw.3588#e10:
+    locator: 印刷頁2，PDF第6頁，114年度研發成果
+    published_date: null
+    publisher: 通嘉科技股份有限公司
+    quote_check: found
+    title: 通嘉科技股份有限公司114年度年報
+    url: https://www.leadtrend.com.tw/uploads/shareholder_meeting_information/2025/115_annual_report_c.pdf
+  tw.3588#e11:
+    locator: 印刷頁102，PDF第106頁，關係企業組織圖
+    published_date: null
+    publisher: 通嘉科技股份有限公司
+    quote_check: found
+    title: 通嘉科技股份有限公司114年度年報
+    url: https://www.leadtrend.com.tw/uploads/shareholder_meeting_information/2025/115_annual_report_c.pdf
+  tw.3588#e2:
+    locator: 核心競爭力，第119行
+    published_date: null
+    publisher: 通嘉科技股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.leadtrend.com.tw/tw/about/about-us
+  tw.3588#e3:
+    locator: 印刷頁67，PDF第71頁，營業比重
+    published_date: null
+    publisher: 通嘉科技股份有限公司
+    quote_check: found
+    title: 通嘉科技股份有限公司114年度年報
+    url: https://www.leadtrend.com.tw/uploads/shareholder_meeting_information/2025/115_annual_report_c.pdf
+  tw.3588#e4:
+    locator: 產品介紹，第100行
+    published_date: null
+    publisher: 通嘉科技股份有限公司
+    quote_check: found
+    title: Hi-Power控制器
+    url: https://www.leadtrend.com.tw/tw/products/hi-power-controller
+  tw.3588#e5:
+    locator: 產品介紹，第102行
+    published_date: null
+    publisher: 通嘉科技股份有限公司
+    quote_check: found
+    title: 同步整流控制器
+    url: https://www.leadtrend.com.tw/tw/products/sr-controller
+  tw.3588#e6:
+    locator: 新聞標題
+    published_date: '2025-12-30'
+    publisher: 通嘉科技股份有限公司
+    quote_check: found
+    title: 通嘉科技推出USB-C Power Delivery 3.2控制晶片, 最高支持到48V/240W應用-LD6618x
+    url: https://www.leadtrend.com.tw/tw/about/news/319-2025-12-30-09-27-22
+  tw.3588#e7:
+    locator: 技術文件，第122行
+    published_date: null
+    publisher: 通嘉科技股份有限公司
+    quote_check: found
+    title: LED應用產品
+    url: https://www.leadtrend.com.tw/tw/products/led-application-product
+  tw.3588#e8:
+    locator: 印刷頁68，PDF第72頁，AC/DC電源管理IC開發項目
+    published_date: null
+    publisher: 通嘉科技股份有限公司
+    quote_check: found
+    title: 通嘉科技股份有限公司114年度年報
+    url: https://www.leadtrend.com.tw/uploads/shareholder_meeting_information/2025/115_annual_report_c.pdf
+  tw.3588#e9:
+    locator: 正文第102行
+    published_date: '2026-04-22'
+    publisher: 通嘉科技股份有限公司
+    quote_check: found
+    title: 通嘉科技推出直驅SiC 應用之功率因數校正控制器-LD7597C
+    url: https://www.leadtrend.com.tw/tw/about/news/326-2026-04-08-09-27-24

@@ -8,14 +8,47 @@ industry:
   l0_code: '05'
   l0_name: 電機機械
   l0_name_en: Electric Machinery
-primary_chain_position: unknown
+  l1: auto
+  l1_name: 汽車與運具
+  l1_name_en: Automotive & Mobility
+  l2: auto.vehicles
+  l2_name: 汽機車
+  l2_name_en: Autos & Motorcycles
+  l3: auto.parts
+  l3_name: 汽車零組件
+  l3_name_en: Auto Parts
+chain: chain.auto
+chain_stage:
+  agreement: both
+  also: []
+  reason: 汽車零組件為主要營收來源，產品包括活塞、連桿及轉向與懸吊零件。
+  stage: parts
+  stage_name: 汽車零組件與模組
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 主要製造汽車與工業用鑄鍛零件，另經營系統櫃。
+summary_long: 正道工業製造汽車與工業用金屬零件，主要產品包括鋁合金活塞、鋼製連桿與平衡軸、轉向與懸吊零件，以及工業壓縮機與泵浦殼體，另經營系統櫃。2026年上半年合併財報將營收分為汽車零組件與系統櫃，前者為主要營收來源。公司母公司為大成國際鋼鐵股份有限公司，最終母公司為大成不銹鋼工業股份有限公司。合併子公司包括從事汽機車活塞製造的正道工業（馬來西亞）私人有限公司，以及從事一般投資業的Excellent Growth Investments Limited。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_auto
+  name: 汽車零組件
+  period: 2026年上半年
+  revenue_share_pct: null
+- evidence_ids:
+  - e2
+  id: seg_cabinet
+  name: 系統櫃
+  period: 2026年上半年
+  revenue_share_pct: null
 relations:
   parents:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 大國鋼持股30.36%、大成鋼直接持股0.26%
+    detail: 最終母公司
     details:
+    - 最終母公司
     - 大國鋼持股30.36%、大成鋼直接持股0.26%
     edge: ecf42e9764333
     evidence_level: primary
@@ -24,17 +57,47 @@ relations:
     ranking_basis: unranked
     share_basis: null
     share_pct: null
-    weight: 1
-  - as_of: '2025-12-31'
+    weight: 2
+  - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 上市子公司
+    detail: 直接母公司
     details:
+    - 直接母公司
     - 上市子公司
     edge: ee39bf3fcf876
     evidence_level: primary
     id: tw.8415
     name: 大國鋼
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 2
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 一般投資業子公司
+    details:
+    - 一般投資業子公司
+    edge: e2ac6727c1bd0
+    evidence_level: primary
+    id: org.excellent-growth-investments
+    name: Excellent Growth Investments Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 汽機車活塞製造子公司
+    details:
+    - 汽機車活塞製造子公司
+    edge: ecbdf404c3856
+    evidence_level: primary
+    id: org.right-way-industrial-malaysia
+    name: 正道工業（馬來西亞）私人有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -65,7 +128,70 @@ website: http://www.rightway.com.tw
 tax_id: '68193807'
 incorporated: '1965-03-13'
 listed: '1980-08-11'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1506#e10:
+    locator: 第37頁，附註二七（一）關係人名稱及其關係
+    published_date: null
+    publisher: 正道工業股份有限公司
+    quote_check: found
+    title: 正道工業股份有限公司及子公司民國115及114年第2季合併財務報告
+    url: https://www.rightway.com.tw/userfiles/(%E4%B8%8A%E5%82%B3)%E6%AD%A3%E9%81%93115%E5%B9%B4%E7%AC%AC2%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf
+  tw.1506#e2:
+    locator: 第26頁，附註二十（二）客戶合約收入之細分；金額單位為新台幣千元，第三欄為2026年上半年
+    published_date: null
+    publisher: 正道工業股份有限公司
+    quote_check: found
+    title: 正道工業股份有限公司及子公司民國115及114年第2季合併財務報告
+    url: https://www.rightway.com.tw/userfiles/(%E4%B8%8A%E5%82%B3)%E6%AD%A3%E9%81%93115%E5%B9%B4%E7%AC%AC2%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf
+  tw.1506#e3:
+    locator: Castings產品清單
+    published_date: null
+    publisher: 正道工業股份有限公司
+    quote_check: found
+    title: Castings－Right Way Industrial Co., Ltd
+    url: https://www.rightway.com.tw/index.php?id=29&index=1&lang=en&option=module&task=showlist
+  tw.1506#e4:
+    locator: Forgings產品清單
+    published_date: null
+    publisher: 正道工業股份有限公司
+    quote_check: found
+    title: Forgings－Right Way Industrial Co., Ltd
+    url: https://www.rightway.com.tw/index.php?id=35&index=2&lang=en&option=module&task=showlist
+  tw.1506#e5:
+    locator: Castings產品清單
+    published_date: null
+    publisher: 正道工業股份有限公司
+    quote_check: found
+    title: Castings－Right Way Industrial Co., Ltd
+    url: https://www.rightway.com.tw/index.php?id=29&index=1&lang=en&option=module&task=showlist
+  tw.1506#e6:
+    locator: 球頭與轉向拉桿產品區
+    published_date: null
+    publisher: 正道工業股份有限公司
+    quote_check: found
+    title: Forgings－Right Way Industrial Co., Ltd
+    url: https://www.rightway.com.tw/index.php?id=35&index=2&lang=en&option=module&task=showlist
+  tw.1506#e7:
+    locator: Castings產品清單
+    published_date: null
+    publisher: 正道工業股份有限公司
+    quote_check: found
+    title: Castings－Right Way Industrial Co., Ltd
+    url: https://www.rightway.com.tw/index.php?id=29&index=1&lang=en&option=module&task=showlist
+  tw.1506#e8:
+    locator: 第11頁，附註一公司沿革
+    published_date: null
+    publisher: 正道工業股份有限公司
+    quote_check: found
+    title: 正道工業股份有限公司及子公司民國115及114年第2季合併財務報告
+    url: https://www.rightway.com.tw/userfiles/(%E4%B8%8A%E5%82%B3)%E6%AD%A3%E9%81%93115%E5%B9%B4%E7%AC%AC2%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf
+  tw.1506#e9:
+    locator: 第19頁，附註十二（一）列入合併財務報告之子公司
+    published_date: null
+    publisher: 正道工業股份有限公司
+    quote_check: found
+    title: 正道工業股份有限公司及子公司民國115及114年第2季合併財務報告
+    url: https://www.rightway.com.tw/userfiles/(%E4%B8%8A%E5%82%B3)%E6%AD%A3%E9%81%93115%E5%B9%B4%E7%AC%AC2%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf

@@ -8,12 +8,174 @@ industry:
   l0_code: '28'
   l0_name: 電子零組件業
   l0_name_en: Electronic Parts and Components
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.connector
+  l3_name: 連接器與線材
+  l3_name_en: Connectors & Cables
+primary_chain_position: midstream
+summary_short: 設計與製造電源傳輸線、訊號連接線，涵蓋電腦、家電及特殊應用。
+summary_long: 良得電以電源傳輸線及訊號連接線的設計與製造為主要業務，產品應用於個人電腦、筆記型電腦、家電、雲端運算、智慧裝置及遊戲機。2025年度資訊及電腦電器電源傳輸線占營收98.40%，其他業務占1.60%。年報列示開發成功的產品包括電動車旅行用充電線組，以及具防水、阻燃特性的低軌衛星室內外電源線。子公司包括怡富萬電業、良得日本與良得電業（越南）；怡富萬電業（惠州）為透過怡富萬電業持有的間接子公司。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_power_cables
+  name: 資訊及電腦電器電源傳輸線
+  period: '2025'
+  revenue_share_pct: 98.4
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 1.6
+main_theme: theme.ev
+themes:
+- also: []
+  stage: parts
+  theme: theme.ev
+  tier: midstream
+- also: []
+  stage: components
+  theme: theme.leo_satellite
+  tier: upstream
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過怡富萬電業有限公司持有的間接子公司
+    details:
+    - 透過怡富萬電業有限公司持有的間接子公司
+    edge: eae09616130a0
+    evidence_level: primary
+    id: org.怡富萬電業-惠州-有限公司
+    name: 怡富萬電業(惠州)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: e130217e41dda
+    evidence_level: primary
+    id: org.怡富萬電業有限公司
+    name: 怡富萬電業有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: ef07bdca7515d
+    evidence_level: primary
+    id: org.良得日本股份有限公司
+    name: 良得日本股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: eb24922728966
+    evidence_level: primary
+    id: org.良得電業-越南-有限公司
+    name: 良得電業(越南)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.linetek.com.tw/zh-TW
 tax_id: 04877657
 incorporated: '1978-08-15'
 listed: '2001-09-17'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2462#e10:
+    locator: 第15頁，附註四（三）2，合併子公司表之投資公司與子公司欄
+    published_date: null
+    publisher: 台灣良得電子股份有限公司
+    quote_check: found
+    title: 台灣良得電子股份有限公司2026年第二季合併財務報告
+    url: https://assets.ppnet.tw/linetek/medias/5957/%E8%89%AF%E5%BE%97115Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1%E9%9B%BB%E5%AD%90%E6%9B%B8.pdf
+  tw.2462#e11:
+    locator: 第15頁，附註四（三）2，合併子公司表之投資公司與子公司欄
+    published_date: null
+    publisher: 台灣良得電子股份有限公司
+    quote_check: found
+    title: 台灣良得電子股份有限公司2026年第二季合併財務報告
+    url: https://assets.ppnet.tw/linetek/medias/5957/%E8%89%AF%E5%BE%97115Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1%E9%9B%BB%E5%AD%90%E6%9B%B8.pdf
+  tw.2462#e2:
+    locator: 印刷頁47，營業比重，114年度營業收入
+    published_date: null
+    publisher: 台灣良得電子股份有限公司
+    quote_check: found
+    title: 台灣良得電子股份有限公司2025年度年報
+    url: https://assets.ppnet.tw/linetek/medias/5946/3.114%E5%B9%B4%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1(%E4%B8%AD%E6%96%87%E7%89%88).pdf
+  tw.2462#e3:
+    locator: 印刷頁47，公司目前之商品項目
+    published_date: null
+    publisher: 台灣良得電子股份有限公司
+    quote_check: found
+    title: 台灣良得電子股份有限公司2025年度年報
+    url: https://assets.ppnet.tw/linetek/medias/5946/3.114%E5%B9%B4%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1(%E4%B8%AD%E6%96%87%E7%89%88).pdf
+  tw.2462#e4:
+    locator: 印刷頁47，主要業務內容第1至3項
+    published_date: null
+    publisher: 台灣良得電子股份有限公司
+    quote_check: found
+    title: 台灣良得電子股份有限公司2025年度年報
+    url: https://assets.ppnet.tw/linetek/medias/5946/3.114%E5%B9%B4%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1(%E4%B8%AD%E6%96%87%E7%89%88).pdf
+  tw.2462#e5:
+    locator: 印刷頁47，主要業務內容第4項
+    published_date: null
+    publisher: 台灣良得電子股份有限公司
+    quote_check: found
+    title: 台灣良得電子股份有限公司2025年度年報
+    url: https://assets.ppnet.tw/linetek/medias/5946/3.114%E5%B9%B4%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1(%E4%B8%AD%E6%96%87%E7%89%88).pdf
+  tw.2462#e6:
+    locator: 印刷頁49，開發成功之技術或產品第2項
+    published_date: null
+    publisher: 台灣良得電子股份有限公司
+    quote_check: found
+    title: 台灣良得電子股份有限公司2025年度年報
+    url: https://assets.ppnet.tw/linetek/medias/5946/3.114%E5%B9%B4%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1(%E4%B8%AD%E6%96%87%E7%89%88).pdf
+  tw.2462#e7:
+    locator: 印刷頁49，開發成功之技術或產品第4項
+    published_date: null
+    publisher: 台灣良得電子股份有限公司
+    quote_check: found
+    title: 台灣良得電子股份有限公司2025年度年報
+    url: https://assets.ppnet.tw/linetek/medias/5946/3.114%E5%B9%B4%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1(%E4%B8%AD%E6%96%87%E7%89%88).pdf
+  tw.2462#e8:
+    locator: 第15頁，附註四（三）2，合併子公司表之投資公司與子公司欄
+    published_date: null
+    publisher: 台灣良得電子股份有限公司
+    quote_check: found
+    title: 台灣良得電子股份有限公司2026年第二季合併財務報告
+    url: https://assets.ppnet.tw/linetek/medias/5957/%E8%89%AF%E5%BE%97115Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1%E9%9B%BB%E5%AD%90%E6%9B%B8.pdf
+  tw.2462#e9:
+    locator: 第15頁，附註四（三）2，合併子公司表之投資公司與子公司欄
+    published_date: null
+    publisher: 台灣良得電子股份有限公司
+    quote_check: found
+    title: 台灣良得電子股份有限公司2026年第二季合併財務報告
+    url: https://assets.ppnet.tw/linetek/medias/5957/%E8%89%AF%E5%BE%97115Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1%E9%9B%BB%E5%AD%90%E6%9B%B8.pdf

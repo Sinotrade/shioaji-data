@@ -8,12 +8,157 @@ industry:
   l0_code: '36'
   l0_name: 數位雲端
   l0_name_en: Digital and Cloud Services
-primary_chain_position: unknown
+  l1: consumer
+  l1_name: 消費
+  l1_name_en: Consumer
+  l2: cons.discretionary
+  l2_name: 非必需消費
+  l2_name_en: Consumer Discretionary
+  l3: retail.online
+  l3_name: 網路零售
+  l3_name_en: Online Retail
+chain: chain.textile
+chain_stage:
+  agreement: both
+  also: []
+  reason: 電商事業占營收61.87%，核心為服飾品牌設計與銷售，屬成衣與品牌端。
+  stage: garment
+  stage_name: 成衣、製鞋與品牌
+  tier: downstream
+primary_chain_position: downstream
+summary_short: 以服飾電商、品牌孵化及UR Living實體商場取得營收。
+summary_long: 美而快以服飾電商與品牌孵化為主要業務，透過網紅自媒體流量進行服飾商品設計及銷售，並經營線上線下零售通路。2025年電商事業占合併營收61.87%，實體商場占34.34%，其他業務占3.79%。子公司美而快實業旗下PAZZO提供快時尚日常衣著，MEIER.Q主打簡約女性衣飾，集團並以UR Living發展實體零售。美而快實業、美而快生活美學與美而快餐飲均為全資子公司。
+segments:
+- evidence_ids:
+  - e1
+  id: ecommerce
+  name: 電商事業
+  period: '2025'
+  revenue_share_pct: 61.87
+- evidence_ids:
+  - e1
+  id: physical_malls
+  name: 實體商場
+  period: '2025'
+  revenue_share_pct: 34.34
+- evidence_ids:
+  - e1
+  id: other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 3.79
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%的子公司
+    details:
+    - 直接持有100%的子公司
+    edge: eff7324328e78
+    evidence_level: primary
+    id: org.美而快實業股份有限公司
+    name: 美而快實業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%的子公司
+    details:
+    - 直接持有100%的子公司
+    edge: eb4cabc0d2392
+    evidence_level: primary
+    id: org.美而快生活美學股份有限公司
+    name: 美而快生活美學股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%的子公司
+    details:
+    - 直接持有100%的子公司
+    edge: ef080e20ee88f
+    evidence_level: primary
+    id: org.美而快餐飲股份有限公司
+    name: 美而快餐飲股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.unitedrecommend.com/
 tax_id: '44043132'
 incorporated: '1983-07-05'
 listed: '1996-12-30'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.5321#e1:
+    locator: 印刷第52頁，目前之商品（服務）項目及營業比重；114年欄
+    published_date: '2026-05-13'
+    publisher: 美而快國際股份有限公司
+    quote_check: found
+    title: 美而快國際股份有限公司114年度年報
+    url: https://www.unitedrecommendation.com/content/pdfs/inventor/1213/114_%E8%B2%A1%E5%8B%99_%E5%B9%B4%E5%A0%B1.pdf
+  tw.5321#e2:
+    locator: 印刷第1頁，114年度營業結果
+    published_date: '2026-05-13'
+    publisher: 美而快國際股份有限公司
+    quote_check: found
+    title: 美而快國際股份有限公司114年度年報
+    url: https://www.unitedrecommendation.com/content/pdfs/inventor/1213/114_%E8%B2%A1%E5%8B%99_%E5%B9%B4%E5%A0%B1.pdf
+  tw.5321#e3:
+    locator: 品牌理念
+    published_date: null
+    publisher: 美而快國際股份有限公司
+    quote_check: found
+    title: PAZZO品牌介紹
+    url: https://www.unitedrecommendation.com/brand/page/PAZZO
+  tw.5321#e4:
+    locator: 品牌理念
+    published_date: null
+    publisher: 美而快國際股份有限公司
+    quote_check: found
+    title: MEIER.Q品牌介紹
+    url: https://www.unitedrecommendation.com/brand/page/meierq
+  tw.5321#e5:
+    locator: 印刷第53頁，實體零售事業
+    published_date: '2026-05-13'
+    publisher: 美而快國際股份有限公司
+    quote_check: found
+    title: 美而快國際股份有限公司114年度年報
+    url: https://www.unitedrecommendation.com/content/pdfs/inventor/1213/114_%E8%B2%A1%E5%8B%99_%E5%B9%B4%E5%A0%B1.pdf
+  tw.5321#e6:
+    locator: 印刷第14頁，附註四、3.(2)列入合併財務報告之子公司；115.6.30欄
+    published_date: null
+    publisher: 美而快國際股份有限公司
+    quote_check: found
+    title: 美而快國際股份有限公司及其子公司115年第2季合併財務報告
+    url: https://www.unitedrecommendation.com/content/pdfs/inventor/1213/115_%E8%B2%A1%E5%8B%99_Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
+  tw.5321#e7:
+    locator: 印刷第15頁，附註四、3.(2)列入合併財務報告之子公司；115.6.30欄
+    published_date: null
+    publisher: 美而快國際股份有限公司
+    quote_check: found
+    title: 美而快國際股份有限公司及其子公司115年第2季合併財務報告
+    url: https://www.unitedrecommendation.com/content/pdfs/inventor/1213/115_%E8%B2%A1%E5%8B%99_Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
+  tw.5321#e8:
+    locator: 印刷第15頁，附註四、3.(2)列入合併財務報告之子公司；115.6.30欄
+    published_date: null
+    publisher: 美而快國際股份有限公司
+    quote_check: found
+    title: 美而快國際股份有限公司及其子公司115年第2季合併財務報告
+    url: https://www.unitedrecommendation.com/content/pdfs/inventor/1213/115_%E8%B2%A1%E5%8B%99_Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
+  tw.5321#e9:
+    locator: 印刷第52頁，公司目前之商品（服務）
+    published_date: '2026-05-13'
+    publisher: 美而快國際股份有限公司
+    quote_check: found
+    title: 美而快國際股份有限公司114年度年報
+    url: https://www.unitedrecommendation.com/content/pdfs/inventor/1213/114_%E8%B2%A1%E5%8B%99_%E5%B9%B4%E5%A0%B1.pdf

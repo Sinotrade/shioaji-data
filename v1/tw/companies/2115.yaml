@@ -8,13 +8,226 @@ industry:
   l0_code: '12'
   l0_name: 汽車工業
   l0_name_en: Automobile
-primary_chain_position: unknown
+  l1: auto
+  l1_name: 汽車與運具
+  l1_name_en: Automotive & Mobility
+  l2: auto.vehicles
+  l2_name: 汽機車
+  l2_name_en: Autos & Motorcycles
+  l3: auto.parts
+  l3_name: 汽車零組件
+  l3_name_en: Auto Parts
+chain: chain.auto
+chain_stage:
+  agreement: both
+  also: []
+  reason: 主營輪胎氣門嘴及配件，汽車、卡車及非道路用車類占營收35.73%，屬汽車零組件。
+  stage: parts
+  stage_name: 汽車零組件與模組
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 以輪胎氣門嘴及配件製造銷售為主，另有精密加工零件與手工具業務。
+summary_long: 六暉控股以集團氣門嘴及相關配件製造銷售為核心，產品應用涵蓋自行車、機車、電動摩托車、汽車、卡車及非道路用車。2025年營收組成中，汽車、卡車及非道路用車類占35.73%，機車與電動摩托車類占26.01%，腳踏車類占17.56%，配件及其他占20.70%。產品另包括胎壓偵測氣門嘴與精密加工零件。集團旗下廈門廈暉及印尼六暉從事氣門嘴與零配件產銷，昆山六暉從事精密加工產品產銷；印尼六暉另持有PT SHEDA七成股權，由該子公司經營手工具產品。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_bicycle
+  name: 腳踏車類
+  period: '2025'
+  revenue_share_pct: 17.56
+- evidence_ids:
+  - e2
+  id: seg_motorcycle
+  name: 機車、電動摩托車類
+  period: '2025'
+  revenue_share_pct: 26.01
+- evidence_ids:
+  - e3
+  id: seg_auto
+  name: 汽車、卡車及非道路用車類
+  period: '2025'
+  revenue_share_pct: 35.73
+- evidence_ids:
+  - e4
+  id: seg_other
+  name: 配件及其他
+  period: '2025'
+  revenue_share_pct: 20.7
+main_theme: theme.ev
+themes:
+- also: []
+  stage: parts
+  theme: theme.ev
+  tier: midstream
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%的台灣子公司
+    details:
+    - 直接持有100%的台灣子公司
+    edge: e49f6f4cbfdfa
+    evidence_level: primary
+    id: org.luhai-industrial-taiwan
+    name: 六暉實業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過YUANHUI間接持有的精密加工子公司
+    details:
+    - 透過YUANHUI間接持有的精密加工子公司
+    edge: e853b475ac219
+    evidence_level: primary
+    id: org.luhai-intelligent-technology-kunshan
+    name: 六暉智能科技(昆山)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 印尼氣門嘴製造子公司
+    details:
+    - 印尼氣門嘴製造子公司
+    edge: e1c69ddf939a3
+    evidence_level: primary
+    id: org.pt-luhai-industrial
+    name: PT.LUHAI INDUSTRIAL
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 印尼六暉持有70%的手工具子公司
+    details:
+    - 印尼六暉持有70%的手工具子公司
+    edge: e8e36289a6a52
+    evidence_level: primary
+    id: org.pt-sheda-tools-indonesia
+    name: PT SHEDA TOOLS INDONESIA
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持有的氣門嘴製造子公司
+    details:
+    - 間接持有的氣門嘴製造子公司
+    edge: e2fec1a61994d
+    evidence_level: primary
+    id: org.xiamen-xiahui-rubber-metal-industrial
+    name: 廈門廈暉橡膠金屬工業有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.luhai.com.tw
 tax_id: '38773146'
 incorporated: '2009-10-19'
 listed: '2013-12-25'
 foreign_registration: KY 開曼群島
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2115#e1:
+    locator: Chapter V／I. Business content／Proportion of business，Bicycle class列，2025欄
+    published_date: '2026-08-14'
+    publisher: 六暉控股股份有限公司（FinancialFilings鏡像）
+    quote_check: unreachable
+    title: LU HAI HOLDING CORP. 2025 Annual Report
+    url: https://financialfilings.com/filings/lu-hai-2115/annual-report/2026/56093440/
+  tw.2115#e10:
+    locator: 列入合併財務報表之子公司／LU HAI BVI及ALLPRO投資廈門廈暉兩列
+    published_date: '2026-03-10'
+    publisher: 六暉控股股份有限公司（申報文件鏡像）
+    quote_check: found
+    title: 六暉控股股份有限公司2025年第4季合併財務報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51977/2026/RNS/51977_rns_2026-03-10_b7e2d514-5b0e-46db-aedb-cb023cea56d2.html
+  tw.2115#e11:
+    locator: 列入合併財務報表之子公司／本公司及六暉實業投資PT.LUHAI兩列
+    published_date: '2026-03-10'
+    publisher: 六暉控股股份有限公司（申報文件鏡像）
+    quote_check: found
+    title: 六暉控股股份有限公司2025年第4季合併財務報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51977/2026/RNS/51977_rns_2026-03-10_b7e2d514-5b0e-46db-aedb-cb023cea56d2.html
+  tw.2115#e12:
+    locator: 列入合併財務報表之子公司／PT SHEDA列及註1
+    published_date: '2026-03-10'
+    publisher: 六暉控股股份有限公司（申報文件鏡像）
+    quote_check: found
+    title: 六暉控股股份有限公司2025年第4季合併財務報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51977/2026/RNS/51977_rns_2026-03-10_b7e2d514-5b0e-46db-aedb-cb023cea56d2.html
+  tw.2115#e13:
+    locator: 列入合併財務報表之子公司／本公司投資六暉實業列
+    published_date: '2026-03-10'
+    publisher: 六暉控股股份有限公司（申報文件鏡像）
+    quote_check: found
+    title: 六暉控股股份有限公司2025年第4季合併財務報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51977/2026/RNS/51977_rns_2026-03-10_b7e2d514-5b0e-46db-aedb-cb023cea56d2.html
+  tw.2115#e2:
+    locator: Chapter V／I. Business content／Proportion of business，Motorcycle and electric motorcycle class列，2025欄
+    published_date: '2026-08-14'
+    publisher: 六暉控股股份有限公司（FinancialFilings鏡像）
+    quote_check: unreachable
+    title: LU HAI HOLDING CORP. 2025 Annual Report
+    url: https://financialfilings.com/filings/lu-hai-2115/annual-report/2026/56093440/
+  tw.2115#e3:
+    locator: Chapter V／I. Business content／Proportion of business，Passenger car, truck, and off-the-road vehicles class列，2025欄
+    published_date: '2026-08-14'
+    publisher: 六暉控股股份有限公司（FinancialFilings鏡像）
+    quote_check: unreachable
+    title: LU HAI HOLDING CORP. 2025 Annual Report
+    url: https://financialfilings.com/filings/lu-hai-2115/annual-report/2026/56093440/
+  tw.2115#e4:
+    locator: Chapter V／I. Business content／Proportion of business，Accessories and other列，2025欄
+    published_date: '2026-08-14'
+    publisher: 六暉控股股份有限公司（FinancialFilings鏡像）
+    quote_check: unreachable
+    title: LU HAI HOLDING CORP. 2025 Annual Report
+    url: https://financialfilings.com/filings/lu-hai-2115/annual-report/2026/56093440/
+  tw.2115#e5:
+    locator: 公司介紹／產品與應用範圍段落
+    published_date: null
+    publisher: 六暉控股股份有限公司
+    quote_check: found
+    title: 公司介紹
+    url: https://www.luhai.com.tw/ch/about.asp?id=1
+  tw.2115#e6:
+    locator: PDF第12頁，內頁11，主要產品
+    published_date: '2025-12-09'
+    publisher: 六暉控股股份有限公司
+    quote_check: found
+    title: 六暉-KY(2115) 2025年度前三季營運概況
+    url: https://www.luhai.com.tw/upload/editupfile/file/重大訊息與法說公告/法說簡報/20251209六暉控股114年Q3營運狀況.pdf
+  tw.2115#e7:
+    locator: PDF第13頁，內頁12
+    published_date: '2025-12-09'
+    publisher: 六暉控股股份有限公司
+    quote_check: found
+    title: 六暉-KY(2115) 2025年度前三季營運概況
+    url: https://www.luhai.com.tw/upload/editupfile/file/重大訊息與法說公告/法說簡報/20251209六暉控股114年Q3營運狀況.pdf
+  tw.2115#e8:
+    locator: PDF第24頁，內頁23，產品銷售量兩期比較
+    published_date: '2025-12-09'
+    publisher: 六暉控股股份有限公司
+    quote_check: found
+    title: 六暉-KY(2115) 2025年度前三季營運概況
+    url: https://www.luhai.com.tw/upload/editupfile/file/重大訊息與法說公告/法說簡報/20251209六暉控股114年Q3營運狀況.pdf
+  tw.2115#e9:
+    locator: 列入合併財務報表之子公司／YUANHUI投資昆山六暉列
+    published_date: '2026-03-10'
+    publisher: 六暉控股股份有限公司（申報文件鏡像）
+    quote_check: found
+    title: 六暉控股股份有限公司2025年第4季合併財務報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51977/2026/RNS/51977_rns_2026-03-10_b7e2d514-5b0e-46db-aedb-cb023cea56d2.html

@@ -8,12 +8,183 @@ industry:
   l0_code: '30'
   l0_name: 資訊服務業
   l0_name_en: Information Service
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.software
+  l2_name: 軟體與資訊服務
+  l2_name_en: Software & IT Services
+  l3: sw.it_services
+  l3_name: 系統整合與資訊服務
+  l3_name_en: System Integration & IT Services
+primary_chain_position: midstream
+summary_short: 提供金融資訊系統開發、系統整合與相關勞務服務。
+summary_long: 寶碩以金融資訊系統開發與整合服務為主要業務，提供金融資產管理、投資交易管理、風險管理及股市即時報價與下單系統，另有自主研發的MeetingLive視訊會議系統。2025年合併營收中，勞務收入占53.39%，系統整合收入占38.18%，其他收入占4.28%，投資收入占4.15%。年末直接全資持有寶固綠能科技、寶錸證券投資顧問及寶金雲國際金融科技三家公司。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_labor
+  name: 勞務收入
+  period: '2025'
+  revenue_share_pct: 53.39
+- evidence_ids:
+  - e2
+  id: seg_integration
+  name: 系統整合收入
+  period: '2025'
+  revenue_share_pct: 38.18
+- evidence_ids:
+  - e3
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 4.28
+- evidence_ids:
+  - e4
+  id: seg_investment
+  name: 投資收入
+  period: '2025'
+  revenue_share_pct: 4.15
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接全資子公司
+    details:
+    - 直接全資子公司
+    edge: e2050bcb0387c
+    evidence_level: primary
+    id: org.寶固綠能科技股份有限公司
+    name: 寶固綠能科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接全資子公司
+    details:
+    - 直接全資子公司
+    edge: ecaafc17dec64
+    evidence_level: primary
+    id: org.寶金雲國際金融科技股份有限公司
+    name: 寶金雲國際金融科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接全資子公司
+    details:
+    - 直接全資子公司
+    edge: e00785889271f
+    evidence_level: primary
+    id: org.寶錸證券投資顧問股份有限公司
+    name: 寶錸證券投資顧問股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.apex.com.tw
 tax_id: '23131763'
 incorporated: '1988-11-23'
 listed: '2002-04-25'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.5210#e1:
+    locator: 第44頁，合併營業比重表，勞務收入列之114年度金額及比重
+    published_date: '2026-04-10'
+    publisher: 寶碩財務科技股份有限公司
+    quote_check: found
+    title: 寶碩財務科技股份有限公司114年度年報
+    url: https://www.apex.com.tw/report/114report.pdf
+  tw.5210#e10:
+    locator: 第38頁，綜合持股比例表，本公司投資欄，資料日2025年12月31日
+    published_date: '2026-04-10'
+    publisher: 寶碩財務科技股份有限公司
+    quote_check: found
+    title: 寶碩財務科技股份有限公司114年度年報
+    url: https://www.apex.com.tw/report/114report.pdf
+  tw.5210#e11:
+    locator: 第38頁，綜合持股比例表，本公司投資欄，資料日2025年12月31日
+    published_date: '2026-04-10'
+    publisher: 寶碩財務科技股份有限公司
+    quote_check: found
+    title: 寶碩財務科技股份有限公司114年度年報
+    url: https://www.apex.com.tw/report/114report.pdf
+  tw.5210#e12:
+    locator: 第38頁，綜合持股比例表，本公司投資欄，資料日2025年12月31日
+    published_date: '2026-04-10'
+    publisher: 寶碩財務科技股份有限公司
+    quote_check: found
+    title: 寶碩財務科技股份有限公司114年度年報
+    url: https://www.apex.com.tw/report/114report.pdf
+  tw.5210#e13:
+    locator: 第46頁，產業上、中、下游之關聯性－國內金融資訊市場
+    published_date: '2026-04-10'
+    publisher: 寶碩財務科技股份有限公司
+    quote_check: found
+    title: 寶碩財務科技股份有限公司114年度年報
+    url: https://www.apex.com.tw/report/114report.pdf
+  tw.5210#e2:
+    locator: 第44頁，合併營業比重表，系統整合收入列之114年度金額及比重
+    published_date: '2026-04-10'
+    publisher: 寶碩財務科技股份有限公司
+    quote_check: found
+    title: 寶碩財務科技股份有限公司114年度年報
+    url: https://www.apex.com.tw/report/114report.pdf
+  tw.5210#e3:
+    locator: 第44頁，合併營業比重表，其他列之114年度金額及比重
+    published_date: '2026-04-10'
+    publisher: 寶碩財務科技股份有限公司
+    quote_check: found
+    title: 寶碩財務科技股份有限公司114年度年報
+    url: https://www.apex.com.tw/report/114report.pdf
+  tw.5210#e4:
+    locator: 第44頁，合併營業比重表，投資收入列之114年度金額及比重
+    published_date: '2026-04-10'
+    publisher: 寶碩財務科技股份有限公司
+    quote_check: found
+    title: 寶碩財務科技股份有限公司114年度年報
+    url: https://www.apex.com.tw/report/114report.pdf
+  tw.5210#e5:
+    locator: 系統架構
+    published_date: null
+    publisher: 寶碩財務科技股份有限公司
+    quote_check: found
+    title: 金融商品資產管理方案
+    url: https://www.apex.com.tw/product1-1.php
+  tw.5210#e6:
+    locator: 方案優勢－符合主管機關之投資四大流程
+    published_date: null
+    publisher: 寶碩財務科技股份有限公司
+    quote_check: found
+    title: 金融投資交易管理方案
+    url: https://www.apex.com.tw/product1-3.php
+  tw.5210#e7:
+    locator: 平台架構
+    published_date: null
+    publisher: 寶碩財務科技股份有限公司
+    quote_check: found
+    title: 金融風險管理方案
+    url: https://www.apex.com.tw/product1-2.php
+  tw.5210#e8:
+    locator: 操盤家系列
+    published_date: null
+    publisher: 寶碩財務科技股份有限公司
+    quote_check: found
+    title: 股市即時系統
+    url: https://www.apex.com.tw/product1-4.php
+  tw.5210#e9:
+    locator: 產品介紹
+    published_date: null
+    publisher: 寶碩財務科技股份有限公司
+    quote_check: found
+    title: 視訊會議系統
+    url: https://www.apex.com.tw/product3-3.php

@@ -8,12 +8,112 @@ industry:
   l0_code: '06'
   l0_name: 電器電纜
   l0_name_en: Electrical and Cable
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.electrical
+  l2_name: 電機與重電
+  l2_name_en: Electrical Equipment & Power Grid
+  l3: elec.wire_cable
+  l3_name: 電線電纜
+  l3_name_en: Wires & Cables
+primary_chain_position: midstream
+summary_short: 製造及銷售漆包線與特殊絕緣線材。
+summary_long: 風青主要從事漆包線製造加工與買賣，2025年漆包線占營收100%。產品涵蓋漆包線、三層絕緣線、FIW完全絕緣線、PI膜包線及鐵氟龍高溫線。漆包線用於繼電器、微型馬達、變壓器、電感與汽車線圈；三層絕緣線可省去絕緣膠帶與隔層。FIW用於小型變壓器、開關電源及5G網路變壓器，PI膜包線用於耐高溫電感及變壓器，鐵氟龍高溫線應用於新能源汽車與充電樁。集團間接持有博羅典型漆包線有限公司100%股權。
+segments:
+- evidence_ids:
+  - e8
+  id: seg1
+  name: 漆包線
+  period: '2025'
+  revenue_share_pct: 100
+main_theme: theme.ev
+themes:
+- also: []
+  stage: parts
+  theme: theme.ev
+  tier: midstream
+- also: []
+  stage: components
+  theme: theme.5g
+  tier: upstream
+relations:
+  subsidiaries:
+  - as_of: '2025-08-11'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持有100%股權之子公司
+    details:
+    - 間接持有100%股權之子公司
+    edge: ea5be9b390d53
+    evidence_level: primary
+    id: org.boluo-dianxing-enamelled-wire
+    name: 博羅典型漆包線有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.fcm.com.tw
 tax_id: '89260422'
 incorporated: '1994-09-10'
 listed: '2010-12-09'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2061#e1:
+    locator: 漆包線／產品應用
+    published_date: null
+    publisher: 風青實業股份有限公司
+    quote_check: found
+    title: 風青實業股份有限公司－漆包線
+    url: https://www.fcm.com.tw/product_1435255.html
+  tw.2061#e2:
+    locator: 三層絕緣線／產品說明
+    published_date: null
+    publisher: 風青實業股份有限公司
+    quote_check: found
+    title: 風青實業股份有限公司－三層絕緣線
+    url: https://www.fcm.com.tw/product_1435256.html
+  tw.2061#e3:
+    locator: PI膜包線／產品應用
+    published_date: null
+    publisher: 風青實業股份有限公司
+    quote_check: found
+    title: 風青實業股份有限公司－PI膜包線
+    url: https://www.fcm.com.tw/product_1435259.html
+  tw.2061#e4:
+    locator: FIW／產品說明
+    published_date: null
+    publisher: 風青實業股份有限公司
+    quote_check: found
+    title: 風青實業股份有限公司－FIW
+    url: https://www.fcm.com.tw/product_1435258.html
+  tw.2061#e5:
+    locator: FIW／應用說明
+    published_date: null
+    publisher: 風青實業股份有限公司
+    quote_check: found
+    title: 風青實業股份有限公司－FIW
+    url: https://www.fcm.com.tw/product_1435258.html
+  tw.2061#e6:
+    locator: 鐵氟龍高溫線／產品說明
+    published_date: null
+    publisher: 風青實業股份有限公司
+    quote_check: found
+    title: 風青實業股份有限公司－鐵氟龍高溫線
+    url: https://www.fcm.com.tw/product_1435260.html
+  tw.2061#e7:
+    locator: 公司代號2061；公告第2項被背書保證公司及關係
+    published_date: '2025-08-11'
+    publisher: 鉅亨網／公開資訊觀測站公告
+    quote_check: found
+    title: 風青：本公司依公開發行公司資金貸與及背書保證處理準則第二十五條第一項第四款規定公告
+    url: https://news.cnyes.com/news/id/6104096
+  tw.2061#e8:
+    locator: 公司簡介／營業項目與產品結構；頁面更新日期2026/10/15
+    published_date: null
+    publisher: MoneyDJ理財網／嘉實投顧
+    quote_check: found
+    title: 風青實業股份有限公司
+    url: https://www.moneydj.com/KMDJ/Wiki/wikiviewer.aspx?keyid=af9e48b9-ceed-4f4e-bb79-9d203e32881e

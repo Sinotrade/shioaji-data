@@ -8,12 +8,160 @@ industry:
   l0_code: '11'
   l0_name: 橡膠工業
   l0_name_en: Rubber
-primary_chain_position: unknown
+  l1: materials
+  l1_name: 原物料
+  l1_name_en: Materials
+  l2: mat.other
+  l2_name: 其他原物料
+  l2_name_en: Other Materials
+  l3: matl.rubber
+  l3_name: 橡膠與輪胎
+  l3_name_en: Rubber & Tires
+chain: chain.auto
+chain_stage:
+  agreement: both
+  also: []
+  reason: 以輪胎製造與銷售為主，機車胎占營收55.06%，另有卡汽車胎，屬零組件。
+  stage: parts
+  stage_name: 汽車零組件與模組
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 製造與銷售機車、自行車及農工業用輪胎，並經營DURO品牌。
+summary_long: 華豐主要製造與銷售各類輪胎，並以DURO品牌行銷。2025年營收以機車胎為主，占55.06%；自行車胎占22.23%，農工業用胎占20.75%，三者構成主要收入來源。其他收入包括卡汽車胎、輻射層外胎及其他產品，占比分別為1.40%、0.39%及0.17%。集團子公司包括從事製造及銷售的華豐橡膠（泰國）大眾股份有限公司、華豐橡膠（蘇州）有限公司，以及從事銷售買賣的華豐橡膠（美國）有限公司。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_motorcycle
+  name: 機車胎
+  period: '2025'
+  revenue_share_pct: 55.06
+- evidence_ids:
+  - e1
+  id: seg_bicycle
+  name: 自行車胎
+  period: '2025'
+  revenue_share_pct: 22.23
+- evidence_ids:
+  - e1
+  id: seg_agri_industrial
+  name: 農工業用胎
+  period: '2025'
+  revenue_share_pct: 20.75
+- evidence_ids:
+  - e1
+  id: seg_auto_truck
+  name: 卡汽車胎
+  period: '2025'
+  revenue_share_pct: 1.4
+- evidence_ids:
+  - e1
+  id: seg_radial
+  name: 輻射層外胎
+  period: '2025'
+  revenue_share_pct: 0.39
+- evidence_ids:
+  - e1
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 0.17
+main_theme: theme.ev
+themes:
+- also: []
+  stage: parts
+  theme: theme.ev
+  tier: midstream
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 泰國輪胎製造及銷售子公司
+    details:
+    - 泰國輪胎製造及銷售子公司
+    edge: ede13626a3318
+    evidence_level: primary
+    id: org.華豐橡膠-泰國-大眾股份有限公司
+    name: 華豐橡膠(泰國)大眾股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 美國輪胎銷售子公司
+    details:
+    - 美國輪胎銷售子公司
+    edge: ed8041f1c0848
+    evidence_level: primary
+    id: org.華豐橡膠-美國-有限公司
+    name: 華豐橡膠(美國)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 蘇州輪胎製造及銷售子公司
+    details:
+    - 蘇州輪胎製造及銷售子公司
+    edge: efe757be9177f
+    evidence_level: primary
+    id: org.華豐橡膠-蘇州-有限公司
+    name: 華豐橡膠(蘇州)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.duro.com.tw
 tax_id: '59760104'
 incorporated: '1959-05-27'
 listed: '2000-05-08'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2109#e1:
+    locator: 印刷頁49，肆、營運概況／一、業務內容／商品、服務項目及其營業比重；PDF第53頁
+    published_date: '2026-03-31'
+    publisher: 華豐橡膠工業股份有限公司
+    quote_check: found
+    title: 華豐橡膠工業股份有限公司2025年報
+    url: https://www.duro.com.tw/files/uploads/Stock_Investoer/%E8%82%A1%E6%9D%B1%E6%9C%83/2026/114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1-0820%E6%9B%B4%E6%AD%A3(Final).pdf
+  tw.2109#e2:
+    locator: 品牌理念／輪動世界，穩健守護
+    published_date: null
+    publisher: 華豐橡膠工業股份有限公司
+    quote_check: found
+    title: 品牌理念
+    url: https://www.duro.com.tw/about-brand
+  tw.2109#e3:
+    locator: 印刷頁15，附註四（三）2、列入合併財務報告之子公司；PDF第15頁
+    published_date: null
+    publisher: 華豐橡膠工業股份有限公司
+    quote_check: found
+    title: 華豐橡膠工業股份有限公司及子公司2026年第二季合併財務報告
+    url: https://www.duro.com.tw/files/uploads/Stock_Investoer/Financial%20report/2026Q2.pdf
+  tw.2109#e4:
+    locator: 印刷頁15，附註四（三）2、列入合併財務報告之子公司；PDF第15頁
+    published_date: null
+    publisher: 華豐橡膠工業股份有限公司
+    quote_check: found
+    title: 華豐橡膠工業股份有限公司及子公司2026年第二季合併財務報告
+    url: https://www.duro.com.tw/files/uploads/Stock_Investoer/Financial%20report/2026Q2.pdf
+  tw.2109#e5:
+    locator: 印刷頁15，附註四（三）2、列入合併財務報告之子公司；PDF第15頁
+    published_date: null
+    publisher: 華豐橡膠工業股份有限公司
+    quote_check: found
+    title: 華豐橡膠工業股份有限公司及子公司2026年第二季合併財務報告
+    url: https://www.duro.com.tw/files/uploads/Stock_Investoer/Financial%20report/2026Q2.pdf
+  tw.2109#e6:
+    locator: 印刷頁3，最近二年度研究發展支出及成果／一一三年度／新產品；PDF第7頁
+    published_date: '2026-03-31'
+    publisher: 華豐橡膠工業股份有限公司
+    quote_check: found
+    title: 華豐橡膠工業股份有限公司2025年報
+    url: https://www.duro.com.tw/files/uploads/Stock_Investoer/%E8%82%A1%E6%9D%B1%E6%9C%83/2026/114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1-0820%E6%9B%B4%E6%AD%A3(Final).pdf

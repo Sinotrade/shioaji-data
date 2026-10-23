@@ -8,12 +8,114 @@ industry:
   l0_code: '28'
   l0_name: 電子零組件業
   l0_name_en: Electronic Parts and Components
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.connector
+  l3_name: 連接器與線材
+  l3_name_en: Connectors & Cables
+primary_chain_position: midstream
+summary_short: 主要製造與銷售電源線組，以及插座、插頭與轉接頭。
+summary_long: 維熹主要製造與銷售電源線組，2025年資訊及電機電器類電源線組占營收93.18%，插座、插頭、轉接頭及組合類占5.45%，其他產品占1.37%。公司也針對低軌衛星、電動車及AI伺服器等領域開發電源線與周邊產品。集團的直接製造子公司包括Well Shin Industries Corp.與Well Shin Electronic Vietnam Co., Ltd.，兩者業務均涵蓋電線電纜與電子零組件製造。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_power_cord
+  name: 資訊及電機電器類電源線組
+  period: '2025'
+  revenue_share_pct: 93.18
+- evidence_ids:
+  - e2
+  id: seg_plugs
+  name: 插座、插頭、轉接頭、組合類
+  period: '2025'
+  revenue_share_pct: 5.45
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 1.37
+main_theme: theme.ev
+themes:
+- also: []
+  stage: parts
+  theme: theme.ev
+  tier: midstream
+- also: []
+  stage: components
+  theme: theme.ai_server
+  tier: midstream
+- also: []
+  stage: components
+  theme: theme.leo_satellite
+  tier: upstream
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接製造子公司
+    details:
+    - 直接製造子公司
+    edge: e9d88b022c893
+    evidence_level: primary
+    id: org.well-shin-electronic-vietnam
+    name: Well Shin Electronic Vietnam Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接製造子公司
+    details:
+    - 直接製造子公司
+    edge: e9274ecbcadef
+    evidence_level: primary
+    id: org.well-shin-industries
+    name: Well Shin Industries Corp.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.wellshin.com.tw
 tax_id: '80272361'
 incorporated: '2002-09-03'
 listed: '2007-09-20'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3501#e2:
+    locator: 印刷頁67，主要產品之營業比重
+    published_date: '2026-04-30'
+    publisher: 維熹科技股份有限公司
+    quote_check: found
+    title: 維熹科技股份有限公司114年度年報
+    url: https://www.wellshin.com.tw/UserFiles/files/投資人專區/3-1%20股東資訊-%20公司年報/114年年報.pdf
+  tw.3501#e3:
+    locator: 印刷頁1，經營概況及策略執行
+    published_date: '2026-04-30'
+    publisher: 維熹科技股份有限公司
+    quote_check: found
+    title: 維熹科技股份有限公司114年度年報
+    url: https://www.wellshin.com.tw/UserFiles/files/投資人專區/3-1%20股東資訊-%20公司年報/114年年報.pdf
+  tw.3501#e4:
+    locator: 印刷頁69，產業上、中、下游之關聯性
+    published_date: '2026-04-30'
+    publisher: 維熹科技股份有限公司
+    quote_check: found
+    title: 維熹科技股份有限公司114年度年報
+    url: https://www.wellshin.com.tw/UserFiles/files/投資人專區/3-1%20股東資訊-%20公司年報/114年年報.pdf
+  tw.3501#e5:
+    locator: 印刷頁14，附註四（三）列入合併財務報告之子公司；投資公司、子公司及業務性質欄
+    published_date: '2026-08-11'
+    publisher: 維熹科技股份有限公司
+    quote_check: found
+    title: 維熹科技股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.wellshin.com.tw/UserFiles/files/投資人專區/1-1%20財務資訊%20-財務報告/維熹115Q2財報(電子書).pdf

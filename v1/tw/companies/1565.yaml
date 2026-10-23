@@ -8,12 +8,92 @@ industry:
   l0_code: '22'
   l0_name: 生技醫療業
   l0_name_en: Biotechnology and Medical Care
-primary_chain_position: unknown
+  l1: health
+  l1_name: 醫療保健
+  l1_name_en: Healthcare
+  l2: health.devices
+  l2_name: 醫療器材與服務
+  l2_name_en: Medical Devices & Services
+  l3: med.consumables
+  l3_name: 醫療耗材
+  l3_name_en: Medical Consumables
+chain: chain.biotech
+chain_stage:
+  agreement: both
+  also:
+  - stage: rnd
+    stage_name: 研發與原料
+    tier: upstream
+  reason: 以隱形眼鏡製造及OEM、ODM代工為主，另有鏡片與彩片圖紋研發設計。
+  stage: manufacturing
+  stage_name: 製造與代工
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 以隱形眼鏡製造銷售為主，提供自有品牌及OEM、ODM貼標服務。
+summary_long: 精華光學從事隱形眼鏡製造與銷售，經營自有品牌，並提供OEM、ODM及Private Label服務，由研發團隊協助鏡片設計、包裝與證照申請。官網列示的鏡片材質包括水膠與矽水膠，光學設計涵蓋近視、遠視、散光及漸進多焦，另提供隨流行趨勢研發的彩色鏡片花色圖紋設計。其產品與服務涵蓋鏡片材質、視力矯正設計與外觀設計等面向。公司歷史沿革另記載，2021年投資設立精華光學日本株式會社，並將其列為日本子公司。
+relations:
+  subsidiaries:
+  - as_of: '2026-10-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 官網沿革列示的日本子公司
+    details:
+    - 官網沿革列示的日本子公司
+    edge: e0e6f6b205df8
+    evidence_level: primary
+    id: org.精華光學日本株式會社
+    name: 精華光學日本株式會社
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.stshine.com.tw
 tax_id: '22195654'
 incorporated: '1986-09-24'
 listed: '2004-03-30'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1565#e1:
+    locator: 公司簡介首段
+    published_date: null
+    publisher: 精華光學股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.stshine.com.tw/about/company-introduction/
+  tw.1565#e2:
+    locator: 自有品牌與代工服務說明
+    published_date: null
+    publisher: 精華光學股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.stshine.com.tw/about/company-introduction/
+  tw.1565#e3:
+    locator: LENS MATERIAL 鏡片材質
+    published_date: null
+    publisher: 精華光學股份有限公司
+    quote_check: not_found
+    title: 產品
+    url: https://www.stshine.com.tw/products-services/product-introduction/contact-lenses/
+  tw.1565#e4:
+    locator: OPTICAL DESIGN 光學設計
+    published_date: null
+    publisher: 精華光學股份有限公司
+    quote_check: found
+    title: 產品
+    url: https://www.stshine.com.tw/products-services/product-introduction/contact-lenses/
+  tw.1565#e5:
+    locator: PATTERN DESIGN 彩片圖紋設計
+    published_date: null
+    publisher: 精華光學股份有限公司
+    quote_check: found
+    title: 產品
+    url: https://www.stshine.com.tw/products-services/product-introduction/contact-lenses/
+  tw.1565#e6:
+    locator: 2021年
+    published_date: null
+    publisher: 精華光學股份有限公司
+    quote_check: found
+    title: 歷史沿革
+    url: https://www.stshine.com.tw/about/history/

@@ -8,14 +8,53 @@ industry:
   l0_code: '24'
   l0_name: 半導體業
   l0_name_en: Semiconductor
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.semi
+  l2_name: 半導體
+  l2_name_en: Semiconductors
+  l3: semi.ic_design
+  l3_name: IC 設計
+  l3_name_en: IC Design
+chain: chain.semiconductor
+chain_stage:
+  agreement: both
+  also: []
+  reason: 主要從事積體電路設計，電源管理IC占2025年營收72.26%，為最大來源。
+  stage: ip_design
+  stage_name: IP 與 IC 設計
+  tier: upstream
+primary_chain_position: upstream
+summary_short: 以電源管理IC為主，另銷售磁場感測、馬達驅動及微控制器IC。
+summary_long: 類比科主要從事半導體積體電路的設計、研究與開發，以電源管理IC為最大營收來源。2025年電源管理IC占營收72.26%，磁場感測及馬達驅動IC占26.30%，微控制器IC占1.44%。電源管理產品涵蓋穿戴式及手持式AMOLED顯示器應用；馬達產品包括單線圈與三相直流無刷馬達驅動IC，微控制器則有通用型與整合型產品。依2026年第二季財報，致新科技持有43.54%股權，為其最終母公司。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_pmic
+  name: 電源管理IC
+  period: '2025'
+  revenue_share_pct: 72.26
+- evidence_ids:
+  - e3
+  id: seg_motor
+  name: 磁場感測及馬達驅動IC
+  period: '2025'
+  revenue_share_pct: 26.3
+- evidence_ids:
+  - e4
+  id: seg_mcu
+  name: 微控制器IC
+  period: '2025'
+  revenue_share_pct: 1.44
 relations:
   parents:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持股43.54%且具控制力的IC子公司
+    detail: 持股43.54%的最終母公司
     details:
+    - 持股43.54%的最終母公司
     - 直接持股43.54%且具控制力的IC子公司
     edge: eb6c0e4aadf22
     evidence_level: primary
@@ -24,12 +63,68 @@ relations:
     ranking_basis: unranked
     share_basis: null
     share_pct: null
-    weight: 1
+    weight: 2
 website: http://www.aat-ic.com
 tax_id: '16795912'
 incorporated: '1999-03-25'
 listed: '2006-07-19'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3438#e1:
+    locator: 第69頁，業務範圍
+    published_date: null
+    publisher: 台灣類比科技股份有限公司
+    quote_check: found
+    title: 台灣類比科技股份有限公司114年度年報
+    url: http://www.aat-ic.com/upload/media/h21hh21ab23.pdf
+  tw.3438#e2:
+    locator: 第69頁，114年度營業比重
+    published_date: null
+    publisher: 台灣類比科技股份有限公司
+    quote_check: found
+    title: 台灣類比科技股份有限公司114年度年報
+    url: http://www.aat-ic.com/upload/media/h21hh21ab23.pdf
+  tw.3438#e3:
+    locator: 第69頁，114年度營業比重
+    published_date: null
+    publisher: 台灣類比科技股份有限公司
+    quote_check: found
+    title: 台灣類比科技股份有限公司114年度年報
+    url: http://www.aat-ic.com/upload/media/h21hh21ab23.pdf
+  tw.3438#e4:
+    locator: 第69頁，114年度營業比重
+    published_date: null
+    publisher: 台灣類比科技股份有限公司
+    quote_check: found
+    title: 台灣類比科技股份有限公司114年度年報
+    url: http://www.aat-ic.com/upload/media/h21hh21ab23.pdf
+  tw.3438#e5:
+    locator: 第69頁，目前之商品項目第7項
+    published_date: null
+    publisher: 台灣類比科技股份有限公司
+    quote_check: found
+    title: 台灣類比科技股份有限公司114年度年報
+    url: http://www.aat-ic.com/upload/media/h21hh21ab23.pdf
+  tw.3438#e6:
+    locator: 第69頁，目前之商品項目第1項
+    published_date: null
+    publisher: 台灣類比科技股份有限公司
+    quote_check: found
+    title: 台灣類比科技股份有限公司114年度年報
+    url: http://www.aat-ic.com/upload/media/h21hh21ab23.pdf
+  tw.3438#e7:
+    locator: 第69頁，目前之商品項目第5項
+    published_date: null
+    publisher: 台灣類比科技股份有限公司
+    quote_check: found
+    title: 台灣類比科技股份有限公司114年度年報
+    url: http://www.aat-ic.com/upload/media/h21hh21ab23.pdf
+  tw.3438#e8:
+    locator: 第12頁，公司沿革
+    published_date: '2026-08-06'
+    publisher: 台灣類比科技股份有限公司
+    quote_check: found
+    title: 台灣類比科技股份有限公司115年及114年第二季財務報告暨會計師核閱報告
+    url: http://www.aat-ic.com/upload/media/e20aa21ab083.pdf

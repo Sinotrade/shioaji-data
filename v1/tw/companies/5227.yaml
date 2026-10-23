@@ -8,13 +8,109 @@ industry:
   l0_code: '28'
   l0_name: 電子零組件業
   l0_name_en: Electronic Parts and Components
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.battery
+  l3_name: 電池與電池模組
+  l3_name_en: Batteries & Battery Modules
+chain: chain.auto
+chain_stage:
+  agreement: both
+  also: []
+  reason: 營收主要來自電池粉體製造，核心產品為電動車電池用磷酸系正極材料，屬材料端。
+  stage: materials
+  stage_name: 材料與電子元件
+  tier: upstream
+primary_chain_position: upstream
+summary_short: 以磷酸系電池正極材料研發、製造與銷售為主，另提供技術授權及服務。
+summary_long: 立凱-KY以磷酸系電池正極材料的研發、製造與銷售為主要業務，產品包括磷酸鐵鋰（LFP），並開發磷酸鐵錳鋰（LMFP）材料。2025年合併財報列示，電池粉體製造收入為新台幣399,883仟元，技術授權及服務收入為767仟元，營收以製造業務為主。集團另提供專利技術授權與正極材料生產諮詢及支援服務，應用市場涵蓋儲能與電動車電池。主要子公司包括台灣立凱電能科技股份有限公司。
+segments:
+- evidence_ids:
+  - e3
+  id: battery_powder
+  name: 電池粉體－製造
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e3
+  id: licensing_services
+  name: 技術授權及服務
+  period: '2025'
+  revenue_share_pct: null
+main_theme: theme.ev
+themes:
+- also: []
+  stage: materials
+  theme: theme.ev
+  tier: upstream
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 主要營運子公司
+    details:
+    - 主要營運子公司
+    edge: eed29de1a9f9f
+    evidence_level: primary
+    id: org.advanced-lithium-electrochemistry-taiwan
+    name: 台灣立凱電能科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.aleees.com
 tax_id: '31604336'
 incorporated: '2007-11-16'
 listed: '2013-12-09'
 foreign_registration: KY 開曼群島
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.5227#e1:
+    locator: 公司基本資料／主要業務
+    published_date: null
+    publisher: Aleees 立凱電
+    quote_check: found
+    title: 公司基本資料
+    url: https://www.aleees.com/zh/investor-relation/company-profile/
+  tw.5227#e2:
+    locator: 首頁／關於立凱電
+    published_date: null
+    publisher: Aleees 立凱電
+    quote_check: found
+    title: Aleees 立凱電－關於立凱電
+    url: https://www.aleees.com/zh/
+  tw.5227#e3:
+    locator: 第57頁／十四、營運部門資訊／產品別及勞務別之資訊；欄序為114年度、113年度
+    published_date: '2026-03-25'
+    publisher: 立凱-KY
+    quote_check: found
+    title: 民國114年度及113年度合併財務報告暨會計師查核報告
+    url: https://www.aleees.com/wp-content/uploads/%E8%93%8B%E6%9B%BC%E7%AB%8B%E5%87%B1.2025%E5%90%88%E4%BD%B5%E5%B9%B4%E5%BA%A6.20251231.FS_.AllReport.CHT_.pdf
+  tw.5227#e4:
+    locator: 第57頁／十四、營運部門資訊／產品別及勞務別之資訊
+    published_date: '2026-03-25'
+    publisher: 立凱-KY
+    quote_check: found
+    title: 民國114年度及113年度合併財務報告暨會計師查核報告
+    url: https://www.aleees.com/wp-content/uploads/%E8%93%8B%E6%9B%BC%E7%AB%8B%E5%87%B1.2025%E5%90%88%E4%BD%B5%E5%B9%B4%E5%BA%A6.20251231.FS_.AllReport.CHT_.pdf
+  tw.5227#e5:
+    locator: 第2頁／公司介紹
+    published_date: '2025-10-22'
+    publisher: Aleees 立凱電
+    quote_check: found
+    title: 立凱-KY法人說明會
+    url: https://www.aleees.com/wp-content/uploads/Aleees%E6%B3%95%E8%AA%AA%E6%9C%83251022.pdf
+  tw.5227#e6:
+    locator: 第59頁／附表一註3
+    published_date: '2026-03-25'
+    publisher: 立凱-KY
+    quote_check: found
+    title: 民國114年度及113年度合併財務報告暨會計師查核報告
+    url: https://www.aleees.com/wp-content/uploads/%E8%93%8B%E6%9B%BC%E7%AB%8B%E5%87%B1.2025%E5%90%88%E4%BD%B5%E5%B9%B4%E5%BA%A6.20251231.FS_.AllReport.CHT_.pdf

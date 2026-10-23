@@ -8,12 +8,199 @@ industry:
   l0_code: '27'
   l0_name: 通信網路業
   l0_name_en: Communications and Internet
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.network
+  l2_name: 通信網路
+  l2_name_en: Communications & Networking
+  l3: net.wireless
+  l3_name: 無線通訊與射頻
+  l3_name_en: Wireless & RF
+chain: chain.networking
+chain_stage:
+  agreement: both
+  also: []
+  reason: 電子陶瓷元件營收占65%最高，通訊產品以天線與天線模組為主，屬零組件與模組。
+  stage: modules
+  stage_name: 模組與零組件
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 製造天線、天線模組與壓電陶瓷元件，並提供超音波感測及電路保護產品。
+summary_long: 詠業的主要產品包括無線通訊用天線與天線模組、壓電陶瓷元件，另提供超音波感測器及過電壓、過電流保護元件。2026年第二季營收組成以電子陶瓷元件占65%最高，模組與系統產品占28%，其他電子零組件占7%。公司官網列有結合5G NR、4G LTE及GNSS的多合一天線產品，可歸入5G通訊零組件題材。達方電子為其母公司；子公司包括Unicom Technologies、越南公司及間接持股的詠業科技（深圳）有限公司。
+segments:
+- evidence_ids:
+  - e4
+  id: ceramic
+  name: 電子陶瓷元件
+  period: 2026Q2
+  revenue_share_pct: 65
+- evidence_ids:
+  - e5
+  id: modules_systems
+  name: 模組與系統產品
+  period: 2026Q2
+  revenue_share_pct: 28
+- evidence_ids:
+  - e6
+  id: other_components
+  name: 其他電子零組件
+  period: 2026Q2
+  revenue_share_pct: 7
+main_theme: theme.5g
+themes:
+- also: []
+  stage: components
+  theme: theme.5g
+  tier: upstream
+relations:
+  parents:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 母公司
+    details:
+    - 母公司
+    edge: ec3664f39d1f4
+    evidence_level: primary
+    id: tw.8163
+    name: 達方
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股子公司
+    details:
+    - 直接持股子公司
+    edge: ecd1ff40cb58c
+    evidence_level: primary
+    id: org.unicom-technologies-mauritius
+    name: Unicom Technologies, Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持股子公司
+    details:
+    - 間接持股子公司
+    edge: ea586c882639a
+    evidence_level: primary
+    id: org.unictron-technologies-shenzhen
+    name: 詠業科技(深圳)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 越南子公司
+    details:
+    - 越南子公司
+    edge: efee9cebf3fe2
+    evidence_level: primary
+    id: org.unictron-technologies-vietnam
+    name: Unictron Technologies Vietnam Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.unictron.com/
 tax_id: '22864367'
 incorporated: '1988-04-08'
 listed: '2021-12-08'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6792#e1:
+    locator: 公司介紹首段
+    published_date: null
+    publisher: 詠業科技股份有限公司
+    quote_check: found
+    title: 關於詠業
+    url: https://www.unictron.com/about-us/?lang=zh-hant
+  tw.6792#e10:
+    locator: 印刷頁42，附註七（二）關係人之名稱及關係
+    published_date: null
+    publisher: 詠業科技股份有限公司
+    quote_check: found
+    title: 114年度個體財務報告暨會計師查核報告
+    url: https://www.unictron.com/wp-content/uploads/2026/03/114%E5%B9%B4%E7%AC%AC%E5%9B%9B%E5%AD%A3%E5%80%8B%E9%AB%94%E8%B2%A1%E5%A0%B1.pdf
+  tw.6792#e11:
+    locator: 印刷頁42，附註七（二）關係人之名稱及關係
+    published_date: null
+    publisher: 詠業科技股份有限公司
+    quote_check: found
+    title: 114年度個體財務報告暨會計師查核報告
+    url: https://www.unictron.com/wp-content/uploads/2026/03/114%E5%B9%B4%E7%AC%AC%E5%9B%9B%E5%AD%A3%E5%80%8B%E9%AB%94%E8%B2%A1%E5%A0%B1.pdf
+  tw.6792#e12:
+    locator: 印刷頁42，附註七（二）關係人之名稱及關係
+    published_date: null
+    publisher: 詠業科技股份有限公司
+    quote_check: found
+    title: 114年度個體財務報告暨會計師查核報告
+    url: https://www.unictron.com/wp-content/uploads/2026/03/114%E5%B9%B4%E7%AC%AC%E5%9B%9B%E5%AD%A3%E5%80%8B%E9%AB%94%E8%B2%A1%E5%A0%B1.pdf
+  tw.6792#e2:
+    locator: 電路保護解決方案
+    published_date: null
+    publisher: 詠業科技股份有限公司
+    quote_check: found
+    title: 關於詠業
+    url: https://www.unictron.com/about-us/?lang=zh-hant
+  tw.6792#e3:
+    locator: 新聞內文首句
+    published_date: '2022-05-30'
+    publisher: 詠業科技股份有限公司
+    quote_check: found
+    title: Novel dual-frequency non-contact ultrasonic level transducer
+    url: https://www.unictron.com/news/novel-dual-frequency-non-contact-ultrasonic-level-transducer/
+  tw.6792#e4:
+    locator: 第6頁，季產品營收比例；電子陶瓷元件，114Q1至115Q2
+    published_date: '2026-07-30'
+    publisher: 詠業科技股份有限公司
+    quote_check: found
+    title: 115第二季法人說明會
+    url: https://www.unictron.com/wp-content/uploads/2026/07/%E6%B3%95%E8%AA%AA%E6%9C%83-20260730%E4%B8%AD%E6%96%87%E7%89%88.pdf
+  tw.6792#e5:
+    locator: 第6頁，季產品營收比例；模組與系統產品，114Q1至115Q2
+    published_date: '2026-07-30'
+    publisher: 詠業科技股份有限公司
+    quote_check: found
+    title: 115第二季法人說明會
+    url: https://www.unictron.com/wp-content/uploads/2026/07/%E6%B3%95%E8%AA%AA%E6%9C%83-20260730%E4%B8%AD%E6%96%87%E7%89%88.pdf
+  tw.6792#e6:
+    locator: 第6頁，季產品營收比例；其他電子零組件，114Q1至115Q2
+    published_date: '2026-07-30'
+    publisher: 詠業科技股份有限公司
+    quote_check: found
+    title: 115第二季法人說明會
+    url: https://www.unictron.com/wp-content/uploads/2026/07/%E6%B3%95%E8%AA%AA%E6%9C%83-20260730%E4%B8%AD%E6%96%87%E7%89%88.pdf
+  tw.6792#e7:
+    locator: 印刷頁64，產業上、中、下游之關聯性
+    published_date: '2026-04-15'
+    publisher: 詠業科技股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.unictron.com/wp-content/uploads/2026/05/114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1%E4%B8%AD%E6%96%87.pdf
+  tw.6792#e8:
+    locator: 產品名稱下方
+    published_date: null
+    publisher: 詠業科技股份有限公司
+    quote_check: found
+    title: MT-25B-AS-B4L01
+    url: https://www.unictron.com/wireless-communications/product/mt-25b-as-b4l01/
+  tw.6792#e9:
+    locator: 印刷頁42，附註七（二）關係人之名稱及關係
+    published_date: null
+    publisher: 詠業科技股份有限公司
+    quote_check: found
+    title: 114年度個體財務報告暨會計師查核報告
+    url: https://www.unictron.com/wp-content/uploads/2026/03/114%E5%B9%B4%E7%AC%AC%E5%9B%9B%E5%AD%A3%E5%80%8B%E9%AB%94%E8%B2%A1%E5%A0%B1.pdf

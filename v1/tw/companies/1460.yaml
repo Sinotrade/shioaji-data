@@ -8,12 +8,198 @@ industry:
   l0_code: '04'
   l0_name: 紡織纖維
   l0_name_en: Textiles
-primary_chain_position: unknown
+  l1: materials
+  l1_name: 原物料
+  l1_name_en: Materials
+  l2: mat.other
+  l2_name: 其他原物料
+  l2_name_en: Other Materials
+  l3: matl.textile_fiber
+  l3_name: 紡織纖維與機能布料
+  l3_name_en: Textiles, Fibers & Functional Fabrics
+chain: chain.textile
+chain_stage:
+  agreement: both
+  also:
+  - stage: fiber
+    stage_name: 纖維與紗
+    tier: upstream
+  - stage: garment
+    stage_name: 成衣、製鞋與品牌
+    tier: downstream
+  reason: 成品布為最大營收來源，主要從事織布與染整，另有加工紗及成衣生產業務。
+  stage: fabric
+  stage_name: 織布與染整
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 以成品布為主要營收來源，製造機能布料、加工紗及成衣。
+summary_long: 宏遠以成品布為營收主體，另銷售加工絲及其他紡織產品，製程涵蓋加工紗、平織與針織、染整、印花及塗佈貼合。產品包括運動、戶外與都會用途的機能布料、假撚紗線，以及不含氟的防水處理織物。成衣業務包含運動服飾、高機能性制服與團服，台灣廠產品涵蓋襯衫、外套及長褲。合併子公司中，泰國與上海公司從事織布及相關加工，美國公司從事紗與織布生產及染整，衣索比亞公司從事成衣生產。
+segments:
+- evidence_ids:
+  - e6
+  id: seg_fabric
+  name: 成品布
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e7
+  id: seg_yarn
+  name: 加工絲
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e8
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: null
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接子公司；成衣生產
+    details:
+    - 間接子公司；成衣生產
+    edge: e2dca133e0fec
+    evidence_level: primary
+    id: org.everest-apparel-ethiopia
+    name: Everest Apparel (Ethiopia) S.C
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接子公司；織物研發、生產、染織及後整理
+    details:
+    - 間接子公司；織物研發、生產、染織及後整理
+    edge: eca4dbf1cfe4d
+    evidence_level: primary
+    id: org.everest-development-shanghai
+    name: 宏遠發展（上海）有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接子公司；織布加工及相關生產銷售
+    details:
+    - 間接子公司；織布加工及相關生產銷售
+    edge: ef40fc40f2056
+    evidence_level: primary
+    id: org.everest-textile-thailand
+    name: 宏遠興業（泰國）公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接子公司；紗及織布生產與染整
+    details:
+    - 間接子公司；紗及織布生產與染整
+    edge: eb803c45f9a1d
+    evidence_level: primary
+    id: org.everest-textile-usa
+    name: Everest Textile USA, LLC
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.everest.com.tw/tw
 tax_id: '22817999'
 incorporated: '1988-02-08'
 listed: '1995-04-28'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1460#e1:
+    locator: 公司基本資料／主要業務
+    published_date: null
+    publisher: 宏遠興業股份有限公司
+    quote_check: found
+    title: 公司概況
+    url: https://www.everest.com.tw/tw/about/intro/overview
+  tw.1460#e10:
+    locator: 第32頁，附註十二「子公司」；Everest Investment（Holding）Limited 投資之上海公司列，含業務性質及持股欄
+    published_date: null
+    publisher: 宏遠興業股份有限公司
+    quote_check: found
+    title: 宏遠興業股份有限公司及子公司114及113年度合併財務報告
+    url: https://www.everest.com.tw/uploads/images/account/2025Q4all.pdf
+  tw.1460#e11:
+    locator: 第32頁，附註十二「子公司」；Everest USA Holdings, Inc. 投資之 Everest Textile USA, LLC 列，業務為紗及織布生產及染整
+    published_date: null
+    publisher: 宏遠興業股份有限公司
+    quote_check: found
+    title: 宏遠興業股份有限公司及子公司114及113年度合併財務報告
+    url: https://www.everest.com.tw/uploads/images/account/2025Q4all.pdf
+  tw.1460#e12:
+    locator: 第32頁，附註十二「子公司」；宏遠國際（香港）有限公司投資之 Everest Apparel（Ethiopia）S.C 列，業務為成衣生產
+    published_date: null
+    publisher: 宏遠興業股份有限公司
+    quote_check: found
+    title: 宏遠興業股份有限公司及子公司114及113年度合併財務報告
+    url: https://www.everest.com.tw/uploads/images/account/2025Q4all.pdf
+  tw.1460#e2:
+    locator: Sustainability／核心產品介紹
+    published_date: null
+    publisher: 宏遠興業股份有限公司
+    quote_check: found
+    title: 公司概況
+    url: https://www.everest.com.tw/tw/about/intro/overview
+  tw.1460#e3:
+    locator: Sustainability／環保材料與織物開發
+    published_date: null
+    publisher: 宏遠興業股份有限公司
+    quote_check: found
+    title: 公司概況
+    url: https://www.everest.com.tw/tw/about/intro/overview
+  tw.1460#e4:
+    locator: 成衣工廠／台灣成衣廠
+    published_date: null
+    publisher: 宏遠興業股份有限公司
+    quote_check: found
+    title: 成衣服務
+    url: https://www.everest.com.tw/tw/about/intro/clothes
+  tw.1460#e5:
+    locator: 成衣工廠／衣索比亞成衣廠
+    published_date: null
+    publisher: 宏遠興業股份有限公司
+    quote_check: found
+    title: 成衣服務
+    url: https://www.everest.com.tw/tw/about/intro/clothes
+  tw.1460#e6:
+    locator: 第38頁，所營業務之主要內容及其營業比重表／成品布列，114年營業比重欄
+    published_date: '2026-03-31'
+    publisher: 宏遠興業股份有限公司
+    quote_check: found
+    title: 宏遠興業2025年報
+    url: https://www.everest.com.tw/uploads/images/account/114.pdf
+  tw.1460#e7:
+    locator: 第38頁，所營業務之主要內容及其營業比重表／加工絲列，114年營業比重欄
+    published_date: '2026-03-31'
+    publisher: 宏遠興業股份有限公司
+    quote_check: found
+    title: 宏遠興業2025年報
+    url: https://www.everest.com.tw/uploads/images/account/114.pdf
+  tw.1460#e8:
+    locator: 第38頁，所營業務之主要內容及其營業比重表／其他列，114年營業比重欄
+    published_date: '2026-03-31'
+    publisher: 宏遠興業股份有限公司
+    quote_check: found
+    title: 宏遠興業2025年報
+    url: https://www.everest.com.tw/uploads/images/account/114.pdf
+  tw.1460#e9:
+    locator: 第32頁，附註十二「子公司」；Everest Investment（Holding）Limited 投資之泰國公司列，含業務性質及持股欄
+    published_date: null
+    publisher: 宏遠興業股份有限公司
+    quote_check: found
+    title: 宏遠興業股份有限公司及子公司114及113年度合併財務報告
+    url: https://www.everest.com.tw/uploads/images/account/2025Q4all.pdf

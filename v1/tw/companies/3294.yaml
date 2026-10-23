@@ -8,12 +8,189 @@ industry:
   l0_code: '28'
   l0_name: 電子零組件業
   l0_name_en: Electronic Parts and Components
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.chassis
+  l3_name: 機殼與機構件
+  l3_name_en: Chassis & Mechanical Parts
+primary_chain_position: midstream
+summary_short: 以電子產品塑膠機構件、精密模具與整合製造服務為主要收入來源。
+summary_long: 英濟以精密塑膠零組件與模具製造為主要收入來源，提供零組件設計、電子組裝、表面處理及功能測試等整合服務。2025年電子塑膠零組件占營收89.84%，生醫材占5.63%，模具占2.41%，另有產品開發、光電產品及其他收入。旗下英錡科技開發LCoS與LBS顯示模組；創奇生醫研發高壓注射耗材，於2026年取得美國FDA 510(k)核准。公司另開發機械視覺與邊緣AI即時運算模組，支援智慧載具環境辨識、避障與路徑規劃。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_plastic
+  name: 電子塑膠零組件
+  period: '2025'
+  revenue_share_pct: 89.84
+- evidence_ids:
+  - e2
+  id: seg_medical
+  name: 生醫材
+  period: '2025'
+  revenue_share_pct: 5.63
+- evidence_ids:
+  - e2
+  id: seg_mold
+  name: 模具
+  period: '2025'
+  revenue_share_pct: 2.41
+- evidence_ids:
+  - e2
+  id: seg_development
+  name: 產品開發
+  period: '2025'
+  revenue_share_pct: 1.57
+- evidence_ids:
+  - e2
+  id: seg_opto
+  name: 光電產品
+  period: '2025'
+  revenue_share_pct: 0.02
+- evidence_ids:
+  - e3
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 0.53
+main_theme: theme.drone
+themes:
+- also:
+  - stage: system
+    tier: downstream
+  stage: modules
+  theme: theme.drone
+  tier: midstream
+relations:
+  subsidiaries:
+  - as_of: '2026-05-18'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 藥械合一醫療產品子公司
+    details:
+    - 藥械合一醫療產品子公司
+    edge: e2f41fc1819e1
+    evidence_level: primary
+    id: org.chuangqi-biomedical
+    name: 創奇生醫股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 光電事業子公司
+    details:
+    - 光電事業子公司
+    edge: e4b878d041875
+    evidence_level: primary
+    id: org.mega1
+    name: 英錡科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.megaforce.com.tw
 tax_id: '86362776'
 incorporated: '1991-10-15'
 listed: '2007-04-27'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3294#e10:
+    locator: 降低遠端傳輸依賴章節
+    published_date: '2026-09-15'
+    publisher: 英濟股份有限公司
+    quote_check: found
+    title: 無人載具「看」得懂！英濟機械視覺整合AI運算 台灣創新技術博覽會展實力
+    url: https://www.megaforce.com.tw/zh-tw/News/Article?sn_id=2055&y=2026
+  tw.3294#e11:
+    locator: 產品與公司背景段落
+    published_date: '2018-12-04'
+    publisher: 英濟股份有限公司
+    quote_check: found
+    title: 英錡科技成功研發最輕巧方便微型雷射投影卡 獲資訊月創新金質獎肯定
+    url: https://www.megaforce.com.tw/zh-tw/News/Article?sn_id=20&y=2018
+  tw.3294#e12:
+    locator: 公司沿革，2024年
+    published_date: null
+    publisher: 英濟股份有限公司
+    quote_check: found
+    title: 公司簡介與沿革
+    url: https://www.megaforce.com.tw/zh-tw/Html/Profile
+  tw.3294#e13:
+    locator: 光電與AI技術突破章節
+    published_date: '2026-08-10'
+    publisher: 英濟股份有限公司
+    quote_check: found
+    title: 英濟(3294)下半年力拚加值轉型 新事業生醫材、光電AI技術各展頭角
+    url: https://www.megaforce.com.tw/zh-tw/News/Article?sn_id=2054&y=2026
+  tw.3294#e14:
+    locator: 無人載具事業
+    published_date: null
+    publisher: 英濟股份有限公司
+    quote_check: found
+    title: 英濟事業：無人載具事業
+    url: https://www.megaforce.com.tw/zh-tw/Product/Product
+  tw.3294#e2:
+    locator: 印刷頁68，商品服務項目及營業比重表；電子塑膠零組件至光電產品各列
+    published_date: null
+    publisher: 英濟股份有限公司
+    quote_check: found
+    title: 英濟股份有限公司114年度年報
+    url: https://www.megaforce.com.tw/upload/media/ir/stock_report/2026/2026AnnualReport.pdf
+  tw.3294#e3:
+    locator: 印刷頁68，商品服務項目及營業比重表，其他列
+    published_date: null
+    publisher: 英濟股份有限公司
+    quote_check: found
+    title: 英濟股份有限公司114年度年報
+    url: https://www.megaforce.com.tw/upload/media/ir/stock_report/2026/2026AnnualReport.pdf
+  tw.3294#e4:
+    locator: 印刷頁61，115年4月30日轉投資事業綜合持股比例表，英錡科技列
+    published_date: null
+    publisher: 英濟股份有限公司
+    quote_check: found
+    title: 英濟股份有限公司114年度年報
+    url: https://www.megaforce.com.tw/upload/media/ir/stock_report/2026/2026AnnualReport.pdf
+  tw.3294#e5:
+    locator: 精密組件與系統整合事業
+    published_date: null
+    publisher: 英濟股份有限公司
+    quote_check: found
+    title: 英濟事業：精密組件與系統整合事業
+    url: https://www.megaforce.com.tw/zh-tw/Product/Product
+  tw.3294#e6:
+    locator: 掌握關鍵技術資源
+    published_date: null
+    publisher: 英濟股份有限公司
+    quote_check: found
+    title: 英濟事業：我們的競爭優勢
+    url: https://www.megaforce.com.tw/zh-tw/Product/Product
+  tw.3294#e7:
+    locator: 首段
+    published_date: '2022-05-24'
+    publisher: 英濟股份有限公司
+    quote_check: found
+    title: 英濟旗下光電事業生力軍入列 獲日本客戶高度肯定
+    url: https://www.megaforce.com.tw/zh-tw/News/Article?sn_id=36&y=2022
+  tw.3294#e8:
+    locator: 首段
+    published_date: '2026-05-18'
+    publisher: 英濟股份有限公司
+    quote_check: found
+    title: 英濟（3294）生醫佈局大躍進：旗下創奇生醫產品獲美國 FDA 510(k) 核准
+    url: https://www.megaforce.com.tw/zh-tw/News/Article?sn_id=2053&y=2026
+  tw.3294#e9:
+    locator: 首段
+    published_date: '2026-09-15'
+    publisher: 英濟股份有限公司
+    quote_check: found
+    title: 無人載具「看」得懂！英濟機械視覺整合AI運算 台灣創新技術博覽會展實力
+    url: https://www.megaforce.com.tw/zh-tw/News/Article?sn_id=2055&y=2026

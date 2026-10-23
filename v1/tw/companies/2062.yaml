@@ -8,12 +8,170 @@ industry:
   l0_code: '38'
   l0_name: 居家生活
   l0_name_en: Home Life
-primary_chain_position: unknown
+  l1: consumer
+  l1_name: 消費
+  l1_name_en: Consumer
+  l2: cons.discretionary
+  l2_name: 非必需消費
+  l2_name_en: Consumer Discretionary
+  l3: consumer.furniture
+  l3_name: 家具與居家用品
+  l3_name_en: Furniture & Home Furnishings
+primary_chain_position: midstream
+summary_short: 製造水龍頭金屬零配件與組裝件，並提供特殊外觀表面處理服務。
+summary_long: 橋椿金屬主要製造水龍頭金屬零配件與組裝件，並提供各種特殊外觀表面處理服務。2025年度合併營收組成為水龍頭金屬零配件56%、水龍頭金屬組裝件33%、其他11%，主要收入來自廚衛水龍頭相關產品。公司具備鋅、銅裝飾與功能性零組件製造技術，以及水龍頭成品設計、驗證、組裝與測試能力。集團旗下橋智自動化從事自動控制設備安裝及買賣；Sunspring America、橋椿金屬（珠海）與肇慶市寶信金屬實業則從事衛生、建築器材及相關金屬零件的生產與銷售。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_parts
+  name: 水龍頭金屬零配件
+  period: '2025'
+  revenue_share_pct: 56
+- evidence_ids:
+  - e1
+  id: seg_assemblies
+  name: 水龍頭金屬組裝件
+  period: '2025'
+  revenue_share_pct: 33
+- evidence_ids:
+  - e1
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 11
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有96.5%的自動控制設備子公司
+    details:
+    - 直接持有96.5%的自動控制設備子公司
+    edge: e5419392888fa
+    evidence_level: primary
+    id: org.qiaozhi-automation
+    name: 橋智自動化股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%的美國製造銷售子公司
+    details:
+    - 直接持有100%的美國製造銷售子公司
+    edge: e66dce0c5ab4a
+    evidence_level: primary
+    id: org.sunspring-america
+    name: Sunspring America Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%的投資控股子公司
+    details:
+    - 直接持有100%的投資控股子公司
+    edge: eb961a1c09651
+    evidence_level: primary
+    id: org.sunspring-holding-corporation
+    name: Sunspring Holding Corporation
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過SIC間接持有100%的製造銷售子公司
+    details:
+    - 透過SIC間接持有100%的製造銷售子公司
+    edge: e54293188c3d4
+    evidence_level: primary
+    id: org.sunspring-metal-zhuhai
+    name: 橋椿金屬（珠海）有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過GFI間接持有100%的製造銷售子公司
+    details:
+    - 透過GFI間接持有100%的製造銷售子公司
+    edge: e71172d62d516
+    evidence_level: primary
+    id: org.zhaoqing-baoxin-metal
+    name: 肇慶市寶信金屬實業有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.sunspring.com.tw
 tax_id: '59353423'
 incorporated: '1984-07-09'
 listed: '2007-11-16'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2062#e1:
+    locator: 印刷頁76，營業比重
+    published_date: '2026-03-02'
+    publisher: 橋椿金屬股份有限公司
+    quote_check: found
+    title: 橋椿金屬股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51964/2026/RNS/51964_rns_2026-04-10_e7d97d18-fac3-4833-ae95-c3dbffc8d70a.pdf
+  tw.2062#e2:
+    locator: 印刷頁76，本公司目前之產品
+    published_date: '2026-03-02'
+    publisher: 橋椿金屬股份有限公司
+    quote_check: found
+    title: 橋椿金屬股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51964/2026/RNS/51964_rns_2026-04-10_e7d97d18-fac3-4833-ae95-c3dbffc8d70a.pdf
+  tw.2062#e3:
+    locator: 橋椿核心競爭優勢，第2至3項
+    published_date: null
+    publisher: 橋椿金屬股份有限公司
+    quote_check: found
+    title: SUNSPRING－橋椿核心競爭優勢
+    url: https://www.sunspring.com.tw/tw/
+  tw.2062#e4:
+    locator: 印刷頁16，附註十一子公司；持股欄依序為115年6月底、114年底、114年6月底
+    published_date: null
+    publisher: 橋椿金屬股份有限公司
+    quote_check: found
+    title: 橋椿金屬股份有限公司及子公司115年第2季合併財務報告
+    url: https://www.sunspring.com.tw/upload/investor_financial/202608311417521.pdf
+  tw.2062#e5:
+    locator: 印刷頁16，附註十一子公司；橋智公司列
+    published_date: null
+    publisher: 橋椿金屬股份有限公司
+    quote_check: found
+    title: 橋椿金屬股份有限公司及子公司115年第2季合併財務報告
+    url: https://www.sunspring.com.tw/upload/investor_financial/202608311417521.pdf
+  tw.2062#e6:
+    locator: 印刷頁17，附註十一子公司；SSA列
+    published_date: null
+    publisher: 橋椿金屬股份有限公司
+    quote_check: found
+    title: 橋椿金屬股份有限公司及子公司115年第2季合併財務報告
+    url: https://www.sunspring.com.tw/upload/investor_financial/202608311417521.pdf
+  tw.2062#e7:
+    locator: 印刷頁17，附註十一子公司；SIC為Sunspring International Corporation，屬SSH全資子公司
+    published_date: null
+    publisher: 橋椿金屬股份有限公司
+    quote_check: found
+    title: 橋椿金屬股份有限公司及子公司115年第2季合併財務報告
+    url: https://www.sunspring.com.tw/upload/investor_financial/202608311417521.pdf
+  tw.2062#e8:
+    locator: 印刷頁17，附註十一子公司；GFI為Golden Faith International Corporation，屬SSH全資子公司
+    published_date: null
+    publisher: 橋椿金屬股份有限公司
+    quote_check: found
+    title: 橋椿金屬股份有限公司及子公司115年第2季合併財務報告
+    url: https://www.sunspring.com.tw/upload/investor_financial/202608311417521.pdf

@@ -8,12 +8,112 @@ industry:
   l0_code: '22'
   l0_name: 生技醫療業
   l0_name_en: Biotechnology and Medical Care
-primary_chain_position: unknown
+  l1: health
+  l1_name: 醫療保健
+  l1_name_en: Healthcare
+  l2: health.pharma
+  l2_name: 製藥與生技
+  l2_name_en: Pharmaceuticals & Biotech
+  l3: bio.cdmo
+  l3_name: 生技代工（CDMO）
+  l3_name_en: Biologics CDMO
+chain: chain.biotech
+chain_stage:
+  agreement: both
+  also:
+  - stage: rnd
+    stage_name: 研發與原料
+    tier: upstream
+  reason: 主要營收來自生物藥委託開發製造服務，提供GMP生產與無菌充填，並涵蓋細胞株及製程開發。
+  stage: manufacturing
+  stage_name: 製造與代工
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 以生物藥委託開發暨製造服務為主，提供製程開發、GMP生產與無菌充填。
+summary_long: 永昕以生物藥委託開發暨製造服務（CDMO）為主，提供可開發性評估、細胞株與製程開發及GMP生產。2025年技術服務收入為新台幣736,962仟元，其他收入3,276仟元。製劑服務包含無菌充填；抗體藥物複合體服務涵蓋抗體、連接子與藥物及偶聯製程的開發製造。技術平台包括NaxLEAP轉座子系統與ExoMX外泌體平台。2025年底合併範圍包含美國子公司Mycenax Biotech USA, LLC。
+segments:
+- evidence_ids:
+  - e7
+  id: technical_services
+  name: 技術服務收入
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e7
+  id: other_revenue
+  name: 其他收入
+  period: '2025'
+  revenue_share_pct: null
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 美國子公司
+    details:
+    - 美國子公司
+    edge: e8c14a41aad2d
+    evidence_level: primary
+    id: org.mycenax-biotech-usa
+    name: Mycenax Biotech USA, LLC
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.mycenax.com
 tax_id: '12905993'
 incorporated: '2001-09-28'
 listed: '2013-12-25'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4726#e1:
+    locator: About Mycenax，服務範圍段落
+    published_date: null
+    publisher: 永昕生物醫藥
+    quote_check: found
+    title: About Mycenax
+    url: https://mycenax.com/about.php?id=28
+  tw.4726#e2:
+    locator: Flexible Scale, Flexible Dosage
+    published_date: null
+    publisher: 永昕生物醫藥
+    quote_check: found
+    title: Aseptic Fill Finish
+    url: https://mycenax.com/cdmo.php?id=70
+  tw.4726#e3:
+    locator: Antibody-Drug Conjugate首段
+    published_date: null
+    publisher: 永昕生物醫藥
+    quote_check: found
+    title: Antibody-Drug Conjugate
+    url: https://mycenax.com/cdmo.php?id=56
+  tw.4726#e4:
+    locator: Mechanism of NaxLEAP™ System
+    published_date: null
+    publisher: 永昕生物醫藥
+    quote_check: found
+    title: NaxLeap™ Transposon System
+    url: https://mycenax.com/technologies.php?id=59
+  tw.4726#e5:
+    locator: Bridging Exosomes Innovation to Clinic with the ExoMX™ Platform
+    published_date: null
+    publisher: 永昕生物醫藥
+    quote_check: found
+    title: ExoMX™ Exosome Manufacturing
+    url: https://mycenax.com/technologies.php?id=82
+  tw.4726#e6:
+    locator: 印刷頁14，附註IV.3合併範圍表
+    published_date: null
+    publisher: 永昕生物醫藥
+    quote_check: found
+    title: 2025 Consolidated Financial Statements
+    url: https://mycenax.com/upload/2026_04_24_0920561.pdf
+  tw.4726#e7:
+    locator: 印刷頁53，XIII. SEGMENT INFORMATION，1. Major products and service revenues；金額單位為新台幣仟元
+    published_date: null
+    publisher: 永昕生物醫藥
+    quote_check: found
+    title: 2025 Consolidated Financial Statements
+    url: https://mycenax.com/upload/2026_04_24_0920561.pdf

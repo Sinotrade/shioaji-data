@@ -260,6 +260,54 @@ members:
   stage: board
   tier: midstream
   stage_role: primary
+- id: tw.3229
+  detail: PCB電鍍用磷銅球占營收61.52%，屬上游材料；另製造單面、雙面及多層電路板並提供鑽孔代工。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.3229#e1
+  - tw.3229#e4
+  - tw.3229#e5
+  confidence: ai_cross_checked
+  source: classification
+  stage: materials
+  tier: upstream
+  stage_role: primary
+- id: tw.3229
+  detail: PCB電鍍用磷銅球占營收61.52%，屬上游材料；另製造單面、雙面及多層電路板並提供鑽孔代工。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.3229#e1
+  - tw.3229#e4
+  - tw.3229#e5
+  confidence: ai_cross_checked
+  source: classification
+  stage: board
+  tier: midstream
+  stage_role: also
+- id: tw.3354
+  detail: 純膠為營收最大項，屬軟板上游材料；另製造軟性銅箔基材，跨銅箔基板階段。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.3354#e2
+  - tw.3354#e6
+  - tw.3354#e7
+  confidence: ai_cross_checked
+  source: classification
+  stage: materials
+  tier: upstream
+  stage_role: primary
+- id: tw.3354
+  detail: 純膠為營收最大項，屬軟板上游材料；另製造軟性銅箔基材，跨銅箔基板階段。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.3354#e2
+  - tw.3354#e6
+  - tw.3354#e7
+  confidence: ai_cross_checked
+  source: classification
+  stage: ccl
+  tier: midstream
+  stage_role: also
 - id: tw.3485
   detail: IC載板製程設備占營收94.11%，主要供應ABF等載板濕製程設備。
   as_of: '2026-10-13'
@@ -294,6 +342,16 @@ members:
   stage: tools
   tier: upstream
   stage_role: primary
+- id: tw.3631
+  detail: 主業為焊錫及助焊劑，屬電子組裝用周邊材料，未見符合所列階段的主要業務。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.3631#e2
+  - tw.3631#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: null
+  tier: null
 - id: tw.3645
   detail: 個體產品銷售全為PI薄膜，供軟板及軟性銅箔基板使用，屬上游材料。
   as_of: '2026-10-18'
@@ -326,6 +384,19 @@ members:
   - tw.4542#e3
   - tw.4542#e6
   - tw.4542#e7
+  confidence: ai_cross_checked
+  source: classification
+  stage: tools
+  tier: upstream
+  stage_role: primary
+- id: tw.4577
+  detail: 專業服務占營收75.10%，以雷射加工及設備維護為主，另產銷PCB與載板鑽孔、成型設備。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.4577#e1
+  - tw.4577#e2
+  - tw.4577#e3
+  - tw.4577#e4
   confidence: ai_cross_checked
   source: classification
   stage: tools
@@ -405,6 +476,28 @@ members:
   stage: materials
   tier: upstream
   stage_role: primary
+- id: tw.5291
+  detail: 以雙層、多層、HDI及厚銅PCB製造為核心，另生產自行車燈與電動輔助自行車等終端產品。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.5291#e1
+  - tw.5291#e2
+  confidence: ai_cross_checked
+  source: classification
+  stage: board
+  tier: midstream
+  stage_role: primary
+- id: tw.5291
+  detail: 以雙層、多層、HDI及厚銅PCB製造為核心，另生產自行車燈與電動輔助自行車等終端產品。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.5291#e1
+  - tw.5291#e2
+  confidence: ai_cross_checked
+  source: classification
+  stage: assembly
+  tier: downstream
+  stage_role: also
 - id: tw.5340
   detail: 主要製造銅箔基板用電子級玻纖布，屬PCB上游材料。
   as_of: '2026-10-15'
@@ -498,6 +591,18 @@ members:
   stage: board
   tier: midstream
   stage_role: also
+- id: tw.6108
+  detail: 主要製造、加工及銷售印刷電路板，營收以記憶體模組板與電腦應用板為主。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.6108#e1
+  - tw.6108#e2
+  - tw.6108#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: board
+  tier: midstream
+  stage_role: primary
 - id: tw.6141
   detail: 印刷電路板占營收100%，主要製造半導體測試板、HDI及軟硬結合板。
   as_of: '2026-10-20'
@@ -514,6 +619,17 @@ members:
   evidence:
   - tw.6153#e01
   - tw.6153#e13
+  confidence: ai_cross_checked
+  source: classification
+  stage: board
+  tier: midstream
+  stage_role: primary
+- id: tw.6156
+  detail: 印刷電路板生產與銷售占營收41.70%，為最大業務，屬電路板製造階段。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.6156#e1
+  - tw.6156#e3
   confidence: ai_cross_checked
   source: classification
   stage: board
@@ -550,6 +666,18 @@ members:
   source: classification
   stage: ccl
   tier: midstream
+  stage_role: primary
+- id: tw.6266
+  detail: 核心業務為PCBA、SMT及DIP組裝代工，並提供成品測試與系統組裝，屬下游組裝階段。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.6266#e1
+  - tw.6266#e2
+  - tw.6266#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: assembly
+  tier: downstream
   stage_role: primary
 - id: tw.6269
   detail: 軟式印刷電路板占營收94.91%，另提供SMT零件組裝及模組組裝。
@@ -658,6 +786,17 @@ members:
   stage: tools
   tier: upstream
   stage_role: primary
+- id: tw.6924
+  detail: 主業為PCB設計銷售與供應鏈整合，生產委由合作板廠執行，屬通路服務，未符合所列階段。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.6924#e1
+  - tw.6924#e2
+  - tw.6924#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: null
+  tier: null
 - id: tw.7795
   detail: 設備占營收93.74%，主力為ABF載板真空壓膜設備；膜材種類未明。
   as_of: '2026-10-15'
@@ -759,4 +898,4 @@ members:
   stage: materials
   tier: upstream
   stage_role: primary
-as_of: '2026-10-20'
+as_of: '2026-10-23'

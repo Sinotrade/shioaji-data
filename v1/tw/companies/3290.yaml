@@ -8,12 +8,190 @@ industry:
   l0_code: '28'
   l0_name: 電子零組件業
   l0_name_en: Electronic Parts and Components
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.chassis
+  l3_name: 機殼與機構件
+  l3_name_en: Chassis & Mechanical Parts
+primary_chain_position: midstream
+summary_short: 以電聲產品塑膠結構件、精密模具及車用電子製品代工為主。
+summary_long: 東浦提供塑膠零組件模具設計製造、射出成型、塗裝印刷及組裝加工服務，並製造聲學結構件與精密外觀件。2025年營收組成為電聲產品62%、車用產品23%、網通、工控及其他14%、醫療1%，電聲為最大收入來源。消費電子產品涵蓋頭戴式耳機、真無線耳機及揚聲器；車用產品包括攝影機模組、環景影像監視、駕駛員監測及電子後視鏡。官網另列AI資料中心相關製品，包括軌道式匯流排、插接盒、線束組件、配電單元、機櫃及運算模組托盤。
+segments:
+- evidence_ids:
+  - e3
+  id: seg_acoustic
+  name: 電聲產品
+  period: '2025'
+  revenue_share_pct: 62
+- evidence_ids:
+  - e3
+  id: seg_auto
+  name: 車用產品
+  period: '2025'
+  revenue_share_pct: 23
+- evidence_ids:
+  - e3
+  id: seg_network_other
+  name: 網通、工控及其他
+  period: '2025'
+  revenue_share_pct: 14
+- evidence_ids:
+  - e3
+  id: seg_medical
+  name: 醫療
+  period: '2025'
+  revenue_share_pct: 1
+main_theme: theme.ev
+themes:
+- also: []
+  stage: parts
+  theme: theme.ev
+  tier: midstream
+- also: []
+  stage: components
+  theme: theme.ai_server
+  tier: midstream
+- also: []
+  stage: equipment
+  theme: theme.data_center
+  tier: upstream
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接全資製造子公司
+    details:
+    - 間接全資製造子公司
+    edge: e937ed9f660ff
+    evidence_level: primary
+    id: org.東佳精密光電-南京-有限公司
+    name: 東佳精密光電(南京)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接全資製造子公司
+    details:
+    - 間接全資製造子公司
+    edge: eba09fcf3a9f0
+    evidence_level: primary
+    id: org.東佳精密光電-江蘇-有限公司
+    name: 東佳精密光電(江蘇)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接全資製造子公司
+    details:
+    - 間接全資製造子公司
+    edge: e32efede09192
+    evidence_level: primary
+    id: org.東浦精密光電-泰國-有限公司
+    name: 東浦精密光電(泰國)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接全資製造子公司
+    details:
+    - 間接全資製造子公司
+    edge: ec02009c4188e
+    evidence_level: primary
+    id: org.東莞東裕塑膠製品有限公司
+    name: 東莞東裕塑膠製品有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.donpon.com
 tax_id: '89347602'
 incorporated: '1995-03-08'
 listed: '2005-05-19'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3290#e1:
+    locator: 首頁公司介紹
+    published_date: null
+    publisher: 東浦精密光電股份有限公司
+    quote_check: found
+    title: 東浦精密光電股份有限公司官網
+    url: https://www.donpon.com/
+  tw.3290#e10:
+    locator: 內頁76頁，各關係企業基本資料及往來分工
+    published_date: '2026-04-20'
+    publisher: 東浦精密光電股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.donpon.com/uploads/%E6%9D%B1%E6%B5%A6%E5%B9%B4%E5%A0%B1%E5%8D%B0%E8%A3%BD%E7%94%A8Final20260716151633.pdf
+  tw.3290#e2:
+    locator: 內頁55頁，產業概況
+    published_date: '2026-04-20'
+    publisher: 東浦精密光電股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.donpon.com/uploads/%E6%9D%B1%E6%B5%A6%E5%B9%B4%E5%A0%B1%E5%8D%B0%E8%A3%BD%E7%94%A8Final20260716151633.pdf
+  tw.3290#e3:
+    locator: PDF第6頁，財務概況—產品組合；百分比依序為2024年至2025年
+    published_date: '2026-04-08'
+    publisher: 東浦精密光電股份有限公司
+    quote_check: found
+    title: 2026年第一次法人說明會：2025年度財務報告
+    url: https://www.donpon.com/uploads/%E6%B3%95%E8%AA%AA20260408%E4%B8%AD%E6%96%8720260409182637.pdf
+  tw.3290#e4:
+    locator: 音訊設備
+    published_date: null
+    publisher: 東浦精密光電股份有限公司
+    quote_check: found
+    title: 消費電子產品
+    url: https://www.donpon.com/products/list-450.html
+  tw.3290#e5:
+    locator: 攝像頭系統
+    published_date: null
+    publisher: 東浦精密光電股份有限公司
+    quote_check: found
+    title: 汽車電裝產品
+    url: https://www.donpon.com/products/list-449.html
+  tw.3290#e6:
+    locator: 產品項目
+    published_date: null
+    publisher: 東浦精密光電股份有限公司
+    quote_check: found
+    title: AI相關產品
+    url: https://www.donpon.com/products/list-511.html
+  tw.3290#e7:
+    locator: 推動AI基礎設施
+    published_date: null
+    publisher: 東浦精密光電股份有限公司
+    quote_check: found
+    title: AI相關產品
+    url: https://www.donpon.com/products/list-511.html
+  tw.3290#e8:
+    locator: PDF第4頁，2025年度應用領域
+    published_date: '2026-04-08'
+    publisher: 東浦精密光電股份有限公司
+    quote_check: found
+    title: 2026年第一次法人說明會：2025年度財務報告
+    url: https://www.donpon.com/uploads/%E6%B3%95%E8%AA%AA20260408%E4%B8%AD%E6%96%8720260409182637.pdf
+  tw.3290#e9:
+    locator: 內頁48頁，轉投資事業持股表；欄位依序為本公司、受控制事業、綜合投資
+    published_date: '2026-04-20'
+    publisher: 東浦精密光電股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.donpon.com/uploads/%E6%9D%B1%E6%B5%A6%E5%B9%B4%E5%A0%B1%E5%8D%B0%E8%A3%BD%E7%94%A8Final20260716151633.pdf

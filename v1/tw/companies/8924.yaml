@@ -8,12 +8,202 @@ industry:
   l0_code: '37'
   l0_name: 運動休閒
   l0_name_en: Sports and Leisure
-primary_chain_position: unknown
+  l1: consumer
+  l1_name: 消費
+  l1_name_en: Consumer
+  l2: cons.discretionary
+  l2_name: 非必需消費
+  l2_name_en: Consumer Discretionary
+  l3: consumer.sports
+  l3_name: 運動用品與健身器材
+  l3_name_en: Sporting Goods & Fitness Equipment
+primary_chain_position: not_applicable
+summary_short: 主要提供高爾夫球頭、球桿與球具設計製造服務，另經營自行車業務。
+summary_long: 大田以高爾夫球桿頭、球桿及球具的設計製造服務為主，產品包括鐵桿頭、木桿頭、推桿頭與碳纖維球桿，並提供球具組立。2025年鐵頭與木桿頭營收比重分別為49.60%及28.48%，組桿與製桿分別為7.11%及3.43%。另經營自行車成車與車架銷售，自行車營收占6.77%。集團直接持有O-TA GOLF GROUP及越南大田全部股權，並透過前者間接持有豐太、江西大田及領航全部股權。
+segments:
+- evidence_ids:
+  - e5
+  id: seg_iron
+  name: 鐵頭
+  period: '2025'
+  revenue_share_pct: 49.6
+- evidence_ids:
+  - e5
+  id: seg_wood
+  name: 木桿頭
+  period: '2025'
+  revenue_share_pct: 28.48
+- evidence_ids:
+  - e5
+  id: seg_assembly
+  name: 組桿（球具出貨）
+  period: '2025'
+  revenue_share_pct: 7.11
+- evidence_ids:
+  - e5
+  id: seg_shaft
+  name: 製桿
+  period: '2025'
+  revenue_share_pct: 3.43
+- evidence_ids:
+  - e5
+  id: seg_bicycle
+  name: 自行車
+  period: '2025'
+  revenue_share_pct: 6.77
+- evidence_ids:
+  - e5
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 4.61
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的子公司
+    details:
+    - 直接持股100%的子公司
+    edge: ec02666aab2a2
+    evidence_level: primary
+    id: org.o-ta-golf-group-co-ltd
+    name: O-TA GOLF GROUP CO., LTD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的子公司
+    details:
+    - 直接持股100%的子公司
+    edge: eb5945149fc0f
+    evidence_level: primary
+    id: org.大田精密工業越南有限公司
+    name: 大田精密工業越南有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過O-TA GOLF GROUP間接持股100%
+    details:
+    - 透過O-TA GOLF GROUP間接持股100%
+    edge: e01fa029260b9
+    evidence_level: primary
+    id: org.江西大田精密科技有限公司
+    name: 江西大田精密科技有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過O-TA GOLF GROUP間接持股100%
+    details:
+    - 透過O-TA GOLF GROUP間接持股100%
+    edge: e0ba237d5d026
+    evidence_level: primary
+    id: org.豐太國際有限公司
+    name: 豐太國際有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過O-TA GOLF GROUP間接持股100%
+    details:
+    - 透過O-TA GOLF GROUP間接持股100%
+    edge: e1f13dcb122a9
+    evidence_level: primary
+    id: org.領航複材科技-惠州-有限公司
+    name: 領航複材科技(惠州)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.o-ta.com.tw
 tax_id: '23060009'
 incorporated: '1988-07-18'
 listed: '2000-02-09'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.8924#e10:
+    locator: 第115頁，江西大田企業名稱及簡稱
+    published_date: null
+    publisher: 大田精密工業股份有限公司
+    quote_check: found
+    title: 大田精密工業股份有限公司2025年度年報
+    url: https://www.o-ta.com.tw/wp-content/uploads/2026/05/2025_8924_20260529F04_20260506_134212.pdf
+  tw.8924#e11:
+    locator: 第115頁，領航企業名稱及簡稱
+    published_date: null
+    publisher: 大田精密工業股份有限公司
+    quote_check: found
+    title: 大田精密工業股份有限公司2025年度年報
+    url: https://www.o-ta.com.tw/wp-content/uploads/2026/05/2025_8924_20260529F04_20260506_134212.pdf
+  tw.8924#e2:
+    locator: GOLF產品服務項目及其前段說明
+    published_date: null
+    publisher: 大田精密工業股份有限公司
+    quote_check: found
+    title: 主要產品與材質
+    url: https://www.o-ta.com.tw/product/
+  tw.8924#e3:
+    locator: GOLF產品服務項目：高爾夫球桿及球具組立
+    published_date: null
+    publisher: 大田精密工業股份有限公司
+    quote_check: found
+    title: 主要產品與材質
+    url: https://www.o-ta.com.tw/product/
+  tw.8924#e4:
+    locator: 第75頁，目前產品及服務項目第6項
+    published_date: null
+    publisher: 大田精密工業股份有限公司
+    quote_check: found
+    title: 大田精密工業股份有限公司2025年度年報
+    url: https://www.o-ta.com.tw/wp-content/uploads/2026/05/2025_8924_20260529F04_20260506_134212.pdf
+  tw.8924#e5:
+    locator: 第74頁，營業比重表；同頁及第75頁列產品與服務
+    published_date: null
+    publisher: 大田精密工業股份有限公司
+    quote_check: found
+    title: 大田精密工業股份有限公司2025年度年報
+    url: https://www.o-ta.com.tw/wp-content/uploads/2026/05/2025_8924_20260529F04_20260506_134212.pdf
+  tw.8924#e6:
+    locator: 第115頁，各關係企業董監事、總經理資料，註1
+    published_date: null
+    publisher: 大田精密工業股份有限公司
+    quote_check: found
+    title: 大田精密工業股份有限公司2025年度年報
+    url: https://www.o-ta.com.tw/wp-content/uploads/2026/05/2025_8924_20260529F04_20260506_134212.pdf
+  tw.8924#e7:
+    locator: 第115頁，各關係企業董監事、總經理資料，註2
+    published_date: null
+    publisher: 大田精密工業股份有限公司
+    quote_check: found
+    title: 大田精密工業股份有限公司2025年度年報
+    url: https://www.o-ta.com.tw/wp-content/uploads/2026/05/2025_8924_20260529F04_20260506_134212.pdf
+  tw.8924#e8:
+    locator: 第115頁，越南大田企業名稱及簡稱
+    published_date: null
+    publisher: 大田精密工業股份有限公司
+    quote_check: found
+    title: 大田精密工業股份有限公司2025年度年報
+    url: https://www.o-ta.com.tw/wp-content/uploads/2026/05/2025_8924_20260529F04_20260506_134212.pdf
+  tw.8924#e9:
+    locator: 第115頁，豐太企業名稱及簡稱
+    published_date: null
+    publisher: 大田精密工業股份有限公司
+    quote_check: found
+    title: 大田精密工業股份有限公司2025年度年報
+    url: https://www.o-ta.com.tw/wp-content/uploads/2026/05/2025_8924_20260529F04_20260506_134212.pdf

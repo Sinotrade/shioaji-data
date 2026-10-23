@@ -8,12 +8,70 @@ industry:
   l0_code: '14'
   l0_name: 建材營造業
   l0_name_en: Building Material and Construction
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.construction
+  l2_name: 營建與工程
+  l2_name_en: Engineering & Construction
+  l3: cons.materials
+  l3_name: 建材
+  l3_name_en: Building Materials
+primary_chain_position: not_applicable
+summary_short: 以預拌混凝土製造銷售為主，另有運輸服務收入。
+summary_long: 力泰主要從事預拌混凝土製造與銷售，服務範圍涵蓋大台北地區。2025年合併營收中，預拌混凝土占91.78%、運輸收入占8.14%，其他產品占0.08%，其中包含砂石等產品。混凝土產品包括已量產的10,000至13,000 PSI高性能混凝土、低碳混凝土及綠混凝土。子公司包括皓泰投資、佳裕開發實業、泰山航運事業與立勝航運，業務分別涵蓋一般投資、不動產租賃買賣及船舶出租運送。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_concrete
+  name: 預拌混凝土
+  period: '2025'
+  revenue_share_pct: 91.78
+- evidence_ids:
+  - e2
+  id: seg_transport
+  name: 運輸收入
+  period: '2025'
+  revenue_share_pct: 8.14
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他（含砂石等產品）
+  period: '2025'
+  revenue_share_pct: 0.08
 website: https://www.lihtai.com
 tax_id: '66410981'
 incorporated: '1976-05-06'
 listed: '1999-10-27'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.5520#e1:
+    locator: 01公司沿革
+    published_date: null
+    publisher: 力泰建設企業股份有限公司
+    quote_check: found
+    title: 公司簡介－關於力泰
+    url: https://www.lihtai.com/about/2
+  tw.5520#e2:
+    locator: 第52頁（PDF第56頁），4.1.1.2營業比重；單位：新台幣仟元、%
+    published_date: null
+    publisher: 力泰建設企業股份有限公司
+    quote_check: not_found
+    title: 力泰建設企業股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=5520&colorchg=1&filename=2025_5520_20260527F04.pdf&kind=F&step=9
+  tw.5520#e3:
+    locator: 第4頁（PDF第6頁），1-02關於本公司
+    published_date: '2026-08-28'
+    publisher: 力泰建設企業股份有限公司
+    quote_check: found
+    title: 2025年永續報告書
+    url: https://www.lihtai.com/download/downloadfile/download/24
+  tw.5520#e4:
+    locator: 第3頁（PDF第5頁），1-02-1公司簡介
+    published_date: '2026-08-28'
+    publisher: 力泰建設企業股份有限公司
+    quote_check: found
+    title: 2025年永續報告書
+    url: https://www.lihtai.com/download/downloadfile/download/24

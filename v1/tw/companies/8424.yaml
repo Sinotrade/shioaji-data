@@ -8,7 +8,37 @@ industry:
   l0_code: '14'
   l0_name: 建材營造業
   l0_name_en: Building Material and Construction
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.construction
+  l2_name: 營建與工程
+  l2_name_en: Engineering & Construction
+  l3: cons.materials
+  l3_name: 建材
+  l3_name_en: Building Materials
+primary_chain_position: not_applicable
+summary_short: 生產與銷售無石棉矽酸鈣板、纖維水泥板等防火建材。
+summary_long: 惠普以防火建材的生產與銷售為主要業務，核心產品為無石棉矽酸鈣板與纖維水泥板。2025年矽酸鈣板占營收64.54%，纖維水泥板占35.32%，其他產品占0.14%。矽酸鈣板可用於牆面隔間及天花板，纖維水泥板另適合較潮濕的場所。國浦纖維水泥板以水泥、石英砂、強化纖維及添加劑製造，經抄造成型與高溫高壓蒸氣養生。國產建材實業為其母公司，惠普另全資持有從事矽酸鈣板及其他板材銷售的國浦公司。
+segments:
+- evidence_ids:
+  - e3
+  id: seg_calcium_silicate
+  name: 矽酸鈣板
+  period: '2025'
+  revenue_share_pct: 64.54
+- evidence_ids:
+  - e4
+  id: seg_fiber_cement
+  name: 纖維水泥板
+  period: '2025'
+  revenue_share_pct: 35.32
+- evidence_ids:
+  - e5
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 0.14
 relations:
   parents:
   - as_of: '2026-08-20'
@@ -17,10 +47,26 @@ relations:
     detail: 建材業務子公司
     details:
     - 建材業務子公司
+    - 母公司
     edge: e6d47271a04b5
     evidence_level: primary
     id: tw.2504
     name: 國產
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 2
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司；矽酸鈣板及其他板材銷售
+    details:
+    - 全資子公司；矽酸鈣板及其他板材銷售
+    edge: e7f106d83e55b
+    evidence_level: primary
+    id: org.國浦-股-公司
+    name: 國浦(股)公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -29,7 +75,77 @@ website: http://www.wellpool.com.tw
 tax_id: '12371385'
 incorporated: '1981-11-30'
 listed: '2012-12-18'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.8424#e1:
+    locator: 關於惠普／公司業務介紹
+    published_date: null
+    publisher: 惠普股份有限公司
+    quote_check: found
+    title: 關於惠普｜惠普股份有限公司
+    url: https://www.wellpool.com.tw/tw/about-8.html
+  tw.8424#e10:
+    locator: 第13頁／合併財務報表編製主體表／投資公司為本公司，子公司為國浦(股)公司，115.6.30權益百分比100%，主要業務為矽酸鈣板及其他板材銷售
+    published_date: null
+    publisher: 惠普股份有限公司
+    quote_check: not_found
+    title: 惠普股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.wellpool.com.tw/tw/images_news/20260820154057/files/%E6%83%A0%E6%99%AE_FY26Q2_%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1(Final).pdf
+  tw.8424#e2:
+    locator: 國浦纖維水泥板／FC Board
+    published_date: null
+    publisher: 惠普股份有限公司
+    quote_check: found
+    title: 技術產品｜惠普股份有限公司
+    url: https://www.wellpool.com.tw/tw/about-32.html
+  tw.8424#e3:
+    locator: 印刷第45頁（PDF第49頁）／營業比重表／矽酸鈣板列／114年度營業比重欄
+    published_date: '2026-03-31'
+    publisher: 惠普股份有限公司
+    quote_check: not_found
+    title: 惠普股份有限公司114年度年報
+    url: https://www.wellpool.com.tw/tw/images_news/20260515084452/files/114%E5%B9%B4%E5%A0%B1(%E5%B7%B2%E7%94%A8%E5%8D%B0).pdf
+  tw.8424#e4:
+    locator: 印刷第45頁（PDF第49頁）／營業比重表／纖維水泥板列／114年度營業比重欄
+    published_date: '2026-03-31'
+    publisher: 惠普股份有限公司
+    quote_check: not_found
+    title: 惠普股份有限公司114年度年報
+    url: https://www.wellpool.com.tw/tw/images_news/20260515084452/files/114%E5%B9%B4%E5%A0%B1(%E5%B7%B2%E7%94%A8%E5%8D%B0).pdf
+  tw.8424#e5:
+    locator: 印刷第45頁（PDF第49頁）／營業比重表／其他列／114年度營業比重欄
+    published_date: '2026-03-31'
+    publisher: 惠普股份有限公司
+    quote_check: not_found
+    title: 惠普股份有限公司114年度年報
+    url: https://www.wellpool.com.tw/tw/images_news/20260515084452/files/114%E5%B9%B4%E5%A0%B1(%E5%B7%B2%E7%94%A8%E5%8D%B0).pdf
+  tw.8424#e6:
+    locator: 印刷第45頁（PDF第49頁）／公司目前之商品項目／基材類產品／矽酸鈣板
+    published_date: '2026-03-31'
+    publisher: 惠普股份有限公司
+    quote_check: found
+    title: 惠普股份有限公司114年度年報
+    url: https://www.wellpool.com.tw/tw/images_news/20260515084452/files/114%E5%B9%B4%E5%A0%B1(%E5%B7%B2%E7%94%A8%E5%8D%B0).pdf
+  tw.8424#e7:
+    locator: 國浦纖維水泥板／FC Board／適用環境
+    published_date: null
+    publisher: 惠普股份有限公司
+    quote_check: found
+    title: 技術產品｜惠普股份有限公司
+    url: https://www.wellpool.com.tw/tw/about-32.html
+  tw.8424#e8:
+    locator: 惠普矽酸鈣板／HP Board
+    published_date: null
+    publisher: 惠普股份有限公司
+    quote_check: found
+    title: 技術產品｜惠普股份有限公司
+    url: https://www.wellpool.com.tw/tw/about-32.html
+  tw.8424#e9:
+    locator: 第45頁／七、關係人交易／關係人名稱與關係表／國產建材實業列，關係欄為母公司
+    published_date: null
+    publisher: 惠普股份有限公司
+    quote_check: found
+    title: 惠普股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.wellpool.com.tw/tw/images_news/20260820154057/files/%E6%83%A0%E6%99%AE_FY26Q2_%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1(Final).pdf

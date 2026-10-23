@@ -8,12 +8,165 @@ industry:
   l0_code: '22'
   l0_name: 生技醫療業
   l0_name_en: Biotechnology and Medical Care
-primary_chain_position: unknown
+  l1: health
+  l1_name: 醫療保健
+  l1_name_en: Healthcare
+  l2: health.devices
+  l2_name: 醫療器材與服務
+  l2_name_en: Medical Devices & Services
+  l3: med.consumables
+  l3_name: 醫療耗材
+  l3_name_en: Medical Consumables
+chain: chain.biotech
+chain_stage:
+  agreement: both
+  also:
+  - stage: rnd
+    stage_name: 研發與原料
+    tier: upstream
+  reason: 測試片占營收77.19%，以檢測耗材製造為主，並明確從事檢驗儀器與試片研發。
+  stage: manufacturing
+  stage_name: 製造與代工
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 研發製造生化檢驗測試儀及測試片，營收以檢測耗材為主。
+summary_long: 五鼎研發、製造及銷售生化檢驗測試儀與測試片，產品涵蓋血糖、乳酸、血紅素及農藥殘毒檢測。2025年測試片占營收77.19%，測試儀套件占17.02%，電極測試片占2.21%，收入以檢測耗材為主。必立康四合一系統可檢測血糖、膽固醇、三酸甘油脂與尿酸，另有語音血糖測試儀。2025年底，公司持有蘇州五鼎生技醫療器械進出口貿易有限公司96%，以及美國Omnis Health, LLC 99%。
+segments:
+- evidence_ids:
+  - e_revenue
+  id: test_strips
+  name: 測試片
+  period: '2025'
+  revenue_share_pct: 77.19
+- evidence_ids:
+  - e_revenue
+  id: meter_kits
+  name: 測試儀套件
+  period: '2025'
+  revenue_share_pct: 17.02
+- evidence_ids:
+  - e_revenue
+  id: electrode_strips
+  name: 電極測試片
+  period: '2025'
+  revenue_share_pct: 2.21
+- evidence_ids:
+  - e_revenue_adjustment
+  id: other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 5.03
+- evidence_ids:
+  - e_revenue_adjustment
+  id: sales_returns_allowances
+  name: 銷貨退回及折讓
+  period: '2025'
+  revenue_share_pct: -1.45
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持有99%的美國子公司
+    details:
+    - 持有99%的美國子公司
+    edge: e06c5040f5fb1
+    evidence_level: primary
+    id: org.omnis-health
+    name: Omnis Health, LLC
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持有96%的中國子公司
+    details:
+    - 持有96%的中國子公司
+    edge: e5e8ab83617ff
+    evidence_level: primary
+    id: org.suzhou-apexbio
+    name: 蘇州五鼎生技醫療器械進出口貿易有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.apexbio.com.tw
 tax_id: '16130182'
 incorporated: '1997-12-02'
 listed: '2001-09-17'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1733#e_agripro:
+    locator: 產品名稱
+    published_date: null
+    publisher: 五鼎生物技術股份有限公司
+    quote_check: found
+    title: AgriPro II 農藥二代測試儀
+    url: https://www.apexbio.com.tw/Web/Products/content.php?product=AS90021E2
+  tw.1733#e_business:
+    locator: 印刷頁57，業務範圍
+    published_date: '2026-03-31'
+    publisher: 五鼎生物技術股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.apexbio.com.tw/Manager/img/Report/55-2026051.pdf
+  tw.1733#e_glucose:
+    locator: 產品名稱
+    published_date: null
+    publisher: 五鼎生物技術股份有限公司
+    quote_check: found
+    title: GlucoSure VIVO 欣活語音血糖測試儀
+    url: https://www.apexbio.com.tw/Web/Products/content.php?product=AS90014G2
+  tw.1733#e_hemoglobin:
+    locator: 產品名稱
+    published_date: null
+    publisher: 五鼎生物技術股份有限公司
+    quote_check: found
+    title: HemoSmart GOLD 益紅測血紅素測試儀
+    url: https://www.apexbio.com.tw/Web/Products/content.php?product=AS20022E2
+  tw.1733#e_lactate:
+    locator: 產品名稱
+    published_date: null
+    publisher: 五鼎生物技術股份有限公司
+    quote_check: found
+    title: THE EDGE 競速乳酸測試儀
+    url: https://www.apexbio.com.tw/Web/Products/content.php?product=AS60000F5
+  tw.1733#e_multisure:
+    locator: 必立康四合一測試系統
+    published_date: null
+    publisher: 五鼎生物技術股份有限公司
+    quote_check: found
+    title: 居家健康管理產品
+    url: https://www.apexbio.com.tw/Web/Products/multifunction.php
+  tw.1733#e_revenue:
+    locator: 印刷頁57，主要產品及其營業比重；右側為114年度
+    published_date: '2026-03-31'
+    publisher: 五鼎生物技術股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.apexbio.com.tw/Manager/img/Report/55-2026051.pdf
+  tw.1733#e_revenue_adjustment:
+    locator: 印刷頁57，主要產品及其營業比重；右側為114年度
+    published_date: '2026-03-31'
+    publisher: 五鼎生物技術股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.apexbio.com.tw/Manager/img/Report/55-2026051.pdf
+  tw.1733#e_subsidiaries:
+    locator: 印刷頁75，關係企業組織圖及114年12月31日基本資料
+    published_date: '2026-03-31'
+    publisher: 五鼎生物技術股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.apexbio.com.tw/Manager/img/Report/55-2026051.pdf
+  tw.1733#e_us_subsidiary:
+    locator: 印刷頁72，轉投資政策表
+    published_date: '2026-03-31'
+    publisher: 五鼎生物技術股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.apexbio.com.tw/Manager/img/Report/55-2026051.pdf

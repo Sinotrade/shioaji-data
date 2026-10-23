@@ -8,12 +8,199 @@ industry:
   l0_code: '22'
   l0_name: 生技醫療業
   l0_name_en: Biotechnology and Medical Care
-primary_chain_position: unknown
+  l1: health
+  l1_name: 醫療保健
+  l1_name_en: Healthcare
+  l2: health.pharma
+  l2_name: 製藥與生技
+  l2_name_en: Pharmaceuticals & Biotech
+  l3: bio.cell
+  l3_name: 再生醫療與細胞治療
+  l3_name_en: Regenerative Medicine & Cell Therapy
+chain: chain.biotech
+chain_stage:
+  agreement: both
+  also:
+  - stage: manufacturing
+    stage_name: 製造與代工
+    tier: midstream
+  - stage: rnd
+    stage_name: 研發與原料
+    tier: upstream
+  reason: 主要收入來自細胞儲存應用與產前檢測服務，另提供細胞委託研究、製備及開發製造。
+  stage: channel
+  stage_name: 通路與醫療服務
+  tier: downstream
+primary_chain_position: downstream
+summary_short: 以細胞儲存與應用、產前檢測及外泌體製備等服務取得收入。
+summary_long: 訊聯以細胞儲存及應用為重點營收來源，另一主要收入來源為產前檢測與續約業務。細胞服務涵蓋臍帶血與成人周邊血造血幹細胞、臍帶及脂肪等間質幹細胞，以及NK與CIK免疫細胞儲存應用。公司另提供外泌體客製化、細胞製備與CRDMO委託開發製造服務，並有非侵入性胎兒染色體檢測。合併子公司包括訊聯基因數位、訊聯細胞智藥與生萊；前兩者直接持股未達半數，仍因實質控制納入合併。
+segments:
+- evidence_ids:
+  - e2
+  id: cell_storage
+  name: 細胞儲存及應用服務
+  period: 2025年度
+  revenue_share_pct: null
+- evidence_ids:
+  - e2
+  - e3
+  id: prenatal_testing
+  name: 產前檢測
+  period: 2025年度
+  revenue_share_pct: null
+- evidence_ids:
+  - e2
+  id: exosome_cdmo
+  name: 外泌體製備及委託代工
+  period: 2025年度
+  revenue_share_pct: null
+relations:
+  subsidiaries:
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 納入合併的新藥研發子公司
+    details:
+    - 納入合併的新藥研發子公司
+    edge: e9ed32c158b0b
+    evidence_level: primary
+    id: org.bionet-therapeutics
+    name: 訊聯細胞智藥股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 一般投資業子公司
+    details:
+    - 一般投資業子公司
+    edge: ed00ff38bb204
+    evidence_level: primary
+    id: org.crown-star-alliance
+    name: Crown Star Alliance Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 生物及科學資訊軟硬體銷售子公司
+    details:
+    - 生物及科學資訊軟硬體銷售子公司
+    edge: e5ffabb1b7629
+    evidence_level: primary
+    id: org.shenglai
+    name: 生萊股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 納入合併的生物技術服務子公司
+    details:
+    - 納入合併的生物技術服務子公司
+    edge: eab68aceaaba4
+    evidence_level: primary
+    id: tw.4160
+    name: 訊聯基因
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.BionetCorp.com
 tax_id: '70836411'
 incorporated: '2000-08-17'
 listed: '2007-07-26'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1784#e10:
+    locator: 頁13，附註四（三）2，列入合併財務報告之子公司
+    published_date: '2025-11-11'
+    publisher: 訊聯生物科技股份有限公司
+    quote_check: found
+    title: 訊聯生物科技股份有限公司及子公司114年第三季合併財務報告
+    url: https://www.bionetcorp.com/uploads/download/【訊聯】114年第三季合併財務報告_0312110820.pdf
+  tw.1784#e11:
+    locator: 頁14，附註四（三）2註1
+    published_date: '2025-11-11'
+    publisher: 訊聯生物科技股份有限公司
+    quote_check: found
+    title: 訊聯生物科技股份有限公司及子公司114年第三季合併財務報告
+    url: https://www.bionetcorp.com/uploads/download/【訊聯】114年第三季合併財務報告_0312110820.pdf
+  tw.1784#e12:
+    locator: 頁13，附註四（三）2，列入合併財務報告之子公司
+    published_date: '2025-11-11'
+    publisher: 訊聯生物科技股份有限公司
+    quote_check: found
+    title: 訊聯生物科技股份有限公司及子公司114年第三季合併財務報告
+    url: https://www.bionetcorp.com/uploads/download/【訊聯】114年第三季合併財務報告_0312110820.pdf
+  tw.1784#e13:
+    locator: 頁13，附註四（三）2，列入合併財務報告之子公司
+    published_date: '2025-11-11'
+    publisher: 訊聯生物科技股份有限公司
+    quote_check: found
+    title: 訊聯生物科技股份有限公司及子公司114年第三季合併財務報告
+    url: https://www.bionetcorp.com/uploads/download/【訊聯】114年第三季合併財務報告_0312110820.pdf
+  tw.1784#e2:
+    locator: 印刷頁69，業務之營收比重
+    published_date: '2026-03-31'
+    publisher: 訊聯生物科技股份有限公司
+    quote_check: found
+    title: 訊聯生物科技股份有限公司一一四年度年報
+    url: https://doc.twse.com.tw/pdf/2025_1784_20260612F04_20261023_161607.pdf
+  tw.1784#e3:
+    locator: 印刷頁70，業務之營收比重
+    published_date: '2026-03-31'
+    publisher: 訊聯生物科技股份有限公司
+    quote_check: found
+    title: 訊聯生物科技股份有限公司一一四年度年報
+    url: https://doc.twse.com.tw/pdf/2025_1784_20260612F04_20261023_161607.pdf
+  tw.1784#e4:
+    locator: 印刷頁70，公司目前之產品項目
+    published_date: '2026-03-31'
+    publisher: 訊聯生物科技股份有限公司
+    quote_check: found
+    title: 訊聯生物科技股份有限公司一一四年度年報
+    url: https://doc.twse.com.tw/pdf/2025_1784_20260612F04_20261023_161607.pdf
+  tw.1784#e5:
+    locator: 主要服務項目2至4
+    published_date: null
+    publisher: 訊聯生物科技股份有限公司
+    quote_check: found
+    title: 訊聯生技官網－主要服務
+    url: https://www.bionetcorp.com/
+  tw.1784#e6:
+    locator: 印刷頁70，公司目前之產品項目
+    published_date: '2026-03-31'
+    publisher: 訊聯生物科技股份有限公司
+    quote_check: found
+    title: 訊聯生物科技股份有限公司一一四年度年報
+    url: https://doc.twse.com.tw/pdf/2025_1784_20260612F04_20261023_161607.pdf
+  tw.1784#e7:
+    locator: CRDMO服務內容
+    published_date: null
+    publisher: 訊聯生物科技股份有限公司
+    quote_check: found
+    title: CRDMO委託開發製造
+    url: https://www.bionetcorp.com/article?ac_id=3
+  tw.1784#e8:
+    locator: 主要服務項目1
+    published_date: null
+    publisher: 訊聯生物科技股份有限公司
+    quote_check: found
+    title: 訊聯生技官網－主要服務
+    url: https://www.bionetcorp.com/
+  tw.1784#e9:
+    locator: 頁13，附註四（三）2，列入合併財務報告之子公司
+    published_date: '2025-11-11'
+    publisher: 訊聯生物科技股份有限公司
+    quote_check: found
+    title: 訊聯生物科技股份有限公司及子公司114年第三季合併財務報告
+    url: https://www.bionetcorp.com/uploads/download/【訊聯】114年第三季合併財務報告_0312110820.pdf

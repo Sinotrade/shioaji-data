@@ -8,19 +8,105 @@ industry:
   l0_code: '28'
   l0_name: 電子零組件業
   l0_name_en: Electronic Parts and Components
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.passive
+  l3_name: 被動元件
+  l3_name_en: Passive Components
+primary_chain_position: midstream
+summary_short: 製造與銷售特殊MLCC、晶片電阻、電感及介電瓷粉。
+summary_long: 信昌電製造與銷售特殊積層陶瓷電容、晶片電阻、電感及介電瓷粉，並以自製瓷粉向下整合至被動元件。MLCC涵蓋高壓、安規、車規及高可靠度系列，電阻涵蓋電流感測、高功率與高壓品項。產品應用包括AI伺服器電源、機器人、電動車車載充電器與5G設備突波保護；2026年第二季AI與機器人營收比重分別為9.2%及3.7%。母公司為華新科技，並持有控股及投資子公司；陶瓷原料生產亦由間接子公司信昌電子（蘇州）經營。
+segments:
+- evidence_ids:
+  - e8
+  id: seg_ai
+  name: AI應用
+  period: 2026Q2
+  revenue_share_pct: 9.2
+- evidence_ids:
+  - e10
+  id: seg_robotics
+  name: 機器人應用
+  period: 2026Q2
+  revenue_share_pct: 3.7
+main_theme: theme.ev
+themes:
+- also: []
+  stage: parts
+  theme: theme.ev
+  tier: midstream
+- also: []
+  stage: components
+  theme: theme.ai_server
+  tier: midstream
+- also: []
+  stage: components
+  theme: theme.5g
+  tier: upstream
+- also: []
+  stage: components
+  theme: theme.robotics
+  tier: upstream
 relations:
   parents:
-  - as_of: '2025-12-31'
+  - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
     detail: 列入合併財報之子公司
     details:
     - 列入合併財報之子公司
+    - 母公司
     edge: ec3b408419050
     evidence_level: primary
     id: tw.2492
     name: 華新科
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 2
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接控股子公司
+    details:
+    - 直接控股子公司
+    edge: e2ab2304ff7e6
+    evidence_level: primary
+    id: org.pdc-prime-holdings-limited
+    name: PDC Prime Holdings Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接投資子公司
+    details:
+    - 直接投資子公司
+    edge: e9027acc7928a
+    evidence_level: primary
+    id: org.信昌投資-新加坡-有限公司
+    name: 信昌投資（新加坡）有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接子公司，生產陶瓷原料
+    details:
+    - 間接子公司，生產陶瓷原料
+    edge: ef8e66dcfbdab
+    evidence_level: primary
+    id: org.信昌電子-蘇州-有限公司
+    name: 信昌電子（蘇州）有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -51,7 +137,126 @@ website: www.pdc.com.tw/
 tax_id: '23641338'
 incorporated: '1990-05-21'
 listed: '2002-04-19'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6173#e10:
+    locator: 第7頁：AI &Robot Revenue Ratio表，Robot Ratio列；依序為2025Q4、2026Q1、2026Q2、2026Q3預估、2026Q4預估
+    published_date: '2026-09-10'
+    publisher: 信昌電子陶瓷股份有限公司
+    quote_check: found
+    title: 2026年法人說明會
+    url: https://www.pdc.com.tw/storage/architecture/page~~68/page~~69/PDC_investor_2026_09_10.pdf
+  tw.6173#e11:
+    locator: 車充OBC系統說明及信昌產品方案
+    published_date: null
+    publisher: 信昌電子陶瓷股份有限公司
+    quote_check: found
+    title: 車充
+    url: https://www.pdc.com.tw/tw/charger
+  tw.6173#e12:
+    locator: 應用說明及信昌產品方案
+    published_date: null
+    publisher: 信昌電子陶瓷股份有限公司
+    quote_check: found
+    title: 5G網通設備突波保護
+    url: https://www.pdc.com.tw/tw/5g-surge-protection
+  tw.6173#e13:
+    locator: 第36頁，附註二六：關係人名稱與關係
+    published_date: null
+    publisher: 信昌電子陶瓷股份有限公司
+    quote_check: found
+    title: 民國115及114年第2季合併財務報告暨會計師核閱報告
+    url: https://www.pdc.com.tw/storage/architecture/page~~68/page~~71/page~~95/202602_6173_CH.pdf
+  tw.6173#e14:
+    locator: 第18頁：列入合併財務報告之子公司，直接投資及業務性質欄
+    published_date: null
+    publisher: 信昌電子陶瓷股份有限公司
+    quote_check: found
+    title: 民國115及114年第2季合併財務報告暨會計師核閱報告
+    url: https://www.pdc.com.tw/storage/architecture/page~~68/page~~71/page~~95/202602_6173_CH.pdf
+  tw.6173#e15:
+    locator: 第18頁：列入合併財務報告之子公司，直接投資及業務性質欄
+    published_date: null
+    publisher: 信昌電子陶瓷股份有限公司
+    quote_check: found
+    title: 民國115及114年第2季合併財務報告暨會計師核閱報告
+    url: https://www.pdc.com.tw/storage/architecture/page~~68/page~~71/page~~95/202602_6173_CH.pdf
+  tw.6173#e16:
+    locator: 第18頁：列入合併財務報告之子公司，蘇州公司之投資公司欄
+    published_date: null
+    publisher: 信昌電子陶瓷股份有限公司
+    quote_check: found
+    title: 民國115及114年第2季合併財務報告暨會計師核閱報告
+    url: https://www.pdc.com.tw/storage/architecture/page~~68/page~~71/page~~95/202602_6173_CH.pdf
+  tw.6173#e17:
+    locator: 第18頁：信昌電子（蘇州）有限公司之業務性質欄
+    published_date: null
+    publisher: 信昌電子陶瓷股份有限公司
+    quote_check: found
+    title: 民國115及114年第2季合併財務報告暨會計師核閱報告
+    url: https://www.pdc.com.tw/storage/architecture/page~~68/page~~71/page~~95/202602_6173_CH.pdf
+  tw.6173#e18:
+    locator: 第8頁：品牌及產品
+    published_date: '2026-08-01'
+    publisher: 信昌電子陶瓷股份有限公司
+    quote_check: found
+    title: 2025年永續報告書
+    url: https://www.pdc.com.tw/storage/architecture/page~~67/page~~78/page~~74/2025.pdf
+  tw.6173#e2:
+    locator: 產品介紹第二點
+    published_date: null
+    publisher: 信昌電子陶瓷股份有限公司
+    quote_check: found
+    title: 積層陶瓷電容
+    url: https://www.pdc.com.tw/tw/mlcc
+  tw.6173#e3:
+    locator: 產品介紹第二點
+    published_date: null
+    publisher: 信昌電子陶瓷股份有限公司
+    quote_check: found
+    title: 晶片電阻
+    url: https://www.pdc.com.tw/tw/chip-resister
+  tw.6173#e4:
+    locator: 介電瓷粉產品介紹
+    published_date: null
+    publisher: 信昌電子陶瓷股份有限公司
+    quote_check: found
+    title: 介電瓷粉
+    url: https://www.pdc.com.tw/tw/powder
+  tw.6173#e5:
+    locator: About PDC：垂直整合、關鍵技術
+    published_date: null
+    publisher: 信昌電子陶瓷股份有限公司
+    quote_check: found
+    title: 信昌電陶官網
+    url: https://www.pdc.com.tw/tw
+  tw.6173#e6:
+    locator: 電感產品系列
+    published_date: null
+    publisher: 信昌電子陶瓷股份有限公司
+    quote_check: found
+    title: 電感
+    url: https://www.pdc.com.tw/tw/coil
+  tw.6173#e7:
+    locator: 第7頁：AI伺服器電源應用
+    published_date: '2026-09-10'
+    publisher: 信昌電子陶瓷股份有限公司
+    quote_check: found
+    title: 2026年法人說明會
+    url: https://www.pdc.com.tw/storage/architecture/page~~68/page~~69/PDC_investor_2026_09_10.pdf
+  tw.6173#e8:
+    locator: 第7頁：AI &Robot Revenue Ratio表，AI Ratio列；依序為2025Q3、2025Q4、2026Q1、2026Q2、2026Q3預估、2026Q4預估
+    published_date: '2026-09-10'
+    publisher: 信昌電子陶瓷股份有限公司
+    quote_check: found
+    title: 2026年法人說明會
+    url: https://www.pdc.com.tw/storage/architecture/page~~68/page~~69/PDC_investor_2026_09_10.pdf
+  tw.6173#e9:
+    locator: 第7頁：機器人應用
+    published_date: '2026-09-10'
+    publisher: 信昌電子陶瓷股份有限公司
+    quote_check: found
+    title: 2026年法人說明會
+    url: https://www.pdc.com.tw/storage/architecture/page~~68/page~~69/PDC_investor_2026_09_10.pdf

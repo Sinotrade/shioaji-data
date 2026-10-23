@@ -8,12 +8,146 @@ industry:
   l0_code: '05'
   l0_name: 電機機械
   l0_name_en: Electric Machinery
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.machinery
+  l2_name: 機械與自動化
+  l2_name_en: Machinery & Automation
+  l3: mach.equipment
+  l3_name: 專用設備（非半導體）
+  l3_name_en: Specialty Equipment (Non-semiconductor)
+primary_chain_position: not_applicable
+summary_short: 製造與銷售烘焙設備，以烤爐、攪拌機及發酵機為主要營收來源。
+summary_long: 新麥企業以烘焙設備製造與銷售為主要業務，產品涵蓋烤爐、攪拌機、壓麵機、發酵機，以及分割滾圓整型機。依2025年年報揭露，烤爐占營收37.93%，是最大產品類別；攪拌機占18.32%，發酵機占11.22%，其他零件占9.64%。集團的海外投資架構包括萊克有利有限公司及新麥有限公司；其中新麥機械（中國）股份有限公司為間接子公司，主要從事食品機械製造及銷售。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_oven
+  name: 烤爐
+  period: '2025'
+  revenue_share_pct: 37.93
+- evidence_ids:
+  - e2
+  id: seg_mixer
+  name: 攪拌機
+  period: '2025'
+  revenue_share_pct: 18.32
+- evidence_ids:
+  - e2
+  id: seg_proofer
+  name: 發酵機
+  period: '2025'
+  revenue_share_pct: 11.22
+- evidence_ids:
+  - e3
+  id: seg_parts
+  name: 其他零件
+  period: '2025'
+  revenue_share_pct: 9.64
+- evidence_ids:
+  - e2
+  id: seg_divider
+  name: 分割滾圓整型機
+  period: '2025'
+  revenue_share_pct: 6.2
+- evidence_ids:
+  - e2
+  id: seg_sheeter
+  name: 壓麵機
+  period: '2025'
+  revenue_share_pct: 3.84
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的控股子公司
+    details:
+    - 直接持股100%的控股子公司
+    edge: e05265ab5c21d
+    evidence_level: primary
+    id: org.lucky-union-limited
+    name: LUCKY UNION LIMITED（萊克有利有限公司）
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 食品機械製造及銷售的間接子公司
+    details:
+    - 食品機械製造及銷售的間接子公司
+    edge: e147079743955
+    evidence_level: primary
+    id: org.sinmag-equipment-china
+    name: 新麥機械（中國）股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過萊克有利持有的間接子公司
+    details:
+    - 透過萊克有利持有的間接子公司
+    edge: eaa872d3884c1
+    evidence_level: primary
+    id: org.sinmag-limited
+    name: SINMAG LIMITED（新麥有限公司）
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.sinmag.com.tw
 tax_id: '12461082'
 incorporated: '1983-09-27'
 listed: '2007-12-10'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1580#e1:
+    locator: 首頁／關於我們 About
+    published_date: null
+    publisher: 新麥企業股份有限公司
+    quote_check: found
+    title: 世界級廚房烘焙設備領導品牌｜新麥企業股份有限公司
+    url: https://www.sinmag.com.tw/
+  tw.1580#e2:
+    locator: 印刷頁98／PDF第102頁，Chapter 4／Business Activities／Operating proportion
+    published_date: '2026-04-30'
+    publisher: 新麥企業股份有限公司
+    quote_check: found
+    title: SINMAG EQUIPMENT CORPORATION 2025 Annual Report
+    url: https://www.sinmag.com.tw/proimages/pdf/115%E5%B9%B4%E8%82%A1%E6%9D%B1%E6%9C%83/114%E5%B9%B4%E6%96%B0%E9%BA%A5%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1(%E8%8B%B1%E6%96%87).pdf
+  tw.1580#e3:
+    locator: 印刷頁98／PDF第102頁，Operating proportion／Other Parts列
+    published_date: '2026-04-30'
+    publisher: 新麥企業股份有限公司
+    quote_check: found
+    title: SINMAG EQUIPMENT CORPORATION 2025 Annual Report
+    url: https://www.sinmag.com.tw/proimages/pdf/115%E5%B9%B4%E8%82%A1%E6%9D%B1%E6%9C%83/114%E5%B9%B4%E6%96%B0%E9%BA%A5%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1(%E8%8B%B1%E6%96%87).pdf
+  tw.1580#e4:
+    locator: 第20頁，附註十一／列入合併財務報告之子公司／新麥企業投資列
+    published_date: null
+    publisher: 新麥企業股份有限公司
+    quote_check: found
+    title: 新麥企業股份有限公司及子公司民國115及114年第2季合併財務報告
+    url: https://www.sinmag.com.tw/proimages/pdf/115%E5%B9%B4%E8%B2%A1%E5%A0%B1/2026Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf
+  tw.1580#e5:
+    locator: 第20頁，附註十一／列入合併財務報告之子公司／LUCKY UNION LIMITED投資列
+    published_date: null
+    publisher: 新麥企業股份有限公司
+    quote_check: found
+    title: 新麥企業股份有限公司及子公司民國115及114年第2季合併財務報告
+    url: https://www.sinmag.com.tw/proimages/pdf/115%E5%B9%B4%E8%B2%A1%E5%A0%B1/2026Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf
+  tw.1580#e6:
+    locator: 第20頁，附註十一／列入合併財務報告之子公司／SINMAG LIMITED投資列
+    published_date: null
+    publisher: 新麥企業股份有限公司
+    quote_check: found
+    title: 新麥企業股份有限公司及子公司民國115及114年第2季合併財務報告
+    url: https://www.sinmag.com.tw/proimages/pdf/115%E5%B9%B4%E8%B2%A1%E5%A0%B1/2026Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf

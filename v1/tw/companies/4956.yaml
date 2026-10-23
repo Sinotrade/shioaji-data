@@ -8,12 +8,136 @@ industry:
   l0_code: '26'
   l0_name: 光電業
   l0_name_en: Optoelectronic
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.display
+  l2_name: 光電與顯示
+  l2_name_en: Optoelectronics & Displays
+  l3: disp.led
+  l3_name: LED 與 Micro／Mini LED
+  l3_name_en: LED & Micro/Mini LED
+chain: chain.semiconductor
+chain_stage:
+  agreement: both
+  also: []
+  reason: 主要從事LED磊晶片與晶粒製造，晶粒營收占90.92%，對應晶圓製造階段。
+  stage: fab
+  stage_name: 晶圓製造
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 研發、製造及銷售LED磊晶片與晶粒，以晶粒為主要營收來源。
+summary_long: 光鋐科技以LED磊晶片及晶粒的研發、設計、製造與銷售為主要業務，產品涵蓋藍、綠、紅、黃、不可見光、紫外光及深紫外光。官網列有高亮度四元晶片與InGaN藍綠光大功率晶片，應用涵蓋照明、監控及醫療設備。2025年合併產品收入中，晶粒約占90.92%，其他約占9.08%。2024年年報列有高壓Mini LED及微型Micro LED等開發成果。集團透過卓佳有限公司持有蘇州興光宏光電有限公司，後者從事LED晶片、晶粒及藍寶石基板買賣。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_chips
+  name: 晶粒
+  period: '2025'
+  revenue_share_pct: 90.92
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 9.08
+main_theme: theme.mini_led
+themes:
+- also: []
+  stage: chips
+  theme: theme.mini_led
+  tier: upstream
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的轉投資子公司
+    details:
+    - 直接持股100%的轉投資子公司
+    edge: e19268563b041
+    evidence_level: primary
+    id: org.卓佳有限公司
+    name: 卓佳有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過卓佳有限公司間接持有的全資子公司
+    details:
+    - 透過卓佳有限公司間接持有的全資子公司
+    edge: edf4c4b71fef6
+    evidence_level: primary
+    id: org.蘇州興光宏光電有限公司
+    name: 蘇州興光宏光電有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.epileds.com.tw
 tax_id: '28334226'
 incorporated: '2006-06-12'
 listed: '2011-10-24'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4956#e1:
+    locator: 公司簡介首段
+    published_date: null
+    publisher: 光鋐科技股份有限公司
+    quote_check: found
+    title: 光鋐科技－公司簡介
+    url: https://www.epileds.com.tw/company_about.aspx
+  tw.4956#e2:
+    locator: 第52頁，附註三一（一）主要產品收入；金額單位為新台幣千元，左欄為114年度
+    published_date: '2026-03-06'
+    publisher: 光鋐科技股份有限公司
+    quote_check: found
+    title: 光鋐科技股份有限公司及子公司民國114及113年度合併財務報告
+    url: https://www.epileds.com.tw/Uploads/fin/financial/ETI001A4202504-IFRS%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-S.pdf
+  tw.4956#e3:
+    locator: 印刷頁37，產品競爭情形
+    published_date: '2025-04-22'
+    publisher: 光鋐科技股份有限公司
+    quote_check: found
+    title: 光鋐科技股份有限公司113年度年報
+    url: https://www.epileds.com.tw/Uploads/fin/shareholder/2024/113%E5%B9%B4%E5%A0%B1-(114.04.22)-Final0604.pdf
+  tw.4956#e4:
+    locator: 產品說明
+    published_date: null
+    publisher: 光鋐科技股份有限公司
+    quote_check: found
+    title: 光鋐科技－AlGalnP LED Chips
+    url: https://www.epileds.com.tw/products_more.aspx?ID=1
+  tw.4956#e5:
+    locator: 產品說明
+    published_date: null
+    publisher: 光鋐科技股份有限公司
+    quote_check: found
+    title: 光鋐科技－InGaN LED Chips
+    url: https://www.epileds.com.tw/products_more.aspx?ID=2
+  tw.4956#e6:
+    locator: 印刷頁37，最近年度及截至年報刊印日止開發成功之技術或產品，113年項目
+    published_date: '2025-04-22'
+    publisher: 光鋐科技股份有限公司
+    quote_check: found
+    title: 光鋐科技股份有限公司113年度年報
+    url: https://www.epileds.com.tw/Uploads/fin/shareholder/2024/113%E5%B9%B4%E5%A0%B1-(114.04.22)-Final0604.pdf
+  tw.4956#e7:
+    locator: 第29頁，附註十二子公司，投資公司、子公司及持股百分比表
+    published_date: '2026-03-06'
+    publisher: 光鋐科技股份有限公司
+    quote_check: found
+    title: 光鋐科技股份有限公司及子公司民國114及113年度合併財務報告
+    url: https://www.epileds.com.tw/Uploads/fin/financial/ETI001A4202504-IFRS%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-S.pdf
+  tw.4956#e8:
+    locator: 第29頁，附註十二子公司；114及113年底持股均為100%
+    published_date: '2026-03-06'
+    publisher: 光鋐科技股份有限公司
+    quote_check: found
+    title: 光鋐科技股份有限公司及子公司民國114及113年度合併財務報告
+    url: https://www.epileds.com.tw/Uploads/fin/financial/ETI001A4202504-IFRS%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-S.pdf

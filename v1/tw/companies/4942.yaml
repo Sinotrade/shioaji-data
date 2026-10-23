@@ -8,12 +8,235 @@ industry:
   l0_code: '26'
   l0_name: 光電業
   l0_name_en: Optoelectronic
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.chassis
+  l3_name: 機殼與機構件
+  l3_name_en: Chassis & Mechanical Parts
+chain: chain.display
+chain_stage:
+  agreement: both
+  also: []
+  reason: 主要從事金屬沖壓與機構件製造，供應顯示器背光模組金屬結構件，屬上游零組件。
+  stage: materials
+  stage_name: 玻璃、光學膜、驅動 IC
+  tier: upstream
+primary_chain_position: upstream
+summary_short: 製造顯示器、網通及伺服器等應用的金屬機構件，提供沖壓與模具服務。
+summary_long: 嘉彰以金屬沖壓、外觀處理、模具設計製造及電子機構件設計製造為業務範疇。主要產品包括顯示器背光模組金屬結構件，以及網路與伺服器通訊產品的內外部組件。車用產品應用於儀表板與中控顯示，醫療業務則提供消耗性醫療器材零組件及半成品組裝。2026年上半年合併財報將外部客戶收入列於沖壓事業部門。集團透過直接及間接持有的子公司，涵蓋越南、蘇州、寧波與南京的金屬沖壓部件生產及銷售業務。
+segments:
+- evidence_ids:
+  - e7
+  id: seg_stamping
+  name: 沖壓事業
+  period: 2026年上半年
+  revenue_share_pct: null
+- evidence_ids:
+  - e7
+  id: seg_other
+  name: 其他部門
+  period: 2026年上半年
+  revenue_share_pct: null
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持有的蘇州金屬沖壓部件子公司
+    details:
+    - 間接持有的蘇州金屬沖壓部件子公司
+    edge: ee78c3aeca496
+    evidence_level: primary
+    id: org.chia-chang-technology-suzhou
+    name: 嘉彰科技（蘇州）有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有的越南金屬沖壓部件子公司
+    details:
+    - 直接持有的越南金屬沖壓部件子公司
+    edge: e6fe03c2ef6d6
+    evidence_level: primary
+    id: org.chia-chang-technology-vietnam
+    name: CHIA CHANG TECHNOLOGY (VIETNAM) COMPANY LIMITED
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有的投資控股子公司
+    details:
+    - 直接持有的投資控股子公司
+    edge: e3df07a10ce67
+    evidence_level: primary
+    id: org.chia-corporation
+    name: CHIA CORPORATION
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有的國際貿易子公司
+    details:
+    - 直接持有的國際貿易子公司
+    edge: e0e85559c04d1
+    evidence_level: primary
+    id: org.goldsky-enterprises-limited
+    name: GOLDSKY ENTERPRISES LIMITED
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有的新業務開發及投資子公司
+    details:
+    - 直接持有的新業務開發及投資子公司
+    edge: e730155d2dd6f
+    evidence_level: primary
+    id: org.jianeng-development
+    name: 嘉能開發股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持有的南京金屬沖壓部件子公司
+    details:
+    - 間接持有的南京金屬沖壓部件子公司
+    edge: e2271f4449926
+    evidence_level: primary
+    id: org.nanjing-jiazhan-precision-electronics
+    name: 南京嘉展精密電子有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持有的寧波金屬沖壓部件子公司
+    details:
+    - 間接持有的寧波金屬沖壓部件子公司
+    edge: e224e3c580dce
+    evidence_level: primary
+    id: org.ningbo-chia-chang-electronic-hardware
+    name: 寧波嘉彰電子五金有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.chiachang.com
 tax_id: '22164527'
 incorporated: '1985-09-09'
 listed: '2011-06-27'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4942#e10:
+    locator: 第18頁，附註十，本公司直接持有子公司欄
+    published_date: '2026-08-12'
+    publisher: 嘉彰股份有限公司
+    quote_check: found
+    title: 民國115及114年第2季合併財務報告暨會計師核閱報告
+    url: https://www.chiachang.com/UserFiles/shareholder/model/M0800015_tw_1786523413.pdf
+  tw.4942#e11:
+    locator: 第18頁，附註十，本公司直接持有子公司欄
+    published_date: '2026-08-12'
+    publisher: 嘉彰股份有限公司
+    quote_check: found
+    title: 民國115及114年第2季合併財務報告暨會計師核閱報告
+    url: https://www.chiachang.com/UserFiles/shareholder/model/M0800015_tw_1786523413.pdf
+  tw.4942#e12:
+    locator: 第18頁，附註十，CHIA CORPORATION及TARCOOLA TRADING LIMITED持股架構
+    published_date: '2026-08-12'
+    publisher: 嘉彰股份有限公司
+    quote_check: found
+    title: 民國115及114年第2季合併財務報告暨會計師核閱報告
+    url: https://www.chiachang.com/UserFiles/shareholder/model/M0800015_tw_1786523413.pdf
+  tw.4942#e13:
+    locator: 第18頁，附註十，CHIA CORPORATION及HUGE LINE INTERNATIONAL LIMITED持股架構
+    published_date: '2026-08-12'
+    publisher: 嘉彰股份有限公司
+    quote_check: found
+    title: 民國115及114年第2季合併財務報告暨會計師核閱報告
+    url: https://www.chiachang.com/UserFiles/shareholder/model/M0800015_tw_1786523413.pdf
+  tw.4942#e14:
+    locator: 第18頁，附註十，HUGE LINE INTERNATIONAL LIMITED持有子公司欄
+    published_date: '2026-08-12'
+    publisher: 嘉彰股份有限公司
+    quote_check: found
+    title: 民國115及114年第2季合併財務報告暨會計師核閱報告
+    url: https://www.chiachang.com/UserFiles/shareholder/model/M0800015_tw_1786523413.pdf
+  tw.4942#e2:
+    locator: 簡報第3頁，PDF第4頁，業務範疇
+    published_date: '2025-11-13'
+    publisher: 嘉彰股份有限公司
+    quote_check: found
+    title: 2025年度法人說明會
+    url: https://www.chiachang.com/UserFiles/shareholder/photo/P0800002_tw_1763021027.pdf
+  tw.4942#e3:
+    locator: 顯示器產品介紹
+    published_date: null
+    publisher: 嘉彰股份有限公司
+    quote_check: found
+    title: 顯示器產品
+    url: https://www.chiachang.com/tw/category/Display-Products.html
+  tw.4942#e4:
+    locator: 網通資訊產品介紹
+    published_date: null
+    publisher: 嘉彰股份有限公司
+    quote_check: found
+    title: 網通資訊產品
+    url: https://www.chiachang.com/tw/product/Netcom-products.html
+  tw.4942#e5:
+    locator: 車用產品介紹
+    published_date: null
+    publisher: 嘉彰股份有限公司
+    quote_check: found
+    title: 車用產品
+    url: https://www.chiachang.com/tw/product/Automotive-Products.html
+  tw.4942#e6:
+    locator: 醫療產品介紹
+    published_date: null
+    publisher: 嘉彰股份有限公司
+    quote_check: found
+    title: 醫療產品
+    url: https://www.chiachang.com/tw/product/Medical-Equipment.html
+  tw.4942#e7:
+    locator: 第38頁，附註二九，部門收入與營運結果
+    published_date: '2026-08-12'
+    publisher: 嘉彰股份有限公司
+    quote_check: found
+    title: 民國115及114年第2季合併財務報告暨會計師核閱報告
+    url: https://www.chiachang.com/UserFiles/shareholder/model/M0800015_tw_1786523413.pdf
+  tw.4942#e8:
+    locator: 第18頁，附註十，列入合併財務報告之子公司
+    published_date: '2026-08-12'
+    publisher: 嘉彰股份有限公司
+    quote_check: found
+    title: 民國115及114年第2季合併財務報告暨會計師核閱報告
+    url: https://www.chiachang.com/UserFiles/shareholder/model/M0800015_tw_1786523413.pdf
+  tw.4942#e9:
+    locator: 第18頁，附註十，本公司直接持有子公司欄
+    published_date: '2026-08-12'
+    publisher: 嘉彰股份有限公司
+    quote_check: found
+    title: 民國115及114年第2季合併財務報告暨會計師核閱報告
+    url: https://www.chiachang.com/UserFiles/shareholder/model/M0800015_tw_1786523413.pdf

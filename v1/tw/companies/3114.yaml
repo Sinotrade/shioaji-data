@@ -8,12 +8,142 @@ industry:
   l0_code: '28'
   l0_name: 電子零組件業
   l0_name_en: Electronic Parts and Components
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.distribution
+  l2_name: 電子通路
+  l2_name_en: Electronics Distribution
+  l3: dist.components
+  l3_name: 電子零組件通路
+  l3_name_en: Electronic Components Distribution
+primary_chain_position: not_applicable
+summary_short: 代理銷售連接器、線材、聲學元件及PCB與IC載板製程設備。
+summary_long: 好德科技以電子零組件與製程設備代理銷售為主要業務。2025年度連接器、軟排線與電聲商品等占營收97.68%，PCB板及IC載板設備與相關材料占2.32%。主要代理產品包括連接器、高速傳輸線材、MEMS微型麥克風、邊緣AI決策晶片，以及錫球壓平機與覆晶載板切割機。年報將AI載板設備及ABF載板應用列為開發方向。集團直接持有致德電子、好德國際及昆山好竹三家子公司各100%股權。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_components
+  name: 連接器、軟排線、電聲商品等
+  period: '2025'
+  revenue_share_pct: 97.68
+- evidence_ids:
+  - e1
+  id: seg_equipment
+  name: 國內外PCB板及IC載板設備及相關材料
+  period: '2025'
+  revenue_share_pct: 2.32
+main_theme: theme.abf
+themes:
+- also: []
+  stage: materials
+  theme: theme.abf
+  tier: upstream
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的子公司
+    details:
+    - 直接持股100%的子公司
+    edge: e08386cb6afc8
+    evidence_level: primary
+    id: org.giteh-electronic-industries
+    name: 致德電子實業有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的子公司
+    details:
+    - 直接持股100%的子公司
+    edge: e364eb377d761
+    evidence_level: primary
+    id: org.howteh-international
+    name: 好德國際有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的子公司
+    details:
+    - 直接持股100%的子公司
+    edge: e1bcd557804de
+    evidence_level: primary
+    id: org.kunshan-howteh-international-trading
+    name: 昆山好竹國際貿易有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.howteh.com.tw
 tax_id: '20799897'
 incorporated: '1978-09-23'
 listed: '2004-03-25'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3114#e1:
+    locator: 印刷頁56，營運概況／業務範圍／營業比重
+    published_date: null
+    publisher: 好德科技股份有限公司
+    quote_check: found
+    title: 好德科技股份有限公司2025年報
+    url: https://www.howteh.com.tw/assets/pdf/2026/2025%E5%B9%B4%E5%A0%B1.pdf
+  tw.3114#e2:
+    locator: 產品介紹
+    published_date: null
+    publisher: 好德科技股份有限公司
+    quote_check: found
+    title: JAE | 合作夥伴 | 好德科技股份有限公司
+    url: https://www.howteh.com.tw/product-partner-jae.html
+  tw.3114#e3:
+    locator: 產品介紹
+    published_date: null
+    publisher: 好德科技股份有限公司
+    quote_check: found
+    title: 住友電工 | 合作夥伴 | 好德科技股份有限公司
+    url: https://www.howteh.com.tw/product-partner-sumitomo.html
+  tw.3114#e4:
+    locator: 商品名稱，第2項
+    published_date: null
+    publisher: 好德科技股份有限公司
+    quote_check: found
+    title: Knowles | 合作夥伴 | 好德科技股份有限公司
+    url: https://www.howteh.com.tw/product-partner-knowles.html
+  tw.3114#e5:
+    locator: 商品名稱，第1項
+    published_date: null
+    publisher: 好德科技股份有限公司
+    quote_check: found
+    title: SYNTIANT | 合作夥伴 | 好德科技股份有限公司
+    url: https://www.howteh.com.tw/product-partner-syntiant.html
+  tw.3114#e6:
+    locator: 商品名稱及應用領域
+    published_date: null
+    publisher: 好德科技股份有限公司
+    quote_check: found
+    title: Canon | 合作夥伴 | 好德科技股份有限公司
+    url: https://www.howteh.com.tw/product-partner-canon.html
+  tw.3114#e7:
+    locator: 印刷頁4，未來公司發展策略／PCB相關設備開發
+    published_date: null
+    publisher: 好德科技股份有限公司
+    quote_check: found
+    title: 好德科技股份有限公司2025年報
+    url: https://www.howteh.com.tw/assets/pdf/2026/2025%E5%B9%B4%E5%A0%B1.pdf
+  tw.3114#e8:
+    locator: 第18頁，合併財務報表編製主體
+    published_date: null
+    publisher: 好德科技股份有限公司
+    quote_check: found
+    title: 好德科技股份有限公司及子公司民國114年度及113年度合併財務報告
+    url: https://www.howteh.com.tw/assets/pdf/2025/2025%E5%90%88%E4%BD%B5.pdf

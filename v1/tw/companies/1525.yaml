@@ -8,14 +8,77 @@ industry:
   l0_code: '12'
   l0_name: 汽車工業
   l0_name_en: Automobile
-primary_chain_position: unknown
+  l1: auto
+  l1_name: 汽車與運具
+  l1_name_en: Automotive & Mobility
+  l2: auto.vehicles
+  l2_name: 汽機車
+  l2_name_en: Autos & Motorcycles
+  l3: auto.parts
+  l3_name: 汽車零組件
+  l3_name_en: Auto Parts
+chain: chain.auto
+chain_stage:
+  agreement: both
+  also: []
+  reason: 載台占營收36%為最大項目，另製造車架、電巴車架及懸吊零件，屬零組件中游。
+  stage: parts
+  stage_name: 汽車零組件與模組
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 製造銷售汽車車架、載台、鈑金與懸吊零組件，亦提供模治具及電動車車架。
+summary_long: 江申主要製造銷售卡車與巴士車架大樑、載台、鈑金及底盤懸吊零組件，並提供模治具。2026年第一季，載台占營收36%、車架25%、電巴車架21%、零件17%、其他1%，模具為0%，最大營收來源為載台。公司亦展示電動機車車架產品，結合已揭露營收的電巴車架業務，可歸入電動車零組件題材。中華汽車為其母公司；江申全資持有海外投資子公司，並透過該公司間接全資持有香港投資子公司。
+segments:
+- evidence_ids:
+  - e1
+  id: seg.frame
+  name: 車架
+  period: 2026Q1
+  revenue_share_pct: 25
+- evidence_ids:
+  - e2
+  id: seg.electric_bus_frame
+  name: 電巴車架
+  period: 2026Q1
+  revenue_share_pct: 21
+- evidence_ids:
+  - e3
+  id: seg.cargo_platform
+  name: 載台
+  period: 2026Q1
+  revenue_share_pct: 36
+- evidence_ids:
+  - e4
+  id: seg.parts
+  name: 零件
+  period: 2026Q1
+  revenue_share_pct: 17
+- evidence_ids:
+  - e5
+  id: seg.molds
+  name: 模具
+  period: 2026Q1
+  revenue_share_pct: 0
+- evidence_ids:
+  - e6
+  id: seg.other
+  name: 其他
+  period: 2026Q1
+  revenue_share_pct: 1
+main_theme: theme.ev
+themes:
+- also: []
+  stage: parts
+  theme: theme.ev
+  tier: midstream
 relations:
   parents:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 納入合併財報之子公司
+    detail: 母公司
     details:
+    - 母公司
     - 納入合併財報之子公司
     edge: e248e6a938513
     evidence_level: primary
@@ -24,12 +87,146 @@ relations:
     ranking_basis: unranked
     share_basis: null
     share_pct: null
+    weight: 2
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%股權的海外投資子公司
+    details:
+    - 直接持有100%股權的海外投資子公司
+    edge: ede47af0a20ba
+    evidence_level: primary
+    id: org.kian-shen-investment
+    name: Kian Shen Investment Co.,Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過海外投資子公司間接持有100%股權
+    details:
+    - 透過海外投資子公司間接持有100%股權
+    edge: ec9e5298afa7f
+    evidence_level: primary
+    id: org.kian-shen-investment-hong-kong
+    name: Kian Shen Investment Hong Kong Co.,Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
     weight: 1
 website: https://www.kian-shen.com/
 tax_id: '35129100'
 incorporated: '1963-05-30'
 listed: '1999-05-15'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1525#e1:
+    locator: 第10頁「產品別營業收入」表，車架列；2026年第一季收入71,166仟元，占25%。
+    published_date: '2026-05-21'
+    publisher: 江申工業股份有限公司
+    quote_check: not_found
+    title: 江申工業2026年Q1法人說明會
+    url: https://www.kian-shen.com/product_image/images/users/KSC-B320/法人說明會/江申%2020260521法說會_中文%200521.pdf
+  tw.1525#e10:
+    locator: 印刷第73頁、PDF第77頁「關係企業組織圖」：Kian Shen Investment至香港投資公司之持股箭頭標示100%。
+    published_date: '2026-03-31'
+    publisher: 江申工業股份有限公司
+    quote_check: found
+    title: 江申工業股份有限公司114年度年報
+    url: https://www.kian-shen.com/product_image/images/users/KSC-B320/115年股東會/股東會年報(尚未適用永續揭露準則).pdf
+  tw.1525#e11:
+    locator: 產品分類：卡車與巴士車架。
+    published_date: null
+    publisher: 江申工業股份有限公司
+    quote_check: found
+    title: 江申工業官網－產品介紹
+    url: https://www.kian-shen.com/tw/Web/prodlist/all
+  tw.1525#e12:
+    locator: 產品分類：車斗。
+    published_date: null
+    publisher: 江申工業股份有限公司
+    quote_check: found
+    title: 江申工業官網－產品介紹
+    url: https://www.kian-shen.com/tw/Web/prodlist/all
+  tw.1525#e13:
+    locator: 產品分類：底盤懸吊。
+    published_date: null
+    publisher: 江申工業股份有限公司
+    quote_check: found
+    title: 江申工業官網－產品介紹
+    url: https://www.kian-shen.com/tw/Web/prodlist/all
+  tw.1525#e14:
+    locator: 產品分類：模治具。
+    published_date: null
+    publisher: 江申工業股份有限公司
+    quote_check: not_found
+    title: 江申工業官網－產品介紹
+    url: https://www.kian-shen.com/tw/Web/prodlist/all
+  tw.1525#e15:
+    locator: 電動機車車架產品展示。
+    published_date: null
+    publisher: 江申工業股份有限公司
+    quote_check: found
+    title: 江申工業官網－電動機車車架
+    url: https://www.kian-shen.com/tw/Web/product/10
+  tw.1525#e16:
+    locator: 產品分類：鈑金零組件。
+    published_date: null
+    publisher: 江申工業股份有限公司
+    quote_check: not_found
+    title: 江申工業官網－產品介紹
+    url: https://www.kian-shen.com/tw/Web/prodlist/all
+  tw.1525#e2:
+    locator: 第10頁「產品別營業收入」表，電巴車架列；2026年第一季收入59,526仟元，占21%。
+    published_date: '2026-05-21'
+    publisher: 江申工業股份有限公司
+    quote_check: not_found
+    title: 江申工業2026年Q1法人說明會
+    url: https://www.kian-shen.com/product_image/images/users/KSC-B320/法人說明會/江申%2020260521法說會_中文%200521.pdf
+  tw.1525#e3:
+    locator: 第10頁「產品別營業收入」表，載台列；2026年第一季收入100,057仟元，占36%，為最大項目。
+    published_date: '2026-05-21'
+    publisher: 江申工業股份有限公司
+    quote_check: found
+    title: 江申工業2026年Q1法人說明會
+    url: https://www.kian-shen.com/product_image/images/users/KSC-B320/法人說明會/江申%2020260521法說會_中文%200521.pdf
+  tw.1525#e4:
+    locator: 第10頁「產品別營業收入」表，零件列；2026年第一季收入48,838仟元，占17%。
+    published_date: '2026-05-21'
+    publisher: 江申工業股份有限公司
+    quote_check: not_found
+    title: 江申工業2026年Q1法人說明會
+    url: https://www.kian-shen.com/product_image/images/users/KSC-B320/法人說明會/江申%2020260521法說會_中文%200521.pdf
+  tw.1525#e5:
+    locator: 第10頁「產品別營業收入」表，模具列；2026年第一季收入及占比均為0，右側文字說明本期無相關模具收入。
+    published_date: '2026-05-21'
+    publisher: 江申工業股份有限公司
+    quote_check: found
+    title: 江申工業2026年Q1法人說明會
+    url: https://www.kian-shen.com/product_image/images/users/KSC-B320/法人說明會/江申%2020260521法說會_中文%200521.pdf
+  tw.1525#e6:
+    locator: 第10頁「產品別營業收入」表，其他列；2026年第一季收入2,148仟元，占1%。
+    published_date: '2026-05-21'
+    publisher: 江申工業股份有限公司
+    quote_check: not_found
+    title: 江申工業2026年Q1法人說明會
+    url: https://www.kian-shen.com/product_image/images/users/KSC-B320/法人說明會/江申%2020260521法說會_中文%200521.pdf
+  tw.1525#e8:
+    locator: 印刷第59頁、PDF第63頁，中華汽車工業(股)公司列之「與發行人之關係」欄。
+    published_date: '2026-03-31'
+    publisher: 江申工業股份有限公司
+    quote_check: found
+    title: 江申工業股份有限公司114年度年報
+    url: https://www.kian-shen.com/product_image/images/users/KSC-B320/115年股東會/股東會年報(尚未適用永續揭露準則).pdf
+  tw.1525#e9:
+    locator: 印刷第73頁、PDF第77頁「關係企業組織圖」：江申至該公司之持股箭頭標示100%。
+    published_date: '2026-03-31'
+    publisher: 江申工業股份有限公司
+    quote_check: found
+    title: 江申工業股份有限公司114年度年報
+    url: https://www.kian-shen.com/product_image/images/users/KSC-B320/115年股東會/股東會年報(尚未適用永續揭露準則).pdf

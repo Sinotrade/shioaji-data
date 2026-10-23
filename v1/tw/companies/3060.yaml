@@ -8,12 +8,230 @@ industry:
   l0_code: '25'
   l0_name: 電腦及週邊設備業
   l0_name_en: Computer and Peripheral Equipment
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.other
+  l3_name: 其他電子零組件
+  l3_name_en: Other Electronic Components
+chain: chain.server
+chain_stage:
+  agreement: both
+  also: []
+  reason: 主要營收為伺服器等級硬碟用音圈馬達與上蓋，屬零組件及機構件。
+  stage: components
+  stage_name: 板卡、電源、散熱、機構件
+  tier: midstream
+primary_chain_position: upstream
+summary_short: 以硬碟用音圈馬達、上蓋及其他儲存零組件製造為主要收入來源。
+summary_long: 銘異科技以硬碟機零組件製造為主，主力為伺服器等級硬碟使用的音圈馬達與上蓋。2025年音圈馬達占營收48.36%，硬碟上蓋占20.07%；其餘包含外接式儲存裝置、硬碟機零件、光學零件及其他業務。公司亦開發投影設備用光學振鏡，並提供醫療器材塑膠射出零件與藥品調配設備。儲存產品涵蓋外接式硬碟、固態硬碟及伺服器與資料中心使用的HDD／SSD抽取盒，營運核心仍集中於硬碟相關產品。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_vcm
+  name: 音圈馬達
+  period: '2025'
+  revenue_share_pct: 48.36
+- evidence_ids:
+  - e2
+  id: seg_cover
+  name: 硬碟上蓋
+  period: '2025'
+  revenue_share_pct: 20.07
+- evidence_ids:
+  - e2
+  id: seg_ehd
+  name: 外接式儲存裝置
+  period: '2025'
+  revenue_share_pct: 8.22
+- evidence_ids:
+  - e2
+  id: seg_hdd_parts
+  name: 硬碟機零件
+  period: '2025'
+  revenue_share_pct: 5.37
+- evidence_ids:
+  - e2
+  id: seg_optics
+  name: 光學零件
+  period: '2025'
+  revenue_share_pct: 1.25
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 16.73
+main_theme: theme.data_center
+themes:
+- also: []
+  stage: it
+  theme: theme.data_center
+  tier: midstream
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司（MAS）
+    details:
+    - 直接子公司（MAS）
+    edge: e07b6ff071143
+    evidence_level: primary
+    id: org.min-aik-international-development
+    name: Min Aik International Development Pte. Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過MAS持有的間接子公司（MAM）
+    details:
+    - 透過MAS持有的間接子公司（MAM）
+    edge: e7f7c3e852517
+    evidence_level: primary
+    id: org.min-aik-technology-malaysia
+    name: Min Aik Technology(M) Sdn. Bhd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司（MATH）
+    details:
+    - 直接子公司（MATH）
+    edge: ee24b2b8c91af
+    evidence_level: primary
+    id: org.min-aik-technology-thailand
+    name: Min Aik Technology (Thailand) Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過Synergy持有的間接子公司
+    details:
+    - 透過Synergy持有的間接子公司
+    edge: efcd88e69ba51
+    evidence_level: primary
+    id: org.min-yu-technology-suzhou
+    name: 銘裕科技(蘇州)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司（Synergy）
+    details:
+    - 直接子公司（Synergy）
+    edge: e84d3c6a2a050
+    evidence_level: primary
+    id: org.synergy-technology-industrial
+    name: Synergy Technology Industrial Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.minaik.com.tw
 tax_id: '30897480'
 incorporated: '1979-10-03'
 listed: '2003-04-21'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3060#e10:
+    locator: 第10頁合併子公司表之Synergy全名；第32頁轉投資事業表之投資公司與被投資公司欄
+    published_date: '2026-08-07'
+    publisher: 銘異科技股份有限公司
+    quote_check: found
+    title: 銘異科技股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.minaik.com.tw/investo/financial-statements/MTQ/q_2_file
+  tw.3060#e11:
+    locator: 第10頁合併子公司表之MATH全名；第32頁轉投資事業表之投資公司與被投資公司欄
+    published_date: '2026-08-07'
+    publisher: 銘異科技股份有限公司
+    quote_check: found
+    title: 銘異科技股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.minaik.com.tw/investo/financial-statements/MTQ/q_2_file
+  tw.3060#e12:
+    locator: 第10頁合併子公司表之MAM全名；第33頁轉投資事業表
+    published_date: '2026-08-07'
+    publisher: 銘異科技股份有限公司
+    quote_check: found
+    title: 銘異科技股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.minaik.com.tw/investo/financial-statements/MTQ/q_2_file
+  tw.3060#e13:
+    locator: 第11頁，列入合併財務報告之子公司，投資公司與子公司名稱欄
+    published_date: '2026-08-07'
+    publisher: 銘異科技股份有限公司
+    quote_check: found
+    title: 銘異科技股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.minaik.com.tw/investo/financial-statements/MTQ/q_2_file
+  tw.3060#e2:
+    locator: 第54頁，營業比重，114年度銷售金額與比例
+    published_date: '2026-05-07'
+    publisher: 銘異科技股份有限公司
+    quote_check: found
+    title: 銘異科技股份有限公司114年度年報
+    url: https://www.minaik.com.tw/zh-tw/investo/annual-report/MTU
+  tw.3060#e3:
+    locator: 第2頁，研究發展現況
+    published_date: '2026-05-07'
+    publisher: 銘異科技股份有限公司
+    quote_check: found
+    title: 銘異科技股份有限公司114年度年報
+    url: https://www.minaik.com.tw/zh-tw/investo/annual-report/MTU
+  tw.3060#e4:
+    locator: 第1頁，光學零組件
+    published_date: '2026-05-07'
+    publisher: 銘異科技股份有限公司
+    quote_check: found
+    title: 銘異科技股份有限公司114年度年報
+    url: https://www.minaik.com.tw/zh-tw/investo/annual-report/MTU
+  tw.3060#e5:
+    locator: 儲存類產品
+    published_date: null
+    publisher: 銘異科技股份有限公司
+    quote_check: found
+    title: 設計代工產品－消費性電子
+    url: https://www.minaik.com.tw/zh-tw/products/consumer-electronics
+  tw.3060#e6:
+    locator: 多元化產品項目
+    published_date: null
+    publisher: 銘異科技股份有限公司
+    quote_check: found
+    title: 設計代工產品－消費性電子
+    url: https://www.minaik.com.tw/zh-tw/products/consumer-electronics
+  tw.3060#e7:
+    locator: 醫療器材服務項目
+    published_date: null
+    publisher: 銘異科技股份有限公司
+    quote_check: found
+    title: 設計代工產品－醫療器材
+    url: https://www.minaik.com/zh-tw/products/medical-device
+  tw.3060#e8:
+    locator: Electrical MD
+    published_date: null
+    publisher: 銘異科技股份有限公司
+    quote_check: found
+    title: 設計代工產品－醫療器材
+    url: https://www.minaik.com/zh-tw/products/medical-device
+  tw.3060#e9:
+    locator: 第10頁合併子公司表之MAS全名；第32頁轉投資事業表之投資公司與被投資公司欄
+    published_date: '2026-08-07'
+    publisher: 銘異科技股份有限公司
+    quote_check: found
+    title: 銘異科技股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.minaik.com.tw/investo/financial-statements/MTQ/q_2_file

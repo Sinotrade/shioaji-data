@@ -4,7 +4,7 @@
 
 - 英文：NVIDIA Supply Chain
 - 別名：NVIDIA、輝達
-- 成員：40 家
+- 成員：41 家
 - 完整成員與證據見同目錄同名 YAML，或 themes.json
 
 ## 晶圓與封測（上游，4 家）
@@ -16,7 +16,7 @@
 | [3707](../companies/3707.md) | 漢磊 | 氮化鎵產品進入NVIDIA AI供應鏈 |
 | [3711](../companies/3711.md) | 日月光投控 | 子公司矽品為NVIDIA提供封測支援 |
 
-## 零組件與板材（中游，16 家）
+## 零組件與板材（中游，17 家）
 
 | 代號 | 名稱 | 說明 |
 | --- | --- | --- |
@@ -30,6 +30,7 @@
 | [3533](../companies/3533.md) | 嘉澤 | NVIDIA MGX互連零組件 |
 | [3665](../companies/3665.md) | 貿聯-KY | GB200與NVIDIA加速運算平台互連零組件 |
 | [4958](../companies/4958.md) | 臻鼎-KY | MGX生態系高階PCB |
+| [5426](../companies/5426.md) | 振發 | NVIDIA MGX架構相容滑軌 |
 | [6197](../companies/6197.md) | 佳必琪 | NVIDIA MGX平台電源與Busbar互連 |
 | [6584](../companies/6584.md) | 南俊國際 | NVIDIA MGX平台導軌 |
 | [6805](../companies/6805.md) | 富世達 | GB300平台NV QD快接頭 |

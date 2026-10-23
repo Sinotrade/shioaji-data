@@ -8,12 +8,159 @@ industry:
   l0_code: '28'
   l0_name: 電子零組件業
   l0_name_en: Electronic Parts and Components
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.passive
+  l3_name: 被動元件
+  l3_name_en: Passive Components
+primary_chain_position: midstream
+summary_short: 主要生產與銷售PPTC自復式保險絲，另提供過電壓保護及功率元件。
+summary_long: 富致科技主要生產及銷售PPTC自復式保險絲。2025年營收以SMD型占53.72%最多，DIP型占32.87%，其他占13.40%。PPTC產品涵蓋插件式、表面黏著式、高電壓、高溫及電池用系列，另提供MOV壓敏電阻、TVS二極體、複合式保護元件與矽MOSFET。年報列示產品用於車用與電動車電子，並持續交貨至Tesla車系。集團透過全資投資子公司持有蘇州富鼎商貿有限公司，後者經營電子零組件買賣。
+segments:
+- evidence_ids:
+  - e7
+  id: seg_smd
+  name: SMD型PPTC
+  period: '2025'
+  revenue_share_pct: 53.72
+- evidence_ids:
+  - e7
+  id: seg_dip
+  name: DIP型PPTC
+  period: '2025'
+  revenue_share_pct: 32.87
+- evidence_ids:
+  - e7
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 13.4
+main_theme: theme.ev
+themes:
+- also: []
+  stage: parts
+  theme: theme.ev
+  tier: midstream
+- also: []
+  stage: components
+  theme: theme.tesla
+  tier: upstream
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的投資子公司
+    details:
+    - 直接持股100%的投資子公司
+    edge: ebc81818ba5cc
+    evidence_level: primary
+    id: org.fuzetec-technology-co-ltd
+    name: Fuzetec Technology Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持股100%的銷售孫公司
+    details:
+    - 間接持股100%的銷售孫公司
+    edge: e0f54ebd89249
+    evidence_level: primary
+    id: org.suzhou-fuding-trading
+    name: 蘇州富鼎商貿有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.fuzetec.com
 tax_id: '70670235'
 incorporated: '1999-12-02'
 listed: '2019-09-23'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6642#e1:
+    locator: 公司基本資料／主要經營業務；同表列股票代號及統一編號
+    published_date: null
+    publisher: 富致科技股份有限公司
+    quote_check: found
+    title: 公司基本資料及團隊
+    url: https://www.fuzetec.com/zh-TW/investor/corporate-governance
+  tw.6642#e10:
+    locator: 第19頁／納入合併財務報告之子公司表，114年12月31日持股百分比
+    published_date: null
+    publisher: 富致科技股份有限公司
+    quote_check: found
+    title: 富致科技股份有限公司及子公司114年度及113年度合併財務報告
+    url: https://www.fuzetec.com/filemanager/files/1/(%E4%B8%8A%E5%82%B3)%E5%AF%8C%E8%87%B4%E7%A7%91%E6%8A%80114Q4%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1%E9%9B%BB%E5%AD%90%E6%9B%B8.pdf
+  tw.6642#e11:
+    locator: 第19頁／納入合併財務報告之子公司表，蘇州富鼎商貿有限公司列
+    published_date: null
+    publisher: 富致科技股份有限公司
+    quote_check: found
+    title: 富致科技股份有限公司及子公司114年度及113年度合併財務報告
+    url: https://www.fuzetec.com/filemanager/files/1/(%E4%B8%8A%E5%82%B3)%E5%AF%8C%E8%87%B4%E7%A7%91%E6%8A%80114Q4%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1%E9%9B%BB%E5%AD%90%E6%9B%B8.pdf
+  tw.6642#e2:
+    locator: PPTC Resettable Fuse產品系列列表
+    published_date: null
+    publisher: 富致科技股份有限公司
+    quote_check: found
+    title: PPTC Resettable Fuse
+    url: https://www.fuzetec.com/zh-TW/product-group/pptc-resettable-fuse
+  tw.6642#e3:
+    locator: FMOV05-D／Description
+    published_date: null
+    publisher: 富致科技股份有限公司
+    quote_check: found
+    title: D Series
+    url: https://www.fuzetec.com/zh-TW/product-lists/d-series
+  tw.6642#e4:
+    locator: SMAJ產品項目
+    published_date: null
+    publisher: 富致科技股份有限公司
+    quote_check: found
+    title: TVS Diodes
+    url: https://www.fuzetec.com/zh-TW/product-lists/tvs-diodes
+  tw.6642#e5:
+    locator: FCMOV 10 Series產品項目
+    published_date: null
+    publisher: 富致科技股份有限公司
+    quote_check: found
+    title: Hybrid Protection
+    url: https://www.fuzetec.com/zh-TW/product-lists/hybrid-protection
+  tw.6642#e6:
+    locator: 產品名稱
+    published_date: null
+    publisher: 富致科技股份有限公司
+    quote_check: found
+    title: Si MOSFET
+    url: https://www.fuzetec.com/zh-TW/product-lists/si-mosfet
+  tw.6642#e7:
+    locator: 印刷第44頁／目前主要產品之營業比重；各列依序為113及114年度
+    published_date: '2026-05-19'
+    publisher: 富致科技股份有限公司
+    quote_check: found
+    title: 富致科技114年度年報
+    url: https://www.fuzetec.com/upload/annuals/17791751752598R1504000827%E5%AF%8C%E8%87%B4%E7%A7%91%E6%8A%80%E5%B9%B4%E5%A0%B1(%E4%B8%8A).pdf
+  tw.6642#e8:
+    locator: 印刷第44頁／目前之商品（服務）項目，PPTC主要應用領域
+    published_date: '2026-05-19'
+    publisher: 富致科技股份有限公司
+    quote_check: found
+    title: 富致科技114年度年報
+    url: https://www.fuzetec.com/upload/annuals/17791751752598R1504000827%E5%AF%8C%E8%87%B4%E7%A7%91%E6%8A%80%E5%B9%B4%E5%A0%B1(%E4%B8%8A).pdf
+  tw.6642#e9:
+    locator: 印刷第46頁／客製化應用產品，晶片型及環型片PPTC段落
+    published_date: '2026-05-19'
+    publisher: 富致科技股份有限公司
+    quote_check: found
+    title: 富致科技114年度年報
+    url: https://www.fuzetec.com/upload/annuals/17791751752598R1504000827%E5%AF%8C%E8%87%B4%E7%A7%91%E6%8A%80%E5%B9%B4%E5%A0%B1(%E4%B8%8A).pdf

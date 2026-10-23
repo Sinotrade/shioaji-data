@@ -8,12 +8,197 @@ industry:
   l0_code: '31'
   l0_name: 其他電子業
   l0_name_en: Other Electronic
-primary_chain_position: unknown
+  l1: auto
+  l1_name: 汽車與運具
+  l1_name_en: Automotive & Mobility
+  l2: auto.vehicles
+  l2_name: 汽機車
+  l2_name_en: Autos & Motorcycles
+  l3: auto.electronics
+  l3_name: 車用電子
+  l3_name_en: Automotive Electronics
+chain: chain.auto
+chain_stage:
+  agreement: both
+  also: []
+  reason: 主要銷售車用電子系統，倒車雷達占營收69.18%，屬汽車零組件與模組。
+  stage: parts
+  stage_name: 汽車零組件與模組
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 以倒車雷達、車用影像、防盜及盲區偵測系統銷售為主要收入來源。
+summary_long: 輝創電子的主要產品包括倒車雷達、攝影鏡頭、汽車防盜器及盲區偵測系統。2025年倒車雷達占營收69.18%，攝影鏡頭占15.62%，盲區偵測系統占5.22%，汽車防盜器占3.81%，其他占6.17%。產品技術包括超音波感測、毫米波雷達、影像與無線射頻，應用涵蓋停車輔助、盲區警示、電子後視鏡及智慧鑰匙，另提供駕駛偵測功能。主要海外製造子公司包括直接持有的泰輝創，以及透過Lothian持有的蘇州輝創。
+segments:
+- evidence_ids:
+  - e2
+  id: seg.parking
+  name: 倒車雷達系統
+  period: '2025'
+  revenue_share_pct: 69.18
+- evidence_ids:
+  - e3
+  id: seg.camera
+  name: 攝影鏡頭系統
+  period: '2025'
+  revenue_share_pct: 15.62
+- evidence_ids:
+  - e4
+  id: seg.alarm
+  name: 汽車防盜器系統
+  period: '2025'
+  revenue_share_pct: 3.81
+- evidence_ids:
+  - e5
+  id: seg.blind_spot
+  name: 盲區偵測系統
+  period: '2025'
+  revenue_share_pct: 5.22
+- evidence_ids:
+  - e6
+  id: seg.other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 6.17
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 泰國製造子公司
+    details:
+    - 泰國製造子公司
+    edge: e8ac8fed3421a
+    evidence_level: primary
+    id: org.thai-whetron-electronics
+    name: Thai Whetron Electronics Company Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過Lothian持有的蘇州製造子公司
+    details:
+    - 透過Lothian持有的蘇州製造子公司
+    edge: e046d63624526
+    evidence_level: primary
+    id: org.whetron-electronics-suzhou
+    name: 輝創電子科技(蘇州)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.whetron.com
 tax_id: '20947969'
 incorporated: '1982-12-16'
 listed: '2026-01-16'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6722#e1:
+    locator: 公司名稱、股票代號、主要業務及公司網址
+    published_date: null
+    publisher: 輝創電子股份有限公司
+    quote_check: found
+    title: 基本資料
+    url: https://www.whetron.com/investor-relations/
+  tw.6722#e10:
+    locator: 功能特色－強化安全性
+    published_date: null
+    publisher: 輝創電子股份有限公司
+    quote_check: found
+    title: 智能鑰匙(二輪車)
+    url: https://www.whetron.com/product/智能鑰匙二輪車/
+  tw.6722#e11:
+    locator: 產品說明
+    published_date: null
+    publisher: 輝創電子股份有限公司
+    quote_check: found
+    title: 騎士盲區偵測
+    url: https://www.whetron.com/product/騎士盲區偵測/
+  tw.6722#e12:
+    locator: 座艙偵測技術解決方案
+    published_date: null
+    publisher: 輝創電子股份有限公司
+    quote_check: found
+    title: 解決方案
+    url: https://www.whetron.com/solutions/
+  tw.6722#e13:
+    locator: 附註四（三），列入合併財務報表之子公司，泰輝創列
+    published_date: '2026-03-31'
+    publisher: 輝創電子股份有限公司（FinancialFilings鏡像）
+    quote_check: unreachable
+    title: 2025年第4季合併財務報告
+    url: https://financialfilings.com/filings/whetron-6722/annual-report/2026/60570901/
+  tw.6722#e14:
+    locator: 附註四（三），列入合併財務報表之子公司，Lothian列
+    published_date: '2026-03-31'
+    publisher: 輝創電子股份有限公司（FinancialFilings鏡像）
+    quote_check: unreachable
+    title: 2025年第4季合併財務報告
+    url: https://financialfilings.com/filings/whetron-6722/annual-report/2026/60570901/
+  tw.6722#e15:
+    locator: 附註四（三），列入合併財務報表之子公司，蘇州輝創列
+    published_date: '2026-03-31'
+    publisher: 輝創電子股份有限公司（FinancialFilings鏡像）
+    quote_check: unreachable
+    title: 2025年第4季合併財務報告
+    url: https://financialfilings.com/filings/whetron-6722/annual-report/2026/60570901/
+  tw.6722#e2:
+    locator: 第51頁，Business proportion，Parking aid system，2025年金額及占比欄
+    published_date: '2026-05-14'
+    publisher: 輝創電子股份有限公司（FinancialFilings鏡像）
+    quote_check: unreachable
+    title: 2025 Annual Report
+    url: https://financialfilings.com/filings/whetron-6722/annual-report/2026/46370813/
+  tw.6722#e3:
+    locator: 第51頁，Business proportion，Vehicle camera lens system，2025年金額及占比欄
+    published_date: '2026-05-14'
+    publisher: 輝創電子股份有限公司（FinancialFilings鏡像）
+    quote_check: unreachable
+    title: 2025 Annual Report
+    url: https://financialfilings.com/filings/whetron-6722/annual-report/2026/46370813/
+  tw.6722#e4:
+    locator: 第51頁，Business proportion，Car alarm system，2025年金額及占比欄
+    published_date: '2026-05-14'
+    publisher: 輝創電子股份有限公司（FinancialFilings鏡像）
+    quote_check: unreachable
+    title: 2025 Annual Report
+    url: https://financialfilings.com/filings/whetron-6722/annual-report/2026/46370813/
+  tw.6722#e5:
+    locator: 第51頁，Business proportion，Blind spot detection system，2025年金額及占比欄
+    published_date: '2026-05-14'
+    publisher: 輝創電子股份有限公司（FinancialFilings鏡像）
+    quote_check: unreachable
+    title: 2025 Annual Report
+    url: https://financialfilings.com/filings/whetron-6722/annual-report/2026/46370813/
+  tw.6722#e6:
+    locator: 第51頁，Business proportion，Others，2025年金額及占比欄
+    published_date: '2026-05-14'
+    publisher: 輝創電子股份有限公司（FinancialFilings鏡像）
+    quote_check: unreachable
+    title: 2025 Annual Report
+    url: https://financialfilings.com/filings/whetron-6722/annual-report/2026/46370813/
+  tw.6722#e7:
+    locator: 產品說明
+    published_date: null
+    publisher: 輝創電子股份有限公司
+    quote_check: found
+    title: 停車輔助感測器
+    url: https://www.whetron.com/product/停車輔助感測器/
+  tw.6722#e8:
+    locator: 毫米波雷達及無線射頻段落
+    published_date: null
+    publisher: 輝創電子股份有限公司
+    quote_check: found
+    title: 首頁－核心能力
+    url: https://www.whetron.com/
+  tw.6722#e9:
+    locator: 產品說明首段
+    published_date: null
+    publisher: 輝創電子股份有限公司
+    quote_check: found
+    title: 電子後視鏡
+    url: https://www.whetron.com/product/電子後視鏡/

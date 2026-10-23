@@ -8,7 +8,43 @@ industry:
   l0_code: '36'
   l0_name: 數位雲端
   l0_name_en: Digital and Cloud Services
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.software
+  l2_name: 軟體與資訊服務
+  l2_name_en: Software & IT Services
+  l3: sw.it_services
+  l3_name: 系統整合與資訊服務
+  l3_name_en: System Integration & IT Services
+primary_chain_position: not_applicable
+summary_short: 提供政府與企業資訊系統開發、整合、維運及軟硬體服務。
+summary_long: 資拓宏宇提供資訊系統開發與整合服務，業務涵蓋智慧政府、智慧金融、智慧醫療與智慧城市。2026年上半年四大領域營收比重依序約為31%、18%、29%及23%，以智慧政府最高。公司亦提供資訊安全顧問與軟體委外人力服務，自有產品包括以RAG技術建立企業知識庫的iNana RAG，以及涵蓋碳管理、氣候相關財務揭露與能源管理的資拓宏宇永續雲；醫療產品則包括整合影像擷取、儲存、檢索與傳輸的iPACS。2025年第二季財報列中華電信為其母公司。
+segments:
+- evidence_ids:
+  - e3
+  id: seg_government
+  name: 智慧政府
+  period: 2026年上半年
+  revenue_share_pct: 31
+- evidence_ids:
+  - e6
+  id: seg_finance
+  name: 智慧金融
+  period: 2026年上半年
+  revenue_share_pct: 18
+- evidence_ids:
+  - e4
+  id: seg_healthcare
+  name: 智慧醫療
+  period: 2026年上半年
+  revenue_share_pct: 29
+- evidence_ids:
+  - e5
+  id: seg_city
+  name: 智慧城市
+  period: 2026年上半年
+  revenue_share_pct: 23
 relations:
   parents:
   - as_of: '2026-02-24'
@@ -17,10 +53,26 @@ relations:
     detail: 集團子公司
     details:
     - 集團子公司
+    - 財報揭露之母公司
     edge: ee9b7cef7cec7
-    evidence_level: media
+    evidence_level: primary
     id: tw.2412
     name: 中華電
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 2
+  subsidiaries:
+  - as_of: '2025-08-07'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司；財報揭露暫停營業
+    details:
+    - 子公司；財報揭露暫停營業
+    edge: ec8d2015a742e
+    evidence_level: primary
+    id: org.榮利科技股份有限公司
+    name: 榮利科技股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -29,7 +81,105 @@ website: https://www.iisigroup.com
 tax_id: '28859051'
 incorporated: '2008-04-10'
 listed: '2025-11-25'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6614#e1:
+    locator: 公司簡介正文
+    published_date: null
+    publisher: 資拓宏宇國際股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.iisigroup.com/about/
+  tw.6614#e10:
+    locator: 產品簡介
+    published_date: null
+    publisher: 資拓宏宇國際股份有限公司
+    quote_check: found
+    title: 資拓宏宇永續雲
+    url: https://product.iisigroup.com/products_and_service/資拓宏宇永續雲/
+  tw.6614#e11:
+    locator: iPACS醫療影像傳輸儲存系統
+    published_date: null
+    publisher: 資拓宏宇國際股份有限公司
+    quote_check: found
+    title: 智慧醫療
+    url: https://www.iisigroup.com/solutions-healthcare/
+  tw.6614#e12:
+    locator: 印刷頁31，附註二六（一）關係人名稱及其關係
+    published_date: null
+    publisher: 資拓宏宇國際股份有限公司
+    quote_check: found
+    title: 114年第二季合併財務報告
+    url: https://www.iisigroup.com/wp-content/uploads/2025/06/資拓宏宇114Q2合併財務報告.pdf
+  tw.6614#e13:
+    locator: 印刷頁20，確定福利計畫
+    published_date: null
+    publisher: 資拓宏宇國際股份有限公司
+    quote_check: found
+    title: 114年第二季合併財務報告
+    url: https://www.iisigroup.com/wp-content/uploads/2025/06/資拓宏宇114Q2合併財務報告.pdf
+  tw.6614#e14:
+    locator: 印刷頁33，附註二八重大之期後事項
+    published_date: null
+    publisher: 資拓宏宇國際股份有限公司
+    quote_check: not_found
+    title: 114年第二季合併財務報告
+    url: https://www.iisigroup.com/wp-content/uploads/2025/06/資拓宏宇114Q2合併財務報告.pdf
+  tw.6614#e2:
+    locator: 資訊整合服務
+    published_date: null
+    publisher: 資拓宏宇國際股份有限公司
+    quote_check: found
+    title: 智慧政府
+    url: https://www.iisigroup.com/solutions-government/
+  tw.6614#e3:
+    locator: 營收比重段落
+    published_date: '2026-08-06'
+    publisher: 資拓宏宇國際股份有限公司
+    quote_check: found
+    title: 資拓宏宇上半年營收年增34.12% 四大領域全面推進
+    url: https://www.iisigroup.com/news/資拓宏宇上半年營收年增34-12-四大領域全面推進/
+  tw.6614#e4:
+    locator: 營收比重段落
+    published_date: '2026-08-06'
+    publisher: 資拓宏宇國際股份有限公司
+    quote_check: found
+    title: 資拓宏宇上半年營收年增34.12% 四大領域全面推進
+    url: https://www.iisigroup.com/news/資拓宏宇上半年營收年增34-12-四大領域全面推進/
+  tw.6614#e5:
+    locator: 營收比重段落
+    published_date: '2026-08-06'
+    publisher: 資拓宏宇國際股份有限公司
+    quote_check: found
+    title: 資拓宏宇上半年營收年增34.12% 四大領域全面推進
+    url: https://www.iisigroup.com/news/資拓宏宇上半年營收年增34-12-四大領域全面推進/
+  tw.6614#e6:
+    locator: 營收比重段落
+    published_date: '2026-08-06'
+    publisher: 資拓宏宇國際股份有限公司
+    quote_check: found
+    title: 資拓宏宇上半年營收年增34.12% 四大領域全面推進
+    url: https://www.iisigroup.com/news/資拓宏宇上半年營收年增34-12-四大領域全面推進/
+  tw.6614#e7:
+    locator: 資訊安全與管理顧問服務
+    published_date: null
+    publisher: 資拓宏宇國際股份有限公司
+    quote_check: found
+    title: IT服務
+    url: https://www.iisigroup.com/solutions-it-services/
+  tw.6614#e8:
+    locator: 軟體委外人力章節
+    published_date: null
+    publisher: 資拓宏宇國際股份有限公司
+    quote_check: found
+    title: IT服務
+    url: https://www.iisigroup.com/solutions-it-services/
+  tw.6614#e9:
+    locator: 自有產品／產品簡介
+    published_date: null
+    publisher: 資拓宏宇國際股份有限公司
+    quote_check: found
+    title: iNana RAG
+    url: https://product.iisigroup.com/products_and_service/inana-rag/

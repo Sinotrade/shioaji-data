@@ -8,12 +8,85 @@ industry:
   l0_code: '05'
   l0_name: 電機機械
   l0_name_en: Electric Machinery
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.electrical
+  l2_name: 電機與重電
+  l2_name_en: Electrical Equipment & Power Grid
+  l3: elec.motor
+  l3_name: 馬達與電機
+  l3_name_en: Motors & Electrical Machinery
+primary_chain_position: not_applicable
+summary_short: 研發製造工業馬達、電動載具動力系統與小型化動力模組。
+summary_long: 富田電機從事工業馬達與電動載具動力產品的研發製造，並以自有品牌FUKUTA行銷工業馬達。電動載具產品包括同軸油冷三合一動力模組，公路型載具應用涵蓋電動轎車、機車及巴士。公司亦發展小型化高效動力產品，官網列有低空載具馬達及機器人關節馬達，並將低軌衛星、無人機及機器人列為動力模組的應用領域。其產品布局涵蓋工業設備、電動載具，以及小型化動力應用所需的馬達與模組。
+main_theme: theme.ev
+themes:
+- also: []
+  stage: parts
+  theme: theme.ev
+  tier: midstream
+- also: []
+  stage: components
+  theme: theme.robotics
+  tier: upstream
+- also: []
+  stage: components
+  theme: theme.drone
+  tier: upstream
+- also: []
+  stage: components
+  theme: theme.leo_satellite
+  tier: upstream
+unresolved_mentions:
+- 中國大陸子公司：2023年永續報告書搜尋線索有泛稱，未核實具名實體及目前控制關…
 website: https://www.fukuta-motor.com.tw/
 tax_id: '22802861'
 incorporated: '1988-04-01'
 listed: '2026-01-29'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4590#e1:
+    locator: 關於富田電機
+    published_date: null
+    publisher: 富田電機股份有限公司
+    quote_check: found
+    title: 富田電機官網－關於富田電機
+    url: https://www.fukuta-motor.com.tw/tw/index.html
+  tw.4590#e2:
+    locator: 馬達與總成產品列表
+    published_date: null
+    publisher: 富田電機股份有限公司
+    quote_check: found
+    title: 次世代動力系統－馬達與總成
+    url: https://www.fukuta-motor.com.tw/tw/product_list/00073
+  tw.4590#e3:
+    locator: 公路型電動載具
+    published_date: null
+    publisher: 富田電機股份有限公司
+    quote_check: found
+    title: 富田電機－產業應用
+    url: https://www.fukuta-motor.com.tw/tw/applications.html
+  tw.4590#e4:
+    locator: 產品名稱
+    published_date: null
+    publisher: 富田電機股份有限公司
+    quote_check: found
+    title: 機器人關節馬達
+    url: https://www.fukuta-motor.com.tw/tw/product_i/P2025051611513801
+  tw.4590#e5:
+    locator: 產品名稱
+    published_date: null
+    publisher: 富田電機股份有限公司
+    quote_check: found
+    title: 低空載具馬達
+    url: https://www.fukuta-motor.com.tw/tw/product_i/P2025031120375601
+  tw.4590#e6:
+    locator: 次世代動力系統
+    published_date: null
+    publisher: 富田電機股份有限公司
+    quote_check: found
+    title: 富田電機－產品服務
+    url: https://www.fukuta-motor.com.tw/tw/product.html

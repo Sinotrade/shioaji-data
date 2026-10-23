@@ -8,15 +8,102 @@ industry:
   l0_code: '22'
   l0_name: 生技醫療業
   l0_name_en: Biotechnology and Medical Care
-primary_chain_position: unknown
+  l1: health
+  l1_name: 醫療保健
+  l1_name_en: Healthcare
+  l2: health.pharma
+  l2_name: 製藥與生技
+  l2_name_en: Pharmaceuticals & Biotech
+  l3: bio.generic
+  l3_name: 學名藥與原料藥
+  l3_name_en: Generics & APIs
+chain: chain.biotech
+chain_stage:
+  agreement: both
+  also: []
+  reason: 主要營收來自人用原料藥，並經營賦形劑，屬研發與原料階段。
+  stage: rnd
+  stage_name: 研發與原料
+  tier: upstream
+primary_chain_position: upstream
+summary_short: 研發、製造及銷售人用原料藥，另經營賦形劑及動物用藥。
+summary_long: 生泰以人用西藥原料藥的研發、製造及銷售為主要業務，產品涵蓋肌肉鬆弛、局部麻醉、中樞神經、呼吸、消化及心臟血管等用途，另經營賦形劑及動物用藥。2025年營收以肌肉鬆弛劑原料藥占26.29%最高，中樞神經系統劑占19.18%，局部麻醉劑占11.46%，呼吸系統劑占10.83%；賦形劑占6.66%，動物用藥占1.02%。生達化學製藥官網將生泰列為子公司。
+segments:
+- evidence_ids:
+  - e3
+  id: seg_muscle
+  name: 肌肉鬆弛劑原料藥
+  period: '2025'
+  revenue_share_pct: 26.29
+- evidence_ids:
+  - e3
+  id: seg_cns
+  name: 中樞神經系統劑
+  period: '2025'
+  revenue_share_pct: 19.18
+- evidence_ids:
+  - e3
+  id: seg_anesthetic
+  name: 局部麻醉劑原料藥
+  period: '2025'
+  revenue_share_pct: 11.46
+- evidence_ids:
+  - e3
+  id: seg_respiratory
+  name: 呼吸系統劑原料藥
+  period: '2025'
+  revenue_share_pct: 10.83
+- evidence_ids:
+  - e4
+  id: seg_digestive
+  name: 消化系統劑原料藥
+  period: '2025'
+  revenue_share_pct: 6.42
+- evidence_ids:
+  - e4
+  id: seg_cardiovascular
+  name: 心臟血管劑原料藥
+  period: '2025'
+  revenue_share_pct: 6.45
+- evidence_ids:
+  - e4
+  id: seg_chemotherapy
+  name: 化學治療原料藥
+  period: '2025'
+  revenue_share_pct: 4.04
+- evidence_ids:
+  - e4
+  id: seg_analgesic
+  name: 消炎解熱鎮痛劑原料藥
+  period: '2025'
+  revenue_share_pct: 0.68
+- evidence_ids:
+  - e4
+  id: seg_excipient
+  name: 賦形劑
+  period: '2025'
+  revenue_share_pct: 6.66
+- evidence_ids:
+  - e4
+  id: seg_veterinary
+  name: 動物用藥
+  period: '2025'
+  revenue_share_pct: 1.02
+- evidence_ids:
+  - e4
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 6.97
 relations:
   parents:
-  - as_of: '2026-06-30'
+  - as_of: 2026-10
     confidence: ai_cross_checked
     counterparty_shares: []
     detail: 納入合併財務報告的子公司
     details:
     - 納入合併財務報告的子公司
+    - 母公司關係
     edge: eb933a0fcd9e0
     evidence_level: primary
     id: tw.1720
@@ -24,12 +111,40 @@ relations:
     ranking_basis: unranked
     share_basis: null
     share_pct: null
-    weight: 1
+    weight: 2
 website: https://www.syn-tech.com.tw
 tax_id: '72197621'
 incorporated: '1982-11-09'
 listed: '2005-10-19'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1777#e2:
+    locator: 專業製藥 品質卓越
+    published_date: null
+    publisher: 生泰合成工業股份有限公司
+    quote_check: found
+    title: 生泰合成工業股份有限公司官網首頁
+    url: https://www.syn-tech.com.tw/tw/
+  tw.1777#e3:
+    locator: 第91頁，114年所營業務之營業比重；金額單位為新台幣仟元
+    published_date: '2026-04-28'
+    publisher: 生泰合成工業股份有限公司
+    quote_check: found
+    title: 生泰合成工業股份有限公司一一四年度年報
+    url: https://www.syn-tech.com.tw/tw/doc/%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
+  tw.1777#e4:
+    locator: 第92頁，114年所營業務之營業比重續表；金額單位為新台幣仟元
+    published_date: '2026-04-28'
+    publisher: 生泰合成工業股份有限公司
+    quote_check: found
+    title: 生泰合成工業股份有限公司一一四年度年報
+    url: https://www.syn-tech.com.tw/tw/doc/%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
+  tw.1777#e5:
+    locator: 溫室氣體及能源管理／能源消耗及用電密集度統計
+    published_date: null
+    publisher: 生達化學製藥股份有限公司
+    quote_check: found
+    title: 環境保護－生達化學製藥
+    url: https://www.standard.com.tw/esg-protect.php

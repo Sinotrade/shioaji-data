@@ -8,12 +8,156 @@ industry:
   l0_code: '24'
   l0_name: 半導體業
   l0_name_en: Semiconductor
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.semi
+  l2_name: 半導體
+  l2_name_en: Semiconductors
+  l3: semi.ic_design
+  l3_name: IC 設計
+  l3_name_en: IC Design
+chain: chain.semiconductor
+chain_stage:
+  agreement: both
+  also: []
+  reason: 為無晶圓廠IC設計公司，主要設計銷售收發器及橋接器IC，製造與封測均委外。
+  stage: ip_design
+  stage_name: IP 與 IC 設計
+  tier: upstream
+primary_chain_position: upstream
+summary_short: 設計及銷售工業電腦用收發器、橋接器與輸出入控制等IC。
+summary_long: 精拓科為無晶圓廠IC設計公司，以工業電腦用類比數位混合訊號晶片為發展主體，晶圓製造與封裝測試均委外。2026年上半年，收發器IC占營收40.34%，橋接器IC占35.14%，輸出入控制IC占17.78%，其餘為環境監控與PD充電管理IC。產品功能涵蓋通訊介面轉換、輸出入控制、溫度監測及充電控制，應用亦包括筆記型與電競電腦。公司揭露產品已導入機械手臂及機器人相關應用並量產；原子公司瞻誠科技於2025年8月7日完成清算。
+segments:
+- evidence_ids:
+  - e3
+  id: seg_transceiver
+  name: 收發器IC
+  period: 2026年上半年
+  revenue_share_pct: 40.34
+- evidence_ids:
+  - e3
+  id: seg_bridge
+  name: 橋接器IC
+  period: 2026年上半年
+  revenue_share_pct: 35.14
+- evidence_ids:
+  - e3
+  id: seg_io
+  name: 輸出入控制IC
+  period: 2026年上半年
+  revenue_share_pct: 17.78
+- evidence_ids:
+  - e3
+  id: seg_monitor
+  name: 環境監控IC
+  period: 2026年上半年
+  revenue_share_pct: 5.41
+- evidence_ids:
+  - e3
+  id: seg_pd
+  name: PD充電管理IC
+  period: 2026年上半年
+  revenue_share_pct: 1.33
+main_theme: theme.robotics
+themes:
+- also: []
+  stage: null
+  theme: theme.robotics
+  tier: null
+relations:
+  subsidiaries:
+  - as_of: '2025-08-07'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 原子公司，已完成解散清算
+    details:
+    - 原子公司，已完成解散清算
+    edge: e62bd18ae7160
+    evidence_level: primary
+    id: org.瞻誠科技股份有限公司
+    name: 瞻誠科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 導入自動化、機械手臂及機器人相關應用的多家工業電腦廠商，未揭露名稱。
 website: http://www.fintek.com.tw
 tax_id: '80333472'
 incorporated: '2002-05-10'
 listed: '2022-11-03'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4951#e1:
+    locator: 公司簡介、產品研發及生產製造
+    published_date: null
+    publisher: 精拓科技股份有限公司
+    quote_check: found
+    title: 關於精拓
+    url: https://www.fintek.com.tw/index.php/zh-tw/about
+  tw.4951#e10:
+    locator: PD產品分類
+    published_date: null
+    publisher: 精拓科技股份有限公司
+    quote_check: found
+    title: Power Management
+    url: https://www.fintek.com.tw/index.php/zh-tw/products/prod-pwmgmt
+  tw.4951#e2:
+    locator: 公司簡介首段
+    published_date: null
+    publisher: 精拓科技股份有限公司
+    quote_check: found
+    title: 關於精拓
+    url: https://www.fintek.com.tw/index.php/zh-tw/about
+  tw.4951#e3:
+    locator: 第4頁，主要產品及應用領域，115年H1營收占比
+    published_date: '2026-08-20'
+    publisher: 精拓科技股份有限公司
+    quote_check: found
+    title: 2026年8月20日法說會簡報
+    url: https://www.fintek.com.tw/images/FintekPDF/investors/FintekInvestorConference_20260820.pdf
+  tw.4951#e4:
+    locator: 第10頁，產品市場拓展方向與成果
+    published_date: '2026-08-20'
+    publisher: 精拓科技股份有限公司
+    quote_check: found
+    title: 2026年8月20日法說會簡報
+    url: https://www.fintek.com.tw/images/FintekPDF/investors/FintekInvestorConference_20260820.pdf
+  tw.4951#e5:
+    locator: 印刷第100頁，關係企業組織圖註解
+    published_date: '2026-04-23'
+    publisher: 精拓科技股份有限公司
+    quote_check: found
+    title: 精拓科技股份有限公司114年度年報
+    url: https://www.fintek.com.tw/images/FintekPDF/Finance/shareholders/2025AnnualReport.pdf
+  tw.4951#e6:
+    locator: Multi-protocol與CAN產品分類
+    published_date: null
+    publisher: 精拓科技股份有限公司
+    quote_check: found
+    title: Transceiver
+    url: https://www.fintek.com.tw/index.php/zh-tw/products/prod-trx
+  tw.4951#e7:
+    locator: UART產品分類
+    published_date: null
+    publisher: 精拓科技股份有限公司
+    quote_check: found
+    title: Bridge
+    url: https://www.fintek.com.tw/index.php/zh-tw/products/prod-bg
+  tw.4951#e8:
+    locator: eSPI產品分類
+    published_date: null
+    publisher: 精拓科技股份有限公司
+    quote_check: found
+    title: Super I/O
+    url: https://www.fintek.com.tw/index.php/zh-tw/products/prod-sio
+  tw.4951#e9:
+    locator: Temperature Sensor產品分類
+    published_date: null
+    publisher: 精拓科技股份有限公司
+    quote_check: found
+    title: HW Monitor
+    url: https://www.fintek.com.tw/index.php/zh-tw/products/prod-hwmonitor

@@ -8,12 +8,143 @@ industry:
   l0_code: '27'
   l0_name: 通信網路業
   l0_name_en: Communications and Internet
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.network
+  l2_name: 通信網路
+  l2_name_en: Communications & Networking
+  l3: net.wireless
+  l3_name: 無線通訊與射頻
+  l3_name_en: Wireless & RF
+chain: chain.networking
+chain_stage:
+  agreement: both
+  also: []
+  reason: RFID Tag占營收66.62%，以無線射頻識別標籤與詢答器製造為主，屬模組與零組件。
+  stage: modules
+  stage_name: 模組與零組件
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 研發、製造及銷售RFID標籤，提供客製化設計與量產服務。
+summary_long: 韋僑以RFID詢答器與標籤的研發、製造及銷售為主，提供客製化設計與量產服務。2025年營收組成為RFID Tag占66.62%、RFID Label占32.22%，其他占1.16%。產品涵蓋適用高低溫、潮濕及金屬干擾環境的塑膠射出型標籤，以及適用金屬或非金屬物品的貼紙式標籤；感測型標籤整合溫度紀錄與NFC讀取，可用於冷鏈管理。截至2026年6月底，公司持有日本與美國子公司全數股權。
+segments:
+- evidence_ids:
+  - e6
+  id: seg_tag
+  name: RFID Tag
+  period: 2025年度
+  revenue_share_pct: 66.62
+- evidence_ids:
+  - e6
+  id: seg_label
+  name: RFID Label
+  period: 2025年度
+  revenue_share_pct: 32.22
+- evidence_ids:
+  - e6
+  id: seg_other
+  name: 其他
+  period: 2025年度
+  revenue_share_pct: 1.16
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 日本全資子公司
+    details:
+    - 日本全資子公司
+    edge: eea6cb9a11ac5
+    evidence_level: primary
+    id: org.sag-japan
+    name: SAG Japan Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 美國全資子公司
+    details:
+    - 美國全資子公司
+    edge: e04723a67622b
+    evidence_level: primary
+    id: org.sag-usa
+    name: SAG USA Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.sag.com.tw
 tax_id: '16877131'
 incorporated: '1999-03-23'
 listed: '2015-10-08'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6417#e1:
+    locator: 公司基本資料：股票代號、公司名稱、統一編號及主要經營業務
+    published_date: null
+    publisher: 韋僑科技股份有限公司
+    quote_check: found
+    title: 基本資料｜公司概況
+    url: https://www.sag.com.tw/company-overview/
+  tw.6417#e2:
+    locator: 核心競爭力／高附加價值客製服務
+    published_date: null
+    publisher: 韋僑科技股份有限公司
+    quote_check: found
+    title: 關於韋僑
+    url: https://www.sag.com.tw/about-us/
+  tw.6417#e3:
+    locator: Enable Every RFID Potential／產品介紹
+    published_date: null
+    publisher: 韋僑科技股份有限公司
+    quote_check: found
+    title: RFID塑膠射出型標籤｜產品分類
+    url: https://www.sag.com.tw/productcategory-tags/
+  tw.6417#e4:
+    locator: Cost-effective RFID Transponder Solution／產品介紹
+    published_date: null
+    publisher: 韋僑科技股份有限公司
+    quote_check: found
+    title: RFID貼紙式標籤｜產品分類
+    url: https://www.sag.com.tw/product-category-labelsninlays/
+  tw.6417#e5:
+    locator: 感測型標籤 SENSOR TAGS
+    published_date: null
+    publisher: 韋僑科技股份有限公司
+    quote_check: found
+    title: 產品分類
+    url: https://www.sag.com.tw/product-category/
+  tw.6417#e6:
+    locator: 第84頁，肆、營運概況／一、業務內容／2.營業比重；欄序為113年度、114年度
+    published_date: '2026-04-24'
+    publisher: 韋僑科技股份有限公司
+    quote_check: found
+    title: 韋僑科技股份有限公司114年度年報
+    url: https://www.sag.com.tw/wp-content/uploads/2026/06/114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf
+  tw.6417#e7:
+    locator: 第88頁，產業上、中、下游之關聯性
+    published_date: '2026-04-24'
+    publisher: 韋僑科技股份有限公司
+    quote_check: found
+    title: 韋僑科技股份有限公司114年度年報
+    url: https://www.sag.com.tw/wp-content/uploads/2026/06/114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf
+  tw.6417#e8:
+    locator: 第17頁，附註十「子公司」編製主體表；投資公司為本公司，SAG Japan列115年6月30日持股100%
+    published_date: null
+    publisher: 韋僑科技股份有限公司
+    quote_check: found
+    title: 韋僑科技股份有限公司及子公司115及114年第2季合併財務報告
+    url: https://www.sag.com.tw/wp-content/uploads/2026/08/%E9%9F%8B%E5%83%91115%E5%B9%B4%E5%BA%A6Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
+  tw.6417#e9:
+    locator: 第17頁，附註十「子公司」編製主體表；投資公司為本公司，SAG USA列115年6月30日持股100%
+    published_date: null
+    publisher: 韋僑科技股份有限公司
+    quote_check: found
+    title: 韋僑科技股份有限公司及子公司115及114年第2季合併財務報告
+    url: https://www.sag.com.tw/wp-content/uploads/2026/08/%E9%9F%8B%E5%83%91115%E5%B9%B4%E5%BA%A6Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf

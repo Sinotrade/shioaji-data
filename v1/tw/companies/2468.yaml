@@ -8,8 +8,68 @@ industry:
   l0_code: '30'
   l0_name: 資訊服務業
   l0_name_en: Information Service
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.software
+  l2_name: 軟體與資訊服務
+  l2_name_en: Software & IT Services
+  l3: sw.it_services
+  l3_name: 系統整合與資訊服務
+  l3_name_en: System Integration & IT Services
+primary_chain_position: not_applicable
+summary_short: 以電腦設備銷售、資訊系統整合及軟硬體維運等專業服務取得營收。
+summary_long: 華經以電腦設備銷售、系統整合及資訊專業服務為主要業務，2025年電腦設備及系統整合占營收78.18%，專業服務及勞務占21.82%。系統整合涵蓋雲端IT基礎架構、備份備援與資訊安全，並提供軟硬體委外維護及保險資訊系統服務。應用產品包括DOC.M文件數位化與自行研發的EasyWare WMS倉儲管理系統，另有DCIM智能機房管理系統，支援機房告警、稽核與控制。公開文件揭露大聯大控股為母公司，華經科技為全資子公司。
+segments:
+- evidence_ids:
+  - e2
+  id: seg1
+  name: 電腦設備及系統整合
+  period: '2025'
+  revenue_share_pct: 78.18
+- evidence_ids:
+  - e2
+  id: seg2
+  name: 專業服務及勞務收入
+  period: '2025'
+  revenue_share_pct: 21.82
+main_theme: theme.data_center
+themes:
+- also: []
+  stage: operation
+  theme: theme.data_center
+  tier: downstream
 relations:
+  parents:
+  - as_of: '2025-08-08'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 母公司
+    details:
+    - 母公司
+    edge: ebe627bb3127d
+    evidence_level: primary
+    id: tw.3702
+    name: 大聯大
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資資訊服務子公司
+    details:
+    - 全資資訊服務子公司
+    edge: e58c6238e04b0
+    evidence_level: primary
+    id: org.fortune-technology-service
+    name: 華經科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   transactions:
   - amount: 每股現金新臺幣25元
     as_of: '2025-04-29'
@@ -36,7 +96,70 @@ website: http://www.fis.com.tw
 tax_id: '12115702'
 incorporated: '1977-04-11'
 listed: '2001-09-17'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2468#e10:
+    locator: 第17頁，附註十一、子公司；114年9月30日持股欄
+    published_date: null
+    publisher: 華經資訊企業股份有限公司
+    quote_check: found
+    title: 華經資訊企業股份有限公司及子公司114年第3季合併財務報告
+    url: https://fis.com.tw/wp-content/uploads/2025/12/2025Q3%E8%8F%AF%E7%B6%93%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1%E5%B7%B2%E5%A5%97%E5%8D%B0.pdf
+  tw.2468#e2:
+    locator: PDF第53頁，肆、營運概況／公司114年度之產品及其營業比重
+    published_date: '2026-06-08'
+    publisher: 華經資訊企業股份有限公司
+    quote_check: found
+    title: 2025華經年報
+    url: https://fis.com.tw/wp-content/uploads/2026/06/2025%E8%8F%AF%E7%B6%93%E5%B9%B4%E5%A0%B1.pdf
+  tw.2468#e3:
+    locator: 系統整合
+    published_date: null
+    publisher: 華經資訊企業股份有限公司
+    quote_check: found
+    title: 服務介紹
+    url: https://fis.com.tw/about/service/
+  tw.2468#e4:
+    locator: 客戶服務與技術支援，首段
+    published_date: null
+    publisher: 華經資訊企業股份有限公司
+    quote_check: found
+    title: 客戶服務與技術支援
+    url: https://fis.com.tw/solution-post/home/maint-manag/customer-service-and-technical-support/
+  tw.2468#e5:
+    locator: 保險業資訊委外服務／項目
+    published_date: null
+    publisher: 華經資訊企業股份有限公司
+    quote_check: found
+    title: 保險金融
+    url: https://fis.com.tw/solution-post/home/insurance-finance/
+  tw.2468#e6:
+    locator: DOC.M文件數位化解決方案，首段
+    published_date: null
+    publisher: 華經資訊企業股份有限公司
+    quote_check: found
+    title: DOC.M文件數位化解決方案
+    url: https://fis.com.tw/solution-post/home/file-management/doc-m/
+  tw.2468#e7:
+    locator: 為倉庫量身訂做的流程與管控
+    published_date: null
+    publisher: 華經資訊企業股份有限公司
+    quote_check: found
+    title: EasyWare WMS 倉儲物流管理系統
+    url: https://fis.com.tw/products/easyware-wms-warehouse-logistics/
+  tw.2468#e8:
+    locator: DCIM智能機房管理系統，第二段
+    published_date: null
+    publisher: 華經資訊企業股份有限公司
+    quote_check: found
+    title: DCIM智能機房管理系統
+    url: https://fis.com.tw/solution-post/home/system-inte/dataceneter-infrastructure-management/
+  tw.2468#e9:
+    locator: 審計委員會2025年度運作情形，2025/08/08議案
+    published_date: null
+    publisher: 華經資訊企業股份有限公司
+    quote_check: found
+    title: 公司治理
+    url: https://fis.com.tw/sustainable-development/shareholder-information/

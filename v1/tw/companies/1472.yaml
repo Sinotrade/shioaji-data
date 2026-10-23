@@ -8,12 +8,123 @@ industry:
   l0_code: '14'
   l0_name: 建材營造業
   l0_name_en: Building Material and Construction
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.construction
+  l2_name: 營建與工程
+  l2_name_en: Engineering & Construction
+  l3: cons.engineering
+  l3_name: 工程與統包
+  l3_name_en: Engineering & EPC
+primary_chain_position: not_applicable
+summary_short: 以營建工程服務賺取收入，透過子公司上鋌營造承攬公共工程。
+summary_long: 三洋實業以營建工程服務為主要業務，2024年度營建工程營業淨額為新臺幣23.35億元，占營收100%。集團透過全資子公司上鋌營造承攬政府工程標案，公共工程營造與社會住宅為官網列示的主要營收動能。上鋌營造具甲級營造廠資格，集團主要以統包方式承攬業主委辦工程。另持有泰國子公司Tri Ocean Textile (Thailand) Co., LTD全部股權；該公司於2025年10月決議清算解散，2025年度永續報告書載明清算程序已完成，待當地政府核准。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_construction
+  name: 營建工程
+  period: '2024'
+  revenue_share_pct: 100
+relations:
+  subsidiaries:
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資營造子公司，具甲級營造廠資格
+    details:
+    - 全資營造子公司，具甲級營造廠資格
+    edge: ef29103880267
+    evidence_level: primary
+    id: org.shang-ting-construction
+    name: 上鋌營造股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2026-08
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資泰國子公司，已決議清算解散
+    details:
+    - 全資泰國子公司，已決議清算解散
+    edge: ef797486ded11
+    evidence_level: primary
+    id: org.tri-ocean-textile-thailand
+    name: Tri Ocean Textile (Thailand) Co., LTD
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: triocean.com.tw
 tax_id: 07029919
 incorporated: '1968-10-07'
 listed: '2000-09-11'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1472#e10:
+    locator: 印刷頁18，關係企業圖
+    published_date: '2026-08-30'
+    publisher: 三洋實業股份有限公司
+    quote_check: unreachable
+    title: 三洋實業2025年度永續報告書
+    url: https://fliphtml5.com/czwim/awuj/
+  tw.1472#e2:
+    locator: 印刷頁65，PDF第69頁，113年度主要產品營業比重
+    published_date: null
+    publisher: 三洋實業股份有限公司
+    quote_check: found
+    title: 三洋實業113年度年報
+    url: https://triocean.com.tw/wp-content/uploads/2025/05/1140528-%E4%B8%89%E6%B4%8B%E5%B9%B4%E5%A0%B1V6%E5%82%B3-0506FIN.pdf
+  tw.1472#e3:
+    locator: 公司簡介，2024年營運方向
+    published_date: null
+    publisher: 三洋實業股份有限公司
+    quote_check: found
+    title: 關於三洋
+    url: https://triocean.com.tw/about-us/
+  tw.1472#e4:
+    locator: 印刷頁83，PDF第87頁，關係企業分工
+    published_date: null
+    publisher: 三洋實業股份有限公司
+    quote_check: found
+    title: 三洋實業113年度年報
+    url: https://triocean.com.tw/wp-content/uploads/2025/05/1140528-%E4%B8%89%E6%B4%8B%E5%B9%B4%E5%A0%B1V6%E5%82%B3-0506FIN.pdf
+  tw.1472#e5:
+    locator: 印刷頁83，PDF第87頁，關係企業組織圖
+    published_date: null
+    publisher: 三洋實業股份有限公司
+    quote_check: found
+    title: 三洋實業113年度年報
+    url: https://triocean.com.tw/wp-content/uploads/2025/05/1140528-%E4%B8%89%E6%B4%8B%E5%B9%B4%E5%A0%B1V6%E5%82%B3-0506FIN.pdf
+  tw.1472#e6:
+    locator: 印刷頁18，公司簡介及關係企業圖
+    published_date: '2026-08-30'
+    publisher: 三洋實業股份有限公司
+    quote_check: unreachable
+    title: 三洋實業2025年度永續報告書
+    url: https://fliphtml5.com/czwim/awuj/
+  tw.1472#e7:
+    locator: 印刷頁19，業務簡介
+    published_date: '2026-08-30'
+    publisher: 三洋實業股份有限公司
+    quote_check: unreachable
+    title: 三洋實業2025年度永續報告書
+    url: https://fliphtml5.com/czwim/awuj/
+  tw.1472#e8:
+    locator: 印刷頁19，業務簡介
+    published_date: '2026-08-30'
+    publisher: 三洋實業股份有限公司
+    quote_check: unreachable
+    title: 三洋實業2025年度永續報告書
+    url: https://fliphtml5.com/czwim/awuj/
+  tw.1472#e9:
+    locator: 印刷頁18，泰國子公司清算註解
+    published_date: '2026-08-30'
+    publisher: 三洋實業股份有限公司
+    quote_check: unreachable
+    title: 三洋實業2025年度永續報告書
+    url: https://fliphtml5.com/czwim/awuj/

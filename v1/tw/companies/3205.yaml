@@ -8,12 +8,143 @@ industry:
   l0_code: '22'
   l0_name: 生技醫療業
   l0_name_en: Biotechnology and Medical Care
+  l1: consumer
+  l1_name: 消費
+  l1_name_en: Consumer
+  l2: cons.staples
+  l2_name: 民生消費
+  l2_name_en: Consumer Staples
+  l3: food.processing
+  l3_name: 食品加工
+  l3_name_en: Food Processing
 primary_chain_position: unknown
+summary_short: 經營食品銷售、保健食品研發代工及天然物原料。
+summary_long: 佰研以食品銷售及保健食品研發代工為營運內容，2025年合併食品收入為新台幣3億2,284.6萬元，其他收入為2,323.4萬元。公司提供配方設計、原料、檢驗、包裝及委託生產服務。官網原料產品包括超穀酵素Saponzyme、狼尾草／淡竹葉Zeurogen與透明質酸酶抑制劑Hyase-E2。截至2026年6月底，子公司展飛從事肉品等買賣，邁高從事生物技術研發服務，另持有投資公司Le Beau Limited。
+segments:
+- evidence_ids:
+  - e01
+  id: seg_food
+  name: 食品
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e01
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: null
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%之投資公司
+    details:
+    - 直接持有100%之投資公司
+    edge: ed492f3caf3a3
+    evidence_level: primary
+    id: org.le-beau-limited
+    name: Le Beau Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%之食品買賣子公司
+    details:
+    - 直接持有100%之食品買賣子公司
+    edge: e15cd3a72e67d
+    evidence_level: primary
+    id: org.展飛股份有限公司
+    name: 展飛股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有82.26%之生物技術研發子公司
+    details:
+    - 直接持有82.26%之生物技術研發子公司
+    edge: efea8f9189f67
+    evidence_level: primary
+    id: org.邁高生物技術開發股份有限公司
+    name: 邁高生物技術開發股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.naturalbiokey.com
 tax_id: '16313696'
 incorporated: '1998-03-16'
 listed: '2005-09-12'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3205#e01:
+    locator: 印刷第47頁／PDF第49頁，十四、部門資訊，產品別資訊；金額單位為新台幣千元
+    published_date: null
+    publisher: 佰研生化科技股份有限公司
+    quote_check: not_found
+    title: 佰研114年第四季合併財務報表
+    url: https://www.naturalbiokey.com/download-file.php?id=65&t=financial
+  tw.3205#e02:
+    locator: 印刷第8頁／PDF第9頁，公司沿革及主要營業項目
+    published_date: null
+    publisher: 佰研生化科技股份有限公司
+    quote_check: not_found
+    title: 佰研生化科技股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.naturalbiokey.com/download-file.php?id=67&t=financial
+  tw.3205#e03:
+    locator: 專業服務／生產代工，首段
+    published_date: null
+    publisher: 佰研生化科技股份有限公司
+    quote_check: found
+    title: 佰研生化科技股份有限公司－生產代工
+    url: https://www.naturalbiokey.com/oem.php
+  tw.3205#e04:
+    locator: 網頁標題及超穀酵素產品段落
+    published_date: null
+    publisher: 佰研生化科技股份有限公司
+    quote_check: found
+    title: 佰研生化科技股份有限公司－獨家原料銷售
+    url: https://www.naturalbiokey.com/sell.php
+  tw.3205#e05:
+    locator: 網頁標題及狼尾草／淡竹葉產品段落
+    published_date: null
+    publisher: 佰研生化科技股份有限公司
+    quote_check: found
+    title: 佰研生化科技股份有限公司－獨家原料銷售
+    url: https://www.naturalbiokey.com/sell.php
+  tw.3205#e06:
+    locator: 網頁標題及透明質酸酶抑制劑產品段落
+    published_date: null
+    publisher: 佰研生化科技股份有限公司
+    quote_check: found
+    title: 佰研生化科技股份有限公司－獨家原料銷售
+    url: https://www.naturalbiokey.com/sell.php
+  tw.3205#e07:
+    locator: 印刷第10頁／PDF第11頁，合併子公司表，Le Beau列；比例欄依序為115.6.30、114.12.31、114.6.30
+    published_date: null
+    publisher: 佰研生化科技股份有限公司
+    quote_check: not_found
+    title: 佰研生化科技股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.naturalbiokey.com/download-file.php?id=67&t=financial
+  tw.3205#e08:
+    locator: 印刷第10頁／PDF第11頁，合併子公司表，邁高列；比例欄依序為115.6.30、114.12.31、114.6.30
+    published_date: null
+    publisher: 佰研生化科技股份有限公司
+    quote_check: not_found
+    title: 佰研生化科技股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.naturalbiokey.com/download-file.php?id=67&t=financial
+  tw.3205#e09:
+    locator: 印刷第10頁／PDF第11頁，合併子公司表，展飛列；比例欄依序為115.6.30、114.12.31、114.6.30
+    published_date: null
+    publisher: 佰研生化科技股份有限公司
+    quote_check: not_found
+    title: 佰研生化科技股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.naturalbiokey.com/download-file.php?id=67&t=financial

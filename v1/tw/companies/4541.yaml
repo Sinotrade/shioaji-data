@@ -8,12 +8,98 @@ industry:
   l0_code: '20'
   l0_name: 其他業
   l0_name_en: Others
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.aerospace
+  l2_name: 航太與國防
+  l2_name_en: Aerospace & Defense
+  l3: aero.components
+  l3_name: 航太零組件
+  l3_name_en: Aerospace Components
+primary_chain_position: not_applicable
+summary_short: 以航太發動機、起落架及半導體設備精密零組件加工賺取營收。
+summary_long: 晟田主要從事航太及精密機械零組件加工。2025年航太客供料與自購料業務分別占營收48.60%及19.69%，合計68.29%；半導體設備零組件占25.36%，其他食品與精密機械加工占6.35%。航太產品包括發動機葉片、懸塊與機匣、起落架連桿及活塞，以及致動器氣缸與液壓缸。半導體產品涵蓋設備腔體及真空泵浦精密組件，食品機械產品則包括填充閥體、凸輪及輸送機。
+segments:
+- evidence_ids:
+  - e7
+  id: aerospace_customer_material
+  name: 航太零組件（客供料）
+  period: '2025'
+  revenue_share_pct: 48.6
+- evidence_ids:
+  - e7
+  id: aerospace_self_material
+  name: 航太零組件（自購料）
+  period: '2025'
+  revenue_share_pct: 19.69
+- evidence_ids:
+  - e7
+  id: semiconductor_components
+  name: 半導體設備零組件
+  period: '2025'
+  revenue_share_pct: 25.36
+- evidence_ids:
+  - e7
+  - e8
+  id: other_precision_components
+  name: 其他（食品機械、精密機械等零件加工）
+  period: '2025'
+  revenue_share_pct: 6.35
 website: www.maicl.com
 tax_id: '86263092'
 incorporated: '1991-08-15'
 listed: '2014-07-22'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4541#e2:
+    locator: 航太發動機產品說明
+    published_date: null
+    publisher: 晟田科技工業股份有限公司
+    quote_check: found
+    title: 航太發動機｜應用領域
+    url: https://www.maicl.com/index.php?inter=application&nc_id=3
+  tw.4541#e3:
+    locator: 起落架產品說明
+    published_date: null
+    publisher: 晟田科技工業股份有限公司
+    quote_check: found
+    title: 起落架｜應用領域
+    url: https://www.maicl.com/index.php?inter=application&nc_id=1
+  tw.4541#e4:
+    locator: 致動器產品說明
+    published_date: null
+    publisher: 晟田科技工業股份有限公司
+    quote_check: found
+    title: 致動器｜應用領域
+    url: https://www.maicl.com/index.php?inter=application&nc_id=2
+  tw.4541#e5:
+    locator: 第44頁，商品及服務項目E、F
+    published_date: '2026-04-30'
+    publisher: 晟田科技工業股份有限公司
+    quote_check: found
+    title: 晟田科技工業股份有限公司114年度年報
+    url: https://www.maicl.com/upload/sponsor/2026063010155057.pdf
+  tw.4541#e6:
+    locator: 精密機械產品選單
+    published_date: null
+    publisher: 晟田科技工業股份有限公司
+    quote_check: found
+    title: 精密機械｜應用領域
+    url: https://www.maicl.com/index.php?inter=application&nc_id=4
+  tw.4541#e7:
+    locator: 第44頁，本公司產品之營業比重；各列後兩欄為114年度銷售值及比例
+    published_date: '2026-04-30'
+    publisher: 晟田科技工業股份有限公司
+    quote_check: found
+    title: 晟田科技工業股份有限公司114年度年報
+    url: https://www.maicl.com/upload/sponsor/2026063010155057.pdf
+  tw.4541#e8:
+    locator: 第44頁，營業比重表附註
+    published_date: '2026-04-30'
+    publisher: 晟田科技工業股份有限公司
+    quote_check: found
+    title: 晟田科技工業股份有限公司114年度年報
+    url: https://www.maicl.com/upload/sponsor/2026063010155057.pdf

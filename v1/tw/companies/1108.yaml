@@ -8,12 +8,170 @@ industry:
   l0_code: '01'
   l0_name: 水泥工業
   l0_name_en: Cement
-primary_chain_position: unknown
+  l1: materials
+  l1_name: 原物料
+  l1_name_en: Materials
+  l2: mat.other
+  l2_name: 其他原物料
+  l2_name_en: Other Materials
+  l3: matl.cement
+  l3_name: 水泥
+  l3_name_en: Cement
+primary_chain_position: midstream
+summary_short: 以水泥、熟料、爐石粉及石材產銷為主，子公司經營預拌混凝土。
+summary_long: 幸福水泥以水泥、熟料、爐石粉及石材的生產銷售為主要業務，石材包括石灰石、規格石與砂石。水泥產品涵蓋卜特蘭Ⅰ型、Ⅱ型與低鹼水泥，另列有卜特蘭石灰石水泥。2025年度合併營收組成為水泥及熟料52.83%、水泥製品29.90%、其他17.27%，以水泥及熟料為最大來源。預拌混凝土由子公司幸孚預拌混凝土廠經營；直接子公司另有從事不動產開發的大升開發及從事船務代理的信福航業，幸孚預拌旗下福昱開發則從事土石採取。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_cement
+  name: 水泥及熟料
+  period: '2025'
+  revenue_share_pct: 52.83
+- evidence_ids:
+  - e2
+  id: seg_concrete
+  name: 水泥製品
+  period: '2025'
+  revenue_share_pct: 29.9
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 17.27
+relations:
+  subsidiaries:
+  - as_of: '2025-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司；不動產開發、出售及出租
+    details:
+    - 直接子公司；不動產開發、出售及出租
+    edge: ebc485f67009d
+    evidence_level: primary
+    id: org.da-sheng-development
+    name: 大升開發股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過幸孚預拌持有之間接子公司；土石採取
+    details:
+    - 透過幸孚預拌持有之間接子公司；土石採取
+    edge: e93ca3325b35d
+    evidence_level: primary
+    id: org.fu-yu-development
+    name: 福昱開發股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司；船務代理
+    details:
+    - 直接子公司；船務代理
+    edge: e2578ebd09a77
+    evidence_level: primary
+    id: org.xin-fu-navigation
+    name: 信福航業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司；產銷混凝土
+    details:
+    - 直接子公司；產銷混凝土
+    edge: ec6e4503835a2
+    evidence_level: primary
+    id: org.xing-fu-ready-mixed-concrete
+    name: 幸孚預拌混凝土廠股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.luckygrp.com.tw
 tax_id: '40601248'
 incorporated: '1974-05-07'
 listed: '1990-06-06'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1108#e10:
+    locator: 第18頁，附註十二子公司，幸福水泥投資之子公司列
+    published_date: null
+    publisher: 幸福水泥股份有限公司
+    quote_check: unreachable
+    title: 民國114及113年第2季合併財務報告暨會計師核閱報告
+    url: https://www.luckygrp.com.tw/upload/menu/20260121041502.pdf
+  tw.1108#e11:
+    locator: 第18頁，附註十二子公司，幸孚預拌投資之子公司列
+    published_date: null
+    publisher: 幸福水泥股份有限公司
+    quote_check: unreachable
+    title: 民國114及113年第2季合併財務報告暨會計師核閱報告
+    url: https://www.luckygrp.com.tw/upload/menu/20260121041502.pdf
+  tw.1108#e2:
+    locator: 第13頁，2.1公司簡介，各主要產品銷售比例
+    published_date: 2026-08
+    publisher: 幸福水泥股份有限公司
+    quote_check: found
+    title: 2025年永續報告書
+    url: https://www.luckygrp.com.tw/upload/htmlConten/e196a47e-c068-4541-afdc-c2476c39d2d1.pdf
+  tw.1108#e3:
+    locator: 第13頁，2.1公司簡介，主要產品／服務
+    published_date: 2026-08
+    publisher: 幸福水泥股份有限公司
+    quote_check: found
+    title: 2025年永續報告書
+    url: https://www.luckygrp.com.tw/upload/htmlConten/e196a47e-c068-4541-afdc-c2476c39d2d1.pdf
+  tw.1108#e4:
+    locator: 第13頁，2.1公司簡介
+    published_date: 2026-08
+    publisher: 幸福水泥股份有限公司
+    quote_check: found
+    title: 2025年永續報告書
+    url: https://www.luckygrp.com.tw/upload/htmlConten/e196a47e-c068-4541-afdc-c2476c39d2d1.pdf
+  tw.1108#e5:
+    locator: 營業項目，水泥產品標題
+    published_date: null
+    publisher: 幸福水泥股份有限公司
+    quote_check: found
+    title: 幸福水泥股份有限公司官網首頁
+    url: https://www.luckygrp.com.tw/luckygrp/home
+  tw.1108#e6:
+    locator: 第13頁，2.1公司簡介
+    published_date: 2026-08
+    publisher: 幸福水泥股份有限公司
+    quote_check: found
+    title: 2025年永續報告書
+    url: https://www.luckygrp.com.tw/upload/htmlConten/e196a47e-c068-4541-afdc-c2476c39d2d1.pdf
+  tw.1108#e7:
+    locator: 主要部門所營業務，和仁廠
+    published_date: null
+    publisher: 幸福水泥股份有限公司
+    quote_check: found
+    title: 公司架構
+    url: https://www.luckygrp.com.tw/luckygrp/CompanyStructure
+  tw.1108#e8:
+    locator: 第18頁，附註十二子公司，投資公司及子公司對照表
+    published_date: null
+    publisher: 幸福水泥股份有限公司
+    quote_check: unreachable
+    title: 民國114及113年第2季合併財務報告暨會計師核閱報告
+    url: https://www.luckygrp.com.tw/upload/menu/20260121041502.pdf
+  tw.1108#e9:
+    locator: 第18頁，附註十二子公司，幸福水泥投資之子公司列
+    published_date: null
+    publisher: 幸福水泥股份有限公司
+    quote_check: unreachable
+    title: 民國114及113年第2季合併財務報告暨會計師核閱報告
+    url: https://www.luckygrp.com.tw/upload/menu/20260121041502.pdf

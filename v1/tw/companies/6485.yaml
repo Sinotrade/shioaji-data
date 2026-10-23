@@ -8,12 +8,157 @@ industry:
   l0_code: '24'
   l0_name: 半導體業
   l0_name_en: Semiconductor
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.semi
+  l2_name: 半導體
+  l2_name_en: Semiconductors
+  l3: semi.ic_design
+  l3_name: IC 設計
+  l3_name_en: IC Design
+chain: chain.semiconductor
+chain_stage:
+  agreement: both
+  also: []
+  reason: 主要從事NAND Flash控制晶片設計，Flash Controller占營收96.65%。
+  stage: ip_design
+  stage_name: IP 與 IC 設計
+  tier: upstream
+primary_chain_position: upstream
+summary_short: 開發設計 NAND Flash 控制晶片，供記憶卡、隨身碟、eMMC 與 SSD 使用。
+summary_long: 點序從事 NAND Flash 快閃記憶體控制晶片開發設計，2025 年 Flash Controller 占合併營收 96.65%，Packaged Controller 占 0.35%，其他占 3.00%。主要產品包括 SD 記憶卡、USB 隨身碟、內嵌式 eMMC 與 SSD 控制晶片，SSD 方案涵蓋 SATA III 及 PCIe/NVMe 介面。合併子公司包括優存科技、Innostor Technology (Samoa) Limited，以及透過後者持有的銀燦科技（深圳）。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_flash_controller
+  name: Flash Controller
+  period: '2025'
+  revenue_share_pct: 96.65
+- evidence_ids:
+  - e2
+  id: seg_packaged_controller
+  name: Packaged Controller
+  period: '2025'
+  revenue_share_pct: 0.35
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 3
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的投資子公司
+    details:
+    - 直接持股100%的投資子公司
+    edge: e5c7c1e454a6b
+    evidence_level: primary
+    id: org.innostor-technology-samoa-limited
+    name: Innostor Technology (Samoa) Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股37.12%的合併子公司
+    details:
+    - 直接持股37.12%的合併子公司
+    edge: e5eb15bf07788
+    evidence_level: primary
+    id: org.優存科技股份有限公司
+    name: 優存科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過Samoa子公司間接持股100%
+    details:
+    - 透過Samoa子公司間接持股100%
+    edge: e5a325a91f761
+    evidence_level: primary
+    id: org.銀燦科技-深圳-有限公司
+    name: 銀燦科技（深圳）有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.asolid-tek.com
 tax_id: '28927852'
 incorporated: '2008-02-13'
 listed: '2015-11-17'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6485#e1:
+    locator: 印刷頁53，肆、營運概況／一、業務內容
+    published_date: '2026-05-13'
+    publisher: 點序科技股份有限公司
+    quote_check: found
+    title: 點序科技114年度年報
+    url: https://asolid-tek.com/wp-content/uploads/2026/05/114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B120260514_Final.pdf
+  tw.6485#e2:
+    locator: 印刷頁53，主要產品之營業比重；各列後兩欄為114年度合併金額及占比
+    published_date: '2026-05-13'
+    publisher: 點序科技股份有限公司
+    quote_check: found
+    title: 點序科技114年度年報
+    url: https://asolid-tek.com/wp-content/uploads/2026/05/114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B120260514_Final.pdf
+  tw.6485#e3:
+    locator: SD CONTROLLES SPEC，首句
+    published_date: null
+    publisher: 點序科技股份有限公司
+    quote_check: found
+    title: SD Controllers
+    url: https://asolid-tek.com/en/products-info/sd-controllers/
+  tw.6485#e4:
+    locator: UFD CONTROLLES SPEC，首句
+    published_date: null
+    publisher: 點序科技股份有限公司
+    quote_check: found
+    title: UFD Controllers
+    url: https://asolid-tek.com/en/products-info/ufd-controllers/
+  tw.6485#e5:
+    locator: eMMC CONTROLLES SPEC，首段
+    published_date: null
+    publisher: 點序科技股份有限公司
+    quote_check: found
+    title: eMMC Controllers
+    url: https://asolid-tek.com/en/products-info/emmc-controllers/
+  tw.6485#e6:
+    locator: SSD CONTROLLERS SPEC，首句
+    published_date: null
+    publisher: 點序科技股份有限公司
+    quote_check: found
+    title: SSD Controllers
+    url: https://asolid-tek.com/en/products-info/ssd-controllers/
+  tw.6485#e7:
+    locator: 印刷頁17，附註十二、子公司，說明1
+    published_date: null
+    publisher: 點序科技股份有限公司
+    quote_check: found
+    title: 點序科技2026年第二季合併財務報告
+    url: https://asolid-tek.com/wp-content/uploads/2026/08/2026%E5%B9%B4Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf
+  tw.6485#e8:
+    locator: 印刷頁17，附註十二、列入合併財務報告之子公司；投資公司為本公司
+    published_date: null
+    publisher: 點序科技股份有限公司
+    quote_check: found
+    title: 點序科技2026年第二季合併財務報告
+    url: https://asolid-tek.com/wp-content/uploads/2026/08/2026%E5%B9%B4Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf
+  tw.6485#e9:
+    locator: 印刷頁17，附註十二、列入合併財務報告之子公司，銀燦科技列
+    published_date: null
+    publisher: 點序科技股份有限公司
+    quote_check: found
+    title: 點序科技2026年第二季合併財務報告
+    url: https://asolid-tek.com/wp-content/uploads/2026/08/2026%E5%B9%B4Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf

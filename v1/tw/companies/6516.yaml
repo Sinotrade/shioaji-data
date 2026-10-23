@@ -8,12 +8,110 @@ industry:
   l0_code: '30'
   l0_name: 資訊服務業
   l0_name_en: Information Service
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.software
+  l2_name: 軟體與資訊服務
+  l2_name_en: Software & IT Services
+  l3: sw.it_services
+  l3_name: 系統整合與資訊服務
+  l3_name_en: System Integration & IT Services
+primary_chain_position: not_applicable
+summary_short: 以電子地圖、導航軟體、車載系統及自駕營運提供智慧交通服務。
+summary_long: 勤崴國際以電子地圖、導航軟體及車載系統提供智慧交通資訊服務。2025年度營收以導航軟體及車載系統占52%為主，其餘為電商服務及其他23%、電子地圖12%、自駕營運10%及系統整合服務3%。產品包括地圖與路徑規劃API、導航王手機及車機導航、車聯網平台與商業車隊管理服務，提供定位、路況資訊及車隊監控。自駕方案整合感測辨識、決策、車輛控制與車隊管理，應用於接駁及廠內物流運輸。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_map
+  name: 電子地圖
+  period: '2025'
+  revenue_share_pct: 12
+- evidence_ids:
+  - e2
+  id: seg_navigation
+  name: 導航軟體及車載系統
+  period: '2025'
+  revenue_share_pct: 52
+- evidence_ids:
+  - e2
+  id: seg_integration
+  name: 系統整合服務
+  period: '2025'
+  revenue_share_pct: 3
+- evidence_ids:
+  - e2
+  id: seg_commerce
+  name: 電商服務及其他
+  period: '2025'
+  revenue_share_pct: 23
+- evidence_ids:
+  - e2
+  id: seg_autonomous
+  name: 自駕營運
+  period: '2025'
+  revenue_share_pct: 10
 website: www.kingwaytek.com
 tax_id: '28835663'
 incorporated: '2007-12-26'
 listed: '2019-05-06'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6516#e2:
+    locator: 印刷頁78，PDF第82頁／目前主要產品之營業比重；各列依序為113年度金額、占比及114年度金額、占比
+    published_date: '2026-04-14'
+    publisher: 勤崴國際科技股份有限公司
+    quote_check: found
+    title: 中華民國一一四年度年報
+    url: https://www.kingwaytek.com/files/115%E5%B9%B4%E8%82%A1%E6%9D%B1%E5%B8%B8%E6%9C%83_%E5%B9%B4%E5%A0%B1.pdf
+  tw.6516#e3:
+    locator: 產品介紹／數位地圖平台、點位資訊與路徑資訊查詢
+    published_date: null
+    publisher: 勤崴國際科技股份有限公司
+    quote_check: found
+    title: Kwmap產品介紹
+    url: https://mapapi.kingwaytek.com/
+  tw.6516#e4:
+    locator: 導航解決方案／手機導航與車機版導航
+    published_date: null
+    publisher: 勤崴國際科技股份有限公司
+    quote_check: found
+    title: 技術與軟體服務
+    url: https://www.kingwaytek.com/services.html
+  tw.6516#e5:
+    locator: 導航解決方案／手機導航
+    published_date: null
+    publisher: 勤崴國際科技股份有限公司
+    quote_check: found
+    title: 技術與軟體服務
+    url: https://www.kingwaytek.com/services.html
+  tw.6516#e6:
+    locator: 樂客商業車隊平台介紹
+    published_date: null
+    publisher: 勤崴國際科技股份有限公司
+    quote_check: found
+    title: 樂客智慧車隊
+    url: https://fms.kingwaytek.com/
+  tw.6516#e7:
+    locator: 自動駕駛應用實績／自動駕駛巴士解決方案
+    published_date: null
+    publisher: 勤崴國際科技股份有限公司
+    quote_check: found
+    title: AI智慧移動與自動駕駛解決方案
+    url: https://www.kingwaytek.com/
+  tw.6516#e8:
+    locator: 自駕核心技術／車輛控制與管理
+    published_date: null
+    publisher: 勤崴國際科技股份有限公司
+    quote_check: found
+    title: 勤崴國際自駕整體解決方案
+    url: https://smartdriving.kingwaytek.com/cht/index.html
+  tw.6516#e9:
+    locator: 應用案例介紹／2026廠內：雙向自動駕駛物流車
+    published_date: null
+    publisher: 勤崴國際科技股份有限公司
+    quote_check: found
+    title: 勤崴國際自駕整體解決方案
+    url: https://smartdriving.kingwaytek.com/cht/index.html

@@ -8,19 +8,123 @@ industry:
   l0_code: '25'
   l0_name: 電腦及週邊設備業
   l0_name_en: Computer and Peripheral Equipment
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.hardware
+  l2_name: 電腦與硬體
+  l2_name_en: Computers & Hardware
+  l3: hw.industrial_pc
+  l3_name: 工業電腦與嵌入式系統
+  l3_name_en: Industrial PCs & Embedded Systems
+primary_chain_position: upstream
+summary_short: 以 unitech 品牌銷售工規行動電腦、條碼與 RFID 設備，提供設備管理及倉儲整合方案。
+summary_long: 精聯以 unitech 品牌研發、製造及銷售自動辨識資料收集設備，產品涵蓋軍工規行動電腦、條碼掃描器與 RFID 讀取器。2025 年軍工規行動電腦占營收 41.86%，條碼印表機、碳帶及耗材占 21.86%，條碼掃描器占 12.83%，其他占 23.45%。另提供 MoboLink 平台，支援行動裝置遠端管理、監控與維護，並整合 AMR 機器人及自動輸送系統提供智慧倉儲方案。精技電腦為其母公司，海外營運子公司負責美洲、歐洲、日本及中國大陸銷售。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_mobile
+  name: 軍工規行動電腦
+  period: '2025'
+  revenue_share_pct: 41.86
+- evidence_ids:
+  - e1
+  id: seg_scanner
+  name: 條碼掃描器
+  period: '2025'
+  revenue_share_pct: 12.83
+- evidence_ids:
+  - e1
+  id: seg_printing
+  name: 條碼印表機、碳帶及耗材
+  period: '2025'
+  revenue_share_pct: 21.86
+- evidence_ids:
+  - e1
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 23.45
+main_theme: theme.5g
+themes:
+- also: []
+  stage: devices
+  theme: theme.5g
+  tier: downstream
+- also: []
+  stage: system
+  theme: theme.robotics
+  tier: downstream
 relations:
   parents:
-  - as_of: 2025-12
+  - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
     detail: 經營AIDC產品之子公司
     details:
     - 經營AIDC產品之子公司
+    - 母公司
     edge: e3ea5e653561d
     evidence_level: primary
     id: tw.2414
     name: 精技
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 2
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 歐洲資料收集產品銷售子公司
+    details:
+    - 歐洲資料收集產品銷售子公司
+    edge: e44ec4965b270
+    evidence_level: primary
+    id: org.unique-technology-europe
+    name: Unique Technology Europe B.V.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 美洲資料收集產品銷售子公司
+    details:
+    - 美洲資料收集產品銷售子公司
+    edge: eb00b0d2fc65e
+    evidence_level: primary
+    id: org.unitech-america
+    name: Unitech America Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 日本資料收集產品銷售子公司
+    details:
+    - 日本資料收集產品銷售子公司
+    edge: ee5d7d0812fe8
+    evidence_level: primary
+    id: org.unitech-japan
+    name: Unitech Japan Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 中國大陸資料收集產品銷售子公司
+    details:
+    - 中國大陸資料收集產品銷售子公司
+    edge: eaa819af9778f
+    evidence_level: primary
+    id: org.xiamen-jingrui-computer
+    name: 廈門精瑞電腦有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -29,7 +133,91 @@ website: http://www.ute.com/
 tax_id: '28913512'
 incorporated: '2008-01-15'
 listed: '2022-09-21'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3652#e1:
+    locator: 印刷頁98，肆、營運概況／營業比重，114年度欄
+    published_date: '2026-05-20'
+    publisher: 精聯電子股份有限公司
+    quote_check: found
+    title: 精聯電子股份有限公司114年度年報
+    url: https://www.ute.com/common/frontend/PDFread?name=&path=%2Fuploads%2Fimages%2FIR%2F%E7%B2%BE%E8%81%AF114%E4%B8%AD%E6%96%87%E5%B9%B4%E5%A0%B1%E5%AE%9A%E7%A8%BF520-OK.pdf
+  tw.3652#e10:
+    locator: 第15頁，合併財務報表編製主體／UEH投資之子公司
+    published_date: '2026-08-05'
+    publisher: 精聯電子股份有限公司
+    quote_check: found
+    title: 精聯電子股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.ute.com/common/frontend/PDFread?name=&path=%2Fuploads%2Fimages%2F2026Q2%E5%90%88%E4%BD%B5.pdf
+  tw.3652#e11:
+    locator: 第15頁，合併財務報表編製主體／本公司投資之子公司
+    published_date: '2026-08-05'
+    publisher: 精聯電子股份有限公司
+    quote_check: found
+    title: 精聯電子股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.ute.com/common/frontend/PDFread?name=&path=%2Fuploads%2Fimages%2F2026Q2%E5%90%88%E4%BD%B5.pdf
+  tw.3652#e12:
+    locator: 第15頁，合併財務報表編製主體／UIH投資之子公司
+    published_date: '2026-08-05'
+    publisher: 精聯電子股份有限公司
+    quote_check: found
+    title: 精聯電子股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.ute.com/common/frontend/PDFread?name=&path=%2Fuploads%2Fimages%2F2026Q2%E5%90%88%E4%BD%B5.pdf
+  tw.3652#e2:
+    locator: 印刷頁99，產業上、中、下游之關聯性
+    published_date: '2026-05-20'
+    publisher: 精聯電子股份有限公司
+    quote_check: found
+    title: 精聯電子股份有限公司114年度年報
+    url: https://www.ute.com/common/frontend/PDFread?name=&path=%2Fuploads%2Fimages%2FIR%2F%E7%B2%BE%E8%81%AF114%E4%B8%AD%E6%96%87%E5%B9%B4%E5%A0%B1%E5%AE%9A%E7%A8%BF520-OK.pdf
+  tw.3652#e3:
+    locator: 印刷頁98，業務範圍
+    published_date: '2026-05-20'
+    publisher: 精聯電子股份有限公司
+    quote_check: found
+    title: 精聯電子股份有限公司114年度年報
+    url: https://www.ute.com/common/frontend/PDFread?name=&path=%2Fuploads%2Fimages%2FIR%2F%E7%B2%BE%E8%81%AF114%E4%B8%AD%E6%96%87%E5%B9%B4%E5%A0%B1%E5%AE%9A%E7%A8%BF520-OK.pdf
+  tw.3652#e4:
+    locator: 精聯電子提供企業完整的RFID解決方案
+    published_date: null
+    publisher: 精聯電子股份有限公司
+    quote_check: found
+    title: RFID產品方案與推薦
+    url: https://www.ute.com/tw/solution/category/RFIDsolution
+  tw.3652#e5:
+    locator: 產品介紹
+    published_date: null
+    publisher: 精聯電子股份有限公司
+    quote_check: found
+    title: MoboLink EMM 設備管理平台
+    url: https://www.ute.com/tw/products/detail/MoboLink
+  tw.3652#e6:
+    locator: 智能倉儲解決方案介紹
+    published_date: null
+    publisher: 精聯電子股份有限公司
+    quote_check: found
+    title: 精聯電子智能倉儲解決方案
+    url: https://www.ute.com/tw/solution/category/smart-warehouse
+  tw.3652#e7:
+    locator: 印刷頁3，114年度主要研發的新產品
+    published_date: '2026-05-20'
+    publisher: 精聯電子股份有限公司
+    quote_check: found
+    title: 精聯電子股份有限公司114年度年報
+    url: https://www.ute.com/common/frontend/PDFread?name=&path=%2Fuploads%2Fimages%2FIR%2F%E7%B2%BE%E8%81%AF114%E4%B8%AD%E6%96%87%E5%B9%B4%E5%A0%B1%E5%AE%9A%E7%A8%BF520-OK.pdf
+  tw.3652#e8:
+    locator: 第39頁，七、關係人交易／關係人名稱及關係
+    published_date: '2026-08-05'
+    publisher: 精聯電子股份有限公司
+    quote_check: found
+    title: 精聯電子股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.ute.com/common/frontend/PDFread?name=&path=%2Fuploads%2Fimages%2F2026Q2%E5%90%88%E4%BD%B5.pdf
+  tw.3652#e9:
+    locator: 第15頁，合併財務報表編製主體／UAH投資之子公司
+    published_date: '2026-08-05'
+    publisher: 精聯電子股份有限公司
+    quote_check: found
+    title: 精聯電子股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.ute.com/common/frontend/PDFread?name=&path=%2Fuploads%2Fimages%2F2026Q2%E5%90%88%E4%BD%B5.pdf

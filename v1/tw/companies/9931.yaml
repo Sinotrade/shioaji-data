@@ -8,12 +8,57 @@ industry:
   l0_code: '23'
   l0_name: 油電燃氣業
   l0_name_en: Oil, Gas and Electricity
-primary_chain_position: unknown
+  l1: energy
+  l1_name: 能源
+  l1_name_en: Energy & Utilities
+  l2: energy.traditional
+  l2_name: 傳統能源
+  l2_name_en: Conventional Energy & Utilities
+  l3: energy.gas_utility
+  l3_name: 天然氣公用事業
+  l3_name_en: Gas Utilities
+primary_chain_position: downstream
+summary_short: 主要收入來自高雄地區天然氣銷售及瓦斯導管裝置服務。
+summary_long: 欣高以天然氣供銷及瓦斯導管裝置為主要業務，透過管線向住宅與商業用戶供應燃料，並服務高雄市三民、前金、新興、苓雅、前鎮、鼓山、左營、楠梓及鹽埕九個行政區的家庭與工商業用戶。114年度年報揭露，天然氣營業比重為78%，導管裝置為22%。導管服務涵蓋設計、施工、維護保養及供氣系統定期檢查。子公司和欣國際股份有限公司則經營住宅及大樓開發租售、國際貿易與一般投資業務。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_gas
+  name: 天然氣
+  period: '2025'
+  revenue_share_pct: 78
+- evidence_ids:
+  - e2
+  id: seg_pipeline
+  name: 導管裝置
+  period: '2025'
+  revenue_share_pct: 22
 website: http://www.hkgas.com.tw
 tax_id: '79882718'
 incorporated: '1983-12-15'
 listed: '2000-03-21'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.9931#e2:
+    locator: 第47頁，業務內容／目前營業項目及比重
+    published_date: '2026-04-24'
+    publisher: 欣高石油氣股份有限公司
+    quote_check: unreachable
+    title: 欣高石油氣股份有限公司114年度年報
+    url: https://doc.twse.com.tw/pdf/2025_9931_20260605F04_20261011_143300.pdf
+  tw.9931#e3:
+    locator: 第48頁，市場及產銷概況／市場分析
+    published_date: '2026-04-24'
+    publisher: 欣高石油氣股份有限公司
+    quote_check: unreachable
+    title: 欣高石油氣股份有限公司114年度年報
+    url: https://doc.twse.com.tw/pdf/2025_9931_20260605F04_20261011_143300.pdf
+  tw.9931#e4:
+    locator: 第50頁，主要產品之重要用途
+    published_date: '2026-04-24'
+    publisher: 欣高石油氣股份有限公司
+    quote_check: unreachable
+    title: 欣高石油氣股份有限公司114年度年報
+    url: https://doc.twse.com.tw/pdf/2025_9931_20260605F04_20261011_143300.pdf

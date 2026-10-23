@@ -8,12 +8,128 @@ industry:
   l0_code: '04'
   l0_name: 紡織纖維
   l0_name_en: Textiles
-primary_chain_position: unknown
+  l1: realestate
+  l1_name: 不動產
+  l1_name_en: Real Estate
+  l2: re.dev
+  l2_name: 不動產
+  l2_name_en: Real Estate
+  l3: re.developer
+  l3_name: 建設開發
+  l3_name_en: Property Development
+primary_chain_position: not_applicable
+summary_short: 透過子公司經營住商大樓開發與染整加工，2025年營收以營建為主。
+summary_long: 強盛新透過子公司經營營建開發、紡織染整與不動產管理等業務。依2025年度年報，營建業務占合併營收75.08%，染整業務占24.75%，其他占0.17%。保強建設開發經營營建業務，內容包括委託營造廠商興建國民住宅及商業大樓，並辦理租售。強盛染整經營印花及染整事業，集團染整服務包括纖維製品的漂白、染色及整理加工。其他子公司包括從事不動產相關業務的宜盛資產管理，以及從事一般投資的威盛實業。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_construction
+  name: 營建業務
+  period: 2025年度
+  revenue_share_pct: 75.08
+- evidence_ids:
+  - e2
+  id: seg_textile
+  name: 染整業務
+  period: 2025年度
+  revenue_share_pct: 24.75
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他
+  period: 2025年度
+  revenue_share_pct: 0.17
+relations:
+  subsidiaries:
+  - as_of: '2026-04-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 營建開發子公司
+    details:
+    - 營建開發子公司
+    edge: e223e276b37f7
+    evidence_level: primary
+    id: org.保強建設開發股份有限公司
+    name: 保強建設開發股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 一般投資子公司
+    details:
+    - 一般投資子公司
+    edge: eabaa6b916f36
+    evidence_level: primary
+    id: org.威盛實業股份有限公司
+    name: 威盛實業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 不動產管理子公司
+    details:
+    - 不動產管理子公司
+    edge: ee5bac416f696
+    evidence_level: primary
+    id: org.宜盛資產管理股份有限公司
+    name: 宜盛資產管理股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 印花及染整子公司
+    details:
+    - 印花及染整子公司
+    edge: ea6f102610a04
+    evidence_level: primary
+    id: org.強盛染整股份有限公司
+    name: 強盛染整股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.csgroup.com.tw
 tax_id: '07715023'
 incorporated: '1983-10-19'
 listed: '1996-12-05'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1463#e2:
+    locator: 第64頁，營業比重；欄序為113年度營收及比重、114年度營收及比重
+    published_date: '2026-04-26'
+    publisher: 強盛新投資控股股份有限公司
+    quote_check: found
+    title: 強盛新投資控股股份有限公司114年度年報
+    url: https://doc.twse.com.tw/pdf/2025_1463_20260624F04_20261023_152731.pdf
+  tw.1463#e3:
+    locator: 第64頁，公司目前之商品（服務）項目
+    published_date: '2026-04-26'
+    publisher: 強盛新投資控股股份有限公司
+    quote_check: found
+    title: 強盛新投資控股股份有限公司114年度年報
+    url: https://doc.twse.com.tw/pdf/2025_1463_20260624F04_20261023_152731.pdf
+  tw.1463#e4:
+    locator: 第6項，投資控股公司子公司之事業類別、名稱及持股比例
+    published_date: '2025-10-09'
+    publisher: 公開資訊觀測站（MoneyDJ轉載）
+    quote_check: found
+    title: 強盛新 公告本公司董事會決議以分割方式轉型為投資控股公司
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=96d4f8ed-4f04-4874-ad2a-32e0ca5aff39
+  tw.1463#e5:
+    locator: 第64頁，公司所營業務之主要內容
+    published_date: '2026-04-26'
+    publisher: 強盛新投資控股股份有限公司
+    quote_check: found
+    title: 強盛新投資控股股份有限公司114年度年報
+    url: https://doc.twse.com.tw/pdf/2025_1463_20260624F04_20261023_152731.pdf

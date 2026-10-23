@@ -8,12 +8,177 @@ industry:
   l0_code: '20'
   l0_name: 其他業
   l0_name_en: Others
-primary_chain_position: unknown
+  l1: consumer
+  l1_name: 消費
+  l1_name_en: Consumer
+  l2: cons.staples
+  l2_name: 民生消費
+  l2_name_en: Consumer Staples
+  l3: food.agri
+  l3_name: 農業與畜牧
+  l3_name_en: Agriculture & Livestock
+primary_chain_position: not_applicable
+summary_short: 以蛋雞飼育、洗選鮮蛋銷售及蛋品加工為主要業務。
+summary_long: 大武山主要從事中雞與蛋雞飼育，生產及銷售洗選鮮蛋，並經營蛋加工品。2025年合併營收中，鮮蛋占45%、蛋加工品占39%、調理食品占14%，其他占2%，鮮蛋為最大單一產品類別。產品包含生食級幸せ鮮蛋、全蛋液、蛋捲與布丁，集團產品另涵蓋溏心蛋、茶葉蛋、滷蛋及豆干、湯品等調理食品。年報列示台達蛋品科技、武勢食品與福記冷凍食品為子公司，國興畜產為母公司。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_fresh_eggs
+  name: 鮮蛋
+  period: '2025'
+  revenue_share_pct: 45
+- evidence_ids:
+  - e2
+  id: seg_processed_eggs
+  name: 蛋加工品
+  period: '2025'
+  revenue_share_pct: 39
+- evidence_ids:
+  - e2
+  id: seg_prepared_foods
+  name: 調理食品
+  period: '2025'
+  revenue_share_pct: 14
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 2
+relations:
+  parents:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 母公司
+    details:
+    - 母公司
+    edge: e1438e87f0bcd
+    evidence_level: primary
+    id: org.國興畜產股份有限公司
+    name: 國興畜產股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司
+    details:
+    - 子公司
+    edge: ebd29cd47319e
+    evidence_level: primary
+    id: org.台達蛋品科技股份有限公司
+    name: 台達蛋品科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司
+    details:
+    - 子公司
+    edge: e70c9dd981be2
+    evidence_level: primary
+    id: org.武勢食品股份有限公司
+    name: 武勢食品股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司
+    details:
+    - 子公司
+    edge: eb615a771408a
+    evidence_level: primary
+    id: org.福記冷凍食品股份有限公司
+    name: 福記冷凍食品股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.dawushan.com.tw/
 tax_id: '28554142'
 incorporated: '2007-01-04'
 listed: '2024-06-13'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6952#e10:
+    locator: PDF第186頁，個體財務報告附註七、關係人交易，關係人之名稱及關係
+    published_date: null
+    publisher: 大武山牧場科技股份有限公司
+    quote_check: found
+    title: 大武山牧場科技股份有限公司114年報
+    url: https://www.dawushan.com.tw/wp-content/uploads/2026/06/CH114%E5%B9%B4%E5%A0%B1.pdf
+  tw.6952#e11:
+    locator: PDF第186頁，個體財務報告附註七、關係人交易，關係人之名稱及關係
+    published_date: null
+    publisher: 大武山牧場科技股份有限公司
+    quote_check: found
+    title: 大武山牧場科技股份有限公司114年報
+    url: https://www.dawushan.com.tw/wp-content/uploads/2026/06/CH114%E5%B9%B4%E5%A0%B1.pdf
+  tw.6952#e2:
+    locator: 第51頁，肆、營運概況，一、業務內容，營業比重；114年度欄
+    published_date: null
+    publisher: 大武山牧場科技股份有限公司
+    quote_check: found
+    title: 大武山牧場科技股份有限公司114年報
+    url: https://www.dawushan.com.tw/wp-content/uploads/2026/06/CH114%E5%B9%B4%E5%A0%B1.pdf
+  tw.6952#e3:
+    locator: 第56頁，產業上、中、下游之關聯性
+    published_date: null
+    publisher: 大武山牧場科技股份有限公司
+    quote_check: found
+    title: 大武山牧場科技股份有限公司114年報
+    url: https://www.dawushan.com.tw/wp-content/uploads/2026/06/CH114%E5%B9%B4%E5%A0%B1.pdf
+  tw.6952#e4:
+    locator: 產品標題及產品介紹
+    published_date: null
+    publisher: 大武山牧場科技股份有限公司
+    quote_check: found
+    title: 大武山牧場｜幸せ鮮蛋（生食級雞蛋）
+    url: https://www.dawushan.com.tw/products/%E5%B9%B8%E3%81%9B%E9%AE%AE%E8%9B%8B
+  tw.6952#e5:
+    locator: 全蛋液產品介紹
+    published_date: null
+    publisher: 大武山牧場科技股份有限公司
+    quote_check: found
+    title: 大武山牧場｜全蛋液
+    url: https://www.dawushan.com.tw/products/%E5%85%A8%E8%9B%8B%E6%B6%B2
+  tw.6952#e6:
+    locator: 產品標題
+    published_date: null
+    publisher: 大武山牧場科技股份有限公司
+    quote_check: found
+    title: 大武山牧場｜蛋入蛋捲－經典原味
+    url: https://www.dawushan.com.tw/products/danloo-eggroll-original
+  tw.6952#e7:
+    locator: 產品標題
+    published_date: null
+    publisher: 大武山牧場科技股份有限公司
+    quote_check: found
+    title: 大武山牧場｜濃厚雞蛋布丁
+    url: https://www.dawushan.com.tw/products/pudding-6
+  tw.6952#e8:
+    locator: 第52頁，公司目前之商品及服務項目，蛋加工品列
+    published_date: null
+    publisher: 大武山牧場科技股份有限公司
+    quote_check: found
+    title: 大武山牧場科技股份有限公司114年報
+    url: https://www.dawushan.com.tw/wp-content/uploads/2026/06/CH114%E5%B9%B4%E5%A0%B1.pdf
+  tw.6952#e9:
+    locator: 第52頁，公司目前之商品及服務項目
+    published_date: null
+    publisher: 大武山牧場科技股份有限公司
+    quote_check: found
+    title: 大武山牧場科技股份有限公司114年報
+    url: https://www.dawushan.com.tw/wp-content/uploads/2026/06/CH114%E5%B9%B4%E5%A0%B1.pdf

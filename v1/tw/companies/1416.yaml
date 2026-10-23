@@ -8,12 +8,154 @@ industry:
   l0_code: '20'
   l0_name: 其他業
   l0_name_en: Others
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.software
+  l2_name: 軟體與資訊服務
+  l2_name_en: Software & IT Services
+  l3: sw.it_services
+  l3_name: 系統整合與資訊服務
+  l3_name_en: System Integration & IT Services
+primary_chain_position: not_applicable
+summary_short: 透過子公司經營金融資訊訂閱、資訊系統開發與維運服務。
+summary_long: 廣豐以集團旗下的數位科技業務提供金融資訊與軟體服務。2025年合併營收以資訊訂閱服務45.77%為最大項目，資訊系統開發與維運分別占36.42%及15.61%，另有顧問服務與租賃收入。主要子公司包括百商數位科技、星系數位、寶豐資產管理及廣豐海外開發。百商數位科技提供SpeedyOne金融交易方案，整合交易系統與運算架構；星系數位的Roomi小包廂則結合即時看盤、社群聊天及課程直播功能。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_subscription
+  name: 資訊訂閱服務
+  period: '2025'
+  revenue_share_pct: 45.77
+- evidence_ids:
+  - e2
+  id: seg_development
+  name: 資訊系統開發
+  period: '2025'
+  revenue_share_pct: 36.42
+- evidence_ids:
+  - e2
+  id: seg_maintenance
+  name: 資訊系統維運
+  period: '2025'
+  revenue_share_pct: 15.61
+- evidence_ids:
+  - e2
+  id: seg_consulting
+  name: 顧問服務
+  period: '2025'
+  revenue_share_pct: 1.78
+- evidence_ids:
+  - e2
+  id: seg_leasing
+  name: 租賃
+  period: '2025'
+  revenue_share_pct: 0.42
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 寶豐資產管理子公司
+    details:
+    - 寶豐資產管理子公司
+    edge: ef2e16ca07f9f
+    evidence_level: primary
+    id: org.bao-feng-asset-management
+    name: 寶豐資產管理股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 數位科技事業子公司
+    details:
+    - 數位科技事業子公司
+    edge: eed608e09ffc2
+    evidence_level: primary
+    id: org.galaxy-digital-taiwan
+    name: 星系數位股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 廣豐海外開發子公司
+    details:
+    - 廣豐海外開發子公司
+    edge: e476f511e7f8b
+    evidence_level: primary
+    id: org.kwong-fong-overseas-development
+    name: 廣豐海外開發股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 數位科技事業子公司
+    details:
+    - 數位科技事業子公司
+    edge: ebd6f2c118d56
+    evidence_level: primary
+    id: org.mdbs-digital-technology
+    name: 百商數位科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.kfic.com.tw
 tax_id: '43434316'
 incorporated: '1968-06-28'
 listed: '1976-04-20'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1416#e2:
+    locator: 印刷頁61，114年度營業比重
+    published_date: '2026-04-30'
+    publisher: 廣豐實業股份有限公司
+    quote_check: found
+    title: 廣豐實業股份有限公司114年度年報
+    url: https://www.kfic.com.tw/%E6%9C%80%E6%96%B0%E5%B9%B4%E5%A0%B1.pdf
+  tw.1416#e3:
+    locator: 印刷頁84，關係企業組織圖；持股資料另見印刷頁56及86
+    published_date: '2026-04-30'
+    publisher: 廣豐實業股份有限公司
+    quote_check: found
+    title: 廣豐實業股份有限公司114年度年報
+    url: https://www.kfic.com.tw/%E6%9C%80%E6%96%B0%E5%B9%B4%E5%A0%B1.pdf
+  tw.1416#e4:
+    locator: 數位科技事業
+    published_date: null
+    publisher: 廣豐實業股份有限公司
+    quote_check: found
+    title: 廣豐實業關係企業－各事業簡介
+    url: https://www.kfic.com.tw/about_group.html
+  tw.1416#e5:
+    locator: SpeedyOne正式亮相，打造軟硬一體交易環境
+    published_date: '2026-07-24'
+    publisher: 百商數位科技股份有限公司
+    quote_check: found
+    title: 歡慶 Speedy 20 週年！百商數位整合 IBM LinuxONE，正式發表全新 SpeedyOne
+    url: https://www.mdbs.com.tw/inner-news-260724-1.html
+  tw.1416#e6:
+    locator: 產品資訊－Roomi小包廂
+    published_date: null
+    publisher: 星系數位股份有限公司
+    quote_check: found
+    title: 星系數位股份有限公司官方網站
+    url: https://www.my-galaxy.com.tw/
+  tw.1416#e7:
+    locator: 產品資訊－Roomi小包廂課程直播
+    published_date: null
+    publisher: 星系數位股份有限公司
+    quote_check: found
+    title: 星系數位股份有限公司官方網站
+    url: https://www.my-galaxy.com.tw/

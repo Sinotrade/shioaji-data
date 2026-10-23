@@ -8,12 +8,144 @@ industry:
   l0_code: '22'
   l0_name: 生技醫療業
   l0_name_en: Biotechnology and Medical Care
-primary_chain_position: unknown
+  l1: health
+  l1_name: 醫療保健
+  l1_name_en: Healthcare
+  l2: health.pharma
+  l2_name: 製藥與生技
+  l2_name_en: Pharmaceuticals & Biotech
+  l3: bio.new_drug
+  l3_name: 新藥研發
+  l3_name_en: New Drug Development
+chain: chain.biotech
+chain_stage:
+  agreement: both
+  also: []
+  reason: 核心業務為長效吸入新藥及藥械組合研發；銷貨雖為主要收入，但未交代品項及製造或通路性質。
+  stage: rnd
+  stage_name: 研發與原料
+  tier: upstream
+primary_chain_position: upstream
+summary_short: 研發長效吸入新藥與藥械組合，收入包含銷貨及檢測服務。
+summary_long: 國邑藥品科技以長效吸入新藥及藥械組合產品為主要研發方向。L606為自主開發的長效緩釋吸入新劑型，針對肺動脈高壓及間質性肺病相關肺高壓開發，全球第三期Re-Spire試驗持續收案。L608為長效微脂體伊洛前列素吸入製劑，已獲美國FDA核准進行硬皮症指端潰瘍第二期臨床試驗。2025年前三季銷貨與檢測服務收入分別為新臺幣1,567.8萬元及399.6萬元。2025年財報列有全資研發子公司Pharmosa Therapeutics；2026年再將持股54%的普元生技納入集團。
+segments:
+- evidence_ids:
+  - e9
+  id: s1
+  name: 銷貨收入
+  period: 2025-01至2025-09
+  revenue_share_pct: null
+- evidence_ids:
+  - e9
+  id: s2
+  name: 檢測服務收入
+  period: 2025-01至2025-09
+  revenue_share_pct: null
+relations:
+  subsidiaries:
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股100%的新藥研發服務子公司
+    details:
+    - 持股100%的新藥研發服務子公司
+    edge: e18cc250b077a
+    evidence_level: primary
+    id: org.pharmosa-therapeutics
+    name: Pharmosa Therapeutics, Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-08-04'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股54%的醫療器材開發子公司
+    details:
+    - 持股54%的醫療器材開發子公司
+    edge: e5701984f14bb
+    evidence_level: primary
+    id: org.普元生技-股-公司
+    name: 普元生技（股）公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.pharmosa.com.tw
 tax_id: '70516563'
 incorporated: '2000-05-25'
 listed: '2024-03-26'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6875#e1:
+    locator: 公司簡介第一段
+    published_date: null
+    publisher: 國邑藥品科技股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.pharmosa.com.tw/pages/about-tw
+  tw.6875#e10:
+    locator: 第13頁，附註四（三）列入合併財務報告之子公司，國邑投資項下
+    published_date: '2025-11-04'
+    publisher: 國邑藥品科技股份有限公司
+    quote_check: found
+    title: 國邑藥品科技股份有限公司及子公司民國114年及113年第三季合併財務報告
+    url: https://www.pharmosa.com.tw/uploads/report/file/39/_%E5%A5%97%E7%AB%A0_114Q3%E5%9C%8B%E9%82%91%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1-FINAL.pdf
+  tw.6875#e2:
+    locator: 正文第三段
+    published_date: '2026-10-22'
+    publisher: 國邑藥品科技股份有限公司
+    quote_check: found
+    title: 國邑*合作夥伴Liquidia與United Therapeutics就YUTREPIA®專利等訴訟達成全面和解 L606臨床開發照計畫推進
+    url: https://www.pharmosa.com.tw/news/d90a3a
+  tw.6875#e3:
+    locator: 正文第一段
+    published_date: '2026-10-22'
+    publisher: 國邑藥品科技股份有限公司
+    quote_check: found
+    title: 國邑*合作夥伴Liquidia與United Therapeutics就YUTREPIA®專利等訴訟達成全面和解 L606臨床開發照計畫推進
+    url: https://www.pharmosa.com.tw/news/d90a3a
+  tw.6875#e4:
+    locator: 新聞標題
+    published_date: '2026-09-18'
+    publisher: 國邑藥品科技股份有限公司
+    quote_check: found
+    title: 國邑* 長效吸入新藥 L608 獲美國 FDA 二期臨床試驗核准 聚焦硬皮症指端潰瘍　突破傳統治療給藥限制
+    url: https://www.pharmosa.com.tw/news/1267d8
+  tw.6875#e5:
+    locator: 正文第三段
+    published_date: '2026-09-18'
+    publisher: 國邑藥品科技股份有限公司
+    quote_check: found
+    title: 國邑* 長效吸入新藥 L608 獲美國 FDA 二期臨床試驗核准
+    url: https://www.pharmosa.com.tw/news/1267d8
+  tw.6875#e6:
+    locator: 正文第一段
+    published_date: '2026-08-04'
+    publisher: 國邑藥品科技股份有限公司
+    quote_check: found
+    title: 國邑*旗下普元生技自有品牌「邑普能」取得TFDA醫材許可 完成L606藥械合一重要拼圖　啟動全球商業化布局
+    url: https://www.pharmosa.com.tw/news/77dbff
+  tw.6875#e7:
+    locator: 關於吸入緩釋微脂體平台技術
+    published_date: '2026-09-18'
+    publisher: 國邑藥品科技股份有限公司
+    quote_check: found
+    title: 國邑* 長效吸入新藥 L608 獲美國 FDA 二期臨床試驗核准
+    url: https://www.pharmosa.com.tw/news/1267d8
+  tw.6875#e8:
+    locator: 正文第一段
+    published_date: '2026-08-03'
+    publisher: 國邑藥品科技股份有限公司
+    quote_check: found
+    title: 國邑*完備「藥物」、「器械」雙平台布局 策略投資普元生技　提升組合產品全球授權與商業化競爭力
+    url: https://www.pharmosa.com.tw/news/26b929
+  tw.6875#e9:
+    locator: 第24頁，附註六（十五）營業收入；114年1月1日至9月30日欄，單位新臺幣仟元
+    published_date: '2025-11-04'
+    publisher: 國邑藥品科技股份有限公司
+    quote_check: found
+    title: 國邑藥品科技股份有限公司及子公司民國114年及113年第三季合併財務報告
+    url: https://www.pharmosa.com.tw/uploads/report/file/39/_%E5%A5%97%E7%AB%A0_114Q3%E5%9C%8B%E9%82%91%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1-FINAL.pdf

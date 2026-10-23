@@ -8,12 +8,120 @@ industry:
   l0_code: '28'
   l0_name: 電子零組件業
   l0_name_en: Electronic Parts and Components
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.power
+  l3_name: 電源供應器與電源管理模組
+  l3_name_en: Power Supplies & Power Modules
+primary_chain_position: midstream
+summary_short: 以防雷擊電源插座、影音電源濾波器及智慧電源管理產品為主要業務。
+summary_long: 勝德的主要產品包括資訊週邊防雷擊電源插座、視聽音響電源濾波器及物聯網智慧家庭用電安全產品。2025年上述三類產品分別占營收69.30%、20.34%及5.54%，其他產品占4.82%，以防雷擊電源插座為最大營收來源。公司另提供智慧機櫃配電裝置PDU，產品具三相供電、輸出量測與網路控制功能，應用涵蓋資料中心與AI伺服器。依2024年永續報告揭露，集團營運子公司包括東莞詮盛電器有限公司及勝興（越南海陽）科技責任有限公司。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_surge
+  name: 資訊週邊防雷擊電源插座
+  period: '2025'
+  revenue_share_pct: 69.3
+- evidence_ids:
+  - e2
+  id: seg_av
+  name: 視聽音響電源濾波器
+  period: '2025'
+  revenue_share_pct: 20.34
+- evidence_ids:
+  - e3
+  id: seg_iot
+  name: 物聯網智慧家庭用電安全產品
+  period: '2025'
+  revenue_share_pct: 5.54
+- evidence_ids:
+  - e4
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 4.82
+relations:
+  subsidiaries:
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 越南營運子公司
+    details:
+    - 越南營運子公司
+    edge: e579a85fbd713
+    evidence_level: primary
+    id: org.勝興-越南海陽-科技責任有限公司
+    name: 勝興（越南海陽）科技責任有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 中國營運子公司
+    details:
+    - 中國營運子公司
+    edge: e116728a46b4b
+    evidence_level: primary
+    id: org.東莞詮盛電器有限公司
+    name: 東莞詮盛電器有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.power-tech.com.tw
 tax_id: '12702977'
 incorporated: '2000-11-14'
 listed: '2007-12-31'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3296#e1:
+    locator: 印刷頁65，PDF第67頁，Revenue distribution；2025年資訊週邊防雷擊電源插座列
+    published_date: null
+    publisher: 勝德國際研發股份有限公司
+    quote_check: found
+    title: 2025 Annual Report
+    url: https://www.power-tech.com.tw/storage/01KQY3T4CYK882VHFBBD2QZW4D.pdf
+  tw.3296#e2:
+    locator: 印刷頁65，PDF第67頁，Revenue distribution；Power Noise Filter for Audio and Video Devices列
+    published_date: null
+    publisher: 勝德國際研發股份有限公司
+    quote_check: found
+    title: 2025 Annual Report
+    url: https://www.power-tech.com.tw/storage/01KQY3T4CYK882VHFBBD2QZW4D.pdf
+  tw.3296#e3:
+    locator: 印刷頁65，PDF第67頁，Revenue distribution；2025年物聯網智慧家庭用電安全產品列
+    published_date: null
+    publisher: 勝德國際研發股份有限公司
+    quote_check: found
+    title: 2025 Annual Report
+    url: https://www.power-tech.com.tw/storage/01KQY3T4CYK882VHFBBD2QZW4D.pdf
+  tw.3296#e4:
+    locator: 印刷頁65，PDF第67頁，Revenue distribution；2025年其他產品列
+    published_date: null
+    publisher: 勝德國際研發股份有限公司
+    quote_check: found
+    title: 2025 Annual Report
+    url: https://www.power-tech.com.tw/storage/01KQY3T4CYK882VHFBBD2QZW4D.pdf
+  tw.3296#e7:
+    locator: 第4頁，關於本報告書／報告邊界範疇
+    published_date: 2025-08
+    publisher: 勝德國際研發股份有限公司
+    quote_check: found
+    title: 2024年永續報告書
+    url: https://www.power-tech.com.tw/storage/01K3G3WX0W9S18W884AV87QH4E.pdf
+  tw.3296#e8:
+    locator: 第12頁，價值鏈概況
+    published_date: 2025-08
+    publisher: 勝德國際研發股份有限公司
+    quote_check: found
+    title: 2024年永續報告書
+    url: https://www.power-tech.com.tw/storage/01K3G3WX0W9S18W884AV87QH4E.pdf

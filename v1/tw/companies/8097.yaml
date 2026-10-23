@@ -8,12 +8,180 @@ industry:
   l0_code: '27'
   l0_name: 通信網路業
   l0_name_en: Communications and Internet
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.network
+  l2_name: 通信網路
+  l2_name_en: Communications & Networking
+  l3: net.switch
+  l3_name: 網通設備（交換器、路由器）
+  l3_name_en: Networking Equipment (Switches, Routers)
+chain: chain.networking
+chain_stage:
+  agreement: both
+  also: []
+  reason: 主要收入來自網路通信產品，涵蓋路由器、寬頻閘道器、無線基地台及中繼器。
+  stage: equipment
+  stage_name: 網通設備與系統
+  tier: downstream
+primary_chain_position: downstream
+summary_short: 以網路通信產品產銷為主，提供寬頻路由器、無線設備及物聯網產品。
+summary_long: 常珵以網路通信組件產銷為主要收入來源，提供VDSL、GPON及Wi-Fi路由器，產品包含支援Wi-Fi 6的寬頻閘道器與Mesh設備。物聯網產品涵蓋工業物聯網及智慧物聯網，無線通訊產品則包括4G／4.5G設備、室內外無線基地台與中繼器，另有數位視訊轉換盒。公司亦投入固態氫能源技術研發，並公布小型鎂基儲氫模組規格。依2025年第一季合併財報，公司在菲律賓、墨西哥、成都及香港設有子公司。
+relations:
+  subsidiaries:
+  - as_of: '2025-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 菲律賓子公司
+    details:
+    - 菲律賓子公司
+    edge: e4032c79f3cf7
+    evidence_level: primary
+    id: org.atw-philippines-inc
+    name: ATW PHILIPPINES INC.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 香港子公司
+    details:
+    - 香港子公司
+    edge: e8fd998a75c57
+    evidence_level: primary
+    id: org.atw-technology-hongkong-ltd
+    name: ATW Technology (HongKong) Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 墨西哥子公司
+    details:
+    - 墨西哥子公司
+    edge: e8925753c337d
+    evidence_level: primary
+    id: org.atw-technology-mexico-s-de
+    name: ATW TECHNOLOGY MEXICO S DE
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 成都子公司
+    details:
+    - 成都子公司
+    edge: e3fe10ca177e7
+    evidence_level: primary
+    id: org.晉偉科技-成都-有限公司
+    name: 晉偉科技(成都)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.atwtechnology.com
 tax_id: '22206879'
 incorporated: '1986-06-17'
 listed: '2004-03-01'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.8097#e10:
+    locator: 第61頁，十四、部門資訊，（三）部門損益、資產與負債之資訊
+    published_date: null
+    publisher: 常珵科技股份有限公司
+    quote_check: unreachable
+    title: 民國114年及113年第一季合併財務報告
+    url: https://www.atwtechnology.com/upload/report/2025Q1.pdf
+  tw.8097#e11:
+    locator: 第12頁，列入合併財務報告之子公司；投資公司名稱為本公司；另見第59頁所在地區
+    published_date: null
+    publisher: 常珵科技股份有限公司
+    quote_check: unreachable
+    title: 民國114年及113年第一季合併財務報告
+    url: https://www.atwtechnology.com/upload/report/2025Q1.pdf
+  tw.8097#e12:
+    locator: 第12頁，列入合併財務報告之子公司；投資公司名稱為本公司；另見第59頁所在地區
+    published_date: null
+    publisher: 常珵科技股份有限公司
+    quote_check: unreachable
+    title: 民國114年及113年第一季合併財務報告
+    url: https://www.atwtechnology.com/upload/report/2025Q1.pdf
+  tw.8097#e13:
+    locator: 第12頁，列入合併財務報告之子公司；投資公司名稱為本公司
+    published_date: null
+    publisher: 常珵科技股份有限公司
+    quote_check: unreachable
+    title: 民國114年及113年第一季合併財務報告
+    url: https://www.atwtechnology.com/upload/report/2025Q1.pdf
+  tw.8097#e14:
+    locator: 第12頁，列入合併財務報告之子公司；投資公司名稱為本公司；另見第59頁所在地區
+    published_date: null
+    publisher: 常珵科技股份有限公司
+    quote_check: unreachable
+    title: 民國114年及113年第一季合併財務報告
+    url: https://www.atwtechnology.com/upload/report/2025Q1.pdf
+  tw.8097#e2:
+    locator: VDSL Router／ATW-722A
+    published_date: null
+    publisher: 常珵科技股份有限公司
+    quote_check: unreachable
+    title: 商用網通設備
+    url: https://www.atwtechnology.com/zh/solutions/commercial-netcom-equipment/
+  tw.8097#e3:
+    locator: GPON Router／ATW-822G
+    published_date: null
+    publisher: 常珵科技股份有限公司
+    quote_check: unreachable
+    title: 商用網通設備
+    url: https://www.atwtechnology.com/zh/solutions/commercial-netcom-equipment/
+  tw.8097#e4:
+    locator: Mesh Wi-Fi Router／ATW-722R
+    published_date: null
+    publisher: 常珵科技股份有限公司
+    quote_check: unreachable
+    title: 商用網通設備
+    url: https://www.atwtechnology.com/zh/solutions/commercial-netcom-equipment/
+  tw.8097#e5:
+    locator: 工業物聯網及智慧物聯網產品分類
+    published_date: null
+    publisher: 常珵科技股份有限公司
+    quote_check: unreachable
+    title: 物聯網
+    url: https://www.atwtechnology.com/zh/solutions/internet-of-things/
+  tw.8097#e6:
+    locator: Wireless Communication產品分類
+    published_date: null
+    publisher: 常珵科技股份有限公司
+    quote_check: unreachable
+    title: 無線通訊
+    url: https://www.atwtechnology.com/zh/solutions/wireless-communication/
+  tw.8097#e7:
+    locator: 產品頁標題
+    published_date: null
+    publisher: 常珵科技股份有限公司
+    quote_check: unreachable
+    title: set-top box-TW
+    url: https://www.atwtechnology.com/zh/stb-tw/
+  tw.8097#e8:
+    locator: 研發中心介紹
+    published_date: null
+    publisher: 常珵科技股份有限公司
+    quote_check: unreachable
+    title: 常珵固態氫能源研發中心
+    url: https://www.atwtechnology.com/zh/atw-solid-state-hydrogen-energy-research-center_tw/
+  tw.8097#e9:
+    locator: 系統規格表
+    published_date: null
+    publisher: 常珵科技股份有限公司
+    quote_check: unreachable
+    title: 小型鎂基儲氫模組
+    url: https://www.atwtechnology.com/zh/small-mg-type-hydrogen-storage-module_tw/

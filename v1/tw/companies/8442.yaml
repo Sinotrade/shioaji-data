@@ -8,13 +8,195 @@ industry:
   l0_code: '20'
   l0_name: 其他業
   l0_name_en: Others
-primary_chain_position: unknown
+  l1: consumer
+  l1_name: 消費
+  l1_name_en: Consumer
+  l2: cons.discretionary
+  l2_name: 非必需消費
+  l2_name_en: Consumer Discretionary
+  l3: consumer.leisure
+  l3_name: 休閒用品、遊艇與露營車
+  l3_name_en: Leisure Products, Yachts & RVs
+primary_chain_position: midstream
+summary_short: 透過旗下集團生產銷售精品包袋、旅行箱及運動裝備。
+summary_long: 威宏控股透過威保、宏盛、德御與廣泰集團，經營運動裝備及精品包袋的生產與銷售。威保負責運動手套、護具等產品，德御生產運動包袋及高爾夫球袋；宏盛經營精品包袋，廣泰經營旅行箱與商務包。2025年以尼龍包款及配件為最大單項，占營收27.92%，其次為運動包袋22.69%、旅行箱及商務包等16.19%及真皮包款與配件14.90%。其餘營收來自運動護具、運動手套及束套與運動周邊商品。
+segments:
+- evidence_ids:
+  - e7
+  id: seg_nylon
+  name: 尼龍包款及配件
+  period: '2025'
+  revenue_share_pct: 27.92
+- evidence_ids:
+  - e7
+  id: seg_leather
+  name: 真皮包款及配件
+  period: '2025'
+  revenue_share_pct: 14.9
+- evidence_ids:
+  - e7
+  id: seg_luggage
+  name: 旅行箱及商務包等
+  period: '2025'
+  revenue_share_pct: 16.19
+- evidence_ids:
+  - e8
+  id: seg_protection
+  name: 運動護具
+  period: '2025'
+  revenue_share_pct: 10.5
+- evidence_ids:
+  - e8
+  id: seg_gloves
+  name: 運動手套及束套
+  period: '2025'
+  revenue_share_pct: 4.02
+- evidence_ids:
+  - e8
+  id: seg_accessories
+  name: 運動周邊商品
+  period: '2025'
+  revenue_share_pct: 3.78
+- evidence_ids:
+  - e8
+  id: seg_sports_bags
+  name: 運動包袋
+  period: '2025'
+  revenue_share_pct: 22.69
+relations:
+  subsidiaries:
+  - as_of: '2026-05-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 薩摩亞廣泰；旅行箱及商務包事業
+    details:
+    - 薩摩亞廣泰；旅行箱及商務包事業
+    edge: e158edddfdb49
+    evidence_level: primary
+    id: org.global-worth-investment-holding
+    name: GLOBAL WORTH INVESTMENT HOLDING LTD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-05-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 廣泰旗下柬埔寨間接子公司
+    details:
+    - 廣泰旗下柬埔寨間接子公司
+    edge: e5773b7d7ccf3
+    evidence_level: primary
+    id: org.twt-leather-cambodia
+    name: TWT LEATHER (CAMBODIA) CO., LTD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-05-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 薩摩亞德御；運動包袋及高爾夫球袋事業
+    details:
+    - 薩摩亞德御；運動包袋及高爾夫球袋事業
+    edge: e3d615b074143
+    evidence_level: primary
+    id: org.virtue-king-international
+    name: Virtue King International Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-05-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 香港威保；運動裝備事業
+    details:
+    - 香港威保；運動裝備事業
+    edge: e3c7f81075fbf
+    evidence_level: primary
+    id: org.wellpower-commerce-holding
+    name: Wellpower Commerce Holding Co., Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-05-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 薩摩亞宏盛；精品包袋事業
+    details:
+    - 薩摩亞宏盛；精品包袋事業
+    edge: ee8aaac9a2be7
+    evidence_level: primary
+    id: org.wilson-group-holdings-samoa
+    name: WILSON GROUP HOLDINGS LIMITED (SAMOA)
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.ww-holding.com.tw/
 tax_id: '50684485'
 incorporated: '2009-11-27'
 listed: '2016-11-08'
 foreign_registration: KY 開曼群島
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.8442#e2:
+    locator: 重要營運據點，PDF第2頁
+    published_date: '2026-05-13'
+    publisher: 威宏控股股份有限公司
+    quote_check: found
+    title: 威宏控股股份有限公司2025年度年報
+    url: https://www.ww-holding.com.tw/storage/2025%E5%B9%B4%E5%BA%A6%E5%A0%B1%E5%91%8A.pdf
+  tw.8442#e3:
+    locator: 重要營運據點，PDF第2頁
+    published_date: '2026-05-13'
+    publisher: 威宏控股股份有限公司
+    quote_check: found
+    title: 威宏控股股份有限公司2025年度年報
+    url: https://www.ww-holding.com.tw/storage/2025%E5%B9%B4%E5%BA%A6%E5%A0%B1%E5%91%8A.pdf
+  tw.8442#e4:
+    locator: 重要營運據點，PDF第2頁
+    published_date: '2026-05-13'
+    publisher: 威宏控股股份有限公司
+    quote_check: found
+    title: 威宏控股股份有限公司2025年度年報
+    url: https://www.ww-holding.com.tw/storage/2025%E5%B9%B4%E5%BA%A6%E5%A0%B1%E5%91%8A.pdf
+  tw.8442#e5:
+    locator: 重要營運據點，PDF第2頁
+    published_date: '2026-05-13'
+    publisher: 威宏控股股份有限公司
+    quote_check: found
+    title: 威宏控股股份有限公司2025年度年報
+    url: https://www.ww-holding.com.tw/storage/2025%E5%B9%B4%E5%BA%A6%E5%A0%B1%E5%91%8A.pdf
+  tw.8442#e6:
+    locator: 集團沿革，印刷頁9，PDF第14頁
+    published_date: '2026-05-13'
+    publisher: 威宏控股股份有限公司
+    quote_check: found
+    title: 威宏控股股份有限公司2025年度年報
+    url: https://www.ww-holding.com.tw/storage/2025%E5%B9%B4%E5%BA%A6%E5%A0%B1%E5%91%8A.pdf
+  tw.8442#e7:
+    locator: 主要產品之營業比重；欄序為2024年金額、比重及2025年金額、比重；印刷頁82，PDF第87頁
+    published_date: '2026-05-13'
+    publisher: 威宏控股股份有限公司
+    quote_check: found
+    title: 威宏控股股份有限公司2025年度年報
+    url: https://www.ww-holding.com.tw/storage/2025%E5%B9%B4%E5%BA%A6%E5%A0%B1%E5%91%8A.pdf
+  tw.8442#e8:
+    locator: 主要產品之營業比重；欄序為2024年金額、比重及2025年金額、比重；印刷頁82，PDF第87頁
+    published_date: '2026-05-13'
+    publisher: 威宏控股股份有限公司
+    quote_check: found
+    title: 威宏控股股份有限公司2025年度年報
+    url: https://www.ww-holding.com.tw/storage/2025%E5%B9%B4%E5%BA%A6%E5%A0%B1%E5%91%8A.pdf
+  tw.8442#e9:
+    locator: 關於威宏
+    published_date: null
+    publisher: 威宏控股股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.ww-holding.com.tw/company-profile/

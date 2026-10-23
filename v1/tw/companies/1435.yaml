@@ -8,12 +8,65 @@ industry:
   l0_code: '20'
   l0_name: 其他業
   l0_name_en: Others
-primary_chain_position: unknown
+  l1: realestate
+  l1_name: 不動產
+  l1_name_en: Real Estate
+  l2: re.dev
+  l2_name: 不動產
+  l2_name_en: Real Estate
+  l3: re.commercial
+  l3_name: 商用不動產與資產管理
+  l3_name_en: Commercial Real Estate & Asset Management
+primary_chain_position: not_applicable
+summary_short: 以中和及中壢不動產出租取得租賃收入。
+summary_long: 中福主要經營不動產出租，官網揭露不動產租賃收入占營收百分之百，持有不動產主要位於新北市中和區及桃園市中壢區。租賃事業所列資產包含中壢土地與廠房，以及中和約八百坪、共四層的辦公大樓；中和辦公室除自用空間外，其餘部分已開始出租。公司自述屬非生產事業，沒有產品產製過程，也沒有主要原料供應需求，目前主要商品與服務為不動產出租。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_rental
+  name: 不動產租賃
+  period: null
+  revenue_share_pct: 100
 website: www.chungfutex.com.tw
 tax_id: 03101946
 incorporated: '1971-01-15'
 listed: '1987-12-28'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1435#e2:
+    locator: 2.營業比重
+    published_date: null
+    publisher: 中福國際股份有限公司
+    quote_check: found
+    title: 營業概況
+    url: https://www.chungfutex.com.tw/about_2
+  tw.1435#e3:
+    locator: 3.公司目前商品(服務)項目及計畫開發之新商品(服務)
+    published_date: null
+    publisher: 中福國際股份有限公司
+    quote_check: found
+    title: 營業概況
+    url: https://www.chungfutex.com.tw/about_2
+  tw.1435#e4:
+    locator: 1.所營業務內容／租賃事業
+    published_date: null
+    publisher: 中福國際股份有限公司
+    quote_check: found
+    title: 營業概況
+    url: https://www.chungfutex.com.tw/about_2
+  tw.1435#e5:
+    locator: 1.產品銷售地區
+    published_date: null
+    publisher: 中福國際股份有限公司
+    quote_check: found
+    title: 主營事業或產品、服務介紹
+    url: https://www.chungfutex.com.tw/about_3
+  tw.1435#e6:
+    locator: 主要產品之用途及產製過程；主要原料之供應狀況
+    published_date: null
+    publisher: 中福國際股份有限公司
+    quote_check: found
+    title: 主營事業或產品、服務介紹
+    url: https://www.chungfutex.com.tw/about_3
