@@ -8,12 +8,73 @@ industry:
   l0_code: '24'
   l0_name: 半導體業
   l0_name_en: Semiconductor
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.semi
+  l2_name: 半導體
+  l2_name_en: Semiconductors
+  l3: semi.ic_design
+  l3_name: IC 設計
+  l3_name_en: IC Design
+chain: chain.semiconductor
+chain_stage:
+  agreement: both
+  also: []
+  reason: 明確從事無線影音晶片設計，依現有研究歸入IC設計，惟缺乏營收組成可核對。
+  stage: ip_design
+  stage_name: IP 與 IC 設計
+  tier: upstream
+primary_chain_position: upstream
+summary_short: 設計無線影音晶片，並提供雲端整合、MES訂閱與數位光明燈服務。
+summary_long: 天擎從事長距離、高頻寬無線影音晶片設計，晶片結合數位無線與私有WiFi協議，整合MJPEG、MPEG4及H.264影像壓縮與解壓縮技術，應用於監控、車載及嬰兒監視器。公司也提供雲端系統整合與客製化服務，搭配自行開發晶片的設備，應用涵蓋工業物聯網、交通、農業及水利。雲端產品包含針對中小企業、採訂閱制的MES智慧製造系統，以及提供點燈、尋燈與祈禱文上傳功能的宮廟數位光明燈平台。
 website: www.mars-semi.com.tw
 tax_id: '12748729'
 incorporated: '2001-02-15'
 listed: '2022-12-29'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6708#e1:
+    locator: 公司介紹，第1段
+    published_date: null
+    publisher: 天擎積體電路股份有限公司
+    quote_check: found
+    title: 關於天擎｜天擎積體電路股份有限公司
+    url: https://www.mars-semi.com.tw/main/about/
+  tw.6708#e2:
+    locator: 公司介紹，第2段
+    published_date: null
+    publisher: 天擎積體電路股份有限公司
+    quote_check: found
+    title: 關於天擎｜天擎積體電路股份有限公司
+    url: https://www.mars-semi.com.tw/main/about/
+  tw.6708#e3:
+    locator: 公司介紹，第3段
+    published_date: null
+    publisher: 天擎積體電路股份有限公司
+    quote_check: found
+    title: 關於天擎｜天擎積體電路股份有限公司
+    url: https://www.mars-semi.com.tw/main/about/
+  tw.6708#e4:
+    locator: 貼近您的需求
+    published_date: null
+    publisher: 天擎積體電路股份有限公司
+    quote_check: found
+    title: 天擎整合式雲端服務平台｜MES智慧製造系統
+    url: https://factory.mars-cloud.com/mes/
+  tw.6708#e5:
+    locator: MES導入流程／訂閱與持續服務
+    published_date: null
+    publisher: 天擎積體電路股份有限公司
+    quote_check: found
+    title: 天擎整合式雲端服務平台｜MES智慧製造系統
+    url: https://factory.mars-cloud.com/mes/
+  tw.6708#e6:
+    locator: 產品介紹，第1段
+    published_date: null
+    publisher: 天擎積體電路股份有限公司
+    quote_check: found
+    title: 宮廟雲端影音互動管理平台｜天擎積體電路股份有限公司
+    url: https://www.mars-semi.com.tw/main/temple-cloud/

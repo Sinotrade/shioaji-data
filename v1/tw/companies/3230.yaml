@@ -8,12 +8,200 @@ industry:
   l0_code: '26'
   l0_name: 光電業
   l0_name_en: Optoelectronic
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.chassis
+  l3_name: 機殼與機構件
+  l3_name_en: Chassis & Mechanical Parts
+primary_chain_position: midstream
+summary_short: 主要經營五金沖壓與模具，另有品牌餐具、工程及無人機業務。
+summary_long: 錦明實業主要提供五金沖壓、機構設計與模具開發服務。2026年第一季五金沖壓／模具占營收87.57%，品牌占8.64%，工程占3%，無人機占0.79%。品牌業務經營以兒童為核心的餐具品牌VIIDA；工程服務涵蓋能源、機電與資料中心建置。無人機業務提供模組化設計與系統整合，產品系列包括VIPER與SABER。公司同時經營傳統製造、消費品牌、工程與無人機等業務，但當期營收仍以五金沖壓／模具為主。
+segments:
+- evidence_ids:
+  - e1
+  id: stamping_molds
+  name: 五金沖壓／模具
+  period: 2026Q1
+  revenue_share_pct: 87.57
+- evidence_ids:
+  - e1
+  id: brand
+  name: 品牌
+  period: 2026Q1
+  revenue_share_pct: 8.64
+- evidence_ids:
+  - e1
+  id: engineering
+  name: 工程
+  period: 2026Q1
+  revenue_share_pct: 3
+- evidence_ids:
+  - e1
+  id: uav
+  name: 無人機
+  period: 2026Q1
+  revenue_share_pct: 0.79
+main_theme: theme.data_center
+themes:
+- also: []
+  stage: operation
+  theme: theme.data_center
+  tier: downstream
+- also: []
+  stage: system
+  theme: theme.drone
+  tier: downstream
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過裕國持有的間接子公司
+    details:
+    - 透過裕國持有的間接子公司
+    edge: e2425b1689f01
+    evidence_level: primary
+    id: org.seng-zhao-limited
+    name: SENG ZHAO LIMITED
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: e6ed158e8c068
+    evidence_level: primary
+    id: org.wealthy-nation-developments-ltd
+    name: Wealthy Nation Developments Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過勝兆持有的間接子公司
+    details:
+    - 透過勝兆持有的間接子公司
+    edge: e9799790fcade
+    evidence_level: primary
+    id: org.寧波旺泉電子有限公司
+    name: 寧波旺泉電子有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: e5d9c56c01010
+    evidence_level: primary
+    id: org.英盛國際股份有限公司
+    name: 英盛國際股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.jmg.com.tw
 tax_id: '22490277'
 incorporated: '1987-05-01'
 listed: '2006-09-25'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3230#e1:
+    locator: 第10頁，營運概況－產品別營收占比，2026Q1
+    published_date: '2026-04-16'
+    publisher: 錦明實業股份有限公司
+    quote_check: found
+    title: 錦明實業2026年4月16日法人說明會簡報
+    url: https://jmg.com.tw/wp-content/uploads/2026/07/20260416_%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83-%E4%B8%AD%E6%96%87%E7%B0%A1%E5%A0%B1.pdf
+  tw.3230#e10:
+    locator: 印刷第12至13頁，合併子公司表及英盛設立說明
+    published_date: null
+    publisher: 錦明實業股份有限公司
+    quote_check: found
+    title: 錦明實業及子公司2026年第二季合併財務報告
+    url: https://jmg.com.tw/wp-content/uploads/2026/09/2026%E5%B9%B4%E7%AC%AC2%E5%AD%A3%E5%90%88%E4%BD%B5.pdf
+  tw.3230#e11:
+    locator: 印刷第12頁，合併子公司表；投資公司、子公司欄
+    published_date: null
+    publisher: 錦明實業股份有限公司
+    quote_check: found
+    title: 錦明實業及子公司2026年第二季合併財務報告
+    url: https://jmg.com.tw/wp-content/uploads/2026/09/2026%E5%B9%B4%E7%AC%AC2%E5%AD%A3%E5%90%88%E4%BD%B5.pdf
+  tw.3230#e12:
+    locator: 印刷第13頁，合併子公司表；投資公司、子公司欄
+    published_date: null
+    publisher: 錦明實業股份有限公司
+    quote_check: found
+    title: 錦明實業及子公司2026年第二季合併財務報告
+    url: https://jmg.com.tw/wp-content/uploads/2026/09/2026%E5%B9%B4%E7%AC%AC2%E5%AD%A3%E5%90%88%E4%BD%B5.pdf
+  tw.3230#e2:
+    locator: 以創新和品質為根基，逐步拓展全球版圖
+    published_date: null
+    publisher: 錦明實業股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://jmg.com.tw/about-us/
+  tw.3230#e3:
+    locator: 集團營運範疇－經營方針
+    published_date: null
+    publisher: 錦明實業股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://jmg.com.tw/about-us/
+  tw.3230#e4:
+    locator: VIIDA引領集團轉型段落
+    published_date: null
+    publisher: 錦明實業股份有限公司
+    quote_check: found
+    title: 錦明實業拓版圖 瞄準軍工產業
+    url: https://jmg.com.tw/%E9%8C%A6%E6%98%8E%E5%AF%A6%E6%A5%AD%E6%8B%93%E7%89%88%E5%9C%96-%E7%9E%84%E6%BA%96%E8%BB%8D%E5%B7%A5%E7%94%A2%E6%A5%AD/
+  tw.3230#e5:
+    locator: 智慧基礎建設
+    published_date: null
+    publisher: 錦明實業股份有限公司
+    quote_check: found
+    title: 錦明實業股份有限公司
+    url: https://jmg.com.tw/
+  tw.3230#e6:
+    locator: 智慧基礎建設－服務項目
+    published_date: null
+    publisher: 錦明實業股份有限公司
+    quote_check: found
+    title: 錦明實業股份有限公司
+    url: https://jmg.com.tw/
+  tw.3230#e7:
+    locator: 策略應用整合－業務說明
+    published_date: null
+    publisher: 錦明實業股份有限公司
+    quote_check: found
+    title: 策略應用整合
+    url: https://jmg.com.tw/data-center/
+  tw.3230#e8:
+    locator: 無人機模組－產品系列標題
+    published_date: null
+    publisher: 錦明實業股份有限公司
+    quote_check: not_found
+    title: 策略應用整合
+    url: https://jmg.com.tw/data-center/
+  tw.3230#e9:
+    locator: 印刷第12頁，合併基礎－納入合併財務報告之子公司；投資公司、子公司欄
+    published_date: null
+    publisher: 錦明實業股份有限公司
+    quote_check: found
+    title: 錦明實業及子公司2026年第二季合併財務報告
+    url: https://jmg.com.tw/wp-content/uploads/2026/09/2026%E5%B9%B4%E7%AC%AC2%E5%AD%A3%E5%90%88%E4%BD%B5.pdf

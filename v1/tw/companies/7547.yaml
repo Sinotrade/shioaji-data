@@ -8,12 +8,219 @@ industry:
   l0_code: '36'
   l0_name: 數位雲端
   l0_name_en: Digital and Cloud Services
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.software
+  l2_name: 軟體與資訊服務
+  l2_name_en: Software & IT Services
+  l3: sw.enterprise
+  l3_name: 企業軟體
+  l3_name_en: Enterprise Software
+primary_chain_position: not_applicable
+summary_short: 開發企業用生成式AI平台、智能客服與知識管理軟體。
+summary_long: 碩網提供企業用 AI 軟體，涵蓋生成式 AI 平台、智能客服、虛擬助理、智能行銷及知識管理。2025 年 GenAI Admin Portal 占營收 51.81%，SmartRobot 與 SmartWork 合計占 36.71%。現行 Agentic AI 管理平台整合大型語言模型與 Copilot；SmartRobot 以自然語言處理提供對話服務，SmartKMS 用於企業內部知識管理，另提供 STT Service 語音轉文字服務。
+segments:
+- evidence_ids:
+  - e7
+  - e8
+  id: seg_genai
+  name: GenAI Admin Portal生成式AI應用管理平台
+  period: '2025'
+  revenue_share_pct: 51.81
+- evidence_ids:
+  - e9
+  id: seg_conversational
+  name: SmartRobot智能客服與SmartWork虛擬助理
+  period: '2025'
+  revenue_share_pct: 36.71
+- evidence_ids:
+  - e10
+  id: seg_marketing
+  name: SmartBC智能行銷系統
+  period: '2025'
+  revenue_share_pct: 7.94
+- evidence_ids:
+  - e11
+  id: seg_knowledge
+  name: SmartKMS知識管理系統
+  period: '2025'
+  revenue_share_pct: 3.36
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司
+    details:
+    - 全資子公司
+    edge: e1a071b461f59
+    evidence_level: primary
+    id: org.intumit-beijing
+    name: 智網達資訊（北京）有限責任公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司
+    details:
+    - 全資子公司
+    edge: eb85c971a4230
+    evidence_level: primary
+    id: org.intumit-corporation
+    name: Intumit Corporation
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司
+    details:
+    - 全資子公司
+    edge: ea61cef6f805c
+    evidence_level: primary
+    id: org.intumit-japan
+    name: Intumit Japan
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司
+    details:
+    - 全資子公司
+    edge: e41333a79f71a
+    evidence_level: primary
+    id: org.intumit-mobile
+    name: Intumit Mobile Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.intumit.tw/
 tax_id: '70364799'
 incorporated: '1999-05-24'
 listed: '2025-07-29'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.7547#e10:
+    locator: 1-02／2025年度營收結構／SmartBC智能行銷系統營收占比
+    published_date: null
+    publisher: 碩網資訊股份有限公司
+    quote_check: not_found
+    title: 碩網資訊2025永續報告書
+    url: https://www.intumit.com/wp-content/uploads/Intumit_Sustainability_Report_2025_zh.html
+  tw.7547#e11:
+    locator: 1-02／2025年度營收結構／SmartKMS知識管理系統營收占比
+    published_date: null
+    publisher: 碩網資訊股份有限公司
+    quote_check: not_found
+    title: 碩網資訊2025永續報告書
+    url: https://www.intumit.com/wp-content/uploads/Intumit_Sustainability_Report_2025_zh.html
+  tw.7547#e12:
+    locator: 1-02／關係企業表，列示智網達、Intumit Japan、Intumit Corporation及Intumit Mobile Inc.
+    published_date: null
+    publisher: 碩網資訊股份有限公司
+    quote_check: found
+    title: 碩網資訊2025永續報告書
+    url: https://www.intumit.com/wp-content/uploads/Intumit_Sustainability_Report_2025_zh.html
+  tw.7547#e13:
+    locator: 第10頁／附註四（二）合併基礎／智網達子公司列
+    published_date: null
+    publisher: 碩網資訊股份有限公司
+    quote_check: found
+    title: 114年第二季合併財務報告暨會計師核閱報告
+    url: https://www.intumit.com/wp-content/uploads/consolidated_financial_report_2025_Q2.pdf
+  tw.7547#e14:
+    locator: 第10頁／附註四（二）合併基礎／Intumit Japan子公司列
+    published_date: null
+    publisher: 碩網資訊股份有限公司
+    quote_check: found
+    title: 114年第二季合併財務報告暨會計師核閱報告
+    url: https://www.intumit.com/wp-content/uploads/consolidated_financial_report_2025_Q2.pdf
+  tw.7547#e15:
+    locator: 第10頁／附註四（二）合併基礎／Intumit Corporation子公司列
+    published_date: null
+    publisher: 碩網資訊股份有限公司
+    quote_check: found
+    title: 114年第二季合併財務報告暨會計師核閱報告
+    url: https://www.intumit.com/wp-content/uploads/consolidated_financial_report_2025_Q2.pdf
+  tw.7547#e16:
+    locator: 第10頁／附註四（二）合併基礎／Intumit Mobile子公司列
+    published_date: null
+    publisher: 碩網資訊股份有限公司
+    quote_check: found
+    title: 114年第二季合併財務報告暨會計師核閱報告
+    url: https://www.intumit.com/wp-content/uploads/consolidated_financial_report_2025_Q2.pdf
+  tw.7547#e17:
+    locator: 第10頁／附註四（二）合併基礎
+    published_date: null
+    publisher: 碩網資訊股份有限公司
+    quote_check: found
+    title: 114年第二季合併財務報告暨會計師核閱報告
+    url: https://www.intumit.com/wp-content/uploads/consolidated_financial_report_2025_Q2.pdf
+  tw.7547#e2:
+    locator: Agentic AI管理平台產品介紹
+    published_date: null
+    publisher: 碩網資訊股份有限公司
+    quote_check: found
+    title: Agentic AI 管理平台
+    url: https://www.intumit.tw/agentic-ai-admin-portal_zh/
+  tw.7547#e3:
+    locator: Features／執行複雜的對話
+    published_date: null
+    publisher: 碩網資訊股份有限公司
+    quote_check: found
+    title: SmartRobot
+    url: https://www.intumit.tw/smartrobot_zh/
+  tw.7547#e4:
+    locator: FAQ／SmartKMS目前企業內部使用居多嗎
+    published_date: null
+    publisher: 碩網資訊股份有限公司
+    quote_check: found
+    title: SmartKMS
+    url: https://www.intumit.tw/smartkms_zh/
+  tw.7547#e5:
+    locator: Features／友善服務
+    published_date: null
+    publisher: 碩網資訊股份有限公司
+    quote_check: found
+    title: STT Service
+    url: https://www.intumit.tw/stt-service_zh/
+  tw.7547#e6:
+    locator: 產品與技術價值
+    published_date: null
+    publisher: 碩網資訊股份有限公司
+    quote_check: found
+    title: 關於我們
+    url: https://www.intumit.tw/about-us_zh/
+  tw.7547#e7:
+    locator: 1-02／主要產品與服務（2025年度營收結構）／GenAI Admin Portal列
+    published_date: null
+    publisher: 碩網資訊股份有限公司
+    quote_check: found
+    title: 碩網資訊2025永續報告書
+    url: https://www.intumit.com/wp-content/uploads/Intumit_Sustainability_Report_2025_zh.html
+  tw.7547#e8:
+    locator: 1-02／2025年度營收結構／GenAI Admin Portal營收占比
+    published_date: null
+    publisher: 碩網資訊股份有限公司
+    quote_check: not_found
+    title: 碩網資訊2025永續報告書
+    url: https://www.intumit.com/wp-content/uploads/Intumit_Sustainability_Report_2025_zh.html
+  tw.7547#e9:
+    locator: 1-02／2025年度營收結構／SmartRobot智能客服＋SmartWork虛擬助理營收占比
+    published_date: null
+    publisher: 碩網資訊股份有限公司
+    quote_check: not_found
+    title: 碩網資訊2025永續報告書
+    url: https://www.intumit.com/wp-content/uploads/Intumit_Sustainability_Report_2025_zh.html

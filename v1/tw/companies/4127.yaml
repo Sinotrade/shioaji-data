@@ -8,12 +8,143 @@ industry:
   l0_code: '22'
   l0_name: 生技醫療業
   l0_name_en: Biotechnology and Medical Care
-primary_chain_position: unknown
+  l1: health
+  l1_name: 醫療保健
+  l1_name_en: Healthcare
+  l2: health.devices
+  l2_name: 醫療器材與服務
+  l2_name_en: Medical Devices & Services
+  l3: med.services
+  l3_name: 醫療服務與通路
+  l3_name_en: Healthcare Services & Distribution
+chain: chain.biotech
+chain_stage:
+  agreement: both
+  also: []
+  reason: 從事中西藥與保健商品批發零售，電視購物占營收83%，以銷售通路為主。
+  stage: channel
+  stage_name: 通路與醫療服務
+  tier: downstream
+primary_chain_position: downstream
+summary_short: 銷售中西藥與保健商品，以電視購物為主要營收通路。
+summary_long: 天良從事中西藥批發零售，透過電視購物、實體通路與電商銷售商品。依2025年1至9月法說會資料，電視購物占營收83%，實體通路占10%，電商占5%，其他占2%，收入主要來自電視購物。官網列示中藥天良救腎丹、西藥倍力骨膠囊250毫克，以及保健產品諾得清體素OCARB液態軟膠囊EXPLUS。天良持有諾得生技股份有限公司全部股權；依上曜2026年第二季合併財報，天良已納入其合併範圍，上曜為間接母公司。
+segments:
+- evidence_ids:
+  - e3
+  id: seg.tv
+  name: 電視購物
+  period: 2025年1至9月
+  revenue_share_pct: 83
+- evidence_ids:
+  - e3
+  id: seg.physical
+  name: 實體通路
+  period: 2025年1至9月
+  revenue_share_pct: 10
+- evidence_ids:
+  - e3
+  id: seg.ecommerce
+  name: 電商通路
+  period: 2025年1至9月
+  revenue_share_pct: 5
+- evidence_ids:
+  - e3
+  id: seg.other
+  name: 其他
+  period: 2025年1至9月
+  revenue_share_pct: 2
+relations:
+  parents:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接母公司與上層合併控制方
+    details:
+    - 間接母公司與上層合併控制方
+    edge: e9d4e259ea0c3
+    evidence_level: primary
+    id: tw.1316
+    name: 上曜
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司
+    details:
+    - 全資子公司
+    edge: ecd73acdf31fb
+    evidence_level: primary
+    id: org.諾得生技股份有限公司
+    name: 諾得生技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.tlb.com.tw
 tax_id: '85086859'
 incorporated: '1971-04-22'
 listed: '2005-07-29'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4127#e2:
+    locator: 成立起源及發展簡介，第一段
+    published_date: null
+    publisher: 天良生物科技企業股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.tlb.com.tw/公司簡介/
+  tw.4127#e3:
+    locator: 第12頁，銷售分析－通路，2025年1至9月
+    published_date: '2025-12-02'
+    publisher: 天良生物科技企業股份有限公司
+    quote_check: found
+    title: 2025年法人說明會
+    url: https://fcdn.goodq.top/caches/e4ea8cae70f24dbbb4e2862a84408668/aHR0cHM6Ly93d3cudGxiLmNvbS50dy9xZnktY29udGVudC91cGxvYWRzLzIwMjUvMTIvOWRlZmFmODRhMjI2OWMyOTE1YmZlN2MzZmZhM2RlNTMucGRm.pdf
+  tw.4127#e4:
+    locator: 產品名稱與分類
+    published_date: null
+    publisher: 天良生物科技企業股份有限公司
+    quote_check: found
+    title: 天良救腎丹（還少丹減味）
+    url: https://www.tlb.com.tw/?post_type=products&page_id=15898/
+  tw.4127#e5:
+    locator: 產品名稱與西藥產品分類
+    published_date: null
+    publisher: 天良生物科技企業股份有限公司
+    quote_check: found
+    title: 倍力骨膠囊250毫克（硫酸固可沙明）
+    url: https://www.tlb.com.tw/?post_type=products&page_id=15799/
+  tw.4127#e6:
+    locator: 產品名稱與保健產品分類
+    published_date: null
+    publisher: 天良生物科技企業股份有限公司
+    quote_check: found
+    title: 諾得清體素OCARB液態軟膠囊 EXPLUS
+    url: https://www.tlb.com.tw/?post_type=products&page_id=20822/
+  tw.4127#e7:
+    locator: 第5頁，公司沿革，諾得子公司
+    published_date: '2025-12-02'
+    publisher: 天良生物科技企業股份有限公司
+    quote_check: found
+    title: 2025年法人說明會
+    url: https://fcdn.goodq.top/caches/e4ea8cae70f24dbbb4e2862a84408668/aHR0cHM6Ly93d3cudGxiLmNvbS50dy9xZnktY29udGVudC91cGxvYWRzLzIwMjUvMTIvOWRlZmFmODRhMjI2OWMyOTE1YmZlN2MzZmZhM2RlNTMucGRm.pdf
+  tw.4127#e8:
+    locator: 列入合併財務報表之子公司，天良公司投資諾得生技之列，持股比例100.00%
+    published_date: '2026-08-14'
+    publisher: 上曜建設開發股份有限公司；FinancialFilings轉載
+    quote_check: unreachable
+    title: 上曜建設開發股份有限公司2026年第二季合併財務報告
+    url: https://financialfilings.com/filings/sun-yad-1316/interim-quarterly-report/2026/60579976/
+  tw.4127#e9:
+    locator: 列入合併財務報表之子公司，世紀民生與星雲持有天良之列及註7
+    published_date: '2026-08-14'
+    publisher: 上曜建設開發股份有限公司；FinancialFilings轉載
+    quote_check: unreachable
+    title: 上曜建設開發股份有限公司2026年第二季合併財務報告
+    url: https://financialfilings.com/filings/sun-yad-1316/interim-quarterly-report/2026/60579976/

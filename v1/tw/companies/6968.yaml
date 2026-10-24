@@ -8,12 +8,143 @@ industry:
   l0_code: '38'
   l0_name: 居家生活
   l0_name_en: Home Life
-primary_chain_position: unknown
+  l1: consumer
+  l1_name: 消費
+  l1_name_en: Consumer
+  l2: cons.discretionary
+  l2_name: 非必需消費
+  l2_name_en: Consumer Discretionary
+  l3: retail.department
+  l3_name: 百貨與零售
+  l3_name_en: Department Stores & Retail
+primary_chain_position: downstream
+summary_short: 以寵物食品及用品零售為主，並經營寵物美容與電商通路。
+summary_long: 萬達寵物以寵物食品及用品銷售為主要業務，並提供洗澡、美容與住宿服務。旗下通路品牌包括寵物公園、凱朵寵物、貓狗隊長及電商品牌毛孩市集，結合實體門市與線上購物服務。2026年上半年合併寵物食品及用品收入為17億3,211.9萬元，美容服務收入為1億67.5萬元。合併範圍包括從事寵物食品及用品批發的四季全球貿易、寵物食品批發的八方國際寵物，以及投資控股公司萬寵投資。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_goods
+  name: 寵物食品及用品
+  period: 2026年上半年
+  revenue_share_pct: null
+- evidence_ids:
+  - e2
+  id: seg_grooming
+  name: 美容服務
+  period: 2026年上半年
+  revenue_share_pct: null
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股60%的寵物食品批發子公司
+    details:
+    - 持股60%的寵物食品批發子公司
+    edge: e3259b300c40e
+    evidence_level: primary
+    id: org.八方國際寵物有限公司
+    name: 八方國際寵物有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股100%的寵物食品及用品批發子公司
+    details:
+    - 持股100%的寵物食品及用品批發子公司
+    edge: efba7ff7d5898
+    evidence_level: primary
+    id: org.四季全球貿易股份有限公司
+    name: 四季全球貿易股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股100%的投資控股子公司
+    details:
+    - 持股100%的投資控股子公司
+    edge: e73d00ece9d7e
+    evidence_level: primary
+    id: org.萬寵投資股份有限公司
+    name: 萬寵投資股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.wonderpet.asia/
 tax_id: '53416750'
 incorporated: '2011-06-20'
 listed: '2024-08-14'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6968#e10:
+    locator: 第15頁，列入合併財務報告之子公司
+    published_date: '2026-08-07'
+    publisher: 萬達寵物事業股份有限公司
+    quote_check: found
+    title: 民國115年及114年第二季合併財務報告
+    url: https://www.wonderpet.asia/wp-content/uploads/2026/08/%E8%90%AC%E9%81%94%E5%AF%B5%E7%89%A9115Q2_%E5%90%88%E4%BD%B5FR.pdf
+  tw.6968#e2:
+    locator: 第40頁，附註六（十九）營業收入；115年1月1日至6月30日，欄位依序為寵物食品及用品、美容服務、合計；單位為新台幣仟元
+    published_date: '2026-08-07'
+    publisher: 萬達寵物事業股份有限公司
+    quote_check: found
+    title: 民國115年及114年第二季合併財務報告
+    url: https://www.wonderpet.asia/wp-content/uploads/2026/08/%E8%90%AC%E9%81%94%E5%AF%B5%E7%89%A9115Q2_%E5%90%88%E4%BD%B5FR.pdf
+  tw.6968#e3:
+    locator: 第12頁，公司沿革
+    published_date: '2026-08-07'
+    publisher: 萬達寵物事業股份有限公司
+    quote_check: found
+    title: 民國115年及114年第二季合併財務報告
+    url: https://www.wonderpet.asia/wp-content/uploads/2026/08/%E8%90%AC%E9%81%94%E5%AF%B5%E7%89%A9115Q2_%E5%90%88%E4%BD%B5FR.pdf
+  tw.6968#e4:
+    locator: 頁尾「旗下品牌」
+    published_date: null
+    publisher: 萬達寵物事業股份有限公司
+    quote_check: found
+    title: 寵物公園PetPark官網
+    url: https://www.wonderpet.asia/
+  tw.6968#e5:
+    locator: 第5頁，主要產品及服務
+    published_date: '2025-12-24'
+    publisher: 萬達寵物事業股份有限公司
+    quote_check: found
+    title: 114年12月24日法人說明會簡報
+    url: https://www.wonderpet.asia/wp-content/uploads/2026/01/%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83%E7%B0%A1%E5%A0%B1_1141224.pdf
+  tw.6968#e6:
+    locator: 旗下品牌區塊，連往毛孩市集petpetgo.com的介紹
+    published_date: null
+    publisher: 萬達寵物事業股份有限公司
+    quote_check: found
+    title: 寵物公園PetPark官網
+    url: https://www.wonderpet.asia/
+  tw.6968#e7:
+    locator: 第6頁，公司簡介與通路整合
+    published_date: '2025-12-24'
+    publisher: 萬達寵物事業股份有限公司
+    quote_check: found
+    title: 114年12月24日法人說明會簡報
+    url: https://www.wonderpet.asia/wp-content/uploads/2026/01/%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83%E7%B0%A1%E5%A0%B1_1141224.pdf
+  tw.6968#e8:
+    locator: 第15頁，列入合併財務報告之子公司；持股欄依序為115年6月底、114年底及114年6月底
+    published_date: '2026-08-07'
+    publisher: 萬達寵物事業股份有限公司
+    quote_check: found
+    title: 民國115年及114年第二季合併財務報告
+    url: https://www.wonderpet.asia/wp-content/uploads/2026/08/%E8%90%AC%E9%81%94%E5%AF%B5%E7%89%A9115Q2_%E5%90%88%E4%BD%B5FR.pdf
+  tw.6968#e9:
+    locator: 第15頁，列入合併財務報告之子公司
+    published_date: '2026-08-07'
+    publisher: 萬達寵物事業股份有限公司
+    quote_check: found
+    title: 民國115年及114年第二季合併財務報告
+    url: https://www.wonderpet.asia/wp-content/uploads/2026/08/%E8%90%AC%E9%81%94%E5%AF%B5%E7%89%A9115Q2_%E5%90%88%E4%BD%B5FR.pdf

@@ -8,12 +8,126 @@ industry:
   l0_code: '31'
   l0_name: 其他電子業
   l0_name_en: Other Electronic
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.display
+  l2_name: 光電與顯示
+  l2_name_en: Optoelectronics & Displays
+  l3: disp.touch
+  l3_name: 觸控與顯示模組
+  l3_name_en: Touch & Display Modules
+chain: chain.display
+chain_stage:
+  agreement: both
+  also: []
+  reason: 已確認設計製造字型、圖形及TFT液晶顯示模組，屬面板與模組階段；營收占比仍待確認。
+  stage: panel
+  stage_name: 面板與模組
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 設計製造液晶顯示模組、專業影音設備，並提供警用設備及醫療器材代工。
+summary_long: 微端科技提供液晶顯示模組設計製造，產品包含字型、圖形與TFT模組，應用於工業控制、通訊及醫療設備。數位音效產品包括音效測試機、多音軌混音器、喇叭擴大機與效果處理器，另提供專業影音產品設計組裝服務。公司也將軍警保全用隨身攝影機列為產品，並提供血液加溫器產品代工服務。在智慧製造相關服務方面，公司協助生產設備結合智慧機上盒，提供生產資料開發及收集服務，支援舊有設備的製造資訊可視化。
+relations:
+  subsidiaries:
+  - as_of: '2026-01-27'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 公告所列子公司
+    details:
+    - 公告所列子公司
+    edge: ef30676bc6c4c
+    evidence_level: primary
+    id: org.microtips-international-linited
+    name: Microtips International linited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2021-07-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 歷史公告所列美國子公司
+    details:
+    - 歷史公告所列美國子公司
+    edge: e2d444bd0d6b2
+    evidence_level: primary
+    id: org.microtips-technology-llc-usa
+    name: Microtips Technology ,LLC (USA)
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 官網主要營運據點圖列有香港及中國子公司，但圖中未載正式公司名稱。
 website: www.microtips.com.tw
 tax_id: '89649873'
 incorporated: '1995-07-27'
 listed: '2012-07-23'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3285#e1:
+    locator: 基本資料：公司名稱、股票代號與主要產品／服務
+    published_date: null
+    publisher: 微端科技股份有限公司
+    quote_check: found
+    title: 基本資料及公司沿革
+    url: https://www.microtips.com.tw/zh-TW/organization_and_responsibilities/index
+  tw.3285#e2:
+    locator: 薄膜電晶體液晶顯示器
+    published_date: null
+    publisher: 微端科技股份有限公司
+    quote_check: found
+    title: 液晶顯示模組
+    url: https://www.microtips.com.tw/zh-TW/product/index/LCM
+  tw.3285#e3:
+    locator: 服務項目：數位音效產品
+    published_date: null
+    publisher: 微端科技股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.microtips.com.tw/zh-tw/about_company/index
+  tw.3285#e4:
+    locator: 經營理念
+    published_date: null
+    publisher: 微端科技股份有限公司
+    quote_check: found
+    title: 企業永續
+    url: https://www.microtips.com.tw/zh-TW/corporate_sustainability/index
+  tw.3285#e5:
+    locator: 服務項目：智能化資料開發服務
+    published_date: null
+    publisher: 微端科技股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.microtips.com.tw/zh-tw/about_company/index
+  tw.3285#e6:
+    locator: 經營理念
+    published_date: null
+    publisher: 微端科技股份有限公司
+    quote_check: found
+    title: 企業永續
+    url: https://www.microtips.com.tw/zh-TW/corporate_sustainability/index
+  tw.3285#e7:
+    locator: 基本資料：主要產品／服務
+    published_date: null
+    publisher: 微端科技股份有限公司
+    quote_check: found
+    title: 基本資料及公司沿革
+    url: https://www.microtips.com.tw/zh-TW/organization_and_responsibilities/index
+  tw.3285#e8:
+    locator: 公告主旨
+    published_date: '2026-01-27'
+    publisher: MoneyDJ理財網／公開資訊觀測站重大訊息公告
+    quote_check: found
+    title: 微端代子公司Microtips International linited公告
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=bacf43cd-5d30-4ed0-80c2-a80bb812e056
+  tw.3285#e9:
+    locator: 公告主旨
+    published_date: '2021-07-13'
+    publisher: MoneyDJ理財網／公開資訊觀測站重大訊息公告
+    quote_check: found
+    title: 微端：子公司Microtips Technology (USA)董事改由楊宗達擔任
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=faa09c65-2183-47ee-bda6-ba5e4eceb7b5

@@ -8,12 +8,199 @@ industry:
   l0_code: '26'
   l0_name: 光電業
   l0_name_en: Optoelectronic
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.display
+  l2_name: 光電與顯示
+  l2_name_en: Optoelectronics & Displays
+  l3: disp.led
+  l3_name: LED 與 Micro／Mini LED
+  l3_name_en: LED & Micro/Mini LED
+chain: chain.display
+chain_stage:
+  agreement: both
+  also: []
+  reason: 光電產品占營收93.51%，包含LED數位、貼片及點陣顯示器，對應顯示模組階段。
+  stage: panel
+  stage_name: 面板與模組
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 以LED元件、顯示器與照明產品為主，另提供半導體零組件及製造服務。
+summary_long: 李洲科技主要經營LED元件與顯示器，產品涵蓋數位顯示器、貼片型顯示器、點陣顯示器、SMD LED及插件型LED。依2024年度年報，發光二極體光電產品占營業比重93.51%，磊晶占6.32%，其他占0.17%。官網另列有LED吊燈、線型燈與面板燈，以及記憶卡、隨身碟、固態硬碟，並提供電子專業製造及半導體設計製造服務。依2025年第三季合併財報，子公司包括洲磊科技、LORBITS及綠洲醫藥生技，並透過海外控股公司持有東莞李洲。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_led
+  name: 發光二極體光電產品
+  period: '2024'
+  revenue_share_pct: 93.51
+- evidence_ids:
+  - e2
+  id: seg_epi
+  name: 磊晶
+  period: '2024'
+  revenue_share_pct: 6.32
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他
+  period: '2024'
+  revenue_share_pct: 0.17
+relations:
+  subsidiaries:
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 照明產品銷售子公司
+    details:
+    - 照明產品銷售子公司
+    edge: e9eabddabe1fe
+    evidence_level: primary
+    id: org.lorbits-inc
+    name: LORBITS INC.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 海外控股子公司
+    details:
+    - 海外控股子公司
+    edge: eb03aaa30581a
+    evidence_level: primary
+    id: org.oasis-investments-holdings-ltd
+    name: OASIS INVESTMENTS HOLDINGS LTD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過海外控股公司間接持有的LED製造子公司
+    details:
+    - 透過海外控股公司間接持有的LED製造子公司
+    edge: e4a479be5f31a
+    evidence_level: primary
+    id: org.東莞李洲電子科技有限公司
+    name: 東莞李洲電子科技有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 光電零組件子公司
+    details:
+    - 光電零組件子公司
+    edge: e36b851115e11
+    evidence_level: primary
+    id: org.洲磊科技股份有限公司
+    name: 洲磊科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 生物技術諮詢服務子公司
+    details:
+    - 生物技術諮詢服務子公司
+    edge: e1239d8f22386
+    evidence_level: primary
+    id: org.綠洲醫藥生技股份有限公司
+    name: 綠洲醫藥生技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.oasistek.com
 tax_id: 04541794
 incorporated: '1974-05-24'
 listed: '2004-12-02'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3066#e10:
+    locator: 第19頁，附註十一、列入合併財務報告之子公司／LORBITS列
+    published_date: null
+    publisher: 李洲科技股份有限公司
+    quote_check: found
+    title: 李洲科技股份有限公司及子公司114年第3季合併財務報告
+    url: https://www.oasistek.com/upload/1769061150.pdf
+  tw.3066#e11:
+    locator: 第19頁，附註十一、列入合併財務報告之子公司／綠洲醫藥公司列
+    published_date: null
+    publisher: 李洲科技股份有限公司
+    quote_check: found
+    title: 李洲科技股份有限公司及子公司114年第3季合併財務報告
+    url: https://www.oasistek.com/upload/1769061150.pdf
+  tw.3066#e12:
+    locator: 第19頁，附註十一、列入合併財務報告之子公司／OASIS HOLDINGS投資項目
+    published_date: null
+    publisher: 李洲科技股份有限公司
+    quote_check: found
+    title: 李洲科技股份有限公司及子公司114年第3季合併財務報告
+    url: https://www.oasistek.com/upload/1769061150.pdf
+  tw.3066#e2:
+    locator: 印刷頁40，肆、營運概況／各主要產品之營業比重
+    published_date: null
+    publisher: 李洲科技股份有限公司
+    quote_check: found
+    title: 李洲科技股份有限公司113年度年報
+    url: https://www.oasistek.com/upload/1752196385.pdf
+  tw.3066#e3:
+    locator: 發光二極體零組件介紹第二段
+    published_date: null
+    publisher: 李洲科技股份有限公司
+    quote_check: found
+    title: 產品介紹：發光二極體零組件
+    url: https://www.oasistek.com/zh-tw/Products/LED-Components/
+  tw.3066#e4:
+    locator: 照明應用產品目錄
+    published_date: null
+    publisher: 李洲科技股份有限公司
+    quote_check: found
+    title: 產品介紹：照明應用產品
+    url: https://www.oasistek.com/zh-tw/Products/LED-Lighting-Series/
+  tw.3066#e5:
+    locator: 半導體零組件目錄：記憶卡、隨身碟、固態硬碟
+    published_date: null
+    publisher: 李洲科技股份有限公司
+    quote_check: found
+    title: 產品介紹：半導體零組件
+    url: https://www.oasistek.com/zh-tw/Products/Semiconductor/
+  tw.3066#e6:
+    locator: 主要業務／服務項目
+    published_date: null
+    publisher: 李洲科技股份有限公司
+    quote_check: found
+    title: 投資中心：主要業務
+    url: https://www.oasistek.com/zh-tw/Investor/OverView
+  tw.3066#e7:
+    locator: 印刷頁40，公司目前之商品項目
+    published_date: null
+    publisher: 李洲科技股份有限公司
+    quote_check: found
+    title: 李洲科技股份有限公司113年度年報
+    url: https://www.oasistek.com/upload/1752196385.pdf
+  tw.3066#e8:
+    locator: 第19頁，附註十一、列入合併財務報告之子公司／李洲直接投資項目
+    published_date: null
+    publisher: 李洲科技股份有限公司
+    quote_check: found
+    title: 李洲科技股份有限公司及子公司114年第3季合併財務報告
+    url: https://www.oasistek.com/upload/1769061150.pdf
+  tw.3066#e9:
+    locator: 第19頁，附註十一、列入合併財務報告之子公司／洲磊公司列
+    published_date: null
+    publisher: 李洲科技股份有限公司
+    quote_check: found
+    title: 李洲科技股份有限公司及子公司114年第3季合併財務報告
+    url: https://www.oasistek.com/upload/1769061150.pdf

@@ -8,12 +8,146 @@ industry:
   l0_code: '22'
   l0_name: 生技醫療業
   l0_name_en: Biotechnology and Medical Care
-primary_chain_position: unknown
+  l1: health
+  l1_name: 醫療保健
+  l1_name_en: Healthcare
+  l2: health.pharma
+  l2_name: 製藥與生技
+  l2_name_en: Pharmaceuticals & Biotech
+  l3: bio.new_drug
+  l3_name: 新藥研發
+  l3_name_en: New Drug Development
+chain: chain.biotech
+chain_stage:
+  agreement: both
+  also:
+  - stage: manufacturing
+    stage_name: 製造與代工
+    tier: midstream
+  reason: 最大營收來自藥品及保健食品，主要從事新藥研發，並涵蓋生產製造。
+  stage: rnd
+  stage_name: 研發與原料
+  tier: upstream
+primary_chain_position: upstream
+summary_short: 以新藥及保健食品銷售為主，產品包含癌因性疲憊症用藥與止痛藥。
+summary_long: 懷特以新藥與保健食品為主要業務，2026年上半年合併營收以藥品及保健食品部門為最大來源，另有醫療診斷及精密醫療器材儀器部門。上市藥品包括改善癌症末期中重度疲勞症狀的懷特血寶凍晶注射劑，以及解除急性中度至嚴重疼痛的懷特痛寶軟膠囊。保健食品包括黃耆成分的懷特耆力、含麩醯胺酸的懷特胺速，以及以皇耆、刺五加與紅棗製成的懷特皇耆飲。合併範圍包含具實質控制力的安克生醫，以及透過安克生醫控制的聲博科技。
+segments:
+- evidence_ids:
+  - e3
+  id: seg.drugs_health_food
+  name: 藥品及保健食品
+  period: 2026年上半年
+  revenue_share_pct: null
+- evidence_ids:
+  - e3
+  id: seg.medical_diagnosis
+  name: 醫療診斷
+  period: 2026年上半年
+  revenue_share_pct: null
+- evidence_ids:
+  - e3
+  id: seg.precision_medical_instruments
+  name: 精密醫療器材儀器
+  period: 2026年上半年
+  revenue_share_pct: null
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過安克生醫控制的間接子公司
+    details:
+    - 透過安克生醫控制的間接子公司
+    edge: e4cbd00f797ee
+    evidence_level: primary
+    id: org.聲博科技股份有限公司
+    name: 聲博科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 具實質控制力並納入合併報表的子公司
+    details:
+    - 具實質控制力並納入合併報表的子公司
+    edge: e8617f49f4ca8
+    evidence_level: primary
+    id: tw.4188
+    name: 安克
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.phytohealth.com.tw
 tax_id: '16766281'
 incorporated: '1998-11-24'
 listed: '2008-07-16'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4108#e10:
+    locator: 印刷頁14，合併財務報表編製主體及控制力說明
+    published_date: '2026-07-31'
+    publisher: 懷特生技新藥股份有限公司
+    quote_check: found
+    title: 2026年第二季懷特合併財務報告
+    url: https://www.phytohealth.com.tw/uploads/images/pdf/ir-financial/26Q2_%E6%87%B7%E7%89%B9%E8%B2%A1%E5%A0%B1(Final).pdf
+  tw.4108#e2:
+    locator: 印刷頁75，肆、營運概況／業務之主要內容
+    published_date: null
+    publisher: 懷特生技新藥股份有限公司
+    quote_check: found
+    title: 懷特生技新藥股份有限公司114年度年報
+    url: https://www.phytohealth.com.tw/uploads/images/_files/06_ir/08_SHM_Info/2026/%E6%87%B7%E7%89%B9114%E5%B9%B4%E5%A0%B10519_%E4%B8%8A%E5%82%B3%E7%89%88.pdf
+  tw.4108#e3:
+    locator: 印刷頁74，十四、部門資訊；2026年上半年，金額單位為新臺幣千元
+    published_date: '2026-07-31'
+    publisher: 懷特生技新藥股份有限公司
+    quote_check: found
+    title: 2026年第二季懷特合併財務報告
+    url: https://www.phytohealth.com.tw/uploads/images/pdf/ir-financial/26Q2_%E6%87%B7%E7%89%B9%E8%B2%A1%E5%A0%B1(Final).pdf
+  tw.4108#e4:
+    locator: 產品介紹／適應症
+    published_date: null
+    publisher: 懷特生技新藥股份有限公司
+    quote_check: found
+    title: 上市產品－懷特血寶®凍晶注射劑
+    url: https://www.phytohealth.com.tw/tw/medicine/detail/懷特血寶___凍晶注射劑___癌因性疲憊症_
+  tw.4108#e5:
+    locator: 產品介紹／適應症
+    published_date: null
+    publisher: 懷特生技新藥股份有限公司
+    quote_check: found
+    title: 上市產品－懷特痛寶®軟膠囊
+    url: https://www.phytohealth.com.tw/tw/medicine/detail/懷特痛寶_軟膠囊___解除急性中度到嚴重疼痛_
+  tw.4108#e6:
+    locator: 產品介紹／病後補養及成分
+    published_date: null
+    publisher: 懷特生技新藥股份有限公司
+    quote_check: found
+    title: 上市產品－保健食品－懷特耆力®
+    url: https://www.phytohealth.com.tw/tw/healthy/detail/懷特耆力_
+  tw.4108#e7:
+    locator: 產品介紹／病後營養及配方
+    published_date: null
+    publisher: 懷特生技新藥股份有限公司
+    quote_check: found
+    title: 上市產品－保健食品－懷特胺速®
+    url: https://www.phytohealth.com.tw/tw/healthy/detail/懷特胺速_
+  tw.4108#e8:
+    locator: 產品介紹／3效合一成分
+    published_date: null
+    publisher: 懷特生技新藥股份有限公司
+    quote_check: found
+    title: 上市產品－保健食品－懷特皇耆飲®
+    url: https://www.phytohealth.com.tw/tw/healthy/detail/懷特皇耆飲_
+  tw.4108#e9:
+    locator: 印刷頁14，四、重大會計政策之彙總說明／合併概況
+    published_date: '2026-07-31'
+    publisher: 懷特生技新藥股份有限公司
+    quote_check: found
+    title: 2026年第二季懷特合併財務報告
+    url: https://www.phytohealth.com.tw/uploads/images/pdf/ir-financial/26Q2_%E6%87%B7%E7%89%B9%E8%B2%A1%E5%A0%B1(Final).pdf

@@ -8,12 +8,158 @@ industry:
   l0_code: '25'
   l0_name: 電腦及週邊設備業
   l0_name_en: Computer and Peripheral Equipment
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.machinery
+  l2_name: 機械與自動化
+  l2_name_en: Machinery & Automation
+  l3: mach.office
+  l3_name: 辦公與商用設備
+  l3_name_en: Office & Business Equipment
+primary_chain_position: not_applicable
+summary_short: 以多功能事務機及模組設計製造為主，另提供工業列印與3D列印技術。
+summary_long: 東友以多功能數位影印機、雷射傳真機及數位複合機模組為主要業務。2024年數位複合機占營業比重74.70%，模組占7.46%，其他產品占17.84%。模組產品包括自動送稿器、傳真套件、掃描單元、控制器及操作面板，其他產品涵蓋自動護貝機、彩色工業標籤機與切割繪圖機。公司亦開發TIS 3DP技術，導入無人機產品概念驗證，並完成無人機地面站軟體開發及資安認證。東友透過投資子公司間接持有東友數碼科技（東莞）有限公司，由該子公司研發、生產及銷售多功能事務機相關產品。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_mfp
+  name: 數位複合機
+  period: '2024'
+  revenue_share_pct: 74.7
+- evidence_ids:
+  - e2
+  id: seg_modules
+  name: 數位複合機模組
+  period: '2024'
+  revenue_share_pct: 7.46
+- evidence_ids:
+  - e3
+  id: seg_other
+  name: 其他產品
+  period: '2024'
+  revenue_share_pct: 17.84
+main_theme: theme.drone
+themes:
+- also: []
+  stage: system
+  theme: theme.drone
+  tier: downstream
+relations:
+  subsidiaries:
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: e779831fc002a
+    evidence_level: primary
+    id: org.atlas-tech-investment
+    name: Atlas Tech Investment Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過Atlas持有的間接子公司
+    details:
+    - 透過Atlas持有的間接子公司
+    edge: edd875bf0fb3d
+    evidence_level: primary
+    id: org.image-systems-international
+    name: Image Systems International Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過Atlas及ISI持有的間接子公司
+    details:
+    - 透過Atlas及ISI持有的間接子公司
+    edge: ee4fea2c4c6e6
+    evidence_level: primary
+    id: org.teco-image-dongguan
+    name: 東友數碼科技(東莞)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 多家未具名無人機廠商
+- 採用無人機地面站軟體的未具名政府單位
 website: http://www.tecoimage.com.tw/
 tax_id: '16091527'
 incorporated: '1997-09-08'
 listed: '2000-06-17'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.5438#e1:
+    locator: 第47頁，業務範圍：主要內容及營業比重
+    published_date: null
+    publisher: 東友科技股份有限公司
+    quote_check: found
+    title: 東友科技股份有限公司113年度年報
+    url: https://www.tecoimage.com.tw/investor/attachments/2025/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf
+  tw.5438#e2:
+    locator: 第47頁，數位複合機模組營業比重
+    published_date: null
+    publisher: 東友科技股份有限公司
+    quote_check: found
+    title: 東友科技股份有限公司113年度年報
+    url: https://www.tecoimage.com.tw/investor/attachments/2025/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf
+  tw.5438#e3:
+    locator: 第47頁，其他產品營業比重
+    published_date: null
+    publisher: 東友科技股份有限公司
+    quote_check: found
+    title: 東友科技股份有限公司113年度年報
+    url: https://www.tecoimage.com.tw/investor/attachments/2025/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf
+  tw.5438#e4:
+    locator: 第47頁，公司目前之商品項目
+    published_date: null
+    publisher: 東友科技股份有限公司
+    quote_check: found
+    title: 東友科技股份有限公司113年度年報
+    url: https://www.tecoimage.com.tw/investor/attachments/2025/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf
+  tw.5438#e5:
+    locator: 第7頁，3DP列印生產部分
+    published_date: null
+    publisher: 東友科技股份有限公司
+    quote_check: found
+    title: 東友科技股份有限公司114年度股東會議事手冊
+    url: https://www.tecoimage.com.tw/Investor/attachments/2025/114%E5%B9%B4%E5%BA%A6%E8%82%A1%E6%9D%B1%E6%9C%83%E8%AD%B0%E4%BA%8B%E6%89%8B%E5%86%8A.pdf
+  tw.5438#e6:
+    locator: 第7頁，無人機開發部分
+    published_date: null
+    publisher: 東友科技股份有限公司
+    quote_check: found
+    title: 東友科技股份有限公司114年度股東會議事手冊
+    url: https://www.tecoimage.com.tw/Investor/attachments/2025/114%E5%B9%B4%E5%BA%A6%E8%82%A1%E6%9D%B1%E6%9C%83%E8%AD%B0%E4%BA%8B%E6%89%8B%E5%86%8A.pdf
+  tw.5438#e7:
+    locator: 第15頁，列入合併財務報告之子公司，投資公司及子公司欄
+    published_date: '2026-05-11'
+    publisher: 東友科技股份有限公司
+    quote_check: found
+    title: 東友科技股份有限公司及子公司115年第一季合併財務報告
+    url: https://www.tecoimage.com.tw/investor/attachments/financial/115/(FINAL)%E6%9D%B1%E5%8F%8B%E7%A7%91%E6%8A%80.2026%E5%90%88%E4%BD%B5%E7%AC%AC%E4%B8%80%E5%AD%A3.20260331.FS.AllReport.CHT_0508.pdf
+  tw.5438#e8:
+    locator: 第15頁，列入合併財務報告之子公司，Atlas投資項目
+    published_date: '2026-05-11'
+    publisher: 東友科技股份有限公司
+    quote_check: found
+    title: 東友科技股份有限公司及子公司115年第一季合併財務報告
+    url: https://www.tecoimage.com.tw/investor/attachments/financial/115/(FINAL)%E6%9D%B1%E5%8F%8B%E7%A7%91%E6%8A%80.2026%E5%90%88%E4%BD%B5%E7%AC%AC%E4%B8%80%E5%AD%A3.20260331.FS.AllReport.CHT_0508.pdf
+  tw.5438#e9:
+    locator: 第15頁，列入合併財務報告之子公司，ISI投資項目
+    published_date: '2026-05-11'
+    publisher: 東友科技股份有限公司
+    quote_check: found
+    title: 東友科技股份有限公司及子公司115年第一季合併財務報告
+    url: https://www.tecoimage.com.tw/investor/attachments/financial/115/(FINAL)%E6%9D%B1%E5%8F%8B%E7%A7%91%E6%8A%80.2026%E5%90%88%E4%BD%B5%E7%AC%AC%E4%B8%80%E5%AD%A3.20260331.FS.AllReport.CHT_0508.pdf

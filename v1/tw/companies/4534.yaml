@@ -8,12 +8,199 @@ industry:
   l0_code: '05'
   l0_name: 電機機械
   l0_name_en: Electric Machinery
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.machinery
+  l2_name: 機械與自動化
+  l2_name_en: Machinery & Automation
+  l3: mach.motion
+  l3_name: 傳動元件（滾珠螺桿、線性滑軌）
+  l3_name_en: Motion Components (Ball Screws, Linear Guides)
+primary_chain_position: midstream
+summary_short: 製造粉末冶金精密零件與傳動齒輪箱，以電動工具應用為主要營收。
+summary_long: 慶騰以粉末冶金、粉末鍛造及金屬粉末射出成形製造精密零件，並開發製造傳動齒輪箱，應用於電動工具、汽機車與其他機械設備。2025年營收以電動工具占48.95%最高，汽機車占19.79%，其餘包括工業機械、家電用品、園林機械與其他用途。公司另揭露人形機器人手指關節零件、機器人關節RV擺線齒輪箱，以及應用於AI伺服器的冷板與熱導管。主要子公司包括TPM TECHNOLOGY、中山耀威粉末元件及昆山慶騰欣金屬實業，後兩者為間接持有。
+segments:
+- evidence_ids:
+  - e2
+  id: seg.power_tools
+  name: 電動工具
+  period: '2025'
+  revenue_share_pct: 48.95
+- evidence_ids:
+  - e2
+  id: seg.vehicles
+  name: 汽機車
+  period: '2025'
+  revenue_share_pct: 19.79
+- evidence_ids:
+  - e2
+  id: seg.industrial_machinery
+  name: 工業機械
+  period: '2025'
+  revenue_share_pct: 7.98
+- evidence_ids:
+  - e2
+  id: seg.appliances
+  name: 家電用品
+  period: '2025'
+  revenue_share_pct: 7.17
+- evidence_ids:
+  - e2
+  id: seg.garden_machinery
+  name: 園林機械
+  period: '2025'
+  revenue_share_pct: 3.58
+- evidence_ids:
+  - e2
+  id: seg.other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 12.53
+main_theme: theme.ev
+themes:
+- also: []
+  stage: parts
+  theme: theme.ev
+  tier: midstream
+- also: []
+  stage: components
+  theme: theme.ai_server
+  tier: midstream
+- also: []
+  stage: components
+  theme: theme.robotics
+  tier: upstream
+- also: []
+  stage: parts
+  theme: theme.liquid_cooling
+  tier: upstream
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持有的中國昆山生產子公司
+    details:
+    - 間接持有的中國昆山生產子公司
+    edge: efb7ab22bd271
+    evidence_level: primary
+    id: org.kunshan-qingtengxin-metal
+    name: 昆山慶騰欣金屬實業有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有的合併子公司
+    details:
+    - 直接持有的合併子公司
+    edge: e3986b7506d50
+    evidence_level: primary
+    id: org.tpm-technology-bvi
+    name: TPM TECHNOLOGY (B.V.I.) CO., LTD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持有的中國中山生產子公司
+    details:
+    - 間接持有的中國中山生產子公司
+    edge: e60def86a3c7c
+    evidence_level: primary
+    id: org.zhongshan-yaowei-powder-components
+    name: 中山耀威粉末元件有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.trinity-ptc.com
 tax_id: '84189908'
 incorporated: '1993-02-23'
 listed: '2003-03-31'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4534#e1:
+    locator: 台灣總公司—頭份廠
+    published_date: null
+    publisher: 慶騰精密科技股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.trinity-ptc.com/c-company.htm
+  tw.4534#e10:
+    locator: 第49頁，附表大陸投資資訊註6；合併範圍另見第14頁
+    published_date: null
+    publisher: 慶騰精密科技股份有限公司
+    quote_check: found
+    title: 2026年第二季合併財務報表
+    url: https://web.trinity-ptc.com:8081/trinity_web_data/02/0203/0203-2026/0203-2026Q2A.pdf
+  tw.4534#e11:
+    locator: 慶騰中山廠
+    published_date: null
+    publisher: 慶騰精密科技股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.trinity-ptc.com/c-company.htm
+  tw.4534#e2:
+    locator: 印刷頁37，PDF第41頁；2025年度主要產品之營業比重
+    published_date: '2026-05-12'
+    publisher: 慶騰精密科技股份有限公司
+    quote_check: found
+    title: 2025年度年報
+    url: https://web.trinity-ptc.com:8081/trinity_web_data/06/0601/0601-2026/0601-202604.pdf
+  tw.4534#e3:
+    locator: 台灣中壢廠
+    published_date: null
+    publisher: 慶騰精密科技股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.trinity-ptc.com/c-company.htm
+  tw.4534#e4:
+    locator: 產品介紹／機器人關節
+    published_date: null
+    publisher: 慶騰精密科技股份有限公司
+    quote_check: found
+    title: 機器人關節
+    url: https://www.trinity-ptc.com/c-robot-joint.html
+  tw.4534#e5:
+    locator: 印刷頁43，PDF第47頁；開發成功之技術
+    published_date: '2026-05-12'
+    publisher: 慶騰精密科技股份有限公司
+    quote_check: found
+    title: 2025年度年報
+    url: https://web.trinity-ptc.com:8081/trinity_web_data/06/0601/0601-2026/0601-202604.pdf
+  tw.4534#e6:
+    locator: 印刷頁39，PDF第43頁；散熱模組／材料應用與突破
+    published_date: '2026-05-12'
+    publisher: 慶騰精密科技股份有限公司
+    quote_check: found
+    title: 2025年度年報
+    url: https://web.trinity-ptc.com:8081/trinity_web_data/06/0601/0601-2026/0601-202604.pdf
+  tw.4534#e7:
+    locator: 印刷頁43，PDF第47頁；開發成功之技術
+    published_date: '2026-05-12'
+    publisher: 慶騰精密科技股份有限公司
+    quote_check: found
+    title: 2025年度年報
+    url: https://web.trinity-ptc.com:8081/trinity_web_data/06/0601/0601-2026/0601-202604.pdf
+  tw.4534#e8:
+    locator: 第14頁，附註四之3合併概況；投資公司名稱與子公司名稱欄
+    published_date: null
+    publisher: 慶騰精密科技股份有限公司
+    quote_check: found
+    title: 2026年第二季合併財務報表
+    url: https://web.trinity-ptc.com:8081/trinity_web_data/02/0203/0203-2026/0203-2026Q2A.pdf
+  tw.4534#e9:
+    locator: 第49頁，附表大陸投資資訊註5
+    published_date: null
+    publisher: 慶騰精密科技股份有限公司
+    quote_check: found
+    title: 2026年第二季合併財務報表
+    url: https://web.trinity-ptc.com:8081/trinity_web_data/02/0203/0203-2026/0203-2026Q2A.pdf

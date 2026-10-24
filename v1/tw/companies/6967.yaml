@@ -8,12 +8,199 @@ industry:
   l0_code: '28'
   l0_name: 電子零組件業
   l0_name_en: Electronic Parts and Components
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.other
+  l3_name: 其他電子零組件
+  l3_name_en: Other Electronic Components
+primary_chain_position: not_applicable
+summary_short: 以電子功能性材料製造加工為主，兼營膠帶及接著劑等產品經銷。
+summary_long: 汎瑋材料的主要業務為電子功能性材料，另經營膠帶及接著劑等產品經銷。2025年度電子功能性材料占合併營收83.89%，經銷業務占16.11%。功能材料包括導電散熱與EMI材料、絕緣材料、黏接材料及保護膜，可用於電子產品的導熱、導電、絕緣、固定及表面保護。黏接材料具有多種膠系與基材，保護膜則用於手機、平板及機構件的製程或出貨保護。公司年報另列有AI伺服器的散熱材料、電動汽車的緩衝材料，以及機器人的功能性材料應用。
+segments:
+- evidence_ids:
+  - e_revenue
+  id: functional_materials
+  name: 電子功能性材料
+  period: 2025年度
+  revenue_share_pct: 83.89
+- evidence_ids:
+  - e_revenue
+  id: distribution
+  name: 經銷業務
+  period: 2025年度
+  revenue_share_pct: 16.11
+main_theme: theme.ev
+themes:
+- also: []
+  stage: parts
+  theme: theme.ev
+  tier: midstream
+- also: []
+  stage: components
+  theme: theme.ai_server
+  tier: midstream
+- also: []
+  stage: components
+  theme: theme.robotics
+  tier: upstream
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接全資子公司；電子功能性材料
+    details:
+    - 間接全資子公司；電子功能性材料
+    edge: ee3b24303f68a
+    evidence_level: primary
+    id: org.heng-wei-electronic-materials-chongqing
+    name: 恆瑋電子材料（重慶）有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接全資子公司；電子功能性材料
+    details:
+    - 間接全資子公司；電子功能性材料
+    edge: e0d215de59463
+    evidence_level: primary
+    id: org.heng-wei-electronic-materials-kunshan
+    name: 恆瑋電子材料（昆山）有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接全資子公司；電子功能性材料貿易
+    details:
+    - 直接全資子公司；電子功能性材料貿易
+    edge: e11bb5efcfff0
+    evidence_level: primary
+    id: org.tech-sun-international-malaysia
+    name: TECH SUN INTERNATIONAL (MALAYSIA) SDN. BHD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接全資子公司；電子功能性材料
+    details:
+    - 直接全資子公司；電子功能性材料
+    edge: ecaeebf699734
+    evidence_level: primary
+    id: org.viet-nam-trans-sun-technology
+    name: VIET NAM TRANS-SUN TECHNOLOGY CO.,LTD
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.trans-sun.com.tw/
 tax_id: '86575187'
 incorporated: '1992-03-03'
 listed: '2024-09-25'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6967#e_adhesive:
+    locator: 商品描述
+    published_date: null
+    publisher: 汎瑋材料科技股份有限公司
+    quote_check: found
+    title: 黏接類
+    url: https://www.trans-sun.com.tw/page/product/show.aspx?kind=104&lang=TW&num=79&page=1
+  tw.6967#e_ai_server:
+    locator: 第81頁，散熱材料系列應用表
+    published_date: '2026-04-30'
+    publisher: 汎瑋材料科技股份有限公司／公開資訊觀測站
+    quote_check: found
+    title: 汎瑋材料科技股份有限公司114年度年報
+    url: https://doc.twse.com.tw/pdf/2025_6967_20260529F04_20261023_192719.pdf
+  tw.6967#e_distribution_products:
+    locator: 經銷產品分類
+    published_date: null
+    publisher: 汎瑋材料科技股份有限公司
+    quote_check: found
+    title: 經銷業務
+    url: https://www.trans-sun.com.tw/page/about/index.aspx?kind=50&lang=TW
+  tw.6967#e_ev:
+    locator: 第81頁，保護、緩衝材料系列應用表
+    published_date: '2026-04-30'
+    publisher: 汎瑋材料科技股份有限公司／公開資訊觀測站
+    quote_check: found
+    title: 汎瑋材料科技股份有限公司114年度年報
+    url: https://doc.twse.com.tw/pdf/2025_6967_20260529F04_20261023_192719.pdf
+  tw.6967#e_insulation:
+    locator: 商品描述
+    published_date: null
+    publisher: 汎瑋材料科技股份有限公司
+    quote_check: found
+    title: 絕緣類
+    url: https://www.trans-sun.com.tw/page/product/show.aspx?kind=102&lang=TW&num=78&page=1
+  tw.6967#e_protective_film:
+    locator: 應用領域
+    published_date: null
+    publisher: 汎瑋材料科技股份有限公司
+    quote_check: found
+    title: 保護膜類
+    url: https://www.trans-sun.com.tw/page/product/show.aspx?kind=103&lang=TW&num=77&page=1
+  tw.6967#e_revenue:
+    locator: 第54頁，主要產品之營業比重；欄位依序為113及114年度營業收入、比重
+    published_date: '2026-04-30'
+    publisher: 汎瑋材料科技股份有限公司／公開資訊觀測站
+    quote_check: found
+    title: 汎瑋材料科技股份有限公司114年度年報
+    url: https://doc.twse.com.tw/pdf/2025_6967_20260529F04_20261023_192719.pdf
+  tw.6967#e_robotics:
+    locator: 第81頁，保護、緩衝材料系列應用表
+    published_date: '2026-04-30'
+    publisher: 汎瑋材料科技股份有限公司／公開資訊觀測站
+    quote_check: found
+    title: 汎瑋材料科技股份有限公司114年度年報
+    url: https://doc.twse.com.tw/pdf/2025_6967_20260529F04_20261023_192719.pdf
+  tw.6967#e_sub_chongqing:
+    locator: 第91頁，轉投資持股表；第95頁組織圖確認由昆山公司全資持有
+    published_date: '2026-04-30'
+    publisher: 汎瑋材料科技股份有限公司／公開資訊觀測站
+    quote_check: found
+    title: 汎瑋材料科技股份有限公司114年度年報
+    url: https://doc.twse.com.tw/pdf/2025_6967_20260529F04_20261023_192719.pdf
+  tw.6967#e_sub_kunshan:
+    locator: 第91頁，轉投資持股表；第95頁組織圖確認經TRANS-SUN INTERNATIONAL CO., LTD間接持有
+    published_date: '2026-04-30'
+    publisher: 汎瑋材料科技股份有限公司／公開資訊觀測站
+    quote_check: found
+    title: 汎瑋材料科技股份有限公司114年度年報
+    url: https://doc.twse.com.tw/pdf/2025_6967_20260529F04_20261023_192719.pdf
+  tw.6967#e_sub_malaysia:
+    locator: 第91頁持股表及第95頁關係企業組織圖、基本資料；英文名稱排版於不同表格略有差異
+    published_date: '2026-04-30'
+    publisher: 汎瑋材料科技股份有限公司／公開資訊觀測站
+    quote_check: found
+    title: 汎瑋材料科技股份有限公司114年度年報
+    url: https://doc.twse.com.tw/pdf/2025_6967_20260529F04_20261023_192719.pdf
+  tw.6967#e_sub_vietnam:
+    locator: 第91頁持股表及第95頁關係企業組織圖、基本資料
+    published_date: '2026-04-30'
+    publisher: 汎瑋材料科技股份有限公司／公開資訊觀測站
+    quote_check: found
+    title: 汎瑋材料科技股份有限公司114年度年報
+    url: https://doc.twse.com.tw/pdf/2025_6967_20260529F04_20261023_192719.pdf
+  tw.6967#e_thermal:
+    locator: 商品描述
+    published_date: null
+    publisher: 汎瑋材料科技股份有限公司
+    quote_check: found
+    title: 導電散熱EMI
+    url: https://www.trans-sun.com.tw/page/product/show.aspx?kind=98&lang=TW&num=73&page=1

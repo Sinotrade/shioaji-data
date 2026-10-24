@@ -8,12 +8,270 @@ industry:
   l0_code: '20'
   l0_name: 其他業
   l0_name_en: Others
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.environment
+  l2_name: 環保服務
+  l2_name_en: Environmental Services
+  l3: env.water
+  l3_name: 水處理
+  l3_name_en: Water Treatment
+primary_chain_position: not_applicable
+summary_short: 提供工業水處理藥劑、系統設計處理與技術服務。
+summary_long: 鉅邁以工業用水設計處理與水處理藥劑應用為主要業務，2025年冷卻水系統占營收53.68%，製程系統占18.15%，鍋爐水系統占11.26%。冷卻水處理劑用於抑制腐蝕、結垢與微生物，廢水處理劑涵蓋凝聚、脫水及重金屬去除，另提供逆滲透膜系統藥劑與技術服務。集團透過泰興及越南子公司經營水處理相關業務，並持有寬普數位科技70%股權；資料中心設計、建置與AI驅動IoT系統整合業務由寬普經營。
+segments:
+- evidence_ids:
+  - e02
+  id: cooling_water
+  name: 工業用水設計處理－冷卻水系統
+  period: '2025'
+  revenue_share_pct: 53.68
+- evidence_ids:
+  - e03
+  id: boiler_water
+  name: 工業用水設計處理－鍋爐水系統
+  period: '2025'
+  revenue_share_pct: 11.26
+- evidence_ids:
+  - e04
+  id: process_system
+  name: 工業用水設計處理－製程系統
+  period: '2025'
+  revenue_share_pct: 18.15
+- evidence_ids:
+  - e05
+  id: wastewater
+  name: 工業用水設計處理－廢水系統
+  period: '2025'
+  revenue_share_pct: 2.62
+- evidence_ids:
+  - e06
+  id: merchandise
+  name: 商品出售
+  period: '2025'
+  revenue_share_pct: 7.81
+- evidence_ids:
+  - e07
+  id: other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 6.51
+- evidence_ids:
+  - e08
+  id: sales_returns_allowances
+  name: 減：銷貨退回及折讓
+  period: '2025'
+  revenue_share_pct: -0.03
+main_theme: theme.data_center
+themes:
+- also: []
+  stage: operation
+  theme: theme.data_center
+  tier: downstream
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%的投資控股子公司
+    details:
+    - 直接持有100%的投資控股子公司
+    edge: e302930b3dd4e
+    evidence_level: primary
+    id: org.zimmite-holding
+    name: Zimmite Holding Company Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過鉅邁控股間接持有100%
+    details:
+    - 透過鉅邁控股間接持有100%
+    edge: e2b83de908894
+    evidence_level: primary
+    id: org.zimmite-international
+    name: Zimmite International Company Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過鉅邁控股及鉅邁國際間接持有100%
+    details:
+    - 透過鉅邁控股及鉅邁國際間接持有100%
+    edge: e4d2c06132da7
+    evidence_level: primary
+    id: org.zimmite-taixing
+    name: 鉅邁(泰興)工業服務有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%的越南水處理劑子公司
+    details:
+    - 直接持有100%的越南水處理劑子公司
+    edge: e3050fcd81f80
+    evidence_level: primary
+    id: org.zimmite-vietnam
+    name: Zimmite Vietnam Company Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有70%的網路設備工程子公司
+    details:
+    - 直接持有70%的網路設備工程子公司
+    edge: ef8c527796cfe
+    evidence_level: primary
+    id: org.zlabs
+    name: 寬普數位科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.zimmite.com
 tax_id: '12137902'
 incorporated: '1977-09-01'
 listed: '2012-12-28'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.8435#e02:
+    locator: 印刷第69頁，營業比重表；114年度冷卻水系統金額及百分比欄，單位新臺幣仟元
+    published_date: '2026-04-13'
+    publisher: 台灣鉅邁股份有限公司
+    quote_check: found
+    title: 114年年報
+    url: https://www.zimmite.com/tc/download/114year_annualReport.pdf
+  tw.8435#e03:
+    locator: 印刷第69頁，營業比重表；114年度鍋爐水系統金額及百分比欄
+    published_date: '2026-04-13'
+    publisher: 台灣鉅邁股份有限公司
+    quote_check: found
+    title: 114年年報
+    url: https://www.zimmite.com/tc/download/114year_annualReport.pdf
+  tw.8435#e04:
+    locator: 印刷第69頁，營業比重表；114年度製程系統金額及百分比欄
+    published_date: '2026-04-13'
+    publisher: 台灣鉅邁股份有限公司
+    quote_check: found
+    title: 114年年報
+    url: https://www.zimmite.com/tc/download/114year_annualReport.pdf
+  tw.8435#e05:
+    locator: 印刷第69頁，營業比重表；114年度廢水系統金額及百分比欄
+    published_date: '2026-04-13'
+    publisher: 台灣鉅邁股份有限公司
+    quote_check: found
+    title: 114年年報
+    url: https://www.zimmite.com/tc/download/114year_annualReport.pdf
+  tw.8435#e06:
+    locator: 印刷第69頁，營業比重表；114年度商品出售金額及百分比欄
+    published_date: '2026-04-13'
+    publisher: 台灣鉅邁股份有限公司
+    quote_check: found
+    title: 114年年報
+    url: https://www.zimmite.com/tc/download/114year_annualReport.pdf
+  tw.8435#e07:
+    locator: 印刷第69頁，營業比重表；114年度其他金額及百分比欄
+    published_date: '2026-04-13'
+    publisher: 台灣鉅邁股份有限公司
+    quote_check: found
+    title: 114年年報
+    url: https://www.zimmite.com/tc/download/114year_annualReport.pdf
+  tw.8435#e08:
+    locator: 印刷第69頁，營業比重表；114年度減項銷貨退回及折讓金額及百分比欄
+    published_date: '2026-04-13'
+    publisher: 台灣鉅邁股份有限公司
+    quote_check: found
+    title: 114年年報
+    url: https://www.zimmite.com/tc/download/114year_annualReport.pdf
+  tw.8435#e09:
+    locator: 冷卻水加藥處理目的
+    published_date: null
+    publisher: 台灣鉅邁股份有限公司
+    quote_check: found
+    title: 冷卻水處理劑
+    url: https://www.zimmite.com/tc/p2-business.asp?Class1_PKey=aB31aB31
+  tw.8435#e10:
+    locator: 印刷第69頁，公司目前之商品（服務）項目第2項
+    published_date: '2026-04-13'
+    publisher: 台灣鉅邁股份有限公司
+    quote_check: found
+    title: 114年年報
+    url: https://www.zimmite.com/tc/download/114year_annualReport.pdf
+  tw.8435#e11:
+    locator: 印刷第69頁，公司目前之商品（服務）項目第3項
+    published_date: '2026-04-13'
+    publisher: 台灣鉅邁股份有限公司
+    quote_check: found
+    title: 114年年報
+    url: https://www.zimmite.com/tc/download/114year_annualReport.pdf
+  tw.8435#e12:
+    locator: 高分子凝聚劑、脫水助劑及金屬捕集劑產品說明
+    published_date: null
+    publisher: 台灣鉅邁股份有限公司
+    quote_check: found
+    title: 廢水處理劑
+    url: https://www.zimmite.com/tc/p2-business.asp?Class1_PKey=aB34aB34
+  tw.8435#e13:
+    locator: RO逆滲透化學處理藥劑及相關技術服務介紹
+    published_date: null
+    publisher: 台灣鉅邁股份有限公司
+    quote_check: found
+    title: RO藥劑
+    url: https://www.zimmite.com/tc/p2-business.asp?Class1_PKey=aB31aB31aB36aB36
+  tw.8435#e14:
+    locator: 第14頁，合併財務報表編製主體表第1列；投資公司為台灣鉅邁股份有限公司，子公司為Zimmite Holding Company Limited，115.6.30持股100%
+    published_date: null
+    publisher: 台灣鉅邁股份有限公司及子公司
+    quote_check: not_found
+    title: 115年第二季合併財務報告
+    url: https://www.zimmite.com/DB/Upload/Investor/Finance/Cht/2026/115合併財報Q2.pdf
+  tw.8435#e15:
+    locator: 第14頁，合併財務報表編製主體表第2列；投資公司為台灣鉅邁股份有限公司，子公司為Zimmite Vietnam Company Limited，115.6.30持股100%
+    published_date: null
+    publisher: 台灣鉅邁股份有限公司及子公司
+    quote_check: not_found
+    title: 115年第二季合併財務報告
+    url: https://www.zimmite.com/DB/Upload/Investor/Finance/Cht/2026/115合併財報Q2.pdf
+  tw.8435#e16:
+    locator: 第14頁，合併財務報表編製主體表第3列；投資公司為台灣鉅邁股份有限公司，子公司為寬普數位科技股份有限公司，115.6.30持股70%
+    published_date: null
+    publisher: 台灣鉅邁股份有限公司及子公司
+    quote_check: not_found
+    title: 115年第二季合併財務報告
+    url: https://www.zimmite.com/DB/Upload/Investor/Finance/Cht/2026/115合併財報Q2.pdf
+  tw.8435#e17:
+    locator: 第14頁，合併財務報表編製主體表第4列；投資公司為Zimmite Holding Company Limited，子公司為Zimmite International Company Limited，115.6.30持股100%
+    published_date: null
+    publisher: 台灣鉅邁股份有限公司及子公司
+    quote_check: not_found
+    title: 115年第二季合併財務報告
+    url: https://www.zimmite.com/DB/Upload/Investor/Finance/Cht/2026/115合併財報Q2.pdf
+  tw.8435#e18:
+    locator: 第14頁，合併財務報表編製主體表第5列；投資公司為Zimmite International Company Limited，子公司為鉅邁(泰興)工業服務有限公司，115.6.30持股100%
+    published_date: null
+    publisher: 台灣鉅邁股份有限公司及子公司
+    quote_check: not_found
+    title: 115年第二季合併財務報告
+    url: https://www.zimmite.com/DB/Upload/Investor/Finance/Cht/2026/115合併財報Q2.pdf
+  tw.8435#e19:
+    locator: 印刷第92頁，進行併購之預期效益、可能風險及因應措施；前文指明新子公司為寬普
+    published_date: '2026-04-13'
+    publisher: 台灣鉅邁股份有限公司
+    quote_check: found
+    title: 114年年報
+    url: https://www.zimmite.com/tc/download/114year_annualReport.pdf

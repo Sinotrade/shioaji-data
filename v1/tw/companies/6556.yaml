@@ -8,12 +8,115 @@ industry:
   l0_code: '26'
   l0_name: 光電業
   l0_name_en: Optoelectronic
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.display
+  l2_name: 光電與顯示
+  l2_name_en: Optoelectronics & Displays
+  l3: disp.optics
+  l3_name: 光學與影像感測應用
+  l3_name_en: Optics & Imaging Applications
+primary_chain_position: midstream
+summary_short: 以監視攝影機設計製造及OEM、ODM代工為主要營收來源。
+summary_long: 勝品電通提供安全監控設備的設計製造服務，包含OEM、ODM及JDM模式，官網指出多數專案採JDM與ODM。2025年監視攝影機占營收98.12%，其他產品占1.88%，營收主要來自攝影機。產品另包含NVR網路影像錄影機，以及搭配攝影機的監控套件。公司在安全防衛產業供應鏈中屬於中游，從事設備研發及代工製造。泰勝電子為其直接子公司，Messoa Technologies Inc.則為透過泰勝電子控制的間接子公司。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_camera
+  name: 監視攝影機
+  period: '2025'
+  revenue_share_pct: 98.12
+- evidence_ids:
+  - e3
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 1.88
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過泰勝電子控制的間接子公司
+    details:
+    - 透過泰勝電子控制的間接子公司
+    edge: ec1ac7fd41cd6
+    evidence_level: primary
+    id: org.messoa-technologies
+    name: Messoa Technologies Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司，持股40.78%
+    details:
+    - 直接子公司，持股40.78%
+    edge: e4236f7bf41d3
+    evidence_level: primary
+    id: org.taisheng-electronics
+    name: 泰勝電子股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.topviewcorp.com
 tax_id: '53184695'
 incorporated: '2010-10-07'
 listed: '2017-10-31'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6556#e2:
+    locator: 第55頁，主要產品之營業比重；依序為113年度及114年度
+    published_date: '2026-04-20'
+    publisher: 勝品電通股份有限公司（FinancialFilings轉載）
+    quote_check: unreachable
+    title: 勝品電通股份有限公司114年度年報
+    url: https://financialfilings.com/filings/company-800/annual-report/2026/48954363/
+  tw.6556#e3:
+    locator: 第55頁，主要產品之營業比重；依序為113年度及114年度
+    published_date: '2026-04-20'
+    publisher: 勝品電通股份有限公司（FinancialFilings轉載）
+    quote_check: unreachable
+    title: 勝品電通股份有限公司114年度年報
+    url: https://financialfilings.com/filings/company-800/annual-report/2026/48954363/
+  tw.6556#e4:
+    locator: 服務項目及BUSINESS MODEL
+    published_date: null
+    publisher: 勝品電通股份有限公司
+    quote_check: found
+    title: Our Services
+    url: https://www.topviewcorp.com/posts/tw/our_services/
+  tw.6556#e5:
+    locator: NVR Kit
+    published_date: null
+    publisher: 勝品電通股份有限公司
+    quote_check: found
+    title: Products
+    url: https://www.topviewcorp.com/posts/en/solution/
+  tw.6556#e6:
+    locator: 第18頁，附註十一「子公司」及說明1
+    published_date: '2026-08-05'
+    publisher: 勝品電通股份有限公司
+    quote_check: found
+    title: 115年第2季合併財務報告
+    url: https://www.topviewcorp.com/mw/cufiles/files/%E5%8B%9D%E5%93%81115Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf
+  tw.6556#e7:
+    locator: 第55頁，產業上、中、下游之關聯性
+    published_date: '2026-04-20'
+    publisher: 勝品電通股份有限公司（FinancialFilings轉載）
+    quote_check: unreachable
+    title: 勝品電通股份有限公司114年度年報
+    url: https://financialfilings.com/filings/company-800/annual-report/2026/48954363/
+  tw.6556#e8:
+    locator: 第18頁，列入合併財務報告之子公司表，投資公司與子公司欄
+    published_date: '2026-08-05'
+    publisher: 勝品電通股份有限公司
+    quote_check: found
+    title: 115年第2季合併財務報告
+    url: https://www.topviewcorp.com/mw/cufiles/files/%E5%8B%9D%E5%93%81115Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf

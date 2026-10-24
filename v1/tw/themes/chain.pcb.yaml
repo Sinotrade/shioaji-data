@@ -308,6 +308,32 @@ members:
   stage: ccl
   tier: midstream
   stage_role: also
+- id: tw.3390
+  detail: 營收以軟性印刷電路板製造為主，另提供SMT組裝服務，深圳子公司亦從事軟板組裝加工。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.3390#e1
+  - tw.3390#e3
+  - tw.3390#e4
+  - tw.3390#e9
+  confidence: ai_cross_checked
+  source: classification
+  stage: board
+  tier: midstream
+  stage_role: primary
+- id: tw.3390
+  detail: 營收以軟性印刷電路板製造為主，另提供SMT組裝服務，深圳子公司亦從事軟板組裝加工。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.3390#e1
+  - tw.3390#e3
+  - tw.3390#e4
+  - tw.3390#e9
+  confidence: ai_cross_checked
+  source: classification
+  stage: assembly
+  tier: downstream
+  stage_role: also
 - id: tw.3485
   detail: IC載板製程設備占營收94.11%，主要供應ABF等載板濕製程設備。
   as_of: '2026-10-13'
@@ -736,6 +762,31 @@ members:
   stage: tools
   tier: upstream
   stage_role: primary
+- id: tw.6552
+  detail: 主要製造捲帶式高階覆晶薄膜IC基板，另開發Micro LED封裝載板，均屬載板製造。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.6552#e1
+  - tw.6552#e2
+  - tw.6552#e6
+  - tw.6552#e7
+  confidence: ai_cross_checked
+  source: classification
+  stage: board
+  tier: midstream
+  stage_role: primary
+- id: tw.6597
+  detail: 主業為DPC陶瓷電路板與陶瓷基板製造，最大營收應用為車用照明，屬電路板與載板製造階段。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.6597#e1
+  - tw.6597#e2
+  - tw.6597#e9
+  confidence: ai_cross_checked
+  source: classification
+  stage: board
+  tier: midstream
+  stage_role: primary
 - id: tw.6658
   detail: 最大營收為AI機器視覺設備，提供PCB與ABF載板檢測、量測及濕製程設備。
   as_of: '2026-10-20'
@@ -786,6 +837,30 @@ members:
   stage: tools
   tier: upstream
   stage_role: primary
+- id: tw.6835
+  detail: 軟性印刷電路板占營收90.29%為主，另提供軟板線材整合組件及LED車燈模組。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.6835#e2
+  - tw.6835#e3
+  - tw.6835#e4
+  confidence: ai_cross_checked
+  source: classification
+  stage: board
+  tier: midstream
+  stage_role: primary
+- id: tw.6835
+  detail: 軟性印刷電路板占營收90.29%為主，另提供軟板線材整合組件及LED車燈模組。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.6835#e2
+  - tw.6835#e3
+  - tw.6835#e4
+  confidence: ai_cross_checked
+  source: classification
+  stage: assembly
+  tier: downstream
+  stage_role: also
 - id: tw.6924
   detail: 主業為PCB設計銷售與供應鏈整合，生產委由合作板廠執行，屬通路服務，未符合所列階段。
   as_of: '2026-10-23'

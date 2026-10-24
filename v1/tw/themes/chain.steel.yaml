@@ -304,6 +304,28 @@ members:
   stage: downstream
   tier: downstream
   stage_role: primary
+- id: tw.2022
+  detail: 盤元、線材與鋼筋合計占營收56.27%，以中游鋼材為主，另有螺絲製造。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.2022#e2
+  - tw.2022#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: midstream
+  tier: midstream
+  stage_role: primary
+- id: tw.2022
+  detail: 盤元、線材與鋼筋合計占營收56.27%，以中游鋼材為主，另有螺絲製造。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.2022#e2
+  - tw.2022#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: downstream
+  tier: downstream
+  stage_role: also
 - id: tw.2023
   detail: 鍍面與烤漆鋼捲為主要營收來源，屬鋼材表面加工，另承作鋼構及天車工程。
   as_of: '2026-10-15'
@@ -328,6 +350,17 @@ members:
   stage: downstream
   tier: downstream
   stage_role: also
+- id: tw.2025
+  detail: 將熱軋不銹鋼捲加工為冷軋鋼捲，300系產品占營業比重98.92%。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.2025#e1
+  - tw.2025#e2
+  confidence: ai_cross_checked
+  source: classification
+  stage: midstream
+  tier: midstream
+  stage_role: primary
 - id: tw.2028
   detail: 鋼筋為最大營收來源，主要屬軋延與鋼材；另具煉鋼能力並銷售鋼胚，涵蓋上游。
   as_of: '2026-10-20'
@@ -415,6 +448,17 @@ members:
   stage: downstream
   tier: downstream
   stage_role: also
+- id: tw.2032
+  detail: 不鏽鋼板占銷售額99.93%，主要提供鋼材裁切、分條、表面加工與供應。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.2032#e2
+  - tw.2032#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: midstream
+  tier: midstream
+  stage_role: primary
 - id: tw.2033
   detail: 一般鋼線占營收65.94%，為最大業務；研究將鋼線、鋼索及預力鋼絞線加工列為中游。
   as_of: '2026-10-20'
@@ -487,6 +531,29 @@ members:
   stage: upstream
   tier: upstream
   stage_role: also
+- id: tw.2065
+  detail: 螺絲占營收99.33%，以建築及修繕用扣件為主，另有少量線材銷售。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.2065#e1
+  - tw.2065#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: downstream
+  tier: downstream
+  stage_role: primary
+- id: tw.2066
+  detail: 主要製造螺絲、螺栓、螺帽及沖壓與機械加工零件，屬下游金屬製品。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.2066#e1
+  - tw.2066#e2
+  - tw.2066#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: downstream
+  tier: downstream
+  stage_role: primary
 - id: tw.2069
   detail: 不鏽鋼捲板占營收99.94%，主營裁切、分條、表面處理及精密冷軋，屬軋延與鋼材階段。
   as_of: '2026-10-23'
@@ -567,6 +634,19 @@ members:
   stage: downstream
   tier: downstream
   stage_role: also
+- id: tw.5014
+  detail: 核心業務為不鏽鋼捲板材銷售，並提供裁剪、分條及拋光等鋼材加工服務。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.5014#e1
+  - tw.5014#e2
+  - tw.5014#e7
+  - tw.5014#e8
+  confidence: ai_cross_checked
+  source: classification
+  stage: midstream
+  tier: midstream
+  stage_role: primary
 - id: tw.5538
   detail: 不鏽鋼緊固件占營收66.32%，以螺絲螺帽等下游製品為主，另有占17.27%的線材業務。
   as_of: '2026-10-20'
@@ -635,6 +715,41 @@ members:
   stage: downstream
   tier: downstream
   stage_role: primary
+- id: tw.8930
+  detail: 輕鋼架占營收61.74%，另製造金屬天花板與吸音板，屬下游金屬建材。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.8930#e2
+  - tw.8930#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: downstream
+  tier: downstream
+  stage_role: primary
+- id: tw.911622
+  detail: 盤元占營收45.11%為最大來源，另製造退火線及占28.93%的下游緊固件。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.911622#e_products
+  - tw.911622#e_wire_rod
+  - tw.911622#e_fastener
+  confidence: ai_cross_checked
+  source: classification
+  stage: midstream
+  tier: midstream
+  stage_role: primary
+- id: tw.911622
+  detail: 盤元占營收45.11%為最大來源，另製造退火線及占28.93%的下游緊固件。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.911622#e_products
+  - tw.911622#e_wire_rod
+  - tw.911622#e_fastener
+  confidence: ai_cross_checked
+  source: classification
+  stage: downstream
+  tier: downstream
+  stage_role: also
 - id: tw.9958
   detail: 風電鋼構占營收89.05%，主要將鋼材加工製成風電基礎及建築鋼結構。
   as_of: '2026-10-15'

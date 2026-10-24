@@ -8,12 +8,156 @@ industry:
   l0_code: '31'
   l0_name: 其他電子業
   l0_name_en: Other Electronic
-primary_chain_position: unknown
+  l1: materials
+  l1_name: 原物料
+  l1_name_en: Materials
+  l2: mat.chemicals
+  l2_name: 化工
+  l2_name_en: Chemicals
+  l3: chem.petrochem
+  l3_name: 石化與塑膠原料
+  l3_name_en: Petrochemicals & Plastics
+chain: chain.petrochem
+chain_stage:
+  agreement: both
+  also: []
+  reason: 尼龍複合材料占營收82.18%，主業為工程塑膠複合材料製造，屬下游塑膠加工。
+  stage: downstream
+  stage_name: 塑膠、纖維與加工
+  tier: downstream
+primary_chain_position: downstream
+summary_short: 研發與製造尼龍、聚丙烯、聚碳酸酯及功能性工程塑膠複合材料。
+summary_long: 晉倫主要生產尼龍、聚丙烯、聚碳酸酯與功能性工程塑膠複合材料，提供纖維補強及阻燃規格，用於汽車零件、電腦週邊與工具五金塑膠件。2025年營收以尼龍複合材料82.18%為主，聚丙烯及聚碳酸酯分別占8.46%與7.14%。BIPEX防靜電與導電材料可用於FOUP、光罩盒及其他晶圓載具，電磁遮蔽材料則列為研發方向。集團關係包括英屬維京群島子公司、越南全資子公司及江蘇孫公司。
+segments:
+- evidence_ids:
+  - e3
+  id: seg_nylon
+  name: 尼龍複合材料
+  period: '2025'
+  revenue_share_pct: 82.18
+- evidence_ids:
+  - e3
+  id: seg_pp
+  name: 聚丙烯複合材料
+  period: '2025'
+  revenue_share_pct: 8.46
+- evidence_ids:
+  - e3
+  id: seg_pc
+  name: 聚碳酸酯複合材料
+  period: '2025'
+  revenue_share_pct: 7.14
+- evidence_ids:
+  - e3
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 2.23
+relations:
+  subsidiaries:
+  - as_of: '2025-08-12'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 越南直接持有100%之子公司
+    details:
+    - 越南直接持有100%之子公司
+    edge: e74263e69e329
+    evidence_level: primary
+    id: org.ginar-technical-plastic-vietnam
+    name: Ginar Technical Plastic (VietNam) Company Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-11-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 英屬維京群島子公司
+    details:
+    - 英屬維京群島子公司
+    edge: ef806d4053bc5
+    evidence_level: primary
+    id: org.ginar-technology-bvi
+    name: GINAR TECHNOLOGY(B.V.I.) CO.,LTD
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-07-11'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 江蘇孫公司，屬間接子公司
+    details:
+    - 江蘇孫公司，屬間接子公司
+    edge: eee237ab39e26
+    evidence_level: primary
+    id: org.jiangsu-ginar-plastic-technology
+    name: 江蘇晉倫塑料科技有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.ginar.com.tw
 tax_id: '12390496'
 incorporated: '1982-07-15'
 listed: '2002-02-25'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6151#e2:
+    locator: 一一三年營業報告／技術及研究發展狀況
+    published_date: null
+    publisher: 晉倫科技股份有限公司
+    quote_check: found
+    title: 投資人專區－致股東報告書
+    url: https://www.ginar.com.tw/zh-tw/a2/%E6%8A%95%E8%B3%87%E4%BA%BA%E5%B0%88%E5%8D%80.html
+  tw.6151#e3:
+    locator: 基本資料／營收比重
+    published_date: null
+    publisher: 富邦證券／MoneyDJ
+    quote_check: found
+    title: 個股基本資料－6151 晉倫
+    url: https://fubon-ebrokerdj.fbs.com.tw/z/zc/zca/zca_6151.djhtm
+  tw.6151#e4:
+    locator: Our Products
+    published_date: null
+    publisher: 晉倫科技股份有限公司
+    quote_check: found
+    title: Engineering Plastics 工程塑料 - Ginar Technology 晉倫科技
+    url: https://www.ginar.com.tw/
+  tw.6151#e5:
+    locator: 半導體晶圓載具應用說明
+    published_date: null
+    publisher: 晉倫科技股份有限公司
+    quote_check: found
+    title: ESD & Conductive Compounds
+    url: https://www.ginar.com.tw/en/product-736003/ESD-Conductive-Compounds.html
+  tw.6151#e6:
+    locator: 一一三年營業報告／技術及研究發展狀況
+    published_date: null
+    publisher: 晉倫科技股份有限公司
+    quote_check: found
+    title: 投資人專區－致股東報告書
+    url: https://www.ginar.com.tw/zh-tw/a2/%E6%8A%95%E8%B3%87%E4%BA%BA%E5%B0%88%E5%8D%80.html
+  tw.6151#e7:
+    locator: 公告第2項第1、2款
+    published_date: '2025-08-12'
+    publisher: 公開資訊觀測站重大訊息公告／MoneyDJ轉載
+    quote_check: found
+    title: 晉倫 本公司依公開發行公司資金貸與及背書保證處理準則第二十二條第一項第一款公告
+    url: https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=070d9e83-5f7e-4fe7-865e-a76195c9d774
+  tw.6151#e8:
+    locator: 公告標題
+    published_date: '2025-11-13'
+    publisher: 晉倫重大訊息公告／鉅亨網轉載
+    quote_check: found
+    title: 晉倫：代子公司GINAR TECHNOLOGY(B.V.I.) CO.,LTD公告董事會通過盈餘匯回晉倫科技股份有限公司
+    url: https://news.cnyes.com/news/id/6236493
+  tw.6151#e9:
+    locator: 公告標題
+    published_date: '2025-07-11'
+    publisher: 晉倫重大訊息公告／鉅亨網轉載
+    quote_check: found
+    title: 晉倫：代孫公司江蘇晉倫塑料科技有限公司公告法人股東指派董監事名單
+    url: https://news.cnyes.com/news/id/6061734

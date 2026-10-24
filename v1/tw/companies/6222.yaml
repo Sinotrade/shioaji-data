@@ -8,12 +8,109 @@ industry:
   l0_code: '26'
   l0_name: 光電業
   l0_name_en: Optoelectronic
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.display
+  l2_name: 光電與顯示
+  l2_name_en: Optoelectronics & Displays
+  l3: disp.led
+  l3_name: LED 與 Micro／Mini LED
+  l3_name_en: LED & Micro/Mini LED
+primary_chain_position: downstream
+summary_short: 主要銷售商用與家用照明設備，另經營小家電貿易。
+summary_long: 立軒主要從事照明設備銷售，產品涵蓋商用與一般家用LED照明，並經營小家電貿易。照明產品包括工作燈、天井燈及戶外燈等燈具，以及LED燈泡、PL燈及鹵素燈等光源。2025年照明設備營收為新臺幣276.7萬元，占全年營收100%，同年度銷售地區全部為國內。公司2023至2025年的銷售均集中於國內市場。截至2026年3月底，持有邦丞電子科技99%股權；該公司已於2025年決議解散，年報記載清算程序仍在進行。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_lighting
+  name: 照明設備
+  period: '2025'
+  revenue_share_pct: 100
+relations:
+  subsidiaries:
+  - as_of: '2026-05-05'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股99%的子公司，已決議解散、清算中
+    details:
+    - 持股99%的子公司，已決議解散、清算中
+    edge: ec76afdb433ab
+    evidence_level: primary
+    id: org.邦丞電子科技-股-公司
+    name: 邦丞電子科技(股)公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.sotac.com.tw/web/index/index.jsp?lang=tw
 tax_id: '22182927'
 incorporated: '1986-08-15'
 listed: '2003-01-09'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6222#e1:
+    locator: 印刷第51頁／PDF第55頁／營業比重表；114年度照明設備列：營業收入2,767仟元、營業比重100.00%
+    published_date: '2026-05-05'
+    publisher: 立軒開發建設股份有限公司
+    quote_check: not_found
+    title: 立軒開發建設股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=6222&colorchg=1&filename=2025_6222_20260602F04.pdf&kind=F&step=9
+  tw.6222#e2:
+    locator: 印刷第54頁／PDF第58頁／主要產品之銷售地區
+    published_date: '2026-05-05'
+    publisher: 立軒開發建設股份有限公司
+    quote_check: not_found
+    title: 立軒開發建設股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=6222&colorchg=1&filename=2025_6222_20260602F04.pdf&kind=F&step=9
+  tw.6222#e3:
+    locator: 印刷第51頁／PDF第55頁／公司目前之商品項目／燈具類
+    published_date: '2026-05-05'
+    publisher: 立軒開發建設股份有限公司
+    quote_check: not_found
+    title: 立軒開發建設股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=6222&colorchg=1&filename=2025_6222_20260602F04.pdf&kind=F&step=9
+  tw.6222#e4:
+    locator: 印刷第51頁／PDF第55頁／公司目前之商品項目／光源類
+    published_date: '2026-05-05'
+    publisher: 立軒開發建設股份有限公司
+    quote_check: not_found
+    title: 立軒開發建設股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=6222&colorchg=1&filename=2025_6222_20260602F04.pdf&kind=F&step=9
+  tw.6222#e5:
+    locator: 印刷第54頁／PDF第58頁／技術及研發概況
+    published_date: '2026-05-05'
+    publisher: 立軒開發建設股份有限公司
+    quote_check: not_found
+    title: 立軒開發建設股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=6222&colorchg=1&filename=2025_6222_20260602F04.pdf&kind=F&step=9
+  tw.6222#e6:
+    locator: 印刷第54頁／PDF第58頁／主要產品之銷售地區表；112、113、114年度國內銷售均100%，114年度2,767仟元
+    published_date: '2026-05-05'
+    publisher: 立軒開發建設股份有限公司
+    quote_check: not_found
+    title: 立軒開發建設股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=6222&colorchg=1&filename=2025_6222_20260602F04.pdf&kind=F&step=9
+  tw.6222#e7:
+    locator: 印刷第43頁／PDF第47頁／轉投資持股表；截至115年3月31日，本公司持股比例99%、綜合持股比例99%
+    published_date: '2026-05-05'
+    publisher: 立軒開發建設股份有限公司
+    quote_check: not_found
+    title: 立軒開發建設股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=6222&colorchg=1&filename=2025_6222_20260602F04.pdf&kind=F&step=9
+  tw.6222#e8:
+    locator: 印刷第63頁／PDF第67頁／最近年度轉投資政策／邦丞電子科技說明
+    published_date: '2026-05-05'
+    publisher: 立軒開發建設股份有限公司
+    quote_check: not_found
+    title: 立軒開發建設股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=6222&colorchg=1&filename=2025_6222_20260602F04.pdf&kind=F&step=9
+  tw.6222#e9:
+    locator: 印刷第63頁／PDF第67頁／最近年度轉投資政策／邦丞電子科技解散及清算狀態
+    published_date: '2026-05-05'
+    publisher: 立軒開發建設股份有限公司
+    quote_check: not_found
+    title: 立軒開發建設股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=6222&colorchg=1&filename=2025_6222_20260602F04.pdf&kind=F&step=9

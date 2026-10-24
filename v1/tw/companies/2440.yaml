@@ -8,12 +8,177 @@ industry:
   l0_code: '28'
   l0_name: 電子零組件業
   l0_name_en: Electronic Parts and Components
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.electrical
+  l2_name: 電機與重電
+  l2_name_en: Electrical Equipment & Power Grid
+  l3: elec.wire_cable
+  l3_name: 電線電纜
+  l3_name_en: Wires & Cables
+primary_chain_position: not_applicable
+summary_short: 以絞銅線及資訊傳輸線材為主要業務，絞銅線占營收逾九成。
+summary_long: 太空梭集團以絞銅線及資訊傳輸線材為主要業務，2025年合併營收中，絞銅線占92.05%，3C產品用線占7.95%，3C連接組裝產品占0%。銅線產品包括裸銅線、鍍錫線及其絞線，資訊傳輸線材涵蓋USB、HDMI與CAT.6等系列。集團透過薩摩亞及香港投資子公司持有東莞生產子公司，其中東莞紅翔金屬導體從事銅線生產與銷售，東莞厚街溪頭太空梭電線從事資訊傳輸線材生產與銷售。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_copper
+  name: 絞銅線
+  period: '2025'
+  revenue_share_pct: 92.05
+- evidence_ids:
+  - e3
+  id: seg_3c_wire
+  name: 3C產品用線
+  period: '2025'
+  revenue_share_pct: 7.95
+- evidence_ids:
+  - e4
+  id: seg_assembly
+  name: 3C連接組裝產品
+  period: '2025'
+  revenue_share_pct: 0
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 薩摩亞投資子公司
+    details:
+    - 薩摩亞投資子公司
+    edge: e8378c3861ebe
+    evidence_level: primary
+    id: org.space-shuttle-hi-tech-co-ltd-samoa
+    name: SPACE SHUTTLE HI-TECH CO., LTD.(SAMOA)
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過香港子公司持有的資訊傳輸線材生產子公司
+    details:
+    - 透過香港子公司持有的資訊傳輸線材生產子公司
+    edge: e51a77eacde35
+    evidence_level: primary
+    id: org.東莞厚街溪頭太空梭電線有限公司
+    name: 東莞厚街溪頭太空梭電線有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過薩摩亞子公司持有的銅線生產子公司
+    details:
+    - 透過薩摩亞子公司持有的銅線生產子公司
+    edge: e8a15f97423c2
+    evidence_level: primary
+    id: org.東莞紅翔金屬導體有限公司
+    name: 東莞紅翔金屬導體有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 香港投資及買賣子公司
+    details:
+    - 香港投資及買賣子公司
+    edge: e1d23bd6d11bb
+    evidence_level: primary
+    id: org.香港太空梭電線有限公司
+    name: 香港太空梭電線有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.spaces.com.tw
 tax_id: 01887370
 incorporated: '1985-10-16'
 listed: '2000-11-10'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2440#e1:
+    locator: 印刷第43頁，主要產品營收金額及營業比重表；單位新台幣仟元
+    published_date: null
+    publisher: 太空梭高傳真資訊科技股份有限公司
+    quote_check: found
+    title: 太空梭114年度年報
+    url: https://webbuilder2.asiannet.com/ftp/1348/115_AnnualReports.pdf
+  tw.2440#e10:
+    locator: 第14頁，合併財務報表編製主體表
+    published_date: '2026-08-12'
+    publisher: 太空梭高傳真資訊科技股份有限公司
+    quote_check: found
+    title: 115年第二季合併財務報表
+    url: https://www.spaces.com.tw/files/115Q2%20With%20subsidiaries.pdf
+  tw.2440#e11:
+    locator: 第14頁，合併財務報表編製主體表
+    published_date: '2026-08-12'
+    publisher: 太空梭高傳真資訊科技股份有限公司
+    quote_check: found
+    title: 115年第二季合併財務報表
+    url: https://www.spaces.com.tw/files/115Q2%20With%20subsidiaries.pdf
+  tw.2440#e2:
+    locator: 第11頁，主要產品介紹（一）
+    published_date: '2025-11-28'
+    publisher: 太空梭高傳真資訊科技股份有限公司
+    quote_check: found
+    title: 2025年第三季法人說明會簡報
+    url: https://www.spaces.com.tw/files/2025%20Results%20cht.pdf
+  tw.2440#e3:
+    locator: 印刷第43頁，主要產品營收金額及營業比重表；單位新台幣仟元
+    published_date: null
+    publisher: 太空梭高傳真資訊科技股份有限公司
+    quote_check: found
+    title: 太空梭114年度年報
+    url: https://webbuilder2.asiannet.com/ftp/1348/115_AnnualReports.pdf
+  tw.2440#e4:
+    locator: 印刷第43頁，主要產品營收金額及營業比重表；單位新台幣仟元
+    published_date: null
+    publisher: 太空梭高傳真資訊科技股份有限公司
+    quote_check: found
+    title: 太空梭114年度年報
+    url: https://webbuilder2.asiannet.com/ftp/1348/115_AnnualReports.pdf
+  tw.2440#e5:
+    locator: 產品介紹，產品標題
+    published_date: null
+    publisher: 太空梭高傳真資訊科技股份有限公司
+    quote_check: found
+    title: USB 3.1 Cable (4Coaxial)
+    url: https://www.spaces.com.tw/zh-tw/product-470151/USB-3-1-Cable-4Coaxial.html
+  tw.2440#e6:
+    locator: 產品介紹，產品標題
+    published_date: null
+    publisher: 太空梭高傳真資訊科技股份有限公司
+    quote_check: found
+    title: HDMI Cable
+    url: https://www.spaces.com.tw/zh-tw/product-147587/HDMI-Cable.html
+  tw.2440#e7:
+    locator: 產品介紹，產品標題
+    published_date: null
+    publisher: 太空梭高傳真資訊科技股份有限公司
+    quote_check: found
+    title: CAT.6 Cable
+    url: https://www.spaces.com.tw/zh-tw/product-147930/CAT-6-Cable.html
+  tw.2440#e8:
+    locator: 第14頁，合併財務報表編製主體表
+    published_date: '2026-08-12'
+    publisher: 太空梭高傳真資訊科技股份有限公司
+    quote_check: found
+    title: 115年第二季合併財務報表
+    url: https://www.spaces.com.tw/files/115Q2%20With%20subsidiaries.pdf
+  tw.2440#e9:
+    locator: 第14頁，合併財務報表編製主體表
+    published_date: '2026-08-12'
+    publisher: 太空梭高傳真資訊科技股份有限公司
+    quote_check: found
+    title: 115年第二季合併財務報表
+    url: https://www.spaces.com.tw/files/115Q2%20With%20subsidiaries.pdf

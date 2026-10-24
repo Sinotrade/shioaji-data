@@ -8,12 +8,92 @@ industry:
   l0_code: '02'
   l0_name: 食品工業
   l0_name_en: Food
-primary_chain_position: unknown
+  l1: consumer
+  l1_name: 消費
+  l1_name_en: Consumer
+  l2: cons.staples
+  l2_name: 民生消費
+  l2_name_en: Consumer Staples
+  l3: food.processing
+  l3_name: 食品加工
+  l3_name_en: Food Processing
+chain: chain.biotech
+chain_stage:
+  agreement: both
+  also:
+  - stage: rnd
+    stage_name: 研發與原料
+    tier: upstream
+  reason: 以液劑、果凍等保健食品OEM／ODM代工為主，另提供配方設計與整合研發服務。
+  stage: manufacturing
+  stage_name: 製造與代工
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 以液劑、果凍與晶凍類保健食品的研發及OEM／ODM代工為主。
+summary_long: 漢田生技主要從事機能性殺菌軟袋保健食品的研發與OEM／ODM代工，產品劑型涵蓋液劑、果凍與晶凍。其顧問式研發服務涵蓋產品策略企劃、原料導入、配方設計、風味調整與商業化量產評估，提供整合式產品開發服務。公司另有超微奈米珍珠粉產品。2026年8月法說簡報的產品組合圖列示保健飲品97%，粉包、膠囊及原料等其他項目3%；該圖未明示統計期間，故不將其認定為特定年度營收占比。
+relations:
+  subsidiaries:
+  - as_of: '2025-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 歷史子公司；2025年3月底持股80.4%，當時已決議解散清算
+    details:
+    - 歷史子公司；2025年3月底持股80.4%，當時已決議解散清算
+    edge: ed263ad8289ce
+    evidence_level: primary
+    id: org.han-chi-technology
+    name: 漢碁科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.htbios.com/
 tax_id: '28814153'
 incorporated: '2007-10-22'
 listed: '2024-09-26'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1294#e2:
+    locator: 公司介紹
+    published_date: null
+    publisher: 漢田生技股份有限公司
+    quote_check: found
+    title: 關於漢田
+    url: https://www.htbios.com/about/
+  tw.1294#e3:
+    locator: 第6頁，PRODUCT MIX
+    published_date: '2026-08-25'
+    publisher: 漢田生技股份有限公司
+    quote_check: found
+    title: Hantech Bio-Technology (1294 TT) Investor Presentation
+    url: https://www.htbios.com/wp-content/uploads/115%E5%B9%B408%E6%9C%8825%E6%97%A5%E7%B0%A1%E5%A0%B1%E6%AA%94%EF%BC%88%E8%8B%B1%E6%96%87%E7%89%88%EF%BC%89.pdf
+  tw.1294#e4:
+    locator: 第7頁，產品與顧問式OEM／ODM服務
+    published_date: '2026-08-25'
+    publisher: 漢田生技股份有限公司
+    quote_check: found
+    title: Hantech Bio-Technology (1294 TT) Investor Presentation
+    url: https://www.htbios.com/wp-content/uploads/115%E5%B9%B408%E6%9C%8825%E6%97%A5%E7%B0%A1%E5%A0%B1%E6%AA%94%EF%BC%88%E8%8B%B1%E6%96%87%E7%89%88%EF%BC%89.pdf
+  tw.1294#e5:
+    locator: 漢田研發團隊能做什麼
+    published_date: null
+    publisher: 漢田生技股份有限公司
+    quote_check: found
+    title: 產品研發服務
+    url: https://www.htbios.com/rnd-services/product-development/
+  tw.1294#e6:
+    locator: 第18頁，附註十、子公司
+    published_date: '2025-05-08'
+    publisher: 漢田生技股份有限公司
+    quote_check: unreachable
+    title: 民國114及113年第1季合併財務報告暨會計師核閱報告
+    url: https://www.htbios.com/s/114Q1_-w334.pdf
+  tw.1294#e7:
+    locator: 第18頁，附註十、註1
+    published_date: '2025-05-08'
+    publisher: 漢田生技股份有限公司
+    quote_check: unreachable
+    title: 民國114及113年第1季合併財務報告暨會計師核閱報告
+    url: https://www.htbios.com/s/114Q1_-w334.pdf

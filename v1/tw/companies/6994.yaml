@@ -8,12 +8,191 @@ industry:
   l0_code: '35'
   l0_name: 綠能環保
   l0_name_en: Green Energy and Environmental Services
-primary_chain_position: unknown
+  l1: energy
+  l1_name: 能源
+  l1_name_en: Energy & Utilities
+  l2: energy.green
+  l2_name: 綠能
+  l2_name_en: Renewable Energy
+  l3: green.storage
+  l3_name: 儲能系統
+  l3_name_en: Energy Storage Systems
+primary_chain_position: not_applicable
+summary_short: 提供儲能工程與維運、綠電交易、節能工程及能源資訊服務。
+summary_long: 富威電力提供儲能系統統包建置與維運、再生能源電力交易、節能績效保證工程及綠能管理資訊服務。2025年度合併營收約49.90億元，其中工程收入約32.96億元、售電收入約13.06億元、服務收入約3.88億元，工程為最大收入來源。綠電業務提供再生能源電力交易服務，節能業務提供節能績效保證工程，資訊業務建置綠能管理系統。依2025年底合併財報，森崴能源為母公司，正崴精密工業為最終母公司；直接子公司包括旭威認證、惠捷能源及智電系統。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_engineering
+  name: 工程收入
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e1
+  id: seg_electricity
+  name: 售電收入
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e1
+  id: seg_services
+  name: 服務收入
+  period: '2025'
+  revenue_share_pct: null
+main_theme: theme.power_grid
+themes:
+- also: []
+  stage: engineering
+  theme: theme.power_grid
+  tier: downstream
+relations:
+  parents:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 最終母公司
+    details:
+    - 最終母公司
+    edge: e0344d4c826cd
+    evidence_level: primary
+    id: tw.2392
+    name: 正崴
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 母公司
+    details:
+    - 母公司
+    edge: ee561bfe701b8
+    evidence_level: primary
+    id: tw.6806
+    name: 森崴能源股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: e75605cc95290
+    evidence_level: primary
+    id: org.惠捷能源股份有限公司
+    name: 惠捷能源股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: e31b55dfd5202
+    evidence_level: primary
+    id: org.旭威認證股份有限公司
+    name: 旭威認證股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: e1b7e158f3677
+    evidence_level: primary
+    id: org.智電系統股份有限公司
+    name: 智電系統股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.fwp.com.tw
 tax_id: '82921412'
 incorporated: '2019-06-28'
 listed: '2025-01-15'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6994#e1:
+    locator: 第44頁，附註六（二十），客戶合約收入之細分；欄位依序為工程、服務、售電及合計
+    published_date: '2026-03-03'
+    publisher: 富威電力股份有限公司
+    quote_check: unreachable
+    title: 富威電力股份有限公司及子公司民國114年度及113年度合併財務報告
+    url: https://platform.fwp.com.tw/fileserver/homepageFiles/investor/index/finance/2025/2025Q4Merge.pdf
+  tw.6994#e10:
+    locator: 資訊服務介紹首段
+    published_date: null
+    publisher: 富威電力股份有限公司
+    quote_check: unreachable
+    title: 富威電力－資訊服務
+    url: https://www.fwp.com.tw/Services/ITService
+  tw.6994#e2:
+    locator: 第54頁，附註七（二），關係人之名稱及關係
+    published_date: '2026-03-03'
+    publisher: 富威電力股份有限公司
+    quote_check: unreachable
+    title: 富威電力股份有限公司及子公司民國114年度及113年度合併財務報告
+    url: https://platform.fwp.com.tw/fileserver/homepageFiles/investor/index/finance/2025/2025Q4Merge.pdf
+  tw.6994#e3:
+    locator: 第54頁，附註七（二），關係人之名稱及關係
+    published_date: '2026-03-03'
+    publisher: 富威電力股份有限公司
+    quote_check: unreachable
+    title: 富威電力股份有限公司及子公司民國114年度及113年度合併財務報告
+    url: https://platform.fwp.com.tw/fileserver/homepageFiles/investor/index/finance/2025/2025Q4Merge.pdf
+  tw.6994#e4:
+    locator: 第18頁，附註四（三）2，列入合併財務報告之子公司表
+    published_date: '2026-03-03'
+    publisher: 富威電力股份有限公司
+    quote_check: unreachable
+    title: 富威電力股份有限公司及子公司民國114年度及113年度合併財務報告
+    url: https://platform.fwp.com.tw/fileserver/homepageFiles/investor/index/finance/2025/2025Q4Merge.pdf
+  tw.6994#e5:
+    locator: 第18頁，附註四（三）2，列入合併財務報告之子公司表
+    published_date: '2026-03-03'
+    publisher: 富威電力股份有限公司
+    quote_check: unreachable
+    title: 富威電力股份有限公司及子公司民國114年度及113年度合併財務報告
+    url: https://platform.fwp.com.tw/fileserver/homepageFiles/investor/index/finance/2025/2025Q4Merge.pdf
+  tw.6994#e6:
+    locator: 第18頁，附註四（三）2，列入合併財務報告之子公司表
+    published_date: '2026-03-03'
+    publisher: 富威電力股份有限公司
+    quote_check: unreachable
+    title: 富威電力股份有限公司及子公司民國114年度及113年度合併財務報告
+    url: https://platform.fwp.com.tw/fileserver/homepageFiles/investor/index/finance/2025/2025Q4Merge.pdf
+  tw.6994#e7:
+    locator: 儲能服務介紹首段
+    published_date: null
+    publisher: 富威電力股份有限公司
+    quote_check: unreachable
+    title: 富威電力－儲能服務
+    url: https://www.fwp.com.tw/Services/EnergyStorage
+  tw.6994#e8:
+    locator: 綠電交易介紹首段
+    published_date: null
+    publisher: 富威電力股份有限公司
+    quote_check: unreachable
+    title: 富威電力－綠電交易
+    url: https://www.fwp.com.tw/Services/RenewableEnergy
+  tw.6994#e9:
+    locator: 節能服務介紹首段
+    published_date: null
+    publisher: 富威電力股份有限公司
+    quote_check: unreachable
+    title: 富威電力－節能服務
+    url: https://www.fwp.com.tw/Services/EnergySaving

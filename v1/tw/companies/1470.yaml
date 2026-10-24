@@ -8,12 +8,123 @@ industry:
   l0_code: '04'
   l0_name: 紡織纖維
   l0_name_en: Textiles
-primary_chain_position: unknown
+  l1: materials
+  l1_name: 原物料
+  l1_name_en: Materials
+  l2: mat.other
+  l2_name: 其他原物料
+  l2_name_en: Other Materials
+  l3: matl.textile_fiber
+  l3_name: 紡織纖維與機能布料
+  l3_name_en: Textiles, Fibers & Functional Fabrics
+chain: chain.textile
+chain_stage:
+  agreement: both
+  also: []
+  reason: 布疋買賣占營收82.28%，染整代工占16.34%，主要從事針織布織造、染整及銷售。
+  stage: fabric
+  stage_name: 織布與染整
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 以機能性針織布織造、染整加工及成品布銷售為主要收入來源。
+summary_long: 大統新創以經編與圓編針織布的織造、染整及銷售為主。2025年營收中，布疋買賣占82.28%，染整代工占16.34%，售電收入占1.38%。主要布料系列包括美麗諾羊毛混紡Janerino®、機械彈BulkyStretch™、纖維素纖維混紡Syncellux®及禦寒刷毛Tonissimo®。其中BulkyStretch™採用B.S.Y.紗線，提供吸濕快乾布料。全資子公司統發綠能經營太陽能電廠，2025年售電收入為1,106萬元。
+segments:
+- evidence_ids:
+  - e2
+  id: fabric_sales
+  name: 布疋買賣
+  period: '2025'
+  revenue_share_pct: 82.28
+- evidence_ids:
+  - e2
+  id: dyeing_finishing
+  name: 染整代工
+  period: '2025'
+  revenue_share_pct: 16.34
+- evidence_ids:
+  - e2
+  - e4
+  id: solar_power
+  name: 售電收入
+  period: '2025'
+  revenue_share_pct: 1.38
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股100%的太陽能發電子公司
+    details:
+    - 持股100%的太陽能發電子公司
+    edge: e6e7bf88eea9f
+    evidence_level: primary
+    id: org.tong-fa-green-energy
+    name: 統發綠能股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.evertex.tw
 tax_id: '22267777'
 incorporated: '1986-12-09'
 listed: '1999-05-21'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1470#e1:
+    locator: 第55頁，營運概況／業務範圍
+    published_date: '2026-05-28'
+    publisher: 大統新創股份有限公司
+    quote_check: found
+    title: 大統新創股份有限公司114年度年報
+    url: https://www.evertex.tw/uploads/images/acc/114%E5%B9%B4%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
+  tw.1470#e2:
+    locator: 第55頁，營業比重；欄位依序為114、113、112年度金額及比率
+    published_date: '2026-05-28'
+    publisher: 大統新創股份有限公司
+    quote_check: found
+    title: 大統新創股份有限公司114年度年報
+    url: https://www.evertex.tw/uploads/images/acc/114%E5%B9%B4%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
+  tw.1470#e3:
+    locator: 第70頁，最近年度轉投資政策表
+    published_date: '2026-05-28'
+    publisher: 大統新創股份有限公司
+    quote_check: found
+    title: 大統新創股份有限公司114年度年報
+    url: https://www.evertex.tw/uploads/images/acc/114%E5%B9%B4%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
+  tw.1470#e4:
+    locator: 第70頁，統發綠能營運說明
+    published_date: '2026-05-28'
+    publisher: 大統新創股份有限公司
+    quote_check: found
+    title: 大統新創股份有限公司114年度年報
+    url: https://www.evertex.tw/uploads/images/acc/114%E5%B9%B4%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
+  tw.1470#e5:
+    locator: 什麼是Janerino®
+    published_date: null
+    publisher: 大統新創股份有限公司
+    quote_check: found
+    title: 美麗諾羊毛混紡布料－Janerino®
+    url: https://www.evertex.tw/tw/product/detail/%E7%BE%8E%E9%BA%97%E8%AB%BE%E7%BE%8A%E6%AF%9B%E6%B7%B7%E7%B4%A1%E5%B8%83%E6%96%99-Janerino
+  tw.1470#e6:
+    locator: 什麼是BulkyStretch™
+    published_date: null
+    publisher: 大統新創股份有限公司
+    quote_check: found
+    title: 高機能性機械彈布料－BulkyStretch™
+    url: https://www.evertex.tw/tw/product/detail/%E9%AB%98%E6%A9%9F%E8%83%BD%E6%80%A7%E6%A9%9F%E6%A2%B0%E5%BD%88%E5%B8%83%E6%96%99-BulkyStretch
+  tw.1470#e7:
+    locator: 什麼是Syncellux®
+    published_date: null
+    publisher: 大統新創股份有限公司
+    quote_check: found
+    title: 纖維素纖維混紡布料－Syncellux®
+    url: https://www.evertex.tw/tw/product/detail/%E7%BA%96%E7%B6%AD%E7%B4%A0%E7%BA%96%E7%B6%AD%E6%B7%B7%E7%B4%A1%E5%B8%83%E6%96%99-Syncellux
+  tw.1470#e8:
+    locator: 什麼是Tonissimo®
+    published_date: null
+    publisher: 大統新創股份有限公司
+    quote_check: found
+    title: 高機能禦寒刷毛布料－Tonissimo®
+    url: https://www.evertex.tw/tw/product/detail/%E9%AB%98%E6%A9%9F%E8%83%BD%E7%A6%A6%E5%AF%92%E5%88%B7%E6%AF%9B%E5%B8%83%E6%96%99-Tonissimo

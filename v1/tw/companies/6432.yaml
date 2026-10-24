@@ -8,12 +8,260 @@ industry:
   l0_code: '28'
   l0_name: 電子零組件業
   l0_name_en: Electronic Parts and Components
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.passive
+  l3_name: 被動元件
+  l3_name_en: Passive Components
+primary_chain_position: midstream
+summary_short: 以自有品牌電感及保護元件、半導體電子零件代理銷售為主要業務。
+summary_long: 今展科以自有品牌電感與電子零件代理銷售為主要業務。2025年度合併營收中，電感占47.90%，保護元件占25.45%，其他占26.65%。產品涵蓋大電流模壓式電感、過壓與過流保護元件，以及微控制器與記憶體等半導體零件。公司亦揭露銅鐵共燒電感開發成果，並研發Molding TLVR電感，涉及AI伺服器供電應用。集團透過廣州市今耀電子及蘇州今鵬先進科技從事電感等被動元件製造與買賣，另設電子材料貿易子公司。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_inductors
+  name: 電感
+  period: '2025'
+  revenue_share_pct: 47.9
+- evidence_ids:
+  - e2
+  id: seg_protection
+  name: 保護元件
+  period: '2025'
+  revenue_share_pct: 25.45
+- evidence_ids:
+  - e3
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 26.65
+main_theme: theme.ai_server
+themes:
+- also: []
+  stage: components
+  theme: theme.ai_server
+  tier: midstream
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%的投資子公司
+    details:
+    - 直接持有100%的投資子公司
+    edge: e95ee59252873
+    evidence_level: primary
+    id: org.arlitech-corp
+    name: Arlitech Corp.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過Arlitech Corp.間接持有的子公司
+    details:
+    - 透過Arlitech Corp.間接持有的子公司
+    edge: ecf576344e86c
+    evidence_level: primary
+    id: org.arlitech-hk
+    name: Arlitech (HK) Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過香港子公司間接持有的被動元件製造公司
+    details:
+    - 透過香港子公司間接持有的被動元件製造公司
+    edge: ec908b3f37d6b
+    evidence_level: primary
+    id: org.guangzhou-jinyao-electronics
+    name: 廣州市今耀電子有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 新加坡電子材料貿易子公司
+    details:
+    - 新加坡電子材料貿易子公司
+    edge: e3a945665877c
+    evidence_level: primary
+    id: org.noxxen
+    name: NOXXEN PTE. LTD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持有的被動元件製造子公司
+    details:
+    - 間接持有的被動元件製造子公司
+    edge: e781ff0b01af5
+    evidence_level: primary
+    id: org.suzhou-jinpeng-advanced-technology
+    name: 蘇州今鵬先進科技有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持有的電子材料貿易子公司
+    details:
+    - 間接持有的電子材料貿易子公司
+    edge: ecf37b7f1cd3a
+    evidence_level: primary
+    id: org.suzhou-jinyazhong-electronics
+    name: 蘇州今亞中電子貿易有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.arlitech.com.tw
 tax_id: '12688172'
 incorporated: '2001-02-20'
 listed: '2015-05-20'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6432#e1:
+    locator: 印刷第58頁／PDF第63頁，營業比重表，114年度電感列
+    published_date: '2026-05-22'
+    publisher: 今展科技股份有限公司
+    quote_check: not_found
+    title: 今展科技114年度年報
+    url: https://zh-tw.arlitech.com/pdf/742402/114%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
+  tw.6432#e10:
+    locator: 印刷第2頁／PDF第7頁，研究發展狀況
+    published_date: '2026-05-22'
+    publisher: 今展科技股份有限公司
+    quote_check: found
+    title: 今展科技114年度年報
+    url: https://zh-tw.arlitech.com/pdf/742402/114%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
+  tw.6432#e11:
+    locator: 印刷第2頁／PDF第7頁，研究發展狀況
+    published_date: '2026-05-22'
+    publisher: 今展科技股份有限公司
+    quote_check: found
+    title: 今展科技114年度年報
+    url: https://zh-tw.arlitech.com/pdf/742402/114%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
+  tw.6432#e12:
+    locator: 印刷第3頁／PDF第8頁，Molding TLVR電感應用說明
+    published_date: '2026-05-22'
+    publisher: 今展科技股份有限公司
+    quote_check: found
+    title: 今展科技114年度年報
+    url: https://zh-tw.arlitech.com/pdf/742402/114%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
+  tw.6432#e13:
+    locator: 第17頁，納入合併財務報告之子公司表；投資公司為本公司，115年6月30日持股100%，業務為投資
+    published_date: null
+    publisher: 今展科技股份有限公司
+    quote_check: found
+    title: 今展科技及子公司115年第2季合併財務報告
+    url: https://zh-tw.arlitech.com/pdf/742400/115Q2%E4%BB%8A%E5%B1%95%E7%A7%91%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1%28%E7%94%A8%E5%8D%B0%29.pdf
+  tw.6432#e14:
+    locator: 第17頁子公司表NOXXEN列及第18頁設立說明
+    published_date: null
+    publisher: 今展科技股份有限公司
+    quote_check: found
+    title: 今展科技及子公司115年第2季合併財務報告
+    url: https://zh-tw.arlitech.com/pdf/742400/115Q2%E4%BB%8A%E5%B1%95%E7%A7%91%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1%28%E7%94%A8%E5%8D%B0%29.pdf
+  tw.6432#e15:
+    locator: 第18頁子公司表；投資公司為Arlitech Corp.，115年6月30日持股100%，業務為轉投資廣州市今耀電子有限公司
+    published_date: null
+    publisher: 今展科技股份有限公司
+    quote_check: found
+    title: 今展科技及子公司115年第2季合併財務報告
+    url: https://zh-tw.arlitech.com/pdf/742400/115Q2%E4%BB%8A%E5%B1%95%E7%A7%91%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1%28%E7%94%A8%E5%8D%B0%29.pdf
+  tw.6432#e16:
+    locator: 第18頁子公司表；投資公司為Arlitech Corp.，115年6月30日持股100%，業務為各類電子材料零售批發買賣
+    published_date: null
+    publisher: 今展科技股份有限公司
+    quote_check: found
+    title: 今展科技及子公司115年第2季合併財務報告
+    url: https://zh-tw.arlitech.com/pdf/742400/115Q2%E4%BB%8A%E5%B1%95%E7%A7%91%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1%28%E7%94%A8%E5%8D%B0%29.pdf
+  tw.6432#e17:
+    locator: 第18頁子公司表；投資公司為Arlitech Corp.，115年6月30日持股100%，業務為各類電感等被動元件製造與買賣
+    published_date: null
+    publisher: 今展科技股份有限公司
+    quote_check: found
+    title: 今展科技及子公司115年第2季合併財務報告
+    url: https://zh-tw.arlitech.com/pdf/742400/115Q2%E4%BB%8A%E5%B1%95%E7%A7%91%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1%28%E7%94%A8%E5%8D%B0%29.pdf
+  tw.6432#e18:
+    locator: 第18頁子公司表；投資公司為Arlitech (HK) Limited，115年6月30日持股100%，業務為各類電感等被動元件製造與買賣
+    published_date: null
+    publisher: 今展科技股份有限公司
+    quote_check: found
+    title: 今展科技及子公司115年第2季合併財務報告
+    url: https://zh-tw.arlitech.com/pdf/742400/115Q2%E4%BB%8A%E5%B1%95%E7%A7%91%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1%28%E7%94%A8%E5%8D%B0%29.pdf
+  tw.6432#e2:
+    locator: 印刷第58頁／PDF第63頁，營業比重表，114年度保護元件列
+    published_date: '2026-05-22'
+    publisher: 今展科技股份有限公司
+    quote_check: not_found
+    title: 今展科技114年度年報
+    url: https://zh-tw.arlitech.com/pdf/742402/114%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
+  tw.6432#e3:
+    locator: 印刷第58頁／PDF第63頁，營業比重表，114年度其他列
+    published_date: '2026-05-22'
+    publisher: 今展科技股份有限公司
+    quote_check: not_found
+    title: 今展科技114年度年報
+    url: https://zh-tw.arlitech.com/pdf/742402/114%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
+  tw.6432#e4:
+    locator: 印刷第58頁／PDF第63頁，公司目前之商品項目
+    published_date: '2026-05-22'
+    publisher: 今展科技股份有限公司
+    quote_check: found
+    title: 今展科技114年度年報
+    url: https://zh-tw.arlitech.com/pdf/742402/114%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
+  tw.6432#e5:
+    locator: 印刷第59頁／PDF第64頁，主要商品名稱及主要產品表，電感列
+    published_date: '2026-05-22'
+    publisher: 今展科技股份有限公司
+    quote_check: found
+    title: 今展科技114年度年報
+    url: https://zh-tw.arlitech.com/pdf/742402/114%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
+  tw.6432#e6:
+    locator: 01公司簡介／源起
+    published_date: null
+    publisher: 今展科技股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://zh-tw.arlitech.com/corporate-profile
+  tw.6432#e7:
+    locator: 印刷第59頁／PDF第64頁，保護元件及半導體相關電子零組件之重要用途或功能
+    published_date: '2026-05-22'
+    publisher: 今展科技股份有限公司
+    quote_check: found
+    title: 今展科技114年度年報
+    url: https://zh-tw.arlitech.com/pdf/742402/114%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
+  tw.6432#e8:
+    locator: PDF第12頁，代理線產品
+    published_date: '2025-12-09'
+    publisher: 今展科技股份有限公司
+    quote_check: found
+    title: 今展科技公司法說會簡報
+    url: https://zh-tw.arlitech.com/pdf/572231/Arlitech_%E6%B3%95%E8%AA%AA%E6%9C%83%E7%B0%A1%E5%A0%B1.pdf
+  tw.6432#e9:
+    locator: PDF第14頁，半導體代理產品
+    published_date: '2025-12-09'
+    publisher: 今展科技股份有限公司
+    quote_check: not_found
+    title: 今展科技公司法說會簡報
+    url: https://zh-tw.arlitech.com/pdf/572231/Arlitech_%E6%B3%95%E8%AA%AA%E6%9C%83%E7%B0%A1%E5%A0%B1.pdf

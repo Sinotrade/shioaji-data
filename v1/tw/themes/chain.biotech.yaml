@@ -20,6 +20,54 @@ stages:
   tier: downstream
   name_en: Distribution & Services
 members:
+- id: tw.1294
+  detail: 以液劑、果凍等保健食品OEM／ODM代工為主，另提供配方設計與整合研發服務。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.1294#e2
+  - tw.1294#e3
+  - tw.1294#e5
+  confidence: ai_cross_checked
+  source: classification
+  stage: manufacturing
+  tier: midstream
+  stage_role: primary
+- id: tw.1294
+  detail: 以液劑、果凍等保健食品OEM／ODM代工為主，另提供配方設計與整合研發服務。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.1294#e2
+  - tw.1294#e3
+  - tw.1294#e5
+  confidence: ai_cross_checked
+  source: classification
+  stage: rnd
+  tier: upstream
+  stage_role: also
+- id: tw.1295
+  detail: 以益生菌菌粉與發酵原料研發供應為核心，兼營保健品代工；未揭露營收占比。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.1295#e1
+  - tw.1295#e2
+  - tw.1295#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: rnd
+  tier: upstream
+  stage_role: primary
+- id: tw.1295
+  detail: 以益生菌菌粉與發酵原料研發供應為核心，兼營保健品代工；未揭露營收占比。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.1295#e1
+  - tw.1295#e2
+  - tw.1295#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: manufacturing
+  tier: midstream
+  stage_role: also
 - id: tw.1565
   detail: 以隱形眼鏡製造及OEM、ODM代工為主，另有鏡片與彩片圖紋研發設計。
   as_of: '2026-10-23'
@@ -636,6 +684,28 @@ members:
   stage: rnd
   tier: upstream
   stage_role: also
+- id: tw.4108
+  detail: 最大營收來自藥品及保健食品，主要從事新藥研發，並涵蓋生產製造。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.4108#e2
+  - tw.4108#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: rnd
+  tier: upstream
+  stage_role: primary
+- id: tw.4108
+  detail: 最大營收來自藥品及保健食品，主要從事新藥研發，並涵蓋生產製造。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.4108#e2
+  - tw.4108#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: manufacturing
+  tier: midstream
+  stage_role: also
 - id: tw.4114
   detail: 自製產品占營收69.52%，以製藥為主，另有27.79%外購產品銷售業務。
   as_of: '2026-10-18'
@@ -659,6 +729,30 @@ members:
   source: classification
   stage: channel
   tier: downstream
+  stage_role: also
+- id: tw.4116
+  detail: 以醫用耗材銷售為最大收入來源，兼營醫療服務，並研發製造手術及超音波設備。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.4116#e_revenue
+  - tw.4116#e_operating_segments
+  - tw.4116#e_manufacturing
+  confidence: ai_cross_checked
+  source: classification
+  stage: channel
+  tier: downstream
+  stage_role: primary
+- id: tw.4116
+  detail: 以醫用耗材銷售為最大收入來源，兼營醫療服務，並研發製造手術及超音波設備。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.4116#e_revenue
+  - tw.4116#e_operating_segments
+  - tw.4116#e_manufacturing
+  confidence: ai_cross_checked
+  source: classification
+  stage: manufacturing
+  tier: midstream
   stage_role: also
 - id: tw.4119
   detail: 原料藥與中間體合計占營收96.93%，以上游原料供應為主，另提供客製化開發生產及製劑製造。
@@ -755,6 +849,17 @@ members:
   stage: manufacturing
   tier: midstream
   stage_role: primary
+- id: tw.4127
+  detail: 從事中西藥與保健商品批發零售，電視購物占營收83%，以銷售通路為主。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.4127#e2
+  - tw.4127#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: channel
+  tier: downstream
+  stage_role: primary
 - id: tw.4129
   detail: 人工關節占營收91.3%，以骨科植入物與器械製造為主，亦自行研發產品。
   as_of: '2026-10-20'
@@ -781,6 +886,30 @@ members:
   stage: rnd
   tier: upstream
   stage_role: also
+- id: tw.4138
+  detail: 以醫美設備與耗材代理經銷為主，占營收69%，另提供維修與美容服務。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.4138#e_business
+  - tw.4138#e_revenue_labels
+  - tw.4138#e_revenue_ratios
+  confidence: ai_cross_checked
+  source: classification
+  stage: channel
+  tier: downstream
+  stage_role: primary
+- id: tw.4139
+  detail: 新加坡連鎖中醫占營收65.86%，為最大收入來源，核心業務屬診療與醫療服務。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.4139#e2
+  - tw.4139#e6
+  - tw.4139#e7
+  confidence: ai_cross_checked
+  source: classification
+  stage: channel
+  tier: downstream
+  stage_role: primary
 - id: tw.4142
   detail: 流感疫苗占營收82.40%，主要製造疫苗，另提供生物製劑代工及無菌充填。
   as_of: '2026-10-18'
@@ -820,6 +949,42 @@ members:
   stage: manufacturing
   tier: midstream
   stage_role: also
+- id: tw.4153
+  detail: 以醫療顯示器設計製造及OEM／ODM為主，另有海外子公司從事銷售與醫材批發。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.4153#e02
+  - tw.4153#e03
+  - tw.4153#e07
+  confidence: ai_cross_checked
+  source: classification
+  stage: manufacturing
+  tier: midstream
+  stage_role: primary
+- id: tw.4153
+  detail: 以醫療顯示器設計製造及OEM／ODM為主，另有海外子公司從事銷售與醫材批發。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.4153#e02
+  - tw.4153#e03
+  - tw.4153#e07
+  confidence: ai_cross_checked
+  source: classification
+  stage: channel
+  tier: downstream
+  stage_role: also
+- id: tw.4155
+  detail: 血糖測試片占營收79.01%，主要製造血糖檢測耗材與儀器，並提供OEM／ODM服務。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.4155#e2
+  - tw.4155#e3
+  - tw.4155#e4
+  confidence: ai_cross_checked
+  source: classification
+  stage: manufacturing
+  tier: midstream
+  stage_role: primary
 - id: tw.4157
   detail: 以小分子新藥研發為主，透過授權及供貨取得收入，未明示自有製造或通路業務。
   as_of: '2026-10-20'
@@ -1014,6 +1179,20 @@ members:
   stage: rnd
   tier: upstream
   stage_role: also
+- id: tw.4175
+  detail: 經營醫護用品連鎖通路，醫療照護商品占營收72.44%，並提供照護諮詢。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.4175#e2
+  - tw.4175#e3
+  - tw.4175#e4
+  - tw.4175#e5
+  - tw.4175#e6
+  confidence: ai_cross_checked
+  source: classification
+  stage: channel
+  tier: downstream
+  stage_role: primary
 - id: tw.4178
   detail: 主要營收來自臍帶血與幹細胞私存服務，另製造臍帶血來源細胞製劑。
   as_of: '2026-10-23'
@@ -1149,6 +1328,28 @@ members:
   source: classification
   stage: manufacturing
   tier: midstream
+  stage_role: also
+- id: tw.4747
+  detail: 主業為學名藥及各類製劑生產；全資子公司另經營西藥批發與零售。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.4747#e1
+  - tw.4747#e2
+  confidence: ai_cross_checked
+  source: classification
+  stage: manufacturing
+  tier: midstream
+  stage_role: primary
+- id: tw.4747
+  detail: 主業為學名藥及各類製劑生產；全資子公司另經營西藥批發與零售。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.4747#e1
+  - tw.4747#e2
+  confidence: ai_cross_checked
+  source: classification
+  stage: channel
+  tier: downstream
   stage_role: also
 - id: tw.4771
   detail: 隱形眼鏡占營收99.72%，以鏡片製造為主，另透過醫療器材銷售子公司經營通路。
@@ -1370,6 +1571,42 @@ members:
   evidence:
   - tw.6499#e2
   - tw.6499#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: rnd
+  tier: upstream
+  stage_role: also
+- id: tw.6527
+  detail: 眼科醫療儀器占營收82.44%，以自製器材為主，兼具研發及視光設備、消化道耗材銷售業務。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.6527#e2
+  - tw.6527#e7
+  - tw.6527#e9
+  confidence: ai_cross_checked
+  source: classification
+  stage: manufacturing
+  tier: midstream
+  stage_role: primary
+- id: tw.6527
+  detail: 眼科醫療儀器占營收82.44%，以自製器材為主，兼具研發及視光設備、消化道耗材銷售業務。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.6527#e2
+  - tw.6527#e7
+  - tw.6527#e9
+  confidence: ai_cross_checked
+  source: classification
+  stage: channel
+  tier: downstream
+  stage_role: also
+- id: tw.6527
+  detail: 眼科醫療儀器占營收82.44%，以自製器材為主，兼具研發及視光設備、消化道耗材銷售業務。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.6527#e2
+  - tw.6527#e7
+  - tw.6527#e9
   confidence: ai_cross_checked
   source: classification
   stage: rnd
@@ -1739,6 +1976,30 @@ members:
   stage: manufacturing
   tier: midstream
   stage_role: also
+- id: tw.6796
+  detail: 醫學影像診斷裝置占營收70.32%，以器材製造為主，另明確從事醫療影像器材研發。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.6796#e1
+  - tw.6796#e2
+  - tw.6796#e6
+  confidence: ai_cross_checked
+  source: classification
+  stage: manufacturing
+  tier: midstream
+  stage_role: primary
+- id: tw.6796
+  detail: 醫學影像診斷裝置占營收70.32%，以器材製造為主，另明確從事醫療影像器材研發。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.6796#e1
+  - tw.6796#e2
+  - tw.6796#e6
+  confidence: ai_cross_checked
+  source: classification
+  stage: rnd
+  tier: upstream
+  stage_role: also
 - id: tw.6838
   detail: 授權收入占50.17%為最大來源，核心為新藥研發，另有藥品銷售收入。
   as_of: '2026-10-23'
@@ -1778,6 +2039,19 @@ members:
   source: classification
   stage: null
   tier: null
+- id: tw.6844
+  detail: 主要經營藥品、保健食品、婦嬰用品及醫療器材連鎖零售，營收以通路銷售為主。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.6844#e2
+  - tw.6844#e3
+  - tw.6844#e4
+  - tw.6844#e5
+  confidence: ai_cross_checked
+  source: classification
+  stage: channel
+  tier: downstream
+  stage_role: primary
 - id: tw.6861
   detail: 醫療用X光感測器元件及模組製造合占98%；設備代理屬工業檢測業務。
   as_of: '2026-10-18'
@@ -1927,6 +2201,18 @@ members:
   stage: rnd
   tier: upstream
   stage_role: also
+- id: tw.6936
+  detail: 以製造動物用藥及飼料添加劑為主，設有各類產品獨立生產線。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.6936#e2
+  - tw.6936#e3
+  - tw.6936#e5
+  confidence: ai_cross_checked
+  source: classification
+  stage: manufacturing
+  tier: midstream
+  stage_role: primary
 - id: tw.6945
   detail: 以抗體及蛋白藥物研發為核心，收入來自藥物授權及相關變動價金。
   as_of: '2026-10-18'
@@ -1973,6 +2259,30 @@ members:
   stage: manufacturing
   tier: midstream
   stage_role: primary
+- id: tw.6986
+  detail: 委託生產占營收58.05%為主，另提供委託開發並研發幹細胞新藥。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.6986#e1
+  - tw.6986#e2
+  - tw.6986#e5
+  confidence: ai_cross_checked
+  source: classification
+  stage: manufacturing
+  tier: midstream
+  stage_role: primary
+- id: tw.6986
+  detail: 委託生產占營收58.05%為主，另提供委託開發並研發幹細胞新藥。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.6986#e1
+  - tw.6986#e2
+  - tw.6986#e5
+  confidence: ai_cross_checked
+  source: classification
+  stage: rnd
+  tier: upstream
+  stage_role: also
 - id: tw.7799
   detail: 治療照射服務占56.94%為最大收入，另開發BNCT設備、軟體及藥物技術。
   as_of: '2026-10-14'
@@ -2006,6 +2316,32 @@ members:
   stage: rnd
   tier: upstream
   stage_role: primary
+- id: tw.8279
+  detail: 保健食品占營收81.22%，提供OEM／ODM製造，亦研發菌種、機能原料與原料藥。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.8279#e_identity
+  - tw.8279#e_oem
+  - tw.8279#e_dosage
+  - tw.8279#e_seg_health
+  confidence: ai_cross_checked
+  source: classification
+  stage: manufacturing
+  tier: midstream
+  stage_role: primary
+- id: tw.8279
+  detail: 保健食品占營收81.22%，提供OEM／ODM製造，亦研發菌種、機能原料與原料藥。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.8279#e_identity
+  - tw.8279#e_oem
+  - tw.8279#e_dosage
+  - tw.8279#e_seg_health
+  confidence: ai_cross_checked
+  source: classification
+  stage: rnd
+  tier: upstream
+  stage_role: also
 - id: tw.8403
   detail: 藥品、醫材及科技材料供應占營收81.02%，以經銷代理為主，另提供健康管理及設備租賃。
   as_of: '2026-10-23'
@@ -2019,6 +2355,30 @@ members:
   stage: channel
   tier: downstream
   stage_role: primary
+- id: tw.8432
+  detail: 以處方藥銷售為主，藥品及保健食品占營收73.79%，另有檢測服務及新藥開發業務。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.8432#e_revenue
+  - tw.8432#e_development
+  - tw.8432#e_operating_model
+  confidence: ai_cross_checked
+  source: classification
+  stage: channel
+  tier: downstream
+  stage_role: primary
+- id: tw.8432
+  detail: 以處方藥銷售為主，藥品及保健食品占營收73.79%，另有檢測服務及新藥開發業務。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.8432#e_revenue
+  - tw.8432#e_development
+  - tw.8432#e_operating_model
+  confidence: ai_cross_checked
+  source: classification
+  stage: rnd
+  tier: upstream
+  stage_role: also
 - id: tw.8436
   detail: 保健食品占營收86.5%，採CDMO模式提供配方研發與產品製造。
   as_of: '2026-10-18'

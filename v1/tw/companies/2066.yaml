@@ -8,12 +8,125 @@ industry:
   l0_code: '05'
   l0_name: 電機機械
   l0_name_en: Electric Machinery
-primary_chain_position: unknown
+  l1: materials
+  l1_name: 原物料
+  l1_name_en: Materials
+  l2: mat.metals
+  l2_name: 金屬
+  l2_name_en: Metals
+  l3: metal.fasteners
+  l3_name: 螺絲螺帽與金屬製品
+  l3_name_en: Fasteners & Metal Products
+chain: chain.steel
+chain_stage:
+  agreement: both
+  also: []
+  reason: 主要製造螺絲、螺栓、螺帽及沖壓與機械加工零件，屬下游金屬製品。
+  stage: downstream
+  stage_name: 金屬製品與螺絲
+  tier: downstream
+primary_chain_position: downstream
+summary_short: 製造銷售螺絲、螺帽等扣件與沖壓、機械加工零件。
+summary_long: 世德以金屬扣件與加工零件的製造及銷售為主要業務，產品包括螺絲、螺栓、螺帽、塞子、鋁製滑塊，以及沖壓與機械加工件。官網產品目錄列有六角螺栓、油封螺帽等品項。公司2025年法說資料列有電動車業務，並展示特殊客製化零件的生產能力。集團旗下德國子公司 Max Mothes GmbH 從事機械零件及螺絲的生產與銷售，法說簡報另展示該子公司的車削、銑削及整合加工能力。
+main_theme: theme.ev
+themes:
+- also: []
+  stage: parts
+  theme: theme.ev
+  tier: midstream
+relations:
+  subsidiaries:
+  - as_of: '2025-12-10'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 德國子公司；機械零件及螺絲生產與銷售
+    details:
+    - 德國子公司；機械零件及螺絲生產與銷售
+    edge: e5ce7552ef260
+    evidence_level: primary
+    id: org.max-mothes-gmbh
+    name: Max Mothes GmbH
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 2025年法說列示美國子公司「MMM/ IAA」，未能由可讀取的近期第一手資料…
 website: www.sumeeko.com
 tax_id: '22546808'
 incorporated: '1988-01-29'
 listed: '2013-09-24'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2066#e1:
+    locator: 首頁產品介紹
+    published_date: null
+    publisher: 世德工業股份有限公司
+    quote_check: found
+    title: 世德工業－SUMEEKO
+    url: https://www.sumeeko.com/
+  tw.2066#e10:
+    locator: PDF第12頁，MaxMothes production capability
+    published_date: '2025-12-10'
+    publisher: 世德工業股份有限公司
+    quote_check: found
+    title: 世德工業股份有限公司法人說明會2025.12.10
+    url: https://www.sumeeko.com/wp-content/uploads/2025/11/11412%E6%B3%95%E8%AA%AA.pdf
+  tw.2066#e2:
+    locator: 螺絲與螺栓產品目錄
+    published_date: null
+    publisher: 世德工業股份有限公司
+    quote_check: found
+    title: Production－世德工業
+    url: https://www.sumeeko.com/production/
+  tw.2066#e3:
+    locator: 螺帽產品目錄
+    published_date: null
+    publisher: 世德工業股份有限公司
+    quote_check: found
+    title: Production－世德工業
+    url: https://www.sumeeko.com/production/
+  tw.2066#e4:
+    locator: 特殊零件產品目錄
+    published_date: null
+    publisher: 世德工業股份有限公司
+    quote_check: found
+    title: Production－世德工業
+    url: https://www.sumeeko.com/production/
+  tw.2066#e5:
+    locator: 特殊零件產品目錄
+    published_date: null
+    publisher: 世德工業股份有限公司
+    quote_check: found
+    title: Production－世德工業
+    url: https://www.sumeeko.com/production/
+  tw.2066#e6:
+    locator: PDF第18頁，In house production
+    published_date: '2025-12-10'
+    publisher: 世德工業股份有限公司
+    quote_check: found
+    title: 世德工業股份有限公司法人說明會2025.12.10
+    url: https://www.sumeeko.com/wp-content/uploads/2025/11/11412%E6%B3%95%E8%AA%AA.pdf
+  tw.2066#e7:
+    locator: PDF第19頁，業務介紹
+    published_date: '2025-12-10'
+    publisher: 世德工業股份有限公司
+    quote_check: found
+    title: 世德工業股份有限公司法人說明會2025.12.10
+    url: https://www.sumeeko.com/wp-content/uploads/2025/11/11412%E6%B3%95%E8%AA%AA.pdf
+  tw.2066#e8:
+    locator: PDF第14頁，合併基礎之子公司表
+    published_date: null
+    publisher: 世德工業股份有限公司
+    quote_check: found
+    title: 世德工業股份有限公司及子公司112年度合併財務報告
+    url: https://www.sumeeko.com/wp-content/uploads/2025/02/112-Fourth-Quarter-Consolidation-Financial-Statement.pdf
+  tw.2066#e9:
+    locator: PDF第8頁
+    published_date: '2025-12-10'
+    publisher: 世德工業股份有限公司
+    quote_check: found
+    title: 世德工業股份有限公司法人說明會2025.12.10
+    url: https://www.sumeeko.com/wp-content/uploads/2025/11/11412%E6%B3%95%E8%AA%AA.pdf

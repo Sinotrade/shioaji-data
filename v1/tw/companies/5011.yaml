@@ -8,12 +8,231 @@ industry:
   l0_code: '10'
   l0_name: 鋼鐵工業
   l0_name_en: Iron and Steel
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.environment
+  l2_name: 環保服務
+  l2_name_en: Environmental Services
+  l3: env.waste
+  l3_name: 廢棄物處理與資源回收
+  l3_name_en: Waste Management & Recycling
+primary_chain_position: not_applicable
+summary_short: 以廢鐵買賣為最大收入來源，兼營螺栓銷售與環保服務。
+summary_long: 久陽精密經營螺栓銷售及轉投資事業，產品涵蓋內外六角、凸緣及特殊螺栓；2025年3月起改採外購螺絲成品銷售。2025年合併營收中，廢鐵占46.24%、螺絲占17.18%、運輸占9.13%、承攬占6.84%，最大收入來源為廢鐵。子公司台鋼運輸從事運輸與廢鐵買賣，台鋼環保提供廢棄物清除，榮福提供焚化爐操作，台鋼能源從事能源技術服務。2026年6月底另持有合一特用材料71.43%股權，其業務為精密化學材料及其他金屬製品製造。
+segments:
+- evidence_ids:
+  - e2
+  id: scrap
+  name: 廢鐵收入
+  period: '2025'
+  revenue_share_pct: 46.24
+- evidence_ids:
+  - e2
+  id: fasteners
+  name: 螺絲收入
+  period: '2025'
+  revenue_share_pct: 17.18
+- evidence_ids:
+  - e2
+  id: transport
+  name: 運輸收入
+  period: '2025'
+  revenue_share_pct: 9.13
+- evidence_ids:
+  - e2
+  id: forwarding
+  name: 承攬收入
+  period: '2025'
+  revenue_share_pct: 6.84
+- evidence_ids:
+  - e2
+  id: power
+  name: 售電收入
+  period: '2025'
+  revenue_share_pct: 3.22
+- evidence_ids:
+  - e2
+  id: engineering
+  name: 工程收入
+  period: '2025'
+  revenue_share_pct: 2.27
+- evidence_ids:
+  - e3
+  id: operation
+  name: 操作收入
+  period: '2025'
+  revenue_share_pct: 0.4
+- evidence_ids:
+  - e3
+  id: other
+  name: 其他收入
+  period: '2025'
+  revenue_share_pct: 5.38
+- evidence_ids:
+  - e3
+  id: concession_power
+  name: 特許權協議－售電收入
+  period: '2025'
+  revenue_share_pct: 5.14
+- evidence_ids:
+  - e3
+  id: concession_waste
+  name: 特許權協議－廢棄物處理
+  period: '2025'
+  revenue_share_pct: 3.57
+- evidence_ids:
+  - e3
+  id: concession_engineering
+  name: 特許權協議－工程收入
+  period: '2025'
+  revenue_share_pct: 0.06
+- evidence_ids:
+  - e3
+  id: concession_operation
+  name: 特許權協議－操作收入
+  period: '2025'
+  revenue_share_pct: 0.57
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司；回收物料與廢棄物處理
+    details:
+    - 全資子公司；回收物料與廢棄物處理
+    edge: e5997e1f643a2
+    evidence_level: primary
+    id: org.台鋼環保股份有限公司
+    name: 台鋼環保股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司；能源技術服務
+    details:
+    - 全資子公司；能源技術服務
+    edge: e7d77122f4ffc
+    evidence_level: primary
+    id: org.台鋼能源股份有限公司
+    name: 台鋼能源股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司；貨櫃出租、運輸及包裝服務
+    details:
+    - 全資子公司；貨櫃出租、運輸及包裝服務
+    edge: e298e59a1d540
+    evidence_level: primary
+    id: org.台鋼運輸股份有限公司
+    name: 台鋼運輸股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股71.43%；精密化學材料及金屬製品製造
+    details:
+    - 直接持股71.43%；精密化學材料及金屬製品製造
+    edge: e26bbfba47922
+    evidence_level: primary
+    id: org.合一特用材料股份有限公司
+    name: 合一特用材料股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股41.86%；焚化廠操作與工程服務
+    details:
+    - 直接持股41.86%；焚化廠操作與工程服務
+    edge: e53b0b77acd28
+    evidence_level: primary
+    id: org.榮福股份有限公司
+    name: 榮福股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.ofco.com.tw
 tax_id: 07926511
 incorporated: '1984-11-21'
 listed: '1999-05-06'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.5011#e10:
+    locator: 附表七，PDF第70頁；投資公司為久陽精密股份有限公司
+    published_date: null
+    publisher: 久陽精密股份有限公司
+    quote_check: found
+    title: 115年第二季合併財務報告
+    url: https://www.ofco.com.tw/sites/default/files/pdf/115Q2%E8%B2%A1%E5%A0%B1(%E5%90%88%E4%BD%B5).pdf
+  tw.5011#e2:
+    locator: 第86頁，主要產品之營業比重
+    published_date: '2026-05-04'
+    publisher: 久陽精密股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.ofco.com.tw/sites/default/files/pdf/114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf
+  tw.5011#e3:
+    locator: 第86頁，主要產品之營業比重
+    published_date: '2026-05-04'
+    publisher: 久陽精密股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.ofco.com.tw/sites/default/files/pdf/114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf
+  tw.5011#e4:
+    locator: 第86頁，公司目前之商品（服務）項目
+    published_date: '2026-05-04'
+    publisher: 久陽精密股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.ofco.com.tw/sites/default/files/pdf/114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf
+  tw.5011#e5:
+    locator: 第5頁，115年度營業計劃概要
+    published_date: '2026-05-04'
+    publisher: 久陽精密股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.ofco.com.tw/sites/default/files/pdf/114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf
+  tw.5011#e6:
+    locator: 附表七，PDF第70頁；投資公司為久陽精密股份有限公司
+    published_date: null
+    publisher: 久陽精密股份有限公司
+    quote_check: found
+    title: 115年第二季合併財務報告
+    url: https://www.ofco.com.tw/sites/default/files/pdf/115Q2%E8%B2%A1%E5%A0%B1(%E5%90%88%E4%BD%B5).pdf
+  tw.5011#e7:
+    locator: 附表七，PDF第70頁；投資公司為久陽精密股份有限公司
+    published_date: null
+    publisher: 久陽精密股份有限公司
+    quote_check: found
+    title: 115年第二季合併財務報告
+    url: https://www.ofco.com.tw/sites/default/files/pdf/115Q2%E8%B2%A1%E5%A0%B1(%E5%90%88%E4%BD%B5).pdf
+  tw.5011#e8:
+    locator: 附表七，PDF第70頁；投資公司為久陽精密股份有限公司
+    published_date: null
+    publisher: 久陽精密股份有限公司
+    quote_check: found
+    title: 115年第二季合併財務報告
+    url: https://www.ofco.com.tw/sites/default/files/pdf/115Q2%E8%B2%A1%E5%A0%B1(%E5%90%88%E4%BD%B5).pdf
+  tw.5011#e9:
+    locator: 附表七，PDF第70頁；投資公司為久陽精密股份有限公司
+    published_date: null
+    publisher: 久陽精密股份有限公司
+    quote_check: found
+    title: 115年第二季合併財務報告
+    url: https://www.ofco.com.tw/sites/default/files/pdf/115Q2%E8%B2%A1%E5%A0%B1(%E5%90%88%E4%BD%B5).pdf

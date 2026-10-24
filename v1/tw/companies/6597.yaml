@@ -8,15 +8,64 @@ industry:
   l0_code: '28'
   l0_name: 電子零組件業
   l0_name_en: Electronic Parts and Components
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.pcb
+  l3_name: 印刷電路板
+  l3_name_en: Printed Circuit Boards
+chain: chain.pcb
+chain_stage:
+  agreement: both
+  also: []
+  reason: 主業為DPC陶瓷電路板與陶瓷基板製造，最大營收應用為車用照明，屬電路板與載板製造階段。
+  stage: board
+  stage_name: 電路板與載板製造
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 製造陶瓷散熱基板與陶瓷電路板，主要營收來自車用照明應用。
+summary_long: 立誠光電主要生產陶瓷散熱基板，並提供陶瓷電路板製程整合與設計，應用涵蓋LED及車用照明。2024年營收組成以車用照明67.23%為主，高功率照明14.55%，其他18.22%。產品包含DPC陶瓷電路板、雷射二極體用氮化鋁與氧化鋁Submount、3D感測封裝材料，以及功率電子與通訊用陶瓷基板。3D感測產品對應VCSEL與EEL封裝需求，通訊產品可用於5G陶瓷濾波器金屬化。一詮精密工業為其母公司。
+segments:
+- evidence_ids:
+  - e9
+  id: seg_auto_lighting
+  name: 車用照明
+  period: '2024'
+  revenue_share_pct: 67.23
+- evidence_ids:
+  - e9
+  id: seg_high_power_lighting
+  name: 高功率照明
+  period: '2024'
+  revenue_share_pct: 14.55
+- evidence_ids:
+  - e9
+  id: seg_other
+  name: 其他
+  period: '2024'
+  revenue_share_pct: 18.22
+main_theme: theme.5g
+themes:
+- also: []
+  stage: components
+  theme: theme.5g
+  tier: upstream
+- also: []
+  stage: module
+  theme: theme.vcsel
+  tier: downstream
 relations:
   parents:
-  - as_of: 2025-12
+  - as_of: '2026-10-23'
     confidence: ai_cross_checked
     counterparty_shares: []
     detail: 陶瓷電路板製造子公司
     details:
     - 陶瓷電路板製造子公司
+    - 母公司
     edge: e9bbaca1a0ea7
     evidence_level: primary
     id: tw.2486
@@ -24,12 +73,82 @@ relations:
     ranking_basis: unranked
     share_basis: null
     share_pct: null
-    weight: 1
+    weight: 2
 website: www.ecocera.com.tw
 tax_id: '53125710'
 incorporated: '2011-01-14'
 listed: '2025-05-08'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6597#e1:
+    locator: 公司簡介第二段
+    published_date: null
+    publisher: 立誠光電股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.ecocera.com.tw/ec99/rwd1445/category.asp?category_id=20
+  tw.6597#e10:
+    locator: 主要股東名單；占比依扣除庫藏股後股數計算
+    published_date: null
+    publisher: 立誠光電股份有限公司
+    quote_check: found
+    title: 公司治理
+    url: https://www.ecocera.com.tw/ec99/rwd1445/category.asp?category_id=30
+  tw.6597#e2:
+    locator: 營業項目
+    published_date: null
+    publisher: 立誠光電股份有限公司
+    quote_check: found
+    title: 公司概況
+    url: https://www.ecocera.com.tw/ec99/rwd1445/category.asp?category_id=21
+  tw.6597#e3:
+    locator: 產品應用末兩項
+    published_date: null
+    publisher: 立誠光電股份有限公司
+    quote_check: found
+    title: Submount for Laser Diode
+    url: https://www.ecocera.com.tw/ec99/rwd1445/category.asp?category_id=6
+  tw.6597#e4:
+    locator: 產品介紹
+    published_date: null
+    publisher: 立誠光電股份有限公司
+    quote_check: found
+    title: 3D Sensor用陶瓷封裝材料
+    url: https://www.ecocera.com.tw/ec99/rwd1445/category.asp?category_id=7
+  tw.6597#e5:
+    locator: 產品介紹／主要產品種類
+    published_date: null
+    publisher: 立誠光電股份有限公司
+    quote_check: found
+    title: 功率電子用陶瓷基板
+    url: https://www.ecocera.com.tw/ec99/rwd1445/category.asp?category_id=8
+  tw.6597#e6:
+    locator: 產品介紹
+    published_date: null
+    publisher: 立誠光電股份有限公司
+    quote_check: found
+    title: 通訊元件用陶瓷基板
+    url: https://www.ecocera.com.tw/ec99/rwd1445/category.asp?category_id=9
+  tw.6597#e7:
+    locator: 產品應用第三項
+    published_date: null
+    publisher: 立誠光電股份有限公司
+    quote_check: found
+    title: 通訊元件用陶瓷基板
+    url: https://www.ecocera.com.tw/ec99/rwd1445/category.asp?category_id=9
+  tw.6597#e8:
+    locator: 董事會重要決議事項／113.04.11
+    published_date: null
+    publisher: 立誠光電股份有限公司
+    quote_check: found
+    title: 公司治理
+    url: https://www.ecocera.com.tw/ec99/rwd1445/category.asp?category_id=30
+  tw.6597#e9:
+    locator: 印刷頁63／PDF第67頁，營業比重表；各列最後兩欄為113年度金額及占比
+    published_date: null
+    publisher: 立誠光電股份有限公司
+    quote_check: found
+    title: 113年度股東會年報
+    url: https://www.ecocera.com.tw/RWD1445/store/F3/113%E5%B9%B4%E5%BA%A6%E7%AB%8B%E8%AA%A0%E5%85%89%E9%9B%BB%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf

@@ -8,12 +8,154 @@ industry:
   l0_code: '05'
   l0_name: 電機機械
   l0_name_en: Electric Machinery
-primary_chain_position: unknown
+  l1: auto
+  l1_name: 汽車與運具
+  l1_name_en: Automotive & Mobility
+  l2: auto.bicycle
+  l2_name: 自行車
+  l2_name_en: Bicycles
+  l3: bike.parts
+  l3_name: 自行車零組件
+  l3_name_en: Bicycle Components
+primary_chain_position: midstream
+summary_short: 製造與銷售自行車立管、剎車器組、座管及花鼓等零組件。
+summary_long: 利奇以自行車零組件的製造與銷售為主，主要產品包括立管、剎車器組、座管及花鼓。2024年合併營收中，立管占24.07%、剎車器組占15.92%、座管占12.87%、花鼓占4.14%，其他產品占43%。公司另有電動自行車用可斷電把手及油壓碟煞等產品。子公司架構包含直接持有的Lee Chi International Holding Ltd.、THE Cycle Group, Inc.與沅灃創業投資，以及間接持有的英隆機械（昆山）及Box B.V.。
+segments:
+- evidence_ids:
+  - e1
+  id: stem
+  name: 立管
+  period: '2024'
+  revenue_share_pct: 24.07
+- evidence_ids:
+  - e1
+  id: braking_system
+  name: 剎車器組
+  period: '2024'
+  revenue_share_pct: 15.92
+- evidence_ids:
+  - e1
+  id: seatpost
+  name: 座管
+  period: '2024'
+  revenue_share_pct: 12.87
+- evidence_ids:
+  - e1
+  id: hub
+  name: 花鼓
+  period: '2024'
+  revenue_share_pct: 4.14
+- evidence_ids:
+  - e1
+  id: other
+  name: 其他
+  period: '2024'
+  revenue_share_pct: 43
+relations:
+  subsidiaries:
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過THE Cycle Group, Inc.間接持有
+    details:
+    - 透過THE Cycle Group, Inc.間接持有
+    edge: e340392f30845
+    evidence_level: primary
+    id: org.box-bv
+    name: Box B.V.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有的控股子公司
+    details:
+    - 直接持有的控股子公司
+    edge: e752cffec9192
+    evidence_level: primary
+    id: org.lee-chi-international-holding
+    name: Lee Chi International Holding Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有的子公司
+    details:
+    - 直接持有的子公司
+    edge: ec94a7e9d6065
+    evidence_level: primary
+    id: org.the-cycle-group
+    name: THE Cycle Group, Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過Lee Chi International Holding Ltd.間接持有
+    details:
+    - 透過Lee Chi International Holding Ltd.間接持有
+    edge: e994012c2a4a5
+    evidence_level: primary
+    id: org.ying-long-machinery-kunshan
+    name: 英隆機械(昆山)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有的創業投資子公司
+    details:
+    - 直接持有的創業投資子公司
+    edge: ea8de8d939b1a
+    evidence_level: primary
+    id: org.yuan-feng-venture-capital
+    name: 沅灃創業投資股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.leechi.com.tw/
 tax_id: '59008318'
 incorporated: '1973-05-16'
 listed: '1995-11-14'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1517#e1:
+    locator: 印刷頁74，PDF第78頁；主要產品及其營業比重（合併）
+    published_date: '2025-05-13'
+    publisher: 利奇機械工業股份有限公司
+    quote_check: found
+    title: 利奇機械工業股份有限公司113年度年報
+    url: https://www.leechi.com.tw/archive/investor/item/%E8%B2%A1%E5%8B%99%E5%A0%B1%E8%A1%A8/%E8%B2%A1%E5%8B%99%E5%B9%B4%E5%A0%B1/113th.pdf
+  tw.1517#e2:
+    locator: PDF第5頁，產品研發
+    published_date: '2025-12-18'
+    publisher: 利奇機械工業股份有限公司
+    quote_check: found
+    title: 利奇機械工業股份有限公司114年法人說明會簡報
+    url: https://www.leechi.com.tw/archive/investor/item/%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83/%E5%88%A9%E5%A5%87%E6%A9%9F%E6%A2%B0%E6%B3%95%E8%AA%AA%E6%9C%83%E7%B0%A1%E5%A0%B120251218--CHT-.pdf
+  tw.1517#e3:
+    locator: 印刷頁77，PDF第81頁；技術及研發概況
+    published_date: '2025-05-13'
+    publisher: 利奇機械工業股份有限公司
+    quote_check: found
+    title: 利奇機械工業股份有限公司113年度年報
+    url: https://www.leechi.com.tw/archive/investor/item/%E8%B2%A1%E5%8B%99%E5%A0%B1%E8%A1%A8/%E8%B2%A1%E5%8B%99%E5%B9%B4%E5%A0%B1/113th.pdf
+  tw.1517#e4:
+    locator: 印刷頁96，PDF第100頁；關係企業組織圖，以圖中連線判讀直接與間接持有關係
+    published_date: '2025-05-13'
+    publisher: 利奇機械工業股份有限公司
+    quote_check: found
+    title: 利奇機械工業股份有限公司113年度年報
+    url: https://www.leechi.com.tw/archive/investor/item/%E8%B2%A1%E5%8B%99%E5%A0%B1%E8%A1%A8/%E8%B2%A1%E5%8B%99%E5%B9%B4%E5%A0%B1/113th.pdf

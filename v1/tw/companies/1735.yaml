@@ -8,12 +8,182 @@ industry:
   l0_code: '21'
   l0_name: 化學工業
   l0_name_en: Chemical
-primary_chain_position: unknown
+  l1: materials
+  l1_name: 原物料
+  l1_name_en: Materials
+  l2: mat.chemicals
+  l2_name: 化工
+  l2_name_en: Chemicals
+  l3: chem.specialty
+  l3_name: 特用化學品
+  l3_name_en: Specialty Chemicals
+chain: chain.petrochem
+chain_stage:
+  agreement: both
+  also:
+  - stage: midstream
+    stage_name: 中間原料
+    tier: midstream
+  reason: PU合成樹脂占營收77%，主屬塑膠材料下游；另供應聚酯多元醇及光固化單體等中間原料。
+  stage: downstream
+  stage_name: 塑膠、纖維與加工
+  tier: downstream
+primary_chain_position: downstream
+summary_short: 製造與銷售聚氨酯合成樹脂、TPU、聚酯多元醇及光固化材料。
+summary_long: 日勝化工以聚氨酯等合成樹脂的製造與銷售為主，2025年PU合成樹脂占合併營收77%，PE多元醇樹脂占3%，其他產品占20%。PU樹脂用於人造合成皮，TPU產品則可應用於鞋材、管材及工業零件。產品另包含聚酯多元醇、低游離硬化劑，以及光固化單體、寡聚物與系統產品。依2026年第二季合併財報，日本AICA Kogyo為母公司，直接持有的子公司包括肯美特材料科技、越南U-BEST及泰國TOPWELL。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_pu
+  name: PU合成樹脂
+  period: '2025'
+  revenue_share_pct: 77
+- evidence_ids:
+  - e2
+  id: seg_pe
+  name: PE多元醇樹脂
+  period: '2025'
+  revenue_share_pct: 3
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他產品
+  period: '2025'
+  revenue_share_pct: 20
+relations:
+  parents:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 日本母公司
+    details:
+    - 日本母公司
+    edge: e8f55a7ef5229
+    evidence_level: primary
+    id: org.aica-kogyo-company-limited
+    name: AICA Kogyo Company Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 泰國直接持有100%股權之子公司
+    details:
+    - 泰國直接持有100%股權之子公司
+    edge: edb363b9f7051
+    evidence_level: primary
+    id: org.topwell-elastic-technology-co-ltd
+    name: TOPWELL ELASTIC TECHNOLOGY CO., LTD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 越南直接持有100%股權之子公司
+    details:
+    - 越南直接持有100%股權之子公司
+    edge: ec34b8f0cf4b7
+    evidence_level: primary
+    id: org.u-best-vietnam-polymer-industry-company-limited
+    name: U-BEST VIETNAM POLYMER INDUSTRY COMPANY LIMITED
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%股權之子公司
+    details:
+    - 直接持有100%股權之子公司
+    edge: eb2b1eccd9d4e
+    evidence_level: primary
+    id: org.肯美特材料科技股份有限公司
+    name: 肯美特材料科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.twemc.com
 tax_id: '23263551'
 incorporated: '1989-05-15'
 listed: '2002-08-26'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1735#e1:
+    locator: 首頁「主要產品」
+    published_date: null
+    publisher: 日勝化工股份有限公司
+    quote_check: found
+    title: 日勝化工股份有限公司－主要產品
+    url: https://www.twemc.com/
+  tw.1735#e10:
+    locator: TOP WELL ELASTIC TECHNOLOGY CO.,LTD.地址
+    published_date: null
+    publisher: 日勝化工股份有限公司
+    quote_check: found
+    title: 日勝化工－關係企業
+    url: https://www.twemc.com/data-60194
+  tw.1735#e2:
+    locator: 印刷頁58，業務內容／所營事業佔比重
+    published_date: null
+    publisher: 日勝化工股份有限公司
+    quote_check: found
+    title: 日勝化工2025年度年報
+    url: https://www.twemc.com/pdf/687277/115%E5%B9%B4%E5%B9%B4%E5%A0%B1.pdf
+  tw.1735#e3:
+    locator: EME-75A產品列／主要應用產品與特性
+    published_date: null
+    publisher: 日勝化工股份有限公司
+    quote_check: found
+    title: 熱可塑性聚氨酯
+    url: https://www.twemc.com/thermoplastic-polyurethane-tpu
+  tw.1735#e4:
+    locator: EMH-85A產品列／主要應用產品與特性
+    published_date: null
+    publisher: 日勝化工股份有限公司
+    quote_check: found
+    title: 熱可塑性聚氨酯
+    url: https://www.twemc.com/thermoplastic-polyurethane-tpu
+  tw.1735#e5:
+    locator: 印刷頁58，公司目前之商品項目
+    published_date: null
+    publisher: 日勝化工股份有限公司
+    quote_check: found
+    title: 日勝化工2025年度年報
+    url: https://www.twemc.com/pdf/687277/115%E5%B9%B4%E5%B9%B4%E5%A0%B1.pdf
+  tw.1735#e6:
+    locator: 第9頁，公司沿革
+    published_date: null
+    publisher: 日勝化工股份有限公司
+    quote_check: found
+    title: 日勝化工股份有限公司及子公司115年第2季合併財務報告
+    url: https://www.twemc.com/pdf/754760/115Q2.pdf
+  tw.1735#e7:
+    locator: 第16頁，附註十一子公司表；投資公司欄承接「本公司」，三欄依序為2026年6月底、2025年底、2025年6月底持股百分比
+    published_date: null
+    publisher: 日勝化工股份有限公司
+    quote_check: found
+    title: 日勝化工股份有限公司及子公司115年第2季合併財務報告
+    url: https://www.twemc.com/pdf/754760/115Q2.pdf
+  tw.1735#e8:
+    locator: 第16頁，附註十一子公司表；投資公司欄承接「本公司」，第一數值為2026年6月底持股百分比
+    published_date: null
+    publisher: 日勝化工股份有限公司
+    quote_check: found
+    title: 日勝化工股份有限公司及子公司115年第2季合併財務報告
+    url: https://www.twemc.com/pdf/754760/115Q2.pdf
+  tw.1735#e9:
+    locator: 第16頁，附註十一子公司表；投資公司欄承接「本公司」，第一數值為2026年6月底持股百分比
+    published_date: null
+    publisher: 日勝化工股份有限公司
+    quote_check: found
+    title: 日勝化工股份有限公司及子公司115年第2季合併財務報告
+    url: https://www.twemc.com/pdf/754760/115Q2.pdf

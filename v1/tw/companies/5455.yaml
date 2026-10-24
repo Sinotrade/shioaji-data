@@ -8,12 +8,92 @@ industry:
   l0_code: '14'
   l0_name: 建材營造業
   l0_name_en: Building Material and Construction
-primary_chain_position: unknown
+  l1: realestate
+  l1_name: 不動產
+  l1_name_en: Real Estate
+  l2: re.dev
+  l2_name: 不動產
+  l2_name_en: Real Estate
+  l3: re.developer
+  l3_name: 建設開發
+  l3_name_en: Property Development
+primary_chain_position: not_applicable
+summary_short: 以新竹縣市住宅及大樓開發銷售為主，另有租賃收入。
+summary_long: 昇益開發以住宅及大樓開發租售為主要業務，營運重心位於新竹縣、市。2025年營建房屋收入占營收99.87%，租賃收入占0.13%，收入結構以房屋銷售為主。公司開發的合建分售建案包括新竹縣竹東鎮的星都滙D區與森蘊、新竹市的翡麗琚，以及新竹縣竹北市的御邸。依2026年9月法說資料，星都滙D區已取得使用執照，翡麗琚結構體完成；御邸與森蘊分別完成十二樓及六樓頂板。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_housing
+  name: 營建收入－房屋
+  period: '2025'
+  revenue_share_pct: 99.87
+- evidence_ids:
+  - e3
+  id: seg_rental
+  name: 租賃收入
+  period: '2025'
+  revenue_share_pct: 0.13
 website: www.signality.com.tw
 tax_id: '86233176'
 incorporated: '1991-07-06'
 listed: '2000-10-19'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.5455#e1:
+    locator: 印刷頁41，營運概況／業務內容／目前之商品（服務）項目；PDF第45頁
+    published_date: '2026-05-06'
+    publisher: 昇益開發股份有限公司
+    quote_check: not_found
+    title: 昇益開發股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=5455&colorchg=1&filename=2025_5455_20260611F04.pdf&kind=F&step=9
+  tw.5455#e2:
+    locator: 印刷頁41，營業比重表，114年度「營建收入-房屋」列之營業比重欄；PDF第45頁
+    published_date: '2026-05-06'
+    publisher: 昇益開發股份有限公司
+    quote_check: not_found
+    title: 昇益開發股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=5455&colorchg=1&filename=2025_5455_20260611F04.pdf&kind=F&step=9
+  tw.5455#e3:
+    locator: 印刷頁41，營業比重表，114年度「租賃收入」列之營業比重欄；PDF第45頁
+    published_date: '2026-05-06'
+    publisher: 昇益開發股份有限公司
+    quote_check: not_found
+    title: 昇益開發股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=5455&colorchg=1&filename=2025_5455_20260611F04.pdf&kind=F&step=9
+  tw.5455#e4:
+    locator: 第8頁，營運概況
+    published_date: '2026-09-23'
+    publisher: 昇益開發股份有限公司
+    quote_check: found
+    title: 昇益開發股份有限公司2026法人說明會
+    url: https://mopsov.twse.com.tw/nas/STR/545520260923M001.pdf
+  tw.5455#e5:
+    locator: 第10頁，未完工個案－星都滙D區；表列縣市、類別及工程進度
+    published_date: '2026-09-23'
+    publisher: 昇益開發股份有限公司
+    quote_check: found
+    title: 昇益開發股份有限公司2026法人說明會
+    url: https://mopsov.twse.com.tw/nas/STR/545520260923M001.pdf
+  tw.5455#e6:
+    locator: 第11頁，未完工個案－翡麗琚；表列縣市、類別及工程進度
+    published_date: '2026-09-23'
+    publisher: 昇益開發股份有限公司
+    quote_check: not_found
+    title: 昇益開發股份有限公司2026法人說明會
+    url: https://mopsov.twse.com.tw/nas/STR/545520260923M001.pdf
+  tw.5455#e7:
+    locator: 第12頁，未完工個案－御邸；表列縣市、類別及工程進度
+    published_date: '2026-09-23'
+    publisher: 昇益開發股份有限公司
+    quote_check: found
+    title: 昇益開發股份有限公司2026法人說明會
+    url: https://mopsov.twse.com.tw/nas/STR/545520260923M001.pdf
+  tw.5455#e8:
+    locator: 第13頁，未完工個案－森蘊；表列縣市、類別及工程進度
+    published_date: '2026-09-23'
+    publisher: 昇益開發股份有限公司
+    quote_check: found
+    title: 昇益開發股份有限公司2026法人說明會
+    url: https://mopsov.twse.com.tw/nas/STR/545520260923M001.pdf

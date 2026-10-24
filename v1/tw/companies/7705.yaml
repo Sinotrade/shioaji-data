@@ -8,19 +8,53 @@ industry:
   l0_code: '16'
   l0_name: 觀光餐旅
   l0_name_en: Tourism and Hospitality
-primary_chain_position: unknown
+  l1: consumer
+  l1_name: 消費
+  l1_name_en: Consumer
+  l2: cons.discretionary
+  l2_name: 非必需消費
+  l2_name_en: Consumer Discretionary
+  l3: tourism.restaurant
+  l3_name: 餐飲
+  l3_name_en: Restaurants
+primary_chain_position: not_applicable
+summary_short: 經營三商巧福、拿坡里等連鎖餐飲品牌，以銷售餐點取得收入。
+summary_long: 三商餐飲以多品牌連鎖餐飲服務為主要業務，透過旗下門市銷售餐點。主要產品包括三商巧福牛肉麵、拿坡里披薩與炸雞、福勝亭日式豬排定食、三商鮮五丼牛丼與豬排丼，以及三商炸雞現點現做的炸物。2026年上半年合併餐飲銷售收入為新台幣32億6,746萬5千元。母公司為三商投資控股股份有限公司；截至2026年6月底，三商餐飲持有日本三商食品服務株式會社全部股權，該子公司從事即食餐食製造業。
+segments:
+- evidence_ids:
+  - e1
+  id: restaurant
+  name: 餐飲銷售
+  period: 2026年上半年
+  revenue_share_pct: null
 relations:
   parents:
-  - as_of: '2025-12-31'
+  - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
     detail: 餐飲事業子公司
     details:
     - 餐飲事業子公司
+    - 母公司及集團最終控制者
     edge: ef1a858096905
     evidence_level: primary
     id: tw.2905
     name: 三商
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 2
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司，從事即食餐食製造業
+    details:
+    - 全資子公司，從事即食餐食製造業
+    edge: e00c8fbb78151
+    evidence_level: primary
+    id: org.日本三商食品服務株式會社
+    name: 日本三商食品服務株式會社
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -29,7 +63,63 @@ website: https://www.mfb.com.tw/
 tax_id: '97301707'
 incorporated: '1996-12-07'
 listed: '2024-11-26'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.7705#e1:
+    locator: 第20頁，附註六（十七）客戶合約之收入；115年1月至6月欄；單位為新台幣千元
+    published_date: '2026-08-05'
+    publisher: 三商餐飲股份有限公司
+    quote_check: found
+    title: 三商餐飲股份有限公司及子公司民國115年及114年第二季合併財務報告
+    url: https://www.mfb.com.tw/wp-content/uploads/2026/08/三商餐飲115Q2_合併_完稿財報.pdf
+  tw.7705#e2:
+    locator: 品牌介紹及主力商品段落
+    published_date: null
+    publisher: 三商餐飲股份有限公司
+    quote_check: found
+    title: 三商巧福－主營事業或產品、服務介紹
+    url: https://www.mfb.com.tw/portfolio-item/三商巧福/
+  tw.7705#e3:
+    locator: 餐飲特色
+    published_date: null
+    publisher: 三商餐飲股份有限公司
+    quote_check: found
+    title: 拿坡里披薩－主營事業或產品、服務介紹
+    url: https://www.mfb.com.tw/portfolio-item/拿坡里披薩‧炸雞/
+  tw.7705#e4:
+    locator: 餐飲特色
+    published_date: null
+    publisher: 三商餐飲股份有限公司
+    quote_check: found
+    title: 福勝亭－主營事業或產品、服務介紹
+    url: https://www.mfb.com.tw/portfolio-item/福勝亭/
+  tw.7705#e5:
+    locator: 餐飲特色
+    published_date: null
+    publisher: 三商餐飲股份有限公司
+    quote_check: found
+    title: 三商鮮五丼－主營事業或產品、服務介紹
+    url: https://www.mfb.com.tw/portfolio-item/三商鮮五丼/
+  tw.7705#e6:
+    locator: 三商炸雞
+    published_date: null
+    publisher: 三商餐飲股份有限公司
+    quote_check: found
+    title: 主營事業或產品、服務介紹
+    url: https://www.mfb.com.tw/公司簡介/service/
+  tw.7705#e7:
+    locator: 第26頁，附註七（一）母公司與最終控制者
+    published_date: '2026-08-05'
+    publisher: 三商餐飲股份有限公司
+    quote_check: found
+    title: 三商餐飲股份有限公司及子公司民國115年及114年第二季合併財務報告
+    url: https://www.mfb.com.tw/wp-content/uploads/2026/08/三商餐飲115Q2_合併_完稿財報.pdf
+  tw.7705#e8:
+    locator: 第9頁，附註四（二）列入合併財務報告之子公司；115.6.30欄
+    published_date: '2026-08-05'
+    publisher: 三商餐飲股份有限公司
+    quote_check: found
+    title: 三商餐飲股份有限公司及子公司民國115年及114年第二季合併財務報告
+    url: https://www.mfb.com.tw/wp-content/uploads/2026/08/三商餐飲115Q2_合併_完稿財報.pdf

@@ -8,12 +8,90 @@ industry:
   l0_code: '24'
   l0_name: 半導體業
   l0_name_en: Semiconductor
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.semi
+  l2_name: 半導體
+  l2_name_en: Semiconductors
+  l3: semi.ic_design
+  l3_name: IC 設計
+  l3_name_en: IC Design
+chain: chain.semiconductor
+chain_stage:
+  agreement: both
+  also: []
+  reason: 高速通訊IC占營收100%，主要設計PCIe、USB及DisplayPort等化晶片。
+  stage: ip_design
+  stage_name: IP 與 IC 設計
+  tier: upstream
+primary_chain_position: upstream
+summary_short: 設計與銷售高速通訊IC，主要產品為PCIe、USB與DisplayPort訊號等化晶片。
+summary_long: 嘉雨思專注高速通訊IC設計與銷售，2025年營收全部來自高速通訊IC。主要產品包含PCIe Gen5十六通道線性等化器、整合多工與解多工功能的線性等化器，以及支援USB4.0與DisplayPort 2.1的晶片。相關產品線適用於電競電腦、AI PC、AI伺服器與HPC伺服器等開發領域。公司官網另將資料中心光纖光通訊IC列為設計範圍，對應資料中心資訊設備題材；現有產品的AI伺服器應用則對應高速傳輸晶片環節。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_high_speed_ic
+  name: 高速通訊IC
+  period: '2025'
+  revenue_share_pct: 100
+main_theme: theme.ai_server
+themes:
+- also: []
+  stage: chips
+  theme: theme.ai_server
+  tier: upstream
+- also: []
+  stage: it
+  theme: theme.data_center
+  tier: midstream
 website: https://www.leraintech.com
 tax_id: '83494520'
 incorporated: '2020-01-02'
 listed: '2025-12-23'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6921#e1:
+    locator: 印刷頁50／PDF第52頁，肆、營運概況，一、業務內容，營業比重；欄位依序為113、114年度
+    published_date: '2026-04-10'
+    publisher: 嘉雨思科技股份有限公司
+    quote_check: found
+    title: 嘉雨思科技股份有限公司民國114年度年報
+    url: https://www.leraintech.com/wp-content/uploads/2026/05/%E5%98%89%E9%9B%A8%E6%80%9D114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf
+  tw.6921#e2:
+    locator: 頁尾公司業務介紹
+    published_date: null
+    publisher: 嘉雨思科技股份有限公司
+    quote_check: found
+    title: 公司介紹
+    url: https://www.leraintech.com/about_lerain/
+  tw.6921#e3:
+    locator: 嘉雨思產品如下，JYS13016PP01項目
+    published_date: null
+    publisher: 嘉雨思科技股份有限公司
+    quote_check: found
+    title: 產品介紹
+    url: https://www.leraintech.com/production/
+  tw.6921#e4:
+    locator: 嘉雨思產品如下，JYS13008MF01項目
+    published_date: null
+    publisher: 嘉雨思科技股份有限公司
+    quote_check: found
+    title: 產品介紹
+    url: https://www.leraintech.com/production/
+  tw.6921#e5:
+    locator: 嘉雨思產品如下，JYS13002UE20項目
+    published_date: null
+    publisher: 嘉雨思科技股份有限公司
+    quote_check: found
+    title: 產品介紹
+    url: https://www.leraintech.com/production/
+  tw.6921#e6:
+    locator: 印刷頁50／PDF第52頁，公司目前之商品（服務）項目
+    published_date: '2026-04-10'
+    publisher: 嘉雨思科技股份有限公司
+    quote_check: found
+    title: 嘉雨思科技股份有限公司民國114年度年報
+    url: https://www.leraintech.com/wp-content/uploads/2026/05/%E5%98%89%E9%9B%A8%E6%80%9D114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf

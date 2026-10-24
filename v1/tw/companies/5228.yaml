@@ -8,12 +8,57 @@ industry:
   l0_code: '28'
   l0_name: 電子零組件業
   l0_name_en: Electronic Parts and Components
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.passive
+  l3_name: 被動元件
+  l3_name_en: Passive Components
+primary_chain_position: midstream
+summary_short: 製造晶片磁珠、晶片電感與高頻電感等磁性被動元件。
+summary_long: 鈺鎧以積層式晶片磁珠與晶片電感為主要產品，2025年兩項產品營收比重分別約為77%與12%。其晶片磁珠與電感具有封閉磁路、磁遮蔽及無磁漏等特性，用於處理電子電路的電磁干擾。這類產品採表面黏著形式，以小型、薄型元件配合電子產品高密度裝配的需求，產品尺寸涵蓋0201至3312。公司另提供積層式高頻陶瓷晶片電感及GHz磁珠，相關產品用於抑制電子電路中1GHz以上的超高頻雜訊。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_bead
+  name: 晶片磁珠
+  period: '2025'
+  revenue_share_pct: 77
+- evidence_ids:
+  - e1
+  id: seg_inductor
+  name: 晶片電感
+  period: '2025'
+  revenue_share_pct: 12
 website: http://www.maxecho.com.tw
 tax_id: '86667046'
 incorporated: '1992-05-21'
 listed: '2022-05-20'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.5228#e1:
+    locator: （一）公司簡介／2.營業項目與產品結構；瀏覽器實際頁面
+    published_date: '2026-09-16'
+    publisher: MoneyDJ理財網／嘉實投顧
+    quote_check: found
+    title: 鈺鎧科技股份有限公司
+    url: https://www.moneydj.com/KMDJ/Wiki/WikiViewer.aspx?KeyID=a33abcf9-d28d-461e-a695-27a392dc0565
+  tw.5228#e2:
+    locator: （二）產品與競爭條件／1.產品與技術簡介
+    published_date: '2026-09-16'
+    publisher: MoneyDJ理財網／嘉實投顧
+    quote_check: found
+    title: 鈺鎧科技股份有限公司
+    url: https://www.moneydj.com/KMDJ/Wiki/WikiViewer.aspx?KeyID=a33abcf9-d28d-461e-a695-27a392dc0565
+  tw.5228#e3:
+    locator: （二）產品與競爭條件／1.產品與技術簡介
+    published_date: '2026-09-16'
+    publisher: MoneyDJ理財網／嘉實投顧
+    quote_check: found
+    title: 鈺鎧科技股份有限公司
+    url: https://www.moneydj.com/KMDJ/Wiki/WikiViewer.aspx?KeyID=a33abcf9-d28d-461e-a695-27a392dc0565

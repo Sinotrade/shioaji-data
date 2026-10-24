@@ -204,6 +204,18 @@ members:
   stage: downstream
   tier: downstream
   stage_role: primary
+- id: tw.1323
+  detail: 主要收入來自塑膠製品，製造塑膠瓶、射出容器及軟管包材，屬塑膠加工下游。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.1323#e1
+  - tw.1323#e2
+  - tw.1323#e9
+  confidence: ai_cross_checked
+  source: classification
+  stage: downstream
+  tier: downstream
+  stage_role: primary
 - id: tw.1326
   detail: 石化占營收58.1%，以中間原料為主，另涵蓋苯等基礎原料、塑膠樹脂及纖維。
   as_of: '2026-10-14'
@@ -417,6 +429,42 @@ members:
   stage: downstream
   tier: downstream
   stage_role: primary
+- id: tw.1735
+  detail: PU合成樹脂占營收77%，主屬塑膠材料下游；另供應聚酯多元醇及光固化單體等中間原料。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.1735#e1
+  - tw.1735#e2
+  - tw.1735#e5
+  confidence: ai_cross_checked
+  source: classification
+  stage: downstream
+  tier: downstream
+  stage_role: primary
+- id: tw.1735
+  detail: PU合成樹脂占營收77%，主屬塑膠材料下游；另供應聚酯多元醇及光固化單體等中間原料。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.1735#e1
+  - tw.1735#e2
+  - tw.1735#e5
+  confidence: ai_cross_checked
+  source: classification
+  stage: midstream
+  tier: midstream
+  stage_role: also
+- id: tw.1742
+  detail: 蠟品為最大營收來源，以石油蠟精煉加工製成石蠟及微晶蠟，屬中游原料。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.1742#e1
+  - tw.1742#e3
+  - tw.1742#e7
+  confidence: ai_cross_checked
+  source: classification
+  stage: midstream
+  tier: midstream
+  stage_role: primary
 - id: tw.2103
   detail: 合成橡膠占營收98%，供應輪胎及工業製品加工所需的聚合物材料。
   as_of: '2026-10-15'
@@ -473,6 +521,17 @@ members:
   - tw.4303#e2
   - tw.4303#e3
   - tw.4303#e4
+  confidence: ai_cross_checked
+  source: classification
+  stage: downstream
+  tier: downstream
+  stage_role: primary
+- id: tw.4305
+  detail: 一般PVC塑膠布占營收71.52%，主業為塑膠布加工製造，屬下游塑膠與加工階段。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.4305#e1
+  - tw.4305#e2
   confidence: ai_cross_checked
   source: classification
   stage: downstream
@@ -543,6 +602,19 @@ members:
   stage: midstream
   tier: midstream
   stage_role: also
+- id: tw.4716
+  detail: 合成樹脂占營收94.71%，主供塗料及複合材料使用，研究內容明確定位為石化中游。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.4716#e2
+  - tw.4716#e3
+  - tw.4716#e4
+  - tw.4716#e5
+  confidence: ai_cross_checked
+  source: classification
+  stage: midstream
+  tier: midstream
+  stage_role: primary
 - id: tw.4720
   detail: 熱熔膠占營收73.78%，以合成樹脂配方加工製成接著劑，屬石化下游加工。
   as_of: '2026-10-23'
@@ -605,6 +677,17 @@ members:
   stage: downstream
   tier: downstream
   stage_role: primary
+- id: tw.6151
+  detail: 尼龍複合材料占營收82.18%，主業為工程塑膠複合材料製造，屬下游塑膠加工。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.6151#e2
+  - tw.6151#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: downstream
+  tier: downstream
+  stage_role: primary
 - id: tw.6505
   detail: 油品占營業額75.5%，並以輕油裂解生產乙烯、丙烯與丁二烯等基本原料。
   as_of: '2026-10-14'
@@ -628,12 +711,36 @@ members:
   stage: downstream
   tier: downstream
   stage_role: primary
+- id: tw.8935
+  detail: 複合材料塑膠粒占營收74.91%，以工程塑膠複合改質為主，另有射出零組件，均屬下游加工。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.8935#e1
+  - tw.8935#e2
+  - tw.8935#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: downstream
+  tier: downstream
+  stage_role: primary
 - id: tw.9939
   detail: 包材占營收67.16%，主要供應PET瓶、瓶胚、塑膠瓶蓋及熱收縮膜等加工品。
   as_of: '2026-10-15'
   evidence:
   - tw.9939#e2
   - tw.9939#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: downstream
+  tier: downstream
+  stage_role: primary
+- id: tw.9950
+  detail: 行李箱占營收94.17%，採PC、PP及TPO等材質製造，屬下游塑膠加工。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.9950#e2
+  - tw.9950#e3
+  - tw.9950#e4
   confidence: ai_cross_checked
   source: classification
   stage: downstream

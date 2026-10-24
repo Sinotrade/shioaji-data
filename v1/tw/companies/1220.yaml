@@ -8,12 +8,119 @@ industry:
   l0_code: '02'
   l0_name: 食品工業
   l0_name_en: Food
-primary_chain_position: unknown
+  l1: consumer
+  l1_name: 消費
+  l1_name_en: Consumer
+  l2: cons.staples
+  l2_name: 民生消費
+  l2_name_en: Consumer Staples
+  l3: food.processing
+  l3_name: 食品加工
+  l3_name_en: Food Processing
+primary_chain_position: not_applicable
+summary_short: 製售飼料、糖類與玉米澱粉，合併營收另含食品業務。
+summary_long: 台榮本體製造及銷售畜水產飼料、糖類與玉米澱粉；飼料涵蓋雞、豬、鴨及鰻、蝦、魚，糖類包括果糖、麥芽糖與甘蔗液糖。2025年合併產品別營收中，海產為最大單項，其次為飼料與果糖，另有澱粉及其他收入。台榮將禾榮產業與新將軍納入合併財務報告；禾榮經營農畜產品及冷凍調理食品買賣與進出口，新將軍經營廠房出租。兩家公司雖持股未過半，財報均揭露台榮對其具有人事、財務或業務控制權。
+segments:
+- evidence_ids:
+  - e3
+  id: seafood
+  name: 海產（合併產品別）
+  period: 2025年度
+  revenue_share_pct: null
+- evidence_ids:
+  - e3
+  id: feed
+  name: 飼料
+  period: 2025年度
+  revenue_share_pct: null
+- evidence_ids:
+  - e3
+  id: fructose
+  name: 果糖
+  period: 2025年度
+  revenue_share_pct: null
+- evidence_ids:
+  - e3
+  id: starch
+  name: 澱粉
+  period: 2025年度
+  revenue_share_pct: null
+- evidence_ids:
+  - e3
+  id: other
+  name: 其他
+  period: 2025年度
+  revenue_share_pct: null
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 受控制並納入合併的廠房出租子公司
+    details:
+    - 受控制並納入合併的廠房出租子公司
+    edge: e096f813298af
+    evidence_level: primary
+    id: org.新將軍股份有限公司
+    name: 新將軍股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 受控制並納入合併的食品買賣子公司
+    details:
+    - 受控制並納入合併的食品買賣子公司
+    edge: ebaeefa68ae63
+    evidence_level: primary
+    id: org.禾榮產業股份有限公司
+    name: 禾榮產業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.tairoun.com.tw/
 tax_id: '03543210'
 incorporated: '1969-03-13'
 listed: '1991-11-20'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1220#e2:
+    locator: PDF第4頁，公司簡介／主要業務
+    published_date: '2026-05-28'
+    publisher: 台榮產業股份有限公司
+    quote_check: found
+    title: 台榮產業股份有限公司115年法人說明會
+    url: https://www.tairoun.com.tw/upimg/English_Briefing_Tw.pdf
+  tw.1220#e3:
+    locator: 印刷第68頁（PDF第70頁），十四（三）產品別資訊；金額單位為新台幣仟元
+    published_date: '2026-03-11'
+    publisher: 台榮產業股份有限公司
+    quote_check: found
+    title: 台榮產業股份有限公司及其子公司民國114年及113年度合併財務報告
+    url: https://www.tairoun.com.tw/upimg/20260610150844226.pdf
+  tw.1220#e4:
+    locator: 印刷第14頁（PDF第15頁），四（三）6列入合併財務報告之子公司；股權欄為2025及2024年底
+    published_date: '2026-03-11'
+    publisher: 台榮產業股份有限公司
+    quote_check: found
+    title: 台榮產業股份有限公司及其子公司民國114年及113年度合併財務報告
+    url: https://www.tairoun.com.tw/upimg/20260610150844226.pdf
+  tw.1220#e5:
+    locator: 印刷第14頁（PDF第15頁），四（三）6列入合併財務報告之子公司；股權欄為2025及2024年底
+    published_date: '2026-03-11'
+    publisher: 台榮產業股份有限公司
+    quote_check: found
+    title: 台榮產業股份有限公司及其子公司民國114年及113年度合併財務報告
+    url: https://www.tairoun.com.tw/upimg/20260610150844226.pdf
+  tw.1220#e6:
+    locator: 印刷第67頁（PDF第69頁），十四（一）部門別資訊
+    published_date: '2026-03-11'
+    publisher: 台榮產業股份有限公司
+    quote_check: found
+    title: 台榮產業股份有限公司及其子公司民國114年及113年度合併財務報告
+    url: https://www.tairoun.com.tw/upimg/20260610150844226.pdf

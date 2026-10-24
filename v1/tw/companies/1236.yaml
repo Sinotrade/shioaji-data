@@ -8,12 +8,93 @@ industry:
   l0_code: '02'
   l0_name: 食品工業
   l0_name_en: Food
-primary_chain_position: unknown
+  l1: consumer
+  l1_name: 消費
+  l1_name_en: Consumer
+  l2: cons.staples
+  l2_name: 民生消費
+  l2_name_en: Consumer Staples
+  l3: food.processing
+  l3_name: 食品加工
+  l3_name_en: Food Processing
+primary_chain_position: not_applicable
+summary_short: 製造銷售七七巧克力與餅乾、禮坊囍餅及烘焙食品，並提供代工。
+summary_long: 宏亞食品以食品製造及銷售為主，經營七七與禮坊品牌，並提供蛋糕、麵包及烘焙食品代工。依2025年度年報，七七巧克力系列占營收71.63%，為最大業務，禮坊囍餅與法式烘焙產品占18.68%，代工業務占9.69%。七七產品涵蓋77乳加、新貴派與蜜蘭諾，結合巧克力及烘焙餅乾品類；禮坊則製造銷售囍餅與法式烘焙食品。宏亞另持有可頌食品股份有限公司全部股權，該子公司從事食品業，並列入合併財務報表。
+segments:
+- evidence_ids:
+  - e3
+  id: s77
+  name: 七七巧克力系列產品製造與銷售
+  period: '2025'
+  revenue_share_pct: 71.63
+- evidence_ids:
+  - e4
+  id: srivon
+  name: 禮坊囍餅與法式烘焙產品製造與銷售
+  period: '2025'
+  revenue_share_pct: 18.68
+- evidence_ids:
+  - e5
+  id: soem
+  name: 蛋糕、麵包及烘焙食品代工
+  period: '2025'
+  revenue_share_pct: 9.69
+relations:
+  subsidiaries:
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股100%的食品業子公司
+    details:
+    - 持股100%的食品業子公司
+    edge: e01ac5df37e5d
+    evidence_level: primary
+    id: org.可頌食品股份有限公司
+    name: 可頌食品股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.hunya.com.tw
 tax_id: '34106066'
 incorporated: '1976-06-14'
 listed: '2001-09-17'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1236#e2:
+    locator: 77／樂創美好滋味段落
+    published_date: null
+    publisher: 宏亞食品股份有限公司
+    quote_check: found
+    title: 宏亞食品官網－77品牌介紹
+    url: https://www.hunya.com.tw/
+  tw.1236#e3:
+    locator: 印刷頁105／PDF第106頁，Business Operations／Scope of Business／1.A：七七巧克力系列製造與銷售占比
+    published_date: '2026-05-01'
+    publisher: 宏亞食品股份有限公司
+    quote_check: found
+    title: 2025 Annual Report
+    url: https://www.hunya.com.tw/UploadFiles/ir/240a41c5-06c7-47d9-b547-c3b85a65d92c.pdf
+  tw.1236#e4:
+    locator: 印刷頁105／PDF第106頁，Business Operations／Scope of Business／1.B
+    published_date: '2026-05-01'
+    publisher: 宏亞食品股份有限公司
+    quote_check: found
+    title: 2025 Annual Report
+    url: https://www.hunya.com.tw/UploadFiles/ir/240a41c5-06c7-47d9-b547-c3b85a65d92c.pdf
+  tw.1236#e5:
+    locator: 印刷頁105／PDF第106頁，Business Operations／Scope of Business／1.C
+    published_date: '2026-05-01'
+    publisher: 宏亞食品股份有限公司
+    quote_check: found
+    title: 2025 Annual Report
+    url: https://www.hunya.com.tw/UploadFiles/ir/240a41c5-06c7-47d9-b547-c3b85a65d92c.pdf
+  tw.1236#e6:
+    locator: 第13頁，附註四之3合併概況；持股欄依序為115.3.31、114.12.31、114.3.31
+    published_date: '2026-05-11'
+    publisher: 宏亞食品股份有限公司
+    quote_check: found
+    title: 民國115年第一季合併財務報告暨會計師核閱報告
+    url: https://www.hunya.com.tw/UploadFiles/ir/45ddc8c5-0db4-4db7-b37a-d504c6e8905c.pdf

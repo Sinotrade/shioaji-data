@@ -8,7 +8,51 @@ industry:
   l0_code: '27'
   l0_name: 通信網路業
   l0_name_en: Communications and Internet
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.network
+  l2_name: 通信網路
+  l2_name_en: Communications & Networking
+  l3: net.switch
+  l3_name: 網通設備（交換器、路由器）
+  l3_name_en: Networking Equipment (Switches, Routers)
+chain: chain.networking
+chain_stage:
+  agreement: both
+  also: []
+  reason: 網通產品占營收62%，主要設計製造無線閘道器、光纖終端及寬頻接取設備。
+  stage: equipment
+  stage_name: 網通設備與系統
+  tier: downstream
+primary_chain_position: downstream
+summary_short: 設計與製造寬頻網通設備及智慧家庭物聯網產品。
+summary_long: 展達通訊以寬頻網路與智慧家庭物聯網產品的設計、製造及銷售為主要業務。2026年上半年，網通產品占營收62%、AIOT占32%、其他占6%，網通為最大收入來源。主要產品包括Wi-Fi無線閘道器、GPON／XGS-PON光纖終端、G.fast設備、FWA固定無線接取設備，以及網路攝影機與數位家庭終端。公司亦將5G毫米波FWA設備列為開發項目。群光電子為母公司，泰國及蘇州製造子公司均由展達直接或間接全資持有。
+segments:
+- evidence_ids:
+  - e3
+  id: networking
+  name: 網通產品
+  period: 2026年上半年
+  revenue_share_pct: 62
+- evidence_ids:
+  - e3
+  id: aiot
+  name: 人工智慧物聯網產品
+  period: 2026年上半年
+  revenue_share_pct: 32
+- evidence_ids:
+  - e3
+  id: others
+  name: 其他
+  period: 2026年上半年
+  revenue_share_pct: 6
+main_theme: theme.5g
+themes:
+- also: []
+  stage: equipment
+  theme: theme.5g
+  tier: midstream
 relations:
   parents:
   - as_of: '2026-10-14'
@@ -17,10 +61,82 @@ relations:
     detail: 上市子公司展達通訊
     details:
     - 上市子公司展達通訊
+    - 母公司
     edge: e0ee38133a8fd
     evidence_level: primary
     id: tw.2385
     name: 群光
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 2
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接全資持有的控股子公司
+    details:
+    - 直接全資持有的控股子公司
+    edge: e047c7b77841e
+    evidence_level: primary
+    id: org.directmax-international-ltd
+    name: Directmax International Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過Directmax間接全資持有的通訊產品銷售子公司
+    details:
+    - 透過Directmax間接全資持有的通訊產品銷售子公司
+    edge: e1216362ec208
+    evidence_level: primary
+    id: org.systemax-development-ltd
+    name: Systemax Development Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過Directmax間接全資持有的控股子公司
+    details:
+    - 透過Directmax間接全資持有的控股子公司
+    edge: e4118ea73351c
+    evidence_level: primary
+    id: org.xavi-overseas-ltd
+    name: XAVi Overseas Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接全資持有的泰國製造子公司
+    details:
+    - 直接全資持有的泰國製造子公司
+    edge: e70ebc50b15e5
+    evidence_level: primary
+    id: org.xavi-technologies-thailand-co-ltd
+    name: XAVi Technologies (Thailand) Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過Directmax間接全資持有的蘇州製造子公司
+    details:
+    - 透過Directmax間接全資持有的蘇州製造子公司
+    edge: e4464a32dd723
+    evidence_level: primary
+    id: org.展達通訊-蘇州-有限公司
+    name: 展達通訊(蘇州)有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -29,7 +145,112 @@ website: www.xavi.com.tw
 tax_id: '16045290'
 incorporated: '1997-10-17'
 listed: '2022-12-15'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3447#e10:
+    locator: 第48頁，計劃開發之新商品、服務D
+    published_date: '2026-03-31'
+    publisher: 展達通訊股份有限公司
+    quote_check: found
+    title: 展達通訊股份有限公司114年度年報
+    url: https://www.xavi.com.tw/downloads/investor_files_web/10000/1000/155/20260821114236ch.pdf
+  tw.3447#e11:
+    locator: 第29頁，附註七（一）母公司與最終控制者
+    published_date: '2026-08-03'
+    publisher: 展達通訊股份有限公司
+    quote_check: found
+    title: 展達通訊股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.xavi.com.tw/downloads/financial_releases_web/2026/20260821110429report2_ch.pdf
+  tw.3447#e12:
+    locator: 第14頁，列入合併財務報表之所有子公司
+    published_date: '2026-08-03'
+    publisher: 展達通訊股份有限公司
+    quote_check: found
+    title: 展達通訊股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.xavi.com.tw/downloads/financial_releases_web/2026/20260821110429report2_ch.pdf
+  tw.3447#e13:
+    locator: 第14頁，列入合併財務報表之所有子公司
+    published_date: '2026-08-03'
+    publisher: 展達通訊股份有限公司
+    quote_check: found
+    title: 展達通訊股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.xavi.com.tw/downloads/financial_releases_web/2026/20260821110429report2_ch.pdf
+  tw.3447#e14:
+    locator: 第14頁，列入合併財務報表之所有子公司
+    published_date: '2026-08-03'
+    publisher: 展達通訊股份有限公司
+    quote_check: found
+    title: 展達通訊股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.xavi.com.tw/downloads/financial_releases_web/2026/20260821110429report2_ch.pdf
+  tw.3447#e15:
+    locator: 第14頁，列入合併財務報表之所有子公司
+    published_date: '2026-08-03'
+    publisher: 展達通訊股份有限公司
+    quote_check: found
+    title: 展達通訊股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.xavi.com.tw/downloads/financial_releases_web/2026/20260821110429report2_ch.pdf
+  tw.3447#e16:
+    locator: 第14頁，列入合併財務報表之所有子公司
+    published_date: '2026-08-03'
+    publisher: 展達通訊股份有限公司
+    quote_check: found
+    title: 展達通訊股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.xavi.com.tw/downloads/financial_releases_web/2026/20260821110429report2_ch.pdf
+  tw.3447#e2:
+    locator: 第47頁，所營業務之主要內容
+    published_date: '2026-03-31'
+    publisher: 展達通訊股份有限公司
+    quote_check: found
+    title: 展達通訊股份有限公司114年度年報
+    url: https://www.xavi.com.tw/downloads/investor_files_web/10000/1000/155/20260821114236ch.pdf
+  tw.3447#e3:
+    locator: 第14頁，產品別營收；1H2026圓餅圖
+    published_date: '2026-09-10'
+    publisher: 展達通訊股份有限公司
+    quote_check: found
+    title: 展達通訊115年第2季業績說明會
+    url: https://mopsov.twse.com.tw/nas/STR/344720260910M001.pdf
+  tw.3447#e4:
+    locator: 第47頁，目前之商品及服務項目A
+    published_date: '2026-03-31'
+    publisher: 展達通訊股份有限公司
+    quote_check: found
+    title: 展達通訊股份有限公司114年度年報
+    url: https://www.xavi.com.tw/downloads/investor_files_web/10000/1000/155/20260821114236ch.pdf
+  tw.3447#e5:
+    locator: 第47頁，目前之商品及服務項目C
+    published_date: '2026-03-31'
+    publisher: 展達通訊股份有限公司
+    quote_check: found
+    title: 展達通訊股份有限公司114年度年報
+    url: https://www.xavi.com.tw/downloads/investor_files_web/10000/1000/155/20260821114236ch.pdf
+  tw.3447#e6:
+    locator: 第47頁，目前之商品及服務項目F
+    published_date: '2026-03-31'
+    publisher: 展達通訊股份有限公司
+    quote_check: found
+    title: 展達通訊股份有限公司114年度年報
+    url: https://www.xavi.com.tw/downloads/investor_files_web/10000/1000/155/20260821114236ch.pdf
+  tw.3447#e7:
+    locator: 第48頁，目前之商品及服務項目I
+    published_date: '2026-03-31'
+    publisher: 展達通訊股份有限公司
+    quote_check: found
+    title: 展達通訊股份有限公司114年度年報
+    url: https://www.xavi.com.tw/downloads/investor_files_web/10000/1000/155/20260821114236ch.pdf
+  tw.3447#e8:
+    locator: 第47頁，目前之商品及服務項目B
+    published_date: '2026-03-31'
+    publisher: 展達通訊股份有限公司
+    quote_check: found
+    title: 展達通訊股份有限公司114年度年報
+    url: https://www.xavi.com.tw/downloads/investor_files_web/10000/1000/155/20260821114236ch.pdf
+  tw.3447#e9:
+    locator: 第48頁，目前之商品及服務項目J
+    published_date: '2026-03-31'
+    publisher: 展達通訊股份有限公司
+    quote_check: found
+    title: 展達通訊股份有限公司114年度年報
+    url: https://www.xavi.com.tw/downloads/investor_files_web/10000/1000/155/20260821114236ch.pdf

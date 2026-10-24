@@ -8,12 +8,171 @@ industry:
   l0_code: '30'
   l0_name: 資訊服務業
   l0_name_en: Information Service
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.software
+  l2_name: 軟體與資訊服務
+  l2_name_en: Software & IT Services
+  l3: sw.enterprise
+  l3_name: 企業軟體
+  l3_name_en: Enterprise Software
+primary_chain_position: not_applicable
+summary_short: 以企業應用軟體為主，提供製造、人資與金融系統及系統整合。
+summary_long: 資通以企業應用軟體為主，2024年應用軟體占合併營收93%，系統整合占7%。ciMes製造執行系統支援生產資訊可視化與追溯；HCP人力資源管理系統涵蓋人事、差勤、薪資與保險管理。金融產品包括AFEIS外匯系統，支援交易文件與帳務自動產生；eAresBank海外分行核心系統整合企金與消金業務；AML洗錢防制系統提供客戶盡職調查與風險評級。另透過WELJOIN間接持有艾加軟件（蘇州）95.88%股權。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_application
+  name: 應用軟體
+  period: '2024'
+  revenue_share_pct: 93
+- evidence_ids:
+  - e2
+  id: seg_integration
+  name: 系統整合
+  period: '2024'
+  revenue_share_pct: 7
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%股權的投資子公司
+    details:
+    - 直接持有100%股權的投資子公司
+    edge: ea92a978ea656
+    evidence_level: primary
+    id: org.ares-group-corp
+    name: ARES GROUP CORP.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過WELJOIN間接持有95.88%股權的軟體子公司
+    details:
+    - 透過WELJOIN間接持有95.88%股權的軟體子公司
+    edge: e5965e5a750e3
+    evidence_level: primary
+    id: org.ares-software-suzhou
+    name: 艾加軟件(蘇州)股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過ARES GROUP間接持有的投資子公司
+    details:
+    - 透過ARES GROUP間接持有的投資子公司
+    edge: e4ec9d81666d7
+    evidence_level: primary
+    id: org.sharp-keen-management
+    name: SHARP KEEN MANAGEMENT LIMITED
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%股權的投資子公司
+    details:
+    - 直接持有100%股權的投資子公司
+    edge: e879ba8655f9e
+    evidence_level: primary
+    id: org.weljoin-technologies
+    name: WELJOIN TECHNOLOGIES LIMITED (BVI)
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.ares.com.tw
 tax_id: '20873360'
 incorporated: '1980-12-03'
 listed: '2001-09-17'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2471#e1:
+    locator: 「資訊系統軟體領導廠商」產品介紹段
+    published_date: null
+    publisher: 資通電腦
+    quote_check: found
+    title: 資訊系統軟體領導廠商－公司簡介
+    url: https://www.ares.com.tw/profile/
+  tw.2471#e10:
+    locator: 第14頁，附註四（三）子公司表；投資公司ARES GROUP，持股100%
+    published_date: '2026-08-07'
+    publisher: 資通電腦股份有限公司
+    quote_check: found
+    title: 資通電腦股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.ares.com.tw/files/pdf/2026-Q2-%E8%B3%87%E9%80%9A%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
+  tw.2471#e11:
+    locator: 第14頁，附註四（三）子公司表；投資公司WELJOIN，持股95.88%
+    published_date: '2026-08-07'
+    publisher: 資通電腦股份有限公司
+    quote_check: found
+    title: 資通電腦股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.ares.com.tw/files/pdf/2026-Q2-%E8%B3%87%E9%80%9A%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
+  tw.2471#e2:
+    locator: 印刷頁52，PDF第56頁，產品項目及其營業比重
+    published_date: '2025-05-26'
+    publisher: 資通電腦股份有限公司
+    quote_check: found
+    title: 資通電腦股份有限公司113年度年報
+    url: https://www.ares.com.tw/files/pdf/113%E5%B9%B4%E5%A0%B1.pdf
+  tw.2471#e3:
+    locator: 「ciMes 智能工站與 AI 智慧製造解決方案」
+    published_date: null
+    publisher: 資通電腦
+    quote_check: found
+    title: ciMes製造執行系統
+    url: https://cimes.ares.com.tw/
+  tw.2471#e4:
+    locator: HCP人力資源管理系統介紹
+    published_date: null
+    publisher: 資通電腦
+    quote_check: found
+    title: HCP人力資源管理系統
+    url: https://hcp.ares.com.tw/
+  tw.2471#e5:
+    locator: 「為何選擇 AFEIS 外匯系統？」業務面
+    published_date: null
+    publisher: 資通電腦
+    quote_check: found
+    title: 金融銀行國內外匯電腦整合系統
+    url: https://www.ares.com.tw/products/afeis/
+  tw.2471#e6:
+    locator: 優勢與效益
+    published_date: null
+    publisher: 資通電腦
+    quote_check: found
+    title: eAresBank銀行海外分行核心系統
+    url: https://www.ares.com.tw/products/eAresBank/
+  tw.2471#e7:
+    locator: ARESPFC洗錢防制系統模組－KYC客戶審查模組
+    published_date: null
+    publisher: 資通電腦
+    quote_check: found
+    title: AML洗錢防制系統
+    url: https://www.ares.com.tw/products/aml/
+  tw.2471#e8:
+    locator: 第14頁，附註四（三）列入合併財務報告之子公司；投資公司為資通電腦
+    published_date: '2026-08-07'
+    publisher: 資通電腦股份有限公司
+    quote_check: found
+    title: 資通電腦股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.ares.com.tw/files/pdf/2026-Q2-%E8%B3%87%E9%80%9A%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
+  tw.2471#e9:
+    locator: 第14頁，附註四（三）列入合併財務報告之子公司；投資公司為資通電腦
+    published_date: '2026-08-07'
+    publisher: 資通電腦股份有限公司
+    quote_check: found
+    title: 資通電腦股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.ares.com.tw/files/pdf/2026-Q2-%E8%B3%87%E9%80%9A%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf

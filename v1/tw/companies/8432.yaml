@@ -8,7 +8,54 @@ industry:
   l0_code: '22'
   l0_name: 生技醫療業
   l0_name_en: Biotechnology and Medical Care
-primary_chain_position: unknown
+  l1: health
+  l1_name: 醫療保健
+  l1_name_en: Healthcare
+  l2: health.pharma
+  l2_name: 製藥與生技
+  l2_name_en: Pharmaceuticals & Biotech
+  l3: bio.new_drug
+  l3_name: 新藥研發
+  l3_name_en: New Drug Development
+chain: chain.biotech
+chain_stage:
+  agreement: both
+  also:
+  - stage: rnd
+    stage_name: 研發與原料
+    tier: upstream
+  reason: 以處方藥銷售為主，藥品及保健食品占營收73.79%，另有檢測服務及新藥開發業務。
+  stage: channel
+  stage_name: 通路與醫療服務
+  tier: downstream
+primary_chain_position: downstream
+summary_short: 以慢性病處方藥銷售為主，合併業務另含疫苗、保健食品與檢測。
+summary_long: 東生華的處方藥產品涵蓋心血管、腸胃及中樞神經用藥，包括諾壓、脂瑞妥、諾瑞心寧、摩舒胃清及阿雷彼阿慶，亦有乾眼症藥品Tyrvaya及精準醫療檢測服務。2025年合併營收中，藥品及保健食品占73.79%、疫苗占20.80%、檢測占4.45%、勞務收入占0.96%，以藥品及保健食品為最大收入來源。截至2026年6月底，台灣東洋為其母公司；東生華持有創益生技51.60%及高峰藥品51.00%股權，兩者均納入合併財報。
+segments:
+- evidence_ids:
+  - e_revenue
+  id: seg_drugs_health
+  name: 藥品及保健食品
+  period: 2025年度（合併）
+  revenue_share_pct: 73.79
+- evidence_ids:
+  - e_revenue
+  id: seg_vaccines
+  name: 疫苗
+  period: 2025年度（合併）
+  revenue_share_pct: 20.8
+- evidence_ids:
+  - e_revenue
+  id: seg_testing
+  name: 檢測
+  period: 2025年度（合併）
+  revenue_share_pct: 4.45
+- evidence_ids:
+  - e_revenue
+  id: seg_services
+  name: 勞務收入
+  period: 2025年度（合併）
+  revenue_share_pct: 0.96
 relations:
   parents:
   - as_of: '2026-06-30'
@@ -17,10 +64,40 @@ relations:
     detail: 直接持股56.48%的子公司
     details:
     - 直接持股56.48%的子公司
+    - 母公司及集團最終控制者
     edge: e9b2ecffce9c2
     evidence_level: primary
     id: tw.4105
     name: 東洋
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 2
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股51.60%的合併子公司
+    details:
+    - 持股51.60%的合併子公司
+    edge: e8223239592f4
+    evidence_level: primary
+    id: org.創益生技股份有限公司
+    name: 創益生技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股51.00%的合併子公司
+    details:
+    - 持股51.00%的合併子公司
+    edge: e283204094703
+    evidence_level: primary
+    id: org.高峰藥品材料股份有限公司
+    name: 高峰藥品材料股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -29,7 +106,91 @@ website: http://www.tshbiopharm.com
 tax_id: '53093421'
 incorporated: '2010-09-01'
 listed: '2012-04-30'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.8432#e_aleviatin:
+    locator: Aleviatin產品項目
+    published_date: null
+    publisher: 東生華製藥股份有限公司
+    quote_check: found
+    title: 中樞神經處方用藥
+    url: https://www.tshbiopharm.com/ec99/rwd1427/category.asp?category_id=17
+  tw.8432#e_amt rel:
+    locator: AMTREL及Rancad產品項目
+    published_date: null
+    publisher: 東生華製藥股份有限公司
+    quote_check: found
+    title: 心血管處方用藥
+    url: https://www.tshbiopharm.com/ec99/rwd1427/category.asp?category_id=16
+  tw.8432#e_cardiovascular:
+    locator: CRETROL及Rancad產品項目
+    published_date: null
+    publisher: 東生華製藥股份有限公司
+    quote_check: found
+    title: 心血管處方用藥
+    url: https://www.tshbiopharm.com/ec99/rwd1427/category.asp?category_id=16
+  tw.8432#e_development:
+    locator: 核心發展
+    published_date: null
+    publisher: 東生華製藥股份有限公司
+    quote_check: found
+    title: 核心發展
+    url: https://www.tshbiopharm.com/ec99/rwd1427/category.asp?category_id=8
+  tw.8432#e_mopride:
+    locator: Mopride產品項目
+    published_date: null
+    publisher: 東生華製藥股份有限公司
+    quote_check: found
+    title: 肝膽胃腸處方用藥
+    url: https://www.tshbiopharm.com/ec99/rwd1427/category.asp?category_id=18
+  tw.8432#e_operating_model:
+    locator: 印刷頁85；PDF第89頁；短期計畫發展方向
+    published_date: '2026-04-24'
+    publisher: 東生華製藥股份有限公司
+    quote_check: found
+    title: 東生華114年度年報
+    url: https://www.tshbiopharm.com/rwd1427/store/F2/114-yearpaper.pdf
+  tw.8432#e_ophthalmic:
+    locator: 印刷頁78；PDF第82頁；主要產品及其重要用途
+    published_date: '2026-04-24'
+    publisher: 東生華製藥股份有限公司
+    quote_check: found
+    title: 東生華114年度年報
+    url: https://www.tshbiopharm.com/rwd1427/store/F2/114-yearpaper.pdf
+  tw.8432#e_parent:
+    locator: 印刷頁30；PDF第31頁；七、關係人交易，母公司與最終控制者
+    published_date: '2026-08-04'
+    publisher: 東生華製藥股份有限公司
+    quote_check: found
+    title: 東生華115年第二季合併財務報告
+    url: https://www.tshbiopharm.com/rwd1427/store/F2/115Q2_CFR.pdf
+  tw.8432#e_product_scope:
+    locator: 印刷頁78；PDF第82頁；公司目前之商品服務項目
+    published_date: '2026-04-24'
+    publisher: 東生華製藥股份有限公司
+    quote_check: found
+    title: 東生華114年度年報
+    url: https://www.tshbiopharm.com/rwd1427/store/F2/114-yearpaper.pdf
+  tw.8432#e_revenue:
+    locator: 印刷頁78；PDF第82頁；營業比重，依序為113及114年度金額與占比
+    published_date: '2026-04-24'
+    publisher: 東生華製藥股份有限公司
+    quote_check: found
+    title: 東生華114年度年報
+    url: https://www.tshbiopharm.com/rwd1427/store/F2/114-yearpaper.pdf
+  tw.8432#e_sub_cy:
+    locator: 印刷頁10；PDF第11頁；列入合併財務報告之子公司，115.6.30持股欄
+    published_date: '2026-08-04'
+    publisher: 東生華製藥股份有限公司
+    quote_check: found
+    title: 東生華115年第二季合併財務報告
+    url: https://www.tshbiopharm.com/rwd1427/store/F2/115Q2_CFR.pdf
+  tw.8432#e_sub_kaofeng:
+    locator: 印刷頁10；PDF第11頁；列入合併財務報告之子公司，115.6.30持股欄
+    published_date: '2026-08-04'
+    publisher: 東生華製藥股份有限公司
+    quote_check: found
+    title: 東生華115年第二季合併財務報告
+    url: https://www.tshbiopharm.com/rwd1427/store/F2/115Q2_CFR.pdf

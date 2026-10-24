@@ -8,12 +8,115 @@ industry:
   l0_code: '16'
   l0_name: 觀光餐旅
   l0_name_en: Tourism and Hospitality
-primary_chain_position: unknown
+  l1: consumer
+  l1_name: 消費
+  l1_name_en: Consumer
+  l2: cons.discretionary
+  l2_name: 非必需消費
+  l2_name_en: Consumer Discretionary
+  l3: tourism.restaurant
+  l3_name: 餐飲
+  l3_name_en: Restaurants
+primary_chain_position: not_applicable
+summary_short: 經營摩斯漢堡，銷售漢堡、珍珠堡、副餐與飲品。
+summary_long: 安心食品服務經營摩斯漢堡餐飲業務，提供漢堡、珍珠堡及熱狗堡等主餐，並銷售薯條、雞塊、炸雞與飲料、湯品。官網主餐列有燒肉珍珠堡、海洋珍珠堡、摩斯漢堡及摩斯熱狗堡；副餐包括摩斯雞塊與和風炸雞，飲品與湯品包括紅茶、鮮乳、玉米濃湯及鮮菇濃湯。2025年合併報表將業務分為餐飲服務與資訊服務兩個部門，收入以餐飲服務為主。直接子公司安惠資訊科技股份有限公司從事資訊軟體整合，安心於2025年底持有其55.75%股權。
+segments:
+- evidence_ids:
+  - e2
+  id: seg.restaurant
+  name: 餐飲服務
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e2
+  id: seg.it
+  name: 資訊服務
+  period: '2025'
+  revenue_share_pct: null
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司；持股55.75%，從事資訊軟體整合
+    details:
+    - 直接子公司；持股55.75%，從事資訊軟體整合
+    edge: e51194f913c38
+    evidence_level: primary
+    id: org.安惠資訊科技股份有限公司
+    name: 安惠資訊科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.mos.com.tw
 tax_id: '23928945'
 incorporated: '1990-11-23'
 listed: '2011-12-15'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1259#e1:
+    locator: 開頭公司身分說明
+    published_date: null
+    publisher: 安心食品服務股份有限公司
+    quote_check: found
+    title: 台灣官方網站服務條款
+    url: https://www.mos.com.tw/mospolicy/mos-2.html
+  tw.1259#e2:
+    locator: 第74頁，十四（三）部門損益與資產之資訊，114年度；金額單位為新台幣仟元
+    published_date: '2026-03-03'
+    publisher: 安心食品服務股份有限公司
+    quote_check: found
+    title: 2025年度合併財務報告暨會計師查核報告
+    url: https://www.mos.com.tw/upload/FinancialReport/2025%E5%B9%B4%E5%BA%A6-%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E6%9A%A8%E6%9C%83%E8%A8%88%E5%B8%AB%E6%9F%A5%E6%A0%B8%E5%A0%B1%E5%91%8A.pdf
+  tw.1259#e3:
+    locator: 主餐商品清單
+    published_date: null
+    publisher: 安心食品服務股份有限公司
+    quote_check: found
+    title: 摩斯漢堡主餐菜單
+    url: https://www.mos.com.tw/menu/set.aspx
+  tw.1259#e4:
+    locator: 副餐商品清單
+    published_date: null
+    publisher: 安心食品服務股份有限公司
+    quote_check: found
+    title: 摩斯漢堡副餐菜單
+    url: https://www.mos.com.tw/menu/sideDishes.aspx
+  tw.1259#e5:
+    locator: 飲品與湯品商品清單
+    published_date: null
+    publisher: 安心食品服務股份有限公司
+    quote_check: found
+    title: 摩斯漢堡飲品菜單
+    url: https://www.mos.com.tw/menu/beverage.aspx
+  tw.1259#e6:
+    locator: 主餐商品清單
+    published_date: null
+    publisher: 安心食品服務股份有限公司
+    quote_check: found
+    title: 摩斯漢堡主餐菜單
+    url: https://www.mos.com.tw/menu/set.aspx
+  tw.1259#e7:
+    locator: 主餐商品清單
+    published_date: null
+    publisher: 安心食品服務股份有限公司
+    quote_check: found
+    title: 摩斯漢堡主餐菜單
+    url: https://www.mos.com.tw/menu/set.aspx
+  tw.1259#e8:
+    locator: 飲品與湯品商品清單
+    published_date: null
+    publisher: 安心食品服務股份有限公司
+    quote_check: found
+    title: 摩斯漢堡飲品菜單
+    url: https://www.mos.com.tw/menu/beverage.aspx
+  tw.1259#e9:
+    locator: 第20頁，四（三）合併基礎，列入合併財務報告之子公司；114年底及113年底持股欄
+    published_date: '2026-03-03'
+    publisher: 安心食品服務股份有限公司
+    quote_check: found
+    title: 2025年度合併財務報告暨會計師查核報告
+    url: https://www.mos.com.tw/upload/FinancialReport/2025%E5%B9%B4%E5%BA%A6-%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E6%9A%A8%E6%9C%83%E8%A8%88%E5%B8%AB%E6%9F%A5%E6%A0%B8%E5%A0%B1%E5%91%8A.pdf

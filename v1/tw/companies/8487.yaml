@@ -8,12 +8,111 @@ industry:
   l0_code: '36'
   l0_name: 數位雲端
   l0_name_en: Digital and Cloud Services
-primary_chain_position: unknown
+  l1: telecom
+  l1_name: 電信與媒體
+  l1_name_en: Telecom & Media
+  l2: telecom.media
+  l2_name: 媒體與文創
+  l2_name_en: Media & Creative
+  l3: media.content
+  l3_name: 內容與娛樂
+  l3_name_en: Content & Entertainment
+primary_chain_position: not_applicable
+summary_short: 以體育賽事轉播、影音頻道及OTT訂閱為主，另提供廣告與製播服務。
+summary_long: 愛爾達主要經營數位影音內容、體育賽事轉播及自營頻道，並提供境外頻道代理服務。自有ELTA.tv為以運動內容為主、影劇與新聞為輔的訂閱型影音串流平台。公司另提供品牌廣告行銷及賽事製播服務，業務涵蓋影音內容供應、平台經營與製作。2025年度營收以數位影音服務及授權收入為主，占91.25%；其餘為廣告業務7.55%、專案業務1.04%，以及商品銷貨業務0.16%。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_digital
+  name: 數位影音服務及授權收入
+  period: '2025'
+  revenue_share_pct: 91.25
+- evidence_ids:
+  - e2
+  id: seg_advertising
+  name: 廣告業務
+  period: '2025'
+  revenue_share_pct: 7.55
+- evidence_ids:
+  - e3
+  id: seg_project
+  name: 專案業務
+  period: '2025'
+  revenue_share_pct: 1.04
+- evidence_ids:
+  - e4
+  id: seg_merchandise
+  name: 商品銷貨業務
+  period: '2025'
+  revenue_share_pct: 0.16
 website: www.elta.com.tw
 tax_id: '70542247'
 incorporated: '2000-03-28'
 listed: '2024-03-26'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.8487#e1:
+    locator: 第82頁，營業比重表，114年度數位影音服務及授權收入欄
+    published_date: null
+    publisher: 愛爾達科技股份有限公司
+    quote_check: found
+    title: 115年股東常會年報
+    url: https://official-elta.cdn.hinet.net/storage/upload/shareholders_meeting/AJ3Bm1YhLIvuTv9jMb9Kd5fGSSwp4hMywIR4ayCu.pdf
+  tw.8487#e2:
+    locator: 第82頁，營業比重表，114年度廣告業務欄
+    published_date: null
+    publisher: 愛爾達科技股份有限公司
+    quote_check: found
+    title: 115年股東常會年報
+    url: https://official-elta.cdn.hinet.net/storage/upload/shareholders_meeting/AJ3Bm1YhLIvuTv9jMb9Kd5fGSSwp4hMywIR4ayCu.pdf
+  tw.8487#e3:
+    locator: 第82頁，營業比重表，114年度專案業務欄
+    published_date: null
+    publisher: 愛爾達科技股份有限公司
+    quote_check: found
+    title: 115年股東常會年報
+    url: https://official-elta.cdn.hinet.net/storage/upload/shareholders_meeting/AJ3Bm1YhLIvuTv9jMb9Kd5fGSSwp4hMywIR4ayCu.pdf
+  tw.8487#e4:
+    locator: 第82頁，營業比重表，114年度商品銷貨業務欄
+    published_date: null
+    publisher: 愛爾達科技股份有限公司
+    quote_check: found
+    title: 115年股東常會年報
+    url: https://official-elta.cdn.hinet.net/storage/upload/shareholders_meeting/AJ3Bm1YhLIvuTv9jMb9Kd5fGSSwp4hMywIR4ayCu.pdf
+  tw.8487#e5:
+    locator: 頻道經營介紹首段
+    published_date: null
+    publisher: 愛爾達科技股份有限公司
+    quote_check: found
+    title: 頻道經營
+    url: https://www.elta.com.tw/business/self_channel
+  tw.8487#e6:
+    locator: 平台介紹首段
+    published_date: null
+    publisher: 愛爾達科技股份有限公司
+    quote_check: found
+    title: ELTA.tv（OTT影音串流平台）
+    url: https://www.elta.com.tw/business/elta_tv_ott
+  tw.8487#e7:
+    locator: 業務介紹首段
+    published_date: null
+    publisher: 愛爾達科技股份有限公司
+    quote_check: found
+    title: 代理境外頻道
+    url: https://www.elta.com.tw/business/agency_foreign_channel
+  tw.8487#e8:
+    locator: 廣告業務介紹首段
+    published_date: null
+    publisher: 愛爾達科技股份有限公司
+    quote_check: found
+    title: 廣告業務
+    url: https://www.elta.com.tw/business/advertising_business
+  tw.8487#e9:
+    locator: 賽事製播介紹首段
+    published_date: null
+    publisher: 愛爾達科技股份有限公司
+    quote_check: found
+    title: 專案業務－賽事製播
+    url: https://www.elta.com.tw/business/sport_event

@@ -8,12 +8,138 @@ industry:
   l0_code: '28'
   l0_name: 電子零組件業
   l0_name_en: Electronic Parts and Components
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.battery
+  l3_name: 電池與電池模組
+  l3_name_en: Batteries & Battery Modules
+primary_chain_position: not_applicable
+summary_short: 製造與銷售鋰鐵電池模組及系統，應用於UPS備援、儲能與車用。
+summary_long: 長園科主要經營鋰鐵電池模組與系統，產品涵蓋大功率UPS備援電源、錶後儲能及輕型電動車用電池。2025年前三季營收分類以半導體應用為最大項，其餘包括車用及其他綠能系統與電池租賃。公司法說將AI算力中心UPS／BESS及BBU列入產品布局，其中BBU以規劃定位呈現。集團子公司包括從事電池批發的寰聖國際實業，以及從事專利授權業務的CAEC Patent Licensing L.L.C.。
+segments:
+- evidence_ids:
+  - e6
+  id: seg_semiconductor
+  name: 半導體應用
+  period: 2025年前三季
+  revenue_share_pct: null
+- evidence_ids:
+  - e6
+  id: seg_vehicle_green
+  name: 車用及其他綠能系統
+  period: 2025年前三季
+  revenue_share_pct: null
+- evidence_ids:
+  - e6
+  id: seg_leasing
+  name: 電池租賃
+  period: 2025年前三季
+  revenue_share_pct: null
+main_theme: theme.ev
+themes:
+- also: []
+  stage: parts
+  theme: theme.ev
+  tier: midstream
+- also: []
+  stage: equipment
+  theme: theme.data_center
+  tier: upstream
+relations:
+  subsidiaries:
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 美國專利授權子公司
+    details:
+    - 美國專利授權子公司
+    edge: e20da4908ac78
+    evidence_level: primary
+    id: org.caec-patent-licensing-l-l-c
+    name: CAEC Patent Licensing L.L.C.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 電池批發子公司
+    details:
+    - 電池批發子公司
+    edge: ea7d03d75ede2
+    evidence_level: primary
+    id: org.寰聖國際實業股份有限公司
+    name: 寰聖國際實業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.caec.com.tw
 tax_id: '16207745'
 incorporated: '1997-08-28'
 listed: '2013-11-21'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.8038#e1:
+    locator: 第6頁，主要產品
+    published_date: '2025-11-19'
+    publisher: 長園科技實業股份有限公司
+    quote_check: found
+    title: 長園科技2025年11月19日法人說明會
+    url: https://www.caec.com.tw/_i/assets/file/shareholder/50941ff887c34ab87a1c46bbfb2178a2.pdf
+  tw.8038#e2:
+    locator: 第23頁，主力產品（一）
+    published_date: '2025-11-19'
+    publisher: 長園科技實業股份有限公司
+    quote_check: found
+    title: 長園科技2025年11月19日法人說明會
+    url: https://www.caec.com.tw/_i/assets/file/shareholder/50941ff887c34ab87a1c46bbfb2178a2.pdf
+  tw.8038#e3:
+    locator: 第24頁，錶後儲能電池系統
+    published_date: '2025-11-19'
+    publisher: 長園科技實業股份有限公司
+    quote_check: found
+    title: 長園科技2025年11月19日法人說明會
+    url: https://www.caec.com.tw/_i/assets/file/shareholder/50941ff887c34ab87a1c46bbfb2178a2.pdf
+  tw.8038#e4:
+    locator: 第18頁，車用綠能應用產品
+    published_date: '2025-11-19'
+    publisher: 長園科技實業股份有限公司
+    quote_check: found
+    title: 長園科技2025年11月19日法人說明會
+    url: https://www.caec.com.tw/_i/assets/file/shareholder/50941ff887c34ab87a1c46bbfb2178a2.pdf
+  tw.8038#e5:
+    locator: 第18頁，產品戰略及定位
+    published_date: '2025-11-19'
+    publisher: 長園科技實業股份有限公司
+    quote_check: found
+    title: 長園科技2025年11月19日法人說明會
+    url: https://www.caec.com.tw/_i/assets/file/shareholder/50941ff887c34ab87a1c46bbfb2178a2.pdf
+  tw.8038#e6:
+    locator: 第12頁，2024Q3與2025Q3營收分類比較
+    published_date: '2025-11-19'
+    publisher: 長園科技實業股份有限公司
+    quote_check: found
+    title: 長園科技2025年11月19日法人說明會
+    url: https://www.caec.com.tw/_i/assets/file/shareholder/50941ff887c34ab87a1c46bbfb2178a2.pdf
+  tw.8038#e7:
+    locator: 第14頁合併基礎及附表三
+    published_date: '2025-11-13'
+    publisher: 長園科技實業股份有限公司
+    quote_check: found
+    title: 民國114年及113年第三季合併財務報告
+    url: https://www.caec.com.tw/_i/assets/file/financial/31b781c2c45cb17abefb52608407bcb7.pdf
+  tw.8038#e8:
+    locator: 第14頁合併基礎及附表三
+    published_date: '2025-11-13'
+    publisher: 長園科技實業股份有限公司
+    quote_check: found
+    title: 民國114年及113年第三季合併財務報告
+    url: https://www.caec.com.tw/_i/assets/file/financial/31b781c2c45cb17abefb52608407bcb7.pdf

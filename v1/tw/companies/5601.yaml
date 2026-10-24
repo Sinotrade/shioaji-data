@@ -8,12 +8,71 @@ industry:
   l0_code: '15'
   l0_name: 航運業
   l0_name_en: Shipping and Transportation
-primary_chain_position: unknown
+  l1: realestate
+  l1_name: 不動產
+  l1_name_en: Real Estate
+  l2: re.dev
+  l2_name: 不動產
+  l2_name_en: Real Estate
+  l3: re.commercial
+  l3_name: 商用不動產與資產管理
+  l3_name_en: Commercial Real Estate & Asset Management
+primary_chain_position: not_applicable
+summary_short: 以倉庫、場地出租及貨櫃集散、吊卸與維修服務取得收入。
+summary_long: 台聯櫃的收入來自倉庫與場地出租，以及貨櫃集散站作業兩類服務。依2024年營收組成，倉庫場地租賃占58%，貨櫃作業占42%，租賃為較大收入來源。貨櫃服務涵蓋裝櫃、拆櫃、裝車、卸車與貨櫃的集中、分散，並提供貨櫃保養、維護及整修。公司亦經營空重櫃板車架停放業務，與倉庫、空地出租共同構成其場站服務內容，業務同時包含出租場地及提供貨櫃相關作業。
+segments:
+- evidence_ids:
+  - e2
+  id: rental
+  name: 倉庫場地租賃
+  period: '2024'
+  revenue_share_pct: 58
+- evidence_ids:
+  - e2
+  id: container_operations
+  name: 貨櫃作業
+  period: '2024'
+  revenue_share_pct: 42
 website: www.tactc.com.tw/
 tax_id: '00701122'
 incorporated: '1973-07-16'
 listed: '1994-11-24'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.5601#e1:
+    locator: 服務內容
+    published_date: null
+    publisher: 臺聯貨櫃
+    quote_check: found
+    title: 公司簡介及沿革
+    url: https://www.tactc.com.tw/info.html
+  tw.5601#e2:
+    locator: 公司簡介／營業項目與產品結構
+    published_date: '2025-07-23'
+    publisher: MoneyDJ理財網／嘉實投顧
+    quote_check: found
+    title: 台聯貨櫃通運股份有限公司
+    url: https://www.moneydj.com/kmdj/wiki/wikiviewer.aspx?keyid=3ef2f392-dc80-475c-80c4-76954b5de3a7
+  tw.5601#e3:
+    locator: 所營事業第1項
+    published_date: null
+    publisher: 臺聯貨櫃
+    quote_check: found
+    title: 公司簡介及沿革
+    url: https://www.tactc.com.tw/info.html
+  tw.5601#e4:
+    locator: 所營事業第2項
+    published_date: null
+    publisher: 臺聯貨櫃
+    quote_check: found
+    title: 公司簡介及沿革
+    url: https://www.tactc.com.tw/info.html
+  tw.5601#e5:
+    locator: 產品與競爭條件／產能狀況與生產能力
+    published_date: '2025-07-23'
+    publisher: MoneyDJ理財網／嘉實投顧
+    quote_check: found
+    title: 台聯貨櫃通運股份有限公司
+    url: https://www.moneydj.com/kmdj/wiki/wikiviewer.aspx?keyid=3ef2f392-dc80-475c-80c4-76954b5de3a7

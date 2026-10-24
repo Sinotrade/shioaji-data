@@ -8,12 +8,137 @@ industry:
   l0_code: '31'
   l0_name: 其他電子業
   l0_name_en: Other Electronic
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.battery
+  l3_name: 電池與電池模組
+  l3_name_en: Batteries & Battery Modules
+primary_chain_position: midstream
+summary_short: 以可充式鋰電池研發、設計與製造為主，營收以小方型電池為大宗。
+summary_long: 興能高主要從事可充式鋰離子及鋰高分子電池的研發、設計與生產。2026年第一季產品型態比重以小方型電池87.4%為主，其次為中大型方形電池7%、圓柱型電池4.3%及其他1.3%。公司推出採用XNO鈮基材料的快充電池，並發展電池備援單元與客製化電池管理系統解決方案。官網亦列有無人機電池及半固態電池產品；AI伺服器BBU相關軟包電池模組於2025年公告時仍在開發階段。昆山興能能源科技有限公司為其重要子公司。
+segments:
+- evidence_ids:
+  - e2
+  id: seg.small_rectangular
+  name: 小方型電池
+  period: 2026Q1
+  revenue_share_pct: 87.4
+- evidence_ids:
+  - e2
+  id: seg.medium_large_rectangular
+  name: 方形中大型電池
+  period: 2026Q1
+  revenue_share_pct: 7
+- evidence_ids:
+  - e2
+  id: seg.cylindrical
+  name: 圓柱型電池
+  period: 2026Q1
+  revenue_share_pct: 4.3
+- evidence_ids:
+  - e2
+  id: seg.other
+  name: 其他
+  period: 2026Q1
+  revenue_share_pct: 1.3
+main_theme: theme.ai_server
+themes:
+- also: []
+  stage: components
+  theme: theme.ai_server
+  tier: midstream
+- also: []
+  stage: components
+  theme: theme.drone
+  tier: upstream
+relations:
+  subsidiaries:
+  - as_of: '2026-10-16'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 重要子公司
+    details:
+    - 重要子公司
+    edge: efecc6a974d7e
+    evidence_level: primary
+    id: org.昆山興能能源科技有限公司
+    name: 昆山興能能源科技有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.synst.com.tw
 tax_id: '97430131'
 incorporated: '1997-03-10'
 listed: '2018-12-05'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6558#e1:
+    locator: 公司介紹
+    published_date: null
+    publisher: 興能高科技股份有限公司
+    quote_check: found
+    title: 興能高科技股份有限公司官網首頁
+    url: https://www.synst.com.tw/zh-tw/
+  tw.6558#e2:
+    locator: 邱建齊報導，末段產品型態比重
+    published_date: '2026-05-21'
+    publisher: MoneyDJ理財網
+    quote_check: found
+    title: 興能高非消費性應用佔比已顯升，往目標方向推進
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=4bb22cee-009b-4072-834d-7a387022ddd0
+  tw.6558#e3:
+    locator: 新聞稿首段
+    published_date: '2025-05-16'
+    publisher: 興能高科技股份有限公司
+    quote_check: found
+    title: SYNergy 推出採用 XNO® 陽極技術的消費性電子電池
+    url: https://www.synst.com.tw/zh-tw/news-51829/SYNergy-%E6%8E%A8%E5%87%BA%E6%8E%A1%E7%94%A8-XNO%C2%AE-%E9%99%BD%E6%A5%B5%E6%8A%80%E8%A1%93%E7%9A%84%E6%B6%88%E8%B2%BB%E6%80%A7%E9%9B%BB%E5%AD%90%E9%9B%BB%E6%B1%A0.html
+  tw.6558#e4:
+    locator: 執行長談話
+    published_date: '2025-05-16'
+    publisher: 興能高科技股份有限公司
+    quote_check: found
+    title: SYNergy 推出採用 XNO® 陽極技術的消費性電子電池
+    url: https://www.synst.com.tw/zh-tw/news-51829/SYNergy-%E6%8E%A8%E5%87%BA%E6%8E%A1%E7%94%A8-XNO%C2%AE-%E9%99%BD%E6%A5%B5%E6%8A%80%E8%A1%93%E7%9A%84%E6%B6%88%E8%B2%BB%E6%80%A7%E9%9B%BB%E5%AD%90%E9%9B%BB%E6%B1%A0.html
+  tw.6558#e5:
+    locator: 軟包電池模組開發進度段落
+    published_date: '2025-05-28'
+    publisher: 興能高科技股份有限公司
+    quote_check: found
+    title: 同樣攻AI伺服器用BBU　興能高另闢蹊徑推新材料電芯
+    url: https://www.synst.com.tw/zh-tw/news-51884/%E5%90%8C%E6%A8%A3%E6%94%BBAI%E4%BC%BA%E6%9C%8D%E5%99%A8%E7%94%A8BBU%E3%80%80%E8%88%88%E8%83%BD%E9%AB%98%E5%8F%A6%E9%97%A2%E8%B9%8A%E5%BE%91%E6%8E%A8%E6%96%B0%E6%9D%90%E6%96%99%E9%9B%BB%E8%8A%AF.html
+  tw.6558#e6:
+    locator: 無人機電池分類之產品標題
+    published_date: null
+    publisher: 興能高科技股份有限公司
+    quote_check: found
+    title: Drone Batteries
+    url: https://www.synst.com.tw/zh-tw/product-733467/Drone-Batteries.html
+  tw.6558#e7:
+    locator: 產品列表
+    published_date: null
+    publisher: 興能高科技股份有限公司
+    quote_check: found
+    title: 固態電池
+    url: https://www.synst.com.tw/zh-tw/product-c170172/%E5%9B%BA%E6%85%8B%E9%9B%BB%E6%B1%A0.html
+  tw.6558#e8:
+    locator: 標題與首段
+    published_date: '2025-05-28'
+    publisher: 興能高科技股份有限公司
+    quote_check: found
+    title: 同樣攻AI伺服器用BBU　興能高另闢蹊徑推新材料電芯
+    url: https://www.synst.com.tw/zh-tw/news-51884/%E5%90%8C%E6%A8%A3%E6%94%BBAI%E4%BC%BA%E6%9C%8D%E5%99%A8%E7%94%A8BBU%E3%80%80%E8%88%88%E8%83%BD%E9%AB%98%E5%8F%A6%E9%97%A2%E8%B9%8A%E5%BE%91%E6%8E%A8%E6%96%B0%E6%9D%90%E6%96%99%E9%9B%BB%E8%8A%AF.html
+  tw.6558#e9:
+    locator: 重大訊息主旨
+    published_date: '2026-10-16'
+    publisher: 公開資訊觀測站重大訊息，MoneyDJ理財網轉載
+    quote_check: found
+    title: 興能高 代重要子公司昆山興能能源科技有限公司公告董事長辭任
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=bcfe5e57-74f3-4d97-ba67-1c78c64a37ec&c=MB06

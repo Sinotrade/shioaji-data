@@ -199,6 +199,28 @@ members:
   stage: modules
   tier: midstream
   stage_role: also
+- id: tw.3306
+  detail: GPS接收機占營收86%，以終端設備為主，另提供GNSS定位模組。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.3306#e1
+  - tw.3306#e2
+  confidence: ai_cross_checked
+  source: classification
+  stage: equipment
+  tier: downstream
+  stage_role: primary
+- id: tw.3306
+  detail: GPS接收機占營收86%，以終端設備為主，另提供GNSS定位模組。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.3306#e1
+  - tw.3306#e2
+  confidence: ai_cross_checked
+  source: classification
+  stage: modules
+  tier: midstream
+  stage_role: also
 - id: tw.3363
   detail: 光纖跳接線占營收63.01%，另供應連接器、光纖陣列及光收發模組。
   as_of: '2026-10-14'
@@ -217,6 +239,19 @@ members:
   evidence:
   - tw.3380#e2
   - tw.3380#e5
+  confidence: ai_cross_checked
+  source: classification
+  stage: equipment
+  tier: downstream
+  stage_role: primary
+- id: tw.3447
+  detail: 網通產品占營收62%，主要設計製造無線閘道器、光纖終端及寬頻接取設備。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.3447#e2
+  - tw.3447#e3
+  - tw.3447#e4
+  - tw.3447#e5
   confidence: ai_cross_checked
   source: classification
   stage: equipment
@@ -441,6 +476,18 @@ members:
   stage: chips
   tier: upstream
   stage_role: also
+- id: tw.5353
+  detail: 通信網路產品占營收39.75%，為最大類別，主要提供工業乙太網路交換器與5G工業路由器。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.5353#e1
+  - tw.5353#e2
+  - tw.5353#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: equipment
+  tier: downstream
+  stage_role: primary
 - id: tw.5388
   detail: 寬頻終端設備占55.92%，主業為網通設備，另提供5G及物聯網模組。
   as_of: '2026-10-15'
@@ -526,6 +573,19 @@ members:
   source: classification
   stage: modules
   tier: midstream
+  stage_role: primary
+- id: tw.6216
+  detail: 主要產銷寬頻與VPN路由器，並提供無線基地台、交換器及網管軟體，屬網通設備與系統。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.6216#e2
+  - tw.6216#e4
+  - tw.6216#e5
+  - tw.6216#e7
+  confidence: ai_cross_checked
+  source: classification
+  stage: equipment
+  tier: downstream
   stage_role: primary
 - id: tw.6218
   detail: 資訊網路週邊占營收69%，以網路設備、系統整合及維運為主，屬網通設備與系統。
@@ -844,6 +904,18 @@ members:
   - tw.8050#e1
   - tw.8050#e2
   - tw.8050#e6
+  confidence: ai_cross_checked
+  source: classification
+  stage: equipment
+  tier: downstream
+  stage_role: primary
+- id: tw.8059
+  detail: 主要業務為寬頻網通設備，產品涵蓋數據機、Mesh Wi-Fi路由器、光纖閘道器及5G接取終端。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.8059#e1
+  - tw.8059#e2
+  - tw.8059#e3
   confidence: ai_cross_checked
   source: classification
   stage: equipment

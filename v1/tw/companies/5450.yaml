@@ -8,12 +8,228 @@ industry:
   l0_code: '20'
   l0_name: 其他業
   l0_name_en: Others
-primary_chain_position: unknown
+  l1: materials
+  l1_name: 原物料
+  l1_name_en: Materials
+  l2: mat.other
+  l2_name: 其他原物料
+  l2_name_en: Other Materials
+  l3: matl.textile_fiber
+  l3_name: 紡織纖維與機能布料
+  l3_name_en: Textiles, Fibers & Functional Fabrics
+chain: chain.textile
+chain_stage:
+  agreement: both
+  also: []
+  reason: 紡織複合材占營收90.04%，主要供應黏扣帶、防護紡織材料及布料貼合加工。
+  stage: fabric
+  stage_name: 織布與染整
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 以紡織複合材料為主要營收來源，製造發泡材料、黏扣帶及功能性材料。
+summary_long: 南良以紡織複合材料為主要業務，2025年度紡織複合材占營收90.04%，化學產品與電子產品分別占5.45%及4.51%。主要材料包括Neoprene氯丁橡膠等高分子彈性體發泡材料、黏扣帶、特殊紡織防護材料及功能性薄膜複合材料。發泡片材可依需求貼合布料或裁切加工，功能性薄膜則搭配貼合製程供應。旗下子公司包括嘉良特化、元宏國際、嘉興南雄、東莞南良及越南南良。
+segments:
+- evidence_ids:
+  - e1
+  id: textile_composites
+  name: 紡織複合材
+  period: '2025'
+  revenue_share_pct: 90.04
+- evidence_ids:
+  - e2
+  id: chemicals
+  name: 化學產品
+  period: '2025'
+  revenue_share_pct: 5.45
+- evidence_ids:
+  - e3
+  id: electronics
+  name: 電子產品
+  period: '2025'
+  revenue_share_pct: 4.51
+relations:
+  parents:
+  - as_of: '2026-04-25'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股過半之控制股東
+    details:
+    - 持股過半之控制股東
+    edge: e077cdc7c5e68
+    evidence_level: primary
+    id: org.子良興業-股-公司
+    name: 子良興業(股)公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2026-10-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 官網列示子公司
+    details:
+    - 官網列示子公司
+    edge: e39e69a862e5f
+    evidence_level: primary
+    id: org.元宏國際股份有限公司
+    name: 元宏國際股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 官網列示子公司
+    details:
+    - 官網列示子公司
+    edge: ef6775343ccb9
+    evidence_level: primary
+    id: org.嘉興南雄高分子有限公司
+    name: 嘉興南雄高分子有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 官網列示子公司
+    details:
+    - 官網列示子公司
+    edge: eed4141998865
+    evidence_level: primary
+    id: org.嘉良特化股份有限公司
+    name: 嘉良特化股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 官網列示子公司
+    details:
+    - 官網列示子公司
+    edge: ec0824ee1ddc3
+    evidence_level: primary
+    id: org.東莞南良橡膠製品有限公司
+    name: 東莞南良橡膠製品有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 官網列示子公司
+    details:
+    - 官網列示子公司
+    edge: e47b273c0b9e0
+    evidence_level: primary
+    id: org.越南南良責任有限公司
+    name: 越南南良責任有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.namliong-global.com
 tax_id: '23438530'
 incorporated: '1989-08-11'
 listed: '2000-08-22'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.5450#e1:
+    locator: 第69頁，主要產品項目及營業比重；114年度
+    published_date: '2026-05-22'
+    publisher: 南良國際股份有限公司
+    quote_check: found
+    title: 南良國際股份有限公司一一四年度年報
+    url: https://www.namliong-global.com/Templates/att/3-2.115-Annual-report.pdf?lng=zh-TW
+  tw.5450#e10:
+    locator: 子公司清單
+    published_date: null
+    publisher: 南良國際股份有限公司
+    quote_check: found
+    title: 子公司
+    url: https://www.namliong-global.com/zh-TW/page/affiliated-company.html
+  tw.5450#e11:
+    locator: 子公司清單
+    published_date: null
+    publisher: 南良國際股份有限公司
+    quote_check: found
+    title: 子公司
+    url: https://www.namliong-global.com/zh-TW/page/affiliated-company.html
+  tw.5450#e12:
+    locator: 子公司清單
+    published_date: null
+    publisher: 南良國際股份有限公司
+    quote_check: found
+    title: 子公司
+    url: https://www.namliong-global.com/zh-TW/page/affiliated-company.html
+  tw.5450#e13:
+    locator: 第60頁，前十大股東關係資料；資料日期115年4月25日
+    published_date: '2026-05-22'
+    publisher: 南良國際股份有限公司
+    quote_check: found
+    title: 南良國際股份有限公司一一四年度年報
+    url: https://www.namliong-global.com/Templates/att/3-2.115-Annual-report.pdf?lng=zh-TW
+  tw.5450#e2:
+    locator: 第69頁，主要產品項目及營業比重；114年度
+    published_date: '2026-05-22'
+    publisher: 南良國際股份有限公司
+    quote_check: found
+    title: 南良國際股份有限公司一一四年度年報
+    url: https://www.namliong-global.com/Templates/att/3-2.115-Annual-report.pdf?lng=zh-TW
+  tw.5450#e3:
+    locator: 第69頁，主要產品項目及營業比重；114年度
+    published_date: '2026-05-22'
+    publisher: 南良國際股份有限公司
+    quote_check: found
+    title: 南良國際股份有限公司一一四年度年報
+    url: https://www.namliong-global.com/Templates/att/3-2.115-Annual-report.pdf?lng=zh-TW
+  tw.5450#e4:
+    locator: 海棉事業部（高分子彈性體發泡材料）部門簡介
+    published_date: null
+    publisher: 南良國際股份有限公司
+    quote_check: found
+    title: 材料事業
+    url: https://www.namliong-global.com/zh-TW/category/Materials-Business.html
+  tw.5450#e5:
+    locator: 織造事業本部（黏扣帶材料）部門簡介
+    published_date: null
+    publisher: 南良國際股份有限公司
+    quote_check: found
+    title: 材料事業
+    url: https://www.namliong-global.com/zh-TW/category/Materials-Business.html
+  tw.5450#e6:
+    locator: 特紡事業本部（特殊紡織品材料）部門簡介
+    published_date: null
+    publisher: 南良國際股份有限公司
+    quote_check: found
+    title: 材料事業
+    url: https://www.namliong-global.com/zh-TW/category/Materials-Business.html
+  tw.5450#e7:
+    locator: 特材事業本部（功能性薄膜複合材料）部門簡介
+    published_date: null
+    publisher: 南良國際股份有限公司
+    quote_check: found
+    title: 材料事業
+    url: https://www.namliong-global.com/zh-TW/category/Materials-Business.html
+  tw.5450#e8:
+    locator: 子公司清單
+    published_date: null
+    publisher: 南良國際股份有限公司
+    quote_check: found
+    title: 子公司
+    url: https://www.namliong-global.com/zh-TW/page/affiliated-company.html
+  tw.5450#e9:
+    locator: 子公司清單
+    published_date: null
+    publisher: 南良國際股份有限公司
+    quote_check: found
+    title: 子公司
+    url: https://www.namliong-global.com/zh-TW/page/affiliated-company.html

@@ -8,14 +8,52 @@ industry:
   l0_code: '32'
   l0_name: 文化創意業
   l0_name_en: Cultural and Creative
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.software
+  l2_name: 軟體與資訊服務
+  l2_name_en: Software & IT Services
+  l3: sw.gaming
+  l3_name: 遊戲
+  l3_name_en: Games
+primary_chain_position: not_applicable
+summary_short: 研發與經營線上及手機遊戲，收入來自遊戲點數與授權權利金。
+summary_long: 中華網龍主要從事遊戲研發與經營，產品涵蓋線上、網頁及手持遊戲；2025年遊戲產品營收為新台幣395,919仟元，占營收100%。2026年上半年收入分為遊戲點數、權利金及其他營業收入。產品包括飄流幻境Re：星之方舟、吞食天地M2.0及金庸群俠傳Online，並於2026年8月推出三國鼎立Online Remastered。智冠科技為其母公司；東方龍數位、樂聚多科技等子公司從事網路遊戲服務，另有香港及北京的間接子公司經營相關業務。
+segments:
+- evidence_ids:
+  - e1
+  - e2
+  id: seg_game
+  name: 遊戲產品
+  period: '2025'
+  revenue_share_pct: 100
+- evidence_ids:
+  - e3
+  id: seg_points
+  name: 點數收入
+  period: 2026-H1
+  revenue_share_pct: null
+- evidence_ids:
+  - e3
+  id: seg_royalties
+  name: 權利金收入
+  period: 2026-H1
+  revenue_share_pct: null
+- evidence_ids:
+  - e3
+  id: seg_other
+  name: 其他營業收入
+  period: 2026-H1
+  revenue_share_pct: null
 relations:
   parents:
   - as_of: '2026-08-12'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 遊戲研發子公司
+    detail: 母公司
     details:
+    - 母公司
     - 遊戲研發子公司
     edge: ea8d7dc860a2b
     evidence_level: primary
@@ -24,12 +62,195 @@ relations:
     ranking_basis: unranked
     share_basis: null
     share_pct: null
+    weight: 2
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 香港間接子公司；網路遊戲服務
+    details:
+    - 香港間接子公司；網路遊戲服務
+    edge: eb07d4424bd84
+    evidence_level: primary
+    id: org.dragon-gamer-hong-kong-co-limited
+    name: Dragon Gamer (Hong Kong) Co. Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司；網路遊戲服務
+    details:
+    - 直接子公司；網路遊戲服務
+    edge: e76bb1076ffce
+    evidence_level: primary
+    id: org.威龍線上股份有限公司
+    name: 威龍線上股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司；網路遊戲服務
+    details:
+    - 直接子公司；網路遊戲服務
+    edge: e519d3aac3bfa
+    evidence_level: primary
+    id: org.東方龍數位股份有限公司
+    name: 東方龍數位股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司；網路遊戲服務
+    details:
+    - 直接子公司；網路遊戲服務
+    edge: ed38ed1c4b693
+    evidence_level: primary
+    id: org.樂聚多科技股份有限公司
+    name: 樂聚多科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 北京間接子公司；網路遊戲服務
+    details:
+    - 北京間接子公司；網路遊戲服務
+    edge: e9d12d2112722
+    evidence_level: primary
+    id: org.游龍在線-北京-科技有限公司
+    name: 游龍在線（北京）科技有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司；網路遊戲服務
+    details:
+    - 直接子公司；網路遊戲服務
+    edge: eb82f29e661a1
+    evidence_level: primary
+    id: org.神嵐遊戲股份有限公司
+    name: 神嵐遊戲股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
     weight: 1
 website: www.chinesegamer.net
 tax_id: '70541704'
 incorporated: '2000-03-28'
 listed: '2003-12-02'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3083#e1:
+    locator: 第86頁，肆、營運概況，一、業務內容，營業比重
+    published_date: null
+    publisher: 中華網龍股份有限公司
+    quote_check: found
+    title: 中華網龍114年度年報
+    url: https://www.chinesegamer.net/web/images/i5/2025/R1505000531%E4%B8%AD%E8%8F%AF%E7%B6%B2%E9%BE%8D%E5%B9%B4%E5%A0%B1(%E4%B8%8A)2.pdf
+  tw.3083#e10:
+    locator: 第17頁，附註九（一）列入合併財務報告之子公司；投資公司欄之同上符號承接中華網龍公司
+    published_date: '2026-08-11'
+    publisher: 中華網龍股份有限公司
+    quote_check: found
+    title: 中華網龍115及114年第2季合併財務報告
+    url: https://www.chinesegamer.net/web/invest/2026Q2.pdf
+  tw.3083#e11:
+    locator: 第17頁，附註九（一）列入合併財務報告之子公司；投資公司欄之同上符號承接中華網龍公司
+    published_date: '2026-08-11'
+    publisher: 中華網龍股份有限公司
+    quote_check: found
+    title: 中華網龍115及114年第2季合併財務報告
+    url: https://www.chinesegamer.net/web/invest/2026Q2.pdf
+  tw.3083#e12:
+    locator: 第17頁，附註九（一）列入合併財務報告之子公司；投資公司欄之同上符號承接中華網龍公司
+    published_date: '2026-08-11'
+    publisher: 中華網龍股份有限公司
+    quote_check: found
+    title: 中華網龍115及114年第2季合併財務報告
+    url: https://www.chinesegamer.net/web/invest/2026Q2.pdf
+  tw.3083#e13:
+    locator: 第17頁，附註九（一）；Star Diamond Universal Corporation列為中華網龍直接子公司，其下列示香港子公司
+    published_date: '2026-08-11'
+    publisher: 中華網龍股份有限公司
+    quote_check: found
+    title: 中華網龍115及114年第2季合併財務報告
+    url: https://www.chinesegamer.net/web/invest/2026Q2.pdf
+  tw.3083#e14:
+    locator: 第17頁，附註九（一）；中華網龍經TAICHIGAMER及TRANSASIAGAMER間接持有北京子公司
+    published_date: '2026-08-11'
+    publisher: 中華網龍股份有限公司
+    quote_check: found
+    title: 中華網龍115及114年第2季合併財務報告
+    url: https://www.chinesegamer.net/web/invest/2026Q2.pdf
+  tw.3083#e2:
+    locator: 第86頁，公司目前之商品及服務項目
+    published_date: null
+    publisher: 中華網龍股份有限公司
+    quote_check: found
+    title: 中華網龍114年度年報
+    url: https://www.chinesegamer.net/web/images/i5/2025/R1505000531%E4%B8%AD%E8%8F%AF%E7%B6%B2%E9%BE%8D%E5%B9%B4%E5%A0%B1(%E4%B8%8A)2.pdf
+  tw.3083#e3:
+    locator: 第24頁，附註十八收入；欄位依序為2026年第二季、2025年第二季、2026年上半年、2025年上半年；單位為新台幣仟元
+    published_date: '2026-08-11'
+    publisher: 中華網龍股份有限公司
+    quote_check: found
+    title: 中華網龍115及114年第2季合併財務報告
+    url: https://www.chinesegamer.net/web/invest/2026Q2.pdf
+  tw.3083#e4:
+    locator: 第1頁，114年度營業報告
+    published_date: null
+    publisher: 中華網龍股份有限公司
+    quote_check: found
+    title: 中華網龍114年度年報
+    url: https://www.chinesegamer.net/web/images/i5/2025/R1505000531%E4%B8%AD%E8%8F%AF%E7%B6%B2%E9%BE%8D%E5%B9%B4%E5%A0%B1(%E4%B8%8A)2.pdf
+  tw.3083#e5:
+    locator: 第1頁，114年度營業報告
+    published_date: null
+    publisher: 中華網龍股份有限公司
+    quote_check: found
+    title: 中華網龍114年度年報
+    url: https://www.chinesegamer.net/web/images/i5/2025/R1505000531%E4%B8%AD%E8%8F%AF%E7%B6%B2%E9%BE%8D%E5%B9%B4%E5%A0%B1(%E4%B8%8A)2.pdf
+  tw.3083#e6:
+    locator: 第1頁，114年度營業報告
+    published_date: null
+    publisher: 中華網龍股份有限公司
+    quote_check: found
+    title: 中華網龍114年度年報
+    url: https://www.chinesegamer.net/web/images/i5/2025/R1505000531%E4%B8%AD%E8%8F%AF%E7%B6%B2%E9%BE%8D%E5%B9%B4%E5%A0%B1(%E4%B8%8A)2.pdf
+  tw.3083#e7:
+    locator: PDF第4頁，三國鼎立Online Remastered
+    published_date: '2026-08-20'
+    publisher: 中華網龍股份有限公司
+    quote_check: found
+    title: 2026年中華網龍營運展望報告
+    url: https://www.chinesegamer.net/web/images/i7/2026/2026.8.20%E4%B8%AD%E8%8F%AF%E7%B6%B2%E9%BE%8D%E7%87%9F%E9%81%8B%E5%A0%B1%E5%91%8A-%E4%B8%AD%E6%96%87.pdf
+  tw.3083#e8:
+    locator: 第31頁，附註二四（一）關係人之名稱及關係
+    published_date: '2026-08-11'
+    publisher: 中華網龍股份有限公司
+    quote_check: found
+    title: 中華網龍115及114年第2季合併財務報告
+    url: https://www.chinesegamer.net/web/invest/2026Q2.pdf
+  tw.3083#e9:
+    locator: 第17頁，附註九（一）列入合併財務報告之子公司；投資公司欄之同上符號承接中華網龍公司
+    published_date: '2026-08-11'
+    publisher: 中華網龍股份有限公司
+    quote_check: found
+    title: 中華網龍115及114年第2季合併財務報告
+    url: https://www.chinesegamer.net/web/invest/2026Q2.pdf

@@ -8,12 +8,108 @@ industry:
   l0_code: '05'
   l0_name: 電機機械
   l0_name_en: Electric Machinery
-primary_chain_position: unknown
+  l1: auto
+  l1_name: 汽車與運具
+  l1_name_en: Automotive & Mobility
+  l2: auto.vehicles
+  l2_name: 汽機車
+  l2_name_en: Autos & Motorcycles
+  l3: auto.parts
+  l3_name: 汽車零組件
+  l3_name_en: Auto Parts
+chain: chain.auto
+chain_stage:
+  agreement: both
+  also: []
+  reason: 核心產品為客製化汽車零件及特殊扣件，涵蓋製造與貿易，屬汽車零組件。
+  stage: parts
+  stage_name: 汽車零組件與模組
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 開發、製造及貿易汽車與工業用螺絲、螺帽等特殊扣件。
+summary_long: 友鋮以汽機車、農機及工業機械用特殊扣件與零配件的開發製造及貿易為主要業務，產品涵蓋螺絲、螺帽與客製化汽車零件。主要產品另包括海外授權在台製造的MAThread®及TEC WASHER雙齒防鬆華司。2026年上半年，集團貿易營運部門外部收入高於生產營運部門，業務同時涵蓋扣件貿易與製造加工。必鋮為全資子公司，並透過必鋮全資持有蘇州友連。公司官網列明電動車電池包封裝螺栓與高壓連接系統固定件等應用。
+segments:
+- evidence_ids:
+  - e8
+  - e9
+  id: seg_trading
+  name: 貿易營運部門
+  period: 2026年上半年
+  revenue_share_pct: null
+- evidence_ids:
+  - e8
+  - e9
+  id: seg_manufacturing
+  name: 生產營運部門
+  period: 2026年上半年
+  revenue_share_pct: null
+main_theme: theme.ev
+themes:
+- also: []
+  stage: parts
+  theme: theme.ev
+  tier: midstream
 website: https://www.spec.com.tw/
 tax_id: '12906711'
 incorporated: '2001-10-02'
 listed: '2025-03-18'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.7718#e1:
+    locator: 關於我們／緊固件與五金零件製造商
+    published_date: null
+    publisher: 友鋮股份有限公司
+    quote_check: found
+    title: 專業螺絲螺帽製造｜汽車緊固件／五金零件製造商－友鋮
+    url: https://www.spec.com.tw/zh-TW/
+  tw.7718#e2:
+    locator: 第4頁，公司概況／主要業務
+    published_date: '2026-08-18'
+    publisher: 友鋮股份有限公司
+    quote_check: found
+    title: 友鋮股份有限公司115年法人說明會
+    url: https://www.spec.com.tw/upload-files/investors/file/IC20260818_cn.pdf
+  tw.7718#e3:
+    locator: 第17頁，三、營業概況－主要產品／Automotive Parts
+    published_date: '2026-08-18'
+    publisher: 友鋮股份有限公司
+    quote_check: found
+    title: 友鋮股份有限公司115年法人說明會
+    url: https://www.spec.com.tw/upload-files/investors/file/IC20260818_cn.pdf
+  tw.7718#e4:
+    locator: 第17頁，三、營業概況－主要產品／MAThread®
+    published_date: '2026-08-18'
+    publisher: 友鋮股份有限公司
+    quote_check: found
+    title: 友鋮股份有限公司115年法人說明會
+    url: https://www.spec.com.tw/upload-files/investors/file/IC20260818_cn.pdf
+  tw.7718#e5:
+    locator: 第20頁，三、營業概況－主要產品／TEC WASHER
+    published_date: '2026-08-18'
+    publisher: 友鋮股份有限公司
+    quote_check: found
+    title: 友鋮股份有限公司115年法人說明會
+    url: https://www.spec.com.tw/upload-files/investors/file/IC20260818_cn.pdf
+  tw.7718#e7:
+    locator: 汽車螺帽產品頁／電動車應用
+    published_date: null
+    publisher: 友鋮股份有限公司
+    quote_check: found
+    title: 汽車螺帽｜汽車工業專用扣件｜友鋮
+    url: https://www.spec.com.tw/zh-TW/nuts-for-automotive-application
+  tw.7718#e8:
+    locator: 第47頁，十四、部門資訊／營運部門定義
+    published_date: null
+    publisher: 友鋮股份有限公司
+    quote_check: unreachable
+    title: 友鋮股份有限公司及子公司民國115年第二季合併財務報告
+    url: https://www.spec.com.tw/upload-files/investors/file/202602_7718_A2_Optimized.pdf
+  tw.7718#e9:
+    locator: 第48頁，115年1月1日至6月30日應報導部門損益；金額單位新臺幣仟元
+    published_date: null
+    publisher: 友鋮股份有限公司
+    quote_check: unreachable
+    title: 友鋮股份有限公司及子公司民國115年第二季合併財務報告
+    url: https://www.spec.com.tw/upload-files/investors/file/202602_7718_A2_Optimized.pdf

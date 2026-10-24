@@ -22,6 +22,14 @@ stages:
   tier: downstream
   name_en: Systems
 members:
+- id: tw.1587
+  stage: modules
+  tier: midstream
+  detail: RDHx伺服器水冷散熱系統
+  as_of: 2024-12
+  evidence:
+  - tw.1587#e9
+  confidence: ai_cross_checked
 - id: tw.1605
   stage: parts
   tier: upstream
@@ -380,6 +388,14 @@ members:
   - tw.3483#e6
   - tw.3483#e7
   confidence: ai_cross_checked
+- id: tw.3512
+  stage: null
+  tier: null
+  detail: 浸沒式液冷散熱
+  as_of: '2025-09-30'
+  evidence:
+  - tw.3512#e5
+  confidence: ai_cross_checked
 - id: tw.3515
   stage: system
   tier: downstream
@@ -404,6 +420,14 @@ members:
   as_of: '2026-10-14'
   evidence:
   - tw.3533#e05
+  confidence: ai_cross_checked
+- id: tw.3540
+  stage: modules
+  tier: midstream
+  detail: 一體式水冷散熱模組
+  as_of: '2026-10-19'
+  evidence:
+  - tw.3540#e2
   confidence: ai_cross_checked
 - id: tw.3564
   stage: system
@@ -456,6 +480,22 @@ members:
   as_of: '2026-06-03'
   evidence:
   - tw.3706#e5
+  confidence: ai_cross_checked
+- id: tw.4534
+  stage: parts
+  tier: upstream
+  detail: 具水流通道的散熱冷板
+  as_of: '2026-05-12'
+  evidence:
+  - tw.4534#e6
+  confidence: ai_cross_checked
+- id: tw.4543
+  stage: modules
+  tier: midstream
+  detail: 伺服器機櫃水冷散熱模組及系統
+  as_of: '2025-12-31'
+  evidence:
+  - tw.4543#e7
   confidence: ai_cross_checked
 - id: tw.4549
   stage: parts
@@ -616,6 +656,14 @@ members:
   evidence:
   - tw.6230#e6
   confidence: ai_cross_checked
+- id: tw.6272
+  stage: modules
+  tier: midstream
+  detail: AIO液冷模組開發
+  as_of: '2026-08-13'
+  evidence:
+  - tw.6272#e8
+  confidence: ai_cross_checked
 - id: tw.6275
   stage: modules
   tier: midstream
@@ -668,6 +716,14 @@ members:
   evidence:
   - tw.6693#e8
   - tw.6693#e9
+  confidence: ai_cross_checked
+- id: tw.6698
+  stage: parts
+  tier: upstream
+  detail: AI液冷零組件
+  as_of: '2025-12-31'
+  evidence:
+  - tw.6698#e2
   confidence: ai_cross_checked
 - id: tw.6805
   stage: parts
@@ -726,6 +782,15 @@ members:
   evidence:
   - tw.6933#e5
   - tw.6933#e7
+  confidence: ai_cross_checked
+- id: tw.6982
+  stage: parts
+  tier: upstream
+  detail: 液冷系統冷卻液輸送泵浦
+  as_of: '2026-10-05'
+  evidence:
+  - tw.6982#e6
+  - tw.6982#e7
   confidence: ai_cross_checked
 - id: tw.7744
   stage: parts

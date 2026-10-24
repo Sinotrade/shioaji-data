@@ -8,12 +8,233 @@ industry:
   l0_code: '12'
   l0_name: 汽車工業
   l0_name_en: Automobile
-primary_chain_position: unknown
+  l1: auto
+  l1_name: 汽車與運具
+  l1_name_en: Automotive & Mobility
+  l2: auto.vehicles
+  l2_name: 汽機車
+  l2_name_en: Autos & Motorcycles
+  l3: auto.aftermarket
+  l3_name: 售後市場零件（AM）
+  l3_name_en: Aftermarket Parts
+chain: chain.auto
+chain_stage:
+  agreement: tiebreak
+  also: []
+  reason: 主要製造汽車散熱零組件，水箱占營收80.30%；售後市場為產品銷售用途。
+  stage: parts
+  stage_name: 汽車零組件與模組
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 以汽車售後市場散熱水箱為主，兼營冷卻零件與伺服器液冷散熱。
+summary_long: 吉茂以汽車售後維修市場的散熱水箱為核心，產品包括鋁製與銅製水箱、機油冷卻器、中冷器及冷凝器。2025年合併營收中，水箱占80.30%、機油冷卻器占4.79%、半成品占5.77%，其他相關產品占9.14%。公司亦提供AI伺服器液冷散熱解決方案，並已開發電動車逆變器及電池散熱用水箱。主要子公司包括美國、墨西哥及南京公司，汽車散熱零組件仍為主要營收來源。
+segments:
+- evidence_ids:
+  - e2
+  id: radiators
+  name: 水箱
+  period: '2025'
+  revenue_share_pct: 80.3
+- evidence_ids:
+  - e3
+  id: oil_coolers
+  name: 機油冷卻器
+  period: '2025'
+  revenue_share_pct: 4.79
+- evidence_ids:
+  - e4
+  id: semi_finished
+  name: 半成品
+  period: '2025'
+  revenue_share_pct: 5.77
+- evidence_ids:
+  - e5
+  id: other_products
+  name: 其他相關產品
+  period: '2025'
+  revenue_share_pct: 9.14
+main_theme: theme.ev
+themes:
+- also: []
+  stage: parts
+  theme: theme.ev
+  tier: midstream
+- also: []
+  stage: components
+  theme: theme.ai_server
+  tier: midstream
+- also: []
+  stage: modules
+  theme: theme.liquid_cooling
+  tier: midstream
+relations:
+  subsidiaries:
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有的子公司
+    details:
+    - 直接持有的子公司
+    edge: e09f1465ce778
+    evidence_level: primary
+    id: org.cryomax-international
+    name: CRYOMAX INTERNATIONAL LTD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 墨西哥子公司
+    details:
+    - 墨西哥子公司
+    edge: e29d1956f2dfd
+    evidence_level: primary
+    id: org.cryomax-mexico
+    name: CRYOMAX MEXICO S.A. de C.V.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 美國子公司
+    details:
+    - 美國子公司
+    edge: e758e824ca221
+    evidence_level: primary
+    id: org.cryomax-usa
+    name: CRYOMAX U.S.A. INC.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 南京間接子公司
+    details:
+    - 南京間接子公司
+    edge: e8d217e377f25
+    evidence_level: primary
+    id: org.nanjing-cryomax-auto-parts
+    name: Nanjing Cryomax Auto Parts Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.cryomaxcooling.com
 tax_id: '24157564'
 incorporated: '1984-08-22'
 listed: '2018-04-16'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1587#e1:
+    locator: 公司簡介
+    published_date: null
+    publisher: 吉茂精密股份有限公司
+    quote_check: found
+    title: 吉茂精密股份有限公司官網
+    url: https://www.cryomaxcooling.com/cht/
+  tw.1587#e10:
+    locator: 印刷第71頁／PDF第75頁，最近三年度開發成功之技術或產品，111年度
+    published_date: null
+    publisher: 吉茂精密股份有限公司
+    quote_check: found
+    title: 吉茂精密股份有限公司113年度年報
+    url: https://www.cryomaxcooling.com/upload_files/Investor-Relations/Shareholders-meeting/113/113-ch4.pdf
+  tw.1587#e11:
+    locator: 印刷第85頁／PDF第89頁，2026-03-31投資持股表，公司投資欄；第116頁補述
+    published_date: null
+    publisher: Cryomax Cooling System Corp.
+    quote_check: found
+    title: The 2025 Annual Report
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51870/2026/RNS/51870_rns_2026-07-31_41c2a933-a04c-4a0d-bf81-1c47c4e7a733.pdf
+  tw.1587#e12:
+    locator: 印刷第85頁／PDF第89頁，2026-03-31投資持股表，公司投資欄
+    published_date: null
+    publisher: Cryomax Cooling System Corp.
+    quote_check: found
+    title: The 2025 Annual Report
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51870/2026/RNS/51870_rns_2026-07-31_41c2a933-a04c-4a0d-bf81-1c47c4e7a733.pdf
+  tw.1587#e13:
+    locator: 印刷第85頁／PDF第89頁，2026-03-31投資持股表，直接或間接控制事業投資欄
+    published_date: null
+    publisher: Cryomax Cooling System Corp.
+    quote_check: found
+    title: The 2025 Annual Report
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51870/2026/RNS/51870_rns_2026-07-31_41c2a933-a04c-4a0d-bf81-1c47c4e7a733.pdf
+  tw.1587#e14:
+    locator: 印刷第85頁／PDF第89頁，2026-03-31投資持股表，公司及控制事業投資欄
+    published_date: null
+    publisher: Cryomax Cooling System Corp.
+    quote_check: found
+    title: The 2025 Annual Report
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51870/2026/RNS/51870_rns_2026-07-31_41c2a933-a04c-4a0d-bf81-1c47c4e7a733.pdf
+  tw.1587#e1b:
+    locator: 公司簡介
+    published_date: null
+    publisher: 吉茂精密股份有限公司
+    quote_check: found
+    title: 吉茂精密股份有限公司官網
+    url: https://www.cryomaxcooling.com/cht/
+  tw.1587#e2:
+    locator: 印刷第91頁／PDF第95頁，Sales percentage of major products，2025年水箱列
+    published_date: null
+    publisher: Cryomax Cooling System Corp.
+    quote_check: found
+    title: The 2025 Annual Report
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51870/2026/RNS/51870_rns_2026-07-31_41c2a933-a04c-4a0d-bf81-1c47c4e7a733.pdf
+  tw.1587#e3:
+    locator: 印刷第91頁／PDF第95頁，2025年Oil coolers列，Business ratio (%)欄
+    published_date: null
+    publisher: Cryomax Cooling System Corp.
+    quote_check: not_found
+    title: The 2025 Annual Report
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51870/2026/RNS/51870_rns_2026-07-31_41c2a933-a04c-4a0d-bf81-1c47c4e7a733.pdf
+  tw.1587#e4:
+    locator: 印刷第91頁／PDF第95頁，2025年Semi-finished product列，Business ratio (%)欄
+    published_date: null
+    publisher: Cryomax Cooling System Corp.
+    quote_check: not_found
+    title: The 2025 Annual Report
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51870/2026/RNS/51870_rns_2026-07-31_41c2a933-a04c-4a0d-bf81-1c47c4e7a733.pdf
+  tw.1587#e5:
+    locator: 印刷第91頁／PDF第95頁，2025年Other related products列，Business ratio (%)欄
+    published_date: null
+    publisher: Cryomax Cooling System Corp.
+    quote_check: not_found
+    title: The 2025 Annual Report
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51870/2026/RNS/51870_rns_2026-07-31_41c2a933-a04c-4a0d-bf81-1c47c4e7a733.pdf
+  tw.1587#e6:
+    locator: 印刷第73頁／PDF第77頁，不利因素與因應對策
+    published_date: null
+    publisher: 吉茂精密股份有限公司
+    quote_check: found
+    title: 吉茂精密股份有限公司113年度年報
+    url: https://www.cryomaxcooling.com/upload_files/Investor-Relations/Shareholders-meeting/113/113-ch4.pdf
+  tw.1587#e7:
+    locator: 印刷第65頁／PDF第69頁，目前之商品項目
+    published_date: null
+    publisher: 吉茂精密股份有限公司
+    quote_check: found
+    title: 吉茂精密股份有限公司113年度年報
+    url: https://www.cryomaxcooling.com/upload_files/Investor-Relations/Shareholders-meeting/113/113-ch4.pdf
+  tw.1587#e8:
+    locator: CRYOMAX解決方案；以瀏覽器讀取
+    published_date: null
+    publisher: 吉茂精密股份有限公司
+    quote_check: found
+    title: AI 伺服器散熱解決方案
+    url: https://www.cryomaxcooling.com/cht/ai-cooling-solution.htm
+  tw.1587#e9:
+    locator: 印刷第71頁／PDF第75頁，最近三年度開發成功之技術或產品，111年度
+    published_date: null
+    publisher: 吉茂精密股份有限公司
+    quote_check: found
+    title: 吉茂精密股份有限公司113年度年報
+    url: https://www.cryomaxcooling.com/upload_files/Investor-Relations/Shareholders-meeting/113/113-ch4.pdf

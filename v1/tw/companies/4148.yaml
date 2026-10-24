@@ -8,13 +8,129 @@ industry:
   l0_code: '22'
   l0_name: 生技醫療業
   l0_name_en: Biotechnology and Medical Care
-primary_chain_position: unknown
+  l1: materials
+  l1_name: 原物料
+  l1_name_en: Materials
+  l2: mat.chemicals
+  l2_name: 化工
+  l2_name_en: Chemicals
+  l3: chem.fertilizer
+  l3_name: 農化與肥料
+  l3_name_en: Agrochemicals & Fertilizers
+primary_chain_position: not_applicable
+summary_short: 以生化複合肥料研發、生產與銷售為主，另銷售化學肥料及保健食品。
+summary_long: 全宇生技-KY以生化複合肥料的研發、生產與銷售為主要業務，產品結合有機質、微生物與化學原料，主要應用於油棕種植。2025年生化複合肥料占營收61.42%，化學肥料占22.27%，其他業務占16.30%，營收以肥料產品為主。其他商品包括保健食品、各類微生物產品及土壤調節劑K-Neutralizer。集團旗下包括全宇工業有限公司及PT All Cosmos Biotek等子公司，其中全宇工業為全資子公司。
+segments:
+- evidence_ids:
+  - e3
+  id: seg_biochemical_fertilizer
+  name: 生化複合肥料
+  period: 2025年度
+  revenue_share_pct: 61.42
+- evidence_ids:
+  - e4
+  id: seg_chemical_fertilizer
+  name: 化學肥料
+  period: 2025年度
+  revenue_share_pct: 22.27
+- evidence_ids:
+  - e5
+  id: seg_other
+  name: 其他
+  period: 2025年度
+  revenue_share_pct: 16.3
+relations:
+  subsidiaries:
+  - as_of: 2026-10
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全宇工業有限公司，全資子公司
+    details:
+    - 全宇工業有限公司，全資子公司
+    edge: ebac37c55d0eb
+    evidence_level: primary
+    id: org.all-cosmos-industries
+    name: All Cosmos Industries Sdn Bhd
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2026-10
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 印尼子公司
+    details:
+    - 印尼子公司
+    edge: e518e6d68e691
+    evidence_level: primary
+    id: org.pt-all-cosmos-biotek
+    name: PT All Cosmos Biotek
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.allcosmos.com
 tax_id: '42527358'
 incorporated: '2010-03-26'
 listed: '2017-06-08'
 foreign_registration: KY 開曼群島
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4148#e2:
+    locator: 第53頁，伍、營運概況，一、業務內容，（1）所營業務之主要內容
+    published_date: '2026-04-30'
+    publisher: 全宇生技控股有限公司；FinancialFilings提供文件文字版
+    quote_check: unreachable
+    title: 全宇生技控股有限公司2025年度年報
+    url: https://financialfilings.com/filings/acbt-4148/annual-report/2026/47862527/
+  tw.4148#e3:
+    locator: 第53頁，（2）營業比重：生化複合肥料，2024及2025年度欄
+    published_date: '2026-04-30'
+    publisher: 全宇生技控股有限公司；FinancialFilings提供文件文字版
+    quote_check: unreachable
+    title: 全宇生技控股有限公司2025年度年報
+    url: https://financialfilings.com/filings/acbt-4148/annual-report/2026/47862527/
+  tw.4148#e4:
+    locator: 第53頁，（2）營業比重：化學肥料，2024及2025年度欄
+    published_date: '2026-04-30'
+    publisher: 全宇生技控股有限公司；FinancialFilings提供文件文字版
+    quote_check: unreachable
+    title: 全宇生技控股有限公司2025年度年報
+    url: https://financialfilings.com/filings/acbt-4148/annual-report/2026/47862527/
+  tw.4148#e5:
+    locator: 第53頁，（2）營業比重：其他，2025年度營收淨額及營業比重
+    published_date: '2026-04-30'
+    publisher: 全宇生技控股有限公司；FinancialFilings提供文件文字版
+    quote_check: unreachable
+    title: 全宇生技控股有限公司2025年度年報
+    url: https://financialfilings.com/filings/acbt-4148/annual-report/2026/47862527/
+  tw.4148#e6:
+    locator: 第53頁，（3）公司目前之商品項目：生化複合肥料
+    published_date: '2026-04-30'
+    publisher: 全宇生技控股有限公司；FinancialFilings提供文件文字版
+    quote_check: unreachable
+    title: 全宇生技控股有限公司2025年度年報
+    url: https://financialfilings.com/filings/acbt-4148/annual-report/2026/47862527/
+  tw.4148#e7:
+    locator: 第53頁，（3）公司目前之商品項目：其他
+    published_date: '2026-04-30'
+    publisher: 全宇生技控股有限公司；FinancialFilings提供文件文字版
+    quote_check: unreachable
+    title: 全宇生技控股有限公司2025年度年報
+    url: https://financialfilings.com/filings/acbt-4148/annual-report/2026/47862527/
+  tw.4148#e8:
+    locator: OVERVIEW AND HISTORY，ACBT介紹段落
+    published_date: null
+    publisher: 全宇生技控股有限公司
+    quote_check: found
+    title: About Us — Overview and History
+    url: https://allcosmos.com/en/about
+  tw.4148#e9:
+    locator: MILESTONE，2024年記事
+    published_date: null
+    publisher: 全宇生技控股有限公司
+    quote_check: found
+    title: About Us — Milestone
+    url: https://allcosmos.com/en/about

@@ -8,12 +8,135 @@ industry:
   l0_code: '30'
   l0_name: 資訊服務業
   l0_name_en: Information Service
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.software
+  l2_name: 軟體與資訊服務
+  l2_name_en: Software & IT Services
+  l3: sw.it_services
+  l3_name: 系統整合與資訊服務
+  l3_name_en: System Integration & IT Services
+primary_chain_position: not_applicable
+summary_short: 提供CAE工程模擬、ERP導入、智慧製造整合及技術顧問服務。
+summary_long: 虎門科技以工程模擬、企業管理軟體導入及智慧製造整合服務為主要業務。2025年系統解決方案占營收94.17%，其他服務占5.83%。CAE服務涵蓋結構、熱傳、流體及電磁等多重物理模擬；商管服務提供ERP導入與符合台灣稅務需求的專屬模組。工業4.0服務整合自動化、IoT、MES與機械手臂，另提供三維表面量測設備及顧問、教育訓練服務。官網並揭露機器人加工與自動化整合案例。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_solutions
+  name: 系統解決方案
+  period: 2025年度
+  revenue_share_pct: 94.17
+- evidence_ids:
+  - e1
+  id: seg_other
+  name: 其他服務
+  period: 2025年度
+  revenue_share_pct: 5.83
+main_theme: theme.robotics
+themes:
+- also: []
+  stage: system
+  theme: theme.robotics
+  tier: downstream
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 納入合併報表之子公司
+    details:
+    - 納入合併報表之子公司
+    edge: e3aca03e78dde
+    evidence_level: primary
+    id: org.昊青股份有限公司
+    name: 昊青股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 納入合併報表之子公司
+    details:
+    - 納入合併報表之子公司
+    edge: e215058aa5928
+    evidence_level: primary
+    id: org.睿騰創意股份有限公司
+    name: 睿騰創意股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.cadmen.com/
 tax_id: '30921876'
 incorporated: '1980-07-31'
 listed: '2022-11-14'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6791#e1:
+    locator: 印刷頁53，主要產品之營業比重；欄序為113年度及114年度
+    published_date: '2026-05-29'
+    publisher: 虎門科技股份有限公司
+    quote_check: found
+    title: 虎門科技股份有限公司114年度年報
+    url: https://www.cadmen.com/Content/file/114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf
+  tw.6791#e2:
+    locator: 工程智能服務
+    published_date: null
+    publisher: 虎門科技股份有限公司
+    quote_check: found
+    title: 虎門科技公司簡介
+    url: https://cadmen.com/about/taiwancadmen
+  tw.6791#e3:
+    locator: 商管智能服務
+    published_date: null
+    publisher: 虎門科技股份有限公司
+    quote_check: found
+    title: 虎門科技公司簡介
+    url: https://cadmen.com/about/taiwancadmen
+  tw.6791#e4:
+    locator: 工業4.0系統整合解決方案
+    published_date: null
+    publisher: 虎門科技股份有限公司
+    quote_check: found
+    title: 虎門科技公司簡介
+    url: https://cadmen.com/about/taiwancadmen
+  tw.6791#e5:
+    locator: 產品介紹
+    published_date: null
+    publisher: 虎門科技股份有限公司
+    quote_check: found
+    title: Polytec 白光干涉儀
+    url: https://www.cadmen.com/product/Surface-Metrology
+  tw.6791#e6:
+    locator: 印刷頁54，其他服務
+    published_date: '2026-05-29'
+    publisher: 虎門科技股份有限公司
+    quote_check: found
+    title: 虎門科技股份有限公司114年度年報
+    url: https://www.cadmen.com/Content/file/114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf
+  tw.6791#e7:
+    locator: 案例1-1，機器人雙機加工系統／技術核心
+    published_date: null
+    publisher: 虎門科技股份有限公司
+    quote_check: found
+    title: 產業自動化｜軟體應用與成功案例解析
+    url: https://www.cadmen.com/product/157
+  tw.6791#e8:
+    locator: 印刷頁10，附註四（三）2，列入合併財務季報告之子公司
+    published_date: null
+    publisher: 虎門科技股份有限公司
+    quote_check: found
+    title: 虎門科技股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.cadmen.com/Content/file/115Q2%E8%99%8E%E9%96%80-%E8%B2%A1%E5%A0%B1%E7%94%A8%E5%8D%B0.pdf
+  tw.6791#e9:
+    locator: 印刷頁10，附註四（三）2，列入合併財務季報告之子公司
+    published_date: null
+    publisher: 虎門科技股份有限公司
+    quote_check: found
+    title: 虎門科技股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.cadmen.com/Content/file/115Q2%E8%99%8E%E9%96%80-%E8%B2%A1%E5%A0%B1%E7%94%A8%E5%8D%B0.pdf

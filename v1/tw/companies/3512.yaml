@@ -8,12 +8,100 @@ industry:
   l0_code: '14'
   l0_name: 建材營造業
   l0_name_en: Building Material and Construction
-primary_chain_position: unknown
+  l1: realestate
+  l1_name: 不動產
+  l1_name_en: Real Estate
+  l2: re.dev
+  l2_name: 不動產
+  l2_name_en: Real Estate
+  l3: re.developer
+  l3_name: 建設開發
+  l3_name_en: Property Development
+primary_chain_position: not_applicable
+summary_short: 以住宅及大樓開發、房地銷售為主，另經營電子零組件與液冷散熱開發整合。
+summary_long: 皇龍開發主要從事不動產買賣及住宅、大樓開發租售，另經營電子零組件業務。2025年合併營收為1,433,434千元，其中房地銷售1,415,537千元、電子零組件17,897千元，房地銷售為主要收入來源。電子部門產品包括新型電子元器件及精沖模，2025年第三季財報另揭露開發整合浸沒式液冷散熱。2025年底全資持有龍城營造與曼德拉全球，分別從事綜合營造與國際貿易。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_property
+  name: 房地銷售
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e2
+  id: seg_electronics
+  name: 電子零組件
+  period: '2025'
+  revenue_share_pct: null
+main_theme: theme.liquid_cooling
+themes:
+- also: []
+  stage: null
+  theme: theme.liquid_cooling
+  tier: null
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司，從事國際貿易
+    details:
+    - 全資子公司，從事國際貿易
+    edge: e0507fccbfced
+    evidence_level: primary
+    id: org.曼德拉全球有限公司
+    name: 曼德拉全球有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司，從事綜合營造
+    details:
+    - 全資子公司，從事綜合營造
+    edge: e29afeae3d5b7
+    evidence_level: primary
+    id: org.龍城營造股份有限公司
+    name: 龍城營造股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.hldc.com.tw
 tax_id: '86746561'
 incorporated: '1992-06-08'
 listed: '2007-07-25'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3512#e2:
+    locator: PDF第41頁，印刷第37頁，附註六（十九）收入之細分，114年度主要產品
+    published_date: null
+    publisher: 皇龍開發股份有限公司
+    quote_check: found
+    title: 民國一一四年度及一一三年度合併財務報告暨會計師查核報告
+    url: https://www.hldc.com.tw/investors/financeFile/44/q4/
+  tw.3512#e3:
+    locator: PDF第54頁，印刷第50頁，十四、部門資訊
+    published_date: null
+    publisher: 皇龍開發股份有限公司
+    quote_check: found
+    title: 民國一一四年度及一一三年度合併財務報告暨會計師查核報告
+    url: https://www.hldc.com.tw/investors/financeFile/44/q4/
+  tw.3512#e4:
+    locator: PDF第16頁，印刷第12頁，附註四（三）2，列入合併財務報告之子公司
+    published_date: null
+    publisher: 皇龍開發股份有限公司
+    quote_check: found
+    title: 民國一一四年度及一一三年度合併財務報告暨會計師查核報告
+    url: https://www.hldc.com.tw/investors/financeFile/44/q4/
+  tw.3512#e5:
+    locator: PDF第36頁，印刷第35頁，十四、部門資訊
+    published_date: null
+    publisher: 皇龍開發股份有限公司
+    quote_check: found
+    title: 民國一一四年及一一三年第三季合併財務報告暨會計師核閱報告
+    url: https://www.hldc.com.tw/investors/financeFile/44/q3/

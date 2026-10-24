@@ -8,12 +8,146 @@ industry:
   l0_code: '28'
   l0_name: 電子零組件業
   l0_name_en: Electronic Parts and Components
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.pcb
+  l3_name: 印刷電路板
+  l3_name_en: Printed Circuit Boards
+chain: chain.pcb
+chain_stage:
+  agreement: both
+  also:
+  - stage: assembly
+    stage_name: 組裝與終端
+    tier: downstream
+  reason: 營收以軟性印刷電路板製造為主，另提供SMT組裝服務，深圳子公司亦從事軟板組裝加工。
+  stage: board
+  stage_name: 電路板與載板製造
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 以軟性印刷電路板製造與銷售為主，另提供薄硬板及組裝服務。
+summary_long: 旭軟以軟性印刷電路板製造與銷售為主要業務，提供一至七層軟板及一至二層薄硬板，另具軟硬結合板與表面黏著組裝能力。產品應用涵蓋消費電子、車載電子、工業控制及醫療設備，並開發無人機相關應用。2025年合併營收中，軟板收入為新臺幣7億7,215萬4千元，其他營業收入為2,010萬6千元。旭軟全資持有投資公司GOLDEN IMPRESSION L.L.C.，並透過該公司全資持有旭軟電子(深圳)有限公司；深圳子公司從事軟性電路板組裝及加工。
+segments:
+- evidence_ids:
+  - e9
+  id: seg_fpc
+  name: 軟板
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e9
+  id: seg_other
+  name: 其他營業收入
+  period: '2025'
+  revenue_share_pct: null
+main_theme: theme.drone
+themes:
+- also: []
+  stage: components
+  theme: theme.drone
+  tier: upstream
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%的一般投資業子公司
+    details:
+    - 直接持有100%的一般投資業子公司
+    edge: e5a423772a450
+    evidence_level: primary
+    id: org.golden-impression-l-l-c
+    name: GOLDEN IMPRESSION L.L.C.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持有100%的軟性電路板組裝加工子公司
+    details:
+    - 間接持有100%的軟性電路板組裝加工子公司
+    edge: e6edce3b3c189
+    evidence_level: primary
+    id: org.旭軟電子-深圳-有限公司
+    name: 旭軟電子(深圳)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.sunflex.com.tw
 tax_id: '16674213'
 incorporated: '1998-10-12'
 listed: '2006-02-22'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3390#e1:
+    locator: 首頁公司簡介
+    published_date: null
+    publisher: 旭軟電子科技股份有限公司
+    quote_check: found
+    title: 旭軟官網：公司簡介
+    url: https://www.sunflex.com.tw/
+  tw.3390#e2:
+    locator: 第4頁，公司簡介
+    published_date: '2025-12-19'
+    publisher: 旭軟電子科技股份有限公司
+    quote_check: found
+    title: 旭軟2025年法人說明會簡報
+    url: https://www.sunflex.com.tw/uploads/images/法人說明會/旭軟_法說會20251219-上傳版本(中文).pdf
+  tw.3390#e3:
+    locator: FPC・PCB製造能力，線路層數
+    published_date: null
+    publisher: 旭軟電子科技股份有限公司
+    quote_check: found
+    title: 旭軟官網：製程能力
+    url: https://www.sunflex.com.tw/tw/technique/ability
+  tw.3390#e4:
+    locator: 軟板FPC/FPCA、硬板PCB/PCBA及SMT製程能力章節
+    published_date: null
+    publisher: 旭軟電子科技股份有限公司
+    quote_check: found
+    title: 旭軟官網：電路板與組裝能力
+    url: https://www.sunflex.com.tw/tw/technique/ability
+  tw.3390#e5:
+    locator: 公司介紹首段
+    published_date: null
+    publisher: 旭軟電子科技股份有限公司
+    quote_check: found
+    title: 旭軟官網：關於旭軟
+    url: https://www.sunflex.com.tw/tw/about/sunflex
+  tw.3390#e6:
+    locator: One-Stop Solution
+    published_date: null
+    publisher: 旭軟電子科技股份有限公司
+    quote_check: found
+    title: 旭軟官網：其他產業
+    url: https://www.sunflex.com.tw/tw/application/content/其他產業
+  tw.3390#e7:
+    locator: 第14頁，附註四.2合併財務報告編製範圍；114.12.31持股欄
+    published_date: '2026-03-05'
+    publisher: 旭軟電子科技股份有限公司
+    quote_check: found
+    title: 旭軟2025年度合併財務報告
+    url: https://www.sunflex.com.tw/uploads/images/財務報表/114/旭軟-114Q4合併財務報告(用印).pdf
+  tw.3390#e8:
+    locator: 第14頁，GOLDEN IMPRESSION L.L.C.投資之子公司、業務性質及持股欄
+    published_date: '2026-03-05'
+    publisher: 旭軟電子科技股份有限公司
+    quote_check: found
+    title: 旭軟2025年度合併財務報告：深圳子公司
+    url: https://www.sunflex.com.tw/uploads/images/財務報表/114/旭軟-114Q4合併財務報告(用印).pdf
+  tw.3390#e9:
+    locator: 第68頁，附註十四.2(1)產品別及勞務別之資訊；單位新臺幣仟元，前欄為114年度
+    published_date: '2026-03-05'
+    publisher: 旭軟電子科技股份有限公司
+    quote_check: found
+    title: 旭軟2025年度合併財務報告：產品別收入
+    url: https://www.sunflex.com.tw/uploads/images/財務報表/114/旭軟-114Q4合併財務報告(用印).pdf

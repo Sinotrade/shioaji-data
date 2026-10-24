@@ -8,12 +8,171 @@ industry:
   l0_code: '10'
   l0_name: 鋼鐵工業
   l0_name_en: Iron and Steel
-primary_chain_position: unknown
+  l1: materials
+  l1_name: 原物料
+  l1_name_en: Materials
+  l2: mat.metals
+  l2_name: 金屬
+  l2_name_en: Metals
+  l3: metal.steel
+  l3_name: 鋼鐵
+  l3_name_en: Steel
+chain: chain.steel
+chain_stage:
+  agreement: both
+  also:
+  - stage: downstream
+    stage_name: 金屬製品與螺絲
+    tier: downstream
+  reason: 盤元、線材與鋼筋合計占營收56.27%，以中游鋼材為主，另有螺絲製造。
+  stage: midstream
+  stage_name: 軋延與鋼材
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 聚亨集團以盤元、線材、鋼筋及螺絲的製造、加工與銷售取得收入。
+summary_long: 聚亨集團經營球化線材、盤元、鋼筋及大螺絲與建築用螺絲。2025年螺絲占合併營收30.84%，為最大單一產品；盤元占23.64%、線材占20.77%、鋼筋占11.86%，另有加工與其他收入。子公司泰國聚亨從事製造業，並納入合併財務報表。集團透過全資子公司Kingford International Ltd.持有黃驊聚金五金製品有限公司，由其從事製造業；另有全資子公司聚固建設經營不動產買賣。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_wire_rod
+  name: 盤元
+  period: '2025'
+  revenue_share_pct: 23.64
+- evidence_ids:
+  - e2
+  id: seg_wire
+  name: 線材
+  period: '2025'
+  revenue_share_pct: 20.77
+- evidence_ids:
+  - e2
+  id: seg_screws
+  name: 螺絲
+  period: '2025'
+  revenue_share_pct: 30.84
+- evidence_ids:
+  - e2
+  id: seg_processing
+  name: 加工
+  period: '2025'
+  revenue_share_pct: 3.06
+- evidence_ids:
+  - e2
+  id: seg_rebar
+  name: 鋼筋
+  period: '2025'
+  revenue_share_pct: 11.86
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 9.83
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資投資控股子公司
+    details:
+    - 全資投資控股子公司
+    edge: e7c6680b6be6e
+    evidence_level: primary
+    id: org.kingford-international-ltd
+    name: Kingford International Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 泰國製造業子公司
+    details:
+    - 泰國製造業子公司
+    edge: ed765c1452635
+    evidence_level: primary
+    id: org.tycoons-worldwide-group-thailand-public-co-ltd
+    name: Tycoons Worldwide Group (Thailand) Public Co.,Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資不動產子公司
+    details:
+    - 全資不動產子公司
+    edge: e48b4a4cde8ee
+    evidence_level: primary
+    id: org.聚固建設股份有限公司
+    name: 聚固建設股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過Kingford持有之製造業子公司
+    details:
+    - 透過Kingford持有之製造業子公司
+    edge: e1a21c525907b
+    evidence_level: primary
+    id: org.黃驊聚金五金製品有限公司
+    name: 黃驊聚金五金製品有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.tycons.com.tw
 tax_id: '79841479'
 incorporated: '1980-12-03'
 listed: '1995-03-27'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2022#e2:
+    locator: 印刷頁62，主要產品之營業比重；PDF第66頁
+    published_date: '2026-04-10'
+    publisher: 聚亨企業股份有限公司
+    quote_check: found
+    title: 聚亨企業股份有限公司114年度年報
+    url: https://doc.twse.com.tw/pdf/2025_2022_20260528F04_20261023_183954.pdf
+  tw.2022#e3:
+    locator: 印刷頁62，公司目前之主要產品；PDF第66頁
+    published_date: '2026-04-10'
+    publisher: 聚亨企業股份有限公司
+    quote_check: found
+    title: 聚亨企業股份有限公司114年度年報
+    url: https://doc.twse.com.tw/pdf/2025_2022_20260528F04_20261023_183954.pdf
+  tw.2022#e4:
+    locator: 附註四、合併概況，合併財務報告編製主體；印刷頁13，PDF第14頁
+    published_date: '2026-08-12'
+    publisher: 聚亨企業股份有限公司
+    quote_check: found
+    title: 聚亨企業股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.tycons.com.tw/userfiles/%E8%81%9A%E4%BA%A8.A.26Q2.%E8%B2%A1%E5%A0%B1.pdf
+  tw.2022#e5:
+    locator: 附註四、合併概況，合併財務報告編製主體；印刷頁13，PDF第14頁
+    published_date: '2026-08-12'
+    publisher: 聚亨企業股份有限公司
+    quote_check: found
+    title: 聚亨企業股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.tycons.com.tw/userfiles/%E8%81%9A%E4%BA%A8.A.26Q2.%E8%B2%A1%E5%A0%B1.pdf
+  tw.2022#e6:
+    locator: 附註四、合併概況，合併財務報告編製主體；印刷頁13，PDF第14頁
+    published_date: '2026-08-12'
+    publisher: 聚亨企業股份有限公司
+    quote_check: found
+    title: 聚亨企業股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.tycons.com.tw/userfiles/%E8%81%9A%E4%BA%A8.A.26Q2.%E8%B2%A1%E5%A0%B1.pdf
+  tw.2022#e7:
+    locator: 附註四、合併概況，合併財務報告編製主體；印刷頁14，PDF第15頁
+    published_date: '2026-08-12'
+    publisher: 聚亨企業股份有限公司
+    quote_check: found
+    title: 聚亨企業股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.tycons.com.tw/userfiles/%E8%81%9A%E4%BA%A8.A.26Q2.%E8%B2%A1%E5%A0%B1.pdf

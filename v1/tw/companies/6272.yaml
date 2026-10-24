@@ -8,12 +8,156 @@ industry:
   l0_code: '28'
   l0_name: 電子零組件業
   l0_name_en: Electronic Parts and Components
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.connector
+  l3_name: 連接器與線材
+  l3_name_en: Connectors & Cables
+primary_chain_position: midstream
+summary_short: 以連接器、連接線及無線天線為主，並經營車用電子零組件。
+summary_long: 驊陞主要從事連接器、連接線與無線天線的設計製造，並開發汽車線束及車載充電產品。2025年營收以連接零組件為主，占55.62%，汽車零組件占43.82%，其他占0.56%。其連接產品涵蓋AI伺服器與資料中心應用，無線產品包括5G及4G與5G整合天線，另研發電動車連接器與線材。公司也開發氣冷及AIO液冷模組。主要營運子公司包括東莞驊國、江蘇驊盛及越南驊陞，其中江蘇驊盛屬間接持有的車用電子子公司。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_interconnect
+  name: 連接零組件
+  period: '2025'
+  revenue_share_pct: 55.62
+- evidence_ids:
+  - e2
+  id: seg_auto
+  name: 汽車零組件
+  period: '2025'
+  revenue_share_pct: 43.82
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 0.56
+main_theme: theme.ai_server
+themes:
+- also: []
+  stage: components
+  theme: theme.ai_server
+  tier: midstream
+- also: []
+  stage: components
+  theme: theme.5g
+  tier: upstream
+- also: []
+  stage: modules
+  theme: theme.liquid_cooling
+  tier: midstream
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持有的連接零組件製造子公司
+    details:
+    - 間接持有的連接零組件製造子公司
+    edge: ea5f36ca43bef
+    evidence_level: primary
+    id: org.dongguan-wieson-electronics
+    name: 東莞驊國電子有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持有的車用電子子公司
+    details:
+    - 間接持有的車用電子子公司
+    edge: e25d2279e5cea
+    evidence_level: primary
+    id: org.jiangsu-wieson-automotive
+    name: 江蘇驊盛車用電子股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有的越南製造子公司
+    details:
+    - 直接持有的越南製造子公司
+    edge: e625115648f7b
+    evidence_level: primary
+    id: org.wieson-technologies-vietnam
+    name: WIESON TECHNOLOGIES (VIETNAM) CO., LTD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.wieson.com
 tax_id: '23610975'
 incorporated: '1990-01-13'
 listed: '2025-12-22'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6272#e10:
+    locator: 印刷頁35，PDF第35頁，附註十二「列入合併財務報告之子公司」；開曼杰寶公司投資列
+    published_date: null
+    publisher: 驊陞科技股份有限公司
+    quote_check: found
+    title: 驊陞科技股份有限公司及子公司114年度合併財務報告
+    url: https://www.wieson.com/userfiles/files/Investor/Financials/2025_Q4(CN).pdf
+  tw.6272#e11:
+    locator: 印刷頁35，PDF第35頁，附註十二「列入合併財務報告之子公司」；驊陞科技股份有限公司投資列
+    published_date: null
+    publisher: 驊陞科技股份有限公司
+    quote_check: found
+    title: 驊陞科技股份有限公司及子公司114年度合併財務報告
+    url: https://www.wieson.com/userfiles/files/Investor/Financials/2025_Q4(CN).pdf
+  tw.6272#e2:
+    locator: 印刷頁62，PDF第66頁，營業比重表；114年度
+    published_date: '2026-04-17'
+    publisher: 驊陞科技股份有限公司
+    quote_check: found
+    title: 驊陞科技股份有限公司114年度年報
+    url: https://www.wieson.com/userfiles/files/Investor/Shareholder%20Services/2025AnnualReport.pdf
+  tw.6272#e3:
+    locator: 產品系列介紹首段
+    published_date: null
+    publisher: 驊陞科技股份有限公司
+    quote_check: found
+    title: 連接零組件
+    url: https://www.wieson.com/page-view.php?lang=tw&sn=8
+  tw.6272#e4:
+    locator: 產品應用／AI伺服器與數據中心
+    published_date: null
+    publisher: 驊陞科技股份有限公司
+    quote_check: found
+    title: 連接零組件
+    url: https://www.wieson.com/page-view.php?lang=tw&sn=8
+  tw.6272#e5:
+    locator: 無線通訊事業處介紹及5G天線產品說明
+    published_date: null
+    publisher: 驊陞科技股份有限公司
+    quote_check: found
+    title: 無線零組件
+    url: https://www.wieson.com/page-view.php?lang=tw&sn=28
+  tw.6272#e8:
+    locator: 先進熱傳導事業部：開發多元AI散熱解決方案
+    published_date: '2026-08-13'
+    publisher: 驊陞科技股份有限公司
+    quote_check: found
+    title: 驊陞科技2026上半年營運結果公布
+    url: https://www.wieson.com/news-view.php?lang=tw&sn=113
+  tw.6272#e9:
+    locator: 印刷頁35，PDF第35頁，附註十二「列入合併財務報告之子公司」；開曼驊陞公司投資列
+    published_date: null
+    publisher: 驊陞科技股份有限公司
+    quote_check: found
+    title: 驊陞科技股份有限公司及子公司114年度合併財務報告
+    url: https://www.wieson.com/userfiles/files/Investor/Financials/2025_Q4(CN).pdf

@@ -8,12 +8,167 @@ industry:
   l0_code: '30'
   l0_name: 資訊服務業
   l0_name_en: Information Service
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.software
+  l2_name: 軟體與資訊服務
+  l2_name_en: Software & IT Services
+  l3: sw.it_services
+  l3_name: 系統整合與資訊服務
+  l3_name_en: System Integration & IT Services
+primary_chain_position: not_applicable
+summary_short: 提供資通訊系統整合、軟硬體銷售、維運及企業應用軟體。
+summary_long: 驊宏資通主要從事電腦軟硬體銷售、系統整合與技術服務。2025年12月法說簡報所列2025 Q3營收組成，銷貨占36%、維護服務33%、企業應用服務21%、系統整合服務8%、其他2%。解決方案包括儲存設備規劃建置、資料中心備援及e-Loan徵授信系統；軟體產品包括自主研發的Gufonet搜尋引擎，以及推出的GufoNotes慧議通AI會議平台。依2024年底資料，公司持有驊宏國際，並透過其持有駿永資訊科技及和平整合資訊。
+segments:
+- evidence_ids:
+  - e10
+  id: seg.sales
+  name: 銷貨收入
+  period: 2025 Q3（法說簡報原標示）
+  revenue_share_pct: 36
+- evidence_ids:
+  - e10
+  id: seg.maintenance
+  name: 維護服務
+  period: 2025 Q3（法說簡報原標示）
+  revenue_share_pct: 33
+- evidence_ids:
+  - e10
+  id: seg.application
+  name: 企業應用服務
+  period: 2025 Q3（法說簡報原標示）
+  revenue_share_pct: 21
+- evidence_ids:
+  - e10
+  id: seg.integration
+  name: 系統整合服務
+  period: 2025 Q3（法說簡報原標示）
+  revenue_share_pct: 8
+- evidence_ids:
+  - e10
+  id: seg.other
+  name: 其他收入
+  period: 2025 Q3（法說簡報原標示）
+  revenue_share_pct: 2
+main_theme: theme.data_center
+themes:
+- also: []
+  stage: it
+  theme: theme.data_center
+  tier: midstream
+relations:
+  subsidiaries:
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有的子公司
+    details:
+    - 直接持有的子公司
+    edge: e665a1b97e201
+    evidence_level: primary
+    id: org.azion-international
+    name: 驊宏國際股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過驊宏國際間接持有的子公司
+    details:
+    - 透過驊宏國際間接持有的子公司
+    edge: e875c17aa9f07
+    evidence_level: primary
+    id: org.jetit
+    name: 駿永資訊科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過驊宏國際間接持有的子公司
+    details:
+    - 透過驊宏國際間接持有的子公司
+    edge: e4429fccf1cfd
+    evidence_level: primary
+    id: org.peace-systems-integration
+    name: 和平整合資訊股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.azion.com.tw
 tax_id: '86468118'
 incorporated: '1991-12-27'
 listed: '2002-02-01'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6148#e10:
+    locator: PDF第7頁，2025 Q3 Revenue Breakdown
+    published_date: '2025-12-04'
+    publisher: 驊宏資通
+    quote_check: found
+    title: Azion Corporation Investor Conference
+    url: https://www.azion.com.tw/upload/files/114_12_04%20%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83(EN).pdf
+  tw.6148#e2:
+    locator: 印刷頁64，業務範圍；PDF第68頁
+    published_date: null
+    publisher: 驊宏資通
+    quote_check: found
+    title: 驊宏資通113年度年報
+    url: https://www.azion.com.tw/upload/files/%E9%A9%8A%E5%AE%8F113%E5%B9%B4%E5%A0%B1-%E4%B8%8A%E5%82%B3.pdf
+  tw.6148#e3:
+    locator: 方案簡介
+    published_date: '2015-01-17'
+    publisher: 驊宏資通
+    quote_check: found
+    title: 存儲設備規劃、建置與維運
+    url: https://www.azion.com.tw/news_page/108/567
+  tw.6148#e4:
+    locator: e-Loan系統功能架構
+    published_date: '2016-01-21'
+    publisher: 驊宏資通
+    quote_check: found
+    title: e-Loan徵授信系統
+    url: https://www.azion.com.tw/news_page/108/581
+  tw.6148#e5:
+    locator: 產品優勢
+    published_date: '2021-05-20'
+    publisher: 驊宏資通
+    quote_check: found
+    title: Gufonet搜尋及探勘引擎系統
+    url: https://www.azion.com.tw/news_page/109/604
+  tw.6148#e6:
+    locator: 產品簡介
+    published_date: '2025-08-15'
+    publisher: 驊宏資通
+    quote_check: found
+    title: GufoNotes慧議通
+    url: https://www.azion.com.tw/news_page/109/706
+  tw.6148#e7:
+    locator: 印刷頁89，各關係企業董事資料；PDF第93頁
+    published_date: null
+    publisher: 驊宏資通
+    quote_check: found
+    title: 驊宏資通113年度年報
+    url: https://www.azion.com.tw/upload/files/%E9%A9%8A%E5%AE%8F113%E5%B9%B4%E5%A0%B1-%E4%B8%8A%E5%82%B3.pdf
+  tw.6148#e8:
+    locator: 印刷頁89，各關係企業董事資料；PDF第93頁
+    published_date: null
+    publisher: 驊宏資通
+    quote_check: found
+    title: 驊宏資通113年度年報
+    url: https://www.azion.com.tw/upload/files/%E9%A9%8A%E5%AE%8F113%E5%B9%B4%E5%A0%B1-%E4%B8%8A%E5%82%B3.pdf
+  tw.6148#e9:
+    locator: 印刷頁89，各關係企業董事資料；PDF第93頁
+    published_date: null
+    publisher: 驊宏資通
+    quote_check: found
+    title: 驊宏資通113年度年報
+    url: https://www.azion.com.tw/upload/files/%E9%A9%8A%E5%AE%8F113%E5%B9%B4%E5%A0%B1-%E4%B8%8A%E5%82%B3.pdf

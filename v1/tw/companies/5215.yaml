@@ -8,7 +8,37 @@ industry:
   l0_code: '25'
   l0_name: 電腦及週邊設備業
   l0_name_en: Computer and Peripheral Equipment
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.hardware
+  l2_name: 電腦與硬體
+  l2_name_en: Computers & Hardware
+  l3: hw.peripheral
+  l3_name: 周邊與輸入裝置
+  l3_name_en: Peripherals & Input Devices
+primary_chain_position: midstream
+summary_short: 主要製造銷售筆電鍵盤薄膜觸控開關，另有背光模組及導電材料。
+summary_long: 科嘉-KY主要製造與銷售筆記型電腦鍵盤薄膜觸控開關（MTS），2025年占營收69.08%，銘板及其他占30.92%。年報列示的現有商品還包括Mini LED背光模組、可調式電阻電子薄膜、導電銀漿及鍵帽漆料。集團子公司包括蘇州科德軟體電路板、蘇州嘉財、重慶嘉駿、蘇州嘉皇、重慶瑞福德，以及GODA INTERNATIONAL VIET NAM COMPANY LIMITED。
+segments:
+- evidence_ids:
+  - e3
+  id: seg_mts
+  name: 薄膜觸控開關
+  period: '2025'
+  revenue_share_pct: 69.08
+- evidence_ids:
+  - e3
+  id: seg_other
+  name: 銘板及其他
+  period: '2025'
+  revenue_share_pct: 30.92
+main_theme: theme.mini_led
+themes:
+- also: []
+  stage: display
+  theme: theme.mini_led
+  tier: downstream
 relations:
   customers:
   - as_of: '2020-07-04'
@@ -25,12 +55,146 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  subsidiaries:
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 越南集團子公司
+    details:
+    - 越南集團子公司
+    edge: ef4de7fa383c8
+    evidence_level: primary
+    id: org.goda-international-viet-nam-company-limited
+    name: GODA INTERNATIONAL VIET NAM COMPANY LIMITED
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團子公司
+    details:
+    - 集團子公司
+    edge: e44b170231e9f
+    evidence_level: primary
+    id: org.蘇州嘉皇電子有限公司
+    name: 蘇州嘉皇電子有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團子公司
+    details:
+    - 集團子公司
+    edge: e3a2724a93ab7
+    evidence_level: primary
+    id: org.蘇州嘉財電子有限公司
+    name: 蘇州嘉財電子有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團子公司
+    details:
+    - 集團子公司
+    edge: eca6d36e7b77a
+    evidence_level: primary
+    id: org.蘇州科德軟體電路板有限公司
+    name: 蘇州科德軟體電路板有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團子公司
+    details:
+    - 集團子公司
+    edge: e82dfe167a0fa
+    evidence_level: primary
+    id: org.重慶嘉駿電子有限公司
+    name: 重慶嘉駿電子有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團控制的子公司
+    details:
+    - 集團控制的子公司
+    edge: e1ef2677f18ee
+    evidence_level: primary
+    id: org.重慶瑞福德精細化工科技有限公司
+    name: 重慶瑞福德精細化工科技有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.koja.com.tw
 tax_id: '31618486'
 incorporated: '2009-08-17'
 listed: '2011-12-26'
 foreign_registration: KY 開曼群島
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.5215#e2:
+    locator: 印刷頁46，PDF第51頁，所營業務之主要內容
+    published_date: '2026-06-05'
+    publisher: 科嘉(開曼)股份有限公司
+    quote_check: found
+    title: 科嘉(開曼)股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52461/2026/RNS/52461_rns_2026-08-06_809d3562-9e5f-456f-8fdf-e20953dd76a5.pdf
+  tw.5215#e3:
+    locator: 印刷頁46，PDF第51頁，主要產品之營業比重；114年度欄
+    published_date: '2026-06-05'
+    publisher: 科嘉(開曼)股份有限公司
+    quote_check: found
+    title: 科嘉(開曼)股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52461/2026/RNS/52461_rns_2026-08-06_809d3562-9e5f-456f-8fdf-e20953dd76a5.pdf
+  tw.5215#e4:
+    locator: 印刷頁46，PDF第51頁，公司目前之商品（服務）項目
+    published_date: '2026-06-05'
+    publisher: 科嘉(開曼)股份有限公司
+    quote_check: found
+    title: 科嘉(開曼)股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52461/2026/RNS/52461_rns_2026-08-06_809d3562-9e5f-456f-8fdf-e20953dd76a5.pdf
+  tw.5215#e5:
+    locator: 印刷頁42轉投資持股表，基準日115年3月31日；印刷頁64關係企業圖
+    published_date: '2026-06-05'
+    publisher: 科嘉(開曼)股份有限公司
+    quote_check: found
+    title: 科嘉(開曼)股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52461/2026/RNS/52461_rns_2026-08-06_809d3562-9e5f-456f-8fdf-e20953dd76a5.pdf
+  tw.5215#e6:
+    locator: 印刷頁1，PDF第6頁，致股東報告書
+    published_date: '2026-06-05'
+    publisher: 科嘉(開曼)股份有限公司
+    quote_check: found
+    title: 科嘉(開曼)股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52461/2026/RNS/52461_rns_2026-08-06_809d3562-9e5f-456f-8fdf-e20953dd76a5.pdf
+  tw.5215#e7:
+    locator: 印刷頁42轉投資持股表，基準日115年3月31日；印刷頁64關係企業圖
+    published_date: '2026-06-05'
+    publisher: 科嘉(開曼)股份有限公司
+    quote_check: found
+    title: 科嘉(開曼)股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52461/2026/RNS/52461_rns_2026-08-06_809d3562-9e5f-456f-8fdf-e20953dd76a5.pdf
+  tw.5215#e8:
+    locator: 印刷頁43轉投資持股表續表；印刷頁64關係企業圖
+    published_date: '2026-06-05'
+    publisher: 科嘉(開曼)股份有限公司
+    quote_check: found
+    title: 科嘉(開曼)股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52461/2026/RNS/52461_rns_2026-08-06_809d3562-9e5f-456f-8fdf-e20953dd76a5.pdf

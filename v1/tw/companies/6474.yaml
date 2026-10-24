@@ -8,12 +8,204 @@ industry:
   l0_code: '29'
   l0_name: 電子通路業
   l0_name_en: Electronic Products Distribution
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.distribution
+  l2_name: 電子通路
+  l2_name_en: Electronics Distribution
+  l3: dist.components
+  l3_name: 電子零組件通路
+  l3_name_en: Electronic Components Distribution
+chain: chain.semiconductor
+chain_stage:
+  agreement: both
+  also: []
+  reason: 以電子零組件代理與技術加值通路為主，MCU為最大營收單項，另銷售類比元件。
+  stage: distribution
+  stage_name: IC 通路與模組
+  tier: downstream
+primary_chain_position: downstream
+summary_short: 集團以電子零組件加值通路、智慧門鎖與建築系統銷售為主。
+summary_long: 華豫寧集團經營電子零組件加值通路及智慧產品，2026年10月改制為維夫拉克控股，台灣零件事業由全資子公司華豫寧科技承接。2025年營收組成為MCU占31.98%、IoT智慧產品28.19%、類比元件17.53%、其他22.30%。零件產品涵蓋微控制器、MPU與FPGA，並提供硬體及韌體設計支援。智慧產品包括WAFERLOCK電子鎖、智慧家庭與建築門禁整合，以及社區、飯店用WAFERGO服務機器人。主要全資子公司另有華砡國際及維夫拉克股份有限公司。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_mcu
+  name: MCU微電腦控制器
+  period: '2025'
+  revenue_share_pct: 31.98
+- evidence_ids:
+  - e2
+  id: seg_iot
+  name: IoT智慧產品
+  period: '2025'
+  revenue_share_pct: 28.19
+- evidence_ids:
+  - e3
+  id: seg_analog
+  name: Analog & Interface類比元件
+  period: '2025'
+  revenue_share_pct: 17.53
+- evidence_ids:
+  - e4
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 22.3
+main_theme: theme.robotics
+themes:
+- also: []
+  stage: system
+  theme: theme.robotics
+  tier: downstream
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司；電子零件技術服務及銷售
+    details:
+    - 全資子公司；電子零件技術服務及銷售
+    edge: e5aa0c5023d20
+    evidence_level: primary
+    id: org.hua-yu-international
+    name: 華砡國際有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司；電子產品設計、製造及銷售
+    details:
+    - 全資子公司；電子產品設計、製造及銷售
+    edge: e8b237a8411f5
+    evidence_level: primary
+    id: org.waferlock
+    name: 維夫拉克股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-01'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司；承接台灣零件事業
+    details:
+    - 全資子公司；承接台灣零件事業
+    edge: e6bd40253527d
+    evidence_level: primary
+    id: org.wfe-technology
+    name: 華豫寧科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http:// www.wfe.com.tw
 tax_id: '84094369'
 incorporated: '1992-12-23'
 listed: '2025-11-25'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6474#e1:
+    locator: 印刷頁60，營業比重；PDF第63頁
+    published_date: '2026-05-07'
+    publisher: 華豫寧股份有限公司
+    quote_check: found
+    title: 華豫寧股份有限公司114年度年報
+    url: https://www.wfe.com.tw/Upload/20260513095108_79657.pdf
+  tw.6474#e10:
+    locator: PDF第30頁，近二年研發成果，項目5
+    published_date: '2025-10-23'
+    publisher: 華豫寧股份有限公司
+    quote_check: found
+    title: 華豫寧114年10月23日業績發表會簡報
+    url: https://www.wfe.com.tw/Upload/20251022162700_36633.pdf
+  tw.6474#e11:
+    locator: 第17頁，附註十一：子公司；持股欄首欄為115年6月30日
+    published_date: null
+    publisher: 華豫寧股份有限公司
+    quote_check: found
+    title: 華豫寧股份有限公司及子公司115及114年第2季合併財務報告
+    url: https://www.wfe.com.tw/Upload/20260814135217_13066.pdf
+  tw.6474#e12:
+    locator: 第17頁，附註十一：子公司；持股欄首欄為115年6月30日
+    published_date: null
+    publisher: 華豫寧股份有限公司
+    quote_check: found
+    title: 華豫寧股份有限公司及子公司115及114年第2季合併財務報告
+    url: https://www.wfe.com.tw/Upload/20260814135217_13066.pdf
+  tw.6474#e13:
+    locator: 第18頁，附註十一：子公司
+    published_date: null
+    publisher: 華豫寧股份有限公司
+    quote_check: found
+    title: 華豫寧股份有限公司及子公司115及114年第2季合併財務報告
+    url: https://www.wfe.com.tw/Upload/20260814135217_13066.pdf
+  tw.6474#e14:
+    locator: 公司簡介開頭，集團改制說明
+    published_date: null
+    publisher: 華豫寧科技股份有限公司
+    quote_check: found
+    title: 華豫寧科技股份有限公司：公司簡介
+    url: https://www.wfe.com.tw/about.php
+  tw.6474#e2:
+    locator: 印刷頁60，營業比重；PDF第63頁
+    published_date: '2026-05-07'
+    publisher: 華豫寧股份有限公司
+    quote_check: found
+    title: 華豫寧股份有限公司114年度年報
+    url: https://www.wfe.com.tw/Upload/20260513095108_79657.pdf
+  tw.6474#e3:
+    locator: 印刷頁60，營業比重；PDF第63頁
+    published_date: '2026-05-07'
+    publisher: 華豫寧股份有限公司
+    quote_check: found
+    title: 華豫寧股份有限公司114年度年報
+    url: https://www.wfe.com.tw/Upload/20260513095108_79657.pdf
+  tw.6474#e4:
+    locator: 印刷頁60，營業比重；PDF第63頁
+    published_date: '2026-05-07'
+    publisher: 華豫寧股份有限公司
+    quote_check: found
+    title: 華豫寧股份有限公司114年度年報
+    url: https://www.wfe.com.tw/Upload/20260513095108_79657.pdf
+  tw.6474#e5:
+    locator: 印刷頁60，雲端產品事業；PDF第63頁
+    published_date: '2026-05-07'
+    publisher: 華豫寧股份有限公司
+    quote_check: found
+    title: 華豫寧股份有限公司114年度年報
+    url: https://www.wfe.com.tw/Upload/20260513095108_79657.pdf
+  tw.6474#e6:
+    locator: PDF第12頁，主力產品
+    published_date: '2025-10-23'
+    publisher: 華豫寧股份有限公司
+    quote_check: found
+    title: 華豫寧114年10月23日業績發表會簡報
+    url: https://www.wfe.com.tw/Upload/20251022162700_36633.pdf
+  tw.6474#e7:
+    locator: PDF第16頁，技術加值優勢
+    published_date: '2025-10-23'
+    publisher: 華豫寧股份有限公司
+    quote_check: found
+    title: 華豫寧114年10月23日業績發表會簡報
+    url: https://www.wfe.com.tw/Upload/20251022162700_36633.pdf
+  tw.6474#e8:
+    locator: PDF第12頁，主力產品
+    published_date: '2025-10-23'
+    publisher: 華豫寧股份有限公司
+    quote_check: found
+    title: 華豫寧114年10月23日業績發表會簡報
+    url: https://www.wfe.com.tw/Upload/20251022162700_36633.pdf
+  tw.6474#e9:
+    locator: PDF第21頁，智慧建築弱電系統
+    published_date: '2025-10-23'
+    publisher: 華豫寧股份有限公司
+    quote_check: found
+    title: 華豫寧114年10月23日業績發表會簡報
+    url: https://www.wfe.com.tw/Upload/20251022162700_36633.pdf

@@ -8,12 +8,194 @@ industry:
   l0_code: '33'
   l0_name: 農業科技業
   l0_name_en: Agricultural Science and Technology
-primary_chain_position: unknown
+  l1: materials
+  l1_name: 原物料
+  l1_name_en: Materials
+  l2: mat.chemicals
+  l2_name: 化工
+  l2_name_en: Chemicals
+  l3: chem.fertilizer
+  l3_name: 農化與肥料
+  l3_name_en: Agrochemicals & Fertilizers
+primary_chain_position: not_applicable
+summary_short: 以植物保護劑為主要收入來源，另生產HUITEX地工膜與地工格穴。
+summary_long: 惠光主要經營農業科學與環境科技兩大事業群，以植物保護劑及地工合成材料為產品主軸。依2025年合併財報收入計算，農業科學約占76.36%，環境科技約占23.64%，主要收入來自農業科學。植物保護產品包括殺蟲劑、殺菌劑與除草劑，提供作物病蟲害及雜草防治用途。環境科技以HUITEX品牌提供聚乙烯地工膜與地工格穴，應用於垃圾掩埋場防滲、土壤穩定、侵蝕控制及邊坡防護等工程。
+segments:
+- evidence_ids:
+  - e_revenue_agro
+  - e_revenue_total
+  id: seg_agro
+  name: 農業科學事業群
+  period: 2025全年
+  revenue_share_pct: 76.36
+- evidence_ids:
+  - e_revenue_env
+  - e_revenue_total
+  id: seg_env
+  name: 環境科技事業群
+  period: 2025全年
+  revenue_share_pct: 23.64
+relations:
+  subsidiaries:
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: e407eeb912979
+    evidence_level: primary
+    id: org.hui-kwang-international-co-ltd
+    name: HUI KWANG INTERNATIONAL CO., LTD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: ece53fc9688a2
+    evidence_level: primary
+    id: org.hui-kwang-thailand-co-ltd
+    name: HUI KWANG (THAILAND) CO., LTD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過Tellus間接持有
+    details:
+    - 透過Tellus間接持有
+    edge: e70e889955e18
+    evidence_level: primary
+    id: org.huitex-limited
+    name: HUITEX Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: e2a144d80bd27
+    evidence_level: primary
+    id: org.tellus-inc
+    name: Tellus, Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過HUI KWANG INTERNATIONAL間接持有
+    details:
+    - 透過HUI KWANG INTERNATIONAL間接持有
+    edge: e7694c5ea4059
+    evidence_level: primary
+    id: org.上海惠光環境科技有限公司
+    name: 上海惠光環境科技有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.huikwang.com/index.php?c=index
 tax_id: '69546202'
 incorporated: '1965-12-17'
 listed: '2004-03-22'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6508#e_agro:
+    locator: 農科簡介首段
+    published_date: null
+    publisher: 惠光股份有限公司
+    quote_check: found
+    title: 農科簡介
+    url: https://www.huikwang.com/agro/about_hkc/農科簡介/
+  tw.6508#e_geocell:
+    locator: 蜂巢格框／地工格穴產品說明及應用
+    published_date: null
+    publisher: 惠光股份有限公司環境科技事業群
+    quote_check: found
+    title: 蜂巢格網（地工格穴）
+    url: https://www.huitex.com/zh/product_category/geocell/
+  tw.6508#e_geomembrane:
+    locator: 關於HUITEX
+    published_date: null
+    publisher: 惠光股份有限公司環境科技事業群
+    quote_check: found
+    title: HUITEX環境科技事業群
+    url: https://www.huitex.com/zh/index/
+  tw.6508#e_geomembrane_application:
+    locator: 關於HUITEX／垃圾掩埋場應用
+    published_date: null
+    publisher: 惠光股份有限公司環境科技事業群
+    quote_check: found
+    title: HUITEX環境科技事業群
+    url: https://www.huitex.com/zh/index/
+  tw.6508#e_revenue_agro:
+    locator: 印刷頁49至50，部門資訊／產品別收入；單位新台幣仟元
+    published_date: '2026-03-09'
+    publisher: 惠光股份有限公司
+    quote_check: found
+    title: 民國114年度及113年度合併財務報告
+    url: https://www.huikwang.com/wp-content/uploads/2026/03/202504_6508_AI1_20260325_103422.pdf
+  tw.6508#e_revenue_env:
+    locator: 印刷頁49至50，部門資訊／產品別收入；單位新台幣仟元
+    published_date: '2026-03-09'
+    publisher: 惠光股份有限公司
+    quote_check: found
+    title: 民國114年度及113年度合併財務報告
+    url: https://www.huikwang.com/wp-content/uploads/2026/03/202504_6508_AI1_20260325_103422.pdf
+  tw.6508#e_revenue_total:
+    locator: 印刷頁50，產品別收入；單位新台幣仟元
+    published_date: '2026-03-09'
+    publisher: 惠光股份有限公司
+    quote_check: found
+    title: 民國114年度及113年度合併財務報告
+    url: https://www.huikwang.com/wp-content/uploads/2026/03/202504_6508_AI1_20260325_103422.pdf
+  tw.6508#e_sub_huitex:
+    locator: 印刷頁13，列入合併財務報告之子公司表；投資公司名稱、子公司名稱欄
+    published_date: '2026-05-12'
+    publisher: 惠光股份有限公司
+    quote_check: found
+    title: 民國115年及114年第一季合併財務報告
+    url: https://www.huikwang.com/wp-content/uploads/2026/10/惠光合併.2026合併第一季財報.pdf
+  tw.6508#e_sub_international:
+    locator: 印刷頁13，列入合併財務報告之子公司表；投資公司名稱、子公司名稱欄
+    published_date: '2026-05-12'
+    publisher: 惠光股份有限公司
+    quote_check: found
+    title: 民國115年及114年第一季合併財務報告
+    url: https://www.huikwang.com/wp-content/uploads/2026/10/惠光合併.2026合併第一季財報.pdf
+  tw.6508#e_sub_shanghai:
+    locator: 印刷頁13，列入合併財務報告之子公司表；投資公司名稱、子公司名稱欄
+    published_date: '2026-05-12'
+    publisher: 惠光股份有限公司
+    quote_check: found
+    title: 民國115年及114年第一季合併財務報告
+    url: https://www.huikwang.com/wp-content/uploads/2026/10/惠光合併.2026合併第一季財報.pdf
+  tw.6508#e_sub_tellus:
+    locator: 印刷頁13，列入合併財務報告之子公司表；投資公司名稱、子公司名稱欄
+    published_date: '2026-05-12'
+    publisher: 惠光股份有限公司
+    quote_check: found
+    title: 民國115年及114年第一季合併財務報告
+    url: https://www.huikwang.com/wp-content/uploads/2026/10/惠光合併.2026合併第一季財報.pdf
+  tw.6508#e_sub_thailand:
+    locator: 印刷頁13，列入合併財務報告之子公司表；投資公司名稱、子公司名稱欄
+    published_date: '2026-05-12'
+    publisher: 惠光股份有限公司
+    quote_check: found
+    title: 民國115年及114年第一季合併財務報告
+    url: https://www.huikwang.com/wp-content/uploads/2026/10/惠光合併.2026合併第一季財報.pdf

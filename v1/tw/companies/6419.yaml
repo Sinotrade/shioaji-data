@@ -8,12 +8,94 @@ industry:
   l0_code: '26'
   l0_name: 光電業
   l0_name_en: Optoelectronic
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.construction
+  l2_name: 營建與工程
+  l2_name_en: Engineering & Construction
+  l3: cons.engineering
+  l3_name: 工程與統包
+  l3_name_en: Engineering & EPC
+chain: chain.semiconductor
+chain_stage:
+  agreement: both
+  also: []
+  reason: 機電整合工程占營收84%，涵蓋美國半導體高科技產業，對應設備與廠務階段。
+  stage: tools
+  stage_name: 設備與廠務
+  tier: upstream
+primary_chain_position: upstream
+summary_short: 以美國高科技產業機電整合工程為主，兼營影像監控軟硬體。
+summary_long: 京晨科以機電整合工程及影像監控軟硬體為主要業務。2025年度機電整合工程收入為新台幣4億1,987.9萬元，占合併營收84%，其他事業部占16%；工程業務涵蓋美國亞利桑那州高科技產業。監控產品包括NUUO Crystal與MainConsole系列，Crystal採Linux系統並提供多站點集中管理。公司亦開發運用AI自動學習演算法進行主動報警與回報的安控方案。
+segments:
+- evidence_ids:
+  - e1
+  - e2
+  id: seg_engineering
+  name: 機電整合工程
+  period: '2025'
+  revenue_share_pct: 84
+- evidence_ids:
+  - e3
+  id: seg_other
+  name: 其他事業部
+  period: '2025'
+  revenue_share_pct: 16
 website: http://www.nuuo.com
 tax_id: '28212547'
 incorporated: '2006-08-17'
 listed: '2014-12-29'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6419#e1:
+    locator: 第2頁，PDF第6頁，本年度營業計畫概要及公司發展策略；前文說明美國Arizona半導體高科技產業機電整合工程
+    published_date: '2026-05-26'
+    publisher: 京晨科技股份有限公司
+    quote_check: not_found
+    title: 京晨科技股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=6419&colorchg=1&filename=2025_6419_20260626F04.pdf&kind=F&step=9
+  tw.6419#e2:
+    locator: 第2頁，PDF第6頁，事業別營業收入表；114年度機電整合工程欄，金額單位為新台幣仟元
+    published_date: '2026-05-26'
+    publisher: 京晨科技股份有限公司
+    quote_check: not_found
+    title: 京晨科技股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=6419&colorchg=1&filename=2025_6419_20260626F04.pdf&kind=F&step=9
+  tw.6419#e3:
+    locator: 第2頁，PDF第6頁，事業別營業收入表；114年度其他事業部欄，金額單位為新台幣仟元
+    published_date: '2026-05-26'
+    publisher: 京晨科技股份有限公司
+    quote_check: not_found
+    title: 京晨科技股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=6419&colorchg=1&filename=2025_6419_20260626F04.pdf&kind=F&step=9
+  tw.6419#e4:
+    locator: NUUO Intelligent Surveillance Solutions首段
+    published_date: null
+    publisher: NUUO Inc.
+    quote_check: found
+    title: NUUO Inc. – Trusted Video Management
+    url: https://nuuo.com/
+  tw.6419#e5:
+    locator: NUUO Crystal™ Family功能列點
+    published_date: null
+    publisher: NUUO Inc.
+    quote_check: found
+    title: NUUO Inc. – Trusted Video Management
+    url: https://nuuo.com/
+  tw.6419#e6:
+    locator: NUUO Crystal™ Family功能列點
+    published_date: null
+    publisher: NUUO Inc.
+    quote_check: found
+    title: NUUO Inc. – Trusted Video Management
+    url: https://nuuo.com/
+  tw.6419#e7:
+    locator: 第5頁，PDF第5頁，董事長的話
+    published_date: 2025-08
+    publisher: 京晨科技股份有限公司
+    quote_check: found
+    title: 京晨科技2024年永續報告書
+    url: https://nuuo.com/wp-content/uploads/2025/08/NUUO-ESG-Sustainability-Report-2024.pdf

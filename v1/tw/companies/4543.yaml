@@ -8,12 +8,153 @@ industry:
   l0_code: '05'
   l0_name: 電機機械
   l0_name_en: Electric Machinery
-primary_chain_position: unknown
+  l1: auto
+  l1_name: 汽車與運具
+  l1_name_en: Automotive & Mobility
+  l2: auto.vehicles
+  l2_name: 汽機車
+  l2_name_en: Autos & Motorcycles
+  l3: auto.parts
+  l3_name: 汽車零組件
+  l3_name_en: Auto Parts
+chain: chain.auto
+chain_stage:
+  agreement: both
+  also: []
+  reason: 汽車空調模組占營收70.15%，以冷凝器、蒸發器及暖氣芯子等零組件為主。
+  stage: parts
+  stage_name: 汽車零組件與模組
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 研發、製造及銷售汽車空調、冷卻與機電散熱模組。
+summary_long: 萬在研發、生產及銷售汽車空調、汽機車冷卻與機電散熱模組，汽車空調產品包括冷凝器、蒸發器及暖氣芯子。2025年汽車空調模組占營收70.15%，冷卻模組占29.20%，其他占0.65%。汽機車產品包含鋁塑水箱；機電產品應用於CPU、VGA、LED及汽車電子散熱。公司亦開發AI伺服器機櫃水冷散熱系統，並提供浸沒式機櫃使用的水冷散熱器；產品應用另涵蓋電動車車載系統、電池組及資料中心散熱。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_auto_ac
+  name: 汽車空調模組
+  period: '2025'
+  revenue_share_pct: 70.15
+- evidence_ids:
+  - e2
+  id: seg_cooling
+  name: 冷卻模組
+  period: '2025'
+  revenue_share_pct: 29.2
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 0.65
+main_theme: theme.ai_server
+themes:
+- also: []
+  stage: components
+  theme: theme.ai_server
+  tier: midstream
+- also: []
+  stage: modules
+  theme: theme.liquid_cooling
+  tier: midstream
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的子公司
+    details:
+    - 直接持股100%的子公司
+    edge: e0156c179078d
+    evidence_level: primary
+    id: org.cavalier-holding-samoa
+    name: CAVALIER HOLDING Co., LTD. (SAMOA)
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過CAVALIER間接持股100%的子公司
+    details:
+    - 透過CAVALIER間接持股100%的子公司
+    edge: e0d210e9e0c3e
+    evidence_level: primary
+    id: org.xiamen-manzai-industrial
+    name: 廈門萬載工業有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.manzai.com.tw
 tax_id: '22212598'
 incorporated: '1984-05-07'
 listed: '2016-03-15'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4543#e1:
+    locator: 第51頁，業務範圍
+    published_date: null
+    publisher: 萬在工業股份有限公司
+    quote_check: found
+    title: 萬在工業股份有限公司114年度年報
+    url: http://125.227.245.109/isupply/sop/mzweb/shareholder/115/114_1.pdf
+  tw.4543#e11:
+    locator: 第75頁，各關係企業董事、監察人與總經理資料，持有股份表
+    published_date: null
+    publisher: 萬在工業股份有限公司
+    quote_check: found
+    title: 萬在工業股份有限公司114年度年報
+    url: http://125.227.245.109/isupply/sop/mzweb/shareholder/115/114_1.pdf
+  tw.4543#e12:
+    locator: 第74頁組織圖及第75頁持有股份表，廈門萬載項目
+    published_date: null
+    publisher: 萬在工業股份有限公司
+    quote_check: found
+    title: 萬在工業股份有限公司114年度年報
+    url: http://125.227.245.109/isupply/sop/mzweb/shareholder/115/114_1.pdf
+  tw.4543#e2:
+    locator: 第51頁，營業比重；114年度銷售金額及比例
+    published_date: null
+    publisher: 萬在工業股份有限公司
+    quote_check: found
+    title: 萬在工業股份有限公司114年度年報
+    url: http://125.227.245.109/isupply/sop/mzweb/shareholder/115/114_1.pdf
+  tw.4543#e3:
+    locator: 第55頁，產業上、中、下游之關聯性
+    published_date: null
+    publisher: 萬在工業股份有限公司
+    quote_check: found
+    title: 萬在工業股份有限公司114年度年報
+    url: http://125.227.245.109/isupply/sop/mzweb/shareholder/115/114_1.pdf
+  tw.4543#e4:
+    locator: 第51頁，集團目前之商品項目
+    published_date: null
+    publisher: 萬在工業股份有限公司
+    quote_check: found
+    title: 萬在工業股份有限公司114年度年報
+    url: http://125.227.245.109/isupply/sop/mzweb/shareholder/115/114_1.pdf
+  tw.4543#e5:
+    locator: 正文首段
+    published_date: null
+    publisher: 萬在工業股份有限公司
+    quote_check: found
+    title: 汽機車冷卻模組
+    url: http://www.manzai.com.tw/index.php?option=module&lang=cht&task=pageinfo&id=9&index=4
+  tw.4543#e6:
+    locator: 正文首段
+    published_date: null
+    publisher: 萬在工業股份有限公司
+    quote_check: found
+    title: 機電熱流冷卻模組
+    url: http://www.manzai.com.tw/index.php?option=module&lang=cht&task=pageinfo&id=10&index=5
+  tw.4543#e7:
+    locator: 第57頁，開發成功之技術或產品，AI伺服器機櫃高效水冷散熱系統
+    published_date: null
+    publisher: 萬在工業股份有限公司
+    quote_check: found
+    title: 萬在工業股份有限公司114年度年報
+    url: http://125.227.245.109/isupply/sop/mzweb/shareholder/115/114_1.pdf

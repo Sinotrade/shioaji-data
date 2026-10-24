@@ -8,12 +8,165 @@ industry:
   l0_code: '29'
   l0_name: 電子通路業
   l0_name_en: Electronic Products Distribution
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.semi
+  l2_name: 半導體
+  l2_name_en: Semiconductors
+  l3: semi.distribution
+  l3_name: IC 通路
+  l3_name_en: IC Distribution
+chain: chain.semiconductor
+chain_stage:
+  agreement: both
+  also: []
+  reason: 電子材料占營收81%，主要透過子公司代理電源管理與電池保護IC。
+  stage: distribution
+  stage_name: IC 通路與模組
+  tier: downstream
+primary_chain_position: downstream
+summary_short: 透過子公司經營半導體零組件代理及視訊監控產品。
+summary_long: 陞泰科技以集團方式經營半導體零組件代理及視訊監控業務，2025年電子材料營收占81%，視訊監控系統占19%。半導體代理由子公司樵屋國際經營，產品包含電源管理與電池保護IC。安控業務由子公司陞泰安控經營，集團產品包含NVR網路錄放影機、DVR數位影像錄影機及智慧型網路攝影機等。其他主要子公司包括從事一般投資的陞泰科投資，以及從事電器與視聽電子產品製造的陞泉實業。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_electronic_materials
+  name: 電子材料
+  period: '2025'
+  revenue_share_pct: 81
+- evidence_ids:
+  - e2
+  id: seg_surveillance
+  name: 視訊監控系統
+  period: '2025'
+  revenue_share_pct: 19
+relations:
+  subsidiaries:
+  - as_of: '2026-05-22'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 經營半導體零組件代理的子公司
+    details:
+    - 經營半導體零組件代理的子公司
+    edge: e4e7c53c75119
+    evidence_level: primary
+    id: org.樵屋國際股份有限公司
+    name: 樵屋國際股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-05-22'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 電器及視聽電子產品製造子公司
+    details:
+    - 電器及視聽電子產品製造子公司
+    edge: ea5822aeba9f1
+    evidence_level: primary
+    id: org.陞泉實業股份有限公司
+    name: 陞泉實業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-05-22'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 產銷監視防盜系統的子公司
+    details:
+    - 產銷監視防盜系統的子公司
+    edge: eee15daf046a1
+    evidence_level: primary
+    id: org.陞泰安控股份有限公司
+    name: 陞泰安控股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-05-22'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 一般投資業子公司
+    details:
+    - 一般投資業子公司
+    edge: e69b775df4c38
+    evidence_level: primary
+    id: org.陞泰科投資股份有限公司
+    name: 陞泰科投資股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.avtechgroup.com.tw
 tax_id: '97092770'
 incorporated: '1996-06-26'
 listed: '2005-08-19'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.8072#e10:
+    locator: 公司簡介
+    published_date: null
+    publisher: 陞泰科技股份有限公司
+    quote_check: found
+    title: 陞泰科技AVTECH－關於我們
+    url: https://www.avtechgroup.com.tw/aboutus_tw.aspx
+  tw.8072#e2:
+    locator: 印刷頁41，營業比重；PDF第45頁，欄位依序為113年度及114年度
+    published_date: '2026-05-22'
+    publisher: 陞泰科技股份有限公司
+    quote_check: found
+    title: 陞泰科技股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52714/2026/RNS/52714_rns_2026-05-26_05eaa2c3-82cb-4094-8d88-73486e44a442.pdf
+  tw.8072#e3:
+    locator: 印刷頁37，本公司投資股數與持股比例；PDF第41頁
+    published_date: '2026-05-22'
+    publisher: 陞泰科技股份有限公司
+    quote_check: found
+    title: 陞泰科技股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52714/2026/RNS/52714_rns_2026-05-26_05eaa2c3-82cb-4094-8d88-73486e44a442.pdf
+  tw.8072#e4:
+    locator: 印刷頁37，本公司投資股數與持股比例；PDF第41頁
+    published_date: '2026-05-22'
+    publisher: 陞泰科技股份有限公司
+    quote_check: found
+    title: 陞泰科技股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52714/2026/RNS/52714_rns_2026-05-26_05eaa2c3-82cb-4094-8d88-73486e44a442.pdf
+  tw.8072#e5:
+    locator: 印刷頁67，各關係企業基本資料；PDF第71頁
+    published_date: '2026-05-22'
+    publisher: 陞泰科技股份有限公司
+    quote_check: found
+    title: 陞泰科技股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52714/2026/RNS/52714_rns_2026-05-26_05eaa2c3-82cb-4094-8d88-73486e44a442.pdf
+  tw.8072#e6:
+    locator: 印刷頁41，目前之商品項目；PDF第45頁
+    published_date: '2026-05-22'
+    publisher: 陞泰科技股份有限公司
+    quote_check: found
+    title: 陞泰科技股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52714/2026/RNS/52714_rns_2026-05-26_05eaa2c3-82cb-4094-8d88-73486e44a442.pdf
+  tw.8072#e7:
+    locator: 印刷頁42，主要產品現況與發展說明；PDF第46頁
+    published_date: '2026-05-22'
+    publisher: 陞泰科技股份有限公司
+    quote_check: found
+    title: 陞泰科技股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52714/2026/RNS/52714_rns_2026-05-26_05eaa2c3-82cb-4094-8d88-73486e44a442.pdf
+  tw.8072#e8:
+    locator: 印刷頁43，視訊監控系統產品說明；PDF第47頁
+    published_date: '2026-05-22'
+    publisher: 陞泰科技股份有限公司
+    quote_check: found
+    title: 陞泰科技股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52714/2026/RNS/52714_rns_2026-05-26_05eaa2c3-82cb-4094-8d88-73486e44a442.pdf
+  tw.8072#e9:
+    locator: 印刷頁43，電子材料產品說明；PDF第47頁
+    published_date: '2026-05-22'
+    publisher: 陞泰科技股份有限公司
+    quote_check: found
+    title: 陞泰科技股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52714/2026/RNS/52714_rns_2026-05-26_05eaa2c3-82cb-4094-8d88-73486e44a442.pdf

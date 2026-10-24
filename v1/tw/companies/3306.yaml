@@ -8,12 +8,112 @@ industry:
   l0_code: '27'
   l0_name: 通信網路業
   l0_name_en: Communications and Internet
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.network
+  l2_name: 通信網路
+  l2_name_en: Communications & Networking
+  l3: net.wireless
+  l3_name: 無線通訊與射頻
+  l3_name_en: Wireless & RF
+chain: chain.networking
+chain_stage:
+  agreement: both
+  also:
+  - stage: modules
+    stage_name: 模組與零組件
+    tier: midstream
+  reason: GPS接收機占營收86%，以終端設備為主，另提供GNSS定位模組。
+  stage: equipment
+  stage_name: 網通設備與系統
+  tier: downstream
+primary_chain_position: downstream
+summary_short: 以GPS接收機為主要營收來源，另提供定位模組與車用雷達、影像系統。
+summary_long: 鼎天以GPS接收機為主要營收來源，2026年第一季占銷貨收入86%，其他產品占14%。定位產品包括支援L1與L5雙頻的GNSS模組；車用產品則涵蓋79GHz毫米波雷達、盲點偵測與360度環景影像系統。公司另提供結合駕駛監控、行車記錄及先進駕駛輔助功能的DMS產品，以及提供駕駛行為報告的雲端方案。廣達電腦為其母公司及集團最終控制者。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_gps
+  name: GPS接收機
+  period: 2026Q1
+  revenue_share_pct: 86
+- evidence_ids:
+  - e1
+  id: seg_other
+  name: 其他
+  period: 2026Q1
+  revenue_share_pct: 14
+relations:
+  parents:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 母公司及集團最終控制者
+    details:
+    - 母公司及集團最終控制者
+    edge: ec46e5928764e
+    evidence_level: primary
+    id: tw.2382
+    name: 廣達
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.royaltek.com/tw/
 tax_id: '16433708'
 incorporated: '1997-12-23'
 listed: '2005-07-05'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3306#e1:
+    locator: 第6頁，產品別銷貨收入；欄位為2026Q1、占比、2025Q1、占比
+    published_date: '2026-06-23'
+    publisher: 鼎天國際股份有限公司
+    quote_check: found
+    title: 鼎天國際股份有限公司2026年6月23日營運報告
+    url: https://mopsov.twse.com.tw/nas/STR/330620260622M001.pdf
+  tw.3306#e2:
+    locator: 產品介紹／功能
+    published_date: null
+    publisher: 鼎天國際股份有限公司
+    quote_check: found
+    title: REB-1010A 衛星導航系統
+    url: https://www.royaltek.com/tw/products-detail/GNSS-Module__2/
+  tw.3306#e3:
+    locator: 產品介紹／功能
+    published_date: null
+    publisher: 鼎天國際股份有限公司
+    quote_check: found
+    title: 雷達盲點偵測系統 RAR-7200
+    url: https://www.royaltek.com/tw/products-detail/RAR-7200/
+  tw.3306#e4:
+    locator: 產品介紹／功能
+    published_date: null
+    publisher: 鼎天國際股份有限公司
+    quote_check: found
+    title: 疲勞駕駛偵測預防系統
+    url: https://www.royaltek.com/tw/products-detail/DMS_DM1/
+  tw.3306#e5:
+    locator: 產品介紹／功能
+    published_date: null
+    publisher: 鼎天國際股份有限公司
+    quote_check: found
+    title: 360度環景系統
+    url: https://www.royaltek.com/tw/products-detail/360_AVM/
+  tw.3306#e6:
+    locator: 產品介紹／功能
+    published_date: null
+    publisher: 鼎天國際股份有限公司
+    quote_check: found
+    title: 雲端方案
+    url: https://www.royaltek.com/tw/products-detail/Cloud_solution/
+  tw.3306#e7:
+    locator: 財報第26頁，附註七、關係人交易／母公司與最終控制者
+    published_date: '2026-08-03'
+    publisher: 鼎天國際股份有限公司
+    quote_check: found
+    title: 鼎天國際股份有限公司2026年第二季財務報告
+    url: https://www.royaltek.com/tw/investors/finance-download/1/32/data_file_q2/

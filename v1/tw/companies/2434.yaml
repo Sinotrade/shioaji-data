@@ -8,12 +8,152 @@ industry:
   l0_code: '24'
   l0_name: 半導體業
   l0_name_en: Semiconductor
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.semi
+  l2_name: 半導體
+  l2_name_en: Semiconductors
+  l3: semi.discrete
+  l3_name: 分離式元件與功率半導體
+  l3_name_en: Discretes & Power Semiconductors
+chain: chain.semiconductor
+chain_stage:
+  agreement: both
+  also:
+  - stage: osat
+    stage_name: 封裝測試
+    tier: downstream
+  reason: 主要從事二極體與功率電晶體晶片製造，兩者合計占營收98.48%，並涵蓋封裝測試。
+  stage: fab
+  stage_name: 晶圓製造
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 製造二極體、功率電晶體與MOSFET等功率半導體。
+summary_long: 統懋主要從事分離式功率半導體製造，業務涵蓋晶片及封裝測試，主要產品包含蕭特基二極體與功率電晶體。2025年營收中，二極體占80.44%、電晶體占18.04%，其他占1.52%。官網另列有功率場效電晶體、碳化矽功率場效電晶體、碳化矽蕭特基二極體及IGBT產品。集團透過新和懋控股有限公司持有和懋半導體（四川）有限公司，分別形成直接與間接子公司關係。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_diode
+  name: 二極體
+  period: '2025'
+  revenue_share_pct: 80.44
+- evidence_ids:
+  - e2
+  id: seg_transistor
+  name: 電晶體
+  period: '2025'
+  revenue_share_pct: 18.04
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 1.52
+main_theme: theme.sic
+themes:
+- also: []
+  stage: devices
+  theme: theme.sic
+  tier: midstream
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過新和懋控股間接持有100%的子公司
+    details:
+    - 透過新和懋控股間接持有100%的子公司
+    edge: e9be83cd68c1b
+    evidence_level: primary
+    id: org.和懋半導體-四川-有限公司
+    name: 和懋半導體(四川)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%的控股子公司
+    details:
+    - 直接持有100%的控股子公司
+    edge: ea46063fd4358
+    evidence_level: primary
+    id: org.英屬維京群島新和懋控股有限公司
+    name: 英屬維京群島新和懋控股有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.mospec.com.tw/
 tax_id: '22404266'
 incorporated: '1987-03-09'
 listed: '2000-09-11'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2434#e1:
+    locator: 公司簡介／成立於1987年的專業堅持、全方位封裝方案
+    published_date: null
+    publisher: 統懋半導體股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.mospec.com.tw/aboutus.htm
+  tw.2434#e2:
+    locator: 印刷第71頁（PDF第73頁），The FY 2025產品營收占比表；日期採封面刊印日
+    published_date: '2026-04-24'
+    publisher: 統懋半導體股份有限公司
+    quote_check: found
+    title: 2025 ANNUAL REPORT
+    url: https://www.mospec.com.tw/upload_files/web/investor-annual-report-eng/115-year-report.pdf
+  tw.2434#e3:
+    locator: 關於統懋／主要產品
+    published_date: null
+    publisher: 統懋半導體股份有限公司
+    quote_check: found
+    title: 統懋半導體股份有限公司
+    url: https://www.mospec.com.tw/
+  tw.2434#e4:
+    locator: 產品介紹／場效電晶體／功率場效電晶體
+    published_date: null
+    publisher: 統懋半導體股份有限公司
+    quote_check: found
+    title: 功率場效電晶體產品列表
+    url: https://www.mospec.com.tw/power-mosfet.htm
+  tw.2434#e5:
+    locator: 產品介紹／場效電晶體／碳化矽功率場效電晶體
+    published_date: null
+    publisher: 統懋半導體股份有限公司
+    quote_check: found
+    title: 碳化矽功率場效電晶體產品列表
+    url: https://www.mospec.com.tw/sic-power-mosfet.htm
+  tw.2434#e6:
+    locator: 產品介紹／碳化矽肖特基二極體
+    published_date: null
+    publisher: 統懋半導體股份有限公司
+    quote_check: found
+    title: 碳化矽肖特基二極體產品列表
+    url: https://www.mospec.com.tw/sic-schottky-diode.htm
+  tw.2434#e7:
+    locator: 產品介紹／絕緣閘極雙極性電晶體
+    published_date: null
+    publisher: 統懋半導體股份有限公司
+    quote_check: found
+    title: 絕緣閘極雙極性電晶體
+    url: https://www.mospec.com.tw/igbt.htm
+  tw.2434#e8:
+    locator: PDF第89頁，合併財務報表附註第15頁，合併子公司及持股比例表，114.12.31欄
+    published_date: null
+    publisher: 統懋半導體股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.mospec.com.tw/upload_files/web/investor-annual-report/115-year-report.pdf
+  tw.2434#e9:
+    locator: PDF第89頁，合併財務報表附註第15頁；投資公司為新和懋控股，兩年度持股均為100%
+    published_date: null
+    publisher: 統懋半導體股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.mospec.com.tw/upload_files/web/investor-annual-report/115-year-report.pdf

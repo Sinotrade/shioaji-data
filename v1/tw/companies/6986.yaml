@@ -8,12 +8,101 @@ industry:
   l0_code: '22'
   l0_name: 生技醫療業
   l0_name_en: Biotechnology and Medical Care
-primary_chain_position: unknown
+  l1: health
+  l1_name: 醫療保健
+  l1_name_en: Healthcare
+  l2: health.pharma
+  l2_name: 製藥與生技
+  l2_name_en: Pharmaceuticals & Biotech
+  l3: bio.cdmo
+  l3_name: 生技代工（CDMO）
+  l3_name_en: Biologics CDMO
+chain: chain.biotech
+chain_stage:
+  agreement: both
+  also:
+  - stage: rnd
+    stage_name: 研發與原料
+    tier: upstream
+  reason: 委託生產占營收58.05%為主，另提供委託開發並研發幹細胞新藥。
+  stage: manufacturing
+  stage_name: 製造與代工
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 以細胞委託生產、開發製造及技術授權取得收入，並研發幹細胞新藥。
+summary_long: 和迅以細胞與細胞衍生物的委託生產及委託開發製造服務為主要業務。2025年營收中，CMO占58.05%、CDMO占33.71%，技術授權占6.99%，其他占1.25%。公司運用自有產能提供細胞培養、處理及製劑生產，另提供無菌、黴漿菌與內毒素等委託檢驗，以及無菌充填服務。研發產品HeXell-2020為異體臍帶間質幹細胞製劑，用於心血管疾病治療臨床試驗；RegenExo則為臍帶間質幹細胞衍生的純化外泌體。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_cmo
+  name: 委託生產服務（CMO）
+  period: '2025'
+  revenue_share_pct: 58.05
+- evidence_ids:
+  - e1
+  id: seg_cdmo
+  name: 委託開發服務（CDMO）
+  period: '2025'
+  revenue_share_pct: 33.71
+- evidence_ids:
+  - e1
+  id: seg_license
+  name: 技術授權
+  period: '2025'
+  revenue_share_pct: 6.99
+- evidence_ids:
+  - e1
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 1.25
 website: https://www.hexunbio.com/
 tax_id: '50924393'
 incorporated: '2019-06-12'
 listed: '2026-06-26'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6986#e1:
+    locator: 第54頁，營業比重；各列末兩欄為2025年度金額及比重
+    published_date: '2026-06-08'
+    publisher: 和迅生命科學股份有限公司
+    quote_check: found
+    title: 和迅生命科學股份有限公司2025年度年報
+    url: https://www.hexunbio.com/wp-content/uploads/2026/07/2025%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf
+  tw.6986#e2:
+    locator: 委託製造正文
+    published_date: null
+    publisher: 和迅生命科學股份有限公司
+    quote_check: found
+    title: 委託製造
+    url: https://www.hexunbio.com/commissioned_manufacturing/
+  tw.6986#e3:
+    locator: 委託檢驗正文
+    published_date: null
+    publisher: 和迅生命科學股份有限公司
+    quote_check: found
+    title: 委託檢驗
+    url: https://www.hexunbio.com/commissioned_inspection/
+  tw.6986#e4:
+    locator: 無菌充填正文
+    published_date: null
+    publisher: 和迅生命科學股份有限公司
+    quote_check: found
+    title: 無菌充填
+    url: https://www.hexunbio.com/sterile_filling/
+  tw.6986#e5:
+    locator: 第64頁，主要產品之重要用途，HeXell-2020細胞製劑列
+    published_date: '2025-05-26'
+    publisher: 和迅生命科學股份有限公司
+    quote_check: found
+    title: 和迅生命科學股份有限公司2024年度年報
+    url: https://hexunbio.com/wp-content/uploads/2025/12/2024%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf
+  tw.6986#e6:
+    locator: 第75頁，主要產品之重要用途，RegenExo製劑列
+    published_date: '2026-06-08'
+    publisher: 和迅生命科學股份有限公司
+    quote_check: found
+    title: 和迅生命科學股份有限公司2025年度年報
+    url: https://www.hexunbio.com/wp-content/uploads/2026/07/2025%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf

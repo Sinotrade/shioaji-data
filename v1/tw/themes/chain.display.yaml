@@ -107,6 +107,18 @@ members:
   stage: device
   tier: downstream
   stage_role: primary
+- id: tw.3002
+  detail: 博弈機觸控螢幕及周邊設備占營收46.77%，為最大業務，屬顯示終端產品。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.3002#e1
+  - tw.3002#e2
+  - tw.3002#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: device
+  tier: downstream
+  stage_role: primary
 - id: tw.3038
   detail: 觸控面板及模組占營收56%、液晶顯示模組占42%，主要業務皆屬面板與模組。
   as_of: '2026-10-23'
@@ -130,6 +142,17 @@ members:
   source: classification
   stage: materials
   tier: upstream
+  stage_role: primary
+- id: tw.3066
+  detail: 光電產品占營收93.51%，包含LED數位、貼片及點陣顯示器，對應顯示模組階段。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.3066#e2
+  - tw.3066#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: panel
+  tier: midstream
   stage_role: primary
 - id: tw.3149
   detail: 智能光電占營收79.58%，主要供應顯示與觸控用保護玻璃及加工，屬上游材料。
@@ -165,6 +188,17 @@ members:
   stage: device
   tier: downstream
   stage_role: also
+- id: tw.3285
+  detail: 已確認設計製造字型、圖形及TFT液晶顯示模組，屬面板與模組階段；營收占比仍待確認。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.3285#e1
+  - tw.3285#e2
+  confidence: ai_cross_checked
+  source: classification
+  stage: panel
+  tier: midstream
+  stage_role: primary
 - id: tw.3437
   detail: 主要營收來自筆電、顯示器及電視背光LED封裝產品，屬顯示器上游光源零組件。
   as_of: '2026-10-23'
@@ -349,6 +383,32 @@ members:
   stage: materials
   tier: upstream
   stage_role: primary
+- id: tw.4995
+  detail: 高亮度液晶面板模組占營收42.29%為最大業務，另有顯示器及工業級觸控電腦等終端產品。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.4995#e2
+  - tw.4995#e3
+  - tw.4995#e7
+  - tw.4995#e11
+  confidence: ai_cross_checked
+  source: classification
+  stage: panel
+  tier: midstream
+  stage_role: primary
+- id: tw.4995
+  detail: 高亮度液晶面板模組占營收42.29%為最大業務，另有顯示器及工業級觸控電腦等終端產品。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.4995#e2
+  - tw.4995#e3
+  - tw.4995#e7
+  - tw.4995#e11
+  confidence: ai_cross_checked
+  source: classification
+  stage: device
+  tier: downstream
+  stage_role: also
 - id: tw.5234
   detail: 顯示器材料占營收77%，主要供應黑色矩陣光阻及面板配向膜。
   as_of: '2026-10-13'
@@ -360,6 +420,16 @@ members:
   source: classification
   stage: materials
   tier: upstream
+  stage_role: primary
+- id: tw.5315
+  detail: 2025年液晶顯示器模組占營收96.79%，主要業務屬面板與模組階段。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.5315#e2
+  confidence: ai_cross_checked
+  source: classification
+  stage: panel
+  tier: midstream
   stage_role: primary
 - id: tw.6116
   detail: TFT-LCD占營收99%，主要製造液晶面板、觸控面板及顯示模組。
@@ -539,6 +609,18 @@ members:
   stage: tools
   tier: upstream
   stage_role: also
+- id: tw.6899
+  detail: 電阻式與電容式觸控面板合計占營收71.16%，並提供顯示模組與光學貼合整合服務。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.6899#e1
+  - tw.6899#e2
+  - tw.6899#e4
+  confidence: ai_cross_checked
+  source: classification
+  stage: panel
+  tier: midstream
+  stage_role: primary
 - id: tw.8049
   detail: 主要設計製造工業用液晶與觸控顯示模組，TFT產品占營收82.76%，屬面板與模組階段。
   as_of: '2026-10-23'

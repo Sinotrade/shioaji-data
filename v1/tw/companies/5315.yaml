@@ -8,12 +8,157 @@ industry:
   l0_code: '26'
   l0_name: 光電業
   l0_name_en: Optoelectronic
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.display
+  l2_name: 光電與顯示
+  l2_name_en: Optoelectronics & Displays
+  l3: disp.touch
+  l3_name: 觸控與顯示模組
+  l3_name_en: Touch & Display Modules
+chain: chain.display
+chain_stage:
+  agreement: both
+  also: []
+  reason: 2025年液晶顯示器模組占營收96.79%，主要業務屬面板與模組階段。
+  stage: panel
+  stage_name: 面板與模組
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 以液晶顯示器模組為主要營收來源，提供LCD、觸控面板及光學貼合方案。
+summary_long: 光聯科技以液晶顯示器模組為主要收入來源，2025年LCM占營收96.79%，LCD占1.56%，其他占1.65%。產品包括液晶顯示器、顯示模組及觸控面板，應用涵蓋工業控制、醫療設備、白色家電、戶外、車載與船舶領域，並提供OCA片膠、OCR水膠及PVB光學貼合方案。依2025年底合併財報，直接子公司包括香港光聯與BRIGHT YEH，另透過BRIGHT YEH持有光曄光電科技（惠州）有限公司。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_lcm
+  name: 液晶顯示器模組（LCM）
+  period: '2025'
+  revenue_share_pct: 96.79
+- evidence_ids:
+  - e2
+  id: seg_lcd
+  name: 液晶顯示器（LCD）
+  period: '2025'
+  revenue_share_pct: 1.56
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 1.65
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有之子公司
+    details:
+    - 直接持有之子公司
+    edge: e85f9abdc2811
+    evidence_level: primary
+    id: org.bright-yeh-ltd
+    name: BRIGHT YEH, LTD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有之香港子公司
+    details:
+    - 直接持有之香港子公司
+    edge: e9a3ecfad2ce8
+    evidence_level: primary
+    id: org.united-radiant-technology-h-k-co-ltd
+    name: UNITED RADIANT TECHNOLOGY (H.K.) CO., LTD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過BRIGHT YEH間接持有之子公司
+    details:
+    - 透過BRIGHT YEH間接持有之子公司
+    edge: e00d83c61c995
+    evidence_level: primary
+    id: org.光曄光電科技-惠州-有限公司
+    name: 光曄光電科技（惠州）有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.urt.com.tw
 tax_id: '22100405'
 incorporated: '1990-06-26'
 listed: '1996-11-02'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.5315#e10:
+    locator: 印刷頁33，附註十二子公司；投資公司為BRIGHT YEH公司之列
+    published_date: null
+    publisher: 光聯科技股份有限公司
+    quote_check: found
+    title: 光聯科技股份有限公司及子公司114及113年度合併財務報告
+    url: https://www.urt.com.tw/upload-files/Investors/Financials/114__Consolidated_Financial_Statements.pdf
+  tw.5315#e2:
+    locator: 印刷頁49，主要產品及其營業比重（114年度）
+    published_date: null
+    publisher: 光聯科技股份有限公司
+    quote_check: found
+    title: 光聯科技股份有限公司114年度年報
+    url: https://www.urt.com.tw/upload-files/Investors/CSR/Shareholder/2025_Annual_Report_chinese_.pdf
+  tw.5315#e3:
+    locator: 印刷頁3，115年營業計畫概要／營業計畫
+    published_date: null
+    publisher: 光聯科技股份有限公司
+    quote_check: found
+    title: 光聯科技股份有限公司114年度年報
+    url: https://www.urt.com.tw/upload-files/Investors/CSR/Shareholder/2025_Annual_Report_chinese_.pdf
+  tw.5315#e4:
+    locator: 印刷頁56，主要產品之重要用途及服務
+    published_date: null
+    publisher: 光聯科技股份有限公司
+    quote_check: found
+    title: 光聯科技股份有限公司114年度年報
+    url: https://www.urt.com.tw/upload-files/Investors/CSR/Shareholder/2025_Annual_Report_chinese_.pdf
+  tw.5315#e5:
+    locator: 光學貼合產品列表
+    published_date: null
+    publisher: 光聯科技股份有限公司
+    quote_check: found
+    title: 光聯科技TP產品介紹
+    url: https://www.urt.com.tw/zh-TW/product/3
+  tw.5315#e6:
+    locator: 光學貼合產品列表
+    published_date: null
+    publisher: 光聯科技股份有限公司
+    quote_check: found
+    title: 光聯科技TP產品介紹
+    url: https://www.urt.com.tw/zh-TW/product/3
+  tw.5315#e7:
+    locator: 光學貼合產品列表
+    published_date: null
+    publisher: 光聯科技股份有限公司
+    quote_check: found
+    title: 光聯科技TP產品介紹
+    url: https://www.urt.com.tw/zh-TW/product/3
+  tw.5315#e8:
+    locator: 印刷頁33，附註十二子公司；114年12月31日持股欄
+    published_date: null
+    publisher: 光聯科技股份有限公司
+    quote_check: found
+    title: 光聯科技股份有限公司及子公司114及113年度合併財務報告
+    url: https://www.urt.com.tw/upload-files/Investors/Financials/114__Consolidated_Financial_Statements.pdf
+  tw.5315#e9:
+    locator: 印刷頁33，附註十二子公司；投資公司為本公司之列
+    published_date: null
+    publisher: 光聯科技股份有限公司
+    quote_check: found
+    title: 光聯科技股份有限公司及子公司114及113年度合併財務報告
+    url: https://www.urt.com.tw/upload-files/Investors/Financials/114__Consolidated_Financial_Statements.pdf

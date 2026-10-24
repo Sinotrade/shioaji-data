@@ -8,12 +8,121 @@ industry:
   l0_code: '15'
   l0_name: 航運業
   l0_name_en: Shipping and Transportation
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.transport
+  l2_name: 運輸
+  l2_name_en: Transportation
+  l3: trans.logistics
+  l3_name: 物流與倉儲
+  l3_name_en: Logistics & Warehousing
+primary_chain_position: not_applicable
+summary_short: 以常溫、低溫包裹宅配及倉儲物流服務取得營收。
+summary_long: 宅配通主要提供包裹配送到府及倉儲物流服務，配送型態包含企業到個人與個人到個人。2024年營收以宅配事業占67.09%為主，物流事業占32.05%，其他占0.86%。宅配服務涵蓋常溫、冷藏與冷凍貨件；倉儲物流包含進貨卸櫃、揀貨分類、倉儲保管、退貨逆物流處理及企業專車配送。另在桃園國際機場提供行李到府收件、宅配到府、寄存、打包與包膜等服務。
+segments:
+- evidence_ids:
+  - e3
+  id: seg_delivery
+  name: 宅配事業
+  period: '2024'
+  revenue_share_pct: 67.09
+- evidence_ids:
+  - e3
+  id: seg_logistics
+  name: 物流事業
+  period: '2024'
+  revenue_share_pct: 32.05
+- evidence_ids:
+  - e3
+  id: seg_other
+  name: 其他
+  period: '2024'
+  revenue_share_pct: 0.86
+relations:
+  subsidiaries:
+  - as_of: '2025-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股100%的越南倉儲物流子公司
+    details:
+    - 持股100%的越南倉儲物流子公司
+    edge: e4ab8a7054b55
+    evidence_level: primary
+    id: org.pelican-express-vietnam-co-ltd
+    name: Pelican Express(Vietnam)Co.,Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.e-can.com.tw
 tax_id: '70624227'
 incorporated: '1999-09-10'
 listed: '2013-12-12'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2642#e10:
+    locator: 第107頁，關係企業經營業務所涵蓋之行業
+    published_date: '2025-03-31'
+    publisher: 台灣宅配通股份有限公司
+    quote_check: found
+    title: 台灣宅配通113年年報
+    url: https://www.e-can.com.tw/downLoad/invest10/1747637484001.pdf
+  tw.2642#e2:
+    locator: 第81頁，業務範圍
+    published_date: '2025-03-31'
+    publisher: 台灣宅配通股份有限公司
+    quote_check: found
+    title: 台灣宅配通113年年報
+    url: https://www.e-can.com.tw/downLoad/invest10/1747637484001.pdf
+  tw.2642#e3:
+    locator: 第81頁，營業比重及主要服務事業；欄序為112年度、113年度
+    published_date: '2025-03-31'
+    publisher: 台灣宅配通股份有限公司
+    quote_check: found
+    title: 台灣宅配通113年年報
+    url: https://www.e-can.com.tw/downLoad/invest10/1747637484001.pdf
+  tw.2642#e4:
+    locator: 第81頁，宅配服務
+    published_date: '2025-03-31'
+    publisher: 台灣宅配通股份有限公司
+    quote_check: found
+    title: 台灣宅配通113年年報
+    url: https://www.e-can.com.tw/downLoad/invest10/1747637484001.pdf
+  tw.2642#e5:
+    locator: 常溫宅配／宅配通小叮嚀
+    published_date: null
+    publisher: 台灣宅配通股份有限公司
+    quote_check: found
+    title: 常溫宅配
+    url: https://www.e-can.com.tw/serviceNormalTemp.aspx?id=1&sys_id=1
+  tw.2642#e6:
+    locator: 低溫宅配介紹
+    published_date: null
+    publisher: 台灣宅配通股份有限公司
+    quote_check: found
+    title: 低溫宅配
+    url: https://www.e-can.com.tw/serviceNormalTemp.aspx?id=1&sys_id=3
+  tw.2642#e7:
+    locator: 第81頁，倉儲物流服務
+    published_date: '2025-03-31'
+    publisher: 台灣宅配通股份有限公司
+    quote_check: found
+    title: 台灣宅配通113年年報
+    url: https://www.e-can.com.tw/downLoad/invest10/1747637484001.pdf
+  tw.2642#e8:
+    locator: 桃園機場行李宅配介紹／營業項目
+    published_date: null
+    publisher: 台灣宅配通股份有限公司
+    quote_check: found
+    title: 桃園機場行李宅配
+    url: https://www.e-can.com.tw/serviceNormalTemp.aspx?id=1&sys_id=5
+  tw.2642#e9:
+    locator: 第107頁，關係企業組織圖
+    published_date: '2025-03-31'
+    publisher: 台灣宅配通股份有限公司
+    quote_check: found
+    title: 台灣宅配通113年年報
+    url: https://www.e-can.com.tw/downLoad/invest10/1747637484001.pdf

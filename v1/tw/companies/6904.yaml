@@ -8,19 +8,85 @@ industry:
   l0_code: '20'
   l0_name: 其他業
   l0_name_en: Others
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.machinery
+  l2_name: 機械與自動化
+  l2_name_en: Machinery & Automation
+  l3: mach.tools
+  l3_name: 手工具與五金
+  l3_name_en: Hand Tools & Hardware
+primary_chain_position: not_applicable
+summary_short: 製造與銷售活動扳手、鉗類及一般工具，並提供OEM／ODM服務。
+summary_long: 伯鑫工具主要產品為活動扳手、鉗類及一般工具，活動扳手亦提供 OEM／ODM 製造服務。2025 年營收以活動扳手為最大宗，占 57.78%，一般工具占 26.10%，鉗類占 11.64%，其他占 4.48%。一般工具包含工業型產品。依 2026 年第二季財報，復盛應用科技持有伯鑫 51% 股份並具有控制權；伯鑫全資持有加璽企業與富基責任有限公司，兩者分別從事進出口貿易及鋼材加工的生產與銷售。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_wrench
+  name: 活動扳手
+  period: '2025'
+  revenue_share_pct: 57.78
+- evidence_ids:
+  - e1
+  id: seg_pliers
+  name: 鉗類
+  period: '2025'
+  revenue_share_pct: 11.64
+- evidence_ids:
+  - e1
+  id: seg_general_tools
+  name: 一般工具
+  period: '2025'
+  revenue_share_pct: 26.1
+- evidence_ids:
+  - e1
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 4.48
 relations:
   parents:
-  - as_of: '2025-09-30'
+  - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
     detail: 手工具子公司
     details:
     - 手工具子公司
+    - 持股51%的母公司
     edge: ee170a8c67441
     evidence_level: primary
     id: tw.6670
     name: 復盛應用
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 2
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司；進出口貿易
+    details:
+    - 全資子公司；進出口貿易
+    edge: eb8848e358a94
+    evidence_level: primary
+    id: org.加璽企業股份有限公司
+    name: 加璽企業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司；鋼材加工生產與銷售
+    details:
+    - 全資子公司；鋼材加工生產與銷售
+    edge: ef1a0243fc4a4
+    evidence_level: primary
+    id: org.富基責任有限公司
+    name: 富基責任有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -29,7 +95,56 @@ website: https://www.proxene.com.tw/
 tax_id: '55982771'
 incorporated: '1984-04-24'
 listed: '2023-12-05'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6904#e1:
+    locator: 第77頁，營業比重；欄位依序為113及114年度
+    published_date: '2026-04-30'
+    publisher: 伯鑫工具股份有限公司
+    quote_check: found
+    title: 伯鑫工具股份有限公司一一四年年報
+    url: https://www.proxene.com.tw/web/content/14674?unique=5345ed68f014a0f7a1879bead126903c37e5f4a7
+  tw.6904#e2:
+    locator: 第77頁，公司目前之商品項目
+    published_date: '2026-04-30'
+    publisher: 伯鑫工具股份有限公司
+    quote_check: found
+    title: 伯鑫工具股份有限公司一一四年年報
+    url: https://www.proxene.com.tw/web/content/14674?unique=5345ed68f014a0f7a1879bead126903c37e5f4a7
+  tw.6904#e3:
+    locator: Professional Adjustable Wrench Manufacturer in Taiwan
+    published_date: null
+    publisher: 伯鑫工具股份有限公司
+    quote_check: found
+    title: Adjustable Wrench Manufacturer & Supplier | Proxene
+    url: https://www.proxene.com.tw/shop/category/adjustable-wrench-4
+  tw.6904#e4:
+    locator: Professional Pliers Manufacturer in Taiwan
+    published_date: null
+    publisher: 伯鑫工具股份有限公司
+    quote_check: found
+    title: Explore High-Quality Pliers for Industrial Applications at Proxene Tools
+    url: https://www.proxene.com.tw/shop/category/pliers-5
+  tw.6904#e5:
+    locator: 第38頁，附註七（一）母公司與最終控制者
+    published_date: '2026-08-10'
+    publisher: 伯鑫工具股份有限公司
+    quote_check: found
+    title: 伯鑫工具股份有限公司115年第二季合併財務報告
+    url: https://www.proxene.com.tw/web/content/16015?unique=906d2b8c8cf6754ecf5b176b2f790c8733978698
+  tw.6904#e6:
+    locator: 第14頁，列入合併財務報告之子公司；首個百分比為115年6月30日持股
+    published_date: '2026-08-10'
+    publisher: 伯鑫工具股份有限公司
+    quote_check: found
+    title: 伯鑫工具股份有限公司115年第二季合併財務報告
+    url: https://www.proxene.com.tw/web/content/16015?unique=906d2b8c8cf6754ecf5b176b2f790c8733978698
+  tw.6904#e7:
+    locator: 第14頁，列入合併財務報告之子公司；首個百分比為115年6月30日持股
+    published_date: '2026-08-10'
+    publisher: 伯鑫工具股份有限公司
+    quote_check: found
+    title: 伯鑫工具股份有限公司115年第二季合併財務報告
+    url: https://www.proxene.com.tw/web/content/16015?unique=906d2b8c8cf6754ecf5b176b2f790c8733978698

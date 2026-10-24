@@ -8,12 +8,160 @@ industry:
   l0_code: '22'
   l0_name: 生技醫療業
   l0_name_en: Biotechnology and Medical Care
-primary_chain_position: unknown
+  l1: health
+  l1_name: 醫療保健
+  l1_name_en: Healthcare
+  l2: health.devices
+  l2_name: 醫療器材與服務
+  l2_name_en: Medical Devices & Services
+  l3: med.devices
+  l3_name: 醫療器材
+  l3_name_en: Medical Devices
+chain: chain.biotech
+chain_stage:
+  agreement: both
+  also:
+  - stage: rnd
+    stage_name: 研發與原料
+    tier: upstream
+  reason: 醫學影像診斷裝置占營收70.32%，以器材製造為主，另明確從事醫療影像器材研發。
+  stage: manufacturing
+  stage_name: 製造與代工
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 研發、製造與銷售醫療影像診斷器材，並提供客製化技術服務。
+summary_long: 晉弘科技的主要營收來源為數位醫學影像診斷裝置，2024年度占營收70.32%，技術服務之顧客解決方案占12.07%，其他占17.61%。產品涵蓋數位五官診斷器材、拋棄式內視鏡、視網膜光學斷層掃描儀及視網膜影像分析軟體。旗下晉昇智能感測從事微型攝像模組與相關影像處理系統的製造及銷售；聯讚精密為全資子公司，從事一次性醫療器械所用精密塑膠零組件的模具開發、射出件製造與模組生產。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_diagnostic_devices
+  name: 數位醫學影像診斷裝置
+  period: '2024'
+  revenue_share_pct: 70.32
+- evidence_ids:
+  - e3
+  id: seg_technical_services
+  name: 技術服務之顧客解決方案
+  period: '2024'
+  revenue_share_pct: 12.07
+- evidence_ids:
+  - e4
+  id: seg_other
+  name: 其他
+  period: '2024'
+  revenue_share_pct: 17.61
+relations:
+  subsidiaries:
+  - as_of: '2026-10-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 微型攝像模組與影像處理系統子公司
+    details:
+    - 微型攝像模組與影像處理系統子公司
+    edge: e240089ecd256
+    evidence_level: primary
+    id: org.晉昇智能感測股份有限公司
+    name: 晉昇智能感測股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-05-15'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資醫材精密塑膠零組件子公司
+    details:
+    - 全資醫材精密塑膠零組件子公司
+    edge: e91f322abef9e
+    evidence_level: primary
+    id: org.聯讚精密股份有限公司
+    name: 聯讚精密股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.miis.com.tw
 tax_id: '28113005'
 incorporated: '2010-08-05'
 listed: '2022-06-01'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6796#e1:
+    locator: 公司沿革／2010年
+    published_date: null
+    publisher: 晉弘科技股份有限公司
+    quote_check: found
+    title: 關於晉弘
+    url: https://www.miis.com.tw/about.php?lang=tw
+  tw.6796#e10:
+    locator: 公司沿革／2023年
+    published_date: null
+    publisher: 晉弘科技股份有限公司
+    quote_check: found
+    title: 關於晉弘
+    url: https://www.miis.com.tw/about.php?lang=tw
+  tw.6796#e11:
+    locator: 公司沿革／2024年
+    published_date: null
+    publisher: 晉弘科技股份有限公司
+    quote_check: found
+    title: 關於晉弘
+    url: https://www.miis.com.tw/about.php?lang=tw
+  tw.6796#e2:
+    locator: 印刷頁66／PDF第70頁，主要產品及營業比重；欄序為112年度、113年度、114年第一季
+    published_date: '2025-05-15'
+    publisher: 晉弘科技股份有限公司
+    quote_check: found
+    title: 113年度年報（股東會後更正版）
+    url: https://www.miis.com.tw/image/editor/files/113%E5%B9%B4%E4%B8%AD%E6%96%87%E5%B9%B4%E5%A0%B1-%E4%BB%A3%E7%A2%BC-Final-%E5%88%8A%E5%8D%B0-%E8%82%A1%E6%9D%B1%E6%9C%83%E5%BE%8C%E6%9B%B4%E6%AD%A3%E7%89%88.pdf
+  tw.6796#e3:
+    locator: 印刷頁66／PDF第70頁，主要產品及營業比重；113年度欄
+    published_date: '2025-05-15'
+    publisher: 晉弘科技股份有限公司
+    quote_check: found
+    title: 113年度年報（股東會後更正版）
+    url: https://www.miis.com.tw/image/editor/files/113%E5%B9%B4%E4%B8%AD%E6%96%87%E5%B9%B4%E5%A0%B1-%E4%BB%A3%E7%A2%BC-Final-%E5%88%8A%E5%8D%B0-%E8%82%A1%E6%9D%B1%E6%9C%83%E5%BE%8C%E6%9B%B4%E6%AD%A3%E7%89%88.pdf
+  tw.6796#e4:
+    locator: 印刷頁66／PDF第70頁，主要產品及營業比重；113年度欄
+    published_date: '2025-05-15'
+    publisher: 晉弘科技股份有限公司
+    quote_check: found
+    title: 113年度年報（股東會後更正版）
+    url: https://www.miis.com.tw/image/editor/files/113%E5%B9%B4%E4%B8%AD%E6%96%87%E5%B9%B4%E5%A0%B1-%E4%BB%A3%E7%A2%BC-Final-%E5%88%8A%E5%8D%B0-%E8%82%A1%E6%9D%B1%E6%9C%83%E5%BE%8C%E6%9B%B4%E6%AD%A3%E7%89%88.pdf
+  tw.6796#e5:
+    locator: 產品名稱
+    published_date: null
+    publisher: 晉弘科技股份有限公司
+    quote_check: found
+    title: 數位眼底鏡／DEC200
+    url: https://www.miis.com.tw/products_detail.php?id=130&lang=tw&last_id=7&last_page=0
+  tw.6796#e6:
+    locator: 願景理念
+    published_date: null
+    publisher: 晉弘科技股份有限公司
+    quote_check: found
+    title: 關於晉弘
+    url: https://www.miis.com.tw/about.php?lang=tw
+  tw.6796#e7:
+    locator: 產品資訊／拋棄式內視鏡及產品列表
+    published_date: null
+    publisher: 晉弘科技股份有限公司
+    quote_check: found
+    title: 拋棄式內視鏡
+    url: https://www.miis.com.tw/products_2.php?lang=tw
+  tw.6796#e8:
+    locator: 產品特色
+    published_date: null
+    publisher: 晉弘科技股份有限公司
+    quote_check: found
+    title: 視網膜光學斷層掃描儀／ACT100
+    url: https://www.miis.com.tw/products_detail.php?id=65&lang=tw&last_id=5&last_page=0
+  tw.6796#e9:
+    locator: 產品名稱
+    published_date: null
+    publisher: 晉弘科技股份有限公司
+    quote_check: found
+    title: 赫羅斯視網膜影像分析軟體／AI-DR
+    url: https://www.miis.com.tw/products_detail.php?id=71&lang=tw&last_page=1

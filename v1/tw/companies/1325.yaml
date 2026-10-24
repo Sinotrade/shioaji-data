@@ -8,12 +8,157 @@ industry:
   l0_code: '03'
   l0_name: 塑膠工業
   l0_name_en: Plastics
-primary_chain_position: unknown
+  l1: materials
+  l1_name: 原物料
+  l1_name_en: Materials
+  l2: mat.other
+  l2_name: 其他原物料
+  l2_name_en: Other Materials
+  l3: matl.textile_fiber
+  l3_name: 紡織纖維與機能布料
+  l3_name_en: Textiles, Fibers & Functional Fabrics
+chain: chain.textile
+chain_stage:
+  agreement: both
+  also: []
+  reason: 不織布占營收88.34%，以紡結、熔噴及複合不織布為主，屬布料製造階段。
+  stage: fabric
+  stage_name: 織布與染整
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 以聚丙烯紡結、熔噴及複合不織布為主，另製造過濾材與口罩。
+summary_long: 恆大主要生產聚丙烯紡結、熔噴與SMMS／SMS複合不織布，並製造過濾材及口罩。2025年合併營收中，不織布占88.34%，加工品口罩占9.51%，其他占2.15%。複合不織布可用於紙尿褲及手術衣，熔噴不織布與HEPA過濾材可用於空氣清淨機、空調及無塵室。口罩產品包括醫用、外科手術及TN95款式。公司持有香港恆大國際投資有限公司79.01%股權，並透過該公司間接持有廈門恆大工業有限公司。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_nonwoven
+  name: 不織布
+  period: '2025'
+  revenue_share_pct: 88.34
+- evidence_ids:
+  - e1
+  id: seg_mask
+  name: 加工品口罩
+  period: '2025'
+  revenue_share_pct: 9.51
+- evidence_ids:
+  - e1
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 2.15
+relations:
+  subsidiaries:
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股79.01%的投資子公司
+    details:
+    - 直接持股79.01%的投資子公司
+    edge: e06e78dc8777e
+    evidence_level: primary
+    id: org.uk-international-investment-hk
+    name: 香港恆大國際投資有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過香港子公司間接持有的子公司
+    details:
+    - 透過香港子公司間接持有的子公司
+    edge: e0cb383db3f17
+    evidence_level: primary
+    id: org.xiamen-universal-industry
+    name: 廈門恆大工業有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.uk.com.tw
 tax_id: '11455800'
 incorporated: '1962-10-14'
 listed: '2000-09-11'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1325#e1:
+    locator: 壹、致股東報告書／一、營業計劃實施成果；原年報第1頁
+    published_date: '2026-06-05'
+    publisher: FinancialFilings（收錄恆大股份有限公司年報）
+    quote_check: unreachable
+    title: 恆大股份有限公司114年度年報（第三方收錄全文）
+    url: https://financialfilings.com/filings/uk-1325/annual-report/2026/47978194/
+  tw.1325#e10:
+    locator: 第3頁／四、整體關係企業經營業務所涵蓋之行業
+    published_date: null
+    publisher: 恆大股份有限公司
+    quote_check: found
+    title: 恆大股份有限公司114年度關係企業合併營業報告書
+    url: https://www.uk.com.tw/v_comm/inc/download_file.asp?fid=42401&re_id=2174
+  tw.1325#e11:
+    locator: 第4頁／五、各關係企業董事、監察人及總經理資料／註2
+    published_date: null
+    publisher: 恆大股份有限公司
+    quote_check: found
+    title: 恆大股份有限公司114年度關係企業合併營業報告書
+    url: https://www.uk.com.tw/v_comm/inc/download_file.asp?fid=42401&re_id=2174
+  tw.1325#e2:
+    locator: 第3頁／四、整體關係企業經營業務所涵蓋之行業
+    published_date: null
+    publisher: 恆大股份有限公司
+    quote_check: found
+    title: 恆大股份有限公司114年度關係企業合併營業報告書
+    url: https://www.uk.com.tw/v_comm/inc/download_file.asp?fid=42401&re_id=2174
+  tw.1325#e3:
+    locator: 第43頁／3.公司目前之商品項目
+    published_date: '2025-04-30'
+    publisher: 恆大股份有限公司
+    quote_check: found
+    title: 恆大股份有限公司113年度年報
+    url: https://www.uk.com.tw/v_comm/inc/download_file.asp?fid=42114&re_id=2174
+  tw.1325#e4:
+    locator: Applications／Hygiene
+    published_date: null
+    publisher: 恆大股份有限公司
+    quote_check: found
+    title: SMMS & SMS
+    url: https://www.uk.com.tw/en/product-272128/SMMS-SMS.html
+  tw.1325#e5:
+    locator: Applications／Medical
+    published_date: null
+    publisher: 恆大股份有限公司
+    quote_check: found
+    title: SMMS & SMS
+    url: https://www.uk.com.tw/en/product-272128/SMMS-SMS.html
+  tw.1325#e6:
+    locator: Applications
+    published_date: null
+    publisher: 恆大股份有限公司
+    quote_check: found
+    title: MELTBLOWN
+    url: https://www.uk.com.tw/en/product-272203/MELTBLOWN.html
+  tw.1325#e7:
+    locator: Applications
+    published_date: null
+    publisher: 恆大股份有限公司
+    quote_check: found
+    title: Filter Media
+    url: https://www.uk.com.tw/en/product-712290/Filter-Media.html
+  tw.1325#e8:
+    locator: 口罩產品列表
+    published_date: null
+    publisher: 恆大股份有限公司
+    quote_check: found
+    title: FACE MASK
+    url: https://www.uk.com.tw/en/product-c47198/FACE-MASK.html
+  tw.1325#e9:
+    locator: 第4頁／五、各關係企業董事、監察人及總經理資料／註1
+    published_date: null
+    publisher: 恆大股份有限公司
+    quote_check: found
+    title: 恆大股份有限公司114年度關係企業合併營業報告書
+    url: https://www.uk.com.tw/v_comm/inc/download_file.asp?fid=42401&re_id=2174

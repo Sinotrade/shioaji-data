@@ -8,12 +8,79 @@ industry:
   l0_code: '27'
   l0_name: 通信網路業
   l0_name_en: Communications and Internet
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.network
+  l2_name: 通信網路
+  l2_name_en: Communications & Networking
+  l3: net.switch
+  l3_name: 網通設備（交換器、路由器）
+  l3_name_en: Networking Equipment (Switches, Routers)
+chain: chain.networking
+chain_stage:
+  agreement: both
+  also: []
+  reason: 主要產銷寬頻與VPN路由器，並提供無線基地台、交換器及網管軟體，屬網通設備與系統。
+  stage: equipment
+  stage_name: 網通設備與系統
+  tier: downstream
+primary_chain_position: downstream
+summary_short: 居易銷售路由器、無線基地台、管理型交換器，並提供網管軟體。
+summary_long: 居易的網通產品涵蓋VPN路由器、5G行動路由器、無線基地台與管理型交換器，並提供集中網管軟體。Vigor3912系列可建立區域網路間或遠端撥入的VPN連線，C510系列則內建5G連網功能。VigorAP 1070C採三頻Wi-Fi 7；VigorSwitch PX2060提供PoE與10GbE連接埠。VigorConnect可自動探索區域網路內的基地台與交換器，並管理最多100台設備。
+main_theme: theme.5g
+themes:
+- also: []
+  stage: equipment
+  theme: theme.5g
+  tier: midstream
 website: www.draytek.com
 tax_id: '16242320'
 incorporated: '1997-10-14'
 listed: '2004-09-27'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6216#e2:
+    locator: Overview，產品介紹
+    published_date: null
+    publisher: DrayTek Corp.
+    quote_check: found
+    title: Vigor3912 Series
+    url: https://www.draytek.com/products/vigor3912/
+  tw.6216#e3:
+    locator: 5G & Wi-Fi 6 for Next-Gen Connectivity
+    published_date: null
+    publisher: DrayTek Corp.
+    quote_check: found
+    title: Vigor C510 Series
+    url: https://www.draytek.com/products/vigor-c510/
+  tw.6216#e4:
+    locator: Overview，產品介紹
+    published_date: null
+    publisher: DrayTek Corp.
+    quote_check: found
+    title: VigorAP 1070C
+    url: https://www.draytek.com/products/vigorap-1070c/
+  tw.6216#e5:
+    locator: VigorSwitch PX2060產品項目
+    published_date: null
+    publisher: DrayTek Corp.
+    quote_check: found
+    title: Managed Switches
+    url: https://www.draytek.com/products/switches/
+  tw.6216#e6:
+    locator: Discovery
+    published_date: null
+    publisher: DrayTek Corp.
+    quote_check: found
+    title: VigorConnect
+    url: https://www.draytek.com/products/vigorconnect/
+  tw.6216#e7:
+    locator: 第48頁，十四、營運部門資訊，產品別及勞務別之資訊
+    published_date: '2026-08-05'
+    publisher: 居易科技股份有限公司
+    quote_check: found
+    title: 居易科技股份有限公司民國115年及114年第二季財務報告
+    url: https://fw.draytek.com.tw/Finance/115/115Q2%E5%80%8B%E5%88%A5_%E7%B4%85%E5%8D%B0.pdf

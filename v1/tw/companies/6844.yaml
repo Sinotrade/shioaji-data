@@ -8,12 +8,136 @@ industry:
   l0_code: '22'
   l0_name: 生技醫療業
   l0_name_en: Biotechnology and Medical Care
-primary_chain_position: unknown
+  l1: health
+  l1_name: 醫療保健
+  l1_name_en: Healthcare
+  l2: health.devices
+  l2_name: 醫療器材與服務
+  l2_name_en: Medical Devices & Services
+  l3: med.services
+  l3_name: 醫療服務與通路
+  l3_name_en: Healthcare Services & Distribution
+chain: chain.biotech
+chain_stage:
+  agreement: both
+  also: []
+  reason: 主要經營藥品、保健食品、婦嬰用品及醫療器材連鎖零售，營收以通路銷售為主。
+  stage: channel
+  stage_name: 通路與醫療服務
+  tier: downstream
+primary_chain_position: downstream
+summary_short: 經營藥局連鎖通路，銷售婦嬰用品、藥品保健品及健康護理用品。
+summary_long: 諾貝兒主要經營藥品、保健食品、婦嬰用品與醫療器材的連鎖銷售通路。依官網揭露的2024年度營收組成，婦嬰用品占47%，為最大單一類別；藥品保健品占29%、健康護理用品占21%，其他商品占3%。其業務涵蓋婦嬰與健康照護相關商品零售，營收來源以通路銷售為主。依2026年第二季合併財報，佳世達科技為母公司及最終控制者，持股40.66%；另持有佳諾物業100%股權，該子公司經營不動產買賣及租賃等業務。
+segments:
+- evidence_ids:
+  - e3
+  id: maternal_infant
+  name: 婦嬰用品
+  period: '2024'
+  revenue_share_pct: 47
+- evidence_ids:
+  - e4
+  id: pharmaceuticals_supplements
+  name: 藥品保健品
+  period: '2024'
+  revenue_share_pct: 29
+- evidence_ids:
+  - e5
+  id: healthcare_products
+  name: 健康護理用品
+  period: '2024'
+  revenue_share_pct: 21
+- evidence_ids:
+  - e6
+  id: other
+  name: 其他
+  period: '2024'
+  revenue_share_pct: 3
+relations:
+  parents:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 母公司及所屬集團最終控制者
+    details:
+    - 母公司及所屬集團最終控制者
+    edge: e1df1a6d7a0df
+    evidence_level: primary
+    id: tw.2352
+    name: 佳世達
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司，經營不動產買賣及租賃等業務
+    details:
+    - 全資子公司，經營不動產買賣及租賃等業務
+    edge: ef07c60b9e208
+    evidence_level: primary
+    id: org.佳諾物業股份有限公司
+    name: 佳諾物業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.norbelbaby.com.tw
 tax_id: '16115725'
 incorporated: '1997-10-08'
 listed: '2024-03-08'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6844#e2:
+    locator: 主要經營業務
+    published_date: null
+    publisher: 諾貝兒寶貝股份有限公司
+    quote_check: found
+    title: 丁丁藥局－公司簡介
+    url: https://www.norbelbaby.com.tw/InvestorZone/company.jsp
+  tw.6844#e3:
+    locator: 一、業務內容／2.營業比重，113年度欄
+    published_date: null
+    publisher: 諾貝兒寶貝股份有限公司
+    quote_check: found
+    title: 丁丁藥局－業務及產品介紹
+    url: https://www.norbelbaby.com.tw/InvestorZone/product.jsp
+  tw.6844#e4:
+    locator: 一、業務內容／2.營業比重，113年度欄
+    published_date: null
+    publisher: 諾貝兒寶貝股份有限公司
+    quote_check: found
+    title: 丁丁藥局－業務及產品介紹
+    url: https://www.norbelbaby.com.tw/InvestorZone/product.jsp
+  tw.6844#e5:
+    locator: 一、業務內容／2.營業比重，113年度欄
+    published_date: null
+    publisher: 諾貝兒寶貝股份有限公司
+    quote_check: found
+    title: 丁丁藥局－業務及產品介紹
+    url: https://www.norbelbaby.com.tw/InvestorZone/product.jsp
+  tw.6844#e6:
+    locator: 一、業務內容／2.營業比重，113年度欄
+    published_date: null
+    publisher: 諾貝兒寶貝股份有限公司
+    quote_check: found
+    title: 丁丁藥局－業務及產品介紹
+    url: https://www.norbelbaby.com.tw/InvestorZone/product.jsp
+  tw.6844#e7:
+    locator: 第29頁，附註七（一）母公司與最終控制者
+    published_date: '2026-08-04'
+    publisher: 諾貝兒寶貝股份有限公司
+    quote_check: found
+    title: 諾貝兒寶貝股份有限公司及子公司民國115年第二季合併財務報告
+    url: https://www.norbelbaby.com.tw/InvestorZone/doc/twse_finance/115Q2_combined.pdf
+  tw.6844#e8:
+    locator: 第10頁，附註四（二）合併基礎，115年6月30日持股欄
+    published_date: '2026-08-04'
+    publisher: 諾貝兒寶貝股份有限公司
+    quote_check: found
+    title: 諾貝兒寶貝股份有限公司及子公司民國115年第二季合併財務報告
+    url: https://www.norbelbaby.com.tw/InvestorZone/doc/twse_finance/115Q2_combined.pdf

@@ -8,12 +8,97 @@ industry:
   l0_code: '03'
   l0_name: 塑膠工業
   l0_name_en: Plastics
-primary_chain_position: unknown
+  l1: materials
+  l1_name: 原物料
+  l1_name_en: Materials
+  l2: mat.chemicals
+  l2_name: 化工
+  l2_name_en: Chemicals
+  l3: chem.petrochem
+  l3_name: 石化與塑膠原料
+  l3_name_en: Petrochemicals & Plastics
+chain: chain.petrochem
+chain_stage:
+  agreement: both
+  also: []
+  reason: 一般PVC塑膠布占營收71.52%，主業為塑膠布加工製造，屬下游塑膠與加工階段。
+  stage: downstream
+  stage_name: 塑膠、纖維與加工
+  tier: downstream
+primary_chain_position: downstream
+summary_short: 製造與銷售PVC塑膠布，以一般塑膠布為主要營收來源。
+summary_long: 世坤主要從事PVC塑膠布製造與銷售，產品包含一般、加壓、貼合及半硬質塑膠布。2025年營收以一般塑膠布為主，占71.52%；半硬質塑膠布占13.72%，加壓及貼合塑膠布分別占9.33%與5.43%。加壓產品包含透明PVC膠布，公司另提供可客製顏色與紋路的不透明壓紋膠布。貼合PVC厚膠布採多層緊密貼合技術，最多一次結合六層，以增加材料的耐用性。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_general
+  name: 一般塑膠布
+  period: '2025'
+  revenue_share_pct: 71.52
+- evidence_ids:
+  - e2
+  id: seg_polished
+  name: 加壓塑膠布
+  period: '2025'
+  revenue_share_pct: 9.33
+- evidence_ids:
+  - e2
+  id: seg_laminated
+  name: 貼合塑膠布
+  period: '2025'
+  revenue_share_pct: 5.43
+- evidence_ids:
+  - e2
+  id: seg_semi_rigid
+  name: 半硬質塑膠布
+  period: '2025'
+  revenue_share_pct: 13.72
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 0
 website: https://www.shihkuen.com/zh-TW
 tax_id: '22281617'
 incorporated: '1986-10-07'
 listed: '2000-09-28'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4305#e1:
+    locator: 第1頁，主要營業項目
+    published_date: '2024-06-20'
+    publisher: 世堃塑膠股份有限公司
+    quote_check: found
+    title: 世堃塑膠股份有限公司基本資料
+    url: https://www.shihkuen.com/Templates/att/Shih-Kuen%20Plastics_Basic-company-information_202406.pdf?lng=zh-TW
+  tw.4305#e2:
+    locator: 年報第56頁，民國114年度所營業務之營業比重
+    published_date: '2026-05-05'
+    publisher: 世堃塑膠股份有限公司
+    quote_check: found
+    title: 世堃塑膠股份有限公司114年度年報
+    url: https://www.shihkuen.com/Templates/att/1-114-annual-report.pdf?lng=zh-TW
+  tw.4305#e4:
+    locator: 常見PVC解決方案，透明加壓產品標題
+    published_date: null
+    publisher: 世堃塑膠股份有限公司
+    quote_check: found
+    title: 世堃塑膠官網：常見PVC解決方案
+    url: https://www.shihkuen.com/zh-TW
+  tw.4305#e5:
+    locator: 產品介紹
+    published_date: null
+    publisher: 世堃塑膠股份有限公司
+    quote_check: found
+    title: 不透明壓紋PVC膠布
+    url: https://www.shihkuen.com/zh-TW/product/Opaque-Textured-PVC-Sheet.html
+  tw.4305#e6:
+    locator: 產品介紹，貼合技術
+    published_date: null
+    publisher: 世堃塑膠股份有限公司
+    quote_check: found
+    title: 有色貼合PVC厚膠布
+    url: https://www.shihkuen.com/zh-TW/product/Colored-Laminated-Thick-PVC-Sheet.html
