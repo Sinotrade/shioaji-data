@@ -8,12 +8,200 @@ industry:
   l0_code: '05'
   l0_name: 電機機械
   l0_name_en: Electric Machinery
-primary_chain_position: unknown
+  l1: auto
+  l1_name: 汽車與運具
+  l1_name_en: Automotive & Mobility
+  l2: auto.vehicles
+  l2_name: 汽機車
+  l2_name_en: Autos & Motorcycles
+  l3: auto.oem
+  l3_name: 整車與機車
+  l3_name_en: Vehicles & Motorcycles
+chain: chain.auto
+chain_stage:
+  agreement: both
+  also:
+  - stage: parts
+    stage_name: 汽車零組件與模組
+    tier: midstream
+  reason: ATV／UTV整車占營收71.35%為最大宗，另銷售機車、電動機車及零件。
+  stage: oem
+  stage_name: 整車與售後
+  tier: downstream
+primary_chain_position: downstream
+summary_short: 以ATV／UTV整車製造為主要營收，另銷售燃油機車、電動機車及零件。
+summary_long: 宏佳騰主要開發與製造全地形車、越野多功能車、燃油機車及智慧電動車。2025年營收以ATV／UTV為主，占71.35%；摩托車占13.07%、電動機車占8.10%，零件及其他占7.48%。產品涵蓋二輪速可達、三輪與四輪重型機車，並推出CROXERA車聯網智慧系統。公司旗下包括名成車業、華成車業、宏佳騰創新科技、Asia Energy及越南子公司，另透過Asia Energy持有佛山子公司。
+segments:
+- evidence_ids:
+  - e3
+  id: seg_atv_utv
+  name: ATV／UTV
+  period: '2025'
+  revenue_share_pct: 71.35
+- evidence_ids:
+  - e3
+  id: seg_motorcycle
+  name: 摩托車
+  period: '2025'
+  revenue_share_pct: 13.07
+- evidence_ids:
+  - e3
+  id: seg_electric
+  name: 電動機車
+  period: '2025'
+  revenue_share_pct: 8.1
+- evidence_ids:
+  - e3
+  id: seg_parts_other
+  name: 零件及其他
+  period: '2025'
+  revenue_share_pct: 7.48
+main_theme: theme.ev
+themes:
+- also: []
+  stage: vehicle
+  theme: theme.ev
+  tier: downstream
+relations:
+  subsidiaries:
+  - as_of: '2026-04-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過Asia Energy Ltd.持有之子公司
+    details:
+    - 透過Asia Energy Ltd.持有之子公司
+    edge: e59470004daf4
+    evidence_level: primary
+    id: org.aeon-foshan-technology
+    name: 宏佳騰(佛山)科技有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%之子公司
+    details:
+    - 直接持股100%之子公司
+    edge: e4a43e0506e45
+    evidence_level: primary
+    id: org.aeon-innovation-technology
+    name: 宏佳騰創新科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 越南整車及零件製造子公司
+    details:
+    - 越南整車及零件製造子公司
+    edge: ea23929476875
+    evidence_level: primary
+    id: org.aeontek-vietnam
+    name: Aeontek Vietnam Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 薩摩亞投資子公司
+    details:
+    - 薩摩亞投資子公司
+    edge: e54fe784aa01c
+    evidence_level: primary
+    id: org.asia-energy-samoa
+    name: Asia Energy Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%之子公司
+    details:
+    - 直接持股100%之子公司
+    edge: e71c19c003d9d
+    evidence_level: primary
+    id: org.hua-cheng-motor
+    name: 華成車業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%之子公司
+    details:
+    - 直接持股100%之子公司
+    edge: e2b4131128ea4
+    evidence_level: primary
+    id: org.ming-cheng-motor
+    name: 名成車業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.aeontek-motor.com
 tax_id: '80621419'
 incorporated: '2003-12-25'
 listed: '2012-12-25'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1599#e1:
+    locator: 公司介紹，產品說明段落
+    published_date: null
+    publisher: 宏佳騰動力科技股份有限公司
+    quote_check: found
+    title: 宏佳騰機車－關於宏佳騰
+    url: https://www.aeontek-motor.com.tw/pages/milestone
+  tw.1599#e2:
+    locator: 產品介紹導覽分類
+    published_date: null
+    publisher: 宏佳騰動力科技股份有限公司
+    quote_check: found
+    title: 宏佳騰機車｜Aeonmotor
+    url: https://www.aeontek-motor.com.tw/
+  tw.1599#e3:
+    locator: 第48頁，肆、營運概況／一、業務內容／營業比重；各列依序為113年度金額、比重及114年度金額、比重
+    published_date: '2026-05-11'
+    publisher: 宏佳騰動力科技股份有限公司
+    quote_check: not_found
+    title: 宏佳騰動力科技股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=1599&colorchg=1&filename=2025_1599_20260615F04.pdf&kind=F&step=9
+  tw.1599#e4:
+    locator: 第72頁，控制與從屬關係資料，轉投資事業名稱、主要股東及持股比例表，資料日115年4月30日
+    published_date: '2026-05-11'
+    publisher: 宏佳騰動力科技股份有限公司
+    quote_check: not_found
+    title: 宏佳騰動力科技股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=1599&colorchg=1&filename=2025_1599_20260615F04.pdf&kind=F&step=9
+  tw.1599#e5:
+    locator: 第71頁，關係企業基本資料；第72頁，控制與從屬關係資料，Asia Energy Ltd.列
+    published_date: '2026-05-11'
+    publisher: 宏佳騰動力科技股份有限公司
+    quote_check: not_found
+    title: 宏佳騰動力科技股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=1599&colorchg=1&filename=2025_1599_20260615F04.pdf&kind=F&step=9
+  tw.1599#e6:
+    locator: 第71頁，關係企業組織圖及基本資料；第72頁，控制與從屬關係資料，Aeontek Vietnam Co., Ltd.列
+    published_date: '2026-05-11'
+    publisher: 宏佳騰動力科技股份有限公司
+    quote_check: not_found
+    title: 宏佳騰動力科技股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=1599&colorchg=1&filename=2025_1599_20260615F04.pdf&kind=F&step=9
+  tw.1599#e7:
+    locator: 第71頁，關係企業組織圖；第72頁，控制與從屬關係資料，宏佳騰(佛山)科技有限公司列，持股比例100%
+    published_date: '2026-05-11'
+    publisher: 宏佳騰動力科技股份有限公司
+    quote_check: not_found
+    title: 宏佳騰動力科技股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=1599&colorchg=1&filename=2025_1599_20260615F04.pdf&kind=F&step=9

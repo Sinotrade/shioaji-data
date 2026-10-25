@@ -8,12 +8,159 @@ industry:
   l0_code: '29'
   l0_name: 電子通路業
   l0_name_en: Electronic Products Distribution
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.distribution
+  l2_name: 電子通路
+  l2_name_en: Electronics Distribution
+  l3: dist.it
+  l3_name: 資訊產品通路
+  l3_name_en: IT Products Distribution
+primary_chain_position: downstream
+summary_short: 以遊戲主機與周邊通路銷售為主，另透過子公司提供遊戲美術外包。
+summary_long: 宏碁遊戲主要經營遊戲主機及周邊商品的代理與銷售，並銷售遊戲軟體與數位點數，業務涵蓋遊戲硬體、軟體內容及相關配件。旗下子公司Winking Studios（唯晶科技）從事遊戲美術外包，使集團營運同時涵蓋產品通路與內容製作。宏碁股份有限公司為其母公司；公司官網列示的海外子公司另包括菲律賓的Acer Global Merchandise Philippines、香港的Dropzone，以及新加坡的Acer Technology & Business Development，形成跨地區營運布局。
+relations:
+  parents:
+  - as_of: '2026-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 母公司
+    details:
+    - 母公司
+    edge: e4bc601b2175b
+    evidence_level: primary
+    id: tw.2353
+    name: 宏碁
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: 2026-10
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 菲律賓子公司
+    details:
+    - 菲律賓子公司
+    edge: e141ab47bc616
+    evidence_level: primary
+    id: org.acer-global-merchandise-philippines-inc
+    name: Acer Global Merchandise Philippines, Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2026-10
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 新加坡子公司
+    details:
+    - 新加坡子公司
+    edge: eaabf65550d32
+    evidence_level: primary
+    id: org.acer-technology-business-development-pte-ltd-sin
+    name: Acer Technology & Business Development Pte. Ltd. (Singapore)
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2026-10
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 香港子公司
+    details:
+    - 香港子公司
+    edge: e5b9c555533e5
+    evidence_level: primary
+    id: org.dropzone-hong-kong-limited
+    name: Dropzone (Hong Kong) Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 遊戲美術外包子公司
+    details:
+    - 遊戲美術外包子公司
+    edge: e30a17a282bec
+    evidence_level: primary
+    id: org.winking-studios
+    name: Winking Studios
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https:// www.acergaming.com
 tax_id: '83178333'
 incorporated: '2020-07-31'
 listed: '2026-03-25'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6908#e10:
+    locator: 子公司概覽 Subsidiaries／新加坡子公司
+    published_date: null
+    publisher: 宏碁遊戲股份有限公司
+    quote_check: found
+    title: 關於AGM
+    url: https://www.acergaming.com/page/about_AGM
+  tw.6908#e2:
+    locator: 正文主要業務段落
+    published_date: '2026-03-03'
+    publisher: 中央通訊社
+    quote_check: found
+    title: 宏碁遊戲將轉創新板上市　暫訂承銷價40元
+    url: https://www.cna.com.tw/news/afe/202603030299.aspx
+  tw.6908#e3:
+    locator: 完整遊戲生活體驗／軟體內容
+    published_date: null
+    publisher: 宏碁遊戲股份有限公司
+    quote_check: found
+    title: 關於AGM
+    url: https://www.acergaming.com/page/about_AGM
+  tw.6908#e4:
+    locator: 附註第3點；資料基準日2026年9月30日
+    published_date: null
+    publisher: 宏碁股份有限公司
+    quote_check: unreachable
+    title: 宏碁集團上市櫃子公司
+    url: https://www.acer.com/corporate/zh/investor-relations/shareholders-service/acer-group-ipo-listed-subsidiaries
+  tw.6908#e5:
+    locator: 子公司表／Winking Studios列／業務內容欄
+    published_date: null
+    publisher: 宏碁股份有限公司
+    quote_check: unreachable
+    title: 宏碁集團上市櫃子公司
+    url: https://www.acer.com/corporate/zh/investor-relations/shareholders-service/acer-group-ipo-listed-subsidiaries
+  tw.6908#e6:
+    locator: 正文首段
+    published_date: '2026-03-03'
+    publisher: 中央通訊社
+    quote_check: found
+    title: 宏碁遊戲將轉創新板上市　暫訂承銷價40元
+    url: https://www.cna.com.tw/news/afe/202603030299.aspx
+  tw.6908#e7:
+    locator: 集團上市櫃子公司表／宏碁遊戲列，宏碁持股欄65.6%；附註第1點
+    published_date: null
+    publisher: 宏碁股份有限公司
+    quote_check: unreachable
+    title: 宏碁集團上市櫃子公司
+    url: https://www.acer.com/corporate/zh/investor-relations/shareholders-service/acer-group-ipo-listed-subsidiaries
+  tw.6908#e8:
+    locator: 子公司概覽 Subsidiaries／菲律賓子公司
+    published_date: null
+    publisher: 宏碁遊戲股份有限公司
+    quote_check: found
+    title: 關於AGM
+    url: https://www.acergaming.com/page/about_AGM
+  tw.6908#e9:
+    locator: 子公司概覽 Subsidiaries／香港子公司
+    published_date: null
+    publisher: 宏碁遊戲股份有限公司
+    quote_check: found
+    title: 關於AGM
+    url: https://www.acergaming.com/page/about_AGM

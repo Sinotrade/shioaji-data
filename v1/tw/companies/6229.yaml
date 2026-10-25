@@ -8,12 +8,152 @@ industry:
   l0_code: '24'
   l0_name: 半導體業
   l0_name_en: Semiconductor
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.semi
+  l2_name: 半導體
+  l2_name_en: Semiconductors
+  l3: semi.distribution
+  l3_name: IC 通路
+  l3_name_en: IC Distribution
+chain: chain.semiconductor
+chain_stage:
+  agreement: both
+  also: []
+  reason: 定位為IC通路商，最大營收項目為影像視訊控制IC應用產品，另提供模組化服務。
+  stage: distribution
+  stage_name: IC 通路與模組
+  tier: downstream
+primary_chain_position: downstream
+summary_short: 經營IC通路，提供韌體、軟硬體整合及模組化設計服務。
+summary_long: 研通經營IC通路與應用方案，提供硬體、軟體、韌體及模組化設計生產服務。2025年集團營業比重以影像視訊控制IC應用產品37.50%為最大宗，其次為微處理器IC應用產品21.20%及液晶驅動器16.62%。產品組合另含記憶IC、電腦週邊控制IC與語音控制IC應用產品。集團直接持有HIGHFLYERS TRADING LTD.，並透過其間接持有弘崴企業國際有限公司。公司亦已開發電動機車及電動助力自行車的ECU智慧顯示儀表系統。
+segments:
+- evidence_ids:
+  - e3
+  id: seg_video
+  name: 影像視訊控制IC應用產品
+  period: 2025年度（合併）
+  revenue_share_pct: 37.5
+- evidence_ids:
+  - e3
+  id: seg_mcu
+  name: 微處理器IC應用產品
+  period: 2025年度（合併）
+  revenue_share_pct: 21.2
+- evidence_ids:
+  - e3
+  id: seg_lcd
+  name: 液晶驅動器
+  period: 2025年度（合併）
+  revenue_share_pct: 16.62
+- evidence_ids:
+  - e3
+  id: seg_memory
+  name: 記憶IC應用產品
+  period: 2025年度（合併）
+  revenue_share_pct: 10.94
+- evidence_ids:
+  - e3
+  id: seg_peripheral
+  name: 電腦週邊控制IC應用產品
+  period: 2025年度（合併）
+  revenue_share_pct: 5.76
+- evidence_ids:
+  - e3
+  id: seg_voice
+  name: 語音控制IC應用產品
+  period: 2025年度（合併）
+  revenue_share_pct: 3.99
+- evidence_ids:
+  - e3
+  id: seg_other
+  name: 其他
+  period: 2025年度（合併）
+  revenue_share_pct: 3.99
+main_theme: theme.ev
+themes:
+- also: []
+  stage: parts
+  theme: theme.ev
+  tier: midstream
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%的控股子公司
+    details:
+    - 直接持有100%的控股子公司
+    edge: eb2f65a1e8424
+    evidence_level: primary
+    id: org.highflyers-trading-ltd
+    name: HIGHFLYERS TRADING LTD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過HIGHFLYERS TRADING LTD.間接持有的子公司
+    details:
+    - 透過HIGHFLYERS TRADING LTD.間接持有的子公司
+    edge: efc429f9272e1
+    evidence_level: primary
+    id: org.弘崴企業國際有限公司
+    name: 弘崴企業國際有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.vtac.com.tw
 tax_id: '86491265'
 incorporated: '1992-03-02'
 listed: '2003-01-14'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6229#e2:
+    locator: 關於研通科技，企業願景
+    published_date: null
+    publisher: 研通科技股份有限公司
+    quote_check: found
+    title: 關於研通科技
+    url: https://www.vtac.com.tw/about_tw_1.php
+  tw.6229#e3:
+    locator: 印刷頁55，PDF第59頁，3.本集團營業比重
+    published_date: '2026-05-20'
+    publisher: 研通科技股份有限公司
+    quote_check: found
+    title: 研通科技股份有限公司114年度年報
+    url: https://www.vtac.com.tw/_i/assets/file/shareholder/48658bc687ec68764f5b24245364ce59.pdf
+  tw.6229#e4:
+    locator: 印刷頁2，PDF第6頁，重要之產銷政策
+    published_date: '2026-05-20'
+    publisher: 研通科技股份有限公司
+    quote_check: found
+    title: 研通科技股份有限公司114年度年報
+    url: https://www.vtac.com.tw/_i/assets/file/shareholder/48658bc687ec68764f5b24245364ce59.pdf
+  tw.6229#e5:
+    locator: 印刷頁60，PDF第64頁，開發成功之技術或產品，113年
+    published_date: '2025-05-07'
+    publisher: 研通科技股份有限公司
+    quote_check: found
+    title: 研通科技股份有限公司113年度年報
+    url: https://www.vtac.com.tw/_i/assets/file/shareholder/9a105d2708a9731b76b61ca492609c29.pdf
+  tw.6229#e6:
+    locator: 印刷頁10，PDF第12頁，列入合併財務報告之子公司；持股欄依序為115.6.30、114.12.31、114.6.30
+    published_date: '2026-08-13'
+    publisher: 研通科技股份有限公司
+    quote_check: found
+    title: 研通科技股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.vtac.com.tw/_i/assets/file/financial/22bde95d94ab15fa304474a52e0c68a5.pdf
+  tw.6229#e7:
+    locator: 印刷頁10，PDF第12頁，列入合併財務報告之子公司，投資公司與子公司欄
+    published_date: '2026-08-13'
+    publisher: 研通科技股份有限公司
+    quote_check: found
+    title: 研通科技股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.vtac.com.tw/_i/assets/file/financial/22bde95d94ab15fa304474a52e0c68a5.pdf

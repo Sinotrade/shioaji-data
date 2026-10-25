@@ -8,12 +8,88 @@ industry:
   l0_code: '38'
   l0_name: 居家生活
   l0_name_en: Home Life
-primary_chain_position: unknown
+  l1: consumer
+  l1_name: 消費
+  l1_name_en: Consumer
+  l2: cons.discretionary
+  l2_name: 非必需消費
+  l2_name_en: Consumer Discretionary
+  l3: retail.department
+  l3_name: 百貨與零售
+  l3_name_en: Department Stores & Retail
+primary_chain_position: downstream
+summary_short: 透過連鎖門市與官方電商銷售五金、工具及居家修繕用品，並提供工具租賃。
+summary_long: 振宇五金透過連鎖門市及官方購物網站，銷售五金工具、水電材料與居家修繕用品，門市並提供商品諮詢。商品涵蓋手工具、電動工具、土木工具、建築五金、油漆黏劑、水料電料、燈具照明、家庭用品及園藝用品，可供消費者採購日常維修與DIY所需材料。除商品零售外，公司另提供「租就GO」專業工具租賃，官網列有砂輪機、線鋸機、圓鋸機及電鑽等租借品項，實際租賃標的依門市現場供應。
+relations:
+  subsidiaries:
+  - as_of: '2023-02-22'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 歷史文件揭露之子公司
+    details:
+    - 歷史文件揭露之子公司
+    edge: e4f9fdc44a24f
+    evidence_level: primary
+    id: org.成萌股份有限公司
+    name: 成萌股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.ald.com.tw
 tax_id: '29092696'
 incorporated: '2008-05-14'
 listed: '2021-10-06'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2947#e1:
+    locator: 竹東店商品及服務介紹段落
+    published_date: '2026-09-22'
+    publisher: 振宇五金股份有限公司
+    quote_check: found
+    title: 振宇五金插旗竹東！全台第99店開幕　百店里程碑進入倒數
+    url: https://www.ald.com.tw/2026/09/22/%E6%8C%AF%E5%AE%87%E4%BA%94%E9%87%91%E6%8F%92%E6%97%97%E7%AB%B9%E6%9D%B1%EF%BC%81%E5%85%A8%E5%8F%B0%E7%AC%AC99%E5%BA%97%E9%96%8B%E5%B9%95%E3%80%80%E7%99%BE%E5%BA%97%E9%87%8C%E7%A8%8B%E7%A2%91%E9%80%B2/
+  tw.2947#e2:
+    locator: Product 找商品分類
+    published_date: null
+    publisher: 振宇五金股份有限公司
+    quote_check: found
+    title: ALD Shop｜振宇五金線上購物官方網站－五金工具、生活修繕、DIY材料宅配
+    url: https://shop.zhenyu.com.tw/tw/member
+  tw.2947#e3:
+    locator: 平面砂輪機租賃品項
+    published_date: null
+    publisher: 振宇五金股份有限公司
+    quote_check: found
+    title: 租就GO 專業工具租賃服務
+    url: https://www.ald.com.tw/tool-rental-services/
+  tw.2947#e4:
+    locator: 線鋸機租賃品項及供應限制
+    published_date: null
+    publisher: 振宇五金股份有限公司
+    quote_check: found
+    title: 租就GO 專業工具租賃服務
+    url: https://www.ald.com.tw/tool-rental-services/
+  tw.2947#e5:
+    locator: 線鋸機及圓鋸機租賃品項
+    published_date: null
+    publisher: 振宇五金股份有限公司
+    quote_check: found
+    title: 租就GO 專業工具租賃服務
+    url: https://www.ald.com.tw/tool-rental-services/
+  tw.2947#e6:
+    locator: 圓鋸機及震動電鑽租賃品項
+    published_date: null
+    publisher: 振宇五金股份有限公司
+    quote_check: found
+    title: 租就GO 專業工具租賃服務
+    url: https://www.ald.com.tw/tool-rental-services/
+  tw.2947#e7:
+    locator: 第1頁，112.2.22第1屆第21次審計委員會議案
+    published_date: null
+    publisher: 振宇五金股份有限公司
+    quote_check: found
+    title: 振宇五金股份有限公司112年度審計委員會運作情形
+    url: https://www.ald.com.tw/wp-content/uploads/2024/05/112%E5%B9%B4%E5%BA%A6%E5%AF%A9%E8%A8%88%E5%A7%94%E5%93%A1%E6%9C%83%E9%81%8B%E4%BD%9C%E6%83%85%E5%BD%A2.pdf

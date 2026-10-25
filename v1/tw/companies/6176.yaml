@@ -31,8 +31,12 @@ chain_stage:
 primary_chain_position: midstream
 summary_short: 以背光模組製造與銷售為主，並發展前光板、超穎透鏡及光學材料。
 summary_long: 瑞儀光電以背光模組的設計、製造、組裝及銷售為主要業務，背光模組為營收大宗。集團亦開發前光板，並與芬蘭子公司Nanocomp研製高性能、超薄產品。丹麥子公司NIL Technology的超穎透鏡已於2025年量產出貨，應用於工業機器人3D感測。芬蘭子公司Inkron提供高階光學鍍膜。集團另開發超穎透鏡眼球追蹤模組MetaEye，並投入Mini LED製程研發。
-main_theme: theme.apple
+main_theme: theme.mini_led
 themes:
+- also: []
+  stage: display
+  theme: theme.mini_led
+  tier: downstream
 - also: []
   stage: modules
   theme: theme.apple
@@ -41,10 +45,6 @@ themes:
   stage: components
   theme: theme.robotics
   tier: upstream
-- also: []
-  stage: display
-  theme: theme.mini_led
-  tier: downstream
 relations:
   subsidiaries:
   - as_of: '2025-10-31'

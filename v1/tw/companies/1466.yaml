@@ -8,12 +8,147 @@ industry:
   l0_code: '04'
   l0_name: 紡織纖維
   l0_name_en: Textiles
-primary_chain_position: unknown
+  l1: materials
+  l1_name: 原物料
+  l1_name_en: Materials
+  l2: mat.other
+  l2_name: 其他原物料
+  l2_name_en: Other Materials
+  l3: matl.textile_fiber
+  l3_name: 紡織纖維與機能布料
+  l3_name_en: Textiles, Fibers & Functional Fabrics
+chain: chain.textile
+chain_stage:
+  agreement: both
+  also: []
+  reason: 最大營收項目為尼龍加工絲，主業為尼龍、聚酯纖維與紗線產銷。
+  stage: fiber
+  stage_name: 纖維與紗
+  tier: upstream
+primary_chain_position: upstream
+summary_short: 以尼龍原絲、尼龍與聚酯加工絲及環保纖維的產銷為主要業務。
+summary_long: 聚隆主要生產與銷售尼龍及聚酯原絲、加工絲，並提供複合纖維、機能性及環保性紗線。2025年營收以尼龍加工絲占39.53%最多，其次為環保纖維22.94%；尼龍原絲及聚酯加工絲分別占16.16%與10.27%，醫材類占1.25%，其他占9.85%。環保產品包括將生產後尼龍雜絲重新製成紗線的回收尼龍纖維。旗下子公司包括聚泰環保材料科技、聚茂生技及聚盈纖維實業，其中聚盈為全資子公司。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_nylon_filament
+  name: 尼龍原絲
+  period: '2025'
+  revenue_share_pct: 16.16
+- evidence_ids:
+  - e1
+  id: seg_nylon_textured
+  name: 尼龍加工絲
+  period: '2025'
+  revenue_share_pct: 39.53
+- evidence_ids:
+  - e1
+  id: seg_polyester_textured
+  name: 聚酯加工絲
+  period: '2025'
+  revenue_share_pct: 10.27
+- evidence_ids:
+  - e1
+  id: seg_eco_fiber
+  name: 環保纖維
+  period: '2025'
+  revenue_share_pct: 22.94
+- evidence_ids:
+  - e1
+  id: seg_medical
+  name: 醫材類
+  period: '2025'
+  revenue_share_pct: 1.25
+- evidence_ids:
+  - e1
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 9.85
+relations:
+  subsidiaries:
+  - as_of: 2026-10
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司
+    details:
+    - 子公司
+    edge: e8ba89aa8d0d2
+    evidence_level: primary
+    id: org.聚泰環保材料科技股份有限公司
+    name: 聚泰環保材料科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司
+    details:
+    - 全資子公司
+    edge: ecbc805f8f590
+    evidence_level: primary
+    id: org.聚盈纖維實業股份有限公司
+    name: 聚盈纖維實業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2026-10
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司
+    details:
+    - 子公司
+    edge: ed176497f3735
+    evidence_level: primary
+    id: org.聚茂生技股份有限公司
+    name: 聚茂生技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.acelon.com.tw
 tax_id: '22976047'
 incorporated: '1988-07-22'
 listed: '1998-04-04'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1466#e1:
+    locator: 第81頁，肆、營運概況／一、業務內容／營業比重
+    published_date: '2026-05-15'
+    publisher: 聚隆纖維股份有限公司
+    quote_check: found
+    title: 聚隆纖維股份有限公司民國114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51824/2026/RNS/51824_rns_2026-05-21_9fdeb0fa-7d24-4ae6-acdc-8c4afe5618b4.pdf
+  tw.1466#e2:
+    locator: 公司別／部門別：聚隆纖維(股)公司
+    published_date: null
+    publisher: 聚隆纖維股份有限公司
+    quote_check: found
+    title: 公司組織
+    url: https://www.acelon-yarn.com/zh-tw/about-cate-first/business-organization
+  tw.1466#e3:
+    locator: 產品介紹
+    published_date: null
+    publisher: 聚隆纖維股份有限公司
+    quote_check: found
+    title: 回收尼龍纖維 (AceEco™ rNY)
+    url: https://www.acelon-yarn.com/zh-tw/product/recycled-nylon-yarn
+  tw.1466#e4:
+    locator: 公司簡介第一段
+    published_date: null
+    publisher: 聚隆纖維股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.acelon-yarn.com/zh-tw/abouts
+  tw.1466#e5:
+    locator: 第10頁，附註四（三）合併基礎，註三
+    published_date: '2025-11-11'
+    publisher: 聚隆纖維股份有限公司
+    quote_check: found
+    title: 聚隆纖維股份有限公司及子公司民國114年第三季合併財務報告
+    url: https://www.acelon-yarn.com/storage/media/shareholder/finance/2.%E8%81%9A%E9%9A%86114Q3%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E6%9B%B8(%E6%96%87%E5%AD%97%E6%95%B4%E4%BD%B5%E6%AA%94)_114Q3%E8%B2%A1%E5%A0%B1%E6%96%87%E5%AD%97%E6%8E%83%E6%8F%8F%E6%AA%94----OK.pdf

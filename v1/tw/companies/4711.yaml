@@ -8,12 +8,116 @@ industry:
   l0_code: '21'
   l0_name: 化學工業
   l0_name_en: Chemical
-primary_chain_position: unknown
+  l1: materials
+  l1_name: 原物料
+  l1_name_en: Materials
+  l2: mat.chemicals
+  l2_name: 化工
+  l2_name_en: Chemicals
+  l3: chem.specialty
+  l3_name: 特用化學品
+  l3_name_en: Specialty Chemicals
+chain: chain.petrochem
+chain_stage:
+  agreement: tiebreak
+  also: []
+  reason: 多元醇聚酯樹脂占營收53.84%，以合成樹脂、膠粒及FRP加工產品為主，屬石化下游。
+  stage: downstream
+  stage_name: 塑膠、纖維與加工
+  tier: downstream
+primary_chain_position: downstream
+summary_short: 以多元醇聚酯樹脂等合成樹脂、FRP設備及子公司膠粒業務取得收入。
+summary_long: 永純主要業務涵蓋合成樹脂、FRP設備及子公司膠粒產品。2025年年報列示，多元醇聚酯樹脂營業比重為53.84%，為最大產品類別；不飽和聚酯樹脂及聚氨酯膠粒分別為18.08%及17.34%。多元醇聚酯樹脂可作為製造PU樹脂的主要原料。公司亦製造FRP耐蝕化學槽、反應槽、貯水槽、管道及配件。鞋膠與熱熔膠業務由子公司神揚工業經營，2025年底永純持有該公司100%股權。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_polyol
+  name: 多元醇聚酯樹脂
+  period: '2025'
+  revenue_share_pct: 53.84
+- evidence_ids:
+  - e1
+  id: seg_up
+  name: 不飽和聚酯樹脂
+  period: '2025'
+  revenue_share_pct: 18.08
+- evidence_ids:
+  - e1
+  - e7
+  id: seg_granules
+  name: 聚氨酯膠粒（熱熔膠及鞋膠；子公司神揚工業業務）
+  period: '2025'
+  revenue_share_pct: 17.34
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的合併子公司
+    details:
+    - 直接持股100%的合併子公司
+    edge: e1fba34353a55
+    evidence_level: primary
+    id: org.神揚工業股份有限公司
+    name: 神揚工業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.yschem.com.tw
 tax_id: '35108702'
 incorporated: '1965-07-31'
 listed: '1999-02-24'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4711#e1:
+    locator: 內文第44頁，Main products and their operating weight
+    published_date: '2026-04-30'
+    publisher: 永純化學工業股份有限公司
+    quote_check: found
+    title: 永純化學工業股份有限公司2025年英文年報
+    url: https://www.yongshunchemical.com/eng/download/Sharehloders/Yearreport/114year.pdf
+  tw.4711#e2:
+    locator: 永純廠成品／石化的產品
+    published_date: null
+    publisher: 永純化學工業股份有限公司
+    quote_check: not_found
+    title: 不飽和聚酯樹脂
+    url: https://www.yongshunchemical.com/UP.html
+  tw.4711#e3:
+    locator: 產品說明首句
+    published_date: null
+    publisher: 永純化學工業股份有限公司
+    quote_check: not_found
+    title: 多元醇聚酯樹脂（Polyester Polyol Resin）
+    url: https://www.yongshunchemical.com/PU.html
+  tw.4711#e4:
+    locator: 產品介紹第一段
+    published_date: null
+    publisher: 永純化學工業股份有限公司
+    quote_check: not_found
+    title: FRP桶槽、管道、RC廢水池防蝕FRP LINING工程
+    url: https://www.yschem.com.tw/FRP.html
+  tw.4711#e5:
+    locator: 第32頁，附註十二「子公司」，投資公司及子公司名稱欄
+    published_date: null
+    publisher: 永純化學工業股份有限公司
+    quote_check: found
+    title: 永純化學工業股份有限公司及子公司民國114及113年度合併財務報告
+    url: https://www.yongshunchemical.com/download/FinancialReport/114/YSC114Q4ALL.pdf
+  tw.4711#e6:
+    locator: 第32頁，附註十二神揚工業列；114及113年12月31日所持股權百分比
+    published_date: null
+    publisher: 永純化學工業股份有限公司
+    quote_check: found
+    title: 永純化學工業股份有限公司及子公司民國114及113年度合併財務報告
+    url: https://www.yongshunchemical.com/download/FinancialReport/114/YSC114Q4ALL.pdf
+  tw.4711#e7:
+    locator: 內文第59頁，轉投資政策；子公司Sun Yang Global Co., Ltd.之製造銷售業務
+    published_date: '2026-04-30'
+    publisher: 永純化學工業股份有限公司
+    quote_check: found
+    title: 永純化學工業股份有限公司2025年英文年報
+    url: https://www.yongshunchemical.com/eng/download/Sharehloders/Yearreport/114year.pdf

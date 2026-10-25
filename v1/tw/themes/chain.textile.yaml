@@ -54,12 +54,59 @@ members:
   stage: fabric
   tier: midstream
   stage_role: primary
+- id: tw.1413
+  detail: 聚酯粒及聚酯原絲合計占營業比重100%，主要產品屬纖維與紗。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.1413#e2
+  - tw.1413#e3
+  - tw.1413#e4
+  confidence: ai_cross_checked
+  source: classification
+  stage: fiber
+  tier: upstream
+  stage_role: primary
 - id: tw.1414
   detail: 混紡紗占2025年度營收72.05%，為主要業務，產品為CVC、特殊混紡紗及機能紗線。
   as_of: '2026-10-23'
   evidence:
   - tw.1414#e2
   - tw.1414#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: fiber
+  tier: upstream
+  stage_role: primary
+- id: tw.1417
+  detail: 營收100%來自成衣、服飾配件及其他銷售；團體制服業務亦提供布料生產。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.1417#e1
+  - tw.1417#e2
+  confidence: ai_cross_checked
+  source: classification
+  stage: garment
+  tier: downstream
+  stage_role: primary
+- id: tw.1417
+  detail: 營收100%來自成衣、服飾配件及其他銷售；團體制服業務亦提供布料生產。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.1417#e1
+  - tw.1417#e2
+  confidence: ai_cross_checked
+  source: classification
+  stage: fabric
+  tier: midstream
+  stage_role: also
+- id: tw.1418
+  detail: 以進口亞克力纖維內銷為主，合成纖維買賣為最大營收來源，屬纖維與紗階段。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.1418#e2
+  - tw.1418#e3
+  - tw.1418#e5
+  - tw.1418#e6
   confidence: ai_cross_checked
   source: classification
   stage: fiber
@@ -139,6 +186,30 @@ members:
   stage: fiber
   tier: upstream
   stage_role: primary
+- id: tw.1441
+  detail: 布部門占營收72.88%為主，另有占27.12%的紗線產銷業務。
+  as_of: '2026-10-25'
+  evidence:
+  - tw.1441#e2
+  - tw.1441#e3
+  - tw.1441#e5
+  confidence: ai_cross_checked
+  source: classification
+  stage: fabric
+  tier: midstream
+  stage_role: primary
+- id: tw.1441
+  detail: 布部門占營收72.88%為主，另有占27.12%的紗線產銷業務。
+  as_of: '2026-10-25'
+  evidence:
+  - tw.1441#e2
+  - tw.1441#e3
+  - tw.1441#e5
+  confidence: ai_cross_checked
+  source: classification
+  stage: fiber
+  tier: upstream
+  stage_role: also
 - id: tw.1444
   detail: 加工絲占營收45.87%為最大來源，屬纖維與紗；另有長纖織物及子公司織造染整業務。
   as_of: '2026-10-20'
@@ -162,6 +233,52 @@ members:
   source: classification
   stage: fabric
   tier: midstream
+  stage_role: also
+- id: tw.1445
+  detail: 布料織造與加工占營收67.13%為最大業務，另有占24.57%的假撚加工絲業務。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.1445#e2
+  - tw.1445#e3
+  - tw.1445#e5
+  confidence: ai_cross_checked
+  source: classification
+  stage: fabric
+  tier: midstream
+  stage_role: primary
+- id: tw.1445
+  detail: 布料織造與加工占營收67.13%為最大業務，另有占24.57%的假撚加工絲業務。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.1445#e2
+  - tw.1445#e3
+  - tw.1445#e5
+  confidence: ai_cross_checked
+  source: classification
+  stage: fiber
+  tier: upstream
+  stage_role: also
+- id: tw.1449
+  detail: 先染及長纖織物占營收73%，並涵蓋織布染整；紡紗另占6.21%。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.1449#e1
+  - tw.1449#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: fabric
+  tier: midstream
+  stage_role: primary
+- id: tw.1449
+  detail: 先染及長纖織物占營收73%，並涵蓋織布染整；紡紗另占6.21%。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.1449#e1
+  - tw.1449#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: fiber
+  tier: upstream
   stage_role: also
 - id: tw.1451
   detail: 成衣占營收62%為最大來源，另有牛仔布29%與環錠紗9%，橫跨織布與紡紗。
@@ -188,6 +305,43 @@ members:
   as_of: '2026-10-23'
   evidence:
   - tw.1451#e2
+  confidence: ai_cross_checked
+  source: classification
+  stage: fiber
+  tier: upstream
+  stage_role: also
+- id: tw.1452
+  detail: 聚酯加工絲製造與行銷占營業比重100%，產品為複合絲與紗線。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.1452#e1
+  - tw.1452#e2
+  confidence: ai_cross_checked
+  source: classification
+  stage: fiber
+  tier: upstream
+  stage_role: primary
+- id: tw.1454
+  detail: 依研究所列主要定位為聚酯長纖及機能布料供應商，亦供應加工絲；未提供營收占比。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.1454#e1
+  - tw.1454#e3
+  - tw.1454#e4
+  - tw.1454#e5
+  confidence: ai_cross_checked
+  source: classification
+  stage: fabric
+  tier: midstream
+  stage_role: primary
+- id: tw.1454
+  detail: 依研究所列主要定位為聚酯長纖及機能布料供應商，亦供應加工絲；未提供營收占比。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.1454#e1
+  - tw.1454#e3
+  - tw.1454#e4
+  - tw.1454#e5
   confidence: ai_cross_checked
   source: classification
   stage: fiber
@@ -305,6 +459,41 @@ members:
   stage: garment
   tier: downstream
   stage_role: also
+- id: tw.1465
+  detail: 長纖梭織布占營業比重99.40%，以織布為主，另生產聚酯加工絲。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.1465#e1
+  - tw.1465#e2
+  - tw.1465#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: fabric
+  tier: midstream
+  stage_role: primary
+- id: tw.1465
+  detail: 長纖梭織布占營業比重99.40%，以織布為主，另生產聚酯加工絲。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.1465#e1
+  - tw.1465#e2
+  - tw.1465#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: fiber
+  tier: upstream
+  stage_role: also
+- id: tw.1466
+  detail: 最大營收項目為尼龍加工絲，主業為尼龍、聚酯纖維與紗線產銷。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.1466#e1
+  - tw.1466#e2
+  confidence: ai_cross_checked
+  source: classification
+  stage: fiber
+  tier: upstream
+  stage_role: primary
 - id: tw.1467
   detail: 成衣占營收76.45%為最大來源，另有織染及金屬纖維業務。
   as_of: '2026-10-23'
@@ -382,6 +571,40 @@ members:
   stage: garment
   tier: downstream
   stage_role: primary
+- id: tw.1474
+  detail: 長纖織物占營收91.08%，以織布為主；另有原紗營收及手術衣、隔離衣等醫療成衣產品。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.1474#e2
+  - tw.1474#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: fabric
+  tier: midstream
+  stage_role: primary
+- id: tw.1474
+  detail: 長纖織物占營收91.08%，以織布為主；另有原紗營收及手術衣、隔離衣等醫療成衣產品。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.1474#e2
+  - tw.1474#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: fiber
+  tier: upstream
+  stage_role: also
+- id: tw.1475
+  detail: 營收全為紡織產品，銷售布品、染料及助劑，研究明列於織布與染整環節。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.1475#e2
+  - tw.1475#e3
+  - tw.1475#e4
+  confidence: ai_cross_checked
+  source: classification
+  stage: fabric
+  tier: midstream
+  stage_role: primary
 - id: tw.1476
   detail: 成衣占營收66.39%為主，針織布占33.61%，並具織布與染整業務。
   as_of: '2026-10-14'
@@ -448,6 +671,95 @@ members:
   stage: garment
   tier: downstream
   stage_role: primary
+- id: tw.2929
+  detail: 以自有品牌童裝設計與銷售為主，童裝為最大營收來源。
+  as_of: '2026-10-25'
+  evidence:
+  - tw.2929#e1
+  - tw.2929#e2
+  confidence: ai_cross_checked
+  source: classification
+  stage: garment
+  tier: downstream
+  stage_role: primary
+- id: tw.2941
+  detail: 經營Life8等自有服飾品牌，服飾鞋類占營收96.48%，以品牌零售為主。
+  as_of: '2026-10-25'
+  evidence:
+  - tw.2941#e2
+  - tw.2941#e3
+  - tw.2941#e4
+  confidence: ai_cross_checked
+  source: classification
+  stage: garment
+  tier: downstream
+  stage_role: primary
+- id: tw.4401
+  detail: 已確認主業為機能性加工紗、染色紗及車縫線製造銷售，屬纖維與紗。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.4401#e1
+  - tw.4401#e4
+  confidence: ai_cross_checked
+  source: classification
+  stage: fiber
+  tier: upstream
+  stage_role: primary
+- id: tw.4402
+  detail: 紡織業務供應及生產尼龍布、聚酯布與家飾布，另開發防護衣；營收占比尚未核實。
+  as_of: '2026-10-25'
+  evidence:
+  - tw.4402#e1
+  - tw.4402#e2
+  confidence: ai_cross_checked
+  source: classification
+  stage: fabric
+  tier: midstream
+  stage_role: primary
+- id: tw.4402
+  detail: 紡織業務供應及生產尼龍布、聚酯布與家飾布，另開發防護衣；營收占比尚未核實。
+  as_of: '2026-10-25'
+  evidence:
+  - tw.4402#e1
+  - tw.4402#e2
+  confidence: ai_cross_checked
+  source: classification
+  stage: garment
+  tier: downstream
+  stage_role: also
+- id: tw.4406
+  detail: 特多龍加工絲占營收98.90%，以紗線為主；另有成品布銷售，跨及織布階段。
+  as_of: '2026-10-25'
+  evidence:
+  - tw.4406#e1
+  - tw.4406#e5
+  confidence: ai_cross_checked
+  source: classification
+  stage: fiber
+  tier: upstream
+  stage_role: primary
+- id: tw.4406
+  detail: 特多龍加工絲占營收98.90%，以紗線為主；另有成品布銷售，跨及織布階段。
+  as_of: '2026-10-25'
+  evidence:
+  - tw.4406#e1
+  - tw.4406#e5
+  confidence: ai_cross_checked
+  source: classification
+  stage: fabric
+  tier: midstream
+  stage_role: also
+- id: tw.4413
+  detail: 託工製衣收入占93.60%，另有成衣加工業務，主要屬成衣階段。
+  as_of: '2026-10-25'
+  evidence:
+  - tw.4413#e2
+  - tw.4413#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: garment
+  tier: downstream
+  stage_role: primary
 - id: tw.4414
   detail: 成衣業務營業比重為100%，以牛仔成衣代工及各類服裝製造、加工與買賣為主。
   as_of: '2026-10-23'
@@ -486,6 +798,119 @@ members:
   stage: fiber
   tier: upstream
   stage_role: also
+- id: tw.4420
+  detail: 聚酯加工絲占營收99.14%，以聚酯原絲經假撚製成加工絲，屬纖維與紗階段。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.4420#e2
+  - tw.4420#e3
+  - tw.4420#e5
+  confidence: ai_cross_checked
+  source: classification
+  stage: fiber
+  tier: upstream
+  stage_role: primary
+- id: tw.4426
+  detail: 針織網布占營收96.98%，以織布為主，另有染整加工及盤頭紗買賣。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.4426#e1
+  - tw.4426#e5
+  confidence: ai_cross_checked
+  source: classification
+  stage: fabric
+  tier: midstream
+  stage_role: primary
+- id: tw.4426
+  detail: 針織網布占營收96.98%，以織布為主，另有染整加工及盤頭紗買賣。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.4426#e1
+  - tw.4426#e5
+  confidence: ai_cross_checked
+  source: classification
+  stage: fiber
+  tier: upstream
+  stage_role: also
+- id: tw.4430
+  detail: 長纖線材占營收51.26%為最大來源，另有短纖事業生產不織布及填充材料。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.4430#e1
+  - tw.4430#e2
+  - tw.4430#e3
+  - tw.4430#e4
+  confidence: ai_cross_checked
+  source: classification
+  stage: fiber
+  tier: upstream
+  stage_role: primary
+- id: tw.4430
+  detail: 長纖線材占營收51.26%為最大來源，另有短纖事業生產不織布及填充材料。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.4430#e1
+  - tw.4430#e2
+  - tw.4430#e3
+  - tw.4430#e4
+  confidence: ai_cross_checked
+  source: classification
+  stage: fabric
+  tier: midstream
+  stage_role: also
+- id: tw.4432
+  detail: 成衣占2025年度營收95.46%，以機能成衣開發、製造及OEM、ODM服務為主。
+  as_of: '2026-10-25'
+  evidence:
+  - tw.4432#e2
+  - tw.4432#e3
+  - tw.4432#e4
+  - tw.4432#e5
+  - tw.4432#e6
+  confidence: ai_cross_checked
+  source: classification
+  stage: garment
+  tier: downstream
+  stage_role: primary
+- id: tw.4433
+  detail: 布料占營收54.74%為最大業務，集團亦涵蓋咖啡紗與成衣製造。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.4433#e2
+  - tw.4433#e4
+  - tw.4433#e5
+  - tw.4433#e8
+  confidence: ai_cross_checked
+  source: classification
+  stage: fabric
+  tier: midstream
+  stage_role: primary
+- id: tw.4433
+  detail: 布料占營收54.74%為最大業務，集團亦涵蓋咖啡紗與成衣製造。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.4433#e2
+  - tw.4433#e4
+  - tw.4433#e5
+  - tw.4433#e8
+  confidence: ai_cross_checked
+  source: classification
+  stage: fiber
+  tier: upstream
+  stage_role: also
+- id: tw.4433
+  detail: 布料占營收54.74%為最大業務，集團亦涵蓋咖啡紗與成衣製造。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.4433#e2
+  - tw.4433#e4
+  - tw.4433#e5
+  - tw.4433#e8
+  confidence: ai_cross_checked
+  source: classification
+  stage: garment
+  tier: downstream
+  stage_role: also
 - id: tw.4438
   detail: 主要從事機能服飾與羽絨衣代工，營收產品組合均屬成衣，歸於成衣、製鞋與品牌階段。
   as_of: '2026-10-20'
@@ -519,6 +944,18 @@ members:
   stage: garment
   tier: downstream
   stage_role: also
+- id: tw.4440
+  detail: 彈性包覆紗占營收66.30%、加工絲占32.94%，主要從事紗線製造與假撚加工。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.4440#e1
+  - tw.4440#e2
+  - tw.4440#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: fiber
+  tier: upstream
+  stage_role: primary
 - id: tw.4441
   detail: 成衣銷售占營收99.96%，主要從事各類成衣設計與代工製造。
   as_of: '2026-10-18'
@@ -567,6 +1004,19 @@ members:
   stage: fabric
   tier: midstream
   stage_role: primary
+- id: tw.5906
+  detail: 運動休閒品牌業務占營收97.29%，主要從事服飾、鞋類品牌設計開發、代理及銷售。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.5906#e_revenue
+  - tw.5906#e_fila
+  - tw.5906#e_reebok
+  - tw.5906#e_eddie
+  confidence: ai_cross_checked
+  source: classification
+  stage: garment
+  tier: downstream
+  stage_role: primary
 - id: tw.6504
   detail: 銷售金額最大的產品為熱風熱壓不織布，核心業務為不織布製造與加工，屬織布與染整階段。
   as_of: '2026-10-23'
@@ -575,6 +1025,18 @@ members:
   - tw.6504#e2
   - tw.6504#e3
   - tw.6504#e4
+  confidence: ai_cross_checked
+  source: classification
+  stage: fabric
+  tier: midstream
+  stage_role: primary
+- id: tw.6506
+  detail: 機能布料塗佈貼合占營收51.27%，為最大業務；樹脂與TPU未明列纖維或紗線業務。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.6506#e1
+  - tw.6506#e6
+  - tw.6506#e7
   confidence: ai_cross_checked
   source: classification
   stage: fabric
@@ -635,6 +1097,29 @@ members:
   source: classification
   stage: fabric
   tier: midstream
+  stage_role: primary
+- id: tw.8429
+  detail: 產品營收全數來自休閒鞋，營運以自有品牌鞋服為主，屬製鞋與品牌端。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.8429#e1
+  - tw.8429#e2
+  confidence: ai_cross_checked
+  source: classification
+  stage: garment
+  tier: downstream
+  stage_role: primary
+- id: tw.8443
+  detail: 以自有品牌鞋履及相關商品零售為主，鞋類為最大單一營收品項，子公司亦製造鞋包。
+  as_of: '2026-10-25'
+  evidence:
+  - tw.8443#e2
+  - tw.8443#e3
+  - tw.8443#e4
+  confidence: ai_cross_checked
+  source: classification
+  stage: garment
+  tier: downstream
   stage_role: primary
 - id: tw.8916
   detail: 成衣代工占營收55%，為最大業務；另有羽絨原料精洗加工，跨足上游原料。
@@ -720,4 +1205,4 @@ members:
   stage: fabric
   tier: midstream
   stage_role: primary
-as_of: '2026-10-23'
+as_of: '2026-10-25'

@@ -8,12 +8,128 @@ industry:
   l0_code: '27'
   l0_name: 通信網路業
   l0_name_en: Communications and Internet
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.network
+  l2_name: 通信網路
+  l2_name_en: Communications & Networking
+  l3: net.switch
+  l3_name: 網通設備（交換器、路由器）
+  l3_name_en: Networking Equipment (Switches, Routers)
+chain: chain.networking
+chain_stage:
+  agreement: research
+  also: []
+  reason: 主要業務為交換器、無線基地台及路由器等網通設備。
+  stage: equipment
+  stage_name: 網通設備與系統
+  tier: downstream
+primary_chain_position: downstream
+summary_short: 以企業及消費性網通設備為主，另經營電信商設備與通訊服務。
+summary_long: 訊舟集團主要經營企業用及消費性通訊設備、電信商通訊設備與通訊服務。2025年營收以企業用及消費性通訊設備占69.64%為主，電信商通訊設備占22.43%，通訊服務占5.57%，其他占2.36%。官網產品涵蓋Wi-Fi無線基地台、USB無線網路卡、工業用PoE交換器，以及監測空氣品質的AirBox空氣盒子；集團年報亦列有工業用5G路由器。康全電訊則列為訊舟的合併子公司。
+segments:
+- evidence_ids:
+  - e2
+  id: seg1
+  name: 企業用及消費性通訊設備
+  period: '2025'
+  revenue_share_pct: 69.64
+- evidence_ids:
+  - e2
+  id: seg2
+  name: 電信商通訊設備
+  period: '2025'
+  revenue_share_pct: 22.43
+- evidence_ids:
+  - e2
+  id: seg3
+  name: 通訊服務
+  period: '2025'
+  revenue_share_pct: 5.57
+- evidence_ids:
+  - e2
+  id: seg4
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 2.36
+main_theme: theme.5g
+themes:
+- also: []
+  stage: equipment
+  theme: theme.5g
+  tier: midstream
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 合併子公司
+    details:
+    - 合併子公司
+    - 母公司
+    edge: eab11327bfac6
+    evidence_level: primary
+    id: tw.8089
+    name: 康全電訊
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 2
 website: www.edimax.com
 tax_id: '22164580'
 incorporated: '1986-06-28'
 listed: '2002-08-26'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3047#e2:
+    locator: 第70頁，營業比重表；依序為113年度金額、比重及114年度金額、比重
+    published_date: '2026-04-30'
+    publisher: 訊舟科技股份有限公司
+    quote_check: found
+    title: 訊舟科技股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52279/2026/RNS/52279_rns_2026-05-26_b5b89020-f92d-40ae-9872-6d563f68ef35.pdf
+  tw.3047#e3:
+    locator: 產品名稱及型號
+    published_date: null
+    publisher: 訊舟科技股份有限公司
+    quote_check: found
+    title: CAX1800 AX1800 Wi-Fi 6雙頻吸頂式PoE無線基地台
+    url: https://www.edimax.com/edimax/merchandise/merchandise_detail/data/edimax/tw/smb_access_points_ax1800/cax1800/
+  tw.3047#e4:
+    locator: 產品名稱及型號
+    published_date: null
+    publisher: 訊舟科技股份有限公司
+    quote_check: found
+    title: EW-7822UBE Wi-Fi 7三頻USB 3.2無線網路卡
+    url: https://www.edimax.com/edimax/merchandise/merchandise_detail/data/edimax/tw/wireless_adapter_be6500/ew-7822ube/
+  tw.3047#e5:
+    locator: 產品名稱及型號
+    published_date: null
+    publisher: 訊舟科技股份有限公司
+    quote_check: found
+    title: IGS-1210P V2工業用寬溫PoE+網路交換器
+    url: https://www.edimax.com/edimax/merchandise/merchandise_detail/data/edimax/tw/smb_switches_industrial/igs-1210p_v2/
+  tw.3047#e6:
+    locator: 空氣品質檢測與即時報告
+    published_date: null
+    publisher: 訊舟科技股份有限公司
+    quote_check: found
+    title: AirBox空氣盒子V3
+    url: https://www.edimax.com/edimax/merchandise/merchandise_detail/data/edimax/tw/air_quality_detection_semioutdoor/ai-1001w_v3/
+  tw.3047#e7:
+    locator: 第70頁，公司目前之商品項目：企業型無線網路設備系列
+    published_date: '2026-04-30'
+    publisher: 訊舟科技股份有限公司
+    quote_check: found
+    title: 訊舟科技股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52279/2026/RNS/52279_rns_2026-05-26_b5b89020-f92d-40ae-9872-6d563f68ef35.pdf
+  tw.3047#e8:
+    locator: 第94頁，財務狀況變動分析：非控制權益
+    published_date: '2026-04-30'
+    publisher: 訊舟科技股份有限公司
+    quote_check: found
+    title: 訊舟科技股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52279/2026/RNS/52279_rns_2026-05-26_b5b89020-f92d-40ae-9872-6d563f68ef35.pdf

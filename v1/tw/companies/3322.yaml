@@ -8,12 +8,196 @@ industry:
   l0_code: '28'
   l0_name: 電子零組件業
   l0_name_en: Electronic Parts and Components
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.connector
+  l3_name: 連接器與線材
+  l3_name_en: Connectors & Cables
+primary_chain_position: midstream
+summary_short: 主要製造連接線與連接器，另有電子產品、天線及醫療線材。
+summary_long: 建舜電以連接線與連接器製造為主要業務，2025年該類營收占78.09%，電子產品占4.62%、天線占2.30%，材料及其他占14.99%。產品涵蓋USB Type-C、USB4、Thunderbolt 5、MCIO與SlimSAS線材，也提供醫療線材、RF天線及外接式儲存裝置。公司揭露AI伺服器與資料中心應用產品為研發重點，題材歸屬以研發活動為依據。依2025年第一季合併財報，旗下包括直接持有的泰國建舜及透過控股公司間接持有的東莞建瑋。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_cable
+  name: 連接線（含連接器）
+  period: '2025'
+  revenue_share_pct: 78.09
+- evidence_ids:
+  - e2
+  id: seg_electronics
+  name: 電子產品
+  period: '2025'
+  revenue_share_pct: 4.62
+- evidence_ids:
+  - e2
+  id: seg_antenna
+  name: 天線
+  period: '2025'
+  revenue_share_pct: 2.3
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 材料及其他
+  period: '2025'
+  revenue_share_pct: 14.99
+main_theme: theme.ai_server
+themes:
+- also: []
+  stage: components
+  theme: theme.ai_server
+  tier: midstream
+relations:
+  subsidiaries:
+  - as_of: '2025-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有的投資控股子公司
+    details:
+    - 直接持有的投資控股子公司
+    edge: ee33e082cb4f6
+    evidence_level: primary
+    id: org.conquest-international-holding-corporation
+    name: Conquest International Holding Corporation
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過Conquest－BVI間接持有的製造子公司
+    details:
+    - 透過Conquest－BVI間接持有的製造子公司
+    edge: e993a7a537944
+    evidence_level: primary
+    id: org.dongguan-jianwei-electronics
+    name: 東莞建瑋電子制品有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有的製造子公司
+    details:
+    - 直接持有的製造子公司
+    edge: e4aaa42fec8de
+    evidence_level: primary
+    id: org.joinsoon-electronics-manufacturing-thailand
+    name: 泰國建舜電子製品有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.jem.com.tw
 tax_id: '34145259'
 incorporated: '1977-03-22'
 listed: '2009-05-20'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3322#e10:
+    locator: Antenna
+    published_date: null
+    publisher: 建舜電子製造股份有限公司
+    quote_check: found
+    title: 產品介紹
+    url: https://www.jem.com.tw/Product_all.aspx
+  tw.3322#e11:
+    locator: 第17頁，產業位置
+    published_date: '2026-08-06'
+    publisher: 建舜電子製造股份有限公司
+    quote_check: found
+    title: 2025年永續報告書
+    url: https://www.jem.com.tw/Webfiles/e6a2b724-3867-4b1f-b098-73e988c44017.pdf
+  tw.3322#e12:
+    locator: 第43頁，一、連接線與連接器技術發展
+    published_date: '2026-08-06'
+    publisher: 建舜電子製造股份有限公司
+    quote_check: found
+    title: 2025年永續報告書
+    url: https://www.jem.com.tw/Webfiles/e6a2b724-3867-4b1f-b098-73e988c44017.pdf
+  tw.3322#e13:
+    locator: 第11頁，附註四（二）列入合併財務報告之子公司
+    published_date: '2025-05-08'
+    publisher: 建舜電子製造股份有限公司
+    quote_check: found
+    title: 114年及113年第一季合併財務報告
+    url: https://jem.com.tw/webfiles/bb119725-dd83-42ad-b3c4-27c1a564aebf.pdf
+  tw.3322#e14:
+    locator: 第11頁，附註四（二）子公司表；同上符號承接本公司及電腦週邊產品加工製造
+    published_date: '2025-05-08'
+    publisher: 建舜電子製造股份有限公司
+    quote_check: found
+    title: 114年及113年第一季合併財務報告
+    url: https://jem.com.tw/webfiles/bb119725-dd83-42ad-b3c4-27c1a564aebf.pdf
+  tw.3322#e15:
+    locator: 第11頁，附註四（二）列入合併財務報告之子公司
+    published_date: '2025-05-08'
+    publisher: 建舜電子製造股份有限公司
+    quote_check: found
+    title: 114年及113年第一季合併財務報告
+    url: https://jem.com.tw/webfiles/bb119725-dd83-42ad-b3c4-27c1a564aebf.pdf
+  tw.3322#e2:
+    locator: 第16頁，2025年產品及服務收入金額及比重
+    published_date: '2026-08-06'
+    publisher: 建舜電子製造股份有限公司
+    quote_check: found
+    title: 2025年永續報告書
+    url: https://www.jem.com.tw/Webfiles/e6a2b724-3867-4b1f-b098-73e988c44017.pdf
+  tw.3322#e3:
+    locator: Cable產品分類
+    published_date: null
+    publisher: 建舜電子製造股份有限公司
+    quote_check: not_found
+    title: 產品介紹
+    url: https://www.jem.com.tw/Product_all.aspx
+  tw.3322#e4:
+    locator: Thunderbolt產品清單
+    published_date: null
+    publisher: 建舜電子製造股份有限公司
+    quote_check: found
+    title: Thunderbolt產品介紹
+    url: https://www.jem.com.tw/Product.aspx?BigCatID=c815d73f-85eb-4da8-8ead-75186b4f6f44&CatID=af8e0393-f73e-4a26-9753-dd7112679923
+  tw.3322#e5:
+    locator: USB Type C產品清單
+    published_date: null
+    publisher: 建舜電子製造股份有限公司
+    quote_check: found
+    title: USB Type C產品介紹
+    url: https://www.jem.com.tw/Product.aspx?BigCatID=c815d73f-85eb-4da8-8ead-75186b4f6f44&CatID=bd2be094-1125-46ad-b06a-0e0ec327f776
+  tw.3322#e6:
+    locator: MCIO產品清單
+    published_date: null
+    publisher: 建舜電子製造股份有限公司
+    quote_check: found
+    title: MCIO Cable產品介紹
+    url: https://www.jem.com.tw/Product.aspx?BigCatID=c815d73f-85eb-4da8-8ead-75186b4f6f44&CatID=c71c7e47-6cd8-49ae-931d-0bcd0ab1afaf
+  tw.3322#e7:
+    locator: SlimSAS產品清單
+    published_date: null
+    publisher: 建舜電子製造股份有限公司
+    quote_check: found
+    title: SlimSAS Cable產品介紹
+    url: https://www.jem.com.tw/Product.aspx?BigCatID=c815d73f-85eb-4da8-8ead-75186b4f6f44&CatID=7e3560a9-4d26-4eaa-964a-82ca7e46adf9
+  tw.3322#e8:
+    locator: 第16頁，主要產品與服務
+    published_date: '2026-08-06'
+    publisher: 建舜電子製造股份有限公司
+    quote_check: found
+    title: 2025年永續報告書
+    url: https://www.jem.com.tw/Webfiles/e6a2b724-3867-4b1f-b098-73e988c44017.pdf
+  tw.3322#e9:
+    locator: Medical Cable
+    published_date: null
+    publisher: 建舜電子製造股份有限公司
+    quote_check: found
+    title: 產品介紹
+    url: https://www.jem.com.tw/Product_all.aspx

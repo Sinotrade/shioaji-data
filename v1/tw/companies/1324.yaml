@@ -8,12 +8,87 @@ industry:
   l0_code: '03'
   l0_name: 塑膠工業
   l0_name_en: Plastics
-primary_chain_position: unknown
+  l1: materials
+  l1_name: 原物料
+  l1_name_en: Materials
+  l2: mat.other
+  l2_name: 其他原物料
+  l2_name_en: Other Materials
+  l3: matl.packaging
+  l3_name: 包裝材料與容器
+  l3_name_en: Packaging & Containers
+chain: chain.petrochem
+chain_stage:
+  agreement: both
+  also: []
+  reason: 主要業務為膠帶製造加工及買賣，以塑膠薄膜等基材塗膠製成膠帶，屬下游加工。
+  stage: downstream
+  stage_name: 塑膠、纖維與加工
+  tier: downstream
+primary_chain_position: downstream
+summary_short: 研發、製造與銷售包裝、絕緣、遮蔽及雙面固定用途膠帶。
+summary_long: 地球以各式膠帶的研發、製造與銷售為主，產品涵蓋包裝、電氣絕緣、遮蔽與雙面固定用途。OPP標準包裝膠帶採水性壓克力膠塗佈於聚丙烯薄膜，可用於封箱與捆紮。PVC絕緣膠帶供電工作業使用，免刀布紋膠帶則可手撕，應用於塗裝遮蔽、封箱與捆紮。另有皺紋紙遮蔽膠帶及以紙、泡棉等為基材的雙面膠帶。財報將膠帶製造加工及買賣列為單一應報導部門。
+segments:
+- evidence_ids:
+  - e7
+  id: seg_tape
+  name: 膠帶製造加工及買賣
+  period: '2025'
+  revenue_share_pct: null
 website: https://www.globetape.com
 tax_id: 07147916
 incorporated: '1964-12-08'
 listed: '2000-09-11'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-25'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1324#e1:
+    locator: 關於地球公司
+    published_date: null
+    publisher: 地球綜合工業股份有限公司
+    quote_check: found
+    title: 地球綜合工業股份有限公司官網
+    url: https://www.globetape.com/
+  tw.1324#e2:
+    locator: 標準包裝膠帶產品說明
+    published_date: null
+    publisher: 地球綜合工業股份有限公司
+    quote_check: found
+    title: 標準包裝膠帶
+    url: https://www.globetape.com/products/general-packaging-tape
+  tw.1324#e3:
+    locator: PVC絕緣膠帶產品說明
+    published_date: null
+    publisher: 地球綜合工業股份有限公司
+    quote_check: found
+    title: PVC絕緣膠帶
+    url: https://www.globetape.com/products/pvc-tapes/electrical-tape
+  tw.1324#e4:
+    locator: 免刀布紋膠帶產品說明
+    published_date: null
+    publisher: 地球綜合工業股份有限公司
+    quote_check: found
+    title: 免刀布紋膠帶
+    url: https://www.globetape.com/products/pvc-tapes/easy-tear-embossed-tape
+  tw.1324#e5:
+    locator: 皺紋紙遮蔽膠帶產品說明
+    published_date: null
+    publisher: 地球綜合工業股份有限公司
+    quote_check: found
+    title: 皺紋紙遮蔽膠帶
+    url: https://www.globetape.com/products/others-tape/masking-tape
+  tw.1324#e6:
+    locator: 雙面膠帶產品說明
+    published_date: null
+    publisher: 地球綜合工業股份有限公司
+    quote_check: found
+    title: 雙面膠帶
+    url: https://www.globetape.com/products/others-tape/double-sided-tape
+  tw.1324#e7:
+    locator: 財報第59頁，十四、部門資訊
+    published_date: null
+    publisher: FinancialFilings
+    quote_check: unreachable
+    title: 114年度及113年度合併財務報告轉載
+    url: https://financialfilings.com/filings/globe-tape-1324/annual-report/2026/33229029/

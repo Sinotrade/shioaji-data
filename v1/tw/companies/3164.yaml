@@ -8,12 +8,144 @@ industry:
   l0_code: '22'
   l0_name: 生技醫療業
   l0_name_en: Biotechnology and Medical Care
-primary_chain_position: unknown
+  l1: consumer
+  l1_name: 消費
+  l1_name_en: Consumer
+  l2: cons.staples
+  l2_name: 民生消費
+  l2_name_en: Consumer Staples
+  l3: food.processing
+  l3_name: 食品加工
+  l3_name_en: Food Processing
+chain: chain.biotech
+chain_stage:
+  agreement: both
+  also:
+  - stage: rnd
+    stage_name: 研發與原料
+    tier: upstream
+  reason: 主要營收來自功能性益生菌保健品，提供菌粉製造與代工，並涵蓋菌種研發及原料銷售。
+  stage: manufacturing
+  stage_name: 製造與代工
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 研發、製造及銷售功能性益生菌，提供菌粉與保健品代工服務。
+summary_long: 景岳從事功能性益生菌的研發、製造與銷售，提供益生菌粉及客製化保健品代工服務。2025年合併營收中，輔助調節過敏體質乳酸菌產品占44%、牙齒保健產品占18%、腸胃道保健益生菌產品占12%、不易形成體脂肪產品占2%，其餘24%包含奶粉、其他乳酸菌產品及原料銷售。主要產品包括樂亦康益生菌膠囊、保亦康乳酸菌口含錠、景岳樂亦纖263乳酸菌膠囊及固醣樂ADR-1益生菌膠囊。另持有景岳生物科技(中國)有限公司85%股權。
+segments:
+- evidence_ids:
+  - E2
+  id: S1
+  name: 輔助調節過敏體質乳酸菌產品
+  period: '2025'
+  revenue_share_pct: 44
+- evidence_ids:
+  - E2
+  id: S2
+  name: 腸胃道保健益生菌產品
+  period: '2025'
+  revenue_share_pct: 12
+- evidence_ids:
+  - E2
+  id: S3
+  name: 不易形成體脂肪產品
+  period: '2025'
+  revenue_share_pct: 2
+- evidence_ids:
+  - E2
+  id: S4
+  name: 牙齒保健產品
+  period: '2025'
+  revenue_share_pct: 18
+- evidence_ids:
+  - E2
+  id: S5
+  name: 其他：奶粉、其他乳酸菌產品及原料銷售
+  period: '2025'
+  revenue_share_pct: 24
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股85%的中國子公司
+    details:
+    - 持股85%的中國子公司
+    edge: e2d02dbe592bf
+    evidence_level: primary
+    id: org.genmont-biotech-china
+    name: 景岳生物科技(中國)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.genmont.com.tw
 tax_id: '12715847'
 incorporated: '2000-12-06'
 listed: '2010-03-22'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3164#E1:
+    locator: 第43頁，肆、營運概況／業務範圍
+    published_date: '2026-04-29'
+    publisher: 景岳生物科技股份有限公司
+    quote_check: found
+    title: 景岳生物科技股份有限公司一一四年度年報
+    url: https://en.genmont.com.tw/uploadfiles/421/%E5%88%A9%E5%AE%B3%E9%97%9C%E4%BF%82%E4%BA%BA/%E5%85%AC%E5%8F%B8%E5%B9%B4%E5%A0%B1/2025.pdf
+  tw.3164#E2:
+    locator: 第43頁，營業比重，114年合併營收
+    published_date: '2026-04-29'
+    publisher: 景岳生物科技股份有限公司
+    quote_check: found
+    title: 景岳生物科技股份有限公司一一四年度年報
+    url: https://en.genmont.com.tw/uploadfiles/421/%E5%88%A9%E5%AE%B3%E9%97%9C%E4%BF%82%E4%BA%BA/%E5%85%AC%E5%8F%B8%E5%B9%B4%E5%A0%B1/2025.pdf
+  tw.3164#E3:
+    locator: 景岳生物科技股份有限公司【景岳集團總部】
+    published_date: null
+    publisher: 景岳生物科技股份有限公司
+    quote_check: found
+    title: 認識景岳
+    url: https://www.genmont.com.tw/list/about-genmont.htm
+  tw.3164#E4:
+    locator: 產品敘述／品名、商標名及保健功效成分
+    published_date: null
+    publisher: 景岳生物科技股份有限公司
+    quote_check: found
+    title: 樂亦康
+    url: https://www.genmont.com.tw/en-lac-apf-probiotic-capsules.html
+  tw.3164#E5:
+    locator: 產品敘述／品名及商標名
+    published_date: null
+    publisher: 景岳生物科技股份有限公司
+    quote_check: found
+    title: 保亦康
+    url: https://www.genmont.com.tw/dental-health-probiotics.html
+  tw.3164#E6:
+    locator: 產品介紹／健康食品標示
+    published_date: null
+    publisher: 景岳生物科技股份有限公司
+    quote_check: found
+    title: 保亦康
+    url: https://www.genmont.com.tw/dental-health-probiotics.html
+  tw.3164#E7:
+    locator: 產品敘述／品名、商標名及保健功效成分含量
+    published_date: null
+    publisher: 景岳生物科技股份有限公司
+    quote_check: found
+    title: 景岳樂亦纖263乳酸菌膠囊
+    url: https://www.genmont.com.tw/show-263-1515479472.html
+  tw.3164#E8:
+    locator: 產品敘述／品名、商標名及保健功效成分含量
+    published_date: null
+    publisher: 景岳生物科技股份有限公司
+    quote_check: found
+    title: 固醣樂
+    url: https://www.genmont.com.tw/adr-1.html
+  tw.3164#E9:
+    locator: 第68頁，關係企業董事、監察人及總經理資料
+    published_date: '2026-04-29'
+    publisher: 景岳生物科技股份有限公司
+    quote_check: found
+    title: 景岳生物科技股份有限公司一一四年度年報
+    url: https://en.genmont.com.tw/uploadfiles/421/%E5%88%A9%E5%AE%B3%E9%97%9C%E4%BF%82%E4%BA%BA/%E5%85%AC%E5%8F%B8%E5%B9%B4%E5%A0%B1/2025.pdf

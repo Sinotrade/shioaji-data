@@ -8,12 +8,185 @@ industry:
   l0_code: '30'
   l0_name: 資訊服務業
   l0_name_en: Information Service
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.software
+  l2_name: 軟體與資訊服務
+  l2_name_en: Software & IT Services
+  l3: sw.enterprise
+  l3_name: 企業軟體
+  l3_name_en: Enterprise Software
+primary_chain_position: not_applicable
+summary_short: 以企業文件辨識、協同管理軟體與系統服務為主，另有通路業務。
+summary_long: 力新以企業軟體與數位化服務為主要業務，2025年軟體暨系統服務收入占53.6%，通路業務占46.4%。產品包含GenAI-OCR企業單據辨識、智慧證件辨識，以及Pro OA的ISO文件管理、BPM電子簽核與HR人資考勤系統，涵蓋資料擷取、證件辨識及行政流程管理。直接子公司包括Gold Gleam Holdings Limited、網星資訊與力新創新科技，另透過海外控股架構持有力新西安及牙得安南寧。
+segments:
+- evidence_ids:
+  - e1
+  id: software_systems
+  name: 軟體暨系統服務收入
+  period: '2025'
+  revenue_share_pct: 53.6
+- evidence_ids:
+  - e1
+  id: distribution
+  name: 通路業務收入
+  period: '2025'
+  revenue_share_pct: 46.4
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的海外控股子公司
+    details:
+    - 直接持股100%的海外控股子公司
+    edge: e1c022c968baa
+    evidence_level: primary
+    id: org.gold-gleam-holdings-limited
+    name: Gold Gleam Holdings Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過Gold Gleam間接持股100%的子公司
+    details:
+    - 透過Gold Gleam間接持股100%的子公司
+    edge: ee3ceba641e94
+    evidence_level: primary
+    id: org.the-alchemy-asia-holdings-limited
+    name: The Alchemy Asia Holdings Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的子公司，原名台鋼資通訊工程
+    details:
+    - 直接持股100%的子公司，原名台鋼資通訊工程
+    edge: ee48520636628
+    evidence_level: primary
+    id: org.力新創新科技股份有限公司
+    name: 力新創新科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過Gold Gleam間接持股100%的子公司
+    details:
+    - 透過Gold Gleam間接持股100%的子公司
+    edge: e50e1373d9077
+    evidence_level: primary
+    id: org.力新國際-西安-科技有限公司
+    name: 力新國際(西安)科技有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過Gold Gleam及The Alchemy Asia間接持股100%的子公司
+    details:
+    - 透過Gold Gleam及The Alchemy Asia間接持股100%的子公司
+    edge: ed767e04c725d
+    evidence_level: primary
+    id: org.牙得安-南寧-生物科技有限公司
+    name: 牙得安(南寧)生物科技有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股99.92%的子公司
+    details:
+    - 直接持股99.92%的子公司
+    edge: e5622858a64c8
+    evidence_level: primary
+    id: org.網星資訊股份有限公司
+    name: 網星資訊股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.newsoft.com.tw
 tax_id: '22645531'
 incorporated: '1987-09-30'
 listed: '2000-10-18'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.5202#e1:
+    locator: 印刷頁90，營運概況／業務範圍／營業比重；PDF第94頁
+    published_date: '2026-03-23'
+    publisher: 力新國際科技股份有限公司
+    quote_check: not_found
+    title: 力新國際科技股份有限公司114年度年報
+    url: https://www.newsoft.com.tw/wp-content/uploads/2026/06/114%E5%B9%B4%E5%B9%B4%E5%A0%B1.pdf
+  tw.5202#e2:
+    locator: 產品頁標題與功能介紹
+    published_date: null
+    publisher: 力新國際科技股份有限公司
+    quote_check: found
+    title: GenAI-OCR企業單據辨識系統
+    url: https://www.newsoft.com.tw/ocr-taiwan-invoice/
+  tw.5202#e3:
+    locator: 產品頁標題
+    published_date: null
+    publisher: 力新國際科技股份有限公司
+    quote_check: found
+    title: 智慧證件辨識服務系統
+    url: https://www.newsoft.com.tw/ocr-id-recognition/
+  tw.5202#e4:
+    locator: 產品頁主標題與副標題
+    published_date: null
+    publisher: 力新國際科技股份有限公司
+    quote_check: found
+    title: Pro OA ISO文件管理系統
+    url: https://www.newsoft.com.tw/iso-dms-system/
+  tw.5202#e5:
+    locator: 產品頁功能介紹
+    published_date: null
+    publisher: 力新國際科技股份有限公司
+    quote_check: found
+    title: Pro OA BPM電子簽核系統
+    url: https://www.newsoft.com.tw/bpm-system/
+  tw.5202#e6:
+    locator: 產品頁功能介紹
+    published_date: null
+    publisher: 力新國際科技股份有限公司
+    quote_check: found
+    title: Pro OA HR人資考勤系統
+    url: https://www.newsoft.com.tw/attendance-system/
+  tw.5202#e7:
+    locator: 印刷頁112，關係企業組織圖第一層；PDF第116頁
+    published_date: '2026-03-23'
+    publisher: 力新國際科技股份有限公司
+    quote_check: not_found
+    title: 力新國際科技股份有限公司114年度年報
+    url: https://www.newsoft.com.tw/wp-content/uploads/2026/06/114%E5%B9%B4%E5%B9%B4%E5%A0%B1.pdf
+  tw.5202#e8:
+    locator: 印刷頁112，關係企業組織圖Gold Gleam下層及The Alchemy Asia下層；PDF第116頁
+    published_date: '2026-03-23'
+    publisher: 力新國際科技股份有限公司
+    quote_check: found
+    title: 力新國際科技股份有限公司114年度年報
+    url: https://www.newsoft.com.tw/wp-content/uploads/2026/06/114%E5%B9%B4%E5%B9%B4%E5%A0%B1.pdf
+  tw.5202#e9:
+    locator: 印刷頁113，關係企業基本資料表註；PDF第117頁
+    published_date: '2026-03-23'
+    publisher: 力新國際科技股份有限公司
+    quote_check: found
+    title: 力新國際科技股份有限公司114年度年報
+    url: https://www.newsoft.com.tw/wp-content/uploads/2026/06/114%E5%B9%B4%E5%B9%B4%E5%A0%B1.pdf

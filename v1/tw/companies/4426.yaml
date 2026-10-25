@@ -8,12 +8,155 @@ industry:
   l0_code: '04'
   l0_name: 紡織纖維
   l0_name_en: Textiles
-primary_chain_position: unknown
+  l1: materials
+  l1_name: 原物料
+  l1_name_en: Materials
+  l2: mat.other
+  l2_name: 其他原物料
+  l2_name_en: Other Materials
+  l3: matl.textile_fiber
+  l3_name: 紡織纖維與機能布料
+  l3_name_en: Textiles, Fibers & Functional Fabrics
+chain: chain.textile
+chain_stage:
+  agreement: both
+  also:
+  - stage: fiber
+    stage_name: 纖維與紗
+    tier: upstream
+  reason: 針織網布占營收96.98%，以織布為主，另有染整加工及盤頭紗買賣。
+  stage: fabric
+  stage_name: 織布與染整
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 製造針織網布與3D立體織物，供運動鞋材等用途。
+summary_long: 利勤主要製造針織網布與3D立體織物，2024年度針織網布占營收96.98%，其他業務占3.02%，包含染整加工及盤頭紗、原物料買賣。公司立體織物具有透氣、舒適、輕量及避震特性，厚度可由1毫米至25毫米，除鞋材外，也可應用於袋材、帽材、內衣、成衣、床墊、運動器材、醫療及汽車材料。依該年度年報，越南利勤責任有限公司與立豐華股份有限公司均為公司子公司。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_fabric
+  name: 針織網布
+  period: '2024'
+  revenue_share_pct: 96.98
+- evidence_ids:
+  - e1
+  - e2
+  id: seg_other
+  name: 其他（染整加工、盤頭紗及原物料買賣）
+  period: '2024'
+  revenue_share_pct: 3.02
+relations:
+  subsidiaries:
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司
+    details:
+    - 子公司
+    edge: e24a9cca44522
+    evidence_level: primary
+    id: org.occupation-north-trading-co-ltd
+    name: Occupation North Trading Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司
+    details:
+    - 子公司
+    edge: e408014d28a75
+    evidence_level: primary
+    id: org.time-leader-investments-ltd
+    name: Time Leader Investments Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司
+    details:
+    - 子公司
+    edge: e98f4dc2d6c16
+    evidence_level: primary
+    id: org.立豐華股份有限公司
+    name: 立豐華股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 越南子公司
+    details:
+    - 越南子公司
+    edge: e811270aed050
+    evidence_level: primary
+    id: org.越南利勤責任有限公司
+    name: 越南利勤責任有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.li-cheng.com.tw
 tax_id: '16229261'
 incorporated: '1997-09-26'
 listed: '2011-12-16'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4426#e1:
+    locator: 印刷第42頁，營業比重
+    published_date: '2025-04-30'
+    publisher: 利勤實業股份有限公司
+    quote_check: found
+    title: 利勤實業股份有限公司113年度年報
+    url: https://www.li-cheng.com.tw/storage/upload/ab/file/2025-10-09/JI5d36UUSjRE6waq1mER8FWAFlqPiTPEnUfBiFkk.pdf
+  tw.4426#e2:
+    locator: 印刷第42頁，營業比重附註
+    published_date: '2025-04-30'
+    publisher: 利勤實業股份有限公司
+    quote_check: found
+    title: 利勤實業股份有限公司113年度年報
+    url: https://www.li-cheng.com.tw/storage/upload/ab/file/2025-10-09/JI5d36UUSjRE6waq1mER8FWAFlqPiTPEnUfBiFkk.pdf
+  tw.4426#e3:
+    locator: 公司簡介，產品厚度與應用
+    published_date: null
+    publisher: 利勤實業股份有限公司
+    quote_check: found
+    title: 利勤實業｜公司簡介
+    url: https://www.li-cheng.com.tw/tw/about
+  tw.4426#e4:
+    locator: 公司簡介，產品特性
+    published_date: null
+    publisher: 利勤實業股份有限公司
+    quote_check: found
+    title: 利勤實業｜公司簡介
+    url: https://www.li-cheng.com.tw/tw/about
+  tw.4426#e5:
+    locator: 印刷第44頁，產業上、中、下游之關聯性
+    published_date: '2025-04-30'
+    publisher: 利勤實業股份有限公司
+    quote_check: found
+    title: 利勤實業股份有限公司113年度年報
+    url: https://www.li-cheng.com.tw/storage/upload/ab/file/2025-10-09/JI5d36UUSjRE6waq1mER8FWAFlqPiTPEnUfBiFkk.pdf
+  tw.4426#e6:
+    locator: 印刷第171頁，個體財務報告附註七、關係人交易
+    published_date: '2025-04-30'
+    publisher: 利勤實業股份有限公司
+    quote_check: found
+    title: 利勤實業股份有限公司113年度年報
+    url: https://www.li-cheng.com.tw/storage/upload/ab/file/2025-10-09/JI5d36UUSjRE6waq1mER8FWAFlqPiTPEnUfBiFkk.pdf
+  tw.4426#e7:
+    locator: 113年11月8日審計委員會議案
+    published_date: null
+    publisher: 利勤實業股份有限公司
+    quote_check: found
+    title: 利勤實業｜功能性委員會
+    url: https://www.li-cheng.com.tw/committee

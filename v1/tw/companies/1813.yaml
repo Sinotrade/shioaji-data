@@ -8,12 +8,129 @@ industry:
   l0_code: '22'
   l0_name: 生技醫療業
   l0_name_en: Biotechnology and Medical Care
-primary_chain_position: unknown
+  l1: health
+  l1_name: 醫療保健
+  l1_name_en: Healthcare
+  l2: health.devices
+  l2_name: 醫療器材與服務
+  l2_name_en: Medical Devices & Services
+  l3: med.devices
+  l3_name: 醫療器材
+  l3_name_en: Medical Devices
+chain: chain.biotech
+chain_stage:
+  agreement: both
+  also: []
+  reason: 本業為視力矯正鏡片製造與加工，另提供數位車削技術及軟體授權。
+  stage: manufacturing
+  stage_name: 製造與代工
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 製造與加工視力矯正用PC光學鏡片，並提供功能性鏡片及技術授權。
+summary_long: 寶利徠以視力矯正用PC光學鏡片製造與加工為本業，產品包括球面、非球面、近視、老花與漸進多焦點鏡片，另提供偏光、變色、抗藍光、鍍膜產品及Thin-Tech狐彎軟體授權。2025年營收由白片7.01%、加膜片26.95%與其他66.04%組成。全資子公司THIN-TECH Lens Technologies, Inc.經營數位車削技術授權，持股80%的American Polylite, Inc.從事數位車削與鍍膜加工。
+segments:
+- evidence_ids:
+  - e4
+  id: white_lenses
+  name: 白片
+  period: '2025'
+  revenue_share_pct: 7.01
+- evidence_ids:
+  - e4
+  id: coated_lenses
+  name: 加膜片
+  period: '2025'
+  revenue_share_pct: 26.95
+- evidence_ids:
+  - e4
+  id: other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 66.04
+relations:
+  subsidiaries:
+  - as_of: '2026-08-05'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股80%子公司；數位車削與鍍膜加工
+    details:
+    - 持股80%子公司；數位車削與鍍膜加工
+    edge: e1cebf92eb0a7
+    evidence_level: primary
+    id: org.american-polylite
+    name: American Polylite, Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司；數位車削技術授權
+    details:
+    - 全資子公司；數位車削技術授權
+    edge: e65e62711ee01
+    evidence_level: primary
+    id: org.thin-tech-lens-technologies
+    name: THIN-TECH Lens Technologies, Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.gialens.com.tw
 tax_id: '84449952'
 incorporated: '1993-09-22'
 listed: '2009-08-04'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-25'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1813#e2:
+    locator: 第63頁，主要產品之重要用途
+    published_date: '2026-03-31'
+    publisher: 寶利徠光學科技股份有限公司
+    quote_check: not_found
+    title: 寶利徠光學科技股份有限公司一一四年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=1813&colorchg=1&filename=2025_1813_20260527F04.pdf&kind=F&step=9
+  tw.1813#e3:
+    locator: 第52頁，公司目前之商品項目
+    published_date: '2026-03-31'
+    publisher: 寶利徠光學科技股份有限公司
+    quote_check: not_found
+    title: 寶利徠光學科技股份有限公司一一四年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=1813&colorchg=1&filename=2025_1813_20260527F04.pdf&kind=F&step=9
+  tw.1813#e4:
+    locator: 第52頁，營業比重；前兩個數值欄為2025年度營業額及占比
+    published_date: '2026-03-31'
+    publisher: 寶利徠光學科技股份有限公司
+    quote_check: not_found
+    title: 寶利徠光學科技股份有限公司一一四年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=1813&colorchg=1&filename=2025_1813_20260527F04.pdf&kind=F&step=9
+  tw.1813#e5:
+    locator: 第48頁，2025年12月31日轉投資事業持股表；第74頁關係企業組織圖
+    published_date: '2026-03-31'
+    publisher: 寶利徠光學科技股份有限公司
+    quote_check: not_found
+    title: 寶利徠光學科技股份有限公司一一四年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=1813&colorchg=1&filename=2025_1813_20260527F04.pdf&kind=F&step=9
+  tw.1813#e6:
+    locator: 第71頁，轉投資事業及投資目的
+    published_date: '2026-03-31'
+    publisher: 寶利徠光學科技股份有限公司
+    quote_check: not_found
+    title: 寶利徠光學科技股份有限公司一一四年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=1813&colorchg=1&filename=2025_1813_20260527F04.pdf&kind=F&step=9
+  tw.1813#e7:
+    locator: 第71頁，轉投資事業及投資目的
+    published_date: '2026-03-31'
+    publisher: 寶利徠光學科技股份有限公司
+    quote_check: not_found
+    title: 寶利徠光學科技股份有限公司一一四年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=1813&colorchg=1&filename=2025_1813_20260527F04.pdf&kind=F&step=9
+  tw.1813#e8:
+    locator: 公告第2項，被背書保證公司及關係
+    published_date: '2026-08-05'
+    publisher: 鉅亨網／寶利徠重大訊息
+    quote_check: found
+    title: 寶利徠：依公開發行公司資金貸與及背書保證處理準則第二十五條第一項第四款公告
+    url: https://news.cnyes.com/news/print/6561579

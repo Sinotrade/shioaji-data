@@ -8,12 +8,166 @@ industry:
   l0_code: '35'
   l0_name: 綠能環保
   l0_name_en: Green Energy and Environmental Services
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.environment
+  l2_name: 環保服務
+  l2_name_en: Environmental Services
+  l3: env.water
+  l3_name: 水處理
+  l3_name_en: Water Treatment
+primary_chain_position: not_applicable
+summary_short: 以工業廢水代處理為主，並提供廢液回收、藥劑及廢棄物清除服務。
+summary_long: 平和環保以工業廢（污）水代處理及廢酸洗液回收再利用為主，處理水系涵蓋一般、鉻系、鎳系及氨氮，並提供廢水代操作。2026年截至第2季，集團產品收入比重為廢水代處理72%、藥劑及耗材9%、廢棄物清除6%、其他13%。子公司平和材料從事高濃度氨氮廢水回收、氯化銨製造及廢酸鹼液再利用；鳳嘉製造及銷售廢水處理藥劑，並買賣基本化學品。清境及萬境提供廢棄物清除服務。
+segments:
+- evidence_ids:
+  - e2
+  - e3
+  id: seg_water
+  name: 廢（污）水代處理
+  period: 2026年截至第2季（115YQ2）
+  revenue_share_pct: 72
+- evidence_ids:
+  - e2
+  - e3
+  id: seg_chemicals
+  name: 廢水處理藥劑及耗材
+  period: 2026年截至第2季（115YQ2）
+  revenue_share_pct: 9
+- evidence_ids:
+  - e2
+  - e3
+  id: seg_waste
+  name: 廢棄物清除
+  period: 2026年截至第2季（115YQ2）
+  revenue_share_pct: 6
+- evidence_ids:
+  - e2
+  - e3
+  id: seg_other
+  name: 其他
+  period: 2026年截至第2季（115YQ2）
+  revenue_share_pct: 13
+relations:
+  subsidiaries:
+  - as_of: '2026-09-24'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股98.33%的子公司
+    details:
+    - 持股98.33%的子公司
+    edge: e95f70bc1869c
+    evidence_level: primary
+    id: org.平和材料科技股份有限公司
+    name: 平和材料科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-09-24'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股100%的子公司
+    details:
+    - 持股100%的子公司
+    edge: ef16b402c590b
+    evidence_level: primary
+    id: org.清境展業股份有限公司
+    name: 清境展業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-09-24'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股100%的子公司
+    details:
+    - 持股100%的子公司
+    edge: e88975030a8bc
+    evidence_level: primary
+    id: org.萬境展業股份有限公司
+    name: 萬境展業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-09-24'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股100%的子公司
+    details:
+    - 持股100%的子公司
+    edge: ea02451a0cee1
+    evidence_level: primary
+    id: org.鳳嘉實業股份有限公司
+    name: 鳳嘉實業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.pinghounion.com.tw
 tax_id: '28371018'
 incorporated: '2006-08-01'
 listed: '2024-05-17'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6771#e2:
+    locator: 第17頁，113Y~115YQ2-集團產品別比重，圖例
+    published_date: '2026-09-24'
+    publisher: 平和環保科技股份有限公司
+    quote_check: unreachable
+    title: 2026年9月24日法人說明會簡報
+    url: https://mopsov.twse.com.tw/nas/STR/677120260924M001.pdf
+  tw.6771#e3:
+    locator: 第17頁，115YQ2產品比重圓餅圖，依圖例順序
+    published_date: '2026-09-24'
+    publisher: 平和環保科技股份有限公司
+    quote_check: found
+    title: 2026年9月24日法人說明會簡報
+    url: https://mopsov.twse.com.tw/nas/STR/677120260924M001.pdf
+  tw.6771#e4:
+    locator: 主要服務項目第1及第3項
+    published_date: null
+    publisher: 平和環保科技股份有限公司
+    quote_check: found
+    title: 平和環保產品及服務項目
+    url: https://www.pinghounion.com.tw/page/about/index.aspx?kind=10&lang=TW
+  tw.6771#e5:
+    locator: 主要服務項目第2項
+    published_date: null
+    publisher: 平和環保科技股份有限公司
+    quote_check: found
+    title: 平和環保產品及服務項目
+    url: https://www.pinghounion.com.tw/page/about/index.aspx?kind=10&lang=TW
+  tw.6771#e6:
+    locator: 平和材料，主要服務項目
+    published_date: null
+    publisher: 平和環保科技股份有限公司
+    quote_check: found
+    title: 平和材料科技股份有限公司產品及服務項目
+    url: https://www.pinghounion.com.tw/page/about/index.aspx?kind=41&lang=TW
+  tw.6771#e7:
+    locator: 清境及萬境，主要服務項目
+    published_date: null
+    publisher: 平和環保科技股份有限公司
+    quote_check: found
+    title: 清境及萬境展業股份有限公司產品及服務項目
+    url: https://www.pinghounion.com.tw/page/about/index.aspx?kind=42&lang=TW
+  tw.6771#e8:
+    locator: 鳳嘉，主要服務項目
+    published_date: null
+    publisher: 平和環保科技股份有限公司
+    quote_check: found
+    title: 鳳嘉實業股份有限公司產品及服務項目
+    url: https://www.pinghounion.com.tw/page/about/index.aspx?kind=43&lang=TW
+  tw.6771#e9:
+    locator: 第9頁，平和環保科技股份有限公司關係企業組織圖及營運項目，下層四家子公司與持股比例
+    published_date: '2026-09-24'
+    publisher: 平和環保科技股份有限公司
+    quote_check: found
+    title: 2026年9月24日法人說明會簡報
+    url: https://mopsov.twse.com.tw/nas/STR/677120260924M001.pdf

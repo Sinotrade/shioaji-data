@@ -8,7 +8,26 @@ industry:
   l0_code: '14'
   l0_name: 建材營造業
   l0_name_en: Building Material and Construction
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.construction
+  l2_name: 營建與工程
+  l2_name_en: Engineering & Construction
+  l3: cons.engineering
+  l3_name: 工程與統包
+  l3_name_en: Engineering & EPC
+primary_chain_position: midstream
+summary_short: 承攬土木、建築及統包工程，以營建工程收入為主要營收。
+summary_long: 雙喜營造以承攬國內土木與建築工程為主要業務，2025年度營建工程收入約新台幣21.77億元，占營業收入100%，應報導營運部門僅土木工程部。建築工程涵蓋辦公大樓、旅館與學校建築，土木工程包括一般土木及土地重劃。統包及其他工程涵蓋社會住宅、區段徵收統包與零星修繕，另提供統包規劃、設計及營建管理。公司官網亦列有都市更新申辦、諮詢、整合、規劃、合建與委建服務。
+segments:
+- evidence_ids:
+  - e1
+  - e2
+  id: seg_engineering
+  name: 營建工程
+  period: '2025'
+  revenue_share_pct: 100
 relations:
   transactions:
   - amount: 新臺幣33.88億元
@@ -36,7 +55,63 @@ website: http://www.sunsea.com.tw/
 tax_id: '47254476'
 incorporated: '1982-01-14'
 listed: '1999-03-23'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-25'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.5516#e1:
+    locator: 第38頁，十四、部門資訊
+    published_date: null
+    publisher: 雙喜營造股份有限公司
+    quote_check: found
+    title: 雙喜營造股份有限公司114年度及113年度財務報告暨會計師查核報告
+    url: https://www.sunsea.com.tw/_files/ugd/13b1a6_e36a5fc37a5c4136ba24b0aa522a9145.pdf
+  tw.5516#e2:
+    locator: 第5頁，綜合損益表；單位為新台幣千元，欄位依序為114年度與113年度金額及百分比
+    published_date: null
+    publisher: 雙喜營造股份有限公司
+    quote_check: found
+    title: 雙喜營造股份有限公司114年度及113年度財務報告暨會計師查核報告
+    url: https://www.sunsea.com.tw/_files/ugd/13b1a6_e36a5fc37a5c4136ba24b0aa522a9145.pdf
+  tw.5516#e3:
+    locator: 第42頁，肆、營運概況，一、業務內容
+    published_date: '2025-04-30'
+    publisher: 雙喜營造股份有限公司
+    quote_check: found
+    title: 雙喜營造股份有限公司113年度年報
+    url: https://www.sunsea.com.tw/_files/ugd/13b1a6_244ead28693844b49e680b659b44864c.pdf
+  tw.5516#e4:
+    locator: 第42頁，肆、營運概況，一、業務內容
+    published_date: '2025-04-30'
+    publisher: 雙喜營造股份有限公司
+    quote_check: found
+    title: 雙喜營造股份有限公司113年度年報
+    url: https://www.sunsea.com.tw/_files/ugd/13b1a6_244ead28693844b49e680b659b44864c.pdf
+  tw.5516#e5:
+    locator: 第42頁，肆、營運概況，一、業務內容
+    published_date: '2025-04-30'
+    publisher: 雙喜營造股份有限公司
+    quote_check: found
+    title: 雙喜營造股份有限公司113年度年報
+    url: https://www.sunsea.com.tw/_files/ugd/13b1a6_244ead28693844b49e680b659b44864c.pdf
+  tw.5516#e6:
+    locator: 服務項目
+    published_date: null
+    publisher: 雙喜營造股份有限公司
+    quote_check: found
+    title: 服務項目
+    url: https://www.sunsea.com.tw/服務項目
+  tw.5516#e7:
+    locator: 第42頁，產業上、中、下游之關聯性
+    published_date: '2025-04-30'
+    publisher: 雙喜營造股份有限公司
+    quote_check: found
+    title: 雙喜營造股份有限公司113年度年報
+    url: https://www.sunsea.com.tw/_files/ugd/13b1a6_244ead28693844b49e680b659b44864c.pdf
+  tw.5516#e8:
+    locator: 服務項目
+    published_date: null
+    publisher: 雙喜營造股份有限公司
+    quote_check: found
+    title: 服務項目
+    url: https://www.sunsea.com.tw/服務項目

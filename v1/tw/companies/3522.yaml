@@ -8,12 +8,191 @@ industry:
   l0_code: '16'
   l0_name: 觀光餐旅
   l0_name_en: Tourism and Hospitality
-primary_chain_position: unknown
+  l1: consumer
+  l1_name: 消費
+  l1_name_en: Consumer
+  l2: cons.discretionary
+  l2_name: 非必需消費
+  l2_name_en: Consumer Discretionary
+  l3: tourism.restaurant
+  l3_name: 餐飲
+  l3_name_en: Restaurants
+primary_chain_position: not_applicable
+summary_short: 以婚宴、宴席及品牌餐廳經營為主，另有和牛食材貿易與旅遊服務。
+summary_long: 御嵿國際以餐飲業務為核心，2026年第一季財報揭露的收入類別包括餐飲產品、食材銷售及旅遊服務，其中餐飲產品為最大來源。集團透過晶宴、頂鮮提供企業尾牙春酒、婚宴及大型宴席服務，另以燒肉牛匠新經營高端日式燒肉，鴨覓則結合烤鴨、港式點心與台式小吃。食材貿易事業晶強和牛引進日本和牛，形成餐飲以外的商品銷售業務。旅遊服務由子公司御義旅行社提供，以日本旅遊及企業員工旅遊為主要服務內容。
+segments:
+- evidence_ids:
+  - e_revenue
+  id: seg_restaurant
+  name: 餐飲產品
+  period: 2026-Q1
+  revenue_share_pct: null
+- evidence_ids:
+  - e_ingredients_revenue
+  id: seg_ingredients
+  name: 食材銷售
+  period: 2026-Q1
+  revenue_share_pct: null
+- evidence_ids:
+  - e_travel_revenue
+  id: seg_travel
+  name: 旅遊服務收入
+  period: 2026-Q1
+  revenue_share_pct: null
+relations:
+  subsidiaries:
+  - as_of: '2026-10-24'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 旅行社子公司
+    details:
+    - 旅行社子公司
+    edge: e1539633ac076
+    evidence_level: primary
+    id: org.御義旅行社股份有限公司
+    name: 御義旅行社股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有之子公司
+    details:
+    - 直接持有之子公司
+    edge: e73c7dca9518c
+    evidence_level: primary
+    id: org.晶宴生活創意股份有限公司
+    name: 晶宴生活創意股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有之子公司
+    details:
+    - 直接持有之子公司
+    edge: e9b96bb60f27f
+    evidence_level: primary
+    id: org.頂鮮擔仔麵股份有限公司
+    name: 頂鮮擔仔麵股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有之子公司
+    details:
+    - 直接持有之子公司
+    edge: ef380e8d96ef9
+    evidence_level: primary
+    id: org.鼎勝祇園股份有限公司
+    name: 鼎勝祇園股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.toplusglobal.com
 tax_id: '12947467'
 incorporated: '2001-09-26'
 listed: '2007-10-15'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3522#e_banquet:
+    locator: 上半年營收穩健成長
+    published_date: '2026-08-12'
+    publisher: 御嵿國際股份有限公司
+    quote_check: found
+    title: 御嵿上半年營收續創新高　營業虧損明顯收斂 下半年獲利動能回升
+    url: https://toplusglobal.com/news/group/%E5%BE%A1%E5%B5%BF%E4%B8%8A%E5%8D%8A%E5%B9%B4%E7%87%9F%E6%94%B6%E7%BA%8C%E5%89%B5%E6%96%B0%E9%AB%98%E3%80%80%E7%87%9F%E6%A5%AD%E8%99%A7%E6%90%8D%E6%98%8E%E9%A1%AF%E6%94%B6%E6%96%82-%E4%B8%8B%E5%8D%8A/
+  tw.3522#e_duck:
+    locator: 鴨覓烤鴨餐廳
+    published_date: null
+    publisher: 御嵿國際股份有限公司
+    quote_check: found
+    title: 旗下品牌－時尚餐飲
+    url: https://toplusglobal.com/fashionable-dining/
+  tw.3522#e_identity:
+    locator: 集團概況
+    published_date: null
+    publisher: 御嵿國際股份有限公司
+    quote_check: found
+    title: 關於我們
+    url: https://toplusglobal.com/aboutus/
+  tw.3522#e_ingredients_revenue:
+    locator: 印刷頁26，收入細分表；115年第一季食材銷售30,677千元
+    published_date: null
+    publisher: 御嵿國際股份有限公司
+    quote_check: not_found
+    title: 民國115年及114年第一季合併財務報告
+    url: https://toplusglobal.com/wp-content/uploads/1389446_115Q1_%E5%90%88%E4%BD%B5_%E5%AE%8C%E7%A8%BF%E8%B2%A1%E5%A0%B1_IMSv1-%E9%9B%BB%E5%AD%90%E6%9B%B8_IMSv1.pdf
+  tw.3522#e_revenue:
+    locator: 印刷頁26，收入細分表；115年第一季餐飲產品433,052千元
+    published_date: null
+    publisher: 御嵿國際股份有限公司
+    quote_check: not_found
+    title: 民國115年及114年第一季合併財務報告
+    url: https://toplusglobal.com/wp-content/uploads/1389446_115Q1_%E5%90%88%E4%BD%B5_%E5%AE%8C%E7%A8%BF%E8%B2%A1%E5%A0%B1_IMSv1-%E9%9B%BB%E5%AD%90%E6%9B%B8_IMSv1.pdf
+  tw.3522#e_sub_dingxian:
+    locator: 印刷頁10，列入合併財務報告之子公司表；本公司持有頂鮮100%
+    published_date: null
+    publisher: 御嵿國際股份有限公司
+    quote_check: found
+    title: 民國115年及114年第一季合併財務報告
+    url: https://toplusglobal.com/wp-content/uploads/1389446_115Q1_%E5%90%88%E4%BD%B5_%E5%AE%8C%E7%A8%BF%E8%B2%A1%E5%A0%B1_IMSv1-%E9%9B%BB%E5%AD%90%E6%9B%B8_IMSv1.pdf
+  tw.3522#e_sub_gion:
+    locator: 印刷頁10，列入合併財務報告之子公司表；本公司持有鼎勝祇園100%
+    published_date: null
+    publisher: 御嵿國際股份有限公司
+    quote_check: found
+    title: 民國115年及114年第一季合併財務報告
+    url: https://toplusglobal.com/wp-content/uploads/1389446_115Q1_%E5%90%88%E4%BD%B5_%E5%AE%8C%E7%A8%BF%E8%B2%A1%E5%A0%B1_IMSv1-%E9%9B%BB%E5%AD%90%E6%9B%B8_IMSv1.pdf
+  tw.3522#e_sub_jingyan:
+    locator: 印刷頁10，列入合併財務報告之子公司表；本公司持有晶宴100%
+    published_date: null
+    publisher: 御嵿國際股份有限公司
+    quote_check: found
+    title: 民國115年及114年第一季合併財務報告
+    url: https://toplusglobal.com/wp-content/uploads/1389446_115Q1_%E5%90%88%E4%BD%B5_%E5%AE%8C%E7%A8%BF%E8%B2%A1%E5%A0%B1_IMSv1-%E9%9B%BB%E5%AD%90%E6%9B%B8_IMSv1.pdf
+  tw.3522#e_sub_travel:
+    locator: 集團概況
+    published_date: null
+    publisher: 御嵿國際股份有限公司
+    quote_check: found
+    title: 關於我們
+    url: https://toplusglobal.com/aboutus/
+  tw.3522#e_travel:
+    locator: 御義旅行社
+    published_date: null
+    publisher: 御嵿國際股份有限公司
+    quote_check: found
+    title: 旗下品牌－休閒旅遊
+    url: https://toplusglobal.com/traveling/
+  tw.3522#e_travel_revenue:
+    locator: 印刷頁26，收入細分表；115年第一季旅遊服務收入6,116千元
+    published_date: null
+    publisher: 御嵿國際股份有限公司
+    quote_check: found
+    title: 民國115年及114年第一季合併財務報告
+    url: https://toplusglobal.com/wp-content/uploads/1389446_115Q1_%E5%90%88%E4%BD%B5_%E5%AE%8C%E7%A8%BF%E8%B2%A1%E5%A0%B1_IMSv1-%E9%9B%BB%E5%AD%90%E6%9B%B8_IMSv1.pdf
+  tw.3522#e_wagyu:
+    locator: 晶強和牛貿易持續成長
+    published_date: '2026-07-10'
+    publisher: 御嵿國際股份有限公司
+    quote_check: found
+    title: 御嵿上半年合併營收6.84億元 較去年同期成長9.50%
+    url: https://toplusglobal.com/news/group/%E5%BE%A1%E5%B5%BF%E4%B8%8A%E5%8D%8A%E5%B9%B4%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B66-84%E5%84%84%E5%85%83-%E8%BC%83%E5%8E%BB%E5%B9%B4%E5%90%8C%E6%9C%9F%E6%88%90%E9%95%B79-50/
+  tw.3522#e_yakiniku:
+    locator: 燒肉牛匠新
+    published_date: null
+    publisher: 御嵿國際股份有限公司
+    quote_check: found
+    title: 旗下品牌－高端餐飲
+    url: https://toplusglobal.com/dining/

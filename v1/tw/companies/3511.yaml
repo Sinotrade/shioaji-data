@@ -8,12 +8,233 @@ industry:
   l0_code: '28'
   l0_name: 電子零組件業
   l0_name_en: Electronic Parts and Components
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.connector
+  l3_name: 連接器與線材
+  l3_name_en: Connectors & Cables
+primary_chain_position: midstream
+summary_short: 研發、製造及銷售連接器、線材與電子模組，以車用、工業及醫療應用為主。
+summary_long: 矽瑪主要研發、製造及銷售電子連接器、線材與電子模組，並提供線束組裝服務。2025年營收以車用、工業及醫療產品為主，占82.50%；消費及商用產品占9.50%，穿戴式產品占7.85%，其他占0.15%。公司亦布局AI伺服器用連接器、線材與模組，官網另列無人機與機器人專用線材及客製線束。2025年底持有同星科技59.35%股權，並直接及透過子公司合計持有矽瑪企業全部股權，深圳生產公司則為間接持有的子公司。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_auto_industrial_medical
+  name: 車用、工業及醫療產品
+  period: '2025'
+  revenue_share_pct: 82.5
+- evidence_ids:
+  - e3
+  id: seg_consumer_commercial
+  name: 消費及商用產品
+  period: '2025'
+  revenue_share_pct: 9.5
+- evidence_ids:
+  - e2
+  id: seg_wearable
+  name: 穿戴式產品
+  period: '2025'
+  revenue_share_pct: 7.85
+- evidence_ids:
+  - e3
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 0.15
+main_theme: theme.ai_server
+themes:
+- also: []
+  stage: components
+  theme: theme.ai_server
+  tier: midstream
+- also: []
+  stage: components
+  theme: theme.drone
+  tier: upstream
+- also: []
+  stage: components
+  theme: theme.robotics
+  tier: upstream
+relations:
+  parents:
+  - as_of: '2024-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 母公司
+    details:
+    - 母公司
+    edge: e064bac5748c8
+    evidence_level: primary
+    id: tw.2352
+    name: 佳世達
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 同星科技；持股59.35%
+    details:
+    - 同星科技；持股59.35%
+    edge: ebb3464114458
+    evidence_level: primary
+    id: org.action-star-technology
+    name: Action Star Technology Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有全部股權的子公司
+    details:
+    - 直接持有全部股權的子公司
+    edge: e59f9b69d8098
+    evidence_level: primary
+    id: org.aspire-asia
+    name: ASPIRE ASIA INC.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 矽瑪企業；直接及間接合計持有全部股權
+    details:
+    - 矽瑪企業；直接及間接合計持有全部股權
+    edge: ec57723b09406
+    evidence_level: primary
+    id: org.simula-company-limited
+    name: Simula Company Limited.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有全部股權的子公司
+    details:
+    - 直接持有全部股權的子公司
+    edge: e0ca97d2fb34f
+    evidence_level: primary
+    id: org.simula-technology-corp
+    name: Simula Technology Corp.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 深圳生產子公司；間接持有全部股權
+    details:
+    - 深圳生產子公司；間接持有全部股權
+    edge: e76dfee36eef1
+    evidence_level: primary
+    id: org.simula-technology-shenzhen
+    name: Simula Technology (ShenZhen) Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.simulatechnology.com
 tax_id: '80611545'
 incorporated: '2003-12-15'
 listed: '2009-02-16'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3511#e1:
+    locator: 印刷頁61，Main Business Activities
+    published_date: '2026-03-30'
+    publisher: 矽瑪科技股份有限公司
+    quote_check: found
+    title: SIMULA TECHNOLOGY INC. 2025 ANNUAL REPORT
+    url: https://simulatechnology.com/wp-content/uploads/%E7%9F%BD%E7%91%AA2026%E8%8B%B1%E6%96%87%E5%B9%B4%E5%A0%B1En_Final.pdf
+  tw.3511#e10:
+    locator: 印刷頁1，Research and Development Status
+    published_date: '2026-03-30'
+    publisher: 矽瑪科技股份有限公司
+    quote_check: found
+    title: SIMULA TECHNOLOGY INC. 2025 ANNUAL REPORT
+    url: https://simulatechnology.com/wp-content/uploads/%E7%9F%BD%E7%91%AA2026%E8%8B%B1%E6%96%87%E5%B9%B4%E5%A0%B1En_Final.pdf
+  tw.3511#e11:
+    locator: Drone應用說明第二段
+    published_date: null
+    publisher: Simula Technology Inc.
+    quote_check: found
+    title: Drone (UAV)
+    url: https://simulatechnology.com/drone-uav/
+  tw.3511#e12:
+    locator: Robot應用說明第二段
+    published_date: null
+    publisher: Simula Technology Inc.
+    quote_check: found
+    title: Robot
+    url: https://simulatechnology.com/robot/
+  tw.3511#e2:
+    locator: 印刷頁61，Revenue Breakdown；欄序為2024、2025、2026年第一季
+    published_date: '2026-03-30'
+    publisher: 矽瑪科技股份有限公司
+    quote_check: found
+    title: SIMULA TECHNOLOGY INC. 2025 ANNUAL REPORT
+    url: https://simulatechnology.com/wp-content/uploads/%E7%9F%BD%E7%91%AA2026%E8%8B%B1%E6%96%87%E5%B9%B4%E5%A0%B1En_Final.pdf
+  tw.3511#e3:
+    locator: 印刷頁61，Revenue Breakdown；欄序為2024、2025、2026年第一季
+    published_date: '2026-03-30'
+    publisher: 矽瑪科技股份有限公司
+    quote_check: found
+    title: SIMULA TECHNOLOGY INC. 2025 ANNUAL REPORT
+    url: https://simulatechnology.com/wp-content/uploads/%E7%9F%BD%E7%91%AA2026%E8%8B%B1%E6%96%87%E5%B9%B4%E5%A0%B1En_Final.pdf
+  tw.3511#e4:
+    locator: Our Services and Expertise include
+    published_date: null
+    publisher: Simula Technology Inc.
+    quote_check: found
+    title: Cable Assembly
+    url: https://simulatechnology.com/cable-assembly/
+  tw.3511#e5:
+    locator: 第10頁，公司沿革
+    published_date: '2024-07-29'
+    publisher: 矽瑪科技股份有限公司
+    quote_check: found
+    title: 矽瑪科技股份有限公司及子公司113年第二季合併財務報告
+    url: https://simulatechnology.com/wp-content/uploads/%E7%9F%BD%E7%91%AA%E7%A7%91%E6%8A%80113%E7%AC%AC%E4%BA%8C%E5%AD%A3%E5%AD%A3%E5%A0%B1T-IFRS%E5%90%88%E4%BD%B5.pdf
+  tw.3511#e6:
+    locator: 印刷頁57，2025年12月31日轉投資持股表
+    published_date: '2026-03-30'
+    publisher: 矽瑪科技股份有限公司
+    quote_check: found
+    title: SIMULA TECHNOLOGY INC. 2025 ANNUAL REPORT
+    url: https://simulatechnology.com/wp-content/uploads/%E7%9F%BD%E7%91%AA2026%E8%8B%B1%E6%96%87%E5%B9%B4%E5%A0%B1En_Final.pdf
+  tw.3511#e7:
+    locator: 印刷頁55，轉投資事業持股表
+    published_date: '2025-05-27'
+    publisher: 矽瑪科技股份有限公司
+    quote_check: found
+    title: 矽瑪科技股份有限公司113年度年報
+    url: https://simulatechnology.com/wp-content/uploads/113%E5%B9%B4%E5%B9%B4%E5%A0%B1.pdf
+  tw.3511#e8:
+    locator: 印刷頁57，2025年12月31日轉投資持股表
+    published_date: '2026-03-30'
+    publisher: 矽瑪科技股份有限公司
+    quote_check: found
+    title: SIMULA TECHNOLOGY INC. 2025 ANNUAL REPORT
+    url: https://simulatechnology.com/wp-content/uploads/%E7%9F%BD%E7%91%AA2026%E8%8B%B1%E6%96%87%E5%B9%B4%E5%A0%B1En_Final.pdf
+  tw.3511#e9:
+    locator: 印刷頁57，2025年12月31日直接及間接持股表
+    published_date: '2026-03-30'
+    publisher: 矽瑪科技股份有限公司
+    quote_check: found
+    title: SIMULA TECHNOLOGY INC. 2025 ANNUAL REPORT
+    url: https://simulatechnology.com/wp-content/uploads/%E7%9F%BD%E7%91%AA2026%E8%8B%B1%E6%96%87%E5%B9%B4%E5%A0%B1En_Final.pdf

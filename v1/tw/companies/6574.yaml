@@ -8,12 +8,158 @@ industry:
   l0_code: '22'
   l0_name: 生技醫療業
   l0_name_en: Biotechnology and Medical Care
-primary_chain_position: unknown
+  l1: health
+  l1_name: 醫療保健
+  l1_name_en: Healthcare
+  l2: health.devices
+  l2_name: 醫療器材與服務
+  l2_name_en: Medical Devices & Services
+  l3: med.services
+  l3_name: 醫療服務與通路
+  l3_name_en: Healthcare Services & Distribution
+chain: chain.biotech
+chain_stage:
+  agreement: both
+  also: []
+  reason: 醫美銷售及勞務占營收72%，以醫材通路及診所營運支援為主，另研發美容保養產品。
+  stage: channel
+  stage_name: 通路與醫療服務
+  tier: downstream
+primary_chain_position: downstream
+summary_short: 以醫美耗材銷售、品牌授權及診所營運支援為主，兼營美容保養品。
+summary_long: 霈方主要經營醫美銷售及勞務與美容保養護膚品，2025年營收比重分別為72%及28%。醫美業務涵蓋醫材銷售、品牌授權、醫美設備與經營場所租賃；官網並說明提供場地規劃、醫材採購及經營支持，形成醫師與診所的服務平台。美容保養業務則從事相關產品研發、銷售與諮詢。依2025年第三季合併財報，直接子公司包括從事醫學美容的霈曼國際、霈博生醫，以及投資控股公司SHINE STYLE LTD.；上海霈曼生物科技則由後者持有，經營化妝品批發銷售。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_aesthetics
+  name: 醫美銷售及勞務
+  period: '2025'
+  revenue_share_pct: 72
+- evidence_ids:
+  - e2
+  id: seg_skincare
+  name: 美容保養護膚品
+  period: '2025'
+  revenue_share_pct: 28
+relations:
+  subsidiaries:
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%之投資控股子公司
+    details:
+    - 直接持有100%之投資控股子公司
+    edge: eed3d9fe04332
+    evidence_level: primary
+    id: org.shine-style-ltd
+    name: SHINE STYLE LTD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過SHINE STYLE LTD.間接持有之子公司
+    details:
+    - 透過SHINE STYLE LTD.間接持有之子公司
+    edge: ed267dd9b4a42
+    evidence_level: primary
+    id: org.上海霈曼生物科技有限公司
+    name: 上海霈曼生物科技有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%之醫學美容子公司
+    details:
+    - 直接持有100%之醫學美容子公司
+    edge: e21e103cec090
+    evidence_level: primary
+    id: org.霈博生醫股份有限公司
+    name: 霈博生醫股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%之醫學美容子公司
+    details:
+    - 直接持有100%之醫學美容子公司
+    edge: e6e08e3c92b5f
+    evidence_level: primary
+    id: org.霈曼國際股份有限公司
+    name: 霈曼國際股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.mikobeaute.com
 tax_id: '80281973'
 incorporated: '2002-10-02'
 listed: '2017-09-04'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-25'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6574#e1:
+    locator: 公司名稱、股票代號、統一編號及主要經營業務欄
+    published_date: null
+    publisher: 霈方國際股份有限公司
+    quote_check: found
+    title: 公司基本資料
+    url: https://www.mikobeaute.com/investors/7/54/
+  tw.6574#e2:
+    locator: 公司簡介／營業項目與產品結構
+    published_date: '2026-09-03'
+    publisher: MoneyDJ理財網／嘉實投顧
+    quote_check: found
+    title: 霈方國際股份有限公司
+    url: https://www.moneydj.com/kmdj/wiki/wikiviewer.aspx?keyid=d7393771-3f81-43c8-84a5-a3edc614e0f4
+  tw.6574#e3:
+    locator: ABOUT US
+    published_date: null
+    publisher: 霈方國際股份有限公司
+    quote_check: found
+    title: 關於霈方
+    url: https://mikobeaute.com/about/
+  tw.6574#e4:
+    locator: 第26頁，附註二二、收入／商品銷貨收入
+    published_date: '2025-11-12'
+    publisher: 霈方國際股份有限公司
+    quote_check: not_found
+    title: 民國114及113年第3季合併財務報告
+    url: https://www.mikobeaute.com/upload/investors_page_file/MK_FIN_Report_2025Q3_ZH_1.pdf
+  tw.6574#e5:
+    locator: 第18頁，附註十三、子公司
+    published_date: '2025-11-12'
+    publisher: 霈方國際股份有限公司
+    quote_check: found
+    title: 民國114及113年第3季合併財務報告
+    url: https://www.mikobeaute.com/upload/investors_page_file/MK_FIN_Report_2025Q3_ZH_1.pdf
+  tw.6574#e6:
+    locator: 第18頁，附註十三、子公司
+    published_date: '2025-11-12'
+    publisher: 霈方國際股份有限公司
+    quote_check: found
+    title: 民國114及113年第3季合併財務報告
+    url: https://www.mikobeaute.com/upload/investors_page_file/MK_FIN_Report_2025Q3_ZH_1.pdf
+  tw.6574#e7:
+    locator: 第18頁，附註十三、子公司
+    published_date: '2025-11-12'
+    publisher: 霈方國際股份有限公司
+    quote_check: found
+    title: 民國114及113年第3季合併財務報告
+    url: https://www.mikobeaute.com/upload/investors_page_file/MK_FIN_Report_2025Q3_ZH_1.pdf
+  tw.6574#e8:
+    locator: 第18頁，附註十三、子公司
+    published_date: '2025-11-12'
+    publisher: 霈方國際股份有限公司
+    quote_check: found
+    title: 民國114及113年第3季合併財務報告
+    url: https://www.mikobeaute.com/upload/investors_page_file/MK_FIN_Report_2025Q3_ZH_1.pdf

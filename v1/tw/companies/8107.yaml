@@ -8,12 +8,103 @@ industry:
   l0_code: '05'
   l0_name: 電機機械
   l0_name_en: Electric Machinery
-primary_chain_position: unknown
+  l1: auto
+  l1_name: 汽車與運具
+  l1_name_en: Automotive & Mobility
+  l2: auto.vehicles
+  l2_name: 汽機車
+  l2_name_en: Autos & Motorcycles
+  l3: auto.parts
+  l3_name: 汽車零組件
+  l3_name_en: Auto Parts
+chain: chain.auto
+chain_stage:
+  agreement: both
+  also: []
+  reason: 主要製造汽車外飾件與車用濾網，包括擾流板、側踏板及自動變速箱濾網。
+  stage: parts
+  stage_name: 汽車零組件與模組
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 主要設計製造車用中空成型外飾件，以及車用與家用濾網。
+summary_long: 大億金茂以車用中空成型件及濾材為主要業務。汽車外飾件涵蓋擾流板、側踏板、車後斗護欄與車斗罩，並運用中空成型技術開發汽車外部配件。過濾產品包括車用冷氣濾網、自動變速箱濾網及家用空氣清淨機濾網，涵蓋汽車與居家應用。皮卡後車斗飾件另有結合Sport Bar與Bed lamp照明功能的設計。官網董事會決議亦記錄大億科技（薩摩亞）與大億金茂（泰國）等子公司關係，分別依相關決議日期列示。
+relations:
+  subsidiaries:
+  - as_of: '2024-11-08'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 薩摩亞子公司
+    details:
+    - 薩摩亞子公司
+    edge: ef9ea6da6cff6
+    evidence_level: primary
+    id: org.大億科技-薩摩亞-股份有限公司
+    name: 大億科技(薩摩亞)股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2023-11-15'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 泰國子公司
+    details:
+    - 泰國子公司
+    edge: ecf754288f8c6
+    evidence_level: primary
+    id: org.大億金茂-泰國-股-公司
+    name: 大億金茂(泰國)(股)公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.kenmos.com
 tax_id: '16359284'
 incorporated: '1998-01-05'
 listed: '2005-11-15'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.8107#e1:
+    locator: 公司名稱、股票代號、統一編號及主要經營業務欄
+    published_date: null
+    publisher: 大億金茂股份有限公司
+    quote_check: found
+    title: 公司基本資料
+    url: https://www.kenmos.com/tw/company.php
+  tw.8107#e2:
+    locator: OEM和AM機構內部設計能力
+    published_date: null
+    publisher: 大億金茂股份有限公司
+    quote_check: found
+    title: 技術研發－中空成型
+    url: https://www.kenmos.com/tw/technology.php
+  tw.8107#e3:
+    locator: 01 濾網－產品介紹
+    published_date: null
+    publisher: 大億金茂股份有限公司
+    quote_check: found
+    title: 產品介紹－濾網
+    url: https://www.kenmos.com/tw/products.php
+  tw.8107#e4:
+    locator: Sport bar with bed lamp
+    published_date: null
+    publisher: 大億金茂股份有限公司
+    quote_check: found
+    title: 產品介紹－皮卡後車斗飾件
+    url: https://www.kenmos.com/tw/products.php?cid=3e04a39f-832d-11e7-a037-326636376238
+  tw.8107#e5:
+    locator: 2024-11-08董事會決議
+    published_date: null
+    publisher: 大億金茂股份有限公司
+    quote_check: found
+    title: 董事會重要決議事項
+    url: https://www.kenmos.com/tw/resolution.php
+  tw.8107#e6:
+    locator: 2023-11-15董事會決議
+    published_date: null
+    publisher: 大億金茂股份有限公司
+    quote_check: found
+    title: 董事會重要決議事項
+    url: https://www.kenmos.com/tw/resolution.php

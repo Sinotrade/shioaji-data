@@ -8,12 +8,191 @@ industry:
   l0_code: '30'
   l0_name: 資訊服務業
   l0_name_en: Information Service
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.software
+  l2_name: 軟體與資訊服務
+  l2_name_en: Software & IT Services
+  l3: sw.it_services
+  l3_name: 系統整合與資訊服務
+  l3_name_en: System Integration & IT Services
+primary_chain_position: not_applicable
+summary_short: 以電腦軟硬體銷售、企業系統整合及維護顧問服務取得收入。
+summary_long: 訊達電腦以企業資訊系統整合為主要業務，提供軟硬體規劃、建置、售後維修及加值服務，並提供企業資源規劃顧問服務。產品涵蓋伺服器、個人電腦與工作站、儲存備份設備、網路設備及軟體；整合方案包括虛擬化、資訊安全與雲端應用。另提供裝機、移機、教育訓練、異地備援與駐點服務。2025年上半年財報將營收分為商品銷售、勞務提供及其他營業收入，商品銷售為最大來源；集團透過直接及間接子公司經營越南、中國大陸等海外業務。
+segments:
+- evidence_ids:
+  - e6
+  id: seg_goods
+  name: 商品銷售收入
+  period: 2025年上半年
+  revenue_share_pct: null
+- evidence_ids:
+  - e6
+  id: seg_services
+  name: 勞務提供收入
+  period: 2025年上半年
+  revenue_share_pct: null
+- evidence_ids:
+  - e6
+  id: seg_other
+  name: 其他營業收入
+  period: 2025年上半年
+  revenue_share_pct: null
+relations:
+  subsidiaries:
+  - as_of: '2025-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 越南買賣及進出口業務子公司
+    details:
+    - 越南買賣及進出口業務子公司
+    edge: ecbb5c255c242
+    evidence_level: primary
+    id: org.computer-technology-dimension-vietnam-company-li
+    name: Computer Technology Dimension (Vietnam) Company Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 已設立、尚未投入資本的日本子公司
+    details:
+    - 已設立、尚未投入資本的日本子公司
+    edge: e311340ad86c7
+    evidence_level: primary
+    id: org.dct-japan合同會社
+    name: DCT Japan合同會社
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 已設立、尚未投入資本的美國子公司
+    details:
+    - 已設立、尚未投入資本的美國子公司
+    edge: e7d5747c172b6
+    evidence_level: primary
+    id: org.dimension-computer-technology-us-corp
+    name: Dimension Computer Technology US Corp
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有的投資子公司
+    details:
+    - 直接持有的投資子公司
+    edge: e66e1fb6e6723
+    evidence_level: primary
+    id: org.pacific-capital-assets-investment-inc
+    name: Pacific Capital Assets Investment Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過Pacific Capital間接持有的孫公司
+    details:
+    - 透過Pacific Capital間接持有的孫公司
+    edge: e4444a225c46a
+    evidence_level: primary
+    id: org.天津訊安達電腦有限公司
+    name: 天津訊安達電腦有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過Pacific Capital間接持有的孫公司
+    details:
+    - 透過Pacific Capital間接持有的孫公司
+    edge: eb0951ff758db
+    evidence_level: primary
+    id: org.訊大電腦-深圳-有限公司
+    name: 訊大電腦(深圳)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.dimension.com.tw
 tax_id: '30990747'
 incorporated: '1982-11-08'
 listed: '2002-02-04'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6140#e1:
+    locator: 印刷頁69，伍、營運概況／公司目前之商品及服務項目
+    published_date: '2024-05-31'
+    publisher: 訊達電腦股份有限公司
+    quote_check: found
+    title: 訊達電腦112年年報
+    url: https://tvr02.dimension.com.tw/OA/DCT_SHA.nsf/B8398443D602682148258C3D0037CA93/%24FILE/11402-01.pdf
+  tw.6140#e2:
+    locator: 印刷頁70，解決方案顧問諮詢服務
+    published_date: '2024-05-31'
+    publisher: 訊達電腦股份有限公司
+    quote_check: found
+    title: 訊達電腦112年年報
+    url: https://tvr02.dimension.com.tw/OA/DCT_SHA.nsf/B8398443D602682148258C3D0037CA93/%24FILE/11402-01.pdf
+  tw.6140#e3:
+    locator: 印刷頁70，主要產品內容／電腦系統設備及網路系統設備
+    published_date: '2024-05-31'
+    publisher: 訊達電腦股份有限公司
+    quote_check: found
+    title: 訊達電腦112年年報
+    url: https://tvr02.dimension.com.tw/OA/DCT_SHA.nsf/B8398443D602682148258C3D0037CA93/%24FILE/11402-01.pdf
+  tw.6140#e4:
+    locator: 印刷頁70，主要產品內容／軟體產品
+    published_date: '2024-05-31'
+    publisher: 訊達電腦股份有限公司
+    quote_check: found
+    title: 訊達電腦112年年報
+    url: https://tvr02.dimension.com.tw/OA/DCT_SHA.nsf/B8398443D602682148258C3D0037CA93/%24FILE/11402-01.pdf
+  tw.6140#e5:
+    locator: 印刷頁70，服務性產品及其他
+    published_date: '2024-05-31'
+    publisher: 訊達電腦股份有限公司
+    quote_check: found
+    title: 訊達電腦112年年報
+    url: https://tvr02.dimension.com.tw/OA/DCT_SHA.nsf/B8398443D602682148258C3D0037CA93/%24FILE/11402-01.pdf
+  tw.6140#e6:
+    locator: 印刷頁38，附註六、14營業收入；第三欄為2025年上半年，金額單位為新台幣仟元
+    published_date: '2025-08-12'
+    publisher: 訊達電腦股份有限公司
+    quote_check: found
+    title: 訊達電腦2025年第2季合併財務報告
+    url: https://tvr02.dimension.com.tw/OA/DCT_SHA.nsf/CBBF1A1489D4215248258D5600262300/%24FILE/11406-01.pdf
+  tw.6140#e7:
+    locator: 印刷頁16，附註四、3合併概況；投資公司、子公司及權益百分比表
+    published_date: '2025-08-12'
+    publisher: 訊達電腦股份有限公司
+    quote_check: found
+    title: 訊達電腦2025年第2季合併財務報告
+    url: https://tvr02.dimension.com.tw/OA/DCT_SHA.nsf/CBBF1A1489D4215248258D5600262300/%24FILE/11406-01.pdf
+  tw.6140#e8:
+    locator: 印刷頁16，附註四、3合併概況；Pacific Capital持有的子公司
+    published_date: '2025-08-12'
+    publisher: 訊達電腦股份有限公司
+    quote_check: found
+    title: 訊達電腦2025年第2季合併財務報告
+    url: https://tvr02.dimension.com.tw/OA/DCT_SHA.nsf/CBBF1A1489D4215248258D5600262300/%24FILE/11406-01.pdf
+  tw.6140#e9:
+    locator: 印刷頁16，附註四、3合併概況；美國及日本子公司列與註1、註2
+    published_date: '2025-08-12'
+    publisher: 訊達電腦股份有限公司
+    quote_check: found
+    title: 訊達電腦2025年第2季合併財務報告
+    url: https://tvr02.dimension.com.tw/OA/DCT_SHA.nsf/CBBF1A1489D4215248258D5600262300/%24FILE/11406-01.pdf

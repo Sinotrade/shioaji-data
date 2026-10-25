@@ -8,12 +8,159 @@ industry:
   l0_code: '04'
   l0_name: 紡織纖維
   l0_name_en: Textiles
-primary_chain_position: unknown
+  l1: materials
+  l1_name: 原物料
+  l1_name_en: Materials
+  l2: mat.other
+  l2_name: 其他原物料
+  l2_name_en: Other Materials
+  l3: matl.textile_fiber
+  l3_name: 紡織纖維與機能布料
+  l3_name_en: Textiles, Fibers & Functional Fabrics
+chain: chain.textile
+chain_stage:
+  agreement: both
+  also: []
+  reason: 以進口亞克力纖維內銷為主，合成纖維買賣為最大營收來源，屬纖維與紗階段。
+  stage: fiber
+  stage_name: 纖維與紗
+  tier: upstream
+primary_chain_position: upstream
+summary_short: 以進口亞克力纖維內銷為主，兼營不動產租賃與房地開發。
+summary_long: 東華龍以進口亞克力纖維供應內銷市場，主力產品為亞克力棉，另有不動產租賃及房地開發業務。2026年上半年合成纖維部門對外收入為新臺幣331.1萬元，高於租賃部門的10.5萬元，建設部門當期尚無對外收入。公司持有東燁投資90%股權，並全資持有山河壯及東華租賃；山河壯的業務包括住宅及大樓開發租售。公司年報並說明已著手進行資產活化轉型計畫。
+segments:
+- evidence_ids:
+  - e5
+  - e6
+  id: seg_fiber
+  name: 合成纖維買賣
+  period: 2026年上半年
+  revenue_share_pct: null
+- evidence_ids:
+  - e5
+  - e6
+  id: seg_rental
+  name: 不動產租賃
+  period: 2026年上半年
+  revenue_share_pct: null
+- evidence_ids:
+  - e5
+  - e6
+  id: seg_development
+  name: 房地開發
+  period: 2026年上半年
+  revenue_share_pct: null
+- evidence_ids:
+  - e6
+  id: seg_other
+  name: 其他
+  period: 2026年上半年
+  revenue_share_pct: null
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司，業務包括住宅及大樓開發租售
+    details:
+    - 全資子公司，業務包括住宅及大樓開發租售
+    edge: e4be653945b43
+    evidence_level: primary
+    id: org.山河壯股份有限公司
+    name: 山河壯股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股90%之一般投資業子公司
+    details:
+    - 持股90%之一般投資業子公司
+    edge: ebc5883c39a3b
+    evidence_level: primary
+    id: org.東燁投資股份有限公司
+    name: 東燁投資股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司
+    details:
+    - 全資子公司
+    edge: e35cace331fb3
+    evidence_level: primary
+    id: org.東華租賃股份有限公司
+    name: 東華租賃股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.tonghwa.com.tw
 tax_id: '11083148'
 incorporated: '1970-03-02'
 listed: '1977-02-14'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1418#e2:
+    locator: PDF第42頁，印刷第38頁，業務範圍
+    published_date: '2026-04-30'
+    publisher: 東華龍股份有限公司
+    quote_check: found
+    title: 東華龍股份有限公司114年度年報
+    url: https://www.tonghwa.com.tw/uploads/files/745c173abbbbe8816e515596b8ce0577.pdf
+  tw.1418#e3:
+    locator: PDF第46頁，印刷第42頁，產銷量值表附註
+    published_date: '2026-04-30'
+    publisher: 東華龍股份有限公司
+    quote_check: found
+    title: 東華龍股份有限公司114年度年報
+    url: https://www.tonghwa.com.tw/uploads/files/745c173abbbbe8816e515596b8ce0577.pdf
+  tw.1418#e4:
+    locator: PDF第5頁，印刷第1頁，致股東報告書
+    published_date: '2026-04-30'
+    publisher: 東華龍股份有限公司
+    quote_check: found
+    title: 東華龍股份有限公司114年度年報
+    url: https://www.tonghwa.com.tw/uploads/files/745c173abbbbe8816e515596b8ce0577.pdf
+  tw.1418#e5:
+    locator: 第47頁，十四、部門資訊
+    published_date: '2026-08-14'
+    publisher: 公開資訊觀測站
+    quote_check: not_found
+    title: 東華龍股份有限公司及子公司115年第二季合併財務報告
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=1418&colorchg=1&filename=202602_1418_AI1.pdf&kind=A&step=9
+  tw.1418#e6:
+    locator: 第47頁，115年1至6月部門收入表；依序為合成纖維、租賃、建設、其他、調整及沖銷、合併，單位新臺幣仟元
+    published_date: '2026-08-14'
+    publisher: 公開資訊觀測站
+    quote_check: not_found
+    title: 東華龍股份有限公司及子公司115年第二季合併財務報告
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=1418&colorchg=1&filename=202602_1418_AI1.pdf&kind=A&step=9
+  tw.1418#e7:
+    locator: 第12頁，列入合併財務報告之子公司，東燁投資列
+    published_date: '2026-08-14'
+    publisher: 公開資訊觀測站
+    quote_check: not_found
+    title: 東華龍股份有限公司及子公司115年第二季合併財務報告
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=1418&colorchg=1&filename=202602_1418_AI1.pdf&kind=A&step=9
+  tw.1418#e8:
+    locator: 第12頁，列入合併財務報告之子公司，山河壯列
+    published_date: '2026-08-14'
+    publisher: 公開資訊觀測站
+    quote_check: not_found
+    title: 東華龍股份有限公司及子公司115年第二季合併財務報告
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=1418&colorchg=1&filename=202602_1418_AI1.pdf&kind=A&step=9
+  tw.1418#e9:
+    locator: 第12頁，列入合併財務報告之子公司，東華租賃列
+    published_date: '2026-08-14'
+    publisher: 公開資訊觀測站
+    quote_check: not_found
+    title: 東華龍股份有限公司及子公司115年第二季合併財務報告
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=1418&colorchg=1&filename=202602_1418_AI1.pdf&kind=A&step=9

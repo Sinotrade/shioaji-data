@@ -8,13 +8,185 @@ industry:
   l0_code: '20'
   l0_name: 其他業
   l0_name_en: Others
-primary_chain_position: unknown
+  l1: materials
+  l1_name: 原物料
+  l1_name_en: Materials
+  l2: mat.other
+  l2_name: 其他原物料
+  l2_name_en: Other Materials
+  l3: matl.wood
+  l3_name: 木材與木製品
+  l3_name_en: Lumber & Wood Products
+primary_chain_position: midstream
+summary_short: 透過集團子公司製造及銷售塑合板、橡膠實木板材與飾面板。
+summary_long: 綠河-KY以集團子公司製造及銷售塑合板、橡膠實木板材為主要業務。2025年塑合板占營收92.01%，實木板材占7.94%，膠合劑占0.05%。產品另包括三聚氰胺飾面板，貼面種類涵蓋木紋、麻面及珍珠面。集團透過泰國的GP、GPT及GRW經營板材製造，其中GP兼營塑合板及三聚氰胺板；薩摩亞子公司HM負責投資及資金調度，並透過其持有85%股權的TDICS經營膠合劑業務。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_pb
+  name: 塑合板
+  period: 2025年度
+  revenue_share_pct: 92.01
+- evidence_ids:
+  - e2
+  id: seg_wood
+  name: 實木板材
+  period: 2025年度
+  revenue_share_pct: 7.94
+- evidence_ids:
+  - e3
+  id: seg_adhesive
+  name: 膠合劑
+  period: 2025年度
+  revenue_share_pct: 0.05
+relations:
+  subsidiaries:
+  - as_of: '2026-05-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司GP；塑合板及三聚氰胺板製造
+    details:
+    - 全資子公司GP；塑合板及三聚氰胺板製造
+    edge: e36ebe61053b0
+    evidence_level: primary
+    id: org.green-river-panels-thailand
+    name: Green River Panels (Thailand) Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-05-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司GPT；塑合板製造
+    details:
+    - 全資子公司GPT；塑合板製造
+    edge: eea43df2a7d86
+    evidence_level: primary
+    id: org.green-river-panels-trang-thailand
+    name: Green River Panels Trang (Thailand) Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-05-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司GRW；橡膠實木板材製造
+    details:
+    - 全資子公司GRW；橡膠實木板材製造
+    edge: e146eabc9d340
+    evidence_level: primary
+    id: org.green-river-wood-lumber-manufacturing-thailand
+    name: Green River Wood & Lumber Manufacturing (Thailand) Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-05-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司HM；投資及集團資金調度
+    details:
+    - 全資子公司HM；投資及集團資金調度
+    edge: e2201d773c48a
+    evidence_level: primary
+    id: org.happy-magic-international
+    name: Happy Magic International Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-05-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接子公司TDICS；由HM持股85%
+    details:
+    - 間接子公司TDICS；由HM持股85%
+    edge: e95f211e6f025
+    evidence_level: primary
+    id: org.tdic-south
+    name: TDIC South Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.greenriverholding.com
 tax_id: '54387326'
 incorporated: '2011-01-14'
 listed: '2015-10-27'
 foreign_registration: KY 開曼群島
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-25'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.8444#e1:
+    locator: 印刷第63頁／PDF第67頁，營業比重表，塑合板列之2025年度金額與百分比；產業中游定位見印刷第68頁
+    published_date: '2026-05-13'
+    publisher: 綠河股份有限公司
+    quote_check: found
+    title: 綠河股份有限公司114年度年報
+    url: https://www.greenriverholding.com/wp-content/uploads/2026/07/114%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
+  tw.8444#e10:
+    locator: 印刷第4至5頁／PDF第8至9頁，集團架構與TDICS說明
+    published_date: '2026-05-13'
+    publisher: 綠河股份有限公司
+    quote_check: found
+    title: 綠河股份有限公司114年度年報
+    url: https://www.greenriverholding.com/wp-content/uploads/2026/07/114%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
+  tw.8444#e2:
+    locator: 印刷第63頁／PDF第67頁，營業比重表，實木板材列之2025年度金額與百分比
+    published_date: '2026-05-13'
+    publisher: 綠河股份有限公司
+    quote_check: found
+    title: 綠河股份有限公司114年度年報
+    url: https://www.greenriverholding.com/wp-content/uploads/2026/07/114%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
+  tw.8444#e3:
+    locator: 印刷第63頁／PDF第67頁，營業比重表，膠合劑列之2025年度金額與百分比
+    published_date: '2026-05-13'
+    publisher: 綠河股份有限公司
+    quote_check: found
+    title: 綠河股份有限公司114年度年報
+    url: https://www.greenriverholding.com/wp-content/uploads/2026/07/114%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
+  tw.8444#e4:
+    locator: 產品系列標題
+    published_date: null
+    publisher: 綠河股份有限公司
+    quote_check: found
+    title: 塑合板
+    url: https://www.greenriverholding.com/zh-hant/portfolio-item/%E5%AE%9E%E6%9C%A8%E9%A2%97%E7%B2%92%E6%9D%BF/
+  tw.8444#e5:
+    locator: 產品系列標題及貼面段落
+    published_date: null
+    publisher: 綠河股份有限公司
+    quote_check: not_found
+    title: 飾面板
+    url: https://www.greenriverholding.com/zh-hant/portfolio-item/%E9%A3%BE%E9%9D%A2%E6%9D%BF/
+  tw.8444#e6:
+    locator: 印刷第4至5頁／PDF第8至9頁，集團架構與GP說明
+    published_date: '2026-05-13'
+    publisher: 綠河股份有限公司
+    quote_check: found
+    title: 綠河股份有限公司114年度年報
+    url: https://www.greenriverholding.com/wp-content/uploads/2026/07/114%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
+  tw.8444#e7:
+    locator: 印刷第4至5頁／PDF第8至9頁，集團架構與GPT說明
+    published_date: '2026-05-13'
+    publisher: 綠河股份有限公司
+    quote_check: found
+    title: 綠河股份有限公司114年度年報
+    url: https://www.greenriverholding.com/wp-content/uploads/2026/07/114%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
+  tw.8444#e8:
+    locator: 印刷第4至5頁／PDF第8至9頁，集團架構與GRW說明
+    published_date: '2026-05-13'
+    publisher: 綠河股份有限公司
+    quote_check: found
+    title: 綠河股份有限公司114年度年報
+    url: https://www.greenriverholding.com/wp-content/uploads/2026/07/114%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
+  tw.8444#e9:
+    locator: 印刷第4至5頁／PDF第8至9頁，集團架構與HM說明
+    published_date: '2026-05-13'
+    publisher: 綠河股份有限公司
+    quote_check: found
+    title: 綠河股份有限公司114年度年報
+    url: https://www.greenriverholding.com/wp-content/uploads/2026/07/114%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf

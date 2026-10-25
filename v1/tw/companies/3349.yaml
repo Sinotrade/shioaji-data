@@ -8,12 +8,232 @@ industry:
   l0_code: '25'
   l0_name: 電腦及週邊設備業
   l0_name_en: Computer and Peripheral Equipment
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.hardware
+  l2_name: 電腦與硬體
+  l2_name_en: Computers & Hardware
+  l3: hw.peripheral
+  l3_name: 周邊與輸入裝置
+  l3_name_en: Peripherals & Input Devices
+primary_chain_position: midstream
+summary_short: 以ODM／OEM提供人機介面與電競周邊，並銷售伺服器及其關鍵組件。
+summary_long: 寶德以 ODM／OEM 模式提供滑鼠、鍵盤、電競鼠墊、觸控筆及遊戲控制器等人機介面周邊。2026 年上半年，人機介面營收為新台幣 8,216.5 萬元，伺服器及其關鍵組件為 7,229.3 萬元，遊戲控制器為 253.8 萬元。官網產品另包括相機與車用影像模組、伺服器處理器、AI 加速器、記憶體及資料中心儲存方案，並列有資料中心交換器與 5G O-RAN 無線電單元。
+segments:
+- evidence_ids:
+  - e6
+  id: seg_hid
+  name: 人機介面
+  period: 2026年上半年
+  revenue_share_pct: null
+- evidence_ids:
+  - e7
+  id: seg_server
+  name: 伺服器及其關鍵組件
+  period: 2026年上半年
+  revenue_share_pct: null
+- evidence_ids:
+  - e8
+  id: seg_controller
+  name: 遊戲控制器
+  period: 2026年上半年
+  revenue_share_pct: null
+- evidence_ids:
+  - e9
+  id: seg_other
+  name: 其他
+  period: 2026年上半年
+  revenue_share_pct: null
+main_theme: theme.ai_server
+themes:
+- also: []
+  stage: chips
+  theme: theme.ai_server
+  tier: upstream
+- also: []
+  stage: equipment
+  theme: theme.5g
+  tier: midstream
+- also: []
+  stage: it
+  theme: theme.data_center
+  tier: midstream
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: e6bb399d40867
+    evidence_level: primary
+    id: org.device-expert
+    name: DEVICE EXPERT INC.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 經DEVICE EXPERT INC.持有的間接子公司
+    details:
+    - 經DEVICE EXPERT INC.持有的間接子公司
+    edge: e2615719e407d
+    evidence_level: primary
+    id: org.dongguan-dexin-electronics
+    name: 東莞寶德電子有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 經哈帝斯科技持有的間接子公司
+    details:
+    - 經哈帝斯科技持有的間接子公司
+    edge: ee5020ddcea27
+    evidence_level: primary
+    id: org.hades-ai-solutions
+    name: Hades AI Solutions 株式會社
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: ed575edecdbb4
+    evidence_level: primary
+    id: org.hades-technology
+    name: 哈帝斯科技(股)公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.dexin.com.tw
 tax_id: '97483122'
 incorporated: '1997-04-23'
 listed: '2022-03-23'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3349#e1:
+    locator: We Dedicate
+    published_date: null
+    publisher: 寶德科技
+    quote_check: found
+    title: 關於我們
+    url: https://www.dexin.com.tw/web/about/about.jsp?cp_id=CP1648456243585&lang=tw
+  tw.3349#e10:
+    locator: 產品標題：AMD MI350、Intel CPU及DDR 4/5 RDIMM記憶體
+    published_date: null
+    publisher: 寶德科技
+    quote_check: found
+    title: 伺服器零組件
+    url: https://www.dexin.com.tw/web/product/product.jsp?dm_id=DM1780640731545&lang=tw
+  tw.3349#e11:
+    locator: 資料中心儲存
+    published_date: null
+    publisher: 寶德科技
+    quote_check: found
+    title: 伺服器儲存解決方案
+    url: https://www.dexin.com.tw/web/product/product.jsp?dm_id=DM1780640719486&lang=tw
+  tw.3349#e12:
+    locator: Dexin 5G-Native AI Infrastructure Platform
+    published_date: null
+    publisher: 寶德科技
+    quote_check: found
+    title: DEXIN AI Solution
+    url: https://www.dexin.com.tw/ai_solution/home.jsp
+  tw.3349#e13:
+    locator: 第18頁，附註四（三），列入合併財務報告之子公司
+    published_date: '2026-03-10'
+    publisher: 寶德科技股份有限公司
+    quote_check: found
+    title: 民國114年度及113年度合併財務報告暨會計師查核報告
+    url: https://www.dexin.com.tw/uploads/quarter_revenue/tw/2025Q4.pdf
+  tw.3349#e14:
+    locator: 第18頁，附註四（三），列入合併財務報告之子公司
+    published_date: '2026-03-10'
+    publisher: 寶德科技股份有限公司
+    quote_check: found
+    title: 民國114年度及113年度合併財務報告暨會計師查核報告
+    url: https://www.dexin.com.tw/uploads/quarter_revenue/tw/2025Q4.pdf
+  tw.3349#e15:
+    locator: 第13頁，附註四（三），列入合併財務報告之子公司
+    published_date: '2026-05-13'
+    publisher: 寶德科技股份有限公司
+    quote_check: found
+    title: 民國115年及114年第一季合併財務報告暨會計師核閱報告
+    url: https://www.dexin.com.tw/uploads/quarter_revenue/tw/2026Q1.pdf
+  tw.3349#e16:
+    locator: 第13頁，附註四（三），列入合併財務報告之子公司
+    published_date: '2026-05-13'
+    publisher: 寶德科技股份有限公司
+    quote_check: found
+    title: 民國115年及114年第一季合併財務報告暨會計師核閱報告
+    url: https://www.dexin.com.tw/uploads/quarter_revenue/tw/2026Q1.pdf
+  tw.3349#e2:
+    locator: 產品及服務／電競周邊
+    published_date: null
+    publisher: 寶德科技
+    quote_check: found
+    title: 寶德科技官方網站
+    url: https://www.dexin.com.tw/home.jsp?lang=tw
+  tw.3349#e3:
+    locator: 商用周邊產品選單
+    published_date: null
+    publisher: 寶德科技
+    quote_check: not_found
+    title: 商用周邊
+    url: https://www.dexin.com.tw/web/product/product.jsp?dm_id=DM1648217624196&lang=tw
+  tw.3349#e4:
+    locator: 相機模組介紹
+    published_date: null
+    publisher: 寶德科技
+    quote_check: found
+    title: 相機模組
+    url: https://www.dexin.com.tw/web/product/product.jsp?dm_id=DM1675045694469&lang=tw
+  tw.3349#e5:
+    locator: 產品標題
+    published_date: null
+    publisher: 寶德科技
+    quote_check: found
+    title: 車載攝影機模組產品頁
+    url: https://www.dexin.com.tw/web/product/product.jsp?dm_id=DM1675045699205&lang=tw
+  tw.3349#e6:
+    locator: 第32頁，附註六（十七），115年1月1日至6月30日，單位新台幣仟元
+    published_date: '2026-08-06'
+    publisher: 寶德科技股份有限公司
+    quote_check: found
+    title: 民國115年及114年第二季合併財務報告暨會計師核閱報告
+    url: https://www.dexin.com.tw/uploads/quarter_revenue/tw/2026Q2.pdf
+  tw.3349#e7:
+    locator: 第32頁，附註六（十七），115年1月1日至6月30日，單位新台幣仟元
+    published_date: '2026-08-06'
+    publisher: 寶德科技股份有限公司
+    quote_check: found
+    title: 民國115年及114年第二季合併財務報告暨會計師核閱報告
+    url: https://www.dexin.com.tw/uploads/quarter_revenue/tw/2026Q2.pdf
+  tw.3349#e8:
+    locator: 第32頁，附註六（十七），115年1月1日至6月30日，單位新台幣仟元
+    published_date: '2026-08-06'
+    publisher: 寶德科技股份有限公司
+    quote_check: found
+    title: 民國115年及114年第二季合併財務報告暨會計師核閱報告
+    url: https://www.dexin.com.tw/uploads/quarter_revenue/tw/2026Q2.pdf
+  tw.3349#e9:
+    locator: 第32頁，附註六（十七），115年1月1日至6月30日，單位新台幣仟元
+    published_date: '2026-08-06'
+    publisher: 寶德科技股份有限公司
+    quote_check: found
+    title: 民國115年及114年第二季合併財務報告暨會計師核閱報告
+    url: https://www.dexin.com.tw/uploads/quarter_revenue/tw/2026Q2.pdf

@@ -8,12 +8,111 @@ industry:
   l0_code: '20'
   l0_name: 其他業
   l0_name_en: Others
-primary_chain_position: unknown
+  l1: consumer
+  l1_name: 消費
+  l1_name_en: Consumer
+  l2: cons.discretionary
+  l2_name: 非必需消費
+  l2_name_en: Consumer Discretionary
+  l3: consumer.education
+  l3_name: 教育與生活服務
+  l3_name_en: Education & Personal Services
+primary_chain_position: not_applicable
+summary_short: 經營兒童美語品牌、教材與教育服務，並提供土地及廠房租賃管理。
+summary_long: 新華泰富的官網業務包括授權兒教、升學文教及物業管理。授權兒教以芝蔴街美語品牌提供加盟與直營體系服務，內容涵蓋師資培訓及SSE1.0+教材；旗下芝蔴村文教為子公司。升學文教服務針對國中、高中全科目，提供自編講義、題庫及個人學習歷程紀錄。物業管理涵蓋旗下近二萬平方公尺土地與廠房，透過出租取得收益；玉豐物業管理顧問亦為子公司。公司沿革另列龍軒文教為子公司。
+relations:
+  subsidiaries:
+  - as_of: 2025-03
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 物業管理子公司
+    details:
+    - 物業管理子公司
+    edge: e9f1c93fd103f
+    evidence_level: primary
+    id: org.玉豐物業管理顧問股份有限公司
+    name: 玉豐物業管理顧問股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2022-02
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 文教子公司
+    details:
+    - 文教子公司
+    edge: e4716717eb16f
+    evidence_level: primary
+    id: org.芝蔴村文教股份有限公司
+    name: 芝蔴村文教股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2022-02
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 文教子公司
+    details:
+    - 文教子公司
+    edge: ef2ec07b935c7
+    evidence_level: primary
+    id: org.龍軒文教股份有限公司
+    name: 龍軒文教股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 國內外知名企業（官網未具名的土地及廠房承租方）
 website: http://www.sinotact.com/
 tax_id: '23790625'
 incorporated: '1990-06-18'
 listed: '2001-04-27'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.5481#e1:
+    locator: 授權兒教
+    published_date: null
+    publisher: 新華泰富股份有限公司
+    quote_check: found
+    title: 產品與服務－授權兒教
+    url: https://www.sinotact.com/zh/hot_484080.html
+  tw.5481#e2:
+    locator: 升學文教
+    published_date: null
+    publisher: 新華泰富股份有限公司
+    quote_check: found
+    title: 產品與服務－升學文教
+    url: https://www.sinotact.com/zh/hot_484075.html
+  tw.5481#e3:
+    locator: 物業管理
+    published_date: null
+    publisher: 新華泰富股份有限公司
+    quote_check: found
+    title: 產品與服務－物業管理
+    url: https://www.sinotact.com/zh/hot_484076.html
+  tw.5481#e4:
+    locator: 111年02月
+    published_date: null
+    publisher: 新華泰富股份有限公司
+    quote_check: found
+    title: 公司沿革
+    url: https://www.sinotact.com/zh/hot_479232.html
+  tw.5481#e5:
+    locator: 114年03月
+    published_date: null
+    publisher: 新華泰富股份有限公司
+    quote_check: found
+    title: 公司沿革
+    url: https://www.sinotact.com/zh/hot_479232.html
+  tw.5481#e6:
+    locator: 111年02月
+    published_date: null
+    publisher: 新華泰富股份有限公司
+    quote_check: found
+    title: 公司沿革
+    url: https://www.sinotact.com/zh/hot_479232.html

@@ -8,12 +8,190 @@ industry:
   l0_code: '26'
   l0_name: 光電業
   l0_name_en: Optoelectronic
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.display
+  l2_name: 光電與顯示
+  l2_name_en: Optoelectronics & Displays
+  l3: disp.led
+  l3_name: LED 與 Micro／Mini LED
+  l3_name_en: LED & Micro/Mini LED
+primary_chain_position: midstream
+summary_short: 以LED元件、低溫設備照明及商業照明產品銷售為主要收入來源。
+summary_long: 華興電子以LED元件與照明應用產品為主要業務，元件涵蓋LAMP、SMD、數位顯示器及COB等類型。2025年前三季產品別營收以LED元件最大，其次為低溫照明與商業照明，另有原物料及零件收入。低溫照明包含冰箱、冷凍櫃及展示櫃使用的LED燈；成品照明業務由子公司華能光電參與，集團產品涵蓋燈管、平板燈及泛光燈等。集團亦提供ESG節電減碳系統，結合用電監測、異常通知與照明控制，並支援跨場域管理。
+segments:
+- evidence_ids:
+  - e3
+  id: seg_led
+  name: LED元件
+  period: 2025-01至2025-09
+  revenue_share_pct: 41.1
+- evidence_ids:
+  - e4
+  id: seg_commercial
+  name: 商業照明
+  period: 2025-01至2025-09
+  revenue_share_pct: 18.2
+- evidence_ids:
+  - e5
+  id: seg_cold
+  name: 低溫照明
+  period: 2025-01至2025-09
+  revenue_share_pct: 24.1
+- evidence_ids:
+  - e6
+  id: seg_other
+  name: 其他（原物料及零件）
+  period: 2025-01至2025-09
+  revenue_share_pct: 16.6
+relations:
+  subsidiaries:
+  - as_of: '2024-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司；照明應用產品研發及銷售
+    details:
+    - 直接子公司；照明應用產品研發及銷售
+    edge: e37a8f91934cc
+    evidence_level: primary
+    id: org.energyled
+    name: 華能光電科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 美國直接子公司
+    details:
+    - 美國直接子公司
+    edge: e4bf7093aab83
+    evidence_level: primary
+    id: org.ledtech-electronics-usa
+    name: Ledtech Electronics Corp.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過華能光電及Energyled Corporation持有的間接子公司
+    details:
+    - 透過華能光電及Energyled Corporation持有的間接子公司
+    edge: ee689b496e912
+    evidence_level: primary
+    id: org.zhaoqing-energyled-electronics
+    name: 肇慶市立能電子有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過百慕達子公司持有的間接子公司
+    details:
+    - 透過百慕達子公司持有的間接子公司
+    edge: eadf07c4a7310
+    evidence_level: primary
+    id: org.zhaoqing-ledtech-electronics
+    name: 肇慶市立得電子有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.ledtech.com
 tax_id: '34168978'
 incorporated: '1977-09-06'
 listed: '2008-10-21'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6164#e10:
+    locator: 第14頁，合併概況表；華能光電主要業務為照明應用產品研發及銷售
+    published_date: '2024-11-13'
+    publisher: 華興電子工業股份有限公司
+    quote_check: unreachable
+    title: 華興電子及子公司113年第3季合併財務報告
+    url: https://www.ledtech.com.tw/wp-content/uploads/2024/11/113Q3_%E8%8F%AF%E8%88%88_%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E6%9B%B8-1.pdf
+  tw.6164#e11:
+    locator: 第14頁，投資公司名稱與子公司名稱欄
+    published_date: '2024-11-13'
+    publisher: 華興電子工業股份有限公司
+    quote_check: unreachable
+    title: 華興電子及子公司113年第3季合併財務報告
+    url: https://www.ledtech.com.tw/wp-content/uploads/2024/11/113Q3_%E8%8F%AF%E8%88%88_%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E6%9B%B8-1.pdf
+  tw.6164#e12:
+    locator: 第14頁，華興持有百慕達公司、百慕達公司持有立得公司之合併概況
+    published_date: '2024-11-13'
+    publisher: 華興電子工業股份有限公司
+    quote_check: unreachable
+    title: 華興電子及子公司113年第3季合併財務報告
+    url: https://www.ledtech.com.tw/wp-content/uploads/2024/11/113Q3_%E8%8F%AF%E8%88%88_%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E6%9B%B8-1.pdf
+  tw.6164#e13:
+    locator: 第14頁，華能持有Energyled Corporation、薩摩亞公司持有立能公司之合併概況
+    published_date: '2024-11-13'
+    publisher: 華興電子工業股份有限公司
+    quote_check: unreachable
+    title: 華興電子及子公司113年第3季合併財務報告
+    url: https://www.ledtech.com.tw/wp-content/uploads/2024/11/113Q3_%E8%8F%AF%E8%88%88_%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E6%9B%B8-1.pdf
+  tw.6164#e2:
+    locator: 第8頁，產品介紹：華興電子LED元件
+    published_date: '2025-12-12'
+    publisher: 華興電子工業股份有限公司
+    quote_check: not_found
+    title: 華興電子2025年法人說明會簡報
+    url: https://mopsov.twse.com.tw/nas/STR/616420251212M001.pdf
+  tw.6164#e3:
+    locator: 第13頁，前三季產品別營業收入；2025年LED元件236,426千元
+    published_date: '2025-12-12'
+    publisher: 華興電子工業股份有限公司
+    quote_check: found
+    title: 華興電子2025年法人說明會簡報
+    url: https://mopsov.twse.com.tw/nas/STR/616420251212M001.pdf
+  tw.6164#e4:
+    locator: 第13頁，前三季產品別營業收入；2025年商業照明104,877千元
+    published_date: '2025-12-12'
+    publisher: 華興電子工業股份有限公司
+    quote_check: found
+    title: 華興電子2025年法人說明會簡報
+    url: https://mopsov.twse.com.tw/nas/STR/616420251212M001.pdf
+  tw.6164#e5:
+    locator: 第13頁，前三季產品別營業收入；2025年低溫照明138,984千元
+    published_date: '2025-12-12'
+    publisher: 華興電子工業股份有限公司
+    quote_check: found
+    title: 華興電子2025年法人說明會簡報
+    url: https://mopsov.twse.com.tw/nas/STR/616420251212M001.pdf
+  tw.6164#e6:
+    locator: 第12至13頁，其他定義為原物料及零件；2025年前三季其他收入95,354千元
+    published_date: '2025-12-12'
+    publisher: 華興電子工業股份有限公司
+    quote_check: found
+    title: 華興電子2025年法人說明會簡報
+    url: https://mopsov.twse.com.tw/nas/STR/616420251212M001.pdf
+  tw.6164#e7:
+    locator: 產品說明
+    published_date: null
+    publisher: 華興電子工業股份有限公司
+    quote_check: found
+    title: G6E系列Vertical LED Light
+    url: https://www.ledtech.com.tw/tw/product/LEDRefrigeratorDisplayLighting/G6ESeriesVerticalLEDLight
+  tw.6164#e8:
+    locator: 第12頁，商業照明產品定義
+    published_date: '2025-12-12'
+    publisher: 華興電子工業股份有限公司
+    quote_check: found
+    title: 華興電子2025年法人說明會簡報
+    url: https://mopsov.twse.com.tw/nas/STR/616420251212M001.pdf
+  tw.6164#e9:
+    locator: 第24、28至31頁，ESG節電減碳系統、跨場域管理及智慧冷凍櫃
+    published_date: '2025-12-12'
+    publisher: 華興電子工業股份有限公司
+    quote_check: found
+    title: 華興電子2025年法人說明會簡報
+    url: https://mopsov.twse.com.tw/nas/STR/616420251212M001.pdf

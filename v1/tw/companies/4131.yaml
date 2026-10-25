@@ -8,12 +8,161 @@ industry:
   l0_code: '22'
   l0_name: 生技醫療業
   l0_name_en: Biotechnology and Medical Care
-primary_chain_position: unknown
+  l1: health
+  l1_name: 醫療保健
+  l1_name_en: Healthcare
+  l2: health.devices
+  l2_name: 醫療器材與服務
+  l2_name_en: Medical Devices & Services
+  l3: med.services
+  l3_name: 醫療服務與通路
+  l3_name_en: Healthcare Services & Distribution
+chain: chain.biotech
+chain_stage:
+  agreement: both
+  also: []
+  reason: 醫療器材部門營收最高，主要經營設備銷售、維修與租賃。
+  stage: channel
+  stage_name: 通路與醫療服務
+  tier: downstream
+primary_chain_position: downstream
+summary_short: 集團以醫療器材銷售、維修及租賃為主，另經營生物晶片與檢測產品。
+summary_long: 浩泰集團營收以醫療器材部門為主，2025年該部門營收為新臺幣2億1,269.8萬元，生技部門為3,195.8萬元。醫療器材業務由子公司八億實業經營，涵蓋設備銷售、維修與租賃。生技產品包括人類乳突病毒基因分型檢測套組、肉種鑑定檢測套組及生物晶片判讀儀，分別用於病毒分型、食品肉種辨識與晶片結果判讀，其中判讀儀限研究開發用途。廣泰金屬工業為最終母公司，旗下另有從事五金批發及國際貿易的中一國際銲材子公司。
+segments:
+- evidence_ids:
+  - e1
+  - e2
+  id: seg_medical
+  name: 醫療器材部門
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e1
+  - e3
+  id: seg_biotech
+  name: 生技部門
+  period: '2025'
+  revenue_share_pct: null
+relations:
+  parents:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 最終母公司
+    details:
+    - 最終母公司
+    edge: ecda6eaddac45
+    evidence_level: primary
+    id: org.廣泰金屬工業股份有限公司
+    name: 廣泰金屬工業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資五金批發及國際貿易子公司
+    details:
+    - 全資五金批發及國際貿易子公司
+    edge: e9665eb83241e
+    evidence_level: primary
+    id: org.中一國際銲材股份有限公司
+    name: 中一國際銲材股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股69%的醫療器材子公司
+    details:
+    - 持股69%的醫療器材子公司
+    edge: e0b3d94b9cc80
+    evidence_level: primary
+    id: org.八億實業股份有限公司
+    name: 八億實業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.neocore.com.tw
 tax_id: '16680539'
 incorporated: '1998-10-22'
 listed: '2004-04-09'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4131#e1:
+    locator: 第67頁，附註三六（一）部門收入與營運結果；單位為新臺幣千元，欄序為生技、醫療器材、調整及沖銷、合計
+    published_date: null
+    publisher: 浩泰精準股份有限公司
+    quote_check: found
+    title: 浩泰精準股份有限公司及子公司114年度合併財務報告
+    url: https://www.neocore.com.tw/wp-content/uploads/114%E5%B9%B4%E5%BA%A6%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
+  tw.4131#e10:
+    locator: 第3頁，公司簡介
+    published_date: '2025-12-23'
+    publisher: 浩泰精準股份有限公司
+    quote_check: found
+    title: 浩泰精準股份有限公司法人說明會
+    url: https://www.neocore.com.tw/wp-content/uploads/2025%E5%B9%B412%E6%9C%8823%E6%97%A5%E6%B5%A9%E6%B3%B0%E6%B3%95%E8%AA%AA%E6%9C%83%E4%B8%AD%E6%96%87.pdf
+  tw.4131#e2:
+    locator: 第66頁，附註三六，醫療器材部門業務
+    published_date: null
+    publisher: 浩泰精準股份有限公司
+    quote_check: found
+    title: 浩泰精準股份有限公司及子公司114年度合併財務報告
+    url: https://www.neocore.com.tw/wp-content/uploads/114%E5%B9%B4%E5%BA%A6%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
+  tw.4131#e3:
+    locator: 第66頁，附註三六，生技部門業務
+    published_date: null
+    publisher: 浩泰精準股份有限公司
+    quote_check: found
+    title: 浩泰精準股份有限公司及子公司114年度合併財務報告
+    url: https://www.neocore.com.tw/wp-content/uploads/114%E5%B9%B4%E5%BA%A6%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
+  tw.4131#e4:
+    locator: 第14頁，附註一，公司沿革
+    published_date: null
+    publisher: 浩泰精準股份有限公司
+    quote_check: found
+    title: 浩泰精準股份有限公司及子公司114年度合併財務報告
+    url: https://www.neocore.com.tw/wp-content/uploads/114%E5%B9%B4%E5%BA%A6%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
+  tw.4131#e5:
+    locator: 第33頁，附註十二（一），合併財務報告編製主體
+    published_date: null
+    publisher: 浩泰精準股份有限公司
+    quote_check: found
+    title: 浩泰精準股份有限公司及子公司114年度合併財務報告
+    url: https://www.neocore.com.tw/wp-content/uploads/114%E5%B9%B4%E5%BA%A6%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
+  tw.4131#e6:
+    locator: 第33頁，附註十二（一），合併財務報告編製主體
+    published_date: null
+    publisher: 浩泰精準股份有限公司
+    quote_check: found
+    title: 浩泰精準股份有限公司及子公司114年度合併財務報告
+    url: https://www.neocore.com.tw/wp-content/uploads/114%E5%B9%B4%E5%BA%A6%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
+  tw.4131#e7:
+    locator: 產品說明
+    published_date: null
+    publisher: 浩泰精準股份有限公司
+    quote_check: found
+    title: 浩泰精準人類乳突病毒基因分型檢測套組
+    url: https://www.neocore.com.tw/human-papillomavirus-genotyping/
+  tw.4131#e8:
+    locator: 產品說明
+    published_date: null
+    publisher: 浩泰精準股份有限公司
+    quote_check: found
+    title: 浩泰精準肉種鑑定檢測套組
+    url: https://www.neocore.com.tw/dr-meat-kit/
+  tw.4131#e9:
+    locator: 產品說明及用途限制
+    published_date: null
+    publisher: 浩泰精準股份有限公司
+    quote_check: found
+    title: 浩泰快速檢驗試劑判讀儀
+    url: https://www.neocore.com.tw/reader/

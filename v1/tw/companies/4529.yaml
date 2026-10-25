@@ -8,12 +8,123 @@ industry:
   l0_code: '20'
   l0_name: 其他業
   l0_name_en: Others
-primary_chain_position: unknown
+  l1: energy
+  l1_name: 能源
+  l1_name_en: Energy & Utilities
+  l2: energy.green
+  l2_name: 綠能
+  l2_name_en: Renewable Energy
+  l3: green.solar
+  l3_name: 太陽能
+  l3_name_en: Solar
+chain: chain.solar
+chain_stage:
+  agreement: both
+  also: []
+  reason: 太陽能售電占營收約47%，並維護屋頂型發電設施，屬系統與電廠階段。
+  stage: system
+  stage_name: 系統與電廠
+  tier: downstream
+primary_chain_position: downstream
+summary_short: 營運包含太陽能售電、不動產出租及防疫口罩銷售。
+summary_long: 淳紳的營運包含房屋出租及太陽能發電。依公司2024年永續報告，該年度售電收入約占47%，防疫口罩銷售約占13%，其餘為租賃投資；公司並維護屋頂型太陽能發電設施，提供綠色電力。官網另說明，由子公司明水推展太陽能電力業務。電動車方面，公司曾投入研發，Thunder Power品牌於2015年法蘭克福車展展示電動概念車；官網記載昶洧電動車於2017年獨立為旗下投資公司，專注電動車研發與商業販售。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_solar
+  name: 太陽能售電
+  period: '2024'
+  revenue_share_pct: 47
+- evidence_ids:
+  - e1
+  id: seg_masks
+  name: 防疫口罩銷售
+  period: '2024'
+  revenue_share_pct: 13
+- evidence_ids:
+  - e1
+  id: seg_rental
+  name: 租賃投資
+  period: '2024'
+  revenue_share_pct: null
+main_theme: theme.ev
+themes:
+- also: []
+  stage: vehicle
+  theme: theme.ev
+  tier: downstream
+relations:
+  subsidiaries:
+  - as_of: 2022-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司推展太陽能電力業務
+    details:
+    - 子公司推展太陽能電力業務
+    edge: ec43aeca85063
+    evidence_level: primary
+    id: org.明水
+    name: 明水
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 官網子公司「明水」的最新完整法人名稱、持股比例與合併範圍尚待最新財報核對。
 website: www.eptech.tw
 tax_id: '22662904'
 incorporated: '1987-11-03'
 listed: '2001-05-04'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-25'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4529#e1:
+    locator: 第5頁，1.02關於本公司／目前營收分布
+    published_date: 2025-08
+    publisher: 淳紳股份有限公司
+    quote_check: found
+    title: 淳紳股份有限公司2024年永續報告書
+    url: https://www.eptech.tw/wp-content/uploads/2025/08/4529淳紳_2024年永續報告書中文版.pdf
+  tw.4529#e2:
+    locator: 第10頁，2.01永續發展策略
+    published_date: 2025-08
+    publisher: 淳紳股份有限公司
+    quote_check: found
+    title: 淳紳股份有限公司2024年永續報告書
+    url: https://www.eptech.tw/wp-content/uploads/2025/08/4529淳紳_2024年永續報告書中文版.pdf
+  tw.4529#e3:
+    locator: 第10頁，環境面
+    published_date: 2025-08
+    publisher: 淳紳股份有限公司
+    quote_check: found
+    title: 淳紳股份有限公司2024年永續報告書
+    url: https://www.eptech.tw/wp-content/uploads/2025/08/4529淳紳_2024年永續報告書中文版.pdf
+  tw.4529#e4:
+    locator: 企業公開訊息／環境永續／未來使用綠能、減少碳排放
+    published_date: null
+    publisher: 淳紳股份有限公司
+    quote_check: found
+    title: 淳紳股份有限公司官網
+    url: https://www.eptech.tw/
+  tw.4529#e5:
+    locator: 關於淳紳／企業沿革
+    published_date: null
+    publisher: 淳紳股份有限公司
+    quote_check: found
+    title: 淳紳股份有限公司官網
+    url: https://www.eptech.tw/
+  tw.4529#e6:
+    locator: 關於淳紳／企業沿革
+    published_date: null
+    publisher: 淳紳股份有限公司
+    quote_check: found
+    title: 淳紳股份有限公司官網
+    url: https://www.eptech.tw/
+  tw.4529#e7:
+    locator: 第5頁，營運轉型與投資領域
+    published_date: 2025-08
+    publisher: 淳紳股份有限公司
+    quote_check: found
+    title: 淳紳股份有限公司2024年永續報告書
+    url: https://www.eptech.tw/wp-content/uploads/2025/08/4529淳紳_2024年永續報告書中文版.pdf

@@ -8,12 +8,158 @@ industry:
   l0_code: '15'
   l0_name: 航運業
   l0_name_en: Shipping and Transportation
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.transport
+  l2_name: 運輸
+  l2_name_en: Transportation
+  l3: trans.logistics
+  l3_name: 物流與倉儲
+  l3_name_en: Logistics & Warehousing
+primary_chain_position: not_applicable
+summary_short: 經營貨櫃集散站，提供船舶裝卸、櫃場及倉棧服務。
+summary_long: 中櫃以船舶裝卸、櫃場及倉棧作業提供貨櫃集散服務。依2025年報個體口徑，貨櫃集散站作業收入為新台幣31.13億元，占營業收入100%。集團直接子公司包括中友船舶貨物裝卸承攬、中櫃投資及銘揚投資；中櫃並透過中櫃投資持有安躍系統與臺運實業，兩家公司屬間接子公司。截至2026年6月底，中櫃投資對安躍系統及臺運實業的持股分別為70%及67.25%。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_container_terminal
+  name: 貨櫃集散站作業（個體口徑）
+  period: '2025'
+  revenue_share_pct: 100
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: e8517777c4dc1
+    evidence_level: primary
+    id: org.中友船舶貨物裝卸承攬股份有限公司
+    name: 中友船舶貨物裝卸承攬股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: e87abd6d17800
+    evidence_level: primary
+    id: org.中櫃投資股份有限公司
+    name: 中櫃投資股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過中櫃投資持有的間接子公司
+    details:
+    - 透過中櫃投資持有的間接子公司
+    edge: e29d336aafea6
+    evidence_level: primary
+    id: org.安躍系統股份有限公司
+    name: 安躍系統股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過中櫃投資持有的間接子公司
+    details:
+    - 透過中櫃投資持有的間接子公司
+    edge: eb37308d18e65
+    evidence_level: primary
+    id: org.臺運實業股份有限公司
+    name: 臺運實業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: e3f16ba836fad
+    evidence_level: primary
+    id: org.銘揚投資股份有限公司
+    name: 銘揚投資股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.cctcorp.com.tw
 tax_id: '39014517'
 incorporated: '1969-11-27'
 listed: '1995-01-20'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2613#e1:
+    locator: 印刷頁62，業務範圍之營業比重表；金額單位為新台幣仟元，最後兩欄為114年度收入及比重
+    published_date: '2026-04-29'
+    publisher: 中國貨櫃運輸股份有限公司
+    quote_check: found
+    title: 中國貨櫃運輸股份有限公司114年年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52167/2026/RNS/52167_rns_2026-04-29_468f23a5-e048-4d10-92a0-e571623e3fae.pdf
+  tw.2613#e2:
+    locator: 印刷頁62，公司目前之商品（服務）項目
+    published_date: '2026-04-29'
+    publisher: 中國貨櫃運輸股份有限公司
+    quote_check: found
+    title: 中國貨櫃運輸股份有限公司114年年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52167/2026/RNS/52167_rns_2026-04-29_468f23a5-e048-4d10-92a0-e571623e3fae.pdf
+  tw.2613#e3:
+    locator: 印刷頁58，本公司對轉投資事業持股表，中友船舶列；另見頁89關係企業組織圖
+    published_date: '2026-04-29'
+    publisher: 中國貨櫃運輸股份有限公司
+    quote_check: unreachable
+    title: 中國貨櫃運輸股份有限公司114年年報
+    url: https://financialfilings.com/filings/cctc-2613/annual-report/2026/38405028/
+  tw.2613#e4:
+    locator: 印刷頁58，本公司對轉投資事業持股表，中櫃投資列；另見頁89關係企業組織圖
+    published_date: '2026-04-29'
+    publisher: 中國貨櫃運輸股份有限公司
+    quote_check: unreachable
+    title: 中國貨櫃運輸股份有限公司114年年報
+    url: https://financialfilings.com/filings/cctc-2613/annual-report/2026/38405028/
+  tw.2613#e5:
+    locator: 印刷頁58，本公司對轉投資事業持股表，銘揚投資列；另見頁89關係企業組織圖
+    published_date: '2026-04-29'
+    publisher: 中國貨櫃運輸股份有限公司
+    quote_check: unreachable
+    title: 中國貨櫃運輸股份有限公司114年年報
+    url: https://financialfilings.com/filings/cctc-2613/annual-report/2026/38405028/
+  tw.2613#e6:
+    locator: 附註IV(III)合併基礎，2026年6月30日子公司表；The Company直接持有CCTC Friend Stevedore、CCTC Investment及Ming Yang Investment
+    published_date: '2026-10-01'
+    publisher: 中國貨櫃運輸股份有限公司
+    quote_check: unreachable
+    title: 中國貨櫃運輸股份有限公司及子公司2026年第二季合併財務報告英文版
+    url: https://financialfilings.com/filings/cctc-2613/interim-quarterly-report/2026/64547610/
+  tw.2613#e7:
+    locator: 附註IV(III)子公司表，CCTC Investment投資Anyo System列，2026年6月30日持股70.00%
+    published_date: '2026-10-01'
+    publisher: 中國貨櫃運輸股份有限公司
+    quote_check: unreachable
+    title: 中國貨櫃運輸股份有限公司及子公司2026年第二季合併財務報告英文版
+    url: https://financialfilings.com/filings/cctc-2613/interim-quarterly-report/2026/64547610/
+  tw.2613#e8:
+    locator: 附註IV(III)子公司表，CCTC Investment投資臺運實業列，2026年6月30日持股67.25%；英文表將名稱拼為Tai Yunnn
+    published_date: '2026-10-01'
+    publisher: 中國貨櫃運輸股份有限公司
+    quote_check: unreachable
+    title: 中國貨櫃運輸股份有限公司及子公司2026年第二季合併財務報告英文版
+    url: https://financialfilings.com/filings/cctc-2613/interim-quarterly-report/2026/64547610/

@@ -8,12 +8,190 @@ industry:
   l0_code: '15'
   l0_name: 航運業
   l0_name_en: Shipping and Transportation
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.transport
+  l2_name: 運輸
+  l2_name_en: Transportation
+  l3: trans.land
+  l3_name: 陸運與交通服務
+  l3_name_en: Land Transport & Mobility Services
+primary_chain_position: not_applicable
+summary_short: 以貨櫃內陸運輸、重機件運輸及吊裝為主，另經營洋酒與油氣銷售。
+summary_long: 陸海以貨櫃內陸運輸為主要收入來源，2025年占營收57%；重機件運輸及吊裝占16%，洋酒進口與油氣站銷貨占22%，倉儲及租賃占5%。貨櫃服務包括航商船邊作業、跨區轉運及貨主進出口貨櫃運送。重機件業務處理超長、超寬、超高及超重貨物，提供路線調查、運輸規劃、許可申請及吊裝，並結合沿海拖駁船運輸。集團另有太陽能發電相關業務，旗下子公司包括從事洋酒食品進出口的陸海洋行，以及從事發電及能源技術服務的陸海天新。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_container
+  name: 貨櫃內陸運輸業務
+  period: '2025'
+  revenue_share_pct: 57
+- evidence_ids:
+  - e1
+  id: seg_heavy
+  name: 重機件運輸及吊裝業務
+  period: '2025'
+  revenue_share_pct: 16
+- evidence_ids:
+  - e1
+  id: seg_sales
+  name: 銷貨收入（洋酒進口、油氣站）
+  period: '2025'
+  revenue_share_pct: 22
+- evidence_ids:
+  - e1
+  id: seg_warehouse_rental
+  name: 倉儲業務、租賃收入
+  period: '2025'
+  revenue_share_pct: 5
+relations:
+  subsidiaries:
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 再生能源發電設備子公司
+    details:
+    - 再生能源發電設備子公司
+    edge: ec5533ca4ef22
+    evidence_level: primary
+    id: org.chiayi-new-energy
+    name: 嘉新能源股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 專業投資子公司
+    details:
+    - 專業投資子公司
+    edge: eb54c64ec1b9b
+    evidence_level: primary
+    id: org.eternal-full-enterprise
+    name: Eternal Full Enterprise Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有全部股權之子公司
+    details:
+    - 直接持有全部股權之子公司
+    edge: ee50d33482903
+    evidence_level: primary
+    id: org.new-anho-gas-station
+    name: 新安和加氣站股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 發電及能源技術服務子公司
+    details:
+    - 發電及能源技術服務子公司
+    edge: ebd5c682de41d
+    evidence_level: primary
+    id: org.sea-land-sinogreenergy
+    name: 陸海天新股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 洋酒食品進出口子公司
+    details:
+    - 洋酒食品進出口子公司
+    edge: e1fc929402282
+    evidence_level: primary
+    id: org.sea-land-wine-spirits
+    name: 陸海洋行股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.sea-land.com.tw
 tax_id: 04927158
 incorporated: '1973-06-21'
 listed: '1997-01-25'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.5603#e1:
+    locator: 第79頁，Main Business and Revenue Proportion，PDF第86頁
+    published_date: '2026-04-15'
+    publisher: 陸海股份有限公司
+    quote_check: found
+    title: 2025 Annual Report
+    url: https://www.sea-land.com.tw/data/10000/upload/files/17803709731359.pdf
+  tw.5603#e10:
+    locator: 第15頁，附註四（三）列入合併財務報告之子公司
+    published_date: null
+    publisher: 陸海股份有限公司
+    quote_check: found
+    title: 民國115年及114年第一季合併財務報告
+    url: https://www.sea-land.com.tw/data/10000/upload/files/17785585108713.pdf
+  tw.5603#e2:
+    locator: 主要業務內容
+    published_date: null
+    publisher: 陸海股份有限公司
+    quote_check: found
+    title: 貨櫃內陸運輸
+    url: https://www.sea-land.com.tw/zh-tw/business
+  tw.5603#e3:
+    locator: 重機件運輸及吊裝
+    published_date: null
+    publisher: 陸海股份有限公司
+    quote_check: found
+    title: 重機件運輸介紹
+    url: https://www.sea-land.com.tw/zh-tw/business02
+  tw.5603#e4:
+    locator: 沿海船舶運輸
+    published_date: null
+    publisher: 陸海股份有限公司
+    quote_check: found
+    title: 重機件運輸介紹
+    url: https://www.sea-land.com.tw/zh-tw/business02
+  tw.5603#e5:
+    locator: 第9頁，太陽能發電；報告註明2025年8月發行
+    published_date: null
+    publisher: 陸海股份有限公司
+    quote_check: found
+    title: 2024年陸海股份有限公司永續報告書
+    url: https://www.sea-land.com.tw/upload/files/17561773580819.pdf
+  tw.5603#e6:
+    locator: 第15頁，附註四（三）列入合併財務報告之子公司
+    published_date: null
+    publisher: 陸海股份有限公司
+    quote_check: found
+    title: 民國115年及114年第一季合併財務報告
+    url: https://www.sea-land.com.tw/data/10000/upload/files/17785585108713.pdf
+  tw.5603#e7:
+    locator: 第15頁，附註四（三）列入合併財務報告之子公司
+    published_date: null
+    publisher: 陸海股份有限公司
+    quote_check: found
+    title: 民國115年及114年第一季合併財務報告
+    url: https://www.sea-land.com.tw/data/10000/upload/files/17785585108713.pdf
+  tw.5603#e8:
+    locator: 第15頁，附註四（三）列入合併財務報告之子公司
+    published_date: null
+    publisher: 陸海股份有限公司
+    quote_check: found
+    title: 民國115年及114年第一季合併財務報告
+    url: https://www.sea-land.com.tw/data/10000/upload/files/17785585108713.pdf
+  tw.5603#e9:
+    locator: 第15頁，附註四（三）列入合併財務報告之子公司
+    published_date: null
+    publisher: 陸海股份有限公司
+    quote_check: found
+    title: 民國115年及114年第一季合併財務報告
+    url: https://www.sea-land.com.tw/data/10000/upload/files/17785585108713.pdf

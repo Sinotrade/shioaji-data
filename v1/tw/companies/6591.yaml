@@ -8,13 +8,270 @@ industry:
   l0_code: '25'
   l0_name: 電腦及週邊設備業
   l0_name_en: Computer and Peripheral Equipment
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.thermal
+  l3_name: 散熱模組與零組件
+  l3_name_en: Thermal Solutions
+primary_chain_position: midstream
+summary_short: 生產與銷售散熱風扇，主要營收來自電競應用。
+summary_long: 動力-KY主要從事直流散熱風扇的生產與銷售，產品涵蓋DC無刷散熱風扇、鼓風扇、EC風扇、微型風扇及高IP防護等級風扇，應用於電競、通訊、伺服器、工控、家電與車載散熱。2025年電競應用占營收77.96%，其餘依序為一般散熱10.02%、工控及家電7.69%、通訊3.20%、車載及其他1.13%。集團透過新能量科技從事散熱風扇銷售，並由東莞動利、溙奕（江西）及泰國子公司經營散熱風扇產銷。
+segments:
+- evidence_ids:
+  - e3
+  id: seg_gaming
+  name: 電競
+  period: '2025'
+  revenue_share_pct: 77.96
+- evidence_ids:
+  - e3
+  id: seg_general
+  name: 一般散熱
+  period: '2025'
+  revenue_share_pct: 10.02
+- evidence_ids:
+  - e3
+  id: seg_industrial_home
+  name: 工控及家電
+  period: '2025'
+  revenue_share_pct: 7.69
+- evidence_ids:
+  - e3
+  id: seg_communications
+  name: 通訊
+  period: '2025'
+  revenue_share_pct: 3.2
+- evidence_ids:
+  - e3
+  id: seg_automotive_other
+  name: 車載及其他
+  period: '2025'
+  revenue_share_pct: 1.13
+main_theme: theme.ai_server
+themes:
+- also: []
+  stage: components
+  theme: theme.ai_server
+  tier: midstream
+- also: []
+  stage: components
+  theme: theme.5g
+  tier: upstream
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過United Strategy Inc.間接持有100%的散熱風扇產銷子公司
+    details:
+    - 透過United Strategy Inc.間接持有100%的散熱風扇產銷子公司
+    edge: e49e4cfa75013
+    evidence_level: primary
+    id: org.dongguan-dongli-electronics
+    name: 東莞動利電子有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%的投資控股子公司
+    details:
+    - 直接持有100%的投資控股子公司
+    edge: ea99035817426
+    evidence_level: primary
+    id: org.power-logic-holdings
+    name: Power Logic Holdings Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過Power Logic Holdings Inc.間接持有100%的泰國子公司
+    details:
+    - 透過Power Logic Holdings Inc.間接持有100%的泰國子公司
+    edge: ea793185a3c9e
+    evidence_level: primary
+    id: org.power-logic-tech-thailand
+    name: Power Logic Tech（Thailand）Co., Ltd
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%的散熱風扇銷售子公司
+    details:
+    - 直接持有100%的散熱風扇銷售子公司
+    edge: e5d7a79bb410a
+    evidence_level: primary
+    id: org.power-logic-technology
+    name: 新能量科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過新能量科技間接持有80%的散熱風扇產銷子公司
+    details:
+    - 透過新能量科技間接持有80%的散熱風扇產銷子公司
+    edge: eb018673ec6c6
+    evidence_level: primary
+    id: org.qicheng-technology
+    name: 琦程科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%的投資控股及散熱風扇銷售子公司
+    details:
+    - 直接持有100%的投資控股及散熱風扇銷售子公司
+    edge: e2697f74b2c13
+    evidence_level: primary
+    id: org.sunny-sharp-international
+    name: Sunny Sharp International Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過United Strategy Inc.間接持有100%的散熱風扇產銷子公司
+    details:
+    - 透過United Strategy Inc.間接持有100%的散熱風扇產銷子公司
+    edge: e1093ca6e7527
+    evidence_level: primary
+    id: org.taiyi-jiangxi-electronic-technology
+    name: 溙奕（江西）電子科技有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%的投資控股子公司
+    details:
+    - 直接持有100%的投資控股子公司
+    edge: e7e03d46df645
+    evidence_level: primary
+    id: org.united-strategy
+    name: United Strategy Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.sun-max.com.tw
 tax_id: '42461124'
 incorporated: '2013-11-28'
 listed: '2017-12-28'
 foreign_registration: KY 開曼群島
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6591#e10:
+    locator: 第18頁，附註十一子公司，Sunny Sharp International Limited列
+    published_date: null
+    publisher: 動力科技股份有限公司
+    quote_check: found
+    title: 2026年第二季合併財務報告
+    url: https://www.sun-max.com.tw/_i/assets/upload/files/2026Q2%E5%90%88%E4%BD%B5%E5%A0%B1%E5%91%8A.pdf
+  tw.6591#e11:
+    locator: 第18頁，附註十一子公司，東莞動利電子列
+    published_date: null
+    publisher: 動力科技股份有限公司
+    quote_check: found
+    title: 2026年第二季合併財務報告
+    url: https://www.sun-max.com.tw/_i/assets/upload/files/2026Q2%E5%90%88%E4%BD%B5%E5%A0%B1%E5%91%8A.pdf
+  tw.6591#e12:
+    locator: 第18頁，附註十一子公司，溙奕（江西）電子科技列
+    published_date: null
+    publisher: 動力科技股份有限公司
+    quote_check: found
+    title: 2026年第二季合併財務報告
+    url: https://www.sun-max.com.tw/_i/assets/upload/files/2026Q2%E5%90%88%E4%BD%B5%E5%A0%B1%E5%91%8A.pdf
+  tw.6591#e13:
+    locator: 第18頁，附註十一子公司，琦程科技列
+    published_date: null
+    publisher: 動力科技股份有限公司
+    quote_check: found
+    title: 2026年第二季合併財務報告
+    url: https://www.sun-max.com.tw/_i/assets/upload/files/2026Q2%E5%90%88%E4%BD%B5%E5%A0%B1%E5%91%8A.pdf
+  tw.6591#e14:
+    locator: 第18頁，附註十一子公司，泰國子公司列
+    published_date: null
+    publisher: 動力科技股份有限公司
+    quote_check: found
+    title: 2026年第二季合併財務報告
+    url: https://www.sun-max.com.tw/_i/assets/upload/files/2026Q2%E5%90%88%E4%BD%B5%E5%A0%B1%E5%91%8A.pdf
+  tw.6591#e2:
+    locator: 印刷頁103，PDF第109頁，現有商品項目
+    published_date: null
+    publisher: 動力科技股份有限公司
+    quote_check: found
+    title: 動力科技股份有限公司2025年度年報
+    url: https://www.sun-max.com.tw/_i/assets/upload/files/1150423%E5%8B%95%E5%8A%9B%E5%B9%B4%E5%A0%B1V3(%E4%B8%8A%E5%82%B3%E6%AA%94).pdf
+  tw.6591#e3:
+    locator: 印刷頁103，PDF第109頁，主要產品之營業比重；後兩欄為2025年度
+    published_date: null
+    publisher: 動力科技股份有限公司
+    quote_check: found
+    title: 動力科技股份有限公司2025年度年報
+    url: https://www.sun-max.com.tw/_i/assets/upload/files/1150423%E5%8B%95%E5%8A%9B%E5%B9%B4%E5%A0%B1V3(%E4%B8%8A%E5%82%B3%E6%AA%94).pdf
+  tw.6591#e4:
+    locator: 印刷頁103，PDF第109頁，所營業務之主要內容
+    published_date: null
+    publisher: 動力科技股份有限公司
+    quote_check: found
+    title: 動力科技股份有限公司2025年度年報
+    url: https://www.sun-max.com.tw/_i/assets/upload/files/1150423%E5%8B%95%E5%8A%9B%E5%B9%B4%E5%A0%B1V3(%E4%B8%8A%E5%82%B3%E6%AA%94).pdf
+  tw.6591#e5:
+    locator: 印刷頁1，PDF第7頁，致股東報告書
+    published_date: null
+    publisher: 動力科技股份有限公司
+    quote_check: found
+    title: 動力科技股份有限公司2024年度年報
+    url: https://www.sun-max.com.tw/_i/assets/upload/files/1140417-%E5%8B%95%E5%8A%9B%E5%B9%B4%E5%A0%B1V3%E5%82%B3-%E4%B8%8A%E5%82%B3mops.pdf
+  tw.6591#e6:
+    locator: 為何選擇動力製造散熱風扇產品
+    published_date: null
+    publisher: 動力科技股份有限公司
+    quote_check: found
+    title: 散熱產品
+    url: https://www.sun-max.com.tw/product_tw.php?id=254
+  tw.6591#e7:
+    locator: 第18頁，附註十一子公司；三欄股權比例依序為2026年6月底、2025年底及2025年6月底
+    published_date: null
+    publisher: 動力科技股份有限公司
+    quote_check: found
+    title: 2026年第二季合併財務報告
+    url: https://www.sun-max.com.tw/_i/assets/upload/files/2026Q2%E5%90%88%E4%BD%B5%E5%A0%B1%E5%91%8A.pdf
+  tw.6591#e8:
+    locator: 第18頁，附註十一子公司，United Strategy Inc.列
+    published_date: null
+    publisher: 動力科技股份有限公司
+    quote_check: found
+    title: 2026年第二季合併財務報告
+    url: https://www.sun-max.com.tw/_i/assets/upload/files/2026Q2%E5%90%88%E4%BD%B5%E5%A0%B1%E5%91%8A.pdf
+  tw.6591#e9:
+    locator: 第18頁，附註十一子公司，新能量科技列
+    published_date: null
+    publisher: 動力科技股份有限公司
+    quote_check: found
+    title: 2026年第二季合併財務報告
+    url: https://www.sun-max.com.tw/_i/assets/upload/files/2026Q2%E5%90%88%E4%BD%B5%E5%A0%B1%E5%91%8A.pdf

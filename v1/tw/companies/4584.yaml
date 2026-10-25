@@ -8,12 +8,189 @@ industry:
   l0_code: '05'
   l0_name: 電機機械
   l0_name_en: Electric Machinery
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.machinery
+  l2_name: 機械與自動化
+  l2_name_en: Machinery & Automation
+  l3: mach.automation
+  l3_name: 工業自動化與機器人
+  l3_name_en: Industrial Automation & Robotics
+primary_chain_position: not_applicable
+summary_short: 製造工業自動化用液壓與氣壓元件，並提供動力系統及機械手臂整合。
+summary_long: 君帆以工業自動化用液壓與氣壓元件為主要產品，並提供油電機械系統及機械手臂整合規劃。2026年上半年收入分為液壓元件、氣壓元件、系統整合與其他，其中液壓元件收入金額最高。油壓產品包含柱型與薄型油缸，氣壓產品包括標準柱型氣缸及氣壓電磁閥，另有標準油壓動力系統。機械手臂業務提供自動化整合規劃，官網並列有UR協作型機器人方案。集團直接持有君帆(泰國)有限公司，並透過投資子公司間接持有無錫君帆科技有限公司。
+segments:
+- evidence_ids:
+  - e5
+  id: hydraulic
+  name: 液壓元件
+  period: 2026-01-01/2026-06-30
+  revenue_share_pct: null
+- evidence_ids:
+  - e5
+  id: pneumatic
+  name: 氣壓元件
+  period: 2026-01-01/2026-06-30
+  revenue_share_pct: null
+- evidence_ids:
+  - e5
+  id: integration
+  name: 系統整合
+  period: 2026-01-01/2026-06-30
+  revenue_share_pct: null
+- evidence_ids:
+  - e5
+  id: other
+  name: 其他
+  period: 2026-01-01/2026-06-30
+  revenue_share_pct: null
+main_theme: theme.robotics
+themes:
+- also: []
+  stage: system
+  theme: theme.robotics
+  tier: downstream
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過Guan Jie間接持有之投資子公司
+    details:
+    - 透過Guan Jie間接持有之投資子公司
+    edge: edd1fb77f308f
+    evidence_level: primary
+    id: org.chun-shun-investments
+    name: Chun Shun Investments Co.,Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有之投資子公司
+    details:
+    - 直接持有之投資子公司
+    edge: ec625584c9e33
+    evidence_level: primary
+    id: org.guan-jie-holding
+    name: Guan Jie Holding Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有之泰國子公司
+    details:
+    - 直接持有之泰國子公司
+    edge: e2d22965bbc4b
+    evidence_level: primary
+    id: org.jufan-thailand
+    name: 君帆(泰國)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過投資子公司間接持有之無錫子公司
+    details:
+    - 透過投資子公司間接持有之無錫子公司
+    edge: e2da1cfdafb10
+    evidence_level: primary
+    id: org.wuxi-jufan-technology
+    name: 無錫君帆科技有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://jfc.co.com/zh-hant
 tax_id: '69777435'
 incorporated: '1983-04-27'
 listed: '2022-10-05'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4584#e1:
+    locator: YOUR MOTION,OUR MISSION
+    published_date: null
+    publisher: 君帆工業股份有限公司
+    quote_check: found
+    title: 關於JFC
+    url: https://jfc.co.com/zh-hant/company/
+  tw.4584#e10:
+    locator: 第13頁，Chun Shun投資之子公司列
+    published_date: '2026-08-11'
+    publisher: 君帆工業股份有限公司
+    quote_check: found
+    title: 民國115年及114年第二季合併財務報告暨會計師核閱報告
+    url: https://jfc.co.com/wp-content/uploads/2026/08/2026Q2_%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1%E5%A0%B1%E5%91%8A.pdf
+  tw.4584#e2:
+    locator: 產品分類
+    published_date: null
+    publisher: 君帆工業股份有限公司
+    quote_check: found
+    title: 油壓執行元件
+    url: https://jfc.co.com/zh-hant/product-category/hydraulics-zh-hant/cylinders-series-zh-hant/
+  tw.4584#e3:
+    locator: 產品分類
+    published_date: null
+    publisher: 君帆工業股份有限公司
+    quote_check: found
+    title: 油壓執行元件
+    url: https://jfc.co.com/zh-hant/product-category/hydraulics-zh-hant/cylinders-series-zh-hant/
+  tw.4584#e4:
+    locator: 產品列表
+    published_date: null
+    publisher: 君帆工業股份有限公司
+    quote_check: found
+    title: 氣壓產品
+    url: https://jfc.co.com/zh-hant/product-category/pneumatic-zh-hant/
+  tw.4584#e4b:
+    locator: 產品列表，W4V
+    published_date: null
+    publisher: 君帆工業股份有限公司
+    quote_check: not_found
+    title: 氣壓產品
+    url: https://jfc.co.com/zh-hant/product-category/pneumatic-zh-hant/
+  tw.4584#e5:
+    locator: 第26頁，附註六（十五）營業收入；金額單位為新台幣仟元
+    published_date: '2026-08-11'
+    publisher: 君帆工業股份有限公司
+    quote_check: found
+    title: 民國115年及114年第二季合併財務報告暨會計師核閱報告
+    url: https://jfc.co.com/wp-content/uploads/2026/08/2026Q2_%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1%E5%A0%B1%E5%91%8A.pdf
+  tw.4584#e6:
+    locator: 產品名稱
+    published_date: null
+    publisher: 君帆工業股份有限公司
+    quote_check: found
+    title: 標準油壓動力系統
+    url: https://jfc.co.com/zh-hant/product/%E6%A8%99%E6%BA%96%E6%B2%B9%E5%A3%93%E5%8B%95%E5%8A%9B%E7%B3%BB%E7%B5%B1/
+  tw.4584#e7:
+    locator: 協作型機器人介紹
+    published_date: null
+    publisher: 君帆工業股份有限公司
+    quote_check: found
+    title: 機械手臂自動化-UR Robots
+    url: https://jfc.co.com/zh-hant/robot-arm-automation-ur-robots/
+  tw.4584#e8:
+    locator: 第13頁，合併財務報告編製原則之子公司表
+    published_date: '2026-08-11'
+    publisher: 君帆工業股份有限公司
+    quote_check: found
+    title: 民國115年及114年第二季合併財務報告暨會計師核閱報告
+    url: https://jfc.co.com/wp-content/uploads/2026/08/2026Q2_%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1%E5%A0%B1%E5%91%8A.pdf
+  tw.4584#e9:
+    locator: 第13頁，Guan Jie投資之子公司列
+    published_date: '2026-08-11'
+    publisher: 君帆工業股份有限公司
+    quote_check: found
+    title: 民國115年及114年第二季合併財務報告暨會計師核閱報告
+    url: https://jfc.co.com/wp-content/uploads/2026/08/2026Q2_%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1%E5%A0%B1%E5%91%8A.pdf

@@ -8,15 +8,60 @@ industry:
   l0_code: '04'
   l0_name: 紡織纖維
   l0_name_en: Textiles
-primary_chain_position: unknown
+  l1: materials
+  l1_name: 原物料
+  l1_name_en: Materials
+  l2: mat.other
+  l2_name: 其他原物料
+  l2_name_en: Other Materials
+  l3: matl.textile_fiber
+  l3_name: 紡織纖維與機能布料
+  l3_name_en: Textiles, Fibers & Functional Fabrics
+chain: chain.textile
+chain_stage:
+  agreement: both
+  also: []
+  reason: 聚酯加工絲占營收99.14%，以聚酯原絲經假撚製成加工絲，屬纖維與紗階段。
+  stage: fiber
+  stage_name: 纖維與紗
+  tier: upstream
+primary_chain_position: upstream
+summary_short: 主要生產及銷售聚酯加工絲，另有少量加工與租賃收入。
+summary_long: 光明絲織廠以聚酯加工絲的生產與銷售為主，產品包括細丹高條紗與功能性紗線，並以功能性加工絲及環保加工絲為主要產品。加工絲主要供針織使用，平織為輔，可用於時尚衣著、戶外休閒運動用布、鞋材及家飾用布。公司以聚酯原絲經假撚製造加工絲，位於紡織產業鏈的纖維與紗階段。2025年聚酯加工絲占營收99.14%，加工收入占0.13%，租賃收入占0.67%，其他占0.06%。宜進實業股份有限公司為其母公司。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_polyester_yarn
+  name: 聚酯加工絲
+  period: '2025'
+  revenue_share_pct: 99.14
+- evidence_ids:
+  - e2
+  id: seg_processing
+  name: 加工收入
+  period: '2025'
+  revenue_share_pct: 0.13
+- evidence_ids:
+  - e2
+  id: seg_rental
+  name: 租賃收入
+  period: '2025'
+  revenue_share_pct: 0.67
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 0.06
 relations:
   parents:
-  - as_of: '2025-12-31'
+  - as_of: '2026-03-31'
     confidence: ai_cross_checked
     counterparty_shares: []
     detail: 加工絲生產子公司
     details:
     - 加工絲生產子公司
+    - 母公司
     edge: ee2666a33332f
     evidence_level: primary
     id: tw.1457
@@ -24,7 +69,7 @@ relations:
     ranking_basis: unranked
     share_basis: null
     share_pct: null
-    weight: 1
+    weight: 2
   transactions:
   - amount: 新台幣445,187仟元 (不含營業稅)
     as_of: '2024-12-09'
@@ -51,7 +96,42 @@ website: www.kwangming.com
 tax_id: '29576307'
 incorporated: '1966-06-22'
 listed: '2002-04-18'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4420#e2:
+    locator: 第45頁「營業比重」；表列113年度及114年度營業收入、營業比重
+    published_date: '2026-03-31'
+    publisher: 光明絲織廠股份有限公司
+    quote_check: not_found
+    title: 光明絲織廠股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=4420&colorchg=1&filename=2025_4420_20260526F04.pdf&kind=F&step=9
+  tw.4420#e3:
+    locator: 第45頁「公司目前之商品(服務)項目」
+    published_date: '2026-03-31'
+    publisher: 光明絲織廠股份有限公司
+    quote_check: not_found
+    title: 光明絲織廠股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=4420&colorchg=1&filename=2025_4420_20260526F04.pdf&kind=F&step=9
+  tw.4420#e4:
+    locator: 第1頁「致股東報告書」
+    published_date: '2026-03-31'
+    publisher: 光明絲織廠股份有限公司
+    quote_check: not_found
+    title: 光明絲織廠股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=4420&colorchg=1&filename=2025_4420_20260526F04.pdf&kind=F&step=9
+  tw.4420#e5:
+    locator: 第51頁「主要產品之產製過程」流程圖
+    published_date: '2026-03-31'
+    publisher: 光明絲織廠股份有限公司
+    quote_check: not_found
+    title: 光明絲織廠股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=4420&colorchg=1&filename=2025_4420_20260526F04.pdf&kind=F&step=9
+  tw.4420#e6:
+    locator: 第7頁「董事專業資格及獨立董事獨立性資訊揭露」
+    published_date: '2026-03-31'
+    publisher: 光明絲織廠股份有限公司
+    quote_check: not_found
+    title: 光明絲織廠股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=4420&colorchg=1&filename=2025_4420_20260526F04.pdf&kind=F&step=9

@@ -8,12 +8,210 @@ industry:
   l0_code: '24'
   l0_name: 半導體業
   l0_name_en: Semiconductor
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.semi
+  l2_name: 半導體
+  l2_name_en: Semiconductors
+  l3: semi.distribution
+  l3_name: IC 通路
+  l3_name_en: IC Distribution
+chain: chain.semiconductor
+chain_stage:
+  agreement: both
+  also: []
+  reason: 以加值型IC代理銷售為主，多媒體控制晶片應用產品占營收54.84%，屬IC通路。
+  stage: distribution
+  stage_name: IC 通路與模組
+  tier: downstream
+primary_chain_position: downstream
+summary_short: 以加值型IC代理銷售及軟韌體整合服務為主，主要收入來自多媒體控制晶片應用產品。
+summary_long: 海德威以加值型 IC 代理銷售為主要業務，並提供嵌入式軟韌體、硬體與系統整合服務。2025 年營收中，多媒體控制晶片應用產品占 54.84%，單晶片微控器占 18.61%，語音／音樂控制晶片占 17.08%，液晶顯示控制晶片占 9.24%，記憶晶片占 0.15%，其餘為其他產品。集團透過 HIGHER WAY Holding Inc. 持有海外銷售與技術服務子公司；海智匯數位科技已解散，截至 2026 年 8 月仍辦理清算。
+segments:
+- evidence_ids:
+  - e3
+  id: seg_multimedia
+  name: 多媒體控制晶片應用產品
+  period: '2025'
+  revenue_share_pct: 54.84
+- evidence_ids:
+  - e4
+  id: seg_mcu
+  name: 單晶片微控器應用產品
+  period: '2025'
+  revenue_share_pct: 18.61
+- evidence_ids:
+  - e5
+  id: seg_speech
+  name: 語音／音樂控制晶片應用產品
+  period: '2025'
+  revenue_share_pct: 17.08
+- evidence_ids:
+  - e6
+  id: seg_lcd
+  name: 液晶顯示控制晶片應用產品
+  period: '2025'
+  revenue_share_pct: 9.24
+- evidence_ids:
+  - e7
+  id: seg_memory
+  name: 記憶晶片應用產品
+  period: '2025'
+  revenue_share_pct: 0.15
+- evidence_ids:
+  - e7
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 0.08
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接全資持有的海外投資控股子公司
+    details:
+    - 直接全資持有的海外投資控股子公司
+    edge: e0aabec921b9d
+    evidence_level: primary
+    id: org.higher-way-holding-inc
+    name: HIGHER WAY Holding Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過HIGHER WAY Holding Inc.全資持有的貿易經銷子公司
+    details:
+    - 透過HIGHER WAY Holding Inc.全資持有的貿易經銷子公司
+    edge: e0426161c9ae0
+    evidence_level: primary
+    id: org.honour-international-co-ltd
+    name: HONOUR International Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過HIGHER WAY Holding Inc.全資持有的軟體服務子公司
+    details:
+    - 透過HIGHER WAY Holding Inc.全資持有的軟體服務子公司
+    edge: e0d136872243a
+    evidence_level: primary
+    id: org.海德威軟件開發-深圳-有限公司
+    name: 海德威軟件開發(深圳)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-08-11'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 原全資子公司，已解散並辦理清算
+    details:
+    - 原全資子公司，已解散並辦理清算
+    edge: eff2153980a39
+    evidence_level: primary
+    id: org.海智匯數位科技股份有限公司
+    name: 海智匯數位科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.higherway.com.tw
 tax_id: '86105539'
 incorporated: '1991-04-13'
 listed: '2005-01-27'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3268#e10:
+    locator: 第14頁，列入合併財務報告之子公司及所持股權百分比
+    published_date: null
+    publisher: 海德威電子工業股份有限公司及子公司
+    quote_check: found
+    title: 民國115年及114年第二季合併財務報告暨會計師核閱報告
+    url: https://www.higherway.com.tw/_i/assets/file/merge/559661ccbd06bd1321f1e235294e02cc.pdf
+  tw.3268#e11:
+    locator: 第14頁，列入合併財務報告之子公司及所持股權百分比
+    published_date: null
+    publisher: 海德威電子工業股份有限公司及子公司
+    quote_check: found
+    title: 民國115年及114年第二季合併財務報告暨會計師核閱報告
+    url: https://www.higherway.com.tw/_i/assets/file/merge/559661ccbd06bd1321f1e235294e02cc.pdf
+  tw.3268#e12:
+    locator: 第14頁，合併基礎註2
+    published_date: null
+    publisher: 海德威電子工業股份有限公司及子公司
+    quote_check: found
+    title: 民國115年及114年第二季合併財務報告暨會計師核閱報告
+    url: https://www.higherway.com.tw/_i/assets/file/merge/559661ccbd06bd1321f1e235294e02cc.pdf
+  tw.3268#e13:
+    locator: 第14頁，合併基礎註3
+    published_date: null
+    publisher: 海德威電子工業股份有限公司及子公司
+    quote_check: found
+    title: 民國115年及114年第二季合併財務報告暨會計師核閱報告
+    url: https://www.higherway.com.tw/_i/assets/file/merge/559661ccbd06bd1321f1e235294e02cc.pdf
+  tw.3268#e2:
+    locator: 公司介紹
+    published_date: null
+    publisher: 海德威電子工業股份有限公司
+    quote_check: found
+    title: 關於海德威
+    url: https://www.higherway.com.tw/about_tw_1.php
+  tw.3268#e3:
+    locator: 印刷頁50，營業比重表；PDF第53頁
+    published_date: '2026-05-20'
+    publisher: 海德威電子工業股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.higherway.com.tw/_i/assets/file/shareholder/f8125c62afdde2f66aabd3a3cea1f201.pdf
+  tw.3268#e4:
+    locator: 印刷頁50，營業比重表；PDF第53頁
+    published_date: '2026-05-20'
+    publisher: 海德威電子工業股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.higherway.com.tw/_i/assets/file/shareholder/f8125c62afdde2f66aabd3a3cea1f201.pdf
+  tw.3268#e5:
+    locator: 印刷頁50，營業比重表；PDF第53頁
+    published_date: '2026-05-20'
+    publisher: 海德威電子工業股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.higherway.com.tw/_i/assets/file/shareholder/f8125c62afdde2f66aabd3a3cea1f201.pdf
+  tw.3268#e6:
+    locator: 印刷頁50，營業比重表；PDF第53頁
+    published_date: '2026-05-20'
+    publisher: 海德威電子工業股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.higherway.com.tw/_i/assets/file/shareholder/f8125c62afdde2f66aabd3a3cea1f201.pdf
+  tw.3268#e7:
+    locator: 印刷頁50，營業比重表；PDF第53頁
+    published_date: '2026-05-20'
+    publisher: 海德威電子工業股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.higherway.com.tw/_i/assets/file/shareholder/f8125c62afdde2f66aabd3a3cea1f201.pdf
+  tw.3268#e8:
+    locator: 印刷頁50，公司目前之商品及服務項目；PDF第53頁
+    published_date: '2026-05-20'
+    publisher: 海德威電子工業股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.higherway.com.tw/_i/assets/file/shareholder/f8125c62afdde2f66aabd3a3cea1f201.pdf
+  tw.3268#e9:
+    locator: 第14頁，列入合併財務報告之子公司及所持股權百分比
+    published_date: null
+    publisher: 海德威電子工業股份有限公司及子公司
+    quote_check: found
+    title: 民國115年及114年第二季合併財務報告暨會計師核閱報告
+    url: https://www.higherway.com.tw/_i/assets/file/merge/559661ccbd06bd1321f1e235294e02cc.pdf

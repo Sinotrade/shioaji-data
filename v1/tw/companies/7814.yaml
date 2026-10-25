@@ -8,12 +8,110 @@ industry:
   l0_code: '22'
   l0_name: 生技醫療業
   l0_name_en: Biotechnology and Medical Care
-primary_chain_position: unknown
+  l1: health
+  l1_name: 醫療保健
+  l1_name_en: Healthcare
+  l2: health.devices
+  l2_name: 醫療器材與服務
+  l2_name_en: Medical Devices & Services
+  l3: med.devices
+  l3_name: 醫療器材
+  l3_name_en: Medical Devices
+chain: chain.biotech
+chain_stage:
+  agreement: both
+  also:
+  - stage: rnd
+    stage_name: 研發與原料
+    tier: upstream
+  reason: 膠原蛋白植入物產品占營收91.38%，以醫材製造銷售為主，並明確從事產品研發。
+  stage: manufacturing
+  stage_name: 製造與代工
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 研發、製造及銷售外科與牙科用膠原蛋白植入物醫療器材。
+summary_long: 海昌生技從事膠原蛋白醫療器材的生產與銷售，產品應用於外科及牙科。外科產品包括膠原蛋白基質與人工骨替代物；基質由豬筋組織萃取，人工骨替代物結合膠原與三鈣磷酸鹽。牙科產品包括牙創保護材、膠原再生薄膜及膠原蛋白骨填料。牙創保護材採多孔海綿狀結構；再生薄膜取自豬小腸黏膜下層；骨填料用於骨缺損重建及組織修復。2025年膠原蛋白植入物相關產品占營收91.38%，其他項目占8.62%。
+segments:
+- evidence_ids:
+  - e_revenue_main
+  id: seg_collagen
+  name: 膠原蛋白植入物相關產品
+  period: '2025'
+  revenue_share_pct: 91.38
+- evidence_ids:
+  - e_revenue_other
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 8.62
 website: https://www.biohorien.com
 tax_id: '28540318'
 incorporated: '2006-12-14'
 listed: '2026-07-16'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.7814#e_bone_matrix:
+    locator: 產品介紹／牙科醫材／膠原蛋白骨填料
+    published_date: null
+    publisher: 海昌生化科技股份有限公司
+    quote_check: found
+    title: 「海昌」膠原蛋白骨填料
+    url: https://www.biohorien.com/horien-collagen-bone-graft-matrix-1666944421.html
+  tw.7814#e_bone_substitute:
+    locator: 產品介紹／外科醫材／膠原蛋白人工骨替代物
+    published_date: null
+    publisher: 海昌生化科技股份有限公司
+    quote_check: found
+    title: 「海昌」膠原蛋白人工骨替代物
+    url: https://www.biohorien.com/horien-collagen-bone-graft-substitute.html
+  tw.7814#e_business:
+    locator: 第5頁，主要業務項目
+    published_date: null
+    publisher: 證券櫃檯買賣中心
+    quote_check: unreachable
+    title: 海昌生化科技股份有限公司公司概況資料表
+    url: https://wwwov.tpex.org.tw/storage/emerging_register/2024/12/1735610610_8652_CH_7814.pdf
+  tw.7814#e_chain:
+    locator: 第5頁，公司所屬產業之上、中、下游結構圖
+    published_date: null
+    publisher: 證券櫃檯買賣中心
+    quote_check: unreachable
+    title: 海昌生化科技股份有限公司公司概況資料表
+    url: https://wwwov.tpex.org.tw/storage/emerging_register/2024/12/1735610610_8652_CH_7814.pdf
+  tw.7814#e_matrix:
+    locator: 產品介紹／外科醫材／膠原蛋白基質
+    published_date: null
+    publisher: 海昌生化科技股份有限公司
+    quote_check: found
+    title: 「海昌」膠原蛋白基質
+    url: https://www.biohorien.com/horien-collagen-matrix-1666928648.html
+  tw.7814#e_membrane:
+    locator: 產品介紹／牙科醫材／膠原再生薄膜
+    published_date: null
+    publisher: 海昌生化科技股份有限公司
+    quote_check: found
+    title: 「海昌」膠原再生薄膜
+    url: https://www.biohorien.com/horien-extracellular-membrane.html
+  tw.7814#e_plug:
+    locator: 產品介紹／牙科醫材／牙創保護材
+    published_date: null
+    publisher: 海昌生化科技股份有限公司
+    quote_check: found
+    title: 「海昌」牙創保護材
+    url: https://www.biohorien.com/horien-gennu-plug-1663039179.html
+  tw.7814#e_revenue_main:
+    locator: 印刷第44頁（PDF第45頁），主要產品及其營業比重，膠原蛋白植入物相關產品列、114年度欄；金額單位為新台幣仟元
+    published_date: null
+    publisher: 海昌生化科技股份有限公司
+    quote_check: not_found
+    title: 海昌生化科技股份有限公司114年年報
+    url: https://drive.google.com/file/d/1fLSV-JldDe907B7VNiuJ36anLocTJLlZ/view
+  tw.7814#e_revenue_other:
+    locator: 印刷第44頁（PDF第45頁），主要產品及其營業比重，其他列、114年度欄；金額單位為新台幣仟元
+    published_date: null
+    publisher: 海昌生化科技股份有限公司
+    quote_check: not_found
+    title: 海昌生化科技股份有限公司114年年報
+    url: https://drive.google.com/file/d/1fLSV-JldDe907B7VNiuJ36anLocTJLlZ/view

@@ -8,12 +8,191 @@ industry:
   l0_code: '32'
   l0_name: 文化創意業
   l0_name_en: Cultural and Creative
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.software
+  l2_name: 軟體與資訊服務
+  l2_name_en: Software & IT Services
+  l3: sw.gaming
+  l3_name: 遊戲
+  l3_name_en: Games
+primary_chain_position: not_applicable
+summary_short: 以電腦及手機遊戲代理營運、遊戲平台與IP授權取得收入。
+summary_long: 樂意主要從事電腦線上遊戲與手機遊戲代理營運，並經營快樂玩Mangot5遊戲平台。2025年合併遊戲營運收入為新台幣911,534千元，為最大收入來源，另有IP授權、代操及其他收入。代理產品包括失落的方舟、勁舞團及封印者：CLOSERS。直接子公司包含株式会社HappyTuk、Naddic Games及幻創行銷，業務分別為遊戲代理、遊戲IP開發授權、資訊軟體與廣告服務。三蔥投資為母公司，薩摩亞商金泉控股為集團最終控制者。
+segments:
+- evidence_ids:
+  - e3
+  id: game_operations
+  name: 遊戲營運收入
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e3
+  id: ip_licensing
+  name: IP授權收入
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e3
+  id: managed_operations
+  name: 代操收入
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e3
+  id: other
+  name: 其他收入
+  period: '2025'
+  revenue_share_pct: null
+relations:
+  parents:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 母公司
+    details:
+    - 母公司
+    edge: e64ebf0b0b9c4
+    evidence_level: primary
+    id: org.san-cong-investment
+    name: 三蔥投資股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團最終控制者
+    details:
+    - 集團最終控制者
+    edge: e2284df4d652d
+    evidence_level: primary
+    id: org.薩摩亞商金泉控股有限公司
+    name: 薩摩亞商金泉控股有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 從事遊戲代理業務的直接子公司
+    details:
+    - 從事遊戲代理業務的直接子公司
+    edge: ef9a656dacec3
+    evidence_level: primary
+    id: org.happytuk-japan
+    name: 株式会社HappyTuk
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 從事資訊軟體及廣告服務的直接子公司
+    details:
+    - 從事資訊軟體及廣告服務的直接子公司
+    edge: e5f59f16c65b4
+    evidence_level: primary
+    id: org.huan-chuang-marketing
+    name: 幻創行銷股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 從事遊戲IP開發及授權的直接子公司
+    details:
+    - 從事遊戲IP開發及授權的直接子公司
+    edge: ec89e5c2cacbc
+    evidence_level: primary
+    id: org.naddic-games
+    name: Naddic Games CO., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.mangot5.com
 tax_id: '53773813'
 incorporated: '2012-06-13'
 listed: '2024-07-25'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-25'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.7584#e10:
+    locator: 印刷頁49／附註七（一）母公司與最終控制者
+    published_date: null
+    publisher: 樂意傳播股份有限公司
+    quote_check: found
+    title: 民國114年度及113年度合併財務報告暨會計師查核報告
+    url: https://landing.mangot5.com/template/ir_company/download/files3/114Q4_merge.pdf
+  tw.7584#e11:
+    locator: 印刷頁49／附註七（一）母公司與最終控制者
+    published_date: null
+    publisher: 樂意傳播股份有限公司
+    quote_check: found
+    title: 民國114年度及113年度合併財務報告暨會計師查核報告
+    url: https://landing.mangot5.com/template/ir_company/download/files3/114Q4_merge.pdf
+  tw.7584#e2:
+    locator: 主要經營業務
+    published_date: null
+    publisher: 樂意傳播股份有限公司
+    quote_check: found
+    title: 公司簡介－樂意傳播
+    url: https://landing.mangot5.com/template/ir_company/ir_2024/main.html
+  tw.7584#e3:
+    locator: 印刷頁40／附註六（十九）收入之細分；欄序為114年度、113年度，單位為新台幣千元
+    published_date: null
+    publisher: 樂意傳播股份有限公司
+    quote_check: found
+    title: 民國114年度及113年度合併財務報告暨會計師查核報告
+    url: https://landing.mangot5.com/template/ir_company/download/files3/114Q4_merge.pdf
+  tw.7584#e4:
+    locator: PDF第15頁／自有及合作平台
+    published_date: '2025-09-19'
+    publisher: 樂意傳播股份有限公司
+    quote_check: found
+    title: 7584樂意集團法人說明會
+    url: https://landing.mangot5.com/template/ir_company/download/files2/legal_2025.pdf
+  tw.7584#e5:
+    locator: PDF第13頁／目前上市遊戲／樂意傳播(TW)／代理
+    published_date: '2025-09-19'
+    publisher: 樂意傳播股份有限公司
+    quote_check: found
+    title: 7584樂意集團法人說明會
+    url: https://landing.mangot5.com/template/ir_company/download/files2/legal_2025.pdf
+  tw.7584#e6:
+    locator: 董事會／董事會成員／梁敏永
+    published_date: null
+    publisher: 樂意傳播股份有限公司
+    quote_check: found
+    title: 投資人專區－樂意傳播
+    url: https://landing.mangot5.com/template/ir_company/ir_2024/index.html
+  tw.7584#e7:
+    locator: 印刷頁12／列入合併財務報告之子公司／HappyTuk列
+    published_date: null
+    publisher: 樂意傳播股份有限公司
+    quote_check: found
+    title: 民國114年度及113年度合併財務報告暨會計師查核報告
+    url: https://landing.mangot5.com/template/ir_company/download/files3/114Q4_merge.pdf
+  tw.7584#e8:
+    locator: 印刷頁12／列入合併財務報告之子公司／Naddic列
+    published_date: null
+    publisher: 樂意傳播股份有限公司
+    quote_check: found
+    title: 民國114年度及113年度合併財務報告暨會計師查核報告
+    url: https://landing.mangot5.com/template/ir_company/download/files3/114Q4_merge.pdf
+  tw.7584#e9:
+    locator: 印刷頁12／列入合併財務報告之子公司／幻創行銷列
+    published_date: null
+    publisher: 樂意傳播股份有限公司
+    quote_check: found
+    title: 民國114年度及113年度合併財務報告暨會計師查核報告
+    url: https://landing.mangot5.com/template/ir_company/download/files3/114Q4_merge.pdf

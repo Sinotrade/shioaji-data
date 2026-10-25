@@ -8,13 +8,193 @@ industry:
   l0_code: '14'
   l0_name: 建材營造業
   l0_name_en: Building Material and Construction
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.construction
+  l2_name: 營建與工程
+  l2_name_en: Engineering & Construction
+  l3: cons.materials
+  l3_name: 建材
+  l3_name_en: Building Materials
+primary_chain_position: not_applicable
+summary_short: 以中國大陸重慶市為主要市場，生產銷售預拌商品混凝土及相關建材。
+summary_long: 永固-KY透過集團旗下公司生產及銷售預拌商品混凝土，主要銷售地區為中國大陸重慶市，產品用於橋樑、隧道、輕軌、建築與公路等工程。2025年度混凝土占營收96.69%，其他占3.31%，營收以混凝土為主。產品另包括環保型水泥製品、不同比例的混合料、純熟料粉、精磨粉煤灰及石灰粉。集團旗下Yonggu Materials從事投資控股，重慶永固、重慶國浩、重慶拉瑞及東兆長盛等公司從事混凝土與建材生產銷售。
+segments:
+- evidence_ids:
+  - e3
+  id: seg_concrete
+  name: 混凝土
+  period: '2025'
+  revenue_share_pct: 96.69
+- evidence_ids:
+  - e3
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 3.31
+relations:
+  subsidiaries:
+  - as_of: '2026-06-11'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團旗下混凝土與建材生產銷售公司
+    details:
+    - 集團旗下混凝土與建材生產銷售公司
+    edge: e2a003f54f34f
+    evidence_level: primary
+    id: org.chongqing-dongzhao-changsheng-new-building-materials
+    name: 重慶市東兆長盛新型建材有限責任公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-11'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團旗下混凝土與建材生產銷售公司
+    details:
+    - 集團旗下混凝土與建材生產銷售公司
+    edge: e18b804259abd
+    evidence_level: primary
+    id: org.chongqing-guohao-yonggu-new-building-materials
+    name: 重慶國浩永固新型建材有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-11'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團旗下混凝土與粉體建材生產銷售公司
+    details:
+    - 集團旗下混凝土與粉體建材生產銷售公司
+    edge: e81262250ada4
+    evidence_level: primary
+    id: org.chongqing-larui-yonggu-concrete
+    name: 重慶拉瑞永固混凝土有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-11'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團旗下混凝土與建材生產銷售公司
+    details:
+    - 集團旗下混凝土與建材生產銷售公司
+    edge: e0a8f07488135
+    evidence_level: primary
+    id: org.chongqing-yonggu-new-building-materials
+    name: 重慶永固新型建材有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-11'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團子公司，從事投資控股
+    details:
+    - 集團子公司，從事投資控股
+    edge: e19828c775c83
+    evidence_level: primary
+    id: org.yonggu-materials
+    name: Yonggu Materials Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.yg1999.com/tw/
 tax_id: '77211448'
 incorporated: '2016-05-27'
 listed: '2020-05-20'
 foreign_registration: KY 開曼群島
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.5546#e10:
+    locator: PDF第2頁，子公司、孫公司名單
+    published_date: '2026-08-12'
+    publisher: 永固集團股份有限公司
+    quote_check: not_found
+    title: 114年度年報（股東會後修訂本）
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=5546&filename=2025_5546_20260626F11.pdf&kind=F&step=9
+  tw.5546#e11:
+    locator: 第80頁，各關係企業基本資料，重慶拉瑞列
+    published_date: '2026-08-12'
+    publisher: 永固集團股份有限公司
+    quote_check: not_found
+    title: 114年度年報（股東會後修訂本）
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=5546&filename=2025_5546_20260626F11.pdf&kind=F&step=9
+  tw.5546#e12:
+    locator: PDF第2頁，子公司、孫公司名單
+    published_date: '2026-08-12'
+    publisher: 永固集團股份有限公司
+    quote_check: not_found
+    title: 114年度年報（股東會後修訂本）
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=5546&filename=2025_5546_20260626F11.pdf&kind=F&step=9
+  tw.5546#e13:
+    locator: PDF第2頁，子公司、孫公司名單
+    published_date: '2026-08-12'
+    publisher: 永固集團股份有限公司
+    quote_check: not_found
+    title: 114年度年報（股東會後修訂本）
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=5546&filename=2025_5546_20260626F11.pdf&kind=F&step=9
+  tw.5546#e2:
+    locator: 第36頁，業務範圍，PDF第41頁
+    published_date: '2026-08-12'
+    publisher: 永固集團股份有限公司
+    quote_check: not_found
+    title: 114年度年報（股東會後修訂本）
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=5546&filename=2025_5546_20260626F11.pdf&kind=F&step=9
+  tw.5546#e3:
+    locator: 第36頁，主要產品之營業比重；欄序為113年度、114年度、115年第一季
+    published_date: '2026-08-12'
+    publisher: 永固集團股份有限公司
+    quote_check: not_found
+    title: 114年度年報（股東會後修訂本）
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=5546&filename=2025_5546_20260626F11.pdf&kind=F&step=9
+  tw.5546#e4:
+    locator: 第49頁，主要商品之銷售地區，PDF第54頁
+    published_date: '2026-08-12'
+    publisher: 永固集團股份有限公司
+    quote_check: not_found
+    title: 114年度年報（股東會後修訂本）
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=5546&filename=2025_5546_20260626F11.pdf&kind=F&step=9
+  tw.5546#e5:
+    locator: 第36頁，公司目前之商品項目，PDF第41頁
+    published_date: '2026-08-12'
+    publisher: 永固集團股份有限公司
+    quote_check: not_found
+    title: 114年度年報（股東會後修訂本）
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=5546&filename=2025_5546_20260626F11.pdf&kind=F&step=9
+  tw.5546#e6:
+    locator: PDF第2頁，子公司、孫公司名單
+    published_date: '2026-08-12'
+    publisher: 永固集團股份有限公司
+    quote_check: not_found
+    title: 114年度年報（股東會後修訂本）
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=5546&filename=2025_5546_20260626F11.pdf&kind=F&step=9
+  tw.5546#e7:
+    locator: 第80頁，各關係企業基本資料，Yonggu Materials列
+    published_date: '2026-08-12'
+    publisher: 永固集團股份有限公司
+    quote_check: not_found
+    title: 114年度年報（股東會後修訂本）
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=5546&filename=2025_5546_20260626F11.pdf&kind=F&step=9
+  tw.5546#e8:
+    locator: PDF第2頁，子公司、孫公司名單
+    published_date: '2026-08-12'
+    publisher: 永固集團股份有限公司
+    quote_check: not_found
+    title: 114年度年報（股東會後修訂本）
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=5546&filename=2025_5546_20260626F11.pdf&kind=F&step=9
+  tw.5546#e9:
+    locator: 第80頁，各關係企業基本資料；重慶永固、重慶國浩及東兆長盛列的主要營業或生產項目
+    published_date: '2026-08-12'
+    publisher: 永固集團股份有限公司
+    quote_check: not_found
+    title: 114年度年報（股東會後修訂本）
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=5546&filename=2025_5546_20260626F11.pdf&kind=F&step=9

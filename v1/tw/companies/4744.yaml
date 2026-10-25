@@ -8,12 +8,177 @@ industry:
   l0_code: '22'
   l0_name: 生技醫療業
   l0_name_en: Biotechnology and Medical Care
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.machinery
+  l2_name: 機械與自動化
+  l2_name_en: Machinery & Automation
+  l3: mach.equipment
+  l3_name: 專用設備（非半導體）
+  l3_name_en: Specialty Equipment (Non-semiconductor)
+primary_chain_position: not_applicable
+summary_short: 製造銷售藥品包裝設備、自動化包裝產線及軟膠囊設備。
+summary_long: 皇將提供製藥及保健食品包裝設備與自動化產線，產品包括膠囊／錠劑數粒線、液體灌裝線、粉末充填線及貼標機，並提供客製化包裝產線。2025年藥品包裝設備營收為10億244.2萬元，軟膠囊設備為4億421.6萬元，另有其他收入3,803.1萬元。截至2026年3月底，直接子公司包括Global與韓國Changsung，並透過Global持有從事機械買賣的美國CVC USA與皇將上海。
+segments:
+- evidence_ids:
+  - e7
+  id: packaging
+  name: 藥品包裝設備
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e7
+  id: softgel
+  name: 軟膠囊設備
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e7
+  id: other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: null
+relations:
+  subsidiaries:
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 韓國直接子公司；製藥機械製造
+    details:
+    - 韓國直接子公司；製藥機械製造
+    edge: e1d942e16fc4b
+    evidence_level: primary
+    id: org.changsung-softgel-system
+    name: Changsung Softgel System Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過Global持有的間接子公司
+    details:
+    - 透過Global持有的間接子公司
+    edge: e2e332e5868d5
+    evidence_level: primary
+    id: org.cvc-shanghai-packaging-technology
+    name: 皇將(上海)包裝科技有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過Global持有的美國間接子公司
+    details:
+    - 透過Global持有的美國間接子公司
+    edge: e225840d8d458
+    evidence_level: primary
+    id: org.cvc-technologies-usa
+    name: CVC Technologies, Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司；國際投資控股
+    details:
+    - 直接子公司；國際投資控股
+    edge: e1c4622c8787a
+    evidence_level: primary
+    id: org.global-exclusive
+    name: Global Exclusive Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.cvctechnologies.com.tw/
 tax_id: '80234971'
 incorporated: '2002-08-19'
 listed: '2018-07-12'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4744#e10:
+    locator: 印刷頁10合併基礎表；印刷頁38轉投資事業資訊之所在地區及業務欄
+    published_date: null
+    publisher: 皇將科技股份有限公司
+    quote_check: found
+    title: 2026年第一季合併財務報告
+    url: https://www.cvctechnologies.com.tw/images/download/FR/2026Q1.pdf
+  tw.4744#e11:
+    locator: 印刷頁10合併基礎表；印刷頁38轉投資事業資訊之美國孫公司列
+    published_date: null
+    publisher: 皇將科技股份有限公司
+    quote_check: found
+    title: 2026年第一季合併財務報告
+    url: https://www.cvctechnologies.com.tw/images/download/FR/2026Q1.pdf
+  tw.4744#e12:
+    locator: 印刷頁10，附註四（二）合併基礎，Global投資皇將上海列
+    published_date: null
+    publisher: 皇將科技股份有限公司
+    quote_check: found
+    title: 2026年第一季合併財務報告
+    url: https://www.cvctechnologies.com.tw/images/download/FR/2026Q1.pdf
+  tw.4744#e2:
+    locator: 國際級的製藥法規認證；自動化藥品瓶包裝線規劃與解決方案
+    published_date: null
+    publisher: 皇將科技股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.cvctechnologies.com.tw/company/profile.html
+  tw.4744#e3:
+    locator: 產品主標題與設備清單
+    published_date: null
+    publisher: 皇將科技股份有限公司
+    quote_check: found
+    title: 膠囊／錠劑數粒線
+    url: https://www.cvctechnologies.com.tw/products/tablet-counting-machine.html
+  tw.4744#e4:
+    locator: 產品主標題與設備清單
+    published_date: null
+    publisher: 皇將科技股份有限公司
+    quote_check: not_found
+    title: 液體灌裝線
+    url: https://www.cvctechnologies.com.tw/products/filling-machine.html
+  tw.4744#e5:
+    locator: 產品主標題與設備清單
+    published_date: null
+    publisher: 皇將科技股份有限公司
+    quote_check: not_found
+    title: 粉末充填線
+    url: https://www.cvctechnologies.com.tw/products/powder-filling.html
+  tw.4744#e6:
+    locator: 貼標機產品清單
+    published_date: null
+    publisher: 皇將科技股份有限公司
+    quote_check: found
+    title: 貼標機
+    url: https://www.cvctechnologies.com.tw/products/labeling.html
+  tw.4744#e7:
+    locator: 印刷頁45，附註六（二十二）收入之細分，114年度主要產品；單位為新台幣千元
+    published_date: null
+    publisher: 皇將科技股份有限公司
+    quote_check: found
+    title: 2025年度合併財務報告
+    url: https://www.cvctechnologies.com.tw/images/download/FR/2025Q4.pdf
+  tw.4744#e8:
+    locator: 印刷頁61，附註十四（一）一般性資訊
+    published_date: null
+    publisher: 皇將科技股份有限公司
+    quote_check: found
+    title: 2025年度合併財務報告
+    url: https://www.cvctechnologies.com.tw/images/download/FR/2025Q4.pdf
+  tw.4744#e9:
+    locator: 印刷頁10，附註四（二）合併基礎，投資公司與子公司對照表
+    published_date: null
+    publisher: 皇將科技股份有限公司
+    quote_check: found
+    title: 2026年第一季合併財務報告
+    url: https://www.cvctechnologies.com.tw/images/download/FR/2026Q1.pdf

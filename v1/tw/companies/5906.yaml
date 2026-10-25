@@ -8,13 +8,201 @@ industry:
   l0_code: '18'
   l0_name: 貿易百貨業
   l0_name_en: Trading and Consumers' Goods
-primary_chain_position: unknown
+  l1: consumer
+  l1_name: 消費
+  l1_name_en: Consumer
+  l2: cons.discretionary
+  l2_name: 非必需消費
+  l2_name_en: Consumer Discretionary
+  l3: apparel.garment
+  l3_name: 成衣與服飾
+  l3_name_en: Apparel
+chain: chain.textile
+chain_stage:
+  agreement: both
+  also: []
+  reason: 運動休閒品牌業務占營收97.29%，主要從事服飾、鞋類品牌設計開發、代理及銷售。
+  stage: garment
+  stage_name: 成衣、製鞋與品牌
+  tier: downstream
+primary_chain_position: downstream
+summary_short: 以FILA、Reebok等運動休閒品牌服飾銷售為主，另經營百貨商場。
+summary_long: 台南-KY以運動休閒品牌經營為主要業務，並透過集團子公司銷售成衣、鞋類及配件，另經營百貨商場。2025年運動休閒占合併營收97.29%，百貨商場占2.71%。品牌業務方面，子公司斐樂負責FILA品牌設計開發、行銷及銷售，銳步運動代理Reebok，本公司則代理Eddie Bauer品牌設計開發、行銷及銷售。集團子公司另包括台南生活開發、高青時尚、鴻延及高青創意。
+segments:
+- evidence_ids:
+  - e_revenue
+  id: sportswear
+  name: 運動休閒
+  period: '2025'
+  revenue_share_pct: 97.29
+- evidence_ids:
+  - e_revenue
+  id: department_stores
+  name: 百貨商場
+  period: '2025'
+  revenue_share_pct: 2.71
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 合併報表子公司
+    details:
+    - 合併報表子公司
+    edge: e4e5cd336afd2
+    evidence_level: primary
+    id: org.台南生活開發股份有限公司
+    name: 台南生活開發股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 合併報表子公司
+    details:
+    - 合併報表子公司
+    edge: eba557bcc24b6
+    evidence_level: primary
+    id: org.斐樂股份有限公司
+    name: 斐樂股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 合併報表子公司
+    details:
+    - 合併報表子公司
+    edge: eaef823be9037
+    evidence_level: primary
+    id: org.銳步運動股份有限公司
+    name: 銳步運動股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 合併報表子公司
+    details:
+    - 合併報表子公司
+    edge: efed950e664c4
+    evidence_level: primary
+    id: org.高青創意股份有限公司
+    name: 高青創意股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 合併報表子公司
+    details:
+    - 合併報表子公司
+    edge: ea1604524cb1e
+    evidence_level: primary
+    id: org.高青時尚股份有限公司
+    name: 高青時尚股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 合併報表子公司
+    details:
+    - 合併報表子公司
+    edge: e7a921e62fda3
+    evidence_level: primary
+    id: org.鴻延股份有限公司
+    name: 鴻延股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.tainancayman.com
 tax_id: '36855058'
 incorporated: '1999-02-08'
 listed: '2011-10-24'
 foreign_registration: KY 開曼群島
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.5906#e_eddie:
+    locator: 第53頁，本公司及子公司所營業務之主要內容
+    published_date: '2026-04-30'
+    publisher: 台南生活(開曼)股份有限公司
+    quote_check: found
+    title: 2025年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52496/2026/RNS/52496_rns_2026-08-12_d79ceeb0-628b-4a04-a11e-990b51b9c238.pdf
+  tw.5906#e_fila:
+    locator: 第53頁，本公司及子公司所營業務之主要內容
+    published_date: '2026-04-30'
+    publisher: 台南生活(開曼)股份有限公司
+    quote_check: found
+    title: 2025年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52496/2026/RNS/52496_rns_2026-08-12_d79ceeb0-628b-4a04-a11e-990b51b9c238.pdf
+  tw.5906#e_reebok:
+    locator: 第53頁，本公司及子公司所營業務之主要內容
+    published_date: '2026-04-30'
+    publisher: 台南生活(開曼)股份有限公司
+    quote_check: found
+    title: 2025年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52496/2026/RNS/52496_rns_2026-08-12_d79ceeb0-628b-4a04-a11e-990b51b9c238.pdf
+  tw.5906#e_revenue:
+    locator: 第53頁，伍、營運概況／營業比重；欄序為2024年金額、占比及2025年金額、占比
+    published_date: '2026-04-30'
+    publisher: 台南生活(開曼)股份有限公司
+    quote_check: found
+    title: 2025年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52496/2026/RNS/52496_rns_2026-08-12_d79ceeb0-628b-4a04-a11e-990b51b9c238.pdf
+  tw.5906#e_sub_creative:
+    locator: 第31頁，附註十二、子公司／列入合併財務報告之子公司；高青創意公司列
+    published_date: '2026-03-05'
+    publisher: 台南生活（開曼）股份有限公司
+    quote_check: unreachable
+    title: 2025年及2024年度合併財務報告
+    url: https://financialfilings.com/filings/tainan-cayman-5906/annual-report/2026/46359763/
+  tw.5906#e_sub_development:
+    locator: 第31頁，附註十二、子公司／列入合併財務報告之子公司；台南生活開發公司列
+    published_date: '2026-03-05'
+    publisher: 台南生活（開曼）股份有限公司
+    quote_check: unreachable
+    title: 2025年及2024年度合併財務報告
+    url: https://financialfilings.com/filings/tainan-cayman-5906/annual-report/2026/46359763/
+  tw.5906#e_sub_fila:
+    locator: 第31頁，附註十二、子公司／列入合併財務報告之子公司；斐樂公司列
+    published_date: '2026-03-05'
+    publisher: 台南生活（開曼）股份有限公司
+    quote_check: unreachable
+    title: 2025年及2024年度合併財務報告
+    url: https://financialfilings.com/filings/tainan-cayman-5906/annual-report/2026/46359763/
+  tw.5906#e_sub_hongyan:
+    locator: 第31頁，附註十二、子公司／列入合併財務報告之子公司；鴻延公司列
+    published_date: '2026-03-05'
+    publisher: 台南生活（開曼）股份有限公司
+    quote_check: unreachable
+    title: 2025年及2024年度合併財務報告
+    url: https://financialfilings.com/filings/tainan-cayman-5906/annual-report/2026/46359763/
+  tw.5906#e_sub_koche:
+    locator: 第31頁，附註十二、子公司／列入合併財務報告之子公司；高青時尚公司列
+    published_date: '2026-03-05'
+    publisher: 台南生活（開曼）股份有限公司
+    quote_check: unreachable
+    title: 2025年及2024年度合併財務報告
+    url: https://financialfilings.com/filings/tainan-cayman-5906/annual-report/2026/46359763/
+  tw.5906#e_sub_reebok:
+    locator: 第31頁，附註十二、子公司／列入合併財務報告之子公司；銳步公司列
+    published_date: '2026-03-05'
+    publisher: 台南生活（開曼）股份有限公司
+    quote_check: unreachable
+    title: 2025年及2024年度合併財務報告
+    url: https://financialfilings.com/filings/tainan-cayman-5906/annual-report/2026/46359763/

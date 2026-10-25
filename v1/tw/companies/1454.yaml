@@ -8,12 +8,69 @@ industry:
   l0_code: '04'
   l0_name: 紡織纖維
   l0_name_en: Textiles
-primary_chain_position: unknown
+  l1: materials
+  l1_name: 原物料
+  l1_name_en: Materials
+  l2: mat.other
+  l2_name: 其他原物料
+  l2_name_en: Other Materials
+  l3: matl.textile_fiber
+  l3_name: 紡織纖維與機能布料
+  l3_name_en: Textiles, Fibers & Functional Fabrics
+chain: chain.textile
+chain_stage:
+  agreement: both
+  also:
+  - stage: fiber
+    stage_name: 纖維與紗
+    tier: upstream
+  reason: 依研究所列主要定位為聚酯長纖及機能布料供應商，亦供應加工絲；未提供營收占比。
+  stage: fabric
+  stage_name: 織布與染整
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 生產銷售聚酯長纖布料、機能布料及加工絲。
+summary_long: 台富提供聚酯長纖布料，產品包括 ELASLANA 毛彈布料，並供應常規與環保聚酯加工絲。環保加工絲使用環保聚酯原料，產品應用涵蓋運動休閒服、時尚服飾、運動針織及制服工作服。布料方面，公司提供提花布料，可依需求繪製花樣並接單織造，透過經緯紗形成不同花紋、顏色與材質變化。另外供應高彈力布，使用 Spandex 等彈性纖維，產品訴求包括貼身舒適、易保養，以及伸展與彈性回復性能。
 website: http://www.ttfco.com
 tax_id: 04301794
 incorporated: '1973-06-01'
 listed: '1993-05-07'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1454#e1:
+    locator: 富綢現在
+    published_date: null
+    publisher: 台灣富綢纖維股份有限公司
+    quote_check: unreachable
+    title: 公司簡介
+    url: https://www.ttfco.com/article_d.php?id=3&lang=tw&tb=1
+  tw.1454#e2:
+    locator: 富綢現在
+    published_date: null
+    publisher: 台灣富綢纖維股份有限公司
+    quote_check: unreachable
+    title: 公司簡介
+    url: https://www.ttfco.com/article_d.php?id=3&lang=tw&tb=1
+  tw.1454#e3:
+    locator: 加工絲品項分類表，常規加工絲及環保加工絲
+    published_date: null
+    publisher: 台灣富綢纖維股份有限公司
+    quote_check: unreachable
+    title: 加工絲品簡介
+    url: https://www.ttfco.com/product.php?cid=780&lang=tw&tb=1
+  tw.1454#e4:
+    locator: 提花布料說明第一段
+    published_date: null
+    publisher: 台灣富綢纖維股份有限公司
+    quote_check: unreachable
+    title: 提花布料
+    url: https://www.ttfco.com/product.php?cid=147&lang=tw&tb=1
+  tw.1454#e5:
+    locator: 高彈力布產品說明
+    published_date: null
+    publisher: 台灣富綢纖維股份有限公司
+    quote_check: unreachable
+    title: 高彈力布
+    url: https://www.ttfco.com/product.php?cid=81&lang=tw&tb=1

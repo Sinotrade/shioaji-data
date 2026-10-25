@@ -8,12 +8,143 @@ industry:
   l0_code: '25'
   l0_name: 電腦及週邊設備業
   l0_name_en: Computer and Peripheral Equipment
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.hardware
+  l2_name: 電腦與硬體
+  l2_name_en: Computers & Hardware
+  l3: hw.industrial_pc
+  l3_name: 工業電腦與嵌入式系統
+  l3_name_en: Industrial PCs & Embedded Systems
+chain: chain.auto
+chain_stage:
+  agreement: both
+  also: []
+  reason: 車載電腦占營收90.46%，主要提供車載運算系統、資訊顯示與人機介面，屬車用模組。
+  stage: parts
+  stage_name: 汽車零組件與模組
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 研發、製造與銷售車載、嵌入式及邊緣人工智慧電腦。
+summary_long: 鑫創電子以車載電腦、嵌入式電腦與邊緣人工智慧運算平台的研發、製造及銷售為主。2025年合併營收中，車載電腦約占90.46%、嵌入式電腦占4.63%，其他產品占4.91%。產品涵蓋工業自動化運算、車載資訊顯示與人機介面，以及無人機用邊緣運算電腦。公司另提供AGV與AMR自主導航控制器，並開發電動車充電站解決方案。美國全資子公司負責工業電腦與周邊產品銷售及售後服務。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_vehicle
+  name: 車載電腦
+  period: '2025'
+  revenue_share_pct: 90.46
+- evidence_ids:
+  - e2
+  id: seg_embedded
+  name: 嵌入式電腦
+  period: '2025'
+  revenue_share_pct: 4.63
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 4.91
+main_theme: theme.ev
+themes:
+- also: []
+  stage: vehicle
+  theme: theme.ev
+  tier: downstream
+- also: []
+  stage: modules
+  theme: theme.drone
+  tier: midstream
+- also: []
+  stage: control
+  theme: theme.robotics
+  tier: midstream
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 美國全資銷售與售後服務子公司
+    details:
+    - 美國全資銷售與售後服務子公司
+    edge: ea2483ec33f69
+    evidence_level: primary
+    id: org.sintrones-technology-america
+    name: SINTRONES TECHNOLOGY AMERICA Corp.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.sintrones.com/
 tax_id: '24332747'
 incorporated: '2009-03-20'
 listed: '2019-09-16'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6680#e1:
+    locator: 業務範圍，第1項
+    published_date: null
+    publisher: 鑫創電子股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.sintrones.com.tw/InvestorRelations/company-profile/
+  tw.6680#e2:
+    locator: 印刷頁37，附註六（十九）客戶合約之收入；金額單位為新台幣千元，兩欄依序為2025及2024年度
+    published_date: null
+    publisher: 鑫創電子股份有限公司
+    quote_check: found
+    title: 民國114年及113年度合併財務報告暨會計師查核報告
+    url: https://www.sintrones.com.tw/wp-content/uploads/2026/03/%E9%91%AB%E5%89%B5%E9%9B%BB%E5%AD%90_114Q4_%E5%90%88%E4%BD%B5.pdf
+  tw.6680#e3:
+    locator: 嵌入式運算系列介紹
+    published_date: null
+    publisher: 鑫創電子股份有限公司
+    quote_check: found
+    title: 嵌入式電腦｜Embedded Computing
+    url: https://www.sintrones.com.tw/ProductSeriesIntro/embedded-computing/
+  tw.6680#e4:
+    locator: 邊緣AI運算系列介紹
+    published_date: null
+    publisher: 鑫創電子股份有限公司
+    quote_check: found
+    title: 邊緣AI運算電腦｜Edge AI Computing
+    url: https://www.sintrones.com.tw/ProductSeriesIntro/edge-ai-computing/
+  tw.6680#e5:
+    locator: 產品系列標題及系列產品列表
+    published_date: null
+    publisher: 鑫創電子股份有限公司
+    quote_check: found
+    title: 車載資訊顯示系統與人機介面｜Display Computing
+    url: https://www.sintrones.com.tw/ProductSeriesIntro/display-computing/
+  tw.6680#e6:
+    locator: Real-Time Autonomous Navigation for Drones and Robotic Platforms
+    published_date: null
+    publisher: 鑫創電子股份有限公司
+    quote_check: found
+    title: 'Edge AI Computing IBOX-604-G2: AI Drone Computer Orin NX'
+    url: https://www.sintrones.com.tw/product/ibox-604-g2/
+  tw.6680#e7:
+    locator: High-Performance In-Vehicle Edge AI Controllers for AGV and AMR Navigation
+    published_date: null
+    publisher: SINTRONES Technology Corp.
+    quote_check: found
+    title: AGV and AMR Edge AI Solution
+    url: https://www.sintrones.com/solution/agv-and-amr/
+  tw.6680#e8:
+    locator: 高效可靠的充電體驗
+    published_date: null
+    publisher: 鑫創電子股份有限公司
+    quote_check: unreachable
+    title: 電動車充電解決方案
+    url: https://www.sintrones.com.tw/solution/ev-charging-station/
+  tw.6680#e9:
+    locator: 印刷頁12，附註四（三）列入合併財報之子公司；股權欄日期為2025及2024年12月31日
+    published_date: null
+    publisher: 鑫創電子股份有限公司
+    quote_check: found
+    title: 民國114年及113年度合併財務報告暨會計師查核報告
+    url: https://www.sintrones.com.tw/wp-content/uploads/2026/03/%E9%91%AB%E5%89%B5%E9%9B%BB%E5%AD%90_114Q4_%E5%90%88%E4%BD%B5.pdf

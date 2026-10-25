@@ -8,12 +8,116 @@ industry:
   l0_code: '22'
   l0_name: 生技醫療業
   l0_name_en: Biotechnology and Medical Care
-primary_chain_position: unknown
+  l1: health
+  l1_name: 醫療保健
+  l1_name_en: Healthcare
+  l2: health.devices
+  l2_name: 醫療器材與服務
+  l2_name_en: Medical Devices & Services
+  l3: med.consumables
+  l3_name: 醫療耗材
+  l3_name_en: Medical Consumables
+chain: chain.biotech
+chain_stage:
+  agreement: both
+  also:
+  - stage: rnd
+    stage_name: 研發與原料
+    tier: upstream
+  reason: 血糖測試片為最大營收來源，具生物感測製造能力，並從事試片配方及監測系統研發。
+  stage: manufacturing
+  stage_name: 製造與代工
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 開發、製造與銷售血糖監測系統，營收以血糖測試片為主。
+summary_long: 福永生技以血糖監測系統的開發、製造與銷售為核心，產品包括血糖測試儀與血糖測試片。第三方年報擷取表列示，2025年度血糖測試片占營收68.44%，血糖測試儀占21.88%，其他占9.68%；上述占比尚待原始年報核對。其血糖監測系統針對不同糖尿病患者的使用需求設計，另提供行動醫療與偏鄉遠距醫療方案。公司亦開發集乳器系統，並具備電子儀器與生物感測製造技術，相關製程涵蓋材料、配方、生產及出貨。
+segments:
+- evidence_ids:
+  - e2
+  id: glucose_strips
+  name: 血糖測試片
+  period: 2025年度
+  revenue_share_pct: 68.44
+- evidence_ids:
+  - e3
+  id: glucose_meters
+  name: 血糖測試儀
+  period: 2025年度
+  revenue_share_pct: 21.88
+- evidence_ids:
+  - e4
+  id: other
+  name: 其他
+  period: 2025年度
+  revenue_share_pct: 9.68
 website: https://www.epsbio.com.tw/
 tax_id: '80064027'
 incorporated: '2002-10-22'
 listed: '2017-03-09'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-25'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4183#e1:
+    locator: 公司簡介
+    published_date: null
+    publisher: 福永生物科技股份有限公司
+    quote_check: found
+    title: EPS Bio｜福永生技
+    url: https://www.epsbio.com.tw/
+  tw.4183#e2:
+    locator: 營收分布－產品組合－114年度／血糖測試片
+    published_date: null
+    publisher: Treelazy
+    quote_check: found
+    title: 福永生技（4183）年報查詢
+    url: https://treelazy.com/stock/4183
+  tw.4183#e3:
+    locator: 營收分布－產品組合－114年度／血糖測試儀
+    published_date: null
+    publisher: Treelazy
+    quote_check: found
+    title: 福永生技（4183）年報查詢
+    url: https://treelazy.com/stock/4183
+  tw.4183#e4:
+    locator: 營收分布－產品組合－114年度／其他
+    published_date: null
+    publisher: Treelazy
+    quote_check: found
+    title: 福永生技（4183）年報查詢
+    url: https://treelazy.com/stock/4183
+  tw.4183#e5:
+    locator: 血糖監測系統
+    published_date: null
+    publisher: 福永生物科技股份有限公司
+    quote_check: found
+    title: 產品資訊
+    url: https://www.epsbio.com.tw/product
+  tw.4183#e6:
+    locator: 生物感測製造
+    published_date: null
+    publisher: 福永生物科技股份有限公司
+    quote_check: found
+    title: 專業服務
+    url: https://www.epsbio.com.tw/professional
+  tw.4183#e7:
+    locator: 生物化學工程
+    published_date: null
+    publisher: 福永生物科技股份有限公司
+    quote_check: found
+    title: 創新技術
+    url: https://www.epsbio.com.tw/innovation
+  tw.4183#e8:
+    locator: 產品資訊介紹
+    published_date: null
+    publisher: 福永生物科技股份有限公司
+    quote_check: found
+    title: 產品資訊
+    url: https://www.epsbio.com.tw/product
+  tw.4183#e9:
+    locator: 專業服務項目
+    published_date: null
+    publisher: 福永生物科技股份有限公司
+    quote_check: found
+    title: 專業服務
+    url: https://www.epsbio.com.tw/professional

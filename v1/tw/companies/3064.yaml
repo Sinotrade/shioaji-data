@@ -8,12 +8,135 @@ industry:
   l0_code: '32'
   l0_name: 文化創意業
   l0_name_en: Cultural and Creative
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.software
+  l2_name: 軟體與資訊服務
+  l2_name_en: Software & IT Services
+  l3: sw.gaming
+  l3_name: 遊戲
+  l3_name_en: Games
+primary_chain_position: not_applicable
+summary_short: 以電子遊戲軟硬體及相關勞務服務為主，另提供智慧排隊系統。
+summary_long: 泰偉以電子遊戲軟硬體及相關服務為主要業務。2025年前三季合併營收以勞務收入為主，占92%，銷貨收入占8%，另有其他營業收入。官網列示產品包括老虎機、電子棋牌與魚機等電子遊戲、以彩球模擬開牌的商用浮球機，以及具中央控制與監控功能的遊戲管理系統。公司另提供「叫叫我」智慧排隊系統，使用者可掃描QR Code加入LINE官方帳號接收叫號通知。截至2025年9月底，直接子公司包括香港娛樂科技有限公司及泰偉開發顧問股份有限公司。
+segments:
+- evidence_ids:
+  - e5
+  id: services
+  name: 勞務收入
+  period: 2025-01-01至2025-09-30
+  revenue_share_pct: 92
+- evidence_ids:
+  - e6
+  id: goods
+  name: 銷貨收入
+  period: 2025-01-01至2025-09-30
+  revenue_share_pct: 8
+- evidence_ids:
+  - e7
+  id: other
+  name: 其他營業收入
+  period: 2025-01-01至2025-09-30
+  revenue_share_pct: null
+relations:
+  subsidiaries:
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: e9f4b3b94a876
+    evidence_level: primary
+    id: org.泰偉開發顧問股份有限公司
+    name: 泰偉開發顧問股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: e11e6043d2af3
+    evidence_level: primary
+    id: org.香港娛樂科技有限公司
+    name: 香港娛樂科技有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.astrocorp.com.tw
 tax_id: '70613972'
 incorporated: '2000-08-02'
 listed: '2004-06-09'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-25'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3064#e1:
+    locator: 電子遊戲Gaming
+    published_date: null
+    publisher: 泰偉電子股份有限公司
+    quote_check: found
+    title: 泰偉電子股份有限公司－產品大類
+    url: https://www.astrocorp.com.tw/
+  tw.3064#e2:
+    locator: 天王浮球機
+    published_date: null
+    publisher: 泰偉電子股份有限公司
+    quote_check: found
+    title: 泰偉電子股份有限公司－商用浮球機
+    url: https://www.astrocorp.com.tw/products-list-ball.php
+  tw.3064#e3:
+    locator: 中央管理系統功能
+    published_date: null
+    publisher: 泰偉電子股份有限公司
+    quote_check: found
+    title: 泰偉電子股份有限公司－系統
+    url: https://www.astrocorp.com.tw/products-list-VLT.php
+  tw.3064#e4:
+    locator: 主動叫號通知
+    published_date: null
+    publisher: 泰偉電子股份有限公司
+    quote_check: found
+    title: 泰偉電子股份有限公司－叫叫我
+    url: https://www.astrocorp.com.tw/products-callmeback.php
+  tw.3064#e5:
+    locator: 第6頁，合併綜合損益表；114年前三季金額57,521仟元，占92%
+    published_date: '2025-11-04'
+    publisher: 泰偉電子股份有限公司
+    quote_check: found
+    title: 114年第3季合併財務報告
+    url: https://storage.googleapis.com/astrocorp-web/upload/%E5%90%88%E4%BD%B5%E5%A0%B1%E5%91%8A%E6%9B%B8/114Q3%E6%B3%B0%E5%81%89%E5%90%88%E4%BD%B5%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf
+  tw.3064#e6:
+    locator: 第6頁，合併綜合損益表；114年前三季金額5,291仟元，占8%
+    published_date: '2025-11-04'
+    publisher: 泰偉電子股份有限公司
+    quote_check: found
+    title: 114年第3季合併財務報告
+    url: https://storage.googleapis.com/astrocorp-web/upload/%E5%90%88%E4%BD%B5%E5%A0%B1%E5%91%8A%E6%9B%B8/114Q3%E6%B3%B0%E5%81%89%E5%90%88%E4%BD%B5%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf
+  tw.3064#e7:
+    locator: 第6頁，合併綜合損益表，其他營業收入列
+    published_date: '2025-11-04'
+    publisher: 泰偉電子股份有限公司
+    quote_check: found
+    title: 114年第3季合併財務報告
+    url: https://storage.googleapis.com/astrocorp-web/upload/%E5%90%88%E4%BD%B5%E5%A0%B1%E5%91%8A%E6%9B%B8/114Q3%E6%B3%B0%E5%81%89%E5%90%88%E4%BD%B5%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf
+  tw.3064#e8:
+    locator: 第14頁，合併財務報表編製主體；投資公司及子公司名稱欄
+    published_date: '2025-11-04'
+    publisher: 泰偉電子股份有限公司
+    quote_check: found
+    title: 114年第3季合併財務報告
+    url: https://storage.googleapis.com/astrocorp-web/upload/%E5%90%88%E4%BD%B5%E5%A0%B1%E5%91%8A%E6%9B%B8/114Q3%E6%B3%B0%E5%81%89%E5%90%88%E4%BD%B5%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf
+  tw.3064#e9:
+    locator: 第14頁，合併財務報表編製主體；投資公司及子公司名稱欄
+    published_date: '2025-11-04'
+    publisher: 泰偉電子股份有限公司
+    quote_check: found
+    title: 114年第3季合併財務報告
+    url: https://storage.googleapis.com/astrocorp-web/upload/%E5%90%88%E4%BD%B5%E5%A0%B1%E5%91%8A%E6%9B%B8/114Q3%E6%B3%B0%E5%81%89%E5%90%88%E4%BD%B5%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf

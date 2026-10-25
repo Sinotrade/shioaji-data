@@ -8,13 +8,129 @@ industry:
   l0_code: '31'
   l0_name: 其他電子業
   l0_name_en: Other Electronic
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.distribution
+  l2_name: 電子通路
+  l2_name_en: Electronics Distribution
+  l3: dist.components
+  l3_name: 電子零組件通路
+  l3_name_en: Electronic Components Distribution
+primary_chain_position: downstream
+summary_short: 以電機、電子零組件代理經銷為主，兼營自動化設備及嵌入式電腦組裝。
+summary_long: 大拓-KY以電機、電子零組件代理經銷為主要業務，並經營工廠自動化設備製品組裝及工業嵌入式電腦組裝。代理產品包括伺服馬達、可程式化自動化控制器、變頻器及連接器等。2025年產業工作機械設備類產品占營收75.62%，其他類產品占24.13%，印刷電路板相關製品占0.25%。集團全資持有日本大拓公司，並直接及透過日本大拓合計持有尚茂電子材料68.15%股權，主要子公司包含日本大拓與尚茂電子材料。
+segments:
+- evidence_ids:
+  - e5
+  id: seg_industrial
+  name: 產業工作機械設備類產品
+  period: '2025'
+  revenue_share_pct: 75.62
+- evidence_ids:
+  - e6
+  id: seg_pcb
+  name: 印刷電路板（PCB）相關製品
+  period: '2025'
+  revenue_share_pct: 0.25
+- evidence_ids:
+  - e7
+  id: seg_other
+  name: 其他類產品
+  period: '2025'
+  revenue_share_pct: 24.13
+relations:
+  subsidiaries:
+  - as_of: '2026-05-20'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司日本大拓
+    details:
+    - 全資子公司日本大拓
+    edge: e6c058a48a4c8
+    evidence_level: primary
+    id: org.daito-me-japan
+    name: ダイトーエムイー株式会社
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-05-20'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接及間接控制之子公司
+    details:
+    - 直接及間接控制之子公司
+    edge: e132244866123
+    evidence_level: primary
+    id: tw.8291
+    name: 尚茂
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.daito-me.com.tw
 tax_id: '54385657'
 incorporated: '2014-01-07'
 listed: '2016-01-08'
 foreign_registration: KY 開曼群島
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-25'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.8455#e2:
+    locator: 第1頁，研究發展狀況；PDF第6頁
+    published_date: '2026-05-20'
+    publisher: 蓋曼群島商日本大拓股份有限公司
+    quote_check: found
+    title: 大拓-KY 2025年度年報
+    url: https://doc.twse.com.tw/pdf/2025_8455_20260612F04_20261025_125815.pdf
+  tw.8455#e3:
+    locator: 第57頁，業務內容；PDF第62頁
+    published_date: '2026-05-20'
+    publisher: 蓋曼群島商日本大拓股份有限公司
+    quote_check: found
+    title: 大拓-KY 2025年度年報
+    url: https://doc.twse.com.tw/pdf/2025_8455_20260612F04_20261025_125815.pdf
+  tw.8455#e4:
+    locator: 第67頁，代理產品說明；PDF第72頁
+    published_date: '2026-05-20'
+    publisher: 蓋曼群島商日本大拓股份有限公司
+    quote_check: found
+    title: 大拓-KY 2025年度年報
+    url: https://doc.twse.com.tw/pdf/2025_8455_20260612F04_20261025_125815.pdf
+  tw.8455#e5:
+    locator: 第57頁，2025年度產品營收表，產業工作機械設備類產品列：874,991千元、75.62%；PDF第62頁
+    published_date: '2026-05-20'
+    publisher: 蓋曼群島商日本大拓股份有限公司
+    quote_check: found
+    title: 大拓-KY 2025年度年報
+    url: https://doc.twse.com.tw/pdf/2025_8455_20260612F04_20261025_125815.pdf
+  tw.8455#e6:
+    locator: 第57頁，2025年度產品營收表，PCB相關製品列：2,883千元、0.25%；PDF第62頁
+    published_date: '2026-05-20'
+    publisher: 蓋曼群島商日本大拓股份有限公司
+    quote_check: found
+    title: 大拓-KY 2025年度年報
+    url: https://doc.twse.com.tw/pdf/2025_8455_20260612F04_20261025_125815.pdf
+  tw.8455#e7:
+    locator: 第57頁，2025年度產品營收表，其他類產品列：279,135千元、24.13%；PDF第62頁
+    published_date: '2026-05-20'
+    publisher: 蓋曼群島商日本大拓股份有限公司
+    quote_check: not_found
+    title: 大拓-KY 2025年度年報
+    url: https://doc.twse.com.tw/pdf/2025_8455_20260612F04_20261025_125815.pdf
+  tw.8455#e8:
+    locator: 第5頁，集團架構圖；Daito Me Holdings Co., Ltd指向日本大拓公司之持股線標示100%；PDF第10頁
+    published_date: '2026-05-20'
+    publisher: 蓋曼群島商日本大拓股份有限公司
+    quote_check: found
+    title: 大拓-KY 2025年度年報
+    url: https://doc.twse.com.tw/pdf/2025_8455_20260612F04_20261025_125815.pdf
+  tw.8455#e9:
+    locator: 第5頁，集團架構圖及2024年5月沿革；架構圖列直接持股8.92%、日本大拓持股59.23%；PDF第10頁
+    published_date: '2026-05-20'
+    publisher: 蓋曼群島商日本大拓股份有限公司
+    quote_check: found
+    title: 大拓-KY 2025年度年報
+    url: https://doc.twse.com.tw/pdf/2025_8455_20260612F04_20261025_125815.pdf

@@ -8,12 +8,132 @@ industry:
   l0_code: '04'
   l0_name: 紡織纖維
   l0_name_en: Textiles
-primary_chain_position: unknown
+  l1: materials
+  l1_name: 原物料
+  l1_name_en: Materials
+  l2: mat.other
+  l2_name: 其他原物料
+  l2_name_en: Other Materials
+  l3: matl.textile_fiber
+  l3_name: 紡織纖維與機能布料
+  l3_name_en: Textiles, Fibers & Functional Fabrics
+chain: chain.textile
+chain_stage:
+  agreement: both
+  also:
+  - stage: fiber
+    stage_name: 纖維與紗
+    tier: upstream
+  reason: 布料織造與加工占營收67.13%為最大業務，另有占24.57%的假撚加工絲業務。
+  stage: fabric
+  stage_name: 織布與染整
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 以聚酯纖維布、加工絲及布料加工為主，另有房地租賃收入。
+summary_long: 大宇紡織以聚酯纖維布與加工絲為主要業務，布料涵蓋聚酯長纖布、T/R交織布及彈性布種，供男女時裝與襯衫等用途，並提供貼合、燙金、壓花及印花加工布料。2025年紡織事業部占營收67.13%，假撚事業部占24.57%，房地租賃占8.30%。加工絲產品包括仿毛、仿麻、仿棉及複合紗；彰濱廠於2025年轉為廠辦租賃，報告註明已無生產行為。集團旗下有長富投資與弘宇科技兩家全資子公司。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_textile
+  name: 紡織事業部
+  period: '2025'
+  revenue_share_pct: 67.13
+- evidence_ids:
+  - e2
+  id: seg_yarn
+  name: 假撚事業部
+  period: '2025'
+  revenue_share_pct: 24.57
+- evidence_ids:
+  - e2
+  id: seg_rental
+  name: 房地租賃
+  period: '2025'
+  revenue_share_pct: 8.3
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司
+    details:
+    - 全資子公司
+    edge: e753e2cb7c3af
+    evidence_level: primary
+    id: org.chang-fu-investment
+    name: 長富投資股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司
+    details:
+    - 全資子公司
+    edge: e41e7e8451bc4
+    evidence_level: primary
+    id: org.hong-yu-technology
+    name: 弘宇科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.universal-tex.com
 tax_id: '07015014'
 incorporated: '1969-09-12'
 listed: '1991-02-05'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1445#e2:
+    locator: 報告書第24頁，PDF第26頁，產品分類營收占比；欄位依序為2023、2024、2025年
+    published_date: 2026-08
+    publisher: 大宇紡織股份有限公司
+    quote_check: found
+    title: 大宇紡織2025永續報告書
+    url: https://www.universal-tex.com/Upload/Profile/f8f98d22115449b59d65a37630ea1dea.pdf
+  tw.1445#e3:
+    locator: 紡織事業部
+    published_date: null
+    publisher: 大宇紡織股份有限公司
+    quote_check: found
+    title: 產品特色
+    url: https://www.universal-tex.com/feature.aspx
+  tw.1445#e4:
+    locator: 紡織事業部
+    published_date: null
+    publisher: 大宇紡織股份有限公司
+    quote_check: found
+    title: 產品特色
+    url: https://www.universal-tex.com/feature.aspx
+  tw.1445#e5:
+    locator: 假撚事業部
+    published_date: null
+    publisher: 大宇紡織股份有限公司
+    quote_check: found
+    title: 產品特色
+    url: https://www.universal-tex.com/feature.aspx
+  tw.1445#e6:
+    locator: 報告書第1頁，PDF第3頁，資料揭露邊界及子公司名單
+    published_date: 2026-08
+    publisher: 大宇紡織股份有限公司
+    quote_check: found
+    title: 大宇紡織2025永續報告書
+    url: https://www.universal-tex.com/Upload/Profile/f8f98d22115449b59d65a37630ea1dea.pdf
+  tw.1445#e7:
+    locator: 報告書第16頁，PDF第18頁，集團架構圖
+    published_date: 2026-08
+    publisher: 大宇紡織股份有限公司
+    quote_check: found
+    title: 大宇紡織2025永續報告書
+    url: https://www.universal-tex.com/Upload/Profile/f8f98d22115449b59d65a37630ea1dea.pdf
+  tw.1445#e8:
+    locator: 報告書第1頁，PDF第3頁，彰濱廠註解
+    published_date: 2026-08
+    publisher: 大宇紡織股份有限公司
+    quote_check: found
+    title: 大宇紡織2025永續報告書
+    url: https://www.universal-tex.com/Upload/Profile/f8f98d22115449b59d65a37630ea1dea.pdf

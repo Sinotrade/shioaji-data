@@ -8,13 +8,243 @@ industry:
   l0_code: '03'
   l0_name: 塑膠工業
   l0_name_en: Plastics
-primary_chain_position: unknown
+  l1: realestate
+  l1_name: 不動產
+  l1_name_en: Real Estate
+  l2: re.dev
+  l2_name: 不動產
+  l2_name_en: Real Estate
+  l3: re.commercial
+  l3_name: 商用不動產與資產管理
+  l3_name_en: Commercial Real Estate & Asset Management
+primary_chain_position: not_applicable
+summary_short: 以商辦與廠房出租、旅館服務取得收入，已停止鞋材生產。
+summary_long: 勝悅-KY目前以商辦大樓、廠房出租及旅館服務取得收入，原鞋底與EVO膠粒生產已於2025年停止。2026年上半年租賃收入占45.08%，客房收入占35.70%，其他營業收入占19.21%，其中包括管理費與會務收入。世紀勝悅新材料科技有限公司及晉江成昌鞋業有限公司為集團經營租賃業務的子公司，福建省成悅酒店運營有限公司從事租賃及旅館業務。集團另有投資控股子公司，萬舶酒店亦已列入2026年中合併範圍。
+segments:
+- evidence_ids:
+  - e3
+  id: seg_rental
+  name: 租賃收入
+  period: 2026年上半年
+  revenue_share_pct: 45.08
+- evidence_ids:
+  - e4
+  id: seg_room
+  name: 客房收入
+  period: 2026年上半年
+  revenue_share_pct: 35.7
+- evidence_ids:
+  - e5
+  - e6
+  - e7
+  id: seg_other
+  name: 其他營業收入（管理費及會務收入）
+  period: 2026年上半年
+  revenue_share_pct: 19.21
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有的投資控股子公司
+    details:
+    - 直接持有的投資控股子公司
+    edge: e7ca3c1aa26c1
+    evidence_level: primary
+    id: org.super-light-shoe-soles-co-ltd
+    name: Super Light Shoe Soles Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有的租賃子公司
+    details:
+    - 直接持有的租賃子公司
+    edge: ecd881e2a13ee
+    evidence_level: primary
+    id: org.世紀勝悅新材料科技有限公司
+    name: 世紀勝悅新材料科技有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過Super Light持有的香港投資控股子公司
+    details:
+    - 透過Super Light持有的香港投資控股子公司
+    edge: e9cc8ebbbdf50
+    evidence_level: primary
+    id: org.成昌鞋業有限公司
+    name: 成昌鞋業有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過香港成昌持有的投資控股子公司
+    details:
+    - 透過香港成昌持有的投資控股子公司
+    edge: e7ef311254293
+    evidence_level: primary
+    id: org.晉江成昌投資有限公司
+    name: 晉江成昌投資有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過香港成昌持有的租賃子公司
+    details:
+    - 透過香港成昌持有的租賃子公司
+    edge: e70561eca901e
+    evidence_level: primary
+    id: org.晉江成昌鞋業有限公司
+    name: 晉江成昌鞋業有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過晉江成昌投資持有的租賃及旅館子公司
+    details:
+    - 透過晉江成昌投資持有的租賃及旅館子公司
+    edge: e67de1e107300
+    evidence_level: primary
+    id: org.福建省成悅酒店運營有限公司
+    name: 福建省成悅酒店運營有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過晉江成昌鞋業持有的旅館子公司
+    details:
+    - 透過晉江成昌鞋業持有的旅館子公司
+    edge: e57e7aba0da27
+    evidence_level: primary
+    id: org.萬舶酒店-晉江-有限公司
+    name: 萬舶酒店(晉江)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.vnm.com.tw
 tax_id: '37722768'
 incorporated: '2012-06-14'
 listed: '2014-01-14'
 foreign_registration: KY 開曼群島
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-25'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1340#e10:
+    locator: 附註四（三）列入合併財務報表之子公司／115年6月30日
+    published_date: '2026-08-24'
+    publisher: 勝悅新材料有限公司（FinancialFilings轉載）
+    quote_check: unreachable
+    title: 勝悅新材料有限公司及子公司115年第二季合併財務報告
+    url: https://financialfilings.com/filings/victory-1340/interim-quarterly-report/2026/57448257/
+  tw.1340#e11:
+    locator: 附註四（三）列入合併財務報表之子公司／115年6月30日
+    published_date: '2026-08-24'
+    publisher: 勝悅新材料有限公司（FinancialFilings轉載）
+    quote_check: unreachable
+    title: 勝悅新材料有限公司及子公司115年第二季合併財務報告
+    url: https://financialfilings.com/filings/victory-1340/interim-quarterly-report/2026/57448257/
+  tw.1340#e12:
+    locator: 附註四（三）列入合併財務報表之子公司／115年6月30日
+    published_date: '2026-08-24'
+    publisher: 勝悅新材料有限公司（FinancialFilings轉載）
+    quote_check: unreachable
+    title: 勝悅新材料有限公司及子公司115年第二季合併財務報告
+    url: https://financialfilings.com/filings/victory-1340/interim-quarterly-report/2026/57448257/
+  tw.1340#e13:
+    locator: 附註四（三）列入合併財務報表之子公司／115年6月30日
+    published_date: '2026-08-24'
+    publisher: 勝悅新材料有限公司（FinancialFilings轉載）
+    quote_check: unreachable
+    title: 勝悅新材料有限公司及子公司115年第二季合併財務報告
+    url: https://financialfilings.com/filings/victory-1340/interim-quarterly-report/2026/57448257/
+  tw.1340#e14:
+    locator: 附註四（三）列入合併財務報表之子公司／115年6月30日
+    published_date: '2026-08-24'
+    publisher: 勝悅新材料有限公司（FinancialFilings轉載）
+    quote_check: unreachable
+    title: 勝悅新材料有限公司及子公司115年第二季合併財務報告
+    url: https://financialfilings.com/filings/victory-1340/interim-quarterly-report/2026/57448257/
+  tw.1340#e15:
+    locator: 附註四（三）列入合併財務報表之子公司及註2
+    published_date: '2026-08-24'
+    publisher: 勝悅新材料有限公司（FinancialFilings轉載）
+    quote_check: unreachable
+    title: 勝悅新材料有限公司及子公司115年第二季合併財務報告
+    url: https://financialfilings.com/filings/victory-1340/interim-quarterly-report/2026/57448257/
+  tw.1340#e2:
+    locator: 附註一、公司沿革
+    published_date: '2026-08-24'
+    publisher: 勝悅新材料有限公司（FinancialFilings轉載）
+    quote_check: unreachable
+    title: 勝悅新材料有限公司及子公司115年第二季合併財務報告
+    url: https://financialfilings.com/filings/victory-1340/interim-quarterly-report/2026/57448257/
+  tw.1340#e3:
+    locator: 綜合損益表／租賃收入列；本期累計金額及占比
+    published_date: '2026-08-24'
+    publisher: MoneyDJ理財網
+    quote_check: found
+    title: 勝悅-KY 115年第2季綜合損益表，每股虧損0.05元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=112ddc33-7ecf-4be7-9165-2aff983d3ce6&c=MB06
+  tw.1340#e4:
+    locator: 綜合損益表／客房收入列；本期累計金額及占比
+    published_date: '2026-08-24'
+    publisher: MoneyDJ理財網
+    quote_check: found
+    title: 勝悅-KY 115年第2季綜合損益表，每股虧損0.05元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=112ddc33-7ecf-4be7-9165-2aff983d3ce6&c=MB06
+  tw.1340#e5:
+    locator: 綜合損益表／其他營業收入列；本期累計金額及占比
+    published_date: '2026-08-24'
+    publisher: MoneyDJ理財網
+    quote_check: found
+    title: 勝悅-KY 115年第2季綜合損益表，每股虧損0.05元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=112ddc33-7ecf-4be7-9165-2aff983d3ce6&c=MB06
+  tw.1340#e6:
+    locator: 附註六（二十）營業收入／115年1月1日至6月30日，單位新臺幣仟元
+    published_date: '2026-08-24'
+    publisher: 勝悅新材料有限公司（FinancialFilings轉載）
+    quote_check: unreachable
+    title: 勝悅新材料有限公司及子公司115年第二季合併財務報告
+    url: https://financialfilings.com/filings/victory-1340/interim-quarterly-report/2026/57448257/
+  tw.1340#e7:
+    locator: 附註六（二十）營業收入／115年1月1日至6月30日，單位新臺幣仟元
+    published_date: '2026-08-24'
+    publisher: 勝悅新材料有限公司（FinancialFilings轉載）
+    quote_check: unreachable
+    title: 勝悅新材料有限公司及子公司115年第二季合併財務報告
+    url: https://financialfilings.com/filings/victory-1340/interim-quarterly-report/2026/57448257/
+  tw.1340#e8:
+    locator: 內文第二段
+    published_date: '2025-09-09'
+    publisher: MoneyDJ理財網
+    quote_check: found
+    title: 勝悅-KY不再生產鞋底及EVO膠粒，轉發展旅館業
+    url: https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=8b625907-4e1d-403c-9d1c-f299cd26dfde
+  tw.1340#e9:
+    locator: 附註四（三）列入合併財務報表之子公司／115年6月30日
+    published_date: '2026-08-24'
+    publisher: 勝悅新材料有限公司（FinancialFilings轉載）
+    quote_check: unreachable
+    title: 勝悅新材料有限公司及子公司115年第二季合併財務報告
+    url: https://financialfilings.com/filings/victory-1340/interim-quarterly-report/2026/57448257/

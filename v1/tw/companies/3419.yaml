@@ -8,12 +8,201 @@ industry:
   l0_code: '27'
   l0_name: 通信網路業
   l0_name_en: Communications and Internet
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.network
+  l2_name: 通信網路
+  l2_name_en: Communications & Networking
+  l3: net.wireless
+  l3_name: 無線通訊與射頻
+  l3_name_en: Wireless & RF
+chain: chain.networking
+chain_stage:
+  agreement: both
+  also:
+  - stage: equipment
+    stage_name: 網通設備與系統
+    tier: downstream
+  reason: 天線相關無線裝置占營收67.60%，以網通零組件為主；另提供RFID讀取器與智慧貨架系統。
+  stage: modules
+  stage_name: 模組與零組件
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 以無線通訊天線為主，另提供電子零件、RFID產品及電子製造服務。
+summary_long: 譁裕的天線產品涵蓋Wi-Fi 6／6E／7、5G／LTE基站及車載GNSS／5G多合一天線。2025年合併營收以高中低頻無線裝置為主，占67.60%；電子及光通訊零件占24.62%，電子訊號連結裝置占7.71%，電子產品占0.07%。公司另提供RFID智慧貨架、讀取器，以及PCB組裝、測試、檢驗與包裝等電子製造服務。無人機應用包含FPV影像傳輸天線；2026年10月並公告將展示供無人系統與低軌衛星／物聯網定位使用的高精度主動式GNSS天線模組。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_wireless
+  name: 高中低頻無線裝置
+  period: '2025'
+  revenue_share_pct: 67.6
+- evidence_ids:
+  - e2
+  id: seg_components
+  name: 電子及光通訊零件
+  period: '2025'
+  revenue_share_pct: 24.62
+- evidence_ids:
+  - e2
+  id: seg_connection
+  name: 電子訊號連結裝置
+  period: '2025'
+  revenue_share_pct: 7.71
+- evidence_ids:
+  - e2
+  id: seg_electronics
+  name: 電子產品
+  period: '2025'
+  revenue_share_pct: 0.07
+main_theme: theme.5g
+themes:
+- also: []
+  stage: components
+  theme: theme.5g
+  tier: upstream
+- also: []
+  stage: components
+  theme: theme.drone
+  tier: upstream
+- also: []
+  stage: components
+  theme: theme.leo_satellite
+  tier: upstream
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過華弘國際間接持股100%的子公司
+    details:
+    - 透過華弘國際間接持股100%的子公司
+    edge: edb21b1257c64
+    evidence_level: primary
+    id: org.dongguan-aeon-tech
+    name: 東莞台霖電子通訊有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的投資子公司
+    details:
+    - 直接持股100%的投資子公司
+    edge: e01b695a72b98
+    evidence_level: primary
+    id: org.hua-hung-international
+    name: 華弘國際有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的美國子公司
+    details:
+    - 直接持股100%的美國子公司
+    edge: efb36d66d46fa
+    evidence_level: primary
+    id: org.wha-yu-usa
+    name: Wha Yu USA Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的越南子公司
+    details:
+    - 直接持股100%的越南子公司
+    edge: e5f6b878278c6
+    evidence_level: primary
+    id: org.wha-yu-vietnam
+    name: Wha Yu Vietnam Limited Liability Company
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.whayu.com
 tax_id: '47250470'
 incorporated: '1981-11-18'
 listed: '2008-01-21'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3419#e10:
+    locator: 第59頁，關係企業組織圖，截至114年12月31日
+    published_date: '2026-05-18'
+    publisher: 譁裕實業股份有限公司
+    quote_check: found
+    title: 譁裕實業股份有限公司114年度年報
+    url: https://www.whayu.com/tw/investor_document-detail/98/
+  tw.3419#e11:
+    locator: 第32頁，附註十一、子公司；華弘公司投資項下持股100%
+    published_date: null
+    publisher: 譁裕實業股份有限公司
+    quote_check: found
+    title: 譁裕實業股份有限公司及子公司114及113年度合併財務報告
+    url: https://www.whayu.com/investor_document-detail/53/
+  tw.3419#e2:
+    locator: 第32頁，營業比重；PDF第36頁
+    published_date: '2026-05-18'
+    publisher: 譁裕實業股份有限公司
+    quote_check: found
+    title: 譁裕實業股份有限公司114年度年報
+    url: https://www.whayu.com/tw/investor_document-detail/98/
+  tw.3419#e3:
+    locator: 主要產品與服務，射頻系統整合與天線解決方案
+    published_date: null
+    publisher: 譁裕實業股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.whayu.com/tw/about-detail/company-profile/
+  tw.3419#e4:
+    locator: RFID產品列表
+    published_date: null
+    publisher: 譁裕實業股份有限公司
+    quote_check: found
+    title: RFID系統產品介紹
+    url: https://www.whayu.com/tw/product/121/
+  tw.3419#e5:
+    locator: PCB組裝服務
+    published_date: null
+    publisher: 譁裕實業股份有限公司
+    quote_check: found
+    title: 電子製造服務（EMS Service）
+    url: https://www.whayu.com/tw/about/core-capabilities/ems-service/
+  tw.3419#e6:
+    locator: 展出重點段落
+    published_date: '2026-10-21'
+    publisher: 譁裕實業股份有限公司
+    quote_check: found
+    title: 'Exhibition Preview: TASTI 2026'
+    url: https://www.whayu.com/news-detail/178/
+  tw.3419#e7:
+    locator: 產品介紹首段
+    published_date: null
+    publisher: 譁裕實業股份有限公司
+    quote_check: found
+    title: FPV棒棒糖天線
+    url: https://www.whayu.com/tw/product-detail/119/
+  tw.3419#e8:
+    locator: 第32頁，附註十一、子公司；114年12月31日持股欄
+    published_date: null
+    publisher: 譁裕實業股份有限公司
+    quote_check: found
+    title: 譁裕實業股份有限公司及子公司114及113年度合併財務報告
+    url: https://www.whayu.com/investor_document-detail/53/
+  tw.3419#e9:
+    locator: 第32頁，附註十一、子公司；譁裕公司直接投資項下
+    published_date: null
+    publisher: 譁裕實業股份有限公司
+    quote_check: found
+    title: 譁裕實業股份有限公司及子公司114及113年度合併財務報告
+    url: https://www.whayu.com/investor_document-detail/53/

@@ -8,13 +8,139 @@ industry:
   l0_code: '20'
   l0_name: 其他業
   l0_name_en: Others
-primary_chain_position: unknown
+  l1: realestate
+  l1_name: 不動產
+  l1_name_en: Real Estate
+  l2: re.dev
+  l2_name: 不動產
+  l2_name_en: Real Estate
+  l3: re.commercial
+  l3_name: 商用不動產與資產管理
+  l3_name_en: Commercial Real Estate & Asset Management
+primary_chain_position: not_applicable
+summary_short: 以泰國廠房租賃及管理服務為主要收入來源，另經營服飾配件買賣與投資管理。
+summary_long: 樂威科目前以泰國廠房出租及資產管理為主要業務，2026年上半年合併營收1,279.8萬元，其中投資性不動產租金收入1,034萬元。泰國子公司Raku Innovation已退出精品金屬製造及代工，將廠房分層出租，並以租金及管理費作為主要收入來源。2026年7月起，集團另增加服飾配件買賣業務。旗下台灣子公司包括樂進科技、樂研智醫、樂富智能科技及智威智能科技，業務涵蓋生技醫療相關投資顧問、人工智慧軟硬體建置與能源技術服務。
+segments:
+- evidence_ids:
+  - e1
+  - e2
+  id: seg_rental
+  name: 投資性不動產租金收入
+  period: 2026H1
+  revenue_share_pct: null
+relations:
+  subsidiaries:
+  - as_of: '2026-08-21'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 泰國子公司，經營廠房資產租賃
+    details:
+    - 泰國子公司，經營廠房資產租賃
+    edge: e65b5925a2c57
+    evidence_level: primary
+    id: org.raku-innovation
+    name: Raku Innovation Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-25'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 台灣子公司，生技醫療相關投資及顧問
+    details:
+    - 台灣子公司，生技醫療相關投資及顧問
+    edge: e204bd081767c
+    evidence_level: primary
+    id: org.樂研智醫股份有限公司
+    name: 樂研智醫股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-08-21'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 台灣全資子公司
+    details:
+    - 台灣全資子公司
+    edge: e228196ebee26
+    evidence_level: primary
+    id: org.樂進科技股份有限公司
+    name: 樂進科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.raku-tec.com.tw/
 tax_id: '26330076'
 incorporated: '2010-08-09'
 listed: '2011-12-28'
 foreign_registration: KY 開曼群島
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-25'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4154#e1:
+    locator: 第36頁，投資性不動產之租金收入；欄位依序為2026年第二季及上半年，單位仟元
+    published_date: null
+    publisher: 樂威科股份有限公司
+    quote_check: not_found
+    title: 2026年度第二季合併財務報告
+    url: https://drive.google.com/file/d/1f4u2sHQMjslbrkCUDwR0-d_z9ZFxjNex/view?usp=drive_link
+  tw.4154#e2:
+    locator: 第40頁，2026年上半年及2025年同期營業收入，單位仟元
+    published_date: null
+    publisher: 樂威科股份有限公司
+    quote_check: not_found
+    title: 2026年度第二季合併財務報告
+    url: https://drive.google.com/file/d/1f4u2sHQMjslbrkCUDwR0-d_z9ZFxjNex/view?usp=drive_link
+  tw.4154#e3:
+    locator: 第57頁，改善營運及財務對策
+    published_date: null
+    publisher: 樂威科股份有限公司
+    quote_check: not_found
+    title: 2026年度第二季合併財務報告
+    url: https://drive.google.com/file/d/1f4u2sHQMjslbrkCUDwR0-d_z9ZFxjNex/view?usp=drive_link
+  tw.4154#e4:
+    locator: 月營收資料備註
+    published_date: '2026-10-08'
+    publisher: MoneyDJ理財網
+    quote_check: found
+    title: 樂威科-KY 115年9月營收605萬、年增123.04%
+    url: https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=50619fdd-e905-4b76-a605-d0ce4c09c679
+  tw.4154#e5:
+    locator: 投資及發展策略
+    published_date: null
+    publisher: 樂威科股份有限公司
+    quote_check: found
+    title: 關於我們
+    url: https://www.raku-tec.com.tw/關於我們
+  tw.4154#e6:
+    locator: 公告標題及第2項接受資金貸與公司之關係
+    published_date: '2026-08-21'
+    publisher: 公開資訊觀測站（MoneyDJ轉載）
+    quote_check: found
+    title: 樂威科-KY公告本公司資金貸與子公司Raku Innovation Co., Ltd.
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=78f60dfe-4628-4440-820e-cf62fb0bc715
+  tw.4154#e7:
+    locator: 第2項第2款，與資金貸與公司之關係；引文保留原文缺字
+    published_date: '2026-08-21'
+    publisher: 公開資訊觀測站（MoneyDJ轉載）
+    quote_check: found
+    title: 樂威科-KY公告本公司資金貸與子公司樂進科技股份有限公司
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=512955ea-fa53-4486-a7d0-b5d120a3ea28
+  tw.4154#e8:
+    locator: 第16頁，列入合併財務報告之子公司表
+    published_date: null
+    publisher: 樂威科股份有限公司
+    quote_check: not_found
+    title: 2026年度第二季合併財務報告
+    url: https://drive.google.com/file/d/1f4u2sHQMjslbrkCUDwR0-d_z9ZFxjNex/view?usp=drive_link
+  tw.4154#e9:
+    locator: 投資標的首段，台灣子公司業務
+    published_date: null
+    publisher: 樂威科股份有限公司
+    quote_check: found
+    title: 投資標的
+    url: https://www.raku-tec.com.tw/投資架構

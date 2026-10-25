@@ -8,12 +8,134 @@ industry:
   l0_code: '05'
   l0_name: 電機機械
   l0_name_en: Electric Machinery
-primary_chain_position: unknown
+  l1: auto
+  l1_name: 汽車與運具
+  l1_name_en: Automotive & Mobility
+  l2: auto.vehicles
+  l2_name: 汽機車
+  l2_name_en: Autos & Motorcycles
+  l3: auto.parts
+  l3_name: 汽車零組件
+  l3_name_en: Auto Parts
+chain: chain.auto
+chain_stage:
+  agreement: both
+  also: []
+  reason: 主要製造汽車輪圈，鍛圈營收占57.51%，屬汽車零組件。
+  stage: parts
+  stage_name: 汽車零組件與模組
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 製造及銷售汽車鋼製、鋁合金與鎂合金輪圈，營收以鍛圈為主。
+summary_long: 健信科技以汽車輪圈製造與銷售為主要業務，產品涵蓋鋼製、鋁合金及鎂合金輪圈。2024年營收以鍛圈為主，占57.51%；傾鑄圈、鋁圈及鋼圈分別占14.79%、12.64%及8.44%，其他加工與物料收入占6.62%。公司亦從事電動汽車輪圈的設計製造。主要營運子公司蘇州源成鋁製品製造有限公司從事鋁圈生產及銷售，屬間接控制；2025年度合併財報揭露嶸毅投資股份有限公司為集團最終控制者。
+segments:
+- evidence_ids:
+  - e1
+  id: forged_wheels
+  name: 鍛圈
+  period: '2024'
+  revenue_share_pct: 57.51
+- evidence_ids:
+  - e1
+  id: tilt_cast_wheels
+  name: 傾鑄圈
+  period: '2024'
+  revenue_share_pct: 14.79
+- evidence_ids:
+  - e1
+  id: aluminum_wheels
+  name: 鋁圈
+  period: '2024'
+  revenue_share_pct: 12.64
+- evidence_ids:
+  - e1
+  id: steel_wheels
+  name: 鋼圈
+  period: '2024'
+  revenue_share_pct: 8.44
+- evidence_ids:
+  - e1
+  id: other
+  name: 其他：加工收入及出售物料收入
+  period: '2024'
+  revenue_share_pct: 6.62
+main_theme: theme.ev
+themes:
+- also: []
+  stage: parts
+  theme: theme.ev
+  tier: midstream
+relations:
+  parents:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團最終控制者
+    details:
+    - 集團最終控制者
+    edge: e0fa3892d29d7
+    evidence_level: primary
+    id: org.rongyi-investment
+    name: 嶸毅投資股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接控制的鋁圈生產及銷售子公司
+    details:
+    - 間接控制的鋁圈生產及銷售子公司
+    edge: e280c1918b5a0
+    evidence_level: primary
+    id: org.suzhou-yuancheng-aluminum
+    name: 蘇州源成鋁製品製造有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.rostawheels.com.tw
 tax_id: '55878947'
 incorporated: '1978-06-20'
 listed: '1995-12-12'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4502#e1:
+    locator: PDF第54頁，印刷頁50，公司目前之產品及其營業比重
+    published_date: '2025-05-29'
+    publisher: 健信科技工業股份有限公司
+    quote_check: found
+    title: 健信科技工業股份有限公司113年度年報
+    url: https://www.rostawheels.com.tw/assets/pdf/shareholders-meeting/114-annual-report.pdf
+  tw.4502#e2:
+    locator: PDF第54頁，印刷頁50，公司目前之商品（服務）項目
+    published_date: '2025-05-29'
+    publisher: 健信科技工業股份有限公司
+    quote_check: found
+    title: 健信科技工業股份有限公司113年度年報
+    url: https://www.rostawheels.com.tw/assets/pdf/shareholders-meeting/114-annual-report.pdf
+  tw.4502#e3:
+    locator: 2022年業務與產品說明
+    published_date: null
+    publisher: 健信科技工業股份有限公司
+    quote_check: found
+    title: 公司簡介－健信集團輪圈
+    url: https://www.rostawheels.com.tw/tw/about.html
+  tw.4502#e4:
+    locator: 第20頁，附註四（三），列入合併財務報告之子公司
+    published_date: '2026-03-16'
+    publisher: 健信科技工業股份有限公司
+    quote_check: found
+    title: 健信科技工業股份有限公司及子公司114年度及113年度合併財務報告
+    url: https://www.rostawheels.com.tw/assets/pdf/financial-report/114Q4.pdf
+  tw.4502#e5:
+    locator: 第17頁，附註一，公司沿革與業務範圍
+    published_date: '2026-03-16'
+    publisher: 健信科技工業股份有限公司
+    quote_check: found
+    title: 健信科技工業股份有限公司及子公司114年度及113年度合併財務報告
+    url: https://www.rostawheels.com.tw/assets/pdf/financial-report/114Q4.pdf

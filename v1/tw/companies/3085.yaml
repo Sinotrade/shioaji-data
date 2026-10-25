@@ -8,12 +8,138 @@ industry:
   l0_code: '36'
   l0_name: 數位雲端
   l0_name_en: Digital and Cloud Services
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.transport
+  l2_name: 運輸
+  l2_name_en: Transportation
+  l3: trans.logistics
+  l3_name: 物流與倉儲
+  l3_name_en: Logistics & Warehousing
+primary_chain_position: not_applicable
+summary_short: 以倉儲理貨、CRM與票務系統服務及電商商品銷售取得營收。
+summary_long: 台鋼新零售的營收來自勞務服務與商品銷售；2025年勞務收入占78.03%，商品銷售占21.97%。勞務項目包含CRM軟體服務及倉儲理貨，倉儲業務由子公司久新新物流經營。商品涵蓋服飾、運動周邊、保健食品及運動賽事門票；公司另提供電商會員與票務系統開發、維運服務。2026年上半年法說指出，營運著重票券與倉儲服務。最新法說列示的子公司包括台鋼數位資產管理、久新新物流及水噹噹服飾。
+segments:
+- evidence_ids:
+  - e2
+  - e3
+  id: seg_services
+  name: 勞務收入（CRM軟體服務、倉儲理貨）
+  period: '2025'
+  revenue_share_pct: 78.03
+- evidence_ids:
+  - e1
+  - e3
+  id: seg_goods
+  name: 商品銷售
+  period: '2025'
+  revenue_share_pct: 21.97
+relations:
+  subsidiaries:
+  - as_of: 2026-08
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 倉儲及理貨包裝子公司
+    details:
+    - 倉儲及理貨包裝子公司
+    edge: e5af649248f16
+    evidence_level: primary
+    id: org.久新新物流股份有限公司
+    name: 久新新物流股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2026-08
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 旗下子公司
+    details:
+    - 旗下子公司
+    edge: e91743ae4ae2b
+    evidence_level: primary
+    id: org.台鋼數位資產管理股份有限公司
+    name: 台鋼數位資產管理股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2026-08
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 旗下子公司
+    details:
+    - 旗下子公司
+    edge: e389c9981feaa
+    evidence_level: primary
+    id: org.水噹噹服飾股份有限公司
+    name: 水噹噹服飾股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.newretail.com.tw/
 tax_id: '89836340'
 incorporated: '1994-09-01'
 listed: '2004-03-01'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3085#e1:
+    locator: 第49頁，主要業務及營業比重；欄序為114年度營收、比重及113年度比較數
+    published_date: '2026-03-20'
+    publisher: 台鋼新零售股份有限公司
+    quote_check: not_found
+    title: 台鋼新零售股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=3085&colorchg=1&filename=2025_3085_20260518F04.pdf&kind=F&step=9
+  tw.3085#e2:
+    locator: 第49頁，主要業務及營業比重；欄序為114年度營收、比重及113年度比較數
+    published_date: '2026-03-20'
+    publisher: 台鋼新零售股份有限公司
+    quote_check: not_found
+    title: 台鋼新零售股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=3085&colorchg=1&filename=2025_3085_20260518F04.pdf&kind=F&step=9
+  tw.3085#e3:
+    locator: 第49頁，公司目前之商品（服務）項目
+    published_date: '2026-03-20'
+    publisher: 台鋼新零售股份有限公司
+    quote_check: not_found
+    title: 台鋼新零售股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=3085&colorchg=1&filename=2025_3085_20260518F04.pdf&kind=F&step=9
+  tw.3085#e4:
+    locator: 第63頁，關係企業基本資料
+    published_date: '2026-03-20'
+    publisher: 台鋼新零售股份有限公司
+    quote_check: not_found
+    title: 台鋼新零售股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=3085&colorchg=1&filename=2025_3085_20260518F04.pdf&kind=F&step=9
+  tw.3085#e5:
+    locator: 第64頁，關係企業營運概況；營業收入37,666仟元，為未經合併沖銷數
+    published_date: '2026-03-20'
+    publisher: 台鋼新零售股份有限公司
+    quote_check: not_found
+    title: 台鋼新零售股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=3085&colorchg=1&filename=2025_3085_20260518F04.pdf&kind=F&step=9
+  tw.3085#e6:
+    locator: 第3頁，基本資料
+    published_date: null
+    publisher: 台鋼新零售股份有限公司
+    quote_check: found
+    title: 115Q2新零售法人說明會簡報
+    url: https://www.newretail.com.tw/wp-content/uploads/2026/08/115Q2%E6%96%B0%E9%9B%B6%E5%94%AE_%E6%B3%95%E8%AA%AA%E6%9C%83%E7%B0%A1%E5%A0%B1_1150824_F.pdf
+  tw.3085#e7:
+    locator: 第9頁，運營成果
+    published_date: null
+    publisher: 台鋼新零售股份有限公司
+    quote_check: found
+    title: 115Q2新零售法人說明會簡報
+    url: https://www.newretail.com.tw/wp-content/uploads/2026/08/115Q2%E6%96%B0%E9%9B%B6%E5%94%AE_%E6%B3%95%E8%AA%AA%E6%9C%83%E7%B0%A1%E5%A0%B1_1150824_F.pdf
+  tw.3085#e8:
+    locator: 資訊服務
+    published_date: null
+    publisher: 台鋼新零售股份有限公司
+    quote_check: found
+    title: 主要商品／服務項目
+    url: https://www.newretail.com.tw/%E4%B8%BB%E8%A6%81%E5%95%86%E5%93%81-%E6%9C%8D%E5%8B%99%E9%A0%85%E7%9B%AE/

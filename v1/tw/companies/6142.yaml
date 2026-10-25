@@ -8,7 +8,55 @@ industry:
   l0_code: '27'
   l0_name: 通信網路業
   l0_name_en: Communications and Internet
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.network
+  l2_name: 通信網路
+  l2_name_en: Communications & Networking
+  l3: net.switch
+  l3_name: 網通設備（交換器、路由器）
+  l3_name_en: Networking Equipment (Switches, Routers)
+chain: chain.networking
+chain_stage:
+  agreement: both
+  also: []
+  reason: 有線通訊產品占營收85.3%，主力為乙太網路交換器，另製造無線存取器及路由器。
+  stage: equipment
+  stage_name: 網通設備與系統
+  tier: downstream
+primary_chain_position: downstream
+summary_short: 以網通設備設計與製造代工為主，產品包括交換器、無線存取器及路由器。
+summary_long: 友勁科技從事有線與無線網通設備業務，採委託設計製造及委託製造代工模式。2024年營收組成以有線通訊產品為主，占85.30%，無線通訊產品占11.39%，其他占3.31%。產品包括企業與校園用乙太網路交換器、Wi-Fi 6／Wi-Fi 7企業型無線存取器、5G無線寬頻路由器，以及企業級中小型資料中心交換器。依2026年第二季財報，友訊科技為母公司；友勁直接持有前勁投資及Huge Castle全部股權，並透過Huge Castle持有蘇州碩實全部股權。
+segments:
+- evidence_ids:
+  - e3
+  id: seg_wired
+  name: 有線通訊產品
+  period: '2024'
+  revenue_share_pct: 85.3
+- evidence_ids:
+  - e3
+  id: seg_wireless
+  name: 無線通訊產品
+  period: '2024'
+  revenue_share_pct: 11.39
+- evidence_ids:
+  - e3
+  id: seg_other
+  name: 其他
+  period: '2024'
+  revenue_share_pct: 3.31
+main_theme: theme.5g
+themes:
+- also: []
+  stage: equipment
+  theme: theme.5g
+  tier: midstream
+- also: []
+  stage: it
+  theme: theme.data_center
+  tier: midstream
 relations:
   parents:
   - as_of: '2026-06-30'
@@ -17,10 +65,54 @@ relations:
     detail: 持股41.58%的合併子公司
     details:
     - 持股41.58%的合併子公司
+    - 母公司
     edge: ee022685b5727
     evidence_level: primary
     id: tw.2332
     name: 友訊
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 2
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的投資子公司
+    details:
+    - 直接持股100%的投資子公司
+    edge: e3d7eee2a8ab0
+    evidence_level: primary
+    id: org.huge-castle-ltd
+    name: Huge Castle Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的投資子公司
+    details:
+    - 直接持股100%的投資子公司
+    edge: e6cad9d21faf3
+    evidence_level: primary
+    id: org.前勁投資有限公司
+    name: 前勁投資有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過Huge Castle間接持有100%股權
+    details:
+    - 透過Huge Castle間接持有100%股權
+    edge: ec9f93e6aa741
+    evidence_level: primary
+    id: org.蘇州碩實電子科技有限公司
+    name: 蘇州碩實電子科技有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -29,7 +121,84 @@ website: www.cameo.com.tw
 tax_id: '22099744'
 incorporated: '1991-03-11'
 listed: '2003-08-04'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-25'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6142#e10:
+    locator: PDF第11頁，列入合併財務報告之子公司，115.6.30欄；投資公司同上為本公司
+    published_date: '2026-08-12'
+    publisher: 友勁科技股份有限公司
+    quote_check: found
+    title: 友勁科技115年及114年第二季合併財務報告
+    url: https://www.cameo.com.tw/wp-content/uploads/2026/08/友勁-115Q2-合併財報_電子書.pdf
+  tw.6142#e11:
+    locator: PDF第40頁，主要產品／服務線；金額單位為新台幣千元，依序為2025年、2024年
+    published_date: '2026-03-03'
+    publisher: 友勁科技股份有限公司
+    quote_check: found
+    title: 友勁科技114年度及113年度合併財務報告
+    url: https://www.cameo.com.tw/wp-content/uploads/2026/03/友勁-114Q4-合併財報_電子書.pdf
+  tw.6142#e12:
+    locator: PDF第11頁，列入合併財務報告之子公司註三
+    published_date: '2026-08-12'
+    publisher: 友勁科技股份有限公司
+    quote_check: found
+    title: 友勁科技115年及114年第二季合併財務報告
+    url: https://www.cameo.com.tw/wp-content/uploads/2026/08/友勁-115Q2-合併財報_電子書.pdf
+  tw.6142#e2:
+    locator: Highlight
+    published_date: null
+    publisher: 友勁科技股份有限公司
+    quote_check: found
+    title: Layer 3 Lite Managed Ethernet Switches
+    url: https://www.cameo.com.tw/en/portfolio-item/layer-3-lite-managed-ethernet-switches_en/
+  tw.6142#e3:
+    locator: PDF第58頁，營業比重
+    published_date: '2025-05-08'
+    publisher: 友勁科技股份有限公司
+    quote_check: found
+    title: 友勁科技113年度年報
+    url: https://www.cameo.com.tw/wp-content/uploads/2025/06/113年度年報-友勁科技0508final.pdf
+  tw.6142#e4:
+    locator: PDF第4頁，存貨評價之關鍵查核事項
+    published_date: '2026-03-03'
+    publisher: 友勁科技股份有限公司
+    quote_check: found
+    title: 友勁科技114年度及113年度個體財務報告
+    url: https://www.cameo.com.tw/wp-content/uploads/2026/03/友勁-114Q4-個體財報_電子書.pdf
+  tw.6142#e5:
+    locator: PDF第58頁，目前商品項目／無線網路存取器與路由器
+    published_date: '2025-05-08'
+    publisher: 友勁科技股份有限公司
+    quote_check: found
+    title: 友勁科技113年度年報
+    url: https://www.cameo.com.tw/wp-content/uploads/2025/06/113年度年報-友勁科技0508final.pdf
+  tw.6142#e6:
+    locator: PDF第58頁，目前商品項目／寬頻路由器
+    published_date: '2025-05-08'
+    publisher: 友勁科技股份有限公司
+    quote_check: found
+    title: 友勁科技113年度年報
+    url: https://www.cameo.com.tw/wp-content/uploads/2025/06/113年度年報-友勁科技0508final.pdf
+  tw.6142#e7:
+    locator: PDF第58頁，目前商品項目／區域網路交換器與路由器
+    published_date: '2025-05-08'
+    publisher: 友勁科技股份有限公司
+    quote_check: found
+    title: 友勁科技113年度年報
+    url: https://www.cameo.com.tw/wp-content/uploads/2025/06/113年度年報-友勁科技0508final.pdf
+  tw.6142#e8:
+    locator: PDF第35頁，附註七（二）關係人名稱及關係
+    published_date: '2026-08-12'
+    publisher: 友勁科技股份有限公司
+    quote_check: found
+    title: 友勁科技115年及114年第二季合併財務報告
+    url: https://www.cameo.com.tw/wp-content/uploads/2026/08/友勁-115Q2-合併財報_電子書.pdf
+  tw.6142#e9:
+    locator: PDF第11頁，列入合併財務報告之子公司，115.6.30欄
+    published_date: '2026-08-12'
+    publisher: 友勁科技股份有限公司
+    quote_check: found
+    title: 友勁科技115年及114年第二季合併財務報告
+    url: https://www.cameo.com.tw/wp-content/uploads/2026/08/友勁-115Q2-合併財報_電子書.pdf

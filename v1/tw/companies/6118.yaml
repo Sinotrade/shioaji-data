@@ -8,12 +8,87 @@ industry:
   l0_code: '29'
   l0_name: 電子通路業
   l0_name_en: Electronic Products Distribution
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.distribution
+  l2_name: 電子通路
+  l2_name_en: Electronics Distribution
+  l3: dist.it
+  l3_name: 資訊產品通路
+  l3_name_en: IT Products Distribution
+primary_chain_position: midstream
+summary_short: 以電腦、儲存、網通及家電等產品經銷代理與專案服務賺取收入。
+summary_long: 建達國際以資訊產品經銷代理為主要業務，產品涵蓋電腦系統、電腦周邊、DIY零組件與影音多媒體。儲存設備包含固態硬碟，另經營網路、資安、監控、生活家電及事務設備產品。除商品銷售外，公司亦提供專案規劃、維護與投標相關服務。依2024年度年報，銷貨收入占營收99.91%，服務收入占0.09%。旗下子公司鼎漢國際主要從事事務性機器設備的零售與批發。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_goods
+  name: 銷貨收入
+  period: '2024'
+  revenue_share_pct: 99.91
+- evidence_ids:
+  - e2
+  id: seg_services
+  name: 服務收入
+  period: '2024'
+  revenue_share_pct: 0.09
+relations:
+  subsidiaries:
+  - as_of: '2025-04-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 從屬公司；事務性機器設備零售及批發
+    details:
+    - 從屬公司；事務性機器設備零售及批發
+    edge: ec0591d3da68e
+    evidence_level: primary
+    id: org.dinghan-international
+    name: 鼎漢國際股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.xander.com.tw
 tax_id: '89621848'
 incorporated: '1995-11-01'
 listed: '2001-10-25'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6118#e1:
+    locator: 第46頁，肆、營運概況／業務之主要內容
+    published_date: '2025-04-30'
+    publisher: 建達國際股份有限公司
+    quote_check: found
+    title: 建達國際股份有限公司113年度年報
+    url: https://www.xander.com.tw/user2/pdf/2024-annual-report-of-shareholders-20260114.pdf
+  tw.6118#e2:
+    locator: 第46頁，營業比重表
+    published_date: '2025-04-30'
+    publisher: 建達國際股份有限公司
+    quote_check: found
+    title: 建達國際股份有限公司113年度年報
+    url: https://www.xander.com.tw/user2/pdf/2024-annual-report-of-shareholders-20260114.pdf
+  tw.6118#e3:
+    locator: 第68頁，關係企業組織圖
+    published_date: '2025-04-30'
+    publisher: 建達國際股份有限公司
+    quote_check: found
+    title: 建達國際股份有限公司113年度年報
+    url: https://www.xander.com.tw/user2/pdf/2024-annual-report-of-shareholders-20260114.pdf
+  tw.6118#e4:
+    locator: 商品資訊／儲存備份選單
+    published_date: null
+    publisher: 建達國際股份有限公司
+    quote_check: found
+    title: 公司概況及商品資訊選單
+    url: https://www.xander.com.tw/user2/about/xander_1-1.aspx
+  tw.6118#e5:
+    locator: 第68頁，整體關係企業分工情況
+    published_date: '2025-04-30'
+    publisher: 建達國際股份有限公司
+    quote_check: found
+    title: 建達國際股份有限公司113年度年報
+    url: https://www.xander.com.tw/user2/pdf/2024-annual-report-of-shareholders-20260114.pdf

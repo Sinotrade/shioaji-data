@@ -8,8 +8,61 @@ industry:
   l0_code: '14'
   l0_name: 建材營造業
   l0_name_en: Building Material and Construction
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.construction
+  l2_name: 營建與工程
+  l2_name_en: Engineering & Construction
+  l3: cons.engineering
+  l3_name: 工程與統包
+  l3_name_en: Engineering & EPC
+primary_chain_position: not_applicable
+summary_short: 以住宅、廠辦及廠房工程承攬為主，提供營建規劃與修繕服務。
+summary_long: 久舜營造以住宅、廠辦及廠房建築工程承攬為主要業務，並提供規劃設計與售後修繕服務。2024年財報將營收區分為工程承攬與其他營業收入，其中工程承攬為主要來源。公司亦以全案管理及委託建築模式參與都市更新與危老重建，服務範圍延伸至工程前期整合。集團旗下大舜集成從事機電整合工程，久聯建築經理提供建築經理與全案管理服務，兩者均為久舜的子公司。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_engineering
+  name: 工程承攬收入
+  period: '2024'
+  revenue_share_pct: null
+- evidence_ids:
+  - e1
+  id: seg_other
+  name: 其他營業收入
+  period: '2024'
+  revenue_share_pct: null
 relations:
+  subsidiaries:
+  - as_of: '2026-10-24'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 機電整合工程子公司
+    details:
+    - 機電整合工程子公司
+    edge: eaade408ed32d
+    evidence_level: primary
+    id: org.da-shun-integrated-services
+    name: 大舜集成股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-24'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 建築經理與都更危老全案管理子公司
+    details:
+    - 建築經理與都更危老全案管理子公司
+    edge: ee53571a74a8b
+    evidence_level: primary
+    id: org.jiou-len-real-estate-management
+    name: 久聯建築經理股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   transactions:
   - amount: 新台幣12.1億元
     as_of: '2025-12-17'
@@ -36,7 +89,56 @@ website: http://www.jioushun.com.tw
 tax_id: '84548046'
 incorporated: '1993-09-06'
 listed: '2026-02-03'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.5547#e1:
+    locator: PDF第30頁，附註六（十一）客戶合約之收入；數字依序為113年度、112年度，單位仟元
+    published_date: null
+    publisher: 久舜營造股份有限公司
+    quote_check: found
+    title: 久舜營造股份有限公司民國113年度及112年度財務報告暨會計師查核報告
+    url: https://jioushun.com.tw/wp-content/uploads/2025/04/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf
+  tw.5547#e2:
+    locator: 經營方針／居住正義 重塑都市新風貌
+    published_date: null
+    publisher: 久舜營造股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://jioushun.com.tw/about-us/about-us/
+  tw.5547#e3:
+    locator: 緣起
+    published_date: null
+    publisher: 久舜營造股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://jioushun.com.tw/about-us/about-us/
+  tw.5547#e4:
+    locator: 經營方針／居住正義 重塑都市新風貌
+    published_date: null
+    publisher: 久舜營造股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://jioushun.com.tw/about-us/about-us/
+  tw.5547#e5:
+    locator: 久舜集團旗下／資源整合，能力更強
+    published_date: null
+    publisher: 久舜營造股份有限公司
+    quote_check: found
+    title: 大舜集成股份有限公司
+    url: https://jioushun.com.tw/da-shun-integrated-services/
+  tw.5547#e6:
+    locator: 久聯建經，讓全案管理從前期開始
+    published_date: '2026-09-23'
+    publisher: 久舜營造股份有限公司
+    quote_check: found
+    title: 第八屆危老＋都更博覽會｜從承攬到全案管理，陪地主走完重建的每一步
+    url: https://jioushun.com.tw/safehouse2026/
+  tw.5547#e7:
+    locator: 集團布局 深耕北中南
+    published_date: null
+    publisher: 久舜營造股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://jioushun.com.tw/about-us/about-us/

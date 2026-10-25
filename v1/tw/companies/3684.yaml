@@ -8,12 +8,183 @@ industry:
   l0_code: '27'
   l0_name: 通信網路業
   l0_name_en: Communications and Internet
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.network
+  l2_name: 通信網路
+  l2_name_en: Communications & Networking
+  l3: net.wireless
+  l3_name: 無線通訊與射頻
+  l3_name_en: Wireless & RF
+chain: chain.networking
+chain_stage:
+  agreement: both
+  also: []
+  reason: 天線與天線系統占營收39%為最大類別，另有高頻線材及無線次系統，屬模組與零組件。
+  stage: modules
+  stage_name: 模組與零組件
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 以天線、高頻線材及無線通訊次系統的設計製造與整合服務取得營收。
+summary_long: 榮昌科技以無線通訊零組件與次系統的整合設計、製造服務為主要業務，產品涵蓋天線與天線系統、高頻線材與智能感測線材，以及次系統與無線準系統。依2024年度年報，前三類營收占比分別為39%、27%及28%，另有6%來自NRE。產品應用包括車用線組、戶外智慧電錶、交通天線及工業級天線。公司另已推出通過日本TELEC認證的NPI ANT03系列5G全向天線，具防水特性。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_antenna
+  name: 天線與天線系統
+  period: '2024'
+  revenue_share_pct: 39
+- evidence_ids:
+  - e2
+  id: seg_cable
+  name: 高頻線材與智能感測線材
+  period: '2024'
+  revenue_share_pct: 27
+- evidence_ids:
+  - e2
+  id: seg_subsystem
+  name: 次系統及無線準系統
+  period: '2024'
+  revenue_share_pct: 28
+- evidence_ids:
+  - e2
+  id: seg_nre
+  name: NRE
+  period: '2024'
+  revenue_share_pct: 6
+main_theme: theme.5g
+themes:
+- also: []
+  stage: components
+  theme: theme.5g
+  tier: upstream
+relations:
+  subsidiaries:
+  - as_of: '2025-04-29'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過Gtan Wireless Technology持有100%之間接子公司
+    details:
+    - 透過Gtan Wireless Technology持有100%之間接子公司
+    edge: e3acc0cb8eeb1
+    evidence_level: primary
+    id: org.dongguan-gtan-grand-tek-precision-electronics
+    name: 東莞勁天榮昌精密電子有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-04-29'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%之越南子公司
+    details:
+    - 直接持有100%之越南子公司
+    edge: efa4aa125d406
+    evidence_level: primary
+    id: org.grand-tek-viet-nam-technology
+    name: Grand-Tek Viet Nam Technology Co.,Ltd
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-04-29'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%之子公司
+    details:
+    - 直接持有100%之子公司
+    edge: e56674b31ecd9
+    evidence_level: primary
+    id: org.gtan-wireless-technology
+    name: Gtan Wireless Technology Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-04-29'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%之美國子公司
+    details:
+    - 直接持有100%之美國子公司
+    edge: e17a274ae670a
+    evidence_level: primary
+    id: org.gtt-usa
+    name: GTT USA, INC.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.grand-tek.com
 tax_id: '89549184'
 incorporated: '1995-06-12'
 listed: '2014-03-28'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3684#e1:
+    locator: 公司簡介
+    published_date: null
+    publisher: 榮昌科技股份有限公司
+    quote_check: found
+    title: 關於本公司
+    url: https://www.grand-tek.com/esg/esg-about.aspx
+  tw.3684#e2:
+    locator: 印刷頁2，產品類別及113年、112年營收比例表；引文數字依序為2024年及2023年
+    published_date: '2025-04-29'
+    publisher: 榮昌科技股份有限公司
+    quote_check: found
+    title: 榮昌科技股份有限公司一一三年度年報
+    url: https://www.grand-tek.com/file/114%E5%B9%B4-%E5%B9%B4%E5%A0%B1.pdf
+  tw.3684#e3:
+    locator: 公司基本資料表／主要產品及服務
+    published_date: null
+    publisher: 榮昌科技股份有限公司
+    quote_check: found
+    title: 關於本公司
+    url: https://www.grand-tek.com/esg/esg-about.aspx
+  tw.3684#e4:
+    locator: 正文第一段
+    published_date: '2024-02-17'
+    publisher: 榮昌科技股份有限公司
+    quote_check: found
+    title: 榮昌科技5G天線通過日本TELEC認證
+    url: https://www.grand-tek.com/news_2024021701.aspx
+  tw.3684#e5:
+    locator: 正文第二段
+    published_date: '2024-02-17'
+    publisher: 榮昌科技股份有限公司
+    quote_check: found
+    title: 榮昌科技5G天線通過日本TELEC認證
+    url: https://www.grand-tek.com/news_2024021701.aspx
+  tw.3684#e6:
+    locator: 印刷頁108，各關係企業董事、監察人及總經理基本資料，Gtan Wireless列
+    published_date: '2025-04-29'
+    publisher: 榮昌科技股份有限公司
+    quote_check: found
+    title: 榮昌科技股份有限公司一一三年度年報
+    url: https://www.grand-tek.com/file/114%E5%B9%B4-%E5%B9%B4%E5%A0%B1.pdf
+  tw.3684#e7:
+    locator: 印刷頁108，各關係企業董事、監察人及總經理基本資料，東莞公司列
+    published_date: '2025-04-29'
+    publisher: 榮昌科技股份有限公司
+    quote_check: found
+    title: 榮昌科技股份有限公司一一三年度年報
+    url: https://www.grand-tek.com/file/114%E5%B9%B4-%E5%B9%B4%E5%A0%B1.pdf
+  tw.3684#e8:
+    locator: 印刷頁108，各關係企業董事、監察人及總經理基本資料，GTT USA列
+    published_date: '2025-04-29'
+    publisher: 榮昌科技股份有限公司
+    quote_check: found
+    title: 榮昌科技股份有限公司一一三年度年報
+    url: https://www.grand-tek.com/file/114%E5%B9%B4-%E5%B9%B4%E5%A0%B1.pdf
+  tw.3684#e9:
+    locator: 印刷頁108，各關係企業董事、監察人及總經理基本資料，越南公司列
+    published_date: '2025-04-29'
+    publisher: 榮昌科技股份有限公司
+    quote_check: found
+    title: 榮昌科技股份有限公司一一三年度年報
+    url: https://www.grand-tek.com/file/114%E5%B9%B4-%E5%B9%B4%E5%A0%B1.pdf

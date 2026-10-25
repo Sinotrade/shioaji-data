@@ -8,12 +8,150 @@ industry:
   l0_code: '25'
   l0_name: 電腦及週邊設備業
   l0_name_en: Computer and Peripheral Equipment
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.hardware
+  l2_name: 電腦與硬體
+  l2_name_en: Computers & Hardware
+  l3: hw.peripheral
+  l3_name: 周邊與輸入裝置
+  l3_name_en: Peripherals & Input Devices
+primary_chain_position: not_applicable
+summary_short: 以底片掃描器及生物醫學影像、快篩判讀設備製造銷售為主。
+summary_long: 全譜主要從事底片掃描器及生物醫學影像、檢測設備的設計製造與銷售。2025年底片型掃描器占營收59.06%，生物醫學產品占40.94%，另有少量建材及工程收入。掃描器可處理底片及幻燈片；生醫產品包括凝膠成像系統與RapidScan快篩讀取儀，分別用於影像擷取分析及試卡判讀，另提供載玻片掃描器。2026年上半年底片型掃描器仍為最大營收部門。美國全資子公司Pacific Image Electronics Inc.負責銷售公司產品，為海外行銷據點。
+segments:
+- evidence_ids:
+  - e2
+  id: scanner
+  name: 底片型掃描器
+  period: '2025'
+  revenue_share_pct: 59.06
+- evidence_ids:
+  - e2
+  id: biomedical
+  name: 生物醫學產品
+  period: '2025'
+  revenue_share_pct: 40.94
+- evidence_ids:
+  - e2
+  id: construction
+  name: 建材及工程
+  period: '2025'
+  revenue_share_pct: 0
+relations:
+  parents:
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 母公司
+    details:
+    - 母公司
+    edge: ef42d8c787784
+    evidence_level: primary
+    id: org.santos-hotel
+    name: 三德觀光大飯店股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 美國全資子公司及海外行銷據點
+    details:
+    - 美國全資子公司及海外行銷據點
+    edge: e1fa3a4bd25ff
+    evidence_level: primary
+    id: org.pacific-image-electronics-inc
+    name: Pacific Image Electronics Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.scanace.com
 tax_id: '84560006'
 incorporated: '1993-09-20'
 listed: '2003-01-21'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-25'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6228#e10:
+    locator: 三德飯店照片圖說
+    published_date: '2023-03-24'
+    publisher: 東森財經新聞／CTWANT
+    quote_check: found
+    title: 北市飯店營收谷底反彈！「它」受裴洛西加持 年賺5.3億成房租王
+    url: https://fnc.ebc.net.tw/fncnews/house/159476
+  tw.6228#e11:
+    locator: 公司介紹
+    published_date: null
+    publisher: 全譜科技股份有限公司
+    quote_check: found
+    title: 關於全譜
+    url: https://www.scanace.com/zh-TW/about/about-us
+  tw.6228#e12:
+    locator: 第9頁，附註一公司沿革，美國全譜公司持股
+    published_date: '2026-08-06'
+    publisher: 全譜科技股份有限公司
+    quote_check: found
+    title: 全譜科技股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.scanace.com/archive/IR/Financial%20report/%E6%9C%83%E8%A8%88%E5%B8%AB%E8%B2%A1%E5%A0%B1%E8%B3%87%E6%96%99/115%E8%B2%A1%E5%A0%B1/PIE500A4202602-IFRS%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-S.pdf
+  tw.6228#e2:
+    locator: 第45頁，年度營業比重；金額單位為新台幣仟元
+    published_date: '2026-03-31'
+    publisher: 全譜科技股份有限公司
+    quote_check: found
+    title: 全譜科技股份有限公司114年度年報
+    url: https://www.scanace.com/archive/IR/ESG/%E8%82%A1%E6%9D%B1%E6%9C%83%E8%B3%87%E6%96%99/114%E5%B9%B4%E5%B9%B4%E5%A0%B1-Final%E7%89%88%E4%B8%8A%E5%8D%B00427.pdf
+  tw.6228#e3:
+    locator: 第39頁，附註三二部門資訊；依序為掃描器、生醫、建材工程、智慧商務及合計，單位新台幣仟元
+    published_date: '2026-08-06'
+    publisher: 全譜科技股份有限公司
+    quote_check: found
+    title: 全譜科技股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.scanace.com/archive/IR/Financial%20report/%E6%9C%83%E8%A8%88%E5%B8%AB%E8%B2%A1%E5%A0%B1%E8%B3%87%E6%96%99/115%E8%B2%A1%E5%A0%B1/PIE500A4202602-IFRS%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-S.pdf
+  tw.6228#e4:
+    locator: 產品規格，Advanced Features
+    published_date: null
+    publisher: 全譜科技股份有限公司
+    quote_check: found
+    title: PrimeFilm 120 Pro Plus
+    url: https://www.scanace.com/zh-TW/product/%E7%8F%BE%E6%9C%89%E6%A9%9F%E7%A8%AE/primefilm-120-pro-plus
+  tw.6228#e5:
+    locator: RapidScan產品介紹
+    published_date: null
+    publisher: 全譜科技股份有限公司
+    quote_check: found
+    title: 快篩讀取儀
+    url: https://www.scanace.com/zh-TW/bio/%E5%BF%AB%E7%AF%A9%E8%AE%80%E5%8F%96%E5%84%80
+  tw.6228#e6:
+    locator: 第45頁，生物醫學產品第2項
+    published_date: '2026-03-31'
+    publisher: 全譜科技股份有限公司
+    quote_check: found
+    title: 全譜科技股份有限公司114年度年報
+    url: https://www.scanace.com/archive/IR/ESG/%E8%82%A1%E6%9D%B1%E6%9C%83%E8%B3%87%E6%96%99/114%E5%B9%B4%E5%B9%B4%E5%A0%B1-Final%E7%89%88%E4%B8%8A%E5%8D%B00427.pdf
+  tw.6228#e7:
+    locator: 第45頁，底片型掃描器第2項
+    published_date: '2026-03-31'
+    publisher: 全譜科技股份有限公司
+    quote_check: found
+    title: 全譜科技股份有限公司114年度年報
+    url: https://www.scanace.com/archive/IR/ESG/%E8%82%A1%E6%9D%B1%E6%9C%83%E8%B3%87%E6%96%99/114%E5%B9%B4%E5%B9%B4%E5%A0%B1-Final%E7%89%88%E4%B8%8A%E5%8D%B00427.pdf
+  tw.6228#e8:
+    locator: 公司簡介，美國全譜公司
+    published_date: null
+    publisher: 全譜科技股份有限公司
+    quote_check: found
+    title: Company Profile－公司簡介
+    url: https://www.scanace.com/ir/company-profile
+  tw.6228#e9:
+    locator: 第41頁，主要股東名單，基準日115年3月31日
+    published_date: '2026-03-31'
+    publisher: 全譜科技股份有限公司
+    quote_check: found
+    title: 全譜科技股份有限公司114年度年報
+    url: https://www.scanace.com/archive/IR/ESG/%E8%82%A1%E6%9D%B1%E6%9C%83%E8%B3%87%E6%96%99/114%E5%B9%B4%E5%B9%B4%E5%A0%B1-Final%E7%89%88%E4%B8%8A%E5%8D%B00427.pdf

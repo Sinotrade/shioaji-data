@@ -8,12 +8,182 @@ industry:
   l0_code: '22'
   l0_name: 生技醫療業
   l0_name_en: Biotechnology and Medical Care
-primary_chain_position: unknown
+  l1: health
+  l1_name: 醫療保健
+  l1_name_en: Healthcare
+  l2: health.devices
+  l2_name: 醫療器材與服務
+  l2_name_en: Medical Devices & Services
+  l3: med.devices
+  l3_name: 醫療器材
+  l3_name_en: Medical Devices
+chain: chain.biotech
+chain_stage:
+  agreement: both
+  also: []
+  reason: 單株抗體為最大營收來源，抗體與蛋白質業務明確屬中游生產環節。
+  stage: manufacturing
+  stage_name: 製造與代工
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 以單株抗體、配對抗體、蛋白質等研究與檢測試劑銷售為主。
+summary_long: 亞諾法主要銷售單株抗體、多株抗體、配對抗體、蛋白質與醫療檢測儀器，產品涵蓋研究用重組蛋白。2025年單株抗體為最大營收類別，占33.25%；配對抗體占19.80%、蛋白質占12.98%、多株抗體占6.51%、檢測儀器占1.59%，其他產品占25.87%。公司在蛋白質與抗體產業鏈屬中游生產環節。已揭露的全資子公司包括核心生醫投資股份有限公司及德國Abnova GmbH，其中德國子公司仍在清算註銷中。
+segments:
+- evidence_ids:
+  - e1
+  id: monoclonal_antibodies
+  name: 單株抗體
+  period: '2025'
+  revenue_share_pct: 33.25
+- evidence_ids:
+  - e2
+  id: antibody_pairs
+  name: 配對抗體
+  period: '2025'
+  revenue_share_pct: 19.8
+- evidence_ids:
+  - e3
+  id: proteins
+  name: 蛋白質
+  period: '2025'
+  revenue_share_pct: 12.98
+- evidence_ids:
+  - e4
+  id: polyclonal_antibodies
+  name: 多株抗體
+  period: '2025'
+  revenue_share_pct: 6.51
+- evidence_ids:
+  - e5
+  id: detection_instruments
+  name: 檢測儀器
+  period: '2025'
+  revenue_share_pct: 1.59
+- evidence_ids:
+  - e6
+  id: other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 25.87
+relations:
+  subsidiaries:
+  - as_of: '2026-08-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 德國全資子公司，清算註銷中
+    details:
+    - 德國全資子公司，清算註銷中
+    edge: e3f756662d950
+    evidence_level: primary
+    id: org.abnova-gmbh
+    name: Abnova GmbH
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-08-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 台灣全資子公司
+    details:
+    - 台灣全資子公司
+    edge: e05c955c5a839
+    evidence_level: primary
+    id: org.axlebio-ventures
+    name: 核心生醫投資股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.abnova.com
 tax_id: '12974421'
 incorporated: '2002-01-04'
 listed: '2009-12-28'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4133#e0:
+    locator: 第1頁，公司名稱、公司網址與主要經營業務
+    published_date: '2026-10-23'
+    publisher: 臺灣證券交易所
+    quote_check: found
+    title: 亞諾法生技股份有限公司個股資訊
+    url: https://wwwc.twse.com.tw/pdf/ch/4133_ch.pdf
+  tw.4133#e1:
+    locator: 1.1營運概況／營收依主要產品類別分析，單株抗體列，2025年度銷售金額及比重
+    published_date: '2026-08-13'
+    publisher: 亞諾法生技股份有限公司
+    quote_check: unreachable
+    title: 亞諾法2025永續報告書
+    url: https://financialfilings.com/filings/abnova-4133/environmental-social-information/2026/73436877/
+  tw.4133#e10:
+    locator: 1.1營運概況／轉投資關係企業
+    published_date: '2026-08-13'
+    publisher: 亞諾法生技股份有限公司
+    quote_check: unreachable
+    title: 亞諾法2025永續報告書
+    url: https://financialfilings.com/filings/abnova-4133/environmental-social-information/2026/73436877/
+  tw.4133#e11:
+    locator: 1.1營運概況／轉投資關係企業
+    published_date: '2026-08-13'
+    publisher: 亞諾法生技股份有限公司
+    quote_check: unreachable
+    title: 亞諾法2025永續報告書
+    url: https://financialfilings.com/filings/abnova-4133/environmental-social-information/2026/73436877/
+  tw.4133#e2:
+    locator: 1.1營運概況／營收依主要產品類別分析，配對抗體列，2025年度銷售金額及比重
+    published_date: '2026-08-13'
+    publisher: 亞諾法生技股份有限公司
+    quote_check: unreachable
+    title: 亞諾法2025永續報告書
+    url: https://financialfilings.com/filings/abnova-4133/environmental-social-information/2026/73436877/
+  tw.4133#e3:
+    locator: 1.1營運概況／營收依主要產品類別分析，蛋白質列，2025年度銷售金額及比重
+    published_date: '2026-08-13'
+    publisher: 亞諾法生技股份有限公司
+    quote_check: unreachable
+    title: 亞諾法2025永續報告書
+    url: https://financialfilings.com/filings/abnova-4133/environmental-social-information/2026/73436877/
+  tw.4133#e4:
+    locator: 1.1營運概況／營收依主要產品類別分析，多株抗體列，2025年度銷售金額及比重
+    published_date: '2026-08-13'
+    publisher: 亞諾法生技股份有限公司
+    quote_check: unreachable
+    title: 亞諾法2025永續報告書
+    url: https://financialfilings.com/filings/abnova-4133/environmental-social-information/2026/73436877/
+  tw.4133#e5:
+    locator: 1.1營運概況／營收依主要產品類別分析，檢測儀器列，2025年度銷售金額及比重
+    published_date: '2026-08-13'
+    publisher: 亞諾法生技股份有限公司
+    quote_check: unreachable
+    title: 亞諾法2025永續報告書
+    url: https://financialfilings.com/filings/abnova-4133/environmental-social-information/2026/73436877/
+  tw.4133#e6:
+    locator: 1.1營運概況／營收依主要產品類別分析，其他列，2025年度銷售金額及比重
+    published_date: '2026-08-13'
+    publisher: 亞諾法生技股份有限公司
+    quote_check: unreachable
+    title: 亞諾法2025永續報告書
+    url: https://financialfilings.com/filings/abnova-4133/environmental-social-information/2026/73436877/
+  tw.4133#e7:
+    locator: 第115頁，產業上下游關係
+    published_date: '2026-08-05'
+    publisher: 亞諾法生技股份有限公司
+    quote_check: found
+    title: Abnova (Taiwan) Corporation 2025 Annual Report
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52384/2026/RNS/52384_rns_2026-08-05_3a1f3288-d606-4928-85a6-8ec0106933ca.pdf
+  tw.4133#e8:
+    locator: 第106頁，4.1.1營業範圍，第4項
+    published_date: '2026-08-05'
+    publisher: 亞諾法生技股份有限公司
+    quote_check: found
+    title: Abnova (Taiwan) Corporation 2025 Annual Report
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52384/2026/RNS/52384_rns_2026-08-05_3a1f3288-d606-4928-85a6-8ec0106933ca.pdf
+  tw.4133#e9:
+    locator: 第106頁，4.1.1營業範圍，第1項
+    published_date: '2026-08-05'
+    publisher: 亞諾法生技股份有限公司
+    quote_check: found
+    title: Abnova (Taiwan) Corporation 2025 Annual Report
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52384/2026/RNS/52384_rns_2026-08-05_3a1f3288-d606-4928-85a6-8ec0106933ca.pdf

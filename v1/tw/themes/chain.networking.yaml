@@ -19,6 +19,54 @@ stages:
   tier: downstream
   name_en: Equipment
 members:
+- id: tw.2314
+  detail: 主要營收來自衛星通訊終端等設備，另有5G基地台射頻設備及衛星射頻模組。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.2314#e1
+  - tw.2314#e2
+  - tw.2314#e3
+  - tw.2314#e4
+  confidence: ai_cross_checked
+  source: classification
+  stage: equipment
+  tier: downstream
+  stage_role: primary
+- id: tw.2314
+  detail: 主要營收來自衛星通訊終端等設備，另有5G基地台射頻設備及衛星射頻模組。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.2314#e1
+  - tw.2314#e2
+  - tw.2314#e3
+  - tw.2314#e4
+  confidence: ai_cross_checked
+  source: classification
+  stage: modules
+  tier: midstream
+  stage_role: also
+- id: tw.2321
+  detail: 資通訊系統為最大營收部門，主力為商務電話交換系統，另經營光纖線纜。
+  as_of: '2026-10-25'
+  evidence:
+  - tw.2321#e1
+  - tw.2321#e6
+  confidence: ai_cross_checked
+  source: classification
+  stage: equipment
+  tier: downstream
+  stage_role: primary
+- id: tw.2321
+  detail: 資通訊系統為最大營收部門，主力為商務電話交換系統，另經營光纖線纜。
+  as_of: '2026-10-25'
+  evidence:
+  - tw.2321#e1
+  - tw.2321#e6
+  confidence: ai_cross_checked
+  source: classification
+  stage: modules
+  tier: midstream
+  stage_role: also
 - id: tw.2332
   detail: 交換器與資安產品占營收72%，主要銷售交換器、路由器等成品設備。
   as_of: '2026-10-18'
@@ -42,6 +90,42 @@ members:
   stage: equipment
   tier: downstream
   stage_role: primary
+- id: tw.2444
+  detail: 主要營收來自網通設備，產品含路由器與閘道器；另有醫療影音傳輸模組及子公司雷射磊晶片與晶片業務。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.2444#e1
+  - tw.2444#e2
+  - tw.2444#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: equipment
+  tier: downstream
+  stage_role: primary
+- id: tw.2444
+  detail: 主要營收來自網通設備，產品含路由器與閘道器；另有醫療影音傳輸模組及子公司雷射磊晶片與晶片業務。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.2444#e1
+  - tw.2444#e2
+  - tw.2444#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: chips
+  tier: upstream
+  stage_role: also
+- id: tw.2444
+  detail: 主要營收來自網通設備，產品含路由器與閘道器；另有醫療影音傳輸模組及子公司雷射磊晶片與晶片業務。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.2444#e1
+  - tw.2444#e2
+  - tw.2444#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: modules
+  tier: midstream
+  stage_role: also
 - id: tw.2485
   detail: 主要收入來自有線與衛星通訊傳輸產品，涵蓋寬頻設備，另供應dCSS模組與LNB。
   as_of: '2026-10-18'
@@ -82,6 +166,19 @@ members:
   stage: equipment
   tier: downstream
   stage_role: primary
+- id: tw.3047
+  detail: 主要業務為交換器、無線基地台及路由器等網通設備。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.3047#e2
+  - tw.3047#e3
+  - tw.3047#e5
+  - tw.3047#e7
+  confidence: ai_cross_checked
+  source: classification
+  stage: equipment
+  tier: downstream
+  stage_role: primary
 - id: tw.3062
   detail: 主要產品為路由器、交換器、企業網路控制器、5G終端及衛星閘道器，屬網通設備與系統。
   as_of: '2026-10-20'
@@ -108,6 +205,19 @@ members:
   source: classification
   stage: chips
   tier: upstream
+  stage_role: primary
+- id: tw.3095
+  detail: 3C零組件占營收90.25%，產品含無線對講機機殼與連接器組件，屬網通零組件。
+  as_of: '2026-10-25'
+  evidence:
+  - tw.3095#e1
+  - tw.3095#e4
+  - tw.3095#e6
+  - tw.3095#e7
+  confidence: ai_cross_checked
+  source: classification
+  stage: modules
+  tier: midstream
   stage_role: primary
 - id: tw.3138
   detail: 射頻天線占營收67.95%，以天線模組為主；另有低軌衛星用戶終端設備。
@@ -244,6 +354,28 @@ members:
   stage: equipment
   tier: downstream
   stage_role: primary
+- id: tw.3419
+  detail: 天線相關無線裝置占營收67.60%，以網通零組件為主；另提供RFID讀取器與智慧貨架系統。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.3419#e2
+  - tw.3419#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: modules
+  tier: midstream
+  stage_role: primary
+- id: tw.3419
+  detail: 天線相關無線裝置占營收67.60%，以網通零組件為主；另提供RFID讀取器與智慧貨架系統。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.3419#e2
+  - tw.3419#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: equipment
+  tier: downstream
+  stage_role: also
 - id: tw.3447
   detail: 網通產品占營收62%，主要設計製造無線閘道器、光纖終端及寬頻接取設備。
   as_of: '2026-10-23'
@@ -268,6 +400,32 @@ members:
   stage: modules
   tier: midstream
   stage_role: primary
+- id: tw.3499
+  detail: GPS應用產品占營收81.91%，以定位追蹤裝置為主，含衛星與4G連線產品，另提供GPS及RTK模組。
+  as_of: '2026-10-25'
+  evidence:
+  - tw.3499#e2
+  - tw.3499#e3
+  - tw.3499#e6
+  - tw.3499#e7
+  confidence: ai_cross_checked
+  source: classification
+  stage: equipment
+  tier: downstream
+  stage_role: primary
+- id: tw.3499
+  detail: GPS應用產品占營收81.91%，以定位追蹤裝置為主，含衛星與4G連線產品，另提供GPS及RTK模組。
+  as_of: '2026-10-25'
+  evidence:
+  - tw.3499#e2
+  - tw.3499#e3
+  - tw.3499#e6
+  - tw.3499#e7
+  confidence: ai_cross_checked
+  source: classification
+  stage: modules
+  tier: midstream
+  stage_role: also
 - id: tw.3558
   detail: 有線網路系統占營收34.09%居首，產品為交換器、基地台及安全存取閘道器。
   as_of: '2026-10-18'
@@ -304,6 +462,18 @@ members:
   stage: equipment
   tier: downstream
   stage_role: primary
+- id: tw.3664
+  detail: 最大產品營收為SSL VPN，主要提供網路安全與應用交付設備及系統。
+  as_of: '2026-10-25'
+  evidence:
+  - tw.3664#e1
+  - tw.3664#e3
+  - tw.3664#e4
+  confidence: ai_cross_checked
+  source: classification
+  stage: equipment
+  tier: downstream
+  stage_role: primary
 - id: tw.3669
   detail: 主要產品為視訊會議系統、攝影機及影音終端設備，屬設備與系統；無人機研發未證實網通零組件業務。
   as_of: '2026-10-23'
@@ -316,6 +486,29 @@ members:
   source: classification
   stage: equipment
   tier: downstream
+  stage_role: primary
+- id: tw.3672
+  detail: 光纖交換器占營收53.84%為最大業務，另售光電轉換器及語音閘道器，皆屬網通設備。
+  as_of: '2026-10-25'
+  evidence:
+  - tw.3672#e1
+  - tw.3672#e2
+  confidence: ai_cross_checked
+  source: classification
+  stage: equipment
+  tier: downstream
+  stage_role: primary
+- id: tw.3684
+  detail: 天線與天線系統占營收39%為最大類別，另有高頻線材及無線次系統，屬模組與零組件。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.3684#e1
+  - tw.3684#e2
+  - tw.3684#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: modules
+  tier: midstream
   stage_role: primary
 - id: tw.3689
   detail: 網通應用占營收50.67%，主要產品為RJ45整合型訊號連接器及高速連接器。
@@ -512,6 +705,33 @@ members:
   stage: modules
   tier: midstream
   stage_role: also
+- id: tw.5460
+  detail: 沖壓電子零組件占營業比重約98%，包含通訊金屬屏蔽及終端設備精密機構件，屬模組與零組件。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.5460#e1
+  - tw.5460#e2
+  - tw.5460#e4
+  - tw.5460#e5
+  - tw.5460#e7
+  confidence: ai_cross_checked
+  source: classification
+  stage: modules
+  tier: midstream
+  stage_role: primary
+- id: tw.6109
+  detail: 網通電源供應器占營收50.81%為最大業務，另有通訊變壓器及藍芽模組，屬模組與零組件。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.6109#e1
+  - tw.6109#e2
+  - tw.6109#e3
+  - tw.6109#e4
+  confidence: ai_cross_checked
+  source: classification
+  stage: modules
+  tier: midstream
+  stage_role: primary
 - id: tw.6133
   detail: 超高頻通信線材占營收51.88%，另有通訊及高速網用原線材，屬網通零組件。
   as_of: '2026-10-23'
@@ -522,6 +742,18 @@ members:
   source: classification
   stage: modules
   tier: midstream
+  stage_role: primary
+- id: tw.6142
+  detail: 有線通訊產品占營收85.3%，主力為乙太網路交換器，另製造無線存取器及路由器。
+  as_of: '2026-10-25'
+  evidence:
+  - tw.6142#e2
+  - tw.6142#e3
+  - tw.6142#e11
+  confidence: ai_cross_checked
+  source: classification
+  stage: equipment
+  tier: downstream
   stage_role: primary
 - id: tw.6152
   detail: 主要產品為數位機上盒、寬頻閘道器與衛星通訊設備，屬網通設備與系統。
@@ -594,6 +826,18 @@ members:
   - tw.6218#e1
   - tw.6218#e2
   - tw.6218#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: equipment
+  tier: downstream
+  stage_role: primary
+- id: tw.6241
+  detail: 多功能路由器占營收61.92%，為最大業務，另製造基地台、交換器等網通設備。
+  as_of: '2026-10-25'
+  evidence:
+  - tw.6241#e1
+  - tw.6241#e2
+  - tw.6241#e3
   confidence: ai_cross_checked
   source: classification
   stage: equipment
@@ -693,6 +937,17 @@ members:
   stage: modules
   tier: midstream
   stage_role: primary
+- id: tw.6470
+  detail: 無線寬頻網路應用設備占營收98.2%，主要產品為5G路由器、戶外橋接設備及Wi-Fi路由器。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.6470#e2
+  - tw.6470#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: equipment
+  tier: downstream
+  stage_role: primary
 - id: tw.6486
   detail: 電信暨寬頻系統服務占營收48.62%為最大宗，提供網路與基地台系統建置、整合及維護。
   as_of: '2026-10-23'
@@ -739,6 +994,20 @@ members:
   stage: chips
   tier: upstream
   stage_role: primary
+- id: tw.6674
+  detail: 通信網路產品占營收68.57%，主力為寬頻閘道器、路由器、光網路終端及5G接取設備。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.6674#e2
+  - tw.6674#e6
+  - tw.6674#e7
+  - tw.6674#e8
+  - tw.6674#e9
+  confidence: ai_cross_checked
+  source: classification
+  stage: equipment
+  tier: downstream
+  stage_role: primary
 - id: tw.6792
   detail: 電子陶瓷元件營收占65%最高，通訊產品以天線與天線模組為主，屬零組件與模組。
   as_of: '2026-10-23'
@@ -746,6 +1015,18 @@ members:
   - tw.6792#e1
   - tw.6792#e4
   - tw.6792#e7
+  confidence: ai_cross_checked
+  source: classification
+  stage: modules
+  tier: midstream
+  stage_role: primary
+- id: tw.6821
+  detail: 磁性元件占營收89.45%，包含PoE、LAN及基地台用元件，屬網通零組件。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.6821#e1
+  - tw.6821#e2
+  - tw.6821#e3
   confidence: ai_cross_checked
   source: classification
   stage: modules
@@ -849,6 +1130,17 @@ members:
   stage: modules
   tier: midstream
   stage_role: primary
+- id: tw.8034
+  detail: 接取網路設備及寬頻產品占營收76%，主要產品為電信接取、光傳輸與網路交換設備。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.8034#e1
+  - tw.8034#e2
+  confidence: ai_cross_checked
+  source: classification
+  stage: equipment
+  tier: downstream
+  stage_role: primary
 - id: tw.8045
   detail: 智慧聯網平台及系統建置占營收69.02%，另有寬頻設備，並開發無人機通訊模組。
   as_of: '2026-10-20'
@@ -921,6 +1213,17 @@ members:
   stage: equipment
   tier: downstream
   stage_role: primary
+- id: tw.8089
+  detail: 寬頻用戶端設備占營收58%，產品包含光纖接取設備、閘道器及5G固定無線接取設備。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.8089#e1
+  - tw.8089#e2
+  confidence: ai_cross_checked
+  source: classification
+  stage: equipment
+  tier: downstream
+  stage_role: primary
 - id: tw.8097
   detail: 主要收入來自網路通信產品，涵蓋路由器、寬頻閘道器、無線基地台及中繼器。
   as_of: '2026-10-23'
@@ -934,6 +1237,28 @@ members:
   stage: equipment
   tier: downstream
   stage_role: primary
+- id: tw.8101
+  detail: 以手機、平板等通訊終端製造服務為主，另有軍用通訊射頻模組；未揭露產品別營收。
+  as_of: '2026-10-25'
+  evidence:
+  - tw.8101#e1
+  - tw.8101#e2
+  confidence: ai_cross_checked
+  source: classification
+  stage: equipment
+  tier: downstream
+  stage_role: primary
+- id: tw.8101
+  detail: 以手機、平板等通訊終端製造服務為主，另有軍用通訊射頻模組；未揭露產品別營收。
+  as_of: '2026-10-25'
+  evidence:
+  - tw.8101#e1
+  - tw.8101#e2
+  confidence: ai_cross_checked
+  source: classification
+  stage: modules
+  tier: midstream
+  stage_role: also
 - id: tw.8147
   detail: 連接器占營收69%，為最大業務，供應交換機與通訊設備用高速連接器、背板及零組件。
   as_of: '2026-10-20'
@@ -947,6 +1272,32 @@ members:
   stage: modules
   tier: midstream
   stage_role: primary
+- id: tw.8176
+  detail: 家用無線通訊設備占營收87%為主，另提供Wi-Fi 6無線模組。
+  as_of: '2026-10-25'
+  evidence:
+  - tw.8176#e2
+  - tw.8176#e3
+  - tw.8176#e4
+  - tw.8176#e5
+  confidence: ai_cross_checked
+  source: classification
+  stage: equipment
+  tier: downstream
+  stage_role: primary
+- id: tw.8176
+  detail: 家用無線通訊設備占營收87%為主，另提供Wi-Fi 6無線模組。
+  as_of: '2026-10-25'
+  evidence:
+  - tw.8176#e2
+  - tw.8176#e3
+  - tw.8176#e4
+  - tw.8176#e5
+  confidence: ai_cross_checked
+  source: classification
+  stage: modules
+  tier: midstream
+  stage_role: also
 - id: tw.8182
   detail: 石英晶體占營收74%，搭配石英振盪器供應網路與通訊應用，屬頻率零組件。
   as_of: '2026-10-23'
@@ -958,4 +1309,4 @@ members:
   stage: modules
   tier: midstream
   stage_role: primary
-as_of: '2026-10-23'
+as_of: '2026-10-25'

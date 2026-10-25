@@ -8,12 +8,164 @@ industry:
   l0_code: '20'
   l0_name: 其他業
   l0_name_en: Others
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.transport
+  l2_name: 運輸
+  l2_name_en: Transportation
+  l3: trans.logistics
+  l3_name: 物流與倉儲
+  l3_name_en: Logistics & Warehousing
+primary_chain_position: not_applicable
+summary_short: 以臺中港油品、化學品儲槽租賃與儲轉服務為主，兼營太陽光電售電。
+summary_long: 匯僑以化學品與油品儲槽出租、港埠倉儲儲轉服務為主要業務，於臺中港設有兩座槽區，官網揭露共51座儲槽，總容量約30萬公秉。2025年度個體營收中，儲槽租賃約占90.2%，能源事業售電約占9.8%。能源事業以投資太陽光電系統，取得長期售電或設備租賃收入為營運模式。子公司和震豐從事商用不動產投資與租賃；另有常富豐、宇豐綠能及寬泰綠能等太陽能發電子公司。
+segments:
+- evidence_ids:
+  - e3
+  id: seg_storage
+  name: 臺中港化學品及油品儲槽租賃（個體口徑）
+  period: '2025'
+  revenue_share_pct: 90.2
+- evidence_ids:
+  - e3
+  id: seg_energy
+  name: 能源事業售電（個體口徑）
+  period: '2025'
+  revenue_share_pct: 9.8
+relations:
+  subsidiaries:
+  - as_of: 2026-10
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 商用不動產投資與租賃子公司
+    details:
+    - 商用不動產投資與租賃子公司
+    edge: e7c12bae59874
+    evidence_level: primary
+    id: org.和震豐股份有限公司
+    name: 和震豐股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 太陽能發電子公司
+    details:
+    - 太陽能發電子公司
+    edge: eecfca7eb5ddd
+    evidence_level: primary
+    id: org.宇豐綠能股份有限公司
+    name: 宇豐綠能股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 太陽能發電子公司
+    details:
+    - 太陽能發電子公司
+    edge: eabace3707dca
+    evidence_level: primary
+    id: org.寬泰綠能股份有限公司
+    name: 寬泰綠能股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 太陽能發電子公司
+    details:
+    - 太陽能發電子公司
+    edge: ec60f7f69b1c8
+    evidence_level: primary
+    id: org.常富豐股份有限公司
+    name: 常富豐股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.pocs.com.tw
 tax_id: '12195466'
 incorporated: '1978-10-11'
 listed: '1983-01-05'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2904#e1:
+    locator: 公司簡介及核心事業
+    published_date: null
+    publisher: 匯僑股份有限公司
+    quote_check: found
+    title: 關於匯僑
+    url: https://www.pocs.com.tw/msg/message-%E9%97%9C%E6%96%BC%E5%8C%AF%E5%83%91-4.html
+  tw.2904#e10:
+    locator: 印刷頁106，關係企業基本資料，常富豐、宇豐綠能及寬泰綠能之主要營業或生產項目欄
+    published_date: '2026-04-30'
+    publisher: 匯僑股份有限公司
+    quote_check: found
+    title: 匯僑股份有限公司114年度年報
+    url: https://www.pocs.com.tw/proimages/Investor_Relations/Annual_Reports/%E5%B9%B4%E5%A0%B1-114.pdf
+  tw.2904#e2:
+    locator: 化油槽事業處介紹
+    published_date: null
+    publisher: 匯僑股份有限公司
+    quote_check: found
+    title: 關於匯僑
+    url: https://www.pocs.com.tw/msg/message-%E9%97%9C%E6%96%BC%E5%8C%AF%E5%83%91-4.html
+  tw.2904#e3:
+    locator: 印刷頁1，114年度營業計畫實施成果；個體營收口徑
+    published_date: '2026-04-30'
+    publisher: 匯僑股份有限公司
+    quote_check: found
+    title: 匯僑股份有限公司114年度年報
+    url: https://www.pocs.com.tw/proimages/Investor_Relations/Annual_Reports/%E5%B9%B4%E5%A0%B1-114.pdf
+  tw.2904#e4:
+    locator: 能源事業處介紹
+    published_date: null
+    publisher: 匯僑股份有限公司
+    quote_check: found
+    title: 關於匯僑
+    url: https://www.pocs.com.tw/msg/message-%E9%97%9C%E6%96%BC%E5%8C%AF%E5%83%91-4.html
+  tw.2904#e5:
+    locator: 能源事業處營業模式首段
+    published_date: null
+    publisher: 匯僑股份有限公司
+    quote_check: found
+    title: 太陽光電發電系統營業模式
+    url: https://www.pocs.com.tw/category-%E5%A4%AA%E9%99%BD%E5%85%89%E9%9B%BB%E7%99%BC%E9%9B%BB%E7%B3%BB%E7%B5%B1%E7%87%9F%E6%A5%AD%E6%A8%A1%E5%BC%8F-002-01.html?lg=T
+  tw.2904#e6:
+    locator: 和震豐介紹
+    published_date: null
+    publisher: 匯僑股份有限公司
+    quote_check: found
+    title: 子公司及主要轉投資公司
+    url: https://www.pocs.com.tw/msg/message-%E5%AD%90%E5%85%AC%E5%8F%B8%E5%8F%8A%E4%B8%BB%E8%A6%81%E8%BD%89%E6%8A%95%E8%B3%87%E5%85%AC%E5%8F%B8-6.html
+  tw.2904#e7:
+    locator: 印刷頁107，關係企業董監事、總經理資料，常富豐持股列
+    published_date: '2026-04-30'
+    publisher: 匯僑股份有限公司
+    quote_check: found
+    title: 匯僑股份有限公司114年度年報
+    url: https://www.pocs.com.tw/proimages/Investor_Relations/Annual_Reports/%E5%B9%B4%E5%A0%B1-114.pdf
+  tw.2904#e8:
+    locator: 印刷頁107，關係企業董監事、總經理資料，宇豐綠能持股列
+    published_date: '2026-04-30'
+    publisher: 匯僑股份有限公司
+    quote_check: found
+    title: 匯僑股份有限公司114年度年報
+    url: https://www.pocs.com.tw/proimages/Investor_Relations/Annual_Reports/%E5%B9%B4%E5%A0%B1-114.pdf
+  tw.2904#e9:
+    locator: 印刷頁107，關係企業董監事、總經理資料，寬泰綠能持股列
+    published_date: '2026-04-30'
+    publisher: 匯僑股份有限公司
+    quote_check: found
+    title: 匯僑股份有限公司114年度年報
+    url: https://www.pocs.com.tw/proimages/Investor_Relations/Annual_Reports/%E5%B9%B4%E5%A0%B1-114.pdf

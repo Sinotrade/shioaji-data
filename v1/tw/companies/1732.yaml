@@ -8,12 +8,149 @@ industry:
   l0_code: '21'
   l0_name: 化學工業
   l0_name_en: Chemical
-primary_chain_position: unknown
+  l1: consumer
+  l1_name: 消費
+  l1_name_en: Consumer
+  l2: cons.staples
+  l2_name: 民生消費
+  l2_name_en: Consumer Staples
+  l3: consumer.household
+  l3_name: 家用品與個人護理
+  l3_name_en: Household & Personal Products
+primary_chain_position: downstream
+summary_short: 製造及銷售洗衣劑、家庭清潔與個人防護用品。
+summary_long: 毛寶的營收產品分為洗衣劑、家庭清潔及其他三類，2025年占比分別為42.08%、53.53%及4.39%，以家庭清潔系列為最大收入來源。衣物清潔產品包括冷洗精；家庭清潔則涵蓋廚房清潔劑、馬桶清潔劑與洗衣槽去污劑，對應不同居家清潔用途。其他產品包含小鹿山丘防蚊液等個人防護用品。集團另有Pacific Worldwide Holdings Ltd.、Mao Bao Vietnam Inc.、Pacific Trading Group Co.,Ltd及毛寶(上海)商貿有限公司四家子公司。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_laundry
+  name: 洗衣劑系列
+  period: '2025'
+  revenue_share_pct: 42.08
+- evidence_ids:
+  - e2
+  id: seg_household
+  name: 家庭清潔系列
+  period: '2025'
+  revenue_share_pct: 53.53
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 4.39
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團子公司
+    details:
+    - 集團子公司
+    edge: ee62edc19e9de
+    evidence_level: primary
+    id: org.mao-bao-vietnam
+    name: Mao Bao Vietnam Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團子公司
+    details:
+    - 集團子公司
+    edge: e7f73fcc3a485
+    evidence_level: primary
+    id: org.maobao-shanghai-trading
+    name: 毛寶(上海)商貿有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團子公司
+    details:
+    - 集團子公司
+    edge: e72f635d08861
+    evidence_level: primary
+    id: org.pacific-trading-group-vietnam
+    name: Pacific Trading Group Co.,Ltd
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團子公司
+    details:
+    - 集團子公司
+    edge: e6693ec3dd908
+    evidence_level: primary
+    id: org.pacific-worldwide-holdings
+    name: Pacific Worldwide Holdings Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.maobao.com.tw
 tax_id: '34245356'
 incorporated: '1978-12-06'
 listed: '2001-09-17'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1732#e2:
+    locator: 印刷頁73，業務內容／公司目前之主要產品及其營業比重
+    published_date: '2026-05-20'
+    publisher: 毛寶股份有限公司
+    quote_check: found
+    title: 毛寶股份有限公司114年度年報
+    url: https://maobao.s3.hicloud.net.tw/images/z2/f87f2aecf936a83ec214746561d340fb.pdf
+  tw.1732#e3:
+    locator: 冷洗精產品列表
+    published_date: null
+    publisher: 毛寶股份有限公司
+    quote_check: found
+    title: 衣物清潔 - 毛寶
+    url: https://www.maobao.com.tw/products/itemlist/category/471.html
+  tw.1732#e4:
+    locator: 廚房清潔劑產品列表
+    published_date: null
+    publisher: 毛寶股份有限公司
+    quote_check: found
+    title: 廚房清潔 - 毛寶
+    url: https://www.maobao.com.tw/products/itemlist/category/472.html
+  tw.1732#e5:
+    locator: 馬桶清潔劑產品列表
+    published_date: null
+    publisher: 毛寶股份有限公司
+    quote_check: found
+    title: 浴室清潔 - 毛寶
+    url: https://www.maobao.com.tw/products/itemlist/category/530.html
+  tw.1732#e6:
+    locator: 洗衣槽去污劑產品列表
+    published_date: null
+    publisher: 毛寶股份有限公司
+    quote_check: found
+    title: 電器清潔 - 毛寶
+    url: https://www.maobao.com.tw/products/itemlist/category/532.html
+  tw.1732#e7:
+    locator: 防蚊液產品列表
+    published_date: null
+    publisher: 毛寶股份有限公司
+    quote_check: found
+    title: 防蚊防護 - 毛寶
+    url: https://www.maobao.com.tw/products/itemlist/category/477.html
+  tw.1732#e8:
+    locator: 印刷頁90，關係企業組織圖
+    published_date: '2026-05-20'
+    publisher: 毛寶股份有限公司
+    quote_check: found
+    title: 毛寶股份有限公司114年度年報
+    url: https://maobao.s3.hicloud.net.tw/images/z2/f87f2aecf936a83ec214746561d340fb.pdf

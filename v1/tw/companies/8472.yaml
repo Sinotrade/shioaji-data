@@ -8,12 +8,178 @@ industry:
   l0_code: '36'
   l0_name: 數位雲端
   l0_name_en: Digital and Cloud Services
-primary_chain_position: unknown
+  l1: consumer
+  l1_name: 消費
+  l1_name_en: Consumer
+  l2: cons.discretionary
+  l2_name: 非必需消費
+  l2_name_en: Consumer Discretionary
+  l3: retail.online
+  l3_name: 網路零售
+  l3_name_en: Online Retail
+primary_chain_position: downstream
+summary_short: 以食品、保健與美容商品銷售及Gomaji生活服務票券電商取得收入。
+summary_long: 納維康以商品銷售及Gomaji生活服務票券電商為主要業務，商品涵蓋食品、保健品、美容保養與個人用品。2026年上半年商品銷售部門外部收入為201,629仟元，電子商務部門為45,611仟元，其他部門為1,498仟元。票券涵蓋餐飲、住宿、美容舒壓與休閒娛樂，平台依合約差額收取勞務收入。全資子公司農良從事農產品批發，蕾綿經營食品及化妝品批發，一起旅行社提供旅遊服務，澳洲子公司則從事保健品買賣。
+segments:
+- evidence_ids:
+  - e4
+  id: seg_goods
+  name: 商品銷售部門
+  period: 2026年上半年
+  revenue_share_pct: null
+- evidence_ids:
+  - e4
+  id: seg_ecommerce
+  name: 電子商務部門
+  period: 2026年上半年
+  revenue_share_pct: null
+- evidence_ids:
+  - e4
+  id: seg_other
+  name: 其他
+  period: 2026年上半年
+  revenue_share_pct: null
+relations:
+  parents:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 母公司
+    details:
+    - 母公司
+    edge: e166d38d252ef
+    evidence_level: primary
+    id: org.aotai-international-investment
+    name: 澳台國際投資股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司；食品及化妝品批發
+    details:
+    - 全資子公司；食品及化妝品批發
+    edge: e73083154de82
+    evidence_level: primary
+    id: org.leimian-international
+    name: 蕾綿國際股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 澳洲全資子公司；保健品買賣
+    details:
+    - 澳洲全資子公司；保健品買賣
+    edge: e2e3f330e3aff
+    evidence_level: primary
+    id: org.maji-pharmaceutical-group
+    name: MAJI PHARMACEUTICAL GROUP PTY LTD
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司；農產品批發
+    details:
+    - 全資子公司；農產品批發
+    edge: e0be8c2a8c87f
+    evidence_level: primary
+    id: org.nongliang
+    name: 農良股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司；代辦國內外旅遊相關服務
+    details:
+    - 全資子公司；代辦國內外旅遊相關服務
+    edge: e30b4f8ef93f5
+    evidence_level: primary
+    id: org.yiqi-travel
+    name: 一起旅行社股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.gomaji.com/
 tax_id: '25145643'
 incorporated: '2010-07-12'
 listed: '2016-01-11'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.8472#e10:
+    locator: 第34頁，附註二八（一）：關係人名稱及其關係
+    published_date: null
+    publisher: 納維康生技股份有限公司
+    quote_check: found
+    title: 民國115及114年第2季合併財務報表暨會計師核閱報告
+    url: https://www.gomaji.com/assets/images/about/stakeholder/115%E5%B9%B4%E7%AC%AC%E4%BA%8C%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1202602_8472.pdf?1765530000=
+  tw.8472#e2:
+    locator: 公司概況－產品介紹
+    published_date: null
+    publisher: 納維康生技股份有限公司
+    quote_check: found
+    title: 投資人管理專區：產品介紹
+    url: https://www.gomaji.com/stakeholder
+  tw.8472#e3:
+    locator: 票券電商平台
+    published_date: null
+    publisher: 納維康生技股份有限公司
+    quote_check: found
+    title: 產品與服務
+    url: https://navicarebio.com/products
+  tw.8472#e4:
+    locator: 第40頁，附註三二：部門資訊；115年1月1日至6月30日，欄序為電子商務、商品銷售、其他、調整及沖銷、合併；單位為新台幣仟元
+    published_date: null
+    publisher: 納維康生技股份有限公司
+    quote_check: found
+    title: 民國115及114年第2季合併財務報表暨會計師核閱報告
+    url: https://www.gomaji.com/assets/images/about/stakeholder/115%E5%B9%B4%E7%AC%AC%E4%BA%8C%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1202602_8472.pdf?1765530000=
+  tw.8472#e5:
+    locator: 第16頁，附註十二：列入合併財務報表之子公司；一起旅行社列
+    published_date: null
+    publisher: 納維康生技股份有限公司
+    quote_check: found
+    title: 民國115及114年第2季合併財務報表暨會計師核閱報告
+    url: https://www.gomaji.com/assets/images/about/stakeholder/115%E5%B9%B4%E7%AC%AC%E4%BA%8C%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1202602_8472.pdf?1765530000=
+  tw.8472#e6:
+    locator: 第16頁，附註十二：列入合併財務報表之子公司；農良列
+    published_date: null
+    publisher: 納維康生技股份有限公司
+    quote_check: found
+    title: 民國115及114年第2季合併財務報表暨會計師核閱報告
+    url: https://www.gomaji.com/assets/images/about/stakeholder/115%E5%B9%B4%E7%AC%AC%E4%BA%8C%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1202602_8472.pdf?1765530000=
+  tw.8472#e7:
+    locator: 第16頁，附註十二：列入合併財務報表之子公司；蕾綿國際列
+    published_date: null
+    publisher: 納維康生技股份有限公司
+    quote_check: found
+    title: 民國115及114年第2季合併財務報表暨會計師核閱報告
+    url: https://www.gomaji.com/assets/images/about/stakeholder/115%E5%B9%B4%E7%AC%AC%E4%BA%8C%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1202602_8472.pdf?1765530000=
+  tw.8472#e8:
+    locator: 第16頁，附註十二：列入合併財務報表之子公司；MAJI列
+    published_date: null
+    publisher: 納維康生技股份有限公司
+    quote_check: found
+    title: 民國115及114年第2季合併財務報表暨會計師核閱報告
+    url: https://www.gomaji.com/assets/images/about/stakeholder/115%E5%B9%B4%E7%AC%AC%E4%BA%8C%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1202602_8472.pdf?1765530000=
+  tw.8472#e9:
+    locator: 第43頁，附表三：被投資公司資訊；MAJI所在地區與主要營業項目
+    published_date: null
+    publisher: 納維康生技股份有限公司
+    quote_check: found
+    title: 民國115及114年第2季合併財務報表暨會計師核閱報告
+    url: https://www.gomaji.com/assets/images/about/stakeholder/115%E5%B9%B4%E7%AC%AC%E4%BA%8C%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1202602_8472.pdf?1765530000=

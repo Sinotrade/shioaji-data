@@ -8,12 +8,150 @@ industry:
   l0_code: '31'
   l0_name: 其他電子業
   l0_name_en: Other Electronic
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.power
+  l3_name: 電源供應器與電源管理模組
+  l3_name_en: Power Supplies & Power Modules
+chain: chain.server
+chain_stage:
+  agreement: both
+  also: []
+  reason: UPS占營收98.37%，主要提供伺服器與資料中心電源保護設備，屬中游電源設備。
+  stage: components
+  stage_name: 板卡、電源、散熱、機構件
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 以UPS不斷電系統的設計、製造與銷售為主，另提供穩壓器及監控配件。
+summary_long: 科風主要從事UPS不斷電系統的設計、製造與銷售，2025年度UPS營收占98.37%，其他業務占1.63%。UPS產品涵蓋離線式、在線互動式、在線式與三相式，並提供自動穩壓器及SNMP遠端監控網卡。MAC系列用於電信、伺服器及企業設備的電源保護，VGDII Modular則供資料中心與伺服器機房使用。科風全資持有科風國際，中山冠虹則為透過科風國際持有的UPS製造事業。
+segments:
+- evidence_ids:
+  - e7
+  id: seg_ups
+  name: UPS不斷電系統
+  period: '2025'
+  revenue_share_pct: 98.37
+- evidence_ids:
+  - e8
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 1.63
+main_theme: theme.data_center
+themes:
+- also: []
+  stage: equipment
+  theme: theme.data_center
+  tier: upstream
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過科風國際持有的UPS製造子公司
+    details:
+    - 透過科風國際持有的UPS製造子公司
+    edge: e8936b46603cb
+    evidence_level: primary
+    id: org.中山冠虹電子有限公司
+    name: 中山冠虹電子有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司
+    details:
+    - 全資子公司
+    edge: ee54912ebec92
+    evidence_level: primary
+    id: org.科風國際-股-公司
+    name: 科風國際(股)公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.upspowercom.com/TW/
 tax_id: '22485794'
 incorporated: '1987-04-24'
 listed: '2002-08-26'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-25'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3043#e1:
+    locator: Why Powercom UPS？公司業務介紹
+    published_date: null
+    publisher: 科風股份有限公司
+    quote_check: found
+    title: POWERCOM（科風股份有限公司）｜專業不斷電系統
+    url: https://www.upspowercom.com/TW/
+  tw.3043#e10:
+    locator: 第65頁，各關係企業基本資料，中山冠虹電子有限公司主要營業項目
+    published_date: '2026-05-25'
+    publisher: 科風股份有限公司（FinancialFilings提供鏡像）
+    quote_check: unreachable
+    title: 科風股份有限公司114年度年報（公開文字鏡像）
+    url: https://financialfilings.com/filings/pcm-3043/annual-report/2026/48037621/
+  tw.3043#e2:
+    locator: 產品及應用
+    published_date: null
+    publisher: 科風股份有限公司
+    quote_check: found
+    title: 公司簡介｜關於科風
+    url: https://www.upspowercom.com/TW/Us-Headquarter.jsp
+  tw.3043#e3:
+    locator: 產品介紹
+    published_date: null
+    publisher: 科風股份有限公司
+    quote_check: found
+    title: Macan（MAC）｜在線式UPS
+    url: https://www.upspowercom.com/TW/UPS-MAC.jsp
+  tw.3043#e4:
+    locator: Intro
+    published_date: null
+    publisher: 科風股份有限公司
+    quote_check: found
+    title: Vanguard-II Modular UPS
+    url: https://www.upspowercom.com/UPS-VGDII-M.jsp
+  tw.3043#e5:
+    locator: 產品名稱
+    published_date: null
+    publisher: 科風股份有限公司
+    quote_check: found
+    title: 守護神穩壓器（AR）｜電源設備與配件
+    url: https://www.upspowercom.com/TW/AVR-AR.jsp
+  tw.3043#e6:
+    locator: SNMP - DA807產品功能
+    published_date: null
+    publisher: 科風股份有限公司
+    quote_check: found
+    title: SNMP-DA807｜UPS相關配件
+    url: https://www.upspowercom.com/TW/Card-DA807.jsp?link=Monitoring
+  tw.3043#e7:
+    locator: 第47頁，主要商品（服務）之營業比重，114年度金額與百分比欄
+    published_date: '2026-05-25'
+    publisher: 科風股份有限公司（FinancialFilings提供鏡像）
+    quote_check: unreachable
+    title: 科風股份有限公司114年度年報（公開文字鏡像）
+    url: https://financialfilings.com/filings/pcm-3043/annual-report/2026/48037621/
+  tw.3043#e8:
+    locator: 第47頁，主要商品（服務）之營業比重，114年度金額與百分比欄
+    published_date: '2026-05-25'
+    publisher: 科風股份有限公司（FinancialFilings提供鏡像）
+    quote_check: unreachable
+    title: 科風股份有限公司114年度年報（公開文字鏡像）
+    url: https://financialfilings.com/filings/pcm-3043/annual-report/2026/48037621/
+  tw.3043#e9:
+    locator: 第62頁，114年12月31日轉投資表；科風國際列載持有比例及損益原因
+    published_date: '2026-05-25'
+    publisher: 科風股份有限公司（FinancialFilings提供鏡像）
+    quote_check: unreachable
+    title: 科風股份有限公司114年度年報（公開文字鏡像）
+    url: https://financialfilings.com/filings/pcm-3043/annual-report/2026/48037621/

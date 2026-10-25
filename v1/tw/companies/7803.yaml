@@ -8,12 +8,130 @@ industry:
   l0_code: '22'
   l0_name: 生技醫療業
   l0_name_en: Biotechnology and Medical Care
-primary_chain_position: unknown
+  l1: health
+  l1_name: 醫療保健
+  l1_name_en: Healthcare
+  l2: health.devices
+  l2_name: 醫療器材與服務
+  l2_name_en: Medical Devices & Services
+  l3: med.devices
+  l3_name: 醫療器材
+  l3_name_en: Medical Devices
+chain: chain.biotech
+chain_stage:
+  agreement: both
+  also: []
+  reason: 數位病理平台占營收94.29%，核心為軟體醫材研發，另開發人工智慧輔助診斷系統。
+  stage: rnd
+  stage_name: 研發與原料
+  tier: upstream
+primary_chain_position: upstream
+summary_short: 主要銷售數位病理影像平台與人工智慧輔助診斷軟體。
+summary_long: 雲象科技主要銷售數位病理平台與人工智慧輔助診斷系統。2025年營收以數位病理平台為主，占94.29%，人工智慧輔助診斷系統占5.71%。主要產品aetherSlide用於病理影像管理與日常閱片，支援醫療及學術機構的數位化需求。另有Hema骨髓抹片數位型態分析軟體，以及Endo內視鏡大腸瘜肉人工智慧輔助偵測系統。公司持有日本イーサーエーアイ株式会社與德國aetherAI GmbH各100%股權。
+segments:
+- evidence_ids:
+  - e2
+  id: digital_pathology
+  name: 數位病理平台
+  period: '2025'
+  revenue_share_pct: 94.29
+- evidence_ids:
+  - e2
+  id: ai_diagnostics
+  name: 人工智慧輔助診斷系統
+  period: '2025'
+  revenue_share_pct: 5.71
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 德國全資子公司
+    details:
+    - 德國全資子公司
+    edge: eac2707aee67e
+    evidence_level: primary
+    id: org.aetherai-gmbh
+    name: aetherAI GmbH
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 日本全資子公司
+    details:
+    - 日本全資子公司
+    edge: e71fedaf6a41d
+    evidence_level: primary
+    id: org.イーサーエーアイ株式会社
+    name: イーサーエーアイ株式会社
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.aetherai.com/
 tax_id: '83470105'
 incorporated: '2020-02-06'
 listed: '2026-05-20'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.7803#e2:
+    locator: 第46頁／主要產品之營業比重；欄序為113年度、114年度
+    published_date: null
+    publisher: 雲象科技股份有限公司
+    quote_check: found
+    title: 雲象科技股份有限公司民國一一四年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/72738/2026/RNS/72738_rns_2026-07-06_31e27c5e-d3e8-4c26-9e85-71dd2e353825.pdf
+  tw.7803#e3:
+    locator: 專為現代病理科打造的數位影像系統／aetherSlide
+    published_date: null
+    publisher: 雲象科技股份有限公司
+    quote_check: found
+    title: 產品服務 | aetherAI
+    url: https://www.aetherai.com/zh/products
+  tw.7803#e4:
+    locator: 專為現代病理科打造的數位影像系統
+    published_date: null
+    publisher: 雲象科技股份有限公司
+    quote_check: found
+    title: 產品服務 | aetherAI
+    url: https://www.aetherai.com/zh/products
+  tw.7803#e5:
+    locator: AI醫療影像軟體解決方案／Hema
+    published_date: null
+    publisher: 雲象科技股份有限公司
+    quote_check: found
+    title: 產品服務 | aetherAI
+    url: https://www.aetherai.com/zh/products
+  tw.7803#e6:
+    locator: AI醫療影像軟體解決方案／Endo
+    published_date: null
+    publisher: 雲象科技股份有限公司
+    quote_check: found
+    title: 產品服務 | aetherAI
+    url: https://www.aetherai.com/zh/products
+  tw.7803#e7:
+    locator: 推動以AI為核心之病理數位轉型
+    published_date: null
+    publisher: 雲象科技股份有限公司
+    quote_check: found
+    title: 關於雲象 | aetherAI
+    url: https://www.aetherai.com/zh/about
+  tw.7803#e8:
+    locator: 第41頁／轉投資事業持股表／114年12月31日
+    published_date: null
+    publisher: 雲象科技股份有限公司
+    quote_check: found
+    title: 雲象科技股份有限公司民國一一四年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/72738/2026/RNS/72738_rns_2026-07-06_31e27c5e-d3e8-4c26-9e85-71dd2e353825.pdf
+  tw.7803#e9:
+    locator: 第41頁／轉投資事業持股表／114年12月31日
+    published_date: null
+    publisher: 雲象科技股份有限公司
+    quote_check: found
+    title: 雲象科技股份有限公司民國一一四年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/72738/2026/RNS/72738_rns_2026-07-06_31e27c5e-d3e8-4c26-9e85-71dd2e353825.pdf

@@ -8,12 +8,141 @@ industry:
   l0_code: '30'
   l0_name: 資訊服務業
   l0_name_en: Information Service
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.software
+  l2_name: 軟體與資訊服務
+  l2_name_en: Software & IT Services
+  l3: sw.it_services
+  l3_name: 系統整合與資訊服務
+  l3_name_en: System Integration & IT Services
+primary_chain_position: not_applicable
+summary_short: 以企業資訊軟硬體銷售、委外維護及資訊人力服務取得營收。
+summary_long: 仁大資訊以企業資訊商品銷售、資訊委外維護及人力服務為主要業務，銷售範圍包含資訊硬體、軟體、雲端與應用服務。2025年營收組成為商品銷售75%、維護合約17%、勞務服務7%、其他1%。維護服務涵蓋端點、IT機房及網路軟硬體，並提供資訊人力駐點、設備更新升級、機房搬遷與大量部署。資料中心業務包含虛擬化、超融合及軟體定義平台建置。集團旗下有金腦數位、越南及美國子公司，其中金腦數位持股100%。
+segments:
+- evidence_ids:
+  - e1
+  id: goods
+  name: 商品銷售
+  period: '2025'
+  revenue_share_pct: 75
+- evidence_ids:
+  - e1
+  id: maintenance
+  name: 維護合約
+  period: '2025'
+  revenue_share_pct: 17
+- evidence_ids:
+  - e1
+  id: labor
+  name: 勞務服務
+  period: '2025'
+  revenue_share_pct: 7
+- evidence_ids:
+  - e1
+  id: other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 1
+relations:
+  subsidiaries:
+  - as_of: 2026-07
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股100%的子公司
+    details:
+    - 持股100%的子公司
+    edge: ebda0511f891a
+    evidence_level: primary
+    id: org.golden-brain-digital
+    name: 金腦數位股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2026-07
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 美國子公司
+    details:
+    - 美國子公司
+    edge: e5b360ea343ab
+    evidence_level: primary
+    id: org.hpi-usa
+    name: High Performance Information (USA) Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2026-07
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 越南子公司
+    details:
+    - 越南子公司
+    edge: e934ba17176fd
+    evidence_level: primary
+    id: org.hpi-vietnam
+    name: High Performance Information Company Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.hpicorp.com.tw
 tax_id: '16890535'
 incorporated: '1999-04-12'
 listed: '2025-12-10'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.7767#e1:
+    locator: 第22頁，經營實績－收入別，114年圖示
+    published_date: null
+    publisher: 仁大資訊股份有限公司
+    quote_check: not_found
+    title: 仁大資訊2026年法人說明會簡報
+    url: https://mopsov.twse.com.tw/nas/STR/776720260727M001.pptx
+  tw.7767#e2:
+    locator: 第9頁，主要業務－資訊商品銷售
+    published_date: null
+    publisher: 仁大資訊股份有限公司
+    quote_check: not_found
+    title: 仁大資訊2026年法人說明會簡報
+    url: https://mopsov.twse.com.tw/nas/STR/776720260727M001.pptx
+  tw.7767#e3:
+    locator: 第9頁，主要業務－資訊委外維護合約
+    published_date: null
+    publisher: 仁大資訊股份有限公司
+    quote_check: not_found
+    title: 仁大資訊2026年法人說明會簡報
+    url: https://mopsov.twse.com.tw/nas/STR/776720260727M001.pptx
+  tw.7767#e4:
+    locator: 第9頁，主要業務－人力服務
+    published_date: null
+    publisher: 仁大資訊股份有限公司
+    quote_check: not_found
+    title: 仁大資訊2026年法人說明會簡報
+    url: https://mopsov.twse.com.tw/nas/STR/776720260727M001.pptx
+  tw.7767#e6:
+    locator: 第7頁，集團架構
+    published_date: null
+    publisher: 仁大資訊股份有限公司
+    quote_check: not_found
+    title: 仁大資訊2026年法人說明會簡報
+    url: https://mopsov.twse.com.tw/nas/STR/776720260727M001.pptx
+  tw.7767#e7:
+    locator: 第7頁，集團架構
+    published_date: null
+    publisher: 仁大資訊股份有限公司
+    quote_check: not_found
+    title: 仁大資訊2026年法人說明會簡報
+    url: https://mopsov.twse.com.tw/nas/STR/776720260727M001.pptx
+  tw.7767#e8:
+    locator: 第7頁，集團架構
+    published_date: null
+    publisher: 仁大資訊股份有限公司
+    quote_check: not_found
+    title: 仁大資訊2026年法人說明會簡報
+    url: https://mopsov.twse.com.tw/nas/STR/776720260727M001.pptx

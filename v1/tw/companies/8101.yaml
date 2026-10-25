@@ -8,12 +8,82 @@ industry:
   l0_code: '27'
   l0_name: 通信網路業
   l0_name_en: Communications and Internet
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.hardware
+  l2_name: 電腦與硬體
+  l2_name_en: Computers & Hardware
+  l3: hw.ems
+  l3_name: 電子製造服務（EMS）
+  l3_name_en: Electronics Manufacturing Services
+chain: chain.networking
+chain_stage:
+  agreement: both
+  also:
+  - stage: modules
+    stage_name: 模組與零組件
+    tier: midstream
+  reason: 以手機、平板等通訊終端製造服務為主，另有軍用通訊射頻模組；未揭露產品別營收。
+  stage: equipment
+  stage_name: 網通設備與系統
+  tier: downstream
+primary_chain_position: downstream
+summary_short: 提供通訊終端電子製造服務，另開發無人機、射頻模組與智慧停車產品。
+summary_long: 華冠提供電子製造服務，印尼工廠產品涵蓋智慧型手機與平板電腦等終端裝置。公司列示的主要產品服務另包括無人機、射頻產品與智慧停車方案。無人機產品包括AH-700S大型單旋翼及AV-M50G垂直起降機型。射頻產品涵蓋固態功率放大器、AESA雷達收發模組與PESA接收機模組，應用於軍用通訊及雷達。公司也提供77GHz自行車後方來車提醒雷達模組；智慧停車產品則包括停車模組與智慧路邊停車系統。
+main_theme: theme.drone
+themes:
+- also: []
+  stage: system
+  theme: theme.drone
+  tier: downstream
 website: www.arimacomm.com.tw
 tax_id: '70747852'
 incorporated: '1999-08-24'
 listed: '2004-07-01'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-25'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.8101#e1:
+    locator: 第4頁，主要產品及服務
+    published_date: null
+    publisher: 華冠通訊股份有限公司
+    quote_check: found
+    title: 華冠通訊2025年法人投資說明會
+    url: https://mopsov.twse.com.tw/nas/STR/810120251203M001.pdf
+  tw.8101#e2:
+    locator: 第35頁，印尼工廠簡介－客戶與產品(1)
+    published_date: null
+    publisher: 華冠通訊股份有限公司
+    quote_check: found
+    title: 華冠通訊2025年法人投資說明會
+    url: https://mopsov.twse.com.tw/nas/STR/810120251203M001.pdf
+  tw.8101#e3:
+    locator: 第13頁，華冠無人機機型
+    published_date: null
+    publisher: 華冠通訊股份有限公司
+    quote_check: found
+    title: 華冠通訊2025年法人投資說明會
+    url: https://mopsov.twse.com.tw/nas/STR/810120251203M001.pdf
+  tw.8101#e4:
+    locator: 第4頁，主要產品及服務；第29至30頁，射頻產品／軍工
+    published_date: null
+    publisher: 華冠通訊股份有限公司
+    quote_check: found
+    title: 華冠通訊2025年法人投資說明會
+    url: https://mopsov.twse.com.tw/nas/STR/810120251203M001.pdf
+  tw.8101#e5:
+    locator: 第31頁，射頻產品／自行車後防撞雷達
+    published_date: null
+    publisher: 華冠通訊股份有限公司
+    quote_check: found
+    title: 華冠通訊2025年法人投資說明會
+    url: https://mopsov.twse.com.tw/nas/STR/810120251203M001.pdf
+  tw.8101#e6:
+    locator: 第26至27頁，智慧停車模組與智慧路邊停車系統
+    published_date: null
+    publisher: 華冠通訊股份有限公司
+    quote_check: found
+    title: 華冠通訊2025年法人投資說明會
+    url: https://mopsov.twse.com.tw/nas/STR/810120251203M001.pdf

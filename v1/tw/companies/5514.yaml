@@ -8,12 +8,88 @@ industry:
   l0_code: '14'
   l0_name: 建材營造業
   l0_name_en: Building Material and Construction
-primary_chain_position: unknown
+  l1: realestate
+  l1_name: 不動產
+  l1_name_en: Real Estate
+  l2: re.dev
+  l2_name: 不動產
+  l2_name_en: Real Estate
+  l3: re.developer
+  l3_name: 建設開發
+  l3_name_en: Property Development
+primary_chain_position: not_applicable
+summary_short: 以住宅與商業大樓開發、出售及出租為主要業務。
+summary_long: 三豐建設主要委託營造廠商興建國民住宅及商業大樓，供出租或出售，商品包括高級住宅大廈及金融商業大樓。開發區位以台北市為核心，大台北都會區及副都心為輔；土地取得方式包括自地自建、合建分屋及共同投資興建。2025年度沒有建案完工交屋認列收入，當年度僅認列租賃收入。金源營造為三豐持股99.9716%的子公司，主要經營土木建築工程承攬業務。
+segments:
+- evidence_ids:
+  - e5
+  id: seg_rental
+  name: 租賃收入
+  period: '2025'
+  revenue_share_pct: null
+relations:
+  subsidiaries:
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股99.9716%的營造子公司
+    details:
+    - 持股99.9716%的營造子公司
+    edge: e676155f2abb0
+    evidence_level: primary
+    id: org.金源營造股份有限公司
+    name: 金源營造股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.sunfon.com.tw
 tax_id: '22817225'
 incorporated: '1988-01-21'
 listed: '1998-12-29'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-25'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.5514#e2:
+    locator: 第54頁：業務範圍、營業比重、目前商品項目
+    published_date: '2026-03-31'
+    publisher: 三豐建設股份有限公司
+    quote_check: not_found
+    title: 三豐建設股份有限公司114年度年報
+    url: https://sunfon.com.tw/wp-content/uploads/2026/05/三豐114年報中文申報檔.pdf
+  tw.5514#e3:
+    locator: 第60頁：主要原料之供應狀況／土地／選擇區位
+    published_date: '2026-03-31'
+    publisher: 三豐建設股份有限公司
+    quote_check: found
+    title: 三豐建設股份有限公司114年度年報
+    url: https://sunfon.com.tw/wp-content/uploads/2026/05/三豐114年報中文申報檔.pdf
+  tw.5514#e4:
+    locator: 第60頁：主要原料之供應狀況／土地／取得方式
+    published_date: '2026-03-31'
+    publisher: 三豐建設股份有限公司
+    quote_check: found
+    title: 三豐建設股份有限公司114年度年報
+    url: https://sunfon.com.tw/wp-content/uploads/2026/05/三豐114年報中文申報檔.pdf
+  tw.5514#e5:
+    locator: 第70頁：經營結果比較分析表／增減比例變動分析說明
+    published_date: '2026-03-31'
+    publisher: 三豐建設股份有限公司
+    quote_check: found
+    title: 三豐建設股份有限公司114年度年報
+    url: https://sunfon.com.tw/wp-content/uploads/2026/05/三豐114年報中文申報檔.pdf
+  tw.5514#e6:
+    locator: 第74頁：關係企業組織圖，控制公司與從屬公司欄列金源營造及99.9716%
+    published_date: '2026-03-31'
+    publisher: 三豐建設股份有限公司
+    quote_check: found
+    title: 三豐建設股份有限公司114年度年報
+    url: https://sunfon.com.tw/wp-content/uploads/2026/05/三豐114年報中文申報檔.pdf
+  tw.5514#e7:
+    locator: 第74頁：關係企業基本資料／金源營造主要營業項目
+    published_date: '2026-03-31'
+    publisher: 三豐建設股份有限公司
+    quote_check: found
+    title: 三豐建設股份有限公司114年度年報
+    url: https://sunfon.com.tw/wp-content/uploads/2026/05/三豐114年報中文申報檔.pdf

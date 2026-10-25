@@ -8,12 +8,137 @@ industry:
   l0_code: '16'
   l0_name: 觀光餐旅
   l0_name_en: Tourism and Hospitality
-primary_chain_position: unknown
+  l1: conglomerate
+  l1_name: 綜合
+  l1_name_en: Conglomerates
+  l2: cong.holding
+  l2_name: 綜合與控股
+  l2_name_en: Conglomerates & Holdings
+  l3: cong.other
+  l3_name: 其他
+  l3_name_en: Others
+primary_chain_position: not_applicable
+summary_short: 透過加盟與線上線下通路提供團體旅遊、自由行及客製化旅遊服務。
+summary_long: 旅天下經營旅遊商品與服務，產品包括國外團體、國外自由行及客製化旅遊方案，並以加盟模式整合線上與實體通路。其旅遊服務涵蓋不同出遊形式，客製化方案則依消費者需求規劃。依2025年前三季合併財報，旅遊部門為主要收入來源，其他部門為子公司旅報傳媒的雜誌出版業務。截至2025年9月底，合併子公司包括雙獅聯合國際旅行社、旅報傳媒及澳洲Unitiger Pty. Ltd.；其中Unitiger持股49%，財報依實質控制力將其納入合併。
+segments:
+- evidence_ids:
+  - e9
+  id: travel
+  name: 旅遊部門
+  period: 2025年1月至9月
+  revenue_share_pct: null
+- evidence_ids:
+  - e9
+  - e10
+  id: publishing
+  name: 其他部門：旅報傳媒雜誌出版
+  period: 2025年1月至9月
+  revenue_share_pct: null
+relations:
+  subsidiaries:
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 澳洲旅行業合併子公司，持股49%
+    details:
+    - 澳洲旅行業合併子公司，持股49%
+    edge: ea442f8a76bfe
+    evidence_level: primary
+    id: org.unitiger-pty-ltd
+    name: Unitiger Pty. Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股50%的雜誌出版子公司
+    details:
+    - 持股50%的雜誌出版子公司
+    edge: effe0c410bff1
+    evidence_level: primary
+    id: org.旅報傳媒股份有限公司
+    name: 旅報傳媒股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股100%的旅行業子公司
+    details:
+    - 持股100%的旅行業子公司
+    edge: efa53d366cc3a
+    evidence_level: primary
+    id: org.雙獅聯合國際旅行社股份有限公司
+    name: 雙獅聯合國際旅行社股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.gounitravel.com
 tax_id: '24943536'
 incorporated: '2015-03-10'
 listed: '2026-01-22'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6961#e1:
+    locator: 公司基本資料表
+    published_date: null
+    publisher: 旅天下聯合國際旅行社股份有限公司
+    quote_check: unreachable
+    title: 公司簡介
+    url: https://info.gounitravel.com/category/zh-tw/investors/index
+  tw.6961#e10:
+    locator: 第37頁，附註十四（三）
+    published_date: '2025-11-12'
+    publisher: 旅天下聯合國際旅行社股份有限公司
+    quote_check: found
+    title: 2025年第三季合併財務報告
+    url: https://static.gounitravel.com/ConsoleAPData/PublicationStatic/Investors/gounitravel/44e39eb2bddc42658aa553eae6a7f397.pdf
+  tw.6961#e11:
+    locator: 第37頁，附註十三（二）轉投資事業相關資訊
+    published_date: '2025-11-12'
+    publisher: 旅天下聯合國際旅行社股份有限公司
+    quote_check: found
+    title: 2025年第三季合併財務報告
+    url: https://static.gounitravel.com/ConsoleAPData/PublicationStatic/Investors/gounitravel/44e39eb2bddc42658aa553eae6a7f397.pdf
+  tw.6961#e2:
+    locator: 品牌介紹
+    published_date: null
+    publisher: 旅天下聯合國際旅行社股份有限公司
+    quote_check: unreachable
+    title: 關於旅天下｜旅天下旅行社
+    url: https://info.gounitravel.com/category/zh-tw/aboutuni/index
+  tw.6961#e6:
+    locator: 第10頁，附註四（二）合併基礎，子公司名單
+    published_date: '2025-11-12'
+    publisher: 旅天下聯合國際旅行社股份有限公司
+    quote_check: found
+    title: 2025年第三季合併財務報告
+    url: https://static.gounitravel.com/ConsoleAPData/PublicationStatic/Investors/gounitravel/44e39eb2bddc42658aa553eae6a7f397.pdf
+  tw.6961#e7:
+    locator: 第10頁，附註四（二）合併基礎，子公司名單
+    published_date: '2025-11-12'
+    publisher: 旅天下聯合國際旅行社股份有限公司
+    quote_check: found
+    title: 2025年第三季合併財務報告
+    url: https://static.gounitravel.com/ConsoleAPData/PublicationStatic/Investors/gounitravel/44e39eb2bddc42658aa553eae6a7f397.pdf
+  tw.6961#e8:
+    locator: 第10頁，附註四（二）註二
+    published_date: '2025-11-12'
+    publisher: 旅天下聯合國際旅行社股份有限公司
+    quote_check: found
+    title: 2025年第三季合併財務報告
+    url: https://static.gounitravel.com/ConsoleAPData/PublicationStatic/Investors/gounitravel/44e39eb2bddc42658aa553eae6a7f397.pdf
+  tw.6961#e9:
+    locator: 第38頁，附註十四，2025年1月至9月部門資訊；欄序為旅遊、停業、其他、調整及銷除、合計
+    published_date: '2025-11-12'
+    publisher: 旅天下聯合國際旅行社股份有限公司
+    quote_check: found
+    title: 2025年第三季合併財務報告
+    url: https://static.gounitravel.com/ConsoleAPData/PublicationStatic/Investors/gounitravel/44e39eb2bddc42658aa553eae6a7f397.pdf

@@ -8,12 +8,136 @@ industry:
   l0_code: '24'
   l0_name: 半導體業
   l0_name_en: Semiconductor
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.semi
+  l2_name: 半導體
+  l2_name_en: Semiconductors
+  l3: semi.materials
+  l3_name: 半導體材料與耗材
+  l3_name_en: Semiconductor Materials & Consumables
+chain: chain.semiconductor
+chain_stage:
+  agreement: both
+  also: []
+  reason: 半導體材料占營收78.52%，主要銷售晶圓製程用擋片、控制片與測試片。
+  stage: wafer_materials
+  stage_name: 矽晶圓與材料
+  tier: upstream
+primary_chain_position: upstream
+summary_short: 以半導體材料銷售為主，兼營光碟與聲音系統晶片及自動化技術服務。
+summary_long: 合邦主要銷售半導體材料與光碟／聲音系統晶片。2024年兩項業務分占營收78.52%與21.35%，技術服務占0.13%。材料商品包括晶圓製程用擋片、控制片及測試片；晶片涵蓋CD-Discman與Boom Box系統單晶片。另提供工業4.0智慧生產與商業服務自動化技術服務。2025年第三季財報列示，全資子公司United Holdings Business Ltd.持有台合芯集成電路（深圳）有限公司全部股權。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_materials
+  name: 半導體材料產品
+  period: '2024'
+  revenue_share_pct: 78.52
+- evidence_ids:
+  - e2
+  id: seg_audio_ic
+  name: 光碟／聲音系統晶片
+  period: '2024'
+  revenue_share_pct: 21.35
+- evidence_ids:
+  - e2
+  id: seg_services
+  name: 技術服務收入
+  period: '2024'
+  revenue_share_pct: 0.13
+relations:
+  subsidiaries:
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%股權的投資公司
+    details:
+    - 直接持有100%股權的投資公司
+    edge: e2749fff79ef6
+    evidence_level: primary
+    id: org.united-holdings-business-ltd
+    name: United Holdings Business Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過境外子公司間接持有100%股權
+    details:
+    - 透過境外子公司間接持有100%股權
+    edge: e8571b16d4503
+    evidence_level: primary
+    id: org.台合芯集成電路-深圳-有限公司
+    name: 台合芯集成電路(深圳)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.avid.com.tw
 tax_id: '84149569'
 incorporated: '1996-01-22'
 listed: '2001-05-07'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-25'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6103#e2:
+    locator: 第36頁，營業比重
+    published_date: '2025-05-29'
+    publisher: 合邦電子股份有限公司
+    quote_check: found
+    title: 合邦電子股份有限公司一一三年度年報
+    url: https://avid.com.tw/files/investor3/AVID_2024.pdf
+  tw.6103#e3:
+    locator: 第37頁，目前之商品（服務），半導體材料
+    published_date: '2025-05-29'
+    publisher: 合邦電子股份有限公司
+    quote_check: found
+    title: 合邦電子股份有限公司一一三年度年報
+    url: https://avid.com.tw/files/investor3/AVID_2024.pdf
+  tw.6103#e4:
+    locator: 第37頁，目前之商品（服務），Audio-CD產品線
+    published_date: '2025-05-29'
+    publisher: 合邦電子股份有限公司
+    quote_check: found
+    title: 合邦電子股份有限公司一一三年度年報
+    url: https://avid.com.tw/files/investor3/AVID_2024.pdf
+  tw.6103#e5:
+    locator: 第37頁，目前之商品（服務）
+    published_date: '2025-05-29'
+    publisher: 合邦電子股份有限公司
+    quote_check: found
+    title: 合邦電子股份有限公司一一三年度年報
+    url: https://avid.com.tw/files/investor3/AVID_2024.pdf
+  tw.6103#e6:
+    locator: 第7頁，公司沿革
+    published_date: '2025-11-05'
+    publisher: 合邦電子股份有限公司
+    quote_check: found
+    title: 合邦電子股份有限公司及子公司民國114年第三季合併財務報告
+    url: https://avid.com.tw/files/investor5/2025/AVID_2025_Q3.pdf
+  tw.6103#e7:
+    locator: 第35頁，附表二
+    published_date: '2025-11-05'
+    publisher: 合邦電子股份有限公司
+    quote_check: found
+    title: 合邦電子股份有限公司及子公司民國114年第三季合併財務報告
+    url: https://avid.com.tw/files/investor5/2025/AVID_2025_Q3.pdf
+  tw.6103#e8:
+    locator: 第36頁，附表三
+    published_date: '2025-11-05'
+    publisher: 合邦電子股份有限公司
+    quote_check: found
+    title: 合邦電子股份有限公司及子公司民國114年第三季合併財務報告
+    url: https://avid.com.tw/files/investor5/2025/AVID_2025_Q3.pdf
+  tw.6103#e9:
+    locator: 第36頁，附表三註解
+    published_date: '2025-11-05'
+    publisher: 合邦電子股份有限公司
+    quote_check: found
+    title: 合邦電子股份有限公司及子公司民國114年第三季合併財務報告
+    url: https://avid.com.tw/files/investor5/2025/AVID_2025_Q3.pdf

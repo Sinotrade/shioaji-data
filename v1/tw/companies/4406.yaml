@@ -8,12 +8,109 @@ industry:
   l0_code: '04'
   l0_name: 紡織纖維
   l0_name_en: Textiles
-primary_chain_position: unknown
+  l1: materials
+  l1_name: 原物料
+  l1_name_en: Materials
+  l2: mat.other
+  l2_name: 其他原物料
+  l2_name_en: Other Materials
+  l3: matl.textile_fiber
+  l3_name: 紡織纖維與機能布料
+  l3_name_en: Textiles, Fibers & Functional Fabrics
+chain: chain.textile
+chain_stage:
+  agreement: both
+  also:
+  - stage: fabric
+    stage_name: 織布與染整
+    tier: midstream
+  reason: 特多龍加工絲占營收98.90%，以紗線為主；另有成品布銷售，跨及織布階段。
+  stage: fiber
+  stage_name: 纖維與紗
+  tier: upstream
+primary_chain_position: upstream
+summary_short: 以特多龍加工絲銷售為主，已決議停止自行生產並轉向貿易。
+summary_long: 新昕纖以特多龍加工絲為主要營收來源，官網亦列有特多龍及尼龍氣撚紗，過去採假撚加工模式經營。2025年度特多龍加工絲占營收98.90%，成品布銷售占0.71%，商品占0.39%，收入集中於加工絲。公司於2026年3月6日董事會通過桃園龜山工廠特多龍加工絲停止生產案，年報摘錄載明改以買賣貿易方式因應市場需求。其2025年度產品業務以紗線為核心，另有小比例的成品布及商品銷售。
+segments:
+- evidence_ids:
+  - e5
+  id: seg_yarn
+  name: 特多龍加工絲
+  period: '2025'
+  revenue_share_pct: 98.9
+- evidence_ids:
+  - e6
+  id: seg_fabric
+  name: 成品布銷售
+  period: '2025'
+  revenue_share_pct: 0.71
+- evidence_ids:
+  - e7
+  id: seg_merchandise
+  name: 商品
+  period: '2025'
+  revenue_share_pct: 0.39
 website: www.hsinsin.com.tw
 tax_id: '07652202'
 incorporated: '1980-04-29'
 listed: '1999-01-14'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-25'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4406#e1:
+    locator: 公司沿革首段，主要經營業務
+    published_date: null
+    publisher: 新昕纖維股份有限公司
+    quote_check: found
+    title: 公司簡介－新昕纖維股份有限公司
+    url: https://www.hsinsin.com.tw/tw/about-us.html
+  tw.4406#e2:
+    locator: 公司沿革首段，製程定位
+    published_date: null
+    publisher: 新昕纖維股份有限公司
+    quote_check: found
+    title: 公司簡介－新昕纖維股份有限公司
+    url: https://www.hsinsin.com.tw/tw/about-us.html
+  tw.4406#e3:
+    locator: 114年度致股東報告，（一）4、技術及研發狀況；記載115.03.06董事會決議
+    published_date: null
+    publisher: Treelazy
+    quote_check: found
+    title: 新昕纖（4406）年報查詢
+    url: https://treelazy.com/stock/4406
+  tw.4406#e4:
+    locator: 114年度致股東報告，首段組織業務調整說明
+    published_date: null
+    publisher: Treelazy
+    quote_check: found
+    title: 新昕纖（4406）年報查詢
+    url: https://treelazy.com/stock/4406
+  tw.4406#e5:
+    locator: 營收分布－產品組合－114年度，特多龍加工絲列，佔比欄
+    published_date: null
+    publisher: Treelazy
+    quote_check: not_found
+    title: 新昕纖（4406）年報查詢
+    url: https://treelazy.com/stock/4406
+  tw.4406#e6:
+    locator: 營收分布－產品組合－114年度，成品布銷售列，佔比欄
+    published_date: null
+    publisher: Treelazy
+    quote_check: not_found
+    title: 新昕纖（4406）年報查詢
+    url: https://treelazy.com/stock/4406
+  tw.4406#e7:
+    locator: 營收分布－產品組合－114年度，商品列，佔比欄
+    published_date: null
+    publisher: Treelazy
+    quote_check: not_found
+    title: 新昕纖（4406）年報查詢
+    url: https://treelazy.com/stock/4406
+  tw.4406#e8:
+    locator: 公司沿革首段，主要經營業務
+    published_date: null
+    publisher: 新昕纖維股份有限公司
+    quote_check: found
+    title: 公司簡介－新昕纖維股份有限公司
+    url: https://www.hsinsin.com.tw/tw/about-us.html

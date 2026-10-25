@@ -8,12 +8,143 @@ industry:
   l0_code: '14'
   l0_name: 建材營造業
   l0_name_en: Building Material and Construction
-primary_chain_position: unknown
+  l1: realestate
+  l1_name: 不動產
+  l1_name_en: Real Estate
+  l2: re.dev
+  l2_name: 不動產
+  l2_name_en: Real Estate
+  l3: re.developer
+  l3_name: 建設開發
+  l3_name_en: Property Development
+primary_chain_position: not_applicable
+summary_short: 以住宅開發、不動產租售及都市更新為主要業務。
+summary_long: 太平洋建設經營住宅及大樓開發租售，並提供都市更新服務。2025年合併營收中，營建收入占56.30%，其他收入占43.70%。官網列示的在建個案包括位於桃園市楊梅區、規劃十五戶的太平洋陽光四季臻藏，以及規劃地上七層、地下二層、共三十七戶的太平洋至臻。年報董事會決議另明文揭露，豐洋興業、太平洋控股及太投興業為太平洋建設的子公司。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_construction
+  name: 營建收入
+  period: '2025'
+  revenue_share_pct: 56.3
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 43.7
+relations:
+  subsidiaries:
+  - as_of: '2026-04-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司
+    details:
+    - 子公司
+    edge: e34b46cc86a5d
+    evidence_level: primary
+    id: org.feng-yang-enterprise
+    name: 豐洋興業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 重要子公司
+    details:
+    - 重要子公司
+    edge: ed58b48da5eb7
+    evidence_level: primary
+    id: org.pacific-holdings-hk
+    name: 太平洋控股有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司
+    details:
+    - 子公司
+    edge: e11520d815794
+    evidence_level: primary
+    id: org.tai-tou-enterprise
+    name: 太投興業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.pacific-group.com.tw
 tax_id: '11099009'
 incorporated: '1967-06-14'
 listed: '1980-02-02'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2506#e1:
+    locator: 第一條及第二條
+    published_date: null
+    publisher: 太平洋建設股份有限公司
+    quote_check: found
+    title: 公司章程
+    url: https://www.pacific-group.com.tw/rules/公司章程/
+  tw.2506#e2:
+    locator: 第49頁，營業比重（合併財報），單位%
+    published_date: '2026-04-28'
+    publisher: 太平洋建設股份有限公司；FinancialFilings鏡像
+    quote_check: unreachable
+    title: 太平洋建設股份有限公司114年度年報
+    url: https://financialfilings.com/filings/pcc-2506/annual-report/2026/46711153/
+  tw.2506#e3:
+    locator: 第49頁，公司目前之商品
+    published_date: '2026-04-28'
+    publisher: 太平洋建設股份有限公司；FinancialFilings鏡像
+    quote_check: unreachable
+    title: 太平洋建設股份有限公司114年度年報
+    url: https://financialfilings.com/filings/pcc-2506/annual-report/2026/46711153/
+  tw.2506#e4:
+    locator: 都更理念
+    published_date: null
+    publisher: 太平洋建設股份有限公司
+    quote_check: found
+    title: 都更專區
+    url: https://www.pacific-group.com.tw/urban/
+  tw.2506#e5:
+    locator: Project Description
+    published_date: '2026-09-22'
+    publisher: 太平洋建設股份有限公司
+    quote_check: found
+    title: 太平洋陽光四季臻藏
+    url: https://www.pacific-group.com.tw/portfolio-items/太平洋陽光四季臻藏/
+  tw.2506#e6:
+    locator: Project Description
+    published_date: '2026-09-18'
+    publisher: 太平洋建設股份有限公司
+    quote_check: found
+    title: 太平洋至臻
+    url: https://www.pacific-group.com.tw/portfolio-items/太平洋至臻-2/
+  tw.2506#e7:
+    locator: 第40頁，114年3月11日董事會決議
+    published_date: '2026-04-28'
+    publisher: 太平洋建設股份有限公司；FinancialFilings鏡像
+    quote_check: unreachable
+    title: 太平洋建設股份有限公司114年度年報
+    url: https://financialfilings.com/filings/pcc-2506/annual-report/2026/46711153/
+  tw.2506#e8:
+    locator: 第40頁，114年1月17日董事會決議
+    published_date: '2026-04-28'
+    publisher: 太平洋建設股份有限公司；FinancialFilings鏡像
+    quote_check: unreachable
+    title: 太平洋建設股份有限公司114年度年報
+    url: https://financialfilings.com/filings/pcc-2506/annual-report/2026/46711153/
+  tw.2506#e9:
+    locator: 第40頁，114年3月11日董事會決議
+    published_date: '2026-04-28'
+    publisher: 太平洋建設股份有限公司；FinancialFilings鏡像
+    quote_check: unreachable
+    title: 太平洋建設股份有限公司114年度年報
+    url: https://financialfilings.com/filings/pcc-2506/annual-report/2026/46711153/

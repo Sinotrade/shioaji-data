@@ -8,7 +8,63 @@ industry:
   l0_code: '04'
   l0_name: 紡織纖維
   l0_name_en: Textiles
-primary_chain_position: unknown
+  l1: materials
+  l1_name: 原物料
+  l1_name_en: Materials
+  l2: mat.other
+  l2_name: 其他原物料
+  l2_name_en: Other Materials
+  l3: matl.textile_fiber
+  l3_name: 紡織纖維與機能布料
+  l3_name_en: Textiles, Fibers & Functional Fabrics
+chain: chain.textile
+chain_stage:
+  agreement: both
+  also: []
+  reason: 機能布料塗佈貼合占營收51.27%，為最大業務；樹脂與TPU未明列纖維或紗線業務。
+  stage: fabric
+  stage_name: 織布與染整
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 以透濕防水布塗佈貼合、PU樹脂、硬化劑及TPU產品取得營收。
+summary_long: 雙邦以機能布料塗佈貼合及高分子材料為主要業務，自行生產樹脂供貼合加工使用。2025年塗佈貼合占營收51.27%，硬化劑占20.80%，TPU占12.60%，樹脂占11.03%，光啟始劑占4.30%。主要產品包含透濕防水布、PU樹脂、硬化劑、TPU膜與粒，以及光啟始劑；其中光啟始劑產品明列可用於PCB乾膜與光阻。合併報表另納入從事塗佈製造的才豐科技興業股份有限公司，2026年6月底直接持股44.50%。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_coating
+  name: 塗佈貼合
+  period: '2025'
+  revenue_share_pct: 51.27
+- evidence_ids:
+  - e2
+  id: seg_resin
+  name: 樹脂（含加工）
+  period: '2025'
+  revenue_share_pct: 11.03
+- evidence_ids:
+  - e3
+  id: seg_hardener
+  name: 硬化劑（含加工）
+  period: '2025'
+  revenue_share_pct: 20.8
+- evidence_ids:
+  - e4
+  id: seg_photoinitiator
+  name: 光啟始劑
+  period: '2025'
+  revenue_share_pct: 4.3
+- evidence_ids:
+  - e5
+  id: seg_tpu
+  name: TPU
+  period: '2025'
+  revenue_share_pct: 12.6
+main_theme: theme.photoresist
+themes:
+- also: []
+  stage: raw
+  theme: theme.photoresist
+  tier: upstream
 relations:
   partners:
   - as_of: '2024-10-22'
@@ -25,11 +81,117 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股44.50%的塗佈製造子公司
+    details:
+    - 直接持股44.50%的塗佈製造子公司
+    edge: e0a16b2115b61
+    evidence_level: primary
+    id: org.才豐科技興業股份有限公司
+    name: 才豐科技興業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.shuang-bang.com
 tax_id: '23531297'
 incorporated: '1989-11-17'
 listed: '2011-05-03'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6506#e1:
+    locator: 第73頁，主要產品及其營業比重；依序為113、114年度
+    published_date: '2026-04-07'
+    publisher: 雙邦實業股份有限公司
+    quote_check: found
+    title: 雙邦實業股份有限公司114年度年報
+    url: https://www.shuang-bang.com/web/content/3787?unique=0a96ac279a5eb34f3ecf6317e0c0be7c1f8c7682
+  tw.6506#e10:
+    locator: 產品應用表，SB-PI 702（BCIM）
+    published_date: null
+    publisher: 雙邦實業股份有限公司
+    quote_check: found
+    title: Photoinitiators
+    url: https://www.shuang-bang.com/shop/synthetic-resins-13?category=5
+  tw.6506#e11:
+    locator: TPU系列產品介紹
+    published_date: null
+    publisher: 雙邦實業股份有限公司
+    quote_check: found
+    title: 吹膜
+    url: https://www.shuang-bang.com/zh_TW/shop/blown-film-3
+  tw.6506#e12:
+    locator: 附註四（三）2，PDF第13頁；投資公司、子公司與持股表
+    published_date: null
+    publisher: 雙邦實業股份有限公司
+    quote_check: found
+    title: 雙邦實業股份有限公司及子公司115年第2季合併財務報告
+    url: https://www.shuang-bang.com/web/content/4529?unique=542dfb4dbf0e74353f109f9aca53039c186593fe
+  tw.6506#e13:
+    locator: 附表三，PDF第49頁，才豐投資明細之備註
+    published_date: null
+    publisher: 雙邦實業股份有限公司
+    quote_check: found
+    title: 雙邦實業股份有限公司及子公司115年第2季合併財務報告
+    url: https://www.shuang-bang.com/web/content/4529?unique=542dfb4dbf0e74353f109f9aca53039c186593fe
+  tw.6506#e2:
+    locator: 第73頁，主要產品及其營業比重；依序為113、114年度
+    published_date: '2026-04-07'
+    publisher: 雙邦實業股份有限公司
+    quote_check: found
+    title: 雙邦實業股份有限公司114年度年報
+    url: https://www.shuang-bang.com/web/content/3787?unique=0a96ac279a5eb34f3ecf6317e0c0be7c1f8c7682
+  tw.6506#e3:
+    locator: 第73頁，主要產品及其營業比重；依序為113、114年度
+    published_date: '2026-04-07'
+    publisher: 雙邦實業股份有限公司
+    quote_check: found
+    title: 雙邦實業股份有限公司114年度年報
+    url: https://www.shuang-bang.com/web/content/3787?unique=0a96ac279a5eb34f3ecf6317e0c0be7c1f8c7682
+  tw.6506#e4:
+    locator: 第73頁，主要產品及其營業比重；依序為113、114年度
+    published_date: '2026-04-07'
+    publisher: 雙邦實業股份有限公司
+    quote_check: found
+    title: 雙邦實業股份有限公司114年度年報
+    url: https://www.shuang-bang.com/web/content/3787?unique=0a96ac279a5eb34f3ecf6317e0c0be7c1f8c7682
+  tw.6506#e5:
+    locator: 第73頁，主要產品及其營業比重；依序為113、114年度
+    published_date: '2026-04-07'
+    publisher: 雙邦實業股份有限公司
+    quote_check: found
+    title: 雙邦實業股份有限公司114年度年報
+    url: https://www.shuang-bang.com/web/content/3787?unique=0a96ac279a5eb34f3ecf6317e0c0be7c1f8c7682
+  tw.6506#e6:
+    locator: 公司簡介，透濕防水布說明
+    published_date: null
+    publisher: 雙邦實業股份有限公司
+    quote_check: found
+    title: 雙邦簡介
+    url: https://www.shuang-bang.com/zh_TW/profile2
+  tw.6506#e7:
+    locator: 公司簡介，自製樹脂與加工貼合說明
+    published_date: null
+    publisher: 雙邦實業股份有限公司
+    quote_check: found
+    title: 雙邦簡介
+    url: https://www.shuang-bang.com/zh_TW/profile2
+  tw.6506#e8:
+    locator: 產品規格表，AB-235S用途
+    published_date: null
+    publisher: 雙邦實業股份有限公司
+    quote_check: found
+    title: Synthetic Resin
+    url: https://www.shuang-bang.com/shop/blown-film-6
+  tw.6506#e9:
+    locator: MDA產品小節
+    published_date: null
+    publisher: 雙邦實業股份有限公司
+    quote_check: found
+    title: 硬化劑
+    url: https://www.shuang-bang.com/zh_TW/shop/hardener-8?category=5

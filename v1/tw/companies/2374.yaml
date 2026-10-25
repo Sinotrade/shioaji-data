@@ -27,16 +27,16 @@ segments:
   name: 光電產品
   period: '2025'
   revenue_share_pct: 100
-main_theme: theme.robotics
+main_theme: theme.drone
 themes:
-- also: []
-  stage: system
-  theme: theme.robotics
-  tier: downstream
 - also: []
   stage: components
   theme: theme.drone
   tier: upstream
+- also: []
+  stage: system
+  theme: theme.robotics
+  tier: downstream
 relations:
   subsidiaries:
   - as_of: '2026-06-30'

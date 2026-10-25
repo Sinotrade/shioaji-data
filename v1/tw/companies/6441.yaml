@@ -8,7 +8,43 @@ industry:
   l0_code: '25'
   l0_name: 電腦及週邊設備業
   l0_name_en: Computer and Peripheral Equipment
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.hardware
+  l2_name: 電腦與硬體
+  l2_name_en: Computers & Hardware
+  l3: hw.industrial_pc
+  l3_name: 工業電腦與嵌入式系統
+  l3_name_en: Industrial PCs & Embedded Systems
+primary_chain_position: not_applicable
+summary_short: 以博弈應用工業電腦為主要營收來源，另提供儲能與充電設備。
+summary_long: 廣錠以博弈應用工業電腦的設計、製造與銷售為核心，提供遊戲機台、投注終端與遊戲主機，並承接 OEM、ODM 客製化開發。2025 年工業電腦占營收 98.66%，能源產品占 0.76%，其他占 0.58%。能源產品涵蓋家用與貨櫃型儲能系統、電池櫃及電動汽車充電設備，另有一體式觸控電腦。2025 年底持有 IBG Inc. 全數股權及廣錠能源 80% 股權，兩者為旗下子公司。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_ipc
+  name: 工業電腦
+  period: '2025'
+  revenue_share_pct: 98.66
+- evidence_ids:
+  - e3
+  id: seg_energy
+  name: 能源
+  period: '2025'
+  revenue_share_pct: 0.76
+- evidence_ids:
+  - e4
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 0.58
+main_theme: theme.ev
+themes:
+- also: []
+  stage: vehicle
+  theme: theme.ev
+  tier: downstream
 relations:
   parents:
   - as_of: '2025-09-30'
@@ -25,11 +61,103 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股80%的子公司
+    details:
+    - 持股80%的子公司
+    edge: e293e9e925d13
+    evidence_level: primary
+    id: org.ibase-energy
+    name: 廣錠能源股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司
+    details:
+    - 全資子公司
+    edge: ee115e35d4ff5
+    evidence_level: primary
+    id: org.ibg-inc
+    name: IBG Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.ibasesolution.com.tw
 tax_id: '53562649'
 incorporated: '2011-12-13'
 listed: '2017-09-27'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6441#e10:
+    locator: 印刷頁85，關係企業董事、監察人及總經理資料，廣錠能源列；基準日114年12月31日
+    published_date: '2026-04-30'
+    publisher: 廣錠科技股份有限公司
+    quote_check: found
+    title: 114年年報
+    url: https://www.ibasesolution.com.tw/wp-content/uploads/2026/09/114%E5%B9%B4%E5%B9%B4%E5%A0%B1.pdf
+  tw.6441#e2:
+    locator: 印刷頁58，主要產（商）品之營業比重，114年度工業電腦欄
+    published_date: '2026-04-30'
+    publisher: 廣錠科技股份有限公司
+    quote_check: found
+    title: 114年年報
+    url: https://www.ibasesolution.com.tw/wp-content/uploads/2026/09/114%E5%B9%B4%E5%B9%B4%E5%A0%B1.pdf
+  tw.6441#e3:
+    locator: 印刷頁58，主要產（商）品之營業比重，114年度能源欄
+    published_date: '2026-04-30'
+    publisher: 廣錠科技股份有限公司
+    quote_check: found
+    title: 114年年報
+    url: https://www.ibasesolution.com.tw/wp-content/uploads/2026/09/114%E5%B9%B4%E5%B9%B4%E5%A0%B1.pdf
+  tw.6441#e4:
+    locator: 印刷頁58，主要產（商）品之營業比重，114年度其他欄
+    published_date: '2026-04-30'
+    publisher: 廣錠科技股份有限公司
+    quote_check: found
+    title: 114年年報
+    url: https://www.ibasesolution.com.tw/wp-content/uploads/2026/09/114%E5%B9%B4%E5%B9%B4%E5%A0%B1.pdf
+  tw.6441#e5:
+    locator: 運彩投注機／自助機、博弈遊戲機台、彩券終端機、背板電腦／主機盒及全方位客製化服務
+    published_date: null
+    publisher: 廣錠科技股份有限公司
+    quote_check: found
+    title: 博弈解決方案
+    url: https://www.ibasesolution.com.tw/solutions-gaming/
+  tw.6441#e6:
+    locator: 儲能系統：家用儲能一體機、貨櫃儲能系統及電池櫃
+    published_date: null
+    publisher: 廣錠科技股份有限公司
+    quote_check: found
+    title: 能源產品
+    url: https://www.ibasesolution.com.tw/products-energy/
+  tw.6441#e7:
+    locator: IBS-AC002產品介紹
+    published_date: null
+    publisher: 廣錠科技股份有限公司
+    quote_check: found
+    title: IBS-AC002
+    url: https://www.ibasesolution.com.tw/ibs-ac002/
+  tw.6441#e8:
+    locator: 一體式觸控電腦產品介紹
+    published_date: null
+    publisher: 廣錠科技股份有限公司
+    quote_check: found
+    title: 一體式平板電腦
+    url: https://www.ibasesolution.com.tw/all-in-one-panel-pc/
+  tw.6441#e9:
+    locator: 印刷頁85，關係企業董事、監察人及總經理資料，IBG Inc.列；基準日114年12月31日
+    published_date: '2026-04-30'
+    publisher: 廣錠科技股份有限公司
+    quote_check: found
+    title: 114年年報
+    url: https://www.ibasesolution.com.tw/wp-content/uploads/2026/09/114%E5%B9%B4%E5%B9%B4%E5%A0%B1.pdf

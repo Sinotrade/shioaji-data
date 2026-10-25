@@ -8,12 +8,66 @@ industry:
   l0_code: '28'
   l0_name: 電子零組件業
   l0_name_en: Electronic Parts and Components
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.pcb
+  l3_name: 印刷電路板
+  l3_name_en: Printed Circuit Boards
+chain: chain.pcb
+chain_stage:
+  agreement: both
+  also: []
+  reason: 主要製造硬質印刷電路板，產品涵蓋雙面板、多層板及HDI板，屬電路板製造階段。
+  stage: board
+  stage_name: 電路板與載板製造
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 製造雙面、多層及HDI印刷電路板，提供少量多樣與快速交期服務。
+summary_long: 慶生電子以印刷電路板製造為主要業務，官方永續報告將主要產品列為硬板。現行官網列出的產品包括雙面板、多層板及HDI高密度互聯板，業務涵蓋上述電路板的製作。公司以少量多樣PCB製造及急單、快單交付為服務重點，並設置全製程生產設備，減少外包站運送及滯留時間。依其產品與製造活動，產業分類為印刷電路板，位於PCB產業鏈中游的電路板製造階段。公司並持續改善設備、製程、技術與方法，以配合交期及良率管理。
 website: WWW.KINTECH.COM.TW
 tax_id: '45190379'
 incorporated: '1984-10-05'
 listed: '2003-02-14'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-25'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6210#e1:
+    locator: 第4頁，公司概況／公司簡介
+    published_date: '2025-08-05'
+    publisher: 慶生電子股份有限公司
+    quote_check: found
+    title: 慶生電子股份有限公司2024年永續報告書
+    url: https://www.kintech.com.tw/doc/2024%E5%B9%B4%E6%B0%B8%E7%BA%8C%E5%A0%B1%E5%91%8A%E6%9B%B8_(1141030).pdf
+  tw.6210#e2:
+    locator: 首頁，公司介紹及產品項目；動態內容經瀏覽器讀取
+    published_date: null
+    publisher: 慶生電子股份有限公司
+    quote_check: not_found
+    title: 慶生電子股份有限公司官網
+    url: https://www.kintech.com.tw/
+  tw.6210#e3:
+    locator: 首頁，急單快單，準時交貨
+    published_date: null
+    publisher: 慶生電子股份有限公司
+    quote_check: not_found
+    title: 慶生電子股份有限公司官網
+    url: https://www.kintech.com.tw/
+  tw.6210#e4:
+    locator: 首頁，急單快單，準時交貨
+    published_date: null
+    publisher: 慶生電子股份有限公司
+    quote_check: not_found
+    title: 慶生電子股份有限公司官網
+    url: https://www.kintech.com.tw/
+  tw.6210#e5:
+    locator: 首頁，服務說明標題
+    published_date: null
+    publisher: 慶生電子股份有限公司
+    quote_check: not_found
+    title: 慶生電子股份有限公司官網
+    url: https://www.kintech.com.tw/

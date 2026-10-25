@@ -8,13 +8,213 @@ industry:
   l0_code: '91'
   l0_name: 存託憑證
   l0_name_en: Depositary Receipts
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.distribution
+  l2_name: 電子通路
+  l2_name_en: Electronics Distribution
+  l3: dist.components
+  l3_name: 電子零組件通路
+  l3_name_en: Electronic Components Distribution
+primary_chain_position: not_applicable
+summary_short: 以海事及離岸電氣用品通路為主，另提供工程、資安與熱感測產品。
+summary_long: 明輝環球以海事與離岸電氣用品通路為核心，透過子公司供應船用電纜、照明設備與配件。2026年上半年電氣與技術供應占合併營收78.58%，整合工程占9.72%，安全事業占11.69%。工程子公司提供海事工程、船舶電動化與混合動力服務；資安子公司提供IT與OT網路防護顧問及產品代理；熱感測子公司提供群體體溫篩檢與船用夜視系統。集團另經營LED照明改裝，並透過關聯企業參與LED燈具設計製造。
+segments:
+- evidence_ids:
+  - e1
+  id: electrical_supply
+  name: 電氣與技術供應
+  period: 2026年上半年
+  revenue_share_pct: 78.58
+- evidence_ids:
+  - e1
+  id: security
+  name: 安全事業（資安及紅外線熱感測）
+  period: 2026年上半年
+  revenue_share_pct: 11.69
+- evidence_ids:
+  - e1
+  id: engineering
+  name: 整合工程
+  period: 2026年上半年
+  revenue_share_pct: 9.72
+- evidence_ids:
+  - e1
+  - e8
+  id: green_led
+  name: 綠色LED照明
+  period: 2026年上半年
+  revenue_share_pct: 0
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 經Athena International Holdings持有的資安子公司
+    details:
+    - 經Athena International Holdings持有的資安子公司
+    edge: ebc2ad596d41b
+    evidence_level: primary
+    id: org.athena-dynamics
+    name: Athena Dynamics Pte. Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 海事電氣用品營運子公司
+    details:
+    - 海事電氣用品營運子公司
+    edge: e657efea96bec
+    evidence_level: primary
+    id: org.beng-hui-marine-electrical
+    name: Beng Hui Marine Electrical Pte. Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 海事及離岸工程子公司
+    details:
+    - 海事及離岸工程子公司
+    edge: ea5ba75018743
+    evidence_level: primary
+    id: org.bos-offshore-marine
+    name: BOS Offshore & Marine Pte. Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 紅外線及熱感測營運子公司
+    details:
+    - 紅外線及熱感測營運子公司
+    edge: e149d39311cdf
+    evidence_level: primary
+    id: org.infravision-technology
+    name: Infravision Technology Pte. Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持有的船舶工程事業子公司
+    details:
+    - 間接持有的船舶工程事業子公司
+    edge: ee6f9ea2f8276
+    evidence_level: primary
+    id: org.sea-forrest-technologies-s
+    name: Sea Forrest Technologies (S) Pte. Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.bhglobal.com.sg/
 tax_id: '26264842'
 incorporated: '2004-04-23'
 listed: '2010-10-20'
 foreign_registration: SG 新加坡
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.911608#e1:
+    locator: 第14頁，附註4.1；欄序為電氣與技術供應、綠色LED、安全、整合工程、公司、沖銷、合計
+    published_date: '2026-08-13'
+    publisher: BH Global Corporation Limited
+    quote_check: unreachable
+    title: 2026年上半年簡明中期財務報表
+    url: https://bhglobal.listedcompany.com/newsroom/20260813_190012_BQN_5URHJY3VEZ0HMO65.1.pdf
+  tw.911608#e10:
+    locator: 印刷第82頁，附註10，子公司明細BHM列
+    published_date: '2026-04-10'
+    publisher: BH Global Corporation Ltd
+    quote_check: found
+    title: 2025年年報
+    url: https://links.sgx.com/FileOpen/BH%20Global_AR2025.ashx?App=Announcement&FileID=882985
+  tw.911608#e11:
+    locator: 印刷第82頁，附註10，Subsidiary held by AIH
+    published_date: '2026-04-10'
+    publisher: BH Global Corporation Ltd
+    quote_check: found
+    title: 2025年年報
+    url: https://links.sgx.com/FileOpen/BH%20Global_AR2025.ashx?App=Announcement&FileID=882985
+  tw.911608#e12:
+    locator: 印刷第82頁，附註10，子公司明細BOS列及其主要業務
+    published_date: '2026-04-10'
+    publisher: BH Global Corporation Ltd
+    quote_check: found
+    title: 2025年年報
+    url: https://links.sgx.com/FileOpen/BH%20Global_AR2025.ashx?App=Announcement&FileID=882985
+  tw.911608#e13:
+    locator: 印刷第82頁，附註10，子公司明細ITS列
+    published_date: '2026-04-10'
+    publisher: BH Global Corporation Ltd
+    quote_check: found
+    title: 2025年年報
+    url: https://links.sgx.com/FileOpen/BH%20Global_AR2025.ashx?App=Announcement&FileID=882985
+  tw.911608#e14:
+    locator: 印刷第81至82頁，附註10 Note ii及Sea Forrest子公司明細
+    published_date: '2026-04-10'
+    publisher: BH Global Corporation Ltd
+    quote_check: found
+    title: 2025年年報
+    url: https://links.sgx.com/FileOpen/BH%20Global_AR2025.ashx?App=Announcement&FileID=882985
+  tw.911608#e2:
+    locator: Beng Hui Marine Electrical Pte Ltd事業介紹
+    published_date: null
+    publisher: BH Global Corporation Ltd
+    quote_check: found
+    title: Electrical and Technical Supply
+    url: https://www.bhglobal.com.sg/electrical-and-technical-supply/
+  tw.911608#e3:
+    locator: 印刷第107頁，附註33，電氣與技術供應部門定義
+    published_date: '2026-04-10'
+    publisher: BH Global Corporation Ltd
+    quote_check: found
+    title: 2025年年報
+    url: https://links.sgx.com/FileOpen/BH%20Global_AR2025.ashx?App=Announcement&FileID=882985
+  tw.911608#e4:
+    locator: Sea Forrest Technologies (S) Pte Ltd事業介紹
+    published_date: null
+    publisher: BH Global Corporation Ltd
+    quote_check: found
+    title: Integrated Engineering
+    url: https://www.bhglobal.com.sg/integrated-engineering/
+  tw.911608#e5:
+    locator: Athena Dynamics Pte Ltd事業介紹
+    published_date: null
+    publisher: BH Global Corporation Ltd
+    quote_check: found
+    title: Cyber Security
+    url: https://www.bhglobal.com.sg/cyber-security/
+  tw.911608#e6:
+    locator: Infravision Technology Pte Ltd事業介紹
+    published_date: null
+    publisher: BH Global Corporation Ltd
+    quote_check: found
+    title: Infrared and Thermal Sensing Technology
+    url: https://www.bhglobal.com.sg/infrared-and-thermal-sensing-technology/
+  tw.911608#e7:
+    locator: SOPEX Innovations Pte Ltd事業介紹
+    published_date: null
+    publisher: BH Global Corporation Ltd
+    quote_check: found
+    title: Green LED Lighting
+    url: https://www.bhglobal.com.sg/green-led-lighting/
+  tw.911608#e8:
+    locator: Share of results of associated companies
+    published_date: null
+    publisher: BH Global Corporation Limited
+    quote_check: unreachable
+    title: 2026年上半年財務表現說明
+    url: https://bhglobal.listedcompany.com/financials.html

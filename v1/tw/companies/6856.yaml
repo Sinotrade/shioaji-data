@@ -8,12 +8,199 @@ industry:
   l0_code: '32'
   l0_name: 文化創意業
   l0_name_en: Cultural and Creative
-primary_chain_position: unknown
+  l1: consumer
+  l1_name: 消費
+  l1_name_en: Consumer
+  l2: cons.discretionary
+  l2_name: 非必需消費
+  l2_name_en: Consumer Discretionary
+  l3: retail.department
+  l3_name: 百貨與零售
+  l3_name_en: Department Stores & Retail
+primary_chain_position: not_applicable
+summary_short: 以商品零售為主要收入，另經營媒體廣告、節目製作與衛星頻道。
+summary_long: 鑫傳以商品零售、媒體廣告及節目製作為主要收入來源，2025年產品銷售、廣告業務與節目製作分別占營收60.82%、26.11%及13.07%。購物業務包括MayLife電視、網路與直播銷售，子公司美雅經銷THE BODY SHOP清潔保養商品，間接子公司星品經營寵物用品。媒體業務涵蓋衛星電視頻道、地方新聞與人文紀實節目，以及電視與網路廣告。台灣數位光訊科技為母公司；鑫祺、鑫隆、人誠及美雅為直接子公司，星品由鑫祺持有。
+segments:
+- evidence_ids:
+  - e01
+  id: goods
+  name: 產品銷售
+  period: '2025'
+  revenue_share_pct: 60.82
+- evidence_ids:
+  - e01
+  id: advertising
+  name: 廣告業務
+  period: '2025'
+  revenue_share_pct: 26.11
+- evidence_ids:
+  - e01
+  id: production
+  name: 節目製作
+  period: '2025'
+  revenue_share_pct: 13.07
+relations:
+  parents:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 母公司
+    details:
+    - 母公司
+    edge: eebf1f70f7938
+    evidence_level: primary
+    id: tw.6464
+    name: 台數科
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股58.48%之子公司
+    details:
+    - 直接持股58.48%之子公司
+    edge: ef23ac2c368ea
+    evidence_level: primary
+    id: org.meiya-international-enterprise
+    name: 美雅國際企業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股68.47%之子公司
+    details:
+    - 直接持股68.47%之子公司
+    edge: e3957c7b6c342
+    evidence_level: primary
+    id: org.rencheng-cultural
+    name: 人誠文創股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過鑫祺持股86.39%之間接子公司
+    details:
+    - 透過鑫祺持股86.39%之間接子公司
+    edge: e3096abf47a98
+    evidence_level: primary
+    id: org.xingpin-international
+    name: 星品國際實業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%之子公司
+    details:
+    - 直接持股100%之子公司
+    edge: ee8379fd2c176
+    evidence_level: primary
+    id: org.xinlong-multimedia
+    name: 鑫隆多媒體股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%之子公司
+    details:
+    - 直接持股100%之子公司
+    edge: eaf96fb95cd1e
+    evidence_level: primary
+    id: org.xinqi-multimedia
+    name: 鑫祺多媒體股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://st-media.com.tw
 tax_id: '16089901'
 incorporated: '1997-08-20'
 listed: '2023-10-27'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6856#e01:
+    locator: 第91頁，肆、營運概況／營業比重；欄位依序為2024年金額、比重及2025年金額、比重
+    published_date: '2026-04-30'
+    publisher: 鑫傳國際多媒體科技股份有限公司
+    quote_check: found
+    title: 鑫傳國際多媒體科技股份有限公司2025年度年報
+    url: https://st-media.com.tw/invertor/viewfile/c52409a22396b1f31c21ec6ab9d0bd09.pdf
+  tw.6856#e02:
+    locator: 第92頁，3.公司目前之商品（服務）項目
+    published_date: '2026-04-30'
+    publisher: 鑫傳國際多媒體科技股份有限公司
+    quote_check: found
+    title: 鑫傳2025年度年報：商品與服務項目
+    url: https://st-media.com.tw/invertor/viewfile/c52409a22396b1f31c21ec6ab9d0bd09.pdf
+  tw.6856#e03:
+    locator: 第4頁，（三）購物事業／1.美麗人生購物
+    published_date: '2026-04-30'
+    publisher: 鑫傳國際多媒體科技股份有限公司
+    quote_check: found
+    title: 鑫傳2025年度年報：美麗人生購物
+    url: https://st-media.com.tw/invertor/viewfile/c52409a22396b1f31c21ec6ab9d0bd09.pdf
+  tw.6856#e04:
+    locator: 第4頁，（三）購物事業／2.美雅國際
+    published_date: '2026-04-30'
+    publisher: 鑫傳國際多媒體科技股份有限公司
+    quote_check: found
+    title: 鑫傳2025年度年報：美雅國際
+    url: https://st-media.com.tw/invertor/viewfile/c52409a22396b1f31c21ec6ab9d0bd09.pdf
+  tw.6856#e05:
+    locator: 第4頁，（三）購物事業／3.星品國際
+    published_date: '2026-04-30'
+    publisher: 鑫傳國際多媒體科技股份有限公司
+    quote_check: found
+    title: 鑫傳2025年度年報：星品國際
+    url: https://st-media.com.tw/invertor/viewfile/c52409a22396b1f31c21ec6ab9d0bd09.pdf
+  tw.6856#e06:
+    locator: 第10頁，附註四（二）合併基礎；持股欄依序為2026-06-30、2025-12-31及2025-06-30
+    published_date: '2026-08-10'
+    publisher: 鑫傳國際多媒體科技股份有限公司
+    quote_check: found
+    title: 鑫傳2026年第二季合併財務報告：鑫祺及鑫隆
+    url: https://st-media.com.tw/invertor/viewfile/3c3aaef3496510aef4ed0829a76d59a6.pdf
+  tw.6856#e07:
+    locator: 第10頁，附註四（二）合併基礎；持股欄依序為2026-06-30、2025-12-31及2025-06-30
+    published_date: '2026-08-10'
+    publisher: 鑫傳國際多媒體科技股份有限公司
+    quote_check: found
+    title: 鑫傳2026年第二季合併財務報告：人誠及美雅
+    url: https://st-media.com.tw/invertor/viewfile/3c3aaef3496510aef4ed0829a76d59a6.pdf
+  tw.6856#e08:
+    locator: 第10頁，附註四（二）合併基礎，註2
+    published_date: '2026-08-10'
+    publisher: 鑫傳國際多媒體科技股份有限公司
+    quote_check: found
+    title: 鑫傳2026年第二季合併財務報告：星品之控制與合併範圍
+    url: https://st-media.com.tw/invertor/viewfile/3c3aaef3496510aef4ed0829a76d59a6.pdf
+  tw.6856#e09:
+    locator: 第33頁，附註七（一）關係人名稱及關係
+    published_date: '2026-08-10'
+    publisher: 鑫傳國際多媒體科技股份有限公司
+    quote_check: found
+    title: 鑫傳2026年第二季合併財務報告：母公司
+    url: https://st-media.com.tw/invertor/viewfile/3c3aaef3496510aef4ed0829a76d59a6.pdf
+  tw.6856#e10:
+    locator: 第91頁，肆、營運概況／所營業務之主要內容
+    published_date: '2026-04-30'
+    publisher: 鑫傳國際多媒體科技股份有限公司
+    quote_check: found
+    title: 鑫傳2025年度年報：節目與廣告製播
+    url: https://st-media.com.tw/invertor/viewfile/c52409a22396b1f31c21ec6ab9d0bd09.pdf

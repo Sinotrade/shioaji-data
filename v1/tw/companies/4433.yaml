@@ -8,12 +8,157 @@ industry:
   l0_code: '04'
   l0_name: 紡織纖維
   l0_name_en: Textiles
-primary_chain_position: unknown
+  l1: materials
+  l1_name: 原物料
+  l1_name_en: Materials
+  l2: mat.other
+  l2_name: 其他原物料
+  l2_name_en: Other Materials
+  l3: matl.textile_fiber
+  l3_name: 紡織纖維與機能布料
+  l3_name_en: Textiles, Fibers & Functional Fabrics
+chain: chain.textile
+chain_stage:
+  agreement: both
+  also:
+  - stage: fiber
+    stage_name: 纖維與紗
+    tier: upstream
+  - stage: garment
+    stage_name: 成衣、製鞋與品牌
+    tier: downstream
+  reason: 布料占營收54.74%為最大業務，集團亦涵蓋咖啡紗與成衣製造。
+  stage: fabric
+  stage_name: 織布與染整
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 以環保機能布料、咖啡紗及成衣製造銷售為主要業務。
+summary_long: 興采以機能性布料與成衣為主要業務，2025年布料占合併營收54.74%，成衣占45.26%。產品包括利用寶特瓶與咖啡渣製成的S.Café®咖啡紗、結合平織與刷毛工藝的STORMFLEECE®面料，以及不含彈性纖維的S.LEISURE™彈性布料。AIRMEM™薄膜以回收咖啡油取代部分石化原料。旗下聚紡從事紡織品加工，神采時尚從事成衣製造，另透過控股公司持有越南MAGICTEX，集團業務涵蓋紗線、布料加工與成衣。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_fabric
+  name: 布料
+  period: '2025'
+  revenue_share_pct: 54.74
+- evidence_ids:
+  - e2
+  id: seg_garment
+  name: 成衣
+  period: '2025'
+  revenue_share_pct: 45.26
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 越南神采時尚，間接持有的紡織製造子公司
+    details:
+    - 越南神采時尚，間接持有的紡織製造子公司
+    edge: e7d71cdd3d386
+    evidence_level: primary
+    id: org.magictex-co-ltd
+    name: MAGICTEX CO., LTD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 成衣製造子公司
+    details:
+    - 成衣製造子公司
+    edge: ea807dd657944
+    evidence_level: primary
+    id: org.神采時尚事業股份有限公司
+    name: 神采時尚事業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 紡織品加工子公司
+    details:
+    - 紡織品加工子公司
+    edge: e2ebbc980ceb9
+    evidence_level: primary
+    id: org.聚紡股份有限公司
+    name: 聚紡股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.singtex.com
 tax_id: '23282425'
 incorporated: '1989-03-14'
 listed: '2014-11-03'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4433#e10:
+    locator: 財報頁15，附註四（三）2，MAGICTEX持股列
+    published_date: null
+    publisher: 興采實業股份有限公司
+    quote_check: found
+    title: 興采實業股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.singtex.com/wp-content/uploads/singtex-docs/202602_4433_AI1_20260821_144229.pdf
+  tw.4433#e2:
+    locator: 印刷頁76，營業比重；114年度及113年度
+    published_date: null
+    publisher: 興采實業股份有限公司
+    quote_check: found
+    title: 興采實業股份有限公司114年度年報
+    url: https://www.singtex.com/wp-content/uploads/singtex-docs/2025_4433_20260526F04_20260722_115723.pdf
+  tw.4433#e3:
+    locator: 印刷頁76，公司目前之商品（服務）項目第10項
+    published_date: null
+    publisher: 興采實業股份有限公司
+    quote_check: found
+    title: 興采實業股份有限公司114年度年報
+    url: https://www.singtex.com/wp-content/uploads/singtex-docs/2025_4433_20260526F04_20260722_115723.pdf
+  tw.4433#e4:
+    locator: 企業故事：溫暖人心的咖啡紗
+    published_date: null
+    publisher: 興采實業股份有限公司
+    quote_check: found
+    title: 興采簡介
+    url: https://www.singtex.com/zh/關於興采/興采簡介_demo/
+  tw.4433#e5:
+    locator: ONE-LAYER ENGINEERING
+    published_date: null
+    publisher: 興采實業股份有限公司
+    quote_check: found
+    title: STORMFLEECE®
+    url: https://www.singtex.com/zh/product-overview-2/fabrics/tw-stormfleece/
+  tw.4433#e6:
+    locator: 產品介紹首段
+    published_date: null
+    publisher: 興采實業股份有限公司
+    quote_check: found
+    title: S.LEISURE™
+    url: https://www.singtex.com/zh/product-overview-2/fabrics/tw-s-leisure/
+  tw.4433#e7:
+    locator: 26% 生質薄膜
+    published_date: null
+    publisher: 興采實業股份有限公司
+    quote_check: found
+    title: AIRMEM™
+    url: https://www.singtex.com/zh/product-overview-2/fabrics/tw-airmem/
+  tw.4433#e8:
+    locator: 財報頁15，附註四（三）2，列入合併財務報告之子公司
+    published_date: null
+    publisher: 興采實業股份有限公司
+    quote_check: found
+    title: 興采實業股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.singtex.com/wp-content/uploads/singtex-docs/202602_4433_AI1_20260821_144229.pdf
+  tw.4433#e9:
+    locator: 財報頁15，附註四（三）2，YIELD CROWN及MAGICTEX持股列
+    published_date: null
+    publisher: 興采實業股份有限公司
+    quote_check: found
+    title: 興采實業股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.singtex.com/wp-content/uploads/singtex-docs/202602_4433_AI1_20260821_144229.pdf

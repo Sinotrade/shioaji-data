@@ -8,13 +8,159 @@ industry:
   l0_code: '20'
   l0_name: 其他業
   l0_name_en: Others
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.construction
+  l2_name: 營建與工程
+  l2_name_en: Engineering & Construction
+  l3: cons.materials
+  l3_name: 建材
+  l3_name_en: Building Materials
+primary_chain_position: not_applicable
+summary_short: 製造與銷售石塑地板，具OEM/ODM代工經驗。
+summary_long: 美吉吉-KY以石塑地板製造與銷售為主，具OEM/ODM代工經驗，2025年度石塑地板占營收100%。產品為家用或商用建築及裝潢使用的片狀鋪地材料，採PVC粉與石粉製作基材，再經貼合、PU淋膜及裁切。研發成功紀錄包括SPC地磚與輕量化SPC鎖扣地磚。子公司美喆國際企業股份有限公司從事台灣銷售及SPC地板生產；集團另透過普隆國際(香港)有限公司間接持有東莞美哲塑膠製品有限公司。
+segments:
+- evidence_ids:
+  - e3
+  id: seg_floor
+  name: 石塑地板
+  period: '2025'
+  revenue_share_pct: 100
+relations:
+  subsidiaries:
+  - as_of: '2026-04-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%的投資控股子公司
+    details:
+    - 直接持有100%的投資控股子公司
+    edge: e2effebed1be0
+    evidence_level: primary
+    id: org.普隆國際-香港-有限公司
+    name: 普隆國際(香港)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過普隆香港間接持有100%；塑膠地板生產
+    details:
+    - 透過普隆香港間接持有100%；塑膠地板生產
+    edge: e9bb8f485af02
+    evidence_level: primary
+    id: org.東莞美哲塑膠製品有限公司
+    name: 東莞美哲塑膠製品有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%；原料採購及外銷接單
+    details:
+    - 直接持有100%；原料採購及外銷接單
+    edge: eff1d2b5024fa
+    evidence_level: primary
+    id: org.盈溢國際企業有限公司
+    name: 盈溢國際企業有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%；台灣銷售及SPC地板生產
+    details:
+    - 直接持有100%；台灣銷售及SPC地板生產
+    edge: eef4f5c069d9d
+    evidence_level: primary
+    id: org.美喆國際企業股份有限公司
+    name: 美喆國際企業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.mjig.com
 tax_id: '50640945'
 incorporated: '2010-10-08'
 listed: '2016-11-01'
 foreign_registration: KY 開曼群島
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.8466#e10:
+    locator: 紙本第99頁／PDF第105頁，各關係企業基本資料，盈溢國際企業有限公司列
+    published_date: '2026-04-30'
+    publisher: 美喆國際股份有限公司
+    quote_check: not_found
+    title: 美喆國際股份有限公司2025年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=8466&colorchg=1&filename=2025_8466_20260623F04.pdf&kind=F&step=9
+  tw.8466#e11:
+    locator: 紙本第99頁／PDF第105頁，各關係企業基本資料，東莞美哲塑膠製品有限公司列
+    published_date: '2026-04-30'
+    publisher: 美喆國際股份有限公司
+    quote_check: not_found
+    title: 美喆國際股份有限公司2025年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=8466&colorchg=1&filename=2025_8466_20260623F04.pdf&kind=F&step=9
+  tw.8466#e2:
+    locator: 紙本第63頁／PDF第69頁，業務內容
+    published_date: '2026-04-30'
+    publisher: 美喆國際股份有限公司
+    quote_check: not_found
+    title: 美喆國際股份有限公司2025年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=8466&colorchg=1&filename=2025_8466_20260623F04.pdf&kind=F&step=9
+  tw.8466#e3:
+    locator: 紙本第63頁／PDF第69頁，主要產品之營業比重；2025年度金額3,162,915千元、比重100.00%
+    published_date: '2026-04-30'
+    publisher: 美喆國際股份有限公司
+    quote_check: not_found
+    title: 美喆國際股份有限公司2025年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=8466&colorchg=1&filename=2025_8466_20260623F04.pdf&kind=F&step=9
+  tw.8466#e4:
+    locator: 紙本第63頁／PDF第69頁，目前之商品項目
+    published_date: '2026-04-30'
+    publisher: 美喆國際股份有限公司
+    quote_check: not_found
+    title: 美喆國際股份有限公司2025年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=8466&colorchg=1&filename=2025_8466_20260623F04.pdf&kind=F&step=9
+  tw.8466#e5:
+    locator: 紙本第77頁／PDF第83頁
+    published_date: '2026-04-30'
+    publisher: 美喆國際股份有限公司
+    quote_check: not_found
+    title: 美喆國際股份有限公司2025年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=8466&colorchg=1&filename=2025_8466_20260623F04.pdf&kind=F&step=9
+  tw.8466#e6:
+    locator: 紙本第78頁／PDF第84頁，開發成功之技術或產品；2018年列SPC地磚，2019年列輕量化SPC鎖扣地磚
+    published_date: '2026-04-30'
+    publisher: 美喆國際股份有限公司
+    quote_check: not_found
+    title: 美喆國際股份有限公司2025年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=8466&colorchg=1&filename=2025_8466_20260623F04.pdf&kind=F&step=9
+  tw.8466#e7:
+    locator: 紙本第5頁／PDF第11頁，公司架構；主體直接持有美喆國際企業、普隆香港及盈溢各100%，普隆香港持有東莞美哲100%
+    published_date: '2026-04-30'
+    publisher: 美喆國際股份有限公司
+    quote_check: not_found
+    title: 美喆國際股份有限公司2025年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=8466&colorchg=1&filename=2025_8466_20260623F04.pdf&kind=F&step=9
+  tw.8466#e8:
+    locator: 紙本第99頁／PDF第105頁，各關係企業基本資料，美喆國際企業股份有限公司列
+    published_date: '2026-04-30'
+    publisher: 美喆國際股份有限公司
+    quote_check: not_found
+    title: 美喆國際股份有限公司2025年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=8466&colorchg=1&filename=2025_8466_20260623F04.pdf&kind=F&step=9
+  tw.8466#e9:
+    locator: 紙本第99頁／PDF第105頁，各關係企業基本資料；普隆國際(香港)有限公司業務為投資控股
+    published_date: '2026-04-30'
+    publisher: 美喆國際股份有限公司
+    quote_check: not_found
+    title: 美喆國際股份有限公司2025年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=8466&colorchg=1&filename=2025_8466_20260623F04.pdf&kind=F&step=9

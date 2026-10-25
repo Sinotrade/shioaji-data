@@ -8,12 +8,262 @@ industry:
   l0_code: '29'
   l0_name: 電子通路業
   l0_name_en: Electronic Products Distribution
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.semi
+  l2_name: 半導體
+  l2_name_en: Semiconductors
+  l3: semi.distribution
+  l3_name: IC 通路
+  l3_name_en: IC Distribution
+chain: chain.semiconductor
+chain_stage:
+  agreement: both
+  also: []
+  reason: 主要營收來自核心邏輯晶片與網路通訊產品代理銷售，屬半導體通路。
+  stage: distribution
+  stage_name: IC 通路與模組
+  tier: downstream
+primary_chain_position: midstream
+summary_short: 代理銷售半導體零組件，以核心邏輯晶片與網路通訊產品為主要營收來源。
+summary_long: 亞矽從事半導體零組件代理銷售，產品涵蓋MCU、網路通訊、線性類比、記憶體及感測器，並提供產品設計支援與測試服務。2025年度營收以處理器／核心邏輯晶片41.12%及網路通訊40.55%為主，其次為線性類比13.49%與記憶體3.89%，另有邏輯線路及其他產品。公司代理產品包含5G晶片，亦已導入SiC產品線並提供整合應用與技術支援。集團直接全資持有長兆投資與Idea Success，金青科技則由長兆投資全資持有。
+segments:
+- evidence_ids:
+  - e3
+  id: seg_core_logic
+  name: 處理器／核心邏輯晶片
+  period: 2025年度
+  revenue_share_pct: 41.12
+- evidence_ids:
+  - e3
+  id: seg_networking
+  name: 網路通訊類
+  period: 2025年度
+  revenue_share_pct: 40.55
+- evidence_ids:
+  - e3
+  id: seg_analog
+  name: 線性類比類
+  period: 2025年度
+  revenue_share_pct: 13.49
+- evidence_ids:
+  - e3
+  id: seg_memory
+  name: 記憶體類
+  period: 2025年度
+  revenue_share_pct: 3.89
+- evidence_ids:
+  - e3
+  id: seg_logic_circuit
+  name: 邏輯線路類
+  period: 2025年度
+  revenue_share_pct: 0.67
+- evidence_ids:
+  - e3
+  id: seg_other
+  name: 其他
+  period: 2025年度
+  revenue_share_pct: 0.28
+main_theme: theme.5g
+themes:
+- also: []
+  stage: components
+  theme: theme.5g
+  tier: upstream
+- also: []
+  stage: application
+  theme: theme.sic
+  tier: downstream
+relations:
+  subsidiaries:
+  - as_of: '2026-05-10'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過Idea Success間接全資持有
+    details:
+    - 透過Idea Success間接全資持有
+    edge: e9e33a79f2f05
+    evidence_level: primary
+    id: org.asec-hk
+    name: ASEC H.K. Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-05-10'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接全資子公司
+    details:
+    - 直接全資子公司
+    edge: ed50378a660f9
+    evidence_level: primary
+    id: org.chang-zhao-investment
+    name: 長兆投資股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-05-10'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過Idea Success間接全資持有
+    details:
+    - 透過Idea Success間接全資持有
+    edge: ed2aaa0ea0b7c
+    evidence_level: primary
+    id: org.gold-tender
+    name: Gold Tender Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-05-10'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過長兆投資間接全資持有
+    details:
+    - 透過長兆投資間接全資持有
+    edge: e499f8fd99de6
+    evidence_level: primary
+    id: org.gtc-taiwan
+    name: 金青科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-05-10'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接全資子公司
+    details:
+    - 直接全資子公司
+    edge: e5f4776392aa5
+    evidence_level: primary
+    id: org.idea-success
+    name: Idea Success Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-05-10'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過ASEC H.K.間接全資持有
+    details:
+    - 透過ASEC H.K.間接全資持有
+    edge: e0aaa4f356bd1
+    evidence_level: primary
+    id: org.jinqing-electronics-shenzhen
+    name: 金青電子(深圳)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.asec.com.tw
 tax_id: '22033899'
 incorporated: '1986-04-04'
 listed: '2001-08-10'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6113#e1:
+    locator: 代理品牌介紹及公司聯絡資訊
+    published_date: null
+    publisher: 亞矽科技股份有限公司
+    quote_check: found
+    title: 亞矽科技官網
+    url: https://www.asec.com.tw/
+  tw.6113#e10:
+    locator: 第75頁，各關係企業董事、監察人及總經理資料，Idea Success列
+    published_date: '2026-05-10'
+    publisher: 亞矽科技股份有限公司
+    quote_check: found
+    title: 亞矽科技股份有限公司114年年報
+    url: https://www.asec.com.tw/investor_document-detail/0/143/
+  tw.6113#e11:
+    locator: 第75頁，各關係企業董事、監察人及總經理資料，金青科技列
+    published_date: '2026-05-10'
+    publisher: 亞矽科技股份有限公司
+    quote_check: found
+    title: 亞矽科技股份有限公司114年年報
+    url: https://www.asec.com.tw/investor_document-detail/0/143/
+  tw.6113#e12:
+    locator: 第75頁，各關係企業董事、監察人及總經理資料，ASEC H.K.列
+    published_date: '2026-05-10'
+    publisher: 亞矽科技股份有限公司
+    quote_check: found
+    title: 亞矽科技股份有限公司114年年報
+    url: https://www.asec.com.tw/investor_document-detail/0/143/
+  tw.6113#e13:
+    locator: 第75頁，各關係企業董事、監察人及總經理資料，Gold Tender列
+    published_date: '2026-05-10'
+    publisher: 亞矽科技股份有限公司
+    quote_check: found
+    title: 亞矽科技股份有限公司114年年報
+    url: https://www.asec.com.tw/investor_document-detail/0/143/
+  tw.6113#e14:
+    locator: 第74至75頁，金青電子（深圳）基本資料及法人持股資料
+    published_date: '2026-05-10'
+    publisher: 亞矽科技股份有限公司
+    quote_check: found
+    title: 亞矽科技股份有限公司114年年報
+    url: https://www.asec.com.tw/investor_document-detail/0/143/
+  tw.6113#e2:
+    locator: 第54頁，半導體產業上、中、下游之關聯性
+    published_date: '2026-05-10'
+    publisher: 亞矽科技股份有限公司
+    quote_check: found
+    title: 亞矽科技股份有限公司114年年報
+    url: https://www.asec.com.tw/investor_document-detail/0/143/
+  tw.6113#e3:
+    locator: 第51頁，主要產品類別及其營業比重（114年度）
+    published_date: '2026-05-10'
+    publisher: 亞矽科技股份有限公司
+    quote_check: found
+    title: 亞矽科技股份有限公司114年年報
+    url: https://www.asec.com.tw/investor_document-detail/0/143/
+  tw.6113#e4:
+    locator: 產品組合完整，應用領域廣
+    published_date: null
+    publisher: 亞矽科技股份有限公司
+    quote_check: found
+    title: 競爭優勢
+    url: https://www.asec.com.tw/about/advantage/
+  tw.6113#e5:
+    locator: 全方位整合之加值型服務
+    published_date: null
+    publisher: 亞矽科技股份有限公司
+    quote_check: found
+    title: 競爭優勢
+    url: https://www.asec.com.tw/about/advantage/
+  tw.6113#e6:
+    locator: 代理品牌產品介紹
+    published_date: null
+    publisher: 亞矽科技股份有限公司
+    quote_check: found
+    title: 代理品牌：BOSCH
+    url: https://www.asec.com.tw/brand-detail/BOSCH_2/
+  tw.6113#e7:
+    locator: 第2頁，研究發展狀況之主要代理商品表
+    published_date: '2026-05-10'
+    publisher: 亞矽科技股份有限公司
+    quote_check: found
+    title: 亞矽科技股份有限公司114年年報
+    url: https://www.asec.com.tw/investor_document-detail/0/143/
+  tw.6113#e8:
+    locator: 第2頁，115年度經營方針
+    published_date: '2026-05-10'
+    publisher: 亞矽科技股份有限公司
+    quote_check: found
+    title: 亞矽科技股份有限公司114年年報
+    url: https://www.asec.com.tw/investor_document-detail/0/143/
+  tw.6113#e9:
+    locator: 第75頁，各關係企業董事、監察人及總經理資料，長兆投資列
+    published_date: '2026-05-10'
+    publisher: 亞矽科技股份有限公司
+    quote_check: found
+    title: 亞矽科技股份有限公司114年年報
+    url: https://www.asec.com.tw/investor_document-detail/0/143/

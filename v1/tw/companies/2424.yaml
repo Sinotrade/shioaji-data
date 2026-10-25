@@ -8,12 +8,103 @@ industry:
   l0_code: '27'
   l0_name: 通信網路業
   l0_name_en: Communications and Internet
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.software
+  l2_name: 軟體與資訊服務
+  l2_name_en: Software & IT Services
+  l3: sw.enterprise
+  l3_name: 企業軟體
+  l3_name_en: Enterprise Software
+primary_chain_position: not_applicable
+summary_short: 主要經營影像壓縮軟硬體、海事衛星通訊服務與設備。
+summary_long: 隴華以影像壓縮產品及海事衛星通訊設備、服務為主要業務。2025年影像產品占營收69.52%，數據及勞務服務占20.31%，衛星產品占7.86%，衛星影像勞務服務占2.31%。子公司優視訊及其子公司Videosoft經營低頻寬即時影像產品，涵蓋軟體、相機與硬體編碼器，並可用於遠端監控。海事業務提供衛星寬頻通訊及天線設備，結合高低軌衛星鏈路，採長約與月費方式經營。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_image
+  name: 影像產品
+  period: '2025'
+  revenue_share_pct: 69.52
+- evidence_ids:
+  - e1
+  id: seg_data_service
+  name: 數據及勞務服務
+  period: '2025'
+  revenue_share_pct: 20.31
+- evidence_ids:
+  - e1
+  id: seg_satellite
+  name: 衛星產品
+  period: '2025'
+  revenue_share_pct: 7.86
+- evidence_ids:
+  - e1
+  id: seg_satellite_image_service
+  name: 衛星影像勞務服務
+  period: '2025'
+  revenue_share_pct: 2.31
+main_theme: theme.drone
+themes:
+- also: []
+  stage: components
+  theme: theme.drone
+  tier: upstream
 website: https://www.lhsat.com/
 tax_id: 04926876
 incorporated: '1973-01-24'
 listed: '2000-09-11'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2424#e1:
+    locator: 印刷第66頁／PDF第70頁，營業比重；金額單位為新台幣仟元
+    published_date: '2026-05-01'
+    publisher: 隴華電子股份有限公司
+    quote_check: not_found
+    title: 隴華電子股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=2424&colorchg=1&filename=2025_2424_20260604F04.pdf&kind=F&step=9
+  tw.2424#e10:
+    locator: 印刷第87頁／PDF第91頁，關係企業資料；基準日2026年3月31日
+    published_date: '2026-05-01'
+    publisher: 隴華電子股份有限公司
+    quote_check: not_found
+    title: 隴華電子股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=2424&colorchg=1&filename=2025_2424_20260604F04.pdf&kind=F&step=9
+  tw.2424#e13:
+    locator: 'Agile & Precise: Real-Time Drone Surveillance'
+    published_date: null
+    publisher: Videosoft Global Ltd
+    quote_check: found
+    title: Surveillance Drone UAV Video Solutions | Videosoft Global
+    url: https://www.videosoftglobal.com/industries/drones/
+  tw.2424#e2:
+    locator: 印刷第66頁／PDF第70頁，業務內容
+    published_date: '2026-05-01'
+    publisher: 隴華電子股份有限公司
+    quote_check: not_found
+    title: 隴華電子股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=2424&colorchg=1&filename=2025_2424_20260604F04.pdf&kind=F&step=9
+  tw.2424#e3:
+    locator: 印刷第4頁／PDF第8頁，影像產品說明
+    published_date: '2026-05-01'
+    publisher: 隴華電子股份有限公司
+    quote_check: not_found
+    title: 隴華電子股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=2424&colorchg=1&filename=2025_2424_20260604F04.pdf&kind=F&step=9
+  tw.2424#e6:
+    locator: 80cm KU波段海事衛星天線／LHSAT 80E系列
+    published_date: null
+    publisher: 隴華電子股份有限公司
+    quote_check: found
+    title: 產品列表 | LHSAT
+    url: https://www.lhsat.com/products.html
+  tw.2424#e9:
+    locator: 印刷第87頁／PDF第91頁，關係企業資料；基準日2026年3月31日
+    published_date: '2026-05-01'
+    publisher: 隴華電子股份有限公司
+    quote_check: not_found
+    title: 隴華電子股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=2424&colorchg=1&filename=2025_2424_20260604F04.pdf&kind=F&step=9

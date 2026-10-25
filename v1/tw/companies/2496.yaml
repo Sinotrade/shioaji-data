@@ -8,12 +8,206 @@ industry:
   l0_code: '20'
   l0_name: 其他業
   l0_name_en: Others
-primary_chain_position: unknown
+  l1: consumer
+  l1_name: 消費
+  l1_name_en: Consumer
+  l2: cons.discretionary
+  l2_name: 非必需消費
+  l2_name_en: Consumer Discretionary
+  l3: consumer.education
+  l3_name: 教育與生活服務
+  l3_name_en: Education & Personal Services
+primary_chain_position: not_applicable
+summary_short: 以國小至高中補習課程、師資與課程管理及數位教學服務取得收入。
+summary_long: 卓越成功主要提供補習師資、課程管理及國小至高中補習教育服務，2025年教育服務占營收100.00%，為年報四捨五入後的揭露值。課程涵蓋高中全科與升學複習、國中全科及國小STEM科學數學，另提供高中數學、高職數學與大學微積分影音課程及線上解題。集團直接子公司包括陳立教育事業、易禾事業、陳立小學堂及禮仁教育，並透過陳立教育持有經營線上教育平台的卓越全球。
+segments:
+- evidence_ids:
+  - e1
+  id: education
+  name: 教育服務
+  period: '2025'
+  revenue_share_pct: 100
+- evidence_ids:
+  - e1
+  id: other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 0
+relations:
+  subsidiaries:
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的教育服務子公司
+    details:
+    - 直接持股100%的教育服務子公司
+    edge: e7ef7550dcc02
+    evidence_level: primary
+    id: org.chen-li-education
+    name: 陳立教育事業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的教育服務子公司
+    details:
+    - 直接持股100%的教育服務子公司
+    edge: e6fd095f4400c
+    evidence_level: primary
+    id: org.chen-li-elementary-school
+    name: 陳立小學堂股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股60%的教育服務子公司
+    details:
+    - 直接持股60%的教育服務子公司
+    edge: e5bae1dc385bd
+    evidence_level: primary
+    id: org.li-ren-education
+    name: 禮仁教育股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過陳立教育持股75%的線上教育平台子公司
+    details:
+    - 透過陳立教育持股75%的線上教育平台子公司
+    edge: e8968aa08de33
+    evidence_level: primary
+    id: org.prime-global
+    name: 卓越全球股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 卓越全球持股99.9%的印尼教育服務子公司
+    details:
+    - 卓越全球持股99.9%的印尼教育服務子公司
+    edge: ecb55f52f5c15
+    evidence_level: primary
+    id: org.pt-prima-dunia-indonesia
+    name: PT Prima Dunia Indonesia
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的教育服務子公司
+    details:
+    - 直接持股100%的教育服務子公司
+    edge: ef65499a34fa7
+    evidence_level: primary
+    id: org.yi-he-enterprise
+    name: 易禾事業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.chenliedu2496.com/tw/
 tax_id: '22099786'
 incorporated: '1991-06-15'
 listed: '2002-03-08'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2496#e1:
+    locator: 印刷第34頁，營業比重表；單位為新台幣仟元
+    published_date: '2026-03-31'
+    publisher: 卓越成功股份有限公司
+    quote_check: found
+    title: 卓越成功股份有限公司114年度年報
+    url: https://sp2496-web.s3.ap-northeast-1.amazonaws.com/images/pdf/AGM/2026AGM-03-CH.pdf
+  tw.2496#e10:
+    locator: 印刷第10頁，合併基礎／子公司表；115.3.31持股欄
+    published_date: '2026-05-07'
+    publisher: 卓越成功股份有限公司
+    quote_check: found
+    title: 卓越成功股份有限公司及子公司115年第一季合併財務報告
+    url: https://sp2496-web.s3.ap-northeast-1.amazonaws.com/images/pdf/FS/FS-2026Q1.pdf
+  tw.2496#e11:
+    locator: 印刷第10頁，合併基礎／子公司表；115.3.31持股欄
+    published_date: '2026-05-07'
+    publisher: 卓越成功股份有限公司
+    quote_check: found
+    title: 卓越成功股份有限公司及子公司115年第一季合併財務報告
+    url: https://sp2496-web.s3.ap-northeast-1.amazonaws.com/images/pdf/FS/FS-2026Q1.pdf
+  tw.2496#e12:
+    locator: 印刷第10頁，合併基礎／子公司表；115.3.31持股欄
+    published_date: '2026-05-07'
+    publisher: 卓越成功股份有限公司
+    quote_check: found
+    title: 卓越成功股份有限公司及子公司115年第一季合併財務報告
+    url: https://sp2496-web.s3.ap-northeast-1.amazonaws.com/images/pdf/FS/FS-2026Q1.pdf
+  tw.2496#e2:
+    locator: 印刷第34頁，所營業務之主要內容
+    published_date: '2026-03-31'
+    publisher: 卓越成功股份有限公司
+    quote_check: found
+    title: 卓越成功股份有限公司114年度年報
+    url: https://sp2496-web.s3.ap-northeast-1.amazonaws.com/images/pdf/AGM/2026AGM-03-CH.pdf
+  tw.2496#e3:
+    locator: 印刷第34頁，目前之商品（服務）項目／高中部
+    published_date: '2026-03-31'
+    publisher: 卓越成功股份有限公司
+    quote_check: found
+    title: 卓越成功股份有限公司114年度年報
+    url: https://sp2496-web.s3.ap-northeast-1.amazonaws.com/images/pdf/AGM/2026AGM-03-CH.pdf
+  tw.2496#e4:
+    locator: 印刷第34頁，目前之商品（服務）項目／國中小部
+    published_date: '2026-03-31'
+    publisher: 卓越成功股份有限公司
+    quote_check: found
+    title: 卓越成功股份有限公司114年度年報
+    url: https://sp2496-web.s3.ap-northeast-1.amazonaws.com/images/pdf/AGM/2026AGM-03-CH.pdf
+  tw.2496#e5:
+    locator: 印刷第34頁，目前之商品（服務）項目／國中小部
+    published_date: '2026-03-31'
+    publisher: 卓越成功股份有限公司
+    quote_check: found
+    title: 卓越成功股份有限公司114年度年報
+    url: https://sp2496-web.s3.ap-northeast-1.amazonaws.com/images/pdf/AGM/2026AGM-03-CH.pdf
+  tw.2496#e6:
+    locator: 印刷第34頁，目前之商品（服務）項目／數位服務
+    published_date: '2026-03-31'
+    publisher: 卓越成功股份有限公司
+    quote_check: found
+    title: 卓越成功股份有限公司114年度年報
+    url: https://sp2496-web.s3.ap-northeast-1.amazonaws.com/images/pdf/AGM/2026AGM-03-CH.pdf
+  tw.2496#e7:
+    locator: 印刷第10頁，合併基礎／子公司表；持股欄依序為115.3.31、114.12.31、114.3.31
+    published_date: '2026-05-07'
+    publisher: 卓越成功股份有限公司
+    quote_check: found
+    title: 卓越成功股份有限公司及子公司115年第一季合併財務報告
+    url: https://sp2496-web.s3.ap-northeast-1.amazonaws.com/images/pdf/FS/FS-2026Q1.pdf
+  tw.2496#e8:
+    locator: 印刷第10頁，合併基礎／子公司表；115.3.31持股欄
+    published_date: '2026-05-07'
+    publisher: 卓越成功股份有限公司
+    quote_check: found
+    title: 卓越成功股份有限公司及子公司115年第一季合併財務報告
+    url: https://sp2496-web.s3.ap-northeast-1.amazonaws.com/images/pdf/FS/FS-2026Q1.pdf
+  tw.2496#e9:
+    locator: 印刷第10頁，合併基礎／子公司表；115.3.31持股欄
+    published_date: '2026-05-07'
+    publisher: 卓越成功股份有限公司
+    quote_check: found
+    title: 卓越成功股份有限公司及子公司115年第一季合併財務報告
+    url: https://sp2496-web.s3.ap-northeast-1.amazonaws.com/images/pdf/FS/FS-2026Q1.pdf

@@ -48,13 +48,13 @@ themes:
   theme: theme.5g
   tier: upstream
 - also: []
-  stage: control
-  theme: theme.robotics
-  tier: midstream
-- also: []
   stage: components
   theme: theme.drone
   tier: upstream
+- also: []
+  stage: control
+  theme: theme.robotics
+  tier: midstream
 relations:
   subsidiaries:
   - as_of: '2026-06-30'

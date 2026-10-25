@@ -8,12 +8,229 @@ industry:
   l0_code: '26'
   l0_name: 光電業
   l0_name_en: Optoelectronic
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.display
+  l2_name: 光電與顯示
+  l2_name_en: Optoelectronics & Displays
+  l3: disp.materials
+  l3_name: 顯示器材料與零組件
+  l3_name_en: Display Materials & Components
+chain: chain.display
+chain_stage:
+  agreement: both
+  also:
+  - stage: panel
+    stage_name: 面板與模組
+    tier: midstream
+  reason: 2025年前三季以光源條營收最大，屬顯示器上游零組件，另提供背光與LCD模組組裝。
+  stage: materials
+  stage_name: 玻璃、光學膜、驅動 IC
+  tier: upstream
+primary_chain_position: upstream
+summary_short: 主要製造銷售LED光源條、背光與LCD模組，另提供車用主板、AI系統服務及建材。
+summary_long: 臺龍以顯示器零部件為主要業務，產品包括LED光源條、背光與LCD模組，並提供全貼合加工。光源條應用涵蓋消費電子、工控、醫療及車載等領域，顯示模組則涵蓋車用與工控顯示。公司亦供應汽車開關、車門鎖及充電指示相關主板，並引進販售ASA科技塑鋼浪板與屋瓦。另提供AI虛擬客服、數字人互動應用及專業智慧助理等系統服務。主要製造子公司包括台龍電子(昆山)有限公司及東莞華龍電子有限公司，分別從事光源組與背光模組等產品產銷。
+segments:
+- evidence_ids:
+  - e7
+  id: seg_lightbar
+  name: 光源條
+  period: 2025-01至2025-09
+  revenue_share_pct: null
+- evidence_ids:
+  - e7
+  id: seg_display_modules
+  name: 背光及LCD模組
+  period: 2025-01至2025-09
+  revenue_share_pct: null
+- evidence_ids:
+  - e7
+  id: seg_other
+  name: 其他
+  period: 2025-01至2025-09
+  revenue_share_pct: null
+main_theme: theme.ev
+themes:
+- also: []
+  stage: parts
+  theme: theme.ev
+  tier: midstream
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接製造子公司
+    details:
+    - 間接製造子公司
+    edge: e7c23cec6695f
+    evidence_level: primary
+    id: org.dongguan-hualong-electronics
+    name: 東莞華龍電子有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接投資子公司
+    details:
+    - 直接投資子公司
+    edge: e280fcebc25dc
+    evidence_level: primary
+    id: org.gold-record-investments-samoa
+    name: Gold Record Investments Limited (Samoa)
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: ee40c4cecd07d
+    evidence_level: primary
+    id: org.hexel-electronic
+    name: Hexel Electronic Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接投資子公司
+    details:
+    - 間接投資子公司
+    edge: e67b1eb8b5872
+    evidence_level: primary
+    id: org.sunrise-explorer-samoa
+    name: Sunrise Explorer Ltd. (Samoa)
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接製造子公司
+    details:
+    - 間接製造子公司
+    edge: ef38c5fd5aba9
+    evidence_level: primary
+    id: org.tai-lon-electronics-kunshan
+    name: 台龍電子(昆山)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接製造子公司
+    details:
+    - 間接製造子公司
+    edge: e06a00bd2b8b9
+    evidence_level: primary
+    id: org.tai-lon-electronics-suzhou
+    name: 台龍電子(蘇州)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.tai-lon.com
 tax_id: '12386388'
 incorporated: '1982-11-13'
 listed: '2003-06-18'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-25'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6246#e10:
+    locator: 第14頁，四(三)2，Gold Record投資子公司列
+    published_date: '2026-03-10'
+    publisher: 臺龍電子股份有限公司
+    quote_check: found
+    title: 臺龍電子股份有限公司及子公司民國114及113年度合併財務報告
+    url: https://www.tai-lon.com/proimages/investors/02_Financial/05_FinancialStatement/臺龍_114年Q4合併財報-FIN.pdf
+  tw.6246#e11:
+    locator: 第14頁，四(三)2，Gold Record投資子公司列
+    published_date: '2026-03-10'
+    publisher: 臺龍電子股份有限公司
+    quote_check: found
+    title: 臺龍電子股份有限公司及子公司民國114及113年度合併財務報告
+    url: https://www.tai-lon.com/proimages/investors/02_Financial/05_FinancialStatement/臺龍_114年Q4合併財報-FIN.pdf
+  tw.6246#e12:
+    locator: 第14頁，四(三)2，Sunrise投資子公司列
+    published_date: '2026-03-10'
+    publisher: 臺龍電子股份有限公司
+    quote_check: found
+    title: 臺龍電子股份有限公司及子公司民國114及113年度合併財務報告
+    url: https://www.tai-lon.com/proimages/investors/02_Financial/05_FinancialStatement/臺龍_114年Q4合併財報-FIN.pdf
+  tw.6246#e13:
+    locator: 第14頁，四(三)2，台龍電子(昆山)投資子公司列
+    published_date: '2026-03-10'
+    publisher: 臺龍電子股份有限公司
+    quote_check: found
+    title: 臺龍電子股份有限公司及子公司民國114及113年度合併財務報告
+    url: https://www.tai-lon.com/proimages/investors/02_Financial/05_FinancialStatement/臺龍_114年Q4合併財報-FIN.pdf
+  tw.6246#e2:
+    locator: LED LIGHTBAR
+    published_date: null
+    publisher: 臺龍電子股份有限公司
+    quote_check: found
+    title: 顯示器零部件事業體
+    url: https://www.tai-lon.com/DisplayComponentsBusinessUnit.html
+  tw.6246#e3:
+    locator: 事業體介紹首段
+    published_date: null
+    publisher: 臺龍電子股份有限公司
+    quote_check: found
+    title: 顯示器零部件事業體
+    url: https://www.tai-lon.com/DisplayComponentsBusinessUnit.html
+  tw.6246#e4:
+    locator: 汽車／新能源汽車電子
+    published_date: null
+    publisher: 臺龍電子股份有限公司
+    quote_check: found
+    title: 顯示器零部件事業體
+    url: https://www.tai-lon.com/DisplayComponentsBusinessUnit.html
+  tw.6246#e5:
+    locator: 服務介紹首段
+    published_date: null
+    publisher: 臺龍電子股份有限公司
+    quote_check: found
+    title: AI應用系統服務
+    url: https://www.tai-lon.com/AIApplicationServices.html
+  tw.6246#e6:
+    locator: 產品介紹與適用範圍
+    published_date: null
+    publisher: 臺龍電子股份有限公司
+    quote_check: found
+    title: ASA科技塑鋼浪板．屋瓦
+    url: https://www.tai-lon.com/ASAReinforcedPlasticCorrugatedSheets.html
+  tw.6246#e7:
+    locator: 第10頁，年度合併營收；單位千元，最右欄為2025/Q3
+    published_date: '2025-12-24'
+    publisher: 臺龍電子股份有限公司
+    quote_check: found
+    title: 臺龍電子股份有限公司2025年Q4法人說明會
+    url: https://www.tai-lon.com/proimages/investors/05_Director/09_EarningsCall/2025Q4_TTFIC_Investor_Conference_TC.pdf
+  tw.6246#e8:
+    locator: 第14頁，四(三)2，列入合併財務報告之子公司
+    published_date: '2026-03-10'
+    publisher: 臺龍電子股份有限公司
+    quote_check: found
+    title: 臺龍電子股份有限公司及子公司民國114及113年度合併財務報告
+    url: https://www.tai-lon.com/proimages/investors/02_Financial/05_FinancialStatement/臺龍_114年Q4合併財報-FIN.pdf
+  tw.6246#e9:
+    locator: 第14頁，四(三)2，本公司直接投資子公司列
+    published_date: '2026-03-10'
+    publisher: 臺龍電子股份有限公司
+    quote_check: found
+    title: 臺龍電子股份有限公司及子公司民國114及113年度合併財務報告
+    url: https://www.tai-lon.com/proimages/investors/02_Financial/05_FinancialStatement/臺龍_114年Q4合併財報-FIN.pdf

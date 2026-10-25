@@ -8,12 +8,108 @@ industry:
   l0_code: '32'
   l0_name: 文化創意業
   l0_name_en: Cultural and Creative
-primary_chain_position: unknown
+  l1: telecom
+  l1_name: 電信與媒體
+  l1_name_en: Telecom & Media
+  l2: telecom.media
+  l2_name: 媒體與文創
+  l2_name_en: Media & Creative
+  l3: media.content
+  l3_name: 內容與娛樂
+  l3_name_en: Content & Entertainment
+primary_chain_position: not_applicable
+summary_short: 以影音光碟發行、電影數位版權授權及書店餐飲取得營收。
+summary_long: 得利影視以影音產品及文創餐飲為主要業務，2025年營收占比分別為51.19%及48.81%。影音業務包括電視與電影DVD、BD及4K UHD影碟的製作發行，以及電影數位版權授權代理。文創餐飲經營TSUTAYA BOOKSTORE與Wired Tokyo，結合書籍、生活美學商品及餐飲，另銷售「私咖啡」及「蒔年一晌」自有品牌咖啡茶品。中環股份有限公司為年報列示的控制公司，與其聯屬公司對得利影視具有實質控制影響力。
+segments:
+- evidence_ids:
+  - e1
+  id: seg.audiovisual
+  name: 影音產品
+  period: '2025'
+  revenue_share_pct: 51.19
+- evidence_ids:
+  - e2
+  id: seg.culture_dining
+  name: 文創餐飲
+  period: '2025'
+  revenue_share_pct: 48.81
+relations:
+  parents:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 控制公司
+    details:
+    - 控制公司
+    edge: eb36ce72dd023
+    evidence_level: primary
+    id: tw.2323
+    name: 中環
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.deltamac.com.tw
 tax_id: '89398566'
 incorporated: '1995-07-19'
 listed: '2002-01-23'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-25'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6144#e1:
+    locator: 印刷頁48，主要產品及其營業比重表，114年度影音產品列：營收88,408仟元、占比51.19%
+    published_date: '2026-05-04'
+    publisher: 得利影視股份有限公司
+    quote_check: not_found
+    title: 得利影視股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=6144&colorchg=1&filename=2025_6144_20260616F04.pdf&kind=F&step=9
+  tw.6144#e2:
+    locator: 印刷頁48，主要產品及其營業比重表，114年度文創餐飲列：營收84,314仟元、占比48.81%
+    published_date: '2026-05-04'
+    publisher: 得利影視股份有限公司
+    quote_check: not_found
+    title: 得利影視股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=6144&colorchg=1&filename=2025_6144_20260616F04.pdf&kind=F&step=9
+  tw.6144#e3:
+    locator: 印刷頁48，營運概況／業務範圍，第1項；下文列示DVD、BD及4K UHD影碟與授權發行業務
+    published_date: '2026-05-04'
+    publisher: 得利影視股份有限公司
+    quote_check: not_found
+    title: 得利影視股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=6144&colorchg=1&filename=2025_6144_20260616F04.pdf&kind=F&step=9
+  tw.6144#e4:
+    locator: 印刷頁48，營運概況／業務範圍，第3項
+    published_date: '2026-05-04'
+    publisher: 得利影視股份有限公司
+    quote_check: not_found
+    title: 得利影視股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=6144&colorchg=1&filename=2025_6144_20260616F04.pdf&kind=F&step=9
+  tw.6144#e5:
+    locator: 印刷頁48，營運概況／業務範圍，第5項新事業發展；列示TSUTAYA BOOKSTORE及Wired Tokyo零售與餐飲事業
+    published_date: '2026-05-04'
+    publisher: 得利影視股份有限公司
+    quote_check: not_found
+    title: 得利影視股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=6144&colorchg=1&filename=2025_6144_20260616F04.pdf&kind=F&step=9
+  tw.6144#e6:
+    locator: 印刷頁1，致股東報告書首段；說明蔦屋書店選品及WIRED TOKYO餐飲定位
+    published_date: '2026-05-04'
+    publisher: 得利影視股份有限公司
+    quote_check: not_found
+    title: 得利影視股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=6144&colorchg=1&filename=2025_6144_20260616F04.pdf&kind=F&step=9
+  tw.6144#e7:
+    locator: 印刷頁48，營運概況／業務範圍，第5項新事業發展；自有品牌私咖啡及蒔年一晌
+    published_date: '2026-05-04'
+    publisher: 得利影視股份有限公司
+    quote_check: not_found
+    title: 得利影視股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=6144&colorchg=1&filename=2025_6144_20260616F04.pdf&kind=F&step=9
+  tw.6144#e8:
+    locator: 印刷頁67，114年度關係報告書／從屬公司與控制公司間之關係概況；中環列於控制公司名稱欄，控制原因為中環及其聯屬公司具有實質控制影響力
+    published_date: '2026-05-04'
+    publisher: 得利影視股份有限公司
+    quote_check: not_found
+    title: 得利影視股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=6144&colorchg=1&filename=2025_6144_20260616F04.pdf&kind=F&step=9

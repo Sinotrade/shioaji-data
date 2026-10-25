@@ -8,12 +8,78 @@ industry:
   l0_code: '37'
   l0_name: 運動休閒
   l0_name_en: Sports and Leisure
-primary_chain_position: unknown
+  l1: consumer
+  l1_name: 消費
+  l1_name_en: Consumer
+  l2: cons.discretionary
+  l2_name: 非必需消費
+  l2_name_en: Consumer Discretionary
+  l3: consumer.leisure
+  l3_name: 休閒用品、遊艇與露營車
+  l3_name_en: Leisure Products, Yachts & RVs
+primary_chain_position: not_applicable
+summary_short: 主要靠運動休閒場館、親子遊樂及岩盤浴等體驗服務取得收入。
+summary_long: 大魯閣集團以運動休閒場館與體驗服務為主要業務，品牌涵蓋棒壘球打擊場、保齡球館、Roller186滑輪場、福湯岩盤浴及遊戲愛樂園，提供球類運動、滑輪、岩盤浴與兒童遊樂體驗。2026年上半年，休閒育樂部門外部收入為370,469仟元，複合式事業部門為30,229仟元，休閒育樂為主要收入來源。主要子公司包括經營休閒活動場館的大魯閣好好育樂、從事不動產及證券買賣的大魯閣建設，以及作為美國投資控股公司的Taroko US Corporation。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_leisure
+  name: 休閒育樂部門
+  period: 2026年上半年
+  revenue_share_pct: null
+- evidence_ids:
+  - e2
+  id: seg_composite
+  name: 複合式事業部門
+  period: 2026年上半年
+  revenue_share_pct: null
 website: https://www.taroko.com.tw/
 tax_id: 04690983
 incorporated: '1973-07-18'
 listed: '1982-07-26'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1432#e2:
+    locator: 第71頁，附註十四（三）部門資訊；115年1月1日至6月30日外部收入
+    published_date: '2026-08-12'
+    publisher: 大魯閣實業股份有限公司
+    quote_check: unreachable
+    title: 民國115年及114年第二季合併財務報告
+    url: https://doc.twse.com.tw/pdf/202602_1432_AI1_20260909_185851.pdf
+  tw.1432#e3:
+    locator: 集團事業範疇：棒壘球打擊場
+    published_date: null
+    publisher: 大魯閣實業股份有限公司
+    quote_check: found
+    title: 集團品牌
+    url: https://www.taroko.com.tw/business-scope/
+  tw.1432#e4:
+    locator: 集團事業範疇：保齡球館
+    published_date: null
+    publisher: 大魯閣實業股份有限公司
+    quote_check: not_found
+    title: 集團品牌
+    url: https://www.taroko.com.tw/business-scope/
+  tw.1432#e5:
+    locator: 集團事業範疇：Roller186滑輪場
+    published_date: null
+    publisher: 大魯閣實業股份有限公司
+    quote_check: found
+    title: 集團品牌
+    url: https://www.taroko.com.tw/business-scope/
+  tw.1432#e6:
+    locator: 集團事業範疇：福湯岩盤浴
+    published_date: null
+    publisher: 大魯閣實業股份有限公司
+    quote_check: not_found
+    title: 集團品牌
+    url: https://www.taroko.com.tw/business-scope/
+  tw.1432#e7:
+    locator: 集團事業範疇：遊戲愛樂園
+    published_date: null
+    publisher: 大魯閣實業股份有限公司
+    quote_check: not_found
+    title: 集團品牌
+    url: https://www.taroko.com.tw/business-scope/

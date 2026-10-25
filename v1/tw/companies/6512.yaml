@@ -8,12 +8,87 @@ industry:
   l0_code: '31'
   l0_name: 其他電子業
   l0_name_en: Other Electronic
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.hardware
+  l2_name: 電腦與硬體
+  l2_name_en: Computers & Hardware
+  l3: hw.peripheral
+  l3_name: 周邊與輸入裝置
+  l3_name_en: Peripherals & Input Devices
+primary_chain_position: not_applicable
+summary_short: 研發、設計及銷售影音訊號延長器、分配器與影像處理設備。
+summary_long: 啟發電子主要從事影音訊號處理產品的研發、設計、製造及銷售，產品涵蓋影音訊號延長器、分配器與處理器，並有影像轉換器產品。相關設備應用於家庭劇院、高階安控、數位廣告、電視牆、廣播主控系統及商務投影。公司另規劃以o1stream為核心的新一代AV over IP影音產品及串流應用。2026年第一季合併營收中，視訊系統產品為2,604.8萬元，其他產品為833萬元。同期合併財報列示瑞發科技為持股100%的子公司。
+segments:
+- evidence_ids:
+  - e5
+  id: seg_video
+  name: 視訊系統產品
+  period: 2026年第一季
+  revenue_share_pct: null
+- evidence_ids:
+  - e5
+  id: seg_other
+  name: 其他
+  period: 2026年第一季
+  revenue_share_pct: null
+relations:
+  subsidiaries:
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股100%的合併子公司
+    details:
+    - 持股100%的合併子公司
+    edge: e4480a3f1128b
+    evidence_level: primary
+    id: org.瑞發科技股份有限公司
+    name: 瑞發科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.gomax-electronics.com.tw/
 tax_id: '28133327'
 incorporated: '2006-03-28'
 listed: '2016-03-25'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-25'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6512#e2:
+    locator: 公司簡介正文
+    published_date: null
+    publisher: 啟發電子股份有限公司
+    quote_check: found
+    title: 關於啟發－公司簡介
+    url: https://www.gomax-electronics.com.tw/tw/about
+  tw.6512#e3:
+    locator: 印刷頁7，115年度營業計畫－產品對策
+    published_date: null
+    publisher: 啟發電子股份有限公司
+    quote_check: found
+    title: 啟發電子115年股東常會議事手冊
+    url: https://www.gomax-electronics.com.tw/public/uploads/tw/202606851.pdf
+  tw.6512#e4:
+    locator: 印刷頁7，115年度營業計畫－產品對策
+    published_date: null
+    publisher: 啟發電子股份有限公司
+    quote_check: found
+    title: 啟發電子115年股東常會議事手冊
+    url: https://www.gomax-electronics.com.tw/public/uploads/tw/202606851.pdf
+  tw.6512#e5:
+    locator: 第20頁，附註十七、收入－商品銷貨收入依產品項目細分；單位為新台幣仟元
+    published_date: null
+    publisher: 啟發電子股份有限公司
+    quote_check: found
+    title: 啟發電子及子公司115及114年第1季合併財務報告
+    url: https://www.gomax-electronics.com.tw/public/uploads/tw/202605745.pdf
+  tw.6512#e6:
+    locator: 第15頁，附註九、子公司；股權比例欄依序為115年3月31日、114年12月31日、114年3月31日
+    published_date: null
+    publisher: 啟發電子股份有限公司
+    quote_check: found
+    title: 啟發電子及子公司115及114年第1季合併財務報告
+    url: https://www.gomax-electronics.com.tw/public/uploads/tw/202605745.pdf

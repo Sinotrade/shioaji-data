@@ -8,12 +8,159 @@ industry:
   l0_code: '20'
   l0_name: 其他業
   l0_name_en: Others
-primary_chain_position: unknown
+  l1: telecom
+  l1_name: 電信與媒體
+  l1_name_en: Telecom & Media
+  l2: telecom.media
+  l2_name: 媒體與文創
+  l2_name_en: Media & Creative
+  l3: media.publishing
+  l3_name: 出版與印刷
+  l3_name_en: Publishing & Printing
+primary_chain_position: not_applicable
+summary_short: 以印刷品設計與製造加工為主，提供文化商業印刷及彩盒包裝服務。
+summary_long: 沈氏以印刷品設計、製造與加工為主要業務，114年度年報揭露其營業比重約99%。文化及商業印刷包括圖書、雜誌與廣告文宣，服務涵蓋印前製作、印刷、印後加工及物流配送。包裝印刷提供彩盒、仿單及說明書；另提供刊物代編、視覺設計、少量快印與大圖輸出，特殊印刷則包括3D光柵立體變圖。其控制公司為永豐紙業，子公司包括華德包裝服務科技，以及持股51%的越南彩印包裝子公司。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_printing
+  name: 印刷品設計服務及製造加工買賣
+  period: 2025（114年度年報揭露之概約營業比重）
+  revenue_share_pct: 99
+relations:
+  parents:
+  - as_of: '2026-03-12'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 年報列示之控制公司
+    details:
+    - 年報列示之控制公司
+    edge: ea54b997570a8
+    evidence_level: primary
+    id: org.yuen-foong-paper
+    name: 永豐紙業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股84.40%之子公司
+    details:
+    - 持股84.40%之子公司
+    edge: e839fe7928709
+    evidence_level: primary
+    id: org.hua-de-packaging-service-technology
+    name: 華德包裝服務科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股51%之越南彩盒印刷子公司
+    details:
+    - 持股51%之越南彩盒印刷子公司
+    edge: e4055e62e21f9
+    evidence_level: primary
+    id: org.yfy-printing-packaging-technology
+    name: YFY Printing Packaging Technology Company Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.shen.com.tw
 tax_id: '15820097'
 incorporated: '1977-12-15'
 listed: '2000-03-21'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-25'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.8921#e1:
+    locator: 第57頁，營運概況／業務範圍／營業比重
+    published_date: '2026-05-22'
+    publisher: 沈氏藝術印刷股份有限公司
+    quote_check: found
+    title: 沈氏藝術印刷股份有限公司114年度年報
+    url: https://www.shen.com.tw/investors_down/237/2.htm
+  tw.8921#e10:
+    locator: 第81頁，114年12月31日關係企業組織圖及各關係企業董事、監察人及總經理資料
+    published_date: '2026-05-22'
+    publisher: 沈氏藝術印刷股份有限公司
+    quote_check: found
+    title: 沈氏藝術印刷股份有限公司114年度年報
+    url: https://www.shen.com.tw/investors_down/237/2.htm
+  tw.8921#e11:
+    locator: 第75頁，財務狀況增減比例變動分析說明第3點
+    published_date: '2026-05-22'
+    publisher: 沈氏藝術印刷股份有限公司
+    quote_check: found
+    title: 沈氏藝術印刷股份有限公司114年度年報
+    url: https://www.shen.com.tw/investors_down/237/2.htm
+  tw.8921#e12:
+    locator: 第81頁，關係企業基本資料，YFY Printing Packaging Technology Company Limited地址及主要營業項目欄
+    published_date: '2026-05-22'
+    publisher: 沈氏藝術印刷股份有限公司
+    quote_check: not_found
+    title: 沈氏藝術印刷股份有限公司114年度年報
+    url: https://www.shen.com.tw/investors_down/237/2.htm
+  tw.8921#e2:
+    locator: 第57頁，目前之商品（服務）項目A
+    published_date: '2026-05-22'
+    publisher: 沈氏藝術印刷股份有限公司
+    quote_check: found
+    title: 沈氏藝術印刷股份有限公司114年度年報
+    url: https://www.shen.com.tw/investors_down/237/2.htm
+  tw.8921#e3:
+    locator: 第57頁，目前之商品（服務）項目B
+    published_date: '2026-05-22'
+    publisher: 沈氏藝術印刷股份有限公司
+    quote_check: found
+    title: 沈氏藝術印刷股份有限公司114年度年報
+    url: https://www.shen.com.tw/investors_down/237/2.htm
+  tw.8921#e4:
+    locator: 刊物代編
+    published_date: null
+    publisher: 沈氏藝術印刷股份有限公司
+    quote_check: found
+    title: 創意設計服務項目
+    url: https://www.shen.com.tw/service/5.htm
+  tw.8921#e5:
+    locator: 視覺設計
+    published_date: null
+    publisher: 沈氏藝術印刷股份有限公司
+    quote_check: found
+    title: 創意設計服務項目
+    url: https://www.shen.com.tw/service/5.htm
+  tw.8921#e6:
+    locator: 服務項目／少量多樣服務
+    published_date: null
+    publisher: 沈氏藝術印刷股份有限公司
+    quote_check: found
+    title: 捷可印／少量快印服務項目
+    url: https://www.shen.com.tw/service/7.htm
+  tw.8921#e7:
+    locator: 大圖輸出服務
+    published_date: null
+    publisher: 沈氏藝術印刷股份有限公司
+    quote_check: found
+    title: 捷可印／少量快印服務項目
+    url: https://www.shen.com.tw/service/7.htm
+  tw.8921#e8:
+    locator: 3D光柵立體變圖
+    published_date: null
+    publisher: 沈氏藝術印刷股份有限公司
+    quote_check: found
+    title: 特殊印刷服務項目
+    url: https://www.shen.com.tw/service/12.htm
+  tw.8921#e9:
+    locator: 第84頁，關係報告書／從屬公司與控制公司間之關係概況，永豐紙業控制公司資料列
+    published_date: '2026-05-22'
+    publisher: 沈氏藝術印刷股份有限公司
+    quote_check: found
+    title: 沈氏藝術印刷股份有限公司114年度年報
+    url: https://www.shen.com.tw/investors_down/237/2.htm

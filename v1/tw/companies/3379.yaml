@@ -8,12 +8,183 @@ industry:
   l0_code: '05'
   l0_name: 電機機械
   l0_name_en: Electric Machinery
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.machinery
+  l2_name: 機械與自動化
+  l2_name_en: Machinery & Automation
+  l3: mach.equipment
+  l3_name: 專用設備（非半導體）
+  l3_name_en: Specialty Equipment (Non-semiconductor)
+primary_chain_position: not_applicable
+summary_short: 以食品飲料設備銷售及整廠系統工程為主要收入來源。
+summary_long: 彬台主要提供食品飲料生產設備及整廠系統工程，產品涵蓋充填、包裝、超高溫殺菌、機器手疊棧與自動開袋設備。2025年合併營收中，銷貨收入占73%、工程收入占26%、勞務收入占1%，以設備銷售為主。公司將自製自動化設備與工程整合結合，並以自行研發的多功能夾具搭配機械手臂，提供機器人疊棧及卸棧設備。集團直接持有薩摩亞子公司，再透過該公司持有蘇州設備子公司；印尼子公司則由彬台與薩摩亞子公司分別持有。
+segments:
+- evidence_ids:
+  - e2
+  id: seg.sales
+  name: 銷貨收入
+  period: '2025'
+  revenue_share_pct: 73
+- evidence_ids:
+  - e3
+  id: seg.engineering
+  name: 工程收入
+  period: '2025'
+  revenue_share_pct: 26
+- evidence_ids:
+  - e4
+  id: seg.services
+  name: 勞務收入
+  period: '2025'
+  revenue_share_pct: 1
+main_theme: theme.robotics
+themes:
+- also: []
+  stage: system
+  theme: theme.robotics
+  tier: downstream
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股95%、薩摩亞子公司持股5%
+    details:
+    - 直接持股95%、薩摩亞子公司持股5%
+    edge: edd946f018a07
+    evidence_level: primary
+    id: org.taiwan-benefit-indonesia
+    name: PT. Taiwan Benefit Indonesia
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過薩摩亞子公司間接持股100%
+    details:
+    - 透過薩摩亞子公司間接持股100%
+    edge: e20bd12afe19b
+    evidence_level: primary
+    id: org.taiwan-benefit-suzhou
+    name: 彬台自動化設備（蘇州）有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的薩摩亞子公司
+    details:
+    - 直接持股100%的薩摩亞子公司
+    edge: e9e9c6bb8fed7
+    evidence_level: primary
+    id: org.taiwan-benefit-technology-samoa
+    name: Taiwan Benefit Technology (SAMOA) Corporation
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.taibeco.com
 tax_id: 05087498
 incorporated: '1981-04-07'
 listed: '2011-10-20'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3379#e10:
+    locator: 卸棧機
+    published_date: null
+    publisher: 彬台科技股份有限公司
+    quote_check: unreachable
+    title: 疊棧機/卸棧機
+    url: https://www.taibeco.com.tw/tw/product/pd/13
+  tw.3379#e11:
+    locator: 第16頁，列入合併財務報告之子公司
+    published_date: '2026-03-09'
+    publisher: 彬台科技股份有限公司
+    quote_check: unreachable
+    title: 彬台114年度合併財務報告
+    url: https://www.taibeco.com.tw/sites/default/files/fin_report/114%20%E5%B9%B4%E7%AC%AC%E5%9B%9B%E5%AD%A3%20IFRSs%20%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
+  tw.3379#e12:
+    locator: 第16頁，列入合併財務報告之子公司，SAMOA投資列
+    published_date: '2026-03-09'
+    publisher: 彬台科技股份有限公司
+    quote_check: unreachable
+    title: 彬台114年度合併財務報告
+    url: https://www.taibeco.com.tw/sites/default/files/fin_report/114%20%E5%B9%B4%E7%AC%AC%E5%9B%9B%E5%AD%A3%20IFRSs%20%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
+  tw.3379#e13:
+    locator: 第16頁，列入合併財務報告之子公司，本公司投資列；〞承接本公司
+    published_date: '2026-03-09'
+    publisher: 彬台科技股份有限公司
+    quote_check: unreachable
+    title: 彬台114年度合併財務報告
+    url: https://www.taibeco.com.tw/sites/default/files/fin_report/114%20%E5%B9%B4%E7%AC%AC%E5%9B%9B%E5%AD%A3%20IFRSs%20%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
+  tw.3379#e14:
+    locator: 第16頁，列入合併財務報告之子公司，SAMOA投資列；〞承接SAMOA
+    published_date: '2026-03-09'
+    publisher: 彬台科技股份有限公司
+    quote_check: unreachable
+    title: 彬台114年度合併財務報告
+    url: https://www.taibeco.com.tw/sites/default/files/fin_report/114%20%E5%B9%B4%E7%AC%AC%E5%9B%9B%E5%AD%A3%20IFRSs%20%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
+  tw.3379#e2:
+    locator: 第11頁，合併綜合損益表，114年度金額及百分比欄
+    published_date: '2026-03-09'
+    publisher: 彬台科技股份有限公司
+    quote_check: unreachable
+    title: 彬台114年度合併財務報告
+    url: https://www.taibeco.com.tw/sites/default/files/fin_report/114%20%E5%B9%B4%E7%AC%AC%E5%9B%9B%E5%AD%A3%20IFRSs%20%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
+  tw.3379#e3:
+    locator: 第11頁，合併綜合損益表，114年度金額及百分比欄
+    published_date: '2026-03-09'
+    publisher: 彬台科技股份有限公司
+    quote_check: unreachable
+    title: 彬台114年度合併財務報告
+    url: https://www.taibeco.com.tw/sites/default/files/fin_report/114%20%E5%B9%B4%E7%AC%AC%E5%9B%9B%E5%AD%A3%20IFRSs%20%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
+  tw.3379#e4:
+    locator: 第11頁，合併綜合損益表，114年度金額及百分比欄
+    published_date: '2026-03-09'
+    publisher: 彬台科技股份有限公司
+    quote_check: unreachable
+    title: 彬台114年度合併財務報告
+    url: https://www.taibeco.com.tw/sites/default/files/fin_report/114%20%E5%B9%B4%E7%AC%AC%E5%9B%9B%E5%AD%A3%20IFRSs%20%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
+  tw.3379#e5:
+    locator: 第6頁，關鍵查核事項
+    published_date: '2026-03-09'
+    publisher: 彬台科技股份有限公司
+    quote_check: unreachable
+    title: 彬台114年度合併財務報告
+    url: https://www.taibeco.com.tw/sites/default/files/fin_report/114%20%E5%B9%B4%E7%AC%AC%E5%9B%9B%E5%AD%A3%20IFRSs%20%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
+  tw.3379#e6:
+    locator: 第一段
+    published_date: null
+    publisher: 彬台科技股份有限公司
+    quote_check: unreachable
+    title: 公司簡介
+    url: https://www.taibeco.com.tw/tw/tbc/about
+  tw.3379#e7:
+    locator: 客戶關係
+    published_date: null
+    publisher: 彬台科技股份有限公司
+    quote_check: unreachable
+    title: 利害關係人專區
+    url: https://www.taibeco.com.tw/tw/corp/stakeholder
+  tw.3379#e8:
+    locator: 已開發產品段落
+    published_date: null
+    publisher: 彬台科技股份有限公司
+    quote_check: unreachable
+    title: 彬台研發
+    url: https://www.taibeco.com.tw/tw/tbc/rnd
+  tw.3379#e9:
+    locator: 機器手疊棧機
+    published_date: null
+    publisher: 彬台科技股份有限公司
+    quote_check: unreachable
+    title: 疊棧機/卸棧機
+    url: https://www.taibeco.com.tw/tw/product/pd/13

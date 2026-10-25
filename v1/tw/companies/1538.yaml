@@ -8,12 +8,198 @@ industry:
   l0_code: '05'
   l0_name: 電機機械
   l0_name_en: Electric Machinery
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.machinery
+  l2_name: 機械與自動化
+  l2_name_en: Machinery & Automation
+  l3: mach.tools
+  l3_name: 手工具與五金
+  l3_name_en: Hand Tools & Hardware
+primary_chain_position: not_applicable
+summary_short: 主要製造與銷售電動工具及燈具，另開發智慧農業與綠能設備。
+summary_long: 正峰工業以電動工具與燈具為主要營收來源，2025年電動工具占營收82.64%，燈具類16.28%，其他1.08%。電動工具業務持續開發無刷馬達產品，燈具業務涵蓋LED照明及汽車燈具。公司亦投入智慧農業與綠能應用，已開發並導入應用的產品包括增氧水車、抽水馬達、汙泥泵及逆變器，應用於農電共生與水產養殖等場域。集團透過正富集團國際、宏時投資、ARK JF Philippines及誠峰能源等直接子公司，經營投資、進出口貿易與設備買賣。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_tools
+  name: 電動工具
+  period: '2025'
+  revenue_share_pct: 82.64
+- evidence_ids:
+  - e3
+  id: seg_lighting
+  name: 燈具類
+  period: '2025'
+  revenue_share_pct: 16.28
+- evidence_ids:
+  - e4
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 1.08
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%之進出口貿易子公司
+    details:
+    - 直接持有100%之進出口貿易子公司
+    edge: e7142d10c1ac3
+    evidence_level: primary
+    id: org.ark-jf-philippines-inc
+    name: ARK JF Philippines Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過正富集團國際間接持有之進出口貿易子公司
+    details:
+    - 透過正富集團國際間接持有之進出口貿易子公司
+    edge: e706aefb678c1
+    evidence_level: primary
+    id: org.jenn-feng-international-b-v-i-co-ltd
+    name: JENN FENG INTERNATIONAL (B.V.I.) CO., LTD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過正富集團國際間接持有之工具與燈具子公司
+    details:
+    - 透過正富集團國際間接持有之工具與燈具子公司
+    edge: e11f32c6efd7f
+    evidence_level: primary
+    id: org.上海正峰工業有限公司
+    name: 上海正峰工業有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%之投資子公司
+    details:
+    - 直接持有100%之投資子公司
+    edge: ee4a2bdc5cd0f
+    evidence_level: primary
+    id: org.宏時投資-薩摩亞-有限公司
+    name: 宏時投資(薩摩亞)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過宏時投資間接持有之電動工具及庭園工具子公司
+    details:
+    - 透過宏時投資間接持有之電動工具及庭園工具子公司
+    edge: ee1cdde75ceeb
+    evidence_level: primary
+    id: org.昆山正富機械工業有限公司
+    name: 昆山正富機械工業有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%之子公司；投資及進出口貿易
+    details:
+    - 直接持有100%之子公司；投資及進出口貿易
+    edge: e8fc2371552e7
+    evidence_level: primary
+    id: org.正富集團國際有限公司
+    name: 正富集團國際有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有96.30%之設備買賣子公司
+    details:
+    - 直接持有96.30%之設備買賣子公司
+    edge: ef0afbc41bcba
+    evidence_level: primary
+    id: org.誠峰能源工業股份有限公司
+    name: 誠峰能源工業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.jennfeng.com
 tax_id: '44947686'
 incorporated: '1976-04-24'
 listed: '2002-08-26'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-25'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1538#e2:
+    locator: 第46頁，肆、營運概況，一、業務內容，114年度產品及其比重表，電動工具列
+    published_date: '2026-05-15'
+    publisher: 正峰工業股份有限公司
+    quote_check: not_found
+    title: 正峰工業股份有限公司114年度年報
+    url: https://www.jennfeng.com/wp-content/uploads/2026/06/股東會專區-114年報.pdf
+  tw.1538#e3:
+    locator: 第46頁，114年度產品及其比重表，燈具類列
+    published_date: '2026-05-15'
+    publisher: 正峰工業股份有限公司
+    quote_check: not_found
+    title: 正峰工業股份有限公司114年度年報
+    url: https://www.jennfeng.com/wp-content/uploads/2026/06/股東會專區-114年報.pdf
+  tw.1538#e4:
+    locator: 第46頁，114年度產品及其比重表，其他列
+    published_date: '2026-05-15'
+    publisher: 正峰工業股份有限公司
+    quote_check: not_found
+    title: 正峰工業股份有限公司114年度年報
+    url: https://www.jennfeng.com/wp-content/uploads/2026/06/股東會專區-114年報.pdf
+  tw.1538#e5:
+    locator: 第47頁，產業概況，公司產品開發說明
+    published_date: '2026-05-15'
+    publisher: 正峰工業股份有限公司
+    quote_check: found
+    title: 正峰工業股份有限公司114年度年報
+    url: https://www.jennfeng.com/wp-content/uploads/2026/06/股東會專區-114年報.pdf
+  tw.1538#e6:
+    locator: 第47頁，產業概況，LED照明產品供應說明
+    published_date: '2026-05-15'
+    publisher: 正峰工業股份有限公司
+    quote_check: found
+    title: 正峰工業股份有限公司114年度年報
+    url: https://www.jennfeng.com/wp-content/uploads/2026/06/股東會專區-114年報.pdf
+  tw.1538#e7:
+    locator: 第49頁，（2）汽車燈具，C項
+    published_date: '2026-05-15'
+    publisher: 正峰工業股份有限公司
+    quote_check: found
+    title: 正峰工業股份有限公司114年度年報
+    url: https://www.jennfeng.com/wp-content/uploads/2026/06/股東會專區-114年報.pdf
+  tw.1538#e8:
+    locator: 第49頁，（3）智慧農業與綠能應用，B項
+    published_date: '2026-05-15'
+    publisher: 正峰工業股份有限公司
+    quote_check: found
+    title: 正峰工業股份有限公司114年度年報
+    url: https://www.jennfeng.com/wp-content/uploads/2026/06/股東會專區-114年報.pdf
+  tw.1538#e9:
+    locator: 第10頁，附註四（二）合併基礎，子公司表；115.6.30欄列示本公司直接持有正富集團國際、宏時投資、ARK JF Philippines及誠峰能源；另列正富國際持有B.V.I.公司及上海正峰、宏時投資持有昆山正富
+    published_date: '2026-08-11'
+    publisher: 正峰工業股份有限公司
+    quote_check: found
+    title: 正峰工業股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.jennfeng.com/wp-content/uploads/2026/08/投資人關係-115Q2合併財報.pdf

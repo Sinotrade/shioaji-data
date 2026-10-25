@@ -8,12 +8,165 @@ industry:
   l0_code: '35'
   l0_name: 綠能環保
   l0_name_en: Green Energy and Environmental Services
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.environment
+  l2_name: 環保服務
+  l2_name_en: Environmental Services
+  l3: env.waste
+  l3_name: 廢棄物處理與資源回收
+  l3_name_en: Waste Management & Recycling
+primary_chain_position: not_applicable
+summary_short: 以土壤及地下水污染整治工程為主，兼營廢棄物處理、整治設備及生物復育藥劑。
+summary_long: 裕山以土壤及地下水污染整治為主要業務，服務涵蓋場址調查評估、整治規劃設計、施工控管至解除列管。2025年營收中，環境工程占92.39%、廢棄物處理占7.08%、其他占0.53%。循環經濟業務運用機械生物處理系統，將生活垃圾分選、乾化並製成SRF替代燃料；另提供整治設備、整廠輸出及生物復育營養劑。子公司包括昆山裕川環保工程有限公司；2026年公告另揭露定捷科技工程、裕品資源科技及澤康資源等子公司。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_environmental_engineering
+  name: 環境工程
+  period: '2025'
+  revenue_share_pct: 92.39
+- evidence_ids:
+  - e1
+  id: seg_waste_treatment
+  name: 廢棄物處理
+  period: '2025'
+  revenue_share_pct: 7.08
+- evidence_ids:
+  - e1
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 0.53
+relations:
+  subsidiaries:
+  - as_of: '2026-07-09'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 高科技廠房機電及無塵室工程子公司
+    details:
+    - 高科技廠房機電及無塵室工程子公司
+    edge: e43a790b8ff84
+    evidence_level: primary
+    id: org.定捷科技工程股份有限公司
+    name: 定捷科技工程股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接投資之環保工程子公司
+    details:
+    - 直接投資之環保工程子公司
+    edge: e012af5ca974f
+    evidence_level: primary
+    id: org.昆山裕川環保工程有限公司
+    name: 昆山裕川環保工程有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-09-17'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 公告具名子公司
+    details:
+    - 公告具名子公司
+    edge: ec45fa33e1ece
+    evidence_level: primary
+    id: org.澤康資源股份有限公司
+    name: 澤康資源股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-07-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 木質生質燃料與資源循環子公司
+    details:
+    - 木質生質燃料與資源循環子公司
+    edge: e75d31043fa06
+    evidence_level: primary
+    id: org.裕品資源科技股份有限公司
+    name: 裕品資源科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 2026年6月18日投資設立公告所述尚未定名之子公司；未推定與其他具名子公司相…
 website: http://www.yseec.com
 tax_id: '84339006'
 incorporated: '1993-11-09'
 listed: '2025-01-15'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.7715#e1:
+    locator: 印刷頁55／PDF第59頁，營業比重；各列依序為112、113、114年度金額及比重
+    published_date: null
+    publisher: 裕山環境工程股份有限公司
+    quote_check: found
+    title: 裕山環境工程股份有限公司114年度年報
+    url: https://www.yseec.com/uploads/images/InvestorZone/02財務資訊/115年年報/114年報(尚未適用永續揭露準則).pdf
+  tw.7715#e2:
+    locator: 印刷頁56／PDF第60頁，土壤及地下水污染整治及顧問
+    published_date: null
+    publisher: 裕山環境工程股份有限公司
+    quote_check: found
+    title: 裕山環境工程股份有限公司114年度年報
+    url: https://www.yseec.com/uploads/images/InvestorZone/02財務資訊/115年年報/114年報(尚未適用永續揭露準則).pdf
+  tw.7715#e3:
+    locator: 印刷頁56／PDF第60頁，循環經濟
+    published_date: null
+    publisher: 裕山環境工程股份有限公司
+    quote_check: found
+    title: 裕山環境工程股份有限公司114年度年報
+    url: https://www.yseec.com/uploads/images/InvestorZone/02財務資訊/115年年報/114年報(尚未適用永續揭露準則).pdf
+  tw.7715#e4:
+    locator: 競爭優勢
+    published_date: null
+    publisher: 裕山環境工程股份有限公司
+    quote_check: found
+    title: 服務項目－設備技術開發
+    url: https://www.yseec.com/tw/service/category/設備技術開發
+  tw.7715#e5:
+    locator: 土壤TPH污染好氧生物降解
+    published_date: null
+    publisher: 裕山環境工程股份有限公司
+    quote_check: found
+    title: 服務項目－技術研發
+    url: https://www.yseec.com/tw/service/category/技術研發
+  tw.7715#e6:
+    locator: 印刷頁95／PDF第99頁，關係企業基本資料註
+    published_date: null
+    publisher: 裕山環境工程股份有限公司
+    quote_check: found
+    title: 裕山環境工程股份有限公司114年度年報
+    url: https://www.yseec.com/uploads/images/InvestorZone/02財務資訊/115年年報/114年報(尚未適用永續揭露準則).pdf
+  tw.7715#e7:
+    locator: 說明第5項，發生緣由
+    published_date: '2026-07-09'
+    publisher: 裕山環境工程股份有限公司
+    quote_check: found
+    title: 公告本公司設立子公司案－定捷
+    url: https://www.yseec.com/tw/ir_news/category/4/公告本公司設立子公司案_定捷
+  tw.7715#e8:
+    locator: 公告標題及說明第5項，發生緣由
+    published_date: '2026-07-23'
+    publisher: 裕山環境工程股份有限公司
+    quote_check: found
+    title: 公告本公司設立子公司案－裕品資源
+    url: https://www.yseec.com/tw/ir_news/category/4/公告本公司設立子公司案_裕品資源
+  tw.7715#e9:
+    locator: 公告標題
+    published_date: '2026-09-17'
+    publisher: 裕山環境工程股份有限公司
+    quote_check: found
+    title: 代子公司澤康資源股份有限公司公告董事會決議重大投資規劃案
+    url: https://www.yseec.com/tw/ir_news/category/4/代子公司澤康資源股份有限公司公告董事會決議_重大投資規劃案

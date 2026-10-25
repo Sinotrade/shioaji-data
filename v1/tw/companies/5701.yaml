@@ -8,12 +8,84 @@ industry:
   l0_code: '16'
   l0_name: 觀光餐旅
   l0_name_en: Tourism and Hospitality
-primary_chain_position: unknown
+  l1: conglomerate
+  l1_name: 綜合
+  l1_name_en: Conglomerates
+  l2: cong.holding
+  l2_name: 綜合與控股
+  l2_name_en: Conglomerates & Holdings
+  l3: cong.other
+  l3_name: 其他
+  l3_name_en: Others
+primary_chain_position: not_applicable
+summary_short: 經營主題樂園與渡假飯店，提供遊樂、住宿、餐飲及會議服務。
+summary_long: 劍湖山主要經營主題樂園與渡假飯店，2025年營收比重分別為52.1%與47.0%，其他業務占0.9%。主題樂園提供機械遊樂及水上遊樂設施，結合水陸遊樂體驗。劍湖山渡假大飯店提供住宿，房型涵蓋標準客房、日式客房及親子主題房。飯店餐飲包括中餐廳、西餐廳與中庭酒吧，供應中式桌菜、西式及多國料理。另提供宴會廳、國際會議廳及多功能會議室，承接宴席、會議、展示發表與教育訓練等活動。
+segments:
+- evidence_ids:
+  - e02
+  id: seg_park
+  name: 主題樂園
+  period: '2025'
+  revenue_share_pct: 52.1
+- evidence_ids:
+  - e02
+  id: seg_hotel
+  name: 渡假飯店
+  period: '2025'
+  revenue_share_pct: 47
+- evidence_ids:
+  - e02
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 0.9
 website: http://www.janfusun.com.tw
 tax_id: '22265047'
 incorporated: '1986-08-07'
 listed: '1998-03-12'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-25'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.5701#e02:
+    locator: 第40頁，肆、營運概況／一、業務內容／2.營業比重；PDF第44頁
+    published_date: '2026-05-15'
+    publisher: 劍湖山世界股份有限公司
+    quote_check: found
+    title: 劍湖山世界股份有限公司114年度年報
+    url: https://www.janfusun.com.tw/upload/editor/files/20260602015307.pdf
+  tw.5701#e03:
+    locator: 第40頁，業務主要內容與商品（服務）項目／主題樂園；PDF第44頁
+    published_date: '2026-05-15'
+    publisher: 劍湖山世界股份有限公司
+    quote_check: found
+    title: 劍湖山世界股份有限公司114年度年報
+    url: https://www.janfusun.com.tw/upload/editor/files/20260602015307.pdf
+  tw.5701#e04:
+    locator: 優質客房／標準客房、日式客房、酷奇親子主題房
+    published_date: null
+    publisher: 劍湖山世界股份有限公司
+    quote_check: found
+    title: 劍湖山渡假大飯店－優質客房
+    url: https://www.janfusun.com.tw/html/jrhhotel/room.php?unid=3
+  tw.5701#e05:
+    locator: 禪園中餐廳介紹
+    published_date: null
+    publisher: 劍湖山世界股份有限公司
+    quote_check: found
+    title: 劍湖山渡假大飯店－中西美食
+    url: https://www.janfusun.com.tw/html/place/index.php?cid=8&cid2=9&unid=3
+  tw.5701#e06:
+    locator: 蔚藍西餐廳介紹
+    published_date: null
+    publisher: 劍湖山世界股份有限公司
+    quote_check: found
+    title: 劍湖山渡假大飯店－中西美食
+    url: https://www.janfusun.com.tw/html/place/index.php?cid=8&cid2=9&unid=3
+  tw.5701#e07:
+    locator: 宴會廳、國際會議廳與多功能會議室介紹
+    published_date: null
+    publisher: 劍湖山世界股份有限公司
+    quote_check: found
+    title: 劍湖山渡假大飯店－菁英會議
+    url: https://www.janfusun.com.tw/html/place/index.php?cid=12&cid2=42&unid=3

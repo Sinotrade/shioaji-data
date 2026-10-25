@@ -8,12 +8,135 @@ industry:
   l0_code: '28'
   l0_name: 電子零組件業
   l0_name_en: Electronic Parts and Components
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.chassis
+  l3_name: 機殼與機構件
+  l3_name_en: Chassis & Mechanical Parts
+chain: chain.networking
+chain_stage:
+  agreement: both
+  also: []
+  reason: 沖壓電子零組件占營業比重約98%，包含通訊金屬屏蔽及終端設備精密機構件，屬模組與零組件。
+  stage: modules
+  stage_name: 模組與零組件
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 製造精密金屬沖壓電子零組件及沖壓模具。
+summary_long: 同協電子以精密金屬沖壓零組件及沖壓模具為主要業務，2025年沖壓電子零組件營業比重約98%，模具製作及其他相關業務約2%。產品涵蓋鐵框、金屬蓋、支架、彈片、框架、外殼及散熱相關零件，應用於通訊、資訊、車用、醫療與消費性電子。公司並開發5G、WiFi及DOCSIS 4.0金屬屏蔽零組件，以及低軌衛星地面接收設備的精密機構件。集團透過全資子公司Next & New Technology Ltd.持有蘇州新新電子科技有限公司全部股權。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_stamping
+  name: 沖壓電子零組件
+  period: '2025'
+  revenue_share_pct: 98
+- evidence_ids:
+  - e1
+  id: seg_molds_other
+  name: 模具製作及其他相關業務
+  period: '2025'
+  revenue_share_pct: 2
+main_theme: theme.5g
+themes:
+- also: []
+  stage: components
+  theme: theme.5g
+  tier: upstream
+- also: []
+  stage: components
+  theme: theme.leo_satellite
+  tier: upstream
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%股權的子公司
+    details:
+    - 直接持有100%股權的子公司
+    edge: ef35a7dd33c4d
+    evidence_level: primary
+    id: org.next-new-technology
+    name: Next & New Technology Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過Next & New Technology Ltd.間接持有100%股權
+    details:
+    - 透過Next & New Technology Ltd.間接持有100%股權
+    edge: e0fc81400fe0a
+    evidence_level: primary
+    id: org.suzhou-xinxin-electronic-technology
+    name: 蘇州新新電子科技有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 衛星通訊客戶
 website: www.mustang-group.com
 tax_id: '33701355'
 incorporated: '1972-12-14'
 listed: '2000-09-28'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.5460#e1:
+    locator: 印刷頁76，PDF第81頁，業務範圍第1項
+    published_date: '2026-05-15'
+    publisher: 同協電子股份有限公司
+    quote_check: not_found
+    title: 同協電子股份有限公司114年年報
+    url: https://doc.twse.com.tw/pdf/2025_5460_20260623F04_20261024_201757.pdf
+  tw.5460#e2:
+    locator: 印刷頁76，PDF第81頁，公司目前之商品項目
+    published_date: '2026-05-15'
+    publisher: 同協電子股份有限公司
+    quote_check: found
+    title: 同協電子股份有限公司114年年報
+    url: https://doc.twse.com.tw/pdf/2025_5460_20260623F04_20261024_201757.pdf
+  tw.5460#e3:
+    locator: 印刷頁76，PDF第81頁，公司目前之商品項目第2項及計畫開發之新商品
+    published_date: '2026-05-15'
+    publisher: 同協電子股份有限公司
+    quote_check: not_found
+    title: 同協電子股份有限公司114年年報
+    url: https://doc.twse.com.tw/pdf/2025_5460_20260623F04_20261024_201757.pdf
+  tw.5460#e4:
+    locator: 印刷頁78，PDF第83頁，近期研發重點及成果高頻通訊應用第1項
+    published_date: '2026-05-15'
+    publisher: 同協電子股份有限公司
+    quote_check: found
+    title: 同協電子股份有限公司114年年報
+    url: https://doc.twse.com.tw/pdf/2025_5460_20260623F04_20261024_201757.pdf
+  tw.5460#e5:
+    locator: 印刷頁78，PDF第83頁，近期研發重點及成果高頻通訊應用第2項
+    published_date: '2026-05-15'
+    publisher: 同協電子股份有限公司
+    quote_check: not_found
+    title: 同協電子股份有限公司114年年報
+    url: https://doc.twse.com.tw/pdf/2025_5460_20260623F04_20261024_201757.pdf
+  tw.5460#e6:
+    locator: 印刷頁96，PDF第101頁，關係企業組織圖，由上至下依箭頭連結
+    published_date: '2026-05-15'
+    publisher: 同協電子股份有限公司
+    quote_check: found
+    title: 同協電子股份有限公司114年年報
+    url: https://doc.twse.com.tw/pdf/2025_5460_20260623F04_20261024_201757.pdf
+  tw.5460#e7:
+    locator: 印刷頁77，PDF第82頁，產業上、中、下游之關聯性圖，中游欄
+    published_date: '2026-05-15'
+    publisher: 同協電子股份有限公司
+    quote_check: not_found
+    title: 同協電子股份有限公司114年年報
+    url: https://doc.twse.com.tw/pdf/2025_5460_20260623F04_20261024_201757.pdf

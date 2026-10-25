@@ -8,13 +8,178 @@ industry:
   l0_code: '05'
   l0_name: 電機機械
   l0_name_en: Electric Machinery
-primary_chain_position: unknown
+  l1: energy
+  l1_name: 能源
+  l1_name_en: Energy & Utilities
+  l2: energy.green
+  l2_name: 綠能
+  l2_name_en: Renewable Energy
+  l3: green.wind
+  l3_name: 風電
+  l3_name_en: Wind Power
+primary_chain_position: upstream
+summary_short: 製造風力發電、注塑機與產業機械用鑄件，以再生能源類營收為主。
+summary_long: 永冠-KY主要製造風力發電、注塑機與產業機械用鑄件，風電產品包括輪轂、齒輪箱、底座與軸承座。依公司公告所列2025年第四季資料，再生能源占營收52.2%，產業機械占30.0%，注塑機占17.8%。產業機械產品涵蓋空壓機用轉子、齒輪箱與冷卻器，以及水處理用閥體和蝶閥；注塑機產品包括頭板鑄件。官網列示的重要子公司包括寧波永祥鑄造、寧波陸霖機械鑄造、江蘇鋼銳精密機械及永冠重工（泰國）。
+segments:
+- evidence_ids:
+  - e2
+  id: renewable_energy
+  name: 再生能源
+  period: 2025Q4
+  revenue_share_pct: 52.2
+- evidence_ids:
+  - e3
+  id: industrial_machinery
+  name: 產業機械
+  period: 2025Q4
+  revenue_share_pct: 30
+- evidence_ids:
+  - e4
+  id: injection_molding
+  name: 注塑機
+  period: 2025Q4
+  revenue_share_pct: 17.8
+relations:
+  subsidiaries:
+  - as_of: '2026-10-25'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團重要子公司
+    details:
+    - 集團重要子公司
+    edge: e53b330e62aac
+    evidence_level: primary
+    id: org.jiangsu-gangrui-precision-machinery
+    name: 江蘇鋼銳精密機械有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-25'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團重要子公司
+    details:
+    - 集團重要子公司
+    edge: ed8631acbed21
+    evidence_level: primary
+    id: org.ningbo-lulin-machinery-foundry
+    name: 寧波陸霖機械鑄造有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-25'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團重要子公司
+    details:
+    - 集團重要子公司
+    edge: e681b21654e3f
+    evidence_level: primary
+    id: org.ningbo-yongxiang-foundry
+    name: 寧波永祥鑄造有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-25'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團重要子公司
+    details:
+    - 集團重要子公司
+    edge: ea6edb9c31216
+    evidence_level: primary
+    id: org.yeong-guan-heavy-industry-thailand
+    name: 永冠重工（泰國）有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.ygget.com/index/tw.aspx
 tax_id: '41048746'
 incorporated: '2008-01-22'
 listed: '2012-04-27'
 foreign_registration: KY 開曼群島
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-25'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1589#e1:
+    locator: 產品與服務／再生能源類產品，產品介紹段落
+    published_date: null
+    publisher: 永冠能源科技集團有限公司
+    quote_check: found
+    title: 再生能源類產品
+    url: https://www.ygget.com/content/tw/226.aspx
+  tw.1589#e10:
+    locator: 關於永冠／重要子公司／江蘇鋼銳精密機械有限公司
+    published_date: null
+    publisher: 永冠能源科技集團有限公司
+    quote_check: found
+    title: 江蘇鋼銳精密機械有限公司
+    url: https://www.ygget.com/contact/tw/252.aspx
+  tw.1589#e11:
+    locator: 關於永冠／重要子公司／永冠重工（泰國）有限公司
+    published_date: null
+    publisher: 永冠能源科技集團有限公司
+    quote_check: found
+    title: 永冠重工（泰國）有限公司
+    url: https://www.ygget.com/contact/tw/923.aspx
+  tw.1589#e2:
+    locator: 各季出貨概況／營收比表，再生能源列、4Q25欄
+    published_date: '2026-10-12'
+    publisher: 永冠能源科技集團有限公司
+    quote_check: not_found
+    title: 2026年09月營收出貨概況
+    url: https://www.ygget.com/show/tw/5695.aspx
+  tw.1589#e3:
+    locator: 各季出貨概況／營收比表，產業機械列、4Q25欄
+    published_date: '2026-10-12'
+    publisher: 永冠能源科技集團有限公司
+    quote_check: not_found
+    title: 2026年09月營收出貨概況
+    url: https://www.ygget.com/show/tw/5695.aspx
+  tw.1589#e4:
+    locator: 各季出貨概況／營收比表，注塑機列、4Q25欄
+    published_date: '2026-10-12'
+    publisher: 永冠能源科技集團有限公司
+    quote_check: not_found
+    title: 2026年09月營收出貨概況
+    url: https://www.ygget.com/show/tw/5695.aspx
+  tw.1589#e5:
+    locator: 產品與服務／注塑機類產品，頭板產品項目
+    published_date: null
+    publisher: 永冠能源科技集團有限公司
+    quote_check: not_found
+    title: 注塑機類產品
+    url: https://www.ygget.com/content/zh/228.aspx
+  tw.1589#e6:
+    locator: 產品與服務／產業機械／空壓機，產品名稱列表
+    published_date: null
+    publisher: 永冠能源科技集團有限公司
+    quote_check: found
+    title: 空壓機
+    url: https://www.ygget.com/content/zh/451.aspx
+  tw.1589#e7:
+    locator: 產品與服務／產業機械／水處理系統，產品名稱列表
+    published_date: null
+    publisher: 永冠能源科技集團有限公司
+    quote_check: not_found
+    title: 水處理系統
+    url: https://www.ygget.com/content/zh/227.aspx
+  tw.1589#e8:
+    locator: 關於永冠／重要子公司／寧波永祥鑄造有限公司
+    published_date: null
+    publisher: 永冠能源科技集團有限公司
+    quote_check: found
+    title: 寧波永祥鑄造有限公司
+    url: https://www.ygget.com/contact/tw/249.aspx
+  tw.1589#e9:
+    locator: 關於永冠／重要子公司／寧波陸霖機械鑄造有限公司
+    published_date: null
+    publisher: 永冠能源科技集團有限公司
+    quote_check: found
+    title: 寧波陸霖機械鑄造有限公司
+    url: https://www.ygget.com/contact/tw/250.aspx

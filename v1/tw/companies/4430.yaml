@@ -8,12 +8,229 @@ industry:
   l0_code: '20'
   l0_name: 其他業
   l0_name_en: Others
-primary_chain_position: unknown
+  l1: materials
+  l1_name: 原物料
+  l1_name_en: Materials
+  l2: mat.other
+  l2_name: 其他原物料
+  l2_name_en: Other Materials
+  l3: matl.textile_fiber
+  l3_name: 紡織纖維與機能布料
+  l3_name_en: Textiles, Fibers & Functional Fabrics
+chain: chain.textile
+chain_stage:
+  agreement: both
+  also:
+  - stage: fabric
+    stage_name: 織布與染整
+    tier: midstream
+  reason: 長纖線材占營收51.26%為最大來源，另有短纖事業生產不織布及填充材料。
+  stage: fiber
+  stage_name: 纖維與紗
+  tier: upstream
+primary_chain_position: upstream
+summary_short: 製造銷售釣魚線、球拍線、工業用線、不織布及機能用品。
+summary_long: 耀億工業主要從事纖維線材、不織布及相關應用產品的製造加工與銷售。2025年營收以長纖事業群為主，占51.26%，短纖事業群占45.23%，機能用品事業群占3.51%。長纖產品包括釣魚線、網球與羽球拍線、割草線及工業用線；短纖業務的雅康寧體系生產不織布及填充材料，應用於汽車與居家用品。機能用品包括床墊與寵物用品，公司亦揭露正開發訊號線、感應線及機器人線材，應用範圍涵蓋機器人及自動化設備。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_long_fiber
+  name: 長纖事業群
+  period: '2025'
+  revenue_share_pct: 51.26
+- evidence_ids:
+  - e1
+  id: seg_staple_fiber
+  name: 短纖事業群
+  period: '2025'
+  revenue_share_pct: 45.23
+- evidence_ids:
+  - e1
+  id: seg_functional
+  name: 機能用品事業群
+  period: '2025'
+  revenue_share_pct: 3.51
+main_theme: theme.robotics
+themes:
+- also: []
+  stage: components
+  theme: theme.robotics
+  tier: upstream
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接全資子公司；投資業務
+    details:
+    - 直接全資子公司；投資業務
+    edge: ef387ea9bcdee
+    evidence_level: primary
+    id: org.golden-crown-enterprise-ltd
+    name: Golden Crown Enterprise Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過香港耀億持有的全資子公司；纖維製品
+    details:
+    - 透過香港耀億持有的全資子公司；纖維製品
+    edge: e758e18293571
+    evidence_level: primary
+    id: org.東莞雅康寧纖維製品有限公司
+    name: 東莞雅康寧纖維製品有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接全資子公司；釣魚線、工業用線與網球拍線
+    details:
+    - 直接全資子公司；釣魚線、工業用線與網球拍線
+    edge: ef6fc2c7c73ad
+    evidence_level: primary
+    id: org.耀億-越南-責任有限公司
+    name: 耀億(越南)責任有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過Golden Crown持有的全資子公司
+    details:
+    - 透過Golden Crown持有的全資子公司
+    edge: ea4129edb949e
+    evidence_level: primary
+    id: org.耀億-香港-開發有限公司
+    name: 耀億(香港)開發有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過香港耀億持有的全資子公司；纖維製品
+    details:
+    - 透過香港耀億持有的全資子公司；纖維製品
+    edge: e890fcfe12c95
+    evidence_level: primary
+    id: org.長興雅康寧材料科技有限公司
+    name: 長興雅康寧材料科技有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接全資子公司；進出口貿易
+    details:
+    - 直接全資子公司；進出口貿易
+    edge: ece18a1cf67b4
+    evidence_level: primary
+    id: org.雅康寧-香港-貿易有限公司
+    name: 雅康寧(香港)貿易有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.yaoi.com.tw/
 tax_id: '59021804'
 incorporated: '1973-11-23'
 listed: '2011-06-09'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4430#e1:
+    locator: 第47頁，主要營業內容及其比重；單位為新台幣仟元
+    published_date: '2026-04-20'
+    publisher: 耀億工業股份有限公司
+    quote_check: found
+    title: 耀億工業股份有限公司114年度年報
+    url: https://www.yaoi.com.tw/archive/doc/177873918066483.pdf
+  tw.4430#e10:
+    locator: 第13頁，列入合併財務報表之子公司
+    published_date: '2026-08-05'
+    publisher: 耀億工業股份有限公司
+    quote_check: found
+    title: 耀億工業股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.yaoi.com.tw/archive/doc/2026Q2.pdf
+  tw.4430#e11:
+    locator: 第13頁，列入合併財務報表之子公司
+    published_date: '2026-08-05'
+    publisher: 耀億工業股份有限公司
+    quote_check: found
+    title: 耀億工業股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.yaoi.com.tw/archive/doc/2026Q2.pdf
+  tw.4430#e12:
+    locator: 第13頁，列入合併財務報表之子公司
+    published_date: '2026-08-05'
+    publisher: 耀億工業股份有限公司
+    quote_check: found
+    title: 耀億工業股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.yaoi.com.tw/archive/doc/2026Q2.pdf
+  tw.4430#e2:
+    locator: 第47頁，所營業務之主要內容
+    published_date: '2026-04-20'
+    publisher: 耀億工業股份有限公司
+    quote_check: found
+    title: 耀億工業股份有限公司114年度年報
+    url: https://www.yaoi.com.tw/archive/doc/177873918066483.pdf
+  tw.4430#e3:
+    locator: 第50頁，釣魚線產品說明
+    published_date: '2026-04-20'
+    publisher: 耀億工業股份有限公司
+    quote_check: found
+    title: 耀億工業股份有限公司114年度年報
+    url: https://www.yaoi.com.tw/archive/doc/177873918066483.pdf
+  tw.4430#e4:
+    locator: 第50頁，不織布市場競爭情形
+    published_date: '2026-04-20'
+    publisher: 耀億工業股份有限公司
+    quote_check: found
+    title: 耀億工業股份有限公司114年度年報
+    url: https://www.yaoi.com.tw/archive/doc/177873918066483.pdf
+  tw.4430#e5:
+    locator: 第47頁，所營業務之主要內容
+    published_date: '2026-04-20'
+    publisher: 耀億工業股份有限公司
+    quote_check: found
+    title: 耀億工業股份有限公司114年度年報
+    url: https://www.yaoi.com.tw/archive/doc/177873918066483.pdf
+  tw.4430#e6:
+    locator: 第54頁，機能用品
+    published_date: '2026-04-20'
+    publisher: 耀億工業股份有限公司
+    quote_check: found
+    title: 耀億工業股份有限公司114年度年報
+    url: https://www.yaoi.com.tw/archive/doc/177873918066483.pdf
+  tw.4430#e7:
+    locator: 第13頁，列入合併財務報表之子公司；115年6月30日持股欄
+    published_date: '2026-08-05'
+    publisher: 耀億工業股份有限公司
+    quote_check: found
+    title: 耀億工業股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.yaoi.com.tw/archive/doc/2026Q2.pdf
+  tw.4430#e8:
+    locator: 第13頁，列入合併財務報表之子公司；註1為重要子公司
+    published_date: '2026-08-05'
+    publisher: 耀億工業股份有限公司
+    quote_check: found
+    title: 耀億工業股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.yaoi.com.tw/archive/doc/2026Q2.pdf
+  tw.4430#e9:
+    locator: 第13頁，列入合併財務報表之子公司
+    published_date: '2026-08-05'
+    publisher: 耀億工業股份有限公司
+    quote_check: found
+    title: 耀億工業股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.yaoi.com.tw/archive/doc/2026Q2.pdf

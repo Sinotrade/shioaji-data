@@ -8,13 +8,210 @@ industry:
   l0_code: '38'
   l0_name: 居家生活
   l0_name_en: Home Life
-primary_chain_position: unknown
+  l1: consumer
+  l1_name: 消費
+  l1_name_en: Consumer
+  l2: cons.staples
+  l2_name: 民生消費
+  l2_name_en: Consumer Staples
+  l3: consumer.household
+  l3_name: 家用品與個人護理
+  l3_name_en: Household & Personal Products
+primary_chain_position: not_applicable
+summary_short: 透過子公司研發、製造及銷售商用與家用烘焙器具，以烤模、訂製器具及工具為主。
+summary_long: 三能-KY透過旗下營運子公司，從事烘焙器具與周邊產品的研發、製造及銷售，以SANNENG拓展商用市場，並以UNOPAN經營家用烘焙器具。2025年營收以烘焙烤模類占41.48%為最大來源，訂製類占30.89%，烘焙工具類占21.66%，其餘為家用類、食材與其他類。主要產品包括烤盤、土司盒、蛋糕模、打蛋器及訂製器具，並推出SANNENG OUTDOOR戶外用品。集團營運子公司分布於台灣、中國、日本與印尼。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_moulds
+  name: 烘焙烤模類
+  period: '2025'
+  revenue_share_pct: 41.48
+- evidence_ids:
+  - e2
+  id: seg_custom
+  name: 訂製類
+  period: '2025'
+  revenue_share_pct: 30.89
+- evidence_ids:
+  - e2
+  id: seg_tools
+  name: 烘焙工具類
+  period: '2025'
+  revenue_share_pct: 21.66
+- evidence_ids:
+  - e2
+  id: seg_home
+  name: 家用類
+  period: '2025'
+  revenue_share_pct: 0.96
+- evidence_ids:
+  - e2
+  id: seg_ingredients
+  name: 食材
+  period: '2025'
+  revenue_share_pct: 1.78
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他類
+  period: '2025'
+  revenue_share_pct: 3.23
+relations:
+  subsidiaries:
+  - as_of: '2026-04-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 印尼營運子公司
+    details:
+    - 印尼營運子公司
+    edge: e4764ed08d2f1
+    evidence_level: primary
+    id: org.san-neng-bakeware-indonesia
+    name: PT. San Neng Bakeware Indonesia
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 印尼製造子公司
+    details:
+    - 印尼製造子公司
+    edge: ef9ed783e9148
+    evidence_level: primary
+    id: org.sanneng-asia-industry-indonesia
+    name: PT. Sanneng Asia Industry Indonesia
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 台灣營運子公司
+    details:
+    - 台灣營運子公司
+    edge: e199662099057
+    evidence_level: primary
+    id: org.sanneng-bakeware-taiwan
+    name: 三能食品器具股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 中國主要營運子公司
+    details:
+    - 中國主要營運子公司
+    edge: e9c778e410a75
+    evidence_level: primary
+    id: org.sanneng-bakeware-wuxi
+    name: 三能器具(無錫)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 日本營運子公司
+    details:
+    - 日本營運子公司
+    edge: e1069daa0b75b
+    evidence_level: primary
+    id: org.sanneng-japan-bakeware
+    name: 三能ジャパン食品器具株式会社
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.sannenggroup.com/
 tax_id: '82517356'
 incorporated: '2015-04-29'
 listed: '2018-12-11'
 foreign_registration: KY 開曼群島
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6671#e10:
+    locator: 印刷第8頁，2.1設立日期與集團簡介
+    published_date: '2026-04-30'
+    publisher: 三能集團控股股份有限公司
+    quote_check: found
+    title: 2025年度年報
+    url: https://sannenggroup.com/wp-content/uploads/2026/06/%E5%B9%B4%E5%A0%B1_2025.pdf
+  tw.6671#e11:
+    locator: 印刷第8頁，2.1設立日期與集團簡介
+    published_date: '2026-04-30'
+    publisher: 三能集團控股股份有限公司
+    quote_check: found
+    title: 2025年度年報
+    url: https://sannenggroup.com/wp-content/uploads/2026/06/%E5%B9%B4%E5%A0%B1_2025.pdf
+  tw.6671#e12:
+    locator: 印刷第8頁，2.1設立日期與集團簡介
+    published_date: '2026-04-30'
+    publisher: 三能集團控股股份有限公司
+    quote_check: found
+    title: 2025年度年報
+    url: https://sannenggroup.com/wp-content/uploads/2026/06/%E5%B9%B4%E5%A0%B1_2025.pdf
+  tw.6671#e2:
+    locator: PDF第22頁，營收結構分析；欄位依序為2023、2024、2025年度
+    published_date: '2026-04-01'
+    publisher: 三能集團控股股份有限公司
+    quote_check: found
+    title: 2025年第4季法人說明會簡報
+    url: https://sannenggroup.com/wp-content/uploads/2026/04/20260401-%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83%E7%B0%A1%E5%A0%B1.pdf
+  tw.6671#e3:
+    locator: PDF第10頁，我們的產品
+    published_date: '2026-04-01'
+    publisher: 三能集團控股股份有限公司
+    quote_check: found
+    title: 2025年第4季法人說明會簡報
+    url: https://sannenggroup.com/wp-content/uploads/2026/04/20260401-%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83%E7%B0%A1%E5%A0%B1.pdf
+  tw.6671#e4:
+    locator: PDF第10頁，我們的產品
+    published_date: '2026-04-01'
+    publisher: 三能集團控股股份有限公司
+    quote_check: found
+    title: 2025年第4季法人說明會簡報
+    url: https://sannenggroup.com/wp-content/uploads/2026/04/20260401-%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83%E7%B0%A1%E5%A0%B1.pdf
+  tw.6671#e5:
+    locator: 業務服務，訂製類
+    published_date: null
+    publisher: 三能集團控股股份有限公司
+    quote_check: found
+    title: 三能簡介
+    url: https://sannenggroup.com/about-sanneng/profile/
+  tw.6671#e6:
+    locator: 業務服務，家用類
+    published_date: null
+    publisher: 三能集團控股股份有限公司
+    quote_check: found
+    title: 三能簡介
+    url: https://sannenggroup.com/about-sanneng/profile/
+  tw.6671#e7:
+    locator: 印刷第8頁，2.1設立日期與集團簡介
+    published_date: '2026-04-30'
+    publisher: 三能集團控股股份有限公司
+    quote_check: found
+    title: 2025年度年報
+    url: https://sannenggroup.com/wp-content/uploads/2026/06/%E5%B9%B4%E5%A0%B1_2025.pdf
+  tw.6671#e8:
+    locator: 印刷第8頁，2.1設立日期與集團簡介
+    published_date: '2026-04-30'
+    publisher: 三能集團控股股份有限公司
+    quote_check: found
+    title: 2025年度年報
+    url: https://sannenggroup.com/wp-content/uploads/2026/06/%E5%B9%B4%E5%A0%B1_2025.pdf
+  tw.6671#e9:
+    locator: 印刷第8頁，2.1設立日期與集團簡介
+    published_date: '2026-04-30'
+    publisher: 三能集團控股股份有限公司
+    quote_check: found
+    title: 2025年度年報
+    url: https://sannenggroup.com/wp-content/uploads/2026/06/%E5%B9%B4%E5%A0%B1_2025.pdf

@@ -8,12 +8,248 @@ industry:
   l0_code: '26'
   l0_name: 光電業
   l0_name_en: Optoelectronic
-primary_chain_position: unknown
+  l1: energy
+  l1_name: 能源
+  l1_name_en: Energy & Utilities
+  l2: energy.green
+  l2_name: 綠能
+  l2_name_en: Renewable Energy
+  l3: green.solar
+  l3_name: 太陽能
+  l3_name_en: Solar
+chain: chain.solar
+chain_stage:
+  agreement: both
+  also: []
+  reason: 太陽能部門為最大營收來源，業務涵蓋系統規劃建置、電站維運與售電。
+  stage: system
+  stage_name: 系統與電廠
+  tier: downstream
+primary_chain_position: downstream
+summary_short: 經營太陽能工程與售電，以及光學膜材製造與加工代工。
+summary_long: 迎輝科技經營光學膜材，以及太陽能工程與售電。2026年上半年合併太陽能部門對外收入為2,333.2萬元，光學膜部門為1,763.7萬元，太陽能為較大的營收來源。公司持有盛暉能源55%及東今國際100%股權，兩家子公司從事太陽能系統規劃建置。膜材產品包括量子點膜、ITO透明導電膜、防窺膜、阻水膜及3D投影銀幕，另提供捲對捲真空濺鍍代工。量子點膜可搭配Mini LED背光，終極銀幕與RealD合作開發；公司亦受未具名美國低軌衛星客戶委託，代工生產太空環境防護膜。
+segments:
+- evidence_ids:
+  - e01
+  - e02
+  id: seg_solar
+  name: 太陽能部門
+  period: 2026年上半年
+  revenue_share_pct: 56.95
+- evidence_ids:
+  - e01
+  - e02
+  id: seg_optical
+  name: 光學膜部門
+  period: 2026年上半年
+  revenue_share_pct: 43.05
+main_theme: theme.mini_led
+themes:
+- also: []
+  stage: display
+  theme: theme.mini_led
+  tier: downstream
+- also: []
+  stage: components
+  theme: theme.leo_satellite
+  tier: upstream
+relations:
+  partners:
+  - as_of: '2025-12-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 共同開發終極銀幕
+    details:
+    - 共同開發終極銀幕
+    edge: e1e0ee8a271ee
+    evidence_level: primary
+    id: org.reald
+    name: RealD
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股55%的太陽能系統子公司
+    details:
+    - 持股55%的太陽能系統子公司
+    edge: e4835466f5f07
+    evidence_level: primary
+    id: org.盛暉能源股份有限公司
+    name: 盛暉能源股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: '2026-10-24'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 硒化鎘量子點材料
+    details:
+    - 硒化鎘量子點材料
+    edge: e16fa8b3268be
+    evidence_level: primary
+    id: org.nano-s-ystem-materials
+    name: Nano s ystem materials
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 一年租金新台幣21,600,000元（未稅）
+    as_of: '2025-11-06'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 承租台南工業二路不動產使用權
+    details:
+    - 承租台南工業二路不動產使用權
+    edge: e7c8c831f71b2
+    event_date: '2025-11-06'
+    events:
+    - amount: 一年租金新台幣21,600,000元（未稅）
+      detail: 承租台南工業二路不動產使用權
+      event_date: '2025-11-06'
+    evidence_level: primary
+    id: org.久盛光電股份有限公司
+    name: 久盛光電股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 美國某低軌衛星客戶：法說會未揭露名稱，不推定為SpaceX或其他業者。
+- 114年度年報以C160、C041、D61等代碼揭露主要客戶，無法識別法人名稱。
+- 114年度年報以2356、2729、0619、2151、2224等內部代碼揭露…
+- 國內太陽能電站業主及其他膜材客戶：未取得可識別法人名稱的供應關係證據。
 website: https://www.efun.com.tw/
 tax_id: '16366341'
 incorporated: '1998-01-15'
 listed: '2007-11-16'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3523#e01:
+    locator: 第51頁，115年1月1日至6月30日部門收入表；欄序為光學膜、太陽能、其他、調整及銷除、合計
+    published_date: '2026-08-06'
+    publisher: 迎輝科技股份有限公司
+    quote_check: not_found
+    title: 115年第二季IFRS合併財務報告
+    url: https://drive.google.com/file/d/1YAdZZn9ENmrzWljLXj1k1a6uHL_4dP5h/view
+  tw.3523#e02:
+    locator: 第50頁，十四、部門資訊
+    published_date: '2026-08-06'
+    publisher: 迎輝科技股份有限公司
+    quote_check: not_found
+    title: 115年第二季IFRS合併財務報告
+    url: https://drive.google.com/file/d/1YAdZZn9ENmrzWljLXj1k1a6uHL_4dP5h/view
+  tw.3523#e03:
+    locator: 關於盛暉能源股份有限公司、主要業務
+    published_date: null
+    publisher: 迎輝科技股份有限公司
+    quote_check: found
+    title: 太陽能綠電專區
+    url: https://www.efun.com.tw/solar_tech
+  tw.3523#e04:
+    locator: 第14頁，合併財務報表編製主體；115年6月30日持有權益55%
+    published_date: '2026-08-06'
+    publisher: 迎輝科技股份有限公司
+    quote_check: not_found
+    title: 115年第二季IFRS合併財務報告
+    url: https://drive.google.com/file/d/1YAdZZn9ENmrzWljLXj1k1a6uHL_4dP5h/view
+  tw.3523#e06:
+    locator: 量子點膜
+    published_date: null
+    publisher: 迎輝科技股份有限公司
+    quote_check: not_found
+    title: 產品項目
+    url: https://www.efun.com.tw/prod_intro
+  tw.3523#e07:
+    locator: 產品規格
+    published_date: null
+    publisher: 迎輝科技股份有限公司
+    quote_check: found
+    title: ITO透明導電膜
+    url: https://www.efun.com.tw/prod_intro/ITO_film
+  tw.3523#e08:
+    locator: 技術簡介
+    published_date: null
+    publisher: 迎輝科技股份有限公司
+    quote_check: found
+    title: 高亮度2D/3D家用投影銀幕
+    url: https://www.efun.com.tw/prod_intro/Home_theater_screen
+  tw.3523#e09:
+    locator: 規格彙整
+    published_date: null
+    publisher: 迎輝科技股份有限公司
+    quote_check: found
+    title: 高亮度2D/3D家用投影銀幕
+    url: https://www.efun.com.tw/prod_intro/Home_theater_screen
+  tw.3523#e10:
+    locator: 技術簡介
+    published_date: null
+    publisher: 迎輝科技股份有限公司
+    quote_check: found
+    title: 光線控制膜材／防窺膜
+    url: https://www.efun.com.tw/prod_intro/光線控制膜材防窺膜
+  tw.3523#e11:
+    locator: 第6頁，阻水膜
+    published_date: '2025-12-23'
+    publisher: 迎輝科技股份有限公司
+    quote_check: found
+    title: 迎輝科技114年法說會
+    url: https://mopsov.twse.com.tw/nas/STR/352320251222M003.pdf
+  tw.3523#e12:
+    locator: 捲對捲真空濺鍍代工
+    published_date: null
+    publisher: 迎輝科技股份有限公司
+    quote_check: found
+    title: 膜材代工服務
+    url: https://www.efun.com.tw/Film_OEM_business
+  tw.3523#e13:
+    locator: 研發與生產，薄型量子點膜平板應用
+    published_date: null
+    publisher: 迎輝科技股份有限公司
+    quote_check: found
+    title: 量子點膜技術
+    url: https://www.efun.com.tw/prod_intro/QD_film
+  tw.3523#e14:
+    locator: 第7頁，衛星太空環境防護膜
+    published_date: '2025-12-23'
+    publisher: 迎輝科技股份有限公司
+    quote_check: found
+    title: 迎輝科技114年法說會
+    url: https://mopsov.twse.com.tw/nas/STR/352320251222M003.pdf
+  tw.3523#e15:
+    locator: 第9頁，高輝度3D立體電影銀幕
+    published_date: '2025-12-23'
+    publisher: 迎輝科技股份有限公司
+    quote_check: found
+    title: 迎輝科技114年法說會
+    url: https://mopsov.twse.com.tw/nas/STR/352320251222M003.pdf
+  tw.3523#e16:
+    locator: 產品規格
+    published_date: null
+    publisher: 迎輝科技股份有限公司
+    quote_check: found
+    title: 量子點膜技術
+    url: https://www.efun.com.tw/prod_intro/QD_film
+  tw.3523#e18:
+    locator: 公告第1、2、5、6項
+    published_date: '2025-11-06'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ刊載
+    quote_check: found
+    title: 迎輝 本公司向關係人取得使用權資產
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=ee0d30ab-e40f-4040-bfdb-9fce329d94f2
+  tw.3523#e19:
+    locator: 公告第5、10項
+    published_date: '2025-11-06'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ刊載
+    quote_check: found
+    title: 迎輝 本公司向關係人取得使用權資產
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=ee0d30ab-e40f-4040-bfdb-9fce329d94f2

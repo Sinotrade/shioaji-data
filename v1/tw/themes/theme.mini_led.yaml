@@ -20,6 +20,15 @@ stages:
   tier: downstream
   name_en: Displays & End Devices
 members:
+- id: tw.1338
+  stage: display
+  tier: downstream
+  detail: Mini LED車內顯示應用
+  as_of: '2025-06-06'
+  evidence:
+  - tw.1338#e13
+  - tw.1338#e14
+  confidence: ai_cross_checked
 - id: tw.1717
   stage: packaging
   tier: midstream
@@ -69,6 +78,14 @@ members:
   evidence:
   - tw.3010#e07
   confidence: ai_cross_checked
+- id: tw.3321
+  stage: packaging
+  tier: midstream
+  detail: Mini LED基板製造
+  as_of: 2019-08
+  evidence:
+  - tw.3321#e4
+  confidence: ai_cross_checked
 - id: tw.3437
   stage: packaging
   tier: midstream
@@ -86,6 +103,14 @@ members:
   evidence:
   - tw.3481#e4
   confidence: ai_cross_checked
+- id: tw.3523
+  stage: display
+  tier: downstream
+  detail: Mini LED背光搭配量子點膜
+  as_of: '2026-10-24'
+  evidence:
+  - tw.3523#e13
+  confidence: ai_cross_checked
 - id: tw.3527
   stage: display
   tier: downstream
@@ -94,6 +119,14 @@ members:
   evidence:
   - tw.3527#e7
   - tw.3527#e8
+  confidence: ai_cross_checked
+- id: tw.3531
+  stage: display
+  tier: downstream
+  detail: Mini LED顯示器商品化
+  as_of: '2025-03-31'
+  evidence:
+  - tw.3531#e5
   confidence: ai_cross_checked
 - id: tw.3535
   stage: null
@@ -143,6 +176,14 @@ members:
   as_of: '2026-05-08'
   evidence:
   - tw.4720#e13
+  confidence: ai_cross_checked
+- id: tw.4729
+  stage: display
+  tier: downstream
+  detail: Mini LED顯示產品開發
+  as_of: 2025-12
+  evidence:
+  - tw.4729#e8
   confidence: ai_cross_checked
 - id: tw.4749
   stage: display
@@ -239,6 +280,14 @@ members:
   as_of: '2025-12-26'
   evidence:
   - tw.6141#e5
+  confidence: ai_cross_checked
+- id: tw.6158
+  stage: display
+  tier: downstream
+  detail: Mini／Micro LED用客製化線材與連接器
+  as_of: '2025-03-31'
+  evidence:
+  - tw.6158#e7
   confidence: ai_cross_checked
 - id: tw.6168
   stage: packaging
@@ -408,4 +457,12 @@ members:
   evidence:
   - tw.8150#e18
   confidence: ai_cross_checked
-as_of: '2026-10-23'
+- id: tw.9912
+  stage: display
+  tier: downstream
+  detail: 4K mini LED 背光顯示器開發計畫
+  as_of: '2026-05-29'
+  evidence:
+  - tw.9912#e15
+  confidence: ai_cross_checked
+as_of: '2026-10-24'

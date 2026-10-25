@@ -8,12 +8,163 @@ industry:
   l0_code: '02'
   l0_name: 食品工業
   l0_name_en: Food
-primary_chain_position: unknown
+  l1: consumer
+  l1_name: 消費
+  l1_name_en: Consumer
+  l2: cons.staples
+  l2_name: 民生消費
+  l2_name_en: Consumer Staples
+  l3: food.beverage
+  l3_name: 飲料
+  l3_name_en: Beverages
+primary_chain_position: not_applicable
+summary_short: 以HPP超高壓低溫技術製造冷壓蔬果汁、機能食品，並提供食品代工服務。
+summary_long: 金利食安以HPP超高壓低溫食品加工為核心，製造及銷售冷壓蔬果汁，並提供ODM代工服務。2025年度冷壓蔬果汁占營收86.27%，其他HPP產品占7.75%，其他業務占5.98%。產品線另涵蓋鱸魚精、膠原蛋白飲等精補品，以及冷萃茶、冷萃咖啡與花草茶。餐飲原料包括冷壓果蔬原汁、沾醬、果泥與截切果塊；加工服務涵蓋飲品、機能食品、水產品、肉品及即食食品，提供HPP低溫加工與技術服務。
+segments:
+- evidence_ids:
+  - e1
+  id: s1
+  name: 冷壓蔬果汁
+  period: 2025年度
+  revenue_share_pct: 86.27
+- evidence_ids:
+  - e2
+  id: s2
+  name: 其他HPP產品
+  period: 2025年度
+  revenue_share_pct: 7.75
+- evidence_ids:
+  - e3
+  id: s3
+  name: 其他
+  period: 2025年度
+  revenue_share_pct: 5.98
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 投資控股子公司
+    details:
+    - 投資控股子公司
+    edge: eabefb09b6623
+    evidence_level: primary
+    id: org.glowing-energy
+    name: GLOWING ENERGY LIMITED
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司
+    details:
+    - 全資子公司
+    edge: ed27043f0d7d9
+    evidence_level: primary
+    id: org.shian-biotechnology
+    name: 食安生技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股49%的泰國子公司
+    details:
+    - 持股49%的泰國子公司
+    edge: e4790a0ca6dc4
+    evidence_level: primary
+    id: org.thai-kee-fresh-safe
+    name: THAI KEE FRESH&SAFE CO., LTD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.kfs-foodtech.com/
 tax_id: '53414676'
 incorporated: '2011-06-09'
 listed: '2025-05-20'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.7743#e1:
+    locator: 第37頁，主要產品營業比重表，114年度欄
+    published_date: '2026-04-28'
+    publisher: 金利食安科技股份有限公司
+    quote_check: found
+    title: 金利食安114年度年報
+    url: https://www.kfs-foodtech.com/upload/investors/202607141125350.pdf
+  tw.7743#e10:
+    locator: 第51頁，最近年度轉投資公司表
+    published_date: '2026-04-28'
+    publisher: 金利食安科技股份有限公司
+    quote_check: found
+    title: 金利食安114年度年報
+    url: https://www.kfs-foodtech.com/upload/investors/202607141125350.pdf
+  tw.7743#e11:
+    locator: 第33頁，轉投資事業持股表註2
+    published_date: '2026-04-28'
+    publisher: 金利食安科技股份有限公司
+    quote_check: found
+    title: 金利食安114年度年報
+    url: https://www.kfs-foodtech.com/upload/investors/202607141125350.pdf
+  tw.7743#e2:
+    locator: 第37頁，主要產品營業比重表，114年度欄
+    published_date: '2026-04-28'
+    publisher: 金利食安科技股份有限公司
+    quote_check: found
+    title: 金利食安114年度年報
+    url: https://www.kfs-foodtech.com/upload/investors/202607141125350.pdf
+  tw.7743#e3:
+    locator: 第37頁，主要產品營業比重表，114年度欄
+    published_date: '2026-04-28'
+    publisher: 金利食安科技股份有限公司
+    quote_check: found
+    title: 金利食安114年度年報
+    url: https://www.kfs-foodtech.com/upload/investors/202607141125350.pdf
+  tw.7743#e4:
+    locator: 服務介紹首段
+    published_date: null
+    publisher: 金利食安科技股份有限公司
+    quote_check: found
+    title: 冷壓蔬果汁ODM 代工服務
+    url: https://www.kfs-foodtech.com/tw/news-detail/58?kind=20
+  tw.7743#e5:
+    locator: 產品線介紹
+    published_date: null
+    publisher: 金利食安科技股份有限公司
+    quote_check: found
+    title: 精補品/健康食品 ODM代工服務
+    url: https://www.kfs-foodtech.com/tw/news-detail/59?kind=20
+  tw.7743#e6:
+    locator: 餐飲原料介紹
+    published_date: null
+    publisher: 金利食安科技股份有限公司
+    quote_check: found
+    title: 餐飲原料 ODM代工服務
+    url: https://www.kfs-foodtech.com/tw/news-detail/60?kind=20
+  tw.7743#e7:
+    locator: 服務介紹首段
+    published_date: null
+    publisher: 金利食安科技股份有限公司
+    quote_check: found
+    title: 冷萃飲品 ODM代工服務
+    url: https://www.kfs-foodtech.com/tw/news-detail/61?kind=20
+  tw.7743#e8:
+    locator: 第37頁，公司目前之商品服務項目
+    published_date: '2026-04-28'
+    publisher: 金利食安科技股份有限公司
+    quote_check: found
+    title: 金利食安114年度年報
+    url: https://www.kfs-foodtech.com/upload/investors/202607141125350.pdf
+  tw.7743#e9:
+    locator: 第28頁，附註九，子公司所有權權益及表決權百分比
+    published_date: null
+    publisher: 金利食安科技股份有限公司
+    quote_check: found
+    title: 金利食安114及113年度個體財務報告暨會計師查核報告
+    url: https://www.kfs-foodtech.com/upload/investors/202603311924006.pdf

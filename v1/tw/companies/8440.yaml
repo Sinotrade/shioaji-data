@@ -8,12 +8,94 @@ industry:
   l0_code: '35'
   l0_name: 綠能環保
   l0_name_en: Green Energy and Environmental Services
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.environment
+  l2_name: 環保服務
+  l2_name_en: Environmental Services
+  l3: env.waste
+  l3_name: 廢棄物處理與資源回收
+  l3_name_en: Waste Management & Recycling
+primary_chain_position: not_applicable
+summary_short: 回收處理廢家電與資訊設備，並銷售再生金屬、塑膠等有價材。
+summary_long: 綠電再生主要提供廢電子電器與廢資訊物品回收處理，並銷售回收後的鐵、銅、鋁及塑膠等有價材。處理流程採物理乾式技術，透過拆卸、破碎及分選回收可再利用資源。2025年度合併營收中，有價材收入占65.30%，處理收入占34.70%，有價材為最大收入來源。公司官網另列廢家電、印刷電路板、映像管及冰箱發泡冷媒回收處理設備。旗下全資子公司綠電資源開發股份有限公司從事廢棄物回收業務。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_materials
+  name: 有價材收入
+  period: 2025年度
+  revenue_share_pct: 65.3
+- evidence_ids:
+  - e2
+  id: seg_processing
+  name: 處理收入
+  period: 2025年度
+  revenue_share_pct: 34.7
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股100%的廢棄物回收子公司
+    details:
+    - 持股100%的廢棄物回收子公司
+    edge: ea089afd9c4cb
+    evidence_level: primary
+    id: org.ee-resource-development
+    name: 綠電資源開發股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.eer.com.tw
 tax_id: '16636181'
 incorporated: '1998-08-05'
 listed: '2018-03-28'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.8440#e2:
+    locator: 第81頁，營業比重；114年度銷售金額及營業比重欄
+    published_date: '2026-04-10'
+    publisher: 綠電再生股份有限公司
+    quote_check: found
+    title: 綠電再生股份有限公司114年度年報
+    url: https://www.eer.com.tw/_i/assets/upload/files/114%E5%B9%B4%E5%A0%B1.pdf
+  tw.8440#e3:
+    locator: 處理項目
+    published_date: null
+    publisher: 綠電再生股份有限公司
+    quote_check: found
+    title: 關於綠電－處理項目
+    url: https://www.eer.com.tw/about_tw.php
+  tw.8440#e4:
+    locator: 處理流程說明
+    published_date: null
+    publisher: 綠電再生股份有限公司
+    quote_check: found
+    title: 營業項目－廢電子電器物品處理
+    url: https://www.eer.com.tw/business_tw.php?id=608
+  tw.8440#e5:
+    locator: 回收物清單
+    published_date: null
+    publisher: 綠電再生股份有限公司
+    quote_check: not_found
+    title: 營業項目－衍生物販賣
+    url: https://www.eer.com.tw/business_tw.php?id=610
+  tw.8440#e6:
+    locator: 設備項目清單
+    published_date: null
+    publisher: 綠電再生股份有限公司
+    quote_check: found
+    title: 營業項目－設備販賣
+    url: https://www.eer.com.tw/business_tw.php?id=607
+  tw.8440#e7:
+    locator: 第10頁，附註四（二）合併基礎
+    published_date: '2026-08-13'
+    publisher: 綠電再生股份有限公司
+    quote_check: found
+    title: 綠電再生股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.eer.com.tw/_i/assets/upload/files/115Q2.pdf

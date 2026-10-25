@@ -8,12 +8,131 @@ industry:
   l0_code: '26'
   l0_name: 光電業
   l0_name_en: Optoelectronic
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.display
+  l2_name: 光電與顯示
+  l2_name_en: Optoelectronics & Displays
+  l3: disp.touch
+  l3_name: 觸控與顯示模組
+  l3_name_en: Touch & Display Modules
+chain: chain.display
+chain_stage:
+  agreement: both
+  also: []
+  reason: 主要產品為電容式、電阻式觸控面板與觸控顯示模組，並提供客製整合服務。
+  stage: panel
+  stage_name: 面板與模組
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 製造電容式、電阻式觸控面板，提供觸控顯示模組與客製化整合服務。
+summary_long: 萬達光電以觸控面板與觸控顯示模組的設計、製造及整合服務為主要業務，產品涵蓋投射式電容、五線電阻式觸控面板及觸控顯示模組。電容式產品用於工業、醫療、強固型、車載與航海設備；電阻式產品依尺寸、比例及操作條件選型。觸控顯示模組整合面板與顯示需求，可依介面及安裝條件選型，並提供光學全貼合規格。公司亦提供從需求評估、材料選型、打樣測試到量產導入的客製化服務。集團設有境外控股子公司，並透過其間接持有昆山希格斯光電科技有限公司。
+relations:
+  subsidiaries:
+  - as_of: '2025-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過Higgstec Global Holding Ltd.間接持有的子公司
+    details:
+    - 透過Higgstec Global Holding Ltd.間接持有的子公司
+    edge: e8ff4dc60265c
+    evidence_level: primary
+    id: org.higgstec-china-holding
+    name: Higgstec China Holding Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有的境外控股子公司
+    details:
+    - 直接持有的境外控股子公司
+    edge: ee3e55de5e9f2
+    evidence_level: primary
+    id: org.higgstec-global-holding
+    name: Higgstec Global Holding Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過Higgstec China Holding Ltd.間接持有的子公司
+    details:
+    - 透過Higgstec China Holding Ltd.間接持有的子公司
+    edge: ef043e467bf8b
+    evidence_level: primary
+    id: org.kunshan-higgstec-optoelectronics
+    name: 昆山希格斯光電科技有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.higgstec.com.tw
 tax_id: '80082329'
 incorporated: '2002-11-18'
 listed: '2018-04-26'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.5220#e1:
+    locator: 產品分類介紹
+    published_date: null
+    publisher: 萬達光電科技股份有限公司
+    quote_check: found
+    title: 投射式電容觸控面板
+    url: https://www.higgstec.com/zh-hant/product/capacitive-touch-panel
+  tw.5220#e2:
+    locator: 產品分類介紹
+    published_date: null
+    publisher: 萬達光電科技股份有限公司
+    quote_check: found
+    title: 五線電阻式觸控面板
+    url: https://www.higgstec.com/zh-hant/product/resistive-touch-panel
+  tw.5220#e3:
+    locator: 觸控顯示模組介紹
+    published_date: null
+    publisher: 萬達光電科技股份有限公司
+    quote_check: found
+    title: 觸控顯示模組
+    url: https://www.higgstec.com/zh-hant/product/touch-display-modules
+  tw.5220#e4:
+    locator: 一站式服務
+    published_date: null
+    publisher: 萬達光電科技股份有限公司
+    quote_check: found
+    title: 關於萬達光電｜台灣觸控面板製造與整合夥伴
+    url: https://www.higgstec.com/zh-hant/about
+  tw.5220#e5:
+    locator: M070SSS-T1408-DY0103_00.0產品列，Touch & LCM Bonding Type欄
+    published_date: null
+    publisher: 萬達光電科技股份有限公司
+    quote_check: found
+    title: 觸控顯示模組
+    url: https://www.higgstec.com/zh-hant/product/touch-display-modules
+  tw.5220#e6:
+    locator: 第42頁，附表二，被投資公司名稱、所在地區等相關資訊
+    published_date: null
+    publisher: 萬達光電科技股份有限公司
+    quote_check: found
+    title: 萬達光電科技股份有限公司及子公司民國114年及113年第二季合併財務報告
+    url: https://www.higgstec.com/zh-hant/downloadFile/0825102315qm087137
+  tw.5220#e7:
+    locator: 第42頁，附表二，被投資公司名稱、所在地區等相關資訊
+    published_date: null
+    publisher: 萬達光電科技股份有限公司
+    quote_check: found
+    title: 萬達光電科技股份有限公司及子公司民國114年及113年第二季合併財務報告
+    url: https://www.higgstec.com/zh-hant/downloadFile/0825102315qm087137
+  tw.5220#e8:
+    locator: 第43頁，附表三，大陸投資資訊註三
+    published_date: null
+    publisher: 萬達光電科技股份有限公司
+    quote_check: found
+    title: 萬達光電科技股份有限公司及子公司民國114年及113年第二季合併財務報告
+    url: https://www.higgstec.com/zh-hant/downloadFile/0825102315qm087137

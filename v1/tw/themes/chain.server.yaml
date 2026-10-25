@@ -261,6 +261,44 @@ members:
   stage: components
   tier: midstream
   stage_role: primary
+- id: tw.3043
+  detail: UPS占營收98.37%，主要提供伺服器與資料中心電源保護設備，屬中游電源設備。
+  as_of: '2026-10-25'
+  evidence:
+  - tw.3043#e3
+  - tw.3043#e4
+  - tw.3043#e7
+  confidence: ai_cross_checked
+  source: classification
+  stage: components
+  tier: midstream
+  stage_role: primary
+- id: tw.3057
+  detail: 主要營收來自儲存整機系統，另提供整合CPU、GPU的AI平台；未見雲端或資料中心營運業務。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.3057#e1
+  - tw.3057#e2
+  - tw.3057#e5
+  - tw.3057#e6
+  confidence: ai_cross_checked
+  source: classification
+  stage: odm
+  tier: downstream
+  stage_role: primary
+- id: tw.3057
+  detail: 主要營收來自儲存整機系統，另提供整合CPU、GPU的AI平台；未見雲端或資料中心營運業務。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.3057#e1
+  - tw.3057#e2
+  - tw.3057#e5
+  - tw.3057#e6
+  confidence: ai_cross_checked
+  source: classification
+  stage: datacenter
+  tier: downstream
+  stage_role: also
 - id: tw.3060
   detail: 主要營收為伺服器等級硬碟用音圈馬達與上蓋，屬零組件及機構件。
   as_of: '2026-10-23'
@@ -511,6 +549,19 @@ members:
   - tw.4931#e1
   - tw.4931#e6
   - tw.4931#e8
+  confidence: ai_cross_checked
+  source: classification
+  stage: components
+  tier: midstream
+  stage_role: primary
+- id: tw.5223
+  detail: 主要製造散熱零件與金屬機構件，伺服器及AI伺服器業務亦屬零組件供應。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.5223#e1
+  - tw.5223#e2
+  - tw.5223#e3
+  - tw.5223#e4
   confidence: ai_cross_checked
   source: classification
   stage: components
@@ -788,6 +839,17 @@ members:
   stage: odm
   tier: downstream
   stage_role: primary
+- id: tw.6997
+  detail: 雲端服務占營收99.95%，主要提供公有雲銷售、架構建置與代管維運，屬雲端服務端。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.6997#e1
+  - tw.6997#e2
+  confidence: ai_cross_checked
+  source: classification
+  stage: datacenter
+  tier: downstream
+  stage_role: primary
 - id: tw.7711
   detail: 伺服器周邊產品占營收93.57%，實際業務為伺服器主機板與整機系統開發銷售。
   as_of: '2026-10-15'
@@ -797,6 +859,17 @@ members:
   confidence: ai_cross_checked
   source: classification
   stage: odm
+  tier: downstream
+  stage_role: primary
+- id: tw.7747
+  detail: 主要提供公有雲代管與營運服務，歸於雲端服務端。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.7747#e_cloud_revenue
+  - tw.7747#e_aws
+  confidence: ai_cross_checked
+  source: classification
+  stage: datacenter
   tier: downstream
   stage_role: primary
 - id: tw.7805
@@ -845,6 +918,32 @@ members:
   stage: components
   tier: midstream
   stage_role: primary
+- id: tw.8277
+  detail: 營收以磁碟陣列、NAS及JBOD等儲存系統為主，歸入系統設備階段；另有記憶體模組業務。
+  as_of: '2026-10-25'
+  evidence:
+  - tw.8277#e1
+  - tw.8277#e3
+  - tw.8277#e4
+  - tw.8277#e7
+  confidence: ai_cross_checked
+  source: classification
+  stage: odm
+  tier: downstream
+  stage_role: primary
+- id: tw.8277
+  detail: 營收以磁碟陣列、NAS及JBOD等儲存系統為主，歸入系統設備階段；另有記憶體模組業務。
+  as_of: '2026-10-25'
+  evidence:
+  - tw.8277#e1
+  - tw.8277#e3
+  - tw.8277#e4
+  - tw.8277#e7
+  confidence: ai_cross_checked
+  source: classification
+  stage: chips
+  tier: upstream
+  stage_role: also
 - id: tw.8996
   detail: 2026年第一季散熱事業營收逾五成，子公司提供分歧管、CDU與液冷設備。
   as_of: '2026-10-14'
@@ -858,4 +957,4 @@ members:
   stage: components
   tier: midstream
   stage_role: primary
-as_of: '2026-10-23'
+as_of: '2026-10-25'

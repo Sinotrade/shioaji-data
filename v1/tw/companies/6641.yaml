@@ -8,13 +8,262 @@ industry:
   l0_code: '35'
   l0_name: 綠能環保
   l0_name_en: Green Energy and Environmental Services
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.environment
+  l2_name: 環保服務
+  l2_name_en: Environmental Services
+  l3: env.water
+  l3_name: 水處理
+  l3_name_en: Water Treatment
+primary_chain_position: midstream
+summary_short: 以水泵、風機、攪拌機等水處理設備及相關技術服務取得營收。
+summary_long: 基士德科技集團主要從事環保水處理設備的研發、生產、銷售及安裝維修，並提供環保工藝技術服務。2025年營收以水泵為最大來源，占47.63%，風機及攪拌機分別占11.47%與8.37%，其他產品、零配件及維修服務占32.53%。集團主要經營主體為川源中國及川源揚州，台灣設有基士德環科，並透過其持有越南子公司85%股權。除實體設備外，集團亦提供污水處理廠專案設計、售後維修及AIoT智慧水務服務。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_pumps
+  name: 水泵
+  period: '2025'
+  revenue_share_pct: 47.63
+- evidence_ids:
+  - e3
+  id: seg_blowers
+  name: 風機
+  period: '2025'
+  revenue_share_pct: 11.47
+- evidence_ids:
+  - e4
+  id: seg_mixers
+  name: 攪拌機
+  period: '2025'
+  revenue_share_pct: 8.37
+- evidence_ids:
+  - e5
+  - e6
+  id: seg_other
+  name: 其他產品、零配件及維修等服務
+  period: '2025'
+  revenue_share_pct: 32.53
+relations:
+  subsidiaries:
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的子公司
+    details:
+    - 直接持股100%的子公司
+    edge: e1f2b42e6a62e
+    evidence_level: primary
+    id: org.chuan-yuan-hydraulic-engineering-co-ltd
+    name: Chuan Yuan Hydraulic Engineering Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過基士德環科持股85%的越南子公司
+    details:
+    - 透過基士德環科持股85%的越南子公司
+    edge: e9a112174b7c8
+    evidence_level: primary
+    id: org.gsd-enviro-tech-vietnam-company-limited
+    name: GSD Enviro Tech Vietnam Company Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 台灣直接持股100%的子公司
+    details:
+    - 台灣直接持股100%的子公司
+    edge: e1b61ea066dba
+    evidence_level: primary
+    id: org.基士德環科股份有限公司
+    name: 基士德環科股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持股100%的主要營運子公司
+    details:
+    - 間接持股100%的主要營運子公司
+    edge: e12449949f295
+    evidence_level: primary
+    id: org.川源-中國-機械有限公司
+    name: 川源(中國)機械有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持股100%的主要營運子公司
+    details:
+    - 間接持股100%的主要營運子公司
+    edge: eb719ad42c54c
+    evidence_level: primary
+    id: org.川源環境科技-揚州-有限公司
+    name: 川源環境科技(揚州)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持股60%的子公司
+    details:
+    - 間接持股60%的子公司
+    edge: ed788f673f0a0
+    evidence_level: primary
+    id: org.川能碳和-北京-環境科技有限公司
+    name: 川能碳和(北京)環境科技有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持股60%的子公司
+    details:
+    - 間接持股60%的子公司
+    edge: e274a17a77750
+    evidence_level: primary
+    id: org.浙江川研環境科技有限公司
+    name: 浙江川研環境科技有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.gsd.net.tw/
 tax_id: '82703128'
 incorporated: '2013-10-03'
 listed: '2018-09-21'
 foreign_registration: KY 開曼群島
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-25'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6641#e1:
+    locator: 第53頁，業務範圍
+    published_date: '2026-03-31'
+    publisher: 基士德科技股份有限公司
+    quote_check: found
+    title: 2025年度年報
+    url: https://www.gsd.net.tw/uploadfile/upload/file/20260828/2026082811263510.pdf
+  tw.6641#e10:
+    locator: 第47頁，持股表註1
+    published_date: '2026-03-31'
+    publisher: 基士德科技股份有限公司
+    quote_check: found
+    title: 2025年度年報
+    url: https://www.gsd.net.tw/uploadfile/upload/file/20260828/2026082811263510.pdf
+  tw.6641#e11:
+    locator: 第47頁，越南公司持股列及註3
+    published_date: '2026-03-31'
+    publisher: 基士德科技股份有限公司
+    quote_check: found
+    title: 2025年度年報
+    url: https://www.gsd.net.tw/uploadfile/upload/file/20260828/2026082811263510.pdf
+  tw.6641#e12:
+    locator: 第75頁，轉投資公司直接及間接持股比例
+    published_date: '2026-03-31'
+    publisher: 基士德科技股份有限公司
+    quote_check: found
+    title: 2025年度年報
+    url: https://www.gsd.net.tw/uploadfile/upload/file/20260828/2026082811263510.pdf
+  tw.6641#e13:
+    locator: 第47頁，2026年3月31日轉投資持股表
+    published_date: '2026-03-31'
+    publisher: 基士德科技股份有限公司
+    quote_check: found
+    title: 2025年度年報
+    url: https://www.gsd.net.tw/uploadfile/upload/file/20260828/2026082811263510.pdf
+  tw.6641#e14:
+    locator: 第4頁，公司及集團簡介
+    published_date: '2026-03-31'
+    publisher: 基士德科技股份有限公司
+    quote_check: found
+    title: 2025年度年報
+    url: https://www.gsd.net.tw/uploadfile/upload/file/20260828/2026082811263510.pdf
+  tw.6641#e15:
+    locator: 第4頁，集團架構
+    published_date: '2026-03-31'
+    publisher: 基士德科技股份有限公司
+    quote_check: found
+    title: 2025年度年報
+    url: https://www.gsd.net.tw/uploadfile/upload/file/20260828/2026082811263510.pdf
+  tw.6641#e16:
+    locator: 第47頁，持股表註2；第4頁集團架構
+    published_date: '2026-03-31'
+    publisher: 基士德科技股份有限公司
+    quote_check: found
+    title: 2025年度年報
+    url: https://www.gsd.net.tw/uploadfile/upload/file/20260828/2026082811263510.pdf
+  tw.6641#e2:
+    locator: 第53頁，主要產品之營業比重；依序為2023、2024、2025年金額及百分比
+    published_date: '2026-03-31'
+    publisher: 基士德科技股份有限公司
+    quote_check: found
+    title: 2025年度年報
+    url: https://www.gsd.net.tw/uploadfile/upload/file/20260828/2026082811263510.pdf
+  tw.6641#e3:
+    locator: 第53頁，主要產品之營業比重；依序為2023、2024、2025年金額及百分比
+    published_date: '2026-03-31'
+    publisher: 基士德科技股份有限公司
+    quote_check: found
+    title: 2025年度年報
+    url: https://www.gsd.net.tw/uploadfile/upload/file/20260828/2026082811263510.pdf
+  tw.6641#e4:
+    locator: 第53頁，主要產品之營業比重；依序為2023、2024、2025年金額及百分比
+    published_date: '2026-03-31'
+    publisher: 基士德科技股份有限公司
+    quote_check: found
+    title: 2025年度年報
+    url: https://www.gsd.net.tw/uploadfile/upload/file/20260828/2026082811263510.pdf
+  tw.6641#e5:
+    locator: 第53頁，主要產品之營業比重；依序為2023、2024、2025年金額及百分比
+    published_date: '2026-03-31'
+    publisher: 基士德科技股份有限公司
+    quote_check: found
+    title: 2025年度年報
+    url: https://www.gsd.net.tw/uploadfile/upload/file/20260828/2026082811263510.pdf
+  tw.6641#e6:
+    locator: 第53頁，目前商品及服務項目
+    published_date: '2026-03-31'
+    publisher: 基士德科技股份有限公司
+    quote_check: found
+    title: 2025年度年報
+    url: https://www.gsd.net.tw/uploadfile/upload/file/20260828/2026082811263510.pdf
+  tw.6641#e7:
+    locator: 第58頁，產品及服務範圍
+    published_date: '2026-03-31'
+    publisher: 基士德科技股份有限公司
+    quote_check: found
+    title: 2025年度年報
+    url: https://www.gsd.net.tw/uploadfile/upload/file/20260828/2026082811263510.pdf
+  tw.6641#e8:
+    locator: 第47頁，2026年3月31日轉投資持股表
+    published_date: '2026-03-31'
+    publisher: 基士德科技股份有限公司
+    quote_check: found
+    title: 2025年度年報
+    url: https://www.gsd.net.tw/uploadfile/upload/file/20260828/2026082811263510.pdf
+  tw.6641#e9:
+    locator: 第47頁，2026年3月31日轉投資持股表
+    published_date: '2026-03-31'
+    publisher: 基士德科技股份有限公司
+    quote_check: found
+    title: 2025年度年報
+    url: https://www.gsd.net.tw/uploadfile/upload/file/20260828/2026082811263510.pdf

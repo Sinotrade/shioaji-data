@@ -8,12 +8,155 @@ industry:
   l0_code: '25'
   l0_name: 電腦及週邊設備業
   l0_name_en: Computer and Peripheral Equipment
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.hardware
+  l2_name: 電腦與硬體
+  l2_name_en: Computers & Hardware
+  l3: hw.peripheral
+  l3_name: 周邊與輸入裝置
+  l3_name_en: Peripherals & Input Devices
+primary_chain_position: not_applicable
+summary_short: 研發銷售相片與證卡印相機、自助列印機台及專用相紙、色帶。
+summary_long: 誠研以相片列印設備及專用耗材為主要業務，產品包括P525L相片印相機、CS-200e證卡印相機及MARS12 Lite自助式相片列印機台。其耗材包含熱昇華專用相紙與色帶，可搭配P520L及P525L使用。2025年第一季財報依單張進紙、捲筒進紙及卡片列印區分主要營運部門。集團子公司包括經營數位印表機銷售的HiTi Digital America, Inc.與HiTi Digital Europe Srl，以及從事化學材料紙製品製造的謙華科技股份有限公司。
+segments:
+- evidence_ids:
+  - e6
+  id: seg_sheet
+  name: 單張進紙列印
+  period: 2025-Q1
+  revenue_share_pct: null
+- evidence_ids:
+  - e6
+  id: seg_roll
+  name: 捲筒進紙列印
+  period: 2025-Q1
+  revenue_share_pct: null
+- evidence_ids:
+  - e6
+  id: seg_card
+  name: 卡片列印
+  period: 2025-Q1
+  revenue_share_pct: null
+- evidence_ids:
+  - e6
+  id: seg_other
+  name: 其他
+  period: 2025-Q1
+  revenue_share_pct: null
+relations:
+  subsidiaries:
+  - as_of: '2025-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 數位印表機銷售子公司
+    details:
+    - 數位印表機銷售子公司
+    edge: ebd6a77dc6084
+    evidence_level: primary
+    id: org.hiti-digital-america-inc
+    name: HiTi Digital America, Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 數位印表機銷售子公司
+    details:
+    - 數位印表機銷售子公司
+    edge: eaa9d4f441bb4
+    evidence_level: primary
+    id: org.hiti-digital-europe-srl
+    name: HiTi Digital Europe Srl
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 化學材料紙製品製造子公司
+    details:
+    - 化學材料紙製品製造子公司
+    edge: ee803bcf87764
+    evidence_level: primary
+    id: org.謙華科技股份有限公司
+    name: 謙華科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.hiti.com
 tax_id: '70801588'
 incorporated: '2001-02-09'
 listed: '2007-12-13'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-25'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3494#e1:
+    locator: 基本資料：公司名稱、股票代號、主要業務及公司網址
+    published_date: null
+    publisher: 誠研科技股份有限公司
+    quote_check: found
+    title: 誠研科技基本資料
+    url: https://www.hiti.com/about/Investment.aspx?MenuID=147&TypeID=28&lang=TW
+  tw.3494#e2:
+    locator: 高速列印滿足各種活動場合與創意攝影
+    published_date: null
+    publisher: 誠研科技股份有限公司
+    quote_check: found
+    title: P525L產品介紹
+    url: https://www.hiti.com/product/Product.aspx?MenuID=2&lang=TW
+  tw.3494#e3:
+    locator: CS-200e產品特色
+    published_date: null
+    publisher: 誠研科技股份有限公司
+    quote_check: found
+    title: CS-200e產品介紹
+    url: https://www.hiti.com/product/Product.aspx?MenuID=5&lang=TW
+  tw.3494#e4:
+    locator: 相片編修暨列印軟體、自助式相片列印說明
+    published_date: null
+    publisher: 誠研科技股份有限公司
+    quote_check: found
+    title: MARS12 Lite產品介紹
+    url: https://www.hiti.com/product/Product.aspx?MenuID=15&lang=TW
+  tw.3494#e5:
+    locator: 產品特色
+    published_date: null
+    publisher: 誠研科技股份有限公司
+    quote_check: found
+    title: P520L/P525L專用耗材組
+    url: https://www.hiti.com/product/CA.aspx?ID=9&PID=2&lang=TW
+  tw.3494#e6:
+    locator: 第43頁，附註十四（三）營運部門別資訊；收入欄依序為單張進紙、捲筒進紙、卡片、其他、調節及銷除、合計
+    published_date: '2025-05-13'
+    publisher: 誠研科技股份有限公司
+    quote_check: found
+    title: 誠研科技及其子公司114年第一季合併財務報告
+    url: https://www.hiti.com/files/Financials/file/114Q1%E8%AA%A0%E7%A0%94%E5%90%88%E4%BD%B5.pdf
+  tw.3494#e7:
+    locator: 第14頁，附註四（三）2列入合併財務報告之子公司；投資公司為本公司
+    published_date: '2025-05-13'
+    publisher: 誠研科技股份有限公司
+    quote_check: found
+    title: 誠研科技及其子公司114年第一季合併財務報告
+    url: https://www.hiti.com/files/Financials/file/114Q1%E8%AA%A0%E7%A0%94%E5%90%88%E4%BD%B5.pdf
+  tw.3494#e8:
+    locator: 第14頁，附註四（三）2列入合併財務報告之子公司；主要營業項目為數位印表機銷售事業
+    published_date: '2025-05-13'
+    publisher: 誠研科技股份有限公司
+    quote_check: found
+    title: 誠研科技及其子公司114年第一季合併財務報告
+    url: https://www.hiti.com/files/Financials/file/114Q1%E8%AA%A0%E7%A0%94%E5%90%88%E4%BD%B5.pdf
+  tw.3494#e9:
+    locator: 第14頁，附註四（三）2列入合併財務報告之子公司；主要營業項目為數位印表機銷售事業
+    published_date: '2025-05-13'
+    publisher: 誠研科技股份有限公司
+    quote_check: found
+    title: 誠研科技及其子公司114年第一季合併財務報告
+    url: https://www.hiti.com/files/Financials/file/114Q1%E8%AA%A0%E7%A0%94%E5%90%88%E4%BD%B5.pdf

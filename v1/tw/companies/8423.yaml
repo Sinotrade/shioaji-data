@@ -8,13 +8,157 @@ industry:
   l0_code: '35'
   l0_name: 綠能環保
   l0_name_en: Green Energy and Environmental Services
-primary_chain_position: unknown
+  l1: materials
+  l1_name: 原物料
+  l1_name_en: Materials
+  l2: mat.other
+  l2_name: 其他原物料
+  l2_name_en: Other Materials
+  l3: matl.rubber
+  l3_name: 橡膠與輪胎
+  l3_name_en: Rubber & Tires
+primary_chain_position: not_applicable
+summary_short: 製造銷售再生膠、橡膠粉與膠片，並經營廢輪胎處理。
+summary_long: 保綠-KY的集團業務涵蓋再生橡膠產品製造銷售及廢輪胎處理。2025年再生膠及丁基再生膠占營收49.83%，廢輪胎處理占42.68%，其他業務占7.49%。再生膠可用於輪胎、輸送帶及內胎；橡膠粉由廢輪胎破碎與研磨製成，台灣廠另生產作為輔助燃料的膠片。截至2026年6月底，合併子公司包括Jeng Yuan Reclaimed Rubber Sdn. Bhd.、Greencycle Industries Sdn. Bhd.及為愷；Greencycle的清算程序尚未完成。
+segments:
+- evidence_ids:
+  - e1
+  id: reclaimed_rubber
+  name: 再生膠及丁基再生膠
+  period: '2025'
+  revenue_share_pct: 49.83
+- evidence_ids:
+  - e2
+  id: waste_tire_processing
+  name: 廢輪胎處理
+  period: '2025'
+  revenue_share_pct: 42.68
+- evidence_ids:
+  - e3
+  id: other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 7.49
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 清算中的合併子公司
+    details:
+    - 清算中的合併子公司
+    edge: e98182eb0a627
+    evidence_level: primary
+    id: org.greencycle-industries
+    name: Greencycle Industries Sdn. Bhd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 再生橡膠產品製造銷售子公司
+    details:
+    - 再生橡膠產品製造銷售子公司
+    edge: e49710800f89f
+    evidence_level: primary
+    id: org.jeng-yuan-reclaimed-rubber
+    name: Jeng Yuan Reclaimed Rubber Sdn. Bhd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 橡膠產品製造銷售子公司
+    details:
+    - 橡膠產品製造銷售子公司
+    edge: e5ac9fce8366a
+    evidence_level: primary
+    id: org.wei-kai
+    name: 為愷股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.pgr.com.tw
 tax_id: '53003483'
 incorporated: '2009-11-03'
 listed: '2012-03-14'
 foreign_registration: KY 開曼群島
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-25'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.8423#e1:
+    locator: 印刷第57頁，營業比重；欄位依序為2024年金額、比重及2025年金額、比重
+    published_date: '2026-05-21'
+    publisher: 保綠資源股份有限公司
+    quote_check: found
+    title: 保綠資源股份有限公司2025年度年報
+    url: https://pgr.com.tw/wp-content/uploads/2026/06/00.2026%E5%B9%B4%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1-%E4%B8%AD%E6%96%87.pdf
+  tw.8423#e10:
+    locator: 印刷第10頁，附註四(二)1註1，Greencycle截至2026年6月30日的清算狀態
+    published_date: '2026-08-27'
+    publisher: 保綠資源股份有限公司
+    quote_check: found
+    title: 保綠資源股份有限公司及子公司2026年第二季合併財務報告
+    url: https://pgr.com.tw/wp-content/uploads/2026/09/202602_8423_AI1_20260904_085142.pdf
+  tw.8423#e2:
+    locator: 印刷第57頁，營業比重；2025年度欄
+    published_date: '2026-05-21'
+    publisher: 保綠資源股份有限公司
+    quote_check: found
+    title: 保綠資源股份有限公司2025年度年報
+    url: https://pgr.com.tw/wp-content/uploads/2026/06/00.2026%E5%B9%B4%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1-%E4%B8%AD%E6%96%87.pdf
+  tw.8423#e3:
+    locator: 印刷第57頁，營業比重；2025年度欄
+    published_date: '2026-05-21'
+    publisher: 保綠資源股份有限公司
+    quote_check: found
+    title: 保綠資源股份有限公司2025年度年報
+    url: https://pgr.com.tw/wp-content/uploads/2026/06/00.2026%E5%B9%B4%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1-%E4%B8%AD%E6%96%87.pdf
+  tw.8423#e4:
+    locator: 輪胎再生膠應用
+    published_date: null
+    publisher: 保綠資源股份有限公司
+    quote_check: found
+    title: 輪胎再生膠
+    url: https://pgr.com.tw/%E8%BC%AA%E8%83%8E%E5%86%8D%E7%94%9F%E8%86%A0/
+  tw.8423#e5:
+    locator: 橡膠粉產品介紹
+    published_date: null
+    publisher: 保綠資源股份有限公司
+    quote_check: found
+    title: 橡膠粉
+    url: https://pgr.com.tw/%E6%A9%A1%E8%86%A0%E7%B2%89/
+  tw.8423#e6:
+    locator: 台灣廠營收占比段落
+    published_date: null
+    publisher: 保綠資源股份有限公司
+    quote_check: found
+    title: 公司概況
+    url: https://pgr.com.tw/%E5%85%AC%E5%8F%B8%E6%A6%82%E6%B3%81/
+  tw.8423#e7:
+    locator: 印刷第10頁，附註四(二)1列入合併財務報告之子公司；投資公司為本公司
+    published_date: '2026-08-27'
+    publisher: 保綠資源股份有限公司
+    quote_check: found
+    title: 保綠資源股份有限公司及子公司2026年第二季合併財務報告
+    url: https://pgr.com.tw/wp-content/uploads/2026/09/202602_8423_AI1_20260904_085142.pdf
+  tw.8423#e8:
+    locator: 印刷第10頁，附註四(二)1列入合併財務報告之子公司；投資公司為本公司
+    published_date: '2026-08-27'
+    publisher: 保綠資源股份有限公司
+    quote_check: found
+    title: 保綠資源股份有限公司及子公司2026年第二季合併財務報告
+    url: https://pgr.com.tw/wp-content/uploads/2026/09/202602_8423_AI1_20260904_085142.pdf
+  tw.8423#e9:
+    locator: 印刷第10頁，附註四(二)1列入合併財務報告之子公司；投資公司為本公司
+    published_date: '2026-08-27'
+    publisher: 保綠資源股份有限公司
+    quote_check: found
+    title: 保綠資源股份有限公司及子公司2026年第二季合併財務報告
+    url: https://pgr.com.tw/wp-content/uploads/2026/09/202602_8423_AI1_20260904_085142.pdf

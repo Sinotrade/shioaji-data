@@ -8,13 +8,170 @@ industry:
   l0_code: '06'
   l0_name: 電器電纜
   l0_name_en: Electrical and Cable
-primary_chain_position: unknown
+  l1: consumer
+  l1_name: 消費
+  l1_name_en: Consumer
+  l2: cons.staples
+  l2_name: 民生消費
+  l2_name_en: Consumer Staples
+  l3: consumer.household
+  l3_name: 家用品與個人護理
+  l3_name_en: Household & Personal Products
+primary_chain_position: not_applicable
+summary_short: 以家用電風扇、電暖器及其他小家電的研發、製造與銷售為主要業務。
+summary_long: 艾美特-KY以集團方式從事家用電風扇、電暖器及其他小家電的研發、製造與銷售。2024年營收組成以電風扇64.01%為主，電暖器占19.59%，電工產品占6.59%，小家電占6.14%，其餘3.67%為零配件、模具及營業租賃收入。電風扇包括立扇與冰冷扇，電暖器包括對流式與石英管式；其他產品涵蓋果汁機、電磁爐、加濕與除濕設備、電鍋、空氣清淨機、集成吊頂及烘手機。集團旗下深圳與九江子公司負責家用電器生產與銷售。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_fan
+  name: 電風扇
+  period: '2024'
+  revenue_share_pct: 64.01
+- evidence_ids:
+  - e2
+  id: seg_heater
+  name: 電暖器
+  period: '2024'
+  revenue_share_pct: 19.59
+- evidence_ids:
+  - e2
+  id: seg_appliance
+  name: 小家電
+  period: '2024'
+  revenue_share_pct: 6.14
+- evidence_ids:
+  - e2
+  id: seg_electrical
+  name: 電工產品
+  period: '2024'
+  revenue_share_pct: 6.59
+- evidence_ids:
+  - e2
+  - e7
+  id: seg_other
+  name: 其他：零配件、模具及營業租賃收入
+  period: '2024'
+  revenue_share_pct: 3.67
+relations:
+  subsidiaries:
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持有的家電製造子公司
+    details:
+    - 間接持有的家電製造子公司
+    edge: e8aa3ba4a7971
+    evidence_level: primary
+    id: org.airmate-electrical-jiujiang
+    name: 艾美特電器(九江)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持有的家電製造子公司
+    details:
+    - 間接持有的家電製造子公司
+    edge: e0bbebd3ed99b
+    evidence_level: primary
+    id: org.airmate-electrical-shenzhen
+    name: 艾美特電器(深圳)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有的境外控股子公司
+    details:
+    - 直接持有的境外控股子公司
+    edge: e9c757088bf94
+    evidence_level: primary
+    id: org.airmate-international-holdings
+    name: 艾美特國際控股有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.airmate-china.com
 tax_id: '34995738'
 incorporated: '2004-03-11'
 listed: '2013-03-21'
 foreign_registration: KY 開曼群島
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1626#e10:
+    locator: 頁18，附註四（三）2，註2
+    published_date: '2025-02-27'
+    publisher: 艾美特(開曼)國際有限公司
+    quote_check: found
+    title: 2024年度合併財務報告：九江子公司持股
+    url: https://airmate-china.com.tw/files/164755233.pdf
+  tw.1626#e11:
+    locator: 印刷頁91，PDF第97頁，關係企業基本資料
+    published_date: '2025-05-06'
+    publisher: 艾美特(開曼)國際有限公司
+    quote_check: found
+    title: 2024年度年報：九江公司主要業務
+    url: https://airmate-china.com.tw/files/169371375.pdf
+  tw.1626#e2:
+    locator: 印刷頁63，PDF第69頁；表格末兩欄為2024年度金額及營業比重
+    published_date: '2025-05-06'
+    publisher: 艾美特(開曼)國際有限公司
+    quote_check: found
+    title: 2024年度年報：主要產品營業比重
+    url: https://airmate-china.com.tw/files/169371375.pdf
+  tw.1626#e3:
+    locator: 印刷頁63，PDF第69頁
+    published_date: '2025-05-06'
+    publisher: 艾美特(開曼)國際有限公司
+    quote_check: found
+    title: 2024年度年報：所營業務之主要內容
+    url: https://airmate-china.com.tw/files/169371375.pdf
+  tw.1626#e4:
+    locator: 印刷頁63，PDF第69頁，商品項目A、B
+    published_date: '2025-05-06'
+    publisher: 艾美特(開曼)國際有限公司
+    quote_check: found
+    title: 2024年度年報：電風扇與電暖器產品
+    url: https://airmate-china.com.tw/files/169371375.pdf
+  tw.1626#e5:
+    locator: 印刷頁63，PDF第69頁，商品項目C
+    published_date: '2025-05-06'
+    publisher: 艾美特(開曼)國際有限公司
+    quote_check: found
+    title: 2024年度年報：小家電產品
+    url: https://airmate-china.com.tw/files/169371375.pdf
+  tw.1626#e6:
+    locator: 印刷頁63，PDF第69頁，商品項目D
+    published_date: '2025-05-06'
+    publisher: 艾美特(開曼)國際有限公司
+    quote_check: found
+    title: 2024年度年報：電工產品
+    url: https://airmate-china.com.tw/files/169371375.pdf
+  tw.1626#e7:
+    locator: 印刷頁63，PDF第69頁，主要產品營業比重表註
+    published_date: '2025-05-06'
+    publisher: 艾美特(開曼)國際有限公司
+    quote_check: found
+    title: 2024年度年報：其他收入定義
+    url: https://airmate-china.com.tw/files/169371375.pdf
+  tw.1626#e8:
+    locator: 頁18，附註四（三）2，列入合併財務報告之子公司
+    published_date: '2025-02-27'
+    publisher: 艾美特(開曼)國際有限公司
+    quote_check: found
+    title: 2024年度合併財務報告：控股子公司架構
+    url: https://airmate-china.com.tw/files/164755233.pdf
+  tw.1626#e9:
+    locator: 頁18，附註四（三）2，深圳公司列
+    published_date: '2025-02-27'
+    publisher: 艾美特(開曼)國際有限公司
+    quote_check: found
+    title: 2024年度合併財務報告：深圳子公司
+    url: https://airmate-china.com.tw/files/164755233.pdf

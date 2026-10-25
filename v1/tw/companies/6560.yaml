@@ -8,12 +8,137 @@ industry:
   l0_code: '26'
   l0_name: 光電業
   l0_name_en: Optoelectronic
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.display
+  l2_name: 光電與顯示
+  l2_name_en: Optoelectronics & Displays
+  l3: disp.optics
+  l3_name: 光學與影像感測應用
+  l3_name_en: Optics & Imaging Applications
+primary_chain_position: midstream
+summary_short: 以攝影機與影像模組設計、銷售及客製化整合服務取得收入。
+summary_long: 欣普羅提供攝影機與影像模組、客製化影像處理及系統整合服務，並依專案收取開發費，提供模組或整機的OEM／ODM服務。2025年攝影機相關產品占營收97.52%，其他項目占2.48%。主要產品包括網路攝影機、隨身式監控錄影機、車載行車紀錄器及無人機攝影模組。公司亦提供可整合NVIDIA Jetson平台的影像方案，支援AI相機及嵌入式視覺模組，並將無人機與機器人列為影像方案的應用領域。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_camera
+  name: 攝影機相關產品
+  period: '2025'
+  revenue_share_pct: 97.52
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 2.48
+main_theme: theme.drone
+themes:
+- also: []
+  stage: components
+  theme: theme.drone
+  tier: upstream
+- also: []
+  stage: components
+  theme: theme.robotics
+  tier: upstream
 website: http://www.appropho.com
 tax_id: '70643081'
 incorporated: '1999-10-05'
 listed: '2017-01-24'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6560#e1:
+    locator: 第49頁，主要產品之營業比重；欄位依序為2024年金額、占比及2025年金額、占比
+    published_date: '2026-05-05'
+    publisher: 欣普羅光電股份有限公司（FinancialFilings鏡像）
+    quote_check: unreachable
+    title: 欣普羅光電股份有限公司2025年年報
+    url: https://financialfilings.com/filings/appro-photoelectron-inc/annual-report/2026/47979734/
+  tw.6560#e10:
+    locator: 產品分類正文
+    published_date: null
+    publisher: 欣普羅光電股份有限公司
+    quote_check: found
+    title: 產品資訊－執法儀解決方案
+    url: https://www.appropho.com/products.html?type=30
+  tw.6560#e11:
+    locator: 產品方案介紹
+    published_date: null
+    publisher: 欣普羅光電股份有限公司
+    quote_check: found
+    title: 產品資訊－車載行車紀錄器解決方案
+    url: https://www.appropho.com/products.html?type=31
+  tw.6560#e12:
+    locator: 第49頁，公司目前之商品（服務）項目
+    published_date: '2026-05-05'
+    publisher: 欣普羅光電股份有限公司（FinancialFilings鏡像）
+    quote_check: unreachable
+    title: 欣普羅光電股份有限公司2025年年報
+    url: https://financialfilings.com/filings/appro-photoelectron-inc/annual-report/2026/47979734/
+  tw.6560#e13:
+    locator: 影像解決方案應用範圍
+    published_date: null
+    publisher: 欣普羅光電股份有限公司
+    quote_check: found
+    title: 產品資訊－輝達攝影機模組解決方案
+    url: https://www.appropho.com/products.html
+  tw.6560#e2:
+    locator: 第49頁，主要產品之營業比重；欄位依序為2024年金額、占比及2025年金額、占比
+    published_date: '2026-05-05'
+    publisher: 欣普羅光電股份有限公司（FinancialFilings鏡像）
+    quote_check: unreachable
+    title: 欣普羅光電股份有限公司2025年年報
+    url: https://financialfilings.com/filings/appro-photoelectron-inc/annual-report/2026/47979734/
+  tw.6560#e3:
+    locator: 第51頁，產業上、中、下游之關聯性
+    published_date: '2026-05-05'
+    publisher: 欣普羅光電股份有限公司（FinancialFilings鏡像）
+    quote_check: unreachable
+    title: 欣普羅光電股份有限公司2025年年報
+    url: https://financialfilings.com/filings/appro-photoelectron-inc/annual-report/2026/47979734/
+  tw.6560#e4:
+    locator: 影像解決方案介紹
+    published_date: null
+    publisher: 欣普羅光電股份有限公司
+    quote_check: found
+    title: 產品資訊－輝達攝影機模組解決方案
+    url: https://www.appropho.com/products.html
+  tw.6560#e5:
+    locator: 影像解決方案介紹
+    published_date: null
+    publisher: 欣普羅光電股份有限公司
+    quote_check: found
+    title: 產品資訊－輝達攝影機模組解決方案
+    url: https://www.appropho.com/products.html
+  tw.6560#e6:
+    locator: 核心技術清單
+    published_date: null
+    publisher: 欣普羅光電股份有限公司
+    quote_check: found
+    title: 公司簡介－核心技術
+    url: https://www.appropho.com/about.html?type=9
+  tw.6560#e7:
+    locator: Sub-Module
+    published_date: null
+    publisher: 欣普羅光電股份有限公司
+    quote_check: found
+    title: 商業模式－支援服務
+    url: https://www.appropho.com/business.html
+  tw.6560#e8:
+    locator: Turn Key
+    published_date: null
+    publisher: 欣普羅光電股份有限公司
+    quote_check: found
+    title: 商業模式－支援服務
+    url: https://www.appropho.com/business.html
+  tw.6560#e9:
+    locator: 第49頁，公司目前之商品（服務）項目
+    published_date: '2026-05-05'
+    publisher: 欣普羅光電股份有限公司（FinancialFilings鏡像）
+    quote_check: unreachable
+    title: 欣普羅光電股份有限公司2025年年報
+    url: https://financialfilings.com/filings/appro-photoelectron-inc/annual-report/2026/47979734/

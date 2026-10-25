@@ -8,13 +8,144 @@ industry:
   l0_code: '12'
   l0_name: 汽車工業
   l0_name_en: Automobile
-primary_chain_position: unknown
+  l1: auto
+  l1_name: 汽車與運具
+  l1_name_en: Automotive & Mobility
+  l2: auto.vehicles
+  l2_name: 汽機車
+  l2_name_en: Autos & Motorcycles
+  l3: auto.parts
+  l3_name: 汽車零組件
+  l3_name_en: Auto Parts
+chain: chain.auto
+chain_stage:
+  agreement: both
+  also: []
+  reason: 汽車零件占營收79.48%，主要製造商用車引擎與制動系統零組件。
+  stage: parts
+  stage_name: 汽車零組件與模組
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 以商用車零組件製造及金屬精密加工為主，另製造風電剎車零件。
+summary_long: 光隆精密-KY以商用車零組件及金屬精密加工為主要業務，產品涵蓋引擎節能減排零件、渦輪增壓器彎管、制動卡鉗、剎車片背板及飛輪殼體，另生產風電剎車系統零件。2024年汽車零件占營收79.48%，綠能零件占1.47%，其他業務占19.05%。旗下主要營運子公司包括台灣光隆精密工業及福州光隆精密工業，另有Honour Glory International及WKP HITECH USA等子公司。加工服務包含金屬成形、表面處理及CNC精密加工。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_auto
+  name: 汽車零件
+  period: '2024'
+  revenue_share_pct: 79.48
+- evidence_ids:
+  - e2
+  id: seg_green
+  name: 綠能零件
+  period: '2024'
+  revenue_share_pct: 1.47
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他
+  period: '2024'
+  revenue_share_pct: 19.05
+relations:
+  subsidiaries:
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團子公司
+    details:
+    - 集團子公司
+    edge: ed25624334b0e
+    evidence_level: primary
+    id: org.honour-glory-international
+    name: Honour Glory International Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團美國子公司
+    details:
+    - 集團美國子公司
+    edge: e07cd1b3a3700
+    evidence_level: primary
+    id: org.wkp-hitech-usa
+    name: WKP HITECH USA, INC.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 福州營運子公司
+    details:
+    - 福州營運子公司
+    edge: ec258d365e82f
+    evidence_level: primary
+    id: org.world-known-precision-fuzhou
+    name: 光隆精密工業(福州)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 台灣營運子公司
+    details:
+    - 台灣營運子公司
+    edge: e7b4db33ecd96
+    evidence_level: primary
+    id: org.world-known-precision-taiwan
+    name: 光隆精密工業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.wkgroup.com
 tax_id: '87027821'
 incorporated: '2015-11-19'
 listed: '2020-03-09'
 foreign_registration: KY 開曼群島
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4581#e2:
+    locator: 印刷頁56／PDF第61頁，主要產品之營業比重；各列依序為2023年與2024年
+    published_date: null
+    publisher: World Known MFG (Cayman) Limited
+    quote_check: found
+    title: 2024年度年報
+    url: https://dlf9q0zq4dwf6.cloudfront.net/wkg/annual-reports/%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1-%E5%85%89%E9%9A%86%E7%B2%BE%E5%AF%86KY-20250815.pdf
+  tw.4581#e3:
+    locator: 印刷頁56／PDF第61頁，所營業務之主要內容
+    published_date: null
+    publisher: World Known MFG (Cayman) Limited
+    quote_check: found
+    title: 2024年度年報
+    url: https://dlf9q0zq4dwf6.cloudfront.net/wkg/annual-reports/%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1-%E5%85%89%E9%9A%86%E7%B2%BE%E5%AF%86KY-20250815.pdf
+  tw.4581#e4:
+    locator: 關於光隆，金屬加工服務
+    published_date: null
+    publisher: 英屬開曼群島光隆精密股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.wkgroup.com/tw/company
+  tw.4581#e5:
+    locator: 印刷頁4／PDF第9頁，公司及集團簡介
+    published_date: null
+    publisher: World Known MFG (Cayman) Limited
+    quote_check: found
+    title: 2024年度年報
+    url: https://dlf9q0zq4dwf6.cloudfront.net/wkg/annual-reports/%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1-%E5%85%89%E9%9A%86%E7%B2%BE%E5%AF%86KY-20250815.pdf
+  tw.4581#e6:
+    locator: 關於光隆精密，主要營運地
+    published_date: null
+    publisher: 英屬開曼群島光隆精密股份有限公司
+    quote_check: found
+    title: 光隆精密官網首頁
+    url: https://www.wkgroup.com/tw

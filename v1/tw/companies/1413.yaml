@@ -8,14 +8,41 @@ industry:
   l0_code: '04'
   l0_name: 紡織纖維
   l0_name_en: Textiles
-primary_chain_position: unknown
+  l1: materials
+  l1_name: 原物料
+  l1_name_en: Materials
+  l2: mat.other
+  l2_name: 其他原物料
+  l2_name_en: Other Materials
+  l3: matl.textile_fiber
+  l3_name: 紡織纖維與機能布料
+  l3_name_en: Textiles, Fibers & Functional Fabrics
+chain: chain.textile
+chain_stage:
+  agreement: both
+  also: []
+  reason: 聚酯粒及聚酯原絲合計占營業比重100%，主要產品屬纖維與紗。
+  stage: fiber
+  stage_name: 纖維與紗
+  tier: upstream
+primary_chain_position: upstream
+summary_short: 以聚酯粒及聚酯原絲製造、銷售為主，並生產環保紗。
+summary_long: 宏洲以聚酯粒及聚酯原絲的製造、行銷為主要業務，2024年度年報揭露兩者合計營業比重為100%。官網主要產品包括聚酯粒、聚酯半延伸絲及聚酯全延伸絲，對應紡織產業鏈中的纖維與紗階段。公司亦列有BioPro生物可降解系列，產品說明指出可製成親水性聚酯纖維。2025年度營業報告書另揭露，公司購入環保酯粒生產環保紗，將回收聚酯類化纖產品與寶特瓶再利用。宜進實業為其母公司，2025年聯合法說會報導明確將宏洲列為宜進子公司。
+segments:
+- evidence_ids:
+  - e2
+  id: polyester
+  name: 聚酯粒及聚酯原絲製造、行銷
+  period: '2024'
+  revenue_share_pct: 100
 relations:
   parents:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 聚酯原絲及聚酯粒生產子公司
+    detail: 母公司宜進實業
     details:
+    - 母公司宜進實業
     - 聚酯原絲及聚酯粒生產子公司
     edge: ecc7d2c647d08
     evidence_level: primary
@@ -24,12 +51,61 @@ relations:
     ranking_basis: unranked
     share_basis: null
     share_pct: null
-    weight: 1
+    weight: 2
 website: http://www.hungchou.com.tw/
 tax_id: '07220710'
 incorporated: '1968-07-30'
 listed: '1975-12-23'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1413#e10:
+    locator: 內文首段
+    published_date: '2025-12-12'
+    publisher: 自由時報
+    quote_check: found
+    title: 宜進力抗景氣逆風 資產租金助攻營運基本盤
+    url: https://ec.ltn.com.tw/article/breakingnews/5276335
+  tw.1413#e2:
+    locator: 第74頁，所營業務之主要內容及營業比重
+    published_date: '2025-05-06'
+    publisher: 宏洲纖維工業股份有限公司；FinancialFilings收錄
+    quote_check: unreachable
+    title: 宏洲纖維工業股份有限公司113年度年報
+    url: https://financialfilings.com/filings/hc-1413/annual-report/2025/33244818/
+  tw.1413#e3:
+    locator: 主要產品，第1項
+    published_date: null
+    publisher: 宏洲纖維工業股份有限公司
+    quote_check: not_found
+    title: 營業項目及主要產品
+    url: https://www.hungchou.com.tw/main-products
+  tw.1413#e4:
+    locator: 主要產品，第2項
+    published_date: null
+    publisher: 宏洲纖維工業股份有限公司
+    quote_check: found
+    title: 營業項目及主要產品
+    url: https://www.hungchou.com.tw/main-products
+  tw.1413#e5:
+    locator: 主要產品，第3項
+    published_date: null
+    publisher: 宏洲纖維工業股份有限公司
+    quote_check: found
+    title: 營業項目及主要產品
+    url: https://www.hungchou.com.tw/main-products
+  tw.1413#e6:
+    locator: 產品系列清單
+    published_date: null
+    publisher: 宏洲纖維工業股份有限公司
+    quote_check: found
+    title: 產品與服務
+    url: https://www.hungchou.com.tw/products
+  tw.1413#e7:
+    locator: 產品說明
+    published_date: null
+    publisher: 宏洲纖維工業股份有限公司
+    quote_check: found
+    title: BioPro生物可降解系列
+    url: https://www.hungchou.com.tw/products-detail/id/32/title/BioPro%E7%94%9F%E7%89%A9%E5%8F%AF%E9%99%8D%E8%A7%A3%E7%B3%BB%E5%88%97

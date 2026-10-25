@@ -65,16 +65,16 @@ segments:
   name: 其他應用
   period: 2026-Q2
   revenue_share_pct: 6
-main_theme: theme.robotics
+main_theme: theme.drone
 themes:
-- also: []
-  stage: control
-  theme: theme.robotics
-  tier: midstream
 - also: []
   stage: components
   theme: theme.drone
   tier: upstream
+- also: []
+  stage: control
+  theme: theme.robotics
+  tier: midstream
 relations:
   subsidiaries:
   - as_of: '2026-03-31'

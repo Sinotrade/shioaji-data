@@ -8,12 +8,124 @@ industry:
   l0_code: '30'
   l0_name: 資訊服務業
   l0_name_en: Information Service
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.software
+  l2_name: 軟體與資訊服務
+  l2_name_en: Software & IT Services
+  l3: sw.it_services
+  l3_name: 系統整合與資訊服務
+  l3_name_en: System Integration & IT Services
+primary_chain_position: not_applicable
+summary_short: 提供多品牌電子資訊產品售後維修、企業維運與附加價值服務。
+summary_long: 海柏特以多品牌電子資訊產品售後服務與附加價值服務型銷售為主要業務，服務涵蓋電腦、周邊設備、消費性電子、伺服器及網路機房設備。售後服務包含原廠授權檢測、維修與維運，並提供企業維運解決方案。集團以菲律賓據點提供跨境商業流程外包及國際客服支援，另有HighCare訂閱式服務。公司結合電話客服與實體維修據點，服務企業及一般消費者，為宏碁旗下子公司。
+segments:
+- evidence_ids:
+  - e7
+  id: seg_after_sales
+  name: 售後服務
+  period: 2025年前三季
+  revenue_share_pct: 72
+- evidence_ids:
+  - e7
+  id: seg_vas
+  name: 附加價值服務
+  period: 2025年前三季
+  revenue_share_pct: 28
+relations:
+  parents:
+  - as_of: '2026-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 母公司宏碁
+    details:
+    - 母公司宏碁
+    edge: e92e34e36e5ac
+    evidence_level: primary
+    id: tw.2353
+    name: 宏碁
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 官網表示已於馬來西亞、泰國、菲律賓、印尼、越南成立子公司；已讀來源未確認各子公…
 website: https://www.hsnservice.com
 tax_id: '50872352'
 incorporated: '2018-09-14'
 listed: '2025-12-17'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-25'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6884#e1:
+    locator: 關於海柏特-HSN首段
+    published_date: null
+    publisher: 海柏特股份有限公司
+    quote_check: found
+    title: 關於海柏特-HSN
+    url: https://www.hsnservice.com/tw
+  tw.6884#e10:
+    locator: 上市櫃子公司表Highpoint Service Network列；註1資料基準日2026-09-30
+    published_date: null
+    publisher: Acer Inc.
+    quote_check: unreachable
+    title: Acer Group IPO-Listed Subsidiaries
+    url: https://www.acer.com/corporate/en/investor-relations/shareholders-service/acer-group-ipo-listed-subsidiaries
+  tw.6884#e2:
+    locator: 關於海柏特-HSN，服務設備範圍
+    published_date: null
+    publisher: 海柏特股份有限公司
+    quote_check: found
+    title: 關於海柏特-HSN
+    url: https://www.hsnservice.com/tw
+  tw.6884#e3:
+    locator: 服務項目介紹
+    published_date: null
+    publisher: 海柏特股份有限公司
+    quote_check: found
+    title: 海柏特服務項目
+    url: https://www.hsnservice.com/tw/services
+  tw.6884#e4:
+    locator: 企業維運服務
+    published_date: null
+    publisher: 海柏特股份有限公司
+    quote_check: found
+    title: 海柏特企業服務
+    url: https://www.hsnservice.com/tw/commericalservice
+  tw.6884#e5:
+    locator: 關於海柏特-HSN，跨境客服介紹
+    published_date: null
+    publisher: 海柏特股份有限公司
+    quote_check: found
+    title: 關於海柏特-HSN
+    url: https://www.hsnservice.com/tw
+  tw.6884#e6:
+    locator: 訂閱方案標題
+    published_date: null
+    publisher: 海柏特股份有限公司
+    quote_check: found
+    title: 海柏特HSN HighCare
+    url: https://highcare.hsnservice.com/subscription
+  tw.6884#e7:
+    locator: PDF第13頁，服務類型占比圖；依序為2023、2024及2025年前三季
+    published_date: null
+    publisher: 海柏特股份有限公司
+    quote_check: found
+    title: 海柏特上櫃前業績發表會簡報
+    url: https://mopsov.twse.com.tw/nas/STR/688420251125M001.pdf
+  tw.6884#e8:
+    locator: PDF第7頁，特別記載事項第（三）項
+    published_date: null
+    publisher: 海柏特股份有限公司
+    quote_check: found
+    title: 海柏特上櫃前業績發表會簡報
+    url: https://mopsov.twse.com.tw/nas/STR/688420251125M001.pdf
+  tw.6884#e9:
+    locator: PDF第7頁，特別記載事項第（二）項
+    published_date: null
+    publisher: 海柏特股份有限公司
+    quote_check: found
+    title: 海柏特上櫃前業績發表會簡報
+    url: https://mopsov.twse.com.tw/nas/STR/688420251125M001.pdf

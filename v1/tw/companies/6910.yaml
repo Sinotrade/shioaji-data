@@ -8,7 +8,43 @@ industry:
   l0_code: '36'
   l0_name: 數位雲端
   l0_name_en: Digital and Cloud Services
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.software
+  l2_name: 軟體與資訊服務
+  l2_name_en: Software & IT Services
+  l3: sw.enterprise
+  l3_name: 企業軟體
+  l3_name_en: Enterprise Software
+primary_chain_position: not_applicable
+summary_short: 提供企業通訊、客服與語音分析軟體，以專案、維護及訂閱服務取得收入。
+summary_long: 德鴻提供企業通訊與客服應用軟體，產品包括自主研發的GECC全媒體通訊與客服中心平台、GEAP智能客服系統、LOG8000錄音系統、語音機器人及如意智能質檢。GEAP提供電話行銷與客戶服務管理，如意智能質檢可自動分析語音對話並分類評估。2025年前三季營收組成為專案49%、維護32%、訂閱19%，商品銷售占比列示為0%。2026年第一季財報列邁達特數位為母公司、北京宏盛為子公司；另一子公司上海揚碩於同年7月決議辦理解散清算。
+segments:
+- evidence_ids:
+  - e2
+  id: project
+  name: 專案
+  period: 2025年前三季
+  revenue_share_pct: 49
+- evidence_ids:
+  - e2
+  id: maintenance
+  name: 維護
+  period: 2025年前三季
+  revenue_share_pct: 32
+- evidence_ids:
+  - e2
+  id: subscription
+  name: 訂閱
+  period: 2025年前三季
+  revenue_share_pct: 19
+- evidence_ids:
+  - e2
+  id: merchandise
+  name: 商品銷售
+  period: 2025年前三季
+  revenue_share_pct: 0
 relations:
   parents:
   - as_of: '2026-03-31'
@@ -17,10 +53,40 @@ relations:
     detail: 直接子公司
     details:
     - 直接子公司
+    - 母公司
     edge: e9f79e6c9ff3d
     evidence_level: primary
     id: tw.6112
     name: 邁達特
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 2
+  subsidiaries:
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 合併子公司
+    details:
+    - 合併子公司
+    edge: e0e59209aad24
+    evidence_level: primary
+    id: org.北京宏盛高新技術有限公司
+    name: 北京宏盛高新技術有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-07-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司；已決議辦理解散清算
+    details:
+    - 子公司；已決議辦理解散清算
+    edge: ec3ae72991348
+    evidence_level: media
+    id: org.揚碩數碼科技-上海-有限公司
+    name: 揚碩數碼科技(上海)有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -29,7 +95,77 @@ website: https://www.grandsys.com.tw
 tax_id: '86870646'
 incorporated: '1992-09-19'
 listed: '2025-12-11'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-25'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6910#e1:
+    locator: 公司簡介首段及核心專業領域
+    published_date: null
+    publisher: 德鴻科技股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.grandsys.com.tw/about-grandsys
+  tw.6910#e10:
+    locator: 公司公告標題及說明第二項
+    published_date: '2026-07-31'
+    publisher: 鉅亨網
+    quote_check: found
+    title: 德鴻：公告本公司董事會決議通過大陸子公司辦理解散清算
+    url: https://news.cnyes.com/news/id/6556192
+  tw.6910#e2:
+    locator: 第31頁，112、113、114前三季營收類別分析；114年前三季度圖，依專案、維護、訂閱、商品銷售順序
+    published_date: '2025-11-19'
+    publisher: 德鴻科技股份有限公司
+    quote_check: found
+    title: 德鴻科技上櫃前業績發表會
+    url: https://www.grandsys.com.tw/uploads/ir/investors-conference/1141119.pdf
+  tw.6910#e3:
+    locator: GECC產品介紹
+    published_date: null
+    publisher: 德鴻科技股份有限公司
+    quote_check: found
+    title: 全媒體客服平台
+    url: https://www.grandsys.com.tw/gecc
+  tw.6910#e4:
+    locator: GEAP智能客服系統概述
+    published_date: null
+    publisher: 德鴻科技股份有限公司
+    quote_check: found
+    title: 全媒體智能客服系統概述
+    url: https://www.grandsys.com.tw/evoice-crm-outline
+  tw.6910#e5:
+    locator: LOG8000錄音系統產品功能
+    published_date: null
+    publisher: 德鴻科技股份有限公司
+    quote_check: found
+    title: 錄音系統概述
+    url: https://www.grandsys.com.tw/log8000
+  tw.6910#e6:
+    locator: 語音機器人產品介紹
+    published_date: null
+    publisher: 德鴻科技股份有限公司
+    quote_check: found
+    title: 語音機器人概述
+    url: https://www.grandsys.com.tw/ai-bot
+  tw.6910#e7:
+    locator: 如意智能質檢
+    published_date: null
+    publisher: 德鴻科技股份有限公司
+    quote_check: found
+    title: 智能分析
+    url: https://www.grandsys.com.tw/inu
+  tw.6910#e8:
+    locator: 第32頁，附註二五、關係人交易，關係人名稱及其關係
+    published_date: null
+    publisher: 德鴻科技股份有限公司
+    quote_check: found
+    title: 德鴻科技股份有限公司及子公司115年第一季合併財務報告
+    url: https://www.grandsys.com.tw/uploads/ir/finacial/115S1.pdf
+  tw.6910#e9:
+    locator: 第16頁，附註十一、子公司，列入合併財務報告之子公司表
+    published_date: null
+    publisher: 德鴻科技股份有限公司
+    quote_check: found
+    title: 德鴻科技股份有限公司及子公司115年第一季合併財務報告
+    url: https://www.grandsys.com.tw/uploads/ir/finacial/115S1.pdf

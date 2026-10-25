@@ -8,14 +8,47 @@ industry:
   l0_code: '28'
   l0_name: 電子零組件業
   l0_name_en: Electronic Parts and Components
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.pcb
+  l3_name: 印刷電路板
+  l3_name_en: Printed Circuit Boards
+chain: chain.pcb
+chain_stage:
+  agreement: both
+  also: []
+  reason: 印刷電路板占營收93.66%，主要製造雙面板至八層板，以車用板為主。
+  stage: board
+  stage_name: 電路板與載板製造
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 以印刷電路板銷售及加工收入為主，產品涵蓋車用與顯示器用板。
+summary_long: 宇環科技主要從事印刷電路板製造、加工及買賣；2024年合併營收中，印刷電路板占93.66%，加工收入占6.34%。依2025年法說會，主要產品為雙面板至八層板，以車用板為主，終端應用另含電視及資訊產品顯示器。志超科技為其母公司；截至2025年9月底，宇環持有志昱科技57.21%股權並將其納入合併報表。志昱從事各類電路板產銷，於2024年決議暫停自行生產，改採全單外包方式交貨。
+segments:
+- evidence_ids:
+  - e1
+  id: pcb
+  name: 印刷電路板
+  period: '2024'
+  revenue_share_pct: 93.66
+- evidence_ids:
+  - e1
+  id: processing
+  name: 加工收入
+  period: '2024'
+  revenue_share_pct: 6.34
 relations:
   parents:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 列入子公司名單
+    detail: 宇環之母公司
     details:
+    - 宇環之母公司
     - 列入子公司名單
     edge: e9b0cc28b2b89
     evidence_level: primary
@@ -24,12 +57,69 @@ relations:
     ranking_basis: unranked
     share_basis: null
     share_pct: null
+    weight: 2
+  subsidiaries:
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股57.21%之電路板子公司，採全單外包交貨
+    details:
+    - 持股57.21%之電路板子公司，採全單外包交貨
+    edge: ec175aa090ab2
+    evidence_level: primary
+    id: org.志昱科技股份有限公司
+    name: 志昱科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
     weight: 1
 website: http://www.tht-pcb.com.tw
 tax_id: '70684527'
 incorporated: '1999-12-29'
 listed: '2005-01-12'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3276#e1:
+    locator: 印刷頁45，業務範圍／商品項目及營業比重；113年度欄
+    published_date: null
+    publisher: 宇環科技股份有限公司
+    quote_check: found
+    title: 宇環科技2025年股東會年報（113年度）
+    url: https://www.tht-pcb.com.tw/pdf/IS_Meeting/2025Annual%20Report.pdf
+  tw.3276#e2:
+    locator: 印刷頁45，業務範圍
+    published_date: null
+    publisher: 宇環科技股份有限公司
+    quote_check: found
+    title: 宇環科技2025年股東會年報（113年度）
+    url: https://www.tht-pcb.com.tw/pdf/IS_Meeting/2025Annual%20Report.pdf
+  tw.3276#e3:
+    locator: PDF第3頁，公司概況
+    published_date: '2025-09-19'
+    publisher: 宇環科技股份有限公司
+    quote_check: found
+    title: 宇環科技2025年法人說明會簡報
+    url: https://www.tht-pcb.com.tw/pdf/%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83/%E5%AE%87%E7%92%B02025-%E4%B8%AD%E6%96%87%E7%89%88.pdf
+  tw.3276#e4:
+    locator: 第31頁，附註七（一）關係人名稱及關係
+    published_date: '2025-11-12'
+    publisher: 宇環科技股份有限公司
+    quote_check: found
+    title: 宇環科技股份有限公司及子公司114年第三季合併財務報告
+    url: https://www.tht-pcb.com.tw/pdf/Finacial_Statements/2025Q3Finacial%20Statements.pdf
+  tw.3276#e5:
+    locator: 第10頁，附註四（二）列入合併財務報告之子公司；114.9.30欄
+    published_date: '2025-11-12'
+    publisher: 宇環科技股份有限公司
+    quote_check: found
+    title: 宇環科技股份有限公司及子公司114年第三季合併財務報告
+    url: https://www.tht-pcb.com.tw/pdf/Finacial_Statements/2025Q3Finacial%20Statements.pdf
+  tw.3276#e6:
+    locator: 第35頁，附註十二（三）
+    published_date: '2025-11-12'
+    publisher: 宇環科技股份有限公司
+    quote_check: found
+    title: 宇環科技股份有限公司及子公司114年第三季合併財務報告
+    url: https://www.tht-pcb.com.tw/pdf/Finacial_Statements/2025Q3Finacial%20Statements.pdf

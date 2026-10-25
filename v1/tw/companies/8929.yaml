@@ -8,12 +8,128 @@ industry:
   l0_code: '20'
   l0_name: 其他業
   l0_name_en: Others
-primary_chain_position: unknown
+  l1: consumer
+  l1_name: 消費
+  l1_name_en: Consumer
+  l2: cons.staples
+  l2_name: 民生消費
+  l2_name_en: Consumer Staples
+  l3: consumer.household
+  l3_name: 家用品與個人護理
+  l3_name_en: Household & Personal Products
+primary_chain_position: not_applicable
+summary_short: 製造及銷售成人紙尿褲、嬰幼兒與個人衛生照護用品。
+summary_long: 富堡以成人紙尿褲及相關照護用品為核心，從事加工製造、代理經銷與進出口買賣，安安系列涵蓋環保減塑與褲型紙尿褲。2025年合併營收中，成人照護系列占65.40%，嬰婦幼用品占19.68%，其他占14.92%。產品另包含嬰兒紙尿褲、衛生棉及濕紙巾，涵蓋不同年齡層的個人衛生需求。旗下泰國子公司從事紙尿褲製造及銷售，台灣子公司富森德堡生物科技從事面膜製造及銷售，兩者於2025年底均為全資子公司。
+segments:
+- evidence_ids:
+  - e2
+  id: adult_care
+  name: 成人照護系列
+  period: '2025'
+  revenue_share_pct: 65.4
+- evidence_ids:
+  - e2
+  id: baby_women_care
+  name: 嬰婦幼用品
+  period: '2025'
+  revenue_share_pct: 19.68
+- evidence_ids:
+  - e2
+  id: other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 14.92
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 泰國紙尿褲製造及銷售子公司
+    details:
+    - 泰國紙尿褲製造及銷售子公司
+    edge: ec1e78854af25
+    evidence_level: primary
+    id: org.fu-burg-industrial-thailand
+    name: Fu Burg Industrial (Thailand) Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 面膜製造及銷售子公司
+    details:
+    - 面膜製造及銷售子公司
+    edge: eeb36ba72dcc3
+    evidence_level: primary
+    id: org.fusen-deburg-biotechnology
+    name: 富森德堡生物科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.fuburg.com
 tax_id: '30851864'
 incorporated: '1977-08-29'
 listed: '2000-11-30'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-25'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.8929#e2:
+    locator: 紙本第46頁，主要產品及其營業比重（合併），單位為新台幣仟元
+    published_date: null
+    publisher: 富堡工業股份有限公司
+    quote_check: found
+    title: 富堡工業股份有限公司114年度年報
+    url: https://www.fuburg.com/download/118/公司年報/21140/annual-report-2025.pdf
+  tw.8929#e3:
+    locator: 業務範圍，公司所營業務之主要內容A
+    published_date: null
+    publisher: 富堡工業股份有限公司
+    quote_check: found
+    title: 公司營運
+    url: https://www.fuburg.com/關於富堡/公司營運/
+  tw.8929#e4:
+    locator: 首頁產品介紹標題
+    published_date: null
+    publisher: 富堡工業股份有限公司
+    quote_check: found
+    title: 安安成人照護品牌官網
+    url: https://anan.fuburg.com/
+  tw.8929#e5:
+    locator: 首頁產品介紹標題
+    published_date: null
+    publisher: 富堡工業股份有限公司
+    quote_check: found
+    title: 安安成人照護品牌官網
+    url: https://anan.fuburg.com/
+  tw.8929#e6:
+    locator: 行業現況第一段
+    published_date: null
+    publisher: 富堡工業股份有限公司
+    quote_check: found
+    title: 產業概況與未來發展
+    url: https://www.fuburg.com/永續報告書/關注焦點/產品與服務/產業概況與未來發展/
+  tw.8929#e7:
+    locator: 業務範圍，公司所營業務之主要內容B
+    published_date: null
+    publisher: 富堡工業股份有限公司
+    quote_check: found
+    title: 公司營運
+    url: https://www.fuburg.com/關於富堡/公司營運/
+  tw.8929#e8:
+    locator: 紙本第88頁，合併財報附註四（四）2，列入合併財務報告之子公司；114年12月31日持股欄
+    published_date: null
+    publisher: 富堡工業股份有限公司
+    quote_check: found
+    title: 富堡工業股份有限公司114年度年報
+    url: https://www.fuburg.com/download/118/公司年報/21140/annual-report-2025.pdf
+  tw.8929#e9:
+    locator: 紙本第88頁，合併財報附註四（四）2，列入合併財務報告之子公司；114年12月31日持股欄
+    published_date: null
+    publisher: 富堡工業股份有限公司
+    quote_check: found
+    title: 富堡工業股份有限公司114年度年報
+    url: https://www.fuburg.com/download/118/公司年報/21140/annual-report-2025.pdf

@@ -8,12 +8,109 @@ industry:
   l0_code: '27'
   l0_name: 通信網路業
   l0_name_en: Communications and Internet
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.network
+  l2_name: 通信網路
+  l2_name_en: Communications & Networking
+  l3: net.satellite
+  l3_name: 衛星通訊
+  l3_name_en: Satellite Communications
+chain: chain.networking
+chain_stage:
+  agreement: both
+  also:
+  - stage: modules
+    stage_name: 模組與零組件
+    tier: midstream
+  reason: 主要營收來自衛星通訊終端等設備，另有5G基地台射頻設備及衛星射頻模組。
+  stage: equipment
+  stage_name: 網通設備與系統
+  tier: downstream
+primary_chain_position: midstream
+summary_short: 以衛星通訊設備為主要營收來源，並製造5G開放式基地台射頻設備。
+summary_long: 台揚主要經營衛星通訊與行動通訊設備，衛星產品為主要營收來源。衛星業務涵蓋高軌與低軌應用，包括家戶及中小企業地面終端、航空寬頻終端、海事通訊設備與衛星地面射頻模組；低軌產品則包括Ku與Ka頻段收發機及相控陣列天線用戶終端。行動通訊業務提供5G開放式無線接取網路的無線射頻單元，產品涵蓋4T4R、2T4R與8T8R配置。集團在丹麥設有RadioComp、美國設有MTI Lab研發子公司。
+main_theme: theme.5g
+themes:
+- also: []
+  stage: equipment
+  theme: theme.5g
+  tier: midstream
+- also: []
+  stage: equipment
+  theme: theme.leo_satellite
+  tier: midstream
+relations:
+  subsidiaries:
+  - as_of: '2025-12-11'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 美國研發子公司
+    details:
+    - 美國研發子公司
+    edge: e6ed15302a4ab
+    evidence_level: primary
+    id: org.mti-lab
+    name: MTI Lab
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-11'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 丹麥研發子公司
+    details:
+    - 丹麥研發子公司
+    edge: e7f1eb7d37b40
+    evidence_level: primary
+    id: org.radiocomp
+    name: RadioComp
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.mtigroup.com/zh-tw
 tax_id: '47255762'
 incorporated: '1983-03-31'
 listed: '1990-08-08'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2314#e1:
+    locator: 黃立安發布之法說會報導，營收結構段落
+    published_date: '2025-12-11'
+    publisher: MoneyDJ理財網
+    quote_check: found
+    title: 台揚衛星業務成核心動能，明年展望正向
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=cf82352e-c37d-40b1-b7bd-fe312d95c2da
+  tw.2314#e2:
+    locator: 第25頁，高軌衛星主要產品四項及射頻模組說明
+    published_date: '2025-12-11'
+    publisher: 台揚科技股份有限公司
+    quote_check: found
+    title: 台揚科技股份有限公司 Investor Forum
+    url: https://mopsov.twse.com.tw/nas/STR/231420251211M001.pdf
+  tw.2314#e3:
+    locator: 第26頁，Ku／Ka收發機及相控陣列天線用戶終端兩項產品
+    published_date: '2025-12-11'
+    publisher: 台揚科技股份有限公司
+    quote_check: found
+    title: 台揚科技股份有限公司 Investor Forum
+    url: https://mopsov.twse.com.tw/nas/STR/231420251211M001.pdf
+  tw.2314#e4:
+    locator: 第17頁，5G基地台產品配置表
+    published_date: '2025-12-11'
+    publisher: 台揚科技股份有限公司
+    quote_check: found
+    title: 台揚科技股份有限公司 Investor Forum
+    url: https://mopsov.twse.com.tw/nas/STR/231420251211M001.pdf
+  tw.2314#e5:
+    locator: 第5頁，MTI Worldwide：RadioComp及MTI Lab各自的子公司說明
+    published_date: '2025-12-11'
+    publisher: 台揚科技股份有限公司
+    quote_check: found
+    title: 台揚科技股份有限公司 Investor Forum
+    url: https://mopsov.twse.com.tw/nas/STR/231420251211M001.pdf

@@ -8,12 +8,164 @@ industry:
   l0_code: '25'
   l0_name: 電腦及週邊設備業
   l0_name_en: Computer and Peripheral Equipment
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.hardware
+  l2_name: 電腦與硬體
+  l2_name_en: Computers & Hardware
+  l3: hw.peripheral
+  l3_name: 周邊與輸入裝置
+  l3_name_en: Peripherals & Input Devices
+primary_chain_position: midstream
+summary_short: 以掃描器、雷射印表機與多功能事務機等數位辦公設備為主要業務。
+summary_long: 虹光以數位化辦公設備為主要業務，提供高速文件掃描器、平台與行動掃描器、雷射印表機及多功能事務機。2025年商品收入占97%，涵蓋影像掃描器、數位化辦公設備與多功能事務機；勞務收入及其他收入分別占2%與1%。文件掃描器採自動進紙設計，多功能事務機整合列印、複印、掃描、傳真與數位傳送。另開發醫療器材用馬達模組及高精度影像讀取器。主要間接子公司包括虹光蘇州、Avision Labs及Avision Europe。
+segments:
+- evidence_ids:
+  - e1
+  - e2
+  id: seg_goods
+  name: 商品收入（影像掃描器、數位化辦公設備及多功能事務機）
+  period: '2025'
+  revenue_share_pct: 97
+- evidence_ids:
+  - e2
+  id: seg_services
+  name: 勞務收入
+  period: '2025'
+  revenue_share_pct: 2
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他收入
+  period: '2025'
+  revenue_share_pct: 1
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接子公司
+    details:
+    - 間接子公司
+    edge: e608863f9583a
+    evidence_level: primary
+    id: org.avision-europe
+    name: Avision Europe GmbH
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接子公司
+    details:
+    - 間接子公司
+    edge: ebf4b83efe362
+    evidence_level: primary
+    id: org.avision-labs
+    name: Avision Labs, Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接子公司
+    details:
+    - 間接子公司
+    edge: e5e75388cf7f6
+    evidence_level: primary
+    id: org.avision-suzhou
+    name: 虹光精密工業(蘇州)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.avision.com.tw
 tax_id: '22099759'
 incorporated: '1991-04-24'
 listed: '1998-12-03'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2380#e1:
+    locator: 印刷第51頁，肆、營運概況／一、業務內容／營業比重表，商品收入項目
+    published_date: null
+    publisher: 虹光精密工業股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.avision.com/tw/wp-content/uploads/sites/2/2026/07/2025_Annual-Report_CT.pdf
+  tw.2380#e10:
+    locator: 印刷第70頁，114年12月31日關係企業組織圖及持股表；Avision Labs經境外投資公司間接持有
+    published_date: null
+    publisher: 虹光精密工業股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.avision.com/tw/wp-content/uploads/sites/2/2026/07/2025_Annual-Report_CT.pdf
+  tw.2380#e11:
+    locator: 印刷第70頁，114年12月31日關係企業組織圖及持股表；Avision Europe經光量子投資間接持有
+    published_date: null
+    publisher: 虹光精密工業股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.avision.com/tw/wp-content/uploads/sites/2/2026/07/2025_Annual-Report_CT.pdf
+  tw.2380#e2:
+    locator: 印刷第51頁，營業比重表；兩欄依序為114年度及113年度，商品收入列為97及99
+    published_date: null
+    publisher: 虹光精密工業股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.avision.com/tw/wp-content/uploads/sites/2/2026/07/2025_Annual-Report_CT.pdf
+  tw.2380#e3:
+    locator: 文件掃瞄系列介紹
+    published_date: null
+    publisher: 虹光精密工業股份有限公司
+    quote_check: found
+    title: 文件掃描系列
+    url: https://www.avision.com/tw/product-category/document-scanner/
+  tw.2380#e4:
+    locator: FB10產品介紹
+    published_date: null
+    publisher: 虹光精密工業股份有限公司
+    quote_check: found
+    title: 平台掃描系列
+    url: https://www.avision.com/tw/product-category/flatbed-scanner/
+  tw.2380#e5:
+    locator: 行動掃瞄系列介紹
+    published_date: null
+    publisher: 虹光精密工業股份有限公司
+    quote_check: found
+    title: 行動掃瞄系列
+    url: https://www.avision.com/tw/product-category/mobile-scanner/
+  tw.2380#e6:
+    locator: 公司沿革，雷射印表機研發及製造段落
+    published_date: null
+    publisher: 虹光精密工業股份有限公司
+    quote_check: found
+    title: 品牌故事／公司簡介
+    url: https://www.avision.com/tw/about-avision/
+  tw.2380#e7:
+    locator: 虹光多功能事務機產品系列介紹
+    published_date: null
+    publisher: 虹光精密工業股份有限公司
+    quote_check: found
+    title: 印表機／多功能事務機
+    url: https://www.avision.com/tw/product-category/printer-mfp/
+  tw.2380#e8:
+    locator: 醫療器材業務介紹
+    published_date: null
+    publisher: 虹光精密工業股份有限公司
+    quote_check: found
+    title: 醫療器材
+    url: https://www.avision.com/tw/product-category/medical/
+  tw.2380#e9:
+    locator: 印刷第70頁，114年12月31日關係企業組織圖及持股表；蘇州公司經境外投資公司間接持有
+    published_date: null
+    publisher: 虹光精密工業股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.avision.com/tw/wp-content/uploads/sites/2/2026/07/2025_Annual-Report_CT.pdf

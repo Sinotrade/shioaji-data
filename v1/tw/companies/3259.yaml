@@ -8,12 +8,85 @@ industry:
   l0_code: '24'
   l0_name: 半導體業
   l0_name_en: Semiconductor
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.semi
+  l2_name: 半導體
+  l2_name_en: Semiconductors
+  l3: semi.ic_design
+  l3_name: IC 設計
+  l3_name_en: IC Design
+chain: chain.semiconductor
+chain_stage:
+  agreement: both
+  also: []
+  reason: 音訊IC及其他占營收85.27%，主要從事音訊與儲存控制晶片設計。
+  stage: ip_design
+  stage_name: IP 與 IC 設計
+  tier: upstream
+primary_chain_position: upstream
+summary_short: 以MEMS麥克風、音訊控制晶片及快閃記憶體控制IC取得營收。
+summary_long: 鑫創從事音訊與儲存控制晶片業務，主要產品包括MEMS微機電麥克風、USB Audio控制晶片及NAND Flash控制IC。2025年營收以音訊IC及其他為主，占85.27%，NAND Flash控制IC占14.43%，設計服務占0.30%。USB控制產品用於隨身碟，提供USB 3.2 Gen 1介面方案；MEMS麥克風則結合自行開發的微機電感測器與ASIC晶片。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_audio
+  name: 音訊IC及其他
+  period: '2025'
+  revenue_share_pct: 85.27
+- evidence_ids:
+  - e2
+  id: seg_nand
+  name: NAND Flash控制IC
+  period: '2025'
+  revenue_share_pct: 14.43
+- evidence_ids:
+  - e2
+  id: seg_design
+  name: 設計服務收入
+  period: '2025'
+  revenue_share_pct: 0.3
 website: www.3system.com.tw
 tax_id: '16766959'
 incorporated: '1998-11-26'
 listed: '2007-12-24'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-25'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3259#e1:
+    locator: 公司簡介第一段
+    published_date: null
+    publisher: 鑫創科技股份有限公司
+    quote_check: found
+    title: 鑫創簡介
+    url: https://www.3system.com.tw/public/page/5
+  tw.3259#e2:
+    locator: 第55頁，營運概況／業務範圍／營業比重
+    published_date: '2026-03-31'
+    publisher: 鑫創科技股份有限公司
+    quote_check: found
+    title: 鑫創科技股份有限公司114年度年報
+    url: https://www.3system.com.tw/uploads/others/others/114%E5%B9%B4%E5%A0%B1.pdf
+  tw.3259#e3:
+    locator: 公司介紹
+    published_date: null
+    publisher: 鑫創科技股份有限公司
+    quote_check: found
+    title: 鑫創科技官方網站
+    url: https://www.3system.com.tw/
+  tw.3259#e4:
+    locator: USB隨身碟控制IC，產品介紹
+    published_date: null
+    publisher: 鑫創科技股份有限公司
+    quote_check: found
+    title: 儲存裝置解決方案
+    url: https://www.3system.com.tw/public/products/4
+  tw.3259#e5:
+    locator: MEMS Microphone產品介紹
+    published_date: null
+    publisher: 鑫創科技股份有限公司
+    quote_check: found
+    title: 微機電麥克風
+    url: https://www.3system.com.tw/public/products/6

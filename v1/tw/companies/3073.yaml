@@ -8,12 +8,73 @@ industry:
   l0_code: '35'
   l0_name: 綠能環保
   l0_name_en: Green Energy and Environmental Services
-primary_chain_position: unknown
+  l1: energy
+  l1_name: 能源
+  l1_name_en: Energy & Utilities
+  l2: energy.green
+  l2_name: 綠能
+  l2_name_en: Renewable Energy
+  l3: green.solar
+  l3_name: 太陽能
+  l3_name_en: Solar
+chain: chain.solar
+chain_stage:
+  agreement: both
+  also: []
+  reason: 再生能源收入占97.82%，主要涵蓋太陽能電廠開發、建置、維運及售電，屬系統與電廠階段。
+  stage: system
+  stage_name: 系統與電廠
+  tier: downstream
+primary_chain_position: downstream
+summary_short: 以再生能源售電、太陽能電廠開發及建置工程為主要業務。
+summary_long: 天方能源以再生能源為業務主體，經營範圍涵蓋電廠開發、建造、運轉維護與售電，並承攬太陽能電廠建置工程。2025年度再生能源收入占97.82%，租賃收入占2.18%，營收主要來自再生能源業務。公司透過旗下子公司發展相關業務，年報明列天方電力為子公司，法說會則說明詮實能源為全資子公司，專營再生能源售電服務。依其電廠開發、建置與營運內容，整體業務歸於太陽能產業鏈的系統與電廠階段。
+segments:
+- evidence_ids:
+  - e2
+  - e3
+  id: seg_renewable
+  name: 再生能源
+  period: '2025'
+  revenue_share_pct: 97.82
+- evidence_ids:
+  - e4
+  id: seg_rental
+  name: 租賃收入
+  period: '2025'
+  revenue_share_pct: 2.18
 website: https://www.tpenergy.com.tw
 tax_id: '86298705'
 incorporated: '1991-10-22'
 listed: '2007-10-08'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3073#e2:
+    locator: 第41頁，業務內容
+    published_date: '2026-06-01'
+    publisher: 天方能源科技股份有限公司
+    quote_check: not_found
+    title: 天方能源科技股份有限公司一一四年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=3073&colorchg=1&filename=2025_3073_20260623F04.pdf&kind=F&step=9
+  tw.3073#e3:
+    locator: 第41頁，營業比重表；再生能源列、114年度比例欄，銷貨金額86,176仟元
+    published_date: '2026-06-01'
+    publisher: 天方能源科技股份有限公司
+    quote_check: not_found
+    title: 天方能源科技股份有限公司一一四年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=3073&colorchg=1&filename=2025_3073_20260623F04.pdf&kind=F&step=9
+  tw.3073#e4:
+    locator: 第41頁，營業比重表；租賃收入列、114年度比例欄，銷貨金額1,919仟元
+    published_date: '2026-06-01'
+    publisher: 天方能源科技股份有限公司
+    quote_check: not_found
+    title: 天方能源科技股份有限公司一一四年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=3073&colorchg=1&filename=2025_3073_20260623F04.pdf&kind=F&step=9
+  tw.3073#e5:
+    locator: 第5頁，公司概況；由公司官網投資人專區連結
+    published_date: '2025-12-16'
+    publisher: 天方能源科技股份有限公司
+    quote_check: not_found
+    title: 天方能源2025年度法人說明會簡報
+    url: https://drive.google.com/file/d/1d6HTmGXafqmYQUHcHh8o18oBpcakNWqL/view

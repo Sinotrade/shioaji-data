@@ -8,12 +8,166 @@ industry:
   l0_code: '27'
   l0_name: 通信網路業
   l0_name_en: Communications and Internet
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.network
+  l2_name: 通信網路
+  l2_name_en: Communications & Networking
+  l3: net.wireless
+  l3_name: 無線通訊與射頻
+  l3_name_en: Wireless & RF
+chain: chain.networking
+chain_stage:
+  agreement: both
+  also:
+  - stage: modules
+    stage_name: 模組與零組件
+    tier: midstream
+  reason: 家用無線通訊設備占營收87%為主，另提供Wi-Fi 6無線模組。
+  stage: equipment
+  stage_name: 網通設備與系統
+  tier: downstream
+primary_chain_position: midstream
+summary_short: 以家用無線通訊設備為主要營收來源，另提供企業無線網路及工業通訊產品。
+summary_long: 智捷以家用無線通訊設備為主要營收來源，2024年Commodity占營收87%，Industrial占6.44%，5G & IoT占6.56%。產品涵蓋家用無線傳輸設備、企業級無線存取點與控制器、Wi-Fi 6模組及5G工業閘道器。2026年推出NEW平台，透過zMEC邊緣節點整合網路控制、無線接入、AI服務與能源管理。集團透過智微亞香港持有江西智微亞，後者從事通訊電子產品研發、生產及銷售。
+segments:
+- evidence_ids:
+  - e2
+  id: commodity
+  name: Commodity
+  period: '2024'
+  revenue_share_pct: 87
+- evidence_ids:
+  - e2
+  id: industrial
+  name: Industrial
+  period: '2024'
+  revenue_share_pct: 6.44
+- evidence_ids:
+  - e2
+  id: 5g_iot
+  name: 5G & IoT
+  period: '2024'
+  revenue_share_pct: 6.56
+main_theme: theme.5g
+themes:
+- also: []
+  stage: equipment
+  theme: theme.5g
+  tier: midstream
+relations:
+  subsidiaries:
+  - as_of: '2025-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過智微亞香港持有之營運子公司
+    details:
+    - 透過智微亞香港持有之營運子公司
+    edge: ec8438b5b5ba8
+    evidence_level: primary
+    id: org.jiangxi-zcom
+    name: 江西智微亞科技有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 具實質控制力之子公司
+    details:
+    - 具實質控制力之子公司
+    edge: e8383aecbfadd
+    evidence_level: primary
+    id: org.xin-hui-zhi-investment
+    name: 鑫匯智投資有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有之投資子公司
+    details:
+    - 直接持有之投資子公司
+    edge: ef2cfa1698636
+    evidence_level: primary
+    id: org.zcom-hong-kong
+    name: 智微亞香港有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.zcom.com.tw
 tax_id: '84149408'
 incorporated: '1995-03-10'
 listed: '2013-06-25'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-25'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.8176#e10:
+    locator: 第12頁，合併概況註1
+    published_date: '2025-05-07'
+    publisher: 智捷科技股份有限公司
+    quote_check: found
+    title: 智捷科技股份有限公司及子公司114年第1季合併財務報告
+    url: https://www.zcom.com.tw/tw/qiansanjiFS/114Q1ZCOM.pdf
+  tw.8176#e2:
+    locator: 第67頁，營業比重；表格依序為113年度及112年度
+    published_date: '2025-03-31'
+    publisher: 智捷科技股份有限公司
+    quote_check: found
+    title: 智捷科技股份有限公司一一三年年報
+    url: https://www.zcom.com.tw/tw/nianbao/113nianbao.pdf
+  tw.8176#e3:
+    locator: 第67頁，公司目前主要商品項目
+    published_date: '2025-03-31'
+    publisher: 智捷科技股份有限公司
+    quote_check: found
+    title: 智捷科技股份有限公司一一三年年報
+    url: https://www.zcom.com.tw/tw/nianbao/113nianbao.pdf
+  tw.8176#e4:
+    locator: Wi-Fi 7 AP：AI就緒的無線基礎設施層
+    published_date: '2026-06-01'
+    publisher: 智捷科技股份有限公司
+    quote_check: found
+    title: 智捷科技 Z-COM 於 Computex 2026 正式發表 NEW Edge-Native 基礎設施平台
+    url: https://www.zcom.com.tw/tw/index/news/detail?id=460
+  tw.8176#e5:
+    locator: 產品名稱及副標題
+    published_date: null
+    publisher: 智捷科技股份有限公司
+    quote_check: found
+    title: AX-930無線網卡
+    url: https://www.zcom.com.tw/tw/index/product/details?id=40
+  tw.8176#e6:
+    locator: 產品特色
+    published_date: null
+    publisher: 智捷科技股份有限公司
+    quote_check: found
+    title: AG260行動通訊閘道器
+    url: https://www.zcom.com.tw/tw/index/product/details?id=95
+  tw.8176#e7:
+    locator: NEW：Edge-Native基礎設施平台
+    published_date: '2026-06-01'
+    publisher: 智捷科技股份有限公司
+    quote_check: found
+    title: 智捷科技 Z-COM 於 Computex 2026 正式發表 NEW Edge-Native 基礎設施平台
+    url: https://www.zcom.com.tw/tw/index/news/detail?id=460
+  tw.8176#e8:
+    locator: 第12頁，合併財務報表編製主體；114年3月31日欄
+    published_date: '2025-05-07'
+    publisher: 智捷科技股份有限公司
+    quote_check: found
+    title: 智捷科技股份有限公司及子公司114年第1季合併財務報告
+    url: https://www.zcom.com.tw/tw/qiansanjiFS/114Q1ZCOM.pdf
+  tw.8176#e9:
+    locator: 第12頁，合併財務報表編製主體
+    published_date: '2025-05-07'
+    publisher: 智捷科技股份有限公司
+    quote_check: found
+    title: 智捷科技股份有限公司及子公司114年第1季合併財務報告
+    url: https://www.zcom.com.tw/tw/qiansanjiFS/114Q1ZCOM.pdf

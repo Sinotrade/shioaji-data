@@ -8,12 +8,58 @@ industry:
   l0_code: '04'
   l0_name: 紡織纖維
   l0_name_en: Textiles
-primary_chain_position: unknown
+  l1: consumer
+  l1_name: 消費
+  l1_name_en: Consumer
+  l2: cons.discretionary
+  l2_name: 非必需消費
+  l2_name_en: Consumer Discretionary
+  l3: apparel.garment
+  l3_name: 成衣與服飾
+  l3_name_en: Apparel
+chain: chain.textile
+chain_stage:
+  agreement: both
+  also: []
+  reason: 託工製衣收入占93.60%，另有成衣加工業務，主要屬成衣階段。
+  stage: garment
+  stage_name: 成衣、製鞋與品牌
+  tier: downstream
+primary_chain_position: downstream
+summary_short: 以成衣貿易、託工製衣及加工服務取得營收。
+summary_long: 飛寶企業主要從事成衣貿易與託工製衣，並有加工收入，營運以成衣相關業務為主。2025年度營收組成為託工製衣收入93.60%及加工收入6.40%，其中託工製衣為最大收入來源。公司官網列示的產品包括流行服飾、功能性服飾、無縫服飾及居家服飾，涵蓋不同服飾產品類別。集團另持有史瓦帝尼子公司EST GLOBAL APPAREL ESWATINI (PROPRIETARY) LIMITED全部股權，該子公司從事成衣加工，並納入合併財務報表。
+segments:
+- evidence_ids:
+  - e2
+  id: seg1
+  name: 託工製衣收入
+  period: '2025'
+  revenue_share_pct: 93.6
+- evidence_ids:
+  - e2
+  id: seg2
+  name: 加工收入
+  period: '2025'
+  revenue_share_pct: 6.4
 website: www.estga.com
 tax_id: '22676914'
 incorporated: '1987-10-30'
 listed: '1999-07-29'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-25'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4413#e2:
+    locator: 印刷第50頁，PDF第54頁，營業比重表；數值欄依序為113年、114年
+    published_date: '2026-06-08'
+    publisher: 飛寶企業股份有限公司
+    quote_check: not_found
+    title: 飛寶企業股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=4413&colorchg=1&filename=2025_4413_20260630F04.pdf&kind=F&step=9
+  tw.4413#e3:
+    locator: 印刷第50頁，PDF第54頁，業務內容
+    published_date: '2026-06-08'
+    publisher: 飛寶企業股份有限公司
+    quote_check: not_found
+    title: 飛寶企業股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=4413&colorchg=1&filename=2025_4413_20260630F04.pdf&kind=F&step=9

@@ -8,12 +8,194 @@ industry:
   l0_code: '22'
   l0_name: 生技醫療業
   l0_name_en: Biotechnology and Medical Care
-primary_chain_position: unknown
+  l1: health
+  l1_name: 醫療保健
+  l1_name_en: Healthcare
+  l2: health.devices
+  l2_name: 醫療器材與服務
+  l2_name_en: Medical Devices & Services
+  l3: med.services
+  l3_name: 醫療服務與通路
+  l3_name_en: Healthcare Services & Distribution
+chain: chain.biotech
+chain_stage:
+  agreement: both
+  also:
+  - stage: manufacturing
+    stage_name: 製造與代工
+    tier: midstream
+  reason: 醫療器材及設備占營收71.65%，以經銷買賣為主，另生產角膜塑型片。
+  stage: channel
+  stage_name: 通路與醫療服務
+  tier: downstream
+primary_chain_position: downstream
+summary_short: 透過子公司經營醫療設備經銷、角膜塑型片及保健食品業務。
+summary_long: 欣大健康透過子公司經營醫療器材、眼科光學與保健食品業務。2024年集團營收以醫療器材及設備為主，占71.65%，保健食品占17.79%，另有維修收入與其他收入。欣大首美達從事動物用醫療設備業務，產品包括MRI與CT；瑞亞生醫經營光學及特販業務；致瑩生技與晁瑩國際經營保健食品業務。集團醫療設備業務多採經銷買賣，同時具有角膜塑型片生產業務。
+segments:
+- evidence_ids:
+  - e1
+  id: medical_equipment
+  name: 醫療器材及設備
+  period: '2024'
+  revenue_share_pct: 71.65
+- evidence_ids:
+  - e2
+  id: health_food
+  name: 保健食品
+  period: '2024'
+  revenue_share_pct: 17.79
+- evidence_ids:
+  - e3
+  id: maintenance
+  name: 維修收入
+  period: '2024'
+  revenue_share_pct: 5.71
+- evidence_ids:
+  - e4
+  id: other
+  name: 其他
+  period: '2024'
+  revenue_share_pct: 4.85
+relations:
+  subsidiaries:
+  - as_of: '2025-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 保健食品事業子公司
+    details:
+    - 保健食品事業子公司
+    edge: e7a2c6363ade2
+    evidence_level: primary
+    id: org.chaoying-international
+    name: 晁瑩國際股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 動物用醫療設備事業子公司
+    details:
+    - 動物用醫療設備事業子公司
+    edge: eb685e8124ba0
+    evidence_level: primary
+    id: org.sns-summit
+    name: 欣大首美達股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 光學及特販事業子公司
+    details:
+    - 光學及特販事業子公司
+    edge: e5f19ab490b21
+    evidence_level: primary
+    id: org.swissray-asia
+    name: 瑞亞生醫股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 保健食品事業子公司
+    details:
+    - 保健食品事業子公司
+    edge: eabd89d4b3728
+    evidence_level: primary
+    id: org.zhiying-biotech
+    name: 致瑩生技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.swissray.com
 tax_id: '54154754'
 incorporated: '2013-01-07'
 listed: '2014-12-23'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4198#e1:
+    locator: 第39頁，營業比重表；引文為113年度醫療器材及設備欄
+    published_date: '2025-05-29'
+    publisher: 欣大健康投資控股股份有限公司
+    quote_check: found
+    title: 欣大健康民國113年度年報
+    url: https://swissray-s3.s3.ap-southeast-1.amazonaws.com/pdfUpload/1769393615016-99k4174m1av.pdf
+  tw.4198#e10:
+    locator: 第9頁，欣大首美達—動物用醫療設備事業體
+    published_date: '2025-12-26'
+    publisher: 欣大健康投資控股股份有限公司
+    quote_check: found
+    title: 欣大健康2025年法人說明會簡報
+    url: https://swissray-s3.s3.ap-southeast-1.amazonaws.com/pdfUpload/1769065154365-mvs58sc6c2d.pdf
+  tw.4198#e11:
+    locator: 第2頁光學事業；第52頁主要產品之重要用途
+    published_date: '2025-05-29'
+    publisher: 欣大健康投資控股股份有限公司
+    quote_check: found
+    title: 欣大健康民國113年度年報
+    url: https://swissray-s3.s3.ap-southeast-1.amazonaws.com/pdfUpload/1769393615016-99k4174m1av.pdf
+  tw.4198#e2:
+    locator: 第39頁，營業比重表；引文為113年度保健食品欄
+    published_date: '2025-05-29'
+    publisher: 欣大健康投資控股股份有限公司
+    quote_check: found
+    title: 欣大健康民國113年度年報
+    url: https://swissray-s3.s3.ap-southeast-1.amazonaws.com/pdfUpload/1769393615016-99k4174m1av.pdf
+  tw.4198#e3:
+    locator: 第39頁，營業比重表；引文為113年度維修收入欄
+    published_date: '2025-05-29'
+    publisher: 欣大健康投資控股股份有限公司
+    quote_check: found
+    title: 欣大健康民國113年度年報
+    url: https://swissray-s3.s3.ap-southeast-1.amazonaws.com/pdfUpload/1769393615016-99k4174m1av.pdf
+  tw.4198#e4:
+    locator: 第39頁，營業比重表；引文為113年度其他欄
+    published_date: '2025-05-29'
+    publisher: 欣大健康投資控股股份有限公司
+    quote_check: found
+    title: 欣大健康民國113年度年報
+    url: https://swissray-s3.s3.ap-southeast-1.amazonaws.com/pdfUpload/1769393615016-99k4174m1av.pdf
+  tw.4198#e5:
+    locator: 公司簡介
+    published_date: null
+    publisher: 欣大健康投資控股股份有限公司
+    quote_check: found
+    title: 欣大健康官方網站
+    url: https://www.sns-healthcare.com/
+  tw.4198#e6:
+    locator: 第35頁，本公司投資持股表；業務見第2頁主要子公司表
+    published_date: '2025-05-29'
+    publisher: 欣大健康投資控股股份有限公司
+    quote_check: found
+    title: 欣大健康民國113年度年報
+    url: https://swissray-s3.s3.ap-southeast-1.amazonaws.com/pdfUpload/1769393615016-99k4174m1av.pdf
+  tw.4198#e7:
+    locator: 第35頁，本公司投資持股表；業務見第2頁主要子公司表
+    published_date: '2025-05-29'
+    publisher: 欣大健康投資控股股份有限公司
+    quote_check: found
+    title: 欣大健康民國113年度年報
+    url: https://swissray-s3.s3.ap-southeast-1.amazonaws.com/pdfUpload/1769393615016-99k4174m1av.pdf
+  tw.4198#e8:
+    locator: 第35頁，本公司投資持股表；業務見第2頁主要子公司表
+    published_date: '2025-05-29'
+    publisher: 欣大健康投資控股股份有限公司
+    quote_check: found
+    title: 欣大健康民國113年度年報
+    url: https://swissray-s3.s3.ap-southeast-1.amazonaws.com/pdfUpload/1769393615016-99k4174m1av.pdf
+  tw.4198#e9:
+    locator: 第35頁，本公司投資持股表；業務見第2頁主要子公司表
+    published_date: '2025-05-29'
+    publisher: 欣大健康投資控股股份有限公司
+    quote_check: found
+    title: 欣大健康民國113年度年報
+    url: https://swissray-s3.s3.ap-southeast-1.amazonaws.com/pdfUpload/1769393615016-99k4174m1av.pdf

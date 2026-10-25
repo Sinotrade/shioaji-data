@@ -8,12 +8,123 @@ industry:
   l0_code: '22'
   l0_name: 生技醫療業
   l0_name_en: Biotechnology and Medical Care
-primary_chain_position: unknown
+  l1: health
+  l1_name: 醫療保健
+  l1_name_en: Healthcare
+  l2: health.devices
+  l2_name: 醫療器材與服務
+  l2_name_en: Medical Devices & Services
+  l3: med.services
+  l3_name: 醫療服務與通路
+  l3_name_en: Healthcare Services & Distribution
+chain: chain.biotech
+chain_stage:
+  agreement: both
+  also: []
+  reason: 零售部門收入15.99億元，高於醫材部門2.86億元；資料未明示醫材製造業務。
+  stage: channel
+  stage_name: 通路與醫療服務
+  tier: downstream
+primary_chain_position: downstream
+summary_short: 經營居家醫療器材與藥妝通路，合併營收以零售部門為主。
+summary_long: 優盛以居家醫療器材與藥妝零售為兩大業務，合併收入以零售部門為主。2026年上半年，零售部門對外收入為新台幣15.99億元，醫療器械部門為2.86億元。醫材產品包含電子血壓計、血氧機、體溫計、血糖機及噴霧治療器，涵蓋居家生理量測與呼吸照護。藥妝零售由子公司佑全藥品經營；優盛另持有瑞盛醫學科技、尚鈞醫療科技及宇盛醫學科技等醫材子公司，如影優活則從事資訊軟體與醫療器材業務。
+segments:
+- evidence_ids:
+  - e_segments
+  id: retail
+  name: 零售部門
+  period: 2026年上半年
+  revenue_share_pct: null
+- evidence_ids:
+  - e_segments
+  id: medical_devices
+  name: 醫療器械
+  period: 2026年上半年
+  revenue_share_pct: null
+relations:
+  subsidiaries:
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 最終母公司
+    details:
+    - 最終母公司
+    edge: ef93a67eeb1e2
+    evidence_level: primary
+    id: tw.6929
+    name: 佑全
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.rossmax.com
 tax_id: '23123644'
 incorporated: '1988-11-02'
 listed: '2003-07-25'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4121#e_anhui:
+    locator: 附註四（二）合併基礎，第11頁
+    published_date: '2026-07-31'
+    publisher: 優盛醫學科技股份有限公司
+    quote_check: unreachable
+    title: 優盛醫學科技股份有限公司及子公司115年第二季合併財務報告
+    url: https://doc.twse.com.tw/pdf/202602_4121_AI1_20261022_202116.pdf
+  tw.4121#e_bp:
+    locator: 產品分類標題與產品卡
+    published_date: null
+    publisher: Rossmax International Ltd.
+    quote_check: found
+    title: Blood Pressure Monitors - Rossmax
+    url: https://www.rossmax.com/en/products/monitoring/blood-pressure-monitors.html
+  tw.4121#e_glucose:
+    locator: 產品分類
+    published_date: null
+    publisher: Rossmax International Ltd.
+    quote_check: found
+    title: Blood Glucose Meters - Rossmax
+    url: https://www.rossmax.com/en/products/monitoring/blood-glucose-meters.html
+  tw.4121#e_nebulizer:
+    locator: NK1000產品介紹
+    published_date: null
+    publisher: Rossmax International Ltd.
+    quote_check: found
+    title: Nebulizers - Rossmax
+    url: https://www.rossmax.com/en/products/therapy/nebulizers.html
+  tw.4121#e_oximeter:
+    locator: SA300產品介紹
+    published_date: null
+    publisher: Rossmax International Ltd.
+    quote_check: found
+    title: Pulse Oximeters - Rossmax
+    url: https://www.rossmax.com/en/products/monitoring/pulse-oximeters.html
+  tw.4121#e_ruisheng:
+    locator: 附註四（二）合併基礎，第10頁
+    published_date: '2026-07-31'
+    publisher: 優盛醫學科技股份有限公司
+    quote_check: unreachable
+    title: 優盛醫學科技股份有限公司及子公司115年第二季合併財務報告
+    url: https://doc.twse.com.tw/pdf/202602_4121_AI1_20261022_202116.pdf
+  tw.4121#e_segments:
+    locator: 附註十四、部門資訊，第46頁；欄序為醫療器械、零售部門、投資部門、調整及銷除、合計
+    published_date: '2026-07-31'
+    publisher: 優盛醫學科技股份有限公司
+    quote_check: unreachable
+    title: 優盛醫學科技股份有限公司及子公司115年第二季合併財務報告
+    url: https://doc.twse.com.tw/pdf/202602_4121_AI1_20261022_202116.pdf
+  tw.4121#e_temperature:
+    locator: HC700 BT及RA600產品介紹
+    published_date: null
+    publisher: Rossmax International Ltd.
+    quote_check: found
+    title: Thermometers - Rossmax
+    url: https://www.rossmax.com/en/products/monitoring/thermometers.html
+  tw.4121#e_youcare:
+    locator: 附註四（二）合併基礎，第10頁
+    published_date: '2026-07-31'
+    publisher: 優盛醫學科技股份有限公司
+    quote_check: unreachable
+    title: 優盛醫學科技股份有限公司及子公司115年第二季合併財務報告
+    url: https://doc.twse.com.tw/pdf/202602_4121_AI1_20261022_202116.pdf

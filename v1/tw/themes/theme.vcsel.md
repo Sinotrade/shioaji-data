@@ -4,13 +4,14 @@
 
 - 英文：VCSEL
 - 別名：VCSEL
-- 成員：14 家
+- 成員：15 家
 - 完整成員與證據見同目錄同名 YAML，或 themes.json
 
-## 磊晶（上游，3 家）
+## 磊晶（上游，4 家）
 
 | 代號 | 名稱 | 說明 |
 | --- | --- | --- |
+| [2444](../companies/2444.md) | 兆勁 | 透過子公司兆通光電從事VCSEL磊晶 |
 | [2455](../companies/2455.md) | 全新 | VCSEL磊晶 |
 | [3081](../companies/3081.md) | 聯亞 | VCSEL磊晶 |
 | [4971](../companies/4971.md) | IET-KY | VCSEL磊晶 |

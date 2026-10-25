@@ -45,15 +45,15 @@ segments:
   name: I/O卡、週邊產品及其他
   period: '2024'
   revenue_share_pct: 7.47
-main_theme: theme.robotics
+main_theme: theme.drone
 themes:
-- also: []
-  stage: control
-  theme: theme.robotics
-  tier: midstream
 - also: []
   stage: modules
   theme: theme.drone
+  tier: midstream
+- also: []
+  stage: control
+  theme: theme.robotics
   tier: midstream
 relations:
   subsidiaries:

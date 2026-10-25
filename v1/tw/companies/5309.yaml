@@ -58,13 +58,13 @@ themes:
   theme: theme.ai_server
   tier: midstream
 - also: []
-  stage: equipment
-  theme: theme.data_center
-  tier: upstream
-- also: []
   stage: system
   theme: theme.drone
   tier: downstream
+- also: []
+  stage: equipment
+  theme: theme.data_center
+  tier: upstream
 relations:
   subsidiaries:
   - as_of: '2026-06-30'

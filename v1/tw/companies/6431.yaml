@@ -8,13 +8,76 @@ industry:
   l0_code: '22'
   l0_name: 生技醫療業
   l0_name_en: Biotechnology and Medical Care
-primary_chain_position: unknown
+  l1: consumer
+  l1_name: 消費
+  l1_name_en: Consumer
+  l2: cons.staples
+  l2_name: 民生消費
+  l2_name_en: Consumer Staples
+  l3: consumer.household
+  l3_name: 家用品與個人護理
+  l3_name_en: Household & Personal Products
+primary_chain_position: not_applicable
+summary_short: 透過子公司研發、代工製造及銷售保養品，以膏狀類產品為主要營收來源。
+summary_long: 光麗-KY為控股公司，主要透過間接子公司上海儀玳經營保養品研發、OEM與ODM代工製造及銷售。產品涵蓋膏狀保養品、化妝水、面膜及洗護用品，另有保健產品業務。2025年其他膏狀類產品占營收58.37%，面膜類占15.63%，化妝水類占12.48%，保健產品類占2.27%，其他占11.25%。集團全資持有Alliance Capital Investment Management Inc.，台灣主要營運主體包括台灣光麗實業及宸麗生技。
+segments:
+- evidence_ids:
+  - e3
+  id: seg.cream
+  name: 其他膏狀類產品
+  period: '2025'
+  revenue_share_pct: 58.37
+- evidence_ids:
+  - e3
+  id: seg.mask
+  name: 面膜類產品
+  period: '2025'
+  revenue_share_pct: 15.63
+- evidence_ids:
+  - e3
+  id: seg.toner
+  name: 化妝水類產品
+  period: '2025'
+  revenue_share_pct: 12.48
+- evidence_ids:
+  - e3
+  id: seg.health
+  name: 保健產品類
+  period: '2025'
+  revenue_share_pct: 2.27
+- evidence_ids:
+  - e3
+  id: seg.other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 11.25
 website: http://www.kl-holdings.com/
 tax_id: '41181265'
 incorporated: '2012-07-04'
 listed: '2014-12-04'
 foreign_registration: KY 開曼群島
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6431#e1:
+    locator: 第60頁，伍、營運概況／業務範圍；PDF第67頁
+    published_date: '2026-04-15'
+    publisher: 光麗生技控股股份有限公司
+    quote_check: not_found
+    title: 光麗生技控股股份有限公司2025年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=6431&colorchg=1&filename=2025_6431_20260612F04.pdf&kind=F&step=9
+  tw.6431#e2:
+    locator: 第60頁，伍、營運概況／所營業務主要內容；PDF第67頁
+    published_date: '2026-04-15'
+    publisher: 光麗生技控股股份有限公司
+    quote_check: not_found
+    title: 光麗生技控股股份有限公司2025年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=6431&colorchg=1&filename=2025_6431_20260612F04.pdf&kind=F&step=9
+  tw.6431#e3:
+    locator: 第60頁，營業比重表；每列依序為2024年度金額、比例及2025年度金額、比例；PDF第67頁
+    published_date: '2026-04-15'
+    publisher: 光麗生技控股股份有限公司
+    quote_check: not_found
+    title: 光麗生技控股股份有限公司2025年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=6431&colorchg=1&filename=2025_6431_20260612F04.pdf&kind=F&step=9

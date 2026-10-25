@@ -8,12 +8,186 @@ industry:
   l0_code: '28'
   l0_name: 電子零組件業
   l0_name_en: Electronic Parts and Components
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.passive
+  l3_name: 被動元件
+  l3_name_en: Passive Components
+chain: chain.networking
+chain_stage:
+  agreement: both
+  also: []
+  reason: 磁性元件占營收89.45%，包含PoE、LAN及基地台用元件，屬網通零組件。
+  stage: modules
+  stage_name: 模組與零組件
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 主要設計、製造與銷售磁性元件，另提供無線充電與智慧電源模組。
+summary_long: 聯寶以磁性元件的設計、製造與銷售為主要業務，產品涵蓋PoE、LAN及TLVR等元件，並提供高密度、高瓦數電源模組。2025年磁性元件占營收89.45%，無線充電占10.55%。無線充電業務包含發射與接收模組、磁吸充電成品及工業級充電模組，公司亦為蘋果MFI授權製造商。另以低功耗藍牙Mesh技術開發智慧照明、智慧家居及智慧樓宇的聯網與供電模組。其磁性元件也應用於5G小型基地台與電動車相關電源系統。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_magnetics
+  name: 磁性元件
+  period: '2025'
+  revenue_share_pct: 89.45
+- evidence_ids:
+  - e2
+  id: seg_wireless_charging
+  name: 無線充電
+  period: '2025'
+  revenue_share_pct: 10.55
+main_theme: theme.ev
+themes:
+- also: []
+  stage: parts
+  theme: theme.ev
+  tier: midstream
+- also: []
+  stage: components
+  theme: theme.5g
+  tier: upstream
+- also: []
+  stage: modules
+  theme: theme.apple
+  tier: midstream
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接全資子公司
+    details:
+    - 間接全資子公司
+    edge: e5e4a388e4d44
+    evidence_level: primary
+    id: org.dongguan-linkcom
+    name: 東莞聯寶光電科技有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司
+    details:
+    - 全資子公司
+    edge: e16ef0ed74d58
+    evidence_level: primary
+    id: org.linkcom-manufacturing-international
+    name: LINKCOM MANUFACTURING INTERNATIONAL CO., LTD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司
+    details:
+    - 全資子公司
+    edge: e789c24c04495
+    evidence_level: primary
+    id: org.linkcom-usa
+    name: LINKCOM USA, INC.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接全資子公司
+    details:
+    - 間接全資子公司
+    edge: e5d607705370b
+    evidence_level: primary
+    id: org.shenzhen-lianhua-electronics
+    name: 深圳聯驊電子科技有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.linkcom.com.tw
 tax_id: '23065258'
 incorporated: '1988-09-22'
 listed: '2023-05-22'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6821#e1:
+    locator: 公司基本資料／主要經營業務
+    published_date: null
+    publisher: 聯寶電子股份有限公司
+    quote_check: found
+    title: 公司概況
+    url: https://www.linkcom.com.tw/zh-tw/investor_overview.php
+  tw.6821#e10:
+    locator: 印刷第90頁，關係企業組織圖
+    published_date: null
+    publisher: 聯寶電子股份有限公司
+    quote_check: found
+    title: 聯寶電子股份有限公司114年度年報
+    url: https://linkcom.com.tw/data/meeting/files/202606/1780880610334146775.pdf
+  tw.6821#e2:
+    locator: 印刷第53頁，營業比重；欄位依序為113年度金額、比重及114年度金額、比重
+    published_date: null
+    publisher: 聯寶電子股份有限公司
+    quote_check: found
+    title: 聯寶電子股份有限公司114年度年報
+    url: https://linkcom.com.tw/data/meeting/files/202606/1780880610334146775.pdf
+  tw.6821#e3:
+    locator: 磁性元件／無線充電模組解決方案
+    published_date: null
+    publisher: 聯寶電子股份有限公司
+    quote_check: found
+    title: 集團概述
+    url: https://www.linkcom.com.tw/zh-tw/about_overview.php
+  tw.6821#e4:
+    locator: 無線充電介紹及發射、接收模組產品列表
+    published_date: null
+    publisher: 聯寶電子股份有限公司
+    quote_check: found
+    title: 無線充電產品介紹
+    url: https://www.linkcom.com.tw/zh-tw/product.php?cid=35
+  tw.6821#e5:
+    locator: 工業級無線充電模組介紹
+    published_date: null
+    publisher: 聯寶電子股份有限公司
+    quote_check: found
+    title: 無線充電產品介紹
+    url: https://www.linkcom.com.tw/zh-tw/product.php?cid=35
+  tw.6821#e6:
+    locator: 產品名稱與功能說明
+    published_date: null
+    publisher: 聯寶電子股份有限公司
+    quote_check: found
+    title: Qi2+MFI NeoStalk 五合一磁吸無線充電
+    url: https://www.linkcom.com.tw/zh-tw/product.php?act=view&id=148
+  tw.6821#e7:
+    locator: 物聯網應用介紹
+    published_date: null
+    publisher: 聯寶電子股份有限公司
+    quote_check: found
+    title: 物聯網產品應用
+    url: https://www.linkcom.com.tw/zh-tw/application.php?act=list&cid=3
+  tw.6821#e8:
+    locator: 5G應用介紹
+    published_date: null
+    publisher: 聯寶電子股份有限公司
+    quote_check: found
+    title: 5G產品應用
+    url: https://www.linkcom.com.tw/zh-tw/application.php?cid=1
+  tw.6821#e9:
+    locator: 電動車應用介紹
+    published_date: null
+    publisher: 聯寶電子股份有限公司
+    quote_check: found
+    title: 電動車產品應用
+    url: https://www.linkcom.com.tw/zh-tw/application.php?act=list&cid=2

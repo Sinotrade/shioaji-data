@@ -8,13 +8,110 @@ industry:
   l0_code: '20'
   l0_name: 其他業
   l0_name_en: Others
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.construction
+  l2_name: 營建與工程
+  l2_name_en: Engineering & Construction
+  l3: cons.engineering
+  l3_name: 工程與統包
+  l3_name_en: Engineering & EPC
+primary_chain_position: not_applicable
+summary_short: 承作高級精品店裝潢工程，並製造銷售客製化家具。
+summary_long: 紅木集團主要承作全球高級精品名牌店裝潢工程，並從事客製化家具製造與銷售，工程範圍涵蓋精品品牌的室內及室外裝潢。2026年上半年合併營收全數列為工程收入。集團透過位於新加坡的全資子公司經營精品店裝潢業務，該子公司另全資持有馬來西亞家具公司，從事客製化家具設計、製造及買賣。因此，集團業務同時涵蓋門市裝潢工程與配套家具製造，財務報告則以工程收入呈現營業收入。
+segments:
+- evidence_ids:
+  - e3
+  id: seg_engineering
+  name: 工程收入
+  period: 2026年上半年
+  revenue_share_pct: 100
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 馬來西亞間接全資子公司；客製化家具
+    details:
+    - 馬來西亞間接全資子公司；客製化家具
+    edge: e7ae6854a9d27
+    evidence_level: primary
+    id: org.redwood-furniture-sdn-bhd
+    name: REDWOOD FURNITURE SDN. BHD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 新加坡全資子公司；精品店裝潢
+    details:
+    - 新加坡全資子公司；精品店裝潢
+    edge: ed5cee34ef9ab
+    evidence_level: primary
+    id: org.redwood-interior-pte-ltd
+    name: REDWOOD INTERIOR PTE LTD
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.redwoodgroup.co/
 tax_id: '53003863'
 incorporated: '2010-08-20'
 listed: '2011-12-13'
 foreign_registration: KY 開曼群島
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.8426#e1:
+    locator: 基本資料／主要經營業務
+    published_date: null
+    publisher: 紅木集團有限公司
+    quote_check: found
+    title: 紅木集團基本資料
+    url: https://www.redwoodgroup.co/18/
+  tw.8426#e2:
+    locator: 關於我們
+    published_date: null
+    publisher: 紅木集團有限公司
+    quote_check: found
+    title: 紅木集團官網
+    url: https://www.redwoodgroup.co/
+  tw.8426#e3:
+    locator: 第8頁，合併綜合損益表；115年1月1日至6月30日欄，單位新台幣仟元
+    published_date: null
+    publisher: 紅木集團有限公司
+    quote_check: found
+    title: 紅木集團有限公司及子公司民國115及114年第2季合併財務報告
+    url: https://www.redwoodgroup.co/up_photo/images/pdf3/2026Q2cn.pdf
+  tw.8426#e4:
+    locator: 第19頁，附註十子公司；本公司直接持股100%之列
+    published_date: null
+    publisher: 紅木集團有限公司
+    quote_check: found
+    title: 紅木集團有限公司及子公司民國115及114年第2季合併財務報告
+    url: https://www.redwoodgroup.co/up_photo/images/pdf3/2026Q2cn.pdf
+  tw.8426#e5:
+    locator: 第19頁，附註十子公司；投資公司、子公司、業務性質及持股百分比
+    published_date: null
+    publisher: 紅木集團有限公司
+    quote_check: found
+    title: 紅木集團有限公司及子公司民國115及114年第2季合併財務報告
+    url: https://www.redwoodgroup.co/up_photo/images/pdf3/2026Q2cn.pdf
+  tw.8426#e6:
+    locator: 第54頁，附表七；REDWOOD INTERIOR PTE LTD所在地區與主要營業項目
+    published_date: null
+    publisher: 紅木集團有限公司
+    quote_check: found
+    title: 紅木集團有限公司及子公司民國115及114年第2季合併財務報告
+    url: https://www.redwoodgroup.co/up_photo/images/pdf3/2026Q2cn.pdf
+  tw.8426#e7:
+    locator: 第54頁，附表七；REDWOOD FURNITURE SDN. BHD.所在地區與主要營業項目
+    published_date: null
+    publisher: 紅木集團有限公司
+    quote_check: found
+    title: 紅木集團有限公司及子公司民國115及114年第2季合併財務報告
+    url: https://www.redwoodgroup.co/up_photo/images/pdf3/2026Q2cn.pdf

@@ -8,12 +8,246 @@ industry:
   l0_code: '25'
   l0_name: 電腦及週邊設備業
   l0_name_en: Computer and Peripheral Equipment
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.hardware
+  l2_name: 電腦與硬體
+  l2_name_en: Computers & Hardware
+  l3: hw.peripheral
+  l3_name: 周邊與輸入裝置
+  l3_name_en: Peripherals & Input Devices
+chain: chain.display
+chain_stage:
+  agreement: both
+  also: []
+  reason: 液晶顯示器及零組件占營收98.19%，核心為AG Neovo品牌專業顯示器與數位看板終端產品。
+  stage: device
+  stage_name: 終端產品
+  tier: downstream
+primary_chain_position: downstream
+summary_short: 以 AG Neovo 自有品牌經營專業液晶顯示器與顯示解決方案。
+summary_long: 偉聯以自有品牌 AG Neovo 經營液晶顯示器及零組件的設計研發、銷售與售後服務，2025 年此業務占營收 98.19%，另有醫療器材、不動產出租及其他收入。產品包括安全監控與醫療顯示器、搭載 Android 的數位看板，並提供 Neovo Controller、Neovo Manager 遠端控制軟體及顯示整合方案。子公司包括臺醫光電，2025 年底持股為 75.43%。年報亦將 4K mini LED 背光顯示器列為開發計畫。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_display
+  name: 液晶顯示器及其零組件
+  period: '2025'
+  revenue_share_pct: 98.19
+- evidence_ids:
+  - e2
+  id: seg_medical
+  name: 醫療器材
+  period: '2025'
+  revenue_share_pct: 0.1
+- evidence_ids:
+  - e2
+  id: seg_property
+  name: 不動產出租業務
+  period: '2025'
+  revenue_share_pct: 1.11
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 0.6
+main_theme: theme.mini_led
+themes:
+- also: []
+  stage: display
+  theme: theme.mini_led
+  tier: downstream
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的子公司
+    details:
+    - 直接持股100%的子公司
+    edge: ec65d59f40c1e
+    evidence_level: primary
+    id: org.ag-neovo-international
+    name: AG Neovo International Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的子公司
+    details:
+    - 直接持股100%的子公司
+    edge: ed19799dad437
+    evidence_level: primary
+    id: org.ag-neovo-investment
+    name: AG Neovo Investment Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持有的子公司
+    details:
+    - 間接持有的子公司
+    edge: e6c237881d3b8
+    evidence_level: primary
+    id: org.ag-neovo-shanghai
+    name: 霓歐商貿(上海)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的子公司
+    details:
+    - 直接持股100%的子公司
+    edge: eed99d6099a12
+    evidence_level: primary
+    id: org.ag-neovo-technology-bv
+    name: AG Neovo Technology B.V.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持有的子公司
+    details:
+    - 間接持有的子公司
+    edge: ee2b58ca96c3f
+    evidence_level: primary
+    id: org.ag-neovo-technology-corp
+    name: AG Neovo Technology Corp.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股75.43%的子公司
+    details:
+    - 直接持股75.43%的子公司
+    edge: ec7013fb80e14
+    evidence_level: primary
+    id: org.taiwan-biophotonic
+    name: 臺醫光電科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.agneovo.com/
 tax_id: '20792640'
 incorporated: '1978-05-18'
 listed: '1992-08-08'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-25'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.9912#e10:
+    locator: 第46頁，2025年12月31日轉投資事業持股表；本公司投資及綜合投資欄
+    published_date: '2026-05-29'
+    publisher: 偉聯科技股份有限公司
+    quote_check: found
+    title: 偉聯科技股份有限公司2025年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52781/2026/RNS/52781_rns_2026-05-29_0d79a6bf-1402-4d24-aa81-c37976bbd2c1.pdf
+  tw.9912#e11:
+    locator: 第46頁，2025年12月31日轉投資事業持股表；本公司投資及綜合投資欄
+    published_date: '2026-05-29'
+    publisher: 偉聯科技股份有限公司
+    quote_check: found
+    title: 偉聯科技股份有限公司2025年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52781/2026/RNS/52781_rns_2026-05-29_0d79a6bf-1402-4d24-aa81-c37976bbd2c1.pdf
+  tw.9912#e12:
+    locator: 第46頁，2025年12月31日轉投資事業持股表；本公司投資及綜合投資欄
+    published_date: '2026-05-29'
+    publisher: 偉聯科技股份有限公司
+    quote_check: found
+    title: 偉聯科技股份有限公司2025年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52781/2026/RNS/52781_rns_2026-05-29_0d79a6bf-1402-4d24-aa81-c37976bbd2c1.pdf
+  tw.9912#e13:
+    locator: 第46頁，2025年12月31日轉投資事業持股表；控制事業投資及綜合投資欄
+    published_date: '2026-05-29'
+    publisher: 偉聯科技股份有限公司
+    quote_check: found
+    title: 偉聯科技股份有限公司2025年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52781/2026/RNS/52781_rns_2026-05-29_0d79a6bf-1402-4d24-aa81-c37976bbd2c1.pdf
+  tw.9912#e14:
+    locator: 第46頁，2025年12月31日轉投資事業持股表；控制事業投資及綜合投資欄
+    published_date: '2026-05-29'
+    publisher: 偉聯科技股份有限公司
+    quote_check: found
+    title: 偉聯科技股份有限公司2025年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52781/2026/RNS/52781_rns_2026-05-29_0d79a6bf-1402-4d24-aa81-c37976bbd2c1.pdf
+  tw.9912#e15:
+    locator: 第54頁，計劃開發之商品／液晶顯示器商品，第4項
+    published_date: '2026-05-29'
+    publisher: 偉聯科技股份有限公司
+    quote_check: found
+    title: 偉聯科技股份有限公司2025年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52781/2026/RNS/52781_rns_2026-05-29_0d79a6bf-1402-4d24-aa81-c37976bbd2c1.pdf
+  tw.9912#e2:
+    locator: 第54頁，肆、營運概況／各營業項目佔營業額之比重
+    published_date: '2026-05-29'
+    publisher: 偉聯科技股份有限公司
+    quote_check: found
+    title: 偉聯科技股份有限公司2025年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52781/2026/RNS/52781_rns_2026-05-29_0d79a6bf-1402-4d24-aa81-c37976bbd2c1.pdf
+  tw.9912#e3:
+    locator: 第54頁，公司目前商品及服務項目
+    published_date: '2026-05-29'
+    publisher: 偉聯科技股份有限公司
+    quote_check: found
+    title: 偉聯科技股份有限公司2025年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52781/2026/RNS/52781_rns_2026-05-29_0d79a6bf-1402-4d24-aa81-c37976bbd2c1.pdf
+  tw.9912#e4:
+    locator: 第58頁，開發成功之技術或產品，第10項
+    published_date: '2026-05-29'
+    publisher: 偉聯科技股份有限公司
+    quote_check: found
+    title: 偉聯科技股份有限公司2025年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52781/2026/RNS/52781_rns_2026-05-29_0d79a6bf-1402-4d24-aa81-c37976bbd2c1.pdf
+  tw.9912#e5:
+    locator: 第57頁，專業牙醫／醫療顯示器市場
+    published_date: '2026-05-29'
+    publisher: 偉聯科技股份有限公司
+    quote_check: found
+    title: 偉聯科技股份有限公司2025年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52781/2026/RNS/52781_rns_2026-05-29_0d79a6bf-1402-4d24-aa81-c37976bbd2c1.pdf
+  tw.9912#e6:
+    locator: 第58頁，開發成功之技術或產品，第13項
+    published_date: '2026-05-29'
+    publisher: 偉聯科技股份有限公司
+    quote_check: found
+    title: 偉聯科技股份有限公司2025年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52781/2026/RNS/52781_rns_2026-05-29_0d79a6bf-1402-4d24-aa81-c37976bbd2c1.pdf
+  tw.9912#e7:
+    locator: 第59頁，開發成功之技術或產品，第16項
+    published_date: '2026-05-29'
+    publisher: 偉聯科技股份有限公司
+    quote_check: found
+    title: 偉聯科技股份有限公司2025年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52781/2026/RNS/52781_rns_2026-05-29_0d79a6bf-1402-4d24-aa81-c37976bbd2c1.pdf
+  tw.9912#e8:
+    locator: 第54頁，公司目前商品及服務項目
+    published_date: '2026-05-29'
+    publisher: 偉聯科技股份有限公司
+    quote_check: found
+    title: 偉聯科技股份有限公司2025年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52781/2026/RNS/52781_rns_2026-05-29_0d79a6bf-1402-4d24-aa81-c37976bbd2c1.pdf
+  tw.9912#e9:
+    locator: 第46頁，2025年12月31日轉投資事業持股表；本公司投資及綜合投資欄
+    published_date: '2026-05-29'
+    publisher: 偉聯科技股份有限公司
+    quote_check: found
+    title: 偉聯科技股份有限公司2025年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52781/2026/RNS/52781_rns_2026-05-29_0d79a6bf-1402-4d24-aa81-c37976bbd2c1.pdf

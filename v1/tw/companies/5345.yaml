@@ -8,12 +8,135 @@ industry:
   l0_code: '20'
   l0_name: 其他業
   l0_name_en: Others
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.battery
+  l3_name: 電池與電池模組
+  l3_name_en: Batteries & Battery Modules
+chain: chain.auto
+chain_stage:
+  agreement: both
+  also: []
+  reason: B-Power車用電瓶占營收67.85%，為最大業務，屬汽車電池零組件與模組。
+  stage: parts
+  stage_name: 汽車零組件與模組
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 以B-Power車用電瓶及EzCon安全用電產品銷售為主，另布局營建開發。
+summary_long: 馥鴻主要銷售B-Power車用電瓶與EzCon安全牆壁插座、轉接插座及延長線。依第三方年報資料整理，2025年B-Power占營收67.85%，EzCon占20.06%，另有原物料銷售與少量租賃收入。B-Power採超級電容與磷酸鐵鋰電池的混合儲能技術。公司官網另列都市更新、危老重建及土地整合服務，涵蓋前期評估、建築設計、工程管理至交屋售後。旗下全資子公司天揚室內裝修設計股份有限公司承包室內裝修工程。
+segments:
+- evidence_ids:
+  - e6
+  id: seg_bpower
+  name: B-Power
+  period: 2025年度
+  revenue_share_pct: 67.85
+- evidence_ids:
+  - e7
+  id: seg_ezcon
+  name: EzCon
+  period: 2025年度
+  revenue_share_pct: 20.06
+- evidence_ids:
+  - e8
+  id: seg_materials
+  name: 原物料
+  period: 2025年度
+  revenue_share_pct: 12.02
+- evidence_ids:
+  - e9
+  id: seg_rental
+  name: 租賃收入
+  period: 2025年度
+  revenue_share_pct: 0.07
+relations:
+  subsidiaries:
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股100%的室內裝修工程子公司
+    details:
+    - 持股100%的室內裝修工程子公司
+    edge: eada1611fbf25
+    evidence_level: primary
+    id: org.teamyoung-interior-design
+    name: 天揚室內裝修設計股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.full-home.com.tw
 tax_id: '23827860'
 incorporated: '1990-10-19'
 listed: '1998-03-23'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-25'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.5345#e1:
+    locator: 公司名稱、股票代號、統一編號及主要經營業務欄
+    published_date: null
+    publisher: 馥鴻建設股份有限公司
+    quote_check: found
+    title: 公司基本資料
+    url: https://www.teamyoung.com/investors/?id=5
+  tw.5345#e2:
+    locator: 第9頁，B-POWER永久電瓶
+    published_date: '2025-12-16'
+    publisher: 馥鴻建設股份有限公司
+    quote_check: found
+    title: 馥鴻建設2025年法人說明會
+    url: https://www.teamyoung.com/downloads/8UgGW7Gw03NULcl1YCoqdquWvhyqunGoZehCLL2G.pdf?d=invest&filename=%E6%B3%95%E8%AA%AA%E6%9C%83114%E5%B9%B4%E4%B8%AD%E6%96%87%E7%89%88.pdf
+  tw.5345#e3:
+    locator: 插座／延長線產品選單
+    published_date: null
+    publisher: 馥鴻建設股份有限公司
+    quote_check: found
+    title: 馥鴻建設產品資訊
+    url: https://www.teamyoung.com/
+  tw.5345#e4:
+    locator: Integrated Services服務項目
+    published_date: null
+    publisher: 馥鴻建設股份有限公司
+    quote_check: found
+    title: 馥鴻建設股份有限公司｜都市更新・危老重建
+    url: https://www.full-home.com.tw/
+  tw.5345#e5:
+    locator: 第10頁，四（二）合併基礎，列入合併財務報告之子公司
+    published_date: '2025-11-06'
+    publisher: 馥鴻建設股份有限公司
+    quote_check: found
+    title: 2025年第三季合併財務報告
+    url: https://www.teamyoung.com/downloads/JoVe0Lpa3Drf3u4bOCRDBSKK5lllr3i7LWXMdord.pdf?d=invest&filename=2025%E5%B9%B4%E7%AC%AC%E4%B8%89%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf
+  tw.5345#e6:
+    locator: 營收分布－產品組合－114年度，B-Power列；金額15,728千元
+    published_date: null
+    publisher: Treelazy
+    quote_check: not_found
+    title: 馥鴻年報查詢：114年度營收分布
+    url: https://treelazy.com/stock/5345
+  tw.5345#e7:
+    locator: 營收分布－產品組合－114年度，EzCon列；金額4,649千元
+    published_date: null
+    publisher: Treelazy
+    quote_check: not_found
+    title: 馥鴻年報查詢：114年度營收分布
+    url: https://treelazy.com/stock/5345
+  tw.5345#e8:
+    locator: 營收分布－產品組合－114年度，原物料列；金額2,787千元
+    published_date: null
+    publisher: Treelazy
+    quote_check: not_found
+    title: 馥鴻年報查詢：114年度營收分布
+    url: https://treelazy.com/stock/5345
+  tw.5345#e9:
+    locator: 營收分布－產品組合－114年度，租賃收入列；金額17千元
+    published_date: null
+    publisher: Treelazy
+    quote_check: not_found
+    title: 馥鴻年報查詢：114年度營收分布
+    url: https://treelazy.com/stock/5345

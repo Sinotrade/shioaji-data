@@ -8,12 +8,157 @@ industry:
   l0_code: '37'
   l0_name: 運動休閒
   l0_name_en: Sports and Leisure
-primary_chain_position: unknown
+  l1: consumer
+  l1_name: 消費
+  l1_name_en: Consumer
+  l2: cons.discretionary
+  l2_name: 非必需消費
+  l2_name_en: Consumer Discretionary
+  l3: consumer.sports
+  l3_name: 運動用品與健身器材
+  l3_name_en: Sporting Goods & Fitness Equipment
+primary_chain_position: not_applicable
+summary_short: 研製健身器材阻力與控制零組件，並透過子公司經營運動訓練業務。
+summary_long: 祺驊研製健身與復健器材使用的核心零組件，產品包括磁控與發電阻力系統、控制板、直流有刷馬達、電子錶，以及心跳感測等配件。2025年合併營收中，健身器材產品占51.08%，運動訓練業務占48.92%，涵蓋器材製造與運動服務兩類收入。運動訓練業務包含重要子公司韻智的營運，並非全部由母公司直接經營。其他主要製造子公司包括維特馬達，以及透過MANTEK間接持有、從事運動器材製造與銷售的祺驊越南公司。
+segments:
+- evidence_ids:
+  - e7
+  id: seg_equipment
+  name: 健身器材產品
+  period: '2025'
+  revenue_share_pct: 51.08
+- evidence_ids:
+  - e7
+  id: seg_training
+  name: 運動訓練業務
+  period: '2025'
+  revenue_share_pct: 48.92
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過MANTEK間接持有的製造子公司
+    details:
+    - 透過MANTEK間接持有的製造子公司
+    edge: e7c6f478ee010
+    evidence_level: primary
+    id: org.祺驊-越南-責任有限公司
+    name: 祺驊（越南）責任有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司；電機及電子機械器材製造銷售
+    details:
+    - 直接子公司；電機及電子機械器材製造銷售
+    edge: ea98438b6dfa4
+    evidence_level: primary
+    id: org.維特馬達股份有限公司
+    name: 維特馬達股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-05-04'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 重要子公司；運動訓練業務
+    details:
+    - 重要子公司；運動訓練業務
+    edge: e61b037c1ff83
+    evidence_level: primary
+    id: org.韻智股份有限公司
+    name: 韻智股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://chihua.com.tw
 tax_id: '97432341'
 incorporated: '1997-03-15'
 listed: '2012-06-13'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1593#e1:
+    locator: 第1至2頁，封面與公司簡介
+    published_date: '2025-12-31'
+    publisher: 祺驊股份有限公司
+    quote_check: found
+    title: 2025年祺驊股份有限公司法說會
+    url: https://chihua.com.tw/wp-content/uploads/2026/02/20251231%E7%A5%BA%E9%A9%8A%E6%B3%95%E8%AA%AA%E6%9C%83-%E4%B8%AD%E6%96%87%E7%89%88.pdf
+  tw.1593#e10:
+    locator: 第37頁，附註十二（一）列入合併財務報告之子公司；投資公司為祺驊公司
+    published_date: null
+    publisher: 祺驊股份有限公司
+    quote_check: found
+    title: 祺驊股份有限公司及子公司民國114及113年度合併財務報告
+    url: https://chihua.com.tw/wp-content/uploads/2026/02/114Q4_%E7%A5%BA%E9%A9%8A%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1%E7%94%A8%E5%8D%B0%E7%89%88.pdf
+  tw.1593#e11:
+    locator: 第37頁，附註十二（一）；祺驊持有MANTEK，MANTEK持有越南子公司
+    published_date: null
+    publisher: 祺驊股份有限公司
+    quote_check: found
+    title: 祺驊股份有限公司及子公司民國114及113年度合併財務報告
+    url: https://chihua.com.tw/wp-content/uploads/2026/02/114Q4_%E7%A5%BA%E9%A9%8A%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1%E7%94%A8%E5%8D%B0%E7%89%88.pdf
+  tw.1593#e2:
+    locator: 阻力系統產品目錄
+    published_date: null
+    publisher: 祺驊股份有限公司
+    quote_check: found
+    title: 阻力系統
+    url: https://chihua.com.tw/product_cat/brake/
+  tw.1593#e3:
+    locator: 控制板產品目錄
+    published_date: null
+    publisher: 祺驊股份有限公司
+    quote_check: found
+    title: 控制板
+    url: https://chihua.com.tw/product_cat/control-board/
+  tw.1593#e4:
+    locator: 馬達產品目錄
+    published_date: null
+    publisher: 祺驊股份有限公司
+    quote_check: found
+    title: 馬達
+    url: https://chihua.com.tw/product_cat/motor/
+  tw.1593#e5:
+    locator: 電子錶產品目錄
+    published_date: null
+    publisher: 祺驊股份有限公司
+    quote_check: found
+    title: 電子錶
+    url: https://chihua.com.tw/product_cat/console/
+  tw.1593#e6:
+    locator: 產品介紹導言及配件段落
+    published_date: null
+    publisher: 祺驊股份有限公司
+    quote_check: found
+    title: 產品介紹
+    url: https://chihua.com.tw/products/
+  tw.1593#e7:
+    locator: 第71頁，附註三七部門資訊；114年度欄，單位新台幣仟元
+    published_date: null
+    publisher: 祺驊股份有限公司
+    quote_check: found
+    title: 祺驊股份有限公司及子公司民國114及113年度合併財務報告
+    url: https://chihua.com.tw/wp-content/uploads/2026/02/114Q4_%E7%A5%BA%E9%A9%8A%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1%E7%94%A8%E5%8D%B0%E7%89%88.pdf
+  tw.1593#e8:
+    locator: 最新消息，2026年5月4日公告標題
+    published_date: null
+    publisher: 祺驊股份有限公司
+    quote_check: found
+    title: 祺驊股份有限公司
+    url: https://chihua.com.tw/
+  tw.1593#e9:
+    locator: 第7頁集團架構圖，韻智節點
+    published_date: '2025-12-31'
+    publisher: 祺驊股份有限公司
+    quote_check: found
+    title: 2025年祺驊股份有限公司法說會
+    url: https://chihua.com.tw/wp-content/uploads/2026/02/20251231%E7%A5%BA%E9%A9%8A%E6%B3%95%E8%AA%AA%E6%9C%83-%E4%B8%AD%E6%96%87%E7%89%88.pdf

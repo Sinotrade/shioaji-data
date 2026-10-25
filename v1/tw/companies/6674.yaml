@@ -8,7 +8,45 @@ industry:
   l0_code: '27'
   l0_name: 通信網路業
   l0_name_en: Communications and Internet
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.network
+  l2_name: 通信網路
+  l2_name_en: Communications & Networking
+  l3: net.switch
+  l3_name: 網通設備（交換器、路由器）
+  l3_name_en: Networking Equipment (Switches, Routers)
+chain: chain.networking
+chain_stage:
+  agreement: both
+  also: []
+  reason: 通信網路產品占營收68.57%，主力為寬頻閘道器、路由器、光網路終端及5G接取設備。
+  stage: equipment
+  stage_name: 網通設備與系統
+  tier: downstream
+primary_chain_position: downstream
+summary_short: 以DOCSIS閘道器、光纖終端、Mesh路由器及5G寬頻設備取得營收。
+summary_long: 鋐寶科技以寬頻接取與家用網通設備為主要業務，產品包括 DOCSIS 纜線數據機與智慧閘道器、Mesh Wi-Fi 路由器、10Gb XGS-PON 光網路終端及 5G 固定無線接取設備。2025 年通信網路產品占營收 68.57%，銷售材料收入及其他占 31.43%。仁寶電腦為其母公司，鋐寶另全資持有比利時與荷蘭兩家子公司。公司已推出 5G NR 用戶終端設備，可歸入 5G 通訊題材的終端階段。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_network
+  name: 通信網路產品
+  period: '2025'
+  revenue_share_pct: 68.57
+- evidence_ids:
+  - e3
+  id: seg_materials_other
+  name: 銷售材料收入及其他
+  period: '2025'
+  revenue_share_pct: 31.43
+main_theme: theme.5g
+themes:
+- also: []
+  stage: devices
+  theme: theme.5g
+  tier: downstream
 relations:
   parents:
   - as_of: '2026-09-18'
@@ -17,10 +55,40 @@ relations:
     detail: 直接持股子公司
     details:
     - 直接持股子公司
+    - 母公司
     edge: ebe7cbe4da359
     evidence_level: primary
     id: tw.2324
     name: 仁寶
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 2
+  subsidiaries:
+  - as_of: '2026-06-04'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 比利時全資子公司
+    details:
+    - 比利時全資子公司
+    edge: e456c7dffe84d
+    evidence_level: primary
+    id: org.compal-broadband-networks-belgium-bvba
+    name: Compal Broadband Networks Belgium BVBA
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-04'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 荷蘭全資子公司
+    details:
+    - 荷蘭全資子公司
+    edge: ebcad54c595dd
+    evidence_level: primary
+    id: org.compal-broadband-networks-netherlands-b-v
+    name: Compal Broadband Networks Netherlands B.V.
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -51,7 +119,77 @@ website: http://www.icbn.com.tw/
 tax_id: '24456541'
 incorporated: '2009-08-19'
 listed: '2018-11-28'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6674#e10:
+    locator: LTE/5G行動通訊介紹首段
+    published_date: null
+    publisher: 鋐寶科技股份有限公司
+    quote_check: found
+    title: LTE/5G行動通訊
+    url: https://www.icbn.com.tw/page/product/index2.aspx?kind=18
+  tw.6674#e11:
+    locator: 主要股東名稱首列，用於確認仁寶正式全名
+    published_date: '2026-04-24'
+    publisher: 鋐寶科技股份有限公司
+    quote_check: found
+    title: 股東服務專區
+    url: https://www.icbn.com.tw/page/investor/shareholders.aspx
+  tw.6674#e2:
+    locator: 印刷頁52，PDF第56頁；主要產品之營業比重，114年度通信網路產品列，單位新台幣千元
+    published_date: '2026-06-04'
+    publisher: 鋐寶科技股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.icbn.com.tw/upload/investor_info/202608131718393.pdf
+  tw.6674#e3:
+    locator: 印刷頁52，PDF第56頁；主要產品之營業比重，114年度銷售材料收入及其他列，單位新台幣千元
+    published_date: '2026-06-04'
+    publisher: 鋐寶科技股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.icbn.com.tw/upload/investor_info/202608131718393.pdf
+  tw.6674#e4:
+    locator: 印刷頁59，PDF第63頁；114年度主要供應商表，與發行人之關係欄
+    published_date: '2026-06-04'
+    publisher: 鋐寶科技股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.icbn.com.tw/upload/investor_info/202608131718393.pdf
+  tw.6674#e5:
+    locator: 印刷頁52，PDF第56頁；肆、營運概況開頭
+    published_date: '2026-06-04'
+    publisher: 鋐寶科技股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.icbn.com.tw/upload/investor_info/202608131718393.pdf
+  tw.6674#e6:
+    locator: 產品列表，CD9030及CH8679G項目
+    published_date: null
+    publisher: 鋐寶科技股份有限公司
+    quote_check: found
+    title: DOCSIS產品
+    url: https://www.icbn.com.tw/page/product/p02.aspx?kind=72
+  tw.6674#e7:
+    locator: 產品列表，WR6633項目
+    published_date: null
+    publisher: 鋐寶科技股份有限公司
+    quote_check: found
+    title: 寬頻接取設備
+    url: https://www.icbn.com.tw/page/product/p02.aspx?kind=59
+  tw.6674#e8:
+    locator: 產品列表，FD5001項目
+    published_date: null
+    publisher: 鋐寶科技股份有限公司
+    quote_check: found
+    title: 寬頻接取設備
+    url: https://www.icbn.com.tw/page/product/p02.aspx?kind=59
+  tw.6674#e9:
+    locator: 產品列表，FW7881項目
+    published_date: null
+    publisher: 鋐寶科技股份有限公司
+    quote_check: found
+    title: 寬頻接取設備
+    url: https://www.icbn.com.tw/page/product/p02.aspx?kind=59

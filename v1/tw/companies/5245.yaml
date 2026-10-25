@@ -8,12 +8,102 @@ industry:
   l0_code: '26'
   l0_name: 光電業
   l0_name_en: Optoelectronic
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.display
+  l2_name: 光電與顯示
+  l2_name_en: Optoelectronics & Displays
+  l3: disp.panel
+  l3_name: 面板
+  l3_name_en: Display Panels
+chain: chain.display
+chain_stage:
+  agreement: both
+  also: []
+  reason: 主業為PMOLED面板研發、製造與銷售，OLED產品部門收入高於氫產品部門。
+  stage: panel
+  stage_name: 面板與模組
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 以PMOLED顯示面板的研發、製造與銷售為主業。
+summary_long: 智晶光電以被動式有機發光顯示器（PMOLED）為主要業務，從事OLED顯示器的研發、設計、製造與銷售。官網產品包括1.51吋穿透式顯示器及1.36吋可撓式面板，前者具透明顯示特性，後者提供可彎曲的顯示面板。2025年前三季合併財報區分OLED產品與氫產品兩個營運部門，其中OLED產品部門收入較高。依同期間財報，智晶持有子公司優氫科技51%股權，該子公司從事產氫相關設備之研發、製造及銷售。
+segments:
+- evidence_ids:
+  - e6
+  id: seg_oled
+  name: OLED產品部門
+  period: 2025-01-01至2025-09-30
+  revenue_share_pct: null
+- evidence_ids:
+  - e6
+  id: seg_hydrogen
+  name: 氫產品部門
+  period: 2025-01-01至2025-09-30
+  revenue_share_pct: null
+relations:
+  subsidiaries:
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股51%的產氫設備子公司
+    details:
+    - 持股51%的產氫設備子公司
+    edge: edf6aa3ffe8f4
+    evidence_level: primary
+    id: org.u-hydrogen
+    name: 優氫科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.wisechip.com.tw/
 tax_id: '28023412'
 incorporated: '2005-11-03'
 listed: '2015-05-25'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.5245#e2:
+    locator: 主要經營業務欄
+    published_date: null
+    publisher: 智晶光電股份有限公司
+    quote_check: found
+    title: 公司基本資料
+    url: https://www.wisechip.com.tw/zh-tw/a4-1445/投資人專區.html
+  tw.5245#e3:
+    locator: 頁尾公司業務介紹
+    published_date: null
+    publisher: 智晶光電股份有限公司
+    quote_check: found
+    title: 股東會年報
+    url: https://www.wisechip.com.tw/zh-tw/a4-1445-3167/股東會年報.html
+  tw.5245#e4:
+    locator: 產品標題及產品說明
+    published_date: null
+    publisher: 智晶光電股份有限公司
+    quote_check: not_found
+    title: 1.51"穿透式顯示器
+    url: https://www.wisechip.com.tw/zh-tw/product-621064/1-51-穿透式顯示器.html
+  tw.5245#e5:
+    locator: 產品標題及產品說明
+    published_date: null
+    publisher: 智晶光電股份有限公司
+    quote_check: found
+    title: 1.36"可撓式面板
+    url: https://www.wisechip.com.tw/zh-tw/product-552370/1-36-可撓式面板.html
+  tw.5245#e6:
+    locator: 第44頁，附註三六：部門資訊，部門收入與營運結果
+    published_date: '2025-11-12'
+    publisher: 智晶光電股份有限公司
+    quote_check: found
+    title: 114年第三季合併財務報告暨會計師核閱報告
+    url: https://www.wisechip.com.tw/files/114Q3%20合併財務報告.pdf
+  tw.5245#e7:
+    locator: 第18頁，附註十一：列入合併財務報告之子公司
+    published_date: '2025-11-12'
+    publisher: 智晶光電股份有限公司
+    quote_check: found
+    title: 114年第三季合併財務報告暨會計師核閱報告
+    url: https://www.wisechip.com.tw/files/114Q3%20合併財務報告.pdf

@@ -8,12 +8,143 @@ industry:
   l0_code: '24'
   l0_name: 半導體業
   l0_name_en: Semiconductor
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.semi
+  l2_name: 半導體
+  l2_name_en: Semiconductors
+  l3: semi.ic_design
+  l3_name: IC 設計
+  l3_name_en: IC Design
+chain: chain.semiconductor
+chain_stage:
+  agreement: both
+  also: []
+  reason: 主要從事IC研發與設計，微控制器IC占營收86.01%，為最大營收來源。
+  stage: ip_design
+  stage_name: IP 與 IC 設計
+  tier: upstream
+primary_chain_position: upstream
+summary_short: 以微控制器與語音控制IC的設計、研發及銷售為主要業務。
+summary_long: 九齊主要研發、設計與銷售消費性IC，產品涵蓋語音控制IC及4、8、32位元微控制器。113年度微控制器IC占營收86.01%，語音控制IC占12.90%，其他占1.09%。NX1系列整合32位元MCU與語音、MIDI功能；NY8A/B為家電應用的8位元微控制器；NY5提供4位元MCU及四通道語音／MIDI功能，NY3則為單通道語音合成IC。依113年度年報，九齊持有世榮有限公司，並經其間接持有九齊微電子（深圳）有限公司。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_mcu
+  name: 微控制器IC
+  period: '2024'
+  revenue_share_pct: 86.01
+- evidence_ids:
+  - e2
+  id: seg_voice
+  name: 語音控制IC
+  period: '2024'
+  revenue_share_pct: 12.9
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他
+  period: '2024'
+  revenue_share_pct: 1.09
+relations:
+  subsidiaries:
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%的投資子公司
+    details:
+    - 直接持有100%的投資子公司
+    edge: e61ee3dc2b53a
+    evidence_level: primary
+    id: org.世榮有限公司
+    name: 世榮有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過世榮有限公司間接持有100%的子公司
+    details:
+    - 透過世榮有限公司間接持有100%的子公司
+    edge: efdd1ff2ff3ea
+    evidence_level: primary
+    id: org.九齊微電子-深圳-有限公司
+    name: 九齊微電子(深圳)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.nyquest.com.tw
 tax_id: '28509490'
 incorporated: '2006-10-30'
 listed: '2016-05-09'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6494#e1:
+    locator: 企業簡介／專業IC設計公司
+    published_date: null
+    publisher: 九齊科技股份有限公司
+    quote_check: found
+    title: 九齊科技－企業簡介
+    url: https://www.nyquest.com.tw/tw/about
+  tw.6494#e2:
+    locator: 印刷頁48，主要產品之營業比重，113年度
+    published_date: '2025-03-31'
+    publisher: 九齊科技股份有限公司
+    quote_check: found
+    title: 九齊科技股份有限公司113年度年報
+    url: https://www.nyquest.com.tw/upload/2025_04_294/%E4%B9%9D%E9%BD%8A113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1final.pdf
+  tw.6494#e3:
+    locator: 印刷頁48，業務範圍／目前之商品項目
+    published_date: '2025-03-31'
+    publisher: 九齊科技股份有限公司
+    quote_check: found
+    title: 九齊科技股份有限公司113年度年報
+    url: https://www.nyquest.com.tw/upload/2025_04_294/%E4%B9%9D%E9%BD%8A113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1final.pdf
+  tw.6494#e4:
+    locator: NX1產品詳情副標題
+    published_date: null
+    publisher: 九齊科技股份有限公司
+    quote_check: found
+    title: 九齊科技－NX1 Series
+    url: https://www.nyquest.com.tw/tw/product/32_Bit_MCU/NX1_Series
+  tw.6494#e5:
+    locator: NY8A/B Series產品詳情副標題
+    published_date: null
+    publisher: 九齊科技股份有限公司
+    quote_check: found
+    title: 九齊科技－NY8A/B Series
+    url: https://www.nyquest.com.tw/tw/product/HomeAppliances/NY8_Series
+  tw.6494#e6:
+    locator: NY3 Series產品詳情副標題
+    published_date: null
+    publisher: 九齊科技股份有限公司
+    quote_check: found
+    title: 九齊科技－NY3 Series
+    url: https://www.nyquest.com.tw/tw/product/SpeechIC/NY3_Series
+  tw.6494#e7:
+    locator: NY5 Series產品詳情副標題
+    published_date: null
+    publisher: 九齊科技股份有限公司
+    quote_check: found
+    title: 九齊科技－NY5 Series
+    url: https://www.nyquest.com.tw/tw/product/MultiChannelSpeech_MelodyIC/NY5_Series
+  tw.6494#e8:
+    locator: 印刷頁80，關係企業組織圖
+    published_date: '2025-03-31'
+    publisher: 九齊科技股份有限公司
+    quote_check: found
+    title: 九齊科技股份有限公司113年度年報
+    url: https://www.nyquest.com.tw/upload/2025_04_294/%E4%B9%9D%E9%BD%8A113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1final.pdf
+  tw.6494#e9:
+    locator: 印刷頁80，關係企業經營業務及往來分工表
+    published_date: '2025-03-31'
+    publisher: 九齊科技股份有限公司
+    quote_check: found
+    title: 九齊科技股份有限公司113年度年報
+    url: https://www.nyquest.com.tw/upload/2025_04_294/%E4%B9%9D%E9%BD%8A113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1final.pdf

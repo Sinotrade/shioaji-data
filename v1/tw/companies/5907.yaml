@@ -8,13 +8,122 @@ industry:
   l0_code: '18'
   l0_name: 貿易百貨業
   l0_name_en: Trading and Consumers' Goods
-primary_chain_position: unknown
+  l1: consumer
+  l1_name: 消費
+  l1_name_en: Consumer
+  l2: cons.discretionary
+  l2_name: 非必需消費
+  l2_name_en: Consumer Discretionary
+  l3: retail.department
+  l3_name: 百貨與零售
+  l3_name_en: Department Stores & Retail
+primary_chain_position: not_applicable
+summary_short: 透過子公司經營中國百貨零售，賺取聯營佣金、商品銷售、租金及管理服務收入。
+summary_long: 大洋-KY透過旗下公司從事商業管理諮詢與百貨零售，營收市場為中國大陸。收入包括百貨聯營佣金、自營商品銷售、商場及不動產租賃，以及勞務提供與其他收入。2025年度上述收入依序為新臺幣663,259千元、447,915千元、938,430千元及701,650千元。集團持有投資控股子公司GRAND CITI LTD.全部股權，並透過該公司全資持有大洋晶典商業集團有限公司，後者從事化妝品、服裝鞋帽等百貨買賣業務。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_commission
+  name: 佣金收入（百貨聯營）
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e2
+  id: seg_sales
+  name: 商品銷售（百貨自營）
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e2
+  - e4
+  id: seg_rental
+  name: 租賃收入
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e2
+  id: seg_services
+  name: 勞務提供收入及其他
+  period: '2025'
+  revenue_share_pct: null
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的投資控股子公司
+    details:
+    - 直接持股100%的投資控股子公司
+    edge: e5e8c2e3a4857
+    evidence_level: primary
+    id: org.grand-citi-ltd
+    name: GRAND CITI LTD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過GRAND CITI LTD.全資持有的百貨營運子公司
+    details:
+    - 透過GRAND CITI LTD.全資持有的百貨營運子公司
+    edge: e0d82575f6d5e
+    evidence_level: primary
+    id: org.大洋晶典商業集團有限公司
+    name: 大洋晶典商業集團有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.grandocean.com.tw/
 tax_id: '53013068'
 incorporated: '2006-08-23'
 listed: '2012-06-06'
 foreign_registration: KY 開曼群島
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.5907#e1:
+    locator: 第12頁，一、公司沿革
+    published_date: '2026-03-31'
+    publisher: Grand Ocean Retail Group Limited（FinancialFilings全文轉載）
+    quote_check: unreachable
+    title: 114年度及113年度合併財務報告暨會計師查核報告
+    url: https://financialfilings.com/filings/gorg-5907/annual-report/2026/46519810/
+  tw.5907#e2:
+    locator: 第44頁，六、重要會計項目之說明，（十六）收入之細分；金額依序為114年度、113年度，單位為新臺幣千元
+    published_date: '2026-03-31'
+    publisher: Grand Ocean Retail Group Limited（FinancialFilings全文轉載）
+    quote_check: unreachable
+    title: 114年度及113年度合併財務報告暨會計師查核報告
+    url: https://financialfilings.com/filings/gorg-5907/annual-report/2026/46519810/
+  tw.5907#e3:
+    locator: 第44頁，（十六）收入之細分，主要地區市場
+    published_date: '2026-03-31'
+    publisher: Grand Ocean Retail Group Limited（FinancialFilings全文轉載）
+    quote_check: unreachable
+    title: 114年度及113年度合併財務報告暨會計師查核報告
+    url: https://financialfilings.com/filings/gorg-5907/annual-report/2026/46519810/
+  tw.5907#e4:
+    locator: 第44頁，收入之細分註解
+    published_date: '2026-03-31'
+    publisher: Grand Ocean Retail Group Limited（FinancialFilings全文轉載）
+    quote_check: unreachable
+    title: 114年度及113年度合併財務報告暨會計師查核報告
+    url: https://financialfilings.com/filings/gorg-5907/annual-report/2026/46519810/
+  tw.5907#e5:
+    locator: 第15頁，四、重大會計政策之彙總說明，列入合併財務報告之子公司
+    published_date: '2026-03-31'
+    publisher: Grand Ocean Retail Group Limited（FinancialFilings全文轉載）
+    quote_check: unreachable
+    title: 114年度及113年度合併財務報告暨會計師查核報告
+    url: https://financialfilings.com/filings/gorg-5907/annual-report/2026/46519810/
+  tw.5907#e6:
+    locator: 第15頁，列入合併財務報告之子公司
+    published_date: '2026-03-31'
+    publisher: Grand Ocean Retail Group Limited（FinancialFilings全文轉載）
+    quote_check: unreachable
+    title: 114年度及113年度合併財務報告暨會計師查核報告
+    url: https://financialfilings.com/filings/gorg-5907/annual-report/2026/46519810/

@@ -8,12 +8,223 @@ industry:
   l0_code: '27'
   l0_name: 通信網路業
   l0_name_en: Communications and Internet
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.power
+  l3_name: 電源供應器與電源管理模組
+  l3_name_en: Power Supplies & Power Modules
+chain: chain.networking
+chain_stage:
+  agreement: both
+  also: []
+  reason: 網通電源供應器占營收50.81%為最大業務，另有通訊變壓器及藍芽模組，屬模組與零組件。
+  stage: modules
+  stage_name: 模組與零組件
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 主要製造銷售網通電源供應器、通訊變壓器及藍芽無線產品。
+summary_long: 亞元科技主要從事電源供應器、通訊用變壓器與藍芽無線產品業務。2025年營收組成為可攜式電子產品電源供應器（網通）50.81%、各式數據機用變壓器47.02%，以及藍芽無線產品2.17%，電源業務為最大來源。公司揭露GaN高功率密度電源研發，AI伺服器電源產品已進入送樣及客戶認證階段。主要子公司包括量質能科技與境外控股公司，並透過境外子公司持有宜昌變壓器及東莞變壓器、充電器生產公司。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_power
+  name: 可攜式電子產品電源供應器（網通）
+  period: 2025年度
+  revenue_share_pct: 50.81
+- evidence_ids:
+  - e3
+  id: seg_transformer
+  name: 各式數據機用變壓器
+  period: 2025年度
+  revenue_share_pct: 47.02
+- evidence_ids:
+  - e4
+  id: seg_wireless
+  name: 藍芽無線產品
+  period: 2025年度
+  revenue_share_pct: 2.17
+main_theme: theme.ai_server
+themes:
+- also: []
+  stage: components
+  theme: theme.ai_server
+  tier: midstream
+- also: []
+  stage: application
+  theme: theme.gan
+  tier: downstream
+relations:
+  subsidiaries:
+  - as_of: '2026-04-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%的境外子公司
+    details:
+    - 直接持有100%的境外子公司
+    edge: e871950b5bdae
+    evidence_level: primary
+    id: org.atech-technology-samoa
+    name: ATECH TECHNOLOGY (SAMOA) LTD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過境外子公司持有的變壓器及充電器生產公司
+    details:
+    - 透過境外子公司持有的變壓器及充電器生產公司
+    edge: effcea43fbcaf
+    evidence_level: primary
+    id: org.chi-yip-electronics-dongguan
+    name: 奇燁電子(東莞)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%的境外子公司
+    details:
+    - 直接持有100%的境外子公司
+    edge: ed8615e7d7a6a
+    evidence_level: primary
+    id: org.growing-profits-group
+    name: Growing Profits Group Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%的境外子公司
+    details:
+    - 直接持有100%的境外子公司
+    edge: eef26277b12be
+    evidence_level: primary
+    id: org.outstanding-electronics-manufacturer-group
+    name: Outstanding Electronics Manufacturer Group Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%的電源供應器子公司
+    details:
+    - 直接持有100%的電源供應器子公司
+    edge: ef51f48521a39
+    evidence_level: primary
+    id: org.powertron-electronics
+    name: 量質能科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.atechoem.com
 tax_id: '23727428'
 incorporated: '1990-04-06'
 listed: '2001-07-26'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6109#e1:
+    locator: 公司名稱、股票代號、主要營銷及公司網址欄
+    published_date: null
+    publisher: 亞元科技股份有限公司
+    quote_check: found
+    title: 基本資料
+    url: https://irs.atechoem.com/investors/article/basic-information/
+  tw.6109#e10:
+    locator: 重要議案摘要第4項
+    published_date: '2025-03-11'
+    publisher: 亞元科技股份有限公司
+    quote_check: found
+    title: 第十二屆第十二次董事會通過之重要決議事項
+    url: https://irs.atechoem.com/investors/message-detail/board-resolution/348__4/
+  tw.6109#e11:
+    locator: 2010年沿革；現存持股另由2025年報組織圖核對
+    published_date: null
+    publisher: 亞元科技股份有限公司
+    quote_check: found
+    title: 公司沿革
+    url: https://irs.atechoem.com/investors/article/38/
+  tw.6109#e12:
+    locator: 印刷頁84，量質能科技股份有限公司列；印刷頁85持股資料
+    published_date: '2026-08-14'
+    publisher: 亞元科技股份有限公司
+    quote_check: found
+    title: 2025股東會年報（股東會後修訂本）
+    url: https://irs.atechoem.com/investors/messageFile/331__3/
+  tw.6109#e14:
+    locator: 印刷頁84，奇燁電子(東莞)有限公司列，主要營業項目
+    published_date: '2026-08-14'
+    publisher: 亞元科技股份有限公司
+    quote_check: found
+    title: 2025股東會年報（股東會後修訂本）
+    url: https://irs.atechoem.com/investors/messageFile/331__3/
+  tw.6109#e2:
+    locator: 印刷頁53，營業比重表，可攜式電子產品電源供應器（網通）列，114年度欄
+    published_date: '2026-08-14'
+    publisher: 亞元科技股份有限公司
+    quote_check: not_found
+    title: 2025股東會年報（股東會後修訂本）
+    url: https://irs.atechoem.com/investors/messageFile/331__3/
+  tw.6109#e3:
+    locator: 印刷頁53，營業比重表，各式數據機用變壓器列，114年度欄
+    published_date: '2026-08-14'
+    publisher: 亞元科技股份有限公司
+    quote_check: not_found
+    title: 2025股東會年報（股東會後修訂本）
+    url: https://irs.atechoem.com/investors/messageFile/331__3/
+  tw.6109#e4:
+    locator: 印刷頁53，營業比重表，藍芽無線產品列，114年度欄
+    published_date: '2026-08-14'
+    publisher: 亞元科技股份有限公司
+    quote_check: not_found
+    title: 2025股東會年報（股東會後修訂本）
+    url: https://irs.atechoem.com/investors/messageFile/331__3/
+  tw.6109#e5:
+    locator: 產品分類標題
+    published_date: null
+    publisher: 亞元科技股份有限公司
+    quote_check: found
+    title: 低功耗藍芽模組
+    url: https://www.atechoem.com/tw/product/Module/BLEmodule/
+  tw.6109#e6:
+    locator: 印刷頁5，通訊變壓器業務，新應用市場布局
+    published_date: '2026-08-14'
+    publisher: 亞元科技股份有限公司
+    quote_check: found
+    title: 2025股東會年報（股東會後修訂本）
+    url: https://irs.atechoem.com/investors/messageFile/331__3/
+  tw.6109#e7:
+    locator: 印刷頁57，114年度研究發展狀況及成果，第13項
+    published_date: '2026-08-14'
+    publisher: 亞元科技股份有限公司
+    quote_check: found
+    title: 2025股東會年報（股東會後修訂本）
+    url: https://irs.atechoem.com/investors/messageFile/331__3/
+  tw.6109#e8:
+    locator: 印刷頁83，關係企業組織圖；亞元下方四家直接子公司及宜昌、東莞間接子公司的持股標示
+    published_date: '2026-08-14'
+    publisher: 亞元科技股份有限公司
+    quote_check: not_found
+    title: 2025股東會年報（股東會後修訂本）
+    url: https://irs.atechoem.com/investors/messageFile/331__3/
+  tw.6109#e9:
+    locator: 2004年沿革；現存持股另由2025年報組織圖核對
+    published_date: null
+    publisher: 亞元科技股份有限公司
+    quote_check: found
+    title: 公司沿革
+    url: https://irs.atechoem.com/investors/article/38/

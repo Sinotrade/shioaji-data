@@ -8,12 +8,149 @@ industry:
   l0_code: '14'
   l0_name: 建材營造業
   l0_name_en: Building Material and Construction
-primary_chain_position: unknown
+  l1: realestate
+  l1_name: 不動產
+  l1_name_en: Real Estate
+  l2: re.dev
+  l2_name: 不動產
+  l2_name_en: Real Estate
+  l3: re.developer
+  l3_name: 建設開發
+  l3_name_en: Property Development
+primary_chain_position: not_applicable
+summary_short: 以住宅及商業大樓開發、銷售與出租賺取收入，營建為主要業務。
+summary_long: 寶徠建設以住宅及商業大樓開發為主，採委託營造廠商興建後出售或出租的營運方式。2025年度合併營收中，營建收入占96.71%，提供勞務收入占2.81%，租金收入占0.48%，主要收入來源為營建業務。公司亦從事都市更新開發。旗下寶徠綠能科技從事太陽能應用，寶徠房地產從事不動產代銷，寶徠觀光發展從事旅遊仲介。原子公司寶徠金廈（廈門）旅遊管理服務已於2026年2月27日完成註銷。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_construction
+  name: 營建收入
+  period: '2025'
+  revenue_share_pct: 96.71
+- evidence_ids:
+  - e2
+  id: seg_services
+  name: 提供勞務收入
+  period: '2025'
+  revenue_share_pct: 2.81
+- evidence_ids:
+  - e2
+  id: seg_rental
+  name: 租金收入
+  period: '2025'
+  revenue_share_pct: 0.48
+relations:
+  subsidiaries:
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 不動產代銷子公司
+    details:
+    - 不動產代銷子公司
+    edge: ebc92aa57708b
+    evidence_level: primary
+    id: org.寶徠房地產股份有限公司
+    name: 寶徠房地產股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 太陽能應用相關業務子公司
+    details:
+    - 太陽能應用相關業務子公司
+    edge: ea3063c89d066
+    evidence_level: primary
+    id: org.寶徠綠能科技股份有限公司
+    name: 寶徠綠能科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 旅遊仲介子公司
+    details:
+    - 旅遊仲介子公司
+    edge: eacc8631fee6e
+    evidence_level: primary
+    id: org.寶徠觀光發展有限公司
+    name: 寶徠觀光發展有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-02-27'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 原子公司清算註銷
+    details:
+    - 原子公司清算註銷
+    edge: e67659225863a
+    evidence_level: primary
+    id: org.寶徠金廈-廈門-旅遊管理服務有限公司
+    name: 寶徠金廈(廈門)旅遊管理服務有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://blgroup.com.tw/
 tax_id: '12179563'
 incorporated: '1978-06-30'
 listed: '1989-10-20'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.1805#e2:
+    locator: 第55頁，肆、營運概況，一、業務內容，114年度產品及營業比重
+    published_date: null
+    publisher: 寶徠建設股份有限公司
+    quote_check: found
+    title: 寶徠建設114年度年報
+    url: https://blgroup.com.tw/wp-content/uploads/2026/07/%E5%AF%B6%E5%BE%A0114%E5%B9%B4%E5%B9%B4%E5%A0%B1.pdf
+  tw.1805#e3:
+    locator: 第8頁，一、公司沿革
+    published_date: '2026-05-06'
+    publisher: 寶徠建設股份有限公司
+    quote_check: found
+    title: 寶徠建設115年第一季合併財務報告
+    url: https://blgroup.com.tw/wp-content/uploads/2026/07/115Q1-BL_%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1-%E7%94%A8%E5%8D%B0%E4%B8%8A%E5%82%B3.pdf
+  tw.1805#e4:
+    locator: 合建都更專區，都市更新說明
+    published_date: null
+    publisher: 寶徠建設股份有限公司
+    quote_check: found
+    title: 合建都更・寶徠建設股份有限公司
+    url: https://blgroup.com.tw/urban_renewal
+  tw.1805#e5:
+    locator: 第10頁，四、重大會計政策之彙總說明，列入合併財務報告之子公司
+    published_date: '2026-05-06'
+    publisher: 寶徠建設股份有限公司
+    quote_check: found
+    title: 寶徠建設115年第一季合併財務報告
+    url: https://blgroup.com.tw/wp-content/uploads/2026/07/115Q1-BL_%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1-%E7%94%A8%E5%8D%B0%E4%B8%8A%E5%82%B3.pdf
+  tw.1805#e6:
+    locator: 第10頁，四、重大會計政策之彙總說明，列入合併財務報告之子公司
+    published_date: '2026-05-06'
+    publisher: 寶徠建設股份有限公司
+    quote_check: found
+    title: 寶徠建設115年第一季合併財務報告
+    url: https://blgroup.com.tw/wp-content/uploads/2026/07/115Q1-BL_%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1-%E7%94%A8%E5%8D%B0%E4%B8%8A%E5%82%B3.pdf
+  tw.1805#e7:
+    locator: 第10頁，四、重大會計政策之彙總說明，列入合併財務報告之子公司
+    published_date: '2026-05-06'
+    publisher: 寶徠建設股份有限公司
+    quote_check: found
+    title: 寶徠建設115年第一季合併財務報告
+    url: https://blgroup.com.tw/wp-content/uploads/2026/07/115Q1-BL_%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1-%E7%94%A8%E5%8D%B0%E4%B8%8A%E5%82%B3.pdf
+  tw.1805#e8:
+    locator: 第10頁，列入合併財務報告之子公司表下注
+    published_date: '2026-05-06'
+    publisher: 寶徠建設股份有限公司
+    quote_check: found
+    title: 寶徠建設115年第一季合併財務報告
+    url: https://blgroup.com.tw/wp-content/uploads/2026/07/115Q1-BL_%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1-%E7%94%A8%E5%8D%B0%E4%B8%8A%E5%82%B3.pdf

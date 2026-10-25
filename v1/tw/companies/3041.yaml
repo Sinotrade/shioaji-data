@@ -8,14 +8,47 @@ industry:
   l0_code: '24'
   l0_name: 半導體業
   l0_name_en: Semiconductor
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.semi
+  l2_name: 半導體
+  l2_name_en: Semiconductors
+  l3: semi.ic_design
+  l3_name: IC 設計
+  l3_name_en: IC Design
+chain: chain.semiconductor
+chain_stage:
+  agreement: research
+  also: []
+  reason: 主要營收來自自行設計的數位機上盒晶片。
+  stage: ip_design
+  stage_name: IP 與 IC 設計
+  tier: upstream
+primary_chain_position: upstream
+summary_short: 以數位機上盒晶片設計銷售為主，另經營ASIC設計服務及網路設備。
+summary_long: 揚智以數位機上盒（STB）晶片設計及銷售為主要業務，2025年度年報揭露其營收比重約85%，網路相關設備約15%。STB整合晶片涵蓋衛星、地面廣播、有線及IP機上盒；F6P為DVB-S2X／DVB-C系統單晶片。公司另提供ASIC設計服務，涵蓋前端設計、實體晶片整合、生產與軟體支援，並於官網列示ALiIN室內智慧運算平台。網路設備業務由安瑞科技及其子公司經營，涵蓋網路連線安全與流量加速相關系統。
+segments:
+- evidence_ids:
+  - e1
+  id: stb
+  name: 數位機上盒晶片
+  period: '2025'
+  revenue_share_pct: 85
+- evidence_ids:
+  - e1
+  id: network
+  name: 網路相關設備
+  period: '2025'
+  revenue_share_pct: 15
 relations:
   parents:
-  - as_of: '2025-09-30'
+  - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 透過宇全智聯納入合併的間接子公司
+    detail: 母公司及最終控制者
     details:
+    - 母公司及最終控制者
     - 透過宇全智聯納入合併的間接子公司
     edge: ea3bab05d5ec9
     evidence_level: primary
@@ -24,12 +57,174 @@ relations:
     ranking_basis: unranked
     share_basis: null
     share_pct: null
+    weight: 2
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有的投資子公司
+    details:
+    - 直接持有的投資子公司
+    edge: e39a03bfbb3b1
+    evidence_level: primary
+    id: org.ali-bvi-microelectronics
+    name: ALi(BVI) Microelectronics Corporation
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 成都研發、銷售及技術服務子公司
+    details:
+    - 成都研發、銷售及技術服務子公司
+    edge: e491b13b113d3
+    evidence_level: primary
+    id: org.ali-electronics-chengdu
+    name: 揚智電子科技(成都)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 印度研發及客戶技術服務子公司
+    details:
+    - 印度研發及客戶技術服務子公司
+    edge: e4219f863a890
+    evidence_level: primary
+    id: org.alitech-india-llp
+    name: ALitech India LLP
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接控制的網路設備子公司
+    details:
+    - 間接控制的網路設備子公司
+    edge: e7d7e3cfb168b
+    evidence_level: primary
+    id: org.array-inc-安瑞科技股份有限公司
+    name: Array Inc. (安瑞科技股份有限公司)
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有的投資子公司
+    details:
+    - 直接持有的投資子公司
+    edge: e70e99a7ad6ea
+    evidence_level: primary
+    id: org.zhi-wei-technology
+    name: 至偉科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
     weight: 1
 website: www.alitech.com
 tax_id: '84149054'
 incorporated: '1993-06-10'
 listed: '2002-08-26'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3041#e1:
+    locator: 印刷頁79，營業比重
+    published_date: '2026-08-10'
+    publisher: 揚智科技股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.alitech.com/index.php/files/240/%E5%B9%B4%E5%A0%B12026-tw/727/114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf
+  tw.3041#e10:
+    locator: 第14頁，合併財務報表編製原則之子公司表
+    published_date: '2026-08-14'
+    publisher: 揚智科技股份有限公司
+    quote_check: found
+    title: 115年度第二季合併財務報告
+    url: https://www.alitech.com/index.php/files/237/%E8%B2%A1%E5%A0%B12026-tw/753/%E7%AC%AC%E4%BA%8C%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
+  tw.3041#e11:
+    locator: 第15頁，合併財務報表編製原則之子公司表
+    published_date: '2026-08-14'
+    publisher: 揚智科技股份有限公司
+    quote_check: found
+    title: 115年度第二季合併財務報告
+    url: https://www.alitech.com/index.php/files/237/%E8%B2%A1%E5%A0%B12026-tw/753/%E7%AC%AC%E4%BA%8C%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
+  tw.3041#e12:
+    locator: 第16頁，間接控制子公司說明
+    published_date: '2026-08-14'
+    publisher: 揚智科技股份有限公司
+    quote_check: found
+    title: 115年度第二季合併財務報告
+    url: https://www.alitech.com/index.php/files/237/%E8%B2%A1%E5%A0%B12026-tw/753/%E7%AC%AC%E4%BA%8C%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
+  tw.3041#e13:
+    locator: 第15頁，合併財務報表編製原則之子公司表
+    published_date: '2026-08-14'
+    publisher: 揚智科技股份有限公司
+    quote_check: found
+    title: 115年度第二季合併財務報告
+    url: https://www.alitech.com/index.php/files/237/%E8%B2%A1%E5%A0%B12026-tw/753/%E7%AC%AC%E4%BA%8C%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
+  tw.3041#e2:
+    locator: 印刷頁79，公司目前之商品、服務項目
+    published_date: '2026-08-10'
+    publisher: 揚智科技股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.alitech.com/index.php/files/240/%E5%B9%B4%E5%A0%B12026-tw/727/114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf
+  tw.3041#e3:
+    locator: 新聞稿第一段
+    published_date: '2024-06-07'
+    publisher: 揚智科技股份有限公司
+    quote_check: found
+    title: 揚智新一代DVB-S2X/ DVB-C SoC F6P將於2024年量產
+    url: https://www.alitech.com/index.php/tw/presscenter/goto/item/1816-%E6%8F%9A%E6%99%BA%E6%96%B0%E4%B8%80%E4%BB%A3dvb-s2x-dvb-c-soc-f6p%E5%B0%87%E6%96%BC2024%E5%B9%B4%E9%87%8F%E7%94%A2
+  tw.3041#e4:
+    locator: ASIC Turnkey Service
+    published_date: null
+    publisher: 揚智科技股份有限公司
+    quote_check: found
+    title: ASIC設計服務
+    url: https://www.alitech.com/index.php/tw/asic
+  tw.3041#e5:
+    locator: 公司簡介第二段
+    published_date: null
+    publisher: 揚智科技股份有限公司
+    quote_check: found
+    title: 揚智簡介
+    url: https://www.alitech.com/index.php/tw/about-ali/ali-introduction
+  tw.3041#e6:
+    locator: 第98頁，部門資訊
+    published_date: '2026-08-14'
+    publisher: 揚智科技股份有限公司
+    quote_check: found
+    title: 115年度第二季合併財務報告
+    url: https://www.alitech.com/index.php/files/237/%E8%B2%A1%E5%A0%B12026-tw/753/%E7%AC%AC%E4%BA%8C%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
+  tw.3041#e7:
+    locator: 第10頁，公司沿革
+    published_date: '2026-08-14'
+    publisher: 揚智科技股份有限公司
+    quote_check: found
+    title: 115年度第二季合併財務報告
+    url: https://www.alitech.com/index.php/files/237/%E8%B2%A1%E5%A0%B12026-tw/753/%E7%AC%AC%E4%BA%8C%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
+  tw.3041#e8:
+    locator: 第14頁，合併財務報表編製原則之子公司表
+    published_date: '2026-08-14'
+    publisher: 揚智科技股份有限公司
+    quote_check: found
+    title: 115年度第二季合併財務報告
+    url: https://www.alitech.com/index.php/files/237/%E8%B2%A1%E5%A0%B12026-tw/753/%E7%AC%AC%E4%BA%8C%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
+  tw.3041#e9:
+    locator: 第14頁，合併財務報表編製原則之子公司表
+    published_date: '2026-08-14'
+    publisher: 揚智科技股份有限公司
+    quote_check: found
+    title: 115年度第二季合併財務報告
+    url: https://www.alitech.com/index.php/files/237/%E8%B2%A1%E5%A0%B12026-tw/753/%E7%AC%AC%E4%BA%8C%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf

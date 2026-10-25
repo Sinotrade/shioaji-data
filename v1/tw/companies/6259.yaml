@@ -8,12 +8,77 @@ industry:
   l0_code: '28'
   l0_name: 電子零組件業
   l0_name_en: Electronic Parts and Components
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.passive
+  l3_name: 被動元件
+  l3_name_en: Passive Components
+primary_chain_position: midstream
+summary_short: 以客製化磁性元件為主，製造銷售變壓器、電感與線路保護元件。
+summary_long: 百徽以客製化磁性元件的設計、生產與銷售為主要業務。2025年11月法說揭露，當時超過七成銷售來自此類產品。公司製造的產品另包括變壓器、車用高信賴性磁性元件及標準型電感，並提供電感器與線路保護等電子零組件。其產品同時涵蓋客製化元件與標準型元件，業務包含磁性元件製造及電子零組件銷售。公司於2025年設立海外子公司Bullwill Global Ltd.，拓展海外組織布局。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_magnetics
+  name: 客製化磁性元件設計與製造
+  period: 2025-11-28法說當時；未明列統計起訖期間
+  revenue_share_pct: null
+relations:
+  subsidiaries:
+  - as_of: '2025-11-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 2025年設立的海外子公司
+    details:
+    - 2025年設立的海外子公司
+    edge: eb7331d902373
+    evidence_level: primary
+    id: org.bullwill-global
+    name: Bullwill Global Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 美福科技股份有限公司：官網列入集團組織，最新持股與控制關係仍待完整文件核對。
+- 百徽能源股份有限公司：法說列為合資公司，未取得足以確認子公司控制關係的資料。
 website: http://www.bullwill.com.tw
 tax_id: '84497335'
 incorporated: '1993-12-20'
 listed: '2003-09-17'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6259#e1:
+    locator: 第4頁，銷售組成側欄
+    published_date: '2025-11-28'
+    publisher: 百徽股份有限公司
+    quote_check: found
+    title: 2025年法人說明會
+    url: https://www.bullwill.com.tw/en/controller/download.php?ID=24&cate=download&type=conference
+  tw.6259#e2:
+    locator: 公司產品製造說明
+    published_date: null
+    publisher: 百徽股份有限公司
+    quote_check: found
+    title: 關於百徽
+    url: https://www.bullwill.com.tw/company_about.php
+  tw.6259#e3:
+    locator: 產品總覽介紹
+    published_date: null
+    publisher: 百徽股份有限公司
+    quote_check: found
+    title: 產品資訊總覽
+    url: https://www.bullwill.com.tw/products_overview.php
+  tw.6259#e4:
+    locator: 第4頁，公司簡介，民國114年沿革
+    published_date: '2025-11-28'
+    publisher: 百徽股份有限公司
+    quote_check: found
+    title: 2025年法人說明會
+    url: https://www.bullwill.com.tw/en/controller/download.php?ID=24&cate=download&type=conference

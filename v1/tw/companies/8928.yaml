@@ -8,12 +8,176 @@ industry:
   l0_code: '37'
   l0_name: 運動休閒
   l0_name_en: Sports and Leisure
-primary_chain_position: unknown
+  l1: consumer
+  l1_name: 消費
+  l1_name_en: Consumer
+  l2: cons.discretionary
+  l2_name: 非必需消費
+  l2_name_en: Consumer Discretionary
+  l3: consumer.sports
+  l3_name: 運動用品與健身器材
+  l3_name_en: Sporting Goods & Fitness Equipment
+primary_chain_position: not_applicable
+summary_short: 以高爾夫球組桿與球頭製造、裝配及銷售為主，另提供五金鑄件。
+summary_long: 鉅明以高爾夫球組桿與球頭的製造、裝配及銷售為主要業務。2025年度產品營業比重為高爾夫球組桿47.0%、高爾夫球頭45.7%、高爾夫球具0.2%，其他項目占7.1%。球頭產品涵蓋鈦合金木桿、不鏽鋼鐵桿、推桿及球道木桿，另提供鈦合金與不鏽鋼五金鑄件。集團設有日本G.G.C.公司、德國旺來公司及越南鉅明公司三家子公司。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_clubs
+  name: 高爾夫球組桿
+  period: '2025'
+  revenue_share_pct: 47
+- evidence_ids:
+  - e2
+  id: seg_heads
+  name: 高爾夫球頭
+  period: '2025'
+  revenue_share_pct: 45.7
+- evidence_ids:
+  - e2
+  id: seg_equipment
+  name: 高爾夫球具
+  period: '2025'
+  revenue_share_pct: 0.2
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 7.1
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 越南鉅明公司
+    details:
+    - 越南鉅明公司
+    edge: e49f0b230dd66
+    evidence_level: primary
+    id: org.dynamic-precision-industry-vietnam
+    name: Dynamic Precision Industry Vietnam Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 日本G.G.C.公司
+    details:
+    - 日本G.G.C.公司
+    edge: e81b2ca13c1e7
+    evidence_level: primary
+    id: org.geotech-golf-components
+    name: Geotech Golf Components Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 德國旺來公司
+    details:
+    - 德國旺來公司
+    edge: e96157864c96e
+    evidence_level: primary
+    id: org.pineapple-golf-products
+    name: Pineapple Golf Products GmbH
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.dynamic.com.tw
 tax_id: '85634075'
 incorporated: '1973-06-25'
 listed: '2001-02-02'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.8928#e1:
+    locator: 印刷第96頁，PDF第100頁，關係企業基本資料
+    published_date: null
+    publisher: 鉅明股份有限公司
+    quote_check: found
+    title: 鉅明股份有限公司114年度年報
+    url: https://www.dynamic.com.tw/upload/download/files/708836700.pdf
+  tw.8928#e10:
+    locator: 印刷第10頁，PDF第11頁，子公司表，日本G.G.C.公司列
+    published_date: '2026-08-05'
+    publisher: 鉅明股份有限公司
+    quote_check: found
+    title: 鉅明股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.dynamic.com.tw/upload/download/files/1788331831555.pdf
+  tw.8928#e11:
+    locator: 印刷第10頁，PDF第11頁，子公司表，德國旺來公司列
+    published_date: '2026-08-05'
+    publisher: 鉅明股份有限公司
+    quote_check: found
+    title: 鉅明股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.dynamic.com.tw/upload/download/files/1788331831555.pdf
+  tw.8928#e12:
+    locator: 印刷第10頁，PDF第11頁，子公司表，越南鉅明公司列
+    published_date: '2026-08-05'
+    publisher: 鉅明股份有限公司
+    quote_check: found
+    title: 鉅明股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.dynamic.com.tw/upload/download/files/1788331831555.pdf
+  tw.8928#e2:
+    locator: 印刷第67頁，PDF第71頁，主要產品營業比重
+    published_date: null
+    publisher: 鉅明股份有限公司
+    quote_check: found
+    title: 鉅明股份有限公司114年度年報
+    url: https://www.dynamic.com.tw/upload/download/files/708836700.pdf
+  tw.8928#e3:
+    locator: 印刷第67頁，PDF第71頁，所營業務之主要內容
+    published_date: null
+    publisher: 鉅明股份有限公司
+    quote_check: found
+    title: 鉅明股份有限公司114年度年報
+    url: https://www.dynamic.com.tw/upload/download/files/708836700.pdf
+  tw.8928#e4:
+    locator: 產品頁標題
+    published_date: null
+    publisher: 鉅明股份有限公司
+    quote_check: found
+    title: 木桿(MW)-鈦合金球頭
+    url: https://www.dynamic.com.tw/product_info.php?id=157
+  tw.8928#e5:
+    locator: 產品頁標題
+    published_date: null
+    publisher: 鉅明股份有限公司
+    quote_check: found
+    title: 鐵桿(IRON)-不鏽鋼球頭
+    url: https://www.dynamic.com.tw/product_info.php?id=161
+  tw.8928#e6:
+    locator: 產品頁標題
+    published_date: null
+    publisher: 鉅明股份有限公司
+    quote_check: found
+    title: 推桿(Putter)
+    url: https://www.dynamic.com.tw/product_info.php?id=156
+  tw.8928#e7:
+    locator: 產品頁標題
+    published_date: null
+    publisher: 鉅明股份有限公司
+    quote_check: found
+    title: 球道木桿(FAIRWAY)
+    url: https://www.dynamic.com.tw/product_info.php?id=155
+  tw.8928#e8:
+    locator: 基本資料，主要產品
+    published_date: null
+    publisher: 鉅明股份有限公司
+    quote_check: found
+    title: 投資人關係：公司基本資料
+    url: https://www.dynamic.com.tw/investor.php?id=61
+  tw.8928#e9:
+    locator: 印刷第10頁，PDF第11頁，合併基礎
+    published_date: '2026-08-05'
+    publisher: 鉅明股份有限公司
+    quote_check: found
+    title: 鉅明股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.dynamic.com.tw/upload/download/files/1788331831555.pdf

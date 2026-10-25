@@ -8,12 +8,142 @@ industry:
   l0_code: '27'
   l0_name: 通信網路業
   l0_name_en: Communications and Internet
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.network
+  l2_name: 通信網路
+  l2_name_en: Communications & Networking
+  l3: net.wireless
+  l3_name: 無線通訊與射頻
+  l3_name_en: Wireless & RF
+chain: chain.networking
+chain_stage:
+  agreement: both
+  also:
+  - stage: chips
+    stage_name: 網通晶片與光電元件
+    tier: upstream
+  - stage: modules
+    stage_name: 模組與零組件
+    tier: midstream
+  reason: 主要營收來自網通設備，產品含路由器與閘道器；另有醫療影音傳輸模組及子公司雷射磊晶片與晶片業務。
+  stage: equipment
+  stage_name: 網通設備與系統
+  tier: downstream
+primary_chain_position: downstream
+summary_short: 以網通產品設計製造為主，提供無線感測、路由器與電力線通訊產品。
+summary_long: 兆勁主要從事網通產品設計與製造，2025年前九月網通事業營收約8.74億元，占公司營收約99.8%。主要產品包括物聯網藍牙溫度感測器、工業級Wi-Fi／LTE路由器、電力線智能插座與醫療影音傳輸模組。記憶體事業提供SSD、MicroSD等儲存產品，以及裸晶測試、組裝及成品測試服務。子公司兆通光電從事以砷化鎵與磷化銦為基板的化合物半導體磊晶製造，並提供VCSEL與EEL雷射磊晶片及晶片的設計、製造服務。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_networking
+  name: 網通事業
+  period: 2025年1至9月
+  revenue_share_pct: 99.8
+main_theme: theme.vcsel
+themes:
+- also: []
+  stage: epi
+  theme: theme.vcsel
+  tier: upstream
+- also: []
+  stage: substrate
+  theme: theme.inp
+  tier: upstream
+relations:
+  subsidiaries:
+  - as_of: '2026-10-24'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 化合物半導體磊晶子公司
+    details:
+    - 化合物半導體磊晶子公司
+    edge: ee0d393533d40
+    evidence_level: primary
+    id: org.gigacom
+    name: 兆通光電股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 國內最大記憶體供應商（官網未具名）
 website: http://www.abocom.com.tw
 tax_id: '89549446'
 incorporated: '1995-06-12'
 listed: '2000-12-08'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2444#e1:
+    locator: 第9頁，網通事業部門銷售業績
+    published_date: '2025-10-20'
+    publisher: 兆勁科技股份有限公司
+    quote_check: found
+    title: 兆勁科技2025法人說明會
+    url: https://resource.iyp.tw/static.iyp.tw/38812/files/f379fbf5-a9ba-465e-982e-813e84642de5.pdf
+  tw.2444#e10:
+    locator: 關於我們
+    published_date: null
+    publisher: 兆通光電股份有限公司
+    quote_check: found
+    title: 兆通光電股份有限公司官網
+    url: https://gigacom.com.tw/
+  tw.2444#e2:
+    locator: 第10頁，2025年1至8月產品營收表；感測器38.99%、路由器15.81%
+    published_date: '2025-10-20'
+    publisher: 兆勁科技股份有限公司
+    quote_check: found
+    title: 兆勁科技2025法人說明會
+    url: https://resource.iyp.tw/static.iyp.tw/38812/files/f379fbf5-a9ba-465e-982e-813e84642de5.pdf
+  tw.2444#e3:
+    locator: 專業代工服務及網通製造事業介紹
+    published_date: null
+    publisher: 兆勁科技股份有限公司
+    quote_check: found
+    title: 網通製造事業
+    url: https://www.abocom.com.tw/netcom-manufacturing.html
+  tw.2444#e4:
+    locator: 專業代工服務產品清單
+    published_date: null
+    publisher: 兆勁科技股份有限公司
+    quote_check: found
+    title: 網通製造事業
+    url: https://www.abocom.com.tw/netcom-manufacturing.html
+  tw.2444#e5:
+    locator: 第10頁，網通事業產品營收表
+    published_date: '2025-10-20'
+    publisher: 兆勁科技股份有限公司
+    quote_check: found
+    title: 兆勁科技2025法人說明會
+    url: https://resource.iyp.tw/static.iyp.tw/38812/files/f379fbf5-a9ba-465e-982e-813e84642de5.pdf
+  tw.2444#e6:
+    locator: 記憶體產品清單
+    published_date: null
+    publisher: 兆勁科技股份有限公司
+    quote_check: found
+    title: 關於兆勁
+    url: https://www.abocom.com.tw/about-us.html
+  tw.2444#e7:
+    locator: 記憶體部門服務介紹
+    published_date: null
+    publisher: 兆勁科技股份有限公司
+    quote_check: found
+    title: 記憶體事業
+    url: https://www.abocom.com.tw/memory-business.html
+  tw.2444#e8:
+    locator: 關於我們
+    published_date: null
+    publisher: 兆通光電股份有限公司
+    quote_check: found
+    title: 兆通光電股份有限公司官網
+    url: https://gigacom.com.tw/
+  tw.2444#e9:
+    locator: 公司願景第一項
+    published_date: null
+    publisher: 兆通光電股份有限公司
+    quote_check: found
+    title: 兆通光電股份有限公司官網
+    url: https://gigacom.com.tw/

@@ -8,15 +8,54 @@ industry:
   l0_code: '12'
   l0_name: 汽車工業
   l0_name_en: Automobile
-primary_chain_position: unknown
+  l1: auto
+  l1_name: 汽車與運具
+  l1_name_en: Automotive & Mobility
+  l2: auto.vehicles
+  l2_name: 汽機車
+  l2_name_en: Autos & Motorcycles
+  l3: auto.oem
+  l3_name: 整車與機車
+  l3_name_en: Vehicles & Motorcycles
+chain: chain.auto
+chain_stage:
+  agreement: research
+  also: []
+  reason: 主要研發製造電動商用車，電動巴士為最大營收來源。
+  stage: oem
+  stage_name: 整車與售後
+  tier: downstream
+primary_chain_position: downstream
+summary_short: 主要研發、製造及銷售電動巴士，另提供車隊與充電管理系統。
+summary_long: 華德動能以電動商用車研發與製造為主，2025年電動巴士占營收92%，其他業務占8%。主要產品包括12米RAC-700電動巴士，以及提供車隊監控、異常警示、歷史軌跡查詢與營運分析的車輛管理系統。公司亦提供智慧充電管理系統，可安排充電時段與功率並控制總負載；需求反應式公共運輸系統則提供預約叫車、智慧派車與路線最佳化。車王電子為其母公司。依整車製造業務，屬汽車產業鏈整車階段及電動車題材。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_bus
+  name: 電動巴士
+  period: '2025'
+  revenue_share_pct: 92
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 8
+main_theme: theme.ev
+themes:
+- also: []
+  stage: vehicle
+  theme: theme.ev
+  tier: downstream
 relations:
   parents:
-  - as_of: 2025-12
+  - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
     detail: 電動巴士相關子公司
     details:
     - 電動巴士相關子公司
+    - 母公司
     edge: ec4fff7f189fc
     evidence_level: primary
     id: tw.1533
@@ -24,7 +63,7 @@ relations:
     ranking_basis: unranked
     share_basis: null
     share_pct: null
-    weight: 1
+    weight: 2
   suppliers:
   - as_of: '2021-03-17'
     confidence: ai_cross_checked
@@ -44,7 +83,56 @@ website: www.racev.com
 tax_id: '27579308'
 incorporated: '2005-04-07'
 listed: '2026-08-10'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-23'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2237#e1:
+    locator: 主要營業項目
+    published_date: null
+    publisher: 華德動能科技股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.racev.com/zh-TW/about/info
+  tw.2237#e2:
+    locator: 第73頁，主要產品之營業比重
+    published_date: null
+    publisher: 華德動能科技股份有限公司
+    quote_check: found
+    title: 華德動能科技股份有限公司一一四年度年報
+    url: https://www.racev.com/zh-TW/investors/shareholder/AO/6/download
+  tw.2237#e3:
+    locator: 第1頁，致股東報告書
+    published_date: null
+    publisher: 華德動能科技股份有限公司
+    quote_check: found
+    title: 華德動能科技股份有限公司一一四年度年報
+    url: https://www.racev.com/zh-TW/investors/shareholder/AO/6/download
+  tw.2237#e4:
+    locator: RAC-700產品標題
+    published_date: null
+    publisher: 華德動能科技股份有限公司
+    quote_check: found
+    title: 電動巴士－產品介紹
+    url: https://www.racev.com/zh-TW/product/jR
+  tw.2237#e5:
+    locator: 車隊管理
+    published_date: null
+    publisher: 華德動能科技股份有限公司
+    quote_check: found
+    title: 車輛管理系統－產品介紹
+    url: https://www.racev.com/zh-TW/product/nR
+  tw.2237#e6:
+    locator: 智慧充電管理系統
+    published_date: null
+    publisher: 華德動能科技股份有限公司
+    quote_check: found
+    title: 車輛管理系統－產品介紹
+    url: https://www.racev.com/zh-TW/product/nR
+  tw.2237#e7:
+    locator: 需求反應式公共運輸系統（DRTS）
+    published_date: null
+    publisher: 華德動能科技股份有限公司
+    quote_check: found
+    title: 車輛管理系統－產品介紹
+    url: https://www.racev.com/zh-TW/product/nR

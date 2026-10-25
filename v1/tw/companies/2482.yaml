@@ -8,12 +8,136 @@ industry:
   l0_code: '31'
   l0_name: 其他電子業
   l0_name_en: Other Electronic
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.hardware
+  l2_name: 電腦與硬體
+  l2_name_en: Computers & Hardware
+  l3: hw.peripheral
+  l3_name: 周邊與輸入裝置
+  l3_name_en: Peripherals & Input Devices
+primary_chain_position: not_applicable
+summary_short: 製造及銷售電子支付讀卡機、支付終端設備，並提供雲端管理平台。
+summary_long: 連宇以電子支付讀卡機與支付終端設備的製造及銷售為主要業務，2025年IC讀卡機占產品營收66%，其他產品占34%。產品涵蓋讀卡機、無人自助支付終端、行動POS及櫃檯支付終端，應用包括零售收款、自助服務與戶外支付場景。公司另提供UIC Connect平台，功能包含交易報表、設備狀態監控、遠端控制及應用程式更新管理。2026年法說會列示的投資子公司包括UIC USA、新儀科技及燦宇新視界。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_card_readers
+  name: IC讀卡機
+  period: '2025'
+  revenue_share_pct: 66
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他產品
+  period: '2025'
+  revenue_share_pct: 34
+relations:
+  subsidiaries:
+  - as_of: '2026-09-22'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 法說會列示的投資子公司
+    details:
+    - 法說會列示的投資子公司
+    edge: ecfe2da3f847f
+    evidence_level: primary
+    id: org.uic-usa
+    name: UIC USA
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-09-22'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 法說會列示的投資子公司
+    details:
+    - 法說會列示的投資子公司
+    edge: e77bb49cb3e2c
+    evidence_level: primary
+    id: org.燦宇新視界-股
+    name: 燦宇新視界 (股)
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://uicpaymentsinc.com/
 tax_id: '38430938'
 incorporated: '1983-10-06'
 listed: '2001-09-19'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2482#e1:
+    locator: About UIC首段
+    published_date: null
+    publisher: UIC Payments
+    quote_check: found
+    title: About UIC
+    url: https://uicpaymentsinc.com/about-uic/
+  tw.2482#e11:
+    locator: PDF第5頁／公司簡介／投資子公司
+    published_date: '2026-09-22'
+    publisher: 連宇股份有限公司
+    quote_check: found
+    title: 連宇股份有限公司2026年法說會簡報
+    url: https://mopsov.twse.com.tw/nas/STR/248220260918M001.pdf
+  tw.2482#e2:
+    locator: 公司簡介／營業項目與產品結構
+    published_date: '2026-08-25'
+    publisher: MoneyDJ理財網／嘉實投顧
+    quote_check: found
+    title: 連宇股份有限公司
+    url: https://www.moneydj.com/KMDJ/Wiki/wikiviewer.aspx?keyid=6d13913b-185a-4ab5-9c12-384f90784ed6
+  tw.2482#e3:
+    locator: 產品介紹首段
+    published_date: null
+    publisher: UIC Payments
+    quote_check: found
+    title: Payment Card Readers
+    url: https://uicpaymentsinc.com/payment-device/payment-card-readers/
+  tw.2482#e4:
+    locator: Related Terminals／UIC680VG
+    published_date: null
+    publisher: UIC Payments
+    quote_check: found
+    title: Unattended Payment Devices
+    url: https://uicpaymentsinc.com/payment-device/unattended-payment-terminals/
+  tw.2482#e5:
+    locator: Featured Terminals／Pixie5
+    published_date: null
+    publisher: UIC Payments
+    quote_check: found
+    title: Mobile Payment Devices
+    url: https://uicpaymentsinc.com/payment-device/mobile-payment-products/
+  tw.2482#e6:
+    locator: 產品介紹首段
+    published_date: null
+    publisher: UIC Payments
+    quote_check: found
+    title: Countertop Payment Devices
+    url: https://uicpaymentsinc.com/payment-device/countertop-payment-products/
+  tw.2482#e7:
+    locator: All Payments. One View
+    published_date: null
+    publisher: UIC Payments
+    quote_check: found
+    title: UIC Connect
+    url: https://uicpaymentsinc.com/uic-connect/
+  tw.2482#e8:
+    locator: Smarter Device Management功能清單
+    published_date: null
+    publisher: UIC Payments
+    quote_check: found
+    title: UIC Connect
+    url: https://uicpaymentsinc.com/uic-connect/
+  tw.2482#e9:
+    locator: PDF第5頁／公司簡介／投資子公司
+    published_date: '2026-09-22'
+    publisher: 連宇股份有限公司
+    quote_check: found
+    title: 連宇股份有限公司2026年法說會簡報
+    url: https://mopsov.twse.com.tw/nas/STR/248220260918M001.pdf

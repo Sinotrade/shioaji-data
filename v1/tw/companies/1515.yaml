@@ -39,16 +39,16 @@ segments:
   name: 其他
   period: '2025'
   revenue_share_pct: 5.71
-main_theme: theme.robotics
+main_theme: theme.drone
 themes:
-- also: []
-  stage: system
-  theme: theme.robotics
-  tier: downstream
 - also: []
   stage: components
   theme: theme.drone
   tier: upstream
+- also: []
+  stage: system
+  theme: theme.robotics
+  tier: downstream
 relations:
   subsidiaries:
   - as_of: '2025-12-31'

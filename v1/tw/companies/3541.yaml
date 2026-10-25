@@ -8,12 +8,165 @@ industry:
   l0_code: '31'
   l0_name: 其他電子業
   l0_name_en: Other Electronic
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.hardware
+  l2_name: 電腦與硬體
+  l2_name_en: Computers & Hardware
+  l3: hw.peripheral
+  l3_name: 周邊與輸入裝置
+  l3_name_en: Peripherals & Input Devices
+chain: chain.display
+chain_stage:
+  agreement: both
+  also: []
+  reason: 主要營收來自影音訊號傳輸、切換與轉換設備，屬顯示器周邊，未符合所列階段。
+  stage: null
+  stage_name: null
+  tier: null
+primary_chain_position: downstream
+summary_short: 設計製造專業影音訊號處理設備，提供影音傳輸、切換及醫療影像整合方案。
+summary_long: 西柏以專業影音訊號處理設備的設計與製造為核心，產品涵蓋訊號分配、切換、升降頻、延伸與格式轉換。公開年報資料彙整顯示，2025年專業智慧型影音產品占營收96.88%，其餘業務占3.12%。產品包括HDBaseT影音發送與接收器、採標準網路封包傳輸的HyLinX AV over IP方案，以及支援多來源畫面配置的4K60無縫矩陣切換器。醫療領域則提供影像傳輸與整合方案，應用涵蓋手術室、遠距協作、影像錄製及裸視3D。
+segments:
+- evidence_ids:
+  - e3
+  id: seg1
+  name: 專業智慧型影音產品
+  period: '2025'
+  revenue_share_pct: 96.88
+- evidence_ids:
+  - e4
+  id: seg2
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 3.12
+relations:
+  subsidiaries:
+  - as_of: 2026-10
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 英國子公司
+    details:
+    - 英國子公司
+    edge: e5cc0d01ec57b
+    evidence_level: media
+    id: org.cyp-europe-limited
+    name: CYP (Europe) Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2026-10
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 英國子公司
+    details:
+    - 英國子公司
+    edge: e0e925cabd25c
+    evidence_level: media
+    id: org.cyp-uk-limited
+    name: CYP(U.K.) Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2026-10
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 英國子公司
+    details:
+    - 英國子公司
+    edge: ee82253000e3e
+    evidence_level: media
+    id: org.lektropacks-limited
+    name: Lektropacks Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.cypress.com.tw
 tax_id: '23975263'
 incorporated: '1991-01-23'
 listed: '2009-12-22'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3541#e10:
+    locator: 3541西柏轉投資；CYP(U.K.) Limited列；持股比例欄為100%
+    published_date: null
+    publisher: 科技新報
+    quote_check: found
+    title: 西柏科技股份有限公司公司登記查詢
+    url: https://info.technews.tw/company/23975263-%E8%A5%BF%E6%9F%8F%E7%A7%91%E6%8A%80%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8
+  tw.3541#e11:
+    locator: 3541西柏轉投資；Lektropacks Limited列；持股比例欄為100%
+    published_date: null
+    publisher: 科技新報
+    quote_check: found
+    title: 西柏科技股份有限公司公司登記查詢
+    url: https://info.technews.tw/company/23975263-%E8%A5%BF%E6%9F%8F%E7%A7%91%E6%8A%80%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8
+  tw.3541#e12:
+    locator: 公司公告第3項；為歷史子公司架構佐證
+    published_date: '2014-07-10'
+    publisher: 鉅亨網
+    quote_check: found
+    title: 西柏科技現金收購CYP(UK)及Lektropacks公司各51%股權及CYP(EUROPE)100%股權
+    url: https://news.cnyes.com/news/id/1215744
+  tw.3541#e2:
+    locator: 公司簡介首段
+    published_date: null
+    publisher: 西柏科技股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.cypress.com.tw/tw/AboutCyp/CompanyIntroduction
+  tw.3541#e3:
+    locator: 營收分布－產品組合－114年度；欄位為項目、金額千元及占比
+    published_date: null
+    publisher: Treelazy
+    quote_check: found
+    title: 3541 西柏年報查詢
+    url: https://treelazy.com/stock/3541
+  tw.3541#e4:
+    locator: 營收分布－產品組合－114年度；其他項目
+    published_date: null
+    publisher: Treelazy
+    quote_check: found
+    title: 3541 西柏年報查詢
+    url: https://treelazy.com/stock/3541
+  tw.3541#e5:
+    locator: 產品介紹第二段
+    published_date: '2026-08-25'
+    publisher: 西柏科技股份有限公司
+    quote_check: found
+    title: 西柏科技推出4K無縫矩陣切換器打造直覺的多畫面操作流程
+    url: https://www.cypress.com.tw/tw/News/4K60_Seamless_Matrix_Switcher
+  tw.3541#e6:
+    locator: HyLinX技術介紹段
+    published_date: '2026-04-14'
+    publisher: 西柏科技股份有限公司
+    quote_check: found
+    title: 西柏科技專業影音解決方案打造高效數位法庭
+    url: https://www.cypress.com.tw/tw/News/ProAVSolutions_in_Courtrooms
+  tw.3541#e7:
+    locator: 35年影像處理技術，打造完整醫療影像整合能力
+    published_date: '2025-12-22'
+    publisher: 西柏科技股份有限公司
+    quote_check: found
+    title: 西柏科技深耕醫療影像　攜手生態系夥伴共創影像整合新紀元
+    url: https://www.cypress.com.tw/tw/News/20251222
+  tw.3541#e8:
+    locator: 致股東報告－114年度
+    published_date: null
+    publisher: Treelazy
+    quote_check: found
+    title: 3541 西柏年報查詢
+    url: https://treelazy.com/stock/3541
+  tw.3541#e9:
+    locator: 3541西柏轉投資；CYP (Europe) Limited列；持股比例欄為100%
+    published_date: null
+    publisher: 科技新報
+    quote_check: found
+    title: 西柏科技股份有限公司公司登記查詢
+    url: https://info.technews.tw/company/23975263-%E8%A5%BF%E6%9F%8F%E7%A7%91%E6%8A%80%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8

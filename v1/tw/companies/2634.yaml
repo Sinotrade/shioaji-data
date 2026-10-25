@@ -39,17 +39,17 @@ segments:
   name: 科技服務
   period: 2026H1
   revenue_share_pct: 2
-main_theme: theme.power_grid
+main_theme: theme.drone
 themes:
-- also: []
-  stage: engineering
-  theme: theme.power_grid
-  tier: downstream
 - also:
   - stage: modules
     tier: midstream
   stage: system
   theme: theme.drone
+  tier: downstream
+- also: []
+  stage: engineering
+  theme: theme.power_grid
   tier: downstream
 relations:
   subsidiaries:

@@ -8,12 +8,214 @@ industry:
   l0_code: '21'
   l0_name: 化學工業
   l0_name_en: Chemical
-primary_chain_position: unknown
+  l1: materials
+  l1_name: 原物料
+  l1_name_en: Materials
+  l2: mat.chemicals
+  l2_name: 化工
+  l2_name_en: Chemicals
+  l3: chem.specialty
+  l3_name: 特用化學品
+  l3_name_en: Specialty Chemicals
+chain: chain.petrochem
+chain_stage:
+  agreement: both
+  also: []
+  reason: 主要營收來自熱熔膠接著劑，並生產防水膜等材料配方及加工製品，屬石化下游。
+  stage: downstream
+  stage_name: 塑膠、纖維與加工
+  tier: downstream
+primary_chain_position: downstream
+summary_short: 研發、生產及銷售熱熔膠接著劑與建築防水材料。
+summary_long: 誠泰科技以熱熔膠接著劑與建築防水材料的研發、生產及銷售為主要業務。熱熔膠應用涵蓋食品包裝、書本裝訂、工業組裝與鞋材貼合；建築材料包括自黏式防水膜、防水底油及防水膠。2025年上半年合併熱熔膠收入為新台幣477,346仟元，防水膜收入為39,593仟元，熱熔膠為主要收入來源。集團透過薩摩亞誠盈持有中山誠泰，並有印度、印尼及越南黏著劑銷售子公司。
+segments:
+- evidence_ids:
+  - e03
+  id: seg_adhesive
+  name: 熱熔膠
+  period: 2025年上半年
+  revenue_share_pct: null
+- evidence_ids:
+  - e03
+  id: seg_waterproof
+  name: 防水膜
+  period: 2025年上半年
+  revenue_share_pct: null
+relations:
+  subsidiaries:
+  - as_of: '2025-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股99%的印度銷售子公司
+    details:
+    - 直接持股99%的印度銷售子公司
+    edge: e114fba422e7e
+    evidence_level: primary
+    id: org.cherng-tay-technology-india-private-limited
+    name: Cherng Tay Technology (India) Private Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股70%的印尼銷售子公司
+    details:
+    - 直接持股70%的印尼銷售子公司
+    edge: e5b303432db07
+    evidence_level: primary
+    id: org.pt-cherng-tay-indonesia
+    name: PT. Cherng Tay Indonesia
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過誠晉持有的越南銷售子公司
+    details:
+    - 透過誠晉持有的越南銷售子公司
+    edge: e723c4c8b8c58
+    evidence_level: primary
+    id: org.thanh-thai-viet-nam-industry-technology-co-ltd
+    name: Thanh Thai Viet Nam Industry Technology Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過薩摩亞誠盈持有的間接子公司
+    details:
+    - 透過薩摩亞誠盈持有的間接子公司
+    edge: e132f5ca22b0f
+    evidence_level: primary
+    id: org.中山誠泰化工科技有限公司
+    name: 中山誠泰化工科技有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的投資子公司
+    details:
+    - 直接持股100%的投資子公司
+    edge: ed602cec3ef32
+    evidence_level: primary
+    id: org.薩摩亞誠盈國際有限公司
+    name: 薩摩亞誠盈國際有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的投資子公司
+    details:
+    - 直接持股100%的投資子公司
+    edge: e2eec8a14c2a3
+    evidence_level: primary
+    id: org.誠晉國際有限公司
+    name: 誠晉國際有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.chetay.com.tw
 tax_id: '88744414'
 incorporated: '1983-06-13'
 listed: '2018-10-29'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4767#e01:
+    locator: 研發創新
+    published_date: null
+    publisher: 誠泰工業科技股份有限公司
+    quote_check: found
+    title: 熱熔膠－誠泰工業科技股份有限公司
+    url: https://www.chetay.com.tw/index.php?id=1&index=1&lang=cht&option=product&task=showlist
+  tw.4767#e02:
+    locator: 熱熔膠產品分類：食品包裝、書本裝訂、工業組裝、鞋材貼合
+    published_date: null
+    publisher: 誠泰工業科技股份有限公司
+    quote_check: found
+    title: 熱熔膠－誠泰工業科技股份有限公司
+    url: https://www.chetay.com.tw/index.php?id=1&index=1&lang=cht&option=product&task=showlist
+  tw.4767#e03:
+    locator: 第22頁，附註十九營業收入；單位新台幣仟元，第三個數字欄為2025年上半年
+    published_date: null
+    publisher: 誠泰工業科技股份有限公司
+    quote_check: found
+    title: 民國114及113年第2季合併財務報告
+    url: https://www.chetay.com.tw/index.php?i=1&id=1058&lang=cht&option=module&task=dfile
+  tw.4767#e04:
+    locator: 產品說明
+    published_date: null
+    publisher: 誠泰工業科技股份有限公司
+    quote_check: found
+    title: 土木工程－誠泰工業科技股份有限公司
+    url: https://www.chetay.com.tw/index.php?id=126&lang=cht&option=product&task=showlist
+  tw.4767#e05:
+    locator: 產品說明
+    published_date: null
+    publisher: 誠泰工業科技股份有限公司
+    quote_check: found
+    title: 瀝青防水底油－誠泰工業科技股份有限公司
+    url: https://www.chetay.com.tw/index.php?option=product&lang=cht&task=showlist&id=139
+  tw.4767#e06:
+    locator: 建築防水材料產品分類
+    published_date: null
+    publisher: 誠泰工業科技股份有限公司
+    quote_check: not_found
+    title: 建築防水材料－誠泰工業科技股份有限公司
+    url: https://www.chetay.com.tw/index.php?id=2&index=2&lang=cht&option=product&task=showlist
+  tw.4767#e07:
+    locator: 第16頁，附註十一子公司；投資公司為本公司
+    published_date: null
+    publisher: 誠泰工業科技股份有限公司
+    quote_check: found
+    title: 民國114及113年第2季合併財務報告
+    url: https://www.chetay.com.tw/index.php?i=1&id=1058&lang=cht&option=module&task=dfile
+  tw.4767#e08:
+    locator: 第16頁，附註十一子公司；投資公司為薩摩亞誠盈國際有限公司
+    published_date: null
+    publisher: 誠泰工業科技股份有限公司
+    quote_check: found
+    title: 民國114及113年第2季合併財務報告
+    url: https://www.chetay.com.tw/index.php?i=1&id=1058&lang=cht&option=module&task=dfile
+  tw.4767#e09:
+    locator: 第16頁，附註十一子公司；投資公司為本公司
+    published_date: null
+    publisher: 誠泰工業科技股份有限公司
+    quote_check: found
+    title: 民國114及113年第2季合併財務報告
+    url: https://www.chetay.com.tw/index.php?i=1&id=1058&lang=cht&option=module&task=dfile
+  tw.4767#e10:
+    locator: 第16頁，附註十一子公司；投資公司為本公司
+    published_date: null
+    publisher: 誠泰工業科技股份有限公司
+    quote_check: found
+    title: 民國114及113年第2季合併財務報告
+    url: https://www.chetay.com.tw/index.php?i=1&id=1058&lang=cht&option=module&task=dfile
+  tw.4767#e11:
+    locator: 第16頁，附註十一子公司；投資公司為本公司
+    published_date: null
+    publisher: 誠泰工業科技股份有限公司
+    quote_check: found
+    title: 民國114及113年第2季合併財務報告
+    url: https://www.chetay.com.tw/index.php?i=1&id=1058&lang=cht&option=module&task=dfile
+  tw.4767#e12:
+    locator: 第16頁，附註十一子公司；投資公司為誠晉國際有限公司
+    published_date: null
+    publisher: 誠泰工業科技股份有限公司
+    quote_check: found
+    title: 民國114及113年第2季合併財務報告
+    url: https://www.chetay.com.tw/index.php?i=1&id=1058&lang=cht&option=module&task=dfile

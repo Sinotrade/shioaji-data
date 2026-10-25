@@ -8,12 +8,82 @@ industry:
   l0_code: '24'
   l0_name: 半導體業
   l0_name_en: Semiconductor
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.semi
+  l2_name: 半導體
+  l2_name_en: Semiconductors
+  l3: semi.distribution
+  l3_name: IC 通路
+  l3_name_en: IC Distribution
+chain: chain.semiconductor
+chain_stage:
+  agreement: both
+  also: []
+  reason: 主營業務為DRAM記憶體成品買賣，未進行產製或加工，屬IC通路。
+  stage: distribution
+  stage_name: IC 通路與模組
+  tier: downstream
+primary_chain_position: downstream
+summary_short: 以DRAM記憶體成品買賣為主，另列電動自行車零組件商品。
+summary_long: 達能科技目前以DRAM記憶體成品買賣為主，並未進行相關產製或加工，年報列示的商品項目另有電動自行車零組件。2025年度營收為新台幣8,581.6萬元，商品及服務收入占營收100%，年報未進一步拆分上述個別產品的營收占比。依主營業務的交易性質，公司在半導體產業鏈的位置歸入IC通路與模組階段。公司另持有明育能源股份有限公司100%股權，該公司為達能的全資子公司。
+segments:
+- evidence_ids:
+  - e3
+  id: seg_goods_services
+  name: 商品及服務收入
+  period: '2025'
+  revenue_share_pct: 100
+relations:
+  subsidiaries:
+  - as_of: '2026-03-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的全資子公司
+    details:
+    - 直接持股100%的全資子公司
+    edge: e0a54f300d6c0
+    evidence_level: primary
+    id: org.明育能源股份有限公司
+    name: 明育能源股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.danentech.com
 tax_id: '28823511'
 incorporated: '2007-11-09'
 listed: '2010-07-20'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3686#e1:
+    locator: 印刷第61頁，主要產品之重要用途和產製過程
+    published_date: '2026-05-04'
+    publisher: 達能科技股份有限公司
+    quote_check: found
+    title: 達能科技股份有限公司民國114年度年報
+    url: https://www.danentech.com/Uploads/IR/Annual%20Report/%E9%81%94%E8%83%BD115%E5%B9%B4%E5%B9%B4%E5%A0%B1.pdf
+  tw.3686#e2:
+    locator: 印刷第54頁，公司目前之商品（服務）項目
+    published_date: '2026-05-04'
+    publisher: 達能科技股份有限公司
+    quote_check: found
+    title: 達能科技股份有限公司民國114年度年報
+    url: https://www.danentech.com/Uploads/IR/Annual%20Report/%E9%81%94%E8%83%BD115%E5%B9%B4%E5%B9%B4%E5%A0%B1.pdf
+  tw.3686#e3:
+    locator: 印刷第54頁，營業比重；金額單位為新台幣仟元，依序為113及114年度
+    published_date: '2026-05-04'
+    publisher: 達能科技股份有限公司
+    quote_check: found
+    title: 達能科技股份有限公司民國114年度年報
+    url: https://www.danentech.com/Uploads/IR/Annual%20Report/%E9%81%94%E8%83%BD115%E5%B9%B4%E5%B9%B4%E5%A0%B1.pdf
+  tw.3686#e4:
+    locator: 印刷第49頁，轉投資事業持股表；資料日期115年3月28日，本公司投資欄
+    published_date: '2026-05-04'
+    publisher: 達能科技股份有限公司
+    quote_check: found
+    title: 達能科技股份有限公司民國114年度年報
+    url: https://www.danentech.com/Uploads/IR/Annual%20Report/%E9%81%94%E8%83%BD115%E5%B9%B4%E5%B9%B4%E5%A0%B1.pdf

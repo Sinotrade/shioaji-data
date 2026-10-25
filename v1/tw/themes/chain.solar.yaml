@@ -33,6 +33,30 @@ members:
   source: classification
   stage: null
   tier: null
+- id: tw.3073
+  detail: 再生能源收入占97.82%，主要涵蓋太陽能電廠開發、建置、維運及售電，屬系統與電廠階段。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.3073#e2
+  - tw.3073#e3
+  - tw.3073#e5
+  confidence: ai_cross_checked
+  source: classification
+  stage: system
+  tier: downstream
+  stage_role: primary
+- id: tw.3523
+  detail: 太陽能部門為最大營收來源，業務涵蓋系統規劃建置、電站維運與售電。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.3523#e01
+  - tw.3523#e02
+  - tw.3523#e03
+  confidence: ai_cross_checked
+  source: classification
+  stage: system
+  tier: downstream
+  stage_role: primary
 - id: tw.3576
   detail: 主要收入來自太陽能電池與模組，另提供案場開發、系統工程及維運。
   as_of: '2026-10-15'
@@ -66,6 +90,66 @@ members:
   source: classification
   stage: null
   tier: null
+- id: tw.3713
+  detail: 售電占營收52.31%為最大來源，並提供系統工程與維運；另有太陽能模組銷售。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.3713#e1
+  - tw.3713#e4
+  - tw.3713#e5
+  confidence: ai_cross_checked
+  source: classification
+  stage: system
+  tier: downstream
+  stage_role: primary
+- id: tw.3713
+  detail: 售電占營收52.31%為最大來源，並提供系統工程與維運；另有太陽能模組銷售。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.3713#e1
+  - tw.3713#e4
+  - tw.3713#e5
+  confidence: ai_cross_checked
+  source: classification
+  stage: cell
+  tier: midstream
+  stage_role: also
+- id: tw.4529
+  detail: 太陽能售電占營收約47%，並維護屋頂型發電設施，屬系統與電廠階段。
+  as_of: '2026-10-25'
+  evidence:
+  - tw.4529#e1
+  - tw.4529#e2
+  - tw.4529#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: system
+  tier: downstream
+  stage_role: primary
+- id: tw.4582
+  detail: 太陽能電廠EPC系統工程占營收95.75%，提供規劃、設計、施工及維運服務。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.4582#e2
+  - tw.4582#e3
+  - tw.4582#e11
+  confidence: ai_cross_checked
+  source: classification
+  stage: system
+  tier: downstream
+  stage_role: primary
+- id: tw.4804
+  detail: 公告主營業務轉向再生能源，台灣子公司廣益已持有約2MW太陽能電站，屬電廠營運。
+  as_of: '2026-10-25'
+  evidence:
+  - tw.4804#e1
+  - tw.4804#e3
+  - tw.4804#e4
+  confidence: ai_cross_checked
+  source: classification
+  stage: system
+  tier: downstream
+  stage_role: primary
 - id: tw.5432
   detail: 能源產品占營收79%，以逆變器、功率優化器及儲能系統為主，屬下游太陽能系統應用。
   as_of: '2026-10-23'
@@ -161,6 +245,17 @@ members:
   stage: tools
   tier: upstream
   stage_role: primary
+- id: tw.6692
+  detail: 以太陽能光電系統EPC統包為核心，工程合約為最大收入來源，並提供電廠維運服務。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.6692#e1
+  - tw.6692#e5
+  confidence: ai_cross_checked
+  source: classification
+  stage: system
+  tier: downstream
+  stage_role: primary
 - id: tw.6873
   detail: 2026年上半年售電為最大收入項目，並提供光電案場設計、施工及維運。
   as_of: '2026-10-18'
@@ -172,4 +267,16 @@ members:
   stage: system
   tier: downstream
   stage_role: primary
-as_of: '2026-10-23'
+- id: tw.8087
+  detail: 以再生能源工程合約為主要收入，提供太陽光電案場開發、建置及維運管理。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.8087#e2
+  - tw.8087#e3
+  - tw.8087#e6
+  confidence: ai_cross_checked
+  source: classification
+  stage: system
+  tier: downstream
+  stage_role: primary
+as_of: '2026-10-25'

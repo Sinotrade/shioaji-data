@@ -8,12 +8,124 @@ industry:
   l0_code: '04'
   l0_name: 紡織纖維
   l0_name_en: Textiles
-primary_chain_position: unknown
+  l1: materials
+  l1_name: 原物料
+  l1_name_en: Materials
+  l2: mat.other
+  l2_name: 其他原物料
+  l2_name_en: Other Materials
+  l3: matl.textile_fiber
+  l3_name: 紡織纖維與機能布料
+  l3_name_en: Textiles, Fibers & Functional Fabrics
+chain: chain.textile
+chain_stage:
+  agreement: both
+  also: []
+  reason: 已確認主業為機能性加工紗、染色紗及車縫線製造銷售，屬纖維與紗。
+  stage: fiber
+  stage_name: 纖維與紗
+  tier: upstream
+primary_chain_position: upstream
+summary_short: 製造與銷售機能性加工紗、前染色紗及車縫線。
+summary_long: 東隆興以機能性人造纖維加工紗、染色紗及車縫線的製造與銷售為主要業務。產品包括延伸假撚紗DTY、空氣複合紗ATY、特殊複合紗、前染色紗與高階車縫線。DTY具有彈性與蓬鬆手感，ATY則以空氣加工形成仿棉觸感，並保有人造纖維的機能。依2024年第一季合併財報，公司子公司包括越南SARAH紡織責任有限公司及東隆興業（越南）公司，兩者主要業務均為織造用紗製造；琦美環球股份有限公司則從事布疋紡織線類批發零售。
+relations:
+  subsidiaries:
+  - as_of: '2024-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 越南織造用紗製造子公司
+    details:
+    - 越南織造用紗製造子公司
+    edge: ec7b381518cd7
+    evidence_level: primary
+    id: org.東隆興業-越南-公司
+    name: 東隆興業(越南)公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 布疋紡織線類批發零售子公司
+    details:
+    - 布疋紡織線類批發零售子公司
+    edge: eac7fdd33d8c5
+    evidence_level: primary
+    id: org.琦美環球股份有限公司
+    name: 琦美環球股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 越南織造用紗製造子公司
+    details:
+    - 越南織造用紗製造子公司
+    edge: e8c9ced307e72
+    evidence_level: primary
+    id: org.越南sarah紡織責任有限公司
+    name: 越南SARAH紡織責任有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.tloong.com.tw
 tax_id: '18770509'
 incorporated: '1961-08-14'
 listed: '1996-05-09'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4401#e1:
+    locator: 關於我們，首段
+    published_date: null
+    publisher: 東隆興業股份有限公司
+    quote_check: found
+    title: 關於我們｜東隆興業股份有限公司
+    url: https://www.toungloong.com/tw/home/
+  tw.4401#e2:
+    locator: 產品介紹，第一段
+    published_date: null
+    publisher: 東隆興業股份有限公司
+    quote_check: found
+    title: 延伸假撚紗DTY｜東隆興業股份有限公司
+    url: https://www.toungloong.com/tw/products/%E5%BB%B6%E4%BC%B8%E5%81%87%E6%92%9A%E7%B4%97/
+  tw.4401#e3:
+    locator: 產品介紹，第一段
+    published_date: null
+    publisher: 東隆興業股份有限公司
+    quote_check: found
+    title: 空氣複合紗ATY｜東隆興業股份有限公司
+    url: https://www.toungloong.com/tw/products/tlaty/
+  tw.4401#e4:
+    locator: 第6頁，紗線生產流程
+    published_date: '2025-10-30'
+    publisher: 東隆興業股份有限公司
+    quote_check: not_found
+    title: 東隆興業股份有限公司2025年10月30日法人說明會
+    url: https://www.toungloong.com/tw/wp-content/uploads/2025/10/20251030%E6%B3%95%E8%AA%AA%E6%9C%83-%E4%B8%AD%E6%96%87.pdf
+  tw.4401#e5:
+    locator: 第13頁，附註四（三）合併基礎，子公司明細
+    published_date: '2024-05-07'
+    publisher: 東隆興業股份有限公司
+    quote_check: found
+    title: 東隆興業股份有限公司及子公司民國113年及112年第1季合併財務報告
+    url: https://www.toungloong.com/tw/wp-content/uploads/2024/05/113Q1%E4%B8%8A%E5%82%B3OTC.pdf
+  tw.4401#e6:
+    locator: 第13頁，附註四（三）合併基礎，子公司明細
+    published_date: '2024-05-07'
+    publisher: 東隆興業股份有限公司
+    quote_check: found
+    title: 東隆興業股份有限公司及子公司民國113年及112年第1季合併財務報告
+    url: https://www.toungloong.com/tw/wp-content/uploads/2024/05/113Q1%E4%B8%8A%E5%82%B3OTC.pdf
+  tw.4401#e7:
+    locator: 第13頁，附註四（三）合併基礎，子公司明細
+    published_date: '2024-05-07'
+    publisher: 東隆興業股份有限公司
+    quote_check: found
+    title: 東隆興業股份有限公司及子公司民國113年及112年第1季合併財務報告
+    url: https://www.toungloong.com/tw/wp-content/uploads/2024/05/113Q1%E4%B8%8A%E5%82%B3OTC.pdf

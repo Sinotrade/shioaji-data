@@ -8,12 +8,219 @@ industry:
   l0_code: '22'
   l0_name: 生技醫療業
   l0_name_en: Biotechnology and Medical Care
-primary_chain_position: unknown
+  l1: health
+  l1_name: 醫療保健
+  l1_name_en: Healthcare
+  l2: health.devices
+  l2_name: 醫療器材與服務
+  l2_name_en: Medical Devices & Services
+  l3: med.services
+  l3_name: 醫療服務與通路
+  l3_name_en: Healthcare Services & Distribution
+chain: chain.biotech
+chain_stage:
+  agreement: both
+  also:
+  - stage: manufacturing
+    stage_name: 製造與代工
+    tier: midstream
+  - stage: rnd
+    stage_name: 研發與原料
+    tier: upstream
+  reason: 基因檢測為最大收入來源，兼營儀器試劑通路、新藥研發及核酸胜肽委託開發製造。
+  stage: channel
+  stage_name: 通路與醫療服務
+  tier: downstream
+primary_chain_position: downstream
+summary_short: 提供基因定序、臨床檢測及合成服務，並銷售生技儀器與試劑耗材。
+summary_long: 基龍米克斯提供基因定序、臨床基因檢測及生技儀器與試劑耗材銷售服務。定序業務涵蓋一代、二代與三代平台，提供實驗至生物資訊分析的服務；合成業務包含引子、RNA、全基因與多肽，並延伸至核酸及胜肽的委託開發製造。公司另提供蛋白質體檢測，以及孕前、產前與癌症基因檢測。2025年度合併財報中，基因檢測部門外部收入為5億1,976.9萬元，高於儀器銷售部門的1億8,860.6萬元，新藥研發部門尚無外部收入。
+segments:
+- evidence_ids:
+  - e09
+  id: s01
+  name: 基因檢測部門
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e09
+  id: s02
+  name: 儀器銷售部門
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e09
+  id: s03
+  name: 新藥研發部門
+  period: '2025'
+  revenue_share_pct: null
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過Genome Holding Ltd.持有的間接子公司
+    details:
+    - 透過Genome Holding Ltd.持有的間接子公司
+    edge: e6f3dea6f9fd0
+    evidence_level: primary
+    id: org.genedragon-holding
+    name: Genedragon Holding Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: e8a169fdc29e7
+    evidence_level: primary
+    id: org.genome-holding
+    name: Genome Holding Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: e2eb691295bf2
+    evidence_level: primary
+    id: org.kang-si-da-precision
+    name: 康斯達精密股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: e608d3d0d4917
+    evidence_level: primary
+    id: org.leicester-biomedical
+    name: 萊斯特生醫股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過Genedragon Holding Ltd.持有的間接子公司
+    details:
+    - 透過Genedragon Holding Ltd.持有的間接子公司
+    edge: e3ae4135a7200
+    evidence_level: primary
+    id: org.shanghai-genedragon-biotechnology
+    name: 上海基龍生物科技有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.genomics.com.tw
 tax_id: '12953452'
 incorporated: '2001-10-16'
 listed: '2026-05-11'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4195#e02:
+    locator: Our Service／定序服務
+    published_date: null
+    publisher: 基龍米克斯生物科技股份有限公司
+    quote_check: found
+    title: 基龍米克斯官網－定序服務
+    url: https://www.genomics.com.tw/tw
+  tw.4195#e03:
+    locator: 合成服務介紹
+    published_date: null
+    publisher: 基龍米克斯生物科技股份有限公司
+    quote_check: found
+    title: 產品服務－合成服務
+    url: https://www.genomics.com.tw/tw/product/product1?cate=cate1
+  tw.4195#e04:
+    locator: 委託開發與製造服務介紹
+    published_date: null
+    publisher: 基龍米克斯生物科技股份有限公司
+    quote_check: found
+    title: 產品服務－委託開發與製造服務
+    url: https://www.genomics.com.tw/tw/product/product8?cate=cate3
+  tw.4195#e05:
+    locator: 服務項目
+    published_date: null
+    publisher: 基龍米克斯生物科技股份有限公司
+    quote_check: found
+    title: 產品服務－蛋白質體服務
+    url: https://www.genomics.com.tw/tw/product/product4?cate=cate1
+  tw.4195#e06:
+    locator: 生育健康介紹
+    published_date: null
+    publisher: 基龍米克斯生物科技股份有限公司
+    quote_check: found
+    title: 產品服務－生育健康
+    url: https://www.genomics.com.tw/tw/product/product6?cate=cate2
+  tw.4195#e07:
+    locator: 癌症檢測介紹
+    published_date: null
+    publisher: 基龍米克斯生物科技股份有限公司
+    quote_check: found
+    title: 產品服務－癌症檢測
+    url: https://www.genomics.com.tw/tw/product/%E7%99%8C%E7%97%87%E6%AA%A2%E6%B8%AC?cate=cate2
+  tw.4195#e08:
+    locator: 代理與經銷介紹
+    published_date: null
+    publisher: 基龍米克斯生物科技股份有限公司
+    quote_check: found
+    title: 產品服務－代理與經銷
+    url: https://www.genomics.com.tw/tw/product/product5?cate=cate1
+  tw.4195#e09:
+    locator: 第63頁，附註三九部門資訊；114年度欄位依序為基因檢測、儀器銷售、新藥研發及總計，單位新台幣仟元
+    published_date: null
+    publisher: 基龍米克斯生物科技股份有限公司
+    quote_check: found
+    title: 民國114及113年度合併財務報告暨會計師查核報告
+    url: https://www.genomics.com.tw/upload/2026_04_07/2_20260407170021zitgjmCxF3.pdf
+  tw.4195#e10:
+    locator: 第34頁，附註十三（一）列入合併財務報告之子公司；投資公司為基龍米克斯
+    published_date: null
+    publisher: 基龍米克斯生物科技股份有限公司
+    quote_check: found
+    title: 民國114及113年度合併財務報告－子公司
+    url: https://www.genomics.com.tw/upload/2026_04_07/2_20260407170021zitgjmCxF3.pdf
+  tw.4195#e11:
+    locator: 第34頁，附註十三（一）子公司表；投資公司為基龍米克斯，註2說明實質控制依據
+    published_date: null
+    publisher: 基龍米克斯生物科技股份有限公司
+    quote_check: found
+    title: 民國114及113年度合併財務報告－萊斯特子公司資料
+    url: https://www.genomics.com.tw/upload/2026_04_07/2_20260407170021zitgjmCxF3.pdf
+  tw.4195#e12:
+    locator: 第34頁，附註十三（一）子公司表；投資公司為基龍米克斯
+    published_date: null
+    publisher: 基龍米克斯生物科技股份有限公司
+    quote_check: found
+    title: 民國114及113年度合併財務報告－康斯達子公司資料
+    url: https://www.genomics.com.tw/upload/2026_04_07/2_20260407170021zitgjmCxF3.pdf
+  tw.4195#e13:
+    locator: 第34頁，附註十三（一）子公司表；投資公司為Genome Holding Ltd.
+    published_date: null
+    publisher: 基龍米克斯生物科技股份有限公司
+    quote_check: found
+    title: 民國114及113年度合併財務報告－Genedragon子公司資料
+    url: https://www.genomics.com.tw/upload/2026_04_07/2_20260407170021zitgjmCxF3.pdf
+  tw.4195#e14:
+    locator: 第34頁，附註十三（一）子公司表；投資公司為Genedragon Holding Ltd.
+    published_date: null
+    publisher: 基龍米克斯生物科技股份有限公司
+    quote_check: found
+    title: 民國114及113年度合併財務報告－上海基龍子公司資料
+    url: https://www.genomics.com.tw/upload/2026_04_07/2_20260407170021zitgjmCxF3.pdf

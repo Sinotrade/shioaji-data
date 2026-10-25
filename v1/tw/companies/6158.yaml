@@ -8,12 +8,175 @@ industry:
   l0_code: '28'
   l0_name: 電子零組件業
   l0_name_en: Electronic Parts and Components
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.connector
+  l3_name: 連接器與線材
+  l3_name_en: Connectors & Cables
+primary_chain_position: midstream
+summary_short: 製造及銷售電子連接器與軟排線，應用於顯示器、筆電及車用電子。
+summary_long: 禾昌以電子連接器製造與銷售為主要業務，2024年連接器產品占合併營收100%。主要產品包括軟板暨軟排線連接器、液晶面板及顯示器連接器、具阻抗控制的軟排線，以及浮動式板對板連接器，用於訊號與電力連接。EasyLock系列應用於車載資訊娛樂、行車記錄器與ADAS，浮動式板對板產品亦適用電動車車載充電器。公司另揭露已研發客製化Mini／Micro LED線材與連接器；集團透過蘇州及泰國子公司從事連接器生產與銷售。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_connector
+  name: 連接器產品
+  period: '2024'
+  revenue_share_pct: 100
+main_theme: theme.ev
+themes:
+- also: []
+  stage: parts
+  theme: theme.ev
+  tier: midstream
+- also: []
+  stage: display
+  theme: theme.mini_led
+  tier: downstream
+relations:
+  subsidiaries:
+  - as_of: '2025-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過P-TWO TECHNOLOGY間接持有100%的連接器子公司
+    details:
+    - 透過P-TWO TECHNOLOGY間接持有100%的連接器子公司
+    edge: e8d0a26284ed3
+    evidence_level: primary
+    id: org.p-two-electric-technology-suzhou
+    name: 蘇州達昌電子科技
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%的投資及貿易子公司
+    details:
+    - 直接持有100%的投資及貿易子公司
+    edge: e07106c64896f
+    evidence_level: primary
+    id: org.p-two-industries-bvi
+    name: P-TWO INDUSTRIES
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%的泰國連接器子公司
+    details:
+    - 直接持有100%的泰國連接器子公司
+    edge: e43e5e1b8c1f5
+    evidence_level: primary
+    id: org.p-two-industries-thailand
+    name: P-TWO INDUSTRIES (THAILAND)
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%的投資及貿易子公司
+    details:
+    - 直接持有100%的投資及貿易子公司
+    edge: ee72d7ee0022e
+    evidence_level: primary
+    id: org.p-two-technology-bvi
+    name: P-TWO TECHNOLOGY
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.p-two.com
 tax_id: '22006020'
 incorporated: '1986-01-11'
 listed: '2002-02-19'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6158#e1:
+    locator: About P-TWO，公司簡介首段
+    published_date: null
+    publisher: 禾昌興業股份有限公司
+    quote_check: found
+    title: About P-TWO
+    url: https://www.p-two.com/index.php?do=about&id=5
+  tw.6158#e10:
+    locator: 印刷頁15，附註十、子公司，2025年6月30日持股表
+    published_date: null
+    publisher: 禾昌興業股份有限公司
+    quote_check: found
+    title: 禾昌興業股份有限公司及子公司民國114及113年第2季合併財務報告
+    url: https://www.p-two.com/upload/global/1759894108.pdf
+  tw.6158#e11:
+    locator: 印刷頁15，附註十、子公司，2025年6月30日持股表
+    published_date: null
+    publisher: 禾昌興業股份有限公司
+    quote_check: found
+    title: 禾昌興業股份有限公司及子公司民國114及113年第2季合併財務報告
+    url: https://www.p-two.com/upload/global/1759894108.pdf
+  tw.6158#e2:
+    locator: 印刷頁54，肆、營運概況，一、業務內容，營業比重
+    published_date: '2025-04-30'
+    publisher: 禾昌興業股份有限公司
+    quote_check: found
+    title: 禾昌興業股份有限公司一一三年度年報
+    url: https://www.p-two.com/upload/global/1752644816.pdf
+  tw.6158#e3:
+    locator: Market Application，汽車應用
+    published_date: null
+    publisher: 禾昌興業股份有限公司
+    quote_check: found
+    title: EasyLock FFC/FPC Connector
+    url: https://www.p-two.com/index.php?do=prod&id=752
+  tw.6158#e4:
+    locator: Market Application
+    published_date: null
+    publisher: 禾昌興業股份有限公司
+    quote_check: found
+    title: FFC with Impedance Control
+    url: https://www.p-two.com/index.php?do=prod&id=756
+  tw.6158#e5:
+    locator: 產品介紹首段，應用範例
+    published_date: null
+    publisher: 禾昌興業股份有限公司
+    quote_check: found
+    title: 1.0mm pitch Floating Type Board-to-Board
+    url: https://www.p-two.com/index.php?do=prod&id=759
+  tw.6158#e6:
+    locator: 產品介紹首段
+    published_date: null
+    publisher: 禾昌興業股份有限公司
+    quote_check: found
+    title: LVDS Socket Connector
+    url: https://www.p-two.com/index.php?do=prod&id=766
+  tw.6158#e7:
+    locator: 印刷頁56，技術及研發概況，研發成功之技術或產品
+    published_date: '2025-04-30'
+    publisher: 禾昌興業股份有限公司
+    quote_check: found
+    title: 禾昌興業股份有限公司一一三年度年報
+    url: https://www.p-two.com/upload/global/1752644816.pdf
+  tw.6158#e8:
+    locator: 印刷頁15，附註十、子公司，2025年6月30日持股表
+    published_date: null
+    publisher: 禾昌興業股份有限公司
+    quote_check: found
+    title: 禾昌興業股份有限公司及子公司民國114及113年第2季合併財務報告
+    url: https://www.p-two.com/upload/global/1759894108.pdf
+  tw.6158#e9:
+    locator: 印刷頁15，附註十、子公司，2025年6月30日持股表
+    published_date: null
+    publisher: 禾昌興業股份有限公司
+    quote_check: found
+    title: 禾昌興業股份有限公司及子公司民國114及113年第2季合併財務報告
+    url: https://www.p-two.com/upload/global/1759894108.pdf

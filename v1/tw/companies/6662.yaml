@@ -8,12 +8,105 @@ industry:
   l0_code: '22'
   l0_name: 生技醫療業
   l0_name_en: Biotechnology and Medical Care
-primary_chain_position: unknown
+  l1: health
+  l1_name: 醫療保健
+  l1_name_en: Healthcare
+  l2: health.devices
+  l2_name: 醫療器材與服務
+  l2_name_en: Medical Devices & Services
+  l3: med.consumables
+  l3_name: 醫療耗材
+  l3_name_en: Medical Consumables
+chain: chain.biotech
+chain_stage:
+  agreement: both
+  also: []
+  reason: 實驗鼠及研究服務占營收55.34%，屬研發上游；另銷售研究設備及試劑，兼具通路業務。
+  stage: rnd
+  stage_name: 研發與原料
+  tier: upstream
+primary_chain_position: upstream
+summary_short: 生產SPF實驗鼠，提供動物試驗、代養及病理毒理服務，並銷售研究設備。
+summary_long: 樂斯科以生產無特定病原（SPF）實驗動物及提供相關服務為主要業務，另銷售實驗動物飼育設備。2025年營收組成為自產SPF實驗鼠及實驗動物相關服務55.34%、儀器設備及試劑30.64%、實驗室5.36%、其他8.66%。公司亦提供實驗動物代養、動物測試及病理毒理檢測服務；測試項目包括免疫人源化小鼠模式與藥物動力學暨毒性評估，病理毒理服務則針對實驗檢體與組織進行檢測及判讀。
+segments:
+- evidence_ids:
+  - e2
+  id: s1
+  name: 自產SPF實驗鼠及實驗動物相關服務
+  period: '2025'
+  revenue_share_pct: 55.34
+- evidence_ids:
+  - e2
+  id: s2
+  name: 儀器設備及試劑
+  period: '2025'
+  revenue_share_pct: 30.64
+- evidence_ids:
+  - e2
+  id: s3
+  name: 實驗室
+  period: '2025'
+  revenue_share_pct: 5.36
+- evidence_ids:
+  - e2
+  id: s4
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 8.66
 website: www.biolasco.com.tw
 tax_id: '12862410'
 incorporated: '2001-05-10'
 listed: '2019-03-26'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-25'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6662#e1:
+    locator: 公司介紹
+    published_date: null
+    publisher: 樂斯科生物科技股份有限公司
+    quote_check: found
+    title: 首頁－樂斯科生物科技股份有限公司
+    url: https://www.biolasco.com.tw/
+  tw.6662#e2:
+    locator: 營收分布－產品組合－114年度；金額單位為千元
+    published_date: null
+    publisher: Treelazy
+    quote_check: found
+    title: 樂斯科（6662）年報查詢
+    url: https://treelazy.com/stock/6662
+  tw.6662#e3:
+    locator: 產品與服務／REUSABLE IVC HOUSING NexGen
+    published_date: null
+    publisher: 樂斯科生物科技股份有限公司
+    quote_check: found
+    title: 實驗動物飼育設備－樂斯科生物科技股份有限公司
+    url: https://www.biolasco.com.tw/services/實驗動物飼育設備/
+  tw.6662#e4:
+    locator: 實驗動物測試服務／服務項目介紹
+    published_date: null
+    publisher: 樂斯科生物科技股份有限公司
+    quote_check: found
+    title: 實驗動物測試服務－樂斯科生物科技股份有限公司
+    url: https://www.biolasco.com.tw/product/實驗動物測試服務/
+  tw.6662#e5:
+    locator: 實驗動物測試服務／服務項目介紹
+    published_date: null
+    publisher: 樂斯科生物科技股份有限公司
+    quote_check: found
+    title: 實驗動物測試服務－樂斯科生物科技股份有限公司
+    url: https://www.biolasco.com.tw/product/實驗動物測試服務/
+  tw.6662#e6:
+    locator: 病理毒理判讀服務／介紹及組織病理服務項目
+    published_date: null
+    publisher: 樂斯科生物科技股份有限公司
+    quote_check: found
+    title: 病理毒理判讀服務－樂斯科生物科技股份有限公司
+    url: https://www.biolasco.com.tw/product/病理毒理判讀服務/
+  tw.6662#e7:
+    locator: 樂斯科動物測試實驗室
+    published_date: null
+    publisher: 樂斯科生物科技股份有限公司
+    quote_check: found
+    title: 樂斯科公司介紹－樂斯科生物科技股份有限公司
+    url: https://www.biolasco.com.tw/關於樂斯科/樂斯科公司介紹/

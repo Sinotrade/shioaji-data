@@ -8,19 +8,160 @@ industry:
   l0_code: '27'
   l0_name: 通信網路業
   l0_name_en: Communications and Internet
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.software
+  l2_name: 軟體與資訊服務
+  l2_name_en: Software & IT Services
+  l3: sw.security
+  l3_name: 資訊安全
+  l3_name_en: Cybersecurity
+chain: chain.networking
+chain_stage:
+  agreement: both
+  also: []
+  reason: 最大產品營收為SSL VPN，主要提供網路安全與應用交付設備及系統。
+  stage: equipment
+  stage_name: 網通設備與系統
+  tier: downstream
+primary_chain_position: midstream
+summary_short: 透過集團子公司銷售網路安全與應用交付產品，並提供相關服務。
+summary_long: 安瑞-KY透過集團子公司研發、製造及銷售網路安全與應用交付設備，產品涵蓋SSL VPN、ADC、網路功能平台及網頁應用防火牆。2025年以SSL VPN為最大產品項目，占營收36.71%；服務收入占28.31%，N-HCI／NFP占17.99%，ADC占11.70%。應用交付及安全產品同時提供專用硬體與雲端、虛擬環境版本。集團旗下包括美國、開曼、日本、印度及台灣子公司，最終實質控制公司為光聚晶電聯合，原名大宇資訊。
+segments:
+- evidence_ids:
+  - e1
+  id: ssl_vpn
+  name: SSL VPN
+  period: '2025'
+  revenue_share_pct: 36.71
+- evidence_ids:
+  - e1
+  id: services
+  name: 服務收入
+  period: '2025'
+  revenue_share_pct: 28.31
+- evidence_ids:
+  - e1
+  id: nfp
+  name: 網路超融合架構／網路功能平台（N-HCI／NFP）
+  period: '2025'
+  revenue_share_pct: 17.99
+- evidence_ids:
+  - e1
+  id: adc
+  name: 應用交付控制器（ADC）
+  period: '2025'
+  revenue_share_pct: 11.7
+- evidence_ids:
+  - e2
+  id: asf
+  name: ASF產品
+  period: '2025'
+  revenue_share_pct: 2.75
+- evidence_ids:
+  - e2
+  id: ise
+  name: ISE產品
+  period: '2025'
+  revenue_share_pct: 1.79
+- evidence_ids:
+  - e2
+  - e5
+  id: ntb
+  name: 網路封包中介（NTB）
+  period: '2025'
+  revenue_share_pct: 0.75
+main_theme: theme.data_center
+themes:
+- also: []
+  stage: it
+  theme: theme.data_center
+  tier: midstream
 relations:
   parents:
   - as_of: '2026-09-15'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 集團子公司
+    detail: 最終實質控制公司，原名大宇資訊股份有限公司
     details:
+    - 最終實質控制公司，原名大宇資訊股份有限公司
     - 集團子公司
     edge: eb328b11ec29a
     evidence_level: primary
     id: tw.6111
     name: 光聚晶電
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 2
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 開曼子公司（Array Cayman）
+    details:
+    - 開曼子公司（Array Cayman）
+    edge: e6c6a9ad11d7e
+    evidence_level: primary
+    id: org.array-networks-cayman
+    name: Array Networks, Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 印度子公司（Array India）
+    details:
+    - 印度子公司（Array India）
+    edge: ed281d3f58750
+    evidence_level: primary
+    id: org.array-networks-india
+    name: Array Networks India Private Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 日本子公司（Array Japan）
+    details:
+    - 日本子公司（Array Japan）
+    edge: e482616b6c60b
+    evidence_level: primary
+    id: org.array-networks-japan
+    name: Array Networks Japan Kabishiki Kaisha
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 美國子公司與營運總部（Array US）
+    details:
+    - 美國子公司與營運總部（Array US）
+    edge: e69278eefd22e
+    evidence_level: primary
+    id: org.array-networks-us
+    name: Array Networks Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 台灣子公司（Array Taiwan）
+    details:
+    - 台灣子公司（Array Taiwan）
+    edge: ee23853f86def
+    evidence_level: primary
+    id: org.array-taiwan
+    name: 安曜科技股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -30,7 +171,91 @@ tax_id: '28984305'
 incorporated: '2008-12-19'
 listed: '2010-06-24'
 foreign_registration: KY 開曼群島
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-25'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3664#e1:
+    locator: 第52頁，主要產品之營業比重；欄序為2024年金額、比率及2025年金額、比率
+    published_date: null
+    publisher: 安瑞科技股份有限公司
+    quote_check: found
+    title: 安瑞科技股份有限公司114年度年報
+    url: https://www.arraynetworks.com.tw/pdf/114%E5%B9%B4%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1-%E4%B8%AD%E6%96%87%E7%89%88.pdf
+  tw.3664#e10:
+    locator: 第1頁，台灣子公司
+    published_date: null
+    publisher: 安瑞科技股份有限公司
+    quote_check: found
+    title: 安瑞科技股份有限公司114年度年報
+    url: https://www.arraynetworks.com.tw/pdf/114%E5%B9%B4%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1-%E4%B8%AD%E6%96%87%E7%89%88.pdf
+  tw.3664#e11:
+    locator: 第63頁，競爭利基
+    published_date: null
+    publisher: 安瑞科技股份有限公司
+    quote_check: found
+    title: 安瑞科技股份有限公司114年度年報
+    url: https://www.arraynetworks.com.tw/pdf/114%E5%B9%B4%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1-%E4%B8%AD%E6%96%87%E7%89%88.pdf
+  tw.3664#e12:
+    locator: 第3頁，Summary及Production Data Center部署圖；版本標記JAN-2017-REV-A
+    published_date: null
+    publisher: Array Networks
+    quote_check: found
+    title: APV Series Case Study — Los Angeles Community College District
+    url: https://arraynetworks.com/wp-content/uploads/2021/06/CS-APV-LACCD.pdf
+  tw.3664#e2:
+    locator: 第52頁，主要產品之營業比重；欄序為2024年金額、比率及2025年金額、比率
+    published_date: null
+    publisher: 安瑞科技股份有限公司
+    quote_check: found
+    title: 安瑞科技股份有限公司114年度年報
+    url: https://www.arraynetworks.com.tw/pdf/114%E5%B9%B4%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1-%E4%B8%AD%E6%96%87%E7%89%88.pdf
+  tw.3664#e3:
+    locator: 第52頁，所營業務之主要內容
+    published_date: null
+    publisher: 安瑞科技股份有限公司
+    quote_check: found
+    title: 安瑞科技股份有限公司114年度年報
+    url: https://www.arraynetworks.com.tw/pdf/114%E5%B9%B4%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1-%E4%B8%AD%E6%96%87%E7%89%88.pdf
+  tw.3664#e4:
+    locator: 第52頁，公司目前之商品（服務）項目
+    published_date: null
+    publisher: 安瑞科技股份有限公司
+    quote_check: found
+    title: 安瑞科技股份有限公司114年度年報
+    url: https://www.arraynetworks.com.tw/pdf/114%E5%B9%B4%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1-%E4%B8%AD%E6%96%87%E7%89%88.pdf
+  tw.3664#e5:
+    locator: 第53頁，計畫開發之新商品（服務）；營收表另揭露NTB已有收入
+    published_date: null
+    publisher: 安瑞科技股份有限公司
+    quote_check: found
+    title: 安瑞科技股份有限公司114年度年報
+    url: https://www.arraynetworks.com.tw/pdf/114%E5%B9%B4%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1-%E4%B8%AD%E6%96%87%E7%89%88.pdf
+  tw.3664#e6:
+    locator: 第92頁，2025年度關係報告書，從屬公司與控制公司之關係概況
+    published_date: null
+    publisher: 安瑞科技股份有限公司
+    quote_check: found
+    title: 安瑞科技股份有限公司114年度年報
+    url: https://www.arraynetworks.com.tw/pdf/114%E5%B9%B4%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1-%E4%B8%AD%E6%96%87%E7%89%88.pdf
+  tw.3664#e7:
+    locator: 第1頁，美國子公司及開曼子公司；第9、84頁集團架構圖
+    published_date: null
+    publisher: 安瑞科技股份有限公司
+    quote_check: found
+    title: 安瑞科技股份有限公司114年度年報
+    url: https://www.arraynetworks.com.tw/pdf/114%E5%B9%B4%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1-%E4%B8%AD%E6%96%87%E7%89%88.pdf
+  tw.3664#e8:
+    locator: 第1頁，日本子公司；第9、84頁集團架構圖
+    published_date: null
+    publisher: 安瑞科技股份有限公司
+    quote_check: found
+    title: 安瑞科技股份有限公司114年度年報
+    url: https://www.arraynetworks.com.tw/pdf/114%E5%B9%B4%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1-%E4%B8%AD%E6%96%87%E7%89%88.pdf
+  tw.3664#e9:
+    locator: 第1頁，印度子公司；第9、84頁集團架構圖
+    published_date: null
+    publisher: 安瑞科技股份有限公司
+    quote_check: found
+    title: 安瑞科技股份有限公司114年度年報
+    url: https://www.arraynetworks.com.tw/pdf/114%E5%B9%B4%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1-%E4%B8%AD%E6%96%87%E7%89%88.pdf

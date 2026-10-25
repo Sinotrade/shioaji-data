@@ -8,19 +8,108 @@ industry:
   l0_code: '28'
   l0_name: 電子零組件業
   l0_name_en: Electronic Parts and Components
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.chassis
+  l3_name: 機殼與機構件
+  l3_name_en: Chassis & Mechanical Parts
+primary_chain_position: midstream
+summary_short: 主要從事事務機機構件與模具製造、電子零組件銷售，另經營隱形眼鏡及運動通路。
+summary_long: 能率網通以事務機零組件製造及電子零組件銷售為主要業務，產品包括事務機機構件、金屬沖壓與塑膠射出模具。2025年度事務機業務占營收40.50%，電子零組件占39.42%，其他營運占20.08%。集團透過能遠國際從事電子零組件通路、精能光學製造及銷售隱形眼鏡，並透過新時代電商經營運動用品銷售平台。正能量智能亦列入合併子公司，能率創新為控制能率網通的母公司。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_oa
+  name: 事務機業務部門
+  period: '2025'
+  revenue_share_pct: 40.5
+- evidence_ids:
+  - e2
+  id: seg_electronics
+  name: 電子零組件部門
+  period: '2025'
+  revenue_share_pct: 39.42
+- evidence_ids:
+  - e3
+  id: seg_other
+  name: 其他營運部門
+  period: '2025'
+  revenue_share_pct: 20.08
 relations:
   parents:
-  - as_of: 2025-12
+  - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
     detail: 主要製造及通路子公司
     details:
     - 主要製造及通路子公司
+    - 具控制力之母公司
     edge: efb83a8dc4f73
     evidence_level: primary
     id: tw.5392
     name: 能率
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 2
+  subsidiaries:
+  - as_of: '2026-06-05'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 母公司
+    details:
+    - 母公司
+    - 合併子公司
+    edge: e72ceb34e8d78
+    evidence_level: primary
+    id: tw.5348
+    name: 正能量智能
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 2
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 電子零組件通路子公司
+    details:
+    - 電子零組件通路子公司
+    edge: ef31a80ee29eb
+    evidence_level: primary
+    id: org.abeco-international
+    name: 能遠國際股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 隱形眼鏡製造及銷售子公司
+    details:
+    - 隱形眼鏡製造及銷售子公司
+    edge: ea1cebdb25955
+    evidence_level: primary
+    id: org.abico-optical
+    name: 精能光學股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 運動用品銷售平台子公司
+    details:
+    - 運動用品銷售平台子公司
+    edge: e813340b64a60
+    evidence_level: primary
+    id: org.new-era-ecommerce
+    name: 新時代電商股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -29,7 +118,98 @@ website: www.fstdisc.com.tw
 tax_id: '84415355'
 incorporated: '1993-06-29'
 listed: '2003-12-29'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.8071#e1:
+    locator: 第51頁，主要產品之營業比重，114年度事務機業務部門
+    published_date: '2026-06-03'
+    publisher: 能率網通股份有限公司；FinancialFilings轉錄
+    quote_check: unreachable
+    title: 能率網通股份有限公司114年度年報
+    url: https://financialfilings.com/filings/abico-netcom-co-ltd/annual-report/2026/49213367/
+  tw.8071#e10:
+    locator: 第24頁，合併子公司表，精能光學列；持股數字為表列投資公司合計
+    published_date: null
+    publisher: 能率創新股份有限公司
+    quote_check: found
+    title: 能率創新股份有限公司及子公司114年度合併財務報告
+    url: https://www.avy.com.tw/zh-cn/download/finance_report/2025-4.pdf
+  tw.8071#e11:
+    locator: 第24頁，合併子公司表，投資公司名稱／子公司名稱欄
+    published_date: null
+    publisher: 能率創新股份有限公司
+    quote_check: found
+    title: 能率創新股份有限公司及子公司114年度合併財務報告
+    url: https://www.avy.com.tw/zh-cn/download/finance_report/2025-4.pdf
+  tw.8071#e12:
+    locator: 第24頁，合併子公司表，新時代電商列
+    published_date: null
+    publisher: 能率創新股份有限公司
+    quote_check: found
+    title: 能率創新股份有限公司及子公司114年度合併財務報告
+    url: https://www.avy.com.tw/zh-cn/download/finance_report/2025-4.pdf
+  tw.8071#e13:
+    locator: 關係人交易／母公司及最終控制者之名稱
+    published_date: '2026-03-31'
+    publisher: 能率網通股份有限公司；FinancialFilings轉載
+    quote_check: unreachable
+    title: 能率網通股份有限公司114年度合併財務報告
+    url: https://financialfilings.com/filings/abico-netcom-co-ltd/annual-report/2026/60569071/
+  tw.8071#e2:
+    locator: 第51頁，主要產品之營業比重，114年度電子零組件部門
+    published_date: '2026-06-03'
+    publisher: 能率網通股份有限公司；FinancialFilings轉錄
+    quote_check: unreachable
+    title: 能率網通股份有限公司114年度年報
+    url: https://financialfilings.com/filings/abico-netcom-co-ltd/annual-report/2026/49213367/
+  tw.8071#e3:
+    locator: 第51頁，主要產品之營業比重，114年度其他營運部門
+    published_date: '2026-06-03'
+    publisher: 能率網通股份有限公司；FinancialFilings轉錄
+    quote_check: unreachable
+    title: 能率網通股份有限公司114年度年報
+    url: https://financialfilings.com/filings/abico-netcom-co-ltd/annual-report/2026/49213367/
+  tw.8071#e4:
+    locator: 第51頁，業務範圍／所營業務之主要內容A
+    published_date: '2026-06-03'
+    publisher: 能率網通股份有限公司；FinancialFilings轉錄
+    quote_check: unreachable
+    title: 能率網通股份有限公司114年度年報
+    url: https://financialfilings.com/filings/abico-netcom-co-ltd/annual-report/2026/49213367/
+  tw.8071#e5:
+    locator: 第51頁，公司目前之產品B
+    published_date: '2026-06-03'
+    publisher: 能率網通股份有限公司；FinancialFilings轉錄
+    quote_check: unreachable
+    title: 能率網通股份有限公司114年度年報
+    url: https://financialfilings.com/filings/abico-netcom-co-ltd/annual-report/2026/49213367/
+  tw.8071#e6:
+    locator: 第51頁，公司目前之產品D
+    published_date: '2026-06-03'
+    publisher: 能率網通股份有限公司；FinancialFilings轉錄
+    quote_check: unreachable
+    title: 能率網通股份有限公司114年度年報
+    url: https://financialfilings.com/filings/abico-netcom-co-ltd/annual-report/2026/49213367/
+  tw.8071#e7:
+    locator: 第51頁，公司目前之產品C
+    published_date: '2026-06-03'
+    publisher: 能率網通股份有限公司；FinancialFilings轉錄
+    quote_check: unreachable
+    title: 能率網通股份有限公司114年度年報
+    url: https://financialfilings.com/filings/abico-netcom-co-ltd/annual-report/2026/49213367/
+  tw.8071#e8:
+    locator: 第51頁，公司目前之產品F
+    published_date: '2026-06-03'
+    publisher: 能率網通股份有限公司；FinancialFilings轉錄
+    quote_check: unreachable
+    title: 能率網通股份有限公司114年度年報
+    url: https://financialfilings.com/filings/abico-netcom-co-ltd/annual-report/2026/49213367/
+  tw.8071#e9:
+    locator: 第24頁，合併子公司表，投資公司名稱／子公司名稱／業務性質欄
+    published_date: null
+    publisher: 能率創新股份有限公司
+    quote_check: found
+    title: 能率創新股份有限公司及子公司114年度合併財務報告
+    url: https://www.avy.com.tw/zh-cn/download/finance_report/2025-4.pdf

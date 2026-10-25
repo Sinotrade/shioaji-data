@@ -8,12 +8,150 @@ industry:
   l0_code: '30'
   l0_name: 資訊服務業
   l0_name_en: Information Service
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.software
+  l2_name: 軟體與資訊服務
+  l2_name_en: Software & IT Services
+  l3: sw.it_services
+  l3_name: 系統整合與資訊服務
+  l3_name_en: System Integration & IT Services
+primary_chain_position: downstream
+summary_short: 主要提供電腦軟硬體系統整合、維修維運及軟體服務，另有少量遊戲收入。
+summary_long: 天剛資訊主要提供電腦軟硬體系統整合、維修與維運服務，並從事軟體銷售規劃、開發建置及顧問諮詢。2025年度系統整合及維修收入占營收97%，線上遊戲收入占3%，營收結構仍以資訊服務為主。官網展示天剛造字系統，協助企業處理中文造字、字碼一致性與更新管理，另提供CBMR及TBMR備份復原軟體。依年報2026年4月14日持股資料，天鑫投資開發、鈦飛科創與兆邦開發建設均為天剛全資子公司。
+segments:
+- evidence_ids:
+  - e4
+  id: seg_it
+  name: 系統整合及維修收入
+  period: '2025'
+  revenue_share_pct: 97
+- evidence_ids:
+  - e5
+  id: seg_game
+  name: 線上遊戲收入
+  period: '2025'
+  revenue_share_pct: 3
+relations:
+  subsidiaries:
+  - as_of: '2026-04-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的子公司
+    details:
+    - 直接持股100%的子公司
+    edge: e3e210e420d7c
+    evidence_level: primary
+    id: org.兆邦開發建設-股-公司
+    name: 兆邦開發建設(股)公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的子公司
+    details:
+    - 直接持股100%的子公司
+    edge: ec3661e8be199
+    evidence_level: primary
+    id: org.天鑫投資開發-股-公司
+    name: 天鑫投資開發(股)公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的子公司
+    details:
+    - 直接持股100%的子公司
+    edge: e2418ff85b481
+    evidence_level: primary
+    id: org.鈦飛科創-股-公司
+    name: 鈦飛科創(股)公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.cgs.com.tw
 tax_id: '23534251'
 incorporated: '1989-12-28'
 listed: '1996-04-09'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-25'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.5310#e10:
+    locator: 第43頁／同一轉投資事業持股表，本公司投資欄；基準日115年4月14日
+    published_date: null
+    publisher: 天剛資訊股份有限公司
+    quote_check: found
+    title: 114年度年報（115年度股東會文件）
+    url: https://www.cgs.com.tw/attach/115-meeting-year-report.pdf
+  tw.5310#e11:
+    locator: 第43頁／同一轉投資事業持股表，本公司投資欄；基準日115年4月14日
+    published_date: null
+    publisher: 天剛資訊股份有限公司
+    quote_check: found
+    title: 114年度年報（115年度股東會文件）
+    url: https://www.cgs.com.tw/attach/115-meeting-year-report.pdf
+  tw.5310#e2:
+    locator: 公司簡介／主要產品與服務
+    published_date: null
+    publisher: 天剛資訊股份有限公司
+    quote_check: found
+    title: 公司概況
+    url: https://www.cgs.com.tw/公司概況/
+  tw.5310#e3:
+    locator: 公司簡介／主要產品與服務
+    published_date: null
+    publisher: 天剛資訊股份有限公司
+    quote_check: found
+    title: 公司概況
+    url: https://www.cgs.com.tw/公司概況/
+  tw.5310#e4:
+    locator: 第49頁／公司目前之商品、營業比重；114年度金額單位為仟元、占比為百分比
+    published_date: null
+    publisher: 天剛資訊股份有限公司
+    quote_check: found
+    title: 114年度年報（115年度股東會文件）
+    url: https://www.cgs.com.tw/attach/115-meeting-year-report.pdf
+  tw.5310#e5:
+    locator: 第49頁／公司目前之商品、營業比重；114年度金額單位為仟元、占比為百分比
+    published_date: null
+    publisher: 天剛資訊股份有限公司
+    quote_check: found
+    title: 114年度年報（115年度股東會文件）
+    url: https://www.cgs.com.tw/attach/115-meeting-year-report.pdf
+  tw.5310#e6:
+    locator: 天剛造字系統／產品說明
+    published_date: null
+    publisher: 天剛資訊股份有限公司
+    quote_check: found
+    title: 系統整合
+    url: https://www.cgs.com.tw/系統整合/
+  tw.5310#e7:
+    locator: 頁首產品簡介
+    published_date: null
+    publisher: 天剛資訊股份有限公司
+    quote_check: found
+    title: CBMR
+    url: https://www.cgs.com.tw/cbmr/
+  tw.5310#e8:
+    locator: 頁首產品簡介
+    published_date: null
+    publisher: 天剛資訊股份有限公司
+    quote_check: found
+    title: TBMR
+    url: https://www.cgs.com.tw/tbmr/
+  tw.5310#e9:
+    locator: 第43頁／同一轉投資事業持股表，本公司投資欄；基準日115年4月14日
+    published_date: null
+    publisher: 天剛資訊股份有限公司
+    quote_check: found
+    title: 114年度年報（115年度股東會文件）
+    url: https://www.cgs.com.tw/attach/115-meeting-year-report.pdf

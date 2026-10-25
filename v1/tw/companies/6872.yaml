@@ -8,12 +8,130 @@ industry:
   l0_code: '22'
   l0_name: 生技醫療業
   l0_name_en: Biotechnology and Medical Care
-primary_chain_position: unknown
+  l1: health
+  l1_name: 醫療保健
+  l1_name_en: Healthcare
+  l2: health.devices
+  l2_name: 醫療器材與服務
+  l2_name_en: Medical Devices & Services
+  l3: med.devices
+  l3_name: 醫療器材
+  l3_name_en: Medical Devices
+chain: chain.biotech
+chain_stage:
+  agreement: both
+  also: []
+  reason: 以聚焦式超音波醫材開發為核心，NaviFUS研究機相關收入占61%，另提供受託試驗服務。
+  stage: rnd
+  stage_name: 研發與原料
+  tier: upstream
+primary_chain_position: upstream
+summary_short: 研發聚焦式超音波醫材，收入來自NaviFUS研究機及受託試驗服務。
+summary_long: 浩宇生醫以聚焦式超音波醫療器材為核心，開發結合神經導航的 NaviFUS 系統，研究血腦屏障開啟與癲癇神經調控應用。2025 年 NaviFUS 相關收入占營收 61%，勞務收入占 39%，後者包含受託試驗服務。公司亦開發 NAVIRFA 光學三維針具追蹤系統，協助超音波介入程序中的針具定位。旗下有開曼投資子公司、美國醫療器材開發子公司，以及由開曼子公司全資持有、從事醫材開發與販售的澳洲孫公司。
+segments:
+- evidence_ids:
+  - e2
+  id: s1
+  name: NaviFUS相關收入
+  period: '2025'
+  revenue_share_pct: 61
+- evidence_ids:
+  - e2
+  id: s2
+  name: 勞務收入（含受託試驗服務）
+  period: '2025'
+  revenue_share_pct: 39
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 開曼投資子公司
+    details:
+    - 開曼投資子公司
+    edge: ec89e2efea5e3
+    evidence_level: primary
+    id: org.genovate-navifus
+    name: Genovate-NaviFUS Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 澳洲醫材開發與販售孫公司
+    details:
+    - 澳洲醫材開發與販售孫公司
+    edge: ece5983fb6271
+    evidence_level: primary
+    id: org.genovate-navifus-australia
+    name: Genovate-NaviFUS (Australia) Pty Ltd
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 醫療器材開發子公司
+    details:
+    - 醫療器材開發子公司
+    edge: e01e6e0b0b34e
+    evidence_level: primary
+    id: org.navifus-us
+    name: NaviFUS US LLC
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://navifus.com/
 tax_id: '24731239'
 incorporated: '2015-03-12'
 listed: '2025-03-07'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6872#e1:
+    locator: 產品介紹及Treatment Technologies；引文依序摘錄三處標題
+    published_date: null
+    publisher: 浩宇生醫股份有限公司
+    quote_check: not_found
+    title: NaviFUS System® Non-Invasive Focused Ultrasound treatment
+    url: https://navifus.com/navifus-system/
+  tw.6872#e2:
+    locator: 印刷頁65，主要產品之其營業比重；數字依序為113年度金額、占比及114年度金額、占比
+    published_date: '2026-04-30'
+    publisher: 浩宇生醫股份有限公司
+    quote_check: found
+    title: 浩宇生醫股份有限公司114年度年報
+    url: https://navifus.com/wp-content/uploads/2026/08/115%E5%B9%B4%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
+  tw.6872#e3:
+    locator: About NAVIRFA
+    published_date: null
+    publisher: 浩宇生醫股份有限公司
+    quote_check: found
+    title: NAVIRFA System® Optical 3D Needle Surgical Tracking System
+    url: https://navifus.com/navirfa-system/
+  tw.6872#e4:
+    locator: PDF第46頁，被投資公司資訊；投資公司名稱欄為浩宇生醫股份有限公司
+    published_date: '2026-03-11'
+    publisher: 浩宇生醫股份有限公司
+    quote_check: found
+    title: 浩宇生醫114年度合併財務報告
+    url: https://navifus.com/wp-content/uploads/2026/08/%E6%B5%A9%E5%AE%87%E7%94%9F%E9%86%AB114Q4_%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1%E9%9B%BB%E5%AD%90%E6%9B%B8.pdf
+  tw.6872#e5:
+    locator: 第12頁，附註四（三）2列入合併財務報告之子公司；註1說明尚未投入資本
+    published_date: '2026-05-08'
+    publisher: 浩宇生醫股份有限公司
+    quote_check: found
+    title: 浩宇生醫115年第一季合併財務報告
+    url: https://navifus.com/wp-content/uploads/2026/08/%E6%B5%A9%E5%AE%87%E7%94%9F%E9%86%AB115Q1_%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1%E9%9B%BB%E5%AD%90%E6%9B%B8.pdf
+  tw.6872#e6:
+    locator: PDF第44頁，附表三；投資公司名稱欄為Genovate-NaviFUS Inc.
+    published_date: '2026-08-10'
+    publisher: 浩宇生醫股份有限公司
+    quote_check: found
+    title: 浩宇生醫115年第二季合併財務報告
+    url: https://navifus.com/wp-content/uploads/2026/08/%E6%B5%A9%E5%AE%87%E7%94%9F%E9%86%AB115Q2_%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1%E9%9B%BB%E5%AD%90%E6%9B%B8.pdf

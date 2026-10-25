@@ -8,12 +8,205 @@ industry:
   l0_code: '26'
   l0_name: 光電業
   l0_name_en: Optoelectronic
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.hardware
+  l2_name: 電腦與硬體
+  l2_name_en: Computers & Hardware
+  l3: hw.peripheral
+  l3_name: 周邊與輸入裝置
+  l3_name_en: Peripherals & Input Devices
+chain: chain.display
+chain_stage:
+  agreement: both
+  also: []
+  reason: 營收以安全監控系列為主，產品包含監控顯示器，另提供工業及醫療顯示終端。
+  stage: device
+  stage_name: 終端產品
+  tier: downstream
+primary_chain_position: downstream
+summary_short: 設計、製造及銷售監控、工業與醫療顯示產品，營收以安全監控系列為主。
+summary_long: 哲固從事安全監控、工業應用及健康醫療產品的設計、製造與銷售。2025年營收以安全監控產品系列為主，占88.44%，涵蓋監控顯示器、混合式數位錄放影機及弱視輔助設備。工業應用占7.37%，產品包括觸控顯示器、防水防塵一體機及數位看板；健康醫療占1.35%，提供臨床、手術與診斷顯示器，其他業務占2.84%。年報另將10.1吋觸控顯示螢幕地面控制站列為規劃開發項目。旗下包含投資控股與貿易子公司。
+segments:
+- evidence_ids:
+  - e5
+  id: seg_security
+  name: 安全監控產品系列
+  period: '2025'
+  revenue_share_pct: 88.44
+- evidence_ids:
+  - e6
+  id: seg_industrial
+  name: 工業應用產品系列
+  period: '2025'
+  revenue_share_pct: 7.37
+- evidence_ids:
+  - e7
+  id: seg_medical
+  name: 健康醫療產品系列
+  period: '2025'
+  revenue_share_pct: 1.35
+- evidence_ids:
+  - e8
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 2.84
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 塞席爾直接子公司；投資控股
+    details:
+    - 塞席爾直接子公司；投資控股
+    edge: e59e43d1c7580
+    evidence_level: primary
+    id: org.acula-technology-corp
+    name: ACULA TECHNOLOGY CORP.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過ACULA TECHNOLOGY CORP.持有的間接子公司
+    details:
+    - 透過ACULA TECHNOLOGY CORP.持有的間接子公司
+    edge: ee89efd9e6b98
+    evidence_level: primary
+    id: org.superview-trading-ltd
+    name: SUPERVIEW TRADING LTD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過SUPERVIEW TRADING LTD.持有的間接子公司
+    details:
+    - 透過SUPERVIEW TRADING LTD.持有的間接子公司
+    edge: efcb7451721fb
+    evidence_level: primary
+    id: org.深圳哲像電子有限公司
+    name: 深圳哲像電子有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司；批發及零售
+    details:
+    - 直接子公司；批發及零售
+    edge: e2db58f9f509b
+    evidence_level: primary
+    id: org.統越生技股份有限公司
+    name: 統越生技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.acula.com
 tax_id: '84354060'
 incorporated: '1993-05-05'
 listed: '2008-01-28'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3434#e1:
+    locator: 第63頁，業務範圍／安全監控產品系列
+    published_date: '2026-05-17'
+    publisher: 哲固資訊科技股份有限公司
+    quote_check: not_found
+    title: 哲固資訊科技股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=3434&colorchg=1&filename=2025_3434_20260617F04.pdf&kind=F&step=9
+  tw.3434#e10:
+    locator: 第97頁關係企業組織圖；第98頁整體關係企業經營業務表／ACULA TECHNOLOGY CORP.列，關係欄為子公司
+    published_date: '2026-05-17'
+    publisher: 哲固資訊科技股份有限公司
+    quote_check: not_found
+    title: 哲固資訊科技股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=3434&colorchg=1&filename=2025_3434_20260617F04.pdf&kind=F&step=9
+  tw.3434#e11:
+    locator: 第97頁關係企業組織圖；第98頁整體關係企業經營業務表／SUPERVIEW TRADING LTD.列，關係欄為孫公司
+    published_date: '2026-05-17'
+    publisher: 哲固資訊科技股份有限公司
+    quote_check: not_found
+    title: 哲固資訊科技股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=3434&colorchg=1&filename=2025_3434_20260617F04.pdf&kind=F&step=9
+  tw.3434#e12:
+    locator: 第97頁關係企業組織圖；第98頁整體關係企業經營業務表／深圳哲像電子有限公司列，關係欄為曾孫公司
+    published_date: '2026-05-17'
+    publisher: 哲固資訊科技股份有限公司
+    quote_check: not_found
+    title: 哲固資訊科技股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=3434&colorchg=1&filename=2025_3434_20260617F04.pdf&kind=F&step=9
+  tw.3434#e13:
+    locator: 第97頁關係企業組織圖；第98頁整體關係企業經營業務表／統越生技股份有限公司列，關係欄為子公司
+    published_date: '2026-05-17'
+    publisher: 哲固資訊科技股份有限公司
+    quote_check: not_found
+    title: 哲固資訊科技股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=3434&colorchg=1&filename=2025_3434_20260617F04.pdf&kind=F&step=9
+  tw.3434#e2:
+    locator: 第63至64頁，工業應用產品系列之業務範圍與目前產品
+    published_date: '2026-05-17'
+    publisher: 哲固資訊科技股份有限公司
+    quote_check: not_found
+    title: 哲固資訊科技股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=3434&colorchg=1&filename=2025_3434_20260617F04.pdf&kind=F&step=9
+  tw.3434#e3:
+    locator: 第63至64頁，健康醫療產品系列之業務範圍與目前產品
+    published_date: '2026-05-17'
+    publisher: 哲固資訊科技股份有限公司
+    quote_check: not_found
+    title: 哲固資訊科技股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=3434&colorchg=1&filename=2025_3434_20260617F04.pdf&kind=F&step=9
+  tw.3434#e4:
+    locator: 第64頁，公司目前之產品／安全監控產品系列F項
+    published_date: '2026-05-17'
+    publisher: 哲固資訊科技股份有限公司
+    quote_check: not_found
+    title: 哲固資訊科技股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=3434&colorchg=1&filename=2025_3434_20260617F04.pdf&kind=F&step=9
+  tw.3434#e5:
+    locator: 第63頁，營業比重表／114年度／安全監控產品系列列
+    published_date: '2026-05-17'
+    publisher: 哲固資訊科技股份有限公司
+    quote_check: not_found
+    title: 哲固資訊科技股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=3434&colorchg=1&filename=2025_3434_20260617F04.pdf&kind=F&step=9
+  tw.3434#e6:
+    locator: 第63頁，營業比重表／114年度／工業應用產品系列列
+    published_date: '2026-05-17'
+    publisher: 哲固資訊科技股份有限公司
+    quote_check: not_found
+    title: 哲固資訊科技股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=3434&colorchg=1&filename=2025_3434_20260617F04.pdf&kind=F&step=9
+  tw.3434#e7:
+    locator: 第63頁，營業比重表／114年度／健康醫療產品系列列
+    published_date: '2026-05-17'
+    publisher: 哲固資訊科技股份有限公司
+    quote_check: not_found
+    title: 哲固資訊科技股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=3434&colorchg=1&filename=2025_3434_20260617F04.pdf&kind=F&step=9
+  tw.3434#e8:
+    locator: 第63頁，營業比重表／114年度／其他列
+    published_date: '2026-05-17'
+    publisher: 哲固資訊科技股份有限公司
+    quote_check: not_found
+    title: 哲固資訊科技股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=3434&colorchg=1&filename=2025_3434_20260617F04.pdf&kind=F&step=9
+  tw.3434#e9:
+    locator: 第64頁，公司計畫開發之新商品／無人機具產品系列
+    published_date: '2026-05-17'
+    publisher: 哲固資訊科技股份有限公司
+    quote_check: not_found
+    title: 哲固資訊科技股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=3434&colorchg=1&filename=2025_3434_20260617F04.pdf&kind=F&step=9

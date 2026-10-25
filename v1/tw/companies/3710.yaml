@@ -8,12 +8,180 @@ industry:
   l0_code: '28'
   l0_name: 電子零組件業
   l0_name_en: Electronic Parts and Components
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.connector
+  l3_name: 連接器與線材
+  l3_name_en: Connectors & Cables
+primary_chain_position: midstream
+summary_short: 透過子公司經營連接器、光通訊、天線及電動車充電服務。
+summary_long: 連展投控透過旗下連展科技、連訊通信與連騰科技經營連接器、光通訊及無線通訊業務，連接器為集團營收占比最大的業務。連展科技研發、製造連接器與極細同軸纜線；連訊通信開發CPO連接器、MT插芯及高密度光纖陣列，應用涵蓋AI資料中心。連騰科技從事無線通訊與天線研發，曾發表金屬殼5G多天線系統。另透過連展電能經營電動車充電站與停車場建置、營運，集團亦展示低軌衛星通訊、感測及導航定位方案。
+main_theme: theme.ev
+themes:
+- also: []
+  stage: vehicle
+  theme: theme.ev
+  tier: downstream
+- also: []
+  stage: components
+  theme: theme.5g
+  tier: upstream
+- also: []
+  stage: it
+  theme: theme.data_center
+  tier: midstream
+- also: []
+  stage: components
+  theme: theme.leo_satellite
+  tier: upstream
+- also: []
+  stage: components
+  theme: theme.cpo
+  tier: upstream
+relations:
+  subsidiaries:
+  - as_of: '2026-06-02'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 連接器與線材業務子公司
+    details:
+    - 連接器與線材業務子公司
+    edge: e0b9cd6188ff7
+    evidence_level: primary
+    id: org.連展科技股份有限公司
+    name: 連展科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-02'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過連展科技持有的充電服務子公司
+    details:
+    - 透過連展科技持有的充電服務子公司
+    edge: e3a575540eec3
+    evidence_level: primary
+    id: org.連展電能科技股份有限公司
+    name: 連展電能科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-02'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 光通訊業務子公司
+    details:
+    - 光通訊業務子公司
+    edge: ed9a1191edf70
+    evidence_level: primary
+    id: org.連訊通信股份有限公司
+    name: 連訊通信股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-02'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 無線通訊與天線業務子公司
+    details:
+    - 無線通訊與天線業務子公司
+    edge: e63d809c1a54a
+    evidence_level: primary
+    id: org.連騰科技股份有限公司
+    name: 連騰科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.acon-holding.com
 tax_id: '51608205'
 incorporated: '2017-12-29'
 listed: '2017-12-29'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3710#e10:
+    locator: 投入資源與績效亮點－二、連訊通信
+    published_date: null
+    publisher: 連展投資控股股份有限公司
+    quote_check: found
+    title: 創新服務
+    url: https://www.acon-holding.com/tw/esg/topic/%E5%89%B5%E6%96%B0%E6%9C%8D%E5%8B%99
+  tw.3710#e11:
+    locator: 2020年6月1日
+    published_date: null
+    publisher: 連展投資控股股份有限公司
+    quote_check: found
+    title: 公司沿革
+    url: https://www.acon-holding.com/tw/about_history
+  tw.3710#e12:
+    locator: 低軌衛星與無人機解決方案
+    published_date: '2026-06-02'
+    publisher: 連展投資控股股份有限公司
+    quote_check: found
+    title: 2026台北國際電腦展（Computex 2026）
+    url: https://www.acon-holding.com/tw/news/category/2026%E5%8F%B0%E5%8C%97%E5%9C%8B%E9%9A%9B%E9%9B%BB%E8%85%A6%E5%B1%95__computex_2026_?page=1
+  tw.3710#e2:
+    locator: 參展子公司段落
+    published_date: '2026-06-02'
+    publisher: 連展投資控股股份有限公司
+    quote_check: found
+    title: 2026台北國際電腦展（Computex 2026）
+    url: https://www.acon-holding.com/tw/news/category/2026%E5%8F%B0%E5%8C%97%E5%9C%8B%E9%9A%9B%E9%9B%BB%E8%85%A6%E5%B1%95__computex_2026_?page=1
+  tw.3710#e3:
+    locator: 創新研發、至臻完美
+    published_date: null
+    publisher: 連展投資控股股份有限公司
+    quote_check: found
+    title: 連展投控官網－連展科技介紹
+    url: https://www.acon-holding.com/?action=index
+  tw.3710#e4:
+    locator: 專注研發，突破極限
+    published_date: null
+    publisher: 連展投資控股股份有限公司
+    quote_check: found
+    title: 連展投控官網－連訊通信介紹
+    url: https://www.acon-holding.com/?action=index
+  tw.3710#e5:
+    locator: 印刷頁13，臨時動議總經理回覆
+    published_date: null
+    publisher: 連展投資控股股份有限公司
+    quote_check: found
+    title: 114年股東常會議事錄
+    url: https://www.acon-holding.com/uploads/images/ir/shareholder/recorde_2025.pdf
+  tw.3710#e6:
+    locator: 創新研發
+    published_date: null
+    publisher: 連展投資控股股份有限公司
+    quote_check: found
+    title: 創新服務
+    url: https://www.acon-holding.com/tw/esg/topic/%E5%89%B5%E6%96%B0%E6%9C%8D%E5%8B%99
+  tw.3710#e7:
+    locator: 2023年1月2日
+    published_date: null
+    publisher: 連展投資控股股份有限公司
+    quote_check: found
+    title: 公司沿革
+    url: https://www.acon-holding.com/tw/about_history
+  tw.3710#e8:
+    locator: 投入資源與績效亮點－二、連訊通信
+    published_date: null
+    publisher: 連展投資控股股份有限公司
+    quote_check: found
+    title: 創新服務
+    url: https://www.acon-holding.com/tw/esg/topic/%E5%89%B5%E6%96%B0%E6%9C%8D%E5%8B%99
+  tw.3710#e9:
+    locator: 連結新生活，啟動心嚮往
+    published_date: null
+    publisher: 連展投資控股股份有限公司
+    quote_check: found
+    title: 連展投控官網－連展電能介紹
+    url: https://www.acon-holding.com/?action=index

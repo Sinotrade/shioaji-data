@@ -8,12 +8,114 @@ industry:
   l0_code: '24'
   l0_name: 半導體業
   l0_name_en: Semiconductor
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.hardware
+  l2_name: 電腦與硬體
+  l2_name_en: Computers & Hardware
+  l3: hw.storage
+  l3_name: 儲存裝置與記憶體模組
+  l3_name_en: Storage & Memory Modules
+chain: chain.server
+chain_stage:
+  agreement: both
+  also:
+  - stage: chips
+    stage_name: 晶片與記憶體
+    tier: upstream
+  reason: 營收以磁碟陣列、NAS及JBOD等儲存系統為主，歸入系統設備階段；另有記憶體模組業務。
+  stage: odm
+  stage_name: 主機板與系統組裝
+  tier: downstream
+primary_chain_position: midstream
+summary_short: 以儲存設備為主要營收來源，另經營記憶體模組與資安軟體解決方案。
+summary_long: 商丞經營儲存設備、記憶體模組與資安軟體解決方案。2025年儲存事業占營收54.47%，為最大來源；記憶體事業占16.55%，無線通訊與其他事業分別占18.12%及10.86%。儲存產品包含RAID磁碟陣列、NAS網路儲存設備及JBOD硬碟擴充機箱，並提供雲端資料中心解決方案。官網列示的資安功能包括檔案完整性監控、設定監測與特權帳號密碼管理。依年度營收結構，主要業務歸為儲存裝置與記憶體模組。
+segments:
+- evidence_ids:
+  - e1
+  id: storage
+  name: 儲存事業群
+  period: '2025'
+  revenue_share_pct: 54.47
+- evidence_ids:
+  - e1
+  id: memory
+  name: 記憶體事業群
+  period: '2025'
+  revenue_share_pct: 16.55
+- evidence_ids:
+  - e1
+  id: wireless
+  name: 無線通訊事業群
+  period: '2025'
+  revenue_share_pct: 18.12
+- evidence_ids:
+  - e1
+  id: other
+  name: 其他事業群
+  period: '2025'
+  revenue_share_pct: 10.86
+main_theme: theme.data_center
+themes:
+- also: []
+  stage: it
+  theme: theme.data_center
+  tier: midstream
 website: https://www.unifosa.com.tw
 tax_id: '84783772'
 incorporated: '1994-05-16'
 listed: '2004-12-27'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-25'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.8277#e1:
+    locator: 第96頁，營業比重；PDF第100頁
+    published_date: null
+    publisher: 商丞科技股份有限公司
+    quote_check: found
+    title: 商丞科技股份有限公司114年度年報
+    url: https://www.unifosa.com.tw/esg/shareholder-zone/files/y114.pdf
+  tw.8277#e2:
+    locator: 與眾不同的商丞
+    published_date: null
+    publisher: 商丞科技股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.unifosa.com.tw/company/profile.html
+  tw.8277#e3:
+    locator: 所有儲存產品，DAS產品分類
+    published_date: null
+    publisher: 商丞科技股份有限公司
+    quote_check: found
+    title: 儲存產品：DAS磁碟陣列
+    url: https://www.unifosa.com.tw/product/product_by_category_raid.html
+  tw.8277#e4:
+    locator: NAS產品分類
+    published_date: null
+    publisher: 商丞科技股份有限公司
+    quote_check: found
+    title: 儲存產品：NAS
+    url: https://www.unifosa.com.tw/product/product_by_category_nas.html
+  tw.8277#e5:
+    locator: JBOD產品分類
+    published_date: null
+    publisher: 商丞科技股份有限公司
+    quote_check: found
+    title: 儲存產品：JBOD
+    url: https://www.unifosa.com.tw/product/product_by_category_jbod.html
+  tw.8277#e6:
+    locator: 資安產品解決方案項目
+    published_date: null
+    publisher: 商丞科技股份有限公司
+    quote_check: found
+    title: 資安產品解決方案
+    url: https://www.unifosa.com.tw/product/product_solution_is_brand.html
+  tw.8277#e7:
+    locator: 第98頁，儲存事業；PDF第102頁
+    published_date: null
+    publisher: 商丞科技股份有限公司
+    quote_check: found
+    title: 商丞科技股份有限公司114年度年報
+    url: https://www.unifosa.com.tw/esg/shareholder-zone/files/y114.pdf

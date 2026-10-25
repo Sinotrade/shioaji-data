@@ -8,12 +8,170 @@ industry:
   l0_code: '31'
   l0_name: 其他電子業
   l0_name_en: Other Electronic
-primary_chain_position: unknown
+  l1: industrials
+  l1_name: 工業
+  l1_name_en: Industrials
+  l2: ind.machinery
+  l2_name: 機械與自動化
+  l2_name_en: Machinery & Automation
+  l3: mach.machine_tool
+  l3_name: 工具機
+  l3_name_en: Machine Tools
+primary_chain_position: not_applicable
+summary_short: 研製精密磨床、量測儀器、IC封裝模具與精密零組件。
+summary_long: 建暐精密科技以精密加工與設備產品為主要業務，產品涵蓋治具研磨機、立式磨床、三次元量測儀器、IC封裝模具及精密零組件。官網揭露的RV減速機零件應用於工業機器人與精密設備。2025年上半年合併財報將營運區分為設備及模具、新能源兩個事業部，當期外部收入均來自設備及模具事業部。集團直接持有NEW HONOR GLOBAL GROUP LTD.及建業永旭能源，並透過兩者分別持有昆山長豐精密儀器與雙子星能源。
+segments:
+- evidence_ids:
+  - e6
+  id: seg_equipment_molds
+  name: 設備及模具事業部
+  period: 2025年上半年
+  revenue_share_pct: null
+- evidence_ids:
+  - e6
+  id: seg_energy
+  name: 新能源事業部
+  period: 2025年上半年
+  revenue_share_pct: null
+main_theme: theme.robotics
+themes:
+- also: []
+  stage: components
+  theme: theme.robotics
+  tier: upstream
+relations:
+  subsidiaries:
+  - as_of: '2025-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%的投資子公司
+    details:
+    - 直接持有100%的投資子公司
+    edge: ed8cbaa122c8e
+    evidence_level: primary
+    id: org.new-honor-global-group-ltd
+    name: NEW HONOR GLOBAL GROUP LTD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%的能源子公司
+    details:
+    - 直接持有100%的能源子公司
+    edge: eb21a30ae62e5
+    evidence_level: primary
+    id: org.建業永旭能源股份有限公司
+    name: 建業永旭能源股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過NEW HONOR持有的間接子公司
+    details:
+    - 透過NEW HONOR持有的間接子公司
+    edge: e9992b06bbc8f
+    evidence_level: primary
+    id: org.昆山長豐精密儀器有限公司
+    name: 昆山長豐精密儀器有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過建業永旭能源持有的間接子公司
+    details:
+    - 透過建業永旭能源持有的間接子公司
+    edge: ec0811392d706
+    evidence_level: primary
+    id: org.雙子星能源股份有限公司
+    name: 雙子星能源股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.chienwei.com
 tax_id: '76470282'
 incorporated: '1984-06-14'
 listed: '2004-02-02'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-25'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.8092#e1:
+    locator: 機台概要
+    published_date: null
+    publisher: 建暐精密科技股份有限公司
+    quote_check: found
+    title: JG-510CM
+    url: https://www.chienwei.com.tw/data-279260
+  tw.8092#e10:
+    locator: 第14頁，子公司表，投資公司與子公司及所持股權百分比
+    published_date: '2025-08-12'
+    publisher: 建暐精密科技股份有限公司
+    quote_check: found
+    title: 民國114年及113年第二季合併財務報告暨會計師核閱報告
+    url: https://www.chienwei.com.tw/pdf/538859/%E5%BB%BA%E6%9A%90114Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1(%E7%94%A8%E5%8D%B0).pdf
+  tw.8092#e2:
+    locator: 2012年
+    published_date: null
+    publisher: 建暐精密科技股份有限公司
+    quote_check: found
+    title: 歷史沿革
+    url: https://www.chienwei.com.tw/data-289887
+  tw.8092#e3:
+    locator: 機台概要
+    published_date: null
+    publisher: 建暐精密科技股份有限公司
+    quote_check: found
+    title: CWB-450
+    url: https://www.chienwei.com.tw/data-300533
+  tw.8092#e4:
+    locator: 產品說明
+    published_date: null
+    publisher: 建暐精密科技股份有限公司
+    quote_check: found
+    title: 封裝模：IC 封裝
+    url: https://www.chienwei.com.tw/data-334647
+  tw.8092#e5:
+    locator: 產品說明
+    published_date: null
+    publisher: 建暐精密科技股份有限公司
+    quote_check: found
+    title: RV減速機零件
+    url: https://www.chienwei.com.tw/data-334774
+  tw.8092#e6:
+    locator: 第48頁，部門資訊；114年1月1日至6月30日，單位新台幣仟元
+    published_date: '2025-08-12'
+    publisher: 建暐精密科技股份有限公司
+    quote_check: found
+    title: 民國114年及113年第二季合併財務報告暨會計師核閱報告
+    url: https://www.chienwei.com.tw/pdf/538859/%E5%BB%BA%E6%9A%90114Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1(%E7%94%A8%E5%8D%B0).pdf
+  tw.8092#e7:
+    locator: 第14頁，合併基礎，列入合併財務報告之子公司
+    published_date: '2025-08-12'
+    publisher: 建暐精密科技股份有限公司
+    quote_check: found
+    title: 民國114年及113年第二季合併財務報告暨會計師核閱報告
+    url: https://www.chienwei.com.tw/pdf/538859/%E5%BB%BA%E6%9A%90114Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1(%E7%94%A8%E5%8D%B0).pdf
+  tw.8092#e8:
+    locator: 第14頁，子公司表，投資公司與子公司及所持股權百分比
+    published_date: '2025-08-12'
+    publisher: 建暐精密科技股份有限公司
+    quote_check: found
+    title: 民國114年及113年第二季合併財務報告暨會計師核閱報告
+    url: https://www.chienwei.com.tw/pdf/538859/%E5%BB%BA%E6%9A%90114Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1(%E7%94%A8%E5%8D%B0).pdf
+  tw.8092#e9:
+    locator: 第14頁，子公司表，投資公司與子公司及所持股權百分比
+    published_date: '2025-08-12'
+    publisher: 建暐精密科技股份有限公司
+    quote_check: found
+    title: 民國114年及113年第二季合併財務報告暨會計師核閱報告
+    url: https://www.chienwei.com.tw/pdf/538859/%E5%BB%BA%E6%9A%90114Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1(%E7%94%A8%E5%8D%B0).pdf

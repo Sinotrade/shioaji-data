@@ -8,12 +8,131 @@ industry:
   l0_code: '05'
   l0_name: 電機機械
   l0_name_en: Electric Machinery
-primary_chain_position: unknown
+  l1: auto
+  l1_name: 汽車與運具
+  l1_name_en: Automotive & Mobility
+  l2: auto.vehicles
+  l2_name: 汽機車
+  l2_name_en: Autos & Motorcycles
+  l3: auto.aftermarket
+  l3_name: 售後市場零件（AM）
+  l3_name_en: Aftermarket Parts
+chain: chain.auto
+chain_stage:
+  agreement: both
+  also:
+  - stage: oem
+    stage_name: 整車與售後
+    tier: downstream
+  reason: 主要營收來自汽車空調壓縮機製造，屬零組件；日本子公司經營汽車零件零售，另跨售後通路。
+  stage: parts
+  stage_name: 汽車零組件與模組
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 製造與銷售汽車售後維修用空調壓縮機、熱交換器及零部件。
+summary_long: 湧盛電機以汽車空調壓縮機及熱交換器的製造與銷售為主，產品主要應用於汽車售後維修市場。2025年合併壓縮機收入為25.69億元，熱交換器為6,381.9萬元，另有其他產品收入。官網列示供應OE及AM壓縮機，熱交換器包括水箱與冷凝器，並提供零部件。公司已完成油電混合車及電動車空調壓縮機開發，且建置生產與實驗設備。日本子公司Sinlin Automotive Co., Ltd.從事汽車零件零售，2025年底持股95%。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_compressor
+  name: 汽車空調壓縮機
+  period: 2025年度
+  revenue_share_pct: null
+- evidence_ids:
+  - e2
+  id: seg_heat_exchanger
+  name: 熱交換器
+  period: 2025年度
+  revenue_share_pct: null
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他
+  period: 2025年度
+  revenue_share_pct: null
+main_theme: theme.ev
+themes:
+- also: []
+  stage: parts
+  theme: theme.ev
+  tier: midstream
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 日本汽車零件零售子公司
+    details:
+    - 日本汽車零件零售子公司
+    edge: ef3d447604e00
+    evidence_level: primary
+    id: org.sinlin-automotive
+    name: Sinlin Automotive Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.young-shine.com.tw/
 tax_id: '70849653'
 incorporated: '2008-08-25'
 listed: '2026-10-22'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-25'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.2249#e1:
+    locator: 查核報告「存貨評價」，PDF第5頁
+    published_date: '2026-03-12'
+    publisher: 湧盛電機股份有限公司
+    quote_check: found
+    title: 湧盛電機股份有限公司及子公司114年度及113年度合併財務報告
+    url: https://www.young-shine.com.tw/pdf/財務報表/114年第四季合併財報.pdf
+  tw.2249#e2:
+    locator: 附註十四（三）產品別及勞務別資訊，第49頁；金額單位為新台幣千元
+    published_date: '2026-03-12'
+    publisher: 湧盛電機股份有限公司
+    quote_check: found
+    title: 湧盛電機股份有限公司及子公司114年度及113年度合併財務報告
+    url: https://www.young-shine.com.tw/pdf/財務報表/114年第四季合併財報.pdf
+  tw.2249#e3:
+    locator: 產品資訊／壓縮機
+    published_date: null
+    publisher: 湧盛電機股份有限公司
+    quote_check: found
+    title: 湧盛電機股份有限公司
+    url: https://www.young-shine.com.tw/
+  tw.2249#e4:
+    locator: 產品資訊／熱交換
+    published_date: null
+    publisher: 湧盛電機股份有限公司
+    quote_check: found
+    title: 湧盛電機股份有限公司
+    url: https://www.young-shine.com.tw/
+  tw.2249#e5:
+    locator: 產品資訊／部品
+    published_date: null
+    publisher: 湧盛電機股份有限公司
+    quote_check: found
+    title: 湧盛電機股份有限公司
+    url: https://www.young-shine.com.tw/
+  tw.2249#e6:
+    locator: 肆、營運概況／產品競爭情形，第41頁
+    published_date: null
+    publisher: 湧盛電機股份有限公司
+    quote_check: found
+    title: 湧盛電機股份有限公司113年度年報
+    url: https://www.young-shine.com.tw/pdf/股東會資料/113年報-上傳.pdf
+  tw.2249#e7:
+    locator: 附註四（三）合併基礎／列入合併財務報告之子公司，第11頁；欄位為114及113年底持股
+    published_date: '2026-03-12'
+    publisher: 湧盛電機股份有限公司
+    quote_check: found
+    title: 湧盛電機股份有限公司及子公司114年度及113年度合併財務報告
+    url: https://www.young-shine.com.tw/pdf/財務報表/114年第四季合併財報.pdf
+  tw.2249#e8:
+    locator: 公司介紹
+    published_date: null
+    publisher: 湧盛電機股份有限公司
+    quote_check: found
+    title: 湧盛電機股份有限公司_關於我們
+    url: https://www.young-shine.com.tw/about.html

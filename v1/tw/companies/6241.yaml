@@ -8,12 +8,137 @@ industry:
   l0_code: '27'
   l0_name: 通信網路業
   l0_name_en: Communications and Internet
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.network
+  l2_name: 通信網路
+  l2_name_en: Communications & Networking
+  l3: net.switch
+  l3_name: 網通設備（交換器、路由器）
+  l3_name_en: Networking Equipment (Switches, Routers)
+chain: chain.networking
+chain_stage:
+  agreement: both
+  also: []
+  reason: 多功能路由器占營收61.92%，為最大業務，另製造基地台、交換器等網通設備。
+  stage: equipment
+  stage_name: 網通設備與系統
+  tier: downstream
+primary_chain_position: midstream
+summary_short: 以OEM／ODM服務設計及製造路由器、無線基地台等聯網設備。
+summary_long: 鑫永洋以聯網設備設計與製造為主要業務，提供 OEM／ODM 服務。2025 年多功能路由器占營收61.92%，無線橋接器、基地台與交換器合計占24.66%；其餘包括 USB 無線網卡、嵌牆式基地台與無線延伸器等。官網產品涵蓋 Wi-Fi 6 路由器、Wi-Fi 7 Mesh 路由器及5G／LTE戶外用戶端設備，也提供智慧插座等物聯網設備。依主要產品及營收組成，公司位於通信網路產業鏈的設備製造環節。
+segments:
+- evidence_ids:
+  - e3
+  id: seg_router
+  name: 多功能路由器
+  period: '2025'
+  revenue_share_pct: 61.92
+- evidence_ids:
+  - e3
+  id: seg_ap
+  name: 無線橋接器、基地台與交換器
+  period: '2025'
+  revenue_share_pct: 24.66
+- evidence_ids:
+  - e4
+  id: seg_usb
+  name: USB無線網卡
+  period: '2025'
+  revenue_share_pct: 6.56
+- evidence_ids:
+  - e4
+  id: seg_inwall
+  name: 嵌牆式無線基地台
+  period: '2025'
+  revenue_share_pct: 2.15
+- evidence_ids:
+  - e4
+  id: seg_extender
+  name: 無線延伸器
+  period: '2025'
+  revenue_share_pct: 1.8
+- evidence_ids:
+  - e5
+  id: seg_other
+  name: 其他收入
+  period: '2025'
+  revenue_share_pct: 2.91
+main_theme: theme.5g
+themes:
+- also: []
+  stage: equipment
+  theme: theme.5g
+  tier: midstream
 website: www.amigo.com.tw
 tax_id: '86504769'
 incorporated: '1992-03-28'
 listed: '2003-04-08'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-25'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6241#e1:
+    locator: 關於鑫永洋／公司業務
+    published_date: null
+    publisher: 鑫永洋科技股份有限公司
+    quote_check: found
+    title: 關於鑫永洋
+    url: https://www.amigo.com.tw/company-profile/
+  tw.6241#e2:
+    locator: 鑫永洋科技的優勢
+    published_date: null
+    publisher: 鑫永洋科技股份有限公司
+    quote_check: found
+    title: 關於鑫永洋
+    url: https://www.amigo.com.tw/company-profile/
+  tw.6241#e3:
+    locator: 印刷頁84，PDF第88頁，營業項目營收比重
+    published_date: '2026-04-06'
+    publisher: 鑫永洋科技股份有限公司
+    quote_check: unreachable
+    title: 2025 Annual Report
+    url: https://doc.twse.com.tw/pdf/2025_6241_20260430FE4_20260916_062514.pdf
+  tw.6241#e4:
+    locator: 印刷頁84，PDF第88頁，營業項目營收比重
+    published_date: '2026-04-06'
+    publisher: 鑫永洋科技股份有限公司
+    quote_check: unreachable
+    title: 2025 Annual Report
+    url: https://doc.twse.com.tw/pdf/2025_6241_20260430FE4_20260916_062514.pdf
+  tw.6241#e5:
+    locator: 印刷頁84，PDF第88頁，Other income列
+    published_date: '2026-04-06'
+    publisher: 鑫永洋科技股份有限公司
+    quote_check: unreachable
+    title: 2025 Annual Report
+    url: https://doc.twse.com.tw/pdf/2025_6241_20260430FE4_20260916_062514.pdf
+  tw.6241#e6:
+    locator: AX6000 Wi-Fi 6產品區
+    published_date: null
+    publisher: 鑫永洋科技股份有限公司
+    quote_check: found
+    title: 產品專區
+    url: https://www.amigo.com.tw/product-area/
+  tw.6241#e7:
+    locator: AX19000產品區／MS190
+    published_date: null
+    publisher: 鑫永洋科技股份有限公司
+    quote_check: found
+    title: 產品專區
+    url: https://www.amigo.com.tw/product-area/
+  tw.6241#e8:
+    locator: Wi-Fi 4G/5G Router／5G戶外CPE產品規格
+    published_date: null
+    publisher: 鑫永洋科技股份有限公司
+    quote_check: found
+    title: 產品專區
+    url: https://www.amigo.com.tw/product-area/
+  tw.6241#e9:
+    locator: IoT Gateway / IoT Device
+    published_date: null
+    publisher: 鑫永洋科技股份有限公司
+    quote_check: found
+    title: 產品專區
+    url: https://www.amigo.com.tw/product-area/

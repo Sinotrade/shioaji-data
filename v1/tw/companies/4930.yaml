@@ -8,12 +8,171 @@ industry:
   l0_code: '06'
   l0_name: 電器電纜
   l0_name_en: Electrical and Cable
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.hardware
+  l2_name: 電腦與硬體
+  l2_name_en: Computers & Hardware
+  l3: hw.consumer
+  l3_name: 消費性電子產品
+  l3_name_en: Consumer Electronics
+primary_chain_position: midstream
+summary_short: 以小家電研發、製造與銷售為主，兼營品牌代工經銷及咖啡烘焙。
+summary_long: 燦星網通以家電產品研發、生產與銷售為核心，兼營品牌代理、經銷及代工。2025年度小家電商品占營收96.22%，非小家電商品占3.78%。產品包括咖啡機、煎烤器、電熨斗、掛燙機、衣物護理機、烤箱及氣炸鍋，另提供相關模具設計製造、材料加工與咖啡豆烘焙銷售。家電製造體系包括間接子公司廈門燦坤、漳州燦坤及PT. STAR COMGISTIC INDONESIA；直接子公司金鑛連鎖企業從事咖啡批發。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_small_appliances
+  name: 小家電商品
+  period: '2025'
+  revenue_share_pct: 96.22
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 非小家電商品
+  period: '2025'
+  revenue_share_pct: 3.78
+relations:
+  subsidiaries:
+  - as_of: '2025-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 咖啡批發直接子公司
+    details:
+    - 咖啡批發直接子公司
+    edge: ed01b1103aa1a
+    evidence_level: primary
+    id: org.crown-chain-enterprise
+    name: 金鑛連鎖企業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 印尼間接家電製造子公司
+    details:
+    - 印尼間接家電製造子公司
+    edge: ebb5cb58292bb
+    evidence_level: primary
+    id: org.star-comgistic-indonesia
+    name: PT. STAR COMGISTIC INDONESIA
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接控制之家電製造子公司
+    details:
+    - 間接控制之家電製造子公司
+    edge: e86c86850099b
+    evidence_level: primary
+    id: org.廈門燦坤實業股份有限公司
+    name: 廈門燦坤實業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接家電製造子公司
+    details:
+    - 間接家電製造子公司
+    edge: e75bfd9f9ddfe
+    evidence_level: primary
+    id: org.漳州燦坤實業有限公司
+    name: 漳州燦坤實業有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.starcomgistic.com
 tax_id: '28986660'
 incorporated: '2009-11-11'
 listed: '2010-06-21'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4930#e10:
+    locator: 第53頁，114年12月31日直接或間接控制事業之綜合投資表
+    published_date: null
+    publisher: 燦星網通股份有限公司（FinancialFilings收錄）
+    quote_check: unreachable
+    title: 燦星網通股份有限公司114年年報
+    url: https://financialfilings.com/filings/star-comgistic-4930/annual-report/2026/47910042/
+  tw.4930#e11:
+    locator: 第15至16頁，附註四（三）列入合併財務報告之子公司及註2
+    published_date: '2025-08-12'
+    publisher: 燦星網通股份有限公司
+    quote_check: found
+    title: 燦星網通股份有限公司及子公司114年第二季合併財務報告
+    url: https://www.starcomgistic.com/Web/Investors/PDF_Files/4930_2025Q2.pdf
+  tw.4930#e12:
+    locator: 第15頁，附註四（三）列入合併財務報告之子公司
+    published_date: '2025-08-12'
+    publisher: 燦星網通股份有限公司
+    quote_check: found
+    title: 燦星網通股份有限公司及子公司114年第二季合併財務報告
+    url: https://www.starcomgistic.com/Web/Investors/PDF_Files/4930_2025Q2.pdf
+  tw.4930#e2:
+    locator: 第57頁，業務範圍／114年度之商品、服務項目及營業比重
+    published_date: null
+    publisher: 燦星網通股份有限公司（FinancialFilings收錄）
+    quote_check: unreachable
+    title: 燦星網通股份有限公司114年年報
+    url: https://financialfilings.com/filings/star-comgistic-4930/annual-report/2026/47910042/
+  tw.4930#e3:
+    locator: 第57頁，業務範圍／主要內容
+    published_date: null
+    publisher: 燦星網通股份有限公司（FinancialFilings收錄）
+    quote_check: unreachable
+    title: 燦星網通股份有限公司114年年報
+    url: https://financialfilings.com/filings/star-comgistic-4930/annual-report/2026/47910042/
+  tw.4930#e4:
+    locator: 第57頁，公司目前之商品（服務）項目
+    published_date: null
+    publisher: 燦星網通股份有限公司（FinancialFilings收錄）
+    quote_check: unreachable
+    title: 燦星網通股份有限公司114年年報
+    url: https://financialfilings.com/filings/star-comgistic-4930/annual-report/2026/47910042/
+  tw.4930#e5:
+    locator: 第58頁，產業上、中、下游之關聯性
+    published_date: null
+    publisher: 燦星網通股份有限公司（FinancialFilings收錄）
+    quote_check: unreachable
+    title: 燦星網通股份有限公司114年年報
+    url: https://financialfilings.com/filings/star-comgistic-4930/annual-report/2026/47910042/
+  tw.4930#e6:
+    locator: 第57頁，公司目前之商品（服務）項目
+    published_date: null
+    publisher: 燦星網通股份有限公司（FinancialFilings收錄）
+    quote_check: unreachable
+    title: 燦星網通股份有限公司114年年報
+    url: https://financialfilings.com/filings/star-comgistic-4930/annual-report/2026/47910042/
+  tw.4930#e7:
+    locator: 第57頁，公司目前之商品（服務）項目
+    published_date: null
+    publisher: 燦星網通股份有限公司（FinancialFilings收錄）
+    quote_check: unreachable
+    title: 燦星網通股份有限公司114年年報
+    url: https://financialfilings.com/filings/star-comgistic-4930/annual-report/2026/47910042/
+  tw.4930#e8:
+    locator: 第53頁，114年12月31日直接或間接控制事業之綜合投資表
+    published_date: null
+    publisher: 燦星網通股份有限公司（FinancialFilings收錄）
+    quote_check: unreachable
+    title: 燦星網通股份有限公司114年年報
+    url: https://financialfilings.com/filings/star-comgistic-4930/annual-report/2026/47910042/
+  tw.4930#e9:
+    locator: 第53頁，114年12月31日直接或間接控制事業之綜合投資表
+    published_date: null
+    publisher: 燦星網通股份有限公司（FinancialFilings收錄）
+    quote_check: unreachable
+    title: 燦星網通股份有限公司114年年報
+    url: https://financialfilings.com/filings/star-comgistic-4930/annual-report/2026/47910042/

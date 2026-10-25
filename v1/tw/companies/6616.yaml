@@ -8,13 +8,200 @@ industry:
   l0_code: '38'
   l0_name: 居家生活
   l0_name_en: Home Life
-primary_chain_position: unknown
+  l1: consumer
+  l1_name: 消費
+  l1_name_en: Consumer
+  l2: cons.discretionary
+  l2_name: 非必需消費
+  l2_name_en: Consumer Discretionary
+  l3: consumer.furniture
+  l3_name: 家具與居家用品
+  l3_name_en: Furniture & Home Furnishings
+primary_chain_position: midstream
+summary_short: 以美式木製寢室家具研發、製造與銷售為主，另經營板材及橡膠木加工。
+summary_long: 特昇國際以美式木製寢室家具的研發、製造與銷售為核心，主要由馬來西亞子公司TC營運，產品以五件式寢室家具為主。集團另透過ESK Wood Products經營板材及橡膠木的採購與加工，涵蓋家具成品及原材料業務。2025年度木製家具占營收91.05%，其他業務占8.95%。依2026年4月30日集團組織圖，公司直接持有TC、EHL與Thinker Craft，並間接持有ESK Biomass、ESK Wood Products及TC Home Corporation。
+segments:
+- evidence_ids:
+  - e4
+  id: seg_furniture
+  name: 木製家具
+  period: '2025'
+  revenue_share_pct: 91.05
+- evidence_ids:
+  - e5
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 8.95
+relations:
+  subsidiaries:
+  - as_of: '2026-04-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有的馬來西亞子公司
+    details:
+    - 直接持有的馬來西亞子公司
+    edge: e08ebbb77c7f5
+    evidence_level: primary
+    id: org.ehl-cabinetry-sdn-bhd
+    name: EHL Cabinetry Sdn. Bhd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過Techcential間接持有的子公司
+    details:
+    - 透過Techcential間接持有的子公司
+    edge: ef1aa2dbf22b4
+    evidence_level: primary
+    id: org.esk-biomass-sdn-bhd
+    name: ESK Biomass Sdn. Bhd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過ESK Biomass間接持有的原材料子公司
+    details:
+    - 透過ESK Biomass間接持有的原材料子公司
+    edge: e5c0b6717b418
+    evidence_level: primary
+    id: org.esk-wood-products-sdn-bhd
+    name: ESK Wood Products Sdn. Bhd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過Thinker Craft間接持有的美國子公司
+    details:
+    - 透過Thinker Craft間接持有的美國子公司
+    edge: e87f3e7a71413
+    evidence_level: primary
+    id: org.tc-home-corporation
+    name: TC Home Corporation
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有的馬來西亞家具製造子公司
+    details:
+    - 直接持有的馬來西亞家具製造子公司
+    edge: e4e7141b07def
+    evidence_level: primary
+    id: org.techcential-sdn-bhd
+    name: Techcential Sdn. Bhd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有的馬來西亞子公司
+    details:
+    - 直接持有的馬來西亞子公司
+    edge: e8779ff6761e0
+    evidence_level: primary
+    id: org.thinker-craft-sdn-bhd
+    name: Thinker Craft Sdn. Bhd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.techcential-international.com/
 tax_id: '72488249'
 incorporated: '2016-06-14'
 listed: '2018-01-10'
 foreign_registration: KY 開曼群島
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-25'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6616#e1:
+    locator: About Techcential International Ltd／Main business
+    published_date: null
+    publisher: 特昇國際股份有限公司
+    quote_check: unreachable
+    title: Company Profile
+    url: https://www.techcential-international.com/company-profile_eng/
+  tw.6616#e10:
+    locator: 印刷頁86，PDF第91頁；集團簡介及組織圖，ESK Biomass至ESK Wood Products之持股連線
+    published_date: '2026-04-30'
+    publisher: 特昇國際股份有限公司
+    quote_check: found
+    title: 特昇國際股份有限公司2025年度年報
+    url: https://doc.twse.com.tw/pdf/2025_6616_20260611F04_20261025_152121.pdf
+  tw.6616#e11:
+    locator: 印刷頁86，PDF第91頁；集團組織圖，Thinker Craft至TC Home Corporation之持股連線
+    published_date: '2026-04-30'
+    publisher: 特昇國際股份有限公司
+    quote_check: found
+    title: 特昇國際股份有限公司2025年度年報
+    url: https://doc.twse.com.tw/pdf/2025_6616_20260611F04_20261025_152121.pdf
+  tw.6616#e2:
+    locator: Techcential Sdn Bhd公司介紹
+    published_date: null
+    publisher: 特昇國際股份有限公司
+    quote_check: unreachable
+    title: Company Profile
+    url: https://www.techcential-international.com/company-profile_eng/
+  tw.6616#e3:
+    locator: ESK Wood Products公司介紹
+    published_date: null
+    publisher: 特昇國際股份有限公司
+    quote_check: unreachable
+    title: Company Profile
+    url: https://www.techcential-international.com/company-profile_eng/
+  tw.6616#e4:
+    locator: 印刷頁50，PDF第55頁；營業比重表，2025年度木製家具占比欄
+    published_date: '2026-04-30'
+    publisher: 特昇國際股份有限公司
+    quote_check: not_found
+    title: 特昇國際股份有限公司2025年度年報
+    url: https://doc.twse.com.tw/pdf/2025_6616_20260611F04_20261025_152121.pdf
+  tw.6616#e5:
+    locator: 印刷頁50，PDF第55頁；營業比重表，2025年度其他占比欄
+    published_date: '2026-04-30'
+    publisher: 特昇國際股份有限公司
+    quote_check: not_found
+    title: 特昇國際股份有限公司2025年度年報
+    url: https://doc.twse.com.tw/pdf/2025_6616_20260611F04_20261025_152121.pdf
+  tw.6616#e6:
+    locator: 印刷頁86，PDF第91頁；集團簡介及組織圖，特昇國際至TC之持股連線
+    published_date: '2026-04-30'
+    publisher: 特昇國際股份有限公司
+    quote_check: found
+    title: 特昇國際股份有限公司2025年度年報
+    url: https://doc.twse.com.tw/pdf/2025_6616_20260611F04_20261025_152121.pdf
+  tw.6616#e7:
+    locator: 印刷頁86，PDF第91頁；集團組織圖，特昇國際至EHL之持股連線
+    published_date: '2026-04-30'
+    publisher: 特昇國際股份有限公司
+    quote_check: found
+    title: 特昇國際股份有限公司2025年度年報
+    url: https://doc.twse.com.tw/pdf/2025_6616_20260611F04_20261025_152121.pdf
+  tw.6616#e8:
+    locator: 印刷頁86，PDF第91頁；集團簡介及組織圖，特昇國際至Thinker Craft之持股連線
+    published_date: '2026-04-30'
+    publisher: 特昇國際股份有限公司
+    quote_check: found
+    title: 特昇國際股份有限公司2025年度年報
+    url: https://doc.twse.com.tw/pdf/2025_6616_20260611F04_20261025_152121.pdf
+  tw.6616#e9:
+    locator: 印刷頁86，PDF第91頁；集團組織圖，TC至ESK Biomass之持股連線
+    published_date: '2026-04-30'
+    publisher: 特昇國際股份有限公司
+    quote_check: found
+    title: 特昇國際股份有限公司2025年度年報
+    url: https://doc.twse.com.tw/pdf/2025_6616_20260611F04_20261025_152121.pdf

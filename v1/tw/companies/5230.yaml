@@ -8,12 +8,194 @@ industry:
   l0_code: '26'
   l0_name: 光電業
   l0_name_en: Optoelectronic
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.optical_component
+  l3_name: 光學元件與鏡頭
+  l3_name_en: Optical Components & Lenses
+primary_chain_position: midstream
+summary_short: 以LED二次光學透鏡、車用透鏡及集團精密塑膠件製造取得營收。
+summary_long: 雷笛克光學從事LED二次光學透鏡的研發、製造與銷售，應用涵蓋建築、商業、路燈、醫療、舞台與園藝照明。2025年度營收中，透鏡占64%、精密塑膠件開發及製造占14%、其他占22%。車用產品包含頭燈、尾燈及日行燈透鏡模組，應用涵蓋電動車。子公司群宏光電經營精密塑膠製品，集團法說會列有散熱模組與AI伺服器應用；品輝科技則從事光電模組開發與銷售。公司亦投入Mini LED背光透鏡研發。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_lens
+  name: 透鏡
+  period: '2025'
+  revenue_share_pct: 64
+- evidence_ids:
+  - e1
+  id: seg_plastic
+  name: 精密塑膠件開發及製造
+  period: '2025'
+  revenue_share_pct: 14
+- evidence_ids:
+  - e1
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 22
+main_theme: theme.ev
+themes:
+- also: []
+  stage: parts
+  theme: theme.ev
+  tier: midstream
+- also: []
+  stage: components
+  theme: theme.ai_server
+  tier: midstream
+relations:
+  subsidiaries:
+  - as_of: 2026-04
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 光學透鏡製造子公司
+    details:
+    - 光學透鏡製造子公司
+    edge: efd4c21019362
+    evidence_level: primary
+    id: org.揚州雷笛克光學有限公司
+    name: 揚州雷笛克光學有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 精密模具與零件加工子公司
+    details:
+    - 精密模具與零件加工子公司
+    edge: eb661dda55547
+    evidence_level: primary
+    id: org.東莞群宏光電科技有限公司
+    name: 東莞群宏光電科技有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2026-04
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 光學透鏡製造子公司
+    details:
+    - 光學透鏡製造子公司
+    edge: e2564fee32139
+    evidence_level: primary
+    id: org.東莞雷笛克光學有限公司
+    name: 東莞雷笛克光學有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.ledlink-optics.com
 tax_id: '28951775'
 incorporated: '2008-03-27'
 listed: '2012-06-05'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.5230#e1:
+    locator: 第57頁，主要產品之營業比重；欄位依序為113年度及114年度
+    published_date: null
+    publisher: 雷笛克光學股份有限公司
+    quote_check: found
+    title: 雷笛克光學114年度年報
+    url: https://www.ledlink-optics.com/files/Finance/2026/股東會114年報-115股東會.pdf
+  tw.5230#e10:
+    locator: 第59頁，產業上、中、下游之關聯性
+    published_date: null
+    publisher: 雷笛克光學股份有限公司
+    quote_check: found
+    title: 雷笛克光學114年度年報
+    url: https://www.ledlink-optics.com/files/Finance/2026/股東會114年報-115股東會.pdf
+  tw.5230#e11:
+    locator: 第82頁，關係企業業務分工
+    published_date: null
+    publisher: 雷笛克光學股份有限公司
+    quote_check: found
+    title: 雷笛克光學114年度年報
+    url: https://www.ledlink-optics.com/files/Finance/2026/股東會114年報-115股東會.pdf
+  tw.5230#e12:
+    locator: 第82頁，關係企業業務分工
+    published_date: null
+    publisher: 雷笛克光學股份有限公司
+    quote_check: found
+    title: 雷笛克光學114年度年報
+    url: https://www.ledlink-optics.com/files/Finance/2026/股東會114年報-115股東會.pdf
+  tw.5230#e13:
+    locator: 第82頁，關係企業業務分工
+    published_date: null
+    publisher: 雷笛克光學股份有限公司
+    quote_check: found
+    title: 雷笛克光學114年度年報
+    url: https://www.ledlink-optics.com/files/Finance/2026/股東會114年報-115股東會.pdf
+  tw.5230#e14:
+    locator: 第5頁，雷笛克集團公司
+    published_date: '2025-12-24'
+    publisher: 雷笛克光學股份有限公司
+    quote_check: found
+    title: 雷笛克光學法人說明會
+    url: https://www.ledlink-optics.com/files/Finance/2025/114年法人說明會簡報1224.pdf
+  tw.5230#e2:
+    locator: 第57頁，公司目前之商品（服務）項目
+    published_date: null
+    publisher: 雷笛克光學股份有限公司
+    quote_check: found
+    title: 雷笛克光學114年度年報
+    url: https://www.ledlink-optics.com/files/Finance/2026/股東會114年報-115股東會.pdf
+  tw.5230#e3:
+    locator: 第5頁，雷笛克集團公司
+    published_date: '2025-12-24'
+    publisher: 雷笛克光學股份有限公司
+    quote_check: unreachable
+    title: 雷笛克光學法人說明會
+    url: https://www.ledlink-optics.com/files/Finance/2025/114年法人說明會簡報1224.pdf
+  tw.5230#e4:
+    locator: Automotive介紹
+    published_date: null
+    publisher: 雷笛克光學股份有限公司
+    quote_check: found
+    title: Automotive｜LEDLINK OPTICS, INC.
+    url: https://www.ledlink-optics.com/application-automotive?cbAyPabRrAHsAXyA=
+  tw.5230#e5:
+    locator: 第1頁，致股東報告書
+    published_date: null
+    publisher: 雷笛克光學股份有限公司
+    quote_check: found
+    title: 雷笛克光學114年度年報
+    url: https://www.ledlink-optics.com/files/Finance/2026/股東會114年報-115股東會.pdf
+  tw.5230#e6:
+    locator: 第17頁，公司主要產品
+    published_date: '2025-12-24'
+    publisher: 雷笛克光學股份有限公司
+    quote_check: found
+    title: 雷笛克光學法人說明會
+    url: https://www.ledlink-optics.com/files/Finance/2025/114年法人說明會簡報1224.pdf
+  tw.5230#e7:
+    locator: 第82頁，關係企業業務分工
+    published_date: null
+    publisher: 雷笛克光學股份有限公司
+    quote_check: found
+    title: 雷笛克光學114年度年報
+    url: https://www.ledlink-optics.com/files/Finance/2026/股東會114年報-115股東會.pdf
+  tw.5230#e8:
+    locator: 第2頁，研究發展狀況
+    published_date: null
+    publisher: 雷笛克光學股份有限公司
+    quote_check: found
+    title: 雷笛克光學114年度年報
+    url: https://www.ledlink-optics.com/files/Finance/2026/股東會114年報-115股東會.pdf
+  tw.5230#e9:
+    locator: 第79頁，進貨集中風險
+    published_date: null
+    publisher: 雷笛克光學股份有限公司
+    quote_check: found
+    title: 雷笛克光學114年度年報
+    url: https://www.ledlink-optics.com/files/Finance/2026/股東會114年報-115股東會.pdf

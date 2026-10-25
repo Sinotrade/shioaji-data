@@ -8,13 +8,150 @@ industry:
   l0_code: '22'
   l0_name: 生技醫療業
   l0_name_en: Biotechnology and Medical Care
-primary_chain_position: unknown
+  l1: consumer
+  l1_name: 消費
+  l1_name_en: Consumer
+  l2: cons.staples
+  l2_name: 民生消費
+  l2_name_en: Consumer Staples
+  l3: consumer.household
+  l3_name: 家用品與個人護理
+  l3_name_en: Household & Personal Products
+primary_chain_position: not_applicable
+summary_short: 以美容美體保養品銷售及SPA課程服務為主要收入來源。
+summary_long: 佐登-KY主要經營美容美體產品與SPA課程服務。2025年度產品銷售占營收47.67%，課程服務占43.80%，其他收入占8.53%。美容美體產品包括清潔用品、化妝水、精華液、乳液乳霜、面膜、精油及保健食品；課程涵蓋臉部、身體、局部、儀器及深度護理。其他業務包括管理諮詢與觀光工廠。主要子公司包括佐登妮絲國際、佐登微爾生醫，以及佐登妮絲（廣州）美容化妝品有限公司。
+segments:
+- evidence_ids:
+  - e2
+  id: products
+  name: 產品銷售收入
+  period: '2025'
+  revenue_share_pct: 47.67
+- evidence_ids:
+  - e3
+  id: courses
+  name: 課程服務收入
+  period: '2025'
+  revenue_share_pct: 43.8
+- evidence_ids:
+  - e4
+  id: other
+  name: 其他收入
+  period: '2025'
+  revenue_share_pct: 8.53
+relations:
+  subsidiaries:
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 主要子公司
+    details:
+    - 主要子公司
+    edge: ef8f9eaf676a5
+    evidence_level: primary
+    id: org.jourdeness-guangzhou-cosmetics
+    name: 佐登妮絲(廣州)美容化妝品有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 主要子公司
+    details:
+    - 主要子公司
+    edge: efe6214bbff77
+    evidence_level: primary
+    id: org.jourdeness-international
+    name: 佐登妮絲國際股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 主要子公司
+    details:
+    - 主要子公司
+    edge: e8751f46f2456
+    evidence_level: primary
+    id: org.jourdenwell-biomedical
+    name: 佐登微爾生醫股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.jourdeness.com
 tax_id: '47423851'
 incorporated: '2010-06-21'
 listed: '2015-10-21'
 foreign_registration: KY 開曼群島
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4190#e10:
+    locator: PDF第3頁，二、總公司、分公司、工廠之地址及電話／（二）子公司及分公司／1.子公司
+    published_date: '2026-03-31'
+    publisher: 佐登妮絲集團股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52390/2026/RNS/52390_rns_2026-05-14_fbf8ab4e-b30c-4177-aedb-0a1ac0978b16.pdf
+  tw.4190#e2:
+    locator: 印刷頁59，營業比重；欄序為113年度金額、占比及114年度金額、占比
+    published_date: '2026-03-31'
+    publisher: 佐登妮絲集團股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52390/2026/RNS/52390_rns_2026-05-14_fbf8ab4e-b30c-4177-aedb-0a1ac0978b16.pdf
+  tw.4190#e3:
+    locator: 印刷頁59，營業比重；欄序為113年度金額、占比及114年度金額、占比
+    published_date: '2026-03-31'
+    publisher: 佐登妮絲集團股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52390/2026/RNS/52390_rns_2026-05-14_fbf8ab4e-b30c-4177-aedb-0a1ac0978b16.pdf
+  tw.4190#e4:
+    locator: 印刷頁59，營業比重；欄序為113年度金額、占比及114年度金額、占比
+    published_date: '2026-03-31'
+    publisher: 佐登妮絲集團股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52390/2026/RNS/52390_rns_2026-05-14_fbf8ab4e-b30c-4177-aedb-0a1ac0978b16.pdf
+  tw.4190#e5:
+    locator: 印刷頁59，公司目前之商品（服務）項目／美容美體產品
+    published_date: '2026-03-31'
+    publisher: 佐登妮絲集團股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52390/2026/RNS/52390_rns_2026-05-14_fbf8ab4e-b30c-4177-aedb-0a1ac0978b16.pdf
+  tw.4190#e6:
+    locator: 印刷頁59，公司目前之商品（服務）項目
+    published_date: '2026-03-31'
+    publisher: 佐登妮絲集團股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52390/2026/RNS/52390_rns_2026-05-14_fbf8ab4e-b30c-4177-aedb-0a1ac0978b16.pdf
+  tw.4190#e7:
+    locator: 印刷頁59，公司目前之商品（服務）項目
+    published_date: '2026-03-31'
+    publisher: 佐登妮絲集團股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52390/2026/RNS/52390_rns_2026-05-14_fbf8ab4e-b30c-4177-aedb-0a1ac0978b16.pdf
+  tw.4190#e8:
+    locator: PDF第3頁，二、總公司、分公司、工廠之地址及電話／（二）子公司及分公司／1.子公司
+    published_date: '2026-03-31'
+    publisher: 佐登妮絲集團股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52390/2026/RNS/52390_rns_2026-05-14_fbf8ab4e-b30c-4177-aedb-0a1ac0978b16.pdf
+  tw.4190#e9:
+    locator: PDF第3頁，二、總公司、分公司、工廠之地址及電話／（二）子公司及分公司／1.子公司
+    published_date: '2026-03-31'
+    publisher: 佐登妮絲集團股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52390/2026/RNS/52390_rns_2026-05-14_fbf8ab4e-b30c-4177-aedb-0a1ac0978b16.pdf

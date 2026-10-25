@@ -8,12 +8,127 @@ industry:
   l0_code: '18'
   l0_name: 貿易百貨業
   l0_name_en: Trading and Consumers' Goods
-primary_chain_position: unknown
+  l1: consumer
+  l1_name: 消費
+  l1_name_en: Consumer
+  l2: cons.discretionary
+  l2_name: 非必需消費
+  l2_name_en: Consumer Discretionary
+  l3: retail.department
+  l3_name: 百貨與零售
+  l3_name_en: Department Stores & Retail
+chain: chain.textile
+chain_stage:
+  agreement: both
+  also: []
+  reason: 以自有品牌鞋履及相關商品零售為主，鞋類為最大單一營收品項，子公司亦製造鞋包。
+  stage: garment
+  stage_name: 成衣、製鞋與品牌
+  tier: downstream
+primary_chain_position: downstream
+summary_short: 以自有品牌鞋履、鞋墊及皮件配件零售為主要收入來源。
+summary_long: 阿瘦以自有品牌鞋履及相關商品零售為主要業務，商品包含鞋類、鞋墊、皮包與襪品，並提供動態足壓量測服務。2025年度營收中，鞋類占39.76%、鞋墊占20.08%、包類占2.77%、襪類占2.08%，其他項目占35.32%，鞋類為最大單一品項。鞋墊產品包含依足壓量測結果調整的醫療級鞋墊，足測服務亦用於推薦適穿鞋款及鞋墊。截至2025年底，公司持有雙岳股份有限公司全部股權，該子公司主要從事鞋、包製造業務。
+segments:
+- evidence_ids:
+  - e4
+  id: shoes
+  name: 鞋
+  period: 2025年度
+  revenue_share_pct: 39.76
+- evidence_ids:
+  - e4
+  id: insoles
+  name: 鞋墊
+  period: 2025年度
+  revenue_share_pct: 20.08
+- evidence_ids:
+  - e4
+  id: bags
+  name: 包
+  period: 2025年度
+  revenue_share_pct: 2.77
+- evidence_ids:
+  - e4
+  id: socks
+  name: 襪
+  period: 2025年度
+  revenue_share_pct: 2.08
+- evidence_ids:
+  - e4
+  id: other
+  name: 其他
+  period: 2025年度
+  revenue_share_pct: 35.32
+relations:
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司；鞋、包製造業務
+    details:
+    - 全資子公司；鞋、包製造業務
+    edge: e6e62b7999853
+    evidence_level: primary
+    id: org.雙岳股份有限公司
+    name: 雙岳股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.asogroup.com.tw
 tax_id: '80511709'
 incorporated: '2003-08-25'
 listed: '2014-09-15'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-25'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.8443#e2:
+    locator: 第113頁，主要產品之供應狀況
+    published_date: '2026-05-15'
+    publisher: 阿瘦實業股份有限公司
+    quote_check: found
+    title: 阿瘦實業股份有限公司114年度年報
+    url: https://www.asogroup.com.tw/upload/hold_file/2605290249272720150853.pdf
+  tw.8443#e3:
+    locator: 第86頁，公司目前之商品項目
+    published_date: '2026-05-15'
+    publisher: 阿瘦實業股份有限公司
+    quote_check: found
+    title: 阿瘦實業股份有限公司114年度年報
+    url: https://www.asogroup.com.tw/upload/hold_file/2605290249272720150853.pdf
+  tw.8443#e4:
+    locator: 第86頁，營業比重；前兩欄為114年度營業收入淨額及比重
+    published_date: '2026-05-15'
+    publisher: 阿瘦實業股份有限公司
+    quote_check: found
+    title: 阿瘦實業股份有限公司114年度年報
+    url: https://www.asogroup.com.tw/upload/hold_file/2605290249272720150853.pdf
+  tw.8443#e5:
+    locator: 第89頁，配件產品表之醫療級鞋墊
+    published_date: '2026-05-15'
+    publisher: 阿瘦實業股份有限公司
+    quote_check: found
+    title: 阿瘦實業股份有限公司114年度年報
+    url: https://www.asogroup.com.tw/upload/hold_file/2605290249272720150853.pdf
+  tw.8443#e6:
+    locator: 第98頁，ASO A+研發項目
+    published_date: '2026-05-15'
+    publisher: 阿瘦實業股份有限公司
+    quote_check: found
+    title: 阿瘦實業股份有限公司114年度年報
+    url: https://www.asogroup.com.tw/upload/hold_file/2605290249272720150853.pdf
+  tw.8443#e7:
+    locator: 第130頁，截至114年12月31日關係企業組織圖
+    published_date: '2026-05-15'
+    publisher: 阿瘦實業股份有限公司
+    quote_check: found
+    title: 阿瘦實業股份有限公司114年度年報
+    url: https://www.asogroup.com.tw/upload/hold_file/2605290249272720150853.pdf
+  tw.8443#e8:
+    locator: 第130頁，關係企業基本資料
+    published_date: '2026-05-15'
+    publisher: 阿瘦實業股份有限公司
+    quote_check: found
+    title: 阿瘦實業股份有限公司114年度年報
+    url: https://www.asogroup.com.tw/upload/hold_file/2605290249272720150853.pdf

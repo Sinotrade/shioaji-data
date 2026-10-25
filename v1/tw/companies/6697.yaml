@@ -8,12 +8,193 @@ industry:
   l0_code: '30'
   l0_name: 資訊服務業
   l0_name_en: Information Service
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.software
+  l2_name: 軟體與資訊服務
+  l2_name_en: Software & IT Services
+  l3: sw.it_services
+  l3_name: 系統整合與資訊服務
+  l3_name_en: System Integration & IT Services
+primary_chain_position: not_applicable
+summary_short: 以SAP ERP導入維運、資訊委外及客服等業務流程委外服務賺取收入。
+summary_long: 東捷資訊以資訊委外與業務流程委外服務為主要業務，2025年營收占比分別為64.51%與35.49%。資訊服務涵蓋SAP ERP導入、升級與維運，以及軟體開發、雲平台建置與資訊系統管理。智慧工廠方案串接設備、MES與戰情室，提供生產資料整合與監控；資安業務透過SOC提供全天候威脅監控及事件應變。業務流程服務包括雲端客服平台訂閱、客服席次租賃與異質系統整合。東元電機為其母公司。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_ito
+  name: 資訊委外服務
+  period: '2025'
+  revenue_share_pct: 64.51
+- evidence_ids:
+  - e1
+  id: seg_bpo
+  name: 業務流程委外服務
+  period: '2025'
+  revenue_share_pct: 35.49
+relations:
+  parents:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 母公司
+    details:
+    - 母公司
+    edge: e03f307a2e368
+    evidence_level: primary
+    id: tw.1504
+    name: 東元
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: e538c874a9403
+    evidence_level: primary
+    id: org.information-technology-total-services-bvi-co-ltd
+    name: Information Technology Total Services (BVI) CO., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: edc9ed2999e36
+    evidence_level: primary
+    id: org.優捷勝股份有限公司
+    name: 優捷勝股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過BVI子公司持有的間接子公司
+    details:
+    - 透過BVI子公司持有的間接子公司
+    edge: e21dd17e4e2ff
+    evidence_level: primary
+    id: org.東捷信息技術-無錫-有限公司
+    name: 東捷信息技術(無錫)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: e6bc9f8476624
+    evidence_level: primary
+    id: org.通迅股份有限公司
+    name: 通迅股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.itts.com.tw
 tax_id: '23929058'
 incorporated: '1990-12-01'
 listed: '2019-12-26'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6697#e1:
+    locator: 印刷第46頁，營運概況／目前主要產品之營業比重；欄序為113年度、114年度
+    published_date: null
+    publisher: 東捷資訊服務股份有限公司
+    quote_check: found
+    title: 東捷資訊2025年度年報
+    url: https://www.itts.com.tw/uploads/investors/financial/pdf.pdf
+  tw.6697#e10:
+    locator: 第14頁四(三)2「列入合併財務報告之子公司」，投資公司及子公司名稱欄
+    published_date: '2026-08-10'
+    publisher: 東捷資訊服務股份有限公司
+    quote_check: found
+    title: 東捷資訊服務股份有限公司及子公司2026年第二季合併財務報告
+    url: https://www.itts.com.tw/uploads/q2_202602_6697_ai1_20260929_093837.pdf
+  tw.6697#e11:
+    locator: 第14頁四(三)2「列入合併財務報告之子公司」，投資公司及子公司名稱欄
+    published_date: '2026-08-10'
+    publisher: 東捷資訊服務股份有限公司
+    quote_check: found
+    title: 東捷資訊服務股份有限公司及子公司2026年第二季合併財務報告
+    url: https://www.itts.com.tw/uploads/q2_202602_6697_ai1_20260929_093837.pdf
+  tw.6697#e12:
+    locator: 第14頁四(三)2「列入合併財務報告之子公司」末列；投資公司欄為BVI子公司
+    published_date: '2026-08-10'
+    publisher: 東捷資訊服務股份有限公司
+    quote_check: found
+    title: 東捷資訊服務股份有限公司及子公司2026年第二季合併財務報告
+    url: https://www.itts.com.tw/uploads/q2_202602_6697_ai1_20260929_093837.pdf
+  tw.6697#e2:
+    locator: 全方位SAP導入與維運段落
+    published_date: null
+    publisher: 東捷資訊服務股份有限公司
+    quote_check: found
+    title: SAP Cloud ERP顧問及升級服務
+    url: https://www.itts.com.tw/zh-tw/sap-solutions/sap-s-4hana-erp
+  tw.6697#e3:
+    locator: 資訊委外服務項目
+    published_date: null
+    publisher: 東捷資訊服務股份有限公司
+    quote_check: found
+    title: ITO資訊委外服務
+    url: https://www.itts.com.tw/zh-tw/it-infrastructure/it-service
+  tw.6697#e4:
+    locator: 智慧工廠解決方案首段
+    published_date: null
+    publisher: 東捷資訊服務股份有限公司
+    quote_check: found
+    title: 智慧製造－智慧工廠解決方案
+    url: https://www.itts.com.tw/zh-tw/iot/smart-manufacturing/smart-factory
+  tw.6697#e5:
+    locator: 智慧工廠解決方案首段，MES服務說明
+    published_date: null
+    publisher: 東捷資訊服務股份有限公司
+    quote_check: found
+    title: 智慧製造－智慧工廠解決方案
+    url: https://www.itts.com.tw/zh-tw/iot/smart-manufacturing/smart-factory
+  tw.6697#e6:
+    locator: 雲端客服平台訂閱式服務
+    published_date: null
+    publisher: 東捷資訊服務股份有限公司
+    quote_check: found
+    title: 雲端智能客服解決方案
+    url: https://www.itts.com.tw/zh-tw/bpo/cloud-crm
+  tw.6697#e7:
+    locator: 資安領域段落；發布日期見官網最新消息列表
+    published_date: '2026-08-10'
+    publisher: 東捷資訊服務股份有限公司
+    quote_check: found
+    title: 從ERP到AI一站整合 東捷資訊H1營運回溫
+    url: https://www.itts.com.tw/zh-tw/news/itts-news-2026-finance-ai-sap-erp
+  tw.6697#e8:
+    locator: 第50頁附表二，交易公司、對象名稱及關係欄
+    published_date: '2026-08-10'
+    publisher: 東捷資訊服務股份有限公司
+    quote_check: found
+    title: 東捷資訊服務股份有限公司及子公司2026年第二季合併財務報告
+    url: https://www.itts.com.tw/uploads/q2_202602_6697_ai1_20260929_093837.pdf
+  tw.6697#e9:
+    locator: 第14頁四(三)2「列入合併財務報告之子公司」，投資公司及子公司名稱欄
+    published_date: '2026-08-10'
+    publisher: 東捷資訊服務股份有限公司
+    quote_check: found
+    title: 東捷資訊服務股份有限公司及子公司2026年第二季合併財務報告
+    url: https://www.itts.com.tw/uploads/q2_202602_6697_ai1_20260929_093837.pdf

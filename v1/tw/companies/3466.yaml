@@ -46,16 +46,16 @@ segments:
   name: 數位機上盒產品及零組件
   period: '2025'
   revenue_share_pct: 13.49
-main_theme: theme.data_center
+main_theme: theme.drone
 themes:
-- also: []
-  stage: operation
-  theme: theme.data_center
-  tier: downstream
 - also: []
   stage: components
   theme: theme.drone
   tier: upstream
+- also: []
+  stage: operation
+  theme: theme.data_center
+  tier: downstream
 relations:
   subsidiaries:
   - as_of: '2025-12-31'

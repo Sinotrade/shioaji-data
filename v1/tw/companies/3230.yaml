@@ -45,15 +45,15 @@ segments:
   name: 無人機
   period: 2026Q1
   revenue_share_pct: 0.79
-main_theme: theme.data_center
+main_theme: theme.drone
 themes:
-- also: []
-  stage: operation
-  theme: theme.data_center
-  tier: downstream
 - also: []
   stage: system
   theme: theme.drone
+  tier: downstream
+- also: []
+  stage: operation
+  theme: theme.data_center
   tier: downstream
 relations:
   subsidiaries:

@@ -216,6 +216,18 @@ members:
   stage: downstream
   tier: downstream
   stage_role: primary
+- id: tw.1324
+  detail: 主要業務為膠帶製造加工及買賣，以塑膠薄膜等基材塗膠製成膠帶，屬下游加工。
+  as_of: '2026-10-25'
+  evidence:
+  - tw.1324#e2
+  - tw.1324#e4
+  - tw.1324#e7
+  confidence: ai_cross_checked
+  source: classification
+  stage: downstream
+  tier: downstream
+  stage_role: primary
 - id: tw.1326
   detail: 石化占營收58.1%，以中間原料為主，另涵蓋苯等基礎原料、塑膠樹脂及纖維。
   as_of: '2026-10-14'
@@ -255,6 +267,19 @@ members:
   stage: upstream
   tier: upstream
   stage_role: also
+- id: tw.1337
+  detail: 主要製造銷售EVA發泡材料，營收以箱包片材占42.62%最多，屬塑膠加工階段。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.1337#e1
+  - tw.1337#e2
+  - tw.1337#e3
+  - tw.1337#e4
+  confidence: ai_cross_checked
+  source: classification
+  stage: downstream
+  tier: downstream
+  stage_role: primary
 - id: tw.1341
   detail: 乳膠皮占營收58.27%，主要產品為PVC人造皮革、PU／TPU皮革及膠布，屬塑膠加工製品。
   as_of: '2026-10-23'
@@ -465,6 +490,18 @@ members:
   stage: midstream
   tier: midstream
   stage_role: primary
+- id: tw.1776
+  detail: 營收以PU樹脂為主，另製造TPU塑粒，屬合成樹脂與塑膠材料下游業務。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.1776#e1
+  - tw.1776#e6
+  - tw.1776#e7
+  confidence: ai_cross_checked
+  source: classification
+  stage: downstream
+  tier: downstream
+  stage_role: primary
 - id: tw.2103
   detail: 合成橡膠占營收98%，供應輪胎及工業製品加工所需的聚合物材料。
   as_of: '2026-10-15'
@@ -526,6 +563,18 @@ members:
   stage: downstream
   tier: downstream
   stage_role: primary
+- id: tw.4304
+  detail: 鋁箔麥拉帶占營收59.38%，主要從事複合膜材、塑膠膜與包材加工，屬石化下游。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.4304#e2
+  - tw.4304#e3
+  - tw.4304#e8
+  confidence: ai_cross_checked
+  source: classification
+  stage: downstream
+  tier: downstream
+  stage_role: primary
 - id: tw.4305
   detail: 一般PVC塑膠布占營收71.52%，主業為塑膠布加工製造，屬下游塑膠與加工階段。
   as_of: '2026-10-23'
@@ -573,6 +622,19 @@ members:
   source: classification
   stage: midstream
   tier: midstream
+  stage_role: primary
+- id: tw.4711
+  detail: 多元醇聚酯樹脂占營收53.84%，以合成樹脂、膠粒及FRP加工產品為主，屬石化下游。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.4711#e1
+  - tw.4711#e2
+  - tw.4711#e3
+  - tw.4711#e4
+  confidence: ai_cross_checked
+  source: classification
+  stage: downstream
+  tier: downstream
   stage_role: primary
 - id: tw.4714
   detail: 營收以樹脂與化工為主，PU樹脂、TPU及高分子材料屬下游，另製造多元醇中間原料。
@@ -665,6 +727,17 @@ members:
   stage: downstream
   tier: downstream
   stage_role: also
+- id: tw.4767
+  detail: 主要營收來自熱熔膠接著劑，並生產防水膜等材料配方及加工製品，屬石化下游。
+  as_of: '2026-10-24'
+  evidence:
+  - tw.4767#e01
+  - tw.4767#e03
+  confidence: ai_cross_checked
+  source: classification
+  stage: downstream
+  tier: downstream
+  stage_role: primary
 - id: tw.5452
   detail: 塑膠粒占營收70.47%，主要銷售塑膠材料並提供染色、混鍊造粒加工，屬下游。
   as_of: '2026-10-23'
@@ -699,6 +772,18 @@ members:
   stage: upstream
   tier: upstream
   stage_role: primary
+- id: tw.6582
+  detail: 將石化原料聚合成乳膠，供手套、造紙與接著加工使用。
+  as_of: '2026-10-23'
+  evidence:
+  - tw.6582#e1
+  - tw.6582#e2
+  - tw.6582#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: midstream
+  tier: midstream
+  stage_role: primary
 - id: tw.6585
   detail: TPU薄膜占營收91.31%，並製造密封件與管帶，主要屬塑膠材料與成品加工。
   as_of: '2026-10-20'
@@ -706,6 +791,17 @@ members:
   - tw.6585#e2
   - tw.6585#e3
   - tw.6585#e4
+  confidence: ai_cross_checked
+  source: classification
+  stage: downstream
+  tier: downstream
+  stage_role: primary
+- id: tw.8421
+  detail: 熱收縮膜印刷標籤占營收88.2%，以PET、OPS及PVC薄膜印刷加工為主，屬下游加工。
+  as_of: '2026-10-25'
+  evidence:
+  - tw.8421#e1
+  - tw.8421#e5
   confidence: ai_cross_checked
   source: classification
   stage: downstream
@@ -746,4 +842,4 @@ members:
   stage: downstream
   tier: downstream
   stage_role: primary
-as_of: '2026-10-23'
+as_of: '2026-10-25'

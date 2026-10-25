@@ -8,12 +8,116 @@ industry:
   l0_code: '32'
   l0_name: 文化創意業
   l0_name_en: Cultural and Creative
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.software
+  l2_name: 軟體與資訊服務
+  l2_name_en: Software & IT Services
+  l3: sw.gaming
+  l3_name: 遊戲
+  l3_name_en: Games
+primary_chain_position: not_applicable
+summary_short: 以線上及手機遊戲開發、授權與代理取得營收。
+summary_long: 昱泉國際主要從事線上遊戲及手機遊戲的開發、授權與代理。2024年年報揭露，遊戲及系統軟體應用營收為新臺幣2,387.8萬元，占全年營收100%。旗下遊戲《G9：特攻聯盟》為MOBA類型，官方公告於2025年11月13日正式開放。依2025年第一季合併財報，集團全資子公司包括糖心數位娛樂股份有限公司、InterServ, Inc.、昱泉國際（香港）股份有限公司及昱利信息技術（上海）有限公司。
+segments:
+- evidence_ids:
+  - e1
+  id: s1
+  name: 遊戲及系統軟體應用
+  period: '2024'
+  revenue_share_pct: 100
+relations:
+  subsidiaries:
+  - as_of: '2025-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司；投資業務
+    details:
+    - 全資子公司；投資業務
+    edge: eb7073384f456
+    evidence_level: primary
+    id: org.interserv-inc
+    name: InterServ, Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司；數碼技術開發等
+    details:
+    - 全資子公司；數碼技術開發等
+    edge: e80504c24ab62
+    evidence_level: primary
+    id: org.昱利信息技術-上海-有限公司
+    name: 昱利信息技術（上海）有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司；資訊軟體服務業
+    details:
+    - 全資子公司；資訊軟體服務業
+    edge: e10761a6d09f3
+    evidence_level: primary
+    id: org.昱泉國際-香港-股份有限公司
+    name: 昱泉國際（香港）股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司；資訊軟體服務業等
+    details:
+    - 全資子公司；資訊軟體服務業等
+    edge: ef77de621ab0c
+    evidence_level: primary
+    id: org.糖心數位娛樂股份有限公司
+    name: 糖心數位娛樂股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.interserv.com.tw/
 tax_id: '23296194'
 incorporated: '1989-04-18'
 listed: '2002-03-22'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-25'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6169#e1:
+    locator: 第69頁，肆、營運概況／一、業務內容／營業比重；欄位依序為112年度及113年度金額與百分比
+    published_date: '2025-05-28'
+    publisher: 昱泉國際股份有限公司
+    quote_check: found
+    title: 昱泉國際股份有限公司一一三年度年報
+    url: https://investors.interserv.com.tw/admin/dist/images/shareholders_meeting/114%E5%B9%B4%E8%82%A1%E6%9D%B1%E5%B8%B8%E6%9C%83/%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
+  tw.6169#e2:
+    locator: 第69頁，肆、營運概況／一、業務內容／公司目前之商品項目
+    published_date: '2025-05-28'
+    publisher: 昱泉國際股份有限公司
+    quote_check: found
+    title: 昱泉國際股份有限公司一一三年度年報
+    url: https://investors.interserv.com.tw/admin/dist/images/shareholders_meeting/114%E5%B9%B4%E8%82%A1%E6%9D%B1%E5%B8%B8%E6%9C%83/%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
+  tw.6169#e3:
+    locator: 公告正文首段
+    published_date: '2025-11-13'
+    publisher: 昱泉國際《G9：特攻聯盟》營運團隊
+    quote_check: found
+    title: 《G9:特攻聯盟》2025/11/13 正式開放
+    url: https://g9.interserv.com.tw/bulletin_board/bull_detail.php?id=39
+  tw.6169#e4:
+    locator: 第15頁，附註四、重大會計政策之彙總說明／合併概況；114.3.31所持有權益百分比
+    published_date: '2025-05-06'
+    publisher: 昱泉國際股份有限公司
+    quote_check: unreachable
+    title: 昱泉國際股份有限公司及子公司民國114年第一季合併財務報告
+    url: https://investorsapi.interserv.com.tw/Image/Financialstatements/114/202501_6169_AI1_20250806_164721.pdf

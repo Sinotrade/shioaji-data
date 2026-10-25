@@ -8,13 +8,90 @@ industry:
   l0_code: '16'
   l0_name: 觀光餐旅
   l0_name_en: Tourism and Hospitality
-primary_chain_position: unknown
+  l1: energy
+  l1_name: 能源
+  l1_name_en: Energy & Utilities
+  l2: energy.green
+  l2_name: 綠能
+  l2_name_en: Renewable Energy
+  l3: green.solar
+  l3_name: 太陽能
+  l3_name_en: Solar
+chain: chain.solar
+chain_stage:
+  agreement: both
+  also: []
+  reason: 公告主營業務轉向再生能源，台灣子公司廣益已持有約2MW太陽能電站，屬電廠營運。
+  stage: system
+  stage_name: 系統與電廠
+  tier: downstream
+primary_chain_position: downstream
+summary_short: 由中國連鎖旅館轉型，透過台灣子公司經營太陽能電站。
+summary_long: 大略-KY原以中國大陸連鎖旅館營運為主，2026年9月公告主營業務轉向再生能源。公司持有台灣子公司廣益國際股份有限公司70%股權，並於2026年8月公告，廣益截至同年7月已持有約2MW太陽能電站。原全資子公司上海水蓮天企業發展有限公司於2026年2月6日發生股東異動，公司因而喪失控制力及主要營收來源。原中國旅館業務因此僅列為歷史業務，太陽能電站業務則明確歸屬廣益，不將子公司資產直接表述為母公司持有。
+relations:
+  subsidiaries:
+  - as_of: '2026-02-05'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 歷史全資子公司；2026年2月6日起喪失控制
+    details:
+    - 歷史全資子公司；2026年2月6日起喪失控制
+    edge: e2f992e0551ef
+    evidence_level: primary
+    id: org.上海水蓮天企業發展有限公司
+    name: 上海水蓮天企業發展有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-08-11'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股70%的台灣太陽能電站子公司
+    details:
+    - 持股70%的台灣太陽能電站子公司
+    edge: eca66bcce6892
+    evidence_level: primary
+    id: org.廣益國際股份有限公司
+    name: 廣益國際股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://dalue.co/
 tax_id: '41244424'
 incorporated: '2011-08-05'
 listed: '2015-12-04'
 foreign_registration: KY 開曼群島
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-25'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.4804#e1:
+    locator: 第26項，營運模式變更說明
+    published_date: '2026-09-29'
+    publisher: 公開資訊觀測站重大訊息（MoneyDJ轉載）
+    quote_check: found
+    title: 大略-KY代子公司廣益國際公告董事會決議取得俊崴電力股權
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=73fca0d4-e623-4e23-9b46-866b9cdbc07a
+  tw.4804#e2:
+    locator: 第2至4項，公司名稱、關係及持股比例
+    published_date: '2026-08-11'
+    publisher: 公開資訊觀測站重大訊息（MoneyDJ轉載）
+    quote_check: found
+    title: 大略-KY公告董事會授權台灣子公司廣益國際申請太陽能電站專案融資及營運週轉金
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=a149fa6e-d584-42bd-945d-5c3dcacad76f
+  tw.4804#e3:
+    locator: 記者會新聞稿「此事件對本公司之影響」，截至2026年7月之電站持有情形
+    published_date: '2026-08-26'
+    publisher: 公開資訊觀測站重大訊息（MoneyDJ轉載）
+    quote_check: found
+    title: 大略-KY公告召開重大訊息說明記者會內容
+    url: https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=44ad6f81-76f5-4340-a8f9-45520bca61d7
+  tw.4804#e4:
+    locator: 公告事項一、（二）
+    published_date: '2026-09-04'
+    publisher: 櫃買中心公告（MoneyDJ轉載）
+    quote_check: found
+    title: 大略-KY有價證券繼續停止買賣
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=e75bb950-6a83-4dc5-b6eb-51aabd66e3c5

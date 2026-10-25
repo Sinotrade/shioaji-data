@@ -8,7 +8,48 @@ industry:
   l0_code: '22'
   l0_name: 生技醫療業
   l0_name_en: Biotechnology and Medical Care
-primary_chain_position: unknown
+  l1: health
+  l1_name: 醫療保健
+  l1_name_en: Healthcare
+  l2: health.devices
+  l2_name: 醫療器材與服務
+  l2_name_en: Medical Devices & Services
+  l3: med.devices
+  l3_name: 醫療器材
+  l3_name_en: Medical Devices
+chain: chain.biotech
+chain_stage:
+  agreement: both
+  also:
+  - stage: rnd
+    stage_name: 研發與原料
+    tier: upstream
+  reason: 醫療器材產品為最大收入來源，從事人工腦膜等醫材製造，另提供委託開發服務。
+  stage: manufacturing
+  stage_name: 製造與代工
+  tier: midstream
+primary_chain_position: midstream
+summary_short: 研發、製造及銷售人工腦膜與腦血管介入醫材，並提供委託開發製造服務。
+summary_long: 台生材從事醫療器材研發、製造與銷售，營收來源包括醫療器材相關產品及委託開發服務，2024年以醫療器材產品為主。主要產品為泡沫式人工腦膜Foamagen，以及腦中風血栓負壓移除導管系統，後者包含血塊吸引移除幫浦與導引腦部血管手術的鎳鈦導絲。官網表示人工腦膜已在台灣銷售，血塊吸引移除幫浦系統已通過美國FDA 510(k)。公司另提供委託開發製造服務；2024年財報將振曜科技列為母公司。
+segments:
+- evidence_ids:
+  - e2
+  id: s1
+  name: 醫療器材相關產品
+  period: '2024'
+  revenue_share_pct: null
+- evidence_ids:
+  - e2
+  id: s2
+  name: 委託開發服務收入
+  period: '2024'
+  revenue_share_pct: null
+- evidence_ids:
+  - e2
+  id: s3
+  name: 其他收入
+  period: '2024'
+  revenue_share_pct: null
 relations:
   parents:
   - as_of: '2026-09-15'
@@ -17,6 +58,7 @@ relations:
     detail: 子公司
     details:
     - 子公司
+    - 具實質控制力之母公司
     edge: e4d33d0435bf3
     evidence_level: primary
     id: tw.6143
@@ -24,12 +66,54 @@ relations:
     ranking_basis: unranked
     share_basis: null
     share_pct: null
-    weight: 1
+    weight: 2
 website: www.twbm.com.tw
 tax_id: '54008079'
 incorporated: '2012-11-12'
 listed: '2019-06-05'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.6649#e1:
+    locator: 公司簡介：主要經營業務
+    published_date: null
+    publisher: 台灣生醫材料股份有限公司
+    quote_check: found
+    title: 公司治理｜公司簡介
+    url: https://www.twbm.com.tw/公司治理
+  tw.6649#e2:
+    locator: PDF第44頁，印刷頁碼41，營業收入明細表；單位：新台幣千元
+    published_date: null
+    publisher: 台灣生醫材料股份有限公司
+    quote_check: found
+    title: 民國一一三年度及一一二年度個別財務報告暨會計師查核報告
+    url: https://www.twbm.com.tw/_files/ugd/c19b48_76fdc3587eec4f15bf68b1607ff69bfd.pdf
+  tw.6649#e3:
+    locator: Foamagen產品介紹
+    published_date: null
+    publisher: 台灣生醫材料股份有限公司
+    quote_check: found
+    title: 泡沫式人工腦膜
+    url: https://www.twbm.com.tw/泡沫式人工腦膜
+  tw.6649#e4:
+    locator: 產品說明
+    published_date: null
+    publisher: 台灣生醫材料股份有限公司
+    quote_check: found
+    title: 腦中風介入性治療
+    url: https://www.twbm.com.tw/腦中風介入性治療
+  tw.6649#e5:
+    locator: 第04項服務
+    published_date: null
+    publisher: 台灣生醫材料股份有限公司
+    quote_check: found
+    title: 產品介紹
+    url: https://www.twbm.com.tw/產品介紹
+  tw.6649#e6:
+    locator: PDF第36頁，印刷頁碼33，附註七（一）關係人名稱及關係
+    published_date: null
+    publisher: 台灣生醫材料股份有限公司
+    quote_check: found
+    title: 民國一一三年度及一一二年度個別財務報告暨會計師查核報告
+    url: https://www.twbm.com.tw/_files/ugd/c19b48_76fdc3587eec4f15bf68b1607ff69bfd.pdf

@@ -8,7 +8,37 @@ industry:
   l0_code: '37'
   l0_name: 運動休閒
   l0_name_en: Sports and Leisure
-primary_chain_position: unknown
+  l1: consumer
+  l1_name: 消費
+  l1_name_en: Consumer
+  l2: cons.discretionary
+  l2_name: 非必需消費
+  l2_name_en: Consumer Discretionary
+  l3: consumer.sports
+  l3_name: 運動用品與健身器材
+  l3_name_en: Sporting Goods & Fitness Equipment
+primary_chain_position: downstream
+summary_short: 透過網站與實體門市銷售高爾夫用品，集團另經營家用康復型健身器材。
+summary_long: 邁達康以高爾夫球用品銷售為主要業務，透過邁達康高球網及實體直營店經營，並提供售後服務。集團另經由全資子公司Innova Products,Inc.從事家用康復型健身運動器材的研發及銷售，官網亦販售倒立機與健身車。2025年合併收入中，高爾夫球用品為4億9,592.3萬元，健身器材為1億7,857萬元，另有勞務收入503.9萬元。直接子公司亦包括彭博實業有限公司及Dacome International (Samoa) Limited，分別經營健身器材銷售與國際投資貿易。
+segments:
+- evidence_ids:
+  - e3
+  id: seg_golf
+  name: 高爾夫球用品
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e4
+  id: seg_fitness
+  name: 健身器材
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e5
+  id: seg_services
+  name: 勞務收入
+  period: '2025'
+  revenue_share_pct: null
 relations:
   parents:
   - as_of: '2026-10-23'
@@ -25,11 +55,110 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司；國際投資及貿易業務
+    details:
+    - 直接子公司；國際投資及貿易業務
+    edge: e6a2855401eeb
+    evidence_level: primary
+    id: org.dacome-international-samoa
+    name: Dacome International (Samoa) Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接全資子公司；家用康復型健身運動器材研發及銷售
+    details:
+    - 直接全資子公司；家用康復型健身運動器材研發及銷售
+    edge: e0ccf0255c0e6
+    evidence_level: primary
+    id: org.innova-products
+    name: Innova Products,Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接全資子公司；家用康復型健身運動器材銷售
+    details:
+    - 直接全資子公司；家用康復型健身運動器材銷售
+    edge: ec997f70a66f3
+    evidence_level: primary
+    id: org.pengbo-industrial
+    name: 彭博實業有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.golfshop.com.tw
 tax_id: '16824183'
 incorporated: '2000-02-14'
 listed: '2004-12-06'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.9960#e1:
+    locator: 邁達康集團簡介及通路介紹
+    published_date: null
+    publisher: 邁達康網路事業股份有限公司
+    quote_check: found
+    title: 邁達康集團簡介
+    url: https://www.golfshop.com.tw/aboutus/aboutus_2024.asp
+  tw.9960#e2:
+    locator: 頁面商品分類導覽
+    published_date: null
+    publisher: 邁達康網路事業股份有限公司
+    quote_check: found
+    title: 邁達康投資人及利害關係人專區
+    url: https://www.golfshop.com.tw/aboutus/aboutus_INVESTMENT.asp
+  tw.9960#e3:
+    locator: 第57頁，附註三二（三）主要產品及勞務之收入；單位為新台幣千元
+    published_date: null
+    publisher: 邁達康網路事業股份有限公司
+    quote_check: found
+    title: 114及113年度合併財務報告暨會計師查核報告
+    url: https://www.golfshop.com.tw/aboutus/INVESTMENT/114/114_season4_whole.pdf
+  tw.9960#e4:
+    locator: 第57頁，附註三二（三）主要產品及勞務之收入；單位為新台幣千元
+    published_date: null
+    publisher: 邁達康網路事業股份有限公司
+    quote_check: found
+    title: 114及113年度合併財務報告暨會計師查核報告
+    url: https://www.golfshop.com.tw/aboutus/INVESTMENT/114/114_season4_whole.pdf
+  tw.9960#e5:
+    locator: 第57頁，附註三二（三）主要產品及勞務之收入；單位為新台幣千元
+    published_date: null
+    publisher: 邁達康網路事業股份有限公司
+    quote_check: found
+    title: 114及113年度合併財務報告暨會計師查核報告
+    url: https://www.golfshop.com.tw/aboutus/INVESTMENT/114/114_season4_whole.pdf
+  tw.9960#e6:
+    locator: 第29頁，附註十一子公司，投資公司名稱與子公司名稱欄
+    published_date: null
+    publisher: 邁達康網路事業股份有限公司
+    quote_check: found
+    title: 114及113年度合併財務報告暨會計師查核報告
+    url: https://www.golfshop.com.tw/aboutus/INVESTMENT/114/114_season4_whole.pdf
+  tw.9960#e7:
+    locator: 第29頁，附註十一子公司；投資公司為本公司，114年底持股欄
+    published_date: null
+    publisher: 邁達康網路事業股份有限公司
+    quote_check: found
+    title: 114及113年度合併財務報告暨會計師查核報告
+    url: https://www.golfshop.com.tw/aboutus/INVESTMENT/114/114_season4_whole.pdf
+  tw.9960#e8:
+    locator: 第29至30頁，附註十一子公司續表；投資公司為本公司，114年底持股欄
+    published_date: null
+    publisher: 邁達康網路事業股份有限公司
+    quote_check: found
+    title: 114及113年度合併財務報告暨會計師查核報告
+    url: https://www.golfshop.com.tw/aboutus/INVESTMENT/114/114_season4_whole.pdf

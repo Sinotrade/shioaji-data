@@ -8,12 +8,156 @@ industry:
   l0_code: '28'
   l0_name: 電子零組件業
   l0_name_en: Electronic Parts and Components
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.components
+  l2_name: 電子零組件
+  l2_name_en: Electronic Components
+  l3: comp.connector
+  l3_name: 連接器與線材
+  l3_name_en: Connectors & Cables
+primary_chain_position: midstream
+summary_short: 製造及銷售電腦週邊、網路與影音連接線材。
+summary_long: 松普科技主要從事3C電線製造及連接器組裝產品銷售，官網列有HDMI線、USB線及CAT.6網路線。2026年上半年營收以電腦週邊用線材金額最高，其次為網路用線材，另有其他項目。公司將綠能產業專用線列入營運展望。集團透過海外子公司持有松普科技(東莞)有限公司及新松普塑膠電線(深圳)有限公司；深圳子公司已自2023年4月底停止生產，原訂單轉由台灣母公司與東莞子公司接單生產。
+segments:
+- evidence_ids:
+  - e6
+  id: computer_cables
+  name: 電腦週邊用線材
+  period: 2026年上半年
+  revenue_share_pct: null
+- evidence_ids:
+  - e6
+  id: network_cables
+  name: 網路用線材
+  period: 2026年上半年
+  revenue_share_pct: null
+- evidence_ids:
+  - e6
+  id: other
+  name: 其他
+  period: 2026年上半年
+  revenue_share_pct: null
+relations:
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: ee0c1f71447ab
+    evidence_level: primary
+    id: org.sunf-pu-electric-wire-cable-co-ltd
+    name: SUNF PU ELECTRIC WIRE & CABLE CO., LTD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接子公司；已停止生產
+    details:
+    - 間接子公司；已停止生產
+    edge: ebc07bdd26128
+    evidence_level: primary
+    id: org.新松普塑膠電線-深圳-有限公司
+    name: 新松普塑膠電線(深圳)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過海外子公司持有的間接子公司
+    details:
+    - 透過海外子公司持有的間接子公司
+    edge: e28b4ea66aa83
+    evidence_level: primary
+    id: org.松普科技-東莞-有限公司
+    name: 松普科技(東莞)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.sunfpu.com.tw
 tax_id: '43900488'
 incorporated: '1983-05-21'
 listed: '2001-03-12'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.5488#e10:
+    locator: 第15頁，營運展望
+    published_date: '2025-11-20'
+    publisher: 松普科技股份有限公司
+    quote_check: found
+    title: 114年第三季法人說明會
+    url: https://zh-tw.sunfpu.com/uploadfiles/44/Investment/3%E8%82%A1%E6%9D%B1%E5%B0%88%E6%AC%84/6%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83%E8%A8%8A%E6%81%AF/114-2c.pdf
+  tw.5488#e11:
+    locator: 第40頁，附註十二(四)，深圳子公司停止生產說明
+    published_date: null
+    publisher: 松普科技股份有限公司
+    quote_check: found
+    title: 民國115年及114年第2季合併財務報告
+    url: https://zh-tw.sunfpu.com/uploadfiles/44/Investment/1%E8%B2%A1%E5%8B%99%E8%A8%8A%E6%81%AF/2%E8%B2%A1%E5%8B%99%E5%A0%B1%E8%A1%A8/115q2_all.pdf
+  tw.5488#e2:
+    locator: 第4頁，公司簡介
+    published_date: '2025-11-20'
+    publisher: 松普科技股份有限公司
+    quote_check: found
+    title: 114年第三季法人說明會
+    url: https://zh-tw.sunfpu.com/uploadfiles/44/Investment/3%E8%82%A1%E6%9D%B1%E5%B0%88%E6%AC%84/6%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83%E8%A8%8A%E6%81%AF/114-2c.pdf
+  tw.5488#e3:
+    locator: 產品介紹清單
+    published_date: null
+    publisher: 松普科技股份有限公司
+    quote_check: found
+    title: 產品介紹
+    url: https://zh-tw.sunfpu.com/product.htm
+  tw.5488#e4:
+    locator: 產品區，USB系列
+    published_date: null
+    publisher: 松普科技股份有限公司
+    quote_check: found
+    title: 松普科技股份有限公司
+    url: https://zh-tw.sunfpu.com/
+  tw.5488#e5:
+    locator: 產品介紹清單
+    published_date: null
+    publisher: 松普科技股份有限公司
+    quote_check: not_found
+    title: 產品介紹
+    url: https://zh-tw.sunfpu.com/product.htm
+  tw.5488#e6:
+    locator: 第28頁，附註六(十四)收入；第3欄為2026年上半年
+    published_date: null
+    publisher: 松普科技股份有限公司
+    quote_check: found
+    title: 民國115年及114年第2季合併財務報告
+    url: https://zh-tw.sunfpu.com/uploadfiles/44/Investment/1%E8%B2%A1%E5%8B%99%E8%A8%8A%E6%81%AF/2%E8%B2%A1%E5%8B%99%E5%A0%B1%E8%A1%A8/115q2_all.pdf
+  tw.5488#e7:
+    locator: 第13頁，列入合併財務報表之子公司；投資公司為松普公司之列
+    published_date: null
+    publisher: 松普科技股份有限公司
+    quote_check: found
+    title: 民國115年及114年第2季合併財務報告
+    url: https://zh-tw.sunfpu.com/uploadfiles/44/Investment/1%E8%B2%A1%E5%8B%99%E8%A8%8A%E6%81%AF/2%E8%B2%A1%E5%8B%99%E5%A0%B1%E8%A1%A8/115q2_all.pdf
+  tw.5488#e8:
+    locator: 第13頁，子公司表；投資公司為SUNF PU ELECTRIC WIRE & CABLE CO., LTD.之東莞公司列
+    published_date: null
+    publisher: 松普科技股份有限公司
+    quote_check: found
+    title: 民國115年及114年第2季合併財務報告
+    url: https://zh-tw.sunfpu.com/uploadfiles/44/Investment/1%E8%B2%A1%E5%8B%99%E8%A8%8A%E6%81%AF/2%E8%B2%A1%E5%8B%99%E5%A0%B1%E8%A1%A8/115q2_all.pdf
+  tw.5488#e9:
+    locator: 第13頁，子公司表；投資公司為SUNF PU ELECTRIC WIRE & CABLE CO., LTD.之深圳公司列
+    published_date: null
+    publisher: 松普科技股份有限公司
+    quote_check: unreachable
+    title: 民國115年及114年第2季合併財務報告
+    url: https://zh-tw.sunfpu.com/uploadfiles/44/Investment/1%E8%B2%A1%E5%8B%99%E8%A8%8A%E6%81%AF/2%E8%B2%A1%E5%A0%B1%E8%A1%A8/115q2_all.pdf

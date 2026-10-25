@@ -8,12 +8,180 @@ industry:
   l0_code: '29'
   l0_name: 電子通路業
   l0_name_en: Electronic Products Distribution
-primary_chain_position: unknown
+  l1: tech
+  l1_name: 科技
+  l1_name_en: Technology
+  l2: tech.distribution
+  l2_name: 電子通路
+  l2_name_en: Electronics Distribution
+  l3: dist.components
+  l3_name: 電子零組件通路
+  l3_name_en: Electronic Components Distribution
+chain: chain.semiconductor
+chain_stage:
+  agreement: both
+  also: []
+  reason: 主要收入來自半導體電子零組件通路，涵蓋微控制器、功率元件及記憶體。
+  stage: distribution
+  stage_name: IC 通路與模組
+  tier: downstream
+primary_chain_position: downstream
+summary_short: 主要經營半導體與電子零組件通路，另從事生醫產品開發。
+summary_long: 昱捷主要經營電子零組件通路，合併財報以半導體部門為主要收入來源，並分列台灣及亞洲市場。通路產品涵蓋微控制器、功率半導體、LED驅動晶片，以及SRAM與PSRAM記憶體；功率產品包含碳化矽MOSFET與模組，官網列示電動車為應用領域之一。生醫事業另從事人工牙根植體及心臟支架開發。直接子公司包括三昱技研股份有限公司與Sentronic Investments Limited。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_semi_tw
+  name: 半導體部門－台灣
+  period: 2025年前三季
+  revenue_share_pct: null
+- evidence_ids:
+  - e2
+  id: seg_semi_asia
+  name: 半導體部門－亞洲
+  period: 2025年前三季
+  revenue_share_pct: null
+- evidence_ids:
+  - e2
+  id: seg_biomedical
+  name: 生醫事業部門
+  period: 2025年前三季
+  revenue_share_pct: null
+- evidence_ids:
+  - e2
+  id: seg_strategic
+  name: 策略產品部門
+  period: 2025年前三季
+  revenue_share_pct: null
+main_theme: theme.ev
+themes:
+- also: []
+  stage: materials
+  theme: theme.ev
+  tier: upstream
+- also: []
+  stage: application
+  theme: theme.sic
+  tier: downstream
+relations:
+  subsidiaries:
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: e65dd34adbe06
+    evidence_level: primary
+    id: org.sanyu-giken
+    name: 三昱技研股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: e1cba0d0880f6
+    evidence_level: primary
+    id: org.sentronic-investments-limited
+    name: Sentronic Investments Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.sentronic.com.tw
 tax_id: '22731120'
 incorporated: '1987-12-14'
 listed: '2004-11-01'
-confidence: official
-has_research: false
-quality_flags:
-- no_research
+as_of: '2026-10-24'
+confidence: ai_cross_checked
+has_research: true
+evidence:
+  tw.3232#e1:
+    locator: 昱捷簡介／主要經營項目
+    published_date: null
+    publisher: 昱捷股份有限公司
+    quote_check: found
+    title: 關於昱捷－昱捷股份有限公司
+    url: https://www.sentronic.com.tw/關於昱捷.html
+  tw.3232#e10:
+    locator: 公司簡介／功率半導體應用範圍
+    published_date: null
+    publisher: 昱捷股份有限公司
+    quote_check: found
+    title: 通路事業群－HestiaPower
+    url: https://www.sentronic.com.tw/HestiaPower.html
+  tw.3232#e11:
+    locator: 第47頁，附表三，交易人、交易往來對象及關係欄
+    published_date: '2025-11-12'
+    publisher: 昱捷股份有限公司
+    quote_check: found
+    title: 昱捷股份有限公司及子公司民國114年及113年第三季合併財務報告
+    url: https://www.sentronic.com.tw/data/財務資訊/114/114第三季財報-合併.pdf
+  tw.3232#e12:
+    locator: 第48頁，附表四，投資公司名稱及被投資公司名稱欄；另見第12頁列入合併財務報告之子公司表
+    published_date: '2025-11-12'
+    publisher: 昱捷股份有限公司
+    quote_check: found
+    title: 昱捷股份有限公司及子公司民國114年及113年第三季合併財務報告
+    url: https://www.sentronic.com.tw/data/財務資訊/114/114第三季財報-合併.pdf
+  tw.3232#e2:
+    locator: 第44頁，十四、部門資訊，114年1月1日至9月30日；欄序為半導體台灣、半導體亞洲、生醫、策略產品、調整及銷除、合計
+    published_date: '2025-11-12'
+    publisher: 昱捷股份有限公司
+    quote_check: found
+    title: 昱捷股份有限公司及子公司民國114年及113年第三季合併財務報告
+    url: https://www.sentronic.com.tw/data/財務資訊/114/114第三季財報-合併.pdf
+  tw.3232#e3:
+    locator: 公司簡介
+    published_date: null
+    publisher: 昱捷股份有限公司
+    quote_check: found
+    title: 通路事業群－RENESAS
+    url: https://www.sentronic.com.tw/RENESAS.html
+  tw.3232#e4:
+    locator: 產品優勢及特色
+    published_date: null
+    publisher: 昱捷股份有限公司
+    quote_check: found
+    title: 通路事業群－HestiaPower
+    url: https://www.sentronic.com.tw/HestiaPower.html
+  tw.3232#e5:
+    locator: 產品項目／功率模組
+    published_date: null
+    publisher: 昱捷股份有限公司
+    quote_check: found
+    title: 通路事業群－HestiaPower
+    url: https://www.sentronic.com.tw/HestiaPower.html
+  tw.3232#e6:
+    locator: 公司簡介
+    published_date: null
+    publisher: 昱捷股份有限公司
+    quote_check: found
+    title: 通路事業群－Macroblock
+    url: https://www.sentronic.com.tw/Macroblock.html
+  tw.3232#e7:
+    locator: 公司簡介
+    published_date: null
+    publisher: 昱捷股份有限公司
+    quote_check: found
+    title: 通路事業群－Lyontek
+    url: https://www.sentronic.com.tw/Lyontek.html
+  tw.3232#e8:
+    locator: 產品項目
+    published_date: null
+    publisher: 昱捷股份有限公司
+    quote_check: found
+    title: 通路事業群－Lyontek
+    url: https://www.sentronic.com.tw/Lyontek.html
+  tw.3232#e9:
+    locator: 昱捷簡介／主要經營項目
+    published_date: null
+    publisher: 昱捷股份有限公司
+    quote_check: found
+    title: 關於昱捷－昱捷股份有限公司
+    url: https://www.sentronic.com.tw/關於昱捷.html
