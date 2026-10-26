@@ -99,10 +99,10 @@ members:
   stage_role: also
 - id: tw.2316
   detail: 印刷電路板占營收77.08%，另有電路板置件及整機組裝，占22.92%。
-  as_of: '2026-10-15'
+  as_of: '2026-10-26'
   evidence:
   - tw.2316#e1
-  - tw.2316#e2
+  - tw.2316#e3
   confidence: ai_cross_checked
   source: classification
   stage: board
@@ -110,10 +110,10 @@ members:
   stage_role: primary
 - id: tw.2316
   detail: 印刷電路板占營收77.08%，另有電路板置件及整機組裝，占22.92%。
-  as_of: '2026-10-15'
+  as_of: '2026-10-26'
   evidence:
   - tw.2316#e1
-  - tw.2316#e2
+  - tw.2316#e3
   confidence: ai_cross_checked
   source: classification
   stage: assembly
@@ -131,7 +131,7 @@ members:
   stage_role: primary
 - id: tw.2367
   detail: 主要營收產品均為電路板，以HDI占比46%最高，另有軟硬結合板等。
-  as_of: '2026-10-15'
+  as_of: '2026-10-26'
   evidence:
   - tw.2367#e1
   - tw.2367#e2
@@ -191,11 +191,23 @@ members:
   stage_role: also
 - id: tw.2493
   detail: 機器設備占營收60.30%，以PCB濕製程設備為主，另銷售電著光阻等製程材料。
-  as_of: '2026-10-15'
+  as_of: '2026-10-26'
   evidence:
   - tw.2493#e1
   - tw.2493#e2
-  - tw.2493#e3
+  - tw.2493#e7
+  confidence: ai_cross_checked
+  source: classification
+  stage: tools
+  tier: upstream
+  stage_role: primary
+- id: tw.3030
+  detail: 自動檢測設備占營收97.21%，提供電路板製程及組裝用光學、X射線與電性檢測設備。
+  as_of: '2026-10-25'
+  evidence:
+  - tw.3030#e1
+  - tw.3030#e2
+  - tw.3030#e5
   confidence: ai_cross_checked
   source: classification
   stage: tools
@@ -383,10 +395,10 @@ members:
   stage_role: primary
 - id: tw.3563
   detail: 主要收入來自檢測設備及服務，供應PCB與載板光學檢測及電測設備。
-  as_of: '2026-10-15'
+  as_of: '2026-10-25'
   evidence:
   - tw.3563#e1
-  - tw.3563#e9
+  - tw.3563#e11
   confidence: ai_cross_checked
   source: classification
   stage: tools
@@ -416,10 +428,9 @@ members:
   stage_role: primary
 - id: tw.3715
   detail: 印刷電路板占合併營收99.7%，主要製造多層板與HDI等電路板。
-  as_of: '2026-10-15'
+  as_of: '2026-10-25'
   evidence:
   - tw.3715#e1
-  - tw.3715#e2
   confidence: ai_cross_checked
   source: classification
   stage: board
@@ -608,11 +619,10 @@ members:
   stage_role: primary
 - id: tw.5469
   detail: PCB部門收入最大，以電路板製造為主；另有EMS電路板組裝銷售服務。
-  as_of: '2026-10-15'
+  as_of: '2026-10-25'
   evidence:
   - tw.5469#e1
-  - tw.5469#e4
-  - tw.5469#e5
+  - tw.5469#e2
   confidence: ai_cross_checked
   source: classification
   stage: board
@@ -620,11 +630,10 @@ members:
   stage_role: primary
 - id: tw.5469
   detail: PCB部門收入最大，以電路板製造為主；另有EMS電路板組裝銷售服務。
-  as_of: '2026-10-15'
+  as_of: '2026-10-25'
   evidence:
   - tw.5469#e1
-  - tw.5469#e4
-  - tw.5469#e5
+  - tw.5469#e2
   confidence: ai_cross_checked
   source: classification
   stage: assembly
@@ -632,7 +641,7 @@ members:
   stage_role: also
 - id: tw.5475
   detail: 電子級玻纖布占合併營收98.40%，屬銅箔基板及PCB上游材料。
-  as_of: '2026-10-15'
+  as_of: '2026-10-26'
   evidence:
   - tw.5475#e1
   - tw.5475#e2
@@ -711,9 +720,11 @@ members:
   stage_role: primary
 - id: tw.6191
   detail: PCB製造占營收74.93%為主，另有EMS基板加工與系統組裝業務。
-  as_of: '2026-10-15'
+  as_of: '2026-10-25'
   evidence:
+  - tw.6191#e1
   - tw.6191#e2
+  - tw.6191#e3
   confidence: ai_cross_checked
   source: classification
   stage: board
@@ -721,9 +732,11 @@ members:
   stage_role: primary
 - id: tw.6191
   detail: PCB製造占營收74.93%為主，另有EMS基板加工與系統組裝業務。
-  as_of: '2026-10-15'
+  as_of: '2026-10-25'
   evidence:
+  - tw.6191#e1
   - tw.6191#e2
+  - tw.6191#e3
   confidence: ai_cross_checked
   source: classification
   stage: assembly
@@ -777,10 +790,11 @@ members:
   stage_role: primary
 - id: tw.6269
   detail: 軟式印刷電路板占營收94.91%，另提供SMT零件組裝及模組組裝。
-  as_of: '2026-10-15'
+  as_of: '2026-10-26'
   evidence:
   - tw.6269#e1
   - tw.6269#e2
+  - tw.6269#e3
   confidence: ai_cross_checked
   source: classification
   stage: board
@@ -788,10 +802,11 @@ members:
   stage_role: primary
 - id: tw.6269
   detail: 軟式印刷電路板占營收94.91%，另提供SMT零件組裝及模組組裝。
-  as_of: '2026-10-15'
+  as_of: '2026-10-26'
   evidence:
   - tw.6269#e1
   - tw.6269#e2
+  - tw.6269#e3
   confidence: ai_cross_checked
   source: classification
   stage: assembly
@@ -885,12 +900,10 @@ members:
   stage_role: primary
 - id: tw.6672
   detail: 主要生產銅箔基板、黏合片及散熱金屬基板，整體業務屬PCB基材供應。
-  as_of: '2026-10-15'
+  as_of: '2026-10-25'
   evidence:
   - tw.6672#e1
-  - tw.6672#e2
-  - tw.6672#e14
-  - tw.6672#e15
+  - tw.6672#e5
   confidence: ai_cross_checked
   source: classification
   stage: ccl
@@ -944,7 +957,7 @@ members:
   tier: null
 - id: tw.7795
   detail: 設備占營收93.74%，主力為ABF載板真空壓膜設備；膜材種類未明。
-  as_of: '2026-10-15'
+  as_of: '2026-10-26'
   evidence:
   - tw.7795#e1
   - tw.7795#e2
@@ -979,10 +992,11 @@ members:
   stage_role: also
 - id: tw.8039
   detail: 主業為軟性銅箔基板及軟板材料，另供應多層板接合用純膠。
-  as_of: '2026-10-14'
+  as_of: '2026-10-25'
   evidence:
-  - tw.8039#e1
-  - tw.8039#e2
+  - tw.8039#e02
+  - tw.8039#e03
+  - tw.8039#e04
   confidence: ai_cross_checked
   source: classification
   stage: ccl
@@ -1054,4 +1068,4 @@ members:
   stage: materials
   tier: upstream
   stage_role: primary
-as_of: '2026-10-25'
+as_of: '2026-10-26'

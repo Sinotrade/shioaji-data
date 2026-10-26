@@ -26,20 +26,24 @@ chain_stage:
   stage_name: 晶圓製造
   tier: midstream
 primary_chain_position: midstream
-summary_short: 以六吋砷化鎵晶圓代工為主，提供射頻及VCSEL光電製程。
-summary_long: 宏捷科以六吋砷化鎵晶圓代工為主要業務，提供HBT、pHEMT與BiHEMT等射頻製程，應用涵蓋手機及Wi-Fi功率放大器、射頻開關與低雜訊放大器。其0.25微米ED BiHEMT可整合PA、開關及LNA，ED pHEMT支援5G射頻應用。光電業務包括用於3D感測及光通訊的VCSEL製程，2026年5月揭露400G／800G產品持續放量。另已完成低軌衛星Ku頻段HBT PA技術開發，並為中美矽晶製品股份有限公司之子公司。
+summary_short: 以六吋砷化鎵晶圓代工賺取收入，提供射頻及VCSEL光電製程。
+summary_long: 宏捷科以六吋砷化鎵晶圓代工為核心，2025年砷化鎵晶片占營收100%。製程包括HBT、pHEMT及BiHEMT，服務手機與Wi-Fi射頻應用，另提供VCSEL製程，用於3D感測、LiDAR與光通訊。2026年5月官網記載400G／800G VCSEL產品持續放量。主要磊晶供貨商包括全新光電與高平磊晶；IQE於2024年公告供應砷化鎵晶圓，供宏捷科製造Lansus手機功率放大器。公司為中美矽晶子公司，並於2026年8月公告約28億元無塵室及產線整合工程規劃，交易相對人尚未確定。
 segments:
 - evidence_ids:
-  - e11
-  id: non_rf
-  name: 非射頻產品
+  - e1
+  id: seg_gaas
+  name: 砷化鎵晶片與晶圓代工
   period: '2025'
-  revenue_share_pct: null
+  revenue_share_pct: 100
 main_theme: theme.5g
 themes:
 - also: []
   stage: components
   theme: theme.5g
+  tier: upstream
+- also: []
+  stage: components
+  theme: theme.drone
   tier: upstream
 - also: []
   stage: components
@@ -50,6 +54,78 @@ themes:
   theme: theme.vcsel
   tier: midstream
 relations:
+  competitors:
+  - as_of: '2026-04-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 砷化鎵晶圓代工市場競爭
+    details:
+    - 砷化鎵晶圓代工市場競爭
+    edge: ea5a43fe928b7
+    evidence_level: primary
+    id: tw.3105
+    name: 穩懋
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  customers:
+  - as_of: '2024-04-10'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 手機功率放大器晶圓代工
+    details:
+    - 手機功率放大器晶圓代工
+    edge: e1ca66ccb365d
+    evidence_level: primary
+    id: org.lansus
+    name: Lansus
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2022-08-09'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 砷化鎵晶圓代工客戶
+    details:
+    - 砷化鎵晶圓代工客戶
+    edge: e1721f6621872
+    evidence_level: media
+    id: org.unisoc
+    name: 紫光展銳
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2022-08-09'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 砷化鎵晶圓代工客戶
+    details:
+    - 砷化鎵晶圓代工客戶
+    edge: e13c85524bd3d
+    evidence_level: media
+    id: tw.4968
+    name: 立積
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2022-08-09'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 砷化鎵晶圓代工客戶
+    details:
+    - 砷化鎵晶圓代工客戶
+    edge: ed4712fbf19ef
+    evidence_level: media
+    id: us.SWKS
+    name: Skyworks
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   parents:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
@@ -57,7 +133,7 @@ relations:
     detail: 砷化鎵晶片製造及貿易
     details:
     - 砷化鎵晶片製造及貿易
-    - 母公司
+    - 母公司與控制關係
     edge: e5b63638664a2
     evidence_level: primary
     id: tw.5483
@@ -67,102 +143,191 @@ relations:
     share_pct: null
     weight: 2
   suppliers:
-  - as_of: '2022-02-10'
+  - as_of: '2026-04-30'
     confidence: ai_cross_checked
     counterparty_shares: []
     detail: 手機射頻用磊晶片
     details:
     - 手機射頻用磊晶片
+    - 磊晶圓供應
     edge: e23d5b8446bce
-    evidence_level: media
+    evidence_level: primary
     id: tw.2455
     name: 全新
     ranking_basis: unranked
     share_basis: null
     share_pct: null
+    weight: 2
+  - as_of: '2024-04-10'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 手機功率放大器用砷化鎵晶圓供應協議
+    details:
+    - 手機功率放大器用砷化鎵晶圓供應協議
+    edge: ef85b51f3c721
+    evidence_level: primary
+    id: eu.IQE
+    name: IQE
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
     weight: 1
+  - as_of: '2026-04-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 磊晶圓供應
+    details:
+    - 磊晶圓供應
+    edge: e409d672b6ab2
+    evidence_level: primary
+    id: org.iqe-taiwan
+    name: 高平磊晶
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 未具名的美國與中國大陸PA IC設計公司客戶
+- 未具名的VCSEL歐美及中國大陸客戶
+- 2026年無塵室及產線整合工程交易相對人：公告時尚未確定
 website: http://www.awsc.com.tw
 tax_id: '16130423'
 incorporated: '1998-12-30'
 listed: '2009-06-01'
-as_of: '2026-10-15'
+as_of: '2026-10-26'
 confidence: ai_cross_checked
 has_research: true
 evidence:
   tw.8086#e1:
+    locator: 第72頁，主要產品項目及其營業比重；欄序為113年度、114年度
+    published_date: '2026-04-30'
+    publisher: 宏捷科技股份有限公司
+    quote_check: found
+    title: 宏捷科技股份有限公司114年度年報
+    url: https://www.awsc.com.tw/Files/Financial/%E8%82%A1%E6%9D%B1%E6%9C%83%E8%A8%8A/114%E5%B9%B4%E5%BA%A6%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1(final)%20.pdf
+  tw.8086#e10:
+    locator: 第78頁，競爭情形
+    published_date: '2026-04-30'
+    publisher: 宏捷科技股份有限公司
+    quote_check: found
+    title: 宏捷科技股份有限公司114年度年報
+    url: https://www.awsc.com.tw/Files/Financial/%E8%82%A1%E6%9D%B1%E6%9C%83%E8%A8%8A/114%E5%B9%B4%E5%BA%A6%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1(final)%20.pdf
+  tw.8086#e11:
+    locator: 2022/06
+    published_date: null
+    publisher: 宏捷科技股份有限公司
+    quote_check: found
+    title: 大事記要
+    url: https://www.awsc.com.tw/events.aspx
+  tw.8086#e12:
+    locator: 第43頁，員工職涯能力發展培訓
+    published_date: '2026-04-30'
+    publisher: 宏捷科技股份有限公司
+    quote_check: found
+    title: 宏捷科技股份有限公司114年度年報
+    url: https://www.awsc.com.tw/Files/Financial/%E8%82%A1%E6%9D%B1%E6%9C%83%E8%A8%8A/114%E5%B9%B4%E5%BA%A6%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1(final)%20.pdf
+  tw.8086#e13:
+    locator: 重大訊息第1項標的物及第3項董事會通過日期
+    published_date: '2026-08-06'
+    publisher: 公開資訊觀測站，玉山證券轉載
+    quote_check: found
+    title: 宏捷科 本公司規劃新建3F無塵室及生產線整合相關附屬工程公告
+    url: https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7BD6C0A103-2AF9-4B41-83A0-26C99C09642B%7D
+  tw.8086#e14:
+    locator: 重大訊息第5項，交易總金額
+    published_date: '2026-08-06'
+    publisher: 公開資訊觀測站，玉山證券轉載
+    quote_check: found
+    title: 宏捷科 本公司規劃新建3F無塵室及生產線整合相關附屬工程公告
+    url: https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7BD6C0A103-2AF9-4B41-83A0-26C99C09642B%7D
+  tw.8086#e15:
+    locator: 重大訊息第6項，交易相對人及其與公司之關係
+    published_date: '2026-08-06'
+    publisher: 公開資訊觀測站，玉山證券轉載
+    quote_check: found
+    title: 宏捷科 本公司規劃新建3F無塵室及生產線整合相關附屬工程公告
+    url: https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7BD6C0A103-2AF9-4B41-83A0-26C99C09642B%7D
+  tw.8086#e16:
+    locator: HBT製程及應用
+    published_date: null
+    publisher: 宏捷科技股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.awsc.com.tw/profile.aspx?Lang=Chinese
+  tw.8086#e17:
+    locator: 2023/08
+    published_date: null
+    publisher: 宏捷科技股份有限公司
+    quote_check: found
+    title: 大事記要
+    url: https://www.awsc.com.tw/events.aspx
+  tw.8086#e18:
+    locator: 2026-04-07新聞末段
+    published_date: '2026-04-07'
+    publisher: MoneyDJ，宏捷科技官網轉載
+    quote_check: found
+    title: 無人機應用擴大，宏捷科Wi-Fi PA出貨動能勁
+    url: https://www.awsc.com.tw/News.aspx
+  tw.8086#e19:
+    locator: 第73頁，公司目前之商品（服務）項目
+    published_date: '2026-04-30'
+    publisher: 宏捷科技股份有限公司
+    quote_check: found
+    title: 宏捷科技股份有限公司114年度年報
+    url: https://www.awsc.com.tw/Files/Financial/%E8%82%A1%E6%9D%B1%E6%9C%83%E8%A8%8A/114%E5%B9%B4%E5%BA%A6%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1(final)%20.pdf
+  tw.8086#e2:
     locator: 公司簡介第一段
     published_date: null
     publisher: 宏捷科技股份有限公司
     quote_check: found
-    title: 宏捷科技－公司簡介
+    title: 公司簡介
     url: https://www.awsc.com.tw/profile.aspx?Lang=Chinese
-  tw.8086#e10:
-    locator: 第3頁，中美矽晶集團
-    published_date: '2025-06-04'
-    publisher: 宏捷科技股份有限公司
-    quote_check: found
-    title: 宏捷科技2025年6月4日法人說明會簡報
-    url: https://www.awsc.com.tw/Files/Financial/%E6%B3%95%E8%AA%AA%E6%9C%83/%E6%B3%95%E8%AA%AA%E6%9C%83_%E4%B8%AD%E6%96%87_AWSC_06-04-2025Final.pdf
-  tw.8086#e11:
-    locator: 2026-05-28公司新聞稿，非射頻產品段落
-    published_date: '2026-05-28'
-    publisher: 宏捷科技股份有限公司
-    quote_check: found
-    title: 宏捷科技115年股東會順利召開，營運體質顯著優化，深化5G與WiFi7布局 迎接新世代商機
-    url: https://www.awsc.com.tw/news.aspx?Lang=Chinese
-  tw.8086#e2:
-    locator: InGaP HBT／HBT226／Application
-    published_date: null
-    publisher: 宏捷科技股份有限公司
-    quote_check: found
-    title: 宏捷科技－Product Summary
-    url: https://www.awsc.com.tw/product_summary.aspx?Lang=Chinese
   tw.8086#e3:
-    locator: Applications
-    published_date: null
+    locator: 第73頁，公司目前之商品（服務）項目
+    published_date: '2026-04-30'
     publisher: 宏捷科技股份有限公司
     quote_check: found
-    title: 宏捷科技－InGaP HBT
-    url: https://www.awsc.com.tw/HBT.aspx?Lang=Chinese
+    title: 宏捷科技股份有限公司114年度年報
+    url: https://www.awsc.com.tw/Files/Financial/%E8%82%A1%E6%9D%B1%E6%9C%83%E8%A8%8A/114%E5%B9%B4%E5%BA%A6%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1(final)%20.pdf
   tw.8086#e4:
-    locator: Applications
+    locator: 2026/05
     published_date: null
     publisher: 宏捷科技股份有限公司
     quote_check: found
-    title: 宏捷科技－0.25um ED pHEMT
-    url: https://www.awsc.com.tw/ED25_pHEMT.aspx?Lang=Chinese
+    title: 大事記要
+    url: https://www.awsc.com.tw/events.aspx
   tw.8086#e5:
-    locator: Features
-    published_date: null
-    publisher: 宏捷科技股份有限公司
-    quote_check: found
-    title: 宏捷科技－ED BiHEMT技術頁
-    url: https://www.awsc.com.tw/ED25_BHEMT.aspx?Lang=Chinese
-  tw.8086#e6:
     locator: Applications
     published_date: null
     publisher: 宏捷科技股份有限公司
     quote_check: found
-    title: 宏捷科技－ED BiHEMT技術頁
-    url: https://www.awsc.com.tw/ED25_BHEMT.aspx?Lang=Chinese
-  tw.8086#e7:
-    locator: Applications
-    published_date: null
-    publisher: 宏捷科技股份有限公司
-    quote_check: found
-    title: 宏捷科技－VCSEL
+    title: VCSEL
     url: https://www.awsc.com.tw/VCSEL.aspx?Lang=Chinese
+  tw.8086#e6:
+    locator: 第86頁，主要原料之供應狀況
+    published_date: '2026-04-30'
+    publisher: 宏捷科技股份有限公司
+    quote_check: found
+    title: 宏捷科技股份有限公司114年度年報
+    url: https://www.awsc.com.tw/Files/Financial/%E8%82%A1%E6%9D%B1%E6%9C%83%E8%A8%8A/114%E5%B9%B4%E5%BA%A6%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1(final)%20.pdf
+  tw.8086#e7:
+    locator: 正文第二段
+    published_date: '2024-04-10'
+    publisher: IQE plc
+    quote_check: found
+    title: IQE announces expanded customer partnership with AWSC and Lansus to serve Android ecosystem
+    url: https://www.iqep.com/media/press-releases/2024/iqe-announces-expanded-customer-partnership-with-awsc-and-lansus-to-serve-android-ecosystem/
   tw.8086#e8:
-    locator: 2026/05條目
-    published_date: null
-    publisher: 宏捷科技股份有限公司
+    locator: 正文第二段，AWSC製造及供貨方向
+    published_date: '2024-04-10'
+    publisher: IQE plc
     quote_check: found
-    title: 宏捷科技－大事記要
-    url: https://www.awsc.com.tw/events.aspx
+    title: IQE announces expanded customer partnership with AWSC and Lansus to serve Android ecosystem
+    url: https://www.iqep.com/media/press-releases/2024/iqe-announces-expanded-customer-partnership-with-awsc-and-lansus-to-serve-android-ecosystem/
   tw.8086#e9:
-    locator: 2023/08條目
-    published_date: null
-    publisher: 宏捷科技股份有限公司
+    locator: 世界第二大砷化鎵晶圓代工廠段落
+    published_date: '2022-08-09'
+    publisher: 天下雜誌
     quote_check: found
-    title: 宏捷科技－大事記要
-    url: https://www.awsc.com.tw/events.aspx
+    title: 從「躺著都有人餵」的龍頭跌落　晶圓女王敲醒宏捷科，攻進SpaceX
+    url: https://www.cw.com.tw/article/5122318

@@ -29,22 +29,6 @@ members:
   evidence:
   - tw.1101#e06
   confidence: ai_cross_checked
-- id: tw.1319
-  stage: parts
-  tier: midstream
-  detail: 電動車外觀零組件研發
-  as_of: '2025-03-31'
-  evidence:
-  - tw.1319#e5
-  confidence: ai_cross_checked
-- id: tw.1409
-  stage: parts
-  tier: midstream
-  detail: 電動車連接器與充電材料
-  as_of: '2026-08-27'
-  evidence:
-  - tw.1409#e9
-  confidence: ai_cross_checked
 - id: tw.1447
   stage: materials
   tier: upstream
@@ -85,14 +69,6 @@ members:
   as_of: '2025-07-22'
   evidence:
   - tw.1513#e09
-  confidence: ai_cross_checked
-- id: tw.1514
-  stage: vehicle
-  tier: downstream
-  detail: 電動車充電設備
-  as_of: 2026-10
-  evidence:
-  - tw.1514#e5
   confidence: ai_cross_checked
 - id: tw.1519
   stage: vehicle
@@ -200,10 +176,10 @@ members:
 - id: tw.1609
   stage: parts
   tier: midstream
-  detail: 電動車馬達用漆包線
-  as_of: '2026-10-15'
+  detail: 電動車驅動馬達漆包線
+  as_of: '2026-10-26'
   evidence:
-  - tw.1609#e5
+  - tw.1609#e05
   confidence: ai_cross_checked
 - id: tw.1616
   stage: parts
@@ -237,14 +213,6 @@ members:
   as_of: '2026-10-15'
   evidence:
   - tw.1723#e12
-  confidence: ai_cross_checked
-- id: tw.1785
-  stage: parts
-  tier: midstream
-  detail: 電動車冷卻迴路用冷卻液
-  as_of: '2026-10-14'
-  evidence:
-  - tw.1785#e5
   confidence: ai_cross_checked
 - id: tw.2002
   stage: materials
@@ -339,29 +307,26 @@ members:
 - id: tw.2201
   stage: vehicle
   tier: downstream
-  detail: 電動車整車製造
-  as_of: '2025-12-31'
+  detail: 電動車整車量產
+  as_of: '2025-05-07'
   evidence:
-  - tw.2201#e3
-  - tw.2201#e4
+  - tw.2201#e17
   confidence: ai_cross_checked
 - id: tw.2204
   stage: vehicle
   tier: downstream
-  detail: 電動商用整車
-  as_of: '2025-08-22'
+  detail: 電動商用車整車研發製造
+  as_of: '2025-12-18'
   evidence:
-  - tw.2204#e4
+  - tw.2204#e6
   confidence: ai_cross_checked
 - id: tw.2206
   stage: vehicle
   tier: downstream
-  detail: 子公司南陽實業經營純電整車產品
-  as_of: '2025-11-14'
+  detail: 電動機車整車
+  as_of: '2026-10-25'
   evidence:
-  - tw.2206#e5
-  - tw.2206#e6
-  - tw.2206#e7
+  - tw.2206#e14
   confidence: ai_cross_checked
 - id: tw.2207
   stage: vehicle
@@ -445,11 +410,12 @@ members:
 - id: tw.2258
   stage: vehicle
   tier: downstream
-  detail: 電動車整車開發與販售
+  detail: 電動乘用車與商用巴士
   as_of: '2026-06-17'
   evidence:
-  - tw.2258#e4
-  - tw.2258#e5
+  - tw.2258#e02
+  - tw.2258#e03
+  - tw.2258#e04
   confidence: ai_cross_checked
 - id: tw.2301
   stage: vehicle
@@ -470,10 +436,10 @@ members:
 - id: tw.2312
   stage: vehicle
   tier: downstream
-  detail: 電動車充電設備
-  as_of: 2025-12
+  detail: 充電樁製造
+  as_of: '2026-09-15'
   evidence:
-  - tw.2312#e7
+  - tw.2312#e08
   confidence: ai_cross_checked
 - id: tw.2317
   stage: vehicle
@@ -500,12 +466,12 @@ members:
   - tw.2342#e9
   confidence: ai_cross_checked
 - id: tw.2351
-  stage: materials
-  tier: upstream
-  detail: 電動車動力系統用導線架
-  as_of: 2026-09
+  stage: parts
+  tier: midstream
+  detail: 電動車動力與電控用導線架
+  as_of: '2026-09-09'
   evidence:
-  - tw.2351#e12
+  - tw.2351#e11
   confidence: ai_cross_checked
 - id: tw.2354
   stage: parts
@@ -526,10 +492,11 @@ members:
 - id: tw.2371
   stage: parts
   tier: midstream
-  detail: 電動巴士動力系統
-  as_of: '2026-08-18'
+  detail: 電動巴士馬達與驅動器
+  as_of: '2025-10-20'
   evidence:
-  - tw.2371#e15
+  - tw.2371#e28
+  - tw.2371#e28b
   confidence: ai_cross_checked
 - id: tw.2377
   stage: vehicle
@@ -538,14 +505,6 @@ members:
   as_of: '2026-03-18'
   evidence:
   - tw.2377#e09
-  confidence: ai_cross_checked
-- id: tw.2393
-  stage: parts
-  tier: midstream
-  detail: 電動車功率元件方案
-  as_of: 2025-12
-  evidence:
-  - tw.2393#e12
   confidence: ai_cross_checked
 - id: tw.2399
   stage: parts
@@ -567,10 +526,10 @@ members:
 - id: tw.2428
   stage: parts
   tier: midstream
-  detail: 電動車電池溫度偵測元件
-  as_of: 2026-10
+  detail: 電動車電池溫度感測元件
+  as_of: '2026-10-26'
   evidence:
-  - tw.2428#e6
+  - tw.2428#e09
   confidence: ai_cross_checked
 - id: tw.2429
   stage: parts
@@ -591,14 +550,6 @@ members:
   - tw.2457#e10
   - tw.2457#e15
   confidence: ai_cross_checked
-- id: tw.2458
-  stage: parts
-  tier: midstream
-  detail: 電動巴士AI緊急轉向防護系統
-  as_of: '2025-12-31'
-  evidence:
-  - tw.2458#e12
-  confidence: ai_cross_checked
 - id: tw.2460
   stage: parts
   tier: midstream
@@ -618,10 +569,18 @@ members:
 - id: tw.2466
   stage: parts
   tier: midstream
-  detail: 電動車應用光電元件
+  detail: 電動車用光電元件
   as_of: '2025-12-11'
   evidence:
-  - tw.2466#e10
+  - tw.2466#e6
+  confidence: ai_cross_checked
+- id: tw.2472
+  stage: parts
+  tier: midstream
+  detail: 電動車電子用電容器
+  as_of: '2024-11-21'
+  evidence:
+  - tw.2472#e5
   confidence: ai_cross_checked
 - id: tw.2478
   stage: parts
@@ -634,10 +593,10 @@ members:
 - id: tw.2481
   stage: materials
   tier: upstream
-  detail: 電動車充電樁用功率半導體
-  as_of: '2026-10-14'
+  detail: 電動車應用功率元件
+  as_of: '2025-04-22'
   evidence:
-  - tw.2481#e9
+  - tw.2481#e08
   confidence: ai_cross_checked
 - id: tw.2483
   stage: parts
@@ -680,6 +639,14 @@ members:
   - tw.3003#e05
   - tw.3003#e07
   confidence: ai_cross_checked
+- id: tw.3005
+  stage: parts
+  tier: midstream
+  detail: 新能源車金屬機構件
+  as_of: '2026-08-14'
+  evidence:
+  - tw.3005#e13
+  confidence: ai_cross_checked
 - id: tw.3023
   stage: parts
   tier: midstream
@@ -710,10 +677,10 @@ members:
 - id: tw.3042
   stage: parts
   tier: midstream
-  detail: 電動車用車規頻率元件
-  as_of: 2026-10
+  detail: 電動車用石英頻率元件
+  as_of: '2026-10-25'
   evidence:
-  - tw.3042#e11
+  - tw.3042#e6
   confidence: ai_cross_checked
 - id: tw.3045
   stage: vehicle
@@ -807,14 +774,6 @@ members:
   evidence:
   - tw.3209#e4
   confidence: ai_cross_checked
-- id: tw.3211
-  stage: parts
-  tier: midstream
-  detail: 輕型電動載具電池模組
-  as_of: '2026-05-19'
-  evidence:
-  - tw.3211#e9
-  confidence: ai_cross_checked
 - id: tw.3232
   stage: materials
   tier: upstream
@@ -859,10 +818,10 @@ members:
 - id: tw.3357
   stage: parts
   tier: midstream
-  detail: 電動車電池系統共模扼流圈與功率電感
-  as_of: '2026-10-15'
+  detail: 電動車電源與電磁干擾抑制元件
+  as_of: 2026-10
   evidence:
-  - tw.3357#e8
+  - tw.3357#e7
   confidence: ai_cross_checked
 - id: tw.3388
   stage: parts
@@ -922,14 +881,6 @@ members:
   as_of: '2026-10-23'
   evidence:
   - tw.3597#e12
-  confidence: ai_cross_checked
-- id: tw.3605
-  stage: parts
-  tier: midstream
-  detail: 電動車高電壓連接器與充電插座
-  as_of: '2026-10-15'
-  evidence:
-  - tw.3605#e10
   confidence: ai_cross_checked
 - id: tw.3624
   stage: parts
@@ -991,10 +942,10 @@ members:
 - id: tw.3715
   stage: parts
   tier: midstream
-  detail: 電動車應用印刷電路板
-  as_of: 2025-12
+  detail: 電動車用HDI電路板
+  as_of: '2024-05-08'
   evidence:
-  - tw.3715#e15
+  - tw.3715#e5
   confidence: ai_cross_checked
 - id: tw.3717
   stage: parts
@@ -1115,10 +1066,10 @@ members:
 - id: tw.4919
   stage: parts
   tier: midstream
-  detail: 日本子公司電動車電池管理IC
-  as_of: '2026-10-14'
+  detail: 日本子公司電動車電池監控晶片
+  as_of: '2025-12-31'
   evidence:
-  - tw.4919#e_ev
+  - tw.4919#e06
   confidence: ai_cross_checked
 - id: tw.4931
   stage: parts
@@ -1231,11 +1182,10 @@ members:
 - id: tw.5425
   stage: materials
   tier: upstream
-  detail: 電動車快速充電站用碳化矽功率元件
-  as_of: '2025-07-30'
+  detail: 電動車用整流及功率元件
+  as_of: '2024-12-31'
   evidence:
-  - tw.5425#e6
-  - tw.5425#e8
+  - tw.5425#e21
   confidence: ai_cross_checked
 - id: tw.5439
   stage: parts
@@ -1260,14 +1210,6 @@ members:
   as_of: 2024-12
   evidence:
   - tw.6115#e7
-  confidence: ai_cross_checked
-- id: tw.6121
-  stage: parts
-  tier: midstream
-  detail: 電動汽車相關電池模組
-  as_of: '2026-10-14'
-  evidence:
-  - tw.6121#e7
   confidence: ai_cross_checked
 - id: tw.6124
   stage: parts
@@ -1320,10 +1262,10 @@ members:
 - id: tw.6173
   stage: parts
   tier: midstream
-  detail: 電動車車載充電器用被動元件
-  as_of: '2026-10-23'
+  detail: 電動車電池系統用電容與電阻
+  as_of: '2026-10-25'
   evidence:
-  - tw.6173#e11
+  - tw.6173#e7
   confidence: ai_cross_checked
 - id: tw.6174
   stage: parts
@@ -1401,10 +1343,10 @@ members:
 - id: tw.6271
   stage: parts
   tier: midstream
-  detail: 電動車DC/DC、車載充電器與逆變器功率封裝
-  as_of: '2026-04-15'
+  detail: 電動車功率模組用AMB陶瓷基板
+  as_of: '2026-10-25'
   evidence:
-  - tw.6271#e6
+  - tw.6271#e12
   confidence: ai_cross_checked
 - id: tw.6278
   stage: parts
@@ -1425,18 +1367,10 @@ members:
 - id: tw.6282
   stage: parts
   tier: midstream
-  detail: 電動車車載充電器
-  as_of: 2026-09
+  detail: 電動車車載電源
+  as_of: '2026-03-30'
   evidence:
-  - tw.6282#e4
-  confidence: ai_cross_checked
-- id: tw.6282
-  stage: vehicle
-  tier: downstream
-  detail: 電動車充電設備
-  as_of: 2026-09
-  evidence:
-  - tw.6282#e5
+  - tw.6282#e2
   confidence: ai_cross_checked
 - id: tw.6283
   stage: vehicle
@@ -1450,11 +1384,10 @@ members:
 - id: tw.6290
   stage: parts
   tier: midstream
-  detail: 電動車配線與充電連接零組件
-  as_of: '2026-04-10'
+  detail: 電動車及充電系統線束
+  as_of: '2026-10-25'
   evidence:
-  - tw.6290#e05
-  - tw.6290#e06
+  - tw.6290#e4
   confidence: ai_cross_checked
 - id: tw.6292
   stage: parts
@@ -1468,9 +1401,9 @@ members:
   stage: vehicle
   tier: downstream
   detail: 電動車充電設備
-  as_of: 2026-10
+  as_of: '2026-10-25'
   evidence:
-  - tw.6409#e13
+  - tw.6409#e9
   confidence: ai_cross_checked
 - id: tw.6411
   stage: parts
@@ -1552,6 +1485,14 @@ members:
   as_of: '2025-12-31'
   evidence:
   - tw.6642#e8
+  confidence: ai_cross_checked
+- id: tw.6672
+  stage: materials
+  tier: upstream
+  detail: 電動車用高導熱金屬基板與散熱薄膜
+  as_of: '2024-12-31'
+  evidence:
+  - tw.6672#e13
   confidence: ai_cross_checked
 - id: tw.6680
   stage: vehicle
@@ -1670,10 +1611,11 @@ members:
 - id: tw.7788
   stage: parts
   tier: midstream
-  detail: 電動車與充電應用繼電器
+  detail: 電動車與充電系統的開關控制元件
   as_of: '2026-09-08'
   evidence:
-  - tw.7788#e6
+  - tw.7788#e03
+  - tw.7788#e04
   confidence: ai_cross_checked
 - id: tw.8038
   stage: parts
@@ -1682,15 +1624,6 @@ members:
   as_of: '2025-11-19'
   evidence:
   - tw.8038#e4
-  confidence: ai_cross_checked
-- id: tw.8039
-  stage: parts
-  tier: midstream
-  detail: 電動車用軟板材料
-  as_of: '2026-10-14'
-  evidence:
-  - tw.8039#e7
-  - tw.8039#e8
   confidence: ai_cross_checked
 - id: tw.8042
   stage: parts
@@ -1808,16 +1741,6 @@ members:
   evidence:
   - tw.9937#e7
   confidence: ai_cross_checked
-- id: tw.9941
-  stage: vehicle
-  tier: downstream
-  detail: 子公司裕電俥電經營電動車充電服務
-  as_of: '2026-10-15'
-  evidence:
-  - tw.9941#e24
-  - tw.9941#e25
-  - tw.9941#e26
-  confidence: ai_cross_checked
 - id: tw.9942
   stage: parts
   tier: midstream
@@ -1834,4 +1757,4 @@ members:
   evidence:
   - tw.9951#e8
   confidence: ai_cross_checked
-as_of: '2026-10-25'
+as_of: '2026-10-26'

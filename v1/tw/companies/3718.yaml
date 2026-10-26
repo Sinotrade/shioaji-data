@@ -26,20 +26,29 @@ chain_stage:
   stage_name: 面板與模組
   tier: midstream
 primary_chain_position: midstream
-summary_short: 透過子公司經營節能顯示模組、影像產品與無人機業務。
-summary_long: 中光電投控透過百分之百持股的中強光電經營光電業務，集團主要產品包括節能產品與影像產品。2026年9月節能產品營收17.32億元，影像產品約9.31億元，節能產品為兩項已揭露產品線中規模較大者。節能產品涵蓋TV／PID、Monitor、NB與Tablet應用，並包括Monitor液晶顯示模組。旗下中光電智能機器人另開發Sniper中程防禦型無人機，導入3D列印技術進行機構、航電與酬載整合，構成集團的無人機業務。
+summary_short: 透過子公司經營背光與顯示系統、投影機及無人機事業。
+summary_long: 中光電投控透過全資子公司中強光電經營背光模組、相關顯示系統及投影機，旗下中光電智能機器人則提供無人機及設計製造服務。2026年9月節能產品營收17.32億元，影像產品營收約9.31億元，節能產品是兩項業務中較大的營收來源。10月公告中強光電董事會決議以含稅10億元出售南科建物及附屬設施予緯創。另公告透過中強光電實物減資，將智能機器人、智能雲服及中光創投股權移交投控直接持有，減資基準日為11月1日，截至研究日尚待生效。中光電智能機器人另與AEVEX合作，結合美方設計與台灣零組件生產無人載具。
 segments:
 - evidence_ids:
-  - e_energy
+  - e4
+  - e5
   id: seg_energy
-  name: 節能產品
+  name: 節能產品（中強光電子公司）
   period: 2026-09
   revenue_share_pct: null
 - evidence_ids:
-  - e_image
+  - e4
+  - e6
   id: seg_image
-  name: 影像產品
+  name: 影像產品（中強光電子公司）
   period: 2026-09
+  revenue_share_pct: null
+- evidence_ids:
+  - e7
+  - e9
+  id: seg_drone
+  name: 無人機與相關服務（中光電智能機器人子公司）
+  period: null
   revenue_share_pct: null
 main_theme: theme.drone
 themes:
@@ -48,17 +57,60 @@ themes:
   theme: theme.drone
   tier: downstream
 relations:
-  subsidiaries:
-  - as_of: '2026-10-01'
+  partners:
+  - as_of: '2026-10-03'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 旗下無人機事業公司
+    detail: 中光電智能機器人之無人載具設計與製造合作
     details:
-    - 旗下無人機事業公司
-    edge: e6d625e2db595
-    evidence_level: media
-    id: org.中光電智能機器人
-    name: 中光電智能機器人
+    - 中光電智能機器人之無人載具設計與製造合作
+    edge: e2f2a167131ba
+    evidence_level: primary
+    id: org.aevex
+    name: AEVEX
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2026-10-19'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 經中強光電間接持有之全資子公司
+    details:
+    - 經中強光電間接持有之全資子公司
+    edge: e4d9ef00b4208
+    evidence_level: primary
+    id: org.coretronic-intelligent-cloud-service
+    name: 中光電智能雲服股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-19'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 經中強光電間接持有之全資子公司
+    details:
+    - 經中強光電間接持有之全資子公司
+    edge: ef22b53ddf71f
+    evidence_level: primary
+    id: org.coretronic-intelligent-robotics
+    name: 中光電智能機器人股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-19'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 經中強光電間接持有之全資子公司
+    details:
+    - 經中強光電間接持有之全資子公司
+    edge: ebc7f878e329f
+    evidence_level: primary
+    id: org.coretronic-venture-capital
+    name: 中光創業投資股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -66,14 +118,65 @@ relations:
   - as_of: '2026-09-03'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 百分之百持股子公司
+    detail: 股份轉換取得之全資子公司
     details:
-    - 百分之百持股子公司
-    edge: e662e8996f948
+    - 股份轉換取得之全資子公司
+    edge: e9bd7438297f9
     evidence_level: primary
-    id: org.中強光電股份有限公司
+    id: tw.5371
     name: 中強光電股份有限公司
     ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 新台幣1,000,000千元（含稅）
+    as_of: '2026-10-12'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司中強光電決議出售南科建物及附屬設施
+    details:
+    - 子公司中強光電決議出售南科建物及附屬設施
+    edge: e89a5ed996530
+    event_date: '2026-10-12'
+    events:
+    - amount: 新台幣1,000,000千元（含稅）
+      detail: 子公司中強光電決議出售南科建物及附屬設施
+      event_date: '2026-10-12'
+    evidence_level: primary
+    id: tw.3231
+    name: 緯創
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣653,259,976元
+    as_of: '2026-10-19'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 擬以實物減資受讓中光電智能機器人普通股
+    details:
+    - 擬以實物減資受讓中光電智能機器人普通股
+    - 擬以實物減資受讓中光電智能雲服普通股
+    - 擬以實物減資受讓中光創業投資普通股
+    edge: e5b0d5dc98242
+    event_date: '2026-10-19'
+    events:
+    - amount: 新台幣653,259,976元
+      detail: 擬以實物減資受讓中光電智能機器人普通股
+      event_date: '2026-10-19'
+    - amount: 新台幣380,662,549元
+      detail: 擬以實物減資受讓中光電智能雲服普通股
+      event_date: '2026-10-19'
+    - amount: 新台幣308,461,135元
+      detail: 擬以實物減資受讓中光創業投資普通股
+      event_date: '2026-10-19'
+    evidence_level: primary
+    id: tw.5371
+    name: 中強光電股份有限公司
+    ranking_basis: unranked
+    role: buyer
     share_basis: null
     share_pct: null
     weight: 1
@@ -81,70 +184,105 @@ website: www.coreintelligence.com.tw
 tax_id: '62067997'
 incorporated: '2026-09-03'
 listed: '2026-09-03'
-as_of: '2026-10-15'
+as_of: '2026-10-26'
 confidence: ai_cross_checked
 has_research: true
 evidence:
-  tw.3718#e_applications:
-    locator: 內文節能產品應用別營收段
-    published_date: '2026-10-13'
-    publisher: 經濟日報
-    quote_check: found
-    title: 中光電投控影像產品及節能產品營運兩樣情
-    url: https://money.udn.com/money/amp/story/5612/9810912
-  tw.3718#e_circ_group:
-    locator: 內文第一段
-    published_date: '2026-10-01'
-    publisher: 經濟日報
-    quote_check: found
-    title: 中光電衝刺無人機
-    url: https://money.udn.com/money/amp/story/11074/9786617
-  tw.3718#e_circ_product:
-    locator: 內文第二段
-    published_date: '2026-10-01'
-    publisher: 經濟日報
-    quote_check: found
-    title: 中光電衝刺無人機
-    url: https://money.udn.com/money/amp/story/11074/9786617
-  tw.3718#e_circ_technology:
-    locator: 內文第三段
-    published_date: '2026-10-01'
-    publisher: 經濟日報
-    quote_check: found
-    title: 中光電衝刺無人機
-    url: https://money.udn.com/money/amp/story/11074/9786617
-  tw.3718#e_energy:
-    locator: 內文節能產品營收段
-    published_date: '2026-10-13'
-    publisher: MoneyDJ
-    quote_check: found
-    title: 中光電Q3營收回溫；10月節能出貨增/影像降
-    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=0e5b4fe8-f4c3-4554-9a63-ac394205d922&c=MB00
-  tw.3718#e_image:
-    locator: 內文影像產品營收段
-    published_date: '2026-10-13'
-    publisher: 經濟日報
-    quote_check: found
-    title: 中光電投控影像產品及節能產品營運兩樣情
-    url: https://money.udn.com/money/amp/story/5612/9810912
-  tw.3718#e_lcm:
-    locator: 內文最後一段
-    published_date: '2026-09-15'
-    publisher: DIGITIMES
-    quote_check: found
-    title: 中光電投控（3718）公布8月自結合併營收約34.29億元 年增3%
-    url: https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?cat=10&cnlid=13&id=0000768433_O9832F674736CE2N6KE15
-  tw.3718#e_ownership:
-    locator: 內文第一段
-    published_date: '2026-09-07'
-    publisher: 工商時報，nStock轉載
-    quote_check: found
-    title: 《光電股》中光電投控高層人事 異動
-    url: https://www.nstock.tw/news/article_c?id=20260907-050005000000
-  tw.3718#e_sub_filing:
-    locator: 公告標題
+  tw.3718#e1:
+    locator: 公司名稱及第5項設立登記資訊
     published_date: '2026-09-03'
-    publisher: 公開資訊觀測站重大訊息，MoneyDJ轉載
+    publisher: 公開資訊觀測站（MoneyDJ轉載）
     quote_check: found
-    title: 中光電投控 代子公司中強光電股份有限公司公告單一法人股東指派第14屆新任董事會成員
-    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=c0958eb5-4cb6-4a86-9c69-7a93993eac3a
+    title: 中光電投控 公告本公司取得經濟部申請設立登記完成
+    url: https://m.moneydj.com/f1a.aspx?a=42972d0c-1cfe-4300-b75d-9f1f2ad83060&c=MB06
+  tw.3718#e10:
+    locator: 影音新聞文字說明
+    published_date: '2026-10-03'
+    publisher: 中央社
+    quote_check: found
+    title: 美國AEVEX來台 中光電聯手造無人機
+    url: https://www.cna.com.tw/video/news/4356748
+  tw.3718#e11:
+    locator: 第5、6、9項交易金額、相對人及預計處分利益
+    published_date: '2026-10-12'
+    publisher: 公開資訊觀測站（MoneyDJ轉載）
+    quote_check: found
+    title: 中光電投控：中強光電董事會決議出售南科建物及附屬設施予緯創，預計獲利約5億元
+    url: https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=64975c13-efbc-487e-9a62-cdf77f321189
+  tw.3718#e12:
+    locator: 第5至7項交易數量、金額、相對人及取得方式
+    published_date: '2026-10-19'
+    publisher: 公開資訊觀測站（MoneyDJ轉載）
+    quote_check: found
+    title: 中光電投控 公告取得子公司中強光電股份有限公司以實物減資方式上繳中光電智能機器人股份有限公司之普通股
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=97b4c9ab-2925-4281-a681-dd86a383ad43&c=MB00
+  tw.3718#e13:
+    locator: 第5至7項交易數量、金額、相對人及取得方式
+    published_date: '2026-10-19'
+    publisher: 公開資訊觀測站（MoneyDJ轉載）
+    quote_check: found
+    title: 中光電投控 公告取得子公司中強光電股份有限公司以實物減資方式上繳中光電智能雲服股份有限公司之普通股
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=07423659-55e3-4c94-9466-f5a5fda9f90c
+  tw.3718#e14:
+    locator: 第5至7項交易數量、金額、相對人及取得方式
+    published_date: '2026-10-19'
+    publisher: 公開資訊觀測站（MoneyDJ轉載）
+    quote_check: found
+    title: 中光電投控 公告取得子公司中強光電股份有限公司以實物減資方式上繳中光創業投資股份有限公司之普通股
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=3f23a126-ff41-4a34-8000-bf57a1d9643a
+  tw.3718#e2:
+    locator: 第5項發生緣由
+    published_date: '2026-07-29'
+    publisher: 公開資訊觀測站（鉅亨網轉載）
+    quote_check: found
+    title: 中光電：公告取得證券櫃檯買賣中心核准中光電投資控股股份有限公司股票於115年9月3日上櫃，暨於同日本公司股票終止上櫃
+    url: https://news.cnyes.com/news/id/6550568
+  tw.3718#e3:
+    locator: 記者楊伶雯報導，首段
+    published_date: '2026-09-03'
+    publisher: 經濟日報
+    quote_check: found
+    title: 中光電轉型為中光電投控 掛牌首日紅翻黑、蜜月行情慘澹
+    url: https://money.udn.com/money/story/11074/9731955
+  tw.3718#e4:
+    locator: 第19項參與合併公司之基本資料
+    published_date: '2026-04-27'
+    publisher: 公開資訊觀測站（MoneyDJ轉載）
+    quote_check: found
+    title: 中光電 董事會決議以股份轉換方式成立新設公司「中光電投資控股股份有限公司」並成為中光電投控百分之百持股之子公司
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=891c24fa-6bdc-4555-949e-b70296dd1e4a
+  tw.3718#e5:
+    locator: 記者李珣瑛報導，節能產品段
+    published_date: '2026-10-13'
+    publisher: 經濟日報
+    quote_check: found
+    title: 中光電投控影像產品及節能產品營運兩樣情
+    url: https://money.udn.com/money/amp/story/5612/9810912
+  tw.3718#e6:
+    locator: 中光電影像產品營收段
+    published_date: '2026-10-12'
+    publisher: 中央商情（PChome轉載）
+    quote_check: not_found
+    title: 群創9月營收月增6.9% 中光電月減1%
+    url: https://pchome.megatime.com.tw/m/news/cat1/20261012/17917987140463722005.html
+  tw.3718#e7:
+    locator: 第2項減資緣由
+    published_date: '2026-10-19'
+    publisher: 公開資訊觀測站（PChome轉載）
+    quote_check: not_found
+    title: 中光電投控：代子公司中強光電股份有限公司公告董事會決議減資案
+    url: https://pchome.megatime.com.tw/news/cat2/20261019/9700003718202610191.html
+  tw.3718#e8:
+    locator: 第11項減資基準日
+    published_date: '2026-10-19'
+    publisher: 公開資訊觀測站（PChome轉載）
+    quote_check: not_found
+    title: 中光電投控：代子公司中強光電股份有限公司公告董事會決議減資案
+    url: https://pchome.megatime.com.tw/news/cat2/20261019/9700003718202610191.html
+  tw.3718#e9:
+    locator: 關於CIRC首段
+    published_date: null
+    publisher: 中光電智能機器人股份有限公司（子公司）
+    quote_check: found
+    title: 關於CIRC
+    url: https://www.coretronic-robotics.com/tw/about

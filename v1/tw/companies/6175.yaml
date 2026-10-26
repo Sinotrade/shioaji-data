@@ -46,13 +46,28 @@ themes:
   theme: theme.ev
   tier: upstream
 relations:
-  parents:
-  - as_of: '2026-06-30'
+  customers:
+  - as_of: '2012-01-02'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 具實質控制的鋁箔子公司
+    detail: 化成鋁箔供應
     details:
-    - 具實質控制的鋁箔子公司
+    - 化成鋁箔供應
+    edge: e65f416ca909b
+    evidence_level: media
+    id: tw.2472
+    name: 立隆電
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  parents:
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 實質控制之上游鋁箔子公司
+    details:
+    - 實質控制之上游鋁箔子公司
     - 具實質控制之母公司
     edge: eb9648a60908c
     evidence_level: primary

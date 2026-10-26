@@ -56,13 +56,32 @@ themes:
   theme: theme.robotics
   tier: midstream
 relations:
+  customers:
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares:
+    - as_of: 2025-12
+      basis: purchases
+      of: tw.2352
+      pct: 1
+    detail: 集團內向友通進貨
+    details:
+    - 集團內向友通進貨
+    edge: e23949941f5f9
+    evidence_level: primary
+    id: tw.2352
+    name: 佳世達
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   parents:
   - as_of: '2026-03-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 工業電腦板卡子公司
+    detail: 工業電腦子公司
     details:
-    - 工業電腦板卡子公司
+    - 工業電腦子公司
     - 母公司及集團最終控制者
     edge: efdd6b361ed10
     evidence_level: primary

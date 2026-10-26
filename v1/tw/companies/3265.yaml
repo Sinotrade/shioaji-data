@@ -26,45 +26,91 @@ chain_stage:
   stage_name: 封裝測試
   tier: downstream
 primary_chain_position: downstream
-summary_short: 提供半導體晶圓級封裝、凸塊封裝與晶圓及積體電路測試服務。
-summary_long: 台星科以半導體封裝及測試服務為主業，2025年晶圓級封裝服務占營收60.06%，測試服務占38.98%，其他占0.96%。主要服務包括晶圓與積體電路測試、晶圓級晶粒尺寸封裝、銅柱無鉛銲錫凸塊與覆晶封裝，並提供晶圓薄化、切割及挑揀服務。晶圓級晶粒尺寸封裝可採植球或電鍍球製程；覆晶封裝亦提供多晶片整合。依2026年第二季財報，直接母公司為格星，最終母公司為矽格；台星測企業為全資子公司，從事工業廠房開發租售。
+summary_short: 以晶圓凸塊、覆晶封裝及晶圓測試服務取得營收。
+summary_long: 台星科提供晶圓凸塊、覆晶封裝與晶圓測試服務，公開報導指出封裝營收比重高於測試，測試則以CP晶圓測試為主。2026年公司表示FCBGA已進入量產，並與客戶合作建立2.5D及CoWoS製程能力；矽光子相關業務以凸塊技術延伸至PIC、EIC光學引擎封裝，持續開發CPO與NPO產品。媒體具名列出的客戶包括聯發科、超微、博通及邁威爾。格星為直接母公司，台星測企業為子公司。近三年重大事件包括當時子公司台星科企業購置竹科廠房、公告與該子公司的簡易合併安排，以及向愛德萬測試、東京威力科創與致茂電子採購設備。
 segments:
 - evidence_ids:
   - e2
-  id: seg_packaging
-  name: 晶圓級封裝服務
-  period: '2025'
-  revenue_share_pct: 60.06
+  id: packaging
+  name: 晶圓凸塊及覆晶封裝
+  period: 2026-01
+  revenue_share_pct: null
 - evidence_ids:
-  - e3
-  id: seg_testing
-  name: 測試服務
-  period: '2025'
-  revenue_share_pct: 38.98
-- evidence_ids:
-  - e4
-  id: seg_other
-  name: 其他
-  period: '2025'
-  revenue_share_pct: 0.96
+  - e2
+  id: testing
+  name: 測試服務，以CP晶圓測試為主
+  period: 2026-01
+  revenue_share_pct: null
+main_theme: theme.cpo
+themes:
+- also: []
+  stage: packaging
+  theme: theme.cpo
+  tier: midstream
+- also: []
+  stage: manufacturing
+  theme: theme.cowos
+  tier: midstream
 relations:
-  parents:
-  - as_of: '2026-06-30'
+  customers:
+  - as_of: '2026-01-21'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 最終母公司
+    detail: 半導體封裝測試服務
     details:
-    - 最終母公司
-    - 間接持股51.93%的子公司
-    edge: e0c5831a98a67
-    evidence_level: primary
-    id: tw.6257
-    name: 矽格
+    - 半導體封裝測試服務
+    edge: ec5e027fcf370
+    evidence_level: media
+    id: tw.2454
+    name: 聯發科
     ranking_basis: unranked
     share_basis: null
     share_pct: null
-    weight: 2
-  - as_of: '2026-06-30'
+    weight: 1
+  - as_of: '2026-01-21'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 半導體封裝測試服務
+    details:
+    - 半導體封裝測試服務
+    edge: e104ae1cceab6
+    evidence_level: media
+    id: us.AMD
+    name: AMD
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-01-21'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 半導體封裝測試服務
+    details:
+    - 半導體封裝測試服務
+    edge: e8e941ad1e6d7
+    evidence_level: media
+    id: us.AVGO
+    name: Broadcom
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-01-21'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 半導體封裝測試服務
+    details:
+    - 半導體封裝測試服務
+    edge: eb1becb791067
+    evidence_level: media
+    id: us.MRVL
+    name: Marvell
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  parents:
+  - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
     detail: 直接母公司
@@ -74,6 +120,35 @@ relations:
     evidence_level: primary
     id: org.gexing
     name: 格星股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持股51.93%的子公司
+    details:
+    - 間接持股51.93%的子公司
+    edge: e0c5831a98a67
+    evidence_level: primary
+    id: tw.6257
+    name: 矽格
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2026-02-25'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司，工業廠房租售
+    details:
+    - 全資子公司，工業廠房租售
+    edge: e99db0bfc3655
+    evidence_level: primary
+    id: org.winstek-test-enterprise
+    name: 台星測企業股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -93,81 +168,222 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  transactions:
+  - amount: 約新臺幣6.04億元
+    as_of: '2026-05-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 取得機器設備及零配件4批等
+    details:
+    - 取得機器設備及零配件4批等
+    edge: e143a22dcc9ae
+    event_date: '2026-05-14'
+    events:
+    - amount: 約新臺幣6.04億元
+      detail: 取得機器設備及零配件4批等
+      event_date: '2026-05-14'
+    evidence_level: primary
+    id: jp.8035
+    name: Tokyo Electron
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 約新臺幣19.16億元
+    as_of: '2026-06-01'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 取得機器設備及零配件10批等
+    details:
+    - 取得機器設備及零配件10批等
+    - 取得機器設備及零配件2批等
+    edge: e99c44810a977
+    event_date: '2026-05-14'
+    events:
+    - amount: 約新臺幣6.44億元
+      detail: 取得機器設備及零配件2批等
+      event_date: '2026-06-01'
+    - amount: 約新臺幣19.16億元
+      detail: 取得機器設備及零配件10批等
+      event_date: '2026-05-14'
+    evidence_level: primary
+    id: org.advantest-taiwan
+    name: 愛德萬測試股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣16.95億元（含加值型營業稅）
+    as_of: '2024-10-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 當時子公司台星科企業購置竹科廠房及相關設備
+    details:
+    - 當時子公司台星科企業購置竹科廠房及相關設備
+    edge: e00ac53638656
+    event_date: '2024-10-28'
+    events:
+    - amount: 新台幣16.95億元（含加值型營業稅）
+      detail: 當時子公司台星科企業購置竹科廠房及相關設備
+      event_date: '2024-10-28'
+    evidence_level: primary
+    id: org.sigurd-utac
+    name: 矽格聯測股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2025-11-19'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 與全資子公司進行簡易合併
+    details:
+    - 與全資子公司進行簡易合併
+    edge: e17388bd99ac1
+    event_date: '2025-11-19'
+    events:
+    - amount: null
+      detail: 與全資子公司進行簡易合併
+      event_date: '2025-11-19'
+    evidence_level: primary
+    id: org.winstek-semiconductor-technology
+    name: 台星科企業股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 約新臺幣5.61億元
+    as_of: '2026-06-12'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 取得機器設備及零配件2批等
+    details:
+    - 取得機器設備及零配件2批等
+    edge: eb60aae33b655
+    event_date: '2026-06-12'
+    events:
+    - amount: 約新臺幣5.61億元
+      detail: 取得機器設備及零配件2批等
+      event_date: '2026-06-12'
+    evidence_level: primary
+    id: tw.2360
+    name: 致茂
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 合作建立2.5D及CoWoS製程能力的客戶，未具名。
+- 共同開發CPO及NPO產品的客戶，未具名。
 website: https://www.winstek.com.tw/html/home/index-tw.html
 tax_id: '70552666'
 incorporated: '2000-04-26'
 listed: '2005-08-02'
-as_of: '2026-10-15'
+as_of: '2026-10-26'
 confidence: ai_cross_checked
 has_research: true
 evidence:
   tw.3265#e10:
-    locator: 第12頁，附註一公司沿革；格星股份有限公司受讓持股段落
-    published_date: '2026-08-05'
+    locator: 內頁4，購置新竹科學園區廠房及附屬設備案
+    published_date: null
     publisher: 台星科股份有限公司
     quote_check: found
-    title: 台星科股份有限公司及子公司115年及114年第二季合併財務報告
-    url: https://www.winstek.com.tw/html/investor/DATA/2026%20Q2.pdf
+    title: 台星科113年第1次股東臨時會議事手冊
+    url: https://www.winstek.com.tw/html/investor/DATA/2024Temporary%20Meeting%20Announcement.pdf
   tw.3265#e11:
-    locator: 第12頁，附註一公司沿革；矽格股份有限公司取得Bloomeria Limited控制權段落
-    published_date: '2026-08-05'
-    publisher: 台星科股份有限公司
+    locator: 重大訊息第3至4項
+    published_date: '2024-10-28'
+    publisher: 公開資訊觀測站；MoneyDJ公告鏡像
     quote_check: found
-    title: 台星科股份有限公司及子公司115年及114年第二季合併財務報告
-    url: https://www.winstek.com.tw/html/investor/DATA/2026%20Q2.pdf
+    title: 矽格：台星科企業取得新竹市科園段科園小段不動產，計16.95億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=6a126bb6-61b4-46fd-b715-b309503ef347
+  tw.3265#e12:
+    locator: 重大訊息第5至6項
+    published_date: '2026-05-14'
+    publisher: 公開資訊觀測站；MoneyDJ公告鏡像
+    quote_check: found
+    title: 台星科1/1至5/14取得機器設備及其零配件10批等，計約19.16億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=c5376b03-950d-46ec-9343-dc9cd3e58155
+  tw.3265#e13:
+    locator: 重大訊息第5至6項
+    published_date: '2026-05-14'
+    publisher: 公開資訊觀測站；MoneyDJ公告鏡像
+    quote_check: found
+    title: 台星科公告取得機器設備達新臺幣5億元以上
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=5ea83008-433b-4daf-b59f-d04b376b4698
+  tw.3265#e14:
+    locator: 重大訊息第5至6項
+    published_date: '2026-06-01'
+    publisher: 公開資訊觀測站；MoneyDJ公告鏡像
+    quote_check: found
+    title: 台星科5/15至6/1取得機器設備及其零配件2批等，計約6.44億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=9e6431ef-b48e-4617-bcf0-06728f361824
+  tw.3265#e15:
+    locator: 重大訊息第5至6項
+    published_date: '2026-06-12'
+    publisher: 公開資訊觀測站；MoneyDJ公告鏡像
+    quote_check: found
+    title: 台星科3/6至6/12向致茂取得機器設備及其零配件2批等，計約5.61億元
+    url: https://m.moneydj.com/f1a.aspx?a=34437EB4-958E-42B0-A2D5-9B6B5426DB01
   tw.3265#e2:
-    locator: 第57頁，營業比重表，114年度晶圓級封裝服務列；金額2,791,539仟元
-    published_date: '2026-02-28'
-    publisher: 台星科股份有限公司
-    quote_check: not_found
-    title: 台星科股份有限公司114年度年報
-    url: https://www.winstek.com.tw/html/investor/DATA/2025%20Annual%20Report.pdf
+    locator: 王怡茹報導，產品線及具名客戶段落
+    published_date: '2026-01-21'
+    publisher: MoneyDJ
+    quote_check: found
+    title: 台星科去年挑戰賺逾半個股本；今年營運戰高
+    url: https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=3c99ae7b-e30e-49d3-98b8-15bf3d9d519a
   tw.3265#e3:
-    locator: 第57頁，營業比重表，114年度測試服務列；金額1,811,688仟元
-    published_date: '2026-02-28'
-    publisher: 台星科股份有限公司
-    quote_check: not_found
-    title: 台星科股份有限公司114年度年報
-    url: https://www.winstek.com.tw/html/investor/DATA/2025%20Annual%20Report.pdf
+    locator: 台星科發言人劉貴竹說明FCBGA量產段落
+    published_date: '2026-10-06'
+    publisher: 中央社
+    quote_check: found
+    title: 矽格客戶提前綁定測試產能 台星科看好AI ASIC動能
+    url: https://www.cna.com.tw/news/afe/202610060198.aspx
   tw.3265#e4:
-    locator: 第57頁，營業比重表，114年度其他列；金額44,559仟元
-    published_date: '2026-02-28'
-    publisher: 台星科股份有限公司
-    quote_check: not_found
-    title: 台星科股份有限公司114年度年報
-    url: https://www.winstek.com.tw/html/investor/DATA/2025%20Annual%20Report.pdf
+    locator: 矽光子IC相關布局段落
+    published_date: '2026-10-06'
+    publisher: 中央社
+    quote_check: found
+    title: 矽格客戶提前綁定測試產能 台星科看好AI ASIC動能
+    url: https://www.cna.com.tw/news/afe/202610060198.aspx
   tw.3265#e5:
-    locator: 第57頁，業務內容，目前之商品（服務）項目
-    published_date: '2026-02-28'
-    publisher: 台星科股份有限公司
+    locator: 台星科先進封裝技術布局段落
+    published_date: '2026-10-06'
+    publisher: 中央社
     quote_check: found
-    title: 台星科股份有限公司114年度年報
-    url: https://www.winstek.com.tw/html/investor/DATA/2025%20Annual%20Report.pdf
+    title: 矽格客戶提前綁定測試產能 台星科看好AI ASIC動能
+    url: https://www.cna.com.tw/news/afe/202610060198.aspx
   tw.3265#e6:
-    locator: 晶圓級晶粒尺寸封裝說明
-    published_date: null
-    publisher: 台星科股份有限公司
-    quote_check: found
-    title: 晶圓級晶粒尺寸封裝
-    url: https://www.winstek.com.tw/html/products/WLCSP.html
+    locator: 內頁20，合併財務報告編製主體及子公司持股表
+    published_date: '2026-03-30'
+    publisher: 矽格股份有限公司；FinancialFilings文件鏡像
+    quote_check: unreachable
+    title: 矽格股份有限公司及子公司2025年度合併財務報告
+    url: https://financialfilings.com/filings/sigurd-6257/annual-report/2026/33152739/
   tw.3265#e7:
-    locator: 銅柱無鉛銲錫凸塊技術說明
-    published_date: null
-    publisher: 台星科股份有限公司
-    quote_check: found
-    title: 銅柱無鉛銲錫凸塊
-    url: https://www.winstek.com.tw/html/products/Cu-Pillar.html
+    locator: 內頁21，子公司持股表
+    published_date: '2026-03-30'
+    publisher: 矽格股份有限公司；FinancialFilings文件鏡像
+    quote_check: unreachable
+    title: 矽格股份有限公司及子公司2025年度合併財務報告
+    url: https://financialfilings.com/filings/sigurd-6257/annual-report/2026/33152739/
   tw.3265#e8:
-    locator: MCM（多晶片封裝）
-    published_date: null
-    publisher: 台星科股份有限公司
+    locator: 公告標題
+    published_date: '2026-02-25'
+    publisher: 公開資訊觀測站；鉅亨網公告鏡像
     quote_check: found
-    title: 覆晶封裝
-    url: https://www.winstek.com.tw/html/products/Flip-Chip.html
+    title: 台星科：代子公司台星測企業公告董事會代行股東會之重要決議事項
+    url: https://news.cnyes.com/news/id/6353153
   tw.3265#e9:
-    locator: 裸晶切割封裝服務說明首段
-    published_date: null
-    publisher: 台星科股份有限公司
+    locator: 重大訊息第3至4項
+    published_date: '2025-11-19'
+    publisher: 公開資訊觀測站；MoneyDJ公告鏡像
     quote_check: found
-    title: 裸晶切割封裝服務
-    url: https://www.winstek.com.tw/html/products/Backend-Service.html
+    title: 台星科更正公告與子公司台星科企業簡易合併案之基準日
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=26998317-eec4-4415-ab82-6476ab048558

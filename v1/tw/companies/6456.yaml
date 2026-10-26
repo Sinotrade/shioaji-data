@@ -26,30 +26,30 @@ chain_stage:
   stage_name: 面板與模組
   tier: midstream
 primary_chain_position: midstream
-summary_short: 主要透過集團生產與銷售平板、筆電觸控顯示模組及指紋辨識模組。
-summary_long: GIS-KY透過集團經營觸控顯示模組，以平板電腦與筆記型電腦應用為主要營收來源。2025年平板電腦觸控顯示模組占營收61%、筆電19%、指紋辨識模組15%，其他占5%。指紋產品涵蓋超聲波與電容式感測器；近眼裝置光學模組業務包含鏡片貼合與模組製造。公司亦投入智慧車載與AR／VR近眼顯示技術，發展抬頭顯示器、Mini LED觸控顯示模組及光波導顯示模組。
+summary_short: 以平板與筆電觸控顯示模組為主要收入，另提供指紋辨識與光學產品。
+summary_long: GIS-KY及子公司以觸控顯示模組為主要業務，2025年平板電腦模組占營收61%、筆電模組占19%、指紋辨識模組占15%，其他產品占5%。產品包含超聲波與電容式指紋辨識、Mini LED背光加工，以及AR光波導與VR相關光學元件。2026年另布局光通訊雷射光源封裝與測試。Apple官方供應商名單列有旗下General Interface Solution Limited；該子公司與Sharp Corporation亦有雙向買賣。近三年已公告投資Cellid、取得越南土地使用權、透過BVI子公司增資越南，以及成都子公司間生產設備與無塵室工程移轉。
 segments:
 - evidence_ids:
-  - e2
-  id: seg_tablet
+  - e1
+  id: tablet
   name: 平板電腦觸控顯示模組
   period: '2025'
   revenue_share_pct: 61
 - evidence_ids:
-  - e2
-  id: seg_notebook
+  - e1
+  id: notebook
   name: 筆電觸控顯示模組
   period: '2025'
   revenue_share_pct: 19
 - evidence_ids:
-  - e2
-  id: seg_fingerprint
+  - e1
+  id: fingerprint
   name: 指紋辨識模組
   period: '2025'
   revenue_share_pct: 15
 - evidence_ids:
-  - e2
-  id: seg_other
+  - e1
+  id: other
   name: 其他
   period: '2025'
   revenue_share_pct: 5
@@ -60,104 +60,339 @@ themes:
   theme: theme.mini_led
   tier: downstream
 relations:
+  customers:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司銷貨；品項未細分
+    details:
+    - 子公司銷貨；品項未細分
+    edge: e148fc834a973
+    evidence_level: primary
+    id: jp.6753
+    name: Sharp
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2023-09
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過子公司供貨；名單未細分品項
+    details:
+    - 透過子公司供貨；名單未細分品項
+    edge: ee99f54053b0f
+    evidence_level: primary
+    id: us.AAPL
+    name: Apple
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  partners:
+  - as_of: '2024-01-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: AR眼鏡顯示模組技術與製造協作
+    details:
+    - AR眼鏡顯示模組技術與製造協作
+    edge: e40068b985bdf
+    evidence_level: primary
+    id: org.cellid
+    name: Cellid株式会社
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
-  - as_of: '2025-12-31'
+  - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 深圳子公司
+    detail: 全資子公司
     details:
-    - 深圳子公司
-    edge: ea97c299a84e0
+    - 全資子公司
+    edge: eda02f3f40550
     evidence_level: primary
-    id: org.業成光電-深圳-有限公司
-    name: 業成光電(深圳)有限公司
+    id: org.general-interface-solution-limited
+    name: General Interface Solution Limited
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2025-12-31'
+  - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 成都子公司
+    detail: 台灣全資子公司
     details:
-    - 成都子公司
-    edge: eb7cdd703fbd7
+    - 台灣全資子公司
+    edge: eeca8b14daa2c
     evidence_level: primary
-    id: org.業成科技-成都-有限公司
-    name: 業成科技(成都)有限公司
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
-  - as_of: '2025-12-31'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 台灣子公司
-    details:
-    - 台灣子公司
-    edge: e02075ffd94c6
-    evidence_level: primary
-    id: org.英特盛科技股份有限公司
+    id: org.general-interface-solution-taiwan
     name: 英特盛科技股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: '2026-09-02'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接全資越南子公司
+    details:
+    - 間接全資越南子公司
+    edge: e612062c7ed7f
+    evidence_level: primary
+    id: org.gis-technology-vietnam
+    name: GIS Technology (Vietnam) Company Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司進貨；品項未細分
+    details:
+    - 子公司進貨；品項未細分
+    edge: ed5376600565f
+    evidence_level: primary
+    id: jp.6753
+    name: Sharp
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 約新台幣2.93億元
+    as_of: '2024-07-12'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 越南子公司取得土地使用權
+    details:
+    - 越南子公司取得土地使用權
+    edge: e86852f2aba86
+    event_date: '2024-07-12'
+    events:
+    - amount: 約新台幣2.93億元
+      detail: 越南子公司取得土地使用權
+      event_date: '2024-07-12'
+    evidence_level: primary
+    id: org.capella-real-estate-joint-stock-company
+    name: CAPELLA REAL ESTATE JOINT STOCK COMPANY
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2024-01-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 認購Cellid第三者配售增資
+    details:
+    - 認購Cellid第三者配售增資
+    edge: e3b5fc902c3ee
+    event_date: '2024-01-31'
+    events:
+    - amount: null
+      detail: 認購Cellid第三者配售增資
+      event_date: '2024-01-31'
+    evidence_level: primary
+    id: org.cellid
+    name: Cellid株式会社
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 美金30,000仟元
+    as_of: '2025-02-24'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過全資BVI子公司增資越南
+    details:
+    - 透過全資BVI子公司增資越南
+    edge: e8205dc875700
+    event_date: '2025-02-24'
+    events:
+    - amount: 美金30,000仟元
+      detail: 透過全資BVI子公司增資越南
+      event_date: '2025-02-24'
+    evidence_level: primary
+    id: org.gis-holding-bvi
+    name: GIS Holding (BVI) Limited
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣10.78億元
+    as_of: '2026-06-15'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司間生產設備移轉
+    details:
+    - 子公司間生產設備移轉
+    - 子公司間無塵室工程移轉
+    edge: ef13c0877439d
+    event_date: '2026-06-15'
+    events:
+    - amount: 新台幣10.78億元
+      detail: 子公司間生產設備移轉
+      event_date: '2026-06-15'
+    - amount: 新台幣1.22億元
+      detail: 子公司間無塵室工程移轉
+      event_date: '2026-06-15'
+    evidence_level: primary
+    id: org.yehuan-technology-chengdu
+    name: 業桓科技(成都)有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 年報未具名的國際品牌客戶與車載Tier 1客戶。
+- 光通訊業務接觸的國際大廠，未據此推定為特定客戶。
 website: https://www.gis-touch.com
 tax_id: '41420316'
 incorporated: '2011-01-04'
 listed: '2015-06-12'
 foreign_registration: KY 開曼群島
-as_of: '2026-10-15'
+as_of: '2026-10-26'
 confidence: ai_cross_checked
 has_research: true
 evidence:
-  tw.6456#e2:
-    locator: 印刷頁85；PDF第90頁；主要產品之營業比重。每列依序為2024年營收、占比、2025年營收、占比；營收單位為新臺幣仟元。
+  tw.6456#e1:
+    locator: 第85頁，主要產品之營業比重；欄序為2024及2025年度
     published_date: null
-    publisher: General Interface Solution (GIS) Holding Limited
+    publisher: GIS Holding Limited；FinancialFilings鏡像
+    quote_check: found
+    title: GIS 2025年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52568/2026/RNS/52568_rns_2026-06-02_ec95a682-0c22-4a37-936b-ea766ee68308.pdf
+  tw.6456#e10:
+    locator: 附表四，2026年上半年與關係人進銷貨
+    published_date: '2026-08-07'
+    publisher: GIS Holding Limited；FinancialFilings鏡像
+    quote_check: unreachable
+    title: GIS 2026年第二季合併財務報告
+    url: https://financialfilings.com/filings/gis-6456/interim-quarterly-report/2026/51178246/
+  tw.6456#e11:
+    locator: 首段；2024年1月增資及策略備忘錄
+    published_date: '2024-01-31'
+    publisher: Cellid株式会社
+    quote_check: found
+    title: Cellid、General Interface Solution (GIS) からの資金調達の実施
+    url: https://prtimes.jp/main/html/rd/p/000000038.000030718.html
+  tw.6456#e12:
+    locator: 本提携の概要
+    published_date: '2024-01-31'
+    publisher: Cellid株式会社
+    quote_check: found
+    title: Cellid、General Interface Solution (GIS) からの資金調達の実施
+    url: https://prtimes.jp/main/html/rd/p/000000038.000030718.html
+  tw.6456#e13:
+    locator: 公告第1、3、4項
+    published_date: '2025-02-24'
+    publisher: 公開資訊觀測站重大訊息；玉山證券轉載
+    quote_check: found
+    title: GIS-KY董事會決議間接增資越南子公司，計3千萬美元
+    url: https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7BD25B24CC-6E43-46E2-90E2-A381A180946C%7D
+  tw.6456#e14:
+    locator: 公告第1至4項；Capella僅為土地交易對象
+    published_date: '2024-07-15'
+    publisher: 公開資訊觀測站重大訊息；MoneyDJ轉載
+    quote_check: found
+    title: GIS-KY越南子公司取得不動產及其使用權資產，計約11.77億元
+    url: https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=490e67db-2451-4e74-8646-79d0dc8cf447
+  tw.6456#e15:
+    locator: 公告主旨及第5、6項
+    published_date: '2026-06-16'
+    publisher: 公開資訊觀測站重大訊息；台視財經轉載
+    quote_check: found
+    title: GIS-KY：業成科技(成都)取得生產設備一批，計10.78億元
+    url: https://www.ttv.com.tw/finance/view/0620261609142E0258515A564FD9AAB874E49B849406FBD7/588
+  tw.6456#e16:
+    locator: 公告主旨及第1、5、6項
+    published_date: '2026-06-16'
+    publisher: 公開資訊觀測站重大訊息；台視財經轉載
+    quote_check: found
+    title: GIS-KY：業成科技(成都)取得無塵室工程，計1.22億元
+    url: https://www.ttv.com.tw/finance/view/062026160914A7C6A840ED7B4221B257794131EDED98A883/587
+  tw.6456#e17:
+    locator: 公告第2至7項
+    published_date: '2026-09-02'
+    publisher: 公開資訊觀測站重大訊息；MoneyDJ轉載
+    quote_check: found
+    title: GIS-KY董事會核准子公司英特盛科技等新增資本支出預算，總計33.97億元
+    url: https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=67c1e5a1-5529-4fa6-8cbd-f1163901d626
+  tw.6456#e18:
+    locator: 附表七；期末持有比率欄為100
+    published_date: '2026-08-07'
+    publisher: GIS Holding Limited；FinancialFilings鏡像
+    quote_check: found
+    title: GIS 2026年第二季合併財務報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52568/2026/RNS/52568_rns_2026-08-07_01da28ff-9c73-40ec-b7e8-32b8f6f5d05c.pdf
+  tw.6456#e19:
+    locator: 記者劉芳妙報導，光通訊業務段落
+    published_date: '2026-09-25'
+    publisher: 經濟日報；IEK產業情報網轉載
+    quote_check: found
+    title: GIS 擴大投資光通訊
+    url: https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=d1da5f516d264fb98edfb4250895e0b3
+  tw.6456#e2:
+    locator: 第86頁，指紋辨識模組
+    published_date: null
+    publisher: GIS Holding Limited；FinancialFilings鏡像
     quote_check: found
     title: GIS 2025年度年報
     url: https://cdn.financialreports.eu/financialreports/media/filings/52568/2026/RNS/52568_rns_2026-06-02_ec95a682-0c22-4a37-936b-ea766ee68308.pdf
   tw.6456#e3:
-    locator: 印刷頁86；PDF第91頁；公司目前主要產品／指紋辨識模組
+    locator: 第92頁，超聲波指紋辨識技術
     published_date: null
-    publisher: General Interface Solution (GIS) Holding Limited
-    quote_check: found
+    publisher: GIS Holding Limited；FinancialFilings鏡像
+    quote_check: unreachable
     title: GIS 2025年度年報
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52568/2026/RNS/52568_rns_2026-06-02_ec95a682-0c22-4a37-936b-ea766ee68308.pdf
+    url: https://financialfilings.com/filings/gis-6456/annual-report/2026/47935749/
   tw.6456#e4:
-    locator: 印刷頁86；PDF第91頁；公司目前主要產品／近眼裝置光學模組
+    locator: 第92頁，開發成功之技術或產品
     published_date: null
-    publisher: General Interface Solution (GIS) Holding Limited
+    publisher: GIS Holding Limited；FinancialFilings鏡像
     quote_check: found
     title: GIS 2025年度年報
     url: https://cdn.financialreports.eu/financialreports/media/filings/52568/2026/RNS/52568_rns_2026-06-02_ec95a682-0c22-4a37-936b-ea766ee68308.pdf
   tw.6456#e5:
-    locator: 永續議題／永續治理／營運與創新／GIS核心技術創新，2025年段落
+    locator: 第92頁，鏡片模造射出成型
     published_date: null
-    publisher: 業成集團
-    quote_check: found
-    title: 營運與創新－GIS核心技術創新
-    url: https://esg.gis-touch.com/GIS_ESG/SustainiSsue/SustainGovernance?itemCode=GOV_05
+    publisher: GIS Holding Limited；FinancialFilings鏡像
+    quote_check: unreachable
+    title: GIS 2025年度年報
+    url: https://financialfilings.com/filings/gis-6456/annual-report/2026/47935749/
   tw.6456#e6:
-    locator: 印刷頁74；PDF第79頁；董事會重要決議事項
+    locator: 第86頁，Mini LED模組
     published_date: null
-    publisher: General Interface Solution (GIS) Holding Limited
-    quote_check: found
+    publisher: GIS Holding Limited；FinancialFilings鏡像
+    quote_check: unreachable
     title: GIS 2025年度年報
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52568/2026/RNS/52568_rns_2026-06-02_ec95a682-0c22-4a37-936b-ea766ee68308.pdf
+    url: https://financialfilings.com/filings/gis-6456/annual-report/2026/47935749/
   tw.6456#e7:
-    locator: 印刷頁74；PDF第79頁；董事會重要決議事項
-    published_date: null
-    publisher: General Interface Solution (GIS) Holding Limited
-    quote_check: found
-    title: GIS 2025年度年報
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52568/2026/RNS/52568_rns_2026-06-02_ec95a682-0c22-4a37-936b-ea766ee68308.pdf
+    locator: 附表七，被投資公司資料；期末持有比率欄為100
+    published_date: '2026-08-07'
+    publisher: GIS Holding Limited；FinancialFilings鏡像
+    quote_check: unreachable
+    title: GIS 2026年第二季合併財務報告
+    url: https://financialfilings.com/filings/gis-6456/interim-quarterly-report/2026/51178246/
   tw.6456#e8:
-    locator: 印刷頁74；PDF第79頁；董事會重要決議事項，僅用於確認子公司身分
+    locator: 第1頁說明名單年度；第8頁供應商列
     published_date: null
-    publisher: General Interface Solution (GIS) Holding Limited
+    publisher: Apple
     quote_check: found
-    title: GIS 2025年度年報
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52568/2026/RNS/52568_rns_2026-06-02_ec95a682-0c22-4a37-936b-ea766ee68308.pdf
+    title: Apple Supplier List，2023會計年度
+    url: https://s203.q4cdn.com/367071867/files/doc_downloads/2024/04/Apple-Supplier-List.pdf
+  tw.6456#e9:
+    locator: 附表四，2026年上半年與關係人進銷貨
+    published_date: '2026-08-07'
+    publisher: GIS Holding Limited；FinancialFilings鏡像
+    quote_check: unreachable
+    title: GIS 2026年第二季合併財務報告
+    url: https://financialfilings.com/filings/gis-6456/interim-quarterly-report/2026/51178246/

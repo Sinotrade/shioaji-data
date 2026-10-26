@@ -166,6 +166,17 @@ members:
   stage: equipment
   tier: downstream
   stage_role: primary
+- id: tw.3042
+  detail: 主業為石英諧振器、振盪器等頻率控制元件，供行動通訊及5G網路設備使用，屬網通零組件。
+  as_of: '2026-10-25'
+  evidence:
+  - tw.3042#e1
+  - tw.3042#e2
+  confidence: ai_cross_checked
+  source: classification
+  stage: modules
+  tier: midstream
+  stage_role: primary
 - id: tw.3047
   detail: 主要業務為交換器、無線基地台及路由器等網通設備。
   as_of: '2026-10-23'
@@ -257,14 +268,13 @@ members:
   stage_role: primary
 - id: tw.3163
   detail: 最大營收產品群OIN占33%，各產品群均為光纖連接零組件與光通訊模組。
-  as_of: '2026-10-14'
+  as_of: '2026-10-25'
   evidence:
+  - tw.3163#e1
   - tw.3163#e2
   - tw.3163#e3
   - tw.3163#e4
   - tw.3163#e5
-  - tw.3163#e6
-  - tw.3163#e7
   confidence: ai_cross_checked
   source: classification
   stage: modules
@@ -285,7 +295,7 @@ members:
   stage_role: primary
 - id: tw.3234
   detail: 晶粒及其零組件占營收63%，另有占28%的光電轉換組件及光引擎、AOC產品。
-  as_of: '2026-10-15'
+  as_of: '2026-10-26'
   evidence:
   - tw.3234#e1
   - tw.3234#e2
@@ -298,7 +308,7 @@ members:
   stage_role: primary
 - id: tw.3234
   detail: 晶粒及其零組件占營收63%，另有占28%的光電轉換組件及光引擎、AOC產品。
-  as_of: '2026-10-15'
+  as_of: '2026-10-26'
   evidence:
   - tw.3234#e1
   - tw.3234#e2
@@ -333,11 +343,11 @@ members:
   stage_role: also
 - id: tw.3363
   detail: 光纖跳接線占營收63.01%，另供應連接器、光纖陣列及光收發模組。
-  as_of: '2026-10-14'
+  as_of: '2026-10-25'
   evidence:
-  - tw.3363#e01
-  - tw.3363#e11
-  - tw.3363#e13
+  - tw.3363#e1
+  - tw.3363#e2
+  - tw.3363#e3
   confidence: ai_cross_checked
   source: classification
   stage: modules
@@ -452,11 +462,14 @@ members:
   stage_role: primary
 - id: tw.3596
   detail: 行動通訊占營收38%居首，供應5G CPE、小型基地台與寬頻接取設備。
-  as_of: '2026-10-15'
+  as_of: '2026-10-26'
   evidence:
-  - tw.3596#e2
-  - tw.3596#e7
-  - tw.3596#e10
+  - tw.3596#e02
+  - tw.3596#e03
+  - tw.3596#e04
+  - tw.3596#e05
+  - tw.3596#e06
+  - tw.3596#e07
   confidence: ai_cross_checked
   source: classification
   stage: equipment
@@ -683,11 +696,10 @@ members:
   stage_role: primary
 - id: tw.5388
   detail: 寬頻終端設備占55.92%，主業為網通設備，另提供5G及物聯網模組。
-  as_of: '2026-10-15'
+  as_of: '2026-10-26'
   evidence:
   - tw.5388#e2
-  - tw.5388#e3
-  - tw.5388#e4
+  - tw.5388#e20
   confidence: ai_cross_checked
   source: classification
   stage: equipment
@@ -695,11 +707,10 @@ members:
   stage_role: primary
 - id: tw.5388
   detail: 寬頻終端設備占55.92%，主業為網通設備，另提供5G及物聯網模組。
-  as_of: '2026-10-15'
+  as_of: '2026-10-26'
   evidence:
   - tw.5388#e2
-  - tw.5388#e3
-  - tw.5388#e4
+  - tw.5388#e20
   confidence: ai_cross_checked
   source: classification
   stage: modules
@@ -788,19 +799,6 @@ members:
   evidence:
   - tw.6190#e2
   - tw.6190#e3
-  confidence: ai_cross_checked
-  source: classification
-  stage: modules
-  tier: midstream
-  stage_role: primary
-- id: tw.6197
-  detail: 數據網路電信占57.98%，主要提供高速連接器、線材及光收發模組。
-  as_of: '2026-10-15'
-  evidence:
-  - tw.6197#e1
-  - tw.6197#e4
-  - tw.6197#e5
-  - tw.6197#e8
   confidence: ai_cross_checked
   source: classification
   stage: modules
@@ -1309,4 +1307,4 @@ members:
   stage: modules
   tier: midstream
   stage_role: primary
-as_of: '2026-10-25'
+as_of: '2026-10-26'

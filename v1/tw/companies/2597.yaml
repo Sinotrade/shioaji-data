@@ -18,34 +18,41 @@ industry:
   l3_name: 工程與統包
   l3_name_en: Engineering & EPC
 primary_chain_position: not_applicable
-summary_short: 以營建統包、土建機電工程及預鑄構件生產與吊裝取得收入。
-summary_long: 潤弘以營建統包、總包及預鑄構件生產與吊裝提供工程服務，整合設計、土建與機電施工。主要預鑄產品包括外牆版、梁柱系統及高科技廠房無塵室格子版，並運用BIM與MRO平台支援施工檢討及建物維運。2026年上半年合併營收以營造事業部為最大來源，另有建材及室內裝修設計部門。母公司為潤泰創新國際，合併子公司包括潤泰精密材料、潤陽營造、潤泰營造，以及間接子公司潤德室內裝修設計工程。
+summary_short: 以建築工程承攬為主要收入，提供統包、總包及預鑄構件生產吊裝服務。
+summary_long: 潤弘提供建築工程統包、總包及專業分包服務，並生產與吊裝預鑄外牆板、樑柱結構及高科技廠房無塵室格子版。2025年合併營收以工程合約收入占85.57%為主，商品銷售收入占14.11%。潤泰創新為母公司，也是工程客戶；年報列示的鋼筋供應商包括東和鋼鐵與豐興鋼鐵。合併範圍涵蓋潤泰精密材料、潤陽營造及孫公司潤德。2026年公告以新台幣592,522,071元購買潤泰營造全部股權，後續公告已稱其為子公司；2024年另由子公司潤泰精密材料投資德欣先進35%股權。
 segments:
 - evidence_ids:
-  - e2
-  id: construction
-  name: 營造事業部
-  period: 2026年上半年
-  revenue_share_pct: null
+  - e3
+  id: engineering
+  name: 工程合約收入
+  period: '2025'
+  revenue_share_pct: 85.57
 - evidence_ids:
-  - e2
-  id: building_materials
-  name: 建材事業部
-  period: 2026年上半年
-  revenue_share_pct: null
+  - e3
+  id: goods
+  name: 商品銷售收入
+  period: '2025'
+  revenue_share_pct: 14.11
 - evidence_ids:
-  - e2
-  id: interior_design
-  name: 室內裝修設計部
-  period: 2026年上半年
-  revenue_share_pct: null
+  - e3
+  id: services
+  name: 勞務合約收入
+  period: '2025'
+  revenue_share_pct: 0.02
+- evidence_ids:
+  - e3
+  id: other
+  name: 其他合約收入
+  period: '2025'
+  revenue_share_pct: 0.3
 relations:
   customers:
   - as_of: '2026-10-14'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 建案營造承攬
+    detail: 建案營造工程
     details:
+    - 建案營造工程
     - 建案營造承攬
     edge: e080a64c0d25a
     evidence_level: primary
@@ -54,7 +61,7 @@ relations:
     ranking_basis: unranked
     share_basis: null
     share_pct: null
-    weight: 1
+    weight: 2
   parents:
   - as_of: '2026-10-14'
     confidence: ai_cross_checked
@@ -72,12 +79,12 @@ relations:
     share_pct: null
     weight: 2
   subsidiaries:
-  - as_of: '2026-06-30'
+  - as_of: 2025-03
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 室內裝修設計間接子公司
+    detail: 孫公司
     details:
-    - 室內裝修設計間接子公司
+    - 孫公司
     - 集團中間母公司
     edge: e869133fd2ac9
     evidence_level: primary
@@ -87,35 +94,35 @@ relations:
     share_basis: null
     share_pct: null
     weight: 2
-  - as_of: '2026-06-30'
+  - as_of: '2026-04-29'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 營造子公司
+    detail: 收購後納為子公司
     details:
-    - 營造子公司
-    edge: e7e9a7372d465
+    - 收購後納為子公司
+    edge: ec5c60afc1bf1
     evidence_level: primary
-    id: org.ruentex-construction
+    id: org.潤泰營造股份有限公司
     name: 潤泰營造股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-06-30'
+  - as_of: 2025-03
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 土木建築工程子公司
+    detail: 營造子公司
     details:
-    - 土木建築工程子公司
-    edge: e489a2e5686e4
+    - 營造子公司
+    edge: ec5cab6092f89
     evidence_level: primary
-    id: org.run-yang-construction
+    id: org.潤陽營造股份有限公司
     name: 潤陽營造股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-06-30'
+  - as_of: 2025-03
     confidence: ai_cross_checked
     counterparty_shares: []
     detail: 建材事業子公司
@@ -129,7 +136,78 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  suppliers:
+  - as_of: 2024-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 鋼筋
+    details:
+    - 鋼筋
+    edge: eb872cd0ff618
+    evidence_level: primary
+    id: tw.2006
+    name: 東和鋼鐵
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2024-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 鋼筋
+    details:
+    - 鋼筋
+    edge: e4d648d9c099a
+    evidence_level: primary
+    id: tw.2015
+    name: 豐興
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   transactions:
+  - amount: 新台幣1,564,347,967元
+    as_of: 2024-11
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 由子公司潤泰精密材料投資35%股權
+    details:
+    - 由子公司潤泰精密材料投資35%股權
+    edge: ec84f8845a303
+    event_date: '2024-09-20'
+    events:
+    - amount: 新台幣1,564,347,967元
+      detail: 由子公司潤泰精密材料投資35%股權
+      event_date: '2024-09-20'
+    evidence_level: primary
+    id: org.德欣先進股份有限公司
+    name: 德欣先進股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣592,522,071元
+    as_of: '2026-02-09'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 購買潤泰營造全部股權
+    details:
+    - 購買潤泰營造全部股權
+    edge: ee5d12ae47863
+    event_date: '2026-02-09'
+    events:
+    - amount: 新台幣592,522,071元
+      detail: 購買潤泰營造全部股權
+      event_date: '2026-02-09'
+    evidence_level: primary
+    id: org.潤泰營造股份有限公司
+    name: 潤泰營造股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
   - amount: NT$1,542.33 million
     as_of: '2026-07-31'
     confidence: ai_cross_checked
@@ -151,81 +229,112 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+unresolved_mentions:
+- T公司：113年度年報以代號揭露，未據此推定正式公司名稱。
+- N公司：113年度年報以代號揭露，未據此推定正式公司名稱。
 website: https://www.rtc.com.tw
 tax_id: '66394146'
 incorporated: '1975-11-03'
 listed: '2010-03-26'
-as_of: '2026-10-15'
+as_of: '2026-10-25'
 confidence: ai_cross_checked
 has_research: true
 evidence:
+  tw.2597#e1:
+    locator: 服務項目／統包工程、總包工程
+    published_date: null
+    publisher: 潤弘精密工程事業股份有限公司
+    quote_check: found
+    title: 關於潤弘：服務項目
+    url: https://www.rtc.com.tw/company/
   tw.2597#e10:
-    locator: BIM應用
-    published_date: null
+    locator: 2026/02/09購買股權公告標題及董事會通過日期
+    published_date: '2026-02-09'
     publisher: 潤弘精密工程事業股份有限公司
     quote_check: found
-    title: BIM介紹
-    url: https://www.rtc.com.tw/iar/%E5%B7%A5%E7%A8%8Bbim/about-bim/
+    title: 公告本公司購買潤泰營造股份有限公司100%股權
+    url: https://www.rtc.com.tw/investors/important-messages/
   tw.2597#e11:
-    locator: BIM應用：竣工與維運
-    published_date: null
+    locator: 2026/02/09購買股權公告／第5項
+    published_date: '2026-02-09'
     publisher: 潤弘精密工程事業股份有限公司
     quote_check: found
-    title: BIM介紹
-    url: https://www.rtc.com.tw/iar/%E5%B7%A5%E7%A8%8Bbim/about-bim/
+    title: 公告本公司購買潤泰營造股份有限公司100%股權
+    url: https://www.rtc.com.tw/investors/important-messages/
+  tw.2597#e12:
+    locator: 第8項更正後內容
+    published_date: '2026-04-29'
+    publisher: 潤弘精密工程事業股份有限公司
+    quote_check: found
+    title: 更正115年03月背書保證資訊揭露明細表
+    url: https://www.rtc.com.tw/investors/important-messages/
+  tw.2597#e13:
+    locator: 第1、2、3及12項
+    published_date: '2024-09-26'
+    publisher: 潤泰精密材料股份有限公司
+    quote_check: found
+    title: 補充公告本公司購買德欣先進股份有限公司股權事宜
+    url: https://rtm.creatop.tw/chinese/ir/news-detail.php?NID=191
+  tw.2597#e14:
+    locator: 子公司投資德欣段落
+    published_date: '2025-07-05'
+    publisher: 自由時報
+    quote_check: found
+    title: 潤弘︰科技廠辦需求 持續火熱
+    url: https://ec.ltn.com.tw/article/paper/1714836
   tw.2597#e2:
-    locator: 第66頁，附註十四：部門資訊
-    published_date: '2026-08-13'
+    locator: 服務項目／專業分包工程
+    published_date: null
     publisher: 潤弘精密工程事業股份有限公司
     quote_check: found
-    title: 民國115年及114年第二季合併財務報告暨會計師核閱報告
-    url: https://www.rtc.com.tw/wp-content/uploads/2026/08/潤弘115Q2合併財報電子書.pdf
+    title: 關於潤弘：專業分包工程
+    url: https://www.rtc.com.tw/company/
   tw.2597#e3:
-    locator: 第48頁，附註七（一）：關係人之名稱及關係
-    published_date: '2026-08-13'
+    locator: 印刷頁79／現有產品種類及業務之營業比重
+    published_date: '2026-03-20'
     publisher: 潤弘精密工程事業股份有限公司
     quote_check: found
-    title: 民國115年及114年第二季合併財務報告暨會計師核閱報告
-    url: https://www.rtc.com.tw/wp-content/uploads/2026/08/潤弘115Q2合併財報電子書.pdf
+    title: 潤弘精密工程事業股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52156/2026/RNS/52156_rns_2026-04-21_04bdc560-c544-4447-9f71-581112a8cddb.pdf
   tw.2597#e4:
-    locator: 第15頁，附註四（三）2：列入合併財務報告之子公司
-    published_date: '2026-08-13'
+    locator: 印刷頁88／主要原料之供應狀況
+    published_date: null
     publisher: 潤弘精密工程事業股份有限公司
     quote_check: found
-    title: 民國115年及114年第二季合併財務報告暨會計師核閱報告
-    url: https://www.rtc.com.tw/wp-content/uploads/2026/08/潤弘115Q2合併財報電子書.pdf
+    title: 潤弘精密工程事業股份有限公司113年度年報
+    url: https://www.rtc.com.tw/wp-content/uploads/2025/10/114%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1%E4%B8%AD_20250424.pdf
   tw.2597#e5:
-    locator: 第73頁，附表六：被投資公司名稱、所在地區等相關資訊
-    published_date: '2026-08-13'
-    publisher: 潤弘精密工程事業股份有限公司
+    locator: 產業價值鏈
+    published_date: null
+    publisher: 潤泰創新國際股份有限公司
     quote_check: found
-    title: 民國115年及114年第二季合併財務報告暨會計師核閱報告
-    url: https://www.rtc.com.tw/wp-content/uploads/2026/08/潤弘115Q2合併財報電子書.pdf
+    title: 供應鏈管理
+    url: https://esg.rt-develop.com.tw/p57/
   tw.2597#e6:
-    locator: 第48頁，附註七（一）：關係人之名稱及關係
-    published_date: '2026-08-13'
+    locator: 附註七（一）關係人之名稱及關係；文件鏡像
+    published_date: null
     publisher: 潤弘精密工程事業股份有限公司
-    quote_check: found
-    title: 民國115年及114年第二季合併財務報告暨會計師核閱報告
-    url: https://www.rtc.com.tw/wp-content/uploads/2026/08/潤弘115Q2合併財報電子書.pdf
+    quote_check: unreachable
+    title: 潤弘114年第一季合併財務報告
+    url: https://financialfilings.com/filings/rec-2597/interim-quarterly-report/2026/33874361/
   tw.2597#e7:
-    locator: 服務項目：統包工程
+    locator: 附註四（三）列入合併財務報告之子公司；文件鏡像
     published_date: null
     publisher: 潤弘精密工程事業股份有限公司
-    quote_check: found
-    title: 關於潤弘
-    url: https://www.rtc.com.tw/company/
+    quote_check: unreachable
+    title: 潤弘114年第一季合併財務報告
+    url: https://financialfilings.com/filings/rec-2597/interim-quarterly-report/2026/33874361/
   tw.2597#e8:
-    locator: 服務項目：總包工程
+    locator: 附註四（三）列入合併財務報告之子公司；文件鏡像
     published_date: null
     publisher: 潤弘精密工程事業股份有限公司
-    quote_check: found
-    title: 關於潤弘
-    url: https://www.rtc.com.tw/company/
+    quote_check: unreachable
+    title: 潤弘114年第一季合併財務報告
+    url: https://financialfilings.com/filings/rec-2597/interim-quarterly-report/2026/33874361/
   tw.2597#e9:
-    locator: 服務項目：專業分包工程
+    locator: 附註四（三）子公司表註2；文件鏡像
     published_date: null
     publisher: 潤弘精密工程事業股份有限公司
-    quote_check: found
-    title: 關於潤弘
-    url: https://www.rtc.com.tw/company/
+    quote_check: unreachable
+    title: 潤弘114年第一季合併財務報告
+    url: https://financialfilings.com/filings/rec-2597/interim-quarterly-report/2026/33874361/

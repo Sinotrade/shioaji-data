@@ -62,13 +62,28 @@ themes:
   theme: theme.ai_server
   tier: midstream
 relations:
+  customers:
+  - as_of: '2022-11-29'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 導線架金屬原料
+    details:
+    - 導線架金屬原料
+    edge: e678dc7e412ed
+    evidence_level: primary
+    id: tw.2486
+    name: 一詮
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   parents:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 合併子公司；銅製品及銅片加工製銷
+    detail: 銅製品及銅片製銷加工子公司
     details:
-    - 合併子公司；銅製品及銅片加工製銷
+    - 銅製品及銅片製銷加工子公司
     - 最終母公司
     edge: e103361141809
     evidence_level: primary

@@ -26,18 +26,18 @@ chain_stage:
   stage_name: 矽晶圓與材料
   tier: upstream
 primary_chain_position: upstream
-summary_short: 製造與銷售半導體矽晶棒、拋光矽晶圓及磊晶晶圓。
-summary_long: 合晶以半導體矽晶材料製造與銷售為主要業務，產品涵蓋矽晶棒、拋光矽晶圓與磊晶晶圓，提供12吋及以下尺寸與輕摻、重摻規格。2025年半導體產品占營收99.39%，其他業務占0.61%。子公司睿晶科技生產SOI晶圓，可應用於矽光子；集團官網亦列有客製化氮化鎵磊晶產品。2026年第二季合併財報列睿晶科技與合晶寬能為直接子公司，上海合晶硅材料為間接子公司。
+summary_short: 製造與銷售半導體拋光矽晶圓、磊晶圓及特殊基板材料。
+summary_long: 合晶以半導體矽晶圓與磊晶材料製造及銷售為主要業務，2025年半導體產品占營收99.39%。產品包括輕摻與重摻拋光矽晶圓、磊晶圓及氮化鎵磊晶，子公司睿晶另提供SOI晶圓，可用於微機電、功率半導體與矽光子。2024年永續報告揭露客戶包括Infineon、NXP、TSMC、UMC等。2025年子公司WWIC與上海合晶合資設立上海晶沛；2026年合晶董事會核准透過子公司投資SUPERSIC約5%股權，並通過廠務設施及機器設備購置計畫。
 segments:
 - evidence_ids:
-  - e2
-  id: seg_semiconductor
+  - e1
+  id: semiconductor
   name: 半導體產品
   period: '2025'
   revenue_share_pct: 99.39
 - evidence_ids:
-  - e2
-  id: seg_other
+  - e1
+  id: other
   name: 其他
   period: '2025'
   revenue_share_pct: 0.61
@@ -57,6 +57,20 @@ themes:
   tier: midstream
 relations:
   competitors:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 半導體矽晶圓市場
+    details:
+    - 半導體矽晶圓市場
+    edge: ec5fe14ffecba
+    evidence_level: primary
+    id: jp.4063
+    name: Shin-Etsu Chemical
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   - as_of: '2018-05-24'
     confidence: ai_cross_checked
     counterparty_shares: []
@@ -71,16 +85,101 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  customers:
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 矽晶圓
+    details:
+    - 矽晶圓
+    edge: efbf3f87aa1dc
+    evidence_level: primary
+    id: cn.688981
+    name: SMIC
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 矽晶圓
+    details:
+    - 矽晶圓
+    edge: e37457740935d
+    evidence_level: primary
+    id: eu.IFX
+    name: Infineon Technologies AG
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 矽晶圓
+    details:
+    - 矽晶圓
+    edge: e0ff28742d000
+    evidence_level: primary
+    id: tw.2303
+    name: 聯電
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 矽晶圓
+    details:
+    - 矽晶圓
+    edge: ef1d7568b7e9e
+    evidence_level: primary
+    id: tw.2330
+    name: 台積電
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 矽晶圓
+    details:
+    - 矽晶圓
+    edge: e6399d4447712
+    evidence_level: primary
+    id: us.NXPI
+    name: 恩智浦半導體股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 矽晶圓
+    details:
+    - 矽晶圓
+    edge: e781c2c7aab24
+    evidence_level: primary
+    id: us.ON
+    name: onsemi
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 間接子公司
+    detail: 半導體材料子公司
     details:
-    - 間接子公司
-    edge: e8b0c6b53036f
+    - 半導體材料子公司
+    edge: eb47db4352481
     evidence_level: primary
-    id: org.上海合晶硅材料股份有限公司
+    id: cn.688584
     name: 上海合晶硅材料股份有限公司
     ranking_basis: unranked
     share_basis: null
@@ -89,26 +188,26 @@ relations:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接子公司
+    detail: 投資控股子公司
     details:
-    - 直接子公司
-    edge: e606d1f877eb3
+    - 投資控股子公司
+    edge: edb3a28e281ea
     evidence_level: primary
-    id: org.合晶寬能股份有限公司
-    name: 合晶寬能股份有限公司
+    id: org.wafer-works-investment
+    name: Wafer Works Investment Corp.
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-06-30'
+  - as_of: 2026-10
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接子公司；SOI晶圓
+    detail: 專注SOI半導體材料的子公司
     details:
-    - 直接子公司；SOI晶圓
-    edge: ed3457739bbfe
+    - 專注SOI半導體材料的子公司
+    edge: e99115fce93c4
     evidence_level: primary
-    id: org.睿晶科技股份有限公司
+    id: org.wafer-works-optronics
     name: 睿晶科技股份有限公司
     ranking_basis: unranked
     share_basis: null
@@ -129,95 +228,262 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  transactions:
+  - amount: 上海合晶認繳人民幣10,700萬元；合資公司註冊資本人民幣36,000萬元
+    as_of: '2026-09-08'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司上海合晶參與SOI合資公司
+    details:
+    - 子公司上海合晶參與SOI合資公司
+    edge: ec69854dbfa5f
+    event_date: '2026-09-08'
+    events:
+    - amount: 上海合晶認繳人民幣10,700萬元；合資公司註冊資本人民幣36,000萬元
+      detail: 子公司上海合晶參與SOI合資公司
+      event_date: '2026-09-08'
+    evidence_level: primary
+    id: org.henan-xinjing-semiconductor
+    name: 河南芯晶半導體有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 合資公司註冊資本人民幣5,000萬元；WWIC擬出資不超過3,000萬元、上海合晶擬出資不超過2,000萬元
+    as_of: '2025-06-24'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過子公司共同出資設立電子材料公司
+    details:
+    - 透過子公司共同出資設立電子材料公司
+    edge: ef49d069d2d1c
+    event_date: '2025-06-24'
+    events:
+    - amount: 合資公司註冊資本人民幣5,000萬元；WWIC擬出資不超過3,000萬元、上海合晶擬出資不超過2,000萬元
+      detail: 透過子公司共同出資設立電子材料公司
+      event_date: '2025-06-24'
+    evidence_level: primary
+    id: org.shanghai-jingpei-electronic-materials
+    name: 上海晶沛電子材料有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 不超過USD15,000仟元（換算NTD486,000仟元）
+    as_of: '2026-05-08'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過子公司投資約5%股權
+    details:
+    - 透過子公司投資約5%股權
+    edge: eb4aa5176f85d
+    event_date: '2026-05-08'
+    events:
+    - amount: 不超過USD15,000仟元（換算NTD486,000仟元）
+      detail: 透過子公司投資約5%股權
+      event_date: '2026-05-08'
+    evidence_level: primary
+    id: org.supersic-malaysia
+    name: SUPERSIC (MALAYSIA) SDN. BHD.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2024-07-04'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 瑞典氮化鎵磊晶公司投資
+    details:
+    - 瑞典氮化鎵磊晶公司投資
+    edge: eb6da8f8ca298
+    event_date: null
+    events:
+    - amount: null
+      detail: 瑞典氮化鎵磊晶公司投資
+      event_date: null
+    evidence_level: media
+    id: org.swegan
+    name: SweGaN
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2024-07-04'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 氮化鎵產業投資
+    details:
+    - 氮化鎵產業投資
+    edge: ecb43a0b491b1
+    event_date: null
+    events:
+    - amount: null
+      detail: 氮化鎵產業投資
+      event_date: null
+    evidence_level: media
+    id: org.鴻鎵科技
+    name: 鴻鎵科技
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 年報未具名的A客戶及B客戶，無法對應至已揭露的具名客戶。
+- 合併財報長期原料採購合約中的甲供應商、乙供應商。
+- 矽多晶料、研磨粉及拋光漿、坩堝的國際知名供應商，年報未揭露名稱。
+- 2024年及2026年機器設備購置計畫的交易對象，公告時尚待確定。
 website: Http://www.waferworks.com
 tax_id: '16138282'
 incorporated: '1997-07-24'
 listed: '2002-05-16'
-as_of: '2026-10-14'
+as_of: '2026-10-25'
 confidence: ai_cross_checked
 has_research: true
 evidence:
-  tw.6182#e10:
-    locator: 產品介紹，第一段
-    published_date: null
-    publisher: 合晶科技股份有限公司
-    quote_check: found
-    title: 氮化鎵磊晶
-    url: https://www.waferworks.com/tw/ganepi
-  tw.6182#e11:
-    locator: 第14頁，四、重大會計政策之彙總說明／3.合併概況；投資公司為本公司之子公司列
-    published_date: '2026-08-14'
-    publisher: 合晶科技股份有限公司
-    quote_check: found
-    title: 合晶科技股份有限公司及子公司2026年第二季合併財務報告
-    url: https://www.waferworks.com/uploads/2026_q2_con.pdf
-  tw.6182#e12:
-    locator: 第14頁，四、重大會計政策之彙總說明／3.合併概況；投資公司為本公司之子公司列
-    published_date: '2026-08-14'
-    publisher: 合晶科技股份有限公司
-    quote_check: found
-    title: 合晶科技股份有限公司及子公司2026年第二季合併財務報告
-    url: https://www.waferworks.com/uploads/2026_q2_con.pdf
-  tw.6182#e13:
-    locator: 第15頁合併主體表之Silicon Technology Investment (Cayman) Corp.投資列；第16頁合併概況註3
-    published_date: '2026-08-14'
-    publisher: 合晶科技股份有限公司
-    quote_check: found
-    title: 合晶科技股份有限公司及子公司2026年第二季合併財務報告
-    url: https://www.waferworks.com/uploads/2026_q2_con.pdf
-  tw.6182#e2:
-    locator: 第73頁，業務範圍／營業比重；114年度，金額單位為新台幣仟元、比例單位為%
+  tw.6182#e1:
+    locator: 印刷頁73，業務範圍／營業比重
     published_date: '2026-04-30'
     publisher: 合晶科技股份有限公司
     quote_check: found
     title: 合晶科技股份有限公司2025年報
     url: https://www.waferworks.com/uploads/investor/financial_information/annual_reports/2025_annual_report.pdf
-  tw.6182#e3:
-    locator: 主要產品欄
+  tw.6182#e10:
+    locator: 第21頁，主要產品與服務／客戶群
+    published_date: null
+    publisher: 合晶科技股份有限公司
+    quote_check: not_found
+    title: 合晶科技2024年永續報告書
+    url: https://www.waferworks.com/uploads/esg/esg_report/2024esgreport.pdf
+  tw.6182#e11:
+    locator: 印刷頁82，同業競爭情形
+    published_date: '2026-04-30'
+    publisher: 合晶科技股份有限公司
+    quote_check: found
+    title: 合晶科技股份有限公司2025年報
+    url: https://www.waferworks.com/uploads/investor/financial_information/annual_reports/2025_annual_report.pdf
+  tw.6182#e12:
+    locator: 第1頁，投資概述
+    published_date: '2025-06-24'
+    publisher: 上海合晶硅材料股份有限公司
+    quote_check: found
+    title: 上海合晶關於對外投資設立合資公司暨關聯交易的進展公告
+    url: https://static.cninfo.com.cn/finalpage/2025-06-24/1223955303.PDF
+  tw.6182#e13:
+    locator: 第1頁，投資進展
+    published_date: '2025-06-24'
+    publisher: 上海合晶硅材料股份有限公司
+    quote_check: found
+    title: 上海合晶關於對外投資設立合資公司暨關聯交易的進展公告
+    url: https://static.cninfo.com.cn/finalpage/2025-06-24/1223955303.PDF
+  tw.6182#e14:
+    locator: 新聞本文第一段
+    published_date: '2026-05-08'
+    publisher: 中央通訊社
+    quote_check: found
+    title: 合晶集團斥資4.86億取得馬來西亞SUPERSIC約5%股權
+    url: https://www.cna.com.tw/news/afe/202605083006.aspx
+  tw.6182#e15:
+    locator: 重大訊息第5項
+    published_date: '2026-05-08'
+    publisher: 台視財經／公開資訊觀測站重大訊息
+    quote_check: found
+    title: 合晶間接取得SUPERSIC約5%股權，上限1500萬美元
+    url: https://www.ttv.com.tw/finance/view/default.asp?from=587&i=052026082125A4102AF74C4744EC84EF58E86BDA79A01D72
+  tw.6182#e16:
+    locator: 重大訊息第2、3項
+    published_date: '2026-08-14'
+    publisher: 台視財經／公開資訊觀測站重大訊息
+    quote_check: found
+    title: 合晶董事會決議購置廠務設施及機器設備，上限159.5億元
+    url: https://www.ttv.com.tw/finance/view/082026141906951C7FC41EB64D5BA2B72C5A8B0D088E84F6/588
+  tw.6182#e17:
+    locator: 重大訊息第2、3項
+    published_date: '2024-08-09'
+    publisher: MoneyDJ／公開資訊觀測站重大訊息
+    quote_check: found
+    title: 合晶董事會決議購置機器設備投資計畫案，資本支出不超過31.33億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=4a90ea1e-e158-44ff-8506-f9f1344138b9
+  tw.6182#e18:
+    locator: 公告2026-050，出資金額
+    published_date: '2026-09-08'
+    publisher: 上海合晶硅材料股份有限公司／上海證券報
+    quote_check: found
+    title: 上海合晶對外投資設立合資公司的進展暨完成工商登記公告
+    url: https://paper.cnstock.com/html/2026-09/08/content_2265975.htm
+  tw.6182#e19:
+    locator: 工商變更登記資料
+    published_date: '2026-09-08'
+    publisher: 上海合晶硅材料股份有限公司／上海證券報
+    quote_check: found
+    title: 上海合晶對外投資設立合資公司的進展暨完成工商登記公告
+    url: https://paper.cnstock.com/html/2026-09/08/content_2265975.htm
+  tw.6182#e2:
+    locator: 股票代號、主要產品
     published_date: null
     publisher: 合晶科技股份有限公司
     quote_check: found
     title: 公司概況
     url: https://www.waferworks.com/tw/financial-information/company-overview
-  tw.6182#e4:
-    locator: 產品佈局
-    published_date: null
-    publisher: 合晶科技股份有限公司
+  tw.6182#e20:
+    locator: 萬惠雯具名報導，首段
+    published_date: '2024-07-04'
+    publisher: MoneyDJ理財網
     quote_check: found
-    title: 客製化矽晶圓服務
-    url: https://www.waferworks.com/tw/products-and-service/service
-  tw.6182#e5:
-    locator: 產品說明
-    published_date: null
-    publisher: 合晶科技股份有限公司
-    quote_check: found
-    title: 客製化晶圓
-    url: https://www.waferworks.com/tw/custom-wafers
-  tw.6182#e6:
-    locator: 產品說明及輕摻、重摻拋光片規格表
+    title: 合晶投資氮化鎵2公司並續尋產業鏈投資標的
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=2272e4b5-f11d-4131-ac45-c032bd3c6e2b
+  tw.6182#e3:
+    locator: 產品介紹
     published_date: null
     publisher: 合晶科技股份有限公司
     quote_check: found
     title: 拋光晶圓
     url: https://www.waferworks.com/tw/polished-silicon-wafers
+  tw.6182#e4:
+    locator: 睿晶科技公司介紹
+    published_date: null
+    publisher: 合晶科技股份有限公司
+    quote_check: found
+    title: SOI晶圓
+    url: https://www.waferworks.com/tw/soi-wafers
+  tw.6182#e5:
+    locator: 產品應用
+    published_date: null
+    publisher: 合晶科技股份有限公司
+    quote_check: found
+    title: SOI晶圓
+    url: https://www.waferworks.com/tw/soi-wafers
+  tw.6182#e6:
+    locator: 產品介紹、產品種類和應用
+    published_date: null
+    publisher: 合晶科技股份有限公司
+    quote_check: found
+    title: 氮化鎵磊晶
+    url: https://www.waferworks.com/tw/ganepi
   tw.6182#e7:
-    locator: 磊晶圓規格表下方註解
-    published_date: null
+    locator: 第81頁，附註十三註9
+    published_date: '2026-08-14'
     publisher: 合晶科技股份有限公司
     quote_check: found
-    title: 磊晶晶圓
-    url: https://www.waferworks.com/tw/epitaxial-wafers
+    title: 合晶科技及子公司2026年第二季合併財務報告
+    url: https://www.waferworks.com/uploads/2026_q2_con.pdf
   tw.6182#e8:
-    locator: 睿晶科技產品介紹，第一段
-    published_date: null
+    locator: 第81頁，附註十三註6
+    published_date: '2026-08-14'
     publisher: 合晶科技股份有限公司
     quote_check: found
-    title: SOI晶圓
-    url: https://www.waferworks.com/tw/soi-wafers
+    title: 合晶科技及子公司2026年第二季合併財務報告
+    url: https://www.waferworks.com/uploads/2026_q2_con.pdf
   tw.6182#e9:
-    locator: 睿晶科技產品介紹，第二段SOI晶圓應用
+    locator: 第21頁，主要產品與服務／客戶群；第3頁記載2025年6月發行
     published_date: null
     publisher: 合晶科技股份有限公司
-    quote_check: found
-    title: SOI晶圓
-    url: https://www.waferworks.com/tw/soi-wafers
+    quote_check: not_found
+    title: 合晶科技2024年永續報告書
+    url: https://www.waferworks.com/uploads/esg/esg_report/2024esgreport.pdf

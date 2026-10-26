@@ -84,10 +84,18 @@ members:
 - id: tw.3010
   stage: materials
   tier: upstream
-  detail: CoWoS封裝材料驗證與測試
-  as_of: 2026-09
+  detail: 新一代CoWoS材料驗證與測試
+  as_of: '2026-09-02'
   evidence:
-  - tw.3010#e10
+  - tw.3010#e19
+  confidence: ai_cross_checked
+- id: tw.3030
+  stage: equipment
+  tier: upstream
+  detail: CoWoS先進封裝光學檢測設備
+  as_of: '2024-05-16'
+  evidence:
+  - tw.3030#e17
   confidence: ai_cross_checked
 - id: tw.3055
   stage: equipment
@@ -112,6 +120,14 @@ members:
   as_of: '2026-04-04'
   evidence:
   - tw.3167#e7
+  confidence: ai_cross_checked
+- id: tw.3265
+  stage: manufacturing
+  tier: midstream
+  detail: 2.5D及CoWoS製程能力建置
+  as_of: '2026-10-06'
+  evidence:
+  - tw.3265#e5
   confidence: ai_cross_checked
 - id: tw.3289
   stage: test
@@ -148,10 +164,10 @@ members:
 - id: tw.3563
   stage: equipment
   tier: upstream
-  detail: CoWoS封裝IC外觀檢測設備
-  as_of: '2026-10-15'
+  detail: 支援CoWoS應用的IC外觀檢測設備
+  as_of: '2026-10-25'
   evidence:
-  - tw.3563#e8
+  - tw.3563#e2
   confidence: ai_cross_checked
 - id: tw.3580
   stage: equipment
@@ -219,13 +235,13 @@ members:
   evidence:
   - tw.4542#e12
   confidence: ai_cross_checked
-- id: tw.4749
-  stage: materials
+- id: tw.4576
+  stage: equipment
   tier: upstream
-  detail: CoWoS等先進封裝光阻研發
-  as_of: 2026-06
+  detail: CoWoS設備用精密定位方案
+  as_of: '2026-04-20'
   evidence:
-  - tw.4749#e10
+  - tw.4576#e11
   confidence: ai_cross_checked
 - id: tw.4755
   stage: materials
@@ -267,6 +283,14 @@ members:
   evidence:
   - tw.5443#e8
   confidence: ai_cross_checked
+- id: tw.6166
+  stage: equipment
+  tier: upstream
+  detail: CoWoS製程運動控制與光學檢測方案
+  as_of: '2024-08-14'
+  evidence:
+  - tw.6166#e5
+  confidence: ai_cross_checked
 - id: tw.6187
   stage: equipment
   tier: upstream
@@ -300,14 +324,6 @@ members:
   as_of: 2025-12
   evidence:
   - tw.6257#e5
-  confidence: ai_cross_checked
-- id: tw.6271
-  stage: materials
-  tier: upstream
-  detail: CoWoS／CoWoP陶瓷Core（TCV）技術開發
-  as_of: '2026-04-15'
-  evidence:
-  - tw.6271#e8
   confidence: ai_cross_checked
 - id: tw.6425
   stage: equipment
@@ -369,10 +385,11 @@ members:
 - id: tw.6640
   stage: equipment
   tier: upstream
-  detail: CoWoS相關先進封裝設備
-  as_of: '2026-03-31'
+  detail: CoWoS先進封裝製程設備
+  as_of: '2025-12-31'
   evidence:
-  - tw.6640#e9
+  - tw.6640#e07
+  - tw.6640#e23
   confidence: ai_cross_checked
 - id: tw.6658
   stage: equipment
@@ -397,14 +414,6 @@ members:
   as_of: '2026-06-10'
   evidence:
   - tw.6667#e6
-  confidence: ai_cross_checked
-- id: tw.6683
-  stage: test
-  tier: midstream
-  detail: CoWoS探針卡
-  as_of: '2025-12-31'
-  evidence:
-  - tw.6683#e11
   confidence: ai_cross_checked
 - id: tw.6706
   stage: equipment
@@ -459,35 +468,26 @@ members:
 - id: tw.7751
   stage: equipment
   tier: upstream
-  detail: CoWoS相關封裝設備
-  as_of: 2026-09
+  detail: CoWoS之oS段設備
+  as_of: '2025-08-27'
   evidence:
-  - tw.7751#e7
+  - tw.7751#e08
   confidence: ai_cross_checked
 - id: tw.7822
   stage: equipment
   tier: upstream
-  detail: CoWoS先進封裝光學檢測設備
-  as_of: '2026-06-21'
+  detail: CoWoS製程檢測設備
+  as_of: '2026-08-19'
   evidence:
-  - tw.7822#E7
+  - tw.7822#e14
   confidence: ai_cross_checked
 - id: tw.7828
   stage: equipment
   tier: upstream
   detail: CoWoS基板元件返修設備
-  as_of: '2026-09-10'
+  as_of: 2026-10
   evidence:
-  - tw.7828#e9
-  confidence: ai_cross_checked
-- id: tw.7828
-  stage: materials
-  tier: upstream
-  detail: 面向TGV CoWoS封裝的銅柱方案
-  as_of: '2026-10-14'
-  evidence:
-  - tw.7828#e6
-  - tw.7828#e12
+  - tw.7828#e5
   confidence: ai_cross_checked
 - id: tw.7856
   stage: equipment
@@ -530,4 +530,4 @@ members:
   - tw.8227#e7
   - tw.8227#e8
   confidence: ai_cross_checked
-as_of: '2026-10-18'
+as_of: '2026-10-25'

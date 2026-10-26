@@ -17,28 +17,60 @@ industry:
   l3: comp.other
   l3_name: 其他電子零組件
   l3_name_en: Other Electronic Components
+chain: chain.auto
+chain_stage:
+  agreement: both
+  also: []
+  reason: 主要製造繼電器與接觸器，電動車、充電及汽車為主要應用，屬上游電子元件。
+  stage: materials
+  stage_name: 材料與電子元件
+  tier: upstream
 primary_chain_position: upstream
-summary_short: 研發、製造與銷售繼電器，以新能源應用產品為主要營收來源。
-summary_long: 松川精密從事繼電器研發、製造與銷售，產品分為新能源用、車用及通用繼電器。2025年新能源用繼電器占營收57.03%，車用占20.85%，通用占22.12%，以新能源用產品為最大收入來源。公司另揭露儲能用高電流繼電器研發成果，並有電動車、充電系統及AI伺服器電源應用。主要直接子公司包括廈門、新加坡、歐洲、美洲及上海松川；2026年公告亦確認頤盛投資為直接持股48%的子公司。
+summary_short: 研發、製造及銷售繼電器與接觸器，主要應用於電動車、充電、汽車與電源控制。
+summary_long: 松川精密主要研發、製造及銷售繼電器與接觸器，產品包括插拔式、PCB式及高壓交直流接觸器。2026年上半年，電動車與充電系統占合併營收40%、汽車20%、電源與控制17%、儲能、太陽能與微電網15%，另有家電及電磁元件業務。公司揭露AI伺服器電源應用，具名客戶包含台達電、光寶科技與康舒；經濟日報另報導其供應特斯拉儲能繼電器。2026年董事會決議以新台幣499,680,000元參與頤盛投資增資，規劃透過頤盛取得台興股權。台興於同年6月加入集團，其電磁鐵與電磁閥業務由子公司經營。
 segments:
 - evidence_ids:
-  - e2
-  id: seg.new_energy
-  name: 新能源用繼電器
-  period: 2025年度
-  revenue_share_pct: 57.03
+  - e02
+  - e03
+  id: ev_charging
+  name: 電動車、充電系統
+  period: 2026H1
+  revenue_share_pct: 40
 - evidence_ids:
-  - e3
-  id: seg.automotive
-  name: 車用繼電器
-  period: 2025年度
-  revenue_share_pct: 20.85
+  - e02
+  - e03
+  id: storage_solar_grid
+  name: 儲能、太陽能、微電網
+  period: 2026H1
+  revenue_share_pct: 15
 - evidence_ids:
-  - e4
-  id: seg.general
-  name: 通用繼電器
-  period: 2025年度
-  revenue_share_pct: 22.12
+  - e02
+  - e03
+  id: automotive
+  name: 汽車
+  period: 2026H1
+  revenue_share_pct: 20
+- evidence_ids:
+  - e02
+  - e03
+  id: power_control
+  name: 電源與控制（AI POWER）
+  period: 2026H1
+  revenue_share_pct: 17
+- evidence_ids:
+  - e02
+  - e03
+  id: home_appliances
+  name: 家電
+  period: 2026H1
+  revenue_share_pct: 7.8
+- evidence_ids:
+  - e02
+  - e12
+  id: electromagnetic
+  name: 電磁鐵／電磁閥
+  period: 2026H1
+  revenue_share_pct: 0.2
 main_theme: theme.ev
 themes:
 - also: []
@@ -50,27 +82,99 @@ themes:
   theme: theme.ai_server
   tier: midstream
 relations:
-  subsidiaries:
-  - as_of: '2025-12-31'
+  customers:
+  - as_of: '2026-03-04'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 上海直接子公司
+    detail: 電源供應控制用繼電器
     details:
-    - 上海直接子公司
-    edge: ef52c452cfeed
+    - 電源供應控制用繼電器
+    edge: e010d8803d423
     evidence_level: primary
-    id: org.shanghai-song-chuan-precision-electronics
-    name: 上海松川精密電子有限公司
+    id: tw.2301
+    name: 光寶科
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: '2026-03-04'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 電源供應控制用繼電器
+    details:
+    - 電源供應控制用繼電器
+    edge: ee6e9b105841b
+    evidence_level: primary
+    id: tw.2308
+    name: 台達電
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-09-16'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 電源供應控制用繼電器
+    details:
+    - 電源供應控制用繼電器
+    edge: ebe6429796bbf
+    evidence_level: media
+    id: tw.6282
+    name: 康舒
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-09-29'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 儲能用繼電器
+    details:
+    - 儲能用繼電器
+    edge: e797fd75140af
+    evidence_level: media
+    id: us.TSLA
+    name: Tesla
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  partners:
+  - as_of: '2026-02-09'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 合作運營頤盛投資
+    details:
+    - 合作運營頤盛投資
+    edge: ed3ced4ed4847
+    evidence_level: primary
+    id: org.tgvest-capital
+    name: 閎鼎資本股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-02-09'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 共同投資及合作運營頤盛投資
+    details:
+    - 共同投資及合作運營頤盛投資
+    edge: e0ab475277228
+    evidence_level: primary
+    id: tw.3042
+    name: 晶技
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 美洲直接子公司
+    detail: 美洲繼電器銷售子公司
     details:
-    - 美洲直接子公司
+    - 美洲繼電器銷售子公司
     edge: e3a5655a3ede8
     evidence_level: primary
     id: org.song-chuan-precision-americas
@@ -82,13 +186,13 @@ relations:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 歐洲子公司
+    detail: 繼電器銷售子公司
     details:
-    - 歐洲子公司
-    edge: e5a7ccd717fb2
+    - 繼電器銷售子公司
+    edge: ea10c84a01b4c
     evidence_level: primary
-    id: org.song-chuan-precision-europe
-    name: Song Chuan Precision Europe GmbH
+    id: org.song-chuan-shanghai
+    name: 上海松川精密電子有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -96,155 +200,244 @@ relations:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 新加坡直接子公司
+    detail: 繼電器製造及銷售子公司
     details:
-    - 新加坡直接子公司
-    edge: e75c556f7c66b
+    - 繼電器製造及銷售子公司
+    edge: e7540b4cd43a6
     evidence_level: primary
-    id: org.song-chuan-singapore
-    name: Song Chuan Singapore Pte. Ltd.
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
-  - as_of: '2025-12-31'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 廈門子公司
-    details:
-    - 廈門子公司
-    edge: ec02285b3b639
-    evidence_level: primary
-    id: org.song-chuan-xiamen-precision-electronics
+    id: org.song-chuan-xiamen
     name: 松川（廈門）精密電子有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-08-12'
+  - as_of: '2026-06-05'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持股48%的子公司
+    detail: 重要子公司
     details:
-    - 直接持股48%的子公司
-    edge: e6f21b053eda8
+    - 重要子公司
+    edge: ec1590faf19b8
     evidence_level: primary
-    id: org.yi-sheng-investment-60399345
+    id: org.yi-sheng-investment
     name: 頤盛投資股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: '2026-06-08'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過頤盛投資納入的電磁元件子公司
+    details:
+    - 透過頤盛投資納入的電磁元件子公司
+    edge: e2dad5ababb17
+    evidence_level: primary
+    id: tw.3426
+    name: 台興電子企業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 人民幣21,390,914.56元
+    as_of: '2025-12-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司松川（廈門）取得廠房使用權資產
+    details:
+    - 子公司松川（廈門）取得廠房使用權資產
+    edge: edf023925adb1
+    event_date: '2025-12-30'
+    events:
+    - amount: 人民幣21,390,914.56元
+      detail: 子公司松川（廈門）取得廠房使用權資產
+      event_date: '2025-12-30'
+    evidence_level: primary
+    id: org.xiamen-shengtian-enterprise
+    name: 廈門勝天企業有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 人民幣50,277,262.34元
+    as_of: '2025-12-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司松川（廈門）取得廠房使用權資產
+    details:
+    - 子公司松川（廈門）取得廠房使用權資產
+    edge: eac3896e71077
+    event_date: '2025-12-30'
+    events:
+    - amount: 人民幣50,277,262.34元
+      detail: 子公司松川（廈門）取得廠房使用權資產
+      event_date: '2025-12-30'
+    evidence_level: primary
+    id: org.xiamen-taisong-precision-electronics
+    name: 廈門台松精密電子有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣499,680,000元
+    as_of: '2026-02-09'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 認購現金增資普通股
+    details:
+    - 認購現金增資普通股
+    edge: edacd5828666d
+    event_date: '2026-02-09'
+    events:
+    - amount: 新台幣499,680,000元
+      detail: 認購現金增資普通股
+      event_date: '2026-02-09'
+    evidence_level: primary
+    id: org.yi-sheng-investment
+    name: 頤盛投資股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 2025年度年報以「A公司」與「B集團」揭露主要銷貨對象，未公開名稱，不對應至…
+- 2025年度年報以「甲公司」揭露主要接點材料供應商，未公開名稱。
+- 官方法說提及的美系及歐系客戶，未逐案具名，未自行推定身分。
 website: https://www.songchuan.com/sc/
 tax_id: '33923363'
 incorporated: '1974-07-20'
 listed: '2025-10-16'
-as_of: '2026-10-15'
+as_of: '2026-10-26'
 confidence: ai_cross_checked
 has_research: true
 evidence:
-  tw.7788#e1:
-    locator: 公司名稱、股票代號及主要經營業務欄
-    published_date: null
+  tw.7788#e02:
+    locator: 第16頁「產品應用別佔比」，2026H1最右欄；已視讀圖例與區塊：電動車及充電40%、儲能等15%、汽車20%、電源與控制17%、家電7.8%、電磁鐵／電磁閥0.2%
+    published_date: '2026-09-08'
     publisher: 松川精密股份有限公司
     quote_check: found
-    title: 公司基本資料
-    url: https://www.songchuan.com/sc/index.php/iv1/
+    title: 2026年第二季法人說明會
+    url: https://www.songchuan.com/sc/wp-content/uploads/2026/09/1150908法人說明會.pdf
+  tw.7788#e03:
+    locator: 第16頁「產品應用別佔比」圖例及2026H1欄
+    published_date: '2026-09-08'
+    publisher: 松川精密股份有限公司
+    quote_check: found
+    title: 2026年第二季法人說明會
+    url: https://www.songchuan.com/sc/wp-content/uploads/2026/09/1150908法人說明會.pdf
+  tw.7788#e04:
+    locator: 第71頁「公司目前之商品（服務）項目」
+    published_date: '2026-04-30'
+    publisher: 松川精密股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.songchuan.com/sc/wp-content/uploads/2026/06/1150617松川精密-股東會年報中文上傳版.pdf
+  tw.7788#e05:
+    locator: 第4頁「松川介紹／主要產品」
+    published_date: '2026-03-04'
+    publisher: 松川精密股份有限公司
+    quote_check: found
+    title: 20260304投資論壇－公司簡報
+    url: https://www.songchuan.com/sc/wp-content/uploads/2026/03/20260304投資論壇-公司簡報.pdf
+  tw.7788#e06:
+    locator: 第10頁「聚焦四大關鍵應用領域」；第11至12頁AI伺服器電源應用
+    published_date: '2026-09-08'
+    publisher: 松川精密股份有限公司
+    quote_check: found
+    title: 2026年第二季法人說明會
+    url: https://www.songchuan.com/sc/wp-content/uploads/2026/09/1150908法人說明會.pdf
+  tw.7788#e07:
+    locator: 正文第二段，具名供貨對象
+    published_date: '2025-09-16'
+    publisher: 鉅亨網／記者張欽發
+    quote_check: found
+    title: 電動車及儲能設施需求持續走高 松川精密營運不看淡
+    url: https://news.cnyes.com/news/id/6156819
+  tw.7788#e08:
+    locator: 第41頁「主要客戶群」；已實際視讀DELTA及LITEON光寶科技商標，未將商標說明加入逐字引文
+    published_date: '2026-03-04'
+    publisher: 松川精密股份有限公司
+    quote_check: not_found
+    title: 20260304投資論壇－公司簡報
+    url: https://www.songchuan.com/sc/wp-content/uploads/2026/03/20260304投資論壇-公司簡報.pdf
+  tw.7788#e09:
+    locator: 正文台達電儲能設備段落末句
+    published_date: '2026-09-29'
+    publisher: 經濟日報／記者劉芳妙、陳昱翔
+    quote_check: found
+    title: 輝達破天荒訂 AI 工廠儲能認證規範 台達、光寶有望迎來大單
+    url: https://udn.com/news/story/7240/9782226
   tw.7788#e10:
-    locator: 第12頁，附註四（三）2，直接子公司名單
-    published_date: null
+    locator: 新聞稿第一段及第三段
+    published_date: '2026-02-09'
     publisher: 松川精密股份有限公司
-    quote_check: unreachable
-    title: 114年度及113年度合併財務報告
-    url: https://financialfilings.com/filings/song-chuan-7788/annual-report/2026/47060453/
+    quote_check: found
+    title: 本公司董事會決議擬取得頤盛投資股份有限公司普通股
+    url: https://www.songchuan.com/sc/index.php/news_tw/20260209tw/
   tw.7788#e11:
-    locator: 第12頁，附註四（三）2，直接子公司名單
-    published_date: null
+    locator: 新聞稿第二段，共同合作運營安排
+    published_date: '2026-02-09'
     publisher: 松川精密股份有限公司
-    quote_check: unreachable
-    title: 114年度及113年度合併財務報告
-    url: https://financialfilings.com/filings/song-chuan-7788/annual-report/2026/47060453/
+    quote_check: found
+    title: 本公司董事會決議擬取得頤盛投資股份有限公司普通股
+    url: https://www.songchuan.com/sc/index.php/news_tw/20260209tw/
   tw.7788#e12:
-    locator: 第12頁，附註四（三）2，投資公司為本公司之列
-    published_date: null
-    publisher: 松川精密股份有限公司
-    quote_check: unreachable
-    title: 114年度及113年度合併財務報告
-    url: https://financialfilings.com/filings/song-chuan-7788/annual-report/2026/47060453/
-  tw.7788#e13:
-    locator: 第12頁，附註四（三）2，投資公司為本公司之列
-    published_date: null
-    publisher: 松川精密股份有限公司
-    quote_check: unreachable
-    title: 114年度及113年度合併財務報告
-    url: https://financialfilings.com/filings/song-chuan-7788/annual-report/2026/47060453/
-  tw.7788#e14:
-    locator: 第12頁，附註四（三）2，投資公司為本公司之列
-    published_date: null
-    publisher: 松川精密股份有限公司
-    quote_check: unreachable
-    title: 114年度及113年度合併財務報告
-    url: https://financialfilings.com/filings/song-chuan-7788/annual-report/2026/47060453/
-  tw.7788#e15:
-    locator: 公告第2項，公司名稱及關係
-    published_date: '2026-08-12'
-    publisher: 公開資訊觀測站；玉山證券刊載
-    quote_check: found
-    title: 松川精密依公開發行公司資金貸與及背書保證處理準則公告
-    url: https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B7A58A735-AB2D-40B6-A226-C550D1E2FDF7%7D
-  tw.7788#e2:
-    locator: 第71頁，最近二年度之主要產品種類及其營業比重；114年度欄
-    published_date: '2026-04-30'
-    publisher: 松川精密股份有限公司
-    quote_check: found
-    title: 114年度年報
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52699/2026/RNS/52699_rns_2026-05-29_3f6917f5-e034-48e6-91c0-401306ccad4f.pdf
-  tw.7788#e3:
-    locator: 第71頁，最近二年度之主要產品種類及其營業比重；114年度欄
-    published_date: '2026-04-30'
-    publisher: 松川精密股份有限公司
-    quote_check: found
-    title: 114年度年報
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52699/2026/RNS/52699_rns_2026-05-29_3f6917f5-e034-48e6-91c0-401306ccad4f.pdf
-  tw.7788#e4:
-    locator: 第71頁，最近二年度之主要產品種類及其營業比重；114年度欄
-    published_date: '2026-04-30'
-    publisher: 松川精密股份有限公司
-    quote_check: found
-    title: 114年度年報
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52699/2026/RNS/52699_rns_2026-05-29_3f6917f5-e034-48e6-91c0-401306ccad4f.pdf
-  tw.7788#e5:
-    locator: 第2頁，114年度研究發展成果
-    published_date: '2026-04-30'
-    publisher: 松川精密股份有限公司
-    quote_check: found
-    title: 114年度年報
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52699/2026/RNS/52699_rns_2026-05-29_3f6917f5-e034-48e6-91c0-401306ccad4f.pdf
-  tw.7788#e6:
-    locator: 第9頁，松川里程碑
-    published_date: '2026-09-08'
-    publisher: 松川精密股份有限公司
-    quote_check: found
-    title: 2026年第二季法人說明會
-    url: https://www.songchuan.com/sc/wp-content/uploads/2026/09/1150908%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83.pdf
-  tw.7788#e7:
-    locator: 第11頁
-    published_date: '2026-09-08'
-    publisher: 松川精密股份有限公司
-    quote_check: found
-    title: 2026年第二季法人說明會
-    url: https://www.songchuan.com/sc/wp-content/uploads/2026/09/1150908%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83.pdf
-  tw.7788#e8:
-    locator: 正文第4段
+    locator: 首段加入日期、第二段台興產品領域
     published_date: '2026-06-08'
     publisher: 松川精密股份有限公司
     quote_check: found
-    title: Moving Forward Together, Creating the Future! Song Chuan Precision Proudly Welcomes Tai Shing Electronics Components Corporation (TSE) to the Group
-    url: https://www.songchuan.com/sc/index.php/en/news/20260608en/
-  tw.7788#e9:
-    locator: 114年5月29日董事會議案第3項
-    published_date: null
+    title: 攜手前行，共創未來！松川精密誠摯歡迎台興電子加入
+    url: https://www.songchuan.com/sc/index.php/news_tw/20260608tw/
+  tw.7788#e13:
+    locator: 重大訊息公告主旨
+    published_date: '2026-06-05'
+    publisher: 公開資訊觀測站／MoneyDJ轉載
+    quote_check: found
+    title: 代重要子公司頤盛投資股份有限公司公告董事會選任董事長
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=5ab1f83a-e112-4dc0-929c-b9d536922eaf
+  tw.7788#e14:
+    locator: 重大訊息公告主旨
+    published_date: '2026-06-08'
+    publisher: 公開資訊觀測站／MoneyDJ轉載
+    quote_check: found
+    title: 代重要子公司台興電子企業股份有限公司公告董事會（代行股東會職權）重要決議事項
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=5c08920a-2229-4c79-908d-3941a65202ff
+  tw.7788#e15:
+    locator: 財報第12頁「列入合併財務報告之子公司」；松川（廈門）列，持股100%
+    published_date: '2026-03-05'
     publisher: 松川精密股份有限公司
     quote_check: found
-    title: 董事會運作情形資訊
-    url: https://www.songchuan.com/sc/index.php/iv17/
+    title: 114年度及113年度合併財務報告
+    url: https://www.songchuan.com/sc/wp-content/uploads/2026/03/2025-年第四季合併財務報告.pdf
+  tw.7788#e16:
+    locator: 財報第12頁「列入合併財務報告之子公司」；上海松川列，持股100%
+    published_date: '2026-03-05'
+    publisher: 松川精密股份有限公司
+    quote_check: found
+    title: 114年度及113年度合併財務報告
+    url: https://www.songchuan.com/sc/wp-content/uploads/2026/03/2025-年第四季合併財務報告.pdf
+  tw.7788#e17:
+    locator: 財報第12頁「列入合併財務報告之子公司」；Americas列
+    published_date: '2026-03-05'
+    publisher: 松川精密股份有限公司
+    quote_check: found
+    title: 114年度及113年度合併財務報告
+    url: https://www.songchuan.com/sc/wp-content/uploads/2026/03/2025-年第四季合併財務報告.pdf
+  tw.7788#e18:
+    locator: 公告主旨及第5項租賃期限
+    published_date: '2025-12-30'
+    publisher: 公開資訊觀測站／MoneyDJ轉載
+    quote_check: found
+    title: 代重要子公司松川（廈門）精密電子有限公司公告向關係人取得不動產使用權資產
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=4cea2a0e-0aaa-44d7-8c3d-4d9fc65ccdf1
+  tw.7788#e19:
+    locator: 第5項交易總金額、第6項交易相對人及第23項用途「廠房」
+    published_date: '2025-12-30'
+    publisher: 公開資訊觀測站／MoneyDJ轉載
+    quote_check: found
+    title: 代重要子公司松川（廈門）精密電子有限公司公告向關係人取得不動產使用權資產
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=4cea2a0e-0aaa-44d7-8c3d-4d9fc65ccdf1

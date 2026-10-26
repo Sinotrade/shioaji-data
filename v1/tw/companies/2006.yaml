@@ -32,41 +32,113 @@ chain_stage:
   stage_name: 軋延與鋼材
   tier: midstream
 primary_chain_position: midstream
-summary_short: 以鋼筋與型鋼製造銷售為主，產品包括H型鋼、鋼板及鋼板樁。
-summary_long: 東和鋼鐵以鋼筋與型鋼製造銷售為主要業務，產品包括光面、竹節及螺紋節鋼筋，以及H型鋼、熱軋鋼板與鋼板樁，並採用電爐煉鋼製程。2025年合併營收中，鋼筋占51.53%、型鋼占21.60%、其他業務占26.87%，鋼筋是最大營收來源。苗栗廠製造H型鋼、鋼板及鋼板樁；重要子公司東鋼鋼結構從事鋼構工程專業營造，Tung Ho Steel Vietnam Corp., Ltd.則經營越南鋼鐵業。
+summary_short: 以電爐煉鋼製造及銷售鋼筋、型鋼，並透過子公司經營鋼構工程。
+summary_long: 東和鋼鐵採電爐煉鋼，將廢鋼再製為鋼材。2025年鋼筋占合併營收51.53%、型鋼占21.60%、其他業務占26.87%。鋼筋主要應用於大樓、廠房及公共工程，型鋼產品包括H型鋼、I型鋼及槽鋼。集團透過東鋼鋼結構經營鋼構工程，並持有越南鋼鐵子公司；台積電新廠建置的供應關係屬於東鋼鋼結構。已揭露母公司客戶包括立達鋼鐵，中鋼則列為合併供應商。近年事件包括參與台灣智慧電能共同經營案、出租廠房土地予子公司，以及調整桃園加工中心擴建預算。
 segments:
 - evidence_ids:
-  - e2
+  - e5
   id: seg_rebar
   name: 鋼筋
   period: '2025'
   revenue_share_pct: 51.53
 - evidence_ids:
-  - e2
+  - e5
   id: seg_sections
   name: 型鋼
   period: '2025'
   revenue_share_pct: 21.6
 - evidence_ids:
-  - e2
-  id: seg_billets
+  - e5
+  id: seg_billet
   name: 鋼胚
   period: '2025'
   revenue_share_pct: 0
 - evidence_ids:
-  - e2
+  - e5
   id: seg_other
   name: 其他
   period: '2025'
   revenue_share_pct: 26.87
 relations:
-  subsidiaries:
-  - as_of: '2026-06-30'
+  customers:
+  - as_of: 2025-12
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 重要子公司；鋼構工程專業營造
+    detail: 母公司鋼材銷售客戶
     details:
-    - 重要子公司；鋼構工程專業營造
+    - 母公司鋼材銷售客戶
+    edge: e44d14cc7a1b2
+    evidence_level: primary
+    id: org.立達鋼鐵
+    name: 立達鋼鐵
+    ranking_basis: disclosed
+    share_basis: revenue
+    share_pct: 4.95
+    weight: 1
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 型鋼供應
+    details:
+    - 型鋼供應
+    - 型鋼
+    edge: ef130a08c1892
+    evidence_level: primary
+    id: tw.2211
+    name: 長榮鋼
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 2
+  - as_of: '2024-12-02'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司東鋼鋼結構的新廠建置供應關係
+    details:
+    - 子公司東鋼鋼結構的新廠建置供應關係
+    edge: ed2236e874ad8
+    evidence_level: primary
+    id: tw.2330
+    name: 台積電
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 鋼筋
+    details:
+    - 鋼筋
+    edge: e3b1905734df7
+    evidence_level: primary
+    id: tw.2535
+    name: 達欣工
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2024-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 鋼筋
+    details:
+    - 鋼筋
+    edge: eb872cd0ff618
+    evidence_level: primary
+    id: tw.2597
+    name: 潤弘
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: 2026-06
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 鋼結構製造及工程子公司
+    details:
+    - 鋼結構製造及工程子公司
     edge: e6eddfb29a28c
     evidence_level: primary
     id: org.tung-ho-steel-structure
@@ -75,81 +147,246 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-06-30'
+  - as_of: '2026-07-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 重要子公司；越南鋼鐵業
+    detail: 越南鋼鐵子公司
     details:
-    - 重要子公司；越南鋼鐵業
+    - 越南鋼鐵子公司
     edge: eacff4ccf8c1a
     evidence_level: primary
     id: org.tung-ho-steel-vietnam
-    name: Tung Ho Steel Vietnam Corp., Ltd.
+    name: Tung Ho Steel Vietnam Corp.,Ltd.
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: 2026-06
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 再生能源子公司
+    details:
+    - 再生能源子公司
+    edge: e19ca8cdc7f30
+    evidence_level: primary
+    id: org.tung-ho-wind-power
+    name: 東鋼風力發電股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 合併公司進貨供應商，品項未於該表細分
+    details:
+    - 合併公司進貨供應商，品項未於該表細分
+    edge: e02e55d9e0220
+    evidence_level: primary
+    id: tw.2002
+    name: 中鋼
+    ranking_basis: disclosed
+    share_basis: purchases
+    share_pct: 6.24
+    weight: 1
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 再生能源電力轉供
+    details:
+    - 再生能源電力轉供
+    edge: eb3d4f5717a1c
+    evidence_level: primary
+    id: org.tung-ho-wind-power
+    name: 東鋼風力發電股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: null
+    as_of: '2025-07-02'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 共同經營離岸風電購售電平台
+    details:
+    - 共同經營離岸風電購售電平台
+    edge: eaa3a9c292407
+    event_date: '2025-07-02'
+    events:
+    - amount: null
+      detail: 共同經營離岸風電購售電平台
+      event_date: '2025-07-02'
+    evidence_level: primary
+    id: org.taiwan-smart-electricity
+    name: 台灣智慧電能股份有限公司
+    ranking_basis: unranked
+    role: party
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 使用權資產金額：新台幣106,730,945元
+    as_of: '2024-10-21'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 出租桃園八德廠房及土地予間接子公司
+    details:
+    - 出租桃園八德廠房及土地予間接子公司
+    edge: e41a36d44a6d3
+    event_date: '2024-10-21'
+    events:
+    - amount: 使用權資產金額：新台幣106,730,945元
+      detail: 出租桃園八德廠房及土地予間接子公司
+      event_date: '2024-10-21'
+    evidence_level: primary
+    id: org.tung-ho-construction
+    name: 東鋼營造工程(股)公司
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣4,542,300元(含稅)
+    as_of: '2026-06-09'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 出租高雄前鎮土地、鋼構廠房及設備
+    details:
+    - 出租高雄前鎮土地、鋼構廠房及設備
+    edge: ee559a2d725ae
+    event_date: '2026-06-09'
+    events:
+    - amount: 新台幣4,542,300元(含稅)
+      detail: 出租高雄前鎮土地、鋼構廠房及設備
+      event_date: '2026-06-09'
+    evidence_level: primary
+    id: org.tung-ho-steel-structure
+    name: 東鋼鋼結構股份有限公司
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 未逐一辨識的國內及海外廢鋼供應商
 website: www.tunghosteel.com
 tax_id: '75280209'
 incorporated: '1962-05-30'
 listed: '1988-07-13'
-as_of: '2026-10-14'
+as_of: '2026-10-25'
 confidence: ai_cross_checked
 has_research: true
 evidence:
-  tw.2006#e2:
-    locator: 印刷第93頁，PDF第48頁；肆、一、業務範圍營業比重，114年度欄
+  tw.2006#e10:
+    locator: PDF第56頁，114年度前十大客戶表
     published_date: '2026-03-23'
     publisher: 東和鋼鐵企業股份有限公司
     quote_check: found
-    title: 114年股東會年報（經交易所指示更正版本）
-    url: https://www.tunghosteel.com/Files/papp/663/114%E5%B9%B4%E6%9D%B1%E9%8B%BC%E5%B9%B4%E5%A0%B1(%E4%B8%AD%E6%96%871150803%E8%82%A1%E6%9D%B1%E6%9C%83%E5%BE%8C%E4%BA%A4%E6%98%93%E6%89%80%E8%A6%81%E6%B1%82%E6%9B%B4%E6%96%B0).pdf
-  tw.2006#e3:
-    locator: 產品概述第一段
+    title: 114年度年報
+    url: https://www.tunghosteel.com/Files/papp/663/114%E5%B9%B4%E6%9D%B1%E9%8B%BC%E5%B9%B4%E5%A0%B1(%E4%B8%AD%E6%96%87%E7%89%88).pdf
+  tw.2006#e11:
+    locator: 新聞正文
+    published_date: '2024-12-02'
+    publisher: 東和鋼鐵企業股份有限公司
+    quote_check: found
+    title: 東鋼鋼結構榮獲2024年台積電優良供應商卓越表現獎
+    url: https://www.tunghosteel.com/about/newsdetail/2323
+  tw.2006#e12:
+    locator: PDF第56頁，114年度前十大供應商表，金額為新台幣仟元
+    published_date: '2026-03-23'
+    publisher: 東和鋼鐵企業股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.tunghosteel.com/Files/papp/663/114%E5%B9%B4%E6%9D%B1%E9%8B%BC%E5%B9%B4%E5%A0%B1(%E4%B8%AD%E6%96%87%E7%89%88).pdf
+  tw.2006#e13:
+    locator: 能源轉型及再生能源轉供說明
     published_date: null
     publisher: 東和鋼鐵企業股份有限公司
     quote_check: found
-    title: 鋼筋：產品概述
+    title: 經濟永續－氣候風險管理
+    url: https://www.tunghosteel.com/CSR/econ_risk_climate.html
+  tw.2006#e14:
+    locator: 新聞稿第一段
+    published_date: '2025-07-03'
+    publisher: 公平交易委員會
+    quote_check: found
+    title: 離岸風電售電平台結合案，公平會同意放行！
+    url: https://www.ftc.gov.tw/internet/main/doc/docDetail.aspx?docid=18138&mid=1824&uid=1932
+  tw.2006#e15:
+    locator: 重大訊息公告，交易標的、金額及其他敘明事項
+    published_date: '2024-10-22'
+    publisher: 公開資訊觀測站／第一銀行轉載
+    quote_check: found
+    title: 東鋼營造工程向母公司東和鋼鐵取得使用權資產，計約1.07億元
+    url: https://wealth.firstbank.com.tw/investment-tips/trend-insight/news/news-detail?id=%7B35E175A7-48A7-4C09-A353-0D0457AD35B6%7D
+  tw.2006#e16:
+    locator: 2026/06/09出租公告，第5項及第10項
+    published_date: '2026-06-09'
+    publisher: 東和鋼鐵企業股份有限公司
+    quote_check: found
+    title: 董事會決議出租不動產使用權資產予子公司東鋼鋼結構
+    url: https://www.tunghosteel.com/Shareowner/Msg
+  tw.2006#e17:
+    locator: 2026/07/31自地委建桃園加工中心擴建公告，第3項
+    published_date: '2026-07-31'
+    publisher: 東和鋼鐵企業股份有限公司
+    quote_check: found
+    title: 桃園加工中心擴建總預算追加案
+    url: https://www.tunghosteel.com/Shareowner/Msg
+  tw.2006#e2:
+    locator: 首頁電爐煉鋼說明
+    published_date: null
+    publisher: 東和鋼鐵企業股份有限公司
+    quote_check: found
+    title: 東和鋼鐵官方網站
+    url: https://www.tunghosteel.com/
+  tw.2006#e3:
+    locator: 產品概述
+    published_date: null
+    publisher: 東和鋼鐵企業股份有限公司
+    quote_check: found
+    title: 產品介紹－鋼筋
     url: https://www.tunghosteel.com/Product/Intro/1
   tw.2006#e4:
-    locator: 產品概述第一段
+    locator: 產品概述
     published_date: null
     publisher: 東和鋼鐵企業股份有限公司
     quote_check: found
-    title: 型鋼：產品概述
+    title: 產品介紹－型鋼
     url: https://www.tunghosteel.com/Product/Intro/2
   tw.2006#e5:
-    locator: 產品概述第一段
-    published_date: null
-    publisher: 東和鋼鐵企業股份有限公司
-    quote_check: found
-    title: 鋼板：產品概述
-    url: https://www.tunghosteel.com/Product/Intro/3
-  tw.2006#e6:
-    locator: 品質政策第一段
-    published_date: null
-    publisher: 東和鋼鐵企業股份有限公司
-    quote_check: found
-    title: 苗栗廠：廠區簡介
-    url: https://www.tunghosteel.com/factory/data/6
-  tw.2006#e7:
-    locator: 印刷第104頁，PDF第53頁；有利因素c
+    locator: PDF第48頁，業務範圍營業比重；前欄為114年度
     published_date: '2026-03-23'
     publisher: 東和鋼鐵企業股份有限公司
     quote_check: found
-    title: 114年股東會年報（經交易所指示更正版本）
-    url: https://www.tunghosteel.com/Files/papp/663/114%E5%B9%B4%E6%9D%B1%E9%8B%BC%E5%B9%B4%E5%A0%B1(%E4%B8%AD%E6%96%871150803%E8%82%A1%E6%9D%B1%E6%9C%83%E5%BE%8C%E4%BA%A4%E6%98%93%E6%89%80%E8%A6%81%E6%B1%82%E6%9B%B4%E6%96%B0).pdf
+    title: 114年度年報
+    url: https://www.tunghosteel.com/Files/papp/663/114%E5%B9%B4%E6%9D%B1%E9%8B%BC%E5%B9%B4%E5%A0%B1(%E4%B8%AD%E6%96%87%E7%89%88).pdf
+  tw.2006#e6:
+    locator: 2026.06.09第26屆第2次，第8案
+    published_date: '2026-06-09'
+    publisher: 東和鋼鐵企業股份有限公司
+    quote_check: found
+    title: 董事會重大決議
+    url: https://www.tunghosteel.com/investors/resolution
+  tw.2006#e7:
+    locator: 被背書保證公司及其關係
+    published_date: '2026-07-31'
+    publisher: 東和鋼鐵企業股份有限公司
+    quote_check: found
+    title: 2026年7月31日背書保證公告
+    url: https://www.tunghosteel.com/Shareowner/Msg
   tw.2006#e8:
-    locator: 附註四（二），印刷第10頁／PDF第12頁；東鋼構公司列及註1；正式全名另見印刷第47頁
+    locator: PDF第49頁，轉投資事業相關資訊
     published_date: '2026-07-31'
     publisher: 東和鋼鐵企業股份有限公司
     quote_check: found
     title: 115年第二季合併財務報告
     url: https://www.tunghosteel.com/Files/papp/610/%E6%9D%B1%E9%8B%BC115Q2%E5%90%88%E4%BD%B5%E5%AE%8C%E7%A8%BF%E8%B2%A1%E5%A0%B1_%E9%9B%BB%E5%AD%90%E6%9B%B8.pdf
   tw.2006#e9:
-    locator: 附註四（二），印刷第10頁／PDF第12頁；THSVC公司列及註1；所在地另見印刷第47頁
-    published_date: '2026-07-31'
-    publisher: 東和鋼鐵企業股份有限公司
+    locator: PDF第99頁，印刷第95頁，主要原料之供應狀況
+    published_date: null
+    publisher: 長榮鋼鐵股份有限公司
     quote_check: found
-    title: 115年第二季合併財務報告
-    url: https://www.tunghosteel.com/Files/papp/610/%E6%9D%B1%E9%8B%BC115Q2%E5%90%88%E4%BD%B5%E5%AE%8C%E7%A8%BF%E8%B2%A1%E5%A0%B1_%E9%9B%BB%E5%AD%90%E6%9B%B8.pdf
+    title: 長榮鋼鐵113年度年報
+    url: https://www.evergreennet.com/upload/relation_fileManager_file/469/469_1.pdf

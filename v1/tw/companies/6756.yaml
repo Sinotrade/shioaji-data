@@ -42,13 +42,42 @@ segments:
   period: '2025'
   revenue_share_pct: 0.01
 relations:
-  parents:
-  - as_of: '2026-06-30'
+  customers:
+  - as_of: 2025-12
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 威鋒電子為威盛直接持有之合併子公司
+    detail: 集團內商品供應，品項未分揭
     details:
-    - 威鋒電子為威盛直接持有之合併子公司
+    - 集團內商品供應，品項未分揭
+    edge: ea021efbec40b
+    evidence_level: primary
+    id: tw.2388
+    name: 威盛
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2021-10-21'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: VIVE PRO及VIVE FLOW的USB傳輸晶片
+    details:
+    - VIVE PRO及VIVE FLOW的USB傳輸晶片
+    edge: e2afe927d3313
+    evidence_level: media
+    id: tw.2498
+    name: 宏達電
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  parents:
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: USB控制晶片子公司
+    details:
+    - USB控制晶片子公司
     - 母公司
     edge: ed8a5c585c4cb
     evidence_level: primary

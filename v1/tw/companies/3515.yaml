@@ -26,33 +26,39 @@ chain_stage:
   stage_name: 主機板與系統組裝
   tier: downstream
 primary_chain_position: midstream
-summary_short: 銷售伺服器、主機板、顯示卡、迷你電腦與工業電腦。
-summary_long: 華擎的產品涵蓋主機板、顯示卡、迷你電腦、伺服器與工業電腦。伺服器由子公司永擎電子經營，工業電腦由東擎科技經營；華玉科技則提供資訊軟體服務，和碩聯合科技為母公司。永擎已展出採用NVIDIA Rubin的液冷AI伺服器，並展示含機櫃與CDU的液冷整合方案，其業務也涵蓋雲端運算伺服器硬體。2026年上半年法說簡報將產品銷售分為主機板、工業電腦、伺服器及其他，圖表中伺服器為2026年第二季最大類別。
+summary_short: 銷售主機板、顯示卡，並透過永擎與東擎經營伺服器及工業電腦。
+summary_long: 華擎銷售主機板、顯示卡與迷你電腦，並透過子公司永擎經營伺服器、東擎經營工業電腦。2025年第三季，AI伺服器與一般伺服器分別占營收43%及14%，主機板占21%、工業電腦占4%，其他占18%。永擎的AI伺服器產品包括NVIDIA B200、B300及RTX系列，並與DATASECTION CLOUD LIMITED簽訂587台B200 GPU伺服器供應合約。合併財報將和碩列為母公司。近三年事件包括孫公司CALROCK購置美國廠房、華擎調整美國控股架構、向華固購入不動產，以及投資Together Computer特別股。
 segments:
 - evidence_ids:
-  - e3
-  id: server
-  name: 伺服器
-  period: 2026Q2
-  revenue_share_pct: null
+  - e03
+  id: seg_ai_server
+  name: AI伺服器
+  period: 2025Q3
+  revenue_share_pct: 43
 - evidence_ids:
-  - e3
-  id: motherboard
+  - e03
+  id: seg_server
+  name: 一般伺服器
+  period: 2025Q3
+  revenue_share_pct: 14
+- evidence_ids:
+  - e03
+  id: seg_mb
   name: 主機板
-  period: 2026Q2
-  revenue_share_pct: null
+  period: 2025Q3
+  revenue_share_pct: 21
 - evidence_ids:
-  - e3
-  id: ipc
+  - e03
+  id: seg_ipc
   name: 工業電腦
-  period: 2026Q2
-  revenue_share_pct: null
+  period: 2025Q3
+  revenue_share_pct: 4
 - evidence_ids:
-  - e3
-  id: others
+  - e03
+  id: seg_other
   name: 其他
-  period: 2026Q2
-  revenue_share_pct: null
+  period: 2025Q3
+  revenue_share_pct: 18
 main_theme: theme.ai_server
 themes:
 - also: []
@@ -60,25 +66,32 @@ themes:
   theme: theme.ai_server
   tier: downstream
 - also: []
-  stage: it
-  theme: theme.data_center
-  tier: midstream
-- also: []
-  stage: system
-  theme: theme.liquid_cooling
-  tier: downstream
-- also: []
   stage: system
   theme: theme.nvidia
   tier: downstream
 relations:
+  customers:
+  - as_of: '2026-06-04'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 向子公司永擎採購B200 GPU伺服器
+    details:
+    - 向子公司永擎採購B200 GPU伺服器
+    edge: e6c4a2a9b09ec
+    evidence_level: primary
+    id: org.datasection-cloud-limited
+    name: DATASECTION CLOUD LIMITED
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   parents:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 母公司
+    detail: 合併財報列示之母公司
     details:
-    - 母公司
+    - 合併財報列示之母公司
     - 華擎集團合併子公司
     edge: e88dfca99b2d6
     evidence_level: primary
@@ -88,6 +101,21 @@ relations:
     share_basis: null
     share_pct: null
     weight: 2
+  partners:
+  - as_of: '2024-12-03'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: Intel Arc顯示卡合作夥伴
+    details:
+    - Intel Arc顯示卡合作夥伴
+    edge: ee518a1109284
+    evidence_level: primary
+    id: us.INTC
+    name: Intel
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
@@ -107,13 +135,13 @@ relations:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 工業電腦業務子公司
+    detail: 美國投資控股子公司
     details:
-    - 工業電腦業務子公司
-    edge: ed0c53adcee2d
+    - 美國投資控股子公司
+    edge: e2d1b846ad630
     evidence_level: primary
-    id: org.東擎科技股份有限公司
-    name: 東擎科技股份有限公司
+    id: org.asrock-holding
+    name: ASRock Holding Inc.
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -124,89 +152,329 @@ relations:
     detail: 資訊軟體服務子公司
     details:
     - 資訊軟體服務子公司
-    edge: e9465ef9c6ac4
+    edge: e68893fa1519a
     evidence_level: primary
-    id: org.華玉科技股份有限公司
+    id: org.huayu-technology
     name: 華玉科技股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 工業電腦業務子公司
+    details:
+    - 工業電腦業務子公司
+    edge: e69b5c907e4b3
+    evidence_level: primary
+    id: tw.7710
+    name: 東擎科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: '2026-05-22'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 供應子公司永擎伺服器晶片
+    details:
+    - 供應子公司永擎伺服器晶片
+    edge: efbb31209c29c
+    evidence_level: media
+    id: us.AMD
+    name: AMD
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-05-22'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 供應子公司永擎伺服器晶片
+    details:
+    - 供應子公司永擎伺服器晶片
+    edge: e1e239967bbc4
+    evidence_level: media
+    id: us.NVDA
+    name: NVIDIA
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 新台幣2,417,810仟元
+    as_of: '2026-05-06'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 出售華固創匯園區22戶及72個車位
+    details:
+    - 出售華固創匯園區22戶及72個車位
+    - 購置華固創匯園區房屋及車位
+    edge: e1176dc9e7c3d
+    event_date: '2026-05-06'
+    events:
+    - amount: 新台幣2,417,810仟元
+      detail: 出售華固創匯園區22戶及72個車位
+      event_date: '2026-05-06'
+    evidence_level: primary
+    id: tw.2548
+    name: 華固
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 2
+  - amount: null
+    as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 以美國子公司股權作價投資
+    details:
+    - 以美國子公司股權作價投資
+    edge: e03ea75cb1044
+    event_date: '2025-12-31'
+    events:
+    - amount: null
+      detail: 以美國子公司股權作價投資
+      event_date: '2025-12-31'
+    evidence_level: primary
+    id: org.asrock-holding
+    name: ASRock Holding Inc.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣167,571千元
+    as_of: '2025-03-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 認購子公司現金增資
+    details:
+    - 認購子公司現金增資
+    edge: e63a25ee70722
+    event_date: '2025-03-28'
+    events:
+    - amount: 新台幣167,571千元
+      detail: 認購子公司現金增資
+      event_date: '2025-03-28'
+    evidence_level: primary
+    id: org.huayu-technology
+    name: 華玉科技股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: USD 36,000,000
+    as_of: '2024-11-01'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 孫公司CALROCK購置美國廠房
+    details:
+    - 孫公司CALROCK購置美國廠房
+    edge: e0f47514ee170
+    event_date: '2024-11-01'
+    events:
+    - amount: USD 36,000,000
+      detail: 孫公司CALROCK購置美國廠房
+      event_date: '2024-11-01'
+    evidence_level: primary
+    id: org.riii-cc-chino-owner
+    name: RIII CC CHINO OWNER, LLC
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: USD6,999,987.93
+    as_of: '2026-06-11'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 策略投資特別股
+    details:
+    - 策略投資特別股
+    edge: ed95b536e61b7
+    event_date: '2026-06-11'
+    events:
+    - amount: USD6,999,987.93
+      detail: 策略投資特別股
+      event_date: '2026-06-11'
+    evidence_level: primary
+    id: org.together-computer
+    name: Together Computer Inc.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 未具名雲端服務及伺服器客戶。
+- Datasection泰國資料中心的美系終端客戶，公告未具名。
+- PCB及DRAM相關具名供應商尚未確認。
+- 自動化屬應用領域，候選線索未提供具名採購公司。
+- 2025年10月出售東擎股權的買方，所引財報未具名。
 website: http://www.asrock.com.tw
 tax_id: '80333613'
 incorporated: '2002-05-10'
 listed: '2007-11-08'
-as_of: '2026-10-15'
+as_of: '2026-10-26'
 confidence: ai_cross_checked
 has_research: true
 evidence:
-  tw.3515#e10:
-    locator: Driving the AI Computing Wave at Every Scale
-    published_date: '2026-06-01'
-    publisher: ASRock Rack Inc.
-    quote_check: not_found
-    title: ASRock Rack Unveils Next-Generation AI Infrastructure Powered by NVIDIA Vera CPU at COMPUTEX 2026
-    url: https://www.asrockrack.com/general/news.asp?id=284
-  tw.3515#e11:
-    locator: ABOUT US
+  tw.3515#e02:
+    locator: 第4頁，公司簡介
+    published_date: '2026-09-16'
+    publisher: 華擎科技股份有限公司
+    quote_check: found
+    title: 華擎2026年9月法人說明會簡報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52334/2026/RNS/52334_rns_2026-09-16_aeb787b1-f3e8-4d89-9030-ffdb22218a88.pdf
+  tw.3515#e03:
+    locator: 內文第2段，2025年第3季產品營收比重
+    published_date: '2025-12-16'
+    publisher: 經濟日報
+    quote_check: found
+    title: 華擎雙引擎 催動獲利
+    url: https://money.udn.com/money/story/5710/9204825
+  tw.3515#e04:
+    locator: 第13頁合併主體表及第14頁註一；持股46.25%
     published_date: null
-    publisher: ASRock Rack Inc.
-    quote_check: not_found
-    title: ASRock Rack公司簡介
-    url: https://www.asrockrack.com/general/about.asp
-  tw.3515#e2:
-    locator: 第4頁，主要產品
-    published_date: '2026-09-16'
     publisher: 華擎科技股份有限公司
     quote_check: found
-    title: 華擎科技2026年上半年法人說明會簡報
-    url: https://www.asrock.com/general/Investor/IIC(2026H1).tw.pdf
-  tw.3515#e3:
-    locator: 第10頁堆疊圖；圖例為Others、Server、IPC、MB，2026Q2的Server區段最大；已直接檢視圖表
-    published_date: '2026-09-16'
-    publisher: 華擎科技股份有限公司
-    quote_check: found
-    title: 華擎科技2026年上半年法人說明會簡報
-    url: https://www.asrock.com/general/Investor/IIC(2026H1).tw.pdf
-  tw.3515#e4:
-    locator: 第52頁，關係人名稱及關係
-    published_date: '2026-08-06'
-    publisher: 華擎科技股份有限公司
-    quote_check: found
-    title: 華擎科技115年第2季合併財務報告
+    title: 華擎115年第二季合併財務報告
     url: https://www.asrock.com/general/Investor/Merger(115Q2).pdf
-  tw.3515#e5:
-    locator: 第13頁，合併財務報表編製主體表，投資公司及子公司欄
-    published_date: '2026-08-06'
+  tw.3515#e05:
+    locator: 第13頁，合併財務報表編製主體表，東擎列
+    published_date: null
     publisher: 華擎科技股份有限公司
     quote_check: found
-    title: 華擎科技115年第2季合併財務報告
+    title: 華擎115年第二季合併財務報告
     url: https://www.asrock.com/general/Investor/Merger(115Q2).pdf
-  tw.3515#e6:
-    locator: 第13頁，合併財務報表編製主體表，投資公司及子公司欄
-    published_date: '2026-08-06'
-    publisher: 華擎科技股份有限公司
-    quote_check: found
-    title: 華擎科技115年第2季合併財務報告
-    url: https://www.asrock.com/general/Investor/Merger(115Q2).pdf
-  tw.3515#e7:
+  tw.3515#e06:
     locator: 第13頁，合併財務報表編製主體表
-    published_date: '2026-08-06'
+    published_date: null
     publisher: 華擎科技股份有限公司
     quote_check: found
-    title: 華擎科技115年第2季合併財務報告
+    title: 華擎115年第二季合併財務報告
     url: https://www.asrock.com/general/Investor/Merger(115Q2).pdf
-  tw.3515#e8:
-    locator: 第14頁，合併概況註一
-    published_date: '2026-08-06'
+  tw.3515#e07:
+    locator: 第52頁，七、關係人交易
+    published_date: null
     publisher: 華擎科技股份有限公司
     quote_check: found
-    title: 華擎科技115年第2季合併財務報告
+    title: 華擎115年第二季合併財務報告
     url: https://www.asrock.com/general/Investor/Merger(115Q2).pdf
-  tw.3515#e9:
-    locator: 新聞稿標題
-    published_date: '2026-03-17'
-    publisher: ASRock Rack Inc.
-    quote_check: not_found
-    title: ASRock Rack Showcases Liquid-Cooled AI Platforms with NVIDIA Rubin GPU at NVIDIA GTC 2026
-    url: https://www.asrockrack.com/general/news.asp?id=280
+  tw.3515#e08:
+    locator: 許隆倫股東會後談話，出貨產品段
+    published_date: '2026-05-22'
+    publisher: 經濟日報
+    quote_check: found
+    title: 永擎股東會／今年AI伺服器高雙位數成長 上下半年比重4:6
+    url: https://money.udn.com/money/story/5612/9518810
+  tw.3515#e09:
+    locator: 許隆倫談伺服器晶片供貨段
+    published_date: '2026-05-22'
+    publisher: 經濟日報
+    quote_check: found
+    title: 永擎股東會／今年AI伺服器高雙位數成長 上下半年比重4:6
+    url: https://money.udn.com/money/story/5612/9518810
+  tw.3515#e10:
+    locator: 第4頁，合作夥伴產品發售說明
+    published_date: '2024-12-03'
+    publisher: Intel
+    quote_check: found
+    title: 英特爾發表Arc B系列顯示卡
+    url: https://download.intel.com/newsroom/archive/2025/zh-tw-2024-12-03-%E8%8B%B1%E7%89%B9%E7%88%BE%E7%99%BC%E8%A1%A8arc-b%E7%B3%BB%E5%88%97%E9%A1%AF%E7%A4%BA%E5%8D%A1.pdf
+  tw.3515#e11:
+    locator: 第1頁，Reason for the Acquisition，簽約子公司名稱
+    published_date: '2026-06-04'
+    publisher: Datasection Inc.
+    quote_check: found
+    title: Notice Regarding the Acquisition of Fixed Assets (GPU Servers Equipped with NVIDIA B200 GPUs)
+    url: https://www.datasection.co.jp/en-financial-report/en-ir-20260604002.pdf
+  tw.3515#e12:
+    locator: 第1頁，Reason for the Acquisition；第3頁列契約日為2026年6月3日
+    published_date: '2026-06-04'
+    publisher: Datasection Inc.
+    quote_check: found
+    title: Notice Regarding the Acquisition of Fixed Assets (GPU Servers Equipped with NVIDIA B200 GPUs)
+    url: https://www.datasection.co.jp/en-financial-report/en-ir-20260604002.pdf
+  tw.3515#e13:
+    locator: 第1頁，採購公告
+    published_date: '2026-06-04'
+    publisher: Datasection Inc.
+    quote_check: found
+    title: Datasection Accelerates Thailand AI Data Centre Development Through Partnership with ASRock Rack
+    url: https://www.datasection.co.jp/en-financial-report/en-ir-20260604001.pdf
+  tw.3515#e14:
+    locator: 第84頁，附表五：取得不動產
+    published_date: null
+    publisher: 華擎科技股份有限公司
+    quote_check: found
+    title: 華擎113年度合併財務報告
+    url: https://www.asrock.com/general/Investor/Merger(113Q4).pdf
+  tw.3515#e15:
+    locator: 第64頁，所得稅申報核定情形
+    published_date: null
+    publisher: 華擎科技股份有限公司
+    quote_check: found
+    title: 華擎113年度合併財務報告
+    url: https://www.asrock.com/general/Investor/Merger(113Q4).pdf
+  tw.3515#e16:
+    locator: 第72頁，附表七註8
+    published_date: null
+    publisher: 華擎科技股份有限公司
+    quote_check: found
+    title: 華擎114年度個體財務報告
+    url: https://www.asrock.com/general/Investor/FinancialReports(114Q4).pdf
+  tw.3515#e17:
+    locator: 公告第5項，交易數量及總額
+    published_date: '2026-05-06'
+    publisher: 公開資訊觀測站重大訊息，Goodinfo轉載
+    quote_check: unreachable
+    title: 華擎公告本公司取得不動產案
+    url: https://goodinfo.tw/tw/StockAnnounceDetail.asp?CLAIM_TIME=2026%2F05%2F06+16%3A10%3A28&STOCK_ID=3515&SUBJECT=%E5%85%AC%E5%91%8A%E6%9C%AC%E5%85%AC%E5%8F%B8%E5%8F%96%E5%BE%97%E4%B8%8D%E5%8B%95%E7%94%A2%E6%A1%88
+  tw.3515#e18:
+    locator: 公告第1項標的及第6項交易相對人
+    published_date: '2026-05-06'
+    publisher: 公開資訊觀測站重大訊息，Goodinfo轉載
+    quote_check: unreachable
+    title: 華擎公告本公司取得不動產案
+    url: https://goodinfo.tw/tw/StockAnnounceDetail.asp?CLAIM_TIME=2026%2F05%2F06+16%3A10%3A28&STOCK_ID=3515&SUBJECT=%E5%85%AC%E5%91%8A%E6%9C%AC%E5%85%AC%E5%8F%B8%E5%8F%96%E5%BE%97%E4%B8%8D%E5%8B%95%E7%94%A2%E6%A1%88
+  tw.3515#e19:
+    locator: 公告第1項，投資標的；第17項列用途為策略投資
+    published_date: '2026-06-11'
+    publisher: 公開資訊觀測站重大訊息，MoneyDJ轉載
+    quote_check: found
+    title: 華擎公告本公司取得有價證券（補充合約資訊）
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=7142b0d0-0367-4895-be39-a0931ff0c136
+  tw.3515#e20:
+    locator: 公告第5項，交易數量及總額
+    published_date: '2026-06-11'
+    publisher: 公開資訊觀測站重大訊息，MoneyDJ轉載
+    quote_check: found
+    title: 華擎公告本公司取得有價證券（補充合約資訊）
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=7142b0d0-0367-4895-be39-a0931ff0c136
+  tw.3515#e21:
+    locator: 第51頁，對子公司所有權權益之變動
+    published_date: null
+    publisher: 華擎科技股份有限公司
+    quote_check: found
+    title: 華擎115年第二季合併財務報告
+    url: https://www.asrock.com/general/Investor/Merger(115Q2).pdf
+  tw.3515#e22:
+    locator: 第51頁，出售子公司已發行之股份
+    published_date: null
+    publisher: 華擎科技股份有限公司
+    quote_check: found
+    title: 華擎115年第二季合併財務報告
+    url: https://www.asrock.com/general/Investor/Merger(115Q2).pdf
+  tw.3515#e23:
+    locator: 第13頁，合併財務報表編製主體表
+    published_date: null
+    publisher: 華擎科技股份有限公司
+    quote_check: found
+    title: 華擎115年第二季合併財務報告
+    url: https://www.asrock.com/general/Investor/Merger(115Q2).pdf

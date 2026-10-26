@@ -34,6 +34,21 @@ segments:
   period: 2025年度
   revenue_share_pct: 46.72
 relations:
+  competitors:
+  - as_of: '2026-10-05'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 不動產代銷市場同業競爭
+    details:
+    - 不動產代銷市場同業競爭
+    edge: e5f2f740d8c61
+    evidence_level: media
+    id: tw.2540
+    name: 愛山林
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
   - as_of: '2025-09-30'
     confidence: ai_cross_checked
@@ -74,6 +89,28 @@ relations:
     id: org.金毓泰股份有限公司
     name: 金毓泰股份有限公司
     ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 約新台幣95.6億元（整案總價）
+    as_of: '2024-12-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司出售復興南路不動產
+    details:
+    - 子公司出售復興南路不動產
+    edge: e5251d675aad7
+    event_date: null
+    events:
+    - amount: 約新台幣95.6億元（整案總價）
+      detail: 子公司出售復興南路不動產
+      event_date: null
+    evidence_level: primary
+    id: tw.2371
+    name: 大同
+    ranking_basis: unranked
+    role: buyer
     share_basis: null
     share_pct: null
     weight: 1

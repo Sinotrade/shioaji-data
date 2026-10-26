@@ -17,52 +17,108 @@ industry:
   l3: chem.fertilizer
   l3_name: 農化與肥料
   l3_name_en: Agrochemicals & Fertilizers
-primary_chain_position: midstream
-summary_short: 經營肥料與化工產品製造銷售，並取得不動產租賃收入。
-summary_long: 台肥經營肥料、化工產品與不動產業務，肥料產品包括單質肥料、有機質複肥及即溶複肥等系列。化工產品涵蓋美耐明（三聚氰胺）、硫酸及硝酸，另提供電子級硝酸與氨水。2025年合併報表以肥料化工、不動產暨投資事業及其他項目呈現營收，其中肥料化工金額最高。子公司包括培豐科技、台灣海洋深層水、台莊投資開發及台盈永續，年末均由台肥直接持有全部股權。
+primary_chain_position: not_applicable
+summary_short: 以肥料、化工產品銷售及不動產租賃取得營收。
+summary_long: 台肥經營肥料化工及不動產租賃，肥料產品包括單質肥料與錏磷基有機質複肥，化工產品包括三聚氰胺、硫酸及硝酸，另供應電子級氨水。2025年合併肥料化工收入為93.34億元，租賃收入為25.10億元。原料端向Ma'aden採購液氨、向Agromate採購氯化鉀，並向中油採購熔硫；具名客戶包括台豐興、欣台化工及川慶化學。台灣海洋深層水為全資子公司，經營台海生技品牌。2025年另公告投資5億元設立台盈永續，並將新竹D7-B辦公大樓新建工程決標予麗明營造。
 segments:
 - evidence_ids:
-  - e10
-  - e11
-  id: seg_fertilizer_chemical
+  - e06
+  id: fertilizer_chemical
   name: 肥料化工
   period: '2025'
   revenue_share_pct: null
 - evidence_ids:
-  - e10
-  - e12
-  id: seg_property_investment
-  name: 不動產暨投資事業
+  - e06
+  id: rental
+  name: 租賃
   period: '2025'
   revenue_share_pct: null
 - evidence_ids:
-  - e13
-  id: seg_other
+  - e06
+  id: other
   name: 其他
   period: '2025'
   revenue_share_pct: null
 relations:
-  subsidiaries:
-  - as_of: '2025-12-31'
+  customers:
+  - as_of: 2025-12
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持股100%的子公司
+    detail: 化工產品採購
     details:
-    - 直接持股100%的子公司
-    edge: e076b8f7902f7
+    - 化工產品採購
+    edge: ef7de66e15041
     evidence_level: primary
-    id: org.pei-feng-technology
-    name: 培豐科技股份有限公司
+    id: org.欣台化工有限公司
+    name: 欣台化工有限公司
+    ranking_basis: disclosed
+    share_basis: revenue
+    share_pct: 44.13
+    weight: 1
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 肥料產品採購
+    details:
+    - 肥料產品採購
+    edge: e78f55a644cf2
+    evidence_level: primary
+    id: org.台豐興實業有限公司
+    name: 台豐興實業有限公司
+    ranking_basis: disclosed
+    share_basis: revenue
+    share_pct: 17.13
+    weight: 1
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 電化品採購
+    details:
+    - 電化品採購
+    edge: ebdbc539a6a8a
+    evidence_level: primary
+    id: org.川慶化學-股-公司
+    name: 川慶化學(股)公司
+    ranking_basis: disclosed
+    share_basis: revenue
+    share_pct: 16.73
+    weight: 1
+  partners:
+  - as_of: '2024-05-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 液化天然氣冷能回收再利用
+    details:
+    - 液化天然氣冷能回收再利用
+    edge: e4c1bc570bf7f
+    evidence_level: primary
+    id: org.cpc
+    name: 台灣中油股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2025-12-31'
+  - as_of: 2026-09
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持股100%的子公司
+    detail: 合資經營朱拜爾肥料公司
     details:
-    - 直接持股100%的子公司
+    - 合資經營朱拜爾肥料公司
+    edge: ee27aab41ca55
+    evidence_level: primary
+    id: org.沙烏地阿拉伯基本工業公司-sabic
+    name: 沙烏地阿拉伯基本工業公司（SABIC）
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: 2026-09
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司；台海生技品牌
+    details:
+    - 全資子公司；台海生技品牌
     edge: e39326c365bd2
     evidence_level: primary
     id: org.taiwan-deep-ocean-water
@@ -71,35 +127,134 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2025-12-31'
+  - as_of: 2026-09
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持股100%的子公司
+    detail: 全資子公司
     details:
-    - 直接持股100%的子公司
-    edge: e8271faac66cf
+    - 全資子公司
+    edge: e54030c555b54
     evidence_level: primary
-    id: org.taiying-sustainability
+    id: org.台盈永續股份有限公司
     name: 台盈永續股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2025-12-31'
+  - as_of: 2026-09
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持股100%的子公司
+    detail: 全資投資子公司
     details:
-    - 直接持股100%的子公司
-    edge: e4104e92de608
+    - 全資投資子公司
+    edge: ebe7b1be00ac6
     evidence_level: primary
-    id: org.taizhuang-investment-development
+    id: org.台莊投資開發股份有限公司
     name: 台莊投資開發股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: 2026-09
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資肥料化工子公司
+    details:
+    - 全資肥料化工子公司
+    edge: e19d168366d92
+    evidence_level: primary
+    id: org.培豐科技股份有限公司
+    name: 培豐科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 液氨供應
+    details:
+    - 液氨供應
+    edge: ea044af83edcd
+    evidence_level: primary
+    id: org.ma-aden
+    name: Ma'aden
+    ranking_basis: disclosed
+    share_basis: purchases
+    share_pct: 16
+    weight: 1
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 氯化鉀供應
+    details:
+    - 氯化鉀供應
+    edge: ec886c29f3b5d
+    evidence_level: primary
+    id: org.agromate
+    name: Agromate
+    ranking_basis: disclosed
+    share_basis: purchases
+    share_pct: 12
+    weight: 1
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 熔硫採購
+    details:
+    - 熔硫採購
+    edge: e6194903e504d
+    evidence_level: primary
+    id: org.cpc
+    name: 台灣中油股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   transactions:
+  - amount: 新台幣5億元
+    as_of: '2025-09-05'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 投資設立全資子公司
+    details:
+    - 投資設立全資子公司
+    edge: e6351466b8d1c
+    event_date: '2025-08-12'
+    events:
+    - amount: 新台幣5億元
+      detail: 投資設立全資子公司
+      event_date: '2025-08-12'
+    evidence_level: primary
+    id: org.台盈永續股份有限公司
+    name: 台盈永續股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣9,999,908,880元整（未稅）
+    as_of: '2025-02-12'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 新竹D7-B辦公大樓新建工程承攬
+    details:
+    - 新竹D7-B辦公大樓新建工程承攬
+    edge: ece23459400f9
+    event_date: '2025-02-12'
+    events:
+    - amount: 新台幣9,999,908,880元整（未稅）
+      detail: 新竹D7-B辦公大樓新建工程承攬
+      event_date: '2025-02-12'
+    evidence_level: primary
+    id: org.麗明營造股份有限公司
+    name: 麗明營造股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
   - amount: 新臺幣150億元，分15年繳清
     as_of: '2025-10-28'
     confidence: ai_cross_checked
@@ -142,123 +297,169 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+unresolved_mentions:
+- 硫酸供應商：年報僅揭露日本及國內來源，未全部具名。
+- 磷礦供應商：年報僅揭露約旦及摩洛哥來源。
+- 氯化鉀其他供應商：未以採購國家推定具體公司。
 website: www.taifer.com.tw
 tax_id: 03795101
 incorporated: '1946-05-01'
 listed: '1998-03-24'
-as_of: '2026-10-15'
+as_of: '2026-10-25'
 confidence: ai_cross_checked
 has_research: true
 evidence:
-  tw.1722#e1:
+  tw.1722#e01:
     locator: 肥料產品／產品名
     published_date: null
     publisher: 台灣肥料股份有限公司
     quote_check: found
     title: 主要產品
     url: https://www.taifer.com.tw/AboutUs/Business/product.htm
-  tw.1722#e10:
-    locator: 原財報第66頁／十四、部門資訊／一般性資訊
-    published_date: null
-    publisher: FinancialFilings
-    quote_check: unreachable
-    title: 114年度合併財務報告重刊
-    url: https://financialfilings.com/filings/tfc-1722/annual-report/2025/33445140/
-  tw.1722#e11:
-    locator: 原財報第67頁／114年度部門資訊／肥料化工來自外部客戶收入，單位新台幣千元
-    published_date: null
-    publisher: FinancialFilings
-    quote_check: unreachable
-    title: 114年度合併財務報告重刊
-    url: https://financialfilings.com/filings/tfc-1722/annual-report/2025/33445140/
-  tw.1722#e12:
-    locator: 原財報第67頁／114年度部門資訊／不動產暨投資事業來自外部客戶收入，單位新台幣千元
-    published_date: null
-    publisher: FinancialFilings
-    quote_check: unreachable
-    title: 114年度合併財務報告重刊
-    url: https://financialfilings.com/filings/tfc-1722/annual-report/2025/33445140/
-  tw.1722#e13:
-    locator: 原財報第67頁／114年度部門資訊／其他項目來自外部客戶收入，單位新台幣千元
-    published_date: null
-    publisher: FinancialFilings
-    quote_check: unreachable
-    title: 114年度合併財務報告重刊
-    url: https://financialfilings.com/filings/tfc-1722/annual-report/2025/33445140/
-  tw.1722#e14:
-    locator: 台灣海洋深層水股份有限公司
-    published_date: null
-    publisher: 台灣肥料股份有限公司
-    quote_check: found
-    title: 主要轉投資事業
-    url: https://www.taifer.com.tw/AboutUs/Business/Maininvestmentbusiness.htm
-  tw.1722#e15:
-    locator: 第58頁／本公司投資及綜合投資持股比例表
-    published_date: '2026-05-18'
-    publisher: 台灣肥料股份有限公司
-    quote_check: found
-    title: 114年度台肥公司年報
-    url: https://www.taifer.com.tw/StandardTemplates/Handlers/FileHandler.ashx?fid=0684f8ce-a497-436b-8213-d73f9285ecff&no=1&sourceType=0&type=FileUpload
-  tw.1722#e16:
-    locator: 第58頁／本公司投資及綜合投資持股比例表
-    published_date: '2026-05-18'
-    publisher: 台灣肥料股份有限公司
-    quote_check: found
-    title: 114年度台肥公司年報
-    url: https://www.taifer.com.tw/StandardTemplates/Handlers/FileHandler.ashx?fid=0684f8ce-a497-436b-8213-d73f9285ecff&no=1&sourceType=0&type=FileUpload
-  tw.1722#e2:
+  tw.1722#e02:
     locator: 產品名稱／美耐明
     published_date: null
     publisher: 台灣肥料股份有限公司
     quote_check: found
     title: 化工產品
     url: https://www.taifer.com.tw/Products/ChemicalProduct.htm
-  tw.1722#e3:
-    locator: 產品名稱／硫酸
-    published_date: null
-    publisher: 台灣肥料股份有限公司
-    quote_check: not_found
-    title: 化工產品
-    url: https://www.taifer.com.tw/Products/ChemicalProduct.htm
-  tw.1722#e4:
+  tw.1722#e03:
     locator: 產品名稱／硝酸
     published_date: null
     publisher: 台灣肥料股份有限公司
     quote_check: not_found
     title: 化工產品
     url: https://www.taifer.com.tw/Products/ChemicalProduct.htm
-  tw.1722#e5:
-    locator: 產品名稱／硝酸；規格為電子級
+  tw.1722#e04:
+    locator: 產品名稱／硫酸
+    published_date: null
+    publisher: 台灣肥料股份有限公司
+    quote_check: not_found
+    title: 化工產品
+    url: https://www.taifer.com.tw/Products/ChemicalProduct.htm
+  tw.1722#e05:
+    locator: 產品表／氨水，規格為電子級
     published_date: null
     publisher: 台灣肥料股份有限公司
     quote_check: found
     title: 電子級化學品
     url: https://www.taifer.com.tw/Products/EandPChemicals.htm
-  tw.1722#e6:
-    locator: 產品名稱／氨水；規格為電子級
-    published_date: null
+  tw.1722#e06:
+    locator: 附註六（十八），印刷頁47／PDF第50頁，114年度主要產品服務線，單位新台幣千元
+    published_date: '2026-03-04'
     publisher: 台灣肥料股份有限公司
     quote_check: found
-    title: 電子級化學品
-    url: https://www.taifer.com.tw/Products/EandPChemicals.htm
-  tw.1722#e7:
-    locator: 第58頁／本公司投資及綜合投資持股比例表
-    published_date: '2026-05-18'
-    publisher: 台灣肥料股份有限公司
-    quote_check: found
-    title: 114年度台肥公司年報
-    url: https://www.taifer.com.tw/StandardTemplates/Handlers/FileHandler.ashx?fid=0684f8ce-a497-436b-8213-d73f9285ecff&no=1&sourceType=0&type=FileUpload
-  tw.1722#e8:
-    locator: 第58頁／本公司投資及綜合投資持股比例表
-    published_date: '2026-05-18'
-    publisher: 台灣肥料股份有限公司
+    title: 114年度及113年度合併財務報告
+    url: https://www.taifer.com.tw/StandardTemplates/Handlers/FileHandler.ashx?fid=21add3d9-8dd3-4aa7-b598-9745de832a13&no=1&sourceType=0&type=FileUpload
+  tw.1722#e07:
+    locator: 印刷頁81／主要原料之供應狀況
+    published_date: '2026-05-07'
+    publisher: 台灣肥料股份有限公司（FinancialFilings鏡像）
     quote_check: found
     title: 114年度台肥公司年報
-    url: https://www.taifer.com.tw/StandardTemplates/Handlers/FileHandler.ashx?fid=0684f8ce-a497-436b-8213-d73f9285ecff&no=1&sourceType=0&type=FileUpload
-  tw.1722#e9:
-    locator: 外部供應商管理；頁面標示最後更新日2026年9月10日
-    published_date: null
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51902/2026/RNS/51902_rns_2026-05-07_f03045e5-fec0-495e-8097-c3e4c4a16565.pdf
+  tw.1722#e08:
+    locator: 印刷頁82／主要進貨廠商名單，114年欄
+    published_date: '2026-05-07'
+    publisher: 台灣肥料股份有限公司（FinancialFilings鏡像）
+    quote_check: found
+    title: 114年度台肥公司年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51902/2026/RNS/51902_rns_2026-05-07_f03045e5-fec0-495e-8097-c3e4c4a16565.pdf
+  tw.1722#e09:
+    locator: 印刷頁82／主要進貨廠商名單，114年欄
+    published_date: '2026-05-07'
+    publisher: 台灣肥料股份有限公司（FinancialFilings鏡像）
+    quote_check: found
+    title: 114年度台肥公司年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51902/2026/RNS/51902_rns_2026-05-07_f03045e5-fec0-495e-8097-c3e4c4a16565.pdf
+  tw.1722#e10:
+    locator: 印刷頁83／114年度肥料產品主要銷貨客戶
+    published_date: '2026-05-07'
+    publisher: 台灣肥料股份有限公司（FinancialFilings鏡像）
+    quote_check: found
+    title: 114年度台肥公司年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51902/2026/RNS/51902_rns_2026-05-07_f03045e5-fec0-495e-8097-c3e4c4a16565.pdf
+  tw.1722#e11:
+    locator: 印刷頁83／114年度化工產品主要銷貨客戶
+    published_date: '2026-05-07'
+    publisher: 台灣肥料股份有限公司（FinancialFilings鏡像）
+    quote_check: found
+    title: 114年度台肥公司年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51902/2026/RNS/51902_rns_2026-05-07_f03045e5-fec0-495e-8097-c3e4c4a16565.pdf
+  tw.1722#e12:
+    locator: 印刷頁83／114年度電化品主要銷貨客戶
+    published_date: '2026-05-07'
+    publisher: 台灣肥料股份有限公司（FinancialFilings鏡像）
+    quote_check: found
+    title: 114年度台肥公司年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51902/2026/RNS/51902_rns_2026-05-07_f03045e5-fec0-495e-8097-c3e4c4a16565.pdf
+  tw.1722#e13:
+    locator: 簽約照片說明及冷能利用計畫段落
+    published_date: '2024-05-30'
     publisher: 台灣肥料股份有限公司
     quote_check: found
-    title: 供應鏈管理
-    url: https://www.taifer.com.tw/csr/Socialcommunion/SCM.htm
+    title: 公股企業聯手，創造台灣綠能新天地
+    url: https://www.taifer.com.tw/ActivitiesDetailC002100.aspx?Cond=42faab77-e7a3-4cda-93ec-3feb81c1748a
+  tw.1722#e14:
+    locator: 集團概述／台灣海洋深層水股份有限公司
+    published_date: '2026-09-04'
+    publisher: 台灣肥料股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.taifer.com.tw/csr/Persistencemanagement/CompanyProfile.htm
+  tw.1722#e15:
+    locator: 公司與品牌介紹
+    published_date: null
+    publisher: 台灣海洋深層水股份有限公司
+    quote_check: not_found
+    title: 關於台海生技
+    url: https://www.taiwanyes-mall.com.tw/pages/about-us
+  tw.1722#e16:
+    locator: 集團概述／台莊投資開發股份有限公司
+    published_date: '2026-09-04'
+    publisher: 台灣肥料股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.taifer.com.tw/csr/Persistencemanagement/CompanyProfile.htm
+  tw.1722#e17:
+    locator: 集團概述／培豐科技股份有限公司
+    published_date: '2026-09-04'
+    publisher: 台灣肥料股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.taifer.com.tw/csr/Persistencemanagement/CompanyProfile.htm
+  tw.1722#e18:
+    locator: 集團概述／台盈永續股份有限公司
+    published_date: '2026-09-04'
+    publisher: 台灣肥料股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.taifer.com.tw/csr/Persistencemanagement/CompanyProfile.htm
+  tw.1722#e19:
+    locator: 公告第1至6項及第14項；董事會通過日期114年8月12日
+    published_date: '2025-09-05'
+    publisher: 公開資訊觀測站（MoneyDJ轉載）
+    quote_check: found
+    title: 台肥董事會通過新設立子公司之名稱為台盈永續（補充）
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=4f5ce307-130b-44d8-8a5e-50de7b921e64
+  tw.1722#e20:
+    locator: 集團概述／朱拜爾肥料股份有限公司；下段說明與SABIC合資
+    published_date: '2026-09-04'
+    publisher: 台灣肥料股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.taifer.com.tw/csr/Persistencemanagement/CompanyProfile.htm
+  tw.1722#e21:
+    locator: 公告第3項；第2項事實發生日114年2月12日
+    published_date: '2025-02-13'
+    publisher: 公開資訊觀測站（第一銀行轉載）
+    quote_check: found
+    title: 台肥新竹D7-B科技商務區辦公大樓新建工程承攬案
+    url: https://wealth.firstbank.com.tw/investment-tips/trend-insight/news/news-detail?id=%7B09CEB02E-8710-47F4-9E11-27AEFAC86766%7D
+  tw.1722#e22:
+    locator: 公告第4項契約總金額；第8項取得目的為自地開發
+    published_date: '2025-02-13'
+    publisher: 公開資訊觀測站（第一銀行轉載）
+    quote_check: found
+    title: 台肥新竹D7-B科技商務區辦公大樓新建工程承攬案
+    url: https://wealth.firstbank.com.tw/investment-tips/trend-insight/news/news-detail?id=%7B09CEB02E-8710-47F4-9E11-27AEFAC86766%7D

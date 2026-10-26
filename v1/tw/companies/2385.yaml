@@ -118,7 +118,7 @@ relations:
     detail: 上市電源事業子公司
     details:
     - 上市電源事業子公司
-    - 持股過半的控股母公司
+    - 母公司群光電子
     edge: ef57b06c9201b
     evidence_level: primary
     id: tw.6412
@@ -157,6 +157,31 @@ relations:
     share_pct: null
     weight: 1
   transactions:
+  - amount: 新台幣1,060,000,000元
+    as_of: '2025-08-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 購入桃園觀音土地與建物作物流倉儲
+    details:
+    - 購入桃園觀音土地與建物作物流倉儲
+    - 出售觀音廠土地及廠房
+    edge: e35cb8399b19b
+    event_date: '2025-08-13'
+    events:
+    - amount: 新台幣1,060,000,000元
+      detail: 購入桃園觀音土地與建物作物流倉儲
+      event_date: '2025-08-13'
+    - amount: 新台幣10.6億元
+      detail: 出售觀音廠土地及廠房
+      event_date: '2025-08-13'
+    evidence_level: primary
+    id: tw.2915
+    name: 潤泰全
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 2
   - amount: 新台幣2,100,000,000元
     as_of: '2026-08-05'
     confidence: ai_cross_checked
@@ -182,24 +207,24 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
-  - amount: 新台幣1,060,000,000元
-    as_of: '2025-08-13'
+  - amount: 新台幣10億元
+    as_of: '2026-03-04'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 購入桃園觀音土地與建物作物流倉儲
+    detail: 授權洽談共同投資危老及都市更新案
     details:
-    - 購入桃園觀音土地與建物作物流倉儲
-    edge: e35cb8399b19b
-    event_date: '2025-08-13'
+    - 授權洽談共同投資危老及都市更新案
+    edge: e972119ea85f5
+    event_date: '2026-03-04'
     events:
-    - amount: 新台幣1,060,000,000元
-      detail: 購入桃園觀音土地與建物作物流倉儲
-      event_date: '2025-08-13'
+    - amount: 新台幣10億元
+      detail: 授權洽談共同投資危老及都市更新案
+      event_date: '2026-03-04'
     evidence_level: primary
-    id: tw.2915
-    name: 潤泰全
+    id: tw.6412
+    name: 群電
     ranking_basis: unranked
-    role: buyer
+    role: seller
     share_basis: null
     share_pct: null
     weight: 1

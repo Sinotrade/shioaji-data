@@ -26,26 +26,26 @@ chain_stage:
   stage_name: 設備與廠務
   tier: upstream
 primary_chain_position: midstream
-summary_short: 製造半導體製程設備、關鍵模組與零組件，並提供系統整合。
-summary_long: 京鼎以半導體製程設備、關鍵模組及零組件製造服務為主要業務，並提供系統整合。2025年合併營收中，關鍵性零組件占52.00%，半導體設備及系統組裝占45.52%，其他業務占2.47%。法說會列示的設備模組涵蓋化學機械研磨、物理氣相沉積、化學氣相沉積與蝕刻。集團年報揭露開發EUV光罩護膜貼合、移載及測試設備；子公司凱諾科技亦曾展示EUV光罩自動化設備與技術。承鼎精密、凱諾科技及富蘭登科技均列於合併子公司名單。
+summary_short: 製造半導體設備關鍵零組件與模組，並提供設備組裝、自動化及維修服務。
+summary_long: 京鼎主要提供半導體前段製程設備關鍵模組及零部件製造服務，產品涵蓋CVD、PVD與蝕刻設備相關製造。2025年營收以關鍵性零組件占52.00%最多，半導體設備及系統組裝占45.52%，其他占2.47%。公司另開發EUV光罩護膜貼合、移載及測試設備，並提供CMP研磨頭維修保養。公開資料確認其與應用材料具有供貨及代工合作關係，亦有台積電廠區服務往來。京鼎於2025年收購富蘭登51%股權，並於2026年公告對富蘭登及泰國子公司UniEQ的增資決議。
 segments:
 - evidence_ids:
   - e1
   id: seg_components
   name: 關鍵性零組件
-  period: 2025年度
+  period: '2025'
   revenue_share_pct: 52
 - evidence_ids:
   - e1
   id: seg_equipment
   name: 半導體設備及系統組裝
-  period: 2025年度
+  period: '2025'
   revenue_share_pct: 45.52
 - evidence_ids:
   - e1
   id: seg_other
   name: 其他
-  period: 2025年度
+  period: '2025'
   revenue_share_pct: 2.47
 main_theme: theme.euv
 themes:
@@ -54,13 +54,42 @@ themes:
   theme: theme.euv
   tier: midstream
 relations:
+  customers:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團口徑銷貨往來
+    details:
+    - 集團口徑銷貨往來
+    edge: e7170b762d0bc
+    evidence_level: primary
+    id: org.鴻海集團
+    name: 鴻海集團
+    ranking_basis: disclosed
+    share_basis: revenue
+    share_pct: 0.02
+    weight: 1
+  - as_of: 2022-04
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 半導體設備備品與自動化設備供貨
+    details:
+    - 半導體設備備品與自動化設備供貨
+    edge: ed5ba1984b3dd
+    evidence_level: primary
+    id: us.AMAT
+    name: Applied Materials
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接子公司
+    detail: 設備與電子零組件製造子公司
     details:
-    - 直接子公司
+    - 設備與電子零組件製造子公司
     edge: e04579c70412e
     evidence_level: primary
     id: org.cheng-ding-precision
@@ -72,12 +101,12 @@ relations:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接子公司
+    detail: 受控制子公司
     details:
-    - 直接子公司
-    edge: e205e044d92c7
+    - 受控制子公司
+    edge: e0a48fb9c04d8
     evidence_level: primary
-    id: org.fairtech
+    id: org.franklin-technology
     name: 富蘭登科技股份有限公司
     ranking_basis: unranked
     share_basis: null
@@ -86,9 +115,9 @@ relations:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接子公司
+    detail: 設備與電子零組件子公司
     details:
-    - 直接子公司
+    - 設備與電子零組件子公司
     edge: ef4aa04d191ed
     evidence_level: primary
     id: org.kainova-technology
@@ -97,12 +126,12 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2025-12-31'
+  - as_of: '2026-08-07'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 泰國直接子公司
+    detail: 泰國子公司
     details:
-    - 泰國直接子公司
+    - 泰國子公司
     edge: e49afb0105498
     evidence_level: primary
     id: org.unieq-integrated-technology
@@ -111,102 +140,223 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  transactions:
+  - amount: 泰銖2,280,000,000元（未稅）
+    as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 泰國子公司廠房工程第二期款合約
+    details:
+    - 泰國子公司廠房工程第二期款合約
+    edge: e03a840ca46d1
+    event_date: '2024-12-31'
+    events:
+    - amount: 泰銖2,280,000,000元（未稅）
+      detail: 泰國子公司廠房工程第二期款合約
+      event_date: '2024-12-31'
+    evidence_level: primary
+    id: org.acter-technology-co-ltd
+    name: ACTER TECHNOLOGY CO.,LTD.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣1,995,390仟元
+    as_of: '2026-08-07'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 收購51%股權
+    details:
+    - 收購51%股權
+    - 董事會決議參與子公司現金增資
+    edge: e83a8bbbb7e61
+    event_date: '2025-05-29'
+    events:
+    - amount: 不高於新台幣460,000,000元
+      detail: 董事會決議參與子公司現金增資
+      event_date: '2026-08-07'
+    - amount: 新台幣1,995,390仟元
+      detail: 收購51%股權
+      event_date: '2025-05-29'
+    evidence_level: primary
+    id: org.franklin-technology
+    name: 富蘭登科技股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 泰銖1,500,000,000元
+    as_of: '2026-08-07'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 認購泰國子公司現金增資
+    details:
+    - 認購泰國子公司現金增資
+    edge: e53620f07ee8d
+    event_date: '2026-08-07'
+    events:
+    - amount: 泰銖1,500,000,000元
+      detail: 認購泰國子公司現金增資
+      event_date: '2026-08-07'
+    evidence_level: primary
+    id: org.unieq-integrated-technology
+    name: UniEQ Integrated Technology Co., Ltd.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 泰銖640,000,000（未稅）
+    as_of: '2025-08-08'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 泰國子公司取得土地與廠房
+    details:
+    - 泰國子公司取得土地與廠房
+    edge: ea9b7e9409def
+    event_date: '2025-08-08'
+    events:
+    - amount: 泰銖640,000,000（未稅）
+      detail: 泰國子公司取得土地與廠房
+      event_date: '2025-08-08'
+    evidence_level: primary
+    id: org.wha-premium-growth-freehold-and-leasehold-real-e
+    name: WHA Premium Growth Freehold and Leasehold Real Estate Investment Trust
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 2025年報匿名揭露的主要銷貨客戶「甲公司」；未將其營收占比指定給應用材料。
+- 年報所稱採用先進封裝自動化設備的晶圓製造及封測大廠，未揭露個別名稱。
+- 主要原料及設備零組件供應商未充分具名揭露。
 website: http://www.foxsemicon.com.tw/
 tax_id: '12858252'
 incorporated: '2001-04-26'
 listed: '2015-07-28'
-as_of: '2026-10-15'
+as_of: '2026-10-26'
 confidence: ai_cross_checked
 has_research: true
 evidence:
   tw.3413#e1:
-    locator: 肆、營運概況／一、業務內容／營業比重，PDF第69頁
-    published_date: '2026-03-31'
+    locator: 印刷頁65，營業比重，114年度欄
+    published_date: null
     publisher: 京鼎精密科技股份有限公司
     quote_check: found
     title: 京鼎精密科技股份有限公司114年度年報
     url: https://cdn.financialreports.eu/financialreports/media/filings/52322/2026/RNS/52322_rns_2026-06-11_e8f2fca1-a265-4205-9ecb-45386e99857e.pdf
   tw.3413#e10:
-    locator: 附註四(三)2及附表九；京鼎為投資公司之承鼎列
+    locator: 列入合併財務報表之子公司，富蘭登列
     published_date: '2026-03-06'
     publisher: 京鼎精密科技股份有限公司
-    quote_check: unreachable
-    title: 京鼎114年度及113年度合併財務報告暨會計師查核報告
-    url: https://financialfilings.com/filings/fiti-3413/annual-report/2026/34418187/
+    quote_check: found
+    title: 京鼎2025年度合併財務報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52322/2026/RNS/52322_rns_2026-03-06_a1b30564-b838-4e7d-917d-2ce72db532ff.html
   tw.3413#e11:
-    locator: 附註四(三)2及附表九；京鼎為投資公司之凱諾列
-    published_date: '2026-03-06'
-    publisher: 京鼎精密科技股份有限公司
-    quote_check: unreachable
-    title: 京鼎114年度及113年度合併財務報告暨會計師查核報告
-    url: https://financialfilings.com/filings/fiti-3413/annual-report/2026/34418187/
+    locator: 公告標題及第14項，累積持有證券
+    published_date: '2026-08-07'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ轉載
+    quote_check: found
+    title: 京鼎公告取得泰國子公司UniEQ股份
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=c61a604d-edc9-4678-a6bb-f339644bf151
   tw.3413#e12:
-    locator: 附註四(三)2及附表九；京鼎為投資公司之富蘭登列
+    locator: 列入合併財務報表之子公司，承鼎精密列
     published_date: '2026-03-06'
     publisher: 京鼎精密科技股份有限公司
-    quote_check: unreachable
-    title: 京鼎114年度及113年度合併財務報告暨會計師查核報告
-    url: https://financialfilings.com/filings/fiti-3413/annual-report/2026/34418187/
+    quote_check: found
+    title: 京鼎2025年度合併財務報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52322/2026/RNS/52322_rns_2026-03-06_a1b30564-b838-4e7d-917d-2ce72db532ff.html
   tw.3413#e13:
-    locator: 附表九，所在地區為泰國、投資公司為京鼎之UniEQ列
+    locator: 列入合併財務報表之子公司，凱諾科技列
     published_date: '2026-03-06'
     publisher: 京鼎精密科技股份有限公司
+    quote_check: found
+    title: 京鼎2025年度合併財務報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52322/2026/RNS/52322_rns_2026-03-06_a1b30564-b838-4e7d-917d-2ce72db532ff.html
+  tw.3413#e14:
+    locator: 會計師查核報告，併購交易購買價格分攤合理性評估
+    published_date: '2026-03-06'
+    publisher: 京鼎精密科技股份有限公司／FinancialFilings保存
     quote_check: unreachable
-    title: 京鼎114年度及113年度合併財務報告暨會計師查核報告
-    url: https://financialfilings.com/filings/fiti-3413/annual-report/2026/34418187/
+    title: 京鼎2025年度合併財務報告
+    url: https://financialfilings.com/filings/fiti-3413/annual-report/2026/60570298/
+  tw.3413#e15:
+    locator: 第5項，交易數量、價格及總金額
+    published_date: '2026-08-07'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ轉載
+    quote_check: found
+    title: 京鼎公告取得泰國子公司UniEQ股份
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=c61a604d-edc9-4678-a6bb-f339644bf151
+  tw.3413#e16:
+    locator: 第5項，交易數量、價格及總金額
+    published_date: '2026-08-07'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ轉載
+    quote_check: found
+    title: 京鼎董事會決議參與認購富蘭登科技現金增資發行新股
+    url: https://m.moneydj.com/f1a.aspx?a=A25313CF-BD45-4FD2-B66B-DED1E2AAFC4D
+  tw.3413#e17:
+    locator: 第3至4項，契約相對人及主要內容
+    published_date: '2024-12-31'
+    publisher: 公開資訊觀測站公告／鉅亨網轉載
+    quote_check: found
+    title: 京鼎代子公司UniEQ公告簽訂工程合同（第二期款）
+    url: https://news.cnyes.com/news/id/5823295
+  tw.3413#e18:
+    locator: 第5項，交易總金額
+    published_date: '2025-08-08'
+    publisher: 公開資訊觀測站公告／鉅亨網轉載
+    quote_check: found
+    title: 京鼎代重要子公司UniEQ公告取得土地與廠房
+    url: https://news.cnyes.com/news/id/6100021
+  tw.3413#e19:
+    locator: 第6項，交易相對人
+    published_date: '2025-08-08'
+    publisher: 公開資訊觀測站公告／鉅亨網轉載
+    quote_check: found
+    title: 京鼎代重要子公司UniEQ公告取得土地與廠房
+    url: https://news.cnyes.com/news/id/6100021
   tw.3413#e2:
-    locator: 第4頁，公司簡介／營業項目
-    published_date: '2024-09-05'
+    locator: 第4頁，公司簡介
+    published_date: '2026-03-26'
     publisher: 京鼎精密科技股份有限公司
     quote_check: found
-    title: 京鼎2024第二季法人說明會
-    url: https://mopsov.twse.com.tw/nas/STR/341320240906M001.pdf
-  tw.3413#e3:
-    locator: 產業上、中、下游之關聯性，PDF第71頁
-    published_date: '2026-03-31'
-    publisher: 京鼎精密科技股份有限公司
-    quote_check: found
-    title: 京鼎精密科技股份有限公司114年度年報
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52322/2026/RNS/52322_rns_2026-06-11_e8f2fca1-a265-4205-9ecb-45386e99857e.pdf
+    title: 京鼎2025第四季法人說明會
+    url: https://mopsov.twse.com.tw/nas/STR/341320260326M001.pdf
   tw.3413#e4:
-    locator: 第6頁，市場定位／Module
-    published_date: '2024-09-05'
+    locator: 第14頁，2025年第四季製造及維修服務銷售分析－產品別
+    published_date: '2026-03-26'
     publisher: 京鼎精密科技股份有限公司
     quote_check: found
-    title: 京鼎2024第二季法人說明會
-    url: https://mopsov.twse.com.tw/nas/STR/341320240906M001.pdf
+    title: 京鼎2025第四季法人說明會
+    url: https://mopsov.twse.com.tw/nas/STR/341320260326M001.pdf
   tw.3413#e5:
-    locator: 第6頁，市場定位／Module
-    published_date: '2024-09-05'
-    publisher: 京鼎精密科技股份有限公司
-    quote_check: found
-    title: 京鼎2024第二季法人說明會
-    url: https://mopsov.twse.com.tw/nas/STR/341320240906M001.pdf
-  tw.3413#e6:
-    locator: 第6頁，市場定位／Module
-    published_date: '2024-09-05'
-    publisher: 京鼎精密科技股份有限公司
-    quote_check: found
-    title: 京鼎2024第二季法人說明會
-    url: https://mopsov.twse.com.tw/nas/STR/341320240906M001.pdf
-  tw.3413#e7:
-    locator: 壹、致股東報告書／創新研發
-    published_date: '2026-03-31'
+    locator: 印刷頁2，創新研發
+    published_date: null
     publisher: 京鼎精密科技股份有限公司
     quote_check: found
     title: 京鼎精密科技股份有限公司114年度年報
     url: https://cdn.financialreports.eu/financialreports/media/filings/52322/2026/RNS/52322_rns_2026-06-11_e8f2fca1-a265-4205-9ecb-45386e99857e.pdf
-  tw.3413#e8:
-    locator: 第18頁，近期重要事件摘要
-    published_date: '2024-09-05'
+  tw.3413#e6:
+    locator: 記者張瑞益、吳秉鍇報導
+    published_date: '2020-11-03'
+    publisher: 經濟日報
+    quote_check: not_found
+    title: 服務大客戶…鴻海旗下 京鼎跟進赴美建廠
+    url: https://paper.udn.com/udnpaper/PID0014/358727/web/
+  tw.3413#e7:
+    locator: Best in Class Performance供應商名單
+    published_date: '2022-04-11'
+    publisher: Applied Materials, Inc.
+    quote_check: unreachable
+    title: Applied Materials Announces 2022 Supplier Excellence Awards
+    url: https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-announces-2022-supplier-excellence-awards
+  tw.3413#e9:
+    locator: 印刷頁76，最近二年度主要銷貨客戶，114年度欄
+    published_date: null
     publisher: 京鼎精密科技股份有限公司
     quote_check: found
-    title: 京鼎2024第二季法人說明會
-    url: https://mopsov.twse.com.tw/nas/STR/341320240906M001.pdf
-  tw.3413#e9:
-    locator: 附註四(三)2，第20頁；子公司表的投資公司欄列京鼎
-    published_date: '2026-03-06'
-    publisher: 京鼎精密科技股份有限公司
-    quote_check: unreachable
-    title: 京鼎114年度及113年度合併財務報告暨會計師查核報告
-    url: https://financialfilings.com/filings/fiti-3413/annual-report/2026/34418187/
+    title: 京鼎精密科技股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52322/2026/RNS/52322_rns_2026-06-11_e8f2fca1-a265-4205-9ecb-45386e99857e.pdf

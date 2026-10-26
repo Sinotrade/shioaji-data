@@ -44,9 +44,9 @@ relations:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 透過上揚資產持有的間接子公司
+    detail: 上揚資產取得控制力後納入合併
     details:
-    - 透過上揚資產持有的間接子公司
+    - 上揚資產取得控制力後納入合併
     - 間接母公司及集團最終控制者
     edge: e0900646fb6a3
     evidence_level: primary
@@ -67,6 +67,28 @@ relations:
     id: org.shang-yang-asset-management
     name: 上揚資產管理股份有限公司
     ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 新台幣2.1億元
+    as_of: '2024-12-05'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司喬松健康附條件購入銅鑼土地
+    details:
+    - 子公司喬松健康附條件購入銅鑼土地
+    edge: e334844657140
+    event_date: '2024-12-05'
+    events:
+    - amount: 新台幣2.1億元
+      detail: 子公司喬松健康附條件購入銅鑼土地
+      event_date: '2024-12-05'
+    evidence_level: media
+    id: tw.2206
+    name: 三陽工業
+    ranking_basis: unranked
+    role: seller
     share_basis: null
     share_pct: null
     weight: 1

@@ -18,160 +18,432 @@ industry:
   l3_name: 農業與畜牧
   l3_name_en: Agriculture & Livestock
 primary_chain_position: not_applicable
-summary_short: 經營飼料、農畜牧及食品，主要收入來自農畜牧事業。
-summary_long: 卜蜂以飼料、農畜牧及食品為主要營業項目，產品包括雞、豬、鴨用混合飼料、生鮮冷藏雞肉、生鮮冷藏豬肉與肉製加工品。2025年農畜牧事業占合併營收46.8%，是最大收入來源；食品占27.1%，飼料占26.1%。旗下直接持股企業包括卜蜂（台灣）、台灣愛拔益加、瑞牧食品、瑞福食品及開曼沛式，另透過瑞福食品間接持有勝大食品。瑞牧食品與開曼沛式均為全資持有，瑞福食品直接持股51%。
+summary_short: 以禽畜飼料、生鮮肉品及肉類加工食品生產銷售為主要收入來源。
+summary_long: 卜蜂主要經營飼料、生鮮肉品及肉類加工食品，採飼料、肉雞契養與屠宰的垂直整合模式。2024年農畜牧肉品占營收44.9%，飼料與加工性熟料占28.8%，消費食品占26.3%。2023年具名報導指出，卜蜂供貨麥當勞，並向智逐科技採購養雞用AI體重設備。最終母公司為CPF，主要子公司包括瑞牧、瑞福、台灣愛拔益加及卜蜂（台灣）。卜蜂於2024年投資蜂勝合資事業，2025年收購瑞牧剩餘32%股權，並於2026年1月再投入瑞牧現金增資。
 segments:
 - evidence_ids:
-  - e1
-  id: seg_feed
-  name: 飼料事業
-  period: '2025'
-  revenue_share_pct: 26.1
+  - e02
+  id: livestock
+  name: 農畜牧肉品
+  period: '2024'
+  revenue_share_pct: 44.9
 - evidence_ids:
-  - e2
-  id: seg_agri
-  name: 農畜牧事業
-  period: '2025'
-  revenue_share_pct: 46.8
+  - e01
+  id: feed
+  name: 飼料與加工性熟料
+  period: '2024'
+  revenue_share_pct: 28.8
 - evidence_ids:
-  - e3
-  id: seg_food
-  name: 食品事業
-  period: '2025'
-  revenue_share_pct: 27.1
+  - e03
+  id: consumer_food
+  name: 消費食品
+  period: '2024'
+  revenue_share_pct: 26.3
 relations:
+  parents:
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 最終母公司
+    details:
+    - 最終母公司
+    edge: eef3c356be6dc
+    evidence_level: primary
+    id: org.charoen-pokphand-foods-public-co-ltd
+    name: Charoen Pokphand Foods Public Co., Ltd
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  partners:
+  - as_of: 2024-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 食品網購循環包裝
+    details:
+    - 食品網購循環包裝
+    edge: ee363155fb679
+    evidence_level: primary
+    id: org.package-plus
+    name: 配客嘉股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
-  - as_of: 2025-12
+  - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 台灣愛拔益加股份有限公司；直接持股50%
+    detail: 肉用種雞及雛雞畜牧子公司
     details:
-    - 台灣愛拔益加股份有限公司；直接持股50%
-    edge: ee5cd9201f4f2
+    - 肉用種雞及雛雞畜牧子公司
+    edge: eea091572d145
     evidence_level: primary
-    id: org.arbor-acres-taiwan-co-ltd
-    name: Arbor Acres (Taiwan) Co., Ltd.
+    id: org.arbor-acres-taiwan
+    name: 台灣愛拔益加股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: 2025-12
+  - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 卜蜂（台灣）股份有限公司；直接持股90%
+    detail: 進出口貿易子公司
     details:
-    - 卜蜂（台灣）股份有限公司；直接持股90%
-    edge: e139fdd271799
+    - 進出口貿易子公司
+    edge: e9b4b0d3971d8
     evidence_level: primary
-    id: org.charoen-pokphand-taiwan-corp-ltd
-    name: Charoen Pokphand (Taiwan) Corp. Ltd.
+    id: org.charoen-pokphand-taiwan
+    name: 卜蜂(台灣)股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: 2025-12
+  - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 開曼沛式有限公司；直接持股100%
+    detail: 投資控股子公司
     details:
-    - 開曼沛式有限公司；直接持股100%
-    edge: eb99d04519b9a
+    - 投資控股子公司
+    edge: e167195612c66
     evidence_level: primary
-    id: org.plenty-type-limited-cayman-islands
-    name: Plenty Type Limited (Cayman Islands)
+    id: org.plenty-type
+    name: 開曼沛式有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: 2025-12
+  - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 瑞福食品股份有限公司；直接持股51%
+    detail: 蛋雞及相關事業子公司
     details:
-    - 瑞福食品股份有限公司；直接持股51%
-    edge: e9f532c15dd04
+    - 蛋雞及相關事業子公司
+    edge: e6f6e9b94e140
     evidence_level: primary
-    id: org.rui-fu-foods-co-ltd
-    name: Rui Fu Foods Co., Ltd.
+    id: org.ruifu-food
+    name: 瑞福食品股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: 2025-12
+  - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 瑞牧食品股份有限公司；直接持股100%
+    detail: 蛋雞及相關事業子公司
     details:
-    - 瑞牧食品股份有限公司；直接持股100%
-    edge: e7ad7ed890c43
+    - 蛋雞及相關事業子公司
+    edge: e307cf8af8985
     evidence_level: primary
-    id: org.rui-mu-foods-co-ltd
-    name: Rui Mu Foods Co., Ltd.
+    id: org.ruimu-food
+    name: 瑞牧食品股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: 2025-12
+  - as_of: '2026-03-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 勝大食品股份有限公司；由瑞福食品持股83.33%
+    detail: 透過瑞福持有的蛋品事業孫公司
     details:
-    - 勝大食品股份有限公司；由瑞福食品持股83.33%
-    edge: ea585e74e25fc
+    - 透過瑞福持有的蛋品事業孫公司
+    edge: ec53522bafa79
     evidence_level: primary
-    id: org.sheng-da-foods-co-ltd
-    name: Sheng Da Foods Co., Ltd.
+    id: org.shengda-food
+    name: 勝大食品股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
+  suppliers:
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 肉雞代宰服務
+    details:
+    - 肉雞代宰服務
+    edge: ebfb1780e8b59
+    evidence_level: primary
+    id: org.fengsheng
+    name: 蜂勝股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 港幣79,690,335.75元（約當新台幣301,284仟元）
+    as_of: '2025-06-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 公開市場處分中國中信股票
+    details:
+    - 公開市場處分中國中信股票
+    edge: e6b0c1fcd1b44
+    event_date: '2025-06-24'
+    events:
+    - amount: 港幣79,690,335.75元（約當新台幣301,284仟元）
+      detail: 公開市場處分中國中信股票
+      event_date: '2025-06-24'
+    evidence_level: media
+    id: hk.00267
+    name: 中國中信股份有限公司
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣222,410仟元
+    as_of: 2024-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 增持合資屠宰事業
+    details:
+    - 增持合資屠宰事業
+    edge: edae28fd96c65
+    event_date: null
+    events:
+    - amount: 新台幣222,410仟元
+      detail: 增持合資屠宰事業
+      event_date: null
+    evidence_level: primary
+    id: org.fengsheng
+    name: 蜂勝股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣51,000仟元
+    as_of: '2025-11-11'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 2024年認購子公司現金增資
+    details:
+    - 2024年認購子公司現金增資
+    - 2025年認購子公司現金增資
+    - 公告購入台南學甲土地及建物
+    edge: e9aa97eb0bfc3
+    event_date: '2025-11-11'
+    events:
+    - amount: 新台幣285,000,000元
+      detail: 公告購入台南學甲土地及建物
+      event_date: '2025-11-11'
+    - amount: 新台幣51,000仟元
+      detail: 2024年認購子公司現金增資
+      event_date: null
+    evidence_level: primary
+    id: org.ruifu-food
+    name: 瑞福食品股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣16,233仟元
+    as_of: 2026-01
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 收購子公司剩餘32%股權
+    details:
+    - 收購子公司剩餘32%股權
+    - 認購子公司現金增資
+    - 認購全資子公司現金增資
+    edge: e83b7d49b2af1
+    event_date: null
+    events:
+    - amount: 新台幣16,233仟元
+      detail: 收購子公司剩餘32%股權
+      event_date: null
+    - amount: 新台幣150,000仟元
+      detail: 認購子公司現金增資
+      event_date: null
+    - amount: 新台幣280,000仟元
+      detail: 認購全資子公司現金增資
+      event_date: null
+    evidence_level: primary
+    id: org.ruimu-food
+    name: 瑞牧食品股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣140,000,000元
+    as_of: '2024-08-05'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 取得台南下營肉雞場土地及建物
+    details:
+    - 取得台南下營肉雞場土地及建物
+    edge: e3e6e040da597
+    event_date: '2024-08-05'
+    events:
+    - amount: 新台幣140,000,000元
+      detail: 取得台南下營肉雞場土地及建物
+      event_date: '2024-08-05'
+    evidence_level: media
+    id: org.呂宜峰
+    name: 呂宜峰
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 未具名的契約養殖戶及毛雞供應農場
+- 官網泛稱的連鎖速食店、超商、量販超市、團膳及經銷商
 website: http://www.cptwn.com.tw
 tax_id: '36514783'
 incorporated: '1977-08-22'
 listed: '1987-07-27'
-as_of: '2026-10-15'
+as_of: '2026-10-26'
 confidence: ai_cross_checked
 has_research: true
 evidence:
-  tw.1215#e1:
-    locator: 印刷第4頁／PDF第6頁，營收結構第1項 Feed Business
-    published_date: '2026-04-08'
+  tw.1215#e01:
+    locator: 印刷頁52／PDF第54頁，產品項目及比重
+    published_date: '2025-04-08'
     publisher: 台灣卜蜂企業股份有限公司
     quote_check: found
-    title: 2025 Annual Report
-    url: https://www.cptwn.com.tw/rwd1785/store/F4/Annual-Report-2025.pdf
-  tw.1215#e2:
-    locator: 印刷第4頁／PDF第6頁，營收結構第2項 Agriculture and Livestock Business
-    published_date: '2026-04-08'
+    title: 2024 Annual Report
+    url: https://www.cptwn.com.tw/rwd1785/store/F4/Annual-Report-2024.pdf
+  tw.1215#e02:
+    locator: 印刷頁52／PDF第54頁，產品項目及比重
+    published_date: '2025-04-08'
     publisher: 台灣卜蜂企業股份有限公司
     quote_check: found
-    title: 2025 Annual Report
-    url: https://www.cptwn.com.tw/rwd1785/store/F4/Annual-Report-2025.pdf
-  tw.1215#e3:
-    locator: 印刷第4頁／PDF第6頁，營收結構第3項 Consumable Food Products
-    published_date: '2026-04-08'
+    title: 2024 Annual Report
+    url: https://www.cptwn.com.tw/rwd1785/store/F4/Annual-Report-2024.pdf
+  tw.1215#e03:
+    locator: 印刷頁4／PDF第6頁，Consumable Food Products
+    published_date: '2025-04-08'
     publisher: 台灣卜蜂企業股份有限公司
     quote_check: found
-    title: 2025 Annual Report
-    url: https://www.cptwn.com.tw/rwd1785/store/F4/Annual-Report-2025.pdf
-  tw.1215#e4:
-    locator: 肉雞電宰廠，下方第01項業務說明
+    title: 2024 Annual Report
+    url: https://www.cptwn.com.tw/rwd1785/store/F4/Annual-Report-2024.pdf
+  tw.1215#e04:
+    locator: 雞肉生產
     published_date: null
     publisher: 台灣卜蜂企業股份有限公司
     quote_check: found
-    title: 台灣卜蜂簡介 - 關於卜蜂 - 台灣卜蜂企業股份有限公司
-    url: https://www.cptwn.com.tw/ec99/rwd1785/category.asp?category_id=8
-  tw.1215#e5:
-    locator: 印刷第71頁／PDF第73頁，關係企業組織圖：台灣卜蜂直接連至卜蜂（台灣）、台灣愛拔益加、瑞牧食品、瑞福食品及開曼沛式，持股依序為90%、50%、100%、51%、100%；印刷第73頁另有合併範圍聲明
-    published_date: '2026-04-08'
+    title: 生鮮屠宰
+    url: https://www.cptwn.com.tw/ec99/rwd1785/category.asp?category_id=33
+  tw.1215#e05:
+    locator: 肉食品事業食品加工
+    published_date: null
     publisher: 台灣卜蜂企業股份有限公司
     quote_check: found
-    title: 2025 Annual Report
-    url: https://www.cptwn.com.tw/rwd1785/store/F4/Annual-Report-2025.pdf
-  tw.1215#e6:
-    locator: 印刷第71頁／PDF第73頁，關係企業組織圖中瑞福食品至勝大食品的持股連線；印刷第72頁董事持股表亦列瑞福食品代表持有勝大食品股權
-    published_date: '2026-04-08'
+    title: 食品加工
+    url: https://www.cptwn.com.tw/ec99/rwd1785/category.asp?category_id=34
+  tw.1215#e08:
+    locator: 綠色網購，卜蜂食品合作專區
+    published_date: null
+    publisher: 配客嘉股份有限公司
+    quote_check: found
+    title: 卜蜂食品
+    url: https://package-plus.com/2024/12/%E5%8D%9C%E8%9C%82%E9%A3%9F%E5%93%81/
+  tw.1215#e09:
+    locator: 第37頁，關係人名稱及關係
+    published_date: null
     publisher: 台灣卜蜂企業股份有限公司
-    quote_check: not_found
-    title: 2025 Annual Report
-    url: https://www.cptwn.com.tw/rwd1785/store/F4/Annual-Report-2025.pdf
+    quote_check: found
+    title: 民國115年及114年第一季合併財務報告
+    url: https://www.cptwn.com.tw/rwd1785/store/F4/財報11501.pdf
+  tw.1215#e10:
+    locator: 第49頁，關係人名稱及關係
+    published_date: null
+    publisher: 台灣卜蜂企業股份有限公司
+    quote_check: found
+    title: 民國114年度及113年度個體財務報告
+    url: https://www.cptwn.com.tw/rwd1785/store/F4/個體財報114.pdf
+  tw.1215#e11:
+    locator: 第67頁，被投資公司名稱、主要營業項目及備註
+    published_date: null
+    publisher: 台灣卜蜂企業股份有限公司
+    quote_check: found
+    title: 民國114年度及113年度合併財務報告
+    url: https://www.cptwn.com.tw/rwd1785/store/F4/財報11404.pdf
+  tw.1215#e12:
+    locator: 第67頁，被投資公司名稱及備註；開曼沛式列為子公司
+    published_date: null
+    publisher: 台灣卜蜂企業股份有限公司
+    quote_check: found
+    title: 民國114年度及113年度合併財務報告
+    url: https://www.cptwn.com.tw/rwd1785/store/F4/財報11404.pdf
+  tw.1215#e13:
+    locator: 第52頁，被投資公司資訊，瑞福持有勝大之列
+    published_date: null
+    publisher: 台灣卜蜂企業股份有限公司
+    quote_check: found
+    title: 民國115年及114年第一季合併財務報告
+    url: https://www.cptwn.com.tw/rwd1785/store/F4/財報11501.pdf
+  tw.1215#e14:
+    locator: 第52頁，委託電宰契約
+    published_date: null
+    publisher: 台灣卜蜂企業股份有限公司
+    quote_check: found
+    title: 民國114年度及113年度個體財務報告
+    url: https://www.cptwn.com.tw/rwd1785/store/F4/個體財報114.pdf
+  tw.1215#e15:
+    locator: 第33頁，採用權益法之投資第7點；金額單位為新台幣仟元
+    published_date: null
+    publisher: 台灣卜蜂企業股份有限公司
+    quote_check: found
+    title: 民國114年度及113年度個體財務報告
+    url: https://www.cptwn.com.tw/rwd1785/store/F4/個體財報114.pdf
+  tw.1215#e16:
+    locator: 第49頁，關係人名稱及關係
+    published_date: null
+    publisher: 台灣卜蜂企業股份有限公司
+    quote_check: found
+    title: 民國114年度及113年度個體財務報告
+    url: https://www.cptwn.com.tw/rwd1785/store/F4/個體財報114.pdf
+  tw.1215#e17:
+    locator: 第20頁，合併子公司表註2；金額單位為新台幣仟元
+    published_date: null
+    publisher: 台灣卜蜂企業股份有限公司
+    quote_check: found
+    title: 民國114年度及113年度合併財務報告
+    url: https://www.cptwn.com.tw/rwd1785/store/F4/財報11404.pdf
+  tw.1215#e18:
+    locator: 第20頁，合併子公司表註3；金額單位為新台幣仟元
+    published_date: null
+    publisher: 台灣卜蜂企業股份有限公司
+    quote_check: found
+    title: 民國114年度及113年度合併財務報告
+    url: https://www.cptwn.com.tw/rwd1785/store/F4/財報11404.pdf
+  tw.1215#e19:
+    locator: 第16頁，合併子公司表註4；金額單位為新台幣仟元
+    published_date: null
+    publisher: 台灣卜蜂企業股份有限公司
+    quote_check: found
+    title: 民國115年及114年第一季合併財務報告
+    url: https://www.cptwn.com.tw/rwd1785/store/F4/財報11501.pdf
+  tw.1215#e20:
+    locator: 第20頁，合併子公司表註5；金額單位為新台幣仟元
+    published_date: null
+    publisher: 台灣卜蜂企業股份有限公司
+    quote_check: found
+    title: 民國114年度及113年度合併財務報告
+    url: https://www.cptwn.com.tw/rwd1785/store/F4/財報11404.pdf
+  tw.1215#e21:
+    locator: 公開資訊觀測站重大訊息轉載，交易對象、標的及交易金額欄
+    published_date: '2024-08-05'
+    publisher: 鉅亨網
+    quote_check: found
+    title: 卜蜂：公告本公司向關係人取得不動產
+    url: https://news.cnyes.com/news/id/5665511
+  tw.1215#e22:
+    locator: 公開資訊觀測站重大訊息轉載，交易對象及交易金額欄
+    published_date: '2025-11-11'
+    publisher: MoneyDJ
+    quote_check: found
+    title: 卜蜂公告子公司瑞福食品處分不動產予關係人
+    url: https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=732e8c11-5290-4165-b6cc-e413d3e2d14e
+  tw.1215#e24:
+    locator: 公開資訊觀測站重大訊息轉載，第1、2及5項
+    published_date: '2025-06-24'
+    publisher: MoneyDJ
+    quote_check: found
+    title: 卜蜂6/10~23處分中國中信716.6萬股，獲利約1824萬港幣
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=64596f16-da4b-44d9-ac13-d69a557ee2cf

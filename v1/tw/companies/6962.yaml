@@ -36,6 +36,21 @@ segments:
   period: '2024'
   revenue_share_pct: 100
 relations:
+  parents:
+  - as_of: '2026-06-09'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 納入合併營收之子公司
+    details:
+    - 納入合併營收之子公司
+    edge: e20a8131d6404
+    evidence_level: primary
+    id: tw.3673
+    name: TPK-KY
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
   - as_of: '2025-03-31'
     confidence: ai_cross_checked
@@ -48,6 +63,28 @@ relations:
     id: org.ilitek-technology
     name: 奕力科技股份有限公司
     ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 新台幣5,807,432,813元，計美金187,730,170.11元
+    as_of: '2025-11-06'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過收購特殊目的公司間接投資奕力23.83%股權
+    details:
+    - 透過收購特殊目的公司間接投資奕力23.83%股權
+    edge: e637723868bb6
+    event_date: '2025-11-06'
+    events:
+    - amount: 新台幣5,807,432,813元，計美金187,730,170.11元
+      detail: 透過收購特殊目的公司間接投資奕力23.83%股權
+      event_date: '2025-11-06'
+    evidence_level: primary
+    id: tw.3673
+    name: TPK-KY
+    ranking_basis: unranked
+    role: seller
     share_basis: null
     share_pct: null
     weight: 1

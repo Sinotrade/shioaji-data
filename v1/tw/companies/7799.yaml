@@ -29,43 +29,150 @@ chain_stage:
   stage_name: 通路與醫療服務
   tier: downstream
 primary_chain_position: downstream
-summary_short: 提供BNCT治療照射服務與含硼藥物，並開發相關醫療設備及軟體。
-summary_long: 禾榮科提供加速器型硼中子捕獲治療（AB-BNCT）相關設備、治療照射服務及含硼藥物。2025年營收以恩慈治療照射收入為主，占56.94%，治療用含硼藥物BPA占43.06%。產品包括AB-BNCT醫療設備，以及治療控制與治療計畫軟體；藥物技術另包括FBPA前驅物及自動化合成。2026年第一季合併財報列有南京、新加坡與日本三家全資子公司，營業項目均為醫療器材銷售。
+summary_short: 提供BNCT癌症治療設備與含硼藥物，現有收入以恩慈治療照射及藥物銷售為主。
+summary_long: 禾榮科提供加速器型硼中子捕獲治療（AB-BNCT）整體方案，涵蓋治療設備、計畫與控制系統及含硼藥物。2025年營收以恩慈治療照射收入為主，占56.94%，含硼藥物BPA占43.06%；臺北榮總是藥物客戶，台灣神隆則供應相關原料藥與製劑。公司向ACSI採購加速器，並與西門子醫療、GE HealthCare及沛爾生醫展開具名合作。2025年投資明基醫院集團，2026年成立南京、新加坡與日本子公司，另簽訂竹北新大樓工程合約，並得標苗栗後龍土地。
 segments:
 - evidence_ids:
-  - e1
-  id: seg.irradiation
-  name: 恩慈治療照射收入
+  - e02
+  id: seg_treatment
+  name: 恩慈治療照射服務
   period: '2025'
   revenue_share_pct: 56.94
 - evidence_ids:
-  - e2
-  id: seg.bpa
-  name: 治療用含硼藥物（BPA）
+  - e02
+  id: seg_bpa
+  name: 治療用含硼藥物BPA
   period: '2025'
   revenue_share_pct: 43.06
+- evidence_ids:
+  - e01
+  - e03
+  id: seg_equipment
+  name: AB-BNCT醫療設備與系統
+  period: null
+  revenue_share_pct: null
 relations:
-  subsidiaries:
-  - as_of: '2026-03-31'
+  customers:
+  - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 全資子公司；醫療器材銷售
+    detail: 含硼藥物BPA
     details:
-    - 全資子公司；醫療器材銷售
-    edge: e45f65c7d727b
+    - 含硼藥物BPA
+    edge: e1ddffb554aa0
     evidence_level: primary
-    id: org.heron-medical-nanjing
-    name: 禾榮醫療器械（南京）有限公司
+    id: org.taipei-veterans-general-hospital
+    name: 臺北榮民總醫院
+    ranking_basis: disclosed
+    share_basis: revenue
+    share_pct: 43.06
+    weight: 1
+  - as_of: '2024-11-01'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: BNCT設備及輻射防護設施，交付北榮使用
+    details:
+    - BNCT設備及輻射防護設施，交付北榮使用
+    edge: eb426c6f9f087
+    evidence_level: primary
+    id: org.hermes-epitek
+    name: 漢民科技股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
+  partners:
+  - as_of: '2025-12-15'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 新加坡AB-BNCT研發中心共建
+    details:
+    - 新加坡AB-BNCT研發中心共建
+    edge: e17f3ebd85601
+    evidence_level: primary
+    id: org.astar-bioprocessing-technology-institute
+    name: 新加坡科技研究局生物處理技術研究院（A*STAR BTI）
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-12'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: AB-BNCT技術整合及國際市場合作
+    details:
+    - AB-BNCT技術整合及國際市場合作
+    edge: e9236a4b71c68
+    evidence_level: primary
+    id: org.cosylab
+    name: Cosylab
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 探索iRT軟體於BNCT治療流程之應用
+    details:
+    - 探索iRT軟體於BNCT治療流程之應用
+    edge: ef5840e1fe6b7
+    evidence_level: primary
+    id: org.ge-precision-healthcare-llc
+    name: GE Precision Healthcare LLC
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-15'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 新加坡AB-BNCT研發中心共建
+    details:
+    - 新加坡AB-BNCT研發中心共建
+    edge: eed8f8a879de6
+    evidence_level: primary
+    id: org.national-university-hospital-singapore
+    name: 新加坡的國立大學醫院（NUH）
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-12'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 治療計畫系統與AI放射診斷影像技術整合
+    details:
+    - 治療計畫系統與AI放射診斷影像技術整合
+    edge: eed3f80c9ad59
+    evidence_level: primary
+    id: org.siemens-healthineers
+    name: Siemens Healthineers
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-09'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: AB-BNCT與免疫療法合併應用研究
+    details:
+    - AB-BNCT與免疫療法合併應用研究
+    edge: e8d0cb8ffd771
+    evidence_level: primary
+    id: tw.6949
+    name: 沛爾生醫*-創
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
   - as_of: '2026-03-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 全資子公司；醫療器材銷售
+    detail: 日本子公司
     details:
-    - 全資子公司；醫療器材銷售
+    - 日本子公司
     edge: e77faa6607bb5
     evidence_level: primary
     id: org.heron-neutron-medical-japan
@@ -77,9 +184,23 @@ relations:
   - as_of: '2026-03-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 全資子公司；醫療器材銷售
+    detail: 南京醫療器材銷售子公司
     details:
-    - 全資子公司；醫療器材銷售
+    - 南京醫療器材銷售子公司
+    edge: e973dd7310204
+    evidence_level: primary
+    id: org.heron-neutron-medical-nanjing
+    name: 禾榮醫療器械（南京）有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 新加坡子公司
+    details:
+    - 新加坡子公司
     edge: eb5de76a57fc1
     evidence_level: primary
     id: org.heron-neutron-medical-singapore
@@ -88,67 +209,253 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  suppliers:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: B10 L-BPA原料藥與製劑開發、生產
+    details:
+    - B10 L-BPA原料藥與製劑開發、生產
+    edge: e1ea6824c4242
+    evidence_level: primary
+    id: tw.1789
+    name: 神隆
+    ranking_basis: disclosed
+    share_basis: purchases
+    share_pct: 84.87
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 北榮BNCT系統所需加速器
+    details:
+    - 北榮BNCT系統所需加速器
+    edge: e7f3f51733978
+    evidence_level: primary
+    id: org.advanced-cyclotron-systems
+    name: Advanced Cyclotron Systems Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 新臺幣953,618千元（2025年度取得成本）
+    as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 投資明基醫院集團股份
+    details:
+    - 投資明基醫院集團股份
+    edge: ec4a6a700a2ed
+    event_date: '2025-10-09'
+    events:
+    - amount: 新臺幣953,618千元（2025年度取得成本）
+      detail: 投資明基醫院集團股份
+      event_date: '2025-10-09'
+    evidence_level: primary
+    id: org.benq-bm-holding-cayman-corp
+    name: BenQ BM Holding Cayman Corp.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣15.55億元（縣府公告約數）
+    as_of: '2026-10-15'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 得標後龍高鐵特定區產業專用土地
+    details:
+    - 得標後龍高鐵特定區產業專用土地
+    edge: e67e9eaf0159a
+    event_date: '2026-10-15'
+    events:
+    - amount: 新台幣15.55億元（縣府公告約數）
+      detail: 得標後龍高鐵特定區產業專用土地
+      event_date: '2026-10-15'
+    evidence_level: primary
+    id: org.miaoli-county-government
+    name: 苗栗縣政府
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣2,735,000,000元整（含稅）
+    as_of: '2026-08-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 生醫園區創新大樓租地委建工程
+    details:
+    - 生醫園區創新大樓租地委建工程
+    edge: e718e0ae71b9f
+    event_date: '2026-08-26'
+    events:
+    - amount: 新台幣2,735,000,000元整（含稅）
+      detail: 生醫園區創新大樓租地委建工程
+      event_date: '2026-08-26'
+    evidence_level: media
+    id: org.yi-dong-construction
+    name: 億東營造股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 自然人：2025年恩慈治療照射收入客戶，未揭露個別姓名。
 website: https://www.heron-neutron.com/
 tax_id: '56914371'
 incorporated: '2017-08-08'
 listed: '2025-09-15'
-as_of: '2026-10-14'
+as_of: '2026-10-25'
 confidence: ai_cross_checked
 has_research: true
 evidence:
-  tw.7799#e1:
-    locator: 印刷頁53，114年度主要產品占營業比重；單位千元、%
+  tw.7799#e01:
+    locator: 廠商編號A1305；統一編號及產品描述
+    published_date: null
+    publisher: 新竹科學園區管理局
+    quote_check: found
+    title: 新竹生物醫學園區廠商資料：禾榮科技股份有限公司
+    url: https://www.sipa.gov.tw/home.jsp?contlink=ap/manufacturers_1_3_view.jsp&dataserno=A1305&level2=Y&menudata=chinesemenu&mserno=201601210006&qsipa=04&serno=201601210006&stype=C
+  tw.7799#e02:
+    locator: 印刷頁53／PDF第57頁：114年度主要產品占營業比重
     published_date: '2026-03-31'
     publisher: 禾榮科技股份有限公司
     quote_check: found
-    title: 禾榮科技股份有限公司114年度年報
+    title: 禾榮科技114年度年報
     url: https://www.heron-neutron.com/files/InvestorRelations/3.%20ShareholderInformation/2.AnnualReport/114AnnualReport.pdf
-  tw.7799#e2:
-    locator: 印刷頁53，114年度主要產品占營業比重；單位千元、%
+  tw.7799#e03:
+    locator: 關於禾榮：在台落地生根，放眼國際
+    published_date: null
+    publisher: 禾榮科技股份有限公司
+    quote_check: unreachable
+    title: 公司理念
+    url: https://www.heron-neutron.com/about
+  tw.7799#e04:
+    locator: 印刷頁66／PDF第70頁：114年度主要供應商表
     published_date: '2026-03-31'
     publisher: 禾榮科技股份有限公司
     quote_check: found
-    title: 禾榮科技股份有限公司114年度年報
+    title: 禾榮科技114年度年報
     url: https://www.heron-neutron.com/files/InvestorRelations/3.%20ShareholderInformation/2.AnnualReport/114AnnualReport.pdf
-  tw.7799#e3:
-    locator: Our AB-BNCT Product Services
+  tw.7799#e05:
+    locator: 印刷頁70／PDF第74頁：台灣神隆委託生產契約
+    published_date: '2026-03-31'
+    publisher: 禾榮科技股份有限公司
+    quote_check: found
+    title: 禾榮科技114年度年報
+    url: https://www.heron-neutron.com/files/InvestorRelations/3.%20ShareholderInformation/2.AnnualReport/114AnnualReport.pdf
+  tw.7799#e06:
+    locator: 印刷頁66／PDF第70頁：114年度主要銷貨客戶表
+    published_date: '2026-03-31'
+    publisher: 禾榮科技股份有限公司
+    quote_check: found
+    title: 禾榮科技114年度年報
+    url: https://www.heron-neutron.com/files/InvestorRelations/3.%20ShareholderInformation/2.AnnualReport/114AnnualReport.pdf
+  tw.7799#e07:
+    locator: 印刷頁70／PDF第74頁：Advanced Cyclotron Systems Inc.買賣契約，2025/4/28起
+    published_date: '2026-03-31'
+    publisher: 禾榮科技股份有限公司
+    quote_check: found
+    title: 禾榮科技114年度年報
+    url: https://www.heron-neutron.com/files/InvestorRelations/3.%20ShareholderInformation/2.AnnualReport/114AnnualReport.pdf
+  tw.7799#e08:
+    locator: 印刷頁63／PDF第67頁：Hermes-Epitek Corp.買賣契約，2024/11/01起
     published_date: null
     publisher: 禾榮科技股份有限公司
     quote_check: found
-    title: AB-BNCT醫療設備
-    url: https://www.heron-neutron.com/products/AB-BNCT
-  tw.7799#e4:
-    locator: 第4頁，核心產品與技術／含硼藥物
-    published_date: '2026-10-13'
+    title: 禾榮科技113年度年報
+    url: https://www.heron-neutron.com/files/InvestorRelations/3.%20ShareholderInformation/2.AnnualReport/113AnnualReport.pdf
+  tw.7799#e09:
+    locator: 西門子醫療合作成果段落
+    published_date: '2026-06-12'
     publisher: 禾榮科技股份有限公司
     quote_check: found
-    title: 2026年10月13日法人說明會簡報
-    url: https://www.heron-neutron.com/files/InvestorRelations/2.%20InvestorConference/20261013_IRConferencePresentation_CN.pdf
-  tw.7799#e5:
-    locator: Core Technology
+    title: 禾榮科攜手西門子醫療與國際夥伴挺進全球精準治療新前線
+    url: https://www.heron-neutron.com/news-Post/Ew6RNZWwg9W7xdMC
+  tw.7799#e10:
+    locator: 2026-10-23合作消息介紹
     published_date: null
     publisher: 禾榮科技股份有限公司
+    quote_check: unreachable
+    title: 最新消息
+    url: https://www.heron-neutron.com/news/news
+  tw.7799#e11:
+    locator: 合作範圍段落
+    published_date: '2026-10-23'
+    publisher: 禾榮科技股份有限公司
+    quote_check: unreachable
+    title: 禾榮科技與GE HealthCare簽署合作協議，共同探索智慧放射治療技術於BNCT治療流程之應用
+    url: https://www.heron-neutron.com/news-Post/sxwmSDsejmCOPPDt
+  tw.7799#e12:
+    locator: 公告首段及合作規劃
+    published_date: '2026-03-09'
+    publisher: 禾榮科技股份有限公司
     quote_check: found
-    title: 禾榮科技：硼中子捕獲治療整體解決方案
-    url: https://www.heron-neutron.com/
-  tw.7799#e6:
-    locator: 第14頁，附註四（三）合併基礎之子公司表；南京子公司列，醫療器材銷售，持股100%
+    title: 禾榮科技與沛爾生醫簽署策略聯盟合作意向書
+    url: https://www.heron-neutron.com/news-Post/gROYvlzLg1a0iUc6
+  tw.7799#e13:
+    locator: 末段：Cosylab合作意向書
+    published_date: '2026-06-12'
+    publisher: 禾榮科技股份有限公司
+    quote_check: found
+    title: 禾榮科攜手西門子醫療與國際夥伴挺進全球精準治療新前線
+    url: https://www.heron-neutron.com/news-Post/Ew6RNZWwg9W7xdMC
+  tw.7799#e14:
+    locator: 合作協議首段
+    published_date: '2025-12-15'
+    publisher: 禾榮科技股份有限公司
+    quote_check: found
+    title: 禾榮科攜新加坡頂尖醫學、研究中心打造東南亞首座AB-BNCT研發中心
+    url: https://www.heron-neutron.com/news-Post/wlYVwIgghY0wNvAZ
+  tw.7799#e15:
+    locator: 第14頁：列入合併財報之子公司表，南京公司列及註1
     published_date: '2026-04-15'
     publisher: 禾榮科技股份有限公司
     quote_check: found
-    title: 禾榮科技股份有限公司及子公司115年第一季合併財務報告
+    title: 禾榮科技及子公司115年第一季合併財務報告
     url: https://www.heron-neutron.com/files/InvestorRelations/1.%20Financials/26Q1_FinancialReport.pdf
-  tw.7799#e7:
-    locator: 第14頁，附註四（三）合併基礎之子公司表；新加坡子公司列，醫療器材銷售，持股100%
+  tw.7799#e16:
+    locator: 第41頁附表二：新加坡及日本子公司註記
     published_date: '2026-04-15'
     publisher: 禾榮科技股份有限公司
     quote_check: found
-    title: 禾榮科技股份有限公司及子公司115年第一季合併財務報告
+    title: 禾榮科技及子公司115年第一季合併財務報告
     url: https://www.heron-neutron.com/files/InvestorRelations/1.%20Financials/26Q1_FinancialReport.pdf
-  tw.7799#e8:
-    locator: 第14頁，附註四（三）合併基礎之子公司表；日本子公司列，醫療器材銷售，持股100%
-    published_date: '2026-04-15'
+  tw.7799#e17:
+    locator: 重大訊息轉載：交易總金額
+    published_date: '2025-10-09'
+    publisher: MoneyDJ理財網
+    quote_check: found
+    title: 禾榮科董事會決議擬投資BenQ BM Holding Cayman，上限3000萬美元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=3186f8c4-aac5-463f-a5ca-cf1f88aef79c
+  tw.7799#e18:
+    locator: 第43頁附表一：BenQ BM Holding Cayman Corp.持股列
+    published_date: '2026-03-10'
     publisher: 禾榮科技股份有限公司
     quote_check: found
-    title: 禾榮科技股份有限公司及子公司115年第一季合併財務報告
-    url: https://www.heron-neutron.com/files/InvestorRelations/1.%20Financials/26Q1_FinancialReport.pdf
+    title: 禾榮科技114年度及113年度財務報告
+    url: https://www.heron-neutron.com/files/InvestorRelations/1.%20Financials/25Q4_FinancialReport.pdf
+  tw.7799#e19:
+    locator: 第45頁明細表二：BenQ投資本期增加金額，單位千元
+    published_date: '2026-03-10'
+    publisher: 禾榮科技股份有限公司
+    quote_check: found
+    title: 禾榮科技114年度及113年度財務報告
+    url: https://www.heron-neutron.com/files/InvestorRelations/1.%20Financials/25Q4_FinancialReport.pdf
+  tw.7799#e20:
+    locator: 重大訊息轉載第5至6項及其他敘明事項
+    published_date: '2026-08-26'
+    publisher: MoneyDJ理財網
+    quote_check: found
+    title: 禾榮科公告以租地委建方式簽訂興建禾榮科技生醫園區創新大樓之工程合約
+    url: https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=f743ca50-acfd-418e-9a53-908c0c0bc3ab
+  tw.7799#e21:
+    locator: 新聞首段：土地標售結果
+    published_date: '2026-10-15'
+    publisher: 苗栗縣政府工商發展處
+    quote_check: found
+    title: 突破42次流標！禾榮科技進駐後龍高鐵特區，苗栗生醫布局再添動能
+    url: https://www.miaoli.gov.tw/economic_development/News_Content.aspx?n=1028&s=1004635

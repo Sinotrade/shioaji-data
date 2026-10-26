@@ -18,33 +18,48 @@ industry:
   l3_name: 筆電與桌機品牌、代工
   l3_name_en: Notebooks & Desktops (Brand / ODM)
 primary_chain_position: midstream
-summary_short: 主要從事筆記型電腦設計製造，另經營百腦匯商場租賃業務。
-summary_long: 藍天以筆記型電腦研發、設計、生產與銷售為主要業務，產品包括高階電競、商務及創作者應用機種，另開發迷你電腦。2025年度電腦部門銷貨收入占合併營收85%，百腦匯商場租賃及其他營業收入占15%。商務與創作者產品包含V550ENx/KNx/-D系列，迷你電腦包含R100系列。海外子公司分別承接製造基地與商場轉投資業務，其中昆山筆電生產基地透過薩摩亞子公司投資，新加坡子公司則轉投資百腦匯商場。
+summary_short: 以客製化筆電設計製造為主，另經營百腦匯商場租賃。
+summary_long: 藍天主要從事筆記型電腦設計與製造，聚焦白牌市場，以少量多樣方式提供客製化中高階及電競產品，由台北研發接單、昆山工廠製造出貨。2025年電腦部門占合併營收85%，百腦匯商場租賃及其他收入占15%。旗艦X580／X585系列採用Intel Arrow Lake-HX處理器及NVIDIA GeForce RTX 50系列筆電GPU，記憶體最高可擴充至192GB。生產基地包含子公司凱博電腦（昆山）。除筆電與商場業務外，2025年取得宏匯思源辦公室使用權資產；2026年董事會核准對台北雙星分批增資，上限新台幣50億元。
 segments:
 - evidence_ids:
-  - e1
-  id: computer
+  - e2
+  id: nb
   name: 電腦部門
   period: '2025'
   revenue_share_pct: 85
 - evidence_ids:
-  - e1
+  - e2
   id: buynow
   name: 百腦匯商場租賃及其他營業收入
   period: '2025'
   revenue_share_pct: 15
 relations:
-  subsidiaries:
-  - as_of: '2025-12-31'
+  partners:
+  - as_of: '2024-12-03'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 轉投資百腦匯商場的海外子公司
+    detail: Intel Arc A系列行動顯示平台ODM設計合作
     details:
-    - 轉投資百腦匯商場的海外子公司
-    edge: e8f148a2e96fd
+    - Intel Arc A系列行動顯示平台ODM設計合作
+    edge: ec9a0e47f33ee
     evidence_level: primary
-    id: org.clevo-computer-singapore-pte-ltd
-    name: CLEVO COMPUTER SINGAPORE PTE LTD.
+    id: us.INTC
+    name: Intel
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2024-12-25'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 百腦匯事業相關子公司
+    details:
+    - 百腦匯事業相關子公司
+    edge: edf6601b1cbee
+    evidence_level: primary
+    id: org.buynow-china-investment
+    name: 百腦匯(中國)投資有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -52,85 +67,238 @@ relations:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 持有昆山筆電製造基地的海外子公司
+    detail: 直接持股100%的海外子公司
     details:
-    - 持有昆山筆電製造基地的海外子公司
-    edge: e363c1efd6206
+    - 直接持股100%的海外子公司
+    edge: e624aa8e65d5b
     evidence_level: primary
-    id: org.kapok-computer-samoa-corporation
+    id: org.clevo-cayman-islands-holding
+    name: CLEVO (CAYMAN ISLANDS) HOLDING COMPANY
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2023-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 昆山筆電生產基地子公司
+    details:
+    - 昆山筆電生產基地子公司
+    edge: ee4ceee642293
+    evidence_level: primary
+    id: org.kapok-computer-kunshan
+    name: 凱博電腦(昆山)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的海外子公司
+    details:
+    - 直接持股100%的海外子公司
+    edge: e6705dbf6ba64
+    evidence_level: primary
+    id: org.kapok-computer-samoa
     name: KAPOK COMPUTER(SAMOA) CORPORATION
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
+  transactions:
+  - amount: NTD170,025,212元
+    as_of: '2025-03-10'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 取得新莊辦公室及停車位使用權資產
+    details:
+    - 取得新莊辦公室及停車位使用權資產
+    edge: eda4712f6f890
+    event_date: '2025-03-10'
+    events:
+    - amount: NTD170,025,212元
+      detail: 取得新莊辦公室及停車位使用權資產
+      event_date: '2025-03-10'
+    evidence_level: primary
+    id: org.hongwell-siyuan
+    name: 宏匯思源股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 人民幣6,333,608.49元
+    as_of: '2024-12-25'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司百腦匯（中國）投資取得上海辦公室使用權資產
+    details:
+    - 子公司百腦匯（中國）投資取得上海辦公室使用權資產
+    edge: e2a2b0c8b4857
+    event_date: '2024-12-25'
+    events:
+    - amount: 人民幣6,333,608.49元
+      detail: 子公司百腦匯（中國）投資取得上海辦公室使用權資產
+      event_date: '2024-12-25'
+    evidence_level: primary
+    id: org.shanghai-hongwell-property
+    name: 上海宏匯置業有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: NTD 5,000,000仟元
+    as_of: '2026-08-05'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 董事會核准分批增資額度
+    details:
+    - 董事會核准分批增資額度
+    edge: e9ef1483fd6aa
+    event_date: '2026-08-05'
+    events:
+    - amount: NTD 5,000,000仟元
+      detail: 董事會核准分批增資額度
+      event_date: '2026-08-05'
+    evidence_level: primary
+    id: org.taipei-twin-towers
+    name: 台北雙星股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 區域性通路商及Local King客戶群：法說簡報未逐一具名。
+- 2025年報主要供應商以甲廠商、乙廠商代稱，不能推認為Intel或NVIDIA。
+- 2025年報主要客戶以甲客戶代稱，未辨識其正式名稱。
+- SSD及記憶體供應商品牌：產品規格未具名。
 website: www.clevo.com.tw
 tax_id: 09424319
 incorporated: '1983-10-04'
 listed: '1997-04-02'
-as_of: '2026-10-15'
+as_of: '2026-10-26'
 confidence: ai_cross_checked
 has_research: true
 evidence:
-  tw.2362#e1:
-    locator: 第71頁，業務範圍／營業比重
+  tw.2362#e10:
+    locator: 首段，2023年度揭露範圍與生產基地
     published_date: null
     publisher: 藍天電腦股份有限公司
     quote_check: found
-    title: 藍天電腦股份有限公司114年度年報
+    title: 重大主題鑑別流程
+    url: https://www.clevo.com.tw/tw/esg/esg_materiality
+  tw.2362#e11:
+    locator: PDF第68頁，印刷頁65，2025-12-31轉投資持股表第5項；本公司投資欄
+    published_date: null
+    publisher: 藍天電腦股份有限公司
+    quote_check: found
+    title: 藍天電腦股份有限公司2025年度年報
     url: https://www.clevo.com.tw/tw/download_files/QBXo70YDJethw9zFpUBCbPkbXwawgAlp.pdf
-  tw.2362#e2:
-    locator: 第71頁，業務主要內容
+  tw.2362#e12:
+    locator: PDF第68頁，印刷頁65，2025-12-31轉投資持股表第4項；本公司投資欄
     published_date: null
     publisher: 藍天電腦股份有限公司
     quote_check: found
-    title: 藍天電腦股份有限公司114年度年報
+    title: 藍天電腦股份有限公司2025年度年報
+    url: https://www.clevo.com.tw/tw/download_files/QBXo70YDJethw9zFpUBCbPkbXwawgAlp.pdf
+  tw.2362#e13:
+    locator: 公告第1至4、21及24點：交易標的、金額、對象、用途及董事會日期
+    published_date: '2025-03-11'
+    publisher: 公開資訊觀測站重大訊息公告，MoneyDJ轉載
+    quote_check: found
+    title: 藍天租賃新北市新莊區思源路使用權資產，計約1.7億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=2bd5eb49-1e3f-4f8f-bf0a-a08a73d044f5
+  tw.2362#e14:
+    locator: 公告第3、5及11點：董事會日期、交易金額及分批付款條件
+    published_date: '2026-08-05'
+    publisher: 公開資訊觀測站重大訊息公告，MoneyDJ轉載
+    quote_check: found
+    title: 藍天董事會通過分批增資台北雙星，計50億元
+    url: https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=28e1f6f1-209d-4d8d-8ff0-20d662598e87
+  tw.2362#e15:
+    locator: 公告第6點，交易對象及關係
+    published_date: '2026-08-05'
+    publisher: 公開資訊觀測站重大訊息公告，MoneyDJ轉載
+    quote_check: found
+    title: 藍天董事會通過分批增資台北雙星，計50億元
+    url: https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=28e1f6f1-209d-4d8d-8ff0-20d662598e87
+  tw.2362#e16:
+    locator: 公告主旨，辨識實際交易子公司
+    published_date: '2024-12-25'
+    publisher: 公開資訊觀測站重大訊息公告，MoneyDJ轉載
+    quote_check: found
+    title: 藍天：百腦匯(中國)投資取得上海市徐匯區使用權資產，計約633萬人民幣
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=ed467d72-4a8c-4e40-ba01-1fb195db92ec
+  tw.2362#e17:
+    locator: 公告第3點，使用權資產金額
+    published_date: '2024-12-25'
+    publisher: 公開資訊觀測站重大訊息公告，MoneyDJ轉載
+    quote_check: found
+    title: 藍天：百腦匯(中國)投資取得上海市徐匯區使用權資產，計約633萬人民幣
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=ed467d72-4a8c-4e40-ba01-1fb195db92ec
+  tw.2362#e18:
+    locator: 公告第4點；交易用途及日期另見第21、24點
+    published_date: '2024-12-25'
+    publisher: 公開資訊觀測站重大訊息公告，MoneyDJ轉載
+    quote_check: found
+    title: 藍天：百腦匯(中國)投資取得上海市徐匯區使用權資產，計約633萬人民幣
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=ed467d72-4a8c-4e40-ba01-1fb195db92ec
+  tw.2362#e2:
+    locator: PDF第74頁，印刷頁71，營運概況／業務範圍／營業比重
+    published_date: null
+    publisher: 藍天電腦股份有限公司
+    quote_check: found
+    title: 藍天電腦股份有限公司2025年度年報
     url: https://www.clevo.com.tw/tw/download_files/QBXo70YDJethw9zFpUBCbPkbXwawgAlp.pdf
   tw.2362#e3:
-    locator: 關於藍天介紹
-    published_date: null
+    locator: 簡報第15頁，NB事業－聚焦白牌NB市場
+    published_date: '2025-12-26'
     publisher: 藍天電腦股份有限公司
     quote_check: found
-    title: 關於藍天
-    url: https://www.clevo.com.tw/tw/load_page/about_clevo
+    title: 藍天電腦法人說明會簡報
+    url: https://www.clevo.com.tw/tw/download_files/UVfkZZGw85hTy8MLa80C2xquY4LUAiuu.pdf
   tw.2362#e4:
-    locator: 第83頁，技術及研發概況／V550ENx/KNx/-D(Pantone)
-    published_date: null
+    locator: 簡報第15頁，筆電營運模式
+    published_date: '2025-12-26'
     publisher: 藍天電腦股份有限公司
     quote_check: found
-    title: 藍天電腦股份有限公司114年度年報
-    url: https://www.clevo.com.tw/tw/download_files/QBXo70YDJethw9zFpUBCbPkbXwawgAlp.pdf
+    title: 藍天電腦法人說明會簡報
+    url: https://www.clevo.com.tw/tw/download_files/UVfkZZGw85hTy8MLa80C2xquY4LUAiuu.pdf
   tw.2362#e5:
-    locator: 第83頁，技術及研發概況／產品系列
+    locator: Key Features，處理器
     published_date: null
     publisher: 藍天電腦股份有限公司
     quote_check: found
-    title: 藍天電腦股份有限公司114年度年報
-    url: https://www.clevo.com.tw/tw/download_files/QBXo70YDJethw9zFpUBCbPkbXwawgAlp.pdf
+    title: X580_585WNx-G(-D) Series
+    url: https://www.clevo.com.tw/product/product_content/1/101
   tw.2362#e6:
-    locator: 第65頁，轉投資事業綜合持股比例表，2025年12月31日
+    locator: Key Features，筆電GPU
     published_date: null
     publisher: 藍天電腦股份有限公司
     quote_check: found
-    title: 藍天電腦股份有限公司114年度年報
-    url: https://www.clevo.com.tw/tw/download_files/QBXo70YDJethw9zFpUBCbPkbXwawgAlp.pdf
+    title: X580_585WNx-G(-D) Series
+    url: https://www.clevo.com.tw/product/product_content/1/101
   tw.2362#e7:
-    locator: 第102頁，最近年度轉投資政策／KAPOK COMPUTER(SAMOA) CORPORATION
+    locator: Key Features，記憶體擴充
     published_date: null
     publisher: 藍天電腦股份有限公司
     quote_check: found
-    title: 藍天電腦股份有限公司114年度年報
-    url: https://www.clevo.com.tw/tw/download_files/QBXo70YDJethw9zFpUBCbPkbXwawgAlp.pdf
+    title: X580_585WNx-G(-D) Series
+    url: https://www.clevo.com.tw/product/product_content/1/101
   tw.2362#e8:
-    locator: 第65頁，轉投資事業綜合持股比例表，2025年12月31日
+    locator: Key Features，SSD擴充
     published_date: null
     publisher: 藍天電腦股份有限公司
     quote_check: found
-    title: 藍天電腦股份有限公司114年度年報
-    url: https://www.clevo.com.tw/tw/download_files/QBXo70YDJethw9zFpUBCbPkbXwawgAlp.pdf
+    title: X580_585WNx-G(-D) Series
+    url: https://www.clevo.com.tw/product/product_content/1/101
   tw.2362#e9:
-    locator: 第102頁，最近年度轉投資政策／CLEVO COMPUTER SINGAPORE PTE LTD.
+    locator: Resolution，ODM partners名單；頁面標示最後檢閱日2024-12-03
     published_date: null
-    publisher: 藍天電腦股份有限公司
-    quote_check: found
-    title: 藍天電腦股份有限公司114年度年報
-    url: https://www.clevo.com.tw/tw/download_files/QBXo70YDJethw9zFpUBCbPkbXwawgAlp.pdf
+    publisher: Intel Corporation
+    quote_check: unreachable
+    title: Which Manufacturers Will Release Laptops with Intel Arc A-Series Graphics?
+    url: https://www.intel.com/content/www/us/en/support/articles/000090296/graphics.html

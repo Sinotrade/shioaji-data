@@ -26,134 +26,274 @@ chain_stage:
   stage_name: 金融服務
   tier: not_applicable
 primary_chain_position: not_applicable
-summary_short: 經營財產保險，以汽車險為主要保費來源，另提供火災、工程、責任及運輸保險。
-summary_long: 新光產物保險以財產保險為主要業務，2025年度簽單保費組成以車險45.50%最高，其次為火險18.88%及工程險16.24%；責任險、水險與傷健險分別占8.60%、5.18%及5.59%。汽車保險涵蓋任意車體、竊盜與責任保障，以及強制汽車責任險。住宅商品提供火災及基本地震保障；工程商品涵蓋營造與安裝工程綜合保險、營建機具及電子設備險。另提供僱主意外責任保險與貨物運輸險，貨物保障涵蓋海上、航空、內陸運輸及郵寄。
+summary_short: 經營車險、火險、工程險等產物保險，以承保業務收取保費。
+summary_long: 新產經營產物保險，業務涵蓋車險、火險、水險、工程險、責任險及傷健險。2025年承保及再保分入保費中，車險占46.32%，為最大險別，火險及工程險分別占18.76%與15.89%。具名再保險往來包括Swiss Re Asia香港分公司與Starr新加坡公司。企業承保案例包括台中新光三越商業火險及公共意外責任險，另承保台新銀行信用卡持卡人的海外旅遊保障。2026年董事會決議以27.6億元向新光人壽處分台北市不動產及相關都更權益，第二季財報仍記載為預計簽約。
 segments:
 - evidence_ids:
-  - e3
-  id: seg_auto
+  - e1
+  id: seg_car
   name: 車險
-  period: 2025年度（簽單保費收入比重）
-  revenue_share_pct: 45.5
+  period: '2025'
+  revenue_share_pct: null
 - evidence_ids:
-  - e4
+  - e2
   id: seg_fire
   name: 火險
-  period: 2025年度（簽單保費收入比重）
-  revenue_share_pct: 18.88
+  period: '2025'
+  revenue_share_pct: null
 - evidence_ids:
-  - e5
-  id: seg_engineering
-  name: 工程險
-  period: 2025年度（簽單保費收入比重）
-  revenue_share_pct: 16.24
-- evidence_ids:
-  - e6
-  id: seg_liability
-  name: 責任險
-  period: 2025年度（簽單保費收入比重）
-  revenue_share_pct: 8.6
-- evidence_ids:
-  - e7
-  id: seg_health_accident
-  name: 傷健險
-  period: 2025年度（簽單保費收入比重）
-  revenue_share_pct: 5.59
-- evidence_ids:
-  - e8
+  - e3
   id: seg_marine
   name: 水險
-  period: 2025年度（簽單保費收入比重）
-  revenue_share_pct: 5.18
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e4
+  id: seg_engineering
+  name: 工程險
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e5
+  id: seg_liability
+  name: 責任險
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e6
+  id: seg_accident_health
+  name: 傷健險
+  period: '2025'
+  revenue_share_pct: null
+relations:
+  customers:
+  - as_of: '2025-02-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 台中店商業火險及公共意外責任險
+    details:
+    - 台中店商業火險及公共意外責任險
+    edge: e5e6e0ff8ae3a
+    evidence_level: media
+    id: org.shin-kong-mitsukoshi
+    name: 新光三越百貨股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-25'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 信用卡海外旅遊全程保障保險
+    details:
+    - 信用卡海外旅遊全程保障保險
+    edge: ead93bc24575f
+    evidence_level: primary
+    id: org.taishin-international-bank
+    name: 台新國際商業銀行股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  partners:
+  - as_of: '2025-10-16'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 新光產物大樓都市更新權利變換計畫
+    details:
+    - 新光產物大樓都市更新權利變換計畫
+    edge: edcc1ef30e81d
+    evidence_level: primary
+    id: org.china-real-estate-management
+    name: 中國建築經理股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 分出再保險保障
+    details:
+    - 分出再保險保障
+    edge: ea6cdb30a66cb
+    evidence_level: primary
+    id: org.starr-international-insurance-singapore
+    name: Starr International Insurance (Singapore) Pte Ltd
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 分出再保險保障
+    details:
+    - 分出再保險保障
+    edge: e9b511d252f6c
+    evidence_level: primary
+    id: org.swiss-re-asia
+    name: Swiss Re Asia Pte. Ltd., Hong Kong Branch
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 不動產租賃
+    details:
+    - 不動產租賃
+    edge: e52208c9732d7
+    evidence_level: primary
+    id: org.新光人壽保險股份有限公司
+    name: 新光人壽保險股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 各險比例型及非比例型再保
+    details:
+    - 各險比例型及非比例型再保
+    edge: ea7e59a6e63ad
+    evidence_level: primary
+    id: tw.2851
+    name: 中再保
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 新台幣2,760,000千元
+    as_of: '2026-08-19'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 處分台北市不動產及附隨都更權益之董事會決議
+    details:
+    - 處分台北市不動產及附隨都更權益之董事會決議
+    edge: efd0e2f65c7a5
+    event_date: '2026-07-24'
+    events:
+    - amount: 新台幣2,760,000千元
+      detail: 處分台北市不動產及附隨都更權益之董事會決議
+      event_date: '2026-07-24'
+    evidence_level: primary
+    id: org.新光人壽保險股份有限公司
+    name: 新光人壽保險股份有限公司
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 其他關係人：財報保費收入按合計揭露，無法逐家確認客戶身分及收入。
 website: www.skinsurance.com.tw
 tax_id: 03458403
 incorporated: '1963-04-26'
 listed: '2000-05-22'
-as_of: '2026-10-14'
+as_of: '2026-10-25'
 confidence: ai_cross_checked
 has_research: true
 evidence:
+  tw.2850#e1:
+    locator: 第76頁，承保及再保分入業務之保費比重，114年度車險列；金額單位為新臺幣千元
+    published_date: '2026-03-13'
+    publisher: 新光產物保險股份有限公司
+    quote_check: found
+    title: 新光產物保險股份有限公司114及113年度財務報告
+    url: https://www.skinsurance.com.tw/SKI/DocUpLoad/114S4.pdf
   tw.2850#e10:
-    locator: 住宅火災險／商品標題
+    locator: 2026年海外旅遊全程保障保險，投保說明及要保人欄
     published_date: null
-    publisher: 新光產物保險股份有限公司
+    publisher: 台新國際商業銀行股份有限公司
     quote_check: found
-    title: 新光產物保險－住宅火險及基本地震險
-    url: https://www.skinsurance.com.tw/SKI/Doc.aspx?ST=&sID=1834&uID=22
+    title: 2026年海外旅遊全程保障保險
+    url: https://www.taishinbank.com.tw/TSB/personal/credit/intro/rights/insurance/right0203/
   tw.2850#e11:
-    locator: 理賠申請應檢附文件／險種欄
-    published_date: null
+    locator: 第113頁，關係人交易之租賃附註，租賃負債表；金額單位為新臺幣千元
+    published_date: '2026-08-19'
     publisher: 新光產物保險股份有限公司
     quote_check: found
-    title: 工程險理賠
-    url: https://www.skinsurance.com.tw/SKI/Doc.aspx?ST=&sID=3961&uID=35
+    title: 新光產物保險股份有限公司115年第二季財務報告
+    url: https://www.skinsurance.com.tw/SKI/DocUpLoad/115S2.pdf
   tw.2850#e12:
-    locator: 商品標題及介紹
-    published_date: null
-    publisher: 新光產物保險股份有限公司
+    locator: 公告第5、6項
+    published_date: '2025-10-16'
+    publisher: 公開資訊觀測站重大訊息公告（MoneyDJ轉載）
     quote_check: found
-    title: 新光產物保險－僱主意外責任保險
-    url: https://www.skinsurance.com.tw/SKI/Doc.aspx?ST=&sID=1656&uID=24
+    title: 新產參與新光產物大樓都市更新事業計畫及權利變換計畫案，更正事實發生日
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=71e735ea-c42f-4f2f-80f5-11d094284fe9
   tw.2850#e13:
-    locator: 商品特色
-    published_date: null
+    locator: 公告第1、5、6項，標的物、交易金額及相對人
+    published_date: '2026-07-24'
+    publisher: 公開資訊觀測站重大訊息公告（鉅亨網轉載）
+    quote_check: found
+    title: 新產：公告本公司董事會決議通過處分台北市不動產
+    url: https://news.cnyes.com/news/print/6545222
+  tw.2850#e14:
+    locator: 第114頁，附註十一重大之期後事項，記載7月24日決議及預計簽約
+    published_date: '2026-08-19'
     publisher: 新光產物保險股份有限公司
     quote_check: found
-    title: 新光產物保險－貨物運輸險
-    url: https://www.skinsurance.com.tw/SKI/Doc.aspx?ST=&sID=1660&uID=25
+    title: 新光產物保險股份有限公司115年第二季財務報告
+    url: https://www.skinsurance.com.tw/SKI/DocUpLoad/115S2.pdf
   tw.2850#e2:
-    locator: 印刷頁79，肆、營運概況／業務範圍
-    published_date: null
+    locator: 第76頁，承保及再保分入業務之保費比重，114年度火險列；金額單位為新臺幣千元
+    published_date: '2026-03-13'
     publisher: 新光產物保險股份有限公司
     quote_check: found
-    title: 114年度年報
-    url: https://www.skinsurance.com.tw/SKI/DocUpLoad/114%E5%B9%B4%E4%B8%AD%E6%96%87%E5%B9%B4%E5%A0%B1.pdf
+    title: 新光產物保險股份有限公司114及113年度財務報告
+    url: https://www.skinsurance.com.tw/SKI/DocUpLoad/114S4.pdf
   tw.2850#e3:
-    locator: 印刷頁79，一一四年度營業比重表／車險列
-    published_date: null
+    locator: 第76頁，承保及再保分入業務之保費比重，114年度水險列；金額單位為新臺幣千元
+    published_date: '2026-03-13'
     publisher: 新光產物保險股份有限公司
     quote_check: found
-    title: 114年度年報
-    url: https://www.skinsurance.com.tw/SKI/DocUpLoad/114%E5%B9%B4%E4%B8%AD%E6%96%87%E5%B9%B4%E5%A0%B1.pdf
+    title: 新光產物保險股份有限公司114及113年度財務報告
+    url: https://www.skinsurance.com.tw/SKI/DocUpLoad/114S4.pdf
   tw.2850#e4:
-    locator: 印刷頁79，一一四年度營業比重表／火險列
-    published_date: null
+    locator: 第76頁，承保及再保分入業務之保費比重，114年度工程險列；金額單位為新臺幣千元
+    published_date: '2026-03-13'
     publisher: 新光產物保險股份有限公司
     quote_check: found
-    title: 114年度年報
-    url: https://www.skinsurance.com.tw/SKI/DocUpLoad/114%E5%B9%B4%E4%B8%AD%E6%96%87%E5%B9%B4%E5%A0%B1.pdf
+    title: 新光產物保險股份有限公司114及113年度財務報告
+    url: https://www.skinsurance.com.tw/SKI/DocUpLoad/114S4.pdf
   tw.2850#e5:
-    locator: 印刷頁79，一一四年度營業比重表／工程險列
-    published_date: null
+    locator: 第76頁，承保及再保分入業務之保費比重，114年度責任險列；金額單位為新臺幣千元
+    published_date: '2026-03-13'
     publisher: 新光產物保險股份有限公司
     quote_check: found
-    title: 114年度年報
-    url: https://www.skinsurance.com.tw/SKI/DocUpLoad/114%E5%B9%B4%E4%B8%AD%E6%96%87%E5%B9%B4%E5%A0%B1.pdf
+    title: 新光產物保險股份有限公司114及113年度財務報告
+    url: https://www.skinsurance.com.tw/SKI/DocUpLoad/114S4.pdf
   tw.2850#e6:
-    locator: 印刷頁79，一一四年度營業比重表／責任險列
-    published_date: null
+    locator: 第76頁，承保及再保分入業務之保費比重，114年度傷健險列；金額單位為新臺幣千元
+    published_date: '2026-03-13'
     publisher: 新光產物保險股份有限公司
     quote_check: found
-    title: 114年度年報
-    url: https://www.skinsurance.com.tw/SKI/DocUpLoad/114%E5%B9%B4%E4%B8%AD%E6%96%87%E5%B9%B4%E5%A0%B1.pdf
+    title: 新光產物保險股份有限公司114及113年度財務報告
+    url: https://www.skinsurance.com.tw/SKI/DocUpLoad/114S4.pdf
   tw.2850#e7:
-    locator: 印刷頁79，一一四年度營業比重表／傷健險列
-    published_date: null
+    locator: 第172頁，第九項：最近一年度再保費支出占總保費收入百分之一以上之往來再保險業名稱及其信用評等
+    published_date: '2026-03-13'
     publisher: 新光產物保險股份有限公司
     quote_check: found
-    title: 114年度年報
-    url: https://www.skinsurance.com.tw/SKI/DocUpLoad/114%E5%B9%B4%E4%B8%AD%E6%96%87%E5%B9%B4%E5%A0%B1.pdf
+    title: 新光產物保險股份有限公司114及113年度財務報告
+    url: https://www.skinsurance.com.tw/SKI/DocUpLoad/114S4.pdf
   tw.2850#e8:
-    locator: 印刷頁79，一一四年度營業比重表／水險列
-    published_date: null
+    locator: 第172頁，第九項再保險業者表，Starr International Insurance (Singapore) Pte Ltd列
+    published_date: '2026-03-13'
     publisher: 新光產物保險股份有限公司
     quote_check: found
-    title: 114年度年報
-    url: https://www.skinsurance.com.tw/SKI/DocUpLoad/114%E5%B9%B4%E4%B8%AD%E6%96%87%E5%B9%B4%E5%A0%B1.pdf
+    title: 新光產物保險股份有限公司114及113年度財務報告
+    url: https://www.skinsurance.com.tw/SKI/DocUpLoad/114S4.pdf
   tw.2850#e9:
-    locator: 印刷頁79，目前之商品項目／汽車保險
-    published_date: null
-    publisher: 新光產物保險股份有限公司
+    locator: 陳俐妏報導，正文第二段
+    published_date: '2025-02-13'
+    publisher: 太報
     quote_check: found
-    title: 114年度年報
-    url: https://www.skinsurance.com.tw/SKI/DocUpLoad/114%E5%B9%B4%E4%B8%AD%E6%96%87%E5%B9%B4%E5%A0%B1.pdf
+    title: 台中新光三越氣爆 金管會:4家產險承保商業火險、公共意外險新產獨保
+    url: https://www.taisounds.com/news/content/76/173389

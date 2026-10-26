@@ -17,60 +17,147 @@ industry:
   l3: comp.connector
   l3_name: 連接器與線材
   l3_name_en: Connectors & Cables
-chain: chain.server
-chain_stage:
-  agreement: both
-  also: []
-  reason: 連接器占營收61.62%，提供伺服器MCIO與高速連接器。
-  stage: components
-  stage_name: 板卡、電源、散熱、機構件
-  tier: midstream
-primary_chain_position: midstream
-summary_short: 研發製造連接器、連接線組與金屬沖壓件，應用於伺服器、車用及電子設備。
-summary_long: 宏致主要經營連接器、連接線組及金屬沖壓件。2025年連接器占營收61.62%，連接線組占16.88%，金屬沖壓件占16.07%，其他營業收入占5.43%。MCIO系列提供高密度、低高度的高速連接方案，可用於伺服器與網通設備。公司開發GB200至GB300架構所需的高速連接器，也提供電動車充電器、充電器插座及高電壓連接器。集團的MEC龍翰事業群製造高速傳輸線材、模組與車用線束，KYN廣迎新事業群製造金屬結構件。
+primary_chain_position: not_applicable
+summary_short: 以連接器為主要收入，另製造連接線組、金屬沖壓件及高速互連產品。
+summary_long: 宏致研發、製造及銷售連接器、連接線組與金屬沖壓件，產品應用涵蓋筆電與電腦周邊、消費電子、汽車電子、雲端伺服器、網通及工業設備。2025年連接器占營收61.62%，連接線組占16.88%，金屬沖壓件占16.07%。高速產品包括MCIO連接器，公司亦布局AI伺服器機櫃用連接線。2026年具名報導指出，亞馬遜AWS與Meta為雲端服務客戶，並向Bloom Energy供應電廠系統高功率線束。集團子公司包括Genesis兩家公司及龍翰科技；近年另有珠海廠工程、廣迎新股權買回及南通大地部分持股處分。
 segments:
 - evidence_ids:
-  - e2
-  id: connectors
+  - e01
+  id: seg_connector
   name: 連接器
   period: '2025'
   revenue_share_pct: 61.62
 - evidence_ids:
-  - e3
-  id: cable_assemblies
+  - e01
+  id: seg_cable
   name: 連接線組
   period: '2025'
   revenue_share_pct: 16.88
 - evidence_ids:
-  - e4
-  id: metal_stampings
+  - e01
+  id: seg_stamping
   name: 金屬沖壓件
   period: '2025'
   revenue_share_pct: 16.07
 - evidence_ids:
-  - e5
-  id: other_revenue
+  - e01
+  id: seg_other
   name: 其他營業收入
   period: '2025'
   revenue_share_pct: 5.43
-main_theme: theme.ev
+main_theme: theme.ai_server
 themes:
-- also: []
-  stage: parts
-  theme: theme.ev
-  tier: midstream
 - also: []
   stage: components
   theme: theme.ai_server
   tier: midstream
 relations:
+  customers:
+  - as_of: '2019-10-03'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 電子代工客戶；歷史揭露
+    details:
+    - 電子代工客戶；歷史揭露
+    edge: ec80d54afa944
+    evidence_level: media
+    id: tw.2324
+    name: 仁寶
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2019-10-03'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 電子代工客戶；歷史揭露
+    details:
+    - 電子代工客戶；歷史揭露
+    edge: edd3c1e6f3773
+    evidence_level: media
+    id: tw.2382
+    name: 廣達
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 雲端服務客戶之連接產品
+    details:
+    - 雲端服務客戶之連接產品
+    edge: e61cb470877d5
+    evidence_level: media
+    id: us.AMZN
+    name: Amazon
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-09-04'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 電廠供電系統高功率線束
+    details:
+    - 電廠供電系統高功率線束
+    edge: e9ff2e3582baf
+    evidence_level: media
+    id: us.BE
+    name: Bloom Energy
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 雲端服務客戶之連接產品
+    details:
+    - 雲端服務客戶之連接產品
+    edge: e6bc3e0a2448c
+    evidence_level: media
+    id: us.META
+    name: Meta
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持股100%的美國子公司
+    detail: 2024年新設香港子公司
     details:
-    - 直接持股100%的美國子公司
+    - 2024年新設香港子公司
+    edge: e3c3b84c54bff
+    evidence_level: primary
+    id: org.aces-hong-kong
+    name: 宏致(香港)股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: Genesis投資控股子公司
+    details:
+    - Genesis投資控股子公司
+    edge: e559969ebc8e1
+    evidence_level: primary
+    id: org.genesis-holding-company
+    name: GENESIS HOLDING COMPANY
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 美國電子零組件子公司
+    details:
+    - 美國電子零組件子公司
     edge: ebcb1f42c99f2
     evidence_level: primary
     id: org.genesis-technology-usa
@@ -82,12 +169,12 @@ relations:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持股100%的子公司
+    detail: 電子零組件子公司
     details:
-    - 直接持股100%的子公司
-    edge: ea276a66eb88f
+    - 電子零組件子公司
+    edge: eb1efadd146c4
     evidence_level: primary
-    id: org.kuang-ying-new-industrial
+    id: org.guang-ying-new-industry
     name: 廣迎新工業股份有限公司
     ranking_basis: unranked
     share_basis: null
@@ -96,9 +183,9 @@ relations:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持股99.86%的子公司
+    detail: 連接線組事業子公司
     details:
-    - 直接持股99.86%的子公司
+    - 連接線組事業子公司
     edge: eced97a4fefc2
     evidence_level: primary
     id: org.mec-imex
@@ -122,95 +209,165 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  transactions:
+  - amount: 人民幣186,880,000元整（含稅）
+    as_of: '2024-07-11'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司珠海宏致自地委建廠房工程
+    details:
+    - 子公司珠海宏致自地委建廠房工程
+    edge: e8501f33c313e
+    event_date: '2024-07-11'
+    events:
+    - amount: 人民幣186,880,000元整（含稅）
+      detail: 子公司珠海宏致自地委建廠房工程
+      event_date: '2024-07-11'
+    evidence_level: primary
+    id: org.nantong-sijian-group
+    name: 南通四建集團有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 未具名北美CSP及ASIC平台客戶。
+- 年報以代號揭露的塑膠粒、銅材、端子、連接器及線材供應商。
+- 廣迎新工業股權買回交易之未具名少數股東。
+- 傑生科技股權出售交易之未具名非關係人買方。
+- 南通大地股票處分交易未揭露具名買方。
 website: www.acesconn.com
 tax_id: '97257738'
 incorporated: '1996-11-07'
 listed: '2009-03-26'
-as_of: '2026-10-15'
+as_of: '2026-10-26'
 confidence: ai_cross_checked
 has_research: true
 evidence:
+  tw.3605#e01:
+    locator: 印刷第80頁，營業比重；欄位依序為2024、2025年收入及占比
+    published_date: '2026-05-08'
+    publisher: 宏致電子股份有限公司
+    quote_check: found
+    title: 宏致電子股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52353/2026/RNS/52353_rns_2026-06-04_07bb8e48-fc59-40f7-96bd-9af1b1848628.pdf
+  tw.3605#e02:
+    locator: 印刷第80頁，公司目前之商品項目
+    published_date: '2026-05-08'
+    publisher: 宏致電子股份有限公司
+    quote_check: found
+    title: 宏致電子股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52353/2026/RNS/52353_rns_2026-06-04_07bb8e48-fc59-40f7-96bd-9af1b1848628.pdf
+  tw.3605#e03:
+    locator: MCIO／Features
+    published_date: null
+    publisher: 宏致電子股份有限公司
+    quote_check: found
+    title: ACES－MCIO, High speed
+    url: https://www.acesconn.com/series_list/MCIO/82
+  tw.3605#e04:
+    locator: 第15頁，連接器應用示意圖
+    published_date: '2025-09-10'
+    publisher: 宏致電子股份有限公司
+    quote_check: found
+    title: 宏致電子2025年9月法人說明會簡報
+    url: https://www.acesconn.com/upload/investor/%28CN%29%20ACES%20Investor%20Conference-20250910_FINAL.pdf
+  tw.3605#e05:
+    locator: 印刷第2頁，研究發展狀況
+    published_date: '2026-05-08'
+    publisher: 宏致電子股份有限公司
+    quote_check: found
+    title: 宏致電子股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52353/2026/RNS/52353_rns_2026-06-04_07bb8e48-fc59-40f7-96bd-9af1b1848628.pdf
+  tw.3605#e06:
+    locator: 客戶結構段落
+    published_date: '2026-03-26'
+    publisher: MoneyDJ新聞
+    quote_check: found
+    title: 宏致AI占比拚增至四成，高階纜線出貨效應Q2顯現
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=3db50f27-77a5-40e4-b849-10eb0c92d550
+  tw.3605#e07:
+    locator: 宏致回台投資段落
+    published_date: '2019-10-03'
+    publisher: 鉅亨網
+    quote_check: found
+    title: 宏致、東佑達等4家台商產線加速移回 回台總投資額衝上6152億元
+    url: https://m.cnyes.com/news/id/4390246?exp=a
+  tw.3605#e08:
+    locator: 高功率線束訂單段落
+    published_date: '2026-09-04'
+    publisher: MoneyDJ新聞
+    quote_check: found
+    title: 宏致衝8條高速線，高功率線束Q4放量出貨
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=eddb53f8-4829-4c2d-836a-716440a7d2a7
+  tw.3605#e09:
+    locator: 關係人交易，關係人名稱及關係
+    published_date: '2026-03-11'
+    publisher: 宏致電子股份有限公司
+    quote_check: found
+    title: 宏致電子114年度及113年度個體財務報告
+    url: https://www.acesconn.com/upload/investor/3605%20%E5%AE%8F%E8%87%B4%20114Q4%E5%80%8B%E9%AB%94-Final.pdf
   tw.3605#e10:
-    locator: EV產品介紹
-    published_date: null
+    locator: 關係人交易，關係人名稱及關係
+    published_date: '2026-03-11'
     publisher: 宏致電子股份有限公司
     quote_check: found
-    title: ACES－EV產品
-    url: https://www.acesconn.com/tw/series_list_type_2/EV%20%E7%94%A2%E5%93%81/4
+    title: 宏致電子114年度及113年度個體財務報告
+    url: https://www.acesconn.com/upload/investor/3605%20%E5%AE%8F%E8%87%B4%20114Q4%E5%80%8B%E9%AB%94-Final.pdf
   tw.3605#e11:
-    locator: 第67頁，114年12月31日轉投資持股表；本公司投資欄
-    published_date: '2026-05-08'
+    locator: 關係人交易，關係人名稱及關係
+    published_date: '2026-03-11'
     publisher: 宏致電子股份有限公司
-    quote_check: unreachable
-    title: 宏致電子股份有限公司114年度年報
-    url: https://financialfilings.com/filings/aces-3605/annual-report/2026/47969343/
+    quote_check: found
+    title: 宏致電子114年度及113年度個體財務報告
+    url: https://www.acesconn.com/upload/investor/3605%20%E5%AE%8F%E8%87%B4%20114Q4%E5%80%8B%E9%AB%94-Final.pdf
   tw.3605#e12:
-    locator: 第68頁，114年12月31日轉投資持股表；本公司投資欄
-    published_date: '2026-05-08'
+    locator: 列入合併財務報告之子公司，PDF第16頁註2
+    published_date: '2026-03-11'
     publisher: 宏致電子股份有限公司
-    quote_check: unreachable
-    title: 宏致電子股份有限公司114年度年報
-    url: https://financialfilings.com/filings/aces-3605/annual-report/2026/47969343/
+    quote_check: found
+    title: 宏致電子114年度及113年度合併財務報告
+    url: https://www.acesconn.com/upload/investor/3605%20%E5%AE%8F%E8%87%B4%20114Q4%E5%90%88%E4%BD%B5-Final.pdf
   tw.3605#e13:
-    locator: 第68頁，114年12月31日轉投資持股表；本公司投資欄
-    published_date: '2026-05-08'
-    publisher: 宏致電子股份有限公司
-    quote_check: unreachable
-    title: 宏致電子股份有限公司114年度年報
-    url: https://financialfilings.com/filings/aces-3605/annual-report/2026/47969343/
-  tw.3605#e2:
-    locator: 第80頁，肆、營運概況／一、業務內容／營業比重；連接器列，114年度營收及占比
-    published_date: '2026-05-08'
-    publisher: 宏致電子股份有限公司
-    quote_check: unreachable
-    title: 宏致電子股份有限公司114年度年報
-    url: https://financialfilings.com/filings/aces-3605/annual-report/2026/47969343/
-  tw.3605#e3:
-    locator: 第80頁，營業比重表；連接線組列，114年度營收及占比
-    published_date: '2026-05-08'
-    publisher: 宏致電子股份有限公司
-    quote_check: unreachable
-    title: 宏致電子股份有限公司114年度年報
-    url: https://financialfilings.com/filings/aces-3605/annual-report/2026/47969343/
-  tw.3605#e4:
-    locator: 第80頁，營業比重表；金屬沖壓件列，114年度營收及占比
-    published_date: '2026-05-08'
-    publisher: 宏致電子股份有限公司
-    quote_check: unreachable
-    title: 宏致電子股份有限公司114年度年報
-    url: https://financialfilings.com/filings/aces-3605/annual-report/2026/47969343/
-  tw.3605#e5:
-    locator: 第80頁，營業比重表；其他營業收入列，114年度營收及占比
-    published_date: '2026-05-08'
-    publisher: 宏致電子股份有限公司
-    quote_check: unreachable
-    title: 宏致電子股份有限公司114年度年報
-    url: https://financialfilings.com/filings/aces-3605/annual-report/2026/47969343/
-  tw.3605#e6:
-    locator: MCIO產品介紹首段
-    published_date: null
+    locator: 列入合併財務報告之子公司，PDF第16頁註3
+    published_date: '2026-03-11'
     publisher: 宏致電子股份有限公司
     quote_check: found
-    title: ACES－MCIO
-    url: https://www.acesconn.com/tw/series_list/MCIO/119
-  tw.3605#e7:
-    locator: 技術開發段落
-    published_date: '2025-03-25'
+    title: 宏致電子114年度及113年度合併財務報告
+    url: https://www.acesconn.com/upload/investor/3605%20%E5%AE%8F%E8%87%B4%20114Q4%E5%90%88%E4%BD%B5-Final.pdf
+  tw.3605#e14:
+    locator: 公告主旨
+    published_date: '2025-08-08'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ
+    quote_check: found
+    title: 宏致代子公司昆山宏致公告出售南通大地部分股票
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=997b8566-2e12-4243-bea5-7fbdc9f16ccb
+  tw.3605#e15:
+    locator: 採用權益法之投資，PDF第33頁
+    published_date: '2026-03-11'
     publisher: 宏致電子股份有限公司
     quote_check: found
-    title: 宏致電子研發總部大樓落成啟用 強化製造與研發量能 邁向全球布局新里程
-    url: https://www.acesconn.com/tw/news_detail?id=62
-  tw.3605#e8:
-    locator: 三大事業群／連接線事業群（MEC龍翰）
-    published_date: null
+    title: 宏致電子114年度及113年度合併財務報告
+    url: https://www.acesconn.com/upload/investor/3605%20%E5%AE%8F%E8%87%B4%20114Q4%E5%90%88%E4%BD%B5-Final.pdf
+  tw.3605#e16:
+    locator: 公告主旨及第2至3項
+    published_date: '2024-07-12'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ
+    quote_check: found
+    title: 宏致：珠海宏致科技董事會通過自地委建興建廠房，計約1.87億人民幣(補充)
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=78259df4-e73a-4a2b-bcce-a204f8ca44ad
+  tw.3605#e17:
+    locator: 公告主旨及第4項
+    published_date: '2024-07-12'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ
+    quote_check: found
+    title: 宏致：珠海宏致科技董事會通過自地委建興建廠房，計約1.87億人民幣(補充)
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=78259df4-e73a-4a2b-bcce-a204f8ca44ad
+  tw.3605#e18:
+    locator: 列入合併財務報告之子公司，PDF第16頁註1
+    published_date: '2026-03-11'
     publisher: 宏致電子股份有限公司
     quote_check: found
-    title: 宏致集團－ACES集團簡介
-    url: https://www.acesconn.com/tw/about2
-  tw.3605#e9:
-    locator: 三大事業群／金屬沖壓事業群（KYN廣迎新）
-    published_date: null
-    publisher: 宏致電子股份有限公司
-    quote_check: found
-    title: 宏致集團－ACES集團簡介
-    url: https://www.acesconn.com/tw/about2
+    title: 宏致電子114年度及113年度合併財務報告
+    url: https://www.acesconn.com/upload/investor/3605%20%E5%AE%8F%E8%87%B4%20114Q4%E5%90%88%E4%BD%B5-Final.pdf

@@ -29,98 +29,306 @@ chain_stage:
   stage_name: 成衣、製鞋與品牌
   tier: downstream
 primary_chain_position: downstream
-summary_short: 以成衣設計、製造與銷售為主，產品涵蓋流行、運動、睡衣及智慧服飾。
-summary_long: 聚陽主要從事成衣設計、製造及銷售，2025年成衣占營業比重97.4%，布料買賣及其他占2.6%。產品涵蓋流行服飾、運動服飾與睡衣服飾，另提供可符合ISO 13485醫療認證的智慧服飾。集團的全資子公司Global Trading Int'l Corp.與Fortune Star Investment Limited均從事投資控股。依成衣為主要營收來源的業務結構，歸類於成衣與服飾，位於紡織產業鏈的成衣製造階段。
+summary_short: 以成衣設計、製造及銷售為主，供應國際服飾品牌與零售通路。
+summary_long: 聚陽主要提供成衣設計、製造及銷售，產品涵蓋流行服飾、運動服飾及睡衣，並提供材質、設計、製造與物流等整合服務。2025年成衣占營業比重97.4%，布料買賣及其他占2.6%。同年度Gap Inc、Target、Dicks與Kohls營收占比分別為36%、18%、9%及7%；官網另列Old Navy、Banana Republic、GU及Walmart為客戶。集團於2024年6月投資設立薩爾瓦多成衣子公司，10月設立河內行政服務子公司，並透過孟加拉子公司從事成衣製造。供應端則有越南子公司向關聯企業Namtex進貨的具名揭露。
 segments:
 - evidence_ids:
   - e2
-  id: seg_garment
+  id: garment
   name: 成衣
   period: '2025'
   revenue_share_pct: 97.4
 - evidence_ids:
   - e2
-  id: seg_fabric_other
+  id: fabric_other
   name: 布料買賣及其他
   period: '2025'
   revenue_share_pct: 2.6
 relations:
+  customers:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 成衣供應，集團客戶口徑
+    details:
+    - 成衣供應，集團客戶口徑
+    edge: e7e06fdf35e4e
+    evidence_level: primary
+    id: us.GAP
+    name: Gap Inc
+    ranking_basis: disclosed
+    share_basis: revenue
+    share_pct: 36
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 零售通路成衣供應
+    details:
+    - 零售通路成衣供應
+    edge: ea86f6f92b305
+    evidence_level: primary
+    id: us.TGT
+    name: TARGET
+    ranking_basis: disclosed
+    share_basis: revenue
+    share_pct: 18
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 運動零售通路成衣供應
+    details:
+    - 運動零售通路成衣供應
+    edge: e1eecd790e31e
+    evidence_level: primary
+    id: us.DKS
+    name: Dicks
+    ranking_basis: disclosed
+    share_basis: revenue
+    share_pct: 9
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 百貨零售通路成衣供應
+    details:
+    - 百貨零售通路成衣供應
+    edge: e32c923c2ca29
+    evidence_level: primary
+    id: us.KSS
+    name: KOHL's
+    ranking_basis: disclosed
+    share_basis: revenue
+    share_pct: 7
+    weight: 1
+  - as_of: '2026-04-02'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 迅銷集團成衣供應
+    details:
+    - 迅銷集團成衣供應
+    edge: ea134e5475c62
+    evidence_level: media
+    id: jp.9983
+    name: 日本迅銷
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2016-04-27'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 2011年取得之歷史成衣代工訂單
+    details:
+    - 2011年取得之歷史成衣代工訂單
+    edge: e7437f8f1e52a
+    evidence_level: media
+    id: org.uniqlo
+    name: Uniqlo
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  partners:
+  - as_of: '2005-10-01'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 2005年報導之材質研發合作
+    details:
+    - 2005年報導之材質研發合作
+    edge: e819cb8b4ce70
+    evidence_level: media
+    id: tw.1460
+    name: 宏遠
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
-  - as_of: '2025-12-31'
+  - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 全資投資控股子公司
+    detail: 貿易服務子公司
     details:
-    - 全資投資控股子公司
-    edge: e20b4b488135c
+    - 貿易服務子公司
+    edge: e55157c7c4818
     evidence_level: primary
-    id: org.fortune-star-investment-limited-makalot
-    name: Fortune Star Investment Limited
+    id: org.ecolot-textile
+    name: 聚益實業股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2025-12-31'
+  - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 全資投資控股子公司
+    detail: 孟加拉成衣製造子公司
     details:
-    - 全資投資控股子公司
-    edge: e30f38f163559
+    - 孟加拉成衣製造子公司
+    edge: ed0ff02e48ea0
     evidence_level: primary
-    id: org.global-trading-intl-corp-makalot
-    name: Global Trading Int'l Corp.
+    id: org.makalot-bangladesh
+    name: Makalot Bangladesh Ltd.
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 2024年6月投資設立之薩爾瓦多成衣子公司
+    details:
+    - 2024年6月投資設立之薩爾瓦多成衣子公司
+    edge: ed361b0329442
+    evidence_level: primary
+    id: org.makalot-el-salvador
+    name: Makalot EL Salvador SA DE CV
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 2024年10月設立之河內行政服務子公司
+    details:
+    - 2024年10月設立之河內行政服務子公司
+    edge: e7f7498187434
+    evidence_level: primary
+    id: org.mstar-service
+    name: Mstar Service Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 供應聚陽越南子公司之進貨交易
+    details:
+    - 供應聚陽越南子公司之進貨交易
+    edge: e22b36171acd0
+    evidence_level: primary
+    id: org.namtex
+    name: Namtex Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 2025年法說簡報以Japan Customer匿名揭露營收占比18%，未將該…
 website: www.makalot.com.tw
 tax_id: '23609668'
 incorporated: '1990-01-10'
 listed: '2003-01-21'
-as_of: '2026-10-15'
+as_of: '2026-10-25'
 confidence: ai_cross_checked
 has_research: true
 evidence:
+  tw.1477#e10:
+    locator: 記者嚴雅芳報導；主要客戶需求段落
+    published_date: '2026-04-02'
+    publisher: 經濟日報
+    quote_check: found
+    title: 聚陽接單 長減短增
+    url: https://money.udn.com/money/story/5710/9417393
+  tw.1477#e11:
+    locator: 作者吳瑞菁；「3大客戶營收比重達65%」段落
+    published_date: '2016-04-27'
+    publisher: Money錢雜誌
+    quote_check: found
+    title: CEO連線 夕陽產業也能1年賺1個股本
+    url: https://money.cmoney.tw/article/2944
+  tw.1477#e12:
+    locator: 孫珮瑜，天下雜誌332期；材質研發合作段落
+    published_date: '2005-10-01'
+    publisher: 天下雜誌
+    quote_check: found
+    title: 聚陽＋宏遠 闖出「衣」片江山
+    url: https://www.cw.com.tw/article/5010395
+  tw.1477#e13:
+    locator: 印刷頁10／PDF第11頁；列入合併財務報告之子公司表，115.6.30欄
+    published_date: '2026-07-31'
+    publisher: 聚陽實業股份有限公司
+    quote_check: found
+    title: 聚陽實業股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.makalot.com.tw/uploads/%E8%B2%A1%E5%A0%B1/115/%E8%81%9A%E9%99%BD115Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
+  tw.1477#e14:
+    locator: 印刷頁10／PDF第11頁；子公司表，Global投資之Makalot Bangladesh列，業務性質為成衣製造
+    published_date: '2026-07-31'
+    publisher: 聚陽實業股份有限公司
+    quote_check: found
+    title: 聚陽實業股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.makalot.com.tw/uploads/%E8%B2%A1%E5%A0%B1/115/%E8%81%9A%E9%99%BD115Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
+  tw.1477#e15:
+    locator: 印刷頁10／PDF第11頁；子公司表，本公司投資之薩爾瓦多成衣製造公司列
+    published_date: '2026-07-31'
+    publisher: 聚陽實業股份有限公司
+    quote_check: found
+    title: 聚陽實業股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.makalot.com.tw/uploads/%E8%B2%A1%E5%A0%B1/115/%E8%81%9A%E9%99%BD115Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
+  tw.1477#e16:
+    locator: 印刷頁12／PDF第16頁；子公司表註3
+    published_date: '2025-03-12'
+    publisher: 聚陽實業股份有限公司
+    quote_check: found
+    title: 聚陽實業股份有限公司及子公司113年度合併財務報告
+    url: https://www.makalot.com.tw/uploads/%E8%B2%A1%E5%A0%B1/113/%E8%81%9A%E9%99%BD113%E5%B9%B4%E5%BA%A6%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1_Final.pdf
+  tw.1477#e17:
+    locator: 印刷頁12／PDF第16頁；子公司表註4
+    published_date: '2025-03-12'
+    publisher: 聚陽實業股份有限公司
+    quote_check: found
+    title: 聚陽實業股份有限公司及子公司113年度合併財務報告
+    url: https://www.makalot.com.tw/uploads/%E8%B2%A1%E5%A0%B1/113/%E8%81%9A%E9%99%BD113%E5%B9%B4%E5%BA%A6%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1_Final.pdf
+  tw.1477#e18:
+    locator: 印刷頁10／PDF第11頁；子公司表，Global投資之行政服務公司列
+    published_date: '2026-07-31'
+    publisher: 聚陽實業股份有限公司
+    quote_check: found
+    title: 聚陽實業股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.makalot.com.tw/uploads/%E8%B2%A1%E5%A0%B1/115/%E8%81%9A%E9%99%BD115Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
+  tw.1477#e19:
+    locator: 印刷頁34／PDF第35頁；關係人進銷貨表，Makalot Vietnam向Namtex進貨列
+    published_date: '2026-07-31'
+    publisher: 聚陽實業股份有限公司
+    quote_check: found
+    title: 聚陽實業股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.makalot.com.tw/uploads/%E8%B2%A1%E5%A0%B1/115/%E8%81%9A%E9%99%BD115Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
   tw.1477#e2:
-    locator: 印刷頁90，肆、營運概況／一、業務內容／主要產品及營業比重；114年
+    locator: 印刷頁90／PDF第94頁；主要產品及營業比重
     published_date: '2026-03-28'
     publisher: 聚陽實業股份有限公司
     quote_check: found
     title: 聚陽實業股份有限公司114年度年報
-    url: https://www.makalot.com.tw/uploads/%E5%B9%B4%E5%A0%B1/%E8%81%9A%E9%99%BD_115%E5%B9%B4%E8%82%A1%E6%9D%B1%E5%B8%B8%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51834/2026/RNS/51834_rns_2026-05-07_4cbb538e-e642-4df7-af1a-928dd9003899.pdf
+  tw.1477#e20:
+    locator: 印刷頁47／PDF第51頁；關係人名稱及關係表，用以核對Namtex正式名稱
+    published_date: '2026-03-11'
+    publisher: 聚陽實業股份有限公司
+    quote_check: found
+    title: 聚陽實業股份有限公司及子公司114年度合併財務報告
+    url: https://www.makalot.com.tw/uploads/%E8%B2%A1%E5%A0%B1/114/%E8%81%9A%E9%99%BD114Q4%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1_Final.pdf
   tw.1477#e3:
-    locator: 印刷頁90，公司目前之產品及服務項目
+    locator: 印刷頁90／PDF第94頁；公司目前之產品及服務項目
     published_date: '2026-03-28'
     publisher: 聚陽實業股份有限公司
     quote_check: found
     title: 聚陽實業股份有限公司114年度年報
-    url: https://www.makalot.com.tw/uploads/%E5%B9%B4%E5%A0%B1/%E8%81%9A%E9%99%BD_115%E5%B9%B4%E8%82%A1%E6%9D%B1%E5%B8%B8%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51834/2026/RNS/51834_rns_2026-05-07_4cbb538e-e642-4df7-af1a-928dd9003899.pdf
   tw.1477#e4:
-    locator: Products Categories；以瀏覽器讀取動態頁面正文
+    locator: 主要經營業務欄，已讀取瀏覽器動態頁面
     published_date: null
     publisher: 聚陽實業股份有限公司
     quote_check: not_found
-    title: Products Categories / Our Services
-    url: https://www.makalot.com.tw/products-and-service/all-products
+    title: 投資人專區－財務資訊：基本資料
+    url: https://www.makalot.com.tw/investor/financial/company-profile
   tw.1477#e5:
-    locator: 印刷頁90，公司目前之產品及服務項目
-    published_date: '2026-03-28'
-    publisher: 聚陽實業股份有限公司
-    quote_check: found
-    title: 聚陽實業股份有限公司114年度年報
-    url: https://www.makalot.com.tw/uploads/%E5%B9%B4%E5%A0%B1/%E8%81%9A%E9%99%BD_115%E5%B9%B4%E8%82%A1%E6%9D%B1%E5%B8%B8%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
-  tw.1477#e6:
-    locator: 印刷頁11，附註四（三）2，列入合併財務報告之子公司；114.12.31持股欄
+    locator: 第8頁；2025 Operating Highlight，Revenue by Customer圖
     published_date: null
     publisher: 聚陽實業股份有限公司
     quote_check: found
-    title: 聚陽實業股份有限公司及子公司114年度及113年度合併財務報告
-    url: https://cdn.financialreports.eu/financialreports/media/filings/51834/2026/RNS/51834_rns_2026-04-16_32315e02-309c-4c06-b32d-859e32f113c3.pdf
-  tw.1477#e7:
-    locator: 印刷頁12，附註四（三）2，列入合併財務報告之子公司；114.12.31持股欄
-    published_date: null
-    publisher: 聚陽實業股份有限公司
-    quote_check: found
-    title: 聚陽實業股份有限公司及子公司114年度及113年度合併財務報告
-    url: https://cdn.financialreports.eu/financialreports/media/filings/51834/2026/RNS/51834_rns_2026-04-16_32315e02-309c-4c06-b32d-859e32f113c3.pdf
+    title: Makalot Industrial Co., Ltd. 2026法人說明會簡報
+    url: https://mopsov.twse.com.tw/nas/STR/147720260316E001.pdf

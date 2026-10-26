@@ -26,30 +26,30 @@ chain_stage:
   stage_name: 板卡、電源、散熱、機構件
   tier: midstream
 primary_chain_position: upstream
-summary_short: 製造電源傳輸線組、訊號線與充電零組件，電源線組為主要營收來源。
-summary_long: 良維科技以電源傳輸線組、訊號線組、充電器轉接頭及線材的製造銷售為主要業務。2025年各類電源傳輸線組占營收91%，訊號傳輸線組6%，充電器轉接頭與一體式充電器2%，電源、訊號傳輸及車用線材1%。產品應用涵蓋家電、電腦周邊、資料中心與電動車充電，提供雲端伺服器用Hi-Amp大電流電源線、車用充電線及充電槍。訊號線產品包含USB 3.0、USB 3.1 Type C與資訊通訊用連接線。
+summary_short: 主要製造電源傳輸線組，並供應資料中心大電流線材與電動車充電線。
+summary_long: 良維主要製造電源與訊號傳輸線組，2025年各類電源傳輸線組占營收91%，訊號傳輸線組占6%，充電器轉接頭與一體式充電器占2%，其餘電源、訊號傳輸及車用線材占1%。產品應用涵蓋資料中心與AI伺服器、消費性電子，以及電動車與充電站。具名客戶包括亞馬遜、蘋果、聯想、戴爾、HPE與IBM，供應產品包含大電流線材及消費性電子電源線。公司透過泰國與印度子公司布局海外製造，並於2026年5月決議對泰國子公司現金增資6億泰銖。
 segments:
 - evidence_ids:
-  - e02
-  id: seg.power_cord
+  - e1
+  id: seg_power
   name: 各類電源傳輸線組
   period: '2025'
   revenue_share_pct: 91
 - evidence_ids:
-  - e02
-  id: seg.signal_cable
+  - e1
+  id: seg_signal
   name: 訊號傳輸線組
   period: '2025'
   revenue_share_pct: 6
 - evidence_ids:
-  - e02
-  id: seg.charger
+  - e1
+  id: seg_charger
   name: 充電器轉接頭與一體式充電器
   period: '2025'
   revenue_share_pct: 2
 - evidence_ids:
-  - e02
-  id: seg.wire
+  - e1
+  id: seg_cable
   name: 電源、訊號傳輸及車用線材
   period: '2025'
   revenue_share_pct: 1
@@ -64,45 +64,138 @@ themes:
   theme: theme.ai_server
   tier: midstream
 - also: []
+  stage: components
+  theme: theme.apple
+  tier: upstream
+- also: []
   stage: equipment
   theme: theme.data_center
   tier: upstream
+- also: []
+  stage: components
+  theme: theme.nvidia
+  tier: midstream
 relations:
+  customers:
+  - as_of: '2026-04-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: AI伺服器大電流產品
+    details:
+    - AI伺服器大電流產品
+    edge: e60190e21e580
+    evidence_level: media
+    id: cn.lenovo
+    name: Lenovo
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-02-17'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: Apple TV及Mac mini電源線
+    details:
+    - Apple TV及Mac mini電源線
+    edge: ed522810447f0
+    evidence_level: media
+    id: us.AAPL
+    name: Apple
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-05-25'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: AWS資料中心及AI伺服器大電流產品
+    details:
+    - AWS資料中心及AI伺服器大電流產品
+    edge: e398474e5c471
+    evidence_level: media
+    id: us.AMZN
+    name: Amazon
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: AI伺服器大電流產品
+    details:
+    - AI伺服器大電流產品
+    edge: e8ffcc9282ef5
+    evidence_level: media
+    id: us.DELL
+    name: Dell
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: AI伺服器大電流產品
+    details:
+    - AI伺服器大電流產品
+    edge: efd5338a23b9e
+    evidence_level: media
+    id: us.HPE
+    name: Hewlett Packard Enterprise
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: AI伺服器大電流產品
+    details:
+    - AI伺服器大電流產品
+    edge: ea74f1c4185e5
+    evidence_level: media
+    id: us.IBM
+    name: IBM
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 小量出貨及AI伺服器新案洽談
+    details:
+    - 小量出貨及AI伺服器新案洽談
+    edge: e604015ee04bb
+    evidence_level: media
+    id: us.MSFT
+    name: Microsoft
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-05-25'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: Vera Rubin大電力線及機櫃套件
+    details:
+    - Vera Rubin大電力線及機櫃套件
+    edge: e23f64c64e6a3
+    evidence_level: media
+    id: us.NVDA
+    name: NVIDIA
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持股100%的泰國子公司
+    detail: 投資控股子公司
     details:
-    - 直接持股100%的泰國子公司
-    edge: e29a37b91faf9
-    evidence_level: primary
-    id: org.longwell-company-thailand
-    name: LONGWELL COMPANY (THAILAND) CO., LTD.
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
-  - as_of: '2025-12-31'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 透過B.V.I.子公司間接持有的子公司
-    details:
-    - 透過B.V.I.子公司間接持有的子公司
-    edge: e41833b3c5638
-    evidence_level: primary
-    id: org.longwell-enterprise
-    name: LONGWELL ENTERPRISE CO., LTD.
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
-  - as_of: '2025-12-31'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 直接持股100%的子公司
-    details:
-    - 直接持股100%的子公司
+    - 投資控股子公司
     edge: e267a1173d826
     evidence_level: primary
     id: org.longwell-international-bvi
@@ -114,37 +207,9 @@ relations:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持股51%的日本子公司
+    detail: 印度合資製造子公司
     details:
-    - 直接持股51%的日本子公司
-    edge: e9bc61b0b4114
-    evidence_level: primary
-    id: org.longwell-japan
-    name: LONGWELL JAPAN CO., LTD
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
-  - as_of: '2025-12-31'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 透過LONGWELL ENTERPRISE間接持有的子公司
-    details:
-    - 透過LONGWELL ENTERPRISE間接持有的子公司
-    edge: eedacff1489f0
-    evidence_level: primary
-    id: org.longwell-liangying-shenzhen
-    name: 良穎電子(深圳)有限公司
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
-  - as_of: '2025-12-31'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 直接持股70%的印度子公司
-    details:
-    - 直接持股70%的印度子公司
+    - 印度合資製造子公司
     edge: ef5cb53a94b31
     evidence_level: primary
     id: org.longwell-technology-india
@@ -153,100 +218,220 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: '2025-08-08'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 泰國製造子公司
+    details:
+    - 泰國製造子公司
+    edge: e436e427b7cbd
+    evidence_level: primary
+    id: org.longwell-thailand
+    name: LONGWELL COMPANY (THAILAND) CO., LTD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 美金9,000,000元
+    as_of: '2025-08-08'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: BVI子公司增資並間接增資良穎電子
+    details:
+    - BVI子公司增資並間接增資良穎電子
+    edge: efd89632322f1
+    event_date: '2025-08-08'
+    events:
+    - amount: 美金9,000,000元
+      detail: BVI子公司增資並間接增資良穎電子
+      event_date: '2025-08-08'
+    evidence_level: primary
+    id: org.longwell-international-bvi
+    name: LONGWELL INTERNATIONAL (B.V.I.) LTD.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 泰銖3.5億元
+    as_of: '2026-05-08'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 對泰國子公司現金增資
+    details:
+    - 對泰國子公司現金增資
+    - 對泰國子公司再次現金增資
+    edge: e0ae729268135
+    event_date: '2025-01-13'
+    events:
+    - amount: 6億泰銖
+      detail: 對泰國子公司現金增資
+      event_date: '2026-05-08'
+    - amount: 泰銖3.5億元
+      detail: 對泰國子公司再次現金增資
+      event_date: '2025-08-08'
+    - amount: 泰銖3.5億元
+      detail: 對泰國子公司現金增資
+      event_date: '2025-01-13'
+    evidence_level: primary
+    id: org.longwell-thailand
+    name: LONGWELL COMPANY (THAILAND) CO., LTD.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 印度子公司合資
+    details:
+    - 印度子公司合資
+    edge: e6bc78d2a13ae
+    event_date: null
+    events:
+    - amount: null
+      detail: 印度子公司合資
+      event_date: null
+    evidence_level: primary
+    id: org.powerline-technology-india
+    name: POWERLINE TECHNOLOGY INDIA PRIVATE LIMITED
+    ranking_basis: unranked
+    role: party
+    share_basis: null
+    share_pct: null
+    weight: 1
 unresolved_mentions:
-- CSP（雲端服務供應商，候選線索未具名）
-- 美系大客戶
-- 美系GPU客戶
-- 美系AI PC客戶
+- 未具名銅原料供應廠商
+- 未具名國際競爭廠商
+- 泰國子公司購地案的未具名土地賣方
+- 未具名美系GPU客戶；不將年報泛稱直接對應特定公司
 website: http://www.longwell.com
 tax_id: '11298247'
 incorporated: '1972-09-05'
 listed: '2005-06-03'
-as_of: '2026-10-15'
+as_of: '2026-10-25'
 confidence: ai_cross_checked
 has_research: true
 evidence:
-  tw.6290#e02:
-    locator: 第53頁，業務範圍／營業比重；PDF第57頁
+  tw.6290#e1:
+    locator: 第53頁，營業比重
     published_date: '2026-04-10'
     publisher: 良維科技股份有限公司
-    quote_check: found
+    quote_check: unreachable
     title: 良維科技股份有限公司114年度年報
-    url: https://doc.twse.com.tw/pdf/2025_6290_20260525F04_20261015_003656.pdf
-  tw.6290#e03:
-    locator: 第54頁，目前之商品項目／電源傳輸線組；PDF第58頁
-    published_date: '2026-04-10'
-    publisher: 良維科技股份有限公司
-    quote_check: found
-    title: 良維科技股份有限公司114年度年報
-    url: https://doc.twse.com.tw/pdf/2025_6290_20260525F04_20261015_003656.pdf
-  tw.6290#e04:
-    locator: 第54頁，目前之商品項目／連接線材及訊號傳輸線組；PDF第58頁
-    published_date: '2026-04-10'
-    publisher: 良維科技股份有限公司
-    quote_check: found
-    title: 良維科技股份有限公司114年度年報
-    url: https://doc.twse.com.tw/pdf/2025_6290_20260525F04_20261015_003656.pdf
-  tw.6290#e05:
-    locator: 第55頁，目前之商品項目／高電流電源線用連接器及傳輸線組；PDF第59頁
-    published_date: '2026-04-10'
-    publisher: 良維科技股份有限公司
-    quote_check: found
-    title: 良維科技股份有限公司114年度年報
-    url: https://doc.twse.com.tw/pdf/2025_6290_20260525F04_20261015_003656.pdf
-  tw.6290#e06:
-    locator: 第53頁，所營業務主要內容；PDF第57頁
-    published_date: '2026-04-10'
-    publisher: 良維科技股份有限公司
-    quote_check: found
-    title: 良維科技股份有限公司114年度年報
-    url: https://doc.twse.com.tw/pdf/2025_6290_20260525F04_20261015_003656.pdf
-  tw.6290#e07:
-    locator: 第94頁，各關係企業董事、監察人及總經理資料／B.V.I.公司列；PDF第98頁
-    published_date: '2026-04-10'
-    publisher: 良維科技股份有限公司
-    quote_check: found
-    title: 良維科技股份有限公司114年度年報
-    url: https://doc.twse.com.tw/pdf/2025_6290_20260525F04_20261015_003656.pdf
-  tw.6290#e08:
-    locator: 第94頁，各關係企業董事、監察人及總經理資料／泰國公司列；PDF第98頁
-    published_date: '2026-04-10'
-    publisher: 良維科技股份有限公司
-    quote_check: found
-    title: 良維科技股份有限公司114年度年報
-    url: https://doc.twse.com.tw/pdf/2025_6290_20260525F04_20261015_003656.pdf
-  tw.6290#e09:
-    locator: 第94頁，各關係企業董事、監察人及總經理資料／日本公司列；PDF第98頁
-    published_date: '2026-04-10'
-    publisher: 良維科技股份有限公司
-    quote_check: found
-    title: 良維科技股份有限公司114年度年報
-    url: https://doc.twse.com.tw/pdf/2025_6290_20260525F04_20261015_003656.pdf
+    url: https://doc.twse.com.tw/pdf/2025_6290_20260525F04_20261023_154051.pdf
   tw.6290#e10:
-    locator: 第94頁，各關係企業董事、監察人及總經理資料／印度公司列名稱及股東；PDF第98頁
-    published_date: '2026-04-10'
-    publisher: 良維科技股份有限公司
+    locator: 公告第2、3項；第9項載明現金增資
+    published_date: '2025-01-13'
+    publisher: 公開資訊觀測站公告，鉅亨網刊載
     quote_check: found
-    title: 良維科技股份有限公司114年度年報
-    url: https://doc.twse.com.tw/pdf/2025_6290_20260525F04_20261015_003656.pdf
+    title: 良維：本公司董事會核准增資子公司LONGWELL COMPANY (THAILAND) CO.,LTD.
+    url: https://news.cnyes.com/news/id/5835839
   tw.6290#e11:
-    locator: 第94頁，各關係企業董事、監察人及總經理資料／印度公司列持股比例；PDF第98頁
-    published_date: '2026-04-10'
-    publisher: 良維科技股份有限公司
+    locator: 公告第5、6、11、14項
+    published_date: '2025-08-08'
+    publisher: 公開資訊觀測站公告，鉅亨網刊載
     quote_check: found
-    title: 良維科技股份有限公司114年度年報
-    url: https://doc.twse.com.tw/pdf/2025_6290_20260525F04_20261015_003656.pdf
+    title: 良維：本公司董事會核准增資子公司LONGWELL COMPANY (THAILAND) CO., LTD.
+    url: https://news.cnyes.com/news/id/6100784
   tw.6290#e12:
-    locator: 第95頁，各關係企業董事、監察人及總經理資料／LONGWELL ENTERPRISE列；PDF第99頁
-    published_date: '2026-04-10'
-    publisher: 良維科技股份有限公司
+    locator: 本文首段
+    published_date: '2026-05-08'
+    publisher: 中央通訊社
     quote_check: found
-    title: 良維科技股份有限公司114年度年報
-    url: https://doc.twse.com.tw/pdf/2025_6290_20260525F04_20261015_003656.pdf
+    title: 東協財經／良維擬增資泰國子公司達6億泰銖
+    url: https://www.cna.com.tw/news/afe/202605083005.aspx
   tw.6290#e13:
-    locator: 第95頁，各關係企業董事、監察人及總經理資料／良穎電子列；PDF第99頁；表下注明為出資額及出資比例
+    locator: 公告第4項及第14項
+    published_date: '2025-08-08'
+    publisher: 公開資訊觀測站公告，鉅亨網刊載
+    quote_check: found
+    title: 良維：代重要子公司LONGWELL BVI公告現金增資再轉投資LONGWELL ENTERPRISE暨間接增資良穎電子
+    url: https://news.cnyes.com/news/id/6100787
+  tw.6290#e14:
+    locator: 第47頁，轉投資事業持股表
     published_date: '2026-04-10'
     publisher: 良維科技股份有限公司
-    quote_check: found
+    quote_check: unreachable
     title: 良維科技股份有限公司114年度年報
-    url: https://doc.twse.com.tw/pdf/2025_6290_20260525F04_20261015_003656.pdf
+    url: https://doc.twse.com.tw/pdf/2025_6290_20260525F04_20261023_154051.pdf
+  tw.6290#e15:
+    locator: 第94頁，關係企業董事及持股資料；印度公司列
+    published_date: '2026-04-10'
+    publisher: 良維科技股份有限公司
+    quote_check: unreachable
+    title: 良維科技股份有限公司114年度年報
+    url: https://doc.twse.com.tw/pdf/2025_6290_20260525F04_20261023_154051.pdf
+  tw.6290#e16:
+    locator: 第43頁，114年3月10日董事會決議第11項
+    published_date: '2026-04-10'
+    publisher: 良維科技股份有限公司
+    quote_check: unreachable
+    title: 良維科技股份有限公司114年度年報
+    url: https://doc.twse.com.tw/pdf/2025_6290_20260525F04_20261023_154051.pdf
+  tw.6290#e17:
+    locator: 第89頁，擴充廠房之效益及風險
+    published_date: '2026-04-10'
+    publisher: 良維科技股份有限公司
+    quote_check: unreachable
+    title: 良維科技股份有限公司114年度年報
+    url: https://doc.twse.com.tw/pdf/2025_6290_20260525F04_20261023_154051.pdf
+  tw.6290#e2:
+    locator: 第53頁，業務內容
+    published_date: '2026-04-10'
+    publisher: 良維科技股份有限公司
+    quote_check: unreachable
+    title: 良維科技股份有限公司114年度年報
+    url: https://doc.twse.com.tw/pdf/2025_6290_20260525F04_20261023_154051.pdf
+  tw.6290#e3:
+    locator: 消費電子
+    published_date: null
+    publisher: 良維科技股份有限公司
+    quote_check: found
+    title: 良維科技官網：產業應用
+    url: https://www.longwell.com/ft/index.aspx
+  tw.6290#e4:
+    locator: 電動車與充電站
+    published_date: null
+    publisher: 良維科技股份有限公司
+    quote_check: found
+    title: 良維科技官網：產業應用
+    url: https://www.longwell.com/ft/index.aspx
+  tw.6290#e5:
+    locator: AI伺服器大電流客戶段落
+    published_date: '2026-04-13'
+    publisher: 經濟日報
+    quote_check: found
+    title: 良維奪 AI 大咖訂單
+    url: https://money.udn.com/money/amp/story/11074/9437204
+  tw.6290#e6:
+    locator: Apple TV及Mac mini電源線段落
+    published_date: '2025-02-17'
+    publisher: 自由財經
+    quote_check: found
+    title: 亞馬遜、蘋果訂單助攻 良維全年獲利挑戰新高
+    url: https://ec.ltn.com.tw/article/breakingnews/4954246
+  tw.6290#e7:
+    locator: 微軟出貨及新案段落
+    published_date: '2026-04-13'
+    publisher: 經濟日報
+    quote_check: found
+    title: 良維奪 AI 大咖訂單
+    url: https://money.udn.com/money/amp/story/11074/9437204
+  tw.6290#e8:
+    locator: 首段及董事長談產品認證段落
+    published_date: '2026-05-25'
+    publisher: 經濟日報
+    quote_check: found
+    title: 良維股東會／衝刺輝達 Vera Rubin 下半年爆發
+    url: https://money.udn.com/money/amp/story/11074/9524573
+  tw.6290#e9:
+    locator: AWS及其他CSP客戶段落
+    published_date: '2026-05-25'
+    publisher: 經濟日報
+    quote_check: found
+    title: 良維股東會／衝刺輝達 Vera Rubin 下半年爆發
+    url: https://money.udn.com/money/amp/story/11074/9524573

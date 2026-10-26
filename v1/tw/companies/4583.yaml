@@ -17,19 +17,19 @@ industry:
   l3: mach.motion
   l3_name: 傳動元件（滾珠螺桿、線性滑軌）
   l3_name_en: Motion Components (Ball Screws, Linear Guides)
-primary_chain_position: upstream
-summary_short: 以高精度行星式減速機為主要收入來源，另透過子公司經營飯店。
-summary_long: 台灣精銳以伺服馬達用高精度行星式減速機為核心產品，並提供齒排與齒輪、聯軸器及智慧型潤滑裝置，業務涵蓋精密傳動與設備潤滑。2025年度合併營收中，減速機占74.08%，客房及餐飲服務占18.78%，其他占7.14%。官網列示AM減速機可應用於靈巧手與關節模組，其他系列亦適用於機械手臂，據此歸入機器人傳動零組件題材。集團另透過全資子公司日月千禧酒店股份有限公司經營台中日月千禧酒店及旗下餐廳，提供住宿與餐飲服務。
+primary_chain_position: midstream
+summary_short: 以行星式減速機研發、製造及銷售為主，另透過全資子公司經營酒店。
+summary_long: 台灣精銳主要研發、製造及銷售減速機等機械傳動零組件，減速機以行星式為主，2025年占合併營收74.08%。產品包括適用AGV自動導引車的GV／GVR系列減速機及伺服用零背隙彈性聯軸器，亦具有微型行星減速機技術與客製化量產能力。年報具名客戶上海精銳廣用動力科技有限公司占2025年合併銷貨9.79%；媒體另具名報導亞馬遜物流協作機器人供應鏈關係，但直接採購主體未揭露。公司持有日月千禧酒店全部股權，透過該子公司經營住宿及餐飲，客房及餐飲服務占2025年合併營收18.78%。
 segments:
 - evidence_ids:
   - e2
-  id: seg_gearbox
+  id: seg_reducers
   name: 減速機
   period: '2025'
   revenue_share_pct: 74.08
 - evidence_ids:
   - e2
-  id: seg_hotel
+  id: seg_hospitality
   name: 客房及餐飲服務
   period: '2025'
   revenue_share_pct: 18.78
@@ -46,13 +46,113 @@ themes:
   theme: theme.robotics
   tier: upstream
 relations:
+  competitors:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 行星式減速機市場競爭
+    details:
+    - 行星式減速機市場競爭
+    edge: e67ebbeda75d1
+    evidence_level: primary
+    id: org.neugart
+    name: NEUGART
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 行星式減速機市場競爭
+    details:
+    - 行星式減速機市場競爭
+    edge: e8dffce4ec8f6
+    evidence_level: primary
+    id: org.sew
+    name: SEW
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 行星式減速機市場競爭
+    details:
+    - 行星式減速機市場競爭
+    edge: e514769bcada8
+    evidence_level: primary
+    id: org.shimpo
+    name: SHIMPO
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 行星式減速機市場競爭
+    details:
+    - 行星式減速機市場競爭
+    edge: ec8c94aba18fb
+    evidence_level: primary
+    id: org.sumitomo
+    name: SUMITOMO
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 行星式減速機市場競爭
+    details:
+    - 行星式減速機市場競爭
+    edge: e1725865d0a06
+    evidence_level: primary
+    id: org.wittenstein
+    name: WITTENSTEIN
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  customers:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 具名關係人銷貨客戶
+    details:
+    - 具名關係人銷貨客戶
+    edge: e0f8ee04f9ef1
+    evidence_level: primary
+    id: org.shanghai-apex-guangyong
+    name: 上海精銳廣用動力科技有限公司
+    ranking_basis: disclosed
+    share_basis: revenue
+    share_pct: 9.79
+    weight: 1
+  - as_of: '2025-12-05'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 物流協作機器人用精密行星減速機之終端客戶
+    details:
+    - 物流協作機器人用精密行星減速機之終端客戶
+    edge: e10c285c26616
+    evidence_level: media
+    id: us.AMZN
+    name: Amazon
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 全資子公司；台中日月千禧酒店及旗下餐廳
+    detail: 持股100%的酒店子公司
     details:
-    - 全資子公司；台中日月千禧酒店及旗下餐廳
+    - 持股100%的酒店子公司
     edge: eb2f34f535126
     evidence_level: primary
     id: org.millennium-hotel-taichung
@@ -61,74 +161,128 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  transactions:
+  - amount: 新台幣179,295,360元
+    as_of: '2024-10-25'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 台中市西屯區土地續租20年，取得使用權資產
+    details:
+    - 台中市西屯區土地續租20年，取得使用權資產
+    edge: ef35043b4114c
+    event_date: '2024-10-25'
+    events:
+    - amount: 新台幣179,295,360元
+      detail: 台中市西屯區土地續租20年，取得使用權資產
+      event_date: '2024-10-25'
+    evidence_level: primary
+    id: org.central-taiwan-science-park-bureau
+    name: 國家科學及技術委員會中部科學園區管理局
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 2025年報以甲公司、乙公司、丙公司代稱的供應商，未揭露實名。
+- 2025年報以B公司、C公司代稱的銷貨客戶，未揭露實名。
+- 亞馬遜物流協作機器人供應鏈中的直接採購法人及經銷商交易安排未揭露。
 website: https://www.apexdyna.com
 tax_id: '70647919'
 incorporated: '1999-10-26'
 listed: '2022-05-09'
-as_of: '2026-10-15'
+as_of: '2026-10-26'
 confidence: ai_cross_checked
 has_research: true
 evidence:
   tw.4583#e1:
-    locator: 公司介紹首段
-    published_date: null
-    publisher: 台灣精銳科技股份有限公司
-    quote_check: found
-    title: 關於台灣精銳
-    url: https://www.apexdyna.com/zh-tw/about
-  tw.4583#e2:
-    locator: 印刷頁69，主要產品（服務）及營業比重；114年度
+    locator: 第69頁，業務範圍
     published_date: '2026-04-20'
-    publisher: 台灣精銳科技股份有限公司
+    publisher: 台灣精銳科技股份有限公司（FinancialFilings鏡像）
+    quote_check: unreachable
+    title: 台灣精銳科技股份有限公司2025年報
+    url: https://financialfilings.com/filings/apexdyna-4583/annual-report/2026/41701779/
+  tw.4583#e10:
+    locator: 第73頁，市場競爭情形
+    published_date: '2026-04-20'
+    publisher: 台灣精銳科技股份有限公司（原始PDF鏡像）
     quote_check: found
-    title: 台灣精銳科技股份有限公司114年度年報
+    title: 台灣精銳科技股份有限公司2025年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52416/2026/RNS/52416_rns_2026-05-06_cdf8eb53-d790-43ed-b29f-dc56f816d558.pdf
+  tw.4583#e11:
+    locator: 公告第4項，交易相對人
+    published_date: '2024-10-25'
+    publisher: 公開資訊觀測站重大訊息（鉅亨網刊載）
+    quote_check: found
+    title: 台灣精銳：公告本公司取得使用權資產
+    url: https://news.cnyes.com/news/id/5753052
+  tw.4583#e12:
+    locator: 公告第3項，交易總金額
+    published_date: '2024-10-25'
+    publisher: 公開資訊觀測站重大訊息（鉅亨網刊載）
+    quote_check: found
+    title: 台灣精銳：公告本公司取得使用權資產
+    url: https://news.cnyes.com/news/id/5753052
+  tw.4583#e13:
+    locator: 公告第8項，租賃期間
+    published_date: '2024-10-25'
+    publisher: 公開資訊觀測站重大訊息（鉅亨網刊載）
+    quote_check: found
+    title: 台灣精銳：公告本公司取得使用權資產
+    url: https://news.cnyes.com/news/id/5753052
+  tw.4583#e2:
+    locator: 第69頁，主要產品及營業比重；金額單位為新台幣千元
+    published_date: '2026-04-20'
+    publisher: 台灣精銳科技股份有限公司（原始PDF鏡像）
+    quote_check: found
+    title: 台灣精銳科技股份有限公司2025年報
     url: https://cdn.financialreports.eu/financialreports/media/filings/52416/2026/RNS/52416_rns_2026-05-06_cdf8eb53-d790-43ed-b29f-dc56f816d558.pdf
   tw.4583#e3:
-    locator: 產品介紹／齒排與齒輪
-    published_date: null
-    publisher: 台灣精銳科技股份有限公司
+    locator: 第4頁，研究發展狀況，GV／GVR系列減速機
+    published_date: '2026-04-20'
+    publisher: 台灣精銳科技股份有限公司（原始PDF鏡像）
     quote_check: found
-    title: 台灣精銳 APEX DYNAMICS 官網
-    url: https://www.apexdyna.com/zh-tw
+    title: 台灣精銳科技股份有限公司2025年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52416/2026/RNS/52416_rns_2026-05-06_cdf8eb53-d790-43ed-b29f-dc56f816d558.pdf
   tw.4583#e4:
-    locator: 產品介紹／聯軸器
-    published_date: null
-    publisher: 台灣精銳科技股份有限公司
-    quote_check: found
-    title: 台灣精銳 APEX DYNAMICS 官網
-    url: https://www.apexdyna.com/zh-tw
+    locator: 第74頁，最近二年度開發成功之技術或產品，113年度
+    published_date: '2026-04-20'
+    publisher: 台灣精銳科技股份有限公司（FinancialFilings鏡像）
+    quote_check: unreachable
+    title: 台灣精銳科技股份有限公司2025年報
+    url: https://financialfilings.com/filings/apexdyna-4583/annual-report/2026/41701779/
   tw.4583#e5:
-    locator: 產品介紹／智慧型潤滑裝置
-    published_date: null
-    publisher: 台灣精銳科技股份有限公司
+    locator: 第96頁，關係企業組織圖及基本資料
+    published_date: '2026-04-20'
+    publisher: 台灣精銳科技股份有限公司（原始PDF鏡像）
     quote_check: found
-    title: 台灣精銳 APEX DYNAMICS 官網
-    url: https://www.apexdyna.com/zh-tw
+    title: 台灣精銳科技股份有限公司2025年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52416/2026/RNS/52416_rns_2026-05-06_cdf8eb53-d790-43ed-b29f-dc56f816d558.pdf
   tw.4583#e6:
-    locator: 應用導覽／AM型號／應用
-    published_date: null
-    publisher: 台灣精銳科技股份有限公司
+    locator: 第80頁，主要銷貨客戶資料，114年度上海精銳廣用動力科技有限公司列
+    published_date: '2026-04-20'
+    publisher: 台灣精銳科技股份有限公司（原始PDF鏡像）
     quote_check: found
-    title: 精密減速機應用與選型導覽｜台灣精銳 APEX DYNAMICS
-    url: https://www.apexdyna.com/zh-tw/application/gearbox-guide
+    title: 台灣精銳科技股份有限公司2025年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52416/2026/RNS/52416_rns_2026-05-06_cdf8eb53-d790-43ed-b29f-dc56f816d558.pdf
   tw.4583#e7:
-    locator: 應用導覽／AP、APK、APC、APCK型號／應用
-    published_date: null
-    publisher: 台灣精銳科技股份有限公司
+    locator: 標的1：台灣精銳
+    published_date: '2025-02-01'
+    publisher: Smart智富，陳文
     quote_check: found
-    title: 精密減速機應用與選型導覽｜台灣精銳 APEX DYNAMICS
-    url: https://www.apexdyna.com/zh-tw/application/gearbox-guide
+    title: 工廠、生產線需求擴大　機器人概念股受惠
+    url: https://smart.businessweekly.com.tw/Reading/WebArticle.aspx?id=7011717&p=2
   tw.4583#e8:
-    locator: 印刷頁64，本公司投資與綜合投資持股比例表
-    published_date: '2026-04-20'
-    publisher: 台灣精銳科技股份有限公司
+    locator: 台灣精銳產品及公司說明段落
+    published_date: '2025-12-05'
+    publisher: 經濟日報，任君翔
     quote_check: found
-    title: 台灣精銳科技股份有限公司114年度年報
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52416/2026/RNS/52416_rns_2026-05-06_cdf8eb53-d790-43ed-b29f-dc56f816d558.pdf
+    title: 機器人題材好旺！四檔機械股飆漲停 台灣精銳盤中站上七字頭
+    url: https://udn.com/news/story/7251/9184260
   tw.4583#e9:
-    locator: 印刷頁69，公司目前商品（服務）項目／日月千禧酒店
-    published_date: '2026-04-20'
-    publisher: 台灣精銳科技股份有限公司
+    locator: 台灣精銳產品及公司說明段落
+    published_date: '2025-12-05'
+    publisher: 經濟日報，任君翔
     quote_check: found
-    title: 台灣精銳科技股份有限公司114年度年報
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52416/2026/RNS/52416_rns_2026-05-06_cdf8eb53-d790-43ed-b29f-dc56f816d558.pdf
+    title: 機器人題材好旺！四檔機械股飆漲停 台灣精銳盤中站上七字頭
+    url: https://udn.com/news/story/7251/9184260

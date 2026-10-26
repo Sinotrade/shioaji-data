@@ -31,7 +31,7 @@
 | 代號 | 名稱 | 說明 |
 | --- | --- | --- |
 | [2376](../companies/2376.md) | 技嘉 | 技鋼G593伺服器搭載含HBM3e的H200加速器 |
-| [3035](../companies/3035.md) | 智原 | AI晶片的HBM2記憶體整合 |
+| [3035](../companies/3035.md) | 智原 | 運算Chiplet與HBM整合應用 |
 | [3443](../companies/3443.md) | 創意 | HBM4E IP導入AI ASIC |
 | [3661](../companies/3661.md) | 世芯-KY | HBM3整合設計 |
 | [3706](../companies/3706.md) | 神達 | 支援配備HBM3E的AMD Instinct MI350P加速卡 |

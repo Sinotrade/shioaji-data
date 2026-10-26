@@ -18,52 +18,257 @@ industry:
   l3_name: 特用化學品
   l3_name_en: Specialty Chemicals
 primary_chain_position: not_applicable
-summary_short: 以醋酸纖維絲束為主，並生產醋酸纖維素、醋酸酐與長絲。
-summary_long: 材料-KY以醋酸纖維絲束為主要營收來源，產品大部分用於菸用過濾嘴；2024年絲束占營收90.00%，二醋酸纖維素占9.96%，醋酸酐占0.04%。集團亦製造紡絲級與塑膠級醋酸纖維素，前者可用於紡絲，後者用於眼鏡鏡框及工具手柄。孟玄新材料負責醋酸酐生產，中峰化學生產醋酸纖維素；阿斯泰克（山東）環保纖維生產醋酸纖維長絲，長絲可製成服飾面料。
+summary_short: 製造銷售濾嘴用醋酸纖維絲束、醋片及相關纖維素材料。
+summary_long: 材料-KY主要研發、製造及銷售醋酸纖維素材料，2025年二醋酸纖維絲束與二醋酸纖維素分別占營收86.39%及13.61%。絲束用於香菸濾嘴等過濾材料，醋片可用於眼鏡鏡框與工具手柄。集團透過濟南大自然、中峰化學、孟玄及阿斯泰克等子公司經營絲束、醋片、醋酐與長絲業務。年報列有具名菸草客戶及木漿、醋片供應商。2024年子公司與創耀塑料簽訂合資備忘錄；2026年董事會另通過以現金及新股取得Cerdia上層控股公司全部股權的交易，仍待核准與交割。
 segments:
 - evidence_ids:
-  - e04
-  id: seg.tow
+  - e_revenue
+  id: tow
   name: 二醋酸纖維絲束
-  period: 2024年度
-  revenue_share_pct: 90
+  period: '2025'
+  revenue_share_pct: 86.39
 - evidence_ids:
-  - e05
-  id: seg.cellulose_acetate
+  - e_revenue
+  id: cellulose_acetate
   name: 二醋酸纖維素
-  period: 2024年度
-  revenue_share_pct: 9.96
+  period: '2025'
+  revenue_share_pct: 13.61
 - evidence_ids:
-  - e06
-  id: seg.acetic_anhydride
+  - e_products
+  - e_sub_meng
+  id: acetic_anhydride
   name: 醋酸酐
-  period: 2024年度
-  revenue_share_pct: 0.04
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e_filament
+  id: filament
+  name: 醋酸纖維長絲
+  period: '2025'
+  revenue_share_pct: null
 relations:
-  subsidiaries:
-  - as_of: '2025-12-31'
+  competitors:
+  - as_of: '2026-09-22'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 高性能纖維製造子公司
+    detail: 醋酸纖維絲束市場
     details:
-    - 高性能纖維製造子公司
-    edge: edea5318dfbd9
-    evidence_level: primary
-    id: org.acetek-aspiration-shandong
-    name: Acetek Aspiration (Shandong) Co., Ltd.
+    - 醋酸纖維絲束市場
+    edge: e57c465ed8267
+    evidence_level: media
+    id: jp.4202
+    name: 日本大賽璐株式會社
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-06-30'
+  - as_of: '2026-09-22'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 醋酸纖維長短絲製造子公司
+    detail: 醋酸纖維絲束市場
     details:
-    - 醋酸纖維長短絲製造子公司
-    edge: e1f806773f3d3
+    - 醋酸纖維絲束市場
+    edge: e8397d0ab8581
+    evidence_level: media
+    id: us.CE
+    name: Celanese
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-09-22'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 醋酸纖維絲束市場
+    details:
+    - 醋酸纖維絲束市場
+    edge: ebdd1c0548461
+    evidence_level: media
+    id: us.EMN
+    name: Eastman
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  customers:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 向子公司濟南大自然採購二醋酸纖維絲束
+    details:
+    - 向子公司濟南大自然採購二醋酸纖維絲束
+    edge: ef79f5ea4ef01
     evidence_level: primary
-    id: org.acetek-environmental-shandong
+    id: org.british-american-tobacco-spb
+    name: British American Tobacco-SPB
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 向子公司濟南大自然採購二醋酸纖維絲束
+    details:
+    - 向子公司濟南大自然採購二醋酸纖維絲束
+    edge: e033379556cae
+    evidence_level: primary
+    id: org.llc-petro
+    name: LLC Petro
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 向子公司濟南大自然採購二醋酸纖維絲束
+    details:
+    - 向子公司濟南大自然採購二醋酸纖維絲束
+    edge: e6d81a4f8b190
+    evidence_level: primary
+    id: org.philip-morris-izhora
+    name: PHILIP MORRIS IZHORA
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2018-04-02'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 歷史客戶關係
+    details:
+    - 歷史客戶關係
+    edge: ef9e581eccbc1
+    evidence_level: media
+    id: org.台灣菸酒
+    name: 台灣菸酒
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2022-05-16'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 濾嘴用絲束訂單
+    details:
+    - 濾嘴用絲束訂單
+    edge: e931489977fd0
+    evidence_level: media
+    id: org.帝國煙草-imperial
+    name: 帝國煙草（Imperial）
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2022-05-16'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 濾嘴用絲束；沿用報導名稱
+    details:
+    - 濾嘴用絲束；沿用報導名稱
+    edge: e9de41d7b4da7
+    evidence_level: media
+    id: org.日本煙草株式會社-jti
+    name: 日本煙草株式會社（JTI）
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 醋酸纖維素生產子公司
+    details:
+    - 醋酸纖維素生產子公司
+    edge: ee548e59eddfa
+    evidence_level: primary
+    id: org.中峰化學有限公司
+    name: 中峰化學有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 羥乙基纖維素醚及特種棉纖維素子公司
+    details:
+    - 羥乙基纖維素醚及特種棉纖維素子公司
+    edge: e9fff1c7eb559
+    evidence_level: primary
+    id: org.北屏新材料-山東-有限公司
+    name: 北屏新材料（山東）有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 醋酸酐生產子公司
+    details:
+    - 醋酸酐生產子公司
+    edge: ee85f26c22ea3
+    evidence_level: primary
+    id: org.孟玄新材料有限公司
+    name: 孟玄新材料有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有的投資控股子公司
+    details:
+    - 直接持有的投資控股子公司
+    edge: e5ed61b6d4dc5
+    evidence_level: primary
+    id: org.慈嚴生活科技有限公司
+    name: 慈嚴生活科技有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有的海外投資控股子公司
+    details:
+    - 直接持有的海外投資控股子公司
+    edge: e0870f7af7df9
+    evidence_level: primary
+    id: org.新加坡濟南大自然新材料股份有限公司
+    name: 新加坡濟南大自然新材料股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過慈嚴持有的絲束生產子公司
+    details:
+    - 透過慈嚴持有的絲束生產子公司
+    edge: e51652c262ce9
+    evidence_level: primary
+    id: org.濟南大自然新材料有限公司
+    name: 濟南大自然新材料有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 醋酸纖維生產子公司
+    details:
+    - 醋酸纖維生產子公司
+    edge: edbe63bae29b1
+    evidence_level: primary
+    id: org.阿斯泰克-山東-環保纖維有限公司
     name: 阿斯泰克（山東）環保纖維有限公司
     ranking_basis: unranked
     share_basis: null
@@ -72,219 +277,399 @@ relations:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 纖維素衍生材料製造子公司
+    detail: 高性能纖維材料子公司
     details:
-    - 纖維素衍生材料製造子公司
-    edge: eaaf351df87b3
+    - 高性能纖維材料子公司
+    edge: ecb135cb0cdae
     evidence_level: primary
-    id: org.acetek-guardian-shandong
-    name: Acetek Guardian (Shandong) Co., Ltd.
+    id: org.魯志伸新材料-山東-有限公司
+    name: 魯志伸新材料（山東）有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2024-12-31'
+  suppliers:
+  - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 醋酸纖維素製造子公司
+    detail: 向集團生產子公司供應溶解漿
     details:
-    - 醋酸纖維素製造子公司
-    edge: ef1ae3c07e6ce
+    - 向集團生產子公司供應溶解漿
+    edge: eb1d1096e7e9a
     evidence_level: primary
-    id: org.acetek-material-china
-    name: 中峰化學有限公司
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
+    id: org.dsc-cellulose-trading-pte-fzco
+    name: DSC Cellulose Trading Pte FZCO
+    ranking_basis: disclosed
+    share_basis: purchases
+    share_pct: 36.13
     weight: 1
-  - as_of: '2026-06-30'
+  - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 醋酸酐製造子公司
+    detail: 醋片；契約方為Cerdia International GmbH
     details:
-    - 醋酸酐製造子公司
-    edge: e68d158b14a10
+    - 醋片；契約方為Cerdia International GmbH
+    edge: e5b503ff3d7f3
     evidence_level: primary
-    id: org.acetek-momentum-china
-    name: 孟玄新材料有限公司
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
+    id: org.cerdia
+    name: Cerdia
+    ranking_basis: disclosed
+    share_basis: purchases
+    share_pct: 31.85
     weight: 1
-  - as_of: '2026-10-15'
+  - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 中國營運子公司
+    detail: 向子公司中峰化學供應木漿
     details:
-    - 中國營運子公司
-    edge: e68e7c9d2ef64
+    - 向子公司中峰化學供應木漿
+    edge: ed6aff21d3d50
     evidence_level: primary
-    id: org.jinan-acetate-chemical-china
-    name: 濟南大自然新材料有限公司
+    id: org.borregaard-as
+    name: Borregaard AS
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-10-15'
+  - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 集團投資控股子公司
+    detail: 向子公司濟南大自然供應木漿
     details:
-    - 集團投資控股子公司
-    edge: eceac8f09ba56
+    - 向子公司濟南大自然供應木漿
+    edge: e7042817070da
     evidence_level: primary
-    id: org.my-parents-living-technology
-    name: 慈嚴生活科技有限公司
+    id: org.rayonier-a-m-sales-and-technology-inc
+    name: Rayonier A.M. Sales and Technology Inc.
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 向子公司中峰化學供應棉漿
+    details:
+    - 向子公司中峰化學供應棉漿
+    edge: ed921d531c994
+    evidence_level: primary
+    id: org.山東高密銀鷹化纖進出口有限公司
+    name: 山東高密銀鷹化纖進出口有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 現金約美金2.14億元及新發行普通股109,294,940股
+    as_of: '2026-09-21'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 擬收購Cerdia上層控股公司BCP VII Jade HoldCo (Cayman) Ltd.全部股權
+    details:
+    - 擬收購Cerdia上層控股公司BCP VII Jade HoldCo (Cayman) Ltd.全部股權
+    edge: eef90f5e06e4e
+    event_date: '2026-09-21'
+    events:
+    - amount: 現金約美金2.14億元及新發行普通股109,294,940股
+      detail: 擬收購Cerdia上層控股公司BCP VII Jade HoldCo (Cayman) Ltd.全部股權
+      event_date: '2026-09-21'
+    evidence_level: primary
+    id: org.bcp-vii-jade-topco-cayman-ltd
+    name: BCP VII Jade TopCo (Cayman) Ltd.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新臺幣61,562仟元
+    as_of: '2024-06-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團處分部分怡亮公司股份
+    details:
+    - 集團處分部分怡亮公司股份
+    edge: e7d5468641b88
+    event_date: null
+    events:
+    - amount: 新臺幣61,562仟元
+      detail: 集團處分部分怡亮公司股份
+      event_date: null
+    evidence_level: primary
+    id: org.la-es-laminati-estrusi-termoplastici-s-r-l
+    name: LA/ES LAMINATI ESTRUSI TERMOPLASTICI S.R.L.
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣13,719仟元
+    as_of: '2025-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團新增投資40%股權
+    details:
+    - 集團新增投資40%股權
+    edge: e36de62f6ba44
+    event_date: null
+    events:
+    - amount: 新台幣13,719仟元
+      detail: 集團新增投資40%股權
+      event_date: null
+    evidence_level: primary
+    id: org.中峰新材料-山東-有限公司
+    name: 中峰新材料(山東)有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2024-08-22'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司簽訂合資設立中峰新材料的投資備忘錄
+    details:
+    - 子公司簽訂合資設立中峰新材料的投資備忘錄
+    edge: ec1a8c90debfd
+    event_date: '2024-08-22'
+    events:
+    - amount: null
+      detail: 子公司簽訂合資設立中峰新材料的投資備忘錄
+      event_date: '2024-08-22'
+    evidence_level: primary
+    id: org.創耀塑料有限公司
+    name: 創耀塑料有限公司
+    ranking_basis: unranked
+    role: party
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新臺幣22,386仟元
+    as_of: '2024-06-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團處分部分怡亮公司股份予怡亮公司
+    details:
+    - 集團處分部分怡亮公司股份予怡亮公司
+    edge: e9c6289bfc40a
+    event_date: null
+    events:
+    - amount: 新臺幣22,386仟元
+      detail: 集團處分部分怡亮公司股份予怡亮公司
+      event_date: null
+    evidence_level: primary
+    id: org.怡亮有限公司
+    name: 怡亮有限公司
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 富吉拉絲束合資案的合作對象：2026年3月公告尚未簽署正式合資協議，未具名。
+- 東南亞當地大型菸草公司：2025年報導僅揭露洽談絲束合資，未確認法人。
 website: www.acetekgroup.com
 tax_id: '42328858'
 incorporated: '2014-09-25'
 listed: '2015-11-09'
 foreign_registration: KY 開曼群島
-as_of: '2026-10-15'
+as_of: '2026-10-25'
 confidence: ai_cross_checked
 has_research: true
 evidence:
-  tw.4763#e01:
-    locator: 集團簡介第一段：材料KY與慈嚴的持股關係
-    published_date: null
-    publisher: 濟南大自然新材料股份有限公司
+  tw.4763#e_acquisition_parties:
+    locator: 重大訊息第11款，第3及4項
+    published_date: '2026-09-21'
+    publisher: 公開資訊觀測站（PChome刊載）
+    quote_check: not_found
+    title: 材料*-KY：本公司董事會決議通過股權收購案
+    url: https://stock.pchome.com.tw/m/news/cat1/20260921/9700004763202609211.html
+  tw.4763#e_acquisition_status:
+    locator: 內文交易標的及交割條件說明
+    published_date: '2026-09-21'
+    publisher: 中央社
     quote_check: found
-    title: 集團簡介－濟南大自然新材料股份有限公司
-    url: https://acetekgroup.com/group/
-  tw.4763#e02:
-    locator: 集團簡介第一段：慈嚴與中國營運公司的持股關係
-    published_date: null
+    title: 材料-KY宣布併全球前3大醋酸纖維絲束製造商Cerdia
+    url: https://www.cna.com.tw/news/afe/202609210305.aspx
+  tw.4763#e_acquisition_terms:
+    locator: 第10項，併購對價種類及資金來源
+    published_date: '2026-09-21'
+    publisher: 公開資訊觀測站（PChome刊載）
+    quote_check: not_found
+    title: 材料*-KY：本公司董事會決議通過股權收購案
+    url: https://stock.pchome.com.tw/m/news/cat1/20260921/9700004763202609211.html
+  tw.4763#e_cerdia_borregaard_contract:
+    locator: 第88頁，重要契約，第10及11項
+    published_date: '2026-06-11'
     publisher: 濟南大自然新材料股份有限公司
+    quote_check: unreachable
+    title: 2025年度年報（FinancialFilings鏡像）
+    url: https://financialfilings.com/filings/ace-4763/annual-report/2026/48040368/
+  tw.4763#e_competitors:
+    locator: 內文首段，公司說明醋酸絲束市場
+    published_date: '2026-09-22'
+    publisher: MoneyDJ
     quote_check: found
-    title: 集團簡介－濟南大自然新材料股份有限公司
-    url: https://acetekgroup.com/group/
-  tw.4763#e03:
-    locator: PDF第74頁／印刷第69頁：二醋酸纖維絲束產品用途
-    published_date: null
+    title: 材料*-KY砸百億小吃大，併購同業Cerdia
+    url: https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=33a99edc-a461-4c13-8ed8-7a4995e91575
+  tw.4763#e_dsc_rayonier_contract:
+    locator: 第88頁，重要契約，第8及9項
+    published_date: '2026-06-11'
     publisher: 濟南大自然新材料股份有限公司
-    quote_check: found
-    title: 2024年度年報
-    url: https://www.acetekgroup.com/static/upload/file/20260122/1769043353123462.pdf
-  tw.4763#e04:
-    locator: PDF第67頁／印刷第62頁：營業比重表，二醋酸纖維絲束列，2024年度營業額及比重
-    published_date: null
+    quote_check: unreachable
+    title: 2025年度年報（FinancialFilings鏡像）
+    url: https://financialfilings.com/filings/ace-4763/annual-report/2026/48040368/
+  tw.4763#e_filament:
+    locator: 第88頁，重要契約，第7項
+    published_date: '2026-06-11'
     publisher: 濟南大自然新材料股份有限公司
+    quote_check: unreachable
+    title: 2025年度年報（FinancialFilings鏡像）
+    url: https://financialfilings.com/filings/ace-4763/annual-report/2026/48040368/
+  tw.4763#e_four_customers:
+    locator: 內文第3段
+    published_date: '2022-05-16'
+    publisher: 鉅亨網
     quote_check: found
-    title: 2024年度年報
-    url: https://www.acetekgroup.com/static/upload/file/20260122/1769043353123462.pdf
-  tw.4763#e05:
-    locator: PDF第67頁／印刷第62頁：營業比重表，二醋酸纖維素列，2024年度營業額及比重
-    published_date: null
+    title: 材料-KY拿下全球四大菸草商訂單 擬再擴增4成絲束產能
+    url: https://news.cnyes.com/news/id/4873730
+  tw.4763#e_gaomi_contract:
+    locator: 第88頁，重要契約，第12項
+    published_date: '2026-06-11'
     publisher: 濟南大自然新材料股份有限公司
+    quote_check: unreachable
+    title: 2025年度年報（FinancialFilings鏡像）
+    url: https://financialfilings.com/filings/ace-4763/annual-report/2026/48040368/
+  tw.4763#e_imperial_order:
+    locator: 內文第3段
+    published_date: '2022-05-16'
+    publisher: 鉅亨網
     quote_check: found
-    title: 2024年度年報
-    url: https://www.acetekgroup.com/static/upload/file/20260122/1769043353123462.pdf
-  tw.4763#e06:
-    locator: PDF第67頁／印刷第62頁：營業比重表，醋酸酐列，2024年度營業額及比重
-    published_date: null
+    title: 材料-KY拿下全球四大菸草商訂單 擬再擴增4成絲束產能
+    url: https://news.cnyes.com/news/id/4873730
+  tw.4763#e_jv_chuangyao:
+    locator: 重大訊息第10款，第2及5項
+    published_date: '2024-08-22'
+    publisher: 公開資訊觀測站（鉅亨網刊載）
+    quote_check: found
+    title: 材料-KY：代重要子公司濟南大自然新材料有限公司公告與策略合作夥伴簽訂投資合同(MOU)
+    url: https://news.cnyes.com/news/id/5693410
+  tw.4763#e_north_investment:
+    locator: 重大訊息第20款，第3項
+    published_date: '2024-05-30'
+    publisher: 公開資訊觀測站（鉅亨網刊載）
+    quote_check: found
+    title: 材料-KY：代子公司公告設立大陸公司
+    url: https://news.cnyes.com/news/id/5581080
+  tw.4763#e_petro_contract:
+    locator: 第88頁，重要契約，第1項
+    published_date: '2026-06-11'
     publisher: 濟南大自然新材料股份有限公司
-    quote_check: found
-    title: 2024年度年報
-    url: https://www.acetekgroup.com/static/upload/file/20260122/1769043353123462.pdf
-  tw.4763#e07:
-    locator: PDF第61頁／印刷第56頁：轉投資關係企業資料，中峰化學列
-    published_date: null
+    quote_check: unreachable
+    title: 2025年度年報（FinancialFilings鏡像）
+    url: https://financialfilings.com/filings/ace-4763/annual-report/2026/48040368/
+  tw.4763#e_pm_bat_contract:
+    locator: 第88頁，重要契約，第3及4項
+    published_date: '2026-06-11'
     publisher: 濟南大自然新材料股份有限公司
-    quote_check: found
-    title: 2024年度年報
-    url: https://www.acetekgroup.com/static/upload/file/20260122/1769043353123462.pdf
-  tw.4763#e08:
-    locator: 中峰化學有限公司介紹
-    published_date: null
+    quote_check: unreachable
+    title: 2025年度年報（FinancialFilings鏡像）
+    url: https://financialfilings.com/filings/ace-4763/annual-report/2026/48040368/
+  tw.4763#e_products:
+    locator: 第65頁，業務範圍
+    published_date: '2026-06-11'
     publisher: 濟南大自然新材料股份有限公司
-    quote_check: found
-    title: 中峰化學有限公司－組織架構
-    url: https://acetekgroup.com/case/25.html
-  tw.4763#e09:
-    locator: 孟玄新材料有限公司介紹第一段
-    published_date: null
+    quote_check: unreachable
+    title: 2025年度年報（FinancialFilings鏡像）
+    url: https://financialfilings.com/filings/ace-4763/annual-report/2026/48040368/
+  tw.4763#e_purchase_shares:
+    locator: 第83頁，主要供應商資料；2025年度金額及占全年進貨淨額比率
+    published_date: '2026-06-11'
     publisher: 濟南大自然新材料股份有限公司
-    quote_check: found
-    title: 孟玄新材料有限公司－組織架構
-    url: https://acetekgroup.com/case/26.html
-  tw.4763#e10:
-    locator: 第19頁，十一、子公司：列入合併財務報告之子公司表；投資公司與子公司欄，孟玄列
-    published_date: null
+    quote_check: unreachable
+    title: 2025年度年報（FinancialFilings鏡像）
+    url: https://financialfilings.com/filings/ace-4763/annual-report/2026/48040368/
+  tw.4763#e_revenue:
+    locator: 第65頁，伍、營運概況，一、業務內容，營業比重
+    published_date: '2026-06-11'
     publisher: 濟南大自然新材料股份有限公司
-    quote_check: found
-    title: 民國115及114年第2季合併財務報告
-    url: https://www.acetekgroup.com/static/upload/file/20260829/1787972709621362.pdf
-  tw.4763#e11:
-    locator: 第19頁，十一、子公司：列入合併財務報告之子公司表；投資公司與子公司欄，阿斯泰克列
-    published_date: null
+    quote_check: unreachable
+    title: 2025年度年報（FinancialFilings鏡像）
+    url: https://financialfilings.com/filings/ace-4763/annual-report/2026/48040368/
+  tw.4763#e_sale_date:
+    locator: 關係人名稱及關係，註1
+    published_date: '2026-03-20'
     publisher: 濟南大自然新材料股份有限公司
-    quote_check: found
-    title: 民國115及114年第2季合併財務報告
-    url: https://www.acetekgroup.com/static/upload/file/20260829/1787972709621362.pdf
-  tw.4763#e12:
-    locator: 阿斯泰克公司醋酸長絲介紹
-    published_date: null
+    quote_check: unreachable
+    title: 2025年度財務報告申報資料（FinancialFilings鏡像）
+    url: https://financialfilings.com/filings/ace-4763/annual-report/2026/60570101/
+  tw.4763#e_sale_values:
+    locator: 關係人交易，處分金融資產；價款單位為新臺幣仟元，2024年度欄
+    published_date: '2026-03-20'
     publisher: 濟南大自然新材料股份有限公司
-    quote_check: found
-    title: 森綾－醋酸纖維長絲產品介紹
-    url: https://acetekgroup.com/MorAya/
-  tw.4763#e13:
-    locator: 森綾產品用途
-    published_date: null
+    quote_check: unreachable
+    title: 2025年度財務報告申報資料（FinancialFilings鏡像）
+    url: https://financialfilings.com/filings/ace-4763/annual-report/2026/60570101/
+  tw.4763#e_sub_astek_lu:
+    locator: 列入合併財務報表之子公司
+    published_date: '2026-03-20'
     publisher: 濟南大自然新材料股份有限公司
-    quote_check: found
-    title: 森綾－醋酸纖維長絲產品介紹
-    url: https://acetekgroup.com/MorAya/
-  tw.4763#e14:
-    locator: 產品介紹第二段
-    published_date: null
+    quote_check: unreachable
+    title: 2025年度財務報告申報資料（FinancialFilings鏡像）
+    url: https://financialfilings.com/filings/ace-4763/annual-report/2026/60570101/
+  tw.4763#e_sub_ci_jinan:
+    locator: 列入合併財務報表之子公司
+    published_date: '2026-03-20'
     publisher: 濟南大自然新材料股份有限公司
-    quote_check: found
-    title: 紡絲級醋酸纖維素－產品中心
-    url: https://acetekgroup.com/product/29.html
-  tw.4763#e15:
-    locator: 產品介紹第一段：用途
-    published_date: null
+    quote_check: unreachable
+    title: 2025年度財務報告申報資料（FinancialFilings鏡像）
+    url: https://financialfilings.com/filings/ace-4763/annual-report/2026/60570101/
+  tw.4763#e_sub_lu_remaining:
+    locator: 列入合併財務報表之子公司
+    published_date: '2026-03-20'
     publisher: 濟南大自然新材料股份有限公司
-    quote_check: found
-    title: 紡絲級醋酸纖維素－產品中心
-    url: https://acetekgroup.com/product/29.html
-  tw.4763#e16:
-    locator: 產品介紹第三段
-    published_date: null
+    quote_check: unreachable
+    title: 2025年度財務報告申報資料（FinancialFilings鏡像）
+    url: https://financialfilings.com/filings/ace-4763/annual-report/2026/60570101/
+  tw.4763#e_sub_meng:
+    locator: 列入合併財務報表之子公司
+    published_date: '2026-03-20'
     publisher: 濟南大自然新材料股份有限公司
-    quote_check: found
-    title: 醋酸酐－產品中心
-    url: https://acetekgroup.com/product/28.html
-  tw.4763#e17:
-    locator: PDF第51頁／印刷第50頁，32. SEGMENT INFORMATION，主要產品收入表；2025及2024年度，單位新臺幣仟元
-    published_date: null
+    quote_check: unreachable
+    title: 2025年度財務報告申報資料（FinancialFilings鏡像）
+    url: https://financialfilings.com/filings/ace-4763/annual-report/2026/60570101/
+  tw.4763#e_sub_north_sg:
+    locator: 列入合併財務報表之子公司
+    published_date: '2026-03-20'
     publisher: 濟南大自然新材料股份有限公司
-    quote_check: found
-    title: 2025及2024年度英文合併財務報告
-    url: https://www.acetekgroup.com/static/upload/file/20260831/1788146327206790.pdf
-  tw.4763#e18:
-    locator: 產品介紹第一段
-    published_date: null
+    quote_check: unreachable
+    title: 2025年度財務報告申報資料（FinancialFilings鏡像）
+    url: https://financialfilings.com/filings/ace-4763/annual-report/2026/60570101/
+  tw.4763#e_sub_zhongfeng:
+    locator: 列入合併財務報表之子公司
+    published_date: '2026-03-20'
     publisher: 濟南大自然新材料股份有限公司
+    quote_check: unreachable
+    title: 2025年度財務報告申報資料（FinancialFilings鏡像）
+    url: https://financialfilings.com/filings/ace-4763/annual-report/2026/60570101/
+  tw.4763#e_ttl:
+    locator: 內文客戶介紹段落
+    published_date: '2018-04-02'
+    publisher: MoneyDJ
     quote_check: found
-    title: 塑膠級醋酸纖維素－產品中心
-    url: https://acetekgroup.com/product/30.html
-  tw.4763#e19:
-    locator: PDF第25頁／印刷第24頁，11. SUBSIDIARIES；Investor與Investee欄，Acetek Aspiration列
-    published_date: null
+    title: 出貨量與元月相近，材料3月營收估1.5~1.6億
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=c8a3a0fe-ef19-4e9c-8014-e3cfb8cc1311
+  tw.4763#e_uses:
+    locator: 第81頁，主要產品之重要用途
+    published_date: '2026-06-11'
     publisher: 濟南大自然新材料股份有限公司
-    quote_check: found
-    title: 2025及2024年度英文合併財務報告
-    url: https://www.acetekgroup.com/static/upload/file/20260831/1788146327206790.pdf
-  tw.4763#e20:
-    locator: PDF第25頁／印刷第24頁，11. SUBSIDIARIES；Investor與Investee欄，Acetek Guardian列
-    published_date: null
+    quote_check: unreachable
+    title: 2025年度年報（FinancialFilings鏡像）
+    url: https://financialfilings.com/filings/ace-4763/annual-report/2026/48040368/
+  tw.4763#e_zhongfeng_new_investment:
+    locator: 第19頁，十二、採用權益法之投資
+    published_date: '2026-04-08'
     publisher: 濟南大自然新材料股份有限公司
-    quote_check: found
-    title: 2025及2024年度英文合併財務報告
-    url: https://www.acetekgroup.com/static/upload/file/20260831/1788146327206790.pdf
+    quote_check: unreachable
+    title: 2025年第1季合併財務報告（FinancialFilings鏡像）
+    url: https://financialfilings.com/filings/ace-4763/interim-quarterly-report/2026/33803917/

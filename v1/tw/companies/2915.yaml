@@ -18,84 +18,122 @@ industry:
   l3_name: 量販與便利商店
   l3_name_en: Hypermarkets & Convenience Stores
 primary_chain_position: downstream
-summary_short: 以量販零售、紡織成衣貿易與品牌零售取得營收。
-summary_long: 潤泰全球以量販零售、紡織成衣貿易及品牌零售取得營收。2025年量販業占40.85%，紡織貿易占24.01%，零售成衣占19.26%，另有營建業4.45%及投資收入11.43%。布料產品涵蓋牛津布、法蘭絨、防火布、襯衫格子布及印花布，並提供成衣與團體制服訂製服務。品牌零售包括Nautica、Jeep與Whittard，量販事業經營大全聯中和店，銷售生鮮食品與生活雜貨。主要子公司包括景鴻投資、興業建設及鑫士代企業。
+summary_short: 經營量販、紡織貿易與品牌零售，並從事營建及轉投資業務。
+summary_long: 潤泰全經營量販、紡織貿易、零售成衣、營建及投資業務。2025年量販占營收40.85%，為最大來源，紡織貿易與零售成衣分別占24.01%及19.26%，營建與投資收入則占4.45%及11.43%。量販業務由中和分公司營運大全聯中和店；布料產品包括牛津布、法蘭絨與防火布，另承接成衣及團體制服業務。零售事業代理Nautica、Jeep及Whittard等品牌。2025年公告以新台幣10.6億元出售觀音廠土地及廠房予群光電子，並參與潤成投控現金增資；子公司Full Shine另公告投資私募基金。
 segments:
 - evidence_ids:
-  - e02
-  - e03
-  id: seg_hypermarket
+  - e01
+  id: hypermarket
   name: 量販業
   period: '2025'
   revenue_share_pct: 40.85
 - evidence_ids:
   - e02
-  - e04
-  id: seg_textile
+  id: textile
   name: 紡織貿易業
   period: '2025'
   revenue_share_pct: 24.01
 - evidence_ids:
-  - e02
-  - e05
-  id: seg_retail
+  - e03
+  id: retail
   name: 零售成衣
   period: '2025'
   revenue_share_pct: 19.26
 - evidence_ids:
-  - e02
-  - e06
-  id: seg_construction
+  - e04
+  id: construction
   name: 營建業
   period: '2025'
   revenue_share_pct: 4.45
 - evidence_ids:
-  - e02
-  - e07
-  id: seg_investment
+  - e05
+  id: investment
   name: 投資收入
   period: '2025'
   revenue_share_pct: 11.43
 relations:
+  customers:
+  - as_of: 2025-06
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 紡織貿易布料客戶
+    details:
+    - 紡織貿易布料客戶
+    edge: ee2301cda3203
+    evidence_level: primary
+    id: org.a-f
+    name: A&F
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2025-06
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 紡織貿易布料客戶
+    details:
+    - 紡織貿易布料客戶
+    edge: ef554740fe415
+    evidence_level: primary
+    id: org.j-crew
+    name: J.Crew
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2025-06
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 紡織貿易布料客戶
+    details:
+    - 紡織貿易布料客戶
+    edge: e2afbdd7927e2
+    evidence_level: primary
+    id: org.kohl-s
+    name: Kohl‘s
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2025-06
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 紡織貿易布料客戶
+    details:
+    - 紡織貿易布料客戶
+    edge: e66bc344a1c23
+    evidence_level: primary
+    id: org.polo
+    name: Polo
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
+  - as_of: '2025-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 一般投資業子公司
+    details:
+    - 一般投資業子公司
+    edge: ed5d255d25888
+    evidence_level: primary
+    id: org.full-shine-international
+    name: Full Shine International Holding Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持股50.94%的建設子公司
+    detail: 建設事業子公司
     details:
-    - 直接持股50.94%的建設子公司
+    - 建設事業子公司
     edge: ec74f87214705
     evidence_level: primary
     id: org.hsing-yeh-construction
     name: 興業建設股份有限公司
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
-  - as_of: '2025-12-31'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 直接持股55%的一般投資子公司
-    details:
-    - 直接持股55%的一般投資子公司
-    edge: e84a407591c8d
-    evidence_level: primary
-    id: org.jing-hong-investment
-    name: 景鴻投資股份有限公司
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
-  - as_of: '2025-12-31'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 直接持股100%的國際貿易子公司
-    details:
-    - 直接持股100%的國際貿易子公司
-    edge: ef806e31e2f61
-    evidence_level: primary
-    id: org.xin-shi-dai-enterprise
-    name: 鑫士代企業股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -108,11 +146,15 @@ relations:
     detail: 購入桃園觀音土地與建物作物流倉儲
     details:
     - 購入桃園觀音土地與建物作物流倉儲
+    - 出售觀音廠土地及廠房
     edge: e35cb8399b19b
     event_date: '2025-08-13'
     events:
     - amount: 新台幣1,060,000,000元
       detail: 購入桃園觀音土地與建物作物流倉儲
+      event_date: '2025-08-13'
+    - amount: 新台幣10.6億元
+      detail: 出售觀音廠土地及廠房
       event_date: '2025-08-13'
     evidence_level: primary
     id: tw.2385
@@ -121,103 +163,366 @@ relations:
     role: seller
     share_basis: null
     share_pct: null
+    weight: 2
+  - amount: 美金15,000,000元
+    as_of: '2026-08-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司Full Shine取得私募基金
+    details:
+    - 子公司Full Shine取得私募基金
+    edge: ef0cfe8c6cb66
+    event_date: '2026-08-31'
+    events:
+    - amount: 美金15,000,000元
+      detail: 子公司Full Shine取得私募基金
+      event_date: '2026-08-31'
+    evidence_level: primary
+    id: org.achi-capital-partners-global-fund-ii-lp
+    name: Achi Capital Partners Global Fund II LP
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
     weight: 1
+  - amount: 美金20,000,000元
+    as_of: '2025-10-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司Full Shine擬投資私募基金
+    details:
+    - 子公司Full Shine擬投資私募基金
+    edge: e43e11249709d
+    event_date: '2025-10-31'
+    events:
+    - amount: 美金20,000,000元
+      detail: 子公司Full Shine擬投資私募基金
+      event_date: '2025-10-31'
+    evidence_level: primary
+    id: org.horizon-l-p
+    name: HORIZON L.P.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣103,500仟元
+    as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 2025年12月認購現金增資
+    details:
+    - 2025年12月認購現金增資
+    - 2024年12月認購現金增資
+    edge: ee0bcf408b0a6
+    event_date: null
+    events:
+    - amount: 新台幣103,500仟元
+      detail: 2025年12月認購現金增資
+      event_date: null
+    - amount: 新台幣115,000仟元
+      detail: 2024年12月認購現金增資
+      event_date: null
+    evidence_level: primary
+    id: org.ruen-chen-investment-holding
+    name: 潤成投資控股股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣53,204仟元
+    as_of: 2024-03
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 2024年3月認購現金增資
+    details:
+    - 2024年3月認購現金增資
+    edge: e5cc27818c88a
+    event_date: null
+    events:
+    - amount: 新台幣53,204仟元
+      detail: 2024年3月認購現金增資
+      event_date: null
+    evidence_level: primary
+    id: tw.4147
+    name: 中裕
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣224,000仟元
+    as_of: 2024-11
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 2024年11月認購現金增資
+    details:
+    - 2024年11月認購現金增資
+    edge: e90c6d2f6ac10
+    event_date: null
+    events:
+    - amount: 新台幣224,000仟元
+      detail: 2024年11月認購現金增資
+      event_date: null
+    evidence_level: primary
+    id: tw.4174
+    name: 浩鼎
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣10,730仟元
+    as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 2025年12月認購現金增資
+    details:
+    - 2025年12月認購現金增資
+    edge: e5bfd141b35e6
+    event_date: null
+    events:
+    - amount: 新台幣10,730仟元
+      detail: 2025年12月認購現金增資
+      event_date: null
+    evidence_level: primary
+    id: tw.5263
+    name: 智崴
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣24,123仟元
+    as_of: 2025-08
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 2025年8月認購現金增資
+    details:
+    - 2025年8月認購現金增資
+    - 2024年4月認購現金增資
+    edge: e869c1bd80c25
+    event_date: null
+    events:
+    - amount: 新台幣24,123仟元
+      detail: 2025年8月認購現金增資
+      event_date: null
+    - amount: 新台幣108,818仟元
+      detail: 2024年4月認購現金增資
+      event_date: null
+    evidence_level: primary
+    id: tw.6541
+    name: 泰福-KY
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣240,000仟元
+    as_of: 2024-06
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 2024年6月認購現金增資
+    details:
+    - 2024年6月認購現金增資
+    edge: e96a431ea9bac
+    event_date: null
+    events:
+    - amount: 新台幣240,000仟元
+      detail: 2024年6月認購現金增資
+      event_date: null
+    evidence_level: primary
+    id: tw.6945
+    name: 圓祥生技
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 紡織與成衣供應鏈的合作工廠，官網未揭露具體公司名稱。
+- Polo、Kohl‘s、J.Crew及A&F為公司揭露的客戶名稱，未揭露實際簽…
 website: w8.ruentex.com.tw/
 tax_id: '14053007'
 incorporated: '1976-01-14'
 listed: '1977-07-20'
-as_of: '2026-10-14'
+as_of: '2026-10-25'
 confidence: ai_cross_checked
 has_research: true
 evidence:
+  tw.2915#e01:
+    locator: 第60頁，營運概況／業務內容／營業比重，量販業列；金額單位為新台幣仟元
+    published_date: null
+    publisher: 潤泰全球股份有限公司
+    quote_check: found
+    title: 潤泰全球114年度年報
+    url: https://w8.ruentex.com.tw/wp-content/uploads/2026/05/114arp.pdf
   tw.2915#e02:
-    locator: 第91頁，附註十四（三），114年度外部客戶收入；依序為581,116、466,285、988,660、107,826、276,726仟元
+    locator: 第60頁，營運概況／業務內容／營業比重，紡織貿易業列
     published_date: null
     publisher: 潤泰全球股份有限公司
     quote_check: found
-    title: 潤泰全球股份有限公司及子公司114年度及113年度合併財務報告
-    url: https://w8.ruentex.com.tw/en/storage/2026/04/202504con-CN.pdf
+    title: 潤泰全球114年度年報
+    url: https://w8.ruentex.com.tw/wp-content/uploads/2026/05/114arp.pdf
   tw.2915#e03:
-    locator: 印刷頁60／PDF第64頁，營業比重表，量販業列；收入單位為新台幣仟元，比重單位為%
+    locator: 第60頁，營運概況／業務內容／營業比重，零售成衣列
     published_date: null
     publisher: 潤泰全球股份有限公司
     quote_check: found
-    title: 潤泰全球股份有限公司114年度年報
+    title: 潤泰全球114年度年報
     url: https://w8.ruentex.com.tw/wp-content/uploads/2026/05/114arp.pdf
   tw.2915#e04:
-    locator: 印刷頁60／PDF第64頁，營業比重表，紡織貿易業列；收入單位為新台幣仟元，比重單位為%
+    locator: 第60頁，營運概況／業務內容／營業比重，營建業列
     published_date: null
     publisher: 潤泰全球股份有限公司
     quote_check: found
-    title: 潤泰全球股份有限公司114年度年報
+    title: 潤泰全球114年度年報
     url: https://w8.ruentex.com.tw/wp-content/uploads/2026/05/114arp.pdf
   tw.2915#e05:
-    locator: 印刷頁60／PDF第64頁，營業比重表，零售成衣列；收入單位為新台幣仟元，比重單位為%
+    locator: 第60頁，營運概況／業務內容／營業比重，投資收入列
     published_date: null
     publisher: 潤泰全球股份有限公司
     quote_check: found
-    title: 潤泰全球股份有限公司114年度年報
+    title: 潤泰全球114年度年報
     url: https://w8.ruentex.com.tw/wp-content/uploads/2026/05/114arp.pdf
   tw.2915#e06:
-    locator: 印刷頁60／PDF第64頁，營業比重表，營建業列；收入單位為新台幣仟元，比重單位為%
+    locator: 量販事業／營運據點
     published_date: null
     publisher: 潤泰全球股份有限公司
     quote_check: found
-    title: 潤泰全球股份有限公司114年度年報
-    url: https://w8.ruentex.com.tw/wp-content/uploads/2026/05/114arp.pdf
+    title: 量販事業
+    url: https://w8.ruentex.com.tw/mass-merchandising-business/
   tw.2915#e07:
-    locator: 印刷頁60／PDF第64頁，營業比重表，投資收入列；收入單位為新台幣仟元，比重單位為%
-    published_date: null
-    publisher: 潤泰全球股份有限公司
-    quote_check: found
-    title: 潤泰全球股份有限公司114年度年報
-    url: https://w8.ruentex.com.tw/wp-content/uploads/2026/05/114arp.pdf
-  tw.2915#e08:
-    locator: 第12頁，紡織貿易事業
+    locator: 第12頁，紡織貿易及成衣團服事業／拳頭產品
     published_date: '2026-06-15'
     publisher: 潤泰全球股份有限公司
     quote_check: found
     title: 潤泰全球2026年第一次法人說明會簡報
     url: https://w8.ruentex.com.tw/wp-content/uploads/2026/06/202606%E6%B3%95%E8%AA%AA.pdf
-  tw.2915#e09:
-    locator: 團服訂製及品牌成衣貿易服務說明
+  tw.2915#e08:
+    locator: 頁面標題及團服訂製服務內容
     published_date: null
     publisher: 潤泰全球股份有限公司
     quote_check: found
     title: 成衣貿易事業（成衣團服）
     url: https://w8.ruentex.com.tw/projects/garment-trading-business/
+  tw.2915#e09:
+    locator: 第13頁，零售事業／台灣地區代理品牌表
+    published_date: '2026-06-15'
+    publisher: 潤泰全球股份有限公司
+    quote_check: found
+    title: 潤泰全球2026年第一次法人說明會簡報
+    url: https://w8.ruentex.com.tw/wp-content/uploads/2026/06/202606%E6%B3%95%E8%AA%AA.pdf
   tw.2915#e10:
-    locator: 第14頁，流通事業
-    published_date: '2026-06-15'
+    locator: 第12頁，紡織貿易／主要客戶
+    published_date: '2025-06-18'
     publisher: 潤泰全球股份有限公司
     quote_check: found
-    title: 潤泰全球2026年第一次法人說明會簡報
-    url: https://w8.ruentex.com.tw/wp-content/uploads/2026/06/202606%E6%B3%95%E8%AA%AA.pdf
+    title: 潤泰全球2025年6月法人說明會簡報
+    url: https://w8.ruentex.com.tw/wp-content/uploads/2025/12/202506%E6%B3%95%E8%AA%AA.pdf
   tw.2915#e11:
-    locator: 第13頁，零售事業，台灣地區代理品牌表
-    published_date: '2026-06-15'
-    publisher: 潤泰全球股份有限公司
-    quote_check: found
-    title: 潤泰全球2026年第一次法人說明會簡報
-    url: https://w8.ruentex.com.tw/wp-content/uploads/2026/06/202606%E6%B3%95%E8%AA%AA.pdf
-  tw.2915#e12:
-    locator: 第22頁，列入合併財務報告之子公司表，潤泰全球投資景鴻投資列，114年12月31日持股55%
+    locator: 第17頁，列入合併財務報告之子公司；投資公司為潤泰全球，Full Shine列
     published_date: null
     publisher: 潤泰全球股份有限公司
     quote_check: found
-    title: 潤泰全球股份有限公司及子公司114年度及113年度合併財務報告
+    title: 潤泰全球114年第二季合併財務報告
+    url: https://w8.ruentex.com.tw/wp-content/uploads/2025/11/202502con-CN.pdf
+  tw.2915#e12:
+    locator: 第22頁，列入合併財務報告之子公司；投資公司為潤泰全球，興業建設列
+    published_date: null
+    publisher: 潤泰全球股份有限公司
+    quote_check: found
+    title: 潤泰全球114年度及113年度合併財務報告
     url: https://w8.ruentex.com.tw/en/storage/2026/04/202504con-CN.pdf
   tw.2915#e13:
-    locator: 第22頁，列入合併財務報告之子公司表，潤泰全球投資興業建設列，114年12月31日持股50.94%
-    published_date: null
-    publisher: 潤泰全球股份有限公司
+    locator: 公告第1項，交易標的
+    published_date: '2025-08-13'
+    publisher: 鉅亨網／潤泰全球重大訊息
     quote_check: found
-    title: 潤泰全球股份有限公司及子公司114年度及113年度合併財務報告
-    url: https://w8.ruentex.com.tw/en/storage/2026/04/202504con-CN.pdf
+    title: 潤泰全：公告本公司處分觀音廠土地及廠房事宜
+    url: https://news.cnyes.com/news/id/6109338
   tw.2915#e14:
-    locator: 第22頁，列入合併財務報告之子公司表，潤泰全球投資鑫士代企業列，114年12月31日持股100%
+    locator: 公告第5項，交易總金額
+    published_date: '2025-08-13'
+    publisher: 鉅亨網／潤泰全球重大訊息
+    quote_check: found
+    title: 潤泰全：公告本公司處分觀音廠土地及廠房事宜
+    url: https://news.cnyes.com/news/id/6109338
+  tw.2915#e15:
+    locator: 公告第6項，交易相對人；第2項事實發生日為114年8月13日
+    published_date: '2025-08-13'
+    publisher: 鉅亨網／潤泰全球重大訊息
+    quote_check: found
+    title: 潤泰全：公告本公司處分觀音廠土地及廠房事宜
+    url: https://news.cnyes.com/news/id/6109338
+  tw.2915#e16:
+    locator: 第44頁，附註六（七）13；114年12月及113年12月認購潤成投控現金增資金額，單位新台幣仟元
     published_date: null
     publisher: 潤泰全球股份有限公司
     quote_check: found
-    title: 潤泰全球股份有限公司及子公司114年度及113年度合併財務報告
+    title: 潤泰全球114年度及113年度合併財務報告
     url: https://w8.ruentex.com.tw/en/storage/2026/04/202504con-CN.pdf
+  tw.2915#e17:
+    locator: 第37頁，附註六（五）；114年8月及113年4月參與泰福生技現金增資金額，單位新台幣仟元
+    published_date: null
+    publisher: 潤泰全球股份有限公司
+    quote_check: found
+    title: 潤泰全球114年度及113年度合併財務報告
+    url: https://w8.ruentex.com.tw/en/storage/2026/04/202504con-CN.pdf
+  tw.2915#e18:
+    locator: 第38頁，附註六（五）；114年12月參與智崴現金增資，單位新台幣仟元
+    published_date: null
+    publisher: 潤泰全球股份有限公司
+    quote_check: found
+    title: 潤泰全球114年度及113年度合併財務報告
+    url: https://w8.ruentex.com.tw/en/storage/2026/04/202504con-CN.pdf
+  tw.2915#e19:
+    locator: 第37頁，附註六（五）；113年11月參與台灣浩鼎現金增資金額，單位新台幣仟元
+    published_date: null
+    publisher: 潤泰全球股份有限公司
+    quote_check: found
+    title: 潤泰全球114年度及113年度合併財務報告
+    url: https://w8.ruentex.com.tw/en/storage/2026/04/202504con-CN.pdf
+  tw.2915#e20:
+    locator: 第37頁，附註六（五）；113年3月參與中裕新藥現金增資金額，單位新台幣仟元
+    published_date: null
+    publisher: 潤泰全球股份有限公司
+    quote_check: not_found
+    title: 潤泰全球114年度及113年度合併財務報告
+    url: https://w8.ruentex.com.tw/en/storage/2026/04/202504con-CN.pdf
+  tw.2915#e21:
+    locator: 第38頁，附註六（五）；113年6月參與圓祥生技現金增資金額，單位新台幣仟元
+    published_date: null
+    publisher: 潤泰全球股份有限公司
+    quote_check: found
+    title: 潤泰全球114年度及113年度合併財務報告
+    url: https://w8.ruentex.com.tw/en/storage/2026/04/202504con-CN.pdf
+  tw.2915#e22:
+    locator: 公告標題及第1項；第2項事實發生日為114年10月31日
+    published_date: '2025-10-31'
+    publisher: 鉅亨網／潤泰全球重大訊息
+    quote_check: found
+    title: 潤泰全：代子公司FULL SHINE INTERNATIONAL HOLDINGS LIMITED公告擬投資HORIZON L.P.私募基金
+    url: https://news.cnyes.com/news/id/6213468
+  tw.2915#e23:
+    locator: 公告第3項，交易總金額
+    published_date: '2025-10-31'
+    publisher: 鉅亨網／潤泰全球重大訊息
+    quote_check: found
+    title: 潤泰全：代子公司FULL SHINE INTERNATIONAL HOLDINGS LIMITED公告擬投資HORIZON L.P.私募基金
+    url: https://news.cnyes.com/news/id/6213468
+  tw.2915#e24:
+    locator: 公告第3及第4項；公告抬頭載明代Full Shine子公司公告，第2項事實發生日為115年8月31日
+    published_date: '2026-09-01'
+    publisher: MoneyDJ理財網／公開資訊觀測站重大訊息
+    quote_check: found
+    title: 潤泰全子公司取得Achi Capital Partners Global Fund II，計1500萬美元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=a75476f3-5241-45d5-bc5a-ab50de3f726c
+  tw.2915#e25:
+    locator: 公告第3項，交易總金額
+    published_date: '2026-09-01'
+    publisher: MoneyDJ理財網／公開資訊觀測站重大訊息
+    quote_check: found
+    title: 潤泰全子公司取得Achi Capital Partners Global Fund II，計1500萬美元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=a75476f3-5241-45d5-bc5a-ab50de3f726c

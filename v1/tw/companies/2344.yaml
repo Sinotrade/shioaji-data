@@ -79,6 +79,20 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: '2026-04-15'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 利基型記憶體
+    details:
+    - 利基型記憶體
+    edge: ebd2e22e48b11
+    evidence_level: primary
+    id: tw.3006
+    name: 晶豪科
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   customers:
   - as_of: '2024-12-03'
     confidence: ai_cross_checked
@@ -101,7 +115,7 @@ relations:
     detail: 邏輯晶片子公司
     details:
     - 邏輯晶片子公司
-    - 華邦電子為新唐母公司
+    - 母公司
     edge: ec0d7ab912bec
     evidence_level: primary
     id: tw.4919
@@ -149,6 +163,38 @@ relations:
     evidence_level: primary
     id: tw.2404
     name: 漢唐
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-07-27'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 路竹科學園區廠房混凝土
+    details:
+    - 路竹科學園區廠房混凝土
+    edge: ee1eb2d9b9187
+    evidence_level: media
+    id: tw.2504
+    name: 國產
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares:
+    - as_of: '2026-03-31'
+      basis: revenue
+      of: tw.8110
+      pct: 35
+    detail: 記憶體IC封裝測試服務
+    details:
+    - 記憶體IC封裝測試服務
+    edge: ee133838a3139
+    evidence_level: primary
+    id: tw.8110
+    name: 華東
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -233,6 +279,31 @@ relations:
     evidence_level: primary
     id: tw.1605
     name: 華新
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣67,675,456元
+    as_of: '2025-03-07'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 取得竹北辦公室使用權資產
+    details:
+    - 取得竹北辦公室使用權資產
+    - 取得南港辦公室使用權資產
+    edge: e6f4f4b3c069a
+    event_date: '2024-12-31'
+    events:
+    - amount: 新台幣31,592,093元
+      detail: 取得南港辦公室使用權資產
+      event_date: '2025-03-07'
+    - amount: 新台幣67,675,456元
+      detail: 取得竹北辦公室使用權資產
+      event_date: '2024-12-31'
+    evidence_level: primary
+    id: tw.4919
+    name: 新唐
     ranking_basis: unranked
     role: seller
     share_basis: null

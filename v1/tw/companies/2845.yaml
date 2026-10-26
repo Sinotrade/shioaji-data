@@ -26,62 +26,181 @@ chain_stage:
   stage_name: 金融服務
   tier: not_applicable
 primary_chain_position: not_applicable
-summary_short: 以銀行存放款、信用卡及信託服務經營，收入主要來自利息淨收益與手續費。
-summary_long: 遠東銀經營銀行存放款業務，提供臺幣與外幣存款、個人信用貸款及房屋貸款。2026年上半年利息淨收益占淨收益50.95%，手續費淨收益占23.72%。Bankee為遠東銀推出的數位銀行品牌，提供數位存款帳戶服務。信用卡產品包括遠東快樂信用卡及遠東HAPPY GO頂級卡，另提供由銀行擔任受託人的信託服務。2025年年報列示的子公司包括Far Eastern Asset Management Corp.、Far Eastern International Securities及FEIB Financial Leasing Co., Ltd.。
+summary_short: 經營個人與法人金融、金融市場及Bankee數位金融服務。
+summary_long: 遠東銀經營個人金融、法人金融、金融市場與AI數位金融，2025年各業務占總淨收益分別為47.99%、31.37%、19.08%及1.56%。Bankee為該行推出的數位銀行品牌。信用卡業務與鼎鼎聯合行銷共同辦理HAPPY GO活動，企業支付則與Visa合作推出BOSS企業卡。另已簽約擬受讓花旗台灣有價證券簽證業務，公告暫定2025年6月7日交割；所引公告尚不足以確認交易完成。
 segments:
 - evidence_ids:
   - e2
-  id: seg_net_interest
-  name: 利息淨收益
-  period: 2026-01-01至2026-06-30
-  revenue_share_pct: 50.95
+  id: personal
+  name: 個人金融業務
+  period: '2025'
+  revenue_share_pct: 47.99
 - evidence_ids:
   - e3
-  id: seg_net_fee
-  name: 手續費淨收益
-  period: 2026-01-01至2026-06-30
-  revenue_share_pct: 23.72
+  id: corporate
+  name: 法人金融業務
+  period: '2025'
+  revenue_share_pct: 31.37
+- evidence_ids:
+  - e4
+  id: markets
+  name: 金融市場業務
+  period: '2025'
+  revenue_share_pct: 19.08
+- evidence_ids:
+  - e5
+  id: digital
+  name: AI數位金融業務
+  period: '2025'
+  revenue_share_pct: 1.56
 relations:
-  subsidiaries:
-  - as_of: '2025-12-31'
+  partners:
+  - as_of: '2026-10-25'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 年報列示子公司
+    detail: HAPPY GO信用卡點數與新戶活動
     details:
-    - 年報列示子公司
-    edge: e9eb26c767dfe
+    - HAPPY GO信用卡點數與新戶活動
+    edge: e7fa199f33046
     evidence_level: primary
-    id: org.far-eastern-asset-management
-    name: Far Eastern Asset Management Corp.
+    id: org.ding-ding-integrated-marketing-services
+    name: 鼎鼎聯合行銷股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2025-12-31'
+  - as_of: '2024-04-19'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 遠智證券子公司
+    detail: friDay理財＋開放銀行與存錢計畫歷史合作
     details:
-    - 遠智證券子公司
+    - friDay理財＋開放銀行與存錢計畫歷史合作
+    edge: e20bf5f911dd6
+    evidence_level: primary
+    id: tw.4904
+    name: 遠傳
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-07-16'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全速匯跨境匯款歷史合作；服務已下架
+    details:
+    - 全速匯跨境匯款歷史合作；服務已下架
+    edge: eac5db3f900c5
+    evidence_level: primary
+    id: us.MA
+    name: 萬事達卡
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: BOSS企業卡及快收慢付商務支付
+    details:
+    - BOSS企業卡及快收慢付商務支付
+    edge: e55afe532cc22
+    evidence_level: primary
+    id: us.V
+    name: Visa
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司
+    details:
+    - 全資子公司
     edge: e7652bc9c0c5f
     evidence_level: primary
     id: org.far-eastern-international-securities
-    name: Far Eastern International Securities Company Ltd.
+    name: 遠智證券股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2025-12-31'
+  - as_of: '2024-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 年報列示子公司
+    detail: 全資子公司
     details:
-    - 年報列示子公司
-    edge: ebceaf5ff1934
+    - 全資子公司
+    edge: eb5efa64cffb7
     evidence_level: primary
-    id: org.feib-financial-leasing
-    name: FEIB Financial Leasing Co., Ltd.
+    id: org.feib-asset-management
+    name: 遠銀資產管理股份有限公司
     ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: null
+    as_of: 2025-06
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 簽約受讓有價證券簽證業務
+    details:
+    - 簽約受讓有價證券簽證業務
+    edge: e311e1905c1d0
+    event_date: null
+    events:
+    - amount: null
+      detail: 簽約受讓有價證券簽證業務
+      event_date: null
+    evidence_level: primary
+    id: org.citibank-taiwan
+    name: 花旗（台灣）商業銀行股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新臺幣397,500,000元
+    as_of: '2025-07-10'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司遠銀資產管理透過法拍取得板橋不動產
+    details:
+    - 子公司遠銀資產管理透過法拍取得板橋不動產
+    edge: e6c3c4f91bda5
+    event_date: '2025-07-10'
+    events:
+    - amount: 新臺幣397,500,000元
+      detail: 子公司遠銀資產管理透過法拍取得板橋不動產
+      event_date: '2025-07-10'
+    evidence_level: primary
+    id: org.新北地方法院
+    name: 新北地方法院
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新臺幣507,000,000元
+    as_of: '2026-04-22'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司遠銀資產管理取得金融機構債權
+    details:
+    - 子公司遠銀資產管理取得金融機構債權
+    edge: e518e4b2f5e58
+    event_date: '2026-04-22'
+    events:
+    - amount: 新臺幣507,000,000元
+      detail: 子公司遠銀資產管理取得金融機構債權
+      event_date: '2026-04-22'
+    evidence_level: primary
+    id: tw.5876
+    name: 上海商銀
+    ranking_basis: unranked
+    role: buyer
     share_basis: null
     share_pct: null
     weight: 1
@@ -89,7 +208,7 @@ website: http://www.feib.com.tw
 tax_id: '86517096'
 incorporated: '1992-01-11'
 listed: '1998-11-27'
-as_of: '2026-10-14'
+as_of: '2026-10-25'
 confidence: ai_cross_checked
 has_research: true
 evidence:
@@ -98,75 +217,117 @@ evidence:
     published_date: null
     publisher: 遠東國際商業銀行
     quote_check: found
-    title: 遠東商銀簡介
-    url: https://www.feib.com.tw/detail?id=220
+    title: 遠東國際商業銀行官方網站
+    url: https://www.feib.com.tw/
   tw.2845#e10:
-    locator: 信託介紹首段
+    locator: 第85頁，主要金融商品研發，全速匯跨境匯款
     published_date: null
     publisher: 遠東國際商業銀行
     quote_check: found
-    title: 信託介紹
-    url: https://www.feib.com.tw/introduce?id=54
+    title: 遠東國際商業銀行112年年報
+    url: https://www.feib.com.tw/upload/WebSitePDF/general/AnnualReport2023C.pdf
   tw.2845#e11:
-    locator: 印刷頁75，PDF第76頁，GHG Inventory and Verification status表註；遠智證券完整英文名稱見印刷頁95
-    published_date: '2026-04-30'
-    publisher: Far Eastern International Bank
+    locator: 服務停止通知
+    published_date: null
+    publisher: 遠東國際商業銀行
     quote_check: found
-    title: Far Eastern International Bank 2025 Annual Report
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52204/2026/RNS/52204_rns_2026-04-30_29d123a1-5c98-4878-a9f9-75e896d13bf7.pdf
+    title: 外匯業務收費標準異動公告
+    url: https://www.feib.com.tw/activity?id=4232
+  tw.2845#e12:
+    locator: 重要公告，friDay理財＋合作終止
+    published_date: null
+    publisher: 遠東國際商業銀行
+    quote_check: found
+    title: 遠東商銀與遠傳電信業務合作揭露事項
+    url: https://www.feib.com.tw/detail?id=495
+  tw.2845#e13:
+    locator: PDF第67頁、紙本第66頁，2024年12月31日轉投資持股表
+    published_date: null
+    publisher: 遠東國際商業銀行；香港金融管理局公開文件
+    quote_check: found
+    title: 遠東國際商業銀行113年年報
+    url: https://vpr.hkma.gov.hk/statics/assets/doc/100272/ar_24/ar_24_pt01_chi.pdf
+  tw.2845#e14:
+    locator: PDF第67頁、紙本第66頁，2024年12月31日轉投資持股表
+    published_date: null
+    publisher: 遠東國際商業銀行；香港金融管理局公開文件
+    quote_check: found
+    title: 遠東國際商業銀行113年年報
+    url: https://vpr.hkma.gov.hk/statics/assets/doc/100272/ar_24/ar_24_pt01_chi.pdf
+  tw.2845#e15:
+    locator: 公告第一、二點
+    published_date: null
+    publisher: 遠東國際商業銀行
+    quote_check: found
+    title: 公告本行擬受讓花旗（台灣）商業銀行股份有限公司有價證券簽證業務，交割基準日暫定為114年6月7日。
+    url: https://www.feib.com.tw/activity?id=3896
+  tw.2845#e16:
+    locator: 代子公司取得不動產公告，第5、6、11及23項
+    published_date: '2025-07-10'
+    publisher: 公開資訊觀測站重大訊息；MoneyDJ轉載
+    quote_check: found
+    title: 遠東銀：遠銀資產管理取得新北市板橋區不動產，計約3.98億元（補公告）
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=d86cc5da-b939-4c14-be9c-f4c1d2faceb7
+  tw.2845#e17:
+    locator: 公告第1、5及6項，金融機構債權、交易金額與相對人
+    published_date: '2026-04-22'
+    publisher: 遠東銀重大訊息；鉅亨網轉載
+    quote_check: found
+    title: 遠東銀：代子公司遠銀資產管理股份有限公司公告取得債權
+    url: https://news.cnyes.com/news/id/6429207
   tw.2845#e2:
-    locator: 綜合損益表「利息淨收益」列；本期累計金額與百分比欄；資料來源為交易所公開資訊觀測站
-    published_date: '2026-08-28'
-    publisher: MoneyDJ理財網
+    locator: PDF第86頁、紙本第84頁，業務別淨收益比重表，個人金融列；數字依序為113年比重、114年比重、114年成長率
+    published_date: '2026-04-30'
+    publisher: 遠東國際商業銀行；FinancialReports鏡像
     quote_check: found
-    title: 遠東銀 115年第2季綜合損益表，每股盈餘0.29元
-    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=43bd3bdf-2c0e-4ebf-9c15-e486e172b9c3
+    title: 遠東國際商業銀行114年年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52204/2026/RNS/52204_rns_2026-04-30_0fe58e5c-5211-4f65-9ecd-3c49138e829e.pdf
   tw.2845#e3:
-    locator: 綜合損益表「手續費淨收益」列；本期累計金額與百分比欄
-    published_date: '2026-08-28'
-    publisher: MoneyDJ理財網
+    locator: PDF第86頁、紙本第84頁，業務別淨收益比重表，法人金融列
+    published_date: '2026-04-30'
+    publisher: 遠東國際商業銀行；FinancialReports鏡像
     quote_check: found
-    title: 遠東銀 115年第2季綜合損益表，每股盈餘0.29元
-    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=43bd3bdf-2c0e-4ebf-9c15-e486e172b9c3
+    title: 遠東國際商業銀行114年年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52204/2026/RNS/52204_rns_2026-04-30_0fe58e5c-5211-4f65-9ecd-3c49138e829e.pdf
   tw.2845#e4:
-    locator: 基礎認識與開戶常見問題／資金存放在Bankee數位存款帳戶安全嗎
-    published_date: null
-    publisher: 遠東國際商業銀行／Bankee
+    locator: PDF第86頁、紙本第84頁，業務別淨收益比重表，金融市場列
+    published_date: '2026-04-30'
+    publisher: 遠東國際商業銀行；FinancialReports鏡像
     quote_check: found
-    title: Bankee社群圈是什麼？
-    url: https://www.bankee.com.tw/kh_circle.html
+    title: 遠東國際商業銀行114年年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52204/2026/RNS/52204_rns_2026-04-30_0fe58e5c-5211-4f65-9ecd-3c49138e829e.pdf
   tw.2845#e5:
-    locator: 穩定投資理財／FE Direct
-    published_date: null
-    publisher: 遠東國際商業銀行
+    locator: PDF第86頁、紙本第84頁，業務別淨收益比重表，AI數位金融列
+    published_date: '2026-04-30'
+    publisher: 遠東國際商業銀行；FinancialReports鏡像
     quote_check: found
-    title: 投資理財與存款服務
-    url: https://www.feib.com.tw/L2?focusid=type3&id=p30&targetid=sp1
+    title: 遠東國際商業銀行114年年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52204/2026/RNS/52204_rns_2026-04-30_0fe58e5c-5211-4f65-9ecd-3c49138e829e.pdf
   tw.2845#e6:
-    locator: 抽獎活動注意事項／抽獎資格
+    locator: 資金存放在Bankee數位存款帳戶安全嗎
     published_date: null
-    publisher: 遠東國際商業銀行
+    publisher: 遠東商銀Bankee
     quote_check: found
-    title: 遠東商銀循環型信貸
-    url: https://www.feib.com.tw/upload/personalloan/event/REVOLVING/index.html
+    title: Bankee社群圈常見問題
+    url: https://www.bankee.com.tw/kh_circle.html
   tw.2845#e7:
-    locator: 一般房貸／購屋貸款／產品說明
+    locator: HAPPY GO獨家加碼新戶首刷禮，注意事項第6點
     published_date: null
     publisher: 遠東國際商業銀行
     quote_check: found
-    title: 一般房貸
-    url: https://www.feib.com.tw/introduce?id=65
+    title: 遠東快樂無限卡專屬新戶禮遇
+    url: https://www.feib.com.tw/activity?id=4585
   tw.2845#e8:
-    locator: 卡片總覽／遠東商銀信用卡
+    locator: 服務平台營運者說明
     published_date: null
-    publisher: 遠東國際商業銀行
+    publisher: 鼎鼎聯合行銷股份有限公司
     quote_check: found
-    title: 遠東商銀信用卡卡片介紹
-    url: https://www.feib.com.tw/introduce/cardInfo
+    title: 快樂購卡網站及HAPPY GO App約定條款
+    url: https://www.happygocard.com.tw/official/intro.do?id=1&t=f
   tw.2845#e9:
-    locator: 卡片總覽／遠東商銀信用卡
-    published_date: null
-    publisher: 遠東國際商業銀行
+    locator: B2B交易刷卡付款說明
+    published_date: '2024-12-31'
+    publisher: 關網資訊股份有限公司
     quote_check: found
-    title: 遠東商銀信用卡卡片介紹
-    url: https://www.feib.com.tw/introduce/cardInfo
+    title: 關網資訊推出刷卡支付貨款「快收慢付商務支付平台」服務
+    url: https://www.gateweb.com.tw/news-detail/27/

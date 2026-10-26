@@ -26,33 +26,45 @@ chain_stage:
   stage_name: 中間原料
   tier: midstream
 primary_chain_position: midstream
-summary_short: 以己內醯胺、丙烯腈及附屬石化產品的製造銷售為主要營收來源。
-summary_long: 中石化以己內醯胺、丙烯腈及附屬產品的製造銷售為核心。2025年營收中，己內醯胺及附屬產品占46.81%，丙烯腈及附屬產品占40.14%，另有鄰苯基苯酚與其他部門收入。己內醯胺用於尼龍6纖維與樹脂，丙烯腈用於聚丙烯腈纖維及ABS塑膠；硫酸銨供農業肥料使用，鄰苯基苯酚應用於抗菌防腐、光學與阻燃材料。公司另開發高頻低介電材料，官網列有5G應用。已核實子公司包括鼎越開發、中石化綠能科技及江蘇威名新材料。
+summary_short: 以丙烯腈、己內醯胺及尼龍粒等石化材料銷售為主要營收來源。
+summary_long: 中石化主要銷售丙烯腈（AN）、己內醯胺（CPL）與尼龍粒；2026年上半年營收占比分別為44%、25%與8%。CPL用於尼龍6纖維與樹脂，AN用於亞克力纖維與ABS塑膠。2024年報列中油為丙烯供應商，信昌化及台化供應酚。公司另有精製硫酸與高頻低介電材料產品，並持有全資子公司鼎越開發及江蘇威名。2024至2026年間公告土地出售、子公司合併、處分林德台灣科技股權與增資鼎越等交易。另擬向Lucite收購高雄塑酯60%股權；依2026年9月公告，交易仍待相關核准程序完成。
 segments:
 - evidence_ids:
-  - e2
-  id: seg_cpl
-  name: 己內醯胺及其附屬產品
-  period: '2025'
-  revenue_share_pct: 46.81
-- evidence_ids:
-  - e2
+  - e01
   id: seg_an
-  name: 丙烯腈及其附屬產品
-  period: '2025'
-  revenue_share_pct: 40.14
+  name: 丙烯腈（AN）
+  period: 2026H1
+  revenue_share_pct: 44
 - evidence_ids:
-  - e2
+  - e02
+  id: seg_cpl
+  name: 己內醯胺（CPL）
+  period: 2026H1
+  revenue_share_pct: 25
+- evidence_ids:
+  - e03
+  id: seg_pa6
+  name: 尼龍粒（PA6）
+  period: 2026H1
+  revenue_share_pct: 8
+- evidence_ids:
+  - e04
+  id: seg_weiming
+  name: 威名
+  period: 2026H1
+  revenue_share_pct: 9
+- evidence_ids:
+  - e05
   id: seg_opp
-  name: 鄰苯基苯酚
-  period: '2025'
-  revenue_share_pct: 0.77
+  name: 鄰苯基苯酚（OPP）
+  period: 2026H1
+  revenue_share_pct: 0
 - evidence_ids:
-  - e2
+  - e06
   id: seg_other
-  name: 其他部門
-  period: '2025'
-  revenue_share_pct: 12.28
+  name: 子公司及其他（不含威名）
+  period: 2026H1
+  revenue_share_pct: 14
 main_theme: theme.5g
 themes:
 - also: []
@@ -61,130 +73,509 @@ themes:
   tier: upstream
 relations:
   subsidiaries:
-  - as_of: '2025-12-31'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 直接持股100%的子公司
-    details:
-    - 直接持股100%的子公司
-    edge: e9a5048d1036e
-    evidence_level: primary
-    id: org.中石化綠能科技股份有限公司
-    name: 中石化綠能科技股份有限公司
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
-  - as_of: '2025-12-31'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 直接及間接持有的子公司
-    details:
-    - 直接及間接持有的子公司
-    edge: ed94bb061744d
-    evidence_level: primary
-    id: org.江蘇威名新材料有限公司
-    name: 江蘇威名新材料有限公司
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
   - as_of: '2026-09-29'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 持股100%的重要子公司
+    detail: 全資重要子公司
     details:
-    - 持股100%的重要子公司
-    edge: e48ac4f0a6d35
+    - 全資重要子公司
+    edge: e8a41eed97e18
     evidence_level: primary
-    id: org.鼎越開發股份有限公司
+    id: org.ding-yue-development
     name: 鼎越開發股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: '2026-10-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資轉投資事業
+    details:
+    - 全資轉投資事業
+    edge: e3ac2cc7b8a8d
+    evidence_level: primary
+    id: org.jiangsu-weiming-new-material
+    name: 江蘇威名新材料有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: '2025-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 供應AN原料丙烯
+    details:
+    - 供應AN原料丙烯
+    edge: e68ff4c34735d
+    evidence_level: primary
+    id: org.cpc
+    name: 台灣中油股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 供應酚
+    details:
+    - 供應酚
+    edge: e6c27388f8aae
+    evidence_level: primary
+    id: org.taiwan-prosperity-chemical
+    name: Taiwan Prosperity Chemical
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 供應酚
+    details:
+    - 供應酚
+    edge: eec2f61761784
+    evidence_level: primary
+    id: tw.1326
+    name: 台化
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 新台幣28.4686億元
+    as_of: '2024-08-22'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 出售高雄楠梓區惠民段土地
+    details:
+    - 出售高雄楠梓區惠民段土地
+    - 標得高雄市楠梓區土地
+    edge: e401bc5654e8d
+    event_date: '2024-08-22'
+    events:
+    - amount: 新台幣28.4686億元
+      detail: 出售高雄楠梓區惠民段土地
+      event_date: '2024-08-22'
+    - amount: 新台幣2,846,860仟元
+      detail: 標得高雄市楠梓區土地
+      event_date: '2024-08-22'
+    evidence_level: primary
+    id: tw.5522
+    name: 遠雄
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 2
+  - amount: null
+    as_of: '2024-06-25'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 吸收合併全資子公司
+    details:
+    - 吸收合併全資子公司
+    edge: ec22dddfb26c1
+    event_date: '2024-06-25'
+    events:
+    - amount: null
+      detail: 吸收合併全資子公司
+      event_date: '2024-06-25'
+    evidence_level: primary
+    id: org.bes-twin-towers-development
+    name: 中華雙子星開發股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2026-05-15'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 合併全資子公司之基準日公告
+    details:
+    - 合併全資子公司之基準日公告
+    edge: e8d9e0d5a4386
+    event_date: '2025-12-11'
+    events:
+    - amount: null
+      detail: 合併全資子公司之基準日公告
+      event_date: '2025-12-11'
+    evidence_level: primary
+    id: org.chao-hsin-chemical
+    name: 兆欣化學工業股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣5億元
+    as_of: '2026-09-29'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 董事會通過現金增資子公司
+    details:
+    - 董事會通過現金增資子公司
+    edge: e4d9e13a21aae
+    event_date: '2026-09-29'
+    events:
+    - amount: 新台幣5億元
+      detail: 董事會通過現金增資子公司
+      event_date: '2026-09-29'
+    evidence_level: primary
+    id: org.ding-yue-development
+    name: 鼎越開發股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣1,150,000仟元
+    as_of: '2026-05-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 出售林德台灣科技28%股權
+    details:
+    - 出售林德台灣科技28%股權
+    edge: e47510be1dac2
+    event_date: '2026-05-13'
+    events:
+    - amount: 新台幣1,150,000仟元
+      detail: 出售林德台灣科技28%股權
+      event_date: '2026-05-13'
+    evidence_level: primary
+    id: org.linde-uk-holding-no-2
+    name: Linde UK Holding No.2 Limited.
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣1元
+    as_of: '2026-09-04'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 擬收購高雄塑酯60%股權
+    details:
+    - 擬收購高雄塑酯60%股權
+    edge: efeb04fa19e4b
+    event_date: '2026-03-30'
+    events:
+    - amount: 新台幣1元
+      detail: 擬收購高雄塑酯60%股權
+      event_date: '2026-03-30'
+    evidence_level: primary
+    id: org.lucite-international-alpha
+    name: Lucite International Alpha B.V.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣4.6819億元
+    as_of: '2025-09-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 出售頭份廠部分土地、建物及附屬設備
+    details:
+    - 出售頭份廠部分土地、建物及附屬設備
+    edge: ebc25cb79511a
+    event_date: '2025-09-26'
+    events:
+    - amount: 新台幣4.6819億元
+      detail: 出售頭份廠部分土地、建物及附屬設備
+      event_date: '2025-09-26'
+    evidence_level: primary
+    id: org.mutian-asset-management-consulting
+    name: 木田資產管理顧問股份有限公司
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣20.6599億元
+    as_of: '2024-08-22'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 出售高雄前鎮區經貿段土地
+    details:
+    - 出售高雄前鎮區經貿段土地
+    - 出售前鎮區經貿段五小段1-1地號土地
+    edge: ef3407849e873
+    event_date: '2024-08-22'
+    events:
+    - amount: 新台幣20.6599億元
+      detail: 出售高雄前鎮區經貿段土地
+      event_date: '2024-08-22'
+    - amount: 新台幣2,007,790,000元
+      detail: 出售前鎮區經貿段五小段1-1地號土地
+      event_date: '2024-03-26'
+    evidence_level: primary
+    id: tw.1436
+    name: 華友聯
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣18.8366億元
+    as_of: '2024-08-22'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 出售高雄前鎮區經貿段土地
+    details:
+    - 出售高雄前鎮區經貿段土地
+    edge: e5b0d6190d02e
+    event_date: '2024-08-22'
+    events:
+    - amount: 新台幣18.8366億元
+      detail: 出售高雄前鎮區經貿段土地
+      event_date: '2024-08-22'
+    evidence_level: media
+    id: tw.5508
+    name: 永信建
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 年報以代號揭露的主要客戶及供應商，未將代號推定為具名公司。
+- 2024年8月前鎮區憲德段土地交易買方，當時報導未公布名稱。
+- 精細化工代工及策略合作洽談對象，2026年9月法說會未具名。
+- 半導體用精製硫酸之具名採購客戶。
 website: www.cpdc.com.tw
 tax_id: 03084741
 incorporated: '1969-07-08'
 listed: '1991-07-12'
-as_of: '2026-10-15'
+as_of: '2026-10-26'
 confidence: ai_cross_checked
 has_research: true
 evidence:
-  tw.1314#e10:
-    locator: 第101頁，綜合持股比例；資料日期2025年12月31日
-    published_date: '2026-03-31'
-    publisher: 中國石油化學工業開發股份有限公司
-    quote_check: found
-    title: 2025年度年報
-    url: https://www.cpdc.com.tw/uploads/2026_AGM/2025_1314_20260522F04_AR%20(CH)01.pdf
-  tw.1314#e11:
-    locator: 第101頁，綜合持股比例；資料日期2025年12月31日
-    published_date: '2026-03-31'
-    publisher: 中國石油化學工業開發股份有限公司
-    quote_check: found
-    title: 2025年度年報
-    url: https://www.cpdc.com.tw/uploads/2026_AGM/2025_1314_20260522F04_AR%20(CH)01.pdf
-  tw.1314#e12:
-    locator: 2025年11月13日公告
-    published_date: '2025-11-13'
-    publisher: 中國石油化學工業開發股份有限公司
-    quote_check: found
-    title: 2025年重大訊息公告
-    url: https://www.cpdc.com.tw/tw/ir_message/15
-  tw.1314#e2:
-    locator: 第111頁，主要產品及其營業比重
-    published_date: '2026-03-31'
-    publisher: 中國石油化學工業開發股份有限公司
-    quote_check: found
-    title: 2025年度年報
-    url: https://www.cpdc.com.tw/uploads/2026_AGM/2025_1314_20260522F04_AR%20(CH)01.pdf
-  tw.1314#e3:
-    locator: 產品介紹
+  tw.1314#e00:
+    locator: 首頁公司名稱及石化產品選單
     published_date: null
     publisher: 中國石油化學工業開發股份有限公司
     quote_check: found
-    title: 己內醯胺（CPL）
-    url: https://www.cpdc.com.tw/tw/product_detail
-  tw.1314#e4:
+    title: 中國石油化學工業開發股份有限公司官網
+    url: https://www.cpdc.com.tw/tw
+  tw.1314#e01:
+    locator: 第11頁，各產品營收情形，2026H1營收比重
+    published_date: '2026-09-11'
+    publisher: 中國石油化學工業開發股份有限公司
+    quote_check: unreachable
+    title: 中石化2026年9月11日法人說明會簡報
+    url: https://financialfilings.com/filings/cpdc-1314/investor-presentation/2026/59761739/
+  tw.1314#e02:
+    locator: 第11頁，2026H1營收比重
+    published_date: '2026-09-11'
+    publisher: 中國石油化學工業開發股份有限公司
+    quote_check: unreachable
+    title: 中石化2026年9月11日法人說明會簡報
+    url: https://financialfilings.com/filings/cpdc-1314/investor-presentation/2026/59761739/
+  tw.1314#e03:
+    locator: 第11頁，2026H1營收比重
+    published_date: '2026-09-11'
+    publisher: 中國石油化學工業開發股份有限公司
+    quote_check: unreachable
+    title: 中石化2026年9月11日法人說明會簡報
+    url: https://financialfilings.com/filings/cpdc-1314/investor-presentation/2026/59761739/
+  tw.1314#e04:
+    locator: 第11頁，2026H1營收比重
+    published_date: '2026-09-11'
+    publisher: 中國石油化學工業開發股份有限公司
+    quote_check: unreachable
+    title: 中石化2026年9月11日法人說明會簡報
+    url: https://financialfilings.com/filings/cpdc-1314/investor-presentation/2026/59761739/
+  tw.1314#e05:
+    locator: 第11頁，2026H1營收比重
+    published_date: '2026-09-11'
+    publisher: 中國石油化學工業開發股份有限公司
+    quote_check: unreachable
+    title: 中石化2026年9月11日法人說明會簡報
+    url: https://financialfilings.com/filings/cpdc-1314/investor-presentation/2026/59761739/
+  tw.1314#e06:
+    locator: 第11頁，2026H1營收比重
+    published_date: '2026-09-11'
+    publisher: 中國石油化學工業開發股份有限公司
+    quote_check: unreachable
+    title: 中石化2026年9月11日法人說明會簡報
+    url: https://financialfilings.com/filings/cpdc-1314/investor-presentation/2026/59761739/
+  tw.1314#e07:
     locator: 產品介紹
     published_date: null
     publisher: 中國石油化學工業開發股份有限公司
     quote_check: found
     title: 丙烯腈（AN）
-    url: https://www.cpdc.com.tw/tw/product_detail/%E4%B8%99%E7%83%AF%E8%85%88-AN
-  tw.1314#e5:
-    locator: 硫酸銨產品項目
+    url: https://www.cpdc.com.tw/tw/product_detail/丙烯腈-AN
+  tw.1314#e08:
+    locator: 產品介紹
     published_date: null
     publisher: 中國石油化學工業開發股份有限公司
     quote_check: found
-    title: 產品系列
-    url: https://www.cpdc.com.tw/tw/product_list
-  tw.1314#e6:
-    locator: OPP產品應用
+    title: 己內醯胺（CPL）
+    url: https://www.cpdc.com.tw/tw/product_detail/己內醯胺-CPL
+  tw.1314#e09:
+    locator: 精製硫酸／品質
     published_date: null
     publisher: 中國石油化學工業開發股份有限公司
     quote_check: found
-    title: OPP鄰苯基苯酚
-    url: https://www.cpdc.com.tw/tw/product_detail/OPP%E9%84%B0%E8%8B%AF%E5%9F%BA%E8%8B%AF%E9%85%9A
-  tw.1314#e7:
-    locator: Cyclic Olefin Copolymer及COC應用
+    title: 其他產品
+    url: https://www.cpdc.com.tw/tw/product_detail/其他產品
+  tw.1314#e10:
+    locator: COC／應用
     published_date: null
     publisher: 中國石油化學工業開發股份有限公司
     quote_check: found
     title: 高頻低介電材料
-    url: https://www.cpdc.com.tw/tw/product_detail/%E9%AB%98%E9%A0%BB%E4%BD%8E%E4%BB%8B%E9%9B%BB%E6%9D%90%E6%96%99
-  tw.1314#e8:
+    url: https://www.cpdc.com.tw/tw/product_detail/高頻低介電材料
+  tw.1314#e11:
     locator: 新創應用材料
     published_date: null
     publisher: 中國石油化學工業開發股份有限公司
     quote_check: found
     title: 高頻低介電材料
-    url: https://www.cpdc.com.tw/tw/product_detail/%E9%AB%98%E9%A0%BB%E4%BD%8E%E4%BB%8B%E9%9B%BB%E6%9D%90%E6%96%99
-  tw.1314#e9:
-    locator: 最新重大訊息
+    url: https://www.cpdc.com.tw/tw/product_detail/高頻低介電材料
+  tw.1314#e12:
+    locator: 印刷第123頁，AN上下游關聯；PDF第127頁
+    published_date: '2025-03-31'
+    publisher: China Petrochemical Development Corporation
+    quote_check: found
+    title: Annual Report 2024
+    url: https://www.cpdc.com.tw/uploads/0_2025/IR_Files/2024_1314_20250515FE4_AR(EN).pdf
+  tw.1314#e13:
+    locator: 印刷第132頁，主要原料供應；PDF第135頁
+    published_date: '2025-03-31'
+    publisher: China Petrochemical Development Corporation
+    quote_check: found
+    title: Annual Report 2024
+    url: https://www.cpdc.com.tw/uploads/0_2025/IR_Files/2024_1314_20250515FE4_AR(EN).pdf
+  tw.1314#e14:
+    locator: 交易相對人與公司關係
     published_date: '2026-09-29'
     publisher: 中國石油化學工業開發股份有限公司
     quote_check: found
-    title: 中石化官網：2026年9月29日公告
-    url: https://www.cpdc.com.tw/tw/
+    title: 公告本公司董事會通過增資100%重要子公司鼎越開發(股)公司新台幣5億元。
+    url: https://www.cpdc.com.tw/uploads/0_MI/1150929_C1(51).pdf
+  tw.1314#e15:
+    locator: 鼎越開發股份有限公司
+    published_date: null
+    publisher: 中國石油化學工業開發股份有限公司
+    quote_check: found
+    title: 重要轉投資事業
+    url: https://www.cpdc.com.tw/tw/about_profile/重要轉投資事業
+  tw.1314#e16:
+    locator: 江蘇威名新材料有限公司；該段明列台灣中石化為母公司
+    published_date: null
+    publisher: 中國石油化學工業開發股份有限公司
+    quote_check: found
+    title: 重要轉投資事業
+    url: https://www.cpdc.com.tw/tw/about_profile/重要轉投資事業
+  tw.1314#e17:
+    locator: 交易數量、每單位價格及交易總金額
+    published_date: '2026-09-29'
+    publisher: 中國石油化學工業開發股份有限公司
+    quote_check: found
+    title: 公告本公司董事會通過增資100%重要子公司鼎越開發(股)公司新台幣5億元。
+    url: https://www.cpdc.com.tw/uploads/0_MI/1150929_C1(51).pdf
+  tw.1314#e18:
+    locator: 報導首段
+    published_date: '2026-03-31'
+    publisher: 經濟日報
+    quote_check: found
+    title: 中石化擬以新台幣1元 收購高雄塑酯60%股權
+    url: https://money.udn.com/money/story/5612/9414601
+  tw.1314#e19:
+    locator: 第4項，變動緣由及主要內容
+    published_date: '2026-09-04'
+    publisher: 公開資訊觀測站重大訊息／鉅亨網刊載
+    quote_check: found
+    title: 中石化：調整本公司收購高雄塑酯化學工業股份有限公司60%股權之預定完成日程
+    url: https://news.cnyes.com/news/id/6597710
+  tw.1314#e20:
+    locator: 第1頁，第5項交易總金額
+    published_date: '2026-05-13'
+    publisher: 中國石油化學工業開發股份有限公司
+    quote_check: found
+    title: 本公司董事會決議處分林德台灣科技股份有限公司28%股權
+    url: https://www.cpdc.com.tw/uploads/0_MI/1150513_C1(20).pdf
+  tw.1314#e21:
+    locator: 第1頁，第6項交易相對人
+    published_date: '2026-05-13'
+    publisher: 中國石油化學工業開發股份有限公司
+    quote_check: found
+    title: 本公司董事會決議處分林德台灣科技股份有限公司28%股權
+    url: https://www.cpdc.com.tw/uploads/0_MI/1150513_C1(20).pdf
+  tw.1314#e22:
+    locator: 第1頁，第3、6及11項；中石化為存續公司
+    published_date: '2024-06-25'
+    publisher: 中國石油化學工業開發股份有限公司
+    quote_check: found
+    title: 代中華雙子星公司公告與中石化公司合併案
+    url: https://www.cpdc.com.tw/uploads/Files/202007/202201/MI/20240625_C7(11).pdf
+  tw.1314#e23:
+    locator: 第2項原公告內容及第3項變動內容
+    published_date: '2026-05-15'
+    publisher: 公開資訊觀測站重大訊息／鉅亨網刊載
+    quote_check: found
+    title: 中石化：公告訂定本公司與100%子公司兆欣化工合併案之合併基準日
+    url: https://news.cnyes.com/news/id/6460630
+  tw.1314#e24:
+    locator: 前鎮區經貿段土地交易段落
+    published_date: '2024-08-22'
+    publisher: 中央社
+    quote_check: found
+    title: 中石化4筆高雄土地全數標脫 總金額達76.17億元
+    url: https://www.cna.com.tw/news/afe/202408220364.aspx
+  tw.1314#e25:
+    locator: 前鎮區經貿段土地交易段落
+    published_date: '2024-08-22'
+    publisher: 中央社
+    quote_check: found
+    title: 中石化4筆高雄土地全數標脫 總金額達76.17億元
+    url: https://www.cna.com.tw/news/afe/202408220364.aspx
+  tw.1314#e26:
+    locator: 交易總金額
+    published_date: '2024-08-22'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ刊載
+    quote_check: found
+    title: 中石化處分高雄市楠梓區惠民段16及17地號不動產，預計獲利約17億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=5d43b6e3-b37c-4f46-9af8-95e1fcb20f06
+  tw.1314#e27:
+    locator: 交易相對人
+    published_date: '2024-08-22'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ刊載
+    quote_check: found
+    title: 中石化處分高雄市楠梓區惠民段16及17地號不動產，預計獲利約17億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=5d43b6e3-b37c-4f46-9af8-95e1fcb20f06
+  tw.1314#e28:
+    locator: 第5項交易總金額
+    published_date: '2025-09-26'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ刊載
+    quote_check: found
+    title: 中石化補充公告處分頭份廠資產案之處分情形
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=40cfc319-af0a-4126-b1cf-476ea5d2d232
+  tw.1314#e29:
+    locator: 第6項交易相對人
+    published_date: '2025-09-26'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ刊載
+    quote_check: found
+    title: 中石化補充公告處分頭份廠資產案之處分情形
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=40cfc319-af0a-4126-b1cf-476ea5d2d232
+  tw.1314#e30:
+    locator: 交易總金額
+    published_date: '2024-03-26'
+    publisher: 華友聯重大訊息／MoneyDJ刊載
+    quote_check: found
+    title: 華友聯取得高雄市前鎮區經貿段土地，計約20.08億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=32910eea-90c2-4d8c-87d8-1fcfaa991851
+  tw.1314#e31:
+    locator: 交易相對人
+    published_date: '2024-03-26'
+    publisher: 華友聯重大訊息／MoneyDJ刊載
+    quote_check: found
+    title: 華友聯取得高雄市前鎮區經貿段土地，計約20.08億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=32910eea-90c2-4d8c-87d8-1fcfaa991851

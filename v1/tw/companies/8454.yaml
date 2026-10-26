@@ -17,29 +17,58 @@ industry:
   l3: retail.online
   l3_name: 網路零售
   l3_name_en: Online Retail
-primary_chain_position: downstream
-summary_short: 以momo購物網經營網路零售，另提供電視購物、商家平台與廣告服務。
-summary_long: 富邦媒體科技以momo購物網經營網路零售，並提供電視購物服務。2025年電商事業群占營收97.21%，影音事業群占2.72%，其他部門占0.07%。公司另經營mo店+平台，提供商家銷售通路，並透過零售媒體聯播網運用第一方數據與消費洞察提供廣告服務。旗下富昇物流從事物流運輸，富昇商貿從事商品批發，兩者均為全資子公司；另有富立綜合保險代理人經營保險代理業。直接母公司為大富媒體科技，最終母公司為台灣大哥大。
+primary_chain_position: midstream
+summary_short: 以momo購物網銷售商品為主，兼營電視購物、商家平台與零售媒體廣告。
+summary_long: 富邦媒主要經營momo購物網及電視購物，2025年電商事業群占合併營收97.21%，影音事業群占2.72%。公司透過「mo店+」提供商家線上開店服務，另經營momo Ads廣告平台，與Meta合作串聯站內外廣告投放，並導入Google廣告。旗下富昇物流及富昇商貿均為百分之百持股子公司，分別經營物流運輸與商品批發；保險代理業務則由富立綜合保險代理人經營。公司直接母公司為大富媒體科技，最終母公司為台灣大哥大。近三年另有欣康生醫、富邦能源及連線商業銀行投資，以及與富邦人壽合作布局湖口物流園區等事件。
 segments:
 - evidence_ids:
-  - e3
-  id: seg_ecommerce
+  - e1
+  id: seg_ec
   name: 電商事業群
   period: '2025'
   revenue_share_pct: 97.21
 - evidence_ids:
-  - e4
-  id: seg_audiovisual
+  - e1
+  id: seg_video
   name: 影音事業群
   period: '2025'
   revenue_share_pct: 2.72
 - evidence_ids:
-  - e5
+  - e1
   id: seg_other
   name: 其他
   period: '2025'
   revenue_share_pct: 0.07
 relations:
+  competitors:
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 綜合型B2C網路購物
+    details:
+    - 綜合型B2C網路購物
+    edge: ea00366ed73d6
+    evidence_level: primary
+    id: tw.8044
+    name: 網家
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 台灣網路零售市場
+    details:
+    - 台灣網路零售市場
+    edge: e6772d15f655d
+    evidence_level: primary
+    id: us.CPNG
+    name: Coupang
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   parents:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
@@ -62,9 +91,9 @@ relations:
     detail: 直接母公司
     details:
     - 直接母公司
-    edge: eeec7e44962be
+    edge: ef323c3eb522f
     evidence_level: primary
-    id: org.da-fu-media-technology
+    id: org.da-fu-media
     name: 大富媒體科技股份有限公司
     ranking_basis: unranked
     share_basis: null
@@ -85,13 +114,55 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: '2025-05-07'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: momo聯播網站內外廣告與數據整合
+    details:
+    - momo聯播網站內外廣告與數據整合
+    edge: e539fffc58b28
+    evidence_level: primary
+    id: us.META
+    name: Meta
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
+  - as_of: 2025-07
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 原子公司，2025年7月完成清算
+    details:
+    - 原子公司，2025年7月完成清算
+    edge: e70234e15e2ba
+    evidence_level: primary
+    id: org.chien-hui-international
+    name: 千卉國際股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 保險代理子公司
+    detail: 間接子公司解散清算程序
     details:
-    - 保險代理子公司
+    - 間接子公司解散清算程序
+    edge: e8ba4eb0fdd61
+    evidence_level: primary
+    id: org.fortune-kingdom
+    name: Fortune Kingdom Corporation
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 百分之百持股保險代理子公司
+    details:
+    - 百分之百持股保險代理子公司
     edge: eaebeffd80f17
     evidence_level: primary
     id: org.fu-li-insurance-agency
@@ -100,12 +171,26 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股73.62%的商品批發零售子公司
+    details:
+    - 持股73.62%的商品批發零售子公司
+    edge: e60e89516eab3
+    evidence_level: primary
+    id: org.fu-mei-health
+    name: 富美康健股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 全資物流運輸子公司
+    detail: 百分之百持股物流運輸子公司
     details:
-    - 全資物流運輸子公司
+    - 百分之百持股物流運輸子公司
     edge: e4294c8a33b91
     evidence_level: primary
     id: org.fu-sheng-logistics
@@ -117,9 +202,9 @@ relations:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 全資商品批發子公司
+    detail: 百分之百持股商品批發子公司
     details:
-    - 全資商品批發子公司
+    - 百分之百持股商品批發子公司
     edge: e868dbb4d73eb
     evidence_level: primary
     id: org.fu-sheng-trading
@@ -128,27 +213,265 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接子公司解散清算程序
+    details:
+    - 間接子公司解散清算程序
+    edge: ef0db81ae9da6
+    evidence_level: primary
+    id: org.hk-fubon-multimedia
+    name: Hong Kong Fubon Multimedia Technology Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 中南部倉庫超商件配送
+    details:
+    - 中南部倉庫超商件配送
+    edge: e2c2cef97d3cc
+    evidence_level: primary
+    id: org.黑貓
+    name: 黑貓
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-12-21'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 電商物流配送
+    details:
+    - 電商物流配送
+    edge: e20572156bc72
+    evidence_level: media
+    id: tw.2608
+    name: 嘉里大榮
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-04'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: Google搜尋與展示廣告渠道
+    details:
+    - Google搜尋與展示廣告渠道
+    edge: e5e99fbd24fe5
+    evidence_level: primary
+    id: us.GOOGL
+    name: Alphabet
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 新台幣200,000仟元
+    as_of: 2024-06
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 取得富邦能源5%股權
+    details:
+    - 取得富邦能源5%股權
+    edge: ec0f705774080
+    event_date: null
+    events:
+    - amount: 新台幣200,000仟元
+      detail: 取得富邦能源5%股權
+      event_date: null
+    evidence_level: primary
+    id: org.fubon-energy
+    name: 富邦能源
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2026-07-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 取得一筆使用權資產
+    details:
+    - 取得一筆使用權資產
+    - 取得二筆使用權資產
+    - 取得使用權資產之補充公告
+    edge: ecc37ea94e6bd
+    event_date: '2026-07-31'
+    events:
+    - amount: null
+      detail: 取得一筆使用權資產
+      event_date: '2026-07-31'
+    - amount: null
+      detail: 取得二筆使用權資產
+      event_date: '2026-01-21'
+    - amount: null
+      detail: 取得使用權資產之補充公告
+      event_date: '2025-02-21'
+    evidence_level: primary
+    id: org.fubon-life
+    name: 富邦人壽保險股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2026-05-06'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 共同投資布局湖口智慧物流園區
+    details:
+    - 共同投資布局湖口智慧物流園區
+    edge: ecd37bb227d81
+    event_date: '2026-05-06'
+    events:
+    - amount: null
+      detail: 共同投資布局湖口智慧物流園區
+      event_date: '2026-05-06'
+    evidence_level: primary
+    id: org.fubon-life
+    name: 富邦人壽保險股份有限公司
+    ranking_basis: unranked
+    role: party
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2025-06-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 認購私募普通股
+    details:
+    - 認購私募普通股
+    edge: e7b05c0311054
+    event_date: '2025-06-13'
+    events:
+    - amount: null
+      detail: 認購私募普通股
+      event_date: '2025-06-13'
+    evidence_level: primary
+    id: org.line-bank-taiwan
+    name: LINE Bank
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣6,000仟元
+    as_of: 2024-03
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 取得欣康生醫20%股權
+    details:
+    - 取得欣康生醫20%股權
+    edge: eb89871cc7e75
+    event_date: null
+    events:
+    - amount: 新台幣6,000仟元
+      detail: 取得欣康生醫20%股權
+      event_date: null
+    evidence_level: primary
+    id: org.xinkang-biomedical
+    name: 欣康生醫股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 會員及一般消費者：未辨識為具名企業客戶。
+- 各類商品供應商：未將泛稱推定為特定品牌或公司。
+- 新竹貨運：官方列為宅配選項，但說明由出貨單位配合物流業者，直接向富邦媒提供服務…
 website: https://corp.momo.com.tw/
 tax_id: '27365925'
 incorporated: '2004-09-27'
 listed: '2014-12-19'
-as_of: '2026-10-14'
+as_of: '2026-10-25'
 confidence: ai_cross_checked
 has_research: true
 evidence:
+  tw.8454#e1:
+    locator: 第87頁，營業比重；PDF第91頁
+    published_date: '2026-01-31'
+    publisher: 富邦媒體科技股份有限公司
+    quote_check: found
+    title: 富邦媒體科技股份有限公司2025年報
+    url: https://corp.momo.com.tw/file/investor/shareholdersMeeting/202601211911/20260508153630.pdf
   tw.8454#e10:
-    locator: 第16頁，附註十二（一）子公司明細，115年6月30日欄
-    published_date: '2026-07-31'
+    locator: 簡介首段
+    published_date: null
     publisher: 富邦媒體科技股份有限公司
     quote_check: found
-    title: 富邦媒體科技股份有限公司及子公司民國115及114年第2季合併財務報告
-    url: https://corp.momo.com.tw/file/investor/financeReport/2026Q2_FR.pdf
+    title: 物流
+    url: https://corp.momo.com.tw/market/momoLogistics
   tw.8454#e11:
-    locator: 第16頁，附註十二（一）子公司明細，投資公司為本公司
-    published_date: '2026-07-31'
+    locator: 第16頁，列入合併財務報告之子公司
+    published_date: null
     publisher: 富邦媒體科技股份有限公司
     quote_check: found
-    title: 富邦媒體科技股份有限公司及子公司民國115及114年第2季合併財務報告
+    title: 民國115及114年第2季合併財務報告暨會計師核閱報告
+    url: https://corp.momo.com.tw/file/investor/financeReport/2026Q2_FR.pdf
+  tw.8454#e12:
+    locator: 第30頁，列入合併財務報告之子公司
+    published_date: null
+    publisher: 富邦媒體科技股份有限公司
+    quote_check: found
+    title: 民國114及113年度合併財務報告暨會計師查核報告
+    url: https://corp.momo.com.tw/file/investor/financeReport/2025Q4_FR.pdf
+  tw.8454#e13:
+    locator: 第32頁，欣康生醫公司
+    published_date: null
+    publisher: 富邦媒體科技股份有限公司
+    quote_check: found
+    title: 民國114及113年度合併財務報告暨會計師查核報告
+    url: https://corp.momo.com.tw/file/investor/financeReport/2025Q4_FR.pdf
+  tw.8454#e14:
+    locator: 第32頁，富邦能源公司
+    published_date: null
+    publisher: 富邦媒體科技股份有限公司
+    quote_check: found
+    title: 民國114及113年度合併財務報告暨會計師查核報告
+    url: https://corp.momo.com.tw/file/investor/financeReport/2025Q4_FR.pdf
+  tw.8454#e15:
+    locator: 2025-06-13公告
+    published_date: null
+    publisher: 富邦媒體科技股份有限公司
+    quote_check: found
+    title: 重要公告
+    url: https://corp.momo.com.tw/investor/announcemet
+  tw.8454#e16:
+    locator: 首段
+    published_date: '2026-05-06'
+    publisher: 富邦媒體科技股份有限公司
+    quote_check: found
+    title: momo攜手富邦人壽布局湖口物流園區 以基礎建設深化全台履約競爭力
+    url: https://corp.momo.com.tw/news/news_page/1700
+  tw.8454#e17:
+    locator: 2026-07-31取得使用權資產公告
+    published_date: null
+    publisher: 富邦媒體科技股份有限公司
+    quote_check: found
+    title: 重要公告
+    url: https://corp.momo.com.tw/investor/announcemet
+  tw.8454#e18:
+    locator: 第90頁，電商事業群競爭情形；PDF第94頁
+    published_date: '2026-01-31'
+    publisher: 富邦媒體科技股份有限公司
+    quote_check: found
+    title: 富邦媒體科技股份有限公司2025年報
+    url: https://corp.momo.com.tw/file/investor/shareholdersMeeting/202601211911/20260508153630.pdf
+  tw.8454#e19:
+    locator: 第16至17頁，子公司表及註1
+    published_date: null
+    publisher: 富邦媒體科技股份有限公司
+    quote_check: found
+    title: 民國115及114年第2季合併財務報告暨會計師核閱報告
     url: https://corp.momo.com.tw/file/investor/financeReport/2026Q2_FR.pdf
   tw.8454#e2:
     locator: 關於momo
@@ -156,53 +479,81 @@ evidence:
     publisher: 富邦媒體科技股份有限公司
     quote_check: found
     title: 公司簡介
-    url: https://corp.momo.com.tw/about/aboutmomo/
+    url: https://corp.momo.com.tw/about/aboutmomo
+  tw.8454#e20:
+    locator: 2026-03-09及2026-04-21重要子公司公告
+    published_date: null
+    publisher: 富邦媒體科技股份有限公司
+    quote_check: found
+    title: 重要公告
+    url: https://corp.momo.com.tw/investor/announcemet
+  tw.8454#e21:
+    locator: 第16至17頁，Fortune Kingdom與HK Fubon Multimedia子公司表及註2
+    published_date: null
+    publisher: 富邦媒體科技股份有限公司
+    quote_check: found
+    title: 民國115及114年第2季合併財務報告暨會計師核閱報告
+    url: https://corp.momo.com.tw/file/investor/financeReport/2026Q2_FR.pdf
+  tw.8454#e22:
+    locator: 2026-01-21取得使用權資產公告
+    published_date: null
+    publisher: 富邦媒體科技股份有限公司
+    quote_check: found
+    title: 重要公告
+    url: https://corp.momo.com.tw/investor/announcemet
+  tw.8454#e23:
+    locator: 2025-02-21取得使用權資產補充公告
+    published_date: null
+    publisher: 富邦媒體科技股份有限公司
+    quote_check: found
+    title: 重要公告
+    url: https://corp.momo.com.tw/investor/announcemet
   tw.8454#e3:
-    locator: 第87頁，營運概況／業務範圍／營業比重，114年度欄
+    locator: 第89頁，產業上、中、下游之關聯性；PDF第93頁
     published_date: '2026-01-31'
     publisher: 富邦媒體科技股份有限公司
     quote_check: found
     title: 富邦媒體科技股份有限公司2025年報
     url: https://corp.momo.com.tw/file/investor/shareholdersMeeting/202601211911/20260508153630.pdf
   tw.8454#e4:
-    locator: 第87頁，營運概況／業務範圍／營業比重，114年度欄
+    locator: 第88頁，開發新品類與導入新品牌；PDF第92頁
     published_date: '2026-01-31'
     publisher: 富邦媒體科技股份有限公司
     quote_check: found
     title: 富邦媒體科技股份有限公司2025年報
     url: https://corp.momo.com.tw/file/investor/shareholdersMeeting/202601211911/20260508153630.pdf
   tw.8454#e5:
-    locator: 第87頁，營運概況／業務範圍／營業比重，114年度欄
-    published_date: '2026-01-31'
+    locator: 首段及數據驅動段落
+    published_date: null
     publisher: 富邦媒體科技股份有限公司
     quote_check: found
-    title: 富邦媒體科技股份有限公司2025年報
-    url: https://corp.momo.com.tw/file/investor/shareholdersMeeting/202601211911/20260508153630.pdf
+    title: 富邦媒攜手Meta推出「momo聯播網」加速RMN版圖全面升級
+    url: https://corp.momo.com.tw/news/news_page/1575
   tw.8454#e6:
-    locator: 零售、平台雙引擎成長／平台商家突破萬家
-    published_date: '2026-07-31'
+    locator: 增加多元門市自取管道，減少戶對戶配送
+    published_date: null
     publisher: 富邦媒體科技股份有限公司
     quote_check: found
-    title: 富邦媒Q2營運動能升溫 營收年增4.1%、營業利益年增2.5%
-    url: https://corp.momo.com.tw/news/news_page/1719
+    title: 綠色物流
+    url: https://corp.momo.com.tw/CSR/greenLogistics
   tw.8454#e7:
-    locator: 零售、平台雙引擎成長／平台商家突破萬家
-    published_date: '2026-07-31'
-    publisher: 富邦媒體科技股份有限公司
-    quote_check: found
-    title: 富邦媒Q2營運動能升溫 營收年增4.1%、營業利益年增2.5%
-    url: https://corp.momo.com.tw/news/news_page/1719
+    locator: 影片原始頁面展開後的說明欄
+    published_date: '2024-12-21'
+    publisher: DIGITIMES
+    quote_check: not_found
+    title: PChome、Momo 到酷澎都是它在送！嘉里大榮包辦物流最後一哩路《矽島．春秋》人物誌｜嘉里大榮董事長 沈宗桂
+    url: https://www.youtube.com/watch?v=LNmfpNEuiD0
   tw.8454#e8:
-    locator: 第36頁，附註二七（一）關係人名稱及其關係
-    published_date: '2026-07-31'
-    publisher: 富邦媒體科技股份有限公司
+    locator: 新增升級重點第一項
+    published_date: '2025-12-04'
+    publisher: momo Ads學院
     quote_check: found
-    title: 富邦媒體科技股份有限公司及子公司民國115及114年第2季合併財務報告
-    url: https://corp.momo.com.tw/file/investor/financeReport/2026Q2_FR.pdf
+    title: 【功能更新】10/22聯播網新增Google渠道、聯播網獨立入口！
+    url: https://ads.momoshop.com.tw/latest-announcements/system-announcements/momonetwork_google_entry_update_1022/
   tw.8454#e9:
-    locator: 第16頁，附註十二（一）子公司明細，115年6月30日欄
-    published_date: '2026-07-31'
+    locator: 第36頁，附註二七關係人交易
+    published_date: null
     publisher: 富邦媒體科技股份有限公司
     quote_check: found
-    title: 富邦媒體科技股份有限公司及子公司民國115及114年第2季合併財務報告
+    title: 民國115及114年第2季合併財務報告暨會計師核閱報告
     url: https://corp.momo.com.tw/file/investor/financeReport/2026Q2_FR.pdf

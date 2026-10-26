@@ -29,47 +29,65 @@ chain_stage:
   stage_name: 軋延與鋼材
   tier: midstream
 primary_chain_position: midstream
-summary_short: 以鍍面及烤漆鋼捲製造銷售為主，兼營鋼結構與天車設備。
-summary_long: 燁輝以鍍面及烤漆鋼捲製造與銷售為主要業務。2024年個體營收中，鍍面鋼捲占55.26%、烤漆鋼捲占37.18%；鋼構工程、天車工程與其他收入分別占2.35%、1.05%及4.16%。鍍面產品包括熱浸鍍鋅、鋁鋅及鋅鋁鎂鋼捲，工程事業提供鋼結構與運搬機械、天車設備。主要投資事業包括全資子公司鑫陽鋼鐵及燁輝（中國）；前者經營鋼管製造與銷售，後者為熱浸鍍鋅與烤漆鋼捲生產中心。
+summary_short: 以鍍鋅、烤漆鋼捲製造銷售為主，另經營鋼結構與天車設備。
+summary_long: 燁輝主要生產與銷售鍍鋅及烤漆鋼捲，2026年上半年兩者分別占合併營收40.77%與27.98%，另經營鋼結構與天車設備。具名原料供應商包括中鋼、中鴻、中龍及燁聯，其中燁聯供應電爐煉鋼低碳原料。主要子公司包括燁輝（中國）、鑫陽鋼鐵與燁興。公司於2025年及2026年公告認購燁聯私募，並公告投資義享樂國際、向燁興取得朕豪與朕華股權；2024年與燁聯共同申報的唐榮結合案遭公平會禁止。Panasonic供貨證據為2013年歷史揭露，不能據此認定目前仍持續供貨。
 segments:
 - evidence_ids:
+  - e1
+  id: seg_galvanized
+  name: 鍍鋅鋼捲
+  period: 2026年上半年合併營收
+  revenue_share_pct: 40.77
+- evidence_ids:
   - e2
-  id: seg_coated
-  name: 鍍面鋼捲（個體）
-  period: '2024'
-  revenue_share_pct: 55.26
+  id: seg_prepainted
+  name: 烤漆鋼捲
+  period: 2026年上半年合併營收
+  revenue_share_pct: 27.98
 - evidence_ids:
   - e3
-  id: seg_painted
-  name: 烤漆鋼捲（個體）
-  period: '2024'
-  revenue_share_pct: 37.18
-- evidence_ids:
-  - e4
-  id: seg_structure
-  name: 鋼構工程（個體）
-  period: '2024'
-  revenue_share_pct: 2.35
-- evidence_ids:
-  - e5
-  id: seg_crane
-  name: 天車工程（個體）
-  period: '2024'
-  revenue_share_pct: 1.05
-- evidence_ids:
-  - e6
-  id: seg_other
-  name: 其他（個體）
-  period: '2024'
-  revenue_share_pct: 4.16
+  id: seg_engineering
+  name: 鋼結構與運搬機械、天車設備
+  period: null
+  revenue_share_pct: null
 relations:
-  subsidiaries:
-  - as_of: '2026-10-15'
+  customers:
+  - as_of: 2013-12
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 全資子公司；鋼管製造與銷售
+    detail: 家電用途烤漆鋼板；歷史供貨關係
     details:
-    - 全資子公司；鋼管製造與銷售
+    - 家電用途烤漆鋼板；歷史供貨關係
+    edge: e5d4dc25bd454
+    evidence_level: primary
+    id: org.panasonic
+    name: Panasonic
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2026-05-04'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 控制母公司
+    details:
+    - 控制母公司
+    - 子公司
+    edge: e01128161c94d
+    evidence_level: primary
+    id: tw.2007
+    name: 燁興
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 2
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 鋼管製造銷售子公司
+    details:
+    - 鋼管製造銷售子公司
     edge: e71989a76c03b
     evidence_level: primary
     id: org.shin-yang-steel
@@ -78,12 +96,12 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-10-15'
+  - as_of: 2025-12
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 全資轉投資子公司；中國大陸鍍烤鋼捲生產中心
+    detail: 中國鍍鋅與烤漆鋼捲生產子公司
     details:
-    - 全資轉投資子公司；中國大陸鍍烤鋼捲生產中心
+    - 中國鍍鋅與烤漆鋼捲生產子公司
     edge: e77d61e439d18
     evidence_level: primary
     id: org.yieh-phui-china
@@ -92,17 +110,150 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2025-12-31'
+  suppliers:
+  - as_of: 2025-12
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 控制母公司
+    detail: 大宗鋼品原料
     details:
-    - 控制母公司
-    edge: e01128161c94d
+    - 大宗鋼品原料
+    - 主要鋼鐵原料
+    edge: ef549d85fc88b
+    evidence_level: primary
+    id: tw.2014
+    name: 中鴻
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 2
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 主要鋼鐵原料
+    details:
+    - 主要鋼鐵原料
+    edge: e576d3538534a
+    evidence_level: primary
+    id: org.chung-hung-dragon-steel
+    name: 中龍
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 主要鋼鐵原料
+    details:
+    - 主要鋼鐵原料
+    edge: e9b31424f9844
+    evidence_level: primary
+    id: tw.2002
+    name: 中鋼
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 電爐煉鋼低碳原料
+    details:
+    - 電爐煉鋼低碳原料
+    edge: ed7c89e092354
+    evidence_level: primary
+    id: tw.9957
+    name: 燁聯
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 新台幣6億元
+    as_of: '2025-10-17'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 認購現金增資股份
+    details:
+    - 認購現金增資股份
+    edge: edeca8d8fe776
+    event_date: '2025-10-17'
+    events:
+    - amount: 新台幣6億元
+      detail: 認購現金增資股份
+      event_date: '2025-10-17'
+    evidence_level: media
+    id: org.yi-xiang-le-international
+    name: 義享樂國際股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣530,244,000元
+    as_of: '2026-05-04'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 向子公司購買朕豪大酒店及朕華國際股權
+    details:
+    - 向子公司購買朕豪大酒店及朕華國際股權
+    edge: e7aa76d6b6ff2
+    event_date: '2026-05-04'
+    events:
+    - amount: 新台幣530,244,000元
+      detail: 向子公司購買朕豪大酒店及朕華國際股權
+      event_date: '2026-05-04'
     evidence_level: primary
     id: tw.2007
     name: 燁興
     ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2024-06-19'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 與燁聯及所屬子公司共同申報結合；遭禁止
+    details:
+    - 與燁聯及所屬子公司共同申報結合；遭禁止
+    edge: e606dfb70c2eb
+    event_date: '2024-06-19'
+    events:
+    - amount: null
+      detail: 與燁聯及所屬子公司共同申報結合；遭禁止
+      event_date: '2024-06-19'
+    evidence_level: primary
+    id: tw.2035
+    name: 唐榮公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣25.2億元
+    as_of: '2026-09-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 認購私募普通股
+    details:
+    - 認購私募普通股
+    - 再認購私募普通股
+    edge: e4c6391a18f32
+    event_date: '2025-12-05'
+    events:
+    - amount: 新台幣8.04億元
+      detail: 再認購私募普通股
+      event_date: '2026-09-23'
+    - amount: 新台幣25.2億元
+      detail: 認購私募普通股
+      event_date: '2025-12-05'
+    evidence_level: media
+    id: tw.9957
+    name: 燁聯
+    ranking_basis: unranked
+    role: buyer
     share_basis: null
     share_pct: null
     weight: 1
@@ -110,52 +261,94 @@ website: http://www.yiehphui.com.tw
 tax_id: '75947936'
 incorporated: '1978-04-14'
 listed: '1995-07-28'
-as_of: '2026-10-15'
+as_of: '2026-10-26'
 confidence: ai_cross_checked
 has_research: true
 evidence:
   tw.2023#e1:
-    locator: 企業概要介紹／主要產品
-    published_date: null
+    locator: PDF第10頁／簡報09，合併營收分布，2026年Q1～2產品別
+    published_date: '2026-08-21'
     publisher: 燁輝企業股份有限公司
+    quote_check: not_found
+    title: 2026年第一次法人說明會
+    url: https://www.yiehphui.com.tw/upload/myfiles/finance/annual/115/115_1.pdf
+  tw.2023#e10:
+    locator: 新聞稿第一段，燁聯、燁輝及所屬子公司與唐榮結合案
+    published_date: '2024-06-19'
+    publisher: 公平交易委員會
     quote_check: found
-    title: 企業概要介紹
-    url: https://www.yiehphui.com.tw/content.php?id=AR201211300018
+    title: 燁聯燁輝併購唐榮，公平會再度說No！
+    url: https://www.ftc.gov.tw/internet/main/doc/docDetail.aspx?docid=17823&mid=126&uid=126
+  tw.2023#e11:
+    locator: 燁輝與鑫陽各自認購金額段落
+    published_date: '2025-10-17'
+    publisher: MoneyDJ新聞
+    quote_check: found
+    title: 燁輝砸10.8億元現增義享樂，取得17.31%股權
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=c8b8f161-6dde-46f3-89e4-0ad51fa6ab1d
+  tw.2023#e12:
+    locator: 認購私募股數、價格與金額段落
+    published_date: '2025-12-05'
+    publisher: 中央社
+    quote_check: found
+    title: 燁輝加碼燁聯持股至34% 改善設備挹注轉投資利益
+    url: https://www.cna.com.tw/news/afe/202512050296.aspx
+  tw.2023#e13:
+    locator: 第2項事實發生日
+    published_date: '2026-05-04'
+    publisher: 公開資訊觀測站／MoneyDJ轉載
+    quote_check: found
+    title: 燁輝：本公司向燁興購買朕豪及朕華股權，交易累積一年內達新台幣三億元
+    url: https://m.moneydj.com/f1a.aspx?a=B7A48C19-D727-41B0-833C-E2CB9BA3CDE2
+  tw.2023#e14:
+    locator: 第5項交易數量、每單位價格及交易總金額
+    published_date: '2026-05-04'
+    publisher: 公開資訊觀測站／MoneyDJ轉載
+    quote_check: found
+    title: 燁輝：本公司向燁興購買朕豪及朕華股權，交易累積一年內達新台幣三億元
+    url: https://m.moneydj.com/f1a.aspx?a=B7A48C19-D727-41B0-833C-E2CB9BA3CDE2
+  tw.2023#e15:
+    locator: 認購燁聯私募普通股及完成後持股段落
+    published_date: '2026-09-23'
+    publisher: 中央社
+    quote_check: found
+    title: 燁輝投入8.04億認購燁聯私募 強化上游料源
+    url: https://www.cna.com.tw/news/afe/202609230309.aspx
   tw.2023#e2:
-    locator: 第26頁／4.01.4產品與銷售（個體營收）／鍍面鋼捲列，2024年銷量、銷值及占比欄
-    published_date: 2025-08
+    locator: PDF第10頁／簡報09，合併營收分布，2026年Q1～2產品別
+    published_date: '2026-08-21'
     publisher: 燁輝企業股份有限公司
-    quote_check: found
-    title: 2024年永續報告書
-    url: https://www.yiehphui.com.tw/upload/myfiles/csr/ESG_2024.pdf
+    quote_check: not_found
+    title: 2026年第一次法人說明會
+    url: https://www.yiehphui.com.tw/upload/myfiles/finance/annual/115/115_1.pdf
   tw.2023#e3:
-    locator: 第26頁／4.01.4產品與銷售（個體營收）／烤漆鋼捲列，2024年銷量、銷值及占比欄
+    locator: PDF第6頁／內頁4，關於燁輝企業
     published_date: 2025-08
     publisher: 燁輝企業股份有限公司
     quote_check: found
     title: 2024年永續報告書
     url: https://www.yiehphui.com.tw/upload/myfiles/csr/ESG_2024.pdf
   tw.2023#e4:
-    locator: 第26頁／4.01.4產品與銷售（個體營收）／鋼構工程列，2024年銷量、銷值及占比欄
-    published_date: 2025-08
+    locator: PDF第43頁／內頁41，4.08.2供應商
+    published_date: 2026-08
     publisher: 燁輝企業股份有限公司
     quote_check: found
-    title: 2024年永續報告書
-    url: https://www.yiehphui.com.tw/upload/myfiles/csr/ESG_2024.pdf
+    title: 2025年永續報告書
+    url: https://www.yiehphui.com.tw/upload/myfiles/csr/ESG_2025.pdf
   tw.2023#e5:
-    locator: 第26頁／4.01.4產品與銷售（個體營收）／天車工程列，2024年銷量、銷值及占比欄
-    published_date: 2025-08
+    locator: PDF第43頁／內頁41，4.08.2供應商
+    published_date: 2026-08
     publisher: 燁輝企業股份有限公司
     quote_check: found
-    title: 2024年永續報告書
-    url: https://www.yiehphui.com.tw/upload/myfiles/csr/ESG_2024.pdf
+    title: 2025年永續報告書
+    url: https://www.yiehphui.com.tw/upload/myfiles/csr/ESG_2025.pdf
   tw.2023#e6:
-    locator: 第26頁／4.01.4產品與銷售（個體營收）／其他列，2024年銷量、銷值及占比欄
-    published_date: 2025-08
+    locator: PDF第27頁／內頁26，2.3.6研究發展狀況
+    published_date: null
     publisher: 燁輝企業股份有限公司
     quote_check: found
-    title: 2024年永續報告書
-    url: https://www.yiehphui.com.tw/upload/myfiles/csr/ESG_2024.pdf
+    title: 2013年企業社會責任報告書
+    url: https://www.yiehphui.com.tw/upload/myfiles/csr/CSR_2013.pdf
   tw.2023#e7:
     locator: 台灣地區／鑫陽鋼鐵股份有限公司
     published_date: null
@@ -164,9 +357,16 @@ evidence:
     title: 主要投資事業
     url: https://www.yiehphui.com.tw/content.php?id=AR201211300013
   tw.2023#e8:
-    locator: 大陸地區／燁輝(中國)科技材料有限公司／公司介紹
+    locator: 大陸地區／燁輝(中國)科技材料有限公司
     published_date: null
     publisher: 燁輝企業股份有限公司
     quote_check: found
     title: 主要投資事業
     url: https://www.yiehphui.com.tw/content.php?id=AR201211300013
+  tw.2023#e9:
+    locator: 公告交易相對人及與公司關係
+    published_date: '2026-05-04'
+    publisher: 公開資訊觀測站／MoneyDJ轉載
+    quote_check: found
+    title: 燁輝：本公司向燁興購買朕豪及朕華股權，交易累積一年內達新台幣三億元
+    url: https://m.moneydj.com/f1a.aspx?a=B7A48C19-D727-41B0-833C-E2CB9BA3CDE2

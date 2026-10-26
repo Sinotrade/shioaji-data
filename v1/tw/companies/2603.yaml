@@ -130,6 +130,36 @@ relations:
     share_pct: null
     weight: 1
   suppliers:
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 歷史商船客戶
+    details:
+    - 歷史商船客戶
+    - 貨櫃輪建造；歷史供應關係
+    edge: eb85aec38690b
+    evidence_level: primary
+    id: tw.2208
+    name: 台船
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 2
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 貨櫃修洗服務
+    details:
+    - 貨櫃修洗服務
+    - 貨櫃維修、清洗及提領服務
+    edge: ee9ee1c848a76
+    evidence_level: primary
+    id: tw.2211
+    name: 長榮鋼
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 2
   - as_of: '2025-11-12'
     confidence: ai_cross_checked
     counterparty_shares: []
@@ -154,34 +184,6 @@ relations:
     evidence_level: media
     id: org.gaining-enterprise
     name: Gaining Enterprise S.A.
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
-  - as_of: '2013-08-24'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 貨櫃輪建造；歷史供應關係
-    details:
-    - 貨櫃輪建造；歷史供應關係
-    edge: eb85aec38690b
-    evidence_level: media
-    id: tw.2208
-    name: 台船
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
-  - as_of: 2024-07
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 貨櫃維修、清洗及提領服務
-    details:
-    - 貨櫃維修、清洗及提領服務
-    edge: ee9ee1c848a76
-    evidence_level: primary
-    id: tw.2211
-    name: 長榮鋼
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -324,6 +326,27 @@ relations:
     name: 長榮美國股份有限公司
     ranking_basis: unranked
     role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 使用權資產新台幣10,139,906元
+    as_of: '2024-05-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 承租高雄港第七貨櫃中心辦公室及修櫃廠房使用權
+    details:
+    - 承租高雄港第七貨櫃中心辦公室及修櫃廠房使用權
+    edge: ecbedbf42d677
+    event_date: '2024-05-13'
+    events:
+    - amount: 使用權資產新台幣10,139,906元
+      detail: 承租高雄港第七貨櫃中心辦公室及修櫃廠房使用權
+      event_date: '2024-05-13'
+    evidence_level: primary
+    id: tw.2211
+    name: 長榮鋼
+    ranking_basis: unranked
+    role: seller
     share_basis: null
     share_pct: null
     weight: 1

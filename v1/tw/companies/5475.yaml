@@ -26,18 +26,18 @@ chain_stage:
   stage_name: 銅箔、玻纖布、樹脂
   tier: upstream
 primary_chain_position: upstream
-summary_short: 以電子級玻纖布為主要營收來源，另有石英纖維產品與子公司複合氣瓶業務。
-summary_long: 德宏以電子級玻璃纖維布為主要營收來源，2025年占合併營收98.40%，其他業務占1.60%。玻纖布是印刷電路板的主要材料，位於PCB產業鏈上游。旗下德宏電子（蘇州）承接玻纖布生產與銷售，集團官網另列石英纖維紗與石英纖維布產品。公司公布的玻纖布應用涵蓋AI伺服器高速互連板及5G天線基板，石英纖維布應用則包括6G通訊設備。子公司德宇複合材料從事複合LPG容器生產與銷售，集團產品亦包括複合氣瓶。
+summary_short: 主要製造及銷售電子級玻纖布，另布局石英紗布與子公司複合材料氣瓶。
+summary_long: 德宏以電子級玻璃纖維布的研發、製造與銷售為主，2025年玻璃纖維布占合併營收98.40%，其他產品占1.60%。其玻纖布用於銅箔基板，位於印刷電路板產業鏈的上游材料端。公司亦布局石英纖維紗與石英纖維布，應用涵蓋AI伺服器及5G、6G通訊基板；2026年10月採訪確認石英纖維紗已通過客戶驗證並出貨。間接子公司德宏電子（蘇州）從事玻纖布生產與銷售，子公司德宇則經營複合材料液化石油氣瓶。2025年6月，德宏以新台幣5,000萬元參與德宇增資，持股升至98.25%。
 segments:
 - evidence_ids:
   - e1
-  id: seg.glass_cloth
+  id: seg_glass
   name: 玻璃纖維布
   period: '2025'
   revenue_share_pct: 98.4
 - evidence_ids:
   - e1
-  id: seg.other
+  id: seg_other
   name: 其他
   period: '2025'
   revenue_share_pct: 1.6
@@ -67,31 +67,74 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
-  subsidiaries:
-  - as_of: 2026-10
+  customers:
+  - as_of: '2001-02-01'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 德宇複合材料，複合LPG容器
+    detail: 歷史玻纖布客戶關係
     details:
-    - 德宇複合材料，複合LPG容器
-    edge: e6ac4ddf222b9
-    evidence_level: primary
-    id: org.deyu-composite-material
-    name: Deyu Composite Material Co., Ltd
+    - 歷史玻纖布客戶關係
+    edge: ebd78d5d7de75
+    evidence_level: other
+    id: tw.2383
+    name: 台光電
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: 2026-10
+  subsidiaries:
+  - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 德宏電子（蘇州），玻纖布生產與銷售
+    detail: 直接持股98.25%的複合材料子公司
     details:
-    - 德宏電子（蘇州），玻纖布生產與銷售
+    - 直接持股98.25%的複合材料子公司
+    edge: e6ac4ddf222b9
+    evidence_level: primary
+    id: org.deyu-composite-material
+    name: 德宇複合材料股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接全資持有的玻纖布生產子公司
+    details:
+    - 間接全資持有的玻纖布生產子公司
     edge: e47fa6030e02f
     evidence_level: primary
     id: org.glotech-electronics-suzhou
-    name: Glotech Electronics (Suzhou) Corp.
+    name: 德宏電子(蘇州)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接全資持有的境外投資公司
+    details:
+    - 直接全資持有的境外投資公司
+    edge: e980fafcb2287
+    evidence_level: primary
+    id: org.glotech-industrial-bvi
+    name: GLOTECH INDUSTRIAL CORP.(BRITISH VIRGIN ISLANDS)
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過BVI公司間接全資持有的開曼控股公司
+    details:
+    - 透過BVI公司間接全資持有的開曼控股公司
+    edge: eaceb09200f3a
+    evidence_level: primary
+    id: org.glotech-international-cayman
+    name: GLOTECH INTERNATIONAL CORP.(CAYMAN)
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -111,88 +154,172 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  transactions:
+  - amount: 新台幣50,000千元
+    as_of: 2025-06
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 參與既有子公司現金增資
+    details:
+    - 參與既有子公司現金增資
+    edge: e4710e945f78c
+    event_date: null
+    events:
+    - amount: 新台幣50,000千元
+      detail: 參與既有子公司現金增資
+      event_date: null
+    evidence_level: primary
+    id: org.deyu-composite-material
+    name: 德宇複合材料股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 每月新台幣360,000元(未稅)
+    as_of: '2025-09-09'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團內部不動產使用權出租
+    details:
+    - 集團內部不動產使用權出租
+    edge: eb663d8113840
+    event_date: '2025-09-09'
+    events:
+    - amount: 每月新台幣360,000元(未稅)
+      detail: 集團內部不動產使用權出租
+      event_date: '2025-09-09'
+    evidence_level: primary
+    id: org.deyu-composite-material
+    name: 德宇複合材料股份有限公司
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 供應商代碼PFGK、TBF、GY、CTG：2025年報未揭露完整公司名稱，未推…
+- 客戶代碼CDI、SNC、JPH、JSH：2025年報未揭露完整公司名稱。
+- 歷史客戶代碼SGL、JYE：年報2024年度比較欄未揭露完整公司名稱。
+- 石英纖維紗通過驗證並供貨的客戶：2026年10月報導未具名。
+- 石英紗布銷往日本的客戶：年報未具名。
 website: http://www.glotechgf.com
 tax_id: '97178087'
 incorporated: '1997-03-21'
 listed: '2001-01-16'
-as_of: '2026-10-15'
+as_of: '2026-10-26'
 confidence: ai_cross_checked
 has_research: true
 evidence:
   tw.5475#e1:
-    locator: 印刷頁41，肆、營運概況／營業比重；PDF第45頁
+    locator: PDF第43頁，營運概況／營業比重
     published_date: '2026-06-01'
     publisher: 德宏工業股份有限公司
-    quote_check: found
+    quote_check: not_found
     title: 德宏工業股份有限公司114年度年報
-    url: https://cdn.financialreports.eu/financialreports/media/filings/73437/2026/RNS/73437_rns_2026-08-21_bf2da3f2-1662-482e-b242-360b2477f45d.pdf
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=5475&colorchg=1&filename=2025_5475_20260601F04.pdf&kind=F&step=9
   tw.5475#e10:
-    locator: Deyu Composite Material Co., Ltd介紹
-    published_date: null
-    publisher: 德宏工業股份有限公司
-    quote_check: found
-    title: Glotech Industrial Corp.－Profile
-    url: https://www.glotechgf.com/About/qyjj?tab=company
-  tw.5475#e11:
-    locator: Deyu Composite Material Co., Ltd業務說明
-    published_date: null
-    publisher: 德宏工業股份有限公司
-    quote_check: found
-    title: Glotech Industrial Corp.－Profile
-    url: https://www.glotechgf.com/About/qyjj?tab=company
-  tw.5475#e2:
-    locator: 印刷頁42，產業之現況與發展；PDF第46頁
+    locator: PDF第38頁，轉投資事業綜合持股比例表
     published_date: '2026-06-01'
     publisher: 德宏工業股份有限公司
-    quote_check: found
+    quote_check: not_found
     title: 德宏工業股份有限公司114年度年報
-    url: https://cdn.financialreports.eu/financialreports/media/filings/73437/2026/RNS/73437_rns_2026-08-21_bf2da3f2-1662-482e-b242-360b2477f45d.pdf
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=5475&colorchg=1&filename=2025_5475_20260601F04.pdf&kind=F&step=9
+  tw.5475#e11:
+    locator: 第15頁，合併財務報表編製主體表；公司原財報鏡像
+    published_date: '2025-11-13'
+    publisher: 德宏工業股份有限公司
+    quote_check: found
+    title: 德宏工業股份有限公司及子公司114年前三季合併財務報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/73437/2026/RNS/73437_rns_2026-08-19_b970226b-f689-4ccb-b73f-04d380951110.pdf
+  tw.5475#e12:
+    locator: PDF第16頁，德宇複合材料產品介紹
+    published_date: '2025-12-03'
+    publisher: 德宏工業股份有限公司
+    quote_check: found
+    title: 114年度德宏集團法人說明會
+    url: https://mopsov.twse.com.tw/nas/STR/547520251203M001.pdf
+  tw.5475#e13:
+    locator: 第15頁，合併財務報表編製主體表註1；公司原財報鏡像
+    published_date: '2025-11-13'
+    publisher: 德宏工業股份有限公司
+    quote_check: found
+    title: 德宏工業股份有限公司及子公司114年前三季合併財務報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/73437/2026/RNS/73437_rns_2026-08-19_b970226b-f689-4ccb-b73f-04d380951110.pdf
+  tw.5475#e15:
+    locator: 公告第6項，交易相對人及關係
+    published_date: '2025-09-09'
+    publisher: 公開資訊觀測站重大訊息，MoneyDJ刊載
+    quote_check: found
+    title: 德宏 代子公司德宇公告取得使用權資產(修正114年8月12日公告)
+    url: https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=88eb7b36-b87d-41c7-bd17-f321cf5b9f06
+  tw.5475#e16:
+    locator: 公告第10項，租賃付款條件
+    published_date: '2025-09-09'
+    publisher: 公開資訊觀測站重大訊息，MoneyDJ刊載
+    quote_check: found
+    title: 德宏 代子公司德宇公告取得使用權資產(修正114年8月12日公告)
+    url: https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=88eb7b36-b87d-41c7-bd17-f321cf5b9f06
+  tw.5475#e17:
+    locator: 國內廠商生態段落
+    published_date: '2001-02-01'
+    publisher: 富邦證券，MoneyDJ刊載
+    quote_check: found
+    title: 國內第四大玻纖布廠商
+    url: https://www.moneydj.com/kmdj/report/reportviewer.aspx?a=e9d2ce6a-03b8-48b4-9399-d5e90cc02945
+  tw.5475#e2:
+    locator: 繁體中文版／電子級玻璃纖維布／產品簡述
+    published_date: null
+    publisher: 德宏工業股份有限公司
+    quote_check: not_found
+    title: 產品中心：電子級玻璃纖維布
+    url: https://www.glotechgf.com/Products/Products
   tw.5475#e3:
-    locator: About Glotech，公司與子公司介紹
-    published_date: null
-    publisher: 德宏工業股份有限公司
+    locator: 萬惠雯具名報導，董事長劉暉麟訪談首段
+    published_date: '2026-10-22'
+    publisher: MoneyDJ新聞
     quote_check: found
-    title: Glotech Industrial Corp.－About Glotech
-    url: https://www.glotechgf.com/
+    title: 《TPCA》德宏Q紗通過驗證並出貨 Q布明年Q3接棒
+    url: https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=04b2e6d4-25b4-4a20-a122-d2b3c4ffd6d7
   tw.5475#e4:
-    locator: 石英纖維紗產品說明
+    locator: 繁體中文版／電子級石英纖維布／產品簡述
     published_date: null
     publisher: 德宏工業股份有限公司
-    quote_check: found
-    title: Glotech Industrial Corp.－Products
+    quote_check: not_found
+    title: 產品中心：電子級石英纖維布
     url: https://www.glotechgf.com/Products/Products
   tw.5475#e5:
-    locator: 石英纖維布產品說明
-    published_date: null
+    locator: PDF第11頁，石英纖維紗、布的應用產業
+    published_date: '2025-12-03'
     publisher: 德宏工業股份有限公司
     quote_check: found
-    title: Glotech Industrial Corp.－Products
-    url: https://www.glotechgf.com/Products/Products
+    title: 114年度德宏集團法人說明會
+    url: https://mopsov.twse.com.tw/nas/STR/547520251203M001.pdf
   tw.5475#e6:
-    locator: 電子級石英纖維布／Application Fields
-    published_date: null
+    locator: PDF第12頁，石英纖維紗布用途與競爭力
+    published_date: '2025-12-03'
     publisher: 德宏工業股份有限公司
     quote_check: found
-    title: Glotech Industrial Corp.－Products
-    url: https://www.glotechgf.com/Products/Products
+    title: 114年度德宏集團法人說明會
+    url: https://mopsov.twse.com.tw/nas/STR/547520251203M001.pdf
   tw.5475#e7:
-    locator: 電子級玻纖布／Application Fields／Emerging Fields
-    published_date: null
+    locator: PDF第38頁，轉投資事業綜合持股比例表
+    published_date: '2026-06-01'
     publisher: 德宏工業股份有限公司
-    quote_check: found
-    title: Glotech Industrial Corp.－Products
-    url: https://www.glotechgf.com/Products/Products
+    quote_check: not_found
+    title: 德宏工業股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=5475&colorchg=1&filename=2025_5475_20260601F04.pdf&kind=F&step=9
   tw.5475#e8:
-    locator: 電子級玻纖布／Application Fields／Consumer Electronics
-    published_date: null
+    locator: PDF第38頁，轉投資事業綜合持股比例表；第66頁組織圖
+    published_date: '2026-06-01'
     publisher: 德宏工業股份有限公司
-    quote_check: found
-    title: Glotech Industrial Corp.－Products
-    url: https://www.glotechgf.com/Products/Products
+    quote_check: not_found
+    title: 德宏工業股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=5475&colorchg=1&filename=2025_5475_20260601F04.pdf&kind=F&step=9
   tw.5475#e9:
-    locator: LPG氣瓶／Product Description
-    published_date: null
+    locator: PDF第67頁，各關係企業基本資料／主要營業或生產項目
+    published_date: '2026-06-01'
     publisher: 德宏工業股份有限公司
-    quote_check: found
-    title: Glotech Industrial Corp.－Products
-    url: https://www.glotechgf.com/Products/Products
+    quote_check: not_found
+    title: 德宏工業股份有限公司114年度年報
+    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=5475&colorchg=1&filename=2025_5475_20260601F04.pdf&kind=F&step=9

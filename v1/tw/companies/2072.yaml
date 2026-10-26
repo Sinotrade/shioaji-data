@@ -17,37 +17,94 @@ industry:
   l3: green.wind
   l3_name: 風電
   l3_name_en: Wind Power
-primary_chain_position: midstream
-summary_short: 製造離岸風電套管式水下基礎與基樁，並提供組裝及專案管理服務。
-summary_long: 世紀風電以離岸風電水下基礎製造為核心，主要產品為套管式水下基礎及基樁式水下基礎。2025年兩項產品分別占營收96.52%與1.19%，其他業務占2.29%。公司另提供水下基礎大型組裝、專案管理、供應鏈管理及碼頭管理服務。依2026年第二季財報，世紀鋼鐵結構為其母公司，旗下世紀鈽錸特持股66.60%，該子公司已獲核准解散，尚待清算。
+primary_chain_position: not_applicable
+summary_short: 以離岸風電套管式水下基礎製造、組裝及專案管理取得收入。
+summary_long: 世紀能源主要製造離岸風電套管式水下基礎與基樁，並提供大型組裝、專案管理、供應鏈及碼頭管理服務。2025年套管式水下基礎占營收96.52%，基樁占1.19%。具名供應專案包括沃旭大彰化、CIP渢妙，以及風睿能源海盛與海廣風場。世紀鋼鐵結構為母公司，亦為構件供應商，2025年占進貨30.49%；世紀樺欣也供應腿管、斜撐等構件。2026年公司公告向台灣科慕取得觀音土地，並通過以發行新股方式收購世紀樺欣全部股份的交易案，尚未據此認定已完成交割。
 segments:
 - evidence_ids:
-  - e2
+  - e1
   id: seg_jacket
-  name: 套管式水下基礎（Jacket）
+  name: 套管式水下基礎
   period: '2025'
   revenue_share_pct: 96.52
 - evidence_ids:
-  - e2
+  - e1
   id: seg_pinpile
-  name: 基樁式水下基礎（Pinpile）
+  name: 基樁式水下基礎
   period: '2025'
   revenue_share_pct: 1.19
 - evidence_ids:
-  - e2
+  - e1
   id: seg_other
   name: 其他
   period: '2025'
   revenue_share_pct: 2.29
 relations:
-  parents:
-  - as_of: '2026-06-30'
+  customers:
+  - as_of: 2019-05
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 母公司及集團最終控制者
+    detail: 大彰化東南及西南風場81支基樁
     details:
-    - 母公司及集團最終控制者
-    - 世紀風電子公司
+    - 大彰化東南及西南風場81支基樁
+    edge: e31ec5ddeaba3
+    evidence_level: primary
+    id: eu.ORSTED
+    name: 沃旭能源
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-09-11'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 觀音倉儲空間租賃（已簽約、尚未起租）
+    details:
+    - 觀音倉儲空間租賃（已簽約、尚未起租）
+    edge: e02ca4a1f785c
+    evidence_level: primary
+    id: org.bai-ji-logistics
+    name: 百及物流股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2024-06
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 渢妙一號風場20座水下基礎
+    details:
+    - 渢妙一號風場20座水下基礎
+    edge: e0a1d8845a3ea
+    evidence_level: primary
+    id: org.copenhagen-infrastructure-partners
+    name: 哥本哈根基礎建設基金
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-08-25'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 海盛35座及海廣57座管架式水下基礎
+    details:
+    - 海盛35座及海廣57座管架式水下基礎
+    edge: e23a146a558a6
+    evidence_level: primary
+    id: org.synera-renewable-energy
+    name: 風睿能源
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  parents:
+  - as_of: '2026-06-25'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 母公司
+    details:
+    - 母公司
+    - 世紀風電；承攬套管式水下基礎
     edge: e1edccd53c76f
     evidence_level: primary
     id: tw.9958
@@ -57,12 +114,12 @@ relations:
     share_pct: null
     weight: 2
   subsidiaries:
-  - as_of: '2026-06-30'
+  - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 持股66.60%的合併子公司，已核准解散、待清算
+    detail: 持股66.60%的清算中子公司
     details:
-    - 持股66.60%的合併子公司，已核准解散、待清算
+    - 持股66.60%的清算中子公司
     edge: e66c6323593cb
     evidence_level: primary
     id: org.century-bladt
@@ -71,46 +128,277 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  suppliers:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 腿管、斜撐等水下基礎構件
+    details:
+    - 腿管、斜撐等水下基礎構件
+    edge: e9ad0c16709f4
+    evidence_level: primary
+    id: tw.9958
+    name: 世紀鋼
+    ranking_basis: disclosed
+    share_basis: purchases
+    share_pct: 30.49
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 水下基礎相關進貨
+    details:
+    - 水下基礎相關進貨
+    edge: e2f34adc162f1
+    evidence_level: primary
+    id: kr.100090
+    name: SK oceanplant Co., Ltd
+    ranking_basis: disclosed
+    share_basis: purchases
+    share_pct: 12.83
+    weight: 1
+  - as_of: '2026-04-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 腿管、斜撐等水下基礎構件
+    details:
+    - 腿管、斜撐等水下基礎構件
+    edge: e13b68dbd227f
+    evidence_level: primary
+    id: tw.7752
+    name: 世紀樺欣風能股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 新台幣55億8225萬9540元
+    as_of: '2026-01-15'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 取得桃園觀音土地
+    details:
+    - 取得桃園觀音土地
+    edge: edb08f2237bca
+    event_date: '2026-01-15'
+    events:
+    - amount: 新台幣55億8225萬9540元
+      detail: 取得桃園觀音土地
+      event_date: '2026-01-15'
+    evidence_level: media
+    id: org.taiwan-chemours
+    name: 台灣科慕股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2026-08-12'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 發行新股取得全部股份之股份轉換案
+    details:
+    - 發行新股取得全部股份之股份轉換案
+    edge: e10661c8b0fa5
+    event_date: '2026-06-25'
+    events:
+    - amount: null
+      detail: 發行新股取得全部股份之股份轉換案
+      event_date: '2026-06-25'
+    evidence_level: primary
+    id: tw.7752
+    name: 世紀樺欣風能股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣3,576,980仟元（公告評價基礎，股份作價）
+    as_of: '2026-06-25'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 以世紀樺欣持股換取世紀風電新股
+    details:
+    - 以世紀樺欣持股換取世紀風電新股
+    - 參與子公司現金增資
+    - 增持子公司股票
+    edge: e4227755079d5
+    event_date: '2026-06-25'
+    events:
+    - amount: 新台幣3,576,980仟元（公告評價基礎，股份作價）
+      detail: 以世紀樺欣持股換取世紀風電新股
+      event_date: '2026-06-25'
+    - amount: 新台幣5,356,593仟元
+      detail: 參與子公司現金增資
+      event_date: null
+    - amount: 新台幣32,312仟元
+      detail: 增持子公司股票
+      event_date: null
+    evidence_level: primary
+    id: tw.9958
+    name: 世紀鋼
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣265,136,310元
+    as_of: '2026-02-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 購入台北港南碼頭建廠鋼柱及鋼樑
+    details:
+    - 購入台北港南碼頭建廠鋼柱及鋼樑
+    edge: e90a3f61602c3
+    event_date: '2026-02-23'
+    events:
+    - amount: 新台幣265,136,310元
+      detail: 購入台北港南碼頭建廠鋼柱及鋼樑
+      event_date: '2026-02-23'
+    evidence_level: primary
+    id: tw.9958
+    name: 世紀鋼
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 年報以J公司、H&I公司、G公司等代號揭露的銷貨客戶，未將代號推定為具名開發商。
+- 韓國、日本及台灣的未具名鋼板供應商。
+- 觀音倉儲新建工程尚待確定的個別工程廠商。
 website: www.cwptw.com
 tax_id: '69651695'
 incorporated: '2017-05-15'
 listed: '2026-03-26'
-as_of: '2026-10-15'
+as_of: '2026-10-26'
 confidence: ai_cross_checked
 has_research: true
 evidence:
+  tw.2072#e1:
+    locator: 印刷頁55，營業比重；欄序為2024年及2025年
+    published_date: '2026-04-14'
+    publisher: 世紀離岸風電設備股份有限公司
+    quote_check: found
+    title: 2025年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51966/2026/RNS/51966_rns_2026-05-20_030216b6-d633-442f-9ada-959143cbd191.pdf
+  tw.2072#e10:
+    locator: 海廣風電合約供應範圍
+    published_date: '2025-08-25'
+    publisher: 風睿能源
+    quote_check: found
+    title: 風睿能源海廣風電水下基礎供應合約
+    url: https://www.sreglobal.com/news/2025/08/SRE%20awards%20Century%20Group%20Taiwan%E2%80%99s%20largest%20offshore%20wind%20turbine%20foundation%20contracts%20for%20Formosa%206?lang=zh
+  tw.2072#e11:
+    locator: 印刷頁50，轉投資持股表
+    published_date: '2026-04-14'
+    publisher: 世紀離岸風電設備股份有限公司
+    quote_check: found
+    title: 2025年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51966/2026/RNS/51966_rns_2026-05-20_030216b6-d633-442f-9ada-959143cbd191.pdf
+  tw.2072#e12:
+    locator: 第3至5項
+    published_date: '2023-12-07'
+    publisher: 公開資訊觀測站重大訊息（MoneyDJ刊載）
+    quote_check: found
+    title: 世紀鈽錸特辦理解散清算公告
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=48a2b624-edb8-480a-9954-94724b214551
+  tw.2072#e13:
+    locator: 世紀風電個別購地金額與相對人
+    published_date: '2026-04-13'
+    publisher: 中央通訊社
+    quote_check: found
+    title: 世紀鋼集團砸百億桃園購地　作水下基礎供應鏈儲料區
+    url: https://www.cna.com.tw/news/afe/202604130124.aspx
+  tw.2072#e14:
+    locator: 股份轉換案董事會決議
+    published_date: '2026-06-25'
+    publisher: 中央通訊社
+    quote_check: found
+    title: 世紀風電啟動轉型　併購世紀樺欣、擬布局光能氫能
+    url: https://www.cna.com.tw/news/afe/202606250256.aspx
+  tw.2072#e15:
+    locator: 第2項重要決議
+    published_date: '2026-08-12'
+    publisher: 公開資訊觀測站重大訊息（鉅亨網刊載）
+    quote_check: found
+    title: 世紀風電115年第一次股東臨時會重要決議事項
+    url: https://m.cnyes.com/news/id/6573507
+  tw.2072#e16:
+    locator: 第1項交易標的
+    published_date: '2026-02-23'
+    publisher: 公開資訊觀測站重大訊息（MoneyDJ刊載）
+    quote_check: found
+    title: 向關係人世紀鋼鐵結構購買建廠鋼構公告
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=4ec03c53-5e33-4393-87a0-4a2d1753b406
+  tw.2072#e17:
+    locator: 第5項交易總金額
+    published_date: '2026-02-23'
+    publisher: 公開資訊觀測站重大訊息（MoneyDJ刊載）
+    quote_check: found
+    title: 向關係人世紀鋼鐵結構購買建廠鋼構公告
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=4ec03c53-5e33-4393-87a0-4a2d1753b406
+  tw.2072#e18:
+    locator: 第5項租賃內容
+    published_date: '2026-09-11'
+    publisher: 公開資訊觀測站重大訊息（MoneyDJ刊載）
+    quote_check: found
+    title: 與百及物流股份有限公司簽訂租賃合約公告
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=9c96fd0b-d139-4334-a14d-f1e90bda0e37
   tw.2072#e2:
-    locator: 第55頁，營業比重；數字依序為113及114年度
-    published_date: '2026-07-27'
+    locator: 印刷頁54，業務範圍
+    published_date: '2026-04-14'
     publisher: 世紀離岸風電設備股份有限公司
     quote_check: found
-    title: 114年度年報
-    url: https://www.cwptw.com/uploads/item/636/114%E5%B9%B4%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
+    title: 2025年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51966/2026/RNS/51966_rns_2026-05-20_030216b6-d633-442f-9ada-959143cbd191.pdf
   tw.2072#e3:
-    locator: 第54頁，業務範圍
-    published_date: '2026-07-27'
-    publisher: 世紀離岸風電設備股份有限公司
+    locator: 第6項，交易相對人及關係
+    published_date: '2026-02-23'
+    publisher: 公開資訊觀測站重大訊息（MoneyDJ刊載）
     quote_check: found
-    title: 114年度年報
-    url: https://www.cwptw.com/uploads/item/636/114%E5%B9%B4%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
+    title: 向關係人世紀鋼鐵結構購買建廠鋼構公告
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=4ec03c53-5e33-4393-87a0-4a2d1753b406
   tw.2072#e4:
-    locator: 第10頁，公司沿革
-    published_date: '2026-09-23'
+    locator: 印刷頁72，主要進貨廠商；後半列為2025年
+    published_date: '2026-04-14'
     publisher: 世紀離岸風電設備股份有限公司
     quote_check: found
-    title: 115年第二季合併財務報告
-    url: https://www.cwptw.com/uploads/item/674/115Q2-%E4%B8%AD.pdf
+    title: 2025年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51966/2026/RNS/51966_rns_2026-05-20_030216b6-d633-442f-9ada-959143cbd191.pdf
   tw.2072#e5:
-    locator: 第14頁，合併概況；持股欄依序為115.06.30、114.12.31、114.06.30
-    published_date: '2026-09-23'
+    locator: 印刷頁68，物料價格及供應鏈管理風險因應對策
+    published_date: '2026-04-14'
     publisher: 世紀離岸風電設備股份有限公司
     quote_check: found
-    title: 115年第二季合併財務報告
-    url: https://www.cwptw.com/uploads/item/674/115Q2-%E4%B8%AD.pdf
+    title: 2025年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51966/2026/RNS/51966_rns_2026-05-20_030216b6-d633-442f-9ada-959143cbd191.pdf
   tw.2072#e6:
-    locator: 第14頁，合併概況註解
-    published_date: '2026-09-23'
+    locator: 印刷頁72，主要進貨廠商，2025年欄
+    published_date: '2026-04-14'
     publisher: 世紀離岸風電設備股份有限公司
     quote_check: found
-    title: 115年第二季合併財務報告
-    url: https://www.cwptw.com/uploads/item/674/115Q2-%E4%B8%AD.pdf
+    title: 2025年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51966/2026/RNS/51966_rns_2026-05-20_030216b6-d633-442f-9ada-959143cbd191.pdf
+  tw.2072#e7:
+    locator: 民國108年05月
+    published_date: null
+    publisher: 世紀能源設備股份有限公司
+    quote_check: found
+    title: 公司沿革大事記
+    url: https://www.cwptw.com/tw/about/2/
+  tw.2072#e8:
+    locator: 印刷頁2，渢妙一號專案
+    published_date: '2025-03-28'
+    publisher: 世紀離岸風電設備股份有限公司
+    quote_check: found
+    title: 2024年度年報
+    url: https://www.cwptw.com/uploads/item/612/113%E5%B9%B4%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
+  tw.2072#e9:
+    locator: 世紀風電董事長談話
+    published_date: '2025-07-03'
+    publisher: 風睿能源
+    quote_check: found
+    title: 風睿能源委託世紀風電打造高品質水下基礎
+    url: https://www.sreglobal.com/news/2025/07/%E9%A2%A8%E7%9D%BF%E8%83%BD%E6%BA%90%E5%A7%94%E8%A8%97%E4%B8%96%E7%B4%80%E9%A2%A8%E9%9B%BB%E6%89%93%E9%80%A0%E9%AB%98%E5%93%81%E8%B3%AA%E6%B0%B4%E4%B8%8B%E5%9F%BA%E7%A4%8E?lang=zh

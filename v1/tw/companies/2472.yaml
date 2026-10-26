@@ -17,9 +17,17 @@ industry:
   l3: comp.passive
   l3_name: 被動元件
   l3_name_en: Passive Components
-primary_chain_position: midstream
-summary_short: 製造與銷售鋁電解電容器，合併業務另包含子公司的鋁箔產品。
-summary_long: 立隆電主要製造與銷售鋁電解電容器，產品涵蓋鋁質電解、高分子固態及高分子固液混合電容，應用於汽車電子、電信、雲端與電力電子設備。2025年合併營收中，鋁電解電容器占66.8%，鋁箔占33.2%。集團透過子公司立敦科技經營電蝕箔與化成箔；截至2026年6月底，立隆持有立敦29.13%，因實質控制而將其納入合併財報。其他主要直接子公司包括控股公司LIRO及全資持有的泰國電容製造公司。公司年報亦明確揭露布局AI伺服器相關應用。
+chain: chain.auto
+chain_stage:
+  agreement: both
+  also: []
+  reason: 主要營收來自鋁電解電容器，並經營上游鋁箔，皆屬材料與電子元件。
+  stage: materials
+  stage_name: 材料與電子元件
+  tier: upstream
+primary_chain_position: upstream
+summary_short: 主要製造銷售鋁電解電容器，集團另經營上游鋁箔業務。
+summary_long: 立隆電主要製造與銷售鋁電解電容器，產品包含高分子固態及固液混合型電容器。2025年合併營收中，鋁電解電容器占66.8%，鋁箔占33.2%。依2024年應用資料，汽車電子約占整體業績33%；公司另揭露電動車、5G基地台與AI伺服器相關應用。集團包含上游鋁箔子公司立敦，以及惠州、蘇州與泰國等子公司。2024年由蘇州子公司處分土地使用權及廠房；2025年董事會通過購買經由LIRO轉投資惠州公司的股份，同年子公司立敦增資立瀚科技取得控制。
 segments:
 - evidence_ids:
   - e1
@@ -33,24 +41,57 @@ segments:
   name: 鋁箔
   period: '2025'
   revenue_share_pct: 33.2
-main_theme: theme.ai_server
+main_theme: theme.ev
 themes:
+- also: []
+  stage: parts
+  theme: theme.ev
+  tier: midstream
 - also: []
   stage: components
   theme: theme.ai_server
   tier: midstream
 - also: []
-  stage: it
-  theme: theme.data_center
-  tier: midstream
+  stage: components
+  theme: theme.5g
+  tier: upstream
 relations:
-  subsidiaries:
-  - as_of: '2026-06-30'
+  customers:
+  - as_of: '2015-01-01'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 具實質控制的鋁箔子公司
+    detail: 通訊應用產品訂單
     details:
-    - 具實質控制的鋁箔子公司
+    - 通訊應用產品訂單
+    edge: e749c94c63de1
+    evidence_level: media
+    id: eu.NOKIA
+    name: 諾基亞
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2020-06-05'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接採購鋁電容後交由EMS廠使用
+    details:
+    - 直接採購鋁電容後交由EMS廠使用
+    edge: e96bc0b623f4e
+    evidence_level: media
+    id: org.huawei
+    name: Huawei
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 實質控制之上游鋁箔子公司
+    details:
+    - 實質控制之上游鋁箔子公司
     - 具實質控制之母公司
     edge: eb9648a60908c
     evidence_level: primary
@@ -60,26 +101,82 @@ relations:
     share_basis: null
     share_pct: null
     weight: 2
-  - as_of: '2026-06-30'
+  - as_of: '2025-06-10'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 泰國鋁質電解電容器子公司
+    detail: 惠州間接子公司
     details:
-    - 泰國鋁質電解電容器子公司
-    edge: ebfed4c5ad153
+    - 惠州間接子公司
+    edge: e543223cabb5b
     evidence_level: primary
-    id: org.lelon-electronics-thailand
-    name: LELON ELECTRONICS (Thailand) CO., LTD.
+    id: org.lelon-electronics-huizhou
+    name: 立隆電子(惠州)有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-06-30'
+  - as_of: '2025-09-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 大陸地區投資控股子公司
+    detail: 經LIRO持有之蘇州間接子公司
     details:
-    - 大陸地區投資控股子公司
+    - 經LIRO持有之蘇州間接子公司
+    edge: e9f322e4a2a94
+    evidence_level: primary
+    id: org.lelon-electronics-suzhou
+    name: 立隆電子(蘇州)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 經LIRO持有之蘇州科技間接子公司
+    details:
+    - 經LIRO持有之蘇州科技間接子公司
+    edge: e933a7108c6a8
+    evidence_level: primary
+    id: org.lelon-electronics-technology-suzhou
+    name: 立隆電子科技(蘇州)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-08-18'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 泰國子公司及新廠布局
+    details:
+    - 泰國子公司及新廠布局
+    edge: ebfed4c5ad153
+    evidence_level: primary
+    id: org.lelon-electronics-thailand
+    name: 立隆電子(泰國)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 由子公司立敦增資取得控制
+    details:
+    - 由子公司立敦增資取得控制
+    edge: e9cf93132ca35
+    evidence_level: primary
+    id: org.lihan-technology-huizhou
+    name: 立瀚科技(惠州)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-11-12'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 海外投資子公司
+    details:
+    - 海外投資子公司
     edge: ef19d2d1b8734
     evidence_level: primary
     id: org.liro-electronics
@@ -88,21 +185,154 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  suppliers:
+  - as_of: '2012-01-02'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 化成鋁箔供應
+    details:
+    - 化成鋁箔供應
+    edge: e65f416ca909b
+    evidence_level: media
+    id: tw.6175
+    name: 立敦
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 人民幣136,180仟元
+    as_of: '2024-07-22'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 蘇州子公司處分土地使用權及廠房
+    details:
+    - 蘇州子公司處分土地使用權及廠房
+    edge: ee75969e6e3dd
+    event_date: '2024-07-22'
+    events:
+    - amount: 人民幣136,180仟元
+      detail: 蘇州子公司處分土地使用權及廠房
+      event_date: '2024-07-22'
+    evidence_level: primary
+    id: org.wujiang-economic-development-zone
+    name: 吳江經濟技術開發區管委會
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣90,000仟元
+    as_of: '2025-11-12'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 購買經LIRO轉投資惠州公司之股份
+    details:
+    - 購買經LIRO轉投資惠州公司之股份
+    edge: e46e0a7e4b340
+    event_date: '2025-11-12'
+    events:
+    - amount: 新台幣90,000仟元
+      detail: 購買經LIRO轉投資惠州公司之股份
+      event_date: '2025-11-12'
+    evidence_level: primary
+    id: org.吳德銓
+    name: 吳德銓
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 中國大陸主要電動車廠
+- 歐洲車用電子客戶
+- 美系AI晶片大廠
+- 與公司進行設計合作的電子代工服務（EMS）客戶
 website: www.lelon.com.tw
 tax_id: '52358985'
 incorporated: '1976-02-12'
 listed: '2001-09-17'
-as_of: '2026-10-15'
+as_of: '2026-10-26'
 confidence: ai_cross_checked
 has_research: true
 evidence:
   tw.2472#e1:
-    locator: 印刷頁 52，業務範圍／營業比重；同頁產業上下游關聯圖
+    locator: 印刷頁52，肆、營運概況，一、業務內容，營業比重表；113年與114年並列
     published_date: '2026-06-04'
     publisher: 立隆電子工業股份有限公司
     quote_check: found
-    title: 立隆電子 114 年度年報
-    url: https://www.lelon.com.tw/upload/inves32/178056506676.pdf
+    title: 立隆電子工業股份有限公司114年度年報
+    url: https://www.lelon.com.tw/upload/inves32/178056495090.pdf
+  tw.2472#e10:
+    locator: 印刷頁13至14，附註四、3，合併主體及立敦實質控制說明
+    published_date: '2026-05-15'
+    publisher: 立隆電子工業股份有限公司
+    quote_check: found
+    title: 立隆電子工業股份有限公司及子公司115年第1季合併財務報告
+    url: https://www.lelon.com.tw/upload/inves31/177881171516.pdf
+  tw.2472#e11:
+    locator: 印刷頁14，附註四、3註二，載明114年7月1日增資
+    published_date: '2026-05-15'
+    publisher: 立隆電子工業股份有限公司
+    quote_check: found
+    title: 立隆電子工業股份有限公司及子公司115年第1季合併財務報告
+    url: https://www.lelon.com.tw/upload/inves31/177881171516.pdf
+  tw.2472#e12:
+    locator: PDF第4頁，第二屆第三次審計委員會，2025年11月12日
+    published_date: null
+    publisher: 立隆電子工業股份有限公司
+    quote_check: found
+    title: 立隆電子審計委員會運作情形
+    url: https://www.lelon.com.tw/upload/inves4/176811709093.pdf
+  tw.2472#e13:
+    locator: PDF第2頁，2025年6月10日董事會重要議案第1項
+    published_date: null
+    publisher: 立隆電子工業股份有限公司
+    quote_check: found
+    title: 立隆電子工業股份有限公司2025年度董事會重要決議
+    url: https://www.lelon.com.tw/upload/inves4/175929642957.pdf
+  tw.2472#e14:
+    locator: PDF第2頁，2025年6月10日董事會重要議案第2項
+    published_date: null
+    publisher: 立隆電子工業股份有限公司
+    quote_check: found
+    title: 立隆電子工業股份有限公司2025年度董事會重要決議
+    url: https://www.lelon.com.tw/upload/inves4/175929642957.pdf
+  tw.2472#e15:
+    locator: 印刷頁15，合併財務報表編製主體表，投資公司及子公司欄
+    published_date: '2025-11-17'
+    publisher: 立隆電子工業股份有限公司
+    quote_check: found
+    title: 立隆電子工業股份有限公司及子公司114年第3季合併財務報告
+    url: https://www.lelon.com.tw/upload/inves31/176335125073.pdf
+  tw.2472#e16:
+    locator: 印刷頁16，合併財務報表編製主體表，投資公司及子公司欄
+    published_date: '2025-11-17'
+    publisher: 立隆電子工業股份有限公司
+    quote_check: found
+    title: 立隆電子工業股份有限公司及子公司114年第3季合併財務報告
+    url: https://www.lelon.com.tw/upload/inves31/176335125073.pdf
+  tw.2472#e17:
+    locator: 代蘇州子公司處分資產公告，第4項交易相對人
+    published_date: '2024-07-22'
+    publisher: 公開資訊觀測站重大訊息，MoneyDJ刊載
+    quote_check: found
+    title: 立隆電子公司處分江蘇省吳江經濟區土地使用權及廠房，獲利估約5861萬人民幣
+    url: https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=9e4f6d26-6346-4c06-a9b6-629fda20c6af
+  tw.2472#e18:
+    locator: 代蘇州子公司處分資產公告，第3項交易金額
+    published_date: '2024-07-22'
+    publisher: 公開資訊觀測站重大訊息，MoneyDJ刊載
+    quote_check: found
+    title: 立隆電子公司處分江蘇省吳江經濟區土地使用權及廠房，獲利估約5861萬人民幣
+    url: https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=9e4f6d26-6346-4c06-a9b6-629fda20c6af
+  tw.2472#e19:
+    locator: 第15項，向吳德銓購買經LIRO轉投資惠州公司之股份
+    published_date: '2025-11-12'
+    publisher: 公開資訊觀測站重大訊息，MoneyDJ刊載
+    quote_check: found
+    title: 立隆電 本公司董事會決議間接增加大陸投資案
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=c882505b-062a-45ab-ae4e-797a85401d01
   tw.2472#e2:
     locator: 全方位的服務、優勢的競爭力
     published_date: null
@@ -110,38 +340,66 @@ evidence:
     quote_check: found
     title: 立隆簡介
     url: https://www.lelon.com.tw/tw/about2.php
+  tw.2472#e20:
+    locator: 劉瓊雯專訪，末段泰國廠現況
+    published_date: '2026-08-18'
+    publisher: 台視財經／MoneyDJ
+    quote_check: found
+    title: 《立隆電專訪3》泰國廠進入驗證階段，力拚明年放量
+    url: https://www.ttv.com.tw/finance/view/default.asp?from=587&i=082026180958B0AED39178CF49C090606F561D3CA354E854
+  tw.2472#e21:
+    locator: 第5項，取得股數、單價及總金額
+    published_date: '2025-11-12'
+    publisher: 公開資訊觀測站重大訊息，MoneyDJ刊載
+    quote_check: found
+    title: 立隆電 本公司董事會決議間接增加大陸投資案
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=c882505b-062a-45ab-ae4e-797a85401d01
   tw.2472#e3:
-    locator: 產品分類清單
-    published_date: null
-    publisher: 立隆電子工業股份有限公司
+    locator: 記者鍾榮峰報導，末段應用分布
+    published_date: '2026-01-07'
+    publisher: 中央通訊社
     quote_check: found
-    title: 產品資訊
-    url: https://www.lelon.com.tw/tw/product.php
+    title: 立隆電去年營收創新高 看好車電續攻AI伺服器
+    url: https://www.cna.com.tw/news/afe/202601070131.aspx
   tw.2472#e4:
-    locator: 頁 14–15，附註四、3：合併主體、立敦持股與實質控制說明
-    published_date: '2026-08-14'
-    publisher: 立隆電子工業股份有限公司
+    locator: 記者鍾榮峰報導，第二段公司說法
+    published_date: '2026-01-07'
+    publisher: 中央通訊社
     quote_check: found
-    title: 2026 年第二季合併財務報告
-    url: https://www.lelon.com.tw/upload/inves31/178911589557.pdf
+    title: 立隆電去年營收創新高 看好車電續攻AI伺服器
+    url: https://www.cna.com.tw/news/afe/202601070131.aspx
   tw.2472#e5:
-    locator: 頁 14，合併財務報表編製主體，LIRO 列
-    published_date: '2026-08-14'
-    publisher: 立隆電子工業股份有限公司
+    locator: 記者鍾榮峰報導，電動車布局段
+    published_date: '2024-11-21'
+    publisher: 中央通訊社
     quote_check: found
-    title: 2026 年第二季合併財務報告
-    url: https://www.lelon.com.tw/upload/inves31/178911589557.pdf
+    title: 立隆：沒有缺席AI伺服器 明年營運看正成長
+    url: https://www.cna.com.tw/news/afe/202411210329.aspx
   tw.2472#e6:
-    locator: 頁 14，合併財務報表編製主體，泰國子公司列
-    published_date: '2026-08-14'
-    publisher: 立隆電子工業股份有限公司
+    locator: 記者鍾榮峰報導，基地台應用段
+    published_date: '2024-11-21'
+    publisher: 中央通訊社
     quote_check: found
-    title: 2026 年第二季合併財務報告
-    url: https://www.lelon.com.tw/upload/inves31/178911589557.pdf
+    title: 立隆：沒有缺席AI伺服器 明年營運看正成長
+    url: https://www.cna.com.tw/news/afe/202411210329.aspx
   tw.2472#e7:
-    locator: 印刷頁 85，The market's future growth potential
-    published_date: '2026-06-04'
-    publisher: 立隆電子工業股份有限公司
+    locator: 王怡蘋報導，第一段
+    published_date: '2012-01-02'
+    publisher: DIGITIMES
     quote_check: found
-    title: Lelon Electronics Corp. 2025 Annual Report
-    url: https://www.lelon.com.tw/upload/inves32/178056508834.pdf
+    title: 立敦產能分布
+    url: https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000266257_TOM121KA6A5C3O6N3AZCA
+  tw.2472#e8:
+    locator: 邱建齊報導，華為採購方式及正常出貨段
+    published_date: '2020-06-05'
+    publisher: MoneyDJ理財網
+    quote_check: found
+    title: 《DJ在線》華為出貨正常，立隆電合作關係穩固
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=d567fa2d-df1b-402c-a546-fc2be3cc7fe2
+  tw.2472#e9:
+    locator: 黃瑋瑜、周岐原報導，強攻大品牌供應鏈段
+    published_date: '2015-01-01'
+    publisher: 今周刊
+    quote_check: found
+    title: 立隆電第二代吳志銘 競速領導五年有成 38年老廠兩招翻轉學 讓毛利率翻倍
+    url: https://www.businesstoday.com.tw/article/category/80394/post/201501010012/

@@ -36,14 +36,6 @@ members:
   evidence:
   - tw.2392#e9
   confidence: ai_cross_checked
-- id: tw.2426
-  stage: chip
-  tier: midstream
-  detail: VCSEL元件開發
-  as_of: 2026-04
-  evidence:
-  - tw.2426#e7
-  confidence: ai_cross_checked
 - id: tw.2444
   stage: epi
   tier: upstream
@@ -81,10 +73,19 @@ members:
 - id: tw.3234
   stage: chip
   tier: midstream
-  detail: VCSEL晶片製造
-  as_of: '2026-10-15'
+  detail: VCSEL晶粒製造
+  as_of: '2025-12-31'
   evidence:
   - tw.3234#e3
+  - tw.3234#e4
+  confidence: ai_cross_checked
+- id: tw.3234
+  stage: epi
+  tier: upstream
+  detail: VCSEL磊晶片
+  as_of: '2026-03-31'
+  evidence:
+  - tw.3234#e6
   confidence: ai_cross_checked
 - id: tw.3437
   stage: module
@@ -122,10 +123,10 @@ members:
 - id: tw.4991
   stage: chip
   tier: midstream
-  detail: VCSEL晶片製造
-  as_of: '2026-10-14'
+  detail: VCSEL光電晶圓代工製程研發
+  as_of: 2025-06
   evidence:
-  - tw.4991#e10
+  - tw.4991#e16
   confidence: ai_cross_checked
 - id: tw.6597
   stage: module
@@ -138,10 +139,10 @@ members:
 - id: tw.8086
   stage: chip
   tier: midstream
-  detail: VCSEL晶片製造
+  detail: VCSEL晶片製程與光通訊產品
   as_of: 2026-05
   evidence:
-  - tw.8086#e7
-  - tw.8086#e8
+  - tw.8086#e4
+  - tw.8086#e5
   confidence: ai_cross_checked
 as_of: '2026-10-24'

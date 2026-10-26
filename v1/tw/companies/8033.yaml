@@ -18,35 +18,35 @@ industry:
   l3_name: 休閒用品、遊艇與露營車
   l3_name_en: Leisure Products, Yachts & RVs
 primary_chain_position: not_applicable
-summary_short: 雷虎銷售遙控模型、無人載具、口腔醫療器材及無菌包材。
-summary_long: 雷虎集團銷售遙控模型、無人載具、口腔醫療及無菌包材產品。2025年無人載具暨遙控模型占合併營收51.60%，口腔醫療占25.92%，無菌包材占18.42%，另有鋁船與其他收入。遙控模型涵蓋車、船與直升機，無人載具包括CX-180無人直升機及Seadragon系列水下載具。醫療業務包括子公司雷虎生技的牙科設備，集團醫療產品另涵蓋物理治療與眼科器材；無菌包材則包括飲料瓶蓋、瓶胚及連結蓋。
+summary_short: 銷售遙控模型與無人載具，並經營口腔醫療器材及無菌包材。
+summary_long: 雷虎2025年合併營收以無人載具暨遙控模型為最大類別，占51.60%；口腔醫療及無菌包材分別占25.92%與18.42%。集團透過雷虎生技經營醫療器材，並持有科建鋁船及遙控模型公司Associated Electrics。無人機產品包括OVERKILL FPV，與Auterion合作整合人工智慧及自主操作技術，並與中科院合作開發微型渦輪噴射引擎技術。2026年取得國防部陸軍司令部兩項訓練用無人機採購案；中華電信則有2021年的採購紀錄。公司另公告以7.1億元購置大埔美土地廠房，並與AeroVironment簽署合作備忘錄，評估無人系統整合及在台共同生產。
 segments:
 - evidence_ids:
-  - e1
-  id: seg_unmanned_rc
+  - e01
+  id: seg_rc_uav
   name: 無人載具暨遙控模型
   period: '2025'
   revenue_share_pct: 51.6
 - evidence_ids:
-  - e1
-  id: seg_dental
+  - e01
+  id: seg_medical
   name: 口腔醫療
   period: '2025'
   revenue_share_pct: 25.92
 - evidence_ids:
-  - e1
+  - e01
   id: seg_packaging
   name: 無菌包材
   period: '2025'
   revenue_share_pct: 18.42
 - evidence_ids:
-  - e1
+  - e01
   id: seg_boats
   name: 鋁船
   period: '2025'
   revenue_share_pct: 1.08
 - evidence_ids:
-  - e1
+  - e01
   id: seg_other
   name: 其他
   period: '2025'
@@ -58,13 +58,155 @@ themes:
   theme: theme.drone
   tier: downstream
 relations:
-  subsidiaries:
-  - as_of: '2026-05-14'
+  customers:
+  - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 集團子公司
+    detail: 集團合併口徑銷貨客戶，名稱依年報原文
     details:
-    - 集團子公司
+    - 集團合併口徑銷貨客戶，名稱依年報原文
+    edge: e8b8624814073
+    evidence_level: primary
+    id: org.handpiece-headquar
+    name: Handpiece Headquar
+    ranking_basis: disclosed
+    share_basis: revenue
+    share_pct: 24.06
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團合併口徑銷貨客戶
+    details:
+    - 集團合併口徑銷貨客戶
+    edge: e4fa45989647a
+    evidence_level: primary
+    id: org.第一生技
+    name: 第一生技
+    ranking_basis: disclosed
+    share_basis: revenue
+    share_pct: 18.41
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團合併口徑銷貨客戶
+    details:
+    - 集團合併口徑銷貨客戶
+    edge: eb1307e9dd54a
+    evidence_level: primary
+    id: org.amain-com
+    name: AMAIN.COM, INC
+    ranking_basis: disclosed
+    share_basis: revenue
+    share_pct: 10.61
+    weight: 1
+  - as_of: '2026-04-16'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 沉浸式訓練型及訓練用自殺式無人機
+    details:
+    - 沉浸式訓練型及訓練用自殺式無人機
+    edge: e193c80c75b98
+    evidence_level: primary
+    id: org.roc-army-command
+    name: 國防部陸軍司令部
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2021-05-27'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 機動式防救災行動通訊平台
+    details:
+    - 機動式防救災行動通訊平台
+    edge: e9766252dcb08
+    evidence_level: media
+    id: tw.2412
+    name: 中華電
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  partners:
+  - as_of: '2025-06-25'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 人工智慧與自主操作系統整合合作
+    details:
+    - 人工智慧與自主操作系統整合合作
+    edge: e68bef2cec722
+    evidence_level: media
+    id: org.auterion
+    name: Auterion
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-16'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 10吋FPV無人機共同開發
+    details:
+    - 10吋FPV無人機共同開發
+    edge: e78a60b0ad0e6
+    evidence_level: media
+    id: org.farage-precision
+    name: Farage Precision
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-09-10'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 微型渦輪噴射引擎製作與測試技術
+    details:
+    - 微型渦輪噴射引擎製作與測試技術
+    edge: e2be1045eb40d
+    evidence_level: media
+    id: org.ncsist
+    name: 中科院
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-16'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 10吋FPV無人機共同開發
+    details:
+    - 10吋FPV無人機共同開發
+    edge: e4b420da618c3
+    evidence_level: media
+    id: org.rehfeldt-group
+    name: 來福集團（The Rehfeldt Group）
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 無人系統整合及在台共同生產評估
+    details:
+    - 無人系統整合及在台共同生產評估
+    edge: ef16e8af6782c
+    evidence_level: media
+    id: us.AVAV
+    name: AeroVironment
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 美國遙控模型業務間接子公司
+    details:
+    - 美國遙控模型業務間接子公司
     edge: e7e829e72335b
     evidence_level: primary
     id: org.associated-electrics
@@ -73,40 +215,40 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-05-14'
+  - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 集團子公司
+    detail: 船舶及零件製造、買賣與維修
     details:
-    - 集團子公司
-    edge: e300b27b8257f
+    - 船舶及零件製造、買賣與維修
+    edge: e376b5b41342b
     evidence_level: primary
-    id: org.co-jian-aluminum-boats
+    id: org.morningstar-boats
     name: 科建鋁船股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-05-14'
+  - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 集團子公司
+    detail: 集團相關產品買賣子公司
     details:
-    - 集團子公司
-    edge: e60187410ad7c
+    - 集團相關產品買賣子公司
+    edge: e903b95d33207
     evidence_level: primary
-    id: org.tt-solutions
+    id: org.thunder-innovation
     name: 雷碩創新股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-05-14'
+  - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 醫療器材子公司
+    detail: 醫療器材製造、買賣及維修子公司
     details:
-    - 醫療器材子公司
+    - 醫療器材製造、買賣及維修子公司
     edge: ebcb8555e1ba7
     evidence_level: primary
     id: tw.6493
@@ -115,95 +257,272 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  suppliers:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 年報揭露之進貨供應商，品項未列明
+    details:
+    - 年報揭露之進貨供應商，品項未列明
+    edge: eb4274c6eff51
+    evidence_level: primary
+    id: tw.1402
+    name: 遠東新
+    ranking_basis: disclosed
+    share_basis: purchases
+    share_pct: 14.72
+    weight: 1
+  transactions:
+  - amount: 不超過新台幣5000萬元
+    as_of: '2026-08-11'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 參與現金增資並取得控制權
+    details:
+    - 參與現金增資並取得控制權
+    - 董事會通過追加認購現金增資
+    edge: ede1caab7dbe9
+    event_date: '2024-09-16'
+    events:
+    - amount: 不超過新台幣5000萬元
+      detail: 董事會通過追加認購現金增資
+      event_date: '2026-08-11'
+    - amount: null
+      detail: 參與現金增資並取得控制權
+      event_date: '2024-09-16'
+    evidence_level: primary
+    id: org.morningstar-boats
+    name: 科建鋁船股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣7.1億元
+    as_of: '2025-11-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 購置大埔美土地及廠房
+    details:
+    - 購置大埔美土地及廠房
+    edge: ee9fa457e4d95
+    event_date: '2025-11-28'
+    events:
+    - amount: 新台幣7.1億元
+      detail: 購置大埔美土地及廠房
+      event_date: '2025-11-28'
+    evidence_level: primary
+    id: org.rong-quan-chemical-machinery
+    name: 榮全化工機械有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 200萬美元
+    as_of: '2026-07-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 董事會通過投資設立公司
+    details:
+    - 董事會通過投資設立公司
+    edge: e6529d5ba95a9
+    event_date: '2026-07-14'
+    events:
+    - amount: 200萬美元
+      detail: 董事會通過投資設立公司
+      event_date: '2026-07-14'
+    evidence_level: primary
+    id: org.thunder-tiger-precision-systems
+    name: 雷虎精準系統股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 不超過新台幣4140萬元
+    as_of: '2025-09-12'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 參與現金增資之長期投資
+    details:
+    - 參與現金增資之長期投資
+    edge: e680dd7aa1ff7
+    event_date: '2025-09-12'
+    events:
+    - amount: 不超過新台幣4140萬元
+      detail: 參與現金增資之長期投資
+      event_date: '2025-09-12'
+    evidence_level: primary
+    id: org.第一生化科技-股-公司
+    name: 第一生化科技(股)公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 航空引擎合資公司的正式名稱及其他合資方未於2026年7月14日董事會決議公告中…
+- Handpiece Headquar為年報表列名稱，完整法人名稱待確認。
 website: www.thundertiger.com
 tax_id: '52541175'
 incorporated: '1979-10-02'
 listed: '2007-06-21'
-as_of: '2026-10-15'
+as_of: '2026-10-26'
 confidence: ai_cross_checked
 has_research: true
 evidence:
-  tw.8033#e1:
-    locator: PDF第66頁，114年度主要產品及其營業比重
+  tw.8033#e01:
+    locator: 第62頁，114年度主要產品及其營業比重
     published_date: '2026-05-14'
     publisher: 雷虎科技股份有限公司
     quote_check: found
-    title: 雷虎科技股份有限公司一一四年度年報
+    title: 雷虎科技股份有限公司114年度年報
     url: https://ttg.thundertiger.com/stock/file/year_report/114.pdf
+  tw.8033#e02:
+    locator: 第82頁，主要產品之重要用途
+    published_date: '2026-05-14'
+    publisher: 雷虎科技股份有限公司
+    quote_check: found
+    title: 雷虎科技股份有限公司114年度年報
+    url: https://ttg.thundertiger.com/stock/file/year_report/114.pdf
+  tw.8033#e03:
+    locator: 第82頁，主要產品之重要用途
+    published_date: '2026-05-14'
+    publisher: 雷虎科技股份有限公司
+    quote_check: found
+    title: 雷虎科技股份有限公司114年度年報
+    url: https://ttg.thundertiger.com/stock/file/year_report/114.pdf
+  tw.8033#e04:
+    locator: 內文首段及第二段
+    published_date: '2025-06-25'
+    publisher: 中央通訊社
+    quote_check: found
+    title: AI淨零／雷虎與美國Auterion簽MOU 全系列無人載具導入AI
+    url: https://www.cna.com.tw/news/afe/202506250397.aspx
+  tw.8033#e05:
+    locator: 公告第5項
+    published_date: '2026-04-16'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ
+    quote_check: found
+    title: 雷虎 本公司取得國防部陸軍司令部無人機採購案決標
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=237f8f5e-3478-4338-b1c6-625f2ff7bd56
+  tw.8033#e06:
+    locator: 內文首段
+    published_date: '2026-09-10'
+    publisher: 中央通訊社
+    quote_check: found
+    title: 雷虎合作中科院推微型渦輪噴射引擎 前進美國軍工市場
+    url: https://www.cna.com.tw/news/afe/202609100235.aspx
+  tw.8033#e07:
+    locator: 內文首段
+    published_date: '2021-05-27'
+    publisher: 中央通訊社
+    quote_check: found
+    title: 雷虎現金增資過關 並獲中華電信無人機採購案
+    url: https://www.cna.com.tw/news/afe/202105270333.aspx
+  tw.8033#e08:
+    locator: 第10頁，附註四（三）列入合併財務報告之子公司
+    published_date: '2026-08-11'
+    publisher: 雷虎科技股份有限公司
+    quote_check: found
+    title: 雷虎科技股份有限公司及其子公司115年第2季合併財務報告
+    url: https://ttg.thundertiger.com/stock/file/quarterly_report/115Q2.pdf
+  tw.8033#e09:
+    locator: 第10頁，子公司持股架構表
+    published_date: '2026-08-11'
+    publisher: 雷虎科技股份有限公司
+    quote_check: found
+    title: 雷虎科技股份有限公司及其子公司115年第2季合併財務報告
+    url: https://ttg.thundertiger.com/stock/file/quarterly_report/115Q2.pdf
   tw.8033#e10:
-    locator: PDF第65頁，主要業務內容E
-    published_date: '2026-05-14'
+    locator: 第10頁，子公司持股架構表
+    published_date: '2026-08-11'
     publisher: 雷虎科技股份有限公司
     quote_check: found
-    title: 雷虎科技股份有限公司一一四年度年報
-    url: https://ttg.thundertiger.com/stock/file/year_report/114.pdf
+    title: 雷虎科技股份有限公司及其子公司115年第2季合併財務報告
+    url: https://ttg.thundertiger.com/stock/file/quarterly_report/115Q2.pdf
   tw.8033#e11:
-    locator: PDF第65頁，主要業務內容F
-    published_date: '2026-05-14'
+    locator: 第10頁，子公司持股架構表
+    published_date: '2026-08-11'
     publisher: 雷虎科技股份有限公司
     quote_check: found
-    title: 雷虎科技股份有限公司一一四年度年報
-    url: https://ttg.thundertiger.com/stock/file/year_report/114.pdf
+    title: 雷虎科技股份有限公司及其子公司115年第2季合併財務報告
+    url: https://ttg.thundertiger.com/stock/file/quarterly_report/115Q2.pdf
   tw.8033#e12:
-    locator: PDF第65頁，主要業務內容G
+    locator: 內文首段
+    published_date: '2024-09-16'
+    publisher: 中央通訊社
+    quote_check: found
+    title: 看好無人艦艇發展 雷虎科技取得科建鋁船60%股權
+    url: https://www.cna.com.tw/news/afe/202409160288.aspx
+  tw.8033#e13:
+    locator: 公告第5項及第14項
+    published_date: '2026-08-11'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ
+    quote_check: found
+    title: 雷虎董事會通過認購科建鋁船現增股，預計上限5000萬元
+    url: https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=75220535-7e9f-4ef1-9ef6-0d5a788105a9
+  tw.8033#e14:
+    locator: 公告第1、5、6及23項
+    published_date: '2025-11-28'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ
+    quote_check: found
+    title: 雷虎 本公司擬購置大埔美無人載具土地及廠房案（補充公告）
+    url: https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=88d7f74f-5bf8-4850-afb0-3f368ac615fe
+  tw.8033#e15:
+    locator: 公告標題及第5項
+    published_date: '2025-09-13'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ
+    quote_check: found
+    title: 雷虎董事會通過參與第一生化科技現增案，上限4,140萬元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=4c08c36c-e2d9-4ef6-be55-823e11f44166
+  tw.8033#e16:
+    locator: 公告第5項
+    published_date: '2026-07-14'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ
+    quote_check: found
+    title: 雷虎 本公司董事會重要決議事項
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=b11a36cd-3c05-441e-b0ba-b6cb2120b4f0&c=MB06
+  tw.8033#e17:
+    locator: 內文首段
+    published_date: '2026-07-14'
+    publisher: 自由時報
+    quote_check: found
+    title: 雷虎強化無人機布局 成立2家公司
+    url: https://ec.ltn.com.tw/article/breakingnews/5505197
+  tw.8033#e18:
+    locator: 內文首段及末段
+    published_date: '2026-10-14'
+    publisher: 中央通訊社
+    quote_check: found
+    title: 雷虎攜手宇航環境公司 彈簧刀無人機有望在台生產
+    url: https://www.cna.com.tw/news/afe/202610140335.aspx
+  tw.8033#e19:
+    locator: 內文首段
+    published_date: '2026-10-16'
+    publisher: 自由時報
+    quote_check: found
+    title: 雷虎攜手夥伴造10吋FPV無人機 爭取美國五角大廈DDP訂單
+    url: https://ec.ltn.com.tw/article/breakingnews/5608485
+  tw.8033#e20:
+    locator: 第83頁，主要供應商進貨金額與比例表
     published_date: '2026-05-14'
     publisher: 雷虎科技股份有限公司
     quote_check: found
-    title: 雷虎科技股份有限公司一一四年度年報
+    title: 雷虎科技股份有限公司114年度年報
     url: https://ttg.thundertiger.com/stock/file/year_report/114.pdf
-  tw.8033#e2:
-    locator: PDF第44頁，附註六（二十五）客戶合約收入之細分；欄序為遙控模型、口腔醫療、無菌包材、鋁船及合計
-    published_date: null
-    publisher: 雷虎科技股份有限公司
-    quote_check: found
-    title: 雷虎科技股份有限公司及其子公司114及113年度合併財務報告
-    url: https://ttg.thundertiger.com/stock/file/quarterly_report/114Q4.pdf
-  tw.8033#e3:
-    locator: Business Profile／Thunder Tiger
-    published_date: null
-    publisher: 雷虎科技股份有限公司
-    quote_check: found
-    title: THUNDER TIGER GROUP
-    url: https://www.thundertiger.com/
-  tw.8033#e4:
-    locator: 產品資訊／無人直升機／產品標題
-    published_date: null
-    publisher: 雷虎科技股份有限公司
-    quote_check: found
-    title: TTRobotix－CX-180 ICEMAN
-    url: https://www.ttrobotix.com/zh-tw/products/detail/925.html
-  tw.8033#e5:
-    locator: 水下及水面無人載具產品清單
-    published_date: null
-    publisher: 雷虎科技股份有限公司
-    quote_check: found
-    title: TTRobotix－水下及水面無人載具
-    url: https://www.ttrobotix.com/zh-tw/products/list/258.html
-  tw.8033#e6:
-    locator: PDF第67頁，公司目前產品項目／醫療產品
+  tw.8033#e21:
+    locator: 第83頁，主要客戶銷貨金額與比例表
     published_date: '2026-05-14'
     publisher: 雷虎科技股份有限公司
     quote_check: found
-    title: 雷虎科技股份有限公司一一四年度年報
+    title: 雷虎科技股份有限公司114年度年報
     url: https://ttg.thundertiger.com/stock/file/year_report/114.pdf
-  tw.8033#e7:
-    locator: PDF第67頁，公司目前產品項目／無菌包材
+  tw.8033#e22:
+    locator: 第83頁，主要客戶銷貨金額與比例表，114年度欄
     published_date: '2026-05-14'
     publisher: 雷虎科技股份有限公司
     quote_check: found
-    title: 雷虎科技股份有限公司一一四年度年報
-    url: https://ttg.thundertiger.com/stock/file/year_report/114.pdf
-  tw.8033#e8:
-    locator: Business Profile／TTBio
-    published_date: null
-    publisher: 雷虎科技股份有限公司
-    quote_check: found
-    title: THUNDER TIGER GROUP
-    url: https://www.thundertiger.com/
-  tw.8033#e9:
-    locator: PDF第79頁，牙科醫療產品
-    published_date: '2026-05-14'
-    publisher: 雷虎科技股份有限公司
-    quote_check: found
-    title: 雷虎科技股份有限公司一一四年度年報
+    title: 雷虎科技股份有限公司114年度年報
     url: https://ttg.thundertiger.com/stock/file/year_report/114.pdf

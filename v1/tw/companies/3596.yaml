@@ -14,9 +14,9 @@ industry:
   l2: tech.network
   l2_name: 通信網路
   l2_name_en: Communications & Networking
-  l3: net.wireless
-  l3_name: 無線通訊與射頻
-  l3_name_en: Wireless & RF
+  l3: net.switch
+  l3_name: 網通設備（交換器、路由器）
+  l3_name_en: Networking Equipment (Switches, Routers)
 chain: chain.networking
 chain_stage:
   agreement: both
@@ -26,33 +26,33 @@ chain_stage:
   stage_name: 網通設備與系統
   tier: downstream
 primary_chain_position: downstream
-summary_short: 研發、製造及銷售行動通訊、智慧家庭與寬頻固網設備。
-summary_long: 智易以行動通訊、智慧家庭與寬頻固網設備為主要業務。2026年第二季營收組成為行動通訊38%、智慧家庭32%、寬頻固網26%及其他4%。產品涵蓋5G CPE、Open RAN小型基地台、光纖與有線寬頻接取設備、Wi-Fi終端及訊號延伸器，以及Android機上盒。5G CPE採用5G New Radio接入，構成5G通訊設備題材的直接依據。仁寶為母公司；集團透過美國子公司提供銷售與技術支援，越南間接子公司從事無線網路產品製造。
+summary_short: 研發製造家庭Wi-Fi、寬頻接取及5G終端設備，供應電信與網通客戶。
+summary_long: 智易提供家庭無線網路、寬頻固網與行動通訊設備。2025年營收以智慧家庭產品占37.27%最高，行動通訊產品占30.91%、寬頻固網產品占28.77%，其他占3.05%。智慧家庭產品包含Wi-Fi閘道器、延伸器與模組，固網產品涵蓋DSL IAD、PON及Cable Modem，另已開發5G固定無線接取設備。具名客戶證據包括T-Mobile的KVD21閘道器、中華電信的全屋通設備，以及歷史文件所載的Deutsche Telekom與Vodafone關係。仁寶為母公司，也有供貨紀錄；集團另有越南製造與昆山供應鏈管理子公司。
 segments:
 - evidence_ids:
-  - e2
-  id: mobile
-  name: 行動通訊
-  period: 2026Q2
-  revenue_share_pct: 38
-- evidence_ids:
-  - e2
+  - e02
   id: smart_home
-  name: 智慧家庭
-  period: 2026Q2
-  revenue_share_pct: 32
+  name: 智慧家庭產品
+  period: '2025'
+  revenue_share_pct: 37.27
 - evidence_ids:
-  - e2
-  id: fixed_broadband
-  name: 寬頻固網
-  period: 2026Q2
-  revenue_share_pct: 26
+  - e03
+  id: mobile
+  name: 行動通訊產品
+  period: '2025'
+  revenue_share_pct: 30.91
 - evidence_ids:
-  - e2
+  - e04
+  id: broadband
+  name: 寬頻固網產品
+  period: '2025'
+  revenue_share_pct: 28.77
+- evidence_ids:
+  - e05
   id: other
   name: 其他
-  period: 2026Q2
-  revenue_share_pct: 4
+  period: '2025'
+  revenue_share_pct: 3.05
 main_theme: theme.5g
 themes:
 - also: []
@@ -60,6 +60,78 @@ themes:
   theme: theme.5g
   tier: midstream
 relations:
+  competitors:
+  - as_of: '2025-07-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 網通設備市場競爭
+    details:
+    - 網通設備市場競爭
+    edge: e149bc8928936
+    evidence_level: media
+    id: tw.4906
+    name: 正文
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-07-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 網通設備市場競爭
+    details:
+    - 網通設備市場競爭
+    edge: eb8ef8f38664d
+    evidence_level: media
+    id: tw.5388
+    name: 中磊
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  customers:
+  - as_of: '2023-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 網通產品銷售
+    details:
+    - 網通產品銷售
+    edge: eeb17aa58769d
+    evidence_level: primary
+    id: eu.DTE
+    name: Deutsche Telekom
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-25'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: KVD21 5G Gateway進口與經銷
+    details:
+    - KVD21 5G Gateway進口與經銷
+    edge: ea6026d0d838f
+    evidence_level: primary
+    id: org.t-mobile-inc
+    name: T-Mobile, Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-05-06'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: Wi-Fi全屋通設備
+    details:
+    - Wi-Fi全屋通設備
+    edge: e0c16c927eaad
+    evidence_level: media
+    id: tw.2412
+    name: 中華電
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   parents:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
@@ -76,13 +148,42 @@ relations:
     share_basis: null
     share_pct: null
     weight: 2
+  partners:
+  - as_of: '2020-01-06'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: Djingo智慧音箱MT8516平台與製造協作
+    details:
+    - Djingo智慧音箱MT8516平台與製造協作
+    edge: ee052eab8794d
+    evidence_level: primary
+    id: tw.2454
+    name: 聯發科
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-10-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: Wi-Fi 8 ODM技術合作
+    details:
+    - Wi-Fi 8 ODM技術合作
+    edge: e4e5d1e6bfe0c
+    evidence_level: primary
+    id: us.AVGO
+    name: Broadcom
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 日本直接子公司
+    detail: 2025年新設日本銷售子公司
     details:
-    - 日本直接子公司
+    - 2025年新設日本銷售子公司
     edge: ea72b93fc9ebd
     evidence_level: primary
     id: org.arcadyan-japan
@@ -94,85 +195,274 @@ relations:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 美國直接子公司，銷售及技術支援
+    detail: 間接子公司；供應鏈管理服務
     details:
-    - 美國直接子公司，銷售及技術支援
-    edge: e42926010475a
+    - 間接子公司；供應鏈管理服務
+    edge: e4076fa6e574b
     evidence_level: primary
-    id: org.arcadyan-technology-na
-    name: Arcadyan Technology N.A. Corp.
+    id: org.arcadyan-kunshan
+    name: 仁寶網路資訊(昆山)有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接子公司；無線網路產品製造
+    details:
+    - 間接子公司；無線網路產品製造
+    edge: e54d73eefd540
+    evidence_level: primary
+    id: org.arcadyan-vietnam
+    name: Arcadyan Technology (Vietnam) Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 關係人進貨及委託加工往來
+    details:
+    - 關係人進貨及委託加工往來
+    edge: e2ec0d3acc0e9
+    evidence_level: primary
+    id: tw.2324
+    name: 仁寶
+    ranking_basis: disclosed
+    share_basis: purchases
+    share_pct: 5
+    weight: 1
+  - as_of: '2019-02-25'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 歷史XMM 7560 LTE數據機平台採用
+    details:
+    - 歷史XMM 7560 LTE數據機平台採用
+    edge: eac1cd70e3fe6
+    evidence_level: primary
+    id: us.INTC
+    name: Intel
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2014-06-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 歷史Miami機上盒四核心處理器
+    details:
+    - 歷史Miami機上盒四核心處理器
+    edge: eb92970e8e453
+    evidence_level: media
+    id: us.MRVL
+    name: Marvell
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 新台幣301,105千元
+    as_of: '2024-01-25'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 越南子公司向昆山子公司取得機器設備
+    details:
+    - 越南子公司向昆山子公司取得機器設備
+    edge: ee3139880f20f
+    event_date: '2024-01-25'
+    events:
+    - amount: 新台幣301,105千元
+      detail: 越南子公司向昆山子公司取得機器設備
+      event_date: '2024-01-25'
+    evidence_level: primary
+    id: org.arcadyan-kunshan
+    name: 仁寶網路資訊(昆山)有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 2025年度年報以丙公司、乙公司、甲公司匿名揭露主要銷貨客戶，未將其對應至具名…
+- 2025年度年報以卯公司、丑公司匿名揭露主要進貨對象，未將其對應至具名晶片廠。
+- 年報提及合作晶片廠商及局端廠商，未逐一具名。
+- Vodafone歷史報導未明列採購法人，製造方寫為Arcadyan／Astor…
 website: www.arcadyan.com
 tax_id: '12800294'
 incorporated: '2003-05-09'
 listed: '2009-03-11'
-as_of: '2026-10-15'
+as_of: '2026-10-26'
 confidence: ai_cross_checked
 has_research: true
 evidence:
+  tw.3596#e02:
+    locator: 第83頁，營業比重表，114年度智慧家庭產品金額及比例
+    published_date: '2026-03-29'
+    publisher: 智易科技
+    quote_check: found
+    title: 智易科技股份有限公司114年度年報
+    url: https://www.arcadyan.com.tw/media/investor/shm/annual-report/智易科技114年度股東會年報.pdf
+  tw.3596#e03:
+    locator: 第83頁，營業比重表，114年度行動通訊產品金額及比例
+    published_date: '2026-03-29'
+    publisher: 智易科技
+    quote_check: found
+    title: 智易科技股份有限公司114年度年報
+    url: https://www.arcadyan.com.tw/media/investor/shm/annual-report/智易科技114年度股東會年報.pdf
+  tw.3596#e04:
+    locator: 第83頁，營業比重表，114年度寬頻固網產品金額及比例
+    published_date: '2026-03-29'
+    publisher: 智易科技
+    quote_check: found
+    title: 智易科技股份有限公司114年度年報
+    url: https://www.arcadyan.com.tw/media/investor/shm/annual-report/智易科技114年度股東會年報.pdf
+  tw.3596#e05:
+    locator: 第83頁，營業比重表，114年度其他產品金額及比例
+    published_date: '2026-03-29'
+    publisher: 智易科技
+    quote_check: found
+    title: 智易科技股份有限公司114年度年報
+    url: https://www.arcadyan.com.tw/media/investor/shm/annual-report/智易科技114年度股東會年報.pdf
+  tw.3596#e06:
+    locator: 第83頁，目前商品項目，智慧家庭產品
+    published_date: '2026-03-29'
+    publisher: 智易科技
+    quote_check: found
+    title: 智易科技股份有限公司114年度年報
+    url: https://www.arcadyan.com.tw/media/investor/shm/annual-report/智易科技114年度股東會年報.pdf
+  tw.3596#e07:
+    locator: 第83頁，目前商品項目，寬頻固網產品
+    published_date: '2026-03-29'
+    publisher: 智易科技
+    quote_check: found
+    title: 智易科技股份有限公司114年度年報
+    url: https://www.arcadyan.com.tw/media/investor/shm/annual-report/智易科技114年度股東會年報.pdf
+  tw.3596#e08:
+    locator: 第1頁，研究發展狀況，已開發完成產品
+    published_date: '2026-03-29'
+    publisher: 智易科技
+    quote_check: found
+    title: 智易科技股份有限公司114年度年報
+    url: https://www.arcadyan.com.tw/media/investor/shm/annual-report/智易科技114年度股東會年報.pdf
+  tw.3596#e09:
+    locator: 第40頁，關係人交易，母公司與最終控制者
+    published_date: '2026-08-05'
+    publisher: 智易科技
+    quote_check: found
+    title: 智易科技115年第二季合併財務報告
+    url: https://www.arcadyan.com/media/investor/fs/consolidated/2026/智易115年第二季合併財務報告.pdf
   tw.3596#e10:
-    locator: 產品分類及Wi-Fi CPE、Wi-Fi Extender說明
-    published_date: null
-    publisher: 智易科技股份有限公司
+    locator: 第44頁，重大關係人進銷貨表，本公司及子公司向仁寶電腦進貨；單位新台幣千元
+    published_date: '2026-08-05'
+    publisher: 智易科技
     quote_check: found
-    title: 家用無線通訊網路解決方案
-    url: https://www.arcadyan.com/zh-hant/solutions/idea/wifi/
+    title: 智易科技115年第二季合併財務報告
+    url: https://www.arcadyan.com/media/investor/fs/consolidated/2026/智易115年第二季合併財務報告.pdf
   tw.3596#e11:
-    locator: STB產品說明
-    published_date: null
-    publisher: 智易科技股份有限公司
-    quote_check: found
-    title: 家用多媒體解決方案
-    url: https://www.arcadyan.com/zh-hant/solutions/idea/stb/
-  tw.3596#e2:
-    locator: 第5頁「主要商品」，115年第二季圓餅圖及圖例
-    published_date: '2026-09-15'
-    publisher: 智易科技股份有限公司
-    quote_check: found
-    title: 115年第二季營運報告
-    url: https://www.arcadyan.com/media/investor/investor-conference/2026/2026Q2%E6%B3%95%E8%AA%AA%E6%9C%83%E7%B0%A1%E5%A0%B1_UQwGcBF.pdf
-  tw.3596#e3:
-    locator: 第40頁，附註七（一）母公司與最終控制者、（二）關係人名稱及關係
+    locator: 第10至11頁，合併基礎及子公司表，Arch Holding持有昆山公司
     published_date: '2026-08-05'
-    publisher: 智易科技股份有限公司
+    publisher: 智易科技
     quote_check: found
-    title: 115年第二季合併財務報告
-    url: https://www.arcadyan.com/media/investor/fs/consolidated/2026/%E6%99%BA%E6%98%93115%E5%B9%B4%E7%AC%AC%E4%BA%8C%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf
-  tw.3596#e4:
-    locator: 第10頁，附註四（二）合併基礎，子公司表
+    title: 智易科技115年第二季合併財務報告
+    url: https://www.arcadyan.com/media/investor/fs/consolidated/2026/智易115年第二季合併財務報告.pdf
+  tw.3596#e12:
+    locator: 第10至11頁，合併基礎及子公司表，Sinoprime持有越南公司
     published_date: '2026-08-05'
-    publisher: 智易科技股份有限公司
+    publisher: 智易科技
     quote_check: found
-    title: 115年第二季合併財務報告
-    url: https://www.arcadyan.com/media/investor/fs/consolidated/2026/%E6%99%BA%E6%98%93115%E5%B9%B4%E7%AC%AC%E4%BA%8C%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf
-  tw.3596#e6:
-    locator: 第11頁，附註四（二）合併基礎，子公司表
+    title: 智易科技115年第二季合併財務報告
+    url: https://www.arcadyan.com/media/investor/fs/consolidated/2026/智易115年第二季合併財務報告.pdf
+  tw.3596#e13:
+    locator: 公告標題及第2至3項，事實發生期間與交易金額
+    published_date: '2024-01-25'
+    publisher: 公開資訊觀測站重大訊息／鉅亨網
+    quote_check: found
+    title: 智易：代子公司Arcadyan Technology (Vietnam) Co., Ltd公告取得機器設備
+    url: https://news.cnyes.com/news/id/5437666
+  tw.3596#e14:
+    locator: 第3至4項，交易總金額及交易相對人
+    published_date: '2024-01-25'
+    publisher: 公開資訊觀測站重大訊息／鉅亨網
+    quote_check: found
+    title: 智易：代子公司Arcadyan Technology (Vietnam) Co., Ltd公告取得機器設備
+    url: https://news.cnyes.com/news/id/5437666
+  tw.3596#e15:
+    locator: 第1至2頁，KVD21 5G Gateway及製造、進口、經銷資訊
+    published_date: null
+    publisher: T-Mobile
+    quote_check: unreachable
+    title: T-Mobile Arcadyan KVD21 User Guide
+    url: https://www.t-mobile.com/support/public-files/attachments/t-mobile-arcadyan-kvd21-user-guide-english.pdf
+  tw.3596#e17:
+    locator: 第77頁，3.4.2 TÜV Green Product Mark；報告註明2024年7月出版
+    published_date: null
+    publisher: 智易科技
+    quote_check: found
+    title: 2023 Arcadyan Sustainability Report
+    url: https://csr.arcadyan.com/media/resources/reports/2023_Arcadyan_SUSTAINABILITY_REPORT_EN.pdf
+  tw.3596#e18:
+    locator: 記者何美如報導，中華電信執行副總黃志雄發言
+    published_date: '2025-05-06'
+    publisher: 東森財經新聞／財訊快報
+    quote_check: found
+    title: 個股：智易深耕電信市場，攜手中華電推「Wi-Fi全屋通」累積服務用戶破百萬
+    url: https://fnc.ebc.net.tw/fncnews/stock/189593
+  tw.3596#e19:
+    locator: Supporting Quotes，智易業務行銷主管Raymond Hsiung發言
+    published_date: '2025-10-14'
+    publisher: Broadcom Inc.
+    quote_check: unreachable
+    title: Broadcom Introduces Industry’s First Wi-Fi 8 Silicon Ecosystem Powering the AI Era
+    url: https://investors.broadcom.com/news-releases/news-release-details/broadcom-introduces-industrys-first-wi-fi-8-silicon-ecosystem
+  tw.3596#e22:
+    locator: 新聞稿首段，Djingo平台型號
+    published_date: '2020-01-06'
+    publisher: MediaTek
+    quote_check: found
+    title: MediaTek Collaborates with Orange to Deliver a More Advanced Voice Assistant Experience
+    url: https://www.mediatek.com/press-room/mediatek-collaborates-with-orange-to-deliver-a-more-advanced-voice-assistant-experience
+  tw.3596#e23:
+    locator: 新聞稿首段，Djingo平台及智易製造合作
+    published_date: '2020-01-06'
+    publisher: MediaTek
+    quote_check: found
+    title: MediaTek Collaborates with Orange to Deliver a More Advanced Voice Assistant Experience
+    url: https://www.mediatek.com/press-room/mediatek-collaborates-with-orange-to-deliver-a-more-advanced-voice-assistant-experience
+  tw.3596#e24:
+    locator: 第3頁，Intel Modems Move 5G Forward
+    published_date: '2019-02-25'
+    publisher: Intel
+    quote_check: found
+    title: 'MWC 2019: Intel Showcases New Products and Partnerships Accelerating the 5G Revolution'
+    url: https://d1io3yog0oux5.cloudfront.net/_ec13f29a6836787b9b0f634542f9f94e/intel/news/2019-02-25_MWC_2019_Intel_Showcases_New_Products_and_91.pdf
+  tw.3596#e25:
+    locator: Romain Heuillard報導，La popularité d’Android章節
+    published_date: '2014-06-26'
+    publisher: Clubic
+    quote_check: found
+    title: Bouygues Telecom dévoile Miami, son futur décodeur Android TV
+    url: https://www.clubic.com/connexion-internet/fai-bouygues-bbox/actualite-712199-bouygues-telecom-miami-android-tv.html
+  tw.3596#e26:
+    locator: 市場需求與銷售競爭，國內外競爭廠商；文末列資料提供者及更新日期
+    published_date: '2025-07-31'
+    publisher: MoneyDJ理財網／嘉實投顧
+    quote_check: found
+    title: 智易科技股份有限公司
+    url: https://www.moneydj.com/kmdj/wiki/wikiviewer.aspx?keyid=ff8e0dd4-e0bf-42e7-9ad6-ac443023f47d
+  tw.3596#e27:
+    locator: 第11頁，合併子公司表，日本公司列
     published_date: '2026-08-05'
-    publisher: 智易科技股份有限公司
+    publisher: 智易科技
     quote_check: found
-    title: 115年第二季合併財務報告
-    url: https://www.arcadyan.com/media/investor/fs/consolidated/2026/%E6%99%BA%E6%98%93115%E5%B9%B4%E7%AC%AC%E4%BA%8C%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf
-  tw.3596#e7:
-    locator: 5G CPE產品說明
-    published_date: null
-    publisher: 智易科技股份有限公司
+    title: 智易科技115年第二季合併財務報告
+    url: https://www.arcadyan.com/media/investor/fs/consolidated/2026/智易115年第二季合併財務報告.pdf
+  tw.3596#e28:
+    locator: 第12頁，合併子公司表註3，對應日本公司
+    published_date: '2026-08-05'
+    publisher: 智易科技
     quote_check: found
-    title: 5G解決方案
-    url: https://www.arcadyan.com/zh-hant/solutions/idea/fiveG/
-  tw.3596#e8:
-    locator: Small Cell產品說明
-    published_date: null
-    publisher: 智易科技股份有限公司
-    quote_check: found
-    title: 5G解決方案
-    url: https://www.arcadyan.com/zh-hant/solutions/idea/fiveG/
-  tw.3596#e9:
-    locator: 寬頻解決方案產品分類及FTTx、DOCSIS、xDSL說明
-    published_date: null
-    publisher: 智易科技股份有限公司
-    quote_check: found
-    title: 寬頻解決方案
-    url: https://www.arcadyan.com/zh-hant/solutions/idea/fttx/
+    title: 智易科技115年第二季合併財務報告
+    url: https://www.arcadyan.com/media/investor/fs/consolidated/2026/智易115年第二季合併財務報告.pdf

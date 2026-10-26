@@ -26,33 +26,29 @@ chain_stage:
   stage_name: 塑膠、纖維與加工
   tier: downstream
 primary_chain_position: downstream
-summary_short: 製造瓶用聚酯粒、聚酯纖維、工程塑膠及光學薄膜。
-summary_long: 新纖以聚酯材料為核心，製造瓶用聚酯粒、聚酯纖維與工業用紗、工程塑膠及光學薄膜。2026年上半年製造事業營收中，塑膠占63%、化纖占19%、光電占18%。工程材料應用包括電動車連接器與充電，以及伺服器零組件；公司亦開發海洋再生聚酯，拓展回收材料用途。光電業務中的TAC膜由子公司達輝光電研發與製造，應用於液晶顯示器偏光板。子公司欣泛亞聚酯工業則將回收寶特瓶加工為工業及食品級膠片。
+summary_short: 主要銷售聚酯粒、工程塑膠、化纖及光學薄膜，塑膠為最大生產事業。
+summary_long: 新纖主要經營塑膠、化纖與光電材料，產品包括聚酯粒、瓶用酯粒、工程塑膠、聚酯纖維及光學薄膜。2026年上半年，塑膠、化纖及光電分別占生產事業營收63%、19%及18%，此口徑並非合併總營收。公司揭露儒鴻、台達電、統一及黑松等客戶，未逐家揭露交易品項與營收占比。公司與Celanese合作生產NEOLAST纖維，並投資Ambercycle循環聚酯設施。近三年另有入股新昕資本、增資新光幼獅、自地委建總部及子公司不動產交易。2026年與極現科技、JEDSY簽署意向書，規劃成立醫藥物流無人機合資公司。
 segments:
 - evidence_ids:
   - e1
-  id: plastics
-  name: 塑膠（製造事業營收口徑）
-  period: 2026上半年
+  id: plastic
+  name: 塑膠事業
+  period: 2026年上半年；生產事業營收口徑
   revenue_share_pct: 63
 - evidence_ids:
   - e1
-  id: fibers
-  name: 化纖（製造事業營收口徑）
-  period: 2026上半年
+  id: fiber
+  name: 化纖事業
+  period: 2026年上半年；生產事業營收口徑
   revenue_share_pct: 19
 - evidence_ids:
   - e1
-  id: optronics
-  name: 光電（製造事業營收口徑）
-  period: 2026上半年
+  id: optical
+  name: 光電事業
+  period: 2026年上半年；生產事業營收口徑
   revenue_share_pct: 18
-main_theme: theme.ev
+main_theme: theme.ai_server
 themes:
-- also: []
-  stage: parts
-  theme: theme.ev
-  tier: midstream
 - also: []
   stage: components
   theme: theme.ai_server
@@ -62,8 +58,9 @@ relations:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 長纖紗供應
+    detail: 列名客戶，未逐家揭露供貨品項
     details:
+    - 列名客戶，未逐家揭露供貨品項
     - 長纖紗供應
     edge: e00c3710f1337
     evidence_level: primary
@@ -72,32 +69,145 @@ relations:
     ranking_basis: unranked
     share_basis: null
     share_pct: null
-    weight: 1
-  subsidiaries:
-  - as_of: '2024-12-31'
+    weight: 2
+  - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 證券及期貨相關服務子公司
+    detail: 列名客戶，未逐家揭露供貨品項
     details:
-    - 證券及期貨相關服務子公司
-    edge: e4cc71b7f448b
+    - 列名客戶，未逐家揭露供貨品項
+    edge: e187298ca1132
     evidence_level: primary
-    id: org.shinkong-securities
-    name: 新光證券股份有限公司
+    id: jp.3101
+    name: TOYOBO
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-10-15'
+  - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: TAC膜研發、製造及銷售子公司
+    detail: 列名客戶，未逐家揭露供貨品項
     details:
-    - TAC膜研發、製造及銷售子公司
-    edge: e35f116bbaa2b
+    - 列名客戶，未逐家揭露供貨品項
+    edge: e5eaa1eb21f61
     evidence_level: primary
-    id: org.tacbright-optronics
-    name: 達輝光電股份有限公司
+    id: jp.3402
+    name: TORAY
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 列名客戶，未逐家揭露供貨品項
+    details:
+    - 列名客戶，未逐家揭露供貨品項
+    edge: e500a4d8eec6f
+    evidence_level: primary
+    id: tw.1216
+    name: 統一
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 列名客戶，未逐家揭露供貨品項
+    details:
+    - 列名客戶，未逐家揭露供貨品項
+    edge: ee5c3d2bd09fc
+    evidence_level: primary
+    id: tw.1234
+    name: 黑松
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 列名客戶，未逐家揭露供貨品項
+    details:
+    - 列名客戶，未逐家揭露供貨品項
+    edge: eb72a15c6a2c3
+    evidence_level: primary
+    id: tw.2308
+    name: 台達電
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  partners:
+  - as_of: '2026-08-27'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過新碩先進合資生產電子級雙氧水
+    details:
+    - 透過新碩先進合資生產電子級雙氧水
+    edge: e5acac0aaaaf5
+    evidence_level: media
+    id: org.solvay
+    name: Solvay
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-06'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: NEOLAST彈性纖維合作生產
+    details:
+    - NEOLAST彈性纖維合作生產
+    edge: e17a140473bad
+    evidence_level: media
+    id: us.CE
+    name: Celanese
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2026-08-07'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資園區開發子公司
+    details:
+    - 全資園區開發子公司
+    edge: e5a766e6aeb28
+    evidence_level: media
+    id: org.新光幼獅
+    name: 新光幼獅
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資資產開發子公司
+    details:
+    - 全資資產開發子公司
+    edge: e31f387a97e44
+    evidence_level: primary
+    id: org.新星興業
+    name: 新星興業
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-08-27'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 電子級雙氧水業務子公司
+    details:
+    - 電子級雙氧水業務子公司
+    edge: e138887e84093
+    evidence_level: media
+    id: org.新碩先進
+    name: 新碩先進
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -105,9 +215,9 @@ relations:
   - as_of: 2026-06
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 工業與食品級再生聚酯膠片子公司
+    detail: 再生聚酯膠片與包裝業務子公司
     details:
-    - 工業與食品級再生聚酯膠片子公司
+    - 再生聚酯膠片與包裝業務子公司
     edge: e155d60a930c9
     evidence_level: primary
     id: org.欣泛亞聚酯工業
@@ -130,88 +240,508 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  transactions:
+  - amount: 1,000萬美元
+    as_of: '2024-08-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 投資循環聚酯商業生產設施
+    details:
+    - 投資循環聚酯商業生產設施
+    edge: e60e77fd298b3
+    event_date: '2024-08-13'
+    events:
+    - amount: 1,000萬美元
+      detail: 投資循環聚酯商業生產設施
+      event_date: '2024-08-13'
+    evidence_level: primary
+    id: org.ambercycle
+    name: Ambercycle
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2026-09-08'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 簽署意向書，規劃醫藥物流無人機合資
+    details:
+    - 簽署意向書，規劃醫藥物流無人機合資
+    edge: eb20d3a18a5c1
+    event_date: '2026-09-08'
+    events:
+    - amount: null
+      detail: 簽署意向書，規劃醫藥物流無人機合資
+      event_date: '2026-09-08'
+    evidence_level: media
+    id: org.jedsy
+    name: JEDSY
+    ranking_basis: unranked
+    role: party
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2024-07-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司啟騰建設取得內湖土地及建物
+    details:
+    - 子公司啟騰建設取得內湖土地及建物
+    edge: ebd1550ab2ff9
+    event_date: '2024-07-26'
+    events:
+    - amount: null
+      detail: 子公司啟騰建設取得內湖土地及建物
+      event_date: '2024-07-26'
+    evidence_level: primary
+    id: org.力達資產管理股份有限公司
+    name: 力達資產管理股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣3.45億元
+    as_of: '2025-12-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司新星興業都更投資及擔保特別股
+    details:
+    - 子公司新星興業都更投資及擔保特別股
+    edge: e0023d1de0050
+    event_date: '2025-12-30'
+    events:
+    - amount: 新台幣3.45億元
+      detail: 子公司新星興業都更投資及擔保特別股
+      event_date: '2025-12-30'
+    evidence_level: primary
+    id: org.品嘉建設股份有限公司
+    name: 品嘉建設股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣1,144,541,540元整
+    as_of: '2024-09-04'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司新纖工業處分平鎮土地及建照權利
+    details:
+    - 子公司新纖工業處分平鎮土地及建照權利
+    edge: e86d8ab1273d3
+    event_date: '2024-09-04'
+    events:
+    - amount: 新台幣1,144,541,540元整
+      detail: 子公司新纖工業處分平鎮土地及建照權利
+      event_date: '2024-09-04'
+    evidence_level: primary
+    id: org.廣承建設股份有限公司
+    name: 廣承建設股份有限公司
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 約計金額新台幣3.8億
+    as_of: '2026-07-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司啟騰建設泰山住宅合建分售
+    details:
+    - 子公司啟騰建設泰山住宅合建分售
+    edge: e1ff5c7cef41e
+    event_date: '2026-07-28'
+    events:
+    - amount: 約計金額新台幣3.8億
+      detail: 子公司啟騰建設泰山住宅合建分售
+      event_date: '2026-07-28'
+    evidence_level: primary
+    id: org.恆美建設-股-公司
+    name: 恆美建設(股)公司
+    ranking_basis: unranked
+    role: party
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣40億元
+    as_of: '2026-08-07'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 董事會通過增資全資子公司
+    details:
+    - 董事會通過增資全資子公司
+    edge: e75c6c6668405
+    event_date: '2026-08-07'
+    events:
+    - amount: 新台幣40億元
+      detail: 董事會通過增資全資子公司
+      event_date: '2026-08-07'
+    evidence_level: media
+    id: org.新光幼獅
+    name: 新光幼獅
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣10.85725億元
+    as_of: '2025-04-18'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 投資入股新昕資本
+    details:
+    - 投資入股新昕資本
+    edge: ef69204fdee65
+    event_date: '2025-04-18'
+    events:
+    - amount: 新台幣10.85725億元
+      detail: 投資入股新昕資本
+      event_date: '2025-04-18'
+    evidence_level: media
+    id: org.新昕資本股份有限公司
+    name: 新昕資本股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2026-09-08'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 簽署意向書，規劃醫藥物流無人機合資
+    details:
+    - 簽署意向書，規劃醫藥物流無人機合資
+    edge: e5f96844f6cc1
+    event_date: '2026-09-08'
+    events:
+    - amount: null
+      detail: 簽署意向書，規劃醫藥物流無人機合資
+      event_date: '2026-09-08'
+    evidence_level: media
+    id: org.極現科技
+    name: 極現科技
+    ranking_basis: unranked
+    role: party
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣4.23億元
+    as_of: '2024-12-20'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司新星興業住宅合建分屋
+    details:
+    - 子公司新星興業住宅合建分屋
+    edge: e80d353c4e419
+    event_date: '2024-12-20'
+    events:
+    - amount: 新台幣4.23億元
+      detail: 子公司新星興業住宅合建分屋
+      event_date: '2024-12-20'
+    evidence_level: media
+    id: org.瑞興商業銀行
+    name: 瑞興商業銀行
+    ranking_basis: unranked
+    role: party
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣421,382,500元整(含建物)
+    as_of: '2024-07-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司啟騰建設取得內湖土地及建物
+    details:
+    - 子公司啟騰建設取得內湖土地及建物
+    edge: ef30c32a56ee7
+    event_date: '2024-07-26'
+    events:
+    - amount: 新台幣421,382,500元整(含建物)
+      detail: 子公司啟騰建設取得內湖土地及建物
+      event_date: '2024-07-26'
+    evidence_level: primary
+    id: org.耀達建設股份有限公司
+    name: 耀達建設股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣2,452,500,000元(含稅)
+    as_of: '2026-01-06'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 自地委建集團企業總部大樓
+    details:
+    - 自地委建集團企業總部大樓
+    edge: efd40375fadf1
+    event_date: '2026-01-06'
+    events:
+    - amount: 新台幣2,452,500,000元(含稅)
+      detail: 自地委建集團企業總部大樓
+      event_date: '2026-01-06'
+    evidence_level: primary
+    id: org.豐譽聯合工程股份有限公司
+    name: 豐譽聯合工程股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- PTA及MEG原料供應商：已確認原料用途，未取得足以確認具名原料供應商的證據。
+- LOTTE、BASF DUPONT、可口可樂、東罐、CONTINENTAL：報…
+- 金車大塚：報告書列為客戶，本次未完成交易法人識別。
+- 2024年新纖工業平鎮土地交易中的非關係自然人買方。
+- 新碩先進電子級雙氧水的個別半導體客戶。
 website: https://www.shinkong.com.tw/
 tax_id: '07435515'
 incorporated: '1967-04-25'
 listed: '1973-08-31'
-as_of: '2026-10-15'
+as_of: '2026-10-25'
 confidence: ai_cross_checked
 has_research: true
 evidence:
   tw.1409#e1:
-    locator: 第4頁，2026 1H製造事業營收圓餅圖：Plastics 63%、Fibers 19%、Optronics 18%
+    locator: 第4頁，2026年上半年生產事業營收占比圖
     published_date: '2026-08-27'
     publisher: 新光合成纖維股份有限公司
     quote_check: found
-    title: 2026 Investor Conference
-    url: https://cdn.financialreports.eu/financialreports/media/filings/51787/2026/RNS/51787_rns_2026-08-27_aa50510b-c577-4625-acb9-6a6db92a70ab.pdf
+    title: 新光合纖2026年法人說明會
+    url: https://mopsov.twse.com.tw/nas/STR/140920260827M001.pdf
   tw.1409#e10:
-    locator: 2026/06消息
+    locator: 『2026/06』子公司循環材料段落
     published_date: null
     publisher: 新光合成纖維股份有限公司
     quote_check: found
-    title: 新纖攜手子公司拓展食品級循環材料應用
+    title: 最新消息：新纖攜手子公司拓展食品級循環材料應用
     url: https://esg.shinkong.com.tw/news/
   tw.1409#e11:
-    locator: 附註十五、列入合併財務報告之子公司，第50頁新光證券列；FinancialFilings存檔全文
-    published_date: '2025-03-16'
-    publisher: 新光合成纖維股份有限公司
-    quote_check: unreachable
-    title: 新光合成纖維股份有限公司及子公司113及112年度合併財務報告
-    url: https://financialfilings.com/filings/ssfc-1409/annual-report/2025/33246195/
+    locator: 記者嚴雅芳，正文第三段
+    published_date: '2026-08-07'
+    publisher: 經濟日報
+    quote_check: found
+    title: 新纖財報／上半年稅後純益增逾五倍
+    url: https://money.udn.com/money/story/5710/9677980
+  tw.1409#e11b:
+    locator: 正文第三段，資金用途
+    published_date: '2026-08-07'
+    publisher: 經濟日報
+    quote_check: found
+    title: 新纖財報／上半年稅後純益增逾五倍
+    url: https://money.udn.com/money/story/5710/9677980
+  tw.1409#e12:
+    locator: 記者曾仁凱，電子級雙氧水段落
+    published_date: '2026-08-27'
+    publisher: 中央社
+    quote_check: found
+    title: 新纖：台灣稅率有利輸美 下半年營運優於去年同期
+    url: https://www.cna.com.tw/news/afe/202608270258.aspx
+  tw.1409#e13:
+    locator: 新聞稿正文第一段
+    published_date: '2024-08-13'
+    publisher: Ambercycle，PR Newswire發布
+    quote_check: found
+    title: Shinkong Invests $10M in Ambercycle's New Facility to Commercialize Circular Polyester Innovation
+    url: https://www.prnewswire.com/news-releases/shinkong-invests-10m-in-ambercycles-new-facility-to-commercialize-circular-polyester-innovation-302221261.html
+  tw.1409#e14:
+    locator: 新聞照片圖說
+    published_date: '2025-04-18'
+    publisher: 中央社
+    quote_check: found
+    title: 新纖砸10.8億入股新昕資本 持股43%拓多元商機
+    url: https://www.cna.com.tw/news/afe/202504180274.aspx
+  tw.1409#e15:
+    locator: 公告第5項
+    published_date: '2026-01-06'
+    publisher: 公開資訊觀測站重大訊息，MoneyDJ轉載
+    quote_check: found
+    title: 新纖自地委建集團企業總部大樓，新建工程合約總額約24.53億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=593fd0af-4d2e-48c4-bf71-24bd11135b2b
+  tw.1409#e15b:
+    locator: 公告第6項第1款
+    published_date: '2026-01-06'
+    publisher: 公開資訊觀測站重大訊息，MoneyDJ轉載
+    quote_check: found
+    title: 新纖自地委建集團企業總部大樓，新建工程合約總額約24.53億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=593fd0af-4d2e-48c4-bf71-24bd11135b2b
+  tw.1409#e16:
+    locator: 記者曾仁凱，正文第一段
+    published_date: '2026-09-08'
+    publisher: 中央社
+    quote_check: found
+    title: 新纖布局低空經濟 導入瑞士醫藥物流無人機
+    url: https://www.cna.com.tw/news/afe/202609080117.aspx
+  tw.1409#e16b:
+    locator: 正文第二段
+    published_date: '2026-09-08'
+    publisher: 中央社
+    quote_check: found
+    title: 新纖布局低空經濟 導入瑞士醫藥物流無人機
+    url: https://www.cna.com.tw/news/afe/202609080117.aspx
+  tw.1409#e17:
+    locator: 公告主旨
+    published_date: '2024-07-29'
+    publisher: 公開資訊觀測站重大訊息，MoneyDJ轉載
+    quote_check: found
+    title: 新纖：啟騰建設取得臺北市內湖區潭美段三小段不動產
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=1496e1eb-b4be-4c73-80ce-4a2dbd20dc52
+  tw.1409#e17b:
+    locator: 公告第3項
+    published_date: '2024-07-29'
+    publisher: 公開資訊觀測站重大訊息，MoneyDJ轉載
+    quote_check: found
+    title: 新纖：啟騰建設取得臺北市內湖區潭美段三小段不動產
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=1496e1eb-b4be-4c73-80ce-4a2dbd20dc52
+  tw.1409#e17c:
+    locator: 公告第4項
+    published_date: '2024-07-29'
+    publisher: 公開資訊觀測站重大訊息，MoneyDJ轉載
+    quote_check: found
+    title: 新纖：啟騰建設取得臺北市內湖區潭美段三小段不動產
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=1496e1eb-b4be-4c73-80ce-4a2dbd20dc52
+  tw.1409#e18:
+    locator: 公告主旨
+    published_date: '2024-09-05'
+    publisher: 財訊新聞，重大訊息轉載
+    quote_check: found
+    title: 新纖旗下新纖工業處分桃園平鎮北興段土地
+    url: https://ww2.money-link.com.tw/RealtimeNews/NewsContent.aspx?PU=0010&SN=2107564002
+  tw.1409#e18b:
+    locator: 公告第3項
+    published_date: '2024-09-05'
+    publisher: 財訊新聞，重大訊息轉載
+    quote_check: found
+    title: 新纖旗下新纖工業處分桃園平鎮北興段土地
+    url: https://ww2.money-link.com.tw/RealtimeNews/NewsContent.aspx?PU=0010&SN=2107564002
+  tw.1409#e18c:
+    locator: 公告第4項
+    published_date: '2024-09-05'
+    publisher: 財訊新聞，重大訊息轉載
+    quote_check: found
+    title: 新纖旗下新纖工業處分桃園平鎮北興段土地
+    url: https://ww2.money-link.com.tw/RealtimeNews/NewsContent.aspx?PU=0010&SN=2107564002
+  tw.1409#e19:
+    locator: 記者曾仁凱，正文第三段
+    published_date: '2024-12-20'
+    publisher: 中央社
+    quote_check: found
+    title: 紡織廠投入資產開發 新纖、力麗鎖定北市大同區
+    url: https://www.cna.com.tw/news/afe/202412200273.aspx
+  tw.1409#e19b:
+    locator: 正文第二段
+    published_date: '2024-12-20'
+    publisher: 中央社
+    quote_check: found
+    title: 紡織廠投入資產開發 新纖、力麗鎖定北市大同區
+    url: https://www.cna.com.tw/news/afe/202412200273.aspx
   tw.1409#e2:
-    locator: 產品特色、產品用途
+    locator: 產品簡介第一段
     published_date: null
     publisher: 新光合成纖維股份有限公司
     quote_check: found
-    title: 固聚酯粒產品介紹
-    url: https://www.shinkong.com.tw/product/showProduct?industry=6&product=31
+    title: 塑膠事業產品介紹
+    url: https://www.shinkong.com.tw/product/showIndustry/6
+  tw.1409#e20:
+    locator: 公告第30項
+    published_date: '2025-12-30'
+    publisher: 公開資訊觀測站重大訊息，MoneyDJ轉載
+    quote_check: found
+    title: 新纖：新星興業投資都更開發合作案，計3.45億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=605d868b-04a7-4abd-afb0-4399508662d0
+  tw.1409#e20b:
+    locator: 公告第5項
+    published_date: '2025-12-30'
+    publisher: 公開資訊觀測站重大訊息，MoneyDJ轉載
+    quote_check: found
+    title: 新纖：新星興業投資都更開發合作案，計3.45億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=605d868b-04a7-4abd-afb0-4399508662d0
+  tw.1409#e21:
+    locator: 公告主旨
+    published_date: '2026-07-28'
+    publisher: 公開資訊觀測站重大訊息，MoneyDJ轉載
+    quote_check: found
+    title: 新纖代子公司啟騰建設公告與恆美建設合建分售案
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=466df955-06a8-4fb2-9c8d-74e155b7ce6f
+  tw.1409#e21b:
+    locator: 公告第6項第3款
+    published_date: '2026-07-28'
+    publisher: 公開資訊觀測站重大訊息，MoneyDJ轉載
+    quote_check: found
+    title: 新纖代子公司啟騰建設公告與恆美建設合建分售案
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=466df955-06a8-4fb2-9c8d-74e155b7ce6f
   tw.1409#e3:
-    locator: 第100頁，提供之商品、服務項目，化纖產品；FinancialFilings存檔全文
-    published_date: '2025-04-15'
+    locator: 產品簡介第一段
+    published_date: null
     publisher: 新光合成纖維股份有限公司
-    quote_check: unreachable
-    title: 新光合成纖維股份有限公司113年度年報
-    url: https://financialfilings.com/filings/ssfc-1409/annual-report/2025/33246915/
+    quote_check: found
+    title: 化纖事業產品介紹
+    url: https://www.shinkong.com.tw/product/showIndustry/3
   tw.1409#e4:
-    locator: 塑膠產品清單
+    locator: 產品選單
     published_date: null
     publisher: 新光合成纖維股份有限公司
     quote_check: found
-    title: 產業用產品介紹
-    url: https://www.shinkong.com.tw/product/filtered/Industrial
+    title: 光電事業群產品介紹
+    url: https://www.shinkong.com.tw/product/showIndustry/7
+  tw.1409#e4b:
+    locator: TAC薄膜發展說明
+    published_date: null
+    publisher: 新光合成纖維股份有限公司
+    quote_check: found
+    title: 光電事業群產品介紹
+    url: https://www.shinkong.com.tw/product/showIndustry/7
   tw.1409#e5:
-    locator: 光電事業群產品清單
-    published_date: null
-    publisher: 新光合成纖維股份有限公司
+    locator: 記者嚴雅芳，正文原料說明段
+    published_date: '2026-03-16'
+    publisher: 經濟日報
     quote_check: found
-    title: 產業用產品介紹
-    url: https://www.shinkong.com.tw/product/filtered/Industrial
+    title: 石化供應拉警報！新纖董座吳東昇曝：原料漲超過10%
+    url: https://money.udn.com/money/story/5612/9382796
   tw.1409#e6:
-    locator: 關於達輝光電，第一段
-    published_date: null
-    publisher: 達輝光電股份有限公司
-    quote_check: found
-    title: 公司簡介－達輝光電股份有限公司
-    url: https://www.tacbright.com/company/
-  tw.1409#e7:
-    locator: 產品介紹與應用領域
-    published_date: null
-    publisher: 達輝光電股份有限公司
-    quote_check: found
-    title: 達輝光電股份有限公司－產品與應用介紹
-    url: https://www.tacbright.com/
-  tw.1409#e8:
-    locator: 創新技術－海洋再生聚酯的綠色實踐
-    published_date: null
-    publisher: 新光合成纖維股份有限公司
-    quote_check: found
-    title: 永續產品
-    url: https://esg.shinkong.com.tw/sustainableproducts-26/
-  tw.1409#e9:
-    locator: 第9頁，Product Portfolio & Strategic Roadmap，AI & EV Materials應用欄
+    locator: 第9頁，AI及汽車材料應用
     published_date: '2026-08-27'
     publisher: 新光合成纖維股份有限公司
     quote_check: found
-    title: 2026 Investor Conference
-    url: https://cdn.financialreports.eu/financialreports/media/filings/51787/2026/RNS/51787_rns_2026-08-27_aa50510b-c577-4625-acb9-6a6db92a70ab.pdf
+    title: 新光合纖2026年法人說明會
+    url: https://mopsov.twse.com.tw/nas/STR/140920260827M001.pdf
+  tw.1409#e6b:
+    locator: 第9頁，AI材料發展與布局
+    published_date: '2026-08-27'
+    publisher: 新光合成纖維股份有限公司
+    quote_check: found
+    title: 新光合纖2026年法人說明會
+    url: https://mopsov.twse.com.tw/nas/STR/140920260827M001.pdf
+  tw.1409#e7:
+    locator: 記者彭昱文，正文第一段
+    published_date: '2026-10-06'
+    publisher: 鉅亨網
+    quote_check: found
+    title: 新纖NEOLAST新產線正式量產 首階段年產能600噸
+    url: https://news.cnyes.com/news/id/6622647
+  tw.1409#e7b:
+    locator: 正文合作說明段
+    published_date: '2026-10-06'
+    publisher: 鉅亨網
+    quote_check: found
+    title: 新纖NEOLAST新產線正式量產 首階段年產能600噸
+    url: https://news.cnyes.com/news/id/6622647
+  tw.1409#e8:
+    locator: 『2025/07』段落
+    published_date: null
+    publisher: 新光合成纖維股份有限公司
+    quote_check: found
+    title: 最新消息：新纖積極切入AI伺服器塑膠件
+    url: https://esg.shinkong.com.tw/news/
+  tw.1409#e9:
+    locator: 1.1.1關於新光合成纖維，客戶簡介
+    published_date: null
+    publisher: 新光合成纖維股份有限公司，FinancialFilings轉載
+    quote_check: unreachable
+    title: 新光合纖2025年永續報告書
+    url: https://financialfilings.com/filings/ssfc-1409/environmental-social-information/2026/72993895/

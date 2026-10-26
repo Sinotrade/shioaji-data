@@ -26,22 +26,71 @@ chain_stage:
   stage_name: 主機板與系統組裝
   tier: downstream
 primary_chain_position: midstream
-summary_short: 以伺服器主機板與整機系統的開發及銷售為主要業務。
-summary_long: 永擎電子以伺服器主機板與整機系統的開發及銷售為主要業務，2025年伺服器周邊產品占營收93.57%，其他占6.43%。產品涵蓋HGX B300平台AI GPU伺服器及IGX Thor平台邊緣AI伺服器，其中AI GPU伺服器用於資料中心AI訓練與推論。公司並在伺服器導入兩相式直接液冷技術。華擎科技為母公司，和碩聯合科技為最終母公司；永擎持有美國子公司全部股權，該子公司負責美洲地區銷售服務。
+summary_short: 以伺服器主機板與整機系統的研發、設計及銷售為主，生產全數委外。
+summary_long: 永擎從事伺服器主機板與系統開發及銷售，採全數委外生產模式。2025年上半年，伺服器系統占營收85.64%，主機板及介面卡占9.08%。公司母公司為華擎，最終母公司為和碩，並持有美國銷售服務子公司全部股權。產品涵蓋NVIDIA GPU伺服器及液冷機櫃，也與ZutaCore合作開發液冷平台。2026年與DATASECTION CLOUD LIMITED簽約供應587台搭載B200的GPU伺服器，另以約1,000萬美元策略投資Together Computer特別股。
 segments:
 - evidence_ids:
-  - e2
-  id: seg.server
-  name: 伺服器周邊產品
-  period: '2025'
-  revenue_share_pct: 93.57
+  - e1
+  id: seg_system
+  name: 伺服器系統
+  period: 2025年上半年
+  revenue_share_pct: 85.64
 - evidence_ids:
   - e2
-  id: seg.other
-  name: 其他
-  period: '2025'
-  revenue_share_pct: 6.43
+  id: seg_board
+  name: 伺服器主機板及介面卡
+  period: 2025年上半年
+  revenue_share_pct: 9.08
+- evidence_ids:
+  - e4
+  id: seg_other
+  name: 其他，包含勞務收入及伺服器相關零組件
+  period: 2025年上半年
+  revenue_share_pct: 5.28
+main_theme: theme.ai_server
+themes:
+- also: []
+  stage: assembly
+  theme: theme.ai_server
+  tier: downstream
+- also: []
+  stage: it
+  theme: theme.data_center
+  tier: midstream
+- also: []
+  stage: system
+  theme: theme.nvidia
+  tier: downstream
 relations:
+  customers:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 關係人銷貨，含其他營業收入
+    details:
+    - 關係人銷貨，含其他營業收入
+    edge: efddbab0d683c
+    evidence_level: primary
+    id: tw.4938
+    name: 和碩
+    ranking_basis: disclosed
+    share_basis: revenue
+    share_pct: 16.37
+    weight: 1
+  - as_of: '2026-06-04'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 587台NVIDIA B200 GPU伺服器
+    details:
+    - 587台NVIDIA B200 GPU伺服器
+    edge: e60a3e44796db
+    evidence_level: primary
+    id: org.datasection-cloud-limited
+    name: DATASECTION CLOUD LIMITED
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   parents:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
@@ -72,13 +121,42 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  partners:
+  - as_of: '2025-11-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: Mech機器人客製化邊緣AI運算系統
+    details:
+    - Mech機器人客製化邊緣AI運算系統
+    edge: eca2ca1da6bbc
+    evidence_level: primary
+    id: org.dexterity
+    name: Dexterity
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-12'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: NVIDIA GPU與平台之伺服器系統合作
+    details:
+    - NVIDIA GPU與平台之伺服器系統合作
+    edge: e79cb1b234b74
+    evidence_level: primary
+    id: us.NVDA
+    name: NVIDIA
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 全資美國子公司
+    detail: 全資美洲銷售服務子公司
     details:
-    - 全資美國子公司
+    - 全資美洲銷售服務子公司
     edge: e6570f01bb513
     evidence_level: primary
     id: org.asrock-rack-america
@@ -87,39 +165,187 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  suppliers:
+  - as_of: '2025-10-20'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 伺服器主機板採購及委外加工統籌
+    details:
+    - 伺服器主機板採購及委外加工統籌
+    edge: e2d51d6334d64
+    evidence_level: primary
+    id: org.asiarock-technology-limited
+    name: ASIAROCK TECHNOLOGY LIMITED
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-10-20'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 伺服器委外製造服務
+    details:
+    - 伺服器委外製造服務
+    edge: ea048a39b9c0c
+    evidence_level: media
+    id: tw.4938
+    name: 和碩
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: USD 9,999,894.14元
+    as_of: '2026-06-11'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 取得48,361股特別股之策略投資
+    details:
+    - 取得48,361股特別股之策略投資
+    edge: eb1120ff9bee8
+    event_date: '2026-06-11'
+    events:
+    - amount: USD 9,999,894.14元
+      detail: 取得48,361股特別股之策略投資
+      event_date: '2026-06-11'
+    evidence_level: primary
+    id: org.together-computer
+    name: Together Computer Inc.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 上市前補充揭露文件以「辛集團」匿名揭露AI GPU採購對象，未自行對應為NVI…
+- HBM與DRAM為記憶體類別，未找到可確認的具名供應商。
+- PCB為原料類別，文件揭露自行採購，但未具名供應商。
+- 美國前20大科技公司、美國CDN及雲端計算供應商。
+- 歐洲重要雲端服務商及亞太系統整合商。
 website: https://www.asrockrack.com
 tax_id: '54161333'
 incorporated: '2013-01-29'
 listed: '2025-11-19'
-as_of: '2026-10-15'
+as_of: '2026-10-25'
 confidence: ai_cross_checked
 has_research: true
 evidence:
   tw.7711#e1:
-    locator: 印刷頁 56，肆、營運概況，一、業務內容
-    published_date: null
+    locator: 印刷頁7，主要產品別銷貨收入變動表；114年第二季欄為上半年累計
+    published_date: '2025-10-20'
     publisher: 永擎電子股份有限公司
     quote_check: found
-    title: 永擎電子股份有限公司 2025 年度年報
-    url: https://www.asrockrack.com/general/Investor/AnnualReport(115).pdf
+    title: 股票上市前風險事項及補充揭露事項說明書
+    url: https://www.asrockrack.com/general/Investor/1141020-RisksandSupplementaryDisclosures.pdf
+  tw.7711#e10:
+    locator: 印刷頁61，附表二，ASIAROCK進貨列之完整法人名稱
+    published_date: '2026-08-04'
+    publisher: 永擎電子股份有限公司
+    quote_check: found
+    title: 永擎電子股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.asrockrack.com/general/Investor/Merger(115Q2).pdf
+  tw.7711#e11:
+    locator: 印刷頁13，合併財務報表編製主體
+    published_date: '2026-08-04'
+    publisher: 永擎電子股份有限公司
+    quote_check: found
+    title: 永擎電子股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.asrockrack.com/general/Investor/Merger(115Q2).pdf
+  tw.7711#e12:
+    locator: 公告第5項，交易數量、價格及總金額
+    published_date: '2026-06-11'
+    publisher: MoneyDJ理財網，轉載公開資訊觀測站重大訊息
+    quote_check: found
+    title: 永擎取得Together Computer特別股48,361股，計約1000萬美元（補充）
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=ac82a0c0-363f-450a-8db1-9f41f2bfc6a6
+  tw.7711#e13:
+    locator: 公告第17項，投資目的；第2項事實發生日為115年6月11日
+    published_date: '2026-06-11'
+    publisher: MoneyDJ理財網，轉載公開資訊觀測站重大訊息
+    quote_check: found
+    title: 永擎取得Together Computer特別股48,361股，計約1000萬美元（補充）
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=ac82a0c0-363f-450a-8db1-9f41f2bfc6a6
+  tw.7711#e14:
+    locator: 第1頁，取得理由；第2頁，簽約日2026年6月3日
+    published_date: '2026-06-04'
+    publisher: データセクション株式会社／日本交易所
+    quote_check: found
+    title: 固定資産（NVIDIA製B200を搭載したGPUサーバー）の取得に関するお知らせ
+    url: https://www2.jpx.co.jp/disc/39050/140120260604562826.pdf
+  tw.7711#e15:
+    locator: 新聞稿第二段，具名AI系統業者
+    published_date: '2024-06-02'
+    publisher: NVIDIA
+    quote_check: found
+    title: Computer Industry Joins NVIDIA to Build AI Factories and Data Centers for the Next Industrial Revolution
+    url: https://investor.nvidia.com/news/press-release-details/2024/Computer-Industry-Joins-NVIDIA-to-Build-AI-Factories-and-Data-Centers-for-the-Next-Industrial-Revolution/default.aspx
+  tw.7711#e16:
+    locator: 機櫃級產品段落
+    published_date: '2026-10-12'
+    publisher: ASRock Rack
+    quote_check: not_found
+    title: ASRock Rack Showcases AI Infrastructure Powered by NVIDIA Technologies at 2026 OCP Global Summit
+    url: https://www.asrockrack.com/general/news.asp?id=290
+  tw.7711#e19:
+    locator: 合作公告標題及前兩段
+    published_date: '2025-11-13'
+    publisher: Dexterity
+    quote_check: found
+    title: Dexterity and ASRock Rack Partner to Deliver Physical AI Supercomputers for Superhumanoid Edge Intelligence
+    url: https://dexterity.ai/blog/dexterity-asrock-aisupercomputers
   tw.7711#e2:
-    locator: 印刷頁 56，主要產品之營業比重，114 年度
-    published_date: null
+    locator: 印刷頁7，伺服器主機板及介面卡列；114年第二季累計欄
+    published_date: '2025-10-20'
     publisher: 永擎電子股份有限公司
     quote_check: found
-    title: 永擎電子股份有限公司 2025 年度年報
-    url: https://www.asrockrack.com/general/Investor/AnnualReport(115).pdf
+    title: 股票上市前風險事項及補充揭露事項說明書
+    url: https://www.asrockrack.com/general/Investor/1141020-RisksandSupplementaryDisclosures.pdf
   tw.7711#e3:
-    locator: 印刷頁 46，七、關係人交易，關係人名稱及關係
-    published_date: '2026-08-04'
+    locator: 第5頁，公司簡介
+    published_date: '2025-10-20'
     publisher: 永擎電子股份有限公司
     quote_check: found
-    title: 永擎電子股份有限公司及子公司 2026 年第二季合併財務報告
-    url: https://www.asrockrack.com/general/Investor/Merger(115Q2).pdf
+    title: 永擎電子媒體茶敘簡報
+    url: https://download.asrock.com/Rack/general/Investor/1141020-InformalMediaGathering.pdf
   tw.7711#e4:
-    locator: 印刷頁 13，四、重大會計政策之彙總說明，合併概況；權益百分比欄含 115.06.30
+    locator: 印刷頁7，其他類產品列及表下注
+    published_date: '2025-10-20'
+    publisher: 永擎電子股份有限公司
+    quote_check: found
+    title: 股票上市前風險事項及補充揭露事項說明書
+    url: https://www.asrockrack.com/general/Investor/1141020-RisksandSupplementaryDisclosures.pdf
+  tw.7711#e5:
+    locator: 第19頁，永擎的機會與優勢
+    published_date: '2025-10-20'
+    publisher: 永擎電子股份有限公司
+    quote_check: found
+    title: 永擎電子媒體茶敘簡報
+    url: https://download.asrock.com/Rack/general/Investor/1141020-InformalMediaGathering.pdf
+  tw.7711#e6:
+    locator: 印刷頁46，關係人名稱及關係
     published_date: '2026-08-04'
     publisher: 永擎電子股份有限公司
     quote_check: found
-    title: 永擎電子股份有限公司及子公司 2026 年第二季合併財務報告
+    title: 永擎電子股份有限公司及子公司115年第二季合併財務報告
     url: https://www.asrockrack.com/general/Investor/Merger(115Q2).pdf
+  tw.7711#e7:
+    locator: 記者王郁倫報導，委外生產段落
+    published_date: '2025-10-20'
+    publisher: 經濟日報
+    quote_check: found
+    title: 童子賢抱「孫公司」 永擎衝AI伺服器藍海！和碩集團輕資產策略出擊
+    url: https://money.udn.com/money/story/5612/9082835
+  tw.7711#e8:
+    locator: 印刷頁61，附表二，和碩銷貨列；金額單位為新台幣千元
+    published_date: '2026-08-04'
+    publisher: 永擎電子股份有限公司
+    quote_check: found
+    title: 永擎電子股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.asrockrack.com/general/Investor/Merger(115Q2).pdf
+  tw.7711#e9:
+    locator: 印刷頁20，與ASIAROCK之財務業務劃分
+    published_date: '2025-10-20'
+    publisher: 永擎電子股份有限公司
+    quote_check: found
+    title: 股票上市前風險事項及補充揭露事項說明書
+    url: https://www.asrockrack.com/general/Investor/1141020-RisksandSupplementaryDisclosures.pdf

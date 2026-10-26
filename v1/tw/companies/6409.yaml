@@ -17,31 +17,39 @@ industry:
   l3: comp.power
   l3_name: 電源供應器與電源管理模組
   l3_name_en: Power Supplies & Power Modules
+chain: chain.server
+chain_stage:
+  agreement: both
+  also: []
+  reason: UPS合計占營收62.75%，並供應伺服器備援電源及開發資料中心供電產品，屬電源零組件。
+  stage: components
+  stage_name: 板卡、電源、散熱、機構件
+  tier: midstream
 primary_chain_position: midstream
-summary_short: 以不斷電系統與太陽能逆變器的設計、製造代工為主要業務。
-summary_long: 旭隼科技以不斷電系統與太陽能逆變器的設計、製造服務為主要業務，採不經營自有品牌的ODM模式。2025年在線式UPS、離線式UPS、逆變器及太陽能逆變器的營收占比分別為36.96%、25.79%、28.90%，其他產品為8.35%。官網產品線另涵蓋儲能系統、變頻器及電動車充電器；ESS810整合8kW太陽能逆變器與5kWh鋰電池。UPS應用涵蓋伺服器與資料中心，製造體系包括深圳、中山及越南子公司。
+summary_short: 以純ODM模式設計製造不斷電系統與太陽能逆變器，UPS為主要營收來源。
+summary_long: 旭隼以純ODM模式提供不斷電系統與太陽能逆變器的設計製造服務，不經營自有品牌。2025年在線式UPS占營收36.96%、離線式UPS占25.79%，逆變器與太陽能逆變器占28.90%，其他產品占8.35%。具名供貨對象包括Schneider Electric、Vertiv、Eaton及Riello。公司產品包括伺服器用1U在線式UPS、結合逆變器與電池的儲能系統，以及直流電動車充電樁；另與Schneider合作開發800V高壓直流電源產品，布局AI資料中心供電應用。2024年董事會決議在美國設立Inversolenergy Tech, Inc.，同月投入50萬美元資本金。
 segments:
 - evidence_ids:
-  - e2
-  id: seg.online_ups
-  name: 在線式不斷電系統（On-Line UPS）
+  - e3
+  id: online_ups
+  name: 在線式不斷電系統
   period: '2025'
   revenue_share_pct: 36.96
 - evidence_ids:
-  - e3
-  id: seg.offline_ups
-  name: 離線式不斷電系統（Off-Line UPS）
+  - e4
+  id: offline_ups
+  name: 離線式不斷電系統
   period: '2025'
   revenue_share_pct: 25.79
 - evidence_ids:
-  - e4
-  id: seg.inverter
-  name: 逆變器及太陽能逆變器（Inverter/PV Inverter）
+  - e5
+  id: inverter
+  name: 逆變器與太陽能逆變器
   period: '2025'
   revenue_share_pct: 28.9
 - evidence_ids:
-  - e5
-  id: seg.other
+  - e6
+  id: other
   name: 其他產品
   period: '2025'
   revenue_share_pct: 8.35
@@ -52,12 +60,102 @@ themes:
   theme: theme.ev
   tier: downstream
 - also: []
+  stage: components
+  theme: theme.ai_server
+  tier: midstream
+- also: []
   stage: equipment
   theme: theme.data_center
   tier: upstream
 relations:
+  customers:
+  - as_of: '2026-10-24'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: UPS供貨
+    details:
+    - UPS供貨
+    edge: e5e6bfc8c9b2d
+    evidence_level: media
+    id: eu.SU
+    name: Schneider Electric
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-24'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: UPS供貨
+    details:
+    - UPS供貨
+    edge: e099f543b48a3
+    evidence_level: media
+    id: org.riello
+    name: Riello
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-24'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: UPS供貨
+    details:
+    - UPS供貨
+    edge: eefdc737240a6
+    evidence_level: media
+    id: us.ETN
+    name: Eaton
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-24'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: UPS供貨
+    details:
+    - UPS供貨
+    edge: e99eafab1667e
+    evidence_level: media
+    id: us.VRT
+    name: Vertiv
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  partners:
+  - as_of: '2026-06-10'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 800V高壓直流電源共同開發
+    details:
+    - 800V高壓直流電源共同開發
+    edge: ee2e51c7541c3
+    evidence_level: media
+    id: eu.SU
+    name: Schneider Electric
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
-  - as_of: 2024-12
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 美國直接子公司
+    details:
+    - 美國直接子公司
+    edge: e64e5cca05277
+    evidence_level: primary
+    id: org.inversolenergy-tech
+    name: Inversolenergy Tech, Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
     detail: 直接持有的投資控股子公司
@@ -71,179 +169,234 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: 2026-05
+  - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 間接控制的轉單子公司
+    detail: 透過九川源持有的深圳製造子公司
     details:
-    - 間接控制的轉單子公司
-    edge: e1c4b3ea6c6f5
+    - 透過九川源持有的深圳製造子公司
+    edge: ec5e006489529
     evidence_level: primary
-    id: org.voltronic-potentia
-    name: 華隼股份有限公司
+    id: org.voltronic-power-shenzhen
+    name: 日月元科技（深圳）有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: 2026-05
+  - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 深圳製造子公司
+    detail: 越南直接子公司
     details:
-    - 深圳製造子公司
-    edge: ef2fb286ca424
+    - 越南直接子公司
+    edge: e1161b1029eb9
     evidence_level: primary
-    id: org.voltronic-shenzhen
-    name: 日月元科技(深圳)有限公司
+    id: org.voltronic-power-vietnam
+    name: Voltronic Power Technology (Vietnam) Company Limited
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: 2026-05
+  - as_of: 2024-02
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 越南製造子公司
+    detail: 間接子公司及2024年集團內增資
     details:
-    - 越南製造子公司
-    edge: eef06fa6ebfd9
+    - 間接子公司及2024年集團內增資
+    edge: e4281579b9248
     evidence_level: primary
-    id: org.voltronic-vietnam
-    name: Voltronic Power Technology(Vietnam) Company Limited
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
-  - as_of: 2026-05
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 中山製造子公司
-    details:
-    - 中山製造子公司
-    edge: e23346b1ec7e5
-    evidence_level: primary
-    id: org.voltronic-zhongshan
+    id: org.zhongshan-voltronic-power-electronics
     name: 中山旭貴明電子有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接子公司及集團內廠房使用權取得
+    details:
+    - 間接子公司及集團內廠房使用權取得
+    edge: e12ea0095c523
+    evidence_level: primary
+    id: org.zhongshan-voltronic-precision
+    name: 中山旭啟電子有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 美元500仟元
+    as_of: 2024-05
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 投資設立美國全資子公司
+    details:
+    - 投資設立美國全資子公司
+    edge: e642bc54a8032
+    event_date: '2024-05-09'
+    events:
+    - amount: 美元500仟元
+      detail: 投資設立美國全資子公司
+      event_date: '2024-05-09'
+    evidence_level: primary
+    id: org.inversolenergy-tech
+    name: Inversolenergy Tech, Inc.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 半導體電子零件供應商：年報揭露材料類別，未具名對應供應商。
+- 電池、變壓器、箱體與PCB供應商：未確認可建立個別供應關係的公司名稱。
+- AWS：未找到其直接向旭隼採購的可靠證據。
+- 超大規模雲端服務商：公開報導未具名，不推定為旭隼直接客戶。
 website: https://voltronicpower.com/zh-TW
 tax_id: '28865032'
 incorporated: '2008-05-01'
 listed: '2014-03-31'
-as_of: '2026-10-14'
+as_of: '2026-10-25'
 confidence: ai_cross_checked
 has_research: true
 evidence:
   tw.6409#e10:
-    locator: 產品特色
+    locator: 記者莊蕙如報導，客戶供貨段落
+    published_date: '2026-10-24'
+    publisher: FTNN新聞網
+    quote_check: found
+    title: 輝達800V電源大商機！旭隼新產品明年出貨 外資喊2027年獲利反彈28％
+    url: https://www.ftnn.com.tw/news/589855
+  tw.6409#e11:
+    locator: 財經中心王駿凱報導，HVDC產品開發段落
+    published_date: '2026-06-10'
+    publisher: 民視財經網
+    quote_check: found
+    title: 旭隼卡位AI電力革命 最快2027年開花結果
+    url: https://finance.ftvnews.com.tw/news/detail/2026610W0145
+  tw.6409#e12:
+    locator: 附註十一，列入合併財務報告之子公司表
+    published_date: '2026-03-11'
+    publisher: 旭隼科技股份有限公司；FinancialFilings文件鏡像
+    quote_check: unreachable
+    title: 旭隼科技股份有限公司及子公司114及113年度合併財務報告
+    url: https://financialfilings.com/filings/voltronic-6409/annual-report/2026/34370857/
+  tw.6409#e13:
+    locator: 附註十一，本公司直接投資子公司表，越南公司列
+    published_date: '2026-03-11'
+    publisher: 旭隼科技股份有限公司；FinancialFilings文件鏡像
+    quote_check: unreachable
+    title: 旭隼科技股份有限公司及子公司114及113年度合併財務報告
+    url: https://financialfilings.com/filings/voltronic-6409/annual-report/2026/34370857/
+  tw.6409#e14:
+    locator: 附註十一，本公司直接投資子公司表，美國公司列
+    published_date: '2026-03-11'
+    publisher: 旭隼科技股份有限公司；FinancialFilings文件鏡像
+    quote_check: unreachable
+    title: 旭隼科技股份有限公司及子公司114及113年度合併財務報告
+    url: https://financialfilings.com/filings/voltronic-6409/annual-report/2026/34370857/
+  tw.6409#e15:
+    locator: 印頁18，附註10(e)，美國子公司投資說明
+    published_date: '2024-11-07'
+    publisher: 旭隼科技股份有限公司
+    quote_check: found
+    title: 2024年前三季英文合併財務報告
+    url: https://voltronicpower.com/content/download/investors/consolidated-financial-statement-2024q3-english.pdf
+  tw.6409#e16:
+    locator: 印頁18，附註10(e)，董事會決議日期
+    published_date: '2024-11-07'
+    publisher: 旭隼科技股份有限公司
+    quote_check: found
+    title: 2024年前三季英文合併財務報告
+    url: https://voltronicpower.com/content/download/investors/consolidated-financial-statement-2024q3-english.pdf
+  tw.6409#e17:
+    locator: 附註十一，九川源國際股份有限公司投資子公司列
+    published_date: '2026-03-11'
+    publisher: 旭隼科技股份有限公司；FinancialFilings文件鏡像
+    quote_check: unreachable
+    title: 旭隼科技股份有限公司及子公司114及113年度合併財務報告
+    url: https://financialfilings.com/filings/voltronic-6409/annual-report/2026/34370857/
+  tw.6409#e18:
+    locator: 印頁28，附註10(d)，Orchid Power對Zhongshan Voltronic增資
+    published_date: '2025-03-06'
+    publisher: 旭隼科技股份有限公司
+    quote_check: found
+    title: 2024年度英文合併財務報告
+    url: https://voltronicpower.com/content/download/investors/consolidated-financial-statement-2024q4-english.pdf
+  tw.6409#e19:
+    locator: 附註十一，子公司持股關係表
+    published_date: '2026-03-11'
+    publisher: 旭隼科技股份有限公司；FinancialFilings文件鏡像
+    quote_check: unreachable
+    title: 旭隼科技股份有限公司及子公司114及113年度合併財務報告
+    url: https://financialfilings.com/filings/voltronic-6409/annual-report/2026/34370857/
+  tw.6409#e2:
+    locator: 首頁ODM介紹
     published_date: null
     publisher: 旭隼科技股份有限公司
     quote_check: found
-    title: InfiniSolar V4 TWIN 6.2KW (Single-Phase)
-    url: https://voltronicpower.com/en-US/Product/Detail/InfiniSolar-V4-TWIN-6.2KW-(Single-Phase)
-  tw.6409#e11:
+    title: 旭隼科技官網：ODM
+    url: https://voltronicpower.com/zh-TW
+  tw.6409#e20:
+    locator: 公告主旨及第4項交易相對人
+    published_date: '2024-12-31'
+    publisher: 公開資訊觀測站公告；Win投資轉載
+    quote_check: found
+    title: 代子公司中山旭啟電子有限公司公告向關係人取得使用權資產
+    url: https://winvest.tw/News/Detail/49050
+  tw.6409#e21:
+    locator: 第3項交易金額
+    published_date: '2024-12-31'
+    publisher: 公開資訊觀測站公告；Win投資轉載
+    quote_check: found
+    title: 代子公司中山旭啟電子有限公司公告向關係人取得使用權資產
+    url: https://winvest.tw/News/Detail/49050
+  tw.6409#e3:
+    locator: 第111頁，肆、一、1(2)營業比重；114年度欄
+    published_date: '2026-05-06'
+    publisher: 旭隼科技股份有限公司；FinancialFilings文件鏡像
+    quote_check: unreachable
+    title: 旭隼科技股份有限公司114年度年報
+    url: https://financialfilings.com/filings/voltronic-6409/annual-report/2026/48075272/
+  tw.6409#e4:
+    locator: 第111頁，肆、一、1(2)營業比重；114年度欄
+    published_date: '2026-05-06'
+    publisher: 旭隼科技股份有限公司；FinancialFilings文件鏡像
+    quote_check: unreachable
+    title: 旭隼科技股份有限公司114年度年報
+    url: https://financialfilings.com/filings/voltronic-6409/annual-report/2026/48075272/
+  tw.6409#e5:
+    locator: 第111頁，肆、一、1(2)營業比重；114年度欄
+    published_date: '2026-05-06'
+    publisher: 旭隼科技股份有限公司；FinancialFilings文件鏡像
+    quote_check: unreachable
+    title: 旭隼科技股份有限公司114年度年報
+    url: https://financialfilings.com/filings/voltronic-6409/annual-report/2026/48075272/
+  tw.6409#e6:
+    locator: 第111頁，肆、一、1(2)營業比重；114年度欄
+    published_date: '2026-05-06'
+    publisher: 旭隼科技股份有限公司；FinancialFilings文件鏡像
+    quote_check: unreachable
+    title: 旭隼科技股份有限公司114年度年報
+    url: https://financialfilings.com/filings/voltronic-6409/annual-report/2026/48075272/
+  tw.6409#e7:
+    locator: 產品名稱下方產品介紹
+    published_date: null
+    publisher: 旭隼科技股份有限公司
+    quote_check: found
+    title: Compact 1U 1KVA–3KVA
+    url: https://voltronicpower.com/zh-TW/Product/Detail/Compact-1U-1KVA-3KVA
+  tw.6409#e8:
     locator: 產品介紹
     published_date: null
     publisher: 旭隼科技股份有限公司
     quote_check: found
     title: ESS810 Energy Storage System
-    url: https://voltronicpower.com/en-US/Product/Detail/ESS810-Energy-Storage-System
-  tw.6409#e12:
-    locator: VFD產品介紹
-    published_date: null
-    publisher: 旭隼科技股份有限公司
-    quote_check: found
-    title: iMaster
-    url: https://voltronicpower.com/en-US/Product/Detail/iMaster
-  tw.6409#e13:
-    locator: AC EV Charger產品介紹
-    published_date: null
-    publisher: 旭隼科技股份有限公司
-    quote_check: found
-    title: ATP III 6507W/6511W/6521W
-    url: https://voltronicpower.com/en-US/Product/Detail/ATP-III-6507W-6511W-6521W
-  tw.6409#e14:
-    locator: 第14頁，Products for Critical Applications，UPS應用欄
-    published_date: '2026-09-14'
-    publisher: 旭隼科技股份有限公司
-    quote_check: found
-    title: Investor Presentation 2026Q2-E_B1
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52555/2026/RNS/52555_rns_2026-09-14_1ca2248e-48d6-4d9e-a9f8-989566bcb447.pdf
-  tw.6409#e15:
-    locator: 印刷頁134，進貨或銷貨集中所面臨之風險，進貨風險
-    published_date: '2026-05-06'
-    publisher: 旭隼科技股份有限公司
-    quote_check: found
-    title: 民國114年度年報
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52555/2026/RNS/52555_rns_2026-06-15_8eb8d06e-2c4f-417e-bb96-fe5641f7c7e1.pdf
-  tw.6409#e16:
-    locator: 印刷頁28，附註10 SUBSIDIARIES，Investor與Investee欄
-    published_date: null
-    publisher: 旭隼科技股份有限公司
-    quote_check: found
-    title: 2024及2023年度英文合併財務報告
-    url: https://voltronicpower.com/content/download/investors/consolidated-financial-statement-2024q4-english.pdf
-  tw.6409#e17:
-    locator: 印刷頁134，進貨風險
-    published_date: '2026-05-06'
-    publisher: 旭隼科技股份有限公司
-    quote_check: found
-    title: 民國114年度年報
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52555/2026/RNS/52555_rns_2026-06-15_8eb8d06e-2c4f-417e-bb96-fe5641f7c7e1.pdf
-  tw.6409#e2:
-    locator: 印刷頁111，營業比重，114年度欄
-    published_date: '2026-05-06'
-    publisher: 旭隼科技股份有限公司
-    quote_check: found
-    title: 民國114年度年報
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52555/2026/RNS/52555_rns_2026-06-15_8eb8d06e-2c4f-417e-bb96-fe5641f7c7e1.pdf
-  tw.6409#e3:
-    locator: 印刷頁111，營業比重，114年度欄
-    published_date: '2026-05-06'
-    publisher: 旭隼科技股份有限公司
-    quote_check: found
-    title: 民國114年度年報
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52555/2026/RNS/52555_rns_2026-06-15_8eb8d06e-2c4f-417e-bb96-fe5641f7c7e1.pdf
-  tw.6409#e4:
-    locator: 印刷頁111，營業比重，114年度欄
-    published_date: '2026-05-06'
-    publisher: 旭隼科技股份有限公司
-    quote_check: found
-    title: 民國114年度年報
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52555/2026/RNS/52555_rns_2026-06-15_8eb8d06e-2c4f-417e-bb96-fe5641f7c7e1.pdf
-  tw.6409#e5:
-    locator: 印刷頁111，營業比重，114年度欄
-    published_date: '2026-05-06'
-    publisher: 旭隼科技股份有限公司
-    quote_check: found
-    title: 民國114年度年報
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52555/2026/RNS/52555_rns_2026-06-15_8eb8d06e-2c4f-417e-bb96-fe5641f7c7e1.pdf
-  tw.6409#e6:
-    locator: About ODM
-    published_date: null
-    publisher: 旭隼科技股份有限公司
-    quote_check: found
-    title: About ODM
-    url: https://voltronicpower.com/en-US/Company/AboutODM
-  tw.6409#e7:
-    locator: Mission and Vision
-    published_date: null
-    publisher: 旭隼科技股份有限公司
-    quote_check: found
-    title: About Voltronic Power
-    url: https://voltronicpower.com/en-us/Company
-  tw.6409#e8:
-    locator: 第6頁，Unique DMS Business Model
-    published_date: '2026-09-14'
-    publisher: 旭隼科技股份有限公司
-    quote_check: found
-    title: Investor Presentation 2026Q2-E_B1
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52555/2026/RNS/52555_rns_2026-09-14_1ca2248e-48d6-4d9e-a9f8-989566bcb447.pdf
+    url: https://voltronicpower.com/zh-TW/Product/Detail/ESS810-Energy-Storage-System
   tw.6409#e9:
     locator: 產品介紹
     published_date: null
     publisher: 旭隼科技股份有限公司
     quote_check: found
-    title: +Power Modular UPS
-    url: https://voltronicpower.com/en-US/Product/Detail/plus-Power-Modular-UPS
+    title: EVA系列直流電動車充電樁
+    url: https://voltronicpower.com/zh-TW/Product/Detail/EVA-5430G-EVA-5460G-EVA-54120G-EVA-54142G-EVA-54180G-EVA-54240G

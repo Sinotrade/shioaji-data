@@ -25,28 +25,37 @@ chain_stage:
   stage: components
   stage_name: 板卡、電源、散熱、機構件
   tier: midstream
-primary_chain_position: upstream
-summary_short: 主要銷售散熱風扇、鼓風扇與散熱模組，並提供液冷零件及CDU。
-summary_long: 建準以散熱風扇、鼓風扇及散熱模組為主要業務，產品涵蓋DC、AC與EC風扇，並提供熱管、均溫板及EC高效能馬達。2025年報揭露，DC散熱風扇、散熱模組與鼓風扇占業務比重77.22%，AC散熱風扇占2.36%，原物料及零組件占20.42%。液冷零件包括水冷板、水泵、水路分配器及水管快接頭；公司亦展示支援高密度AI機櫃散熱的液對液CDU，並提供晶片、伺服器至機櫃級液冷解決方案。
+primary_chain_position: midstream
+summary_short: 以散熱風扇與散熱模組為主要業務，並供應水冷板及CDU液冷產品。
+summary_long: 建準以散熱風扇、散熱模組與鼓風扇為主要業務，2025年度年報列示DC相關產品營業比重77.22%、AC散熱風扇2.36%，原物料及零組件20.42%。公司官網具名列出DELL、HPE、Google、AWS、Meta及Microsoft為散熱解決方案供應對象。產品涵蓋客製化水冷板與CDU，並提供AI伺服器散熱方案。近年事件包括菲律賓子公司委建廠房、與蘇州天脈合資布局微型風扇，以及合資公司後續增資公告；2026年另公開與3D Architech合作開發3D列印水冷板。
 segments:
 - evidence_ids:
-  - e1
-  id: seg_dc_thermal
+  - e01
+  id: dc_fans_modules
   name: DC散熱風扇、散熱模組、鼓風扇
-  period: '2025'
+  period: 2025年度年報業務營業比重；非合併應用別占比
   revenue_share_pct: 77.22
 - evidence_ids:
-  - e1
-  id: seg_ac_fan
+  - e01
+  id: ac_fans
   name: AC散熱風扇
-  period: '2025'
+  period: 2025年度年報業務營業比重；非合併應用別占比
   revenue_share_pct: 2.36
 - evidence_ids:
-  - e1
-  id: seg_material_components
+  - e01
+  id: materials_parts
   name: 原物料及零組件
-  period: '2025'
+  period: 2025年度年報業務營業比重；非合併應用別占比
   revenue_share_pct: 20.42
+- evidence_ids:
+  - e03
+  - e05
+  - e18
+  - e19
+  id: liquid_cooling
+  name: 液冷產品
+  period: null
+  revenue_share_pct: null
 main_theme: theme.ai_server
 themes:
 - also: []
@@ -59,14 +68,118 @@ themes:
   stage: parts
   theme: theme.liquid_cooling
   tier: upstream
+- also: []
+  stage: components
+  theme: theme.nvidia
+  tier: midstream
 relations:
+  customers:
+  - as_of: '2026-10-25'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 雲端設備散熱解決方案
+    details:
+    - 雲端設備散熱解決方案
+    edge: ed8a772d6b8ef
+    evidence_level: primary
+    id: org.amazon-web-services
+    name: Amazon Web Services
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-25'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 伺服器散熱解決方案
+    details:
+    - 伺服器散熱解決方案
+    edge: e21a37b8aa1c8
+    evidence_level: primary
+    id: us.DELL
+    name: Dell
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-25'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 雲端設備散熱解決方案
+    details:
+    - 雲端設備散熱解決方案
+    edge: e2b67eb85a12a
+    evidence_level: primary
+    id: us.GOOGL
+    name: Alphabet
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-25'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 伺服器散熱解決方案
+    details:
+    - 伺服器散熱解決方案
+    edge: e484cb095834c
+    evidence_level: primary
+    id: us.HPE
+    name: Hewlett Packard Enterprise
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-25'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 雲端設備散熱解決方案
+    details:
+    - 雲端設備散熱解決方案
+    edge: ee12bb251198f
+    evidence_level: primary
+    id: us.META
+    name: Meta
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-25'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 雲端設備散熱解決方案
+    details:
+    - 雲端設備散熱解決方案
+    edge: e940e80ed372c
+    evidence_level: primary
+    id: us.MSFT
+    name: Microsoft
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  partners:
+  - as_of: '2026-10-19'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 3D列印水冷板技術開發
+    details:
+    - 3D列印水冷板技術開發
+    edge: ec4afbb59c07f
+    evidence_level: primary
+    id: org.3d-architech
+    name: 3D Architech
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 重要間接子公司
+    detail: 重要子公司
     details:
-    - 重要間接子公司
+    - 重要子公司
     edge: ea12ef904723f
     evidence_level: primary
     id: org.beihai-sunon-electronics
@@ -78,9 +191,9 @@ relations:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 經昆山廣興持有的間接子公司
+    detail: 透過昆山廣興持有的液冷子公司
     details:
-    - 經昆山廣興持有的間接子公司
+    - 透過昆山廣興持有的液冷子公司
     edge: eab2590424511
     evidence_level: primary
     id: org.huizhou-sunon-thermal-technology
@@ -92,9 +205,9 @@ relations:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 重要間接子公司
+    detail: 重要子公司
     details:
-    - 重要間接子公司
+    - 重要子公司
     edge: edf22eb9f1700
     evidence_level: primary
     id: org.kunshan-guangxing-electronics
@@ -106,9 +219,9 @@ relations:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 重要直接子公司
+    detail: 重要子公司
     details:
-    - 重要直接子公司
+    - 重要子公司
     edge: ed4d7920d045b
     evidence_level: primary
     id: org.successful-century
@@ -120,9 +233,9 @@ relations:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 泰國直接子公司
+    detail: 2025年新增泰國子公司
     details:
-    - 泰國直接子公司
+    - 2025年新增泰國子公司
     edge: e44e8bc1d8290
     evidence_level: primary
     id: org.sunon-cooling-technology-thailand
@@ -134,9 +247,23 @@ relations:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 重要直接子公司
+    detail: 菲律賓風扇製造與銷售子公司
     details:
-    - 重要直接子公司
+    - 菲律賓風扇製造與銷售子公司
+    edge: ec81e8ed41cab
+    evidence_level: primary
+    id: org.sunon-electronics-philippines
+    name: SUNON ELECTRONICS PHILIPPINES CORP.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 重要子公司
+    details:
+    - 重要子公司
     edge: ec73bd638228c
     evidence_level: primary
     id: org.sunon-international
@@ -145,81 +272,248 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: '2025-07-16'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 菲律賓建廠子公司
+    details:
+    - 菲律賓建廠子公司
+    edge: ef69b2a47023c
+    evidence_level: primary
+    id: org.sunon-properties-philippines
+    name: Sunon Properties Philippines Corp.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: '2025-12-03'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 散熱模組零件；安力集團層級
+    details:
+    - 散熱模組零件；安力集團層級
+    edge: ec9794fa625b1
+    evidence_level: primary
+    id: tw.5223
+    name: 安力-KY
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 人民幣700萬元（建準初始認繳出資）
+    as_of: 2025-11
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 合資成立天脈建準，布局微型風扇
+    details:
+    - 合資成立天脈建準，布局微型風扇
+    edge: e1c3648f1383e
+    event_date: null
+    events:
+    - amount: 人民幣700萬元（建準初始認繳出資）
+      detail: 合資成立天脈建準，布局微型風扇
+      event_date: null
+    evidence_level: primary
+    id: cn.301626
+    name: 蘇州天脈導熱科技股份有限公司
+    ranking_basis: unranked
+    role: party
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: PHP2,230,000,000（折合新台幣1,151,572,000元）
+    as_of: '2025-07-16'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 菲律賓子公司自地委建廠房工程
+    details:
+    - 菲律賓子公司自地委建廠房工程
+    edge: e0271a033ca74
+    event_date: '2025-07-16'
+    events:
+    - amount: PHP2,230,000,000（折合新台幣1,151,572,000元）
+      detail: 菲律賓子公司自地委建廠房工程
+      event_date: '2025-07-16'
+    evidence_level: primary
+    id: org.21th-construction-development
+    name: 21TH Construction Development Corporation
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 人民幣2,100萬元
+    as_of: '2026-04-27'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 合資公司增資公告
+    details:
+    - 合資公司增資公告
+    edge: ede34b916929a
+    event_date: '2026-04-27'
+    events:
+    - amount: 人民幣2,100萬元
+      detail: 合資公司增資公告
+      event_date: '2026-04-27'
+    evidence_level: primary
+    id: org.tianmai-sunon-thermal-technology-suzhou
+    name: 天脈建准散熱科技（蘇州）有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 採用VG系列AI風扇的美系知名大廠，來源未具名。
+- 採用高階GPU散熱風扇的台灣伺服器品牌商，來源未具名。
+- 採用XG系列Fan tray的CSP客戶，來源未具名。
 website: www.sunon.com
 tax_id: '81448796'
 incorporated: '1980-10-25'
 listed: '2000-09-11'
-as_of: '2026-10-15'
+as_of: '2026-10-25'
 confidence: ai_cross_checked
 has_research: true
 evidence:
-  tw.2421#e1:
-    locator: 印刷頁79，肆、營運概況／業務主要內容營業比重
+  tw.2421#e01:
+    locator: 印刷第79頁，業務主要內容營業比重
     published_date: null
     publisher: 建準電機工業股份有限公司
     quote_check: found
-    title: 建準電機114年度公司年報
+    title: 建準電機114年度年報
     url: https://www.sunon.com/MANAGE/Docs/WEBCONT/Files/3191/%E5%BB%BA%E6%BA%96%E9%9B%BB%E6%A9%9F%E5%B9%B4%E5%A0%B1(%E4%B8%8A%E5%82%B3).pdf
+  tw.2421#e02:
+    locator: Industrial Strength，具名伺服器及雲端供應對象段落
+    published_date: null
+    publisher: SUNON
+    quote_check: found
+    title: About SUNON
+    url: https://www.sunon.com/en/about.aspx/1000
+  tw.2421#e03:
+    locator: Cooling Module／Cold Plate，產品介紹首段
+    published_date: null
+    publisher: SUNON
+    quote_check: found
+    title: Cold Plate
+    url: https://www.sunon.com/en/Product.aspx?cid=83DF3825E839CE33&oid=8EA6113F2B66D906&pid=D688F0ED6717696D&view=view2
+  tw.2421#e04:
+    locator: 進階A2L散熱設計段落
+    published_date: '2024-12-27'
+    publisher: 建準電機工業股份有限公司
+    quote_check: found
+    title: 建準全方位散熱解決方案for AI伺服器/資料中心 氣液整合X渾然一體
+    url: https://www.sunon.com/News.aspx?id=6AD946932389BC87
+  tw.2421#e05:
+    locator: Advanced AI Data Center Liquid Cooling，CDU產品條列
+    published_date: '2026-04-01'
+    publisher: SUNON
+    quote_check: found
+    title: SUNON Highlights AI Server Liquid Cooling and ErP 2026 Compliant EC Fans at MCE 2026
+    url: https://vent.sunon.com/en/sunon-highlights-ai-server-liquid-cooling-and-erp-2026-compliant-ec-fans-at-mce-2026/
+  tw.2421#e06:
+    locator: 企業沿革，2025年
+    published_date: null
+    publisher: 建準電機工業股份有限公司
+    quote_check: found
+    title: 關於建準
+    url: https://www.sunon.com/about.aspx
+  tw.2421#e07:
+    locator: 印刷第12頁，附註四（三），重要子公司核閱說明
+    published_date: '2026-08-07'
+    publisher: 建準電機工業股份有限公司
+    quote_check: found
+    title: 建準電機115年第二季合併財務報告
+    url: https://www.sunon.com/MANAGE/Docs/WEBCONT/Files/3209/115%20Q2%20%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-%E4%B8%8A%E5%82%B3%E6%AA%94.pdf
+  tw.2421#e08:
+    locator: 印刷第12頁，合併子公司增減情形A、B
+    published_date: '2026-08-07'
+    publisher: 建準電機工業股份有限公司
+    quote_check: found
+    title: 建準電機115年第二季合併財務報告
+    url: https://www.sunon.com/MANAGE/Docs/WEBCONT/Files/3209/115%20Q2%20%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-%E4%B8%8A%E5%82%B3%E6%AA%94.pdf
+  tw.2421#e09:
+    locator: 重大訊息第5項，契約相對人
+    published_date: '2025-07-16'
+    publisher: 公開資訊觀測站；MoneyDJ刊載
+    quote_check: found
+    title: 建準代子公司Sunon Properties Philippines Corp.公告以自地委建廠房
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=0696778f-3811-4904-b783-14d5bc69f97f
   tw.2421#e10:
-    locator: 印刷頁12，合併子公司增減情形B
+    locator: 重大訊息第6項，工程造價
+    published_date: '2025-07-16'
+    publisher: 公開資訊觀測站；MoneyDJ刊載
+    quote_check: found
+    title: 建準代子公司Sunon Properties Philippines Corp.公告以自地委建廠房
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=0696778f-3811-4904-b783-14d5bc69f97f
+  tw.2421#e11:
+    locator: 公告主旨；第2項事實發生日及第21項補充公告說明
+    published_date: '2025-07-16'
+    publisher: 公開資訊觀測站；MoneyDJ刊載
+    quote_check: found
+    title: 建準代子公司Sunon Properties Philippines Corp.公告以自地委建廠房
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=0696778f-3811-4904-b783-14d5bc69f97f
+  tw.2421#e12:
+    locator: 第12頁，第三節管理層討論與分析，主要業務
+    published_date: '2026-04-28'
+    publisher: 蘇州天脈導熱科技股份有限公司
+    quote_check: found
+    title: 蘇州天脈導熱科技股份有限公司2025年年度報告
+    url: https://static.cninfo.com.cn/finalpage/2026-04-28/1225211173.PDF
+  tw.2421#e13:
+    locator: 第3頁公司資訊；第9頁另有直接客戶圖示
+    published_date: '2025-12-03'
+    publisher: 安力國際股份有限公司
+    quote_check: found
+    title: 安力-KY 2025年12月3日法說會簡報
+    url: https://www.anli-group.com/sites/default/files/attachments/%E5%AE%89%E5%8A%9B-KY%20%E6%B3%95%E8%AA%AA%E6%9C%83%E7%B0%A1%E5%A0%B1-%E4%B8%AD%E6%96%87%E7%89%88v2_1.pdf
+  tw.2421#e14:
+    locator: 印刷第54頁，附表七，建準直接轉投資事業
     published_date: '2026-08-07'
     publisher: 建準電機工業股份有限公司
     quote_check: found
-    title: 建準電機工業股份有限公司及其子公司115年第2季合併財務報告
+    title: 建準電機115年第二季合併財務報告
     url: https://www.sunon.com/MANAGE/Docs/WEBCONT/Files/3209/115%20Q2%20%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-%E4%B8%8A%E5%82%B3%E6%AA%94.pdf
-  tw.2421#e2:
-    locator: 印刷頁79，公司目前產品項目／風扇
-    published_date: null
-    publisher: 建準電機工業股份有限公司
-    quote_check: found
-    title: 建準電機114年度公司年報
-    url: https://www.sunon.com/MANAGE/Docs/WEBCONT/Files/3191/%E5%BB%BA%E6%BA%96%E9%9B%BB%E6%A9%9F%E5%B9%B4%E5%A0%B1(%E4%B8%8A%E5%82%B3).pdf
-  tw.2421#e3:
-    locator: 印刷頁79，公司目前產品項目／散熱模組
-    published_date: null
-    publisher: 建準電機工業股份有限公司
-    quote_check: not_found
-    title: 建準電機114年度公司年報
-    url: https://www.sunon.com/MANAGE/Docs/WEBCONT/Files/3191/%E5%BB%BA%E6%BA%96%E9%9B%BB%E6%A9%9F%E5%B9%B4%E5%A0%B1(%E4%B8%8A%E5%82%B3).pdf
-  tw.2421#e4:
-    locator: 印刷頁79，公司目前產品項目／液冷模組
-    published_date: null
-    publisher: 建準電機工業股份有限公司
-    quote_check: found
-    title: 建準電機114年度公司年報
-    url: https://www.sunon.com/MANAGE/Docs/WEBCONT/Files/3191/%E5%BB%BA%E6%BA%96%E9%9B%BB%E6%A9%9F%E5%B9%B4%E5%A0%B1(%E4%B8%8A%E5%82%B3).pdf
-  tw.2421#e5:
-    locator: 從測試驗證到高密度運算的 CDU 方案
-    published_date: '2026-10-14'
-    publisher: 建準電機工業股份有限公司
-    quote_check: found
-    title: SUNON 建準亮相 OCP Global Summit 2026 技術布局助攻 AI 高效能運算
-    url: https://www.sunon.com/News.aspx?id=29A637092452027D
-  tw.2421#e6:
-    locator: 印刷頁79，公司目前產品項目／馬達
-    published_date: null
-    publisher: 建準電機工業股份有限公司
-    quote_check: found
-    title: 建準電機114年度公司年報
-    url: https://www.sunon.com/MANAGE/Docs/WEBCONT/Files/3191/%E5%BB%BA%E6%BA%96%E9%9B%BB%E6%A9%9F%E5%B9%B4%E5%A0%B1(%E4%B8%8A%E5%82%B3).pdf
-  tw.2421#e7:
-    locator: 從晶片到機櫃，探索 AI 時代的全方位液冷技術
-    published_date: '2026-09-29'
-    publisher: 建準電機工業股份有限公司
-    quote_check: found
-    title: SUNON 建準聚焦 AI 高效能運算，打造新世代液冷散熱方案
-    url: https://www.sunon.com/News.aspx?id=89465FADEF74686E
-  tw.2421#e8:
-    locator: 印刷頁11–12，附註四（三）合併基礎／子公司表及重要子公司說明
+  tw.2421#e15:
+    locator: 印刷第12頁，昆山廣興所持子公司及合併子公司增減情形B
     published_date: '2026-08-07'
     publisher: 建準電機工業股份有限公司
     quote_check: found
-    title: 建準電機工業股份有限公司及其子公司115年第2季合併財務報告
+    title: 建準電機115年第二季合併財務報告
     url: https://www.sunon.com/MANAGE/Docs/WEBCONT/Files/3209/115%20Q2%20%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-%E4%B8%8A%E5%82%B3%E6%AA%94.pdf
-  tw.2421#e9:
-    locator: 印刷頁12，合併子公司增減情形A
-    published_date: '2026-08-07'
-    publisher: 建準電機工業股份有限公司
+  tw.2421#e16:
+    locator: 第1頁，一、本次增資事項概述
+    published_date: '2026-04-27'
+    publisher: 蘇州天脈導熱科技股份有限公司
     quote_check: found
-    title: 建準電機工業股份有限公司及其子公司115年第2季合併財務報告
-    url: https://www.sunon.com/MANAGE/Docs/WEBCONT/Files/3209/115%20Q2%20%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-%E4%B8%8A%E5%82%B3%E6%AA%94.pdf
+    title: 蘇州天脈關于對控股子公司增資的公告
+    url: https://pdf.dfcfw.com/pdf/H2_AN202604271821625364_1.pdf
+  tw.2421#e17:
+    locator: 第2頁，本次增資前後股權結構；認繳出資額單位為萬元
+    published_date: '2026-04-27'
+    publisher: 蘇州天脈導熱科技股份有限公司
+    quote_check: found
+    title: 蘇州天脈關于對控股子公司增資的公告
+    url: https://pdf.dfcfw.com/pdf/H2_AN202604271821625364_1.pdf
+  tw.2421#e18:
+    locator: 五大液冷技術，第4項
+    published_date: '2026-10-19'
+    publisher: SUNON
+    quote_check: found
+    title: SUNON Unveils Five Core Liquid Cooling Technologies at OCP 2026
+    url: https://www.sunon.com/en/News.aspx?id=6559853D36A50BDE
+  tw.2421#e19:
+    locator: 五大液冷技術，第5項
+    published_date: '2026-10-19'
+    publisher: SUNON
+    quote_check: found
+    title: SUNON Unveils Five Core Liquid Cooling Technologies at OCP 2026
+    url: https://www.sunon.com/en/News.aspx?id=6559853D36A50BDE
+  tw.2421#e20:
+    locator: 五大液冷技術，第3項3D列印水冷板
+    published_date: '2026-10-19'
+    publisher: SUNON
+    quote_check: found
+    title: SUNON Unveils Five Core Liquid Cooling Technologies at OCP 2026
+    url: https://www.sunon.com/en/News.aspx?id=6559853D36A50BDE

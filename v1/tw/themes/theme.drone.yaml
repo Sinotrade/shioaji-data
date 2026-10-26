@@ -57,10 +57,10 @@ members:
 - id: tw.1609
   stage: components
   tier: upstream
-  detail: 無人機高轉速馬達用漆包線
-  as_of: '2026-10-15'
+  detail: 無人機馬達線圈用漆包線
+  as_of: '2026-10-26'
   evidence:
-  - tw.1609#e6
+  - tw.1609#e05
   confidence: ai_cross_checked
 - id: tw.1616
   stage: components
@@ -95,6 +95,14 @@ members:
   evidence:
   - tw.2231#e11
   - tw.2231#e12
+  confidence: ai_cross_checked
+- id: tw.2352
+  stage: modules
+  tier: midstream
+  detail: 無人機雲台視覺模組與控制器
+  as_of: 2026-08
+  evidence:
+  - tw.2352#e24
   confidence: ai_cross_checked
 - id: tw.2374
   stage: components
@@ -168,10 +176,11 @@ members:
 - id: tw.2458
   stage: modules
   tier: midstream
-  detail: 無人機AI影像辨識與控制方案
-  as_of: 2026-10
+  detail: 無人機AI影像辨識、目標追蹤與避障方案
+  as_of: '2026-10-25'
   evidence:
-  - tw.2458#e10
+  - tw.2458#e15
+  - tw.2458#e01
   confidence: ai_cross_checked
 - id: tw.2497
   stage: components
@@ -192,43 +201,19 @@ members:
 - id: tw.2634
   stage: system
   tier: downstream
-  detail: 無人機整機研發與系統整合
-  as_of: '2026-10-06'
-  evidence:
-  - tw.2634#e6
-  confidence: ai_cross_checked
-- id: tw.2634
-  stage: modules
-  tier: midstream
-  detail: AIxVNAV無人機視覺導航定位系統
+  detail: 無人機整機合作及反制系統
   as_of: '2026-08-20'
   evidence:
-  - tw.2634#e7
+  - tw.2634#e17
+  - tw.2634#e17b
   confidence: ai_cross_checked
 - id: tw.2645
   stage: system
   tier: downstream
-  detail: 商用無人機產品開發
-  as_of: '2026-05-20'
+  detail: 艦載監偵無人機整機量產
+  as_of: '2025-05-19'
   evidence:
-  - tw.2645#e6
-  confidence: ai_cross_checked
-- id: tw.3005
-  stage: system
-  tier: downstream
-  detail: 子公司神基科技CommandCore無人機地面控制方案
-  as_of: '2026-03-25'
-  evidence:
-  - tw.3005#e6
-  - tw.3005#e14
-  confidence: ai_cross_checked
-- id: tw.3019
-  stage: components
-  tier: upstream
-  detail: 無人機用光達感測
-  as_of: 2026-10
-  evidence:
-  - tw.3019#e6
+  - tw.2645#e13
   confidence: ai_cross_checked
 - id: tw.3023
   stage: components
@@ -299,9 +284,9 @@ members:
   stage: components
   tier: upstream
   detail: 無人機影像感測晶片
-  as_of: 2025-12
+  as_of: '2025-12-31'
   evidence:
-  - tw.3227#e10
+  - tw.3227#e18
   confidence: ai_cross_checked
 - id: tw.3230
   stage: system
@@ -353,14 +338,6 @@ members:
   evidence:
   - tw.3323#e9
   - tw.3323#e10
-  confidence: ai_cross_checked
-- id: tw.3362
-  stage: components
-  tier: upstream
-  detail: 無人空拍機鏡頭應用布局
-  as_of: '2025-04-30'
-  evidence:
-  - tw.3362#e13
   confidence: ai_cross_checked
 - id: tw.3372
   stage: components
@@ -464,12 +441,11 @@ members:
 - id: tw.3718
   stage: system
   tier: downstream
-  detail: 透過旗下中光電智能機器人從事無人機整機與系統整合
-  as_of: '2026-10-01'
+  detail: 透過中光電智能機器人經營無人機整機與服務
+  as_of: 2026-10
   evidence:
-  - tw.3718#e_circ_group
-  - tw.3718#e_circ_product
-  - tw.3718#e_circ_technology
+  - tw.3718#e7
+  - tw.3718#e9
   confidence: ai_cross_checked
 - id: tw.4564
   stage: system
@@ -487,14 +463,6 @@ members:
   evidence:
   - tw.4590#e5
   - tw.4590#e6
-  confidence: ai_cross_checked
-- id: tw.4766
-  stage: components
-  tier: upstream
-  detail: 無人機機體與零組件用碳纖維複合材料
-  as_of: '2026-10-15'
-  evidence:
-  - tw.4766#e9
   confidence: ai_cross_checked
 - id: tw.4906
   stage: components
@@ -591,9 +559,9 @@ members:
   stage: system
   tier: downstream
   detail: 無人機整機開發製造
-  as_of: '2026-04-15'
+  as_of: '2025-01-11'
   evidence:
-  - tw.5314#e12
+  - tw.5314#e03
   confidence: ai_cross_checked
 - id: tw.5438
   stage: system
@@ -614,10 +582,10 @@ members:
 - id: tw.6121
   stage: components
   tier: upstream
-  detail: 無人機相關電池模組
+  detail: 無人機電池模組
   as_of: '2025-12-31'
   evidence:
-  - tw.6121#e8
+  - tw.6121#e04
   confidence: ai_cross_checked
 - id: tw.6123
   stage: components
@@ -843,10 +811,10 @@ members:
 - id: tw.8033
   stage: system
   tier: downstream
-  detail: 無人直升機整機
-  as_of: '2026-10-15'
+  detail: 無人機整機研發與系統整合
+  as_of: '2025-06-25'
   evidence:
-  - tw.8033#e4
+  - tw.8033#e04
   confidence: ai_cross_checked
 - id: tw.8045
   stage: components
@@ -860,10 +828,18 @@ members:
 - id: tw.8081
   stage: components
   tier: upstream
-  detail: 無人機電源管理IC研發
-  as_of: '2026-10-15'
+  detail: 無人機電源管理 IC 研發
+  as_of: '2026-03-30'
   evidence:
-  - tw.8081#e3
+  - tw.8081#e14
+  confidence: ai_cross_checked
+- id: tw.8086
+  stage: components
+  tier: upstream
+  detail: 無人機Wi-Fi功率放大器
+  as_of: '2026-04-07'
+  evidence:
+  - tw.8086#e18
   confidence: ai_cross_checked
 - id: tw.8101
   stage: system
@@ -924,10 +900,9 @@ members:
 - id: tw.9917
   stage: system
   tier: downstream
-  detail: 無人機巡檢平台與服務
-  as_of: '2026-04-16'
+  detail: 中保無限飛智慧無人機巡檢服務
+  as_of: '2026-10-25'
   evidence:
-  - tw.9917#e11
-  - tw.9917#e12
+  - tw.9917#e15
   confidence: ai_cross_checked
-as_of: '2026-10-25'
+as_of: '2026-10-26'

@@ -38,11 +38,11 @@ members:
   tier: null
 - id: tw.2352
   detail: 最大營收部門為設計製造服務，主要產品為顯示器與投影機，屬終端產品。
-  as_of: '2026-10-15'
+  as_of: '2026-10-25'
   evidence:
-  - tw.2352#e2
-  - tw.2352#e4
-  - tw.2352#e5
+  - tw.2352#e01
+  - tw.2352#e02
+  - tw.2352#e03
   confidence: ai_cross_checked
   source: classification
   stage: device
@@ -120,12 +120,22 @@ members:
   stage_role: also
 - id: tw.2489
   detail: 顯示器占營收52.30%為最大來源，另製造電視與觸控視訊會議裝置，屬終端產品。
-  as_of: '2026-10-15'
+  as_of: '2026-10-26'
   evidence:
+  - tw.2489#e01
   - tw.2489#e02
   - tw.2489#e03
-  - tw.2489#e06
-  - tw.2489#e07
+  confidence: ai_cross_checked
+  source: classification
+  stage: device
+  tier: downstream
+  stage_role: primary
+- id: tw.2498
+  detail: 主要營收來自VIVE虛擬實境裝置，整合顯示與運算，屬顯示器產業鏈終端產品。
+  as_of: '2026-10-26'
+  evidence:
+  - tw.2498#e01
+  - tw.2498#e02
   confidence: ai_cross_checked
   source: classification
   stage: device
@@ -356,10 +366,10 @@ members:
   stage_role: primary
 - id: tw.3673
   detail: 觸控模組占營收85.38%，屬面板與模組；另提供上游保護外蓋。
-  as_of: '2026-10-15'
+  as_of: '2026-10-26'
   evidence:
-  - tw.3673#e1
   - tw.3673#e2
+  - tw.3673#e3
   confidence: ai_cross_checked
   source: classification
   stage: panel
@@ -367,10 +377,10 @@ members:
   stage_role: primary
 - id: tw.3673
   detail: 觸控模組占營收85.38%，屬面板與模組；另提供上游保護外蓋。
-  as_of: '2026-10-15'
+  as_of: '2026-10-26'
   evidence:
-  - tw.3673#e1
   - tw.3673#e2
+  - tw.3673#e3
   confidence: ai_cross_checked
   source: classification
   stage: materials
@@ -406,12 +416,11 @@ members:
   stage_role: also
 - id: tw.3718
   detail: 節能產品營收17.32億元，高於影像產品，涵蓋液晶顯示模組，屬面板與模組。
-  as_of: '2026-10-15'
+  as_of: '2026-10-26'
   evidence:
-  - tw.3718#e_energy
-  - tw.3718#e_image
-  - tw.3718#e_applications
-  - tw.3718#e_lcm
+  - tw.3718#e4
+  - tw.3718#e5
+  - tw.3718#e6
   confidence: ai_cross_checked
   source: classification
   stage: panel
@@ -575,7 +584,7 @@ members:
   stage_role: primary
 - id: tw.6116
   detail: TFT-LCD占營收99%，主要製造液晶面板、觸控面板及顯示模組。
-  as_of: '2026-10-15'
+  as_of: '2026-10-25'
   evidence:
   - tw.6116#e1
   - tw.6116#e2
@@ -645,10 +654,11 @@ members:
   stage_role: primary
 - id: tw.6176
   detail: 背光模組為營收大宗，另透過子公司提供顯示器用高階光學鍍膜。
-  as_of: '2026-10-15'
+  as_of: '2026-10-26'
   evidence:
   - tw.6176#e1
   - tw.6176#e2
+  - tw.6176#e3
   confidence: ai_cross_checked
   source: classification
   stage: panel
@@ -656,10 +666,11 @@ members:
   stage_role: primary
 - id: tw.6176
   detail: 背光模組為營收大宗，另透過子公司提供顯示器用高階光學鍍膜。
-  as_of: '2026-10-15'
+  as_of: '2026-10-26'
   evidence:
   - tw.6176#e1
   - tw.6176#e2
+  - tw.6176#e3
   confidence: ai_cross_checked
   source: classification
   stage: materials
@@ -714,9 +725,9 @@ members:
   stage_role: primary
 - id: tw.6456
   detail: 平板與筆電觸控顯示模組合計占營收80%，以顯示模組製造為主。
-  as_of: '2026-10-15'
+  as_of: '2026-10-26'
   evidence:
-  - tw.6456#e2
+  - tw.6456#e1
   confidence: ai_cross_checked
   source: classification
   stage: panel
@@ -913,4 +924,4 @@ members:
   stage: device
   tier: downstream
   stage_role: primary
-as_of: '2026-10-25'
+as_of: '2026-10-26'

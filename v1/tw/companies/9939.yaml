@@ -26,35 +26,190 @@ chain_stage:
   stage_name: 塑膠、纖維與加工
   tier: downstream
 primary_chain_position: downstream
-summary_short: 製造飲料包材，提供PET瓶、瓶蓋、標籤及飲料充填代工。
-summary_long: 宏全以飲料與食品包裝材料及飲料代工服務為主要業務，產品包括PET寶特瓶與瓶胚、塑蓋、鋁蓋、爪蓋、標籤及熱收縮膜。2025年合併營收組成為包材67.16%、飲料含充填代工28.67%、其他4.17%，以包材為最大來源。飲料服務涵蓋OEM／ODM與貼標商品，另提供HPP冷高壓加工，可生產果汁、思慕昔及茶飲。宏全控股與馬來西亞宏全為直接子公司，泰國宏全及印尼宏全則透過宏全亞洲控股持有。
+summary_short: 製造PET瓶、瓶蓋等飲料包材，並提供飲料充填代工。
+summary_long: 宏全經營飲料食品包材製造及飲料充填代工，產品包括PET瓶、瓶胚、塑蓋、鋁蓋、爪蓋與標籤，並提供OEM及ODM服務。2025年PET瓶、飲料充填與塑蓋分別占合併營收38.29%、28.67%及22.82%。公司取得台灣菸酒公司十年米酒PET瓶整組供應案，公告自2026年起供應瓶身、瓶標及瓶蓋。海外投資方面，2024年透過宏全亞洲控股收購緬甸包裝公司股權；2025年子公司宏全控股決議買回中國控股剩餘3.61%股權，另決議新設全資宏正莫三比克有限公司投資包材生產線。
 segments:
 - evidence_ids:
-  - e2
-  id: seg.packaging
-  name: 包材
+  - e02
+  id: seg_pet
+  name: PET瓶
   period: '2025'
-  revenue_share_pct: 67.16
+  revenue_share_pct: 38.29
 - evidence_ids:
-  - e2
-  id: seg.beverage
-  name: 飲料（含充填代工）
+  - e03
+  id: seg_filling
+  name: 飲料充填
   period: '2025'
   revenue_share_pct: 28.67
 - evidence_ids:
-  - e2
-  id: seg.other
-  name: 其他
+  - e04
+  id: seg_caps
+  name: 塑蓋
   period: '2025'
-  revenue_share_pct: 4.17
+  revenue_share_pct: 22.82
 relations:
+  customers:
+  - as_of: '2017-10-03'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 飲料代工
+    details:
+    - 飲料代工
+    edge: e59edbf4aa4c1
+    evidence_level: media
+    id: org.可口可樂
+    name: 可口可樂
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-06-19'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 十年米酒PET瓶身、瓶標及瓶蓋整組供應案
+    details:
+    - 十年米酒PET瓶身、瓶標及瓶蓋整組供應案
+    edge: eee42b3c22539
+    evidence_level: primary
+    id: org.台灣菸酒公司
+    name: 台灣菸酒公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2018-01-12'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 中國大陸飲料包材業務
+    details:
+    - 中國大陸飲料包材業務
+    edge: e2045b8004f6b
+    evidence_level: media
+    id: org.康師傅
+    name: 康師傅
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2018-01-12'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 中國大陸飲料包材業務
+    details:
+    - 中國大陸飲料包材業務
+    edge: e90ce9c5560ea
+    evidence_level: media
+    id: org.東鵬
+    name: 東鵬
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2018-01-12'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 中國大陸飲料包材業務
+    details:
+    - 中國大陸飲料包材業務
+    edge: e6a158ba13b10
+    evidence_level: media
+    id: org.王老吉
+    name: 王老吉
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2017-10-03'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 飲料包材供應
+    details:
+    - 飲料包材供應
+    edge: eac760363f5f7
+    evidence_level: media
+    id: org.百事可樂
+    name: 百事可樂
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2018-01-12'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 中國大陸飲料包材業務
+    details:
+    - 中國大陸飲料包材業務
+    edge: ea65535c9b79f
+    evidence_level: media
+    id: org.華潤怡寶
+    name: 華潤怡寶
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2017-10-03'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 飲料代工
+    details:
+    - 飲料代工
+    edge: e497331214d1f
+    evidence_level: media
+    id: tw.1218
+    name: 泰山
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接子公司
+    detail: 新設全資包材生產子公司
     details:
-    - 直接子公司
+    - 新設全資包材生產子公司
+    edge: e08b844f8f5b2
+    evidence_level: primary
+    id: org.hon-cheng-mozambique
+    name: 宏正莫三比克有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接全資子公司
+    details:
+    - 間接全資子公司
+    edge: e55204854fabf
+    evidence_level: primary
+    id: org.hon-chuan-asia-holding
+    name: 宏全亞洲控股(股)公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接全資子公司
+    details:
+    - 間接全資子公司
+    edge: e5965e68876e6
+    evidence_level: primary
+    id: org.hon-chuan-china-holding
+    name: 宏全中國控股(股)公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接全資子公司
+    details:
+    - 直接全資子公司
     edge: e5481e83d5693
     evidence_level: primary
     id: org.hon-chuan-holding
@@ -63,60 +218,221 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  transactions:
+  - amount: 美金3,790仟元
+    as_of: 2024-08
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過宏全亞洲控股收購緬甸公司股權
+    details:
+    - 透過宏全亞洲控股收購緬甸公司股權
+    edge: e7894fe253c82
+    event_date: '2024-08-09'
+    events:
+    - amount: 美金3,790仟元
+      detail: 透過宏全亞洲控股收購緬甸公司股權
+      event_date: '2024-08-09'
+    evidence_level: primary
+    id: org.hon-chia-myanmar
+    name: Oji Myanmar Packing Company Limited
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 約新台幣1,827,000,000元
+    as_of: '2024-03-08'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過泰國宏全新設孫公司並投資土地、廠房與生產線
+    details:
+    - 透過泰國宏全新設孫公司並投資土地、廠房與生產線
+    edge: ea7c48e0c9f7d
+    event_date: '2024-03-08'
+    events:
+    - amount: 約新台幣1,827,000,000元
+      detail: 透過泰國宏全新設孫公司並投資土地、廠房與生產線
+      event_date: '2024-03-08'
+    evidence_level: primary
+    id: org.hon-shin-thailand
+    name: 泰國宏信股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: USD 1,050萬元
+    as_of: '2025-08-08'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司買回宏全中國控股3.61%股權
+    details:
+    - 子公司買回宏全中國控股3.61%股權
+    edge: ec0c753eadd43
+    event_date: '2025-08-08'
+    events:
+    - amount: USD 1,050萬元
+      detail: 子公司買回宏全中國控股3.61%股權
+      event_date: '2025-08-08'
+    evidence_level: primary
+    id: org.全勝有限公司
+    name: 全勝有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 114年度年報匿名列示之主要供應商「乙公司」
+- 114年度年報匿名列示之主要客戶「丙公司」
+- 供應聚酯粒、PP及PE塑料的國內外廠商，未具名
+- 取得廣東廠長期駐廠合約的歐洲著名大廠
+- 針對日本及東南亞飲料包材市場合作的日本重要策略夥伴
 website: www.honchuan.com
 tax_id: '58176511'
 incorporated: '1969-07-15'
 listed: '2001-03-02'
-as_of: '2026-10-15'
+as_of: '2026-10-25'
 confidence: ai_cross_checked
 has_research: true
 evidence:
-  tw.9939#e2:
-    locator: 印刷頁88，市場分析：主要產品市場佔有率；PDF第92頁
+  tw.9939#e02:
+    locator: 印刷第78頁，所營業務之主要內容及營業比重
     published_date: '2026-04-28'
     publisher: 宏全國際股份有限公司
     quote_check: found
-    title: 宏全國際股份有限公司114年度年報
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52800/2026/RNS/52800_rns_2026-06-09_e47b6bb8-c973-4697-a372-c7ffe76eaaa3.pdf
-  tw.9939#e3:
+    title: 114年度年報
+    url: https://dlf9q0zq4dwf6.cloudfront.net/honchuan/annual-shareholders-meeting/uMK2blxfw4Dnoe3d1oxIX9mc4Fu5F3NgCV60KoJq.pdf
+  tw.9939#e03:
+    locator: 印刷第78頁，所營業務之主要內容及營業比重
+    published_date: '2026-04-28'
+    publisher: 宏全國際股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://dlf9q0zq4dwf6.cloudfront.net/honchuan/annual-shareholders-meeting/uMK2blxfw4Dnoe3d1oxIX9mc4Fu5F3NgCV60KoJq.pdf
+  tw.9939#e04:
+    locator: 印刷第78頁，所營業務之主要內容及營業比重
+    published_date: '2026-04-28'
+    publisher: 宏全國際股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://dlf9q0zq4dwf6.cloudfront.net/honchuan/annual-shareholders-meeting/uMK2blxfw4Dnoe3d1oxIX9mc4Fu5F3NgCV60KoJq.pdf
+  tw.9939#e05:
     locator: 主要產品
     published_date: null
-    publisher: 宏全國際集團
+    publisher: 宏全國際股份有限公司
     quote_check: found
     title: 包材產品
     url: https://www.honchuan.com/tw/products
-  tw.9939#e4:
-    locator: 集合式熱縮膜（多包裝）
-    published_date: null
-    publisher: 宏全國際集團
-    quote_check: found
-    title: 標籤
-    url: https://www.honchuan.com/tw/products/label
-  tw.9939#e5:
+  tw.9939#e06:
     locator: 四合一全方位服務
     published_date: null
-    publisher: 宏全國際集團
+    publisher: 宏全國際股份有限公司
     quote_check: found
     title: 飲料代工
     url: https://www.honchuan.com/tw/beverage-oem
-  tw.9939#e6:
-    locator: 相關認證
-    published_date: null
-    publisher: 宏全國際集團
+  tw.9939#e07:
+    locator: 中國大陸客戶段落
+    published_date: '2018-01-12'
+    publisher: 經濟日報（宏全官網轉載）
     quote_check: found
-    title: HPP冷高壓代工
-    url: https://www.honchuan.com/tw/beverage-oem/hpp
-  tw.9939#e7:
-    locator: 2025年8月8日董事會議案
+    title: 宏全今年營收看增10%
+    url: https://www.honchuan.com/tw/news/media-report/m-20180112
+  tw.9939#e08:
+    locator: 飲料界鴻海段落
+    published_date: '2017-10-03'
+    publisher: 鏡週刊（宏全官網轉載）
+    quote_check: found
+    title: 【頭家開講】專利蓋 鎖江山－宏全國際董事長戴宏全
+    url: https://www.honchuan.com/tw/news/media-report/m-20171003
+  tw.9939#e09:
+    locator: 飲料代工照片說明
+    published_date: '2017-10-03'
+    publisher: 鏡週刊（宏全官網轉載）
+    quote_check: found
+    title: 【頭家開講】專利蓋 鎖江山－宏全國際董事長戴宏全
+    url: https://www.honchuan.com/tw/news/media-report/m-20171003
+  tw.9939#e10:
+    locator: 接單資訊段落
+    published_date: '2025-06-19'
+    publisher: 宏全國際股份有限公司
+    quote_check: found
+    title: 宏全無菌飲料自貿廠上樑 打造全台最大飲料代工生產基地
+    url: https://www.honchuan.com/tw/news/media-report/mm-20250619
+  tw.9939#e11:
+    locator: 印刷第69頁，轉投資事業持股表
+    published_date: '2026-04-28'
+    publisher: 宏全國際股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://dlf9q0zq4dwf6.cloudfront.net/honchuan/annual-shareholders-meeting/uMK2blxfw4Dnoe3d1oxIX9mc4Fu5F3NgCV60KoJq.pdf
+  tw.9939#e12:
+    locator: 印刷第69頁，轉投資事業持股表
+    published_date: '2026-04-28'
+    publisher: 宏全國際股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://dlf9q0zq4dwf6.cloudfront.net/honchuan/annual-shareholders-meeting/uMK2blxfw4Dnoe3d1oxIX9mc4Fu5F3NgCV60KoJq.pdf
+  tw.9939#e13:
+    locator: 印刷第69頁，轉投資事業持股表
+    published_date: '2026-04-28'
+    publisher: 宏全國際股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://dlf9q0zq4dwf6.cloudfront.net/honchuan/annual-shareholders-meeting/uMK2blxfw4Dnoe3d1oxIX9mc4Fu5F3NgCV60KoJq.pdf
+  tw.9939#e14:
+    locator: 2025年3月7日審計委員會第5案
     published_date: null
-    publisher: 宏全國際集團
+    publisher: 宏全國際股份有限公司
+    quote_check: found
+    title: 委員會決議事項
+    url: https://www.honchuan.com/tw/investors/corporate-governance/committees
+  tw.9939#e15:
+    locator: 印刷第69頁，轉投資事業持股表
+    published_date: '2026-04-28'
+    publisher: 宏全國際股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://dlf9q0zq4dwf6.cloudfront.net/honchuan/annual-shareholders-meeting/uMK2blxfw4Dnoe3d1oxIX9mc4Fu5F3NgCV60KoJq.pdf
+  tw.9939#e16:
+    locator: 第39頁，子公司股權取得說明
+    published_date: null
+    publisher: 宏全國際股份有限公司
+    quote_check: found
+    title: 113年度合併財務報告
+    url: https://dlf9q0zq4dwf6.cloudfront.net/honchuan/financial-report/113Q4%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1-Final.pdf
+  tw.9939#e17:
+    locator: 2024年8月9日第四次董事會第8案
+    published_date: null
+    publisher: 宏全國際股份有限公司
     quote_check: found
     title: 董事會資訊
     url: https://www.honchuan.com/tw/investors/corporate-governance/board-of-directors
-  tw.9939#e8:
-    locator: 第34頁，附註十二：採用權益法之投資，2025及2024年底持股比例
+  tw.9939#e18:
+    locator: 2025年8月8日審計委員會第3案
     published_date: null
     publisher: 宏全國際股份有限公司
-    quote_check: unreachable
-    title: 宏全國際股份有限公司2025年度個體財務報告
-    url: https://dlf9q0zq4dwf6.cloudfront.net/honchuan/financial-report-download/114Q4%20%E5%AE%8F%E5%85%A8%E9%AB%94%E5%A0%B1%E5%91%8A(%E5%A5%97%E5%8D%B0%E7%89%88).pdf
+    quote_check: found
+    title: 委員會決議事項
+    url: https://www.honchuan.com/tw/investors/corporate-governance/committees
+  tw.9939#e19:
+    locator: 公告第5項交易金額；第2項持股比率
+    published_date: '2025-08-11'
+    publisher: 公開資訊觀測站（MoneyDJ轉載）
+    quote_check: found
+    title: 宏全董事會通過宏全控股買回宏全中國控股股權，持股比率增至100%
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=ea161e28-6154-460b-a9a8-15be62491344
+  tw.9939#e20:
+    locator: 公告主旨
+    published_date: '2024-03-08'
+    publisher: 公開資訊觀測站（MoneyDJ轉載）
+    quote_check: found
+    title: 宏全董事會通過間接新設立泰國宏信，設置生產線等計約18.3億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=7a5630c6-3984-46eb-994c-227b2cc60aa1
+  tw.9939#e21:
+    locator: 公告第3項交易金額
+    published_date: '2024-03-08'
+    publisher: 公開資訊觀測站（MoneyDJ轉載）
+    quote_check: found
+    title: 宏全董事會通過間接新設立泰國宏信，設置生產線等計約18.3億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=7a5630c6-3984-46eb-994c-227b2cc60aa1

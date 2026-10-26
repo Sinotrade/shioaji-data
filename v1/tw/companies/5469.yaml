@@ -29,30 +29,21 @@ chain_stage:
   stage_name: 電路板與載板製造
   tier: midstream
 primary_chain_position: midstream
-summary_short: 以多層及雙面印刷電路板製造銷售為主，合併業務另含電子組裝服務。
-summary_long: 瀚宇博德以印刷電路板製造與銷售為主要業務，產品包括多層板與雙面板，合併營運另涵蓋印刷電路板組裝銷售服務。公司年報揭露，AI 伺服器用板由觀音廠供應，並已量產 400G、800G 交換器相關電路板，可對應 AI 伺服器題材的板材與載板階段。主要子公司包括精成科技及間接持有的瀚宇博德科技（江陰）；Lincstech 則由精成科技直接持有，屬集團間接子公司。合併財報列示 PCB、EMS 與其他部門，其中 PCB 部門收入規模最大。
+summary_short: 以印刷電路板製造為主，並透過集團提供電子製造服務。
+summary_long: 瀚宇博德主要從事印刷電路板製造與電子製造服務，2024年營收比重約為PCB81%、EMS19%。電路板應用涵蓋筆電、伺服器、網通與遊戲機，並有AI伺服器板出貨。基板及膠片供應商包括南亞、台燿、台光與聯茂，銅箔供應商包括金居。精成科技為合併子公司，2025年底持股40.30%；江陰公司亦為子公司。2024至2025年間，瀚宇博向嘉聯益租賃桃科廠房，並參與嘉聯益及精成科技增資。子公司精成科技另收購Lincstech，並於2026年公告以股份轉換取得台灣精星全部股份。
 segments:
 - evidence_ids:
-  - e4
-  - e5
-  id: pcb
-  name: 印刷電路板製造與銷售
-  period: '2025'
-  revenue_share_pct: null
+  - e1
+  id: seg_pcb
+  name: 印刷電路板
+  period: '2024'
+  revenue_share_pct: 81
 - evidence_ids:
-  - e4
-  - e5
-  id: ems
-  name: 印刷電路板組裝銷售
-  period: '2025'
-  revenue_share_pct: null
-- evidence_ids:
-  - e4
-  - e5
-  id: other
-  name: 其他業務
-  period: '2025'
-  revenue_share_pct: null
+  - e1
+  id: seg_ems
+  name: 電子製造服務
+  period: '2024'
+  revenue_share_pct: 19
 main_theme: theme.ai_server
 themes:
 - also: []
@@ -60,14 +51,57 @@ themes:
   theme: theme.ai_server
   tier: upstream
 relations:
-  subsidiaries:
-  - as_of: '2026-06-30'
+  customers:
+  - as_of: '2008-08-27'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持股 40.30% 的合併子公司
+    detail: 筆電用PCB（歷史關係）
     details:
-    - 直接持股 40.30% 的合併子公司
-    - 財報明示之母公司
+    - 筆電用PCB（歷史關係）
+    edge: e4b057c529ae7
+    evidence_level: other
+    id: tw.2382
+    name: 廣達
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 印刷電路板
+    details:
+    - 印刷電路板
+    edge: ea077ca8d288a
+    evidence_level: primary
+    id: tw.3594
+    name: 磐儀
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2023-06
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 硬體生產供應關係（FY2023）
+    details:
+    - 硬體生產供應關係（FY2023）
+    edge: e4c9ce699d0ff
+    evidence_level: primary
+    id: us.MSFT
+    name: Microsoft
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: PCB製造與組裝子公司
+    details:
+    - PCB製造與組裝子公司
+    - 母公司
     edge: e6d64a1eec1c2
     evidence_level: primary
     id: tw.6191
@@ -76,12 +110,12 @@ relations:
     share_basis: null
     share_pct: null
     weight: 2
-  - as_of: '2025-12-31'
+  - as_of: '2026-08-28'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 間接子公司
+    detail: 江陰營運子公司
     details:
-    - 間接子公司
+    - 江陰營運子公司
     edge: eacebfb62e8d0
     evidence_level: primary
     id: org.hannstar-board-jiangyin
@@ -90,21 +124,99 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  suppliers:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 透過精成科技間接持有的子公司
+    detail: 基板、膠片
     details:
-    - 透過精成科技間接持有的子公司
-    edge: ec0d54106e964
+    - 基板、膠片
+    edge: ebae8987671e6
     evidence_level: primary
-    id: org.lincstech
-    name: Lincstech Co., Ltd.
+    id: tw.1303
+    name: 南亞
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 基板、膠片
+    details:
+    - 基板、膠片
+    edge: e0810582c1f7e
+    evidence_level: primary
+    id: tw.2383
+    name: 台光電
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 基板、膠片
+    details:
+    - 基板、膠片
+    edge: e55bc0bf5d2bb
+    evidence_level: primary
+    id: tw.6213
+    name: 聯茂
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 基板、膠片
+    details:
+    - 基板、膠片
+    edge: ef098aedfd8d2
+    evidence_level: primary
+    id: tw.6274
+    name: 台燿
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 銅箔
+    details:
+    - 銅箔
+    edge: e541e26128ff5
+    evidence_level: primary
+    id: tw.8358
+    name: 金居
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
   transactions:
+  - amount: 企業價值日幣415億元（約新台幣86.4億元）
+    as_of: '2025-09-03'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司精成科技收購Lincstech全部股權
+    details:
+    - 子公司精成科技收購Lincstech全部股權
+    edge: e0302f6807fc0
+    event_date: '2024-12-26'
+    events:
+    - amount: 企業價值日幣415億元（約新台幣86.4億元）
+      detail: 子公司精成科技收購Lincstech全部股權
+      event_date: '2024-12-26'
+    evidence_level: primary
+    id: org.lincstech
+    name: Lincstech Co., Ltd.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
   - amount: null
     as_of: '2026-08-07'
     confidence: ai_cross_checked
@@ -126,81 +238,239 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  - amount: 新台幣330,454,111元
+    as_of: '2024-12-04'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集中市場增持華新科技股票
+    details:
+    - 集中市場增持華新科技股票
+    edge: ec7e23bb83122
+    event_date: '2024-12-04'
+    events:
+    - amount: 新台幣330,454,111元
+      detail: 集中市場增持華新科技股票
+      event_date: '2024-12-04'
+    evidence_level: primary
+    id: tw.2492
+    name: 華新科
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣51,236,200元
+    as_of: '2025-10-29'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 取得桃科廠房及辦公室使用權資產
+    details:
+    - 取得桃科廠房及辦公室使用權資產
+    - 認購嘉聯益現金增資
+    - 擴大租賃桃科廠房
+    edge: e66d94422a66c
+    event_date: '2024-10-29'
+    events:
+    - amount: 每月租金新台幣5,259,000元（未稅）
+      detail: 擴大租賃桃科廠房
+      event_date: '2025-10-29'
+    - amount: 新台幣371,130,494元
+      detail: 認購嘉聯益現金增資
+      event_date: '2025-02-11'
+    - amount: 新台幣51,236,200元
+      detail: 取得桃科廠房及辦公室使用權資產
+      event_date: '2024-10-29'
+    evidence_level: primary
+    id: tw.6153
+    name: 嘉聯益
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣611,839,425元
+    as_of: '2025-08-06'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 認購精成科技現金增資
+    details:
+    - 認購精成科技現金增資
+    edge: e74ae97951532
+    event_date: '2025-08-06'
+    events:
+    - amount: 新台幣611,839,425元
+      detail: 認購精成科技現金增資
+      event_date: '2025-08-06'
+    evidence_level: primary
+    id: tw.6191
+    name: 精成科
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 精成科技增資發行普通股30,089,200股
+    as_of: '2026-08-17'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司精成科技以股份轉換取得台灣精星全部股份
+    details:
+    - 子公司精成科技以股份轉換取得台灣精星全部股份
+    edge: e7e67389bcf19
+    event_date: '2026-08-17'
+    events:
+    - amount: 精成科技增資發行普通股30,089,200股
+      detail: 子公司精成科技以股份轉換取得台灣精星全部股份
+      event_date: '2026-08-17'
+    evidence_level: primary
+    id: tw.8183
+    name: 台灣精星科技股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 2025年報以Supplier A代稱的供應商，無法對應至特定具名廠商。
+- 報導所稱主要客戶，未逐一具名。
 website: http://tw.hannstarboard.com/
 tax_id: '23225071'
 incorporated: '1989-03-22'
 listed: '2003-08-25'
-as_of: '2026-10-15'
+as_of: '2026-10-25'
 confidence: ai_cross_checked
 has_research: true
 evidence:
   tw.5469#e1:
-    locator: 財報第13頁，公司沿革
-    published_date: null
-    publisher: 瀚宇博德股份有限公司（FinancialFilings 收錄）
-    quote_check: unreachable
-    title: 瀚宇博德股份有限公司民國114及113年度個體財務報告
-    url: https://financialfilings.com/filings/hsb-5469/annual-report/2026/46359776/
+    locator: 一、公司簡介／營業項目與產品結構
+    published_date: '2025-07-29'
+    publisher: MoneyDJ／嘉實投顧
+    quote_check: found
+    title: 瀚宇博德股份有限公司
+    url: https://www.moneydj.com/kmdj/wiki/wikiviewer.aspx?keyid=dc247952-4bf2-47ad-8149-0da0e9074587
   tw.5469#e10:
-    locator: 第39頁，列入合併財務報告之子公司；114年12月31日持股比例
-    published_date: null
-    publisher: 瀚宇博德股份有限公司（FinancialFilings 收錄）
+    locator: 公告第1至4項
+    published_date: '2024-10-30'
+    publisher: 公開資訊觀測站（MoneyDJ刊載）
     quote_check: found
-    title: 瀚宇博德股份有限公司及子公司民國114及113年度合併財務報告
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52477/2026/RNS/52477_rns_2026-05-13_a60ca8ac-fb15-4a5b-889a-f691484cce1f.pdf
+    title: 瀚宇博向嘉聯益取得桃園市觀音區白玉里桃科十路使用權資產，計約5124萬元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=9f999828-caed-464c-8877-6fc83e7d1db2
+  tw.5469#e11:
+    locator: 公告第3、12、15及18項
+    published_date: '2025-02-11'
+    publisher: 公開資訊觀測站（MoneyDJ刊載）
+    quote_check: found
+    title: 瀚宇博2/10~12取得嘉聯益現增股26,509,321股，計約3.71億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=ecf355c0-2942-432d-b050-b59cbf570b39
+  tw.5469#e12:
+    locator: 公告第1至6項
+    published_date: '2025-08-06'
+    publisher: 公開資訊觀測站（MoneyDJ刊載）
+    quote_check: found
+    title: 瀚宇博取得精成科8,157,859股，計約6.12億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=39aa4547-3e7a-4950-8372-1ba0a92d4701
+  tw.5469#e13:
+    locator: 公告第5項
+    published_date: '2025-10-29'
+    publisher: 公開資訊觀測站（MoneyDJ刊載）
+    quote_check: found
+    title: 嘉聯益董事會決議出租桃科廠部分廠房予瀚宇博，每月租金525.9萬元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=d93b23ed-a11b-4f9e-8d35-6a55d6f6abb3
+  tw.5469#e14:
+    locator: 公告第1至3項
+    published_date: '2024-12-04'
+    publisher: 公開資訊觀測站（MoneyDJ刊載）
+    quote_check: found
+    title: 瀚宇博1/12~12/4取得華新科2,898,000股，計約3.30億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f49a5343-0630-4268-8016-f1598564e656
+  tw.5469#e15:
+    locator: 補充公告第3及5項
+    published_date: '2025-09-03'
+    publisher: 公開資訊觀測站（MoneyDJ刊載）
+    quote_check: found
+    title: 精成科取得Lincstech 100%股權案，最終該企業價值為415億日幣（補充）
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=aba8987e-6841-4901-8c0c-175faf91cb60
+  tw.5469#e16:
+    locator: 補充公告交割日說明
+    published_date: '2025-03-28'
+    publisher: 公開資訊觀測站（MoneyDJ刊載）
+    quote_check: found
+    title: 精成科：取得投資日商Lincstech之經濟部核准函，雙方訂4/8為交割日（補充）
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=6edeba60-4500-4495-bfd0-0321d2b21153&c=MB06
+  tw.5469#e17:
+    locator: 公告第一段及第十三項
+    published_date: '2026-08-17'
+    publisher: 公開資訊觀測站（MoneyDJ刊載）
+    quote_check: found
+    title: 精成科以股份轉換方式取得精星股權之增資新股權利證書10/1起上市買賣
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=20c592f4-284e-466f-8c66-c1e49e9047f1
+  tw.5469#e18:
+    locator: 成長動能將來自NB與低價NB需求成長段落
+    published_date: '2008-08-27'
+    publisher: 玉山證券（MoneyDJ刊載）
+    quote_check: found
+    title: 預估瀚宇博今年NB板出貨量為5,686萬片，市佔率達43%
+    url: https://www.moneydj.com/KMDJ/Report/ReportViewer.aspx?a=508f84dc-fc39-4c11-bfe2-2a2aa23795d9
+  tw.5469#e19:
+    locator: 第1頁，FY23採購支出說明及HANNSTAR BOARD項目
+    published_date: null
+    publisher: Microsoft（公開文件副本）
+    quote_check: unreachable
+    title: Microsoft Top 100 Production Suppliers — FY23
+    url: https://device.report/m/61bb206528cff71724c521aaaf36f31cc47d60fc3a2fed6b998aeeaa9b3ebac0.pdf
   tw.5469#e2:
-    locator: 營業收入明細表，民國114年度，明細表九
+    locator: 年報第51頁，Current products (Services)
     published_date: null
-    publisher: 瀚宇博德股份有限公司（FinancialFilings 收錄）
-    quote_check: unreachable
-    title: 瀚宇博德股份有限公司民國114及113年度個體財務報告
-    url: https://financialfilings.com/filings/hsb-5469/annual-report/2026/46359776/
+    publisher: 瀚宇博德股份有限公司（公開文件副本）
+    quote_check: found
+    title: HannStar Board Corporation 2025 Annual Report
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52477/2026/RNS/52477_rns_2026-06-23_c02f128e-8103-4ccd-a62a-3c7cf035415a.pdf
   tw.5469#e3:
-    locator: 營業收入明細表，民國114年度，明細表九
+    locator: 4.2.3 Supply Situation for Major Raw Materials
     published_date: null
-    publisher: 瀚宇博德股份有限公司（FinancialFilings 收錄）
-    quote_check: unreachable
-    title: 瀚宇博德股份有限公司民國114及113年度個體財務報告
-    url: https://financialfilings.com/filings/hsb-5469/annual-report/2026/46359776/
+    publisher: 瀚宇博德股份有限公司（公開文件副本）
+    quote_check: found
+    title: HannStar Board Corporation 2025 Annual Report
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52477/2026/RNS/52477_rns_2026-06-23_c02f128e-8103-4ccd-a62a-3c7cf035415a.pdf
   tw.5469#e4:
-    locator: 財報第80頁，附註四十、部門資訊
+    locator: 4.2.3 Supply Situation for Major Raw Materials
     published_date: null
-    publisher: 瀚宇博德股份有限公司（FinancialFilings 收錄）
-    quote_check: unreachable
-    title: 瀚宇博德股份有限公司及子公司民國114及113年度合併財務報告
-    url: https://financialfilings.com/filings/hsb-5469/annual-report/2026/46359773/
+    publisher: 瀚宇博德股份有限公司（公開文件副本）
+    quote_check: found
+    title: HannStar Board Corporation 2025 Annual Report
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52477/2026/RNS/52477_rns_2026-06-23_c02f128e-8103-4ccd-a62a-3c7cf035415a.pdf
   tw.5469#e5:
-    locator: 第80頁，114年度部門收入表；欄序為 PCB、EMS、其他、調整及沖銷、合計
+    locator: 年報第64頁，主要原料之供應狀況
     published_date: null
-    publisher: 瀚宇博德股份有限公司（FinancialFilings 收錄）
+    publisher: 瀚宇博德股份有限公司／華新麗華股務聯辦服務網
     quote_check: found
-    title: 瀚宇博德股份有限公司及子公司民國114及113年度合併財務報告
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52477/2026/RNS/52477_rns_2026-05-13_a60ca8ac-fb15-4a5b-889a-f691484cce1f.pdf
+    title: 瀚宇博德股份有限公司105年度年報
+    url: https://stock.walsin.com/downloads/78/%E5%B9%B4%E5%A0%B1
   tw.5469#e6:
-    locator: 年報第51頁，4.1.1 Business Activities
-    published_date: null
-    publisher: 瀚宇博德股份有限公司（FinancialFilings 收錄）
+    locator: 技術與產品線段落
+    published_date: '2025-11-13'
+    publisher: MoneyDJ（第一銀行刊載）
     quote_check: found
-    title: HANNSTAR BOARD CORPORATION 2025 ANNUAL REPORT
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52477/2026/RNS/52477_rns_2026-06-23_c02f128e-8103-4ccd-a62a-3c7cf035415a.pdf
+    title: 瀚宇博加速擴產，AI高階訂單能見度至2027年
+    url: https://wealth.firstbank.com.tw/investment-tips/trend-insight/news/news-detail?id=%7B456D8C34-A61C-4824-8405-B7A9CDE0252E%7D
   tw.5469#e7:
-    locator: 年報第53頁，Technologies (Products) Successfully Developed
+    locator: 年報第102頁，主要原料供應狀況
     published_date: null
-    publisher: 瀚宇博德股份有限公司（FinancialFilings 收錄）
+    publisher: 磐儀科技股份有限公司
     quote_check: found
-    title: HANNSTAR BOARD CORPORATION 2025 ANNUAL REPORT
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52477/2026/RNS/52477_rns_2026-06-23_c02f128e-8103-4ccd-a62a-3c7cf035415a.pdf
+    title: 磐儀科技股份有限公司113年度年報
+    url: https://partnerzone.arbor-technology.com/investor-financial/2024-Annual-Report.pdf
   tw.5469#e8:
-    locator: 第39頁，列入合併財務報告之子公司；114年12月31日持股比例
+    locator: 附註十二，子公司持股表、註7及註8
     published_date: null
-    publisher: 瀚宇博德股份有限公司（FinancialFilings 收錄）
-    quote_check: found
-    title: 瀚宇博德股份有限公司及子公司民國114及113年度合併財務報告
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52477/2026/RNS/52477_rns_2026-05-13_a60ca8ac-fb15-4a5b-889a-f691484cce1f.pdf
+    publisher: 瀚宇博德股份有限公司（FinancialFilings公開副本）
+    quote_check: unreachable
+    title: 瀚宇博德股份有限公司及子公司114及113年度合併財務報告
+    url: https://financialfilings.com/filings/hsb-5469/annual-report/2026/46359773/
   tw.5469#e9:
-    locator: 第98頁，附表十二；間接持股架構另見第39頁
-    published_date: null
-    publisher: 瀚宇博德股份有限公司（FinancialFilings 收錄）
+    locator: 公告標題
+    published_date: '2026-08-28'
+    publisher: 公開資訊觀測站（鉅亨網刊載）
     quote_check: found
-    title: 瀚宇博德股份有限公司及子公司民國114及113年度合併財務報告
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52477/2026/RNS/52477_rns_2026-05-13_a60ca8ac-fb15-4a5b-889a-f691484cce1f.pdf
+    title: 瀚宇博：代子公司瀚宇博德科技（江陰）有限公司公告法人監察人代表人異動
+    url: https://news.cnyes.com/news/print/6590729

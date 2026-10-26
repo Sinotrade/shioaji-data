@@ -17,30 +17,76 @@ industry:
   l3: matl.packaging
   l3_name: 包裝材料與容器
   l3_name_en: Packaging & Containers
+chain: chain.steel
+chain_stage:
+  agreement: both
+  also:
+  - stage: downstream
+    stage_name: 金屬製品與螺絲
+    tier: downstream
+  reason: 最大營收類別為馬口鐵包材，涵蓋冷軋鋼板及鍍製，並延伸彩印、製罐。
+  stage: midstream
+  stage_name: 軋延與鋼材
+  tier: midstream
 primary_chain_position: midstream
-summary_short: 製造冷軋鋼材、馬口鐵及包裝容器，並提供飲料充填服務。
-summary_long: 統一實主要經營鐵產品及飲料包裝，2026年上半年合併營收占比分別為43%與57%。鐵產品涵蓋冷軋鋼材、馬口鐵皮、彩印鐵皮及空罐。集團飲料包裝業務涵蓋PET瓶蓋、瓶胚、吹瓶與無菌充填，並生產利樂包茶飲、果汁、奶茶及咖啡等飲料。新型鋁瓶罐業務提供包材與飲料充填服務，其中中國大陸昆山、無錫設有充填作業。統一企業為其最終母公司；旗下子公司包括開曼統一實業控股、越南統盟製罐及無錫統一實業包裝。
+summary_short: 製造馬口鐵、金屬與塑膠包材，並提供飲料充填代工。
+summary_long: 統一實以馬口鐵包材為最大營收來源，產品涵蓋底片、冷軋鋼板、馬口鐵、彩印鐵皮及鐵罐；2025年該類占合併營收53.16%，塑膠包材含充填占42.64%，其他占4.20%。飲料包裝業務提供瓶胚、瓶蓋、吹瓶及無菌充填，並生產利樂包飲料與新型鋁瓶罐。2025年中鋼占進貨淨額22.54%，廣州統一企業占銷貨淨額10.84%；統一企業亦為母公司及商品銷售對象。近三年可查證事件包括泰州子公司減少廠房承租、無錫子公司新增倉庫使用權，以及北京子公司調整不動產租約。
 segments:
 - evidence_ids:
   - e2
-  id: seg_iron
-  name: 鐵產品
-  period: 2026年上半年
-  revenue_share_pct: 43
+  id: seg_tinplate
+  name: 馬口鐵包材產品
+  period: '2025'
+  revenue_share_pct: 53.16
 - evidence_ids:
   - e2
-  id: seg_beverage_packaging
-  name: 飲料包裝
-  period: 2026年上半年
-  revenue_share_pct: 57
+  id: seg_plastic
+  name: 塑膠包材（含充填）產品
+  period: '2025'
+  revenue_share_pct: 42.64
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 4.2
 relations:
-  parents:
-  - as_of: '2026-06-30'
+  customers:
+  - as_of: 2025-12
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 最終母公司
+    detail: 合併集團商品銷售
     details:
-    - 最終母公司
+    - 合併集團商品銷售
+    edge: ec3d88ef50488
+    evidence_level: primary
+    id: org.guangzhou-uni-president
+    name: 廣州統一企業有限公司
+    ranking_basis: disclosed
+    share_basis: revenue
+    share_pct: 10.84
+    weight: 1
+  - as_of: '2025-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 對最終母公司之商品銷售
+    details:
+    - 對最終母公司之商品銷售
+    edge: e824929137d70
+    evidence_level: primary
+    id: tw.1216
+    name: 統一
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  parents:
+  - as_of: '2025-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 母公司及集團最終母公司
+    details:
+    - 母公司及集團最終母公司
     edge: ecb082f343c32
     evidence_level: primary
     id: tw.1216
@@ -49,78 +95,79 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  partners:
+  - as_of: '2025-05-06'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 鋼材製造技術協助協議
+    details:
+    - 鋼材製造技術協助協議
+    edge: e930ebbeca796
+    evidence_level: primary
+    id: org.日本-jfe-鋼鐵公司
+    name: 日本 JFE 鋼鐵公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
-  - as_of: '2026-07-14'
+  - as_of: '2025-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 重要子公司
+    detail: 直接持有之投資控股子公司
     details:
-    - 重要子公司
-    edge: e85651282f619
+    - 直接持有之投資控股子公司
+    edge: e9e7c4816fd76
     evidence_level: primary
-    id: org.cayman-ton-yi-china-holdings-limited
-    name: Cayman Ton Yi (China) Holdings Limited
+    id: org.cayman-ton-yi-industrial-holdings
+    name: 開曼統一實業控股有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-07-14'
+  - as_of: '2025-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 重要子公司
+    detail: 透過開曼控股架構持有之馬口鐵子公司
     details:
-    - 重要子公司
-    edge: e2b6a7b36aebc
+    - 透過開曼控股架構持有之馬口鐵子公司
+    edge: ed35e69e5612e
     evidence_level: primary
-    id: org.cayman-ton-yi-holdings-limited
-    name: Cayman Ton Yi Holdings Limited
+    id: org.fujian-ton-yi-tinplate
+    name: 福建統一馬口鐵有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-07-14'
+  - as_of: '2025-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 重要子公司
+    detail: 直接持有之製罐子公司
     details:
-    - 重要子公司
-    edge: eea1069b2aa9f
+    - 直接持有之製罐子公司
+    edge: eec58ab8a1355
     evidence_level: primary
-    id: org.cayman-ton-yi-industrial-holdings-limited
-    name: CAYMAN TON YI INDUSTRIAL HOLDINGS LIMITED
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
-  - as_of: '2026-06-30'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 間接子公司
-    details:
-    - 間接子公司
-    edge: e7199ac7c951b
-    evidence_level: primary
-    id: org.無錫統一實業包裝有限公司
-    name: 無錫統一實業包裝有限公司
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
-  - as_of: '2026-06-30'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 直接持股51%的製罐子公司
-    details:
-    - 直接持股51%的製罐子公司
-    edge: e1ee0eb2ef472
-    evidence_level: primary
-    id: org.越南統盟製罐有限公司
+    id: org.vietnam-ton-meng-can
     name: 越南統盟製罐有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
   suppliers:
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 馬口鐵包材原料採購
+    details:
+    - 馬口鐵包材原料採購
+    edge: e2f6819dc1244
+    evidence_level: primary
+    id: tw.2002
+    name: 中鋼
+    ranking_basis: disclosed
+    share_basis: purchases
+    share_pct: 22.54
+    weight: 1
   - as_of: '2025-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
@@ -135,109 +182,218 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  transactions:
+  - amount: 人民幣2,041,087元（使用權資產淨額減少）
+    as_of: '2024-12-25'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司泰州統實減少廠房承租並處分使用權資產
+    details:
+    - 子公司泰州統實減少廠房承租並處分使用權資產
+    edge: e85e5e85afd1a
+    event_date: '2024-12-25'
+    events:
+    - amount: 人民幣2,041,087元（使用權資產淨額減少）
+      detail: 子公司泰州統實減少廠房承租並處分使用權資產
+      event_date: '2024-12-25'
+    evidence_level: primary
+    id: org.taizhou-uni-president
+    name: 泰州統一企業有限公司
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 人民幣6,395,352.50元（成品小品項倉庫使用權資產）
+    as_of: '2025-05-29'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司無錫統一實業包裝新增成品倉庫使用權
+    details:
+    - 子公司無錫統一實業包裝新增成品倉庫使用權
+    edge: ef4aac5817f19
+    event_date: '2025-05-29'
+    events:
+    - amount: 人民幣6,395,352.50元（成品小品項倉庫使用權資產）
+      detail: 子公司無錫統一實業包裝新增成品倉庫使用權
+      event_date: '2025-05-29'
+    evidence_level: primary
+    id: org.wuxi-tonyi-daiwa-packaging
+    name: 無錫統和新創包裝科技有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 人民幣108,105,489元（租約調整後使用權資產金額）
+    as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司北京統實飲品調整不動產租約
+    details:
+    - 子公司北京統實飲品調整不動產租約
+    edge: e34c00b98fcfa
+    event_date: '2026-06-30'
+    events:
+    - amount: 人民幣108,105,489元（租約調整後使用權資產金額）
+      detail: 子公司北京統實飲品調整不動產租約
+      event_date: '2026-06-30'
+    evidence_level: primary
+    id: org.北京市懷柔區懷柔鎮大中富樂村經濟合作社
+    name: 北京市懷柔區懷柔鎮大中富樂村經濟合作社
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 具名媒體報導提及紅牛能量飲料及東鵬大咖為新增客戶，但未確認實際締約法人及個別占…
+- 年報所稱亞洲鋼鐵龍頭大廠中，除具名揭露的中鋼外，未據此推定其他供應商。
 website: https://www.tonyi.com.tw
 tax_id: '73252657'
 incorporated: '1969-04-14'
 listed: '1991-01-29'
-as_of: '2026-10-15'
+as_of: '2026-10-26'
 confidence: ai_cross_checked
 has_research: true
 evidence:
   tw.9907#e10:
-    locator: 2026-07-14重要子公司公告標題
-    published_date: '2026-07-14'
-    publisher: 統一實業股份有限公司
-    quote_check: found
-    title: 重要子公司公告
-    url: https://www.tonyi.com.tw/news.php
-  tw.9907#e11:
-    locator: 2026-07-14 Cayman Ton Yi Holdings Limited公告標題
-    published_date: '2026-07-14'
-    publisher: 統一實業股份有限公司
-    quote_check: found
-    title: 重要子公司董事會決議發放股利公告
-    url: https://www.tonyi.com.tw/news.php
-  tw.9907#e12:
-    locator: 2026-07-14 Cayman Ton Yi (China) Holdings Limited公告標題
-    published_date: '2026-07-14'
-    publisher: 統一實業股份有限公司
-    quote_check: found
-    title: 重要子公司董事會公告
-    url: https://www.tonyi.com.tw/news.php
-  tw.9907#e13:
-    locator: 報告第15頁，合併報表子公司明細；投資公司、子公司、業務及持股百分比欄
+    locator: 第42頁，關係人名稱與商品銷售；114年1至6月欄，單位新台幣仟元
     published_date: null
-    publisher: 統一實業股份有限公司及子公司
+    publisher: 統一實業股份有限公司
     quote_check: found
-    title: 115年第二季合併財務報告
-    url: https://www.tonyi.com.tw/include/kindeditor/attached/file/20260805/20260805024012_12593.pdf
+    title: 114年及113年第二季合併財務報告
+    url: https://www.tonyi.com.tw/include/kindeditor/attached/file/20250806/20250806083834_27879.pdf
+  tw.9907#e11:
+    locator: 第15頁，列入合併財務報告之子公司，統一實業直接投資列
+    published_date: null
+    publisher: 統一實業股份有限公司
+    quote_check: found
+    title: 114年及113年第二季合併財務報告
+    url: https://www.tonyi.com.tw/include/kindeditor/attached/file/20250806/20250806083834_27879.pdf
+  tw.9907#e12:
+    locator: 第15頁，列入合併財務報告之子公司，統一實業直接投資列
+    published_date: null
+    publisher: 統一實業股份有限公司
+    quote_check: found
+    title: 114年及113年第二季合併財務報告
+    url: https://www.tonyi.com.tw/include/kindeditor/attached/file/20250806/20250806083834_27879.pdf
+  tw.9907#e13:
+    locator: 第15頁，開曼福建統一控股投資之子公司列
+    published_date: null
+    publisher: 統一實業股份有限公司
+    quote_check: found
+    title: 114年及113年第二季合併財務報告
+    url: https://www.tonyi.com.tw/include/kindeditor/attached/file/20250806/20250806083834_27879.pdf
   tw.9907#e14:
-    locator: 重大訊息標題
+    locator: 公告標題及交易相對人欄
+    published_date: '2024-12-25'
+    publisher: 統一實業股份有限公司
+    quote_check: unreachable
+    title: 代子公司泰州統實企業有限公司公告處分使用權資產（減少承租面積）
+    url: https://www.tonyi.com.tw/show_news.php?id=812
+  tw.9907#e15:
+    locator: 交易單位數量及交易總金額
+    published_date: '2024-12-25'
+    publisher: 統一實業股份有限公司
+    quote_check: unreachable
+    title: 代子公司泰州統實企業有限公司公告處分使用權資產（減少承租面積）
+    url: https://www.tonyi.com.tw/show_news.php?id=812
+  tw.9907#e16:
+    locator: 公告標題
     published_date: '2025-05-29'
     publisher: 統一實業股份有限公司
-    quote_check: found
+    quote_check: unreachable
     title: 代子公司無錫統一實業包裝有限公司公告取得使用權資產
-    url: https://www.tonyi.com.tw/show.php?id=850
-  tw.9907#e15:
-    locator: 報告第15頁，合併報表子公司明細；投資公司為開曼統一實業控股有限公司的列
-    published_date: null
-    publisher: 統一實業股份有限公司及子公司
+    url: https://www.tonyi.com.tw/show_news.php?id=852
+  tw.9907#e17:
+    locator: 公告第3項，第（三）款
+    published_date: '2025-05-29'
+    publisher: 公開資訊觀測站重大訊息（MoneyDJ轉載）
     quote_check: found
-    title: 115年第二季合併財務報告
-    url: https://www.tonyi.com.tw/include/kindeditor/attached/file/20260805/20260805024012_12593.pdf
+    title: 統一實代子公司無錫統一實業包裝有限公司公告取得使用權資產
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=08fa3f41-86c5-47c8-a731-42b307bcf1c5
+  tw.9907#e18:
+    locator: 公告第4項，交易相對人
+    published_date: '2025-05-29'
+    publisher: 公開資訊觀測站重大訊息（MoneyDJ轉載）
+    quote_check: found
+    title: 統一實代子公司無錫統一實業包裝有限公司公告取得使用權資產
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=08fa3f41-86c5-47c8-a731-42b307bcf1c5
+  tw.9907#e19:
+    locator: 公告第2項
+    published_date: '2026-06-30'
+    publisher: 公開資訊觀測站重大訊息（MoneyDJ轉載）
+    quote_check: found
+    title: 代子公司北京統實飲品有限公司公告取得使用權資產（租約調整及更新交易金額）
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=4220e246-2e7b-4f9c-948e-490c46ca2e57
   tw.9907#e2:
-    locator: 第4頁，部門別合併營收；2026YH1鐵產品43%、飲料包裝57%
-    published_date: '2026-08-31'
+    locator: 第48頁，業務範圍及產品營業比重
+    published_date: null
     publisher: 統一實業股份有限公司
-    quote_check: not_found
-    title: 2026年第二季業績報告
-    url: https://www.tonyi.com.tw/include/kindeditor/attached/file/20260831/20260831082337_73874.pdf
+    quote_check: found
+    title: 114年度年報
+    url: https://www.tonyi.com.tw/include/kindeditor/attached/file/20260509/20260509061643_79873.pdf
+  tw.9907#e20:
+    locator: 公告第3項
+    published_date: '2026-06-30'
+    publisher: 公開資訊觀測站重大訊息（MoneyDJ轉載）
+    quote_check: found
+    title: 代子公司北京統實飲品有限公司公告取得使用權資產（租約調整及更新交易金額）
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=4220e246-2e7b-4f9c-948e-490c46ca2e57
+  tw.9907#e21:
+    locator: 第40頁，114年5月6日董事會決議
+    published_date: null
+    publisher: 統一實業股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://www.tonyi.com.tw/include/kindeditor/attached/file/20260509/20260509061643_79873.pdf
   tw.9907#e3:
-    locator: 公司介紹第二段，產品清單
+    locator: 公司介紹第一段
     published_date: null
     publisher: 統一實業股份有限公司
     quote_check: found
     title: 公司介紹
     url: https://www.tonyi.com.tw/about.php
   tw.9907#e4:
-    locator: 產品介紹，生產線說明
+    locator: 公司介紹產品項目
     published_date: null
     publisher: 統一實業股份有限公司
     quote_check: found
-    title: 馬口鐵產品
-    url: https://www.tonyi.com.tw/show_products.php?id=6
+    title: 公司介紹
+    url: https://www.tonyi.com.tw/about.php
   tw.9907#e5:
-    locator: 寶特瓶相關產品第一段
+    locator: 產品介紹首段
     published_date: null
     publisher: 統一實業股份有限公司
-    quote_check: found
+    quote_check: unreachable
     title: 寶特瓶相關產品
-    url: https://www.tonyi.com.tw/show_products.php?id=8
+    url: https://www.tonyi.com.tw/eng/show_products.php?id=8
   tw.9907#e6:
-    locator: 利樂包產品第一段
+    locator: 產品介紹首段
     published_date: null
     publisher: 統一實業股份有限公司
-    quote_check: found
+    quote_check: unreachable
     title: 利樂包產品
-    url: https://www.tonyi.com.tw/show_products.php?id=18
+    url: https://www.tonyi.com.tw/eng/show_products.php?id=18
   tw.9907#e7:
-    locator: 產品介紹第4點
+    locator: 產品介紹第4項
     published_date: null
     publisher: 統一實業股份有限公司
-    quote_check: found
+    quote_check: unreachable
     title: 新型鋁瓶罐產品
-    url: https://www.tonyi.com.tw/show_products.php?id=19
+    url: https://www.tonyi.com.tw/eng/show_products.php?id=19
   tw.9907#e8:
-    locator: 馬口鐵罐產品介紹
+    locator: 第57頁，主要供應商名單，114年欄
     published_date: null
     publisher: 統一實業股份有限公司
     quote_check: found
-    title: 馬口鐵罐產品
-    url: https://www.tonyi.com.tw/show_products.php?id=7
+    title: 114年度年報
+    url: https://www.tonyi.com.tw/include/kindeditor/attached/file/20260509/20260509061643_79873.pdf
   tw.9907#e9:
-    locator: 報告第13頁，公司沿革（三）
+    locator: 第57頁，主要銷貨客戶名單，114年欄
     published_date: null
-    publisher: 統一實業股份有限公司及子公司
+    publisher: 統一實業股份有限公司
     quote_check: found
-    title: 115年第二季合併財務報告
-    url: https://www.tonyi.com.tw/include/kindeditor/attached/file/20260805/20260805024012_12593.pdf
+    title: 114年度年報
+    url: https://www.tonyi.com.tw/include/kindeditor/attached/file/20260509/20260509061643_79873.pdf

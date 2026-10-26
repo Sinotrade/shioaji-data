@@ -26,27 +26,23 @@ chain_stage:
   stage_name: 銅箔基板
   tier: midstream
 primary_chain_position: upstream
-summary_short: 研發、製造與銷售軟性銅箔基板、覆蓋膜及軟板接合與補強材料。
-summary_long: 台虹以軟性銅箔基板及軟板材料為主要業務，2025年電子材料占營收96.44%，其他業務占3.56%。主要產品包括軟性銅箔材料、覆蓋膜、純膠及補強與複合材料，提供軟板基材、線路保護、層間接合與結構補強。公司已有電動車材料量產實績，並投入AI伺服器高頻高速PCB板材開發。子公司台虹應用材料從事半導體材料製造與銷售，其先進封裝材料已有供應鏈導入實績；如東富展與泰國台虹則從事電子材料製造與銷售。
+summary_short: 研發、製造及銷售軟性銅箔基板、覆蓋膜等電子材料。
+summary_long: 台虹以軟性銅箔基板、覆蓋膜、純膠及補強複合材料的研發、製造與銷售為主要業務，2025年電子材料占營收96.44%。公司另開發AI伺服器用高頻高速板材，以及先進封裝的暫時接著與雷射解黏膜材。台郡公開將台虹列為主要供應商；台虹並與臻鼎進行材料研發、供應鏈管理及智慧製造合作，與TAZMO合作開發先進封裝製程產品。集團旗下台虹應用材料負責半導體材料，並透過泰國台虹與如東富展布局電子材料製造及銷售。
 segments:
 - evidence_ids:
-  - e1
+  - e03
   id: electronic_materials
   name: 電子材料
   period: '2025'
   revenue_share_pct: 96.44
 - evidence_ids:
-  - e1
+  - e03
   id: other
   name: 其他
   period: '2025'
   revenue_share_pct: 3.56
-main_theme: theme.ev
+main_theme: theme.ai_server
 themes:
-- also: []
-  stage: parts
-  theme: theme.ev
-  tier: midstream
 - also: []
   stage: board_materials
   theme: theme.ai_server
@@ -59,6 +55,7 @@ relations:
     detail: 銅箔基板
     details:
     - 銅箔基板
+    - 歷史供應關係，交易品項未明列
     edge: eed2c60d3da8e
     evidence_level: primary
     id: tw.4958
@@ -66,9 +63,66 @@ relations:
     ranking_basis: unranked
     share_basis: null
     share_pct: null
+    weight: 2
+  - as_of: '2025-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 軟板材料供應關係
+    details:
+    - 軟板材料供應關係
+    edge: e8cae68f889d7
+    evidence_level: primary
+    id: tw.6269
+    name: 台郡
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  partners:
+  - as_of: '2024-10-04'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: T&T半導體先進封裝合作聯盟
+    details:
+    - T&T半導體先進封裝合作聯盟
+    edge: e1e7a3875aaac
+    evidence_level: primary
+    id: jp.6266
+    name: TAZMO株式會社
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-08-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 材料研發、供應鏈管理及智慧製造
+    details:
+    - 材料研發、供應鏈管理及智慧製造
+    edge: ef7f33dd769e9
+    evidence_level: media
+    id: tw.4958
+    name: 臻鼎-KY
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-15'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: NVLink PTFE交換器板合作夥伴
+    details:
+    - NVLink PTFE交換器板合作夥伴
+    edge: e4df66b3fd90e
+    evidence_level: media
+    id: us.NVDA
+    name: NVIDIA
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
     weight: 1
   subsidiaries:
-  - as_of: '2026-06-30'
+  - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
     detail: 泰國電子材料製造與銷售子公司
@@ -82,21 +136,7 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-06-30'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 電子材料及零組件製造與銷售子公司
-    details:
-    - 電子材料及零組件製造與銷售子公司
-    edge: e6f5f36d6b49d
-    evidence_level: primary
-    id: org.博威電子股份有限公司
-    name: 博威電子股份有限公司
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
-  - as_of: '2026-06-30'
+  - as_of: '2026-03-31'
     confidence: ai_cross_checked
     counterparty_shares: []
     detail: 半導體材料製造與銷售子公司
@@ -110,26 +150,12 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-06-30'
+  - as_of: '2026-03-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 再生能源發電與售電子公司
+    detail: 中國大陸電子材料製造與銷售子公司
     details:
-    - 再生能源發電與售電子公司
-    edge: e8e482515ce17
-    evidence_level: primary
-    id: org.台虹綠電股份有限公司
-    name: 台虹綠電股份有限公司
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
-  - as_of: '2026-06-30'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 透過RICHSTAR持有之電子材料製造與銷售子公司
-    details:
-    - 透過RICHSTAR持有之電子材料製造與銷售子公司
+    - 中國大陸電子材料製造與銷售子公司
     edge: e776b8f73da47
     evidence_level: primary
     id: org.如東富展科技有限公司
@@ -138,7 +164,124 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  suppliers:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 電解銅箔
+    details:
+    - 電解銅箔
+    edge: eab4da0db4486
+    evidence_level: primary
+    id: jp.5706
+    name: 三井金屬
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 聚醯亞胺薄膜
+    details:
+    - 聚醯亞胺薄膜
+    edge: e3567962ec68f
+    evidence_level: primary
+    id: org.piam
+    name: PIAM
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 壓延銅箔
+    details:
+    - 壓延銅箔
+    edge: e7341edec56c2
+    evidence_level: primary
+    id: org.日鑛金屬
+    name: 日鑛金屬
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 聚醯亞胺薄膜
+    details:
+    - 聚醯亞胺薄膜
+    edge: ea2e694a5db0e
+    evidence_level: primary
+    id: org.杜邦
+    name: 杜邦
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 聚醯亞胺薄膜
+    details:
+    - 聚醯亞胺薄膜
+    edge: eae50489c1c6b
+    evidence_level: primary
+    id: tw.3645
+    name: 達邁
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   transactions:
+  - amount: 新台幣50,000仟元
+    as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 處分部分股權並喪失控制力
+    details:
+    - 處分部分股權並喪失控制力
+    - 出售剩餘股權
+    edge: e18aa2c9c8381
+    event_date: '2025-12-11'
+    events:
+    - amount: null
+      detail: 出售剩餘股權
+      event_date: '2025-12-18'
+    - amount: 新台幣50,000仟元
+      detail: 處分部分股權並喪失控制力
+      event_date: '2025-12-11'
+    evidence_level: primary
+    id: org.兆盈興業股份有限公司
+    name: 兆盈興業股份有限公司
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣65,000仟元
+    as_of: '2025-05-08'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 參與增資並取得控制力
+    details:
+    - 參與增資並取得控制力
+    edge: e7e2d8f996175
+    event_date: '2025-05-08'
+    events:
+    - amount: 新台幣65,000仟元
+      detail: 參與增資並取得控制力
+      event_date: '2025-05-08'
+    evidence_level: primary
+    id: org.兆盈興業股份有限公司
+    name: 兆盈興業股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
   - amount: 新台幣329,399千元
     as_of: '2026-08-27'
     confidence: ai_cross_checked
@@ -160,109 +303,192 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  - amount: 不超過新台幣30億元
+    as_of: '2026-08-07'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 公開市場加碼投資授權，公告時尚未執行
+    details:
+    - 公開市場加碼投資授權，公告時尚未執行
+    edge: e9303f2727afc
+    event_date: '2026-08-07'
+    events:
+    - amount: 不超過新台幣30億元
+      detail: 公開市場加碼投資授權，公告時尚未執行
+      event_date: '2026-08-07'
+    evidence_level: primary
+    id: tw.8069
+    name: 元太
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 財報以A、B、C、D、E代稱的重要客戶，無法對應具名公司。
+- 年報以甲、乙代稱的主要供應商，無法將採購占比對應杜邦等具名供應商。
+- 兆盈興業股權處分的受讓方未具名。
+- 高階美系手機終端客戶未具名，不據此推定Apple直接採購。
+- 主要AI終端驗證客戶未具名，不以驗證進度推定正式訂單。
 website: www.taiflex.com.tw
 tax_id: '16198345'
 incorporated: '1997-08-16'
 listed: '2009-12-17'
-as_of: '2026-10-14'
+as_of: '2026-10-25'
 confidence: ai_cross_checked
 has_research: true
 evidence:
-  tw.8039#e1:
-    locator: 印刷頁103，主要商品之營業比重；欄序為113年度、114年度
+  tw.8039#e02:
+    locator: 產品服務／軟板材料
+    published_date: null
+    publisher: 台虹科技股份有限公司
+    quote_check: found
+    title: 台虹科技股份有限公司－軟性銅箔材料
+    url: https://www.taiflex.com.tw/pro_FCCL.html
+  tw.8039#e03:
+    locator: 印刷頁102／PDF第107頁，主要商品之營業比重
     published_date: null
     publisher: 台虹科技股份有限公司
     quote_check: found
     title: 台虹科技股份有限公司114年度年報
-    url: https://w3.taiflex.com.tw/download/Cop_rep_114.pdf
+    url: https://www.taiflex.com.tw/cn/download/Cop_rep_114.pdf
+  tw.8039#e04:
+    locator: 印刷頁104／PDF第109頁，產業概況
+    published_date: null
+    publisher: 台虹科技股份有限公司
+    quote_check: found
+    title: 台虹科技股份有限公司114年度年報
+    url: https://www.taiflex.com.tw/cn/download/Cop_rep_114.pdf
+  tw.8039#e05:
+    locator: 印刷頁104／PDF第109頁，高頻高速板材料
+    published_date: null
+    publisher: 台虹科技股份有限公司
+    quote_check: found
+    title: 台虹科技股份有限公司114年度年報
+    url: https://www.taiflex.com.tw/cn/download/Cop_rep_114.pdf
+  tw.8039#e06:
+    locator: 記者萬惠雯報導，高頻高速傳輸材料段落
+    published_date: '2025-06-30'
+    publisher: MoneyDJ新聞／第一銀行刊載
+    quote_check: found
+    title: 台虹三大新產品出貨倍增 力抗匯率逆風支撐毛利率
+    url: https://wealth.firstbank.com.tw/investment-tips/trend-insight/news/news-detail?id=%7B040356FC-7068-40F2-859F-0CB3E1ACE313%7D
+  tw.8039#e07:
+    locator: 印刷頁103／PDF第108頁，半導體先進封裝材料
+    published_date: null
+    publisher: 台虹科技股份有限公司
+    quote_check: found
+    title: 台虹科技股份有限公司114年度年報
+    url: https://www.taiflex.com.tw/cn/download/Cop_rep_114.pdf
+  tw.8039#e08:
+    locator: 印刷頁31／PDF第35頁，氣候相關資訊／企業營運成本增加
+    published_date: '2025-03-31'
+    publisher: 台郡科技股份有限公司
+    quote_check: found
+    title: 台郡科技股份有限公司113年年報
+    url: https://www.flexium.com.tw/UploadFiles/2025-05-09/202559151121472.pdf
+  tw.8039#e09:
+    locator: 記者卓怡君報導，首段
+    published_date: '2019-04-23'
+    publisher: 自由財經
+    quote_check: found
+    title: 臻鼎攻車用 攝影相機模組今年出貨
+    url: https://ec.ltn.com.tw/article/paper/1283535
   tw.8039#e10:
-    locator: 印刷頁11，合併財務報表編製主體；首個持股欄為115.6.30
-    published_date: '2026-07-29'
-    publisher: 台虹科技股份有限公司
+    locator: 記者吳家豪報導，首段
+    published_date: '2024-08-26'
+    publisher: 中央社
     quote_check: found
-    title: 台虹科技股份有限公司及子公司115年第二季合併財務報告
-    url: https://www.taiflex.com.tw/Docs/Upload/WC2026073000001/26Q2_%E5%8F%B0%E8%99%B9%28%E5%90%88%E4%BD%B5%29_%E8%B2%A1%E5%A0%B1_%E4%B8%8A%E5%82%B3%E6%AA%94.pdf
+    title: 台虹與臻鼎結盟深化合作 瞄準智慧製造、材料研發
+    url: https://www.cna.com.tw/news/afe/202408260284.aspx
   tw.8039#e11:
-    locator: 印刷頁11，合併財務報表編製主體／泰國台虹
-    published_date: '2026-07-29'
+    locator: 印刷頁116／PDF第121頁，關鍵原料集中於少數廠商
+    published_date: null
     publisher: 台虹科技股份有限公司
     quote_check: found
-    title: 台虹科技股份有限公司及子公司115年第二季合併財務報告
-    url: https://www.taiflex.com.tw/Docs/Upload/WC2026073000001/26Q2_%E5%8F%B0%E8%99%B9%28%E5%90%88%E4%BD%B5%29_%E8%B2%A1%E5%A0%B1_%E4%B8%8A%E5%82%B3%E6%AA%94.pdf
+    title: 台虹科技股份有限公司114年度年報
+    url: https://www.taiflex.com.tw/cn/download/Cop_rep_114.pdf
   tw.8039#e12:
-    locator: 印刷頁11，合併財務報表編製主體／RICHSTAR與如東富展
-    published_date: '2026-07-29'
+    locator: 印刷頁116／PDF第121頁，關鍵原料集中於少數廠商
+    published_date: null
     publisher: 台虹科技股份有限公司
     quote_check: found
-    title: 台虹科技股份有限公司及子公司115年第二季合併財務報告
-    url: https://www.taiflex.com.tw/Docs/Upload/WC2026073000001/26Q2_%E5%8F%B0%E8%99%B9%28%E5%90%88%E4%BD%B5%29_%E8%B2%A1%E5%A0%B1_%E4%B8%8A%E5%82%B3%E6%AA%94.pdf
+    title: 台虹科技股份有限公司114年度年報
+    url: https://www.taiflex.com.tw/cn/download/Cop_rep_114.pdf
   tw.8039#e13:
-    locator: 印刷頁11，合併財務報表編製主體／博威電子
-    published_date: '2026-07-29'
-    publisher: 台虹科技股份有限公司
-    quote_check: found
-    title: 台虹科技股份有限公司及子公司115年第二季合併財務報告
-    url: https://www.taiflex.com.tw/Docs/Upload/WC2026073000001/26Q2_%E5%8F%B0%E8%99%B9%28%E5%90%88%E4%BD%B5%29_%E8%B2%A1%E5%A0%B1_%E4%B8%8A%E5%82%B3%E6%AA%94.pdf
-  tw.8039#e14:
-    locator: 印刷頁11，合併財務報表編製主體／台虹綠電
-    published_date: '2026-07-29'
-    publisher: 台虹科技股份有限公司
-    quote_check: found
-    title: 台虹科技股份有限公司及子公司115年第二季合併財務報告
-    url: https://www.taiflex.com.tw/Docs/Upload/WC2026073000001/26Q2_%E5%8F%B0%E8%99%B9%28%E5%90%88%E4%BD%B5%29_%E8%B2%A1%E5%A0%B1_%E4%B8%8A%E5%82%B3%E6%AA%94.pdf
-  tw.8039#e2:
-    locator: 產品服務／軟性銅箔材料／高頻系列用途
-    published_date: null
-    publisher: 台虹科技股份有限公司
-    quote_check: found
-    title: 軟性銅箔材料
-    url: https://www.taiflex.com.tw/pro_FCCL.html
-  tw.8039#e3:
-    locator: 產品服務／覆蓋膜／用途
-    published_date: null
-    publisher: 台虹科技股份有限公司
-    quote_check: found
-    title: 覆蓋膜
-    url: https://www.taiflex.com.tw/pro_CVL.html
-  tw.8039#e4:
-    locator: 產品服務／純膠／用途
-    published_date: null
-    publisher: 台虹科技股份有限公司
-    quote_check: found
-    title: 純膠
-    url: https://www.taiflex.com.tw/pro_BS.html
-  tw.8039#e5:
-    locator: 產品服務／複合材料／頁首產品介紹與用途
-    published_date: null
-    publisher: 台虹科技股份有限公司
-    quote_check: found
-    title: 複合材料
-    url: https://www.taiflex.com.tw/pro_FR.html
-  tw.8039#e6:
-    locator: 正文第二段，台虹與台虹應用材料業務介紹
+    locator: 最新消息／T&T產業合作聯盟新聞
     published_date: '2024-10-04'
     publisher: 台虹科技股份有限公司
     quote_check: found
-    title: TAZMO與台虹共同簽訂台日半導體合作備忘錄，在資策會及經濟部產業園區管理局見證下，T&T產業合作聯盟正式成軍
-    url: https://www.taiflex.com.tw/NewsPage?ID=8E2941322B91BE5EDB483B3EE9B4543C
-  tw.8039#e7:
-    locator: 正文第三段，電動車材料實績
-    published_date: '2022-05-06'
-    publisher: 台虹科技股份有限公司
+    title: TAZMO與台虹共同簽訂台日半導體合作備忘錄
+    url: https://www.taiflex.com.tw/Home
+  tw.8039#e14:
+    locator: 記者卓怡君報導，首段
+    published_date: '2026-10-14'
+    publisher: 自由財經
     quote_check: found
-    title: 台虹與AMATA簽訂泰國土地購買合約
-    url: https://www.taiflex.com.tw/NewsPage?ID=38F3B8DDBD60B6AD14A2D1CAEE290EC0
-  tw.8039#e8:
-    locator: 車載耐高電壓系列／應用
+    title: 焦點股》台郡：輝達點名PTFE供應商！開盤跳空漲停一字鎖
+    url: https://ec.ltn.com.tw/article/breakingnews/5605510
+  tw.8039#e15:
+    locator: 編按／NVLink PTFE Board看板說明
+    published_date: '2026-10-15'
+    publisher: 今周刊
+    quote_check: found
+    title: 台郡做什麼的？台虹可以買？入列輝達看板，它拉第二根漲停！外資看好誰動向曝光
+    url: https://www.businesstoday.com.tw/article/category/183008/post/202610140041/
+  tw.8039#e16:
+    locator: 附註四、合併概況，印刷頁10／PDF第12頁
     published_date: null
     publisher: 台虹科技股份有限公司
     quote_check: found
-    title: 軟性銅箔材料
-    url: https://www.taiflex.com.tw/pro_FCCL.html
-  tw.8039#e9:
-    locator: 印刷頁105，計劃開發之新產品／高頻高速板材料
+    title: 台虹科技股份有限公司及子公司115年第一季合併財務報告
+    url: https://www.taiflex.com.tw/Docs/Upload/WC2026043000004/26Q1_%E5%8F%B0%E8%99%B9(%E5%90%88%E4%BD%B5)_%E8%B2%A1%E5%A0%B1_%E4%B8%8A%E5%82%B3%E6%AA%94.pdf
+  tw.8039#e17:
+    locator: 附註四、合併概況，印刷頁14／PDF第17頁
     published_date: null
     publisher: 台虹科技股份有限公司
     quote_check: found
-    title: 台虹科技股份有限公司114年度年報
-    url: https://w3.taiflex.com.tw/download/Cop_rep_114.pdf
+    title: 台虹科技股份有限公司及子公司114年度合併財務報告
+    url: https://www.taiflex.com.tw/Docs/Upload/WC2026030900002/25Q4_%E5%8F%B0%E8%99%B9(%E5%90%88%E4%BD%B5)_%E8%B2%A1%E5%A0%B1_%E4%B8%8A%E5%82%B3%E6%AA%94.pdf
+  tw.8039#e18:
+    locator: 附註四、合併概況，印刷頁10／PDF第12頁，RICHSTAR所投資子公司
+    published_date: null
+    publisher: 台虹科技股份有限公司
+    quote_check: found
+    title: 台虹科技股份有限公司及子公司115年第一季合併財務報告
+    url: https://www.taiflex.com.tw/Docs/Upload/WC2026043000004/26Q1_%E5%8F%B0%E8%99%B9(%E5%90%88%E4%BD%B5)_%E8%B2%A1%E5%A0%B1_%E4%B8%8A%E5%82%B3%E6%AA%94.pdf
+  tw.8039#e19:
+    locator: 印刷頁11／PDF第13頁，合併概況註
+    published_date: null
+    publisher: 台虹科技股份有限公司
+    quote_check: found
+    title: 台虹科技股份有限公司及子公司115年第一季合併財務報告
+    url: https://www.taiflex.com.tw/Docs/Upload/WC2026043000004/26Q1_%E5%8F%B0%E8%99%B9(%E5%90%88%E4%BD%B5)_%E8%B2%A1%E5%A0%B1_%E4%B8%8A%E5%82%B3%E6%AA%94.pdf
+  tw.8039#e20:
+    locator: 印刷頁55／PDF第58頁，企業合併／兆盈興業收購對價；單位新台幣仟元
+    published_date: null
+    publisher: 台虹科技股份有限公司
+    quote_check: found
+    title: 台虹科技股份有限公司及子公司114年度合併財務報告
+    url: https://www.taiflex.com.tw/Docs/Upload/WC2026030900002/25Q4_%E5%8F%B0%E8%99%B9(%E5%90%88%E4%BD%B5)_%E8%B2%A1%E5%A0%B1_%E4%B8%8A%E5%82%B3%E6%AA%94.pdf
+  tw.8039#e21:
+    locator: 印刷頁56／PDF第59頁，喪失對子公司之控制
+    published_date: null
+    publisher: 台虹科技股份有限公司
+    quote_check: found
+    title: 台虹科技股份有限公司及子公司114年度合併財務報告
+    url: https://www.taiflex.com.tw/Docs/Upload/WC2026030900002/25Q4_%E5%8F%B0%E8%99%B9(%E5%90%88%E4%BD%B5)_%E8%B2%A1%E5%A0%B1_%E4%B8%8A%E5%82%B3%E6%AA%94.pdf
+  tw.8039#e22:
+    locator: 印刷頁13／PDF第15頁，待出售非流動資產
+    published_date: null
+    publisher: 台虹科技股份有限公司
+    quote_check: found
+    title: 台虹科技股份有限公司及子公司115年第一季合併財務報告
+    url: https://www.taiflex.com.tw/Docs/Upload/WC2026043000004/26Q1_%E5%8F%B0%E8%99%B9(%E5%90%88%E4%BD%B5)_%E8%B2%A1%E5%A0%B1_%E4%B8%8A%E5%82%B3%E6%AA%94.pdf
+  tw.8039#e23:
+    locator: 公開資訊觀測站重大訊息轉載，第5項
+    published_date: '2026-08-07'
+    publisher: MoneyDJ理財網
+    quote_check: found
+    title: 元太董事會通過取得台虹普通股，授權交易總金額上限30億元
+    url: https://m.moneydj.com/f1a.aspx?a=C43D5580-6CF6-4FE4-9244-94F717C15C7E

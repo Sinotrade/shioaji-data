@@ -26,14 +26,15 @@ chain_stage:
   stage_name: 矽晶圓與材料
   tier: upstream
 primary_chain_position: upstream
-summary_short: 以矽、碳化矽、氮化鎵及鍺矽磊晶晶圓生產與代工取得營收。
-summary_long: 嘉晶電子以磊晶晶片生產及代工為主要業務，2025年磊晶晶片占合併營收100%。主要產品包括矽磊晶、碳化矽磊晶與氮化鎵磊晶；矽磊晶提供100至200毫米晶圓，可依元件需求調整基板與磊晶層規格。碳化矽磊晶涵蓋600至1200伏特規格，矽基氮化鎵磊晶涵蓋100至600伏特規格。鍺矽磊晶於2026年第二季開始量產，應用於光通訊接收端的光二極體。公司位於半導體上游晶圓材料環節，母公司為漢磊科技股份有限公司，子公司日本嘉晶電子株式會社銷售磊晶矽晶圓及矽晶材料。
+summary_short: 生產及代工矽、碳化矽與氮化鎵磊晶晶圓。
+summary_long: 嘉晶以磊晶晶片生產與代工為主要業務，2025年磊晶晶片占合併營收100%。產品包括100至200毫米矽磊晶、600至1200V碳化矽磊晶，以及矽基板上的100至600V氮化鎵磊晶。公司亦提供鍺矽光電探測器磊晶代工，應用於矽光子。漢磊科技為其最終母公司，2026年6月底持股52.5%；日本嘉晶電子為全資子公司，從事磊晶矽晶圓買賣。2026年上半年，嘉晶集團對世界先進及漢磊科技均有商品銷售，並向漢磊科技採購商品及勞務。
 segments:
 - evidence_ids:
+  - e1
   - e2
   id: seg_epi
-  name: 磊晶晶片
-  period: '2025'
+  name: 磊晶晶片生產與代工
+  period: 2025年度
   revenue_share_pct: 100
 main_theme: theme.sic
 themes:
@@ -51,11 +52,31 @@ themes:
   tier: upstream
 relations:
   customers:
-  - as_of: '2024-12-31'
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares:
+    - as_of: '2025-12-31'
+      basis: purchases
+      of: tw.3707
+      pct: 9.87
+    detail: 對母公司商品銷售，未細分品項
+    details:
+    - 對母公司商品銷售，未細分品項
+    - 漢磊本體向嘉晶進貨
+    edge: ea94a742c51c7
+    evidence_level: primary
+    id: tw.3707
+    name: 漢磊
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 2
+  - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 商品供應；雙方另有矽磊晶合作
+    detail: 關係人商品銷售，未細分品項
     details:
+    - 關係人商品銷售，未細分品項
     - 商品供應；雙方另有矽磊晶合作
     edge: ea25d0992312f
     evidence_level: primary
@@ -64,15 +85,15 @@ relations:
     ranking_basis: unranked
     share_basis: null
     share_pct: null
-    weight: 1
+    weight: 2
   parents:
-  - as_of: '2026-10-15'
+  - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 母公司
+    detail: 最終母公司
     details:
-    - 母公司
-    - 主要營運子公司；持股57.86%
+    - 最終母公司
+    - 持股52.8%的子公司
     edge: e2061464df452
     evidence_level: primary
     id: tw.3707
@@ -82,105 +103,229 @@ relations:
     share_pct: null
     weight: 2
   subsidiaries:
-  - as_of: '2026-10-15'
+  - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 日本銷售子公司
+    detail: 日本全資銷售子公司
     details:
-    - 日本銷售子公司
-    edge: e1b1dd11ab7c1
+    - 日本全資銷售子公司
+    edge: e181f5d18162a
     evidence_level: primary
-    id: org.日本嘉晶電子株式會社
+    id: org.episil-precision-japan
     name: 日本嘉晶電子株式會社
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
+  suppliers:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 商品及勞務採購，未細分品項
+    details:
+    - 商品及勞務採購，未細分品項
+    edge: eee65c75c52be
+    evidence_level: primary
+    id: tw.3707
+    name: 漢磊
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 新台幣1,550仟元
+    as_of: '2025-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 處分不動產、廠房及設備
+    details:
+    - 處分不動產、廠房及設備
+    edge: e7a5b51d6901b
+    event_date: null
+    events:
+    - amount: 新台幣1,550仟元
+      detail: 處分不動產、廠房及設備
+      event_date: null
+    evidence_level: primary
+    id: org.hermes-epitek
+    name: 漢民科技股份有限公司
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣4.5億元
+    as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 取得新竹科學園區廠房及附屬廠務設施
+    details:
+    - 取得新竹科學園區廠房及附屬廠務設施
+    edge: e76b5f0315c6e
+    event_date: '2024-05-06'
+    events:
+    - amount: 新台幣4.5億元
+      detail: 取得新竹科學園區廠房及附屬廠務設施
+      event_date: '2024-05-06'
+    evidence_level: primary
+    id: org.taiwan-hightech
+    name: 台灣高技股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣26,568仟元
+    as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 向母公司處分不動產、廠房及設備
+    details:
+    - 向母公司處分不動產、廠房及設備
+    edge: ea8ff7c939608
+    event_date: null
+    events:
+    - amount: 新台幣26,568仟元
+      detail: 向母公司處分不動產、廠房及設備
+      event_date: null
+    evidence_level: primary
+    id: tw.3707
+    name: 漢磊
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
 unresolved_mentions:
-- 國際大廠客戶：年報未具名。
-- 鍺矽磊晶客戶：具名媒體報導未揭露公司名稱。
+- 114年度年報以A公司、B公司代稱的主要客戶，未將代稱逕自對應具名公司。
+- 114年度年報以A公司、B公司、C公司代稱的主要進貨廠商。
+- 2026年9月法說報導提及的日系IDM大廠。
+- 2026年9月法說報導提及的美系國際一線CSP客戶。
+- 國內晶圓代工客戶及其他關係人，部分交易未揭露具名對象。
 website: www.epi.episil.com
 tax_id: '16130388'
 incorporated: '1998-11-09'
 listed: '2002-12-24'
-as_of: '2026-10-15'
+as_of: '2026-10-25'
 confidence: ai_cross_checked
 has_research: true
 evidence:
   tw.3016#e1:
-    locator: 公司全名、營業項目及股票代號欄
+    locator: 嘉晶概要／公司全名、營業項目及股票代號
     published_date: null
     publisher: 嘉晶電子股份有限公司
     quote_check: found
     title: 嘉晶概要
     url: https://www.epi.episil.com/Default/Company_Profile/quick-facts
   tw.3016#e10:
-    locator: 子公司標題及公司名稱
+    locator: 子公司／日本嘉晶電子株式會社
     published_date: null
     publisher: 嘉晶電子股份有限公司
     quote_check: found
     title: 企業據點－子公司
     url: https://www.epi.episil.com/Default/Locations/subsidiary
   tw.3016#e11:
-    locator: 日本嘉晶電子株式會社營業項目
-    published_date: null
+    locator: 第15頁／附註四（三）2／列入合併財務報告之子公司表；115年6月30日持股欄
+    published_date: '2026-07-28'
     publisher: 嘉晶電子股份有限公司
     quote_check: found
-    title: 企業據點－子公司
-    url: https://www.epi.episil.com/Default/Locations/subsidiary
+    title: 嘉晶電子115年第二季合併財務報告
+    url: https://www.epi.episil.com/uploads/03_investment/Financial_Statements/2026Q2_Consolidated_Financial_Report.pdf
+  tw.3016#e12:
+    locator: 第36頁／附註七（三）1／115年1月1日至6月30日商品銷售表；單位新台幣仟元
+    published_date: '2026-07-28'
+    publisher: 嘉晶電子股份有限公司
+    quote_check: found
+    title: 嘉晶電子115年第二季合併財務報告
+    url: https://www.epi.episil.com/uploads/03_investment/Financial_Statements/2026Q2_Consolidated_Financial_Report.pdf
+  tw.3016#e13:
+    locator: 第37頁／附註七（三）2／115年1月1日至6月30日進貨表；單位新台幣仟元
+    published_date: '2026-07-28'
+    publisher: 嘉晶電子股份有限公司
+    quote_check: found
+    title: 嘉晶電子115年第二季合併財務報告
+    url: https://www.epi.episil.com/uploads/03_investment/Financial_Statements/2026Q2_Consolidated_Financial_Report.pdf
+  tw.3016#e14:
+    locator: 刊載公開資訊觀測站重大訊息／說明第2至3項
+    published_date: '2024-05-06'
+    publisher: MoneyDJ理財網
+    quote_check: found
+    title: 嘉晶董事會通過取得新竹科學園區廠房案，計4.5億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=2051c15f-cc86-45b8-b494-d4f9cd33975a
+  tw.3016#e15:
+    locator: 第50頁／附註七（三）5（1）取得不動產、廠房及設備；113年度欄；單位新台幣仟元
+    published_date: '2025-02-24'
+    publisher: 嘉晶電子股份有限公司
+    quote_check: found
+    title: 嘉晶電子113年度合併財務報告
+    url: https://www.epi.episil.com/uploads/03_investment/Financial_Statements/2024Q4_Consolidated_Financial_Report.pdf
+  tw.3016#e16:
+    locator: 第50頁／附註七（三）5（2）處分不動產、廠房及設備；113年度欄；單位新台幣仟元
+    published_date: '2025-02-24'
+    publisher: 嘉晶電子股份有限公司
+    quote_check: found
+    title: 嘉晶電子113年度合併財務報告
+    url: https://www.epi.episil.com/uploads/03_investment/Financial_Statements/2024Q4_Consolidated_Financial_Report.pdf
+  tw.3016#e17:
+    locator: 第38頁／附註七（三）5（1）處分不動產、廠房及設備；114年1月1日至6月30日比較欄；單位新台幣仟元
+    published_date: '2026-07-28'
+    publisher: 嘉晶電子股份有限公司
+    quote_check: found
+    title: 嘉晶電子115年第二季合併財務報告
+    url: https://www.epi.episil.com/uploads/03_investment/Financial_Statements/2026Q2_Consolidated_Financial_Report.pdf
   tw.3016#e2:
-    locator: 印刷頁54／PDF第57頁，營業比重；欄序為113年度及114年度營收與比重
+    locator: 印刷頁54／肆、營運概況／一、業務內容／營業比重；114年度欄
     published_date: null
     publisher: 嘉晶電子股份有限公司
     quote_check: found
-    title: 嘉晶電子股份有限公司114年度年報
+    title: 嘉晶電子114年度年報
     url: https://www.epi.episil.com/uploads/03_investment/Stockholder_Meeting/2026-Annual-Report.pdf
   tw.3016#e3:
-    locator: 印刷頁56／PDF第59頁，產業上、中、下游之關聯性
+    locator: 印刷頁56／產業上、中、下游之關聯性
     published_date: null
     publisher: 嘉晶電子股份有限公司
     quote_check: found
-    title: 嘉晶電子股份有限公司114年度年報
+    title: 嘉晶電子114年度年報
     url: https://www.epi.episil.com/uploads/03_investment/Stockholder_Meeting/2026-Annual-Report.pdf
   tw.3016#e4:
-    locator: 矽磊晶產品介紹首段
+    locator: 矽磊晶／產品說明首句
     published_date: null
     publisher: 嘉晶電子股份有限公司
     quote_check: found
-    title: 矽磊晶
+    title: 磊晶產品－矽磊晶
     url: https://www.epi.episil.com/Default/Epitaxial_Products/si-epitaxy
   tw.3016#e5:
-    locator: 碳化矽磊晶產品介紹
+    locator: 碳化矽磊晶／產品說明
     published_date: null
     publisher: 嘉晶電子股份有限公司
     quote_check: found
-    title: 碳化矽磊晶
+    title: 磊晶產品－碳化矽磊晶
     url: https://www.epi.episil.com/Default/Epitaxial_Products/sic-sic-epitaxy
   tw.3016#e6:
-    locator: 氮化鎵磊晶產品介紹
+    locator: 氮化鎵磊晶／產品說明
     published_date: null
     publisher: 嘉晶電子股份有限公司
     quote_check: found
-    title: 氮化鎵磊晶
+    title: 磊晶產品－氮化鎵磊晶
     url: https://www.epi.episil.com/Default/Epitaxial_Products/gan-si-epitaxy
   tw.3016#e7:
-    locator: 矽光子相關佈局段落，總經理溫錦祥說明
+    locator: 矽光子業務段落／記者朱子呈
     published_date: '2026-09-22'
-    publisher: 自由時報
+    publisher: 經濟日報
     quote_check: found
-    title: 嘉晶矽光子需求看到2028年 明年產能擴4倍仍不及需求的5成
-    url: https://ec.ltn.com.tw/article/breakingnews/5582694
+    title: 嘉晶法說會／AI電源、矽光子雙引擎啟動 全年營收拚增逾35%
+    url: https://udn.com/news/story/7252/9771121
   tw.3016#e8:
-    locator: 鍺矽磊晶應用段落，總經理溫錦祥說明
-    published_date: '2026-09-22'
-    publisher: 自由時報
-    quote_check: found
-    title: 嘉晶矽光子需求看到2028年 明年產能擴4倍仍不及需求的5成
-    url: https://ec.ltn.com.tw/article/breakingnews/5582694
-  tw.3016#e9:
-    locator: 母公司標題及公司名稱
-    published_date: null
+    locator: 第12頁／附註一、公司沿革
+    published_date: '2026-07-28'
     publisher: 嘉晶電子股份有限公司
     quote_check: found
-    title: 企業據點－母公司
-    url: https://www.epi.episil.com/Default/Locations/parent-company
+    title: 嘉晶電子115年第二季合併財務報告
+    url: https://www.epi.episil.com/uploads/03_investment/Financial_Statements/2026Q2_Consolidated_Financial_Report.pdf
+  tw.3016#e9:
+    locator: 第37頁／附註七（二）關係人之名稱及關係
+    published_date: '2025-11-04'
+    publisher: 嘉晶電子股份有限公司
+    quote_check: found
+    title: 嘉晶電子114年第三季合併財務報告
+    url: https://www.epi.episil.com/uploads/03_investment/Financial_Statements/2025Q3_Consolidated_Financial_Report.pdf

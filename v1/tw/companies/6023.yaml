@@ -26,36 +26,51 @@ chain_stage:
   stage_name: 金融服務
   tier: not_applicable
 primary_chain_position: not_applicable
-summary_short: 以期貨經紀收入為主，兼營自營、顧問與槓桿交易商業務。
-summary_long: 元大期貨主要經營期貨經紀、期貨自營、期貨顧問及槓桿交易商業務，收入結構以經紀業務為主。2025年年報揭露，經紀收入占93.44%，自營收入占6.34%，顧問收入占0.22%，三項合計為100%。槓桿交易商業務提供外幣保證金與結構型商品等服務。依2026年第一季合併財報，母公司及最終控制者為元大金融控股股份有限公司，合併子公司包括元大期貨(香港)有限公司及元大國際(新加坡)有限公司，兩者均為全資子公司。
+summary_short: 以國內外期貨及選擇權經紀為主要收入，兼營自營、顧問及槓桿交易。
+summary_long: 元大期貨以國內外期貨及選擇權經紀服務為核心，並經營自營交易、期貨顧問及槓桿交易業務。2025年年報營業比重中，經紀收入占93.44%，自營收入占6.34%，顧問收入占0.22%。元大證券是其期貨交易輔助人，也與其有經紀手續費往來。元大金融控股為母公司，元大期貨並全資持有香港及新加坡子公司。2025年4月向新加坡子公司增資2,300萬美元，原子公司勝元期資訊於同月完成清算。2026年元大金控公告認購其現金增資，認購總額為新臺幣3,060,351,913元。
 segments:
 - evidence_ids:
-  - e1
+  - e2
   id: brokerage
   name: 經紀收入
   period: '2025'
   revenue_share_pct: 93.44
 - evidence_ids:
-  - e1
+  - e2
   id: proprietary
   name: 自營收入
   period: '2025'
   revenue_share_pct: 6.34
 - evidence_ids:
-  - e1
-  id: advisory
+  - e2
+  id: consultancy
   name: 顧問收入
   period: '2025'
   revenue_share_pct: 0.22
 relations:
+  customers:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 期貨經紀服務
+    details:
+    - 期貨經紀服務
+    edge: e4e8f26d51e73
+    evidence_level: primary
+    id: org.yuanta-securities
+    name: 元大證券股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   parents:
-  - as_of: '2026-03-31'
+  - as_of: '2026-08-27'
     confidence: ai_cross_checked
     counterparty_shares: []
     detail: 直接持股65.06%之期貨子公司
     details:
     - 直接持股65.06%之期貨子公司
-    - 母公司及最終控制者
+    - 控股母公司
     edge: e993b85236918
     evidence_level: primary
     id: tw.2885
@@ -64,27 +79,98 @@ relations:
     share_basis: null
     share_pct: null
     weight: 2
-  subsidiaries:
-  - as_of: '2026-03-31'
+  partners:
+  - as_of: '2025-06-19'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 香港全資子公司
+    detail: 跨境期貨市場拓展
     details:
-    - 香港全資子公司
-    edge: e78528c6a0875
+    - 跨境期貨市場拓展
+    edge: e36162f3e14d1
     evidence_level: primary
-    id: org.yuanta-futures-hong-kong
+    id: org.sgx-group
+    name: 新加坡交易所（SGX）
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 期貨交易輔助人通路
+    details:
+    - 期貨交易輔助人通路
+    edge: ec0ddd2900d43
+    evidence_level: primary
+    id: org.yuanta-securities
+    name: 元大證券股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-08-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 國外期貨商品推廣活動
+    details:
+    - 國外期貨商品推廣活動
+    edge: e22dc63d12f3f
+    evidence_level: media
+    id: us.CME
+    name: 芝商所(CME Group)
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2025-04-18'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 原子公司完成解散清算
+    details:
+    - 原子公司完成解散清算
+    edge: e7cc19e1ec9f3
+    evidence_level: primary
+    id: org.syf-information
+    name: 勝元期資訊股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-01-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 原關係企業完成解散清算
+    details:
+    - 原關係企業完成解散清算
+    edge: e2d17446a4448
+    evidence_level: primary
+    id: org.syf-information-shanghai
+    name: 勝元期信息科技(上海)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 香港全資金融服務子公司
+    details:
+    - 香港全資金融服務子公司
+    edge: e86887a7f9c41
+    evidence_level: primary
+    id: org.yuanta-futures-hk
     name: 元大期貨(香港)有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-03-31'
+  - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 新加坡全資子公司
+    detail: 新加坡全資金融服務子公司
     details:
-    - 新加坡全資子公司
+    - 新加坡全資金融服務子公司
     edge: e11b9d17f3fe7
     evidence_level: primary
     id: org.yuanta-global-singapore
@@ -93,67 +179,223 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  suppliers:
+  - as_of: '2025-01-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 微軟EA授權採購
+    details:
+    - 微軟EA授權採購
+    edge: e234eb915221a
+    evidence_level: primary
+    id: org.systex-software-service
+    name: 精誠軟體服務股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-01-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 板橋IDC機房高頻交易網路設備
+    details:
+    - 板橋IDC機房高頻交易網路設備
+    edge: e3f8d9cc62654
+    evidence_level: primary
+    id: org.中孚科技股份有限公司
+    name: 中孚科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 新臺幣約555,965,238元
+    as_of: '2026-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 自用不動產都市更新權利變換
+    details:
+    - 自用不動產都市更新權利變換
+    edge: efe86af7555b3
+    event_date: '2026-09-30'
+    events:
+    - amount: 新臺幣約555,965,238元
+      detail: 自用不動產都市更新權利變換
+      event_date: '2026-09-30'
+    evidence_level: primary
+    id: org.yuanta-development
+    name: 元大建設
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 2,300萬美元
+    as_of: '2025-04-01'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 向新加坡子公司增資
+    details:
+    - 向新加坡子公司增資
+    edge: ea7ade3459b3c
+    event_date: '2025-04-01'
+    events:
+    - amount: 2,300萬美元
+      detail: 向新加坡子公司增資
+      event_date: '2025-04-01'
+    evidence_level: primary
+    id: org.yuanta-global-singapore
+    name: 元大國際(新加坡)有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新臺幣3,060,351,913元
+    as_of: '2026-08-27'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 母公司認購2026年度現金增資
+    details:
+    - 母公司認購2026年度現金增資
+    edge: e1a30652dbe76
+    event_date: '2026-08-27'
+    events:
+    - amount: 新臺幣3,060,351,913元
+      detail: 母公司認購2026年度現金增資
+      event_date: '2026-08-27'
+    evidence_level: primary
+    id: tw.2885
+    name: 元大金
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.yuantafutures.com.tw/
 tax_id: '97179282'
 incorporated: '1997-04-09'
 listed: '2007-11-28'
-as_of: '2026-10-15'
+as_of: '2026-10-25'
 confidence: ai_cross_checked
 has_research: true
 evidence:
-  tw.6023#e1:
-    locator: 第129頁，肆、營運概況，一、業務內容，營業比重；欄序為113年、114年
-    published_date: null
-    publisher: 元大期貨股份有限公司
+  tw.6023#e10:
+    locator: 第130頁，產業之現況／市場參與業者現況
+    published_date: '2025-01-31'
+    publisher: 元大期貨
     quote_check: found
-    title: 元大期貨114年度年報
-    url: https://www.yuanta.com/Files/d1fc1e9a-45d2-46e9-928d-5e60d60aa8df/YF2025_C.pdf
+    title: 元大期貨113年度年報
+    url: https://www.yuantafutures.com.tw/UploadFile/img/202505/f59f0495-8c1c-48bc-8821-425ea0ef1893%E5%85%83%E5%A4%A7%E6%9C%9F%E8%B2%A8113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1%28%E4%B8%AD%E6%96%87%E7%89%88%29.pdf
+  tw.6023#e11:
+    locator: 第45至46頁，七、關係人交易／14.經紀手續費收入，115年1月1日至6月30日
+    published_date: null
+    publisher: 元大期貨
+    quote_check: found
+    title: 元大期貨115年第二季合併財務報告
+    url: https://www.yuantafutures.com.tw/UploadFile/img/202608/%E5%85%83%E5%A4%A7%E6%9C%9F%E8%B2%A8115%E5%B9%B4%E7%AC%AC%E4%BA%8C%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1%28%E9%9B%BB%E5%AD%90%E6%9B%B8%29.pdf
+  tw.6023#e12:
+    locator: 新聞內文，活動合作說明
+    published_date: '2026-08-13'
+    publisher: 時報資訊／記者郭鴻慧，元大證券刊載
+    quote_check: found
+    title: 《金融股》元大期貨攜CME推解碼任務！
+    url: https://www.yuanta.com.tw/eYuanta/Securities/News/GetAPItem?Type=StockTodayNews&id=202608130142250
+  tw.6023#e13:
+    locator: 第1頁，新加坡子公司會員資格與合作說明
+    published_date: '2025-06-19'
+    publisher: 元大期貨
+    quote_check: found
+    title: 元大期海外據點再插旗 築亞洲期貨金三角
+    url: https://www.yuanta.com/Files/d1033b0d-c85c-4196-a93b-8af88ce91338/%E3%80%90%E5%85%83%E5%A4%A7%E6%9C%9F%E8%B2%A8%E6%96%B0%E8%81%9E%E7%A8%BF%E3%80%91%E5%85%83%E5%A4%A7%E6%9C%9F%E6%B5%B7%E5%A4%96%E6%93%9A%E9%BB%9E%E5%86%8D%E6%8F%92%E6%97%97%20%E7%AF%89%E4%BA%9E%E6%B4%B2%E6%9C%9F%E8%B2%A8%E9%87%91%E4%B8%89%E8%A7%92.pdf
+  tw.6023#e14:
+    locator: 第147頁，七、重要契約／板橋IDC機房高頻交易網路設備採購案
+    published_date: '2025-01-31'
+    publisher: 元大期貨
+    quote_check: found
+    title: 元大期貨113年度年報
+    url: https://www.yuantafutures.com.tw/UploadFile/img/202505/f59f0495-8c1c-48bc-8821-425ea0ef1893%E5%85%83%E5%A4%A7%E6%9C%9F%E8%B2%A8113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1%28%E4%B8%AD%E6%96%87%E7%89%88%29.pdf
+  tw.6023#e15:
+    locator: 第148頁，七、重要契約／微軟EA授權採購
+    published_date: '2025-01-31'
+    publisher: 元大期貨
+    quote_check: found
+    title: 元大期貨113年度年報
+    url: https://www.yuantafutures.com.tw/UploadFile/img/202505/f59f0495-8c1c-48bc-8821-425ea0ef1893%E5%85%83%E5%A4%A7%E6%9C%9F%E8%B2%A8113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1%28%E4%B8%AD%E6%96%87%E7%89%88%29.pdf
+  tw.6023#e16:
+    locator: 公告第6項，交易相對人
+    published_date: '2026-09-30'
+    publisher: 公開資訊觀測站重大訊息，MoneyDJ刊載
+    quote_check: found
+    title: 元大期貨更正公告與利害關係人共同申請變更自有不動產都市更新案權利變換計畫
+    url: https://m.moneydj.com/f1a.aspx?a=63d0ee10-aea3-4cf4-834e-730f3ee68485&c=MB00
+  tw.6023#e17:
+    locator: 公告第5項交易金額；第27項揭露向關係人取得不動產或使用權資產
+    published_date: '2026-09-30'
+    publisher: 公開資訊觀測站重大訊息，MoneyDJ刊載
+    quote_check: found
+    title: 元大期貨更正公告與利害關係人共同申請變更自有不動產都市更新案權利變換計畫
+    url: https://m.moneydj.com/f1a.aspx?a=63d0ee10-aea3-4cf4-834e-730f3ee68485&c=MB00
+  tw.6023#e18:
+    locator: 第128頁，轉投資事業資料註2
+    published_date: null
+    publisher: 元大期貨
+    quote_check: found
+    title: 元大期貨112年度年報
+    url: https://www.yuanta.com/Files/20f7e65f-098c-4eb1-879d-890899a9d824/YF2023_C.pdf
   tw.6023#e2:
-    locator: 一、元大期貨主要營業內容，期貨經紀
-    published_date: null
-    publisher: 元大期貨股份有限公司
-    quote_check: not_found
-    title: 營業內容與服務優勢
-    url: https://www.yuantafutures.com.tw/companyprofile_02
+    locator: 印刷頁193，Business weightage，2024與2025營業收入及比重表
+    published_date: '2025-12-31'
+    publisher: 元大期貨
+    quote_check: found
+    title: 2025 Annual Report
+    url: https://www.yuantafutures.com.tw/UploadFile/img/202605/114%E5%B9%B4%E5%85%83%E5%A4%A7%E6%9C%9F%E8%B2%A8%E5%B9%B4%E5%A0%B1%28%E8%8B%B1%E6%96%87%E7%89%88%29.pdf
   tw.6023#e3:
-    locator: 一、元大期貨主要營業內容，期貨自營
+    locator: 一、元大期貨主要營業內容／期貨經紀
     published_date: null
-    publisher: 元大期貨股份有限公司
-    quote_check: not_found
+    publisher: 元大期貨
+    quote_check: found
     title: 營業內容與服務優勢
     url: https://www.yuantafutures.com.tw/companyprofile_02
   tw.6023#e4:
-    locator: 一、元大期貨主要營業內容，期貨顧問
+    locator: 一、元大期貨主要營業內容／期貨自營、期貨顧問、槓桿交易商各列
     published_date: null
-    publisher: 元大期貨股份有限公司
+    publisher: 元大期貨
     quote_check: not_found
     title: 營業內容與服務優勢
     url: https://www.yuantafutures.com.tw/companyprofile_02
   tw.6023#e5:
-    locator: 一、元大期貨主要營業內容，槓桿交易商
-    published_date: null
-    publisher: 元大期貨股份有限公司
+    locator: 第7項，交易對象及增資方式
+    published_date: '2026-08-27'
+    publisher: 元大金融控股
     quote_check: found
-    title: 營業內容與服務優勢
-    url: https://www.yuantafutures.com.tw/companyprofile_02
+    title: 元大金控補充公告認購子公司元大期貨115年度現金增資事宜
+    url: https://www.yuanta.com/TW/News-and-Media/Announcements/Detail?id=b5aa5167-ba76-48c8-98bc-345ea510224a
   tw.6023#e6:
-    locator: 第31頁，附註七(一)
-    published_date: '2026-05-06'
-    publisher: 元大期貨股份有限公司
+    locator: 第5項，交易總金額
+    published_date: '2026-08-27'
+    publisher: 元大金融控股
     quote_check: found
-    title: 元大期貨股份有限公司及子公司115年及114年第一季合併財務報告
-    url: https://www.yuantafutures.com.tw/UploadFile/img/202605/ce612dbf-5ecc-4c56-bc28-a2edfc34f7f0(%E9%9B%BB%E5%AD%90%E6%9B%B8)%E5%85%83%E5%A4%A7%E6%9C%9F%E8%B2%A8115%E5%B9%B4%E7%AC%AC%E4%B8%80%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
+    title: 元大金控補充公告認購子公司元大期貨115年度現金增資事宜
+    url: https://www.yuanta.com/TW/News-and-Media/Announcements/Detail?id=b5aa5167-ba76-48c8-98bc-345ea510224a
   tw.6023#e7:
-    locator: 第14頁，附註四(三)2，列入合併財務報告之子公司；首欄持股日期為115年3月31日
-    published_date: '2026-05-06'
-    publisher: 元大期貨股份有限公司
+    locator: 第18頁，列入合併財務報告之子公司；115年6月30日持股欄
+    published_date: null
+    publisher: 元大期貨
     quote_check: found
-    title: 元大期貨股份有限公司及子公司115年及114年第一季合併財務報告
-    url: https://www.yuantafutures.com.tw/UploadFile/img/202605/ce612dbf-5ecc-4c56-bc28-a2edfc34f7f0(%E9%9B%BB%E5%AD%90%E6%9B%B8)%E5%85%83%E5%A4%A7%E6%9C%9F%E8%B2%A8115%E5%B9%B4%E7%AC%AC%E4%B8%80%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
+    title: 元大期貨115年第二季合併財務報告
+    url: https://www.yuantafutures.com.tw/UploadFile/img/202608/%E5%85%83%E5%A4%A7%E6%9C%9F%E8%B2%A8115%E5%B9%B4%E7%AC%AC%E4%BA%8C%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1%28%E9%9B%BB%E5%AD%90%E6%9B%B8%29.pdf
   tw.6023#e8:
-    locator: 第14頁，附註四(三)2，列入合併財務報告之子公司；首欄持股日期為115年3月31日
-    published_date: '2026-05-06'
-    publisher: 元大期貨股份有限公司
+    locator: 第49頁，十五、重大之期後事項
+    published_date: null
+    publisher: 元大期貨
     quote_check: found
-    title: 元大期貨股份有限公司及子公司115年及114年第一季合併財務報告
-    url: https://www.yuantafutures.com.tw/UploadFile/img/202605/ce612dbf-5ecc-4c56-bc28-a2edfc34f7f0(%E9%9B%BB%E5%AD%90%E6%9B%B8)%E5%85%83%E5%A4%A7%E6%9C%9F%E8%B2%A8115%E5%B9%B4%E7%AC%AC%E4%B8%80%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
+    title: 元大期貨114年第一季合併財務報告
+    url: https://www.yuanta.com/Files/7da2424a-0979-4fea-9671-494d1239c82f/YFC2025Q1C.pdf
+  tw.6023#e9:
+    locator: 第18頁，列入合併財務報告之子公司註1
+    published_date: null
+    publisher: 元大期貨
+    quote_check: found
+    title: 元大期貨114年第二季合併財務報告
+    url: https://www.yuanta.com/Files/27955f1e-2385-4e90-97c7-dba7c3708776/YFC2025Q2C.pdf

@@ -26,33 +26,39 @@ chain_stage:
   stage_name: 模組與零組件
   tier: midstream
 primary_chain_position: midstream
-summary_short: 製造光通訊元件與模組，銷售光纖套件、跳線、分波及分光產品。
-summary_long: 波若威製造光通訊元件與模組，主要產品包括WDM波長分波多工模組、Branch高通道光模組、光纖套件、客製Jumper及光纖配線盒。2025年產品營收占比為OIN 33%、Branch 28%、WDM 27%及AMP 12%。光纖套件與跳線應用於AI及資料中心伺服器，配線盒對應CPO高密度光纖布局，WDM與Branch亦用於PON／FTTH。公司入選NVIDIA矽光子生態系，並布局CPO用光纖套件與光纖配線盒。
+summary_short: 設計、生產及銷售光通訊元件、光纖連接產品與模組。
+summary_long: 波若威從事光通訊元件與模組的設計、生產及銷售，產品分為光波長分合、光能量分合、光能量放大與光纖連接四類。2024年光纖連接產品占營收35.99%，光能量分合占29.70%，光波長分合占28.68%，光能量放大占5.13%。公司另開發CPO用可插拔光纖陣列套件與光纖配線盒，並提供應用於AI資料中心的800G／1.6T光纖跳線與纜線。公司與NVIDIA建立矽光子生態系合作關係，參與光連接器與光纖組件領域。集團包含Browave Holding Inc.、菲律賓子公司及透過控股公司持有的中山子公司。
 segments:
 - evidence_ids:
   - e2
-  id: seg.oin
-  name: OIN產品群
-  period: '2025'
-  revenue_share_pct: 33
+  id: seg_oin
+  name: 光纖連接產品（OIN）
+  period: '2024'
+  revenue_share_pct: 35.99
 - evidence_ids:
-  - e2
-  id: seg.branch
-  name: Branch產品群
-  period: '2025'
-  revenue_share_pct: 28
+  - e3
+  id: seg_branch
+  name: 光能量分合產品（Branch）
+  period: '2024'
+  revenue_share_pct: 29.7
 - evidence_ids:
-  - e2
-  id: seg.wdm
-  name: WDM產品群
-  period: '2025'
-  revenue_share_pct: 27
+  - e3
+  id: seg_wdm
+  name: 光波長分合產品（WDM）
+  period: '2024'
+  revenue_share_pct: 28.68
 - evidence_ids:
-  - e2
-  id: seg.amp
-  name: AMP產品群
-  period: '2025'
-  revenue_share_pct: 12
+  - e4
+  id: seg_amp
+  name: 光能量放大產品（AMP）
+  period: '2024'
+  revenue_share_pct: 5.13
+- evidence_ids:
+  - e5
+  id: seg_other
+  name: 其他
+  period: '2024'
+  revenue_share_pct: 0.5
 main_theme: theme.ai_server
 themes:
 - also: []
@@ -68,21 +74,51 @@ themes:
   theme: theme.nvidia
   tier: midstream
 - also: []
-  stage: modules
+  stage: devices
   theme: theme.silicon_photonics
-  tier: downstream
+  tier: midstream
 - also: []
   stage: components
   theme: theme.cpo
   tier: upstream
 relations:
+  customers:
+  - as_of: '2025-09-01'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 資料中心光纖套件，媒體報導
+    details:
+    - 資料中心光纖套件，媒體報導
+    edge: ebb6d70eacdee
+    evidence_level: media
+    id: us.GOOGL
+    name: Alphabet
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  partners:
+  - as_of: '2025-03-27'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 矽光子與CPO生態系光連接合作
+    details:
+    - 矽光子與CPO生態系光連接合作
+    edge: e17db6373eec1
+    evidence_level: primary
+    id: us.NVDA
+    name: NVIDIA
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持有100%股權的子公司
+    detail: 直接持有100%的投資控股子公司
     details:
-    - 直接持有100%股權的子公司
+    - 直接持有100%的投資控股子公司
     edge: e064acb508219
     evidence_level: primary
     id: org.browave-holding
@@ -94,9 +130,9 @@ relations:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持有100%股權的子公司
+    detail: 直接持有100%的菲律賓子公司
     details:
-    - 直接持有100%股權的子公司
+    - 直接持有100%的菲律賓子公司
     edge: e36b6587712cd
     evidence_level: primary
     id: org.browave-philippines
@@ -108,9 +144,9 @@ relations:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 透過Browave Holding Inc.間接持有100%股權
+    detail: 透過Browave Holding Inc.間接持有100%的子公司
     details:
-    - 透過Browave Holding Inc.間接持有100%股權
+    - 透過Browave Holding Inc.間接持有100%的子公司
     edge: eec14c71593f8
     evidence_level: primary
     id: org.browave-zhongshan
@@ -119,88 +155,150 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  suppliers:
+  - as_of: '2026-03-16'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 濾光片供應
+    details:
+    - 濾光片供應
+    edge: ea41c65f304df
+    evidence_level: media
+    id: tw.6426
+    name: 統新
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 2024年年報以代碼揭露的C客戶、J客戶、F客戶及D廠商，未揭露實名。
+- CPO光纖套件與光纖配線盒開發客戶，公司文件未具名。
+- 菲律賓擴產涉及的廠房出租人與設備供應商，已讀資料未具名。
+- 上詮股票處分交易的市場買方，公告未具名。
 website: http://www.browave.com
 tax_id: '16586555'
 incorporated: '1998-05-18'
 listed: '2012-12-03'
-as_of: '2026-10-14'
+as_of: '2026-10-25'
 confidence: ai_cross_checked
 has_research: true
 evidence:
+  tw.3163#e1:
+    locator: 公司名稱、統一編號及主要經營業務欄
+    published_date: null
+    publisher: 波若威科技股份有限公司
+    quote_check: found
+    title: 公司概況
+    url: https://www.browave.com/investors/Category/20
   tw.3163#e10:
-    locator: 第14頁；四(三)2列入合併財務報告之子公司；115年6月30日持股欄
-    published_date: null
-    publisher: 波若威科技股份有限公司
+    locator: 正文，Optical fiber, connectors, and micro-optics段；非AI摘要
+    published_date: '2025-03-27'
+    publisher: NVIDIA
     quote_check: found
-    title: 2026 Q2 合併財務報告
-    url: https://www.browave.com/uploads/images/2026Q2%20%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf
+    title: A New Era in Data Center Networking with NVIDIA Silicon Photonics-based Network Switching
+    url: https://developer.nvidia.com/blog/a-new-era-in-data-center-networking-with-nvidia-silicon-photonics-based-network-switching/
   tw.3163#e11:
-    locator: 第14頁；四(三)2列入合併財務報告之子公司；115年6月30日持股欄
-    published_date: null
-    publisher: 波若威科技股份有限公司
+    locator: 正文末段
+    published_date: '2026-03-16'
+    publisher: 經濟日報／記者秦鈺翔
     quote_check: found
-    title: 2026 Q2 合併財務報告
-    url: https://www.browave.com/uploads/images/2026Q2%20%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf
+    title: 波若威出關亮燈漲停 統新強勢反彈
+    url: https://money.udn.com/money/story/5607/9382588?from=edn_newest_index
   tw.3163#e12:
-    locator: 第14頁；四(三)2列入合併財務報告之子公司；115年6月30日持股欄
-    published_date: null
-    publisher: 波若威科技股份有限公司
+    locator: 正文第二段；第一段說明產品為資料中心光纖套件
+    published_date: '2025-09-01'
+    publisher: 財訊快報／編輯部，富聯網刊載
     quote_check: found
-    title: 2026 Q2 合併財務報告
+    title: 經濟證券頭條：波若威奪Google大單
+    url: https://ww2.money-link.com.tw/realtimenews/NewsContent.aspx?PU=0009&SN=2254966002
+  tw.3163#e13:
+    locator: 第14頁，附註四（三）列入合併財務報告之子公司
+    published_date: '2026-08-06'
+    publisher: 波若威科技股份有限公司及子公司
+    quote_check: found
+    title: 民國115年及114年第二季合併財務報告暨會計師核閱報告
     url: https://www.browave.com/uploads/images/2026Q2%20%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf
+  tw.3163#e14:
+    locator: 第42頁，附表三，關係欄
+    published_date: '2026-08-06'
+    publisher: 波若威科技股份有限公司及子公司
+    quote_check: found
+    title: 民國115年及114年第二季合併財務報告暨會計師核閱報告
+    url: https://www.browave.com/uploads/images/2026Q2%20%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf
+  tw.3163#e15:
+    locator: 第14頁，附註四（三）合併子公司表；第42頁另確認間接持有100%
+    published_date: '2026-08-06'
+    publisher: 波若威科技股份有限公司及子公司
+    quote_check: found
+    title: 民國115年及114年第二季合併財務報告暨會計師核閱報告
+    url: https://www.browave.com/uploads/images/2026Q2%20%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf
+  tw.3163#e16:
+    locator: 公告標題及正文第1、2、5、13項
+    published_date: '2026-04-17'
+    publisher: MoneyDJ，轉載公開資訊觀測站重大訊息公告
+    quote_check: found
+    title: 波若威114/12/3~115/4/17處分上詮300張，獲利約1.72億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=5b3d1f53-fc21-473d-b8b4-1d225e356978
+  tw.3163#e17:
+    locator: 公告第5項第3款
+    published_date: '2026-04-17'
+    publisher: MoneyDJ，轉載公開資訊觀測站重大訊息公告
+    quote_check: found
+    title: 波若威114/12/3~115/4/17處分上詮300張，獲利約1.72億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=5b3d1f53-fc21-473d-b8b4-1d225e356978
   tw.3163#e2:
-    locator: 第5頁；114年產品及銷售區域比重；產品營收比重表
-    published_date: '2026-03-10'
-    publisher: 波若威科技股份有限公司
-    quote_check: not_found
-    title: 115年法說會簡報
-    url: https://www.browave.com/uploads/images/115%20%E6%B3%95%E8%AA%AA(%E4%B8%AD)1150310.pdf
-  tw.3163#e3:
-    locator: 產品規格；波長分波多工模組介紹
-    published_date: null
+    locator: 印刷頁49，主要產品及服務項目之營業比例；右側為113年度
+    published_date: '2025-03-31'
     publisher: 波若威科技股份有限公司
     quote_check: found
-    title: 波長分波多工模組
-    url: https://www.browave.com/product/category/34
+    title: 民國113年度年報
+    url: https://www.browave.com/uploads/images/113_Annual_Report.pdf
+  tw.3163#e3:
+    locator: 印刷頁49，主要產品及服務項目之營業比例；右側為113年度
+    published_date: '2025-03-31'
+    publisher: 波若威科技股份有限公司
+    quote_check: found
+    title: 民國113年度年報
+    url: https://www.browave.com/uploads/images/113_Annual_Report.pdf
   tw.3163#e4:
-    locator: 第14頁；波若威產品聚焦；PON／FTTH產品項
-    published_date: '2026-03-10'
+    locator: 印刷頁49，主要產品及服務項目之營業比例；右側為113年度
+    published_date: '2025-03-31'
     publisher: 波若威科技股份有限公司
-    quote_check: not_found
-    title: 115年法說會簡報
-    url: https://www.browave.com/uploads/images/115%20%E6%B3%95%E8%AA%AA(%E4%B8%AD)1150310.pdf
+    quote_check: found
+    title: 民國113年度年報
+    url: https://www.browave.com/uploads/images/113_Annual_Report.pdf
   tw.3163#e5:
-    locator: 第14頁；波若威產品聚焦；光纖套件產品項
-    published_date: '2026-03-10'
+    locator: 印刷頁49，主要產品及服務項目之營業比例；右側為113年度
+    published_date: '2025-03-31'
     publisher: 波若威科技股份有限公司
-    quote_check: not_found
-    title: 115年法說會簡報
-    url: https://www.browave.com/uploads/images/115%20%E6%B3%95%E8%AA%AA(%E4%B8%AD)1150310.pdf
+    quote_check: found
+    title: 民國113年度年報
+    url: https://www.browave.com/uploads/images/113_Annual_Report.pdf
   tw.3163#e6:
-    locator: 第14頁；波若威產品聚焦；客製Jumper產品項
-    published_date: '2026-03-10'
-    publisher: 波若威科技股份有限公司
-    quote_check: not_found
-    title: 115年法說會簡報
-    url: https://www.browave.com/uploads/images/115%20%E6%B3%95%E8%AA%AA(%E4%B8%AD)1150310.pdf
+    locator: 第12頁，Browave’s CPO Technologies Highlights
+    published_date: '2025-05-19'
+    publisher: Browave Corporation
+    quote_check: found
+    title: Investors Conference Call 2025
+    url: https://www.browave.com/uploads/images/1140519%E6%B3%A2%E8%8B%A5%E5%A8%81%E6%B3%95%E8%AA%AA%E6%9C%83(%E8%8B%B1).pdf
   tw.3163#e7:
-    locator: 第14頁；波若威產品聚焦；光纖配線盒產品項
-    published_date: '2026-03-10'
-    publisher: 波若威科技股份有限公司
-    quote_check: not_found
-    title: 115年法說會簡報
-    url: https://www.browave.com/uploads/images/115%20%E6%B3%95%E8%AA%AA(%E4%B8%AD)1150310.pdf
+    locator: 第12頁，Browave’s CPO Technologies Highlights
+    published_date: '2025-05-19'
+    publisher: Browave Corporation
+    quote_check: found
+    title: Investors Conference Call 2025
+    url: https://www.browave.com/uploads/images/1140519%E6%B3%A2%E8%8B%A5%E5%A8%81%E6%B3%95%E8%AA%AA%E6%9C%83(%E8%8B%B1).pdf
   tw.3163#e8:
-    locator: 第12頁；波若威CPO技術聚焦；光引擎用FAU標示
-    published_date: '2026-03-10'
-    publisher: 波若威科技股份有限公司
-    quote_check: not_found
-    title: 115年法說會簡報
-    url: https://www.browave.com/uploads/images/115%20%E6%B3%95%E8%AA%AA(%E4%B8%AD)1150310.pdf
+    locator: 第5頁，Revenue Results – by Product Group & Territory
+    published_date: '2025-05-19'
+    publisher: Browave Corporation
+    quote_check: found
+    title: Investors Conference Call 2025
+    url: https://www.browave.com/uploads/images/1140519%E6%B3%A2%E8%8B%A5%E5%A8%81%E6%B3%95%E8%AA%AA%E6%9C%83(%E8%8B%B1).pdf
   tw.3163#e9:
-    locator: 新聞標題
+    locator: 公告標題
     published_date: '2025-03-25'
-    publisher: 波若威科技股份有限公司
+    publisher: Browave Corporation
     quote_check: found
     title: Browave Selected as an NVIDIA Silicon Photonics Ecosystem Partner.
-    url: https://www.browave.com/news/16
+    url: https://www.browave.com/news/12

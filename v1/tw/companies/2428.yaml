@@ -18,21 +18,21 @@ industry:
   l3_name: 被動元件
   l3_name_en: Passive Components
 primary_chain_position: midstream
-summary_short: 製造熱敏電阻、壓敏電阻、氣體放電管及溫度與壓力感測器。
-summary_long: 興勤以電子電路保護元件及感測器為主要產品，涵蓋負溫度係數與陶瓷正溫度係數熱敏電阻、壓敏電阻、氣體放電管，以及溫度與壓力感測器。2025年合併財報將主要產品收入分為被動元件與其他，被動元件為主要收入來源。公司提供電動車電池的NTC溫度偵測方案，亦開發資料中心液冷系統所需的壓力與溫度量測元件，並提供5G設備浪湧保護方案。液冷相關產品包含獨立感測器及溫度、壓力整合式感測器。
+summary_short: 製造及銷售熱敏電阻、壓敏電阻與溫度感測器等電子保護元件。
+summary_long: 興勤以電子電路保護元件製造與銷售為主，2025年保護元件占營收97.39%，其他業務占2.61%。產品包括負溫度係數熱敏電阻、陶瓷正溫度係數熱敏電阻、壓敏電阻、氣體放電管及溫度感測器，提供電流、電壓與溫度保護。電動車應用包括電池模組溫度感測；資料中心液冷應用則提供壓力與溫度感測方案。子公司元耀科技製造整流二極體；興勤於2025年11月向越南子公司增資美金20萬元。2024年子公司為勤電子取得二期廠房，交易金額為人民幣1.336億元。
 segments:
 - evidence_ids:
-  - e9
-  id: seg_passive
-  name: 被動元件
-  period: 2025年度
-  revenue_share_pct: null
+  - e01
+  id: seg.protection
+  name: 保護元件
+  period: '2025'
+  revenue_share_pct: 97.39
 - evidence_ids:
-  - e9
-  id: seg_other
+  - e01
+  id: seg.other
   name: 其他
-  period: 2025年度
-  revenue_share_pct: null
+  period: '2025'
+  revenue_share_pct: 2.61
 main_theme: theme.ev
 themes:
 - also: []
@@ -41,24 +41,82 @@ themes:
   tier: midstream
 - also: []
   stage: components
-  theme: theme.5g
-  tier: upstream
+  theme: theme.ai_server
+  tier: midstream
 - also: []
   stage: parts
   theme: theme.liquid_cooling
   tier: upstream
 relations:
+  competitors:
+  - as_of: '2026-05-07'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 熱敏電阻與壓敏電阻
+    details:
+    - 熱敏電阻與壓敏電阻
+    edge: ed4e67a8474e3
+    evidence_level: primary
+    id: jp.6762
+    name: TDK
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-05-07'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 熱敏電阻與壓敏電阻
+    details:
+    - 熱敏電阻與壓敏電阻
+    edge: e4d2e7bf8b2c1
+    evidence_level: primary
+    id: jp.6981
+    name: Murata
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 電路保護元件替代產品
+    details:
+    - 電路保護元件替代產品
+    edge: eca9439037c81
+    evidence_level: primary
+    id: org.bourns
+    name: Bourns
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  parents:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 具實質控制力的控制公司
+    details:
+    - 具實質控制力的控制公司
+    edge: e81041e4a297d
+    evidence_level: primary
+    id: org.播勤投資股份有限公司
+    name: 播勤投資股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接及間接持有的生產子公司
+    detail: 興勤越南
     details:
-    - 直接及間接持有的生產子公司
-    edge: e479e0a7f1e9b
+    - 興勤越南
+    edge: eeeabeacab0ab
     evidence_level: primary
-    id: org.thinking-changzhou
-    name: 興勤（常州）電子有限公司
+    id: org.thinking-viet-nam-electronic-co-ltd
+    name: Thinking (Viet Nam) Electronic Co., Ltd.
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -66,13 +124,13 @@ relations:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 透過興勤國際持有的生產子公司
+    detail: 整流二極體製造子公司
     details:
-    - 透過興勤國際持有的生產子公司
-    edge: ef381d05268a4
+    - 整流二極體製造子公司
+    edge: e661990dd43ee
     evidence_level: primary
-    id: org.thinking-yichang
-    name: 興勤（宜昌）電子有限公司
+    id: org.元耀科技股份有限公司
+    name: 元耀科技股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -80,12 +138,12 @@ relations:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 間接持有的生產子公司
+    detail: 集團間接持有的合併子公司
     details:
-    - 間接持有的生產子公司
-    edge: e5d45549b7042
+    - 集團間接持有的合併子公司
+    edge: e010a327cb649
     evidence_level: primary
-    id: org.weiqin-dongguan
+    id: org.東莞為勤電子有限公司
     name: 東莞為勤電子有限公司
     ranking_basis: unranked
     share_basis: null
@@ -94,120 +152,259 @@ relations:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 透過東莞為勤持有的中山生產子公司
+    detail: 透過興勤香港持有的子公司
     details:
-    - 透過東莞為勤持有的中山生產子公司
-    edge: e39316fe0101b
+    - 透過興勤香港持有的子公司
+    edge: e21014706acd2
     evidence_level: primary
-    id: org.weiqin-zhongshan
+    id: org.江西興勤電子有限公司
+    name: 江西興勤電子有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 中山為勤
+    details:
+    - 中山為勤
+    edge: efeaf427f3b80
+    evidence_level: primary
+    id: org.為勤電子有限公司
     name: 為勤電子有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過興勤國際持有的子公司
+    details:
+    - 透過興勤國際持有的子公司
+    edge: e145b1d237156
+    evidence_level: primary
+    id: org.興勤-宜昌-電子有限公司
+    name: 興勤（宜昌）電子有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 常州合併子公司
+    details:
+    - 常州合併子公司
+    edge: e1d7af6a35175
+    evidence_level: primary
+    id: org.興勤-常州-電子有限公司
+    name: 興勤（常州）電子有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 美金20萬元
+    as_of: 2025-11
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 對越南子公司增資
+    details:
+    - 對越南子公司增資
+    edge: e242e748285a9
+    event_date: null
+    events:
+    - amount: 美金20萬元
+      detail: 對越南子公司增資
+      event_date: null
+    evidence_level: primary
+    id: org.thinking-viet-nam-electronic-co-ltd
+    name: Thinking (Viet Nam) Electronic Co., Ltd.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 人民幣133,600千元
+    as_of: '2024-12-10'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司中山為勤取得二期廠房
+    details:
+    - 子公司中山為勤取得二期廠房
+    edge: efe5e8d487042
+    event_date: '2024-12-10'
+    events:
+    - amount: 人民幣133,600千元
+      detail: 子公司中山為勤取得二期廠房
+      event_date: '2024-12-10'
+    evidence_level: primary
+    id: org.廣東建安昌盛控股集團有限公司
+    name: 廣東建安昌盛控股集團有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 電源供應器製造廠
+- 監視器製造廠
+- 主機板客戶
+- 手機及家電客戶
 website: www.thinking.com.tw
 tax_id: '83639504'
 incorporated: '1979-07-16'
 listed: '2000-09-11'
-as_of: '2026-10-15'
+as_of: '2026-10-26'
 confidence: ai_cross_checked
 has_research: true
 evidence:
-  tw.2428#e0:
-    locator: 企業簡介首段
+  tw.2428#e01:
+    locator: 印刷頁63，營運概況／營業比重
+    published_date: '2026-05-07'
+    publisher: 興勤電子工業股份有限公司
+    quote_check: found
+    title: 興勤電子2025年度年報
+    url: https://www.thinking.com.tw/upload/investor/files/興勤_114年年報_公告資料(中文).pdf
+  tw.2428#e02:
+    locator: 企業簡介第一段
     published_date: null
     publisher: 興勤電子工業股份有限公司
     quote_check: found
     title: 企業簡介
     url: https://www.thinking.com.tw/tw/about.php
-  tw.2428#e1:
-    locator: 產品類別標題及Product Family／Application表
+  tw.2428#e03:
+    locator: 產品類別標題及產品系列表
     published_date: null
     publisher: 興勤電子工業股份有限公司
     quote_check: found
     title: 產品介紹：負溫度係數熱敏電阻
-    url: https://www.thinking.com.tw/tw/product_info.php?brand=%E8%B2%A0%E6%BA%AB%E5%BA%A6%E4%BF%82%E6%95%B8%E7%86%B1%E6%95%8F%E9%9B%BB%E9%98%BB&id=33
-  tw.2428#e10:
-    locator: 第35頁，附註十三子公司；本公司及Greenish持股列、業務性質註3
-    published_date: '2026-03-05'
-    publisher: 興勤電子工業股份有限公司
-    quote_check: found
-    title: 2025年度合併財務報告
-    url: https://www.thinking.com.tw/upload/investor/files/2025Q4%E8%88%88%E5%8B%A4%E9%9B%BB%E5%AD%90%E8%B2%A1%E5%A0%B1_%E4%B8%AD%E6%96%87%E5%90%88%E4%BD%B5.pdf
-  tw.2428#e11:
-    locator: 第35至36頁，附註十三子公司；東莞為勤持股列、業務性質註6
-    published_date: '2026-03-05'
-    publisher: 興勤電子工業股份有限公司
-    quote_check: found
-    title: 2025年度合併財務報告
-    url: https://www.thinking.com.tw/upload/investor/files/2025Q4%E8%88%88%E5%8B%A4%E9%9B%BB%E5%AD%90%E8%B2%A1%E5%A0%B1_%E4%B8%AD%E6%96%87%E5%90%88%E4%BD%B5.pdf
-  tw.2428#e12:
-    locator: 第35頁，附註十三子公司；興勤國際持股列、業務性質註3
-    published_date: '2026-03-05'
-    publisher: 興勤電子工業股份有限公司
-    quote_check: found
-    title: 2025年度合併財務報告
-    url: https://www.thinking.com.tw/upload/investor/files/2025Q4%E8%88%88%E5%8B%A4%E9%9B%BB%E5%AD%90%E8%B2%A1%E5%A0%B1_%E4%B8%AD%E6%96%87%E5%90%88%E4%BD%B5.pdf
-  tw.2428#e13:
-    locator: 第35頁，附註十三子公司；東莞為勤持股列、業務性質註3
-    published_date: '2026-03-05'
-    publisher: 興勤電子工業股份有限公司
-    quote_check: found
-    title: 2025年度合併財務報告
-    url: https://www.thinking.com.tw/upload/investor/files/2025Q4%E8%88%88%E5%8B%A4%E9%9B%BB%E5%AD%90%E8%B2%A1%E5%A0%B1_%E4%B8%AD%E6%96%87%E5%90%88%E4%BD%B5.pdf
-  tw.2428#e2:
-    locator: 產品類別標題及PSA、PSB、PPL產品應用表
+    url: https://www.thinking.com.tw/tw/product_info.php?brand=負溫度係數熱敏電阻&id=33
+  tw.2428#e04:
+    locator: 產品類別標題及產品系列表
     published_date: null
     publisher: 興勤電子工業股份有限公司
     quote_check: found
     title: 產品介紹：陶瓷正溫度係數熱敏電阻
-    url: https://www.thinking.com.tw/tw/product_info.php?brand=%E9%99%B6%E7%93%B7%E6%AD%A3%E6%BA%AB%E5%BA%A6%E4%BF%82%E6%95%B8%E7%86%B1%E6%95%8F%E9%9B%BB%E9%98%BB&id=36
-  tw.2428#e3:
-    locator: 壓敏電阻類別及TVR系列產品表
+    url: https://www.thinking.com.tw/tw/product_info.php?brand=陶瓷正溫度係數熱敏電阻&id=36
+  tw.2428#e05:
+    locator: 壓敏電阻類別及產品系列表
     published_date: null
     publisher: 興勤電子工業股份有限公司
     quote_check: found
     title: 產品介紹：壓敏電阻
-    url: https://www.thinking.com.tw/tw/product_info.php?brand=%E5%A3%93%E6%95%8F%E9%9B%BB%E9%98%BB&id=18
-  tw.2428#e4:
-    locator: 氣體放電管類別及產品規格表
+    url: https://www.thinking.com.tw/tw/product_info.php?brand=壓敏電阻&id=18
+  tw.2428#e06:
+    locator: 產品類別標題及產品系列表
     published_date: null
     publisher: 興勤電子工業股份有限公司
     quote_check: not_found
     title: 產品介紹：氣體放電管
-    url: https://www.thinking.com.tw/tw/product_info.php?brand=%E6%B0%A3%E9%AB%94%E6%94%BE%E9%9B%BB%E7%AE%A1&id=20
-  tw.2428#e5:
-    locator: 溫度傳感器類別及應用表
+    url: https://www.thinking.com.tw/tw/product_info.php?brand=氣體放電管&id=20
+  tw.2428#e07:
+    locator: 產品類別標題及應用表
     published_date: null
     publisher: 興勤電子工業股份有限公司
     quote_check: not_found
     title: 產品介紹：溫度傳感器
-    url: https://www.thinking.com.tw/tw/product_info.php?brand=%E6%BA%AB%E5%BA%A6%E5%82%B3%E6%84%9F%E5%99%A8&id=16
-  tw.2428#e6:
-    locator: 電動車電池解決方案；電池模組溫度偵測說明
+    url: https://www.thinking.com.tw/tw/product_info.php?brand=溫度傳感器&id=16
+  tw.2428#e08:
+    locator: AI液體冷卻／冷卻液分配單元解決方案，興勤量測方案段落
     published_date: null
     publisher: 興勤電子工業股份有限公司
     quote_check: found
-    title: 產品應用：電動車電池解決方案
-    url: https://www.thinking.com.tw/tw/app_introduction.php?bid=2&brand=%E9%9B%BB%E5%8B%95%E8%BB%8A%E9%9B%BB%E6%B1%A0&id=60
-  tw.2428#e7:
-    locator: 興勤壓力與溫度量測方案；感測器結構說明
+    title: AI液體冷卻：冷卻液分配單元解決方案
+    url: https://www.thinking.com.tw/tw/app_introduction.php?bid=207&brand=冷卻液分配單元&id=194
+  tw.2428#e09:
+    locator: 電動車電池解決方案／興勤解決方案／NTSE系列
     published_date: null
     publisher: 興勤電子工業股份有限公司
     quote_check: found
-    title: 產品應用：冷卻液分配單元解決方案
-    url: https://www.thinking.com.tw/tw/app_introduction.php?bid=207&brand=%E5%86%B7%E5%8D%BB%E6%B6%B2%E5%88%86%E9%85%8D%E5%96%AE%E5%85%83&id=194
-  tw.2428#e8:
-    locator: 5G浪湧保護解決方案介紹第三段
+    title: 電動車電池解決方案
+    url: https://www.thinking.com.tw/tw/app_introduction.php?bid=2&brand=電動車電池&id=60
+  tw.2428#e10:
+    locator: 印刷頁66，產業概況／4.市場競爭情形
+    published_date: '2026-05-07'
+    publisher: 興勤電子工業股份有限公司
+    quote_check: found
+    title: 興勤電子2025年度年報
+    url: https://www.thinking.com.tw/upload/investor/files/興勤_114年年報_公告資料(中文).pdf
+  tw.2428#e11:
+    locator: Company／TDK Electronics介紹
+    published_date: null
+    publisher: TDK Electronics
+    quote_check: found
+    title: Company：TDK Electronics
+    url: https://www.tdk-electronics.tdk.com/en/373402/company
+  tw.2428#e12:
+    locator: 替代品表；表頭為THINKING Part Number、Competitor Name、Competitor Part Number，PPL12270MA2B7Y列
     published_date: null
     publisher: 興勤電子工業股份有限公司
     quote_check: found
-    title: 產品應用：5G浪湧保護解決方案
-    url: https://www.thinking.com.tw/tw/app_introduction.php?bid=4&brand=5G%E6%B5%AA%E6%B9%A7%E4%BF%9D%E8%AD%B7&id=73
-  tw.2428#e9:
-    locator: 第68頁，主要產品收入表；欄序為114年度、113年度，單位新台幣千元
+    title: Product Search Engine
+    url: https://www.thinking.com.tw/search_list.html
+  tw.2428#e13:
+    locator: 第35頁，附註十三／列入合併財務報告之子公司；2025年12月31日持股欄
     published_date: '2026-03-05'
     publisher: 興勤電子工業股份有限公司
     quote_check: found
-    title: 2025年度合併財務報告
-    url: https://www.thinking.com.tw/upload/investor/files/2025Q4%E8%88%88%E5%8B%A4%E9%9B%BB%E5%AD%90%E8%B2%A1%E5%A0%B1_%E4%B8%AD%E6%96%87%E5%90%88%E4%BD%B5.pdf
+    title: 興勤電子2025年度合併財務報告
+    url: https://www.thinking.com.tw/upload/investor/files/2025Q4興勤電子財報_中文合併.pdf
+  tw.2428#e14:
+    locator: 元耀科技股份有限公司／分離式元件事業體
+    published_date: null
+    publisher: 興勤電子工業股份有限公司
+    quote_check: found
+    title: 關係企業：元耀科技股份有限公司
+    url: https://www.thinking.com.tw/tw/about2.php
+  tw.2428#e15:
+    locator: 第35頁，附註十三／合併子公司表，興勤宜昌與江西興勤列
+    published_date: '2026-03-05'
+    publisher: 興勤電子工業股份有限公司
+    quote_check: found
+    title: 興勤電子2025年度合併財務報告
+    url: https://www.thinking.com.tw/upload/investor/files/2025Q4興勤電子財報_中文合併.pdf
+  tw.2428#e16:
+    locator: 第35頁，附註十三／合併子公司表，東莞為勤列
+    published_date: '2026-03-05'
+    publisher: 興勤電子工業股份有限公司
+    quote_check: found
+    title: 興勤電子2025年度合併財務報告
+    url: https://www.thinking.com.tw/upload/investor/files/2025Q4興勤電子財報_中文合併.pdf
+  tw.2428#e17:
+    locator: 第35頁，附註十三／合併子公司表，中山為勤列
+    published_date: '2026-03-05'
+    publisher: 興勤電子工業股份有限公司
+    quote_check: found
+    title: 興勤電子2025年度合併財務報告
+    url: https://www.thinking.com.tw/upload/investor/files/2025Q4興勤電子財報_中文合併.pdf
+  tw.2428#e18:
+    locator: 第35頁，附註十三／合併子公司表，興勤越南列；投資公司欄為本公司
+    published_date: '2026-03-05'
+    publisher: 興勤電子工業股份有限公司
+    quote_check: found
+    title: 興勤電子2025年度合併財務報告
+    url: https://www.thinking.com.tw/upload/investor/files/2025Q4興勤電子財報_中文合併.pdf
+  tw.2428#e19:
+    locator: 第69頁，附表五／取得不動產，中山為勤二期廠房列
+    published_date: '2025-02-20'
+    publisher: 興勤電子工業股份有限公司
+    quote_check: found
+    title: 興勤電子2024年度合併財務報告
+    url: https://www.thinking.com.tw/upload/investor/files/113Q4_興勤電子_合併財務報告.pdf
+  tw.2428#e20:
+    locator: 第36頁，附註十三／註7
+    published_date: '2026-03-05'
+    publisher: 興勤電子工業股份有限公司
+    quote_check: found
+    title: 興勤電子2025年度合併財務報告
+    url: https://www.thinking.com.tw/upload/investor/files/2025Q4興勤電子財報_中文合併.pdf
+  tw.2428#e21:
+    locator: 印刷頁91，關係報告書／從屬公司與控制公司間之關係概況
+    published_date: '2026-05-07'
+    publisher: 興勤電子工業股份有限公司
+    quote_check: found
+    title: 興勤電子2025年度年報
+    url: https://www.thinking.com.tw/upload/investor/files/興勤_114年年報_公告資料(中文).pdf

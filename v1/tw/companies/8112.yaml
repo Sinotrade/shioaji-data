@@ -26,56 +26,57 @@ chain_stage:
   stage_name: IC 通路與模組
   tier: downstream
 primary_chain_position: downstream
-summary_short: 經銷半導體零組件，以DRAM與Flash記憶體銷售為主。
-summary_long: 至上電子經銷半導體零組件，並提供整合與應用諮詢服務。2026年1至7月合併銷售組成為DRAM占63%、Flash占25%、AP/PA占7%、Driver IC占2%、LED/OT占2%及TFT/LCD占1%。記憶體產品包含DRAM、SSD、MCP與eStorage，應用於手機、PC、伺服器及車載裝置；法說會亦明列AI伺服器與5G網通應用。高達能源科技股份有限公司為其子公司。
+summary_short: 代理經銷半導體與電子零組件，以三星DRAM及快閃記憶體為主。
+summary_long: 至上電子主要從事半導體與電子零組件代理經銷，是Samsung在台代理商，核心產品為DRAM與NAND Flash。2026年第一季DRAM與Flash分別占營收63%與25%，記憶體產品亦供應AI伺服器應用。除產品銷售外，公司提供關鍵零組件技術支援及新產品應用解決方案。集團透過高照國際經營電子零件進出口，另於2025年設立美國全資子公司，並提高對高達能源的持股。2025年投資事項另包括深圳市銓興科技股權及M.I.F. L.P.私募基金。
 segments:
 - evidence_ids:
   - e3
   id: dram
-  name: DRAM
-  period: 2026-01至2026-07
+  name: DRAM代理經銷
+  period: 2026年第一季
   revenue_share_pct: 63
 - evidence_ids:
-  - e4
+  - e3
   id: flash
-  name: Flash
-  period: 2026-01至2026-07
+  name: Flash代理經銷
+  period: 2026年第一季
   revenue_share_pct: 25
-- evidence_ids:
-  - e5
-  id: ap_pa
-  name: AP/PA
-  period: 2026-01至2026-07
-  revenue_share_pct: 7
-- evidence_ids:
-  - e6
-  id: driver_ic
-  name: Driver IC
-  period: 2026-01至2026-07
-  revenue_share_pct: 2
-- evidence_ids:
-  - e7
-  id: led_ot
-  name: LED/OT
-  period: 2026-01至2026-07
-  revenue_share_pct: 2
-- evidence_ids:
-  - e8
-  id: tft_lcd
-  name: TFT/LCD
-  period: 2026-01至2026-07
-  revenue_share_pct: 1
 main_theme: theme.ai_server
 themes:
 - also: []
   stage: chips
   theme: theme.ai_server
   tier: upstream
-- also: []
-  stage: components
-  theme: theme.5g
-  tier: upstream
 relations:
+  competitors:
+  - as_of: '2026-09-03'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: IC代理經銷通路競爭
+    details:
+    - IC代理經銷通路競爭
+    edge: e61cb2137b482
+    evidence_level: media
+    id: tw.3036
+    name: 文曄
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-05'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: IC代理經銷通路競爭
+    details:
+    - IC代理經銷通路競爭
+    edge: ea50e7bd8a327
+    evidence_level: media
+    id: tw.3702
+    name: 大聯大
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   customers:
   - as_of: 2023-12
     confidence: ai_cross_checked
@@ -92,172 +93,218 @@ relations:
     share_pct: null
     weight: 1
   subsidiaries:
-  - as_of: '2026-06-30'
+  - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接子公司
+    detail: 電池製造及能源技術服務子公司
     details:
-    - 直接子公司
-    edge: ee911f5b6a59a
+    - 電池製造及能源技術服務子公司
+    edge: e6bd28c1ca8c8
     evidence_level: primary
-    id: org.golden-supreme-international-pte-ltd
-    name: Golden Supreme International Pte. Ltd.
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
-  - as_of: '2026-06-30'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 直接子公司
-    details:
-    - 直接子公司
-    edge: e2172b50faeec
-    evidence_level: primary
-    id: org.supreme-international-co-ltd
-    name: Supreme International Co., Ltd.
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
-  - as_of: '2026-06-30'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 直接子公司
-    details:
-    - 直接子公司
-    edge: e4f1c2fb85b0e
-    evidence_level: primary
-    id: org.高達能源科技股份有限公司
+    id: org.gaoda-energy-technology
     name: 高達能源科技股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接全資電子零組件經銷子公司
+    details:
+    - 間接全資電子零組件經銷子公司
+    edge: ef7710054ddb0
+    evidence_level: primary
+    id: org.golden-supreme-international-hk
+    name: 高照國際有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 2025年新設美國全資經銷子公司
+    details:
+    - 2025年新設美國全資經銷子公司
+    edge: e66bd877fbed9
+    evidence_level: primary
+    id: org.supreme-international-electronics-us
+    name: Supreme International Electronics LLC
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資控股子公司
+    details:
+    - 全資控股子公司
+    edge: e3fd317d8e642
+    evidence_level: primary
+    id: org.supreme-international-samoa
+    name: Supreme International Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: '2026-08-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 三星記憶體產品代理經銷
+    details:
+    - 三星記憶體產品代理經銷
+    edge: e1a5db955cae4
+    evidence_level: media
+    id: kr.005930
+    name: Samsung Electronics
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 美金5,000,000元整（約當NTD160,050,000元）
+    as_of: '2025-05-12'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 取得私募基金投資額度
+    details:
+    - 取得私募基金投資額度
+    edge: e1971d2f2d87f
+    event_date: '2025-05-12'
+    events:
+    - amount: 美金5,000,000元整（約當NTD160,050,000元）
+      detail: 取得私募基金投資額度
+      event_date: '2025-05-12'
+    evidence_level: primary
+    id: org.m-i-f-l-p
+    name: M.I.F. L.P.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新臺幣91,984仟元（2025年度匯出投資金額）
+    as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 2025年度新增少數股權投資
+    details:
+    - 2025年度新增少數股權投資
+    edge: e4b93d95ebeba
+    event_date: null
+    events:
+    - amount: 新臺幣91,984仟元（2025年度匯出投資金額）
+      detail: 2025年度新增少數股權投資
+      event_date: null
+    evidence_level: primary
+    id: org.shenzhen-quanxing-technology
+    name: 深圳市銓興科技有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 伺服器與手機客戶：報導未具名。
 website: https://www.supreme.com.tw/
 tax_id: '22368959'
 incorporated: '1987-03-05'
 listed: '2007-12-31'
-as_of: '2026-10-15'
+as_of: '2026-10-25'
 confidence: ai_cross_checked
 has_research: true
 evidence:
   tw.8112#e1:
-    locator: 公司概況第三段
+    locator: 供應商／代理原廠
     published_date: null
     publisher: 至上電子股份有限公司
     quote_check: found
-    title: 公司概況
-    url: https://www.supreme.com.tw/WP/WP0029.aspx
+    title: 利害關係人專區
+    url: https://www.supreme.com.tw/WP/WP0049.aspx
   tw.8112#e10:
-    locator: PDF第11頁／投影片10，MEMORY產品應用，Mobile欄
-    published_date: '2026-08-13'
-    publisher: 至上電子股份有限公司
-    quote_check: found
-    title: 2026年8月13日法人說明會簡報
-    url: https://mopsov.twse.com.tw/nas/STR/811220260813M001.pdf
+    locator: 列入合併財務報表之子公司：高達能源及註1
+    published_date: '2026-03-31'
+    publisher: 至上電子股份有限公司／FinancialFilings
+    quote_check: unreachable
+    title: 114年度合併財務報告（FinancialFilings全文鏡像）
+    url: https://financialfilings.com/filings/supreme-8112/annual-report/2026/60570832/
   tw.8112#e11:
-    locator: PDF第11頁／投影片10，MEMORY產品應用，Server欄的DRAM及SSD產品
-    published_date: '2026-08-13'
-    publisher: 至上電子股份有限公司
-    quote_check: not_found
-    title: 2026年8月13日法人說明會簡報
-    url: https://mopsov.twse.com.tw/nas/STR/811220260813M001.pdf
+    locator: 列入合併財務報表之子公司：Supreme International Electronics LLC及註2
+    published_date: '2026-03-31'
+    publisher: 至上電子股份有限公司／FinancialFilings
+    quote_check: unreachable
+    title: 114年度合併財務報告（FinancialFilings全文鏡像）
+    url: https://financialfilings.com/filings/supreme-8112/annual-report/2026/60570832/
   tw.8112#e12:
-    locator: PDF第11頁／投影片10，MEMORY產品應用，Server欄
-    published_date: '2026-08-13'
-    publisher: 至上電子股份有限公司
-    quote_check: found
-    title: 2026年8月13日法人說明會簡報
-    url: https://mopsov.twse.com.tw/nas/STR/811220260813M001.pdf
+    locator: 大陸地區投資／轉投資大陸地區之事業相關資訊；單位為新臺幣仟元
+    published_date: '2026-03-31'
+    publisher: 至上電子股份有限公司／FinancialFilings
+    quote_check: unreachable
+    title: 114年度合併財務報告（FinancialFilings全文鏡像）
+    url: https://financialfilings.com/filings/supreme-8112/annual-report/2026/60570832/
   tw.8112#e13:
-    locator: PDF第11頁／投影片10，Consumer欄列SiP、DRAM與eStorage及其應用
-    published_date: '2026-08-13'
-    publisher: 至上電子股份有限公司
+    locator: 公告第1、3、16及19項
+    published_date: '2025-05-12'
+    publisher: 公開資訊觀測站／鉅亨網公告轉載
     quote_check: found
-    title: 2026年8月13日法人說明會簡報
-    url: https://mopsov.twse.com.tw/nas/STR/811220260813M001.pdf
-  tw.8112#e14:
-    locator: PDF第11頁／印刷第10頁，四、重大會計政策之彙總說明／合併基礎
-    published_date: '2026-08-10'
-    publisher: 至上電子股份有限公司
-    quote_check: found
-    title: 至上電子股份有限公司及子公司115年第二季合併財務報告
-    url: https://www.supreme.com.tw/File/FR/CFR2026Q2T.pdf
-  tw.8112#e15:
-    locator: PDF第11頁／印刷第10頁，子公司表；投資公司為本公司
-    published_date: '2026-08-10'
-    publisher: 至上電子股份有限公司
-    quote_check: found
-    title: 至上電子股份有限公司及子公司115年第二季合併財務報告
-    url: https://www.supreme.com.tw/File/FR/CFR2026Q2T.pdf
-  tw.8112#e16:
-    locator: PDF第11頁／印刷第10頁，子公司表；投資公司欄同上符號指本公司
-    published_date: '2026-08-10'
-    publisher: 至上電子股份有限公司
-    quote_check: found
-    title: 至上電子股份有限公司及子公司115年第二季合併財務報告
-    url: https://www.supreme.com.tw/File/FR/CFR2026Q2T.pdf
-  tw.8112#e17:
-    locator: PDF第11頁／印刷第10頁，子公司表；投資公司欄同上符號指本公司
-    published_date: '2026-08-10'
-    publisher: 至上電子股份有限公司
-    quote_check: found
-    title: 至上電子股份有限公司及子公司115年第二季合併財務報告
-    url: https://www.supreme.com.tw/File/FR/CFR2026Q2T.pdf
+    title: 至上：公告本公司取得私募基金
+    url: https://news.cnyes.com/news/id/5975593
   tw.8112#e2:
-    locator: 公司概況第三段
+    locator: 代理關係與產品組合段落
+    published_date: '2026-08-13'
+    publisher: 經濟日報
+    quote_check: found
+    title: 至上：下半年業績步步高
+    url: https://money.udn.com/money/story/5710/9690160
+  tw.8112#e3:
+    locator: 第一季營收結構段落
+    published_date: '2026-04-27'
+    publisher: 經濟日報
+    quote_check: found
+    title: 至上：記憶體漲到2026年底
+    url: https://money.udn.com/money/amp/story/5710/9467644
+  tw.8112#e4:
+    locator: 客戶
     published_date: null
     publisher: 至上電子股份有限公司
     quote_check: found
-    title: 公司概況
-    url: https://www.supreme.com.tw/WP/WP0029.aspx
-  tw.8112#e3:
-    locator: PDF第10頁／投影片9，2026年1至7月合併銷售產品別比圖
-    published_date: '2026-08-13'
-    publisher: 至上電子股份有限公司
-    quote_check: not_found
-    title: 2026年8月13日法人說明會簡報
-    url: https://mopsov.twse.com.tw/nas/STR/811220260813M001.pdf
-  tw.8112#e4:
-    locator: PDF第10頁／投影片9，2026年1至7月合併銷售產品別比圖
-    published_date: '2026-08-13'
-    publisher: 至上電子股份有限公司
-    quote_check: not_found
-    title: 2026年8月13日法人說明會簡報
-    url: https://mopsov.twse.com.tw/nas/STR/811220260813M001.pdf
+    title: 利害關係人專區
+    url: https://www.supreme.com.tw/WP/WP0049.aspx
   tw.8112#e5:
-    locator: PDF第10頁／投影片9，2026年1至7月合併銷售產品別比圖
-    published_date: '2026-08-13'
-    publisher: 至上電子股份有限公司
-    quote_check: not_found
-    title: 2026年8月13日法人說明會簡報
-    url: https://mopsov.twse.com.tw/nas/STR/811220260813M001.pdf
+    locator: 第一季記憶體營收應用段落
+    published_date: '2026-04-27'
+    publisher: 經濟日報
+    quote_check: found
+    title: 至上：記憶體漲到2026年底
+    url: https://money.udn.com/money/amp/story/5710/9467644
   tw.8112#e6:
-    locator: PDF第10頁／投影片9，2026年1至7月合併銷售產品別比圖
-    published_date: '2026-08-13'
-    publisher: 至上電子股份有限公司
-    quote_check: not_found
-    title: 2026年8月13日法人說明會簡報
-    url: https://mopsov.twse.com.tw/nas/STR/811220260813M001.pdf
+    locator: 市場需求與銷售競爭／國內外競爭廠商
+    published_date: '2026-10-05'
+    publisher: MoneyDJ理財網／嘉實投顧
+    quote_check: found
+    title: 至上電子股份有限公司
+    url: https://www.moneydj.com/KMDj/wiki/wikiviewer.aspx?keyid=f1f1af0b-bfe5-4fc3-be04-5dcf1a515c79
   tw.8112#e7:
-    locator: PDF第10頁／投影片9，2026年1至7月合併銷售產品別比圖
-    published_date: '2026-08-13'
-    publisher: 至上電子股份有限公司
-    quote_check: not_found
-    title: 2026年8月13日法人說明會簡報
-    url: https://mopsov.twse.com.tw/nas/STR/811220260813M001.pdf
+    locator: 市場銷售與競爭／國內外競爭廠商
+    published_date: '2026-09-03'
+    publisher: MoneyDJ理財網／嘉實投顧
+    quote_check: found
+    title: 文曄科技股份有限公司
+    url: https://www.moneydj.com/KMDJ/wiki/wikiviewer.aspx?keyid=5903d384-15cc-4b3d-bfcb-0e7c34c5a9b3
   tw.8112#e8:
-    locator: PDF第10頁／投影片9，2026年1至7月合併銷售產品別比圖
-    published_date: '2026-08-13'
-    publisher: 至上電子股份有限公司
-    quote_check: not_found
-    title: 2026年8月13日法人說明會簡報
-    url: https://mopsov.twse.com.tw/nas/STR/811220260813M001.pdf
+    locator: 列入合併財務報表之子公司：本公司、西薩摩亞及開曼亞福
+    published_date: '2026-03-31'
+    publisher: 至上電子股份有限公司／FinancialFilings
+    quote_check: unreachable
+    title: 114年度合併財務報告（FinancialFilings全文鏡像）
+    url: https://financialfilings.com/filings/supreme-8112/annual-report/2026/60570832/
   tw.8112#e9:
-    locator: PDF第11頁／投影片10，MEMORY產品應用，Mobile欄
-    published_date: '2026-08-13'
-    publisher: 至上電子股份有限公司
-    quote_check: not_found
-    title: 2026年8月13日法人說明會簡報
-    url: https://mopsov.twse.com.tw/nas/STR/811220260813M001.pdf
+    locator: 列入合併財務報表之子公司：開曼亞福及香港高照
+    published_date: '2026-03-31'
+    publisher: 至上電子股份有限公司／FinancialFilings
+    quote_check: unreachable
+    title: 114年度合併財務報告（FinancialFilings全文鏡像）
+    url: https://financialfilings.com/filings/supreme-8112/annual-report/2026/60570832/

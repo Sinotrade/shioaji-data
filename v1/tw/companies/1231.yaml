@@ -17,30 +17,45 @@ industry:
   l3: food.processing
   l3_name: 食品加工
   l3_name_en: Food Processing
-primary_chain_position: midstream
-summary_short: 製造銷售便當、飯糰等鮮食，以及零食、堅果、海苔與冷凍食品。
-summary_long: 聯華食品以鮮食與休閒食品的製造銷售為主要業務，2025年營業比重分別為53.09%與46.91%。鮮食產品包括便當、飯糰、麵類、壽司手捲、漢堡及三明治，另有冷凍微波食品。休閒食品涵蓋薯條、洋芋片、萬歲牌堅果及烘培調味海苔，產品組合橫跨即食餐點與包裝零食。依2025年底持股資料，公司全資持有成吉股份有限公司、聯華鮮食股份有限公司及LIAN HWA INVESTMENT CO., LTD.。
+primary_chain_position: not_applicable
+summary_short: 製造銷售超商鮮食與休閒食品，鮮食為最大營收來源。
+summary_long: 聯華食以鮮食與休閒食品加工製造及銷售為主要業務，2025年鮮食類占營收53.09%，休閒類占46.91%。鮮食涵蓋便當、飯糰、麵類、壽司手捲、漢堡與三明治，具名客戶包括統一超商。休閒類包含休閒食品、海苔、堅果及沖調產品，另提供冷凍料理與客製化代工服務。依2025年第一季財報，成吉、LIAN HWA INVESTMENT及聯華鮮食均為其百分之百持有的子公司。2024年公司委由永聯物流建置觀音廠自動化系統，並與旭源營造簽訂廠房新建工程契約。
 segments:
 - evidence_ids:
-  - e2
+  - e1
   id: fresh_food
   name: 鮮食類
   period: '2025'
   revenue_share_pct: 53.09
 - evidence_ids:
-  - e2
+  - e1
   id: snack_food
   name: 休閒類
   period: '2025'
   revenue_share_pct: 46.91
 relations:
-  subsidiaries:
-  - as_of: '2025-12-31'
+  customers:
+  - as_of: '2026-07-14'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持股100%的子公司
+    detail: 7-ELEVEN鮮食供應
     details:
-    - 直接持股100%的子公司
+    - 7-ELEVEN鮮食供應
+    edge: eacb95c6612dc
+    evidence_level: media
+    id: tw.2912
+    name: 統一超
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2025-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%股權
+    details:
+    - 直接持有100%股權
     edge: ee0dcfd0bc4b3
     evidence_level: primary
     id: org.lian-hwa-investment-co-ltd
@@ -49,12 +64,12 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2025-12-31'
+  - as_of: '2025-03-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持股100%的子公司
+    detail: 直接持有100%股權
     details:
-    - 直接持股100%的子公司
+    - 直接持有100%股權
     edge: e67918117ca53
     evidence_level: primary
     id: org.成吉股份有限公司
@@ -63,12 +78,12 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2025-12-31'
+  - as_of: '2025-03-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持股100%的子公司
+    detail: 2024年設立的全資子公司
     details:
-    - 直接持股100%的子公司
+    - 2024年設立的全資子公司
     edge: ec785d0a4c120
     evidence_level: primary
     id: org.聯華鮮食股份有限公司
@@ -77,95 +92,206 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  suppliers:
+  - as_of: '2026-07-02'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 曾供應一級黃豆油；相關油品已停用
+    details:
+    - 曾供應一級黃豆油；相關油品已停用
+    edge: e43326efd2d52
+    evidence_level: primary
+    id: tw.1225
+    name: 福懋油
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: null
+    as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 設備買賣合約
+    details:
+    - 設備買賣合約
+    edge: e401a94ffbec4
+    event_date: '2025-06-18'
+    events:
+    - amount: null
+      detail: 設備買賣合約
+      event_date: '2025-06-18'
+    evidence_level: primary
+    id: org.heat-and-control-pty-ltd
+    name: Heat and Control Pty Ltd
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣209,874仟元（含稅）
+    as_of: '2024-05-15'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 觀音廠房新建工程
+    details:
+    - 觀音廠房新建工程
+    edge: e631d71b2b3e8
+    event_date: '2024-05-15'
+    events:
+    - amount: 新台幣209,874仟元（含稅）
+      detail: 觀音廠房新建工程
+      event_date: '2024-05-15'
+    evidence_level: primary
+    id: org.旭源營造工程股份有限公司
+    name: 旭源營造工程股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣184,436仟元（含稅）
+    as_of: '2024-05-15'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 觀音廠自動化系統設備購置及建置工程
+    details:
+    - 觀音廠自動化系統設備購置及建置工程
+    edge: e5a7a4743fcf5
+    event_date: '2024-01-25'
+    events:
+    - amount: 新台幣184,436仟元（含稅）
+      detail: 觀音廠自動化系統設備購置及建置工程
+      event_date: '2024-01-25'
+    evidence_level: primary
+    id: org.永聯物流開發股份有限公司
+    name: 永聯物流開發股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 2025年度年報以A公司代稱的主要銷貨客戶
+- 2025年度年報以B公司代稱的主要銷貨客戶
+- 更換後未具名的油品供應商
 website: www.lianhwa.com.tw
 tax_id: 07569627
 incorporated: '1970-07-07'
 listed: '1995-11-02'
-as_of: '2026-10-15'
+as_of: '2026-10-26'
 confidence: ai_cross_checked
 has_research: true
 evidence:
+  tw.1231#e1:
+    locator: 第74頁，業務內容／營業比重
+    published_date: null
+    publisher: 聯華食品工業股份有限公司
+    quote_check: found
+    title: 聯華食品工業股份有限公司114年度年報
+    url: https://pic.vcp.tw/upload/lianhwanew/harddisc/file_name_3435.pdf?1782791348=
   tw.1231#e10:
-    locator: 印刷頁69，114年12月31日轉投資事業持股表
+    locator: 第15頁，列入合併財務報告之子公司
     published_date: null
     publisher: 聯華食品工業股份有限公司
     quote_check: found
-    title: 聯華食品114年度年報
-    url: https://pic.vcp.tw/upload/lianhwanew/harddisc/file_name_3435.pdf?1782791348=
+    title: 聯華食品工業股份有限公司及子公司114及113年第1季合併財務報告
+    url: https://pic.vcp.tw/upload/lianhwa/harddisc/file_name_3346.pdf?1747129309=
   tw.1231#e11:
-    locator: 印刷頁13，列入合併財務報告之子公司，投資公司為本公司
+    locator: 第15頁，列入合併財務報告之子公司
     published_date: null
     publisher: 聯華食品工業股份有限公司
     quote_check: found
-    title: 聯華食品114年第三季合併財務報告
-    url: https://pic.vcp.tw/upload/lianhwanew/harddisc/file_name_3385.pdf?1763449872=
+    title: 聯華食品工業股份有限公司及子公司114及113年第1季合併財務報告
+    url: https://pic.vcp.tw/upload/lianhwa/harddisc/file_name_3346.pdf?1747129309=
   tw.1231#e12:
-    locator: 印刷頁13，列入合併財務報告之子公司，投資公司為本公司
+    locator: 第15頁，子公司表註一
     published_date: null
     publisher: 聯華食品工業股份有限公司
     quote_check: found
-    title: 聯華食品114年第三季合併財務報告
-    url: https://pic.vcp.tw/upload/lianhwanew/harddisc/file_name_3385.pdf?1763449872=
+    title: 聯華食品工業股份有限公司及子公司114及113年第1季合併財務報告
+    url: https://pic.vcp.tw/upload/lianhwa/harddisc/file_name_3346.pdf?1747129309=
   tw.1231#e13:
-    locator: 印刷頁13，列入合併財務報告之子公司
+    locator: 第3項，契約相對人
+    published_date: '2024-05-15'
+    publisher: 公開資訊觀測站重大訊息（MoneyDJ刊載）
+    quote_check: found
+    title: 聯華食：公司觀音自地委建廠房工程及購置設備相關事宜
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=5a054e1c-3951-4745-8d68-8065ab789536
+  tw.1231#e14:
+    locator: 第4項，契約主要內容第3款
+    published_date: '2024-05-15'
+    publisher: 公開資訊觀測站重大訊息（MoneyDJ刊載）
+    quote_check: found
+    title: 聯華食：公司觀音自地委建廠房工程及購置設備相關事宜
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=5a054e1c-3951-4745-8d68-8065ab789536
+  tw.1231#e15:
+    locator: 第4項，契約主要內容第4款
+    published_date: '2024-05-15'
+    publisher: 公開資訊觀測站重大訊息（MoneyDJ刊載）
+    quote_check: found
+    title: 聯華食：公司觀音自地委建廠房工程及購置設備相關事宜
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=5a054e1c-3951-4745-8d68-8065ab789536
+  tw.1231#e16:
+    locator: 第88頁，重要契約
     published_date: null
     publisher: 聯華食品工業股份有限公司
     quote_check: found
-    title: 聯華食品114年第三季合併財務報告
-    url: https://pic.vcp.tw/upload/lianhwanew/harddisc/file_name_3385.pdf?1763449872=
-  tw.1231#e2:
-    locator: 印刷頁74，肆、營運概況，一、業務內容，營業比重
-    published_date: null
-    publisher: 聯華食品工業股份有限公司
-    quote_check: found
-    title: 聯華食品114年度年報
+    title: 聯華食品工業股份有限公司114年度年報
     url: https://pic.vcp.tw/upload/lianhwanew/harddisc/file_name_3435.pdf?1782791348=
-  tw.1231#e3:
+  tw.1231#e2:
     locator: 何謂鮮食
     published_date: null
     publisher: 聯華食品工業股份有限公司
     quote_check: found
     title: 鮮食事業部
     url: https://www.lianhwa.com.tw/info/rte-foods
+  tw.1231#e3:
+    locator: 第76頁，市場分析／休閒食品
+    published_date: null
+    publisher: 聯華食品工業股份有限公司
+    quote_check: found
+    title: 聯華食品工業股份有限公司114年度年報
+    url: https://pic.vcp.tw/upload/lianhwanew/harddisc/file_name_3435.pdf?1782791348=
   tw.1231#e4:
-    locator: 美味香脆、好吃不喊卡
+    locator: 冷凍料理品牌介紹
     published_date: null
     publisher: 聯華食品工業股份有限公司
     quote_check: found
     title: 旗下品牌
     url: https://www.lianhwa.com.tw/info/brands
   tw.1231#e5:
-    locator: 樂享生活、健康活力的堅果專家
-    published_date: null
-    publisher: 聯華食品工業股份有限公司
+    locator: 新聞首段
+    published_date: '2023-04-25'
+    publisher: 中央通訊社
     quote_check: found
-    title: 旗下品牌
-    url: https://www.lianhwa.com.tw/info/brands
+    title: 聯華食品大火影響御飯糰等鮮食供應 統一超：全力調度
+    url: https://www.cna.com.tw/news/ahel/202304250347.aspx
   tw.1231#e6:
-    locator: 來自大海的蔬菜、幸福健康的靠山
-    published_date: null
-    publisher: 聯華食品工業股份有限公司
+    locator: 統一超退費措施段落
+    published_date: '2026-07-14'
+    publisher: 中央通訊社
     quote_check: found
-    title: 旗下品牌
-    url: https://www.lianhwa.com.tw/info/brands
+    title: 統一超APP從簡退費 北市府籲各通路可比照辦理
+    url: https://www.cna.com.tw/news/aloc/202607140272.aspx
   tw.1231#e7:
-    locator: 冷凍食品品牌介紹
+    locator: 福懋油脂散裝油下游清單，第1項
     published_date: null
-    publisher: 聯華食品工業股份有限公司
+    publisher: 健康遠見
     quote_check: found
-    title: 旗下品牌
-    url: https://www.lianhwa.com.tw/info/brands
+    title: 王品、路易莎都中鏢！致癌大豆沙拉油超標４倍，波及連鎖餐飲224家下游完整名單一次看
+    url: https://health.gvm.com.tw/article/131297
   tw.1231#e8:
-    locator: 印刷頁69，114年12月31日轉投資事業持股表
-    published_date: null
+    locator: 聲明首段
+    published_date: '2026-07-02'
     publisher: 聯華食品工業股份有限公司
     quote_check: found
-    title: 聯華食品114年度年報
-    url: https://pic.vcp.tw/upload/lianhwanew/harddisc/file_name_3435.pdf?1782791348=
+    title: 聯華食品聲明稿
+    url: https://www.lianhwa.com.tw/cc-111
   tw.1231#e9:
-    locator: 印刷頁69，114年12月31日轉投資事業持股表
+    locator: 第15頁，列入合併財務報告之子公司
     published_date: null
     publisher: 聯華食品工業股份有限公司
     quote_check: found
-    title: 聯華食品114年度年報
-    url: https://pic.vcp.tw/upload/lianhwanew/harddisc/file_name_3435.pdf?1782791348=
+    title: 聯華食品工業股份有限公司及子公司114及113年第1季合併財務報告
+    url: https://pic.vcp.tw/upload/lianhwa/harddisc/file_name_3346.pdf?1747129309=

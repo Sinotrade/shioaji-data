@@ -26,74 +26,118 @@ chain_stage:
   stage_name: 封裝測試
   tier: downstream
 primary_chain_position: downstream
-summary_short: 以記憶體IC封裝與測試代工服務為主要收入來源。
-summary_long: 華東科技以記憶體IC元件為核心，提供IC封裝、成品測試至直接出貨的一元化代工服務。封裝型態涵蓋導線架、BGA及MCP／SiP；測試服務包含晶圓偵測、預燒、功能測試與後段包裝。依2024年年報，封裝與測試營收比重分別為63%及37%。截至2026年6月底，直接子公司包括Walton Holding Universal Ltd.與訊憶科技；華東科技（蘇州）、華昕科技（蘇州）及Walton Holding (Hong Kong) Ltd.則為間接子公司。
+summary_short: 以記憶體IC封裝及測試代工服務為主要收入來源。
+summary_long: 華東科技以記憶體IC封裝與測試代工為主要業務，提供封裝、成品測試至直接出貨的一元化服務。2025年合併營收中，封裝占64%、測試占36%；封裝服務涵蓋導線架、BGA及MCP／SiP，測試服務包括晶圓偵測、預燒與功能測試。2026年第一季，華邦與新唐分別占銷貨35%與22%，另有具名媒體報導南亞科為客戶。2025年完成訊憶科技增資並納入合併，持股74%；同年蘇州子公司出售鑫豐科技19.81%股權予合肥新匯成微電子。公司亦於2025及2026年分別公告向ADVANTEST TAIWAN採購測試生產設備。
 segments:
 - evidence_ids:
   - e5
   id: seg_packaging
-  name: 封裝
-  period: '2024'
-  revenue_share_pct: 63
+  name: IC封裝
+  period: '2025'
+  revenue_share_pct: 64
 - evidence_ids:
   - e5
   id: seg_testing
-  name: 測試
-  period: '2024'
-  revenue_share_pct: 37
+  name: IC測試
+  period: '2025'
+  revenue_share_pct: 36
 relations:
+  competitors:
+  - as_of: '2026-05-20'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 記憶體IC封裝測試
+    details:
+    - 記憶體IC封裝測試
+    edge: ef2a15db0b2fb
+    evidence_level: primary
+    id: tw.6239
+    name: 力成
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-05-20'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 記憶體IC封裝測試
+    details:
+    - 記憶體IC封裝測試
+    edge: e54c13465c5e2
+    evidence_level: primary
+    id: tw.8131
+    name: 福懋科
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-05-20'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 記憶體IC封裝測試
+    details:
+    - 記憶體IC封裝測試
+    edge: ea042c992ab9e
+    evidence_level: primary
+    id: tw.8150
+    name: 南茂
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  customers:
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 記憶體IC封裝測試服務
+    details:
+    - 記憶體IC封裝測試服務
+    edge: ee133838a3139
+    evidence_level: primary
+    id: tw.2344
+    name: 華邦電
+    ranking_basis: disclosed
+    share_basis: revenue
+    share_pct: 35
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 封裝測試服務
+    details:
+    - 封裝測試服務
+    edge: ed0c8eb907feb
+    evidence_level: primary
+    id: tw.4919
+    name: 新唐
+    ranking_basis: disclosed
+    share_basis: revenue
+    share_pct: 22
+    weight: 1
+  - as_of: '2026-09-21'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 記憶體IC封裝測試服務
+    details:
+    - 記憶體IC封裝測試服務
+    edge: e12f36397edd2
+    evidence_level: media
+    id: tw.2408
+    name: 南亞科
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 透過Walton Holding Universal Ltd.持有之投資控股子公司
+    detail: 透過Walton Holding Universal Ltd.持有的封測子公司
     details:
-    - 透過Walton Holding Universal Ltd.持有之投資控股子公司
-    edge: e755c5106e564
+    - 透過Walton Holding Universal Ltd.持有的封測子公司
+    edge: eaa4a6786aa4d
     evidence_level: primary
-    id: org.walton-holding-hong-kong-ltd
-    name: Walton Holding (Hong Kong) Ltd.
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
-  - as_of: '2026-06-30'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 直接持有之投資控股子公司
-    details:
-    - 直接持有之投資控股子公司
-    edge: ebbe92ade9eff
-    evidence_level: primary
-    id: org.walton-holding-universal-ltd
-    name: Walton Holding Universal Ltd.
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
-  - as_of: '2026-06-30'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 透過Walton Holding Universal Ltd.持有之積體電路相關子公司
-    details:
-    - 透過Walton Holding Universal Ltd.持有之積體電路相關子公司
-    edge: ed7b05276ed7f
-    evidence_level: primary
-    id: org.華昕科技-蘇州-有限公司
-    name: 華昕科技（蘇州）有限公司
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
-  - as_of: '2026-06-30'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 透過Walton Holding Universal Ltd.持有之封測子公司
-    details:
-    - 透過Walton Holding Universal Ltd.持有之封測子公司
-    edge: e3810e316fba5
-    evidence_level: primary
-    id: org.華東科技-蘇州-有限公司
+    id: org.walton-suzhou
     name: 華東科技（蘇州）有限公司
     ranking_basis: unranked
     share_basis: null
@@ -102,24 +146,93 @@ relations:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持有之電子零組件及封測相關子公司
+    detail: 持股74%的子公司
     details:
-    - 直接持有之電子零組件及封測相關子公司
-    edge: e607212c32624
+    - 持股74%的子公司
+    edge: e32f637cec543
     evidence_level: primary
-    id: org.訊憶科技股份有限公司
+    id: org.xunyi-technology
     name: 訊憶科技股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
+  transactions:
+  - amount: 新台幣554,500,500元
+    as_of: '2026-04-16'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 購入一批測試生產設備
+    details:
+    - 購入一批測試生產設備
+    edge: eac39dfb0f8af
+    event_date: '2025-05-29'
+    events:
+    - amount: 新台幣701,878,437元
+      detail: 購入一批測試生產設備
+      event_date: '2026-04-16'
+    - amount: 新台幣554,500,500元
+      detail: 購入一批測試生產設備
+      event_date: '2025-05-29'
+    evidence_level: primary
+    id: org.advantest-taiwan
+    name: 愛德萬測試股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 人民幣90,484,081.02元
+    as_of: '2025-10-17'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 蘇州子公司出售鑫豐科技19.81%股權
+    details:
+    - 蘇州子公司出售鑫豐科技19.81%股權
+    edge: e28a129f94091
+    event_date: '2025-10-17'
+    events:
+    - amount: 人民幣90,484,081.02元
+      detail: 蘇州子公司出售鑫豐科技19.81%股權
+      event_date: '2025-10-17'
+    evidence_level: primary
+    id: org.hefei-new-chipmore
+    name: 合肥新匯成微電子股份有限公司
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣148,428千元
+    as_of: 2025-11
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 參與現金增資並納入合併
+    details:
+    - 參與現金增資並納入合併
+    edge: e85f406119fb7
+    event_date: null
+    events:
+    - amount: 新台幣148,428千元
+      detail: 參與現金增資並納入合併
+      event_date: null
+    evidence_level: primary
+    id: org.xunyi-technology
+    name: 訊憶科技股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
 unresolved_mentions:
-- 全球記憶體半導體大廠：官網公司簡介未具名。
+- 114年報以A、B代稱的銷貨客戶，未揭露公司名稱。
+- 114年報以A、C、D、E等代稱的進貨廠商，未揭露公司名稱。
+- 官網泛稱的全球記憶體半導體大廠，未逐一具名。
 website: www.walton.com.tw
 tax_id: '22101116'
 incorporated: '1995-04-06'
 listed: '2007-10-31'
-as_of: '2026-10-15'
+as_of: '2026-10-26'
 confidence: ai_cross_checked
 has_research: true
 evidence:
@@ -131,12 +244,61 @@ evidence:
     title: 華東科技－公司簡介
     url: https://www.walton.com.tw/modules.php?file=overview&lang=zh-TW&name=about
   tw.8110#e10:
-    locator: 第19頁，附註十三子公司；Walton Holding Universal Ltd.持有香港控股公司，業務為一般投資
-    published_date: '2026-08-07'
+    locator: 印刷頁52／PDF第56頁，114年12月31日轉投資事業持股表
+    published_date: '2026-05-20'
     publisher: 華東科技股份有限公司
     quote_check: found
-    title: 華東科技及子公司115年第2季合併財務報告
+    title: 華東科技114年報－轉投資持股
+    url: https://www.walton.com.tw/files/investors/files/%E8%82%A1%E6%9D%B1%E6%9C%83/%E5%B9%B4%E5%A0%B1/ZH/114%E5%B9%B4%E5%A0%B1.pdf
+  tw.8110#e11:
+    locator: 附註十三，印刷頁19／PDF第19頁；投資公司為Walton Holding Universal Ltd.，115年6月30日欄
+    published_date: null
+    publisher: 華東科技股份有限公司
+    quote_check: found
+    title: 華東科技115年第2季合併財務報告－子公司
     url: https://www.walton.com.tw/files/investors/files/%E8%B2%A1%E5%8B%99%E5%A0%B1%E8%A1%A8/%E5%90%88%E4%BD%B5/ZH/8110%E8%8F%AF%E6%9D%B1-115%20Q2.pdf
+  tw.8110#e12:
+    locator: 附註十三，印刷頁19／PDF第19頁，訊憶科技增資及合併範圍說明
+    published_date: null
+    publisher: 華東科技股份有限公司
+    quote_check: found
+    title: 華東科技115年第2季合併財務報告－訊憶科技增資
+    url: https://www.walton.com.tw/files/investors/files/%E8%B2%A1%E5%8B%99%E5%A0%B1%E8%A1%A8/%E5%90%88%E4%BD%B5/ZH/8110%E8%8F%AF%E6%9D%B1-115%20Q2.pdf
+  tw.8110#e13:
+    locator: 重大訊息說明第2項
+    published_date: '2025-10-17'
+    publisher: 公開資訊觀測站（MoneyDJ轉載）
+    quote_check: found
+    title: 華東子公司處分鑫豐科技19.81%股權
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=31402938-e173-4ee3-939d-6d546e8c84a7
+  tw.8110#e14:
+    locator: 重大訊息說明第14項
+    published_date: '2025-10-17'
+    publisher: 公開資訊觀測站（MoneyDJ轉載）
+    quote_check: found
+    title: 華東子公司處分鑫豐股權－交易相對人
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=31402938-e173-4ee3-939d-6d546e8c84a7
+  tw.8110#e15:
+    locator: 重大訊息說明第5項
+    published_date: '2025-10-17'
+    publisher: 公開資訊觀測站（MoneyDJ轉載）
+    quote_check: found
+    title: 華東子公司處分鑫豐股權－交易金額
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=31402938-e173-4ee3-939d-6d546e8c84a7
+  tw.8110#e16:
+    locator: 重大訊息說明第1至4項
+    published_date: '2025-05-29'
+    publisher: 公開資訊觀測站（MoneyDJ轉載）
+    quote_check: found
+    title: 華東公告取得機器設備
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=bd22fe0f-75ea-4033-8826-289f380f63ff
+  tw.8110#e17:
+    locator: 重大訊息說明第1、2、5、6項
+    published_date: '2026-04-16'
+    publisher: 公開資訊觀測站（MoneyDJ轉載）
+    quote_check: found
+    title: 華東公告取得機器設備
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=8ecbb949-9abf-4123-aedc-6fff3f9c38db
   tw.8110#e2:
     locator: IC封裝服務首段
     published_date: null
@@ -145,51 +307,51 @@ evidence:
     title: 華東科技－IC封裝服務
     url: https://www.walton.com.tw/modules.php?file=packaging_service&lang=zh-TW&name=products
   tw.8110#e3:
-    locator: MCP/SiP服務說明
-    published_date: null
-    publisher: 華東科技股份有限公司
-    quote_check: found
-    title: 華東科技－IC封裝服務
-    url: https://www.walton.com.tw/modules.php?file=packaging_service&lang=zh-TW&name=products
-  tw.8110#e4:
     locator: IC測試服務首段
     published_date: null
     publisher: 華東科技股份有限公司
     quote_check: found
     title: 華東科技－IC測試服務
     url: https://www.walton.com.tw/modules.php?file=testing_service&lang=zh-TW&name=products
+  tw.8110#e4:
+    locator: MCP/SiP段落
+    published_date: null
+    publisher: 華東科技股份有限公司
+    quote_check: found
+    title: 華東科技－MCP／SiP
+    url: https://www.walton.com.tw/modules.php?file=packaging_service&lang=zh-TW&name=products
   tw.8110#e5:
-    locator: 第54頁，營業比重；表頭為113年度營收淨額、營業比重(%)
-    published_date: '2025-05-20'
+    locator: 印刷頁56／PDF第60頁，114年度營收淨額及營業比重表
+    published_date: '2026-05-20'
     publisher: 華東科技股份有限公司
     quote_check: found
-    title: 華東科技股份有限公司113年報
-    url: https://www.walton.com.tw/files/investors/files/%E8%82%A1%E6%9D%B1%E6%9C%83/%E5%B9%B4%E5%A0%B1/ZH/113%E5%B9%B4%E5%A0%B1.pdf
+    title: 華東科技114年報－營業比重
+    url: https://www.walton.com.tw/files/investors/files/%E8%82%A1%E6%9D%B1%E6%9C%83/%E5%B9%B4%E5%A0%B1/ZH/114%E5%B9%B4%E5%A0%B1.pdf
   tw.8110#e6:
-    locator: 第19頁，附註十三子公司；投資公司為本公司，子公司為Walton Holding Universal Ltd.
-    published_date: '2026-08-07'
+    locator: 印刷頁86／PDF第90頁，銷貨客戶表，115年度第一季欄；金額單位新台幣千元
+    published_date: '2026-05-20'
     publisher: 華東科技股份有限公司
     quote_check: found
-    title: 華東科技及子公司115年第2季合併財務報告
-    url: https://www.walton.com.tw/files/investors/files/%E8%B2%A1%E5%8B%99%E5%A0%B1%E8%A1%A8/%E5%90%88%E4%BD%B5/ZH/8110%E8%8F%AF%E6%9D%B1-115%20Q2.pdf
+    title: 華東科技114年報－主要銷貨客戶
+    url: https://www.walton.com.tw/files/investors/files/%E8%82%A1%E6%9D%B1%E6%9C%83/%E5%B9%B4%E5%A0%B1/ZH/114%E5%B9%B4%E5%A0%B1.pdf
   tw.8110#e7:
-    locator: 第19頁，附註十三子公司；本公司直接投資訊憶科技，業務性質為電子零組件及封測相關業務
-    published_date: '2026-08-07'
+    locator: 印刷頁86／PDF第90頁，銷貨客戶表，115年度第一季欄；金額單位新台幣千元
+    published_date: '2026-05-20'
     publisher: 華東科技股份有限公司
     quote_check: found
-    title: 華東科技及子公司115年第2季合併財務報告
-    url: https://www.walton.com.tw/files/investors/files/%E8%B2%A1%E5%8B%99%E5%A0%B1%E8%A1%A8/%E5%90%88%E4%BD%B5/ZH/8110%E8%8F%AF%E6%9D%B1-115%20Q2.pdf
+    title: 華東科技114年報－主要銷貨客戶
+    url: https://www.walton.com.tw/files/investors/files/%E8%82%A1%E6%9D%B1%E6%9C%83/%E5%B9%B4%E5%A0%B1/ZH/114%E5%B9%B4%E5%A0%B1.pdf
   tw.8110#e8:
-    locator: 第19頁，附註十三子公司；Walton Holding Universal Ltd.持有華東蘇州，業務為半導體封裝及測試產銷
-    published_date: '2026-08-07'
-    publisher: 華東科技股份有限公司
+    locator: 王怡茹報導，公司業務與客戶段落
+    published_date: '2026-09-21'
+    publisher: MoneyDJ新聞
     quote_check: found
-    title: 華東科技及子公司115年第2季合併財務報告
-    url: https://www.walton.com.tw/files/investors/files/%E8%B2%A1%E5%8B%99%E5%A0%B1%E8%A1%A8/%E5%90%88%E4%BD%B5/ZH/8110%E8%8F%AF%E6%9D%B1-115%20Q2.pdf
+    title: 華東今年營收估雙位數成長 獲利看顯增
+    url: https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=acb9d844-b576-4848-b799-4757071a235d
   tw.8110#e9:
-    locator: 第19頁，附註十三子公司；Walton Holding Universal Ltd.持有華昕蘇州，業務為積體電路設計及產品銷售
-    published_date: '2026-08-07'
+    locator: 印刷頁68／PDF第72頁，市場占有率段落
+    published_date: '2026-05-20'
     publisher: 華東科技股份有限公司
     quote_check: found
-    title: 華東科技及子公司115年第2季合併財務報告
-    url: https://www.walton.com.tw/files/investors/files/%E8%B2%A1%E5%8B%99%E5%A0%B1%E8%A1%A8/%E5%90%88%E4%BD%B5/ZH/8110%E8%8F%AF%E6%9D%B1-115%20Q2.pdf
+    title: 華東科技114年報－市場分析
+    url: https://www.walton.com.tw/files/investors/files/%E8%82%A1%E6%9D%B1%E6%9C%83/%E5%B9%B4%E5%A0%B1/ZH/114%E5%B9%B4%E5%A0%B1.pdf

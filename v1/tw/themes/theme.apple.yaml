@@ -62,6 +62,14 @@ members:
   - tw.2330#e_customers25
   - tw.2330#e_foundry
   confidence: ai_cross_checked
+- id: tw.2367
+  stage: components
+  tier: upstream
+  detail: Apple零組件供應鏈
+  as_of: 2023-09
+  evidence:
+  - tw.2367#e3
+  confidence: ai_cross_checked
 - id: tw.3008
   stage: components
   tier: upstream
@@ -72,6 +80,15 @@ members:
   - tw.3008#e7
   - tw.3008#e2
   confidence: ai_cross_checked
+- id: tw.3042
+  stage: components
+  tier: upstream
+  detail: Apple供應商名單
+  as_of: 2023-09
+  evidence:
+  - tw.3042#e1
+  - tw.3042#e8
+  confidence: ai_cross_checked
 - id: tw.3044
   stage: components
   tier: upstream
@@ -80,6 +97,24 @@ members:
   evidence:
   - tw.3044#e08
   - tw.3044#e09
+  confidence: ai_cross_checked
+- id: tw.3211
+  stage: modules
+  tier: midstream
+  detail: Apple電池模組供應鏈
+  as_of: 2023-09
+  evidence:
+  - tw.3211#e7
+  - tw.3211#e8
+  confidence: ai_cross_checked
+- id: tw.3376
+  stage: components
+  tier: upstream
+  detail: 蘋果筆電樞紐零組件
+  as_of: '2024-09-18'
+  evidence:
+  - tw.3376#e07
+  - tw.3376#e10
   confidence: ai_cross_checked
 - id: tw.3406
   stage: components
@@ -91,6 +126,16 @@ members:
   - tw.3406#e10
   - tw.3406#e11
   - tw.3406#e12
+  confidence: ai_cross_checked
+- id: tw.3673
+  stage: modules
+  tier: midstream
+  detail: Apple供應鏈之觸控模組
+  as_of: 2024-04
+  evidence:
+  - tw.3673#e3
+  - tw.3673#e7
+  - tw.3673#e8
   confidence: ai_cross_checked
 - id: tw.4938
   stage: assembly
@@ -109,15 +154,31 @@ members:
   - tw.4958#e09
   - tw.4958#e02
   confidence: ai_cross_checked
+- id: tw.6121
+  stage: modules
+  tier: midstream
+  detail: Apple供應鏈電池模組
+  as_of: 2023-09
+  evidence:
+  - tw.6121#e02
+  - tw.6121#e13
+  confidence: ai_cross_checked
 - id: tw.6176
   stage: modules
   tier: midstream
-  detail: Apple供應鏈成員，依2023會計年度名單
+  detail: Apple背光模組供應鏈
+  as_of: '2025-05-02'
+  evidence:
+  - tw.6176#e11
+  - tw.6176#e12
+  confidence: ai_cross_checked
+- id: tw.6269
+  stage: components
+  tier: upstream
+  detail: Apple供應鏈零組件
   as_of: 2023-09
   evidence:
-  - tw.6176#e10
-  - tw.6176#e11
-  - tw.6176#e1
+  - tw.6269#e6
   confidence: ai_cross_checked
 - id: tw.6278
   stage: assembly
@@ -127,6 +188,14 @@ members:
   evidence:
   - tw.6278#e_apple
   - tw.6278#e_service
+  confidence: ai_cross_checked
+- id: tw.6290
+  stage: components
+  tier: upstream
+  detail: Apple TV及Mac mini電源線
+  as_of: '2025-02-17'
+  evidence:
+  - tw.6290#e6
   confidence: ai_cross_checked
 - id: tw.6821
   stage: modules

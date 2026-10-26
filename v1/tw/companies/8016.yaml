@@ -29,36 +29,36 @@ chain_stage:
   stage_name: IP 與 IC 設計
   tier: upstream
 primary_chain_position: upstream
-summary_short: 以物聯網與工控顯示驅動晶片為主，集團另經營車用驅動與感測晶片。
-summary_long: 矽創為無晶圓廠晶片設計公司，主要提供物聯網與工控顯示器驅動晶片，並提供投射式電容觸控控制晶片。物聯網產品採用零電容技術，工控產品支援TN、VA、STN及TFT顯示技術。2026年第二季合併營收中，物聯網占49%、感測器占16%、車用占14%、工控占13%、其他占8%。集團子公司昇佳電子研發感測晶片，力領科技經營車用顯示驅動晶片，新特系統從事半導體製程與測試設備業務；子公司的產品與業務範圍分別揭露。
+summary_short: 設計及銷售小尺寸顯示驅動晶片，透過子公司經營感測器、車用晶片與電源管理。
+summary_long: 矽創是無晶圓廠IC設計公司，主要產品為小尺寸顯示器驅動晶片，應用於物聯網、工控與手機。2026年第二季合併營收以物聯網49%為最大來源，其次為感測器16%、車用14%、工控13%及其他8%。感測器業務由子公司昇佳電子發展，車用顯示驅動晶片由子公司力領科技經營，另透過極創電子提供電源管理方案、新特系統投入半導體設備。公司亦提供整合觸控與顯示功能的TDDI，零電容TDDI占同季總營收22%。2025年完成鈊創剩餘股權收購，2026年另對禾保科技投入新台幣6,000萬元。
 segments:
 - evidence_ids:
   - e2
-  id: seg_aiot
-  name: 物聯網AIoT
+  id: aiot
+  name: 物聯網AIoT顯示驅動晶片
   period: 2026Q2
   revenue_share_pct: 49
 - evidence_ids:
   - e3
-  id: seg_industrial
-  name: 工控
+  id: industrial
+  name: 工控顯示驅動晶片
   period: 2026Q2
   revenue_share_pct: 13
 - evidence_ids:
   - e4
-  id: seg_sensor
+  id: sensor
   name: 感測器
   period: 2026Q2
   revenue_share_pct: 16
 - evidence_ids:
   - e5
-  id: seg_auto
-  name: 車用
+  id: automotive
+  name: 車用顯示驅動晶片
   period: 2026Q2
   revenue_share_pct: 14
 - evidence_ids:
   - e6
-  id: seg_other
+  id: other
   name: 其他
   period: 2026Q2
   revenue_share_pct: 8
@@ -70,10 +70,40 @@ relations:
     detail: 面板驅動晶片
     details:
     - 面板驅動晶片
+    - 彩色LCD顯示驅動IC
     edge: e536d2244f8c1
     evidence_level: primary
     id: tw.3034
     name: 聯詠
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 2
+  - as_of: 2023-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 彩色LCD顯示驅動IC
+    details:
+    - 彩色LCD顯示驅動IC
+    edge: eaa551a10f4fc
+    evidence_level: primary
+    id: us.HIMX
+    name: Himax Technologies, Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  customers:
+  - as_of: '2006-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 2006年底歷史客戶；未確認目前交易
+    details:
+    - 2006年底歷史客戶；未確認目前交易
+    edge: e0cfd56c3c2fa
+    evidence_level: primary
+    id: tw.3481
+    name: 群創
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -85,7 +115,7 @@ relations:
     detail: 母公司
     details:
     - 母公司
-    - 感測器積體電路子公司
+    - 感測器IC設計子公司
     edge: e7e584c6d4ac4
     evidence_level: primary
     id: tw.6732
@@ -100,7 +130,7 @@ relations:
     detail: 母公司
     details:
     - 母公司
-    - 車用顯示驅動晶片子公司
+    - 車用顯示驅動IC子公司
     edge: e54c897035907
     evidence_level: primary
     id: tw.6996
@@ -112,113 +142,349 @@ relations:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
+    detail: 全資子公司
+    details:
+    - 全資子公司
+    edge: e1f5a5f334d98
+    evidence_level: primary
+    id: org.hesprotech
+    name: 禾保科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-25'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 電源管理IC設計子公司
+    details:
+    - 電源管理IC設計子公司
+    edge: e5d168b2c593f
+    evidence_level: primary
+    id: org.infsitronix
+    name: 極創電子股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2025-07
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司
+    details:
+    - 全資子公司
+    edge: e989da5b49fc5
+    evidence_level: primary
+    id: org.mcore-technology
+    name: 鈊創電子股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
     detail: 半導體製程及測試設備子公司
     details:
     - 半導體製程及測試設備子公司
-    edge: ed036888e76e5
+    edge: ecabe2295207e
     evidence_level: primary
-    id: org.新特系統股份有限公司
+    id: tw.7815
     name: 新特系統股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
+  transactions:
+  - amount: 上限人民幣100,000仟元
+    as_of: '2024-10-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 核准透過境外控股公司間接增資及調整投資架構
+    details:
+    - 核准透過境外控股公司間接增資及調整投資架構
+    edge: ec924abc48120
+    event_date: '2024-10-31'
+    events:
+    - amount: 上限人民幣100,000仟元
+      detail: 核准透過境外控股公司間接增資及調整投資架構
+      event_date: '2024-10-31'
+    evidence_level: primary
+    id: org.hefei-sitronix
+    name: 合肥矽創電子有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣60,000仟元
+    as_of: 2026-02
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 投資全資子公司禾保科技
+    details:
+    - 投資全資子公司禾保科技
+    edge: ecfe51ea94eef
+    event_date: null
+    events:
+    - amount: 新台幣60,000仟元
+      detail: 投資全資子公司禾保科技
+      event_date: null
+    evidence_level: primary
+    id: org.hesprotech
+    name: 禾保科技股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新臺幣27,430,452元
+    as_of: 2025-07
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 以現金股份轉換收購子公司剩餘股權
+    details:
+    - 以現金股份轉換收購子公司剩餘股權
+    edge: ea5a93f361f96
+    event_date: '2025-05-08'
+    events:
+    - amount: 新臺幣27,430,452元
+      detail: 以現金股份轉換收購子公司剩餘股權
+      event_date: '2025-05-08'
+    evidence_level: primary
+    id: org.mcore-technology
+    name: 鈊創電子股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 人民幣35,000仟元及人民幣100,000仟元
+    as_of: 2025-06
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 合肥矽創投資架構調整之境外子公司增資
+    details:
+    - 合肥矽創投資架構調整之境外子公司增資
+    edge: e01fdd0d71b2a
+    event_date: null
+    events:
+    - amount: 人民幣35,000仟元及人民幣100,000仟元
+      detail: 合肥矽創投資架構調整之境外子公司增資
+      event_date: null
+    evidence_level: primary
+    id: org.sitronix-global
+    name: Sitronix Global Limited
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣20,000,000元
+    as_of: '2026-08-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 購買台新巨龍基金受益單位
+    details:
+    - 購買台新巨龍基金受益單位
+    edge: e9b5768ddf34f
+    event_date: '2026-08-14'
+    events:
+    - amount: 新台幣20,000,000元
+      detail: 購買台新巨龍基金受益單位
+      event_date: '2026-08-14'
+    evidence_level: primary
+    id: org.taishin-investment-trust
+    name: 台新證券投資信託股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣468,800,000元
+    as_of: '2024-05-02'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 購買台元科技園區第十期2B棟7樓及停車位
+    details:
+    - 購買台元科技園區第十期2B棟7樓及停車位
+    edge: e9254523f3eb1
+    event_date: '2024-05-02'
+    events:
+    - amount: 新台幣468,800,000元
+      detail: 購買台元科技園區第十期2B棟7樓及停車位
+      event_date: '2024-05-02'
+    evidence_level: primary
+    id: org.wensheng-development
+    name: 文生開發股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 智慧型手機一線品牌大廠：子公司產品介紹未揭露名稱。
+- 長期供料合約供應商：2026年第二季財報未具名。
+- 矽創以外之鈊創其他股東：股份轉換公告未逐一揭露名稱。
 website: http://www.sitronix.com.tw
 tax_id: '86735240'
 incorporated: '1992-07-09'
 listed: '2003-12-25'
-as_of: '2026-10-15'
+as_of: '2026-10-26'
 confidence: ai_cross_checked
 has_research: true
 evidence:
+  tw.8016#e1:
+    locator: 關於矽創，第一段
+    published_date: null
+    publisher: 矽創電子股份有限公司
+    quote_check: found
+    title: 關於矽創
+    url: https://www.sitronix.com.tw/tw/about-sitronix/overview/
   tw.8016#e10:
-    locator: 產品介紹首段
+    locator: 第24頁，附註十三，力領科技之業務性質及持股；依序為2026/6/30、2025/12/31、2025/6/30
     published_date: null
     publisher: 矽創電子股份有限公司
     quote_check: found
-    title: 電容觸控控制晶片
-    url: https://www.sitronix.com.tw/tw/products-service/capacitive_touch/
+    title: 矽創電子股份有限公司及子公司民國115及114年第2季合併財務報告
+    url: https://www.sitronix.com.tw/wp-content/uploads/2026/08/%E7%9F%BD%E5%89%B5115Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1Final.pdf
   tw.8016#e11:
-    locator: 第24頁，附註十三、子公司，昇佳公司列；第25頁實質控制說明
+    locator: 第24至25頁，附註十三，新特系統業務性質、持股及實質控制說明
     published_date: null
     publisher: 矽創電子股份有限公司
     quote_check: found
-    title: 民國115及114年第2季合併財務報告暨會計師核閱報告
+    title: 矽創電子股份有限公司及子公司民國115及114年第2季合併財務報告
     url: https://www.sitronix.com.tw/wp-content/uploads/2026/08/%E7%9F%BD%E5%89%B5115Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1Final.pdf
   tw.8016#e12:
-    locator: 第24頁，附註十三、子公司，力領公司列及業務性質欄
-    published_date: null
-    publisher: 矽創電子股份有限公司
-    quote_check: found
-    title: 民國115及114年第2季合併財務報告暨會計師核閱報告
-    url: https://www.sitronix.com.tw/wp-content/uploads/2026/08/%E7%9F%BD%E5%89%B5115Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1Final.pdf
-  tw.8016#e13:
-    locator: 第24頁，附註十三、子公司，新特公司列及業務性質欄；第25頁實質控制說明
-    published_date: null
-    publisher: 矽創電子股份有限公司
-    quote_check: found
-    title: 民國115及114年第2季合併財務報告暨會計師核閱報告
-    url: https://www.sitronix.com.tw/wp-content/uploads/2026/08/%E7%9F%BD%E5%89%B5115Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1Final.pdf
-  tw.8016#e14:
-    locator: 昇佳電子股份有限公司介紹
+    locator: 極創電子介紹
     published_date: null
     publisher: 矽創電子股份有限公司
     quote_check: found
     title: 集團子公司
     url: https://www.sitronix.com.tw/tw/human-resources/subsidiaries/
+  tw.8016#e13:
+    locator: 公告第7點對價條件
+    published_date: '2025-05-08'
+    publisher: 公開資訊觀測站重大訊息，MoneyDJ轉載
+    quote_check: found
+    title: 矽創董事會通過以現金對價之股份轉換方式取得子公司鈊創電子100%股份，暫定基準日7/1
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=72c1cf65-b704-41cc-b182-5743c1f8ed28
+  tw.8016#e14:
+    locator: 第37頁，附註13，鈊創mCore剩餘股權收購完成說明
+    published_date: null
+    publisher: 矽創電子股份有限公司
+    quote_check: found
+    title: Sitronix Technology Corporation and Subsidiaries 2025 and 2024 Consolidated Financial Statements
+    url: https://www.sitronix.com.tw/wp-content/uploads/2026/04/Consolidated-Financial-Statements-for-the-Years-Ended-December-31-2025-and-2024.pdf
+  tw.8016#e15:
+    locator: 第24頁，附註十三，禾保科技業務性質及100%持股列
+    published_date: null
+    publisher: 矽創電子股份有限公司
+    quote_check: found
+    title: 矽創電子股份有限公司及子公司民國115及114年第2季合併財務報告
+    url: https://www.sitronix.com.tw/wp-content/uploads/2026/08/%E7%9F%BD%E5%89%B5115Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1Final.pdf
+  tw.8016#e16:
+    locator: 取得不動產公告第1至4點、第21點
+    published_date: '2024-05-02'
+    publisher: 公開資訊觀測站重大訊息，MoneyDJ轉載
+    quote_check: found
+    title: 矽創取得新竹縣竹北市台元科技園區不動產，計約4.69億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=3cb8c806-bfc9-47c0-9d09-86527139645b
+  tw.8016#e17:
+    locator: 大陸地區投資公告第2至4點及第38點
+    published_date: '2024-10-31'
+    publisher: 公開資訊觀測站重大訊息，MoneyDJ轉載
+    quote_check: found
+    title: 矽創董事會決議間接轉投資合肥矽創電子，上限1億人民幣
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=e53eea66-d9eb-4931-9ff3-74f2a1b0f814
+  tw.8016#e18:
+    locator: 第37頁，附註13，2025年5月及6月Global增資與合肥矽創移轉
+    published_date: null
+    publisher: 矽創電子股份有限公司
+    quote_check: found
+    title: Sitronix Technology Corporation and Subsidiaries 2025 and 2024 Consolidated Financial Statements
+    url: https://www.sitronix.com.tw/wp-content/uploads/2026/04/Consolidated-Financial-Statements-for-the-Years-Ended-December-31-2025-and-2024.pdf
+  tw.8016#e19:
+    locator: 第25頁，附註十三，115年2月增加投資禾保公司段落；金額單位為新台幣仟元
+    published_date: null
+    publisher: 矽創電子股份有限公司
+    quote_check: found
+    title: 矽創電子股份有限公司及子公司民國115及114年第2季合併財務報告
+    url: https://www.sitronix.com.tw/wp-content/uploads/2026/08/%E7%9F%BD%E5%89%B5115Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1Final.pdf
   tw.8016#e2:
-    locator: 第7頁，合併營收占比表，物聯網AIoT列，1Q26及2Q26欄
-    published_date: '2026-09-22'
+    locator: 第7頁，合併營收占比表，物聯網AIoT列，4Q25／1Q26／2Q26欄
+    published_date: null
     publisher: 矽創電子股份有限公司
-    quote_check: not_found
-    title: 2Q 2026 Results季度業績簡報
+    quote_check: found
+    title: 矽創電子2Q 2026季度業績簡報
     url: https://www.sitronix.com.tw/wp-content/uploads/2026/09/MOPS-2Q2026_Sitronix_CH_20260804.pdf
-  tw.8016#e3:
-    locator: 第7頁，合併營收占比表，工控列，1Q26及2Q26欄
-    published_date: '2026-09-22'
+  tw.8016#e20:
+    locator: 公告第1至4點、第16點
+    published_date: '2026-08-14'
+    publisher: 公開資訊觀測站重大訊息，Goodinfo轉載
+    quote_check: unreachable
+    title: 矽創公告取得台新巨龍基金
+    url: https://goodinfo.tw/tw/StockAnnounceDetail.asp?CLAIM_TIME=2026%2F08%2F14+17%3A42%3A00&STOCK_ID=8016&SUBJECT=%E5%85%AC%E5%91%8A%E5%8F%96%E5%BE%97%E5%8F%B0%E6%96%B0%E5%B7%A8%E9%BE%8D%E5%9F%BA%E9%87%91
+  tw.8016#e21:
+    locator: 第102頁，PDF第107頁，伍、營運概況／產業競爭情形，彩色LCD驅動IC之部分同業欄
+    published_date: null
     publisher: 矽創電子股份有限公司
-    quote_check: not_found
-    title: 2Q 2026 Results季度業績簡報
+    quote_check: found
+    title: 矽創電子股份有限公司一一二年度年報
+    url: https://www.sitronix.com.tw/wp-content/uploads/2024/05/2023_112_AR.pdf
+  tw.8016#e22:
+    locator: 第51頁，2006年12月31日應收帳款明細表，一般客戶欄；金額單位為新台幣仟元
+    published_date: null
+    publisher: 矽創電子股份有限公司
+    quote_check: found
+    title: 矽創電子股份有限公司民國九十五年度及九十四年度財務報告
+    url: https://www.sitronix.com.tw/wp-content/uploads/2019/04/Q406FS.pdf
+  tw.8016#e3:
+    locator: 第7頁，合併營收占比表，工控列，4Q25／1Q26／2Q26欄
+    published_date: null
+    publisher: 矽創電子股份有限公司
+    quote_check: found
+    title: 矽創電子2Q 2026季度業績簡報
     url: https://www.sitronix.com.tw/wp-content/uploads/2026/09/MOPS-2Q2026_Sitronix_CH_20260804.pdf
   tw.8016#e4:
-    locator: 第7頁，合併營收占比表，感測器列，1Q26及2Q26欄
-    published_date: '2026-09-22'
+    locator: 第7頁，合併營收占比表，感測器列，4Q25／1Q26／2Q26欄
+    published_date: null
     publisher: 矽創電子股份有限公司
-    quote_check: not_found
-    title: 2Q 2026 Results季度業績簡報
+    quote_check: found
+    title: 矽創電子2Q 2026季度業績簡報
     url: https://www.sitronix.com.tw/wp-content/uploads/2026/09/MOPS-2Q2026_Sitronix_CH_20260804.pdf
   tw.8016#e5:
-    locator: 第7頁，合併營收占比表，車用列，1Q26及2Q26欄
-    published_date: '2026-09-22'
+    locator: 第7頁，合併營收占比表，車用列，4Q25／1Q26／2Q26欄
+    published_date: null
     publisher: 矽創電子股份有限公司
-    quote_check: not_found
-    title: 2Q 2026 Results季度業績簡報
+    quote_check: found
+    title: 矽創電子2Q 2026季度業績簡報
     url: https://www.sitronix.com.tw/wp-content/uploads/2026/09/MOPS-2Q2026_Sitronix_CH_20260804.pdf
   tw.8016#e6:
-    locator: 第7頁，合併營收占比表，其他列，1Q26及2Q26欄
-    published_date: '2026-09-22'
+    locator: 第7頁，合併營收占比表，其他列，4Q25／1Q26／2Q26欄
+    published_date: null
     publisher: 矽創電子股份有限公司
     quote_check: not_found
-    title: 2Q 2026 Results季度業績簡報
+    title: 矽創電子2Q 2026季度業績簡報
     url: https://www.sitronix.com.tw/wp-content/uploads/2026/09/MOPS-2Q2026_Sitronix_CH_20260804.pdf
   tw.8016#e7:
-    locator: 集團簡介首段
+    locator: 第7頁，物聯網AIoT DDI說明第1點，零電容TDDI
+    published_date: null
+    publisher: 矽創電子股份有限公司
+    quote_check: found
+    title: 矽創電子2Q 2026季度業績簡報
+    url: https://www.sitronix.com.tw/wp-content/uploads/2026/09/MOPS-2Q2026_Sitronix_CH_20260804.pdf
+  tw.8016#e8:
+    locator: 產品介紹第一段
+    published_date: null
+    publisher: 矽創電子股份有限公司
+    quote_check: found
+    title: AIoT device DDI
+    url: https://www.sitronix.com.tw/en/products/aiot-device-ddi/
+  tw.8016#e9:
+    locator: 集團介紹及昇佳電子介紹
     published_date: null
     publisher: 矽創電子股份有限公司
     quote_check: found
     title: 集團子公司
     url: https://www.sitronix.com.tw/tw/human-resources/subsidiaries/
-  tw.8016#e8:
-    locator: 產品介紹首段
-    published_date: null
-    publisher: 矽創電子股份有限公司
-    quote_check: found
-    title: AIoT裝置顯示器驅動晶片
-    url: https://www.sitronix.com.tw/tw/products-service/aiot-device-ddi/
-  tw.8016#e9:
-    locator: 產品介紹首段
-    published_date: null
-    publisher: 矽創電子股份有限公司
-    quote_check: found
-    title: 工控顯示器驅動晶片
-    url: https://www.sitronix.com.tw/tw/products-service/industrial-display/

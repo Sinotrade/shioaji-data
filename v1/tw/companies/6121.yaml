@@ -18,27 +18,23 @@ industry:
   l3_name: 電池與電池模組
   l3_name_en: Batteries & Battery Modules
 primary_chain_position: midstream
-summary_short: 以鋰電池組研發製造為主，產品涵蓋IT裝置、備援電力、儲能與輕型電動載具。
-summary_long: 新普以鋰電池組的研發、製造與銷售為主要業務，產品涵蓋筆記型電腦、平板電腦與智慧型手機。2025年鋰電池組占營收96.58%，其他銷貨占3.42%。公司亦提供資料中心BBU、高壓電池備援系統、工業級儲能解決方案及無人機相關電池模組。集團透過間接子公司Advanced Energy Solution Holding Co., Ltd.（AES-KY）經營輕量型電動載具電池模組；截至2026年6月底，新普透過全資控股公司持有AES-KY 54.77%股權。
+summary_short: 以筆電等鋰電池模組為主，集團另供應輕型動力及資料中心備援電池。
+summary_long: 新普主要從事鋰電池組業務，2025年鋰電池組占合併營收96.58%，其他銷貨占3.42%。集團產品涵蓋筆記型電腦、平板電腦及智慧型手機電池組，亦包含輕量動力型電池、資料中心備援電池與無人機相關電池模組。主要生產子公司包括新世電子（常熟）、新普科技（重慶）、華普電子（常熟）及越南公司，另透過全資控股公司間接持有AES-KY股權54.77%。越南子公司於2024年取得土地使用權並委建廠房，2026年另公告建廠工程；新普董事會同年分別通過1800萬及2000萬美元增資案。
 segments:
 - evidence_ids:
-  - e1
-  id: seg_battery
+  - e01
+  id: battery
   name: 鋰電池組
   period: '2025'
   revenue_share_pct: 96.58
 - evidence_ids:
-  - e1
-  id: seg_other
+  - e01
+  id: other
   name: 其他銷貨
   period: '2025'
   revenue_share_pct: 3.42
-main_theme: theme.ev
+main_theme: theme.ai_server
 themes:
-- also: []
-  stage: parts
-  theme: theme.ev
-  tier: midstream
 - also: []
   stage: components
   theme: theme.ai_server
@@ -48,11 +44,71 @@ themes:
   theme: theme.drone
   tier: upstream
 - also: []
+  stage: modules
+  theme: theme.apple
+  tier: midstream
+- also: []
   stage: equipment
   theme: theme.data_center
   tier: upstream
 relations:
   customers:
+  - as_of: '2012-03-27'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 歷史筆電電池模組客戶
+    details:
+    - 歷史筆電電池模組客戶
+    edge: e5918da3b472f
+    evidence_level: media
+    id: org.惠普-hp
+    name: 惠普(HP)
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2012-03-27'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 歷史筆電電池模組客戶
+    details:
+    - 歷史筆電電池模組客戶
+    edge: e805c5e0fe3e7
+    evidence_level: media
+    id: org.戴爾-dell
+    name: 戴爾(Dell)
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2022-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 零組件供應關係
+    details:
+    - 零組件供應關係
+    edge: ed188b96c7c0c
+    evidence_level: primary
+    id: tw.2353
+    name: 宏碁
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2024-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 電池供應關係
+    details:
+    - 電池供應關係
+    edge: e1c05415e0640
+    evidence_level: primary
+    id: tw.2357
+    name: 華碩
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
@@ -67,13 +123,27 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: 2023-09
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 官方供應商清單所列供應關係
+    details:
+    - 官方供應商清單所列供應關係
+    edge: e88508083cee1
+    evidence_level: primary
+    id: us.AAPL
+    name: Apple
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 透過全資控股公司間接持股54.77%的子公司AES-KY
+    detail: 透過全資控股公司間接持有54.77%
     details:
-    - 透過全資控股公司間接持股54.77%的子公司AES-KY
+    - 透過全資控股公司間接持有54.77%
     - 最終母公司
     edge: e880f5414e99e
     evidence_level: primary
@@ -86,12 +156,26 @@ relations:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 中國常熟的間接製造子公司
+    detail: 間接全資生產子公司
     details:
-    - 中國常熟的間接製造子公司
-    edge: e34bcc77a2ecd
+    - 間接全資生產子公司
+    edge: ee8130d7caed1
     evidence_level: primary
-    id: org.simplo-technology-changshu
+    id: org.huapu-changshu
+    name: 華普電子（常熟）有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接全資生產子公司
+    details:
+    - 間接全資生產子公司
+    edge: e591edd33fe62
+    evidence_level: primary
+    id: org.simplo-changshu
     name: 新世電子（常熟）有限公司
     ranking_basis: unranked
     share_basis: null
@@ -100,46 +184,209 @@ relations:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 中國重慶的間接製造子公司
+    detail: 間接全資生產子公司
     details:
-    - 中國重慶的間接製造子公司
-    edge: e58f2337d4b7c
+    - 間接全資生產子公司
+    edge: e4deec83b386d
     evidence_level: primary
-    id: org.simplo-technology-chongqing
+    id: org.simplo-chongqing
     name: 新普科技（重慶）有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-06-30'
+  - as_of: '2026-08-10'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持股100%的越南電池製造子公司
+    detail: 全資越南電池模組生產子公司
     details:
-    - 直接持股100%的越南電池製造子公司
-    edge: e6fdfdf8600ca
+    - 全資越南電池模組生產子公司
+    edge: efd32041db24f
     evidence_level: primary
-    id: org.simplo-technology-vietnam
+    id: org.simplo-vietnam
     name: SIMPLO TECHNOLOGY (VIETNAM) COMPANY LIMITED
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-06-30'
+  suppliers:
+  - as_of: '2026-05-13'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持股100%的投資控股子公司
+    detail: 鋰離子電池組所用電池芯
     details:
-    - 直接持股100%的投資控股子公司
-    edge: ee6f5dd8d2774
+    - 鋰離子電池組所用電池芯
+    edge: e22c944833bac
     evidence_level: primary
-    id: org.trend-power-technology-holdings-samoa
-    name: Trend Power Technology Holdings (Samoa) Co., Ltd.
+    id: kr.006400
+    name: SAMSUNG SDI Co., LTD
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-05-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 鋰離子電池組所用電池芯
+    details:
+    - 鋰離子電池組所用電池芯
+    edge: e36794daebc70
+    evidence_level: primary
+    id: org.lg-chemical-limited
+    name: LG Chemical Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-05-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 鋰離子電池組所用電池芯
+    details:
+    - 鋰離子電池組所用電池芯
+    edge: e43e4bf6695ff
+    evidence_level: primary
+    id: org.panasonic-co-ltd
+    name: Panasonic Co., Ltd.
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
   transactions:
+  - amount: 機電合約越南盾152,000,000,000元；消防合約越南盾47,500,000,000元
+    as_of: '2024-10-25'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 越南子公司機電及消防工程
+    details:
+    - 越南子公司機電及消防工程
+    edge: e1245c1fe2275
+    event_date: '2024-10-25'
+    events:
+    - amount: 機電合約越南盾152,000,000,000元；消防合約越南盾47,500,000,000元
+      detail: 越南子公司機電及消防工程
+      event_date: '2024-10-25'
+    evidence_level: primary
+    id: org.acter-vietnam
+    name: 聖暉工程科技責任有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 人民幣8,583,744元
+    as_of: '2025-12-24'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 華普電子（常熟）取得廠房使用權
+    details:
+    - 華普電子（常熟）取得廠房使用權
+    edge: ea67d5d508736
+    event_date: '2025-12-24'
+    events:
+    - amount: 人民幣8,583,744元
+      detail: 華普電子（常熟）取得廠房使用權
+      event_date: '2025-12-24'
+    evidence_level: primary
+    id: org.simplo-changshu
+    name: 新世電子（常熟）有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 人民幣3,384,000元
+    as_of: '2025-12-24'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 重慶貽百電子取得廠房使用權
+    details:
+    - 重慶貽百電子取得廠房使用權
+    edge: e7e543df12a10
+    event_date: '2025-12-24'
+    events:
+    - amount: 人民幣3,384,000元
+      detail: 重慶貽百電子取得廠房使用權
+      event_date: '2025-12-24'
+    evidence_level: primary
+    id: org.simplo-chongqing
+    name: 新普科技（重慶）有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 1800萬美元
+    as_of: '2026-08-10'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 2026年3月越南子公司增資案
+    details:
+    - 2026年3月越南子公司增資案
+    - 2026年8月越南子公司增資案
+    edge: e2071a31a104a
+    event_date: '2026-03-09'
+    events:
+    - amount: 2000萬美元
+      detail: 2026年8月越南子公司增資案
+      event_date: '2026-08-10'
+    - amount: 1800萬美元
+      detail: 2026年3月越南子公司增資案
+      event_date: '2026-03-09'
+    evidence_level: media
+    id: org.simplo-vietnam
+    name: SIMPLO TECHNOLOGY (VIETNAM) COMPANY LIMITED
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 越南盾275,797,177,728元（未稅）
+    as_of: '2024-02-07'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 越南子公司取得土地使用權
+    details:
+    - 越南子公司取得土地使用權
+    edge: e0480e142bf36
+    event_date: '2024-02-07'
+    events:
+    - amount: 越南盾275,797,177,728元（未稅）
+      detail: 越南子公司取得土地使用權
+      event_date: '2024-02-07'
+    evidence_level: primary
+    id: org.trend-power-vietnam
+    name: TREND POWER TECHNOLOGY (VIETNAM)COMPANY LIMITED
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 越南盾282,000,000,000元
+    as_of: '2026-05-25'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 越南子公司2024年廠房土建工程
+    details:
+    - 越南子公司2024年廠房土建工程
+    - 越南子公司2026年廠房工程
+    edge: e7f7b603f16e1
+    event_date: '2024-10-25'
+    events:
+    - amount: 越南盾663,500,000,000元
+      detail: 越南子公司2026年廠房工程
+      event_date: '2026-05-25'
+    - amount: 越南盾282,000,000,000元
+      detail: 越南子公司2024年廠房土建工程
+      event_date: '2024-10-25'
+    evidence_level: primary
+    id: org.visicons
+    name: VISICONS建築與投資股份公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
   - amount: 新台幣921,954元／月
     as_of: '2026-07-23'
     confidence: ai_cross_checked
@@ -170,124 +417,211 @@ relations:
     share_pct: null
     weight: 1
 unresolved_mentions:
-- 大型雲端服務商（CSP）：2025年年報未具名。
+- 年報所稱大型雲端服務商（CSP），未具名。
+- 年報所稱全球一線品牌客戶，未逐一揭露對應產品、交易額或占比。
+- 2025年新世電子（常熟）擬處分萬源通股票的買方未揭露。
+- 無人機相關電池模組的客戶、出貨金額及營收占比未揭露。
 website: www.simplo.com.tw
 tax_id: '86620351'
 incorporated: '1992-04-16'
 listed: '2001-11-27'
-as_of: '2026-10-14'
+as_of: '2026-10-25'
 confidence: ai_cross_checked
 has_research: true
 evidence:
-  tw.6121#e1:
-    locator: 印刷頁56／PDF第60頁，營業比重（114年度）
-    published_date: null
+  tw.6121#e01:
+    locator: 印刷頁56，營業比重（114年度）
+    published_date: '2026-04-01'
     publisher: 新普科技股份有限公司
     quote_check: found
-    title: 新普科技2025年年報
+    title: 新普科技股份有限公司114年度年報
     url: https://www.simplo.com.tw/archive/doc/download/2025_%E6%96%B0%E6%99%AE%E5%B9%B4%E5%A0%B1.pdf
-  tw.6121#e10:
-    locator: 第23頁，附註十二子公司；2026年6月30日持股欄
+  tw.6121#e02:
+    locator: 印刷頁56，公司目前之產品項目
+    published_date: '2026-04-01'
+    publisher: 新普科技股份有限公司
+    quote_check: found
+    title: 新普科技股份有限公司114年度年報
+    url: https://www.simplo.com.tw/archive/doc/download/2025_%E6%96%B0%E6%99%AE%E5%B9%B4%E5%A0%B1.pdf
+  tw.6121#e03:
+    locator: 印刷頁56，公司目前之產品項目
+    published_date: '2026-04-01'
+    publisher: 新普科技股份有限公司
+    quote_check: found
+    title: 新普科技股份有限公司114年度年報
+    url: https://www.simplo.com.tw/archive/doc/download/2025_%E6%96%B0%E6%99%AE%E5%B9%B4%E5%A0%B1.pdf
+  tw.6121#e04:
+    locator: 印刷頁56，公司目前之產品項目
+    published_date: '2026-04-01'
+    publisher: 新普科技股份有限公司
+    quote_check: found
+    title: 新普科技股份有限公司114年度年報
+    url: https://www.simplo.com.tw/archive/doc/download/2025_%E6%96%B0%E6%99%AE%E5%B9%B4%E5%A0%B1.pdf
+  tw.6121#e05:
+    locator: 印刷頁1，營業成果，資料中心BBU段落
+    published_date: '2026-04-01'
+    publisher: 新普科技股份有限公司
+    quote_check: found
+    title: 新普科技股份有限公司114年度年報
+    url: https://www.simplo.com.tw/archive/doc/download/2025_%E6%96%B0%E6%99%AE%E5%B9%B4%E5%A0%B1.pdf
+  tw.6121#e06:
+    locator: 印刷頁66，主要產品用途及產製過程；頁58，上中下游關聯圖
+    published_date: '2026-04-01'
+    publisher: 新普科技股份有限公司
+    quote_check: found
+    title: 新普科技股份有限公司114年度年報
+    url: https://www.simplo.com.tw/archive/doc/download/2025_%E6%96%B0%E6%99%AE%E5%B9%B4%E5%A0%B1.pdf
+  tw.6121#e07:
+    locator: 產品介紹正文；前往產品介紹連結指向AES-KY官網
     published_date: null
     publisher: 新普科技股份有限公司
     quote_check: found
-    title: 新普科技及子公司2026年第2季合併財務報告
+    title: LEV高功率－產品與服務
+    url: https://www.simplo.com.tw/article_d.php?id=684&lang=tw&tb=2
+  tw.6121#e08:
+    locator: 頁23，附註十二，列入合併財務報告之子公司
+    published_date: null
+    publisher: 新普科技股份有限公司
+    quote_check: found
+    title: 新普科技股份有限公司及子公司115年第2季合併財務報告
+    url: https://www.simplo.com.tw/archive/doc/download/2026Q2_%E6%96%B0%E6%99%AE%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
+  tw.6121#e09:
+    locator: 頁21，附註十二，本公司直接持有Trend Power Holdings及越南公司之列
+    published_date: null
+    publisher: 新普科技股份有限公司
+    quote_check: found
+    title: 新普科技股份有限公司及子公司115年第2季合併財務報告
+    url: https://www.simplo.com.tw/archive/doc/download/2026Q2_%E6%96%B0%E6%99%AE%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
+  tw.6121#e10:
+    locator: 頁56，附表四，關係欄
+    published_date: null
+    publisher: 新普科技股份有限公司
+    quote_check: found
+    title: 新普科技股份有限公司及子公司115年第2季合併財務報告
     url: https://www.simplo.com.tw/archive/doc/download/2026Q2_%E6%96%B0%E6%99%AE%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
   tw.6121#e11:
-    locator: 產品與服務，業務說明
-    published_date: null
-    publisher: Advanced Energy Solution Holding Co., Ltd.
-    quote_check: found
-    title: AES-KY產品與服務
-    url: https://www.advancedenergysolution.com.tw/article.php?lang=tw&tb=2
-  tw.6121#e12:
-    locator: 第21頁，附註十二列入合併財報之子公司，投資公司與子公司欄
+    locator: 頁22，子公司表；頁56，附表四
     published_date: null
     publisher: 新普科技股份有限公司
     quote_check: found
-    title: 新普科技及子公司2026年第2季合併財務報告
+    title: 新普科技股份有限公司及子公司115年第2季合併財務報告
+    url: https://www.simplo.com.tw/archive/doc/download/2026Q2_%E6%96%B0%E6%99%AE%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
+  tw.6121#e12:
+    locator: 頁22，子公司表；頁56，附表四
+    published_date: null
+    publisher: 新普科技股份有限公司
+    quote_check: found
+    title: 新普科技股份有限公司及子公司115年第2季合併財務報告
     url: https://www.simplo.com.tw/archive/doc/download/2026Q2_%E6%96%B0%E6%99%AE%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
   tw.6121#e13:
-    locator: 第22頁，附註十二列入合併財報之子公司，投資公司與子公司欄
+    locator: 頁1，2023會計年度範圍說明；頁20，為Apple製造之供應商與地點表
     published_date: null
-    publisher: 新普科技股份有限公司
+    publisher: Apple
     quote_check: found
-    title: 新普科技及子公司2026年第2季合併財務報告
-    url: https://www.simplo.com.tw/archive/doc/download/2026Q2_%E6%96%B0%E6%99%AE%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
+    title: Supplier List
+    url: https://www.supplychainreports.apple/files/doc_downloads/2024/04/Apple-Supplier-List.pdf
   tw.6121#e14:
-    locator: 印刷頁47／PDF第51頁，2026年3月9日董事會決議第13項
-    published_date: null
-    publisher: 新普科技股份有限公司
+    locator: 正文第一段，傳統筆電電池模組客戶
+    published_date: '2012-03-27'
+    publisher: Smart智富
     quote_check: found
-    title: 新普科技2025年年報
-    url: https://www.simplo.com.tw/archive/doc/download/2025_%E6%96%B0%E6%99%AE%E5%B9%B4%E5%A0%B1.pdf
+    title: 新普
+    url: https://smart.businessweekly.com.tw/Magazine/detail.aspx?id=46198
   tw.6121#e15:
-    locator: 第21頁，附註十二子公司；投資公司為本公司，2026年6月30日持股欄
+    locator: 頁1，2022年主要供應商說明；頁3，Component Suppliers表
     published_date: null
-    publisher: 新普科技股份有限公司
-    quote_check: found
-    title: 新普科技及子公司2026年第2季合併財務報告
-    url: https://www.simplo.com.tw/archive/doc/download/2026Q2_%E6%96%B0%E6%99%AE%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
+    publisher: Acer
+    quote_check: unreachable
+    title: Acer Supplier
+    url: https://www.acer.com/sustainability/uploads/files/shares/responsible-supply-chain/supplier-list.pdf
   tw.6121#e16:
-    locator: 印刷頁1／PDF第5頁，致股東報告書，營業成果
+    locator: 頁1，2024會計年度範圍；頁5，BATTERY分類
     published_date: null
-    publisher: 新普科技股份有限公司
+    publisher: ASUS
     quote_check: found
-    title: 新普科技2025年年報
-    url: https://www.simplo.com.tw/archive/doc/download/2025_%E6%96%B0%E6%99%AE%E5%B9%B4%E5%A0%B1.pdf
-  tw.6121#e2:
-    locator: 印刷頁56／PDF第60頁，公司目前之產品項目
-    published_date: null
-    publisher: 新普科技股份有限公司
+    title: ASUS Supplier List
+    url: https://esg.asus.com/files/documents/ASUS_Supplier_List.pdf
+  tw.6121#e17:
+    locator: 頁1，Product and Company Identification，電池芯製造商及新普公司名稱欄
+    published_date: '2026-05-13'
+    publisher: 新普科技股份有限公司；Lenovo官方網站提供
     quote_check: found
-    title: 新普科技2025年年報
-    url: https://www.simplo.com.tw/archive/doc/download/2025_%E6%96%B0%E6%99%AE%E5%B9%B4%E5%A0%B1.pdf
-  tw.6121#e3:
-    locator: 公司基本資料，主要業務
-    published_date: null
-    publisher: 新普科技股份有限公司
+    title: SAFETY DATA SHEET，SDS_Simplo-2603
+    url: https://www.lenovo.com/content/dam/lenovo/site-design/esg-document-library/global/battery-msds/notebooks---ultrabooks/Simplo-03_SDS.pdf
+  tw.6121#e18:
+    locator: 頁1，Product and Company Identification，電池芯製造商及新普公司名稱欄
+    published_date: '2026-05-13'
+    publisher: 新普科技股份有限公司；Lenovo官方網站提供
     quote_check: found
-    title: 治理組織－公司基本資料
-    url: https://www.simplo.com.tw/article.php?cid=12&id=360&lang=tw&ot=all&tb=3
-  tw.6121#e4:
-    locator: 工業應用產品事業，第1項
-    published_date: null
-    publisher: 新普科技股份有限公司
+    title: SAFETY DATA SHEET，SDS_Simplo-2606
+    url: https://www.lenovo.com/content/dam/lenovo/site-design/esg-document-library/global/battery-msds/notebooks---ultrabooks/Simplo-06_SDS.pdf
+  tw.6121#e19:
+    locator: 頁1，Product and Company Identification，電池芯製造商及新普公司名稱欄
+    published_date: '2026-05-13'
+    publisher: 新普科技股份有限公司；Lenovo官方網站提供
     quote_check: found
-    title: 治理組織－各主要部門所營業務
-    url: https://www.simplo.com.tw/article.php?cid=12&id=360&lang=tw&ot=all&tb=3
-  tw.6121#e5:
-    locator: 工業應用產品事業，第2至3項
-    published_date: null
-    publisher: 新普科技股份有限公司
+    title: SAFETY DATA SHEET，SDS_Simplo-2605
+    url: https://www.lenovo.com/content/dam/lenovo/site-design/esg-document-library/global/battery-msds/notebooks---ultrabooks/Simplo-05_SDS.pdf
+  tw.6121#e20:
+    locator: 公告第1至4項，標的、面積、金額及交易相對人
+    published_date: '2024-02-07'
+    publisher: 公開資訊觀測站重大訊息；鉅亨網刊載
     quote_check: found
-    title: 治理組織－各主要部門所營業務
-    url: https://www.simplo.com.tw/article.php?cid=12&id=360&lang=tw&ot=all&tb=3
-  tw.6121#e6:
-    locator: 電池模組解決方案，產品應用
-    published_date: null
-    publisher: 新普科技股份有限公司
+    title: 新普：代SIMPLO TECHNOLOGY (VIETNAM)公告取得土地使用權資產
+    url: https://news.cnyes.com/news/id/5448969
+  tw.6121#e21:
+    locator: 公告第3至4項，土建契約
+    published_date: '2024-10-25'
+    publisher: 公開資訊觀測站重大訊息；鉅亨網刊載
     quote_check: found
-    title: 產品應用
-    url: https://www.simplo.com.tw/article_d.php?cid=84&id=696&lang=tw&tb=2
-  tw.6121#e7:
-    locator: 電池模組解決方案，產品應用
-    published_date: null
-    publisher: 新普科技股份有限公司
+    title: 新普：代越南子公司以自地委建廠房
+    url: https://news.cnyes.com/news/id/5752888
+  tw.6121#e22:
+    locator: 公告第3至4項，機電及消防契約
+    published_date: '2024-10-25'
+    publisher: 公開資訊觀測站重大訊息；鉅亨網刊載
     quote_check: found
-    title: 產品應用
-    url: https://www.simplo.com.tw/article_d.php?cid=84&id=696&lang=tw&tb=2
-  tw.6121#e8:
-    locator: 印刷頁56／PDF第60頁，公司目前之產品項目
-    published_date: null
-    publisher: 新普科技股份有限公司
+    title: 新普：代越南子公司以自地委建廠房
+    url: https://news.cnyes.com/news/id/5752888
+  tw.6121#e23:
+    locator: 公告第1至3項及第11項；買方未具名
+    published_date: '2025-03-03'
+    publisher: 公開資訊觀測站重大訊息；鉅亨網刊載
     quote_check: found
-    title: 新普科技2025年年報
-    url: https://www.simplo.com.tw/archive/doc/download/2025_%E6%96%B0%E6%99%AE%E5%B9%B4%E5%A0%B1.pdf
-  tw.6121#e9:
-    locator: 第21頁，附註十二子公司；投資公司為本公司，2026年6月30日持股欄
-    published_date: null
-    publisher: 新普科技股份有限公司
+    title: 新普：代新世電子（常熟）公告董事會通過處分金融資產
+    url: https://news.cnyes.com/news/id/5880415
+  tw.6121#e24:
+    locator: 正文第一段
+    published_date: '2026-03-09'
+    publisher: 中央通訊社
     quote_check: found
-    title: 新普科技及子公司2026年第2季合併財務報告
-    url: https://www.simplo.com.tw/archive/doc/download/2026Q2_%E6%96%B0%E6%99%AE%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
+    title: 新普董事會通過增資越南子公司1800萬美元
+    url: https://www.cna.com.tw/news/afe/202603093007.aspx
+  tw.6121#e25:
+    locator: 正文第一段，增資金額、累計投資及持股比例
+    published_date: '2026-08-10'
+    publisher: 中央通訊社
+    quote_check: found
+    title: 新普決議增資越南子公司2000萬美元
+    url: https://www.cna.com.tw/news/afe/202608103003.aspx
+  tw.6121#e26:
+    locator: 公告第5、6及10項
+    published_date: '2025-12-24'
+    publisher: 公開資訊觀測站重大訊息；鉅亨網刊載
+    quote_check: found
+    title: 新普：代重要子公司華普電子（常熟）公告取得使用權資產
+    url: https://news.cnyes.com/news/id/6287680
+  tw.6121#e27:
+    locator: 公告第5、6及10項
+    published_date: '2025-12-24'
+    publisher: 公開資訊觀測站重大訊息；鉅亨網刊載
+    quote_check: found
+    title: 新普：代子公司重慶貽百電子公告取得使用權資產
+    url: https://news.cnyes.com/news/id/6287679
+  tw.6121#e28:
+    locator: 正文第二段，工程契約相對人及金額
+    published_date: '2026-05-25'
+    publisher: 中央通訊社
+    quote_check: found
+    title: 新普擴充營運規模　越南子公司建廠
+    url: https://www.cna.com.tw/news/afe/202605253001.aspx

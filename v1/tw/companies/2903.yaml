@@ -18,58 +18,111 @@ industry:
   l3_name: 百貨與零售
   l3_name_en: Department Stores & Retail
 primary_chain_position: not_applicable
-summary_short: 經營百貨公司、購物中心及線上購物，旗下涵蓋多個零售品牌。
-summary_long: 遠東百貨以百貨公司與購物中心為主要服務，商場結合購物、餐飲與娛樂機能，並以City系列購物中心提供複合式消費空間。公司另提供線上購物服務，整合線上與實體百貨的購物系統，線上購買商品亦可取得實體百貨禮券或優惠券回饋。遠東集團官網的遠東百貨子公司名單，列有太平洋崇光百貨（遠東SOGO）、遠百企業（愛買）、遠東都會（city'super）、亞東百貨（遠企），以及竹北新世紀購物中心，涵蓋多個零售品牌與購物中心事業。
+summary_short: 經營百貨與購物中心，收入來自商品銷售、專櫃抽成、廣告促銷及租金。
+summary_long: 遠東百貨經營百貨公司與購物中心，結合購物、餐飲及娛樂場域，主要收入類型包括商品銷售、專櫃抽成、廣告促銷及租金。旗下零售事業涵蓋太平洋崇光百貨、經營愛買的遠百企業，以及經營city'super的遠東都會。2024年由子公司百揚投資公告增購太平洋流通投資股權；2025年亞東百貨取得遠企購物中心使用權；2026年遠百董事會通過對亞東百貨現金增資六億元，另由太平洋崇光百貨簽訂中壢店建物及車位的十年租約。
+segments:
+- evidence_ids:
+  - e02
+  id: goods
+  name: 商品銷售收入
+  period: 2026年上半年
+  revenue_share_pct: null
+- evidence_ids:
+  - e03
+  id: commissions
+  name: 專櫃抽成收入
+  period: 2026年上半年
+  revenue_share_pct: null
+- evidence_ids:
+  - e04
+  id: advertising
+  name: 廣告及促銷收入
+  period: 2026年上半年
+  revenue_share_pct: null
+- evidence_ids:
+  - e05
+  id: rental
+  name: 租金收入
+  period: 2026年上半年
+  revenue_share_pct: null
 relations:
   subsidiaries:
-  - as_of: '2026-10-15'
+  - as_of: '2026-08-12'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 子公司名單列示；遠企
+    detail: 遠企購物中心事業
     details:
-    - 子公司名單列示；遠企
+    - 遠企購物中心事業
     edge: ed0bf817f69fb
-    evidence_level: other
+    evidence_level: primary
     id: org.亞東百貨股份有限公司
     name: 亞東百貨股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-10-15'
+  - as_of: '2026-10-08'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 子公司名單列示；遠東SOGO
+    detail: 遠東SOGO百貨事業
     details:
-    - 子公司名單列示；遠東SOGO
+    - 遠東SOGO百貨事業
     edge: e71c4dc20b48b
-    evidence_level: other
+    evidence_level: primary
     id: org.太平洋崇光百貨股份有限公司
     name: 太平洋崇光百貨股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-10-15'
+  - as_of: '2025-03-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 子公司名單列示；購物中心事業
+    detail: 遠百集團零售事業持股
     details:
-    - 子公司名單列示；購物中心事業
-    edge: e88dd53d2e8b8
-    evidence_level: other
-    id: org.竹北新世紀購物中心股份有限公司
-    name: 竹北新世紀購物中心股份有限公司
+    - 遠百集團零售事業持股
+    edge: e129d470cb958
+    evidence_level: primary
+    id: org.太平洋流通投資股份有限公司
+    name: 太平洋流通投資股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-10-15'
+  - as_of: '2024-11-08'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 子公司名單列示；city'super
+    detail: 零售事業投資平台
     details:
-    - 子公司名單列示；city'super
+    - 零售事業投資平台
+    edge: e4d94f5429263
+    evidence_level: primary
+    id: org.百揚投資股份有限公司
+    name: 百揚投資股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-12'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團投資及土地出租
+    details:
+    - 集團投資及土地出租
+    edge: e9fd6314a9426
+    evidence_level: primary
+    id: org.百鼎投資股份有限公司
+    name: 百鼎投資股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: city'super超市事業
+    details:
+    - city'super超市事業
     edge: ebc3b8f8232b1
     evidence_level: other
     id: org.遠東都會股份有限公司
@@ -78,12 +131,12 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-10-15'
+  - as_of: '2026-10-26'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 子公司名單列示；愛買
+    detail: 愛買量販事業
     details:
-    - 子公司名單列示；愛買
+    - 愛買量販事業
     edge: e564342f67cd6
     evidence_level: other
     id: org.遠百企業股份有限公司
@@ -92,60 +145,290 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  suppliers:
+  - as_of: '2026-04-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 寶慶路32號重建工程承造
+    details:
+    - 寶慶路32號重建工程承造
+    edge: ef76b20cb97d8
+    evidence_level: primary
+    id: org.遠揚營造工程股份有限公司
+    name: 遠揚營造工程股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 新台幣600,000,000元
+    as_of: '2026-08-12'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 現金增資亞東百貨
+    details:
+    - 現金增資亞東百貨
+    edge: edbbeb5950329
+    event_date: '2026-08-12'
+    events:
+    - amount: 新台幣600,000,000元
+      detail: 現金增資亞東百貨
+      event_date: '2026-08-12'
+    evidence_level: primary
+    id: org.亞東百貨-股-公司
+    name: 亞東百貨(股)公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣2,838,632,801元
+    as_of: '2026-10-08'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司SOGO中壢店建物及車位使用權
+    details:
+    - 子公司SOGO中壢店建物及車位使用權
+    edge: e2237fe7495f2
+    event_date: '2026-10-08'
+    events:
+    - amount: 新台幣2,838,632,801元
+      detail: 子公司SOGO中壢店建物及車位使用權
+      event_date: '2026-10-08'
+    evidence_level: primary
+    id: org.六和紡織廠股份有限公司
+    name: 六和紡織廠股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2026-10-08'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 共同出租子公司SOGO中壢店營業場地
+    details:
+    - 共同出租子公司SOGO中壢店營業場地
+    edge: e06880577573d
+    event_date: '2026-10-08'
+    events:
+    - amount: null
+      detail: 共同出租子公司SOGO中壢店營業場地
+      event_date: '2026-10-08'
+    evidence_level: primary
+    id: org.海華建設股份有限公司
+    name: 海華建設股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣29,846,137元
+    as_of: '2026-06-12'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 取得台南育樂段土地使用權
+    details:
+    - 取得台南育樂段土地使用權
+    edge: e945cff8898ce
+    event_date: '2026-06-12'
+    events:
+    - amount: 新台幣29,846,137元
+      detail: 取得台南育樂段土地使用權
+      event_date: '2026-06-12'
+    evidence_level: primary
+    id: org.百鼎投資股份有限公司
+    name: 百鼎投資股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣846,538,327元
+    as_of: '2025-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司百揚增購太平洋流通投資股權
+    details:
+    - 子公司百揚增購太平洋流通投資股權
+    edge: e2db1cf12a477
+    event_date: '2024-11-08'
+    events:
+    - amount: 新台幣846,538,327元
+      detail: 子公司百揚增購太平洋流通投資股權
+      event_date: '2024-11-08'
+    evidence_level: primary
+    id: org.遠鼎投資股份有限公司
+    name: 遠鼎投資股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣122,049仟元
+    as_of: '2025-07-29'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 合併公司增購遠百亞太開發股權
+    details:
+    - 合併公司增購遠百亞太開發股權
+    - 子公司亞東百貨取得遠企購物中心使用權
+    edge: ea6a7009cc5ab
+    event_date: '2025-07-29'
+    events:
+    - amount: 新台幣393,135,856元
+      detail: 子公司亞東百貨取得遠企購物中心使用權
+      event_date: '2025-07-29'
+    - amount: 新台幣122,049仟元
+      detail: 合併公司增購遠百亞太開發股權
+      event_date: null
+    evidence_level: primary
+    id: org.遠鼎股份有限公司
+    name: 遠鼎股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.feds.com.tw
 tax_id: 03521905
 incorporated: '1967-08-31'
 listed: '1978-10-11'
-as_of: '2026-10-15'
+as_of: '2026-10-26'
 confidence: ai_cross_checked
 has_research: true
 evidence:
-  tw.2903#e2:
-    locator: 公司概況；主要產品/服務
+  tw.2903#e01:
+    locator: 公司概況及主要產品／服務
     published_date: null
     publisher: 遠東集團
     quote_check: found
-    title: 遠東百貨股份有限公司 - 遠東集團
+    title: 遠東百貨股份有限公司
     url: https://www.feg.com.tw/tw/business/company.aspx?id=64
-  tw.2903#e3:
-    locator: 官網功能介紹／線上購物
+  tw.2903#e02:
+    locator: 第32頁，附註22 REVENUE
+    published_date: '2026-10-14'
+    publisher: 遠東百貨股份有限公司（原始文件鏡像）
+    quote_check: found
+    title: 遠東百貨及子公司2026年上半年合併財報英文版
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52225/2026/RNS/52225_rns_2026-10-14_f4f88e17-5e90-44ab-a16e-1d677577e411.pdf
+  tw.2903#e03:
+    locator: 第32頁，附註22 REVENUE
+    published_date: '2026-10-14'
+    publisher: 遠東百貨股份有限公司（原始文件鏡像）
+    quote_check: found
+    title: 遠東百貨及子公司2026年上半年合併財報英文版
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52225/2026/RNS/52225_rns_2026-10-14_f4f88e17-5e90-44ab-a16e-1d677577e411.pdf
+  tw.2903#e04:
+    locator: 第32頁，附註22 REVENUE
+    published_date: '2026-10-14'
+    publisher: 遠東百貨股份有限公司（原始文件鏡像）
+    quote_check: found
+    title: 遠東百貨及子公司2026年上半年合併財報英文版
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52225/2026/RNS/52225_rns_2026-10-14_f4f88e17-5e90-44ab-a16e-1d677577e411.pdf
+  tw.2903#e05:
+    locator: 第32頁，附註22，投資性不動產及其他營業租賃項下
+    published_date: '2026-10-14'
+    publisher: 遠東百貨股份有限公司（原始文件鏡像）
+    quote_check: found
+    title: 遠東百貨及子公司2026年上半年合併財報英文版
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52225/2026/RNS/52225_rns_2026-10-14_f4f88e17-5e90-44ab-a16e-1d677577e411.pdf
+  tw.2903#e06:
+    locator: 子公司列表
+    published_date: null
+    publisher: 遠東集團
+    quote_check: found
+    title: 遠東百貨股份有限公司
+    url: https://www.feg.com.tw/tw/business/company.aspx?id=64
+  tw.2903#e07:
+    locator: 子公司列表
+    published_date: null
+    publisher: 遠東集團
+    quote_check: found
+    title: 遠東百貨股份有限公司
+    url: https://www.feg.com.tw/tw/business/company.aspx?id=64
+  tw.2903#e08:
+    locator: 子公司列表
+    published_date: null
+    publisher: 遠東集團
+    quote_check: found
+    title: 遠東百貨股份有限公司
+    url: https://www.feg.com.tw/tw/business/company.aspx?id=64
+  tw.2903#e09:
+    locator: 公告第4項
+    published_date: '2024-11-08'
+    publisher: 公開資訊觀測站（MoneyDJ全文轉載）
+    quote_check: found
+    title: 遠百：百揚投資取得太平洋流通投資33,420,384股，計約8.47億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=ddf0c43f-274f-4354-a12b-fa568f74105f
+  tw.2903#e10:
+    locator: 公告第3項；交易對象及交割條件見第4、9項
+    published_date: '2024-11-08'
+    publisher: 公開資訊觀測站（MoneyDJ全文轉載）
+    quote_check: found
+    title: 遠百：百揚投資取得太平洋流通投資33,420,384股，計約8.47億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=ddf0c43f-274f-4354-a12b-fa568f74105f
+  tw.2903#e11:
+    locator: 第39至40頁，附註二六，2025年1月取得太流額外股權
+    published_date: '2026-05-15'
+    publisher: 遠東百貨股份有限公司（原始文件鏡像）
+    quote_check: found
+    title: 遠東百貨及子公司民國115及114年第1季合併財務報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52225/2026/RNS/52225_rns_2026-05-15_17ec019c-99d3-41f6-88b3-cbc8f30967c8.pdf
+  tw.2903#e12:
+    locator: 公告第6、14項
+    published_date: '2026-08-12'
+    publisher: 公開資訊觀測站（玉山證券全文轉載）
+    quote_check: found
+    title: 遠百公告本公司董事會決議通過現金增資亞東百貨(股)公司案
+    url: https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B516A26B4-82FE-45ED-A8B7-31277B0978BA%7D
+  tw.2903#e13:
+    locator: 公告第5項；認股方式、持股及用途見第12、14、17項
+    published_date: '2026-08-12'
+    publisher: 公開資訊觀測站（玉山證券全文轉載）
+    quote_check: found
+    title: 遠百公告本公司董事會決議通過現金增資亞東百貨(股)公司案
+    url: https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B516A26B4-82FE-45ED-A8B7-31277B0978BA%7D
+  tw.2903#e14:
+    locator: 公告第5、6、10項
+    published_date: '2025-07-29'
+    publisher: 公開資訊觀測站（MoneyDJ全文轉載）
+    quote_check: found
+    title: 遠百代子公司亞東百貨股份有限公司公告向關係人取得使用權資產
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=cb175a34-2190-4cb7-a003-33715a39d6d0
+  tw.2903#e15:
+    locator: 公告第5、6、10項；總使用權資產29,846,137元
+    published_date: '2026-06-12'
+    publisher: 公開資訊觀測站（MoneyDJ全文轉載）
+    quote_check: found
+    title: 遠百公告本公司向關係人取得使用權資產
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=dc1b7471-51f2-4dff-b254-bc908aeceb7d
+  tw.2903#e16:
+    locator: 公告主旨及第5、6、10、31項
+    published_date: '2026-10-08'
+    publisher: 公開資訊觀測站（玉山證券全文轉載）
+    quote_check: found
+    title: 遠百：太平洋崇光百貨取得桃園市中壢區使用權資產，計約28.39億元
+    url: https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B4E3CB8EA-3CB8-494F-B849-A87EB21A659A%7D
+  tw.2903#e17:
+    locator: PDF第8頁，工地清冊113建0259列；起造人及承造人欄
+    published_date: '2026-04-13'
+    publisher: 臺北市政府都市發展局（臺北市建築師公會存檔）
+    quote_check: found
+    title: 臺北市政府都市發展局函：115年度第1季施工中建築工地總檢查
+    url: https://www.arch.org.tw/Content/Files/News/35bb276c89b44b9fabbac8272594ef1d.pdf
+  tw.2903#e18:
+    locator: 第86頁，附註三三，向遠鼎取得遠百亞太開發股權
     published_date: null
     publisher: 遠東百貨股份有限公司
-    quote_check: found
-    title: 關於遠東百貨
-    url: https://origin.feds.com.tw/tw/About
-  tw.2903#e4:
-    locator: 遠東百貨股份有限公司／子公司列表／太平洋崇光百貨
+    quote_check: unreachable
+    title: 遠東百貨及子公司民國113及112年度合併財務報告
+    url: https://www.feds.com.tw/shareholder/tw/5/20260108001.pdf
+  tw.2903#e19:
+    locator: 第67至68頁，附註二九，2024年12月遠百亞太股權交易；單位為新台幣仟元
     published_date: null
-    publisher: 遠東集團
-    quote_check: found
-    title: 遠東百貨股份有限公司 - 遠東集團
-    url: https://www.feg.com.tw/tw/business/company.aspx?id=64
-  tw.2903#e5:
-    locator: 遠東百貨股份有限公司／子公司列表／遠百企業
-    published_date: null
-    publisher: 遠東集團
-    quote_check: found
-    title: 遠東百貨股份有限公司 - 遠東集團
-    url: https://www.feg.com.tw/tw/business/company.aspx?id=64
-  tw.2903#e6:
-    locator: 遠東百貨股份有限公司／子公司列表／遠東都會
-    published_date: null
-    publisher: 遠東集團
-    quote_check: found
-    title: 遠東百貨股份有限公司 - 遠東集團
-    url: https://www.feg.com.tw/tw/business/company.aspx?id=64
-  tw.2903#e7:
-    locator: 遠東百貨股份有限公司／子公司列表／亞東百貨
-    published_date: null
-    publisher: 遠東集團
-    quote_check: found
-    title: 遠東百貨股份有限公司 - 遠東集團
-    url: https://www.feg.com.tw/tw/business/company.aspx?id=64
-  tw.2903#e8:
-    locator: 遠東百貨股份有限公司／子公司列表／竹北新世紀購物中心
-    published_date: null
-    publisher: 遠東集團
-    quote_check: found
-    title: 遠東百貨股份有限公司 - 遠東集團
-    url: https://www.feg.com.tw/tw/business/company.aspx?id=64
+    publisher: 遠東百貨股份有限公司
+    quote_check: unreachable
+    title: 遠東百貨及子公司民國113及112年度合併財務報告
+    url: https://www.feds.com.tw/shareholder/tw/5/20260108001.pdf

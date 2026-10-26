@@ -35,6 +35,21 @@ segments:
   period: '2025'
   revenue_share_pct: null
 relations:
+  customers:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 營運採購，細項未揭露
+    details:
+    - 營運採購，細項未揭露
+    edge: e4d0039d1424a
+    evidence_level: primary
+    id: tw.2645
+    name: 長榮航太
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   partners:
   - as_of: '2026-10-14'
     confidence: ai_cross_checked
@@ -163,7 +178,7 @@ relations:
     share_pct: null
     weight: 1
   subsidiaries:
-  - as_of: '2026-06-30'
+  - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
     detail: 合併子公司
@@ -223,10 +238,15 @@ relations:
   suppliers:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
-    counterparty_shares: []
+    counterparty_shares:
+    - as_of: '2025-12-31'
+      basis: revenue
+      of: tw.2645
+      pct: 33.3
     detail: 航太維修等關係人進貨
     details:
     - 航太維修等關係人進貨
+    - 航空器維修等銷售
     edge: e8bcc1910c869
     evidence_level: primary
     id: tw.2645
@@ -234,7 +254,7 @@ relations:
     ranking_basis: disclosed
     share_basis: purchases
     share_pct: 3.78
-    weight: 1
+    weight: 2
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []

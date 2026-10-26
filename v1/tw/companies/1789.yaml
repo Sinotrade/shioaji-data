@@ -51,6 +51,25 @@ segments:
   period: 2026上半年
   revenue_share_pct: 4
 relations:
+  customers:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares:
+    - as_of: '2025-12-31'
+      basis: purchases
+      of: tw.7799
+      pct: 84.87
+    detail: B10 L-BPA原料藥與製劑開發、生產
+    details:
+    - B10 L-BPA原料藥與製劑開發、生產
+    edge: e1ea6824c4242
+    evidence_level: primary
+    id: tw.7799
+    name: 禾榮科
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   parents:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
@@ -62,6 +81,21 @@ relations:
     evidence_level: primary
     id: tw.1216
     name: 統一
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  partners:
+  - as_of: '2024-12-19'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 改良型新藥研發與商業化合作共識
+    details:
+    - 改良型新藥研發與商業化合作共識
+    edge: e217eed9e793a
+    evidence_level: primary
+    id: tw.6620
+    name: 漢達
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -135,6 +169,28 @@ relations:
     id: tw.2855
     name: 統一證
     ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 新台幣1,156,000,000元
+    as_of: '2025-02-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 神隆認購漢達私募普通股
+    details:
+    - 神隆認購漢達私募普通股
+    edge: e585d493d9497
+    event_date: '2025-02-26'
+    events:
+    - amount: 新台幣1,156,000,000元
+      detail: 神隆認購漢達私募普通股
+      event_date: '2025-02-26'
+    evidence_level: primary
+    id: tw.6620
+    name: 漢達
+    ranking_basis: unranked
+    role: buyer
     share_basis: null
     share_pct: null
     weight: 1

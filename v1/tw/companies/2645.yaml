@@ -18,23 +18,21 @@ industry:
   l3_name: 航空
   l3_name_en: Airlines
 primary_chain_position: not_applicable
-summary_short: 主要提供航空器維修服務，並製造航太零組件。
-summary_long: 長榮航太以航空器維修及航太零組件製造為主要業務，維修範圍包括機體、發動機與飛機零組件，製造部門從事相關零組件的製造、加工及銷售。2026年上半年，維修與製造部門的外部收入分別為新台幣78.14億元及21.47億元，維修為主要營收來源。公司亦取得半導體設備零組件製造訂單，進行開發量產作業，並投入商用無人機與次世代產品開發。長榮航空為其母公司，於2026年6月底持有55.05%普通股。
+summary_short: 以飛機、發動機及零組件維修為主，兼營航太零組件製造。
+summary_long: 長榮航太以航空器維修為主要收入來源，2025年航空器維修及其他占營收77.78%，零組件製造銷售占22.22%。維修服務涵蓋機體、發動機與零組件，客戶包括長榮航空、全日空、韓亞航空、優比速及英國航空。製造客戶包括波音與奇異，並於2025年成為空中巴士一階機體組件供應商。公司與GE合資長異，該關聯企業另提供CF6及GEnx發動機維修服務。另承作國防部艦載監偵型無人機量產業務，並取得艾斯摩爾光學鏡頭檢測器及熱交換器訂單。公司委由長友營造興建製造廠二期廠房，2026年追加後契約總額為新台幣585,305,548元未稅。
 segments:
 - evidence_ids:
-  - e1
-  - e3
+  - e01
   id: maintenance
-  name: 航空器維修
-  period: 2026年上半年
-  revenue_share_pct: null
+  name: 航空器維修及其他
+  period: '2025'
+  revenue_share_pct: 77.78
 - evidence_ids:
-  - e2
-  - e3
+  - e01
   id: manufacturing
-  name: 航空器零組件製造、加工及銷售
-  period: 2026年上半年
-  revenue_share_pct: null
+  name: 航空器零組件製造銷售
+  period: '2025'
+  revenue_share_pct: 22.22
 main_theme: theme.drone
 themes:
 - also: []
@@ -53,16 +51,199 @@ relations:
     detail: 航太維修等關係人進貨
     details:
     - 航太維修等關係人進貨
+    - 航空器維修等銷售
     edge: e8bcc1910c869
     evidence_level: primary
     id: tw.2618
     name: 長榮航
+    ranking_basis: disclosed
+    share_basis: revenue
+    share_pct: 33.3
+    weight: 2
+  - as_of: '2025-05-09'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 一階機體組件供應
+    details:
+    - 一階機體組件供應
+    edge: e120cbbbb2d5b
+    evidence_level: media
+    id: eu.AIR
+    name: 空中巴士
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 光學鏡頭檢測器及熱交換器
+    details:
+    - 光學鏡頭檢測器及熱交換器
+    edge: e4bb9ebf3ba20
+    evidence_level: primary
+    id: eu.ASML
+    name: 荷蘭商艾斯摩爾
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 航空器維修
+    details:
+    - 航空器維修
+    edge: e6781a816a756
+    evidence_level: primary
+    id: org.all-nippon-airways
+    name: 全日空
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 航空器維修
+    details:
+    - 航空器維修
+    edge: e7a1119c331ec
+    evidence_level: primary
+    id: org.asiana-airlines
+    name: 韓亞航空
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 航空器維修
+    details:
+    - 航空器維修
+    edge: e1af5503266c8
+    evidence_level: primary
+    id: org.atlas-air
+    name: 亞特拉斯航空
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 航空器維修
+    details:
+    - 航空器維修
+    edge: e4390322a7179
+    evidence_level: primary
+    id: org.austrian-airlines
+    name: 奧地利航空
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 航空器維修
+    details:
+    - 航空器維修
+    edge: e260c9d56e51d
+    evidence_level: primary
+    id: org.british-airways
+    name: 英國航空
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 航空器維修
+    details:
+    - 航空器維修
+    edge: e43dc0f50b00b
+    evidence_level: primary
+    id: org.skymark-airlines
+    name: 天馬航空
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 航空器維修
+    details:
+    - 航空器維修
+    edge: ee50044e7ec70
+    evidence_level: primary
+    id: org.tui-airways
+    name: 途易航空
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-05-19'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 軍用商規艦載監偵型無人機
+    details:
+    - 軍用商規艦載監偵型無人機
+    edge: e55cb3599866d
+    evidence_level: primary
+    id: org.tw-ministry-of-national-defense
+    name: 國防部
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-05-19'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 航太零組件製造
+    details:
+    - 航太零組件製造
+    edge: eb6a925b29abe
+    evidence_level: media
+    id: us.BA
+    name: 波音
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-05-19'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 發動機零組件製造
+    details:
+    - 發動機零組件製造
+    edge: eb4b782ea3fb1
+    evidence_level: media
+    id: us.GE
+    name: GE Aerospace
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 航空器維修
+    details:
+    - 航空器維修
+    edge: e58edc9327de5
+    evidence_level: primary
+    id: us.UPS
+    name: 優比速
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
   parents:
-  - as_of: '2026-06-30'
+  - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
     detail: 合併子公司
@@ -77,53 +258,244 @@ relations:
     share_basis: null
     share_pct: null
     weight: 2
+  partners:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股49%的合資關聯企業
+    details:
+    - 持股49%的合資關聯企業
+    edge: e26991e0a655c
+    evidence_level: primary
+    id: org.ge-evergreen-engine-services
+    name: GE Evergreen Engine Services Corp.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 合資經營長異發動機維修
+    details:
+    - 合資經營長異發動機維修
+    edge: e911b39d8b07b
+    evidence_level: primary
+    id: us.GE
+    name: GE Aerospace
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 飛機維修航材
+    details:
+    - 飛機維修航材
+    edge: eaca4b6dbda05
+    evidence_level: primary
+    id: eu.AIR
+    name: 空中巴士
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 營運採購，細項未揭露
+    details:
+    - 營運採購，細項未揭露
+    edge: e4d0039d1424a
+    evidence_level: primary
+    id: tw.2618
+    name: 長榮航
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 飛機維修航材
+    details:
+    - 飛機維修航材
+    edge: edf6a4fb361a3
+    evidence_level: primary
+    id: us.BA
+    name: 波音
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 發動機維修航材
+    details:
+    - 發動機維修航材
+    edge: efe7038a9c80e
+    evidence_level: primary
+    id: us.GE
+    name: GE Aerospace
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 新台幣585,305,548元（未稅；追加後契約總額）
+    as_of: '2026-03-11'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 製造廠二期廠房自地委建及工程追加
+    details:
+    - 製造廠二期廠房自地委建及工程追加
+    edge: eee9a55f5650f
+    event_date: '2026-03-11'
+    events:
+    - amount: 新台幣585,305,548元（未稅；追加後契約總額）
+      detail: 製造廠二期廠房自地委建及工程追加
+      event_date: '2026-03-11'
+    evidence_level: primary
+    id: org.ever-accord-construction
+    name: 長友營造(股)公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 年報以A代稱之主要供應商
+- 年報以B代稱之主要客戶
+- 波音指定之鋁合金材料供應商
+- 奇異指定之鍛件及鑄件供應商
+- 2025年法說會以客戶A、B、C、D代稱之航空公司
 website: https://www.egat.com.tw/
 tax_id: '16097775'
 incorporated: '1997-11-10'
 listed: '2023-03-14'
-as_of: '2026-10-14'
+as_of: '2026-10-25'
 confidence: ai_cross_checked
 has_research: true
 evidence:
-  tw.2645#e1:
-    locator: 印刷頁38，附註十四、部門資訊
-    published_date: '2026-08-11'
+  tw.2645#e01:
+    locator: 印刷頁78，主要產品之營業比重；PDF第41頁
+    published_date: '2026-03-28'
     publisher: 長榮航太科技股份有限公司
     quote_check: found
-    title: 長榮航太科技股份有限公司民國115年及114年第二季個別財務報告
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52179/2026/RNS/52179_rns_2026-08-21_633d6490-56d5-4985-8d08-55939b285f6b.pdf
-  tw.2645#e2:
-    locator: 印刷頁38，附註十四、部門資訊
-    published_date: '2026-08-11'
+    title: 長榮航太2025年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52179/2026/RNS/52179_rns_2026-05-08_10a5aaef-9ab1-41d3-9e2f-04ad39e50d01.pdf
+  tw.2645#e02:
+    locator: 印刷頁78，業務範圍；PDF第41頁
+    published_date: '2026-03-28'
     publisher: 長榮航太科技股份有限公司
     quote_check: found
-    title: 長榮航太科技股份有限公司民國115年及114年第二季個別財務報告
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52179/2026/RNS/52179_rns_2026-08-21_633d6490-56d5-4985-8d08-55939b285f6b.pdf
-  tw.2645#e3:
-    locator: 印刷頁39，115年1月至6月部門資訊；金額單位為新台幣千元
-    published_date: '2026-08-11'
+    title: 長榮航太2025年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52179/2026/RNS/52179_rns_2026-05-08_10a5aaef-9ab1-41d3-9e2f-04ad39e50d01.pdf
+  tw.2645#e03:
+    locator: 印刷頁87，競爭利基之維修客戶；PDF第45頁
+    published_date: '2026-03-28'
     publisher: 長榮航太科技股份有限公司
     quote_check: found
-    title: 長榮航太科技股份有限公司民國115年及114年第二季個別財務報告
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52179/2026/RNS/52179_rns_2026-08-21_633d6490-56d5-4985-8d08-55939b285f6b.pdf
-  tw.2645#e4:
-    locator: 印刷頁31，附註七（一）母公司與最終控制者
-    published_date: '2026-08-11'
+    title: 長榮航太2025年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52179/2026/RNS/52179_rns_2026-05-08_10a5aaef-9ab1-41d3-9e2f-04ad39e50d01.pdf
+  tw.2645#e04:
+    locator: 印刷頁62，關係人進銷貨交易表；PDF第65頁
+    published_date: '2026-05-19'
     publisher: 長榮航太科技股份有限公司
     quote_check: found
-    title: 長榮航太科技股份有限公司民國115年及114年第二季個別財務報告
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52179/2026/RNS/52179_rns_2026-08-21_633d6490-56d5-4985-8d08-55939b285f6b.pdf
-  tw.2645#e5:
-    locator: 第14頁，製造營運策略
-    published_date: '2026-05-20'
+    title: 2025年度英文個別財務報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52179/2026/RNS/52179_rns_2026-05-19_520894cf-ce95-4741-bea2-813077f88521.pdf
+  tw.2645#e05:
+    locator: 印刷頁54，附註七關係人交易；PDF第57頁
+    published_date: '2026-05-19'
     publisher: 長榮航太科技股份有限公司
     quote_check: found
-    title: 長榮航太法人說明會，2026年5月20日
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52179/2026/RNS/52179_rns_2026-05-20_e066c9c4-3764-468a-bbd5-f2be704cbac4.pdf
-  tw.2645#e6:
-    locator: 第14頁，Corporate Strategy
-    published_date: '2026-05-20'
+    title: 2025年度英文個別財務報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52179/2026/RNS/52179_rns_2026-05-19_520894cf-ce95-4741-bea2-813077f88521.pdf
+  tw.2645#e06:
+    locator: 製造廠客戶及交貨方式段落
+    published_date: '2025-05-19'
+    publisher: 中央通訊社
+    quote_check: found
+    title: 長榮航太：關稅無影響 美元貶1%稅前淨利減4100萬
+    url: https://www.cna.com.tw/news/afe/202505190342.aspx
+  tw.2645#e07:
+    locator: 合作合約簽署段落
+    published_date: '2025-05-09'
+    publisher: 中央通訊社
+    quote_check: found
+    title: 長榮航太打入空巴產業鏈 列一階機體組件供應商
+    url: https://www.cna.com.tw/news/afe/202505090267.aspx
+  tw.2645#e08:
+    locator: 印刷頁106，維修廠進貨集中風險；PDF第55頁
+    published_date: '2026-03-28'
     publisher: 長榮航太科技股份有限公司
     quote_check: found
-    title: EGAT Investor Conference, May 20, 2026
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52179/2026/RNS/52179_rns_2026-05-20_5ed13282-168d-4f2b-bcb4-b25b14a63027.pdf
+    title: 長榮航太2025年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52179/2026/RNS/52179_rns_2026-05-08_10a5aaef-9ab1-41d3-9e2f-04ad39e50d01.pdf
+  tw.2645#e09:
+    locator: 印刷頁56，關係人營業成本及採購條件；PDF第59頁
+    published_date: '2026-05-19'
+    publisher: 長榮航太科技股份有限公司
+    quote_check: found
+    title: 2025年度英文個別財務報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52179/2026/RNS/52179_rns_2026-05-19_520894cf-ce95-4741-bea2-813077f88521.pdf
+  tw.2645#e10:
+    locator: About us第一段
+    published_date: null
+    publisher: GE Evergreen Engine Services
+    quote_check: found
+    title: GE Evergreen—About us
+    url: https://www.geevergreen.com/
+  tw.2645#e11:
+    locator: 印刷頁28，採用權益法之投資及關聯企業；PDF第31頁
+    published_date: '2026-05-19'
+    publisher: 長榮航太科技股份有限公司
+    quote_check: found
+    title: 2025年度英文個別財務報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52179/2026/RNS/52179_rns_2026-05-19_520894cf-ce95-4741-bea2-813077f88521.pdf
+  tw.2645#e12:
+    locator: About us第二段
+    published_date: null
+    publisher: GE Evergreen Engine Services
+    quote_check: found
+    title: GE Evergreen—Engine services
+    url: https://www.geevergreen.com/
+  tw.2645#e13:
+    locator: 第12頁，營運策略
+    published_date: '2025-05-19'
+    publisher: 長榮航太科技股份有限公司
+    quote_check: found
+    title: 長榮航太法人說明會簡報
+    url: https://mopsov.twse.com.tw/nas/STR/264520250519M001.pdf
+  tw.2645#e14:
+    locator: 印刷頁8，113年度研究發展狀況；PDF第10頁
+    published_date: null
+    publisher: 長榮航太科技股份有限公司
+    quote_check: unreachable
+    title: 長榮航太114年股東常會議事手冊
+    url: https://www.egat.com.tw/documents/290/EGAT-2025_Annual_General_Shareholders_Meeting_HandbookCh.pdf
+  tw.2645#e15:
+    locator: 公告第3、5、6及21項
+    published_date: '2026-03-11'
+    publisher: 公開資訊觀測站重大訊息，鉅亨網刊載
+    quote_check: found
+    title: 公告長榮航太董事會決議自地委建製造廠二期廠房工程費用追加相關事宜
+    url: https://anuenews.cnyes.com/news/id/6379257
+  tw.2645#e16:
+    locator: Operations Highlights—Competitive Basis
+    published_date: '2026-05-08'
+    publisher: 長榮航太科技股份有限公司
+    quote_check: unreachable
+    title: 長榮航太2025年度英文年報
+    url: https://financialfilings.com/filings/egat-2645/annual-report/2026/47030557/
+  tw.2645#e17:
+    locator: 印刷頁78，主要商品與服務；PDF第41頁
+    published_date: '2026-03-28'
+    publisher: 長榮航太科技股份有限公司
+    quote_check: found
+    title: 長榮航太2025年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52179/2026/RNS/52179_rns_2026-05-08_10a5aaef-9ab1-41d3-9e2f-04ad39e50d01.pdf

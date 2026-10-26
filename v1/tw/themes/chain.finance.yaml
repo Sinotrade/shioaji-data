@@ -11,6 +11,18 @@ stages:
   tier: not_applicable
   name_en: Financial Services
 members:
+- id: tw.2201
+  detail: 合併營收以裕融占54.65%為最大來源，主要提供汽車融資及租賃服務，屬金融服務。
+  as_of: '2026-10-26'
+  evidence:
+  - tw.2201#e1
+  - tw.2201#e4
+  - tw.2201#e5
+  confidence: ai_cross_checked
+  source: classification
+  stage: na
+  tier: not_applicable
+  stage_role: primary
 - id: tw.2801
   detail: 提供存放款等銀行服務，利息淨收益占59.83%，為最大收益來源。
   as_of: '2026-10-14'
@@ -48,10 +60,12 @@ members:
   stage_role: primary
 - id: tw.2820
   detail: 票券業務占收入77.44%，主要提供票券承銷、交易與保證等金融服務。
-  as_of: '2026-10-15'
+  as_of: '2026-10-26'
   evidence:
+  - tw.2820#e1
   - tw.2820#e2
   - tw.2820#e4
+  - tw.2820#e5
   confidence: ai_cross_checked
   source: classification
   stage: na
@@ -87,10 +101,12 @@ members:
   stage_role: primary
 - id: tw.2836
   detail: 主要經營銀行存放款，授信業務占總收入69.60%，屬金融服務。
-  as_of: '2026-10-15'
+  as_of: '2026-10-26'
   evidence:
   - tw.2836#e2
-  - tw.2836#e8
+  - tw.2836#e3
+  - tw.2836#e4
+  - tw.2836#e5
   confidence: ai_cross_checked
   source: classification
   stage: na
@@ -111,10 +127,11 @@ members:
   stage_role: primary
 - id: tw.2845
   detail: 提供存放款、信用卡與信託服務，利息淨收益占50.95%，為最大收益項目。
-  as_of: '2026-10-14'
+  as_of: '2026-10-25'
   evidence:
   - tw.2845#e1
   - tw.2845#e2
+  - tw.2845#e3
   - tw.2845#e4
   - tw.2845#e5
   confidence: ai_cross_checked
@@ -124,11 +141,11 @@ members:
   stage_role: primary
 - id: tw.2849
   detail: 主要提供法人及個人銀行服務，利息淨收益占53%，為最大收益來源。
-  as_of: '2026-10-15'
+  as_of: '2026-10-26'
   evidence:
   - tw.2849#e1
   - tw.2849#e2
-  - tw.2849#e5
+  - tw.2849#e3
   confidence: ai_cross_checked
   source: classification
   stage: na
@@ -136,10 +153,14 @@ members:
   stage_role: primary
 - id: tw.2850
   detail: 主業為財產保險，車險占簽單保費45.50%，為最大保費來源。
-  as_of: '2026-10-14'
+  as_of: '2026-10-25'
   evidence:
+  - tw.2850#e1
   - tw.2850#e2
   - tw.2850#e3
+  - tw.2850#e4
+  - tw.2850#e5
+  - tw.2850#e6
   confidence: ai_cross_checked
   source: classification
   stage: na
@@ -147,12 +168,10 @@ members:
   stage_role: primary
 - id: tw.2851
   detail: 承接財產與人身再保險，國內財產再保險占63.77%，屬金融服務。
-  as_of: '2026-10-15'
+  as_of: '2026-10-25'
   evidence:
-  - tw.2851#e1
-  - tw.2851#e2
-  - tw.2851#e3
-  - tw.2851#e4
+  - tw.2851#e_dom_nonlife
+  - tw.2851#e_int_nonlife
   confidence: ai_cross_checked
   source: classification
   stage: na
@@ -281,7 +300,7 @@ members:
   stage_role: primary
 - id: tw.2889
   detail: 以金融事業投資收益為主，旗下提供票券、證券及租賃等金融服務。
-  as_of: '2026-10-14'
+  as_of: '2026-10-25'
   evidence:
   - tw.2889#e1
   - tw.2889#e2
@@ -328,10 +347,11 @@ members:
   stage_role: primary
 - id: tw.2897
   detail: 企金授信占個體淨收益66%為最大來源，主要提供銀行金融服務。
-  as_of: '2026-10-15'
+  as_of: '2026-10-26'
   evidence:
   - tw.2897#e1
-  - tw.2897#e8
+  - tw.2897#e2
+  - tw.2897#e3
   confidence: ai_cross_checked
   source: classification
   stage: na
@@ -482,13 +502,10 @@ members:
   stage_role: primary
 - id: tw.6023
   detail: 期貨經紀收入占93.44%為主要來源，另有自營及顧問業務，屬金融服務。
-  as_of: '2026-10-15'
+  as_of: '2026-10-25'
   evidence:
-  - tw.6023#e1
   - tw.6023#e2
   - tw.6023#e3
-  - tw.6023#e4
-  - tw.6023#e5
   confidence: ai_cross_checked
   source: classification
   stage: na
@@ -533,12 +550,10 @@ members:
   stage_role: primary
 - id: tw.6592
   detail: 利息收入占74.3%為主要來源，提供車輛、設備分期與企業融資，屬金融服務。
-  as_of: '2026-10-15'
+  as_of: '2026-10-25'
   evidence:
+  - tw.6592#e1
   - tw.6592#e2
-  - tw.6592#e3
-  - tw.6592#e9
-  - tw.6592#e12
   confidence: ai_cross_checked
   source: classification
   stage: na
@@ -618,17 +633,13 @@ members:
   stage_role: primary
 - id: tw.9941
   detail: 營業租賃占30.5%為最大單項收入，另有車輛分期、應收帳款融資及企業金融服務。
-  as_of: '2026-10-15'
+  as_of: '2026-10-25'
   evidence:
+  - tw.9941#e01
   - tw.9941#e02
-  - tw.9941#e03
-  - tw.9941#e05
-  - tw.9941#e06
-  - tw.9941#e11
-  - tw.9941#e13
   confidence: ai_cross_checked
   source: classification
   stage: na
   tier: not_applicable
   stage_role: primary
-as_of: '2026-10-24'
+as_of: '2026-10-26'

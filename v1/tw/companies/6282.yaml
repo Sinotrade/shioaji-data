@@ -26,8 +26,8 @@ chain_stage:
   stage_name: 板卡、電源、散熱、機構件
   tier: midstream
 primary_chain_position: upstream
-summary_short: 研發、製造及銷售電源供應器，並提供車用電源與綠能服務。
-summary_long: 康舒以電源供應器與電源管理產品為主要業務，2025年電源及零組件占營收93.92%，五金零件及其他占6.08%。產品涵蓋消費性電子、企業雲端伺服器、資料中心及電信應用，並提供電動車車載充電器與充電設備。公司亦提供綠能服務，並規劃開發採用SiC的高壓車載充電器。AI雲端伺服器電源屬其企業用產品範圍；OmniOn Power Inc.為其間接全資子公司。
+summary_short: 主要銷售電源及零組件，產品涵蓋AI資料中心電源與車載充電器。
+summary_long: 康舒以電源及零組件為主要營收來源，2025年占93.92%，五金零件及其他占6.08%。公司提供AI資料中心用100kW及72kW Power Shelf，亦有雙向車載充電器及太陽能光電案場投資、營運與管理服務。子公司體系包括康躍科技及OmniOn Power，2024年公告透過集團內股份轉換調整OmniOn持股架構。2025年將匯旭電力全數股權出售予富邦能源，另由康躍推動商標及專利移轉與德國子公司投資，並由康舒參與金仁寶總部資產開發增資。
 segments:
 - evidence_ids:
   - e1
@@ -43,9 +43,7 @@ segments:
   revenue_share_pct: 6.08
 main_theme: theme.ev
 themes:
-- also:
-  - stage: vehicle
-    tier: downstream
+- also: []
   stage: parts
   theme: theme.ev
   tier: midstream
@@ -57,10 +55,6 @@ themes:
   stage: equipment
   theme: theme.data_center
   tier: upstream
-- also: []
-  stage: application
-  theme: theme.sic
-  tier: downstream
 relations:
   competitors:
   - as_of: 2025-12
@@ -77,89 +71,397 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
-  subsidiaries:
-  - as_of: '2026-03-30'
+  customers:
+  - as_of: '2025-12-16'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 間接全資子公司
+    detail: 燃料電池系統電源轉換器
     details:
-    - 間接全資子公司
-    edge: ed4817f9895e7
-    evidence_level: primary
-    id: org.omnion-power
-    name: OmniOn Power Inc.
+    - 燃料電池系統電源轉換器
+    edge: e2457259f274b
+    evidence_level: media
+    id: us.BE
+    name: Bloom Energy
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: '2016-08-09'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 歷史伺服器電源客戶
+    details:
+    - 歷史伺服器電源客戶
+    edge: e95ec9a48fab6
+    evidence_level: media
+    id: us.IBM
+    name: IBM
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  partners:
+  - as_of: '2026-09-15'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 充電樁合作
+    details:
+    - 充電樁合作
+    edge: eb0cd95769c7a
+    evidence_level: primary
+    id: tw.2312
+    name: 金寶
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2024-05-20'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接及間接全資子公司
+    details:
+    - 直接及間接全資子公司
+    edge: e3a23da7111f5
+    evidence_level: primary
+    id: org.acleap-technology
+    name: 康躍科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-05-20'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 康躍科技旗下電源事業控股公司
+    details:
+    - 康躍科技旗下電源事業控股公司
+    edge: e005ac127ec6f
+    evidence_level: primary
+    id: org.omnion-power-holdings
+    name: OmniOn Power Holdings Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-08-11'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 康躍科技全資德國子公司
+    details:
+    - 康躍科技全資德國子公司
+    edge: ebe9561227f06
+    evidence_level: primary
+    id: org.omnion-power-technology
+    name: OmniOn Power Technology GmbH
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 關係人銷貨
+    details:
+    - 關係人銷貨
+    edge: e04b0401c1d93
+    evidence_level: primary
+    id: tw.2312
+    name: 金寶
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-09-16'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 電源供應控制用繼電器
+    details:
+    - 電源供應控制用繼電器
+    edge: ebe6429796bbf
+    evidence_level: media
+    id: tw.7788
+    name: 松川精密
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: null
+    as_of: '2024-05-20'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司間OmniOn全部股份轉換
+    details:
+    - 子公司間OmniOn全部股份轉換
+    edge: e044fa14a05f1
+    event_date: '2024-05-20'
+    events:
+    - amount: null
+      detail: 子公司間OmniOn全部股份轉換
+      event_date: '2024-05-20'
+    evidence_level: primary
+    id: org.acbel-polytech-singapore
+    name: AcBel Polytech (Singapore) Pte. Ltd.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 租賃總額RMB 94,800,000元
+    as_of: '2026-05-11'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 東莞子公司取得土地及建物使用權
+    details:
+    - 東莞子公司取得土地及建物使用權
+    edge: ee0f17e567df1
+    event_date: '2026-05-11'
+    events:
+    - amount: 租賃總額RMB 94,800,000元
+      detail: 東莞子公司取得土地及建物使用權
+      event_date: '2026-05-11'
+    evidence_level: primary
+    id: org.dongguan-yuedong-property
+    name: 東莞市粵東置業有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣3億2658.7萬元
+    as_of: '2025-03-21'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 出售匯旭電力100%股權
+    details:
+    - 出售匯旭電力100%股權
+    edge: edc66f178415f
+    event_date: '2025-03-21'
+    events:
+    - amount: 新台幣3億2658.7萬元
+      detail: 出售匯旭電力100%股權
+      event_date: '2025-03-21'
+    evidence_level: media
+    id: org.fubon-energy
+    name: 富邦能源
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣1,200,000仟元
+    as_of: '2025-11-12'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 參與關聯企業現金增資
+    details:
+    - 參與關聯企業現金增資
+    edge: e8d2ca34c47be
+    event_date: '2025-11-12'
+    events:
+    - amount: 新台幣1,200,000仟元
+      detail: 參與關聯企業現金增資
+      event_date: '2025-11-12'
+    evidence_level: primary
+    id: org.kinpo-compal-headquarters-development
+    name: 金仁寶總部資產開發股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 美金90,000仟元
+    as_of: '2025-08-11'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 康躍科技提高德國子公司投資額度
+    details:
+    - 康躍科技提高德國子公司投資額度
+    edge: ec55837ebbd49
+    event_date: '2025-08-11'
+    events:
+    - amount: 美金90,000仟元
+      detail: 康躍科技提高德國子公司投資額度
+      event_date: '2025-08-11'
+    evidence_level: primary
+    id: org.omnion-power-technology
+    name: OmniOn Power Technology GmbH
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 商標權新台幣892,714仟元；專利權新台幣1,388,527仟元至1,418,388仟元
+    as_of: '2025-06-02'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 康躍科技讓與商標權及專利權
+    details:
+    - 康躍科技讓與商標權及專利權
+    edge: ee1b4eccadd68
+    event_date: '2025-06-02'
+    events:
+    - amount: 商標權新台幣892,714仟元；專利權新台幣1,388,527仟元至1,418,388仟元
+      detail: 康躍科技讓與商標權及專利權
+      event_date: '2025-06-02'
+    evidence_level: primary
+    id: org.omnion-power-technology
+    name: OmniOn Power Technology GmbH
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 未具名雲端服務供應商（CSP）：公開發言提及供應鏈切入，但未揭露具體公司及採購…
+- 半導體與電路板原料供應商：年報列示原料類別，未揭露對應供應商名稱。
 website: http://www.acbel.com
 tax_id: '12341051'
 incorporated: '1981-07-29'
 listed: '2003-09-08'
-as_of: '2026-10-15'
+as_of: '2026-10-26'
 confidence: ai_cross_checked
 has_research: true
 evidence:
   tw.6282#e1:
-    locator: 印刷頁71，主要產（商）品之營業比重
+    locator: 第71頁，主要產商品之營業比重；PDF第75頁
     published_date: '2026-03-30'
     publisher: 康舒科技股份有限公司
     quote_check: found
-    title: 康舒科技114年度年報
+    title: 康舒科技2025年度年報
     url: https://cdn.financialreports.eu/financialreports/media/filings/52551/2026/RNS/52551_rns_2026-06-15_df7b3b12-4986-4761-8808-f67c9472973b.pdf
   tw.6282#e10:
-    locator: 印刷頁63，直接或間接控制事業之持股表；欄位依序為本公司投資、受控制事業投資及綜合投資
+    locator: 首段，交易金額與交割說明
+    published_date: '2025-03-21'
+    publisher: 自由時報
+    quote_check: found
+    title: 康舒賣掉子公司匯旭電力 揭曉大咖買家富邦能源
+    url: https://ec.ltn.com.tw/article/breakingnews/4987731
+  tw.6282#e11:
+    locator: 末段，2024年董事會處分決議回顧
+    published_date: '2025-03-21'
+    publisher: 自由時報
+    quote_check: found
+    title: 康舒出售匯旭電力全部股權
+    url: https://ec.ltn.com.tw/article/breakingnews/4987731
+  tw.6282#e12:
+    locator: 公告第3項
+    published_date: '2025-06-02'
+    publisher: 公開資訊觀測站重大訊息，鉅亨網刊載
+    quote_check: found
+    title: 康躍科技讓與商標權及專利權公告
+    url: https://news.cnyes.com/news/id/6003764
+  tw.6282#e13:
+    locator: 公告第3至5項
+    published_date: '2025-06-02'
+    publisher: 公開資訊觀測站重大訊息，鉅亨網刊載
+    quote_check: found
+    title: 康躍科技讓與商標權及專利權公告
+    url: https://news.cnyes.com/news/id/6003764
+  tw.6282#e14:
+    locator: 公告第5項
+    published_date: '2025-08-11'
+    publisher: 公開資訊觀測站重大訊息，鉅亨網刊載
+    quote_check: found
+    title: 康躍科技投資OmniOn Power Technology GmbH更新公告
+    url: https://news.cnyes.com/news/id/6104312
+  tw.6282#e15:
+    locator: 公告第5項
+    published_date: '2026-05-11'
+    publisher: 公開資訊觀測站重大訊息，MoneyDJ刊載
+    quote_check: found
+    title: 康舒電子東莞取得使用權資產公告
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=12eaa447-fda6-46df-a90c-49b815623ce5
+  tw.6282#e16:
+    locator: 公告第5至6項
+    published_date: '2026-05-11'
+    publisher: 公開資訊觀測站重大訊息，MoneyDJ刊載
+    quote_check: found
+    title: 康舒電子東莞取得使用權資產公告
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=12eaa447-fda6-46df-a90c-49b815623ce5
+  tw.6282#e17:
+    locator: 公告第5項
+    published_date: '2025-11-13'
+    publisher: 公開資訊觀測站重大訊息，MoneyDJ刊載
+    quote_check: found
+    title: 康舒董事會通過現增金仁寶總部資產開發，計12億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=7edfa6fe-c562-46af-8247-e75349ea01d9
+  tw.6282#e18:
+    locator: 公告第6項
+    published_date: '2025-11-13'
+    publisher: 公開資訊觀測站重大訊息，MoneyDJ刊載
+    quote_check: found
+    title: 康舒董事會通過現增金仁寶總部資產開發，計12億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=7edfa6fe-c562-46af-8247-e75349ea01d9
+  tw.6282#e19:
+    locator: 拆解總結，PFC元件說明
+    published_date: '2025-09-16'
+    publisher: ChargerLAB
+    quote_check: found
+    title: 康舒FSF056伺服器電源原始拆解
+    url: https://www.chargerlab.com/teardown-of-acbel-1100w-platinum-sic-server-power-supply-fsf056/
+  tw.6282#e2:
+    locator: 第73頁，新事業／電動車車載電源；PDF第77頁
     published_date: '2026-03-30'
     publisher: 康舒科技股份有限公司
     quote_check: found
-    title: 康舒科技114年度年報
+    title: 康舒科技2025年度年報
     url: https://cdn.financialreports.eu/financialreports/media/filings/52551/2026/RNS/52551_rns_2026-06-15_df7b3b12-4986-4761-8808-f67c9472973b.pdf
+  tw.6282#e20:
+    locator: 拆解總結，同步整流元件說明
+    published_date: '2025-09-16'
+    publisher: ChargerLAB
+    quote_check: found
+    title: 康舒FSF056伺服器電源原始拆解
+    url: https://www.chargerlab.com/teardown-of-acbel-1100w-platinum-sic-server-power-supply-fsf056/
   tw.6282#e3:
-    locator: 第6頁，主要產品
-    published_date: '2026-09-14'
+    locator: 第73頁，再生能源服務項目；PDF第77頁
+    published_date: '2026-03-30'
     publisher: 康舒科技股份有限公司
     quote_check: found
-    title: 康舒科技2026年9月法說簡報
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52551/2026/RNS/52551_rns_2026-09-14_f81eb648-78a9-4b02-a7f0-15932a4cf0cb.pdf
+    title: 康舒科技2025年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52551/2026/RNS/52551_rns_2026-06-15_df7b3b12-4986-4761-8808-f67c9472973b.pdf
   tw.6282#e4:
-    locator: 第6頁，主要產品
-    published_date: '2026-09-14'
-    publisher: 康舒科技股份有限公司
-    quote_check: found
-    title: 康舒科技2026年9月法說簡報
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52551/2026/RNS/52551_rns_2026-09-14_f81eb648-78a9-4b02-a7f0-15932a4cf0cb.pdf
+    locator: 新聞稿副標題及產品介紹
+    published_date: '2026-10-08'
+    publisher: AcBel Polytech Inc.／PR Newswire
+    quote_check: unreachable
+    title: 康舒公布OCP Global Summit 2026高密度電源展示方案
+    url: https://www.prnewswire.com/news-releases/acbel-to-showcase-high-density-power-solutions-for-ai-data-centers-at-ocp-global-summit-2026-302902055.html
   tw.6282#e5:
-    locator: 第6頁，主要產品
-    published_date: '2026-09-14'
-    publisher: 康舒科技股份有限公司
+    locator: 記者羅倩宜報導，康舒總經理法說會發言段落
+    published_date: '2016-08-09'
+    publisher: 自由時報
     quote_check: found
-    title: 康舒科技2026年9月法說簡報
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52551/2026/RNS/52551_rns_2026-09-14_f81eb648-78a9-4b02-a7f0-15932a4cf0cb.pdf
+    title: 伺服器需求增 康舒單季毛利率創5年新高
+    url: https://ec.ltn.com.tw/article/breakingnews/1790148
   tw.6282#e6:
-    locator: 第6頁，主要產品
-    published_date: '2026-09-14'
-    publisher: 康舒科技股份有限公司
+    locator: 能源與氫能應用段落
+    published_date: '2025-12-16'
+    publisher: MoneyDJ，第一銀行刊載
     quote_check: found
-    title: 康舒科技2026年9月法說簡報
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52551/2026/RNS/52551_rns_2026-09-14_f81eb648-78a9-4b02-a7f0-15932a4cf0cb.pdf
+    title: 康舒拚維持毛利率，強化商用／電信市場
+    url: https://wealth.firstbank.com.tw/investment-tips/trend-insight/news/news-detail?id=%7B72A3B9A7-CDDA-47F8-AE7E-942BE1F327CC%7D
   tw.6282#e7:
-    locator: 第9頁，營收組成與產品應用
-    published_date: '2026-09-14'
-    publisher: 康舒科技股份有限公司
-    quote_check: not_found
-    title: 康舒科技2026年9月法說簡報
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52551/2026/RNS/52551_rns_2026-09-14_f81eb648-78a9-4b02-a7f0-15932a4cf0cb.pdf
+    locator: 公告第6項
+    published_date: '2024-05-20'
+    publisher: 公開資訊觀測站重大訊息，MoneyDJ刊載
+    quote_check: found
+    title: 康躍科技股份轉換取得OmniOn全部股份補充公告
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f1a46106-8920-4def-9d12-de6cd684906e
   tw.6282#e8:
-    locator: 印刷頁71，企業用雲端電源供應器應用
-    published_date: '2026-03-30'
-    publisher: 康舒科技股份有限公司
+    locator: 公告第7項第3款及第17項
+    published_date: '2024-05-20'
+    publisher: 公開資訊觀測站重大訊息，MoneyDJ刊載
     quote_check: found
-    title: 康舒科技114年度年報
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52551/2026/RNS/52551_rns_2026-06-15_df7b3b12-4986-4761-8808-f67c9472973b.pdf
+    title: 康躍科技股份轉換取得OmniOn全部股份補充公告
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f1a46106-8920-4def-9d12-de6cd684906e
   tw.6282#e9:
-    locator: 印刷頁73，計畫開發的新商品，電動車車載電源
-    published_date: '2026-03-30'
-    publisher: 康舒科技股份有限公司
+    locator: 公告第6項
+    published_date: '2025-08-11'
+    publisher: 公開資訊觀測站重大訊息，鉅亨網刊載
     quote_check: found
-    title: 康舒科技114年度年報
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52551/2026/RNS/52551_rns_2026-06-15_df7b3b12-4986-4761-8808-f67c9472973b.pdf
+    title: 康躍科技投資OmniOn Power Technology GmbH更新公告
+    url: https://news.cnyes.com/news/id/6104312

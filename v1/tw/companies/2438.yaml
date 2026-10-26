@@ -61,6 +61,21 @@ themes:
   theme: theme.liquid_cooling
   tier: downstream
 relations:
+  customers:
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 以融資租賃方式供應機房水冷設施
+    details:
+    - 以融資租賃方式供應機房水冷設施
+    edge: e45651626be49
+    evidence_level: primary
+    id: tw.6561
+    name: 是方
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
@@ -87,6 +102,49 @@ relations:
     id: org.嵩達光電科技股份有限公司
     name: 嵩達光電科技股份有限公司
     ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 每年新台幣27,343仟元（固定租賃給付）
+    as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 承租翔耀機房水冷設施的融資租賃
+    details:
+    - 承租翔耀機房水冷設施的融資租賃
+    edge: e0bb77807cc8f
+    event_date: null
+    events:
+    - amount: 每年新台幣27,343仟元（固定租賃給付）
+      detail: 承租翔耀機房水冷設施的融資租賃
+      event_date: null
+    evidence_level: primary
+    id: tw.6561
+    name: 是方
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣1,334,546,000元（翔耀公告之使用權資產價值）
+    as_of: '2025-08-29'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 出租機房使用權的歷史契約，後已中止
+    details:
+    - 出租機房使用權的歷史契約，後已中止
+    edge: e54302cdd3316
+    event_date: '2025-03-14'
+    events:
+    - amount: 新台幣1,334,546,000元（翔耀公告之使用權資產價值）
+      detail: 出租機房使用權的歷史契約，後已中止
+      event_date: '2025-03-14'
+    evidence_level: primary
+    id: tw.6561
+    name: 是方
+    ranking_basis: unranked
+    role: buyer
     share_basis: null
     share_pct: null
     weight: 1

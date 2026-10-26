@@ -80,6 +80,21 @@ themes:
   tier: midstream
 relations:
   subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 母公司及最終控制者
+    details:
+    - 母公司及最終控制者
+    - 半導體特氣及化學材料製造
+    edge: eb0755bb8f23f
+    evidence_level: primary
+    id: tw.4772
+    name: 台特化
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 2
   - as_of: '2026-10-07'
     confidence: ai_cross_checked
     counterparty_shares: []
@@ -101,7 +116,7 @@ relations:
     detail: 砷化鎵晶片製造及貿易
     details:
     - 砷化鎵晶片製造及貿易
-    - 母公司
+    - 母公司與控制關係
     edge: e5b63638664a2
     evidence_level: primary
     id: tw.8086
@@ -139,20 +154,6 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-06-30'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 半導體特氣及化學材料製造
-    details:
-    - 半導體特氣及化學材料製造
-    edge: eb0755bb8f23f
-    evidence_level: primary
-    id: tw.4772
-    name: 台特化
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
   - as_of: '2026-06-23'
     confidence: ai_cross_checked
     counterparty_shares: []
@@ -168,6 +169,31 @@ relations:
     share_pct: null
     weight: 1
   transactions:
+  - amount: 不超過美金1,176萬元
+    as_of: '2026-08-07'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 合資投資美國太陽能模組製造
+    details:
+    - 合資投資美國太陽能模組製造
+    - 赴美合資設立太陽能模組製造公司
+    edge: ec94da905d9bc
+    event_date: '2026-07-21'
+    events:
+    - amount: 不超過美金1,176萬元
+      detail: 合資投資美國太陽能模組製造
+      event_date: '2026-07-21'
+    - amount: 總投資金額約4,000萬美元
+      detail: 赴美合資設立太陽能模組製造公司
+      event_date: '2026-07-21'
+    evidence_level: primary
+    id: tw.3576
+    name: 聯合再生
+    ranking_basis: unranked
+    role: party
+    share_basis: null
+    share_pct: null
+    weight: 2
   - amount: 8,415千美元
     as_of: '2026-04-08'
     confidence: ai_cross_checked
@@ -274,27 +300,6 @@ relations:
     name: SAS Sunrise Inc.
     ranking_basis: unranked
     role: seller
-    share_basis: null
-    share_pct: null
-    weight: 1
-  - amount: 總投資金額約4,000萬美元
-    as_of: '2026-07-21'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 赴美合資設立太陽能模組製造公司
-    details:
-    - 赴美合資設立太陽能模組製造公司
-    edge: ec94da905d9bc
-    event_date: '2026-07-21'
-    events:
-    - amount: 總投資金額約4,000萬美元
-      detail: 赴美合資設立太陽能模組製造公司
-      event_date: '2026-07-21'
-    evidence_level: primary
-    id: tw.3576
-    name: 聯合再生
-    ranking_basis: unranked
-    role: party
     share_basis: null
     share_pct: null
     weight: 1

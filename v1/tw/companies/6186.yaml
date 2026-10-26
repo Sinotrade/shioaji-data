@@ -27,6 +27,29 @@ segments:
   name: 營建收入
   period: '2025'
   revenue_share_pct: 100
+relations:
+  transactions:
+  - amount: 新台幣299,000萬元
+    as_of: '2024-07-10'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 購置新北市新知段土地及新建大樓
+    details:
+    - 購置新北市新知段土地及新建大樓
+    edge: e3ffebc65ae60
+    event_date: '2024-07-10'
+    events:
+    - amount: 新台幣299,000萬元
+      detail: 購置新北市新知段土地及新建大樓
+      event_date: '2024-07-10'
+    evidence_level: primary
+    id: tw.2486
+    name: 一詮
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: http://www.shinruenn.com
 tax_id: '16318881'
 incorporated: '1998-03-30'

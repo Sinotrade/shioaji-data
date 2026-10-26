@@ -17,57 +17,351 @@ industry:
   l3: mach.office
   l3_name: 辦公與商用設備
   l3_name_en: Office & Business Equipment
-primary_chain_position: midstream
-summary_short: 研發、生產及銷售商用展示架與智能電動床機構件，提供客製加工服務。
-summary_long: 裕慶-KY的業務涵蓋各類材質商用展示架及智能電動床機構件的研發、生產與銷售。商用展示架依品牌及商品需求提供客製化方案，服務包含展示架設計開發，以及鐵件與木件製造、安裝和配送。電動床相關產品則包括智能電動床機構件。官網另外列有電子鎖、客製金屬零件及客製木製零件，產品範圍涵蓋展示設施與零組件加工。其展示架服務串接設計、製造、物流及現場安裝，依個別專案需求提供整合服務。
+primary_chain_position: not_applicable
+summary_short: 設計製造商用展示架與電動床機構件，並提供倉儲、配送及安裝服務。
+summary_long: 裕慶-KY以商用展示架與電動床機構件為主要業務，2025年第一季兩者營收占比分別為83%及13%。展示架業務採ODM模式，服務涵蓋設計、製造及後勤，並透過美國Beeline體系承接當地業務。具名客戶包括Walmart、Target、Home Depot、Lowe’s、Kohl’s及Coca-Cola；L&P亦列於公開報導的客戶名單。2024年公司決議購入新莊辦公不動產，子公司Beeline Corp.另決議以4,200萬美元購入美國西岸倉庫。2025年則調整印尼合資架構，由全資子公司HORIZON FIXTURE INVESTMENT與OWNACE等共同投資。
+segments:
+- evidence_ids:
+  - e2
+  id: display
+  name: 商用展示架
+  period: 2025Q1
+  revenue_share_pct: 83
+- evidence_ids:
+  - e2
+  id: bed
+  name: 電動床機構件
+  period: 2025Q1
+  revenue_share_pct: 13
+relations:
+  customers:
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 商用展示架ODM專案
+    details:
+    - 商用展示架ODM專案
+    edge: e71216d186907
+    evidence_level: media
+    id: us.HD
+    name: Home Depot
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2024-05
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: Beeline體系展示架設計與供應
+    details:
+    - Beeline體系展示架設計與供應
+    edge: ea729085cc558
+    evidence_level: media
+    id: us.KO
+    name: Coca-Cola
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2024-09
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 商用展示架ODM
+    details:
+    - 商用展示架ODM
+    edge: ebfa735c17850
+    evidence_level: primary
+    id: us.KSS
+    name: KOHL's
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2024-05
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 公開報導列名客戶，產品別未分列
+    details:
+    - 公開報導列名客戶，產品別未分列
+    edge: e82f533210380
+    evidence_level: primary
+    id: us.LEG
+    name: Leggett & Platt, Incorporated
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 商用展示架ODM專案
+    details:
+    - 商用展示架ODM專案
+    edge: ee6c9eed9da29
+    evidence_level: media
+    id: us.LOW
+    name: Lowe’s
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 商用展示架ODM專案
+    details:
+    - 商用展示架ODM專案
+    edge: edfaa82e81f1e
+    evidence_level: media
+    id: us.TGT
+    name: TARGET
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2024-08
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 商用展示架
+    details:
+    - 商用展示架
+    edge: efc0c9bfe2633
+    evidence_level: media
+    id: us.WMT
+    name: Walmart Inc
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2024-07-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 美國子公司
+    details:
+    - 美國子公司
+    edge: e84b76bfb5ff1
+    evidence_level: primary
+    id: org.beeline-corp
+    name: Beeline Corp.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2024-05
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 美國集團公司與設計業務體系
+    details:
+    - 美國集團公司與設計業務體系
+    edge: ed2526afca64e
+    evidence_level: primary
+    id: org.beeline-group-llc
+    name: Beeline Group, LLC
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-05-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資投資子公司
+    details:
+    - 全資投資子公司
+    edge: e22d974023263
+    evidence_level: primary
+    id: org.horizon-fixture-investment
+    name: HORIZON FIXTURE INVESTMENT CO., LTD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 新台幣120,800,000元（整案總額）
+    as_of: '2024-05-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 取得新莊自用辦公不動產
+    details:
+    - 取得新莊自用辦公不動產
+    edge: e8d081730e207
+    event_date: '2024-05-13'
+    events:
+    - amount: 新台幣120,800,000元（整案總額）
+      detail: 取得新莊自用辦公不動產
+      event_date: '2024-05-13'
+    evidence_level: primary
+    id: org.chung-yueh-construction-development
+    name: 中悅建設開發股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 子公司投資不超過美金217萬元
+    as_of: '2025-05-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過全資子公司共同投資印尼公司
+    details:
+    - 透過全資子公司共同投資印尼公司
+    edge: eb768e971128a
+    event_date: '2025-05-14'
+    events:
+    - amount: 子公司投資不超過美金217萬元
+      detail: 透過全資子公司共同投資印尼公司
+      event_date: '2025-05-14'
+    evidence_level: primary
+    id: org.ownace-international
+    name: OWNACE INTERNATIONAL PTE. LTD.
+    ranking_basis: unranked
+    role: party
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 美金42,000,000元
+    as_of: '2024-07-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司Beeline Corp.取得美國西岸倉庫
+    details:
+    - 子公司Beeline Corp.取得美國西岸倉庫
+    edge: ee2fb6d1ba3b4
+    event_date: '2024-07-23'
+    events:
+    - amount: 美金42,000,000元
+      detail: 子公司Beeline Corp.取得美國西岸倉庫
+      event_date: '2024-07-23'
+    evidence_level: primary
+    id: org.prologis-limited-partnership-i
+    name: PROLOGIS LIMITED PARTNERSHIP I
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 新莊辦公不動產交易的土地出售自然人未具名。
+- 公開報導以美國百貨零售連鎖店（K）、家居裝修龍頭（H）、平價服飾與家飾零售商（…
+- 電動床機構件主力客戶的近期訂單調整報導未具名，未逕自認定為L&P。
 website: https://www.hzfixtures.com/
 tax_id: '54965803'
 incorporated: '2018-06-15'
 listed: '2024-06-25'
 foreign_registration: KY 開曼群島
-as_of: '2026-10-15'
+as_of: '2026-10-26'
 confidence: ai_cross_checked
 has_research: true
 evidence:
-  tw.6957#e1:
-    locator: 第1頁，主要經營業務及公司基本資料
-    published_date: '2026-10-15'
-    publisher: 臺灣證券交易所
+  tw.6957#e10:
+    locator: 公告主旨
+    published_date: '2024-07-23'
+    publisher: 公開資訊觀測站／MoneyDJ轉載
     quote_check: found
-    title: 裕慶-KY個股資訊
-    url: https://wwwc.twse.com.tw/pdf/ch/6957_ch.pdf
-  tw.6957#e2:
-    locator: We are dedicated to bringing the most innovative fixtures and services to you
+    title: 裕慶-KY董事會決議子公司Beeline購買美國西岸倉儲中心不動產
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=49b7e031-fc12-4dd3-86c9-fd12f582e067
+  tw.6957#e11:
+    locator: 2020年集團架構沿革
     published_date: null
-    publisher: 裕慶金屬股份有限公司
+    publisher: Horizon Fixture Group
     quote_check: found
-    title: Horizon Main Site
-    url: https://www.hzfixtures.com/
+    title: History
+    url: https://www.hzfixtures.com/history
+  tw.6957#e12:
+    locator: 第5項A：投資架構
+    published_date: '2025-05-15'
+    publisher: 公開資訊觀測站／MoneyDJ轉載
+    quote_check: found
+    title: HORIZON FIXTURE INVESTMENT修正調整轉投資架構及對印尼投資額度
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=05f46b01-0ab3-4421-b035-badd38e7c368
+  tw.6957#e13:
+    locator: 第2項第3、4款
+    published_date: '2024-05-14'
+    publisher: 公開資訊觀測站／MoneyDJ轉載
+    quote_check: found
+    title: 裕慶-KY董事會決議購買新北市新莊區不動產
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=a983cfc5-8e4e-40f3-8ac8-31df8fc3aefd
+  tw.6957#e14:
+    locator: 第2項第4款；用途見第21款
+    published_date: '2024-05-14'
+    publisher: 公開資訊觀測站／MoneyDJ轉載
+    quote_check: found
+    title: 裕慶-KY董事會決議購買新北市新莊區不動產
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=a983cfc5-8e4e-40f3-8ac8-31df8fc3aefd
+  tw.6957#e15:
+    locator: 第3、4項
+    published_date: '2024-07-23'
+    publisher: 公開資訊觀測站／MoneyDJ轉載
+    quote_check: found
+    title: 裕慶-KY董事會決議子公司Beeline購買美國西岸倉儲中心不動產
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=49b7e031-fc12-4dd3-86c9-fd12f582e067
+  tw.6957#e16:
+    locator: 第5項C：合資架構
+    published_date: '2025-05-15'
+    publisher: 公開資訊觀測站／MoneyDJ轉載
+    quote_check: found
+    title: HORIZON FIXTURE INVESTMENT修正調整轉投資架構及對印尼投資額度
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=05f46b01-0ab3-4421-b035-badd38e7c368
+  tw.6957#e17:
+    locator: 第5項C：投資金額及預定持股
+    published_date: '2025-05-15'
+    publisher: 公開資訊觀測站／MoneyDJ轉載
+    quote_check: found
+    title: HORIZON FIXTURE INVESTMENT修正調整轉投資架構及對印尼投資額度
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=05f46b01-0ab3-4421-b035-badd38e7c368
+  tw.6957#e2:
+    locator: 內文第二段
+    published_date: '2025-05-14'
+    publisher: 經濟日報
+    quote_check: unreachable
+    title: 裕慶財報／第1季 EPS 1.16元 商用展示架客戶需求升溫
+    url: https://money.udn.com/money/story/5710/8740200
   tw.6957#e3:
     locator: Our Expertise
     published_date: null
-    publisher: 裕慶金屬股份有限公司
+    publisher: Horizon Fixture Group
     quote_check: found
     title: Our Expertise & Service
     url: https://www.hzfixtures.com/our-expertise-service
   tw.6957#e4:
-    locator: Products & Services
-    published_date: null
-    publisher: 裕慶金屬股份有限公司
+    locator: 內文第二段，客戶拉貨與ODM訂單
+    published_date: '2026-01-12'
+    publisher: 東森財經新聞／財訊快報
     quote_check: found
-    title: Horizon Main Site
-    url: https://www.hzfixtures.com/
+    title: 商用展示架年底拉貨潮助攻，裕慶-KY去年12月、Q4營收寫同期新高
+    url: https://fnc.ebc.net.tw/fncnews/stock/204132
   tw.6957#e5:
-    locator: Products & Services
-    published_date: null
-    publisher: 裕慶金屬股份有限公司
+    locator: 內文末段
+    published_date: '2024-08-12'
+    publisher: MoneyDJ理財網
     quote_check: found
-    title: Horizon Main Site
-    url: https://www.hzfixtures.com/
+    title: 裕慶-KY看進入快速成長期，毛利率也有提升空間
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=c4c9ccb7-1829-4014-9bcf-d50f2105f286
   tw.6957#e6:
-    locator: Products & Services
-    published_date: null
+    locator: 簡報第3、4頁
+    published_date: '2024-09-10'
     publisher: 裕慶金屬股份有限公司
     quote_check: found
-    title: Horizon Main Site
-    url: https://www.hzfixtures.com/
+    title: 裕慶金屬法人說明會－2024年9月10日
+    url: https://static1.squarespace.com/static/64d256257711de5204a0f664/t/66eae31ae390f8068409f4a7/1726669594998/6957%E8%A3%95%E6%85%B6-KY%E7%87%9F%E9%81%8B%E7%B0%A1%E5%A0%B1%28%E7%AC%AC%E4%B8%80%E9%87%91%E6%B3%95%E8%AA%AA%29%E4%B8%AD%E6%96%87_0910.pdf
+  tw.6957#e7:
+    locator: 可口可樂與Beeline供應體系段落
+    published_date: '2024-05-24'
+    publisher: MoneyDJ理財網
+    quote_check: found
+    title: 裕慶-KY專訪1：從設計最前線切入，打造一條龍服務
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=74de31d2-757e-4277-a55d-e46c83dbbc2e
+  tw.6957#e8:
+    locator: 具名客戶段落
+    published_date: '2024-05-23'
+    publisher: MoneyDJ理財網
+    quote_check: found
+    title: 直銷客戶近9成，裕慶-KY營運轉骨有成
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=a84ae504-a151-40c2-b351-723fa00dcd47
+  tw.6957#e9:
+    locator: 第1頁，名稱與簡稱定義
+    published_date: '2025-05-16'
+    publisher: Leggett & Platt, Incorporated
+    quote_check: found
+    title: Leggett & Platt, Incorporated Human Rights Policy
+    url: https://leggett.com/document/load/human-rights-policy.pdf

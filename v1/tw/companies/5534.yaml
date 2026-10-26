@@ -18,66 +18,173 @@ industry:
   l3_name: 建設開發
   l3_name_en: Property Development
 primary_chain_position: not_applicable
-summary_short: 以住宅、商業及廠辦大樓開發銷售為主，另有不動產出租與子公司營造業務。
-summary_long: 長虹建設主要開發銷售住宅、商業及廠辦大樓，並提供辦公室、店面及停車位出租服務。住宅產品包含住宅、店面與停車位，工商業產品則涵蓋辦公室及廠辦大樓。2025年合併財報分為建設及營造兩個部門，外部收入分別為74.31億元及10.59億元，以建設部門為主要收入來源。依2026年第一季合併財報，子公司包括從事營造與大樓開發的宏林營造廠、從事住宅與大樓開發的虹欣建設，以及業務性質列為百貨零售的新時代廣場實業。
+summary_short: 以住宅、商辦及廠辦開發銷售為主，另經營不動產出租與子公司營造工程。
+summary_long: 長虹建設以住宅、商辦及廠辦開發銷售為核心，另經營不動產出租。合併業務亦包含子公司宏林營造廠的工程承攬；宏林為全資子公司，也是主要工程供應商，2025年占長虹個體進貨淨額41.44%。公司另持有虹欣建設60%及新時代廣場實業100%股權。開發業務涵蓋都市更新，並將危老建築列為拓展方向。2024年取得林口及桃園土地，2025年與聖得福建設簽訂內湖土地合作開發契約。萬海航運的已核實往來為2020年整棟廠辦買賣。
 segments:
 - evidence_ids:
-  - e2
-  id: seg_construction_development
-  name: 建設部門
-  period: 2025年度
+  - e5
+  id: seg_development
+  name: 房地開發銷售
+  period: '2025'
   revenue_share_pct: null
 - evidence_ids:
-  - e2
-  id: seg_civil_construction
-  name: 營造部門
-  period: 2025年度
+  - e5
+  id: seg_construction
+  name: 工程承攬（合併營造部門）
+  period: '2025'
   revenue_share_pct: null
+- evidence_ids:
+  - e5
+  - e6
+  id: seg_rental
+  name: 不動產出租
+  period: '2025'
+  revenue_share_pct: 3
 relations:
+  competitors:
+  - as_of: '2026-04-20'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 住宅、商業大樓與廠辦開發
+    details:
+    - 住宅、商業大樓與廠辦開發
+    edge: e19e51a81821a
+    evidence_level: primary
+    id: tw.2542
+    name: 興富發
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-20'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 住宅、商業大樓與廠辦開發
+    details:
+    - 住宅、商業大樓與廠辦開發
+    edge: e6995e57fa303
+    evidence_level: primary
+    id: tw.2548
+    name: 華固
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-20'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 住宅、商業大樓與廠辦開發
+    details:
+    - 住宅、商業大樓與廠辦開發
+    edge: e450225b3e872
+    evidence_level: primary
+    id: tw.5522
+    name: 遠雄
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
-  - as_of: '2026-03-31'
+  - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
     detail: 全資營造子公司
     details:
     - 全資營造子公司
-    edge: e074245becb00
+    edge: e8773cc67c7ff
     evidence_level: primary
-    id: org.honglin-construction
+    id: org.hong-lin-construction
     name: 宏林營造廠股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-03-31'
+  - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
     detail: 住宅及大樓開發子公司
     details:
     - 住宅及大樓開發子公司
-    edge: e607d7cf11437
+    edge: e3d3e73e52fd7
     evidence_level: primary
-    id: org.hongxin-construction
+    id: org.hong-xin-construction
     name: 虹欣建設股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-03-31'
+  - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 全資百貨零售子公司
+    detail: 全資子公司
     details:
-    - 全資百貨零售子公司
-    edge: e39e6cc530940
+    - 全資子公司
+    edge: e252f599badae
     evidence_level: primary
-    id: org.new-era-plaza-enterprise
+    id: org.new-era-plaza-industrial
     name: 新時代廣場實業股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
+  suppliers:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 建案營造工程承包
+    details:
+    - 建案營造工程承包
+    edge: e38559e9bf058
+    evidence_level: primary
+    id: org.hong-lin-construction
+    name: 宏林營造廠股份有限公司
+    ranking_basis: disclosed
+    share_basis: purchases
+    share_pct: 41.44
+    weight: 1
   transactions:
+  - amount: 長虹預計投入工程成本約新台幣36.4億元
+    as_of: '2025-07-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 內湖康寧段土地合作開發
+    details:
+    - 內湖康寧段土地合作開發
+    edge: e3462cadf77df
+    event_date: '2025-07-31'
+    events:
+    - amount: 長虹預計投入工程成本約新台幣36.4億元
+      detail: 內湖康寧段土地合作開發
+      event_date: '2025-07-31'
+    evidence_level: primary
+    id: org.sheng-de-fu-development
+    name: 聖得福建設開發股份有限公司
+    ranking_basis: unranked
+    role: party
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 近新台幣22.29億元
+    as_of: '2020-05-06'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 出售長虹新世代科技大樓A棟
+    details:
+    - 出售長虹新世代科技大樓A棟
+    edge: e1666f365bc9b
+    event_date: '2020-05-06'
+    events:
+    - amount: 近新台幣22.29億元
+      detail: 出售長虹新世代科技大樓A棟
+      event_date: '2020-05-06'
+    evidence_level: media
+    id: tw.2615
+    name: 萬海
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
   - amount: 新台幣361,200,000元
     as_of: '2026-05-22'
     confidence: ai_cross_checked
@@ -99,53 +206,156 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+unresolved_mentions:
+- 2024年林口區建林段土地賣方：未揭露姓名之非關係人自然人。
+- 2024年桃園區桃合段土地賣方：未揭露姓名之非關係人自然人。
+- 2025年土城區明德段合建地主：公告僅揭露為自然人。
+- 114年度年報主要供應商表中的H君：未揭露完整身分。
 website: http://www.chonghong.com.tw
 tax_id: 04633597
 incorporated: '1975-12-04'
 listed: '2004-05-24'
-as_of: '2026-10-15'
+as_of: '2026-10-26'
 confidence: ai_cross_checked
 has_research: true
 evidence:
-  tw.5534#e1:
-    locator: 第28頁，肆、營運概況／目前主要商品（服務）項目
+  tw.5534#e10:
+    locator: 主要商品／服務項目
+    published_date: null
+    publisher: 長虹建設股份有限公司（104人力銀行公司頁）
+    quote_check: not_found
+    title: 長虹建設股份有限公司｜公司簡介
+    url: https://www.104.com.tw/company/24mq2bs
+  tw.5534#e11:
+    locator: 年報第36頁，主要供應商資料，114年度名稱、金額與進貨占比欄
     published_date: '2026-04-20'
     publisher: 長虹建設股份有限公司
     quote_check: found
-    title: 長虹建設股份有限公司114年度年報
-    url: https://chonghong.com.tw/wp-content/uploads/2026/07/114%E5%B9%B4%E5%B9%B4%E5%A0%B1.pdf
+    title: 114年度年報
+    url: https://chonghong.com.tw/wp-content/uploads/2026/07/114年年報.pdf
+  tw.5534#e12:
+    locator: 年報第32頁，市場分析／主要競爭對手
+    published_date: '2026-04-20'
+    publisher: 長虹建設股份有限公司
+    quote_check: found
+    title: 114年度年報
+    url: https://chonghong.com.tw/wp-content/uploads/2026/07/114年年報.pdf
+  tw.5534#e13:
+    locator: 徐義平報導首段；本文另列標的為長虹新世代科技大樓A棟
+    published_date: '2020-05-07'
+    publisher: 自由財經
+    quote_check: found
+    title: 萬海砸22.29億 包走內湖整棟廠辦
+    url: https://ec.ltn.com.tw/article/paper/1371067
+  tw.5534#e14:
+    locator: 都市更新案件列表
+    published_date: null
+    publisher: 長虹建設股份有限公司
+    quote_check: found
+    title: 都市更新
+    url: https://chonghong.com.tw/urban
+  tw.5534#e15:
+    locator: 公告標題及第6項；第2項事實發生日為115/8/28
+    published_date: '2026-08-30'
+    publisher: 公開資訊觀測站（鉅亨網轉載）
+    quote_check: found
+    title: 長虹：公告本公司獲選台北市「大直藏璽」公辦都更案之最優申請人
+    url: https://news.cnyes.com/news/id/6592048
+  tw.5534#e16:
+    locator: 重大訊息第1至4項及第21項用途
+    published_date: '2024-06-19'
+    publisher: 公開資訊觀測站（MoneyDJ轉載）
+    quote_check: found
+    title: 長虹簽訂新北市林口區建林段土地買賣契約書，計約10.2億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=af7ad257-9d1e-4711-abbd-67b0993f990c
+  tw.5534#e17:
+    locator: 重大訊息第1至4項
+    published_date: '2024-07-19'
+    publisher: 公開資訊觀測站（鉅亨網轉載）
+    quote_check: found
+    title: 長虹：本公司簽訂桃園市桃園區桃合段土地買賣契約書
+    url: https://news.cnyes.com/news/id/5644833
+  tw.5534#e18:
+    locator: 重大訊息第5項契約相對人
+    published_date: '2025-07-31'
+    publisher: 公開資訊觀測站（MoneyDJ轉載）
+    quote_check: found
+    title: 長虹 本公司與非關係人簽訂台北市內湖區康寧段三小段土地合作開發契約書。
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=97dcd0e2-6c3e-44f0-9365-c71657402456
+  tw.5534#e19:
+    locator: 重大訊息第6項契約主要內容
+    published_date: '2025-07-31'
+    publisher: 公開資訊觀測站（MoneyDJ轉載）
+    quote_check: found
+    title: 長虹 本公司與非關係人簽訂台北市內湖區康寧段三小段土地合作開發契約書。
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=97dcd0e2-6c3e-44f0-9365-c71657402456
   tw.5534#e2:
-    locator: 第48頁，附註十四、部門資訊；114年度欄，金額單位為新台幣仟元
+    locator: 深耕品質 築夢踏實
     published_date: null
     publisher: 長虹建設股份有限公司
     quote_check: found
-    title: 長虹建設股份有限公司及子公司114年度合併財務報告
-    url: https://chonghong.com.tw/wp-content/uploads/2026/07/114%E5%B9%B4%E7%AC%AC%E5%9B%9B%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf
+    title: 公司簡介
+    url: https://chonghong.com.tw/aboutus
+  tw.5534#e20:
+    locator: 重大訊息第1、5、6項
+    published_date: '2025-10-17'
+    publisher: 公開資訊觀測站（鉅亨網轉載）
+    quote_check: found
+    title: 長虹：本公司與地主簽訂新北市土城區明德段不動產合作興建契約書。
+    url: https://news.cnyes.com/news/id/6195641
+  tw.5534#e21:
+    locator: 重大訊息第5項交易數量與金額
+    published_date: '2026-10-06'
+    publisher: 公開資訊觀測站（MoneyDJ轉載）
+    quote_check: found
+    title: 長虹 補正公告本公司出售不動產予關係人
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=233423fc-fe79-42af-b34e-ec0a904af212
+  tw.5534#e22:
+    locator: 重大訊息第1項標的；第2項事實發生日為115/10/5
+    published_date: '2026-10-06'
+    publisher: 公開資訊觀測站（MoneyDJ轉載）
+    quote_check: found
+    title: 長虹 補正公告本公司出售不動產予關係人
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=233423fc-fe79-42af-b34e-ec0a904af212
   tw.5534#e3:
-    locator: 第10頁，附註四（二）合併基礎，子公司表表頭
+    locator: 主要商品／服務項目
     published_date: null
-    publisher: 長虹建設股份有限公司
-    quote_check: found
-    title: 長虹建設股份有限公司及子公司115年第一季合併財務報告
-    url: https://chonghong.com.tw/wp-content/uploads/2026/07/115%E5%B9%B4%E7%AC%AC%E4%B8%80%E5%AD%A3%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf
-  tw.5534#e4:
-    locator: 第10頁，列入合併財務報告之子公司／宏林營造廠
-    published_date: null
-    publisher: 長虹建設股份有限公司
-    quote_check: found
-    title: 長虹建設股份有限公司及子公司115年第一季合併財務報告
-    url: https://chonghong.com.tw/wp-content/uploads/2026/07/115%E5%B9%B4%E7%AC%AC%E4%B8%80%E5%AD%A3%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf
+    publisher: 長虹建設股份有限公司（104人力銀行公司頁）
+    quote_check: not_found
+    title: 長虹建設股份有限公司｜公司簡介
+    url: https://www.104.com.tw/company/24mq2bs
   tw.5534#e5:
-    locator: 第10頁，列入合併財務報告之子公司／虹欣建設
+    locator: 財報第34頁，附註六（十七）收入之細分，114年度
     published_date: null
     publisher: 長虹建設股份有限公司
     quote_check: found
-    title: 長虹建設股份有限公司及子公司115年第一季合併財務報告
-    url: https://chonghong.com.tw/wp-content/uploads/2026/07/115%E5%B9%B4%E7%AC%AC%E4%B8%80%E5%AD%A3%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf
+    title: 114年度及113年度合併財務報告
+    url: https://chonghong.com.tw/wp-content/uploads/2026/07/114年第四季合併財務報告書.pdf
   tw.5534#e6:
-    locator: 第10頁，列入合併財務報告之子公司／新時代廣場實業
+    locator: 財報第6頁，合併綜合損益表，114年度金額與百分比欄
     published_date: null
     publisher: 長虹建設股份有限公司
     quote_check: found
-    title: 長虹建設股份有限公司及子公司115年第一季合併財務報告
-    url: https://chonghong.com.tw/wp-content/uploads/2026/07/115%E5%B9%B4%E7%AC%AC%E4%B8%80%E5%AD%A3%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf
+    title: 114年度及113年度合併財務報告
+    url: https://chonghong.com.tw/wp-content/uploads/2026/07/114年第四季合併財務報告書.pdf
+  tw.5534#e7:
+    locator: 財報第9頁，附註四（二）合併基礎，115.6.30持股欄
+    published_date: '2026-08-11'
+    publisher: 長虹建設股份有限公司
+    quote_check: found
+    title: 115年第二季合併財務報告
+    url: https://chonghong.com.tw/wp-content/uploads/2026/10/115年第二季財務報告書.pdf
+  tw.5534#e8:
+    locator: 財報第9頁，附註四（二）合併基礎，115.6.30持股欄
+    published_date: '2026-08-11'
+    publisher: 長虹建設股份有限公司
+    quote_check: found
+    title: 115年第二季合併財務報告
+    url: https://chonghong.com.tw/wp-content/uploads/2026/10/115年第二季財務報告書.pdf
+  tw.5534#e9:
+    locator: 財報第9頁，附註四（二）合併基礎，115.6.30持股欄
+    published_date: '2026-08-11'
+    publisher: 長虹建設股份有限公司
+    quote_check: found
+    title: 115年第二季合併財務報告
+    url: https://chonghong.com.tw/wp-content/uploads/2026/10/115年第二季財務報告書.pdf

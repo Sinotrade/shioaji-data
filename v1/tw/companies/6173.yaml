@@ -18,21 +18,39 @@ industry:
   l3_name: 被動元件
   l3_name_en: Passive Components
 primary_chain_position: midstream
-summary_short: 製造與銷售特殊MLCC、晶片電阻、電感及介電瓷粉。
-summary_long: 信昌電製造與銷售特殊積層陶瓷電容、晶片電阻、電感及介電瓷粉，並以自製瓷粉向下整合至被動元件。MLCC涵蓋高壓、安規、車規及高可靠度系列，電阻涵蓋電流感測、高功率與高壓品項。產品應用包括AI伺服器電源、機器人、電動車車載充電器與5G設備突波保護；2026年第二季AI與機器人營收比重分別為9.2%及3.7%。母公司為華新科技，並持有控股及投資子公司；陶瓷原料生產亦由間接子公司信昌電子（蘇州）經營。
+summary_short: 以積層陶瓷電容為主要收入，兼售晶片電阻、介電瓷粉及電感。
+summary_long: 信昌電製造與銷售積層陶瓷電容、晶片電阻、介電瓷粉及電感；2026年第一季營收占比分別為64%、17%、15%及2%。公司具備介電陶瓷粉末自製能力，並整合材料、製程及設備技術，產品聚焦中高壓、大尺寸與高可靠度被動元件。公司揭露AI伺服器電源應用，官網亦提供電動車電池系統及5G網通設備保護元件方案。華新科技為其母公司，亦有雙向進銷貨關係；2024年對華新科技銷貨占23%。近年交易包括委託猛揮營造興建廠房、委託永龍企業進行楊梅二廠工程，以及向華新麗華與久尹承租廠辦。
 segments:
 - evidence_ids:
-  - e8
-  id: seg_ai
-  name: AI應用
-  period: 2026Q2
-  revenue_share_pct: 9.2
+  - e2
+  id: seg_mlcc
+  name: 積層陶瓷電容
+  period: 2026年第一季
+  revenue_share_pct: 64
 - evidence_ids:
-  - e10
-  id: seg_robotics
-  name: 機器人應用
-  period: 2026Q2
-  revenue_share_pct: 3.7
+  - e2
+  id: seg_resistor
+  name: 晶片電阻
+  period: 2026年第一季
+  revenue_share_pct: 17
+- evidence_ids:
+  - e2
+  id: seg_powder
+  name: 介電陶瓷粉末
+  period: 2026年第一季
+  revenue_share_pct: 15
+- evidence_ids:
+  - e2
+  id: seg_inductor
+  name: 電感
+  period: 2026年第一季
+  revenue_share_pct: 2
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他
+  period: 2026年第一季
+  revenue_share_pct: 2
 main_theme: theme.ev
 themes:
 - also: []
@@ -47,13 +65,24 @@ themes:
   stage: components
   theme: theme.5g
   tier: upstream
-- also: []
-  stage: components
-  theme: theme.robotics
-  tier: upstream
 relations:
+  customers:
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 產線分工下的產品交叉銷售
+    details:
+    - 產線分工下的產品交叉銷售
+    edge: e2da56c8e5689
+    evidence_level: primary
+    id: tw.2492
+    name: 華新科
+    ranking_basis: disclosed
+    share_basis: revenue
+    share_pct: 23
+    weight: 1
   parents:
-  - as_of: '2026-06-30'
+  - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
     detail: 列入合併財報之子公司
@@ -69,47 +98,76 @@ relations:
     share_pct: null
     weight: 2
   subsidiaries:
-  - as_of: '2026-06-30'
+  - as_of: '2026-04-29'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接控股子公司
+    detail: 弘電電子持有的間接子公司
     details:
-    - 直接控股子公司
-    edge: e2ab2304ff7e6
+    - 弘電電子持有的間接子公司
+    edge: ee2d7b60ffd6b
     evidence_level: primary
-    id: org.pdc-prime-holdings-limited
+    id: org.dongguan-hongdian-electronics
+    name: 東莞弘電電子有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-29'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過PDC Prime Holdings持有的子公司
+    details:
+    - 透過PDC Prime Holdings持有的子公司
+    edge: ed1a2493e0cc8
+    evidence_level: primary
+    id: org.hongdian-electronics
+    name: 弘電電子有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-29'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 重要子公司
+    details:
+    - 重要子公司
+    edge: e9e54a2efb75c
+    evidence_level: primary
+    id: org.pdc-prime-holdings
     name: PDC Prime Holdings Limited
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-06-30'
+  suppliers:
+  - as_of: '2024-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接投資子公司
+    detail: 半成品及成品供應
     details:
-    - 直接投資子公司
-    edge: e9027acc7928a
+    - 半成品及成品供應
+    edge: e075936648a50
     evidence_level: primary
-    id: org.信昌投資-新加坡-有限公司
-    name: 信昌投資（新加坡）有限公司
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
+    id: org.dongguan-walsin-technology
+    name: 東莞華科電子有限公司
+    ranking_basis: disclosed
+    share_basis: purchases
+    share_pct: 21
     weight: 1
-  - as_of: '2026-06-30'
+  - as_of: '2024-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 間接子公司，生產陶瓷原料
+    detail: 半成品及成品供應
     details:
-    - 間接子公司，生產陶瓷原料
-    edge: ef8e66dcfbdab
+    - 半成品及成品供應
+    edge: e56ef5a47b247
     evidence_level: primary
-    id: org.信昌電子-蘇州-有限公司
-    name: 信昌電子（蘇州）有限公司
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
+    id: tw.2492
+    name: 華新科
+    ranking_basis: disclosed
+    share_basis: purchases
+    share_pct: 18
     weight: 1
   transactions:
   - amount: 新台幣12,907,798元
@@ -119,11 +177,15 @@ relations:
     detail: 取得楊梅廠房及辦公室使用權資產
     details:
     - 取得楊梅廠房及辦公室使用權資產
+    - 出租楊梅廠房及辦公室
     edge: e7bd5b3ac9063
     event_date: '2024-06-28'
     events:
     - amount: 新台幣12,907,798元
       detail: 取得楊梅廠房及辦公室使用權資產
+      event_date: '2024-06-28'
+    - amount: null
+      detail: 出租楊梅廠房及辦公室
       event_date: '2024-06-28'
     evidence_level: primary
     id: tw.2492
@@ -132,131 +194,275 @@ relations:
     role: seller
     share_basis: null
     share_pct: null
+    weight: 2
+  - amount: 新台幣632,000仟元（含稅）
+    as_of: '2025-09-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 自地委建廠房
+    details:
+    - 自地委建廠房
+    edge: e1974ad2855b2
+    event_date: '2025-09-26'
+    events:
+    - amount: 新台幣632,000仟元（含稅）
+      detail: 自地委建廠房
+      event_date: '2025-09-26'
+    evidence_level: primary
+    id: org.meng-hui-construction
+    name: 猛揮營造股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
     weight: 1
+  - amount: 新台幣596,000仟元（含稅）
+    as_of: '2026-09-22'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 楊梅二廠新建工程
+    details:
+    - 楊梅二廠新建工程
+    edge: e2af62fb6a477
+    event_date: '2026-09-22'
+    events:
+    - amount: 新台幣596,000仟元（含稅）
+      detail: 楊梅二廠新建工程
+      event_date: '2026-09-22'
+    evidence_level: primary
+    id: org.yung-long-enterprise
+    name: 永龍企業股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣345,260,435元
+    as_of: '2026-07-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 承租楊梅廠辦及停車位
+    details:
+    - 承租楊梅廠辦及停車位
+    edge: eedc05313e2c3
+    event_date: '2026-07-31'
+    events:
+    - amount: 新台幣345,260,435元
+      detail: 承租楊梅廠辦及停車位
+      event_date: '2026-07-31'
+    evidence_level: primary
+    id: tw.1605
+    name: 華新
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2024-08-01'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 普通股累積投資持股
+    details:
+    - 普通股累積投資持股
+    edge: e6bf7c77542f7
+    event_date: null
+    events:
+    - amount: null
+      detail: 普通股累積投資持股
+      event_date: null
+    evidence_level: primary
+    id: tw.3042
+    name: 晶技
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣40,813,472元
+    as_of: '2026-07-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 承租楊梅廠房
+    details:
+    - 承租楊梅廠房
+    edge: e4cb09f3d4aee
+    event_date: '2026-07-31'
+    events:
+    - amount: 新台幣40,813,472元
+      detail: 承租楊梅廠房
+      event_date: '2026-07-31'
+    evidence_level: primary
+    id: tw.8029
+    name: 久尹股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 伺服器應用客戶：來源未揭露具名購買公司。
+- 網通應用客戶：來源未揭露具名購買公司。
+- EMS：候選線索未具名，本次未找到足以確認供貨方向的證據。
 website: www.pdc.com.tw/
 tax_id: '23641338'
 incorporated: '1990-05-21'
 listed: '2002-04-19'
-as_of: '2026-10-23'
+as_of: '2026-10-25'
 confidence: ai_cross_checked
 has_research: true
 evidence:
   tw.6173#e10:
-    locator: 第7頁：AI &Robot Revenue Ratio表，Robot Ratio列；依序為2025Q4、2026Q1、2026Q2、2026Q3預估、2026Q4預估
-    published_date: '2026-09-10'
-    publisher: 信昌電子陶瓷股份有限公司
-    quote_check: found
-    title: 2026年法人說明會
-    url: https://www.pdc.com.tw/storage/architecture/page~~68/page~~69/PDC_investor_2026_09_10.pdf
-  tw.6173#e11:
-    locator: 車充OBC系統說明及信昌產品方案
+    locator: PDF第96頁，進貨及銷貨集中風險
     published_date: null
     publisher: 信昌電子陶瓷股份有限公司
     quote_check: found
-    title: 車充
-    url: https://www.pdc.com.tw/tw/charger
+    title: 113年股東會年報
+    url: https://www.pdc.com.tw/storage/architecture/page~~68/page~~71/page~~96/2024_AnnualReport.pdf
+  tw.6173#e11:
+    locator: 公告主旨
+    published_date: '2026-04-29'
+    publisher: 公開資訊觀測站（鉅亨網刊載）
+    quote_check: found
+    title: 代重要子公司PDC Prime Holdings Limited公告董事會通過盈餘匯回案
+    url: https://news.cnyes.com/news/id/6436933
   tw.6173#e12:
-    locator: 應用說明及信昌產品方案
+    locator: 說明3(1)
+    published_date: '2026-04-29'
+    publisher: 公開資訊觀測站（鉅亨網刊載）
+    quote_check: found
+    title: 代重要子公司PDC Prime Holdings Limited公告董事會通過盈餘匯回案
+    url: https://news.cnyes.com/news/id/6436933
+  tw.6173#e13:
+    locator: 公告主旨與第5項
+    published_date: '2025-09-26'
+    publisher: 公開資訊觀測站（MoneyDJ刊載）
+    quote_check: found
+    title: 信昌電以自地委建興建廠房案，契約總金額6.32億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=8829a9bc-f8af-4b31-82c9-fbc903ebc852
+  tw.6173#e14:
+    locator: 第6項
+    published_date: '2025-09-26'
+    publisher: 公開資訊觀測站（MoneyDJ刊載）
+    quote_check: found
+    title: 信昌電以自地委建興建廠房案，契約總金額6.32億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=8829a9bc-f8af-4b31-82c9-fbc903ebc852
+  tw.6173#e15:
+    locator: 公告主旨及第6項
+    published_date: '2026-09-22'
+    publisher: 公開資訊觀測站（MoneyDJ刊載）
+    quote_check: found
+    title: 信昌電楊梅二廠新建工程案，合約總額5.96億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=b528320a-ae61-4166-904a-d42c62c8897c
+  tw.6173#e16:
+    locator: 第5項
+    published_date: '2026-09-22'
+    publisher: 公開資訊觀測站（MoneyDJ刊載）
+    quote_check: found
+    title: 信昌電楊梅二廠新建工程案，合約總額5.96億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=b528320a-ae61-4166-904a-d42c62c8897c
+  tw.6173#e17:
+    locator: 第6項
+    published_date: '2026-07-31'
+    publisher: 公開資訊觀測站（鉅亨網刊載）
+    quote_check: found
+    title: 信昌電董事會決議向關係人取得不動產使用權資產
+    url: https://news.cnyes.com/news/id/6555123
+  tw.6173#e18:
+    locator: 第5項
+    published_date: '2026-07-31'
+    publisher: 公開資訊觀測站（鉅亨網刊載）
+    quote_check: found
+    title: 信昌電董事會決議向關係人取得不動產使用權資產
+    url: https://news.cnyes.com/news/id/6555123
+  tw.6173#e19:
+    locator: 第6項
+    published_date: '2026-07-31'
+    publisher: 公開資訊觀測站（鉅亨網刊載）
+    quote_check: found
+    title: 信昌電董事會決議向關係人取得不動產使用權資產
+    url: https://news.cnyes.com/news/print/6555122
+  tw.6173#e2:
+    locator: 葉時安報導，第一季產品組合段落
+    published_date: '2026-05-22'
+    publisher: 時報資訊（元大證券刊載）
+    quote_check: found
+    title: 《電零組》高壓MLCC緊缺看漲 信昌電攻頂再寫新天價
+    url: https://www.yuanta.com.tw/eYuanta/Securities/News/GetAPItem?Type=StockTodayNews&id=202605220110256
+  tw.6173#e20:
+    locator: 第5項
+    published_date: '2026-07-31'
+    publisher: 公開資訊觀測站（鉅亨網刊載）
+    quote_check: found
+    title: 信昌電董事會決議向關係人取得不動產使用權資產
+    url: https://news.cnyes.com/news/print/6555122
+  tw.6173#e21:
+    locator: 第4項
+    published_date: '2024-06-28'
+    publisher: 公開資訊觀測站（MoneyDJ刊載）
+    quote_check: found
+    title: 華新科向信昌電取得桃園市楊梅區使用權資產，計約1291萬元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=590d1778-390f-4ebc-bf1e-11da6f12a629
+  tw.6173#e22:
+    locator: 第3項
+    published_date: '2024-06-28'
+    publisher: 公開資訊觀測站（MoneyDJ刊載）
+    quote_check: found
+    title: 華新科向信昌電取得桃園市楊梅區使用權資產，計約1291萬元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=590d1778-390f-4ebc-bf1e-11da6f12a629
+  tw.6173#e23:
+    locator: 第6項，信昌電子陶瓷累積持股
+    published_date: '2024-08-01'
+    publisher: 公開資訊觀測站（MoneyDJ刊載）
+    quote_check: found
+    title: 華新科7/8至8/1取得晶技3,607,000股，計約4.05億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=fa9a58c8-5adc-414b-8de5-dafd1de21dc7
+  tw.6173#e3:
+    locator: 第7頁，材料技術
+    published_date: '2025-05-27'
+    publisher: 信昌電子陶瓷股份有限公司
+    quote_check: found
+    title: 2025年法人說明會
+    url: https://www.pdc.com.tw/storage/architecture/page~~68/page~~69/PDC_investor_2025_05_27.pdf
+  tw.6173#e4:
+    locator: 掌握關鍵性材料
+    published_date: null
+    publisher: 信昌電子陶瓷股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.pdc.com.tw/tw/about-pdc
+  tw.6173#e5:
+    locator: 第7頁，垂直整合
+    published_date: '2025-05-27'
+    publisher: 信昌電子陶瓷股份有限公司
+    quote_check: found
+    title: 2025年法人說明會
+    url: https://www.pdc.com.tw/storage/architecture/page~~68/page~~69/PDC_investor_2025_05_27.pdf
+  tw.6173#e6:
+    locator: 第7頁，AI主要用料與應用
+    published_date: '2026-09-10'
+    publisher: 信昌電子陶瓷股份有限公司
+    quote_check: found
+    title: 2026年9月法人說明會
+    url: https://www.pdc.com.tw/storage/architecture/page~~68/page~~69/PDC_investor_2026_09_10.pdf
+  tw.6173#e7:
+    locator: 新能源汽車BMS系統、信昌產品方案
+    published_date: null
+    publisher: 信昌電子陶瓷股份有限公司
+    quote_check: found
+    title: 電池
+    url: https://www.pdc.com.tw/tw/battery
+  tw.6173#e8:
+    locator: 應用說明與信昌產品方案
     published_date: null
     publisher: 信昌電子陶瓷股份有限公司
     quote_check: found
     title: 5G網通設備突波保護
     url: https://www.pdc.com.tw/tw/5g-surge-protection
-  tw.6173#e13:
-    locator: 第36頁，附註二六：關係人名稱與關係
-    published_date: null
-    publisher: 信昌電子陶瓷股份有限公司
-    quote_check: found
-    title: 民國115及114年第2季合併財務報告暨會計師核閱報告
-    url: https://www.pdc.com.tw/storage/architecture/page~~68/page~~71/page~~95/202602_6173_CH.pdf
-  tw.6173#e14:
-    locator: 第18頁：列入合併財務報告之子公司，直接投資及業務性質欄
-    published_date: null
-    publisher: 信昌電子陶瓷股份有限公司
-    quote_check: found
-    title: 民國115及114年第2季合併財務報告暨會計師核閱報告
-    url: https://www.pdc.com.tw/storage/architecture/page~~68/page~~71/page~~95/202602_6173_CH.pdf
-  tw.6173#e15:
-    locator: 第18頁：列入合併財務報告之子公司，直接投資及業務性質欄
-    published_date: null
-    publisher: 信昌電子陶瓷股份有限公司
-    quote_check: found
-    title: 民國115及114年第2季合併財務報告暨會計師核閱報告
-    url: https://www.pdc.com.tw/storage/architecture/page~~68/page~~71/page~~95/202602_6173_CH.pdf
-  tw.6173#e16:
-    locator: 第18頁：列入合併財務報告之子公司，蘇州公司之投資公司欄
-    published_date: null
-    publisher: 信昌電子陶瓷股份有限公司
-    quote_check: found
-    title: 民國115及114年第2季合併財務報告暨會計師核閱報告
-    url: https://www.pdc.com.tw/storage/architecture/page~~68/page~~71/page~~95/202602_6173_CH.pdf
-  tw.6173#e17:
-    locator: 第18頁：信昌電子（蘇州）有限公司之業務性質欄
-    published_date: null
-    publisher: 信昌電子陶瓷股份有限公司
-    quote_check: found
-    title: 民國115及114年第2季合併財務報告暨會計師核閱報告
-    url: https://www.pdc.com.tw/storage/architecture/page~~68/page~~71/page~~95/202602_6173_CH.pdf
-  tw.6173#e18:
-    locator: 第8頁：品牌及產品
-    published_date: '2026-08-01'
-    publisher: 信昌電子陶瓷股份有限公司
-    quote_check: found
-    title: 2025年永續報告書
-    url: https://www.pdc.com.tw/storage/architecture/page~~67/page~~78/page~~74/2025.pdf
-  tw.6173#e2:
-    locator: 產品介紹第二點
-    published_date: null
-    publisher: 信昌電子陶瓷股份有限公司
-    quote_check: found
-    title: 積層陶瓷電容
-    url: https://www.pdc.com.tw/tw/mlcc
-  tw.6173#e3:
-    locator: 產品介紹第二點
-    published_date: null
-    publisher: 信昌電子陶瓷股份有限公司
-    quote_check: found
-    title: 晶片電阻
-    url: https://www.pdc.com.tw/tw/chip-resister
-  tw.6173#e4:
-    locator: 介電瓷粉產品介紹
-    published_date: null
-    publisher: 信昌電子陶瓷股份有限公司
-    quote_check: found
-    title: 介電瓷粉
-    url: https://www.pdc.com.tw/tw/powder
-  tw.6173#e5:
-    locator: About PDC：垂直整合、關鍵技術
-    published_date: null
-    publisher: 信昌電子陶瓷股份有限公司
-    quote_check: found
-    title: 信昌電陶官網
-    url: https://www.pdc.com.tw/tw
-  tw.6173#e6:
-    locator: 電感產品系列
-    published_date: null
-    publisher: 信昌電子陶瓷股份有限公司
-    quote_check: found
-    title: 電感
-    url: https://www.pdc.com.tw/tw/coil
-  tw.6173#e7:
-    locator: 第7頁：AI伺服器電源應用
-    published_date: '2026-09-10'
-    publisher: 信昌電子陶瓷股份有限公司
-    quote_check: found
-    title: 2026年法人說明會
-    url: https://www.pdc.com.tw/storage/architecture/page~~68/page~~69/PDC_investor_2026_09_10.pdf
-  tw.6173#e8:
-    locator: 第7頁：AI &Robot Revenue Ratio表，AI Ratio列；依序為2025Q3、2025Q4、2026Q1、2026Q2、2026Q3預估、2026Q4預估
-    published_date: '2026-09-10'
-    publisher: 信昌電子陶瓷股份有限公司
-    quote_check: found
-    title: 2026年法人說明會
-    url: https://www.pdc.com.tw/storage/architecture/page~~68/page~~69/PDC_investor_2026_09_10.pdf
   tw.6173#e9:
-    locator: 第7頁：機器人應用
-    published_date: '2026-09-10'
+    locator: PDF第96頁，進貨及銷貨集中風險
+    published_date: null
     publisher: 信昌電子陶瓷股份有限公司
     quote_check: found
-    title: 2026年法人說明會
-    url: https://www.pdc.com.tw/storage/architecture/page~~68/page~~69/PDC_investor_2026_09_10.pdf
+    title: 113年股東會年報
+    url: https://www.pdc.com.tw/storage/architecture/page~~68/page~~71/page~~96/2024_AnnualReport.pdf

@@ -118,11 +118,11 @@ members:
   stage_role: primary
 - id: tw.1312
   detail: 塑膠銷貨39.56%為最大項；另製造中間原料苯乙烯及基礎原料丙烯。
-  as_of: '2026-10-15'
+  as_of: '2026-10-26'
   evidence:
+  - tw.1312#e1
   - tw.1312#e2
-  - tw.1312#e3
-  - tw.1312#e4
+  - tw.1312#e8
   confidence: ai_cross_checked
   source: classification
   stage: downstream
@@ -130,11 +130,11 @@ members:
   stage_role: primary
 - id: tw.1312
   detail: 塑膠銷貨39.56%為最大項；另製造中間原料苯乙烯及基礎原料丙烯。
-  as_of: '2026-10-15'
+  as_of: '2026-10-26'
   evidence:
+  - tw.1312#e1
   - tw.1312#e2
-  - tw.1312#e3
-  - tw.1312#e4
+  - tw.1312#e8
   confidence: ai_cross_checked
   source: classification
   stage: midstream
@@ -142,11 +142,11 @@ members:
   stage_role: also
 - id: tw.1312
   detail: 塑膠銷貨39.56%為最大項；另製造中間原料苯乙烯及基礎原料丙烯。
-  as_of: '2026-10-15'
+  as_of: '2026-10-26'
   evidence:
+  - tw.1312#e1
   - tw.1312#e2
-  - tw.1312#e3
-  - tw.1312#e4
+  - tw.1312#e8
   confidence: ai_cross_checked
   source: classification
   stage: upstream
@@ -182,11 +182,13 @@ members:
   stage_role: also
 - id: tw.1314
   detail: 己內醯胺及附屬產品占46.81%為最大項，與丙烯腈皆為纖維及塑膠中間原料。
-  as_of: '2026-10-15'
+  as_of: '2026-10-26'
   evidence:
-  - tw.1314#e2
-  - tw.1314#e3
-  - tw.1314#e4
+  - tw.1314#e01
+  - tw.1314#e02
+  - tw.1314#e03
+  - tw.1314#e07
+  - tw.1314#e08
   confidence: ai_cross_checked
   source: classification
   stage: midstream
@@ -317,11 +319,11 @@ members:
   stage_role: also
 - id: tw.1409
   detail: 製造事業以塑膠占63%最大，聚酯粒、工程塑膠、纖維及薄膜皆屬下游。
-  as_of: '2026-10-15'
+  as_of: '2026-10-25'
   evidence:
   - tw.1409#e1
   - tw.1409#e2
-  - tw.1409#e4
+  - tw.1409#e5
   confidence: ai_cross_checked
   source: classification
   stage: downstream
@@ -339,11 +341,10 @@ members:
   tier: null
 - id: tw.1709
   detail: 烷化部門占80.88%，供應清潔劑及添加劑中間原料，另製造氫化石油樹脂。
-  as_of: '2026-10-15'
+  as_of: '2026-10-26'
   evidence:
   - tw.1709#e1
-  - tw.1709#e2
-  - tw.1709#e3
+  - tw.1709#e6
   confidence: ai_cross_checked
   source: classification
   stage: midstream
@@ -351,11 +352,10 @@ members:
   stage_role: primary
 - id: tw.1709
   detail: 烷化部門占80.88%，供應清潔劑及添加劑中間原料，另製造氫化石油樹脂。
-  as_of: '2026-10-15'
+  as_of: '2026-10-26'
   evidence:
   - tw.1709#e1
-  - tw.1709#e2
-  - tw.1709#e3
+  - tw.1709#e6
   confidence: ai_cross_checked
   source: classification
   stage: downstream
@@ -504,7 +504,7 @@ members:
   stage_role: primary
 - id: tw.2103
   detail: 合成橡膠占營收98%，供應輪胎及工業製品加工所需的聚合物材料。
-  as_of: '2026-10-15'
+  as_of: '2026-10-26'
   evidence:
   - tw.2103#e1
   - tw.2103#e2
@@ -727,6 +727,17 @@ members:
   stage: downstream
   tier: downstream
   stage_role: also
+- id: tw.4766
+  detail: 接著劑占營收69.62%，另製造塗料及複合材料，屬石化下游加工與應用產品。
+  as_of: '2026-10-25'
+  evidence:
+  - tw.4766#e1
+  - tw.4766#e2
+  confidence: ai_cross_checked
+  source: classification
+  stage: downstream
+  tier: downstream
+  stage_role: primary
 - id: tw.4767
   detail: 主要營收來自熱熔膠接著劑，並生產防水膜等材料配方及加工製品，屬石化下游。
   as_of: '2026-10-24'
@@ -821,10 +832,10 @@ members:
   stage_role: primary
 - id: tw.9939
   detail: 包材占營收67.16%，主要供應PET瓶、瓶胚、塑膠瓶蓋及熱收縮膜等加工品。
-  as_of: '2026-10-15'
+  as_of: '2026-10-25'
   evidence:
-  - tw.9939#e2
-  - tw.9939#e3
+  - tw.9939#e02
+  - tw.9939#e05
   confidence: ai_cross_checked
   source: classification
   stage: downstream
@@ -842,4 +853,4 @@ members:
   stage: downstream
   tier: downstream
   stage_role: primary
-as_of: '2026-10-25'
+as_of: '2026-10-26'

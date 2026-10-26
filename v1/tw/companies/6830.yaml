@@ -26,21 +26,33 @@ chain_stage:
   stage_name: null
   tier: null
 primary_chain_position: upstream
-summary_short: 以半導體材料分析、故障分析及相關檢測驗證服務取得收入。
-summary_long: 汎銓以半導體檢測分析服務為主要收入來源，2025年分析服務收入占營收100%。核心服務包括材料分析與故障分析，分別支援先進製程研發及產品缺陷根因判讀。公司運用FIB提供IC電路修補，也提供ESD靜電放電、晶片壽命與環境應力等可靠度試驗。矽光子業務涵蓋PIC元件光學特性測試、光損斷點定位，應用包含晶圓晶片與CPO封裝，並開發HG量測與失效定位設備。集團營運子公司包括日本MSS JAPAN、美國MSS USA及南京泛銓。
+summary_short: 以半導體材料分析、故障分析及矽光子量測服務取得收入。
+summary_long: 汎銓主要提供半導體材料分析（MA）與故障分析（FA）服務，材料分析支援晶圓代工、設備與材料業者的先進製程研發。2026年第二季材料分析營收占比為85%至90%，故障分析為10%至15%。公司自行開發MSS HG矽光子量測設備，具備光損量測與漏光定位功能，並可涵蓋CPO測試需求；截至2026年10月，設備已進入客戶試用與驗證階段。主要海外營運子公司包括MSS JAPAN、MSS USA及間接持有的南京泛銓。2024年公告由美國子公司購置加州廠房及土地，2025年至2026年亦有母公司出售設備予海外子公司的集團內交易。
 segments:
 - evidence_ids:
-  - e1
-  id: seg.analysis
-  name: 分析服務
-  period: '2025'
-  revenue_share_pct: 100
-main_theme: theme.silicon_photonics
+  - e02
+  - e03
+  id: ma
+  name: 材料分析（MA）；營收占比85%至90%
+  period: 2026-Q2
+  revenue_share_pct: null
+- evidence_ids:
+  - e01
+  - e03
+  id: fa
+  name: 故障分析（FA）；營收占比10%至15%
+  period: 2026-Q2
+  revenue_share_pct: null
+- evidence_ids:
+  - e04
+  - e05
+  - e19
+  id: photonics
+  name: 矽光子量測與分析設備
+  period: null
+  revenue_share_pct: null
+main_theme: theme.cpo
 themes:
-- also: []
-  stage: devices
-  theme: theme.silicon_photonics
-  tier: midstream
 - also: []
   stage: packaging
   theme: theme.cpo
@@ -61,31 +73,46 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: '2021-09-03'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 半導體材料分析市場競爭
+    details:
+    - 半導體材料分析市場競爭
+    edge: e3d58745fc5d7
+    evidence_level: media
+    id: tw.3587
+    name: 閎康
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  customers:
+  - as_of: '2024-10-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 半導體材料分析服務
+    details:
+    - 半導體材料分析服務
+    edge: e455f13581222
+    evidence_level: media
+    id: tw.2330
+    name: 台積電
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 間接持股100%的投資控股子公司
+    detail: 日本電子材料檢測分析子公司
     details:
-    - 間接持股100%的投資控股子公司
-    edge: e6fbcd750960e
-    evidence_level: primary
-    id: org.mss-good-action-international
-    name: GOOD ACTION INT’L CORP.
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
-  - as_of: '2026-03-31'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 持股100%的日本子公司
-    details:
-    - 持股100%的日本子公司
+    - 日本電子材料檢測分析子公司
     edge: e350d567120f0
     evidence_level: primary
     id: org.mss-japan
-    name: MSS JAPAN株式會社
+    name: MSS JAPAN 株式會社
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -93,23 +120,9 @@ relations:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 持股100%的投資控股子公司
+    detail: 美國電子材料檢測分析子公司
     details:
-    - 持股100%的投資控股子公司
-    edge: ec31c7f7f3b61
-    evidence_level: primary
-    id: org.mss-tristate-international
-    name: TRISTATE INTERNATIONAL CO., LTD.
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
-  - as_of: '2026-03-31'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 持股100%的美國子公司
-    details:
-    - 持股100%的美國子公司
+    - 美國電子材料檢測分析子公司
     edge: e792744962ffb
     evidence_level: primary
     id: org.mss-usa
@@ -118,12 +131,12 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2025-12-31'
+  - as_of: '2026-05-06'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 間接持股100%的檢測分析子公司
+    detail: 南京電子材料檢測分析子公司
     details:
-    - 間接持股100%的檢測分析子公司
+    - 南京電子材料檢測分析子公司
     edge: e0a480d86584f
     evidence_level: primary
     id: org.nanjing-mss
@@ -132,95 +145,283 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  transactions:
+  - amount: 新台幣81,998,640元
+    as_of: '2025-03-06'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 出售7套營業用機器設備
+    details:
+    - 出售7套營業用機器設備
+    edge: e710ba0a3e18f
+    event_date: '2025-03-06'
+    events:
+    - amount: 新台幣81,998,640元
+      detail: 出售7套營業用機器設備
+      event_date: '2025-03-06'
+    evidence_level: primary
+    id: org.mss-japan
+    name: MSS JAPAN 株式會社
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 日圓9.5億元
+    as_of: '2025-03-06'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 董事會決議增資日本子公司
+    details:
+    - 董事會決議增資日本子公司
+    edge: eac7676ff29e1
+    event_date: '2025-03-06'
+    events:
+    - amount: 日圓9.5億元
+      detail: 董事會決議增資日本子公司
+      event_date: '2025-03-06'
+    evidence_level: primary
+    id: org.mss-japan
+    name: MSS JAPAN 株式會社
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 美金1000萬元
+    as_of: '2025-03-06'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 董事會決議增資美國子公司
+    details:
+    - 董事會決議增資美國子公司
+    edge: eca3d51d28904
+    event_date: '2025-03-06'
+    events:
+    - amount: 美金1000萬元
+      detail: 董事會決議增資美國子公司
+      event_date: '2025-03-06'
+    evidence_level: primary
+    id: org.mss-usa
+    name: MSS USA CORP.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣332,845,500元
+    as_of: '2026-05-06'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 出售18套營業用機器設備
+    details:
+    - 出售18套營業用機器設備
+    - 出售5台營業用機器設備
+    - 出售3台營業用機器設備
+    edge: e8f0b7d09e313
+    event_date: '2025-03-06'
+    events:
+    - amount: 新台幣114,017,100元
+      detail: 出售3台營業用機器設備
+      event_date: '2026-05-06'
+    - amount: 新台幣115,792,200元
+      detail: 出售5台營業用機器設備
+      event_date: '2025-12-24'
+    - amount: 新台幣332,845,500元
+      detail: 出售18套營業用機器設備
+      event_date: '2025-03-06'
+    evidence_level: primary
+    id: org.nanjing-mss
+    name: 南京泛銓電子科技有限公司
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 美金7,300,000元（共同交易總額）
+    as_of: '2024-08-09'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 美國子公司取得加州廠房及土地
+    details:
+    - 美國子公司取得加州廠房及土地
+    edge: e82aa7c363883
+    event_date: '2024-08-09'
+    events:
+    - amount: 美金7,300,000元（共同交易總額）
+      detail: 美國子公司取得加州廠房及土地
+      event_date: '2024-08-09'
+    evidence_level: primary
+    id: org.tort-investment
+    name: TORT INVESTMENT,LLC
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 美金7,300,000元（共同交易總額）
+    as_of: '2024-08-09'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 美國子公司取得加州廠房及土地
+    details:
+    - 美國子公司取得加州廠房及土地
+    edge: e07312c593db6
+    event_date: '2024-08-09'
+    events:
+    - amount: 美金7,300,000元（共同交易總額）
+      detail: 美國子公司取得加州廠房及土地
+      event_date: '2024-08-09'
+    evidence_level: primary
+    id: org.vector-norcal-ii
+    name: VECTOR NORCAL II,LLC
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 公司法說提及的美國Tier-1 AI客戶，未揭露名稱。
+- 已簽約合作開發的國際級測試量測設備大廠，未揭露名稱。
+- 採個案方式合作的國際級設備大廠，未揭露名稱。
 website: www.msscorps.com
 tax_id: '27853425'
 incorporated: '2005-07-27'
 listed: '2022-08-31'
-as_of: '2026-10-15'
+as_of: '2026-10-26'
 confidence: ai_cross_checked
 has_research: true
 evidence:
-  tw.6830#e1:
-    locator: PDF第55頁，業務內容／營業比重；欄位依序為2024年度、2025年度及2026年第一季
-    published_date: '2026-04-13'
-    publisher: 汎銓科技股份有限公司
-    quote_check: found
-    title: 汎銓科技股份有限公司2025年報
-    url: https://www.msscorps.com/rwd1520/store/F3/%E4%B8%AD%202025_6830_20260611F04_20260706_153545.pdf
-  tw.6830#e10:
-    locator: 第31頁，附註十子公司；投資公司為GOOD ACTION INT’L CORP.
+  tw.6830#e01:
+    locator: 公司名稱及事業內容
     published_date: null
     publisher: 汎銓科技股份有限公司
     quote_check: found
-    title: 2025年度合併財務報告
+    title: 公司簡介
+    url: https://www.msscorps.com/ec99/rwd1520/category.asp?category_id=2
+  tw.6830#e02:
+    locator: 第18頁，核心服務項目
+    published_date: '2026-08-26'
+    publisher: 汎銓科技股份有限公司
+    quote_check: found
+    title: 2026年第三季投資論壇公司簡介
+    url: https://www.msscorps.com/rwd1520/store/F3/683020260820M001.pdf
+  tw.6830#e03:
+    locator: 產品組合段落
+    published_date: '2026-09-03'
+    publisher: 台視財經／MoneyDJ新聞，周佩宇
+    quote_check: found
+    title: 汎銓8月營收續創高；海外占比看走高
+    url: https://www.ttv.com.tw/finance/view/?from=587&i=0920260315475504DDDB83FF4ECBA729E340B7F3FD0B9F6C
+  tw.6830#e04:
+    locator: 第7頁，MSS HG標準功能
+    published_date: '2026-08-26'
+    publisher: 汎銓科技股份有限公司
+    quote_check: found
+    title: 2026年第三季投資論壇公司簡介
+    url: https://www.msscorps.com/rwd1520/store/F3/683020260820M001.pdf
+  tw.6830#e05:
+    locator: 115年度08/26問答摘要，PIC與CPO技術瓶頸
+    published_date: '2026-08-26'
+    publisher: 汎銓科技股份有限公司
+    quote_check: found
+    title: 法說會訊息
+    url: https://www.msscorps.com/ec99/rwd1520/category.asp?category_id=70
+  tw.6830#e06:
+    locator: 第4頁，埃米世代技術
+    published_date: '2026-06-16'
+    publisher: 汎銓科技股份有限公司
+    quote_check: found
+    title: 2026年第二季產業投資論壇公司簡介
+    url: https://www.msscorps.com/rwd1520/store/F3/1150616%E6%B3%95%E8%AA%AA%E6%9C%83%E4%B8%AD%E6%96%87.pdf
+  tw.6830#e07:
+    locator: 汎銓業務與客戶介紹段落
+    published_date: '2024-10-14'
+    publisher: 非凡新聞
+    quote_check: found
+    title: 熱門股／搶攻2奈米、矽光子！汎銓連飆2根漲停創天價 明年EPS上看7～8元
+    url: https://news.ustv.com.tw/newsdetail/20241014A001013?newhot=hot
+  tw.6830#e08:
+    locator: 技術大超前段落
+    published_date: '2021-09-03'
+    publisher: 鏡週刊，王筱君
+    quote_check: found
+    title: 【頭家開講】挺過股東挖牆角 他現是第三代半導體智囊團 汎銓科技董事長柳紀綸專訪
+    url: https://www.mirrormedia.mg/story/20210901bus001
+  tw.6830#e09:
+    locator: 第31頁，附註十子公司
+    published_date: null
+    publisher: 汎銓科技股份有限公司
+    quote_check: found
+    title: 民國114年度合併財務報告暨會計師查核報告
+    url: https://www.msscorps.com/rwd1520/store/F3/INY034A4202504-IFRS%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-S.pdf
+  tw.6830#e10:
+    locator: 第31頁，附註十子公司持股結構表
+    published_date: null
+    publisher: 汎銓科技股份有限公司
+    quote_check: found
+    title: 民國114年度合併財務報告暨會計師查核報告
     url: https://www.msscorps.com/rwd1520/store/F3/INY034A4202504-IFRS%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-S.pdf
   tw.6830#e11:
-    locator: 第31頁，附註十子公司；投資公司為汎銓
-    published_date: null
-    publisher: 汎銓科技股份有限公司
+    locator: 公告標題及第1至3點
+    published_date: '2024-08-09'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ
     quote_check: found
-    title: 2025年度合併財務報告
-    url: https://www.msscorps.com/rwd1520/store/F3/INY034A4202504-IFRS%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-S.pdf
+    title: 汎銓董事會通過美國子公司取得不動產，計730萬美元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=ae9132bc-3548-4e43-b229-5391f5d3d9ea
   tw.6830#e12:
-    locator: 第31頁，附註十子公司；投資公司為TRISTATE INTERNATIONAL CO., LTD.
-    published_date: null
-    publisher: 汎銓科技股份有限公司
+    locator: 第4點，交易相對人
+    published_date: '2024-08-09'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ
     quote_check: found
-    title: 2025年度合併財務報告
-    url: https://www.msscorps.com/rwd1520/store/F3/INY034A4202504-IFRS%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-S.pdf
-  tw.6830#e2:
-    locator: PDF第17頁，核心服務項目
-    published_date: '2026-04-17'
-    publisher: 汎銓科技股份有限公司
+    title: 汎銓董事會通過美國子公司取得不動產，計730萬美元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=ae9132bc-3548-4e43-b229-5391f5d3d9ea
+  tw.6830#e13:
+    locator: 第3至4點，數量、金額及交易相對人
+    published_date: '2025-03-06'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ
     quote_check: found
-    title: 2026年4月17日法人說明會簡報
-    url: https://www.msscorps.com/rwd1520/store/F3/683020260416M001.pdf
-  tw.6830#e3:
-    locator: FIB電路修補
-    published_date: null
-    publisher: 汎銓科技股份有限公司
+    title: 汎銓處分營業用機器設備18套予南京泛銓電子科技，交易總金額約3.33億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=c440c066-e1d1-4c42-b237-a59f3d4d1e43
+  tw.6830#e14:
+    locator: 第3至4點，數量、金額及交易相對人
+    published_date: '2025-03-06'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ
     quote_check: found
-    title: IC Circuit Repair－IC電路修補
-    url: https://www.msscorps.com/ec99/rwd1520/category.asp?category_id=25
-  tw.6830#e4:
-    locator: 可靠度試驗
-    published_date: null
-    publisher: 汎銓科技股份有限公司
+    title: 汎銓處分營業用機器設備7套予MSS JAPAN株式會社，交易總金額約8200萬元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=7c37f2fa-948b-4fcb-a9f5-1fd6b2d93062
+  tw.6830#e15:
+    locator: 第5至6點，交易數量、金額及對象
+    published_date: '2025-12-24'
+    publisher: 公開資訊觀測站重大訊息／鉅亨網
     quote_check: found
-    title: 汎銓科技可靠度試驗介紹
-    url: https://www.msscorps.com/ec99/rwd1520/category.asp?category_id=50
-  tw.6830#e5:
-    locator: 矽光子測試與光損斷點定位分析
-    published_date: null
-    publisher: 汎銓科技股份有限公司
+    title: 汎銓：公告本公司處分營業用機器設備予子公司南京泛銓電子科技有限公司
+    url: https://news.cnyes.com/news/id/6287837
+  tw.6830#e16:
+    locator: 第5至6點，南京子公司取得設備
+    published_date: '2026-05-06'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ
     quote_check: found
-    title: 光損量測／定位－矽光子
-    url: https://www.msscorps.com/ec99/rwd1520/category.asp?category_id=100
-  tw.6830#e6:
-    locator: 矽光子測試與光損斷點定位分析／應用範圍
-    published_date: null
-    publisher: 汎銓科技股份有限公司
+    title: 汎銓：南京泛銓電子科技取得營業用機器設備3台，計約1.14億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=df9af810-dca0-499b-95e5-93792c4ac22f
+  tw.6830#e17:
+    locator: 公告主旨及第3、9點
+    published_date: '2025-03-06'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ
     quote_check: found
-    title: 光損量測／定位－矽光子
-    url: https://www.msscorps.com/ec99/rwd1520/category.asp?category_id=100
-  tw.6830#e7:
-    locator: PDF第20頁，矽光子檢測、分析與銷售
-    published_date: '2026-04-17'
-    publisher: 汎銓科技股份有限公司
+    title: 汎銓董事會決議增資MSS USA，預計投資1000萬美元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=e59809e3-36b5-40b5-bde7-473815879005
+  tw.6830#e18:
+    locator: 公告主旨及第3、9點
+    published_date: '2025-03-06'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ
     quote_check: found
-    title: 2026年4月17日法人說明會簡報
-    url: https://www.msscorps.com/rwd1520/store/F3/683020260416M001.pdf
-  tw.6830#e8:
-    locator: PDF第48頁，2026年3月31日轉投資事業持股表
-    published_date: '2026-04-13'
-    publisher: 汎銓科技股份有限公司
+    title: 汎銓董事會決議增資MSS JAPAN株式會社，計9.5億日圓
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=26cc7b71-7b40-4043-8ad4-51bc87fa4178
+  tw.6830#e19:
+    locator: 矽光子自主設備進度段落
+    published_date: '2026-10-02'
+    publisher: MoneyDJ新聞
     quote_check: found
-    title: 汎銓科技股份有限公司2025年報
-    url: https://www.msscorps.com/rwd1520/store/F3/%E4%B8%AD%202025_6830_20260611F04_20260706_153545.pdf
-  tw.6830#e9:
-    locator: PDF第48頁，2026年3月31日轉投資事業持股表
-    published_date: '2026-04-13'
-    publisher: 汎銓科技股份有限公司
-    quote_check: found
-    title: 汎銓科技股份有限公司2025年報
-    url: https://www.msscorps.com/rwd1520/store/F3/%E4%B8%AD%202025_6830_20260611F04_20260706_153545.pdf
+    title: 半導體／AI相關需求熱絡，汎銓9月營收續創新高
+    url: https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=f71f0ab2-6d61-4328-a012-ad9888e6eed7

@@ -25,27 +25,27 @@ chain_stage:
   stage: osat
   stage_name: 封裝測試
   tier: downstream
-primary_chain_position: downstream
-summary_short: 集團以功率半導體封裝測試為主要營收，另經營光通訊產品及矽光子模組。
-summary_long: 聯鈞光電集團從事光資訊與光通訊產品、功率半導體封裝測試及高速傳輸光模組業務。2025年合併營收中，功率封測占62%，高速光模組（含矽光子）占21%，光資訊及光通訊產品占17%。已開發產品包括新高速增益型EML元件、400G／800G有源光纜傳感器及矽光子高速光模組，光模組用途涵蓋資料中心與5G通訊。主要直接子公司為GEM Services, Inc.及源傑科技，2025年底持股分別為51%與54.23%。
+primary_chain_position: midstream
+summary_short: 以功率半導體封裝測試、雷射元件封測及高速光模組取得營收。
+summary_long: 聯鈞集團的主要業務為功率半導體封裝測試、光資訊及光通訊產品，以及高速傳輸光模組。2025年三項業務占合併營收比重依序為62%、17%及21%，高速光模組項目包含矽光子產品。旗下主要子公司包括捷敏與源傑，源傑產品涵蓋AOC及光收發模組。聯鈞與Coherent共同設計及開發COSA相關產品，涵蓋EML與不同功率的CW雷射。外部雷射光源模組ELSFP可支援CPO及NPO架構，2026年8月已進入試產階段。公司亦公告向Soliware及Four Technos累計採購生產設備。
 segments:
 - evidence_ids:
   - e1
   id: seg_power
   name: 功率半導體封裝及測試
-  period: 2025年度（合併，含各子公司）
+  period: '2025'
   revenue_share_pct: 62
 - evidence_ids:
-  - e2
-  id: seg_optical
+  - e1
+  id: seg_optics
   name: 光資訊及光通訊產品
-  period: 2025年度（合併，含各子公司）
+  period: '2025'
   revenue_share_pct: 17
 - evidence_ids:
-  - e3
-  id: seg_modules
+  - e1
+  id: seg_module
   name: 高速傳輸光模組（含矽光子產品）
-  period: 2025年度（合併，含各子公司）
+  period: '2025'
   revenue_share_pct: 21
 main_theme: theme.5g
 themes:
@@ -61,41 +61,33 @@ themes:
   stage: modules
   theme: theme.silicon_photonics
   tier: downstream
+- also: []
+  stage: components
+  theme: theme.cpo
+  tier: upstream
 relations:
+  partners:
+  - as_of: '2026-08-18'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 共同設計及開發COSA相關雷射產品
+    details:
+    - 共同設計及開發COSA相關雷射產品
+    edge: e2806a77f3646
+    evidence_level: media
+    id: us.COHR
+    name: Coherent
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
-  - as_of: '2025-12-31'
+  - as_of: '2026-08-18'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接子公司，持股51%
+    detail: 捷敏-KY子公司
     details:
-    - 直接子公司，持股51%
-    edge: eb67d077cd4aa
-    evidence_level: primary
-    id: org.gem-services-inc
-    name: GEM Services, Inc.
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
-  - as_of: '2025-12-31'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 直接子公司，持股54.23%
-    details:
-    - 直接子公司，持股54.23%
-    edge: e75eb821a9df2
-    evidence_level: primary
-    id: org.源傑科技股份有限公司
-    name: 源傑科技股份有限公司
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
-  - as_of: '2026-03-28'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 持有捷敏51%股權的母公司
-    details:
+    - 捷敏-KY子公司
     - 持有捷敏51%股權的母公司
     edge: e7aa356614ee6
     evidence_level: primary
@@ -104,75 +96,181 @@ relations:
     ranking_basis: unranked
     share_basis: null
     share_pct: null
+    weight: 2
+  - as_of: '2026-08-18'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: CENTERA子公司；AOC與光收發模組
+    details:
+    - CENTERA子公司；AOC與光收發模組
+    edge: eb48df8be1bb2
+    evidence_level: primary
+    id: tw.7917
+    name: 源傑科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
     weight: 1
+  suppliers:
+  - as_of: 2025-06
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: AOC無源內連光器件
+    details:
+    - AOC無源內連光器件
+    edge: e1aa8d3cc3cac
+    evidence_level: primary
+    id: org.蘅東光通訊技術-深圳-股份有限公司
+    name: 蘅東光通訊技術（深圳）股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 日幣2,638,246,640元（約新台幣540,049,087元）
+    as_of: '2026-03-10'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 累計取得生產用機器設備；更正公告
+    details:
+    - 累計取得生產用機器設備；更正公告
+    edge: e629426b53c24
+    event_date: '2026-03-10'
+    events:
+    - amount: 日幣2,638,246,640元（約新台幣540,049,087元）
+      detail: 累計取得生產用機器設備；更正公告
+      event_date: '2026-03-10'
+    evidence_level: primary
+    id: org.four-technos-co-ltd
+    name: Four Technos Co.,Ltd.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 美金22,402,160元（約新台幣702,204,152元）
+    as_of: '2026-07-16'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 累計取得生產用機器設備
+    details:
+    - 累計取得生產用機器設備
+    edge: ed9c570fc9afb
+    event_date: '2026-07-16'
+    events:
+    - amount: 美金22,402,160元（約新台幣702,204,152元）
+      detail: 累計取得生產用機器設備
+      event_date: '2026-07-16'
+    evidence_level: primary
+    id: org.soliware-storage-technology-co-ltd
+    name: Soliware Storage Technology Co., Ltd
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 年報以AAAA公司、AAO公司代碼揭露的客戶。
+- 年報以T、S、H、G、P、N等代碼揭露的封裝材料供應商。
+- 年報以A、B、C公司代碼揭露的雷射晶粒、DSP與PIC供應商。
+- 由客戶提供光資訊及光通訊產品晶粒的客供料關係，未揭露客戶實名。
+- 法說所稱既有美國光模組客戶及新增日本客戶，未逐一具名。
 website: http://www.elaser.com.tw
 tax_id: '12624467'
 incorporated: '2000-09-27'
 listed: '2006-04-12'
-as_of: '2026-10-14'
+as_of: '2026-10-25'
 confidence: ai_cross_checked
 has_research: true
 evidence:
   tw.3450#e1:
-    locator: 第54頁，營業比重（含各子公司）
+    locator: 印刷頁54，業務範圍／營業比重（含各子公司）
     published_date: '2026-05-06'
     publisher: 聯鈞光電股份有限公司
     quote_check: found
-    title: 聯鈞光電股份有限公司一一四年度年報
+    title: 聯鈞光電股份有限公司2025年報
     url: https://cdn.financialreports.eu/financialreports/media/filings/52329/2026/RNS/52329_rns_2026-06-17_60ebf4f5-b693-4638-b531-40e2ce1d4c5c.pdf
   tw.3450#e10:
-    locator: 第56頁，產業上、中、下游之關聯性
-    published_date: '2026-05-06'
+    locator: 轉載重大訊息第6項，交易相對人
+    published_date: '2026-07-16'
+    publisher: 台視財經／MoneyDJ
+    quote_check: found
+    title: 聯鈞114/7/17~115/7/16取得機器設備，計約7億元
+    url: https://www.ttv.com.tw/finance/view/default.asp?from=588&i=072026161825856CDF707A3C4C2D9302FF349E9D0ECCE015
+  tw.3450#e11:
+    locator: 轉載重大訊息第5項，累計交易金額
+    published_date: '2026-03-10'
+    publisher: MoneyDJ理財網
+    quote_check: found
+    title: 聯鈞（更正115/2/5公告）本公司向非關係人取得機器設備
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=7244a9f8-7edc-4347-ae47-5fe42c3f2857
+  tw.3450#e12:
+    locator: 轉載重大訊息第6項，交易相對人
+    published_date: '2026-03-10'
+    publisher: MoneyDJ理財網
+    quote_check: found
+    title: 聯鈞（更正115/2/5公告）本公司向非關係人取得機器設備
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=7244a9f8-7edc-4347-ae47-5fe42c3f2857
+  tw.3450#e13:
+    locator: 印刷頁27，附註七、應收票據
+    published_date: null
     publisher: 聯鈞光電股份有限公司
     quote_check: found
-    title: 聯鈞光電股份有限公司一一四年度年報
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52329/2026/RNS/52329_rns_2026-06-17_60ebf4f5-b693-4638-b531-40e2ce1d4c5c.pdf
+    title: 聯鈞光電股份有限公司民國114及113年度個體財務報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52329/2026/RNS/52329_rns_2026-04-10_13346d5d-571f-4e78-8651-8937baecdf9e.pdf
   tw.3450#e2:
-    locator: 第54頁，營業比重（含各子公司）
+    locator: 印刷頁61，主要產品之重要用途／高速傳輸光模組
     published_date: '2026-05-06'
     publisher: 聯鈞光電股份有限公司
     quote_check: found
-    title: 聯鈞光電股份有限公司一一四年度年報
+    title: 聯鈞光電股份有限公司2025年報
     url: https://cdn.financialreports.eu/financialreports/media/filings/52329/2026/RNS/52329_rns_2026-06-17_60ebf4f5-b693-4638-b531-40e2ce1d4c5c.pdf
   tw.3450#e3:
-    locator: 第54頁，營業比重（含各子公司）
-    published_date: '2026-05-06'
+    locator: 第14頁，ELSFP Platform
+    published_date: '2026-08-18'
     publisher: 聯鈞光電股份有限公司
     quote_check: found
-    title: 聯鈞光電股份有限公司一一四年度年報
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52329/2026/RNS/52329_rns_2026-06-17_60ebf4f5-b693-4638-b531-40e2ce1d4c5c.pdf
+    title: 聯鈞2026年第一次法人說明會簡報
+    url: https://doc.twse.com.tw/nas/STR/345020260818M001.pdf
   tw.3450#e4:
-    locator: 第57頁，開發成功之技術或產品
-    published_date: '2026-05-06'
+    locator: 第5頁，公司概況／GEM
+    published_date: '2026-08-18'
     publisher: 聯鈞光電股份有限公司
     quote_check: found
-    title: 聯鈞光電股份有限公司一一四年度年報
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52329/2026/RNS/52329_rns_2026-06-17_60ebf4f5-b693-4638-b531-40e2ce1d4c5c.pdf
+    title: 聯鈞2026年第一次法人說明會簡報
+    url: https://doc.twse.com.tw/nas/STR/345020260818M001.pdf
   tw.3450#e5:
-    locator: 第57頁，開發成功之技術或產品
-    published_date: '2026-05-06'
+    locator: 第5頁，CENTERA公司概況與產品；第14頁，源傑產品路線圖
+    published_date: '2026-08-18'
     publisher: 聯鈞光電股份有限公司
     quote_check: found
-    title: 聯鈞光電股份有限公司一一四年度年報
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52329/2026/RNS/52329_rns_2026-06-17_60ebf4f5-b693-4638-b531-40e2ce1d4c5c.pdf
+    title: 聯鈞2026年第一次法人說明會簡報
+    url: https://doc.twse.com.tw/nas/STR/345020260818M001.pdf
   tw.3450#e6:
-    locator: 第61頁，主要產品之重要用途，高速傳輸光模組列
-    published_date: '2026-05-06'
-    publisher: 聯鈞光電股份有限公司
+    locator: 宋天增說明第三平台ELSFP段落
+    published_date: '2026-08-18'
+    publisher: 中央通訊社
     quote_check: found
-    title: 聯鈞光電股份有限公司一一四年度年報
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52329/2026/RNS/52329_rns_2026-06-17_60ebf4f5-b693-4638-b531-40e2ce1d4c5c.pdf
+    title: 聯鈞：COSA產能逐年幾乎翻倍　ELSFP進入試產
+    url: https://www.cna.com.tw/news/afe/202608180277.aspx
   tw.3450#e7:
-    locator: 第35頁，附註十一，列入合併財務報告之子公司
-    published_date: '2026-03-13'
-    publisher: 聯鈞光電股份有限公司
+    locator: Coherent合作及COSA產品段落
+    published_date: '2026-08-18'
+    publisher: MoneyDJ理財網
     quote_check: found
-    title: 聯鈞光電股份有限公司及子公司民國114及113年度合併財務報告
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52329/2026/RNS/52329_rns_2026-04-10_ae3f7e2c-88c1-407e-a8e2-a683382a8e12.pdf
+    title: 聯鈞：AI光通訊「缺」成常態，COSA產能再翻倍
+    url: https://m.moneydj.com/f1a.aspx?a=a240da25-a656-4742-b09f-4260643d9c18&c=MB00
   tw.3450#e8:
-    locator: 第35頁，附註十一，列入合併財務報告之子公司
-    published_date: '2026-03-13'
-    publisher: 聯鈞光電股份有限公司
+    locator: 印刷頁54，三、（二）聯鈞光電
+    published_date: null
+    publisher: 容誠會計師事務所／蘅東光上市申報文件
     quote_check: found
-    title: 聯鈞光電股份有限公司及子公司民國114及113年度合併財務報告
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52329/2026/RNS/52329_rns_2026-04-10_ae3f7e2c-88c1-407e-a8e2-a683382a8e12.pdf
+    title: 蘅東光公開發行股票並在北交所上市申請文件第三輪審核問詢函回覆
+    url: https://pdf.dfcfw.com/pdf/H2_AN202509181746089166_1.pdf?1758218383000.pdf=
+  tw.3450#e9:
+    locator: 轉載重大訊息第5項，交易總金額
+    published_date: '2026-07-16'
+    publisher: 台視財經／MoneyDJ
+    quote_check: found
+    title: 聯鈞114/7/17~115/7/16取得機器設備，計約7億元
+    url: https://www.ttv.com.tw/finance/view/default.asp?from=588&i=072026161825856CDF707A3C4C2D9302FF349E9D0ECCE015

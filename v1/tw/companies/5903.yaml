@@ -18,34 +18,50 @@ industry:
   l3_name: 量販與便利商店
   l3_name_en: Hypermarkets & Convenience Stores
 primary_chain_position: downstream
-summary_short: 以便利商店販售食品、飲料與日用品，並提供生活服務。
-summary_long: 全家以連鎖便利商店零售為主，2025年合併營收中，零售業務占93.7%、物流業務占3.0%、其他占3.3%。主要商品包括金飯糰、uno pasta義大利麵、Let’s Café咖啡與Fami!ce霜淇淋。全家APP提供支付、累點、寄取件與隨買服務。子公司晉欣食品與福比從事食品製造，全台物流從事物流業，全盈支付金融科技從事電子支付業；四家公司均列入合併財務報告。
+summary_short: 以便利商店銷售食品、飲料與日用品，並提供數位購物及生活服務。
+summary_long: 全家以便利商店販售食品、飲料與日用品為主，2025年零售業務占合併營收93.7%，物流占3.0%。截至2026年6月底，門市達4,504家。商品涵蓋金飯糰、uno pasta義大利麵、minimore甜點及Let’s Café、Let’s Tea飲品，並經營全家行動購、隨買跨店取等數位渠道。集團以晉欣食品、福比及全台物流支援鮮食、烘焙、採購與配送，另有電子支付子公司全盈支付及餐飲子公司全家國際餐飲。日本全家提供商標與便利商店經營技術授權；2025年新增投資全寵家科技。
 segments:
 - evidence_ids:
-  - e1
-  id: seg_retail
+  - e02
+  id: retail
   name: 零售業務
   period: '2025'
   revenue_share_pct: 93.7
 - evidence_ids:
-  - e1
-  id: seg_logistics
+  - e02
+  id: logistics
   name: 物流業務
   period: '2025'
   revenue_share_pct: 3
 - evidence_ids:
-  - e1
-  id: seg_other
+  - e02
+  id: other
   name: 其他
   period: '2025'
   revenue_share_pct: 3.3
 relations:
+  partners:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: FamilyMart商標及便利商店經營技術授權
+    details:
+    - FamilyMart商標及便利商店經營技術授權
+    edge: e8eeb60fbe69a
+    evidence_level: primary
+    id: org.familymart-japan
+    name: 日商全家便利商店股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 母公司
+    detail: 餐飲子公司
     details:
+    - 餐飲子公司
     - 母公司
     edge: ee092bcc4d74a
     evidence_level: primary
@@ -54,54 +70,374 @@ relations:
     ranking_basis: unranked
     share_basis: null
     share_pct: null
+    weight: 2
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 寵物用品相關子公司
+    details:
+    - 寵物用品相關子公司
+    edge: eb8f7404b7edd
+    evidence_level: primary
+    id: org.familypet
+    name: 全寵家科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
     weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 烘焙製造子公司
+    details:
+    - 烘焙製造子公司
+    edge: e2862f846fe2d
+    evidence_level: primary
+    id: org.fubi
+    name: 福比股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 鮮食製造子公司
+    details:
+    - 鮮食製造子公司
+    edge: ec019a77c97d4
+    evidence_level: primary
+    id: org.jin-hsin-foods
+    name: 晉欣食品股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 電子支付子公司
+    details:
+    - 電子支付子公司
+    edge: e29f0b3114052
+    evidence_level: primary
+    id: org.plus-pay
+    name: 全盈支付金融科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 採購與物流子公司
+    details:
+    - 採購與物流子公司
+    edge: e30ba2d8b6884
+    evidence_level: primary
+    id: org.taiwan-distribution-center
+    name: 全台物流股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 商品採購供應及物流配送
+    details:
+    - 商品採購供應及物流配送
+    edge: e8480fb5418cd
+    evidence_level: primary
+    id: org.taiwan-distribution-center
+    name: 全台物流股份有限公司
+    ranking_basis: disclosed
+    share_basis: purchases
+    share_pct: 66.45
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 鮮食商品供應
+    details:
+    - 鮮食商品供應
+    edge: edfe88558ecdc
+    evidence_level: primary
+    id: org.jin-hsin-foods
+    name: 晉欣食品股份有限公司
+    ranking_basis: disclosed
+    share_basis: purchases
+    share_pct: 3.31
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 烘焙商品供應
+    details:
+    - 烘焙商品供應
+    edge: eaffc29ef3a7c
+    evidence_level: primary
+    id: org.fubi
+    name: 福比股份有限公司
+    ranking_basis: disclosed
+    share_basis: purchases
+    share_pct: 1.96
+    weight: 1
+  transactions:
+  - amount: 新台幣2,869,856仟元
+    as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 中國投資架構重整及原投資視同出售
+    details:
+    - 中國投資架構重整及原投資視同出售
+    edge: e06fac4cb4c49
+    event_date: '2024-08-21'
+    events:
+    - amount: 新台幣2,869,856仟元
+      detail: 中國投資架構重整及原投資視同出售
+      event_date: '2024-08-21'
+    evidence_level: primary
+    id: org.china-cvs-cayman
+    name: CHINA CVS (CAYMAN ISLANDS) HOLDING CORP.
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣36,000仟元
+    as_of: 2025-05
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 新投資成立全寵家科技
+    details:
+    - 新投資成立全寵家科技
+    edge: e459be2359046
+    event_date: null
+    events:
+    - amount: 新台幣36,000仟元
+      detail: 新投資成立全寵家科技
+      event_date: null
+    evidence_level: primary
+    id: org.familypet
+    name: 全寵家科技股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 使用權資產總金額151,314,533元
+    as_of: '2025-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 出租新竹新豐不動產予福比並調整租金
+    details:
+    - 出租新竹新豐不動產予福比並調整租金
+    edge: e92b80b0701d3
+    event_date: '2025-06-30'
+    events:
+    - amount: 使用權資產總金額151,314,533元
+      detail: 出租新竹新豐不動產予福比並調整租金
+      event_date: '2025-06-30'
+    evidence_level: primary
+    id: org.fubi
+    name: 福比股份有限公司
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 使用權資產總金額12,195,947元（未稅）
+    as_of: '2026-08-03'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 處分台中西屯不動產使用權資產
+    details:
+    - 處分台中西屯不動產使用權資產
+    edge: e543e8bbd5073
+    event_date: '2026-08-03'
+    events:
+    - amount: 使用權資產總金額12,195,947元（未稅）
+      detail: 處分台中西屯不動產使用權資產
+      event_date: '2026-08-03'
+    evidence_level: primary
+    id: tw.7708
+    name: 全家餐飲
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 2025年年報以「A供應商」列示的未具名供應商，未推定其公司身分。
+- 商品主要銷售對象為不特定消費大眾，未推定具名企業客戶。
 website: www.family.com.tw
 tax_id: '23060248'
 incorporated: '1988-08-18'
 listed: '2002-02-25'
-as_of: '2026-10-15'
+as_of: '2026-10-25'
 confidence: ai_cross_checked
 has_research: true
 evidence:
-  tw.5903#e1:
-    locator: 第63頁，2025年主要部門別營收與佔比
+  tw.5903#e02:
+    locator: 印刷第63頁，2025年主要部門別營收與佔比
     published_date: '2026-03-04'
     publisher: 全家便利商店股份有限公司
     quote_check: not_found
     title: 全家便利商店股份有限公司2025年年報
     url: https://www.family.com.tw/web_enterprise/PDFWebShow.ashx?ID=202643&Lagu=0
-  tw.5903#e2:
-    locator: 第63頁，主要營業項目；第64頁，產業概況
+  tw.5903#e03:
+    locator: 印刷第75頁，財務績效及檢討分析
     published_date: '2026-03-04'
     publisher: 全家便利商店股份有限公司
     quote_check: not_found
     title: 全家便利商店股份有限公司2025年年報
     url: https://www.family.com.tw/web_enterprise/PDFWebShow.ashx?ID=202643&Lagu=0
-  tw.5903#e3:
-    locator: 產品差異化及明星品類段落
-    published_date: null
+  tw.5903#e04:
+    locator: 產品差異化與明星品類段落
+    published_date: '2026-03-04'
     publisher: 全家便利商店股份有限公司
     quote_check: found
     title: 2025年全家便利商店股份有限公司年度財報
-    url: https://www.family.com.tw/web_enterprise/page/NewsContent.aspx?ID=2960
-  tw.5903#e4:
-    locator: 產品差異化及明星品類段落
-    published_date: null
+    url: https://www.family.com.tw/ESG/NewsShow?NSNO=202603040000145
+  tw.5903#e05:
+    locator: 小家戶消費與虛實渠道段落
+    published_date: '2026-03-04'
     publisher: 全家便利商店股份有限公司
     quote_check: found
     title: 2025年全家便利商店股份有限公司年度財報
-    url: https://www.family.com.tw/web_enterprise/page/NewsContent.aspx?ID=2960
-  tw.5903#e5:
-    locator: Fami!ce商品介紹
+    url: https://www.family.com.tw/ESG/NewsShow?NSNO=202603040000145
+  tw.5903#e06:
+    locator: 上半年績效與店數段落
     published_date: null
     publisher: 全家便利商店股份有限公司
     quote_check: found
-    title: 關於FamilyMart－業務及商品介紹
-    url: https://www.family.com.tw/web_enterprise/page/introduction.aspx
-  tw.5903#e6:
-    locator: APP服務介紹
+    title: 115年全家便利商店股份有限公司上半年財報新聞稿
+    url: https://www.family.com.tw/ESG/NewsShow?NSNO=202608120000184
+  tw.5903#e07:
+    locator: 附表三第1頁，2025年度關係人進銷貨；沿用首列進貨欄
+    published_date: null
+    publisher: 全家便利商店股份有限公司
+    quote_check: not_found
+    title: 全家便利商店民國114年度及113年度個體財務報告
+    url: https://www.family.com.tw/WEB_ENTERPRISE/PDFWebShow.ashx?ID=202551&Lagu=0
+  tw.5903#e08:
+    locator: 附表三第1頁，2025年度關係人進銷貨；沿用首列進貨欄
+    published_date: null
+    publisher: 全家便利商店股份有限公司
+    quote_check: not_found
+    title: 全家便利商店民國114年度及113年度個體財務報告
+    url: https://www.family.com.tw/WEB_ENTERPRISE/PDFWebShow.ashx?ID=202551&Lagu=0
+  tw.5903#e09:
+    locator: 附表三第1頁，2025年度關係人進銷貨
+    published_date: null
+    publisher: 全家便利商店股份有限公司
+    quote_check: not_found
+    title: 全家便利商店民國114年度及113年度個體財務報告
+    url: https://www.family.com.tw/WEB_ENTERPRISE/PDFWebShow.ashx?ID=202551&Lagu=0
+  tw.5903#e10:
+    locator: 關係企業／晉欣食品
     published_date: null
     publisher: 全家便利商店股份有限公司
     quote_check: found
-    title: 關於FamilyMart－業務及商品介紹
-    url: https://www.family.com.tw/web_enterprise/page/introduction.aspx
+    title: 關於FamilyMart－公司資訊
+    url: https://www.family.com.tw/Web_Enterprise/page/Information.aspx
+  tw.5903#e11:
+    locator: 關係企業／福比
+    published_date: null
+    publisher: 全家便利商店股份有限公司
+    quote_check: found
+    title: 關於FamilyMart－公司資訊
+    url: https://www.family.com.tw/Web_Enterprise/page/Information.aspx
+  tw.5903#e12:
+    locator: 關係企業／全台物流
+    published_date: null
+    publisher: 全家便利商店股份有限公司
+    quote_check: found
+    title: 關於FamilyMart－公司資訊
+    url: https://www.family.com.tw/Web_Enterprise/page/Information.aspx
+  tw.5903#e13:
+    locator: 附註七（一），關係人名稱及關係
+    published_date: null
+    publisher: 全家便利商店股份有限公司
+    quote_check: not_found
+    title: 全家便利商店民國114年度及113年度個體財務報告
+    url: https://www.family.com.tw/WEB_ENTERPRISE/PDFWebShow.ashx?ID=202551&Lagu=0
+  tw.5903#e14:
+    locator: 關係企業／全盈支付
+    published_date: null
+    publisher: 全家便利商店股份有限公司
+    quote_check: found
+    title: 關於FamilyMart－公司資訊
+    url: https://www.family.com.tw/Web_Enterprise/page/Information.aspx
+  tw.5903#e15:
+    locator: 印刷第74頁，重要契約／日商全家技術合作契約
+    published_date: '2026-03-04'
+    publisher: 全家便利商店股份有限公司
+    quote_check: not_found
+    title: 全家便利商店股份有限公司2025年年報
+    url: https://www.family.com.tw/web_enterprise/PDFWebShow.ashx?ID=202643&Lagu=0
+  tw.5903#e16:
+    locator: 營收與轉投資事業段落
+    published_date: '2026-03-04'
+    publisher: 全家便利商店股份有限公司
+    quote_check: found
+    title: 2025年全家便利商店股份有限公司年度財報
+    url: https://www.family.com.tw/ESG/NewsShow?NSNO=202603040000145
+  tw.5903#e17:
+    locator: 附註七（一），關係人名稱及關係
+    published_date: null
+    publisher: 全家便利商店股份有限公司
+    quote_check: not_found
+    title: 全家便利商店民國114年度及113年度個體財務報告
+    url: https://www.family.com.tw/WEB_ENTERPRISE/PDFWebShow.ashx?ID=202551&Lagu=0
+  tw.5903#e18:
+    locator: 附註六（七），採用權益法之投資註2
+    published_date: null
+    publisher: 全家便利商店股份有限公司
+    quote_check: not_found
+    title: 全家便利商店民國114年度及113年度個體財務報告
+    url: https://www.family.com.tw/WEB_ENTERPRISE/PDFWebShow.ashx?ID=202551&Lagu=0
+  tw.5903#e19:
+    locator: 明細表二，採權益法之長期股權投資；金額單位為新台幣仟元
+    published_date: null
+    publisher: 全家便利商店股份有限公司
+    quote_check: not_found
+    title: 全家便利商店民國114年度及113年度個體財務報告
+    url: https://www.family.com.tw/WEB_ENTERPRISE/PDFWebShow.ashx?ID=202551&Lagu=0
+  tw.5903#e21:
+    locator: 附註六（七），中國投資架構調整
+    published_date: null
+    publisher: 全家便利商店股份有限公司
+    quote_check: not_found
+    title: 全家便利商店民國114年度及113年度個體財務報告
+    url: https://www.family.com.tw/WEB_ENTERPRISE/PDFWebShow.ashx?ID=202551&Lagu=0
+  tw.5903#e22:
+    locator: 附註六（七），2024年重整交易對價；金額單位為新台幣仟元
+    published_date: null
+    publisher: 全家便利商店股份有限公司
+    quote_check: not_found
+    title: 全家便利商店民國114年度及113年度個體財務報告
+    url: https://www.family.com.tw/WEB_ENTERPRISE/PDFWebShow.ashx?ID=202551&Lagu=0
+  tw.5903#e23:
+    locator: 附註六（七），華東合資公司9%持股之會計判斷
+    published_date: null
+    publisher: 全家便利商店股份有限公司
+    quote_check: not_found
+    title: 全家便利商店民國114年度及113年度個體財務報告
+    url: https://www.family.com.tw/WEB_ENTERPRISE/PDFWebShow.ashx?ID=202551&Lagu=0
+  tw.5903#e24:
+    locator: 公告第2至3項
+    published_date: '2025-06-30'
+    publisher: 公開資訊觀測站／MoneyDJ轉載
+    quote_check: found
+    title: 全家代子公司福比公告取得不動產使用權資產（更新交易金額）
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=058d4400-1f5a-4a4f-9850-6729628a8aff
+  tw.5903#e25:
+    locator: 公告第5至6項
+    published_date: '2026-08-03'
+    publisher: 公開資訊觀測站／MoneyDJ轉載
+    quote_check: found
+    title: 全家本公司處分不動產使用權資產
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=e6e60e7e-7f6e-4bef-9e5c-cc6a4add5215

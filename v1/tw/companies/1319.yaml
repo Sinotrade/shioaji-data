@@ -26,35 +26,171 @@ chain_stage:
   stage_name: 汽車零組件與模組
   tier: midstream
 primary_chain_position: midstream
-summary_short: 製造汽車塑膠、鈑金及冷卻零組件，營收以售後維修市場為主。
-summary_long: 東陽的汽車零組件產品包括塑膠保險桿、前欄、儀表板，以及鈑金引擎蓋、葉子板，另生產風扇與主動式進氣柵欄。營運分為售後維修（AM）與原廠組車（OEM）兩類，2026年前八月自結合併營收占比分別為76.27%與23.73%，以AM為主要來源。2024年度年報亦揭露電動車用立體光影光學前欄研發，支持電動車零組件題材歸屬。主要合併子公司包括製造OEM儀表板的如陽，以及製造OEM塑件的福州東陽、重慶大江東陽，持股分別為58.95%、100%與55%。
+summary_short: 以汽車售後碰撞維修塑膠件、鈑金件為主，兼營原廠零組件與模具。
+summary_long: 東陽主要經營汽車售後維修市場（AM）碰撞零件及原廠委託製造（OEM）業務，2025年兩者約占合併營收75%與25%。產品涵蓋保險桿、水箱護罩、葉子板、引擎蓋、儀表板及模具。AM具名供應關係包括向LKQ供應葉子板；OEM客戶包括台灣裕隆，以及由中國子公司供應的奇瑞汽車、長安福特、廣汽豐田與一汽大眾。Tesla供貨則涉及持股49%、未納入合併報表的長春富維東陽上海分廠。近年交易包括2024年購入七股土地、承租新市土地，以及子公司出售大協西川東陽45%股權。上述供貨關係均依實際營運公司區分。
 segments:
 - evidence_ids:
-  - e1
-  id: seg_am
-  name: 售後維修零件（AM）
-  period: 2026年1月至8月（自結合併數）
-  revenue_share_pct: 76.27
+  - e2
+  id: am
+  name: 售後維修市場零件（AM）
+  period: '2025'
+  revenue_share_pct: 75
 - evidence_ids:
-  - e1
-  id: seg_oem
-  name: 原廠組車零件（OEM）
-  period: 2026年1月至8月（自結合併數）
-  revenue_share_pct: 23.73
-main_theme: theme.ev
-themes:
-- also: []
-  stage: parts
-  theme: theme.ev
-  tier: midstream
+  - e2
+  id: oem
+  name: 原廠委託製造零組件與模具（OEM）
+  period: '2025'
+  revenue_share_pct: 25
 relations:
+  customers:
+  - as_of: '2026-10-10'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 重慶大江東陽供應OEM塑膠件
+    details:
+    - 重慶大江東陽供應OEM塑膠件
+    edge: e61ca0df575e9
+    evidence_level: primary
+    id: org.changan-ford
+    name: 長安福特
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-10'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 佛山東陽供應OEM塑膠件
+    details:
+    - 佛山東陽供應OEM塑膠件
+    edge: e68618af101d3
+    evidence_level: primary
+    id: org.dongfeng-nissan
+    name: 東風日產
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-10'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 佛山東陽供應OEM塑膠件
+    details:
+    - 佛山東陽供應OEM塑膠件
+    edge: e44243fbfd84e
+    evidence_level: primary
+    id: org.faw-volkswagen
+    name: 一汽大眾
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-10'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 佛山東陽供應OEM塑膠件
+    details:
+    - 佛山東陽供應OEM塑膠件
+    edge: ec506a92b743b
+    evidence_level: primary
+    id: org.gac-toyota
+    name: 廣汽豐田
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-09-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: LKQ集團AM葉子板採購體系
+    details:
+    - LKQ集團AM葉子板採購體系
+    edge: edb79ebf6df98
+    evidence_level: other
+    id: org.keystone-automotive-industries
+    name: Keystone Automotive Industries, Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-10'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 福州東陽供應OEM塑膠件
+    details:
+    - 福州東陽供應OEM塑膠件
+    edge: e28bc50035c44
+    evidence_level: primary
+    id: org.奇瑞汽車
+    name: 奇瑞汽車
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 台灣OEM汽車零組件
+    details:
+    - 台灣OEM汽車零組件
+    edge: ed53ba724d196
+    evidence_level: primary
+    id: tw.2201
+    name: 裕隆
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-09-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: AM葉子板
+    details:
+    - AM葉子板
+    edge: e475e1e12300e
+    evidence_level: other
+    id: us.LKQ
+    name: LKQ Corporation
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-10'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 非合併轉投資長春富維東陽上海分廠之OEM客戶
+    details:
+    - 非合併轉投資長春富維東陽上海分廠之OEM客戶
+    edge: eea46850598bc
+    evidence_level: primary
+    id: us.TSLA
+    name: Tesla
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  partners:
+  - as_of: '2026-10-10'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 合資經營長春富維東陽OEM塑膠件事業
+    details:
+    - 合資經營長春富維東陽OEM塑膠件事業
+    edge: e8116ba9de1d8
+    evidence_level: primary
+    id: cn.600742
+    name: 一汽富維
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
   - as_of: '2026-10-10'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 中國OEM塑件製造子公司
+    detail: 中國OEM塑膠件子公司
     details:
-    - 中國OEM塑件製造子公司
+    - 中國OEM塑膠件子公司
     edge: eb4e9e1a692a0
     evidence_level: primary
     id: org.chongqing-dajiang-tong-yang
@@ -66,9 +202,23 @@ relations:
   - as_of: '2026-10-10'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 中國OEM塑件製造子公司
+    detail: 中國OEM塑膠件子公司
     details:
-    - 中國OEM塑件製造子公司
+    - 中國OEM塑膠件子公司
+    edge: e4ae513f6abf1
+    evidence_level: primary
+    id: org.foshan-tong-yang
+    name: 佛山東陽汽車零部件有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-10'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 中國OEM塑膠件子公司
+    details:
+    - 中國OEM塑膠件子公司
     edge: ed6dea17361f3
     evidence_level: primary
     id: org.fuzhou-tong-yang
@@ -80,9 +230,9 @@ relations:
   - as_of: '2026-10-10'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: OEM儀表板製造子公司
+    detail: OEM儀表板子公司
     details:
-    - OEM儀表板製造子公司
+    - OEM儀表板子公司
     edge: ee833a35898c9
     evidence_level: primary
     id: org.ru-yang
@@ -91,74 +241,326 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 開曼群島投資控股子公司
+    details:
+    - 開曼群島投資控股子公司
+    edge: e1fffc24562c9
+    evidence_level: primary
+    id: org.tong-yang-holding-corporation
+    name: TONG YANG HOLDING CORPORATION
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: '2026-05-08'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 聚丙烯（PP）原料
+    details:
+    - 聚丙烯（PP）原料
+    edge: ef0360ef98401
+    evidence_level: primary
+    id: org.sumitomo-corporation-asia-oceania
+    name: Sumitomo Corporation Asia & Oceania Pte. Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-05-08'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: ABS塑膠原料
+    details:
+    - ABS塑膠原料
+    edge: e716d159acae8
+    evidence_level: primary
+    id: tw.1309
+    name: 台達化
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-05-08'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: PP與ABS塑膠原料
+    details:
+    - PP與ABS塑膠原料
+    edge: eb483d21b6f43
+    evidence_level: primary
+    id: tw.1326
+    name: 台化
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-05-09'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 汽車零件用金屬原料
+    details:
+    - 汽車零件用金屬原料
+    edge: e064f22eeb472
+    evidence_level: primary
+    id: tw.2002
+    name: 中鋼
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 人民幣114,500,000元
+    as_of: 2026-01
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司出售大協西川東陽45%股權
+    details:
+    - 子公司出售大協西川東陽45%股權
+    edge: eeecbc84b2748
+    event_date: '2025-12-18'
+    events:
+    - amount: 人民幣114,500,000元
+      detail: 子公司出售大協西川東陽45%股權
+      event_date: '2025-12-18'
+    evidence_level: primary
+    id: jp.4246
+    name: 大協西川株式會社
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 使用權資產金額約新台幣12.35億元
+    as_of: '2024-08-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 取得新市產業園區土地使用權
+    details:
+    - 取得新市產業園區土地使用權
+    edge: e8ea6a1363cbc
+    event_date: '2024-08-23'
+    events:
+    - amount: 使用權資產金額約新台幣12.35億元
+      detail: 取得新市產業園區土地使用權
+      event_date: '2024-08-23'
+    evidence_level: primary
+    id: org.moea-taiwan
+    name: 經濟部
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣997,068,905元
+    as_of: '2024-05-07'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 購入七股科技工業區產業用地
+    details:
+    - 購入七股科技工業區產業用地
+    edge: e527fb939eaa6
+    event_date: '2024-05-07'
+    events:
+    - amount: 新台幣997,068,905元
+      detail: 購入七股科技工業區產業用地
+      event_date: '2024-05-07'
+    evidence_level: primary
+    id: org.tainan-city-government
+    name: 台南市政府
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 年報以代號A揭露的主要銷貨客戶，未具名。
+- 武漢翔星投資處分案的買方，所讀文件未具名。
+- 吳氏塑膠製品投資處分案的買方，所讀文件未具名。
+- 官網泛稱的全球AM經銷商與海外車廠，未逐一具名。
 website: WWW.TYG.COM.TW
 tax_id: '68326665'
 incorporated: '1967-10-30'
 listed: '1994-12-12'
-as_of: '2026-10-15'
+as_of: '2026-10-25'
 confidence: ai_cross_checked
 has_research: true
 evidence:
-  tw.1319#e1:
-    locator: PDF第16頁，財務－毛利率；AM、OEM欄，2026年1至8月自結合併數
-    published_date: '2026-10-10'
+  tw.1319#e10:
+    locator: 第10頁／台灣OEM客戶別分析FY2025
+    published_date: '2026-02-20'
     publisher: 東陽實業廠股份有限公司
+    quote_check: not_found
+    title: 投資人關係簡報
+    url: https://mopsov.twse.com.tw/nas/STR/131920260304M001.pdf
+  tw.1319#e11:
+    locator: 第11頁／OEM塑件製造廠，主要客戶欄
+    published_date: '2026-10-10'
+    publisher: 東陽實業廠股份有限公司（FinancialFilings原始PDF鏡像）
     quote_check: found
-    title: 東陽實業廠投資人關係簡報
-    url: https://mopsov.twse.com.tw/nas/STR/131920261007M001.pdf
+    title: 投資人關係簡報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51775/2026/RNS/51775_rns_2026-10-13_02a89876-75ab-4891-9062-951ad5222f94.pdf
+  tw.1319#e12:
+    locator: 第11頁／OEM塑件製造廠，主要客戶欄
+    published_date: '2026-10-10'
+    publisher: 東陽實業廠股份有限公司（FinancialFilings原始PDF鏡像）
+    quote_check: found
+    title: 投資人關係簡報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51775/2026/RNS/51775_rns_2026-10-13_02a89876-75ab-4891-9062-951ad5222f94.pdf
+  tw.1319#e13:
+    locator: 第12頁／佛山東陽列，主要客戶欄
+    published_date: '2026-10-10'
+    publisher: 東陽實業廠股份有限公司（FinancialFilings原始PDF鏡像）
+    quote_check: found
+    title: 投資人關係簡報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51775/2026/RNS/51775_rns_2026-10-13_02a89876-75ab-4891-9062-951ad5222f94.pdf
+  tw.1319#e14:
+    locator: 第11頁／長春富維東陽及其上海分廠，合資夥伴與主要客戶欄
+    published_date: '2026-10-10'
+    publisher: 東陽實業廠股份有限公司（FinancialFilings原始PDF鏡像）
+    quote_check: found
+    title: 投資人關係簡報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51775/2026/RNS/51775_rns_2026-10-13_02a89876-75ab-4891-9062-951ad5222f94.pdf
+  tw.1319#e15:
+    locator: 第3頁／持股比率及註解
+    published_date: '2026-10-10'
+    publisher: 東陽實業廠股份有限公司（FinancialFilings原始PDF鏡像）
+    quote_check: found
+    title: 投資人關係簡報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51775/2026/RNS/51775_rns_2026-10-13_02a89876-75ab-4891-9062-951ad5222f94.pdf
+  tw.1319#e16:
+    locator: 轉投資事業相關資訊／TONG YANG HOLDING CORPORATION列，持有比率100.00%
+    published_date: '2026-03-12'
+    publisher: 東陽實業廠股份有限公司（申報文件鏡像）
+    quote_check: found
+    title: 2025年度財務報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51775/2026/RNS/51775_rns_2026-03-12_bde691b1-8a93-435a-b205-2f9480f5f36a.html
+  tw.1319#e17:
+    locator: 第2頁全名；第3頁產品、持股及合併欄
+    published_date: '2026-10-10'
+    publisher: 東陽實業廠股份有限公司（FinancialFilings原始PDF鏡像）
+    quote_check: found
+    title: 投資人關係簡報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51775/2026/RNS/51775_rns_2026-10-13_02a89876-75ab-4891-9062-951ad5222f94.pdf
+  tw.1319#e18:
+    locator: 第2至3頁／集團架構、持股及合併欄
+    published_date: '2026-10-10'
+    publisher: 東陽實業廠股份有限公司（FinancialFilings原始PDF鏡像）
+    quote_check: found
+    title: 投資人關係簡報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51775/2026/RNS/51775_rns_2026-10-13_02a89876-75ab-4891-9062-951ad5222f94.pdf
+  tw.1319#e19:
+    locator: 公告第1至4項
+    published_date: '2024-05-07'
+    publisher: 公開資訊觀測站（MoneyDJ轉載）
+    quote_check: found
+    title: 東陽申購七股科技工業區產業用地(一)土地經核准，計約9.97億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=dfe0615b-af30-4cea-823a-ff74cfa9fb87
   tw.1319#e2:
-    locator: 年報第90頁，主要產品之重要用途及產製過程
-    published_date: '2025-05-09'
-    publisher: 東陽實業廠股份有限公司（FinancialFilings存檔）
-    quote_check: unreachable
-    title: 東陽實業廠股份有限公司2024年度年報
-    url: https://financialfilings.com/filings/tyg-1319/annual-report/2025/33223515/
-  tw.1319#e3:
-    locator: 年報第90頁，自製汽車零組件－鐵件
-    published_date: '2025-05-09'
-    publisher: 東陽實業廠股份有限公司（FinancialFilings存檔）
-    quote_check: unreachable
-    title: 東陽實業廠股份有限公司2024年度年報
-    url: https://financialfilings.com/filings/tyg-1319/annual-report/2025/33223515/
-  tw.1319#e4:
-    locator: 年報第90頁，自製汽車零組件－其他
-    published_date: '2025-05-09'
-    publisher: 東陽實業廠股份有限公司（FinancialFilings存檔）
-    quote_check: unreachable
-    title: 東陽實業廠股份有限公司2024年度年報
-    url: https://financialfilings.com/filings/tyg-1319/annual-report/2025/33223515/
-  tw.1319#e5:
-    locator: 年報第87頁，技術及研發概況－前端發光大型飾板研發
-    published_date: '2025-05-09'
-    publisher: 東陽實業廠股份有限公司（FinancialFilings存檔）
-    quote_check: unreachable
-    title: 東陽實業廠股份有限公司2024年度年報
-    url: https://financialfilings.com/filings/tyg-1319/annual-report/2025/33223515/
-  tw.1319#e6:
-    locator: PDF第3至4頁；如陽完整名稱、持股及合併Y欄
-    published_date: '2026-10-10'
-    publisher: 東陽實業廠股份有限公司
-    quote_check: found
-    title: 東陽實業廠投資人關係簡報
-    url: https://mopsov.twse.com.tw/nas/STR/131920261007M001.pdf
-  tw.1319#e7:
-    locator: PDF第3至4頁；福州東陽完整名稱、持股及合併Y欄
-    published_date: '2026-10-10'
-    publisher: 東陽實業廠股份有限公司
-    quote_check: found
-    title: 東陽實業廠投資人關係簡報
-    url: https://mopsov.twse.com.tw/nas/STR/131920261007M001.pdf
-  tw.1319#e8:
-    locator: PDF第3至4頁；重慶大江東陽完整名稱、持股及合併Y欄
-    published_date: '2026-10-10'
-    publisher: 東陽實業廠股份有限公司
-    quote_check: found
-    title: 東陽實業廠投資人關係簡報
-    url: https://mopsov.twse.com.tw/nas/STR/131920261007M001.pdf
-  tw.1319#e9:
-    locator: PDF第4頁，中國轉投資持股架構註解
+    locator: 第5頁／FY2025合併營收
     published_date: '2026-02-20'
     publisher: 東陽實業廠股份有限公司
     quote_check: found
-    title: 東陽實業廠投資人關係簡報
+    title: 投資人關係簡報
     url: https://mopsov.twse.com.tw/nas/STR/131920260304M001.pdf
+  tw.1319#e20:
+    locator: 公告第1至4項
+    published_date: '2024-08-23'
+    publisher: 公開資訊觀測站（MoneyDJ轉載）
+    quote_check: found
+    title: 東陽承租臺南新市產業園區第二區產業用地(一)案獲准，使用權資產金額約12.35億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f05b3254-b158-45fe-bca0-6a85ab9f9dcb
+  tw.1319#e21:
+    locator: 公告第4、8項／交易對象與租期
+    published_date: '2024-08-23'
+    publisher: 公開資訊觀測站（MoneyDJ轉載）
+    quote_check: not_found
+    title: 東陽承租臺南新市產業園區第二區產業用地(一)案獲准，使用權資產金額約12.35億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f05b3254-b158-45fe-bca0-6a85ab9f9dcb
+  tw.1319#e22:
+    locator: 公告第2、5項
+    published_date: '2025-12-18'
+    publisher: 公開資訊觀測站（MoneyDJ轉載）
+    quote_check: found
+    title: 東陽代子公司公告出售大協西川東陽汽車部件(南京)有限公司股權
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=5ec0b0dd-7dda-444e-81b8-8afbf2aa8e7d
+  tw.1319#e23:
+    locator: 公告第5、14項／交易金額與相對人
+    published_date: '2025-12-18'
+    publisher: 公開資訊觀測站（MoneyDJ轉載）
+    quote_check: found
+    title: 東陽代子公司公告出售大協西川東陽汽車部件(南京)有限公司股權
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=5ec0b0dd-7dda-444e-81b8-8afbf2aa8e7d
+  tw.1319#e24:
+    locator: 轉投資事業相關資訊／註十一
+    published_date: '2026-03-12'
+    publisher: 東陽實業廠股份有限公司（申報文件鏡像）
+    quote_check: found
+    title: 2025年度財務報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51775/2026/RNS/51775_rns_2026-03-12_bde691b1-8a93-435a-b205-2f9480f5f36a.html
+  tw.1319#e25:
+    locator: 轉投資事業相關資訊／武漢翔星列及註十
+    published_date: '2026-03-12'
+    publisher: 東陽實業廠股份有限公司（申報文件鏡像）
+    quote_check: found
+    title: 2025年度財務報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51775/2026/RNS/51775_rns_2026-03-12_bde691b1-8a93-435a-b205-2f9480f5f36a.html
+  tw.1319#e26:
+    locator: 轉投資事業相關資訊／註九
+    published_date: '2026-03-12'
+    publisher: 東陽實業廠股份有限公司（申報文件鏡像）
+    quote_check: found
+    title: 2025年度財務報告
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51775/2026/RNS/51775_rns_2026-03-12_bde691b1-8a93-435a-b205-2f9480f5f36a.html
+  tw.1319#e3:
+    locator: 第7頁／AM產品組合分析FY2025
+    published_date: '2026-02-20'
+    publisher: 東陽實業廠股份有限公司
+    quote_check: not_found
+    title: 投資人關係簡報
+    url: https://mopsov.twse.com.tw/nas/STR/131920260304M001.pdf
+  tw.1319#e4:
+    locator: 第9頁／OEM產品組合分析FY2025
+    published_date: '2026-02-20'
+    publisher: 東陽實業廠股份有限公司
+    quote_check: not_found
+    title: 投資人關係簡報
+    url: https://mopsov.twse.com.tw/nas/STR/131920260304M001.pdf
+  tw.1319#e5:
+    locator: 第139頁／Supply of Key Materials
+    published_date: '2026-05-08'
+    publisher: 東陽實業廠股份有限公司
+    quote_check: found
+    title: 2025 Annual Report
+    url: https://www.tyg.com.tw/?download_id=3637&sdm_process_download=1
+  tw.1319#e6:
+    locator: 第139頁／Supply of Key Materials，ABS供應商句
+    published_date: '2026-05-08'
+    publisher: 東陽實業廠股份有限公司
+    quote_check: found
+    title: 2025 Annual Report
+    url: https://www.tyg.com.tw/?download_id=3637&sdm_process_download=1
+  tw.1319#e7:
+    locator: 第95頁／主要原料之供應狀況
+    published_date: '2025-05-09'
+    publisher: 東陽實業廠股份有限公司（FinancialFilings年報全文鏡像）
+    quote_check: unreachable
+    title: 113年度年報
+    url: https://financialfilings.com/filings/tyg-1319/annual-report/2025/33223515/
+  tw.1319#e8:
+    locator: 第16至17頁／Motion to Strike Opinions of LKQ’s Damages Expert
+    published_date: '2026-09-28'
+    publisher: 美國伊利諾州北區聯邦地方法院（Justia鏡像）
+    quote_check: unreachable
+    title: LKQ Corporation et al v. General Motors Company et al, Document 478
+    url: https://law.justia.com/cases/federal/district-courts/illinois/ilndce/1:2021cv05854/408545/478/
+  tw.1319#e9:
+    locator: 第1頁／當事人與LKQ合稱定義
+    published_date: '2026-09-28'
+    publisher: 美國伊利諾州北區聯邦地方法院（Justia鏡像）
+    quote_check: unreachable
+    title: LKQ Corporation et al v. General Motors Company et al, Document 478
+    url: https://law.justia.com/cases/federal/district-courts/illinois/ilndce/1:2021cv05854/408545/478/

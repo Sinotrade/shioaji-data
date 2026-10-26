@@ -112,6 +112,15 @@ members:
   evidence:
   - tw.2345#e24
   confidence: ai_cross_checked
+- id: tw.2352
+  stage: system
+  tier: downstream
+  detail: 集團液冷機櫃整合
+  as_of: '2026-10-20'
+  evidence:
+  - tw.2352#e22
+  - tw.2352#e23
+  confidence: ai_cross_checked
 - id: tw.2354
   stage: modules
   tier: midstream
@@ -182,26 +191,28 @@ members:
 - id: tw.2421
   stage: parts
   tier: upstream
-  detail: 液冷板、泵浦及流路零件
-  as_of: 2025-12
+  detail: 液冷水冷板
+  as_of: '2026-10-25'
   evidence:
-  - tw.2421#e4
+  - tw.2421#e03
   confidence: ai_cross_checked
 - id: tw.2421
   stage: modules
   tier: midstream
   detail: CDU冷卻液分配裝置
-  as_of: '2026-10-14'
+  as_of: '2026-10-19'
   evidence:
-  - tw.2421#e5
+  - tw.2421#e05
+  - tw.2421#e18
+  - tw.2421#e19
   confidence: ai_cross_checked
 - id: tw.2428
   stage: parts
   tier: upstream
-  detail: 資料中心液冷系統溫度與壓力感測元件
-  as_of: 2026-10
+  detail: 液冷系統壓力與溫度感測器
+  as_of: '2026-10-26'
   evidence:
-  - tw.2428#e7
+  - tw.2428#e08
   confidence: ai_cross_checked
 - id: tw.2438
   stage: system
@@ -232,10 +243,11 @@ members:
 - id: tw.2486
   stage: parts
   tier: upstream
-  detail: Cold plate冷板
-  as_of: 2026-10
+  detail: 晶片液冷與微流道冷板
+  as_of: '2026-09-03'
   evidence:
-  - tw.2486#e11
+  - tw.2486#e08
+  - tw.2486#e09
   confidence: ai_cross_checked
 - id: tw.3013
   stage: system
@@ -273,10 +285,10 @@ members:
 - id: tw.3019
   stage: parts
   tier: upstream
-  detail: 液冷水冷板關鍵金屬元件
+  detail: 水冷板關鍵金屬元件開發
   as_of: '2026-05-27'
   evidence:
-  - tw.3019#e8
+  - tw.3019#e15
   confidence: ai_cross_checked
 - id: tw.3032
   stage: system
@@ -374,10 +386,11 @@ members:
 - id: tw.3376
   stage: parts
   tier: upstream
-  detail: 分歧管與快拆接頭零組件
-  as_of: '2026-10-15'
+  detail: 水冷接頭及分歧管
+  as_of: '2026-10-25'
   evidence:
-  - tw.3376#e6
+  - tw.3376#e11
+  - tw.3376#e12
   confidence: ai_cross_checked
 - id: tw.3388
   stage: system
@@ -412,15 +425,6 @@ members:
   as_of: '2025-09-30'
   evidence:
   - tw.3512#e5
-  confidence: ai_cross_checked
-- id: tw.3515
-  stage: system
-  tier: downstream
-  detail: 永擎機櫃液冷整合
-  as_of: '2026-06-01'
-  evidence:
-  - tw.3515#e5
-  - tw.3515#e10
   confidence: ai_cross_checked
 - id: tw.3518
   stage: parts
@@ -489,6 +493,14 @@ members:
   evidence:
   - tw.3691#e10
   - tw.3691#e11
+  confidence: ai_cross_checked
+- id: tw.3693
+  stage: system
+  tier: downstream
+  detail: 伺服器液冷整合
+  as_of: '2026-10-26'
+  evidence:
+  - tw.3693#e10
   confidence: ai_cross_checked
 - id: tw.3706
   stage: system
@@ -584,10 +596,10 @@ members:
 - id: tw.4967
   stage: modules
   tier: midstream
-  detail: T-FORCE LIQUID II SSD水冷散熱方案
-  as_of: 2026-06
+  detail: CPU一體式水冷散熱模組
+  as_of: '2024-05-23'
   evidence:
-  - tw.4967#e7
+  - tw.4967#e04
   confidence: ai_cross_checked
 - id: tw.5452
   stage: parts
@@ -643,10 +655,10 @@ members:
 - id: tw.6197
   stage: parts
   tier: upstream
-  detail: 液冷快接連接器
-  as_of: '2026-10-15'
+  detail: 液冷快接頭
+  as_of: '2026-10-25'
   evidence:
-  - tw.6197#e13
+  - tw.6197#e7
   confidence: ai_cross_checked
 - id: tw.6199
   stage: parts
@@ -718,10 +730,10 @@ members:
 - id: tw.6561
   stage: system
   tier: downstream
-  detail: AI資料中心水冷機櫃支援
-  as_of: '2026-10-15'
+  detail: AI水冷資料中心整合服務
+  as_of: '2026-10-26'
   evidence:
-  - tw.6561#e11
+  - tw.6561#e9
   confidence: ai_cross_checked
 - id: tw.6668
   stage: parts
@@ -769,18 +781,19 @@ members:
 - id: tw.6831
   stage: parts
   tier: upstream
-  detail: 液冷水冷板
-  as_of: '2026-10-15'
+  detail: 水冷板
+  as_of: '2025-08-20'
   evidence:
-  - tw.6831#e4
+  - tw.6831#e12
   confidence: ai_cross_checked
 - id: tw.6831
   stage: modules
   tier: midstream
-  detail: 浸沒式冷卻設備
-  as_of: 2025-10
+  detail: CDU及浸沒式冷卻模組
+  as_of: '2025-08-20'
   evidence:
-  - tw.6831#e5
+  - tw.6831#e10
+  - tw.6831#e11
   confidence: ai_cross_checked
 - id: tw.6843
   stage: parts
@@ -924,4 +937,4 @@ members:
   evidence:
   - tw.910861#e7
   confidence: ai_cross_checked
-as_of: '2026-10-25'
+as_of: '2026-10-26'

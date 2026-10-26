@@ -26,29 +26,29 @@ chain_stage:
   stage_name: 雲端與資料中心
   tier: downstream
 primary_chain_position: downstream
-summary_short: 以IDC機房、數據網路及雲端應用服務為主要營收來源。
-summary_long: 是方提供IDC機房、數據網路、雲端應用及語音通信服務。2025年營收組成依序為45.04%、37.29%、16.43%及1.24%，以IDC機房服務占比最高。公司營運聯雲AI智能資料中心，提供機房託管、電力及網路連結，並提供支援高電力水冷機櫃的AI機房方案。數據網路業務涵蓋企業私有網路及網際網路連接；雲端服務包括彈性租用運算資源的IaaS，以及整合多雲私網連線的CCX。中華電信為其最終母公司。
+summary_short: 以IDC機房代管、數據網路與雲端應用服務取得營收。
+summary_long: 是方以電信中立資料中心、數據網路及雲端應用服務為主要業務。2025年IDC機房服務占營收45.04%，數據網路占37.29%，雲端應用占16.43%，語音通信占1.24%。IDC提供主機代管，數據網路包含MPLS-VPN；CCX提供連接國際公有雲的私網服務。聯雲LY2支援高用電機櫃與水冷機房。中華電信為最終母公司，亦為具名客戶與供應商。2026年與Google Cloud合作提供多元跨國海纜服務。
 segments:
 - evidence_ids:
-  - e2
+  - e1
   id: seg_idc
   name: IDC機房服務
   period: '2025'
   revenue_share_pct: 45.04
 - evidence_ids:
-  - e3
+  - e2
   id: seg_network
   name: 數據網路服務
   period: '2025'
   revenue_share_pct: 37.29
 - evidence_ids:
-  - e4
+  - e3
   id: seg_cloud
   name: 雲端應用服務
   period: '2025'
   revenue_share_pct: 16.43
 - evidence_ids:
-  - e5
+  - e4
   id: seg_voice
   name: 語音通信服務
   period: '2025'
@@ -64,8 +64,79 @@ themes:
   theme: theme.liquid_cooling
   tier: downstream
 relations:
+  customers:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 電信與資訊服務銷售
+    details:
+    - 電信與資訊服務銷售
+    edge: e7bbfd92ce350
+    evidence_level: primary
+    id: tw.2412
+    name: 中華電
+    ranking_basis: disclosed
+    share_basis: revenue
+    share_pct: 6.08
+    weight: 1
+  - as_of: '2025-11-06'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 法說會列示之雲端業者客戶
+    details:
+    - 法說會列示之雲端業者客戶
+    edge: e1f0f742fe51e
+    evidence_level: primary
+    id: org.amazon-web-services
+    name: Amazon Web Services
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-11-06'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 法說會列示之IDC與網路生態系客戶
+    details:
+    - 法說會列示之IDC與網路生態系客戶
+    edge: ec0403c1ff799
+    evidence_level: primary
+    id: org.google
+    name: 谷歌（Google）
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-11-06'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 國內電信業者客戶
+    details:
+    - 國內電信業者客戶
+    edge: e83f7f188ed4c
+    evidence_level: primary
+    id: tw.3045
+    name: 台灣大
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-11-06'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 法說會列示之IDC與網路生態系客戶
+    details:
+    - 法說會列示之IDC與網路生態系客戶
+    edge: e28f5aeb946ba
+    evidence_level: primary
+    id: us.META
+    name: Meta
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   parents:
-  - as_of: '2026-05-26'
+  - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
     detail: 集團上市櫃子公司
@@ -80,41 +151,70 @@ relations:
     share_basis: null
     share_pct: null
     weight: 2
-  subsidiaries:
-  - as_of: '2025-09-30'
+  partners:
+  - as_of: '2026-10-26'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 全資子公司；電信及網路服務
+    detail: AWS Direct Connect私有連線合作
     details:
-    - 全資子公司；電信及網路服務
-    edge: ee7e8e8995c29
+    - AWS Direct Connect私有連線合作
+    edge: eca8ceaed3781
     evidence_level: primary
-    id: org.chief-international-corp
+    id: org.amazon-web-services
+    name: Amazon Web Services
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: CSI跨站互連與多元跨國海纜服務
+    details:
+    - CSI跨站互連與多元跨國海纜服務
+    edge: ec63f37cabe37
+    evidence_level: primary
+    id: org.google
+    name: 谷歌（Google）
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股100%的電信及網路服務子公司
+    details:
+    - 持股100%的電信及網路服務子公司
+    edge: e675f7a359323
+    evidence_level: primary
+    id: org.chief-international
     name: Chief International Corp.
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2025-09-30'
+  - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 全資子公司；電信及網路服務
+    detail: 持股100%的電信及網路服務子公司
     details:
-    - 全資子公司；電信及網路服務
-    edge: ef1fd15d42af5
+    - 持股100%的電信及網路服務子公司
+    edge: eecfd164e84d4
     evidence_level: primary
-    id: org.navigator-telecom-tw
+    id: org.leading-telecom
     name: 領航電信股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2025-09-30'
+  - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 持股49%並具控制力之子公司
+    detail: 持股49%且納入合併的子公司
     details:
-    - 持股49%並具控制力之子公司
+    - 持股49%且納入合併的子公司
     edge: e7762aa274166
     evidence_level: primary
     id: org.shanghai-shitai-network-technology
@@ -123,116 +223,263 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  suppliers:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 電信服務相關進貨
+    details:
+    - 電信服務相關進貨
+    edge: ee3f622d63204
+    evidence_level: primary
+    id: tw.2412
+    name: 中華電
+    ranking_basis: disclosed
+    share_basis: purchases
+    share_pct: 27.36
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 以融資租賃方式供應機房水冷設施
+    details:
+    - 以融資租賃方式供應機房水冷設施
+    edge: e45651626be49
+    evidence_level: primary
+    id: tw.2438
+    name: 翔耀
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 每年新台幣27,343仟元（固定租賃給付）
+    as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 承租翔耀機房水冷設施的融資租賃
+    details:
+    - 承租翔耀機房水冷設施的融資租賃
+    edge: e0bb77807cc8f
+    event_date: null
+    events:
+    - amount: 每年新台幣27,343仟元（固定租賃給付）
+      detail: 承租翔耀機房水冷設施的融資租賃
+      event_date: null
+    evidence_level: primary
+    id: tw.2438
+    name: 翔耀
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣1,334,546,000元（翔耀公告之使用權資產價值）
+    as_of: '2025-08-29'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 出租機房使用權的歷史契約，後已中止
+    details:
+    - 出租機房使用權的歷史契約，後已中止
+    edge: e54302cdd3316
+    event_date: '2025-03-14'
+    events:
+    - amount: 新台幣1,334,546,000元（翔耀公告之使用權資產價值）
+      detail: 出租機房使用權的歷史契約，後已中止
+      event_date: '2025-03-14'
+    evidence_level: primary
+    id: tw.2438
+    name: 翔耀
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 伺服器及硬碟設備供應商：年報說明採購類別，未具名。
+- 雲端服務供應商、CSP：屬客群泛稱，未將其另建為公司實體。
+- AI：技術與應用類別，不是可辨識的供應商名稱。
+- 虎尾AI資料中心之工程承包商及設備得標廠商：所讀資料未提供足以建立具名交易關係…
 website: www.chief.com.tw
 tax_id: '86000036'
 incorporated: '1991-01-19'
 listed: '2018-06-05'
-as_of: '2026-10-15'
+as_of: '2026-10-26'
 confidence: ai_cross_checked
 has_research: true
 evidence:
+  tw.6561#e1:
+    locator: 印刷第91頁，主要產品之營業比重，IDC機房服務列；右側為114年度
+    published_date: null
+    publisher: 是方電訊股份有限公司
+    quote_check: found
+    title: 是方電訊2025年報
+    url: https://cn.chief.com.tw/wp-content/uploads/2026/05/是方電訊年報中文.pdf
   tw.6561#e10:
-    locator: 第91頁，公司目前之商品（服務）項目，語音通信服務列
-    published_date: null
+    locator: 第6頁，連結＋客戶類型圖；圖內標示Inside是方IDC
+    published_date: '2025-11-06'
     publisher: 是方電訊股份有限公司
     quote_check: found
-    title: 是方電訊114年度年報
-    url: https://cn.chief.com.tw/wp-content/uploads/2026/05/是方電訊年報中文.pdf
+    title: 是方電訊經營介紹
+    url: https://www.chief.com.tw/wp-content/uploads/2025/11/法說會20251028V4.pdf
   tw.6561#e11:
-    locator: 是方AI基礎設施拎包入住服務方案
-    published_date: '2025-06-09'
+    locator: 第6頁，連結＋客戶類型圖，國內電信業者
+    published_date: '2025-11-06'
     publisher: 是方電訊股份有限公司
     quote_check: found
-    title: AI機房解決方案升級：全台首推水冷架構，拎包進駐快速啟動
-    url: https://www.chief.com.tw/idc/aidatacenter/
+    title: 是方電訊經營介紹
+    url: https://www.chief.com.tw/wp-content/uploads/2025/11/法說會20251028V4.pdf
   tw.6561#e12:
-    locator: 第10頁，公司沿革
-    published_date: '2025-10-28'
+    locator: 印刷第102頁，進貨占進貨總額百分之十以上者，114年度欄
+    published_date: null
     publisher: 是方電訊股份有限公司
     quote_check: found
-    title: 是方電訊114年第三季合併財務報告
-    url: https://www.chief.com.tw/wp-content/uploads/2025/10/是方114Q3電子書.pdf
+    title: 是方電訊2025年報
+    url: https://cn.chief.com.tw/wp-content/uploads/2026/05/是方電訊年報中文.pdf
   tw.6561#e13:
-    locator: 第13頁，列入合併財務報告之子公司
-    published_date: '2025-10-28'
+    locator: 印刷第102頁，主要銷貨客戶表，114年度欄
+    published_date: null
     publisher: 是方電訊股份有限公司
     quote_check: found
-    title: 是方電訊114年第三季合併財務報告
-    url: https://www.chief.com.tw/wp-content/uploads/2025/10/是方114Q3電子書.pdf
+    title: 是方電訊2025年報
+    url: https://cn.chief.com.tw/wp-content/uploads/2026/05/是方電訊年報中文.pdf
   tw.6561#e14:
-    locator: 第13頁，列入合併財務報告之子公司
-    published_date: '2025-10-28'
+    locator: 第10頁，一、公司沿革
+    published_date: '2026-07-29'
     publisher: 是方電訊股份有限公司
     quote_check: found
-    title: 是方電訊114年第三季合併財務報告
-    url: https://www.chief.com.tw/wp-content/uploads/2025/10/是方114Q3電子書.pdf
+    title: 是方電訊民國115年及114年第二季合併財務報告
+    url: https://cn.chief.com.tw/wp-content/uploads/2026/07/是方電訊2026合併第二季.pdf
   tw.6561#e15:
-    locator: 第13頁，列入合併財務報告之子公司
-    published_date: '2025-10-28'
+    locator: 第12頁，四（三）2，列入合併財務報告之子公司表；115年6月30日持股欄
+    published_date: '2026-07-29'
     publisher: 是方電訊股份有限公司
     quote_check: found
-    title: 是方電訊114年第三季合併財務報告
-    url: https://www.chief.com.tw/wp-content/uploads/2025/10/是方114Q3電子書.pdf
+    title: 是方電訊民國115年及114年第二季合併財務報告
+    url: https://cn.chief.com.tw/wp-content/uploads/2026/07/是方電訊2026合併第二季.pdf
   tw.6561#e16:
-    locator: 附錄A第17頁，合併子公司表註1
-    published_date: null
+    locator: 第12頁，四（三）2，列入合併財務報告之子公司表；115年6月30日持股欄
+    published_date: '2026-07-29'
     publisher: 是方電訊股份有限公司
     quote_check: found
-    title: 是方電訊114年度年報
-    url: https://cn.chief.com.tw/wp-content/uploads/2026/05/是方電訊年報中文.pdf
+    title: 是方電訊民國115年及114年第二季合併財務報告
+    url: https://cn.chief.com.tw/wp-content/uploads/2026/07/是方電訊2026合併第二季.pdf
+  tw.6561#e17:
+    locator: 第12頁，四（三）2，列入合併財務報告之子公司表；115年6月30日持股欄
+    published_date: '2026-07-29'
+    publisher: 是方電訊股份有限公司
+    quote_check: found
+    title: 是方電訊民國115年及114年第二季合併財務報告
+    url: https://cn.chief.com.tw/wp-content/uploads/2026/07/是方電訊2026合併第二季.pdf
+  tw.6561#e18:
+    locator: 正文首段
+    published_date: '2026-09-30'
+    publisher: 是方電訊股份有限公司
+    quote_check: found
+    title: 是方攜手Google Cloud提供多元跨國海纜服務
+    url: https://www.chief.com.tw/announce/news/20260930news/
+  tw.6561#e19:
+    locator: AWS Direct Connect服務介紹
+    published_date: '2020-07-06'
+    publisher: 是方電訊股份有限公司
+    quote_check: found
+    title: AWS Direct Connect
+    url: https://www.chief.com.tw/exchange-center/ccx/aws-solution/
   tw.6561#e2:
-    locator: 第91頁，主要產品之營業比重，114年度IDC機房服務列
+    locator: 印刷第91頁，主要產品之營業比重，數據網路服務列之114年度收入與比重
     published_date: null
     publisher: 是方電訊股份有限公司
     quote_check: found
-    title: 是方電訊114年度年報
+    title: 是方電訊2025年報
     url: https://cn.chief.com.tw/wp-content/uploads/2026/05/是方電訊年報中文.pdf
+  tw.6561#e20:
+    locator: 轉載重大訊息第1至4項
+    published_date: '2025-03-14'
+    publisher: MoneyDJ理財網
+    quote_check: found
+    title: 翔耀自是方取得台北市舊宗路一段使用權資產，計約13.35億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=7146ff96-d096-4adb-bfd2-399769a90e77
+  tw.6561#e21:
+    locator: 轉載重大訊息第1至3項
+    published_date: '2025-08-29'
+    publisher: MoneyDJ理財網
+    quote_check: found
+    title: 翔耀董事會通過與是方中止機房租用
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=089413b9-d65a-4226-bf78-351314108bdd
+  tw.6561#e22:
+    locator: 印刷第43頁，附註十二2
+    published_date: '2026-05-14'
+    publisher: 翔耀實業股份有限公司
+    quote_check: found
+    title: 翔耀實業民國115年及114年第1季合併財務報告
+    url: https://www.enlightcorp.com.tw/uploads/finance/report/115/115Q1.pdf
+  tw.6561#e23:
+    locator: 印刷第43頁，附註十二2
+    published_date: '2026-05-14'
+    publisher: 翔耀實業股份有限公司
+    quote_check: found
+    title: 翔耀實業民國115年及114年第1季合併財務報告
+    url: https://www.enlightcorp.com.tw/uploads/finance/report/115/115Q1.pdf
+  tw.6561#e24:
+    locator: 印刷第26頁，附註六14（1）
+    published_date: '2026-05-14'
+    publisher: 翔耀實業股份有限公司
+    quote_check: found
+    title: 翔耀實業民國115年及114年第1季合併財務報告
+    url: https://www.enlightcorp.com.tw/uploads/finance/report/115/115Q1.pdf
+  tw.6561#e25:
+    locator: 正文首段
+    published_date: '2026-10-20'
+    publisher: 是方電訊股份有限公司
+    quote_check: found
+    title: 是方點亮台灣西部AI算力新走廊，虎尾AI資料中心正式動土
+    url: https://www.chief.com.tw/announce/news/20261020news/
   tw.6561#e3:
-    locator: 第91頁，主要產品之營業比重，114年度數據網路服務列
+    locator: 印刷第91頁，主要產品之營業比重，雲端應用服務列之114年度收入與比重
     published_date: null
     publisher: 是方電訊股份有限公司
     quote_check: found
-    title: 是方電訊114年度年報
+    title: 是方電訊2025年報
     url: https://cn.chief.com.tw/wp-content/uploads/2026/05/是方電訊年報中文.pdf
   tw.6561#e4:
-    locator: 第91頁，主要產品之營業比重，114年度雲端應用服務列
+    locator: 印刷第91頁，主要產品之營業比重，語音通信服務列之114年度收入與比重
     published_date: null
     publisher: 是方電訊股份有限公司
     quote_check: found
-    title: 是方電訊114年度年報
+    title: 是方電訊2025年報
     url: https://cn.chief.com.tw/wp-content/uploads/2026/05/是方電訊年報中文.pdf
   tw.6561#e5:
-    locator: 第91頁，主要產品之營業比重，114年度語音通信服務列
-    published_date: null
+    locator: 服務簡介
+    published_date: '2020-05-20'
     publisher: 是方電訊股份有限公司
     quote_check: found
-    title: 是方電訊114年度年報
-    url: https://cn.chief.com.tw/wp-content/uploads/2026/05/是方電訊年報中文.pdf
+    title: 主機代管 Colocation
+    url: https://www.chief.com.tw/idc/idc-service/cabinets/
   tw.6561#e6:
-    locator: 聯雲AI智能資料中心產品介紹
-    published_date: '2022-09-02'
+    locator: 服務簡介
+    published_date: '2020-07-06'
     publisher: 是方電訊股份有限公司
     quote_check: found
-    title: 東亞數位匯流中心｜是方電訊LY2－聯雲AI智能資料中心
-    url: https://www.chief.com.tw/idc/new-datacenter-ly2/
+    title: MPLS-VPN
+    url: https://www.chief.com.tw/data/corporate-network/mpls-vpn/
   tw.6561#e7:
-    locator: 企業數據網路服務
-    published_date: null
-    publisher: 是方電訊股份有限公司
-    quote_check: found
-    title: 數據網路
-    url: https://www.chief.com.tw/data/
-  tw.6561#e8:
-    locator: 產品介紹首段
-    published_date: '2020-07-03'
-    publisher: 是方電訊股份有限公司
-    quote_check: found
-    title: 雲端運算（IaaS）
-    url: https://www.chief.com.tw/cloud/cloud-computing/computing-services-iaas/
-  tw.6561#e9:
     locator: 關於是方雲端交換中心
     published_date: null
     publisher: 是方電訊股份有限公司
     quote_check: found
     title: 是方雲端交換中心（CCX）
     url: https://www.chief.com.tw/cloud/ccx/
+  tw.6561#e8:
+    locator: LY2 AI智能資料中心機房特色；網頁內容於研究日讀取
+    published_date: '2022-09-02'
+    publisher: 是方電訊股份有限公司
+    quote_check: found
+    title: 東亞數位匯流中心｜是方電訊LY2－聯雲AI智能資料中心
+    url: https://www.chief.com.tw/idc/new-datacenter-ly2/
+  tw.6561#e9:
+    locator: 是方AI基礎設施拎包入住服務方案
+    published_date: '2025-06-09'
+    publisher: 是方電訊股份有限公司
+    quote_check: found
+    title: AI機房解決方案升級：全台首推水冷架構，拎包進駐快速啟動
+    url: https://www.chief.com.tw/idc/aidatacenter/

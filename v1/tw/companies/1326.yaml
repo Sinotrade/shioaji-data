@@ -104,6 +104,52 @@ relations:
     share_basis: revenue
     share_pct: 1
     weight: 1
+  - as_of: '2025-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 供應酚
+    details:
+    - 供應酚
+    edge: eec2f61761784
+    evidence_level: primary
+    id: tw.1314
+    name: 中石化
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-05-08'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: PP與ABS塑膠原料
+    details:
+    - PP與ABS塑膠原料
+    edge: eb483d21b6f43
+    evidence_level: primary
+    id: tw.1319
+    name: 東陽
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2026-06
+    confidence: ai_cross_checked
+    counterparty_shares:
+    - as_of: 2026-06
+      basis: purchases
+      of: tw.1434
+      pct: 3.28
+    detail: 聚胺原絲
+    details:
+    - 聚胺原絲
+    edge: ee28099761ada
+    evidence_level: primary
+    id: tw.1434
+    name: 福懋
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   - as_of: '2026-05-15'
     confidence: ai_cross_checked
     counterparty_shares: []
@@ -134,13 +180,13 @@ relations:
     share_pct: null
     weight: 1
   subsidiaries:
-  - as_of: '2026-06-30'
+  - as_of: 2026-06
     confidence: ai_cross_checked
     counterparty_shares: []
     detail: 合併範圍內子公司
     details:
     - 合併範圍內子公司
-    - 最終母公司及最終控制者
+    - 最終母公司
     edge: e2ef42dcba9a4
     evidence_level: primary
     id: tw.1434

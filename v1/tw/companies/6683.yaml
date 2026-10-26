@@ -26,59 +26,134 @@ chain_stage:
   stage_name: 設備與廠務
   tier: upstream
 primary_chain_position: upstream
-summary_short: 設計、生產及銷售半導體測試載板、探針卡與老化測試載板。
-summary_long: 雍智科技提供半導體測試介面，產品包括晶圓測試探針卡、封裝後測試載板Load Board與老化測試載板Burn In Board。2025年營收以後段測試載板為主，占61.58%；前段占36.46%，其他占1.96%。公司另開發系統級測試載板，提供訊號與電源完整性模擬。年報揭露CoWoS探針卡已完成開發驗證並量產，5G應用處理器用MEMS探針卡亦已量產。
+summary_short: 以IC測試載板、老化測試載板及晶圓探針卡測試載板的設計製造與銷售為主。
+summary_long: 雍智科技主要提供半導體測試載板，產品包括IC測試載板、老化測試載板及晶圓探針卡測試載板。2025年後段測試載板占營收61.58%，前段測試載板占36.46%，其他業務占1.96%。具名報導指出聯發科為第一大客戶，歷史客戶名單亦包含瑞昱、世芯、創意、日月光與京元電子。海外布局包括美國子公司KSMT USA CORPORATION、薩摩亞投資子公司及上海芯埕科技孫公司。2024年董事會另通過向保樂資產管理購置竹北不動產，公告交易金額為新台幣433,750,000元，用途為自用辦公室。
 segments:
 - evidence_ids:
-  - e6
-  id: seg.final_test
+  - e3
+  id: seg_ft
   name: 半導體晶圓測試－後段測試載板
   period: '2025'
   revenue_share_pct: 61.58
 - evidence_ids:
-  - e6
-  id: seg.wafer_test
+  - e4
+  id: seg_cp
   name: 半導體晶圓測試－前段測試載板
   period: '2025'
   revenue_share_pct: 36.46
 - evidence_ids:
-  - e6
-  id: seg.other
+  - e5
+  id: seg_other
   name: 其他
   period: '2025'
   revenue_share_pct: 1.96
-main_theme: theme.5g
-themes:
-- also: []
-  stage: components
-  theme: theme.5g
-  tier: upstream
-- also: []
-  stage: test
-  theme: theme.cowos
-  tier: midstream
 relations:
-  subsidiaries:
-  - as_of: '2025-12-31'
+  customers:
+  - as_of: '2021-01-11'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 100%持股直接子公司
+    detail: 測試載板相關產品，未揭露個別品項
     details:
-    - 100%持股直接子公司
-    edge: ec0aff43bddc9
+    - 測試載板相關產品，未揭露個別品項
+    edge: eda2801aefd4c
+    evidence_level: media
+    id: tw.2379
+    name: 瑞昱
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2023-09-22'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 半導體測試載板相關產品
+    details:
+    - 半導體測試載板相關產品
+    edge: e806b8bdb29a4
+    evidence_level: media
+    id: tw.2449
+    name: 京元電子
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-01-06'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 半導體測試介面
+    details:
+    - 半導體測試介面
+    edge: efaf8397ec528
+    evidence_level: media
+    id: tw.2454
+    name: 聯發科
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2021-01-11'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 測試載板相關產品，未揭露個別品項
+    details:
+    - 測試載板相關產品，未揭露個別品項
+    edge: e745bcfee6f75
+    evidence_level: media
+    id: tw.3443
+    name: 創意
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2021-01-11'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 測試載板相關產品，未揭露個別品項
+    details:
+    - 測試載板相關產品，未揭露個別品項
+    edge: efdf564eccf67
+    evidence_level: media
+    id: tw.3661
+    name: 世芯-KY
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2021-01-11'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 日月光集團測試載板客戶關係
+    details:
+    - 日月光集團測試載板客戶關係
+    edge: ef7ff7fc4c210
+    evidence_level: media
+    id: tw.3711
+    name: 日月光投控
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 薩摩亞全資投資子公司
+    details:
+    - 薩摩亞全資投資子公司
+    edge: e333b9fc52b69
     evidence_level: primary
-    id: org.keystone-microtech-international-ltd
+    id: org.keystone-microtech-international
     name: KEYSTONE MICROTECH International Ltd
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2025-12-31'
+  - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 100%持股美國直接子公司
+    detail: 美國全資子公司
     details:
-    - 100%持股美國直接子公司
+    - 美國全資子公司
     edge: e793cee1f7192
     evidence_level: primary
     id: org.ksmt-usa-corporation
@@ -87,109 +162,163 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-04-15'
+  - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 上海間接子公司（孫公司）
+    detail: 間接持股100%的上海孫公司
     details:
-    - 上海間接子公司（孫公司）
-    edge: e2cb451a105ec
+    - 間接持股100%的上海孫公司
+    edge: e0989d86e6945
     evidence_level: primary
-    id: org.上海芯埕科技有限公司
+    id: org.shanghai-xincheng-technology
     name: 上海芯埕科技有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
+  transactions:
+  - amount: 新台幣433,750,000元
+    as_of: '2024-03-15'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 取得竹北土地、建物及停車位供自用辦公室
+    details:
+    - 取得竹北土地、建物及停車位供自用辦公室
+    edge: e15df61936eb8
+    event_date: '2024-03-15'
+    events:
+    - amount: 新台幣433,750,000元
+      detail: 取得竹北土地、建物及停車位供自用辦公室
+      event_date: '2024-03-15'
+    evidence_level: primary
+    id: org.保樂資產管理股份有限公司
+    name: 保樂資產管理股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 日月光集團客戶關係的實際採購法人
+- 客戶指定的探針頭合作夥伴
+- 未具名的晶圓廠委外釋單客戶
 website: https://www.ksmt.com.tw
 tax_id: '28398895'
 incorporated: '2006-09-11'
 listed: '2019-04-23'
-as_of: '2026-10-15'
+as_of: '2026-10-26'
 confidence: ai_cross_checked
 has_research: true
 evidence:
   tw.6683#e1:
-    locator: 產品資訊／IC前段測試解決方案／產品說明首段
+    locator: 公司簡介第一段
     published_date: null
     publisher: 雍智科技股份有限公司
     quote_check: found
-    title: Probe Card 探針卡服務
-    url: https://www.ksmt.com.tw/product_01_01
+    title: 公司簡介
+    url: https://www.ksmt.com.tw/about_01
   tw.6683#e10:
-    locator: 第69頁，B.產品競爭情形
-    published_date: '2026-04-15'
-    publisher: 雍智科技股份有限公司
+    locator: 第3項，交易總金額
+    published_date: '2024-03-15'
+    publisher: 公開資訊觀測站重大訊息，MoneyDJ刊載
     quote_check: found
-    title: 雍智科技股份有限公司一一四年度年報
-    url: https://www.ksmt.com.tw/assets/file/investor2_02_2026_a04.pdf
+    title: 雍智科技董事會通過取得新竹縣竹北市不動產，計約4.34億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=1dd1fa33-d4b3-4359-bb23-34b89f25f71c
   tw.6683#e11:
-    locator: 第71頁，最近五年度開發成功之技術或產品／114年度
-    published_date: '2026-04-15'
-    publisher: 雍智科技股份有限公司
+    locator: 第21項，取得用途；第24項載董事會通過日為113年3月15日
+    published_date: '2024-03-15'
+    publisher: 公開資訊觀測站重大訊息，MoneyDJ刊載
     quote_check: found
-    title: 雍智科技股份有限公司一一四年度年報
-    url: https://www.ksmt.com.tw/assets/file/investor2_02_2026_a04.pdf
+    title: 雍智科技董事會通過取得新竹縣竹北市不動產，計約4.34億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=1dd1fa33-d4b3-4359-bb23-34b89f25f71c
   tw.6683#e12:
-    locator: 第71頁，最近五年度開發成功之技術或產品／113年度
-    published_date: '2026-04-15'
+    locator: 113年度
+    published_date: null
     publisher: 雍智科技股份有限公司
     quote_check: found
-    title: 雍智科技股份有限公司一一四年度年報
-    url: https://www.ksmt.com.tw/assets/file/investor2_02_2026_a04.pdf
+    title: 年度大記事
+    url: https://www.ksmt.com.tw/about_02
+  tw.6683#e13:
+    locator: 112年度
+    published_date: null
+    publisher: 雍智科技股份有限公司
+    quote_check: found
+    title: 年度大記事
+    url: https://www.ksmt.com.tw/about_02
+  tw.6683#e14:
+    locator: 第43頁，附表五；投資公司本公司、KSMT USA CORPORATION列，持股比率100%
+    published_date: null
+    publisher: 雍智科技股份有限公司
+    quote_check: found
+    title: 雍智科技股份有限公司及子公司115年第2季合併財務報告
+    url: https://www.ksmt.com.tw/assets/file/investor1_02_2026_b02.pdf
+  tw.6683#e15:
+    locator: 第43頁，附表五；KEYSTONE MICROTECH International Ltd列，所在地SAMOA、一般投資業務、持股比率100%
+    published_date: null
+    publisher: 雍智科技股份有限公司
+    quote_check: found
+    title: 雍智科技股份有限公司及子公司115年第2季合併財務報告
+    url: https://www.ksmt.com.tw/assets/file/investor1_02_2026_b02.pdf
+  tw.6683#e16:
+    locator: 第44頁，附表六大陸投資資訊；上海芯埕科技有限公司列，直接或間接投資持股比率100%
+    published_date: null
+    publisher: 雍智科技股份有限公司
+    quote_check: found
+    title: 雍智科技股份有限公司及子公司115年第2季合併財務報告
+    url: https://www.ksmt.com.tw/assets/file/investor1_02_2026_b02.pdf
   tw.6683#e2:
-    locator: '產品資訊／IC後段測試解決方案／Load Board: 測試載板'
+    locator: 公司簡介第一段
     published_date: null
     publisher: 雍智科技股份有限公司
     quote_check: found
-    title: Load Board
-    url: https://www.ksmt.com.tw/product_02_01
+    title: 公司簡介
+    url: https://www.ksmt.com.tw/about_01
   tw.6683#e3:
-    locator: 產品資訊／IC後段測試解決方案／客製化老化板章節
-    published_date: null
+    locator: 第63頁，主要產品之營業比重表；後段測試載板列，114年度營收比率欄
+    published_date: '2026-04-15'
     publisher: 雍智科技股份有限公司
-    quote_check: found
-    title: Burn In Board
-    url: https://www.ksmt.com.tw/product_02_02
+    quote_check: not_found
+    title: 雍智科技股份有限公司114年度年報
+    url: https://www.ksmt.com.tw/assets/file/investor2_02_2026_a04.pdf
   tw.6683#e4:
-    locator: 'System Level Test: 系統級測試載板(SLT)'
-    published_date: null
+    locator: 第63頁，主要產品之營業比重表；前段測試載板列，114年度營收比率欄
+    published_date: '2026-04-15'
     publisher: 雍智科技股份有限公司
-    quote_check: found
-    title: Load Board
-    url: https://www.ksmt.com.tw/product_02_01
+    quote_check: not_found
+    title: 雍智科技股份有限公司114年度年報
+    url: https://www.ksmt.com.tw/assets/file/investor2_02_2026_a04.pdf
   tw.6683#e5:
-    locator: 產品資訊／技術服務／介紹首段
-    published_date: null
+    locator: 第63頁，主要產品之營業比重表；其他列，114年度營收比率欄
+    published_date: '2026-04-15'
     publisher: 雍智科技股份有限公司
-    quote_check: found
-    title: SI PI Simulation
-    url: https://www.ksmt.com.tw/product_03_01
+    quote_check: not_found
+    title: 雍智科技股份有限公司114年度年報
+    url: https://www.ksmt.com.tw/assets/file/investor2_02_2026_a04.pdf
   tw.6683#e6:
-    locator: 第63頁，主要產品之營業比重；最後兩欄為114年度營收金額與比率
-    published_date: '2026-04-15'
-    publisher: 雍智科技股份有限公司
+    locator: 第二段，主要業務與客戶
+    published_date: '2026-01-06'
+    publisher: MoneyDJ新聞，王怡茹
     quote_check: found
-    title: 雍智科技股份有限公司一一四年度年報
-    url: https://www.ksmt.com.tw/assets/file/investor2_02_2026_a04.pdf
+    title: 雍智科技去年營收登頂 今年續拚高峰
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=cc78256d-4402-468d-945f-2b302f88929e
   tw.6683#e7:
-    locator: 第67頁，本公司提供之營業務主要內容
-    published_date: '2026-04-15'
-    publisher: 雍智科技股份有限公司
+    locator: 第二段，具名客戶名單
+    published_date: '2021-01-11'
+    publisher: MoneyDJ新聞，王怡茹
     quote_check: found
-    title: 雍智科技股份有限公司一一四年度年報
-    url: https://www.ksmt.com.tw/assets/file/investor2_02_2026_a04.pdf
+    title: 雍智去年拚賺1股本；今年業績攀高可期
+    url: https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=8de2e75d-c971-4e01-8bd6-8f52309205c5
   tw.6683#e8:
-    locator: 第28頁，十、子公司；投資公司、子公司、業務性質及2025年底持股比例
-    published_date: null
-    publisher: 雍智科技股份有限公司
+    locator: 第三段，主要業務及客戶
+    published_date: '2023-09-22'
+    publisher: 自由財經，洪友芳
     quote_check: found
-    title: 雍智科技股份有限公司及子公司民國114及113年度合併財務報告暨會計師查核報告
-    url: https://www.ksmt.com.tw/assets/file/investor1_02_2025_a01.pdf
+    title: 劉安炫新接任雍智科技總經理
+    url: https://ec.ltn.com.tw/article/breakingnews/4436623
   tw.6683#e9:
-    locator: 第28頁，十、子公司；KSMT USA列的投資公司欄承上列「本公司」
-    published_date: null
-    publisher: 雍智科技股份有限公司
+    locator: 公告標題及第4項交易相對人
+    published_date: '2024-03-15'
+    publisher: 公開資訊觀測站重大訊息，MoneyDJ刊載
     quote_check: found
-    title: 雍智科技股份有限公司及子公司民國114及113年度合併財務報告暨會計師查核報告
-    url: https://www.ksmt.com.tw/assets/file/investor1_02_2025_a01.pdf
+    title: 雍智科技董事會通過取得新竹縣竹北市不動產，計約4.34億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=1dd1fa33-d4b3-4359-bb23-34b89f25f71c

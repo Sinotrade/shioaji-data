@@ -26,39 +26,21 @@ chain_stage:
   stage_name: 電路板與載板製造
   tier: midstream
 primary_chain_position: midstream
-summary_short: 製造與銷售HDI、軟硬結合板及高頻等印刷電路板。
-summary_long: 燿華以印刷電路板製造與銷售為主要業務，產品包括HDI、軟硬結合板、傳統板、高頻板與Anylayer。2025年12月法說會相關報導揭露，上述產品營收比重依序為46%、30%、15%、7%與2%，但未載明統計期間。2026年6月，公司表示低軌衛星產品已貢獻營收，並持續推動相關電路板應用。AI伺服器方面，公司推動高階HDI產能升級，開發OAM及高速傳輸零件用PCB；人形機器人相關應用則處於客戶打樣階段。
+summary_short: 製造與銷售多層印刷電路板、HDI板及軟硬結合板。
+summary_long: 燿華主要從事多層印刷電路板、HDI板與軟硬結合板的製造及銷售。2025年度個體產品營收中，十層板以上占52.86%，八層板占26.17%。公司投入5G通訊用高散熱板開發，並布局低軌衛星及AI伺服器相關PCB應用。Apple的2023會計年度供應商名單列有燿華，但未揭露供貨品項或機型；公司亦揭露與Meta、HTC合作開發AR眼鏡。海外製造子公司包括泰國公司與上海展華體系。2024至2026年間，公司公告宜蘭土地轉承購、泰國子公司購地與廠房工程，以及兩次泰國子公司增資決議。
 segments:
 - evidence_ids:
-  - e1
-  id: seg_hdi
-  name: HDI
-  period: null
-  revenue_share_pct: 46
+  - e2
+  id: seg_10plus
+  name: 十層板以上
+  period: 2025年度（個體）
+  revenue_share_pct: 52.86
 - evidence_ids:
-  - e1
-  id: seg_rigid_flex
-  name: 軟硬結合板
-  period: null
-  revenue_share_pct: 30
-- evidence_ids:
-  - e1
-  id: seg_conventional
-  name: 傳統板
-  period: null
-  revenue_share_pct: 15
-- evidence_ids:
-  - e1
-  id: seg_high_frequency
-  name: 高頻板
-  period: null
-  revenue_share_pct: 7
-- evidence_ids:
-  - e1
-  id: seg_anylayer
-  name: Anylayer
-  period: null
-  revenue_share_pct: 2
+  - e2
+  id: seg_8layer
+  name: 八層板
+  period: 2025年度（個體）
+  revenue_share_pct: 26.17
 main_theme: theme.ai_server
 themes:
 - also: []
@@ -67,7 +49,11 @@ themes:
   tier: upstream
 - also: []
   stage: components
-  theme: theme.robotics
+  theme: theme.5g
+  tier: upstream
+- also: []
+  stage: components
+  theme: theme.apple
   tier: upstream
 - also: []
   stage: components
@@ -75,12 +61,13 @@ themes:
   tier: upstream
 relations:
   competitors:
-  - as_of: '2025-03-19'
+  - as_of: '2026-10-26'
     confidence: ai_cross_checked
     counterparty_shares: []
     detail: 低軌衛星用電路板市場
     details:
     - 低軌衛星用電路板市場
+    - PCB市場競爭
     edge: e36c7b4d04921
     evidence_level: media
     id: tw.2313
@@ -88,50 +75,354 @@ relations:
     ranking_basis: unranked
     share_basis: null
     share_pct: null
+    weight: 2
+  - as_of: '2026-10-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: PCB市場競爭
+    details:
+    - PCB市場競爭
+    edge: eb4272f6a5656
+    evidence_level: media
+    id: tw.3037
+    name: 欣興
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: PCB市場競爭
+    details:
+    - PCB市場競爭
+    edge: e9d7c8efdb2fe
+    evidence_level: media
+    id: tw.4958
+    name: 臻鼎-KY
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  customers:
+  - as_of: 2023-09
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: Apple供應商身分，品項未揭露
+    details:
+    - Apple供應商身分，品項未揭露
+    edge: e0f63b7840c75
+    evidence_level: primary
+    id: us.AAPL
+    name: Apple
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  partners:
+  - as_of: 2025-08
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: AR眼鏡合作開發與技術驗證
+    details:
+    - AR眼鏡合作開發與技術驗證
+    edge: eaa345a34e0d4
+    evidence_level: primary
+    id: tw.2498
+    name: 宏達電
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2025-08
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: AR眼鏡合作開發與技術驗證
+    details:
+    - AR眼鏡合作開發與技術驗證
+    edge: eeb06060bede8
+    evidence_level: primary
+    id: us.META
+    name: Meta
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過香港與上海展華體系持有的間接子公司
+    details:
+    - 透過香港與上海展華體系持有的間接子公司
+    edge: eecd32f09f973
+    evidence_level: primary
+    id: org.unitech-electronics-nantong
+    name: 上海展華電子(南通)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過香港投資公司持有的間接子公司
+    details:
+    - 透過香港投資公司持有的間接子公司
+    edge: e02f223f79ff0
+    evidence_level: primary
+    id: org.unitech-electronics-shanghai
+    name: 上海展華電子有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-01-22'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%的泰國子公司
+    details:
+    - 直接持有100%的泰國子公司
+    edge: e9dbfe9deb0e5
+    evidence_level: primary
+    id: org.unitech-pcb-thailand
+    name: UNITECH PCB(THAILAND)CO.,LTD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 泰銖314,960千元
+    as_of: '2025-03-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 泰國子公司廠房電力與消防工程
+    details:
+    - 泰國子公司廠房電力與消防工程
+    edge: e82a0bccf665c
+    event_date: '2025-03-14'
+    events:
+    - amount: 泰銖314,960千元
+      detail: 泰國子公司廠房電力與消防工程
+      event_date: '2025-03-14'
+    evidence_level: primary
+    id: org.ingenious-engineering-thailand
+    name: INGENIOUS ENGINEERING (THAILAND) CO.,LTD
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2024-06-18'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 泰國子公司取得紅統府工業區土地
+    details:
+    - 泰國子公司取得紅統府工業區土地
+    edge: ec55f54c03f85
+    event_date: '2024-06-18'
+    events:
+    - amount: null
+      detail: 泰國子公司取得紅統府工業區土地
+      event_date: '2024-06-18'
+    evidence_level: primary
+    id: org.s-industrial-estate
+    name: S Industrial Estate Co., Ltd.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 15億泰銖（約新台幣14.55億）
+    as_of: '2026-01-22'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 董事會通過泰國子公司增資
+    details:
+    - 董事會通過泰國子公司增資
+    - 董事會再次通過泰國子公司增資
+    edge: ee3608356b082
+    event_date: '2025-03-14'
+    events:
+    - amount: 10億泰銖（約新台幣10億）
+      detail: 董事會再次通過泰國子公司增資
+      event_date: '2026-01-22'
+    - amount: 15億泰銖（約新台幣14.55億）
+      detail: 董事會通過泰國子公司增資
+      event_date: '2025-03-14'
+    evidence_level: primary
+    id: org.unitech-pcb-thailand
+    name: UNITECH PCB(THAILAND)CO.,LTD.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 泰銖576,346千元
+    as_of: '2025-03-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 泰國子公司廠房暖通、製程與給排液系統工程
+    details:
+    - 泰國子公司廠房暖通、製程與給排液系統工程
+    edge: e733296cdbcd9
+    event_date: '2025-03-14'
+    events:
+    - amount: 泰銖576,346千元
+      detail: 泰國子公司廠房暖通、製程與給排液系統工程
+      event_date: '2025-03-14'
+    evidence_level: primary
+    id: org.yankey-engineering-thailand
+    name: YANKEY ENGINEERING (THAILAND) CO.,LTD.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣1,132,332,048元
+    as_of: '2024-01-16'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 宜蘭蘇澳五筆土地由承租轉承購
+    details:
+    - 宜蘭蘇澳五筆土地由承租轉承購
+    edge: ec3a76044bd33
+    event_date: '2024-01-16'
+    events:
+    - amount: 新台幣1,132,332,048元
+      detail: 宜蘭蘇澳五筆土地由承租轉承購
+      event_date: '2024-01-16'
+    evidence_level: primary
+    id: org.經濟部工業局
+    name: 經濟部工業局
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
     weight: 1
 unresolved_mentions:
-- 低軌衛星產品客戶（未具名）
-- 人形機器人應用打樣客戶（未具名）
+- 銅箔是原材料名稱，未查得可對應的具名銅箔供應商。
+- 公司2025永續報告書提及切入SpaceX Starlink與亞馬遜Kuipe…
+- AI伺服器PCB合作及驗證客戶未具名。
+- 主要車用電子與ADAS客戶未具名。
 website: https://www.pcbut.com.tw
 tax_id: 05637971
 incorporated: '1984-12-31'
 listed: '1997-12-13'
-as_of: '2026-10-15'
+as_of: '2026-10-26'
 confidence: ai_cross_checked
 has_research: true
 evidence:
   tw.2367#e1:
-    locator: 萬惠雯報導／產品營收分類段落
-    published_date: '2025-12-12'
-    publisher: MoneyDJ理財網
+    locator: 印刷頁71，業務範圍
+    published_date: '2026-04-30'
+    publisher: 燿華電子股份有限公司（年報鏡像）
     quote_check: found
-    title: 燿華看好AI、車用與非中供應鏈需求 明年動能轉強
-    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=828f5b11-2ecb-4951-bae4-072bc77ae09f
+    title: 燿華電子股份有限公司一一四年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52034/2026/RNS/52034_rns_2026-05-28_64b5e290-df9a-40af-b70a-d725f7ce392b.pdf
+  tw.2367#e10:
+    locator: 第6項直接投資關係、第14項累計投資及持股
+    published_date: '2026-01-22'
+    publisher: 公開資訊觀測站重大訊息（MoneyDJ轉載）
+    quote_check: found
+    title: 燿華 公告本公司董事會決議通過對泰國子公司增資案
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=4395a6fb-310a-42e7-a2d4-b0cf608f33da
+  tw.2367#e11:
+    locator: 重大會計政策之彙總說明，列入合併財務報表之子公司
+    published_date: '2026-03-11'
+    publisher: 燿華電子股份有限公司（申報資料鏡像）
+    quote_check: unreachable
+    title: 燿華電子股份有限公司2025年第4季合併財務報告
+    url: https://financialfilings.com/filings/unitech-2367/annual-report/2026/60570661/
+  tw.2367#e12:
+    locator: 列入合併財務報表之子公司；另列UNITECH HK持有南通公司21.33%
+    published_date: '2026-03-11'
+    publisher: 燿華電子股份有限公司（申報資料鏡像）
+    quote_check: unreachable
+    title: 燿華電子股份有限公司2025年第4季合併財務報告
+    url: https://financialfilings.com/filings/unitech-2367/annual-report/2026/60570661/
+  tw.2367#e13:
+    locator: 第1至4項土地標的與交易金額；第8項扣除已付租金後付款額
+    published_date: '2024-01-16'
+    publisher: 公開資訊觀測站重大訊息（MoneyDJ轉載）
+    quote_check: found
+    title: 燿華向宜蘭利澤工業區申請轉承購蘇澳鎮頂寮段5筆土地，計約11.32億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=b4f72ec9-b960-4c4b-949f-147dd6391b30
+  tw.2367#e14:
+    locator: 內文土地買賣協議段，列明買方為Unitech PCB (Thailand) Co., Ltd.，土地56萊
+    published_date: '2024-09-05'
+    publisher: Singha Estate Public Company Limited
+    quote_check: found
+    title: Singha Estate與Unitech PCB簽署泰國Angthong廠區土地協議
+    url: https://www.singhaestate.co.th/news-room/singha-estate-deal-with-Unitech-PCB
+  tw.2367#e15:
+    locator: 第1至4項，兩項工程、各項金額及依序對應的交易相對人
+    published_date: '2025-03-14'
+    publisher: 公開資訊觀測站重大訊息（鉅亨網轉載）
+    quote_check: found
+    title: 燿華：代子公司UNITECH PCB(THAILAND)CO.,LTD.公告簽署工程合約書
+    url: https://news.cnyes.com/news/id/5901193
+  tw.2367#e16:
+    locator: 第1至4項投資標的、日期、金額及直接持股關係
+    published_date: '2025-03-14'
+    publisher: 公開資訊觀測站重大訊息（鉅亨網轉載）
+    quote_check: found
+    title: 燿華：公告本公司董事會決議通過對泰國子公司增資案
+    url: https://news.cnyes.com/news/id/5901195
   tw.2367#e2:
-    locator: 尹慧中報導／首段
-    published_date: '2026-06-25'
-    publisher: 經濟日報
+    locator: 印刷頁71，114年度產品營業比重；分母為個體營業額14,958,163千元
+    published_date: '2026-04-30'
+    publisher: 燿華電子股份有限公司（年報鏡像）
     quote_check: found
-    title: 燿華26日召開法說會 聚焦低軌衛星與 AI 應用展望
-    url: https://money.udn.com/money/story/5612/9588213
+    title: 燿華電子股份有限公司一一四年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52034/2026/RNS/52034_rns_2026-05-28_64b5e290-df9a-40af-b70a-d725f7ce392b.pdf
   tw.2367#e3:
-    locator: 萬惠雯報導／低軌衛星產品與地面、天上應用說明
-    published_date: '2026-06-16'
-    publisher: MoneyDJ理財網
+    locator: 第25頁，供應商名稱與為Apple製造的主要地點；第27頁註明涵蓋2023會計年度末
+    published_date: null
+    publisher: Apple Inc.
     quote_check: found
-    title: 燿華衝刺低軌衛星與AI 明年營收占比挑戰過半
-    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=48694bdd-7af7-43ed-abb0-8e229de22bce
+    title: Apple Supplier List，Fiscal Year 2023
+    url: https://s203.q4cdn.com/367071867/files/doc_downloads/2024/04/Apple-Supplier-List.pdf
   tw.2367#e4:
-    locator: 萬惠雯報導／高階HDI產能升級及AI核心應用說明
-    published_date: '2026-06-16'
-    publisher: MoneyDJ理財網
-    quote_check: found
-    title: 燿華今年營收拚增2成 HDI升級與泰國廠量產助攻
-    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=bde7d80a-b8fa-4bce-9023-f561bbfe9976
+    locator: 積極創新，短期研發策略
+    published_date: '2026-08-25'
+    publisher: 燿華電子股份有限公司（報告鏡像）
+    quote_check: unreachable
+    title: 燿華電子2025永續報告書
+    url: https://financialfilings.com/filings/unitech-2367/environmental-social-information/2026/73047895/
   tw.2367#e5:
-    locator: 萬惠雯報導／末段軟硬結合板新應用說明
-    published_date: '2026-06-29'
-    publisher: MoneyDJ理財網
+    locator: 產業價值鏈，發展計畫，泰國
+    published_date: '2026-08-25'
+    publisher: 燿華電子股份有限公司（報告鏡像）
+    quote_check: unreachable
+    title: 燿華電子2025永續報告書
+    url: https://financialfilings.com/filings/unitech-2367/environmental-social-information/2026/73047895/
+  tw.2367#e6:
+    locator: 積極創新，AI人工智慧應用
+    published_date: '2026-08-25'
+    publisher: 燿華電子股份有限公司（報告鏡像）
+    quote_check: unreachable
+    title: 燿華電子2025永續報告書
+    url: https://financialfilings.com/filings/unitech-2367/environmental-social-information/2026/73047895/
+  tw.2367#e7:
+    locator: 產業價值鏈，亮點個案，AR眼鏡合作布局
+    published_date: '2025-08-25'
+    publisher: 燿華電子股份有限公司（報告鏡像）
+    quote_check: unreachable
+    title: 燿華電子2024永續報告書
+    url: https://financialfilings.com/filings/unitech-2367/environmental-social-information/2025/72999883/
+  tw.2367#e8:
+    locator: 市場銷售及競爭，國內外競爭廠商
+    published_date: null
+    publisher: MoneyDJ理財網／嘉實資訊
     quote_check: found
-    title: 燿華Q3營運可望回溫 泰國廠成今年獲利關鍵
-    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=563a6488-62e5-4e09-a1d3-ea0c80a0ed2c
+    title: 燿華電子股份有限公司
+    url: https://www.moneydj.com/kmdj/wiki/wikiviewer.aspx?title=%E7%87%BF%E8%8F%AF%E9%9B%BB%E5%AD%90%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8
+  tw.2367#e9:
+    locator: 第1至6項，投資標的、董事會日期、金額與關係
+    published_date: '2026-01-22'
+    publisher: 公開資訊觀測站重大訊息（MoneyDJ轉載）
+    quote_check: found
+    title: 燿華 公告本公司董事會決議通過對泰國子公司增資案
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=4395a6fb-310a-42e7-a2d4-b0cf608f33da

@@ -74,19 +74,11 @@ members:
 - id: tw.1514
   stage: equipment
   tier: midstream
-  detail: 變壓器及配電設備
-  as_of: 2026-10
+  detail: 變壓器、配電盤與電力線路開關
+  as_of: '2026-10-26'
   evidence:
-  - tw.1514#e2
+  - tw.1514#e1
   - tw.1514#e3
-  confidence: ai_cross_checked
-- id: tw.1514
-  stage: engineering
-  tier: downstream
-  detail: 電網系統整合及工程統包
-  as_of: 2026-05
-  evidence:
-  - tw.1514#e6
   confidence: ai_cross_checked
 - id: tw.1519
   stage: engineering
@@ -125,26 +117,28 @@ members:
 - id: tw.1608
   stage: materials
   tier: upstream
-  detail: 輸電系統用超高壓電纜
-  as_of: '2026-10-15'
+  detail: 電網用電力電纜
+  as_of: '2025-12-31'
   evidence:
-  - tw.1608#e4
+  - tw.1608#e02
+  - tw.1608#e04
   confidence: ai_cross_checked
 - id: tw.1608
   stage: engineering
   tier: downstream
   detail: 超高壓電纜線路統包
-  as_of: '2026-10-15'
+  as_of: '2026-10-26'
   evidence:
-  - tw.1608#e6
+  - tw.1608#e05
   confidence: ai_cross_checked
 - id: tw.1609
   stage: materials
   tier: upstream
   detail: 輸配電用電力電纜
-  as_of: '2026-10-15'
+  as_of: 2025-12
   evidence:
-  - tw.1609#e3
+  - tw.1609#e02
+  - tw.1609#e08
   confidence: ai_cross_checked
 - id: tw.1612
   stage: materials
@@ -187,14 +181,6 @@ members:
   - tw.1623#e7
   - tw.1623#e11
   confidence: ai_cross_checked
-- id: tw.2015
-  stage: materials
-  tier: upstream
-  detail: 輸電鐵塔用角鋼
-  as_of: '2026-10-15'
-  evidence:
-  - tw.2015#e5
-  confidence: ai_cross_checked
 - id: tw.2359
   stage: equipment
   tier: midstream
@@ -212,7 +198,6 @@ members:
   - tw.2371#e6
   - tw.2371#e7
   - tw.2371#e10
-  - tw.2371#e12
   confidence: ai_cross_checked
 - id: tw.2429
   stage: engineering
@@ -221,14 +206,6 @@ members:
   as_of: '2026-10-23'
   evidence:
   - tw.2429#e7
-  confidence: ai_cross_checked
-- id: tw.2634
-  stage: engineering
-  tier: downstream
-  detail: STATCOM統包建置
-  as_of: '2026-10-14'
-  evidence:
-  - tw.2634#e9
   confidence: ai_cross_checked
 - id: tw.3003
   stage: materials
@@ -384,9 +361,10 @@ members:
 - id: tw.8926
   stage: engineering
   tier: downstream
-  detail: 輸變電工程建造服務
-  as_of: '2026-08-21'
+  detail: 輸變電及陸上變電站統包工程
+  as_of: 2026-08
   evidence:
-  - tw.8926#e7
+  - tw.8926#e02
+  - tw.8926#e09
   confidence: ai_cross_checked
-as_of: '2026-10-24'
+as_of: '2026-10-26'

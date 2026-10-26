@@ -25,28 +25,24 @@ chain_stage:
   stage: osat
   stage_name: 封裝測試
   tier: downstream
-primary_chain_position: midstream
-summary_short: 提供高速光纖收發模組、SiP與感測器的封裝、測試及銷售。
-summary_long: 訊芯-KY以半導體模組封裝、測試與銷售為主要業務，產品涵蓋高速光纖收發模組、SiP及感測器。2025年高速光纖收發模組占營收61.55%，SiP與感測器占38.45%。集團具有51.2T及102.4T CPO量產能力，並提供矽光子光收發模組；中山子公司的SiP產品包含5G前端及功率放大模組。訊芯中山與訊芯越南為間接全資子公司，訊芸中山製造高速光纖收發模組。直接母公司為Foxconn (Far East) Limited，最終控制者為鴻海。
+primary_chain_position: downstream
+summary_short: 以高速光纖收發模組、SiP與感測器的封裝測試及銷售為主。
+summary_long: 訊芯-KY主要經營高速光纖收發模組、SiP與感測器的封裝測試及銷售，2025年營收占比分別為61.55%及38.45%。子公司訊芸中山完成51.2T CPO量產，訊芸北江完成1.6T矽光模組開發。母公司為Foxconn (Far East) Limited，鴻海精密工業為最終控制者，合併財報亦揭露對鴻海的銷貨。2024年集團取得盛帆蘇州全部股權，擴充基礎封測代工服務；2025年由訊芯越南簽署租地委建廠房合約。2026年董事會另核准於訊芯越南建置Bumping/RDL產線的投資計畫，預算上限為6,500萬美元，依建置及採購進度分階段辦理。
 segments:
 - evidence_ids:
   - e2
-  id: seg.optical
+  id: optical
   name: 高速光纖收發模組
   period: '2025'
   revenue_share_pct: 61.55
 - evidence_ids:
-  - e3
-  id: seg.sip_sensor
+  - e2
+  id: sip_sensor
   name: SiP與感測器
   period: '2025'
   revenue_share_pct: 38.45
-main_theme: theme.5g
+main_theme: theme.silicon_photonics
 themes:
-- also: []
-  stage: components
-  theme: theme.5g
-  tier: upstream
 - also: []
   stage: modules
   theme: theme.silicon_photonics
@@ -56,13 +52,57 @@ themes:
   theme: theme.cpo
   tier: midstream
 relations:
+  competitors:
+  - as_of: 2025-04
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 韓國廠之SiP及射頻模組封裝測試
+    details:
+    - 韓國廠之SiP及射頻模組封裝測試
+    edge: e370ad183e32f
+    evidence_level: primary
+    id: us.AMKR
+    name: Amkor Technology
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2025-04
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 高速光纖收發模組
+    details:
+    - 高速光纖收發模組
+    edge: e62ed130007b0
+    evidence_level: primary
+    id: us.FN
+    name: Fabrinet
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  customers:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 合併集團對最終控制者銷貨，未細分產品
+    details:
+    - 合併集團對最終控制者銷貨，未細分產品
+    edge: e8388bb27d60f
+    evidence_level: primary
+    id: tw.2317
+    name: 鴻海
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   parents:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接母公司，持有流通在外普通股59.52%
+    detail: 直接母公司
     details:
-    - 直接母公司，持有流通在外普通股59.52%
+    - 直接母公司
     edge: e78f9750ca34a
     evidence_level: primary
     id: org.foxconn-far-east
@@ -89,12 +129,26 @@ relations:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接全資控股子公司
+    detail: 金屬導線架封測子公司
     details:
-    - 直接全資控股子公司
-    edge: e658b322b2981
+    - 金屬導線架封測子公司
+    edge: e0b1a578c097a
     evidence_level: primary
-    id: org.shunsin-technology-hong-kong
+    id: org.sfa-semicon-suzhou
+    name: 盛帆半導體(蘇州)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有之控股子公司
+    details:
+    - 直接持有之控股子公司
+    edge: e54a1467ce449
+    evidence_level: primary
+    id: org.shunsin-hongkong
     name: 訊芯科技(香港)有限公司
     ranking_basis: unranked
     share_basis: null
@@ -103,12 +157,12 @@ relations:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 間接全資子公司，提供通訊模組及積體電路組裝測試
+    detail: 透過訊芯香港持有之越南封測子公司
     details:
-    - 間接全資子公司，提供通訊模組及積體電路組裝測試
-    edge: eba388eadec28
+    - 透過訊芯香港持有之越南封測子公司
+    edge: ef8ca799a99c3
     evidence_level: primary
-    id: org.shunsin-technology-vietnam
+    id: org.shunsin-vietnam
     name: ShunSin Technology (Vietnam) Company Limited
     ranking_basis: unranked
     share_basis: null
@@ -117,12 +171,12 @@ relations:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 間接全資子公司，提供通訊模組及積體電路組裝測試
+    detail: 透過訊芯香港持有之封測子公司
     details:
-    - 間接全資子公司，提供通訊模組及積體電路組裝測試
-    edge: e327410dda140
+    - 透過訊芯香港持有之封測子公司
+    edge: e83ba47f20362
     evidence_level: primary
-    id: org.shunsin-technology-zhongshan
+    id: org.shunsin-zhongshan
     name: 訊芯電子科技(中山)有限公司
     ranking_basis: unranked
     share_basis: null
@@ -131,121 +185,239 @@ relations:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 間接持股78.05%，製造高速光纖收發模組
+    detail: 透過訊芯香港持有之光纖收發模組子公司
     details:
-    - 間接持股78.05%，製造高速光纖收發模組
-    edge: e0d611dc68f57
+    - 透過訊芯香港持有之光纖收發模組子公司
+    edge: eed823fa3b25c
     evidence_level: primary
-    id: org.shunyun-technology-zhongshan
+    id: org.shunyun-zhongshan
     name: 訊芸電子科技(中山)有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
+  suppliers:
+  - as_of: '2026-04-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 電子元件
+    details:
+    - 電子元件
+    edge: e6e437bdd6500
+    evidence_level: primary
+    id: us.MCHP
+    name: Microchip Technology
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 電子元件
+    details:
+    - 電子元件
+    edge: ec63955781d77
+    evidence_level: primary
+    id: us.MRVL
+    name: Marvell
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 美金17,890千元（新台幣579,222千元）
+    as_of: '2024-07-29'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團取得盛帆蘇州100%股權
+    details:
+    - 集團取得盛帆蘇州100%股權
+    edge: e6503a8e63971
+    event_date: '2024-07-29'
+    events:
+    - amount: 美金17,890千元（新台幣579,222千元）
+      detail: 集團取得盛帆蘇州100%股權
+      event_date: '2024-07-29'
+    evidence_level: primary
+    id: org.sfa-semicon-suzhou
+    name: 盛帆半導體(蘇州)有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 不超過美金6,500萬元
+    as_of: '2026-08-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 於子公司建置Bumping/RDL產線之投資計畫
+    details:
+    - 於子公司建置Bumping/RDL產線之投資計畫
+    edge: e95b0e89085a9
+    event_date: '2026-08-26'
+    events:
+    - amount: 不超過美金6,500萬元
+      detail: 於子公司建置Bumping/RDL產線之投資計畫
+      event_date: '2026-08-26'
+    evidence_level: primary
+    id: org.shunsin-vietnam
+    name: ShunSin Technology (Vietnam) Company Limited
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 越南盾568,800,000,000元
+    as_of: '2025-02-25'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司訊芯越南簽署租地委建廠房合約
+    details:
+    - 子公司訊芯越南簽署租地委建廠房合約
+    edge: e113577262e41
+    event_date: '2025-02-25'
+    events:
+    - amount: 越南盾568,800,000,000元
+      detail: 子公司訊芯越南簽署租地委建廠房合約
+      event_date: '2025-02-25'
+    evidence_level: primary
+    id: org.東輝有限責任公司
+    name: 東輝有限責任公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 年報主要銷貨客戶表採匿名代碼，未將代碼對應至特定公司。
+- 年報主要供應商採購占比表採匿名代碼，無法將個別占比對應至具名原料供應商。
+- 全球前幾大RF模組設計商及環境光源感測器設計商，未具名。
 website: http://www.shunsintech.com/
 tax_id: '38649225'
 incorporated: '2008-01-08'
 listed: '2015-01-26'
 foreign_registration: KY 開曼群島
-as_of: '2026-10-15'
+as_of: '2026-10-25'
 confidence: ai_cross_checked
 has_research: true
 evidence:
-  tw.6451#e1:
-    locator: 附註一公司沿革，印刷第8頁
-    published_date: '2026-03-11'
-    publisher: 訊芯科技控股股份有限公司
-    quote_check: found
-    title: 2025年度及2024年度合併財務報告
-    url: https://www.shunsintech.com/FinanceReport/2025Q4.pdf
   tw.6451#e10:
-    locator: 附註七(一)母公司與最終控制者，印刷第57頁
+    locator: PDF第61頁，印刷頁58，七(三)1銷貨；單位新台幣千元，欄序為114年度、113年度
     published_date: '2026-03-11'
     publisher: 訊芯科技控股股份有限公司
     quote_check: found
-    title: 2025年度及2024年度合併財務報告
+    title: 訊芯科技控股股份有限公司及子公司2025年度合併財務報告
     url: https://www.shunsintech.com/FinanceReport/2025Q4.pdf
   tw.6451#e11:
-    locator: 附註四(三)2列入合併財報之子公司，印刷第10頁；2025年底持股欄
+    locator: PDF第13頁，印刷頁10，列入合併財務報告之子公司；第一組持股數字為114年底
     published_date: '2026-03-11'
     publisher: 訊芯科技控股股份有限公司
     quote_check: found
-    title: 2025年度及2024年度合併財務報告
+    title: 訊芯科技控股股份有限公司及子公司2025年度合併財務報告
     url: https://www.shunsintech.com/FinanceReport/2025Q4.pdf
   tw.6451#e12:
-    locator: 附註四(三)2列入合併財報之子公司，印刷第10頁
+    locator: PDF第13頁，印刷頁10，列入合併財務報告之子公司
     published_date: '2026-03-11'
     publisher: 訊芯科技控股股份有限公司
     quote_check: found
-    title: 2025年度及2024年度合併財務報告
+    title: 訊芯科技控股股份有限公司及子公司2025年度合併財務報告
     url: https://www.shunsintech.com/FinanceReport/2025Q4.pdf
   tw.6451#e13:
-    locator: 附註四(三)2列入合併財報之子公司，印刷第11頁
+    locator: PDF第14頁，印刷頁11，列入合併財務報告之子公司
     published_date: '2026-03-11'
     publisher: 訊芯科技控股股份有限公司
     quote_check: found
-    title: 2025年度及2024年度合併財務報告
+    title: 訊芯科技控股股份有限公司及子公司2025年度合併財務報告
     url: https://www.shunsintech.com/FinanceReport/2025Q4.pdf
   tw.6451#e14:
-    locator: 附註四(三)2列入合併財報之子公司，印刷第11頁
+    locator: PDF第14頁，印刷頁11，列入合併財務報告之子公司
     published_date: '2026-03-11'
     publisher: 訊芯科技控股股份有限公司
     quote_check: found
-    title: 2025年度及2024年度合併財務報告
+    title: 訊芯科技控股股份有限公司及子公司2025年度合併財務報告
     url: https://www.shunsintech.com/FinanceReport/2025Q4.pdf
-  tw.6451#e2:
-    locator: 印刷第4頁，Income Share of Product Sales in 2025 and 2024；第一個數值為2025年度
-    published_date: null
-    publisher: ShunSin Technology Holdings Limited
-    quote_check: found
-    title: 2025 Annual Report
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52567/2026/RNS/52567_rns_2026-07-10_86148514-177f-4219-b3a0-b49c5a81cc8d.pdf
-  tw.6451#e3:
-    locator: 印刷第4頁，Income Share of Product Sales in 2025 and 2024；第一個數值為2025年度
-    published_date: null
-    publisher: ShunSin Technology Holdings Limited
-    quote_check: found
-    title: 2025 Annual Report
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52567/2026/RNS/52567_rns_2026-07-10_86148514-177f-4219-b3a0-b49c5a81cc8d.pdf
-  tw.6451#e4:
-    locator: 印刷第5頁，Future Development Strategies／Optical Communication Market
-    published_date: null
-    publisher: ShunSin Technology Holdings Limited
-    quote_check: found
-    title: 2025 Annual Report
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52567/2026/RNS/52567_rns_2026-07-10_86148514-177f-4219-b3a0-b49c5a81cc8d.pdf
-  tw.6451#e5:
-    locator: 印刷第96頁，Technologies and products successfully developed／2024年研發成果
-    published_date: null
-    publisher: ShunSin Technology Holdings Limited
-    quote_check: found
-    title: 2025 Annual Report
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52567/2026/RNS/52567_rns_2026-07-10_86148514-177f-4219-b3a0-b49c5a81cc8d.pdf
-  tw.6451#e6:
-    locator: 訊芯簡介，介紹中山全資子公司的主要產品
-    published_date: null
-    publisher: 訊芯科技控股股份有限公司
-    quote_check: found
-    title: 訊芯官網－訊芯簡介
-    url: https://www.shunsintech.com/tw/
-  tw.6451#e7:
-    locator: 公司簡介首段
-    published_date: null
-    publisher: 訊芯科技控股股份有限公司
-    quote_check: found
-    title: 訊芯－公司簡介
-    url: https://www.shunsintech.com/tw/Profile.html
-  tw.6451#e8:
-    locator: 4.主要產品說明：前端模組及功率放大模組
-    published_date: null
-    publisher: 訊芯電子科技(中山)有限公司
-    quote_check: found
-    title: 訊芯中山－SiP系統封裝模組
-    url: https://www.shunsintech.com/zs/tw/prodIntro.aspx
-  tw.6451#e9:
-    locator: 附註七(一)母公司與最終控制者，印刷第57頁
+  tw.6451#e15:
+    locator: PDF第14頁，印刷頁11，列入合併財務報告之子公司；欄序為114年底、113年底
     published_date: '2026-03-11'
     publisher: 訊芯科技控股股份有限公司
     quote_check: found
-    title: 2025年度及2024年度合併財務報告
+    title: 訊芯科技控股股份有限公司及子公司2025年度合併財務報告
+    url: https://www.shunsintech.com/FinanceReport/2025Q4.pdf
+  tw.6451#e16:
+    locator: PDF第31頁，印刷頁28，六(八)取得子公司
+    published_date: '2026-03-11'
+    publisher: 訊芯科技控股股份有限公司
+    quote_check: found
+    title: 訊芯科技控股股份有限公司及子公司2025年度合併財務報告
+    url: https://www.shunsintech.com/FinanceReport/2025Q4.pdf
+  tw.6451#e17:
+    locator: 公告第1至4點，契約種類、事實發生日、相對人及契約總金額
+    published_date: '2025-02-26'
+    publisher: 公開資訊觀測站重大訊息公告，由MoneyDJ刊載
+    quote_check: found
+    title: 訊芯-KY代子公司SHUNSIN TECHNOLOGY (VIETNAM) COMPANY LIMITED公告簽署租地委建興建廠房合約
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=0e55805b-cc6c-417a-9524-a1650335cd5e
+  tw.6451#e18:
+    locator: 公告第2至4點，投資內容、預計金額及辦理日期
+    published_date: '2026-08-26'
+    publisher: 訊芯-KY重大訊息公告，由鉅亨網刊載
+    quote_check: found
+    title: 訊芯-KY公告董事會決議擬於子公司訊芯越南建置Bumping/RDL製程投資計畫案
+    url: https://news.cnyes.com/news/id/6587923
+  tw.6451#e2:
+    locator: PDF第9頁，印刷頁4，2025年度及2024年度產品別銷貨收入占比；欄序為2025年、2024年
+    published_date: '2026-04-30'
+    publisher: 訊芯科技控股股份有限公司
+    quote_check: found
+    title: 訊芯科技控股股份有限公司2025年年報
+    url: https://www.shunsintech.com//ShareholdersMeetingFiles/2026Shareholders%27MeetingAnnualReportZH.pdf
+  tw.6451#e3:
+    locator: PDF第75頁，印刷頁70，競爭情形
+    published_date: '2026-04-30'
+    publisher: 訊芯科技控股股份有限公司
+    quote_check: found
+    title: 訊芯科技控股股份有限公司2025年年報
+    url: https://www.shunsintech.com//ShareholdersMeetingFiles/2026Shareholders%27MeetingAnnualReportZH.pdf
+  tw.6451#e4:
+    locator: 2024年里程碑
+    published_date: null
+    publisher: 訊芯科技控股股份有限公司
+    quote_check: found
+    title: 訊芯成長歷程
+    url: https://www.shunsintech.com/tw/Growth.html
+  tw.6451#e5:
+    locator: 2025年里程碑
+    published_date: null
+    publisher: 訊芯科技控股股份有限公司
+    quote_check: found
+    title: 訊芯成長歷程
+    url: https://www.shunsintech.com/tw/Growth.html
+  tw.6451#e6:
+    locator: PDF第84頁，印刷頁79，主要原料之供應狀況
+    published_date: '2026-04-30'
+    publisher: 訊芯科技控股股份有限公司
+    quote_check: found
+    title: 訊芯科技控股股份有限公司2025年年報
+    url: https://www.shunsintech.com//ShareholdersMeetingFiles/2026Shareholders%27MeetingAnnualReportZH.pdf
+  tw.6451#e7:
+    locator: PDF第92頁，印刷頁87，Relevant Risks in Market Competition；同類SiP模組封測業者段落
+    published_date: null
+    publisher: 訊芯科技控股股份有限公司
+    quote_check: found
+    title: ShunSin Technology Holdings Limited 2024 Annual Report
+    url: https://www.shunsintech.com/ShareholdersMeetingFiles/2025%E5%B9%B4%E5%BA%A6%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1-%E8%8B%B1%E6%96%87.pdf
+  tw.6451#e8:
+    locator: PDF第71頁，印刷頁66，競爭情形
+    published_date: null
+    publisher: 訊芯科技控股股份有限公司
+    quote_check: found
+    title: 訊芯科技控股股份有限公司2024年年報
+    url: https://www.shunsintech.com//ShareholdersMeetingFiles/2025%E5%B9%B4%E5%BA%A6%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1-%E4%B8%AD%E6%96%87.pdf
+  tw.6451#e9:
+    locator: PDF第60頁，印刷頁57，七(一)母公司與最終控制者
+    published_date: '2026-03-11'
+    publisher: 訊芯科技控股股份有限公司
+    quote_check: found
+    title: 訊芯科技控股股份有限公司及子公司2025年度合併財務報告
     url: https://www.shunsintech.com/FinanceReport/2025Q4.pdf

@@ -54,6 +54,25 @@ themes:
   theme: theme.ev
   tier: downstream
 relations:
+  customers:
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares:
+    - as_of: 2025-12
+      basis: purchases
+      of: tw.9941
+      pct: 18
+    detail: 供裕融轉售經銷商的車輛
+    details:
+    - 供裕融轉售經銷商的車輛
+    edge: e58f4b4712154
+    evidence_level: primary
+    id: tw.9941
+    name: 裕融
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
@@ -79,6 +98,21 @@ relations:
     evidence_level: primary
     id: org.yi-jan-overseas-investment
     name: Yi-Jan Overseas Investment Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: '2025-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 日產品牌車輛與零組件委託製造
+    details:
+    - 日產品牌車輛與零組件委託製造
+    edge: e50fac3cf31c9
+    evidence_level: primary
+    id: tw.2201
+    name: 裕隆
     ranking_basis: unranked
     share_basis: null
     share_pct: null

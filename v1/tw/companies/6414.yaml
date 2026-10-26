@@ -17,58 +17,128 @@ industry:
   l3: hw.industrial_pc
   l3_name: 工業電腦與嵌入式系統
   l3_name_en: Industrial PCs & Embedded Systems
-primary_chain_position: midstream
-summary_short: 提供工業電腦、嵌入式系統、工業物聯網及智慧軟體與廠務整合方案。
-summary_long: 樺漢以工業電腦、嵌入式系統及軟硬體整合方案提供產品與服務。2025年工業物聯網占營收48.13%，智慧工廠與廠務占36.24%，智慧軟體與方案占15.63%。主要產品包括嵌入式主機板與電腦系統，並提供工業物聯網技術、工業軟體、機器學習、數位雙生及雲地平台整合。智慧工廠業務涵蓋半導體廠務與自動化系統整合；ESaaS則整合人工智慧、物聯網與雲端技術。官網列示Kontron、瑞祺電通、沅聖科技及帆宣為子公司，機器人相關應用列於智慧軟體與方案。
+primary_chain_position: not_applicable
+summary_short: 提供工業電腦、物聯網、智慧廠務及雲端軟硬體整合服務。
+summary_long: 樺漢以工業電腦、嵌入式系統與雲端軟硬體整合提供產品及服務。2025年三大業務營收比重為工業物聯網48.2%、智慧工廠與廠務36.2%、智慧軟體與方案15.6%。其ESaaS服務結合雲端與終端應用，並與Intel、AMD及NVIDIA合作發展邊緣運算方案。Google Cloud同時是策略合作夥伴及企業AI、資安服務供應來源。NCR Voyix合作模式由樺漢直接提供POS與自助結帳硬體，對方擔任銷售代理。集團子公司包含Kontron、瑞祺電通、帆宣及超恩；超恩推出搭載Jetson Thor的邊緣AI系統，應用於機器人運算。
 segments:
 - evidence_ids:
-  - e1
+  - e01
   id: seg_iiot
   name: 工業物聯網
   period: '2025'
-  revenue_share_pct: 48.13
+  revenue_share_pct: 48.2
 - evidence_ids:
-  - e2
-  id: seg_software
-  name: 智慧軟體與方案
-  period: '2025'
-  revenue_share_pct: 15.63
-- evidence_ids:
-  - e3
+  - e02
   id: seg_factory
   name: 智慧工廠與廠務
   period: '2025'
-  revenue_share_pct: 36.24
+  revenue_share_pct: 36.2
+- evidence_ids:
+  - e03
+  id: seg_software
+  name: 智慧軟體與方案
+  period: '2025'
+  revenue_share_pct: 15.6
 main_theme: theme.robotics
 themes:
 - also: []
-  stage: system
+  stage: control
   theme: theme.robotics
-  tier: downstream
+  tier: midstream
 relations:
-  parents:
-  - as_of: 2026-10
+  partners:
+  - as_of: '2026-10-25'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 官網記載之集團層級母子關係
+    detail: 雲端平台與製造數位轉型策略合作
     details:
-    - 官網記載之集團層級母子關係
-    edge: e06eb41ec67ac
+    - 雲端平台與製造數位轉型策略合作
+    edge: eafd028577b2e
     evidence_level: primary
-    id: org.foxconn-technology-group
-    name: Foxconn Technology Group
+    id: org.google-llc
+    name: Google LLC
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-04-12'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 海外製造據點與產能協調
+    details:
+    - 海外製造據點與產能協調
+    edge: e7b10cd3fd6b2
+    evidence_level: media
+    id: tw.2317
+    name: 鴻海
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-08-05'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 邊緣運算晶片平台整合
+    details:
+    - 邊緣運算晶片平台整合
+    edge: e3dc49cdd9563
+    evidence_level: media
+    id: us.AMD
+    name: AMD
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-25'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 嵌入式平台技術路線及產品開發合作
+    details:
+    - 嵌入式平台技術路線及產品開發合作
+    edge: e7b6496a2522b
+    evidence_level: primary
+    id: us.INTC
+    name: Intel
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-08-05'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 邊緣AI平台整合
+    details:
+    - 邊緣AI平台整合
+    edge: ea22256685bf7
+    evidence_level: primary
+    id: us.NVDA
+    name: NVIDIA
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-01-16'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: POS及自助結帳硬體ODM與銷售代理
+    details:
+    - POS及自助結帳硬體ODM與銷售代理
+    edge: eadd5d01e088f
+    evidence_level: primary
+    id: us.VYX
+    name: NCR Voyix Corporation
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
   subsidiaries:
-  - as_of: 2026-10
+  - as_of: '2026-10-25'
     confidence: ai_cross_checked
     counterparty_shares: []
     detail: 最終母公司
     details:
     - 最終母公司
-    - 官網列示之子公司
+    - 集團子公司
     edge: e9963dfb1487d
     evidence_level: primary
     id: tw.6196
@@ -77,12 +147,12 @@ relations:
     share_basis: null
     share_pct: null
     weight: 2
-  - as_of: 2026-10
+  - as_of: '2026-10-25'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 官網列示之子公司
+    detail: 集團子公司
     details:
-    - 官網列示之子公司
+    - 集團子公司
     - 母公司
     edge: e126bb9fb9a2d
     evidence_level: primary
@@ -92,137 +162,388 @@ relations:
     share_basis: null
     share_pct: null
     weight: 2
-  - as_of: 2026-10
+  - as_of: '2026-08-23'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 官網列示之子公司
+    detail: 集團子公司
     details:
-    - 官網列示之子公司
-    edge: e555a011c3e57
+    - 集團子公司
+    edge: e031a25648d08
     evidence_level: primary
-    id: org.kontron
-    name: Kontron
+    id: eu.KTN
+    name: Kontron AG
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: 2026-10
+  - as_of: '2024-10-29'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 官網列示之子公司
+    detail: 透過新加坡子公司取得控制性持股
     details:
-    - 官網列示之子公司
-    edge: e0d4471022d2b
+    - 透過新加坡子公司取得控制性持股
+    edge: e95af08a9b993
     evidence_level: primary
-    id: org.沅聖科技股份有限公司
-    name: 沅聖科技股份有限公司
+    id: org.nera-telecommunications
+    name: Nera Telecommunications
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: '2026-10-25'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團子公司
+    details:
+    - 集團子公司
+    edge: e270d8d65b95a
+    evidence_level: primary
+    id: org.vecow
+    name: 超恩股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: '2025-10-16'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: Gemini Enterprise與Google Security Operations
+    details:
+    - Gemini Enterprise與Google Security Operations
+    edge: e839c64485681
+    evidence_level: media
+    id: org.google-llc
+    name: Google LLC
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 約2.87億歐元（8月16日公告金額，股數其後微調）
+    as_of: '2026-08-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 公開收購既有子公司股份
+    details:
+    - 公開收購既有子公司股份
+    edge: e8d40b9b74b30
+    event_date: '2026-06-10'
+    events:
+    - amount: 約2.87億歐元（8月16日公告金額，股數其後微調）
+      detail: 公開收購既有子公司股份
+      event_date: '2026-06-10'
+    evidence_level: primary
+    id: eu.KTN
+    name: Kontron AG
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 約歐元111,108千元（財報所列喪失控制權交易對價）
+    as_of: '2025-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司Kontron處分電腦模組業務
+    details:
+    - 子公司Kontron處分電腦模組業務
+    edge: ebddf481e1502
+    event_date: null
+    events:
+    - amount: 約歐元111,108千元（財報所列喪失控制權交易對價）
+      detail: 子公司Kontron處分電腦模組業務
+      event_date: null
+    evidence_level: primary
+    id: org.congatec
+    name: Congatec GmbH
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 歐元128.8百萬元（初始多數股權對價）
+    as_of: '2024-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: Kontron旗下公司收購Katek股權
+    details:
+    - Kontron旗下公司收購Katek股權
+    edge: ec86146a4abd2
+    event_date: '2024-01-18'
+    events:
+    - amount: 歐元128.8百萬元（初始多數股權對價）
+      detail: Kontron旗下公司收購Katek股權
+      event_date: '2024-01-18'
+    evidence_level: primary
+    id: org.katek-se
+    name: Katek SE
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 約新加坡幣1700萬元
+    as_of: '2024-10-29'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司ESS收購股權
+    details:
+    - 子公司ESS收購股權
+    edge: ea8aa07c50f42
+    event_date: '2024-10-29'
+    events:
+    - amount: 約新加坡幣1700萬元
+      detail: 子公司ESS收購股權
+      event_date: '2024-10-29'
+    evidence_level: primary
+    id: org.nera-telecommunications
+    name: Nera Telecommunications
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 普通股新台幣19,739,600元；可轉債新台幣78,500,000元
+    as_of: '2025-10-20'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司樺成國際投資認購私募股票及可轉債
+    details:
+    - 子公司樺成國際投資認購私募股票及可轉債
+    edge: e3ecf2f7a4c7e
+    event_date: '2025-10-20'
+    events:
+    - amount: 普通股新台幣19,739,600元；可轉債新台幣78,500,000元
+      detail: 子公司樺成國際投資認購私募股票及可轉債
+      event_date: '2025-10-20'
+    evidence_level: primary
+    id: tw.5543
+    name: 桓鼎-KY
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: 2026-01
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: POS及自助結帳硬體業務相關資產移轉協議
+    details:
+    - POS及自助結帳硬體業務相關資產移轉協議
+    edge: eb5417110f75f
+    event_date: null
+    events:
+    - amount: null
+      detail: POS及自助結帳硬體業務相關資產移轉協議
+      event_date: null
+    evidence_level: primary
+    id: us.VYX
+    name: NCR Voyix Corporation
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 國際ODM客戶：年報部分敘述未具名。
+- 委外代工廠：年報部分敘述未具名。
+- NCR Voyix終端客戶：所引硬體轉型公告未逐一具名。
 website: https://www.ennoconn.com/tw/
 tax_id: '70380046'
 incorporated: '1999-07-12'
 listed: '2014-03-28'
-as_of: '2026-10-14'
+as_of: '2026-10-25'
 confidence: ai_cross_checked
 has_research: true
 evidence:
-  tw.6414#e1:
-    locator: 印刷頁117，IV. Operational Overview，Sales proportion of main products，Industrial Internet of Things business group列；數字依序為2024及2025
-    published_date: null
-    publisher: 樺漢科技股份有限公司
+  tw.6414#e01:
+    locator: 第4頁，工業物聯網營業收入占比
+    published_date: '2026-03-30'
+    publisher: 樺漢科技
+    quote_check: not_found
+    title: 樺漢科技2025全年法人說明會
+    url: https://www.ennoconn.com/wp-content/uploads/2026/03/%E6%A8%BA%E6%BC%A2_%E6%B3%95%E8%AA%AA_20260330_CH.pdf
+  tw.6414#e02:
+    locator: 第4頁，智慧工廠與廠務營業收入占比
+    published_date: '2026-03-30'
+    publisher: 樺漢科技
+    quote_check: not_found
+    title: 樺漢科技2025全年法人說明會
+    url: https://www.ennoconn.com/wp-content/uploads/2026/03/%E6%A8%BA%E6%BC%A2_%E6%B3%95%E8%AA%AA_20260330_CH.pdf
+  tw.6414#e03:
+    locator: 第4頁，智慧軟體與方案營業收入占比
+    published_date: '2026-03-30'
+    publisher: 樺漢科技
+    quote_check: not_found
+    title: 樺漢科技2025全年法人說明會
+    url: https://www.ennoconn.com/wp-content/uploads/2026/03/%E6%A8%BA%E6%BC%A2_%E6%B3%95%E8%AA%AA_20260330_CH.pdf
+  tw.6414#e04:
+    locator: 內文第一段
+    published_date: '2026-08-13'
+    publisher: MoneyDJ
     quote_check: found
-    title: Ennoconn 2025 Annual Report
-    url: https://www.ennoconn.com/wp-content/uploads/2026/05/EN_%E6%A8%BA%E6%BC%A2%E7%A7%91%E6%8A%80_114%E5%B9%B4%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1_Final.pdf
-  tw.6414#e10:
-    locator: 子公司名錄／Kontron
+    title: 樺漢擴邊緣AI出貨，新加坡／歐亞專案同步展開
+    url: https://m.moneydj.com/f1a.aspx?a=3f5e8529-3a0f-47f8-be0d-d808c17e6fbe&c=MB06
+  tw.6414#e05:
+    locator: 樺漢公司簡介第一段
     published_date: null
-    publisher: 樺漢科技股份有限公司
+    publisher: 樺漢科技
     quote_check: found
-    title: 子公司
-    url: https://www.ennoconn.com/tw/subsidiaries/
-  tw.6414#e11:
-    locator: 子公司名錄／瑞祺電通
+    title: 公司簡介
+    url: https://www.ennoconn.com/tw/company-profile/
+  tw.6414#e06:
+    locator: 谷歌雲平臺（GCP）整合
     published_date: null
-    publisher: 樺漢科技股份有限公司
-    quote_check: found
-    title: 子公司
-    url: https://www.ennoconn.com/tw/subsidiaries/
-  tw.6414#e12:
-    locator: 子公司名錄／沅聖科技
-    published_date: null
-    publisher: 樺漢科技股份有限公司
-    quote_check: found
-    title: 子公司
-    url: https://www.ennoconn.com/tw/subsidiaries/
-  tw.6414#e13:
-    locator: 子公司名錄／帆宣
-    published_date: null
-    publisher: 樺漢科技股份有限公司
-    quote_check: found
-    title: 子公司
-    url: https://www.ennoconn.com/tw/subsidiaries/
-  tw.6414#e14:
-    locator: About首段
-    published_date: null
-    publisher: 樺漢科技股份有限公司
-    quote_check: found
-    title: About
-    url: https://www.ennoconn.com/about/
-  tw.6414#e2:
-    locator: 印刷頁117，Sales proportion of main products，Intelligent software and solutions business group列；數字依序為2024及2025
-    published_date: null
-    publisher: 樺漢科技股份有限公司
-    quote_check: found
-    title: Ennoconn 2025 Annual Report
-    url: https://www.ennoconn.com/wp-content/uploads/2026/05/EN_%E6%A8%BA%E6%BC%A2%E7%A7%91%E6%8A%80_114%E5%B9%B4%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1_Final.pdf
-  tw.6414#e3:
-    locator: 印刷頁117，Sales proportion of main products，Smart factory and facility services business group列；數字依序為2024及2025
-    published_date: null
-    publisher: 樺漢科技股份有限公司
-    quote_check: found
-    title: Ennoconn 2025 Annual Report
-    url: https://www.ennoconn.com/wp-content/uploads/2026/05/EN_%E6%A8%BA%E6%BC%A2%E7%A7%91%E6%8A%80_114%E5%B9%B4%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1_Final.pdf
-  tw.6414#e4:
-    locator: 印刷頁119，Industry overview，The Company's main products段落
-    published_date: null
-    publisher: 樺漢科技股份有限公司
-    quote_check: found
-    title: Ennoconn 2025 Annual Report
-    url: https://www.ennoconn.com/wp-content/uploads/2026/05/EN_%E6%A8%BA%E6%BC%A2%E7%A7%91%E6%8A%80_114%E5%B9%B4%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1_Final.pdf
-  tw.6414#e5:
-    locator: DMS / SI產品與服務段落
-    published_date: null
-    publisher: 樺漢科技股份有限公司
+    publisher: 樺漢科技
     quote_check: found
     title: 產品與服務
     url: https://www.ennoconn.com/tw/about2021/products-and-services/
-  tw.6414#e6:
-    locator: 2.智慧軟體與方案／產品
-    published_date: null
-    publisher: 樺漢科技股份有限公司
+  tw.6414#e07:
+    locator: 三大業務產品組合說明
+    published_date: '2026-03-30'
+    publisher: MoneyDJ
     quote_check: found
-    title: 解決方案
-    url: https://www.ennoconn.com/tw/solutions/
-  tw.6414#e7:
-    locator: 3.智慧工廠與廠務／產品
+    title: NCRV訂單Q2放量，樺漢今年營收／毛利／淨利皆看增
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=e2305ac5-416e-4e28-985f-20ebc579cf43
+  tw.6414#e08:
+    locator: Intel Intelligent Systems
     published_date: null
-    publisher: 樺漢科技股份有限公司
+    publisher: Ennoconn
     quote_check: found
-    title: 解決方案
-    url: https://www.ennoconn.com/tw/solutions/
-  tw.6414#e8:
-    locator: ESaaS解決方案即服務介紹
+    title: Partners
+    url: https://www.ennoconn.com/partners/
+  tw.6414#e09:
+    locator: 產品端合作說明
+    published_date: '2026-08-05'
+    publisher: 台視財經／MoneyDJ
+    quote_check: found
+    title: 樺漢在手訂單強勁，續強化邊緣AI／實體AI應用
+    url: https://www.ttv.com.tw/finance/view/default.asp?from=587&i=082026050958C5E3A0A892F24B97B9936621BC6B9655ECD0
+  tw.6414#e10:
+    locator: 新聞標題
+    published_date: '2021-10-14'
+    publisher: Google Cloud
+    quote_check: found
+    title: Ennoconn Group and Google Cloud Partner to Digitally Transform its Global Open AI-of-Things Cloud Platform
+    url: https://www.googlecloudpresscorner.com/2021-10-14-Ennoconn-Group-and-Google-Cloud-Partner-to-Digitally-Transform-its-Global-Open-AI-of-Things-Cloud-Platform
+  tw.6414#e11:
+    locator: 內文第一段
+    published_date: '2025-10-16'
+    publisher: 經濟日報
+    quote_check: unreachable
+    title: 樺漢攜手Google Cloud推動AI、資安雙引擎
+    url: https://udn.com/news/story/7240/9074208
+  tw.6414#e12:
+    locator: 樺漢與鴻海母集團合作布局
+    published_date: '2024-04-12'
+    publisher: DIGITIMES Research
+    quote_check: found
+    title: 台系IPC業者擴產避地緣政治風險，東南亞製造布局成重要選項
+    url: https://www.digitimes.com.tw/research/report/?cnlid=3&n=1&v=20240412-98
+  tw.6414#e13:
+    locator: 內文第二段，樺漢供貨與NCR代理安排
+    published_date: '2026-01-16'
+    publisher: NCR Voyix
+    quote_check: found
+    title: NCR Voyix Commences Hardware Business Transition with Ennoconn
+    url: https://www.ncrvoyix.com/newsroom/ncr-voyix-commences-hardware-business-transition-with-ennoconn
+  tw.6414#e14:
+    locator: Kontron條目
     published_date: null
-    publisher: 樺漢科技股份有限公司
+    publisher: 樺漢科技
     quote_check: found
-    title: 樺漢科技首頁
-    url: https://www.ennoconn.com/tw/
-  tw.6414#e9:
-    locator: 2.智慧軟體與方案／應用
+    title: 子公司
+    url: https://www.ennoconn.com/tw/subsidiaries/
+  tw.6414#e15:
+    locator: 瑞祺電通股份有限公司條目
     published_date: null
-    publisher: 樺漢科技股份有限公司
+    publisher: 樺漢科技
+    quote_check: not_found
+    title: 子公司
+    url: https://www.ennoconn.com/tw/subsidiaries/
+  tw.6414#e16:
+    locator: 帆宣條目
+    published_date: null
+    publisher: 樺漢科技
+    quote_check: not_found
+    title: 子公司
+    url: https://www.ennoconn.com/tw/subsidiaries/
+  tw.6414#e17:
+    locator: 超恩股份有限公司條目
+    published_date: null
+    publisher: 樺漢科技
+    quote_check: not_found
+    title: 子公司
+    url: https://www.ennoconn.com/tw/subsidiaries/
+  tw.6414#e18:
+    locator: 新聞標題
+    published_date: '2025-08-25'
+    publisher: 超恩股份有限公司
     quote_check: found
-    title: 解決方案
-    url: https://www.ennoconn.com/tw/solutions/
+    title: Vecow Launches EAC-7000 Series Accelerated by NVIDIA Jetson Thor for Next-Generation Edge AI Robotics
+    url: https://www.vecow.com/disppagebox/vecow/vecowcp.aspx?dbid=5616110063&ddspageid=news_en
+  tw.6414#e19:
+    locator: 重大訊息第5點
+    published_date: '2024-10-29'
+    publisher: 公開資訊觀測站／玉山證券
+    quote_check: found
+    title: 樺漢透過Ennoconn Solutions Singapore收購Nera Telecommunications案，已交割完成
+    url: https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B8836D703-B7DE-4EAA-BB7B-AB8CAEB36A02%7D
+  tw.6414#e20:
+    locator: 第186頁，Events after the balance sheet date
+    published_date: '2024-03-28'
+    publisher: Kontron AG
+    quote_check: found
+    title: Kontron AG Annual Report 2023
+    url: https://cms.kontron.com/kontron/ir/reports/q4_2023_kontron_en.pdf
+  tw.6414#e21:
+    locator: Katek收購後續說明
+    published_date: null
+    publisher: Kontron AG
+    quote_check: found
+    title: Kontron AG Half-year Report 2024
+    url: https://cms.kontron.com/kontron/ir/reports/kontron_half-year-report_2024_final_sec.pdf
+  tw.6414#e22:
+    locator: 重大訊息第3、13及25點
+    published_date: '2025-10-20'
+    publisher: 公開資訊觀測站／MoneyDJ
+    quote_check: found
+    title: 樺漢代子公司樺成國際投資公告參與認購桓鼎私募普通股及私募無擔保轉換公司債
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=ad0e1f0a-7dfa-4ddb-8534-92adefb0e4d0&c=MB06
+  tw.6414#e23:
+    locator: 第32頁，Loss of Control Over a Subsidiary
+    published_date: null
+    publisher: 樺漢科技
+    quote_check: found
+    title: 樺漢2025年第二季英文合併財報
+    url: https://www.ennoconn.com/wp-content/uploads/2025/09/%E6%A8%BA%E6%BC%A2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1-25Q2EN.pdf
+  tw.6414#e24:
+    locator: 第32至33頁，電腦模組業務移轉對價及條件調整
+    published_date: null
+    publisher: 樺漢科技
+    quote_check: found
+    title: 樺漢2025年第二季英文合併財報
+    url: https://www.ennoconn.com/wp-content/uploads/2025/09/%E6%A8%BA%E6%BC%A2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1-25Q2EN.pdf
+  tw.6414#e25:
+    locator: 重大訊息第5至6點
+    published_date: '2026-08-23'
+    publisher: 公開資訊觀測站／非凡新聞
+    quote_check: found
+    title: 公告本公司公開收購子公司Kontron AG案，因股東行使撤銷權之最終收購股數
+    url: https://news.ustv.com.tw/companynews/254586
+  tw.6414#e26:
+    locator: 重大訊息第5點
+    published_date: '2026-08-16'
+    publisher: 公開資訊觀測站／MoneyDJ
+    quote_check: found
+    title: 樺漢公告公開收購子公司Kontron AG案最終結算結果
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=5fc6f2cc-5039-4c65-a3af-175e2f8ec966
+  tw.6414#e27:
+    locator: Transition of Hardware Business to ODM Model
+    published_date: null
+    publisher: NCR Voyix／SEC
+    quote_check: unreachable
+    title: NCR Voyix財報附註：Transition of Hardware Business to ODM Model
+    url: https://www.sec.gov/Archives/edgar/data/70866/000007086626000006/R9.htm

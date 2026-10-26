@@ -155,15 +155,23 @@ members:
   evidence:
   - tw.2308#e11
   confidence: ai_cross_checked
+- id: tw.2316
+  stage: components
+  tier: upstream
+  detail: 人形機器人用電路板
+  as_of: '2026-04-30'
+  evidence:
+  - tw.2316#e2
+  confidence: ai_cross_checked
 - id: tw.2328
   stage: components
   tier: upstream
-  detail: 機器人線束及子公司Magnax的AFM動力技術
-  as_of: '2026-03-31'
+  detail: 機器人線束及軸向磁通馬達技術布局
+  as_of: '2026-03-12'
   evidence:
-  - tw.2328#e5
-  - tw.2328#e10
-  - tw.2328#e8
+  - tw.2328#e23
+  - tw.2328#e24
+  - tw.2328#e16
   confidence: ai_cross_checked
 - id: tw.2347
   stage: control
@@ -174,6 +182,14 @@ members:
   - tw.2347#e13
   - tw.2347#e13b
   - tw.2347#e14
+  confidence: ai_cross_checked
+- id: tw.2351
+  stage: components
+  tier: upstream
+  detail: 人形機器人感測器導線架
+  as_of: '2025-06-13'
+  evidence:
+  - tw.2351#e12
   confidence: ai_cross_checked
 - id: tw.2354
   stage: components
@@ -198,14 +214,6 @@ members:
   as_of: 2026-10
   evidence:
   - tw.2359#e5
-  confidence: ai_cross_checked
-- id: tw.2367
-  stage: components
-  tier: upstream
-  detail: 人形機器人關節模組用軟硬結合板打樣
-  as_of: '2026-06-29'
-  evidence:
-  - tw.2367#e5
   confidence: ai_cross_checked
 - id: tw.2374
   stage: system
@@ -239,6 +247,14 @@ members:
   as_of: '2026-10-08'
   evidence:
   - tw.2379#e9
+  confidence: ai_cross_checked
+- id: tw.2388
+  stage: control
+  tier: midstream
+  detail: AMR與AGV邊緣運算平台
+  as_of: '2024-11-27'
+  evidence:
+  - tw.2388#e11
   confidence: ai_cross_checked
 - id: tw.2392
   stage: system
@@ -309,30 +325,22 @@ members:
   - tw.2464#e7
   - tw.2464#e10
   confidence: ai_cross_checked
-- id: tw.2466
-  stage: control
-  tier: midstream
-  detail: 工業機器人控制應用光耦合器及光電繼電器
-  as_of: '2026-10-15'
-  evidence:
-  - tw.2466#e12
-  confidence: ai_cross_checked
-- id: tw.2486
+- id: tw.2489
   stage: system
   tier: downstream
-  detail: 透過中國子公司製造智能服務機器人
-  as_of: 2025-12
+  detail: 機器人整機製造
+  as_of: '2026-03-30'
   evidence:
-  - tw.2486#e5
-  - tw.2486#e14
+  - tw.2489#e07
+  - tw.2489#e08
   confidence: ai_cross_checked
 - id: tw.3019
   stage: components
   tier: upstream
-  detail: 機器人用光達感測
-  as_of: 2026-10
+  detail: 機器人視覺鏡頭
+  as_of: '2026-08-18'
   evidence:
-  - tw.3019#e6
+  - tw.3019#e17
   confidence: ai_cross_checked
 - id: tw.3022
   stage: control
@@ -419,10 +427,18 @@ members:
 - id: tw.3227
   stage: components
   tier: upstream
-  detail: 掃地機感測零組件
-  as_of: 2025-12
+  detail: 掃地機感測元件
+  as_of: '2025-12-31'
   evidence:
-  - tw.3227#e9
+  - tw.3227#e17
+  confidence: ai_cross_checked
+- id: tw.3362
+  stage: components
+  tier: upstream
+  detail: 機器人視覺辨識鏡頭
+  as_of: '2024-12-27'
+  evidence:
+  - tw.3362#e09
   confidence: ai_cross_checked
 - id: tw.3379
   stage: system
@@ -530,6 +546,14 @@ members:
   as_of: 2026-10
   evidence:
   - tw.3652#e6
+  confidence: ai_cross_checked
+- id: tw.3673
+  stage: components
+  tier: upstream
+  detail: 配送機器人光達感測
+  as_of: '2026-04-28'
+  evidence:
+  - tw.3673#e5
   confidence: ai_cross_checked
 - id: tw.3702
   stage: control
@@ -646,21 +670,21 @@ members:
   - tw.4571#e8
   confidence: ai_cross_checked
 - id: tw.4576
-  stage: control
-  tier: midstream
-  detail: 機器人系統用控制器與驅動器
-  as_of: 2026-10
+  stage: components
+  tier: upstream
+  detail: 機器人關節用馬達與回饋元件
+  as_of: '2025-05-15'
   evidence:
   - tw.4576#e8
   confidence: ai_cross_checked
 - id: tw.4583
   stage: components
   tier: upstream
-  detail: 機器人用減速機與傳動零組件
-  as_of: '2026-10-15'
+  detail: 機器人用減速機及傳動零組件
+  as_of: '2025-12-05'
   evidence:
-  - tw.4583#e6
-  - tw.4583#e7
+  - tw.4583#e3
+  - tw.4583#e8
   confidence: ai_cross_checked
 - id: tw.4584
   stage: system
@@ -673,11 +697,10 @@ members:
 - id: tw.4585
   stage: system
   tier: downstream
-  detail: 協作機器人整機與自動化應用
-  as_of: '2026-10-15'
+  detail: 協作機器人整機
+  as_of: 2026-10
   evidence:
-  - tw.4585#e1
-  - tw.4585#e2
+  - tw.4585#e3
   confidence: ai_cross_checked
 - id: tw.4590
   stage: components
@@ -697,29 +720,20 @@ members:
   - tw.4760#e11
   confidence: ai_cross_checked
 - id: tw.4915
-  stage: components
-  tier: upstream
-  detail: 機器人多感知模組
-  as_of: '2026-10-15'
+  stage: control
+  tier: midstream
+  detail: AMR控制器與機器人作業系統
+  as_of: '2026-10-26'
   evidence:
-  - tw.4915#e10
+  - tw.4915#e5
   confidence: ai_cross_checked
 - id: tw.4915
   stage: system
   tier: downstream
-  detail: 自主移動機器人整機與系統整合
-  as_of: '2026-08-19'
+  detail: AMR智慧移動平台
+  as_of: '2026-10-26'
   evidence:
-  - tw.4915#e11
-  confidence: ai_cross_checked
-- id: tw.4919
-  stage: control
-  tier: midstream
-  detail: M3351微控制器支援機器人控制
-  as_of: '2026-09-18'
-  evidence:
-  - tw.4919#e_robotics
-  - tw.4919#e_mcu
+  - tw.4915#e6
   confidence: ai_cross_checked
 - id: tw.4951
   stage: null
@@ -740,10 +754,10 @@ members:
 - id: tw.5351
   stage: components
   tier: upstream
-  detail: 機器人視覺感測與記憶體子系統
-  as_of: '2026-05-12'
+  detail: 機器人應用記憶體
+  as_of: '2026-10-25'
   evidence:
-  - tw.5351#e7
+  - tw.5351#e5
   confidence: ai_cross_checked
 - id: tw.5386
   stage: control
@@ -832,27 +846,10 @@ members:
 - id: tw.6166
   stage: control
   tier: midstream
-  detail: 機器人自主控制器與ECU
-  as_of: '2026-10-15'
+  detail: 嵌入式ROS 2機器人控制器
+  as_of: 2026-10
   evidence:
-  - tw.6166#e5
-  confidence: ai_cross_checked
-- id: tw.6173
-  stage: components
-  tier: upstream
-  detail: 機器人應用被動元件
-  as_of: '2026-06-30'
-  evidence:
-  - tw.6173#e9
-  - tw.6173#e10
-  confidence: ai_cross_checked
-- id: tw.6176
-  stage: components
-  tier: upstream
-  detail: 子公司超穎透鏡用於工業機器人3D感測
-  as_of: '2025-04-24'
-  evidence:
-  - tw.6176#e4
+  - tw.6166#e7
   confidence: ai_cross_checked
 - id: tw.6188
   stage: system
@@ -912,13 +909,13 @@ members:
   - tw.6234#e8
   confidence: ai_cross_checked
 - id: tw.6414
-  stage: system
-  tier: downstream
-  detail: 機器人與數位雙生之軟體及平台整合應用
-  as_of: 2026-10
+  stage: control
+  tier: midstream
+  detail: 透過超恩提供機器人邊緣運算系統
+  as_of: '2025-08-25'
   evidence:
-  - tw.6414#e6
-  - tw.6414#e9
+  - tw.6414#e17
+  - tw.6414#e18
   confidence: ai_cross_checked
 - id: tw.6438
   stage: system
@@ -989,10 +986,10 @@ members:
 - id: tw.6579
   stage: control
   tier: midstream
-  detail: PICO-MTU4-SEMI機器人運算平台
-  as_of: '2026-10-15'
+  detail: 機器人邊緣運算與控制平台
+  as_of: '2026-10-26'
   evidence:
-  - tw.6579#e7
+  - tw.6579#e17
   confidence: ai_cross_checked
 - id: tw.6609
   stage: system
@@ -1224,10 +1221,10 @@ members:
 - id: tw.9917
   stage: system
   tier: downstream
-  detail: AI巡檢機器人系統應用
-  as_of: '2025-05-20'
+  detail: 自主巡邏機器人系統整合
+  as_of: '2025-12-31'
   evidence:
-  - tw.9917#e13
+  - tw.9917#e16
   confidence: ai_cross_checked
 - id: tw.9925
   stage: system
@@ -1245,4 +1242,4 @@ members:
   evidence:
   - tw.9942#e04
   confidence: ai_cross_checked
-as_of: '2026-10-25'
+as_of: '2026-10-26'

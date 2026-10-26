@@ -37,14 +37,22 @@ members:
   evidence:
   - tw.2330#e_syn
   confidence: ai_cross_checked
+- id: tw.2458
+  stage: devices
+  tier: midstream
+  detail: 光電整合方案之EIC、TIA及雷射驅動器研發
+  as_of: '2026-06-08'
+  evidence:
+  - tw.2458#e13
+  - tw.2458#e14
+  confidence: ai_cross_checked
 - id: tw.3016
   stage: materials
   tier: upstream
-  detail: 光通訊PD用鍺矽磊晶
+  detail: 矽光子用鍺矽磊晶
   as_of: '2026-09-22'
   evidence:
   - tw.3016#e7
-  - tw.3016#e8
   confidence: ai_cross_checked
 - id: tw.3048
   stage: devices
@@ -71,22 +79,21 @@ members:
   - tw.3081#e6
   confidence: ai_cross_checked
 - id: tw.3163
-  stage: modules
-  tier: downstream
-  detail: 矽光子生態系的光纖連接模組
-  as_of: '2026-03-10'
+  stage: devices
+  tier: midstream
+  detail: 矽光子系統光連接器與光纖組件
+  as_of: '2025-03-27'
   evidence:
   - tw.3163#e9
-  - tw.3163#e7
-  - tw.3163#e8
+  - tw.3163#e10
   confidence: ai_cross_checked
 - id: tw.3234
   stage: modules
   tier: downstream
-  detail: 矽光子耦光與COB封裝平台
-  as_of: '2026-10-15'
+  detail: 矽光晶片與Fiber Array的COB封裝平台
+  as_of: '2025-12-31'
   evidence:
-  - tw.3234#e11
+  - tw.3234#e7
   confidence: ai_cross_checked
 - id: tw.3339
   stage: devices
@@ -97,20 +104,20 @@ members:
   - tw.3339#e7
   confidence: ai_cross_checked
 - id: tw.3363
-  stage: modules
-  tier: downstream
-  detail: 矽光子光收發模組用保偏光纖陣列封裝
-  as_of: '2026-10-14'
+  stage: devices
+  tier: midstream
+  detail: 矽光子晶片用被動光纖陣列元件
+  as_of: '2026-10-25'
   evidence:
-  - tw.3363#e09
+  - tw.3363#e3
   confidence: ai_cross_checked
 - id: tw.3450
   stage: modules
   tier: downstream
-  detail: 矽光子高速傳輸光模組
-  as_of: '2026-05-06'
+  detail: 含矽光子產品的高速傳輸光模組
+  as_of: '2025-12-31'
   evidence:
-  - tw.3450#e3
+  - tw.3450#e1
   confidence: ai_cross_checked
 - id: tw.3587
   stage: devices
@@ -128,32 +135,22 @@ members:
   evidence:
   - tw.4979#e6
   confidence: ai_cross_checked
-- id: tw.4991
-  stage: devices
-  tier: midstream
-  detail: 矽光子光源用CW雷射研發
-  as_of: '2026-04-05'
-  evidence:
-  - tw.4991#e11
-  - tw.4991#e12
-  confidence: ai_cross_checked
 - id: tw.6182
   stage: materials
   tier: upstream
-  detail: 子公司睿晶科技供矽光子應用的SOI晶圓
-  as_of: '2026-10-14'
+  detail: 子公司睿晶的矽光子用SOI材料
+  as_of: 2026-10
   evidence:
-  - tw.6182#e8
-  - tw.6182#e9
-  - tw.6182#e11
+  - tw.6182#e4
+  - tw.6182#e5
   confidence: ai_cross_checked
 - id: tw.6197
   stage: modules
   tier: downstream
-  detail: 矽光子1.6T光收發模組
-  as_of: '2026-10-15'
+  detail: 矽光子光收發模組
+  as_of: '2026-10-25'
   evidence:
-  - tw.6197#e9
+  - tw.6197#e5
   confidence: ai_cross_checked
 - id: tw.6209
   stage: devices
@@ -174,8 +171,8 @@ members:
 - id: tw.6451
   stage: modules
   tier: downstream
-  detail: 矽光子光收發模組
-  as_of: '2026-04-30'
+  detail: 子公司矽光收發模組開發
+  as_of: 2025-12
   evidence:
   - tw.6451#e5
   confidence: ai_cross_checked
@@ -211,14 +208,6 @@ members:
   evidence:
   - tw.6789#e6
   confidence: ai_cross_checked
-- id: tw.6830
-  stage: devices
-  tier: midstream
-  detail: 矽光子PIC元件測試與失效分析
-  as_of: '2026-10-15'
-  evidence:
-  - tw.6830#e5
-  confidence: ai_cross_checked
 - id: tw.8111
   stage: devices
   tier: midstream
@@ -227,4 +216,4 @@ members:
   evidence:
   - tw.8111#e5
   confidence: ai_cross_checked
-as_of: '2026-10-23'
+as_of: '2026-10-25'

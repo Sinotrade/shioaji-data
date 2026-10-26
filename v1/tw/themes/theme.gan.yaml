@@ -39,13 +39,13 @@ members:
   - tw.2340#e7
   - tw.2340#e11
   confidence: ai_cross_checked
-- id: tw.2393
-  stage: devices
-  tier: midstream
-  detail: GaN功率封裝元件
-  as_of: '2026-10-15'
+- id: tw.2351
+  stage: application
+  tier: downstream
+  detail: GaN功率應用之導線架開發
+  as_of: '2025-11-06'
   evidence:
-  - tw.2393#e10
+  - tw.2351#e09
   confidence: ai_cross_checked
 - id: tw.2420
   stage: application
@@ -54,14 +54,6 @@ members:
   as_of: 2026-06
   evidence:
   - tw.2420#e6
-  confidence: ai_cross_checked
-- id: tw.2426
-  stage: devices
-  tier: midstream
-  detail: GaN功率電晶體開發
-  as_of: 2026-04
-  evidence:
-  - tw.2426#e8
   confidence: ai_cross_checked
 - id: tw.2436
   stage: application
@@ -90,8 +82,8 @@ members:
 - id: tw.3016
   stage: substrate
   tier: upstream
-  detail: 矽基氮化鎵磊晶材料
-  as_of: '2026-10-15'
+  detail: 氮化鎵磊晶材料
+  as_of: '2026-10-25'
   evidence:
   - tw.3016#e6
   confidence: ai_cross_checked
@@ -170,19 +162,19 @@ members:
 - id: tw.3707
   stage: devices
   tier: midstream
-  detail: 氮化鎵元件晶圓代工
-  as_of: '2026-10-15'
+  detail: 氮化鎵元件晶圓製造
+  as_of: '2026-10-26'
   evidence:
-  - tw.3707#e1
-  - tw.3707#e5
+  - tw.3707#e04
   confidence: ai_cross_checked
-- id: tw.4919
-  stage: devices
-  tier: midstream
-  detail: 日本子公司GaN功率元件製造
-  as_of: '2024-12-31'
+- id: tw.3707
+  stage: substrate
+  tier: upstream
+  detail: 子公司嘉晶氮化鎵磊晶
+  as_of: '2025-12-31'
   evidence:
-  - tw.4919#e_gan_devices
+  - tw.3707#e11
+  - tw.3707#e19
   confidence: ai_cross_checked
 - id: tw.4971
   stage: substrate
@@ -195,10 +187,10 @@ members:
 - id: tw.4991
   stage: devices
   tier: midstream
-  detail: GaN HEMT元件製造製程
-  as_of: '2026-10-14'
+  detail: 氮化鎵晶圓代工製程研發
+  as_of: 2025-06
   evidence:
-  - tw.4991#e17
+  - tw.4991#e15
   confidence: ai_cross_checked
 - id: tw.5222
   stage: devices
@@ -254,9 +246,9 @@ members:
   stage: substrate
   tier: upstream
   detail: 氮化鎵磊晶材料
-  as_of: '2026-10-14'
+  as_of: 2026-10
   evidence:
-  - tw.6182#e10
+  - tw.6182#e6
   confidence: ai_cross_checked
 - id: tw.6270
   stage: application
@@ -269,18 +261,18 @@ members:
 - id: tw.6271
   stage: application
   tier: downstream
-  detail: GaN功率元件與模組封裝測試
-  as_of: '2026-04-15'
+  detail: GaN功率元件及模組封裝測試
+  as_of: 2025-05
   evidence:
-  - tw.6271#e6
+  - tw.6271#e08
   confidence: ai_cross_checked
 - id: tw.6412
   stage: application
   tier: downstream
-  detail: 氮化鎵筆電電源應用
-  as_of: '2024-12-26'
+  detail: 採用氮化鎵元件的筆電電源
+  as_of: '2026-03-06'
   evidence:
-  - tw.6412#e4
+  - tw.6412#e6
   confidence: ai_cross_checked
 - id: tw.6488
   stage: substrate
@@ -331,14 +323,6 @@ members:
   - tw.7712#e2
   - tw.7712#e5
   confidence: ai_cross_checked
-- id: tw.8028
-  stage: devices
-  tier: midstream
-  detail: GaN晶圓薄化加工
-  as_of: '2026-10-14'
-  evidence:
-  - tw.8028#e7
-  confidence: ai_cross_checked
 - id: tw.8045
   stage: application
   tier: downstream
@@ -365,4 +349,4 @@ members:
   evidence:
   - tw.8261#e6
   confidence: ai_cross_checked
-as_of: '2026-10-24'
+as_of: '2026-10-26'

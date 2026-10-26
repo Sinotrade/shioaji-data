@@ -149,6 +149,21 @@ relations:
     share_pct: null
     weight: 1
   suppliers:
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 歷史商船客戶
+    details:
+    - 歷史商船客戶
+    - 歷史訂造十艘2,800 TEU貨櫃輪
+    edge: e717ae6553010
+    evidence_level: primary
+    id: tw.2208
+    name: 台船
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 2
   - as_of: '2026-09-02'
     confidence: ai_cross_checked
     counterparty_shares: []
@@ -191,21 +206,32 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2020-05-20'
+  transactions:
+  - amount: 新臺幣11,220,000,000元
+    as_of: '2025-10-16'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 歷史訂造十艘2,800 TEU貨櫃輪
+    detail: 出售南港昆陽街全棟商辦
     details:
-    - 歷史訂造十艘2,800 TEU貨櫃輪
-    edge: e717ae6553010
+    - 出售南港昆陽街全棟商辦
+    - 購入台北市南港區整棟辦公大樓
+    edge: e92d05ab44e35
+    event_date: '2025-10-16'
+    events:
+    - amount: 新臺幣11,220,000,000元
+      detail: 出售南港昆陽街全棟商辦
+      event_date: '2025-10-16'
+    - amount: 112.2億元
+      detail: 購入台北市南港區整棟辦公大樓
+      event_date: '2025-10-16'
     evidence_level: primary
-    id: tw.2208
-    name: 台船
+    id: tw.2548
+    name: 華固
     ranking_basis: unranked
+    role: buyer
     share_basis: null
     share_pct: null
-    weight: 1
-  transactions:
+    weight: 2
   - amount: 13.64~15.31億美元
     as_of: '2026-09-02'
     confidence: ai_cross_checked
@@ -310,27 +336,6 @@ relations:
     evidence_level: media
     id: org.shoei-kisen-kaisha
     name: 正榮汽船株式會社
-    ranking_basis: unranked
-    role: buyer
-    share_basis: null
-    share_pct: null
-    weight: 1
-  - amount: 112.2億元
-    as_of: '2025-10-16'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 購入台北市南港區整棟辦公大樓
-    details:
-    - 購入台北市南港區整棟辦公大樓
-    edge: e92d05ab44e35
-    event_date: '2025-10-16'
-    events:
-    - amount: 112.2億元
-      detail: 購入台北市南港區整棟辦公大樓
-      event_date: '2025-10-16'
-    evidence_level: media
-    id: tw.2548
-    name: 華固
     ranking_basis: unranked
     role: buyer
     share_basis: null

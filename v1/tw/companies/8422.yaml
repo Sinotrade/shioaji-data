@@ -18,104 +18,152 @@ industry:
   l3_name: 廢棄物處理與資源回收
   l3_name_en: Waste Management & Recycling
 primary_chain_position: not_applicable
-summary_short: 以事業廢棄物固化、掩埋、清運及污染整治服務為主要收入來源。
-summary_long: 可寧衛主要提供事業廢棄物固化、掩埋、清運及污染場址開挖整治服務。2025年合併營收中，固化及開挖服務占36.74%，掩埋服務占33.09%，清運服務占2.73%。其他收入包括太陽能發電12.66%、再生紙銷售8.69%、預拌混凝土銷售4.80%及其他1.29%。集團透過子公司分工，大寧與吉衛經營掩埋業務，上評資源循環從事造紙，吉鼎材料製造預拌混凝土，大創綠能推動太陽光電案場。
+summary_short: 以事業廢棄物固化、掩埋、清運及污染整治為主要收入，兼營發電與再生材料。
+summary_long: 可寧衛主要提供事業廢棄物固化、掩埋、清運及污染場址整治服務。依2026年法說會媒體報導，2025年廢棄物處理約占營收58%、開挖專案15%，其餘包括發電12%、造紙9%及混凝土5%。官網固化處理實績列有台積電、中油與台電，另揭露曾承作中油污染場址整治。集團透過上評資源循環經營再生紙、吉鼎材料製造預拌混凝土，大創綠能布局漁電共生太陽能。可寧衛另與台灣人壽合資成立吉信，參與高雄市焚化爐BOT案，並於2026年決議再增資吉信5.5億元。
 segments:
 - evidence_ids:
   - e2
-  id: seg_solidification
-  name: 廢棄物固化及開挖服務
+  id: seg_waste
+  name: 廢棄物處理（固化、掩埋及清運）
   period: '2025'
-  revenue_share_pct: 36.74
+  revenue_share_pct: 58
 - evidence_ids:
   - e2
-  id: seg_landfill
-  name: 廢棄物掩埋服務
+  id: seg_remediation
+  name: 開挖及污染整治專案
   period: '2025'
-  revenue_share_pct: 33.09
+  revenue_share_pct: 15
 - evidence_ids:
   - e2
-  id: seg_transport
-  name: 廢棄物清運服務
+  id: seg_power
+  name: 發電（含太陽能）
   period: '2025'
-  revenue_share_pct: 2.73
+  revenue_share_pct: 12
 - evidence_ids:
-  - e3
+  - e2
   id: seg_paper
-  name: 再生紙銷售
+  name: 造紙
   period: '2025'
-  revenue_share_pct: 8.69
+  revenue_share_pct: 9
 - evidence_ids:
-  - e3
+  - e2
   id: seg_concrete
-  name: 預拌混凝土銷售
+  name: 預拌混凝土
   period: '2025'
-  revenue_share_pct: 4.8
-- evidence_ids:
-  - e3
-  id: seg_solar
-  name: 太陽能發電
-  period: '2025'
-  revenue_share_pct: 12.66
-- evidence_ids:
-  - e3
-  id: seg_other
-  name: 其他
-  period: '2025'
-  revenue_share_pct: 1.29
+  revenue_share_pct: 5
 relations:
+  customers:
+  - as_of: '2026-10-25'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 廢棄物固化處理實績
+    details:
+    - 廢棄物固化處理實績
+    - 特貿二南污染場址整治歷史專案
+    edge: e1d482ee2a8c7
+    evidence_level: primary
+    id: org.cpc-taiwan
+    name: 中油
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-25'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 廢棄物固化處理實績
+    details:
+    - 廢棄物固化處理實績
+    - 歷史太陽能躉售，2024年改為自用
+    edge: e420eb47a153e
+    evidence_level: primary
+    id: org.taipower
+    name: 台灣電力公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-25'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 有害事業廢棄物固化處理實績
+    details:
+    - 有害事業廢棄物固化處理實績
+    edge: e9b39f523ac4d
+    evidence_level: primary
+    id: tw.2330
+    name: 台積電
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  partners:
+  - as_of: '2025-08-22'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 合資吉信參與高雄市焚化爐BOT
+    details:
+    - 合資吉信參與高雄市焚化爐BOT
+    edge: ec5a6869f54a1
+    evidence_level: media
+    id: org.taiwan-life
+    name: 台灣人壽
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 推動太陽光電案場之子公司
+    detail: 集團造紙子公司
     details:
-    - 推動太陽光電案場之子公司
-    edge: ec4a011a8c402
+    - 集團造紙子公司
+    edge: e5bbe4cd76f64
     evidence_level: primary
-    id: org.da-chuang-green-energy
-    name: 大創綠能股份有限公司
+    id: org.上評資源循環股份有限公司
+    name: 上評資源循環股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-06-02'
+  - as_of: '2024-08-05'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 經營一般事業廢棄物掩埋場之子公司
+    detail: 直接全資子公司
     details:
-    - 經營一般事業廢棄物掩埋場之子公司
-    edge: ed931c89beea8
+    - 直接全資子公司
+    edge: e2e4b80b2719f
     evidence_level: primary
-    id: org.da-ning
-    name: 大寧股份有限公司
+    id: org.可寧衛企業股份有限公司
+    name: 可寧衛企業股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2025-12-31'
+  - as_of: '2026-03-11'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 製造預拌混凝土之子公司
+    detail: 持股55%的焚化爐BOT子公司
     details:
-    - 製造預拌混凝土之子公司
-    edge: e687f6654bc37
+    - 持股55%的焚化爐BOT子公司
+    edge: e2702b22259b0
     evidence_level: primary
-    id: org.ji-ding-materials
-    name: 吉鼎材料股份有限公司
+    id: org.吉信股份有限公司
+    name: 吉信股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-06-02'
+  - as_of: '2023-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 經營固化及穩定化產物掩埋場之子公司
+    detail: 年報列示子公司
     details:
-    - 經營固化及穩定化產物掩埋場之子公司
-    edge: e3cad9d7092e0
+    - 年報列示子公司
+    edge: e476487c6a15a
     evidence_level: primary
-    id: org.ji-wei
+    id: org.吉衛股份有限公司
     name: 吉衛股份有限公司
     ranking_basis: unranked
     share_basis: null
@@ -124,99 +172,311 @@ relations:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 從事造紙之子公司
+    detail: 預拌混凝土子公司
     details:
-    - 從事造紙之子公司
-    edge: e9576669d782d
+    - 預拌混凝土子公司
+    edge: efd9a31709722
     evidence_level: primary
-    id: org.shang-ping-resource-recycling
-    name: 上評資源循環股份有限公司
+    id: org.吉鼎材料股份有限公司
+    name: 吉鼎材料股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: '2024-08-05'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過可寧衛企業持有的間接全資子公司
+    details:
+    - 透過可寧衛企業持有的間接全資子公司
+    edge: e259292de30f3
+    evidence_level: primary
+    id: org.大創綠能股份有限公司
+    name: 大創綠能股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團子公司
+    details:
+    - 集團子公司
+    edge: e827cfa40d91e
+    evidence_level: primary
+    id: org.大寧股份有限公司
+    name: 大寧股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-09-29'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: SRF再生能源電廠子公司
+    details:
+    - SRF再生能源電廠子公司
+    edge: ebec59f427f03
+    evidence_level: primary
+    id: org.大源股份有限公司
+    name: 大源股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2023-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 年報列示子公司
+    details:
+    - 年報列示子公司
+    edge: e0789ee611160
+    evidence_level: primary
+    id: org.岡聯事業股份有限公司
+    name: 岡聯事業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 新台幣550,000仟元
+    as_of: '2026-03-11'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 投資合資設立吉信
+    details:
+    - 投資合資設立吉信
+    - 現金增資吉信
+    edge: e6f3342045298
+    event_date: '2025-08-06'
+    events:
+    - amount: 新台幣550,000仟元
+      detail: 現金增資吉信
+      event_date: '2026-03-11'
+    - amount: 新台幣550,000仟元
+      detail: 投資合資設立吉信
+      event_date: '2025-08-06'
+    evidence_level: primary
+    id: org.吉信股份有限公司
+    name: 吉信股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣31,181,970元
+    as_of: '2024-08-05'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司可寧衛企業出售梓官土地予孫公司
+    details:
+    - 子公司可寧衛企業出售梓官土地予孫公司
+    edge: e33a5bf813baf
+    event_date: '2024-08-05'
+    events:
+    - amount: 新台幣31,181,970元
+      detail: 子公司可寧衛企業出售梓官土地予孫公司
+      event_date: '2024-08-05'
+    evidence_level: primary
+    id: org.大創綠能股份有限公司
+    name: 大創綠能股份有限公司
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣44.8佰萬元
+    as_of: '2025-10-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司吉信取得第三方技術顧問服務
+    details:
+    - 子公司吉信取得第三方技術顧問服務
+    edge: e87e98dace286
+    event_date: '2025-10-23'
+    events:
+    - amount: 新台幣44.8佰萬元
+      detail: 子公司吉信取得第三方技術顧問服務
+      event_date: '2025-10-23'
+    evidence_level: primary
+    id: org.技佳工程科技股份有限公司
+    name: 技佳工程科技股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 日幣81.9億元，折合新台幣約16.8億元
+    as_of: '2025-10-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司吉信取得焚化鍋爐
+    details:
+    - 子公司吉信取得焚化鍋爐
+    edge: e276870f62f2b
+    event_date: '2025-10-23'
+    events:
+    - amount: 日幣81.9億元，折合新台幣約16.8億元
+      detail: 子公司吉信取得焚化鍋爐
+      event_date: '2025-10-23'
+    evidence_level: primary
+    id: org.荏原環境工程株式會社
+    name: 荏原環境工程株式會社
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 半導體：候選線索僅為產業泛稱，不能建立單一企業關係。
+- 大源SRF電廠新建工程承包商：2026年增補公告未重列名稱。
+- 原物料及耗材供應商：未取得可核實的具名持續供應關係。
 website: http://www.cleanaway.tw
 tax_id: '16908140'
 incorporated: '1999-05-04'
 listed: '2011-10-05'
-as_of: '2026-10-15'
+as_of: '2026-10-26'
 confidence: ai_cross_checked
 has_research: true
 evidence:
   tw.8422#e10:
+    locator: 吉鼎服務介紹
+    published_date: null
+    publisher: 可寧衛股份有限公司
+    quote_check: found
+    title: 循環經濟：吉鼎
+    url: https://www.cleanaway.tw/circular-economy.html
+  tw.8422#e11:
+    locator: 其他空污排放
+    published_date: null
+    publisher: 可寧衛股份有限公司
+    quote_check: found
+    title: 碳管理及減排行動
+    url: https://www.cleanaway.tw/csr/csr-susenvironmental-weatherchange.html
+  tw.8422#e12:
+    locator: 公告第4項，交易相對人及關係
+    published_date: '2024-08-06'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ轉載
+    quote_check: found
+    title: 可寧衛企業、大創綠能處分及取得高雄市梓官區土地事宜
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=7afc0009-3bcb-49f8-97ef-75559107c085
+  tw.8422#e13:
+    locator: 公告第2、3、5項：事件日期、金額及升壓站用途
+    published_date: '2024-08-06'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ轉載
+    quote_check: found
+    title: 可寧衛企業、大創綠能處分及取得高雄市梓官區土地事宜
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=7afc0009-3bcb-49f8-97ef-75559107c085
+  tw.8422#e14:
+    locator: 公告第1至5、14、17項
+    published_date: '2025-08-06'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ轉載
+    quote_check: found
+    title: 可寧衛董事會通過合資設立子公司吉信，計5.5億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=6c8c02ca-4140-458c-9af2-4e0577a6048c
+  tw.8422#e15:
+    locator: 公告第2至6、14項
+    published_date: '2026-03-12'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ轉載
+    quote_check: found
+    title: 可寧衛*董事會通過現增吉信5.5億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=eb677dd3-26d4-49a7-9c51-0eb21a43994b
+  tw.8422#e16:
+    locator: 邱建齊報導，合資吉信及高雄焚化爐BOT說明
+    published_date: '2025-08-22'
+    publisher: MoneyDJ理財網
+    quote_check: found
+    title: 可寧衛成立吉信公司，明年估挹注6億營收
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=e162926a-39cb-4fe3-bed1-8b8269bb428f
+  tw.8422#e17:
+    locator: 公告主旨及第1至5項
+    published_date: '2025-10-23'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ轉載
+    quote_check: found
+    title: 代子公司吉信股份有限公司公告取得營業用資產
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=c7b04fa3-3e12-4677-bf20-e0ec03240983
+  tw.8422#e18:
+    locator: 公告第6項，交易相對人
+    published_date: '2025-10-23'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ轉載
+    quote_check: found
+    title: 代子公司吉信股份有限公司公告取得營業用資產
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=c7b04fa3-3e12-4677-bf20-e0ec03240983
+  tw.8422#e19:
+    locator: 公告第3項，變動緣由及主要內容
+    published_date: '2026-09-29'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ轉載
+    quote_check: found
+    title: 代重要子公司大源公告取得營業資產，變更原工程合約內容
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=56dc6e7e-62bf-4b95-816f-972c9aebc693
+  tw.8422#e2:
+    locator: 邱建齊報導，末段2025年各事業營收占比
+    published_date: '2026-03-25'
+    publisher: MoneyDJ理財網
+    quote_check: found
+    title: 205後兩期已交地，可寧衛*南區BOT舊廠開始運作
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=c93dc3ab-41e4-4f57-adbd-356146ff3190
+  tw.8422#e20:
+    locator: 延續EP100精神，持續提升能源生產力
+    published_date: null
+    publisher: 可寧衛股份有限公司
+    quote_check: found
+    title: 能源治理及效率提升
+    url: https://www.cleanaway.tw/csr/csr-susenvironmental-energypolicy.html
+  tw.8422#e21:
+    locator: PDF第58頁，溫室氣體確信範圍；財務報告子公司資訊
+    published_date: null
+    publisher: 可寧衛股份有限公司
+    quote_check: found
+    title: 112年度可寧衛年報
+    url: https://www.cleanaway.tw/File/Invest/FCC8F789-DE85-4F21-902E-8D7F9E5C4E02/112%E5%B9%B4%E5%BA%A6%E5%8F%AF%E5%AF%A7%E8%A1%9B%E5%B9%B4%E5%A0%B1(C).pdf
+  tw.8422#e3:
+    locator: 服務方案及可寧衛服務介紹
+    published_date: null
+    publisher: 可寧衛股份有限公司
+    quote_check: found
+    title: 環境服務
+    url: https://www.cleanaway.tw/service-intro.html
+  tw.8422#e4:
+    locator: 可寧衛／固化處理實績／民營事業機構／處理單位
+    published_date: null
+    publisher: 可寧衛股份有限公司
+    quote_check: found
+    title: 環境服務：固化處理實績
+    url: https://www.cleanaway.tw/service-intro.html
+  tw.8422#e5:
+    locator: 可寧衛／固化處理實績／國營企業／處理單位
+    published_date: null
+    publisher: 可寧衛股份有限公司
+    quote_check: found
+    title: 環境服務：固化處理實績
+    url: https://www.cleanaway.tw/service-intro.html
+  tw.8422#e6:
+    locator: 第38頁，3.6外部組織參與／肯定與榮耀；報告載明2021年8月發行
+    published_date: null
+    publisher: 可寧衛股份有限公司
+    quote_check: found
+    title: 2020企業社會責任報告書
+    url: https://www.cleanaway.tw/csr/download/2020_CSR_Report.pdf
+  tw.8422#e7:
+    locator: 2024年／綠電－太陽能發電自發自用
+    published_date: null
+    publisher: 可寧衛股份有限公司
+    quote_check: found
+    title: 碳管理大紀事
+    url: https://www.cleanaway.tw/csr/csr-carbonmanage-bigthing.html
+  tw.8422#e8:
     locator: 大創綠能服務介紹
     published_date: null
     publisher: 可寧衛股份有限公司
     quote_check: found
     title: 再生能源
     url: https://www.cleanaway.tw/renewable-energy.html
-  tw.8422#e11:
-    locator: 公告說明第2、3項
-    published_date: '2026-06-02'
-    publisher: 公開資訊觀測站（鉅亨網轉載）
-    quote_check: found
-    title: 可寧衛*:更正114年3月至12月資金貸與資訊揭露明細表、114年度個體暨合併財務報告、114年度IFRSs iXBRL
-    url: https://news.cnyes.com/news/id/6481006
-  tw.8422#e12:
-    locator: 2021年
-    published_date: null
-    publisher: 可寧衛股份有限公司
-    quote_check: found
-    title: 歷史沿革
-    url: https://www.cleanaway.tw/about-history.html
-  tw.8422#e2:
-    locator: 第102頁，公司主要營業項目占合併營業收入之比重
-    published_date: '2026-05-08'
-    publisher: 可寧衛股份有限公司
-    quote_check: found
-    title: 可寧衛114年度年報
-    url: https://www.cleanaway.tw/File/Invest/CFD8C65D-7CDD-46E9-8456-1B1D5222C76A/%E5%8F%AF%E5%AF%A7%E8%A1%9B114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1%28%E4%B8%AD%29%28lock%29_%20%E4%B8%8A%E5%82%B3%E6%AA%94.pdf
-  tw.8422#e3:
-    locator: 第102頁，公司主要營業項目占合併營業收入之比重
-    published_date: '2026-05-08'
-    publisher: 可寧衛股份有限公司
-    quote_check: found
-    title: 可寧衛114年度年報
-    url: https://www.cleanaway.tw/File/Invest/CFD8C65D-7CDD-46E9-8456-1B1D5222C76A/%E5%8F%AF%E5%AF%A7%E8%A1%9B114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1%28%E4%B8%AD%29%28lock%29_%20%E4%B8%8A%E5%82%B3%E6%AA%94.pdf
-  tw.8422#e4:
-    locator: 第74頁，溫室氣體盤查資料邊界註1；第96頁，轉投資事業表
-    published_date: '2026-05-08'
-    publisher: 可寧衛股份有限公司
-    quote_check: found
-    title: 可寧衛114年度年報
-    url: https://www.cleanaway.tw/File/Invest/CFD8C65D-7CDD-46E9-8456-1B1D5222C76A/%E5%8F%AF%E5%AF%A7%E8%A1%9B114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1%28%E4%B8%AD%29%28lock%29_%20%E4%B8%8A%E5%82%B3%E6%AA%94.pdf
-  tw.8422#e5:
-    locator: 可寧衛服務介紹及頁首服務項目
-    published_date: null
-    publisher: 可寧衛股份有限公司
-    quote_check: found
-    title: 環境服務
-    url: https://www.cleanaway.tw/service-intro.html
-  tw.8422#e6:
-    locator: 大寧管理政策，環境能源政策
-    published_date: null
-    publisher: 可寧衛股份有限公司
-    quote_check: found
-    title: 環境服務
-    url: https://www.cleanaway.tw/service-intro.html
-  tw.8422#e7:
-    locator: 吉衛服務介紹
-    published_date: null
-    publisher: 可寧衛股份有限公司
-    quote_check: found
-    title: 環境服務
-    url: https://www.cleanaway.tw/service-intro.html
-  tw.8422#e8:
-    locator: 上評服務介紹
-    published_date: null
-    publisher: 可寧衛股份有限公司
-    quote_check: found
-    title: 循環經濟
-    url: https://www.cleanaway.tw/circular-economy.html
   tw.8422#e9:
-    locator: 吉鼎服務介紹
+    locator: 上評服務介紹及處理量能／造紙部
     published_date: null
     publisher: 可寧衛股份有限公司
     quote_check: found
-    title: 循環經濟
+    title: 循環經濟：上評
     url: https://www.cleanaway.tw/circular-economy.html

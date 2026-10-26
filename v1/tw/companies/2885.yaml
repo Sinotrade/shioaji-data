@@ -95,13 +95,13 @@ relations:
     share_pct: null
     weight: 1
   subsidiaries:
-  - as_of: '2026-03-31'
+  - as_of: '2026-08-27'
     confidence: ai_cross_checked
     counterparty_shares: []
     detail: 直接持股65.06%之期貨子公司
     details:
     - 直接持股65.06%之期貨子公司
-    - 母公司及最終控制者
+    - 控股母公司
     edge: e993b85236918
     evidence_level: primary
     id: tw.6023
@@ -323,6 +323,27 @@ relations:
     name: 騏瑋實業有限公司
     ranking_basis: unranked
     role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新臺幣3,060,351,913元
+    as_of: '2026-08-27'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 母公司認購2026年度現金增資
+    details:
+    - 母公司認購2026年度現金增資
+    edge: e1a30652dbe76
+    event_date: '2026-08-27'
+    events:
+    - amount: 新臺幣3,060,351,913元
+      detail: 母公司認購2026年度現金增資
+      event_date: '2026-08-27'
+    evidence_level: primary
+    id: tw.6023
+    name: 元大期貨
+    ranking_basis: unranked
+    role: buyer
     share_basis: null
     share_pct: null
     weight: 1

@@ -26,21 +26,27 @@ chain_stage:
   stage_name: 設備與廠務
   tier: upstream
 primary_chain_position: upstream
-summary_short: 研發、製造及銷售半導體封裝製程與檢測設備。
-summary_long: 竑騰以半導體封裝製程與檢測設備為主要業務，2025年營收組成以機台設備為主，另有其他收入。主製程產品包括先進銦片製程暨散熱片全流程機、高壓力點膠植散熱片機與先進Flux Jetting銦片機，涵蓋點膠、植銦及散熱片貼合。檢測產品包括全功能AI智慧六面檢測機與短斷路檢測機，分別提供封裝外觀及電性檢測。公司參展資料說明設備技術可支援CoWoS相關封裝應用。竑騰直接持有YI ADVANTAGE HOLDINGS LIMITED，並透過該公司持有上海與蘇州子公司。
+summary_short: 以半導體封裝主製程設備為主，另銷售視覺檢測設備及提供維修服務。
+summary_long: 竑騰以半導體封裝主製程設備為主要營收來源，另經營視覺檢測設備、維修及其他業務；2025年營收占比分別約62%、5%及33%。產品涵蓋銦片與散熱片貼合、點膠及六面視覺檢測設備。具名客戶包括台積電、日月光半導體、矽品與力成，產品亦用於日月光及矽品的CoWoS後段製程。公司透過全資子公司億利控股投資蘇州孫公司，2026年10月董事會通過新增投資美金650萬元；同年7月取得仁武產業園區地上權，用於興建廠辦。
 segments:
 - evidence_ids:
-  - e8
-  id: equipment
-  name: 機台設備
+  - e02
+  id: seg_main
+  name: 主製程設備
   period: '2025'
-  revenue_share_pct: null
+  revenue_share_pct: 62
 - evidence_ids:
-  - e8
-  id: other
-  name: 其他
+  - e02
+  id: seg_vision
+  name: 視覺檢測設備
   period: '2025'
-  revenue_share_pct: null
+  revenue_share_pct: 5
+- evidence_ids:
+  - e02
+  id: seg_other
+  name: 維修及其他
+  period: '2025'
+  revenue_share_pct: 33
 main_theme: theme.cowos
 themes:
 - also: []
@@ -48,145 +54,346 @@ themes:
   theme: theme.cowos
   tier: upstream
 relations:
+  competitors:
+  - as_of: '2025-08-27'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 石墨烯貼合設備
+    details:
+    - 石墨烯貼合設備
+    edge: ecf6401180a9d
+    evidence_level: media
+    id: tw.6187
+    name: 萬潤
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  customers:
+  - as_of: '2026-06-08'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 供營業用之機器設備
+    details:
+    - 供營業用之機器設備
+    edge: ed64ae96dd74e
+    evidence_level: primary
+    id: org.ase-inc
+    name: Advanced Semiconductor Engineering, Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-12'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 營業用機器設備
+    details:
+    - 營業用機器設備
+    edge: e79b77f350e5c
+    evidence_level: primary
+    id: org.spil
+    name: 矽品精密工業(股)公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-07-29'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 半導體封裝相關設備
+    details:
+    - 半導體封裝相關設備
+    edge: eb373281cc62f
+    evidence_level: media
+    id: org.華天
+    name: 華天
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-07-29'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 半導體封裝相關設備
+    details:
+    - 半導體封裝相關設備
+    edge: e22bf29b0f207
+    evidence_level: media
+    id: org.通富微電
+    name: 通富微電
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-07-29'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 半導體封裝相關設備
+    details:
+    - 半導體封裝相關設備
+    edge: e98089d6ab296
+    evidence_level: media
+    id: org.長電紹興
+    name: 長電紹興
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-07-29'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 半導體封裝相關設備
+    details:
+    - 半導體封裝相關設備
+    edge: e23d8a4a8c463
+    evidence_level: media
+    id: tw.2330
+    name: 台積電
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-07-29'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 半導體封裝相關設備
+    details:
+    - 半導體封裝相關設備
+    edge: ea08733d8a591
+    evidence_level: media
+    id: tw.6239
+    name: 力成
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  partners:
+  - as_of: '2026-05-29'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 仁武半導體封裝測試服務產業園區投資合作
+    details:
+    - 仁武半導體封裝測試服務產業園區投資合作
+    edge: e6f38395a9aec
+    evidence_level: primary
+    id: tw.3711
+    name: 日月光投控
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-05-29'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 仁武半導體封裝測試服務產業園區投資合作
+    details:
+    - 仁武半導體封裝測試服務產業園區投資合作
+    edge: ed9bd3de4d04d
+    evidence_level: primary
+    id: tw.6510
+    name: 精測
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
-  - as_of: '2025-12-31'
+  - as_of: '2026-10-23'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 間接持有之蘇州技術服務子公司
+    detail: 間接全資孫公司
     details:
-    - 間接持有之蘇州技術服務子公司
-    edge: ecff641242273
+    - 間接全資孫公司
+    edge: e690bf65e41e5
     evidence_level: primary
-    id: org.horng-terng-technology-suzhou
-    name: 竑騰科技（蘇州）有限公司
+    id: org.horng-terng-suzhou
+    name: 竑騰科技(蘇州)有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2025-12-31'
+  - as_of: '2026-10-23'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 間接持有之科技服務子公司
+    detail: 全資子公司及大陸投資持股平台
     details:
-    - 間接持有之科技服務子公司
-    edge: eb55ebb7176b6
+    - 全資子公司及大陸投資持股平台
+    edge: e576939686a85
     evidence_level: primary
-    id: org.shanghai-horng-terng-technology
-    name: 上海竑騰科技有限公司
+    id: org.hta-yili-holdings
+    name: 億利控股有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2025-12-31'
+  transactions:
+  - amount: 新台幣46,000仟元
+    as_of: '2026-10-23'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 間接持有之自動化技術服務子公司
+    detail: 透過億利控股新增投資蘇州孫公司
     details:
-    - 間接持有之自動化技術服務子公司
-    edge: eca16d5b41698
+    - 透過億利控股新增投資蘇州孫公司
+    edge: e67a50420149c
+    event_date: '2025-11-12'
+    events:
+    - amount: 美金650萬元
+      detail: 透過億利控股新增投資蘇州孫公司
+      event_date: '2026-10-23'
+    - amount: 新台幣46,000仟元
+      detail: 透過億利控股新增投資蘇州孫公司
+      event_date: '2025-11-12'
     evidence_level: primary
-    id: org.shanghai-horng-terng-trading
-    name: 上海竑騰貿易有限公司
+    id: org.horng-terng-suzhou
+    name: 竑騰科技(蘇州)有限公司
     ranking_basis: unranked
+    role: buyer
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2025-12-31'
+  - amount: 新台幣72,307仟元(未稅)
+    as_of: '2026-07-24'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持有之投資控股子公司
+    detail: 取得仁武產業園區土地地上權
     details:
-    - 直接持有之投資控股子公司
-    edge: e8f5fa3315f18
+    - 取得仁武產業園區土地地上權
+    edge: e91525d8177b7
+    event_date: '2026-07-24'
+    events:
+    - amount: 新台幣72,307仟元(未稅)
+      detail: 取得仁武產業園區土地地上權
+      event_date: '2026-07-24'
     evidence_level: primary
-    id: org.yi-advantage-holdings
-    name: YI ADVANTAGE HOLDINGS LIMITED
+    id: org.高雄市政府
+    name: 高雄市政府
     ranking_basis: unranked
+    role: buyer
     share_basis: null
     share_pct: null
     weight: 1
+unresolved_mentions:
+- 金屬元件、光學元件、電控元件、傳控元件及五金零件供應商，未取得具名採購關係證據。
+- 2026年租地委建廠房計畫的出租人及承建商，報導未具名。
+- 華天的實際採購法人未在引用報導中揭露。
+- 與竑騰共同開發新散熱材料製程的一線大廠，未取得足以具名的證據。
 website: https://www.hta.com.tw/
 tax_id: '89999982'
 incorporated: '1994-12-27'
 listed: '2025-08-26'
-as_of: '2026-10-15'
+as_of: '2026-10-26'
 confidence: ai_cross_checked
 has_research: true
 evidence:
-  tw.7751#e10:
-    locator: 第28頁，附註十，YI ADVANTAGE HOLDINGS LIMITED之子公司及持股表
-    published_date: '2026-05-11'
-    publisher: 竑騰科技股份有限公司
+  tw.7751#e02:
+    locator: 營業項目與產品結構；頁面標示更新日期2026/09/30
+    published_date: null
+    publisher: MoneyDJ理財網／嘉實投顧
     quote_check: found
-    title: 民國114及113年度合併財務報告
-    url: https://www.hta.com.tw/archive/doc/download/114%E5%B9%B4%20%E7%AC%AC%E5%9B%9B%E5%AD%A3%20%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E6%9B%B8%20IFRSs%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
-  tw.7751#e11:
-    locator: 第28頁，附註十，YI ADVANTAGE HOLDINGS LIMITED之子公司及持股表
-    published_date: '2026-05-11'
+    title: 竑騰科技股份有限公司
+    url: https://www.moneydj.com/KMDJ/wiki/wikiviewer.aspx?keyid=8df69432-a099-4a35-9677-1161d191c3ec
+  tw.7751#e03:
+    locator: DS3200產品介紹／適用範圍
+    published_date: null
     publisher: 竑騰科技股份有限公司
-    quote_check: found
-    title: 民國114及113年度合併財務報告
-    url: https://www.hta.com.tw/archive/doc/download/114%E5%B9%B4%20%E7%AC%AC%E5%9B%9B%E5%AD%A3%20%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E6%9B%B8%20IFRSs%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
-  tw.7751#e12:
-    locator: 第28頁，附註十，YI ADVANTAGE HOLDINGS LIMITED之子公司及持股表
-    published_date: '2026-05-11'
-    publisher: 竑騰科技股份有限公司
-    quote_check: found
-    title: 民國114及113年度合併財務報告
-    url: https://www.hta.com.tw/archive/doc/download/114%E5%B9%B4%20%E7%AC%AC%E5%9B%9B%E5%AD%A3%20%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E6%9B%B8%20IFRSs%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
-  tw.7751#e2:
-    locator: DS3200產品頁，適用範圍
-    published_date: '2024-10-07'
-    publisher: 竑騰科技股份有限公司
-    quote_check: found
+    quote_check: not_found
     title: 先進銦片製程暨散熱片全流程機
     url: https://www.hta.com.tw/article_d.php?id=287&lang=tw&tb=2
-  tw.7751#e3:
-    locator: DS3070S產品頁，適用範圍
-    published_date: '2024-10-07'
-    publisher: 竑騰科技股份有限公司
-    quote_check: found
-    title: 高壓力點膠植散熱片機
-    url: https://www.hta.com.tw/article_d.php?id=60&lang=tw&tb=2
-  tw.7751#e4:
-    locator: DS3210產品頁，適用範圍
-    published_date: '2024-10-07'
-    publisher: 竑騰科技股份有限公司
-    quote_check: found
-    title: 先進 Flux Jetting 銦片機
-    url: https://www.hta.com.tw/article_d.php?id=157&lang=tw&tb=2
-  tw.7751#e5:
-    locator: FI7700產品頁，標題與機台功能
-    published_date: '2024-10-07'
+  tw.7751#e04:
+    locator: 產品名稱與型號
+    published_date: null
     publisher: 竑騰科技股份有限公司
     quote_check: found
     title: 全功能 AI 智慧六面檢測機
     url: https://www.hta.com.tw/article_d.php?id=207&lang=tw&tb=2
-  tw.7751#e6:
-    locator: OS1220產品頁，適用範圍
-    published_date: '2024-10-07'
-    publisher: 竑騰科技股份有限公司
+  tw.7751#e05:
+    locator: 正文，總經理徐嘉新說明供應鏈對象段落
+    published_date: '2025-07-29'
+    publisher: 中央社
     quote_check: found
-    title: 短斷路檢測機 (Tray in / Tray out)
-    url: https://www.hta.com.tw/article_d.php?id=262&lang=tw&tb=2
-  tw.7751#e7:
-    locator: Products產品介紹
-    published_date: null
-    publisher: SEMI（竑騰參展資料）
+    title: 竑騰擬8月底上櫃　下半年展望樂觀訂單能見度達明年
+    url: https://www.cna.com.tw/news/afe/202507290222.aspx
+  tw.7751#e06:
+    locator: 重大訊息主旨
+    published_date: '2026-06-08'
+    publisher: 日月光投資控股股份有限公司／MoneyDJ轉載重大訊息
     quote_check: found
-    title: SEMICON Taiwan 2026：Horng Terng Automation Co., Ltd.
-    url: https://expo.semi.org/taiwan2026/Public/eBooth.aspx?BoothID=653936&FromPage=Exhibitors.aspx&IndexInList=377&ListByBooth=true&ParentBoothID=
-  tw.7751#e8:
-    locator: 第52頁，附註二九（一）主要產品之收入；欄位依序為114年度、113年度
-    published_date: '2026-05-11'
-    publisher: 竑騰科技股份有限公司
+    title: 日月光投控子公司114/6/12~115/6/8自竑騰取得供營業用之機器設備一批，計約14.5億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=6699a463-29b6-449a-bda8-363b335030c1
+  tw.7751#e07:
+    locator: 重大訊息主旨及第6點
+    published_date: '2026-06-15'
+    publisher: 日月光投資控股股份有限公司／MoneyDJ轉載重大訊息
     quote_check: found
-    title: 民國114及113年度合併財務報告
-    url: https://www.hta.com.tw/archive/doc/download/114%E5%B9%B4%20%E7%AC%AC%E5%9B%9B%E5%AD%A3%20%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E6%9B%B8%20IFRSs%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
-  tw.7751#e9:
-    locator: 第28頁，附註十子公司表，投資公司及子公司名稱欄
-    published_date: '2026-05-11'
-    publisher: 竑騰科技股份有限公司
+    title: 日月光投控：矽品精密工業2/3~6/12自竑騰取得營業用機器設備83批，合計約14.27億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=83f8b417-938e-4b97-a863-8cbab96dacd4
+  tw.7751#e08:
+    locator: 先進封裝帶動需求／散熱製程應用無限擴展
+    published_date: '2025-08-27'
+    publisher: 今周刊
     quote_check: found
-    title: 民國114及113年度合併財務報告
-    url: https://www.hta.com.tw/archive/doc/download/114%E5%B9%B4%20%E7%AC%AC%E5%9B%9B%E5%AD%A3%20%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E6%9B%B8%20IFRSs%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
+    title: 「全球10大封測廠，7家都是我們客戶」高雄鐵皮屋工廠起家，「散熱片設備龍頭」竑騰如何登上AI浪尖？
+    url: https://www.businesstoday.com.tw/article/category/183015/post/202508270006/
+  tw.7751#e09:
+    locator: 正文，石墨烯貼合設備競爭段落
+    published_date: '2025-08-27'
+    publisher: 今周刊
+    quote_check: found
+    title: 「全球10大封測廠，7家都是我們客戶」高雄鐵皮屋工廠起家，「散熱片設備龍頭」竑騰如何登上AI浪尖？
+    url: https://www.businesstoday.com.tw/article/category/183015/post/202508270006/
+  tw.7751#e10:
+    locator: 重大訊息第2、3點
+    published_date: '2026-10-23'
+    publisher: 竑騰科技股份有限公司／MoneyDJ轉載重大訊息
+    quote_check: found
+    title: 竑騰 本公司董事會通過增加透過第三地轉投資大陸孫公司
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=19ecb272-050c-43e2-88fa-a60b7e6d95ee
+  tw.7751#e11:
+    locator: 重大訊息第2點
+    published_date: '2025-11-12'
+    publisher: 竑騰科技股份有限公司／MoneyDJ轉載重大訊息
+    quote_check: found
+    title: 竑騰 本公司新增資金貸與達「公開發行公司資金貸與及背書保證處理準則」第二十二條第一項第三款公告
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=64fecabf-e8a1-4723-b6f2-0309f82e9778
+  tw.7751#e12:
+    locator: 重大訊息第2、5、6、21點
+    published_date: '2025-11-12'
+    publisher: 竑騰科技股份有限公司／MoneyDJ轉載重大訊息
+    quote_check: found
+    title: 竑騰 本公司董事會通過增加透過第三地轉投資大陸孫公司
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=1dc08b50-595d-4d67-9a41-352d12d128d0
+  tw.7751#e13:
+    locator: 重大訊息第5、6、14、21點
+    published_date: '2026-10-23'
+    publisher: 竑騰科技股份有限公司／MoneyDJ轉載重大訊息
+    quote_check: found
+    title: 竑騰 本公司董事會通過增加透過第三地轉投資大陸孫公司
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=19ecb272-050c-43e2-88fa-a60b7e6d95ee
+  tw.7751#e14:
+    locator: 重大訊息第5、6點
+    published_date: '2026-07-24'
+    publisher: 竑騰科技股份有限公司／MoneyDJ轉載重大訊息
+    quote_check: found
+    title: 竑騰 本公司取得高雄市「仁武產業園區」地上權案
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=8c04ab3a-8690-4acf-b3c4-b2a95bfefcba
+  tw.7751#e15:
+    locator: 重大訊息第23點
+    published_date: '2026-07-24'
+    publisher: 竑騰科技股份有限公司／MoneyDJ轉載重大訊息
+    quote_check: found
+    title: 竑騰 本公司取得高雄市「仁武產業園區」地上權案
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=8c04ab3a-8690-4acf-b3c4-b2a95bfefcba
+  tw.7751#e16:
+    locator: 正文，編輯張嘉倚
+    published_date: '2026-03-13'
+    publisher: 時報資訊／富聯網
+    quote_check: found
+    title: 《半導體》竑騰投16億元租地委建廠房
+    url: https://ww2.money-link.com.tw/realtimenews/NewsContent.aspx?PU=1002&SN=6108844001
+  tw.7751#e17:
+    locator: 正文第二段
+    published_date: '2026-05-29'
+    publisher: 高雄市政府新聞局
+    quote_check: found
+    title: 穎崴科技仁武擴廠動土 陳其邁肯定穎崴競爭力 盼作產業最強後盾
+    url: https://www.kcg.gov.tw/CityNews_Detail1.aspx?n=3A379BB94CA5F12D&ss=65C88A93AFAD4050

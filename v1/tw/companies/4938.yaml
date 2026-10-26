@@ -91,6 +91,20 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: '2025-10-20'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 伺服器委外製造服務
+    details:
+    - 伺服器委外製造服務
+    edge: ea048a39b9c0c
+    evidence_level: media
+    id: tw.7711
+    name: 永擎
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   - as_of: '2025-06-17'
     confidence: ai_cross_checked
     counterparty_shares: []
@@ -195,9 +209,9 @@ relations:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 母公司
+    detail: 合併財報列示之母公司
     details:
-    - 母公司
+    - 合併財報列示之母公司
     - 華擎集團合併子公司
     edge: e88dfca99b2d6
     evidence_level: primary
@@ -263,7 +277,51 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  suppliers:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares:
+    - as_of: '2026-06-30'
+      basis: revenue
+      of: tw.7711
+      pct: 16.37
+    detail: 關係人銷貨，含其他營業收入
+    details:
+    - 關係人銷貨，含其他營業收入
+    edge: efddbab0d683c
+    evidence_level: primary
+    id: tw.7711
+    name: 永擎
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   transactions:
+  - amount: 新台幣56億3,800萬元
+    as_of: '2025-05-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 出售桃園及新北土地與桃園建物
+    details:
+    - 出售桃園及新北土地與桃園建物
+    - 取得桃園土地及建物
+    edge: ed4528444bf15
+    event_date: '2025-05-14'
+    events:
+    - amount: 新台幣56億3,800萬元
+      detail: 出售桃園及新北土地與桃園建物
+      event_date: '2025-05-14'
+    - amount: 新台幣56.38億元
+      detail: 取得桃園土地及建物
+      event_date: '2025-05-14'
+    evidence_level: primary
+    id: tw.2498
+    name: 宏達電
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 2
   - amount: 4,200萬美元
     as_of: '2026-04-23'
     confidence: ai_cross_checked
@@ -453,22 +511,43 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
-  - amount: 新台幣56.38億元
-    as_of: '2025-05-14'
+  - amount: 新台幣30.4億元（不含營業稅）
+    as_of: 2024-03
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 取得桃園土地及建物
+    detail: 取得桃園龜山土地及建物
     details:
-    - 取得桃園土地及建物
-    edge: ed4528444bf15
-    event_date: '2025-05-14'
+    - 取得桃園龜山土地及建物
+    edge: e468a9a28734b
+    event_date: '2023-09-21'
     events:
-    - amount: 新台幣56.38億元
-      detail: 取得桃園土地及建物
-      event_date: '2025-05-14'
-    evidence_level: media
-    id: tw.2498
-    name: 宏達電
+    - amount: 新台幣30.4億元（不含營業稅）
+      detail: 取得桃園龜山土地及建物
+      event_date: '2023-09-21'
+    evidence_level: primary
+    id: tw.6491
+    name: 晶碩
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 使用權資產新台幣87,257,519元（和碩認列）
+    as_of: '2026-05-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 出租龜山部分廠房予和碩
+    details:
+    - 出租龜山部分廠房予和碩
+    edge: edb9bf3851716
+    event_date: '2026-05-13'
+    events:
+    - amount: 使用權資產新台幣87,257,519元（和碩認列）
+      detail: 出租龜山部分廠房予和碩
+      event_date: '2026-05-13'
+    evidence_level: primary
+    id: tw.6491
+    name: 晶碩
     ranking_basis: unranked
     role: buyer
     share_basis: null

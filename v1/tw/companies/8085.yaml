@@ -40,12 +40,28 @@ segments:
   period: '2025'
   revenue_share_pct: 23.72
 relations:
+  customers:
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團內銷貨，品項未揭露
+    details:
+    - 集團內銷貨，品項未揭露
+    edge: ec50f4fe49abe
+    evidence_level: primary
+    id: tw.2371
+    name: 大同
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   parents:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 母公司
+    detail: 受大同控制之子公司
     details:
+    - 受大同控制之子公司
     - 母公司
     edge: ebfd94853bb0e
     evidence_level: primary
@@ -54,7 +70,7 @@ relations:
     ranking_basis: unranked
     share_basis: null
     share_pct: null
-    weight: 1
+    weight: 2
   subsidiaries:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked

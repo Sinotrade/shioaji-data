@@ -26,170 +26,277 @@ chain_stage:
   stage_name: 纖維與紗
   tier: upstream
 primary_chain_position: upstream
-summary_short: 主要製造及銷售棉紗、聚酯纖維與酯粒，並透過子公司經營百貨及不動產業務。
-summary_long: 南紡以棉紗及聚酯系列產品為主要業務，產品供織布、紡紗、製瓶及加工絲製造使用。2025年棉紗占營收30%，聚酯原絲占13%，瓶用酯粒占11%，聚酯棉占9%，聚酯粒占6%，加工絲占4%，其他占27%。棉紗為揭露項目中營收比重最高者，業務定位屬紡織產業鏈的纖維與紗線環節。集團透過臺南紡織（越南）有限公司從事棉紗產銷，並透過南紡流通事業股份有限公司經營百貨業務；南紡建設股份有限公司則從事住宅與商業大樓租售。
+summary_short: 以聚酯化纖與棉紗製銷為主，另透過子公司經營購物中心及不動產業務。
+summary_long: 南紡主要製造與銷售棉紗及聚酯化纖，2025年合併營收中，化纖占43%、紡紗占30%，其他業務占27%。產品包括供織布使用的棉紗、供紡紗與不織布使用的聚酯棉、供假撚加工使用的聚酯半延伸絲，以及聚酯加工絲、紡用與瓶用酯粒。海外紡紗業務包含臺南紡織（越南）及間接子公司太子龍；南方紡織則從事織染整一貫業務。流通業務由子公司南紡流通經營南紡購物中心，南紡建設從事住宅及商業大樓租售。資產開發方面，公司於2025年核准科技園區首期投資計畫，2026年公告將主體工程委由建國工程承攬。
 segments:
 - evidence_ids:
   - e1
-  id: seg.cotton_yarn
-  name: 棉紗
+  id: seg_chemical_fiber
+  name: 化學纖維
+  period: '2025'
+  revenue_share_pct: 43
+- evidence_ids:
+  - e1
+  id: seg_spinning
+  name: 紡紗
   period: '2025'
   revenue_share_pct: 30
 - evidence_ids:
-  - e2
-  id: seg.polyester_staple
-  name: 聚酯棉
-  period: '2025'
-  revenue_share_pct: 9
-- evidence_ids:
-  - e3
-  id: seg.polyester_chips
-  name: 聚酯粒
-  period: '2025'
-  revenue_share_pct: 6
-- evidence_ids:
-  - e4
-  id: seg.bottle_chips
-  name: 瓶用酯粒
-  period: '2025'
-  revenue_share_pct: 11
-- evidence_ids:
-  - e5
-  id: seg.polyester_filament
-  name: 聚酯原絲
-  period: '2025'
-  revenue_share_pct: 13
-- evidence_ids:
-  - e6
-  id: seg.textured_yarn
-  name: 加工絲
-  period: '2025'
-  revenue_share_pct: 4
-- evidence_ids:
-  - e7
-  id: seg.other
-  name: 其他
+  - e1
+  id: seg_other
+  name: 其他業務
   period: '2025'
   revenue_share_pct: 27
 relations:
   subsidiaries:
-  - as_of: 2025-12
+  - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 住宅及商業大樓租售子公司
+    detail: 越南織染整一貫間接子公司
     details:
-    - 住宅及商業大樓租售子公司
-    edge: e1e57fc6f5b60
+    - 越南織染整一貫間接子公司
+    edge: e02a339ebaa53
     evidence_level: primary
-    id: org.南紡建設股份有限公司
+    id: org.southern-textile-vietnam
+    name: 南方紡織責任有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 住宅及商業大樓租售
+    details:
+    - 住宅及商業大樓租售
+    edge: e268ed2677ff4
+    evidence_level: primary
+    id: org.tainan-spinning-construction
     name: 南紡建設股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: 2025-12
+  - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 百貨業務子公司
+    detail: 南紡購物中心營運
     details:
-    - 百貨業務子公司
-    edge: e420876c83ecd
+    - 南紡購物中心營運
+    edge: e1c5b1bdb1fdd
     evidence_level: primary
-    id: org.南紡流通事業股份有限公司
+    id: org.tainan-spinning-retail
     name: 南紡流通事業股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: 2025-12
+  - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
     detail: 越南棉紗產銷子公司
     details:
     - 越南棉紗產銷子公司
-    edge: e9a3d1cb468ae
+    edge: e594d511cddf8
     evidence_level: primary
-    id: org.臺南紡織-越南-有限公司
+    id: org.tainan-spinning-vietnam
     name: 臺南紡織(越南)有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 越南紡紗間接子公司及集團內股權重組
+    details:
+    - 越南紡紗間接子公司及集團內股權重組
+    edge: ed3ee4dbd0201
+    evidence_level: primary
+    id: org.taizilong-vietnam
+    name: 太子龍責任有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: '2011-05-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 乙二醇（EG）歷史供應關係
+    details:
+    - 乙二醇（EG）歷史供應關係
+    edge: ebf075fe69d17
+    evidence_level: media
+    id: tw.1303
+    name: 南亞
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2010-05-18'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 乙二醇（EG）歷史供應關係
+    details:
+    - 乙二醇（EG）歷史供應關係
+    edge: ef64e89903436
+    evidence_level: other
+    id: tw.1710
+    name: 東聯
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 新台幣18億3,645萬元(含稅)
+    as_of: '2026-03-09'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 科技園區首期主體工程自地委建
+    details:
+    - 科技園區首期主體工程自地委建
+    edge: edc46ecd37d5a
+    event_date: '2026-03-09'
+    events:
+    - amount: 新台幣18億3,645萬元(含稅)
+      detail: 科技園區首期主體工程自地委建
+      event_date: '2026-03-09'
+    evidence_level: primary
+    id: tw.5515
+    name: 建國
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 國內兩大石化龍頭：2026年4月21日經濟日報報導稱為長期原料合作對象，未具名。
+- 織布廠、染整廠及布商：公司法說簡報列為產業鏈下游，未提供具名交易對象。
 website: https://www.tainanspin.com.tw/
 tax_id: '68919301'
 incorporated: '1955-03-21'
 listed: '1989-10-03'
-as_of: '2026-10-15'
+as_of: '2026-10-26'
 confidence: ai_cross_checked
 has_research: true
 evidence:
   tw.1440#e1:
-    locator: 主要產品用途及114年度營業比重，棉紗列；欄位依序為產品、用途、營業金額及營業比重
+    locator: PDF第10頁，2025營收比重
+    published_date: '2026-04-21'
+    publisher: 臺南紡織股份有限公司
+    quote_check: found
+    title: 臺南紡織2026年4月21日法人說明會簡報
+    url: https://mopsov.twse.com.tw/nas/STR/144020260417M001.pdf
+  tw.1440#e10:
+    locator: 重要會計政策－存貨－2.子公司；投資明細列示越南公司棉紗產銷業務
+    published_date: '2026-03-09'
+    publisher: 臺南紡織股份有限公司，FinancialFilings鏡像
+    quote_check: unreachable
+    title: 臺南紡織股份有限公司2025年度合併財務報告
+    url: https://financialfilings.com/filings/tainan-spinning-1440/annual-report/2026/60569454/
+  tw.1440#e11:
+    locator: 重要會計政策－存貨－2.子公司，第4項；被投資公司資訊之百貨業務列
+    published_date: '2026-03-09'
+    publisher: 臺南紡織股份有限公司，FinancialFilings鏡像
+    quote_check: unreachable
+    title: 臺南紡織股份有限公司2025年度合併財務報告
+    url: https://financialfilings.com/filings/tainan-spinning-1440/annual-report/2026/60569454/
+  tw.1440#e12:
+    locator: 被投資公司名稱、所在地區等相關資訊，南方紡織責任有限公司列
+    published_date: '2026-03-09'
+    publisher: 臺南紡織股份有限公司，FinancialFilings鏡像
+    quote_check: unreachable
+    title: 臺南紡織股份有限公司2025年度合併財務報告
+    url: https://financialfilings.com/filings/tainan-spinning-1440/annual-report/2026/60569454/
+  tw.1440#e13:
+    locator: 轉投資事業
     published_date: null
     publisher: 臺南紡織股份有限公司
     quote_check: found
-    title: 主營事業或產品、服務介紹
-    url: https://www.tainanspin.com.tw/index.php?id=32&index=5&lang=cht&option=module&task=pageinfo
-  tw.1440#e10:
-    locator: 列入合併財務報表之子公司，南紡建設列；附表被投資公司資訊另列正式全名
-    published_date: null
-    publisher: 臺南紡織股份有限公司；FinancialFilings公開鏡像
+    title: 集團事業
+    url: https://www.tainanspin.com.tw/index.php?lang=cht&temp=group
+  tw.1440#e14:
+    locator: 重要會計政策－存貨－2.子公司，第2項；被投資公司資訊之住宅及商業大樓租售列
+    published_date: '2026-03-09'
+    publisher: 臺南紡織股份有限公司，FinancialFilings鏡像
     quote_check: unreachable
-    title: 2025年第4季合併財務報告
+    title: 臺南紡織股份有限公司2025年度合併財務報告
     url: https://financialfilings.com/filings/tainan-spinning-1440/annual-report/2026/60569454/
+  tw.1440#e15:
+    locator: 被投資公司名稱、所在地區等相關資訊，註3
+    published_date: '2026-03-09'
+    publisher: 臺南紡織股份有限公司，FinancialFilings鏡像
+    quote_check: unreachable
+    title: 臺南紡織股份有限公司2025年度合併財務報告
+    url: https://financialfilings.com/filings/tainan-spinning-1440/annual-report/2026/60569454/
+  tw.1440#e16:
+    locator: 公告第2至3項
+    published_date: '2025-08-08'
+    publisher: 公開資訊觀測站重大訊息，MoneyDJ轉載
+    quote_check: found
+    title: 南紡董事會決議通過南紡科技園區首期開發案
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=70025c5e-273d-4259-ae34-f729d529fad3
+  tw.1440#e17:
+    locator: 公告第1項自地委建、第5至6項契約相對人與金額
+    published_date: '2026-03-09'
+    publisher: 公開資訊觀測站重大訊息，MoneyDJ轉載
+    quote_check: found
+    title: 南紡公告南紡科技園區首期開發案主體工程發包事宜
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=07fa1a80-0045-47e9-9155-c503302fd769
   tw.1440#e2:
-    locator: 主要產品用途及114年度營業比重，聚酯棉列；引文為營業金額及營業比重欄
+    locator: 主要產品用途及114年度營業比重，棉紗列
     published_date: null
     publisher: 臺南紡織股份有限公司
     quote_check: found
     title: 主營事業或產品、服務介紹
     url: https://www.tainanspin.com.tw/index.php?id=32&index=5&lang=cht&option=module&task=pageinfo
   tw.1440#e3:
-    locator: 主要產品用途及114年度營業比重，聚酯粒列；引文為營業金額及營業比重欄
+    locator: 聚酯棉產品介紹
     published_date: null
     publisher: 臺南紡織股份有限公司
     quote_check: found
-    title: 主營事業或產品、服務介紹
-    url: https://www.tainanspin.com.tw/index.php?id=32&index=5&lang=cht&option=module&task=pageinfo
+    title: 化纖產品－聚酯棉
+    url: https://www.tainanspin.com.tw/index.php?id=33&index=1&lang=cht&option=module&task=showlist
   tw.1440#e4:
-    locator: 主要產品用途及114年度營業比重，瓶用酯粒列；引文為營業金額及營業比重欄
+    locator: 聚酯半延伸絲產品介紹
     published_date: null
     publisher: 臺南紡織股份有限公司
     quote_check: found
-    title: 主營事業或產品、服務介紹
-    url: https://www.tainanspin.com.tw/index.php?id=32&index=5&lang=cht&option=module&task=pageinfo
+    title: 化纖產品－聚酯半延伸絲
+    url: https://www.tainanspin.com.tw/index.php?id=34&index=2&lang=cht&option=module&task=showlist
   tw.1440#e5:
-    locator: 主要產品用途及114年度營業比重，聚酯原絲列；引文為營業金額及營業比重欄
+    locator: 聚酯加工絲產品介紹
     published_date: null
     publisher: 臺南紡織股份有限公司
     quote_check: found
-    title: 主營事業或產品、服務介紹
-    url: https://www.tainanspin.com.tw/index.php?id=32&index=5&lang=cht&option=module&task=pageinfo
+    title: 化纖產品－聚酯加工絲
+    url: https://www.tainanspin.com.tw/index.php?id=35&index=3&lang=cht&option=module&task=showlist
   tw.1440#e6:
-    locator: 主要產品用途及114年度營業比重，加工絲列；引文為營業金額及營業比重欄
+    locator: 機能性產品DM介紹及化纖產品聚酯粒介紹
     published_date: null
     publisher: 臺南紡織股份有限公司
     quote_check: found
-    title: 主營事業或產品、服務介紹
-    url: https://www.tainanspin.com.tw/index.php?id=32&index=5&lang=cht&option=module&task=pageinfo
+    title: 產品資訊
+    url: https://www.tainanspin.com.tw/index.php?lang=cht&temp=info
   tw.1440#e7:
-    locator: 主要產品用途及114年度營業比重，其他列；引文為營業金額及營業比重欄
-    published_date: null
+    locator: PDF第5頁，公司簡介－產業關聯性，原料欄
+    published_date: '2026-04-21'
     publisher: 臺南紡織股份有限公司
     quote_check: found
-    title: 主營事業或產品、服務介紹
-    url: https://www.tainanspin.com.tw/index.php?id=32&index=5&lang=cht&option=module&task=pageinfo
+    title: 臺南紡織2026年4月21日法人說明會簡報
+    url: https://mopsov.twse.com.tw/nas/STR/144020260417M001.pdf
   tw.1440#e8:
-    locator: 重大會計政策之彙總說明／列入合併財務報表之子公司，臺南紡織(越南)有限公司列
-    published_date: null
-    publisher: 臺南紡織股份有限公司；FinancialFilings公開鏡像
-    quote_check: unreachable
-    title: 2025年第4季合併財務報告
-    url: https://financialfilings.com/filings/tainan-spinning-1440/annual-report/2026/60569454/
+    locator: 內文南紡對供料狀況之說明
+    published_date: '2011-05-30'
+    publisher: MoneyDJ精實新聞，記者鄧寧
+    quote_check: found
+    title: 南亞EG產線全停擺 東聯受惠 南紡／新纖受影響
+    url: https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=db983775-3bd9-41c3-b0a5-b48b93c266a0
   tw.1440#e9:
-    locator: 列入合併財務報表之子公司，南紡流通事業列；附表被投資公司資訊另列正式全名
-    published_date: null
-    publisher: 臺南紡織股份有限公司；FinancialFilings公開鏡像
-    quote_check: unreachable
-    title: 2025年第4季合併財務報告
-    url: https://financialfilings.com/filings/tainan-spinning-1440/annual-report/2026/60569454/
+    locator: 營運分析－本業營運概況
+    published_date: '2010-05-18'
+    publisher: 工銀投顧，MoneyDJ刊載
+    quote_check: found
+    title: 南紡資產價值計算NAV高達19.2元，與目前股價尚有49%落差
+    url: https://www.moneydj.com/kmdj/report/reportviewer.aspx?a=9ee7e5fc-1b80-4a64-9565-a859608fc6b8

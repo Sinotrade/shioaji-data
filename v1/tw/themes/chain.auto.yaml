@@ -21,9 +21,8 @@ stages:
 members:
 - id: tw.1319
   detail: 主要製造保險桿、鈑金及冷卻零件；售後市場為銷售用途，業務仍屬零組件製造。
-  as_of: '2026-10-15'
+  as_of: '2026-10-25'
   evidence:
-  - tw.1319#e1
   - tw.1319#e2
   - tw.1319#e3
   confidence: ai_cross_checked
@@ -320,35 +319,12 @@ members:
   stage: parts
   tier: midstream
   stage_role: primary
-- id: tw.2201
-  detail: 本業以整車製造銷售為主，已有量產車款；另製造相關零件並提供電池包封裝。
-  as_of: '2026-10-15'
-  evidence:
-  - tw.2201#e2
-  - tw.2201#e3
-  confidence: ai_cross_checked
-  source: classification
-  stage: oem
-  tier: downstream
-  stage_role: primary
-- id: tw.2201
-  detail: 本業以整車製造銷售為主，已有量產車款；另製造相關零件並提供電池包封裝。
-  as_of: '2026-10-15'
-  evidence:
-  - tw.2201#e2
-  - tw.2201#e3
-  confidence: ai_cross_checked
-  source: classification
-  stage: parts
-  tier: midstream
-  stage_role: also
 - id: tw.2204
   detail: 整車及相關零組件製造銷售占98%，以乘用與商用整車為主，亦跨零組件製造。
-  as_of: '2026-10-15'
+  as_of: '2026-10-26'
   evidence:
+  - tw.2204#e1
   - tw.2204#e2
-  - tw.2204#e3
-  - tw.2204#e4
   confidence: ai_cross_checked
   source: classification
   stage: oem
@@ -356,11 +332,10 @@ members:
   stage_role: primary
 - id: tw.2204
   detail: 整車及相關零組件製造銷售占98%，以乘用與商用整車為主，亦跨零組件製造。
-  as_of: '2026-10-15'
+  as_of: '2026-10-26'
   evidence:
+  - tw.2204#e1
   - tw.2204#e2
-  - tw.2204#e3
-  - tw.2204#e4
   confidence: ai_cross_checked
   source: classification
   stage: parts
@@ -368,11 +343,10 @@ members:
   stage_role: also
 - id: tw.2206
   detail: 汽車業務為整車製造，集團另以機車製造為最大收入來源，並經營相關零組件。
-  as_of: '2026-10-15'
+  as_of: '2026-10-25'
   evidence:
-  - tw.2206#e1
-  - tw.2206#e2
-  - tw.2206#e3
+  - tw.2206#e01
+  - tw.2206#e02
   confidence: ai_cross_checked
   source: classification
   stage: oem
@@ -380,11 +354,10 @@ members:
   stage_role: primary
 - id: tw.2206
   detail: 汽車業務為整車製造，集團另以機車製造為最大收入來源，並經營相關零組件。
-  as_of: '2026-10-15'
+  as_of: '2026-10-25'
   evidence:
-  - tw.2206#e1
-  - tw.2206#e2
-  - tw.2206#e3
+  - tw.2206#e01
+  - tw.2206#e02
   confidence: ai_cross_checked
   source: classification
   stage: parts
@@ -591,13 +564,26 @@ members:
   stage_role: also
 - id: tw.2258
   detail: 整車銷售占營收98.98%，經營電動車設計製造及品牌銷售。
-  as_of: '2026-10-14'
+  as_of: '2026-10-25'
   evidence:
-  - tw.2258#e1
+  - tw.2258#e01
+  - tw.2258#e03
+  - tw.2258#e07
   confidence: ai_cross_checked
   source: classification
   stage: oem
   tier: downstream
+  stage_role: primary
+- id: tw.2472
+  detail: 主要營收來自鋁電解電容器，並經營上游鋁箔，皆屬材料與電子元件。
+  as_of: '2026-10-26'
+  evidence:
+  - tw.2472#e1
+  - tw.2472#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: materials
+  tier: upstream
   stage_role: primary
 - id: tw.2497
   detail: 車用電子占營收93.93%，主要產品為HUD、車載影音及駕駛輔助系統，屬汽車零組件與模組。
@@ -700,6 +686,19 @@ members:
   stage: materials
   tier: upstream
   stage_role: also
+- id: tw.3357
+  detail: 電源電感為最大營收來源，車用產品為共模扼流圈與功率電感，屬上游電子元件。
+  as_of: '2026-10-26'
+  evidence:
+  - tw.3357#e1
+  - tw.3357#e2
+  - tw.3357#e5
+  - tw.3357#e7
+  confidence: ai_cross_checked
+  source: classification
+  stage: materials
+  tier: upstream
+  stage_role: primary
 - id: tw.3432
   detail: 電動二輪整車銷售占營收87%，另有連接器及鋰電池模組設計與整合服務。
   as_of: '2026-10-25'
@@ -1170,11 +1169,10 @@ members:
   stage_role: primary
 - id: tw.6605
   detail: 汽車車燈占營收98.14%，主要角色為車燈零組件製造商。
-  as_of: '2026-10-15'
+  as_of: '2026-10-26'
   evidence:
-  - tw.6605#e1
-  - tw.6605#e2
-  - tw.6605#e3
+  - tw.6605#e01
+  - tw.6605#e03
   confidence: ai_cross_checked
   source: classification
   stage: parts
@@ -1249,6 +1247,19 @@ members:
   source: classification
   stage: parts
   tier: midstream
+  stage_role: primary
+- id: tw.7788
+  detail: 主要製造繼電器與接觸器，電動車、充電及汽車為主要應用，屬上游電子元件。
+  as_of: '2026-10-26'
+  evidence:
+  - tw.7788#e02
+  - tw.7788#e03
+  - tw.7788#e04
+  - tw.7788#e05
+  confidence: ai_cross_checked
+  source: classification
+  stage: materials
+  tier: upstream
   stage_role: primary
 - id: tw.7821
   detail: 車用裝置及車載通訊系統占營收56.13%，主力為行車記錄器與車載平板，屬汽車電子零組件與模組。
@@ -1390,4 +1401,4 @@ members:
   stage: parts
   tier: midstream
   stage_role: primary
-as_of: '2026-10-25'
+as_of: '2026-10-26'

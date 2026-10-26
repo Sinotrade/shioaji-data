@@ -30,14 +30,6 @@ members:
   - tw.1582#e5
   - tw.1582#e6
   confidence: ai_cross_checked
-- id: tw.1609
-  stage: components
-  tier: upstream
-  detail: 低軌衛星馬達用漆包線
-  as_of: '2025-12-31'
-  evidence:
-  - tw.1609#e7
-  confidence: ai_cross_checked
 - id: tw.2301
   stage: components
   tier: upstream
@@ -45,6 +37,14 @@ members:
   as_of: '2026-02-04'
   evidence:
   - tw.2301#e_spacex
+  confidence: ai_cross_checked
+- id: tw.2312
+  stage: equipment
+  tier: midstream
+  detail: 衛星家用接收器及多軌地面基地台
+  as_of: '2026-09-15'
+  evidence:
+  - tw.2312#e17
   confidence: ai_cross_checked
 - id: tw.2313
   stage: components
@@ -73,10 +73,10 @@ members:
 - id: tw.2367
   stage: components
   tier: upstream
-  detail: 低軌衛星相關電路板
-  as_of: '2026-06-16'
+  detail: 低軌衛星相關PCB
+  as_of: 2026-08
   evidence:
-  - tw.2367#e3
+  - tw.2367#e5
   confidence: ai_cross_checked
 - id: tw.2383
   stage: components
@@ -383,11 +383,10 @@ members:
 - id: tw.6271
   stage: components
   tier: upstream
-  detail: 低軌衛星通訊模組封裝
-  as_of: '2026-04-15'
+  detail: 低軌衛星用高頻通訊模組
+  as_of: '2026-04-14'
   evidence:
-  - tw.6271#e5
-  - tw.6271#e7
+  - tw.6271#e06
   confidence: ai_cross_checked
 - id: tw.6274
   stage: components
@@ -416,10 +415,10 @@ members:
 - id: tw.6412
   stage: components
   tier: upstream
-  detail: 低軌衛星應用電源
+  detail: 低軌道衛星通訊電源
   as_of: '2026-03-28'
   evidence:
-  - tw.6412#e3
+  - tw.6412#e4
   confidence: ai_cross_checked
 - id: tw.6486
   stage: equipment
@@ -444,6 +443,14 @@ members:
   as_of: '2026-07-29'
   evidence:
   - tw.6548#e17
+  confidence: ai_cross_checked
+- id: tw.6672
+  stage: components
+  tier: upstream
+  detail: 低軌衛星通訊用高頻材料
+  as_of: '2024-12-31'
+  evidence:
+  - tw.6672#e14
   confidence: ai_cross_checked
 - id: tw.6913
   stage: components
@@ -490,10 +497,10 @@ members:
 - id: tw.8086
   stage: components
   tier: upstream
-  detail: 低軌衛星Ku頻段HBT功率放大器技術
+  detail: 低軌衛星Ku Band HBT功率放大器技術
   as_of: 2023-08
   evidence:
-  - tw.8086#e9
+  - tw.8086#e17
   confidence: ai_cross_checked
 - id: tw.8358
   stage: components

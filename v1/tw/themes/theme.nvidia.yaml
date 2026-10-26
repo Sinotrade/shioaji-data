@@ -125,6 +125,14 @@ members:
   evidence:
   - tw.2399#e_edge
   confidence: ai_cross_checked
+- id: tw.2421
+  stage: components
+  tier: midstream
+  detail: GB200／GB300 NVL72推薦散熱風扇
+  as_of: 2025-12
+  evidence:
+  - tw.2421#e06
+  confidence: ai_cross_checked
 - id: tw.2449
   stage: chips
   tier: upstream
@@ -163,11 +171,11 @@ members:
 - id: tw.3163
   stage: components
   tier: midstream
-  detail: NVIDIA矽光子生態系光纖元件
-  as_of: '2026-03-10'
+  detail: NVIDIA矽光子生態系光連接零組件
+  as_of: '2025-03-27'
   evidence:
   - tw.3163#e9
-  - tw.3163#e8
+  - tw.3163#e10
   confidence: ai_cross_checked
 - id: tw.3231
   stage: system
@@ -188,11 +196,12 @@ members:
 - id: tw.3515
   stage: system
   tier: downstream
-  detail: 永擎NVIDIA Rubin AI系統
-  as_of: '2026-03-17'
+  detail: 子公司永擎整合NVIDIA GPU伺服器
+  as_of: '2026-06-04'
   evidence:
-  - tw.3515#e5
-  - tw.3515#e9
+  - tw.3515#e04
+  - tw.3515#e08
+  - tw.3515#e13
   confidence: ai_cross_checked
 - id: tw.3533
   stage: components
@@ -214,10 +223,10 @@ members:
 - id: tw.3693
   stage: system
   tier: downstream
-  detail: NVIDIA STX架構硬體平台與系統整合
+  detail: NVIDIA STX系統生態合作
   as_of: '2026-06-01'
   evidence:
-  - tw.3693#e15
+  - tw.3693#e5
   confidence: ai_cross_checked
 - id: tw.3706
   stage: system
@@ -226,14 +235,6 @@ members:
   as_of: '2026-03-17'
   evidence:
   - tw.3706#e16
-  confidence: ai_cross_checked
-- id: tw.3707
-  stage: chips
-  tier: upstream
-  detail: 氮化鎵產品進入NVIDIA AI供應鏈
-  as_of: '2026-10-15'
-  evidence:
-  - tw.3707#e8
   confidence: ai_cross_checked
 - id: tw.3711
   stage: chips
@@ -268,23 +269,21 @@ members:
   - tw.5426#e6
   - tw.5426#e7
   confidence: ai_cross_checked
-- id: tw.6166
-  stage: system
-  tier: downstream
-  detail: NVIDIA認證伺服器系統
-  as_of: '2026-10-15'
+- id: tw.6176
+  stage: components
+  tier: midstream
+  detail: RTX Spark AI PC高亮度背光模組
+  as_of: '2026-07-30'
   evidence:
-  - tw.6166#e7
-  - tw.6166#e8
+  - tw.6176#e25
   confidence: ai_cross_checked
 - id: tw.6197
   stage: components
   tier: midstream
-  detail: NVIDIA MGX平台電源與Busbar互連
-  as_of: '2026-10-15'
+  detail: NVIDIA平台電源互連產品
+  as_of: '2026-08-03'
   evidence:
-  - tw.6197#e11
-  - tw.6197#e12
+  - tw.6197#e10
   confidence: ai_cross_checked
 - id: tw.6245
   stage: system
@@ -294,21 +293,20 @@ members:
   evidence:
   - tw.6245#e5
   confidence: ai_cross_checked
-- id: tw.6579
-  stage: system
-  tier: downstream
-  detail: 採用NVIDIA Jetson的嵌入式AI系統
-  as_of: '2026-10-15'
+- id: tw.6290
+  stage: components
+  tier: midstream
+  detail: Vera Rubin電力線及機櫃套件
+  as_of: '2026-05-25'
   evidence:
-  - tw.6579#e5
+  - tw.6290#e8
   confidence: ai_cross_checked
 - id: tw.6584
   stage: components
   tier: midstream
-  detail: NVIDIA MGX平台導軌
-  as_of: '2026-06-05'
+  detail: 輝達GB300伺服器推薦供應商資格
+  as_of: '2026-02-07'
   evidence:
-  - tw.6584#e5
   - tw.6584#e6
   confidence: ai_cross_checked
 - id: tw.6669
@@ -344,6 +342,15 @@ members:
   - tw.6933#e7
   - tw.6933#e8
   confidence: ai_cross_checked
+- id: tw.7711
+  stage: system
+  tier: downstream
+  detail: NVIDIA平台伺服器與機櫃
+  as_of: '2026-10-12'
+  evidence:
+  - tw.7711#e15
+  - tw.7711#e16
+  confidence: ai_cross_checked
 - id: tw.8210
   stage: components
   tier: midstream
@@ -368,4 +375,4 @@ members:
   evidence:
   - tw.8996#e05
   confidence: ai_cross_checked
-as_of: '2026-10-15'
+as_of: '2026-10-14'

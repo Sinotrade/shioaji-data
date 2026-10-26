@@ -51,6 +51,21 @@ themes:
   theme: theme.drone
   tier: upstream
 relations:
+  customers:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 受託產品加工
+    details:
+    - 受託產品加工
+    edge: e8120ee1db865
+    evidence_level: primary
+    id: tw.2476
+    name: 鉅祥
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
@@ -77,6 +92,28 @@ relations:
     id: org.旭軟電子-深圳-有限公司
     name: 旭軟電子(深圳)有限公司
     ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 新台幣23,810仟元
+    as_of: '2025-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 認購關聯企業現金增資
+    details:
+    - 認購關聯企業現金增資
+    edge: e61046a1caf42
+    event_date: null
+    events:
+    - amount: 新台幣23,810仟元
+      detail: 認購關聯企業現金增資
+      event_date: null
+    evidence_level: primary
+    id: tw.2476
+    name: 鉅祥
+    ranking_basis: unranked
+    role: seller
     share_basis: null
     share_pct: null
     weight: 1

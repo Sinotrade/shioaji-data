@@ -26,25 +26,26 @@ chain_stage:
   stage_name: IC 通路與模組
   tier: downstream
 primary_chain_position: downstream
-summary_short: 以自有品牌記憶體模組、固態硬碟及快閃記憶體應用產品為主要業務。
-summary_long: 十銓科技主要生產自有品牌記憶體模組、固態硬碟、記憶卡、隨身碟及工規記憶儲存產品。2025年營收以DRAM為主，占70.94%，NAND Flash占26.97%，其他占2.09%。旗下另有直接持有的海外子公司，以及十銓恆泰科技（深圳）有限公司孫公司。公司亦於2026年COMPUTEX展示T-FORCE LIQUID II SSD水冷散熱方案，應用於高階高速SSD平台。
+summary_short: 以DRAM記憶體模組、SSD、隨身碟及記憶卡的製造銷售為主。
+summary_long: 十銓以記憶體模組及NAND Flash儲存產品為主要業務，2025年兩者分別占營收70.94%及26.97%，其他產品占2.09%。儲存產品包括SSD、隨身碟與記憶卡，另提供工控儲存及資料保護方案。公司亦有T-FORCE SIREN CPU一體式水冷散熱器，採用Asetek水泵方案。記憶體供應來源包括三星、SK海力士、美光與南亞科，部分SSD採用群聯及慧榮控制晶片。通路方面透過Amazon平台銷售並運用FBA服務。2026年8月董事會決議以4.97億元購入中和廠辦及17個車位。
 segments:
 - evidence_ids:
-  - e1
+  - e01
   id: seg_dram
-  name: DRAM（動態隨機存取記憶體）
+  name: DRAM記憶體模組
   period: '2025'
   revenue_share_pct: 70.94
 - evidence_ids:
-  - e1
+  - e01
+  - e02
   id: seg_nand
-  name: NAND Flash（快閃記憶體）
+  name: NAND Flash儲存產品
   period: '2025'
   revenue_share_pct: 26.97
 - evidence_ids:
-  - e1
+  - e01
   id: seg_other
-  name: 其他
+  name: 其他產品
   period: '2025'
   revenue_share_pct: 2.09
 main_theme: theme.liquid_cooling
@@ -69,13 +70,28 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  partners:
+  - as_of: '2026-10-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 跨境電商銷售平台與FBA服務
+    details:
+    - 跨境電商銷售平台與FBA服務
+    edge: e3ba1ed107de8
+    evidence_level: primary
+    id: us.AMZN
+    name: Amazon
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接子公司
+    detail: 直接持股100%之子公司
     details:
-    - 直接子公司
+    - 直接持股100%之子公司
     edge: ec985c11118ad
     evidence_level: primary
     id: org.datacell-technology-limited
@@ -87,9 +103,9 @@ relations:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接子公司
+    detail: 直接持股100%之子公司
     details:
-    - 直接子公司
+    - 直接持股100%之子公司
     edge: eacdf5f6c8284
     evidence_level: primary
     id: org.team-datasolution-usa-inc
@@ -101,9 +117,9 @@ relations:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 孫公司，屬間接子公司
+    detail: 經DATACELL間接持股100%之子公司
     details:
-    - 孫公司，屬間接子公司
+    - 經DATACELL間接持股100%之子公司
     edge: ec6ad048d9b75
     evidence_level: primary
     id: org.team-hengtai-technology-shenzhen
@@ -115,71 +131,281 @@ relations:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接子公司
+    detail: 直接持股100%之子公司
     details:
-    - 直接子公司
+    - 直接持股100%之子公司
     edge: e064e9996c2a0
     evidence_level: primary
     id: org.team-japan-inc
-    name: TEAM JAPAN INC
+    name: TEAM JAPAN INC.
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
+  suppliers:
+  - as_of: '2025-11-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 記憶體供應；法說會所述採購來源占比
+    details:
+    - 記憶體供應；法說會所述採購來源占比
+    edge: e61677c0c87d1
+    evidence_level: media
+    id: us.MU
+    name: Micron
+    ranking_basis: disclosed
+    share_basis: purchases
+    share_pct: 20
+    weight: 1
+  - as_of: '2025-12-02'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 記憶體原廠供貨
+    details:
+    - 記憶體原廠供貨
+    edge: e1dfe06f26cdc
+    evidence_level: media
+    id: kr.000660
+    name: SK hynix
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-02'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 記憶體原廠供貨
+    details:
+    - 記憶體原廠供貨
+    edge: e128556687355
+    evidence_level: media
+    id: kr.005930
+    name: Samsung Electronics
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-05-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: CPU一體式水冷散熱器水泵方案
+    details:
+    - CPU一體式水冷散熱器水泵方案
+    edge: e0710c42a7297
+    evidence_level: primary
+    id: org.asetek
+    name: Asetek
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-02'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 記憶體原廠供貨
+    details:
+    - 記憶體原廠供貨
+    edge: eda520bee0be6
+    evidence_level: media
+    id: tw.2408
+    name: 南亞科
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-10-17'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: T-FORCE Z54E SSD採用E28控制晶片
+    details:
+    - T-FORCE Z54E SSD採用E28控制晶片
+    edge: e1863c3da3532
+    evidence_level: primary
+    id: tw.8299
+    name: 群聯
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-05-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: T-FORCE ME Pro SSD採用SM2508控制晶片
+    details:
+    - T-FORCE ME Pro SSD採用SM2508控制晶片
+    edge: ec6b5bc315eea
+    evidence_level: media
+    id: us.SIMO
+    name: 慧榮科技
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 新台幣14,224仟元（美金440仟元）
+    as_of: 2024-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 對既有子公司增資
+    details:
+    - 對既有子公司增資
+    edge: ea91eb500cee0
+    event_date: null
+    events:
+    - amount: 新台幣14,224仟元（美金440仟元）
+      detail: 對既有子公司增資
+      event_date: null
+    evidence_level: primary
+    id: org.datacell-technology-limited
+    name: DATACELL TECHNOLOGY LIMITED
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣4.97億元
+    as_of: '2026-08-20'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 購入中和建一路廠辦及17個車位
+    details:
+    - 購入中和建一路廠辦及17個車位
+    edge: ec9eb71d9ed5e
+    event_date: '2026-08-20'
+    events:
+    - amount: 新台幣4.97億元
+      detail: 購入中和建一路廠辦及17個車位
+      event_date: '2026-08-20'
+    evidence_level: media
+    id: org.英商鼎通盛股份有限公司台灣分公司
+    name: 英商鼎通盛股份有限公司台灣分公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- IPC為工業電腦類別，未確認為具名公司或特定客戶。
+- 2025年報主要供應商以C、T代稱，未揭露實際公司名稱。
+- 2025年報主要客戶以G、E代稱，未揭露實際公司名稱。
+- 未具名PCB、機構件及委外加工供應商。
 website: WWW.TEAMGROUPINC.COM
 tax_id: '97418375'
 incorporated: '1997-04-09'
 listed: '2019-01-14'
-as_of: '2026-10-15'
+as_of: '2026-10-26'
 confidence: ai_cross_checked
 has_research: true
 evidence:
-  tw.4967#e1:
-    locator: 印刷頁49，4.1.1業務範圍／最近二年度營業比重
+  tw.4967#e01:
+    locator: PDF第54頁，4.1.1 Revenue Composition in the Past Two Years；欄序2024、2025
     published_date: '2026-03-17'
     publisher: 十銓科技股份有限公司
     quote_check: found
-    title: 十銓科技股份有限公司114年度年報
+    title: Team Group Inc. 2025 Annual Report
+    url: https://file.teamgroupinc.com/about/shareholders-meeting-information/114/annual-report-en.pdf
+  tw.4967#e02:
+    locator: 印刷頁49，4.1.1目前主要商品項目
+    published_date: '2026-03-17'
+    publisher: 十銓科技股份有限公司
+    quote_check: found
+    title: 十銓科技股份有限公司民國114年度年報
     url: https://file.teamgroupinc.com/about/shareholders-meeting-information/114/annual-report.pdf
-  tw.4967#e2:
-    locator: 關於十銓科技
-    published_date: '2026-02-25'
+  tw.4967#e03:
+    locator: TEAMGROUP INDUSTRIAL介紹段
+    published_date: '2026-05-27'
     publisher: 十銓科技股份有限公司
     quote_check: found
-    title: 十銓科技2025全年合併營收204.28億元創歷史新高
-    url: https://www.teamgroupinc.com/tw/news-detail/2026-02-25/
-  tw.4967#e3:
-    locator: PDF第50頁，附註七（一）關係人之名稱及關係
-    published_date: '2026-02-25'
+    title: TEAMGROUP to Showcase Industrial and Consumer Innovations at COMPUTEX 2026 Fortifying Security Frontiers while Unleashing Peak AI Performance
+    url: https://www.teamgroupinc.com/en/news-detail/computex-2026/
+  tw.4967#e04:
+    locator: SIREN DP360產品介紹段；原文型號拼為ARBG
+    published_date: '2024-05-23'
     publisher: 十銓科技股份有限公司
     quote_check: found
-    title: 十銓科技股份有限公司114年度個體財務報告
-    url: https://file.teamgroupinc.com/about/financial-information/quarterly/2025/individual.pdf
-  tw.4967#e4:
-    locator: PDF第50頁，附註七（一）關係人之名稱及關係
-    published_date: '2026-02-25'
+    title: 十銓科技推出三款T-FORCE SIREN CPU 一體式水冷散熱器 多元化磁吸冷頭設計 打造高效能散熱選擇
+    url: https://www.teamgroupinc.com/tw/news-detail/tforce-three-siren-aio-coolers/
+  tw.4967#e05:
+    locator: 周佩宇報導，首段原廠供應說明
+    published_date: '2025-12-02'
+    publisher: MoneyDJ新聞
+    quote_check: found
+    title: 十銓庫存穩定控缺貨風險，毛利率估可維持高檔
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f85b17eb-0e6f-416b-bf56-6d71f0df96d3
+  tw.4967#e06:
+    locator: 尹慧中報導，採購來源段
+    published_date: '2025-11-29'
+    publisher: 經濟日報
+    quote_check: found
+    title: 十銓獲利帶勁 總座認為2026年記憶體缺貨難緩解
+    url: https://udn.com/news/story/7253/9170092
+  tw.4967#e07:
+    locator: 首段，T-FORCE Z54E控制晶片介紹
+    published_date: '2025-10-17'
     publisher: 十銓科技股份有限公司
     quote_check: found
-    title: 十銓科技股份有限公司114年度個體財務報告
-    url: https://file.teamgroupinc.com/about/financial-information/quarterly/2025/individual.pdf
-  tw.4967#e5:
-    locator: PDF第50頁，附註七（一）關係人之名稱及關係
-    published_date: '2026-02-25'
-    publisher: 十銓科技股份有限公司
+    title: TEAMGROUP Unveils the T-FORCE Z54E PCIe 5.0 SSD - Flagship Performance Ignites the Ultimate Gaming Experience
+    url: https://www.teamgroupinc.com/en/news-detail/t-force-z54e-ssd/
+  tw.4967#e08:
+    locator: COMPUTEX 2025展出產品說明，T-Force ME Pro段
+    published_date: '2025-05-31'
+    publisher: Tom's Hardware
     quote_check: found
-    title: 十銓科技股份有限公司114年度個體財務報告
-    url: https://file.teamgroupinc.com/about/financial-information/quarterly/2025/individual.pdf
-  tw.4967#e6:
-    locator: PDF第50頁，附註七（一）關係人之名稱及關係
-    published_date: '2026-02-25'
-    publisher: 十銓科技股份有限公司
-    quote_check: found
-    title: 十銓科技股份有限公司114年度個體財務報告
-    url: https://file.teamgroupinc.com/about/financial-information/quarterly/2025/individual.pdf
-  tw.4967#e7:
-    locator: 新品亮點／T-FORCE LIQUID II SSD散熱器
+    title: 'TeamGroup''s curious PCIe 5.0 SSD strategy: Adopt controllers from all makers'
+    url: https://www.tomshardware.com/pc-components/ssds/teamgroups-curious-pcie-5-0-ssd-strategy-adopt-controllers-from-all-makers
+  tw.4967#e09:
+    locator: 為什麼選擇Amazon？
     published_date: null
+    publisher: Amazon亞馬遜全球開店
+    quote_check: found
+    title: 亞馬遜成功賣家故事特輯－TEAMGROUP
+    url: https://gs.amazon.com.tw/sellerstories/teamgroup
+  tw.4967#e10:
+    locator: 第20頁，列入合併財務報告之子公司；持股欄為2025及2024年底
+    published_date: '2026-02-25'
     publisher: 十銓科技股份有限公司
     quote_check: found
-    title: COMPUTEX 2026｜AI覺醒，極速進化
-    url: https://event.teamgroupinc.com/computex2026/tw
+    title: 十銓科技股份有限公司及子公司民國114年度及113年度合併財務報告
+    url: https://file.teamgroupinc.com/about/financial-information/quarterly/2025/consolidation.pdf
+  tw.4967#e11:
+    locator: 第20頁，列入合併財務報告之子公司
+    published_date: '2026-02-25'
+    publisher: 十銓科技股份有限公司
+    quote_check: found
+    title: 十銓科技股份有限公司及子公司民國114年度及113年度合併財務報告
+    url: https://file.teamgroupinc.com/about/financial-information/quarterly/2025/consolidation.pdf
+  tw.4967#e12:
+    locator: 第20頁，列入合併財務報告之子公司
+    published_date: '2026-02-25'
+    publisher: 十銓科技股份有限公司
+    quote_check: found
+    title: 十銓科技股份有限公司及子公司民國114年度及113年度合併財務報告
+    url: https://file.teamgroupinc.com/about/financial-information/quarterly/2025/consolidation.pdf
+  tw.4967#e13:
+    locator: 第20頁，DATACELL持有深圳子公司之列；另見第70頁大陸投資資訊
+    published_date: '2026-02-25'
+    publisher: 十銓科技股份有限公司
+    quote_check: found
+    title: 十銓科技股份有限公司及子公司民國114年度及113年度合併財務報告
+    url: https://file.teamgroupinc.com/about/financial-information/quarterly/2025/consolidation.pdf
+  tw.4967#e14:
+    locator: 李孟珊報導，首段董事會決議
+    published_date: '2026-08-20'
+    publisher: 經濟日報
+    quote_check: found
+    title: 十銓砸4.9億買新北廠辦
+    url: https://money.udn.com/money/amp/story/5710/9704455
+  tw.4967#e15:
+    locator: 第二段交易相對人
+    published_date: '2026-08-20'
+    publisher: 經濟日報
+    quote_check: found
+    title: 十銓砸4.9億買新北廠辦
+    url: https://money.udn.com/money/amp/story/5710/9704455
+  tw.4967#e16:
+    locator: 第20頁，子公司表註1；金額單位新台幣仟元
+    published_date: '2026-02-25'
+    publisher: 十銓科技股份有限公司
+    quote_check: found
+    title: 十銓科技股份有限公司及子公司民國114年度及113年度合併財務報告
+    url: https://file.teamgroupinc.com/about/financial-information/quarterly/2025/consolidation.pdf

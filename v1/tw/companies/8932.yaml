@@ -18,59 +18,228 @@ industry:
   l3_name: 系統整合與資訊服務
   l3_name_en: System Integration & IT Services
 primary_chain_position: not_applicable
-summary_short: 以企業軟體開發、資訊服務及拉鍊製造取得營收。
-summary_long: 智通科創以資訊軟體服務與拉鍊製造為主要營收來源，2026年上半年軟體及其他收入占63%，拉鍊占37%。軟體業務透過聯和科創及其子公司Global Line Network Sdn. Bhd.開展，提供ERP、供應鏈、客戶關係管理及電子商務等企業系統。GLN另推出消費者資安應用程式FraudEyes Mobile；印度金融科技產品Zenzy在2026年8月法說揭露為上線準備中。拉鍊產品包括尼龍、塑鋼、金屬及隱形拉鍊，並供應拉頭與配件，用於服裝、箱包及汽車椅套等。
+summary_short: 以客製化企業軟體、平台維運及MAX拉鍊製造取得營收，另經營印度金融科技平台。
+summary_long: 智通科創經營軟體服務與拉鍊製造，2026年上半年軟體事業占集團營收63%。旗下GLN提供企業客製化軟體、供應鏈管理與數位化諮詢，具名客戶包括TP-Link、Lenovo及Kamstrup。MAX拉鍊產品涵蓋尼龍、塑鋼、金屬及隱形拉鍊，媒體列舉的客戶包括Walmart、Target與豐田。印度金融科技業務經營FinShell Pay，並與OPPO合作取得手機預載版位；2026年8月法說另揭露Zenzy仍在上線準備階段。公司已簽署Letul全部股權收購協議，仍待印度監理核准及交割，另投資浪凡，並由GLN投資GC Construction。公司亦透過聯和科創參與華智數位娛樂合資事業。
 segments:
 - evidence_ids:
   - e1
-  - e2
-  id: software
-  name: 軟體及其他
+  id: seg_software
+  name: 軟體事業群，包含企業資訊服務及印度金融科技
   period: 2026年上半年
   revenue_share_pct: 63
 - evidence_ids:
   - e3
-  - e4
-  id: zipper
-  name: 拉鍊
-  period: 2026年上半年
-  revenue_share_pct: 37
+  id: seg_zipper
+  name: MAX拉鍊及零配件
+  period: null
+  revenue_share_pct: null
 relations:
-  subsidiaries:
+  competitors:
+  - as_of: '2025-06-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 拉鍊市場競爭
+    details:
+    - 拉鍊市場競爭
+    edge: ed498fccf86cd
+    evidence_level: media
+    id: org.sbs
+    name: SBS
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-06-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 拉鍊市場競爭
+    details:
+    - 拉鍊市場競爭
+    edge: e1cbc993034ca
+    evidence_level: media
+    id: org.ykk
+    name: YKK
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  customers:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 透過聯和科創持有的間接子公司
+    detail: GLN銷售管理平台及維運
     details:
-    - 透過聯和科創持有的間接子公司
-    edge: e4a9e54afcdd1
+    - GLN銷售管理平台及維運
+    edge: e704a8b2c6cc9
     evidence_level: primary
-    id: org.global-line-network-sdn-bhd
+    id: hk.0992
+    name: Lenovo Group Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-06-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 汽車用拉鍊客戶；採購途徑未揭露
+    details:
+    - 汽車用拉鍊客戶；採購途徑未揭露
+    edge: ebc7e7bf51ed7
+    evidence_level: media
+    id: jp.7203
+    name: Toyota
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-06-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: MAX拉鍊客戶；採購途徑未揭露
+    details:
+    - MAX拉鍊客戶；採購途徑未揭露
+    edge: e54594403c90a
+    evidence_level: media
+    id: org.jcpenney
+    name: JCPenney
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-08-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: GLN智慧水表監控系統Adept
+    details:
+    - GLN智慧水表監控系統Adept
+    edge: e3fc11a83cdc0
+    evidence_level: primary
+    id: org.kamstrup
+    name: Kamstrup
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-06-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: GLN企業軟體客戶
+    details:
+    - GLN企業軟體客戶
+    edge: e28767622cde3
+    evidence_level: media
+    id: org.tp-link
+    name: TP-Link
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-06-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: MAX拉鍊客戶；採購途徑未揭露
+    details:
+    - MAX拉鍊客戶；採購途徑未揭露
+    edge: ee2d90c01cda5
+    evidence_level: media
+    id: us.KSS
+    name: KOHL's
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-06-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: MAX拉鍊客戶；採購途徑未揭露
+    details:
+    - MAX拉鍊客戶；採購途徑未揭露
+    edge: e4b8fedc931a1
+    evidence_level: media
+    id: us.M
+    name: Macy's
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-06-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: MAX拉鍊客戶；採購途徑未揭露
+    details:
+    - MAX拉鍊客戶；採購途徑未揭露
+    edge: e81997c017045
+    evidence_level: media
+    id: us.TGT
+    name: TARGET
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-06-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: MAX拉鍊客戶；採購途徑未揭露
+    details:
+    - MAX拉鍊客戶；採購途徑未揭露
+    edge: ef91992f4d790
+    evidence_level: media
+    id: us.WMT
+    name: Walmart Inc
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  partners:
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 印度手機應用程式獨家預載合作
+    details:
+    - 印度手機應用程式獨家預載合作
+    edge: e23cde004979a
+    evidence_level: primary
+    id: org.oppo
+    name: OPPO
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過聯和科創持有的馬來西亞軟體子公司
+    details:
+    - 透過聯和科創持有的馬來西亞軟體子公司
+    edge: e6d04dccf4901
+    evidence_level: primary
+    id: org.global-line-network
     name: Global Line Network Sdn. Bhd.
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-06-30'
+  - as_of: '2026-03-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接子公司
+    detail: 資訊軟體服務子公司
     details:
-    - 直接子公司
-    edge: e83834e14f29a
+    - 資訊軟體服務子公司
+    edge: ef71ff066f6f4
     evidence_level: primary
-    id: org.lianhe-kechuang
+    id: org.lianhe-technology
     name: 聯和科創股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-06-30'
+  - as_of: '2026-03-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 拉鍊事業子公司
+    detail: 中國拉鍊製造子公司
     details:
-    - 拉鍊事業子公司
+    - 中國拉鍊製造子公司
     edge: e31a2badfbf38
     evidence_level: primary
     id: org.max-zipper-china
@@ -79,102 +248,276 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  transactions:
+  - amount: 港幣77,900,000元
+    as_of: '2026-08-25'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司GLN取得19%股權
+    details:
+    - 子公司GLN取得19%股權
+    edge: e0067b7ba26d4
+    event_date: '2026-08-25'
+    events:
+    - amount: 港幣77,900,000元
+      detail: 子公司GLN取得19%股權
+      event_date: '2026-08-25'
+    evidence_level: primary
+    id: hk.1489
+    name: GC Construction Holdings Limited
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2026-08-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 印度NBFC公司全部股權收購協議
+    details:
+    - 印度NBFC公司全部股權收購協議
+    edge: e74270bfc92be
+    event_date: null
+    events:
+    - amount: null
+      detail: 印度NBFC公司全部股權收購協議
+      event_date: null
+    evidence_level: primary
+    id: org.letul-investments
+    name: Letul Investments Private Limited
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣72,927仟元
+    as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 增購子公司8.59%股權
+    details:
+    - 增購子公司8.59%股權
+    edge: e7a2323066d66
+    event_date: '2026-03-31'
+    events:
+    - amount: 新台幣72,927仟元
+      detail: 增購子公司8.59%股權
+      event_date: '2026-03-31'
+    evidence_level: primary
+    id: org.lianhe-technology
+    name: 聯和科創股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過聯和科創參與華智數位娛樂合資
+    details:
+    - 透過聯和科創參與華智數位娛樂合資
+    edge: e3832e89121df
+    event_date: null
+    events:
+    - amount: null
+      detail: 透過聯和科創參與華智數位娛樂合資
+      event_date: null
+    evidence_level: primary
+    id: tw.3086
+    name: 華義*
+    ranking_basis: unranked
+    role: party
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新臺幣310,562,417元
+    as_of: '2026-08-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 取得浪凡普通股
+    details:
+    - 取得浪凡普通股
+    edge: e64e64b458a89
+    event_date: '2026-08-28'
+    events:
+    - amount: 新臺幣310,562,417元
+      detail: 取得浪凡普通股
+      event_date: '2026-08-28'
+    evidence_level: primary
+    id: tw.6165
+    name: 浪凡
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- Shell：候選線索中的名稱，未找到與本公司具名買賣或合作的證據。
+- 拉鍊原料供應商：候選僅提供尼龍、聚酯纖維等材料名稱，未具名企業。
+- 聯和科創股權出讓方：財報僅稱非控制權益，未具名。
+- 楊梅新廠建置交易對象：已確認興建完成與啟用，未確認承包商或資產出售方。
 website: https://wiselink.tw/
 tax_id: '35892013'
 incorporated: '1978-02-18'
 listed: '2001-03-29'
-as_of: '2026-10-15'
+as_of: '2026-10-25'
 confidence: ai_cross_checked
 has_research: true
 evidence:
   tw.8932#e1:
-    locator: 第5頁，2026上半年營運成果；第6頁另列軟體事業及其他營收占比
+    locator: 第6頁，軟體事業群營收
     published_date: '2026-08-26'
     publisher: 智通科創股份有限公司
     quote_check: found
     title: 1H26法人說明會簡報
-    url: https://wiselink.tw/wp-content/uploads/2026/09/1H26%E6%99%BA%E9%80%9A%E7%A7%91%E5%89%B5%E6%B3%95%E8%AA%AA%E7%B0%A1%E5%A0%B1_CHN_Finalized.pdf
+    url: https://wiselink.tw/wp-content/uploads/2026/09/1H26智通科創法說簡報_CHN_Finalized.pdf
   tw.8932#e10:
-    locator: 第52頁，附表三，應收關係人款項表；第18頁附註十二亦列為本公司子公司
-    published_date: null
-    publisher: 智通科創股份有限公司
+    locator: MAX品牌與拉鍊客戶段落
+    published_date: '2025-06-26'
+    publisher: 民視財經網／財訊雙週刊，游筱燕
     quote_check: found
-    title: 民國115及114年第2季合併財務報告
-    url: https://wiselink.tw/wp-content/uploads/2026/08/%E6%99%BA%E9%80%9A115Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1%E7%94%A8%E5%8D%B0%E7%89%88.pdf
+    title: 在東南亞發展資服業 到印度跨足金融科技 智通科創3招轉骨 老牌拉鍊廠添動能
+    url: https://finance.ftvnews.com.tw/news/detail/2025626W0561
   tw.8932#e11:
-    locator: 第18頁，附註十二，列入合併財務報告之子公司
-    published_date: null
-    publisher: 智通科創股份有限公司
+    locator: 拉鍊市場競爭段落
+    published_date: '2025-06-26'
+    publisher: 民視財經網／財訊雙週刊，游筱燕
     quote_check: found
-    title: 民國115及114年第2季合併財務報告
-    url: https://wiselink.tw/wp-content/uploads/2026/08/%E6%99%BA%E9%80%9A115Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1%E7%94%A8%E5%8D%B0%E7%89%88.pdf
+    title: 在東南亞發展資服業 到印度跨足金融科技 智通科創3招轉骨 老牌拉鍊廠添動能
+    url: https://finance.ftvnews.com.tw/news/detail/2025626W0561
   tw.8932#e12:
-    locator: 第53頁，附表四，母子公司間業務關係及重大交易事項
+    locator: 第36頁，附註二九：與非控制權益之權益交易
     published_date: null
     publisher: 智通科創股份有限公司
     quote_check: found
-    title: 民國115及114年第2季合併財務報告
-    url: https://wiselink.tw/wp-content/uploads/2026/08/%E6%99%BA%E9%80%9A115Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1%E7%94%A8%E5%8D%B0%E7%89%88.pdf
+    title: 115年第一季合併財務報告
+    url: https://wiselink.tw/wp-content/uploads/2026/06/智通115Q1合併財報用印版.pdf
   tw.8932#e13:
-    locator: 第18頁，附註十二，宏大中國公司業務性質；第56頁附表六列正式名稱
+    locator: 第18頁，附註十二：列入合併財務報告之子公司
     published_date: null
     publisher: 智通科創股份有限公司
     quote_check: found
-    title: 民國115及114年第2季合併財務報告
-    url: https://wiselink.tw/wp-content/uploads/2026/08/%E6%99%BA%E9%80%9A115Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1%E7%94%A8%E5%8D%B0%E7%89%88.pdf
+    title: 115年第一季合併財務報告
+    url: https://wiselink.tw/wp-content/uploads/2026/06/智通115Q1合併財報用印版.pdf
+  tw.8932#e14:
+    locator: 第18頁，附註十二：子公司表
+    published_date: null
+    publisher: 智通科創股份有限公司
+    quote_check: found
+    title: 115年第一季合併財務報告
+    url: https://wiselink.tw/wp-content/uploads/2026/06/智通115Q1合併財報用印版.pdf
+  tw.8932#e15:
+    locator: 第81頁，附表六：大陸投資資訊
+    published_date: null
+    publisher: 智通科創股份有限公司
+    quote_check: unreachable
+    title: 114年度合併財務報告
+    url: https://wiselink.tw/wp-content/uploads/2026/04/智通科創114Q4合併財報用印版.pdf
+  tw.8932#e16:
+    locator: 第28頁，Letul收購註記
+    published_date: '2026-08-26'
+    publisher: 智通科創股份有限公司
+    quote_check: found
+    title: 1H26法人說明會簡報
+    url: https://wiselink.tw/wp-content/uploads/2026/09/1H26智通科創法說簡報_CHN_Finalized.pdf
+  tw.8932#e17:
+    locator: 公告第8項，累積持有證券
+    published_date: '2026-08-26'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ轉載
+    quote_check: found
+    title: 智通*：GLOBAL LINE NETWORK取得GC Construction 1.9億股，計7790萬港幣（補充）
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=abf977ac-50f1-4431-89a8-2452de4c8d00
+  tw.8932#e18:
+    locator: 公告第2、8項；母公司持股
+    published_date: '2026-08-28'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ轉載
+    quote_check: found
+    title: 智通*董事會決議通過取得有價證券額度之實際執行結果符合取得或處分資產處理準則規定
+    url: https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=885deec2-44d2-4819-a0a5-88c2b6ed2fc8
+  tw.8932#e19:
+    locator: 印度手機遊戲合資段落
+    published_date: '2025-06-26'
+    publisher: 民視財經網／財訊雙週刊，游筱燕
+    quote_check: found
+    title: 在東南亞發展資服業 到印度跨足金融科技 智通科創3招轉骨 老牌拉鍊廠添動能
+    url: https://finance.ftvnews.com.tw/news/detail/2025626W0561
   tw.8932#e2:
-    locator: 第6頁，其他營業收入列，115年1月1日至6月30日金額及百分比欄；第29頁附註二四拆分收入內容
-    published_date: null
-    publisher: 智通科創股份有限公司
-    quote_check: found
-    title: 民國115及114年第2季合併財務報告
-    url: https://wiselink.tw/wp-content/uploads/2026/08/%E6%99%BA%E9%80%9A115Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1%E7%94%A8%E5%8D%B0%E7%89%88.pdf
-  tw.8932#e3:
-    locator: 第6頁，銷貨收入列，115年1月1日至6月30日金額及百分比欄
-    published_date: null
-    publisher: 智通科創股份有限公司
-    quote_check: found
-    title: 民國115及114年第2季合併財務報告
-    url: https://wiselink.tw/wp-content/uploads/2026/08/%E6%99%BA%E9%80%9A115Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1%E7%94%A8%E5%8D%B0%E7%89%88.pdf
-  tw.8932#e4:
-    locator: 第29頁，附註二四收入，拉鍊銷售收入列；上半年金額477,950仟元與第6頁銷貨收入一致
-    published_date: null
-    publisher: 智通科創股份有限公司
-    quote_check: found
-    title: 民國115及114年第2季合併財務報告
-    url: https://wiselink.tw/wp-content/uploads/2026/08/%E6%99%BA%E9%80%9A115Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1%E7%94%A8%E5%8D%B0%E7%89%88.pdf
-  tw.8932#e5:
-    locator: 一家面向未來的多品牌企業，軟體科技事業段落
+    locator: 兩個業務體系，軟體科技事業段落
     published_date: null
     publisher: 智通科創股份有限公司
     quote_check: found
     title: 首頁
     url: https://wiselink.tw/
-  tw.8932#e6:
-    locator: 歡迎來到智通，主要產品段落
+  tw.8932#e20:
+    locator: 第53頁，被投資公司資訊；持股比率及備註欄
     published_date: null
     publisher: 智通科創股份有限公司
     quote_check: found
-    title: 關於智通
-    url: https://wiselink.tw/home-2/about-us/
-  tw.8932#e7:
-    locator: 第19頁，產品定位
-    published_date: '2026-08-26'
-    publisher: 智通科創股份有限公司
-    quote_check: found
-    title: 1H26法人說明會簡報
-    url: https://wiselink.tw/wp-content/uploads/2026/09/1H26%E6%99%BA%E9%80%9A%E7%A7%91%E5%89%B5%E6%B3%95%E8%AA%AA%E7%B0%A1%E5%A0%B1_CHN_Finalized.pdf
-  tw.8932#e8:
-    locator: 第26頁，印度Fintech事業章節
-    published_date: '2026-08-26'
-    publisher: 智通科創股份有限公司
-    quote_check: found
-    title: 1H26法人說明會簡報
-    url: https://wiselink.tw/wp-content/uploads/2026/09/1H26%E6%99%BA%E9%80%9A%E7%A7%91%E5%89%B5%E6%B3%95%E8%AA%AA%E7%B0%A1%E5%A0%B1_CHN_Finalized.pdf
-  tw.8932#e9:
+    title: 115年第一季合併財務報告
+    url: https://wiselink.tw/wp-content/uploads/2026/06/智通115Q1合併財報用印版.pdf
+  tw.8932#e21:
     locator: 第27頁，Zenzy策略調整
     published_date: '2026-08-26'
     publisher: 智通科創股份有限公司
     quote_check: found
     title: 1H26法人說明會簡報
-    url: https://wiselink.tw/wp-content/uploads/2026/09/1H26%E6%99%BA%E9%80%9A%E7%A7%91%E5%89%B5%E6%B3%95%E8%AA%AA%E7%B0%A1%E5%A0%B1_CHN_Finalized.pdf
+    url: https://wiselink.tw/wp-content/uploads/2026/09/1H26智通科創法說簡報_CHN_Finalized.pdf
+  tw.8932#e22:
+    locator: 2024年及2025年大事記
+    published_date: null
+    publisher: 智通科創股份有限公司
+    quote_check: found
+    title: 大事記
+    url: https://wiselink.tw/home-2/milestones/
+  tw.8932#e3:
+    locator: 歡迎來到智通，產品段落
+    published_date: null
+    publisher: 智通科創股份有限公司
+    quote_check: found
+    title: 關於智通
+    url: https://wiselink.tw/home-2/about-us/
+  tw.8932#e4:
+    locator: 第14頁，FinShell Pay及印度Fintech事業
+    published_date: '2026-03-31'
+    publisher: 智通科創股份有限公司
+    quote_check: found
+    title: 4Q25法人說明會簡報
+    url: https://wiselink.tw/wp-content/uploads/2026/04/智通科創Q425法說會中文_final.pdf
+  tw.8932#e5:
+    locator: 資服業務深化，攻海外市場
+    published_date: '2025-06-26'
+    publisher: 民視財經網／財訊雙週刊，游筱燕
+    quote_check: found
+    title: 在東南亞發展資服業 到印度跨足金融科技 智通科創3招轉骨 老牌拉鍊廠添動能
+    url: https://finance.ftvnews.com.tw/news/detail/2025626W0561
+  tw.8932#e6:
+    locator: 第6頁，既有核心客戶
+    published_date: '2026-08-26'
+    publisher: 智通科創股份有限公司
+    quote_check: found
+    title: 1H26法人說明會簡報
+    url: https://wiselink.tw/wp-content/uploads/2026/09/1H26智通科創法說簡報_CHN_Finalized.pdf
+  tw.8932#e7:
+    locator: 第21頁，Kamstrup合作
+    published_date: '2026-08-26'
+    publisher: 智通科創股份有限公司
+    quote_check: found
+    title: 1H26法人說明會簡報
+    url: https://wiselink.tw/wp-content/uploads/2026/09/1H26智通科創法說簡報_CHN_Finalized.pdf
+  tw.8932#e8:
+    locator: 第14頁，印度Fintech事業
+    published_date: '2026-03-31'
+    publisher: 智通科創股份有限公司
+    quote_check: found
+    title: 4Q25法人說明會簡報
+    url: https://wiselink.tw/wp-content/uploads/2026/04/智通科創Q425法說會中文_final.pdf
+  tw.8932#e9:
+    locator: 第14頁，截至2025年12月底的裝機資料
+    published_date: '2026-03-31'
+    publisher: 智通科創股份有限公司
+    quote_check: found
+    title: 4Q25法人說明會簡報
+    url: https://wiselink.tw/wp-content/uploads/2026/04/智通科創Q425法說會中文_final.pdf

@@ -26,78 +26,36 @@ chain_stage:
   stage_name: 金融服務
   tier: not_applicable
 primary_chain_position: not_applicable
-summary_short: 提供汽車分期、企業與消費金融，並透過子公司經營租車及充電服務。
-summary_long: 裕融主要提供新車與中古車分期、中古車貸款仲介及租賃金融服務。企業金融由新鑫等子公司承作商用車、設備分期與企業周轉金；裕富數位提供機車及消費性商品分期。格上汽車租賃提供長短期租車、附駕及共享車服務，行將企業為其持股的間接子公司。2026年上半年營收中，營業租賃占30.5%、應收帳款收買利息占19.5%、分期付款銷貨利息占13.7%。裕融的母公司為裕隆汽車製造股份有限公司，並透過子公司裕電俥電提供電動車充電服務。
+summary_short: 以汽車分期、企業融資及租賃服務賺取利息與租金，並經營移動服務。
+summary_long: 裕融經營車輛分期、應收帳款收買、中古車貸款仲介與租賃服務，並透過子公司提供企業設備融資及商品分期。新鑫、格上汽車租賃與裕富數位資融為全資子公司；原行將於2025年底併入行冠，存續公司於2026年更名行將。汽車進貨對象包括裕隆日產與納智捷，另有向行將進貨的關係。近年交易包括出售裕隆汽金49%股權予北汽、認購新鑫30億元私募股，以及中國子公司的內部股權調整。
 segments:
 - evidence_ids:
   - e02
-  id: seg.operating_lease
-  name: 營業租賃收入
+  id: financing
+  name: 融資部門
   period: 2026年上半年
-  revenue_share_pct: 30.5
+  revenue_share_pct: null
 - evidence_ids:
-  - e03
-  id: seg.receivable_interest
-  name: 應收帳款收買利息收入
+  - e02
+  id: leasing
+  name: 租賃部門
   period: 2026年上半年
-  revenue_share_pct: 19.5
+  revenue_share_pct: null
 - evidence_ids:
-  - e04
-  id: seg.sales
-  name: 銷貨收入
+  - e02
+  id: other
+  name: 其他
   period: 2026年上半年
-  revenue_share_pct: 17.3
-- evidence_ids:
-  - e05
-  id: seg.finance_lease_interest
-  name: 融資租賃利息收入
-  period: 2026年上半年
-  revenue_share_pct: 6.7
-- evidence_ids:
-  - e06
-  id: seg.installment_interest
-  name: 分期付款銷貨利息收入
-  period: 2026年上半年
-  revenue_share_pct: 13.7
-- evidence_ids:
-  - e07
-  id: seg.promotion
-  name: 推廣報酬收入
-  period: 2026年上半年
-  revenue_share_pct: 0.3
-- evidence_ids:
-  - e08
-  id: seg.loan_interest
-  name: 放款利息收入
-  period: 2026年上半年
-  revenue_share_pct: 0.7
-- evidence_ids:
-  - e09
-  id: seg.other_interest
-  name: 其他利息收入
-  period: 2026年上半年
-  revenue_share_pct: 4.4
-- evidence_ids:
-  - e10
-  id: seg.other_revenue
-  name: 其他營業收入
-  period: 2026年上半年
-  revenue_share_pct: 6.9
-main_theme: theme.ev
-themes:
-- also: []
-  stage: vehicle
-  theme: theme.ev
-  tier: downstream
+  revenue_share_pct: null
 relations:
   parents:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接子公司；汽車相關產品銷售及租賃
+    detail: 納入合併財報之金融及租賃子公司
     details:
-    - 直接子公司；汽車相關產品銷售及租賃
-    - 母公司
+    - 納入合併財報之金融及租賃子公司
+    - 母公司及最終控制者
     edge: eed7f9dd68bf8
     evidence_level: primary
     id: tw.2201
@@ -110,26 +68,12 @@ relations:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接全資子公司
+    detail: 全資汽車租賃子公司
     details:
-    - 直接全資子公司
-    edge: e4e89a520c5ce
+    - 全資汽車租賃子公司
+    edge: e96e88d880840
     evidence_level: primary
-    id: org.新鑫股份有限公司
-    name: 新鑫股份有限公司
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
-  - as_of: '2026-06-30'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 直接全資子公司
-    details:
-    - 直接全資子公司
-    edge: ecc669376b4bc
-    evidence_level: primary
-    id: org.格上汽車租賃股份有限公司
+    id: org.car-plus-auto-leasing
     name: 格上汽車租賃股份有限公司
     ranking_basis: unranked
     share_basis: null
@@ -138,12 +82,26 @@ relations:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 透過格上汽車租賃間接控制
+    detail: 2026年新設全資投資公司
     details:
-    - 透過格上汽車租賃間接控制
-    edge: ebe08bbb10a9a
+    - 2026年新設全資投資公司
+    edge: ed9fba437660d
     evidence_level: primary
-    id: org.行將企業股份有限公司
+    id: org.rong-sheng-investment
+    name: 融盛有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過格上持有的汽車商品事業
+    details:
+    - 透過格上持有的汽車商品事業
+    edge: e22f9d9f0f394
+    evidence_level: primary
+    id: org.sin-jang
     name: 行將企業股份有限公司
     ranking_basis: unranked
     share_basis: null
@@ -152,12 +110,26 @@ relations:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接全資子公司
+    detail: 移動科技子公司，原觔斗雲聯網科技
     details:
-    - 直接全資子公司
-    edge: e24d9d8c11a4f
+    - 移動科技子公司，原觔斗雲聯網科技
+    edge: e26158fa12f6d
     evidence_level: primary
-    id: org.裕富數位資融股份有限公司
+    id: org.xin-chuang-xin-mobility
+    name: 新創鑫移動科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資商品分期子公司
+    details:
+    - 全資商品分期子公司
+    edge: eb5c8da6431ee
+    evidence_level: primary
+    id: org.yu-rich-financial-services
     name: 裕富數位資融股份有限公司
     ranking_basis: unranked
     share_basis: null
@@ -166,211 +138,392 @@ relations:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 電動車充電服務子公司
+    detail: 馬來西亞融資子公司的收購
     details:
-    - 電動車充電服務子公司
-    edge: e920dec9c66c7
+    - 馬來西亞融資子公司的收購
+    edge: e77e7e7f13276
     evidence_level: primary
-    id: org.裕電俥電股份有限公司
-    name: 裕電俥電股份有限公司
+    id: org.yulon-credit-malaysia
+    name: Yulon Credit Sdn. Bhd.
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 菲律賓子公司新設保險代理公司
+    details:
+    - 菲律賓子公司新設保險代理公司
+    edge: e8ed28d08bc9e
+    evidence_level: primary
+    id: org.yulon-insurance-agency-philippines
+    name: Yulon Insurance Agency Philippines Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資企業金融子公司
+    details:
+    - 全資企業金融子公司
+    edge: e7d2f3a3da55b
+    evidence_level: primary
+    id: tw.6871
+    name: 新鑫股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 關係企業商品進貨
+    details:
+    - 關係企業商品進貨
+    edge: e49e9beee62d4
+    evidence_level: primary
+    id: org.sin-jang
+    name: 行將企業股份有限公司
+    ranking_basis: disclosed
+    share_basis: purchases
+    share_pct: 40
+    weight: 1
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 供裕融轉售經銷商的車輛
+    details:
+    - 供裕融轉售經銷商的車輛
+    edge: e58f4b4712154
+    evidence_level: primary
+    id: tw.2227
+    name: 裕日車
+    ranking_basis: disclosed
+    share_basis: purchases
+    share_pct: 18
+    weight: 1
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 供裕融轉售經銷商的車輛
+    details:
+    - 供裕融轉售經銷商的車輛
+    edge: e8097fc2b5226
+    evidence_level: primary
+    id: org.luxgen-motor
+    name: 納智捷汽車股份有限公司
+    ranking_basis: disclosed
+    share_basis: purchases
+    share_pct: 5
+    weight: 1
+  transactions:
+  - amount: 人民幣651,484仟元（新台幣29.48億元）
+    as_of: '2024-11-21'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 出售裕隆汽車金融（中國）49%股權
+    details:
+    - 出售裕隆汽車金融（中國）49%股權
+    edge: e8ea51648697b
+    event_date: '2024-09-30'
+    events:
+    - amount: 人民幣651,484仟元（新台幣29.48億元）
+      detail: 出售裕隆汽車金融（中國）49%股權
+      event_date: '2024-09-30'
+    evidence_level: primary
+    id: org.baic-group
+    name: 北京汽車集團有限公司
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 人民幣161,312,500元
+    as_of: '2026-03-05'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司取得江蘇格上100%股權的內部重整
+    details:
+    - 子公司取得江蘇格上100%股權的內部重整
+    edge: e9386a90d0bfa
+    event_date: '2026-03-05'
+    events:
+    - amount: 人民幣161,312,500元
+      detail: 子公司取得江蘇格上100%股權的內部重整
+      event_date: '2026-03-05'
+    evidence_level: primary
+    id: org.car-plus-china-investment-samoa
+    name: Car-Plus China Investment (Samoa) Co.,Ltd.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2024-08-01'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 格上吸收合併全資子公司
+    details:
+    - 格上吸收合併全資子公司
+    edge: e83d86637829c
+    event_date: '2024-08-01'
+    events:
+    - amount: null
+      detail: 格上吸收合併全資子公司
+      event_date: '2024-08-01'
+    evidence_level: primary
+    id: org.hong-shuo-culture
+    name: 宏碩文化(股)公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 不動產使用權資產約41,752.5千元
+    as_of: '2025-08-05'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 格上取得新店辦公室使用權資產
+    details:
+    - 格上取得新店辦公室使用權資產
+    edge: e7be02a8297f3
+    event_date: '2025-08-05'
+    events:
+    - amount: 不動產使用權資產約41,752.5千元
+      detail: 格上取得新店辦公室使用權資產
+      event_date: '2025-08-05'
+    evidence_level: primary
+    id: tw.2201
+    name: 裕隆
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2024-03-07'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 取得辦公室使用權資產
+    details:
+    - 取得辦公室使用權資產
+    edge: e81585cb4b18f
+    event_date: '2024-03-07'
+    events:
+    - amount: null
+      detail: 取得辦公室使用權資產
+      event_date: '2024-03-07'
+    evidence_level: primary
+    id: tw.2204
+    name: 中華
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣3,000,000,000元
+    as_of: '2025-05-08'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 認購新鑫私募普通股
+    details:
+    - 認購新鑫私募普通股
+    edge: eb4e898761354
+    event_date: '2025-05-08'
+    events:
+    - amount: 新台幣3,000,000,000元
+      detail: 認購新鑫私募普通股
+      event_date: '2025-05-08'
+    evidence_level: primary
+    id: tw.6871
+    name: 新鑫股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 未逐一具名的一般購車分期消費者
+- 未逐一具名的中小微企業融資客戶
+- 年報供應商表列的其他進貨對象
 website: http://www.tac.com.tw
 tax_id: '23528130'
 incorporated: '1990-04-12'
 listed: '2001-09-17'
-as_of: '2026-10-15'
+as_of: '2026-10-25'
 confidence: ai_cross_checked
 has_research: true
 evidence:
+  tw.9941#e01:
+    locator: 第78頁，業務範圍
+    published_date: '2026-04-15'
+    publisher: 裕融企業股份有限公司
+    quote_check: found
+    title: 裕融企業114年度年報
+    url: https://www.tac.com.tw/JsonFile/annual_report/202605081702520.pdf
   tw.9941#e02:
-    locator: 第19頁「附件：合併營收」，依交易性質，營業租賃收入列，YT2Q2026金額與占比欄；金額單位為新台幣百萬元
-    published_date: '2026-08-26'
+    locator: 第71頁，附註三五部門資訊；2026上半年融資7,851,390仟元、租賃9,519,116仟元、其他2,180,731仟元
+    published_date: '2026-08-06'
     publisher: 裕融企業股份有限公司
     quote_check: found
-    title: 裕融企業2026年第二季法人說明會簡報
-    url: https://www.tac.com.tw/JsonFile/earnings_call/202608261624520.pdf
+    title: 裕融企業115及114年第2季合併財務報告
+    url: https://www.tac.com.tw/JsonFile/financial_report/202609091345051.pdf
   tw.9941#e03:
-    locator: 第19頁，應收帳款收買利息收入列，YT2Q2026金額與占比欄
-    published_date: '2026-08-26'
+    locator: 第78頁，主要商品（服務）項目，企業金融業務
+    published_date: '2026-04-15'
     publisher: 裕融企業股份有限公司
     quote_check: found
-    title: 裕融企業2026年第二季法人說明會簡報
-    url: https://www.tac.com.tw/JsonFile/earnings_call/202608261624520.pdf
+    title: 裕融企業114年度年報
+    url: https://www.tac.com.tw/JsonFile/annual_report/202605081702520.pdf
   tw.9941#e04:
-    locator: 第19頁，銷貨收入列，YT2Q2026金額與占比欄
-    published_date: '2026-08-26'
+    locator: 第62頁，附註三一關係人交易
+    published_date: '2026-08-06'
     publisher: 裕融企業股份有限公司
     quote_check: found
-    title: 裕融企業2026年第二季法人說明會簡報
-    url: https://www.tac.com.tw/JsonFile/earnings_call/202608261624520.pdf
+    title: 裕融企業115及114年第2季合併財務報告
+    url: https://www.tac.com.tw/JsonFile/financial_report/202609091345051.pdf
   tw.9941#e05:
-    locator: 第19頁，融資租賃利息收入列，YT2Q2026金額與占比欄
-    published_date: '2026-08-26'
-    publisher: 裕融企業股份有限公司
+    locator: 公告第4項；2026年第2季財報第27頁續列100%持股
+    published_date: '2025-05-09'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ
     quote_check: found
-    title: 裕融企業2026年第二季法人說明會簡報
-    url: https://www.tac.com.tw/JsonFile/earnings_call/202608261624520.pdf
+    title: 裕融董事會決議認購新鑫私募普通股6000萬股，計30億元
+    url: https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=73988503-f15a-4e66-ba90-1a31da27cb42
   tw.9941#e06:
-    locator: 第19頁，分期付款銷貨利息收入列，YT2Q2026金額與占比欄
-    published_date: '2026-08-26'
+    locator: 第27頁，附註十五；投資公司為本公司，格上持股100%
+    published_date: '2026-08-06'
     publisher: 裕融企業股份有限公司
     quote_check: found
-    title: 裕融企業2026年第二季法人說明會簡報
-    url: https://www.tac.com.tw/JsonFile/earnings_call/202608261624520.pdf
+    title: 裕融企業115及114年第2季合併財務報告
+    url: https://www.tac.com.tw/JsonFile/financial_report/202609091345051.pdf
   tw.9941#e07:
-    locator: 第19頁，推廣報酬收入列，YT2Q2026金額與占比欄
-    published_date: '2026-08-26'
+    locator: 第27頁，附註十五；本公司對裕富數位資融持股
+    published_date: '2026-08-06'
     publisher: 裕融企業股份有限公司
-    quote_check: not_found
-    title: 裕融企業2026年第二季法人說明會簡報
-    url: https://www.tac.com.tw/JsonFile/earnings_call/202608261624520.pdf
+    quote_check: found
+    title: 裕融企業115及114年第2季合併財務報告
+    url: https://www.tac.com.tw/JsonFile/financial_report/202609091345051.pdf
   tw.9941#e08:
-    locator: 第19頁，放款利息收入列，YT2Q2026金額與占比欄
-    published_date: '2026-08-26'
+    locator: 第27頁，格上汽車租賃公司所持子公司股權
+    published_date: '2026-08-06'
     publisher: 裕融企業股份有限公司
-    quote_check: not_found
-    title: 裕融企業2026年第二季法人說明會簡報
-    url: https://www.tac.com.tw/JsonFile/earnings_call/202608261624520.pdf
+    quote_check: found
+    title: 裕融企業115及114年第2季合併財務報告
+    url: https://www.tac.com.tw/JsonFile/financial_report/202609091345051.pdf
   tw.9941#e09:
-    locator: 第19頁，其他利息收入列，YT2Q2026金額與占比欄
-    published_date: '2026-08-26'
+    locator: 第29頁，附註十五註十
+    published_date: '2026-08-06'
     publisher: 裕融企業股份有限公司
-    quote_check: not_found
-    title: 裕融企業2026年第二季法人說明會簡報
-    url: https://www.tac.com.tw/JsonFile/earnings_call/202608261624520.pdf
+    quote_check: found
+    title: 裕融企業115及114年第2季合併財務報告
+    url: https://www.tac.com.tw/JsonFile/financial_report/202609091345051.pdf
   tw.9941#e10:
-    locator: 第19頁，其他營業收入列，YT2Q2026金額與占比欄
-    published_date: '2026-08-26'
+    locator: 第87頁，裕隆日產2025年進貨占比18%；第97頁，裕隆日產買賣契約
+    published_date: '2026-04-15'
     publisher: 裕融企業股份有限公司
     quote_check: found
-    title: 裕融企業2026年第二季法人說明會簡報
-    url: https://www.tac.com.tw/JsonFile/earnings_call/202608261624520.pdf
+    title: 裕融企業114年度年報
+    url: https://www.tac.com.tw/JsonFile/annual_report/202605081702520.pdf
   tw.9941#e11:
-    locator: 台灣／小客車分期業務
-    published_date: null
+    locator: 第87頁，納智捷2025年進貨占比5%；第97頁，納智捷買賣契約
+    published_date: '2026-04-15'
     publisher: 裕融企業股份有限公司
-    quote_check: unreachable
-    title: 裕融企業股份有限公司｜產品及服務
-    url: https://www.tac.com.tw/Tw/product-service
+    quote_check: found
+    title: 裕融企業114年度年報
+    url: https://www.tac.com.tw/JsonFile/annual_report/202605081702520.pdf
   tw.9941#e12:
-    locator: 印刷頁78，主要商品（服務）項目說明／中古車貸款仲介業務
-    published_date: '2026-04-15'
+    locator: 第78頁，附表四；本公司向行將進貨，單位新台幣仟元
+    published_date: '2026-08-06'
     publisher: 裕融企業股份有限公司
     quote_check: found
-    title: 裕融企業114年度年報
-    url: https://www.tac.com.tw/JsonFile/annual_report/202605081702520.pdf
+    title: 裕融企業115及114年第2季合併財務報告
+    url: https://www.tac.com.tw/JsonFile/financial_report/202609091345051.pdf
   tw.9941#e13:
-    locator: 印刷頁78，主要商品（服務）項目說明／企業金融業務
+    locator: 簡述原公告申報內容
+    published_date: '2024-11-21'
+    publisher: 公開資訊觀測站重大訊息／鉅亨網
+    quote_check: found
+    title: 裕融：補充公告全數處分裕隆汽車金融（中國）有限公司股權
+    url: https://news.cnyes.com/news/id/5786554
+  tw.9941#e14:
+    locator: 變動緣由及主要內容；原公告內容另載2024年9月30日交割
+    published_date: '2024-11-21'
+    publisher: 公開資訊觀測站重大訊息／鉅亨網
+    quote_check: found
+    title: 裕融：補充公告全數處分裕隆汽車金融（中國）有限公司股權
+    url: https://news.cnyes.com/news/id/5786554
+  tw.9941#e15:
+    locator: 公告第1至3項及董事會通過日期
+    published_date: '2025-05-09'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ
+    quote_check: found
+    title: 裕融董事會決議認購新鑫私募普通股6000萬股，計30億元
+    url: https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=73988503-f15a-4e66-ba90-1a31da27cb42
+  tw.9941#e16:
+    locator: 公告主旨及第5至6項
+    published_date: '2026-03-05'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ
+    quote_check: found
+    title: 裕融：江蘇裕融融資租賃取得江蘇格上融資租賃100%股權
+    url: https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=e17a1d9d-5b29-427f-aae1-3241d2eb2425
+  tw.9941#e17:
+    locator: 公告第5項金額、第11項核准條件及第17項交易目的
+    published_date: '2026-03-05'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ
+    quote_check: found
+    title: 裕融：江蘇裕融融資租賃取得江蘇格上融資租賃100%股權
+    url: https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=e17a1d9d-5b29-427f-aae1-3241d2eb2425
+  tw.9941#e18:
+    locator: 公告主旨及第5至6項
+    published_date: '2025-08-05'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ
+    quote_check: found
+    title: 裕融：格上汽車租賃向裕隆取得新北市新店區不動產使用權資產
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=1523aca5-3af5-4a6e-a7bb-49f5e69141d0
+  tw.9941#e19:
+    locator: 公告主旨、第2項事實發生日、第7項及第17項
+    published_date: '2024-08-02'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ
+    quote_check: found
+    title: 裕融：格上汽車租賃吸收合併宏碩文化，預定完成日12/31
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=7abec1d4-4dff-476f-849f-e5bc9de168fd
+  tw.9941#e20:
+    locator: 第97頁，裕融企業重要契約
     published_date: '2026-04-15'
     publisher: 裕融企業股份有限公司
     quote_check: found
     title: 裕融企業114年度年報
     url: https://www.tac.com.tw/JsonFile/annual_report/202605081702520.pdf
-  tw.9941#e14:
-    locator: 台灣／設備租賃業務，連結指向新鑫官網
-    published_date: null
-    publisher: 裕融企業股份有限公司
-    quote_check: unreachable
-    title: 裕融企業股份有限公司｜產品及服務
-    url: https://www.tac.com.tw/Tw/product-service
-  tw.9941#e15:
-    locator: 台灣／機車、商品分期業務，連結指向裕富數位官網
-    published_date: null
-    publisher: 裕融企業股份有限公司
-    quote_check: unreachable
-    title: 裕融企業股份有限公司｜產品及服務
-    url: https://www.tac.com.tw/Tw/product-service
-  tw.9941#e16:
-    locator: 台灣／租車業務，連結指向格上官網
-    published_date: null
-    publisher: 裕融企業股份有限公司
-    quote_check: unreachable
-    title: 裕融企業股份有限公司｜產品及服務
-    url: https://www.tac.com.tw/Tw/product-service
-  tw.9941#e17:
-    locator: 第27頁，附註十五「列入合併財務報告之子公司」，投資公司為本公司，新鑫列，115年6月30日欄
-    published_date: null
-    publisher: 裕融企業股份有限公司
-    quote_check: found
-    title: 裕融企業股份有限公司及子公司115及114年第2季合併財務報告
-    url: https://www.tac.com.tw/JsonFile/financial_report/202609091345051.pdf
-  tw.9941#e18:
-    locator: 第27頁，附註十五，投資公司為本公司，裕富數位資融列，115年6月30日欄
-    published_date: null
-    publisher: 裕融企業股份有限公司
-    quote_check: found
-    title: 裕融企業股份有限公司及子公司115及114年第2季合併財務報告
-    url: https://www.tac.com.tw/JsonFile/financial_report/202609091345051.pdf
-  tw.9941#e19:
-    locator: 第27頁，附註十五，投資公司為本公司，格上汽車租賃列，115年6月30日欄
-    published_date: null
-    publisher: 裕融企業股份有限公司
-    quote_check: found
-    title: 裕融企業股份有限公司及子公司115及114年第2季合併財務報告
-    url: https://www.tac.com.tw/JsonFile/financial_report/202609091345051.pdf
-  tw.9941#e20:
-    locator: 第83頁，被投資公司資訊，格上汽車租賃為投資公司、行將企業為被投資公司
-    published_date: null
-    publisher: 裕融企業股份有限公司
-    quote_check: found
-    title: 裕融企業股份有限公司及子公司115及114年第2季合併財務報告
-    url: https://www.tac.com.tw/JsonFile/financial_report/202609091345051.pdf
   tw.9941#e21:
-    locator: 第83頁，格上汽車租賃投資行將企業列，期末持有股數與比率欄
-    published_date: null
+    locator: 第27頁，附註十五；本公司對新創鑫移動持股50.70%
+    published_date: '2026-08-06'
     publisher: 裕融企業股份有限公司
     quote_check: found
-    title: 裕融企業股份有限公司及子公司115及114年第2季合併財務報告
+    title: 裕融企業115及114年第2季合併財務報告
     url: https://www.tac.com.tw/JsonFile/financial_report/202609091345051.pdf
   tw.9941#e22:
-    locator: 第27頁，附註十五，現行行將企業名稱與原名
-    published_date: null
+    locator: 第29頁，附註十五註二
+    published_date: '2026-08-06'
     publisher: 裕融企業股份有限公司
     quote_check: found
-    title: 裕融企業股份有限公司及子公司115及114年第2季合併財務報告
+    title: 裕融企業115及114年第2季合併財務報告
     url: https://www.tac.com.tw/JsonFile/financial_report/202609091345051.pdf
   tw.9941#e23:
-    locator: 第62頁，附註三十一，關係人名稱及其關係
-    published_date: null
+    locator: 第30頁，附註十五註十一
+    published_date: '2026-08-06'
     publisher: 裕融企業股份有限公司
     quote_check: found
-    title: 裕融企業股份有限公司及子公司115及114年第2季合併財務報告
+    title: 裕融企業115及114年第2季合併財務報告
     url: https://www.tac.com.tw/JsonFile/financial_report/202609091345051.pdf
   tw.9941#e24:
-    locator: 印刷頁53，永續發展執行情形／綠能投資
-    published_date: '2026-04-15'
+    locator: 第30頁，附註十五註十二
+    published_date: '2026-08-06'
     publisher: 裕融企業股份有限公司
     quote_check: found
-    title: 裕融企業114年度年報
-    url: https://www.tac.com.tw/JsonFile/annual_report/202605081702520.pdf
-  tw.9941#e25:
-    locator: 台灣／電動車充電及營運系統業務，連結指向裕電俥電官網
-    published_date: null
-    publisher: 裕融企業股份有限公司
-    quote_check: unreachable
-    title: 裕融企業股份有限公司｜產品及服務
-    url: https://www.tac.com.tw/Tw/product-service
-  tw.9941#e26:
-    locator: 第27頁，附註十五，格上汽車租賃旗下列入合併之子公司
-    published_date: null
-    publisher: 裕融企業股份有限公司
-    quote_check: found
-    title: 裕融企業股份有限公司及子公司115及114年第2季合併財務報告
+    title: 裕融企業115及114年第2季合併財務報告
     url: https://www.tac.com.tw/JsonFile/financial_report/202609091345051.pdf
-  tw.9941#e27:
-    locator: 印刷頁68，本公司對轉投資事業持股資料，用於確認新鑫正式名稱
-    published_date: '2026-04-15'
-    publisher: 裕融企業股份有限公司
-    quote_check: found
-    title: 裕融企業114年度年報
-    url: https://www.tac.com.tw/JsonFile/annual_report/202605081702520.pdf
-  tw.9941#e28:
-    locator: 印刷頁68，本公司對轉投資事業持股資料，用於確認裕富正式名稱
-    published_date: '2026-04-15'
-    publisher: 裕融企業股份有限公司
-    quote_check: found
-    title: 裕融企業114年度年報
-    url: https://www.tac.com.tw/JsonFile/annual_report/202605081702520.pdf

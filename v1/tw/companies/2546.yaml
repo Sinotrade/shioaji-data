@@ -40,13 +40,28 @@ segments:
   period: '2025'
   revenue_share_pct: 60.14
 relations:
+  customers:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 冠德建案營造施工
+    details:
+    - 冠德建案營造施工
+    edge: e648539d1c2c5
+    evidence_level: primary
+    id: tw.2520
+    name: 冠德
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   parents:
   - as_of: 2026-10
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 綜合營造子公司
+    detail: 營造事業子公司
     details:
-    - 綜合營造子公司
+    - 營造事業子公司
     - 母公司
     edge: e96bbe1b21ef5
     evidence_level: primary
@@ -81,6 +96,21 @@ relations:
     evidence_level: primary
     id: org.捷群投資股份有限公司
     name: 捷群投資股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: 2023-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 營建工程用鋼筋
+    details:
+    - 營建工程用鋼筋
+    edge: e45656e548219
+    evidence_level: primary
+    id: tw.2015
+    name: 豐興
     ranking_basis: unranked
     share_basis: null
     share_pct: null

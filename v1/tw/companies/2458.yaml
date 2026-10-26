@@ -29,286 +29,532 @@ chain_stage:
   stage_name: IC 通路與模組
   tier: downstream
 primary_chain_position: upstream
-summary_short: 設計人機介面晶片並銷售模組，主要營收來自筆電輸入裝置。
-summary_long: 義隆以人機介面晶片設計與模組銷售為主要業務。2025年營收中，筆電輸入裝置模組占69.92%，消費性觸控積體電路占27.72%，其他占2.36%。主要產品包括觸控板模組、支援主動筆的觸控螢幕晶片、指紋辨識晶片、指向裝置及微控制器，應用於筆電、平板與其他電子裝置。公司亦提供無人機AI影像辨識及遙控器顯示方案，並開發電動巴士AI緊急轉向防護系統。合併子公司包括義晶科技、義碩智能、義明科技、奇美車電與達盛電子。
+summary_short: 設計人機介面晶片及模組，以筆電觸控板為主要營收來源。
+summary_long: 義隆自行設計晶片，產品包括觸控板模組、觸控螢幕晶片、指紋辨識及指向裝置。2026年9月觸控板模組占營收39%，為最大單一產品線；指紋辨識、觸控螢幕晶片及人工智慧產品分別占17%、13%與16%。年報列示的晶圓供應商包括台積電、聯電及世界先進，銷貨客戶另有奇普仕與品佳。公司提供無人機AI影像辨識方案，並與微軟合作開發觸覺回饋技術。近年投資包括增加奇美車電持股、參與達盛電子增資取得控制，以及策略投資PETA Optronics並合作研發光電整合方案。
 segments:
 - evidence_ids:
-  - e2
-  id: seg_nb_input
-  name: 筆電輸入裝置模組
-  period: '2025'
-  revenue_share_pct: 69.92
+  - e01
+  id: touchpad
+  name: 觸控板模組
+  period: 2026-09
+  revenue_share_pct: 39
 - evidence_ids:
-  - e2
-  id: seg_consumer_touch
-  name: 消費性觸控積體電路
-  period: '2025'
-  revenue_share_pct: 27.72
+  - e01
+  id: touchscreen
+  name: 觸控螢幕晶片
+  period: 2026-09
+  revenue_share_pct: 13
 - evidence_ids:
-  - e2
-  id: seg_other
-  name: 其他
-  period: '2025'
-  revenue_share_pct: 2.36
-main_theme: theme.ev
+  - e01
+  id: fingerprint
+  name: 指紋辨識
+  period: 2026-09
+  revenue_share_pct: 17
+- evidence_ids:
+  - e01
+  id: pointing
+  name: 指向裝置
+  period: 2026-09
+  revenue_share_pct: 10
+- evidence_ids:
+  - e01
+  id: ai
+  name: 人工智慧產品
+  period: 2026-09
+  revenue_share_pct: 16
+- evidence_ids:
+  - e01
+  id: mcu_related
+  name: 微控制器與關係企業
+  period: 2026-09
+  revenue_share_pct: 5
+main_theme: theme.drone
 themes:
-- also: []
-  stage: parts
-  theme: theme.ev
-  tier: midstream
 - also: []
   stage: modules
   theme: theme.drone
   tier: midstream
 - also: []
-  stage: display
-  theme: theme.mini_led
-  tier: downstream
+  stage: devices
+  theme: theme.silicon_photonics
+  tier: midstream
 relations:
+  competitors:
+  - as_of: '2026-02-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 觸控晶片及主動筆控制晶片市場
+    details:
+    - 觸控晶片及主動筆控制晶片市場
+    edge: ef1d6f121a4bf
+    evidence_level: primary
+    id: tw.2363
+    name: 矽統
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-08-06'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 觸控IC市場競爭
+    details:
+    - 觸控IC市場競爭
+    edge: e2f70c6732ce8
+    evidence_level: media
+    id: us.SYNA
+    name: Synaptics
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  customers:
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 年報具名銷貨客戶
+    details:
+    - 年報具名銷貨客戶
+    edge: e26abdcf3e751
+    evidence_level: primary
+    id: org.奇普仕
+    name: 奇普仕
+    ranking_basis: disclosed
+    share_basis: revenue
+    share_pct: 36.63
+    weight: 1
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 年報具名銷貨客戶
+    details:
+    - 年報具名銷貨客戶
+    edge: ed48bf821d33d
+    evidence_level: primary
+    id: org.品佳
+    name: 品佳
+    ranking_basis: disclosed
+    share_basis: revenue
+    share_pct: 23.73
+    weight: 1
+  - as_of: '2017-07-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 筆電觸控相關產品之品牌客戶
+    details:
+    - 筆電觸控相關產品之品牌客戶
+    edge: e7b34b3dffc82
+    evidence_level: media
+    id: cn.lenovo
+    name: Lenovo
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2017-07-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 筆電採用觸控板
+    details:
+    - 筆電採用觸控板
+    edge: e9955e34ef937
+    evidence_level: media
+    id: hk.01810
+    name: 小米
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2021-08-06'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 人機介面相關產品之品牌客戶
+    details:
+    - 人機介面相關產品之品牌客戶
+    edge: ed8c7f0dec191
+    evidence_level: media
+    id: kr.005930
+    name: Samsung Electronics
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2017-07-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 筆電觸控相關產品之品牌客戶
+    details:
+    - 筆電觸控相關產品之品牌客戶
+    edge: e9f6d3f0476e0
+    evidence_level: media
+    id: tw.2353
+    name: 宏碁
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2017-07-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 筆電觸控相關產品之品牌客戶
+    details:
+    - 筆電觸控相關產品之品牌客戶
+    edge: e971d22f1f36b
+    evidence_level: media
+    id: tw.2357
+    name: 華碩
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2017-07-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 筆電觸控相關產品之品牌客戶
+    details:
+    - 筆電觸控相關產品之品牌客戶
+    edge: e0fd1bfd94ab2
+    evidence_level: media
+    id: us.DELL
+    name: Dell
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2017-07-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 筆電觸控相關產品之品牌客戶
+    details:
+    - 筆電觸控相關產品之品牌客戶
+    edge: e4ad3595e0ff5
+    evidence_level: media
+    id: us.HPQ
+    name: HP
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2021-08-06'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 人機介面相關產品之品牌客戶
+    details:
+    - 人機介面相關產品之品牌客戶
+    edge: e5d10dacd9798
+    evidence_level: media
+    id: us.MSFT
+    name: Microsoft
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  partners:
+  - as_of: '2026-06-08'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 共同研發3.2T NPO光電整合方案
+    details:
+    - 共同研發3.2T NPO光電整合方案
+    edge: eb9af4d4f75dd
+    evidence_level: media
+    id: org.peta-optronics
+    name: 沛達光電 (PETA Optronics)
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-08-06'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: Advanced Haptic觸覺回饋技術共同開發
+    details:
+    - Advanced Haptic觸覺回饋技術共同開發
+    edge: ec395b1ea85a5
+    evidence_level: media
+    id: us.MSFT
+    name: Microsoft
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
-  - as_of: '2026-03-31'
+  - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 銷售及產品售後服務子公司
+    detail: 受控制並納入合併財報的子公司
     details:
-    - 銷售及產品售後服務子公司
-    edge: e243cecb953e4
+    - 受控制並納入合併財報的子公司
+    edge: ec1c94d227db8
     evidence_level: primary
-    id: org.elan-h-k
-    name: Elan H.K.
+    id: org.奇美車電
+    name: 奇美車電
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-03-31'
+  - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 影像辨識及汽車電子子公司
+    detail: 義隆及義隆投資持有的合併子公司
     details:
-    - 影像辨識及汽車電子子公司
-    edge: eb39f412a0665
+    - 義隆及義隆投資持有的合併子公司
+    edge: eafcc600537c5
     evidence_level: primary
-    id: org.奇美車電-股-公司
-    name: 奇美車電(股)公司
+    id: org.義晶科技
+    name: 義晶科技
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-03-31'
+  - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 電子零組件及光學儀器子公司
+    detail: 義隆及義隆投資持有的合併子公司
     details:
-    - 電子零組件及光學儀器子公司
-    edge: e970b4e162ea7
+    - 義隆及義隆投資持有的合併子公司
+    edge: e4243a3e12b67
     evidence_level: primary
-    id: org.義明科技股份有限公司
-    name: 義明科技股份有限公司
+    id: org.義碩智能
+    name: 義碩智能
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-03-31'
+  - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 多媒體影音壓縮晶片子公司
+    detail: 增資取得控制後納入合併財報
     details:
-    - 多媒體影音壓縮晶片子公司
-    edge: ea752733eae54
+    - 增資取得控制後納入合併財報
+    edge: e0333570f748f
     evidence_level: primary
-    id: org.義晶科技股份有限公司
-    name: 義晶科技股份有限公司
+    id: org.達盛電子
+    name: 達盛電子
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-03-31'
+  suppliers:
+  - as_of: '2024-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 網路攝影機及伺服器子公司
+    detail: 晶圓代工
     details:
-    - 網路攝影機及伺服器子公司
-    edge: e27b34af8c7a3
+    - 晶圓代工
+    edge: edbe3bbd2a4e7
     evidence_level: primary
-    id: org.義碩智能股份有限公司
-    name: 義碩智能股份有限公司
+    id: tw.2303
+    name: 聯電
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-03-31'
+  - as_of: '2024-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 一般投資業子公司
+    detail: 晶圓代工
     details:
-    - 一般投資業子公司
-    edge: ef1f2575c9eec
+    - 晶圓代工
+    edge: e0bd4bb992d80
     evidence_level: primary
-    id: org.義隆投資-股-公司
-    name: 義隆投資(股)公司
+    id: tw.2330
+    name: 台積電
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-03-31'
+  - as_of: '2024-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 電子零件子公司
+    detail: 晶圓代工
     details:
-    - 電子零件子公司
-    edge: e7f36a54210c3
+    - 晶圓代工
+    edge: e7a4b50cf9599
     evidence_level: primary
-    id: org.達盛電子-股-公司
-    name: 達盛電子(股)公司
+    id: tw.5347
+    name: 世界
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
+  transactions:
+  - amount: null
+    as_of: '2026-06-08'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 策略投資光通訊公司
+    details:
+    - 策略投資光通訊公司
+    edge: ecc9c0d0ab044
+    event_date: '2026-06-08'
+    events:
+    - amount: null
+      detail: 策略投資光通訊公司
+      event_date: '2026-06-08'
+    evidence_level: media
+    id: org.peta-optronics
+    name: 沛達光電 (PETA Optronics)
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新臺幣115,200千元
+    as_of: '2024-02-29'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 向其他股東購入奇美車電股權
+    details:
+    - 向其他股東購入奇美車電股權
+    edge: e8f1a9a2c408f
+    event_date: '2024-02-29'
+    events:
+    - amount: 新臺幣115,200千元
+      detail: 向其他股東購入奇美車電股權
+      event_date: '2024-02-29'
+    evidence_level: primary
+    id: org.奇美車電
+    name: 奇美車電
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2026-01-07'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 參與現金增資並取得控制
+    details:
+    - 參與現金增資並取得控制
+    edge: e534e6187371b
+    event_date: '2026-01-07'
+    events:
+    - amount: null
+      detail: 參與現金增資並取得控制
+      event_date: '2026-01-07'
+    evidence_level: primary
+    id: org.達盛電子
+    name: 達盛電子
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 美國大型CSP業者：光通訊合作報導未具名，不推定為任何特定雲端公司。
+- 奇美車電其他股東：2024年股權出售方未具名。
 website: http://www.emc.com.tw/
 tax_id: '84149224'
 incorporated: '1994-05-05'
 listed: '2001-09-17'
-as_of: '2026-10-15'
+as_of: '2026-10-25'
 confidence: ai_cross_checked
 has_research: true
 evidence:
+  tw.2458#e01:
+    locator: 第1頁，各產品線營收占比段；AI產品量產出貨段
+    published_date: '2026-10-02'
+    publisher: 義隆電子股份有限公司
+    quote_check: unreachable
+    title: 義隆電子2026年09月營收報告
+    url: https://www.emc.com.tw/upload/2026_10_02/202609_Sales%20Report_Chinese.pdf
+  tw.2458#e02:
+    locator: 印刷頁73，主要產品之重要用途及產製過程
+    published_date: '2025-05-09'
+    publisher: 義隆電子股份有限公司
+    quote_check: unreachable
+    title: 義隆電子113年度年報
+    url: https://www.emc.com.tw/upload/2025_05_09/%E7%BE%A9%E9%9A%86113%E5%B9%B4%E5%A0%B1_TWN.pdf
+  tw.2458#e03:
+    locator: 印刷頁74，主要原料之供應情況
+    published_date: '2025-05-09'
+    publisher: 義隆電子股份有限公司
+    quote_check: unreachable
+    title: 義隆電子113年度年報
+    url: https://www.emc.com.tw/upload/2025_05_09/%E7%BE%A9%E9%9A%86113%E5%B9%B4%E5%A0%B1_TWN.pdf
+  tw.2458#e04:
+    locator: 印刷頁75，最近二年度主要銷貨客戶資料，113年度欄；奇普仕36.63%、品佳23.73%
+    published_date: '2025-05-09'
+    publisher: 義隆電子股份有限公司
+    quote_check: unreachable
+    title: 義隆電子113年度年報
+    url: https://www.emc.com.tw/upload/2025_05_09/%E7%BE%A9%E9%9A%86113%E5%B9%B4%E5%A0%B1_TWN.pdf
+  tw.2458#e05:
+    locator: 末段，筆電品牌客戶
+    published_date: '2017-07-26'
+    publisher: MoneyDJ理財網
+    quote_check: found
+    title: 義隆Q2獲利季增逾1倍，上半年EPS 1.04元
+    url: https://m.moneydj.com/f1a.aspx?a=6c29b2a4-a0bc-4f74-bd90-dd8bdb06b862
+  tw.2458#e06:
+    locator: 末段，小米筆電採用產品
+    published_date: '2017-07-26'
+    publisher: MoneyDJ理財網
+    quote_check: found
+    title: 義隆Q2獲利季增逾1倍，上半年EPS 1.04元
+    url: https://m.moneydj.com/f1a.aspx?a=6c29b2a4-a0bc-4f74-bd90-dd8bdb06b862
+  tw.2458#e07:
+    locator: 有工廠的IC設計商，創3項市佔第一
+    published_date: '2021-08-06'
+    publisher: 天下雜誌
+    quote_check: found
+    title: 聯發科毛利率也輸它！蘋果以外筆電大廠都是它客戶，解密「義隆奇蹟」
+    url: https://www.cw.com.tw/index.php/article/5117616
+  tw.2458#e08:
+    locator: 首段，微軟技術合作及量產出貨
+    published_date: '2026-08-06'
+    publisher: MoneyDJ理財網
+    quote_check: found
+    title: 義隆AI PC布局續升級，Haptic觸控板ASP增5至6倍
+    url: https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=902e7369-efcc-4d1a-a79d-7ecdb4953efb
+  tw.2458#e09:
+    locator: 觸控IC競爭態勢段
+    published_date: '2026-08-06'
+    publisher: MoneyDJ理財網
+    quote_check: found
+    title: 義隆AI PC布局續升級，Haptic觸控板ASP增5至6倍
+    url: https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=902e7369-efcc-4d1a-a79d-7ecdb4953efb
   tw.2458#e10:
-    locator: Overview
-    published_date: null
-    publisher: 義隆電子股份有限公司
+    locator: 財務報表附註四，列入合併財務報表之子公司表及註5、註6
+    published_date: '2026-08-13'
+    publisher: 義隆電子股份有限公司；FinancialFilings申報文件鏡像
     quote_check: unreachable
-    title: AI Drone Solutions
-    url: https://www.emc.com.tw/emc/tw/Products/Solution/AIDroneSolutions
+    title: 義隆電子2026年第二季合併財務報告
+    url: https://financialfilings.com/filings/elan-2458/interim-quarterly-report/2026/60580483/
   tw.2458#e11:
-    locator: 產品項目
-    published_date: null
-    publisher: 義隆電子股份有限公司
+    locator: 財務報表附註四，合併子公司表註6
+    published_date: '2026-08-13'
+    publisher: 義隆電子股份有限公司；FinancialFilings申報文件鏡像
     quote_check: unreachable
-    title: AI Drone Solutions
-    url: https://www.emc.com.tw/emc/tw/Products/Solution/AIDroneSolutions
+    title: 義隆電子2026年第二季合併財務報告
+    url: https://financialfilings.com/filings/elan-2458/interim-quarterly-report/2026/60580483/
   tw.2458#e12:
-    locator: 第70頁，開發成功之技術或產品
-    published_date: null
+    locator: PDF第16頁、印刷頁13，合併子公司表註4
+    published_date: '2025-02-27'
     publisher: 義隆電子股份有限公司
     quote_check: unreachable
-    title: 2025年度年報
-    url: https://www.emc.com.tw/upload/2026_05_11/義隆114年報_TWN.pdf
+    title: 義隆電子113年度合併財務報告
+    url: https://www.emc.com.tw/upload/2025_04_30/2024Q4D_TWN.pdf
   tw.2458#e13:
-    locator: 第10頁，附註四（二）合併基礎；第46頁為公司名稱
-    published_date: '2026-05-07'
-    publisher: 義隆電子股份有限公司
-    quote_check: unreachable
-    title: 2026年第一季合併財務報告
-    url: https://www.emc.com.tw/upload/2026_05_21/2026Q1D_TWN.pdf
+    locator: 首段，董事長於法說會揭露策略投資
+    published_date: '2026-06-08'
+    publisher: 鉅亨網
+    quote_check: found
+    title: 〈義隆法說〉投資結盟沛達光電 開發3.2T NPO搶CSP訂單
+    url: https://gfe-desktop.cnyes.com/news/id/6489043?exp=a
   tw.2458#e14:
-    locator: 第10頁，附註四（二）合併基礎
-    published_date: '2026-05-07'
-    publisher: 義隆電子股份有限公司
-    quote_check: unreachable
-    title: 2026年第一季合併財務報告
-    url: https://www.emc.com.tw/upload/2026_05_21/2026Q1D_TWN.pdf
+    locator: 雙方分工段，PIC與EIC合作研發
+    published_date: '2026-06-08'
+    publisher: 鉅亨網
+    quote_check: found
+    title: 〈義隆法說〉投資結盟沛達光電 開發3.2T NPO搶CSP訂單
+    url: https://gfe-desktop.cnyes.com/news/id/6489043?exp=a
   tw.2458#e15:
-    locator: 第10頁，附註四（二）合併基礎
-    published_date: '2026-05-07'
-    publisher: 義隆電子股份有限公司
-    quote_check: unreachable
-    title: 2026年第一季合併財務報告
-    url: https://www.emc.com.tw/upload/2026_05_21/2026Q1D_TWN.pdf
-  tw.2458#e16:
-    locator: 第10頁，附註四（二）合併基礎
-    published_date: '2026-05-07'
-    publisher: 義隆電子股份有限公司
-    quote_check: unreachable
-    title: 2026年第一季合併財務報告
-    url: https://www.emc.com.tw/upload/2026_05_21/2026Q1D_TWN.pdf
-  tw.2458#e17:
-    locator: 第11頁，附註四（二）註4
-    published_date: '2026-05-07'
-    publisher: 義隆電子股份有限公司
-    quote_check: unreachable
-    title: 2026年第一季合併財務報告
-    url: https://www.emc.com.tw/upload/2026_05_21/2026Q1D_TWN.pdf
-  tw.2458#e18:
-    locator: 第10頁，附註四（二）合併基礎
-    published_date: '2026-05-07'
-    publisher: 義隆電子股份有限公司
-    quote_check: unreachable
-    title: 2026年第一季合併財務報告
-    url: https://www.emc.com.tw/upload/2026_05_21/2026Q1D_TWN.pdf
-  tw.2458#e19:
-    locator: 第11頁，附註四（二）註5
-    published_date: '2026-05-07'
-    publisher: 義隆電子股份有限公司
-    quote_check: unreachable
-    title: 2026年第一季合併財務報告
-    url: https://www.emc.com.tw/upload/2026_05_21/2026Q1D_TWN.pdf
-  tw.2458#e2:
-    locator: 第68頁，一一四年度主要業務內容及其營業比重
+    locator: Overview，AI影像辨識、目標追蹤與避障方案
     published_date: null
-    publisher: 義隆電子股份有限公司
+    publisher: ELAN Microelectronics Corp.
     quote_check: unreachable
-    title: 2025年度年報
-    url: https://www.emc.com.tw/upload/2026_05_11/義隆114年報_TWN.pdf
-  tw.2458#e20:
-    locator: 第11頁，附註四（二）註6
-    published_date: '2026-05-07'
-    publisher: 義隆電子股份有限公司
-    quote_check: unreachable
-    title: 2026年第一季合併財務報告
-    url: https://www.emc.com.tw/upload/2026_05_21/2026Q1D_TWN.pdf
-  tw.2458#e21:
-    locator: 第10頁，附註四（二）合併基礎
-    published_date: '2026-05-07'
-    publisher: 義隆電子股份有限公司
-    quote_check: unreachable
-    title: 2026年第一季合併財務報告
-    url: https://www.emc.com.tw/upload/2026_05_21/2026Q1D_TWN.pdf
-  tw.2458#e3:
-    locator: 第76頁，主要產品之重要用途及產製過程
-    published_date: null
-    publisher: 義隆電子股份有限公司
-    quote_check: unreachable
-    title: 2025年度年報
-    url: https://www.emc.com.tw/upload/2026_05_11/義隆114年報_TWN.pdf
-  tw.2458#e4:
-    locator: 第70頁，產品線
-    published_date: null
-    publisher: 義隆電子股份有限公司
-    quote_check: unreachable
-    title: 2025年度年報
-    url: https://www.emc.com.tw/upload/2026_05_11/義隆114年報_TWN.pdf
-  tw.2458#e5:
-    locator: Overview及產品項目
-    published_date: null
-    publisher: 義隆電子股份有限公司
-    quote_check: unreachable
-    title: Pen & Touch Input Solutions
-    url: https://www.emc.com.tw/emc/tw/Products/Solution/PenAndTouchInputSolutions
-  tw.2458#e6:
-    locator: Overview
-    published_date: null
-    publisher: 義隆電子股份有限公司
-    quote_check: unreachable
-    title: Biometric Solutions
-    url: https://www.emc.com.tw/emc/tw/Product/Solution/BiometricSolutions
-  tw.2458#e7:
-    locator: 第69頁，六大產品線
-    published_date: null
-    publisher: 義隆電子股份有限公司
-    quote_check: unreachable
-    title: 2025年度年報
-    url: https://www.emc.com.tw/upload/2026_05_11/義隆114年報_TWN.pdf
-  tw.2458#e8:
-    locator: 第70頁，產品線
-    published_date: null
-    publisher: 義隆電子股份有限公司
-    quote_check: unreachable
-    title: 2025年度年報
-    url: https://www.emc.com.tw/upload/2026_05_11/義隆114年報_TWN.pdf
-  tw.2458#e9:
-    locator: Overview及產品分類
-    published_date: null
-    publisher: 義隆電子股份有限公司
-    quote_check: unreachable
-    title: Microcontrollers
-    url: https://www.emc.com.tw/emc/tw/Products/Product/Microcontrollers
+    title: ELAN AI Drone Solutions
+    url: https://www.emc.com.tw/emc/en/Products/Solution/AIDroneSolutions

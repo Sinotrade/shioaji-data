@@ -18,60 +18,62 @@ industry:
   l3_name: 國防與無人機
   l3_name_en: Defense & Drones
 primary_chain_position: not_applicable
-summary_short: 以艦艇及公務船建造為主，兼營商船、船艦維修與機械工程。
-summary_long: 台船以艦艇及公務船建造為主要業務，2025年艦艇建造占營收66.53%，另有機械製造15.89%、船舶建造9.15%、船艦維修5.68%及其他營業工程2.75%。主要產品與服務涵蓋艦艇及公務船、貨櫃船與其他商船、船艦維修、離岸風電工程與機械製造，以及陸機工程與石化基礎建設。依2026年第二季合併財報，直接子公司包括台船防蝕科技及台船動力科技，並透過台船防蝕持有藍傑與台船營造興業兩家間接子公司。
+summary_short: 以艦艇與商船建造、船艦維修及機械工程為主要收入來源。
+summary_long: 台船以艦艇與商船建造為核心，並提供船艦維修、機械製造及其他工程服務。2025年艦艇建造占營收66.53%，機械製造占15.89%，商船建造占9.15%，船艦維修占5.68%。商船訂單的實際簽約客戶包括萬海新加坡公司與中國航運旗下專案公司；海軍及海巡署則採購艦艇。台船亦製造離岸風電水下基礎基樁，並與DEME體系共同經營台船環海合資公司。另已推出「奮進魔鬼魚」無人水面載具。
 segments:
 - evidence_ids:
-  - e2
-  id: military
+  - e02
+  id: seg_naval
   name: 艦艇建造
   period: '2025'
   revenue_share_pct: 66.53
 - evidence_ids:
-  - e3
-  id: machinery
-  name: 機械製造
-  period: '2025'
-  revenue_share_pct: 15.89
-- evidence_ids:
-  - e4
-  id: commercial
-  name: 船舶建造
+  - e03
+  id: seg_commercial
+  name: 商船建造
   period: '2025'
   revenue_share_pct: 9.15
 - evidence_ids:
-  - e5
-  id: maintenance
+  - e04
+  id: seg_maintenance
   name: 船艦維修
   period: '2025'
   revenue_share_pct: 5.68
 - evidence_ids:
-  - e6
-  id: other
+  - e05
+  id: seg_machinery
+  name: 機械製造
+  period: '2025'
+  revenue_share_pct: 15.89
+- evidence_ids:
+  - e06
+  id: seg_other
   name: 其他營業工程
   period: '2025'
   revenue_share_pct: 2.75
 relations:
   customers:
-  - as_of: '2013-08-24'
+  - as_of: '2024-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 貨櫃輪建造；歷史供應關係
+    detail: 歷史商船客戶
     details:
+    - 歷史商船客戶
     - 貨櫃輪建造；歷史供應關係
     edge: eb85aec38690b
-    evidence_level: media
+    evidence_level: primary
     id: tw.2603
     name: 長榮
     ranking_basis: unranked
     share_basis: null
     share_pct: null
-    weight: 1
-  - as_of: '2020-05-20'
+    weight: 2
+  - as_of: '2024-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 歷史訂造十艘2,800 TEU貨櫃輪
+    detail: 歷史商船客戶
     details:
+    - 歷史商船客戶
     - 歷史訂造十艘2,800 TEU貨櫃輪
     edge: e717ae6553010
     evidence_level: primary
@@ -80,17 +82,228 @@ relations:
     ranking_basis: unranked
     share_basis: null
     share_pct: null
+    weight: 2
+  - as_of: '2018-10-24'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 大彰化風場水下基礎基樁歷史訂單
+    details:
+    - 大彰化風場水下基礎基樁歷史訂單
+    edge: e1cd059dface4
+    evidence_level: primary
+    id: eu.ORSTED
+    name: 沃旭能源
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-05-20'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 210,000載重噸散裝貨輪N6222
+    details:
+    - 210,000載重噸散裝貨輪N6222
+    edge: ed61525515bba
+    evidence_level: primary
+    id: org.china-eminent-shipping
+    name: China Eminent Shipping Pte. Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-05-20'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 210,000載重噸散裝貨輪N6221
+    details:
+    - 210,000載重噸散裝貨輪N6221
+    edge: e43a6b946210f
+    evidence_level: primary
+    id: org.china-energy-shipping
+    name: China Energy Shipping Pte. Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-05-20'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 210,000載重噸散裝貨輪N6219
+    details:
+    - 210,000載重噸散裝貨輪N6219
+    edge: e2f36f9e23870
+    evidence_level: primary
+    id: org.china-excel-shipping
+    name: China Excel Shipping Pte. Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-05-20'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 210,000載重噸散裝貨輪N6220
+    details:
+    - 210,000載重噸散裝貨輪N6220
+    edge: e3420e5fa88b5
+    evidence_level: primary
+    id: org.china-expedite-shipping
+    name: China Expedite Shipping Pte. Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2020-01
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 208,000載重噸散裝船歷史訂單
+    details:
+    - 208,000載重噸散裝船歷史訂單
+    edge: e8ebcd4a56012
+    evidence_level: primary
+    id: org.china-steel-express
+    name: 中鋼運通公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-11-01'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 巡防艦與高緯度遠洋巡護船
+    details:
+    - 巡防艦與高緯度遠洋巡護船
+    edge: e2b7637a9c8c8
+    evidence_level: media
+    id: org.coast-guard-administration-fleet-branch
+    name: 海洋委員會海巡署艦隊分署
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2022-12-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 26座石化品儲槽統包工程
+    details:
+    - 26座石化品儲槽統包工程
+    edge: eea7f7ef1dec7
+    evidence_level: media
+    id: org.cpc-corporation-taiwan
+    name: 台灣中油
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 船艦性能改裝與提升
+    details:
+    - 船艦性能改裝與提升
+    edge: e39b5c9b70cc2
+    evidence_level: primary
+    id: org.ncsist
+    name: 中科院
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-10-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 新型救難艦大武艦
+    details:
+    - 新型救難艦大武艦
+    edge: e5fe5959573e0
+    evidence_level: media
+    id: org.roc-navy
+    name: 海軍
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-05-20'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 8,700 TEU貨櫃輪建造
+    details:
+    - 8,700 TEU貨櫃輪建造
+    edge: e268c5fe6af34
+    evidence_level: primary
+    id: org.wan-hai-lines-singapore
+    name: Wan Hai Lines (Singapore) Pte Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  partners:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 採權益法之合資公司
+    details:
+    - 採權益法之合資公司
+    edge: e10a34a239b30
+    evidence_level: primary
+    id: org.cdwe
+    name: 台船環海風電工程股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2017-11-22'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 水下基礎、塔架與轉接段合作備忘錄
+    details:
+    - 水下基礎、塔架與轉接段合作備忘錄
+    edge: e5de84a302803
+    evidence_level: primary
+    id: org.century-wind-power
+    name: 世紀離岸風電設備股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 共同投資台船環海及離岸風電海事工程
+    details:
+    - 共同投資台船環海及離岸風電海事工程
+    edge: ec0c24aac9505
+    evidence_level: primary
+    id: org.deme-offshore-holding
+    name: DEME Offshore Holding N.V.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
     weight: 1
   subsidiaries:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持股100%的子公司
+    detail: 透過台船防蝕持有之間接子公司
     details:
-    - 直接持股100%的子公司
-    edge: ee18ffc893011
+    - 透過台船防蝕持有之間接子公司
+    edge: ee61d2b506493
     evidence_level: primary
-    id: org.csbc-coating
+    id: org.blue-ace-corporation
+    name: 藍傑有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有100%之防蝕工程子公司
+    details:
+    - 直接持有100%之防蝕工程子公司
+    edge: ec86ef8d1d6e4
+    evidence_level: primary
+    id: org.csbc-coating-solutions
     name: 台船防蝕科技股份有限公司
     ranking_basis: unranked
     share_basis: null
@@ -99,9 +312,9 @@ relations:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 透過台船防蝕科技持有的間接子公司
+    detail: 透過台船防蝕持有之間接子公司
     details:
-    - 透過台船防蝕科技持有的間接子公司
+    - 透過台船防蝕持有之間接子公司
     edge: e466bc21c6998
     evidence_level: primary
     id: org.csbc-construction
@@ -113,27 +326,13 @@ relations:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持股86.67%的子公司
+    detail: 直接持有86.67%之船舶科技子公司
     details:
-    - 直接持股86.67%的子公司
+    - 直接持有86.67%之船舶科技子公司
     edge: e43ded2c96282
     evidence_level: primary
     id: org.csbc-power-technology
     name: 台船動力科技股份有限公司
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
-  - as_of: '2026-06-30'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 透過台船防蝕科技持有的間接子公司
-    details:
-    - 透過台船防蝕科技持有的間接子公司
-    edge: e0dde11e4f516
-    evidence_level: primary
-    id: org.lan-jie
-    name: 藍傑有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -145,10 +344,67 @@ relations:
     detail: 潛艦船殼鋼板，歷史關係
     details:
     - 潛艦船殼鋼板，歷史關係
+    - 潛艦國造工程鋼料
     edge: e87478712ca3f
     evidence_level: media
     id: tw.2002
     name: 中鋼
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 2
+  - as_of: '2026-05-20'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 船用主機
+    details:
+    - 船用主機
+    edge: ef8bf873ae43a
+    evidence_level: primary
+    id: eu.WRT1V
+    name: WARTSILA
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-05-20'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 船用主機
+    details:
+    - 船用主機
+    edge: e1ef76e1bf2e3
+    evidence_level: primary
+    id: org.everllence
+    name: Everllence
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-05-20'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 船用主機
+    details:
+    - 船用主機
+    edge: e5cd1764f4a64
+    evidence_level: primary
+    id: org.mtu
+    name: MTU
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2019-09-04'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 潛艦國造戰系整合次合約
+    details:
+    - 潛艦國造戰系整合次合約
+    edge: e0a8a293bc139
+    evidence_level: primary
+    id: org.ncsist
+    name: 中科院
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -175,102 +431,225 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+unresolved_mentions:
+- 年報以供應商G、供應商E代號揭露的採購對象，未確認實名。
+- 高雄廠GOC大吊車更新計畫的設備及工程交易對象未具名。
+- 子公司台船防蝕購地的非關係人地主未在所引財報段落具名。
 website: http://www.csbcnet.com.tw
 tax_id: 04695235
 incorporated: '1973-11-07'
 listed: '2008-12-22'
-as_of: '2026-10-15'
+as_of: '2026-10-26'
 confidence: ai_cross_checked
 has_research: true
 evidence:
+  tw.2208#e02:
+    locator: 4.1.1 B，主要產品營業比重，2025年Military ships列
+    published_date: '2026-05-20'
+    publisher: 台灣國際造船股份有限公司；FinancialFilings文件鏡像
+    quote_check: unreachable
+    title: 2025 Annual Report
+    url: https://financialfilings.com/filings/csbc-2208/annual-report/2026/47916381/
+  tw.2208#e03:
+    locator: 4.1.1 B，2025年Commercial ships列
+    published_date: '2026-05-20'
+    publisher: 台灣國際造船股份有限公司；FinancialFilings文件鏡像
+    quote_check: unreachable
+    title: 2025 Annual Report
+    url: https://financialfilings.com/filings/csbc-2208/annual-report/2026/47916381/
+  tw.2208#e04:
+    locator: 4.1.1 B，2025年Commercial and military ship maintenance列
+    published_date: '2026-05-20'
+    publisher: 台灣國際造船股份有限公司；FinancialFilings文件鏡像
+    quote_check: unreachable
+    title: 2025 Annual Report
+    url: https://financialfilings.com/filings/csbc-2208/annual-report/2026/47916381/
+  tw.2208#e05:
+    locator: 4.1.1 B，2025年Machinery manufacturing列
+    published_date: '2026-05-20'
+    publisher: 台灣國際造船股份有限公司；FinancialFilings文件鏡像
+    quote_check: unreachable
+    title: 2025 Annual Report
+    url: https://financialfilings.com/filings/csbc-2208/annual-report/2026/47916381/
+  tw.2208#e06:
+    locator: 4.1.1 B，2025年Other business projects列
+    published_date: '2026-05-20'
+    publisher: 台灣國際造船股份有限公司；FinancialFilings文件鏡像
+    quote_check: unreachable
+    title: 2025 Annual Report
+    url: https://financialfilings.com/filings/csbc-2208/annual-report/2026/47916381/
+  tw.2208#e07:
+    locator: 記者孫建屏報導，參展產品段落
+    published_date: '2026-04-22'
+    publisher: 青年日報
+    quote_check: found
+    title: 首屆「臺灣海洋科技暨無人載具展」11月開展 展現國防自主成果
+    url: https://www.ydn.com.tw/tw/News/ugC_News_Detail.aspx?ID=633534
+  tw.2208#e08:
+    locator: 4.7 Important Contracts，商船建造契約N6401至N6415
+    published_date: '2026-05-20'
+    publisher: 台灣國際造船股份有限公司；FinancialFilings文件鏡像
+    quote_check: unreachable
+    title: 2025 Annual Report
+    url: https://financialfilings.com/filings/csbc-2208/annual-report/2026/47916381/
+  tw.2208#e09:
+    locator: 4.7 Important Contracts，N6219商船建造契約
+    published_date: '2026-05-20'
+    publisher: 台灣國際造船股份有限公司；FinancialFilings文件鏡像
+    quote_check: unreachable
+    title: 2025 Annual Report
+    url: https://financialfilings.com/filings/csbc-2208/annual-report/2026/47916381/
   tw.2208#e10:
-    locator: 印刷頁82，公司目前之商品及服務項目，第4項
+    locator: 4.7 Important Contracts，N6220商船建造契約
     published_date: '2026-05-20'
-    publisher: 台灣國際造船股份有限公司
-    quote_check: found
-    title: 114年度年報
-    url: https://cdn.financialreports.eu/financialreports/media/filings/51982/2026/RNS/51982_rns_2026-06-01_e64c20d4-d9c8-454b-ba5f-2d54aca29f07.pdf
+    publisher: 台灣國際造船股份有限公司；FinancialFilings文件鏡像
+    quote_check: unreachable
+    title: 2025 Annual Report
+    url: https://financialfilings.com/filings/csbc-2208/annual-report/2026/47916381/
   tw.2208#e11:
-    locator: 印刷頁82，公司目前之商品及服務項目，第5項
+    locator: 4.7 Important Contracts，N6221商船建造契約
     published_date: '2026-05-20'
-    publisher: 台灣國際造船股份有限公司
-    quote_check: found
-    title: 114年度年報
-    url: https://cdn.financialreports.eu/financialreports/media/filings/51982/2026/RNS/51982_rns_2026-06-01_e64c20d4-d9c8-454b-ba5f-2d54aca29f07.pdf
+    publisher: 台灣國際造船股份有限公司；FinancialFilings文件鏡像
+    quote_check: unreachable
+    title: 2025 Annual Report
+    url: https://financialfilings.com/filings/csbc-2208/annual-report/2026/47916381/
   tw.2208#e12:
-    locator: 頁13，附註四（三）2列入合併財務報告之子公司；頁64附表五交叉核對
-    published_date: '2026-08-10'
-    publisher: 台灣國際造船股份有限公司
-    quote_check: found
-    title: 115年第二季合併財務報告暨會計師核閱報告
-    url: https://cdn.financialreports.eu/financialreports/media/filings/51982/2026/RNS/51982_rns_2026-08-11_582027e3-560c-4905-a6b8-906f7ae357fe.pdf
+    locator: 4.7 Important Contracts，N6222商船建造契約
+    published_date: '2026-05-20'
+    publisher: 台灣國際造船股份有限公司；FinancialFilings文件鏡像
+    quote_check: unreachable
+    title: 2025 Annual Report
+    url: https://financialfilings.com/filings/csbc-2208/annual-report/2026/47916381/
   tw.2208#e13:
-    locator: 頁13，附註四（三）2列入合併財務報告之子公司；頁64附表五交叉核對
-    published_date: '2026-08-10'
-    publisher: 台灣國際造船股份有限公司
-    quote_check: found
-    title: 115年第二季合併財務報告暨會計師核閱報告
-    url: https://cdn.financialreports.eu/financialreports/media/filings/51982/2026/RNS/51982_rns_2026-08-11_582027e3-560c-4905-a6b8-906f7ae357fe.pdf
-  tw.2208#e14:
-    locator: 頁13，附註四（三）2，投資公司台船防蝕科技之藍傑列
-    published_date: '2026-08-10'
-    publisher: 台灣國際造船股份有限公司
-    quote_check: found
-    title: 115年第二季合併財務報告暨會計師核閱報告
-    url: https://cdn.financialreports.eu/financialreports/media/filings/51982/2026/RNS/51982_rns_2026-08-11_582027e3-560c-4905-a6b8-906f7ae357fe.pdf
-  tw.2208#e15:
-    locator: 頁13，附註四（三）2；頁64附表五台船防蝕科技持有台船營造興業列
-    published_date: '2026-08-10'
-    publisher: 台灣國際造船股份有限公司
-    quote_check: found
-    title: 115年第二季合併財務報告暨會計師核閱報告
-    url: https://cdn.financialreports.eu/financialreports/media/filings/51982/2026/RNS/51982_rns_2026-08-11_582027e3-560c-4905-a6b8-906f7ae357fe.pdf
-  tw.2208#e2:
-    locator: 印刷頁80，主要產品之營業比重，114年度艦艇建造列
-    published_date: '2026-05-20'
-    publisher: 台灣國際造船股份有限公司
-    quote_check: not_found
-    title: 114年度年報
-    url: https://cdn.financialreports.eu/financialreports/media/filings/51982/2026/RNS/51982_rns_2026-06-01_e64c20d4-d9c8-454b-ba5f-2d54aca29f07.pdf
-  tw.2208#e3:
-    locator: 印刷頁80，主要產品之營業比重，114年度機械製造列
-    published_date: '2026-05-20'
-    publisher: 台灣國際造船股份有限公司
-    quote_check: not_found
-    title: 114年度年報
-    url: https://cdn.financialreports.eu/financialreports/media/filings/51982/2026/RNS/51982_rns_2026-06-01_e64c20d4-d9c8-454b-ba5f-2d54aca29f07.pdf
-  tw.2208#e4:
-    locator: 印刷頁80，主要產品之營業比重，114年度船舶建造列
-    published_date: '2026-05-20'
-    publisher: 台灣國際造船股份有限公司
-    quote_check: not_found
-    title: 114年度年報
-    url: https://cdn.financialreports.eu/financialreports/media/filings/51982/2026/RNS/51982_rns_2026-06-01_e64c20d4-d9c8-454b-ba5f-2d54aca29f07.pdf
-  tw.2208#e5:
-    locator: 印刷頁80，主要產品之營業比重，114年度船艦維修列
-    published_date: '2026-05-20'
-    publisher: 台灣國際造船股份有限公司
-    quote_check: not_found
-    title: 114年度年報
-    url: https://cdn.financialreports.eu/financialreports/media/filings/51982/2026/RNS/51982_rns_2026-06-01_e64c20d4-d9c8-454b-ba5f-2d54aca29f07.pdf
-  tw.2208#e6:
-    locator: 印刷頁80，主要產品之營業比重，114年度其他營業工程列
-    published_date: '2026-05-20'
-    publisher: 台灣國際造船股份有限公司
-    quote_check: not_found
-    title: 114年度年報
-    url: https://cdn.financialreports.eu/financialreports/media/filings/51982/2026/RNS/51982_rns_2026-06-01_e64c20d4-d9c8-454b-ba5f-2d54aca29f07.pdf
-  tw.2208#e7:
-    locator: 印刷頁81，公司目前之商品及服務項目，第2項
-    published_date: '2026-05-20'
-    publisher: 台灣國際造船股份有限公司
-    quote_check: found
-    title: 114年度年報
-    url: https://cdn.financialreports.eu/financialreports/media/filings/51982/2026/RNS/51982_rns_2026-06-01_e64c20d4-d9c8-454b-ba5f-2d54aca29f07.pdf
-  tw.2208#e8:
-    locator: 產品營業概況
+    locator: 產品營業概況；頁面敘述2024年度營運
     published_date: null
     publisher: 台灣國際造船股份有限公司
     quote_check: found
     title: 永續專區：營運概況
     url: https://www2.csbcnet.com.tw/csr/about5.htm
+  tw.2208#e14:
+    locator: PDF第1頁首段；歷史簽約紀錄
+    published_date: null
+    publisher: 台灣國際造船股份有限公司
+    quote_check: unreachable
+    title: 造船佳機！台船簽約承造兩艘中鋼散裝船
+    url: https://www.csbcnet.com.tw/monthly_pub/files/03%E9%80%A0%E8%88%B9%E4%BD%B3%E6%A9%9F%20%E5%8F%B0%E8%88%B9%E7%B0%BD%E7%B4%84%E6%89%BF%E9%80%A0%E5%85%A9%E8%89%98%E4%B8%AD%E9%8B%BC%E6%95%A3%E8%A3%9D%E8%88%B9.pdf
+  tw.2208#e15:
+    locator: 記者賴言曦報導首段
+    published_date: '2022-12-14'
+    publisher: 中央社
+    quote_check: found
+    title: 台船標得中油26座儲槽統包案 預計2026年5月完工
+    url: https://www.cna.com.tw/news/afe/202212140216.aspx
+  tw.2208#e16:
+    locator: 記者吳書緯報導，交船背景段落
+    published_date: '2025-01-09'
+    publisher: 中央社
+    quote_check: found
+    title: 海軍新型救難艦大武艦首度亮相 可拖帶10萬噸船隻
+    url: https://www.cna.com.tw/news/aipl/202501090300.aspx
+  tw.2208#e17:
+    locator: 引述台船新聞稿之承造範圍
+    published_date: '2025-11-01'
+    publisher: 中央社
+    quote_check: found
+    title: 台北艦成軍及西拉雅號命名 台船：配合政府韌性防衛
+    url: https://www.cna.com.tw/news/afe/202511010130.aspx
+  tw.2208#e18:
+    locator: 中鋼回應供料情況段落
+    published_date: '2021-04-16'
+    publisher: 中央社
+    quote_check: found
+    title: 潛艦國造鋼料缺貨不配合？中鋼：全量接單生產
+    url: https://www.cna.com.tw/news/afe/202104160125.aspx
+  tw.2208#e19:
+    locator: 4.2.3 Supply status of main raw materials/equipment，Main engine供應商欄
+    published_date: '2026-05-20'
+    publisher: 台灣國際造船股份有限公司；FinancialFilings文件鏡像
+    quote_check: unreachable
+    title: 2025 Annual Report
+    url: https://financialfilings.com/filings/csbc-2208/annual-report/2026/47916381/
+  tw.2208#e20:
+    locator: 更名新聞稿
+    published_date: '2025-06-04'
+    publisher: Everllence
+    quote_check: found
+    title: MAN Energy Solutions becomes Everllence
+    url: https://www.everllence.com/company/press-releases/details/2025/06/04/man-energy-solutions-becomes-everllence
+  tw.2208#e21:
+    locator: 新聞稿第二點
+    published_date: '2019-09-04'
+    publisher: 國防部海軍司令部
+    quote_check: found
+    title: 海軍司令部說明台船與中科院戰系整合合約簽署作業
+    url: https://www.mnd.gov.tw/Publish.aspx?SelectStyle=%E6%96%B0%E8%81%9E%E7%A8%BF&p=76523&title=%E5%9C%8B%E9%98%B2%E6%B6%88%E6%81%AF
+  tw.2208#e22:
+    locator: 首段及合資背景
+    published_date: '2019-05-20'
+    publisher: 台船環海風電工程公司
+    quote_check: unreachable
+    title: 台船環海公司（CDWE）開幕 台船全力推展風電事業
+    url: https://www.cdwe.com.tw/news_detail1.php
+  tw.2208#e23:
+    locator: 附註六（七）採用權益法之投資，台船環海合資說明
+    published_date: '2026-03-10'
+    publisher: 台灣國際造船股份有限公司；FinancialFilings文件鏡像
+    quote_check: unreachable
+    title: 114年度合併財務報告
+    url: https://financialfilings.com/filings/csbc-2208/annual-report/2026/33587690/
+  tw.2208#e24:
+    locator: 新聞稿首段
+    published_date: '2018-10-24'
+    publisher: 沃旭能源
+    quote_check: found
+    title: 沃旭能源與台灣國際造船簽署水下基礎基樁製造合約
+    url: https://orsted.tw/zh/news/2018/10/csbc-contract-press-release
+  tw.2208#e25:
+    locator: 列入合併財務報表之子公司，台船防蝕列
+    published_date: '2026-08-10'
+    publisher: 台灣國際造船股份有限公司；FinancialFilings申報鏡像
+    quote_check: unreachable
+    title: 115年第二季合併財務報告
+    url: https://financialfilings.com/filings/csbc-2208/interim-quarterly-report/2026/60580064/
+  tw.2208#e26:
+    locator: 列入合併財務報表之子公司，台船動力列
+    published_date: '2026-08-10'
+    publisher: 台灣國際造船股份有限公司；FinancialFilings申報鏡像
+    quote_check: unreachable
+    title: 115年第二季合併財務報告
+    url: https://financialfilings.com/filings/csbc-2208/interim-quarterly-report/2026/60580064/
+  tw.2208#e27:
+    locator: 列入合併財務報表之子公司，藍傑與台船營造興業列
+    published_date: '2026-08-10'
+    publisher: 台灣國際造船股份有限公司；FinancialFilings申報鏡像
+    quote_check: unreachable
+    title: 115年第二季合併財務報告
+    url: https://financialfilings.com/filings/csbc-2208/interim-quarterly-report/2026/60580064/
+  tw.2208#e28:
+    locator: 合作備忘錄及第一項合作目標
+    published_date: '2017-11-22'
+    publisher: 世紀鋼鐵結構股份有限公司
+    quote_check: found
+    title: 世紀鋼構及台灣國際造船與Bladt聯手共進離岸風電海底基礎市場
+    url: https://www.century.com.tw/tw/info/31/322
+  tw.2208#e29:
+    locator: 重大訊息第三項，變動緣由及主要內容
+    published_date: '2025-09-30'
+    publisher: 公開資訊觀測站；MoneyDJ轉載
+    quote_check: found
+    title: 台船更新高雄廠GOC大吊車汰舊換新投資計畫
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=8d4c6796-aa4d-4a8f-a919-6f81384ae50a
+  tw.2208#e30:
+    locator: 重大或有負債及未認列之合約承諾，第六項台船防蝕土地
+    published_date: '2026-08-10'
+    publisher: 台灣國際造船股份有限公司；FinancialFilings申報鏡像
+    quote_check: unreachable
+    title: 115年第二季合併財務報告
+    url: https://financialfilings.com/filings/csbc-2208/interim-quarterly-report/2026/60580064/
+  tw.2208#e31:
+    locator: 1.3營運概況，產品營業概況
+    published_date: '2026-08-25'
+    publisher: 台灣國際造船股份有限公司；FinancialFilings文件鏡像
+    quote_check: unreachable
+    title: 2026年永續報告書：2025年度營運績效
+    url: https://financialfilings.com/filings/csbc-2208/environmental-social-information/2026/73042153/
