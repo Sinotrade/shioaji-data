@@ -29,28 +29,58 @@ chain_stage:
   stage_name: 製造與代工
   tier: midstream
 primary_chain_position: midstream
-summary_short: 研發、製造與銷售人用疫苗，主要營收來自腸病毒71型及流感疫苗。
-summary_long: 高端疫苗以人用疫苗研發、製造及銷售為主，主要營收來自腸病毒71型與季節性流感疫苗。2024年腸病毒71型疫苗占營收85%，四價季節流感疫苗占15%。恩穩健腸病毒71型疫苗適用於2個月至未滿6歲兒童；現行產品亦包括福喜健三價流感疫苗，用於預防季節性流感。公司竹北廠具細胞培養、抗原生產、無菌充填及品管放行能力，並持續開發第二代多價型腸病毒疫苗。基亞生物科技為最終母公司，富聿資本為全資子公司。
+summary_short: 研發、製造與銷售疫苗，營收主要來自腸病毒71型及季節流感疫苗。
+summary_long: 高端疫苗主要從事疫苗研發、製造與銷售，2025年腸病毒71型疫苗與季節流感疫苗營收占比分別為85.47%及14.52%。竹北廠涵蓋抗原生產、無菌充填與包裝，流感疫苗抗原由GC Biopharma供應，高端執行充填及檢驗放行。海外通路方面，公司與Substipharm Biologics簽署腸病毒疫苗區域經銷合約。第二代多價型腸病毒疫苗則與Charles River Laboratories、臺灣生物醫藥製造及啟弘生技合作推進。基亞為最終母公司，富聿資本為全資子公司；集團於2024年3月參與台寶生醫現金增資。
 segments:
 - evidence_ids:
   - e1
-  id: seg_ev71
+  id: ev71
   name: 腸病毒71型疫苗
-  period: '2024'
-  revenue_share_pct: 85
+  period: '2025'
+  revenue_share_pct: 85.47
 - evidence_ids:
   - e1
-  id: seg_flu
-  name: 四價季節流感疫苗
-  period: '2024'
-  revenue_share_pct: 15
+  id: influenza
+  name: 季節流感疫苗
+  period: '2025'
+  revenue_share_pct: 14.52
 - evidence_ids:
   - e1
-  id: seg_other
+  id: other
   name: 其他
-  period: '2024'
-  revenue_share_pct: 0
+  period: '2025'
+  revenue_share_pct: 0.01
 relations:
+  competitors:
+  - as_of: '2026-05-02'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 台灣自費腸病毒71型疫苗市場
+    details:
+    - 台灣自費腸病毒71型疫苗市場
+    edge: ed34fdf957aaa
+    evidence_level: primary
+    id: tw.6564
+    name: 安特羅公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  customers:
+  - as_of: '2026-05-12'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 2026年度公費標準型三價流感疫苗採購
+    details:
+    - 2026年度公費標準型三價流感疫苗採購
+    edge: ecf0949a1c500
+    evidence_level: primary
+    id: org.taiwan-cdc
+    name: 衛生福利部疾病管制署
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   parents:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
@@ -67,96 +97,285 @@ relations:
     share_basis: null
     share_pct: null
     weight: 2
-  subsidiaries:
-  - as_of: '2026-06-30'
+  partners:
+  - as_of: '2025-01-09'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 註銷程序辦理中的子公司
+    detail: 腸病毒71型疫苗東南亞區域經銷
     details:
-    - 註銷程序辦理中的子公司
-    edge: e12bfa41918a2
+    - 腸病毒71型疫苗東南亞區域經銷
+    edge: eadba44d83fed
     evidence_level: primary
-    id: org.mvc-bio-supply-sdn-bhd
-    name: MVC Bio Supply Sdn. Bhd.
+    id: org.substipharm-biologics
+    name: Substipharm Biologics
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: '2026-08-24'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 第二代多價型腸病毒疫苗抗原製程開發
+    details:
+    - 第二代多價型腸病毒疫苗抗原製程開發
+    edge: efb7ec7ff054c
+    evidence_level: primary
+    id: org.taiwan-bio-manufacturing
+    name: 臺灣生物醫藥製造股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-08-24'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 第二代多價型腸病毒疫苗抗原製程開發
+    details:
+    - 第二代多價型腸病毒疫苗抗原製程開發
+    edge: e25e14e38cbc4
+    evidence_level: primary
+    id: tw.6939
+    name: 啟弘生技
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-08-20'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 多價型腸病毒疫苗種毒庫確效與特性分析
+    details:
+    - 多價型腸病毒疫苗種毒庫確效與特性分析
+    edge: ed9c163766c1f
+    evidence_level: primary
+    id: us.CRL
+    name: Charles River Laboratories
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 全資投資業務子公司
+    detail: 全資投資子公司
     details:
-    - 全資投資業務子公司
-    edge: ec753e0d25104
+    - 全資投資子公司
+    edge: ec4fd8d0357aa
     evidence_level: primary
-    id: org.富聿資本股份有限公司
+    id: org.fuyu-capital
     name: 富聿資本股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: '2025-02-06'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 原澳洲子公司完成註銷
+    details:
+    - 原澳洲子公司完成註銷
+    edge: ecca643d359b4
+    evidence_level: primary
+    id: org.mvc-australia
+    name: MVC Australia Pty Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 馬來西亞子公司辦理註銷
+    details:
+    - 馬來西亞子公司辦理註銷
+    edge: ede4c759bf3c0
+    evidence_level: primary
+    id: org.mvc-bio-supply
+    name: MVC Bio Supply Sdn. Bhd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-10-03'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 原開曼子公司完成清算
+    details:
+    - 原開曼子公司完成清算
+    edge: eeb92c3b69ad3
+    evidence_level: primary
+    id: org.mvc-biopharma
+    name: MVC BioPharma Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: '2026-05-02'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 季節流感疫苗抗原供應
+    details:
+    - 季節流感疫苗抗原供應
+    edge: ee6fdb8e61038
+    evidence_level: primary
+    id: kr.006280
+    name: GC Biopharma Corp.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 新台幣95,717千元
+    as_of: 2024-03
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過富聿資本參與現金增資
+    details:
+    - 透過富聿資本參與現金增資
+    edge: e74239b5ddbd0
+    event_date: null
+    events:
+    - amount: 新台幣95,717千元
+      detail: 透過富聿資本參與現金增資
+      event_date: null
+    evidence_level: primary
+    id: tw.6892
+    name: 台寶生醫股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 2025年年報以A、B、C代號揭露的主要供應商，未揭露名稱，未與GC Biop…
+- 2025年年報以D代號揭露的主要客戶，未揭露名稱，未逕認定為疾病管制署。
+- 培養基、佐劑及預充填針筒供應商未具名。
 website: http://www.medigenvac.com
 tax_id: '53943057'
 incorporated: '2012-10-12'
 listed: '2018-04-17'
-as_of: '2026-10-15'
+as_of: '2026-10-26'
 confidence: ai_cross_checked
 has_research: true
 evidence:
   tw.6547#e1:
     locator: 第38頁，主要產品之營業比重
-    published_date: '2025-04-30'
+    published_date: '2026-05-02'
     publisher: 高端疫苗生物製劑股份有限公司
     quote_check: found
-    title: 高端疫苗113年度年報
-    url: https://www.medigenvac.com/files.php?file=09c23d235fbaebdbea5a749b15cc6735
+    title: 高端疫苗114年度年報
+    url: https://www.medigenvac.com/files.php?file=7df867ca678c0c69cecbdb9040c5926e
+  tw.6547#e10:
+    locator: 第46頁，腸病毒71型疫苗市場占有率
+    published_date: '2026-05-02'
+    publisher: 高端疫苗生物製劑股份有限公司
+    quote_check: found
+    title: 高端疫苗114年度年報
+    url: https://www.medigenvac.com/files.php?file=7df867ca678c0c69cecbdb9040c5926e
+  tw.6547#e11:
+    locator: 第11頁，合併財務報表編製主體表
+    published_date: '2026-08-07'
+    publisher: 高端疫苗生物製劑股份有限公司
+    quote_check: found
+    title: 高端疫苗115年第二季合併財務報告
+    url: https://www.medigenvac.com/files.php?file=76bbbc0cb695f5e904eb1b755f4a40c8
+  tw.6547#e12:
+    locator: 第29頁，母公司與最終控制者
+    published_date: '2026-08-07'
+    publisher: 高端疫苗生物製劑股份有限公司
+    quote_check: found
+    title: 高端疫苗115年第二季合併財務報告
+    url: https://www.medigenvac.com/files.php?file=76bbbc0cb695f5e904eb1b755f4a40c8
+  tw.6547#e13:
+    locator: 第12頁，合併概況註1
+    published_date: '2026-08-07'
+    publisher: 高端疫苗生物製劑股份有限公司
+    quote_check: found
+    title: 高端疫苗115年第二季合併財務報告
+    url: https://www.medigenvac.com/files.php?file=76bbbc0cb695f5e904eb1b755f4a40c8
+  tw.6547#e14:
+    locator: 第12頁，合併概況註3
+    published_date: '2026-08-07'
+    publisher: 高端疫苗生物製劑股份有限公司
+    quote_check: found
+    title: 高端疫苗115年第二季合併財務報告
+    url: https://www.medigenvac.com/files.php?file=76bbbc0cb695f5e904eb1b755f4a40c8
+  tw.6547#e15:
+    locator: 第48頁，與關係人間之重大交易事項
+    published_date: '2025-03-05'
+    publisher: 高端疫苗生物製劑股份有限公司
+    quote_check: found
+    title: 高端疫苗113年度合併財務報告
+    url: https://www.medigenvac.com/files.php?file=9a96ec3944d7218145fa04ba1c1986c6
+  tw.6547#e16:
+    locator: 第61頁，附表一期末持有有價證券情形
+    published_date: '2025-03-05'
+    publisher: 高端疫苗生物製劑股份有限公司
+    quote_check: found
+    title: 高端疫苗113年度合併財務報告
+    url: https://www.medigenvac.com/files.php?file=9a96ec3944d7218145fa04ba1c1986c6
+  tw.6547#e17:
+    locator: 第62頁，附表二註1
+    published_date: '2025-03-05'
+    publisher: 高端疫苗生物製劑股份有限公司
+    quote_check: found
+    title: 高端疫苗113年度合併財務報告
+    url: https://www.medigenvac.com/files.php?file=9a96ec3944d7218145fa04ba1c1986c6
   tw.6547#e2:
-    locator: 產品介紹及適用對象
+    locator: 產品名稱與介紹
     published_date: null
     publisher: 高端疫苗生物製劑股份有限公司
     quote_check: found
     title: 恩穩健腸病毒71型疫苗
-    url: https://pro.medigenvac.com/product/1
+    url: https://pro.medigenvac.com/news/product/1
   tw.6547#e3:
-    locator: 產品介紹
+    locator: 產品名稱
     published_date: null
     publisher: 高端疫苗生物製劑股份有限公司
     quote_check: found
     title: 福喜健三價流感疫苗
-    url: https://pro.medigenvac.com/product/3
+    url: https://pro.medigenvac.com/news/product/3
   tw.6547#e4:
-    locator: 以新型細胞培養技術，驅動疫苗創新與量產
-    published_date: null
+    locator: 首段
+    published_date: '2026-08-24'
     publisher: 高端疫苗生物製劑股份有限公司
     quote_check: found
-    title: 關於我們
-    url: https://pro.medigenvac.com/about
+    title: 高端雙軌加速第二代腸病毒疫苗開發，結合國內兩大CDMO廠進行高階抗原製程開發驗證
+    url: https://www.medigenvac.com/news_view.php?id=273
   tw.6547#e5:
-    locator: 新聞稿首段
-    published_date: '2026-07-15'
+    locator: 第4頁，公司與竹北廠介紹
+    published_date: '2026-08-25'
     publisher: 高端疫苗生物製劑股份有限公司
     quote_check: found
-    title: 高端多價型腸病毒疫苗開發計畫獲CDE/TFDA指標案件，奠基EV71疫苗成功經驗，推進第二代多價型腸病毒疫苗研發
-    url: https://pro.medigenvac.com/news/153
+    title: 高端疫苗2026年8月25日法人說明會簡報
+    url: https://www.medigenvac.com/files.php?file=025d57a1650f718815859af3080a5f73
   tw.6547#e6:
-    locator: 第9頁，公司沿革
-    published_date: null
+    locator: 第50頁，季節流感疫苗產製過程
+    published_date: '2026-05-02'
     publisher: 高端疫苗生物製劑股份有限公司
     quote_check: found
-    title: 高端疫苗及子公司115年及114年第2季合併財務報告
-    url: https://pro.medigenvac.com/data/financial/files/1790820090078104584.pdf
+    title: 高端疫苗114年度年報
+    url: https://www.medigenvac.com/files.php?file=7df867ca678c0c69cecbdb9040c5926e
   tw.6547#e7:
-    locator: 第11頁，合併主體及所持股權百分比
-    published_date: null
+    locator: 首段
+    published_date: '2025-01-09'
     publisher: 高端疫苗生物製劑股份有限公司
     quote_check: found
-    title: 高端疫苗及子公司115年及114年第2季合併財務報告
-    url: https://pro.medigenvac.com/data/financial/files/1790820090078104584.pdf
+    title: 高端疫苗與Substipharm Biologics簽署合作協議
+    url: https://pro.medigenvac.com/news/145
   tw.6547#e8:
-    locator: 第12頁，合併主體註3
-    published_date: null
+    locator: 首段
+    published_date: '2026-08-20'
     publisher: 高端疫苗生物製劑股份有限公司
     quote_check: found
-    title: 高端疫苗及子公司115年及114年第2季合併財務報告
-    url: https://pro.medigenvac.com/data/financial/files/1790820090078104584.pdf
+    title: 高端疫苗與Charles River Laboratories展開合作，運用次世代定序技術推進新疫苗開發案
+    url: https://www.medigenvac.com/news_view.php?id=272
+  tw.6547#e9:
+    locator: 標準型流感疫苗決標廠商及確定採購量段落
+    published_date: '2026-05-12'
+    publisher: 衛生福利部疾病管制署
+    quote_check: found
+    title: 疾管署說明115年度公費三價流感疫苗採購作業及評選結果
+    url: https://www.cdc.gov.tw/Category/ListContent/Hh094B49-DRwe2RR4eFfrQ?uaId=j-KtNcO8cxZZruI8TF3cTA

@@ -26,27 +26,27 @@ chain_stage:
   stage_name: 玻璃、光學膜、驅動 IC
   tier: upstream
 primary_chain_position: upstream
-summary_short: 以光電玻璃加工為主，供應保護玻璃、車用曲面玻璃及建築節能玻璃。
-summary_long: 正達從事光電玻璃加工，產品涵蓋消費性電子保護玻璃、車用多曲面3D蓋板與建築節能玻璃。2025年營收以智能光電為主，占79.58%，智能汽車占10.35%，另有智能建築業務。公司亦提供扇出型面板級封裝用玻璃載板，並開發AI伺服器硬碟玻璃碟盤，年報揭露後者仍處樣品試作驗證階段。主要製造子公司包括間接持有的睿志達光電（成都）及直接持有的SD GLOBAL VIETNAM；正達戰術科技規劃從事無人機加工製造與組裝，年報揭露仍在建置。
+summary_short: 以光電玻璃加工為主，提供觸控保護玻璃、車載曲面玻璃及建築節能玻璃。
+summary_long: 正達提供觸控感測與保護板玻璃、車載多曲面3D玻璃及Low-E建築節能玻璃；2025年智能光電占營收79.58%，為最大業務。年報具名揭露玻璃基板供應商包括AGC與康寧，媒體則確認其供應Apple產品的TrackPad。公司另與康寧合肥車載玻璃公司簽署策略合作備忘錄。正達取得越南SD Global全部股權，追加價款後總交易金額為1,100萬美元，並決議以25.8億元出售銅鑼土地建物予京元電子。新產品布局包括開發驗證中的HDD玻璃碟盤與FOPLP載板玻璃；無人機相關合作及部分投資則由全資子公司正達戰術科技執行。
 segments:
 - evidence_ids:
-  - e3
+  - e01
   id: seg_opto
   name: 智能光電
   period: '2025'
   revenue_share_pct: 79.58
 - evidence_ids:
-  - e3
+  - e01
   id: seg_auto
   name: 智能汽車
   period: '2025'
   revenue_share_pct: 10.35
 - evidence_ids:
-  - e3
+  - e01
   id: seg_building
   name: 智能建築
   period: '2025'
-  revenue_share_pct: null
+  revenue_share_pct: 10.075
 main_theme: theme.ai_server
 themes:
 - also: []
@@ -57,14 +57,90 @@ themes:
   stage: system
   theme: theme.drone
   tier: downstream
+- also: []
+  stage: components
+  theme: theme.apple
+  tier: upstream
 relations:
-  subsidiaries:
-  - as_of: '2025-12-31'
+  customers:
+  - as_of: '2026-03-09'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持有100%股權
+    detail: MacBook及iPad產品的TrackPad
     details:
-    - 直接持有100%股權
+    - MacBook及iPad產品的TrackPad
+    edge: e17725a8f0bf0
+    evidence_level: media
+    id: us.AAPL
+    name: Apple
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  partners:
+  - as_of: '2026-03-11'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 玻璃保形天線共同開發
+    details:
+    - 玻璃保形天線共同開發
+    edge: e1b3a945226b5
+    evidence_level: primary
+    id: org.aerkomm
+    name: Aerkomm Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-05-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全球車載玻璃應用策略合作
+    details:
+    - 全球車載玻璃應用策略合作
+    edge: ef0733a6b157d
+    evidence_level: primary
+    id: org.corning-automotive-glass-solutions-hefei
+    name: Corning Automotive Glass Solutions (Hefei) Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-01-24'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司正達戰術科技的無人機三方合作
+    details:
+    - 子公司正達戰術科技的無人機三方合作
+    edge: e93bbc4fe67b7
+    evidence_level: media
+    id: org.firestorm-labs
+    name: Firestorm
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2026-10
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 2006年物理減薄技術開發合作
+    details:
+    - 2006年物理減薄技術開發合作
+    edge: e4c5e293fb586
+    evidence_level: primary
+    id: tw.2317
+    name: 鴻海
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2026-08-04'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 原全資越南子公司，已清算註銷
+    details:
+    - 原全資越南子公司，已清算註銷
     edge: e40b2bbecd801
     evidence_level: primary
     id: org.g-tech-optoelectronics-vietnam
@@ -73,26 +149,26 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2025-12-31'
+  - as_of: '2026-03-20'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持有100%股權
+    detail: 全資子公司
     details:
-    - 直接持有100%股權
-    edge: e7878955831bb
+    - 全資子公司
+    edge: ec4083c959454
     evidence_level: primary
-    id: org.g-tech-tactical-technology
+    id: org.gtoc-tactical-technology
     name: 正達戰術科技股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2025-12-31'
+  - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 間接持有100%股權
+    detail: 間接持有100%股權的中國子公司
     details:
-    - 間接持有100%股權
+    - 間接持有100%股權的中國子公司
     edge: ed828ed549f85
     evidence_level: primary
     id: org.ruizhida-optoelectronics-chengdu
@@ -101,88 +177,371 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2025-12-31'
+  - as_of: '2026-04-16'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持有100%股權
+    detail: 直接持有100%股權的越南子公司
     details:
-    - 直接持有100%股權
+    - 直接持有100%股權的越南子公司
     edge: eaa2c8262e46f
-    evidence_level: primary
+    evidence_level: media
     id: org.sd-global-vietnam
-    name: SD GLOBAL VIETNAM LIMITED LTD
+    name: SD Global Vietnam Limited Liability Company
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
+  suppliers:
+  - as_of: '2026-04-03'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 玻璃基板
+    details:
+    - 玻璃基板
+    edge: eaf1ea0b65f43
+    evidence_level: primary
+    id: jp.5201
+    name: AGC Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-03'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 玻璃基板
+    details:
+    - 玻璃基板
+    edge: ea0ebd2f3e19c
+    evidence_level: primary
+    id: us.GLW
+    name: 康寧
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 美金2,503千元
+    as_of: '2026-07-22'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 參與Aerkomm與IX Acquisition合併相關SAFE募資
+    details:
+    - 參與Aerkomm與IX Acquisition合併相關SAFE募資
+    - 子公司正達戰術科技投資SAFE
+    edge: ec8ad11c7ccfc
+    event_date: '2025-06-24'
+    events:
+    - amount: null
+      detail: 參與Aerkomm與IX Acquisition合併相關SAFE募資
+      event_date: '2025-06-24'
+    - amount: 美金2,503千元
+      detail: 子公司正達戰術科技投資SAFE
+      event_date: null
+    evidence_level: primary
+    id: org.aerkomm
+    name: Aerkomm Inc.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 不超過新台幣10億元
+    as_of: '2026-03-20'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 增加投資全資子公司
+    details:
+    - 增加投資全資子公司
+    edge: e35895e77c56e
+    event_date: '2026-03-20'
+    events:
+    - amount: 不超過新台幣10億元
+      detail: 增加投資全資子公司
+      event_date: '2026-03-20'
+    evidence_level: primary
+    id: org.gtoc-tactical-technology
+    name: 正達戰術科技股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 美金11,000千元
+    as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 取得SD Global Vietnam全部股權
+    details:
+    - 取得SD Global Vietnam全部股權
+    edge: e6d3a2054771d
+    event_date: '2025-04-22'
+    events:
+    - amount: 美金11,000千元
+      detail: 取得SD Global Vietnam全部股權
+      event_date: '2025-04-22'
+    evidence_level: primary
+    id: org.ryukil-cns-co-ltd
+    name: Ryukil CNS Co., Ltd.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 500萬美元
+    as_of: '2026-04-16'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 越南子公司現金增資
+    details:
+    - 越南子公司現金增資
+    edge: ec7a292a37a71
+    event_date: '2026-04-16'
+    events:
+    - amount: 500萬美元
+      detail: 越南子公司現金增資
+      event_date: '2026-04-16'
+    evidence_level: media
+    id: org.sd-global-vietnam
+    name: SD Global Vietnam Limited Liability Company
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持有20%表決權股份的策略性投資
+    details:
+    - 持有20%表決權股份的策略性投資
+    edge: e66a4de084288
+    event_date: null
+    events:
+    - amount: null
+      detail: 持有20%表決權股份的策略性投資
+      event_date: null
+    evidence_level: primary
+    id: org.slamko有限公司
+    name: Slamko有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 約台幣2,580,000,000元
+    as_of: '2026-03-06'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 出售苗栗銅鑼土地及建物
+    details:
+    - 出售苗栗銅鑼土地及建物
+    edge: e8c89cac40f06
+    event_date: '2026-03-06'
+    events:
+    - amount: 約台幣2,580,000,000元
+      detail: 出售苗栗銅鑼土地及建物
+      event_date: '2026-03-06'
+    evidence_level: primary
+    id: tw.2449
+    name: 京元電子
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 年報以代碼揭露的A供應商及B供應商，不能對應為AGC或康寧。
+- 年報以代碼揭露的C、D、E客戶，不能直接對應為Apple或鴻海。
+- 多家國際車廠及第一階供應商：未取得足以確定個別直接交易法人及買賣方向的證據。
 website: www.gtoc.com.tw
 tax_id: '97049373'
 incorporated: '1996-06-27'
 listed: '2011-11-23'
-as_of: '2026-10-15'
+as_of: '2026-10-26'
 confidence: ai_cross_checked
 has_research: true
 evidence:
+  tw.3149#e01:
+    locator: 第61頁，主要產品及營業比重，第三方保存之公司年報原文
+    published_date: '2026-05-12'
+    publisher: 正達國際光電股份有限公司
+    quote_check: found
+    title: 正達114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52299/2026/RNS/52299_rns_2026-05-12_eed13872-4244-4452-8247-fb7d12e5e020.pdf
+  tw.3149#e02:
+    locator: 第61頁，公司所營業務產品
+    published_date: '2026-05-12'
+    publisher: 正達國際光電股份有限公司
+    quote_check: found
+    title: 正達114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52299/2026/RNS/52299_rns_2026-05-12_eed13872-4244-4452-8247-fb7d12e5e020.pdf
+  tw.3149#e03:
+    locator: 第61頁，智能汽車玻璃產品
+    published_date: '2026-05-12'
+    publisher: 正達國際光電股份有限公司
+    quote_check: found
+    title: 正達114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52299/2026/RNS/52299_rns_2026-05-12_eed13872-4244-4452-8247-fb7d12e5e020.pdf
+  tw.3149#e04:
+    locator: 第61頁，智能建築玻璃產品
+    published_date: '2026-05-12'
+    publisher: 正達國際光電股份有限公司
+    quote_check: found
+    title: 正達114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52299/2026/RNS/52299_rns_2026-05-12_eed13872-4244-4452-8247-fb7d12e5e020.pdf
+  tw.3149#e05:
+    locator: 第69頁，主要原料之供應狀況
+    published_date: '2026-05-12'
+    publisher: 正達國際光電股份有限公司
+    quote_check: found
+    title: 正達114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52299/2026/RNS/52299_rns_2026-05-12_eed13872-4244-4452-8247-fb7d12e5e020.pdf
+  tw.3149#e06:
+    locator: 袁顥庭報導，TrackPad供應段落
+    published_date: '2026-03-09'
+    publisher: 工商時報／富聯網
+    quote_check: found
+    title: 正達處分銅鑼土地廠房
+    url: https://ww2.money-link.com.tw/realtimenews/NewsContent.aspx?PU=1002&SN=6101659001
+  tw.3149#e07:
+    locator: 重大訊息第10項，具體目的
+    published_date: '2025-05-29'
+    publisher: 公開資訊觀測站／MoneyDJ
+    quote_check: found
+    title: 正達與Corning Automotive Glass Solutions簽署戰略合作備忘錄
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=d482ca1d-b8e3-4343-b855-493df4725f91
+  tw.3149#e08:
+    locator: 2006年
+    published_date: null
+    publisher: 正達國際光電股份有限公司
+    quote_check: found
+    title: 公司沿革
+    url: https://www.gtoc.com.tw/webc/html/about/02.aspx?nav=1
+  tw.3149#e09:
+    locator: 重大訊息第3、4項及第12項
+    published_date: '2025-04-22'
+    publisher: 公開資訊觀測站／MoneyDJ
+    quote_check: found
+    title: 正達董事會決議購買SD Global Vietnam股權
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=012feccb-e735-4d02-a7b9-7ef0caf60dbb
   tw.3149#e10:
-    locator: 第63頁，觸控面板產業鏈說明
-    published_date: '2026-05-12'
-    publisher: 正達國際光電股份有限公司
-    quote_check: found
-    title: 114年度年報
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52299/2026/RNS/52299_rns_2026-05-12_eed13872-4244-4452-8247-fb7d12e5e020.pdf
-  tw.3149#e2:
-    locator: 正達主要產品為何
+    locator: 第40頁，附註六（二十九）取得資產群組
     published_date: null
     publisher: 正達國際光電股份有限公司
     quote_check: found
-    title: 投資人專區：常見問答
-    url: https://www.gtoc.com.tw/webc/html/investor/index.aspx?nav=6
-  tw.3149#e3:
-    locator: 第60頁，公司主要產品及其營業比重；欄序為113年度銷值、比重及114年度銷值、比重
+    title: 正達115年第二季合併財務報告
+    url: https://www.gtoc.com.tw/upload/cominfo/202609111436460.pdf
+  tw.3149#e11:
+    locator: 正文首兩段
+    published_date: '2026-04-16'
+    publisher: 中央通訊社
+    quote_check: found
+    title: 東協財經／正達擬現金增資越南子公司
+    url: https://www.cna.com.tw/news/afe/202604163005.aspx
+  tw.3149#e12:
+    locator: 重大訊息第5、6項；投資用途見第17項
+    published_date: '2026-03-20'
+    publisher: 公開資訊觀測站／MoneyDJ
+    quote_check: found
+    title: 正達董事會決議增加投資子公司正達戰術科技
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=e19d1c87-d658-4c5d-ac31-7770e80139b1
+  tw.3149#e13:
+    locator: 第114頁，轉投資政策
     published_date: '2026-05-12'
     publisher: 正達國際光電股份有限公司
     quote_check: found
-    title: 114年度年報
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52299/2026/RNS/52299_rns_2026-05-12_eed13872-4244-4452-8247-fb7d12e5e020.pdf
-  tw.3149#e4:
-    locator: 第62頁，產品應用：智能汽車
-    published_date: '2026-05-12'
-    publisher: 正達國際光電股份有限公司
+    title: G-TECH 2025 Annual Report
+    url: https://www.gtoc.com.tw/upload/cominfo/202605121721371.pdf
+  tw.3149#e14:
+    locator: 取得銅鑼不動產段落
+    published_date: '2026-03-06'
+    publisher: 中央通訊社／經濟日報
     quote_check: found
-    title: 114年度年報
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52299/2026/RNS/52299_rns_2026-05-12_eed13872-4244-4452-8247-fb7d12e5e020.pdf
-  tw.3149#e5:
-    locator: 建築玻璃
+    title: 京元電去年大賺逾百億每股賺9.01元
+    url: https://money.udn.com/money/story/5710/9364240
+  tw.3149#e15:
+    locator: 重大訊息第5、6項
+    published_date: '2026-03-06'
+    publisher: 公開資訊觀測站／Goodinfo
+    quote_check: unreachable
+    title: 正達董事會決議處分不動產（更正公告）
+    url: https://goodinfo.tw/tw/StockAnnounceDetail.asp?CLAIM_TIME=2026%2F03%2F06+16%3A41%3A42&STOCK_ID=3149&SUBJECT=%28%E6%9B%B4%E6%AD%A3%E5%85%AC%E5%91%8A%29%E6%9C%AC%E5%85%AC%E5%8F%B8%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E8%99%95%E5%88%86%E4%B8%8D%E5%8B%95%E7%94%A2
+  tw.3149#e16:
+    locator: 李宜秦報導，首段
+    published_date: '2026-08-21'
+    publisher: MoneyDJ／第一商業銀行
+    quote_check: found
+    title: 正達HDD產品進入客戶驗證
+    url: https://wealth.firstbank.com.tw/investment-tips/trend-insight/news/news-detail?id=%7BD2CE442A-1A3A-421D-8412-B472B87445FB%7D
+  tw.3149#e17:
+    locator: 第5頁，2025年11月11日董事會
     published_date: null
     publisher: 正達國際光電股份有限公司
     quote_check: found
-    title: 關於正達
-    url: https://www.gtoc.com.tw/webc/html/about/index.aspx?nav=1
-  tw.3149#e6:
-    locator: 第63頁，智能光電
+    title: 董事會重要決議及獨立董事意見
+    url: https://www.gtoc.com.tw/upload/cominfo/202603051800000.pdf
+  tw.3149#e18:
+    locator: 第64頁，智能光電產品應用
     published_date: '2026-05-12'
     publisher: 正達國際光電股份有限公司
     quote_check: found
-    title: 114年度年報
+    title: 正達114年度年報
     url: https://cdn.financialreports.eu/financialreports/media/filings/52299/2026/RNS/52299_rns_2026-05-12_eed13872-4244-4452-8247-fb7d12e5e020.pdf
-  tw.3149#e7:
-    locator: 第63頁，AI伺服器存儲用硬碟玻璃碟盤段落
+  tw.3149#e19:
+    locator: 第42頁，附註七（二）6
+    published_date: null
+    publisher: 正達國際光電股份有限公司
+    quote_check: found
+    title: 正達115年第二季合併財務報告
+    url: https://www.gtoc.com.tw/upload/cominfo/202609111436460.pdf
+  tw.3149#e20:
+    locator: 第4頁，2025年6月24日董事會
+    published_date: null
+    publisher: 正達國際光電股份有限公司
+    quote_check: found
+    title: 董事會重要決議及獨立董事意見
+    url: https://www.gtoc.com.tw/upload/cominfo/202603051800000.pdf
+  tw.3149#e21:
+    locator: 第43頁，重大之期後事項
+    published_date: null
+    publisher: 正達國際光電股份有限公司
+    quote_check: found
+    title: 正達115年第二季合併財務報告
+    url: https://www.gtoc.com.tw/upload/cominfo/202609111436460.pdf
+  tw.3149#e22:
+    locator: 陳昱翔報導，首段
+    published_date: '2026-01-24'
+    publisher: 經濟日報
+    quote_check: found
+    title: 正達攜美商攻國防無人機
+    url: https://money.udn.com/money/story/5710/9285421
+  tw.3149#e23:
+    locator: 第92頁，關係企業經營分工
     published_date: '2026-05-12'
     publisher: 正達國際光電股份有限公司
     quote_check: found
-    title: 114年度年報
+    title: 正達114年度年報
     url: https://cdn.financialreports.eu/financialreports/media/filings/52299/2026/RNS/52299_rns_2026-05-12_eed13872-4244-4452-8247-fb7d12e5e020.pdf
-  tw.3149#e8:
-    locator: 第47頁，114年12月31日直接及間接投資持股表；並參照第90至92頁關係企業組織及持股資料
-    published_date: '2026-05-12'
+  tw.3149#e24:
+    locator: 第10頁，合併基礎子公司表；第47頁，大陸投資資訊
+    published_date: null
     publisher: 正達國際光電股份有限公司
     quote_check: found
-    title: 114年度年報
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52299/2026/RNS/52299_rns_2026-05-12_eed13872-4244-4452-8247-fb7d12e5e020.pdf
-  tw.3149#e9:
-    locator: 第91頁，各關係企業所經營業務分工情形
-    published_date: '2026-05-12'
+    title: 正達115年第二季合併財務報告
+    url: https://www.gtoc.com.tw/upload/cominfo/202609111436460.pdf
+  tw.3149#e25:
+    locator: 第10頁，G-TECH OPTOELECTRONICS (VIETNAM)子公司列及註4
+    published_date: null
     publisher: 正達國際光電股份有限公司
     quote_check: found
-    title: 114年度年報
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52299/2026/RNS/52299_rns_2026-05-12_eed13872-4244-4452-8247-fb7d12e5e020.pdf
+    title: 正達115年第二季合併財務報告
+    url: https://www.gtoc.com.tw/upload/cominfo/202609111436460.pdf
+  tw.3149#e26:
+    locator: 第13頁，附註六（三）2
+    published_date: null
+    publisher: 正達國際光電股份有限公司
+    quote_check: found
+    title: 正達115年第二季合併財務報告
+    url: https://www.gtoc.com.tw/upload/cominfo/202609111436460.pdf

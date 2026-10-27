@@ -48,6 +48,25 @@ themes:
   theme: theme.ev
   tier: upstream
 relations:
+  customers:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares:
+    - as_of: '2025-12-31'
+      basis: purchases
+      of: tw.6782
+      pct: 20.01
+    detail: 主要進貨供應商，表內未單列供應品項
+    details:
+    - 主要進貨供應商，表內未單列供應品項
+    edge: e42140db2457c
+    evidence_level: primary
+    id: tw.6782
+    name: 視陽
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   parents:
   - as_of: '2025-09-30'
     confidence: ai_cross_checked
@@ -102,6 +121,25 @@ relations:
     evidence_level: primary
     id: org.勁捷生物科技股份有限公司
     name: 勁捷生物科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares:
+    - as_of: '2025-12-31'
+      basis: revenue
+      of: tw.6782
+      pct: 10.25
+    detail: 隱形眼鏡銷售
+    details:
+    - 隱形眼鏡銷售
+    edge: e5f76c16b3200
+    evidence_level: primary
+    id: tw.6782
+    name: 視陽
     ranking_basis: unranked
     share_basis: null
     share_pct: null

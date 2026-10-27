@@ -210,19 +210,20 @@ members:
 - id: tw.2359
   stage: system
   tier: downstream
-  detail: 機器人3D視覺與料箱揀選系統
-  as_of: 2026-10
+  detail: 3D視覺取放及人形機器人系統整合
+  as_of: '2025-08-20'
   evidence:
-  - tw.2359#e5
+  - tw.2359#e04
+  - tw.2359#e05
   confidence: ai_cross_checked
 - id: tw.2374
-  stage: system
-  tier: downstream
-  detail: 陪伴型與互動型智慧機器人電子製造服務
-  as_of: '2026-10-15'
+  stage: components
+  tier: upstream
+  detail: 機器人近接感測器與視覺感測零組件
+  as_of: '2026-02-24'
   evidence:
-  - tw.2374#e7
-  - tw.2374#e9
+  - tw.2374#e07
+  - tw.2374#e08
   confidence: ai_cross_checked
 - id: tw.2377
   stage: system
@@ -259,10 +260,10 @@ members:
 - id: tw.2392
   stage: system
   tier: downstream
-  detail: 自主開發智慧手臂與組裝工站整合
-  as_of: '2026-06-25'
+  detail: 安防及製造用機器人系統整合
+  as_of: '2025-05-22'
   evidence:
-  - tw.2392#e7
+  - tw.2392#e6
   confidence: ai_cross_checked
 - id: tw.2395
   stage: control
@@ -291,13 +292,12 @@ members:
   - tw.2401#e11
   confidence: ai_cross_checked
 - id: tw.2402
-  stage: control
-  tier: midstream
-  detail: 機器人關節軸控 PCB 與組裝加工
-  as_of: '2026-10-15'
+  stage: components
+  tier: upstream
+  detail: 機器人關節、皮膚矽膠及軟板零組件
+  as_of: '2025-08-07'
   evidence:
-  - tw.2402#e6
-  - tw.2402#e7
+  - tw.2402#e8
   confidence: ai_cross_checked
 - id: tw.2417
   stage: system
@@ -598,10 +598,11 @@ members:
 - id: tw.4506
   stage: system
   tier: downstream
-  detail: 搬運機器人與電梯的跨樓層系統整合
+  detail: 移動機器人與電梯跨樓層系統整合
   as_of: '2025-11-26'
   evidence:
-  - tw.4506#e6
+  - tw.4506#e19
+  - tw.4506#e20
   confidence: ai_cross_checked
 - id: tw.4526
   stage: system
@@ -854,11 +855,10 @@ members:
 - id: tw.6188
   stage: system
   tier: downstream
-  detail: 透過達明機器人經營協作型機器人整機與應用解決方案
-  as_of: 2026-06
+  detail: 透過子公司達明製造協作機器人整機
+  as_of: '2025-12-31'
   evidence:
-  - tw.6188#e6
-  - tw.6188#e7
+  - tw.6188#e4
   confidence: ai_cross_checked
 - id: tw.6204
   stage: components
@@ -1031,14 +1031,6 @@ members:
   evidence:
   - tw.6695#e8
   - tw.6695#e9
-  confidence: ai_cross_checked
-- id: tw.6739
-  stage: system
-  tier: downstream
-  detail: 機器人代操與工廠自動化系統整合
-  as_of: '2026-10-15'
-  evidence:
-  - tw.6739#e8
   confidence: ai_cross_checked
 - id: tw.6762
   stage: components

@@ -357,20 +357,6 @@ members:
   stage: na
   tier: not_applicable
   stage_role: primary
-- id: tw.2905
-  detail: 依2025年收入結構，壽險業占77.86%為最大來源，屬金融服務。
-  as_of: '2026-10-15'
-  evidence:
-  - tw.2905#e02
-  - tw.2905#e03
-  - tw.2905#e04
-  - tw.2905#e05
-  - tw.2905#e06
-  confidence: ai_cross_checked
-  source: classification
-  stage: na
-  tier: not_applicable
-  stage_role: primary
 - id: tw.3687
   detail: 主要業務為第三方支付及電子支付，提供交易款項代收付與帳戶轉帳，屬金融服務。
   as_of: '2026-10-23'
@@ -385,10 +371,10 @@ members:
   stage_role: primary
 - id: tw.5864
   detail: 證券自營收入占77.57%為最大來源，並經營經紀與承銷，屬金融服務。
-  as_of: '2026-10-15'
+  as_of: '2026-10-26'
   evidence:
+  - tw.5864#e1
   - tw.5864#e2
-  - tw.5864#e3
   confidence: ai_cross_checked
   source: classification
   stage: na
@@ -465,13 +451,11 @@ members:
   stage_role: primary
 - id: tw.6016
   detail: 主要業務為證券經紀、自營、承銷及金融商品，均屬金融服務。
-  as_of: '2026-10-15'
+  as_of: '2026-10-26'
   evidence:
   - tw.6016#e1
   - tw.6016#e2
   - tw.6016#e3
-  - tw.6016#e4
-  - tw.6016#e5
   confidence: ai_cross_checked
   source: classification
   stage: na
@@ -490,11 +474,13 @@ members:
   stage_role: primary
 - id: tw.6021
   detail: 投資部收入占62.44%為最大來源，主要經營證券自營、經紀與融資，屬金融服務。
-  as_of: '2026-10-18'
+  as_of: '2026-10-26'
   evidence:
-  - tw.6021#e2
-  - tw.6021#e7
-  - tw.6021#e8
+  - tw.6021#e02
+  - tw.6021#e03
+  - tw.6021#e07
+  - tw.6021#e08
+  - tw.6021#e09
   confidence: ai_cross_checked
   source: classification
   stage: na
@@ -598,10 +584,11 @@ members:
   stage_role: primary
 - id: tw.7722
   detail: 支付手續費占營收81.90%為主要來源，提供第三方支付與款項清分，屬金融服務。
-  as_of: '2026-10-15'
+  as_of: '2026-10-26'
   evidence:
   - tw.7722#e1
   - tw.7722#e2
+  - tw.7722#e20
   confidence: ai_cross_checked
   source: classification
   stage: na

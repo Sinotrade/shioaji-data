@@ -52,7 +52,7 @@
 | [2377](../companies/2377.md) | 微星 | NVIDIA架構伺服器與工作站 |
 | [2382](../companies/2382.md) | 廣達 | 搭載NVIDIA加速技術的系統與機櫃 |
 | [2399](../companies/2399.md) | 映泰 | 採用NVIDIA Jetson Thor的邊緣AI系統 |
-| [3013](../companies/3013.md) | 晟銘電 | GB200平台機櫃 |
+| [3013](../companies/3013.md) | 晟銘電 | GB200機櫃產品 |
 | [3231](../companies/3231.md) | 緯創 | NVIDIA最終產品代工 |
 | [3515](../companies/3515.md) | 華擎 | 子公司永擎整合NVIDIA GPU伺服器 |
 | [3693](../companies/3693.md) | 營邦 | NVIDIA STX系統生態合作 |

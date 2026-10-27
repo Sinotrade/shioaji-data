@@ -26,27 +26,27 @@ chain_stage:
   stage_name: 板卡、電源、散熱、機構件
   tier: midstream
 primary_chain_position: midstream
-summary_short: 製造伺服器高功率與高速連接器、線材，以及車用與筆電連接器。
-summary_long: 凡甲科技以連接器與連接線為主要產品，涵蓋伺服器高功率、高速傳輸、車用與筆記型電腦等應用。2026年第一季產品營收以伺服器為主，占50%至57%，車用占30%至35%，其餘為筆電。伺服器產品包含高功率連接器、電源線、高速連接器與高速線材，另提供車用及儲能用免焊防水連接器。公司於2026年7月法說會表示，AI伺服器連接器與連接線為出貨主力。其子公司包括ALLTOP HOLDING LTD.及A-LIST INTERNATIONAL LTD.。
+summary_short: 研發、生產及銷售連接器與連接線，主要應用於伺服器、車用及筆電。
+summary_long: 凡甲科技主要從事電子連接器、連接線及其零組件的研發、生產與銷售，產品應用包括伺服器、車用及筆記型電腦。2026年第一季，伺服器產品占營收50%至57%，車用占30%至35%，其餘為筆電。公司供應AI伺服器高功率連接器，產品功率已提升至4200瓦。具名新聞列示的客戶包括Google、Amazon、Meta、Dell、比亞迪與寧德時代，其中比亞迪及寧德時代的採購應用亦涵蓋儲能設備連接器。公司持有越南子公司全部股權，2026年2月董事會決議依營運及資金需求分批增資，預計總額1000萬美元，用於擴充產能及充實營運資金。
 segments:
 - evidence_ids:
-  - e1
-  - e3
+  - e01
+  - e02
   id: seg_server
   name: 伺服器連接器與連接線
   period: 2026Q1
   revenue_share_pct: null
 - evidence_ids:
-  - e1
-  - e3
+  - e02
+  - e04
   id: seg_auto
   name: 車用連接器
   period: 2026Q1
   revenue_share_pct: null
 - evidence_ids:
-  - e1
-  - e3
-  id: seg_notebook
+  - e01
+  - e02
+  id: seg_nb
   name: 筆記型電腦連接器
   period: 2026Q1
   revenue_share_pct: null
@@ -61,13 +61,98 @@ themes:
   theme: theme.ai_server
   tier: midstream
 relations:
+  customers:
+  - as_of: '2026-07-01'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 車用及儲能設備連接器
+    details:
+    - 車用及儲能設備連接器
+    edge: e172a5ad6f8f0
+    evidence_level: media
+    id: cn.002594
+    name: 比亞迪
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-07-01'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 車用及儲能設備連接器
+    details:
+    - 車用及儲能設備連接器
+    edge: e8f8ca158691c
+    evidence_level: media
+    id: cn.300750
+    name: 寧德時代
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-07-01'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 伺服器相關連接產品
+    details:
+    - 伺服器相關連接產品
+    edge: e2791b96f6978
+    evidence_level: media
+    id: us.AMZN
+    name: Amazon
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-07-01'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 伺服器相關連接產品
+    details:
+    - 伺服器相關連接產品
+    edge: e82687016c089
+    evidence_level: media
+    id: us.DELL
+    name: Dell
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-07-01'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 伺服器相關連接產品
+    details:
+    - 伺服器相關連接產品
+    edge: ec8183f7c0fb7
+    evidence_level: media
+    id: us.GOOGL
+    name: Alphabet
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-07-01'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 伺服器相關連接產品
+    details:
+    - 伺服器相關連接產品
+    edge: e45d47b770032
+    evidence_level: media
+    id: us.META
+    name: Meta
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
   - as_of: '2026-05-05'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 子公司
+    detail: 集團控股子公司
     details:
-    - 子公司
+    - 集團控股子公司
     edge: ee417a84c12fa
     evidence_level: primary
     id: org.a-list-international
@@ -76,12 +161,26 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: 2026-10
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 蘇州連接器製造子公司
+    details:
+    - 蘇州連接器製造子公司
+    edge: ebd628c60e56f
+    evidence_level: other
+    id: org.alltop-electronics-suzhou
+    name: 凡甲電子(蘇州)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   - as_of: '2026-05-05'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 子公司
+    detail: 集團控股子公司
     details:
-    - 子公司
+    - 集團控股子公司
     edge: e1f3be612d034
     evidence_level: primary
     id: org.alltop-holding
@@ -90,53 +189,62 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+unresolved_mentions:
+- 凡甲科技(越南)有限公司不動產使用權資產案的交易相對人：2026年3月5日董事…
 website: https://www.alltopconnector.com
 tax_id: '16691156'
 incorporated: '1998-11-06'
 listed: '2007-11-02'
-as_of: '2026-10-15'
+as_of: '2026-10-26'
 confidence: ai_cross_checked
 has_research: true
 evidence:
-  tw.3526#e1:
-    locator: 第5頁，基本資料／主要產品
-    published_date: '2026-07-01'
-    publisher: 凡甲科技股份有限公司
-    quote_check: found
-    title: 2026第1季營運成果及未來展望
-    url: https://mopsov.twse.com.tw/nas/STR/352620260701M001.pdf
-  tw.3526#e2:
-    locator: 第12頁，車用及儲能產品
-    published_date: '2026-07-01'
-    publisher: 凡甲科技股份有限公司
-    quote_check: found
-    title: 2026第1季營運成果及未來展望
-    url: https://mopsov.twse.com.tw/nas/STR/352620260701M001.pdf
-  tw.3526#e3:
-    locator: 內文第2段，第一季產品營收組成
+  tw.3526#e01:
+    locator: 公司基本資料／公司名稱、統一編號、公司網址與主要業務
+    published_date: null
+    publisher: Goodinfo!台灣股市資訊網
+    quote_check: unreachable
+    title: 3526凡甲公司基本資料
+    url: https://goodinfo.tw/tw/BasicInfo.asp?STOCK_ID=3526
+  tw.3526#e02:
+    locator: 記者蕭君暉報導／第一季產品營收占比段落
     published_date: '2026-07-01'
     publisher: 經濟日報
     quote_check: found
-    title: 凡甲法說會／衝刺 AI 伺服器與車用儲能 全年業績續戰新高
-    url: https://money.udn.com/money/story/5612/9600615
-  tw.3526#e4:
-    locator: 總經理張一偉說明下半年至2027年展望段落
+    title: 凡甲法說會／衝刺AI伺服器與車用儲能 全年業績續戰新高
+    url: https://money.udn.com/money/amp/story/5612/9600615
+  tw.3526#e03:
+    locator: 記者蕭君暉報導／主要客戶段落
     published_date: '2026-07-01'
     publisher: 經濟日報
     quote_check: found
-    title: 凡甲法說會／衝刺 AI 伺服器與車用儲能 全年業績續戰新高
-    url: https://money.udn.com/money/story/5612/9600615
-  tw.3526#e5:
-    locator: 內文第2段，公司法說會說明
-    published_date: '2026-01-08'
+    title: 凡甲法說會／衝刺AI伺服器與車用儲能 全年業績續戰新高
+    url: https://money.udn.com/money/amp/story/5612/9600615
+  tw.3526#e04:
+    locator: 記者蕭君暉報導／車用產品與儲能設備段落
+    published_date: '2026-07-01'
+    publisher: 經濟日報
+    quote_check: found
+    title: 凡甲法說會／衝刺AI伺服器與車用儲能 全年業績續戰新高
+    url: https://money.udn.com/money/amp/story/5612/9600615
+  tw.3526#e05:
+    locator: 記者方韋傑報導／總經理說明高功率連接器段落
+    published_date: '2026-07-01'
     publisher: 自由時報
     quote_check: found
-    title: 凡甲2025全年營收創新高 看好今年伺服器業績大增三成
-    url: https://ec.ltn.com.tw/article/breakingnews/5303848
-  tw.3526#e6:
-    locator: 公司官網重大訊息詳情頁標題
+    title: 凡甲全力衝AI伺服器 下半年貢獻成長至2028年
+    url: https://ec.ltn.com.tw/amp/article/breakingnews/5490408
+  tw.3526#e08:
+    locator: 公告標題與公司代號3526；內文第1至5項
     published_date: '2026-05-05'
-    publisher: 凡甲科技股份有限公司
+    publisher: 鉅亨網／公司重大訊息全文轉載
     quote_check: found
-    title: 代子公司ALLTOP HOLDING LTD.及A-LIST INTERNATIONAL LTD.公告決議辦理現金減資事宜
-    url: https://www.alltopconnector.com/zh-tw/news.php?act=view&id=217
+    title: 凡甲：代子公司ALLTOP HOLDING LTD.及A-LIST INTERNATIONAL LTD.公告決議辦理現金減資事宜
+    url: https://news.cnyes.com/news/id/6443219
+  tw.3526#e09:
+    locator: 重要子公司基本資料／凡甲電子(蘇州)有限公司列
+    published_date: null
+    publisher: Goodinfo!台灣股市資訊網
+    quote_check: unreachable
+    title: 3526凡甲公司基本資料
+    url: https://goodinfo.tw/tw/BasicInfo.asp?STOCK_ID=3526

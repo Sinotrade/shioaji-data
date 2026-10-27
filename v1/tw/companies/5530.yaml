@@ -18,111 +18,400 @@ industry:
   l3_name: 教育與生活服務
   l3_name_en: Education & Personal Services
 primary_chain_position: not_applicable
-summary_short: 以生前契約、生命禮儀服務及塔墓商品銷售為主要業務。
-summary_long: 龍巖以生命服務為主要業務，提供生前契約、禮儀服務及塔墓商品。2025年塔墓銷售及生命禮儀服務占營收89.74%，租賃收入占2.31%，其他占7.95%。生前契約讓消費者預先約定身後事宜；禮儀服務則依逝者心願、家屬共識及宗教信仰規劃流程。白沙灣陵園的設施包括真龍殿及戶外墓園。集團的合併子公司宇錡建設經營殯葬服務，其子公司龍富事業亦經營殯葬服務。
+summary_short: 以塔墓銷售、生命禮儀服務及生前契約為主，另經營不動產租賃。
+summary_long: 龍巖提供生命禮儀服務、生前契約及塔墓商品，白沙灣陵園設施包括真龍殿、戶外墓園與寵物墓園。2025年塔墓銷售及生命禮儀服務合計占營收89.74%，租賃收入占2.31%，其他收入占7.95%。公司年報將國寶集團及金寶山集團列為競爭同業。集團持有進煌營造、海龍貿易、豐莉及龍巖香港等子公司。2026年7月董事會通過與子公司宇錡建設及孫公司龍富事業簡易合併，公告暫定合併基準日為同年9月1日。
 segments:
 - evidence_ids:
-  - e5
+  - e2
   id: seg1
   name: 塔墓銷售及生命禮儀服務
   period: '2025'
   revenue_share_pct: 89.74
 - evidence_ids:
-  - e5
+  - e2
   id: seg2
   name: 租賃收入
   period: '2025'
   revenue_share_pct: 2.31
 - evidence_ids:
-  - e5
+  - e2
   id: seg3
   name: 其他
   period: '2025'
   revenue_share_pct: 7.95
 relations:
-  subsidiaries:
-  - as_of: '2026-06-30'
+  competitors:
+  - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 透過宇錡建設持有的間接子公司
+    detail: 靈骨塔及生前契約市場
     details:
-    - 透過宇錡建設持有的間接子公司
-    edge: e8caea5b4b743
+    - 靈骨塔及生前契約市場
+    edge: ee37c9e606f8d
     evidence_level: primary
-    id: org.lung-fu-enterprise
-    name: 龍富事業股份有限公司
+    id: org.國寶集團
+    name: 國寶集團
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-06-30'
+  - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 經營殯葬服務的直接子公司
+    detail: 墓園及殯葬園區市場
     details:
-    - 經營殯葬服務的直接子公司
-    edge: e83b636e760e0
+    - 墓園及殯葬園區市場
+    edge: ef70be5ffce67
     evidence_level: primary
-    id: org.yu-chi-construction
+    id: org.金寶山集團
+    name: 金寶山集團
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 2025年新設投資子公司
+    details:
+    - 2025年新設投資子公司
+    edge: e24488a3c88e1
+    evidence_level: primary
+    id: org.cool-mountain-limited
+    name: Cool Mountain Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 2025年新設投資子公司
+    details:
+    - 2025年新設投資子公司
+    edge: e01d3d1c160e6
+    evidence_level: primary
+    id: org.willow-white-limited
+    name: Willow White Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 海外投資子公司
+    details:
+    - 海外投資子公司
+    edge: eca0427225a88
+    evidence_level: primary
+    id: org.海龍貿易公司-bvi
+    name: 海龍貿易公司(BVI)
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司
+    details:
+    - 全資子公司
+    edge: e58b6c21f297c
+    evidence_level: primary
+    id: org.豐莉股份有限公司
+    name: 豐莉股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 營造子公司
+    details:
+    - 營造子公司
+    edge: edd42b5af5dc6
+    evidence_level: primary
+    id: org.進煌營造股份有限公司
+    name: 進煌營造股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 香港全資子公司
+    details:
+    - 香港全資子公司
+    edge: ef71413515c54
+    evidence_level: primary
+    id: org.龍巖香港有限公司
+    name: 龍巖香港有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: '2022-09-21'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 南港商辦大樓建築工程
+    details:
+    - 南港商辦大樓建築工程
+    edge: eecd0ffe43308
+    evidence_level: primary
+    id: org.中鹿營造
+    name: 中鹿營造
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 新台幣6,811,187元
+    as_of: '2025-06-19'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 處分三芝區芝柏段土地予關係人
+    details:
+    - 處分三芝區芝柏段土地予關係人
+    edge: edfde0c85e34a
+    event_date: '2025-06-19'
+    events:
+    - amount: 新台幣6,811,187元
+      detail: 處分三芝區芝柏段土地予關係人
+      event_date: '2025-06-19'
+    evidence_level: primary
+    id: org.kelly-lee
+    name: KELLY LEE
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 宇錡公司普通股每1股換發現金新台幣15.9元；總額未揭露
+    as_of: '2026-07-15'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 簡易合併子公司
+    details:
+    - 簡易合併子公司
+    edge: ed330b4e1bf6c
+    event_date: '2026-07-15'
+    events:
+    - amount: 宇錡公司普通股每1股換發現金新台幣15.9元；總額未揭露
+      detail: 簡易合併子公司
+      event_date: '2026-07-15'
+    evidence_level: primary
+    id: org.宇錡建設股份有限公司
     name: 宇錡建設股份有限公司
     ranking_basis: unranked
+    role: buyer
     share_basis: null
     share_pct: null
     weight: 1
+  - amount: 新台幣20,432,304元
+    as_of: '2024-02-27'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 取得士林區不動產使用權資產
+    details:
+    - 取得士林區不動產使用權資產
+    edge: efa0694a961b7
+    event_date: '2024-02-27'
+    events:
+    - amount: 新台幣20,432,304元
+      detail: 取得士林區不動產使用權資產
+      event_date: '2024-02-27'
+    evidence_level: primary
+    id: org.福源國際開發股份有限公司
+    name: 福源國際開發股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2026-07-15'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 簡易合併孫公司
+    details:
+    - 簡易合併孫公司
+    edge: e05555061e395
+    event_date: '2026-07-15'
+    events:
+    - amount: null
+      detail: 簡易合併孫公司
+      event_date: '2026-07-15'
+    evidence_level: primary
+    id: org.龍富事業股份有限公司
+    name: 龍富事業股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣326,631,708元
+    as_of: '2026-05-11'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 處分Intel普通股之財務投資交易
+    details:
+    - 處分Intel普通股之財務投資交易
+    edge: e2891c650a74f
+    event_date: '2026-05-11'
+    events:
+    - amount: 新台幣326,631,708元
+      detail: 處分Intel普通股之財務投資交易
+      event_date: '2026-05-11'
+    evidence_level: primary
+    id: us.INTC
+    name: Intel
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 年報以甲公司、乙公司匿名揭露主要供應商，未將其推定為具名工程承攬商。
+- 年報以A至F公司表示營造工程供應商，以G至R公司表示式場佈置、壽材、骨罐及法事…
+- 年報租賃契約對象包括V客戶及p至u公司，未揭露正式名稱。
+- 主要銷售對象為不特定個人或公司行號，未推定具名客戶。
+- Intel股票處分交易未揭露市場買方。
 website: www.lyls.com.tw
 tax_id: '22415496'
 incorporated: '1987-03-27'
 listed: '2000-10-04'
-as_of: '2026-10-15'
+as_of: '2026-10-26'
 confidence: ai_cross_checked
 has_research: true
 evidence:
+  tw.5530#e10:
+    locator: 第80頁，轉投資事業持股表；PDF第83頁
+    published_date: null
+    publisher: 龍巖股份有限公司
+    quote_check: found
+    title: 龍巖股份有限公司114年度年報
+    url: https://www.lyls.com.tw/uploads/InvestorsFinance/4b37877c-907f-4d8a-a98a-11d38ff9ffb0.pdf
+  tw.5530#e11:
+    locator: 第80頁，轉投資事業持股表；PDF第83頁
+    published_date: null
+    publisher: 龍巖股份有限公司
+    quote_check: found
+    title: 龍巖股份有限公司114年度年報
+    url: https://www.lyls.com.tw/uploads/InvestorsFinance/4b37877c-907f-4d8a-a98a-11d38ff9ffb0.pdf
+  tw.5530#e12:
+    locator: 第80頁，轉投資事業持股表；PDF第83頁
+    published_date: null
+    publisher: 龍巖股份有限公司
+    quote_check: found
+    title: 龍巖股份有限公司114年度年報
+    url: https://www.lyls.com.tw/uploads/InvestorsFinance/4b37877c-907f-4d8a-a98a-11d38ff9ffb0.pdf
+  tw.5530#e13:
+    locator: 第80頁，轉投資事業持股表；PDF第83頁
+    published_date: null
+    publisher: 龍巖股份有限公司
+    quote_check: found
+    title: 龍巖股份有限公司114年度年報
+    url: https://www.lyls.com.tw/uploads/InvestorsFinance/4b37877c-907f-4d8a-a98a-11d38ff9ffb0.pdf
+  tw.5530#e14:
+    locator: 第125頁，Cool Mountain Limited及Willow White Limited列後附註；PDF第128頁
+    published_date: null
+    publisher: 龍巖股份有限公司
+    quote_check: found
+    title: 龍巖股份有限公司114年度年報
+    url: https://www.lyls.com.tw/uploads/InvestorsFinance/4b37877c-907f-4d8a-a98a-11d38ff9ffb0.pdf
+  tw.5530#e15:
+    locator: 相互持股比例、發生緣由及合併基準日
+    published_date: '2026-07-15'
+    publisher: 公開資訊觀測站，第一銀行轉載
+    quote_check: found
+    title: 龍巖 代子公司宇錡建設股份有限公司及孫公司龍富事業股份有限公司簡易合併案債權人公告
+    url: https://wealth.firstbank.com.tw/investment-tips/trend-insight/news/news-detail?id=%7BCE1448EE-19AC-47BA-AB4C-4085136A3C35%7D
+  tw.5530#e16:
+    locator: 第7項對價條件及第17項預定完成日程
+    published_date: '2026-07-15'
+    publisher: 公開資訊觀測站，MoneyDJ轉載
+    quote_check: found
+    title: 龍巖 公告本公司董事會決議通過與子公司宇錡建設股份有限公司及孫公司龍富事業股份有限公司簡易合併案
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=769270fd-513b-4d9b-b1b1-fa5a0c8135d8
+  tw.5530#e17:
+    locator: 第3至5項，租賃金額、交易相對人與目的
+    published_date: '2024-02-29'
+    publisher: 公開資訊觀測站，MoneyDJ轉載
+    quote_check: found
+    title: 龍巖向關係人取得台北市士林區使用權資產，計約2043萬元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=d16c7105-ecc2-4bf9-bec3-eb45adcb6d00
+  tw.5530#e18:
+    locator: 第1至6項，土地標的、日期、交易金額與相對人
+    published_date: '2025-06-19'
+    publisher: 公開資訊觀測站，MoneyDJ轉載
+    quote_check: found
+    title: 龍巖 公告本公司處分不動產予關係人
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=16b16fe8-d9f4-4c0f-b345-6bfa674ad40e
+  tw.5530#e19:
+    locator: 第1、2、5及13項
+    published_date: '2026-05-11'
+    publisher: 公開資訊觀測站，MoneyDJ轉載
+    quote_check: found
+    title: 龍巖處分Intel 87,500股，獲利約2.05億元/列入保留盈餘
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=66e34f8b-674e-4af6-a06d-91f362055923
   tw.5530#e2:
+    locator: 第87頁，營業比重；PDF第90頁
+    published_date: null
+    publisher: 龍巖股份有限公司
+    quote_check: found
+    title: 龍巖股份有限公司114年度年報
+    url: https://www.lyls.com.tw/uploads/InvestorsFinance/4b37877c-907f-4d8a-a98a-11d38ff9ffb0.pdf
+  tw.5530#e3:
     locator: 全方位的生命服務
     published_date: null
     publisher: 龍巖股份有限公司
     quote_check: found
     title: 關於龍巖｜生命服務品牌與企業介紹
     url: https://www.lyls.com.tw/about
-  tw.5530#e3:
+  tw.5530#e4:
     locator: 什麼是生前契約
     published_date: null
     publisher: 龍巖股份有限公司
     quote_check: found
     title: 龍巖生前契約｜提前規劃，為愛安心準備
     url: https://www.lyls.com.tw/contract
-  tw.5530#e4:
-    locator: 臨終時需要注意什麼
+  tw.5530#e5:
+    locator: 園區介紹
     published_date: null
     publisher: 龍巖股份有限公司
     quote_check: found
-    title: 龍巖禮儀服務｜24小時專業治喪服務
-    url: https://www.lyls.com.tw/funeral
-  tw.5530#e5:
-    locator: 印刷第86頁／PDF第90頁，營運概況之營業比重，114年12月31日
+    title: 龍巖白沙灣陵園
+    url: https://www.lyls.com.tw/cemetery/park/4
+  tw.5530#e6:
+    locator: 1993年6月
+    published_date: null
+    publisher: 龍巖股份有限公司
+    quote_check: found
+    title: 關於龍巖｜龍巖的歷史
+    url: https://www.lyls.com.tw/about
+  tw.5530#e7:
+    locator: 第92頁，競爭情形；PDF第95頁
     published_date: null
     publisher: 龍巖股份有限公司
     quote_check: found
     title: 龍巖股份有限公司114年度年報
     url: https://www.lyls.com.tw/uploads/InvestorsFinance/4b37877c-907f-4d8a-a98a-11d38ff9ffb0.pdf
-  tw.5530#e6:
-    locator: 園區介紹
+  tw.5530#e8:
+    locator: 第92頁，競爭情形；PDF第95頁
     published_date: null
     publisher: 龍巖股份有限公司
     quote_check: found
-    title: 龍巖白沙灣陵園｜龍巖股份有限公司
-    url: https://www.lyls.com.tw/cemetery/park/4
-  tw.5530#e7:
-    locator: 印刷第10頁／PDF第12頁，附註四（二）合併基礎，列入合併財務報告之子公司表
-    published_date: '2026-08-07'
+    title: 龍巖股份有限公司114年度年報
+    url: https://www.lyls.com.tw/uploads/InvestorsFinance/4b37877c-907f-4d8a-a98a-11d38ff9ffb0.pdf
+  tw.5530#e9:
+    locator: 新聞內文，建築工程團隊
+    published_date: '2022-09-21'
     publisher: 龍巖股份有限公司
     quote_check: found
-    title: 龍巖股份有限公司及子公司115年及114年第二季合併財務報告
-    url: https://www.lyls.com.tw/uploads/InvestorsFinance/418dbb9f-11e2-4969-a968-78c118b28e3c.pdf
-  tw.5530#e8:
-    locator: 印刷第10頁／PDF第12頁，附註四（二）合併基礎，列入合併財務報告之子公司表
-    published_date: '2026-08-07'
-    publisher: 龍巖股份有限公司
-    quote_check: found
-    title: 龍巖股份有限公司及子公司115年及114年第二季合併財務報告
-    url: https://www.lyls.com.tw/uploads/InvestorsFinance/418dbb9f-11e2-4969-a968-78c118b28e3c.pdf
+    title: 龍巖南港商辦大樓 工程開工動土典禮
+    url: https://www.lyls.com.tw/news/detail/46

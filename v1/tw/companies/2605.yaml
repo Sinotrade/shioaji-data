@@ -18,63 +18,149 @@ industry:
   l3_name: 貨櫃與散裝航運
   l3_name_en: Container & Bulk Shipping
 primary_chain_position: not_applicable
-summary_short: 以散裝乾貨與原油海運為主，另提供船舶管理服務。
-summary_long: 新興航運集團主要提供乾散貨與原油海上運輸，另有船舶管理收入。2025年散裝輪占營收64.71%、油輪占34.84%、船舶管理占0.45%，以散裝輪為最大營收來源。依2026年8月法說會揭露的6月底基準，集團自有船隊共13艘，包括4艘Kamsarmax、6艘Capesize、1艘VLOC及2艘VLCC。乾散貨船承運礦砂、煤炭等大宗物資，油輪則承運原油，營運涵蓋乾散貨與能源運輸。
+summary_short: 以散裝貨物海運為主要收入，另經營油輪運輸及船舶管理服務。
+summary_long: 新興航運集團主要經營散裝貨物及原油海運，並提供船舶管理服務。2025年合併營收結構為散裝輪64.71%、油輪34.84%、船舶管理0.45%。官方揭露的散裝客戶包括新加坡Rio Tinto公司、BHP公司及Norden公司，分別載運鐵礦砂或穀物、煤炭；油輪另透過Tanker International營運池聯營。集團透過全資子公司樂利航運持有船舶公司，新加坡子公司負責商業營運。2024年集團購入華山輪、出售衡山輪，並因承租人行使買回權而交付瑞春輪。2026年公告出售高登輪、青山輪及美生輪，另公告購入三艘油輪與一艘卡姆薩型散裝輪；同年原擬購入的中程成品油輪交易已終止。
 segments:
 - evidence_ids:
-  - e2
-  id: dry_bulk
+  - e1
+  id: bulk
   name: 散裝輪
   period: '2025'
   revenue_share_pct: 64.71
 - evidence_ids:
-  - e2
+  - e1
   id: tanker
   name: 油輪
   period: '2025'
   revenue_share_pct: 34.84
 - evidence_ids:
-  - e2
-  id: ship_management
+  - e1
+  id: management
   name: 船舶管理
   period: '2025'
   revenue_share_pct: 0.45
 relations:
-  subsidiaries:
+  customers:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 鐵礦砂海運
+    details:
+    - 鐵礦砂海運
+    edge: e6dc35a142b5b
+    evidence_level: primary
+    id: org.新加坡-rio-tinto-公司
+    name: 新加坡 Rio Tinto 公司
+    ranking_basis: disclosed
+    share_basis: revenue
+    share_pct: 15.84
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 鐵礦砂海運
+    details:
+    - 鐵礦砂海運
+    edge: ef05f6dd9c2f4
+    evidence_level: primary
+    id: org.新加坡-bhp-公司
+    name: 新加坡 BHP 公司
+    ranking_basis: disclosed
+    share_basis: revenue
+    share_pct: 15.18
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 航運銷售收入
+    details:
+    - 航運銷售收入
+    edge: e117925d54484
+    evidence_level: primary
+    id: org.vitol-international
+    name: Vitol International
+    ranking_basis: disclosed
+    share_basis: revenue
+    share_pct: 12.18
+    weight: 1
   - as_of: '2026-05-06'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持股100%的子公司
+    detail: 華山輪中長期租船
     details:
-    - 直接持股100%的子公司
+    - 華山輪中長期租船
+    edge: e480eb4831cd8
+    evidence_level: primary
+    id: org.h-line-shipping
+    name: H-LINE SHIPPING CO.,LIMITED.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-05-06'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 穀物、煤炭海運
+    details:
+    - 穀物、煤炭海運
+    edge: ec44ab840fd07
+    evidence_level: primary
+    id: org.新加坡-norden-公司
+    name: 新加坡 Norden 公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  partners:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: VLCC營運池聯營及收益分配
+    details:
+    - VLCC營運池聯營及收益分配
+    edge: e96aecb08aaed
+    evidence_level: primary
+    id: org.tanker-international
+    name: Tanker International
+    ranking_basis: disclosed
+    share_basis: other
+    share_pct: 33.32
+    weight: 1
+  subsidiaries:
+  - as_of: '2025-11-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 海德；集團資金管理
+    details:
+    - 海德；集團資金管理
     edge: e274817fdc151
     evidence_level: primary
     id: org.heywood-limited
-    name: 海德股份有限公司
+    name: Heywood Limited
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-05-06'
+  - as_of: '2025-11-28'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持股100%的子公司
+    detail: 樂利航運；船舶公司控股
     details:
-    - 直接持股100%的子公司
-    edge: ead21c8eedfc6
+    - 樂利航運；船舶公司控股
+    edge: ebf6544c2d631
     evidence_level: primary
-    id: org.norley-corporation-inc
-    name: 樂利航運公司
+    id: org.norley-corporation
+    name: Norley Corporation Inc.
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-05-06'
+  - as_of: '2026-06-01'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持股100%的子公司
+    detail: 集團商業營運
     details:
-    - 直接持股100%的子公司
+    - 集團商業營運
     edge: e443e2e03fbf3
     evidence_level: primary
     id: org.sincere-navigation-singapore
@@ -83,53 +169,541 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  transactions:
+  - amount: 美金2,020萬元
+    as_of: '2026-05-11'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 孫公司擬出售青山輪
+    details:
+    - 孫公司擬出售青山輪
+    edge: e1d677f4d0f04
+    event_date: '2026-05-11'
+    events:
+    - amount: 美金2,020萬元
+      detail: 孫公司擬出售青山輪
+      event_date: '2026-05-11'
+    evidence_level: primary
+    id: org.ally-star-shipping
+    name: Ally Star Shipping Company Limited
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 美金肆仟壹百萬元
+    as_of: '2026-09-18'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 樂利對全資子公司現金增資
+    details:
+    - 樂利對全資子公司現金增資
+    edge: eb7cae8d6f24b
+    event_date: '2026-09-18'
+    events:
+    - amount: 美金肆仟壹百萬元
+      detail: 樂利對全資子公司現金增資
+      event_date: '2026-09-18'
+    evidence_level: primary
+    id: org.claymore-limited
+    name: Claymore Limited
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 美金肆仟萬元
+    as_of: '2026-05-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 樂利對全資子公司現金增資
+    details:
+    - 樂利對全資子公司現金增資
+    edge: e71dcec3b7f93
+    event_date: '2026-05-13'
+    events:
+    - amount: 美金肆仟萬元
+      detail: 樂利對全資子公司現金增資
+      event_date: '2026-05-13'
+    evidence_level: primary
+    id: org.delight-way
+    name: Delight Way Limited
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 美金肆仟壹百萬元
+    as_of: '2026-09-18'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 樂利對全資子公司現金增資
+    details:
+    - 樂利對全資子公司現金增資
+    edge: eb78e7580f593
+    event_date: '2026-09-18'
+    events:
+    - amount: 美金肆仟壹百萬元
+      detail: 樂利對全資子公司現金增資
+      event_date: '2026-09-18'
+    evidence_level: primary
+    id: org.gifted-works
+    name: Gifted Works Corp.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 美金42,250仟元
+    as_of: '2024-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司購入華山輪
+    details:
+    - 子公司購入華山輪
+    edge: ecb45be8f24d1
+    event_date: '2024-05-02'
+    events:
+    - amount: 美金42,250仟元
+      detail: 子公司購入華山輪
+      event_date: '2024-05-02'
+    evidence_level: primary
+    id: org.hl-champ-1
+    name: HL Champ 1 S.A.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 原交易金額美金3,980萬元
+    as_of: '2026-08-17'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 中程成品油輪購置案已終止
+    details:
+    - 中程成品油輪購置案已終止
+    edge: e94e3ca83ff30
+    event_date: '2026-08-17'
+    events:
+    - amount: 原交易金額美金3,980萬元
+      detail: 中程成品油輪購置案已終止
+      event_date: '2026-08-17'
+    evidence_level: primary
+    id: org.hmd-mr-01-shipholding
+    name: HMD MR 01 Shipholding S.A.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 美金4,100萬元
+    as_of: '2026-08-19'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 孫公司擬購入阿芙拉型油輪
+    details:
+    - 孫公司擬購入阿芙拉型油輪
+    edge: e4c9581453605
+    event_date: '2026-08-19'
+    events:
+    - amount: 美金4,100萬元
+      detail: 孫公司擬購入阿芙拉型油輪
+      event_date: '2026-08-19'
+    evidence_level: primary
+    id: org.kmarin-no-17d
+    name: KMARIN No. 17D S.A.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 美金4,100萬元
+    as_of: '2026-08-19'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 孫公司擬購入阿芙拉型油輪並回租
+    details:
+    - 孫公司擬購入阿芙拉型油輪並回租
+    edge: e91449fa7323d
+    event_date: '2026-08-19'
+    events:
+    - amount: 美金4,100萬元
+      detail: 孫公司擬購入阿芙拉型油輪並回租
+      event_date: '2026-08-19'
+    evidence_level: primary
+    id: org.kmarin-no-17e
+    name: KMARIN No.17E S.A.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 美金4,100萬元
+    as_of: '2026-08-19'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 孫公司擬購入LR2油輪並回租
+    details:
+    - 孫公司擬購入LR2油輪並回租
+    edge: e27a17dcfe914
+    event_date: '2026-08-19'
+    events:
+    - amount: 美金4,100萬元
+      detail: 孫公司擬購入LR2油輪並回租
+      event_date: '2026-08-19'
+    evidence_level: primary
+    id: org.kmarin-no-17f
+    name: Kmarin No. 17F S.A.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: US$51.7M
+    as_of: '2024-06-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 承租人買回瑞春輪
+    details:
+    - 承租人買回瑞春輪
+    edge: e92a91328ead1
+    event_date: '2024-06-28'
+    events:
+    - amount: US$51.7M
+      detail: 承租人買回瑞春輪
+      event_date: '2024-06-28'
+    evidence_level: primary
+    id: org.landbridge-global
+    name: Landbridge Global Limited
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 美金肆仟萬元
+    as_of: '2026-10-02'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 樂利對全資子公司現金增資
+    details:
+    - 樂利對全資子公司現金增資
+    edge: e4b87cc29a2f8
+    event_date: '2026-10-02'
+    events:
+    - amount: 美金肆仟萬元
+      detail: 樂利對全資子公司現金增資
+      event_date: '2026-10-02'
+    evidence_level: primary
+    id: org.majestic-bloom
+    name: Majestic Bloom Limited
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 美金8,250萬元
+    as_of: '2026-06-01'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 新加坡子公司擬出售美生輪
+    details:
+    - 新加坡子公司擬出售美生輪
+    edge: e0aa82edb9956
+    event_date: '2026-06-01'
+    events:
+    - amount: 美金8,250萬元
+      detail: 新加坡子公司擬出售美生輪
+      event_date: '2026-06-01'
+    evidence_level: primary
+    id: org.mediterranean-shipping-company
+    name: Mediterranean Shipping Company
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 美金21,650仟元
+    as_of: '2024-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 新加坡子公司出售衡山輪
+    details:
+    - 新加坡子公司出售衡山輪
+    edge: eebe77ac5d85e
+    event_date: '2024-04-30'
+    events:
+    - amount: 美金21,650仟元
+      detail: 新加坡子公司出售衡山輪
+      event_date: '2024-04-30'
+    evidence_level: primary
+    id: org.mercury-wealth-shipping
+    name: Mercury Wealth Shipping Limited
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 美金3,850萬元
+    as_of: '2026-09-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 孫公司擬購入卡姆薩型散裝輪
+    details:
+    - 孫公司擬購入卡姆薩型散裝輪
+    edge: e408b4565f3ef
+    event_date: '2026-09-23'
+    events:
+    - amount: 美金3,850萬元
+      detail: 孫公司擬購入卡姆薩型散裝輪
+      event_date: '2026-09-23'
+    evidence_level: primary
+    id: org.mto-maritime
+    name: MTO MARITIME, S.A.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 美金肆仟壹百萬元
+    as_of: '2026-09-18'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 樂利對全資子公司現金增資
+    details:
+    - 樂利對全資子公司現金增資
+    edge: e6d56be1b8b77
+    event_date: '2026-09-18'
+    events:
+    - amount: 美金肆仟壹百萬元
+      detail: 樂利對全資子公司現金增資
+      event_date: '2026-09-18'
+    evidence_level: primary
+    id: org.potter-grand
+    name: Potter Grand Inc.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 美金7,840萬元
+    as_of: '2026-01-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 新加坡子公司出售高登輪
+    details:
+    - 新加坡子公司出售高登輪
+    edge: ece7c1dce94a7
+    event_date: '2026-01-23'
+    events:
+    - amount: 美金7,840萬元
+      detail: 新加坡子公司出售高登輪
+      event_date: '2026-01-23'
+    evidence_level: media
+    id: org.sinokor-maritime
+    name: Sinokor Maritime co., Ltd.
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 官網泛稱的煤鐵礦石公司、鋼鐵公司、電力公司及造紙公司，未逐一具名。
+- 接受船舶管理服務的私人船舶所有人，法說會未揭露姓名。
+- 美生輪、青山輪公告保留買方指定人的可能性，最終受讓法律實體尚未確認。
 website: http://www.snc.com.tw/
 tax_id: '11812103'
 incorporated: '1968-02-27'
 listed: '1989-12-08'
-as_of: '2026-10-15'
+as_of: '2026-10-26'
 confidence: ai_cross_checked
 has_research: true
 evidence:
-  tw.2605#e2:
-    locator: 印刷頁65／PDF第69頁，最近二年度本集團營業收入總額；金額單位為新台幣仟元
+  tw.2605#e1:
+    locator: 第65頁，最近二年度營業收入表，114年度欄
     published_date: '2026-05-06'
     publisher: 新興航運股份有限公司
     quote_check: found
-    title: 新興航運股份有限公司2025年報
+    title: 新興航運2025年度年報
     url: https://www.snc.com.tw/wp-content/uploads/SNC_AR2025.pdf
-  tw.2605#e3:
-    locator: 印刷頁70／PDF第74頁，市場分析之航線
+  tw.2605#e10:
+    locator: PDF第55頁，附表三
+    published_date: '2024-08-09'
+    publisher: 新興航運股份有限公司
+    quote_check: found
+    title: 新興航運2024年第二季合併財務報告
+    url: https://www.snc.com.tw/wp-content/uploads/113hb-Q2.pdf
+  tw.2605#e11:
+    locator: PDF第56頁，附表四；衡山輪對外出售列
+    published_date: '2024-08-09'
+    publisher: 新興航運股份有限公司
+    quote_check: found
+    title: 新興航運2024年第二季合併財務報告
+    url: https://www.snc.com.tw/wp-content/uploads/113hb-Q2.pdf
+  tw.2605#e12:
+    locator: 第26頁，停業單位Bridge Poiema Limited
+    published_date: '2024-08-09'
+    publisher: 新興航運股份有限公司
+    quote_check: found
+    title: 新興航運2024年第二季合併財務報告
+    url: https://www.snc.com.tw/wp-content/uploads/113hb-Q2.pdf
+  tw.2605#e13:
+    locator: 第4頁，營運亮點英文第3項
+    published_date: '2024-08-23'
+    publisher: 新興航運股份有限公司
+    quote_check: found
+    title: 新興航運2024年8月23日法人說明會簡報
+    url: https://www.snc.com.tw/wp-content/uploads/SNC-IR-Presentation-2024-08-23-Final.pdf
+  tw.2605#e14:
+    locator: 記者邱馨儀報導，第一段
+    published_date: '2026-01-23'
+    publisher: 經濟日報
+    quote_check: found
+    title: 新興出售296,428載重噸超大型原油輪高登輪
+    url: https://money.udn.com/money/story/5612/9285275
+  tw.2605#e15:
+    locator: 公告第5至6項
+    published_date: '2026-05-11'
+    publisher: 新興航運股份有限公司
+    quote_check: found
+    title: Brighton Shipping Inc.擬出售散裝輪青山輪
+    url: https://www.snc.com.tw/代本公司全資子公司norley-100轉投資子公司-brighton-shipping-inc-擬出售/
+  tw.2605#e16:
+    locator: 公告第5至9項
+    published_date: '2026-06-01'
+    publisher: 新興航運股份有限公司
+    quote_check: found
+    title: 新加坡子公司擬出售超大型原油輪美生輪
+    url: https://www.snc.com.tw/代重要子公司新興航運新加坡公司擬出售超大型-2/
+  tw.2605#e17:
+    locator: 公告第5、6及10項
+    published_date: '2026-08-19'
+    publisher: 新興航運股份有限公司
+    quote_check: found
+    title: Gifted Works Corp.擬購置遠洋2型油輪
+    url: https://www.snc.com.tw/本公司全資子公司norley-100轉投資子公司gifted-works-corp-擬購置遠洋/
+  tw.2605#e18:
+    locator: 公告第5、6及10項
+    published_date: '2026-08-19'
+    publisher: 新興航運股份有限公司
+    quote_check: found
+    title: Claymore Limited擬購置阿芙拉型油輪
+    url: https://www.snc.com.tw/本公司全資子公司norley-100轉投資子公司claymore-limited-擬購置阿芙/
+  tw.2605#e19:
+    locator: 公告第5至6項
+    published_date: '2026-08-19'
+    publisher: 新興航運股份有限公司
+    quote_check: found
+    title: Potter Grand Inc.擬購置阿芙拉型油輪
+    url: https://www.snc.com.tw/本公司全資子公司norley-100轉投資子公司potter-grand-inc-擬購置阿芙/
+  tw.2605#e2:
+    locator: 第70頁，航線
     published_date: '2026-05-06'
     publisher: 新興航運股份有限公司
     quote_check: found
-    title: 新興航運股份有限公司2025年報
+    title: 新興航運2025年度年報
+    url: https://www.snc.com.tw/wp-content/uploads/SNC_AR2025.pdf
+  tw.2605#e20:
+    locator: 公告第5至6項
+    published_date: '2026-09-23'
+    publisher: 新興航運股份有限公司
+    quote_check: found
+    title: Majestic Bloom Limited擬購置卡姆薩型散裝貨輪
+    url: https://www.snc.com.tw/本公司全資子公司norley-100轉投資子公司majestic-bloom-limited-擬購置卡/
+  tw.2605#e21:
+    locator: 公告第5至6項
+    published_date: '2026-04-30'
+    publisher: 新興航運股份有限公司
+    quote_check: found
+    title: Delight Way Limited擬購置中程成品油輪
+    url: https://www.snc.com.tw/本公司全資子公司norley-100轉投資子公司delight-way-limited-擬購置中/
+  tw.2605#e22:
+    locator: 公告說明第2至3項
+    published_date: '2026-08-17'
+    publisher: 公開資訊觀測站重大訊息，Goodinfo轉載
+    quote_check: unreachable
+    title: 新興補充公告：終止購置中程成品油輪
+    url: https://goodinfo.tw/tw/StockAnnounceDetail.asp?CLAIM_TIME=2026%2F08%2F17+15%3A37%3A35&STOCK_ID=2605&SUBJECT=%28%E8%A3%9C%E5%85%85%E5%85%AC%E5%91%8A%29%E4%BB%A3%E6%9C%AC%E5%85%AC%E5%8F%B8%E5%85%A8%E8%B3%87%E5%AD%90%E5%85%AC%E5%8F%B8Norley+100%25%E8%BD%89%E6%8A%95%E8%B3%87%E5%AD%90%E5%85%AC%E5%8F%B8+Delight+Way+Limited%E5%85%AC%E5%91%8A%E7%B5%82%E6%AD%A2%E8%B3%BC%E7%BD%AE%E4%B8%AD%E7%A8%8B%E6%88%90%E5%93%81%E6%B2%B9%E8%BC%AA%E4%BA%8B%E5%AE%9C%E3%80%82
+  tw.2605#e23:
+    locator: 公告標題及第2至6項
+    published_date: '2026-10-02'
+    publisher: 新興航運股份有限公司
+    quote_check: found
+    title: 樂利增資Majestic Bloom Limited美金肆仟萬元
+    url: https://www.snc.com.tw/代子公司樂利公司現金增資持股100子公司majestic-bloom-limited-美金/
+  tw.2605#e24:
+    locator: 2026年9月18日公告標題
+    published_date: '2026-09-18'
+    publisher: 新興航運股份有限公司
+    quote_check: found
+    title: 最新資訊：樂利增資Gifted Works Corp.
+    url: https://www.snc.com.tw/最新資訊/?doing_wp_cron=1786069831.2030160427093505859375
+  tw.2605#e25:
+    locator: 2026年9月18日公告標題
+    published_date: '2026-09-18'
+    publisher: 新興航運股份有限公司
+    quote_check: found
+    title: 最新資訊：樂利增資Claymore Limited
+    url: https://www.snc.com.tw/最新資訊/?doing_wp_cron=1786069831.2030160427093505859375
+  tw.2605#e26:
+    locator: 2026年9月18日公告標題
+    published_date: '2026-09-18'
+    publisher: 新興航運股份有限公司
+    quote_check: found
+    title: 最新資訊：樂利增資Potter Grand Inc.
+    url: https://www.snc.com.tw/最新資訊/?doing_wp_cron=1786069831.2030160427093505859375
+  tw.2605#e27:
+    locator: 2026年5月13日公告標題
+    published_date: '2026-05-13'
+    publisher: 新興航運股份有限公司
+    quote_check: found
+    title: 最新資訊：樂利增資Delight Way Limited
+    url: https://www.snc.com.tw/最新資訊/?doing_wp_cron=1786069831.2030160427093505859375
+  tw.2605#e3:
+    locator: 第70頁，主要客戶表
+    published_date: '2026-05-06'
+    publisher: 新興航運股份有限公司
+    quote_check: found
+    title: 新興航運2025年度年報
     url: https://www.snc.com.tw/wp-content/uploads/SNC_AR2025.pdf
   tw.2605#e4:
-    locator: PDF第3頁，核心重點；船隊基準日為2026年6月30日
-    published_date: '2026-08-21'
-    publisher: 新興航運股份有限公司
-    quote_check: found
-    title: 新興航運2026年第三季法說會
-    url: https://www.snc.com.tw/wp-content/uploads/SNC_2026-08-21.pdf
-  tw.2605#e5:
-    locator: 印刷頁60／PDF第64頁，轉投資事業持股表；本公司持股比例欄
+    locator: 第73頁，銷貨總額10%以上客戶表；114年度及115年第一季欄
     published_date: '2026-05-06'
     publisher: 新興航運股份有限公司
     quote_check: found
-    title: 新興航運股份有限公司2025年報
+    title: 新興航運2025年度年報
+    url: https://www.snc.com.tw/wp-content/uploads/SNC_AR2025.pdf
+  tw.2605#e5:
+    locator: 第78頁，重要契約
+    published_date: '2026-05-06'
+    publisher: 新興航運股份有限公司
+    quote_check: found
+    title: 新興航運2025年度年報
     url: https://www.snc.com.tw/wp-content/uploads/SNC_AR2025.pdf
   tw.2605#e6:
-    locator: 印刷頁60／PDF第64頁，轉投資事業持股表；本公司持股比例欄
-    published_date: '2026-05-06'
+    locator: 第27頁，主要業務及船隊
+    published_date: '2025-11-28'
     publisher: 新興航運股份有限公司
     quote_check: found
-    title: 新興航運股份有限公司2025年報
-    url: https://www.snc.com.tw/wp-content/uploads/SNC_AR2025.pdf
+    title: 新興航運2025年11月28日法人說明會簡報
+    url: https://www.snc.com.tw/wp-content/uploads/SNC-IR-Presentation-2025-11-28.pdf
   tw.2605#e7:
-    locator: 印刷頁60／PDF第64頁，轉投資事業持股表；本公司持股比例欄
-    published_date: '2026-05-06'
+    locator: 第26頁，公司控股架構
+    published_date: '2025-11-28'
     publisher: 新興航運股份有限公司
     quote_check: found
-    title: 新興航運股份有限公司2025年報
-    url: https://www.snc.com.tw/wp-content/uploads/SNC_AR2025.pdf
+    title: 新興航運2025年11月28日法人說明會簡報
+    url: https://www.snc.com.tw/wp-content/uploads/SNC-IR-Presentation-2025-11-28.pdf
+  tw.2605#e8:
+    locator: 第25至26頁，歷史發展及控股架構
+    published_date: '2025-11-28'
+    publisher: 新興航運股份有限公司
+    quote_check: found
+    title: 新興航運2025年11月28日法人說明會簡報
+    url: https://www.snc.com.tw/wp-content/uploads/SNC-IR-Presentation-2025-11-28.pdf
+  tw.2605#e9:
+    locator: 第26頁，公司控股架構
+    published_date: '2025-11-28'
+    publisher: 新興航運股份有限公司
+    quote_check: found
+    title: 新興航運2025年11月28日法人說明會簡報
+    url: https://www.snc.com.tw/wp-content/uploads/SNC-IR-Presentation-2025-11-28.pdf

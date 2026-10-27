@@ -29,29 +29,73 @@ chain_stage:
   stage_name: 製造與代工
   tier: midstream
 primary_chain_position: midstream
-summary_short: 以癌症、抗感染及醫療保健藥品銷售為主，另提供藥品委託開發製造服務。
-summary_long: 東洋主要經營醫療及保健藥品，2025年度此類收入占合併營收95%，勞務及權利金占5%。主要產品包括癌症用藥Lipo-Dox、抗感染用藥Lipo-AB，以及醫療保健產品胃逆舒口服懸浮液。公司具備微脂體、微球及傳統劑型開發能力，並提供涵蓋製劑研發、放大批量與商業量產的委託開發製造服務。截至2026年6月底，直接子公司包括全資持有的旭東海普國際、榮港國際，以及持股56.48%的東生華製藥。
+summary_short: 以醫療藥品製造銷售為主，經營困難學名藥、代理藥品及製藥代工。
+summary_long: 台灣東洋以醫療及保健藥品為主要收入來源，2025年占合併營收95%，勞務及權利金占5%。產品包括微脂體抗黴菌學名藥Lipo-AB及自製肺癌化療學名藥Pemetrexed，亦提供製劑研發、放大批量至商業量產的委託開發與製造服務。公司代理CSL Seqirus流感疫苗，並與羅氏合作推進Rozlytrek在台灣的市場與醫學學術交流。東生華與創益生技納入合併子公司；東生華於2024年收購高峰藥品及高峰生技各51%股權，兩家高峰公司於2025年合併，以高峰藥品為存續公司。
 segments:
 - evidence_ids:
   - e1
-  id: seg_drugs
+  id: medicines
   name: 醫療及保健藥品
-  period: 2025年度
+  period: '2025'
   revenue_share_pct: 95
 - evidence_ids:
   - e1
-  id: seg_services_royalties
+  id: services_royalties
   name: 勞務及權利金
-  period: 2025年度
+  period: '2025'
   revenue_share_pct: 5
 relations:
+  customers:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: Mentholatum產品委託製造
+    details:
+    - Mentholatum產品委託製造
+    edge: e484ed937476f
+    evidence_level: primary
+    id: org.mentholatum-taiwan
+    name: 台灣曼秀雷敦股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  partners:
+  - as_of: '2025-05-01'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: Rozlytrek羅思克台灣市場推進與醫學學術交流授權
+    details:
+    - Rozlytrek羅思克台灣市場推進與醫學學術交流授權
+    edge: e5adcf9fd97f5
+    evidence_level: primary
+    id: org.roche-taiwan
+    name: 羅氏大藥廠股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-25'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 台灣藥品專屬代理；CSL Seqirus流感疫苗產品
+    details:
+    - 台灣藥品專屬代理；CSL Seqirus流感疫苗產品
+    edge: efbccc7f5bf1b
+    evidence_level: primary
+    id: org.seqirus-uk-limited
+    name: SEQIRUS UK LIMITED
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持股56.48%的子公司
+    detail: 西藥販賣子公司
     details:
-    - 直接持股56.48%的子公司
+    - 西藥販賣子公司
     - 母公司及集團最終控制者
     edge: e9b2ecffce9c2
     evidence_level: primary
@@ -61,109 +105,143 @@ relations:
     share_basis: null
     share_pct: null
     weight: 2
-  - as_of: '2026-06-30'
+  - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持股100%的子公司
+    detail: 透過東生華持有之間接子公司及收購、合併事件
     details:
-    - 直接持股100%的子公司
-    edge: e3b12521599b1
+    - 透過東生華持有之間接子公司及收購、合併事件
+    edge: e4ae1afcf26d2
     evidence_level: primary
-    id: org.rong-gang-international
-    name: 榮港國際有限公司
+    id: org.kaofeng-pharmaceutical-materials
+    name: 高峰藥品材料股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-06-30'
+  - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持股100%的子公司
+    detail: 健康食品販賣子公司
     details:
-    - 直接持股100%的子公司
-    edge: e53cf73de9c05
+    - 健康食品販賣子公司
+    edge: ee8cf13bcda65
     evidence_level: primary
-    id: org.shih-tung-hai-pu-international
-    name: 旭東海普國際股份有限公司
+    id: tw.6566
+    name: 創益生技股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
+unresolved_mentions:
+- 2025年報主要供應商以甲公司、乙公司、丙公司代稱，未揭露正式名稱。
+- 2025年報主要銷貨客戶以A公司代稱，未揭露正式名稱。
+- Lipo-AB美國商業合作夥伴未於採用之官方新聞稿具名。
+- 2025年報部分授權或共同開發對象僅以英文字母代稱，未推定其身分。
+- 公司董事會資料提及由子公司參與某轉投資公司現金增資，未具名投資對象。
 website: www.tty.com.tw
 tax_id: '11821341'
 incorporated: '1960-07-22'
 listed: '2001-09-27'
-as_of: '2026-10-15'
+as_of: '2026-10-26'
 confidence: ai_cross_checked
 has_research: true
 evidence:
   tw.4105#e1:
-    locator: 第100頁，肆、營運概況／營業比重（一一四年度）；PDF第104頁
+    locator: 印刷第100頁，營業比重（一一四年度）；金額單位為新台幣仟元
     published_date: null
     publisher: 台灣東洋藥品工業股份有限公司
     quote_check: found
     title: 台灣東洋2025年度年報
-    url: https://www.tty.com.tw/rwd1181/store/F3/TTY%E5%B9%B4%E5%A0%B12025.pdf
+    url: https://ch.tty.com.tw/rwd1181/store/F3/TTY%E5%B9%B4%E5%A0%B12025.pdf
   tw.4105#e10:
+    locator: 印刷第12頁，列入合併財務報告之子公司；114.12.31及113.12.31欄
+    published_date: '2026-03-09'
+    publisher: 台灣東洋藥品工業股份有限公司
+    quote_check: found
+    title: 台灣東洋2025年度合併財務報告
+    url: https://www.tty.com.tw/rwd1181/store/F3/TTY%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E8%A1%A8_2025Q4.pdf
+  tw.4105#e11:
+    locator: 印刷第12頁，列入合併財務報告之子公司
+    published_date: '2026-03-09'
+    publisher: 台灣東洋藥品工業股份有限公司
+    quote_check: found
+    title: 台灣東洋2025年度合併財務報告
+    url: https://www.tty.com.tw/rwd1181/store/F3/TTY%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E8%A1%A8_2025Q4.pdf
+  tw.4105#e12:
+    locator: 印刷第12頁，東生華持有創益生技列
+    published_date: '2026-03-09'
+    publisher: 台灣東洋藥品工業股份有限公司
+    quote_check: unreachable
+    title: 台灣東洋2025年度合併財務報告
+    url: https://www.tty.com.tw/rwd1181/store/F3/TTY%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1%E8%A1%A8_2025Q4.pdf
+  tw.4105#e13:
+    locator: 印刷第12頁，子公司表註二；高峰公司完整名稱見同表
+    published_date: '2026-03-09'
+    publisher: 台灣東洋藥品工業股份有限公司
+    quote_check: found
+    title: 台灣東洋2025年度合併財務報告
+    url: https://www.tty.com.tw/rwd1181/store/F3/TTY%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E8%A1%A8_2025Q4.pdf
+  tw.4105#e14:
+    locator: 印刷第13頁，子公司表註三
+    published_date: '2026-03-09'
+    publisher: 台灣東洋藥品工業股份有限公司
+    quote_check: found
+    title: 台灣東洋2025年度合併財務報告
+    url: https://www.tty.com.tw/rwd1181/store/F3/TTY%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E8%A1%A8_2025Q4.pdf
+  tw.4105#e2:
     locator: 新聞稿首段
     published_date: '2022-11-18'
     publisher: 台灣東洋藥品工業股份有限公司
     quote_check: found
     title: 困難學名藥技術平台有成　東洋微脂體抗黴藥獲美國藥證
-    url: https://ch.tty.com.tw/ec99/rwd1181/news.asp?newsno=200
-  tw.4105#e2:
-    locator: Solid Tumor related products／Lipo-Dox
-    published_date: null
-    publisher: 台灣東洋藥品工業股份有限公司
-    quote_check: found
-    title: 癌症產品組合
-    url: https://www.tty.com.tw/ec99/rwd1181/category.asp?category_id=115
+    url: https://www.tty.com.tw/ec99/rwd1181/news.asp?newsno=200
   tw.4105#e3:
-    locator: Lipo-AB產品項目
-    published_date: null
+    locator: 第4頁，2025年市場發展重點
+    published_date: '2026-03-25'
     publisher: 台灣東洋藥品工業股份有限公司
     quote_check: found
-    title: 抗感染產品組合
-    url: https://www.tty.com.tw/ec99/rwd1181/category.asp?category_id=119
+    title: 台灣東洋2025年度營運成果報告
+    url: https://ch.tty.com.tw/rwd1181/store/F3/Q1_IR%20Conference_202603Ch.pdf
   tw.4105#e4:
-    locator: 醫療保健／胃逆舒
-    published_date: null
+    locator: 新聞稿首段
+    published_date: '2025-05-26'
     publisher: 台灣東洋藥品工業股份有限公司
     quote_check: found
-    title: 醫療保健產品組合
-    url: https://www.tty.com.tw/ec99/rwd1181/category.asp?category_id=120
+    title: 東洋自製藥品實證效益獲肯定　結合免疫療法支持藥品供應鏈韌性
+    url: https://ch.tty.com.tw/ec99/rwd1181/news.asp?newsno=269
   tw.4105#e5:
-    locator: 配方開發
-    published_date: null
-    publisher: 台灣東洋藥品工業股份有限公司
-    quote_check: found
-    title: 製劑開發能力
-    url: https://ch.tty.com.tw/ec99/rwd1181/category.asp?category_id=49
-  tw.4105#e6:
-    locator: 服務內容
+    locator: 委託開發與製造代工介紹
     published_date: null
     publisher: 台灣東洋藥品工業股份有限公司
     quote_check: found
     title: 委託開發與製造代工
     url: https://ch.tty.com.tw/ec99/rwd1181/category.asp?category_id=23
+  tw.4105#e6:
+    locator: 新聞稿首段；台灣羅氏正式名稱為羅氏大藥廠股份有限公司
+    published_date: '2025-04-18'
+    publisher: 台灣東洋藥品工業股份有限公司
+    quote_check: found
+    title: 台灣羅氏攜手台灣東洋　為癌症精準醫療發展添動能
+    url: https://www.tty.com.tw/ec99/rwd1181/news.asp?newsno=265
   tw.4105#e7:
-    locator: 第11頁，附註四（二）合併基礎；115.6.30持股欄
-    published_date: '2026-08-05'
+    locator: 印刷第126頁，重要契約
+    published_date: null
     publisher: 台灣東洋藥品工業股份有限公司
     quote_check: found
-    title: 台灣東洋民國115年及114年第二季合併財務報告
-    url: https://www.tty.com.tw/rwd1181/store/F3/TTY%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E8%A1%A8_2026Q2.pdf
+    title: 台灣東洋2025年度年報
+    url: https://ch.tty.com.tw/rwd1181/store/F3/TTY%E5%B9%B4%E5%A0%B12025.pdf
   tw.4105#e8:
-    locator: 第11頁，附註四（二）合併基礎；115.6.30持股欄
-    published_date: '2026-08-05'
+    locator: 第15頁，台灣東洋嚴選
+    published_date: '2026-03-25'
     publisher: 台灣東洋藥品工業股份有限公司
     quote_check: found
-    title: 台灣東洋民國115年及114年第二季合併財務報告
-    url: https://www.tty.com.tw/rwd1181/store/F3/TTY%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E8%A1%A8_2026Q2.pdf
+    title: 台灣東洋2025年度營運成果報告
+    url: https://ch.tty.com.tw/rwd1181/store/F3/Q1_IR%20Conference_202603Ch.pdf
   tw.4105#e9:
-    locator: 第11頁，附註四（二）合併基礎；115.6.30持股欄
-    published_date: '2026-08-05'
+    locator: 印刷第126頁，重要契約
+    published_date: null
     publisher: 台灣東洋藥品工業股份有限公司
     quote_check: found
-    title: 台灣東洋民國115年及114年第二季合併財務報告
-    url: https://www.tty.com.tw/rwd1181/store/F3/TTY%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E8%A1%A8_2026Q2.pdf
+    title: 台灣東洋2025年度年報
+    url: https://ch.tty.com.tw/rwd1181/store/F3/TTY%E5%B9%B4%E5%A0%B12025.pdf

@@ -17,40 +17,93 @@ industry:
   l3: cons.engineering
   l3_name: 工程與統包
   l3_name_en: Engineering & EPC
-primary_chain_position: midstream
-summary_short: 主要承攬土木建築及海事工程，合併業務另含預拌混凝土產銷。
-summary_long: 皇昌營造以承攬土木與建築工程為主要業務，工程範圍涵蓋捷運、鐵路地下化、國道交流道及社會住宅統包，並承作防波堤、圍堤造地與液化天然氣卸收碼頭等海事工程。2025年度營收組成為營建工程89.34%、混凝土銷售10.54%、租賃收入0.12%。合併子公司包括從事預拌混凝土產銷的和昌國際工業，以及經營擋土支撐與土方工程的宏昌基礎科技；截至2026年3月底，持股分別為49%與90%，和昌因具實質控制力而納入合併報表。
+primary_chain_position: not_applicable
+summary_short: 承攬土木、捷運、建築及海事工程，並透過子公司經營預拌混凝土。
+summary_long: 皇昌以公共工程承攬為主，工程範圍包含土木、捷運、建築與海事工程。2025年合併營建工程部門對外收入約105.91億元，混凝土部門約12.47億元。公司承攬中油觀塘接收站外廓防波堤工程，並與奧村組台灣分公司共同承攬臺北捷運東環段CF720工程，業主為臺北市政府捷運工程局第一區工程處。混凝土業務由子公司和昌國際工業經營，另有宏昌基礎科技子公司承作基礎工程。近年交易包括觀音及內湖購地，以及2026年董事會通過與長榮鋼鐵等合資成立都市更新專案公司。
 segments:
 - evidence_ids:
   - e2
-  id: seg_engineering
+  id: construction
   name: 營建工程
   period: '2025'
-  revenue_share_pct: 89.34
+  revenue_share_pct: null
 - evidence_ids:
   - e2
-  id: seg_concrete
-  name: 混凝土銷售
+  - e3
+  id: concrete
+  name: 混凝土
   period: '2025'
-  revenue_share_pct: 10.54
-- evidence_ids:
-  - e2
-  id: seg_rental
-  name: 租賃收入
-  period: '2025'
-  revenue_share_pct: 0.12
+  revenue_share_pct: null
 relations:
+  customers:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 觀塘接收站外廓防波堤等工程
+    details:
+    - 觀塘接收站外廓防波堤等工程
+    edge: e976d000cde44
+    evidence_level: primary
+    id: org.cpc-corporation-taiwan
+    name: 台灣中油
+    ranking_basis: disclosed
+    share_basis: revenue
+    share_pct: 33.25
+    weight: 1
+  - as_of: '2026-02-25'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 捷運環狀線東環段CF720區段標
+    details:
+    - 捷運環狀線東環段CF720區段標
+    edge: e280599d71d85
+    evidence_level: primary
+    id: org.taipei-dorts-first-district-project-office
+    name: 臺北市政府捷運工程局第一區工程處
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  partners:
+  - as_of: '2026-02-25'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 聯合承攬捷運CF720工程
+    details:
+    - 聯合承攬捷運CF720工程
+    edge: e9b2e2d86b126
+    evidence_level: primary
+    id: org.日商奧村組營造股份有限公司台灣分公司
+    name: 日商奧村組營造股份有限公司台灣分公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 觀塘接收站外廓防波堤聯合營運
+    details:
+    - 觀塘接收站外廓防波堤聯合營運
+    edge: ec98afcfb1186
+    evidence_level: primary
+    id: tw.2516
+    name: 新建
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
   - as_of: '2026-03-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 持股49%的受控制子公司；預拌混凝土產銷
+    detail: 預拌混凝土子公司
     details:
-    - 持股49%的受控制子公司；預拌混凝土產銷
-    edge: e795e681d60db
+    - 預拌混凝土子公司
+    edge: e5256c75de1ca
     evidence_level: primary
-    id: org.ho-chang-international-industry
-    name: 和昌國際工業(股)公司
+    id: org.hoch-international-industrial
+    name: 和昌國際工業股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -58,30 +111,63 @@ relations:
   - as_of: '2026-03-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 持股90%的子公司；擋土支撐及土方工程
+    detail: 連續壁、擋土支撐及基樁工程子公司
     details:
-    - 持股90%的子公司；擋土支撐及土方工程
+    - 連續壁、擋土支撐及基樁工程子公司
     edge: e2db5e5c1248e
     evidence_level: primary
     id: org.hong-chang-foundation-technology
-    name: 宏昌基礎科技(股)公司
+    name: 宏昌基礎科技股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
+  suppliers:
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司承作基礎工程
+    details:
+    - 子公司承作基礎工程
+    edge: e278443d69973
+    evidence_level: primary
+    id: org.hong-chang-foundation-technology
+    name: 宏昌基礎科技股份有限公司
+    ranking_basis: disclosed
+    share_basis: purchases
+    share_pct: 11.53
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司供應混凝土材料
+    details:
+    - 子公司供應混凝土材料
+    edge: e971fd183d66d
+    evidence_level: primary
+    id: org.hoch-international-industrial
+    name: 和昌國際工業股份有限公司
+    ranking_basis: disclosed
+    share_basis: purchases
+    share_pct: 8.07
+    weight: 1
   transactions:
-  - amount: null
+  - amount: 新台幣127,500,000元
     as_of: '2026-09-08'
     confidence: ai_cross_checked
     counterparty_shares: []
     detail: 合資成立皇昌福榮建設推動公辦都更
     details:
     - 合資成立皇昌福榮建設推動公辦都更
+    - 合資成立皇昌福榮建設專案公司
     edge: e7d4b285517e9
     event_date: '2026-09-08'
     events:
     - amount: null
       detail: 合資成立皇昌福榮建設推動公辦都更
+      event_date: '2026-09-08'
+    - amount: 新台幣127,500,000元
+      detail: 合資成立皇昌福榮建設專案公司
       event_date: '2026-09-08'
     evidence_level: primary
     id: tw.2211
@@ -90,61 +176,234 @@ relations:
     role: party
     share_basis: null
     share_pct: null
+    weight: 2
+  - amount: 新台幣116,872,118元（未稅）
+    as_of: '2025-05-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 承租辦公室及車位取得使用權資產
+    details:
+    - 承租辦公室及車位取得使用權資產
+    edge: ee7c81a6e52a6
+    event_date: '2025-05-13'
+    events:
+    - amount: 新台幣116,872,118元（未稅）
+      detail: 承租辦公室及車位取得使用權資產
+      event_date: '2025-05-13'
+    evidence_level: primary
+    id: org.fong-shin-development-investment
+    name: 豐鑫開發投資股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
     weight: 1
+  - amount: null
+    as_of: '2025-03-10'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 董事會通過子公司增資案
+    details:
+    - 董事會通過子公司增資案
+    edge: e9d26bb254ab7
+    event_date: '2025-03-10'
+    events:
+    - amount: null
+      detail: 董事會通過子公司增資案
+      event_date: '2025-03-10'
+    evidence_level: primary
+    id: org.hong-chang-foundation-technology
+    name: 宏昌基礎科技股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣48,438,200元
+    as_of: '2025-10-20'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 取得臺北市內湖區潭美段第二筆土地
+    details:
+    - 取得臺北市內湖區潭美段第二筆土地
+    edge: e106487c6402f
+    event_date: '2025-10-20'
+    events:
+    - amount: 新台幣48,438,200元
+      detail: 取得臺北市內湖區潭美段第二筆土地
+      event_date: '2025-10-20'
+    evidence_level: primary
+    id: org.jitian-development-construction
+    name: 吉田開發建設有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 2024年觀音區觀新段土地交易的非關係人自然人賣方，未具名。
+- 2025年內湖區潭美段第一筆土地交易的16名自然人賣方，未具名。
+- 2026年觀音區保障段土地交易的非關係人自然人賣方，未具名。
+- 2026年合資公告另列「昌投資股份有限公司」，來源字元缺漏，未推定其完整名稱。
 website: www.hcgc.com.tw
 tax_id: '34342717'
 incorporated: '1981-02-16'
 listed: '1999-10-15'
-as_of: '2026-10-15'
+as_of: '2026-10-26'
 confidence: ai_cross_checked
 has_research: true
 evidence:
   tw.2543#e1:
-    locator: 第48頁，業務範圍
-    published_date: '2026-04-30'
+    locator: 擴展營建實績版圖，穩固產業發展根基
+    published_date: null
+    publisher: 豐鑫皇昌集團
+    quote_check: found
+    title: 經營事業－皇昌營造
+    url: https://www.fong-shin.com/?id=17&route=article/about
+  tw.2543#e10:
+    locator: 第49頁，附表二，和昌進貨；表末註明合併時沖銷
+    published_date: null
     publisher: 皇昌營造股份有限公司
     quote_check: found
-    title: 皇昌營造股份有限公司114年度年報
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52151/2026/RNS/52151_rns_2026-08-06_8576ed06-25dc-42f5-88dc-259f38fde32e.pdf
+    title: 115年第一季合併財務季報告
+    url: https://www.hcgc.com.tw/attach_file/download/info_financial/fef4256fc972a2989c1195240f67a883.pdf
+  tw.2543#e11:
+    locator: 第49頁，附表二，宏昌進貨；表末註明合併時沖銷
+    published_date: null
+    publisher: 皇昌營造股份有限公司
+    quote_check: found
+    title: 115年第一季合併財務季報告
+    url: https://www.hcgc.com.tw/attach_file/download/info_financial/fef4256fc972a2989c1195240f67a883.pdf
+  tw.2543#e12:
+    locator: 穩健應對缺工時代：基礎建設的領航者
+    published_date: null
+    publisher: 豐鑫皇昌集團
+    quote_check: found
+    title: 經營事業－宏昌基礎科技
+    url: https://www.fong-shin.com/?id=17&route=article/about
+  tw.2543#e13:
+    locator: 公告第1至4點
+    published_date: '2024-01-24'
+    publisher: 鉅亨網／公開資訊觀測站
+    quote_check: found
+    title: 皇昌：公告本公司取得不動產
+    url: https://news.cnyes.com/news/id/5436817
+  tw.2543#e14:
+    locator: 公告第21點；第1點載觀音區觀新段，第4點載非關係人自然人
+    published_date: '2024-01-24'
+    publisher: 鉅亨網／公開資訊觀測站
+    quote_check: found
+    title: 皇昌：公告本公司取得不動產
+    url: https://news.cnyes.com/news/id/5436817
+  tw.2543#e15:
+    locator: 公告第6點
+    published_date: '2025-10-20'
+    publisher: MoneyDJ／公開資訊觀測站
+    quote_check: found
+    title: 皇昌公告本公司取得不動產
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=b4e3d621-77d8-43b3-a06b-c698a173314e
+  tw.2543#e16:
+    locator: 公告第5點，兩筆交易金額
+    published_date: '2025-10-20'
+    publisher: MoneyDJ／公開資訊觀測站
+    quote_check: found
+    title: 皇昌公告本公司取得不動產
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=b4e3d621-77d8-43b3-a06b-c698a173314e
+  tw.2543#e17:
+    locator: 公告第1、5及6點
+    published_date: '2026-03-10'
+    publisher: MoneyDJ／公開資訊觀測站
+    quote_check: found
+    title: 皇昌公告本公司取得不動產
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=ab9bf4a3-17d7-447c-8fff-7a571e3cbdcd
+  tw.2543#e18:
+    locator: 公告第4點
+    published_date: '2025-05-13'
+    publisher: 鉅亨網／公開資訊觀測站
+    quote_check: found
+    title: 皇昌：向關係人取得使用權資產
+    url: https://news.cnyes.com/news/id/5977053
+  tw.2543#e19:
+    locator: 公告第3點
+    published_date: '2025-05-13'
+    publisher: 鉅亨網／公開資訊觀測站
+    quote_check: found
+    title: 皇昌：向關係人取得使用權資產
+    url: https://news.cnyes.com/news/id/5977053
   tw.2543#e2:
-    locator: 第48頁，各項業務之營業比重；欄序為114年度、113年度
-    published_date: '2026-04-30'
+    locator: 第61頁，附註十四，114年度部門對外收入；單位為新台幣仟元
+    published_date: null
     publisher: 皇昌營造股份有限公司
     quote_check: found
-    title: 皇昌營造股份有限公司114年度年報
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52151/2026/RNS/52151_rns_2026-08-06_8576ed06-25dc-42f5-88dc-259f38fde32e.pdf
+    title: 114年度合併財務報告
+    url: https://www.hcgc.com.tw/attach_file/download/info_financial/171d601d944d01b66226ba56f140e206.pdf
+  tw.2543#e20:
+    locator: 公告主旨
+    published_date: '2026-09-08'
+    publisher: MoneyDJ／公開資訊觀測站
+    quote_check: found
+    title: 皇昌董事會通過與長榮鋼鐵等合資成立專案公司
+    url: https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=a55abdd0-45c8-4f1b-a227-05aa628ab289
+  tw.2543#e21:
+    locator: 公告第5點
+    published_date: '2026-09-08'
+    publisher: MoneyDJ／公開資訊觀測站
+    quote_check: found
+    title: 皇昌董事會通過與長榮鋼鐵等合資成立專案公司
+    url: https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=a55abdd0-45c8-4f1b-a227-05aa628ab289
+  tw.2543#e22:
+    locator: 115.09.08審計委員會議案；合資用途另見e20公告第17點
+    published_date: null
+    publisher: 皇昌營造股份有限公司
+    quote_check: found
+    title: 公司治理運作情形
+    url: https://www.hcgc.com.tw/company/display/operations
   tw.2543#e3:
-    locator: 第9頁，公司沿革（二）主要承包工程
+    locator: 樹立行業標竿，開創預拌混凝土產業新紀元
     published_date: null
-    publisher: 皇昌營造股份有限公司
+    publisher: 豐鑫皇昌集團
     quote_check: found
-    title: 皇昌營造股份有限公司及其子公司115年及114年第1季合併財務季報告
-    url: https://www.hcgc.com.tw/attach_file/download/info_financial/fef4256fc972a2989c1195240f67a883.pdf
+    title: 經營事業－和昌國際工業
+    url: https://www.fong-shin.com/?id=17&route=article/about
   tw.2543#e4:
-    locator: 民國115年
+    locator: 第62頁，主要客戶資訊，114年度
     published_date: null
     publisher: 皇昌營造股份有限公司
     quote_check: found
-    title: 公司沿革
-    url: https://www.hcgc.com.tw/about/history
+    title: 114年度合併財務報告
+    url: https://www.hcgc.com.tw/attach_file/download/info_financial/171d601d944d01b66226ba56f140e206.pdf
   tw.2543#e5:
-    locator: 第11頁，列入合併財務報表之子公司；欄序為115.03.31、114.12.31、114.03.31
-    published_date: null
-    publisher: 皇昌營造股份有限公司
+    locator: 第1頁，說明第6點
+    published_date: '2022-08-02'
+    publisher: 皇昌營造股份有限公司／公開資訊觀測站
     quote_check: found
-    title: 皇昌營造股份有限公司及其子公司115年及114年第1季合併財務季報告
-    url: https://www.hcgc.com.tw/attach_file/download/info_financial/fef4256fc972a2989c1195240f67a883.pdf
+    title: 公告取得觀塘接收站外推方案之外廓防波堤新建工程
+    url: https://www.hcgc.com.tw/attach_file/download/pages/0907c2022d81e7e8357cc2af3f23c46f.pdf
   tw.2543#e6:
-    locator: 第11頁，列入合併財務報表之子公司；欄序為115.03.31、114.12.31、114.03.31
-    published_date: null
+    locator: 首段
+    published_date: '2026-02-25'
     publisher: 皇昌營造股份有限公司
     quote_check: found
-    title: 皇昌營造股份有限公司及其子公司115年及114年第1季合併財務季報告
-    url: https://www.hcgc.com.tw/attach_file/download/info_financial/fef4256fc972a2989c1195240f67a883.pdf
+    title: 捷運環狀線東環段CF720區段標工程簽約儀式
+    url: https://www.hcgc.com.tw/news/display/527
   tw.2543#e7:
-    locator: 第11頁，子公司表註（1）
+    locator: 第16頁，聯合營運C
     published_date: null
     publisher: 皇昌營造股份有限公司
     quote_check: found
-    title: 皇昌營造股份有限公司及其子公司115年及114年第1季合併財務季報告
-    url: https://www.hcgc.com.tw/attach_file/download/info_financial/fef4256fc972a2989c1195240f67a883.pdf
+    title: 114年第二季合併財務季報告
+    url: https://www.hcgc.com.tw/attach_file/download/info_financial/22c6d2bf76aa0a7db53964b4f8dbe347.pdf
+  tw.2543#e8:
+    locator: 2004年沿革
+    published_date: null
+    publisher: 豐鑫皇昌集團
+    quote_check: found
+    title: 集團沿革
+    url: https://www.fong-shin.com/?id=9&route=article/about
+  tw.2543#e9:
+    locator: 2025-03-10公告項目
+    published_date: null
+    publisher: 皇昌營造股份有限公司
+    quote_check: found
+    title: 重大訊息
+    url: https://www.hcgc.com.tw/InvestorEvent/info2

@@ -18,44 +18,108 @@ industry:
   l3_name: 工程與統包
   l3_name_en: Engineering & EPC
 primary_chain_position: not_applicable
-summary_short: 透過子公司經營營建工程、不動產開發、環境工程與水資源處理。
-summary_long: 欣陸以投資控股方式，透過大陸工程、大陸建設及欣達環工經營營建工程、不動產開發、環境工程與水資源處理，另設欣陸管理顧問。大陸工程承作基礎建設土木、商用與住宅建築及機電工程；大陸建設從事住宅、商業大樓、飯店與大型社區的投資開發、銷售與租賃。欣達環工提供污水、再生水及廢棄物處理服務，涵蓋規劃設計、建造、營運與維護。2026年上半年，營建工程部門為集團最大外部營收來源。
+summary_short: 透過大陸工程、大陸建設與欣達環工經營營建、不動產及環工事業。
+summary_long: 欣陸投控透過子公司經營營建工程、不動產開發，以及環境工程與水資源處理三項事業。大陸工程承攬土木與建築工程，是2025年集團最大外部營收來源；大陸建設從事不動產開發與房地產租售；欣達環工業務涵蓋水處理、廢棄物、再生能源處理及管線工程。2026年，集團公告大陸工程以19億元出售楊梅土地予三暢開發的計畫，大陸建設另公告投資三暢開發25%股權。欣達環工同年公告投資6億元設立客雅水務，以執行新竹客雅再生水案。
 segments:
 - evidence_ids:
+  - e1
   - e2
-  id: seg_engineering
-  name: 營建工程
-  period: 2026年上半年
+  - e3
+  id: construction
+  name: 營建工程（大陸工程）
+  period: '2025'
   revenue_share_pct: null
 - evidence_ids:
+  - e1
   - e2
-  id: seg_property
-  name: 不動產開發
-  period: 2026年上半年
+  - e3
+  id: property
+  name: 不動產開發（大陸建設）
+  period: '2025'
   revenue_share_pct: null
 - evidence_ids:
+  - e1
   - e2
-  id: seg_environment
-  name: 環境工程及水資源處理
-  period: 2026年上半年
+  - e3
+  id: environment
+  name: 環境工程及水資源處理（欣達環工）
+  period: '2025'
   revenue_share_pct: null
 relations:
-  subsidiaries:
-  - as_of: '2026-10-15'
+  customers:
+  - as_of: '2023-03-25'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 管理顧問子公司
+    detail: 子公司大陸工程承包環狀線南環段CF670A工程
     details:
-    - 管理顧問子公司
-    edge: e7ce894af3cf5
+    - 子公司大陸工程承包環狀線南環段CF670A工程
+    edge: ec29ac0e8dd0f
     evidence_level: primary
-    id: org.chc-management-consulting
-    name: 欣陸管理顧問有限公司
+    id: org.taipei-dort
+    name: 臺北市政府捷運工程局
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-10-15'
+  - as_of: '2026-10-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司大陸工程的高鐵歷史工程承包實績
+    details:
+    - 子公司大陸工程的高鐵歷史工程承包實績
+    edge: e331dfaf38af5
+    evidence_level: primary
+    id: tw.2633
+    name: 台灣高鐵
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  parents:
+  - as_of: '2026-08-07'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 公告列示之母公司
+    details:
+    - 公告列示之母公司
+    edge: ea2233a532aa6
+    evidence_level: primary
+    id: org.mao-shih
+    name: 茂實(股)公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 最終母公司與最終控制者
+    details:
+    - 最終母公司與最終控制者
+    edge: ee8f3c2370712
+    evidence_level: primary
+    id: org.montrion
+    name: Montrion Corporation
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2025-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 欣達環工持股100%的間接子公司
+    details:
+    - 欣達環工持股100%的間接子公司
+    edge: eee28483907e4
+    evidence_level: primary
+    id: org.bao-shan-water
+    name: 寶山水務股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-26'
     confidence: ai_cross_checked
     counterparty_shares: []
     detail: 不動產開發子公司
@@ -64,12 +128,12 @@ relations:
     edge: ec4e7c9fe1316
     evidence_level: primary
     id: org.continental-development
-    name: 大陸建設股份有限公司
+    name: 大陸建設
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-10-15'
+  - as_of: '2026-10-26'
     confidence: ai_cross_checked
     counterparty_shares: []
     detail: 營建工程子公司
@@ -78,65 +142,274 @@ relations:
     edge: e57f206e0516c
     evidence_level: primary
     id: org.continental-engineering
-    name: 大陸工程股份有限公司
+    name: 大陸工程
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-10-15'
+  - as_of: '2026-10-26'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 環境工程及水資源處理子公司
+    detail: 環境工程與水資源處理子公司
     details:
-    - 環境工程及水資源處理子公司
-    edge: eb4f3824bfd98
+    - 環境工程與水資源處理子公司
+    edge: e9feede5049aa
     evidence_level: primary
-    id: org.hdec
-    name: 欣達環工股份有限公司
+    id: org.hsin-dar-environmental
+    name: 欣達環工
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
+  suppliers:
+  - as_of: '2020-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 對子公司大陸工程的歷史貨品供應
+    details:
+    - 對子公司大陸工程的歷史貨品供應
+    edge: e9d0b3937de6d
+    evidence_level: primary
+    id: tw.2006
+    name: 東和鋼鐵
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 美金26,837仟元
+    as_of: '2024-09-09'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司大陸建設增資其美國子公司
+    details:
+    - 子公司大陸建設增資其美國子公司
+    edge: ee0b9c636d25b
+    event_date: '2024-09-09'
+    events:
+    - amount: 美金26,837仟元
+      detail: 子公司大陸建設增資其美國子公司
+      event_date: '2024-09-09'
+    evidence_level: primary
+    id: org.cdc-us
+    name: CDC US Corporation
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣600,000,000元
+    as_of: '2026-09-04'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司欣達環工投資設立客雅水務
+    details:
+    - 子公司欣達環工投資設立客雅水務
+    edge: e53fbddff28f5
+    event_date: '2026-09-04'
+    events:
+    - amount: 新台幣600,000,000元
+      detail: 子公司欣達環工投資設立客雅水務
+      event_date: '2026-09-04'
+    evidence_level: primary
+    id: org.ke-ya-water
+    name: 客雅水務股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣245,000仟元
+    as_of: 2026-03
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團認購關聯企業泉鼎水務增資
+    details:
+    - 集團認購關聯企業泉鼎水務增資
+    edge: eadf9683f87b8
+    event_date: null
+    events:
+    - amount: 新台幣245,000仟元
+      detail: 集團認購關聯企業泉鼎水務增資
+      event_date: null
+    evidence_level: primary
+    id: org.quan-ding-water
+    name: 泉鼎水務股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣19億元
+    as_of: '2026-08-07'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司大陸工程計畫出售楊梅土地
+    details:
+    - 子公司大陸工程計畫出售楊梅土地
+    edge: e2d03c42864c3
+    event_date: '2026-08-07'
+    events:
+    - amount: 新台幣19億元
+      detail: 子公司大陸工程計畫出售楊梅土地
+      event_date: '2026-08-07'
+    evidence_level: primary
+    id: org.san-chang-development
+    name: 三暢開發股份有限公司
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 不超過新台幣6.09億元
+    as_of: '2026-08-07'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司大陸建設投資三暢開發25%股權
+    details:
+    - 子公司大陸建設投資三暢開發25%股權
+    edge: ede9b3ee641e9
+    event_date: '2026-08-07'
+    events:
+    - amount: 不超過新台幣6.09億元
+      detail: 子公司大陸建設投資三暢開發25%股權
+      event_date: '2026-08-07'
+    evidence_level: primary
+    id: org.san-chang-development
+    name: 三暢開發股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 2025年3月大陸建設淡水土地出售案：買方為未具名、非關係人的自然人。
+- 2026年9月大陸建設板橋土地取得案：賣方為未具名、非關係人的自然人。
+- 2026年3月認購泉鼎水務增資：財報以合併公司表述，該段未指明實際認購法人。
 website: http://www.continental-holdings.com
 tax_id: '28993629'
 incorporated: '2010-04-08'
 listed: '2010-04-08'
-as_of: '2026-10-18'
+as_of: '2026-10-26'
 confidence: ai_cross_checked
 has_research: true
 evidence:
   tw.3703#e1:
-    locator: 業務概述首段
+    locator: 關於欣陸／業務概述首段
     published_date: null
     publisher: 欣陸投資控股股份有限公司
     quote_check: found
     title: 業務概述
     url: https://www.continental-holdings.com/zh/about/business-overview/
-  tw.3703#e2:
-    locator: 第59頁，附註三六部門資訊，115年1月1日至6月30日；欄序為營建工程、不動產開發、環境工程及水資源處理、投資控股、調整及銷除、合計；單位為新臺幣仟元
+  tw.3703#e10:
+    locator: 公告第1至6項
+    published_date: '2026-09-16'
+    publisher: MoneyDJ／公開資訊觀測站重大訊息
+    quote_check: found
+    title: 欣陸：大陸建設取得新北市板橋區營建用地
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=ee1d82a8-c52e-4c24-b98b-ee298a0b72b1
+  tw.3703#e11:
+    locator: 公告第5、6及17項
+    published_date: '2026-09-04'
+    publisher: MoneyDJ／公開資訊觀測站重大訊息
+    quote_check: found
+    title: 欣陸：欣達環工投資設立客雅水務，計6億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=e78cd490-98c5-44b5-a42f-f5093224e7ee
+  tw.3703#e12:
+    locator: 公告第3項，客雅水務之名稱、業務及持股關係
+    published_date: '2026-09-04'
+    publisher: 鉅亨網／公開資訊觀測站重大訊息
+    quote_check: found
+    title: 欣陸：公告增加持有被控股公司家數
+    url: https://news.cnyes.com/news/id/6597722
+  tw.3703#e13:
+    locator: 公告第3項
+    published_date: '2025-06-30'
+    publisher: MoneyDJ／公開資訊觀測站重大訊息
+    quote_check: found
+    title: 欣陸：公告增加持有被控股公司家數
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=a3e6f713-f487-4020-ba32-01304f84f400
+  tw.3703#e14:
+    locator: PDF第76頁，印刷頁70，2020年12月31日應收帳款明細表；欄序為客戶名稱、摘要、金額
+    published_date: '2021-03-23'
+    publisher: 東和鋼鐵企業股份有限公司
+    quote_check: found
+    title: 東和鋼鐵2020年度個體財務報告
+    url: https://www.tunghosteel.com/Files/papp/610/109Q4東鋼個體(上傳).pdf
+  tw.3703#e15:
+    locator: 土木工程段落，歷史工程實績
+    published_date: null
+    publisher: 大陸工程股份有限公司
+    quote_check: found
+    title: 大陸工程業務概述
+    url: https://www.continental-engineering.com/zh/business-overview/
+  tw.3703#e16:
+    locator: 新聞稿首段
+    published_date: '2023-03-25'
+    publisher: 欣陸投資控股股份有限公司
+    quote_check: found
+    title: 大陸工程獲北捷環狀線南環段CF670A區段標工程
+    url: https://www.continental-holdings.com/zh/about/media-center/大陸工程獲北捷環狀線南環段-cf670a區段標工程-在建工/
+  tw.3703#e17:
+    locator: PDF第54頁，附註三一（十）其他關係人交易第4項，2026年3月認購增資
     published_date: '2026-08-07'
     publisher: 欣陸投資控股股份有限公司
     quote_check: found
-    title: 民國115及114年第2季合併財務報告暨會計師核閱報告
-    url: https://www.continental-holdings.com/app/uploads/2026/08/115%E5%B9%B4%E7%AC%AC%E4%BA%8C%E5%AD%A3%E6%AC%A3%E9%99%B8%E6%8A%95%E8%B3%87%E6%8E%A7%E8%82%A1%E8%82%A1%E5%85%AC%E5%8F%B8%E5%8F%8A%E5%85%B6%E5%AD%90%E5%85%AC%E5%8F%B8%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%AD%A3%E5%A0%B1%E8%A1%A8.pdf
-  tw.3703#e3:
-    locator: 專業領域
-    published_date: null
-    publisher: 大陸工程股份有限公司
-    quote_check: found
-    title: 關於大陸工程
-    url: https://www.continental-engineering.com/zh/about-cec/
-  tw.3703#e4:
-    locator: 大陸建設股份有限公司
-    published_date: null
-    publisher: 大陸工程股份有限公司
-    quote_check: found
-    title: 關係企業
-    url: https://www.continental-engineering.com/zh/chc-group/
-  tw.3703#e5:
-    locator: 欣達環工公司
-    published_date: null
+    title: 2026年第二季欣陸投控及子公司合併財務報告
+    url: https://www.continental-holdings.com/app/uploads/2026/08/115年第二季欣陸投資控股股公司及其子公司合併財務季報表.pdf
+  tw.3703#e2:
+    locator: PDF第84頁，部門資訊，114年度；單位新台幣千元，欄序為營建工程、不動產開發、環境工程及水資源處理、投資控股、調整及銷除、合計
+    published_date: '2026-03-10'
     publisher: 欣陸投資控股股份有限公司
     quote_check: found
-    title: 業務概述
-    url: https://www.continental-holdings.com/zh/about/business-overview/
+    title: 2025年度欣陸投控及子公司合併財務報告
+    url: https://www.continental-holdings.com/app/uploads/2026/03/114年第四季欣陸投資控股股公司及其子公司合併財務季報表.pdf
+  tw.3703#e3:
+    locator: PDF第84頁，部門資訊第1至3項
+    published_date: '2026-03-10'
+    publisher: 欣陸投資控股股份有限公司
+    quote_check: found
+    title: 2025年度欣陸投控及子公司合併財務報告
+    url: https://www.continental-holdings.com/app/uploads/2026/03/114年第四季欣陸投資控股股公司及其子公司合併財務季報表.pdf
+  tw.3703#e4:
+    locator: PDF第51頁，附註三一關係人交易首段
+    published_date: '2026-08-07'
+    publisher: 欣陸投資控股股份有限公司
+    quote_check: found
+    title: 2026年第二季欣陸投控及子公司合併財務報告
+    url: https://www.continental-holdings.com/app/uploads/2026/08/115年第二季欣陸投資控股股公司及其子公司合併財務季報表.pdf
+  tw.3703#e5:
+    locator: 公告標題，代號3703
+    published_date: '2026-08-07'
+    publisher: 鉅亨網／公開資訊觀測站重大訊息
+    quote_check: found
+    title: 欣陸：代母公司茂實公告訂定除息基準日
+    url: https://news.cnyes.com/news/id/6564643
+  tw.3703#e6:
+    locator: 公告標題、第1至3項、第12及15項
+    published_date: '2024-09-09'
+    publisher: 鉅亨網／公開資訊觀測站重大訊息
+    quote_check: found
+    title: 欣陸：代子公司大陸建設公告增資CDC US Corporation
+    url: https://news.cnyes.com/news/id/5712315
+  tw.3703#e7:
+    locator: 公告第1至4項
+    published_date: '2025-03-20'
+    publisher: MoneyDJ／公開資訊觀測站重大訊息
+    quote_check: found
+    title: 欣陸：大陸建設處分新北市淡水區土地
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=c1115d99-2145-4eaa-8f1b-5782fb756872
+  tw.3703#e8:
+    locator: 第7項，重大訊息說明內容
+    published_date: '2026-08-07'
+    publisher: MoneyDJ／公開資訊觀測站重大訊息
+    quote_check: found
+    title: 欣陸公告重大訊息說明記者會內容：大陸工程出售楊梅土地
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=4fbfabb3-3f8a-4916-a2f9-3a4b752489c0
+  tw.3703#e9:
+    locator: 公告第5、6、11及14項
+    published_date: '2026-08-07'
+    publisher: MoneyDJ／公開資訊觀測站重大訊息
+    quote_check: found
+    title: 欣陸：大陸建設取得三暢開發25%股權，上限6.09億元
+    url: https://m.moneydj.com/f1a.aspx?a=66CD6166-E166-4643-9573-1D4B1967CF9C

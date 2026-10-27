@@ -121,8 +121,9 @@ members:
   stage_role: also
 - id: tw.2355
   detail: 印刷電路板製造、加工及買賣占營業比重約100%，產品涵蓋多層板與HDI。
-  as_of: '2026-10-15'
+  as_of: '2026-10-26'
   evidence:
+  - tw.2355#e1
   - tw.2355#e2
   confidence: ai_cross_checked
   source: classification
@@ -165,12 +166,10 @@ members:
   stage_role: primary
 - id: tw.2402
   detail: 電子整合元件占營收80%，涵蓋FPC、PCB及類載板製造，另提供PCBA組裝與測試。
-  as_of: '2026-10-15'
+  as_of: '2026-10-26'
   evidence:
-  - tw.2402#e8
   - tw.2402#e1
   - tw.2402#e2
-  - tw.2402#e3
   confidence: ai_cross_checked
   source: classification
   stage: board
@@ -178,12 +177,10 @@ members:
   stage_role: primary
 - id: tw.2402
   detail: 電子整合元件占營收80%，涵蓋FPC、PCB及類載板製造，另提供PCBA組裝與測試。
-  as_of: '2026-10-15'
+  as_of: '2026-10-26'
   evidence:
-  - tw.2402#e8
   - tw.2402#e1
   - tw.2402#e2
-  - tw.2402#e3
   confidence: ai_cross_checked
   source: classification
   stage: assembly
@@ -463,18 +460,6 @@ members:
   stage: tools
   tier: upstream
   stage_role: primary
-- id: tw.4722
-  detail: 鏈內業務為高頻高速銅箔基板用樹脂及PSMA，屬上游材料。
-  as_of: '2026-10-15'
-  evidence:
-  - tw.4722#e1
-  - tw.4722#e2
-  - tw.4722#e3
-  confidence: ai_cross_checked
-  source: classification
-  stage: materials
-  tier: upstream
-  stage_role: primary
 - id: tw.4909
   detail: 主要營收來自高頻微波通訊印刷電路板製造。
   as_of: '2026-10-23'
@@ -596,11 +581,10 @@ members:
   stage_role: primary
 - id: tw.5439
   detail: 多層印刷電路板占營收98.82%，主要業務為電路板製造與銷售。
-  as_of: '2026-10-15'
+  as_of: '2026-10-26'
   evidence:
+  - tw.5439#e1
   - tw.5439#e2
-  - tw.5439#e3
-  - tw.5439#e5
   confidence: ai_cross_checked
   source: classification
   stage: board
@@ -1026,10 +1010,10 @@ members:
   stage_role: primary
 - id: tw.8155
   detail: 主要收入來自印刷電路板，製造多層PCB與HDI，供伺服器及測試設備使用。
-  as_of: '2026-10-15'
+  as_of: '2026-10-26'
   evidence:
   - tw.8155#e1
-  - tw.8155#e7
+  - tw.8155#e3
   confidence: ai_cross_checked
   source: classification
   stage: board

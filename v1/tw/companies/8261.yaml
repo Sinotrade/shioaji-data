@@ -26,30 +26,30 @@ chain_stage:
   stage_name: IP 與 IC 設計
   tier: upstream
 primary_chain_position: upstream
-summary_short: 以低、中、高壓MOSFET等功率半導體元件的設計與銷售為主要業務。
-summary_long: 富鼎先進電子以功率半導體元件的研發、設計與銷售為主要業務，產品包括低、中、高壓MOSFET、IGBT及電源管理IC。2025年低壓、中壓與高壓MOSFET營收占比分別為49.07%、32.03%與16.06%，其他產品占2.84%。公司亦開發碳化矽MOSFET與氮化鎵HEMT；年報記載氮化鎵650V／700V系列已完成開發，正進行可靠度驗證，碳化矽產品則持續優化。另開發供AI伺服器散熱風扇及水冷系統水泵使用的MOSFET。
+summary_short: 以高、中、低壓MOSFET設計及銷售為主要收入，另開發IGBT與第三代功率半導體。
+summary_long: 富鼎從事功率半導體設計與銷售，核心產品為高、中、低壓MOSFET，亦提供IGBT。2025年低壓、中壓及高壓MOSFET分別占營收49.07%、32.03%及16.06%，其他產品占2.84%。公司開發碳化矽MOSFET與氮化鎵元件，其中氮化鎵650V／700V系列已完成產品開發並進行可靠度驗證，另完成AI伺服器用Oring FET產品驗證。公司與鴻海、國巨在產品設計、製程優化及銷售通路合作，2025年亦揭露對國巨銷貨及向鴻揚半導體進貨。海外布局包括2025年10月新設的日本全資子公司富鼎先進電子株式會社。
 segments:
 - evidence_ids:
   - e2
-  id: seg_low_voltage
-  name: 低壓金氧半功率場效電晶體
+  id: low_voltage_mosfet
+  name: 低壓MOSFET
   period: '2025'
   revenue_share_pct: 49.07
 - evidence_ids:
   - e2
-  id: seg_middle_voltage
-  name: 中壓金氧半功率場效電晶體
+  id: middle_voltage_mosfet
+  name: 中壓MOSFET
   period: '2025'
   revenue_share_pct: 32.03
 - evidence_ids:
   - e2
-  id: seg_high_voltage
-  name: 高壓金氧半功率場效電晶體
+  id: high_voltage_mosfet
+  name: 高壓MOSFET
   period: '2025'
   revenue_share_pct: 16.06
 - evidence_ids:
   - e2
-  id: seg_other
+  id: other_products
   name: 其他產品
   period: '2025'
   revenue_share_pct: 2.84
@@ -64,21 +64,75 @@ themes:
   theme: theme.sic
   tier: midstream
 - also: []
-  stage: parts
-  theme: theme.liquid_cooling
-  tier: upstream
-- also: []
   stage: devices
   theme: theme.gan
   tier: midstream
 relations:
-  subsidiaries:
-  - as_of: '2025-12-31'
+  customers:
+  - as_of: 2025-12
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持股100%的子公司
+    detail: 關係人銷貨；品項未單獨揭露
     details:
-    - 直接持股100%的子公司
+    - 關係人銷貨；品項未單獨揭露
+    edge: eff1ed97bc47f
+    evidence_level: primary
+    id: tw.2327
+    name: 國巨*
+    ranking_basis: disclosed
+    share_basis: revenue
+    share_pct: 0.02
+    weight: 1
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 關係人銷貨；品項未單獨揭露
+    details:
+    - 關係人銷貨；品項未單獨揭露
+    edge: e69084aca2650
+    evidence_level: primary
+    id: org.國益興業-香港-有限公司
+    name: 國益興業（香港）有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  partners:
+  - as_of: 2026-04
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 產品設計、製程優化與銷售通路合作
+    details:
+    - 產品設計、製程優化與銷售通路合作
+    edge: ed44e765c9970
+    evidence_level: primary
+    id: tw.2317
+    name: 鴻海
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2026-04
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 產品設計、製程優化與銷售通路合作
+    details:
+    - 產品設計、製程優化與銷售通路合作
+    edge: e24eab15fbd3e
+    evidence_level: primary
+    id: tw.2327
+    name: 國巨*
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 2025年10月新設日本全資子公司
+    details:
+    - 2025年10月新設日本全資子公司
     edge: efa4f6e04ce46
     evidence_level: primary
     id: org.apec-japan
@@ -87,151 +141,201 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2025-12-31'
+  - as_of: 2025-12
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持股87.96%的子公司
+    detail: 持有87.96%權益的買賣業子公司
     details:
-    - 直接持股87.96%的子公司
-    edge: ed9c0ccac5aa5
+    - 持有87.96%權益的買賣業子公司
+    edge: eb2ca7ff673e0
     evidence_level: primary
-    id: org.cheng-yi-technology
+    id: org.green-power-semiconductor
     name: 橙毅科技股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2025-12-31'
+  - as_of: 2025-12
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持股100%的子公司
+    detail: 透過Perfect Prime Limited持有的子公司
     details:
-    - 直接持股100%的子公司
-    edge: e75eec181b6fe
+    - 透過Perfect Prime Limited持有的子公司
+    edge: ec206191d1793
     evidence_level: primary
-    id: org.fu-hong-investment
-    name: 富鴻投資股份有限公司
+    id: org.shenzhen-fucheng-electronics
+    name: 深圳富澄電子有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2025-12-31'
+  - as_of: 2025-12
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持股100%的子公司
+    detail: 橙毅科技持有100%權益的間接子公司
     details:
-    - 直接持股100%的子公司
-    edge: e10b98894b9a9
+    - 橙毅科技持有100%權益的間接子公司
+    edge: ee0c2419427b9
     evidence_level: primary
-    id: org.future-technology-consulting-bvi
-    name: Future Technology Consulting (B.V.I.), Inc.
+    id: org.wuxi-chengxin-microelectronics
+    name: 無錫橙芯微電子科技有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2025-12-31'
+  suppliers:
+  - as_of: 2025-12
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持股100%的子公司
+    detail: 關係人進貨；品項未單獨揭露
     details:
-    - 直接持股100%的子公司
-    edge: ee5331fada44a
+    - 關係人進貨；品項未單獨揭露
+    edge: e0cb841dc1a36
     evidence_level: primary
-    id: org.perfect-prime-limited-samoa
-    name: Perfect Prime Limited (SAMOA)
+    id: org.hong-yang-semiconductor
+    name: 鴻揚半導體股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
+  transactions:
+  - amount: 新台幣28.868億元
+    as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 國創認購富鼎私募普通股
+    details:
+    - 國創認購富鼎私募普通股
+    edge: e3763e94c4c68
+    event_date: '2022-05-20'
+    events:
+    - amount: 新台幣28.868億元
+      detail: 國創認購富鼎私募普通股
+      event_date: '2022-05-20'
+    evidence_level: primary
+    id: org.xsemi
+    name: 國創半導體
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 年報以代碼揭露的主要晶圓及封裝加工供應商，未公開實際名稱。
+- 年報所稱共同開發製程平台的韓系晶圓廠，未具名。
+- 年報所稱共同開發DrMOS的類比電源IC設計公司，未具名。
+- 年報所稱導入高壓MOSFET的電源供應器ODM大廠，未具名。
+- 財報以客戶A、客戶B、客戶C表示的主要客戶，無法對應具名公司。
 website: https://www.a-power.com.tw
 tax_id: '16550923'
 incorporated: '1998-07-17'
 listed: '2009-12-11'
-as_of: '2026-10-15'
+as_of: '2026-10-26'
 confidence: ai_cross_checked
 has_research: true
 evidence:
   tw.8261#e1:
-    locator: 公司概述首段
+    locator: 公司概述首兩段
     published_date: null
     publisher: 富鼎先進電子股份有限公司
     quote_check: found
     title: 公司概述
     url: https://www.a-power.com.tw/tw/page/about-apec
   tw.8261#e10:
-    locator: 印刷頁55，本公司對轉投資事業之持股情形，2025年12月31日
+    locator: 印刷頁32，列入合併財務報告之子公司，橙毅公司列
     published_date: null
     publisher: 富鼎先進電子股份有限公司
     quote_check: found
-    title: 114年度年報
-    url: https://www.a-power.com.tw/assets/upload/files/2026/06/23/1e0b86bdd9cb72fb678b0d45.pdf
+    title: 114及113年度合併財務報告
+    url: https://www.a-power.com.tw/assets/upload/files/2026/03/08/33c2b54a97ef54b055e13098.pdf
   tw.8261#e11:
-    locator: 印刷頁55，本公司對轉投資事業之持股情形，2025年12月31日
+    locator: 印刷頁32，日本子公司列及表下注
     published_date: null
     publisher: 富鼎先進電子股份有限公司
     quote_check: found
-    title: 114年度年報
-    url: https://www.a-power.com.tw/assets/upload/files/2026/06/23/1e0b86bdd9cb72fb678b0d45.pdf
+    title: 114及113年度合併財務報告
+    url: https://www.a-power.com.tw/assets/upload/files/2026/03/08/33c2b54a97ef54b055e13098.pdf
   tw.8261#e12:
-    locator: 印刷頁55，本公司對轉投資事業之持股情形，2025年12月31日
+    locator: 印刷頁32，深圳與無錫間接子公司列
     published_date: null
     publisher: 富鼎先進電子股份有限公司
     quote_check: found
-    title: 114年度年報
-    url: https://www.a-power.com.tw/assets/upload/files/2026/06/23/1e0b86bdd9cb72fb678b0d45.pdf
+    title: 114及113年度合併財務報告
+    url: https://www.a-power.com.tw/assets/upload/files/2026/03/08/33c2b54a97ef54b055e13098.pdf
+  tw.8261#e13:
+    locator: 新聞稿首段
+    published_date: '2022-05-20'
+    publisher: 鴻海科技集團
+    quote_check: found
+    title: 國創半導體獲鴻海與國巨增資 並參與富鼎私募成為最大股東
+    url: https://www.honhai.com/zh-tw/press-center/press-releases/latest-news/798
+  tw.8261#e14:
+    locator: 海外子公司聯絡資訊
+    published_date: null
+    publisher: 富鼎先進電子股份有限公司
+    quote_check: found
+    title: 聯絡我們
+    url: https://www.a-power.com.tw/tw/contact
+  tw.8261#e15:
+    locator: 印刷頁50，關係人名稱及其關係
+    published_date: null
+    publisher: 富鼎先進電子股份有限公司
+    quote_check: found
+    title: 114及113年度合併財務報告
+    url: https://www.a-power.com.tw/assets/upload/files/2026/03/08/33c2b54a97ef54b055e13098.pdf
   tw.8261#e2:
-    locator: 印刷頁64，業務範圍／營業比重
+    locator: 印刷頁64，營業比重
     published_date: null
     publisher: 富鼎先進電子股份有限公司
     quote_check: found
-    title: 114年度年報
+    title: 2025年年報
     url: https://www.a-power.com.tw/assets/upload/files/2026/06/23/1e0b86bdd9cb72fb678b0d45.pdf
   tw.8261#e3:
-    locator: 首頁產品資訊／IGBTs
+    locator: 印刷頁68，技術及研發概況第(4)項
     published_date: null
     publisher: 富鼎先進電子股份有限公司
     quote_check: found
-    title: 產品資訊：IGBTs
-    url: https://www.a-power.com.tw/tw
+    title: 2025年年報
+    url: https://www.a-power.com.tw/assets/upload/files/2026/06/23/1e0b86bdd9cb72fb678b0d45.pdf
   tw.8261#e4:
-    locator: 首頁產品資訊／Power ICs
+    locator: 印刷頁68，氮化鎵GaN HEMT研發進度
     published_date: null
     publisher: 富鼎先進電子股份有限公司
     quote_check: found
-    title: 產品資訊：Power ICs
-    url: https://www.a-power.com.tw/tw
+    title: 2025年年報
+    url: https://www.a-power.com.tw/assets/upload/files/2026/06/23/1e0b86bdd9cb72fb678b0d45.pdf
   tw.8261#e5:
-    locator: 印刷頁68，技術及研發概況／碳化矽Power MOSFET
+    locator: 印刷頁68，第三代中低壓Power MOSFET第C項
     published_date: null
     publisher: 富鼎先進電子股份有限公司
     quote_check: found
-    title: 114年度年報
+    title: 2025年年報
     url: https://www.a-power.com.tw/assets/upload/files/2026/06/23/1e0b86bdd9cb72fb678b0d45.pdf
   tw.8261#e6:
-    locator: 印刷頁68，技術及研發概況／氮化鎵
+    locator: 印刷頁9，重要產銷政策
     published_date: null
     publisher: 富鼎先進電子股份有限公司
     quote_check: found
-    title: 114年度年報
-    url: https://www.a-power.com.tw/assets/upload/files/2026/06/23/1e0b86bdd9cb72fb678b0d45.pdf
+    title: 115年股東常會議事手冊
+    url: https://www.a-power.com.tw/assets/upload/shareholder-meeting/agenda/3f76ba9f6c1dd3ffe5367be0dfe37597.pdf?057fc2d7104b81863cce6d86=
   tw.8261#e7:
-    locator: 印刷頁3，研究發展狀況
+    locator: 印刷頁11，114年度關係人交易情形報告，一、銷貨
     published_date: null
     publisher: 富鼎先進電子股份有限公司
     quote_check: found
-    title: 114年度年報
-    url: https://www.a-power.com.tw/assets/upload/files/2026/06/23/1e0b86bdd9cb72fb678b0d45.pdf
+    title: 115年股東常會議事手冊
+    url: https://www.a-power.com.tw/assets/upload/shareholder-meeting/agenda/3f76ba9f6c1dd3ffe5367be0dfe37597.pdf?057fc2d7104b81863cce6d86=
   tw.8261#e8:
-    locator: 印刷頁55，本公司對轉投資事業之持股情形，2025年12月31日
+    locator: 印刷頁11，114年度關係人交易情形報告，一、銷貨
     published_date: null
     publisher: 富鼎先進電子股份有限公司
     quote_check: found
-    title: 114年度年報
-    url: https://www.a-power.com.tw/assets/upload/files/2026/06/23/1e0b86bdd9cb72fb678b0d45.pdf
+    title: 115年股東常會議事手冊
+    url: https://www.a-power.com.tw/assets/upload/shareholder-meeting/agenda/3f76ba9f6c1dd3ffe5367be0dfe37597.pdf?057fc2d7104b81863cce6d86=
   tw.8261#e9:
-    locator: 印刷頁55，本公司對轉投資事業之持股情形，2025年12月31日
+    locator: 印刷頁11，114年度關係人交易情形報告，二、進貨
     published_date: null
     publisher: 富鼎先進電子股份有限公司
     quote_check: found
-    title: 114年度年報
-    url: https://www.a-power.com.tw/assets/upload/files/2026/06/23/1e0b86bdd9cb72fb678b0d45.pdf
+    title: 115年股東常會議事手冊
+    url: https://www.a-power.com.tw/assets/upload/shareholder-meeting/agenda/3f76ba9f6c1dd3ffe5367be0dfe37597.pdf?057fc2d7104b81863cce6d86=

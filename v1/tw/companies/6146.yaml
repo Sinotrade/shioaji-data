@@ -18,21 +18,27 @@ industry:
   l3_name: 人力、顧問與專業服務
   l3_name_en: Staffing, Consulting & Professional Services
 primary_chain_position: not_applicable
-summary_short: 以電子產品檢測認證服務為主，另銷售防磁零組件。
-summary_long: 耕興以電子產品檢測、認證與驗證服務為主要收入來源，另銷售防磁零組件。2025年合併部門收入中，檢測認證及驗證服務為39.19億元，零件事業為5.75億元。主要服務涵蓋電磁相容、產品安全規範、5G NR FR1及FR2終端法規測試，以及6GHz頻段Wi-Fi 6E、7與8產品測試及報告發行。零件事業提供共模扼流圈、功率扼流圈及鐵氧體磁芯。主要營運子公司包含全球檢測與美國子公司，並透過境外投資架構持有昆山、深圳及東莞營運實體。
+summary_short: 主要靠電子與無線通訊產品檢測認證服務賺取收入，另銷售電子零組件。
+summary_long: 耕興主要提供電子與無線通訊產品的測試、認證及驗證服務，涵蓋電磁相容、產品安全、5G終端與Wi-Fi檢測，另銷售EMC相關電子零組件。依2025年報營業比重表，測試報告、安規及零件收入分別占86.48%、1.38%與12.14%。公司與華碩、博通及Tarana Wireless合作辦理Wi-Fi 7或6GHz產品認證，並與聯發科合作完成Wi-Fi 8平台認證。台灣是德科技及台灣羅德史瓦茲為其機器設備採購對象。
 segments:
 - evidence_ids:
   - e1
   id: testing
-  name: 檢測認證及驗證服務
+  name: 測試報告收入
   period: '2025'
-  revenue_share_pct: null
+  revenue_share_pct: 86.48
+- evidence_ids:
+  - e1
+  id: safety
+  name: 安規收入
+  period: '2025'
+  revenue_share_pct: 1.38
 - evidence_ids:
   - e1
   id: components
-  name: 零件事業部
+  name: 零件收入
   period: '2025'
-  revenue_share_pct: null
+  revenue_share_pct: 12.14
 main_theme: theme.5g
 themes:
 - also: []
@@ -40,69 +46,197 @@ themes:
   theme: theme.5g
   tier: downstream
 relations:
-  subsidiaries:
-  - as_of: '2025-12-31'
+  customers:
+  - as_of: '2022-05-20'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 由深圳耕興持有的間接子公司
+    detail: 檢測認證服務
     details:
-    - 由深圳耕興持有的間接子公司
-    edge: e0a727402a49d
-    evidence_level: primary
-    id: org.dongguan-sporton-electronic-technology
-    name: 東莞耕興電子科技有限公司
+    - 檢測認證服務
+    edge: e171c5bd104e5
+    evidence_level: media
+    id: jp.6758
+    name: Sony
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2025-12-31'
+  - as_of: '2020-08-10'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持有100%股權的子公司
+    detail: 電子產品檢測認證
     details:
-    - 直接持有100%股權的子公司
-    edge: e2e038ee96da2
+    - 電子產品檢測認證
+    edge: e3a84cd81f4e6
+    evidence_level: media
+    id: kr.005930
+    name: Samsung Electronics
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2020-08-10'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 電子產品檢測認證
+    details:
+    - 電子產品檢測認證
+    edge: e8b84d4db56e4
     evidence_level: primary
-    id: org.international-certification-corp
+    id: tw.2357
+    name: 華碩
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2014-10-01'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 產品測試驗證服務
+    details:
+    - 產品測試驗證服務
+    edge: e3fb33cb4bacb
+    evidence_level: other
+    id: tw.2454
+    name: 聯發科
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2020-08-10'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 電子產品檢測認證
+    details:
+    - 電子產品檢測認證
+    edge: e1998eac20d69
+    evidence_level: media
+    id: us.AAPL
+    name: Apple
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2016-09-07'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: Wi-Fi Wave 2認證
+    details:
+    - Wi-Fi Wave 2認證
+    edge: ece9830b171f3
+    evidence_level: media
+    id: us.QCOM
+    name: Qualcomm
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  partners:
+  - as_of: '2025-07-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 衛星網路第三方認證實驗室授權
+    details:
+    - 衛星網路第三方認證實驗室授權
+    edge: ee8981da028c3
+    evidence_level: primary
+    id: org.skylo-technologies
+    name: Skylo Technologies
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-02-16'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: FCC AFC Fixed Client認證合作
+    details:
+    - FCC AFC Fixed Client認證合作
+    edge: e875d938a4caf
+    evidence_level: primary
+    id: org.tarana-wireless
+    name: Tarana Wireless
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-08-02'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: Wi-Fi 7標準功率存取點認證合作
+    details:
+    - Wi-Fi 7標準功率存取點認證合作
+    edge: e3906081a9710
+    evidence_level: primary
+    id: tw.2357
+    name: 華碩
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-01-07'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: Filogic 8000平台Wi-Fi 8認證合作
+    details:
+    - Filogic 8000平台Wi-Fi 8認證合作
+    edge: ef3b429ff77e8
+    evidence_level: primary
+    id: tw.2454
+    name: 聯發科
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-02-15'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: Wi-Fi 7室內標準功率存取點認證合作
+    details:
+    - Wi-Fi 7室內標準功率存取點認證合作
+    edge: e20fba27abfa2
+    evidence_level: primary
+    id: us.AVGO
+    name: Broadcom
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 台灣全資子公司
+    details:
+    - 台灣全資子公司
+    edge: e7f2d70fa9482
+    evidence_level: primary
+    id: org.global-certification-taiwan
     name: 全球檢測股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2025-12-31'
+  - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 透過Sporton Holding (SAMOA) Inc.持有的間接子公司
+    detail: 直接持有的一般投資子公司
     details:
-    - 透過Sporton Holding (SAMOA) Inc.持有的間接子公司
-    edge: e9d6488765a07
+    - 直接持有的一般投資子公司
+    edge: e2fba41a28433
     evidence_level: primary
-    id: org.kunshan-haoxing-electronic-technology
-    name: 昆山浩興電子科技有限公司
+    id: org.sporton-holding-samoa
+    name: Sporton Holding (SAMOA) Inc.
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2025-12-31'
+  - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 透過Sporton Investment (SAMOA) Inc.持有的間接子公司
+    detail: 美國全資子公司
     details:
-    - 透過Sporton Investment (SAMOA) Inc.持有的間接子公司
-    edge: e14ec45272a8b
-    evidence_level: primary
-    id: org.shenzhen-sporton-electronic-technology
-    name: 深圳耕興電子科技有限公司
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
-  - as_of: '2025-12-31'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 直接持有100%股權的美國子公司
-    details:
-    - 直接持有100%股權的美國子公司
+    - 美國全資子公司
     edge: eec089d6268a1
     evidence_level: primary
     id: org.sporton-international-usa
@@ -111,88 +245,246 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有的一般投資子公司
+    details:
+    - 直接持有的一般投資子公司
+    edge: e59bb048ec758
+    evidence_level: primary
+    id: org.sporton-investment-samoa
+    name: Sporton Investment (SAMOA) Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持有的中國孫公司
+    details:
+    - 間接持有的中國孫公司
+    edge: e1afc5444e374
+    evidence_level: primary
+    id: org.sporton-kunshan
+    name: 昆山浩興電子科技有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持有的中國孫公司
+    details:
+    - 間接持有的中國孫公司
+    edge: ed31a40173620
+    evidence_level: primary
+    id: org.sporton-shenzhen
+    name: 深圳耕興電子科技有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 機器設備採購
+    details:
+    - 機器設備採購
+    edge: e736fdef102b1
+    evidence_level: primary
+    id: org.keysight-taiwan
+    name: 台灣是德科技(股)公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 機器設備採購
+    details:
+    - 機器設備採購
+    edge: e147f6b5b53d2
+    evidence_level: primary
+    id: org.rohde-schwarz-taiwan
+    name: 台灣羅德史瓦茲有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 2025年報主要客戶表以A公司代稱的客戶，未推定為任何特定品牌。
+- 未具名的國際品牌、電信營運商及衛星網路營運商，未依產業背景猜測身分。
 website: www.sporton.com.tw
 tax_id: '97491093'
 incorporated: '1997-05-01'
 listed: '2002-01-23'
-as_of: '2026-10-15'
+as_of: '2026-10-26'
 confidence: ai_cross_checked
 has_research: true
 evidence:
   tw.6146#e1:
-    locator: 第48頁，附註二八、部門資訊；114年度部門收入，單位為新台幣仟元
+    locator: 印刷第64頁，營業比重；欄序為114年度金額及百分比、113年度金額及百分比
     published_date: null
     publisher: 耕興股份有限公司
     quote_check: found
-    title: 耕興股份有限公司及子公司民國114年度合併財務報告
-    url: https://www.sporton.com.tw/UserFiles/Fin/114Consolidated%20Financial%20Statement(zh-TW).pdf
+    title: 耕興114年度年報
+    url: https://www.sporton.com.tw/UserFiles/FIN/114financial_statement_Year_cht.pdf
   tw.6146#e10:
-    locator: 第29頁，附註十、子公司；投資公司與子公司對照表
-    published_date: null
-    publisher: 耕興股份有限公司
+    locator: 方韋傑報導，耕興主要客戶段落
+    published_date: '2022-05-20'
+    publisher: 自由時報
     quote_check: found
-    title: 耕興股份有限公司及子公司民國114年度合併財務報告
-    url: https://www.sporton.com.tw/UserFiles/Fin/114Consolidated%20Financial%20Statement(zh-TW).pdf
+    title: 耕興接單暢旺 今、明兩年營運成長動能無虞
+    url: https://ec.ltn.com.tw/article/breakingnews/3933754
   tw.6146#e11:
-    locator: 第29頁，附註十、子公司；投資公司與子公司對照表
-    published_date: null
+    locator: 認證報導第15期，董事長專訪之客戶群段落
+    published_date: '2014-10-01'
+    publisher: 財團法人全國認證基金會
+    quote_check: found
+    title: 耕興公司以專業檢測助攻通訊產業，搶佔市場先機
+    url: https://www.taftw.org.tw/report/2014/15/sporton/
+  tw.6146#e12:
+    locator: 正文，Wi-Fi Wave 2認證段落
+    published_date: '2016-09-07'
+    publisher: MoneyDJ
+    quote_check: found
+    title: 網通Wave功能升級效益，耕興8月營收月增1.1%
+    url: https://m.moneydj.com/f1a.aspx?a=7b39b8b8-28c3-45dd-8d03-3407f0c2b12d
+  tw.6146#e13:
+    locator: 第1頁，最後一段
+    published_date: '2026-01-07'
     publisher: 耕興股份有限公司
     quote_check: found
-    title: 耕興股份有限公司及子公司民國114年度合併財務報告
-    url: https://www.sporton.com.tw/UserFiles/Fin/114Consolidated%20Financial%20Statement(zh-TW).pdf
+    title: 耕興取得全球首張Wi-Fi 8認證
+    url: https://www.sporton.com.tw/News/Sporton%20news%20CN%20version%20_V2.0-Wi-Fi%208%20prototype%20MT7999%20Achieves%20First%20Certification.pdf
+  tw.6146#e14:
+    locator: 最新訊息，2024年2月15日項目
+    published_date: '2024-02-15'
+    publisher: 耕興股份有限公司
+    quote_check: found
+    title: 耕興與博通合作取得FCC Wi-Fi 7證書
+    url: https://www.sporton.com.tw/innerVisitList1.aspx?gid=18&uid=203
+  tw.6146#e15:
+    locator: 最新訊息，2024年2月19日項目
+    published_date: '2024-02-19'
+    publisher: 耕興股份有限公司
+    quote_check: found
+    title: 耕興與Tarana Wireless合作取得FCC AFC Fixed Client證書
+    url: https://www.sporton.com.tw/innerVisitList1.aspx?gid=18&uid=203
+  tw.6146#e16:
+    locator: 最新訊息，2025年7月28日項目
+    published_date: '2025-07-28'
+    publisher: 耕興股份有限公司
+    quote_check: found
+    title: Sporton成為Skylo授權之全球第三方認證實驗室
+    url: https://www.sporton.com.tw/innerVisitList1.aspx?gid=18&uid=203
+  tw.6146#e17:
+    locator: 第43頁，附表五；耕興直接投資之Sporton Holding列，期末持股83.60%
+    published_date: '2026-08-05'
+    publisher: 耕興股份有限公司
+    quote_check: found
+    title: 耕興115及114年第2季合併財務報告
+    url: https://www.sporton.com.tw/UserFiles/Fin/115Consolidated%20Financial%20Report%202025Q2(zh-TW).pdf
+  tw.6146#e18:
+    locator: 第43頁，附表五；耕興直接投資之Sporton Investment列，期末持股93.99%
+    published_date: '2026-08-05'
+    publisher: 耕興股份有限公司
+    quote_check: found
+    title: 耕興115及114年第2季合併財務報告
+    url: https://www.sporton.com.tw/UserFiles/Fin/115Consolidated%20Financial%20Report%202025Q2(zh-TW).pdf
+  tw.6146#e19:
+    locator: 第43頁，附表五；美國子公司列，期末持股100.00%
+    published_date: '2026-08-05'
+    publisher: 耕興股份有限公司
+    quote_check: found
+    title: 耕興115及114年第2季合併財務報告
+    url: https://www.sporton.com.tw/UserFiles/Fin/115Consolidated%20Financial%20Report%202025Q2(zh-TW).pdf
   tw.6146#e2:
-    locator: 主要產品，第1及第2項
+    locator: 印刷第95頁，重要契約，採購合約列
     published_date: null
     publisher: 耕興股份有限公司
     quote_check: found
-    title: 公司現況
-    url: https://www.sporton.com.tw/page.aspx?uid=137
+    title: 耕興114年度年報
+    url: https://www.sporton.com.tw/UserFiles/FIN/114financial_statement_Year_cht.pdf
+  tw.6146#e20:
+    locator: 第43頁，附表五；全球檢測列，期末持股100.00%
+    published_date: '2026-08-05'
+    publisher: 耕興股份有限公司
+    quote_check: found
+    title: 耕興115及114年第2季合併財務報告
+    url: https://www.sporton.com.tw/UserFiles/Fin/115Consolidated%20Financial%20Report%202025Q2(zh-TW).pdf
+  tw.6146#e21:
+    locator: 第39頁附表二明列為孫公司；第44頁附表六列間接持股83.60%
+    published_date: '2026-08-05'
+    publisher: 耕興股份有限公司
+    quote_check: found
+    title: 耕興115及114年第2季合併財務報告
+    url: https://www.sporton.com.tw/UserFiles/Fin/115Consolidated%20Financial%20Report%202025Q2(zh-TW).pdf
+  tw.6146#e22:
+    locator: 第40頁附表三明列為孫公司；第44頁附表六列間接持股93.99%
+    published_date: '2026-08-05'
+    publisher: 耕興股份有限公司
+    quote_check: found
+    title: 耕興115及114年第2季合併財務報告
+    url: https://www.sporton.com.tw/UserFiles/Fin/115Consolidated%20Financial%20Report%202025Q2(zh-TW).pdf
+  tw.6146#e24:
+    locator: 正文，耕興採用5G一致性測試工具段落
+    published_date: '2020-06-04'
+    publisher: Keysight Technologies
+    quote_check: unreachable
+    title: Keysight’s 5G Test Platforms Enable Sporton to Deliver Comprehensive Conformance and Regulatory Test Services to a Global Device Market
+    url: https://www.keysight.com/us/en/about/newsroom/news-releases/2020/keysight-s-5g-test-platforms-enable-sporton-to-deliver-comprehen.html
   tw.6146#e3:
-    locator: 主要產品，第4項
+    locator: 印刷第95頁，重要契約，採購合約列
     published_date: null
     publisher: 耕興股份有限公司
     quote_check: found
-    title: 公司現況
-    url: https://www.sporton.com.tw/page.aspx?uid=137
+    title: 耕興114年度年報
+    url: https://www.sporton.com.tw/UserFiles/FIN/114financial_statement_Year_cht.pdf
   tw.6146#e4:
-    locator: 印刷頁碼第4頁，2026年度營運計畫，已完成項目F
-    published_date: '2026-04-27'
-    publisher: Sporton International Inc.
-    quote_check: found
-    title: 2025 Annual Report
-    url: https://www.sporton.com.tw/UserFiles/FIN/2025financial_statement_Year_en2.pdf
-  tw.6146#e5:
-    locator: 主要產品，第5項
+    locator: 部門簡介
     published_date: null
     publisher: 耕興股份有限公司
     quote_check: found
-    title: 公司現況
-    url: https://www.sporton.com.tw/page.aspx?uid=137
+    title: EMC服務
+    url: https://www.sporton.com.tw/page.aspx?uid=147
+  tw.6146#e5:
+    locator: 部門簡介，中和安規實驗室認可範圍
+    published_date: null
+    publisher: 耕興股份有限公司
+    quote_check: found
+    title: 安規服務
+    url: https://www.sporton.com.tw/page.aspx?uid=148
   tw.6146#e6:
+    locator: 印刷第65頁，公司目前之商品服務項目第30項
+    published_date: null
+    publisher: 耕興股份有限公司
+    quote_check: found
+    title: 耕興114年度年報
+    url: https://www.sporton.com.tw/UserFiles/FIN/114financial_statement_Year_cht.pdf
+  tw.6146#e7:
+    locator: 最新訊息，2024年8月2日項目
+    published_date: '2024-08-02'
+    publisher: 耕興股份有限公司
+    quote_check: found
+    title: 耕興與華碩合作取得全球首個Wi-Fi 7 standard power AP（6SD）消費性產品的認證
+    url: https://www.sporton.com.tw/innerVisitList1.aspx?gid=18&uid=203
+  tw.6146#e8:
     locator: 部門簡介，主要產品
     published_date: null
     publisher: 耕興股份有限公司
     quote_check: found
-    title: 零件事業－部門簡介
+    title: 零件事業
     url: https://www.sporton.com.tw/page.aspx?uid=141
-  tw.6146#e7:
-    locator: 第29頁，附註十、子公司；投資公司為耕興股份有限公司，114年12月31日持股欄
-    published_date: null
-    publisher: 耕興股份有限公司
-    quote_check: found
-    title: 耕興股份有限公司及子公司民國114年度合併財務報告
-    url: https://www.sporton.com.tw/UserFiles/Fin/114Consolidated%20Financial%20Statement(zh-TW).pdf
-  tw.6146#e8:
-    locator: 第29頁，附註十、子公司；投資公司為耕興股份有限公司，114年12月31日持股欄
-    published_date: null
-    publisher: 耕興股份有限公司
-    quote_check: found
-    title: 耕興股份有限公司及子公司民國114年度合併財務報告
-    url: https://www.sporton.com.tw/UserFiles/Fin/114Consolidated%20Financial%20Statement(zh-TW).pdf
   tw.6146#e9:
-    locator: 第29頁，附註十、子公司；投資公司與子公司對照表
-    published_date: null
-    publisher: 耕興股份有限公司
+    locator: 謝君怡實地採訪，正文末段；頁面另載2023年9月12日更新
+    published_date: '2020-08-10'
+    publisher: 鏡週刊
     quote_check: found
-    title: 耕興股份有限公司及子公司民國114年度合併財務報告
-    url: https://www.sporton.com.tw/UserFiles/Fin/114Consolidated%20Financial%20Statement(zh-TW).pdf
+    title: 【神祕實驗室1】全球首支5G手機 在台灣做的認證
+    url: https://www.mirrormedia.mg/story/20200805bus002

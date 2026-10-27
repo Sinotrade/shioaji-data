@@ -181,12 +181,37 @@ relations:
     edge: e4ed3e251de95
     evidence_level: primary
     id: org.dragon-steel
-    name: 中龍鋼鐵(股)公司
+    name: 中龍鋼鐵股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
   transactions:
+  - amount: 新台幣127,500,000元
+    as_of: '2026-09-08'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 合資成立皇昌福榮建設推動公辦都更
+    details:
+    - 合資成立皇昌福榮建設推動公辦都更
+    - 合資成立皇昌福榮建設專案公司
+    edge: e7d4b285517e9
+    event_date: '2026-09-08'
+    events:
+    - amount: null
+      detail: 合資成立皇昌福榮建設推動公辦都更
+      event_date: '2026-09-08'
+    - amount: 新台幣127,500,000元
+      detail: 合資成立皇昌福榮建設專案公司
+      event_date: '2026-09-08'
+    evidence_level: primary
+    id: tw.2543
+    name: 皇昌
+    ranking_basis: unranked
+    role: party
+    share_basis: null
+    share_pct: null
+    weight: 2
   - amount: 新台幣248,908仟元
     as_of: 2024-12
     confidence: ai_cross_checked
@@ -205,27 +230,6 @@ relations:
     name: 欣榮企業股份有限公司
     ranking_basis: unranked
     role: buyer
-    share_basis: null
-    share_pct: null
-    weight: 1
-  - amount: null
-    as_of: '2026-09-08'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 合資成立皇昌福榮建設推動公辦都更
-    details:
-    - 合資成立皇昌福榮建設推動公辦都更
-    edge: e7d4b285517e9
-    event_date: '2026-09-08'
-    events:
-    - amount: null
-      detail: 合資成立皇昌福榮建設推動公辦都更
-      event_date: '2026-09-08'
-    evidence_level: primary
-    id: tw.2543
-    name: 皇昌
-    ranking_basis: unranked
-    role: party
     share_basis: null
     share_pct: null
     weight: 1

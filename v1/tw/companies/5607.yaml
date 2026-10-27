@@ -18,44 +18,106 @@ industry:
   l3_name: 物流與倉儲
   l3_name_en: Logistics & Warehousing
 primary_chain_position: not_applicable
-summary_short: 透過全資子公司經營航空貨物倉儲、物流服務及廠辦租賃。
-summary_long: 遠雄港為投資控股公司，透過全資子公司遠雄航空自由貿易港區及遠雄物流事業經營倉儲與租賃服務。前者提供進出口、轉口、機放及快遞貨物倉儲、航空貨服代理、辦公室與加值廠房出租，以及冷鏈存儲和流通服務。2025年度，遠雄航空自由貿易港區的客戶合約收入占其營收70.10%，租賃收入占29.90%。遠雄物流事業提供廠房及保稅倉庫出租，該公司租賃收入占其營收66.83%，客戶合約收入占33.17%。
+summary_short: 透過子公司經營航空貨物倉儲、自由貿易港區及廠辦租賃。
+summary_long: 遠雄港透過遠雄航空自由貿易港區及遠雄物流事業兩家全資子公司經營航空物流與租賃業務。遠雄自貿港提供進出口、轉口、機放及快遞貨物倉儲，以及倉庫、辦公室和加值廠房租賃；遠雄物流另提供廠房及保稅倉庫出租。已揭露的專倉客戶包括台灣艾司摩爾與星宇航空，年報另列鴻海為加值園區二期承租戶。輝達的承租關係有具名媒體引述董事長說明。近三年事件包括認購遠雄物流現金增資股、快遞二庫追加工程，以及2026年取消原規劃的鴻佰受電站新建案。
 segments:
 - evidence_ids:
-  - e4
-  id: seg_ftz_contract
-  name: 遠雄航空自由貿易港區：客戶合約收入（占該子公司營收）
+  - e1
+  - e3
+  id: cargo
+  name: 航空貨物倉儲與相關服務
   period: '2025'
-  revenue_share_pct: 70.1
+  revenue_share_pct: null
 - evidence_ids:
-  - e4
-  id: seg_ftz_lease
-  name: 遠雄航空自由貿易港區：租賃收入（占該子公司營收）
+  - e2
+  - e3
+  id: rental
+  name: 倉庫、廠房及辦公室租賃
   period: '2025'
-  revenue_share_pct: 29.9
-- evidence_ids:
-  - e5
-  id: seg_logistics_lease
-  name: 遠雄物流事業：租賃收入（占該子公司營收）
-  period: '2025'
-  revenue_share_pct: 66.83
-- evidence_ids:
-  - e5
-  id: seg_logistics_contract
-  name: 遠雄物流事業：客戶合約收入（占該子公司營收）
-  period: '2025'
-  revenue_share_pct: 33.17
+  revenue_share_pct: null
 relations:
+  customers:
+  - as_of: '2026-10-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 遠雄自貿港專倉客戶
+    details:
+    - 遠雄自貿港專倉客戶
+    edge: e65944c8d9483
+    evidence_level: primary
+    id: org.asml-taiwan
+    name: 台灣艾司摩爾科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-25'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 承租加值園區二期
+    details:
+    - 承租加值園區二期
+    edge: e7c8533953eae
+    evidence_level: primary
+    id: tw.2317
+    name: 鴻海
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 運籌中心興建及出租
+    details:
+    - 運籌中心興建及出租
+    edge: e51993f9b2693
+    evidence_level: primary
+    id: tw.2646
+    name: 星宇航空
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-06-25'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 自貿港區廠房承租
+    details:
+    - 自貿港區廠房承租
+    edge: ea62a04fcd52d
+    evidence_level: media
+    id: us.NVDA
+    name: NVIDIA
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  partners:
+  - as_of: '2024-01-12'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 港區單一窗口及進駐諮詢合作
+    details:
+    - 港區單一窗口及進駐諮詢合作
+    edge: eed16ff808971
+    evidence_level: primary
+    id: org.taoyuan-international-airport
+    name: 桃園國際機場股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持有100%股權之營運子公司
+    detail: 全資航空物流營運子公司
     details:
-    - 直接持有100%股權之營運子公司
-    edge: e22bae29abc18
+    - 全資航空物流營運子公司
+    edge: e7c2691098acd
     evidence_level: primary
-    id: org.farglory-free-trade-zone
+    id: org.farglory-air-free-trade-zone
     name: 遠雄航空自由貿易港區股份有限公司
     ranking_basis: unranked
     share_basis: null
@@ -64,9 +126,9 @@ relations:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持有100%股權之物流及租賃子公司
+    detail: 全資倉儲租賃子公司
     details:
-    - 直接持有100%股權之物流及租賃子公司
+    - 全資倉儲租賃子公司
     edge: e136d3a093d6d
     evidence_level: primary
     id: org.farglory-logistics
@@ -75,74 +137,216 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  suppliers:
+  - as_of: '2026-04-25'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 倉儲輸送設備工程
+    details:
+    - 倉儲輸送設備工程
+    edge: e4ba17832da3d
+    evidence_level: primary
+    id: tw.6125
+    name: 廣運
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 新台幣519,000仟元
+    as_of: '2024-05-08'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 認購子公司現金增資普通股
+    details:
+    - 認購子公司現金增資普通股
+    edge: e0cac44eb2dc3
+    event_date: '2024-05-08'
+    events:
+    - amount: 新台幣519,000仟元
+      detail: 認購子公司現金增資普通股
+      event_date: '2024-05-08'
+    evidence_level: primary
+    id: org.farglory-logistics
+    name: 遠雄物流事業股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣77,000仟元（原始投資金額）
+    as_of: '2025-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 物流事業股權投資
+    details:
+    - 物流事業股權投資
+    edge: e7a13c290b941
+    event_date: null
+    events:
+    - amount: 新台幣77,000仟元（原始投資金額）
+      detail: 物流事業股權投資
+      event_date: null
+    evidence_level: primary
+    id: org.sinko-smart-logistics
+    name: 新科智慧物流股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣17,600,000元
+    as_of: '2024-05-08'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 快遞二庫增建追加工程
+    details:
+    - 快遞二庫增建追加工程
+    edge: e1c568d4192a2
+    event_date: '2024-05-08'
+    events:
+    - amount: 新台幣17,600,000元
+      detail: 快遞二庫增建追加工程
+      event_date: '2024-05-08'
+    evidence_level: primary
+    id: org.tong-yuan-construction
+    name: 東源營造工程股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2025-03-10'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 出口倉擴建輸送設備工程
+    details:
+    - 出口倉擴建輸送設備工程
+    - 快遞一庫進口線輸送設備工程
+    edge: e979ada418473
+    event_date: '2024-06-14'
+    events:
+    - amount: null
+      detail: 快遞一庫進口線輸送設備工程
+      event_date: '2025-03-10'
+    - amount: null
+      detail: 出口倉擴建輸送設備工程
+      event_date: '2024-06-14'
+    evidence_level: primary
+    id: tw.6125
+    name: 廣運
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 廣達與緯創：2024年6月具名報導僅確認洽談進駐，未找到足以確認已成交客戶關係…
+- AI 伺服器：屬產品或產業泛稱，候選未提供可識別的交易對象。
 website: http://www.ftz.com.tw
 tax_id: '86121030'
 incorporated: '1991-06-24'
 listed: '2004-12-02'
-as_of: '2026-10-15'
+as_of: '2026-10-26'
 confidence: ai_cross_checked
 has_research: true
 evidence:
   tw.5607#e1:
-    locator: 印刷頁2，研究發展狀況
+    locator: 遠雄航空自由貿易港區股份有限公司／商品服務項目
+    published_date: null
+    publisher: 遠雄自貿港
+    quote_check: found
+    title: 企業介紹－業務介紹
+    url: https://www.ftz.com.tw/about/
+  tw.5607#e10:
+    locator: 一、源起；網頁最後更新2024年1月12日
+    published_date: null
+    publisher: 交通部民用航空局
+    quote_check: found
+    title: 單一窗口服務
+    url: https://www.caa.gov.tw/Article.aspx?a=529&lang=1
+  tw.5607#e11:
+    locator: PDF第90頁，內頁86，子公司設備合約
     published_date: '2026-04-25'
     publisher: 遠雄自貿港投資控股股份有限公司
     quote_check: found
-    title: 遠雄自貿港投資控股股份有限公司114年度年報
+    title: 114年度年報
     url: https://www.ftz.com.tw/investors/messageFile/114/
+  tw.5607#e12:
+    locator: 說明第1至4項
+    published_date: '2024-05-08'
+    publisher: 公開資訊觀測站重大訊息，MoneyDJ刊載
+    quote_check: found
+    title: 遠雄航空自由貿易港區快遞二庫增建工程案補充公告
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=fc709e9b-c431-4036-afda-f3bacc1d5b35
+  tw.5607#e13:
+    locator: 說明第1至3項
+    published_date: '2024-05-08'
+    publisher: 公開資訊觀測站重大訊息，MoneyDJ刊載
+    quote_check: found
+    title: 遠雄港取得遠雄物流事業現增股5190萬股，計5.19億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=348d2cbd-b3a3-4bd4-80b8-04e7ca94042f
+  tw.5607#e15:
+    locator: PDF第50頁，附表三；金額單位為新台幣仟元
+    published_date: '2025-05-13'
+    publisher: 遠雄自貿港投資控股股份有限公司
+    quote_check: found
+    title: 114年第一季合併財務報告
+    url: https://www.ftz.com.tw/investors/financeFile/0/114/
   tw.5607#e2:
-    locator: 印刷頁63，綜合持股比例表，本公司投資欄；基準日2025-12-31
-    published_date: '2026-04-25'
-    publisher: 遠雄自貿港投資控股股份有限公司
+    locator: 遠雄航空自由貿易港區及遠雄物流事業／商品服務項目
+    published_date: null
+    publisher: 遠雄自貿港
     quote_check: found
-    title: 遠雄自貿港投資控股股份有限公司114年度年報
-    url: https://www.ftz.com.tw/investors/messageFile/114/
+    title: 企業介紹－業務介紹
+    url: https://www.ftz.com.tw/about/
   tw.5607#e3:
-    locator: 印刷頁63，綜合持股比例表，本公司投資欄；基準日2025-12-31
+    locator: PDF第71頁，內頁67，遠雄航空自由貿易港區營業比重
     published_date: '2026-04-25'
     publisher: 遠雄自貿港投資控股股份有限公司
     quote_check: found
-    title: 遠雄自貿港投資控股股份有限公司114年度年報
+    title: 114年度年報
     url: https://www.ftz.com.tw/investors/messageFile/114/
   tw.5607#e4:
-    locator: 印刷頁67，遠雄航空自由貿易港區股份有限公司，114年度營業比重
+    locator: PDF第98頁，內頁94，關係企業董事持股表；遠雄航空自由貿易港區欄
     published_date: '2026-04-25'
     publisher: 遠雄自貿港投資控股股份有限公司
     quote_check: found
-    title: 遠雄自貿港投資控股股份有限公司114年度年報
+    title: 114年度年報
     url: https://www.ftz.com.tw/investors/messageFile/114/
   tw.5607#e5:
-    locator: 印刷頁68，遠雄物流事業股份有限公司，114年度營業比重
+    locator: PDF第98頁，內頁94，關係企業董事持股表；遠雄物流事業欄
     published_date: '2026-04-25'
     publisher: 遠雄自貿港投資控股股份有限公司
     quote_check: found
-    title: 遠雄自貿港投資控股股份有限公司114年度年報
+    title: 114年度年報
     url: https://www.ftz.com.tw/investors/messageFile/114/
   tw.5607#e6:
-    locator: 遠雄航空自由貿易港區股份有限公司，公司目前之商品（服務）項目
+    locator: 專倉進駐客戶名單
     published_date: null
-    publisher: 遠雄自貿港投資控股股份有限公司
+    publisher: 遠雄航空自由貿易港區股份有限公司
     quote_check: found
-    title: 企業介紹－業務介紹
-    url: https://www.ftz.com.tw/about/
+    title: 專倉－港區進駐客戶
+    url: https://www.ftz.com.tw/port/3/
   tw.5607#e7:
-    locator: 印刷頁67，遠雄航空自由貿易港區股份有限公司，目前商品（服務）項目
-    published_date: '2026-04-25'
-    publisher: 遠雄自貿港投資控股股份有限公司
-    quote_check: found
-    title: 遠雄自貿港投資控股股份有限公司114年度年報
-    url: https://www.ftz.com.tw/investors/messageFile/114/
-  tw.5607#e8:
-    locator: 印刷頁67，遠雄航空自由貿易港區股份有限公司，目前商品（服務）項目
-    published_date: '2026-04-25'
-    publisher: 遠雄自貿港投資控股股份有限公司
-    quote_check: found
-    title: 遠雄自貿港投資控股股份有限公司114年度年報
-    url: https://www.ftz.com.tw/investors/messageFile/114/
-  tw.5607#e9:
-    locator: 遠雄物流事業股份有限公司，公司目前之商品（服務）項目
+    locator: 2018年9月發展沿革
     published_date: null
+    publisher: 遠雄自貿港
+    quote_check: found
+    title: 企業介紹－發展沿革
+    url: https://www.ftz.com.tw/about/
+  tw.5607#e8:
+    locator: 記者江明晏報導，葉鈞耀受訪段落
+    published_date: '2024-06-25'
+    publisher: 中央社
+    quote_check: found
+    title: 輝達有望擴大投資 遠雄港：AI加持今年營收估增2成
+    url: https://www.cna.com.tw/news/afe/202406250189.aspx
+  tw.5607#e9:
+    locator: PDF第89頁，內頁85，子公司重要契約
+    published_date: '2026-04-25'
     publisher: 遠雄自貿港投資控股股份有限公司
     quote_check: found
-    title: 企業介紹－業務介紹
-    url: https://www.ftz.com.tw/about/
+    title: 114年度年報
+    url: https://www.ftz.com.tw/investors/messageFile/114/

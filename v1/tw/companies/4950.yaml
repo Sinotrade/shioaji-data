@@ -49,7 +49,7 @@ relations:
     detail: 母公司
     details:
     - 母公司
-    - 鋼材通路子公司
+    - 持股53.83%的子公司，原名牧東光電
     edge: e080d460c1b33
     evidence_level: primary
     id: tw.5009
@@ -70,6 +70,57 @@ relations:
     id: org.golden-win-steel
     name: 金耘鋼鐵股份有限公司
     ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 新台幣434,500,000元整
+    as_of: '2024-09-12'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 認購私募普通股
+    details:
+    - 認購私募普通股
+    edge: e53abb4780a18
+    event_date: '2024-09-12'
+    events:
+    - amount: 新台幣434,500,000元整
+      detail: 認購私募普通股
+      event_date: '2024-09-12'
+    evidence_level: primary
+    id: tw.5009
+    name: 榮剛
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣148,877仟元
+    as_of: '2025-07-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團重組出售金耘鋼鐵13%股權
+    details:
+    - 集團重組出售金耘鋼鐵13%股權
+    - 集團重組出售金耘鋼鐵18.99%股權
+    - 出售金耘鋼鐵705仟股
+    edge: e6beca6965a9e
+    event_date: '2024-10-31'
+    events:
+    - amount: 新台幣105,411仟元
+      detail: 出售金耘鋼鐵705仟股
+      event_date: '2025-07-31'
+    - amount: 新台幣147,515仟元
+      detail: 集團重組出售金耘鋼鐵18.99%股權
+      event_date: '2024-12-27'
+    - amount: 新台幣148,877仟元
+      detail: 集團重組出售金耘鋼鐵13%股權
+      event_date: '2024-10-31'
+    evidence_level: primary
+    id: tw.5009
+    name: 榮剛
+    ranking_basis: unranked
+    role: buyer
     share_basis: null
     share_pct: null
     weight: 1

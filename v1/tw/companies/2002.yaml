@@ -142,6 +142,24 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares:
+    - as_of: '2026-06-30'
+      basis: purchases
+      of: tw.1723
+      pct: 67
+    detail: 主要原料供應
+    details:
+    - 主要原料供應
+    edge: e0531189b3b4d
+    evidence_level: primary
+    id: tw.1723
+    name: 中碳
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   - as_of: 2025-12
     confidence: ai_cross_checked
     counterparty_shares:
@@ -244,6 +262,24 @@ relations:
     evidence_level: media
     id: tw.2634
     name: 漢翔
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares:
+    - as_of: '2025-12-31'
+      basis: purchases
+      of: tw.5007
+      pct: 50.27
+    detail: 盤元原料
+    details:
+    - 盤元原料
+    edge: e415ad0868d66
+    evidence_level: primary
+    id: tw.5007
+    name: 三星
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -455,12 +491,12 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-08-26'
+  - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 具實質控制關係的母公司
+    detail: 母公司
     details:
-    - 具實質控制關係的母公司
+    - 母公司
     edge: ee2dd0f148dcf
     evidence_level: primary
     id: tw.1723
@@ -672,6 +708,31 @@ relations:
     name: 中宇
     ranking_basis: unranked
     role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣435,898,361元
+    as_of: '2025-12-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 煤化學廠土地續租及使用權資產取得
+    details:
+    - 煤化學廠土地續租及使用權資產取得
+    - 集團總部辦公樓續租及使用權資產取得
+    edge: e6b2bf3cbfb88
+    event_date: '2025-12-23'
+    events:
+    - amount: 新台幣435,898,361元
+      detail: 煤化學廠土地續租及使用權資產取得
+      event_date: '2025-12-23'
+    - amount: 新台幣18,138,823元
+      detail: 集團總部辦公樓續租及使用權資產取得
+      event_date: '2025-12-23'
+    evidence_level: primary
+    id: tw.1723
+    name: 中碳
+    ranking_basis: unranked
+    role: seller
     share_basis: null
     share_pct: null
     weight: 1

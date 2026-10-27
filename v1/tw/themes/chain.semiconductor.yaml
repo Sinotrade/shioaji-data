@@ -173,10 +173,11 @@ members:
   stage_role: also
 - id: tw.2338
   detail: 半導體用光罩本業約占營收六成，光罩屬晶圓製程使用的材料與耗材。
-  as_of: '2026-10-18'
+  as_of: '2026-10-26'
   evidence:
   - tw.2338#e2
   - tw.2338#e3
+  - tw.2338#e4
   confidence: ai_cross_checked
   source: classification
   stage: wafer_materials
@@ -184,7 +185,7 @@ members:
   stage_role: primary
 - id: tw.2340
   detail: 感測元件占營收58.90%，具設計與晶粒製造能力；子公司另提供設計及封裝服務。
-  as_of: '2026-10-15'
+  as_of: '2026-10-26'
   evidence:
   - tw.2340#e2
   - tw.2340#e3
@@ -195,7 +196,7 @@ members:
   stage_role: primary
 - id: tw.2340
   detail: 感測元件占營收58.90%，具設計與晶粒製造能力；子公司另提供設計及封裝服務。
-  as_of: '2026-10-15'
+  as_of: '2026-10-26'
   evidence:
   - tw.2340#e2
   - tw.2340#e3
@@ -206,7 +207,7 @@ members:
   stage_role: also
 - id: tw.2340
   detail: 感測元件占營收58.90%，具設計與晶粒製造能力；子公司另提供設計及封裝服務。
-  as_of: '2026-10-15'
+  as_of: '2026-10-26'
   evidence:
   - tw.2340#e2
   - tw.2340#e3
@@ -714,11 +715,10 @@ members:
   stage_role: primary
 - id: tw.3033
   detail: 電子零組件及電腦周邊代理經銷與技術服務約占營收100%。
-  as_of: '2026-10-15'
+  as_of: '2026-10-26'
   evidence:
   - tw.3033#e1
   - tw.3033#e2
-  - tw.3033#e3
   confidence: ai_cross_checked
   source: classification
   stage: distribution
@@ -1859,11 +1859,14 @@ members:
   stage_role: primary
 - id: tw.4971
   detail: 提供化合物半導體磊晶片，供後續元件製造使用，磷化銦為最大營收來源。
-  as_of: '2026-10-15'
+  as_of: '2026-10-26'
   evidence:
-  - tw.4971#e2
-  - tw.4971#e3
-  - tw.4971#e4
+  - tw.4971#e01
+  - tw.4971#e02
+  - tw.4971#e04
+  - tw.4971#e05
+  - tw.4971#e06
+  - tw.4971#e10
   confidence: ai_cross_checked
   source: classification
   stage: wafer_materials
@@ -2234,11 +2237,12 @@ members:
   stage_role: primary
 - id: tw.6138
   detail: 電源管理與放大驅動IC合計占55.09%；集團功率元件亦以設計銷售為主。
-  as_of: '2026-10-15'
+  as_of: '2026-10-26'
   evidence:
-  - tw.6138#e1
   - tw.6138#e2
   - tw.6138#e3
+  - tw.6138#e4
+  - tw.6138#e5
   confidence: ai_cross_checked
   source: classification
   stage: ip_design
@@ -2837,8 +2841,9 @@ members:
   stage_role: also
 - id: tw.6613
   detail: 製程供應設備銷售占49.32%最高，另承作化學品與氣體供應系統工程。
-  as_of: '2026-10-15'
+  as_of: '2026-10-26'
   evidence:
+  - tw.6613#e1
   - tw.6613#e2
   - tw.6613#e3
   - tw.6613#e4
@@ -2861,12 +2866,13 @@ members:
   stage_role: primary
 - id: tw.6643
   detail: 主要提供基礎與高速介面矽智財，授權金占營收82.2%。
-  as_of: '2026-10-15'
+  as_of: '2026-10-26'
   evidence:
-  - tw.6643#e1
-  - tw.6643#e2
-  - tw.6643#e3
-  - tw.6643#e6
+  - tw.6643#e01
+  - tw.6643#e02
+  - tw.6643#e03
+  - tw.6643#e04
+  - tw.6643#e05
   confidence: ai_cross_checked
   source: classification
   stage: ip_design
@@ -3033,10 +3039,10 @@ members:
   stage_role: primary
 - id: tw.6719
   detail: 採無晶圓廠IC設計模式，主要設計電源管理晶片與功率MOSFET。
-  as_of: '2026-10-15'
+  as_of: '2026-10-26'
   evidence:
   - tw.6719#e1
-  - tw.6719#e12
+  - tw.6719#e2
   confidence: ai_cross_checked
   source: classification
   stage: ip_design
@@ -3090,11 +3096,13 @@ members:
   stage_role: primary
 - id: tw.6739
   detail: 智能自動操作系統占營收36.46%最高，提供半導體製程設備自動化與監控整合。
-  as_of: '2026-10-15'
+  as_of: '2026-10-26'
   evidence:
+  - tw.6739#e1
   - tw.6739#e2
   - tw.6739#e3
-  - tw.6739#e9
+  - tw.6739#e4
+  - tw.6739#e5
   confidence: ai_cross_checked
   source: classification
   stage: tools
@@ -3301,14 +3309,12 @@ members:
   stage_role: primary
 - id: tw.6937
   detail: 技術服務、主設備及客製化零組件為主要收入，均圍繞半導體製程設備。
-  as_of: '2026-10-15'
+  as_of: '2026-10-26'
   evidence:
+  - tw.6937#e01
   - tw.6937#e02
   - tw.6937#e03
-  - tw.6937#e04
-  - tw.6937#e05
-  - tw.6937#e07
-  - tw.6937#e08
+  - tw.6937#e12
   confidence: ai_cross_checked
   source: classification
   stage: tools
@@ -3500,10 +3506,10 @@ members:
   stage_role: primary
 - id: tw.7768
   detail: 半導體研磨墊與耗材占營收66%，主要供應晶圓CMP製程所需材料及耗材。
-  as_of: '2026-10-15'
+  as_of: '2026-10-26'
   evidence:
   - tw.7768#e01
-  - tw.7768#e02
+  - tw.7768#e04
   confidence: ai_cross_checked
   source: classification
   stage: wafer_materials
@@ -3644,11 +3650,11 @@ members:
   stage_role: primary
 - id: tw.8027
   detail: 雷射與電漿設備合計占59.56%，另有占18.83%的SMD包裝材料業務。
-  as_of: '2026-10-15'
+  as_of: '2026-10-26'
   evidence:
   - tw.8027#e1
   - tw.8027#e2
-  - tw.8027#e5
+  - tw.8027#e3
   confidence: ai_cross_checked
   source: classification
   stage: tools
@@ -3656,11 +3662,11 @@ members:
   stage_role: primary
 - id: tw.8027
   detail: 雷射與電漿設備合計占59.56%，另有占18.83%的SMD包裝材料業務。
-  as_of: '2026-10-15'
+  as_of: '2026-10-26'
   evidence:
   - tw.8027#e1
   - tw.8027#e2
-  - tw.8027#e5
+  - tw.8027#e3
   confidence: ai_cross_checked
   source: classification
   stage: wafer_materials
@@ -3933,7 +3939,7 @@ members:
   stage_role: primary
 - id: tw.8261
   detail: 以功率半導體元件設計與銷售為主，低、中、高壓MOSFET為主要營收來源。
-  as_of: '2026-10-15'
+  as_of: '2026-10-26'
   evidence:
   - tw.8261#e1
   - tw.8261#e2

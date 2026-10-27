@@ -418,6 +418,28 @@ members:
   stage: downstream
   tier: downstream
   stage_role: also
+- id: tw.1723
+  detail: 煤焦油及化學品占58.61%，以加工中間化工原料為主；另有苯等上游基礎原料。
+  as_of: '2026-10-26'
+  evidence:
+  - tw.1723#e1
+  - tw.1723#e22
+  confidence: ai_cross_checked
+  source: classification
+  stage: midstream
+  tier: midstream
+  stage_role: primary
+- id: tw.1723
+  detail: 煤焦油及化學品占58.61%，以加工中間化工原料為主；另有苯等上游基礎原料。
+  as_of: '2026-10-26'
+  evidence:
+  - tw.1723#e1
+  - tw.1723#e22
+  confidence: ai_cross_checked
+  source: classification
+  stage: upstream
+  tier: upstream
+  stage_role: also
 - id: tw.1725
   detail: 化學品與溶劑經銷占營收39%為最大宗，屬中間原料；另經銷PVC、POM塑膠原料。
   as_of: '2026-10-20'
@@ -699,6 +721,30 @@ members:
   source: classification
   stage: null
   tier: null
+- id: tw.4722
+  detail: UV光固化材料占48.2%最大，與機能性樹脂屬下游材料；另製造反應單體等中間原料。
+  as_of: '2026-10-26'
+  evidence:
+  - tw.4722#e1
+  - tw.4722#e2
+  - tw.4722#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: downstream
+  tier: downstream
+  stage_role: primary
+- id: tw.4722
+  detail: UV光固化材料占48.2%最大，與機能性樹脂屬下游材料；另製造反應單體等中間原料。
+  as_of: '2026-10-26'
+  evidence:
+  - tw.4722#e1
+  - tw.4722#e2
+  - tw.4722#e3
+  confidence: ai_cross_checked
+  source: classification
+  stage: midstream
+  tier: midstream
+  stage_role: also
 - id: tw.4764
   detail: 塑膠添加劑占營收46%居首，另供應光固化原料，並製造下游數位印花墨水。
   as_of: '2026-10-18'

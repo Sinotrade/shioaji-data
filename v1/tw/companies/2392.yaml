@@ -17,9 +17,9 @@ industry:
   l3: hw.peripheral
   l3_name: 周邊與輸入裝置
   l3_name_en: Peripherals & Input Devices
-primary_chain_position: midstream
-summary_short: 以系統週邊、連接器線材、電源產品及零售與能源服務取得營收。
-summary_long: 正崴以系統及週邊產品、3C零組件、3C產品零售及能源服務管理取得營收；2025年占比分別為35.32%、23.87%、13.40%及27.41%。電子產品涵蓋遊戲控制器、USB Type-C連接器、主動式銅纜與電源適配器，並發展資料中心及AI伺服器高速傳輸線材。公司自主開發的AI智慧手臂方案已導入PCB及FPC組裝工站並通過試產驗證。子公司方面，永崴投資控股為間接控制子公司，Foxlink Arizona則提供鈑金加工與組裝服務。
+primary_chain_position: not_applicable
+summary_short: 製造系統週邊、連接器、線纜及電源模組，並經營通路與能源服務。
+summary_long: 正崴經營電子零組件與系統週邊產品，涵蓋連接器、線纜、電源管理模組、智慧筆、耳機及遊戲控制器。2025年合併營收中，系統及週邊產品占35.32%，能源服務管理占27.41%，3C零組件占23.87%，3C產品零售占13.40%。公司另發展AI伺服器高速線材，並透過集團星科國際開發安防與製造用機器人系統。近年投資包括與優必達合資經營超級運算中心、取得拓創科技及擴充德州製造據點；2026年另公告處分森崴持股並喪失控制力。
 segments:
 - evidence_ids:
   - e1
@@ -27,6 +27,12 @@ segments:
   name: 系統及週邊產品
   period: '2025'
   revenue_share_pct: 35.32
+- evidence_ids:
+  - e1
+  id: seg_energy
+  name: 能源服務管理
+  period: '2025'
+  revenue_share_pct: 27.41
 - evidence_ids:
   - e1
   id: seg_components
@@ -39,12 +45,6 @@ segments:
   name: 3C產品零售
   period: '2025'
   revenue_share_pct: 13.4
-- evidence_ids:
-  - e1
-  id: seg_energy
-  name: 能源服務管理
-  period: '2025'
-  revenue_share_pct: 27.41
 main_theme: theme.ai_server
 themes:
 - also: []
@@ -56,40 +56,122 @@ themes:
   theme: theme.robotics
   tier: downstream
 - also: []
-  stage: it
+  stage: operation
   theme: theme.data_center
-  tier: midstream
-- also: []
-  stage: module
-  theme: theme.vcsel
   tier: downstream
 relations:
+  competitors:
+  - as_of: '2010-08-05'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 電子零組件業務競爭，歷史資料
+    details:
+    - 電子零組件業務競爭，歷史資料
+    edge: e2323074b1723
+    evidence_level: media
+    id: tw.2317
+    name: 鴻海
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 連接器及連接線組
+    details:
+    - 連接器及連接線組
+    edge: e2ed0df93514c
+    evidence_level: primary
+    id: tw.3023
+    name: 信邦
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  customers:
+  - as_of: 2023-09
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: FY2023官方供應商名單
+    details:
+    - FY2023官方供應商名單
+    edge: e63138b5c0077
+    evidence_level: primary
+    id: us.AAPL
+    name: Apple
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  partners:
+  - as_of: '2025-05-29'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 遊戲機及控制器相關合作
+    details:
+    - 遊戲機及控制器相關合作
+    edge: ea69722702fad
+    evidence_level: media
+    id: jp.7974
+    name: 任天堂
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-05-29'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: AI巡檢機器人與智慧工廠
+    details:
+    - AI巡檢機器人與智慧工廠
+    edge: e4043577e0ff2
+    evidence_level: primary
+    id: tw.2357
+    name: 華碩
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
+  - as_of: '2026-07-16'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 德州製造子公司
+    details:
+    - 德州製造子公司
+    edge: e0a758dccadc2
+    evidence_level: primary
+    id: org.foxlink-texas
+    name: FOXLINK TEXAS INC.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-03-07'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司
+    details:
+    - 全資子公司
+    edge: e1ddf74c1a36d
+    evidence_level: primary
+    id: org.microlink
+    name: 拓創科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   - as_of: '2026-03-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 間接控制子公司
+    detail: 最終母公司
     details:
-    - 間接控制子公司
     - 最終母公司
     edge: ea7a0e631a701
     evidence_level: primary
     id: tw.3712
     name: 永崴投控
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 2
-  - as_of: '2026-10-15'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 美國鈑金加工與組裝子公司
-    details:
-    - 美國鈑金加工與組裝子公司
-    edge: e546117730485
-    evidence_level: primary
-    id: org.foxlink-arizona
-    name: Foxlink Arizona Inc.
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -108,88 +190,409 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  transactions:
+  - amount: 美金19,000仟元
+    as_of: '2025-11-10'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 德州子公司購入Fort Worth土地及廠房
+    details:
+    - 德州子公司購入Fort Worth土地及廠房
+    edge: e78f1655509bf
+    event_date: '2025-11-10'
+    events:
+    - amount: 美金19,000仟元
+      detail: 德州子公司購入Fort Worth土地及廠房
+      event_date: '2025-11-10'
+    evidence_level: primary
+    id: org.at-industrial-owner-7-holdco
+    name: AT Industrial Owner 7 Holdco LP
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 1,000萬美元
+    as_of: '2025-10-27'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司富港電子東莞增資峴港公司
+    details:
+    - 子公司富港電子東莞增資峴港公司
+    edge: e4532f6bf5748
+    event_date: '2025-10-27'
+    events:
+    - amount: 1,000萬美元
+      detail: 子公司富港電子東莞增資峴港公司
+      event_date: '2025-10-27'
+    evidence_level: media
+    id: org.foxlink-da-nang
+    name: FOXLINK DA NANG ELECTRONICS CO., LTD.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: USD 20,000仟元
+    as_of: '2025-03-07'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司富崴國際投資辦理印度增資
+    details:
+    - 子公司富崴國際投資辦理印度增資
+    edge: eec4f54b24c7c
+    event_date: '2025-03-07'
+    events:
+    - amount: USD 20,000仟元
+      detail: 子公司富崴國際投資辦理印度增資
+      event_date: '2025-03-07'
+    evidence_level: primary
+    id: org.foxlink-india
+    name: FOXLINK INDIA ELECTRONIC PRIVATE LIMITED
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 美金20,000仟元
+    as_of: '2025-11-03'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 現金增資德州子公司
+    details:
+    - 現金增資德州子公司
+    edge: ea3f26dbfa549
+    event_date: '2025-11-03'
+    events:
+    - amount: 美金20,000仟元
+      detail: 現金增資德州子公司
+      event_date: '2025-11-03'
+    evidence_level: primary
+    id: org.foxlink-texas
+    name: FOXLINK TEXAS INC.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣300,000仟元
+    as_of: '2025-03-07'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 取得全部股權並增資
+    details:
+    - 取得全部股權並增資
+    edge: ef2f85edaf5f3
+    event_date: '2025-03-07'
+    events:
+    - amount: 新台幣300,000仟元
+      detail: 取得全部股權並增資
+      event_date: '2025-03-07'
+    evidence_level: primary
+    id: org.microlink
+    name: 拓創科技股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2024-05-27'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 合資成立超級運算營運公司
+    details:
+    - 合資成立超級運算營運公司
+    edge: edb101ece7468
+    event_date: '2024-05-27'
+    events:
+    - amount: null
+      detail: 合資成立超級運算營運公司
+      event_date: '2024-05-27'
+    evidence_level: media
+    id: org.ubitus
+    name: 優必達（Ubitus）
+    ranking_basis: unranked
+    role: party
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 原交易金額新台幣984,750仟元，已取消
+    as_of: '2026-08-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 取消土城土地及廠房取得案
+    details:
+    - 取消土城土地及廠房取得案
+    edge: e3f72453b3bb7
+    event_date: '2026-08-13'
+    events:
+    - amount: 原交易金額新台幣984,750仟元，已取消
+      detail: 取消土城土地及廠房取得案
+      event_date: '2026-08-13'
+    evidence_level: primary
+    id: org.xinhong-international-investment
+    name: 鑫鴻國際投資股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2026-04-20'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 孫公司Power Channel擬處分持股
+    details:
+    - 孫公司Power Channel擬處分持股
+    edge: e37880e3a9377
+    event_date: '2026-04-17'
+    events:
+    - amount: null
+      detail: 孫公司Power Channel擬處分持股
+      event_date: '2026-04-17'
+    evidence_level: media
+    id: org.協創數據技術公司
+    name: 協創數據技術公司
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣6,997仟元
+    as_of: '2026-09-10'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子孫公司應賣森崴股權及喪失控制力
+    details:
+    - 子孫公司應賣森崴股權及喪失控制力
+    edge: e0af24de051a4
+    event_date: '2026-08-31'
+    events:
+    - amount: 新台幣6,997仟元
+      detail: 子孫公司應賣森崴股權及喪失控制力
+      event_date: '2026-08-31'
+    evidence_level: primary
+    id: org.胡正杰先生
+    name: 胡正杰先生
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣14.15億元
+    as_of: '2024-05-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 採購AI運算中心營業用設備
+    details:
+    - 採購AI運算中心營業用設備
+    edge: e4325712dacc0
+    event_date: '2024-05-28'
+    events:
+    - amount: 新台幣14.15億元
+      detail: 採購AI運算中心營業用設備
+      event_date: '2024-05-28'
+    evidence_level: media
+    id: tw.2357
+    name: 華碩
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 2025年年報以A公司、F公司代稱的主要供應商，未揭露真名。
+- 2025年年報以戊公司、丁客戶代稱的主要銷貨客戶，未揭露真名。
+- 超級運算中心測試客戶中的半導體廠商及生醫業者，未具名。
+- 德州在地製造需求所涉北美客戶，未具名。
 website: www.foxlink.com
 tax_id: '22223510'
 incorporated: '1986-07-14'
 listed: '1999-09-20'
-as_of: '2026-10-15'
+as_of: '2026-10-26'
 confidence: ai_cross_checked
 has_research: true
 evidence:
   tw.2392#e1:
-    locator: 第86頁，1.1.2營業比重
+    locator: 封面；印刷頁85，1.1.2營業比重
     published_date: '2026-05-15'
     publisher: 正崴精密工業股份有限公司
-    quote_check: found
-    title: 正崴精密工業股份有限公司114年度年報
-    url: https://www.foxlink.com/web/wp-content/uploads/2026/07/%E9%99%84%E6%AA%942_%E5%B9%B4%E5%A0%B1_%E6%AD%A3%E5%B4%B4114%E5%B9%B4%E5%B9%B4%E5%A0%B1_V1.pdf
+    quote_check: unreachable
+    title: 正崴精密工業股份有限公司2025年年報
+    url: https://www.foxlink.com/web/wp-content/uploads/2026/07/附件2_年報_正崴114年年報_V1.pdf
   tw.2392#e10:
-    locator: 財報附註一，公司沿革，PDF第12頁
+    locator: 印刷頁74，主要產品之主要競爭情形
     published_date: null
-    publisher: 永崴投資控股股份有限公司
+    publisher: 信邦電子股份有限公司
     quote_check: found
-    title: 永崴投資控股股份有限公司及子公司115年第一季合併財務報告
-    url: https://www.fit-holding.com/storage/2026/05/%E6%B0%B8%E5%B4%B4%E6%8A%95%E6%8E%A7.2026%E5%90%88%E4%BD%B5%E7%AC%AC%E4%B8%80%E5%AD%A3.20260331.FS_.AllReport.CHT-%E9%9B%BB%E5%AD%90%E6%9B%B8.pdf
+    title: 信邦2024年度年報
+    url: https://www.sinbon.com/tw/files/3023_20240527_114股東會年報.pdf
   tw.2392#e11:
-    locator: Foxlink Arizona Inc.介紹
-    published_date: null
-    publisher: 正崴精密工業股份有限公司
+    locator: 合作不再、領域重疊章節，作者林宏文
+    published_date: '2010-08-05'
+    publisher: 今周刊
     quote_check: found
-    title: 正崴集團
-    url: https://www.foxlink.com/web/%E6%AD%A3%E5%B4%B4%E9%9B%86%E5%9C%98/
+    title: 郭台強 不必鐵血也能成就霸業
+    url: https://www.businesstoday.com.tw/article/category/154769/post/201008050029/
+  tw.2392#e12:
+    locator: 第3項交易金額
+    published_date: '2025-03-07'
+    publisher: 公開資訊觀測站，鉅亨網轉載
+    quote_check: found
+    title: 正崴：公告本公司計劃取得子公司拓創科技股份有限公司股權事宜
+    url: https://news.cnyes.com/news/id/5889596
+  tw.2392#e13:
+    locator: 第2、7及14項
+    published_date: '2025-11-04'
+    publisher: 公開資訊觀測站，MoneyDJ轉載
+    quote_check: found
+    title: 正崴計劃取得子公司FOXLINK TEXAS股權，計2千萬美元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=501640be-19bb-42f3-8f1d-12acb4ca98a1
+  tw.2392#e15:
+    locator: 合資公司段落，記者曾仁凱
+    published_date: '2024-05-27'
+    publisher: 中央社
+    quote_check: found
+    title: 正崴攜手華碩等合作夥伴 打造全台最大AI運算中心
+    url: https://www.cna.com.tw/news/afe/202405270143.aspx
+  tw.2392#e16:
+    locator: 採購金額段落，記者曾仁凱
+    published_date: '2024-05-28'
+    publisher: 中央社
+    quote_check: found
+    title: 華碩AI伺服器業務捷報 獲正崴14.15億獨家大單
+    url: https://www.cna.com.tw/news/afe/202405280189.aspx
+  tw.2392#e17:
+    locator: 公告標題及第1至5項
+    published_date: '2025-03-07'
+    publisher: 公開資訊觀測站，MoneyDJ轉載
+    quote_check: found
+    title: 正崴：富崴國際投資增資FOXLINK INDIA ELECTRONIC，計2000萬美元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=cf24eed9-c7e5-4702-ad01-318a9288fb02
+  tw.2392#e18:
+    locator: 正文首段
+    published_date: '2025-10-27'
+    publisher: 中央社
+    quote_check: found
+    title: 東協財經／正崴子公司增資1000萬美元取得FOXLINK峴港新增股權
+    url: https://www.cna.com.tw/news/afe/202510273003.aspx
+  tw.2392#e19:
+    locator: 代FOXLINK TEXAS公告，第5、6項
+    published_date: '2025-11-11'
+    publisher: 公開資訊觀測站，富邦證券轉載
+    quote_check: found
+    title: 正崴子公司取得Texas土地及廠房，計1900萬美元
+    url: https://fubon-ebrokerdj.fbs.com.tw/z/zh/zhf/zhfz/zhfz_263AC9A6-4AE4-4893-928C-B71096A5F09F.djhtm
   tw.2392#e2:
-    locator: 第86頁，1.1.3公司目前之商品項目，線纜連接線
+    locator: 印刷頁103，2.2.1
     published_date: '2026-05-15'
     publisher: 正崴精密工業股份有限公司
+    quote_check: unreachable
+    title: 正崴2025年年報：主要產品用途
+    url: https://www.foxlink.com/web/wp-content/uploads/2026/07/附件2_年報_正崴114年年報_V1.pdf
+  tw.2392#e20:
+    locator: 第2、3項
+    published_date: '2026-08-13'
+    publisher: 公開資訊觀測站，富邦證券轉載
     quote_check: found
-    title: 正崴精密工業股份有限公司114年度年報
-    url: https://www.foxlink.com/web/wp-content/uploads/2026/07/%E9%99%84%E6%AA%942_%E5%B9%B4%E5%A0%B1_%E6%AD%A3%E5%B4%B4114%E5%B9%B4%E5%B9%B4%E5%A0%B1_V1.pdf
+    title: 正崴：公告取消本公司向關係人取得土地及廠房
+    url: https://fubon-ebrokerdj.fbs.com.tw/z/zc/zcv/zcvz/zcvz_B1C745BE-FC23-41B6-B87C-E63A0FDBB2BE.djhtm
+  tw.2392#e21:
+    locator: 第1、3、4項；原案後於2026年取消
+    published_date: '2024-08-09'
+    publisher: 公開資訊觀測站，鉅亨網轉載
+    quote_check: found
+    title: 正崴：公告本公司向關係人取得土地及廠房
+    url: https://news.cnyes.com/news/id/5677714
+  tw.2392#e22:
+    locator: 第3項第1款第3點；第4及9項
+    published_date: '2026-09-10'
+    publisher: 公開資訊觀測站，鉅亨網轉載
+    quote_check: found
+    title: 正崴：處分重要子公司達喪失控制力之相關事宜，補充公告
+    url: https://news.cnyes.com/news/id/6604049
+  tw.2392#e23:
+    locator: 第5項第1款第3點；第3項第2款
+    published_date: '2026-09-10'
+    publisher: 公開資訊觀測站，鉅亨網轉載
+    quote_check: found
+    title: 正崴：森崴股權受讓對象及喪失控制力說明
+    url: https://news.cnyes.com/news/id/6604049
+  tw.2392#e24:
+    locator: 正文首段
+    published_date: '2026-07-16'
+    publisher: 正崴精密工業股份有限公司
+    quote_check: found
+    title: 正崴在美首座AI工廠正式啟用
+    url: https://www.foxlink.com/web/正崴在美首座ai工廠正式啟用%E3%80%80加速從ems走向ai製造轉/
+  tw.2392#e25:
+    locator: 正文首段，記者曾仁凱
+    published_date: '2024-11-14'
+    publisher: 中央社
+    quote_check: found
+    title: 正崴砸20億蓋AI超級運算中心 14日啟用全台算力第一
+    url: https://www.cna.com.tw/news/afe/202411140153.aspx
+  tw.2392#e26:
+    locator: AI工廠技術基礎段落
+    published_date: '2026-07-16'
+    publisher: 正崴精密工業股份有限公司
+    quote_check: found
+    title: 正崴德州AI工廠：集團算力平台
+    url: https://www.foxlink.com/web/正崴在美首座ai工廠正式啟用%E3%80%80加速從ems走向ai製造轉/
+  tw.2392#e27:
+    locator: 整頓轉投資段落，記者曾仁凱
+    published_date: '2026-04-20'
+    publisher: 中央社
+    quote_check: found
+    title: 台電支付子公司追加款55億 正崴可獲約14億損失回沖
+    url: https://www.cna.com.tw/news/afe/202604200151.aspx
   tw.2392#e3:
-    locator: Product Application
+    locator: 公司簡介首段
     published_date: null
     publisher: 正崴精密工業股份有限公司
     quote_check: found
-    title: Gaming Controller
-    url: https://www.foxlink.com/web/portfolio-item/gaming-controller/
+    title: 公司簡介
+    url: https://www.foxlink.com/web/公司簡介/
   tw.2392#e4:
-    locator: 產品標題及Product Description
-    published_date: null
-    publisher: 正崴精密工業股份有限公司
-    quote_check: found
-    title: Type C Receptacle
-    url: https://www.foxlink.com/web/portfolio-item/type-c-receptacle/
-  tw.2392#e5:
-    locator: Features型號表
+    locator: Features，AEC 800G產品列
     published_date: null
     publisher: 正崴精密工業股份有限公司
     quote_check: found
     title: Active Electrical Cable(AECs)
     url: https://www.foxlink.com/web/portfolio-item/active-electrical-cableaecs/
+  tw.2392#e5:
+    locator: 印刷頁85，1.1.3 A
+    published_date: '2026-05-15'
+    publisher: 正崴精密工業股份有限公司
+    quote_check: unreachable
+    title: 正崴2025年年報：線纜連接線
+    url: https://www.foxlink.com/web/wp-content/uploads/2026/07/附件2_年報_正崴114年年報_V1.pdf
   tw.2392#e6:
-    locator: Product Description
-    published_date: null
+    locator: 機器人整合平台段落
+    published_date: '2025-05-23'
     publisher: 正崴精密工業股份有限公司
     quote_check: found
-    title: Power Adapter
-    url: https://www.foxlink.com/web/portfolio-item/power-adapter/
+    title: 輝達助攻正崴機器人打造智慧安防系統與先進製造的數位轉型
+    url: https://www.foxlink.com/web/輝達助攻正崴機器人打造智慧安防系統與先進製造/
   tw.2392#e7:
-    locator: 內文第一段；日期見官網最新消息列表
-    published_date: '2026-06-25'
-    publisher: 正崴精密工業股份有限公司
+    locator: 第1頁年度範圍；第5頁供應商名單
+    published_date: null
+    publisher: Apple Inc.
     quote_check: found
-    title: 正崴精密導入AI智慧手臂，PCB / FPC 柔性製造全面升級
-    url: https://www.foxlink.com/web/%E6%AD%A3%E5%B4%B4%E7%B2%BE%E5%AF%86%E5%B0%8E%E5%85%A5ai%E6%99%BA%E6%85%A7%E6%89%8B%E8%87%82%EF%BC%8Cpcb-fpc-%E6%9F%94%E6%80%A7%E8%A3%BD%E9%80%A0%E5%85%A8%E9%9D%A2%E5%8D%87%E7%B4%9A/
+    title: Apple Supplier List：FY2023
+    url: https://s203.q4cdn.com/367071867/files/doc_downloads/2024/04/Apple-Supplier-List.pdf
   tw.2392#e8:
-    locator: Transceiver_100G，APPLICATION
-    published_date: null
-    publisher: 正崴精密工業股份有限公司
+    locator: 產品結構段落，記者方韋傑
+    published_date: '2025-05-29'
+    publisher: 自由時報
     quote_check: found
-    title: Transceiver
-    url: https://www.foxlink.com/web/portfolio-item/9622/
+    title: 正崴下半年優於上半年 機器狗進入概念驗證
+    url: https://ec.ltn.com.tw/article/breakingnews/5058061
   tw.2392#e9:
-    locator: Transceiver_100G，FEATURES
-    published_date: null
+    locator: Foxlink打造AI巡檢段落
+    published_date: '2025-05-29'
     publisher: 正崴精密工業股份有限公司
     quote_check: found
-    title: Transceiver
-    url: https://www.foxlink.com/web/portfolio-item/9622/
+    title: 正崴與華碩攜手新世代AI工廠基礎建設大躍進
+    url: https://www.foxlink.com/web/正崴與華碩攜手新世代-ai工廠基礎建設大躍進-驅動/

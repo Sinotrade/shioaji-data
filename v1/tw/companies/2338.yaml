@@ -26,23 +26,174 @@ chain_stage:
   stage_name: 矽晶圓與材料
   tier: upstream
 primary_chain_position: upstream
-summary_short: 以半導體用光罩研發、製造與銷售為本業，另透過子公司經營電子零組件及醫療器材。
-summary_long: 台灣光罩主要從事半導體用光罩的研發、製造與銷售，2026年2月公司說明光罩本業約占總營收六成。中階光罩產品已完成客戶驗證，先進封裝領域則已導入核心生產設備，擴充大尺寸光罩產能。依2025年度財報，光聚晶電聯合股份有限公司為最終母公司；子公司包括美祿科技、光鉅控股及昱嘉科技。美祿經營電子零組件與功率元件相關業務，昱嘉從事醫療器材設備製造與銷售。
+summary_short: 以半導體光罩製造銷售為核心，另有晶圓代工服務及其他轉投資事業。
+summary_long: 台灣光罩以半導體光罩研發、製造與銷售為核心，2026年2月公司說明光罩本業約占集團營收六成。產品涵蓋55／65奈米製程光罩，並擴充用於2.5D與3D封裝矽中介層的14吋光罩產線。公開具名客戶包括台積電、聯電、世界先進及穩懋；集團另透過美祿提供晶圓代工服務。近三年交易包括認購光環私募股、引進光揚曜投資、以設備投資台灣雷銲，以及出售竹南廠予矽品精密。2026年10月董事會另決議以7.5億日圓內取得TCK全部股權，公告階段為擬收購。
 segments:
 - evidence_ids:
+  - e2
   - e3
   id: seg_photomask
-  name: 光罩本業
-  period: 2026-02公司說明；報導未載明統計期間，約數
+  name: 光罩製造與銷售
+  period: 2026-02公司說明時點，約數
   revenue_share_pct: 60
+- evidence_ids:
+  - e20
+  - e21
+  - e22
+  id: seg_investments
+  name: 子公司營運與轉投資事業
+  period: null
+  revenue_share_pct: null
 relations:
-  parents:
-  - as_of: '2025-12-31'
+  competitors:
+  - as_of: '2026-03-13'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 最終母公司
+    detail: 原Toppan體系光罩事業
     details:
-    - 最終母公司
+    - 原Toppan體系光罩事業
+    edge: effcfa0a3dbbb
+    evidence_level: primary
+    id: jp.429A
+    name: Tekscend Photomask Corp.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 光罩製造
+    details:
+    - 光罩製造
+    edge: e24baf9f6d766
+    evidence_level: media
+    id: jp.7912
+    name: DNP
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 半導體光罩製造
+    details:
+    - 半導體光罩製造
+    edge: e6d8dd2f24581
+    evidence_level: primary
+    id: org.photronics-dnp-mask
+    name: 台灣美日先進光罩股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 光罩製造
+    details:
+    - 光罩製造
+    edge: e5031710c8503
+    evidence_level: media
+    id: tw.2736
+    name: 富野
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 光罩製造
+    details:
+    - 光罩製造
+    edge: ef381ddeab64f
+    evidence_level: primary
+    id: us.PLAB
+    name: Photronics
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  customers:
+  - as_of: '2026-03-18'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 半導體光罩
+    details:
+    - 半導體光罩
+    edge: ecc10df2eed0c
+    evidence_level: primary
+    id: kr.000990
+    name: 韓國東部高科
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-18'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 半導體光罩
+    details:
+    - 半導體光罩
+    edge: e2642db83ace1
+    evidence_level: primary
+    id: tw.2303
+    name: 聯電
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-18'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 半導體光罩
+    details:
+    - 半導體光罩
+    edge: e494c404ce1e0
+    evidence_level: primary
+    id: tw.2330
+    name: 台積電
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-18'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 半導體光罩
+    details:
+    - 半導體光罩
+    edge: efa3b0e078f0a
+    evidence_level: primary
+    id: tw.3105
+    name: 穩懋
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-18'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 半導體光罩
+    details:
+    - 半導體光罩
+    edge: efb06a8fd793f
+    evidence_level: primary
+    id: tw.5347
+    name: 世界
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  parents:
+  - as_of: '2026-05-06'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 母公司
+    details:
+    - 母公司
     - 透過光揚曜投資納入合併的間接子公司
     edge: e95b079cd85cd
     evidence_level: primary
@@ -53,44 +204,72 @@ relations:
     share_pct: null
     weight: 2
   subsidiaries:
+  - as_of: '2025-06-24'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接子公司解散及聲請宣告破產
+    details:
+    - 間接子公司解散及聲請宣告破產
+    edge: e014dc88a37d1
+    evidence_level: media
+    id: org.aptos-technology
+    name: 群豐科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 控股子公司
+    detail: 投資控股子公司
     details:
-    - 控股子公司
-    edge: e65a57707f3c1
+    - 投資控股子公司
+    edge: ee4f539958dbd
     evidence_level: primary
-    id: org.光鉅控股-股-公司
+    id: org.guang-ju-holdings
     name: 光鉅控股(股)公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2025-12-31'
+  - as_of: '2024-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 醫療器材子公司
+    detail: 隱形眼鏡製造
     details:
-    - 醫療器材子公司
-    edge: ec4375094f6d7
+    - 隱形眼鏡製造
+    edge: e3ac118358cd9
     evidence_level: primary
-    id: org.昱嘉科技-股-公司
-    name: 昱嘉科技(股)公司
+    id: org.innova-vision
+    name: 昱嘉科技
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2025-12-31'
+  - as_of: '2024-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 電子零組件、電子材料及功率元件相關子公司
+    detail: 晶圓代工服務
     details:
-    - 電子零組件、電子材料及功率元件相關子公司
-    edge: e69376df018b0
+    - 晶圓代工服務
+    edge: e79c24fcd7c26
     evidence_level: primary
-    id: org.美祿科技-股-公司
-    name: 美祿科技(股)公司
+    id: org.mtc-merlot-technology
+    name: 美祿科技
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 高功率雷射散熱基板製造服務
+    details:
+    - 高功率雷射散熱基板製造服務
+    edge: eedd4a9b08667
+    evidence_level: primary
+    id: org.xsense-technology
+    name: 艾格生科技
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -100,14 +279,15 @@ relations:
     as_of: '2024-03-06'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 台灣光罩認購光環私募普通股
+    detail: 認購私募普通股
     details:
+    - 認購私募普通股
     - 台灣光罩認購光環私募普通股
     edge: e6b0dfc0e6dd8
     event_date: '2024-03-06'
     events:
     - amount: 新台幣410,400仟元
-      detail: 台灣光罩認購光環私募普通股
+      detail: 認購私募普通股
       event_date: '2024-03-06'
     evidence_level: primary
     id: tw.3234
@@ -116,75 +296,296 @@ relations:
     role: buyer
     share_basis: null
     share_pct: null
+    weight: 2
+  - amount: 新台幣700,000仟元
+    as_of: 2025-05
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 貨幣債權抵繳子公司增資股款
+    details:
+    - 貨幣債權抵繳子公司增資股款
+    edge: e19011e822a8f
+    event_date: null
+    events:
+    - amount: 新台幣700,000仟元
+      detail: 貨幣債權抵繳子公司增資股款
+      event_date: null
+    evidence_level: primary
+    id: org.guang-ju-holdings
+    name: 光鉅控股(股)公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
     weight: 1
+  - amount: 新台幣1,546,228,000元
+    as_of: '2025-07-18'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 私募現金增資引進策略投資人
+    details:
+    - 私募現金增資引進策略投資人
+    edge: ea57d049374dd
+    event_date: '2025-07-18'
+    events:
+    - amount: 新台幣1,546,228,000元
+      detail: 私募現金增資引進策略投資人
+      event_date: '2025-07-18'
+    evidence_level: primary
+    id: org.guang-yang-yao-investment
+    name: 光揚曜投資股份有限公司
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣約626,285,000元(未稅)
+    as_of: '2024-03-19'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 取得一套機器設備
+    details:
+    - 取得一套機器設備
+    edge: e8c8d20b27412
+    event_date: '2024-03-19'
+    events:
+    - amount: 新台幣約626,285,000元(未稅)
+      detail: 取得一套機器設備
+      event_date: '2024-03-19'
+    evidence_level: primary
+    id: org.nuflare-technology
+    name: NuFlare Technology,Inc.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣28億(未稅)(含稅金額新台幣29.4億元)
+    as_of: '2026-09-09'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 出售竹南六廠廠房及附屬設備
+    details:
+    - 出售竹南六廠廠房及附屬設備
+    edge: ec2560e0d85ab
+    event_date: '2026-06-10'
+    events:
+    - amount: 新台幣28億(未稅)(含稅金額新台幣29.4億元)
+      detail: 出售竹南六廠廠房及附屬設備
+      event_date: '2026-06-10'
+    evidence_level: primary
+    id: org.siliconware-precision-industries
+    name: 矽品精密
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣270,000仟元
+    as_of: '2025-10-01'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 鋼構設備作價投資成立合資子公司
+    details:
+    - 鋼構設備作價投資成立合資子公司
+    edge: e65cc233c897a
+    event_date: '2025-10-01'
+    events:
+    - amount: 新台幣270,000仟元
+      detail: 鋼構設備作價投資成立合資子公司
+      event_date: '2025-10-01'
+    evidence_level: primary
+    id: org.taiwan-laser-welding-technology
+    name: 台灣雷銲科技股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 7.5億日圓內
+    as_of: '2026-10-16'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 擬收購日本熊本半導體設備服務商全部股權
+    details:
+    - 擬收購日本熊本半導體設備服務商全部股權
+    edge: e9b182d5311a9
+    event_date: '2026-10-16'
+    events:
+    - amount: 7.5億日圓內
+      detail: 擬收購日本熊本半導體設備服務商全部股權
+      event_date: '2026-10-16'
+    evidence_level: primary
+    id: org.tck-corporation-kumamoto
+    name: T.C.K Corporation
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 台灣雷銲合資案的策略性投資人：所查公告未揭露名稱。
+- 公司永續報告所稱數家世界級晶圓廠：相關段落未逐一具名。
+- 14吋先進封裝光罩產能所服務的重要客戶：擴產公告未揭露名稱。
 website: http://www.tmcnet.com.tw
 tax_id: '22099408'
 incorporated: '1988-10-21'
 listed: '1995-04-17'
-as_of: '2026-10-18'
+as_of: '2026-10-26'
 confidence: ai_cross_checked
 has_research: true
 evidence:
-  tw.2338#e1:
-    locator: 園區事業廠商資料／產品描述
+  tw.2338#e10:
+    locator: History
     published_date: null
-    publisher: 新竹科學園區管理局
+    publisher: Tekscend Photomask Corp.
     quote_check: found
-    title: 園區廠商：台灣光罩股份有限公司
-    url: https://www.sipa.gov.tw/home.jsp?contlink=ap/manufacturers_1_3_view.jsp&dataserno=A0128&level2=Y&menudata=chinesemenu&mserno=201002010011&qsipa=01&serno=201002010011&stype=C
+    title: Corporate Overview
+    url: https://www.photomask.com/en/about/overview/
+  tw.2338#e11:
+    locator: 重大訊息第3至4項
+    published_date: '2024-03-19'
+    publisher: 公開資訊觀測站，鉅亨網刊載
+    quote_check: found
+    title: 光罩：公告本公司取得機器設備
+    url: https://news.cnyes.com/news/id/5496137
+  tw.2338#e12:
+    locator: 重大訊息第1至4項
+    published_date: '2024-03-06'
+    publisher: 公開資訊觀測站，MoneyDJ刊載
+    quote_check: found
+    title: 光罩董事會決議取得光環私募股1350萬股，計約4.1億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f70f3e2f-c6bd-40c1-a885-2522764e2656
+  tw.2338#e13:
+    locator: 重大訊息第2至3項及第13項
+    published_date: '2025-07-19'
+    publisher: 公開資訊觀測站，MoneyDJ刊載
+    quote_check: found
+    title: 大宇資子公司光揚曜投資認購光罩私募股6337萬股，計約15.5億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=7b1f15e9-cc72-4ab8-80c2-78475987687e
+  tw.2338#e14:
+    locator: 重大訊息第5項；事實發生日2025年10月1日
+    published_date: '2025-10-02'
+    publisher: 公開資訊觀測站，MoneyDJ刊載
+    quote_check: found
+    title: 光罩董事會通過以鋼構事業設備作價投資，並與策略性投資人合設台灣雷銲科技
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=836db03a-2869-4d7b-897d-504990ad111b
+  tw.2338#e15:
+    locator: 首段，董事會出售決議及買方
+    published_date: '2026-06-10'
+    publisher: 中央社
+    quote_check: found
+    title: 台灣光罩賣竹南廠　處分利益18.24億元
+    url: https://www.cna.com.tw/news/afe/202606100306.aspx
+  tw.2338#e16:
+    locator: 重大訊息第5項
+    published_date: '2026-09-09'
+    publisher: 公開資訊觀測站，非凡新聞刊載
+    quote_check: found
+    title: 公告本公司處分竹南廠房與附屬設備已完成過戶及收足價款
+    url: https://news.ustv.com.tw/companynews/257070
+  tw.2338#e17:
+    locator: 重大訊息第5及7項
+    published_date: '2026-10-16'
+    publisher: 公開資訊觀測站，台視財經刊載
+    quote_check: found
+    title: 光罩：光鉅擬取得T.C.K 100%股權案，改由公司取得、上限7.5億日圓
+    url: https://www.ttv.com.tw/finance/view/1020261614593BB182CB914440DFABF6D2F76A11B38594EB/587
+  tw.2338#e18:
+    locator: 第53頁，關係人交易、取得金融資產註1；金額單位新台幣仟元
+    published_date: '2026-05-13'
+    publisher: 台灣光罩股份有限公司，FinancialFilings刊載
+    quote_check: unreachable
+    title: 台灣光罩114年度及113年度個體財務報告暨會計師查核報告
+    url: https://financialfilings.com/filings/tmc-2338/annual-report/2026/46324305/
+  tw.2338#e19:
+    locator: 第51頁，關係人交易
+    published_date: '2026-05-13'
+    publisher: 台灣光罩股份有限公司，FinancialFilings刊載
+    quote_check: unreachable
+    title: 台灣光罩114年度及113年度個體財務報告暨會計師查核報告
+    url: https://financialfilings.com/filings/tmc-2338/annual-report/2026/46324305/
   tw.2338#e2:
-    locator: 會計師查核報告／關鍵查核事項／銷貨收入認列
+    locator: 總經理陳立惇說明業務結構段落
+    published_date: '2026-02-23'
+    publisher: 聯合報／經濟日報網站
+    quote_check: found
+    title: 光罩本業獲利連5月走揚 1月純益近億元大關
+    url: https://money.udn.com/money/story/5612/9339853?from=edn_newest_index
+  tw.2338#e20:
+    locator: 第6頁，集團子公司業務
     published_date: null
-    publisher: 台灣光罩股份有限公司（FinancialFilings公開副本）
+    publisher: 台灣光罩股份有限公司
+    quote_check: found
+    title: 台灣光罩2024年永續報告書
+    url: https://prod-officialwebsite.azurewebsites.net/Uploads/47/台灣光罩2024ESG報告書_final_20251121_0209c9.pdf
+  tw.2338#e21:
+    locator: 第6頁，艾格生及昱嘉業務
+    published_date: null
+    publisher: 台灣光罩股份有限公司
+    quote_check: found
+    title: 台灣光罩2024年永續報告書
+    url: https://prod-officialwebsite.azurewebsites.net/Uploads/47/台灣光罩2024ESG報告書_final_20251121_0209c9.pdf
+  tw.2338#e22:
+    locator: 群豐持股、解散及清算人聲請破產段落
+    published_date: '2025-06-24'
+    publisher: 經濟日報
     quote_check: unreachable
-    title: 台灣光罩股份有限公司民國114年度及113年度個體財務報告暨會計師查核報告
-    url: https://financialfilings.com/filings/tmc-2338/annual-report/2026/46324305/
+    title: 台灣光罩子公司群豐科技聲請破產 強調對公司財報無重大影響
+    url: https://udn.com/news/story/7240/8828336
+  tw.2338#e23:
+    locator: 第3項第2款，潛在應募人與公司關係表
+    published_date: '2026-05-06'
+    publisher: 公開資訊觀測站，MoneyDJ刊載
+    quote_check: found
+    title: 光罩公告本公司董事會決議辦理私募普通股
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=46250477-23b0-4dd2-acfd-9d75c30e3d2b
   tw.2338#e3:
-    locator: 內文第二段
-    published_date: '2026-02-23'
-    publisher: 中央通訊社
+    locator: 第6頁，穩健佈局並持續投入研發
+    published_date: null
+    publisher: 台灣光罩股份有限公司
     quote_check: found
-    title: 台灣光罩：中階產品接單穩定　先進封裝下半年添動能
-    url: https://www.cna.com.tw/news/afe/202602230175.aspx
+    title: 台灣光罩2024年永續報告書
+    url: https://prod-officialwebsite.azurewebsites.net/Uploads/47/台灣光罩2024ESG報告書_final_20251121_0209c9.pdf
   tw.2338#e4:
-    locator: 內文第二段
-    published_date: '2026-02-23'
-    publisher: 中央通訊社
+    locator: 公司新聞稿產品用途與產線擴充段落
+    published_date: '2025-12-23'
+    publisher: 中央社
     quote_check: found
-    title: 台灣光罩：中階產品接單穩定　先進封裝下半年添動能
-    url: https://www.cna.com.tw/news/afe/202602230175.aspx
+    title: 台灣光罩攻先進封裝　擴14吋光罩產線明年上半年安裝
+    url: https://www.cna.com.tw/news/afe/202512230060.aspx
   tw.2338#e5:
-    locator: 內文第三段
-    published_date: '2026-02-23'
-    publisher: 中央通訊社
+    locator: 蔡武穆報導，客戶群段落
+    published_date: '2026-03-18'
+    publisher: 理財周刊
     quote_check: found
-    title: 台灣光罩：中階產品接單穩定　先進封裝下半年添動能
-    url: https://www.cna.com.tw/news/afe/202602230175.aspx
+    title: 台灣光罩營運谷底爬升 股價低檔轉強
+    url: https://www.moneyweekly.com.tw/ArticleData/Info/Article/214874
   tw.2338#e6:
-    locator: 附註七、關係人交易／關係人之名稱及關係
+    locator: 第1頁，公司簡介與營業內容；文件所列實習期間為2023年
     published_date: null
-    publisher: 台灣光罩股份有限公司（FinancialFilings公開副本）
+    publisher: 台灣光罩股份有限公司，東海大學刊載
     quote_check: unreachable
-    title: 台灣光罩股份有限公司民國114年度及113年度個體財務報告暨會計師查核報告
-    url: https://financialfilings.com/filings/tmc-2338/annual-report/2026/46324305/
+    title: 東海大學學生校外實習機構職缺提供表：台灣光罩
+    url: https://www.cs.thu.edu.tw/upload/news_upload/實習機構_台灣光罩.pdf
   tw.2338#e7:
-    locator: 附註七、關係人交易／關係人名稱與本公司關係表
-    published_date: null
-    publisher: 台灣光罩股份有限公司（FinancialFilings公開副本）
-    quote_check: unreachable
-    title: 台灣光罩股份有限公司民國114年度及113年度個體財務報告暨會計師查核報告
-    url: https://financialfilings.com/filings/tmc-2338/annual-report/2026/46324305/
+    locator: 市場銷售及競爭，國內外競爭廠商；日期為頁面標示更新日
+    published_date: '2026-03-13'
+    publisher: MoneyDJ／嘉實投顧
+    quote_check: found
+    title: 台灣光罩股份有限公司
+    url: https://www.moneydj.com/kmdj/wiki/wikiviewer.aspx?keyid=2b4ab57f-fb7a-4d56-8ef9-762c9fcf7d2e
   tw.2338#e8:
-    locator: 被投資公司名稱、所在地區等相關資訊／美祿科技列
+    locator: 公司成立首段
     published_date: null
-    publisher: 台灣光罩股份有限公司（FinancialFilings公開副本）
-    quote_check: unreachable
-    title: 台灣光罩股份有限公司及子公司2025年度合併財務報告
-    url: https://financialfilings.com/filings/tmc-2338/annual-report/2026/60570251/
+    publisher: 台灣美日先進光罩股份有限公司
+    quote_check: found
+    title: 公司成立
+    url: https://www.pdmc.com.tw/founded/
   tw.2338#e9:
-    locator: 被投資公司名稱、所在地區等相關資訊／昱嘉科技列
+    locator: Item 1，Competition，Our competitors include段落
     published_date: null
-    publisher: 台灣光罩股份有限公司（FinancialFilings公開副本）
+    publisher: Photronics／SEC
     quote_check: unreachable
-    title: 台灣光罩股份有限公司及子公司2025年度合併財務報告
-    url: https://financialfilings.com/filings/tmc-2338/annual-report/2026/60570251/
+    title: Photronics 2025 Form 10-K
+    url: https://www.sec.gov/Archives/edgar/data/810136/000114036125045801/ef20057458_10k.htm

@@ -14,43 +14,54 @@ industry:
   l2: mat.chemicals
   l2_name: 化工
   l2_name_en: Chemicals
-  l3: chem.specialty
-  l3_name: 特用化學品
-  l3_name_en: Specialty Chemicals
+  l3: chem.petrochem
+  l3_name: 石化與塑膠原料
+  l3_name_en: Petrochemicals & Plastics
+chain: chain.petrochem
+chain_stage:
+  agreement: both
+  also:
+  - stage: upstream
+    stage_name: 輕油裂解與基礎原料
+    tier: upstream
+  reason: 煤焦油及化學品占58.61%，以加工中間化工原料為主；另有苯等上游基礎原料。
+  stage: midstream
+  stage_name: 中間原料
+  tier: midstream
 primary_chain_position: midstream
-summary_short: 生產銷售煤焦油、輕油加工產品及鋰電池負極等精碳材料。
-summary_long: 中碳生產、加工及銷售煤化學產品與精碳材料，產品涵蓋軟瀝青、雜酚油、精萘、苯、甲苯及焦碳系列。2024年煤焦油及化學品系列占合併營收53.20%，輕油及油品系列占29.03%，精碳材料系列占9.72%。精碳材料包括介相石墨碳微球、先進碳材料與等方性石墨，應用涵蓋鋰電池負極等領域。公司公開說明其碳材應用於電動車動力電池及AI伺服器電力備援系統。
+summary_short: 加工煤焦油、輕油及焦炭，銷售煤化學品與電池負極等精碳材料。
+summary_long: 中碳以煤焦油、輕油等煉焦副產品加工生產化工原料，2025年合併銷售額以煤焦油及化學品58.61%為主，輕油及油品25.14%、焦炭6.89%、精碳材料7.60%。主要原料供應商為中鋼與中龍，2026年上半年分占公司進貨67%與31%，中鋼亦為母公司。產品涵蓋軟瀝青、雜酚油、苯與電池負極材料，並生產先進碳材料及等方性石墨；高功率負極材料已有客戶用於BBU。公司曾與鴻海、碩禾及榮炭簽署電動車負極材料共同開發備忘錄，另於2025年委由聯鋼營造承攬先進碳材料暨等方性石墨工場土建與鋼構工程。
 segments:
 - evidence_ids:
-  - e2
-  id: seg1
+  - e1
+  id: seg_tar
   name: 煤焦油及化學品系列產品
-  period: 2024年度合併
-  revenue_share_pct: 53.2
+  period: '2025'
+  revenue_share_pct: 58.61
 - evidence_ids:
-  - e3
-  id: seg2
+  - e1
+  id: seg_light_oil
   name: 輕油及油品系列產品
-  period: 2024年度合併
-  revenue_share_pct: 29.03
+  period: '2025'
+  revenue_share_pct: 25.14
 - evidence_ids:
-  - e4
-  id: seg3
-  name: 焦碳系列產品
-  period: 2024年度合併
-  revenue_share_pct: 6.62
+  - e1
+  id: seg_coke
+  name: 焦炭系列產品
+  period: '2025'
+  revenue_share_pct: 6.89
 - evidence_ids:
-  - e5
-  id: seg4
+  - e1
+  id: seg_carbon
   name: 精碳材料系列產品
-  period: 2024年度合併
-  revenue_share_pct: 9.72
+  period: '2025'
+  revenue_share_pct: 7.6
 - evidence_ids:
-  - e6
-  id: seg5
+  - e1
+  id: seg_other
   name: 其他
-  period: 2024年度合併
-  revenue_share_pct: 1.43
+  period: '2025'
+  revenue_share_pct: 1.76
 main_theme: theme.ev
 themes:
 - also: []
@@ -61,8 +72,40 @@ themes:
   stage: components
   theme: theme.ai_server
   tier: midstream
+- also: []
+  stage: substrate
+  theme: theme.sic
+  tier: upstream
 relations:
   customers:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 產品銷售，財報未於該表揭露品項
+    details:
+    - 產品銷售，財報未於該表揭露品項
+    edge: ecfa0b8619076
+    evidence_level: primary
+    id: org.linyuan-advanced-materials
+    name: 林園先進材料科技股份有限公司
+    ranking_basis: disclosed
+    share_basis: revenue
+    share_pct: 16
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 苯；2025年客戶關係
+    details:
+    - 苯；2025年客戶關係
+    edge: e83cafb1b07a3
+    evidence_level: primary
+    id: tw.1310
+    name: 台苯
+    ranking_basis: disclosed
+    share_basis: revenue
+    share_pct: 8.6
+    weight: 1
   - as_of: '2019-03-22'
     confidence: ai_cross_checked
     counterparty_shares: []
@@ -78,12 +121,12 @@ relations:
     share_pct: null
     weight: 1
   parents:
-  - as_of: '2026-08-26'
+  - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 具實質控制關係的母公司
+    detail: 母公司
     details:
-    - 具實質控制關係的母公司
+    - 母公司
     edge: ee2dd0f148dcf
     evidence_level: primary
     id: tw.2002
@@ -92,22 +135,65 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
-  subsidiaries:
-  - as_of: '2026-08-26'
+  partners:
+  - as_of: '2021-09-28'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 經景裕國際間接持有100%的碳材料子公司
+    detail: 電動車電池負極材料共同開發備忘錄
     details:
-    - 經景裕國際間接持有100%的碳材料子公司
-    edge: e51de04394f68
+    - 電動車電池負極材料共同開發備忘錄
+    edge: e76b78deec666
     evidence_level: primary
-    id: org.changzhou-china-steel-new-materials
+    id: tw.2317
+    name: 鴻海
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2021-09-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 電動車電池負極材料共同開發
+    details:
+    - 電動車電池負極材料共同開發
+    edge: e5195d01dca91
+    evidence_level: primary
+    id: tw.3691
+    name: 碩禾
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2021-09-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 電動車電池負極材料共同開發
+    details:
+    - 電動車電池負極材料共同開發
+    edge: ecbf38245d2c9
+    evidence_level: primary
+    id: tw.6555
+    name: 榮炭
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 經景裕間接持有100%的碳微球加工銷售子公司
+    details:
+    - 經景裕間接持有100%的碳微球加工銷售子公司
+    edge: e7112257f417f
+    evidence_level: primary
+    id: org.changzhou-cscc-new-materials
     name: 常州中碳新材料科技有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-08-26'
+  - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
     detail: 直接持有100%的投資子公司
@@ -116,142 +202,266 @@ relations:
     edge: e6708629a3c9a
     evidence_level: primary
     id: org.jing-yu-international
-    name: 景裕國際股份有限公司
+    name: 景裕國際公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
+  suppliers:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 主要原料供應
+    details:
+    - 主要原料供應
+    edge: e0531189b3b4d
+    evidence_level: primary
+    id: tw.2002
+    name: 中鋼
+    ranking_basis: disclosed
+    share_basis: purchases
+    share_pct: 67
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 主要原料供應
+    details:
+    - 主要原料供應
+    edge: e7769a3e5a4fb
+    evidence_level: primary
+    id: org.dragon-steel
+    name: 中龍鋼鐵股份有限公司
+    ranking_basis: disclosed
+    share_basis: purchases
+    share_pct: 31
+    weight: 1
+  transactions:
+  - amount: 新台幣240,000仟元
+    as_of: '2025-05-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 先進碳材料暨等方性石墨工場土建、鋼構及材料採購
+    details:
+    - 先進碳材料暨等方性石墨工場土建、鋼構及材料採購
+    edge: e1f7ce1cd57f1
+    event_date: '2025-05-23'
+    events:
+    - amount: 新台幣240,000仟元
+      detail: 先進碳材料暨等方性石墨工場土建、鋼構及材料採購
+      event_date: '2025-05-23'
+    evidence_level: primary
+    id: org.lien-kang-construction
+    name: 聯鋼營造工程股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣435,898,361元
+    as_of: '2025-12-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 煤化學廠土地續租及使用權資產取得
+    details:
+    - 煤化學廠土地續租及使用權資產取得
+    - 集團總部辦公樓續租及使用權資產取得
+    edge: e6b2bf3cbfb88
+    event_date: '2025-12-23'
+    events:
+    - amount: 新台幣435,898,361元
+      detail: 煤化學廠土地續租及使用權資產取得
+      event_date: '2025-12-23'
+    - amount: 新台幣18,138,823元
+      detail: 集團總部辦公樓續租及使用權資產取得
+      event_date: '2025-12-23'
+    evidence_level: primary
+    id: tw.2002
+    name: 中鋼
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣6,833,243元
+    as_of: '2024-07-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 煤焦油工廠原物料存放用土地建物續租
+    details:
+    - 煤焦油工廠原物料存放用土地建物續租
+    edge: e6a4daf0a607c
+    event_date: '2024-07-30'
+    events:
+    - amount: 新台幣6,833,243元
+      detail: 煤焦油工廠原物料存放用土地建物續租
+      event_date: '2024-07-30'
+    evidence_level: primary
+    id: tw.2014
+    name: 中鴻
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 高功率負極材料已應用於BBU的客戶，未具名。
+- 先進碳材料送驗的韓國指標客戶，未具名。
+- 混合型超級電容及鋰離子電容器正、負極材料送驗的日本指標客戶，未具名。
+- SiC長晶石墨坩堝驗證客戶，未具名。
+- 台苯退出後承接苯配額的三家客戶，官網未具名。
 website: www.cscc.com.tw
 tax_id: '23221384'
 incorporated: '1989-02-03'
 listed: '1998-11-27'
-as_of: '2026-10-15'
+as_of: '2026-10-26'
 confidence: ai_cross_checked
 has_research: true
 evidence:
+  tw.1723#e1:
+    locator: 第121頁，114年度營業比重；數值欄依序為個體、合併
+    published_date: null
+    publisher: 中鋼碳素化學股份有限公司
+    quote_check: found
+    title: 中鋼碳素化學股份有限公司114年年報
+    url: https://www.cscc.com.tw/downlaod/fin_annual115-2.pdf
   tw.1723#e10:
-    locator: 經營者的話，主要碳材料產品
-    published_date: null
+    locator: 第19頁，附註十三子公司；持股欄依序為115年6月底、114年底、114年6月底
+    published_date: '2026-07-31'
     publisher: 中鋼碳素化學股份有限公司
     quote_check: found
-    title: 企業永續：經營者的話
-    url: https://www.cscc.com.tw/csr/index.html
+    title: 115年第2季合併財務報告
+    url: https://www.cscc.com.tw/downlaod/fin_report115_season2_other.pdf
   tw.1723#e11:
-    locator: 目前之商品（服務）項目，其他貿易產品
-    published_date: null
+    locator: 第59頁，附表三；銷貨占比欄，期間為115年1月至6月
+    published_date: '2026-07-31'
     publisher: 中鋼碳素化學股份有限公司
     quote_check: found
-    title: 產品與服務
-    url: https://www.cscc.com.tw/csr/cs/cs_pro.html
+    title: 115年第2季合併財務報告
+    url: https://www.cscc.com.tw/downlaod/fin_report115_season2_other.pdf
   tw.1723#e12:
-    locator: 電動車動力電池應用
-    published_date: null
-    publisher: 中鋼碳素化學股份有限公司
+    locator: 新聞稿首段及備忘錄合作內容
+    published_date: '2021-09-28'
+    publisher: 鴻海科技集團
     quote_check: found
-    title: 研發創新
-    url: https://www.cscc.com.tw/csr/ss/ss_stu.html
+    title: 鴻海攜手碩禾、榮炭、中碳 加速電動車電池負極材料研發
+    url: https://www.honhai.com/zh-tw/press-center/press-releases/latest-news/684
   tw.1723#e13:
-    locator: 銷售概況，綠能碳材料應用
+    locator: SASB：永續產品篇章說明
     published_date: null
     publisher: 中鋼碳素化學股份有限公司
     quote_check: found
-    title: 產品與服務
-    url: https://www.cscc.com.tw/csr/cs/cs_pro.html
+    title: 2025年企業永續：產品與服務
+    url: https://www.cscc.com.tw/csr/ov/ov_mai.html
   tw.1723#e14:
-    locator: 第159頁，關係報告書；中國鋼鐵為控制公司，控制原因欄
-    published_date: null
-    publisher: 中鋼碳素化學股份有限公司
+    locator: 潘智義報導，業績發表會BBU布局段落
+    published_date: '2026-05-22'
+    publisher: 中央通訊社
     quote_check: found
-    title: 114年股東會年報
-    url: https://www.cscc.com.tw/downlaod/fin_annual114-2.pdf
+    title: 中碳：看好AI伺服器產業鏈 鎖定BBU材料
+    url: https://www.cna.com.tw/news/afe/202605220256.aspx
   tw.1723#e15:
-    locator: 公司發展歷程
-    published_date: null
-    publisher: 中國鋼鐵股份有限公司
+    locator: 林政鋒報導，半導體布局段落
+    published_date: '2026-08-25'
+    publisher: 經濟日報
     quote_check: found
-    title: 中鋼集團：中鋼碳素化學股份有限公司
-    url: https://www.csc.com.tw/csc/gc/gro_Ind_p1.html
+    title: 中碳強攻先進碳材料
+    url: https://money.udn.com/money/amp/story/5710/9713742
   tw.1723#e16:
-    locator: 第112頁，產業上、中、下游之關聯性
-    published_date: null
-    publisher: 中鋼碳素化學股份有限公司
+    locator: 林政鋒報導，傳統產品段落；去年指2025年
+    published_date: '2026-08-25'
+    publisher: 經濟日報
     quote_check: found
-    title: 114年股東會年報
-    url: https://www.cscc.com.tw/downlaod/fin_annual114-2.pdf
+    title: 中碳強攻先進碳材料
+    url: https://money.udn.com/money/amp/story/5710/9713742
   tw.1723#e17:
-    locator: 轉投資關係圖；中鋼→中碳→景裕國際→常州中碳，後兩層各100%；圖檔ss/images/ss_mai.png，頁尾更新日期2026.08.26
-    published_date: null
-    publisher: 中鋼碳素化學股份有限公司
+    locator: 公告第4項，契約主要內容
+    published_date: '2025-05-23'
+    publisher: 公開資訊觀測站重大訊息，MoneyDJ轉載
     quote_check: found
-    title: 轉投資事業
-    url: https://www.cscc.com.tw/csr/ss/ss_mai.html
+    title: 中碳公告先進碳材料暨等方性石墨工場土木基礎及廠房鋼構新建工程及材料採購案
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=d2b25962-607d-4992-b844-c025791c4ba6
   tw.1723#e18:
-    locator: 中碳公司及子公司基本資料，景裕國際股份有限公司列
-    published_date: null
-    publisher: 中鋼碳素化學股份有限公司
-    quote_check: not_found
-    title: 轉投資事業
-    url: https://www.cscc.com.tw/csr/ss/ss_mai.html
+    locator: 公告第5、6及10項；已直接讀取完整公告
+    published_date: '2025-12-23'
+    publisher: 公開資訊觀測站重大訊息，MoneyDJ轉載
+    quote_check: found
+    title: 中碳向關係人中國鋼鐵公司承租煤化學廠土地租約到期續約
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=2d3829b1-81a1-4dbd-b8b7-9a284376c8a4
   tw.1723#e19:
-    locator: 中碳公司及子公司基本資料，常州中碳新材料科技有限公司列
-    published_date: null
-    publisher: 中鋼碳素化學股份有限公司
+    locator: 公告第5、6及10項
+    published_date: '2025-12-23'
+    publisher: 公開資訊觀測站重大訊息，MoneyDJ轉載
     quote_check: found
-    title: 轉投資事業
-    url: https://www.cscc.com.tw/csr/ss/ss_mai.html
+    title: 中碳向中鋼承租高雄市前鎮區集團總部大樓到期續約
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=4af7d386-9182-4004-a4ce-15fdb9a3478e
   tw.1723#e2:
-    locator: 第110頁，113年度營業比重；煤焦油及化學品系列產品列，依序為個體與合併百分比
-    published_date: null
-    publisher: 中鋼碳素化學股份有限公司
-    quote_check: found
-    title: 114年股東會年報
-    url: https://www.cscc.com.tw/downlaod/fin_annual114-2.pdf
-  tw.1723#e3:
-    locator: 第110頁，113年度營業比重；輕油及油品系列產品列，依序為個體與合併百分比
-    published_date: null
-    publisher: 中鋼碳素化學股份有限公司
-    quote_check: found
-    title: 114年股東會年報
-    url: https://www.cscc.com.tw/downlaod/fin_annual114-2.pdf
-  tw.1723#e4:
-    locator: 第110頁，113年度營業比重；焦炭系列產品列，依序為個體與合併百分比
-    published_date: null
-    publisher: 中鋼碳素化學股份有限公司
-    quote_check: found
-    title: 114年股東會年報
-    url: https://www.cscc.com.tw/downlaod/fin_annual114-2.pdf
-  tw.1723#e5:
-    locator: 第110頁，113年度營業比重；精碳材料系列產品列，依序為個體與合併百分比
-    published_date: null
-    publisher: 中鋼碳素化學股份有限公司
-    quote_check: found
-    title: 114年股東會年報
-    url: https://www.cscc.com.tw/downlaod/fin_annual114-2.pdf
-  tw.1723#e6:
-    locator: 第110頁，113年度營業比重；其他列，依序為個體與合併百分比
-    published_date: null
-    publisher: 中鋼碳素化學股份有限公司
-    quote_check: found
-    title: 114年股東會年報
-    url: https://www.cscc.com.tw/downlaod/fin_annual114-2.pdf
-  tw.1723#e7:
-    locator: 主要產品，煤焦油系列
-    published_date: null
-    publisher: 中鋼碳素化學股份有限公司
-    quote_check: found
-    title: 公司概況
-    url: https://www.cscc.com.tw/csr/ov/ov_abo.html
-  tw.1723#e8:
-    locator: 主要產品，輕油系列
+    locator: 第121頁，目前之商品（服務）項目，煤焦油系列產品
     published_date: null
     publisher: 中鋼碳素化學股份有限公司
     quote_check: not_found
-    title: 公司概況
-    url: https://www.cscc.com.tw/csr/ov/ov_abo.html
-  tw.1723#e9:
-    locator: 主要產品，焦碳系列
+    title: 中鋼碳素化學股份有限公司114年年報
+    url: https://www.cscc.com.tw/downlaod/fin_annual115-2.pdf
+  tw.1723#e20:
+    locator: 公告第3至5項
+    published_date: '2024-07-30'
+    publisher: 公開資訊觀測站重大訊息，MoneyDJ轉載
+    quote_check: found
+    title: 中碳向中鴻續約承租高雄市小港區土地及建物
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=3bc189b7-c4b3-41d6-9db1-65fbeb42476d
+  tw.1723#e22:
+    locator: 煤化學工業上、下游產品關聯圖說明
     published_date: null
     publisher: 中鋼碳素化學股份有限公司
     quote_check: found
-    title: 公司概況
-    url: https://www.cscc.com.tw/csr/ov/ov_abo.html
+    title: 產品介紹：煤化學工業上下游產品關聯
+    url: https://www.cscc.com.tw/pro.htm
+  tw.1723#e3:
+    locator: 第121頁，目前之商品（服務）項目，輕油系列產品
+    published_date: null
+    publisher: 中鋼碳素化學股份有限公司
+    quote_check: found
+    title: 中鋼碳素化學股份有限公司114年年報
+    url: https://www.cscc.com.tw/downlaod/fin_annual115-2.pdf
+  tw.1723#e4:
+    locator: 第121頁，目前之商品（服務）項目，焦炭系列產品
+    published_date: null
+    publisher: 中鋼碳素化學股份有限公司
+    quote_check: found
+    title: 中鋼碳素化學股份有限公司114年年報
+    url: https://www.cscc.com.tw/downlaod/fin_annual115-2.pdf
+  tw.1723#e5:
+    locator: 第121頁，目前之商品（服務）項目，精碳材料系列產品
+    published_date: null
+    publisher: 中鋼碳素化學股份有限公司
+    quote_check: found
+    title: 中鋼碳素化學股份有限公司114年年報
+    url: https://www.cscc.com.tw/downlaod/fin_annual115-2.pdf
+  tw.1723#e6:
+    locator: 第121頁，目前之商品（服務）項目，其他貿易產品
+    published_date: null
+    publisher: 中鋼碳素化學股份有限公司
+    quote_check: found
+    title: 中鋼碳素化學股份有限公司114年年報
+    url: https://www.cscc.com.tw/downlaod/fin_annual115-2.pdf
+  tw.1723#e7:
+    locator: 第59頁，附表三；期間為115年1月至6月，金額單位新台幣千元
+    published_date: '2026-07-31'
+    publisher: 中鋼碳素化學股份有限公司
+    quote_check: found
+    title: 115年第2季合併財務報告
+    url: https://www.cscc.com.tw/downlaod/fin_report115_season2_other.pdf
+  tw.1723#e8:
+    locator: 115年度投資人關切議題，Q2、Q4及Q6
+    published_date: null
+    publisher: 中鋼碳素化學股份有限公司
+    quote_check: found
+    title: 投資人議合專區
+    url: https://www.cscc.com.tw/Inv_eng.htm
+  tw.1723#e9:
+    locator: 第46頁，附註二八關係人交易
+    published_date: '2026-07-31'
+    publisher: 中鋼碳素化學股份有限公司
+    quote_check: found
+    title: 115年第2季合併財務報告
+    url: https://www.cscc.com.tw/downlaod/fin_report115_season2_other.pdf

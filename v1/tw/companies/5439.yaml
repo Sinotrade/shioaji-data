@@ -26,164 +26,189 @@ chain_stage:
   stage_name: 電路板與載板製造
   tier: midstream
 primary_chain_position: midstream
-summary_short: 以多層印刷電路板製造銷售為主，產品涵蓋厚銅、盲埋孔及高頻高速板。
-summary_long: 高技以印刷電路板製造與銷售為主，產品涵蓋一至四十六層板。2025年度多層印刷電路板占營收98.82%，單、雙層板占1.12%，其他占0.06%。主要產品包括厚銅板、盲埋孔板、高頻高速板及散熱鋁基板，應用涉及網通、工業電腦、電源供應器及汽車。年報另揭露AI伺服器板、5G應用及汽車與電動機車充電模組，並列示低軌衛星產品研發成果。年報亦列有泰國轉投資子公司。
+summary_short: 製造多層印刷電路板，主要供應伺服器、網通、工業電腦及車用市場。
+summary_long: 高技以印刷電路板製造與銷售為本業，2024年多層印刷電路板占主要產品銷售比重96.67%，產品包括厚銅板、盲埋孔板、高層板及散熱鋁基板。依2026年6月公司說明，伺服器約占營收65%、網通約20%、工業電腦約10%、汽車約5%。公司生產AI伺服器UBB厚大板，亦布局低軌衛星用板，相關產品已通過歐系客戶驗證。產能布局方面，2025年正式簽約以新台幣5.6億元向杉信實業取得桃園土地、建物及附屬廠務設備；另持有泰國子公司全部股權，其主要營業項目為電子設備和零件批發。
 segments:
 - evidence_ids:
-  - e5
-  id: seg_multilayer
+  - e1
+  id: multilayer_pcb
   name: 多層印刷電路板
-  period: '2025'
-  revenue_share_pct: 98.82
+  period: '2024'
+  revenue_share_pct: 96.67
 - evidence_ids:
-  - e6
-  id: seg_single_double
-  name: 單、雙層印刷電路板
-  period: '2025'
-  revenue_share_pct: 1.12
+  - e3
+  id: server
+  name: 伺服器應用
+  period: 2026-06公司說明之當時產品結構
+  revenue_share_pct: 65
 - evidence_ids:
-  - e7
-  id: seg_other
-  name: 其他
-  period: '2025'
-  revenue_share_pct: 0.06
-main_theme: theme.ev
+  - e3
+  id: networking
+  name: 網通應用
+  period: 2026-06公司說明之當時產品結構
+  revenue_share_pct: 20
+- evidence_ids:
+  - e4
+  id: industrial_pc
+  name: 工業電腦應用
+  period: 2026-06公司說明之當時產品結構
+  revenue_share_pct: 10
+- evidence_ids:
+  - e4
+  id: automotive
+  name: 汽車應用
+  period: 2026-06公司說明之當時產品結構
+  revenue_share_pct: 5
+main_theme: theme.ai_server
 themes:
-- also: []
-  stage: parts
-  theme: theme.ev
-  tier: midstream
 - also: []
   stage: board_materials
   theme: theme.ai_server
   tier: upstream
 - also: []
   stage: components
-  theme: theme.5g
-  tier: upstream
-- also: []
-  stage: components
   theme: theme.leo_satellite
   tier: upstream
 relations:
-  subsidiaries:
-  - as_of: '2026-06-17'
+  customers:
+  - as_of: '2023-09-04'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 泰國子公司
+    detail: PCB供應
     details:
-    - 泰國子公司
-    edge: e4f355d5774b4
-    evidence_level: primary
-    id: org.first-hi-tec-enterprise-thailand
-    name: First Hi-tec Enterprise (Thailand) Co.,Ltd.
+    - PCB供應
+    edge: e70047f705db9
+    evidence_level: media
+    id: tw.2308
+    name: 台達電
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
+  subsidiaries:
+  - as_of: 2025-06
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資泰國子公司，從事電子設備和零件批發
+    details:
+    - 全資泰國子公司，從事電子設備和零件批發
+    edge: e4f355d5774b4
+    evidence_level: primary
+    id: org.first-hi-tec-enterprise-thailand
+    name: FIRST HI-TEC ENTERPRISE (THAILAND) CO., LTD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 新台幣560,000仟元
+    as_of: '2025-03-21'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 取得桃園土地、建物及附屬廠務設備
+    details:
+    - 取得桃園土地、建物及附屬廠務設備
+    edge: ebe859db0bd4b
+    event_date: '2025-03-21'
+    events:
+    - amount: 新台幣560,000仟元
+      detail: 取得桃園土地、建物及附屬廠務設備
+      event_date: '2025-03-21'
+    evidence_level: primary
+    id: org.shan-shin-industrial
+    name: 杉信實業股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- AI伺服器UBB厚大板的一大型客戶，2025年報導未揭露名稱。
+- 詢單的其他EMS電子代工大廠，未揭露名稱。
+- 低軌衛星產品的歐系驗證客戶，未揭露名稱。
+- 銅箔等上游材料業者未具名，無法建立個別供應商關係。
 website: http://www.fht.com.tw
 tax_id: '22773079'
 incorporated: '1988-01-29'
 listed: '2000-06-26'
-as_of: '2026-10-15'
+as_of: '2026-10-26'
 confidence: ai_cross_checked
 has_research: true
 evidence:
+  tw.5439#e1:
+    locator: 第16頁，2.1公司簡介，主要產品銷售比重
+    published_date: null
+    publisher: 高技企業股份有限公司
+    quote_check: found
+    title: 高技企業股份有限公司2024年永續報告書
+    url: https://esggenplus.twse.com.tw/api/api/MopsSustainReport/data/FileStream?id=b9219d17-94f2-427a-8d06-971468d7d580
   tw.5439#e10:
-    locator: 第50頁，主要商品及服務項目之產品應用
-    published_date: '2026-06-17'
-    publisher: 高技企業股份有限公司
+    locator: 第4項，交易相對人
+    published_date: '2025-03-21'
+    publisher: 高技企業股份有限公司重大訊息，鉅亨網刊載
     quote_check: found
-    title: 高技企業股份有限公司114年度年報
-    url: http://www.fht.com.tw/web/image/images/finance/2026/1150522%E9%AB%98%E6%8A%80%E5%B9%B4%E5%A0%B1.pdf
+    title: 高技：本公司取得不動產（正式簽約資訊）
+    url: https://news.cnyes.com/news/id/5908753
   tw.5439#e11:
-    locator: 第2頁，114年度研究發展成果
-    published_date: '2026-06-17'
-    publisher: 高技企業股份有限公司
+    locator: 第3項，交易總金額；第1至2項載明標的與日期
+    published_date: '2025-03-21'
+    publisher: 高技企業股份有限公司重大訊息，鉅亨網刊載
     quote_check: found
-    title: 高技企業股份有限公司114年度年報
-    url: http://www.fht.com.tw/web/image/images/finance/2026/1150522%E9%AB%98%E6%8A%80%E5%B9%B4%E5%A0%B1.pdf
-  tw.5439#e12:
-    locator: 第50頁，主要商品及服務項目之產品應用
-    published_date: '2026-06-17'
-    publisher: 高技企業股份有限公司
-    quote_check: found
-    title: 高技企業股份有限公司114年度年報
-    url: http://www.fht.com.tw/web/image/images/finance/2026/1150522%E9%AB%98%E6%8A%80%E5%B9%B4%E5%A0%B1.pdf
-  tw.5439#e13:
-    locator: 第50頁，主要商品及服務項目之產品應用
-    published_date: '2026-06-17'
-    publisher: 高技企業股份有限公司
-    quote_check: found
-    title: 高技企業股份有限公司114年度年報
-    url: http://www.fht.com.tw/web/image/images/finance/2026/1150522%E9%AB%98%E6%8A%80%E5%B9%B4%E5%A0%B1.pdf
-  tw.5439#e14:
-    locator: 第40頁，轉投資事業持股及綜合持股比例表
-    published_date: '2026-06-17'
-    publisher: 高技企業股份有限公司
-    quote_check: found
-    title: 高技企業股份有限公司114年度年報
-    url: http://www.fht.com.tw/web/image/images/finance/2026/1150522%E9%AB%98%E6%8A%80%E5%B9%B4%E5%A0%B1.pdf
-  tw.5439#e15:
-    locator: 第31頁，附註11 Subsidiaries
-    published_date: null
-    publisher: 高技企業股份有限公司
-    quote_check: found
-    title: First Hi-tec Enterprise Co., Ltd. and Subsidiaries－2024及2023年度合併財務報告
-    url: https://www.fht.com.tw/web/image/images/finance/2024/2024%E5%B9%B4%E5%90%88%E4%BD%B5%E8%8B%B1%E6%96%87%E8%B2%A1%E5%A0%B1.pdf
+    title: 高技：本公司取得不動產（正式簽約資訊）
+    url: https://news.cnyes.com/news/id/5908753
   tw.5439#e2:
-    locator: 我們的產品
+    locator: 第33頁，3.5研發創新
     published_date: null
     publisher: 高技企業股份有限公司
     quote_check: found
-    title: 高技企業股份有限公司官方網站
-    url: http://www.fht.com.tw/web/tw/index
+    title: 高技企業股份有限公司2024年永續報告書
+    url: https://esggenplus.twse.com.tw/api/api/MopsSustainReport/data/FileStream?id=b9219d17-94f2-427a-8d06-971468d7d580
   tw.5439#e3:
-    locator: 第50頁，業務內容，主要商品及服務項目
+    locator: 正文，產品結構段
     published_date: '2026-06-17'
-    publisher: 高技企業股份有限公司
+    publisher: 台視財經／MoneyDJ，萬惠雯
     quote_check: found
-    title: 高技企業股份有限公司114年度年報
-    url: http://www.fht.com.tw/web/image/images/finance/2026/1150522%E9%AB%98%E6%8A%80%E5%B9%B4%E5%A0%B1.pdf
+    title: 高技：訂單能見度看到明年Q1 下半年優於上半年
+    url: https://www.ttv.com.tw/finance/view/0620261712279BEE62E689DA4D8598F8232EFD1140BA3818/588
   tw.5439#e4:
-    locator: 創新高技
-    published_date: null
-    publisher: 高技企業股份有限公司
+    locator: 正文，產品結構說明
+    published_date: '2026-06-18'
+    publisher: FTNN新聞網，陳宣穎
     quote_check: found
-    title: 公司簡介
-    url: http://www.fht.com.tw/web/tw/page/12/company-profile
+    title: 訂單能見度至明年Q1！「PCB大廠」現金股利7.2元確定　這天除息快上車
+    url: https://www.ftnn.com.tw/news/554238
   tw.5439#e5:
-    locator: 第50頁，營業比重表，114年度銷售淨額及百分比
-    published_date: '2026-06-17'
-    publisher: 高技企業股份有限公司
+    locator: 正文，AI伺服器產品段
+    published_date: '2025-06-19'
+    publisher: MoneyDJ，萬惠雯
     quote_check: found
-    title: 高技企業股份有限公司114年度年報
-    url: http://www.fht.com.tw/web/image/images/finance/2026/1150522%E9%AB%98%E6%8A%80%E5%B9%B4%E5%A0%B1.pdf
+    title: 高技：AI伺服器追單旺 H2啟動新廠/明年拚滿載
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=774a679d-8e53-47c6-9fd5-283aff2cf7cd
   tw.5439#e6:
-    locator: 第50頁，營業比重表，114年度銷售淨額及百分比
-    published_date: '2026-06-17'
-    publisher: 高技企業股份有限公司
+    locator: 正文，低軌衛星及光模組段
+    published_date: '2026-06-18'
+    publisher: 台視財經／MoneyDJ，萬惠雯
     quote_check: found
-    title: 高技企業股份有限公司114年度年報
-    url: http://www.fht.com.tw/web/image/images/finance/2026/1150522%E9%AB%98%E6%8A%80%E5%B9%B4%E5%A0%B1.pdf
+    title: 高技卡位AI Switch板+衛星板 明年放量成新動能
+    url: https://www.ttv.com.tw/finance/view/062026180901BCF0C21EBF6C494EA584EE73F76EAEE9AEDF/587
   tw.5439#e7:
-    locator: 第50頁，營業比重表，114年度銷售淨額及百分比
-    published_date: '2026-06-17'
-    publisher: 高技企業股份有限公司
+    locator: 正文，產品應用別段
+    published_date: '2023-09-04'
+    publisher: 鉅亨網，張欽發
     quote_check: found
-    title: 高技企業股份有限公司114年度年報
-    url: http://www.fht.com.tw/web/image/images/finance/2026/1150522%E9%AB%98%E6%8A%80%E5%B9%B4%E5%A0%B1.pdf
+    title: 台達電AI和電動車應用積極成長 供應鏈高技可望獲強大訂單挹注
+    url: https://news.cnyes.com/news/id/5311560
   tw.5439#e8:
-    locator: 創新高技
-    published_date: null
-    publisher: 高技企業股份有限公司
+    locator: 第8項，更正後被投資公司資料
+    published_date: '2025-08-20'
+    publisher: 高技企業股份有限公司重大訊息，鉅亨網刊載
     quote_check: found
-    title: 公司簡介
-    url: http://www.fht.com.tw/web/tw/page/12/company-profile
+    title: 高技：更正本公司114年第2季合併財務報告iXBRL申報資訊
+    url: https://news.cnyes.com/news/id/6119474
   tw.5439#e9:
-    locator: 第53頁，市場及產銷概況，主要商品
-    published_date: '2026-06-17'
-    publisher: 高技企業股份有限公司
+    locator: 第8項，主要營業項目及持有資料
+    published_date: '2025-08-20'
+    publisher: 高技企業股份有限公司重大訊息，鉅亨網刊載
     quote_check: found
-    title: 高技企業股份有限公司114年度年報
-    url: http://www.fht.com.tw/web/image/images/finance/2026/1150522%E9%AB%98%E6%8A%80%E5%B9%B4%E5%A0%B1.pdf
+    title: 高技：更正本公司114年第2季合併財務報告iXBRL申報資訊
+    url: https://news.cnyes.com/news/id/6119474

@@ -18,34 +18,77 @@ industry:
   l3_name: 廢棄物處理與資源回收
   l3_name_en: Waste Management & Recycling
 primary_chain_position: not_applicable
-summary_short: 以焚化發電廠營運、廢棄物處理及售電為主，並提供水務、溶劑回收與機電維護。
-summary_long: 崑鼎為中鼎工程旗下的資源循環服務公司，業務以能資源中心營運維護、廢棄物處理及售電為主。最新法說揭露的營收組成為能資源服務56%、售電30%、機電設施建置與維運8%，水務、再利用及其他6%。集團由信鼎提供焚化發電、污水及再生水廠營運維護，耀鼎將半導體業廢異丙醇提濃純化成工業級產品，另提供太陽光電電廠開發營運及機電系統維護服務。主要子公司另包括暉鼎、裕鼎、嘉鼎與昱鼎電業。
+summary_short: 以能資源中心營運、廢棄物處理及售電取得收入，兼營水務、資源再利用與太陽光電。
+summary_long: 崑鼎以能資源中心營運維護、廢棄物處理及售電為主要業務。2026年上半年能資源服務占合併營收56%、售電占30%、機電設施建置與維運占8%，水務、再利用及其他占6%。集團參與台積電南科再生水廠操作維護，並提供聯電創生中心廢溶劑與廢液處理回收系統營運服務；耀鼎將半導體製程廢異丙醇純化為工業級產品，昱鼎電業經營太陽光電。台電為售電客戶，2025年占銷貨淨額25.77%。中鼎工程為母公司，也是營業收入交易對象。2026年崑鼎出售元鼎40%股權，信鼎則決議投資設立基鼎綠能環保。
 segments:
 - evidence_ids:
   - e2
-  id: seg_energy
+  id: seg.energy_services
   name: 能資源服務
-  period: null
+  period: 2026年上半年
   revenue_share_pct: 56
 - evidence_ids:
   - e2
-  id: seg_power
+  id: seg.electricity
   name: 售電
-  period: null
+  period: 2026年上半年
   revenue_share_pct: 30
 - evidence_ids:
   - e2
-  id: seg_facilities
+  id: seg.facilities
   name: 機電設施建置與維運
-  period: null
+  period: 2026年上半年
   revenue_share_pct: 8
 - evidence_ids:
   - e2
-  id: seg_other
+  id: seg.water_recycling_other
   name: 水務、再利用及其他
-  period: null
+  period: 2026年上半年
   revenue_share_pct: 6
 relations:
+  customers:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 向集團購買電力
+    details:
+    - 向集團購買電力
+    edge: e3cd8b4f5b71b
+    evidence_level: primary
+    id: org.taipower
+    name: 台灣電力公司
+    ranking_basis: disclosed
+    share_basis: revenue
+    share_pct: 25.77
+    weight: 1
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 環保服務，年報客戶表未分項
+    details:
+    - 環保服務，年報客戶表未分項
+    edge: e195b1d6b3c84
+    evidence_level: primary
+    id: tw.2303
+    name: 聯電
+    ranking_basis: disclosed
+    share_basis: revenue
+    share_pct: 3.95
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 關係人營業收入交易對象
+    details:
+    - 關係人營業收入交易對象
+    edge: e0f56451a0553
+    evidence_level: primary
+    id: tw.9933
+    name: 中鼎
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   parents:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
@@ -66,13 +109,13 @@ relations:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接子公司
+    detail: 合併子公司
     details:
-    - 直接子公司
-    edge: eaa46d4d7019a
+    - 合併子公司
+    edge: e96f62b2f03cf
     evidence_level: primary
-    id: org.ecove-chiayi-energy
-    name: 嘉鼎綠能(股)公司
+    id: org.信鼎技術服務股份有限公司
+    name: 信鼎技術服務股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -80,13 +123,27 @@ relations:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接子公司
+    detail: 合併子公司
     details:
-    - 直接子公司
-    edge: ec8660c138c9e
+    - 合併子公司
+    edge: eba33016c439e
     evidence_level: primary
-    id: org.ecove-environment-services
-    name: 信鼎技術服務(股)公司
+    id: org.嘉鼎綠能股份有限公司
+    name: 嘉鼎綠能股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 太陽光電業務子公司
+    details:
+    - 太陽光電業務子公司
+    edge: e562de64d48a1
+    evidence_level: primary
+    id: org.昱鼎電業股份有限公司
+    name: 昱鼎電業股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -94,13 +151,27 @@ relations:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接子公司
+    detail: 合併子公司
     details:
-    - 直接子公司
-    edge: e3f2bb7efb606
+    - 合併子公司
+    edge: e0376caae67dc
     evidence_level: primary
-    id: org.ecove-miaoli-energy
-    name: 裕鼎(股)公司
+    id: org.暉鼎資源管理股份有限公司
+    name: 暉鼎資源管理股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 廢溶劑再利用子公司
+    details:
+    - 廢溶劑再利用子公司
+    edge: e328bc8d5554b
+    evidence_level: primary
+    id: org.耀鼎資源循環股份有限公司
+    name: 耀鼎資源循環股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -108,141 +179,244 @@ relations:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接子公司
+    detail: 合併子公司
     details:
-    - 直接子公司
-    edge: e6ee21a9b25f6
+    - 合併子公司
+    edge: ea4b6e1eb34a7
     evidence_level: primary
-    id: org.ecove-solar-power
-    name: 昱鼎電業(股)公司
+    id: org.裕鼎股份有限公司
+    name: 裕鼎股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-06-30'
+  transactions:
+  - amount: null
+    as_of: '2024-06-28'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接子公司
+    detail: 吸收合併原間接全資子公司
     details:
-    - 直接子公司
-    edge: ea33828a72474
+    - 吸收合併原間接全資子公司
+    edge: e85bae64dc256
+    event_date: '2024-03-04'
+    events:
+    - amount: null
+      detail: 吸收合併原間接全資子公司
+      event_date: '2024-03-04'
     evidence_level: primary
-    id: org.ecove-solvent-recycling
-    name: 耀鼎資源循環(股)公司
+    id: org.南一光電有限公司
+    name: 南一光電有限公司
     ranking_basis: unranked
+    role: buyer
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-06-30'
+  - amount: 新台幣150,000仟元
+    as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接子公司
+    detail: 子公司信鼎投資設立基鼎
     details:
-    - 直接子公司
-    edge: e059eb403f44c
+    - 子公司信鼎投資設立基鼎
+    edge: e7d4cc76c908e
+    event_date: '2026-01-23'
+    events:
+    - amount: 新台幣150,000仟元
+      detail: 子公司信鼎投資設立基鼎
+      event_date: '2026-01-23'
     evidence_level: primary
-    id: org.ecove-waste-management
-    name: 暉鼎資源管理(股)公司
+    id: org.基鼎綠能環保股份有限公司
+    name: 基鼎綠能環保股份有限公司
     ranking_basis: unranked
+    role: buyer
     share_basis: null
     share_pct: null
     weight: 1
+  - amount: null
+    as_of: '2024-06-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 吸收合併原全資子公司
+    details:
+    - 吸收合併原全資子公司
+    edge: e4fa9056267e3
+    event_date: '2024-03-04'
+    events:
+    - amount: null
+      detail: 吸收合併原全資子公司
+      event_date: '2024-03-04'
+    evidence_level: primary
+    id: org.昱鼎能源科技開發股份有限公司
+    name: 昱鼎能源科技開發股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 元鼎資源40%股權受讓策略投資人，財報未具名。
+- 國際級高科技廠商公用設施維護客戶，法說未具名。
+- 綠電轉供合約的企業用戶，未完整揭露具名交易對象。
 website: http://www.ecove.com
 tax_id: '70758512'
 incorporated: '1999-12-13'
 listed: '2010-05-27'
-as_of: '2026-10-15'
+as_of: '2026-10-26'
 confidence: ai_cross_checked
 has_research: true
 evidence:
   tw.6803#e10:
-    locator: 第15頁，列入合併財務報告之子公司表
-    published_date: '2026-08-10'
+    locator: 第021期，2023年第一季，整合回收再利用段落
+    published_date: null
     publisher: 崑鼎綠能環保股份有限公司
     quote_check: found
-    title: 民國115年及114年第二季合併財務報告
-    url: https://www.ecove.com/upload/comF/0902/合併財報/崑鼎2026合併第二季20260630.pdf
+    title: 全方位資源循環服務－精進淨零行動力
+    url: https://www.ecove.com/e-newsletter/?article=01&cat=outlook&l=CH&no=021
   tw.6803#e11:
-    locator: 第15頁，列入合併財務報告之子公司表
-    published_date: '2026-08-10'
-    publisher: 崑鼎綠能環保股份有限公司
-    quote_check: found
-    title: 民國115年及114年第二季合併財務報告
-    url: https://www.ecove.com/upload/comF/0902/合併財報/崑鼎2026合併第二季20260630.pdf
-  tw.6803#e12:
-    locator: 第15頁，列入合併財務報告之子公司表
-    published_date: '2026-08-10'
-    publisher: 崑鼎綠能環保股份有限公司
-    quote_check: found
-    title: 民國115年及114年第二季合併財務報告
-    url: https://www.ecove.com/upload/comF/0902/合併財報/崑鼎2026合併第二季20260630.pdf
-  tw.6803#e13:
-    locator: 第15頁，列入合併財務報告之子公司表
-    published_date: '2026-08-10'
-    publisher: 崑鼎綠能環保股份有限公司
-    quote_check: found
-    title: 民國115年及114年第二季合併財務報告
-    url: https://www.ecove.com/upload/comF/0902/合併財報/崑鼎2026合併第二季20260630.pdf
-  tw.6803#e14:
-    locator: 第15頁，列入合併財務報告之子公司表
-    published_date: '2026-08-10'
-    publisher: 崑鼎綠能環保股份有限公司
-    quote_check: found
-    title: 民國115年及114年第二季合併財務報告
-    url: https://www.ecove.com/upload/comF/0902/合併財報/崑鼎2026合併第二季20260630.pdf
-  tw.6803#e2:
-    locator: 第11頁，合併營收及分布圓餅圖
+    locator: 第8頁，高科與新興廢棄物再利用
     published_date: '2026-08-12'
     publisher: 崑鼎綠能環保股份有限公司
     quote_check: found
     title: 2026年第三次法人說明會簡報
     url: https://www.ecove.com/upload/comF/0903/法說會/崑鼎2026年第三次法人說明會簡報.pdf
+  tw.6803#e12:
+    locator: 第50頁，附註七（二）關係人名稱及關係
+    published_date: '2026-08-10'
+    publisher: 崑鼎綠能環保股份有限公司
+    quote_check: found
+    title: 115年及114年第二季合併財務報告
+    url: https://www.ecove.com/upload/comF/0902/合併財報/崑鼎2026合併第二季20260630.pdf
+  tw.6803#e13:
+    locator: 第50至51頁，附註七（三）1營業收入及對最終母公司收入說明
+    published_date: '2026-08-10'
+    publisher: 崑鼎綠能環保股份有限公司
+    quote_check: found
+    title: 115年及114年第二季合併財務報告
+    url: https://www.ecove.com/upload/comF/0902/合併財報/崑鼎2026合併第二季20260630.pdf
+  tw.6803#e14:
+    locator: 第15頁，附註四（三）2列入合併財務報告之子公司；投資公司與子公司欄
+    published_date: '2026-08-10'
+    publisher: 崑鼎綠能環保股份有限公司
+    quote_check: found
+    title: 115年及114年第二季合併財務報告
+    url: https://www.ecove.com/upload/comF/0902/合併財報/崑鼎2026合併第二季20260630.pdf
+  tw.6803#e15:
+    locator: 第15頁，附註四（三）2列入合併財務報告之子公司；投資公司與子公司欄
+    published_date: '2026-08-10'
+    publisher: 崑鼎綠能環保股份有限公司
+    quote_check: found
+    title: 115年及114年第二季合併財務報告
+    url: https://www.ecove.com/upload/comF/0902/合併財報/崑鼎2026合併第二季20260630.pdf
+  tw.6803#e16:
+    locator: 第15頁，附註四（三）2列入合併財務報告之子公司；投資公司與子公司欄
+    published_date: '2026-08-10'
+    publisher: 崑鼎綠能環保股份有限公司
+    quote_check: found
+    title: 115年及114年第二季合併財務報告
+    url: https://www.ecove.com/upload/comF/0902/合併財報/崑鼎2026合併第二季20260630.pdf
+  tw.6803#e17:
+    locator: 第15頁，附註四（三）2列入合併財務報告之子公司；投資公司與子公司欄
+    published_date: '2026-08-10'
+    publisher: 崑鼎綠能環保股份有限公司
+    quote_check: found
+    title: 115年及114年第二季合併財務報告
+    url: https://www.ecove.com/upload/comF/0902/合併財報/崑鼎2026合併第二季20260630.pdf
+  tw.6803#e18:
+    locator: 第15頁，附註四（三）2註4：信鼎2026年1月23日董事會決議；金額單位新台幣仟元
+    published_date: '2026-08-10'
+    publisher: 崑鼎綠能環保股份有限公司
+    quote_check: found
+    title: 115年及114年第二季合併財務報告
+    url: https://www.ecove.com/upload/comF/0902/合併財報/崑鼎2026合併第二季20260630.pdf
+  tw.6803#e19:
+    locator: 第15頁註3及第49頁附註六（三十四）1：2026年3月5日出售元鼎40%股權、未喪失控制；金額單位新台幣仟元
+    published_date: '2026-08-10'
+    publisher: 崑鼎綠能環保股份有限公司
+    quote_check: found
+    title: 115年及114年第二季合併財務報告
+    url: https://www.ecove.com/upload/comF/0902/合併財報/崑鼎2026合併第二季20260630.pdf
+  tw.6803#e2:
+    locator: 第11頁，合併營收及分布，2026年上半年圓餅圖
+    published_date: '2026-08-12'
+    publisher: 崑鼎綠能環保股份有限公司
+    quote_check: found
+    title: 2026年第三次法人說明會簡報
+    url: https://www.ecove.com/upload/comF/0903/法說會/崑鼎2026年第三次法人說明會簡報.pdf
+  tw.6803#e20:
+    locator: 第3頁，報告事項（六）簡易合併報告
+    published_date: null
+    publisher: 崑鼎綠能環保股份有限公司
+    quote_check: found
+    title: 114年股東常會議事手冊
+    url: https://www.ecove.com/upload/comF/0903/股東常會/崑鼎114年股東常會議事手冊(完整版).pdf
+  tw.6803#e21:
+    locator: 第3頁，報告事項（六）1，存續公司、消滅公司與合併基準日
+    published_date: null
+    publisher: 崑鼎綠能環保股份有限公司
+    quote_check: found
+    title: 114年股東常會議事手冊
+    url: https://www.ecove.com/upload/comF/0903/股東常會/崑鼎114年股東常會議事手冊(完整版).pdf
+  tw.6803#e22:
+    locator: 第91至92頁，2.3.9董事會重要決議，2024.03.04會議
+    published_date: '2025-02-28'
+    publisher: 崑鼎綠能環保股份有限公司
+    quote_check: found
+    title: 2024年年報英文版
+    url: https://www.ecove.com/upload/comF/0903/股東常會/2024崑鼎年報(英文公告版).pdf
+  tw.6803#e23:
+    locator: 第92頁，4.2.4銷貨客戶名單，113年度金額及占銷貨淨額比率
+    published_date: '2026-03-09'
+    publisher: 崑鼎綠能環保股份有限公司
+    quote_check: unreachable
+    title: 114年年報
+    url: https://www.ecove.com/upload/comF/0903/股東常會/崑鼎-114年年報-全.pdf
   tw.6803#e3:
-    locator: 營運與維護，焚化發電
+    locator: 營運與維護服務說明
     published_date: null
     publisher: 崑鼎綠能環保股份有限公司
     quote_check: found
-    title: 焚化發電 (EfW)
-    url: https://www.ecove.com/?C=0201&L=CH
+    title: 公司簡介
+    url: https://www.ecove.com/?C=0501&L=CH
   tw.6803#e4:
-    locator: 代表性專案，耀鼎資源循環股份有限公司
-    published_date: null
+    locator: 第90頁，4.2.2，信鼎公司主要產品之產製過程
+    published_date: '2026-03-09'
     publisher: 崑鼎綠能環保股份有限公司
-    quote_check: found
-    title: 回收再利用
-    url: https://www.ecove.com/?C=0104&L=CH
+    quote_check: unreachable
+    title: 114年年報
+    url: https://www.ecove.com/upload/comF/0903/股東常會/崑鼎-114年年報-全.pdf
   tw.6803#e5:
-    locator: 營運與維護，污水及再生水處理
-    published_date: null
+    locator: 第92頁，4.2.4銷貨客戶名單，114年度金額及占銷貨淨額比率
+    published_date: '2026-03-09'
     publisher: 崑鼎綠能環保股份有限公司
-    quote_check: found
-    title: 污水及再生水處理
-    url: https://www.ecove.com/?C=0203&L=CH
+    quote_check: unreachable
+    title: 114年年報
+    url: https://www.ecove.com/upload/comF/0903/股東常會/崑鼎-114年年報-全.pdf
   tw.6803#e6:
-    locator: 投資與管理，太陽能發電
+    locator: 廢溶劑回收量及減碳，2025年度說明
     published_date: null
     publisher: 崑鼎綠能環保股份有限公司
     quote_check: found
-    title: 太陽能發電
-    url: https://www.ecove.com/?C=0103&L=CH
+    title: 環境績效
+    url: https://www.ecove.com/csr/page.aspx?C=0303&L=CH
   tw.6803#e7:
-    locator: 技術服務，機電整合/維護
+    locator: 昱鼎簡介
     published_date: null
     publisher: 崑鼎綠能環保股份有限公司
     quote_check: found
-    title: 機電整合/維護
-    url: https://www.ecove.com/?C=0302&L=CH
+    title: 關於昱鼎
+    url: https://www.ecove.com/?C=6105&L=CH
   tw.6803#e8:
-    locator: 第50頁，附註七（二）關係人之名稱及關係
-    published_date: '2026-08-10'
+    locator: 海外代表實績，Lumberton太陽能發電廠
+    published_date: null
     publisher: 崑鼎綠能環保股份有限公司
     quote_check: found
-    title: 民國115年及114年第二季合併財務報告
-    url: https://www.ecove.com/upload/comF/0902/合併財報/崑鼎2026合併第二季20260630.pdf
+    title: 關於昱鼎
+    url: https://www.ecove.com/?C=6105&L=CH
   tw.6803#e9:
-    locator: 第15頁，列入合併財務報告之子公司表
-    published_date: '2026-08-10'
+    locator: 第7頁，水再生
+    published_date: '2026-05-14'
     publisher: 崑鼎綠能環保股份有限公司
     quote_check: found
-    title: 民國115年及114年第二季合併財務報告
-    url: https://www.ecove.com/upload/comF/0902/合併財報/崑鼎2026合併第二季20260630.pdf
+    title: 2026年第二次法人說明會簡報
+    url: https://www.ecove.com/upload/comF/0903/法說會/崑鼎2026年第二次法人說明會簡報.pdf

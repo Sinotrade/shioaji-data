@@ -26,21 +26,21 @@ chain_stage:
   stage_name: IP 與 IC 設計
   tier: upstream
 primary_chain_position: upstream
-summary_short: 設計與授權基礎及高速介面矽智財，收取授權金與權利金。
-summary_long: M31（円星科技）以矽智財設計與授權為主要業務，產品包括標準元件庫、記憶體編譯器，以及PCIe、USB4與MIPI等高速介面IP。標準元件庫支援晶片邏輯設計，記憶體編譯器提供嵌入式記憶體設計方案；高速介面產品用於晶片資料傳輸。2026年第二季營收中，授權金占82.2%，權利金占17.8%。公司亦投入面向AI伺服器及高速互聯應用的PCIe Gen6與112G SerDes IP開發，並透過美國、印度與上海子公司提供行銷或技術服務。
+summary_short: 設計並授權基礎元件、高速介面及類比矽智財，收取授權金與權利金。
+summary_long: M31（円星科技）從事矽智財設計與授權，產品涵蓋標準元件庫、記憶體編譯器、GPIO等基礎元件IP，以及USB、PCIe、MIPI、SerDes等高速介面IP與類比IP。2025年營收組合為授權金85.1%、權利金14.9%。公司與台積電合作推進eUSB2 IP，並曾公開採用Synopsys及Cadence的EDA工具。2026年與Ambiq共同開發台積電N12e超低功耗基礎IP，並擴大與Rambus的MIPI控制器技術合作。同年引進信驊認購私募普通股53萬股，於8月12日收足新台幣187,090,000元，雙方合作涉及AI伺服器及高速介面IP。
 segments:
 - evidence_ids:
-  - e6
-  id: seg.license
-  name: 授權金
-  period: 2026年第2季
-  revenue_share_pct: 82.2
+  - e04
+  id: seg_license
+  name: 矽智財授權金
+  period: '2025'
+  revenue_share_pct: 85.1
 - evidence_ids:
-  - e6
-  id: seg.royalty
-  name: 權利金
-  period: 2026年第2季
-  revenue_share_pct: 17.8
+  - e05
+  id: seg_royalty
+  name: 矽智財權利金
+  period: '2025'
+  revenue_share_pct: 14.9
 main_theme: theme.ai_server
 themes:
 - also: []
@@ -48,6 +48,49 @@ themes:
   theme: theme.ai_server
   tier: upstream
 relations:
+  competitors:
+  - as_of: '2023-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 基礎元件矽智財市場
+    details:
+    - 基礎元件矽智財市場
+    edge: ee635e460e581
+    evidence_level: primary
+    id: us.ARM
+    name: Arm Holdings plc
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 基礎元件與高速介面矽智財市場
+    details:
+    - 基礎元件與高速介面矽智財市場
+    edge: efba83f01f3af
+    evidence_level: primary
+    id: us.CDNS
+    name: Cadence
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 基礎元件與高速介面矽智財市場
+    details:
+    - 基礎元件與高速介面矽智財市場
+    edge: edc9b64fe4137
+    evidence_level: primary
+    id: us.SNPS
+    name: Synopsys
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   partners:
   - as_of: '2026-08-18'
     confidence: ai_cross_checked
@@ -55,10 +98,67 @@ relations:
     detail: BMC、3D相機與高速介面IP合作
     details:
     - BMC、3D相機與高速介面IP合作
+    - AI伺服器與高速介面IP合作
     edge: ee5e468ca455d
     evidence_level: primary
     id: tw.5274
     name: 信驊
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 2
+  - as_of: '2017-09-15'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 矽智財與晶圓代工合作
+    details:
+    - 矽智財與晶圓代工合作
+    edge: e037c789cdbea
+    evidence_level: media
+    id: tw.2303
+    name: 聯電
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-04-25'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 先進製程eUSB2 IP開發與驗證
+    details:
+    - 先進製程eUSB2 IP開發與驗證
+    edge: e17504c09a6f8
+    evidence_level: primary
+    id: tw.2330
+    name: 台積電
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-09-24'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 台積電N12e超低功耗Foundation IP
+    details:
+    - 台積電N12e超低功耗Foundation IP
+    edge: ec15930303459
+    evidence_level: primary
+    id: us.AMBQ
+    name: Ambiq
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-09-17'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: MIPI CSI及DSI Controller技術整合
+    details:
+    - MIPI CSI及DSI Controller技術整合
+    edge: e0c4908b0d6b8
+    evidence_level: primary
+    id: us.RMBS
+    name: Rambus
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -67,9 +167,9 @@ relations:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 透過Sirius Venture Ltd.間接持股100%的上海子公司
+    detail: 透過Sirius Venture Ltd.間接持有子公司
     details:
-    - 透過Sirius Venture Ltd.間接持股100%的上海子公司
+    - 透過Sirius Venture Ltd.間接持有子公司
     edge: eb55e6b79409e
     evidence_level: primary
     id: org.m31-shanghai
@@ -78,30 +178,16 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2025-12-31'
+  - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持股100%的印度子公司
+    detail: 印度直接持有子公司
     details:
-    - 直接持股100%的印度子公司
+    - 印度直接持有子公司
     edge: e885e6328df0d
     evidence_level: primary
     id: org.m31-technologies-india
-    name: M31 Technologies India Private Limited
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
-  - as_of: '2025-12-31'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 直接持股100%的美國子公司
-    details:
-    - 直接持股100%的美國子公司
-    edge: ea2302eebe773
-    evidence_level: primary
-    id: org.m31-technology-usa
-    name: M31 Technology USA, Inc.
+    name: M31 Technologies India Private Ltd.
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -109,25 +195,69 @@ relations:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持股100%的投資控股子公司
+    detail: 美國直接持有子公司
     details:
-    - 直接持股100%的投資控股子公司
-    edge: e648280515040
+    - 美國直接持有子公司
+    edge: ea2302eebe773
     evidence_level: primary
-    id: org.sirius-venture-m31
+    id: org.m31-technology-usa
+    name: M31 Technology USA, INC.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有投資控股子公司
+    details:
+    - 直接持有投資控股子公司
+    edge: eb3ce2288bb6d
+    evidence_level: primary
+    id: org.sirius-venture
     name: Sirius Venture Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: '2022-03-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: Liberate Trio元件庫特性分析與CloudBurst雲端平台
+    details:
+    - Liberate Trio元件庫特性分析與CloudBurst雲端平台
+    edge: e0769e200774d
+    evidence_level: primary
+    id: us.CDNS
+    name: Cadence
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: Synopsys Cloud SaaS、PrimeLib及PrimeSim
+    details:
+    - Synopsys Cloud SaaS、PrimeLib及PrimeSim
+    edge: ede46e45fea8d
+    evidence_level: primary
+    id: us.SNPS
+    name: Synopsys
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
   transactions:
   - amount: 新台幣187,090,000元
-    as_of: '2026-08-05'
+    as_of: '2026-08-12'
     confidence: ai_cross_checked
     counterparty_shares: []
     detail: 認購M31私募普通股53萬股
     details:
     - 認購M31私募普通股53萬股
+    - 信驊認購M31私募普通股
     edge: e17bec82bf387
     event_date: '2026-08-05'
     events:
@@ -141,89 +271,232 @@ relations:
     role: seller
     share_basis: null
     share_pct: null
+    weight: 2
+  - amount: 美金418仟元
+    as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 對子公司現金增資
+    details:
+    - 對子公司現金增資
+    - 2025年度追加子公司投資
+    edge: e1a64ba5229be
+    event_date: '2024-08-06'
+    events:
+    - amount: 美金418仟元
+      detail: 對子公司現金增資
+      event_date: '2024-08-06'
+    - amount: 新台幣13,158仟元
+      detail: 2025年度追加子公司投資
+      event_date: null
+    evidence_level: primary
+    id: org.sirius-venture
+    name: Sirius Venture Ltd.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
     weight: 1
+  - amount: null
+    as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 普通股策略投資
+    details:
+    - 普通股策略投資
+    edge: eebf1d950ed0e
+    event_date: null
+    events:
+    - amount: null
+      detail: 普通股策略投資
+      event_date: null
+    evidence_level: primary
+    id: org.創星電路設計股份有限公司
+    name: 創星電路設計股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 北美指標性企業
+- 歐洲車用領導廠
+- 國際IDM大廠
+- 北美新創AI穿戴式裝置公司
+- 未具名封裝及測試供應商
 website: https://www.m31tech.com
 tax_id: '53621915'
 incorporated: '2011-10-21'
 listed: '2019-01-23'
-as_of: '2026-10-15'
+as_of: '2026-10-26'
 confidence: ai_cross_checked
 has_research: true
 evidence:
-  tw.6643#e1:
-    locator: 產品介紹及Standard Cell Library IP Portfolio
+  tw.6643#e01:
+    locator: 產品總覽首段
     published_date: null
-    publisher: 円星科技股份有限公司
+    publisher: M31
     quote_check: found
-    title: Standard Cell Library
-    url: https://www.m31tech.com/zh-hant/product/m31-standard-cell-library/
+    title: Products
+    url: https://www.m31tech.com/zh-hant/products/
+  tw.6643#e02:
+    locator: 產品總覽首段
+    published_date: null
+    publisher: M31
+    quote_check: found
+    title: Products
+    url: https://www.m31tech.com/zh-hant/products/
+  tw.6643#e03:
+    locator: 產品總覽首段
+    published_date: null
+    publisher: M31
+    quote_check: found
+    title: Products
+    url: https://www.m31tech.com/zh-hant/products/
+  tw.6643#e04:
+    locator: 第11頁，Revenue Mix & Segment Growth，License說明
+    published_date: '2026-03-11'
+    publisher: M31
+    quote_check: found
+    title: M31 2025年第四季法人說明會
+    url: https://www.m31tech.com/wp-content/uploads/2026/03/%E5%86%86%E6%98%9F%E7%A7%91%E6%8A%802025%E5%B9%B4%E7%AC%AC%E5%9B%9B%E5%AD%A3%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83_03112026-1.pdf
+  tw.6643#e05:
+    locator: 第11頁，Revenue Mix & Segment Growth
+    published_date: '2026-03-11'
+    publisher: M31
+    quote_check: found
+    title: M31 2025年第四季法人說明會
+    url: https://www.m31tech.com/wp-content/uploads/2026/03/%E5%86%86%E6%98%9F%E7%A7%91%E6%8A%802025%E5%B9%B4%E7%AC%AC%E5%9B%9B%E5%AD%A3%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83_03112026-1.pdf
+  tw.6643#e06:
+    locator: 成功案例導言
+    published_date: null
+    publisher: Synopsys
+    quote_check: found
+    title: M31 Achieves 15x Faster Characterization with 77% Higher Accuracy for 12nm IP on Synopsys Cloud with PrimeLib
+    url: https://www.synopsys.com/success-stories/m31-faster-characterization-synopsys-cloud-primelib.html
+  tw.6643#e07:
+    locator: 新聞稿正文
+    published_date: '2022-03-30'
+    publisher: Cadence Design Systems, Inc.
+    quote_check: found
+    title: M31 Speeds Delivery of Silicon IP by 5X Using the Cadence Library Characterization Solution in the Cloud
+    url: https://www.cadence.com/en_US/home/company/newsroom/press-releases/pr/2022/m31-speeds-delivery-of-silicon-ip-by-5x-using-the-cadence.html
+  tw.6643#e08:
+    locator: 執行長談話
+    published_date: '2025-04-25'
+    publisher: M31
+    quote_check: found
+    title: M31 Collaborates with TSMC to Advance 2nm eUSB2 IP Innovation
+    url: https://www.m31tech.com/m31-collaborates-with-tsmc-to-advance-2nm-eusb2-ip-innovation/
+  tw.6643#e09:
+    locator: 記者洪友芳報導，合作晶圓廠段落
+    published_date: '2017-09-15'
+    publisher: 自由時報
+    quote_check: found
+    title: 円星科技20日登錄興櫃參考價230元
+    url: https://ec.ltn.com.tw/article/breakingnews/2194140
   tw.6643#e10:
-    locator: 第17頁，附註十一子公司，投資公司為本公司之列
-    published_date: null
-    publisher: 円星科技股份有限公司
+    locator: 印刷頁72，競爭情形
+    published_date: '2024-04-10'
+    publisher: M31
     quote_check: found
-    title: 民國115及114年第2季合併財務報告暨會計師核閱報告
-    url: https://www.m31tech.com/wp-content/uploads/2026/09/円星115Q2財報電子書.pdf
+    title: 円星科技股份有限公司2023年度年報
+    url: https://www.m31tech.com/wp-content/uploads/2024/06/112M31%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1_All.pdf
   tw.6643#e11:
-    locator: 第17頁，附註十一子公司；第50頁大陸投資資訊
+    locator: 印刷頁65，競爭情形
     published_date: null
-    publisher: 円星科技股份有限公司
+    publisher: M31
     quote_check: found
-    title: 民國115及114年第2季合併財務報告暨會計師核閱報告
-    url: https://www.m31tech.com/wp-content/uploads/2026/09/円星115Q2財報電子書.pdf
-  tw.6643#e2:
-    locator: 產品介紹第一段及Compiler Types
-    published_date: null
-    publisher: 円星科技股份有限公司
+    title: 円星科技股份有限公司2025年度年報（2026年8月修改版）
+    url: https://www.m31tech.com/wp-content/uploads/2026/08/M31%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1_202608%E4%BF%AE%E6%94%B9%E7%89%88.pdf
+  tw.6643#e12:
+    locator: Ambiq技術長談話及方案說明
+    published_date: '2026-09-24'
+    publisher: M31
     quote_check: found
-    title: Memory Compiler
-    url: https://www.m31tech.com/zh-hant/product/memory-compiler/
-  tw.6643#e3:
-    locator: 產品介紹第一段
-    published_date: null
-    publisher: 円星科技股份有限公司
+    title: M31 攜手 Ambiq 推出基於台積公司 N12e® 製程的超低功耗 Foundation IP 解決方案，助攻 SoC 設計達成低功耗與小面積目標
+    url: https://www.m31tech.com/zh-hant/m31-and-ambiq-collaborate-on-tsmc-n12e-foundation-ip-to-address-demanding-soc-power-and-area-targets/
+  tw.6643#e13:
+    locator: 標題及新聞稿首段
+    published_date: '2026-09-17'
+    publisher: M31
     quote_check: found
-    title: PCIe 5.0 PHY
-    url: https://www.m31tech.com/zh-hant/product/pcie-5-0-phy/
-  tw.6643#e4:
-    locator: 產品介紹第一段
-    published_date: null
-    publisher: 円星科技股份有限公司
+    title: M31擴大與Rambus技術合作 強化MIPI一站式解決方案
+    url: https://www.m31tech.com/zh-hant/m31-expands-rambus-collaboration-strengthening-its-one-stop-mipi-subsystem-solution/
+  tw.6643#e14:
+    locator: 合作關係說明
+    published_date: '2026-08-06'
+    publisher: M31
     quote_check: found
-    title: USB4 Gen3x2 PHY
-    url: https://www.m31tech.com/zh-hant/product/usb4-gen3x2-phy/
-  tw.6643#e5:
-    locator: 產品介紹第一段
-    published_date: null
-    publisher: 円星科技股份有限公司
-    quote_check: found
-    title: MIPI C-PHY/D-PHY Combo
-    url: https://www.m31tech.com/zh-hant/product/mipi-c-phy-d-phy-combo/
-  tw.6643#e6:
-    locator: 第1頁，收入結構段落
-    published_date: '2026-08-12'
-    publisher: 円星科技股份有限公司
-    quote_check: found
-    title: 円星科技2026年第二季每股盈餘新台幣-0.06元
-    url: https://www.m31tech.com/wp-content/uploads/2026/08/繁中_円星科技2026年第二季每股盈餘新台幣-0.06元.pdf
-  tw.6643#e7:
-    locator: 引進信驊策略投資、攜手拓展AI伺服器與高速介面商機段落
+    title: M31 Board Approves Private Placement to Bring in ASPEED as Strategic Investor
+    url: https://www.m31tech.com/m31-board-approves-private-placement-to-bring-in-aspeed-as-strategic-investor/
+  tw.6643#e15:
+    locator: 首段，信驊策略投資與合作範圍
     published_date: '2026-08-18'
-    publisher: 円星科技股份有限公司
+    publisher: M31
     quote_check: found
     title: 先進製程權利金年增近四倍 M31：布局逐步進入收成期
-    url: https://www.m31tech.com/zh-hant/先進製程權利金年增近四倍-m31%EF%BC%9A布局逐步進入收成/
-  tw.6643#e8:
-    locator: 第51頁轉投資持股表；第92頁關係企業基本資料
-    published_date: '2026-03-25'
-    publisher: 円星科技股份有限公司
+    url: https://www.m31tech.com/zh-hant/%E5%85%88%E9%80%B2%E8%A3%BD%E7%A8%8B%E6%AC%8A%E5%88%A9%E9%87%91%E5%B9%B4%E5%A2%9E%E8%BF%91%E5%9B%9B%E5%80%8D-m31%EF%BC%9A%E5%B8%83%E5%B1%80%E9%80%90%E6%AD%A5%E9%80%B2%E5%85%A5%E6%94%B6%E6%88%90/
+  tw.6643#e16:
+    locator: 公告第3至4項
+    published_date: '2026-08-05'
+    publisher: 公開資訊觀測站重大訊息（台視財經／MoneyDJ轉刊）
     quote_check: found
-    title: 2025年度年報（官網修訂版）
-    url: https://www.m31tech.com/wp-content/uploads/2026/08/M31股東會年報_202608修改版.pdf
-  tw.6643#e9:
-    locator: 第51頁轉投資持股表；第92頁關係企業基本資料
-    published_date: '2026-03-25'
-    publisher: 円星科技股份有限公司
+    title: M31董事會決議115年第1次私募53萬股、每股353元，應募人信驊
+    url: https://www.ttv.com.tw/finance/view/08202605175137583AEA46244BB0AFF3F810D0C273152EF0/588
+  tw.6643#e17:
+    locator: 發生緣由第2項
+    published_date: '2026-08-12'
+    publisher: 公開資訊觀測站重大訊息（鉅亨網轉刊）
     quote_check: found
-    title: 2025年度年報（官網修訂版）
-    url: https://www.m31tech.com/wp-content/uploads/2026/08/M31股東會年報_202608修改版.pdf
+    title: M31:公告本公司115年第一次私募普通股收足股款暨增資基準日
+    url: https://news.cnyes.com/news/id/6573627
+  tw.6643#e18:
+    locator: 第29頁，採用權益法之投資，註1
+    published_date: null
+    publisher: M31
+    quote_check: found
+    title: 円星科技股份有限公司114及113年度個體財務報告
+    url: https://www.m31tech.com/wp-content/uploads/2026/03/%E5%86%86%E6%98%9F114Q4%E5%80%8B%E9%AB%94%E9%9B%BB%E5%AD%90%E6%9B%B8final.pdf
+  tw.6643#e19:
+    locator: 第69頁，採用權益法之投資變動明細表；金額仟元、股數仟股
+    published_date: null
+    publisher: M31
+    quote_check: found
+    title: 円星科技股份有限公司114及113年度個體財務報告
+    url: https://www.m31tech.com/wp-content/uploads/2026/03/%E5%86%86%E6%98%9F114Q4%E5%80%8B%E9%AB%94%E9%9B%BB%E5%AD%90%E6%9B%B8final.pdf
+  tw.6643#e20:
+    locator: 第26頁，透過其他綜合損益按公允價值衡量之金融資產
+    published_date: null
+    publisher: M31
+    quote_check: found
+    title: 円星科技股份有限公司及子公司113及112年度合併財務報告
+    url: https://www.m31tech.com/wp-content/uploads/2025/02/%E5%86%86%E6%98%9F113Q4IFRS%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-S.pdf
+  tw.6643#e21:
+    locator: 第17頁，列入合併財務報告之子公司
+    published_date: null
+    publisher: M31
+    quote_check: found
+    title: 円星科技股份有限公司及子公司115年第2季合併財務報告
+    url: https://www.m31tech.com/wp-content/uploads/2026/09/%E5%86%86%E6%98%9F115Q2%E8%B2%A1%E5%A0%B1%E9%9B%BB%E5%AD%90%E6%9B%B8.pdf
+  tw.6643#e22:
+    locator: 第17頁，列入合併財務報告之子公司
+    published_date: null
+    publisher: M31
+    quote_check: found
+    title: 円星科技股份有限公司及子公司115年第2季合併財務報告
+    url: https://www.m31tech.com/wp-content/uploads/2026/09/%E5%86%86%E6%98%9F115Q2%E8%B2%A1%E5%A0%B1%E9%9B%BB%E5%AD%90%E6%9B%B8.pdf
+  tw.6643#e23:
+    locator: 第17頁，列入合併財務報告之子公司
+    published_date: null
+    publisher: M31
+    quote_check: found
+    title: 円星科技股份有限公司及子公司115年第2季合併財務報告
+    url: https://www.m31tech.com/wp-content/uploads/2026/09/%E5%86%86%E6%98%9F115Q2%E8%B2%A1%E5%A0%B1%E9%9B%BB%E5%AD%90%E6%9B%B8.pdf
+  tw.6643#e24:
+    locator: 第17頁子公司表及第50頁大陸投資資訊
+    published_date: null
+    publisher: M31
+    quote_check: found
+    title: 円星科技股份有限公司及子公司115年第2季合併財務報告
+    url: https://www.m31tech.com/wp-content/uploads/2026/09/%E5%86%86%E6%98%9F115Q2%E8%B2%A1%E5%A0%B1%E9%9B%BB%E5%AD%90%E6%9B%B8.pdf

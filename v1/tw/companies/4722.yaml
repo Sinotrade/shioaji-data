@@ -17,32 +17,35 @@ industry:
   l3: chem.specialty
   l3_name: 特用化學品
   l3_name_en: Specialty Chemicals
-chain: chain.pcb
+chain: chain.petrochem
 chain_stage:
   agreement: both
-  also: []
-  reason: 鏈內業務為高頻高速銅箔基板用樹脂及PSMA，屬上游材料。
-  stage: materials
-  stage_name: 銅箔、玻纖布、樹脂
-  tier: upstream
-primary_chain_position: upstream
-summary_short: 製造銷售UV光固化材料、機能性樹脂與高頻電子材料。
-summary_long: 國精化以製造及銷售UV光固化材料、機能性樹脂與電子材料為主要業務。2026年上半年，三者營收占比分別為48.2%、32.0%與19.8%，UV光固化材料仍為最大來源。UV產品涵蓋反應單體與寡聚物，供塗料與油墨使用；傳統樹脂則包括不飽和聚酯與醇酸樹脂。電子材料包含低介電高頻銅箔基板樹脂及PSMA，應用於AI伺服器、高速交換器與5G高頻基板，在PCB材料供應鏈位於樹脂環節。
+  also:
+  - stage: midstream
+    stage_name: 中間原料
+    tier: midstream
+  reason: UV光固化材料占48.2%最大，與機能性樹脂屬下游材料；另製造反應單體等中間原料。
+  stage: downstream
+  stage_name: 塑膠、纖維與加工
+  tier: downstream
+primary_chain_position: downstream
+summary_short: 製造UV光固化材料、機能性樹脂及高頻電路板用電子化學材料。
+summary_long: 國精化學製造UV光固化材料、機能性樹脂與電子材料，2026年上半年營收占比分別為48.2%、32.0%及19.8%，以UV光固化材料為最大產品線。UV產品包括反應單體、寡聚物、光起始劑與助劑；機能性樹脂涵蓋不飽和聚酯及塗料樹脂。電子材料包括低介電耗損樹脂，應用於5G高頻通訊及AI伺服器用電路板，另有供高頻銅箔基板使用的PSMA樹脂。具名報導指出，台光電、台燿及生益科技已完成相關材料驗證並陸續出貨。公司與JSR合作開發5G材料，透過IGM拓展能量固化樹脂通路，並與Electroninks及EMD Electronics合作提供先進封裝材料與應用服務。
 segments:
 - evidence_ids:
-  - e2
+  - e1
   id: seg_uv
   name: UV光固化材料
   period: 2026年上半年
   revenue_share_pct: 48.2
 - evidence_ids:
-  - e2
+  - e1
   id: seg_functional
   name: 機能性樹脂
   period: 2026年上半年
   revenue_share_pct: 32
 - evidence_ids:
-  - e2
+  - e1
   id: seg_electronic
   name: 電子材料
   period: 2026年上半年
@@ -58,13 +61,128 @@ themes:
   theme: theme.5g
   tier: upstream
 relations:
-  subsidiaries:
-  - as_of: '2026-06-30'
+  competitors:
+  - as_of: '2025-07-16'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持有的全資子公司
+    detail: UV光固化樹脂市場競爭
     details:
-    - 直接持有的全資子公司
+    - UV光固化樹脂市場競爭
+    edge: efc224dc51099
+    evidence_level: media
+    id: tw.1717
+    name: 長興
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  customers:
+  - as_of: '2025-12-01'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 高階CCL用5G樹脂材料
+    details:
+    - 高階CCL用5G樹脂材料
+    edge: e1e7677da661e
+    evidence_level: media
+    id: cn.600183
+    name: 廣東生益科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-01'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 高階CCL用5G樹脂材料
+    details:
+    - 高階CCL用5G樹脂材料
+    edge: e9111c44fecfe
+    evidence_level: media
+    id: tw.2383
+    name: 台光電
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-01'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 高階CCL用5G樹脂材料
+    details:
+    - 高階CCL用5G樹脂材料
+    edge: e9a7e9df7df6d
+    evidence_level: media
+    id: tw.6274
+    name: 台燿
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  partners:
+  - as_of: '2026-09-02'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 先進封裝材料與應用服務
+    details:
+    - 先進封裝材料與應用服務
+    edge: e7aff2de099cc
+    evidence_level: primary
+    id: org.electroninks
+    name: Electroninks
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-09-02'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 先進封裝合作與廠內應用實驗室
+    details:
+    - 先進封裝合作與廠內應用實驗室
+    edge: eb2e8a1f97bf9
+    evidence_level: primary
+    id: org.emd-electronics
+    name: EMD Electronics
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2023-02-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 能量固化樹脂通路經銷
+    details:
+    - 能量固化樹脂通路經銷
+    edge: e5354a0c15402
+    evidence_level: primary
+    id: org.igm-resins
+    name: iGM Resins
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-01'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 5G高頻基板材料研發合作
+    details:
+    - 5G高頻基板材料研發合作
+    edge: ee92723cea6f1
+    evidence_level: media
+    id: org.jsr
+    name: JSR Corporation
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接全資子公司
+    details:
+    - 直接全資子公司
     edge: eb40a17e72501
     evidence_level: primary
     id: org.chao-chien-international
@@ -73,12 +191,26 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-06-30'
+  - as_of: '2024-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持有的全資子公司
+    detail: 透過海外控股公司間接持有的子公司
     details:
-    - 直接持有的全資子公司
+    - 透過海外控股公司間接持有的子公司
+    edge: e066d627bd24a
+    evidence_level: primary
+    id: org.jiangmen-qualipoly
+    name: 江門國精合成材料有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接全資子公司
+    details:
+    - 直接全資子公司
     edge: e76dccbae0eba
     evidence_level: primary
     id: org.qualipoly-international
@@ -87,137 +219,104 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-06-30'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 間接持有的全資營運子公司
-    details:
-    - 間接持有的全資營運子公司
-    edge: e85d88e459cff
-    evidence_level: primary
-    id: org.昆山朝建化學材料有限公司
-    name: 昆山朝建化學材料有限公司
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
-  - as_of: '2026-06-30'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 間接持有的全資營運子公司
-    details:
-    - 間接持有的全資營運子公司
-    edge: e7bc818ea5ee1
-    evidence_level: primary
-    id: org.江門國精合成材料有限公司
-    name: 江門國精合成材料有限公司
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
+unresolved_mentions:
+- 已通過M10樹脂驗證但未具名的客戶
 website: www.qualipoly.com.tw
 tax_id: '75975242'
 incorporated: '1978-11-25'
 listed: '2012-08-15'
-as_of: '2026-10-15'
+as_of: '2026-10-26'
 confidence: ai_cross_checked
 has_research: true
 evidence:
   tw.4722#e1:
-    locator: 公司簡介與頁尾
-    published_date: null
-    publisher: 國精化學股份有限公司
-    quote_check: found
-    title: 企業簡介
-    url: https://www.qualipoly.com/zh-tw/a1/企業簡介.html
-  tw.4722#e10:
-    locator: 產品轉型與技術發展
-    published_date: null
-    publisher: 國精化學股份有限公司
-    quote_check: found
-    title: 企業簡介
-    url: https://www.qualipoly.com/zh-tw/a1/企業簡介.html
-  tw.4722#e11:
-    locator: 合併基礎／列入合併財務報表之子公司表：投資公司為國精化學股份有限公司，該列本期持股100.00%
-    published_date: '2026-08-07'
-    publisher: 國精化學股份有限公司；FinancialReports鏡像
-    quote_check: found
-    title: 國精化學股份有限公司2026年第二季合併財務報告XBRL
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52421/2026/RNS/52421_rns_2026-08-07_cfc85398-c795-4237-b6a7-a7067c9d3c0d.html
-  tw.4722#e12:
-    locator: 合併基礎／列入合併財務報表之子公司表：投資公司為國精化學股份有限公司，該列本期持股100.00%
-    published_date: '2026-08-07'
-    publisher: 國精化學股份有限公司；FinancialReports鏡像
-    quote_check: found
-    title: 國精化學股份有限公司2026年第二季合併財務報告XBRL
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52421/2026/RNS/52421_rns_2026-08-07_cfc85398-c795-4237-b6a7-a7067c9d3c0d.html
-  tw.4722#e13:
-    locator: 合併基礎／子公司表：國精化學持有Qualipoly International Inc.、後者持有Chaoyang International Inc.、再持有江門國精，各層本期持股100.00%
-    published_date: '2026-08-07'
-    publisher: 國精化學股份有限公司；FinancialReports鏡像
-    quote_check: found
-    title: 國精化學股份有限公司2026年第二季合併財務報告XBRL
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52421/2026/RNS/52421_rns_2026-08-07_cfc85398-c795-4237-b6a7-a7067c9d3c0d.html
-  tw.4722#e14:
-    locator: 合併基礎／子公司表：國精化學持有Chao Chien International Inc.，後者持有昆山朝建，各層本期持股100.00%
-    published_date: '2026-08-07'
-    publisher: 國精化學股份有限公司；FinancialReports鏡像
-    quote_check: found
-    title: 國精化學股份有限公司2026年第二季合併財務報告XBRL
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52421/2026/RNS/52421_rns_2026-08-07_cfc85398-c795-4237-b6a7-a7067c9d3c0d.html
-  tw.4722#e2:
-    locator: 第30頁，主要產品營收結構，2026年上半年
+    locator: 第30頁，主要產品營收結構
     published_date: '2026-10-14'
     publisher: 國精化學股份有限公司
     quote_check: found
-    title: 2026年10月14日法人說明會簡報
+    title: 國精化學2026年10月14日法人說明會簡報
+    url: https://www.qualipoly.com/files/4722國精化學20261014法說會.pdf
+  tw.4722#e10:
+    locator: 市場銷售及競爭／國內外競爭廠商
+    published_date: '2025-07-16'
+    publisher: MoneyDJ理財網／嘉實投顧
+    quote_check: found
+    title: 國精化學股份有限公司
+    url: https://www.moneydj.com/KMDJ/Wiki/WikiViewer.aspx?KeyID=2e196a60-fff8-440e-896d-cc1dee67b0fe
+  tw.4722#e11:
+    locator: 新聞稿標題
+    published_date: '2026-09-02'
+    publisher: Electroninks
+    quote_check: found
+    title: Electroninks, EMD Electronics and Qualipoly Forge Strategic Partnership to Accelerate Advanced Packaging Solutions
+    url: https://electroninks.com/electroninks-emd-electronics-and-qualipoly-forge-strategic-partnership-to-accelerate-advanced-packaging-solutions/
+  tw.4722#e12:
+    locator: 副標題
+    published_date: '2026-09-02'
+    publisher: Electroninks
+    quote_check: found
+    title: Electroninks, EMD Electronics and Qualipoly Forge Strategic Partnership to Accelerate Advanced Packaging Solutions
+    url: https://electroninks.com/electroninks-emd-electronics-and-qualipoly-forge-strategic-partnership-to-accelerate-advanced-packaging-solutions/
+  tw.4722#e13:
+    locator: 年報第77頁，關係企業組織圖；第79頁持股資料
+    published_date: null
+    publisher: 國精化學股份有限公司；FinancialFilings轉載全文
+    quote_check: unreachable
+    title: 國精化學一一三年度年報
+    url: https://financialfilings.com/filings/qpc-4722/annual-report/2025/34612187/
+  tw.4722#e2:
+    locator: 第11頁，產品組合／UV光固化材料
+    published_date: '2026-10-14'
+    publisher: 國精化學股份有限公司
+    quote_check: found
+    title: 國精化學2026年10月14日法人說明會簡報
     url: https://www.qualipoly.com/files/4722國精化學20261014法說會.pdf
   tw.4722#e3:
-    locator: 第11頁，5G材料：CCL供應鏈；上游列有低Df聚合物、PSMA及硬化劑／助劑
-    published_date: '2026-08-07'
-    publisher: 國精化學股份有限公司
-    quote_check: found
-    title: 2026年8月7日法人說明會簡報
-    url: https://www.qualipoly.com/files/4722國精化學20260807法說會.pdf
-  tw.4722#e4:
-    locator: 第8頁，UV光固化材料；產品配方與主要應用
-    published_date: '2026-08-07'
-    publisher: 國精化學股份有限公司
-    quote_check: found
-    title: 2026年8月7日法人說明會簡報
-    url: https://www.qualipoly.com/files/4722國精化學20260807法說會.pdf
-  tw.4722#e5:
-    locator: 第14頁，材料世代對應
+    locator: 第11頁，產品組合／機能性樹脂
     published_date: '2026-10-14'
     publisher: 國精化學股份有限公司
-    quote_check: not_found
-    title: 2026年10月14日法人說明會簡報
+    quote_check: found
+    title: 國精化學2026年10月14日法人說明會簡報
     url: https://www.qualipoly.com/files/4722國精化學20261014法說會.pdf
-  tw.4722#e6:
+  tw.4722#e4:
+    locator: 說明
+    published_date: null
+    publisher: 國精化學股份有限公司
+    quote_check: found
+    title: 低介電耗損樹脂
+    url: https://www.qualipoly.com/zh-tw/product-735203/低介電耗損樹脂.html
+  tw.4722#e5:
     locator: 第15頁，PSMA特用樹脂
     published_date: '2026-10-14'
     publisher: 國精化學股份有限公司
     quote_check: found
-    title: 2026年10月14日法人說明會簡報
+    title: 國精化學2026年10月14日法人說明會簡報
+    url: https://www.qualipoly.com/files/4722國精化學20261014法說會.pdf
+  tw.4722#e6:
+    locator: 第12頁，電子材料應用領域
+    published_date: '2026-10-14'
+    publisher: 國精化學股份有限公司
+    quote_check: found
+    title: 國精化學2026年10月14日法人說明會簡報
     url: https://www.qualipoly.com/files/4722國精化學20261014法說會.pdf
   tw.4722#e7:
-    locator: 產品名稱與說明
-    published_date: null
-    publisher: 國精化學股份有限公司
+    locator: 供應情況段落
+    published_date: '2025-12-01'
+    publisher: 經濟日報
     quote_check: found
-    title: 苯乙烯－馬來酸酐共聚物（PSMA）
-    url: https://www.qualipoly.com/zh-tw/product-735192/苯乙烯－馬來酸酐共聚物-PSMA.html
+    title: 國精化獲CCL大廠追單
+    url: https://money.udn.com/money/amp/story/5710/9172918
   tw.4722#e8:
-    locator: 產品說明
-    published_date: null
-    publisher: 國精化學股份有限公司
+    locator: 末段，JSR合作
+    published_date: '2025-12-01'
+    publisher: 經濟日報
     quote_check: found
-    title: 不飽和聚酯樹脂
-    url: https://www.qualipoly.com/zh-tw/product-735186/不飽和聚酯樹脂.html
+    title: 國精化獲CCL大廠追單
+    url: https://money.udn.com/money/amp/story/5710/9172918
   tw.4722#e9:
-    locator: 產品說明
-    published_date: null
-    publisher: 國精化學股份有限公司
+    locator: 新聞稿第二段
+    published_date: '2023-02-13'
+    publisher: iGM Resins
     quote_check: found
-    title: 醇酸／飽和聚酯
-    url: https://www.qualipoly.com/zh-tw/product-735189/醇酸-飽和聚酯.html
+    title: iGM Resins Partners with Qualipoly for Supply and Distribution Agreement
+    url: https://igmresins.com/en/news-events/iGM-Resins-Partners-with-Qualipoly-for-Supply-and-Distribution-Agreement

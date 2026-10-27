@@ -4,10 +4,10 @@
 
 - 英文：Apple Supply Chain
 - 別名：Apple、蘋果
-- 成員：24 家
+- 成員：25 家
 - 完整成員與證據見同目錄同名 YAML，或 themes.json
 
-## 零組件（上游，16 家）
+## 零組件（上游，17 家）
 
 | 代號 | 名稱 | 說明 |
 | --- | --- | --- |
@@ -16,15 +16,16 @@
 | [2313](../companies/2313.md) | 華通 | Apple供應鏈電路板零組件 |
 | [2330](../companies/2330.md) | 台積電 | Apple半導體製造供應鏈 |
 | [2367](../companies/2367.md) | 燿華 | Apple零組件供應鏈 |
+| [2439](../companies/2439.md) | 美律 | iPhone聲學零組件 |
 | [3008](../companies/3008.md) | 大立光 | Apple供應鏈光學零組件 |
 | [3042](../companies/3042.md) | 晶技 | Apple供應商名單 |
 | [3044](../companies/3044.md) | 健鼎 | Apple製造供應鏈 |
+| [3149](../companies/3149.md) | 正達 | Apple產品用TrackPad |
 | [3376](../companies/3376.md) | 新日興 | 蘋果筆電樞紐零組件 |
 | [3406](../companies/3406.md) | 玉晶光 | Apple供應鏈光學零組件 |
 | [4958](../companies/4958.md) | 臻鼎-KY | Apple供應鏈零組件 |
 | [6269](../companies/6269.md) | 台郡 | Apple供應鏈零組件 |
 | [6290](../companies/6290.md) | 良維 | Apple TV及Mac mini電源線 |
-| [6937](../companies/6937.md) | 天虹 | ALD設備切入蘋果供應鏈 |
 | [7610](../companies/7610.md) | 聯友金屬-創 | Apple鎢材料供應鏈冶煉端 |
 | [8499](../companies/8499.md) | 鼎炫-KY | 消費電子材料供應鏈 |
 

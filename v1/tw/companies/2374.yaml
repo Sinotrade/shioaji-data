@@ -18,37 +18,77 @@ industry:
   l3_name: 光學與影像感測應用
   l3_name_en: Optics & Imaging Applications
 primary_chain_position: midstream
-summary_short: 設計、製造與代工數位相機、車載及安防攝影機、影像模組。
-summary_long: 佳能企業以光學與數位影像產品的設計、製造及代工服務為主要業務，產品包括高階數位相機、運動攝影機、車用及監控攝影機與照相模組。2025年度營業比重按光電產品列示，占營收100%。其影像模組提供單鏡頭及多鏡頭整合，車載產品涵蓋先進駕駛輔助影像，智慧安防產品則採用邊緣運算技術。公司亦提供光聲電產品的設計、校正、測試及量產服務，官網列示無人機配件模組與陪伴型、互動型智慧機器人等應用。製造相關子公司包括越南佳智電能及透過BVI控股的東莞能率科技。
+summary_short: 以數位相機、影像模組及車載與安防攝影機的設計製造、代工為主。
+summary_long: 佳能企業以光學影像產品設計、製造與代工為核心，2025年年報列示光電產品占營收100%。商品涵蓋高階數位相機、數位攝影機、車用與監控攝影機及照相模組，另提供雙鏡頭深度相機及具邊緣運算功能的安防攝影機。公司與TIER IV合作開發自動駕駛車載相機，並向Mantis Robotics供應近接感測器；與Agility Robotics的關係包括股權投資及機器視覺、光學感測零組件開發。主要生產相關子公司包括東莞能率科技、越南佳智電能及一品光學。2026年公司公告增加越南子公司投資，宏羚亦公告向佳能出售佳能國際股權。
 segments:
 - evidence_ids:
-  - e1
+  - e01
   id: s1
   name: 光電產品
   period: '2025'
   revenue_share_pct: 100
-main_theme: theme.drone
+main_theme: theme.robotics
 themes:
 - also: []
   stage: components
-  theme: theme.drone
-  tier: upstream
-- also: []
-  stage: system
   theme: theme.robotics
-  tier: downstream
+  tier: upstream
 relations:
+  customers:
+  - as_of: '2026-02-24'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 機器人近接感測器
+    details:
+    - 機器人近接感測器
+    edge: e332bc144e108
+    evidence_level: media
+    id: org.mantis-robotics
+    name: Mantis Robotics
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  partners:
+  - as_of: '2026-02-24'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 機器視覺及光學感測零組件開發
+    details:
+    - 機器視覺及光學感測零組件開發
+    edge: eb2c9c0806886
+    evidence_level: media
+    id: org.agility-robotics
+    name: Agility Robotics
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-01-11'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 自動駕駛及ADAS車載相機共同開發
+    details:
+    - 自動駕駛及ADAS車載相機共同開發
+    edge: ece5e08a41bbd
+    evidence_level: primary
+    id: org.tier-iv
+    name: TIER IV
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
-  - as_of: '2026-06-30'
+  - as_of: '2026-05-08'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 越南製造子公司佳智電能
+    detail: 越南全資製造子公司佳智電能
     details:
-    - 越南製造子公司佳智電能
-    edge: ee589495fbc5d
+    - 越南全資製造子公司佳智電能
+    edge: e39790c76e624
     evidence_level: primary
-    id: org.ability-electronics-technology-vietnam-company-l
-    name: ABILITY ELECTRONICS TECHNOLOGY (VIETNAM) COMPANY LIMITED
+    id: org.ability-electronics-technology-vietnam
+    name: Ability Electronics Technology (Vietnam) Company Limited.
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -56,141 +96,504 @@ relations:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持有的控股子公司
+    detail: 經由ABILITY ENTERPRISE (BVI)持有的相機製造子公司
     details:
-    - 直接持有的控股子公司
-    edge: ea0a8eb128ede
+    - 經由ABILITY ENTERPRISE (BVI)持有的相機製造子公司
+    edge: e697a037b586b
     evidence_level: primary
-    id: org.ability-enterprise-bvi-co-ltd
-    name: ABILITY ENTERPRISE (BVI) CO., LTD.
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
-  - as_of: '2026-06-30'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 光學產品與電子零組件子公司
-    details:
-    - 光學產品與電子零組件子公司
-    edge: e2054dd193419
-    evidence_level: primary
-    id: org.一品光學工業股份有限公司
-    name: 一品光學工業股份有限公司
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
-  - as_of: '2026-06-30'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 透過BVI控股公司持有的相機製造子公司
-    details:
-    - 透過BVI控股公司持有的相機製造子公司
-    edge: e48dbd3bf02dd
-    evidence_level: primary
-    id: org.東莞能率科技有限公司
+    id: org.dongguan-ability-technology
     name: 東莞能率科技有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 光學產品及電子零組件子公司
+    details:
+    - 光學產品及電子零組件子公司
+    edge: e1dc027dcaed5
+    evidence_level: primary
+    id: org.epin-optical-industry
+    name: 一品光學工業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 2024年新臺幣15,000仟元；2025年37,500仟元；2026年15,000仟元
+    as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持續繳付有限合夥投資款
+    details:
+    - 持續繳付有限合夥投資款
+    edge: efc2695c2657a
+    event_date: null
+    events:
+    - amount: 2024年新臺幣15,000仟元；2025年37,500仟元；2026年15,000仟元
+      detail: 持續繳付有限合夥投資款
+      event_date: null
+    evidence_level: primary
+    id: org.abico-asia-capital-ii
+    name: 能率亞洲資本貳卓越轉型成長有限合夥
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 美金15,000,000元
+    as_of: '2026-05-08'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 增加越南全資子公司股權投資
+    details:
+    - 增加越南全資子公司股權投資
+    edge: eac24235c12da
+    event_date: '2026-05-08'
+    events:
+    - amount: 美金15,000,000元
+      detail: 增加越南全資子公司股權投資
+      event_date: '2026-05-08'
+    evidence_level: primary
+    id: org.ability-electronics-technology-vietnam
+    name: Ability Electronics Technology (Vietnam) Company Limited.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新臺幣20,000仟元
+    as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 投資系統整合關聯企業
+    details:
+    - 投資系統整合關聯企業
+    edge: e19982d181be4
+    event_date: null
+    events:
+    - amount: 新臺幣20,000仟元
+      detail: 投資系統整合關聯企業
+      event_date: null
+    evidence_level: primary
+    id: org.ability-intelligent
+    name: 佳捷智能股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新臺幣96,390仟元
+    as_of: 2024-06
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 2024年取得佳能國際45%股權
+    details:
+    - 2024年取得佳能國際45%股權
+    edge: e19ce58baab78
+    event_date: null
+    events:
+    - amount: 新臺幣96,390仟元
+      detail: 2024年取得佳能國際45%股權
+      event_date: null
+    evidence_level: primary
+    id: org.ability-international
+    name: 佳能國際股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新臺幣20,000仟元
+    as_of: '2024-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 收購子公司額外40%股權
+    details:
+    - 收購子公司額外40%股權
+    edge: ede40b1a80f60
+    event_date: null
+    events:
+    - amount: 新臺幣20,000仟元
+      detail: 收購子公司額外40%股權
+      event_date: null
+    evidence_level: primary
+    id: org.ability-new-technology
+    name: 佳新科技股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新臺幣約29,440仟元
+    as_of: 2025-07
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 策略投資人形機器人公司
+    details:
+    - 策略投資人形機器人公司
+    edge: ef8e45d256d8b
+    event_date: null
+    events:
+    - amount: 新臺幣約29,440仟元
+      detail: 策略投資人形機器人公司
+      event_date: null
+    evidence_level: primary
+    id: org.agility-robotics
+    name: Agility Robotics
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新臺幣15,642仟元
+    as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: AI相關產業股權投資
+    details:
+    - AI相關產業股權投資
+    edge: e4cac475c4878
+    event_date: null
+    events:
+    - amount: 新臺幣15,642仟元
+      detail: AI相關產業股權投資
+      event_date: null
+    evidence_level: primary
+    id: org.chengyun-technology
+    name: 誠雲科技股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新臺幣28,000仟元
+    as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 投資停車系統與停車場管理關聯企業
+    details:
+    - 投資停車系統與停車場管理關聯企業
+    edge: e3a350cfa8a8e
+    event_date: null
+    events:
+    - amount: 新臺幣28,000仟元
+      detail: 投資停車系統與停車場管理關聯企業
+      event_date: null
+    evidence_level: primary
+    id: org.fu-hong-da-international
+    name: 富鴻達國際事業股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新臺幣50,000仟元
+    as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 股權投資
+    details:
+    - 股權投資
+    edge: e061edc1ef503
+    event_date: '2024-03-08'
+    events:
+    - amount: 新臺幣50,000仟元
+      detail: 股權投資
+      event_date: '2024-03-08'
+    evidence_level: primary
+    id: org.jia-tai-international-investment
+    name: 佳泰國際投資股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新臺幣220,000仟元
+    as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司佳能投資入股佳旺資本
+    details:
+    - 子公司佳能投資入股佳旺資本
+    edge: e3d0c0dc4f478
+    event_date: null
+    events:
+    - amount: 新臺幣220,000仟元
+      detail: 子公司佳能投資入股佳旺資本
+      event_date: null
+    evidence_level: primary
+    id: org.jia-wang-capital
+    name: 佳旺資本股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新臺幣約16,540仟元
+    as_of: 2025-04
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 策略投資機器人公司
+    details:
+    - 策略投資機器人公司
+    edge: ed91425c12f03
+    event_date: null
+    events:
+    - amount: 新臺幣約16,540仟元
+      detail: 策略投資機器人公司
+      event_date: null
+    evidence_level: primary
+    id: org.mantis-robotics
+    name: Mantis Robotics
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新臺幣30,055仟元
+    as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: AI相關產業股權投資
+    details:
+    - AI相關產業股權投資
+    edge: ece15a9e01dfb
+    event_date: null
+    events:
+    - amount: 新臺幣30,055仟元
+      detail: AI相關產業股權投資
+      event_date: null
+    evidence_level: primary
+    id: org.xinyunlin-technology
+    name: 鑫蘊林科技股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新臺幣96,390,000元
+    as_of: '2026-10-07'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 向宏羚取得佳能國際540萬股
+    details:
+    - 向宏羚取得佳能國際540萬股
+    edge: e0e3c9a3f0f1d
+    event_date: '2026-09-23'
+    events:
+    - amount: 新臺幣96,390,000元
+      detail: 向宏羚取得佳能國際540萬股
+      event_date: '2026-09-23'
+    evidence_level: primary
+    id: tw.7885
+    name: 宏羚股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 2025年主要銷貨客戶AA公司、KK公司及LL公司：年報因保密協定僅揭露代號，…
+- 2025年主要供應商辛、2026年第一季主要供應商癸：年報僅揭露代號，未建立具…
+- 國際品牌影像產品代工客戶：未由產品應用或市場地區反推品牌。
+- Valens Semiconductor及能率亞洲資本股票出售交易的買方未揭露。
 website: www.abilitycorp.com.tw
 tax_id: '11394902'
 incorporated: '1965-05-21'
 listed: '1995-01-16'
-as_of: '2026-10-15'
+as_of: '2026-10-26'
 confidence: ai_cross_checked
 has_research: true
 evidence:
-  tw.2374#e1:
-    locator: 第66頁，業務範圍之營業比重；114年度表
+  tw.2374#e01:
+    locator: 第66頁，營業比重
     published_date: '2026-05-08'
     publisher: 佳能企業股份有限公司
     quote_check: found
-    title: 佳能企業114年度年報
+    title: 佳能企業股份有限公司一百一十四年度年報
     url: https://www.abilitytw.com/file/ability-annualreport-2025-c-pdf-pdf
-  tw.2374#e10:
-    locator: 第15頁，列入合併財務報告之子公司；投資公司、子公司及所持股權百分比表
-    published_date: '2026-08-07'
-    publisher: 佳能企業股份有限公司
-    quote_check: found
-    title: 佳能企業股份有限公司及子公司115年第二季合併財務報告
-    url: https://www.abilitytw.com/file/ability-2026q2-consolidated-report-c-pdf-2
-  tw.2374#e11:
-    locator: 第15頁，列入合併財務報告之子公司；佳智電能列
-    published_date: '2026-08-07'
-    publisher: 佳能企業股份有限公司
-    quote_check: found
-    title: 佳能企業股份有限公司及子公司115年第二季合併財務報告
-    url: https://www.abilitytw.com/file/ability-2026q2-consolidated-report-c-pdf-2
-  tw.2374#e12:
-    locator: 第15頁，列入合併財務報告之子公司；東莞能率科技列
-    published_date: '2026-08-07'
-    publisher: 佳能企業股份有限公司
-    quote_check: found
-    title: 佳能企業股份有限公司及子公司115年第二季合併財務報告
-    url: https://www.abilitytw.com/file/ability-2026q2-consolidated-report-c-pdf-2
-  tw.2374#e13:
-    locator: 第15頁，列入合併財務報告之子公司；一品光學列
-    published_date: '2026-08-07'
-    publisher: 佳能企業股份有限公司
-    quote_check: found
-    title: 佳能企業股份有限公司及子公司115年第二季合併財務報告
-    url: https://www.abilitytw.com/file/ability-2026q2-consolidated-report-c-pdf-2
-  tw.2374#e2:
+  tw.2374#e02:
     locator: 第66頁，所營業務及目前商品項目
     published_date: '2026-05-08'
     publisher: 佳能企業股份有限公司
     quote_check: found
-    title: 佳能企業114年度年報
+    title: 佳能企業股份有限公司一百一十四年度年報
     url: https://www.abilitytw.com/file/ability-annualreport-2025-c-pdf-pdf
-  tw.2374#e3:
-    locator: 全方位運動相機副標題
+  tw.2374#e03:
+    locator: 深度相機／雙鏡頭系統提升立體視覺感知度
     published_date: null
     publisher: 佳能企業股份有限公司
     quote_check: found
-    title: 運動相機
-    url: https://tw.abilitytw.com/products/digital-action-camera
-  tw.2374#e4:
-    locator: 單鏡頭模組及多鏡頭模組介紹
-    published_date: null
-    publisher: 佳能企業股份有限公司
-    quote_check: found
-    title: 影像模組
-    url: https://tw.abilitytw.com/products/camera-modules
-  tw.2374#e5:
-    locator: ADAS影像產品，正文第一段
-    published_date: null
-    publisher: 佳能企業股份有限公司
-    quote_check: found
-    title: 前裝市場：車載影像產品
-    url: https://tw.abilitytw.com/products/automotive-original-equipment-market-camera
-  tw.2374#e6:
-    locator: AI智慧槍型網路攝影機，正文第一段
+    title: 立體視覺相機
+    url: https://tw.abilitytw.com/products/digital-stereo-camera
+  tw.2374#e04:
+    locator: AI智慧槍型網路攝影機
     published_date: null
     publisher: 佳能企業股份有限公司
     quote_check: found
     title: 邊緣運算網路攝影機
     url: https://tw.abilitytw.com/products/edge-ai-webcam
-  tw.2374#e7:
-    locator: 專注光聲電產品的高標準影像解決方案，正文
+  tw.2374#e05:
+    locator: 新聞稿標題及Background & Objective
+    published_date: '2022-01-06'
+    publisher: TIER IV
+    quote_check: found
+    title: Tier IV partners with Ability Enterprise to produce and market automotive cameras for AVs
+    url: https://tier4.co.jp/en/updates/press-release/20220106
+  tw.2374#e06:
+    locator: Comments from Edge.Auto platform partners，佳能總經理Frank Chang發言
+    published_date: '2024-01-11'
+    publisher: TIER IV
+    quote_check: found
+    title: TIER IV unveils Edge.Auto, a comprehensive reference platform for autonomous driving technology
+    url: https://tier4.co.jp/en/updates/press-release/20240111
+  tw.2374#e07:
+    locator: 內文，Mantis Robotics訂單與出貨
+    published_date: '2026-02-24'
+    publisher: 經濟日報
+    quote_check: found
+    title: 佳能、能率攻機器人 報捷
+    url: https://udn.com/news/story/7253/9340020
+  tw.2374#e08:
+    locator: 內文，與Agility共同開發
+    published_date: '2026-02-24'
+    publisher: 經濟日報
+    quote_check: found
+    title: 佳能、能率攻機器人 報捷
+    url: https://udn.com/news/story/7253/9340020
+  tw.2374#e09:
+    locator: 第20頁，列入合併財務報告之子公司；另與115年第二季第15頁核對
+    published_date: '2026-03-13'
+    publisher: 佳能企業股份有限公司
+    quote_check: unreachable
+    title: 佳能企業及子公司114年度合併財務報告
+    url: https://www.abilitytw.com/file/ability-2025q4-consolidated-report-c-pdf-3
+  tw.2374#e10:
+    locator: 第21頁，合併子公司註1
+    published_date: '2026-03-13'
+    publisher: 佳能企業股份有限公司
+    quote_check: found
+    title: 佳能企業及子公司114年度合併財務報告
+    url: https://www.abilitytw.com/file/ability-2025q4-consolidated-report-c-pdf-2
+  tw.2374#e11:
+    locator: 公告第3、5、6項
+    published_date: '2026-05-08'
+    publisher: 公開資訊觀測站重大訊息，MoneyDJ刊載
+    quote_check: found
+    title: 佳能投資越南子公司Ability Electronics Technology(Vietnam)，計1500萬美元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=23a279d1-2c97-4737-bf89-26e5777ea2b4
+  tw.2374#e12:
+    locator: 第15頁，合併子公司表；115年6月30日欄
+    published_date: '2026-08-07'
+    publisher: 佳能企業股份有限公司
+    quote_check: found
+    title: 佳能企業及子公司115年第二季合併財務報告
+    url: https://www.abilitytw.com/file/ability-2026q2-consolidated-report-c-pdf-3
+  tw.2374#e13:
+    locator: 第52頁，附註六（二十九）收購子公司額外權益
+    published_date: '2026-03-13'
+    publisher: 佳能企業股份有限公司
+    quote_check: found
+    title: 佳能企業及子公司114年度合併財務報告
+    url: https://www.abilitytw.com/file/ability-2025q4-consolidated-report-c-pdf-2
+  tw.2374#e14:
+    locator: 第32頁，採用權益法之投資第5項
     published_date: null
     publisher: 佳能企業股份有限公司
     quote_check: found
-    title: 電子製造服務
-    url: https://tw.abilitytw.com/products/ems-camera
-  tw.2374#e8:
-    locator: 客製化EMS服務，第01項
+    title: 佳能企業及子公司113年第二季合併財務報告
+    url: https://www.abilitytw.com/file/ability_2024q2_consolidated-report_c-2-pdf
+  tw.2374#e15:
+    locator: 第72頁，附表五，佳旺資本投資持有人
+    published_date: '2026-08-07'
+    publisher: 佳能企業股份有限公司
+    quote_check: found
+    title: 佳能企業及子公司115年第二季合併財務報告
+    url: https://www.abilitytw.com/file/ability-2026q2-consolidated-report-c-pdf-3
+  tw.2374#e16:
+    locator: 採用權益法之投資，佳能國際投資說明
     published_date: null
     publisher: 佳能企業股份有限公司
     quote_check: found
-    title: 電子製造服務
-    url: https://tw.abilitytw.com/products/ems-camera
-  tw.2374#e9:
-    locator: 客製化EMS服務，第04項「攝影模組與智慧機器人」
-    published_date: null
+    title: 佳能企業及子公司114年第二季合併財務報告
+    url: https://www.abilitytw.com/file/ability-2025q2-consolidated-report-c-pdf
+  tw.2374#e17:
+    locator: 宏羚公告第1、2、5、6項；標的為佳能國際股權
+    published_date: '2026-10-07'
+    publisher: 公開資訊觀測站重大訊息，玉山證券刊載
+    quote_check: found
+    title: 宏羚9/23處分佳能5,400張，獲利約149萬元（補充）
+    url: https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B56461E27-8AAE-46A7-BB43-7C220C6AA4D5%7D
+  tw.2374#e18:
+    locator: 第36頁，採用權益法之投資第8項，佳捷智能
+    published_date: '2026-03-13'
+    publisher: 佳能企業股份有限公司
+    quote_check: unreachable
+    title: 佳能企業及子公司114年度合併財務報告
+    url: https://www.abilitytw.com/file/ability-2025q4-consolidated-report-c-pdf-3
+  tw.2374#e19:
+    locator: 第36頁，採用權益法之投資第9項，富鴻達
+    published_date: '2026-03-13'
+    publisher: 佳能企業股份有限公司
+    quote_check: unreachable
+    title: 佳能企業及子公司114年度合併財務報告
+    url: https://www.abilitytw.com/file/ability-2025q4-consolidated-report-c-pdf-3
+  tw.2374#e20:
+    locator: 第28頁，附註六（二）第6項，Mantis投資
+    published_date: '2026-05-08'
     publisher: 佳能企業股份有限公司
     quote_check: found
-    title: 電子製造服務
-    url: https://tw.abilitytw.com/products/ems-camera
+    title: 佳能企業及子公司115年第一季合併財務報告
+    url: https://www.abilitytw.com/file/ability-2026q1-consolidated-report-c-pdf-2
+  tw.2374#e21:
+    locator: 第28頁，附註六（二）第7項，Agility投資
+    published_date: '2026-05-08'
+    publisher: 佳能企業股份有限公司
+    quote_check: found
+    title: 佳能企業及子公司115年第一季合併財務報告
+    url: https://www.abilitytw.com/file/ability-2026q1-consolidated-report-c-pdf-2
+  tw.2374#e22:
+    locator: 第28頁，附註六（二）第8項，鑫蘊林科技
+    published_date: '2026-08-07'
+    publisher: 佳能企業股份有限公司
+    quote_check: found
+    title: 佳能企業及子公司115年第二季合併財務報告
+    url: https://www.abilitytw.com/file/ability-2026q2-consolidated-report-c-pdf-3
+  tw.2374#e23:
+    locator: 第28頁，附註六（二）第9項，誠雲科技
+    published_date: '2026-08-07'
+    publisher: 佳能企業股份有限公司
+    quote_check: found
+    title: 佳能企業及子公司115年第二季合併財務報告
+    url: https://www.abilitytw.com/file/ability-2026q2-consolidated-report-c-pdf-3
+  tw.2374#e24:
+    locator: 第32頁，附註六（二）第7項，佳泰國際投資
+    published_date: '2026-03-13'
+    publisher: 佳能企業股份有限公司
+    quote_check: unreachable
+    title: 佳能企業及子公司114年度合併財務報告
+    url: https://www.abilitytw.com/file/ability-2025q4-consolidated-report-c-pdf-3
+  tw.2374#e25:
+    locator: 第28頁，附註六（二）第4項，能率亞洲Ⅱ歷次出資
+    published_date: '2026-08-07'
+    publisher: 佳能企業股份有限公司
+    quote_check: found
+    title: 佳能企業及子公司115年第二季合併財務報告
+    url: https://www.abilitytw.com/file/ability-2026q2-consolidated-report-c-pdf-3
+  tw.2374#e26:
+    locator: 第32頁，附註六（二）第6項，出售Valens股權
+    published_date: '2026-03-13'
+    publisher: 佳能企業股份有限公司
+    quote_check: unreachable
+    title: 佳能企業及子公司114年度合併財務報告
+    url: https://www.abilitytw.com/file/ability-2025q4-consolidated-report-c-pdf-3
+  tw.2374#e27:
+    locator: 第29頁，附註六（二）第10項，出售部分能率亞洲股票
+    published_date: '2026-08-07'
+    publisher: 佳能企業股份有限公司
+    quote_check: found
+    title: 佳能企業及子公司115年第二季合併財務報告
+    url: https://www.abilitytw.com/file/ability-2026q2-consolidated-report-c-pdf-3

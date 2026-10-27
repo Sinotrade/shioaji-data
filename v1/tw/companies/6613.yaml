@@ -26,34 +26,99 @@ chain_stage:
   stage_name: 設備與廠務
   tier: upstream
 primary_chain_position: upstream
-summary_short: 銷售高科技廠化學品、氣體供應設備，並承作製程供應系統整合工程。
-summary_long: 朋億以高科技產業製程供應系統設備銷售及系統整合工程為主，2025年營收占比分別為49.32%與46.63%，其餘業務占4.05%。核心產品為高潔淨度化學品供應與分裝系統，並提供特殊氣體供應、濕製程清洗、剝離液再生及綠能環保系統整合。濕製程設備涵蓋晶圓清洗、蝕刻、顯影與剝離，環保系統包括海水淡化與中水回收。母公司為聖暉工程科技，子公司包括寶韻科技、蘇州冠禮、銳澤實業、達德設計及理海技研。
+summary_short: 提供半導體廠務化學品供應設備、水氣化系統整合工程及濕製程設備。
+summary_long: 朋億以高潔淨度化學品供應與分裝設備，以及水、氣體、化學品製程供應系統整合工程為主要業務，另提供晶圓清洗、濕法蝕刻與剝離設備。2025年合併營收中，設備銷售占49.32%，系統整合工程占46.63%，其他占4.05%。官網工程實績列有台積電、台灣美光晶圓與友達的化學品供應系統專案；力積電二次配訂單則由子公司銳澤承接。聖暉為其母公司，2026年3月持股55.52%。朋億另於2025年成立持股53%的理海技研，從事環保業務設計，2026年成立持股80%的絢富科技，從事工程圖面3D建模及軟體資訊服務。
 segments:
 - evidence_ids:
-  - e2
+  - e1
   id: seg_equipment
   name: 高科技產業製程供應系統設備銷售
   period: '2025'
   revenue_share_pct: 49.32
 - evidence_ids:
-  - e2
+  - e1
   id: seg_engineering
   name: 高科技產業製程供應系統整合工程
   period: '2025'
   revenue_share_pct: 46.63
 - evidence_ids:
-  - e2
+  - e1
   id: seg_other
   name: 其他
   period: '2025'
   revenue_share_pct: 4.05
-main_theme: theme.cowos
-themes:
-- also: []
-  stage: equipment
-  theme: theme.cowos
-  tier: upstream
 relations:
+  customers:
+  - as_of: '2026-10-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 化學品供應系統
+    details:
+    - 化學品供應系統
+    edge: ebc04a915aa3d
+    evidence_level: primary
+    id: org.台灣美光晶圓科技股份有限公司
+    name: 台灣美光晶圓科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 化學品供應系統
+    details:
+    - 化學品供應系統
+    edge: eca487cc25ad4
+    evidence_level: primary
+    id: tw.2330
+    name: 台積電
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-01-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 廠務設備
+    details:
+    - 廠務設備
+    edge: ef0bc1da9f637
+    evidence_level: primary
+    id: tw.2408
+    name: 南亞科
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 化學品供應系統擴充
+    details:
+    - 化學品供應系統擴充
+    edge: ed34e6af74c56
+    evidence_level: primary
+    id: tw.2409
+    name: 友達
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司銳澤的二次配工程
+    details:
+    - 子公司銳澤的二次配工程
+    edge: e7ad00d55475f
+    evidence_level: primary
+    id: tw.6770
+    name: 力積電
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   parents:
   - as_of: '2026-03-28'
     confidence: ai_cross_checked
@@ -61,7 +126,7 @@ relations:
     detail: 子公司
     details:
     - 子公司
-    - 持股過半之母公司
+    - 持有朋億55.52%股權的母公司
     edge: ee1895374e6f2
     evidence_level: primary
     id: tw.5536
@@ -70,13 +135,28 @@ relations:
     share_basis: null
     share_pct: null
     weight: 2
+  partners:
+  - as_of: '2026-10-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 創立初期的技術合作
+    details:
+    - 創立初期的技術合作
+    edge: efcb4d3396099
+    evidence_level: primary
+    id: org.日本住友化學工程株式會社
+    name: 日本住友化學工程株式會社
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 受控制之子公司
+    detail: 持股41.46%的子公司
     details:
-    - 受控制之子公司
+    - 持股41.46%的子公司
     - 直接母公司
     edge: e87abef98f95b
     evidence_level: primary
@@ -89,9 +169,9 @@ relations:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持股100%之子公司
+    detail: 全資子公司
     details:
-    - 直接持股100%之子公司
+    - 全資子公司
     edge: e9361ab13a3ec
     evidence_level: primary
     id: org.baoyun-technology
@@ -100,26 +180,12 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2025-12-31'
+  - as_of: '2026-10-26'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持股80%之子公司
+    detail: 2025年新設環保業務設計子公司
     details:
-    - 直接持股80%之子公司
-    edge: e94e7e355593a
-    evidence_level: primary
-    id: org.dade-design
-    name: 達德設計股份有限公司
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
-  - as_of: '2025-12-31'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 直接持股53%之子公司
-    details:
-    - 直接持股53%之子公司
+    - 2025年新設環保業務設計子公司
     edge: e9df74bb2b74b
     evidence_level: primary
     id: org.lihai-technology
@@ -128,12 +194,12 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2025-12-31'
+  - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持股86.59%之子公司
+    detail: 持股86.59%的子公司及上市申請
     details:
-    - 直接持股86.59%之子公司
+    - 持股86.59%的子公司及上市申請
     edge: e12b30ca697ed
     evidence_level: primary
     id: org.suzhou-winmax-technology
@@ -142,12 +208,12 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-10-15'
+  - as_of: '2026-10-26'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 2026年成立、持股80%之子公司
+    detail: 2026年新設工程設計與軟體子公司
     details:
-    - 2026年成立、持股80%之子公司
+    - 2026年新設工程設計與軟體子公司
     edge: ebef2a81c2a81
     evidence_level: primary
     id: org.xuanfu-technology
@@ -156,102 +222,166 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  transactions:
+  - amount: 人民幣3,765,632.35元
+    as_of: '2026-06-24'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司蘇州冠禮取得車間使用權
+    details:
+    - 子公司蘇州冠禮取得車間使用權
+    edge: e9f1e544a8da3
+    event_date: '2026-06-24'
+    events:
+    - amount: 人民幣3,765,632.35元
+      detail: 子公司蘇州冠禮取得車間使用權
+      event_date: '2026-06-24'
+    evidence_level: primary
+    id: org.聖暉系統集成集團股份有限公司
+    name: 聖暉系統集成集團股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: www.novatech.com.tw
 tax_id: '16034271'
 incorporated: '1997-06-13'
 listed: '2017-12-28'
-as_of: '2026-10-15'
+as_of: '2026-10-26'
 confidence: ai_cross_checked
 has_research: true
 evidence:
+  tw.6613#e1:
+    locator: 印刷頁94，PDF第98頁，主要項目比重
+    published_date: '2026-03-31'
+    publisher: 朋億股份有限公司
+    quote_check: found
+    title: 朋億股份有限公司114年度年報
+    url: https://www.novatech.com.tw/zh-CN/uploads/annual-reports/ZX/%E6%9C%8B%E5%84%84114%E5%B9%B4%E5%A0%B1%28for%E4%B8%8A%E5%82%B3%29.pdf
   tw.6613#e10:
-    locator: 印刷第90頁，轉投資事業之本公司投資欄
+    locator: 印刷頁92，PDF第96頁，主要股東名單；基準日2026年3月28日
     published_date: '2026-03-31'
     publisher: 朋億股份有限公司
     quote_check: found
     title: 朋億股份有限公司114年度年報
     url: https://www.novatech.com.tw/zh-CN/uploads/annual-reports/ZX/%E6%9C%8B%E5%84%84114%E5%B9%B4%E5%A0%B1%28for%E4%B8%8A%E5%82%B3%29.pdf
   tw.6613#e11:
-    locator: 印刷第90頁，轉投資事業之本公司投資欄
-    published_date: '2026-03-31'
-    publisher: 朋億股份有限公司
+    locator: 印刷頁23，附註七（一）母公司與最終控制者
+    published_date: null
+    publisher: 銳澤實業股份有限公司
     quote_check: found
-    title: 朋億股份有限公司114年度年報
-    url: https://www.novatech.com.tw/zh-CN/uploads/annual-reports/ZX/%E6%9C%8B%E5%84%84114%E5%B9%B4%E5%A0%B1%28for%E4%B8%8A%E5%82%B3%29.pdf
+    title: 銳澤實業股份有限公司及子公司114年第三季合併財務報告
+    url: https://www.rayzher.com.tw/wp-content/uploads/2026/03/%E9%8A%B3%E6%BE%A4114Q3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
   tw.6613#e12:
-    locator: 印刷第120頁，訴訟事項
+    locator: 公告第1至4項
+    published_date: '2026-06-30'
+    publisher: 公開資訊觀測站重大訊息公告（MoneyDJ刊載）
+    quote_check: found
+    title: 朋億代子公司蘇州冠禮公告完成遞交深圳證券交易所創業板上市申請文件
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=d3b64304-b485-4a83-8731-adb2061bf9dd
+  tw.6613#e13:
+    locator: 印刷頁90，PDF第94頁，轉投資事業持股表
     published_date: '2026-03-31'
     publisher: 朋億股份有限公司
     quote_check: found
     title: 朋億股份有限公司114年度年報
     url: https://www.novatech.com.tw/zh-CN/uploads/annual-reports/ZX/%E6%9C%8B%E5%84%84114%E5%B9%B4%E5%A0%B1%28for%E4%B8%8A%E5%82%B3%29.pdf
-  tw.6613#e13:
-    locator: 歷史沿革：2023年
-    published_date: null
-    publisher: 朋億股份有限公司
-    quote_check: found
-    title: 關於朋億
-    url: https://www.novatech.com.tw/about
   tw.6613#e14:
-    locator: 歷史沿革：2025年
+    locator: 歷史沿革／2025
     published_date: null
     publisher: 朋億股份有限公司
     quote_check: found
-    title: 關於朋億
+    title: 公司簡介與歷史沿革
     url: https://www.novatech.com.tw/about
   tw.6613#e15:
-    locator: 歷史沿革：2026年
+    locator: 歷史沿革／2026
     published_date: null
     publisher: 朋億股份有限公司
     quote_check: found
-    title: 關於朋億
+    title: 公司簡介與歷史沿革
     url: https://www.novatech.com.tw/about
-  tw.6613#e2:
-    locator: 印刷第94頁，主要項目比重；2025年度
+  tw.6613#e16:
+    locator: 公告主旨及第1至2項
+    published_date: '2026-06-24'
+    publisher: 公開資訊觀測站重大訊息公告（MoneyDJ刊載）
+    quote_check: found
+    title: 朋億：蘇州冠禮科技取得蘇州市滸關經濟開發區使用權資產
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=6eed1b7e-e495-4ff4-a716-86073dc2be99
+  tw.6613#e17:
+    locator: 公告第5至6項
+    published_date: '2026-06-24'
+    publisher: 公開資訊觀測站重大訊息公告（MoneyDJ刊載）
+    quote_check: found
+    title: 朋億：蘇州冠禮科技取得蘇州市滸關經濟開發區使用權資產
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=6eed1b7e-e495-4ff4-a716-86073dc2be99
+  tw.6613#e19:
+    locator: 印刷頁90，PDF第94頁，銳澤持股及註2
     published_date: '2026-03-31'
     publisher: 朋億股份有限公司
     quote_check: found
     title: 朋億股份有限公司114年度年報
     url: https://www.novatech.com.tw/zh-CN/uploads/annual-reports/ZX/%E6%9C%8B%E5%84%84114%E5%B9%B4%E5%A0%B1%28for%E4%B8%8A%E5%82%B3%29.pdf
-  tw.6613#e3:
-    locator: 服務項目標題
+  tw.6613#e2:
+    locator: 產品特色／化學系統單元架構
     published_date: null
     publisher: 朋億股份有限公司
     quote_check: found
     title: 高潔淨度化學品供應與分裝系統
     url: https://www.novatech.com.tw/service/high-purity-chemical-dispense-system-packing-system
-  tw.6613#e4:
-    locator: 設備種類
+  tw.6613#e20:
+    locator: 朋億簡介，技術合作沿革
     published_date: null
     publisher: 朋億股份有限公司
     quote_check: found
-    title: 特殊氣體供應系統
-    url: https://www.novatech.com.tw/service/bulk-gas-and-special-gas-dispense-system
-  tw.6613#e5:
-    locator: 特長
-    published_date: null
-    publisher: 朋億股份有限公司
-    quote_check: not_found
-    title: 高階濕制程清洗設備
-    url: https://www.novatech.com.tw/service/high-purity-wet-bench-system
-  tw.6613#e6:
-    locator: 應用領域
-    published_date: null
-    publisher: 朋億股份有限公司
-    quote_check: found
-    title: 剝離液再生系統
-    url: https://www.novatech.com.tw/service/waste-chemical-recovery-supply-system
-  tw.6613#e8:
-    locator: CoWoS等先進封裝與製程供應系統接單說明
-    published_date: '2026-06-09'
-    publisher: 朋億股份有限公司
-    quote_check: found
-    title: 115年5月份營收
-    url: https://www.novatech.com.tw/news/6a27ba3705a18
-  tw.6613#e9:
-    locator: 印刷第92頁，主要股東名單；資料日2026年3月28日
+    title: 永續發展／朋億簡介
+    url: https://www.novatech.com.tw/csr/profile
+  tw.6613#e3:
+    locator: 印刷頁94，PDF第98頁，產業概況
     published_date: '2026-03-31'
     publisher: 朋億股份有限公司
     quote_check: found
     title: 朋億股份有限公司114年度年報
     url: https://www.novatech.com.tw/zh-CN/uploads/annual-reports/ZX/%E6%9C%8B%E5%84%84114%E5%B9%B4%E5%A0%B1%28for%E4%B8%8A%E5%82%B3%29.pdf
+  tw.6613#e4:
+    locator: 特長
+    published_date: null
+    publisher: 朋億股份有限公司
+    quote_check: found
+    title: 高階濕制程清洗設備
+    url: https://www.novatech.com.tw/service/high-purity-wet-bench-system
+  tw.6613#e5:
+    locator: 台灣客戶表，第29項
+    published_date: null
+    publisher: 朋億股份有限公司
+    quote_check: found
+    title: 半導體產業工程實績
+    url: https://www.novatech.com.tw/achievement/semiconductor-industries
+  tw.6613#e6:
+    locator: 台灣客戶表，第15項
+    published_date: null
+    publisher: 朋億股份有限公司
+    quote_check: found
+    title: 半導體產業工程實績
+    url: https://www.novatech.com.tw/achievement/semiconductor-industries
+  tw.6613#e7:
+    locator: 台灣客戶表，第1項
+    published_date: null
+    publisher: 朋億股份有限公司
+    quote_check: found
+    title: 光電產業工程實績
+    url: https://www.novatech.com.tw/achievement/photonics-industries
+  tw.6613#e8:
+    locator: 歷史沿革／2022
+    published_date: null
+    publisher: 銳澤實業股份有限公司
+    quote_check: found
+    title: 公司沿革
+    url: https://www.rayzher.com.tw/?page_id=2545
+  tw.6613#e9:
+    locator: 南亞科取得廠務設備公告，第1、5、6項
+    published_date: '2026-01-23'
+    publisher: 公開資訊觀測站重大訊息公告（MoneyDJ刊載）
+    quote_check: found
+    title: 南亞科114/5/22~115/1/23向朋億*取得廠務設備，計約20.53億元
+    url: https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=a897824c-f121-42d9-a7ce-4f5876640bc9

@@ -26,8 +26,8 @@ chain_stage:
   stage_name: 設備與廠務
   tier: upstream
 primary_chain_position: upstream
-summary_short: 提供製程設備自動操控、數據採集與AI監控等智慧工廠軟硬體整合方案。
-summary_long: 竹陞科技以高科技製程設備的智能自動化與軟硬體整合方案為主要業務，提供遠程操控、製程資料採集及機器感官監控。2025年智能自動操作系統占營收36.46%，製程數據採集系統占31.42%，GoVision智能化產品占31.98%，其他占0.14%。產品包含iRPA自動操控、Gobot邊緣運算智能系統，以及智慧機器人代操系統，分別對應設備操作、運算與工廠自動化需求。官網另列G2 Technology Corp.為北美子公司。
+summary_short: 提供製造設備智能操控、製程數據採集與AI感官監控系統。
+summary_long: 竹陞科技提供製造設備軟硬體整合方案，產品涵蓋Gobot邊緣運算、iRPA遠程自動操控、IoT製程數據採集與GoVision感官監控。2025年智能自動操作系統占營收36.46%，GoVision占31.98%，製程數據採集占31.42%。具名報導確認台積電與美光的客戶關係，公司另代理Sensirion液態感測器。海外布局包含持股50%的美國G2合資企業，合肥原全資子公司已完成清算。近年公告交易包括向竹駿科技購買廠房與承租廠辦，以及向龍遠建設購買台南土地。
 segments:
 - evidence_ids:
   - e2
@@ -53,96 +53,276 @@ segments:
   name: 其他
   period: '2025'
   revenue_share_pct: 0.14
-main_theme: theme.robotics
+main_theme: theme.cowos
 themes:
 - also: []
-  stage: system
-  theme: theme.robotics
-  tier: downstream
+  stage: equipment
+  theme: theme.cowos
+  tier: upstream
 relations:
-  subsidiaries:
-  - as_of: '2026-10-15'
+  customers:
+  - as_of: '2024-09-20'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 北美子公司
+    detail: 智慧化系統與服務供應
     details:
-    - 北美子公司
-    edge: e853b9df9ccaf
-    evidence_level: primary
-    id: org.g2-technology-corp
-    name: G2 Technology Corp.
+    - 智慧化系統與服務供應
+    edge: ef5242f4068f7
+    evidence_level: media
+    id: tw.2330
+    name: 台積電
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: '2024-09-20'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 智慧化系統與服務供應
+    details:
+    - 智慧化系統與服務供應
+    edge: e5e8ad0d0d12b
+    evidence_level: media
+    id: us.MU
+    name: Micron
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  partners:
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股50%的美國合資通路及在地服務
+    details:
+    - 持股50%的美國合資通路及在地服務
+    edge: e4d8ea7cd51d8
+    evidence_level: primary
+    id: org.g2-technology-corp
+    name: G2 TECHNOLOGY CORP.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2026-02-03'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 原全資子公司，已完成清算
+    details:
+    - 原全資子公司，已完成清算
+    edge: e0f1525edb152
+    evidence_level: primary
+    id: org.gutc-iot-hefei
+    name: 竹阩智能數據(合肥)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: Liquid Sensor液態感測器原廠與代理關係
+    details:
+    - Liquid Sensor液態感測器原廠與代理關係
+    edge: ef6a6e133faab
+    evidence_level: primary
+    id: org.sensirion
+    name: Sensirion
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 新台幣55,703,224元
+    as_of: '2026-05-11'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 董事會通過購買台南善化土地
+    details:
+    - 董事會通過購買台南善化土地
+    edge: e0e4e0379dc25
+    event_date: '2026-05-11'
+    events:
+    - amount: 新台幣55,703,224元
+      detail: 董事會通過購買台南善化土地
+      event_date: '2026-05-11'
+    evidence_level: primary
+    id: org.long-yuan-construction
+    name: 龍遠建設股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣339,622仟元
+    as_of: '2026-05-11'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 向關係人購買竹北預售廠辦
+    details:
+    - 向關係人購買竹北預售廠辦
+    - 承租竹北新廠辦六樓使用權資產
+    edge: ed2ddf37b17d8
+    event_date: '2025-05-28'
+    events:
+    - amount: 新台幣29,795,678元（使用權資產）
+      detail: 承租竹北新廠辦六樓使用權資產
+      event_date: '2026-05-11'
+    - amount: 新台幣339,622仟元
+      detail: 向關係人購買竹北預售廠辦
+      event_date: '2025-05-28'
+    evidence_level: primary
+    id: org.zhujun-technology
+    name: 竹駿科技股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 2024年撤銷預售廠辦購買案的關係人，撤銷公告未具名。
+- 年報以代號揭露的主要客戶與供應商，未將匿名代號對應至台積電、美光或研華。
+- 美國合資企業G2的共同投資經銷商，所採來源未具名。
 website: https://www.gutc.com.tw
 tax_id: '56712683'
 incorporated: '2017-07-25'
 listed: '2024-09-02'
-as_of: '2026-10-15'
+as_of: '2026-10-26'
 confidence: ai_cross_checked
 has_research: true
 evidence:
-  tw.6739#e10:
-    locator: 全球據點，北美
+  tw.6739#e1:
+    locator: 公司介紹首段
     published_date: null
     publisher: 竹陞科技股份有限公司
     quote_check: found
     title: 公司介紹
     url: https://www.gutc.com.tw/zh/about-gutc/
+  tw.6739#e10:
+    locator: 印刷頁81，市場分析
+    published_date: null
+    publisher: 竹陞科技股份有限公司
+    quote_check: found
+    title: 113年年報
+    url: https://www.gutc.com.tw/wp-content/uploads/2025/06/113%E5%B9%B4%E5%B9%B4%E5%A0%B1%E5%90%AB%E5%B0%81%E9%9D%A2%E5%B0%81%E5%BA%95.pdf
+  tw.6739#e11:
+    locator: 印刷頁16至17，採用權益法之投資
+    published_date: null
+    publisher: 竹陞科技股份有限公司
+    quote_check: found
+    title: 114年第三季合併財務報告
+    url: https://www.gutc.com.tw/wp-content/uploads/2025/11/%E6%AD%A3%E5%BC%8F%E9%9B%BB%E5%AD%90%E6%9B%B8%E7%AB%B9%E9%99%9E114Q3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
+  tw.6739#e12:
+    locator: 印刷頁13，列入合併財務報告之子公司表；同表股權100%
+    published_date: null
+    publisher: 竹陞科技股份有限公司
+    quote_check: found
+    title: 114年第三季合併財務報告
+    url: https://www.gutc.com.tw/wp-content/uploads/2025/11/%E6%AD%A3%E5%BC%8F%E9%9B%BB%E5%AD%90%E6%9B%B8%E7%AB%B9%E9%99%9E114Q3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
+  tw.6739#e13:
+    locator: 印刷頁94，合肥子公司轉投資表及清算備註
+    published_date: null
+    publisher: 竹陞科技股份有限公司
+    quote_check: found
+    title: 114年年報
+    url: https://www.gutc.com.tw/wp-content/uploads/2026/05/2026_114%E5%B9%B4%E5%B9%B4%E5%A0%B1%E7%AE%A1%E5%88%B6%E6%98%8E%E6%96%87.pdf
+  tw.6739#e14:
+    locator: 交易相對人、交易金額及變動內容
+    published_date: '2025-05-28'
+    publisher: 公開資訊觀測站重大訊息（鉅亨網轉載）
+    quote_check: found
+    title: 竹陞科技：本公司向關係人取得不動產案已簽訂契約
+    url: https://news.cnyes.com/news/id/5997488
+  tw.6739#e15:
+    locator: 第6項交易相對人
+    published_date: '2026-05-11'
+    publisher: 公開資訊觀測站重大訊息（MoneyDJ轉載）
+    quote_check: found
+    title: 竹陞科技公告董事會通過向非關係人取得不動產案
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=be669f74-d145-4ccb-a31d-fc5b8e005281
+  tw.6739#e16:
+    locator: 第5項交易金額；第23項購地用途
+    published_date: '2026-05-11'
+    publisher: 公開資訊觀測站重大訊息（MoneyDJ轉載）
+    quote_check: found
+    title: 竹陞科技公告董事會通過向非關係人取得不動產案
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=be669f74-d145-4ccb-a31d-fc5b8e005281
+  tw.6739#e17:
+    locator: 第6項交易相對人
+    published_date: '2026-05-11'
+    publisher: 公開資訊觀測站重大訊息（MoneyDJ轉載）
+    quote_check: found
+    title: 竹陞科技公告董事會通過向關係人租賃取得不動產使用權資產案
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=3912fb94-c40b-4f13-9b81-32f7636d23aa
+  tw.6739#e18:
+    locator: 第5項及第10項
+    published_date: '2026-05-11'
+    publisher: 公開資訊觀測站重大訊息（MoneyDJ轉載）
+    quote_check: found
+    title: 竹陞科技公告董事會通過向關係人租賃取得不動產使用權資產案
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=3912fb94-c40b-4f13-9b81-32f7636d23aa
+  tw.6739#e19:
+    locator: 第3項變動緣由及主要內容
+    published_date: '2024-04-11'
+    publisher: 公開資訊觀測站重大訊息（IPO贏家轉載）
+    quote_check: found
+    title: 公告本公司董事會決議取消原向關係人取得不動產
+    url: https://www.unlistedstock.com.tw/ancs/detail/32692834
   tw.6739#e2:
-    locator: 印刷頁71，營業比重；欄位依序為113年度收入、占比及114年度收入、占比
+    locator: 印刷頁72，營業比重；欄序為113年度、114年度
     published_date: null
     publisher: 竹陞科技股份有限公司
     quote_check: found
-    title: 竹陞科技股份有限公司114年度年報
-    url: https://www.gutc.com.tw/wp-content/uploads/2026/05/2026_114年年報管制明文.pdf
+    title: 114年年報
+    url: https://www.gutc.com.tw/wp-content/uploads/2026/05/2026_114%E5%B9%B4%E5%B9%B4%E5%A0%B1%E7%AE%A1%E5%88%B6%E6%98%8E%E6%96%87.pdf
   tw.6739#e3:
-    locator: 印刷頁70，業務範圍
+    locator: 印刷頁73，開發之新商品
     published_date: null
     publisher: 竹陞科技股份有限公司
     quote_check: found
-    title: 竹陞科技股份有限公司114年度年報
-    url: https://www.gutc.com.tw/wp-content/uploads/2026/05/2026_114年年報管制明文.pdf
+    title: 113年年報
+    url: https://www.gutc.com.tw/wp-content/uploads/2025/06/113%E5%B9%B4%E5%B9%B4%E5%A0%B1%E5%90%AB%E5%B0%81%E9%9D%A2%E5%B0%81%E5%BA%95.pdf
   tw.6739#e4:
     locator: 印刷頁74，開發之新商品
     published_date: null
     publisher: 竹陞科技股份有限公司
     quote_check: found
-    title: 竹陞科技股份有限公司114年度年報
-    url: https://www.gutc.com.tw/wp-content/uploads/2026/05/2026_114年年報管制明文.pdf
+    title: 113年年報
+    url: https://www.gutc.com.tw/wp-content/uploads/2025/06/113%E5%B9%B4%E5%B9%B4%E5%A0%B1%E5%90%AB%E5%B0%81%E9%9D%A2%E5%B0%81%E5%BA%95.pdf
   tw.6739#e5:
-    locator: 印刷頁72，目前商品與服務項目
+    locator: 印刷頁79，技術及研發概況
     published_date: null
     publisher: 竹陞科技股份有限公司
     quote_check: found
-    title: 竹陞科技股份有限公司114年度年報
-    url: https://www.gutc.com.tw/wp-content/uploads/2026/05/2026_114年年報管制明文.pdf
+    title: 113年年報
+    url: https://www.gutc.com.tw/wp-content/uploads/2025/06/113%E5%B9%B4%E5%B9%B4%E5%A0%B1%E5%90%AB%E5%B0%81%E9%9D%A2%E5%B0%81%E5%BA%95.pdf
   tw.6739#e6:
-    locator: 印刷頁2，研究發展狀況
+    locator: 印刷頁79，技術及研發概況
     published_date: null
     publisher: 竹陞科技股份有限公司
     quote_check: found
-    title: 竹陞科技股份有限公司114年度年報
-    url: https://www.gutc.com.tw/wp-content/uploads/2026/05/2026_114年年報管制明文.pdf
+    title: 113年年報
+    url: https://www.gutc.com.tw/wp-content/uploads/2025/06/113%E5%B9%B4%E5%B9%B4%E5%A0%B1%E5%90%AB%E5%B0%81%E9%9D%A2%E5%B0%81%E5%BA%95.pdf
   tw.6739#e7:
-    locator: 印刷頁73，開發之新商品
+    locator: 印刷頁78，產品之競爭情形
     published_date: null
     publisher: 竹陞科技股份有限公司
     quote_check: found
-    title: 竹陞科技股份有限公司114年度年報
-    url: https://www.gutc.com.tw/wp-content/uploads/2026/05/2026_114年年報管制明文.pdf
+    title: 113年年報
+    url: https://www.gutc.com.tw/wp-content/uploads/2025/06/113%E5%B9%B4%E5%B9%B4%E5%A0%B1%E5%90%AB%E5%B0%81%E9%9D%A2%E5%B0%81%E5%BA%95.pdf
   tw.6739#e8:
-    locator: 亮點產品，AI智慧工廠
-    published_date: null
-    publisher: 竹陞科技股份有限公司
+    locator: 陳玉娟／新竹報導，竹陞段落
+    published_date: '2024-09-20'
+    publisher: DigiTimes
     quote_check: found
-    title: 產品服務
-    url: https://www.gutc.com.tw/zh/products-services/
+    title: 半導體小將沾護國神山光環　本土扶植策略養出六大新兵
+    url: https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000702940_PRV8PVTA5W7682LSGHC6V
   tw.6739#e9:
-    locator: 印刷頁71，目前商品與服務項目
-    published_date: null
-    publisher: 竹陞科技股份有限公司
+    locator: 劉彥良撰文，竹陞科技段落
+    published_date: '2025-07-15'
+    publisher: 商周財富網
     quote_check: found
-    title: 竹陞科技股份有限公司114年度年報
-    url: https://www.gutc.com.tw/wp-content/uploads/2026/05/2026_114年年報管制明文.pdf
+    title: 華景電、創控、華懋...打入台積電供應鏈，半導體設備中的「新小奇」概念股
+    url: https://wealth.businessweekly.com.tw/m/GArticle.aspx?id=ARTL003016764&p=2

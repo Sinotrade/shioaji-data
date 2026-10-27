@@ -26,15 +26,199 @@ chain_stage:
   stage_name: 設備與廠務
   tier: upstream
 primary_chain_position: upstream
-summary_short: 研發製造面板、Micro LED及半導體封裝製程設備。
-summary_long: 東捷從事設備研發與製造，涵蓋LCD製程整合與整廠自動化，並將雷射微加工技術應用於Micro LED及半導體產業。顯示器相關產品包括Micro LED巨量轉移與巨量修補設備，用於顯示器量產製程；半導體相關產品包括PLP自動化搬運與AOI光學檢測設備。先進封裝產品涵蓋玻璃載板雷射切割、EMC雷射修整及雷射剝離設備，另有PLP RDL自動光學測量機，產品布局聚焦FOPLP與晶圓級封裝製程。
-main_theme: theme.mini_led
-themes:
-- also: []
-  stage: display
-  theme: theme.mini_led
-  tier: downstream
+summary_short: 研發與製造LED、LCD及半導體製程設備，並提供設備代工服務。
+summary_long: 東捷科技的合併業務涵蓋顯示器與半導體設備，包括Micro LED巨量轉移與修補、LCD製程設備，以及半導體光學量測、雷射剝離與EMC修整設備。2025年營收以LED產業42.14%為最大來源，LCD產業占29.38%，其他業務占28.48%。年末合併子公司包括富臨科技工程、永鑫光電與Contrel Holdings。2026年引進志聖私募投資，與志聖、均豪及均華透過G2C+聯盟合作，並承接烤箱、EFEM及Die Sorter設備代工。同年出售漢錸科技60%股權，交易價款為新台幣4,200萬元，持股由89.5%降至29.5%。
+segments:
+- evidence_ids:
+  - e1
+  id: seg_led
+  name: LED產業
+  period: '2025'
+  revenue_share_pct: 42.14
+- evidence_ids:
+  - e2
+  id: seg_lcd
+  name: LCD產業
+  period: '2025'
+  revenue_share_pct: 29.38
+- evidence_ids:
+  - e3
+  id: seg_other
+  name: 其他
+  period: '2025'
+  revenue_share_pct: 28.48
+- evidence_ids:
+  - e7
+  id: seg_semi
+  name: 半導體設備
+  period: null
+  revenue_share_pct: null
+- evidence_ids:
+  - e16
+  - e17
+  - e18
+  id: seg_oem
+  name: 設備代工與製造服務
+  period: '2026'
+  revenue_share_pct: null
 relations:
+  customers:
+  - as_of: '2026-09-01'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 烤箱設備代工
+    details:
+    - 烤箱設備代工
+    edge: e4fa31eedda26
+    evidence_level: media
+    id: tw.2467
+    name: 志聖
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-09-01'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: EFEM晶片傳送自動化及抓取爪軸設備代工
+    details:
+    - EFEM晶片傳送自動化及抓取爪軸設備代工
+    edge: eccc75138f18c
+    evidence_level: media
+    id: tw.5443
+    name: 均豪
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-09-01'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: Die Sorter機台代工
+    details:
+    - Die Sorter機台代工
+    edge: e8aa3e43172ad
+    evidence_level: media
+    id: tw.6640
+    name: 均華
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  partners:
+  - as_of: '2026-09-01'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: G2C+聯盟半導體設備合作
+    details:
+    - G2C+聯盟半導體設備合作
+    edge: e63838471ea3f
+    evidence_level: primary
+    id: tw.2467
+    name: 志聖
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-06-22'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 長期面板設備合作
+    details:
+    - 長期面板設備合作
+    edge: ecc3491912433
+    evidence_level: media
+    id: tw.3481
+    name: 群創
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2023-06-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團策略與設備業務合作
+    details:
+    - 集團策略與設備業務合作
+    edge: e162d679c9d98
+    evidence_level: media
+    id: tw.4526
+    name: 東台
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-09-01'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: G2C+聯盟半導體設備合作
+    details:
+    - G2C+聯盟半導體設備合作
+    edge: e2093a766eac5
+    evidence_level: primary
+    id: tw.5443
+    name: 均豪
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-09-01'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: G2C+聯盟半導體設備合作
+    details:
+    - G2C+聯盟半導體設備合作
+    edge: edcea2f93db68
+    evidence_level: primary
+    id: tw.6640
+    name: 均華
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資合併子公司
+    details:
+    - 全資合併子公司
+    edge: e6ce290e53303
+    evidence_level: primary
+    id: org.contrel-holdings
+    name: Contrel Holdings Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 合併子公司；真空鍍膜設備業務
+    details:
+    - 合併子公司；真空鍍膜設備業務
+    edge: ee991cb4707f2
+    evidence_level: primary
+    id: org.fulin-technology-engineering
+    name: 富臨科技工程股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資合併子公司
+    details:
+    - 全資合併子公司
+    edge: ed46923b3a40e
+    evidence_level: primary
+    id: org.yongxin-optoelectronics-54565573
+    name: 永鑫光電股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   transactions:
   - amount: 新台幣1,017,600仟元
     as_of: '2026-03-20'
@@ -43,11 +227,15 @@ relations:
     detail: 認購私募普通股
     details:
     - 認購私募普通股
+    - 志聖認購東捷私募普通股
     edge: e4a5a0a517105
     event_date: '2026-03-20'
     events:
     - amount: 新台幣1,017,600仟元
       detail: 認購私募普通股
+      event_date: '2026-03-20'
+    - amount: 新台幣10.176億元
+      detail: 志聖認購東捷私募普通股
       event_date: '2026-03-20'
     evidence_level: primary
     id: tw.2467
@@ -56,47 +244,171 @@ relations:
     role: seller
     share_basis: null
     share_pct: null
+    weight: 2
+  - amount: 新台幣42,000千元
+    as_of: '2026-03-01'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 出售漢錸科技60%股權
+    details:
+    - 出售漢錸科技60%股權
+    edge: e88fa22bdbcb8
+    event_date: '2026-02-24'
+    events:
+    - amount: 新台幣42,000千元
+      detail: 出售漢錸科技60%股權
+      event_date: '2026-02-24'
+    evidence_level: primary
+    id: tw.8477
+    name: 創業家
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
     weight: 1
+unresolved_mentions:
+- 2025年年報以甲客戶、乙客戶匿名揭露主要銷貨對象，未能對應至具名公司。
+- 2025年年報以甲廠商匿名揭露主要進貨對象，未能對應至具名公司。
+- 官網所稱封裝大廠未具名，不能推定為日月光投控。
+- 2026年具名媒體報導所稱日韓載板客戶未公布公司名稱。
 website: www.contrel.com.tw
 tax_id: '16491312'
 incorporated: '1998-05-01'
 listed: '2006-09-25'
-as_of: '2026-10-15'
+as_of: '2026-10-26'
 confidence: ai_cross_checked
 has_research: true
 evidence:
+  tw.8064#e1:
+    locator: 印刷頁55，營業比重表，LED產業列
+    published_date: '2026-03-31'
+    publisher: 東捷科技股份有限公司
+    quote_check: not_found
+    title: 東捷科技114年度年報
+    url: https://www.contrel.com.tw/upload/1778225055_4305.pdf
+  tw.8064#e10:
+    locator: 第33頁，附註十三，列入合併財務報告之子公司
+    published_date: null
+    publisher: 東捷科技股份有限公司
+    quote_check: found
+    title: 東捷科技及子公司114及113年度合併財務報告
+    url: https://www.contrel.com.tw/upload/1773143494_2121.pdf
+  tw.8064#e11:
+    locator: 第5頁，東捷集團概覽
+    published_date: '2025-11-26'
+    publisher: 東捷科技股份有限公司
+    quote_check: found
+    title: 東捷科技2025年第三季法人說明會
+    url: https://mopsov.twse.com.tw/nas/STR/806420251126M001.pdf
+  tw.8064#e12:
+    locator: 記者鄭盈芷報導，嚴瑞雄說明東台與東捷合作段落
+    published_date: '2023-06-14'
+    publisher: MoneyDJ理財網
+    quote_check: found
+    title: 東台拓電子業，揪志聖、均豪一同打群架
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=e6454fcb-987c-4543-b0bb-143f2edeffc4
+  tw.8064#e13:
+    locator: 記者方韋傑特稿，群創合作關係段落
+    published_date: '2024-06-22'
+    publisher: 自由財經
+    quote_check: found
+    title: 飆股幕後》搭上群創便車 東捷本月大漲27%
+    url: https://ec.ltn.com.tw/article/paper/1652622
+  tw.8064#e14:
+    locator: 記者張欽發報導，正文首段，非AI摘要
+    published_date: '2026-03-20'
+    publisher: 鉅亨網
+    quote_check: found
+    title: 志聖擴大投資版圖 以10.17億元認購東捷私募股成最大法人股東
+    url: https://news.cnyes.com/news/id/6392447
+  tw.8064#e15:
+    locator: 最新消息，2026-09-01文章首段
+    published_date: '2026-09-01'
+    publisher: 東捷科技股份有限公司
+    quote_check: found
+    title: G2C+聯盟 x 洋基女孩 聯手引爆 SEMICON Taiwan 2026！
+    url: https://www.contrel.com.tw/info_news.php?p=2
+  tw.8064#e16:
+    locator: 記者王郁倫報導，聯盟外包訂單段落
+    published_date: '2026-09-01'
+    publisher: 經濟日報
+    quote_check: found
+    title: 「給 Lulu 十個讚！」G2C+聯盟納入東捷 力拚2年內重返榮耀
+    url: https://money.udn.com/money/amp/story/5612/9726589
+  tw.8064#e17:
+    locator: 記者王郁倫報導，聯盟外包訂單段落
+    published_date: '2026-09-01'
+    publisher: 經濟日報
+    quote_check: found
+    title: 「給 Lulu 十個讚！」G2C+聯盟納入東捷 力拚2年內重返榮耀
+    url: https://money.udn.com/money/amp/story/5612/9726589
+  tw.8064#e18:
+    locator: 記者王郁倫報導，聯盟外包訂單段落
+    published_date: '2026-09-01'
+    publisher: 經濟日報
+    quote_check: found
+    title: 「給 Lulu 十個讚！」G2C+聯盟納入東捷 力拚2年內重返榮耀
+    url: https://money.udn.com/money/amp/story/5612/9726589
+  tw.8064#e19:
+    locator: 第64頁，附註三五，重大之期後事項
+    published_date: null
+    publisher: 東捷科技股份有限公司
+    quote_check: found
+    title: 東捷科技及子公司114及113年度合併財務報告
+    url: https://www.contrel.com.tw/upload/1773143494_2121.pdf
   tw.8064#e2:
-    locator: 第5頁，東捷集團概覽之東捷科技介紹
-    published_date: '2025-11-26'
-    publisher: 東捷科技股份有限公司／公開資訊觀測站
+    locator: 印刷頁55，營業比重表，LCD產業列
+    published_date: '2026-03-31'
+    publisher: 東捷科技股份有限公司
+    quote_check: not_found
+    title: 東捷科技114年度年報
+    url: https://www.contrel.com.tw/upload/1778225055_4305.pdf
+  tw.8064#e20:
+    locator: 第77頁，附註三五（一），子公司創業家公司收購漢錸
+    published_date: null
+    publisher: 森鉅科技材料股份有限公司
     quote_check: found
-    title: 東捷科技2025年第三季法人說明會
-    url: https://mopsov.twse.com.tw/nas/STR/806420251126M001.pdf
+    title: 森鉅科技材料及子公司114及113年度合併財務報告
+    url: https://www.xxentria-tech.com/assets/uploads/invester/financialreport/33/q4report69f2c2588b07e.pdf
   tw.8064#e3:
-    locator: 第4頁，東捷發展里程碑，2022年
-    published_date: '2025-11-26'
-    publisher: 東捷科技股份有限公司／公開資訊觀測站
-    quote_check: found
-    title: 東捷科技2025年第三季法人說明會
-    url: https://mopsov.twse.com.tw/nas/STR/806420251126M001.pdf
+    locator: 印刷頁55，營業比重表，其他列
+    published_date: '2026-03-31'
+    publisher: 東捷科技股份有限公司
+    quote_check: not_found
+    title: 東捷科技114年度年報
+    url: https://www.contrel.com.tw/upload/1778225055_4305.pdf
   tw.8064#e4:
-    locator: 第4頁，東捷發展里程碑，2019年
-    published_date: '2025-11-26'
-    publisher: 東捷科技股份有限公司／公開資訊觀測站
+    locator: 印刷頁56，產品服務表，LED產業／Micro LED設備
+    published_date: '2026-03-31'
+    publisher: 東捷科技股份有限公司
     quote_check: found
-    title: 東捷科技2025年第三季法人說明會
-    url: https://mopsov.twse.com.tw/nas/STR/806420251126M001.pdf
+    title: 東捷科技114年度年報
+    url: https://www.contrel.com.tw/upload/1778225055_4305.pdf
   tw.8064#e5:
-    locator: 第11頁，三軸整合、聚焦FOPLP/WLP，設備名稱
+    locator: 印刷頁55，產品服務表，LCD產業
+    published_date: '2026-03-31'
+    publisher: 東捷科技股份有限公司
+    quote_check: found
+    title: 東捷科技114年度年報
+    url: https://www.contrel.com.tw/upload/1778225055_4305.pdf
+  tw.8064#e7:
+    locator: 第11頁，聚焦FOPLP／WLP產品圖
     published_date: '2025-11-26'
-    publisher: 東捷科技股份有限公司／公開資訊觀測站
+    publisher: 東捷科技股份有限公司
     quote_check: found
     title: 東捷科技2025年第三季法人說明會
     url: https://mopsov.twse.com.tw/nas/STR/806420251126M001.pdf
-  tw.8064#e6:
-    locator: 第11頁，三軸整合、聚焦FOPLP/WLP
-    published_date: '2025-11-26'
-    publisher: 東捷科技股份有限公司／公開資訊觀測站
+  tw.8064#e8:
+    locator: 第33頁，附註十三，列入合併財務報告之子公司
+    published_date: null
+    publisher: 東捷科技股份有限公司
     quote_check: found
-    title: 東捷科技2025年第三季法人說明會
-    url: https://mopsov.twse.com.tw/nas/STR/806420251126M001.pdf
+    title: 東捷科技及子公司114及113年度合併財務報告
+    url: https://www.contrel.com.tw/upload/1773143494_2121.pdf
+  tw.8064#e9:
+    locator: 第33頁，附註十三，列入合併財務報告之子公司
+    published_date: null
+    publisher: 東捷科技股份有限公司
+    quote_check: found
+    title: 東捷科技及子公司114及113年度合併財務報告
+    url: https://www.contrel.com.tw/upload/1773143494_2121.pdf

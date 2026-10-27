@@ -175,10 +175,10 @@ members:
 - id: tw.2402
   stage: modules
   tier: midstream
-  detail: 液冷監控與控制模組
-  as_of: '2026-10-15'
+  detail: 液冷系統監控及控制模組
+  as_of: '2026-10-26'
   evidence:
-  - tw.2402#e5
+  - tw.2402#e9
   confidence: ai_cross_checked
 - id: tw.2406
   stage: parts
@@ -252,11 +252,12 @@ members:
 - id: tw.3013
   stage: system
   tier: downstream
-  detail: 液冷機櫃與浸沒式散熱系統
-  as_of: '2025-12-31'
+  detail: 液冷機櫃整合
+  as_of: '2024-06-05'
   evidence:
   - tw.3013#e3
-  - tw.3013#e5
+  - tw.3013#e7
+  - tw.3013#e9
   confidence: ai_cross_checked
 - id: tw.3017
   stage: parts
@@ -391,6 +392,16 @@ members:
   evidence:
   - tw.3376#e11
   - tw.3376#e12
+  confidence: ai_cross_checked
+- id: tw.3380
+  stage: system
+  tier: downstream
+  detail: 直接水冷交換器與ORV3機架整合
+  as_of: '2026-10-12'
+  evidence:
+  - tw.3380#e08
+  - tw.3380#e22
+  - tw.3380#e25
   confidence: ai_cross_checked
 - id: tw.3388
   stage: system
@@ -600,6 +611,14 @@ members:
   as_of: '2024-05-23'
   evidence:
   - tw.4967#e04
+  confidence: ai_cross_checked
+- id: tw.5009
+  stage: null
+  tier: null
+  detail: 液冷模組用鋼材
+  as_of: '2025-09-11'
+  evidence:
+  - tw.5009#e05
   confidence: ai_cross_checked
 - id: tw.5452
   stage: parts
@@ -895,14 +914,6 @@ members:
   as_of: '2026-10-20'
   evidence:
   - tw.8240#e7
-  confidence: ai_cross_checked
-- id: tw.8261
-  stage: parts
-  tier: upstream
-  detail: 水冷系統水泵用Power MOSFET
-  as_of: 2026-06
-  evidence:
-  - tw.8261#e7
   confidence: ai_cross_checked
 - id: tw.8431
   stage: parts

@@ -18,17 +18,80 @@ industry:
   l3_name: 建設開發
   l3_name_en: Property Development
 primary_chain_position: not_applicable
-summary_short: 以住宅大樓開發銷售為主，另透過子公司經營營造及商場業務。
-summary_long: 達麗以住宅大樓開發、出租及出售為主要業務，產品涵蓋住家、套房與停車位，並經營商場出租。旗下寶信營造為百分之百轉投資的營造子公司，承攬達麗建設個案。海外業務透過美國子公司達麗美國，在華盛頓州西雅圖地區從事商場經營及土地建案開發。另一子公司達麗米樂開發，參與高雄捷運北機廠站前土地的商場開發。整體業務涵蓋住宅開發、營造施工與商場經營，營運布局包括台灣及美國。
+summary_short: 以住宅開發銷售為主，另透過子公司經營營造工程、商場及海外不動產。
+summary_long: 達麗主要從事住宅及不動產投資開發，2026年上半年以不動產開發為最大外部營收部門。公司旗下寶信營造承作營建工程，達麗米樂開發則參與商場開發，另有全資子公司定城營造。具名供應實績包括海悅提供建案代銷，以及國產供應達麗建案混凝土，但後者未揭露直接採購方。近三年事件包括共同取得台北市大安區土地及合作興建權利、取得台南歸仁土地，以及與華友聯、海悅共同成立公司參與衛武營捷運聯開。2026年海外子公司DA LI Corridors LLC另向PR CORRIDORS, LLC取得美國亞利桑那州商辦。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_development
+  name: 不動產開發
+  period: 2026年上半年
+  revenue_share_pct: null
+- evidence_ids:
+  - e2
+  id: seg_construction
+  name: 營建工程
+  period: 2026年上半年
+  revenue_share_pct: null
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他
+  period: 2026年上半年
+  revenue_share_pct: null
 relations:
+  partners:
+  - as_of: '2025-08-29'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 衛武營捷運站聯合開發
+    details:
+    - 衛武營捷運站聯合開發
+    edge: ec73cab175ed9
+    evidence_level: media
+    id: tw.1436
+    name: 華友聯
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-08-29'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 衛武營捷運站聯合開發
+    details:
+    - 衛武營捷運站聯合開發
+    edge: e0a6ea0b99d7c
+    evidence_level: media
+    id: tw.2348
+    name: 海悅
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
   - as_of: 2026-10
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 全資營造子公司
+    detail: 商場開發子公司
     details:
-    - 全資營造子公司
-    edge: efa06a906c16f
+    - 商場開發子公司
+    edge: e0901ff0f7bf7
+    evidence_level: primary
+    id: org.dali-miller-development
+    name: 達麗米樂開發股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: 2026-10
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 住宅建案營造工程
+    details:
+    - 住宅建案營造工程
+    edge: e23fafa03fd55
     evidence_level: primary
     id: org.baosin-construction
     name: 寶信營造股份有限公司
@@ -39,32 +102,95 @@ relations:
   - as_of: 2026-10
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 美國商場經營與土地建案開發子公司
+    detail: 達麗冶翠建案代銷服務
     details:
-    - 美國商場經營與土地建案開發子公司
-    edge: e3f5ab5931075
+    - 達麗冶翠建案代銷服務
+    edge: ed435a9d7ae54
     evidence_level: primary
-    id: org.da-li-usa
-    name: 達麗美國
+    id: tw.2348
+    name: 海悅
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: 2026-10
+  - as_of: '2025-11-24'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 高雄捷運北機廠站前商場開發子公司
+    detail: 達麗具名建案混凝土供料
     details:
-    - 高雄捷運北機廠站前商場開發子公司
-    edge: e0901ff0f7bf7
-    evidence_level: primary
-    id: org.dali-miller-development
-    name: 達麗米樂開發股份有限公司
+    - 達麗具名建案混凝土供料
+    edge: e5a7b25c30164
+    evidence_level: other
+    id: tw.2504
+    name: 國產
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
   transactions:
+  - amount: 新台幣5,736,480,000元（達麗本案合計）
+    as_of: '2024-12-24'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 取得台北市大安區土地及合作興建權利
+    details:
+    - 取得台北市大安區土地及合作興建權利
+    edge: e9ae2915d4cd5
+    event_date: '2024-09-26'
+    events:
+    - amount: 新台幣5,736,480,000元（達麗本案合計）
+      detail: 取得台北市大安區土地及合作興建權利
+      event_date: '2024-09-26'
+    evidence_level: primary
+    id: org.tatung-assets-development
+    name: 大同資產開發股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2025-08-29'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 共同成立捷運聯開專案公司
+    details:
+    - 共同成立捷運聯開專案公司
+    edge: eeb06776fc5bf
+    event_date: '2025-08-29'
+    events:
+    - amount: null
+      detail: 共同成立捷運聯開專案公司
+      event_date: '2025-08-29'
+    evidence_level: media
+    id: org.weiwuying-joint-development
+    name: 衛武營聯合開發股份有限公司
+    ranking_basis: unranked
+    role: party
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2024-12-24'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 大安區共同購地案另一賣方
+    details:
+    - 大安區共同購地案另一賣方
+    edge: e3caf69fc7e20
+    event_date: '2024-09-26'
+    events:
+    - amount: null
+      detail: 大安區共同購地案另一賣方
+      event_date: '2024-09-26'
+    evidence_level: primary
+    id: org.zhisheng-real-estate
+    name: 志生不動產股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
   - amount: 約新台幣95.6億元（整案總價）
     as_of: '2024-12-30'
     confidence: ai_cross_checked
@@ -86,53 +212,85 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+unresolved_mentions:
+- 2025年歸仁區武東段土地交易之非關係自然人賣方，公告未具名。
+- 國產對達麗建案供料的直接採購合約買方未揭露，可能涉及承包營造廠。
+- 亞利桑那州商辦的半導體供應鏈及高科技租戶未逐一具名，不能推定台積電為承租客戶。
 website: http://www.da-li.com.tw
 tax_id: '04477420'
 incorporated: '1977-10-04'
 listed: '2013-08-01'
-as_of: '2026-10-15'
+as_of: '2026-10-26'
 confidence: ai_cross_checked
 has_research: true
 evidence:
   tw.6177#e1:
-    locator: 業務範圍，第1項
-    published_date: null
-    publisher: 達麗建設事業股份有限公司
-    quote_check: found
-    title: 經營事業
-    url: https://www.da-li.com.tw/page/business/
-  tw.6177#e2:
-    locator: 業務範圍，第2項
-    published_date: null
-    publisher: 達麗建設事業股份有限公司
-    quote_check: found
-    title: 經營事業
-    url: https://www.da-li.com.tw/page/business/
-  tw.6177#e3:
-    locator: 公司介紹，第2段
-    published_date: null
-    publisher: 達麗建設事業股份有限公司
-    quote_check: found
-    title: 關於達麗
-    url: https://www.da-li.com.tw/page/about/
-  tw.6177#e4:
-    locator: 公司介紹第2段；大事紀西元2010年
-    published_date: null
-    publisher: 達麗建設事業股份有限公司
-    quote_check: found
-    title: 關於達麗
-    url: https://www.da-li.com.tw/page/about/
-  tw.6177#e5:
     locator: 公司資料／公司概況／公司簡介
     published_date: null
     publisher: 達麗建設事業股份有限公司
     quote_check: found
-    title: 財務資訊
+    title: 財務資訊－公司簡介
     url: https://www.da-li.com.tw/page/finance/
-  tw.6177#e6:
-    locator: 正文第1段
+  tw.6177#e10:
+    locator: 第3項／變動緣由及主要內容
+    published_date: '2024-12-24'
+    publisher: 公開資訊觀測站（鉅亨網轉載）
+    quote_check: found
+    title: 達麗：共同取得台北市大安區土地及合作興建權利，補充1130926公告
+    url: https://news.cnyes.com/news/id/5818315
+  tw.6177#e11:
+    locator: 公告第1至4項及第21項
+    published_date: '2025-03-12'
+    publisher: 公開資訊觀測站（MoneyDJ轉載）
+    quote_check: found
+    title: 達麗取得台南市歸仁區武東段土地，計約7.25億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=48823f07-e027-4e15-b8bd-1fa2ac2ab104
+  tw.6177#e14:
+    locator: 正文／共同成立專案公司及簽約
+    published_date: '2025-08-29'
+    publisher: MoneyDJ新聞
+    quote_check: found
+    title: 達麗／華友聯／海悅砸253億元 推動高雄衛武營聯開案
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=8ea0656e-9e77-4f20-8f44-7786afbef763
+  tw.6177#e2:
+    locator: 十四、部門資訊／115年1月至6月／來自外部客戶收入；依序為不動產開發7,437,862、營建工程761,401、其他110,877千元
+    published_date: '2026-08-13'
+    publisher: 達麗建設事業股份有限公司（FinancialFilings轉載）
+    quote_check: unreachable
+    title: 達麗建設事業股份有限公司及子公司115年第二季合併財務報告
+    url: https://financialfilings.com/filings/da-li-coltd-6177/interim-quarterly-report/2026/55962464/
+  tw.6177#e4:
+    locator: 關於寶信
+    published_date: null
+    publisher: 達麗建設事業股份有限公司
+    quote_check: found
+    title: 寶信營造
+    url: https://www.da-li.com.tw/page/baosin-construction/
+  tw.6177#e5:
+    locator: 正文首段及商場規劃說明
     published_date: null
     publisher: 達麗建設事業股份有限公司
     quote_check: found
     title: 達麗米樂開發
     url: https://www.da-li.com.tw/page/miller/
+  tw.6177#e7:
+    locator: 達麗冶翠／投資建設及建築代銷欄
+    published_date: null
+    publisher: 海悅國際開發股份有限公司
+    quote_check: found
+    title: 建案介紹－達麗冶翠
+    url: https://www.hiyes-group.com.tw/practice_detail.aspx?key_id=5165&page=1
+  tw.6177#e8:
+    locator: 區域聯防優勢，可涵蓋科技廠房與房建
+    published_date: '2025-11-24'
+    publisher: 中保無限+生活誌
+    quote_check: found
+    title: 南科四期動能領航！國產建材實業仁德廠以低碳旗艦優勢，佈局高科技S廊帶與大台南建設商機
+    url: https://news.secom.com.tw/articles/南科四期動能領航國產建材實業仁德廠以低碳旗艦優勢佈局高科技s廊帶與大台南建設商機
+  tw.6177#e9:
+    locator: 公告第1至4項
+    published_date: '2024-09-26'
+    publisher: 公開資訊觀測站（MoneyDJ轉載）
+    quote_check: found
+    title: 達麗及他公司共同取得台北市大安區土地及合作興建權利
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=4e9a383a-78a0-48f1-bdf5-f67d14401ed6
