@@ -15,7 +15,7 @@
 | [2449](../companies/2449.md) | 京元電子 | NVIDIA晶片測試供應鏈 |
 | [3711](../companies/3711.md) | 日月光投控 | 子公司矽品為NVIDIA提供封測支援 |
 
-## 零組件與板材（中游，20 家）
+## 零組件與板材（中游，21 家）
 
 | 代號 | 名稱 | 說明 |
 | --- | --- | --- |
@@ -37,10 +37,11 @@
 | [6584](../companies/6584.md) | 南俊國際 | 輝達GB300伺服器推薦供應商資格 |
 | [6805](../companies/6805.md) | 富世達 | GB300平台NV QD快接頭 |
 | [6862](../companies/6862.md) | 三集瑞-KY | NVIDIA平台用低高度TLVR |
+| [8042](../companies/8042.md) | 金山電 | 透過ODM及電池廠切入GB300電容供應鏈 |
 | [8210](../companies/8210.md) | 勤誠 | NVIDIA MGX平台機構方案 |
 | [8996](../companies/8996.md) | 高力 | 子公司高力熱能科技之Vera Rubin NVL72參考設計相容Manifold |
 
-## 系統與機櫃（下游，19 家）
+## 系統與機櫃（下游，18 家）
 
 | 代號 | 名稱 | 說明 |
 | --- | --- | --- |
@@ -58,9 +59,8 @@
 | [3693](../companies/3693.md) | 營邦 | NVIDIA STX系統生態合作 |
 | [3706](../companies/3706.md) | 神達 | NVIDIA MGX架構AI伺服器 |
 | [4938](../companies/4938.md) | 和碩 | NVIDIA GB300 NVL72機櫃 |
-| [6245](../companies/6245.md) | 立端 | 採用NVIDIA MGX架構的ECA-6051系統 |
+| [6245](../companies/6245.md) | 立端 | 採用NVIDIA GPU的認證系統平台 |
 | [6669](../companies/6669.md) | 緯穎 | NVIDIA Vera Rubin NVL72系統與機櫃平台 |
-| [6933](../companies/6933.md) | AMAX-KY | 搭載NVIDIA Blackwell GPU的液冷機櫃 |
 | [7711](../companies/7711.md) | 永擎 | NVIDIA平台伺服器與機櫃 |
 | [8234](../companies/8234.md) | 新漢 | 採用NVIDIA Jetson Thor的機器人控制系統 |
 

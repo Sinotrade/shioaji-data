@@ -26,55 +26,329 @@ chain_stage:
   stage_name: 金融服務
   tier: not_applicable
 primary_chain_position: not_applicable
-summary_short: 經營產物保險，提供車險、火險、傷害險、工程險及責任險。
-summary_long: 台產提供車體損失、商業火災、意外傷害、工程及一般責任等產物保險商品。車體損失險分為甲式、乙式與丙式，依不同契約設計承保車輛毀損風險；商業火險承保非住宅建築、機器設備與貨物等財產。意外傷害險依契約提供意外事故所致身故或失能給付。工程險涵蓋營造工程、機械設備安裝及施工機具等風險。一般責任險包含營業處所與活動事件的公共意外責任保障，承保約定事故造成第三人體傷或財物損失所生的法定賠償責任。
+summary_short: 以汽車、火災、工程等財產保險收取保費。
+summary_long: 台產承作財產保險，商品包括汽車、商業火災、住宅火災、工程、貨物運輸及傷害保險。2025年汽車保險占簽單保費36.09%，商業火災與住宅火災分別占14.48%及11.06%。再保險往來對象包括中央再保、瑞士再保亞洲香港分行及慕尼黑再保。公司亦推出建築物結構安全保障保險，並與寶舖建設合作；2026年與台灣大車隊推出事故安心陪伴服務。2025年公告以新臺幣20億元含稅向森羅投資購買承德路不動產供自用。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_auto
+  name: 汽車保險
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e2
+  - e3
+  id: seg_commercial_fire
+  name: 商業火災保險
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e2
+  - e4
+  id: seg_residential_fire
+  name: 住宅火災保險
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e5
+  id: seg_engineering
+  name: 工程保險
+  period: null
+  revenue_share_pct: null
+- evidence_ids:
+  - e6
+  id: seg_cargo
+  name: 貨物運輸保險
+  period: null
+  revenue_share_pct: null
+- evidence_ids:
+  - e7
+  id: seg_accident
+  name: 傷害保險
+  period: null
+  revenue_share_pct: null
+- evidence_ids:
+  - e8
+  id: seg_idi
+  name: 建築物結構安全保障保險
+  period: null
+  revenue_share_pct: null
+relations:
+  customers:
+  - as_of: '2012-10-03'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 歷史風力機組商業火災保險標案
+    details:
+    - 歷史風力機組商業火災保險標案
+    edge: e861b540e8499
+    evidence_level: other
+    id: org.taipower
+    name: 台灣電力公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  partners:
+  - as_of: '2024-08-21'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 建築物結構安全保障保險合作
+    details:
+    - 建築物結構安全保障保險合作
+    edge: e3a0eb0e9559b
+    evidence_level: primary
+    id: org.baopu-development
+    name: 寶舖建設股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2023-01-04'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 區塊鏈技術與旅遊保險理賠流程
+    details:
+    - 區塊鏈技術與旅遊保險理賠流程
+    edge: e8747408d3638
+    evidence_level: media
+    id: tw.2412
+    name: 中華電
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-01-21'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 交通事故安心陪伴服務
+    details:
+    - 交通事故安心陪伴服務
+    edge: e53316114c330
+    evidence_level: primary
+    id: tw.2640
+    name: 大車隊
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 水險、責任險及車險再保險
+    details:
+    - 水險、責任險及車險再保險
+    edge: e89f45c0461ca
+    evidence_level: primary
+    id: eu.MUV2
+    name: Munich Reinsurance Company
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 資安保險
+    details:
+    - 資安保險
+    edge: e617c3db71fac
+    evidence_level: primary
+    id: org.mingtai-insurance
+    name: 明台產物保險
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 分出再保險服務
+    details:
+    - 分出再保險服務
+    edge: e2ef56a58fa4e
+    evidence_level: primary
+    id: org.swiss-re-asia-hong-kong-branch
+    name: Swiss Re Asia Pte. Ltd. Hong Kong Branch
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 分出再保險服務
+    details:
+    - 分出再保險服務
+    edge: e4986ed9c3d24
+    evidence_level: primary
+    id: tw.2851
+    name: 中再保
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 新台幣20億元(含稅)
+    as_of: '2025-09-03'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 購買承德路三段210號土地及建物
+    details:
+    - 購買承德路三段210號土地及建物
+    edge: e76bc5af5b6be
+    event_date: '2025-09-03'
+    events:
+    - amount: 新台幣20億元(含稅)
+      detail: 購買承德路三段210號土地及建物
+      event_date: '2025-09-03'
+    evidence_level: primary
+    id: org.senluo-investment
+    name: 森羅投資有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
 website: https://www.tfmi.com.tw
 tax_id: '03557115'
 incorporated: '1948-03-12'
 listed: '1997-09-30'
-as_of: '2026-10-18'
+as_of: '2026-10-28'
 confidence: ai_cross_checked
 has_research: true
 evidence:
-  tw.2832#e2:
-    locator: 印刷頁100，肆、營運概況／業務範圍
-    published_date: '2026-03-31'
-    publisher: 臺灣產物保險股份有限公司
-    quote_check: found
-    title: 114年度年報
-    url: https://www.tfmi.com.tw/Files/TFMI/%E5%90%84%E5%96%AE%E4%BD%8D%E4%B8%8A%E5%82%B3/%E8%B2%A1%E5%8B%99%E9%83%A8/%E8%B2%A1%E5%8B%99%E8%A8%8A%E6%81%AF/%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1/%E5%8F%B0%E7%94%A2114%E5%B9%B4%E5%A0%B1.pdf
-  tw.2832#e3:
-    locator: 商品介紹及甲式、乙式、丙式承保範圍
+  tw.2832#e1:
+    locator: 投資人專區，公司代碼
     published_date: null
     publisher: 臺灣產物保險股份有限公司
     quote_check: found
-    title: 車體損失保險
-    url: https://www.tfmi.com.tw/product-personal-detail?id=P11
-  tw.2832#e4:
-    locator: 商業火災保險／商品介紹及承保範圍
+    title: 財務訊息－臺灣產物保險股份有限公司
+    url: https://www.tfmi.com.tw/investors-Financial
+  tw.2832#e10:
+    locator: 第1頁，2025年度分出再保險往來名單；資料日期2026年2月
+    published_date: null
+    publisher: 臺灣產物保險股份有限公司
+    quote_check: found
+    title: 2025年度往來再保險公司名稱及其信用評等
+    url: https://www.tfmi.com.tw/Files/TFMI/各單位上傳/企劃部/投資人專區/公開資訊/公司概況/2025再保人名稱、評等.pdf
+  tw.2832#e11:
+    locator: 印刷頁113，七、重要契約，再保險契約表Munich列
+    published_date: null
+    publisher: 臺灣產物保險股份有限公司
+    quote_check: found
+    title: 臺灣產物保險股份有限公司114年度年報
+    url: https://www.tfmi.com.tw/Files/TFMI/各單位上傳/財務部/財務訊息/股東會年報/台產114年報.pdf
+  tw.2832#e12:
+    locator: 表格序號13，公司名稱台灣產物保險股份有限公司；紀錄日期2012年10月3日
+    published_date: '2017-01-10'
+    publisher: 中華民國產物保險商業同業公會
+    quote_check: found
+    title: 產險業自律監控案件處理情形上網公告事項101年7-12月
+    url: https://www.nlia.org.tw/office/div_monitor/monitor_01_line/產險業自律監控案件處理情形上網公告事項101年7-12月/
+  tw.2832#e13:
+    locator: 全方位貼心服務，謝宏智副總經理具名訪談
+    published_date: '2023-01-04'
+    publisher: 卓越雜誌
+    quote_check: found
+    title: 臺灣產物保險深耕有成 榮獲雙料獎項殊榮
+    url: https://www.ecf.com.tw/tw/article/show.aspx?kind=25&num=6956
+  tw.2832#e14:
+    locator: 新聞標題及合作服務說明
+    published_date: '2026-01-21'
+    publisher: 臺灣產物保險股份有限公司
+    quote_check: found
+    title: 安心陪伴服務
+    url: https://www.tfmi.com.tw/news-Post?newsid=7f4829e2ce7db82f
+  tw.2832#e15:
+    locator: 公司代號2832；第6項交易相對人
+    published_date: '2025-09-03'
+    publisher: 鉅亨網／台產重大訊息
+    quote_check: found
+    title: 台產：公告本公司董事會決議通過購置不動產相關事宜（補充8月27日公告）
+    url: https://news.cnyes.com/news/id/6139294
+  tw.2832#e16:
+    locator: 第5項交易總金額
+    published_date: '2025-09-03'
+    publisher: 鉅亨網／台產重大訊息
+    quote_check: found
+    title: 台產：公告本公司董事會決議通過購置不動產相關事宜（補充8月27日公告）
+    url: https://news.cnyes.com/news/id/6139294
+  tw.2832#e17:
+    locator: 第1項標的物；第2項事實發生日為114年9月3日
+    published_date: '2025-09-03'
+    publisher: 鉅亨網／台產重大訊息
+    quote_check: found
+    title: 台產：公告本公司董事會決議通過購置不動產相關事宜（補充8月27日公告）
+    url: https://news.cnyes.com/news/id/6139294
+  tw.2832#e18:
+    locator: 第23項取得之具體目的或用途
+    published_date: '2025-09-03'
+    publisher: 鉅亨網／台產重大訊息
+    quote_check: found
+    title: 台產：公告本公司董事會決議通過購置不動產相關事宜（補充8月27日公告）
+    url: https://news.cnyes.com/news/id/6139294
+  tw.2832#e19:
+    locator: 印刷頁112，六、資通安全管理
+    published_date: null
+    publisher: 臺灣產物保險股份有限公司
+    quote_check: found
+    title: 臺灣產物保險股份有限公司114年度年報
+    url: https://www.tfmi.com.tw/Files/TFMI/各單位上傳/財務部/財務訊息/股東會年報/台產114年報.pdf
+  tw.2832#e2:
+    locator: 印刷頁2，表一：114年度簽單保費收入明細表；金額單位新臺幣仟元
+    published_date: null
+    publisher: 臺灣產物保險股份有限公司
+    quote_check: found
+    title: 臺灣產物保險股份有限公司114年度年報
+    url: https://www.tfmi.com.tw/Files/TFMI/各單位上傳/財務部/財務訊息/股東會年報/台產114年報.pdf
+  tw.2832#e3:
+    locator: 商業火災保險，商品說明
     published_date: null
     publisher: 臺灣產物保險股份有限公司
     quote_check: found
     title: 商業火災保險及其附加險
     url: https://www.tfmi.com.tw/product-business-detail?id=B11
-  tw.2832#e5:
-    locator: 個人傷害保險／承保範圍
+  tw.2832#e4:
+    locator: 屋主基本型保障，商品名稱
     published_date: null
     publisher: 臺灣產物保險股份有限公司
     quote_check: found
-    title: 意外傷害保險
-    url: https://www.tfmi.com.tw/product-personal-detail?id=P31
-  tw.2832#e6:
-    locator: 工程保險介紹及常見類別
+    title: 住宅火災及地震基本保險
+    url: https://www.tfmi.com.tw/product-personal-detail?id=P21
+  tw.2832#e5:
+    locator: 工程險商品說明及常見工程保險類別
     published_date: null
     publisher: 臺灣產物保險股份有限公司
     quote_check: found
     title: 工程險
     url: https://www.tfmi.com.tw/product-business-detail?id=B21
-  tw.2832#e7:
-    locator: 營業處所及活動事件公共意外責任保險／承保範圍
+  tw.2832#e6:
+    locator: 貨物運輸保險，商品說明
     published_date: null
     publisher: 臺灣產物保險股份有限公司
     quote_check: found
-    title: 一般責任保險
-    url: https://www.tfmi.com.tw/product-business-detail?id=B41
+    title: 貨物運輸保險
+    url: https://www.tfmi.com.tw/product-business-detail?id=B31
+  tw.2832#e7:
+    locator: 意外傷害保險，商品說明
+    published_date: null
+    publisher: 臺灣產物保險股份有限公司
+    quote_check: found
+    title: 意外傷害保險
+    url: https://www.tfmi.com.tw/product-personal-detail?id=P31
+  tw.2832#e8:
+    locator: 臺灣產物保險總經理陳昭鋒發言
+    published_date: '2024-08-21'
+    publisher: 寶舖建設股份有限公司
+    quote_check: found
+    title: Swiss Re瑞士再保險公司與臺灣產物保險率先簽發建築物結構安全保障保險
+    url: https://www.baopu.com.tw/news/p/2024_Swiss_Re_IDI
+  tw.2832#e9:
+    locator: 第1頁，2025年度再保費支出占總保費收入百分之一以上之往來再保險公司表；資料日期2026年2月
+    published_date: null
+    publisher: 臺灣產物保險股份有限公司
+    quote_check: found
+    title: 2025年度往來再保險公司名稱及其信用評等
+    url: https://www.tfmi.com.tw/Files/TFMI/各單位上傳/企劃部/投資人專區/公開資訊/公司概況/2025再保人名稱、評等.pdf

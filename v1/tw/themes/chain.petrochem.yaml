@@ -35,10 +35,10 @@ members:
   stage_role: primary
 - id: tw.1304
   detail: 塑膠原料占營收92%，主要製造聚乙烯、EVA及CBC樹脂，屬下游。
-  as_of: '2026-10-18'
+  as_of: '2026-10-28'
   evidence:
   - tw.1304#e2
-  - tw.1304#e3
+  - tw.1304#e6
   confidence: ai_cross_checked
   source: classification
   stage: downstream
@@ -363,10 +363,10 @@ members:
   stage_role: also
 - id: tw.1710
   detail: 乙二醇事業占營收66%，核心乙二醇與環氧乙烷供下游合成使用，屬中間原料。
-  as_of: '2026-10-15'
+  as_of: '2026-10-28'
   evidence:
-  - tw.1710#e2
-  - tw.1710#e3
+  - tw.1710#e01
+  - tw.1710#e02
   confidence: ai_cross_checked
   source: classification
   stage: midstream
@@ -374,11 +374,11 @@ members:
   stage_role: primary
 - id: tw.1714
   detail: 化學品占營收94%，主產品正烷屬烴、直鏈烷基苯屬石化中間原料。
-  as_of: '2026-10-15'
+  as_of: '2026-10-28'
   evidence:
-  - tw.1714#e2
-  - tw.1714#e5
-  - tw.1714#e6
+  - tw.1714#e02
+  - tw.1714#e03
+  - tw.1714#e04
   confidence: ai_cross_checked
   source: classification
   stage: midstream
@@ -550,11 +550,12 @@ members:
   stage_role: primary
 - id: tw.2108
   detail: 橡膠類為最大收入分項，將石化單體製成合成橡膠與乳膠，供下游加工。
-  as_of: '2026-10-18'
+  as_of: '2026-10-28'
   evidence:
   - tw.2108#e1
-  - tw.2108#e3
-  - tw.2108#e9
+  - tw.2108#e4
+  - tw.2108#e5
+  - tw.2108#e8
   confidence: ai_cross_checked
   source: classification
   stage: midstream
@@ -747,13 +748,10 @@ members:
   stage_role: also
 - id: tw.4764
   detail: 塑膠添加劑占營收46%居首，另供應光固化原料，並製造下游數位印花墨水。
-  as_of: '2026-10-18'
+  as_of: '2026-10-28'
   evidence:
-  - tw.4764#e2
-  - tw.4764#e3
-  - tw.4764#e4
-  - tw.4764#e5
-  - tw.4764#e6
+  - tw.4764#e8
+  - tw.4764#e9
   confidence: ai_cross_checked
   source: classification
   stage: midstream
@@ -761,13 +759,10 @@ members:
   stage_role: primary
 - id: tw.4764
   detail: 塑膠添加劑占營收46%居首，另供應光固化原料，並製造下游數位印花墨水。
-  as_of: '2026-10-18'
+  as_of: '2026-10-28'
   evidence:
-  - tw.4764#e2
-  - tw.4764#e3
-  - tw.4764#e4
-  - tw.4764#e5
-  - tw.4764#e6
+  - tw.4764#e8
+  - tw.4764#e9
   confidence: ai_cross_checked
   source: classification
   stage: downstream
@@ -899,4 +894,4 @@ members:
   stage: downstream
   tier: downstream
   stage_role: primary
-as_of: '2026-10-26'
+as_of: '2026-10-28'

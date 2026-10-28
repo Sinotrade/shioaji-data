@@ -35,16 +35,16 @@ segments:
   name: 半導體封測設備
   period: 2025-06
   revenue_share_pct: null
-main_theme: theme.cpo
+main_theme: theme.cowos
 themes:
-- also: []
-  stage: packaging
-  theme: theme.cpo
-  tier: midstream
 - also: []
   stage: equipment
   theme: theme.cowos
   tier: upstream
+- also: []
+  stage: packaging
+  theme: theme.cpo
+  tier: midstream
 relations:
   competitors:
   - as_of: '2025-08-27'

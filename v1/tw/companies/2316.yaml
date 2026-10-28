@@ -44,15 +44,15 @@ segments:
   name: 印刷電路板組裝
   period: '2025'
   revenue_share_pct: 22.92
-main_theme: theme.ai_server
+main_theme: theme.robotics
 themes:
-- also: []
-  stage: board_materials
-  theme: theme.ai_server
-  tier: upstream
 - also: []
   stage: components
   theme: theme.robotics
+  tier: upstream
+- also: []
+  stage: board_materials
+  theme: theme.ai_server
   tier: upstream
 relations:
   partners:

@@ -305,6 +305,18 @@ members:
   stage: board
   tier: midstream
   stage_role: primary
+- id: tw.3305
+  detail: 主要營收為錫棒、錫球及錫絲等電子接合材料，屬組裝與封裝用周邊材料，未對應所列PCB階段。
+  as_of: '2026-10-28'
+  evidence:
+  - tw.3305#e01
+  - tw.3305#e02
+  - tw.3305#e05
+  - tw.3305#e06
+  confidence: ai_cross_checked
+  source: classification
+  stage: null
+  tier: null
 - id: tw.3321
   detail: 軟性印刷電路板設計製造占2025年營收99.92%，屬電路板製造階段。
   as_of: '2026-10-24'
@@ -380,10 +392,9 @@ members:
   stage_role: primary
 - id: tw.3498
   detail: CCL及PCB自動化設備占營收74.30%，主要供應製程設備與系統整合。
-  as_of: '2026-10-18'
+  as_of: '2026-10-28'
   evidence:
   - tw.3498#e1
-  - tw.3498#e2
   - tw.3498#e6
   confidence: ai_cross_checked
   source: classification
@@ -473,7 +484,7 @@ members:
   stage_role: primary
 - id: tw.4927
   detail: 製造及銷售硬式印刷電路板，多層板占營收77.73%，為主要收入來源。
-  as_of: '2026-10-18'
+  as_of: '2026-10-28'
   evidence:
   - tw.4927#e1
   - tw.4927#e2
@@ -557,10 +568,10 @@ members:
   stage_role: also
 - id: tw.5340
   detail: 主要製造銅箔基板用電子級玻纖布，屬PCB上游材料。
-  as_of: '2026-10-15'
+  as_of: '2026-10-28'
   evidence:
-  - tw.5340#e1
-  - tw.5340#e7
+  - tw.5340#e01
+  - tw.5340#e02
   confidence: ai_cross_checked
   source: classification
   stage: materials
@@ -820,12 +831,11 @@ members:
   stage_role: also
 - id: tw.6438
   detail: 載板與PCB自動化設備占營收55.94%，主要供應製程搬運與生產設備。
-  as_of: '2026-10-18'
+  as_of: '2026-10-28'
   evidence:
+  - tw.6438#e1
   - tw.6438#e2
   - tw.6438#e3
-  - tw.6438#e4
-  - tw.6438#e5
   confidence: ai_cross_checked
   source: classification
   stage: tools
@@ -1052,4 +1062,4 @@ members:
   stage: materials
   tier: upstream
   stage_role: primary
-as_of: '2026-10-26'
+as_of: '2026-10-28'

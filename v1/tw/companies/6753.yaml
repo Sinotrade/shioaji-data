@@ -17,82 +17,340 @@ industry:
   l3: aero.defense
   l3_name: 國防與無人機
   l3_name_en: Defense & Drones
-primary_chain_position: midstream
-summary_short: 以船舶設計建造為主要收入，另提供船舶保養維修服務。
-summary_long: 龍德造船從事船舶設計與建造，並提供船舶保養及維修服務，業務涵蓋新船製造與售後服務。依114年度年報，2025年船舶建造占營收88.56%，船舶保養占6.37%，其他業務占5.07%，收入以船舶建造為主。官網工程實績包括65公尺高效能艦、13公尺巡邏艇與38公尺消防救援船，產品涵蓋艦艇、巡邏及消防救援用途。公司亦有無人駕駛水面船交付實績，官網沿革記載於2016年10月開始陸續交船。
+primary_chain_position: not_applicable
+summary_short: 以中高速船艇設計建造及保養維修取得收入，產品包含軍用艦艇與無人船。
+summary_long: 龍德造船以中高速船艇設計、建造及保養維修為主要業務，2025年船舶建造占營收88.56%，船舶保養占6.37%。產品涵蓋沱江級飛彈巡邏艦及無人水面載具，並自研「黑潮」無人艇。契約客戶包括國防部、國家中山科學研究院及新加坡警察海岸保衛處；香港海事處、香港海關與臺灣港務港勤則有歷史交船紀錄。年報列示中鋼鋁業供應鋁合金板。2024年公司委託日日營造與宜鋼興建六廠北棟廠房，並追加土木工程款。
 segments:
 - evidence_ids:
-  - e1
-  id: seg_build
+  - e02
+  id: shipbuilding
   name: 船舶建造
   period: '2025'
   revenue_share_pct: 88.56
 - evidence_ids:
-  - e1
-  id: seg_maintenance
+  - e02
+  id: maintenance
   name: 船舶保養
   period: '2025'
   revenue_share_pct: 6.37
 - evidence_ids:
-  - e1
-  id: seg_other
+  - e02
+  id: other
   name: 其他
   period: '2025'
   revenue_share_pct: 5.07
+relations:
+  customers:
+  - as_of: 2009-06
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 100噸級巡防艇；歷史交船紀錄
+    details:
+    - 100噸級巡防艇；歷史交船紀錄
+    edge: eb607a43e6604
+    evidence_level: primary
+    id: org.hk-customs-and-excise-department
+    name: 香港海關
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2007-11
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 鋁合金警艇；歷史交船紀錄
+    details:
+    - 鋁合金警艇；歷史交船紀錄
+    edge: e0ab1ead5f314
+    evidence_level: primary
+    id: org.hk-marine-department
+    name: 香港海事處
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-05-05'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 工作船載台建造
+    details:
+    - 工作船載台建造
+    edge: e2b7c0042aca1
+    evidence_level: primary
+    id: org.ncsist
+    name: 中科院
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-05-05'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 巡邏艇建造及維護
+    details:
+    - 巡邏艇建造及維護
+    edge: e64720ca0c0fc
+    evidence_level: primary
+    id: org.singapore-police-coast-guard
+    name: Singapore Police Coast Guard
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2018-09
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 離岸風電人員運維船；歷史交船紀錄
+    details:
+    - 離岸風電人員運維船；歷史交船紀錄
+    edge: e582f6a300960
+    evidence_level: primary
+    id: org.taiwan-international-ports-marine
+    name: 臺灣港務港勤股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2023-05-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 小型高速巡邏艇；海巡機關前身的歷史採購
+    details:
+    - 小型高速巡邏艇；海巡機關前身的歷史採購
+    edge: eb802305b1388
+    evidence_level: media
+    id: org.tamsui-water-police-patrol
+    name: 淡水水上警察巡邏隊
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-05-05'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 海軍高效能艦艇及快速布雷艇建造
+    details:
+    - 海軍高效能艦艇及快速布雷艇建造
+    edge: ed803576e985d
+    evidence_level: primary
+    id: org.tw-ministry-of-national-defense
+    name: 國防部
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: '2026-05-05'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 鋁合金板
+    details:
+    - 鋁合金板
+    edge: eb9746165668e
+    evidence_level: primary
+    id: org.cs-aluminium
+    name: 中鋼鋁業
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-05-05'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 船用主機採購
+    details:
+    - 船用主機採購
+    edge: e671de442b730
+    evidence_level: primary
+    id: org.rolls-royce-solutions-asia
+    name: ROLLS ROYCE SOLUTIONS ASIA PTE LTD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 新台幣289,000,000元（含稅）
+    as_of: '2024-10-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 六廠北棟廠房土木建築工程委建
+    details:
+    - 六廠北棟廠房土木建築工程委建
+    - 六廠北棟土木工程合約追加
+    edge: ed55f8817bb29
+    event_date: '2024-03-20'
+    events:
+    - amount: 追加新台幣35,392,300元；變更後合約新台幣324,392,300元（含稅）
+      detail: 六廠北棟土木工程合約追加
+      event_date: '2024-10-23'
+    - amount: 新台幣289,000,000元（含稅）
+      detail: 六廠北棟廠房土木建築工程委建
+      event_date: '2024-03-20'
+    evidence_level: primary
+    id: org.ri-ri-construction
+    name: 日日營造有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣563,283,494元（含稅）
+    as_of: '2024-06-17'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 六廠北棟鋼骨材料採購及鋼構工程
+    details:
+    - 六廠北棟鋼骨材料採購及鋼構工程
+    edge: eb8899ed9d437
+    event_date: '2024-06-17'
+    events:
+    - amount: 新台幣563,283,494元（含稅）
+      detail: 六廠北棟鋼骨材料採購及鋼構工程
+      event_date: '2024-06-17'
+    evidence_level: primary
+    id: org.yi-gang
+    name: 宜鋼股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 雷達與軍工通訊設備商：未找到足以確認具名供應商及交易方向的證據。
+- 2025年度年報採購占比表以「甲公司」匿名列示供應商，未據此對應任何具名廠商。
+- 2025年度年報銷貨占比表以A、B、C客戶匿名揭露，未將占比套用至具名政府機關。
+- 「海岸防衛隊」未指明國家與法人；僅確認新加坡警察海岸保衛處，以及台灣海巡機關前…
 website: www.lungteh.com
 tax_id: '40607762'
 incorporated: '1976-05-06'
 listed: '2023-03-10'
-as_of: '2026-10-18'
+as_of: '2026-10-28'
 confidence: ai_cross_checked
 has_research: true
 evidence:
-  tw.6753#e1:
-    locator: 印刷頁67／PDF第70頁，營業比重；欄序為113年度及114年度
-    published_date: '2026-05-22'
-    publisher: 龍德造船工業股份有限公司
-    quote_check: found
-    title: 龍德造船工業股份有限公司114年度年報
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52620/2026/RNS/52620_rns_2026-05-22_bae39150-3837-4562-9cad-4b97c2d83edb.pdf
-  tw.6753#e2:
-    locator: 使命
+  tw.6753#e01:
+    locator: 高性能船艦設計製造
     published_date: null
     publisher: 龍德造船
     quote_check: found
     title: 服務與能力
     url: https://www.lungteh.com/zh/service
-  tw.6753#e3:
-    locator: 工程實績／產品標題
+  tw.6753#e02:
+    locator: 2.1 公司簡介，主要產品銷售比重；統計至2025年底
+    published_date: '2026-08-27'
+    publisher: 龍德造船；FinancialFilings收錄
+    quote_check: unreachable
+    title: 2025年度永續報告書
+    url: https://financialfilings.com/filings/lungteh-6753/environmental-social-information/2026/73447151/
+  tw.6753#e03:
+    locator: 2.1 公司簡介，維修保養業務
+    published_date: '2026-08-27'
+    publisher: 龍德造船；FinancialFilings收錄
+    quote_check: unreachable
+    title: 2025年度永續報告書
+    url: https://financialfilings.com/filings/lungteh-6753/environmental-social-information/2026/73447151/
+  tw.6753#e04:
+    locator: 軍艦介紹首段；頁面更新日期2024-09-07
     published_date: null
-    publisher: 龍德造船
+    publisher: 中華民國海軍
     quote_check: found
-    title: 65公尺高效能艦
-    url: https://www.lungteh.com/zh/project/542
-  tw.6753#e4:
-    locator: 工程實績／產品標題
-    published_date: null
-    publisher: 龍德造船
+    title: 沱江級飛彈巡邏艦
+    url: https://navy.mnd.gov.tw/AboutUs/Other_Info.aspx?AID=30034&ID=1
+  tw.6753#e05:
+    locator: 記者江明晏報導，董事長黃守真受訪談無人艇布局
+    published_date: '2025-09-19'
+    publisher: 中央通訊社
     quote_check: found
-    title: 13公尺巡邏艇
-    url: https://www.lungteh.com/zh/project/554
-  tw.6753#e5:
-    locator: 工程實績／產品標題
-    published_date: null
-    publisher: 龍德造船
+    title: 迎海軍、海巡訂單潮　龍德造船：未來10年供不應求
+    url: https://www.cna.com.tw/news/afe/202509190031.aspx
+  tw.6753#e06:
+    locator: 印刷第81頁，主要原料之供應狀況；年報刊印日2026-05-05
+    published_date: '2026-05-22'
+    publisher: 龍德造船；FinancialReports保存原件
     quote_check: found
-    title: 38公尺消防救援船
-    url: https://www.lungteh.com/zh/project/570
-  tw.6753#e6:
-    locator: 公司沿革／105年10月
+    title: 114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52620/2026/RNS/52620_rns_2026-05-22_bae39150-3837-4562-9cad-4b97c2d83edb.pdf
+  tw.6753#e07:
+    locator: 印刷第89頁，重要契約，採購合約之主機供應法人；期間112/7/19至115/9/30
+    published_date: '2026-05-22'
+    publisher: 龍德造船；FinancialReports保存原件
+    quote_check: found
+    title: 114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52620/2026/RNS/52620_rns_2026-05-22_bae39150-3837-4562-9cad-4b97c2d83edb.pdf
+  tw.6753#e08:
+    locator: 印刷第90頁，重要契約，船舶建造合約，國防部高效能艦艇第二批及布雷艇後續艇列
+    published_date: '2026-05-22'
+    publisher: 龍德造船；FinancialReports保存原件
+    quote_check: found
+    title: 114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52620/2026/RNS/52620_rns_2026-05-22_bae39150-3837-4562-9cad-4b97c2d83edb.pdf
+  tw.6753#e09:
+    locator: 印刷第90頁，船舶建造合約，國家中山科學研究院列，起日113/3/29
+    published_date: '2026-05-22'
+    publisher: 龍德造船；FinancialReports保存原件
+    quote_check: found
+    title: 114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52620/2026/RNS/52620_rns_2026-05-22_bae39150-3837-4562-9cad-4b97c2d83edb.pdf
+  tw.6753#e10:
+    locator: 印刷第90頁，船舶建造合約，Singapore Police Coast Guard列，113/6/28簽約巡邏艇
+    published_date: '2026-05-22'
+    publisher: 龍德造船；FinancialReports保存原件
+    quote_check: not_found
+    title: 114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52620/2026/RNS/52620_rns_2026-05-22_bae39150-3837-4562-9cad-4b97c2d83edb.pdf
+  tw.6753#e11:
+    locator: 印刷第89頁，船舶保養合約，Singapore Police Coast Guard列，108/7/11及113/6/28契約，均為交船後15年
+    published_date: '2026-05-22'
+    publisher: 龍德造船；FinancialReports保存原件
+    quote_check: found
+    title: 114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52620/2026/RNS/52620_rns_2026-05-22_bae39150-3837-4562-9cad-4b97c2d83edb.pdf
+  tw.6753#e12:
+    locator: 公司沿革，96年11月，香港海事處交船紀錄
     published_date: null
     publisher: 龍德造船
     quote_check: found
     title: 關於龍德
     url: https://www.lungteh.com/zh/about-us
-  tw.6753#e7:
-    locator: 售後服務
+  tw.6753#e13:
+    locator: 公司沿革，98年6月
     published_date: null
     publisher: 龍德造船
     quote_check: found
-    title: 服務與能力
-    url: https://www.lungteh.com/zh/service
+    title: 關於龍德
+    url: https://www.lungteh.com/zh/about-us
+  tw.6753#e14:
+    locator: 公司沿革，107年9月，26公尺新造離岸風電人員運維船交船紀錄
+    published_date: null
+    publisher: 龍德造船
+    quote_check: found
+    title: 關於龍德
+    url: https://www.lungteh.com/zh/about-us
+  tw.6753#e15:
+    locator: 記者劉宇捷、涂鉅旻專訪；能標到沱江艦，龍德的經驗很加分
+    published_date: '2023-05-28'
+    publisher: 自由時報
+    quote_check: found
+    title: 造沱江艦「轉骨」 龍德瞄準無人艇、零碳排船
+    url: https://def.ltn.com.tw/article/breakingnews/4315484
+  tw.6753#e16:
+    locator: 說明第1點租地委建、第4點契約總金額
+    published_date: '2024-06-17'
+    publisher: 龍德造船重大訊息；Win投資轉載
+    quote_check: found
+    title: 公告本公司發包六廠北棟廠房新建工程合約一年內累積金額達五億元以上
+    url: https://winvest.tw/News/Detail/19625
+  tw.6753#e17:
+    locator: 說明第4點契約總金額
+    published_date: '2024-06-17'
+    publisher: 龍德造船重大訊息；Win投資轉載
+    quote_check: found
+    title: 公告本公司發包六廠北棟廠房新建工程合約一年內累積金額達五億元以上
+    url: https://winvest.tw/News/Detail/19625
+  tw.6753#e18:
+    locator: 公告第2、3點，日日營造原約及變動內容
+    published_date: '2024-10-23'
+    publisher: 公開資訊觀測站重大訊息；MoneyDJ轉載
+    quote_check: found
+    title: 龍德造船：因基樁設計變更，六廠北棟廠房新建工程追加後合約金額約3.24億
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=43453f8d-abe8-4811-8233-5f70957e66fe

@@ -53,15 +53,15 @@ segments:
   name: 視訊會議設備
   period: '2025'
   revenue_share_pct: 8.37
-main_theme: theme.mini_led
+main_theme: theme.robotics
 themes:
-- also: []
-  stage: display
-  theme: theme.mini_led
-  tier: downstream
 - also: []
   stage: system
   theme: theme.robotics
+  tier: downstream
+- also: []
+  stage: display
+  theme: theme.mini_led
   tier: downstream
 relations:
   customers:

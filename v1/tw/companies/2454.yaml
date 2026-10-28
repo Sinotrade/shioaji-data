@@ -62,12 +62,12 @@ themes:
   theme: theme.data_center
   tier: midstream
 - also: []
-  stage: system
-  theme: theme.cpo
-  tier: downstream
-- also: []
   stage: design
   theme: theme.cowos
+  tier: downstream
+- also: []
+  stage: system
+  theme: theme.cpo
   tier: downstream
 relations:
   customers:
@@ -207,6 +207,34 @@ relations:
     evidence_level: primary
     id: tw.2357
     name: 華碩
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 積體電路
+    details:
+    - 積體電路
+    edge: e347ea4b8669a
+    evidence_level: primary
+    id: tw.3416
+    name: 融程電
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-01-09'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 合勤科技5G閘道器採用T830與Filogic 680晶片
+    details:
+    - 合勤科技5G閘道器採用T830與Filogic 680晶片
+    edge: e0877619df062
+    evidence_level: primary
+    id: tw.3704
+    name: 合勤控
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -411,6 +439,20 @@ relations:
   - as_of: '2025-01-06'
     confidence: ai_cross_checked
     counterparty_shares: []
+    detail: 車用、智慧家庭及智慧零售AI語音方案
+    details:
+    - 車用、智慧家庭及智慧零售AI語音方案
+    edge: e934e8cd6cdcd
+    evidence_level: primary
+    id: tw.7749
+    name: 意騰-KY
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-01-06'
+    confidence: ai_cross_checked
+    counterparty_shares: []
     detail: 共同設計GB10 Grace Blackwell Superchip
     details:
     - 共同設計GB10 Grace Blackwell Superchip
@@ -601,6 +643,20 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: '2025-12-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 銅鑼科學園區廠房及資料中心土建工程
+    details:
+    - 銅鑼科學園區廠房及資料中心土建工程
+    edge: ed6d0b9282e88
+    evidence_level: primary
+    id: tw.2546
+    name: 根基
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   - as_of: '2020-11-05'
     confidence: ai_cross_checked
     counterparty_shares: []
@@ -653,6 +709,20 @@ relations:
     evidence_level: other
     id: tw.3289
     name: 宜特
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2015-04-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 半導體分析服務
+    details:
+    - 半導體分析服務
+    edge: eaedecb055b9a
+    evidence_level: media
+    id: tw.3587
+    name: 閎康
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -737,6 +807,20 @@ relations:
     evidence_level: primary
     id: tw.6526
     name: 達發
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-03-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 處理器矽智財
+    details:
+    - 處理器矽智財
+    edge: ea27093b476ab
+    evidence_level: primary
+    id: tw.6533
+    name: 晶心科
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -891,6 +975,48 @@ relations:
     evidence_level: media
     id: org.意騰科技-ky
     name: 意騰科技-KY
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 美金1.5億元
+    as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司奕力科技取得Discrete TCON營業資產及技術授權
+    details:
+    - 子公司奕力科技取得Discrete TCON營業資產及技術授權
+    edge: e32594316f699
+    event_date: '2025-02-07'
+    events:
+    - amount: 美金1.5億元
+      detail: 子公司奕力科技取得Discrete TCON營業資產及技術授權
+      event_date: '2025-02-07'
+    evidence_level: primary
+    id: tw.6962
+    name: 奕力-KY
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 1190萬美元，約新台幣3.55億元
+    as_of: '2025-08-07'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 取得音頻編解碼器、D類放大器技術授權及相關資產
+    details:
+    - 取得音頻編解碼器、D類放大器技術授權及相關資產
+    edge: e821f1510bece
+    event_date: '2025-08-07'
+    events:
+    - amount: 1190萬美元，約新台幣3.55億元
+      detail: 取得音頻編解碼器、D類放大器技術授權及相關資產
+      event_date: '2025-08-07'
+    evidence_level: media
+    id: tw.7749
+    name: 意騰-KY
     ranking_basis: unranked
     role: seller
     share_basis: null

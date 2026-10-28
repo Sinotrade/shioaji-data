@@ -65,12 +65,12 @@ themes:
   theme: theme.liquid_cooling
   tier: downstream
 - also: []
-  stage: system
-  theme: theme.nvidia
-  tier: downstream
-- also: []
   stage: application
   theme: theme.hbm
+  tier: downstream
+- also: []
+  stage: system
+  theme: theme.nvidia
   tier: downstream
 relations:
   customers:

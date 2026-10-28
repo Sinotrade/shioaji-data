@@ -26,39 +26,301 @@ chain_stage:
   stage_name: 金融服務
   tier: not_applicable
 primary_chain_position: not_applicable
-summary_short: 從事生技醫療創業投資與企業育成，營收包含投資評價損益。
-summary_long: 鑽石投資以生技醫療創業投資及企業育成為主要業務，投資領域涵蓋新藥研發、高階醫療器材、創新醫療服務、醫療通路與農業生技。公司協助被投資企業處理公司治理、技術研發、臨床執行、商業發展及資本市場接軌。營業收入包含已實現與未實現的投資標的評價損益，2026年第二季收入主要來自未實現評價利益。旗下另有鑽石一號投資及鑽石高新投資兩家子公司。
+summary_short: 以生技醫療股權投資與育成為主，營收包含已實現及未實現投資評價損益。
+summary_long: 鑽石投資以生技醫療股權投資及育成為主要業務，營業收入包含已實現與未實現投資標的評價損益。投資範圍涵蓋新藥、高階醫材及醫療服務，2026年9月底持股包括醣基生醫、欣耀生醫、永笙、Syncell、優億、Rejuvenate Bio及Bilayer Therapeutics。Syncell與新析生技為同一投資標的，公司於2026年7月公告加碼其A+特別股，交易金額為9,211,709.86美元。合一生技持股已於2024年10月全數處分。鑽石一號及鑽石高新為全資子公司，2024年3月各獲公司現金增資新台幣10億元。
+segments:
+- evidence_ids:
+  - e02
+  - e03
+  id: seg_vc
+  name: 生技醫療股權投資與育成
+  period: '2026'
+  revenue_share_pct: null
 relations:
-  subsidiaries:
-  - as_of: '2026-10-18'
+  partners:
+  - as_of: 2026-10
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 投資子公司
+    detail: 合作投資成立醣基生醫
     details:
-    - 投資子公司
-    edge: e6b598d354e30
+    - 合作投資成立醣基生醫
+    edge: e067fc08f07e6
     evidence_level: primary
-    id: org.鑽石一號投資股份有限公司
-    name: 鑽石一號投資股份有限公司
+    id: org.academia_sinica
+    name: 中央研究院
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-10-18'
+  subsidiaries:
+  - as_of: 2026-10
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 投資子公司
+    detail: 全資投資子公司
     details:
-    - 投資子公司
-    edge: ea53eba83d068
+    - 全資投資子公司
+    edge: e1c68b56a3f31
     evidence_level: primary
-    id: org.鑽石高新投資股份有限公司
+    id: org.diamond_gaoxin_investment
     name: 鑽石高新投資股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: 2026-10
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資投資子公司
+    details:
+    - 全資投資子公司
+    edge: e83242243530e
+    evidence_level: primary
+    id: org.diamond_yihao_investment
+    name: 鑽石一號投資股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   transactions:
+  - amount: null
+    as_of: '2026-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 海外生技股權投資
+    details:
+    - 海外生技股權投資
+    edge: e9708d8863bef
+    event_date: null
+    events:
+    - amount: null
+      detail: 海外生技股權投資
+      event_date: null
+    evidence_level: primary
+    id: org.bilayer_therapeutics
+    name: Bilayer Therapeutics Inc.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣1,000,000仟元
+    as_of: 2024-03
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司現金增資
+    details:
+    - 全資子公司現金增資
+    edge: ef82167ce1615
+    event_date: null
+    events:
+    - amount: 新台幣1,000,000仟元
+      detail: 全資子公司現金增資
+      event_date: null
+    evidence_level: primary
+    id: org.diamond_gaoxin_investment
+    name: 鑽石高新投資股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣1,000,000仟元
+    as_of: 2024-03
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司現金增資
+    details:
+    - 全資子公司現金增資
+    edge: e7d1efc28729e
+    event_date: null
+    events:
+    - amount: 新台幣1,000,000仟元
+      detail: 全資子公司現金增資
+      event_date: null
+    evidence_level: primary
+    id: org.diamond_yihao_investment
+    name: 鑽石一號投資股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2025-03-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 法人股東持股投資
+    details:
+    - 法人股東持股投資
+    edge: e8c684fd793d6
+    event_date: null
+    events:
+    - amount: null
+      detail: 法人股東持股投資
+      event_date: null
+    evidence_level: primary
+    id: org.fubon_financial_holding_venture_capital
+    name: 富邦金控創業投資股份有限公司
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2026-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 生技股權投資及現金增資
+    details:
+    - 生技股權投資及現金增資
+    edge: e4b4f77cc6485
+    event_date: null
+    events:
+    - amount: null
+      detail: 生技股權投資及現金增資
+      event_date: null
+    evidence_level: primary
+    id: org.immunadd
+    name: 優億股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2026-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 海外生技股權投資
+    details:
+    - 海外生技股權投資
+    edge: e6e9e3cb2b65c
+    event_date: null
+    events:
+    - amount: null
+      detail: 海外生技股權投資
+      event_date: null
+    evidence_level: primary
+    id: org.rejuvenate_bio
+    name: Rejuvenate Bio Inc.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 9,211,709.86美元
+    as_of: '2026-07-08'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 新析生技A+特別股投資
+    details:
+    - 新析生技A+特別股投資
+    edge: eb84e75f4c666
+    event_date: '2026-07-03'
+    events:
+    - amount: 9,211,709.86美元
+      detail: 新析生技A+特別股投資
+      event_date: '2026-07-03'
+    evidence_level: primary
+    id: org.syncell
+    name: Syncell Inc.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2025-03-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 法人股東持股投資
+    details:
+    - 法人股東持股投資
+    edge: e32f6d8119fc9
+    event_date: null
+    events:
+    - amount: null
+      detail: 法人股東持股投資
+      event_date: null
+    evidence_level: primary
+    id: org.taishin_venture_capital
+    name: 台新創業投資股份有限公司
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: 2026-10
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 創始股東出資關係
+    details:
+    - 創始股東出資關係
+    edge: e54a291f05b61
+    event_date: null
+    events:
+    - amount: null
+      detail: 創始股東出資關係
+      event_date: null
+    evidence_level: primary
+    id: org.潤泰集團
+    name: 潤泰集團
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2025-03-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 法人股東持股投資
+    details:
+    - 法人股東持股投資
+    - 出售合一生技7,800,000股予中天
+    edge: e2502b116f728
+    event_date: '2024-10-25'
+    events:
+    - amount: null
+      detail: 出售合一生技7,800,000股予中天
+      event_date: '2024-10-25'
+    - amount: null
+      detail: 法人股東持股投資
+      event_date: null
+    evidence_level: primary
+    id: tw.4128
+    name: 中天
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 美金19,050仟元
+    as_of: '2026-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 生技股權投資
+    details:
+    - 生技股權投資
+    - 子公司鑽石一號參與永笙現金增資
+    edge: e12417dc56c2e
+    event_date: null
+    events:
+    - amount: null
+      detail: 生技股權投資
+      event_date: null
+    - amount: 美金19,050仟元
+      detail: 子公司鑽石一號參與永笙現金增資
+      event_date: null
+    evidence_level: primary
+    id: tw.4178
+    name: 永笙-KY
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
   - amount: NT$18,121,784
     as_of: '2025-04-10'
     confidence: ai_cross_checked
@@ -80,53 +342,202 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  - amount: null
+    as_of: '2026-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 生技股權投資
+    details:
+    - 生技股權投資
+    edge: eb2ef20932c7e
+    event_date: null
+    events:
+    - amount: null
+      detail: 生技股權投資
+      event_date: null
+    evidence_level: primary
+    id: tw.6586
+    name: 醣基生醫
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2026-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 生技股權投資
+    details:
+    - 生技股權投資
+    edge: eb3198d5b7c36
+    event_date: null
+    events:
+    - amount: null
+      detail: 生技股權投資
+      event_date: null
+    evidence_level: primary
+    id: tw.6634
+    name: 欣耀生醫
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 處分合一股份交易中，承接其餘18,891,358股的國際機構投資人未具名。
 website: http://www.diamondbiofund.com
 tax_id: '53663724'
 incorporated: '2013-01-09'
 listed: '2023-09-19'
-as_of: '2026-10-18'
+as_of: '2026-10-28'
 confidence: ai_cross_checked
 has_research: true
 evidence:
-  tw.6901#e1:
-    locator: 第1頁，公司基本資料
+  tw.6901#e01:
+    locator: 第1頁，公司基本資料及股票代號
     published_date: '2026-10-03'
     publisher: 臺灣證券交易所
     quote_check: not_found
     title: 鑽石生技投資股份有限公司個股資訊
     url: https://wwwc.twse.com.tw/pdf/ch/6901_ch.pdf
-  tw.6901#e2:
+  tw.6901#e02:
     locator: 公司簡介首段
     published_date: null
-    publisher: 鑽石生技投資股份有限公司
+    publisher: 鑽石生技投資
     quote_check: found
     title: 公司簡介
     url: https://www.diamondbiofund.com/aboutus/公司簡介/
-  tw.6901#e3:
-    locator: 公司簡介首段，企業育成說明
-    published_date: null
-    publisher: 鑽石生技投資股份有限公司
-    quote_check: found
-    title: 公司簡介
-    url: https://www.diamondbiofund.com/aboutus/公司簡介/
-  tw.6901#e4:
+  tw.6901#e03:
     locator: 第7頁，營收認列原則
-    published_date: '2026-09-30'
-    publisher: 鑽石生技投資股份有限公司
+    published_date: '2026-06-26'
+    publisher: 鑽石生技投資
     quote_check: found
-    title: 2026年第三季線上法說會簡報
-    url: https://www.diamondbiofund.com/wp-content/uploads/2026/09/2026Q3_TC.pdf
-  tw.6901#e5:
-    locator: 第9頁，2026第2季財務報告-2
-    published_date: '2026-09-30'
-    publisher: 鑽石生技投資股份有限公司
+    title: 2026年第二季線上法說會
+    url: https://www.diamondbiofund.com/wp-content/uploads/2026/06/2026Q2_TC.pdf
+  tw.6901#e04:
+    locator: 2025年03月23日主要股東名單，富邦金控創投列
+    published_date: null
+    publisher: 鑽石生技投資
     quote_check: found
-    title: 2026年第三季線上法說會簡報
-    url: https://www.diamondbiofund.com/wp-content/uploads/2026/09/2026Q3_TC.pdf
-  tw.6901#e6:
+    title: 股權結構
+    url: https://www.diamondbiofund.com/investor-relations/shareholders/shareholding-structure/
+  tw.6901#e05:
+    locator: 2025年03月23日主要股東名單，台新創投列
+    published_date: null
+    publisher: 鑽石生技投資
+    quote_check: found
+    title: 股權結構
+    url: https://www.diamondbiofund.com/investor-relations/shareholders/shareholding-structure/
+  tw.6901#e06:
+    locator: 2025年03月23日主要股東名單，中天生技列
+    published_date: null
+    publisher: 鑽石生技投資
+    quote_check: found
+    title: 股權結構
+    url: https://www.diamondbiofund.com/investor-relations/shareholders/shareholding-structure/
+  tw.6901#e07:
+    locator: 2013年，主要創始股東
+    published_date: null
+    publisher: 鑽石生技投資
+    quote_check: found
+    title: 成立沿革
+    url: https://www.diamondbiofund.com/aboutus/成立沿革/
+  tw.6901#e08:
+    locator: 2013年，醣基生醫成立
+    published_date: null
+    publisher: 鑽石生技投資
+    quote_check: found
+    title: 成立沿革
+    url: https://www.diamondbiofund.com/aboutus/成立沿革/
+  tw.6901#e09:
+    locator: 說明第6項，115年09月本公司持股表
+    published_date: '2026-10-07'
+    publisher: 鑽石生技投資
+    quote_check: found
+    title: 公告本公司所有投資標的股數變動及公允價值變化以及本公司每股淨值、現金及約當現金餘額
+    url: https://www.diamondbiofund.com/公告本公司所有投資標的股數變動及公允價值變-45/
+  tw.6901#e10:
+    locator: 說明第6項，115年09月本公司持股表，欣耀及優億列
+    published_date: '2026-10-07'
+    publisher: 鑽石生技投資
+    quote_check: found
+    title: 公告本公司所有投資標的股數變動及公允價值變化以及本公司每股淨值、現金及約當現金餘額
+    url: https://www.diamondbiofund.com/公告本公司所有投資標的股數變動及公允價值變-45/
+  tw.6901#e11:
+    locator: 說明第6項，115年09月本公司持股表，Rejuvenate及Bilayer列
+    published_date: '2026-10-07'
+    publisher: 鑽石生技投資
+    quote_check: found
+    title: 公告本公司所有投資標的股數變動及公允價值變化以及本公司每股淨值、現金及約當現金餘額
+    url: https://www.diamondbiofund.com/公告本公司所有投資標的股數變動及公允價值變-45/
+  tw.6901#e12:
+    locator: 說明第1、3、5項，A+特別股、董事會日期及交易金額
+    published_date: '2026-07-08'
+    publisher: 鑽石生技投資
+    quote_check: found
+    title: 公告本公司擬決議投資Syncell Inc.（補充115/07/03公告）
+    url: https://www.diamondbiofund.com/公告本公司擬決議投資syncell-inc-補充115-07-03公告/
+  tw.6901#e13:
+    locator: 第12頁，投資組合類別
+    published_date: '2026-06-26'
+    publisher: 鑽石生技投資
+    quote_check: found
+    title: 2026年第二季線上法說會
+    url: https://www.diamondbiofund.com/wp-content/uploads/2026/06/2026Q2_TC.pdf
+  tw.6901#e14:
+    locator: 2025年，優億增資
+    published_date: null
+    publisher: 鑽石生技投資
+    quote_check: found
+    title: 成立沿革
+    url: https://www.diamondbiofund.com/aboutus/成立沿革/
+  tw.6901#e15:
     locator: 頁尾，鑽石生技投資特別聲明
     published_date: null
+    publisher: 鑽石生技投資
+    quote_check: found
+    title: 鑽石生技投資官網
+    url: https://www.diamondbiofund.com/
+  tw.6901#e16:
+    locator: 2024年，全資子公司增資
+    published_date: null
+    publisher: 鑽石生技投資
+    quote_check: found
+    title: 成立沿革
+    url: https://www.diamondbiofund.com/aboutus/成立沿革/
+  tw.6901#e17:
+    locator: 第27頁，附註七（二）2投資子公司
+    published_date: null
     publisher: 鑽石生技投資股份有限公司
     quote_check: found
-    title: 鑽石生技投資官方網站
-    url: https://www.diamondbiofund.com/
+    title: 民國113及112年度財務報告暨會計師查核報告
+    url: https://www.diamondbiofund.com/wp-content/uploads/2025/07/113年第四季-財務報告.pdf
+  tw.6901#e18:
+    locator: 第28頁，附註七（二）3投資關聯企業
+    published_date: null
+    publisher: 鑽石生技投資股份有限公司
+    quote_check: found
+    title: 民國113及112年度財務報告暨會計師查核報告
+    url: https://www.diamondbiofund.com/wp-content/uploads/2025/07/113年第四季-財務報告.pdf
+  tw.6901#e19:
+    locator: 說明第3項，交易總金額
+    published_date: '2024-10-25'
+    publisher: 鑽石生技投資
+    quote_check: found
+    title: 本公司完成處分合一生技股份有限公司26,691,358股之交易（補充113/10/24公告）
+    url: https://www.diamondbiofund.com/本公司完成處分合一生技股份有限公司26691358股之交易/
+  tw.6901#e20:
+    locator: 因應措施第（二）項
+    published_date: '2026-10-07'
+    publisher: 鑽石生技投資
+    quote_check: not_found
+    title: 公告本公司股票初次申請上市時所出具之承諾事項暨其後續執行情形
+    url: https://www.diamondbiofund.com/公告本公司股票初次申請上市時所出具之承諾事項-21/
+  tw.6901#e21:
+    locator: 說明第3項，交易數量及買方
+    published_date: '2024-10-25'
+    publisher: 鑽石生技投資
+    quote_check: found
+    title: 本公司完成處分合一生技股份有限公司26,691,358股之交易（補充113/10/24公告）
+    url: https://www.diamondbiofund.com/本公司完成處分合一生技股份有限公司26691358股之交易/

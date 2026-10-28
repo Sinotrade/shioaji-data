@@ -67,12 +67,12 @@ themes:
   theme: theme.liquid_cooling
   tier: downstream
 - also: []
-  stage: system
-  theme: theme.nvidia
-  tier: downstream
-- also: []
   stage: application
   theme: theme.hbm
+  tier: downstream
+- also: []
+  stage: system
+  theme: theme.nvidia
   tier: downstream
 relations:
   competitors:
@@ -286,6 +286,24 @@ relations:
     evidence_level: media
     id: tw.6191
     name: 精成科
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares:
+    - as_of: '2024-12-31'
+      basis: revenue
+      of: tw.6449
+      pct: 10.42
+    detail: 電容產品銷售
+    details:
+    - 電容產品銷售
+    edge: e33ef253ee7b3
+    evidence_level: primary
+    id: tw.6449
+    name: 鈺邦
     ranking_basis: unranked
     share_basis: null
     share_pct: null

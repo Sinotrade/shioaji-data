@@ -200,11 +200,11 @@ members:
 - id: tw.1710
   stage: materials
   tier: upstream
-  detail: 電動車電池材料應用布局
-  as_of: 2026-10
+  detail: 鋰電池電解液原料及類固態電池材料開發
+  as_of: '2026-09-22'
   evidence:
-  - tw.1710#e9
-  - tw.1710#e10
+  - tw.1710#e04
+  - tw.1710#e12
   confidence: ai_cross_checked
 - id: tw.1723
   stage: materials
@@ -223,12 +223,12 @@ members:
   - tw.2002#e5
   confidence: ai_cross_checked
 - id: tw.2009
-  stage: parts
-  tier: midstream
-  detail: 電動車連接器與端子用鍍錫銅合金材料
+  stage: materials
+  tier: upstream
+  detail: 電動車用銅合金鍍錫材料
   as_of: '2026-05-10'
   evidence:
-  - tw.2009#e9
+  - tw.2009#e11
   confidence: ai_cross_checked
 - id: tw.2061
   stage: parts
@@ -274,9 +274,9 @@ members:
   stage: parts
   tier: midstream
   detail: 電動車專用輪胎
-  as_of: '2025-09-30'
+  as_of: '2025-12-15'
   evidence:
-  - tw.2106#e6
+  - tw.2106#e4
   confidence: ai_cross_checked
 - id: tw.2109
   stage: parts
@@ -690,6 +690,14 @@ members:
   evidence:
   - tw.3046#e7
   confidence: ai_cross_checked
+- id: tw.3048
+  stage: parts
+  tier: midstream
+  detail: 電動二輪車電池管理與電控方案
+  as_of: '2026-10-28'
+  evidence:
+  - tw.3048#e10
+  confidence: ai_cross_checked
 - id: tw.3058
   stage: vehicle
   tier: downstream
@@ -874,10 +882,10 @@ members:
 - id: tw.3624
   stage: parts
   tier: midstream
-  detail: 電動車電控與電池組用電阻
-  as_of: 2026-10
+  detail: 電動車電源轉換與充電控制用電阻
+  as_of: '2026-10-27'
   evidence:
-  - tw.3624#e12
+  - tw.3624#e7
   confidence: ai_cross_checked
 - id: tw.3625
   stage: parts
@@ -1114,19 +1122,11 @@ members:
 - id: tw.5243
   stage: parts
   tier: midstream
-  detail: 電動車機構零組件
-  as_of: '2024-12-10'
+  detail: 新能源汽車機構零組件
+  as_of: '2026-04-13'
   evidence:
-  - tw.5243#e11
-  - tw.5243#e05
-  confidence: ai_cross_checked
-- id: tw.5284
-  stage: vehicle
-  tier: downstream
-  detail: 電動車充電與換電設備
-  as_of: '2026-10-18'
-  evidence:
-  - tw.5284#e_ev
+  - tw.5243#e14
+  - tw.5243#e7
   confidence: ai_cross_checked
 - id: tw.5285
   stage: parts
@@ -1147,10 +1147,10 @@ members:
 - id: tw.5309
   stage: parts
   tier: midstream
-  detail: 電動車與電動巴士電池組
-  as_of: 2026-10
+  detail: 電動車用BLE胎壓偵測器
+  as_of: '2026-10-27'
   evidence:
-  - tw.5309#e8
+  - tw.5309#e23
   confidence: ai_cross_checked
 - id: tw.5328
   stage: parts
@@ -1274,12 +1274,13 @@ members:
   - tw.6202#e8
   confidence: ai_cross_checked
 - id: tw.6217
-  stage: vehicle
-  tier: downstream
-  detail: 電動車充電連接器
-  as_of: '2026-10-15'
+  stage: parts
+  tier: midstream
+  detail: 電動機車與EV充電連接器
+  as_of: '2026-10-28'
   evidence:
-  - tw.6217#e12
+  - tw.6217#e9
+  - tw.6217#e21
   confidence: ai_cross_checked
 - id: tw.6224
   stage: parts
@@ -1340,10 +1341,10 @@ members:
 - id: tw.6279
   stage: parts
   tier: midstream
-  detail: 電動車高壓連接器
-  as_of: '2026-10-18'
+  detail: 電動車高壓連接器及線束
+  as_of: '2026-10-28'
   evidence:
-  - tw.6279#e4
+  - tw.6279#e06
   confidence: ai_cross_checked
 - id: tw.6282
   stage: parts
@@ -1418,14 +1419,6 @@ members:
   evidence:
   - tw.6441#e7
   confidence: ai_cross_checked
-- id: tw.6449
-  stage: parts
-  tier: midstream
-  detail: 電動車應用高信賴性電容研發
-  as_of: 2025-05
-  evidence:
-  - tw.6449#e5
-  confidence: ai_cross_checked
 - id: tw.6509
   stage: materials
   tier: upstream
@@ -1437,11 +1430,11 @@ members:
 - id: tw.6525
   stage: materials
   tier: upstream
-  detail: 電動車功率元件封裝測試
-  as_of: '2025-06-12'
+  detail: 電動車電源轉換用功率元件封測
+  as_of: '2026-03-10'
   evidence:
-  - tw.6525#e2
-  - tw.6525#e5
+  - tw.6525#e1
+  - tw.6525#e15
   confidence: ai_cross_checked
 - id: tw.6570
   stage: parts
@@ -1606,14 +1599,6 @@ members:
   evidence:
   - tw.8038#e4
   confidence: ai_cross_checked
-- id: tw.8042
-  stage: parts
-  tier: midstream
-  detail: 電動車用固液態電容器
-  as_of: '2025-12-31'
-  evidence:
-  - tw.8042#e2
-  confidence: ai_cross_checked
 - id: tw.8068
   stage: vehicle
   tier: downstream
@@ -1666,11 +1651,10 @@ members:
 - id: tw.8255
   stage: parts
   tier: midstream
-  detail: 電動車用功率模組及功率離散元件
-  as_of: '2026-10-18'
+  detail: 電動車功率模組
+  as_of: 2026-10
   evidence:
-  - tw.8255#e4
-  - tw.8255#e6
+  - tw.8255#e07
   confidence: ai_cross_checked
 - id: tw.8349
   stage: parts
@@ -1738,4 +1722,4 @@ members:
   evidence:
   - tw.9951#e8
   confidence: ai_cross_checked
-as_of: '2026-10-26'
+as_of: '2026-10-28'

@@ -25,46 +25,111 @@ chain_stage:
   stage: midstream
   stage_name: 中間原料
   tier: midstream
-primary_chain_position: midstream
-summary_short: 製造與銷售合成乳膠、丁腈橡膠、熱可塑性橡膠及精煉膠。
-summary_long: 南帝製造與銷售合成橡膠材料，主要產品為NBR／SBR合成乳膠、丁腈橡膠、熱可塑性橡膠及精煉膠。合成乳膠用於檢驗、醫療、家用與工業用手套，SBR乳膠亦用於紙張塗佈及地毯背膠。丁腈橡膠以NANCAR品牌銷售，用於耐油零件、燃料油管及鞋底等。DYNAPRENE熱可塑性橡膠以TPV為主，應用涵蓋汽機車部品、建材與3C配件；精煉膠則以NBR與PVC共混，供應耐油管、皮帶及電纜等用途。
+primary_chain_position: downstream
+summary_short: 製造銷售丁腈橡膠、合成乳膠及熱可塑性橡膠。
+summary_long: 南帝以合成橡膠、乳膠及相關加工材料的製造與銷售為主要業務。2026年上半年合併營收中，橡膠占45.3%、乳膠占30.1%、其他產品占24.6%。合成乳膠包括NBR與SBR，應用於手套、紙張塗布及地毯背膠；NANCAR丁腈橡膠則用於油封、墊圈及耐油膠管。公司亦生產Dynaprene熱可塑性橡膠，應用包含汽機車部品及建築工程。集團子公司包含英泰美國際、鎮江南帝及南美特科技，其中鎮江南帝生產銷售橡膠與乳膠。2025年董事會決議參與南美特現金增資，原定認購金額約3.13億元。
 segments:
 - evidence_ids:
-  - e9
-  id: latex
-  name: 乳膠類收入
+  - e1
+  id: seg_rubber
+  name: 橡膠類（合併口徑）
   period: 2026年上半年
-  revenue_share_pct: null
+  revenue_share_pct: 45.3
 - evidence_ids:
-  - e9
-  id: rubber
-  name: 橡膠類收入
+  - e2
+  id: seg_latex
+  name: 乳膠類（合併口徑）
   period: 2026年上半年
-  revenue_share_pct: null
+  revenue_share_pct: 30.1
 - evidence_ids:
-  - e9
-  id: organic_inorganic_materials
-  name: 有機無機材料收入
+  - e3
+  id: seg_other
+  name: 其他產品（合併口徑）
   period: 2026年上半年
-  revenue_share_pct: null
-- evidence_ids:
-  - e9
-  id: other
-  name: 其他業務收入
-  period: 2026年上半年
-  revenue_share_pct: null
+  revenue_share_pct: 24.6
 relations:
+  customers:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 個體財報揭露之應收客帳對象
+    details:
+    - 個體財報揭露之應收客帳對象
+    edge: e1ffb82342e99
+    evidence_level: primary
+    id: org.central-medicare
+    name: CENTRAL MEDICARE SDN.BHD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 個體財報揭露之應收客帳對象
+    details:
+    - 個體財報揭露之應收客帳對象
+    edge: e9f1aa57edc81
+    evidence_level: primary
+    id: org.first-citi-safe-glove-co-ltd
+    name: FIRST CITI (SAFE GLOVE CO., LTD.)
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 個體財報揭露之應收客帳對象
+    details:
+    - 個體財報揭露之應收客帳對象
+    edge: e38270e05f72b
+    evidence_level: primary
+    id: org.hartalega-ngc
+    name: HARTALEGA NGC SDN BHD
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 個體財報揭露之應收客帳對象
+    details:
+    - 個體財報揭露之應收客帳對象
+    edge: e5426040f752a
+    evidence_level: primary
+    id: org.sri-trang-gloves-thailand-co-ltd
+    name: SRI TRANG GLOVES (THAILAND) CO., LTD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2021-03-12'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 手套用NBR乳膠歷史客戶
+    details:
+    - 手套用NBR乳膠歷史客戶
+    edge: e1ff5d5ece876
+    evidence_level: media
+    id: org.top-glove
+    name: Top Glove
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接全資子公司
+    detail: 英泰美國際投資控股子公司
     details:
-    - 直接全資子公司
+    - 英泰美國際投資控股子公司
     edge: e8f6434856e9d
     evidence_level: primary
     id: org.intermedium-international
-    name: 英屬維京群島商英泰美國際有限公司
+    name: INTERMEDIUM INTERNATIONAL LIMITED
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -72,9 +137,9 @@ relations:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 持股40.57%、具控制關係的合併子公司
+    detail: 納入合併財報的材料子公司
     details:
-    - 持股40.57%、具控制關係的合併子公司
+    - 納入合併財報的材料子公司
     edge: ec68c30b8e13c
     evidence_level: primary
     id: org.nanmat-technology
@@ -83,88 +148,213 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-06-30'
+  - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 透過英泰美持有的間接全資子公司
+    detail: 集團全資橡膠及乳膠子公司
     details:
-    - 透過英泰美持有的間接全資子公司
-    edge: ed9dd3b3e73db
+    - 集團全資橡膠及乳膠子公司
+    edge: ed70d0d64650e
     evidence_level: primary
-    id: org.zhenjiang-nantex-chemical-industry
+    id: org.zhenjiang-nantex-chemical
     name: 鎮江南帝化工有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
+  suppliers:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 辦公室出租
+    details:
+    - 辦公室出租
+    edge: e69892f6fae48
+    evidence_level: primary
+    id: tw.1440
+    name: 南紡
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 原定約3.13億元；增加認購後合計預估約3億元至6億元
+    as_of: '2025-08-08'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 董事會決議參與子公司現金增資
+    details:
+    - 董事會決議參與子公司現金增資
+    edge: e293e8cca7205
+    event_date: '2025-08-08'
+    events:
+    - amount: 原定約3.13億元；增加認購後合計預估約3億元至6億元
+      detail: 董事會決議參與子公司現金增資
+      event_date: '2025-08-08'
+    evidence_level: primary
+    id: org.nanmat-technology
+    name: 南美特科技股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 年報以客戶甲、客戶乙、客戶丙及客戶丁呈現的主要銷貨客戶，未與具名應收帳款客戶自…
+- 年報以D00001、D00002、F66890、D00619及D00620等代…
+- 未具名的手套製造商、汽機車零組件廠及電子產業客戶。
 website: www.nantex.com.tw
 tax_id: '12209807'
 incorporated: '1979-01-10'
 listed: '1992-10-27'
-as_of: '2026-10-18'
+as_of: '2026-10-28'
 confidence: ai_cross_checked
 has_research: true
 evidence:
   tw.2108#e1:
-    locator: 主要營業概況首段及主要產品、商品名與產品應用表
+    locator: 第5頁主要產品：橡膠；第10頁合併營業收入產品別，115年Q1-Q2
+    published_date: '2026-09-11'
+    publisher: 南帝化學工業股份有限公司（FinancialFilings文件鏡像）
+    quote_check: unreachable
+    title: 南帝2026年9月11日法人說明會簡報
+    url: https://financialfilings.com/filings/nantex-2108/investor-presentation/2026/59915281/
+  tw.2108#e10:
+    locator: 1.2產品安全及客戶服務／熱可塑性橡膠之產品應用，亦列電子產業
     published_date: null
-    publisher: 南帝化學工業股份有限公司
+    publisher: 南帝化學工業股份有限公司（FinancialFilings文件鏡像）
+    quote_check: unreachable
+    title: 南帝2025年永續報告書
+    url: https://financialfilings.com/filings/nantex-2108/environmental-social-information/2026/73041009/
+  tw.2108#e11:
+    locator: 內文第三段
+    published_date: '2021-03-12'
+    publisher: MoneyDJ理財網，記者劉莞青
     quote_check: found
-    title: 主要營業概況
-    url: https://www.nantex.com.tw/index.php?option=module&lang=cht&task=pageinfo&id=318&index=4
+    title: 南帝／申豐客戶需求旺，今年營運仍看正面
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=04dbdb85-fd3c-4f0d-b936-93ae6e7a3b81
+  tw.2108#e12:
+    locator: 第52頁，2025年12月31日應收帳款淨額明細表／客戶名稱
+    published_date: null
+    publisher: 南帝化學工業股份有限公司（FinancialFilings文件鏡像）
+    quote_check: unreachable
+    title: 南帝114年度及113年度個體財務報告
+    url: https://financialfilings.com/filings/nantex-2108/annual-report/2025/33567391/
+  tw.2108#e13:
+    locator: 第52頁，2025年12月31日應收帳款淨額明細表／客戶名稱，摘要為應收客帳
+    published_date: null
+    publisher: 南帝化學工業股份有限公司（FinancialFilings文件鏡像）
+    quote_check: unreachable
+    title: 南帝114年度及113年度個體財務報告
+    url: https://financialfilings.com/filings/nantex-2108/annual-report/2025/33567391/
+  tw.2108#e14:
+    locator: 第52頁，2025年12月31日應收帳款淨額明細表／客戶名稱
+    published_date: null
+    publisher: 南帝化學工業股份有限公司（FinancialFilings文件鏡像）
+    quote_check: unreachable
+    title: 南帝114年度及113年度個體財務報告
+    url: https://financialfilings.com/filings/nantex-2108/annual-report/2025/33567391/
+  tw.2108#e15:
+    locator: 第52頁，2025年12月31日應收帳款淨額明細表／客戶名稱
+    published_date: null
+    publisher: 南帝化學工業股份有限公司（FinancialFilings文件鏡像）
+    quote_check: unreachable
+    title: 南帝114年度及113年度個體財務報告
+    url: https://financialfilings.com/filings/nantex-2108/annual-report/2025/33567391/
+  tw.2108#e16:
+    locator: 附註7，關係人名稱與關係及租賃交易；台南紡織列為具重大影響個體
+    published_date: '2026-09-14'
+    publisher: 南帝化學工業股份有限公司（FinancialFilings文件鏡像）
+    quote_check: unreachable
+    title: 南帝2026年上半年英文合併財務報告
+    url: https://financialfilings.com/filings/nantex-2108/interim-quarterly-report/2026/59929890/
+  tw.2108#e17:
+    locator: 合併基礎／子公司表：南帝為投資公司，英泰美持股100%，業務為一般投資
+    published_date: '2026-09-14'
+    publisher: 南帝化學工業股份有限公司（FinancialFilings文件鏡像）
+    quote_check: unreachable
+    title: 南帝2026年上半年英文合併財務報告
+    url: https://financialfilings.com/filings/nantex-2108/interim-quarterly-report/2026/59929890/
+  tw.2108#e18:
+    locator: 1.2產品安全及客戶服務／合成乳膠；轉投資事業表列完整名稱及橡膠乳膠業務
+    published_date: null
+    publisher: 南帝化學工業股份有限公司（FinancialFilings文件鏡像）
+    quote_check: unreachable
+    title: 南帝2025年永續報告書
+    url: https://financialfilings.com/filings/nantex-2108/environmental-social-information/2026/73041009/
+  tw.2108#e19:
+    locator: 合併基礎／子公司表及註1：南美特持股40.57%，依政策主導權納入合併
+    published_date: '2026-09-14'
+    publisher: 南帝化學工業股份有限公司（FinancialFilings文件鏡像）
+    quote_check: unreachable
+    title: 南帝2026年上半年英文合併財務報告
+    url: https://financialfilings.com/filings/nantex-2108/interim-quarterly-report/2026/59929890/
   tw.2108#e2:
-    locator: 產品說明，羧化丁腈乳膠及羧化丁苯乳膠段落
-    published_date: null
-    publisher: 南帝化學工業股份有限公司
+    locator: 第5頁主要產品：乳膠；第10頁合併營業收入產品別，115年Q1-Q2
+    published_date: '2026-09-11'
+    publisher: 南帝化學工業股份有限公司（FinancialFilings文件鏡像）
+    quote_check: unreachable
+    title: 南帝2026年9月11日法人說明會簡報
+    url: https://financialfilings.com/filings/nantex-2108/investor-presentation/2026/59915281/
+  tw.2108#e20:
+    locator: 第6項交易相對人及其與公司之關係；41%為公告當時持股
+    published_date: '2025-08-08'
+    publisher: 公開資訊觀測站重大訊息（MoneyDJ刊載）
     quote_check: found
-    title: 南帝合成乳膠
-    url: https://www.nantex.com.tw/index.php?option=product&lang=cht
+    title: 南帝公告董事會決議通過對重要子公司南美特科技公司現金增資認股
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=6bf11db3-d1e0-4a51-a699-c18344821cb1
+  tw.2108#e21:
+    locator: 第2至5項事實發生日、董事會日期與認購金額；第5項另載增加認購範圍
+    published_date: '2025-08-08'
+    publisher: 公開資訊觀測站重大訊息（MoneyDJ刊載）
+    quote_check: found
+    title: 南帝公告董事會決議通過對重要子公司南美特科技公司現金增資認股
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=6bf11db3-d1e0-4a51-a699-c18344821cb1
   tw.2108#e3:
-    locator: 產品說明及應用分類
-    published_date: null
-    publisher: 南帝化學工業股份有限公司
-    quote_check: found
-    title: 南帝丁腈橡膠
-    url: https://www.nantex.com.tw/index.php?option=product&lang=cht&task=showlist&id=2&index=2
+    locator: 第5頁主要產品：其他；第10頁合併營業收入產品別，115年Q1-Q2
+    published_date: '2026-09-11'
+    publisher: 南帝化學工業股份有限公司（FinancialFilings文件鏡像）
+    quote_check: unreachable
+    title: 南帝2026年9月11日法人說明會簡報
+    url: https://financialfilings.com/filings/nantex-2108/investor-presentation/2026/59915281/
   tw.2108#e4:
-    locator: 產品說明首段及應用分類
-    published_date: null
-    publisher: 南帝化學工業股份有限公司
-    quote_check: found
-    title: 南帝熱可塑性橡膠
-    url: https://www.nantex.com.tw/index.php?option=product&lang=cht&task=showlist&id=3&index=3
+    locator: 第5頁產品表及第6至7頁合成乳膠應用
+    published_date: '2026-09-11'
+    publisher: 南帝化學工業股份有限公司（FinancialFilings文件鏡像）
+    quote_check: unreachable
+    title: 南帝2026年9月11日法人說明會簡報
+    url: https://financialfilings.com/filings/nantex-2108/investor-presentation/2026/59915281/
   tw.2108#e5:
-    locator: 產品說明首段及產品主要應用表
-    published_date: null
-    publisher: 南帝化學工業股份有限公司
-    quote_check: found
-    title: 南帝精煉膠
-    url: https://www.nantex.com.tw/index.php?option=product&lang=cht&task=showlist&id=4&index=4
+    locator: 第5頁主要產品表
+    published_date: '2026-09-11'
+    publisher: 南帝化學工業股份有限公司（FinancialFilings文件鏡像）
+    quote_check: unreachable
+    title: 南帝2026年9月11日法人說明會簡報
+    url: https://financialfilings.com/filings/nantex-2108/investor-presentation/2026/59915281/
   tw.2108#e6:
-    locator: 關係企業首段及各公司介紹
-    published_date: null
-    publisher: 南帝化學工業股份有限公司
-    quote_check: found
-    title: 關係企業
-    url: https://www.nantex.com.tw/index.php?option=module&lang=cht&task=pageinfo&id=325&index=6
+    locator: 致股東報告書：乳膠
+    published_date: '2026-03-31'
+    publisher: 南帝化學工業股份有限公司（FinancialFilings文件鏡像）
+    quote_check: unreachable
+    title: 南帝114年度年報
+    url: https://financialfilings.com/filings/nantex-2108/annual-report/2026/59462691/
   tw.2108#e7:
-    locator: 第13頁，列入合併財務報告之子公司表；115年6月30日持股比例及投資公司、子公司名稱欄
-    published_date: '2026-08-10'
-    publisher: 南帝化學工業股份有限公司
-    quote_check: found
-    title: 南帝化學工業股份有限公司及子公司115年第二季合併財務報告
-    url: https://www.nantex.com.tw/userfiles/115Q2%20CONSOLIDATE.pdf
+    locator: 肆、營運概況／主要產品之重要用途：NBR合成橡膠
+    published_date: '2026-03-31'
+    publisher: 南帝化學工業股份有限公司（FinancialFilings文件鏡像）
+    quote_check: unreachable
+    title: 南帝114年度年報
+    url: https://financialfilings.com/filings/nantex-2108/annual-report/2026/59462691/
   tw.2108#e8:
-    locator: 第13頁，子公司表註1
-    published_date: '2026-08-10'
-    publisher: 南帝化學工業股份有限公司
-    quote_check: found
-    title: 南帝化學工業股份有限公司及子公司115年第二季合併財務報告
-    url: https://www.nantex.com.tw/userfiles/115Q2%20CONSOLIDATE.pdf
+    locator: 肆、營運概況／二、主要原料之供應狀況
+    published_date: '2026-03-31'
+    publisher: 南帝化學工業股份有限公司（FinancialFilings文件鏡像）
+    quote_check: unreachable
+    title: 南帝114年度年報
+    url: https://financialfilings.com/filings/nantex-2108/annual-report/2026/59462691/
   tw.2108#e9:
-    locator: 第29頁，115年1至6月收入細分表之總計欄：乳膠類1,817,215、橡膠類2,737,565、有機無機材料1,488,519、其他業務3,161，單位新台幣仟元
-    published_date: '2026-08-10'
-    publisher: 南帝化學工業股份有限公司
-    quote_check: found
-    title: 南帝化學工業股份有限公司及子公司115年第二季合併財務報告
-    url: https://www.nantex.com.tw/userfiles/115Q2%20CONSOLIDATE.pdf
+    locator: 1.2產品安全及客戶服務／南帝熱可塑性橡膠
+    published_date: null
+    publisher: 南帝化學工業股份有限公司（FinancialFilings文件鏡像）
+    quote_check: unreachable
+    title: 南帝2025年永續報告書
+    url: https://financialfilings.com/filings/nantex-2108/environmental-social-information/2026/73041009/

@@ -17,220 +17,408 @@ industry:
   l3: cons.engineering
   l3_name: 工程與統包
   l3_name_en: Engineering & EPC
-primary_chain_position: downstream
-summary_short: 以電力系統設計、整合與工程統包為主，提供發電、不斷電及儲能設備。
-summary_long: 安葆以電力系統的設計、安裝與整合為主業，提供發電機組、不斷電系統、儲能設備及PLTC控制系統，並承攬電力系統EPC工程。2025年營收以機電工程為最大來源，占86.22%，銷貨占7.44%，勞務服務占6.34%。其PLTC系統支援發電機組併聯、電源切換與跨廠區供電；儲能方案涵蓋飛輪裝置與電池櫃。公司亦為Tier III與Tier IV資料中心建置電力系統，並將發電、儲能及關鍵電力防護整合為微電網方案。
+chain: chain.semiconductor
+chain_stage:
+  agreement: both
+  also: []
+  reason: 機電工程占營收86.23%，提供半導體廠電力設備統包、系統整合及維護，屬設備與廠務。
+  stage: tools
+  stage_name: 設備與廠務
+  tier: upstream
+primary_chain_position: upstream
+summary_short: 以發電機、不斷電與儲能設備的電力系統工程、整合及維護服務為主要收入。
+summary_long: 安葆主要承作電力設備工程統包與系統整合，2025年機電工程占合併營收約86.23%，另有勞務服務及設備銷貨。產品涵蓋柴油發電機、動態及靜態不斷電系統、飛輪儲能、儲能電池櫃，以及自主開發的PLTC不斷電負載轉移系統。官網實績客戶包括南亞科技、華邦電及旺宏電，並揭露採用Rehlko發電機建置資料中心電力系統，以及與2G Energy合作提供熱電聯產系統。主要海外子公司分布於美國、新加坡及德國；2026年另公告新加坡第二家子公司設立計畫、台南二廠租地委建，以及由美國子公司購置鳳凰城倉庫。
 segments:
 - evidence_ids:
-  - e2
-  id: s1
+  - e02
+  id: electromechanical
   name: 機電工程
   period: '2025'
-  revenue_share_pct: 86.22
+  revenue_share_pct: 86.23
 - evidence_ids:
-  - e3
-  id: s2
+  - e02
+  id: services
   name: 勞務服務
   period: '2025'
   revenue_share_pct: 6.34
 - evidence_ids:
-  - e4
-  id: s3
+  - e02
+  id: sales
   name: 銷貨
   period: '2025'
   revenue_share_pct: 7.44
-main_theme: theme.power_grid
+main_theme: theme.data_center
 themes:
-- also: []
-  stage: engineering
-  theme: theme.power_grid
-  tier: downstream
 - also: []
   stage: equipment
   theme: theme.data_center
   tier: upstream
 relations:
+  customers:
+  - as_of: '2026-10-27'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 電力系統實績客戶，未揭露個別供應項目
+    details:
+    - 電力系統實績客戶，未揭露個別供應項目
+    edge: ea140b48f601d
+    evidence_level: primary
+    id: tw.2337
+    name: 旺宏
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-27'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 電力系統實績客戶，未揭露個別供應項目
+    details:
+    - 電力系統實績客戶，未揭露個別供應項目
+    edge: e1d7a86bfe489
+    evidence_level: primary
+    id: tw.2344
+    name: 華邦電
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-27'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 電力系統實績客戶，未揭露個別供應項目
+    details:
+    - 電力系統實績客戶，未揭露個別供應項目
+    edge: eb7ed4b87ec29
+    evidence_level: primary
+    id: tw.2408
+    name: 南亞科
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  partners:
+  - as_of: '2025-02-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 氫氣熱電聯產系統合作
+    details:
+    - 氫氣熱電聯產系統合作
+    edge: e2768b1849b09
+    evidence_level: primary
+    id: org.2g-energy
+    name: 2G Energy
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接子公司
+    detail: 德國機電設備安裝工程子公司
     details:
-    - 直接子公司
+    - 德國機電設備安裝工程子公司
     edge: e231c293a140d
     evidence_level: primary
     id: org.ampower-energy-gmbh
-    name: Ampower Energy GmbH
+    name: Ampower Energy GmbH.
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2025-12-31'
+  - as_of: '2026-08-11'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接子公司
+    detail: 原新加坡子公司更名
     details:
-    - 直接子公司
-    edge: e6cf9e16de673
+    - 原新加坡子公司更名
+    edge: e87263cc33393
     evidence_level: primary
-    id: org.ampower-international-enterprise
-    name: Ampower International Enterprise Co., Ltd.
+    id: org.ampower-international-enterprise-holding
+    name: AMPOWER INTERNATIONAL ENTERPRISE HOLDING CO., LTD.
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2025-12-31'
+  - as_of: '2026-10-07'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接子公司
+    detail: 美國子公司
     details:
-    - 直接子公司
-    edge: e0c50f4a74244
+    - 美國子公司
+    edge: e541c2f5b6323
     evidence_level: primary
-    id: org.fu-energy
-    name: Fu Energy Corp.
+    id: org.fu-energy-corp
+    name: FU Energy Corp
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2025-12-31'
+  suppliers:
+  - as_of: '2025-02-27'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 透過AIE持有的間接子公司
+    detail: 資料中心用柴油發電機
     details:
-    - 透過AIE持有的間接子公司
-    edge: e24ace814f4f3
+    - 資料中心用柴油發電機
+    edge: e6bc4ed7e2eb0
     evidence_level: primary
-    id: org.ningbo-ampower
-    name: 寧波安葆自動化系統集成有限公司
+    id: org.rehlko
+    name: Rehlko
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2025-12-31'
+  transactions:
+  - amount: 美金10萬元
+    as_of: '2026-08-11'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 透過寧波安葆持有的間接子公司
+    detail: 擬設立第二家新加坡子公司
     details:
-    - 透過寧波安葆持有的間接子公司
-    edge: ece6911e31049
+    - 擬設立第二家新加坡子公司
+    edge: e4ad6580741a7
+    event_date: '2026-08-11'
+    events:
+    - amount: 美金10萬元
+      detail: 擬設立第二家新加坡子公司
+      event_date: '2026-08-11'
     evidence_level: primary
-    id: org.shanghai-ampower-energy
-    name: 上海安葆能源科技有限公司
+    id: org.ampower-international-enterprise-sg-new
+    name: AMPOWER INTERNATIONAL ENTERPRISE CO., LTD.
     ranking_basis: unranked
+    role: buyer
     share_basis: null
     share_pct: null
     weight: 1
+  - amount: 約新台幣42,950,484元
+    as_of: '2025-12-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 台南二廠土地使用權資產
+    details:
+    - 台南二廠土地使用權資產
+    edge: ebcabdfedef68
+    event_date: '2025-12-30'
+    events:
+    - amount: 約新台幣42,950,484元
+      detail: 台南二廠土地使用權資產
+      event_date: '2025-12-30'
+    evidence_level: primary
+    id: org.dehuatang-foundation
+    name: 德化堂財團法人
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 美元4,875,000元
+    as_of: '2026-10-07'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 美國子公司FU Energy Corp購置鳳凰城倉庫
+    details:
+    - 美國子公司FU Energy Corp購置鳳凰城倉庫
+    edge: e088400e5661e
+    event_date: '2026-10-07'
+    events:
+    - amount: 美元4,875,000元
+      detail: 美國子公司FU Energy Corp購置鳳凰城倉庫
+      event_date: '2026-10-07'
+    evidence_level: primary
+    id: org.icu-industries-inc
+    name: ICU INDUSTRIES INC.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣30,000千元
+    as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 創業投資公司持股
+    details:
+    - 創業投資公司持股
+    edge: e8db80e8d5c95
+    event_date: null
+    events:
+    - amount: 新台幣30,000千元
+      detail: 創業投資公司持股
+      event_date: null
+    evidence_level: primary
+    id: org.phoenix-vii-venture-capital
+    name: 鳳凰柒創新創業投資股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣2億元額度內
+    as_of: '2026-10-07'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 台南二廠租地委建工程
+    details:
+    - 台南二廠租地委建工程
+    edge: e5b61aebae793
+    event_date: '2026-10-07'
+    events:
+    - amount: 新台幣2億元額度內
+      detail: 台南二廠租地委建工程
+      event_date: '2026-10-07'
+    evidence_level: primary
+    id: org.中基營造
+    name: 中基營造
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 2025年度財報以A客戶匿名揭露主要客戶，未將其對應至任何具名公司。
+- 桃園青埔資料中心專案的龍頭金融公司未具名。
+- 台南二廠工程相對人列為中基營造等，其餘工程承攬商未具名。
+- 2024年富益昌智能整合股份處分案的買受人未具名。
 website: https://www.ampower.com.tw/
 tax_id: '84751639'
 incorporated: '1994-02-04'
 listed: '2026-01-28'
-as_of: '2026-10-15'
+as_of: '2026-10-28'
 confidence: ai_cross_checked
 has_research: true
 evidence:
+  tw.7792#e02:
+    locator: PDF第54頁，附註十四（二）產品別及勞務別資訊；單位為新台幣千元
+    published_date: '2026-03-11'
+    publisher: 安葆國際實業股份有限公司
+    quote_check: found
+    title: 114年度及113年度合併財務報告
+    url: https://www.ampower.com.tw/wp-content/uploads/2026/03/20250311_202504_7792_AI1_%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E6%9A%A8%E6%9C%83%E8%A8%88%E5%B8%AB%E6%9F%A5%E6%A0%B8%E5%A0%B1%E5%91%8A.pdf
+  tw.7792#e03:
+    locator: PDF第58頁，產業概況
+    published_date: '2025-03-28'
+    publisher: 安葆國際實業股份有限公司
+    quote_check: found
+    title: 113年度公司年報
+    url: https://www.ampower.com.tw/wp-content/uploads/2025/05/2024_7792_20250523F04-%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
+  tw.7792#e04:
+    locator: 2025年前11月營收及產業比重段落
+    published_date: '2026-01-05'
+    publisher: 中央通訊社
+    quote_check: found
+    title: 安葆擬1月底上櫃　在手訂單近百億
+    url: https://www.cna.com.tw/news/afe/202601050198.aspx
+  tw.7792#e05:
+    locator: 陳志復說明PLTC產品段落
+    published_date: '2026-01-05'
+    publisher: 中央通訊社
+    quote_check: found
+    title: 安葆擬1月底上櫃　在手訂單近百億
+    url: https://www.cna.com.tw/news/afe/202601050198.aspx
+  tw.7792#e06:
+    locator: PDF第8頁，電力設備介紹
+    published_date: null
+    publisher: 安葆國際實業股份有限公司
+    quote_check: found
+    title: 安葆公司簡介
+    url: https://www.ampower.com.tw/wp-content/uploads/2024/12/2024%E5%AE%89%E8%91%86%E7%B0%A1%E4%BB%8B_%E5%AE%98%E7%B6%B2%E7%89%88%E6%9C%AC_250624.pdf
+  tw.7792#e07:
+    locator: 儲能產品項目
+    published_date: null
+    publisher: 安葆國際實業股份有限公司
+    quote_check: found
+    title: 能源系統規劃
+    url: https://www.ampower.com.tw/index.php/power-system-planning/
+  tw.7792#e08:
+    locator: 熱電聯產系統說明
+    published_date: '2025-02-28'
+    publisher: 安葆國際實業股份有限公司
+    quote_check: found
+    title: 協助企業將工業副產氫轉換為零碳排能源
+    url: https://www.ampower.com.tw/index.php/2025/02/28/industrial-byproduct-h2-todays-waste-to-tomorrows-green-power/
+  tw.7792#e09:
+    locator: 解決方案：專業系統整合與高品質發電機組
+    published_date: '2025-02-27'
+    publisher: 安葆國際實業股份有限公司
+    quote_check: found
+    title: 安葆與Rehlko成功建構Tier III資料中心的電力系統
+    url: https://www.ampower.com.tw/index.php/2025/02/27/honoring-our-partnership-thanks-to-rehlko-for-the-feature/
   tw.7792#e10:
-    locator: 安葆電能：打造高度整合的微電網系統
-    published_date: '2026-10-07'
+    locator: 客戶實績清單導言
+    published_date: null
     publisher: 安葆國際實業股份有限公司
     quote_check: found
-    title: 微電網專題：是什麼將電力技術轉化為微電網？
-    url: https://www.ampower.com.tw/index.php/2026/10/07/microgrid-by-design-what-turns-power-technologies-into-a-microgrid/
+    title: 指標實績案例
+    url: https://www.ampower.com.tw/index.php/recent-performance-cases/
   tw.7792#e11:
-    locator: 連續運轉的電力架構
-    published_date: '2026-03-05'
+    locator: 半導體產業客戶清單
+    published_date: null
     publisher: 安葆國際實業股份有限公司
     quote_check: found
-    title: 電力即算力，穩定度決定營運節奏
-    url: https://www.ampower.com.tw/index.php/2026/03/05/electricity-equals-computing-power-and-stability-sets-the-pace/
+    title: 指標實績案例
+    url: https://www.ampower.com.tw/index.php/recent-performance-cases/
   tw.7792#e12:
-    locator: PDF第14頁／印刷第12頁，列入合併財務報告之子公司
-    published_date: '2026-03-11'
-    publisher: 安葆國際實業股份有限公司
+    locator: 第5項發生緣由
+    published_date: '2026-08-11'
+    publisher: 公開資訊觀測站重大訊息公告／MoneyDJ轉載
     quote_check: found
-    title: 114年度及113年度合併財務報告暨會計師查核報告
-    url: https://www.ampower.com.tw/wp-content/uploads/2026/03/20250311_202504_7792_AI1_%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E6%9A%A8%E6%9C%83%E8%A8%88%E5%B8%AB%E6%9F%A5%E6%A0%B8%E5%A0%B1%E5%91%8A.pdf
+    title: 安葆公告董事會決議設立新加坡子公司
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=02506c69-012a-45bd-8184-ee27fa546230
   tw.7792#e13:
-    locator: PDF第14頁／印刷第12頁，列入合併財務報告之子公司
-    published_date: '2026-03-11'
+    locator: 2024年集團快速發展
+    published_date: null
     publisher: 安葆國際實業股份有限公司
     quote_check: found
-    title: 114年度及113年度合併財務報告暨會計師查核報告
-    url: https://www.ampower.com.tw/wp-content/uploads/2026/03/20250311_202504_7792_AI1_%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E6%9A%A8%E6%9C%83%E8%A8%88%E5%B8%AB%E6%9F%A5%E6%A0%B8%E5%A0%B1%E5%91%8A.pdf
+    title: 安葆官網成長沿革
+    url: https://www.ampower.com.tw/
   tw.7792#e14:
-    locator: PDF第14頁／印刷第12頁，列入合併財務報告之子公司
-    published_date: '2026-03-11'
+    locator: PDF第84頁，關係企業基本資料
+    published_date: '2025-03-28'
     publisher: 安葆國際實業股份有限公司
     quote_check: found
-    title: 114年度及113年度合併財務報告暨會計師查核報告
-    url: https://www.ampower.com.tw/wp-content/uploads/2026/03/20250311_202504_7792_AI1_%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E6%9A%A8%E6%9C%83%E8%A8%88%E5%B8%AB%E6%9F%A5%E6%A0%B8%E5%A0%B1%E5%91%8A.pdf
+    title: 113年度公司年報
+    url: https://www.ampower.com.tw/wp-content/uploads/2025/05/2024_7792_20250523F04-%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
   tw.7792#e15:
-    locator: PDF第14頁／印刷第12頁，列入合併財務報告之子公司；AIE為Ampower International Enterprise Co., Ltd.
-    published_date: '2026-03-11'
-    publisher: 安葆國際實業股份有限公司
+    locator: 第5、6項，土地使用權資產金額及相對人
+    published_date: '2025-12-30'
+    publisher: 公開資訊觀測站重大訊息公告／MoneyDJ轉載
     quote_check: found
-    title: 114年度及113年度合併財務報告暨會計師查核報告
-    url: https://www.ampower.com.tw/wp-content/uploads/2026/03/20250311_202504_7792_AI1_%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E6%9A%A8%E6%9C%83%E8%A8%88%E5%B8%AB%E6%9F%A5%E6%A0%B8%E5%A0%B1%E5%91%8A.pdf
+    title: 安葆董事會決議通過台南廠辦二廠新建計劃案
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=cf7812e9-1cd1-4846-ac1f-985a4c09a8a8
   tw.7792#e16:
-    locator: PDF第14頁／印刷第12頁，列入合併財務報告之子公司
+    locator: 公告標題及第1至6項
+    published_date: '2026-10-07'
+    publisher: 公開資訊觀測站重大訊息公告／MoneyDJ轉載
+    quote_check: found
+    title: 安葆代子公司FU Energy Corp公告購置倉庫案
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=beac8b52-3d32-4846-80b4-0d330fad8b88
+  tw.7792#e17:
+    locator: 第5、6項，相對人與契約總金額
+    published_date: '2026-10-07'
+    publisher: 公開資訊觀測站重大訊息公告／MoneyDJ轉載
+    quote_check: found
+    title: 安葆台南廠辦二廠新建計劃案補充公告
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=307d746a-348f-46ca-bd1c-7502c6db6713
+  tw.7792#e18:
+    locator: 第5、6項，交易金額與相對人
+    published_date: '2026-10-07'
+    publisher: 公開資訊觀測站重大訊息公告／MoneyDJ轉載
+    quote_check: found
+    title: 安葆代子公司FU Energy Corp公告購置倉庫案
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=beac8b52-3d32-4846-80b4-0d330fad8b88
+  tw.7792#e19:
+    locator: PDF第28頁，採用權益法之投資
     published_date: '2026-03-11'
     publisher: 安葆國際實業股份有限公司
     quote_check: found
-    title: 114年度及113年度合併財務報告暨會計師查核報告
+    title: 114年度及113年度合併財務報告
     url: https://www.ampower.com.tw/wp-content/uploads/2026/03/20250311_202504_7792_AI1_%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E6%9A%A8%E6%9C%83%E8%A8%88%E5%B8%AB%E6%9F%A5%E6%A0%B8%E5%A0%B1%E5%91%8A.pdf
-  tw.7792#e2:
-    locator: PDF第61頁／印刷第57頁，主要服務營業比重；欄位依序為112、113、114年度
-    published_date: null
-    publisher: 安葆國際實業股份有限公司
-    quote_check: not_found
-    title: 安葆國際實業股份有限公司114年度年報
-    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=7792&colorchg=1&filename=2025_7792_20260528F04.pdf&kind=F&step=9
-  tw.7792#e3:
-    locator: PDF第61頁／印刷第57頁，主要服務營業比重；114年度欄
-    published_date: null
-    publisher: 安葆國際實業股份有限公司
-    quote_check: not_found
-    title: 安葆國際實業股份有限公司114年度年報
-    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=7792&colorchg=1&filename=2025_7792_20260528F04.pdf&kind=F&step=9
-  tw.7792#e4:
-    locator: PDF第61頁／印刷第57頁，主要服務營業比重；114年度欄
-    published_date: null
-    publisher: 安葆國際實業股份有限公司
-    quote_check: not_found
-    title: 安葆國際實業股份有限公司114年度年報
-    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=7792&colorchg=1&filename=2025_7792_20260528F04.pdf&kind=F&step=9
-  tw.7792#e5:
-    locator: PDF第63頁／印刷第59頁
-    published_date: null
-    publisher: 安葆國際實業股份有限公司
-    quote_check: not_found
-    title: 安葆國際實業股份有限公司114年度年報
-    url: https://doc.twse.com.tw/server-java/t57sb01?co_id=7792&colorchg=1&filename=2025_7792_20260528F04.pdf&kind=F&step=9
-  tw.7792#e6:
-    locator: 系統整合－供電穩定的唯一途徑
-    published_date: '2026-01-15'
+  tw.7792#e20:
+    locator: PDF第52頁，期末持有重大有價證券，鳳凰柒創新創業投資列
+    published_date: '2026-03-11'
     publisher: 安葆國際實業股份有限公司
     quote_check: found
-    title: 安葆電能與永不停歇的世界同步
-    url: https://www.ampower.com.tw/index.php/2026/01/15/ampower-in-a-world-that-cannot-stop/
-  tw.7792#e7:
-    locator: 儲能
-    published_date: null
-    publisher: 安葆國際實業股份有限公司
-    quote_check: found
-    title: 能源系統規劃
-    url: https://www.ampower.com.tw/index.php/power-system-planning/
-  tw.7792#e8:
-    locator: 儲能
-    published_date: null
-    publisher: 安葆國際實業股份有限公司
-    quote_check: found
-    title: 能源系統規劃
-    url: https://www.ampower.com.tw/index.php/power-system-planning/
-  tw.7792#e9:
-    locator: 系統整合－供電穩定的唯一途徑，PLTC系統段
-    published_date: '2026-01-15'
-    publisher: 安葆國際實業股份有限公司
-    quote_check: found
-    title: 安葆電能與永不停歇的世界同步
-    url: https://www.ampower.com.tw/index.php/2026/01/15/ampower-in-a-world-that-cannot-stop/
+    title: 114年度及113年度合併財務報告
+    url: https://www.ampower.com.tw/wp-content/uploads/2026/03/20250311_202504_7792_AI1_%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E6%9A%A8%E6%9C%83%E8%A8%88%E5%B8%AB%E6%9F%A5%E6%A0%B8%E5%A0%B1%E5%91%8A.pdf

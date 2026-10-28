@@ -29,35 +29,50 @@ chain_stage:
   stage_name: 電池與模組
   tier: midstream
 primary_chain_position: midstream
-summary_short: 製造及銷售太陽能模組與電池，並提供電廠興建及維運服務。
-summary_long: 元晶以太陽能電池與模組的製造及銷售為主要業務，營收集中於模組產品。2025年度太陽能模組占營收93.35%，太陽能電池占3.99%，其他項目占2.66%。主要產品涵蓋PERC與TOPCon高效能太陽能電池，以及高效能太陽能模組。除產品銷售外，公司亦提供電廠興建與長期維運的系統整合服務；工程服務包含施工圖繪製、材料與設備採購管理、施工品質控制及安全衛生管理，維運則包括監控、障礙排除、定期巡檢與營運報表。
+summary_short: 以太陽能模組與電池製造銷售為主，另提供電廠興建及維運服務。
+summary_long: 元晶以太陽能模組與電池的研發、製造及銷售為主要業務，並提供電廠興建與長期維運服務。2025年營收以太陽能模組占93.35%為主，太陽能電池占3.99%，其他業務占2.66%。年報揭露的原料供應來源涵蓋隆基、中環的矽晶片、索特與碩禾的導電膠，以及國碩等模組輔材廠商。歷史具名報導曾揭露元晶取得Tesla屋頂型太陽能電池片訂單。集團另有厚昌能源、恆立能源及昱晶地熱開發等子公司，近三年可確認事件包括子公司增資、關聯企業減資退款及子公司取得土地使用權。
 segments:
 - evidence_ids:
-  - e2
-  id: seg_module
+  - e02
+  id: module
   name: 太陽能模組
   period: '2025'
   revenue_share_pct: 93.35
 - evidence_ids:
-  - e2
-  id: seg_cell
+  - e02
+  id: cell
   name: 太陽能電池
   period: '2025'
   revenue_share_pct: 3.99
 - evidence_ids:
-  - e2
-  id: seg_other
+  - e02
+  id: other
   name: 其他
   period: '2025'
   revenue_share_pct: 2.66
 relations:
+  customers:
+  - as_of: '2022-07-18'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 屋頂型太陽能電池片
+    details:
+    - 屋頂型太陽能電池片
+    edge: e06947d57daba
+    evidence_level: media
+    id: us.TSLA
+    name: Tesla
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接子公司；太陽能設備出租與發電銷售
+    detail: 直接持有100%股權之子公司
     details:
-    - 直接子公司；太陽能設備出租與發電銷售
+    - 直接持有100%股權之子公司
     edge: e8f07e9591144
     evidence_level: primary
     id: org.hengli-energy
@@ -69,9 +84,9 @@ relations:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接子公司；儲能系統營運
+    detail: 直接持有100%股權之子公司
     details:
-    - 直接子公司；儲能系統營運
+    - 直接持有100%股權之子公司
     edge: e6dcff28689e1
     evidence_level: primary
     id: org.houchang-energy
@@ -83,9 +98,23 @@ relations:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接子公司；太陽能設備出租與發電銷售
+    detail: 直接持有100%股權之子公司
     details:
-    - 直接子公司；太陽能設備出租與發電銷售
+    - 直接持有100%股權之子公司
+    edge: eb843575e1cc3
+    evidence_level: primary
+    id: org.tsec-america
+    name: TSEC AMERICA, INC.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持有90%股權之子公司
+    details:
+    - 直接持有90%股權之子公司
     edge: e677ba50b0f19
     evidence_level: primary
     id: org.yuanjin-energy
@@ -97,9 +126,9 @@ relations:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接子公司
+    detail: 直接持有100%股權之子公司
     details:
-    - 直接子公司
+    - 直接持有100%股權之子公司
     edge: ecef9df01d888
     evidence_level: primary
     id: org.yujing-geothermal-development
@@ -111,9 +140,9 @@ relations:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接子公司；太陽能設備出租與發電銷售
+    detail: 直接持有100%股權之子公司
     details:
-    - 直接子公司；太陽能設備出租與發電銷售
+    - 直接持有100%股權之子公司
     edge: efcb9395c9a68
     evidence_level: primary
     id: org.yunsheng-photovoltaic
@@ -122,88 +151,372 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  suppliers:
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 模組輔材
+    details:
+    - 模組輔材
+    edge: e0ecd8a51d6c6
+    evidence_level: primary
+    id: org.江泰
+    name: 江泰
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 模組輔材
+    details:
+    - 模組輔材
+    edge: e99e7851099f7
+    evidence_level: primary
+    id: org.福來特
+    name: 福來特
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 模組輔材
+    details:
+    - 模組輔材
+    edge: e35b885f98be7
+    evidence_level: primary
+    id: org.福斯特
+    name: 福斯特
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 導電膠
+    details:
+    - 導電膠
+    edge: e71dc9937d5d1
+    evidence_level: primary
+    id: org.索特
+    name: 索特
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 矽晶片
+    details:
+    - 矽晶片
+    edge: e64756315ffe4
+    evidence_level: primary
+    id: org.隆基
+    name: 隆基
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 矽晶片
+    details:
+    - 矽晶片
+    edge: e32f4107c21b9
+    evidence_level: primary
+    id: tw.2323
+    name: 中環
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 模組輔材
+    details:
+    - 模組輔材
+    edge: e16c9987d4069
+    evidence_level: primary
+    id: tw.2406
+    name: 國碩
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 導電膠
+    details:
+    - 導電膠
+    edge: ec08787babf95
+    evidence_level: primary
+    id: tw.3691
+    name: 碩禾
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2011-10-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 2012年至2016年矽晶片長期供料合約
+    details:
+    - 2012年至2016年矽晶片長期供料合約
+    edge: e792b214bebdc
+    evidence_level: media
+    id: tw.5483
+    name: 中美晶
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 新台幣4,900仟元
+    as_of: 2024-05
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 增資既有子公司
+    details:
+    - 增資既有子公司
+    edge: ec83a5bcce32b
+    event_date: null
+    events:
+    - amount: 新台幣4,900仟元
+      detail: 增資既有子公司
+      event_date: null
+    evidence_level: primary
+    id: org.hengli-energy
+    name: 恆立能源股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣40,000仟元
+    as_of: 2024-07
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 增資既有子公司
+    details:
+    - 增資既有子公司
+    edge: e77108c5fac21
+    event_date: null
+    events:
+    - amount: 新台幣40,000仟元
+      detail: 增資既有子公司
+      event_date: null
+    evidence_level: primary
+    id: org.houchang-energy
+    name: 厚昌能源股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣45,490仟元
+    as_of: 2025-04
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 關聯企業現金減資退還股款
+    details:
+    - 關聯企業現金減資退還股款
+    edge: e8ef4bc743ff0
+    event_date: null
+    events:
+    - amount: 新台幣45,490仟元
+      detail: 關聯企業現金減資退還股款
+      event_date: null
+    evidence_level: primary
+    id: org.hougu-energy-development
+    name: 厚固能源開發股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣13,982,556元（使用權資產金額）
+    as_of: '2026-05-08'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司厚昌能源取得宜蘭土地使用權
+    details:
+    - 子公司厚昌能源取得宜蘭土地使用權
+    - 子公司昱晶地熱開發取得宜蘭土地使用權
+    edge: ef0fb339ae718
+    event_date: '2026-05-08'
+    events:
+    - amount: 新台幣13,982,556元（使用權資產金額）
+      detail: 子公司厚昌能源取得宜蘭土地使用權
+      event_date: '2026-05-08'
+    - amount: 新台幣14,107,881元（使用權資產金額）
+      detail: 子公司昱晶地熱開發取得宜蘭土地使用權
+      event_date: '2026-05-08'
+    evidence_level: primary
+    id: org.廖偉然-廖偉任
+    name: 廖偉然、廖偉任
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 美國T公司：公司文件匿名揭露，未自行對應為Tesla或SpaceX。
+- 日本主要電力公司：未揭露正式名稱，不能建立具名代理或客戶關係。
+- 2025年度S公司、L公司客戶與C公司供應商：年報以代號揭露，未推測其身分。
+- SpaceX：搜尋所得多屬市場點名、匿名消息或潛在合作敘述，未確認具名供貨關係。
 website: www.tsecpv.com
 tax_id: '28997300'
 incorporated: '2010-06-24'
 listed: '2015-10-01'
-as_of: '2026-10-18'
+as_of: '2026-10-28'
 confidence: ai_cross_checked
 has_research: true
 evidence:
-  tw.6443#e10:
-    locator: 第35頁，附註十一；投資公司為元晶之子公司明細
-    published_date: '2026-03-12'
+  tw.6443#e01:
+    locator: 首頁「關於TSEC」
+    published_date: null
     publisher: 元晶太陽能科技股份有限公司
     quote_check: found
-    title: 元晶及子公司114及113年度合併財務報表
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52564/2026/RNS/52564_rns_2026-04-14_553b48ff-fbfc-42a1-aab6-7397c03a5e96.pdf
-  tw.6443#e11:
-    locator: 第36頁，附註十一續表；投資公司為元晶之子公司明細
-    published_date: '2026-03-12'
-    publisher: 元晶太陽能科技股份有限公司
-    quote_check: found
-    title: 元晶及子公司114及113年度合併財務報表
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52564/2026/RNS/52564_rns_2026-04-14_553b48ff-fbfc-42a1-aab6-7397c03a5e96.pdf
-  tw.6443#e12:
-    locator: 第36頁，附註十一續表；投資公司為元晶之子公司明細
-    published_date: '2026-03-12'
-    publisher: 元晶太陽能科技股份有限公司
-    quote_check: found
-    title: 元晶及子公司114及113年度合併財務報表
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52564/2026/RNS/52564_rns_2026-04-14_553b48ff-fbfc-42a1-aab6-7397c03a5e96.pdf
-  tw.6443#e2:
-    locator: 第59頁，114年度營業比重；金額單位為新台幣仟元
+    title: 元晶太陽能科技股份有限公司－關於TSEC
+    url: https://www.tsecpv.com/
+  tw.6443#e02:
+    locator: 第59頁，業務範圍／114年度營業比重
     published_date: '2026-03-31'
-    publisher: 元晶太陽能科技股份有限公司
-    quote_check: found
-    title: 元晶太陽能科技股份有限公司114年度年報
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52564/2026/RNS/52564_rns_2026-04-30_f4c81ef4-45e5-4af9-a08d-66facd48bd50.pdf
-  tw.6443#e3:
-    locator: 第59頁，公司目前主要銷售之商品項目；年報文字鏡像
-    published_date: '2026-03-31'
-    publisher: 元晶太陽能科技股份有限公司
+    publisher: 元晶太陽能科技股份有限公司（FinancialFilings收錄）
     quote_check: unreachable
-    title: 元晶太陽能科技股份有限公司114年度年報
+    title: 元晶太陽能科技股份有限公司一一四年度年報
     url: https://financialfilings.com/filings/tsec-6443/annual-report/2026/39868156/
-  tw.6443#e4:
-    locator: 公司簡介第一段
-    published_date: null
+  tw.6443#e03:
+    locator: 第76頁，主要原料之供應狀況／矽晶片供應廠商
+    published_date: '2025-03-25'
     publisher: 元晶太陽能科技股份有限公司
     quote_check: found
-    title: 公司簡介
-    url: https://www.tsecpv.com/company/
-  tw.6443#e5:
-    locator: 施工管理
-    published_date: null
+    title: 元晶太陽能科技股份有限公司一一三年度年報
+    url: https://www.tsecpv.com/storage/2025/09/11405233.pdf
+  tw.6443#e04:
+    locator: 第76頁，主要原料之供應狀況／矽晶片供應廠商
+    published_date: '2025-03-25'
     publisher: 元晶太陽能科技股份有限公司
     quote_check: found
-    title: 整合服務
-    url: https://www.tsecpv.com/service/integrated-services/
-  tw.6443#e6:
-    locator: 維運管理
-    published_date: null
+    title: 元晶太陽能科技股份有限公司一一三年度年報
+    url: https://www.tsecpv.com/storage/2025/09/11405233.pdf
+  tw.6443#e05:
+    locator: 第76頁，主要原料之供應狀況／導電膠供應廠商
+    published_date: '2025-03-25'
     publisher: 元晶太陽能科技股份有限公司
     quote_check: found
-    title: 整合服務
-    url: https://www.tsecpv.com/service/integrated-services/
-  tw.6443#e7:
-    locator: 附註四（四）合併基礎；附註十一列示各投資公司及其子公司
-    published_date: '2026-03-12'
+    title: 元晶太陽能科技股份有限公司一一三年度年報
+    url: https://www.tsecpv.com/storage/2025/09/11405233.pdf
+  tw.6443#e06:
+    locator: 第76頁，主要原料之供應狀況／導電膠供應廠商
+    published_date: '2025-03-25'
     publisher: 元晶太陽能科技股份有限公司
+    quote_check: not_found
+    title: 元晶太陽能科技股份有限公司一一三年度年報
+    url: https://www.tsecpv.com/storage/2025/09/11405233.pdf
+  tw.6443#e07:
+    locator: 第76頁，主要原料之供應狀況／模組輔材供應廠商
+    published_date: '2025-03-25'
+    publisher: 元晶太陽能科技股份有限公司
+    quote_check: found
+    title: 元晶太陽能科技股份有限公司一一三年度年報
+    url: https://www.tsecpv.com/storage/2025/09/11405233.pdf
+  tw.6443#e08:
+    locator: 第76頁，主要原料之供應狀況／模組輔材供應廠商
+    published_date: '2025-03-25'
+    publisher: 元晶太陽能科技股份有限公司
+    quote_check: not_found
+    title: 元晶太陽能科技股份有限公司一一三年度年報
+    url: https://www.tsecpv.com/storage/2025/09/11405233.pdf
+  tw.6443#e09:
+    locator: 第76頁，主要原料之供應狀況／模組輔材供應廠商
+    published_date: '2025-03-25'
+    publisher: 元晶太陽能科技股份有限公司
+    quote_check: not_found
+    title: 元晶太陽能科技股份有限公司一一三年度年報
+    url: https://www.tsecpv.com/storage/2025/09/11405233.pdf
+  tw.6443#e10:
+    locator: 第76頁，主要原料之供應狀況／模組輔材供應廠商
+    published_date: '2025-03-25'
+    publisher: 元晶太陽能科技股份有限公司
+    quote_check: not_found
+    title: 元晶太陽能科技股份有限公司一一三年度年報
+    url: https://www.tsecpv.com/storage/2025/09/11405233.pdf
+  tw.6443#e11:
+    locator: 黃女瑛報導，第二段雙方共同聲明
+    published_date: '2011-10-13'
+    publisher: DIGITIMES
+    quote_check: found
+    title: 中美矽晶與元晶簽長期供料合約
+    url: https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000254315_75849FI50N7PFK6B3EFJ5
+  tw.6443#e12:
+    locator: 首段及「大尺寸M6電池片供貨中」段落
+    published_date: '2022-07-18'
+    publisher: 台視新聞
+    quote_check: found
+    title: 元晶奪Tesla大單 本土太陽能廠業績也爆「追單潮」
+    url: https://news.ttv.com.tw/news/11107180024000F/amp
+  tw.6443#e13:
+    locator: 第35頁，附註十一（一）投資子公司之持股比例表；完整法人名稱見附表四
+    published_date: null
+    publisher: 元晶太陽能科技股份有限公司（FinancialFilings收錄）
     quote_check: unreachable
-    title: 元晶及子公司114及113年度合併財務報表
+    title: 元晶太陽能科技股份有限公司個體財務報告暨會計師查核報告－民國114及113年度
+    url: https://financialfilings.com/filings/tsec-6443/audit-report-information/2026/34460972/
+  tw.6443#e14:
+    locator: 第37頁，附註十二子公司註5
+    published_date: null
+    publisher: 元晶太陽能科技股份有限公司
+    quote_check: found
+    title: 元晶太陽能科技股份有限公司及子公司113及112年度合併財務報表
+    url: https://www.tsecpv.com/storage/2025/05/TSEC-2024Q4-Con-Chinese.pdf
+  tw.6443#e15:
+    locator: 附註十一子公司，註2
+    published_date: null
+    publisher: 元晶太陽能科技股份有限公司（FinancialFilings收錄）
+    quote_check: unreachable
+    title: 元晶太陽能科技股份有限公司及子公司114及113年度合併財務報表
     url: https://financialfilings.com/filings/tsec-6443/annual-report/2026/34460969/
-  tw.6443#e8:
-    locator: 第35頁，附註十一；投資公司為元晶之子公司明細
-    published_date: '2026-03-12'
+  tw.6443#e16:
+    locator: 第20頁，附註十三採用權益法之投資
+    published_date: null
     publisher: 元晶太陽能科技股份有限公司
     quote_check: found
-    title: 元晶及子公司114及113年度合併財務報表
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52564/2026/RNS/52564_rns_2026-04-14_553b48ff-fbfc-42a1-aab6-7397c03a5e96.pdf
-  tw.6443#e9:
-    locator: 第35頁，附註十一；投資公司為元晶之子公司明細
-    published_date: '2026-03-12'
-    publisher: 元晶太陽能科技股份有限公司
+    title: 元晶太陽能科技股份有限公司及子公司114及113年第3季合併財務報告
+    url: https://www.tsecpv.com/jp/storage/2026/01/TSEC-2025Q3TSE015A4202503-IFRS-FR.pdf
+  tw.6443#e17:
+    locator: 公告第1、2及5點
+    published_date: '2026-05-08'
+    publisher: 公開資訊觀測站（MoneyDJ轉載）
     quote_check: found
-    title: 元晶及子公司114及113年度合併財務報表
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52564/2026/RNS/52564_rns_2026-04-14_553b48ff-fbfc-42a1-aab6-7397c03a5e96.pdf
+    title: 元晶 代子公司厚昌能源(股)公司公告取得使用權資產
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=18deb27a-4b15-459a-8020-ea5c074974ca
+  tw.6443#e18:
+    locator: 公告第6點，交易相對人及關係
+    published_date: '2026-05-08'
+    publisher: 公開資訊觀測站（MoneyDJ轉載）
+    quote_check: found
+    title: 元晶 代子公司厚昌能源(股)公司公告取得使用權資產
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=18deb27a-4b15-459a-8020-ea5c074974ca
+  tw.6443#e19:
+    locator: 公告第1、2及5點
+    published_date: '2026-05-08'
+    publisher: 公開資訊觀測站（MoneyDJ轉載）
+    quote_check: found
+    title: 元晶 代子公司昱晶地熱開發(股)公司公告取得使用權資產
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=cb2c4c6c-cdbc-4ace-bb06-87eb4b6bac4c&c=MB00
+  tw.6443#e20:
+    locator: 公告第6點，交易相對人及關係
+    published_date: '2026-05-08'
+    publisher: 公開資訊觀測站（MoneyDJ轉載）
+    quote_check: found
+    title: 元晶 代子公司昱晶地熱開發(股)公司公告取得使用權資產
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=cb2c4c6c-cdbc-4ace-bb06-87eb4b6bac4c&c=MB00

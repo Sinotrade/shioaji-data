@@ -26,19 +26,20 @@ chain_stage:
   stage_name: 封裝測試
   tier: downstream
 primary_chain_position: downstream
-summary_short: 以功率半導體封裝測試服務為主，涵蓋MOSFET、IGBT、二極體及功率模組。
-summary_long: 捷敏-KY以功率半導體封裝及測試服務為主要業務，2025年該項服務占合併營收97.25%，其他收入占2.75%。服務涵蓋高低壓Power MOSFET、IGBT、二極體、電源管理IC及功率模組，位於半導體產業鏈下游。聯鈞光電為持股51%的母公司，主要製造子公司包括間接持有的捷敏電子（上海）與捷敏電子（合肥）。封測產品應用包含油電混合車及電動車的車載充電器、逆變器與DC-DC轉換器；SiC模組則列於與客戶擬定共同開發計畫的階段。
+summary_short: 以功率半導體封裝測試代工為主，服務涵蓋MOSFET、IGBT及功率模組。
+summary_long: 捷敏-KY主要提供Power MOSFET、IGBT、二極體與功率模組的封裝測試服務。2025年封裝測試占合併營收97.25%，其他收入占2.75%，包括電鍍、租賃及其他服務。公司提供從晶圓切割到出貨的一站式服務，營運子公司包括捷敏電子（上海）與捷敏電子（合肥）。聯鈞光電為其最終母公司，雙方另有GaN後段封測合作。捷敏亦與三菱電機維持功率半導體合資關係，合肥子公司向合資企業提供電鍍、租賃及其他服務。公司揭露的產品應用包括AI伺服器與電動車電源轉換，並投入SiC功率模組共同開發。
 segments:
 - evidence_ids:
-  - e1
+  - e2
   id: seg_osat
   name: 封裝及測試服務
   period: '2025'
   revenue_share_pct: 97.25
 - evidence_ids:
-  - e1
+  - e2
+  - e3
   id: seg_other
-  name: 其他收入
+  name: 其他收入：電鍍、租賃及其他服務
   period: '2025'
   revenue_share_pct: 2.75
 main_theme: theme.ev
@@ -48,10 +49,29 @@ themes:
   theme: theme.ev
   tier: upstream
 - also: []
+  stage: chips
+  theme: theme.ai_server
+  tier: upstream
+- also: []
   stage: application
   theme: theme.sic
   tier: downstream
 relations:
+  customers:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 向捷敏合肥購買電鍍、租賃及其他服務
+    details:
+    - 向捷敏合肥購買電鍍、租賃及其他服務
+    edge: ef87ee8d1eecd
+    evidence_level: primary
+    id: org.mitsubishi-electric-gem-power-device-hefei
+    name: 三菱電機捷敏功率半導體（合肥）有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   parents:
   - as_of: '2026-08-18'
     confidence: ai_cross_checked
@@ -59,7 +79,7 @@ relations:
     detail: 捷敏-KY子公司
     details:
     - 捷敏-KY子公司
-    - 持有捷敏51%股權的母公司
+    - 最終母公司及控制股東
     edge: e7aa356614ee6
     evidence_level: primary
     id: tw.3450
@@ -68,104 +88,195 @@ relations:
     share_basis: null
     share_pct: null
     weight: 2
-  subsidiaries:
-  - as_of: '2025-12-31'
+  partners:
+  - as_of: '2025'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 間接持有100%股權的製造子公司
+    detail: 合資成立三菱電機捷敏功率半導體（合肥）有限公司
     details:
-    - 間接持有100%股權的製造子公司
+    - 合資成立三菱電機捷敏功率半導體（合肥）有限公司
+    edge: ee029ff4aadd4
+    evidence_level: primary
+    id: jp.6503
+    name: 三菱電機株式会社
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-06-12'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: GaN產品後段封裝測試合作
+    details:
+    - GaN產品後段封裝測試合作
+    edge: ed6b9e6b4718e
+    evidence_level: media
+    id: tw.3450
+    name: 聯鈞
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接持有100%的製造及廠房租賃子公司
+    details:
+    - 間接持有100%的製造及廠房租賃子公司
     edge: ec32b6c71f268
     evidence_level: primary
     id: org.gem-electronics-hefei
-    name: 捷敏電子(合肥)有限公司
+    name: 捷敏電子（合肥）有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2025-12-31'
+  - as_of: '2026-03-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 間接持有100%股權的製造子公司
+    detail: 間接持有100%的電子零件製造及銷售子公司
     details:
-    - 間接持有100%股權的製造子公司
+    - 間接持有100%的電子零件製造及銷售子公司
     edge: e24664a9aecaf
     evidence_level: primary
     id: org.gem-electronics-shanghai
-    name: 捷敏電子(上海)有限公司
+    name: 捷敏電子（上海）有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
+  suppliers:
+  - as_of: '2025'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 向捷敏上海出租廠房
+    details:
+    - 向捷敏上海出租廠房
+    edge: e43ea718504e2
+    evidence_level: primary
+    id: org.shanghai-jiading-industrial-zone-industrial-premises-development
+    name: 上海嘉定工業區工業用房發展有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 主要封測客戶以B公司等代碼揭露，未將代碼推測為特定企業。
+- 2024年度年報以AA、AD、AF公司代碼列示導線架供應商，未揭露實名。
+- 2025年度年報另以AE公司列示導線架供應商，以AG公司列示線材及錫膏供應商，…
+- 國際整合元件製造廠、分離式元件設計公司及IC設計公司，未逐一具名。
 website: www.gemservices.com
 tax_id: '49791260'
 incorporated: '1998-04-17'
 listed: '2016-04-12'
 foreign_registration: KY 開曼群島
-as_of: '2026-10-15'
+as_of: '2026-10-28'
 confidence: ai_cross_checked
 has_research: true
 evidence:
   tw.6525#e1:
-    locator: 第117頁，主要商品（服務）營業比重；表列113及114年度
-    published_date: '2026-04-10'
+    locator: 第7頁，終端產品應用
+    published_date: '2026-03-10'
     publisher: 捷敏股份有限公司
     quote_check: found
-    title: 捷敏股份有限公司2025年年報
-    url: https://www.gemservices.com/pdf_files/%E6%8D%B7%E6%95%8F-2025%E5%B9%B4%E5%B9%B4%E5%A0%B1-%E4%B8%AD%E6%96%87%E7%89%88%E4%B8%8A%E5%82%B3%E6%AA%94.pdf
-  tw.6525#e2:
-    locator: 簡報第6頁，終端產品應用
-    published_date: '2025-06-12'
-    publisher: 捷敏股份有限公司
-    quote_check: found
-    title: 捷敏股份有限公司2025年6月12日法人說明會
-    url: https://www.gemservices.com/pdf_files/20250612-ch.pdf
-  tw.6525#e3:
-    locator: 類比和電源管理IC電氣測試
+    title: 捷敏股份有限公司2026年3月10日法人說明會簡報
+    url: https://www.gemservices.com/pdf_files/20260310%E7%B0%A1%E5%A0%B1%E6%AA%94-Chinese.pdf
+  tw.6525#e10:
+    locator: 第18頁，附註十一、子公司
     published_date: null
     publisher: 捷敏股份有限公司
     quote_check: found
-    title: 捷敏官網：產品及服務
-    url: https://www.gemservices.com/zh_TW/products.html
+    title: GEM Services, Inc.及子公司2026年第一季合併財務報告
+    url: https://www.gemservices.com/pdf_files/115Q1GEM%E8%B2%A1%E5%A0%B1-%E4%B8%8A%E5%82%B3%E6%AA%94.pdf
+  tw.6525#e11:
+    locator: 第119頁，重要契約之合資契約
+    published_date: '2025-08-07'
+    publisher: 捷敏股份有限公司
+    quote_check: found
+    title: 捷敏股份有限公司2024年度年報（股東會後修訂版）
+    url: https://www.gemservices.com/pdf_files/%E6%8D%B7%E6%95%8F-113%E5%B9%B4%E5%B9%B4%E5%A0%B1-%E4%B8%AD%E6%96%87%E7%89%88-%E8%82%A1%E6%9D%B1%E6%9C%83%E5%BE%8C%E4%BF%AE%E8%A8%82%E7%89%88.pdf
+  tw.6525#e12:
+    locator: 第58頁，附表一：捷敏電子（合肥）有限公司對合資關聯企業之銷貨
+    published_date: null
+    publisher: 捷敏股份有限公司
+    quote_check: found
+    title: GEM Services, Inc.及子公司2025年度合併財務報告
+    url: https://www.gemservices.com/pdf_files/114Q4GEM%E8%B2%A1%E5%A0%B1-%E4%B8%8A%E5%82%B3%E6%AA%94.pdf
+  tw.6525#e13:
+    locator: 伍、營運概況，七、重要契約，廠房租賃
+    published_date: '2026-08-07'
+    publisher: 捷敏股份有限公司（FinancialFilings收錄）
+    quote_check: unreachable
+    title: 捷敏股份有限公司2025年度年報
+    url: https://financialfilings.com/filings/gem-6525/annual-report/2026/50378285/
+  tw.6525#e14:
+    locator: 第7頁，終端應用
+    published_date: '2026-03-10'
+    publisher: 捷敏股份有限公司
+    quote_check: found
+    title: 捷敏股份有限公司2026年3月10日法人說明會簡報
+    url: https://www.gemservices.com/pdf_files/20260310%E7%B0%A1%E5%A0%B1%E6%AA%94-Chinese.pdf
+  tw.6525#e15:
+    locator: 第7頁，車用終端應用
+    published_date: '2026-03-10'
+    publisher: 捷敏股份有限公司
+    quote_check: found
+    title: 捷敏股份有限公司2026年3月10日法人說明會簡報
+    url: https://www.gemservices.com/pdf_files/20260310%E7%B0%A1%E5%A0%B1%E6%AA%94-Chinese.pdf
+  tw.6525#e2:
+    locator: 伍、營運概況，一、業務內容，主要商品（服務）營業比重
+    published_date: '2026-08-07'
+    publisher: 捷敏股份有限公司（FinancialFilings收錄）
+    quote_check: unreachable
+    title: 捷敏股份有限公司2025年度年報
+    url: https://financialfilings.com/filings/gem-6525/annual-report/2026/50378285/
+  tw.6525#e3:
+    locator: 第41頁，附註二十二、收入，客戶合約收入之細分
+    published_date: null
+    publisher: 捷敏股份有限公司
+    quote_check: found
+    title: GEM Services, Inc.及子公司2025年度合併財務報告
+    url: https://www.gemservices.com/pdf_files/114Q4GEM%E8%B2%A1%E5%A0%B1-%E4%B8%8A%E5%82%B3%E6%AA%94.pdf
   tw.6525#e4:
-    locator: 簡報第15頁，未來展望
+    locator: 第5頁，Company Profile
     published_date: '2025-06-12'
     publisher: 捷敏股份有限公司
     quote_check: found
-    title: 捷敏股份有限公司2025年6月12日法人說明會
-    url: https://www.gemservices.com/pdf_files/20250612-ch.pdf
+    title: GEM Services, Inc. Investor Conference 2025/06/12
+    url: https://www.gemservices.com/pdf_files/20250612-en.pdf
   tw.6525#e5:
-    locator: 簡報第6頁，車用終端應用
+    locator: 第16頁，未來展望
     published_date: '2025-06-12'
     publisher: 捷敏股份有限公司
     quote_check: found
-    title: 捷敏股份有限公司2025年6月12日法人說明會
+    title: 捷敏股份有限公司2025年6月12日法人說明會簡報
     url: https://www.gemservices.com/pdf_files/20250612-ch.pdf
   tw.6525#e6:
-    locator: 第113頁，主要股東名單，資料日期2026年3月28日
-    published_date: '2026-04-10'
+    locator: 第39頁，附註二十八、關係人交易
+    published_date: null
     publisher: 捷敏股份有限公司
     quote_check: found
-    title: 捷敏股份有限公司2025年年報
-    url: https://www.gemservices.com/pdf_files/%E6%8D%B7%E6%95%8F-2025%E5%B9%B4%E5%B9%B4%E5%A0%B1-%E4%B8%AD%E6%96%87%E7%89%88%E4%B8%8A%E5%82%B3%E6%AA%94.pdf
+    title: GEM Services, Inc.及子公司2026年第一季合併財務報告
+    url: https://www.gemservices.com/pdf_files/115Q1GEM%E8%B2%A1%E5%A0%B1-%E4%B8%8A%E5%82%B3%E6%AA%94.pdf
   tw.6525#e7:
-    locator: 第143頁轉投資持股表；第144頁間接轉投資及主要營業項目
-    published_date: '2026-04-10'
+    locator: 主要股東名單，2025年3月28日
+    published_date: null
     publisher: 捷敏股份有限公司
     quote_check: found
-    title: 捷敏股份有限公司2025年年報
-    url: https://www.gemservices.com/pdf_files/%E6%8D%B7%E6%95%8F-2025%E5%B9%B4%E5%B9%B4%E5%A0%B1-%E4%B8%AD%E6%96%87%E7%89%88%E4%B8%8A%E5%82%B3%E6%AA%94.pdf
+    title: 投資人專區：主要股東名單
+    url: https://www.gemservices.com/zh_TW/information.html
   tw.6525#e8:
-    locator: 第143頁轉投資持股表；第144頁間接轉投資及主要營業項目
-    published_date: '2026-04-10'
-    publisher: 捷敏股份有限公司
+    locator: 記者魏志豪報導，GaN合作段落
+    published_date: '2025-06-12'
+    publisher: 鉅亨網
     quote_check: found
-    title: 捷敏股份有限公司2025年年報
-    url: https://www.gemservices.com/pdf_files/%E6%8D%B7%E6%95%8F-2025%E5%B9%B4%E5%B9%B4%E5%A0%B1-%E4%B8%AD%E6%96%87%E7%89%88%E4%B8%8A%E5%82%B3%E6%AA%94.pdf
+    title: AI功率元件急單加持 捷敏-KY Q3稼動率估續揚
+    url: https://anuenews.cnyes.com/news/id/6020215
   tw.6525#e9:
-    locator: 第121頁，產業上、中、下游之關聯性
-    published_date: '2026-04-10'
+    locator: 第18頁，附註十一、子公司
+    published_date: null
     publisher: 捷敏股份有限公司
     quote_check: found
-    title: 捷敏股份有限公司2025年年報
-    url: https://www.gemservices.com/pdf_files/%E6%8D%B7%E6%95%8F-2025%E5%B9%B4%E5%B9%B4%E5%A0%B1-%E4%B8%AD%E6%96%87%E7%89%88%E4%B8%8A%E5%82%B3%E6%AA%94.pdf
+    title: GEM Services, Inc.及子公司2026年第一季合併財務報告
+    url: https://www.gemservices.com/pdf_files/115Q1GEM%E8%B2%A1%E5%A0%B1-%E4%B8%8A%E5%82%B3%E6%AA%94.pdf

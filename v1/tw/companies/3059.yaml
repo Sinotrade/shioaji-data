@@ -27,16 +27,16 @@ segments:
   name: AI影像相關應用產品
   period: '2025'
   revenue_share_pct: 100
-main_theme: theme.drone
+main_theme: theme.robotics
 themes:
-- also: []
-  stage: modules
-  theme: theme.drone
-  tier: midstream
 - also: []
   stage: components
   theme: theme.robotics
   tier: upstream
+- also: []
+  stage: modules
+  theme: theme.drone
+  tier: midstream
 relations:
   subsidiaries:
   - as_of: '2026-04-30'

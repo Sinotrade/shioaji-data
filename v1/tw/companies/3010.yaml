@@ -78,13 +78,13 @@ themes:
   theme: theme.ai_server
   tier: upstream
 - also: []
-  stage: make
-  theme: theme.photoresist
-  tier: midstream
-- also: []
   stage: materials
   theme: theme.cowos
   tier: upstream
+- also: []
+  stage: make
+  theme: theme.photoresist
+  tier: midstream
 relations:
   customers:
   - as_of: '2016-06-15'

@@ -460,6 +460,14 @@ members:
   evidence:
   - tw.3597#e14
   confidence: ai_cross_checked
+- id: tw.3624
+  stage: components
+  tier: upstream
+  detail: AL、WL、CL高頻電感的5G應用定位
+  as_of: '2021-04-30'
+  evidence:
+  - tw.3624#e10
+  confidence: ai_cross_checked
 - id: tw.3652
   stage: devices
   tier: downstream
@@ -486,13 +494,13 @@ members:
   - tw.3693#e11
   confidence: ai_cross_checked
 - id: tw.3704
-  stage: equipment
-  tier: midstream
-  detail: 子公司提供5G FWA寬頻接取方案
-  as_of: '2026-09-30'
+  stage: devices
+  tier: downstream
+  detail: 5G NR用戶端閘道器與FWA路由器
+  as_of: '2024-01-09'
   evidence:
-  - tw.3704#e2
   - tw.3704#e5
+  - tw.3704#e10
   confidence: ai_cross_checked
 - id: tw.3710
   stage: components
@@ -513,10 +521,10 @@ members:
 - id: tw.4764
   stage: components
   tier: upstream
-  detail: 5G銅箔基板用電子化學材料
-  as_of: '2025-05-22'
+  detail: 5G高階銅箔基板用樹脂材料
+  as_of: 2025-10
   evidence:
-  - tw.4764#e11
+  - tw.4764#e4
   confidence: ai_cross_checked
 - id: tw.4904
   stage: devices
@@ -591,14 +599,6 @@ members:
   as_of: '2026-10-18'
   evidence:
   - tw.5222#e4
-  confidence: ai_cross_checked
-- id: tw.5340
-  stage: components
-  tier: upstream
-  detail: 5G通訊用玻纖布材料
-  as_of: '2023-11-17'
-  evidence:
-  - tw.5340#e8
   confidence: ai_cross_checked
 - id: tw.5353
   stage: equipment
@@ -764,14 +764,6 @@ members:
   evidence:
   - tw.6216#e3
   confidence: ai_cross_checked
-- id: tw.6217
-  stage: components
-  tier: upstream
-  detail: 5G高頻客製化連接器
-  as_of: '2026-10-15'
-  evidence:
-  - tw.6217#e14
-  confidence: ai_cross_checked
 - id: tw.6241
   stage: equipment
   tier: midstream
@@ -783,10 +775,11 @@ members:
 - id: tw.6245
   stage: equipment
   tier: midstream
-  detail: ECA-6710電信邊緣運算設備
-  as_of: '2026-06-01'
+  detail: 5G邊緣AI與AI-RAN設備
+  as_of: '2026-03-15'
   evidence:
-  - tw.6245#e6
+  - tw.6245#e05
+  - tw.6245#e06
   confidence: ai_cross_checked
 - id: tw.6263
   stage: equipment
@@ -893,14 +886,6 @@ members:
   as_of: 2025-12
   evidence:
   - tw.6486#e4
-  confidence: ai_cross_checked
-- id: tw.6533
-  stage: components
-  tier: upstream
-  detail: 用於5G系統晶片的處理器IP
-  as_of: '2026-10-18'
-  evidence:
-  - tw.6533#e8
   confidence: ai_cross_checked
 - id: tw.6546
   stage: components
@@ -1068,11 +1053,10 @@ members:
 - id: tw.8042
   stage: components
   tier: upstream
-  detail: 5G通訊基礎建設用固液態電容器
-  as_of: '2026-04-27'
+  detail: 5G基礎設備用電容器
+  as_of: '2025-04-25'
   evidence:
-  - tw.8042#e0
-  - tw.8042#e5
+  - tw.8042#e6
   confidence: ai_cross_checked
 - id: tw.8048
   stage: equipment

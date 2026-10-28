@@ -26,41 +26,169 @@ chain_stage:
   stage_name: 電路板與載板製造
   tier: midstream
 primary_chain_position: midstream
-summary_short: 透過子公司製造及銷售硬式印刷電路板，以多層板為主要營收來源。
-summary_long: 泰鼎國際透過子公司經營印刷電路板製造與銷售，主要產品包括多層板、雙面板及單面板，應用於液晶電視、視訊轉換盒、硬碟、印表機與車用多媒體設備。2025年營收以多層板為主，占77.73%，雙面板占18.95%，單面板占3.04%，其他項目占0.28%。集團直接子公司APT從事印刷電路板生產及銷售，另一直接子公司AET負責供應鏈整合，並透過APT持有泰國電路板公司APS。
+summary_short: 透過泰國子公司製造銷售硬式印刷電路板，以多層板為主。
+summary_long: 泰鼎國際及子公司主要製造、銷售單面、雙面與多層硬式印刷電路板。2025年多層板占營收77.73%，雙面板18.95%，單面板3.04%，產品應用涵蓋家庭、電腦、通訊及汽車領域。集團亦完成三次增層HDI PCB開發。官網列示SAMSUNG、Sony、Canon、LG、Amazon、HP Inc及Seagate等客戶品牌，另將Foxconn與Pegatron列為合作夥伴。2024年重要子公司APT與梨樹飛達簽署合資協議，合作範圍包括網通與伺服器PCB；泰鼎並於2024及2025年認購APT現金增資股份。
 segments:
 - evidence_ids:
   - e2
-  id: multilayer
+  id: seg_multilayer
   name: 多層板
   period: '2025'
   revenue_share_pct: 77.73
 - evidence_ids:
   - e2
-  id: double_sided
+  id: seg_double
   name: 雙面板
   period: '2025'
   revenue_share_pct: 18.95
 - evidence_ids:
   - e2
-  id: single_sided
+  id: seg_single
   name: 單面板
   period: '2025'
   revenue_share_pct: 3.04
 - evidence_ids:
   - e2
-  id: other
+  id: seg_other
   name: 其他
   period: '2025'
   revenue_share_pct: 0.28
 relations:
-  subsidiaries:
-  - as_of: '2026-06-30'
+  customers:
+  - as_of: '2026-10-28'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 泰國直接子公司，簡稱APT
+    detail: PCB客戶品牌
     details:
-    - 泰國直接子公司，簡稱APT
+    - PCB客戶品牌
+    edge: e6fcc969a7718
+    evidence_level: primary
+    id: jp.6758
+    name: Sony
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: PCB客戶品牌
+    details:
+    - PCB客戶品牌
+    edge: eecfa0eb845d0
+    evidence_level: primary
+    id: jp.7751
+    name: Canon
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: PCB客戶品牌
+    details:
+    - PCB客戶品牌
+    edge: e7b71061bfff0
+    evidence_level: primary
+    id: org.lg
+    name: LG
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: PCB客戶品牌
+    details:
+    - PCB客戶品牌
+    edge: e3d7258c174d2
+    evidence_level: primary
+    id: org.samsung
+    name: Samsung
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: PCB客戶品牌
+    details:
+    - PCB客戶品牌
+    edge: edacfbf214c54
+    evidence_level: primary
+    id: us.AMZN
+    name: Amazon
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: PCB客戶品牌
+    details:
+    - PCB客戶品牌
+    edge: e7cf5cddaa563
+    evidence_level: primary
+    id: us.HPQ
+    name: HP
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: PCB客戶品牌
+    details:
+    - PCB客戶品牌
+    edge: e08c3e4486f4d
+    evidence_level: primary
+    id: us.STX
+    name: Seagate
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  partners:
+  - as_of: '2026-08-19'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: PCB業務之EMS合作夥伴
+    details:
+    - PCB業務之EMS合作夥伴
+    edge: ec0150dc740c5
+    evidence_level: primary
+    id: tw.2317
+    name: 鴻海
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-08-19'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: PCB業務之EMS合作夥伴
+    details:
+    - PCB業務之EMS合作夥伴
+    edge: e23376bde60df
+    evidence_level: primary
+    id: tw.4938
+    name: 和碩
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司APT，負責PCB生產及銷售
+    details:
+    - 直接子公司APT，負責PCB生產及銷售
     edge: e2ce02abbfe01
     evidence_level: primary
     id: org.apex-circuit-thailand
@@ -69,26 +197,12 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-06-30'
+  - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接子公司，簡稱AET
+    detail: 透過APT持有的間接子公司APS
     details:
-    - 直接子公司，簡稱AET
-    edge: ecbb7c5a95747
-    evidence_level: primary
-    id: org.approach-excellence-trading
-    name: Approach Excellence Trading Ltd.
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
-  - as_of: '2026-06-30'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 透過APT持有之泰國間接子公司，簡稱APS
-    details:
-    - 透過APT持有之泰國間接子公司，簡稱APS
+    - 透過APT持有的間接子公司APS
     edge: ef8c18fbdf3a3
     evidence_level: primary
     id: org.shye-feng-enterprise-thailand
@@ -97,47 +211,202 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  transactions:
+  - amount: 1,530萬泰銖
+    as_of: '2024-10-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過APT簽署ISU-APEX合資協議，合作網通及伺服器PCB
+    details:
+    - 透過APT簽署ISU-APEX合資協議，合作網通及伺服器PCB
+    edge: e1152705c10be
+    event_date: '2024-10-14'
+    events:
+    - amount: 1,530萬泰銖
+      detail: 透過APT簽署ISU-APEX合資協議，合作網通及伺服器PCB
+      event_date: '2024-10-14'
+    evidence_level: primary
+    id: kr.007660
+    name: Isu Petasys
+    ranking_basis: unranked
+    role: party
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 泰銖1,249,500仟元
+    as_of: '2025-09-09'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 認購APT現金增資普通股23,800,000股
+    details:
+    - 認購APT現金增資普通股23,800,000股
+    - 認購APT現金增資普通股20,000,000股
+    edge: e65f6267d748c
+    event_date: '2024-11-12'
+    events:
+    - amount: 泰銖800,000,000
+      detail: 認購APT現金增資普通股20,000,000股
+      event_date: '2025-09-09'
+    - amount: 泰銖1,249,500仟元
+      detail: 認購APT現金增資普通股23,800,000股
+      event_date: '2024-11-12'
+    evidence_level: primary
+    id: org.apex-circuit-thailand
+    name: Apex Circuit (Thailand) Co., Ltd.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 各式基板、銅箔及膠片等上游材料供應商，未取得足以確認台虹或尖點直接供貨的具名證…
+- 年報泛稱的中國內資PCB競爭廠商，未據此建立具名競爭關係。
 website: http://www.apex-intl.com.tw
 tax_id: '54384828'
 incorporated: '2009-10-28'
 listed: '2015-09-08'
 foreign_registration: KY 開曼群島
-as_of: '2026-10-18'
+as_of: '2026-10-28'
 confidence: ai_cross_checked
 has_research: true
 evidence:
   tw.4927#e1:
-    locator: 集團簡介第一段
+    locator: 大事紀開頭之集團業務說明
     published_date: null
     publisher: 泰鼎國際股份有限公司
     quote_check: found
-    title: 集團簡介
-    url: https://www.apex-intl.com.tw/about/apex/group
+    title: 大事紀
+    url: https://www.apex-intl.com.tw/tw/about/group-history
+  tw.4927#e10:
+    locator: 客戶群／美洲／HP Inc
+    published_date: null
+    publisher: 泰鼎國際股份有限公司
+    quote_check: not_found
+    title: 客戶群
+    url: https://www.apex-intl.com.tw/tw/about/apex/client
+  tw.4927#e11:
+    locator: 客戶群／美洲／Seagate
+    published_date: null
+    publisher: 泰鼎國際股份有限公司
+    quote_check: found
+    title: 客戶群
+    url: https://www.apex-intl.com.tw/tw/about/apex/client
+  tw.4927#e12:
+    locator: 合作夥伴／Foxconn
+    published_date: null
+    publisher: 泰鼎國際股份有限公司
+    quote_check: found
+    title: 客戶群
+    url: https://www.apex-intl.com.tw/tw/about/apex/client
+  tw.4927#e13:
+    locator: 合作夥伴／Pegatron
+    published_date: null
+    publisher: 泰鼎國際股份有限公司
+    quote_check: found
+    title: 客戶群
+    url: https://www.apex-intl.com.tw/tw/about/apex/client
+  tw.4927#e14:
+    locator: 簡報第5頁，主要終端客戶及EMS合作夥伴頁
+    published_date: '2026-08-19'
+    publisher: 泰鼎國際股份有限公司
+    quote_check: found
+    title: 2026年8月19日法人說明會簡報
+    url: https://www.apex-intl.com.tw/files/investor_conference/492720260819M001.pdf
+  tw.4927#e15:
+    locator: 新聞稿第一段
+    published_date: '2024-10-14'
+    publisher: 泰鼎國際股份有限公司
+    quote_check: found
+    title: 泰鼎與韓國網通PCB廠梨樹飛達成立合資子公司，共享產能及伺服器業務資源
+    url: https://www.apex-intl.com.tw/news/info/252
+  tw.4927#e16:
+    locator: 新聞稿出資與持股說明
+    published_date: '2024-10-14'
+    publisher: 泰鼎國際股份有限公司
+    quote_check: found
+    title: 泰鼎與韓國網通PCB廠梨樹飛達成立合資子公司，共享產能及伺服器業務資源
+    url: https://www.apex-intl.com.tw/news/info/252
+  tw.4927#e17:
+    locator: 印刷第10頁，列入合併財務報告之子公司表；投資公司為本公司
+    published_date: null
+    publisher: 泰鼎國際股份有限公司
+    quote_check: found
+    title: 114年度及113年度合併財務報告暨會計師查核報告
+    url: https://www.apex-intl.com.tw/files/quarterly_results/APEX-2025_4Q_C.pdf
+  tw.4927#e18:
+    locator: 印刷第11頁，列入合併財務報告之子公司表；投資公司為APT
+    published_date: null
+    publisher: 泰鼎國際股份有限公司
+    quote_check: found
+    title: 114年度及113年度合併財務報告暨會計師查核報告
+    url: https://www.apex-intl.com.tw/files/quarterly_results/APEX-2025_4Q_C.pdf
+  tw.4927#e19:
+    locator: 公告第3項交易數量、價格及金額；第28項說明由本公司全數認購
+    published_date: '2024-11-12'
+    publisher: 公開資訊觀測站重大訊息／鉅亨網
+    quote_check: unreachable
+    title: 泰鼎-KY：補充公告本公司董事會決議增資重要子公司Apex Circuit(Thai1and) Co., Ltd.
+    url: https://news.cnyes.com/news/id/5777180
   tw.4927#e2:
-    locator: 印刷頁57，伍、營運概況／主要營業項目及營業比重；數字依序為2024年金額、比重及2025年金額、比重
+    locator: 印刷第57頁，業務範圍及產品營收比重表；右欄為114年度
     published_date: null
     publisher: 泰鼎國際股份有限公司
     quote_check: found
     title: 114年度年報
-    url: https://www.apex-intl.com.tw/files/investor/2025_4927_20260429F04_20260417_183402.pdf
+    url: https://www.apex-intl.com.tw/files/shareholders_meeting/2025_4927_20260429F04_20260413_160733.pdf
+  tw.4927#e20:
+    locator: 公告第5項交易數量、價格及金額；第30項說明由本公司全數認購
+    published_date: '2025-09-09'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ
+    quote_check: found
+    title: 泰鼎-KY 補充公告：本公司董事會決議增資重要子公司Apex Circuit(Thailand) Co., Ltd.
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=d244f630-b9d3-4393-b0e5-cbb06082f765
   tw.4927#e3:
-    locator: 印刷頁10，附註四（二）合併基礎，列入合併財務報告之子公司表；投資公司為本公司
+    locator: 產品主要應用
     published_date: null
     publisher: 泰鼎國際股份有限公司
     quote_check: found
-    title: 115年及114年第二季合併財務報告暨會計師查核報告
-    url: https://www.apex-intl.com.tw/files/quarterly_results/202602_4927_AI1_20260814_182955.pdf
+    title: 產品及開發
+    url: https://www.apex-intl.com.tw/tw/products/application
   tw.4927#e4:
-    locator: 印刷頁10，附註四（二）合併基礎，列入合併財務報告之子公司表；投資公司為本公司
+    locator: 印刷第2頁，114年度完成之製程提升及改善項目
     published_date: null
     publisher: 泰鼎國際股份有限公司
     quote_check: found
-    title: 115年及114年第二季合併財務報告暨會計師查核報告
-    url: https://www.apex-intl.com.tw/files/quarterly_results/202602_4927_AI1_20260814_182955.pdf
+    title: 114年度年報
+    url: https://www.apex-intl.com.tw/files/shareholders_meeting/2025_4927_20260429F04_20260413_160733.pdf
   tw.4927#e5:
-    locator: 印刷頁10，附註四（二）合併基礎，列入合併財務報告之子公司表；投資公司為APT
+    locator: 客戶群／亞洲／SAMSUNG
     published_date: null
     publisher: 泰鼎國際股份有限公司
     quote_check: found
-    title: 115年及114年第二季合併財務報告暨會計師查核報告
-    url: https://www.apex-intl.com.tw/files/quarterly_results/202602_4927_AI1_20260814_182955.pdf
+    title: 客戶群
+    url: https://www.apex-intl.com.tw/tw/about/apex/client
+  tw.4927#e6:
+    locator: 客戶群／亞洲／Sony
+    published_date: null
+    publisher: 泰鼎國際股份有限公司
+    quote_check: not_found
+    title: 客戶群
+    url: https://www.apex-intl.com.tw/tw/about/apex/client
+  tw.4927#e7:
+    locator: 客戶群／亞洲／Canon
+    published_date: null
+    publisher: 泰鼎國際股份有限公司
+    quote_check: not_found
+    title: 客戶群
+    url: https://www.apex-intl.com.tw/tw/about/apex/client
+  tw.4927#e8:
+    locator: 客戶群／亞洲／LG
+    published_date: null
+    publisher: 泰鼎國際股份有限公司
+    quote_check: not_found
+    title: 客戶群
+    url: https://www.apex-intl.com.tw/tw/about/apex/client
+  tw.4927#e9:
+    locator: 客戶群／美洲／Amazon
+    published_date: null
+    publisher: 泰鼎國際股份有限公司
+    quote_check: found
+    title: 客戶群
+    url: https://www.apex-intl.com.tw/tw/about/apex/client

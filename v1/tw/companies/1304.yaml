@@ -26,35 +26,64 @@ chain_stage:
   stage_name: 塑膠、纖維與加工
   tier: downstream
 primary_chain_position: downstream
-summary_short: 製造及銷售聚乙烯、EVA與CBC塑膠原料，合併營收以塑膠原料為主。
-summary_long: 台聚主要從事聚乙烯塑膠原料製造與銷售，產品包括LDPE、HDPE、LLDPE、EVA與ViviOn™環狀嵌段共聚物（CBC）。EVA用途涵蓋電線電纜、熱熔膠、鞋材發泡及太陽能電池封裝膜；CBC可用於管材、小藥瓶與預充填針筒。2024年合併營收組成為塑膠原料92%、電子材料5%、其他3%。2025年第三季合併財報將華夏、亞聚、台達化、越峯、順昶及台聚光電列入子公司，其中華夏、亞聚與台達化經由轉投資公司間接控制。
+summary_short: 製造與銷售聚乙烯、EVA及CBC塑膠原料，並透過子公司經營塑化與電子材料。
+summary_long: 台聚製造與銷售LDPE、HDPE、LLDPE及EVA等塑膠原料，2025年合併營業比重為塑膠原料91%、電子材料6%、其他3%。EVA牌號UE2828可應用於太陽能電池封裝膜；CBC品牌ViviOn™可應用於醫材，但截至2026年8月，其半導體與醫材高階應用仍處送樣及驗證階段。原料供應關係包括中油與福建古雷石化供應乙烯，以及大連化學、HELM與Sipchem供應醋酸乙烯酯。主要合併子公司包括華夏、亞聚、台達化、越峯與順昶。重大交易包括2025年林口研發中心工程採購、處分達慧全部股權，以及2026年參與中鼎私募。
 segments:
 - evidence_ids:
-  - e2
+  - e6
   id: seg_plastics
-  name: 塑膠原料
-  period: '2024'
-  revenue_share_pct: 92
+  name: 塑膠原料（合併口徑）
+  period: '2025'
+  revenue_share_pct: 91
 - evidence_ids:
-  - e2
-  id: seg_electronic_materials
-  name: 電子材料
-  period: '2024'
-  revenue_share_pct: 5
+  - e6
+  id: seg_electronics
+  name: 電子材料（合併口徑）
+  period: '2025'
+  revenue_share_pct: 6
 - evidence_ids:
-  - e2
+  - e6
   id: seg_other
-  name: 其他
-  period: '2024'
+  name: 其他（合併口徑）
+  period: '2025'
   revenue_share_pct: 3
 relations:
-  subsidiaries:
-  - as_of: '2025-12-31'
+  partners:
+  - as_of: '2026-08-25'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 間接控制並納入合併的子公司
+    detail: 石化事業合資公司
     details:
-    - 間接控制並納入合併的子公司
+    - 石化事業合資公司
+    edge: e15668def04e7
+    evidence_level: primary
+    id: org.fujian-gulei-petrochemical
+    name: 福建古雷石化有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2023-12-07'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 供應鏈低碳化轉型輔導計畫
+    details:
+    - 供應鏈低碳化轉型輔導計畫
+    edge: ef18e06a8718b
+    evidence_level: primary
+    id: tw.3680
+    name: 家登
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接控制之合併子公司
+    details:
+    - 間接控制之合併子公司
     - 最終母公司
     edge: e81108e61bb8d
     evidence_level: primary
@@ -64,12 +93,12 @@ relations:
     share_basis: null
     share_pct: null
     weight: 2
-  - as_of: '2025-12-31'
+  - as_of: '2026-03-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 間接控制並納入合併的子公司
+    detail: 間接控制之合併子公司
     details:
-    - 間接控制並納入合併的子公司
+    - 間接控制之合併子公司
     - 最終母公司
     edge: e214185972384
     evidence_level: primary
@@ -82,9 +111,9 @@ relations:
   - as_of: '2026-03-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 間接控制並納入合併的子公司
+    detail: 間接控制之合併子公司
     details:
-    - 間接控制並納入合併的子公司
+    - 間接控制之合併子公司
     - 最終母公司
     edge: ede9c6061122b
     evidence_level: primary
@@ -94,12 +123,68 @@ relations:
     share_basis: null
     share_pct: null
     weight: 2
-  - as_of: '2025-09-30'
+  - as_of: '2026-03-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 納入合併的子公司
+    detail: 2024年成立之間接碳化矽子公司
     details:
-    - 納入合併的子公司
+    - 2024年成立之間接碳化矽子公司
+    edge: e6f427d2eac6f
+    evidence_level: primary
+    id: org.acme-advanced-materials-malaysia
+    name: ACME Advanced Materials Sdn. Bhd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接投資子公司
+    details:
+    - 間接投資子公司
+    edge: ef9812681db59
+    evidence_level: primary
+    id: org.hengkai-global
+    name: 恆凱環球有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-05-09'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 歷史子公司；2025年完成清算
+    details:
+    - 歷史子公司；2025年完成清算
+    edge: e4b768d0f05b9
+    evidence_level: primary
+    id: org.jusen
+    name: 聚森股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接投資子公司
+    details:
+    - 直接投資子公司
+    edge: ecb3054fb8e53
+    evidence_level: primary
+    id: org.lien-poly-international-investment
+    name: 聯聚國際投資股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 塑膠薄膜合併子公司
+    details:
+    - 塑膠薄膜合併子公司
     edge: e56be59e648c2
     evidence_level: primary
     id: org.swanson-plastics
@@ -108,26 +193,26 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2025-09-30'
+  - as_of: '2026-03-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 納入合併的子公司
+    detail: 經恆凱間接持有的投資子公司
     details:
-    - 納入合併的子公司
-    edge: e93b1b2dded4e
+    - 經恆凱間接持有的投資子公司
+    edge: e05d8c0499288
     evidence_level: primary
-    id: org.usi-optoelectronics
-    name: 台聚光電股份有限公司
+    id: org.xuteng-investment
+    name: 旭騰投資有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2025-09-30'
+  - as_of: '2026-03-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 納入合併的子公司
+    detail: 電子材料合併子公司
     details:
-    - 納入合併的子公司
+    - 電子材料合併子公司
     edge: ed2a47f1f3933
     evidence_level: primary
     id: tw.8121
@@ -136,123 +221,291 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  suppliers:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 供應乙烯原料
+    details:
+    - 供應乙烯原料
+    edge: eb13398850c6b
+    evidence_level: primary
+    id: org.cpc-corporation-taiwan
+    name: 台灣中油
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 供應醋酸乙烯酯
+    details:
+    - 供應醋酸乙烯酯
+    edge: e6dc47ad48227
+    evidence_level: primary
+    id: org.dairen-chemical
+    name: 大連化學工業(股)公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 乙烯年度購料合約
+    details:
+    - 乙烯年度購料合約
+    edge: ed4199fdbca02
+    evidence_level: primary
+    id: org.fujian-gulei-petrochemical
+    name: 福建古雷石化有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 供應醋酸乙烯酯
+    details:
+    - 供應醋酸乙烯酯
+    edge: ef18fe6654488
+    evidence_level: primary
+    id: org.helm
+    name: HELM
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 供應醋酸乙烯酯
+    details:
+    - 供應醋酸乙烯酯
+    edge: e3554ed351b5e
+    evidence_level: primary
+    id: org.sipchem
+    name: Sipchem
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 新台幣不超過934,000仟元
+    as_of: '2025-06-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 林口創新研發中心新建工程採購
+    details:
+    - 林口創新研發中心新建工程採購
+    edge: e1db0919b7bb9
+    event_date: '2025-06-26'
+    events:
+    - amount: 新台幣不超過934,000仟元
+      detail: 林口創新研發中心新建工程採購
+      event_date: '2025-06-26'
+    evidence_level: primary
+    id: org.xuyuan-construction-engineering
+    name: 旭源營造工程股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: 2026-04
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 認購中鼎私募普通股
+    details:
+    - 認購中鼎私募普通股
+    edge: e8cda37bb20cd
+    event_date: '2026-04-14'
+    events:
+    - amount: null
+      detail: 認購中鼎私募普通股
+      event_date: '2026-04-14'
+    evidence_level: primary
+    id: tw.9933
+    name: 中鼎
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 太陽能電池封裝膜加工廠（未具名）
+- 鞋材、運動用品發泡加工廠（未具名）
+- CBC半導體與醫材高階應用之送樣及驗證客戶（未具名）
+- 達慧互聯股權處分的買方（所讀財報段落未揭露）
 website: www.usife.com.tw
 tax_id: '11917107'
 incorporated: '1965-05-26'
 listed: '1972-05-20'
-as_of: '2026-10-18'
+as_of: '2026-10-28'
 confidence: ai_cross_checked
 has_research: true
 evidence:
   tw.1304#e10:
-    locator: PDF第8頁，醫材應用
+    locator: 印刷頁192，重要契約表，HELM醋酸乙烯酯購買合約；期間114.01.01至114.12.31
     published_date: null
     publisher: 台灣聚合化學品股份有限公司
     quote_check: found
-    title: ViviOn™環狀嵌段共聚物產品型錄
-    url: https://www.usife.com.tw/USIWebFiles/Product/CBC_ViviOn_tw.pdf
+    title: 台聚114年報
+    url: https://www.usife.com/USIWebFiles/Meeting/MeetingP3_115.pdf
   tw.1304#e11:
-    locator: 第22至25頁，附註十二、子公司
-    published_date: '2025-11-10'
+    locator: 印刷頁192，重要契約表，Sipchem醋酸乙烯酯購買合約；期間114.01.01至114.12.31
+    published_date: null
     publisher: 台灣聚合化學品股份有限公司
     quote_check: found
-    title: 114及113年第3季合併財務報告
-    url: https://www.usife.com.tw/USIWebFiles/Meeting/Finance3M_114.pdf
+    title: 台聚114年報
+    url: https://www.usife.com/USIWebFiles/Meeting/MeetingP3_115.pdf
   tw.1304#e12:
-    locator: 第22頁華夏全名定義；第23頁合併子公司表之華夏公司列
-    published_date: '2025-11-10'
+    locator: 印刷頁23至26，附註十二列入合併之子公司及具重大非控制權益之子公司表；表中數字為非控制權益比例
+    published_date: null
     publisher: 台灣聚合化學品股份有限公司
     quote_check: found
-    title: 114及113年第3季合併財務報告
-    url: https://www.usife.com.tw/USIWebFiles/Meeting/Finance3M_114.pdf
+    title: 台聚115年第1季合併財務報告
+    url: https://www.usife.com/USIWebFiles/Meeting/Finance1M_115.pdf
   tw.1304#e13:
-    locator: 第22頁亞聚全名定義；第23頁合併子公司表之亞聚公司列
-    published_date: '2025-11-10'
+    locator: 印刷頁23，附註十二，順昶與越峯列入合併子公司表
+    published_date: null
     publisher: 台灣聚合化學品股份有限公司
     quote_check: found
-    title: 114及113年第3季合併財務報告
-    url: https://www.usife.com.tw/USIWebFiles/Meeting/Finance3M_114.pdf
+    title: 台聚115年第1季合併財務報告
+    url: https://www.usife.com/USIWebFiles/Meeting/Finance1M_115.pdf
   tw.1304#e14:
-    locator: 第22頁台達全名定義；第23頁合併子公司表之台達公司列
-    published_date: '2025-11-10'
+    locator: 印刷頁22聯聚持股列；頁23至24聯聚投資亞聚、台達與華夏列
+    published_date: null
     publisher: 台灣聚合化學品股份有限公司
     quote_check: found
-    title: 114及113年第3季合併財務報告
-    url: https://www.usife.com.tw/USIWebFiles/Meeting/Finance3M_114.pdf
+    title: 台聚115年第1季合併財務報告
+    url: https://www.usife.com/USIWebFiles/Meeting/Finance1M_115.pdf
   tw.1304#e15:
-    locator: 第22頁，合併子公司表之越峯公司列
-    published_date: '2025-11-10'
+    locator: 印刷頁25，列入合併子公司表，連勝、恆凱與旭騰持股鏈
+    published_date: null
     publisher: 台灣聚合化學品股份有限公司
     quote_check: found
-    title: 114及113年第3季合併財務報告
-    url: https://www.usife.com.tw/USIWebFiles/Meeting/Finance3M_114.pdf
+    title: 台聚115年第1季合併財務報告
+    url: https://www.usife.com/USIWebFiles/Meeting/Finance1M_115.pdf
   tw.1304#e16:
-    locator: 第22頁，合併子公司表之順昶公司列
-    published_date: '2025-11-10'
+    locator: 印刷頁23，列入合併子公司表，ACME (MA)投資ACME Advanced列
+    published_date: null
     publisher: 台灣聚合化學品股份有限公司
     quote_check: found
-    title: 114及113年第3季合併財務報告
-    url: https://www.usife.com.tw/USIWebFiles/Meeting/Finance3M_114.pdf
+    title: 台聚115年第1季合併財務報告
+    url: https://www.usife.com/USIWebFiles/Meeting/Finance1M_115.pdf
   tw.1304#e17:
-    locator: 第22頁，合併子公司表之台聚光電公司列
-    published_date: '2025-11-10'
+    locator: 印刷頁25，附註十二說明5
+    published_date: null
     publisher: 台灣聚合化學品股份有限公司
     quote_check: found
-    title: 114及113年第3季合併財務報告
-    url: https://www.usife.com.tw/USIWebFiles/Meeting/Finance3M_114.pdf
+    title: 台聚114年第3季合併財務報告
+    url: https://www.usife.com/USIWebFiles/Meeting/Finance3M_114.pdf
+  tw.1304#e18:
+    locator: 正文第一段
+    published_date: '2023-12-07'
+    publisher: 台灣聚合化學品股份有限公司
+    quote_check: found
+    title: 台聚簽署家登「供應鏈低碳化轉型輔導計畫」合作備忘錄
+    url: https://www.usife.com.tw/ESG/zh-tw/ESGNewsDetails.aspx?Passcode=2023120703
+  tw.1304#e19:
+    locator: 印刷頁18，附註八，中鼎私募投資
+    published_date: null
+    publisher: 台灣聚合化學品股份有限公司
+    quote_check: found
+    title: 台聚115年第1季合併財務報告
+    url: https://www.usife.com/USIWebFiles/Meeting/Finance1M_115.pdf
   tw.1304#e2:
-    locator: 第125頁，肆、營運概況－合併資訊／營業比重
-    published_date: '2025-03-31'
-    publisher: 台灣聚合化學品股份有限公司
-    quote_check: found
-    title: 台聚113年度年報
-    url: https://www.usife.com.tw/USIWebFiles/Meeting/MeetingP3_114.pdf
-  tw.1304#e3:
-    locator: 公司簡介／民國54年
+    locator: 民國54年，公司主要業務及產品段落
     published_date: null
     publisher: 台灣聚合化學品股份有限公司
     quote_check: found
-    title: 公司簡介
+    title: 關於台聚－公司簡介
     url: https://www.usife.com.tw/zh-tw/dirAbout/frmAbout1
+  tw.1304#e20:
+    locator: 記者馬琬淳報導，正文第一、二段
+    published_date: '2026-04-15'
+    publisher: 經濟日報
+    quote_check: found
+    title: 中鼎私募案、台達電成最大咖應募人 中鼎股價強鎖漲停
+    url: https://money.udn.com/money/story/5607/9442660
+  tw.1304#e21:
+    locator: 印刷頁34，附註十四，林口創新研發中心工程
+    published_date: null
+    publisher: 台灣聚合化學品股份有限公司
+    quote_check: found
+    title: 台聚115年第1季合併財務報告
+    url: https://www.usife.com/USIWebFiles/Meeting/Finance1M_115.pdf
+  tw.1304#e22:
+    locator: 印刷頁34，附註十三，達慧股權處分
+    published_date: null
+    publisher: 台灣聚合化學品股份有限公司
+    quote_check: found
+    title: 台聚115年第1季合併財務報告
+    url: https://www.usife.com/USIWebFiles/Meeting/Finance1M_115.pdf
+  tw.1304#e23:
+    locator: 印刷頁22聚森子公司歷史持股列；頁25附註十二說明3
+    published_date: null
+    publisher: 台灣聚合化學品股份有限公司
+    quote_check: found
+    title: 台聚115年第1季合併財務報告
+    url: https://www.usife.com/USIWebFiles/Meeting/Finance1M_115.pdf
+  tw.1304#e24:
+    locator: 首頁115年8月25日重大訊息，第15項
+    published_date: '2026-08-25'
+    publisher: 台灣聚合化學品股份有限公司
+    quote_check: found
+    title: 代合資公司福建古雷石化有限公司公告變更財務報表簽證會計師
+    url: https://www.usife.com.tw/
+  tw.1304#e3:
+    locator: EVA產品牌號表，第2列UE2828主要用途
+    published_date: null
+    publisher: 台灣聚合化學品股份有限公司
+    quote_check: found
+    title: 超塑烯（EVA）－乙烯醋酸乙烯酯共聚合樹脂
+    url: https://www.usife.com.tw/zh-tw/dirProduct/frmProduct2
   tw.1304#e4:
-    locator: 產品標題
+    locator: 醫材－晶透／潔淨／安全／可靠
     published_date: null
     publisher: 台灣聚合化學品股份有限公司
     quote_check: found
-    title: 百塑烯（LDPE）產品資訊
-    url: https://www.usife.com.tw/zh-tw/dirProduct/frmProduct3
-  tw.1304#e5:
-    locator: 主要用途
-    published_date: null
-    publisher: 台灣聚合化學品股份有限公司
-    quote_check: found
-    title: 超塑烯（EVA）產品資訊
-    url: https://www.usife.com.tw/zh-tw/dirProduct/frmProduct2
-  tw.1304#e6:
-    locator: EVA產品牌號表／UE2828主要用途
-    published_date: null
-    publisher: 台灣聚合化學品股份有限公司
-    quote_check: found
-    title: 超塑烯（EVA）產品資訊
-    url: https://www.usife.com.tw/zh-tw/dirProduct/frmProduct2
-  tw.1304#e7:
-    locator: 產品標題
-    published_date: null
-    publisher: 台灣聚合化學品股份有限公司
-    quote_check: found
-    title: 聯塑烯（HDPE）產品資訊
-    url: https://www.usife.com.tw/zh-tw/dirProduct/frmProduct4
-  tw.1304#e8:
-    locator: 產品標題
-    published_date: null
-    publisher: 台灣聚合化學品股份有限公司
-    quote_check: found
-    title: 線塑烯（LLDPE）產品資訊
-    url: https://www.usife.com.tw/zh-tw/dirProduct/frmProduct5
-  tw.1304#e9:
-    locator: 產品標題
-    published_date: null
-    publisher: 台灣聚合化學品股份有限公司
-    quote_check: found
-    title: ViviOn™（CBC）產品資訊
+    title: ViviOn™（CBC）－環狀嵌段共聚物
     url: https://www.usife.com.tw/zh-tw/dirProduct/frmProduct7
+  tw.1304#e5:
+    locator: 記者任君翔報導，CBC產品驗證進度段落
+    published_date: '2026-08-29'
+    publisher: 經濟日報
+    quote_check: found
+    title: 台聚集團高值化轉型 拚突圍 亞聚、台達化、華夏強攻差異化產品
+    url: https://money.udn.com/money/story/5612/9720896
+  tw.1304#e6:
+    locator: 印刷頁138，營運概況－合併資訊，營業比重表
+    published_date: null
+    publisher: 台灣聚合化學品股份有限公司
+    quote_check: found
+    title: 台聚114年報
+    url: https://www.usife.com/USIWebFiles/Meeting/MeetingP3_115.pdf
+  tw.1304#e7:
+    locator: 印刷頁143，產業上、中、下游之關聯性
+    published_date: null
+    publisher: 台灣聚合化學品股份有限公司
+    quote_check: found
+    title: 台聚114年報
+    url: https://www.usife.com/USIWebFiles/Meeting/MeetingP3_115.pdf
+  tw.1304#e8:
+    locator: 印刷頁192，重要契約表，福建古雷石化乙烯購買合約；期間114.01.01至114.12.31
+    published_date: null
+    publisher: 台灣聚合化學品股份有限公司
+    quote_check: found
+    title: 台聚114年報
+    url: https://www.usife.com/USIWebFiles/Meeting/MeetingP3_115.pdf
+  tw.1304#e9:
+    locator: 印刷頁192，重要契約表，大連化學工業醋酸乙烯酯購買合約；期間114.01.01至114.12.31
+    published_date: null
+    publisher: 台灣聚合化學品股份有限公司
+    quote_check: found
+    title: 台聚114年報
+    url: https://www.usife.com/USIWebFiles/Meeting/MeetingP3_115.pdf

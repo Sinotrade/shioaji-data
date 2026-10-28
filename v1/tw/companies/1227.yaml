@@ -17,36 +17,107 @@ industry:
   l3: food.processing
   l3_name: 食品加工
   l3_name_en: Food Processing
-primary_chain_position: midstream
-summary_short: 製造及銷售營養食品、穀物、乳製品與食用油，廚房料理食品為最大營業來源。
-summary_long: 佳格主要製造及銷售營養食品、食用油品、乳製品及飲料。依2025年年報揭露，廚房料理食品類占營業比重54%，營養食品類占37%，其他類占9%，以廚房料理食品類為最大來源。主要產品涵蓋桂格穀物食品、桂格完膳營養補充品、天地合補保健品、福樂乳製品及得意的一天食用油。集團直接子公司包括佳乳食品與德泰科技；上海佳格食品及佳格食品（中國）則列為間接持有的子公司。
+primary_chain_position: not_applicable
+summary_short: 以食用油、廚房料理及營養食品的製造銷售為主要收入來源。
+summary_long: 佳格製造及銷售營養食品、食用油、乳製品及飲料，2025年廚房料理食品類占營業比重54%，營養食品類占37%，其他類占9%。廚房料理產品包括食用油與即食料理，營養產品包括桂格完膳營養補充品。供應關係包括ARLA FOODS amba製造嬰兒奶粉，以及台糖供應蔗糖與代工肉酥。公司與味之素合作應用Amino L40，並透過子公司投資Hello Health Group、發展東南亞數位健康合作。主要食品子公司包括佳乳、上海佳格及中國與廈門佳格；另已公告大園購地、新廠委建及中國子公司的太倉倉儲建廠案。
 segments:
 - evidence_ids:
-  - e2
-  id: kitchen_food
+  - e03
+  id: kitchen
   name: 廚房料理食品類
   period: '2025'
   revenue_share_pct: 54
 - evidence_ids:
-  - e2
-  id: nutrition_food
+  - e03
+  id: nutrition
   name: 營養食品類
   period: '2025'
   revenue_share_pct: 37
 - evidence_ids:
-  - e2
+  - e03
   id: other
   name: 其他類
   period: '2025'
   revenue_share_pct: 9
 relations:
+  partners:
+  - as_of: '2026-05-07'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: Amino L40胺基酸應用與機能蛋白產品合作
+    details:
+    - Amino L40胺基酸應用與機能蛋白產品合作
+    edge: e903e6776d653
+    evidence_level: primary
+    id: jp.2802
+    name: Ajinomoto
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-10-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 東南亞數位健康與營養合作
+    details:
+    - 東南亞數位健康與營養合作
+    edge: ea50866873812
+    evidence_level: primary
+    id: org.hello_health_group
+    name: Hello Health Group
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: QUAKER及桂格商標授權
+    details:
+    - QUAKER及桂格商標授權
+    edge: ed7e2e22d14b5
+    evidence_level: primary
+    id: org.the_quaker_oats_company
+    name: 美商桂格麥片公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
+  - as_of: '2025-05-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 新加坡投資子公司
+    details:
+    - 新加坡投資子公司
+    edge: e9c72f131bd6a
+    evidence_level: primary
+    id: org.newtrin_holding
+    name: Newtrin Holding PTE. LTD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-09-24'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 新加坡子公司
+    details:
+    - 新加坡子公司
+    edge: e9d3d1b603c01
+    evidence_level: primary
+    id: org.sf_nutra
+    name: SF NUTRA PTE. LTD.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 透過Accession Limited間接持有的子公司
+    detail: 透過Accession Limited持有的食品子公司
     details:
-    - 透過Accession Limited間接持有的子公司
+    - 透過Accession Limited持有的食品子公司
     edge: ec141bbaa62d8
     evidence_level: primary
     id: org.上海佳格食品有限公司
@@ -58,9 +129,9 @@ relations:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接子公司
+    detail: 乳製品及飲料製造銷售子公司
     details:
-    - 直接子公司
+    - 乳製品及飲料製造銷售子公司
     edge: e6c6c0a4b2d69
     evidence_level: primary
     id: org.佳乳食品股份有限公司
@@ -72,9 +143,9 @@ relations:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 透過佳格投資（中國）有限公司間接持有的子公司
+    detail: 透過中國佳格投資公司持有的食品子公司
     details:
-    - 透過佳格投資（中國）有限公司間接持有的子公司
+    - 透過中國佳格投資公司持有的食品子公司
     edge: e5889260a125f
     evidence_level: primary
     id: org.佳格食品-中國-有限公司
@@ -86,9 +157,23 @@ relations:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接子公司
+    detail: 透過中國佳格投資公司持有的食品子公司
     details:
-    - 直接子公司
+    - 透過中國佳格投資公司持有的食品子公司
+    edge: ee0db53726742
+    evidence_level: primary
+    id: org.佳格食品-廈門-有限公司
+    name: 佳格食品（廈門）有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 電腦周邊及資訊產品子公司
+    details:
+    - 電腦周邊及資訊產品子公司
     edge: e8a1ad0227302
     evidence_level: primary
     id: org.德泰科技股份有限公司
@@ -97,88 +182,313 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  suppliers:
+  - as_of: '2026-10-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 桂格愛力心嬰兒配方奶粉製造
+    details:
+    - 桂格愛力心嬰兒配方奶粉製造
+    edge: ec062311d0899
+    evidence_level: primary
+    id: org.arla_foods
+    name: ARLA FOODS amba
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 蔗糖供應及得意的一天全家肉酥代工
+    details:
+    - 蔗糖供應及得意的一天全家肉酥代工
+    edge: ef23026cfde49
+    evidence_level: primary
+    id: org.taiwan_sugar
+    name: 台灣糖業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: null
+    as_of: '2025-10-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過SF NUTRA參與Pre-Series A策略投資
+    details:
+    - 透過SF NUTRA參與Pre-Series A策略投資
+    edge: e066516456c7e
+    event_date: '2025-10-28'
+    events:
+    - amount: null
+      detail: 透過SF NUTRA參與Pre-Series A策略投資
+      event_date: '2025-10-28'
+    evidence_level: primary
+    id: org.hello_health_group
+    name: Hello Health Group
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2025-08-07'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 中國子公司租地委建及設備案之契約相對人
+    details:
+    - 中國子公司租地委建及設備案之契約相對人
+    edge: e2c5596c114cc
+    event_date: '2025-08-07'
+    events:
+    - amount: null
+      detail: 中國子公司租地委建及設備案之契約相對人
+      event_date: '2025-08-07'
+    evidence_level: media
+    id: org.大福-中國-物流設備有限公司
+    name: 大福(中國)物流設備有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2025-08-07'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 中國子公司租地委建廠房案之契約相對人
+    details:
+    - 中國子公司租地委建廠房案之契約相對人
+    edge: e16750d59a2bc
+    event_date: '2025-08-07'
+    events:
+    - amount: null
+      detail: 中國子公司租地委建廠房案之契約相對人
+      event_date: '2025-08-07'
+    evidence_level: media
+    id: org.福建省恆基建設股份有限公司
+    name: 福建省恆基建設股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2024-05-09'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 投資案決議
+    details:
+    - 投資案決議
+    edge: ed1d9fdc5babb
+    event_date: '2024-05-09'
+    events:
+    - amount: null
+      detail: 投資案決議
+      event_date: '2024-05-09'
+    evidence_level: primary
+    id: org.饗城股份有限公司
+    name: 饗城股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2024-12-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 參與現金增資案決議
+    details:
+    - 參與現金增資案決議
+    edge: ec00f535fda41
+    event_date: '2024-12-26'
+    events:
+    - amount: null
+      detail: 參與現金增資案決議
+      event_date: '2024-12-26'
+    evidence_level: primary
+    id: tw.7835
+    name: 永悅健康-創
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 2025年主要供應商B公司、C公司：年報以代號揭露，未推定其身分。
+- 大園溪海段購地案之未具名賣方。
+- 2026年1月大園新廠委建公告中尚待確定的契約相對人。
+- 上海佳格內蒙古分公司土地出售案之未具名買方。
+- 國內酪農、麵粉供應廠商及其他未具名原料供應商。
 website: https://www.sfworldwide.com/
 tax_id: '22102473'
 incorporated: '1986-06-06'
 listed: '1994-04-09'
-as_of: '2026-10-15'
+as_of: '2026-10-28'
 confidence: ai_cross_checked
 has_research: true
 evidence:
-  tw.1227#e1:
-    locator: 第95頁，肆、營運概況／業務範圍
+  tw.1227#e02:
+    locator: 印刷頁95，業務範圍
     published_date: '2026-04-30'
     publisher: 佳格食品股份有限公司
     quote_check: found
-    title: 佳格食品股份有限公司一一四年度年報
+    title: 佳格食品股份有限公司114年度年報
     url: https://www.sfworldwide.com/storage/architecture/page~118/page~131/page~134/page~147/2025_Annual_Report_ch.pdf
-  tw.1227#e10:
-    locator: 第21頁，附註十四列入合併財務報告之子公司／Accession Limited列
-    published_date: '2026-08-11'
-    publisher: 佳格食品股份有限公司
-    quote_check: found
-    title: 佳格食品股份有限公司及子公司民國115及114年第2季合併財務報告
-    url: https://www.sfworldwide.com/storage/architecture/page~118/page~131/page~134/page~143/115Q2_consolidated.pdf
-  tw.1227#e11:
-    locator: 第21頁，附註十四列入合併財務報告之子公司／中國佳格投資公司列
-    published_date: '2026-08-11'
-    publisher: 佳格食品股份有限公司
-    quote_check: found
-    title: 佳格食品股份有限公司及子公司民國115及114年第2季合併財務報告
-    url: https://www.sfworldwide.com/storage/architecture/page~118/page~131/page~134/page~143/115Q2_consolidated.pdf
-  tw.1227#e2:
-    locator: 第95頁，主要產品項目及營業比重／114年度
+  tw.1227#e03:
+    locator: 印刷頁95，114年度主要產品項目及營業比重
     published_date: '2026-04-30'
     publisher: 佳格食品股份有限公司
     quote_check: found
-    title: 佳格食品股份有限公司一一四年度年報
+    title: 佳格食品股份有限公司114年度年報
     url: https://www.sfworldwide.com/storage/architecture/page~118/page~131/page~134/page~147/2025_Annual_Report_ch.pdf
-  tw.1227#e3:
-    locator: 產品特點桂格穀物／品質／高標準品管
+  tw.1227#e04:
+    locator: 產品特點即食餐桌食品
     published_date: null
-    publisher: 佳格食品股份有限公司
+    publisher: 佳格食品集團
     quote_check: found
-    title: 桂格穀物 - 佳格食品集團
-    url: https://www.sfworldwide.com/brand-introduction-175-177
-  tw.1227#e4:
-    locator: 品牌歷史
-    published_date: null
-    publisher: 佳格食品股份有限公司
-    quote_check: found
-    title: 桂格完膳 - 佳格食品集團
-    url: https://www.sfworldwide.com/brand-introduction-158
-  tw.1227#e5:
-    locator: 品牌理念
-    published_date: null
-    publisher: 佳格食品股份有限公司
-    quote_check: found
-    title: 福樂 - 佳格食品集團
-    url: https://www.sfworldwide.com/brand-introduction-156
-  tw.1227#e6:
-    locator: 產品特點食用油
-    published_date: null
-    publisher: 佳格食品股份有限公司
-    quote_check: found
-    title: 得意的一天 - 佳格食品集團
+    title: 得意的一天
     url: https://www.sfworldwide.com/brand-introduction-185
-  tw.1227#e7:
-    locator: 品牌理念
+  tw.1227#e05:
+    locator: 品牌歷史及產品特點
+    published_date: null
+    publisher: 佳格食品集團
+    quote_check: found
+    title: 桂格完膳
+    url: https://www.sfworldwide.com/brand-introduction-158
+  tw.1227#e06:
+    locator: 頁尾產品標示
     published_date: null
     publisher: 佳格食品股份有限公司
     quote_check: found
-    title: 桂格 天地合補 | 佳格食品集團
-    url: https://www.sfworldwide.com/brand-introduction-184
-  tw.1227#e8:
-    locator: 第21頁，附註十四子公司／投資公司名稱與子公司名稱欄
+    title: 桂格愛力心嬰兒配方奶粉
+    url: https://quakerbaby.sfworldwide.com/product/infant/
+  tw.1227#e07:
+    locator: 印刷頁108，主要原料之供應狀況
+    published_date: '2026-04-30'
+    publisher: 佳格食品股份有限公司
+    quote_check: found
+    title: 佳格食品股份有限公司114年度年報
+    url: https://www.sfworldwide.com/storage/architecture/page~118/page~131/page~134/page~147/2025_Annual_Report_ch.pdf
+  tw.1227#e08:
+    locator: 產品編號及名稱，第5項
+    published_date: null
+    publisher: 台灣糖業股份有限公司
+    quote_check: found
+    title: 台糖安心豚CAS優良農產品驗證證書－柳營
+    url: https://www.taisugar.com.tw/livestock/Movie_detail.aspx?n=13544&p=18&s=553
+  tw.1227#e09:
+    locator: 頁尾商標授權聲明
+    published_date: null
+    publisher: 佳格食品股份有限公司
+    quote_check: found
+    title: 桂格愛力心嬰兒配方奶粉
+    url: https://quakerbaby.sfworldwide.com/product/infant/
+  tw.1227#e10:
+    locator: 深化戰略合作
+    published_date: '2026-05-07'
+    publisher: 佳格食品集團
+    quote_check: found
+    title: 佳格聯手日本味之素結盟再升級 三款機能蛋白新品
+    url: https://www.sfworldwide.com/news-corporate-page433
+  tw.1227#e11:
+    locator: 新聞稿首段
+    published_date: '2025-10-28'
+    publisher: 佳格食品集團
+    quote_check: found
+    title: 佳格食品宣布與Hello Health Group建立戰略合作夥伴關係
+    url: https://www.sfworldwide.com/news-corporate-page394
+  tw.1227#e12:
+    locator: 第2頁，114年9月24日決議
+    published_date: null
+    publisher: 佳格食品股份有限公司
+    quote_check: found
+    title: 114年度董事會重要決議
+    url: https://www.sfworldwide.com/storage/architecture/page~118/page~131/page~135/page~190/01-114important-board-resolutions.pdf
+  tw.1227#e13:
+    locator: 第21頁，附註十四子公司表，佳乳食品列
     published_date: '2026-08-11'
     publisher: 佳格食品股份有限公司
     quote_check: found
-    title: 佳格食品股份有限公司及子公司民國115及114年第2季合併財務報告
+    title: 115年第2季合併財務報告
     url: https://www.sfworldwide.com/storage/architecture/page~118/page~131/page~134/page~143/115Q2_consolidated.pdf
-  tw.1227#e9:
-    locator: 第21頁，附註十四子公司／投資公司名稱與子公司名稱欄
+  tw.1227#e14:
+    locator: 第21頁，附註十四子公司表，上海佳格列
     published_date: '2026-08-11'
     publisher: 佳格食品股份有限公司
     quote_check: found
-    title: 佳格食品股份有限公司及子公司民國115及114年第2季合併財務報告
+    title: 115年第2季合併財務報告
     url: https://www.sfworldwide.com/storage/architecture/page~118/page~131/page~134/page~143/115Q2_consolidated.pdf
+  tw.1227#e15:
+    locator: 第21頁，附註十四子公司表，中國佳格食品列
+    published_date: '2026-08-11'
+    publisher: 佳格食品股份有限公司
+    quote_check: found
+    title: 115年第2季合併財務報告
+    url: https://www.sfworldwide.com/storage/architecture/page~118/page~131/page~134/page~143/115Q2_consolidated.pdf
+  tw.1227#e16:
+    locator: 第21頁，附註十四子公司表，廈門佳格列
+    published_date: '2026-08-11'
+    publisher: 佳格食品股份有限公司
+    quote_check: found
+    title: 115年第2季合併財務報告
+    url: https://www.sfworldwide.com/storage/architecture/page~118/page~131/page~134/page~143/115Q2_consolidated.pdf
+  tw.1227#e17:
+    locator: 第21頁，附註十四子公司表，德泰科技列
+    published_date: '2026-08-11'
+    publisher: 佳格食品股份有限公司
+    quote_check: found
+    title: 115年第2季合併財務報告
+    url: https://www.sfworldwide.com/storage/architecture/page~118/page~131/page~134/page~143/115Q2_consolidated.pdf
+  tw.1227#e18:
+    locator: 第1頁，113年5月9日決議第7項
+    published_date: null
+    publisher: 佳格食品股份有限公司
+    quote_check: found
+    title: 113年度審計委員會重要決議
+    url: https://www.sfworldwide.com/storage/architecture/page~118/page~131/page~135/page~194/01-113important-AuditCommittee-resolutions.pdf
+  tw.1227#e19:
+    locator: 第2頁，113年12月26日決議第3項
+    published_date: null
+    publisher: 佳格食品股份有限公司
+    quote_check: found
+    title: 113年度審計委員會重要決議
+    url: https://www.sfworldwide.com/storage/architecture/page~118/page~131/page~135/page~194/01-113important-AuditCommittee-resolutions.pdf
+  tw.1227#e20:
+    locator: 新聞正文
+    published_date: '2025-08-07'
+    publisher: 時報新聞／nStock
+    quote_check: found
+    title: 佳格決議購置不動產 擬斥資6.5億元擴充產能
+    url: https://www.nstock.tw/news/article_c?id=20250807-139813980000
+  tw.1227#e21:
+    locator: 轉載重大訊息，第5及第6項
+    published_date: '2026-01-15'
+    publisher: MoneyDJ理財網
+    quote_check: found
+    title: 佳格以自地委建方式興建大園廠新廠區工程案，契約總額估約13.3億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=658a8216-7206-4043-ba76-53c71adef8a3
+  tw.1227#e22:
+    locator: 轉載重大訊息，第5及第6項
+    published_date: '2025-08-08'
+    publisher: MoneyDJ理財網
+    quote_check: found
+    title: 佳格食品(中國)租地委建廠房案，補充契約相對人為福建省恆基建設等
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=035cac2d-52d8-42a6-8288-ab5a4cf045c0
+  tw.1227#e23:
+    locator: 第2頁，114年11月12日決議第9項
+    published_date: null
+    publisher: 佳格食品股份有限公司
+    quote_check: found
+    title: 114年度董事會重要決議
+    url: https://www.sfworldwide.com/storage/architecture/page~118/page~131/page~135/page~190/01-114important-board-resolutions.pdf
+  tw.1227#e24:
+    locator: 第2頁，113年12月26日決議第4項；並參照114年度董事會決議114年5月13日
+    published_date: null
+    publisher: 佳格食品股份有限公司
+    quote_check: found
+    title: 113年度審計委員會重要決議
+    url: https://www.sfworldwide.com/storage/architecture/page~118/page~131/page~135/page~194/01-113important-AuditCommittee-resolutions.pdf

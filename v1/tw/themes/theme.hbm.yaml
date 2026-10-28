@@ -21,6 +21,14 @@ stages:
   tier: downstream
   name_en: Applications
 members:
+- id: tw.1710
+  stage: equipment_materials
+  tier: upstream
+  detail: HBM應用化學品與CMP配方布局
+  as_of: '2026-09-22'
+  evidence:
+  - tw.1710#e11
+  confidence: ai_cross_checked
 - id: tw.2376
   stage: application
   tier: downstream
@@ -47,15 +55,6 @@ members:
   - tw.3035#e27
   - tw.3035#e17
   confidence: ai_cross_checked
-- id: tw.3055
-  stage: equipment_materials
-  tier: upstream
-  detail: HBM相關TSV製程檢測設備
-  as_of: '2025-12-08'
-  evidence:
-  - tw.3055#e6
-  - tw.3055#e8
-  confidence: ai_cross_checked
 - id: tw.3167
   stage: equipment_materials
   tier: upstream
@@ -64,14 +63,6 @@ members:
   evidence:
   - tw.3167#e2
   - tw.3167#e5
-  confidence: ai_cross_checked
-- id: tw.3305
-  stage: equipment_materials
-  tier: upstream
-  detail: HBM三維堆疊製程回焊爐銷售代理
-  as_of: '2025-09-10'
-  evidence:
-  - tw.3305#e7
   confidence: ai_cross_checked
 - id: tw.3443
   stage: application

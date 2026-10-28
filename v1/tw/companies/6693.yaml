@@ -47,15 +47,15 @@ segments:
   name: 其他（SoC散熱風扇驅動IC等）
   period: '2025'
   revenue_share_pct: 10.44
-main_theme: theme.ai_server
+main_theme: theme.robotics
 themes:
-- also: []
-  stage: chips
-  theme: theme.ai_server
-  tier: upstream
 - also: []
   stage: components
   theme: theme.robotics
+  tier: upstream
+- also: []
+  stage: chips
+  theme: theme.ai_server
   tier: upstream
 - also: []
   stage: devices

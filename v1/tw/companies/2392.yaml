@@ -45,16 +45,16 @@ segments:
   name: 3C產品零售
   period: '2025'
   revenue_share_pct: 13.4
-main_theme: theme.ai_server
+main_theme: theme.robotics
 themes:
-- also: []
-  stage: components
-  theme: theme.ai_server
-  tier: midstream
 - also: []
   stage: system
   theme: theme.robotics
   tier: downstream
+- also: []
+  stage: components
+  theme: theme.ai_server
+  tier: midstream
 - also: []
   stage: operation
   theme: theme.data_center

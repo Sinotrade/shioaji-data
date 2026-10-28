@@ -41,15 +41,15 @@ segments:
   name: 測試服務，以CP晶圓測試為主
   period: 2026-01
   revenue_share_pct: null
-main_theme: theme.cpo
+main_theme: theme.cowos
 themes:
-- also: []
-  stage: packaging
-  theme: theme.cpo
-  tier: midstream
 - also: []
   stage: manufacturing
   theme: theme.cowos
+  tier: midstream
+- also: []
+  stage: packaging
+  theme: theme.cpo
   tier: midstream
 relations:
   customers:

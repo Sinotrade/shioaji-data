@@ -64,6 +64,25 @@ themes:
   theme: theme.sic
   tier: midstream
 relations:
+  customers:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares:
+    - as_of: '2026-06-30'
+      basis: purchases
+      of: tw.8255
+      pct: 22
+    detail: 向子公司進貨
+    details:
+    - 向子公司進貨
+    edge: e6e8cde5ef901
+    evidence_level: primary
+    id: tw.8255
+    name: 朋程
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   parents:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
@@ -71,7 +90,7 @@ relations:
     detail: 母公司
     details:
     - 母公司
-    - 台灣茂矽；直接子公司
+    - 納入合併的子公司
     edge: ed26b0010e327
     evidence_level: primary
     id: tw.8255

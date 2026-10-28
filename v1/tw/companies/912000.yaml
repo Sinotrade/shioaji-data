@@ -33,15 +33,15 @@ segments:
   name: 物業租賃管理
   period: 2026年上半年
   revenue_share_pct: null
-main_theme: theme.5g
+main_theme: theme.robotics
 themes:
-- also: []
-  stage: devices
-  theme: theme.5g
-  tier: downstream
 - also: []
   stage: system
   theme: theme.robotics
+  tier: downstream
+- also: []
+  stage: devices
+  theme: theme.5g
   tier: downstream
 relations:
   subsidiaries:

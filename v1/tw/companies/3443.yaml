@@ -56,10 +56,6 @@ themes:
   theme: theme.ai_server
   tier: upstream
 - also: []
-  stage: packaging
-  theme: theme.cpo
-  tier: midstream
-- also: []
   stage: design
   theme: theme.cowos
   tier: downstream
@@ -67,6 +63,10 @@ themes:
   stage: application
   theme: theme.hbm
   tier: downstream
+- also: []
+  stage: packaging
+  theme: theme.cpo
+  tier: midstream
 relations:
   competitors:
   - as_of: '2026-03-23'

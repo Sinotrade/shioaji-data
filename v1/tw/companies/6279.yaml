@@ -29,18 +29,18 @@ chain_stage:
   stage_name: 材料與電子元件
   tier: upstream
 primary_chain_position: midstream
-summary_short: 製造銷售汽機車用端子、連接器及車用配電相關產品。
-summary_long: 胡連精密以汽機車用連接器及相關零組件的製造銷售為主，產品涵蓋端子與塑膠連接器。2024年連接器及新能源連接器分別占營收80.27%與19.73%。電動車產品包括高壓連接器與相關線束開發方案，應用於動力、充電及配電系統；高頻連接器則用於智慧駕駛及車載影音的訊號傳輸。另提供客製化板端連接器及車用智慧配電模組，涵蓋電路板介面與車內電力管理。集團在越南、南京、東莞及印尼設有連接器相關製造子公司。
+summary_short: 以汽機車連接器及新能源連接器製造銷售為主，並提供線束與配電模組。
+summary_long: 胡連主要製造銷售連接器，2024年連接器與新能源連接器分別占營收80.27%及19.73%。產品包括車用高頻連接器、高壓連接器、線束及智慧配電模組，應用涵蓋電動車、先進駕駛輔助與車載影音系統。公開報導列名的客戶包括比亞迪、長安、吉利、奇瑞及上汽；廣益電子則曾承接台北廠電鍍外包。集團透過越南、南京、東莞、印尼及歐洲子公司營運。2026年完成印尼子公司股權架構調整；歐洲子公司收購LA PUNTA八成股權案已簽約，公告預定2027年交割。與廣益電子的合作備忘錄已於2026年5月解除。
 segments:
 - evidence_ids:
-  - e1
-  id: seg_connector
+  - e01
+  id: s_connector
   name: 連接器
   period: '2024'
   revenue_share_pct: 80.27
 - evidence_ids:
-  - e1
-  id: seg_new_energy
+  - e02
+  id: s_nev
   name: 新能源連接器
   period: '2024'
   revenue_share_pct: 19.73
@@ -51,173 +51,461 @@ themes:
   theme: theme.ev
   tier: midstream
 relations:
-  subsidiaries:
-  - as_of: '2026-06-30'
+  customers:
+  - as_of: 2025-12
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 印尼連接器相關製造子公司
+    detail: 越南子公司取得合格供應商資格
     details:
-    - 印尼連接器相關製造子公司
-    edge: e79c4c2b6dbfb
+    - 越南子公司取得合格供應商資格
+    edge: e9b51207c7a52
     evidence_level: primary
-    id: org.pt-hulane-tech-manufacturing
-    name: PT. HULANE TECH MANUFACTURING
+    id: org.vinfast
+    name: VINFAST
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-06-30'
+  - as_of: '2025-01-24'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持有的投資控股子公司
+    detail: PCB保險盒訂單
     details:
-    - 直接持有的投資控股子公司
-    edge: ee5c4fc17cef7
+    - PCB保險盒訂單
+    edge: e3f82abba1177
+    evidence_level: media
+    id: org.上汽
+    name: 上汽
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-01-20'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 車用連接器供應關係
+    details:
+    - 車用連接器供應關係
+    edge: e4ee7976f372a
+    evidence_level: media
+    id: org.吉利汽車
+    name: 吉利汽車
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-01-20'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 車用連接器供應關係
+    details:
+    - 車用連接器供應關係
+    edge: ea791f40ebadc
+    evidence_level: media
+    id: org.奇瑞汽車
+    name: 奇瑞汽車
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-01-20'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 車用連接器供應關係
+    details:
+    - 車用連接器供應關係
+    edge: e3e788df24b49
+    evidence_level: media
+    id: org.比亞迪
+    name: 比亞迪
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-01-20'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 車用連接器供應關係
+    details:
+    - 車用連接器供應關係
+    edge: eb699f702e5b5
+    evidence_level: media
+    id: org.長安汽車
+    name: 長安汽車
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  partners:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 汽車零件貿易合資
+    details:
+    - 汽車零件貿易合資
+    edge: e0b6bd709effd
     evidence_level: primary
-    id: org.常益投資有限公司
+    id: us.LEA
+    name: 美國李爾公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 海外投資控股子公司
+    details:
+    - 海外投資控股子公司
+    edge: e054e4b5691af
+    evidence_level: primary
+    id: org.evervalue-investments
     name: 常益投資有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-06-30'
+  - as_of: '2026-10-24'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 間接持有的東莞製造子公司
+    detail: 義大利子公司
     details:
-    - 間接持有的東莞製造子公司
-    edge: eadae2527f154
+    - 義大利子公司
+    edge: e4275feed9114
     evidence_level: primary
-    id: org.東莞胡連電子科技有限公司
+    id: org.hulane-associate-europe
+    name: Hu Lane Associate Europe S.r.l.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 東莞連接器及線束製造間接子公司
+    details:
+    - 東莞連接器及線束製造間接子公司
+    edge: e32f1cf41a522
+    evidence_level: primary
+    id: org.hulane-electronic-technology-dongguan
     name: 東莞胡連電子科技有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-06-30'
+  - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 透過常益投資持有的南京製造子公司
+    detail: 南京連接器及線束製造孫公司
     details:
-    - 透過常益投資持有的南京製造子公司
-    edge: e32fa54117c9e
+    - 南京連接器及線束製造孫公司
+    edge: eb2ee38add7be
     evidence_level: primary
-    id: org.胡連電子-南京-有限公司
+    id: org.hulane-electronics-nanjing
     name: 胡連電子（南京）有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-06-30'
+  - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 越南電子接插件、端子與線束製造子公司
+    detail: 越南連接器及線束製造子公司
     details:
-    - 越南電子接插件、端子與線束製造子公司
-    edge: e887072576b35
+    - 越南連接器及線束製造子公司
+    edge: eaa53726a6da9
     evidence_level: primary
-    id: org.胡連電子-越南-責任有限公司
+    id: org.hulane-electronics-vietnam
     name: 胡連電子（越南）責任有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: '2026-01-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 印尼製造子公司
+    details:
+    - 印尼製造子公司
+    edge: ed291b2d32d5f
+    evidence_level: primary
+    id: org.hulane-tech-manufacturing-indonesia
+    name: PT. HULANE TECH MANUFACTURING
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: '2026-01-20'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 台北廠電鍍外包
+    details:
+    - 台北廠電鍍外包
+    edge: e928d870ad4c9
+    evidence_level: primary
+    id: org.廣益電子股份有限公司
+    name: 廣益電子股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: null
+    as_of: '2026-01-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 承接印尼子公司71.91%股權
+    details:
+    - 承接印尼子公司71.91%股權
+    edge: eab93359946c9
+    event_date: '2026-01-30'
+    events:
+    - amount: null
+      detail: 承接印尼子公司71.91%股權
+      event_date: '2026-01-30'
+    evidence_level: primary
+    id: org.evervalue-investments
+    name: 常益投資有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 歐元688萬元（含淨負債及營運資金112萬歐元）
+    as_of: '2026-10-24'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 歐洲子公司擬收購80%股權
+    details:
+    - 歐洲子公司擬收購80%股權
+    edge: e6be9c8fe176f
+    event_date: '2026-10-24'
+    events:
+    - amount: 歐元688萬元（含淨負債及營運資金112萬歐元）
+      detail: 歐洲子公司擬收購80%股權
+      event_date: '2026-10-24'
+    evidence_level: primary
+    id: org.la-punta
+    name: LA PUNTA S.R.L.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2025-11-11'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 擬議股權投資
+    details:
+    - 擬議股權投資
+    edge: ee275ad495d0a
+    event_date: '2025-11-11'
+    events:
+    - amount: null
+      detail: 擬議股權投資
+      event_date: '2025-11-11'
+    evidence_level: primary
+    id: org.t-g-m-s-r-l
+    name: T.G.M S.r.l
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2026-05-12'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 投資合作備忘錄解除
+    details:
+    - 投資合作備忘錄解除
+    edge: ed3b672ca2ddd
+    event_date: '2026-05-12'
+    events:
+    - amount: null
+      detail: 投資合作備忘錄解除
+      event_date: '2026-05-12'
+    evidence_level: primary
+    id: org.廣益電子股份有限公司
+    name: 廣益電子股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2024-03-12'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 擬參與現金增資
+    details:
+    - 擬參與現金增資
+    edge: e1653ed54121a
+    event_date: '2024-03-12'
+    events:
+    - amount: null
+      detail: 擬參與現金增資
+      event_date: '2024-03-12'
+    evidence_level: primary
+    id: tw.2237
+    name: 華德動能-創
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 銅材及塑膠原料供應商：未確認具名交易對象。
+- 年報所稱全球前十大連接器企業的供應鏈關係：未逐家確認交易方向及範圍。
+- 車廠品牌客戶實際下單的集團法人：來源多以品牌或集團簡稱揭露，未逕行對應上市公司…
 website: https://www.hulane.com.tw/
 tax_id: '20759430'
 incorporated: '1977-07-09'
 listed: '2003-11-26'
-as_of: '2026-10-18'
+as_of: '2026-10-28'
 confidence: ai_cross_checked
 has_research: true
 evidence:
-  tw.6279#e1:
-    locator: 第 102 頁，主要產品佔營業比重；右側為民國 113 年資料
+  tw.6279#e01:
+    locator: 印刷頁102／PDF第105頁，主要產品占營業比重；金額單位新台幣仟元
     published_date: '2025-05-26'
     publisher: 胡連精密股份有限公司
     quote_check: found
-    title: 2024 年度年報
+    title: 胡連精密股份有限公司2024年度年報
     url: https://www.hulane.com.tw/uploads/Investor/%E8%82%A1%E6%9D%B1%E6%9C%83/2025/2024%20Annual%20Report_ch.pdf
-  tw.6279#e10:
-    locator: 第 19 頁，附註十，胡連精密公司直接持有之子公司
-    published_date: null
-    publisher: 胡連精密股份有限公司
-    quote_check: found
-    title: 民國 115 年第二季合併財務報告
-    url: https://www.hulane.com.tw/admin/uploads/Investor/%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A/2026/%E8%83%A1%E9%80%A3115Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1%E9%9B%BB%E5%AD%90%E6%9B%B8.pdf
-  tw.6279#e11:
-    locator: 第 20 頁，附註十，常益投資持有之子公司
-    published_date: null
-    publisher: 胡連精密股份有限公司
-    quote_check: found
-    title: 民國 115 年第二季合併財務報告
-    url: https://www.hulane.com.tw/admin/uploads/Investor/%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A/2026/%E8%83%A1%E9%80%A3115Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1%E9%9B%BB%E5%AD%90%E6%9B%B8.pdf
-  tw.6279#e12:
-    locator: 第 11 頁子孫公司沿革及第 20 頁子公司持股表
-    published_date: null
-    publisher: 胡連精密股份有限公司
-    quote_check: found
-    title: 民國 115 年第二季合併財務報告
-    url: https://www.hulane.com.tw/admin/uploads/Investor/%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A/2026/%E8%83%A1%E9%80%A3115Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1%E9%9B%BB%E5%AD%90%E6%9B%B8.pdf
-  tw.6279#e13:
-    locator: 第 12 頁子孫公司沿革及第 19 頁子公司持股表
-    published_date: null
-    publisher: 胡連精密股份有限公司
-    quote_check: found
-    title: 民國 115 年第二季合併財務報告
-    url: https://www.hulane.com.tw/admin/uploads/Investor/%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A/2026/%E8%83%A1%E9%80%A3115Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1%E9%9B%BB%E5%AD%90%E6%9B%B8.pdf
-  tw.6279#e2:
-    locator: 第 102 頁，主要產品及服務項目
+  tw.6279#e02:
+    locator: 印刷頁102／PDF第105頁，主要產品占營業比重；2024年欄
     published_date: '2025-05-26'
     publisher: 胡連精密股份有限公司
     quote_check: found
-    title: 2024 年度年報
+    title: 胡連精密股份有限公司2024年度年報
     url: https://www.hulane.com.tw/uploads/Investor/%E8%82%A1%E6%9D%B1%E6%9C%83/2025/2024%20Annual%20Report_ch.pdf
-  tw.6279#e3:
-    locator: 第 10 頁，附註一，公司沿革
-    published_date: null
-    publisher: 胡連精密股份有限公司
-    quote_check: found
-    title: 民國 115 年第二季合併財務報告
-    url: https://www.hulane.com.tw/admin/uploads/Investor/%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A/2026/%E8%83%A1%E9%80%A3115Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1%E9%9B%BB%E5%AD%90%E6%9B%B8.pdf
-  tw.6279#e4:
-    locator: 高壓連接器
-    published_date: null
-    publisher: 胡連精密股份有限公司
-    quote_check: found
-    title: 電動車系統解決方案
-    url: https://www.hulane.com.tw/electric-vehicle-systems
-  tw.6279#e5:
-    locator: 高壓連接器線束解決方案
-    published_date: null
-    publisher: 胡連精密股份有限公司
-    quote_check: found
-    title: 電動車系統解決方案
-    url: https://www.hulane.com.tw/electric-vehicle-systems
-  tw.6279#e6:
+  tw.6279#e03:
     locator: 高頻連接器
     published_date: null
     publisher: 胡連精密股份有限公司
     quote_check: found
     title: 智能駕駛與車載影音系統
     url: https://www.hulane.com.tw/adas-infotainment
-  tw.6279#e7:
-    locator: 解決方案說明第 1 點
-    published_date: null
-    publisher: 胡連精密股份有限公司
-    quote_check: found
-    title: 客製化板端連接器
-    url: https://www.hulane.com.tw/header-customization
-  tw.6279#e8:
-    locator: 胡連提供的解決方案
+  tw.6279#e04:
+    locator: 解決方案1至3
     published_date: null
     publisher: 胡連精密股份有限公司
     quote_check: found
     title: 車用智慧配電模組
     url: https://www.hulane.com.tw/automotive-electrical-box
-  tw.6279#e9:
-    locator: 第 19 頁，附註十，列入合併財務報告之子公司
+  tw.6279#e05:
+    locator: 線束整合解決方案、高壓及高頻專用線束
     published_date: null
     publisher: 胡連精密股份有限公司
     quote_check: found
-    title: 民國 115 年第二季合併財務報告
-    url: https://www.hulane.com.tw/admin/uploads/Investor/%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A/2026/%E8%83%A1%E9%80%A3115Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1%E9%9B%BB%E5%AD%90%E6%9B%B8.pdf
+    title: 線束整合解決方案
+    url: https://www.hulane.com.tw/integrated-wiring-harness
+  tw.6279#e06:
+    locator: 新能源車解決方案、高壓連接器及高壓連接器線束
+    published_date: null
+    publisher: 胡連精密股份有限公司
+    quote_check: found
+    title: 電動車系統解決方案
+    url: https://www.hulane.com.tw/electric-vehicle-systems
+  tw.6279#e07:
+    locator: 客戶與市場段落
+    published_date: '2026-01-20'
+    publisher: 經濟日報
+    quote_check: found
+    title: 胡連與廣益電子簽訂合作備忘錄 深化上下游合作
+    url: https://money.udn.com/money/story/5612/9277844
+  tw.6279#e08:
+    locator: 董事長說明PCB保險盒訂單段落
+    published_date: '2025-01-24'
+    publisher: 中央通訊社
+    quote_check: found
+    title: 胡連：訂單滿載春節加班 今年營收挑戰百億元
+    url: https://www.cna.com.tw/news/afe/202501240239.aspx
+  tw.6279#e09:
+    locator: 廣益電子電鍍外包與轉投資段落
+    published_date: '2026-01-20'
+    publisher: 經濟日報
+    quote_check: found
+    title: 胡連與廣益電子簽訂合作備忘錄 深化上下游合作
+    url: https://money.udn.com/money/story/5612/9277844
+  tw.6279#e10:
+    locator: 重大訊息，第2及4項
+    published_date: '2026-05-12'
+    publisher: 公開資訊觀測站（MoneyDJ轉載）
+    quote_check: found
+    title: 胡連 公告本公司與廣益電子股份有限公司解除合作備忘錄
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f965ad27-d602-4917-b1fa-cbe8fb7c9e31
+  tw.6279#e11:
+    locator: 2021年
+    published_date: null
+    publisher: 胡連精密股份有限公司
+    quote_check: found
+    title: 歷史沿革
+    url: https://www.hulane.com.tw/history
+  tw.6279#e12:
+    locator: 印刷頁37，附註十一採用權益法之投資
+    published_date: null
+    publisher: 胡連精密股份有限公司
+    quote_check: found
+    title: 胡連精密股份有限公司及子公司114及113年度合併財務報告
+    url: https://www.hulane.com.tw/admin/uploads/Investor/%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A/2025/%E8%83%A1%E9%80%A3114Q4%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1%E9%9B%BB%E5%AD%90%E6%9B%B8.pdf
+  tw.6279#e13:
+    locator: 印刷頁36，附註十；胡連精密公司之子公司及持股表
+    published_date: null
+    publisher: 胡連精密股份有限公司
+    quote_check: found
+    title: 胡連精密股份有限公司及子公司114及113年度合併財務報告
+    url: https://www.hulane.com.tw/admin/uploads/Investor/%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A/2025/%E8%83%A1%E9%80%A3114Q4%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1%E9%9B%BB%E5%AD%90%E6%9B%B8.pdf
+  tw.6279#e14:
+    locator: 印刷頁36，附註十；常益投資及福茂發展之子公司
+    published_date: null
+    publisher: 胡連精密股份有限公司
+    quote_check: found
+    title: 胡連精密股份有限公司及子公司114及113年度合併財務報告
+    url: https://www.hulane.com.tw/admin/uploads/Investor/%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A/2025/%E8%83%A1%E9%80%A3114Q4%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1%E9%9B%BB%E5%AD%90%E6%9B%B8.pdf
+  tw.6279#e15:
+    locator: 公告主旨
+    published_date: '2026-10-24'
+    publisher: 公開資訊觀測站（MoneyDJ轉載）
+    quote_check: found
+    title: 胡連公告義大利子公司取得LA PUNTA S.R.L.80%股權收購案
+    url: https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=3b208c04-6241-42f9-861d-0dddf2f5980e
+  tw.6279#e16:
+    locator: 印刷頁36，附註十註2，印尼股權交易完成與合計持股
+    published_date: null
+    publisher: 胡連精密股份有限公司
+    quote_check: found
+    title: 胡連精密股份有限公司及子公司114及113年度合併財務報告
+    url: https://www.hulane.com.tw/admin/uploads/Investor/%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A/2025/%E8%83%A1%E9%80%A3114Q4%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1%E9%9B%BB%E5%AD%90%E6%9B%B8.pdf
+  tw.6279#e17:
+    locator: 第7、17及24項，交易價金、交割時程與簽約更新
+    published_date: '2026-10-24'
+    publisher: 公開資訊觀測站（MoneyDJ轉載）
+    quote_check: found
+    title: 胡連公告義大利子公司取得LA PUNTA S.R.L.80%股權收購案
+    url: https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=3b208c04-6241-42f9-861d-0dddf2f5980e
+  tw.6279#e18:
+    locator: PDF第4至5頁，2025年11月11日董事會第10案
+    published_date: null
+    publisher: 胡連精密股份有限公司
+    quote_check: found
+    title: 114年董事會及各功能委員會運作情形
+    url: https://www.hulane.com/admin/uploads/Investor/%E5%85%AC%E5%8F%B8%E6%B2%BB%E7%90%86/2025/114%E5%B9%B4%E8%91%A3%E4%BA%8B%E6%9C%83%E5%8F%8A%E5%80%8B%E5%8A%9F%E8%83%BD%E5%A7%94%E5%93%A1%E6%9C%83%E9%81%8B%E4%BD%9C%E6%83%85%E5%BD%A2.pdf
+  tw.6279#e19:
+    locator: PDF第1頁，2024年3月12日第八屆第五次董事會
+    published_date: null
+    publisher: 胡連精密股份有限公司
+    quote_check: found
+    title: 胡連精密股份有限公司113年董事會議記錄
+    url: https://product.hulane.com/Content/Upload/FA/BoardofDirector/Board%20Resolution/Board%20Resolution2024.pdf
+  tw.6279#e20:
+    locator: 2025年
+    published_date: null
+    publisher: 胡連精密股份有限公司
+    quote_check: found
+    title: 歷史沿革
+    url: https://www.hulane.com.tw/history

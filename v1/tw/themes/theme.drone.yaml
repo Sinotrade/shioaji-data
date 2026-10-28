@@ -123,12 +123,10 @@ members:
 - id: tw.2401
   stage: components
   tier: upstream
-  detail: 無人機用AI視覺運算晶片
-  as_of: '2026-10-18'
+  detail: 空拍機影像辨識與追蹤晶片
+  as_of: 2025-08
   evidence:
-  - tw.2401#e7
   - tw.2401#e12
-  - tw.2401#e13
   confidence: ai_cross_checked
 - id: tw.2413
   stage: components
@@ -351,10 +349,9 @@ members:
   stage: modules
   tier: midstream
   detail: 無人機地面控制設備
-  as_of: '2026-01-08'
+  as_of: '2023-06-29'
   evidence:
-  - tw.3416#e9
-  - tw.3416#e10
+  - tw.3416#e7
   confidence: ai_cross_checked
 - id: tw.3419
   stage: components
@@ -458,8 +455,8 @@ members:
 - id: tw.4931
   stage: components
   tier: upstream
-  detail: 無人機電池
-  as_of: '2026-10-18'
+  detail: 無人機電池模組
+  as_of: '2026-10-28'
   evidence:
   - tw.4931#e5
   confidence: ai_cross_checked
@@ -533,10 +530,12 @@ members:
 - id: tw.5309
   stage: system
   tier: downstream
-  detail: 自主無人機系列
-  as_of: '2026-10-07'
+  detail: 無人機整機製造與地面控制系統
+  as_of: '2026-03-10'
   evidence:
-  - tw.5309#e6
+  - tw.5309#e06
+  - tw.5309#e13
+  - tw.5309#e14
   confidence: ai_cross_checked
 - id: tw.5314
   stage: system
@@ -593,6 +592,22 @@ members:
   as_of: '2025-10-15'
   evidence:
   - tw.6174#e10
+  confidence: ai_cross_checked
+- id: tw.6209
+  stage: components
+  tier: upstream
+  detail: 無人機用紅外線光學鏡頭
+  as_of: '2026-10-10'
+  evidence:
+  - tw.6209#e9
+  confidence: ai_cross_checked
+- id: tw.6217
+  stage: components
+  tier: upstream
+  detail: 無人機連接器
+  as_of: '2026-09-03'
+  evidence:
+  - tw.6217#e10
   confidence: ai_cross_checked
 - id: tw.6243
   stage: system
@@ -888,4 +903,4 @@ members:
   evidence:
   - tw.9917#e15
   confidence: ai_cross_checked
-as_of: '2026-10-26'
+as_of: '2026-10-28'

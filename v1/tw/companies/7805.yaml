@@ -29,57 +29,153 @@ chain_stage:
   stage_name: 主機板與系統組裝
   tier: downstream
 primary_chain_position: midstream
-summary_short: 以 NAS 儲存設備為主要收入來源，提供網通、監控與雲端備份產品。
-summary_long: 威聯通以自研作業系統與 NAS 整機提供儲存及備份方案，2025 年營收以中小企業用 NAS 占 46.77% 為最大項目，另有企業級與家用 NAS、配件及其他收入。產品涵蓋全快閃儲存、100GbE 管理型交換器及整合錄影儲存與影像管理的 QVR 監控方案。雲端儲存服務提供 NAS 備份與還原；邊緣 AI 儲存伺服器支援選配 GPU，可執行本地模型推論與私有 RAG 搜尋。
+summary_short: 威聯通以QNAP品牌銷售NAS儲存設備、周邊及網通產品。
+summary_long: 威聯通從事網路儲存與資料處理設備的開發、製造及銷售，主要收入來自NAS。2025年商用NAS營收約29.23億元，企業級NAS約13.55億元，消費型NAS約5.65億元；周邊配件約8.98億元，其他收入約5.07億元。產品亦包括QSW交換器及QAI-h1290FX邊緣AI儲存伺服器，後者支援地端大型語言模型、RAG搜尋與AI推論。公司與ULINK共同開發硬碟壽命預測服務，並與Network Optix合作整合Nx Witness影像監控平台。
 segments:
 - evidence_ids:
-  - e_mix
+  - e02
   id: seg_smb
-  name: SMB NAS
-  period: 2025年度
-  revenue_share_pct: 46.77
+  name: 商用NAS（SMB NAS）
+  period: '2025'
+  revenue_share_pct: null
 - evidence_ids:
-  - e_mix
+  - e02
   id: seg_enterprise
-  name: Enterprise NAS
-  period: 2025年度
-  revenue_share_pct: 21.69
+  name: 企業級NAS（Enterprise NAS）
+  period: '2025'
+  revenue_share_pct: null
 - evidence_ids:
-  - e_mix
-  id: seg_accessories
-  name: Accessories
-  period: 2025年度
-  revenue_share_pct: 14.38
-- evidence_ids:
-  - e_mix
+  - e02
   id: seg_consumer
-  name: Consumer NAS
-  period: 2025年度
-  revenue_share_pct: 9.04
+  name: 消費型NAS（Consumer NAS）
+  period: '2025'
+  revenue_share_pct: null
 - evidence_ids:
-  - e_mix
+  - e02
+  id: seg_accessories
+  name: 周邊配件（Accessories）
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e02
   id: seg_other
   name: 其他
-  period: 2025年度
-  revenue_share_pct: 8.12
+  period: '2025'
+  revenue_share_pct: null
 main_theme: theme.ai_server
 themes:
 - also: []
   stage: assembly
   theme: theme.ai_server
   tier: downstream
-- also: []
-  stage: it
-  theme: theme.data_center
-  tier: midstream
 relations:
+  customers:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 關係人商品銷售，財報未細分品項
+    details:
+    - 關係人商品銷售，財報未細分品項
+    edge: e98d3cdb1e678
+    evidence_level: primary
+    id: org.ieiworld-shanghai
+    name: 芯發威達電子(上海)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 關係人進貨，未細分商品內容
+    details:
+    - 關係人進貨，未細分商品內容
+    edge: e8ae14c088370
+    evidence_level: primary
+    id: tw.3022
+    name: 威強電
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  partners:
+  - as_of: '2025-04-08'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: Nx Witness VMS監控影像儲存及虛擬機整合
+    details:
+    - Nx Witness VMS監控影像儲存及虛擬機整合
+    edge: e73e478d49652
+    evidence_level: primary
+    id: org.network-optix
+    name: Network Optix
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-08-07'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: DA Drive Analyzer硬碟壽命預測服務
+    details:
+    - DA Drive Analyzer硬碟壽命預測服務
+    edge: e4fdf5a6b1d01
+    evidence_level: primary
+    id: org.ulink-technology
+    name: ULINK® Technology
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 合併報表子公司
+    detail: 日本不動產投資子公司
     details:
-    - 合併報表子公司
+    - 日本不動產投資子公司
+    edge: e9771dddc1b23
+    evidence_level: primary
+    id: org.beyond-jp
+    name: Beyond JP株式會社
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-09-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 海外不動產投資子公司
+    details:
+    - 海外不動產投資子公司
+    edge: ef49cb712461d
+    evidence_level: media
+    id: org.beyond-legend
+    name: Beyond Legend Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 澳大利亞銷售子公司
+    details:
+    - 澳大利亞銷售子公司
+    edge: eb650e691a304
+    evidence_level: primary
+    id: org.qnap-australia
+    name: QNAP Pty Ltd
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 德國銷售子公司
+    details:
+    - 德國銷售子公司
     edge: e0d78e76f1a49
     evidence_level: primary
     id: org.qnap-gmbh
@@ -91,23 +187,9 @@ relations:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 合併報表子公司
+    detail: 日本銷售子公司
     details:
-    - 合併報表子公司
-    edge: ee296d88094d4
-    evidence_level: primary
-    id: org.qnap-inc-usa
-    name: QNAP INC. (USA)
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
-  - as_of: '2026-06-30'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 合併報表子公司
-    details:
-    - 合併報表子公司
+    - 日本銷售子公司
     edge: e0908aff9fe1a
     evidence_level: primary
     id: org.qnap-japan
@@ -119,14 +201,195 @@ relations:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 合併報表子公司
+    detail: 英國銷售子公司
     details:
-    - 合併報表子公司
-    edge: ebb8c20d1f40b
+    - 英國銷售子公司
+    edge: e4fde79361bc4
     evidence_level: primary
-    id: org.qnap-uk-limited
-    name: QNAP UK LIMITED
+    id: org.qnap-uk
+    name: QNAP UK Limited
     ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 美國間接持有銷售子公司
+    details:
+    - 美國間接持有銷售子公司
+    edge: e0b7f3280e938
+    evidence_level: primary
+    id: org.qnap-usa
+    name: QNAP INC. (USA)
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 關係人商品採購，財報未細分品項
+    details:
+    - 關係人商品採購，財報未細分品項
+    edge: ee450fa2184a9
+    evidence_level: primary
+    id: org.ieiworld-shanghai
+    name: 芯發威達電子(上海)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 美金8,000,000元(約新台幣254,400,000元)
+    as_of: '2026-09-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 現金增資海外子公司
+    details:
+    - 現金增資海外子公司
+    edge: e03084627fd1b
+    event_date: '2026-09-14'
+    events:
+    - amount: 美金8,000,000元(約新台幣254,400,000元)
+      detail: 現金增資海外子公司
+      event_date: '2026-09-14'
+    evidence_level: media
+    id: org.beyond-legend
+    name: Beyond Legend Limited
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 420,000歐元(約新台幣14,973,000元)
+    as_of: '2025-09-12'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 孫公司資金貸與債權轉增資
+    details:
+    - 孫公司資金貸與債權轉增資
+    edge: ebb9a2353d985
+    event_date: '2025-09-12'
+    events:
+    - amount: 420,000歐元(約新台幣14,973,000元)
+      detail: 孫公司資金貸與債權轉增資
+      event_date: '2025-09-12'
+    evidence_level: media
+    id: org.qnap-italy
+    name: QNAP SRL.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 英鎊3,000,000元(約新台幣130,320,000元)
+    as_of: '2026-01-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 現金增資子公司
+    details:
+    - 現金增資子公司
+    edge: eaa8361fe52ed
+    event_date: '2026-01-28'
+    events:
+    - amount: 英鎊3,000,000元(約新台幣130,320,000元)
+      detail: 現金增資子公司
+      event_date: '2026-01-28'
+    evidence_level: media
+    id: org.qtown-limited
+    name: QTOWN LIMITED
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 約澳幣10,650,000元
+    as_of: '2026-10-21'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司BEYOND LEGEND LIMITED取得澳洲不動產
+    details:
+    - 子公司BEYOND LEGEND LIMITED取得澳洲不動產
+    edge: e553cd3efd056
+    event_date: '2026-10-21'
+    events:
+    - amount: 約澳幣10,650,000元
+      detail: 子公司BEYOND LEGEND LIMITED取得澳洲不動產
+      event_date: '2026-10-21'
+    evidence_level: media
+    id: org.ross-leonard-haron-atf-the-ross-haron-family-tru
+    name: Ross Leonard Haron ATF The Ross Haron Family Trust
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣3,368,619千元
+    as_of: '2024-05-08'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 分割減資及資產讓與
+    details:
+    - 分割減資及資產讓與
+    edge: e077b6caca868
+    event_date: '2024-05-08'
+    events:
+    - amount: 新台幣3,368,619千元
+      detail: 分割減資及資產讓與
+      event_date: '2024-05-08'
+    evidence_level: primary
+    id: org.sheng-feng-2024
+    name: 勝鋒股份有限公司
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣144,322,750元
+    as_of: '2026-03-05'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司Beyond JP取得日本不動產
+    details:
+    - 子公司Beyond JP取得日本不動產
+    edge: e4bb1af438293
+    event_date: '2026-03-05'
+    events:
+    - amount: 新台幣144,322,750元
+      detail: 子公司Beyond JP取得日本不動產
+      event_date: '2026-03-05'
+    evidence_level: other
+    id: org.株式会社三和製作所
+    name: 株式会社三和製作所
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣86,000,000元
+    as_of: '2026-04-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 取得丹立電子股票
+    details:
+    - 取得丹立電子股票
+    - 追加取得丹立電子股票
+    edge: e95408a8beb08
+    event_date: '2026-04-27'
+    events:
+    - amount: 新台幣74,529,000元
+      detail: 追加取得丹立電子股票
+      event_date: '2026-04-30'
+    - amount: 新台幣86,000,000元
+      detail: 取得丹立電子股票
+      event_date: '2026-04-27'
+    evidence_level: media
+    id: tw.7866
+    name: 丹立電子股份有限公司
+    ranking_basis: unranked
+    role: buyer
     share_basis: null
     share_pct: null
     weight: 1
@@ -134,84 +397,168 @@ website: https://www.qnap.com
 tax_id: '80682695'
 incorporated: '2004-03-11'
 listed: '2025-12-22'
-as_of: '2026-10-15'
+as_of: '2026-10-28'
 confidence: ai_cross_checked
 has_research: true
 evidence:
-  tw.7805#e_cloud:
-    locator: 與 QNAP 備份解決方案完美配合
+  tw.7805#e02:
+    locator: 印刷第42頁，附註六(十九)收入之細分；單位新台幣千元，114年度為左欄
     published_date: null
-    publisher: 威聯通科技股份有限公司
+    publisher: 威聯通科技
     quote_check: found
-    title: myQNAPcloud Storage
-    url: https://www.qnap.com/zh-tw/software/myqnapcloud-storage
-  tw.7805#e_edge_ai:
-    locator: 特色，產品介紹首段
+    title: 114年度及113年度合併財務報告
+    url: https://files.qnap.com/invenstor/2026/qnap-consolidated-114s4.pdf
+  tw.7805#e03:
+    locator: 新聞稿首段
+    published_date: '2026-04-29'
+    publisher: 威聯通科技
+    quote_check: unreachable
+    title: QNAP推出Edge AI儲存伺服器QAI-h1290FX
+    url: https://www.qnap.com/zh-hk/news/2026/qnap-強勢推出-edge-ai-儲存伺服器-qai-h1290fx加速地端部署私有-llmrag-搜尋與-ai-推論
+  tw.7805#e04:
+    locator: PDF第3頁，公司與品牌介紹
     published_date: null
-    publisher: 威聯通科技股份有限公司
+    publisher: 威聯通科技
     quote_check: found
-    title: QAI-h1290FX
-    url: https://www.qnap.com/zh-tw/product/qai-h1290fx
-  tw.7805#e_flash:
-    locator: 產品方案標題
+    title: QNAP地端AI解決方案投資人簡報
+    url: https://files.qnap.com/invenstor/2026/20260527_cht_investor-conference.pdf
+  tw.7805#e05:
+    locator: 新聞稿首段
+    published_date: '2025-04-08'
+    publisher: 威聯通科技
+    quote_check: unreachable
+    title: QNAP成為Network Optix官方合作夥伴
+    url: https://www.qnap.com/zh-hk/news/2025/qnap-成為-network-optix-官方合作夥伴攜手提供完美整合-nx-witness-的監控影像儲存解決方案
+  tw.7805#e06:
+    locator: 新聞稿首段
+    published_date: '2025-08-07'
+    publisher: 威聯通科技
+    quote_check: unreachable
+    title: QNAP與ULINK攜手升級DA Drive Analyzer
+    url: https://www.qnap.com/zh-tw/news/2025/qnap-與-ulink-攜手升級da-drive-analyzer全新-ai-演算法大幅進化硬碟健康預判準確率
+  tw.7805#e07:
+    locator: 印刷第53頁，七(二)2進貨；114年度左欄，單位新台幣千元
     published_date: null
-    publisher: 威聯通科技股份有限公司
+    publisher: 威聯通科技
     quote_check: found
-    title: QNAP 全快閃儲存解決方案
-    url: https://www.qnap.com/zh-tw/solution/all-flash
-  tw.7805#e_mix:
-    locator: 內文第68頁，114年度營業比重表
+    title: 114年度及113年度合併財務報告
+    url: https://files.qnap.com/invenstor/2026/qnap-consolidated-114s4.pdf
+  tw.7805#e08:
+    locator: 印刷第53頁，七(二)1營業收入；114年度左欄，單位新台幣千元
     published_date: null
-    publisher: 威聯通科技股份有限公司
+    publisher: 威聯通科技
     quote_check: found
-    title: 114年度公司年報
-    url: https://files.qnap.com/invenstor/2026/qnap-annual-report-114.pdf
-  tw.7805#e_nas:
-    locator: 內文第68頁，業務範圍
+    title: 114年度及113年度合併財務報告
+    url: https://files.qnap.com/invenstor/2026/qnap-consolidated-114s4.pdf
+  tw.7805#e09:
+    locator: 印刷第41、43頁，子公司交易及轉投資事業表
     published_date: null
-    publisher: 威聯通科技股份有限公司
-    quote_check: found
-    title: 114年度公司年報
-    url: https://files.qnap.com/invenstor/2026/qnap-annual-report-114.pdf
-  tw.7805#e_qvr:
-    locator: 用 QVR 監控方案打造 AI 影像監控系統
-    published_date: null
-    publisher: 威聯通科技股份有限公司
-    quote_check: found
-    title: QNAP 智慧影像安全監控
-    url: https://www.qnap.com/zh-tw/solution/qvr-video-surveillance
-  tw.7805#e_sub_de:
-    locator: 內文第41頁，與關係人進銷貨表，威聯通科技股份有限公司項下
-    published_date: '2026-08-07'
-    publisher: 威聯通科技股份有限公司
+    publisher: 威聯通科技
     quote_check: found
     title: 115年第二季合併財務報告
     url: https://files.qnap.com/invenstor/2026/qnap-consolidated-115s2-bJZRP8K1FH66yjAB59AL.pdf
-  tw.7805#e_sub_jp:
-    locator: 內文第41頁，與關係人進銷貨表，威聯通科技股份有限公司項下
-    published_date: '2026-08-07'
-    publisher: 威聯通科技股份有限公司
-    quote_check: found
-    title: 115年第二季合併財務報告
-    url: https://files.qnap.com/invenstor/2026/qnap-consolidated-115s2-bJZRP8K1FH66yjAB59AL.pdf
-  tw.7805#e_sub_uk:
-    locator: 內文第10頁，列入合併財務報告之子公司
-    published_date: '2026-08-07'
-    publisher: 威聯通科技股份有限公司
-    quote_check: found
-    title: 115年第二季合併財務報告
-    url: https://files.qnap.com/invenstor/2026/qnap-consolidated-115s2-bJZRP8K1FH66yjAB59AL.pdf
-  tw.7805#e_sub_us:
-    locator: 內文第41頁，與關係人進銷貨表，威聯通科技股份有限公司項下
-    published_date: '2026-08-07'
-    publisher: 威聯通科技股份有限公司
-    quote_check: found
-    title: 115年第二季合併財務報告
-    url: https://files.qnap.com/invenstor/2026/qnap-consolidated-115s2-bJZRP8K1FH66yjAB59AL.pdf
-  tw.7805#e_switch:
-    locator: 特色，產品介紹首段
+  tw.7805#e10:
+    locator: 印刷第10、41、43頁，合併範圍及轉投資事業表
     published_date: null
-    publisher: 威聯通科技股份有限公司
+    publisher: 威聯通科技
     quote_check: found
-    title: QSW-M7308R-4X
-    url: https://www.qnap.com/zh-tw/product/qsw-m7308r-4x
+    title: 115年第二季合併財務報告
+    url: https://files.qnap.com/invenstor/2026/qnap-consolidated-115s2-bJZRP8K1FH66yjAB59AL.pdf
+  tw.7805#e11:
+    locator: 印刷第41、42頁，子公司交易及轉投資事業表
+    published_date: null
+    publisher: 威聯通科技
+    quote_check: found
+    title: 115年第二季合併財務報告
+    url: https://files.qnap.com/invenstor/2026/qnap-consolidated-115s2-bJZRP8K1FH66yjAB59AL.pdf
+  tw.7805#e12:
+    locator: 印刷第43頁，轉投資事業表
+    published_date: null
+    publisher: 威聯通科技
+    quote_check: found
+    title: 115年第二季合併財務報告
+    url: https://files.qnap.com/invenstor/2026/qnap-consolidated-115s2-bJZRP8K1FH66yjAB59AL.pdf
+  tw.7805#e13:
+    locator: 印刷第10頁，列入合併財報之子公司
+    published_date: null
+    publisher: 威聯通科技
+    quote_check: found
+    title: 115年第二季合併財務報告
+    url: https://files.qnap.com/invenstor/2026/qnap-consolidated-115s2-bJZRP8K1FH66yjAB59AL.pdf
+  tw.7805#e14:
+    locator: 印刷第43頁，轉投資事業表
+    published_date: null
+    publisher: 威聯通科技
+    quote_check: found
+    title: 115年第二季合併財務報告
+    url: https://files.qnap.com/invenstor/2026/qnap-consolidated-115s2-bJZRP8K1FH66yjAB59AL.pdf
+  tw.7805#e15:
+    locator: 印刷第57頁，分割減資相關資訊
+    published_date: null
+    publisher: 威聯通科技
+    quote_check: found
+    title: 114年度及113年度合併財務報告
+    url: https://files.qnap.com/invenstor/2026/qnap-consolidated-114s4.pdf
+  tw.7805#e16:
+    locator: 印刷第39頁，分割資產明細；單位新台幣千元
+    published_date: null
+    publisher: 威聯通科技
+    quote_check: found
+    title: 114年度及113年度合併財務報告
+    url: https://files.qnap.com/invenstor/2026/qnap-consolidated-114s4.pdf
+  tw.7805#e17:
+    locator: 重大訊息全文第1、5項
+    published_date: '2025-09-12'
+    publisher: MoneyDJ理財網
+    quote_check: found
+    title: 威聯通董事會決議對孫公司QNAP SRL.債權全數轉增資
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=8f9dc620-ae62-489a-8295-cb91f9a1d16f
+  tw.7805#e18:
+    locator: 重大訊息全文第1至6項
+    published_date: '2026-01-28'
+    publisher: MoneyDJ理財網
+    quote_check: found
+    title: 威聯通董事會決議現金增資子公司QTOWN LIMITED
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=02bd8c8b-314b-4ee0-af41-7c9aff6c0082
+  tw.7805#e19:
+    locator: 轉載重大訊息第4至6項
+    published_date: '2026-03-06'
+    publisher: 第一商業銀行市場新聞
+    quote_check: found
+    title: 威聯通子公司取得日本船橋市不動產
+    url: https://wealth.firstbank.com.tw/investment-tips/trend-insight/news/news-detail?id=%7B9BAE1F5C-CCE0-485F-A9A4-C108B6DAF7EC%7D
+  tw.7805#e20:
+    locator: 重大訊息全文第1至5項
+    published_date: '2026-04-27'
+    publisher: MoneyDJ理財網
+    quote_check: found
+    title: 威聯通公告取得丹立電子有價證券
+    url: https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=99f71c0b-4adf-453f-b163-45728d30aef3
+  tw.7805#e21:
+    locator: 重大訊息全文第1至5項
+    published_date: '2026-09-14'
+    publisher: MoneyDJ理財網
+    quote_check: found
+    title: 威聯通董事會決議現金增資子公司Beyond Legend Limited
+    url: https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=ec09988c-af45-48bf-940c-2006df6f7161
+  tw.7805#e22:
+    locator: 轉載重大訊息第5、6項
+    published_date: '2026-10-21'
+    publisher: 台視財經
+    quote_check: found
+    title: 威聯通子公司取得澳洲Wetherill Park不動產，計約1065萬澳幣
+    url: https://www.ttv.com.tw/finance/view/10202621181104918463054D405C9C2E0225BA75BEE6AF5A/588
+  tw.7805#e23:
+    locator: 印刷第43頁，十四、部門資訊
+    published_date: null
+    publisher: 威聯通科技
+    quote_check: found
+    title: 115年第二季合併財務報告
+    url: https://files.qnap.com/invenstor/2026/qnap-consolidated-115s2-bJZRP8K1FH66yjAB59AL.pdf
+  tw.7805#e24:
+    locator: 重大訊息全文第1至5項
+    published_date: '2026-04-30'
+    publisher: MoneyDJ理財網
+    quote_check: found
+    title: 威聯通公告追加取得丹立電子有價證券
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=01306566-35c4-4145-b2e1-bde7fd2438d6

@@ -288,10 +288,11 @@ members:
 - id: tw.6245
   stage: system
   tier: downstream
-  detail: 採用NVIDIA MGX架構的ECA-6051系統
-  as_of: 2026-06
+  detail: 採用NVIDIA GPU的認證系統平台
+  as_of: '2026-10-04'
   evidence:
-  - tw.6245#e5
+  - tw.6245#e07
+  - tw.6245#e08
   confidence: ai_cross_checked
 - id: tw.6290
   stage: components
@@ -333,15 +334,6 @@ members:
   evidence:
   - tw.6862#e5
   confidence: ai_cross_checked
-- id: tw.6933
-  stage: system
-  tier: downstream
-  detail: 搭載NVIDIA Blackwell GPU的液冷機櫃
-  as_of: '2025-11-05'
-  evidence:
-  - tw.6933#e7
-  - tw.6933#e8
-  confidence: ai_cross_checked
 - id: tw.7711
   stage: system
   tier: downstream
@@ -350,6 +342,14 @@ members:
   evidence:
   - tw.7711#e15
   - tw.7711#e16
+  confidence: ai_cross_checked
+- id: tw.8042
+  stage: components
+  tier: midstream
+  detail: 透過ODM及電池廠切入GB300電容供應鏈
+  as_of: '2026-06-15'
+  evidence:
+  - tw.8042#e5
   confidence: ai_cross_checked
 - id: tw.8210
   stage: components

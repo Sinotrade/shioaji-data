@@ -41,17 +41,17 @@ segments:
   name: 其他
   period: '2025'
   revenue_share_pct: 0.24
-main_theme: theme.ai_server
+main_theme: theme.robotics
 themes:
-- also: []
-  stage: chips
-  theme: theme.ai_server
-  tier: upstream
 - also:
   - stage: control
     tier: midstream
   stage: components
   theme: theme.robotics
+  tier: upstream
+- also: []
+  stage: chips
+  theme: theme.ai_server
   tier: upstream
 - also: []
   stage: it

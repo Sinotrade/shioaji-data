@@ -29,26 +29,74 @@ chain_stage:
   stage_name: 模組與零組件
   tier: midstream
 primary_chain_position: midstream
-summary_short: 主要從事光收發模組與光電元件的研發、製造及銷售。
-summary_long: 眾達-KY以光收發模組及光電元件的研發、製造與銷售為主要業務，產品包括光收發模組、光纖通道模組、TO-Can光接收器及OSA光學次模組零件。年報列示400G QSFP-DD光收發模組為資料中心用途的OEM產品，也揭露10G SFP+光收發模組的ODM開發成果。公司另投入CPO外部雷射光源與可插拔外接雷射光源研發，1.6T CPO Remote Laser Module列為開發中產品。集團透過蘇州及檳城孫公司從事光收發模組等光電器件的研發、生產與銷售。
+summary_short: 以光收發模組、光學次模組及雷射光源封裝的設計與製造服務為主要業務。
+summary_long: 眾達-KY主要從事光收發模組及光學次模組的設計與製造，從OEM／ODM發展出Optical Foundry服務模式，涵蓋設計、生產與供應鏈管理。公司與博通合作開發CPO，供應雷射光學封裝，並投入外部雷射光源與ELSFP相關研發；年報另列1.6T CPO遠端雷射模組仍在開發。集團包含蘇州及馬來西亞檳城的製造孫公司。2026年董事會通過由子孫公司取得品固等四家公司股權，7月起納入品固集團營收；另由檳城孫公司決議購置廠房，並由Trading子公司決議參與檳城孫公司增資。
+segments:
+- evidence_ids:
+  - e1
+  - e2
+  id: optical
+  name: 光收發模組、光學次模組及相關製造服務
+  period: '2025'
+  revenue_share_pct: null
+- evidence_ids:
+  - e3
+  - e4
+  - e5
+  id: cpo
+  name: CPO雷射光學封裝與外部雷射光源
+  period: 2026-05
+  revenue_share_pct: null
 main_theme: theme.data_center
 themes:
 - also: []
   stage: it
   theme: theme.data_center
   tier: midstream
-- also: []
+- also:
+  - stage: packaging
+    tier: midstream
   stage: components
   theme: theme.cpo
   tier: upstream
 relations:
+  customers:
+  - as_of: '2025-09-08'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 高階光通訊產品與CPO雷射光學封裝
+    details:
+    - 高階光通訊產品與CPO雷射光學封裝
+    edge: e7dfb45f3b34e
+    evidence_level: media
+    id: us.AVGO
+    name: Broadcom
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  partners:
+  - as_of: '2025-09-08'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: CPO產品共同開發
+    details:
+    - CPO產品共同開發
+    edge: e800d4e8579c1
+    evidence_level: media
+    id: us.AVGO
+    name: Broadcom
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
   - as_of: '2026-04-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接子公司
+    detail: 子公司
     details:
-    - 直接子公司
+    - 子公司
     edge: e8a846fde856f
     evidence_level: primary
     id: org.pcl-bvi
@@ -57,12 +105,12 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-04-30'
+  - as_of: '2026-04-14'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 間接子公司；檳城孫公司
+    detail: 檳城孫公司
     details:
-    - 間接子公司；檳城孫公司
+    - 檳城孫公司
     edge: e9a8aab3c88a5
     evidence_level: primary
     id: org.pcl-international-technologies-penang
@@ -71,29 +119,15 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-04-30'
+  - as_of: '2026-05-08'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 間接子公司；蘇州孫公司
+    detail: 全資子公司
     details:
-    - 間接子公司；蘇州孫公司
-    edge: e583161504bf1
+    - 全資子公司
+    edge: ee21224abcefe
     evidence_level: primary
-    id: org.pcl-technologies-suzhou
-    name: 眾達光通科技(蘇州)有限公司
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
-  - as_of: '2026-04-30'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 直接子公司
-    details:
-    - 直接子公司
-    edge: eadcbe31b2aad
-    evidence_level: primary
-    id: org.pcl-technologies-taiwan
+    id: org.pcl-optoelectronics
     name: 眾達光電股份有限公司
     ranking_basis: unranked
     share_basis: null
@@ -102,9 +136,23 @@ relations:
   - as_of: '2026-04-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接子公司
+    detail: 蘇州製造孫公司
     details:
-    - 直接子公司
+    - 蘇州製造孫公司
+    edge: e5d081e7fba3a
+    evidence_level: primary
+    id: org.pcl-optronics-suzhou
+    name: 眾達光通科技(蘇州)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-08'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司
+    details:
+    - 子公司
     edge: e59b36e0c5e0d
     evidence_level: primary
     id: org.pcl-technologies-trading
@@ -113,99 +161,264 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: '2026-05-08'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資孫公司
+    details:
+    - 全資孫公司
+    edge: e90d089d391e6
+    evidence_level: primary
+    id: org.pinnaclite-technologies
+    name: Pinnaclite Technologies, Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 美金27,380,000元等值馬幣
+    as_of: '2026-10-08'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: Trading子公司參與檳城孫公司現金增資
+    details:
+    - Trading子公司參與檳城孫公司現金增資
+    edge: e0967503487ab
+    event_date: '2026-10-08'
+    events:
+    - amount: 美金27,380,000元等值馬幣
+      detail: Trading子公司參與檳城孫公司現金增資
+      event_date: '2026-10-08'
+    evidence_level: primary
+    id: org.pcl-international-technologies-penang
+    name: PCL INTERNATIONAL TECHNOLOGIES (PENANG) SDN. BHD.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2026-05-08'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 孫公司收購100%股權
+    details:
+    - 孫公司收購100%股權
+    edge: e2fd7e3554ad9
+    event_date: '2026-05-08'
+    events:
+    - amount: null
+      detail: 孫公司收購100%股權
+      event_date: '2026-05-08'
+    evidence_level: primary
+    id: org.pingood-electronics-dongguan
+    name: 品基電子(東莞)有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 企業價值約新台幣28.3億
+    as_of: '2026-08-10'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司收購品固企業100%股權
+    details:
+    - 子公司收購品固企業100%股權
+    edge: e7983f4737134
+    event_date: '2026-05-08'
+    events:
+    - amount: 企業價值約新台幣28.3億
+      detail: 子公司收購品固企業100%股權
+      event_date: '2026-05-08'
+    evidence_level: primary
+    id: org.pingood-enterprise
+    name: 品固企業股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2026-05-08'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子孫公司共同收購100%股權
+    details:
+    - 子孫公司共同收購100%股權
+    edge: ee0fb3fd5925b
+    event_date: '2026-05-08'
+    events:
+    - amount: null
+      detail: 子孫公司共同收購100%股權
+      event_date: '2026-05-08'
+    evidence_level: primary
+    id: org.pingood-thailand
+    name: Pingood (Thailand) Co.,Ltd.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2026-05-08'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 孫公司收購100%股權
+    details:
+    - 孫公司收購100%股權
+    edge: ec25e33598b02
+    event_date: '2026-05-08'
+    events:
+    - amount: null
+      detail: 孫公司收購100%股權
+      event_date: '2026-05-08'
+    evidence_level: primary
+    id: org.suzhou-pingood-electronic-technology
+    name: 蘇州品基電子科技有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
 unresolved_mentions:
-- 交換器chip-set龍頭廠商
-- 北美網通解決方案全球領導廠商
+- 年報以S-00A、S-00C、S-00D等代號揭露的客戶，未對應至具名公司。
+- 年報以S-00A、S-00D、S-00E等代號揭露的供應商，未對應至具名公司。
+- 交換器chip-set龍頭廠商：年報未具名。
+- 北美網通解決方案全球領導廠商：年報未具名。
+- 美商半導體公司：年報未具名。
 website: www.pcltech.com
 tax_id: '31922986'
 incorporated: '2007-10-16'
 listed: '2013-11-20'
 foreign_registration: KY 開曼群島
-as_of: '2026-10-18'
+as_of: '2026-10-28'
 confidence: ai_cross_checked
 has_research: true
 evidence:
+  tw.4977#e1:
+    locator: 第37頁，業務範圍與商品項目
+    published_date: '2026-05-20'
+    publisher: 眾達科技股份有限公司
+    quote_check: found
+    title: 眾達科技股份有限公司2025年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52455/2026/RNS/52455_rns_2026-05-19_edbceb39-efe0-44c3-afab-1cf6fcb44294.pdf
   tw.4977#e10:
-    locator: 第63頁關係企業資料；蘇州公司列之關係欄
-    published_date: '2026-08-04'
-    publisher: 眾達科技股份有限公司
-    quote_check: unreachable
-    title: 一一四年度年報修訂版
-    url: https://financialfilings.com/filings/pcl-4977/annual-report/2026/49925076/
+    locator: 公告第1項第1款
+    published_date: '2026-05-08'
+    publisher: 公開資訊觀測站重大訊息，台視財經轉載
+    quote_check: found
+    title: 眾達-KY董事會通過取得品固企業、品基電子(東莞)等4家公司100%股權，企業價值約28.3億
+    url: https://www.ttv.com.tw/finance/view/052026081710642DAEED91A64B7D84D21E574C45FF8C2BF2/587
   tw.4977#e11:
-    locator: 第63頁關係企業資料；檳城公司列之關係欄
-    published_date: '2026-08-04'
-    publisher: 眾達科技股份有限公司
-    quote_check: unreachable
-    title: 一一四年度年報修訂版
-    url: https://financialfilings.com/filings/pcl-4977/annual-report/2026/49925076/
+    locator: 公告第1項第2款
+    published_date: '2026-05-08'
+    publisher: 公開資訊觀測站重大訊息，台視財經轉載
+    quote_check: found
+    title: 眾達-KY取得品固相關公司股權公告
+    url: https://www.ttv.com.tw/finance/view/052026081710642DAEED91A64B7D84D21E574C45FF8C2BF2/587
   tw.4977#e12:
-    locator: 第62頁關係企業基本資料；蘇州公司營業項目
-    published_date: '2026-08-04'
-    publisher: 眾達科技股份有限公司
-    quote_check: unreachable
-    title: 一一四年度年報修訂版
-    url: https://financialfilings.com/filings/pcl-4977/annual-report/2026/49925076/
+    locator: 公告第1項第3款
+    published_date: '2026-05-08'
+    publisher: 公開資訊觀測站重大訊息，台視財經轉載
+    quote_check: found
+    title: 眾達-KY取得品固相關公司股權公告
+    url: https://www.ttv.com.tw/finance/view/052026081710642DAEED91A64B7D84D21E574C45FF8C2BF2/587
   tw.4977#e13:
-    locator: 第62頁關係企業基本資料；檳城公司營業項目
-    published_date: '2026-08-04'
-    publisher: 眾達科技股份有限公司
-    quote_check: unreachable
-    title: 一一四年度年報修訂版
-    url: https://financialfilings.com/filings/pcl-4977/annual-report/2026/49925076/
+    locator: 公告第5項，交易總金額
+    published_date: '2026-05-08'
+    publisher: 公開資訊觀測站重大訊息，台視財經轉載
+    quote_check: found
+    title: 眾達-KY取得品固相關公司股權公告
+    url: https://www.ttv.com.tw/finance/view/052026081710642DAEED91A64B7D84D21E574C45FF8C2BF2/587
+  tw.4977#e14:
+    locator: 月營收資料備註
+    published_date: '2026-08-10'
+    publisher: MoneyDJ，富邦證券轉載
+    quote_check: found
+    title: 眾達-KY115年7月營收公告
+    url: https://ebroker-dj.fbs.com.tw/z/zf/zfz/zfz_DC8D4320-9004-4B6D-BA01-4373D3CEF9ED.djhtm
+  tw.4977#e15:
+    locator: 公告第5項，交易數量
+    published_date: '2026-05-08'
+    publisher: 公開資訊觀測站重大訊息，台視財經轉載
+    quote_check: found
+    title: 眾達-KY取得品固相關公司股權公告
+    url: https://www.ttv.com.tw/finance/view/052026081710642DAEED91A64B7D84D21E574C45FF8C2BF2/587
+  tw.4977#e16:
+    locator: 公告主旨
+    published_date: '2026-04-14'
+    publisher: 公開資訊觀測站重大訊息，台視財經轉載
+    quote_check: not_found
+    title: 眾達-KY孫公司董事會決議購買馬來西亞廠房案，計6858萬馬幣
+    url: https://www.ttv.com.tw/finance/view/042026141725B0F342BDE2F54282B3E8AE6F9309AA0F0536/587
+  tw.4977#e18:
+    locator: 公告第12項，決策單位
+    published_date: '2026-10-08'
+    publisher: 公開資訊觀測站重大訊息，MoneyDJ轉載
+    quote_check: found
+    title: 眾達-KY子公司擬增資PCL INTERNATIONAL TECHNOLOGIES(PENANG)，計2738萬美元
+    url: https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=1813389b-6e96-49fa-8262-82a65ace7a88
+  tw.4977#e19:
+    locator: 公告第5、17項，金額及用途
+    published_date: '2026-10-08'
+    publisher: 公開資訊觀測站重大訊息，MoneyDJ轉載
+    quote_check: found
+    title: 眾達-KY子公司增資檳城孫公司公告
+    url: https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=1813389b-6e96-49fa-8262-82a65ace7a88
   tw.4977#e2:
-    locator: 第3頁集團簡介；第37頁業務範圍
-    published_date: '2026-08-04'
+    locator: 第41頁，產業上下游與商業模式
+    published_date: '2026-05-20'
     publisher: 眾達科技股份有限公司
-    quote_check: unreachable
-    title: 一一四年度年報修訂版
-    url: https://financialfilings.com/filings/pcl-4977/annual-report/2026/49925076/
+    quote_check: found
+    title: 眾達科技股份有限公司2025年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52455/2026/RNS/52455_rns_2026-05-19_edbceb39-efe0-44c3-afab-1cf6fcb44294.pdf
   tw.4977#e3:
-    locator: 第43頁開發成功之技術或產品
-    published_date: '2026-08-04'
+    locator: 第1頁，致股東報告書
+    published_date: '2026-05-20'
     publisher: 眾達科技股份有限公司
     quote_check: unreachable
-    title: 一一四年度年報修訂版
-    url: https://financialfilings.com/filings/pcl-4977/annual-report/2026/49925076/
+    title: 眾達科技股份有限公司2025年度年報
+    url: https://financialfilings.com/filings/pcl-4977/annual-report/2026/46528472/
   tw.4977#e4:
-    locator: 第43頁開發成功之技術或產品；101年度研發成果
-    published_date: '2026-08-04'
+    locator: 第37頁，計畫開發之新商品及服務
+    published_date: '2026-05-20'
     publisher: 眾達科技股份有限公司
-    quote_check: unreachable
-    title: 一一四年度年報修訂版
-    url: https://financialfilings.com/filings/pcl-4977/annual-report/2026/49925076/
+    quote_check: found
+    title: 眾達科技股份有限公司2025年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52455/2026/RNS/52455_rns_2026-05-19_edbceb39-efe0-44c3-afab-1cf6fcb44294.pdf
   tw.4977#e5:
-    locator: 第1頁致股東報告書
-    published_date: '2026-05-20'
-    publisher: 眾達科技股份有限公司
+    locator: 雷射光學封裝獨家提供博通段落
+    published_date: '2024-12-04'
+    publisher: 自由時報
     quote_check: found
-    title: 眾達科技股份有限公司一一四年度年報
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52455/2026/RNS/52455_rns_2026-05-19_edbceb39-efe0-44c3-afab-1cf6fcb44294.pdf
+    title: 眾達：2025年是CPO應用元年
+    url: https://ec.ltn.com.tw/amp/article/paper/1680347
   tw.4977#e6:
-    locator: 第37頁計畫開發之新商品及服務；1.6T產品列之進度欄
-    published_date: '2026-08-04'
+    locator: 正文供應鏈段落；僅引用具名合作事實
+    published_date: '2025-09-08'
+    publisher: 鉅亨網
+    quote_check: found
+    title: 〈焦點股〉傳博通拿下OpenAI大單 矽光供應鏈眾達-KY盤中鎖漲停
+    url: https://news.cnyes.com/news/id/6144621
+  tw.4977#e7:
+    locator: 第1頁，致股東報告書
+    published_date: '2026-05-20'
     publisher: 眾達科技股份有限公司
     quote_check: unreachable
-    title: 一一四年度年報修訂版
-    url: https://financialfilings.com/filings/pcl-4977/annual-report/2026/49925076/
-  tw.4977#e7:
-    locator: 第63頁關係企業董事、監察人及總經理資料
-    published_date: '2026-05-20'
-    publisher: 眾達科技股份有限公司
-    quote_check: found
-    title: 眾達科技股份有限公司一一四年度年報
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52455/2026/RNS/52455_rns_2026-05-19_edbceb39-efe0-44c3-afab-1cf6fcb44294.pdf
+    title: 眾達科技股份有限公司2025年度年報
+    url: https://financialfilings.com/filings/pcl-4977/annual-report/2026/46528472/
   tw.4977#e8:
-    locator: 第63頁關係企業董事、監察人及總經理資料
+    locator: 第62頁，關係企業基本資料
     published_date: '2026-05-20'
     publisher: 眾達科技股份有限公司
     quote_check: found
-    title: 眾達科技股份有限公司一一四年度年報
+    title: 眾達科技股份有限公司2025年度年報
     url: https://cdn.financialreports.eu/financialreports/media/filings/52455/2026/RNS/52455_rns_2026-05-19_edbceb39-efe0-44c3-afab-1cf6fcb44294.pdf
   tw.4977#e9:
-    locator: 第63頁關係企業董事、監察人及總經理資料
+    locator: 第62頁，關係企業基本資料
     published_date: '2026-05-20'
     publisher: 眾達科技股份有限公司
     quote_check: found
-    title: 眾達科技股份有限公司一一四年度年報
+    title: 眾達科技股份有限公司2025年度年報
     url: https://cdn.financialreports.eu/financialreports/media/filings/52455/2026/RNS/52455_rns_2026-05-19_edbceb39-efe0-44c3-afab-1cf6fcb44294.pdf

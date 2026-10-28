@@ -18,43 +18,84 @@ industry:
   l3_name: 天然氣公用事業
   l3_name_en: Gas Utilities
 primary_chain_position: downstream
-summary_short: 以高雄地區天然氣供應為主，兼營管線設計裝置與太陽光電售電。
-summary_long: 欣雄主要透過導管供應高雄地區天然氣，服務鳳山、大寮等十六個行政區的家庭與工商用戶，供氣範圍亦涵蓋多處產業園區。114年度年報列示天然氣收入占95%，裝置及其他收入占5%。除天然氣銷售外，公司提供供氣管線設計與裝置服務，並經營太陽光電發電售電。依115年第一季合併財報，雄緯投資為直接子公司；集團另透過子公司持有開泰、欣雄建設實業、欣亞電能、日耀能源科技與欣雄營造，分別經營太陽光電、不動產開發、汽電共生、能源技術服務與綜合營造。
+summary_short: 以高雄地區導管天然氣銷售為主，兼營管線裝設、光電售電及建設。
+summary_long: 欣雄以導管供應天然氣為核心，服務高雄市16個行政區及產業園區的家庭、商業與工業用戶，並提供管線裝設服務。合併營運分為售氣、裝置、售電及建設四部門，2026年第一季以售氣部門收入最高。天然氣向台灣中油採購，2025年中油占進貨淨額98.34%；年報亦列TSRC為銷貨客戶。公司另經營太陽光電發電售電，並透過雄緯投資持有開泰及欣雄建設，分別從事光電與不動產開發租售。2025年欣雄建設向穎泰投資取得台南歸仁土地，欣雄則決議追加北高雄供氣服務中心工程款。
 segments:
 - evidence_ids:
-  - e2
+  - e3
   id: gas
-  name: 天然氣收入
-  period: '2025'
-  revenue_share_pct: 95
+  name: 售氣部門
+  period: 2026年第一季
+  revenue_share_pct: null
 - evidence_ids:
-  - e2
-  id: installation_other
-  name: 裝置及其他收入
-  period: '2025'
-  revenue_share_pct: 5
+  - e3
+  id: installation
+  name: 裝置部門
+  period: 2026年第一季
+  revenue_share_pct: null
+- evidence_ids:
+  - e3
+  id: solar
+  name: 售電部門
+  period: 2026年第一季
+  revenue_share_pct: null
+- evidence_ids:
+  - e3
+  id: construction
+  name: 建設部門
+  period: 2026年第一季
+  revenue_share_pct: null
 relations:
-  subsidiaries:
-  - as_of: '2026-03-31'
+  customers:
+  - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 間接子公司；能源技術服務
+    detail: 工業用戶天然氣銷售
     details:
-    - 間接子公司；能源技術服務
-    edge: e7768613ff8ca
+    - 工業用戶天然氣銷售
+    edge: e013eb0d5e541
     evidence_level: primary
-    id: org.日耀能源科技股份有限公司
-    name: 日耀能源科技股份有限公司
+    id: tw.2103
+    name: 台橡
+    ranking_basis: disclosed
+    share_basis: revenue
+    share_pct: 7.49
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 太陽光電電力銷售
+    details:
+    - 太陽光電電力銷售
+    edge: e1c1fe74152bb
+    evidence_level: primary
+    id: org.taipower
+    name: 台灣電力公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: '2026-05-12'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 燃氣複循環電廠天然氣管線工程
+    details:
+    - 燃氣複循環電廠天然氣管線工程
+    edge: e33e0f9cd2916
+    evidence_level: primary
+    id: org.中佳電力股份有限公司
+    name: 中佳電力股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
   - as_of: '2026-03-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 間接子公司；汽電共生
+    detail: 雄緯投資持股50%的合併子公司
     details:
-    - 間接子公司；汽電共生
+    - 雄緯投資持股50%的合併子公司
     edge: ed0dbcecf2f50
     evidence_level: primary
     id: org.欣亞電能股份有限公司
@@ -66,9 +107,9 @@ relations:
   - as_of: '2026-03-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 間接子公司；不動產開發租售
+    detail: 透過雄緯投資持有的建設子公司
     details:
-    - 間接子公司；不動產開發租售
+    - 透過雄緯投資持有的建設子公司
     edge: ed0edc9ff39a2
     evidence_level: primary
     id: org.欣雄建設實業股份有限公司
@@ -80,23 +121,9 @@ relations:
   - as_of: '2026-03-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 間接子公司；綜合營造
+    detail: 透過雄緯投資持有的光電子公司
     details:
-    - 間接子公司；綜合營造
-    edge: e0bc3c6b3e3c4
-    evidence_level: primary
-    id: org.欣雄營造股份有限公司
-    name: 欣雄營造股份有限公司
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
-  - as_of: '2026-03-31'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 間接子公司；太陽能光電
-    details:
-    - 間接子公司；太陽能光電
+    - 透過雄緯投資持有的光電子公司
     edge: e401c86f1d0fd
     evidence_level: primary
     id: org.開泰股份有限公司
@@ -108,9 +135,9 @@ relations:
   - as_of: '2026-03-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接子公司；轉投資控股及房地產買賣租售
+    detail: 直接持股100%的投資子公司
     details:
-    - 直接子公司；轉投資控股及房地產買賣租售
+    - 直接持股100%的投資子公司
     edge: e11ed19cc3d9d
     evidence_level: primary
     id: org.雄緯投資股份有限公司
@@ -119,95 +146,319 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  suppliers:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 天然氣採購
+    details:
+    - 天然氣採購
+    edge: e1991ec3da5ca
+    evidence_level: primary
+    id: org.cpc-taiwan
+    name: 台灣中油公司
+    ranking_basis: disclosed
+    share_basis: purchases
+    share_pct: 98.34
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 太陽能設備工程
+    details:
+    - 太陽能設備工程
+    edge: e8ab196f19781
+    evidence_level: primary
+    id: org.怡和國際能源股份有限公司
+    name: 怡和國際能源股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 預計追加新台幣2億9,018.4萬元；追加後總金額新台幣7億5,518.4萬元
+    as_of: '2025-06-17'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 北高雄供氣服務中心自地委建追加工程款
+    details:
+    - 北高雄供氣服務中心自地委建追加工程款
+    edge: ec55cdc4be293
+    event_date: '2025-06-17'
+    events:
+    - amount: 預計追加新台幣2億9,018.4萬元；追加後總金額新台幣7億5,518.4萬元
+      detail: 北高雄供氣服務中心自地委建追加工程款
+      event_date: '2025-06-17'
+    evidence_level: primary
+    id: org.住友工程股份有限公司
+    name: 住友工程股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣1,000仟元
+    as_of: '2025-10-27'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 欣亞電能新增投資子公司
+    details:
+    - 欣亞電能新增投資子公司
+    edge: e89a78f5ff354
+    event_date: '2025-10-27'
+    events:
+    - amount: 新台幣1,000仟元
+      detail: 欣亞電能新增投資子公司
+      event_date: '2025-10-27'
+    evidence_level: primary
+    id: org.欣亞一號能源股份有限公司
+    name: 欣亞一號能源股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣1,000仟元
+    as_of: '2025-11-10'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 欣亞一號能源新增投資子公司
+    details:
+    - 欣亞一號能源新增投資子公司
+    edge: eba768b73624c
+    event_date: '2025-11-10'
+    events:
+    - amount: 新台幣1,000仟元
+      detail: 欣亞一號能源新增投資子公司
+      event_date: '2025-11-10'
+    evidence_level: primary
+    id: org.欣亞中康能源股份有限公司
+    name: 欣亞中康能源股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2025-11-20'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司雄緯投資取得股權並辦理增資
+    details:
+    - 子公司雄緯投資取得股權並辦理增資
+    edge: e0482b638dd48
+    event_date: '2025-10-14'
+    events:
+    - amount: null
+      detail: 子公司雄緯投資取得股權並辦理增資
+      event_date: '2025-10-14'
+    evidence_level: primary
+    id: org.欣田崎生化科技股份有限公司
+    name: 欣田崎生化科技股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣5億2,600萬元
+    as_of: '2025-07-01'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 欣雄建設取得台南歸仁武東段土地
+    details:
+    - 欣雄建設取得台南歸仁武東段土地
+    edge: efb5272a70f2d
+    event_date: '2025-06-20'
+    events:
+    - amount: 新台幣5億2,600萬元
+      detail: 欣雄建設取得台南歸仁武東段土地
+      event_date: '2025-06-20'
+    evidence_level: primary
+    id: org.穎泰投資股份有限公司
+    name: 穎泰投資股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 太陽能：候選未提供可辨識的供應商法人名稱，無法確認其所指太陽能模組供應商。
+- C.H：年報以縮寫揭露的2024年度工業用戶，未擴寫或猜測法人名稱。
+- 草湖段取消購地案的40位自然人交易相對人，公告未揭露姓名。
+- 其他再生能源售電業者：年報未提供個別對象名稱。
 website: www.shng.com.tw
 tax_id: 07861475
 incorporated: '1986-04-16'
 listed: '2026-10-16'
-as_of: '2026-10-18'
+as_of: '2026-10-28'
 confidence: ai_cross_checked
 has_research: true
 evidence:
   tw.8908#e1:
-    locator: 關於欣雄
+    locator: 一、公司簡介；二、業務內容
     published_date: null
-    publisher: 欣雄天然氣股份有限公司
+    publisher: 臺灣證券交易所
     quote_check: found
-    title: 欣雄天然氣股份有限公司官網
-    url: https://www.shng.com.tw/
+    title: 新上市公司：欣雄天然氣股份有限公司(8908)
+    url: https://www.twse.com.tw/market_insights/zh/detail/8a8216d6a0fa351b01a13ff556d90167
   tw.8908#e10:
-    locator: 印刷第13頁，合併財務報表編製主體表；115年3月31日欄
-    published_date: null
+    locator: 第54頁，重大財產交易，購入財產交易
+    published_date: '2026-03-11'
     publisher: 欣雄天然氣股份有限公司
     quote_check: found
-    title: 欣雄天然氣股份有限公司及子公司115年度第一季合併財務報告
-    url: https://www.shng.com.tw/assets/files/invment/115%E5%B9%B4%E5%BA%A6%E7%AC%AC1%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf
+    title: 114年度個體財務報告
+    url: https://www.shng.com.tw/assets/files/invment/114%E5%B9%B4%E5%BA%A6%E7%AC%AC4%E5%AD%A3%E5%80%8B%E9%AB%94%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf
   tw.8908#e11:
-    locator: 印刷第13頁，合併財務報表編製主體表
-    published_date: null
+    locator: 第54頁，重要契約，中佳電力工程合約
+    published_date: '2026-03-31'
     publisher: 欣雄天然氣股份有限公司
     quote_check: found
-    title: 欣雄天然氣股份有限公司及子公司115年度第一季合併財務報告
-    url: https://www.shng.com.tw/assets/files/invment/115%E5%B9%B4%E5%BA%A6%E7%AC%AC1%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf
+    title: 114年度年報
+    url: https://www.shng.com.tw/assets/files/invment/114%E5%B9%B4%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
   tw.8908#e12:
-    locator: 印刷第13頁，合併財務報表編製主體表
+    locator: 第38頁，重大之期後事項
+    published_date: '2026-05-12'
+    publisher: 欣雄天然氣股份有限公司
+    quote_check: found
+    title: 115年度第一季合併財務報告
+    url: https://www.shng.com.tw/assets/files/invment/115%E5%B9%B4%E5%BA%A6%E7%AC%AC1%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf
+  tw.8908#e13:
+    locator: 第13頁，合併財務報表編製主體，欣雄投資雄緯列
+    published_date: '2026-05-12'
+    publisher: 欣雄天然氣股份有限公司
+    quote_check: found
+    title: 115年度第一季合併財務報告
+    url: https://www.shng.com.tw/assets/files/invment/115%E5%B9%B4%E5%BA%A6%E7%AC%AC1%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf
+  tw.8908#e14:
+    locator: 第13頁，合併財務報表編製主體，雄緯投資開泰列
+    published_date: '2026-05-12'
+    publisher: 欣雄天然氣股份有限公司
+    quote_check: unreachable
+    title: 115年度第一季合併財務報告
+    url: https://www.shng.com.tw/assets/files/invment/115%E5%B9%B4%E5%BA%A6%E7%AC%AC1%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf
+  tw.8908#e15:
+    locator: 第13頁，合併財務報表編製主體，雄緯投資欣雄建設列
+    published_date: '2026-05-12'
+    publisher: 欣雄天然氣股份有限公司
+    quote_check: found
+    title: 115年度第一季合併財務報告
+    url: https://www.shng.com.tw/assets/files/invment/115%E5%B9%B4%E5%BA%A6%E7%AC%AC1%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf
+  tw.8908#e16:
+    locator: 第13頁，合併財務報表編製主體，雄緯投資欣亞電能列
+    published_date: '2026-05-12'
+    publisher: 欣雄天然氣股份有限公司
+    quote_check: found
+    title: 115年度第一季合併財務報告
+    url: https://www.shng.com.tw/assets/files/invment/115%E5%B9%B4%E5%BA%A6%E7%AC%AC1%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf
+  tw.8908#e17:
+    locator: 第13頁，合併編製主體及註2
+    published_date: '2026-05-12'
+    publisher: 欣雄天然氣股份有限公司
+    quote_check: found
+    title: 115年度第一季合併財務報告
+    url: https://www.shng.com.tw/assets/files/invment/115%E5%B9%B4%E5%BA%A6%E7%AC%AC1%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf
+  tw.8908#e18:
+    locator: 公告第1、3、5項
+    published_date: '2025-07-01'
+    publisher: MoneyDJ理財網／公開資訊觀測站重大訊息
+    quote_check: found
+    title: 欣雄更正公告：代子公司欣雄建設實業股份有限公司公告取得土地
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=b0ca8580-c79f-47bc-bf25-0ac6091c7b53
+  tw.8908#e19:
+    locator: 公告第6項，交易相對人
+    published_date: '2025-07-01'
+    publisher: MoneyDJ理財網／公開資訊觀測站重大訊息
+    quote_check: found
+    title: 欣雄更正公告：代子公司欣雄建設實業股份有限公司公告取得土地
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=b0ca8580-c79f-47bc-bf25-0ac6091c7b53
+  tw.8908#e2:
+    locator: PDF第6頁，主要營業項目；第9頁，營業區域
     published_date: null
     publisher: 欣雄天然氣股份有限公司
     quote_check: found
-    title: 欣雄天然氣股份有限公司及子公司115年度第一季合併財務報告
+    title: 115年法人說明會簡報
+    url: https://www.shng.com.tw/assets/files/invment/115%E5%B9%B4%E6%B3%95%E8%AA%AA%E6%9C%83%E7%B0%A1%E5%A0%B1%E6%B3%95%E8%AA%AA%E6%9C%83%E7%B0%A1%E5%A0%B1.pdf
+  tw.8908#e20:
+    locator: 公告其他應敘明事項第3項
+    published_date: '2025-06-17'
+    publisher: MoneyDJ理財網／公開資訊觀測站重大訊息
+    quote_check: found
+    title: 欣雄董事會通過興建北高雄供氣服務中心案追加工程款
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=b30c1eff-d267-4534-a141-f6ee5c269b74
+  tw.8908#e21:
+    locator: 公告其他應敘明事項第4項
+    published_date: '2025-06-17'
+    publisher: MoneyDJ理財網／公開資訊觀測站重大訊息
+    quote_check: found
+    title: 欣雄董事會通過興建北高雄供氣服務中心案追加工程款
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=b30c1eff-d267-4534-a141-f6ee5c269b74
+  tw.8908#e22:
+    locator: 公告第2、29項
+    published_date: '2025-05-23'
+    publisher: MoneyDJ理財網／公開資訊觀測站重大訊息
+    quote_check: found
+    title: 欣雄：子公司欣雄建設取消購買台南市安南區草湖段土地案
+    url: https://m.moneydj.com/f1a.aspx?a=068cd6dc-da88-481b-a1d8-1c470304a993
+  tw.8908#e23:
+    locator: 第13頁持股表；第14頁註3
+    published_date: '2026-05-12'
+    publisher: 欣雄天然氣股份有限公司
+    quote_check: found
+    title: 115年度第一季合併財務報告
     url: https://www.shng.com.tw/assets/files/invment/115%E5%B9%B4%E5%BA%A6%E7%AC%AC1%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf
-  tw.8908#e2:
-    locator: 印刷第45頁，營業比重
-    published_date: '2026-03-31'
+  tw.8908#e24:
+    locator: 第13頁持股表；第14頁註4
+    published_date: '2026-05-12'
     publisher: 欣雄天然氣股份有限公司
     quote_check: found
-    title: 欣雄天然氣股份有限公司114年度年報
-    url: https://www.shng.com.tw/assets/files/invment/114%E5%B9%B4%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
+    title: 115年度第一季合併財務報告
+    url: https://www.shng.com.tw/assets/files/invment/115%E5%B9%B4%E5%BA%A6%E7%AC%AC1%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf
   tw.8908#e3:
-    locator: 印刷第45頁，公司目前之商品（服務）項目
-    published_date: '2026-03-31'
+    locator: 第48頁，部門收入與營運結果；金額單位為新台幣仟元
+    published_date: '2026-05-12'
     publisher: 欣雄天然氣股份有限公司
     quote_check: found
-    title: 欣雄天然氣股份有限公司114年度年報
-    url: https://www.shng.com.tw/assets/files/invment/114%E5%B9%B4%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
+    title: 115年度第一季合併財務報告
+    url: https://www.shng.com.tw/assets/files/invment/115%E5%B9%B4%E5%BA%A6%E7%AC%AC1%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf
   tw.8908#e4:
-    locator: 印刷第2頁，太陽光電事業實績表
+    locator: 第54頁，重要契約，天然氣採購合約
     published_date: '2026-03-31'
     publisher: 欣雄天然氣股份有限公司
     quote_check: found
-    title: 欣雄天然氣股份有限公司114年度年報
+    title: 114年度年報
     url: https://www.shng.com.tw/assets/files/invment/114%E5%B9%B4%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
   tw.8908#e5:
-    locator: 印刷第1頁，四大主要營收預算達成情形
+    locator: 第48頁，最近二年度主要供應商資料，114年台灣中油列；占全年度進貨淨額比率
     published_date: '2026-03-31'
     publisher: 欣雄天然氣股份有限公司
     quote_check: found
-    title: 欣雄天然氣股份有限公司114年度年報
+    title: 114年度年報
     url: https://www.shng.com.tw/assets/files/invment/114%E5%B9%B4%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
   tw.8908#e6:
-    locator: 印刷第13頁，合併財務報表編製主體表；115年3月31日欄
-    published_date: null
+    locator: 第49頁，主要銷貨客戶資料，114年度工業用戶TSRC列；占全年度銷貨淨額比率
+    published_date: '2026-03-31'
     publisher: 欣雄天然氣股份有限公司
     quote_check: found
-    title: 欣雄天然氣股份有限公司及子公司115年度第一季合併財務報告
-    url: https://www.shng.com.tw/assets/files/invment/115%E5%B9%B4%E5%BA%A6%E7%AC%AC1%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf
+    title: 114年度年報
+    url: https://www.shng.com.tw/assets/files/invment/114%E5%B9%B4%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
   tw.8908#e7:
-    locator: 印刷第13頁，合併財務報表編製主體表
+    locator: 網頁標題
     published_date: null
-    publisher: 欣雄天然氣股份有限公司
+    publisher: 台橡股份有限公司
     quote_check: found
-    title: 欣雄天然氣股份有限公司及子公司115年度第一季合併財務報告
-    url: https://www.shng.com.tw/assets/files/invment/115%E5%B9%B4%E5%BA%A6%E7%AC%AC1%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf
+    title: 投資人關係 - TSRC 台橡股份有限公司
+    url: https://www.tsrc.com.tw/tw/investor-relations/
   tw.8908#e8:
-    locator: 印刷第13頁，合併財務報表編製主體表
-    published_date: null
+    locator: 第28頁，收入認列，太陽能發電銷售
+    published_date: '2026-03-11'
     publisher: 欣雄天然氣股份有限公司
     quote_check: found
-    title: 欣雄天然氣股份有限公司及子公司115年度第一季合併財務報告
-    url: https://www.shng.com.tw/assets/files/invment/115%E5%B9%B4%E5%BA%A6%E7%AC%AC1%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf
+    title: 114年度個體財務報告
+    url: https://www.shng.com.tw/assets/files/invment/114%E5%B9%B4%E5%BA%A6%E7%AC%AC4%E5%AD%A3%E5%80%8B%E9%AB%94%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf
   tw.8908#e9:
-    locator: 印刷第13頁，合併財務報表編製主體表
-    published_date: null
+    locator: 第53頁，關係人名稱及關係
+    published_date: '2026-03-11'
     publisher: 欣雄天然氣股份有限公司
     quote_check: found
-    title: 欣雄天然氣股份有限公司及子公司115年度第一季合併財務報告
-    url: https://www.shng.com.tw/assets/files/invment/115%E5%B9%B4%E5%BA%A6%E7%AC%AC1%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf
+    title: 114年度個體財務報告
+    url: https://www.shng.com.tw/assets/files/invment/114%E5%B9%B4%E5%BA%A6%E7%AC%AC4%E5%AD%A3%E5%80%8B%E9%AB%94%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf

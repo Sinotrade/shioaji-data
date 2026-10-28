@@ -59,16 +59,16 @@ segments:
   name: 其他
   period: '2025'
   revenue_share_pct: 0.52
-main_theme: theme.cowos
+main_theme: theme.euv
 themes:
-- also: []
-  stage: equipment
-  theme: theme.cowos
-  tier: upstream
 - also: []
   stage: equipment
   theme: theme.euv
   tier: midstream
+- also: []
+  stage: equipment
+  theme: theme.cowos
+  tier: upstream
 relations:
   competitors:
   - as_of: '2024-01-04'

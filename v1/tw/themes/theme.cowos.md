@@ -4,7 +4,7 @@
 
 - 英文：CoWoS Advanced Packaging
 - 別名：CoWoS、先進封裝、2.5D 封裝
-- 成員：62 家
+- 成員：63 家
 - 完整成員與證據見同目錄同名 YAML，或 themes.json
 
 ## 設備（上游，37 家）
@@ -15,7 +15,7 @@
 | [2464](../companies/2464.md) | 盟立 | CoWoS先進封裝自動化搬運設備 |
 | [2467](../companies/2467.md) | 志聖 | CoWoS製程設備 |
 | [3030](../companies/3030.md) | 德律 | CoWoS先進封裝光學檢測設備 |
-| [3055](../companies/3055.md) | 蔚華科 | CoWoS覆晶熱壓鍵合設備 |
+| [3055](../companies/3055.md) | 蔚華科 | CoWoS製程覆晶熱壓鍵合設備 |
 | [3167](../companies/3167.md) | 大量 | CoWoS製程檢測設備 |
 | [3455](../companies/3455.md) | 由田 | CoWoS黃光製程AOI檢測設備 |
 | [3563](../companies/3563.md) | 牧德 | 支援CoWoS應用的IC外觀檢測設備 |
@@ -30,7 +30,7 @@
 | [6196](../companies/6196.md) | 帆宣 | CoWoS相關設備製造與整合 |
 | [6207](../companies/6207.md) | 雷科 | 代理SMT檢測設備用於CoWoS製程 |
 | [6425](../companies/6425.md) | 易發 | CoWoS先進封裝製程設備供應鏈 |
-| [6438](../companies/6438.md) | 迅得 | CoWoS用晶圓傳輸設備開發 |
+| [6438](../companies/6438.md) | 迅得 | CoWoS晶圓機器人傳輸技術 |
 | [6570](../companies/6570.md) | 維田 | CoWoS設備控制器嵌入式系統 |
 | [6640](../companies/6640.md) | 均華 | CoWoS先進封裝製程設備 |
 | [6658](../companies/6658.md) | 聯策 | CoWoS先進封裝缺陷檢測 |
@@ -38,7 +38,7 @@
 | [6667](../companies/6667.md) | 信紘科 | 先進封裝擴產所需高純度化學品供應系統及廠務工程 |
 | [6706](../companies/6706.md) | 惠特 | CoWoS／SoIC先進封裝雷射加工設備布局 |
 | [6739](../companies/6739.md) | 竹陞科技 | CoWoS產線的MSD感測數據採集 |
-| [6788](../companies/6788.md) | 華景電 | 先進封裝微汙染防治設備 |
+| [6788](../companies/6788.md) | 華景電 | 先進封裝載具微污染防治設備開發 |
 | [6937](../companies/6937.md) | 天虹 | 類CoWoS先進封裝製程設備 |
 | [6983](../companies/6983.md) | 華洋精機 | CoWoS製程光罩檢查設備 |
 | [7730](../companies/7730.md) | 暉盛-創 | CoWoS製程用電漿蝕刻設備 |
@@ -49,10 +49,11 @@
 | [7856](../companies/7856.md) | 漢測 | CoWoS相關回焊設備 |
 | [8070](../companies/8070.md) | 長華* | CoWoS製程相關日本封裝設備代理引進 |
 
-## 材料與載板（上游，12 家）
+## 材料與載板（上游，13 家）
 
 | 代號 | 名稱 | 說明 |
 | --- | --- | --- |
+| [1710](../companies/1710.md) | 東聯 | 支援CoWoS封裝需求的電子應用化學品 |
 | [3010](../companies/3010.md) | 華立 | 新一代CoWoS材料驗證與測試 |
 | [3532](../companies/3532.md) | 台勝科 | CoWoS相關interposer晶圓材料送樣 |
 | [3680](../companies/3680.md) | 家登 | CoWoS系列製程載具 |
@@ -80,7 +81,7 @@
 | --- | --- | --- |
 | [2449](../companies/2449.md) | 京元電子 | CoWoS封裝晶片成品測試 |
 | [3289](../companies/3289.md) | 宜特 | CoWoS研發驗證與電路修補 |
-| [3587](../companies/3587.md) | 閎康 | CoWoS高功率Latch-Up可靠度測試 |
+| [6217](../companies/6217.md) | 中探針 | 對應CoWoS測試需求的MEMS探針研發 |
 | [6257](../companies/6257.md) | 矽格 | CoWoS測試技術研發 |
 | [6515](../companies/6515.md) | 穎崴 | CoWoS晶圓測試介面 |
 

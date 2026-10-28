@@ -49,15 +49,15 @@ segments:
   name: 其他
   period: '2025'
   revenue_share_pct: 0.8
-main_theme: theme.cpo
+main_theme: theme.cowos
 themes:
-- also: []
-  stage: packaging
-  theme: theme.cpo
-  tier: midstream
 - also: []
   stage: test
   theme: theme.cowos
+  tier: midstream
+- also: []
+  stage: packaging
+  theme: theme.cpo
   tier: midstream
 relations:
   competitors:

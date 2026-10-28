@@ -35,16 +35,16 @@ segments:
   name: 封裝測試加工及測試機台借機
   period: 2025年度
   revenue_share_pct: 96
-main_theme: theme.nvidia
+main_theme: theme.cowos
 themes:
-- also: []
-  stage: chips
-  theme: theme.nvidia
-  tier: upstream
 - also: []
   stage: test
   theme: theme.cowos
   tier: midstream
+- also: []
+  stage: chips
+  theme: theme.nvidia
+  tier: upstream
 relations:
   competitors:
   - as_of: '2026-09-22'
@@ -100,7 +100,7 @@ relations:
     edge: e8553611059df
     evidence_level: primary
     id: jp.6963
-    name: Rohm
+    name: ROHM
     ranking_basis: unranked
     share_basis: null
     share_pct: null

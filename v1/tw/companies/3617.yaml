@@ -17,39 +17,31 @@ industry:
   l3: comp.power
   l3_name: 電源供應器與電源管理模組
   l3_name_en: Power Supplies & Power Modules
-chain: chain.server
-chain_stage:
-  agreement: both
-  also: []
-  reason: 不斷電系統占營收55.98%，另提供資料中心備援電源及機櫃配電設備。
-  stage: components
-  stage_name: 板卡、電源、散熱、機構件
-  tier: midstream
 primary_chain_position: midstream
-summary_short: 以CyberPower品牌設計、製造及銷售不斷電系統與電源管理產品。
-summary_long: 碩天科技以自有品牌CyberPower經營電源保護與管理產品，主要從事不斷電系統的設計、製造與銷售。2025年營收以不斷電系統占55.98%為主，資料中心電源管理占33.52%，電源保護及管理設備占8.35%，電源轉換器及電腦週邊設備與配件占2.15%。產品另涵蓋配電裝置、突波保護器、太陽能混和型逆變器及PowerPanel管理軟體，並提供資料中心備援與配電方案。美國Cyber Power Systems(USA),Inc.為其直接持有100%股權的子公司。
+summary_short: 以CyberPower品牌設計、製造及銷售不斷電系統與電源管理設備。
+summary_long: 碩天以自有品牌CyberPower設計、製造及銷售不斷電系統與電源管理產品。2025年不斷電系統占營收55.98%，資料中心電源管理占33.52%，其餘為電源保護及管理設備8.35%，以及電源轉換器、電腦週邊設備與配件2.15%。品牌銷售通路包括Best Buy、Wal-mart及Ingram Micro，資料中心產品提供電源分配與管理功能。集團於2024年決議透過菲律賓合資架構購置土地及廠房，2026年另決議增加購置既有廠房與土地，並通過對百分之百持股子公司Neu Grant增資2,500萬美元。
 segments:
 - evidence_ids:
   - e3
   id: seg_ups
-  name: 不斷電電源系統
+  name: 不斷電系統
   period: '2025'
   revenue_share_pct: 55.98
 - evidence_ids:
-  - e4
+  - e3
   id: seg_datacenter
   name: 資料中心電源管理
   period: '2025'
   revenue_share_pct: 33.52
 - evidence_ids:
-  - e5
+  - e3
   id: seg_protection
   name: 電源保護及管理設備
   period: '2025'
   revenue_share_pct: 8.35
 - evidence_ids:
-  - e6
-  id: seg_accessories
+  - e3
+  id: seg_peripherals
   name: 電源轉換器及電腦週邊設備與配件
   period: '2025'
   revenue_share_pct: 2.15
@@ -60,13 +52,141 @@ themes:
   theme: theme.data_center
   tier: upstream
 relations:
+  customers:
+  - as_of: 2015-06
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 歷史電信營運商客戶
+    details:
+    - 歷史電信營運商客戶
+    edge: eb4ae9dfe9b3d
+    evidence_level: media
+    id: us.T
+    name: AT&T
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2015-06
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 歷史電信營運商客戶
+    details:
+    - 歷史電信營運商客戶
+    edge: e063f1f9176b0
+    evidence_level: media
+    id: us.VZ
+    name: Verizon
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  partners:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: CyberPower電源產品經銷通路
+    details:
+    - CyberPower電源產品經銷通路
+    edge: e0a7ae013c07c
+    evidence_level: primary
+    id: org.ingram-micro
+    name: Ingram Micro
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: CyberPower品牌北美零售通路
+    details:
+    - CyberPower品牌北美零售通路
+    edge: e73ec139ecf29
+    evidence_level: primary
+    id: us.BBY
+    name: Best Buy
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2026-10
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: CyberPower UPS零售通路
+    details:
+    - CyberPower UPS零售通路
+    edge: e493117a3a802
+    evidence_level: primary
+    id: us.COST
+    name: Costco
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2026-10
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 美國子公司CyberPower產品零售通路
+    details:
+    - 美國子公司CyberPower產品零售通路
+    edge: e829fc77fef5b
+    evidence_level: primary
+    id: us.HD
+    name: Home Depot
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2026-10
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: CyberPower產品通路銷售
+    details:
+    - CyberPower產品通路銷售
+    edge: e3b5fac200e48
+    evidence_level: primary
+    id: us.SNX
+    name: TD SYNNEX CORP.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: CyberPower品牌北美零售通路
+    details:
+    - CyberPower品牌北美零售通路
+    edge: e17ac095375e8
+    evidence_level: primary
+    id: us.WMT
+    name: Walmart Inc
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持有100%股權的美國子公司
+    detail: 2025年設立案及直接持股100%的英國子公司
     details:
-    - 直接持有100%股權的美國子公司
+    - 2025年設立案及直接持股100%的英國子公司
+    edge: e0f55462c55e7
+    evidence_level: primary
+    id: org.cyber-power-systems-uk
+    name: Cyber Power Systems UK Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的美國子公司
+    details:
+    - 直接持股100%的美國子公司
     edge: e29fdc6fbb3fb
     evidence_level: primary
     id: org.cyber-power-systems-usa
@@ -75,95 +195,273 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: '2026-05-12'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股100%的薩摩亞子公司
+    details:
+    - 直接持股100%的薩摩亞子公司
+    edge: ef1aff1cc1064
+    evidence_level: primary
+    id: org.neu-grant
+    name: Neu Grant Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 經控制事業間接持股100%的子公司
+    details:
+    - 經控制事業間接持股100%的子公司
+    edge: e9ec9b7620885
+    evidence_level: primary
+    id: org.shuoda-electronics-shenzhen
+    name: 碩達電子(深圳)有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 不高於菲律賓披索10億4824萬8000元（估價金額上限）
+    as_of: '2026-01-15'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 菲律賓Golden Gate土地及廠房購置決議
+    details:
+    - 菲律賓Golden Gate土地及廠房購置決議
+    - 透過菲律賓合資公司增加購置既有廠房及土地
+    edge: e7fedd21afbf9
+    event_date: '2024-11-07'
+    events:
+    - amount: 不高於菲律賓披索10億4824萬8000元（估價金額上限）
+      detail: 透過菲律賓合資公司增加購置既有廠房及土地
+      event_date: '2026-01-15'
+    - amount: null
+      detail: 菲律賓Golden Gate土地及廠房購置決議
+      event_date: '2024-11-07'
+    evidence_level: primary
+    id: org.bojie-manufacturing
+    name: Bojie Manufacturing Incorporated
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2024-11-07'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 菲律賓Golden Gate土地及廠房購置決議
+    details:
+    - 菲律賓Golden Gate土地及廠房購置決議
+    edge: e20ff87c54991
+    event_date: '2024-11-07'
+    events:
+    - amount: null
+      detail: 菲律賓Golden Gate土地及廠房購置決議
+      event_date: '2024-11-07'
+    evidence_level: primary
+    id: org.just-realty
+    name: Just Realty Incorporated
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: USD 25,000,000元
+    as_of: '2026-05-12'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 對百分之百持股子公司現金增資
+    details:
+    - 對百分之百持股子公司現金增資
+    edge: e126fd2e9cf4d
+    event_date: '2026-05-12'
+    events:
+    - amount: USD 25,000,000元
+      detail: 對百分之百持股子公司現金增資
+      event_date: '2026-05-12'
+    evidence_level: primary
+    id: org.neu-grant
+    name: Neu Grant Co., Ltd.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 印刷電路板（PCB）供應商：官方文件僅列原料類別，未具名。
+- 電池、變壓器及半導體零件供應商：未取得具名供應關係證據。
+- A客戶：年報採匿名揭露，未推定其身分。
+- 菲律賓合資架構的其他合資方：購廠公告未具名。
 website: www.cyberpower.com/tw/zh/investor
 tax_id: '97474067'
 incorporated: '1997-06-27'
 listed: '2009-12-23'
-as_of: '2026-10-15'
+as_of: '2026-10-28'
 confidence: ai_cross_checked
 has_research: true
 evidence:
   tw.3617#e1:
-    locator: 主要經營業務；同頁公司基本資料列示股票代碼3617及統一編號97474067
+    locator: 公司基本資料／主要經營業務；同表列股票代碼3617及統編97474067
     published_date: null
     publisher: 碩天科技股份有限公司
     quote_check: found
     title: 公司簡介－投資人關係
     url: https://www.cyberpower.com/tw/zh/investor/overview
   tw.3617#e10:
-    locator: 產品特色：不斷電系統監控、電腦妥善關機
+    locator: Contract Overview；供應商為TD SYNNEX Corporation
     published_date: null
-    publisher: 碩天科技股份有限公司
-    quote_check: found
-    title: PowerPanel個人版
-    url: https://www.cyberpower.com/tw/zh/product/series/powerpanel_personal
+    publisher: Texas Department of Information Resources
+    quote_check: unreachable
+    title: DIR-CPO-5096
+    url: https://dir.texas.gov/contracts/dir-cpo-5096
   tw.3617#e11:
-    locator: 建議配置（相容裝置）；同節說明UPS與機櫃PDU配置
+    locator: Contract Overview／同一句品牌清單
     published_date: null
-    publisher: 碩天科技股份有限公司
-    quote_check: found
-    title: IT資料中心－解決方案
-    url: https://www.cyberpower.com/tw/zh/solution/it-data-center
+    publisher: Texas Department of Information Resources
+    quote_check: unreachable
+    title: DIR-CPO-5096
+    url: https://dir.texas.gov/contracts/dir-cpo-5096
   tw.3617#e12:
-    locator: 印刷頁75／PDF第79頁，轉投資持股表，基準日2025-12-31；Investment by the Company欄
+    locator: 記者陳怡潔／正文回顧2015年上半年通路結構
+    published_date: '2016-01-07'
+    publisher: MoneyDJ理財網
+    quote_check: found
+    title: 碩天去年EPS上看7元創新高 今年料穩健成長
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=%7Bba8b3d31-fbbb-400e-a195-107d88a2a592%7D
+  tw.3617#e13:
+    locator: 印刷頁51／PDF第55頁／2025年12月31日轉投資持股表
+    published_date: null
+    publisher: 碩天科技股份有限公司
+    quote_check: not_found
+    title: 2025公司年報
+    url: https://www.cyberpower.com/tw/zh/File/GetImageByDocId/AR-26050001-01
+  tw.3617#e14:
+    locator: 印刷頁51／PDF第55頁／控制事業及綜合投資欄
+    published_date: null
+    publisher: 碩天科技股份有限公司
+    quote_check: not_found
+    title: 2025公司年報
+    url: https://www.cyberpower.com/tw/zh/File/GetImageByDocId/AR-26050001-01
+  tw.3617#e15:
+    locator: 印刷頁51／PDF第55頁／2025年12月31日轉投資持股表
+    published_date: null
+    publisher: 碩天科技股份有限公司
+    quote_check: not_found
+    title: 2025公司年報
+    url: https://www.cyberpower.com/tw/zh/File/GetImageByDocId/AR-26050001-01
+  tw.3617#e16:
+    locator: 114年8月7日董事會重要決議
     published_date: null
     publisher: 碩天科技股份有限公司
     quote_check: found
-    title: 2025年報英文版
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52355/2026/RNS/52355_rns_2026-06-10_ab4b31f4-8c0d-41ba-94a6-80ed2d9691ce.pdf
+    title: 董事會重要決議事項
+    url: https://www.cyberpower.com/file/%E8%91%A3%E4%BA%8B%E6%9C%83%E9%87%8D%E8%A6%81%E6%B1%BA%E8%AD%B0%E4%BA%8B%E9%A0%85.pdf
+  tw.3617#e17:
+    locator: 公告主旨及第6項
+    published_date: '2026-05-12'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ轉載
+    quote_check: found
+    title: 碩天董事會通過投資Neu Grant，計2500萬美元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=fb5b9e7f-2372-4452-bebd-118524352ea7
+  tw.3617#e18:
+    locator: 公告主旨；第2項事實發生日為113年11月7日
+    published_date: '2024-11-08'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ轉載
+    quote_check: found
+    title: 碩天董事會決議透過菲律賓新設立之合資控股公司再轉投資公司以取得土地及廠房（更新）
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=ea502e1d-0787-4a94-88d9-ade4cf0c879d
+  tw.3617#e19:
+    locator: 第4項／交易相對人
+    published_date: '2024-11-08'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ轉載
+    quote_check: found
+    title: 碩天菲律賓土地及廠房購置案更新公告
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=ea502e1d-0787-4a94-88d9-ade4cf0c879d
   tw.3617#e2:
-    locator: 公司簡介首段
+    locator: 公司簡介
     published_date: null
     publisher: 碩天科技股份有限公司
     quote_check: found
     title: 公司簡介－投資人關係
     url: https://www.cyberpower.com/tw/zh/investor/overview
+  tw.3617#e20:
+    locator: 第3項／購置價金狀態
+    published_date: '2024-11-08'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ轉載
+    quote_check: found
+    title: 碩天菲律賓土地及廠房購置案更新公告
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=ea502e1d-0787-4a94-88d9-ade4cf0c879d
+  tw.3617#e21:
+    locator: 正文第一段及第二段
+    published_date: '2026-01-15'
+    publisher: 中央社
+    quote_check: found
+    title: 東協財經／碩天決議透過菲律賓合資公司 增加購置廠房及土地
+    url: https://www.cna.com.tw/news/afe/202601153009.aspx
+  tw.3617#e22:
+    locator: 正文第一段及第二段／董事會購置決議與估價
+    published_date: '2026-01-15'
+    publisher: 中央社
+    quote_check: found
+    title: 東協財經／碩天決議透過菲律賓合資公司 增加購置廠房及土地
+    url: https://www.cna.com.tw/news/afe/202601153009.aspx
+  tw.3617#e23:
+    locator: 第5項及第11項／現金增資金額與付款安排
+    published_date: '2026-05-12'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ轉載
+    quote_check: found
+    title: 碩天董事會通過投資Neu Grant，計2500萬美元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=fb5b9e7f-2372-4452-bebd-118524352ea7
   tw.3617#e3:
-    locator: 印刷頁92／PDF第96頁，IV. Operational Highlights，A. Scope of business，2. Business ratios at present；2025年度UPS營收比例
+    locator: 第23頁／營業比重
     published_date: null
     publisher: 碩天科技股份有限公司
     quote_check: found
-    title: 2025年報英文版
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52355/2026/RNS/52355_rns_2026-06-10_ab4b31f4-8c0d-41ba-94a6-80ed2d9691ce.pdf
+    title: 2025年碩天科技永續報告書
+    url: https://esg.cyberpower.com/file/CyberPower-Sustainability-Report-2025-ZH.pdf
   tw.3617#e4:
-    locator: 印刷頁92／PDF第96頁，2. Business ratios at present；2025年度資料中心電源管理營收比例
+    locator: 第62頁／碩天科技產業價值鏈
     published_date: null
     publisher: 碩天科技股份有限公司
     quote_check: found
-    title: 2025年報英文版
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52355/2026/RNS/52355_rns_2026-06-10_ab4b31f4-8c0d-41ba-94a6-80ed2d9691ce.pdf
+    title: 2025年碩天科技永續報告書
+    url: https://esg.cyberpower.com/file/CyberPower-Sustainability-Report-2025-ZH.pdf
   tw.3617#e5:
-    locator: 印刷頁92／PDF第96頁，2. Business ratios at present；2025年度電源保護及管理設備營收比例
+    locator: 印刷頁80／PDF第84頁／主要產品之重要用途
     published_date: null
     publisher: 碩天科技股份有限公司
-    quote_check: found
-    title: 2025年報英文版
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52355/2026/RNS/52355_rns_2026-06-10_ab4b31f4-8c0d-41ba-94a6-80ed2d9691ce.pdf
+    quote_check: not_found
+    title: 2025公司年報
+    url: https://www.cyberpower.com/tw/zh/File/GetImageByDocId/AR-26050001-01
   tw.3617#e6:
-    locator: 印刷頁92／PDF第96頁，2. Business ratios at present；2025年度電源轉換器及電腦週邊設備與配件營收比例
+    locator: 印刷頁77至78／PDF第81至82頁／市場佔有率
     published_date: null
     publisher: 碩天科技股份有限公司
-    quote_check: found
-    title: 2025年報英文版
-    url: https://cdn.financialreports.eu/financialreports/media/filings/52355/2026/RNS/52355_rns_2026-06-10_ab4b31f4-8c0d-41ba-94a6-80ed2d9691ce.pdf
+    quote_check: not_found
+    title: 2025公司年報
+    url: https://www.cyberpower.com/tw/zh/File/GetImageByDocId/AR-26050001-01
   tw.3617#e7:
-    locator: Metered系列介紹
-    published_date: null
+    locator: 新聞正文
+    published_date: '2013-11-18'
     publisher: 碩天科技股份有限公司
     quote_check: found
-    title: 電源配置－配電裝置（PDU）
-    url: https://www.cyberpower.com/tw/zh/product/overview/power-distribution/power-distribution-unit-(pdu)
+    title: CyberPower持續與代理商Ingram Micro合作，至今營運範疇擴展至歐洲和菲律賓
+    url: https://www.cyberpower.com/tw/zh/company/News/newscontent/NW-0000011-01
   tw.3617#e8:
-    locator: Professional系列介紹
+    locator: 商品名稱及型號
     published_date: null
-    publisher: 碩天科技股份有限公司
+    publisher: Costco
     quote_check: found
-    title: 突波保護－居家與辦公室
-    url: https://www.cyberpower.com/tw/zh/product/overview/surge-protection/home-and-office
+    title: CyberPower 1500VA / 900 Watts True Sine Wave Uninterruptible Power Supply (UPS)
+    url: https://www.costco.com/p/-/cyberpower-1500va-900-watts-true-sine-wave-uninterruptible-power-supply-ups/4000091462?DM_PersistentCookieCreated=true&langId=-1
   tw.3617#e9:
-    locator: 混和型逆變器產品介紹
+    locator: Reseller銷售據點分類
     published_date: null
-    publisher: 碩天科技股份有限公司
+    publisher: Cyber Power Systems (USA), Inc.
     quote_check: found
-    title: 太陽能系統－儲能型
-    url: https://www.cyberpower.com/tw/zh/product/overview/solar-power-systems/energy-storage
+    title: Home Depot－Where to Buy
+    url: https://www.cyberpowersystems.com/where-to-buy/home-depot/

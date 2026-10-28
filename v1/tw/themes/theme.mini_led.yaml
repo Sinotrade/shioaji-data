@@ -122,11 +122,18 @@ members:
 - id: tw.3714
   stage: chips
   tier: upstream
-  detail: Mini LED晶粒平台與Micro LED晶片
-  as_of: 2026-10
+  detail: Mini LED晶粒
+  as_of: '2025-12-31'
   evidence:
-  - tw.3714#e7
-  - tw.3714#e9
+  - tw.3714#e2
+  confidence: ai_cross_checked
+- id: tw.3714
+  stage: packaging
+  tier: midstream
+  detail: Mini LED背光封裝與模組
+  as_of: '2025-12-31'
+  evidence:
+  - tw.3714#e2
   confidence: ai_cross_checked
 - id: tw.3717
   stage: display
@@ -163,8 +170,8 @@ members:
 - id: tw.4768
   stage: packaging
   tier: midstream
-  detail: Mini／Micro LED承載基板
-  as_of: '2026-10-15'
+  detail: Mini／Micro LED用銅磁基板
+  as_of: '2026-10-27'
   evidence:
   - tw.4768#e9
   confidence: ai_cross_checked
@@ -265,14 +272,6 @@ members:
   as_of: '2025-12-31'
   evidence:
   - tw.6176#e24
-  confidence: ai_cross_checked
-- id: tw.6209
-  stage: display
-  tier: downstream
-  detail: AR用MicroLED投影光機
-  as_of: '2026-10-15'
-  evidence:
-  - tw.6209#e8
   confidence: ai_cross_checked
 - id: tw.6218
   stage: null
@@ -408,4 +407,4 @@ members:
   evidence:
   - tw.9912#e15
   confidence: ai_cross_checked
-as_of: '2026-10-26'
+as_of: '2026-10-27'

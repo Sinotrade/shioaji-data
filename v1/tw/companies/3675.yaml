@@ -26,27 +26,27 @@ chain_stage:
   stage_name: 晶圓製造
   tier: midstream
 primary_chain_position: midstream
-summary_short: 以二極體、電晶體及功率元件晶圓的製造與銷售為主。
-summary_long: 德微以分離式功率半導體為主業，提供整流、蕭特基、TVS、穩壓與橋式二極體，並有MOSFET、電晶體及保護陣列產品。2025年營收中，二極體及電晶體占64.12%，晶圓占33.65%，其他占2.23%。晶圓產品包括閘流體、FRED、蕭特基、TVS與Zener，晶圓廠產品已應用於AI伺服器。公司亦列有碳化矽二極體及GaN HEMT產品。母公司為Diodes Holdings UK Limited，最終母公司為Diodes Incorporated；子公司包括亞昕科技、喜可士與德昕半導體。
+summary_short: 製造與銷售二極體、電晶體及晶圓，提供封裝測試與代工服務。
+summary_long: 德微科技以二極體、電晶體及晶圓的製造、銷售與檢測服務為主要業務。2025年二極體及電晶體收入約16.91億元，為最大產品別收入來源，晶圓收入約8.87億元。集團由亞昕負責晶圓設計製造、德微提供封裝測試，喜可士負責產品銷售，形成垂直整合分工。Low VF產品已切入AI伺服器與邊緣運算領域，應用包含伺服器電源供應器。德微的直接母公司為Diodes Holdings UK Limited，最終母公司為Diodes Incorporated。2026年10月公開資料顯示，德微持有亞昕76.63%股權；同年另公告以2.5億元向毅太企業取得基隆土地與廠房。
 segments:
 - evidence_ids:
   - e2
-  id: seg_diodes_transistors
+  id: seg_discrete
   name: 二極體及電晶體
   period: '2025'
-  revenue_share_pct: 64.12
+  revenue_share_pct: null
 - evidence_ids:
-  - e2
-  id: seg_wafers
+  - e3
+  id: seg_wafer
   name: 晶圓
   period: '2025'
-  revenue_share_pct: 33.65
+  revenue_share_pct: null
 - evidence_ids:
-  - e2
+  - e5
   id: seg_other
   name: 其他
   period: '2025'
-  revenue_share_pct: 2.23
+  revenue_share_pct: null
 main_theme: theme.ai_server
 themes:
 - also: []
@@ -57,11 +57,36 @@ themes:
   stage: devices
   theme: theme.sic
   tier: midstream
-- also: []
-  stage: devices
-  theme: theme.gan
-  tier: midstream
 relations:
+  customers:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 合併集團關係人銷貨
+    details:
+    - 合併集團關係人銷貨
+    edge: ece65efd2354b
+    evidence_level: primary
+    id: org.diodes-hong-kong
+    name: Diodes Hong Kong Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 合併集團關係人銷貨
+    details:
+    - 合併集團關係人銷貨
+    edge: e44ba208de589
+    evidence_level: primary
+    id: org.diodes-international-taiwan
+    name: 美商達爾國際有限公司台灣分公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   parents:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
@@ -95,129 +120,332 @@ relations:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 半導體子公司
+    detail: 電子元件研發設計與品牌銷售子公司
     details:
-    - 半導體子公司
-    edge: eee02044bd7c5
+    - 電子元件研發設計與品牌銷售子公司
+    edge: e88282aa95ec1
     evidence_level: primary
-    id: org.dexin-semiconductor
-    name: 德昕半導體股份有限公司
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
-  - as_of: '2025-12-31'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 晶圓製造子公司
-    details:
-    - 晶圓製造子公司
-    edge: e255b94662f85
-    evidence_level: primary
-    id: org.episil-technologies-eris
-    name: 亞昕科技股份有限公司
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
-  - as_of: '2025-12-31'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 電子元件研發、設計與銷售子公司
-    details:
-    - 電子元件研發、設計與銷售子公司
-    edge: ebc3f74b02039
-    evidence_level: primary
-    id: org.sikeshi
+    id: org.secos
     name: 喜可士股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: '2026-10-21'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 功率半導體晶圓設計製造子公司
+    details:
+    - 功率半導體晶圓設計製造子公司
+    edge: e469099b0dfe3
+    evidence_level: media
+    id: tw.7960
+    name: 亞昕科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 合併集團進貨，品項未揭露
+    details:
+    - 合併集團進貨，品項未揭露
+    edge: ecd70eb8478f8
+    evidence_level: primary
+    id: org.diodes-international-hsinchu
+    name: 美商達爾國際有限公司新竹分公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 新台幣723,820仟元
+    as_of: '2025-03-24'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司亞昕承接基隆廠晶圓業務
+    details:
+    - 子公司亞昕承接基隆廠晶圓業務
+    - 子公司亞昕取得營業用機器設備
+    edge: e27f13a973f7b
+    event_date: '2025-03-25'
+    events:
+    - amount: 新台幣131,927,998元
+      detail: 子公司亞昕取得營業用機器設備
+      event_date: '2025-03-25'
+    - amount: 新台幣723,820仟元
+      detail: 子公司亞昕承接基隆廠晶圓業務
+      event_date: null
+    evidence_level: primary
+    id: org.diodes-international-keelung
+    name: 盧森堡商達爾國際股份有限公司基隆分公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣180,000仟元
+    as_of: 2024-09
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 收購喜可士40%股權
+    details:
+    - 收購喜可士40%股權
+    - 子公司亞昕收購喜可士剩餘60%股權
+    edge: e02ef0266cd05
+    event_date: '2023-12-20'
+    events:
+    - amount: 新台幣180,000仟元
+      detail: 收購喜可士40%股權
+      event_date: '2023-12-20'
+    - amount: 新台幣194,400仟元
+      detail: 子公司亞昕收購喜可士剩餘60%股權
+      event_date: null
+    evidence_level: primary
+    id: org.secos
+    name: 喜可士股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣250,000,000元
+    as_of: '2026-05-12'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 取得基隆土地與武訓街廠房
+    details:
+    - 取得基隆土地與武訓街廠房
+    edge: e9a415a308cbe
+    event_date: '2026-05-13'
+    events:
+    - amount: 新台幣250,000,000元
+      detail: 取得基隆土地與武訓街廠房
+      event_date: '2026-05-13'
+    evidence_level: primary
+    id: org.yi-tai-enterprise
+    name: 毅太企業股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣800,000仟元
+    as_of: 2024-06
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 認購子公司現金增資
+    details:
+    - 認購子公司現金增資
+    edge: ef241b5763292
+    event_date: null
+    events:
+    - amount: 新台幣800,000仟元
+      detail: 認購子公司現金增資
+      event_date: null
+    evidence_level: primary
+    id: tw.7960
+    name: 亞昕科技股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
 unresolved_mentions:
-- AI高階運算大型ODM客戶（年報未具名）
+- 台達電：未找到符合規則的直接客戶關係證據。
+- 光寶科：未找到符合規則的直接客戶關係證據。
+- 美系AI伺服器供應鏈客戶：報導未具名，不推定為特定品牌或雲端業者。
+- 喜可士原股東：股權交易出售人未具名。
+- 亞昕合作的國際功率元件大廠：報導未具名。
 website: www.eris.com.tw
 tax_id: '89672698'
 incorporated: '1995-08-16'
 listed: '2012-06-29'
-as_of: '2026-10-18'
+as_of: '2026-10-28'
 confidence: ai_cross_checked
 has_research: true
 evidence:
   tw.3675#e1:
-    locator: 公司簡介，業務範疇段落
+    locator: 公司簡介第一段
     published_date: null
     publisher: 德微科技股份有限公司
     quote_check: found
-    title: 德微科技股份有限公司－公司簡介
+    title: 公司簡介
     url: https://www.eris.com.tw/about.php
   tw.3675#e10:
-    locator: 第51頁，2025年12月31日轉投資事業持股表
+    locator: 第14頁，附註一公司沿革，最終母公司說明
     published_date: null
     publisher: 德微科技股份有限公司
     quote_check: found
-    title: 德微科技股份有限公司114年度年報
-    url: https://www.eris.com.tw/UploadImgs/ShareholderMeetingService/2026%20%E5%B9%B4%E8%82%A1%E6%9D%B1%E5%B8%B8%E6%9C%83/%E5%B9%B4%E5%A0%B1/%E5%BE%B7%E5%BE%AE114%E5%B9%B4%E5%A0%B1V5-1-2(%E5%AE%9A%E7%A8%BF)%2B%E5%B0%81%E9%9D%A2(%E5%B7%B2%E8%AA%BF%E6%95%B4)%E5%B0%81%E5%BA%95.pdf
-  tw.3675#e11:
-    locator: 第62頁，附註三四部門資訊
-    published_date: null
-    publisher: 德微科技股份有限公司
-    quote_check: found
-    title: 德微科技股份有限公司及子公司114及113年度合併財務報告
+    title: 2025年度合併財務報告暨會計師查核報告
     url: https://www.eris.com.tw/UploadImgs/FinancialReport/2025%E5%B9%B4%E5%A0%B1(%E4%B8%AD%E6%96%87%E7%89%88).pdf
+  tw.3675#e11:
+    locator: 股東結構段落
+    published_date: '2026-10-21'
+    publisher: 中央社
+    quote_check: found
+    title: 亞昕科技23日每股120元登興櫃 攻邊緣AI商機
+    url: https://www.cna.com.tw/news/afe/202610210254.aspx
+  tw.3675#e12:
+    locator: 第67頁附表四，喜可士投資列：德微40%、亞昕60%，均列子公司
+    published_date: null
+    publisher: 德微科技股份有限公司
+    quote_check: found
+    title: 2025年度合併財務報告暨會計師查核報告
+    url: https://www.eris.com.tw/UploadImgs/FinancialReport/2025%E5%B9%B4%E5%A0%B1(%E4%B8%AD%E6%96%87%E7%89%88).pdf
+  tw.3675#e13:
+    locator: 第55頁附註二八（一），關係人全名與簡稱對照
+    published_date: null
+    publisher: 德微科技股份有限公司
+    quote_check: found
+    title: 2025年度合併財務報告暨會計師查核報告
+    url: https://www.eris.com.tw/UploadImgs/FinancialReport/2025%E5%B9%B4%E5%A0%B1(%E4%B8%AD%E6%96%87%E7%89%88).pdf
+  tw.3675#e14:
+    locator: 第56頁附註二八（二）營業收入，銷貨收入；114年度欄，單位仟元
+    published_date: null
+    publisher: 德微科技股份有限公司
+    quote_check: found
+    title: 2025年度合併財務報告暨會計師查核報告
+    url: https://www.eris.com.tw/UploadImgs/FinancialReport/2025%E5%B9%B4%E5%A0%B1(%E4%B8%AD%E6%96%87%E7%89%88).pdf
+  tw.3675#e15:
+    locator: 第55頁附註二八（一），新竹分公司全名及舊名
+    published_date: null
+    publisher: 德微科技股份有限公司
+    quote_check: found
+    title: 2025年度合併財務報告暨會計師查核報告
+    url: https://www.eris.com.tw/UploadImgs/FinancialReport/2025%E5%B9%B4%E5%A0%B1(%E4%B8%AD%E6%96%87%E7%89%88).pdf
+  tw.3675#e16:
+    locator: 第56頁附註二八（三）進貨；114年度欄，單位仟元
+    published_date: null
+    publisher: 德微科技股份有限公司
+    quote_check: found
+    title: 2025年度合併財務報告暨會計師查核報告
+    url: https://www.eris.com.tw/UploadImgs/FinancialReport/2025%E5%B9%B4%E5%A0%B1(%E4%B8%AD%E6%96%87%E7%89%88).pdf
+  tw.3675#e17:
+    locator: 第60頁附註三二，共同控制下企業合併，取得基隆分公司分割晶圓業務
+    published_date: null
+    publisher: 德微科技股份有限公司
+    quote_check: found
+    title: 2025年度合併財務報告暨會計師查核報告
+    url: https://www.eris.com.tw/UploadImgs/FinancialReport/2025%E5%B9%B4%E5%A0%B1(%E4%B8%AD%E6%96%87%E7%89%88).pdf
+  tw.3675#e18:
+    locator: 第3頁，經營者的話，策略布局段落
+    published_date: 2025-08
+    publisher: 德微科技股份有限公司
+    quote_check: found
+    title: 2024年永續報告書
+    url: https://www.eris.com.tw/img/Eris-2024%20Sustainability%20Report_Print.pdf
+  tw.3675#e19:
+    locator: 亞昕業務與2024年整合段落
+    published_date: '2026-10-21'
+    publisher: 經濟日報
+    quote_check: found
+    title: 德微旗下亞昕23日登興櫃 董座：下半年優於上半年、明年更旺
+    url: https://money.udn.com/money/story/5612/9829048
   tw.3675#e2:
-    locator: 第56頁，公司目前主要業務之營業比重；欄序為113年度、114年度
+    locator: 第63頁，附註三四（二）產品別資訊；114年度欄
     published_date: null
     publisher: 德微科技股份有限公司
     quote_check: found
-    title: 德微科技股份有限公司114年度年報
-    url: https://www.eris.com.tw/UploadImgs/ShareholderMeetingService/2026%20%E5%B9%B4%E8%82%A1%E6%9D%B1%E5%B8%B8%E6%9C%83/%E5%B9%B4%E5%A0%B1/%E5%BE%B7%E5%BE%AE114%E5%B9%B4%E5%A0%B1V5-1-2(%E5%AE%9A%E7%A8%BF)%2B%E5%B0%81%E9%9D%A2(%E5%B7%B2%E8%AA%BF%E6%95%B4)%E5%B0%81%E5%BA%95.pdf
+    title: 2025年度合併財務報告暨會計師查核報告
+    url: https://www.eris.com.tw/UploadImgs/FinancialReport/2025%E5%B9%B4%E5%A0%B1(%E4%B8%AD%E6%96%87%E7%89%88).pdf
+  tw.3675#e20:
+    locator: 第32頁收購說明、第47頁附註二三（一）；2023年12月20日決議，2024年1月2日移轉
+    published_date: null
+    publisher: 德微科技股份有限公司
+    quote_check: found
+    title: 2025年度合併財務報告暨會計師查核報告
+    url: https://www.eris.com.tw/UploadImgs/FinancialReport/2025%E5%B9%B4%E5%A0%B1(%E4%B8%AD%E6%96%87%E7%89%88).pdf
+  tw.3675#e21:
+    locator: 第33頁附註十一，亞昕取得喜可士剩餘股權；2024年9月，194,400仟元、60%
+    published_date: null
+    publisher: 德微科技股份有限公司
+    quote_check: found
+    title: 2025年度合併財務報告暨會計師查核報告
+    url: https://www.eris.com.tw/UploadImgs/FinancialReport/2025%E5%B9%B4%E5%A0%B1(%E4%B8%AD%E6%96%87%E7%89%88).pdf
+  tw.3675#e22:
+    locator: 公告主旨及第1至4項
+    published_date: '2025-03-25'
+    publisher: 公開資訊觀測站重大訊息公告，MoneyDJ轉載
+    quote_check: found
+    title: 德微：亞昕科技取得營業用機器設備一批，計約1.32億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=e6a7f3b5-f1ec-4391-8a55-dcc64c783349
+  tw.3675#e23:
+    locator: 第2項事實發生日、第3項交易金額及第4項交易相對人
+    published_date: '2025-03-25'
+    publisher: 公開資訊觀測站重大訊息公告，MoneyDJ轉載
+    quote_check: found
+    title: 德微：亞昕科技取得營業用機器設備一批，計約1.32億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=e6a7f3b5-f1ec-4391-8a55-dcc64c783349
+  tw.3675#e24:
+    locator: 公告主旨、第1及第2項，標的與事實發生日
+    published_date: '2026-05-13'
+    publisher: 公開資訊觀測站重大訊息公告，MoneyDJ轉載
+    quote_check: found
+    title: 德微取得基隆市安樂區武訓段土地與廠房，計2.5億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=1a9a52aa-6123-485b-bfcd-d943595007e6
+  tw.3675#e25:
+    locator: 第5項交易金額及第6項交易相對人
+    published_date: '2026-05-13'
+    publisher: 公開資訊觀測站重大訊息公告，MoneyDJ轉載
+    quote_check: found
+    title: 德微取得基隆市安樂區武訓段土地與廠房，計2.5億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=1a9a52aa-6123-485b-bfcd-d943595007e6
+  tw.3675#e26:
+    locator: 第33頁附註十一，2024年6月亞昕現金增資認購及員工認股
+    published_date: null
+    publisher: 德微科技股份有限公司
+    quote_check: found
+    title: 2025年度合併財務報告暨會計師查核報告
+    url: https://www.eris.com.tw/UploadImgs/FinancialReport/2025%E5%B9%B4%E5%A0%B1(%E4%B8%AD%E6%96%87%E7%89%88).pdf
   tw.3675#e3:
-    locator: 第58頁，分離式元件產業上、中、下游之關聯性解析
+    locator: 第63頁，附註三四（二）產品別資訊；114年度欄
     published_date: null
     publisher: 德微科技股份有限公司
     quote_check: found
-    title: 德微科技股份有限公司114年度年報
-    url: https://www.eris.com.tw/UploadImgs/ShareholderMeetingService/2026%20%E5%B9%B4%E8%82%A1%E6%9D%B1%E5%B8%B8%E6%9C%83/%E5%B9%B4%E5%A0%B1/%E5%BE%B7%E5%BE%AE114%E5%B9%B4%E5%A0%B1V5-1-2(%E5%AE%9A%E7%A8%BF)%2B%E5%B0%81%E9%9D%A2(%E5%B7%B2%E8%AA%BF%E6%95%B4)%E5%B0%81%E5%BA%95.pdf
+    title: 2025年度合併財務報告暨會計師查核報告
+    url: https://www.eris.com.tw/UploadImgs/FinancialReport/2025%E5%B9%B4%E5%A0%B1(%E4%B8%AD%E6%96%87%E7%89%88).pdf
   tw.3675#e4:
-    locator: 第57頁，公司目前之產品及服務項目B
-    published_date: null
-    publisher: 德微科技股份有限公司
+    locator: 集團分工段落
+    published_date: '2026-10-21'
+    publisher: 經濟日報
     quote_check: found
-    title: 德微科技股份有限公司114年度年報
-    url: https://www.eris.com.tw/UploadImgs/ShareholderMeetingService/2026%20%E5%B9%B4%E8%82%A1%E6%9D%B1%E5%B8%B8%E6%9C%83/%E5%B9%B4%E5%A0%B1/%E5%BE%B7%E5%BE%AE114%E5%B9%B4%E5%A0%B1V5-1-2(%E5%AE%9A%E7%A8%BF)%2B%E5%B0%81%E9%9D%A2(%E5%B7%B2%E8%AA%BF%E6%95%B4)%E5%B0%81%E5%BA%95.pdf
+    title: 德微旗下亞昕23日登興櫃 董座：下半年優於上半年、明年更旺
+    url: https://money.udn.com/money/story/5612/9829048
   tw.3675#e5:
-    locator: 第57頁，公司目前之產品及服務項目C
+    locator: 第63頁，附註三四（二）產品別資訊；114年度欄
     published_date: null
     publisher: 德微科技股份有限公司
     quote_check: found
-    title: 德微科技股份有限公司114年度年報
-    url: https://www.eris.com.tw/UploadImgs/ShareholderMeetingService/2026%20%E5%B9%B4%E8%82%A1%E6%9D%B1%E5%B8%B8%E6%9C%83/%E5%B9%B4%E5%A0%B1/%E5%BE%B7%E5%BE%AE114%E5%B9%B4%E5%A0%B1V5-1-2(%E5%AE%9A%E7%A8%BF)%2B%E5%B0%81%E9%9D%A2(%E5%B7%B2%E8%AA%BF%E6%95%B4)%E5%B0%81%E5%BA%95.pdf
+    title: 2025年度合併財務報告暨會計師查核報告
+    url: https://www.eris.com.tw/UploadImgs/FinancialReport/2025%E5%B9%B4%E5%A0%B1(%E4%B8%AD%E6%96%87%E7%89%88).pdf
   tw.3675#e6:
-    locator: 產品分類標題
+    locator: 產品頁標題
     published_date: null
     publisher: 德微科技股份有限公司
     quote_check: found
-    title: Silicon Carbide Power Schottky Diode (SIC Diode)
+    title: Silicon Carbide Power Schottky Diode
     url: https://www.eris.com.tw/product.php?PD=Product_Schottky_SIC
   tw.3675#e7:
-    locator: 第1頁，114年度營業效益評析
-    published_date: null
-    publisher: 德微科技股份有限公司
+    locator: 董事長談AI應用段落
+    published_date: '2025-05-28'
+    publisher: 自由財經
     quote_check: found
-    title: 德微科技股份有限公司114年度年報
-    url: https://www.eris.com.tw/UploadImgs/ShareholderMeetingService/2026%20%E5%B9%B4%E8%82%A1%E6%9D%B1%E5%B8%B8%E6%9C%83/%E5%B9%B4%E5%A0%B1/%E5%BE%B7%E5%BE%AE114%E5%B9%B4%E5%A0%B1V5-1-2(%E5%AE%9A%E7%A8%BF)%2B%E5%B0%81%E9%9D%A2(%E5%B7%B2%E8%AA%BF%E6%95%B4)%E5%B0%81%E5%BA%95.pdf
+    title: 德微重大轉型有成 產品能見度看到年底
+    url: https://ec.ltn.com.tw/article/breakingnews/5057390
   tw.3675#e8:
-    locator: 第14頁，附註一公司沿革
-    published_date: null
-    publisher: 德微科技股份有限公司
+    locator: 公司說明亞昕產品開發段落
+    published_date: '2025-12-03'
+    publisher: 經濟日報
     quote_check: found
-    title: 德微科技股份有限公司及子公司114及113年度合併財務報告
-    url: https://www.eris.com.tw/UploadImgs/FinancialReport/2025%E5%B9%B4%E5%A0%B1(%E4%B8%AD%E6%96%87%E7%89%88).pdf
+    title: 德微打入美系 AI 伺服器鏈
+    url: https://money.udn.com/money/amp/story/11074/9177674
   tw.3675#e9:
-    locator: 第14頁，附註一公司沿革
+    locator: 第14頁公司沿革、第55頁關係人名稱；持股51.04%
     published_date: null
     publisher: 德微科技股份有限公司
     quote_check: found
-    title: 德微科技股份有限公司及子公司114及113年度合併財務報告
+    title: 2025年度合併財務報告暨會計師查核報告
     url: https://www.eris.com.tw/UploadImgs/FinancialReport/2025%E5%B9%B4%E5%A0%B1(%E4%B8%AD%E6%96%87%E7%89%88).pdf

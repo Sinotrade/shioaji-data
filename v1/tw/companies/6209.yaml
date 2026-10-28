@@ -18,33 +18,33 @@ industry:
   l3_name: 光學元件與鏡頭
   l3_name_en: Optical Components & Lenses
 primary_chain_position: midstream
-summary_short: 以光學鏡頭及鏡片製造為主，產品涵蓋車載、紅外線、物聯網及智慧眼鏡光學。
-summary_long: 今國光的2025年營收組成為光學鏡頭79%、光學鏡片20%、其他1%。公司產品涵蓋車載鏡頭、長波紅外線鏡頭及物聯網鏡頭，並提供AR全彩波導、LCOS與MicroLED投影光機，以及VR Pancake模組。矽光子產品方面，公司提供應用於CPO的矽微透鏡製造技術，官網列有MLA產品。年報揭露的全資轉投資事業包括正國光學香港及互商光學工業，公司公告亦揭露今偉光學工業為子公司。
+summary_short: 設計製造光學鏡頭與鏡片，應用於熱成像、物聯網及車載設備。
+summary_long: 今國光以光學鏡頭與鏡片的設計製造為主，具備玻璃研磨、塑膠射出、玻璃模塑及精密模具加工能力。2025年光學鏡頭、光學鏡片及其他業務占營收分別為79%、20%及1%；2025年前三季遠紅外線鏡頭占營收54%。產品涵蓋物聯網與車載鏡頭，集團紅外線產品亦應用於無人機，另開發AR光波導、光引擎及CPO矽微透鏡。具名客戶包括Amazon與Magna，並與日本電裝共同開發LiDAR鏡頭；年報亦揭露與三星合作微透鏡及奈米壓印技術。正國光學香港為全資子公司，佛山華國則為間接投資的光學製造子公司。
 segments:
 - evidence_ids:
-  - e1
-  id: seg_lens
+  - e2
+  id: optical_lenses
   name: 光學鏡頭
   period: '2025'
   revenue_share_pct: 79
 - evidence_ids:
-  - e2
-  id: seg_element
+  - e3
+  id: optical_elements
   name: 光學鏡片
   period: '2025'
   revenue_share_pct: 20
 - evidence_ids:
-  - e3
-  id: seg_other
+  - e4
+  id: other
   name: 其他
   period: '2025'
   revenue_share_pct: 1
-main_theme: theme.mini_led
+main_theme: theme.drone
 themes:
 - also: []
-  stage: display
-  theme: theme.mini_led
-  tier: downstream
+  stage: components
+  theme: theme.drone
+  tier: upstream
 - also: []
   stage: devices
   theme: theme.silicon_photonics
@@ -54,145 +54,266 @@ themes:
   theme: theme.cpo
   tier: upstream
 relations:
+  customers:
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 物聯網及智慧家庭鏡頭
+    details:
+    - 物聯網及智慧家庭鏡頭
+    edge: ea4090626ba17
+    evidence_level: primary
+    id: us.AMZN
+    name: Amazon
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-10'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 車載鏡頭
+    details:
+    - 車載鏡頭
+    edge: e40ea89e32636
+    evidence_level: media
+    id: us.MGA
+    name: Magna
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  partners:
+  - as_of: '2025-11-25'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 共同開發LiDAR鏡頭
+    details:
+    - 共同開發LiDAR鏡頭
+    edge: e9ab26c0b587c
+    evidence_level: media
+    id: jp.6902
+    name: Denso
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2026-05
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: CPO微透鏡與奈米壓印技術開發
+    details:
+    - CPO微透鏡與奈米壓印技術開發
+    edge: e098a2fe9f4e3
+    evidence_level: primary
+    id: org.samsung-三星
+    name: Samsung(三星)
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持有100%股權
+    detail: 直接持有100%的子公司
     details:
-    - 直接持有100%股權
-    edge: eeb606f18cb2f
+    - 直接持有100%的子公司
+    edge: e5d7d5d09c21e
     evidence_level: primary
-    id: org.互商光學工業-股-公司
-    name: 互商光學工業(股)公司
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
-  - as_of: '2025-01-17'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 子公司
-    details:
-    - 子公司
-    edge: e51d65a7f61bc
-    evidence_level: primary
-    id: org.今偉光學工業股份有限公司
-    name: 今偉光學工業股份有限公司
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
-  - as_of: '2025-12-31'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 直接持有100%股權
-    details:
-    - 直接持有100%股權
-    edge: e27e91f407ac0
-    evidence_level: primary
-    id: org.正國光學香港有限公司
+    id: org.cheng-kuo-optical-hong-kong
     name: 正國光學香港有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: '2026-01-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過第三地區子公司間接投資的光學製造子公司
+    details:
+    - 透過第三地區子公司間接投資的光學製造子公司
+    edge: e1c212185f42c
+    evidence_level: primary
+    id: org.foshan-huaguo-optical
+    name: 佛山華國光學器材有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 玻璃毛胚
+    details:
+    - 玻璃毛胚
+    edge: e9a40ce091e3f
+    evidence_level: primary
+    id: org.保谷科技
+    name: 保谷科技
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 玻璃毛胚
+    details:
+    - 玻璃毛胚
+    edge: ed405ec402070
+    evidence_level: primary
+    id: org.小原
+    name: 小原
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 2025年報匿名客戶：R公司、V公司、C公司、M公司、G公司。
+- 2025年報匿名供應商：戊公司、丁公司、甲公司、丙公司。
+- AR研發專案的美系客戶，未揭露法人名稱。
+- 共同開發車載鏡頭的美系電動車大廠，未揭露名稱。
+- Samsung合作案未揭露三星集團內的具體法人。
 website: www.kinko-optical.com
 tax_id: '56654500'
 incorporated: '1980-06-19'
 listed: '2004-11-08'
-as_of: '2026-10-18'
+as_of: '2026-10-28'
 confidence: ai_cross_checked
 has_research: true
 evidence:
   tw.6209#e1:
-    locator: 印刷頁60／PDF第64頁／主要產品營業比重，114年度
+    locator: ABOUT KINKO LENSES
     published_date: null
     publisher: 今國光學工業股份有限公司
     quote_check: found
-    title: 今國光學工業股份有限公司114年度年報
-    url: https://www.kinko-optical.com/tw/tool-download/page_tw_files/file/244?note=
+    title: Kinko Optical Co., Ltd.
+    url: https://www.kinko-optical.com/
   tw.6209#e10:
-    locator: 矽光子／共同封裝光學／MLA產品描述
-    published_date: null
-    publisher: 今國光學工業股份有限公司
+    locator: 物聯網鏡頭客戶段
+    published_date: '2021-11-15'
+    publisher: MoneyDJ
     quote_check: found
-    title: 共同封裝光學 | 矽光子 | 產品
-    url: https://www.kinko-optical.com/tw/product/3/7
+    title: 今國光新產品挹注，明年營運拚轉盈
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=10f57543-f312-4f18-bc4d-88b77a89c0be
   tw.6209#e11:
-    locator: 印刷頁52／PDF第56頁／轉投資事業持股表，114年12月31日
-    published_date: null
+    locator: 印刷頁40，近年重點營運目標與策略
+    published_date: '2026-08-12'
     publisher: 今國光學工業股份有限公司
     quote_check: found
-    title: 今國光學工業股份有限公司114年度年報
-    url: https://www.kinko-optical.com/tw/tool-download/page_tw_files/file/244?note=
+    title: 今國光學工業股份有限公司2025年永續報告書
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52532/2026/SR/52532_sr_2026-08-12_46b3957a-2639-4d80-9eb1-b300b41b82a4.pdf
   tw.6209#e12:
-    locator: 印刷頁52／PDF第56頁／轉投資事業持股表，114年12月31日
+    locator: 黃立安報導，車載鏡頭合作段
+    published_date: '2025-11-25'
+    publisher: MoneyDJ
+    quote_check: found
+    title: 今國光明年看成長，遠紅外鏡頭需求熱、AR展望佳
+    url: https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=30847c1e-312d-4ecd-9ca8-a9886bcca30f
+  tw.6209#e13:
+    locator: 印刷頁69至70，主要產品銷售狀況之CPO技術項目續表
     published_date: null
     publisher: 今國光學工業股份有限公司
     quote_check: found
     title: 今國光學工業股份有限公司114年度年報
-    url: https://www.kinko-optical.com/tw/tool-download/page_tw_files/file/244?note=
-  tw.6209#e13:
-    locator: 台股公告／標題；公司代號6209
-    published_date: '2025-01-17'
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52532/2026/RNS/52532_rns_2026-05-28_95e3035b-c027-48fc-b9c9-d0a40b5c0f7a.pdf
+  tw.6209#e14:
+    locator: 印刷頁72，主要原料供應狀況表，玻璃毛胚列
+    published_date: null
+    publisher: 今國光學工業股份有限公司
+    quote_check: found
+    title: 今國光學工業股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52532/2026/RNS/52532_rns_2026-05-28_95e3035b-c027-48fc-b9c9-d0a40b5c0f7a.pdf
+  tw.6209#e15:
+    locator: 印刷頁72，主要原料供應狀況表，玻璃毛胚之小原列
+    published_date: null
+    publisher: 今國光學工業股份有限公司
+    quote_check: found
+    title: 今國光學工業股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52532/2026/RNS/52532_rns_2026-05-28_95e3035b-c027-48fc-b9c9-d0a40b5c0f7a.pdf
+  tw.6209#e16:
+    locator: 印刷頁52，截至114年12月31日轉投資持股表；股數與持股比例
+    published_date: null
+    publisher: 今國光學工業股份有限公司
+    quote_check: found
+    title: 今國光學工業股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52532/2026/RNS/52532_rns_2026-05-28_95e3035b-c027-48fc-b9c9-d0a40b5c0f7a.pdf
+  tw.6209#e17:
+    locator: 華國光學營運段
+    published_date: '2026-01-30'
+    publisher: 中央社
+    quote_check: found
+    title: 今國光啟用AR研發中心 今年營收拚增3成
+    url: https://www.cna.com.tw/news/afe/202601300071.aspx
+  tw.6209#e18:
+    locator: 印刷頁79，轉投資政策表註
+    published_date: null
+    publisher: 今國光學工業股份有限公司
+    quote_check: found
+    title: 今國光學工業股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52532/2026/RNS/52532_rns_2026-05-28_95e3035b-c027-48fc-b9c9-d0a40b5c0f7a.pdf
+  tw.6209#e19:
+    locator: 公司簡介首段
+    published_date: null
+    publisher: 佛山華國光學器材有限公司
+    quote_check: found
+    title: 公司簡介－佛山華國光學器材有限公司
+    url: https://www.fshuaguo.com/Company.html
+  tw.6209#e2:
+    locator: 印刷頁60，主要產品營業比重表，光學鏡頭列；114年度金額及比重
+    published_date: null
+    publisher: 今國光學工業股份有限公司
+    quote_check: found
+    title: 今國光學工業股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52532/2026/RNS/52532_rns_2026-05-28_95e3035b-c027-48fc-b9c9-d0a40b5c0f7a.pdf
+  tw.6209#e3:
+    locator: 印刷頁60，主要產品營業比重表，光學鏡片列；114年度金額及比重
+    published_date: null
+    publisher: 今國光學工業股份有限公司
+    quote_check: found
+    title: 今國光學工業股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52532/2026/RNS/52532_rns_2026-05-28_95e3035b-c027-48fc-b9c9-d0a40b5c0f7a.pdf
+  tw.6209#e4:
+    locator: 印刷頁60，主要產品營業比重表，其他列；114年度金額及比重
+    published_date: null
+    publisher: 今國光學工業股份有限公司
+    quote_check: found
+    title: 今國光學工業股份有限公司114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52532/2026/RNS/52532_rns_2026-05-28_95e3035b-c027-48fc-b9c9-d0a40b5c0f7a.pdf
+  tw.6209#e5:
+    locator: 涉及應用的主要事業
+    published_date: null
+    publisher: 今國光學工業股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.kinko-optical.com/tw/company
+  tw.6209#e6:
+    locator: 記者歐宇祥報導，營收結構段
+    published_date: '2025-11-25'
+    publisher: 自由時報
+    quote_check: found
+    title: 無人機帶動遠紅外線鏡頭需求 今國光明年成長勝今年
+    url: https://ec.ltn.com.tw/article/breakingnews/5257750
+  tw.6209#e7:
+    locator: 記者江明晏報導，研發中心開幕段
+    published_date: '2026-01-30'
+    publisher: 中央社
+    quote_check: found
+    title: 今國光啟用AR研發中心 今年營收拚增3成
+    url: https://www.cna.com.tw/news/afe/202601300071.aspx
+  tw.6209#e8:
+    locator: MLA產品描述
+    published_date: null
+    publisher: 今國光學工業股份有限公司
+    quote_check: found
+    title: CPO | Silicon Photonics | Products
+    url: https://www.kinko-optical.com/en/product/3/7
+  tw.6209#e9:
+    locator: 記者張欽發報導，第三季產品應用與客戶段
+    published_date: '2026-10-10'
     publisher: 鉅亨網
     quote_check: found
-    title: 今國光:代子公司今偉光學工業股份有限公司公告新增資金貸與事宜
-    url: https://news.cnyes.com/news/id/5840388
-  tw.6209#e2:
-    locator: 印刷頁60／PDF第64頁／主要產品營業比重，114年度
-    published_date: null
-    publisher: 今國光學工業股份有限公司
-    quote_check: found
-    title: 今國光學工業股份有限公司114年度年報
-    url: https://www.kinko-optical.com/tw/tool-download/page_tw_files/file/244?note=
-  tw.6209#e3:
-    locator: 印刷頁60／PDF第64頁／主要產品營業比重，114年度
-    published_date: null
-    publisher: 今國光學工業股份有限公司
-    quote_check: found
-    title: 今國光學工業股份有限公司114年度年報
-    url: https://www.kinko-optical.com/tw/tool-download/page_tw_files/file/244?note=
-  tw.6209#e4:
-    locator: 產品類別及產品規格列表
-    published_date: null
-    publisher: 今國光學工業股份有限公司
-    quote_check: not_found
-    title: 車載鏡頭 | 產品
-    url: https://www.kinko-optical.com/tw/product/4
-  tw.6209#e5:
-    locator: 產品類別及產品規格列表
-    published_date: null
-    publisher: 今國光學工業股份有限公司
-    quote_check: found
-    title: 長波紅外線鏡頭 | 產品
-    url: https://www.kinko-optical.com/tw/product/5
-  tw.6209#e6:
-    locator: 產品類別及產品規格列表
-    published_date: null
-    publisher: 今國光學工業股份有限公司
-    quote_check: not_found
-    title: 物聯網鏡頭 | 產品
-    url: https://www.kinko-optical.com/tw/product/6
-  tw.6209#e7:
-    locator: AR／波導／產品表
-    published_date: null
-    publisher: 今國光學工業股份有限公司
-    quote_check: found
-    title: 波導 | AR | 產品
-    url: https://www.kinko-optical.com/tw/product/1/1
-  tw.6209#e8:
-    locator: AR／投影機／產品及規格表
-    published_date: null
-    publisher: 今國光學工業股份有限公司
-    quote_check: found
-    title: 投影機 | AR | 產品
-    url: https://www.kinko-optical.com/tw/product/1/2
-  tw.6209#e9:
-    locator: VR／餅乾鏡頭／產品表
-    published_date: null
-    publisher: 今國光學工業股份有限公司
-    quote_check: found
-    title: 餅乾鏡頭 | VR | 產品
-    url: https://www.kinko-optical.com/tw/product/2/3
+    title: 今國光紅外線鏡頭熱賣挹注 前9月營收41.64億元超越去年全年
+    url: https://news.cnyes.com/news/print/6627318

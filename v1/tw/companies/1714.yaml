@@ -14,9 +14,9 @@ industry:
   l2: mat.chemicals
   l2_name: 化工
   l2_name_en: Chemicals
-  l3: chem.petrochem
-  l3_name: 石化與塑膠原料
-  l3_name_en: Petrochemicals & Plastics
+  l3: chem.specialty
+  l3_name: 特用化學品
+  l3_name_en: Specialty Chemicals
 chain: chain.petrochem
 chain_stage:
   agreement: both
@@ -26,91 +26,455 @@ chain_stage:
   stage_name: 中間原料
   tier: midstream
 primary_chain_position: midstream
-summary_short: 以正烷屬烴、烷基苯等清潔劑相關化學原料製造與銷售為主。
-summary_long: 和桐的主要化學產品包括正烷屬烴、直鏈烷基苯及直鏈烷基苯磺酸。公司在台灣高雄設有正烷屬烴生產基地，官網將正烷屬烴列為石化中間原料；直鏈烷基苯磺酸則可用於洗衣粉及洗衣精。依嘉實投顧整理的2025年營收組成，化學品約占94%，水泥約占5%，化學品為主要營收來源。2025年12月公告另確認，江蘇金桐化學工業有限公司為和桐的重要子公司。
+summary_short: 以正烷屬烴、烷基苯及界面活性劑等清潔劑原料產銷為主。
+summary_long: 和桐以清潔劑原料產銷及化學品貿易為主要業務，2025年化學品占合併營收94.23%，水泥與油品分別占5.13%及0.64%。產品涵蓋正烷屬烴、直鏈烷基苯、直鏈烷基苯磺酸及醇醚類界面活性劑，供下游清潔用品製造使用，另供應輕質環保溶劑。2025年年報具名列出P&G與UNILEVER為集團供貨對象。子公司中華全球石油經營油品與化學品儲槽及碼頭服務，和桐水泥從事水泥原料製造與買賣。2024年廈門金桐與南京和盛寶進行辦公室及車位的集團內部移轉；2025年子公司Hsin Tay取得Ally Solution與Big Success股權，屬投資架構調整。
 segments:
 - evidence_ids:
-  - e6
-  id: seg_chemicals
+  - e02
+  id: chemicals
   name: 化學品
   period: '2025'
-  revenue_share_pct: 94
+  revenue_share_pct: 94.23
 - evidence_ids:
-  - e6
-  id: seg_cement
+  - e02
+  id: cement
   name: 水泥
   period: '2025'
-  revenue_share_pct: 5
+  revenue_share_pct: 5.13
+- evidence_ids:
+  - e02
+  - e08
+  id: oil_services
+  name: 油品與倉儲服務
+  period: '2025'
+  revenue_share_pct: 0.64
 relations:
+  customers:
+  - as_of: '2015-10-16'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 清潔劑原料的歷史客戶
+    details:
+    - 清潔劑原料的歷史客戶
+    edge: edc49c5d59c0f
+    evidence_level: media
+    id: jp.4912
+    name: 日本 Lion 獅王
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2020-01-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 清潔劑原料的歷史客戶
+    details:
+    - 清潔劑原料的歷史客戶
+    edge: e267c1f52fe58
+    evidence_level: media
+    id: tw.8906
+    name: 花王
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 清潔劑原料供應
+    details:
+    - 清潔劑原料供應
+    edge: e3bf50dccaf70
+    evidence_level: primary
+    id: us.PG
+    name: P&G
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2025-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 清潔劑原料供應
+    details:
+    - 清潔劑原料供應
+    edge: ec5e4df9769f2
+    evidence_level: primary
+    id: us.UL
+    name: Unilever
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股99.99%的子公司
+    details:
+    - 持股99.99%的子公司
+    edge: e653a9f2acfd6
+    evidence_level: primary
+    id: org.chung-hwa-global-oil
+    name: 中華全球石油股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股94.78%的子公司
+    details:
+    - 持股94.78%的子公司
+    edge: e394e1dc9ac80
+    evidence_level: primary
+    id: org.ho-tung-cement
+    name: 和桐水泥股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
     detail: 重要子公司
     details:
     - 重要子公司
-    edge: e8c23b2959f78
-    evidence_level: media
-    id: org.江蘇金桐化學工業有限公司
+    edge: e7d4aab41808b
+    evidence_level: primary
+    id: org.jiangsu-jintung-chemical
     name: 江蘇金桐化學工業有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 重要子公司
+    details:
+    - 重要子公司
+    edge: e6ee13c5592ef
+    evidence_level: primary
+    id: org.jiangsu-jintung-surfactant
+    name: 江蘇金桐表面活性劑有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 重要子公司
+    details:
+    - 重要子公司
+    edge: e98a8cc496415
+    evidence_level: primary
+    id: org.jintung-petrochemical
+    name: 金桐石油化工有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-17'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 全資子公司及減資重組
+    details:
+    - 全資子公司及減資重組
+    edge: e3895a157329d
+    evidence_level: primary
+    id: org.sheng-tai-oil
+    name: 盛台石油股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: 2024-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團原料採購
+    details:
+    - 集團原料採購
+    edge: e42ccd5b43e71
+    evidence_level: primary
+    id: org.金陵石化
+    name: 金陵石化
+    ranking_basis: disclosed
+    share_basis: purchases
+    share_pct: 12.78
+    weight: 1
+  - as_of: 2014-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 原料油的歷史供應關係
+    details:
+    - 原料油的歷史供應關係
+    edge: ecfcfa0d553b2
+    evidence_level: primary
+    id: org.cpc-corporation-taiwan
+    name: 台灣中油
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 美金8,111,593.91元
+    as_of: '2025-03-12'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司Hsin Tay取得100%股權
+    details:
+    - 子公司Hsin Tay取得100%股權
+    edge: ebb2f12da0491
+    event_date: '2025-03-12'
+    events:
+    - amount: 美金8,111,593.91元
+      detail: 子公司Hsin Tay取得100%股權
+      event_date: '2025-03-12'
+    evidence_level: primary
+    id: org.ally-solution
+    name: Ally Solution Ltd.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 美金4,368,654.63元
+    as_of: '2025-03-12'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司Hsin Tay取得100%股權
+    details:
+    - 子公司Hsin Tay取得100%股權
+    edge: e89c8aef3cbe0
+    event_date: '2025-03-12'
+    events:
+    - amount: 美金4,368,654.63元
+      detail: 子公司Hsin Tay取得100%股權
+      event_date: '2025-03-12'
+    evidence_level: primary
+    id: org.big-success
+    name: Big Success Co.,Ltd
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 人民幣485萬元
+    as_of: '2024-01-24'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司廈門金桐出售辦公室及兩個車位
+    details:
+    - 子公司廈門金桐出售辦公室及兩個車位
+    edge: ef773c466cffa
+    event_date: '2024-01-24'
+    events:
+    - amount: 人民幣485萬元
+      detail: 子公司廈門金桐出售辦公室及兩個車位
+      event_date: '2024-01-24'
+    evidence_level: primary
+    id: org.nanjing-heshengbao
+    name: 南京和盛寶新能源科技有限公司
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 2025年年報以S069代碼揭露的客戶，未揭露公司名稱。
+- 2025年年報所述煤油長期合約煉油廠供應商，未逐一具名。
+- Hsin Tay股權重組的出售方僅稱持股100%之子公司，未揭露名稱。
 website: www.htgroup.com.tw
 tax_id: '12526607'
 incorporated: '1980-08-01'
 listed: '1991-08-30'
-as_of: '2026-10-15'
+as_of: '2026-10-28'
 confidence: ai_cross_checked
 has_research: true
 evidence:
-  tw.1714#e1:
-    locator: 關於和桐－基本資料，首段
+  tw.1714#e02:
+    locator: 印刷頁86，產品及營業比重
     published_date: null
     publisher: 和桐化學股份有限公司
     quote_check: found
-    title: 基本資料－和桐化學股份有限公司
-    url: https://www.htgroup.com.tw/about-9?lang=tw
-  tw.1714#e2:
-    locator: 產品服務
+    title: 2025年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51897/2026/RNS/51897_rns_2026-07-31_c4bd7636-9462-46e9-b54f-bf954e75f0e7.pdf
+  tw.1714#e03:
+    locator: 印刷頁86，業務範圍
     published_date: null
     publisher: 和桐化學股份有限公司
     quote_check: found
-    title: 和桐化學股份有限公司
-    url: https://www.htgroup.com.tw/
-  tw.1714#e3:
-    locator: 陰離子界面活性劑，產品名稱
+    title: 2025年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51897/2026/RNS/51897_rns_2026-07-31_c4bd7636-9462-46e9-b54f-bf954e75f0e7.pdf
+  tw.1714#e04:
+    locator: 印刷頁88，產品發展趨勢
     published_date: null
     publisher: 和桐化學股份有限公司
     quote_check: found
-    title: 產品服務－和桐化學股份有限公司
+    title: 2025年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51897/2026/RNS/51897_rns_2026-07-31_c4bd7636-9462-46e9-b54f-bf954e75f0e7.pdf
+  tw.1714#e05:
+    locator: 正烷屬烴
+    published_date: null
+    publisher: 和桐化學股份有限公司
+    quote_check: found
+    title: 產品服務
     url: https://www.htgroup.com.tw/service?lang=tw
-  tw.1714#e4:
-    locator: 直鏈烷基苯磺酸，用途說明
+  tw.1714#e06:
+    locator: 直鏈烷基苯
     published_date: null
     publisher: 和桐化學股份有限公司
     quote_check: found
-    title: 產品服務－和桐化學股份有限公司
+    title: 產品服務
     url: https://www.htgroup.com.tw/service?lang=tw
-  tw.1714#e5:
-    locator: 正烷屬烴，產品說明
+  tw.1714#e07:
+    locator: 溶劑－輕質環保溶劑
     published_date: null
     publisher: 和桐化學股份有限公司
     quote_check: found
-    title: 產品服務－和桐化學股份有限公司
+    title: 產品服務
     url: https://www.htgroup.com.tw/service?lang=tw
-  tw.1714#e6:
-    locator: 一、公司簡介；2.營業項目與產品結構
-    published_date: '2026-07-28'
-    publisher: MoneyDJ理財網／嘉實投顧
+  tw.1714#e08:
+    locator: 印刷頁86至87，油品倉儲及儲槽碼頭概況
+    published_date: null
+    publisher: 和桐化學股份有限公司
     quote_check: found
-    title: 和桐化學股份有限公司
-    url: https://www.moneydj.com/KMDJ/Wiki/WikiViewer.aspx?KeyID=5f1ab1e5-bb71-4eea-ae71-656cf062816b
-  tw.1714#e7:
-    locator: 公告主旨
+    title: 2025年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51897/2026/RNS/51897_rns_2026-07-31_c4bd7636-9462-46e9-b54f-bf954e75f0e7.pdf
+  tw.1714#e09:
+    locator: 印刷頁87，產業上中下游關聯性
+    published_date: null
+    publisher: 和桐化學股份有限公司
+    quote_check: found
+    title: 2025年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51897/2026/RNS/51897_rns_2026-07-31_c4bd7636-9462-46e9-b54f-bf954e75f0e7.pdf
+  tw.1714#e10:
+    locator: 內文第三段
+    published_date: '2020-01-30'
+    publisher: 東森財經新聞／財訊快報記者巫彩蓮
+    quote_check: found
+    title: 民生清潔需求增，和桐大陸磺化類產品市占率達4成
+    url: https://fnc.ebc.net.tw/fncnews/stock/113762
+  tw.1714#e11:
+    locator: 內文第二段
+    published_date: '2015-10-16'
+    publisher: MoneyDJ新聞／記者陳怡潔
+    quote_check: found
+    title: 和桐今年有望轉盈 但市況料仍較保守
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=%7B7ea69f87-7cd7-4047-b39e-619e509581e2%7D
+  tw.1714#e12:
+    locator: 頁26，輸送管線維護計畫
+    published_date: '2015-12-29'
+    publisher: 和桐化學股份有限公司
+    quote_check: unreachable
+    title: 2014年企業社會責任報告書
+    url: https://sustaihubtokyo.s3-ap-northeast-1.amazonaws.com/CSRreport/Mops/12526607_%E5%92%8C%E6%A1%90_1714/12526607_1714_103_CSRreport.pdf
+  tw.1714#e13:
+    locator: 印刷頁94，主要進貨對象比較表之113年欄
+    published_date: null
+    publisher: 和桐化學股份有限公司
+    quote_check: found
+    title: 2025年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51897/2026/RNS/51897_rns_2026-07-31_c4bd7636-9462-46e9-b54f-bf954e75f0e7.pdf
+  tw.1714#e14:
+    locator: 說明2至4
+    published_date: '2025-03-12'
+    publisher: 和桐化學股份有限公司
+    quote_check: found
+    title: 董事會核准子公司編列土地污染整治預算
+    url: https://www.htgroup.com.tw/pages-85
+  tw.1714#e15:
+    locator: 印刷頁108及111，關係企業資料
+    published_date: null
+    publisher: 和桐化學股份有限公司
+    quote_check: found
+    title: 2025年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51897/2026/RNS/51897_rns_2026-07-31_c4bd7636-9462-46e9-b54f-bf954e75f0e7.pdf
+  tw.1714#e16:
+    locator: 印刷頁111，關係企業董事及持股表
+    published_date: null
+    publisher: 和桐化學股份有限公司
+    quote_check: found
+    title: 2025年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51897/2026/RNS/51897_rns_2026-07-31_c4bd7636-9462-46e9-b54f-bf954e75f0e7.pdf
+  tw.1714#e17:
+    locator: 印刷頁108，關係企業基本資料之和桐水泥列
+    published_date: null
+    publisher: 和桐化學股份有限公司
+    quote_check: found
+    title: 2025年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/51897/2026/RNS/51897_rns_2026-07-31_c4bd7636-9462-46e9-b54f-bf954e75f0e7.pdf
+  tw.1714#e18:
+    locator: 說明2至5
+    published_date: '2025-12-17'
+    publisher: 和桐化學股份有限公司
+    quote_check: found
+    title: 代子公司盛台石油公告董事會決議辦理減資
+    url: https://www.htgroup.com.tw/pages-115
+  tw.1714#e19:
+    locator: 說明5
+    published_date: '2025-12-17'
+    publisher: 和桐化學股份有限公司
+    quote_check: found
+    title: 代子公司盛台石油公告董事會決議辦理減資
+    url: https://www.htgroup.com.tw/pages-115
+  tw.1714#e20:
+    locator: 公告標題
     published_date: '2025-12-31'
-    publisher: MoneyDJ理財網（轉載公開資訊觀測站重大訊息）
+    publisher: 和桐化學股份有限公司
     quote_check: found
-    title: 和桐 代重要子公司江蘇金桐化學工業有限公司公告法人董事改派代表人
-    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=cccf0297-461f-426c-88d6-3d1c6318fff1
+    title: 代重要子公司金桐石油化工公告改派董事長
+    url: https://www.htgroup.com.tw/pages-122
+  tw.1714#e21:
+    locator: 公告標題
+    published_date: '2025-12-31'
+    publisher: 和桐化學股份有限公司
+    quote_check: found
+    title: 代重要子公司江蘇金桐化學工業公告改派董事長
+    url: https://www.htgroup.com.tw/pages-119
+  tw.1714#e22:
+    locator: 公告標題
+    published_date: '2025-12-31'
+    publisher: 和桐化學股份有限公司
+    quote_check: found
+    title: 代重要子公司江蘇金桐表面活性劑公告改派董事長
+    url: https://www.htgroup.com.tw/pages-116
+  tw.1714#e23:
+    locator: 說明3至4
+    published_date: '2024-01-24'
+    publisher: 和桐化學股份有限公司
+    quote_check: found
+    title: 代子公司廈門金桐公告向關係人處分不動產
+    url: https://www.htgroup.com.tw/pages-54
+  tw.1714#e24:
+    locator: 說明1及4
+    published_date: '2024-01-24'
+    publisher: 和桐化學股份有限公司
+    quote_check: found
+    title: 代子公司廈門金桐公告向關係人處分不動產
+    url: https://www.htgroup.com.tw/pages-54
+  tw.1714#e25:
+    locator: 說明1、3及12
+    published_date: '2025-03-12'
+    publisher: 和桐化學股份有限公司
+    quote_check: found
+    title: 代子公司Hsin Tay公告取得Ally Solution及Big Success股權
+    url: https://www.htgroup.com.tw/pages-86
+  tw.1714#e26:
+    locator: 說明1、3及12
+    published_date: '2025-03-12'
+    publisher: 和桐化學股份有限公司
+    quote_check: found
+    title: 代子公司Hsin Tay公告取得Ally Solution及Big Success股權
+    url: https://www.htgroup.com.tw/pages-86
+  tw.1714#e27:
+    locator: 說明4至5
+    published_date: '2025-03-12'
+    publisher: 和桐化學股份有限公司
+    quote_check: found
+    title: 代子公司Hsin Tay公告取得Ally Solution及Big Success股權
+    url: https://www.htgroup.com.tw/pages-86

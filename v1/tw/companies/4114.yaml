@@ -29,35 +29,78 @@ chain_stage:
   stage_name: 製造與代工
   tier: midstream
 primary_chain_position: midstream
-summary_short: 以自製與外購藥品銷售為主，核心技術涵蓋吸入劑、鼻噴劑與特殊劑型。
-summary_long: 健喬以自製產品與外購產品銷售為主要收入來源。2025年合併營收中，自製產品占69.52%、外購產品占27.79%，其他占2.69%。集團核心技術平台涵蓋氫氟烷定量噴霧吸入劑、鼻噴劑、發泡錠、性荷爾蒙及顆粒劑。主要子公司包括優良化學製藥、七星化學製藥、瑞安大藥廠、益得生物科技及優良生技醫藥；2026年第二季合併財報亦將人人化學製藥與韓國公司Synmosa Biopharma Korea Limited列為子公司。
+summary_short: 以自製藥品為主，兼營國際藥品代理、經銷及保健產品。
+summary_long: 健喬從事利基學名藥、特色品牌藥及新藥之研發、製造與銷售，產品涵蓋呼吸道、心血管與泌尿道。2025年合併營收中，自製產品占69.52%、外購產品占27.79%，其餘占2.69%。集團發展鼻噴劑、發泡製劑、定量噴霧吸入劑、性荷爾蒙與顆粒劑五大製造平台。國際合作包括HP Bidco 2的藥品供應、再鼎台灣六項療法代理，以及Nxera失眠藥八市場授權與供應。2026年取得人人化學99.83%股權，收購範圍包含中壢GMP廠房及軟膏產品藥證。
 segments:
 - evidence_ids:
-  - e03
-  id: seg.self_manufactured
+  - e02
+  id: self_manufactured
   name: 自製產品
   period: '2025'
   revenue_share_pct: 69.52
 - evidence_ids:
-  - e04
-  id: seg.purchased
+  - e02
+  id: purchased_products
   name: 外購產品
   period: '2025'
   revenue_share_pct: 27.79
 - evidence_ids:
-  - e05
-  id: seg.other
+  - e02
+  id: other
   name: 其他
   period: '2025'
   revenue_share_pct: 2.69
 relations:
+  partners:
+  - as_of: '2026-01-05'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 六項創新療法台灣獨家代理與商業化
+    details:
+    - 六項創新療法台灣獨家代理與商業化
+    edge: edc388cf48947
+    evidence_level: primary
+    id: org.zai-lab-taiwan
+    name: 再鼎台灣醫藥有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-05-15'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 四款高血壓藥物台灣醫療機構通路推廣
+    details:
+    - 四款高血壓藥物台灣醫療機構通路推廣
+    edge: e3fe60e585aed
+    evidence_level: primary
+    id: org.臺灣諾華-novartis
+    name: 臺灣諾華(Novartis)
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-01'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: Eliquis台灣醫療通路行銷推廣
+    details:
+    - Eliquis台灣醫療通路行銷推廣
+    edge: e7cd0bb06eba7
+    evidence_level: primary
+    id: org.輝瑞大藥廠-pfizer
+    name: 輝瑞大藥廠（Pfizer)
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 列入合併財報之子公司
+    detail: 具實質控制之生物技術子公司
     details:
-    - 列入合併財報之子公司
+    - 具實質控制之生物技術子公司
     - 母公司及最終母公司
     edge: ec0e23c52b397
     evidence_level: primary
@@ -70,13 +113,13 @@ relations:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 列入合併財報之子公司
+    detail: 藥品買賣子公司
     details:
-    - 列入合併財報之子公司
-    edge: e0c091a6663e2
+    - 藥品買賣子公司
+    edge: e97fb7bc3a693
     evidence_level: primary
-    id: org.chi-sheng-chemical-pharmaceutical
-    name: 七星化學製藥股份有限公司
+    id: org.purzer-pharmaceutical
+    name: 瑞安大藥廠股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -84,37 +127,9 @@ relations:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 列入合併財報之子公司
+    detail: 藥品製造買賣子公司
     details:
-    - 列入合併財報之子公司
-    edge: e43b3d81e23c4
-    evidence_level: primary
-    id: org.excell-biopharma
-    name: 優良生技醫藥股份有限公司
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
-  - as_of: '2026-06-30'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 列入合併財報之子公司
-    details:
-    - 列入合併財報之子公司
-    edge: e01400b90c84f
-    evidence_level: primary
-    id: org.excell-pharmaceutical
-    name: 優良化學製藥股份有限公司
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
-  - as_of: '2026-06-30'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 列入合併財報之子公司
-    details:
-    - 列入合併財報之子公司
+    - 藥品製造買賣子公司
     edge: e59ea6cc938e4
     evidence_level: primary
     id: org.ren-ren-chemical-pharmaceutical
@@ -126,23 +141,9 @@ relations:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 列入合併財報之子公司
+    detail: 韓國藥品買賣子公司
     details:
-    - 列入合併財報之子公司
-    edge: e33262b7b19bb
-    evidence_level: primary
-    id: org.ryan-pharmaceuticals
-    name: 瑞安大藥廠股份有限公司
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
-  - as_of: '2026-06-30'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 韓國子公司
-    details:
-    - 韓國子公司
+    - 韓國藥品買賣子公司
     edge: e8b3d7973628f
     evidence_level: primary
     id: org.synmosa-biopharma-korea
@@ -151,102 +152,212 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 藥品製造買賣子公司
+    details:
+    - 藥品製造買賣子公司
+    edge: e0734cca69ee0
+    evidence_level: primary
+    id: org.u-liang-pharmaceutical
+    name: 優良化學製藥股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: '2024-07-15'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 原Celltrion特定藥品供應及台港澳代理經銷
+    details:
+    - 原Celltrion特定藥品供應及台港澳代理經銷
+    edge: e2e45e471d487
+    evidence_level: primary
+    id: org.hp-bidco-2
+    name: HP Bidco 2 Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: QUVIVIQ獨家授權、供應及八市場商業化
+    details:
+    - QUVIVIQ獨家授權、供應及八市場商業化
+    edge: e77f29522ef34
+    evidence_level: primary
+    id: org.nxera-pharma-japan
+    name: Nxera Pharma Japan
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 新台幣658,900仟元
+    as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 收購99.83%股權，含中壢GMP廠房及軟膏藥證
+    details:
+    - 收購99.83%股權，含中壢GMP廠房及軟膏藥證
+    edge: e535130a025fd
+    event_date: '2026-05-14'
+    events:
+    - amount: 新台幣658,900仟元
+      detail: 收購99.83%股權，含中壢GMP廠房及軟膏藥證
+      event_date: '2026-05-14'
+    evidence_level: primary
+    id: org.ren-ren-chemical-pharmaceutical
+    name: 人人化學製藥股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2025-10-07'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 公開收購案，條件未成就
+    details:
+    - 公開收購案，條件未成就
+    edge: ee8b28436940d
+    event_date: '2025-09-15'
+    events:
+    - amount: null
+      detail: 公開收購案，條件未成就
+      event_date: '2025-09-15'
+    evidence_level: primary
+    id: tw.4130
+    name: 健亞生物科技股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 未具名的醫院、診所及藥局客戶
+- 年報僅彙列為其他、個別占比未達10%的供應商及銷貨客戶
 website: http://www.synmosa.com.tw
 tax_id: '43199950'
 incorporated: '1970-08-25'
 listed: '2003-05-12'
-as_of: '2026-10-18'
+as_of: '2026-10-28'
 confidence: ai_cross_checked
 has_research: true
 evidence:
+  tw.4114#e01:
+    locator: 關於健喬集團
+    published_date: '2026-01-05'
+    publisher: 健喬信元醫藥生技股份有限公司
+    quote_check: found
+    title: 健喬信元引進六項全球創新療法
+    url: https://www.synmosa.com.tw/tw/NewsGallery/ugC_NewsGallery_Detail.asp?hidNewsGalleryCatID=1&hidNewsGalleryID=237
   tw.4114#e02:
-    locator: 印刷第2頁，本年度營業計畫概要
+    locator: 印刷頁87，營業比重（合併），114年度
     published_date: null
     publisher: 健喬信元醫藥生技股份有限公司
     quote_check: not_found
     title: 2025年度公司年報
     url: https://www.synmosa.com.tw/tw/ImgSynmosa/2025%E5%B9%B4%E5%BA%A6%E5%85%AC%E5%8F%B8%E5%B9%B4%E5%A0%B1.pdf
   tw.4114#e03:
-    locator: 印刷第87頁，114年度營業比重（合併），自製小計列
+    locator: 委託製造首段
     published_date: null
     publisher: 健喬信元醫藥生技股份有限公司
     quote_check: found
-    title: 2025年度公司年報
-    url: https://www.synmosa.com.tw/tw/ImgSynmosa/2025%E5%B9%B4%E5%BA%A6%E5%85%AC%E5%8F%B8%E5%B9%B4%E5%A0%B1.pdf
+    title: 委託製造
+    url: https://www.synmosa.com.tw/tw/AboutUs02/ugC_Company.asp?hidCompanyID=6
   tw.4114#e04:
-    locator: 印刷第87頁，114年度營業比重（合併），外購小計列
-    published_date: null
+    locator: 正文首段；另參年報印刷頁108之合作協議起日
+    published_date: '2024-07-15'
     publisher: 健喬信元醫藥生技股份有限公司
     quote_check: found
-    title: 2025年度公司年報
-    url: https://www.synmosa.com.tw/tw/ImgSynmosa/2025%E5%B9%B4%E5%BA%A6%E5%85%AC%E5%8F%B8%E5%B9%B4%E5%A0%B1.pdf
+    title: 健喬取得原賽特瑞恩集團藥品代理經銷暨行銷推廣權利
+    url: https://www.synmosa.com.tw/tw/NewsGallery/ugC_NewsGallery_Detail.asp?hidNewsGalleryCatID=1&hidNewsGalleryID=218
   tw.4114#e05:
-    locator: 印刷第87頁，114年度營業比重（合併），其他列
-    published_date: null
+    locator: 正文首段
+    published_date: '2026-01-05'
     publisher: 健喬信元醫藥生技股份有限公司
     quote_check: found
-    title: 2025年度公司年報
-    url: https://www.synmosa.com.tw/tw/ImgSynmosa/2025%E5%B9%B4%E5%BA%A6%E5%85%AC%E5%8F%B8%E5%B9%B4%E5%A0%B1.pdf
+    title: 健喬信元引進六項全球創新療法
+    url: https://www.synmosa.com.tw/tw/NewsGallery/ugC_NewsGallery_Detail.asp?hidNewsGalleryCatID=1&hidNewsGalleryID=237
   tw.4114#e06:
-    locator: 關於健喬，集團技術平台介紹
-    published_date: null
+    locator: 正文2026.10.14公告首段及協議內容段；新聞列表日期為10月15日
+    published_date: '2026-10-15'
     publisher: 健喬信元醫藥生技股份有限公司
     quote_check: found
-    title: 關於健喬
-    url: https://www.synmosa.com.tw/tw/AboutUsSynmosa/ugC_Company.asp
+    title: 健喬與日本Nxera Pharma簽署QUVIVIQ亞太地區八大市場獨家授權、供應及商業化協議
+    url: https://www.synmosa.com.tw/TW/NewsGallery/ugC_NewsGallery_Detail.asp?hidNewsGalleryCatID=1&hidNewsGalleryID=253
   tw.4114#e07:
-    locator: 特色介紹
-    published_date: null
-    publisher: 健喬信元醫藥生技股份有限公司
+    locator: 重大訊息第5點
+    published_date: '2026-06-01'
+    publisher: 鉅亨網（重刊公司重大訊息）
     quote_check: found
-    title: 定量噴霧吸入劑技術平台
-    url: https://www.synmosa.com.tw/tw/AboutUs03/ugC_Company.asp?hidCompanyID=4
+    title: 健喬與輝瑞大藥廠簽訂藥物經銷合約
+    url: https://news.cnyes.com/news/id/6479605
   tw.4114#e08:
-    locator: 第21頁，附註十二子公司表；投資公司欄為本公司，優良化學公司列
-    published_date: null
-    publisher: 健喬信元醫藥生技股份有限公司
+    locator: 重大訊息第5點
+    published_date: '2026-05-13'
+    publisher: 鉅亨網（重刊公司重大訊息）
     quote_check: found
-    title: 民國115及114年第2季合併財務報告
-    url: https://www.synmosa.com.tw/tw/ImgSynmosa/202602_4114_AI1_20260828_171322%28%E7%AC%AC%E4%BA%8C%E5%AD%A3%E8%B2%A1%E5%A0%B1%29%20-%20%E8%A4%87%E8%A3%BD.pdf
+    title: 健喬與臺灣諾華公司簽訂藥物經銷合約
+    url: https://news.cnyes.com/news/id/6457410
   tw.4114#e09:
-    locator: 第21頁，附註十二子公司表；投資公司欄為本公司，七星公司列
+    locator: 正文首段，載明5月14日宣布簽約
     published_date: null
     publisher: 健喬信元醫藥生技股份有限公司
     quote_check: found
-    title: 民國115及114年第2季合併財務報告
-    url: https://www.synmosa.com.tw/tw/ImgSynmosa/202602_4114_AI1_20260828_171322%28%E7%AC%AC%E4%BA%8C%E5%AD%A3%E8%B2%A1%E5%A0%B1%29%20-%20%E8%A4%87%E8%A3%BD.pdf
+    title: 健喬擴大外用製劑布局，收購人人化學
+    url: https://www.synmosa.com.tw/tw/NewsGallery/ugC_NewsGallery_Detail.asp?hidNewsGalleryCatID=1&hidNewsGalleryID=245
   tw.4114#e10:
-    locator: 第21頁，附註十二子公司表；投資公司欄為本公司，瑞安公司列
+    locator: 印刷頁22、49；人人化學收購說明及收購表，金額單位為新台幣仟元
     published_date: null
     publisher: 健喬信元醫藥生技股份有限公司
     quote_check: found
-    title: 民國115及114年第2季合併財務報告
-    url: https://www.synmosa.com.tw/tw/ImgSynmosa/202602_4114_AI1_20260828_171322%28%E7%AC%AC%E4%BA%8C%E5%AD%A3%E8%B2%A1%E5%A0%B1%29%20-%20%E8%A4%87%E8%A3%BD.pdf
+    title: 115年第2季合併財務報告
+    url: https://www.synmosa.com.tw/tw/ImgSynmosa/202602_4114_AI1_20260828_171322(%E7%AC%AC%E4%BA%8C%E5%AD%A3%E8%B2%A1%E5%A0%B1)%20-%20%E8%A4%87%E8%A3%BD.pdf
   tw.4114#e11:
-    locator: 第21頁，附註十二子公司表；投資公司欄為本公司，益得公司列
+    locator: 印刷頁21至22，附註十二子公司表及益得控制判斷；頁75直接持股表
     published_date: null
     publisher: 健喬信元醫藥生技股份有限公司
     quote_check: found
-    title: 民國115及114年第2季合併財務報告
-    url: https://www.synmosa.com.tw/tw/ImgSynmosa/202602_4114_AI1_20260828_171322%28%E7%AC%AC%E4%BA%8C%E5%AD%A3%E8%B2%A1%E5%A0%B1%29%20-%20%E8%A4%87%E8%A3%BD.pdf
+    title: 115年第2季合併財務報告
+    url: https://www.synmosa.com.tw/tw/ImgSynmosa/202602_4114_AI1_20260828_171322(%E7%AC%AC%E4%BA%8C%E5%AD%A3%E8%B2%A1%E5%A0%B1)%20-%20%E8%A4%87%E8%A3%BD.pdf
   tw.4114#e12:
-    locator: 第21頁，附註十二子公司表；投資公司欄為本公司，優良生技公司列
+    locator: 印刷頁21，列入合併財務報告之子公司表；頁75附表六健喬直接投資列，持股77.54%
     published_date: null
     publisher: 健喬信元醫藥生技股份有限公司
     quote_check: found
-    title: 民國115及114年第2季合併財務報告
-    url: https://www.synmosa.com.tw/tw/ImgSynmosa/202602_4114_AI1_20260828_171322%28%E7%AC%AC%E4%BA%8C%E5%AD%A3%E8%B2%A1%E5%A0%B1%29%20-%20%E8%A4%87%E8%A3%BD.pdf
+    title: 115年第2季合併財務報告
+    url: https://www.synmosa.com.tw/tw/ImgSynmosa/202602_4114_AI1_20260828_171322(%E7%AC%AC%E4%BA%8C%E5%AD%A3%E8%B2%A1%E5%A0%B1)%20-%20%E8%A4%87%E8%A3%BD.pdf
   tw.4114#e13:
-    locator: 第21頁，附註十二子公司表；投資公司欄為本公司，韓國子公司列
+    locator: 印刷頁21，列入合併財務報告之子公司表；頁75附表六健喬直接投資列，持股94.58%
     published_date: null
     publisher: 健喬信元醫藥生技股份有限公司
     quote_check: found
-    title: 民國115及114年第2季合併財務報告
-    url: https://www.synmosa.com.tw/tw/ImgSynmosa/202602_4114_AI1_20260828_171322%28%E7%AC%AC%E4%BA%8C%E5%AD%A3%E8%B2%A1%E5%A0%B1%29%20-%20%E8%A4%87%E8%A3%BD.pdf
+    title: 115年第2季合併財務報告
+    url: https://www.synmosa.com.tw/tw/ImgSynmosa/202602_4114_AI1_20260828_171322(%E7%AC%AC%E4%BA%8C%E5%AD%A3%E8%B2%A1%E5%A0%B1)%20-%20%E8%A4%87%E8%A3%BD.pdf
   tw.4114#e14:
-    locator: 第21頁，附註十二子公司表；投資公司欄為本公司，人人化學公司列
+    locator: 印刷頁21至22，韓國子公司列及設立說明，持股100%
     published_date: null
     publisher: 健喬信元醫藥生技股份有限公司
     quote_check: found
-    title: 民國115及114年第2季合併財務報告
-    url: https://www.synmosa.com.tw/tw/ImgSynmosa/202602_4114_AI1_20260828_171322%28%E7%AC%AC%E4%BA%8C%E5%AD%A3%E8%B2%A1%E5%A0%B1%29%20-%20%E8%A4%87%E8%A3%BD.pdf
+    title: 115年第2季合併財務報告
+    url: https://www.synmosa.com.tw/tw/ImgSynmosa/202602_4114_AI1_20260828_171322(%E7%AC%AC%E4%BA%8C%E5%AD%A3%E8%B2%A1%E5%A0%B1)%20-%20%E8%A4%87%E8%A3%BD.pdf
+  tw.4114#e15:
+    locator: 正文首段及收購價格段
+    published_date: '2025-09-26'
+    publisher: 健喬信元醫藥生技股份有限公司
+    quote_check: found
+    title: 健喬公開收購健亞生物科技股權說明
+    url: https://www.synmosa.com.tw/tw/NewsGallery/ugC_NewsGallery_Detail.asp?hidNewsGalleryCatID=1&hidNewsGalleryID=231
+  tw.4114#e16:
+    locator: 印刷頁61，健亞公開收購結果
+    published_date: null
+    publisher: 健喬信元醫藥生技股份有限公司
+    quote_check: found
+    title: 114年第3季合併財務報告
+    url: https://www.synmosa.com.tw/tw/ImgSynmosa/202503_%E7%AC%AC%E4%B8%89%E5%AD%A3.pdf

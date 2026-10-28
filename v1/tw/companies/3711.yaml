@@ -52,8 +52,12 @@ segments:
   name: 其他
   period: '2025'
   revenue_share_pct: 0.4
-main_theme: theme.nvidia
+main_theme: theme.cowos
 themes:
+- also: []
+  stage: manufacturing
+  theme: theme.cowos
+  tier: midstream
 - also: []
   stage: chips
   theme: theme.nvidia
@@ -61,10 +65,6 @@ themes:
 - also: []
   stage: packaging
   theme: theme.cpo
-  tier: midstream
-- also: []
-  stage: manufacturing
-  theme: theme.cowos
   tier: midstream
 relations:
   competitors:
@@ -248,7 +248,7 @@ relations:
     edge: e2f3356bba566
     evidence_level: primary
     id: org.ase-inc
-    name: Advanced Semiconductor Engineering, Inc.
+    name: 日月光
     ranking_basis: unranked
     share_basis: null
     share_pct: null

@@ -54,12 +54,12 @@ themes:
   theme: theme.ev
   tier: downstream
 - also: []
-  stage: modules
-  theme: theme.drone
-  tier: midstream
-- also: []
   stage: control
   theme: theme.robotics
+  tier: midstream
+- also: []
+  stage: modules
+  theme: theme.drone
   tier: midstream
 relations:
   subsidiaries:

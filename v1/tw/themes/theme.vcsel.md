@@ -4,7 +4,7 @@
 
 - 英文：VCSEL
 - 別名：VCSEL
-- 成員：13 家
+- 成員：14 家
 - 完整成員與證據見同目錄同名 YAML，或 themes.json
 
 ## 磊晶（上游，5 家）
@@ -17,13 +17,14 @@
 | [3234](../companies/3234.md) | 光環 | VCSEL磊晶片 |
 | [4971](../companies/4971.md) | IET-KY | VCSEL磊晶片 |
 
-## 晶片製造（中游，5 家）
+## 晶片製造（中游，6 家）
 
 | 代號 | 名稱 | 說明 |
 | --- | --- | --- |
 | [2340](../companies/2340.md) | 台亞 | VCSEL晶片 |
 | [3105](../companies/3105.md) | 穩懋 | VCSEL晶片製造服務 |
 | [3234](../companies/3234.md) | 光環 | VCSEL晶粒製造 |
+| [3714](../companies/3714.md) | 富采 | VCSEL雷射光源 |
 | [4991](../companies/4991.md) | 環宇-KY | VCSEL光電晶圓代工製程研發 |
 | [8086](../companies/8086.md) | 宏捷科 | VCSEL晶片製程與光通訊產品 |
 

@@ -18,36 +18,36 @@ industry:
   l3_name: 工業電腦與嵌入式系統
   l3_name_en: Industrial PCs & Embedded Systems
 primary_chain_position: not_applicable
-summary_short: 以強固型行動電腦、平板、筆記型電腦及工業顯示器為主要產品。
-summary_long: 融程電以強固型行動電腦與顯示器為主要業務，2025年營收分別占92.53%與6.42%，其他業務占1.04%。產品包括D140強固型平板、L140強固型筆記型電腦及投射電容多點觸控顯示器。公司亦提供機器人控制器與TG系列整合式地面控制平台，支援無人機及機器人操作。海外子公司包括TTX Canada、TL Electronic、Winmate Communication US及瑞士Primelco兩家公司。
+summary_short: 主要銷售強固型工業行動電腦、平板及顯示器，並提供無人機與機器人控制設備。
+summary_long: 融程電主要銷售強固型工業用行動電腦與顯示器，依2025年度年報，兩項業務營收占比分別為92.53%及6.42%。具名客戶包括倉儲平板客戶Honeywell、維修中心平板客戶Mercedes Benz及醫療平板客戶Medtronic，各關係依來源所載日期認定。公司亦提供無人機地面控制站與機器人控制設備。2024年增持德國TL Electronic至80%，2025年收購瑞士Primelco Visual Data及Primelco System Device全部股權。2026年投資創捷前瞻及廌融科技，並與Blaize合作國防及關鍵基礎設施的邊緣AI應用。
 segments:
 - evidence_ids:
   - e2
-  id: seg_mobile
-  name: 強固型行動電腦
+  id: seg.mobile
+  name: 強固型工業用行動電腦
   period: '2025'
   revenue_share_pct: 92.53
 - evidence_ids:
-  - e3
-  id: seg_display
+  - e2
+  id: seg.display
   name: 強固型顯示器
   period: '2025'
   revenue_share_pct: 6.42
 - evidence_ids:
-  - e4
-  id: seg_other
+  - e2
+  id: seg.other
   name: 其他
   period: '2025'
   revenue_share_pct: 1.04
-main_theme: theme.drone
+main_theme: theme.robotics
 themes:
-- also: []
-  stage: modules
-  theme: theme.drone
-  tier: midstream
 - also: []
   stage: control
   theme: theme.robotics
+  tier: midstream
+- also: []
+  stage: modules
+  theme: theme.drone
   tier: midstream
 relations:
   competitors:
@@ -65,22 +65,66 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
-  subsidiaries:
-  - as_of: '2026-06-30'
+  customers:
+  - as_of: 2021-04
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 蘇州營運子公司
+    detail: 全球維修中心強固型平板
     details:
-    - 蘇州營運子公司
-    edge: e21f617d94b7d
+    - 全球維修中心強固型平板
+    edge: e3b7fec19490d
     evidence_level: primary
-    id: org.jingrong-automation-suzhou
-    name: 京融電自動化科技(蘇州)有限公司
+    id: org.mercedes-benz
+    name: Mercedes Benz
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2025-09-10'
+  - as_of: '2026-04-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 倉儲平板
+    details:
+    - 倉儲平板
+    edge: e6ea6e1fc2fa8
+    evidence_level: media
+    id: us.HON
+    name: Honeywell
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2023-02-21'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 醫療用平板
+    details:
+    - 醫療用平板
+    edge: e20b0b5c7996d
+    evidence_level: media
+    id: us.MDT
+    name: Medtronic
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  partners:
+  - as_of: '2026-04-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 國防與關鍵基礎設施邊緣AI合作
+    details:
+    - 國防與關鍵基礎設施邊緣AI合作
+    edge: ebb2ef756701c
+    evidence_level: primary
+    id: org.blaize-holdings-inc
+    name: Blaize Holdings, Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
     detail: 瑞士全資子公司
@@ -94,7 +138,7 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2025-09-10'
+  - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
     detail: 瑞士全資子公司
@@ -111,9 +155,9 @@ relations:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 德國營運子公司
+    detail: 德國子公司
     details:
-    - 德國營運子公司
+    - 德國子公司
     edge: ede14ca232312
     evidence_level: primary
     id: org.tl-electronic
@@ -125,9 +169,9 @@ relations:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 加拿大營運子公司
+    detail: 加拿大工業電腦與螢幕銷售子公司
     details:
-    - 加拿大營運子公司
+    - 加拿大工業電腦與螢幕銷售子公司
     edge: ec14cb5f33069
     evidence_level: primary
     id: org.ttx-canada
@@ -139,9 +183,9 @@ relations:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 美國營運子公司
+    detail: 美國工業電腦與螢幕銷售子公司
     details:
-    - 美國營運子公司
+    - 美國工業電腦與螢幕銷售子公司
     edge: e7ef276cdbf2f
     evidence_level: primary
     id: org.winmate-communication-us
@@ -150,123 +194,369 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 新設印度全資子公司
+    details:
+    - 新設印度全資子公司
+    edge: eeb6392c78416
+    evidence_level: primary
+    id: org.winmate-india
+    name: Winmate India Private Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 新設韓國全資子公司
+    details:
+    - 新設韓國全資子公司
+    edge: e7b278c138cc9
+    evidence_level: primary
+    id: org.winmate-korea
+    name: Winmate Korea Co., Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 積體電路
+    details:
+    - 積體電路
+    edge: e347ea4b8669a
+    evidence_level: primary
+    id: tw.2454
+    name: 聯發科
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 積體電路
+    details:
+    - 積體電路
+    edge: e3150137a6da6
+    evidence_level: primary
+    id: us.INTC
+    name: Intel
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 積體電路
+    details:
+    - 積體電路
+    edge: e5b79452834d7
+    evidence_level: primary
+    id: us.NVDA
+    name: NVIDIA
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 積體電路
+    details:
+    - 積體電路
+    edge: e997a8178b168
+    evidence_level: primary
+    id: us.QCOM
+    name: Qualcomm
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 新台幣45,020仟元
+    as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 投資取得17.91%股權
+    details:
+    - 投資取得17.91%股權
+    edge: ec1ff3cc22669
+    event_date: '2026-01-07'
+    events:
+    - amount: 新台幣45,020仟元
+      detail: 投資取得17.91%股權
+      event_date: '2026-01-07'
+    evidence_level: primary
+    id: org.athesi
+    name: 創捷前瞻科技股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: CHF5,900仟元（不含或有對價）
+    as_of: '2025-07-01'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 收購全部股權
+    details:
+    - 收購全部股權
+    edge: e58666b3c0045
+    event_date: '2025-07-01'
+    events:
+    - amount: CHF5,900仟元（不含或有對價）
+      detail: 收購全部股權
+      event_date: '2025-07-01'
+    evidence_level: primary
+    id: org.primelco-system-device
+    name: Primelco System Device AG
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: CHF5,900仟元（不含或有對價）
+    as_of: '2025-07-01'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 收購全部股權
+    details:
+    - 收購全部股權
+    edge: edc201cd97ed4
+    event_date: '2025-07-01'
+    events:
+    - amount: CHF5,900仟元（不含或有對價）
+      detail: 收購全部股權
+      event_date: '2025-07-01'
+    evidence_level: primary
+    id: org.primelco-visual-data
+    name: Primelco Visual Data AG
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: EUR1,700仟元
+    as_of: '2024-01-02'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 增資及購入股份取得控制權
+    details:
+    - 增資及購入股份取得控制權
+    edge: ecbd6cd42d4be
+    event_date: '2024-01-02'
+    events:
+    - amount: EUR1,700仟元
+      detail: 增資及購入股份取得控制權
+      event_date: '2024-01-02'
+    evidence_level: primary
+    id: org.tl-electronic
+    name: TL Electronic GmbH
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣42,000仟元
+    as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 投資設立並取得35%股權
+    details:
+    - 投資設立並取得35%股權
+    edge: ec8f9b0fdc307
+    event_date: '2026-04-07'
+    events:
+    - amount: 新台幣42,000仟元
+      detail: 投資設立並取得35%股權
+      event_date: '2026-04-07'
+    evidence_level: primary
+    id: org.zhirong-technology
+    name: 廌融科技股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 合資成立廌融科技
+    details:
+    - 合資成立廌融科技
+    edge: eaaf1631c2909
+    event_date: null
+    events:
+    - amount: null
+      detail: 合資成立廌融科技
+      event_date: null
+    evidence_level: primary
+    id: tw.7915
+    name: 廌家科技
+    ranking_basis: unranked
+    role: party
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- DRAM：記憶體產品類別，候選線索未提供具名供應商。
+- 2025年度年報以A公司、B公司及C公司匿名揭露的主要客戶，無法與具名客戶配對。
+- 2026年4月報導提及投資一家日本HPC上市公司，但未具名。
+- 規劃併購的泰國工廠未具名，未確認交易完成。
+- 摩洛哥合資公司籌設案未取得足以確認交易對象及完成狀態的資料。
 website: www.winmate.com.tw
 tax_id: '96930209'
 incorporated: '1996-01-23'
 listed: '2015-01-23'
-as_of: '2026-10-18'
+as_of: '2026-10-28'
 confidence: ai_cross_checked
 has_research: true
 evidence:
   tw.3416#e1:
-    locator: 公司基本資料：公司名稱、股票代號、營利事業統一編號及主要經營業務
+    locator: 公司基本資料
     published_date: null
     publisher: 融程電訊股份有限公司
     quote_check: found
     title: 公司概況
     url: https://www.winmate.com.tw/zh-TW/Corporate/Company
   tw.3416#e10:
-    locator: 產品陣容：任務定位
-    published_date: '2026-01-08'
+    locator: 印刷頁72，附註六.27，TL Electronic之收購
+    published_date: '2026-02-24'
     publisher: 融程電訊股份有限公司
     quote_check: found
-    title: 融程強固型平板電腦：助力無人機與機器人地面控制站的卓越可靠性
-    url: https://www.winmate.com.tw/zh-TW/StaticPages/Newsletter/Ground_Control_Station_20260108_News_Winmate-HQ_zh-TW.html
+    title: 融程電訊股份有限公司及子公司114年度合併財務報告
+    url: https://www.winmate.com.tw/upload/Financial/2025Q4.pdf
   tw.3416#e11:
-    locator: 第14至15頁，合併財務報表編製主體，投資公司名稱／子公司名稱
-    published_date: null
+    locator: 印刷頁74，Primelco Visual Data之收購
+    published_date: '2026-02-24'
     publisher: 融程電訊股份有限公司
     quote_check: found
-    title: 融程電訊股份有限公司及子公司民國115年第二季合併財務報告
-    url: https://www.winmate.com/upload/Financial/2026Q2.pdf
+    title: 融程電訊股份有限公司及子公司114年度合併財務報告
+    url: https://www.winmate.com.tw/upload/Financial/2025Q4.pdf
   tw.3416#e12:
-    locator: 第14至15頁，合併財務報表編製主體，投資公司名稱／子公司名稱
-    published_date: null
+    locator: 印刷頁15，合併概況註2
+    published_date: '2026-08-04'
     publisher: 融程電訊股份有限公司
     quote_check: found
-    title: 融程電訊股份有限公司及子公司民國115年第二季合併財務報告
-    url: https://www.winmate.com/upload/Financial/2026Q2.pdf
+    title: 融程電訊股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.winmate.com.tw/upload/Financial/2026Q2.pdf
   tw.3416#e13:
-    locator: 第14至15頁，合併財務報表編製主體，投資公司名稱／子公司名稱
-    published_date: null
+    locator: 印刷頁14，合併主體及115.06.30所持權益表
+    published_date: '2026-08-04'
     publisher: 融程電訊股份有限公司
     quote_check: found
-    title: 融程電訊股份有限公司及子公司民國115年第二季合併財務報告
-    url: https://www.winmate.com/upload/Financial/2026Q2.pdf
+    title: 融程電訊股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.winmate.com.tw/upload/Financial/2026Q2.pdf
   tw.3416#e14:
-    locator: 第14至15頁，合併財務報表編製主體，投資公司名稱／子公司名稱
-    published_date: null
+    locator: 印刷頁14，合併主體及115.06.30所持權益表
+    published_date: '2026-08-04'
     publisher: 融程電訊股份有限公司
     quote_check: found
-    title: 融程電訊股份有限公司及子公司民國115年第二季合併財務報告
-    url: https://www.winmate.com/upload/Financial/2026Q2.pdf
+    title: 融程電訊股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.winmate.com.tw/upload/Financial/2026Q2.pdf
   tw.3416#e15:
-    locator: 公告首段
-    published_date: '2025-09-10'
+    locator: 印刷頁14，合併主體及115.06.30所持權益表
+    published_date: '2026-08-04'
     publisher: 融程電訊股份有限公司
     quote_check: found
-    title: 融程收購瑞士Primelco兩家子公司
-    url: https://www.winmate.com.tw/zh-TW/StaticPages/Newsletter/Swiss_20250910_eDM_Winmate-HQ_zh-TW.html
+    title: 融程電訊股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.winmate.com.tw/upload/Financial/2026Q2.pdf
   tw.3416#e16:
-    locator: 公告首段
-    published_date: '2025-09-10'
+    locator: 印刷頁15，合併概況註3
+    published_date: '2026-08-04'
     publisher: 融程電訊股份有限公司
     quote_check: found
-    title: 融程收購瑞士Primelco兩家子公司
-    url: https://www.winmate.com.tw/zh-TW/StaticPages/Newsletter/Swiss_20250910_eDM_Winmate-HQ_zh-TW.html
+    title: 融程電訊股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.winmate.com.tw/upload/Financial/2026Q2.pdf
+  tw.3416#e17:
+    locator: 印刷頁15，合併概況註4
+    published_date: '2026-08-04'
+    publisher: 融程電訊股份有限公司
+    quote_check: found
+    title: 融程電訊股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.winmate.com.tw/upload/Financial/2026Q2.pdf
+  tw.3416#e18:
+    locator: 印刷頁21，附註六.8(2)
+    published_date: '2026-08-04'
+    publisher: 融程電訊股份有限公司
+    quote_check: found
+    title: 融程電訊股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.winmate.com.tw/upload/Financial/2026Q2.pdf
+  tw.3416#e19:
+    locator: 印刷頁22，附註六.8(4)
+    published_date: '2026-08-04'
+    publisher: 融程電訊股份有限公司
+    quote_check: found
+    title: 融程電訊股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.winmate.com.tw/upload/Financial/2026Q2.pdf
   tw.3416#e2:
-    locator: 年報第106頁，B. Proportion of business，2025年度
+    locator: 印刷頁96，營業比重
     published_date: null
-    publisher: Winmate Inc.
+    publisher: 融程電訊股份有限公司
     quote_check: found
-    title: Winmate Inc. 2025 Annual Report
-    url: https://www.winmate.com/upload/Shareholder/Agm-114-AnnualReport_en.pdf
+    title: 融程電訊股份有限公司114年度年報
+    url: https://www.winmate.com.tw/upload/Shareholder/Agm-114-AnnualReport.pdf
+  tw.3416#e20:
+    locator: 記者方韋傑報導，新動能布局段落
+    published_date: '2026-05-04'
+    publisher: 自由時報
+    quote_check: found
+    title: 融程電軍工、低軌衛星雙引擎發動 第二季營運拚單季新高
+    url: https://ec.ltn.com.tw/article/breakingnews/5425196
   tw.3416#e3:
-    locator: 年報第106頁，B. Proportion of business，2025年度
+    locator: 印刷頁112，主要原料之供應狀況；供應廠商欄
     published_date: null
-    publisher: Winmate Inc.
+    publisher: 融程電訊股份有限公司
     quote_check: found
-    title: Winmate Inc. 2025 Annual Report
-    url: https://www.winmate.com/upload/Shareholder/Agm-114-AnnualReport_en.pdf
+    title: 融程電訊股份有限公司114年度年報
+    url: https://www.winmate.com.tw/upload/Shareholder/Agm-114-AnnualReport.pdf
   tw.3416#e4:
-    locator: 年報第106頁，B. Proportion of business，2025年度
-    published_date: null
+    locator: 記者周瑩慈報導，客戶訂單段落
+    published_date: '2023-02-21'
+    publisher: MoneyDJ理財網
+    quote_check: found
+    title: 車檢、醫療平板增溫，融程電今年拼續創高
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=227a3372-4108-40f6-8ced-7cc85a9ca138
+  tw.3416#e5:
+    locator: 記者王郁倫報導，倉儲物流訂單段落
+    published_date: '2026-04-13'
+    publisher: 經濟日報
+    quote_check: found
+    title: 買足8成記憶體！融程電呂谷清：大客戶猛下長單、訂單能見度創新高
+    url: https://money.udn.com/money/story/5612/9439411
+  tw.3416#e6:
+    locator: PDF第12頁，MILESTONES & TRANSFORMATION
+    published_date: '2021-04-06'
     publisher: Winmate Inc.
     quote_check: found
-    title: Winmate Inc. 2025 Annual Report
-    url: https://www.winmate.com/upload/Shareholder/Agm-114-AnnualReport_en.pdf
-  tw.3416#e5:
-    locator: D140系列強固型平板電腦
-    published_date: null
-    publisher: 融程電訊股份有限公司
-    quote_check: found
-    title: Windows系統強固型平板電腦
-    url: https://www.winmate.com.tw/zh-TW/ProductCategory/Detail/Windows_Rugged_Tablet
-  tw.3416#e6:
-    locator: L140系列強固觸控筆記型電腦
-    published_date: null
-    publisher: 融程電訊股份有限公司
-    quote_check: found
-    title: 強固型筆記型電腦
-    url: https://www.winmate.com.tw/zh-TW/ProductCategory/Detail/Rugged_Laptop
+    title: WINMATE INC INVESTOR PRESENTATION April 2021
+    url: https://www.winmate.com/upload/Shareholder/20210406_Conference_en.pdf
   tw.3416#e7:
-    locator: 產品介紹首段
-    published_date: null
-    publisher: 融程電訊股份有限公司
+    locator: 產品發布首段
+    published_date: '2023-06-29'
+    publisher: Winmate Inc.
     quote_check: found
-    title: 多點觸控（投射電容）工業顯示器
-    url: https://www.winmate.com.tw/ProductCategory/Detail/Multi-touch
+    title: Winmate has launched a UAV Ground Control Station (GCS) with advanced features
+    url: https://www.winmate.com/StaticPages/Newsletter/News_UAV-ground-control_20230629_Winmate-HQ_Global-EN.html
   tw.3416#e8:
-    locator: 首段
-    published_date: '2025-06-26'
-    publisher: 融程電訊股份有限公司
+    locator: 產品介紹
+    published_date: '2024-05-09'
+    publisher: Winmate Inc.
     quote_check: found
-    title: 融程如何驅動無人系統、機器人與AMR的控制核心
-    url: https://www.winmate.com.tw/zh-TW/StaticPages/Newsletter/Robotic-Controller_20250626_News_Winmate-HQ_zh-TW.html
+    title: Introducing Winmate’s Robotics Control Stations
+    url: https://www.winmate.com/en/StaticPages/Newsletter/News_GCS_20240509_Winmate-HQ_Global-EN.html
   tw.3416#e9:
-    locator: 融程的解決方案：為任務而生的整合設計
-    published_date: '2026-01-08'
-    publisher: 融程電訊股份有限公司
+    locator: 合作公告首段
+    published_date: '2026-04-23'
+    publisher: Winmate Inc.
     quote_check: found
-    title: 融程強固型平板電腦：助力無人機與機器人地面控制站的卓越可靠性
-    url: https://www.winmate.com.tw/zh-TW/StaticPages/Newsletter/Ground_Control_Station_20260108_News_Winmate-HQ_zh-TW.html
+    title: Blaize and Winmate Announce Strategic Collaboration to Advance Sovereign Edge AI Capabilities for Defense and Critical Infrastructure
+    url: https://www.winmate.com/en/StaticPages/Newsletter/Edge-AI-20260423-eDM_Winmate-HQ_Global-EN.html

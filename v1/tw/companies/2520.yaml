@@ -84,13 +84,13 @@ relations:
     share_pct: null
     weight: 1
   subsidiaries:
-  - as_of: 2026-10
+  - as_of: '2026-05-27'
     confidence: ai_cross_checked
     counterparty_shares: []
     detail: 營造事業子公司
     details:
     - 營造事業子公司
-    - 母公司
+    - 財報認定之母公司
     edge: e96bbe1b21ef5
     evidence_level: primary
     id: tw.2546
@@ -130,10 +130,15 @@ relations:
   suppliers:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
-    counterparty_shares: []
+    counterparty_shares:
+    - as_of: '2025-12-31'
+      basis: revenue
+      of: tw.2546
+      pct: 20.17
     detail: 冠德建案營造施工
     details:
     - 冠德建案營造施工
+    - 集團住宅與商辦營造工程
     edge: e648539d1c2c5
     evidence_level: primary
     id: tw.2546
@@ -141,7 +146,7 @@ relations:
     ranking_basis: unranked
     share_basis: null
     share_pct: null
-    weight: 1
+    weight: 2
   transactions:
   - amount: null
     as_of: '2024-09-25'
@@ -224,6 +229,27 @@ relations:
     name: 臺北市住宅及都市更新中心
     ranking_basis: unranked
     role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 使用權資產新台幣184,854仟元
+    as_of: '2025-09-01'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 承租辦公場所並取得不動產使用權資產
+    details:
+    - 承租辦公場所並取得不動產使用權資產
+    edge: e39ae7df3b17f
+    event_date: '2025-09-01'
+    events:
+    - amount: 使用權資產新台幣184,854仟元
+      detail: 承租辦公場所並取得不動產使用權資產
+      event_date: '2025-09-01'
+    evidence_level: primary
+    id: tw.2546
+    name: 根基
+    ranking_basis: unranked
+    role: seller
     share_basis: null
     share_pct: null
     weight: 1

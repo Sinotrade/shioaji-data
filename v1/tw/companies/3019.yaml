@@ -51,16 +51,16 @@ segments:
   name: 瞄準器與雷射測距儀
   period: '2025'
   revenue_share_pct: 6
-main_theme: theme.tesla
+main_theme: theme.robotics
 themes:
-- also: []
-  stage: parts
-  theme: theme.tesla
-  tier: midstream
 - also: []
   stage: components
   theme: theme.robotics
   tier: upstream
+- also: []
+  stage: parts
+  theme: theme.tesla
+  tier: midstream
 - also: []
   stage: parts
   theme: theme.liquid_cooling

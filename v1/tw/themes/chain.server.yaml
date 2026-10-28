@@ -467,19 +467,6 @@ members:
   stage: components
   tier: midstream
   stage_role: primary
-- id: tw.3617
-  detail: 不斷電系統占營收55.98%，另提供資料中心備援電源及機櫃配電設備。
-  as_of: '2026-10-15'
-  evidence:
-  - tw.3617#e1
-  - tw.3617#e3
-  - tw.3617#e4
-  - tw.3617#e11
-  confidence: ai_cross_checked
-  source: classification
-  stage: components
-  tier: midstream
-  stage_role: primary
 - id: tw.3653
   detail: 散熱產品占單月營收70.36%，供應伺服器均熱片與液冷散熱模組。
   as_of: '2026-10-14'
@@ -543,11 +530,12 @@ members:
   stage_role: primary
 - id: tw.4931
   detail: 主營鋰離子電池模組，研發伺服器及AI算力中心備援電池，屬電源零組件。
-  as_of: '2026-10-18'
+  as_of: '2026-10-28'
   evidence:
-  - tw.4931#e1
+  - tw.4931#e2
   - tw.4931#e6
   - tw.4931#e8
+  - tw.4931#e16
   confidence: ai_cross_checked
   source: classification
   stage: components
@@ -568,10 +556,11 @@ members:
   stage_role: primary
 - id: tw.5284
   detail: 通訊業務占營收56%，產品包含AI及傳統伺服器儲存櫃機殼。
-  as_of: '2026-10-18'
+  as_of: '2026-10-28'
   evidence:
-  - tw.5284#e_segment
-  - tw.5284#e_server
+  - tw.5284#e2
+  - tw.5284#e3
+  - tw.5284#e4
   confidence: ai_cross_checked
   source: classification
   stage: components
@@ -736,11 +725,11 @@ members:
   stage_role: primary
 - id: tw.6449
   detail: 營收來自導電高分子固態電容，並揭露AI伺服器電容導入方向。
-  as_of: '2026-10-15'
+  as_of: '2026-10-28'
   evidence:
-  - tw.6449#e1
-  - tw.6449#e2
-  - tw.6449#e4
+  - tw.6449#e01
+  - tw.6449#e02
+  - tw.6449#e03
   confidence: ai_cross_checked
   source: classification
   stage: components
@@ -838,10 +827,12 @@ members:
   stage_role: primary
 - id: tw.6933
   detail: AI高效能運算方案占營收58.89%，主要設計製造與整合伺服器及液冷整機櫃。
-  as_of: '2026-10-18'
+  as_of: '2026-10-28'
   evidence:
-  - tw.6933#e2
-  - tw.6933#e3
+  - tw.6933#e01
+  - tw.6933#e02
+  - tw.6933#e12
+  - tw.6933#e13
   confidence: ai_cross_checked
   source: classification
   stage: odm
@@ -883,10 +874,11 @@ members:
   stage_role: primary
 - id: tw.7805
   detail: 以自主設計生產NAS整機為主，中小企業NAS占46.77%；另提供雲端儲存服務。
-  as_of: '2026-10-15'
+  as_of: '2026-10-28'
   evidence:
-  - tw.7805#e_nas
-  - tw.7805#e_mix
+  - tw.7805#e02
+  - tw.7805#e03
+  - tw.7805#e23
   confidence: ai_cross_checked
   source: classification
   stage: odm
@@ -894,10 +886,11 @@ members:
   stage_role: primary
 - id: tw.7805
   detail: 以自主設計生產NAS整機為主，中小企業NAS占46.77%；另提供雲端儲存服務。
-  as_of: '2026-10-15'
+  as_of: '2026-10-28'
   evidence:
-  - tw.7805#e_nas
-  - tw.7805#e_mix
+  - tw.7805#e02
+  - tw.7805#e03
+  - tw.7805#e23
   confidence: ai_cross_checked
   source: classification
   stage: datacenter
@@ -905,11 +898,12 @@ members:
   stage_role: also
 - id: tw.8042
   detail: 主要製造鋁質電容器，液態電容占75.42%，並揭露伺服器用電容與AI產品開發。
-  as_of: '2026-10-15'
+  as_of: '2026-10-28'
   evidence:
   - tw.8042#e1
+  - tw.8042#e2
+  - tw.8042#e3
   - tw.8042#e4
-  - tw.8042#e5
   confidence: ai_cross_checked
   source: classification
   stage: components
@@ -966,4 +960,4 @@ members:
   stage: components
   tier: midstream
   stage_role: primary
-as_of: '2026-10-26'
+as_of: '2026-10-28'

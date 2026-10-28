@@ -261,10 +261,11 @@ members:
 - id: tw.2436
   stage: it
   tier: midstream
-  detail: 資料中心伺服器風扇控制晶片
-  as_of: 2026-10
+  detail: 資料中心伺服器散熱控制晶片
+  as_of: '2026-03-20'
   evidence:
-  - tw.2436#e4
+  - tw.2436#e5
+  - tw.2436#e7
   confidence: ai_cross_checked
 - id: tw.2438
   stage: operation
@@ -364,6 +365,14 @@ members:
   evidence:
   - tw.2495#e8
   confidence: ai_cross_checked
+- id: tw.2546
+  stage: operation
+  tier: downstream
+  detail: 資料中心土建工程建置
+  as_of: '2023-12-21'
+  evidence:
+  - tw.2546#e11
+  confidence: ai_cross_checked
 - id: tw.3002
   stage: equipment
   tier: upstream
@@ -384,10 +393,11 @@ members:
 - id: tw.3029
   stage: it
   tier: midstream
-  detail: 資料中心伺服器、儲存與網路整合
-  as_of: '2026-10-15'
+  detail: 資料中心GPU、網路與儲存產品代理
+  as_of: 2026-10
   evidence:
-  - tw.3029#e9
+  - tw.3029#e09
+  - tw.3029#e12
   - tw.3029#e15
   confidence: ai_cross_checked
 - id: tw.3035
@@ -417,11 +427,10 @@ members:
 - id: tw.3048
   stage: it
   tier: midstream
-  detail: 資料中心 GPU 加速卡通路
-  as_of: '2026-10-18'
+  detail: 資料中心GPU產品通路
+  as_of: '2026-10-28'
   evidence:
-  - tw.3048#e4
-  - tw.3048#e5
+  - tw.3048#e7
   confidence: ai_cross_checked
 - id: tw.3057
   stage: it
@@ -469,10 +478,11 @@ members:
 - id: tw.3135
   stage: it
   tier: midstream
-  detail: 資料中心伺服器相容記憶體
-  as_of: '2026-10-18'
+  detail: 資料中心伺服器記憶體
+  as_of: '2022-09-13'
   evidence:
-  - tw.3135#e8
+  - tw.3135#e9
+  - tw.3135#e13
   confidence: ai_cross_checked
 - id: tw.3147
   stage: operation
@@ -654,10 +664,10 @@ members:
 - id: tw.3617
   stage: equipment
   tier: upstream
-  detail: 資料中心備援電源與配電設備
-  as_of: 2026-10
+  detail: 資料中心電源分配及電力管理設備
+  as_of: '2025-12-31'
   evidence:
-  - tw.3617#e11
+  - tw.3617#e5
   confidence: ai_cross_checked
 - id: tw.3625
   stage: equipment
@@ -761,8 +771,8 @@ members:
 - id: tw.4931
   stage: equipment
   tier: upstream
-  detail: 資料中心備援電力用電池模組
-  as_of: 2026-05
+  detail: 資料中心備援電力設備
+  as_of: '2025-11-27'
   evidence:
   - tw.4931#e6
   confidence: ai_cross_checked
@@ -787,10 +797,10 @@ members:
 - id: tw.4977
   stage: it
   tier: midstream
-  detail: 資料中心用400G光收發模組
+  detail: 資料中心光互連用CPO雷射模組研發
   as_of: 2026-05
   evidence:
-  - tw.4977#e3
+  - tw.4977#e7
   confidence: ai_cross_checked
 - id: tw.4979
   stage: it
@@ -829,10 +839,10 @@ members:
 - id: tw.5309
   stage: equipment
   tier: upstream
-  detail: 資料中心備援電力設備
-  as_of: '2026-03-20'
+  detail: 資料中心UPS電池及BBU備援電力設備
+  as_of: '2026-10-06'
   evidence:
-  - tw.5309#e3
+  - tw.5309#e05
   confidence: ai_cross_checked
 - id: tw.5403
   stage: operation
@@ -947,6 +957,14 @@ members:
   evidence:
   - tw.6180#e05
   - tw.6180#e07
+  confidence: ai_cross_checked
+- id: tw.6183
+  stage: operation
+  tier: downstream
+  detail: 雲端機房營運
+  as_of: '2024-02-15'
+  evidence:
+  - tw.6183#e7
   confidence: ai_cross_checked
 - id: tw.6188
   stage: it
@@ -1086,6 +1104,15 @@ members:
   as_of: '2026-04-10'
   evidence:
   - tw.6290#e2
+  confidence: ai_cross_checked
+- id: tw.6291
+  stage: it
+  tier: midstream
+  detail: 資料中心光纖互連
+  as_of: 2026-05
+  evidence:
+  - tw.6291#e6
+  - tw.6291#e4
   confidence: ai_cross_checked
 - id: tw.6409
   stage: equipment
@@ -1279,13 +1306,13 @@ members:
   - tw.6924#e8
   confidence: ai_cross_checked
 - id: tw.6933
-  stage: it
-  tier: midstream
-  detail: 資料中心伺服器、儲存與機櫃系統
-  as_of: '2025-11-05'
+  stage: operation
+  tier: downstream
+  detail: HostMax託管營運
+  as_of: '2026-03-31'
   evidence:
-  - tw.6933#e4
-  - tw.6933#e5
+  - tw.6933#e12
+  - tw.6933#e13
   confidence: ai_cross_checked
 - id: tw.6982
   stage: equipment
@@ -1315,18 +1342,10 @@ members:
 - id: tw.7792
   stage: equipment
   tier: upstream
-  detail: 資料中心電力系統與備援設備整合
-  as_of: '2026-03-05'
+  detail: 資料中心備援電力設備及系統工程
+  as_of: '2025-02-27'
   evidence:
-  - tw.7792#e11
-  confidence: ai_cross_checked
-- id: tw.7805
-  stage: it
-  tier: midstream
-  detail: 伺服器機房高速網路設備
-  as_of: '2026-10-15'
-  evidence:
-  - tw.7805#e_switch
+  - tw.7792#e09
   confidence: ai_cross_checked
 - id: tw.8011
   stage: operation
@@ -1376,14 +1395,6 @@ members:
   as_of: '2026-09-30'
   evidence:
   - tw.8099#e12
-  confidence: ai_cross_checked
-- id: tw.8114
-  stage: it
-  tier: midstream
-  detail: 軟體定義網路資料中心與邊緣運算
-  as_of: '2026-04-20'
-  evidence:
-  - tw.8114#e10
   confidence: ai_cross_checked
 - id: tw.8171
   stage: equipment
@@ -1475,4 +1486,4 @@ members:
   evidence:
   - tw.9955#e_idc
   confidence: ai_cross_checked
-as_of: '2026-10-26'
+as_of: '2026-10-28'

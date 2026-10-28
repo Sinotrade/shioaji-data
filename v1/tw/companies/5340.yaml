@@ -26,133 +26,282 @@ chain_stage:
   stage_name: 銅箔、玻纖布、樹脂
   tier: upstream
 primary_chain_position: upstream
-summary_short: 製造電子級與工業級玻纖布，主要供銅箔基板及工業材料應用。
-summary_long: 建榮主要製造電子級玻璃纖維布，用於銅箔基板，產品包括高展纖、低介電等規格，位於印刷電路板產業鏈材料端。公司另提供航太玻纖布、PTFE塗佈用玻纖布、高溫濾袋及玻纖遮陽簾。日東紡為其母公司。公司揭露產品開發聚焦AI伺服器、交換器與路由器，亦曾列出5G通訊應用。2026年第一季銷售地區以台灣57%、日本29%為主，美國9%、中國3%、其他2%。
+summary_short: 製造與銷售銅箔基板用電子級及工業級玻璃纖維布。
+summary_long: 建榮以玻璃纖維布製造與銷售為主，電子級產品供銅箔基板使用，另有航太及PTFE用途的工業級產品。產品開發涵蓋NE Glass、T-glass與NER-glass；截至2026年5月，T-glass已通過客戶認證並完成小批量出貨，NER-glass仍在認證測試。公司為日東紡子公司，並以日東紡品牌承作T-glass的OEM生產。2025年具名銷貨對象包括日東紡與NITTOBO TAIWAN，進貨對象包括日東紡及NITTOBO ASIA GLASS FIBER。公司亦揭露AI相關伺服器、交換器及路由器為產品研發方向。
 segments:
 - evidence_ids:
-  - e9
-  id: geo_tw
-  name: 台灣銷售收入
-  period: 2026Q1
-  revenue_share_pct: 57
-- evidence_ids:
-  - e9
-  id: geo_jp
-  name: 日本銷售收入
-  period: 2026Q1
-  revenue_share_pct: 29
-- evidence_ids:
-  - e9
-  id: geo_us
-  name: 美國銷售收入
-  period: 2026Q1
-  revenue_share_pct: 9
-- evidence_ids:
-  - e9
-  id: geo_cn
-  name: 中國銷售收入
-  period: 2026Q1
-  revenue_share_pct: 3
-- evidence_ids:
-  - e9
-  id: geo_other
-  name: 其他地區銷售收入
-  period: 2026Q1
-  revenue_share_pct: 2
+  - e01
+  id: seg_glass_fabric
+  name: 玻璃纖維布
+  period: '2024'
+  revenue_share_pct: 100
 main_theme: theme.ai_server
 themes:
 - also: []
   stage: board_materials
   theme: theme.ai_server
   tier: upstream
-- also: []
-  stage: components
-  theme: theme.5g
-  tier: upstream
 relations:
+  customers:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 玻纖布相關銷售
+    details:
+    - 玻纖布相關銷售
+    edge: e9f35e6805b69
+    evidence_level: primary
+    id: org.nittobo-taiwan
+    name: NITTOBO TAIWAN CO., LTD.
+    ranking_basis: disclosed
+    share_basis: revenue
+    share_pct: 43
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 玻纖布相關銷售與代工
+    details:
+    - 玻纖布相關銷售與代工
+    edge: edeaa1bf1b780
+    evidence_level: primary
+    id: jp.3110
+    name: 日東紡(Nittobo)
+    ranking_basis: disclosed
+    share_basis: revenue
+    share_pct: 32
+    weight: 1
   parents:
   - as_of: '2026-05-15'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 母公司
+    detail: 母公司日東紡，持股47.65%
     details:
-    - 母公司
-    edge: e0903da103b0e
+    - 母公司日東紡，持股47.65%
+    edge: eb809b73b53f0
     evidence_level: primary
-    id: org.日東紡
-    name: 日東紡
+    id: jp.3110
+    name: 日東紡(Nittobo)
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
+  partners:
+  - as_of: '2026-05-15'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 日東紡品牌T-glass OEM生產與銷售分工
+    details:
+    - 日東紡品牌T-glass OEM生產與銷售分工
+    edge: eed1b9080f1ca
+    evidence_level: media
+    id: jp.3110
+    name: 日東紡(Nittobo)
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 玻纖紗
+    details:
+    - 玻纖紗
+    edge: edd9da9d28a05
+    evidence_level: primary
+    id: org.nittobo-asia-glass-fiber
+    name: NITTOBO ASIA GLASS FIBER CO., LTD.
+    ranking_basis: disclosed
+    share_basis: purchases
+    share_pct: 93
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 商品進貨，未細分品項
+    details:
+    - 商品進貨，未細分品項
+    edge: e2989fe85456d
+    evidence_level: primary
+    id: jp.3110
+    name: 日東紡(Nittobo)
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 新台幣2,227仟元
+    as_of: '2024-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 2024年度取得不動產、廠房及設備
+    details:
+    - 2024年度取得不動產、廠房及設備
+    edge: e14d201c47e29
+    event_date: null
+    events:
+    - amount: 新台幣2,227仟元
+      detail: 2024年度取得不動產、廠房及設備
+      event_date: null
+    evidence_level: primary
+    id: org.nittobo-global-trading
+    name: NITTOBO GLOBAL TRADING CO., LTD.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣56,740仟元
+    as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 2025年度取得不動產、廠房及設備
+    details:
+    - 2025年度取得不動產、廠房及設備
+    edge: ed67ffb389c79
+    event_date: null
+    events:
+    - amount: 新台幣56,740仟元
+      detail: 2025年度取得不動產、廠房及設備
+      event_date: null
+    evidence_level: primary
+    id: org.nittobo-techno
+    name: NITTOBO TECHNO CO., LTD.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 未具名的銅箔基板客戶
+- T-glass通過認證及收貨的客戶，官方法說未揭露名稱
+- 日本、日本在台公司及台灣本土的玻纖紗供應來源
+- 日本及美國的偶合劑供應商
 website: http://www.baotek.com.tw
 tax_id: '86691377'
 incorporated: '1992-08-12'
 listed: '1998-01-20'
-as_of: '2026-10-15'
+as_of: '2026-10-28'
 confidence: ai_cross_checked
 has_research: true
 evidence:
-  tw.5340#e1:
-    locator: Product Description
+  tw.5340#e01:
+    locator: 年報第54頁，4.1.1營業內容
+    published_date: '2025-03-30'
+    publisher: 建榮工業材料股份有限公司
+    quote_check: found
+    title: 2024 Annual Report
+    url: https://www.baotek.com.tw/upload/2024%20Annual%20Report.pdf
+  tw.5340#e02:
+    locator: 年報第54頁，現有產品
+    published_date: '2025-03-30'
+    publisher: 建榮工業材料股份有限公司
+    quote_check: found
+    title: 2024 Annual Report
+    url: https://www.baotek.com.tw/upload/2024%20Annual%20Report.pdf
+  tw.5340#e03:
+    locator: 議事手冊第15頁，2025年完成事項第1項
     published_date: null
     publisher: 建榮工業材料股份有限公司
     quote_check: found
-    title: Electronic－電子級玻纖布產品介紹
-    url: https://www.baotek.com.tw/index.php?action=pro4
-  tw.5340#e2:
-    locator: Product Description
-    published_date: null
+    title: 2026 Annual Shareholders’ Meeting Agenda
+    url: https://www.baotek.com.tw/upload/Meeting%20Agenda%20of%202026%20Annual%20Shareholders%20Meeting.pdf
+  tw.5340#e04:
+    locator: 第18頁，T-glass認證與出貨進度
+    published_date: '2026-05-15'
     publisher: 建榮工業材料股份有限公司
     quote_check: found
-    title: Aerospace－航太用玻纖布產品介紹
-    url: https://www.baotek.com.tw/index.php?action=pro
-  tw.5340#e3:
-    locator: Product Description
-    published_date: null
+    title: 2026年第一季法人說明會簡報
+    url: https://www.baotek.com.tw/upload/2026Q1conference-cht.pdf
+  tw.5340#e05:
+    locator: 第18頁，NER-glass認證進度
+    published_date: '2026-05-15'
     publisher: 建榮工業材料股份有限公司
     quote_check: found
-    title: PTFE－玻纖布產品介紹
-    url: https://www.baotek.com.tw/index.php?action=pro3
-  tw.5340#e4:
-    locator: Product Description
-    published_date: null
-    publisher: 建榮工業材料股份有限公司
-    quote_check: found
-    title: Filter Bag－玻纖高溫濾袋產品介紹
-    url: https://www.baotek.com.tw/index.php?action=pro1
-  tw.5340#e5:
-    locator: Product Description
-    published_date: null
-    publisher: 建榮工業材料股份有限公司
-    quote_check: found
-    title: Fiberglass sun shade－玻纖遮陽簾產品介紹
-    url: https://www.baotek.com.tw/index.php?action=pro2
-  tw.5340#e6:
+    title: 2026年第一季法人說明會簡報
+    url: https://www.baotek.com.tw/upload/2026Q1conference-cht.pdf
+  tw.5340#e06:
     locator: 第2頁，議程
     published_date: '2026-05-15'
     publisher: 建榮工業材料股份有限公司
     quote_check: found
-    title: 建榮2026年第一季法人說明會簡報
+    title: 2026年第一季法人說明會簡報
     url: https://www.baotek.com.tw/upload/2026Q1conference-cht.pdf
-  tw.5340#e7:
-    locator: PDF第16頁，State of Research & Development
+  tw.5340#e07:
+    locator: PDF第41頁，董事持股表；2026年3月28日持股，Nitto Boseki列
     published_date: null
     publisher: 建榮工業材料股份有限公司
     quote_check: found
-    title: 2026 Annual Shareholders’ Meeting－Meeting Agenda
+    title: 2026 Annual Shareholders’ Meeting Agenda
     url: https://www.baotek.com.tw/upload/Meeting%20Agenda%20of%202026%20Annual%20Shareholders%20Meeting.pdf
-  tw.5340#e8:
-    locator: 第8頁，產品應用範圍
-    published_date: '2023-11-17'
+  tw.5340#e08:
+    locator: 第43頁附註7(2)A對母公司銷售728,936仟元；附表一列銷售占比32%
+    published_date: null
     publisher: 建榮工業材料股份有限公司
     quote_check: found
-    title: 建榮2023年第三季法人說明會簡報
-    url: https://www.baotek.com.tw/upload/2023Q3conference-cht.pdf
-  tw.5340#e9:
-    locator: 第14頁，2026年Q1銷售地區占比圖
+    title: 2025年度財務報告英文版
+    url: https://www.baotek.com.tw/images/2025Q4%20Financial%20Report.pdf
+  tw.5340#e09:
+    locator: 第43頁附註7(2)B，Purchases of goods／Parent company／NITTO BOSEKI，2025年度欄，單位新台幣仟元
+    published_date: null
+    publisher: 建榮工業材料股份有限公司
+    quote_check: not_found
+    title: 2025年度財務報告英文版
+    url: https://www.baotek.com.tw/images/2025Q4%20Financial%20Report.pdf
+  tw.5340#e10:
+    locator: 第42頁關係人名冊、第43頁附註7(2)A銷售表；附表一列銷售占比43%
+    published_date: null
+    publisher: 建榮工業材料股份有限公司
+    quote_check: found
+    title: 2025年度財務報告英文版
+    url: https://www.baotek.com.tw/images/2025Q4%20Financial%20Report.pdf
+  tw.5340#e11:
+    locator: 第43頁附註7(2)B進貨表；附表一列進貨占比93%，金額單位新台幣仟元
+    published_date: null
+    publisher: 建榮工業材料股份有限公司
+    quote_check: found
+    title: 2025年度財務報告英文版
+    url: https://www.baotek.com.tw/images/2025Q4%20Financial%20Report.pdf
+  tw.5340#e12:
+    locator: 第1頁，第7列；福隆中英文名稱對照
+    published_date: null
+    publisher: 經濟部
+    quote_check: found
+    title: 2025臺灣全球招商論壇簽署LOI廠商名單
+    url: https://www.moea.gov.tw/Mns/populace/news/wHandNews_File.ashx?file_id=121676
+  tw.5340#e13:
+    locator: 記者馬琬淳報導，福隆供應建榮段落
+    published_date: '2026-01-19'
+    publisher: 經濟日報
+    quote_check: found
+    title: 玻纖布缺貨潮蔓延 台玻、建榮等四檔亮燈漲停
+    url: https://money.udn.com/money/story/5607/9274027?from=edn_stock_index
+  tw.5340#e14:
+    locator: 第45頁附註7(2)G取得不動產廠房設備，2025年度欄；第42頁關係人名冊作NITTOBO TECHNO
+    published_date: null
+    publisher: 建榮工業材料股份有限公司
+    quote_check: found
+    title: 2025年度財務報告英文版
+    url: https://www.baotek.com.tw/images/2025Q4%20Financial%20Report.pdf
+  tw.5340#e15:
+    locator: 第45頁附註7(2)G，NITTOBO GLOBAL TRADING列2024年度欄；第42頁註3說明原名SOYO
+    published_date: null
+    publisher: 建榮工業材料股份有限公司
+    quote_check: not_found
+    title: 2025年度財務報告英文版
+    url: https://www.baotek.com.tw/images/2025Q4%20Financial%20Report.pdf
+  tw.5340#e16:
+    locator: 末段，T-glass OEM及銷售分工
     published_date: '2026-05-15'
+    publisher: 台視財經／MoneyDJ，記者萬惠雯
+    quote_check: found
+    title: 建榮T-Glass產品Q2已量產；今年資本支出增4-6成
+    url: https://www.ttv.com.tw/finance/view/?from=587&i=052026151715F1512FD5A22C4E1096475190D9296B78BF75
+  tw.5340#e17:
+    locator: 議事手冊第14頁，2025年研究發展狀況
+    published_date: null
     publisher: 建榮工業材料股份有限公司
     quote_check: found
-    title: 建榮2026年第一季法人說明會簡報
-    url: https://www.baotek.com.tw/upload/2026Q1conference-cht.pdf
+    title: 2026 Annual Shareholders’ Meeting Agenda
+    url: https://www.baotek.com.tw/upload/Meeting%20Agenda%20of%202026%20Annual%20Shareholders%20Meeting.pdf

@@ -26,26 +26,25 @@ chain_stage:
   stage_name: 設備與廠務
   tier: upstream
 primary_chain_position: upstream
-summary_short: 製造載板、PCB及半導體用自動化搬運、倉儲與生產設備。
-summary_long: 迅得以自動化設備製造與銷售為主，涵蓋載板與PCB設備、晶圓廠物料搬運與智慧倉儲，以及封測與顯示器自動化。2025年依年報重分類後的產品別，前述三類分別占營收55.94%、43.59%與0.47%。公司提供ABF／BT載板自動化，並開發適用CoWoS與FOPLP的晶圓機器人。海外事業包括全資持有的Symtek Automation Ltd.、間接持有的東莞公司，以及江蘇與泰國子公司。
+summary_short: 銷售PCB、IC載板及半導體自動化設備，提供智慧倉儲與物料搬運系統。
+summary_long: 迅得以銷售產業自動化設備及整合服務為主要業務，應用涵蓋PCB、IC載板、晶圓製造與封裝。依2025年度年報產品分類，載板與PCB自動化設備占營收55.94%，晶圓廠與半導體自動化設備占43.59%，其餘封測與平面顯示器設備占0.47%。產品包括AMHS、智慧倉儲、移動式機器人，以及適用於CoWoS與FOPLP的晶圓機器人傳輸技術；亦與家登合作開發EUV光罩載具倉儲方案。具名客戶包括台積電、欣興、南電，以及日月光投控旗下的日月光半導體製造公司。2024年董事會決議向聯琦金屬出售楊梅廠土地及廠房，2026年另公告博世科、濾能及友上科技投資案件。
 segments:
 - evidence_ids:
   - e2
   id: seg_pcb
-  name: 載板（印刷電路板）自動化設備－IBU
+  name: 載板與PCB自動化設備（IBU）
   period: '2025'
   revenue_share_pct: 55.94
 - evidence_ids:
   - e3
-  id: seg_semiconductor
-  name: 晶圓廠（半導體）自動化設備－FBU
+  id: seg_semi
+  name: 晶圓廠與半導體自動化設備（FBU）
   period: '2025'
   revenue_share_pct: 43.59
 - evidence_ids:
   - e4
-  - e12
   id: seg_display
-  name: 封測（平面顯示器）自動化設備－BBU
+  name: 封測與平面顯示器自動化設備（BBU，重分類後）
   period: '2025'
   revenue_share_pct: 0.47
 main_theme: theme.robotics
@@ -56,6 +55,10 @@ themes:
   tier: downstream
 - also: []
   stage: equipment
+  theme: theme.euv
+  tier: midstream
+- also: []
+  stage: equipment
   theme: theme.cowos
   tier: upstream
 - also: []
@@ -63,16 +66,88 @@ themes:
   theme: theme.abf
   tier: upstream
 relations:
+  customers:
+  - as_of: '2026-09-10'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 營業用機器設備
+    details:
+    - 營業用機器設備
+    edge: e5d086a26db2c
+    evidence_level: primary
+    id: org.advanced-semiconductor-engineering
+    name: 日月光半導體製造(股)公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 半導體自動化設備
+    details:
+    - 半導體自動化設備
+    edge: ec3d3484b23f7
+    evidence_level: media
+    id: tw.2330
+    name: 台積電
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: PCB與載板自動化設備
+    details:
+    - PCB與載板自動化設備
+    edge: e064e2c4b6fed
+    evidence_level: media
+    id: tw.3037
+    name: 欣興
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: PCB與載板自動化設備
+    details:
+    - PCB與載板自動化設備
+    edge: e50729c5e44c6
+    evidence_level: media
+    id: tw.8046
+    name: 南電
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  partners:
+  - as_of: '2021-08-11'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 共同開發EUV Lite Purge Stocker
+    details:
+    - 共同開發EUV Lite Purge Stocker
+    edge: e6754151456b2
+    evidence_level: media
+    id: tw.3680
+    name: 家登
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 透過東莞公司間接持有60%的設備公司
+    detail: 透過迅得東莞持有的設備製造及銷售子公司
     details:
-    - 透過東莞公司間接持有60%的設備公司
-    edge: eb1933691dc2a
+    - 透過迅得東莞持有的設備製造及銷售子公司
+    edge: eedda59944377
     evidence_level: primary
-    id: org.jiangsu-xunlianke
+    id: org.jiangsu-symtek-high-technology
     name: 江蘇迅聯科高新技術有限公司
     ranking_basis: unranked
     share_basis: null
@@ -81,12 +156,12 @@ relations:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 透過SAL間接持有100%的設備製造與銷售公司
+    detail: 透過SAL持有的設備製造及銷售子公司
     details:
-    - 透過SAL間接持有100%的設備製造與銷售公司
-    edge: e41d5c858e2f5
+    - 透過SAL持有的設備製造及銷售子公司
+    edge: e22253b4d1bc0
     evidence_level: primary
-    id: org.symtek-automation-china
+    id: org.symtek-automation-dongguan
     name: 迅得機械（東莞）有限公司
     ranking_basis: unranked
     share_basis: null
@@ -95,9 +170,9 @@ relations:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持有100%的投資子公司
+    detail: 直接持有的投資子公司
     details:
-    - 直接持有100%的投資子公司
+    - 直接持有的投資子公司
     edge: e4707df61efaa
     evidence_level: primary
     id: org.symtek-automation-ltd
@@ -109,18 +184,117 @@ relations:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 江蘇迅聯科全資持有的泰國間接子公司
+    detail: 江蘇迅聯科全資持有的泰國設備銷售子公司
     details:
-    - 江蘇迅聯科全資持有的泰國間接子公司
-    edge: eb2be0aae90fc
+    - 江蘇迅聯科全資持有的泰國設備銷售子公司
+    edge: ec28ff85b6252
     evidence_level: primary
-    id: org.xunlianke-automation-thailand
+    id: org.symtek-automation-thailand
     name: 迅聯科自動化科技（泰國）有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
+  suppliers:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 氣動元件；年報列於軸承、汽缸項下
+    details:
+    - 氣動元件；年報列於軸承、汽缸項下
+    edge: e31e2f14f2b73
+    evidence_level: primary
+    id: tw.4555
+    name: 氣立
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   transactions:
+  - amount: null
+    as_of: 2026-04
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 領投A輪募資
+    details:
+    - 領投A輪募資
+    edge: e9fe134dac924
+    event_date: null
+    events:
+    - amount: null
+      detail: 領投A輪募資
+      event_date: null
+    evidence_level: primary
+    id: org.blutech-inc
+    name: 博世科智能(Blutech Inc.)
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 泰銖65,300仟元（子公司層級增資金額）
+    as_of: 2025-05
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接子公司泰國現金增資
+    details:
+    - 間接子公司泰國現金增資
+    edge: ee9bf54de7fd8
+    event_date: null
+    events:
+    - amount: 泰銖65,300仟元（子公司層級增資金額）
+      detail: 間接子公司泰國現金增資
+      event_date: null
+    evidence_level: primary
+    id: org.symtek-automation-thailand
+    name: 迅聯科自動化科技（泰國）有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣1.5億元
+    as_of: '2026-08-12'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 董事會通過投資案
+    details:
+    - 董事會通過投資案
+    edge: e4ecf1ce30ca0
+    event_date: '2026-08-12'
+    events:
+    - amount: 新台幣1.5億元
+      detail: 董事會通過投資案
+      event_date: '2026-08-12'
+    evidence_level: primary
+    id: org.友上科技股份有限公司
+    name: 友上科技股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣7億元（內含營業稅）
+    as_of: '2024-07-10'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 出售楊梅廠土地及廠房
+    details:
+    - 出售楊梅廠土地及廠房
+    edge: e506aea4436c6
+    event_date: '2024-07-10'
+    events:
+    - amount: 新台幣7億元（內含營業稅）
+      detail: 出售楊梅廠土地及廠房
+      event_date: '2024-07-10'
+    evidence_level: primary
+    id: org.聯琦金屬股份有限公司
+    name: 聯琦金屬股份有限公司
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
   - amount: 新台幣1,028,957,920元
     as_of: '2026-07-17'
     confidence: ai_cross_checked
@@ -142,88 +316,156 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+unresolved_mentions:
+- T 客戶（年報未具名）
+- BR 客戶（年報未具名）
+- E 公司（年報未具名供應商）
+- UL 公司（年報未具名供應商）
 website: www.saa-symtek.com
 tax_id: '70753397'
 incorporated: '1999-10-28'
 listed: '2021-01-19'
-as_of: '2026-10-18'
+as_of: '2026-10-28'
 confidence: ai_cross_checked
 has_research: true
 evidence:
+  tw.6438#e1:
+    locator: 關於我們－高階IC載板與PCB
+    published_date: null
+    publisher: 迅得機械股份有限公司
+    quote_check: found
+    title: 迅得機械股份有限公司－關於我們
+    url: https://www.saa-symtek.com/zh_tw/
   tw.6438#e10:
-    locator: 第19頁，附註十二，列入合併財務報告之子公司
-    published_date: null
-    publisher: 迅得機械股份有限公司
+    locator: 重大訊息公告主旨
+    published_date: '2026-09-10'
+    publisher: 公開資訊觀測站／MoneyDJ轉載
     quote_check: found
-    title: 迅得機械股份有限公司及子公司115年第2季合併財務報告
-    url: https://www.saa-symtek.com/zh_tw/INVESTOR/download/SAA%EF%BC%8D115Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1(final).pdf
+    title: 日月光投控：日月光半導體製造114/9/23~115/9/10向迅得取得機器設備，計約10.5億元
+    url: https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=0ec9baa9-012f-43e9-ae11-5b47b9a080f2
   tw.6438#e11:
-    locator: 第19頁，附註十二，列入合併財務報告之子公司
+    locator: 印刷頁101，主要原料供應情形
+    published_date: '2026-04-15'
+    publisher: 迅得機械股份有限公司
+    quote_check: found
+    title: 迅得機械股份有限公司114年度年報
+    url: https://www.saa-symtek.com/zh_tw/INVESTOR/download/%E4%B8%AD%E6%96%87%20114%E5%B9%B4%E5%B9%B4%E5%A0%B1.pdf
+  tw.6438#e12:
+    locator: 印刷頁19，附註十二；2026年6月30日子公司持股表
     published_date: null
     publisher: 迅得機械股份有限公司
     quote_check: found
     title: 迅得機械股份有限公司及子公司115年第2季合併財務報告
     url: https://www.saa-symtek.com/zh_tw/INVESTOR/download/SAA%EF%BC%8D115Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1(final).pdf
-  tw.6438#e12:
-    locator: 第86頁，營業比重表註
-    published_date: '2026-04-15'
+  tw.6438#e13:
+    locator: 印刷頁19，附註十二；SAL持有迅得東莞100%股權
+    published_date: null
     publisher: 迅得機械股份有限公司
     quote_check: found
-    title: 迅得機械股份有限公司114年度年報
-    url: https://www.saa-symtek.com/zh_tw/INVESTOR/download/%E4%B8%AD%E6%96%87%20114%E5%B9%B4%E5%B9%B4%E5%A0%B1.pdf
+    title: 迅得機械股份有限公司及子公司115年第2季合併財務報告
+    url: https://www.saa-symtek.com/zh_tw/INVESTOR/download/SAA%EF%BC%8D115Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1(final).pdf
+  tw.6438#e14:
+    locator: 印刷頁19，附註十二；迅得東莞持有江蘇迅聯科60%股權
+    published_date: null
+    publisher: 迅得機械股份有限公司
+    quote_check: found
+    title: 迅得機械股份有限公司及子公司115年第2季合併財務報告
+    url: https://www.saa-symtek.com/zh_tw/INVESTOR/download/SAA%EF%BC%8D115Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1(final).pdf
+  tw.6438#e15:
+    locator: 印刷頁19，附註十二；江蘇迅聯科持有泰國公司100%股權
+    published_date: null
+    publisher: 迅得機械股份有限公司
+    quote_check: found
+    title: 迅得機械股份有限公司及子公司115年第2季合併財務報告
+    url: https://www.saa-symtek.com/zh_tw/INVESTOR/download/SAA%EF%BC%8D115Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1(final).pdf
+  tw.6438#e16:
+    locator: 重大訊息公告，第3項交易總額
+    published_date: '2024-07-10'
+    publisher: 公開資訊觀測站／MoneyDJ轉載
+    quote_check: found
+    title: 迅得董事會決議出售桃園市楊梅區上田段土地、廠房，預計獲利約2.66億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=ef09f7f1-e6be-47e2-bad0-2a00d3347dfa
+  tw.6438#e17:
+    locator: 重大訊息公告，第4項交易相對人；第24項董事會日期
+    published_date: '2024-07-10'
+    publisher: 公開資訊觀測站／MoneyDJ轉載
+    quote_check: found
+    title: 迅得董事會決議出售桃園市楊梅區上田段土地、廠房，預計獲利約2.66億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=ef09f7f1-e6be-47e2-bad0-2a00d3347dfa
+  tw.6438#e18:
+    locator: 公司新聞，首段
+    published_date: 2026-04
+    publisher: 迅得機械股份有限公司
+    quote_check: found
+    title: 迅得機械領投博世科 A 輪募資，深化 AI 能源管理新創生態系戰略
+    url: https://www.saa-symtek.com/zh_tw/ESG/NEWS/202604_01.html
   tw.6438#e2:
-    locator: 第86頁，營業比重表，114年度欄
+    locator: 印刷頁86，營業比重；114年度欄
     published_date: '2026-04-15'
     publisher: 迅得機械股份有限公司
     quote_check: found
     title: 迅得機械股份有限公司114年度年報
     url: https://www.saa-symtek.com/zh_tw/INVESTOR/download/%E4%B8%AD%E6%96%87%20114%E5%B9%B4%E5%B9%B4%E5%A0%B1.pdf
+  tw.6438#e20:
+    locator: 重大訊息公告，第5項發生緣由
+    published_date: '2026-08-12'
+    publisher: 公開資訊觀測站／玉山證券轉載
+    quote_check: found
+    title: 迅得：公告本公司董事會通過友上科技股份有限公司投資案
+    url: https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7BB43FB168-0C0F-493C-BA1B-F160B6452820%7D
+  tw.6438#e21:
+    locator: 印刷頁35，附註十一，迅聯科泰國資本變動說明
+    published_date: null
+    publisher: 迅得機械股份有限公司
+    quote_check: found
+    title: 迅得機械股份有限公司及子公司114年度合併財務報告
+    url: https://www.saa-symtek.com/zh_tw/INVESTOR/download/SAA%EF%BC%8D114Q4%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1.pdf
   tw.6438#e3:
-    locator: 第86頁，營業比重表，114年度欄
+    locator: 印刷頁86，營業比重；114年度欄
     published_date: '2026-04-15'
     publisher: 迅得機械股份有限公司
     quote_check: found
     title: 迅得機械股份有限公司114年度年報
     url: https://www.saa-symtek.com/zh_tw/INVESTOR/download/%E4%B8%AD%E6%96%87%20114%E5%B9%B4%E5%B9%B4%E5%A0%B1.pdf
   tw.6438#e4:
-    locator: 第86頁，營業比重表，114年度欄
+    locator: 印刷頁86，營業比重；BBU重分類後114年度營收比重
     published_date: '2026-04-15'
     publisher: 迅得機械股份有限公司
-    quote_check: found
+    quote_check: not_found
     title: 迅得機械股份有限公司114年度年報
     url: https://www.saa-symtek.com/zh_tw/INVESTOR/download/%E4%B8%AD%E6%96%87%20114%E5%B9%B4%E5%B9%B4%E5%A0%B1.pdf
   tw.6438#e5:
-    locator: 關於我們，半導體智動化
+    locator: 關於我們－半導體智動化
     published_date: null
     publisher: 迅得機械股份有限公司
     quote_check: found
-    title: 迅得機械股份有限公司官網
+    title: 迅得機械股份有限公司－關於我們
     url: https://www.saa-symtek.com/zh_tw/
   tw.6438#e6:
-    locator: 關於我們，高階IC載板與PCB
+    locator: Mobile Robot (MR)
     published_date: null
     publisher: 迅得機械股份有限公司
     quote_check: found
-    title: 迅得機械股份有限公司官網
-    url: https://www.saa-symtek.com/zh_tw/
+    title: SAA－Products
+    url: https://www.saa-symtek.com/zh_tw/PRODUCTS/products.html
   tw.6438#e7:
-    locator: 第95頁，研究發展成果
+    locator: 印刷頁95，114年度開發成功之技術與產品，第3項
     published_date: '2026-04-15'
     publisher: 迅得機械股份有限公司
     quote_check: found
     title: 迅得機械股份有限公司114年度年報
     url: https://www.saa-symtek.com/zh_tw/INVESTOR/download/%E4%B8%AD%E6%96%87%20114%E5%B9%B4%E5%B9%B4%E5%A0%B1.pdf
   tw.6438#e8:
-    locator: 第19頁，附註十二，列入合併財務報告之子公司
-    published_date: null
-    publisher: 迅得機械股份有限公司
+    locator: 記者張欽發報導，策略聯盟合作案段落
+    published_date: '2021-08-11'
+    publisher: 鉅亨網
     quote_check: found
-    title: 迅得機械股份有限公司及子公司115年第2季合併財務報告
-    url: https://www.saa-symtek.com/zh_tw/INVESTOR/download/SAA%EF%BC%8D115Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1(final).pdf
+    title: 迅得發私募與家登結盟 合作搶攻半導體EUV商機
+    url: https://news.cnyes.com/news/id/4701178
   tw.6438#e9:
-    locator: 第19頁，附註十二，列入合併財務報告之子公司
-    published_date: null
-    publisher: 迅得機械股份有限公司
+    locator: 鍾騏遠撰文，客戶名單段落
+    published_date: '2026-04-23'
+    publisher: 經濟日報／萬寶週刊
     quote_check: found
-    title: 迅得機械股份有限公司及子公司115年第2季合併財務報告
-    url: https://www.saa-symtek.com/zh_tw/INVESTOR/download/SAA%EF%BC%8D115Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1(final).pdf
+    title: 台積電、欣興都是客戶！2奈米量產，它今年營收估增17%，從PCB跨半導體業，Q1獲利就開紅盤
+    url: https://money.udn.com/money/amp/story/5607/9460217

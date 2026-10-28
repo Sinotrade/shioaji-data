@@ -17,82 +17,410 @@ industry:
   l3: hw.industrial_pc
   l3_name: 工業電腦與嵌入式系統
   l3_name_en: Industrial PCs & Embedded Systems
-primary_chain_position: midstream
-summary_short: 提供工業電腦、嵌入式系統、網通設備、醫療影像及邊緣AI運算產品。
-summary_long: 威強電提供工業電腦、嵌入式系統、邊緣運算平台及平板電腦，並承作ODM/OEM客製化服務，應用於智慧製造、網路通訊與數位醫療。網通產品包含PUZZLE系列，涵蓋防火牆、無線閘道器與網路安全應用；醫療產品包括EndoCap-3588影像擷取錄影系統。邊緣AI產品包括搭載NVIDIA Jetson Thor的GAIA-5000伺服器，另提供自主移動機器人控制平台。
-main_theme: theme.ai_server
+primary_chain_position: not_applicable
+summary_short: 以工業電腦、嵌入式系統及網通、醫療運算設備為主要業務。
+summary_long: 威強電提供工業電腦解決方案，涵蓋網通、邊緣運算與醫療應用。2026年上半年，產業電腦產品占合併營收72%，產業電腦週邊產品及組件占23%，其他占5%。網通產品包括支援AMD EPYC處理器與DDR5記憶體的PUZZLE-7050；醫療應用方面，LPIXEL選用其HTB-210-Q470作為AI內視鏡影像診斷的運算設備。公司亦與Intel聯合展示AMR安全防護方案，並與友上科技合作，將NANO-X100整合至移動式協作機器人。近三年重大投資包括楊梅土地購入，以及桃園新廠營造、機電與消防工程發包。
+segments:
+- evidence_ids:
+  - e2
+  id: seg_ipc
+  name: 產業電腦產品
+  period: 2026年上半年
+  revenue_share_pct: 72
+- evidence_ids:
+  - e2
+  id: seg_components
+  name: 產業電腦週邊產品及組件
+  period: 2026年上半年
+  revenue_share_pct: 23
+- evidence_ids:
+  - e2
+  id: seg_other
+  name: 其他
+  period: 2026年上半年
+  revenue_share_pct: 5
+main_theme: theme.robotics
 themes:
-- also: []
-  stage: assembly
-  theme: theme.ai_server
-  tier: downstream
 - also: []
   stage: control
   theme: theme.robotics
   tier: midstream
+- also: []
+  stage: assembly
+  theme: theme.ai_server
+  tier: downstream
 relations:
-  subsidiaries:
-  - as_of: '2026-04-10'
+  customers:
+  - as_of: '2025-03-19'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 重要子公司
+    detail: HTB-210-Q470醫療AI運算系統採用
     details:
-    - 重要子公司
-    edge: eb2b9d56cf157
+    - HTB-210-Q470醫療AI運算系統採用
+    edge: e8d204ef21a86
     evidence_level: primary
-    id: org.fortunetec-international
-    name: Fortunetec International Corp.
+    id: org.lpixel-inc
+    name: LPIXEL Inc.
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
+  partners:
+  - as_of: '2026-07-24'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: NANO-X100與i-Operator移動式協作機器人整合
+    details:
+    - NANO-X100與i-Operator移動式協作機器人整合
+    edge: e6028c29acd2c
+    evidence_level: primary
+    id: org.友上科技股份有限公司
+    name: 友上科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-08-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 半導體智慧製造與機器手臂安全應用展示
+    details:
+    - 半導體智慧製造與機器手臂安全應用展示
+    edge: e78ce11f09603
+    evidence_level: primary
+    id: org.台灣三菱電機
+    name: 台灣三菱電機
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-03'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: COMPUTEX 2026聯合展示AMR安全防護方案
+    details:
+    - COMPUTEX 2026聯合展示AMR安全防護方案
+    edge: e4a43d1fc7a15
+    evidence_level: media
+    id: us.INTC
+    name: Intel
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: e719b93c7e2c6
+    evidence_level: primary
+    id: org.britemed-technology
+    name: 百視美股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: e3afc93a30ced
+    evidence_level: primary
+    id: org.icp-electronics-limited
+    name: ICP Electronics Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接子公司
+    details:
+    - 直接子公司
+    edge: ec9c3b6e391cc
+    evidence_level: primary
+    id: org.internet-application-technology
+    name: Internet Application Technology Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 關係人進貨，未細分商品內容
+    details:
+    - 關係人進貨，未細分商品內容
+    edge: e8ae14c088370
+    evidence_level: primary
+    id: tw.7805
+    name: 威聯通
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: null
+    as_of: '2024-05-08'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 因威聯通組織重組取得勝鋒股權
+    details:
+    - 因威聯通組織重組取得勝鋒股權
+    edge: eb020e3a88afd
+    event_date: '2024-05-08'
+    events:
+    - amount: null
+      detail: 因威聯通組織重組取得勝鋒股權
+      event_date: '2024-05-08'
+    evidence_level: primary
+    id: org.shengfeng
+    name: 勝鋒股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣969,800仟元整(含稅)
+    as_of: '2026-03-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 桃園廠自地委建營造工程發包
+    details:
+    - 桃園廠自地委建營造工程發包
+    edge: ebcd4a3fe31e0
+    event_date: '2026-03-23'
+    events:
+    - amount: 新台幣969,800仟元整(含稅)
+      detail: 桃園廠自地委建營造工程發包
+      event_date: '2026-03-23'
+    evidence_level: primary
+    id: org.晨禎營造股份有限公司
+    name: 晨禎營造股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣268,000仟元整(含稅)
+    as_of: '2026-05-04'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 桃園廠機電及消防工程發包
+    details:
+    - 桃園廠機電及消防工程發包
+    edge: ea0ee6857c18a
+    event_date: '2026-05-04'
+    events:
+    - amount: 新台幣268,000仟元整(含稅)
+      detail: 桃園廠機電及消防工程發包
+      event_date: '2026-05-04'
+    evidence_level: primary
+    id: org.晨詮機電工程股份有限公司
+    name: 晨詮機電工程股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣687,312,960元
+    as_of: '2025-04-11'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 取得桃園楊梅新秀段四筆土地
+    details:
+    - 取得桃園楊梅新秀段四筆土地
+    edge: edcbe53a099d4
+    event_date: '2025-04-11'
+    events:
+    - amount: 新台幣687,312,960元
+      detail: 取得桃園楊梅新秀段四筆土地
+      event_date: '2025-04-11'
+    evidence_level: primary
+    id: org.郭博達
+    name: 郭博達
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 候選線索中的PCB僅為材料類別，沒有具名供應商。
+- DDR4及DDR5記憶體的實際供應商未由所引用產品規格揭露。
+- 網通報導所稱大型ODM客戶及以色列新客戶未具名，未推測其身分。
 website: www.ieiworld.com/
 tax_id: '97445303'
 incorporated: '1997-04-17'
 listed: '2002-08-26'
-as_of: '2026-10-18'
+as_of: '2026-10-28'
 confidence: ai_cross_checked
 has_research: true
 evidence:
   tw.3022#e1:
-    locator: 文末「威強電工業電腦」公司介紹
-    published_date: '2025-12-31'
+    locator: PDF第4頁，公司簡介／主要經營業務
+    published_date: '2026-09-23'
+    publisher: 威強電工業電腦股份有限公司／公開資訊觀測站
+    quote_check: found
+    title: 威強電2026年第二季營運成果法人說明會
+    url: https://mopsov.twse.com.tw/nas/STR/302220260923M001.pdf
+  tw.3022#e10:
+    locator: 記者邱建齊報導，第一段
+    published_date: '2026-06-03'
+    publisher: MoneyDJ新聞／台視財經
+    quote_check: found
+    title: 《COMPUTEX》威強電.Intel打造AMR安全防護方案
+    url: https://www.ttv.com.tw/finance/view/?from=587&i=062026031200A05A19B86AE744A4ACB6311430C3B297DD1C
+  tw.3022#e11:
+    locator: 第一段及MELFA機器手臂整合應用章節
+    published_date: '2026-08-28'
     publisher: 威強電工業電腦股份有限公司
     quote_check: found
-    title: IEI 2025 年度回顧：持續擴展Edge AI的核心能力
-    url: https://www.ieiworld.com/tw/news/con_show.php?cid=1403
+    title: 威強電攜手三菱電機與友上科技亮相SEMICON Taiwan 2026
+    url: https://www.ieiworld.com/tw/news/2026-Semicon.php
+  tw.3022#e12:
+    locator: 印刷頁35，關係人交易／2.進貨，115年及114年1月至3月，單位新台幣千元
+    published_date: '2026-05-08'
+    publisher: 威強電工業電腦股份有限公司
+    quote_check: found
+    title: 威強電2026年第一季合併財務報告
+    url: https://www.ieiworld.com/_upload/finance/files/115Q1%E5%A8%81%E5%BC%B7%E9%9B%BB%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%28%E5%A5%97%E7%AB%A0%29.pdf
+  tw.3022#e13:
+    locator: 工業AI落地的四大關鍵能力／高效能運算與AI推論能力
+    published_date: '2026-06-01'
+    publisher: 威強電工業電腦股份有限公司
+    quote_check: found
+    title: 威強電於2026 COMPUTEX展出強韌邊緣AI平台
+    url: https://www.ieiworld.com/tw/news/con_show.php?cat=13&cid=1412
+  tw.3022#e14:
+    locator: 印刷頁12，合併財務報告編製主體之子公司表；投資公司為威強電工業電腦股份有限公司
+    published_date: '2026-03-06'
+    publisher: 威強電工業電腦股份有限公司
+    quote_check: found
+    title: 威強電2025年度合併財務報告
+    url: https://www.ieiworld.com/_upload/finance/files/114Q4%E5%A8%81%E5%BC%B7%E9%9B%BB%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%28%E5%A5%97%E7%AB%A0%29.pdf
+  tw.3022#e15:
+    locator: 印刷頁12，合併財務報告編製主體之子公司表；投資公司為威強電工業電腦股份有限公司
+    published_date: '2026-03-06'
+    publisher: 威強電工業電腦股份有限公司
+    quote_check: found
+    title: 威強電2025年度合併財務報告
+    url: https://www.ieiworld.com/_upload/finance/files/114Q4%E5%A8%81%E5%BC%B7%E9%9B%BB%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%28%E5%A5%97%E7%AB%A0%29.pdf
+  tw.3022#e16:
+    locator: 印刷頁12，合併財務報告編製主體之子公司表；投資公司為威強電工業電腦股份有限公司
+    published_date: '2026-03-06'
+    publisher: 威強電工業電腦股份有限公司
+    quote_check: found
+    title: 威強電2025年度合併財務報告
+    url: https://www.ieiworld.com/_upload/finance/files/114Q4%E5%A8%81%E5%BC%B7%E9%9B%BB%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%28%E5%A5%97%E7%AB%A0%29.pdf
+  tw.3022#e17:
+    locator: 公告第3項，交易金額
+    published_date: '2025-04-11'
+    publisher: 公開資訊觀測站／玉山證券轉載
+    quote_check: found
+    title: 威強電董事會通過向關係人取得楊梅土地
+    url: https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B70EC220E-BBD3-459C-9141-6819E0BCC057%7D
+  tw.3022#e18:
+    locator: 公告第4項，交易相對人
+    published_date: '2025-04-11'
+    publisher: 公開資訊觀測站／玉山證券轉載
+    quote_check: found
+    title: 威強電董事會通過向關係人取得楊梅土地
+    url: https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B70EC220E-BBD3-459C-9141-6819E0BCC057%7D
+  tw.3022#e19:
+    locator: 公告第5項，契約相對人
+    published_date: '2026-03-23'
+    publisher: 公開資訊觀測站／鉅亨網轉載
+    quote_check: found
+    title: 威強電：補充公告桃園廠興建工程相關事宜－營造工程發包
+    url: https://news.cnyes.com/news/id/6394527
   tw.3022#e2:
-    locator: Network Appliance／PUZZLE系列介紹
-    published_date: null
+    locator: PDF第13頁，合併營收－產品別，2026 1H圓餅圖
+    published_date: '2026-09-23'
+    publisher: 威強電工業電腦股份有限公司／公開資訊觀測站
+    quote_check: not_found
+    title: 威強電2026年第二季營運成果法人說明會
+    url: https://mopsov.twse.com.tw/nas/STR/302220260923M001.pdf
+  tw.3022#e20:
+    locator: 公告第6項，契約金額
+    published_date: '2026-03-23'
+    publisher: 公開資訊觀測站／鉅亨網轉載
+    quote_check: found
+    title: 威強電：補充公告桃園廠興建工程相關事宜－營造工程發包
+    url: https://news.cnyes.com/news/id/6394527
+  tw.3022#e21:
+    locator: 公告第5項，契約相對人
+    published_date: '2026-05-04'
+    publisher: 公開資訊觀測站／MoneyDJ轉載
+    quote_check: found
+    title: 威強電桃園廠機電及消防工程發包公告
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=a5f31073-da4c-4f37-bc91-c5600a5259aa
+  tw.3022#e22:
+    locator: 公告第6項，契約金額
+    published_date: '2026-05-04'
+    publisher: 公開資訊觀測站／MoneyDJ轉載
+    quote_check: found
+    title: 威強電桃園廠機電及消防工程發包公告
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=a5f31073-da4c-4f37-bc91-c5600a5259aa
+  tw.3022#e23:
+    locator: 印刷頁27，採用權益法之投資，2024年5月8日組織重組說明
+    published_date: '2025-02-25'
     publisher: 威強電工業電腦股份有限公司
     quote_check: found
-    title: '網路通訊 :: Product overview :: IEI'
-    url: https://www.ieiworld.com/tw/product/items_by_cat_intro.php?CA=2
+    title: 威強電2024年度合併財務報告
+    url: https://www.ieiworld.com/_upload/finance/files/113Q4%E5%A8%81%E5%BC%B7%E9%9B%BB%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%28%E5%A5%97%E7%AB%A0%29.pdf
   tw.3022#e3:
-    locator: 產品成果段落
-    published_date: '2025-12-31'
-    publisher: 威強電工業電腦股份有限公司
+    locator: 產品特色，1U機架式網通設備
+    published_date: null
+    publisher: IEI Integration Corp.
     quote_check: found
-    title: IEI 2025 年度回顧：持續擴展Edge AI的核心能力
-    url: https://www.ieiworld.com/tw/news/con_show.php?cid=1403
+    title: PUZZLE-7050
+    url: https://www.ieiworld.com/de/product/PUZZLE-7050.php
   tw.3022#e4:
-    locator: 首段產品發布內容
-    published_date: '2025-09-12'
-    publisher: 威強電工業電腦股份有限公司
+    locator: 產品特色，記憶體規格
+    published_date: null
+    publisher: IEI Integration Corp.
     quote_check: found
-    title: 威強電佈局Edge AI Thor 系列，以NVIDIA Jetson Thor 引領智慧製造與機器人
-    url: https://www.ieiworld.com/tw/news/con_show.php?cid=1389
+    title: PUZZLE-5030
+    url: https://www.ieiworld.com/tw/product/PUZZLE-5030.php
   tw.3022#e5:
-    locator: Energy Saving
+    locator: End of Life Notice
     published_date: null
-    publisher: 威強電工業電腦股份有限公司
+    publisher: IEI Integration Corp.
     quote_check: found
-    title: Autonomous Mobile Robot | The Revolution of AGV | Industrial Automation
-    url: https://www.ieiworld.com/autonomous-mobile-robot/tw/
+    title: PUZZLE-5030
+    url: https://www.ieiworld.com/tw/product/PUZZLE-5030.php
   tw.3022#e6:
-    locator: 115年董事會重要決議事項／115年4月10日
+    locator: HTB-300-MTL-H產品規格
     published_date: null
     publisher: 威強電工業電腦股份有限公司
     quote_check: found
-    title: '董事會 :: 公司治理 :: IEISolution :: IEI'
-    url: https://www.ieiworld.com/tw/finance/con_show.php?cid=50&op=showone
+    title: IEI威強電官網：HTB-300-MTL-H產品介紹
+    url: https://www.ieiworld.com/tw/
+  tw.3022#e7:
+    locator: 成功案例內文第二段
+    published_date: '2025-03-19'
+    publisher: IEI Integration Corp.
+    quote_check: found
+    title: AI-Powered Endoscopic Imaging Diagnosis Case Study
+    url: https://www.ieiworld.com/tw/news/con_show.php?cid=1384
+  tw.3022#e8:
+    locator: 第一段，處理器與單板電腦
+    published_date: '2026-07-24'
+    publisher: 威強電工業電腦股份有限公司
+    quote_check: found
+    title: 威強電於AMD Advancing AI 2026展示NANO-X100及AMR應用
+    url: https://www.ieiworld.com/tw/news/con_show.php?cid=1415&op=showone
+  tw.3022#e9:
+    locator: 第一段，友上科技合作與系統整合
+    published_date: '2026-07-24'
+    publisher: 威強電工業電腦股份有限公司
+    quote_check: found
+    title: 威強電於AMD Advancing AI 2026展示NANO-X100及AMR應用
+    url: https://www.ieiworld.com/tw/news/con_show.php?cid=1415&op=showone

@@ -35,15 +35,15 @@ segments:
   name: 檢測服務
   period: '2025'
   revenue_share_pct: 100
-main_theme: theme.cpo
+main_theme: theme.cowos
 themes:
-- also: []
-  stage: packaging
-  theme: theme.cpo
-  tier: midstream
 - also: []
   stage: test
   theme: theme.cowos
+  tier: midstream
+- also: []
+  stage: packaging
+  theme: theme.cpo
   tier: midstream
 relations:
   competitors:

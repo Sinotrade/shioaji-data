@@ -11,6 +11,16 @@ stages:
   tier: not_applicable
   name_en: Financial Services
 members:
+- id: tw.1718
+  detail: 合併營收以台中商業銀行經營的銀行部門最高，屬金融服務。
+  as_of: '2026-10-28'
+  evidence:
+  - tw.1718#e1
+  confidence: ai_cross_checked
+  source: classification
+  stage: na
+  tier: not_applicable
+  stage_role: primary
 - id: tw.2201
   detail: 合併營收以裕融占54.65%為最大來源，主要提供汽車融資及租賃服務，屬金融服務。
   as_of: '2026-10-26'
@@ -73,14 +83,10 @@ members:
   stage_role: primary
 - id: tw.2832
   detail: 主要承作車險、火險、傷害險、工程險與責任險，屬保險金融服務。
-  as_of: '2026-10-18'
+  as_of: '2026-10-28'
   evidence:
+  - tw.2832#e1
   - tw.2832#e2
-  - tw.2832#e3
-  - tw.2832#e4
-  - tw.2832#e5
-  - tw.2832#e6
-  - tw.2832#e7
   confidence: ai_cross_checked
   source: classification
   stage: na
@@ -499,10 +505,11 @@ members:
   stage_role: primary
 - id: tw.6024
   detail: 經紀手續費占合併營收67%為最大來源，主營國內外期貨受託買賣，屬金融服務。
-  as_of: '2026-10-18'
+  as_of: '2026-10-28'
   evidence:
+  - tw.6024#e1
   - tw.6024#e2
-  - tw.6024#e7
+  - tw.6024#e3
   confidence: ai_cross_checked
   source: classification
   stage: na
@@ -559,11 +566,11 @@ members:
   stage_role: primary
 - id: tw.6901
   detail: 主營生技醫療創業投資與企業育成，收入包含投資評價損益，屬金融投資服務。
-  as_of: '2026-10-18'
+  as_of: '2026-10-28'
   evidence:
-  - tw.6901#e1
-  - tw.6901#e2
-  - tw.6901#e4
+  - tw.6901#e01
+  - tw.6901#e02
+  - tw.6901#e03
   confidence: ai_cross_checked
   source: classification
   stage: na
@@ -629,4 +636,4 @@ members:
   stage: na
   tier: not_applicable
   stage_role: primary
-as_of: '2026-10-26'
+as_of: '2026-10-28'

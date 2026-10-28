@@ -69,12 +69,12 @@ themes:
   theme: theme.ai_server
   tier: upstream
 - also: []
-  stage: packaging
-  theme: theme.cpo
-  tier: midstream
-- also: []
   stage: manufacturing
   theme: theme.hbm
+  tier: midstream
+- also: []
+  stage: packaging
+  theme: theme.cpo
   tier: midstream
 relations:
   competitors:

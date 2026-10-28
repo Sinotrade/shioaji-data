@@ -26,27 +26,27 @@ chain_stage:
   stage_name: 網通設備與系統
   tier: downstream
 primary_chain_position: downstream
-summary_short: 以網路安全與白牌電信硬體設備銷售為主，另提供邊緣AI伺服器。
-summary_long: 立端科技以網路安全設備與白牌電信設備為主要產品，提供硬體平台及設備銷售。2024年營收組成為NC占94.3%、IEC占5.3%、其他占0.4%。邊緣運算產品包括ECA-6050 AI伺服器；ECA-6051採用NVIDIA MGX架構，ECA-6710支援分散式5G／6G電信機房的網路安全與資源調度應用。依產品技術，可歸入AI伺服器、NVIDIA系統及5G設備題材。2024年底，美國與模里西斯兩家子公司均由立端全資持有。
+summary_short: 立端以網路通訊與資安硬體平台為主，另提供工業電腦及邊緣AI平台。
+summary_long: 立端科技主要提供網路通訊與網路安全硬體平台，2024年網路通訊設備占營收94%，智能聯網電腦占5%，其他業務占1%。產品包括採用Intel Atom的NCA-1250及採用AMD EPYC的NCA-5330，並推出AstraEdge邊緣AI平台。A10 Networks在2025年度年報將立端列為硬體製造商；立端NCA-1515系列亦列入Juniper的Session Smart Router認證平台。公司在美國設有Lanner Electronics USA子公司，並曾於2020年引進台達電認購新台幣9億元私募可轉債，雙方合作範圍包括邊緣運算與網路資安。
 segments:
 - evidence_ids:
-  - e1
+  - e01
   id: seg_nc
-  name: NC
+  name: 網路通訊設備（NC）
   period: '2024'
-  revenue_share_pct: 94.3
+  revenue_share_pct: 94
 - evidence_ids:
-  - e1
+  - e01
   id: seg_iec
-  name: IEC
+  name: 智能聯網電腦（IEC）
   period: '2024'
-  revenue_share_pct: 5.3
+  revenue_share_pct: 5
 - evidence_ids:
-  - e1
+  - e01
   id: seg_other
-  name: 其他
+  name: 其他業務
   period: '2024'
-  revenue_share_pct: 0.4
+  revenue_share_pct: 1
 main_theme: theme.ai_server
 themes:
 - also: []
@@ -62,96 +62,325 @@ themes:
   theme: theme.nvidia
   tier: downstream
 relations:
-  subsidiaries:
-  - as_of: '2024-12-31'
+  customers:
+  - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 模里西斯全資子公司
+    detail: 網通硬體ODM製造、組裝與測試
     details:
-    - 模里西斯全資子公司
-    edge: ebc3f3058f97f
+    - 網通硬體ODM製造、組裝與測試
+    edge: e308cc8df44b5
     evidence_level: primary
-    id: org.lanner-electronics-mauritius
-    name: LANNER ELECTRONICS (MAURITIUS) INC.
+    id: us.ATEN
+    name: A10 Networks, Inc.
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2024-12-31'
+  - as_of: '2014-01-22'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 美國全資子公司
+    detail: 網安硬體平台代工；歷史客戶揭露
     details:
-    - 美國全資子公司
+    - 網安硬體平台代工；歷史客戶揭露
+    edge: e558c5906e2c7
+    evidence_level: media
+    id: us.CHKP
+    name: Check Point
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2018-06-07'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: SD-WAN相關設備；歷史客戶揭露
+    details:
+    - SD-WAN相關設備；歷史客戶揭露
+    edge: ebd2ef7a6335e
+    evidence_level: media
+    id: us.CSCO
+    name: Cisco
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2019-10-16'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: uCPE硬體平台；歷史採用公告
+    details:
+    - uCPE硬體平台；歷史採用公告
+    edge: e271d6f90c301
+    evidence_level: primary
+    id: us.VZ
+    name: Verizon
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  partners:
+  - as_of: '2025-03-04'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: OrchestrAItor邊緣AI軟硬體整合
+    details:
+    - OrchestrAItor邊緣AI軟硬體整合
+    edge: e245c65d17e68
+    evidence_level: primary
+    id: org.degirum
+    name: DeGirum Corp.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2021-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: CPE與網路設備OEM合作
+    details:
+    - CPE與網路設備OEM合作
+    edge: e09b8e2cedfcb
+    evidence_level: primary
+    id: org.tata-communications
+    name: Tata Communications
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2020-11-05'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 邊緣運算與網路資安策略合作
+    details:
+    - 邊緣運算與網路資安策略合作
+    edge: e5d1fa45738c2
+    evidence_level: primary
+    id: tw.2308
+    name: 台達電
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2026-03
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 加速網路設備與MEC平台技術合作
+    details:
+    - 加速網路設備與MEC平台技術合作
+    edge: ecdad8bc8d0a2
+    evidence_level: primary
+    id: us.INTC
+    name: Intel
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2026-10
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: Session Smart Router硬體認證整合
+    details:
+    - Session Smart Router硬體認證整合
+    edge: e87a8c32188fa
+    evidence_level: primary
+    id: us.JNPR
+    name: Juniper Networks, Inc.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-04'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: GPU伺服器平台與系統認證合作
+    details:
+    - GPU伺服器平台與系統認證合作
+    edge: e3756521e5dad
+    evidence_level: primary
+    id: us.NVDA
+    name: NVIDIA
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: 2026-10
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 美國子公司
+    details:
+    - 美國子公司
     edge: e4331e6e4d012
     evidence_level: primary
     id: org.lanner-electronics-usa
-    name: LANNER ELECTRONICS USA, INC.
+    name: Lanner Electronics USA
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
+  transactions:
+  - amount: 新台幣9億元
+    as_of: '2020-11-05'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 台達電認購立端私募無擔保轉換公司債
+    details:
+    - 台達電認購立端私募無擔保轉換公司債
+    edge: ec0fdbb0ee9e8
+    event_date: '2020-11-05'
+    events:
+    - amount: 新台幣9億元
+      detail: 台達電認購立端私募無擔保轉換公司債
+      event_date: '2020-11-05'
+    evidence_level: primary
+    id: tw.2308
+    name: 台達電
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 大型網路安全公司：立端官方介紹未逐一具名。
 website: www.lannerinc.com
 tax_id: '22327466'
 incorporated: '1986-10-30'
 listed: '2003-05-19'
-as_of: '2026-10-18'
+as_of: '2026-10-28'
 confidence: ai_cross_checked
 has_research: true
 evidence:
-  tw.6245#e1:
-    locator: 第52頁，業務內容／營業比重；欄位依序為113年度、112年度
-    published_date: null
-    publisher: 立端科技股份有限公司
+  tw.6245#e01:
+    locator: 公司簡介－營業項目與產品結構
+    published_date: '2025-08-04'
+    publisher: MoneyDJ理財網／嘉實投顧
     quote_check: found
-    title: 立端科技113年度年報
-    url: https://lannerinc.com/phocadownload/Investor/20250609-2.pdf
-  tw.6245#e2:
-    locator: 第52頁，公司目前之商品（服務）項目，第1項
+    title: 立端科技股份有限公司
+    url: https://www.moneydj.com/KMDJ/wiki/wikiviewer.aspx?keyid=b2efdf68-9eef-4bc9-b421-e1cb77f78935
+  tw.6245#e02:
+    locator: PDF第1頁
     published_date: null
-    publisher: 立端科技股份有限公司
+    publisher: Intel
     quote_check: found
-    title: 立端科技113年度年報
-    url: https://lannerinc.com/phocadownload/Investor/20250609-2.pdf
-  tw.6245#e3:
-    locator: 第52頁，公司目前之商品（服務）項目，第2項電信通訊設備
-    published_date: null
-    publisher: 立端科技股份有限公司
-    quote_check: found
-    title: 立端科技113年度年報
-    url: https://lannerinc.com/phocadownload/Investor/20250609-2.pdf
-  tw.6245#e4:
-    locator: 正文，ECA-6050邊緣AI伺服器介紹
+    title: Lanner Builds AI-Driven SD-WAN into NCA-1250 Network Appliance
+    url: https://builders.intel.com/docs/networkbuilders/lanner-builds-ai-driven-sd-wan-into-nca-1250-network-appliance-1738049680.pdf
+  tw.6245#e03:
+    locator: PDF第9頁，NCA-5330規格欄
     published_date: null
     publisher: Lanner Electronics
     quote_check: found
-    title: Edge AI Server Powering the Manufacturing LLM Agent with Secure, Private, and Real-Time Intelligence
-    url: https://www.lannerinc.com/applications/edge-ai/edge-ai-server-powering-the-manufacturing-llm-agent-with-secure-private-and-real-time-intelligence
-  tw.6245#e5:
-    locator: 正文，生成式與實體AI工作流程展示
+    title: Edge AI Platforms
+    url: https://pub-mediabox-storage.rxweb-prd.com/exhibitor/document/exh-aafd9b4d-3974-4191-9f1f-cbf5efb258ea/2717a201-dd87-4ff4-8a20-49a13f88492d.pdf
+  tw.6245#e04:
+    locator: 新聞稿首段及產品展示段落
+    published_date: '2026-03-15'
+    publisher: Lanner Electronics／PRWeb
+    quote_check: found
+    title: Lanner to Unveil AstraEdge™ Platforms for GenAI Robotics and AI-RAN at NVIDIA GTC 2026
+    url: https://www.prweb.com/releases/lanner-to-unveil-astraedge-platforms-for-genai-robotics-and-ai-ran-at-nvidia-gtc-2026-302713671.html
+  tw.6245#e05:
+    locator: 首段，AstraEdge應用範圍
+    published_date: '2026-03-15'
+    publisher: Lanner Electronics／PRWeb
+    quote_check: found
+    title: Lanner to Unveil AstraEdge™ Platforms for GenAI Robotics and AI-RAN at NVIDIA GTC 2026
+    url: https://www.prweb.com/releases/lanner-to-unveil-astraedge-platforms-for-genai-robotics-and-ai-ran-at-nvidia-gtc-2026-302713671.html
+  tw.6245#e06:
+    locator: PDF第2頁，合作說明；第1至2頁列示5G與MEC應用
     published_date: null
-    publisher: Lanner Electronics
+    publisher: Intel
     quote_check: found
-    title: Computex 2026 – Powering AI at the Edge
-    url: https://www.lannerinc.com/news-and-events/latest-news/computex-2026-powering-ai-at-the-edge
-  tw.6245#e6:
-    locator: 正文，ECA-6710平台介紹
-    published_date: '2026-06-01'
-    publisher: 立端科技股份有限公司
+    title: Lanner Bundles Server, SmartNIC for Mobile Network Applications
+    url: https://builders.intel.com/docs/networkbuilders/lanner-bundles-server-smartnic-for-mobile-network-applications-1773150426.pdf
+  tw.6245#e07:
+    locator: Edge Systems表格，Lanner Electronics之ECA-6051等平台列；頁末更新日期
+    published_date: '2026-10-04'
+    publisher: NVIDIA
     quote_check: found
-    title: 立端科技與NVIDIA合作，於COMPUTEX 2026展示生成式 AI機器人、自主代理 AI 與電信AI-RAN等邊緣運算應用
-    url: https://www.lannerinc.com/tw/news-and-events-tw/latest-news/20260601
-  tw.6245#e7:
-    locator: 第44頁，轉投資事業持股表，本公司投資欄；基準日113年12月31日
+    title: List of NVIDIA-Certified Systems
+    url: https://docs.nvidia.com/certification-programs/latest/nvidia-certified-systems.html
+  tw.6245#e08:
+    locator: RTX PRO 4500 Blackwell－Availability
     published_date: null
-    publisher: 立端科技股份有限公司
+    publisher: NVIDIA
     quote_check: found
-    title: 立端科技113年度年報
-    url: https://lannerinc.com/phocadownload/Investor/20250609-2.pdf
-  tw.6245#e8:
-    locator: 第44頁，轉投資事業持股表，本公司投資欄；基準日113年12月31日
+    title: 'NVIDIA GTC 2026: Live Updates on What’s Next in AI'
+    url: https://blogs.nvidia.com/blog/gtc-2026-news/
+  tw.6245#e09:
+    locator: Item 1－Manufacturing
+    published_date: '2026-02-25'
+    publisher: A10 Networks, Inc.／SEC
+    quote_check: unreachable
+    title: A10 Networks, Inc. 2025 Form 10-K
+    url: https://www.sec.gov/Archives/edgar/data/1580808/000158080826000014/aten-20251231.htm
+  tw.6245#e10:
+    locator: SD-WAN業務客戶段落
+    published_date: '2018-06-07'
+    publisher: 財訊快報／鉅亨網
+    quote_check: found
+    title: 5G商轉將臨 立端布局SD-WAN收割 掌握7家國際級客戶貢獻業績起飛
+    url: https://news.cnyes.com/news/id/4139318
+  tw.6245#e11:
+    locator: 公司營運模式與網安客戶段落
+    published_date: '2014-01-22'
+    publisher: MoneyDJ理財網
+    quote_check: found
+    title: 國際大廠釋出委外訂單，立端可望受惠
+    url: https://m.moneydj.com/f1a.aspx?a=b4365c93-0266-45e5-8560-c2415fae2fde
+  tw.6245#e12:
+    locator: PDF第1頁
+    published_date: '2019-10-16'
+    publisher: Verizon
+    quote_check: found
+    title: Verizon expands its Virtual Network Services portfolio
+    url: https://www.verizon.com/about/sites/default/files/Verizon-Additional-Universal-uCPE-equipment.pdf
+  tw.6245#e13:
+    locator: Lanner NCA-1515B及NCA-1515A認證平台段落
     published_date: null
-    publisher: 立端科技股份有限公司
+    publisher: Juniper Networks
     quote_check: found
-    title: 立端科技113年度年報
-    url: https://lannerinc.com/phocadownload/Investor/20250609-2.pdf
+    title: Certified Portfolio
+    url: https://www.juniper.net/documentation/us/en/software/session-smart-router/docs/about_certified_platforms/
+  tw.6245#e14:
+    locator: PDF第32頁，Tata Communications－Partner ecosystem；封面標示December 2021
+    published_date: null
+    publisher: Avasant／Tata Communications
+    quote_check: found
+    title: SD-WAN Managed Services 2021–2022 RadarView－Report Excerpt
+    url: https://tatacommunications.com/hubfs/47271964/TaCO-2024/analyst-recognitions/doc/Avasant-SD-WAN-Managed-Services-2021-2022-RadarView-Tata-Communications.pdf
+  tw.6245#e15:
+    locator: 記者陳柔蓁報導首段及合作說明
+    published_date: '2020-11-05'
+    publisher: 自由時報
+    quote_check: found
+    title: 策略聯盟 台達電認購立端可轉債
+    url: https://ec.ltn.com.tw/article/breakingnews/3342969
+  tw.6245#e16:
+    locator: 新聞稿標題
+    published_date: '2020-11-05'
+    publisher: 台達電子
+    quote_check: found
+    title: 台達電子參與立端科技私募無擔保轉換公司債 強化邊緣運算與網路資安 提供全方位資通訊基礎設施方案
+    url: https://www.deltaww.com/zh-TW/press/13117
+  tw.6245#e17:
+    locator: About Lanner Electronics
+    published_date: null
+    publisher: Lanner Electronics USA
+    quote_check: found
+    title: Overview
+    url: https://www.lanner-america.com/overview
+  tw.6245#e18:
+    locator: PDF第117頁，Table 3，Lanner Electronics Inc.持股列；不包含子公司、關聯企業及合資權益的有價證券表
+    published_date: '2026-02-25'
+    publisher: Delta Electronics, Inc.
+    quote_check: found
+    title: Delta Electronics, Inc. and Subsidiaries－2025 Consolidated Financial Report
+    url: https://filecenter.deltaww.com/ir/download/financial_report/Q4%202025_eng_%20Consolidated%20Financial%20Report.pdf
+  tw.6245#e19:
+    locator: 新聞稿首段
+    published_date: '2025-03-04'
+    publisher: DeGirum Corp.／PR Newswire
+    quote_check: found
+    title: Lanner and DeGirum Announce Partnership
+    url: https://www.prnewswire.com/news-releases/lanner-and-degirum-announce-partnership-302390577.html

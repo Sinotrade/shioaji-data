@@ -14,9 +14,9 @@ industry:
   l2: tech.network
   l2_name: 通信網路
   l2_name_en: Communications & Networking
-  l3: net.telecom_equipment
-  l3_name: 電信設備
-  l3_name_en: Telecom Equipment
+  l3: net.switch
+  l3_name: 網通設備（交換器、路由器）
+  l3_name_en: Networking Equipment (Switches, Routers)
 chain: chain.networking
 chain_stage:
   agreement: both
@@ -26,55 +26,70 @@ chain_stage:
   stage_name: 網通設備與系統
   tier: downstream
 primary_chain_position: downstream
-summary_short: 透過子公司經營寬頻接取、企業網通設備、雲端網管與客製化製研服務。
-summary_long: 合勤投控透過合勤科技、兆勤科技與盟創科技等子公司經營網通設備及服務。2025年營收中，寬頻設備占76.92%，企業網通設備占15.00%，其他占8.08%。合勤科技的技術方案涵蓋光纖寬頻接取與5G固定無線接取，並展示50G PON光纖技術。兆勤科技提供WiFi 7無線基地台、USG FLEX資安防火牆及Nebula雲端網管平台，服務中小企業網路管理需求；盟創科技則提供客製化製研服務。
+summary_short: 透過子公司銷售寬頻、企業網通與資安設備，並提供網通製研代工。
+summary_long: 合勤控透過合勤科技、兆勤科技與盟創科技經營網通業務，分別服務電信營運商、企業及家庭用戶，以及網通製研代工客戶。2024年寬頻設備占營收75.58%，企業網通設備占14.96%，其他占9.46%。合勤科技產品包括光纖局端與用戶端設備、5G及Wi-Fi閘道器；兆勤科技提供WiFi 7無線基地台、USG FLEX H防火牆與Nebula雲端網管。公開資料可確認旗下產品採用聯發科、高通及博通晶片，並有向Telenor Norway提供5G路由器的歷史案例。近三年子公司重大交易包括取得竹南不動產及設備、投資Lifemote，以及越南租地委建廠房。
 segments:
 - evidence_ids:
-  - e1
+  - e3
   id: seg_broadband
   name: 寬頻設備
-  period: '2025'
-  revenue_share_pct: 76.92
+  period: '2024'
+  revenue_share_pct: 75.58
 - evidence_ids:
-  - e1
+  - e3
   id: seg_enterprise
   name: 企業網通設備
-  period: '2025'
-  revenue_share_pct: 15
+  period: '2024'
+  revenue_share_pct: 14.96
 - evidence_ids:
-  - e1
+  - e3
   id: seg_other
   name: 其他
-  period: '2025'
-  revenue_share_pct: 8.08
+  period: '2024'
+  revenue_share_pct: 9.46
 main_theme: theme.5g
 themes:
 - also: []
-  stage: equipment
+  stage: devices
   theme: theme.5g
-  tier: midstream
+  tier: downstream
 relations:
-  subsidiaries:
-  - as_of: '2026-10-15'
+  customers:
+  - as_of: 2020-11
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 主要子公司及客製化製研服務
+    detail: 向合勤科技採用NR7101戶外5G FWA路由器
     details:
-    - 主要子公司及客製化製研服務
-    edge: ebceee8248491
+    - 向合勤科技採用NR7101戶外5G FWA路由器
+    edge: e9e5c6d5ef3c4
     evidence_level: primary
-    id: org.mitrastar-technology
+    id: org.telenor-norway
+    name: Telenor Norway AS
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: MitraStar網通研發及製造代工子公司
+    details:
+    - MitraStar網通研發及製造代工子公司
+    edge: e429abab99771
+    evidence_level: primary
+    id: org.mitrastar
     name: 盟創科技股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-10-15'
+  - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 主要子公司
+    detail: 電信營運商寬頻設備與解決方案子公司
     details:
-    - 主要子公司
+    - 電信營運商寬頻設備與解決方案子公司
     edge: e9a94a5487b0d
     evidence_level: primary
     id: org.zyxel-communications
@@ -83,12 +98,12 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-10-15'
+  - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 主要子公司
+    detail: Zyxel Networks企業網通與通路子公司
     details:
-    - 主要子公司
+    - Zyxel Networks企業網通與通路子公司
     edge: ebf4f6f667954
     evidence_level: primary
     id: org.zyxel-networks
@@ -97,67 +112,252 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  suppliers:
+  - as_of: '2024-01-09'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 合勤科技5G閘道器採用T830與Filogic 680晶片
+    details:
+    - 合勤科技5G閘道器採用T830與Filogic 680晶片
+    edge: e0877619df062
+    evidence_level: primary
+    id: tw.2454
+    name: 聯發科
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-21'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 合勤科技舊款VMG3312系列採用Wi-Fi晶片與SDK
+    details:
+    - 合勤科技舊款VMG3312系列採用Wi-Fi晶片與SDK
+    edge: e29989c2284e9
+    evidence_level: media
+    id: us.AVGO
+    name: Broadcom
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2025-09
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 兆勤科技WiFi 7基地台採用四核心晶片
+    details:
+    - 兆勤科技WiFi 7基地台採用四核心晶片
+    edge: e4884891a5dc6
+    evidence_level: primary
+    id: us.QCOM
+    name: Qualcomm
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 美金6,000千元
+    as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 合勤科技取得Lifemote少數股權
+    details:
+    - 合勤科技取得Lifemote少數股權
+    - Lifemote原股權交易的或有價金支付
+    edge: e3ca0293e7e60
+    event_date: null
+    events:
+    - amount: 美金6,000千元
+      detail: 合勤科技取得Lifemote少數股權
+      event_date: null
+    - amount: 美金1,500千元
+      detail: Lifemote原股權交易的或有價金支付
+      event_date: null
+    evidence_level: primary
+    id: org.lifemote
+    name: LiFEMOTE BiLiSiM VE TiCARET ANONiM SiRKETi
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 越南盾432,500,000仟元(未稅)
+    as_of: '2025-07-21'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 越南盟創租地委建廠房相關工程
+    details:
+    - 越南盟創租地委建廠房相關工程
+    edge: ee90139401a1a
+    event_date: '2025-07-21'
+    events:
+    - amount: 越南盾432,500,000仟元(未稅)
+      detail: 越南盟創租地委建廠房相關工程
+      event_date: '2025-07-21'
+    evidence_level: primary
+    id: org.uc-phat-construction
+    name: 億發建設有限公司(UC PHAT CONSTRUCTION SERVICES TRADING CO., LTD)
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣771,039千元
+    as_of: 2024-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 合勤科技經法拍取得竹南不動產及設備
+    details:
+    - 合勤科技經法拍取得竹南不動產及設備
+    edge: eac6c1ccc3628
+    event_date: '2024-07-18'
+    events:
+    - amount: 新台幣771,039千元
+      detail: 合勤科技經法拍取得竹南不動產及設備
+      event_date: '2024-07-18'
+    evidence_level: primary
+    id: org.臺灣苗栗地方法院
+    name: 臺灣苗栗地方法院
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 2026年10月官方新聞稿所述、已商用部署合勤科技prplWare Wi-Fi…
+- 盟創科技官網所述全球品牌代工客戶，未具名。
+- 2024年度年報主要銷貨客戶以甲客戶、乙客戶代稱，無法辨識公司。
 website: http://www.zyxelgroup.com
 tax_id: '28999503'
 incorporated: '2010-08-16'
 listed: '2010-08-16'
-as_of: '2026-10-18'
+as_of: '2026-10-28'
 confidence: ai_cross_checked
 has_research: true
 evidence:
-  tw.3704#e1:
-    locator: 第68頁，1.1.2營業比重及公司目前主要之商品項目；欄序為114年度、113年度
-    published_date: '2026-04-17'
+  tw.3704#e10:
+    locator: 第2頁CUSTOMER STORY首段；第1頁載合作自2020年11月開始
+    published_date: null
+    publisher: Zyxel Communications
+    quote_check: found
+    title: Zyxel Communications & Telenor Customer Story
+    url: https://www.zyxel.com/service-provider/sites/default/files/2023-11/Zyxel_CS_Telenor_v3_0224_final.pdf
+  tw.3704#e11:
+    locator: 印刷第74頁，PDF第77頁；取得不動產附表四，單位千元
+    published_date: null
     publisher: 合勤投資控股股份有限公司
     quote_check: found
-    title: 合勤投資控股股份有限公司民國114年度年報
-    url: https://www.irpro.co/3704/annual/2025/CH/20260527161815-1.pdf
+    title: 合勤投資控股股份有限公司及子公司113年度合併財務報告
+    url: https://www.irpro.co/3704/financial/298/CH/20250312161831-2.pdf
+  tw.3704#e12:
+    locator: 印刷第15頁，PDF第17頁；附註六（二）Lifemote交易
+    published_date: null
+    publisher: 合勤投資控股股份有限公司
+    quote_check: found
+    title: 合勤投資控股股份有限公司及子公司115年第二季合併財務報告
+    url: https://www.irpro.co/3704/financial/310/CH/20260804102550-2.pdf
+  tw.3704#e13:
+    locator: 印刷第15頁，PDF第17頁；附註六（二）
+    published_date: null
+    publisher: 合勤投資控股股份有限公司
+    quote_check: found
+    title: 115年第二季合併財務報告－Lifemote買權失效
+    url: https://www.irpro.co/3704/financial/310/CH/20260804102550-2.pdf
+  tw.3704#e14:
+    locator: 印刷第50頁，PDF第52頁；附表六，合勤科技投資Lifemote列，持股25.00%
+    published_date: null
+    publisher: 合勤投資控股股份有限公司
+    quote_check: found
+    title: 115年第二季合併財務報告－轉投資事業相關資訊
+    url: https://www.irpro.co/3704/financial/310/CH/20260804102550-2.pdf
+  tw.3704#e15:
+    locator: 印刷第29頁，PDF第32頁；附註六（二）
+    published_date: null
+    publisher: 合勤投資控股股份有限公司
+    quote_check: found
+    title: 合勤投資控股股份有限公司及子公司114年度合併財務報告
+    url: https://www.irpro.co/3704/financial/306/CH/20260310161635-2.pdf
+  tw.3704#e16:
+    locator: 公告第5至6項；第2項載事實發生日114/7/21
+    published_date: '2025-07-22'
+    publisher: MoneyDJ理財網／公開資訊觀測站重大訊息
+    quote_check: found
+    title: 合勤控：越南盟創以租地委建興建廠房相關工程案，總工程費用約4325億越南盾(補充)
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=919696a2-4571-4a3b-8d3b-1a216c854899
+  tw.3704#e17:
+    locator: 印刷第11頁，PDF第13頁；列入合併財務報告之子公司
+    published_date: null
+    publisher: 合勤投資控股股份有限公司
+    quote_check: found
+    title: 115年第二季合併財務報告－合勤科技子公司關係
+    url: https://www.irpro.co/3704/financial/310/CH/20260804102550-2.pdf
+  tw.3704#e18:
+    locator: 印刷第11頁，PDF第13頁；列入合併財務報告之子公司
+    published_date: null
+    publisher: 合勤投資控股股份有限公司
+    quote_check: found
+    title: 115年第二季合併財務報告－兆勤科技子公司關係
+    url: https://www.irpro.co/3704/financial/310/CH/20260804102550-2.pdf
+  tw.3704#e19:
+    locator: 印刷第11頁，PDF第13頁；列入合併財務報告之子公司
+    published_date: null
+    publisher: 合勤投資控股股份有限公司
+    quote_check: found
+    title: 115年第二季合併財務報告－盟創科技子公司關係
+    url: https://www.irpro.co/3704/financial/310/CH/20260804102550-2.pdf
   tw.3704#e2:
-    locator: 關於合勤投控
+    locator: 公司簡介
     published_date: null
     publisher: 合勤投資控股股份有限公司
     quote_check: found
-    title: 合勤投控官網
-    url: https://www.zyxelgroup.com/
+    title: 合勤投控－公司簡介
+    url: https://www.zyxelgroup.com/about
   tw.3704#e3:
-    locator: 產品與服務首段
-    published_date: null
+    locator: 印刷第63頁，PDF第67頁；1.1.2營業比重及公司目前主要之商品項目
+    published_date: '2025-04-19'
     publisher: 合勤投資控股股份有限公司
     quote_check: found
-    title: 產品與服務
-    url: https://www.zyxelgroup.com/products
+    title: 合勤投資控股股份有限公司113年度年報
+    url: https://www.irpro.co/3704/annual/2024/CH/20250529160902-1.pdf
   tw.3704#e4:
-    locator: 展品焦點：50G PON光纖接入解決方案
-    published_date: '2026-02-25'
+    locator: 深化國際一級電信商合作
+    published_date: '2026-10-22'
     publisher: 合勤投資控股股份有限公司
     quote_check: found
-    title: 合勤科技 MWC 2026 聚焦 Wi-Fi 8、50G PON 光纖、及雲端智能管理解決方案
-    url: https://www.zyxelgroup.com/Press_Room&show_type=D&id=298
+    title: 合勤科技躋身全球三家開源寬頻卓越貢獻企業 以歐洲商用實績拓展全球電信商機
+    url: https://www.zyxelgroup.com/Press_Room&show_type=D&lang=tw&id=308
   tw.3704#e5:
-    locator: 打造智慧化家庭連網體驗
-    published_date: '2026-09-30'
-    publisher: 合勤投資控股股份有限公司
+    locator: 副標題
+    published_date: '2024-01-09'
+    publisher: Zyxel Communications
     quote_check: found
-    title: 合勤科技 Network X 2026 聚焦 AI 寬頻生態系 展示雲端管理到智慧家庭完整布局
-    url: https://www.zyxelgroup.com/Press_Room&show_type=D&id=307
+    title: Zyxel Communications launches first-of-its-kind 5G NR Router with advanced AI integrations powered by MediaTek
+    url: https://www.zyxel.com/service-provider/apac/en/news/partnership/zyxel-launches-first-5g-nr-router-advanced-ai-integrations-powered-by-mediatek
   tw.3704#e6:
-    locator: 新聞稿首段及副標題
-    published_date: '2026-01-21'
-    publisher: 兆勤科技
+    locator: 新聞稿第二段
+    published_date: '2025-09-29'
+    publisher: Zyxel Networks
     quote_check: found
-    title: Zyxel 推出首款工業級 WiFi 7 無線基地台，加速企業邁向工業 4.0 轉型
-    url: https://www.zyxel.com/tw/zh/newsroom/press-releases/zyxel-networks-launches-first-industrial-wifi-7-access-point-to-accelerate-industry-4-0
+    title: Zyxel Networks Expands Portfolio of WiFi 7 Access Points for Small Businesses
+    url: https://www.zyxel.com/us/en-us/newsroom/press-releases/zyxel-networks-expands-portfolio-of-wifi-7-access-points-for-small-businesses
   tw.3704#e7:
-    locator: The Zyxel Family of Firewalls
+    locator: 產品介紹
     published_date: null
     publisher: Zyxel Networks
     quote_check: found
-    title: Introducing the new USG FLEX Series
-    url: https://info.zyxel.com/usgflex
+    title: USG FLEX H Series－Firewall NGFW
+    url: https://www.zyxel.com/global/en/products/firewall-ngfw/usg-flex-h-series
   tw.3704#e8:
-    locator: 以AI資安與雲端網管創新獲國際市場肯定
-    published_date: '2026-06-09'
-    publisher: 合勤投資控股股份有限公司
+    locator: Powerful, effortless and scalable connectivity
+    published_date: null
+    publisher: Zyxel Networks
     quote_check: found
-    title: 兆勤科技榮獲台灣金根獎 研發實力與全球布局獲肯定
-    url: https://www.zyxelgroup.com/Press_Room&show_type=D&id=304
+    title: USG FLEX H Series－Nebula整合介紹
+    url: https://www.zyxel.com/global/en/products/firewall-ngfw/usg-flex-h-series
+  tw.3704#e9:
+    locator: 張明德報導，合勤科技回覆段落
+    published_date: '2026-10-21'
+    publisher: iThome
+    quote_check: found
+    title: Broadcom Wi-Fi晶片WPSplinter漏洞波及臺灣網通廠商產品
+    url: https://www.ithome.com.tw/news/179857

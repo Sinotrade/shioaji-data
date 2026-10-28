@@ -26,44 +26,102 @@ chain_stage:
   stage_name: 製造與代工
   tier: midstream
 primary_chain_position: midstream
-summary_short: 製造銷售血糖試片、血糖機及居家醫療設備，兼營代工與自有品牌。
-summary_long: 泰博科技以血糖機與拋棄式血糖試片的製造及銷售為核心，採OEM/ODM代工及FORA自有品牌經營。2024年血糖試片占營收53.90%，血糖機占14.08%，其餘包含新冠肺炎檢驗試劑及其他產品。產品線另涵蓋酮體、膽固醇、尿酸與糖化血色素檢測、耳溫槍、血壓計、霧化器、專業醫用監測設備及具無線連線功能的遠距醫療產品與APP。截至2025年9月底，直接子公司包括福爾聯合、喬聯科技、泰達精密科技、亞太遠見及泰瑞特科技，分別從事醫療器材或電子零組件相關業務。
+summary_short: 製造血糖試片、血糖機與居家醫療器材，提供OEM／ODM服務。
+summary_long: 泰博科技提供醫療器材的設計、生產及OEM／ODM服務，主要收入來自血糖監測產品。2024年血糖試片占營收53.90%、血糖機14.08%，新冠肺炎檢驗試劑占1.66%，其他產品占30.36%。產品涵蓋診斷測試、居家照護、專業醫用監測及遠距醫療，包括耳溫槍、電子血壓計、霧化器，以及具無線連線功能的醫療產品與APP。集團旗下福爾聯合經營醫療器材買賣，官網並揭露與ilvi GmbH、Vivify Health及Beep的資料整合合作。2026年董事會通過間接子公司普陽向凱健企業取得台南廠房土地及員工宿舍。
 segments:
 - evidence_ids:
-  - e02
-  id: seg.strips
+  - e03
+  id: seg_strips
   name: 血糖試片
   period: '2024'
   revenue_share_pct: 53.9
 - evidence_ids:
-  - e02
-  id: seg.meters
+  - e03
+  id: seg_meters
   name: 血糖機
   period: '2024'
   revenue_share_pct: 14.08
 - evidence_ids:
-  - e02
-  id: seg.covid
+  - e03
+  id: seg_covid
   name: 新冠肺炎檢驗試劑
   period: '2024'
   revenue_share_pct: 1.66
 - evidence_ids:
-  - e02
-  id: seg.other
+  - e03
+  id: seg_other
   name: 其他產品
   period: '2024'
   revenue_share_pct: 30.36
 relations:
+  customers:
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團內部醫療器材銷貨
+    details:
+    - 集團內部醫療器材銷貨
+    edge: e92edab21f6da
+    evidence_level: primary
+    id: org.foracare-suisse
+    name: ForaCare SUISSE AG
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  partners:
+  - as_of: 2026-10
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: Xper技術與Beep Insights乳酸檢測APP整合
+    details:
+    - Xper技術與Beep Insights乳酸檢測APP整合
+    edge: e5d4dbc545c73
+    evidence_level: primary
+    id: org.beep
+    name: Beep
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2026-10
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 遠距醫療系統及量測資料整合
+    details:
+    - 遠距醫療系統及量測資料整合
+    edge: eb8315344a39d
+    evidence_level: primary
+    id: org.ilvi
+    name: ilvi GmbH
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2026-10
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 遠距醫療與遠端病患監測整合
+    details:
+    - 遠距醫療與遠端病患監測整合
+    edge: ee96aeaeb2abf
+    evidence_level: primary
+    id: org.vivify-health
+    name: Vivify Health
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
   - as_of: '2025-09-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持股100%；醫療器材設備買賣
+    detail: 直接全資子公司；醫療器材設備買賣
     details:
-    - 直接持股100%；醫療器材設備買賣
-    edge: eb7e79cc6efdc
+    - 直接全資子公司；醫療器材設備買賣
+    edge: e0919f5ec97df
     evidence_level: primary
-    id: org.asia-pacific-foresight
+    id: org.asia-pacific-vision
     name: 亞太遠見股份有限公司
     ranking_basis: unranked
     share_basis: null
@@ -72,9 +130,9 @@ relations:
   - as_of: '2025-09-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持股100%；醫療器材設備買賣
+    detail: 直接全資子公司；醫療器材設備買賣
     details:
-    - 直接持股100%；醫療器材設備買賣
+    - 直接全資子公司；醫療器材設備買賣
     edge: e3da713f9a1c6
     evidence_level: primary
     id: org.fora-united
@@ -86,113 +144,466 @@ relations:
   - as_of: '2025-09-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持股68.01%；醫療器材設備製造及買賣
+    detail: 透過福爾聯合持有的間接子公司
     details:
-    - 直接持股68.01%；醫療器材設備製造及買賣
-    edge: ed8b5d950f35b
+    - 透過福爾聯合持有的間接子公司
+    edge: eebe57219d477
     evidence_level: primary
-    id: org.jo-lian-technology
+    id: org.puyang-development-technology
+    name: 普陽開發科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-08-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股68.01%子公司；旗下蘇州喬陽決議解散清算
+    details:
+    - 持股68.01%子公司；旗下蘇州喬陽決議解散清算
+    edge: eb44f3cae7859
+    evidence_level: primary
+    id: org.qiaolian-technology
     name: 喬聯科技股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
+  suppliers:
   - as_of: '2025-09-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持股100%；電子零組件及模具製造與買賣
+    detail: 集團內部進貨；個別品項未揭露
     details:
-    - 直接持股100%；電子零組件及模具製造與買賣
-    edge: e0164860e4b75
+    - 集團內部進貨；個別品項未揭露
+    edge: e28837f170eac
     evidence_level: primary
-    id: org.tai-da-precision-technology
+    id: org.taida-precision-technology
     name: 泰達精密科技股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2025-09-30'
+  transactions:
+  - amount: 不超過新台幣10億元
+    as_of: '2024-06-19'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持股78.26%；醫療器材設備買賣
+    detail: 董事會核准分批增資子公司
     details:
-    - 直接持股78.26%；醫療器材設備買賣
-    edge: eaa2aa2dbc0b3
+    - 董事會核准分批增資子公司
+    edge: e0f68b4060766
+    event_date: '2024-06-19'
+    events:
+    - amount: 不超過新台幣10億元
+      detail: 董事會核准分批增資子公司
+      event_date: '2024-06-19'
     evidence_level: primary
-    id: org.tai-rui-te-technology
-    name: 泰瑞特科技股份有限公司
+    id: org.asia-pacific-vision
+    name: 亞太遠見股份有限公司
     ranking_basis: unranked
+    role: buyer
     share_basis: null
     share_pct: null
     weight: 1
+  - amount: 新台幣23,477仟元
+    as_of: '2025-01-24'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 購入子公司6.25%非控制權益
+    details:
+    - 購入子公司6.25%非控制權益
+    edge: e1e71413e0e5b
+    event_date: '2025-01-24'
+    events:
+    - amount: 新台幣23,477仟元
+      detail: 購入子公司6.25%非控制權益
+      event_date: '2025-01-24'
+    evidence_level: primary
+    id: org.foracare-suisse
+    name: ForaCare SUISSE AG
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 合計新台幣7,626仟元
+    as_of: '2025-09-15'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團購入普陽非控制權益
+    details:
+    - 集團購入普陽非控制權益
+    edge: ef75f292d2db1
+    event_date: '2025-09-15'
+    events:
+    - amount: 合計新台幣7,626仟元
+      detail: 集團購入普陽非控制權益
+      event_date: '2025-09-15'
+    evidence_level: primary
+    id: org.puyang-development-technology
+    name: 普陽開發科技股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣3億6仟4佰2拾1萬5仟6佰3拾4元整
+    as_of: '2026-09-16'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接子公司普陽取得台南廠房及土地
+    details:
+    - 間接子公司普陽取得台南廠房及土地
+    - 間接子公司普陽取得台南員工宿舍
+    edge: ec13ecc904008
+    event_date: '2026-09-16'
+    events:
+    - amount: 新台幣3億6仟4佰2拾1萬5仟6佰3拾4元整
+      detail: 間接子公司普陽取得台南廠房及土地
+      event_date: '2026-09-16'
+    - amount: 新台幣1仟1佰5拾3萬4仟3佰6拾6元整
+      detail: 間接子公司普陽取得台南員工宿舍
+      event_date: '2026-09-16'
+    evidence_level: primary
+    id: org.凱健企業股份有限公司
+    name: 凱健企業股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣229,380,500元
+    as_of: '2026-06-02'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 泰博處分廣達普通股；財務投資
+    details:
+    - 泰博處分廣達普通股；財務投資
+    edge: e93585bc85355
+    event_date: '2026-06-02'
+    events:
+    - amount: 新台幣229,380,500元
+      detail: 泰博處分廣達普通股；財務投資
+      event_date: '2026-06-02'
+    evidence_level: primary
+    id: tw.2382
+    name: 廣達
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣200,649仟元（不含手續費）
+    as_of: '2024-11-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 間接子公司普陽取得廣達普通股
+    details:
+    - 間接子公司普陽取得廣達普通股
+    edge: ec30ddfb2a506
+    event_date: '2024-11-28'
+    events:
+    - amount: 新台幣200,649仟元（不含手續費）
+      detail: 間接子公司普陽取得廣達普通股
+      event_date: '2024-11-28'
+    evidence_level: primary
+    id: tw.2382
+    name: 廣達
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣216,600,000元
+    as_of: '2025-08-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 處分世芯-KY普通股；財務投資
+    details:
+    - 處分世芯-KY普通股；財務投資
+    edge: ece3123e5a499
+    event_date: '2025-08-13'
+    events:
+    - amount: 新台幣216,600,000元
+      detail: 處分世芯-KY普通股；財務投資
+      event_date: '2025-08-13'
+    evidence_level: primary
+    id: tw.3661
+    name: 世芯-KY
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣218,270,000元
+    as_of: '2026-01-22'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 取得緯穎普通股；財務投資
+    details:
+    - 取得緯穎普通股；財務投資
+    edge: e1521acbed77d
+    event_date: '2026-01-22'
+    events:
+    - amount: 新台幣218,270,000元
+      detail: 取得緯穎普通股；財務投資
+      event_date: '2026-01-22'
+    evidence_level: primary
+    id: tw.6669
+    name: 緯穎
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣255,125,000元
+    as_of: '2026-08-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 處分緯穎普通股；財務投資
+    details:
+    - 處分緯穎普通股；財務投資
+    edge: ef865b9bce692
+    event_date: '2026-08-28'
+    events:
+    - amount: 新台幣255,125,000元
+      detail: 處分緯穎普通股；財務投資
+      event_date: '2026-08-28'
+    evidence_level: primary
+    id: tw.6669
+    name: 緯穎
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 估計新台幣231,000,000元
+    as_of: '2026-10-02'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 擬處分美光普通股；含未出售持股估值
+    details:
+    - 擬處分美光普通股；含未出售持股估值
+    edge: e18c354f15ab1
+    event_date: '2026-10-02'
+    events:
+    - amount: 估計新台幣231,000,000元
+      detail: 擬處分美光普通股；含未出售持股估值
+      event_date: '2026-10-02'
+    evidence_level: primary
+    id: us.MU
+    name: Micron
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 年報所述現有客戶、國際知名大廠及策略聯盟夥伴未全部具名。
+- 2025年普陽取消的新莊購廠案未揭露具名交易相對人。
+- 證券市場交易的實際買賣相對人未揭露；相關公司為證券發行人。
 website: http://www.taidoc.com.tw
 tax_id: '16584326'
 incorporated: '1998-05-11'
 listed: '2023-12-22'
-as_of: '2026-10-18'
+as_of: '2026-10-28'
 confidence: ai_cross_checked
 has_research: true
 evidence:
   tw.4736#e02:
-    locator: 第54頁，主要產品之營業比重；欄位依序為112年度金額、比重及113年度金額、比重
-    published_date: '2025-04-06'
+    locator: 公司介紹段落
+    published_date: null
     publisher: 泰博科技股份有限公司
     quote_check: found
-    title: 泰博科技股份有限公司113年度年報
-    url: https://www.taidoc.com/tw/wp-content/uploads/2026/01/113%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
+    title: 公司治理
+    url: https://www.taidoc.com/tw/taidoc-governance/
   tw.4736#e03:
-    locator: 第54頁，公司目前之主要商品（服務）項目
+    locator: 印刷頁54，主要產品之營業比重；末兩欄為113年度金額及占比
     published_date: '2025-04-06'
     publisher: 泰博科技股份有限公司
     quote_check: found
-    title: 泰博科技股份有限公司113年度年報
+    title: 一一三年度年報
     url: https://www.taidoc.com/tw/wp-content/uploads/2026/01/113%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
   tw.4736#e04:
-    locator: 第55頁，產業之現況與發展
+    locator: 印刷頁54，公司目前之主要商品項目
     published_date: '2025-04-06'
     publisher: 泰博科技股份有限公司
     quote_check: found
-    title: 泰博科技股份有限公司113年度年報
+    title: 一一三年度年報
     url: https://www.taidoc.com/tw/wp-content/uploads/2026/01/113%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
   tw.4736#e05:
-    locator: 第58頁，產業上、中、下游之關聯性
+    locator: 印刷頁54，公司目前之主要商品項目
     published_date: '2025-04-06'
     publisher: 泰博科技股份有限公司
     quote_check: found
-    title: 泰博科技股份有限公司113年度年報
+    title: 一一三年度年報
     url: https://www.taidoc.com/tw/wp-content/uploads/2026/01/113%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
   tw.4736#e06:
-    locator: 第21頁，附註十三子公司；114年9月30日持股欄
-    published_date: null
+    locator: 印刷頁54，公司目前之主要商品項目
+    published_date: '2025-04-06'
     publisher: 泰博科技股份有限公司
     quote_check: found
-    title: 泰博科技股份有限公司及子公司114年第三季合併財務報告
-    url: https://www.taidoc.com/tw/wp-content/uploads/2026/01/114%E7%AC%AC%E4%B8%89%E5%AD%A3%E8%B2%A1%E5%A0%B1.pdf
+    title: 一一三年度年報
+    url: https://www.taidoc.com/tw/wp-content/uploads/2026/01/113%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1.pdf
   tw.4736#e07:
-    locator: 第21頁，附註十三子公司；投資公司為本公司，114年9月30日持股欄
+    locator: 合作介紹
     published_date: null
-    publisher: 泰博科技股份有限公司
+    publisher: TaiDoc Technology Corporation
     quote_check: found
-    title: 泰博科技股份有限公司及子公司114年第三季合併財務報告
-    url: https://www.taidoc.com/tw/wp-content/uploads/2026/01/114%E7%AC%AC%E4%B8%89%E5%AD%A3%E8%B2%A1%E5%A0%B1.pdf
+    title: ilvi GmbH
+    url: https://taidoc.com/ilvi-gmbh/
   tw.4736#e08:
-    locator: 第21頁，附註十三子公司；投資公司為本公司，114年9月30日持股欄
+    locator: 合作介紹
     published_date: null
-    publisher: 泰博科技股份有限公司
+    publisher: TaiDoc Technology Corporation
     quote_check: found
-    title: 泰博科技股份有限公司及子公司114年第三季合併財務報告
-    url: https://www.taidoc.com/tw/wp-content/uploads/2026/01/114%E7%AC%AC%E4%B8%89%E5%AD%A3%E8%B2%A1%E5%A0%B1.pdf
+    title: Vivifyhealth
+    url: https://taidoc.com/vivifyhealth/
   tw.4736#e09:
-    locator: 第21頁，附註十三子公司；投資公司為本公司，114年9月30日持股欄
+    locator: Revolutionizing Athletic Training with Precision
     published_date: null
-    publisher: 泰博科技股份有限公司
+    publisher: TaiDoc Technology Corporation
     quote_check: found
-    title: 泰博科技股份有限公司及子公司114年第三季合併財務報告
-    url: https://www.taidoc.com/tw/wp-content/uploads/2026/01/114%E7%AC%AC%E4%B8%89%E5%AD%A3%E8%B2%A1%E5%A0%B1.pdf
+    title: Beep
+    url: https://taidoc.com/beep/
   tw.4736#e10:
-    locator: 第21頁，附註十三子公司；投資公司為本公司，114年9月30日持股欄
-    published_date: null
+    locator: 印刷頁20，列入合併財務報告之子公司
+    published_date: '2025-11-05'
     publisher: 泰博科技股份有限公司
     quote_check: found
-    title: 泰博科技股份有限公司及子公司114年第三季合併財務報告
+    title: 民國114及113年第3季合併財務報告
     url: https://www.taidoc.com/tw/wp-content/uploads/2026/01/114%E7%AC%AC%E4%B8%89%E5%AD%A3%E8%B2%A1%E5%A0%B1.pdf
+  tw.4736#e11:
+    locator: 公告第2至5點
+    published_date: '2026-08-31'
+    publisher: 公開資訊觀測站重大訊息公告／MoneyDJ
+    quote_check: found
+    title: 泰博代子公司喬聯公告決議解散清算蘇州喬陽
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=107db58a-4873-47aa-9086-045d251edfc9
+  tw.4736#e12:
+    locator: 印刷頁20，列入合併財務報告之子公司
+    published_date: '2025-11-05'
+    publisher: 泰博科技股份有限公司
+    quote_check: found
+    title: 民國114及113年第3季合併財務報告
+    url: https://www.taidoc.com/tw/wp-content/uploads/2026/01/114%E7%AC%AC%E4%B8%89%E5%AD%A3%E8%B2%A1%E5%A0%B1.pdf
+  tw.4736#e13:
+    locator: 印刷頁59，附表五，福爾聯合之被投資公司
+    published_date: '2025-11-05'
+    publisher: 泰博科技股份有限公司
+    quote_check: found
+    title: 民國114及113年第3季合併財務報告
+    url: https://www.taidoc.com/tw/wp-content/uploads/2026/01/114%E7%AC%AC%E4%B8%89%E5%AD%A3%E8%B2%A1%E5%A0%B1.pdf
+  tw.4736#e14:
+    locator: 印刷頁35，與非控制權益之權益交易
+    published_date: '2025-11-05'
+    publisher: 泰博科技股份有限公司
+    quote_check: unreachable
+    title: 民國114及113年第3季合併財務報告
+    url: https://www.taidoc.com/tw/wp-content/uploads/2026/01/114%E7%AC%AC%E4%B8%89%E5%AD%A3%E8%B2%A1%E5%A0%B1%E5%A0%B1.pdf
+  tw.4736#e15:
+    locator: 印刷頁57，母子公司業務關係及重要交易往來，單位新台幣仟元
+    published_date: '2025-11-05'
+    publisher: 泰博科技股份有限公司
+    quote_check: found
+    title: 民國114及113年第3季合併財務報告
+    url: https://www.taidoc.com/tw/wp-content/uploads/2026/01/114%E7%AC%AC%E4%B8%89%E5%AD%A3%E8%B2%A1%E5%A0%B1.pdf
+  tw.4736#e16:
+    locator: 印刷頁57，母子公司業務關係及重要交易往來，單位新台幣仟元
+    published_date: '2025-11-05'
+    publisher: 泰博科技股份有限公司
+    quote_check: found
+    title: 民國114及113年第3季合併財務報告
+    url: https://www.taidoc.com/tw/wp-content/uploads/2026/01/114%E7%AC%AC%E4%B8%89%E5%AD%A3%E8%B2%A1%E5%A0%B1.pdf
+  tw.4736#e17:
+    locator: 公告第1至3點
+    published_date: '2024-06-20'
+    publisher: 公開資訊觀測站重大訊息公告／MoneyDJ
+    quote_check: found
+    title: 泰博董事會決議增資子公司亞太遠見，上限10億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=60cd3c88-80eb-4bfe-9ff1-8ee26e119517
+  tw.4736#e18:
+    locator: 印刷頁36，權益交易表；依序為普陽、ForaCare SUISSE AG及合計，單位新台幣仟元
+    published_date: '2025-11-05'
+    publisher: 泰博科技股份有限公司
+    quote_check: found
+    title: 民國114及113年第3季合併財務報告
+    url: https://www.taidoc.com/tw/wp-content/uploads/2026/01/114%E7%AC%AC%E4%B8%89%E5%AD%A3%E8%B2%A1%E5%A0%B1.pdf
+  tw.4736#e19:
+    locator: 印刷頁35，與非控制權益之權益交易
+    published_date: '2025-11-05'
+    publisher: 泰博科技股份有限公司
+    quote_check: found
+    title: 民國114及113年第3季合併財務報告
+    url: https://www.taidoc.com/tw/wp-content/uploads/2026/01/114%E7%AC%AC%E4%B8%89%E5%AD%A3%E8%B2%A1%E5%A0%B1.pdf
+  tw.4736#e20:
+    locator: 公告標題及第1點
+    published_date: '2026-09-16'
+    publisher: 公開資訊觀測站重大訊息公告／MoneyDJ
+    quote_check: found
+    title: 泰博公告董事會決議通過子公司普陽取得土地、廠房
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=1a389bb0-bebd-47bb-a443-c1e3a3469cac
+  tw.4736#e21:
+    locator: 公告第5至6點
+    published_date: '2026-09-16'
+    publisher: 公開資訊觀測站重大訊息公告／MoneyDJ
+    quote_check: found
+    title: 泰博公告董事會決議通過子公司普陽取得土地、廠房
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=1a389bb0-bebd-47bb-a443-c1e3a3469cac
+  tw.4736#e22:
+    locator: 公告標題及第23點員工宿舍用途
+    published_date: '2026-09-16'
+    publisher: 公開資訊觀測站重大訊息公告／MoneyDJ
+    quote_check: found
+    title: 泰博公告董事會決議通過子公司普陽取得不動產
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=d34ea4ed-f8b8-44d2-a0b6-e3e3f5fe027e
+  tw.4736#e23:
+    locator: 公告第5至6點
+    published_date: '2026-09-16'
+    publisher: 公開資訊觀測站重大訊息公告／MoneyDJ
+    quote_check: found
+    title: 泰博公告董事會決議通過子公司普陽取得不動產
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=d34ea4ed-f8b8-44d2-a0b6-e3e3f5fe027e
+  tw.4736#e24:
+    locator: 公告第1至5點
+    published_date: '2025-08-14'
+    publisher: 公開資訊觀測站重大訊息公告／鉅亨網
+    quote_check: found
+    title: 泰博：公告本公司處分有價證券
+    url: https://news.cnyes.com/news/print/6111299
+  tw.4736#e25:
+    locator: 公告第1至5點
+    published_date: '2026-01-22'
+    publisher: 公開資訊觀測站重大訊息公告／MoneyDJ
+    quote_check: found
+    title: 泰博公告本公司取得有價證券
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=920cf872-32e4-4adf-9f56-2efce07239f8
+  tw.4736#e26:
+    locator: 公告第1至5點
+    published_date: '2026-08-28'
+    publisher: 公開資訊觀測站重大訊息公告／MoneyDJ
+    quote_check: found
+    title: 泰博6/17至8/28處分緯穎40張，交易總金額約2.55億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f24a47c7-7720-4bde-98b8-292ca3738abc
+  tw.4736#e27:
+    locator: 公告主旨及第1至3點
+    published_date: '2024-11-28'
+    publisher: 公司重大訊息公告／環球生技月刊
+    quote_check: found
+    title: 泰博：普陽開發科技取得廣達普通股744張
+    url: https://news.gbimonthly.com/tw/invest/show.php?num=72956
+  tw.4736#e28:
+    locator: 公告第1至5點
+    published_date: '2026-06-02'
+    publisher: 公開資訊觀測站重大訊息公告／鉅亨網
+    quote_check: found
+    title: 泰博：公告本公司處分有價證券
+    url: https://news.cnyes.com/news/id/6481040
+  tw.4736#e29:
+    locator: 公告第1及5點
+    published_date: '2026-10-02'
+    publisher: 公開資訊觀測站重大訊息公告／MoneyDJ
+    quote_check: found
+    title: 泰博7/23至10/2擬出清美光6,750股，交易總額估2.31億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=bd93c764-5c3f-44f9-ad8e-818ed0207dbc

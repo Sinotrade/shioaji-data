@@ -60,13 +60,13 @@ themes:
   theme: theme.ev
   tier: downstream
 - also: []
-  stage: components
-  theme: theme.ai_server
-  tier: midstream
-- also: []
   stage: system
   theme: theme.robotics
   tier: downstream
+- also: []
+  stage: components
+  theme: theme.ai_server
+  tier: midstream
 - also: []
   stage: equipment
   theme: theme.data_center
@@ -196,6 +196,34 @@ relations:
     evidence_level: media
     id: tw.5425
     name: 台半
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2020-11-05'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 邊緣運算與網路資安策略合作
+    details:
+    - 邊緣運算與網路資安策略合作
+    edge: e5d1fa45738c2
+    evidence_level: primary
+    id: tw.6245
+    name: 立端
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 550kW SOFC案場建置合作
+    details:
+    - 550kW SOFC案場建置合作
+    edge: e02c3586ad3ed
+    evidence_level: media
+    id: tw.9908
+    name: 大台北
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -342,6 +370,20 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: '2022-07-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: IC產品客戶；未指明個別產品
+    details:
+    - IC產品客戶；未指明個別產品
+    edge: e5c2269f5a72a
+    evidence_level: media
+    id: tw.2436
+    name: 偉詮電
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   - as_of: 2024-06
     confidence: ai_cross_checked
     counterparty_shares: []
@@ -366,6 +408,20 @@ relations:
     evidence_level: media
     id: tw.2504
     name: 國產
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-05-06'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: BBU電池模組供貨
+    details:
+    - BBU電池模組供貨
+    edge: e2f9eb9b046b7
+    evidence_level: media
+    id: tw.4931
+    name: 新盛力
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -408,6 +464,20 @@ relations:
     evidence_level: primary
     id: tw.7788
     name: 松川精密
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2014-01-14'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 電源供應器用鋁質電容
+    details:
+    - 電源供應器用鋁質電容
+    edge: edb8905726fe9
+    evidence_level: media
+    id: tw.8042
+    name: 金山電
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -681,6 +751,27 @@ relations:
     evidence_level: primary
     id: tw.3454
     name: VIVOTEK Inc.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣9億元
+    as_of: '2020-11-05'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 台達電認購立端私募無擔保轉換公司債
+    details:
+    - 台達電認購立端私募無擔保轉換公司債
+    edge: ec0fdbb0ee9e8
+    event_date: '2020-11-05'
+    events:
+    - amount: 新台幣9億元
+      detail: 台達電認購立端私募無擔保轉換公司債
+      event_date: '2020-11-05'
+    evidence_level: primary
+    id: tw.6245
+    name: 立端
     ranking_basis: unranked
     role: buyer
     share_basis: null

@@ -17,36 +17,60 @@ industry:
   l3: cons.materials
   l3_name: 建材
   l3_name_en: Building Materials
-primary_chain_position: upstream
-summary_short: 以混凝土、水泥及石膏板的生產與銷售為主要收入來源。
-summary_long: 環球水泥以混凝土、水泥與石膏板的生產及銷售為主要業務。2025年度混凝土收入52.94億元，為最大產品別收入；水泥與石膏板收入分別為15.31億元及9.73億元。集團旗下環球混凝土、嘉義混凝土與台南混凝土從事預拌混凝土業務，另有利永環球科技經營電子零組件銷售。利永環球科技旗下持有Tekscan Holdco，並透過該公司間接持有從事電子零組件加工製造及銷售的Tekscan Inc.。
+primary_chain_position: not_applicable
+summary_short: 以預拌混凝土、水泥及石膏板製銷為主，另透過子公司經營壓力感測產品。
+summary_long: 環球水泥主要製造及銷售預拌混凝土、水泥與石膏板，2026年第一季合併營收比重分別為63%、17%及12%，其他業務占7%。石膏板以脫硫石膏為主要原料，另有日本NICHIHA外牆系統代理業務。電子業務透過子公司利永環球科技發展壓力感測產品，包含機器人靈巧手感壓模組及訓練手套。利永環球於2025年完成收購Tekscan Holdco全部股權，環泥同年公告對利永環球增資新台幣6億元。其他投資事件包括2024年增持寶虹水泥，以及2025年與財團法人萬國道德總會公告辦公大樓合建案。
 segments:
 - evidence_ids:
   - e1
-  id: concrete
-  name: 混凝土
-  period: 2025年度
-  revenue_share_pct: null
+  id: seg_concrete
+  name: 預拌混凝土
+  period: 2026Q1
+  revenue_share_pct: 63
 - evidence_ids:
-  - e1
-  id: cement
+  - e2
+  id: seg_cement
   name: 水泥
-  period: 2025年度
-  revenue_share_pct: null
+  period: 2026Q1
+  revenue_share_pct: 17
 - evidence_ids:
-  - e1
-  id: gypsum_board
+  - e3
+  id: seg_gypsum
   name: 石膏板
-  period: 2025年度
-  revenue_share_pct: null
+  period: 2026Q1
+  revenue_share_pct: 12
 - evidence_ids:
-  - e1
-  id: other
+  - e4
+  id: seg_other
   name: 其他
-  period: 2025年度
-  revenue_share_pct: null
+  period: 2026Q1
+  revenue_share_pct: 7
+main_theme: theme.robotics
+themes:
+- also: []
+  stage: components
+  theme: theme.robotics
+  tier: upstream
 relations:
   customers:
+  - as_of: 2024-03
+    confidence: ai_cross_checked
+    counterparty_shares:
+    - as_of: 2024-03
+      basis: purchases
+      of: tw.2511
+      pct: 3.14
+    detail: 合併口徑進貨對象；品項未揭露
+    details:
+    - 合併口徑進貨對象；品項未揭露
+    edge: e7f78a0ebed6a
+    evidence_level: primary
+    id: tw.2511
+    name: 太子
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
@@ -61,55 +85,56 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
-  subsidiaries:
-  - as_of: '2025-12-31'
+  partners:
+  - as_of: 2023-12
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 預拌混凝土之產銷
+    detail: NICHIHA外牆系統代理通路合作
     details:
-    - 預拌混凝土之產銷
+    - NICHIHA外牆系統代理通路合作
+    edge: ed3bd7e7dd3b4
+    evidence_level: primary
+    id: jp.7943
+    name: ニチハ株式会社
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 預拌混凝土子公司
+    details:
+    - 預拌混凝土子公司
     edge: e288672163a00
     evidence_level: primary
     id: org.chiayi-concrete-industry
-    name: 嘉義混凝土工業公司
+    name: 嘉義混凝土工業股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2025-12-31'
+  - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 預拌混凝土及水泥製品之加工及銷售
+    detail: 預拌混凝土及水泥製品子公司
     details:
-    - 預拌混凝土及水泥製品之加工及銷售
+    - 預拌混凝土及水泥製品子公司
     edge: e29cca2e76dcf
     evidence_level: primary
     id: org.tainan-concrete-industry
-    name: 台南混凝土工業公司
+    name: 台南混凝土工業股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2025-12-31'
+  - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 電子零組件加工製造及銷售
+    detail: 利永環球持有的美國全資子公司
     details:
-    - 電子零組件加工製造及銷售
-    edge: e9ffc50ae571b
-    evidence_level: primary
-    id: org.tekscan
-    name: Tekscan Inc.
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
-  - as_of: '2025-12-31'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 利永環球科技旗下之投資控股公司
-    details:
-    - 利永環球科技旗下之投資控股公司
+    - 利永環球持有的美國全資子公司
     edge: e73dc77db2bb3
     evidence_level: primary
     id: org.tekscan-holdco
@@ -118,35 +143,49 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2025-12-31'
+  - as_of: '2025-10-20'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 電子零組件銷售
+    detail: 全資電子業務子公司
     details:
-    - 電子零組件銷售
+    - 全資電子業務子公司
     edge: e3744149ff5af
     evidence_level: primary
     id: org.uneo
-    name: 利永環球科技公司
+    name: 利永環球科技股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2025-12-31'
+  - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 預拌混凝土及砂石之產製及銷售
+    detail: 預拌混凝土及砂石子公司
     details:
-    - 預拌混凝土及砂石之產製及銷售
+    - 預拌混凝土及砂石子公司
     edge: ef1b606fcf0c7
     evidence_level: primary
     id: org.universal-concrete-industry
-    name: 環球混凝土工業公司
+    name: 環球混凝土工業股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
   suppliers:
+  - as_of: 2025-10
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 歷史水泥原料供應；2025年11月起停止採購
+    details:
+    - 歷史水泥原料供應；2025年11月起停止採購
+    edge: e692b17b19f7d
+    evidence_level: media
+    id: tw.1101
+    name: 台泥
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   - as_of: 2025-01
     confidence: ai_cross_checked
     counterparty_shares: []
@@ -161,60 +200,277 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  transactions:
+  - amount: 新台幣28,320千元
+    as_of: 2024-11
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 合併集團增購寶虹水泥股權
+    details:
+    - 合併集團增購寶虹水泥股權
+    edge: e044a5b9a4744
+    event_date: null
+    events:
+    - amount: 新台幣28,320千元
+      detail: 合併集團增購寶虹水泥股權
+      event_date: null
+    evidence_level: primary
+    id: org.baohong-cement
+    name: 寶虹水泥公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣15,000千元
+    as_of: 2026-03
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 合併集團取得子公司少數股權
+    details:
+    - 合併集團取得子公司少數股權
+    edge: e435971c3211e
+    event_date: null
+    events:
+    - amount: 新台幣15,000千元
+      detail: 合併集團取得子公司少數股權
+      event_date: null
+    evidence_level: primary
+    id: org.tainan-concrete-industry
+    name: 台南混凝土工業股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣511,689千元（美金16,660千元）
+    as_of: '2025-11-03'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司利永環球收購全部股權
+    details:
+    - 子公司利永環球收購全部股權
+    edge: e0730acb831f1
+    event_date: '2025-10-20'
+    events:
+    - amount: 新台幣511,689千元（美金16,660千元）
+      detail: 子公司利永環球收購全部股權
+      event_date: '2025-10-20'
+    evidence_level: primary
+    id: org.tekscan-holdco
+    name: Tekscan Holdco, Inc.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣600,000,000元
+    as_of: '2025-10-20'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 認購子公司現金增資普通股
+    details:
+    - 認購子公司現金增資普通股
+    edge: ecd06bd7840d9
+    event_date: '2025-10-20'
+    events:
+    - amount: 新台幣600,000,000元
+      detail: 認購子公司現金增資普通股
+      event_date: '2025-10-20'
+    evidence_level: primary
+    id: org.uneo
+    name: 利永環球科技股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣828,627,563元
+    as_of: '2025-10-20'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 辦公大樓合建分屋開發案
+    details:
+    - 辦公大樓合建分屋開發案
+    edge: e20c8094aea6b
+    event_date: '2025-10-20'
+    events:
+    - amount: 新台幣828,627,563元
+      detail: 辦公大樓合建分屋開發案
+      event_date: '2025-10-20'
+    evidence_level: primary
+    id: org.world-ethics-foundation
+    name: 財團法人萬國道德總會
+    ranking_basis: unranked
+    role: party
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 台積電廠辦工程：已確認供應鏈及工程需求連結，實際向環泥採購的營造商或契約買方未…
+- 北醫行愛長照中心：已確認導入子公司離床預報通知系統，未確認採購契約或付款關係。
+- 印尼國際水泥大廠及日本、越南進口來源：原料供應商未具名。
+- 機器人靈巧手產品的美國、日本及台灣指標驗證客戶：未具名。
+- 國內知名醫院及數家醫學中心：醫療感測系統驗證或訂單對象未具名。
 website: www.ucctw.com
 tax_id: 07568009
 incorporated: '1960-03-21'
 listed: '1971-02-01'
-as_of: '2026-10-15'
+as_of: '2026-10-28'
 confidence: ai_cross_checked
 has_research: true
 evidence:
   tw.1104#e1:
-    locator: 第50頁，附註二四（二）客戶合約收入之細分；金額單位為新台幣千元，前欄為114年度
+    locator: 第6頁，產品別營收及銷售量表現，2026Q1欄
+    published_date: '2026-05-22'
+    publisher: 環球水泥股份有限公司
+    quote_check: found
+    title: 環球水泥2026第一季法說簡報
+    url: https://my055.so-buy.com/ezfiles/518/1518/img/11003/176578760.pdf
+  tw.1104#e10:
+    locator: 第20頁，附註十三，列入合併財務報告之子公司表，環球混凝土列
+    published_date: '2026-08-13'
+    publisher: 環球水泥股份有限公司
+    quote_check: found
+    title: 115年第二季合併財務報告
+    url: https://my055.so-buy.com/ezfiles/518/1518/img/5009/177948016.pdf
+  tw.1104#e11:
+    locator: 第20頁，附註十三，列入合併財務報告之子公司表，嘉義混凝土列
+    published_date: '2026-08-13'
+    publisher: 環球水泥股份有限公司
+    quote_check: found
+    title: 115年第二季合併財務報告
+    url: https://my055.so-buy.com/ezfiles/518/1518/img/5009/177948016.pdf
+  tw.1104#e12:
+    locator: 第20頁，附註十三，列入合併財務報告之子公司表，台南混凝土列
+    published_date: '2026-08-13'
+    publisher: 環球水泥股份有限公司
+    quote_check: found
+    title: 115年第二季合併財務報告
+    url: https://my055.so-buy.com/ezfiles/518/1518/img/5009/177948016.pdf
+  tw.1104#e13:
+    locator: 第21頁，附註十三，投資公司及子公司對照表
+    published_date: '2026-08-13'
+    publisher: 環球水泥股份有限公司
+    quote_check: found
+    title: 115年第二季合併財務報告
+    url: https://my055.so-buy.com/ezfiles/518/1518/img/5009/177948016.pdf
+  tw.1104#e14:
+    locator: 公告標題及第1至5項；原公告將Tekscan誤植為Teksacn
+    published_date: '2025-10-20'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ
+    quote_check: found
+    title: 環泥授權子公司利永環球公告收購美國Teksacn Holdco
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=e0eb1ba0-9586-46e4-96b5-aaf3fa1623ba
+  tw.1104#e15:
+    locator: 第56至57頁，附註二八，收購日及現金對價
     published_date: null
-    publisher: 環球水泥股份有限公司（FinancialFilings鏡像）
-    quote_check: unreachable
-    title: 環球水泥股份有限公司及子公司民國114及113年度合併財務報告
-    url: https://financialfilings.com/filings/ucc-1104/annual-report/2025/33146130/
+    publisher: 環球水泥股份有限公司
+    quote_check: found
+    title: 114及113年度合併財務報告
+    url: https://my055.so-buy.com/ezfiles/518/1518/img/5009/581003895.pdf
+  tw.1104#e16:
+    locator: 第5項交易數量及金額；第17項說明收購及週轉用途
+    published_date: '2025-10-20'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ
+    quote_check: found
+    title: 環泥 本公司增資子公司利永環球科技股份有限公司
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=76f24d99-81c0-4c1a-816f-a34e15df506e
+  tw.1104#e17:
+    locator: 第37頁，附註十四（二），2024年11月寶虹水泥股權取得
+    published_date: null
+    publisher: 環球水泥股份有限公司
+    quote_check: found
+    title: 114及113年度合併財務報告
+    url: https://my055.so-buy.com/ezfiles/518/1518/img/5009/581003895.pdf
+  tw.1104#e18:
+    locator: 公告標題、第1項契約種類及第5項相對人
+    published_date: '2025-10-20'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ
+    quote_check: found
+    title: 環泥 本公司與財團法人萬國道德總會合建開發案
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=5d6e112d-07e0-4ba4-8b8f-50bc281b954e
+  tw.1104#e19:
+    locator: 第6項投入金額及分配比例；第10項辦公大樓用途
+    published_date: '2025-10-20'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ
+    quote_check: found
+    title: 環泥 本公司與財團法人萬國道德總會合建開發案
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=5d6e112d-07e0-4ba4-8b8f-50bc281b954e
   tw.1104#e2:
-    locator: 第35頁，附註十三「列入合併財務報告之子公司」，環球混凝土列；投資公司欄承接本公司
-    published_date: null
-    publisher: 環球水泥股份有限公司（FinancialFilings鏡像）
-    quote_check: unreachable
-    title: 環球水泥股份有限公司及子公司民國114及113年度合併財務報告
-    url: https://financialfilings.com/filings/ucc-1104/annual-report/2025/33146130/
+    locator: 第6頁，產品別營收及銷售量表現，2026Q1欄
+    published_date: '2026-05-22'
+    publisher: 環球水泥股份有限公司
+    quote_check: found
+    title: 環球水泥2026第一季法說簡報
+    url: https://my055.so-buy.com/ezfiles/518/1518/img/11003/176578760.pdf
+  tw.1104#e20:
+    locator: 第38頁，附註二九，2026年3月台南混凝土少數股權取得
+    published_date: '2026-08-13'
+    publisher: 環球水泥股份有限公司
+    quote_check: found
+    title: 115年第二季合併財務報告
+    url: https://my055.so-buy.com/ezfiles/518/1518/img/5009/177948016.pdf
+  tw.1104#e21:
+    locator: 第38頁，附註二九，115年上半年取得少數股權現金對價；單位新台幣千元
+    published_date: '2026-08-13'
+    publisher: 環球水泥股份有限公司
+    quote_check: not_found
+    title: 115年第二季合併財務報告
+    url: https://my055.so-buy.com/ezfiles/518/1518/img/5009/177948016.pdf
+  tw.1104#e22:
+    locator: 首段，環泥營運長說明採購調整
+    published_date: '2025-12-12'
+    publisher: 中央通訊社
+    quote_check: found
+    title: 環泥停止向台泥採購原料 拓展東南亞進口及產品線
+    url: https://www.cna.com.tw/news/afe/202512120223.aspx
   tw.1104#e3:
-    locator: 第35頁，附註十三「列入合併財務報告之子公司」，本公司投資嘉義混凝土列
-    published_date: null
-    publisher: 環球水泥股份有限公司（FinancialFilings鏡像）
-    quote_check: unreachable
-    title: 環球水泥股份有限公司及子公司民國114及113年度合併財務報告
-    url: https://financialfilings.com/filings/ucc-1104/annual-report/2025/33146130/
+    locator: 第6頁，產品別營收及銷售量表現，2026Q1欄
+    published_date: '2026-05-22'
+    publisher: 環球水泥股份有限公司
+    quote_check: found
+    title: 環球水泥2026第一季法說簡報
+    url: https://my055.so-buy.com/ezfiles/518/1518/img/11003/176578760.pdf
   tw.1104#e4:
-    locator: 第35頁，附註十三「列入合併財務報告之子公司」，台南混凝土列；投資公司欄承接本公司
-    published_date: null
-    publisher: 環球水泥股份有限公司（FinancialFilings鏡像）
-    quote_check: unreachable
-    title: 環球水泥股份有限公司及子公司民國114及113年度合併財務報告
-    url: https://financialfilings.com/filings/ucc-1104/annual-report/2025/33146130/
+    locator: 第6頁，產品別營收及銷售量表現，2026Q1欄
+    published_date: '2026-05-22'
+    publisher: 環球水泥股份有限公司
+    quote_check: found
+    title: 環球水泥2026第一季法說簡報
+    url: https://my055.so-buy.com/ezfiles/518/1518/img/11003/176578760.pdf
   tw.1104#e5:
-    locator: 第35頁，附註十三「列入合併財務報告之子公司」，利永環球列；投資公司欄承接本公司
-    published_date: null
-    publisher: 環球水泥股份有限公司（FinancialFilings鏡像）
-    quote_check: unreachable
-    title: 環球水泥股份有限公司及子公司民國114及113年度合併財務報告
-    url: https://financialfilings.com/filings/ucc-1104/annual-report/2025/33146130/
+    locator: 第10頁，電子事業群：壓力感測新應用；該段並說明客戶驗證進度
+    published_date: '2026-05-22'
+    publisher: 環球水泥股份有限公司
+    quote_check: found
+    title: 環球水泥2026第一季法說簡報
+    url: https://my055.so-buy.com/ezfiles/518/1518/img/11003/176578760.pdf
   tw.1104#e6:
-    locator: 第36頁，附註十三子公司表續頁，利永環球投資Tekscan Holdco列
+    locator: 什麼是石膏板，原料說明段
     published_date: null
-    publisher: 環球水泥股份有限公司（FinancialFilings鏡像）
-    quote_check: unreachable
-    title: 環球水泥股份有限公司及子公司民國114及113年度合併財務報告
-    url: https://financialfilings.com/filings/ucc-1104/annual-report/2025/33146130/
+    publisher: 環球水泥股份有限公司
+    quote_check: found
+    title: 什麼是石膏板
+    url: https://my055.so-buy.com/m/412-1518-10590.php?Lang=zh-tw
   tw.1104#e7:
-    locator: 第36頁，附註十三子公司表續頁，Tekscan Holdco投資Tekscan列；業務性質為電子零組件加工製造及銷售
+    locator: 第6頁，建材事業部；報告於2024年6月發行
     published_date: null
-    publisher: 環球水泥股份有限公司（FinancialFilings鏡像）
-    quote_check: unreachable
-    title: 環球水泥股份有限公司及子公司民國114及113年度合併財務報告
-    url: https://financialfilings.com/filings/ucc-1104/annual-report/2025/33146130/
+    publisher: 環球水泥股份有限公司
+    quote_check: found
+    title: 2023年永續報告書
+    url: https://my055.so-buy.com/ezfiles/518/1518/img/4454/UniversalCementCorporation2023SustainabilityReport_TC.pdf
+  tw.1104#e8:
+    locator: 第1頁，公司名稱及證券代碼欄；僅用於對象身分辨識
+    published_date: '2025-05-13'
+    publisher: ニチハ株式会社
+    quote_check: found
+    title: 役員の異動に関するお知らせ
+    url: https://www.nichiha.co.jp/news/20250513_03.pdf
+  tw.1104#e9:
+    locator: 利永環球普通股增資公告，第6項交易相對人關係
+    published_date: '2025-10-20'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ
+    quote_check: found
+    title: 環泥 本公司增資子公司利永環球科技股份有限公司
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=76f24d99-81c0-4c1a-816f-a34e15df506e

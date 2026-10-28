@@ -18,60 +18,88 @@ industry:
   l3_name: 物流與倉儲
   l3_name_en: Logistics & Warehousing
 primary_chain_position: not_applicable
-summary_short: 以海空運貨物承攬、內陸貨櫃運輸、貨櫃場及倉儲服務取得收入。
-summary_long: 榮運以貨物承攬、內陸貨櫃運輸、貨櫃場及倉儲等物流服務取得收入。依2025年上半年合併財報，貨物承攬業為最大營收來源，另有國際海運、內陸運輸、貨櫃場、加油站及其他部門。海空運貨物承攬由子公司長榮物流辦理，Gaining Enterprise S.A.亦列為子公司。本體提供船邊與內陸貨櫃場間拖運，台中港貨櫃場提供貨櫃裝卸及儲轉；另經營船舶租賃，並透過大園物流園區提供現代化倉儲及辦公空間。
+summary_short: 以海空運貨物承攬、貨櫃運輸倉儲及船舶貨櫃租賃取得收入。
+summary_long: 榮運提供內陸貨櫃運輸、貨櫃場、倉儲、碼頭裝卸及船舶租賃等服務，並經營大園物流園區。合併業務包含子公司長榮物流的海空運貨物承攬，貨物承攬業為2025年上半年外部收益最大的部門。官網將長榮海運與陽明海運列為主要客戶，長榮加油站銷售的汽柴油則由台灣中油供應。近年重大交易包括與台灣人壽合資開發桃園航空城I基地、向上海振華重工購置橋式機，以及由子公司立盛企業購買新造貨櫃。
 segments:
 - evidence_ids:
   - e2
   - e3
   id: freight_forwarding
   name: 貨物承攬業
-  period: 2025-01-01至2025-06-30
+  period: 2025年上半年
   revenue_share_pct: null
 - evidence_ids:
   - e2
   id: international_shipping
   name: 國際海運
-  period: 2025-01-01至2025-06-30
+  period: 2025年上半年
   revenue_share_pct: null
 - evidence_ids:
   - e2
   id: inland_transport
   name: 內陸運輸
-  period: 2025-01-01至2025-06-30
+  period: 2025年上半年
   revenue_share_pct: null
 - evidence_ids:
   - e2
-  id: container_terminal
+  id: container_yards
   name: 貨櫃場
-  period: 2025-01-01至2025-06-30
+  period: 2025年上半年
   revenue_share_pct: null
 - evidence_ids:
   - e2
-  - e3
+  - e9
   id: gas_station
   name: 加油站
-  period: 2025-01-01至2025-06-30
+  period: 2025年上半年
   revenue_share_pct: null
 - evidence_ids:
   - e2
-  - e3
   id: other
   name: 其他部門
-  period: 2025-01-01至2025-06-30
+  period: 2025年上半年
   revenue_share_pct: null
 relations:
   customers:
-  - as_of: '2024-04-18'
+  - as_of: '2026-10-28'
     confidence: ai_cross_checked
     counterparty_shares: []
     detail: 高雄第七貨櫃中心倉儲及船邊解櫃作業
     details:
     - 高雄第七貨櫃中心倉儲及船邊解櫃作業
+    - 官網列示之主要客戶；未逐項揭露服務範圍
     edge: e4efc871fe5a5
-    evidence_level: media
+    evidence_level: primary
     id: tw.2603
     name: 長榮
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 2
+  - as_of: '2025-12-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 向子公司立盛企業承租貨櫃
+    details:
+    - 向子公司立盛企業承租貨櫃
+    edge: ed1bddd84be53
+    evidence_level: primary
+    id: org.evergreen-marine-asia
+    name: Evergreen Marine (Asia) Pte. Ltd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 官網列示之主要客戶；未逐項揭露服務範圍
+    details:
+    - 官網列示之主要客戶；未逐項揭露服務範圍
+    edge: eb0811159b680
+    evidence_level: primary
+    id: tw.2609
+    name: 陽明
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -80,9 +108,23 @@ relations:
   - as_of: '2025-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 海空運貨運承攬子公司
+    detail: 複合物流子公司
     details:
-    - 海空運貨運承攬子公司
+    - 複合物流子公司
+    edge: ecaf78a1515f0
+    evidence_level: primary
+    id: org.chang-yu-integrated-logistics
+    name: 長裕複合物流股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 海空運貨物承攬子公司
+    details:
+    - 海空運貨物承攬子公司
     edge: e916509191c33
     evidence_level: primary
     id: org.evergreen-logistics
@@ -94,9 +136,9 @@ relations:
   - as_of: '2025-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 國際海運子公司
+    detail: 立盛企業；海運相關業務子公司
     details:
-    - 國際海運子公司
+    - 立盛企業；海運相關業務子公司
     edge: e36b2de8f7029
     evidence_level: primary
     id: org.gaining-enterprise
@@ -105,7 +147,124 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: '2025-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 管理顧問及人力派遣子公司
+    details:
+    - 管理顧問及人力派遣子公司
+    edge: e0e02216c9b5a
+    evidence_level: primary
+    id: org.shun-an-industries
+    name: 順安產業股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: '2026-10-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 供應長榮加油站銷售之汽柴油
+    details:
+    - 供應長榮加油站銷售之汽柴油
+    edge: e27c9aa7b46dc
+    evidence_level: primary
+    id: org.cpc-corporation-taiwan
+    name: 台灣中油
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   transactions:
+  - amount: USD 17,800,000
+    as_of: '2025-12-22'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 購買2台橋式機
+    details:
+    - 購買2台橋式機
+    edge: e5c37be5ac9b6
+    event_date: '2025-12-22'
+    events:
+    - amount: USD 17,800,000
+      detail: 購買2台橋式機
+      event_date: '2025-12-22'
+    evidence_level: primary
+    id: cn.600320
+    name: 上海振華重工(集團)股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 約新台幣13.21億元
+    as_of: '2026-02-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 合資成立中信榮盛開發桃園航空城I基地
+    details:
+    - 合資成立中信榮盛開發桃園航空城I基地
+    edge: e38cb9d441bae
+    event_date: '2024-10-15'
+    events:
+    - amount: 約新台幣13.21億元
+      detail: 合資成立中信榮盛開發桃園航空城I基地
+      event_date: '2024-10-15'
+    evidence_level: primary
+    id: org.taiwan-life-insurance
+    name: 台灣人壽保險股份有限公司
+    ranking_basis: unranked
+    role: party
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: USD49,105,000
+    as_of: '2025-09-17'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司立盛企業購買23,500只新造貨櫃
+    details:
+    - 子公司立盛企業購買23,500只新造貨櫃
+    - 子公司立盛企業購買25,000只新造貨櫃
+    edge: e3c8cca5f3f08
+    event_date: '2025-06-27'
+    events:
+    - amount: USD69,925,000
+      detail: 子公司立盛企業購買25,000只新造貨櫃
+      event_date: '2025-09-17'
+    - amount: USD49,105,000
+      detail: 子公司立盛企業購買23,500只新造貨櫃
+      event_date: '2025-06-27'
+    evidence_level: primary
+    id: org.東方國際集裝箱-香港-有限公司
+    name: 東方國際集裝箱(香港)有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 使用權資產約新台幣3,195,480元
+    as_of: '2024-01-29'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 取得高雄港第七貨櫃中心場地使用權
+    details:
+    - 取得高雄港第七貨櫃中心場地使用權
+    edge: e0fd2d8affcd3
+    event_date: '2024-01-29'
+    events:
+    - amount: 使用權資產約新台幣3,195,480元
+      detail: 取得高雄港第七貨櫃中心場地使用權
+      event_date: '2024-01-29'
+    evidence_level: primary
+    id: tw.2603
+    name: 長榮
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
   - amount: null
     as_of: '2025-08-08'
     confidence: ai_cross_checked
@@ -127,67 +286,175 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+unresolved_mentions:
+- 中央再保險普通股處分案之承購對象未具名。
+- 大園物流園區租戶未於所採證業務簡介逐戶具名。
 website: www.evergreen-eitc.com.tw
 tax_id: 04406559
 incorporated: '1973-10-05'
 listed: '1990-12-14'
-as_of: '2026-10-15'
+as_of: '2026-10-28'
 confidence: ai_cross_checked
 has_research: true
 evidence:
+  tw.2607#e1:
+    locator: 公司簡介，合併後業務範疇
+    published_date: null
+    publisher: 長榮國際儲運股份有限公司
+    quote_check: found
+    title: 公司簡介
+    url: https://www.evergreen-eitc.com.tw/eitchtdocs/zh/A01-0-Profile.html
+  tw.2607#e10:
+    locator: 業務簡介首段
+    published_date: null
+    publisher: 長榮國際儲運股份有限公司
+    quote_check: found
+    title: 大園物流園區－業務簡介
+    url: https://www.evergreen-eitc.com.tw/eitchtdocs/zh/B07-1-Intro.html
+  tw.2607#e11:
+    locator: 公告第1、3項
+    published_date: '2024-10-15'
+    publisher: 公開資訊觀測站重大訊息，MoneyDJ轉載
+    quote_check: found
+    title: 榮運取得新設合資公司49%股權，計約13.21億元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=d1b66378-b2bd-4cf1-aee4-7bc3ba25bd80
+  tw.2607#e12:
+    locator: 公告第3項
+    published_date: '2025-08-09'
+    publisher: 公開資訊觀測站重大訊息，MoneyDJ轉載
+    quote_check: found
+    title: 榮運：與台灣人壽保險簽訂合資協議書並共同設立新公司(補充)
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=73f1a524-7e2e-4e87-8b15-8081cd014b2b
+  tw.2607#e13:
+    locator: 公告第8項
+    published_date: '2026-02-26'
+    publisher: 公開資訊觀測站重大訊息，MoneyDJ轉載
+    quote_check: found
+    title: 榮運：公司與台灣人壽簽合資協議成立開發專案公司，負責開發桃園航空城I基地
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f3021563-9cf6-4a93-af37-62baf1ac4dcf
+  tw.2607#e14:
+    locator: 公告第5項
+    published_date: '2025-12-22'
+    publisher: 公開資訊觀測站重大訊息，MoneyDJ轉載
+    quote_check: found
+    title: 榮運購買2台橋式機，計1780萬美元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=6f7c1e2a-122c-4559-bcbb-561a08cf7d06
+  tw.2607#e15:
+    locator: 公告第6項
+    published_date: '2025-12-22'
+    publisher: 公開資訊觀測站重大訊息，MoneyDJ轉載
+    quote_check: found
+    title: 榮運購買2台橋式機，計1780萬美元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=6f7c1e2a-122c-4559-bcbb-561a08cf7d06
+  tw.2607#e16:
+    locator: 公告主旨及第6項
+    published_date: '2025-06-27'
+    publisher: 公開資訊觀測站重大訊息，MoneyDJ轉載
+    quote_check: found
+    title: 榮運子公司購買新造貨櫃23,500只，計約4911萬美元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=44d072df-4173-423d-9d86-3b6f8e62ec62
+  tw.2607#e17:
+    locator: 公告第5項
+    published_date: '2025-06-27'
+    publisher: 公開資訊觀測站重大訊息，MoneyDJ轉載
+    quote_check: found
+    title: 榮運子公司購買新造貨櫃23,500只，計約4911萬美元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=44d072df-4173-423d-9d86-3b6f8e62ec62
+  tw.2607#e18:
+    locator: 公告第5項
+    published_date: '2025-09-17'
+    publisher: 公開資訊觀測站重大訊息，鉅亨網轉載
+    quote_check: found
+    title: 榮運:代本公司之子公司「立盛企業」公告購買新造貨櫃
+    url: https://news.cnyes.com/news/id/6158365
+  tw.2607#e19:
+    locator: 公告第6項
+    published_date: '2025-09-17'
+    publisher: 公開資訊觀測站重大訊息，鉅亨網轉載
+    quote_check: found
+    title: 榮運:代本公司之子公司「立盛企業」公告購買新造貨櫃
+    url: https://news.cnyes.com/news/id/6158365
   tw.2607#e2:
-    locator: 第37頁，附註六（二十）營業收入，114年1月1日至6月30日
+    locator: 第65頁，營運部門資訊；金額單位為新台幣仟元
     published_date: null
     publisher: 長榮國際儲運股份有限公司
     quote_check: found
     title: 民國114年及113年第二季合併財務報告
     url: https://www.evergreen-eitc.com.tw/eitchtdocs/download/D03-0-Financial/WPWBD026-A05001ZHPDF-53115720250814161356.PDF
+  tw.2607#e20:
+    locator: 公告第1項
+    published_date: '2024-01-29'
+    publisher: 公開資訊觀測站重大訊息，鉅亨網轉載
+    quote_check: unreachable
+    title: 榮運:公告本公司取得不動產使用權資產
+    url: https://news.cnyes.com/news/id/5439324
+  tw.2607#e21:
+    locator: 公告第3、4項
+    published_date: '2024-01-29'
+    publisher: 公開資訊觀測站重大訊息，鉅亨網轉載
+    quote_check: found
+    title: 榮運:公告本公司取得不動產使用權資產
+    url: https://news.cnyes.com/news/id/5439324
+  tw.2607#e22:
+    locator: 公告第3項
+    published_date: '2024-09-27'
+    publisher: 公開資訊觀測站重大訊息，MoneyDJ轉載
+    quote_check: found
+    title: 榮運預計處分中再保50,353,414股案，3/18~8/22已處分12,601,000股(補充)
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=9ceeaf75-d1f1-4161-8456-d5d62d9c3c94
+  tw.2607#e23:
+    locator: 公告主旨
+    published_date: '2025-12-23'
+    publisher: 公開資訊觀測站重大訊息，MoneyDJ轉載
+    quote_check: found
+    title: 榮運子公司出租約25,000只貨櫃予Evergreen Marine(Asia) Pte.，計約4856萬美元
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=63b9e579-a936-4143-af7b-cf66ef2f063a
   tw.2607#e3:
-    locator: 第37頁，2025年上半年營收合計列末四欄，單位為新台幣仟元
+    locator: 第13頁，公司沿革（四）
     published_date: null
     publisher: 長榮國際儲運股份有限公司
     quote_check: found
     title: 民國114年及113年第二季合併財務報告
     url: https://www.evergreen-eitc.com.tw/eitchtdocs/download/D03-0-Financial/WPWBD026-A05001ZHPDF-53115720250814161356.PDF
   tw.2607#e4:
-    locator: 第17頁，附註四（三）列入合併財務報告之子公司；正式全名另見第72頁附表五
+    locator: 第13頁，公司沿革（二）
     published_date: null
     publisher: 長榮國際儲運股份有限公司
     quote_check: found
     title: 民國114年及113年第二季合併財務報告
     url: https://www.evergreen-eitc.com.tw/eitchtdocs/download/D03-0-Financial/WPWBD026-A05001ZHPDF-53115720250814161356.PDF
   tw.2607#e5:
-    locator: 第13頁，附註一（二）
+    locator: 第13頁，公司沿革（三）
     published_date: null
     publisher: 長榮國際儲運股份有限公司
     quote_check: found
     title: 民國114年及113年第二季合併財務報告
     url: https://www.evergreen-eitc.com.tw/eitchtdocs/download/D03-0-Financial/WPWBD026-A05001ZHPDF-53115720250814161356.PDF
   tw.2607#e6:
-    locator: 主要服務項目第1項
+    locator: 第13頁，公司沿革（五）
     published_date: null
     publisher: 長榮國際儲運股份有限公司
     quote_check: found
-    title: 內陸貨櫃運輸－業務簡介
-    url: https://www.evergreen-eitc.com.tw/eitchtdocs/zh/B02-1-Intro.html
+    title: 民國114年及113年第二季合併財務報告
+    url: https://www.evergreen-eitc.com.tw/eitchtdocs/download/D03-0-Financial/WPWBD026-A05001ZHPDF-53115720250814161356.PDF
   tw.2607#e7:
-    locator: 貨櫃裝卸船及轉船、儲轉作業
+    locator: 主要客戶群名單
     published_date: null
     publisher: 長榮國際儲運股份有限公司
     quote_check: found
-    title: 台中港貨櫃場－主要服務項目
-    url: https://www.evergreen-eitc.com.tw/eitchtdocs/zh/B03-1-Intro.html
+    title: 主要客戶群
+    url: https://www.evergreen-eitc.com.tw/eitchtdocs/zh/A06-0-Clients.html
   tw.2607#e8:
-    locator: 企業合併後的業務範疇段落
-    published_date: null
-    publisher: 長榮國際儲運股份有限公司
-    quote_check: not_found
-    title: 公司簡介
-    url: https://www.evergreen-eitc.com.tw/eitchtdocs/zh/A01-0-Profile.html
-  tw.2607#e9:
-    locator: 大園物流園區段落
+    locator: 主要客戶群名單
     published_date: null
     publisher: 長榮國際儲運股份有限公司
     quote_check: found
-    title: 公司簡介
-    url: https://www.evergreen-eitc.com.tw/eitchtdocs/zh/A01-0-Profile.html
+    title: 主要客戶群
+    url: https://www.evergreen-eitc.com.tw/eitchtdocs/zh/A06-0-Clients.html
+  tw.2607#e9:
+    locator: 業務簡介首段
+    published_date: null
+    publisher: 長榮國際儲運股份有限公司
+    quote_check: found
+    title: 長榮加油站及附設洗車場－業務簡介
+    url: https://www.evergreen-eitc.com.tw/eitchtdocs/zh/B06-1-Intro.html

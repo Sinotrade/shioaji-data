@@ -47,16 +47,16 @@ segments:
   name: 其他
   period: '2025'
   revenue_share_pct: 1.67
-main_theme: theme.cpo
+main_theme: theme.hbm
 themes:
-- also: []
-  stage: packaging
-  theme: theme.cpo
-  tier: midstream
 - also: []
   stage: equipment_materials
   theme: theme.hbm
   tier: upstream
+- also: []
+  stage: packaging
+  theme: theme.cpo
+  tier: midstream
 relations:
   customers:
   - as_of: 2025-05

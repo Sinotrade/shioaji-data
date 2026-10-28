@@ -4,10 +4,10 @@
 
 - 英文：Apple Supply Chain
 - 別名：Apple、蘋果
-- 成員：25 家
+- 成員：27 家
 - 完整成員與證據見同目錄同名 YAML，或 themes.json
 
-## 零組件（上游，17 家）
+## 零組件（上游，19 家）
 
 | 代號 | 名稱 | 說明 |
 | --- | --- | --- |
@@ -21,9 +21,11 @@
 | [3042](../companies/3042.md) | 晶技 | Apple供應商名單 |
 | [3044](../companies/3044.md) | 健鼎 | Apple製造供應鏈 |
 | [3149](../companies/3149.md) | 正達 | Apple產品用TrackPad |
+| [3305](../companies/3305.md) | 昇貿 | iPhone充電器採用回收錫膏 |
 | [3376](../companies/3376.md) | 新日興 | 蘋果筆電樞紐零組件 |
 | [3406](../companies/3406.md) | 玉晶光 | Apple供應鏈光學零組件 |
 | [4958](../companies/4958.md) | 臻鼎-KY | Apple供應鏈零組件 |
+| [6217](../companies/6217.md) | 中探針 | Apple Pencil相關零組件 |
 | [6269](../companies/6269.md) | 台郡 | Apple供應鏈零組件 |
 | [6290](../companies/6290.md) | 良維 | Apple TV及Mac mini電源線 |
 | [7610](../companies/7610.md) | 聯友金屬-創 | Apple鎢材料供應鏈冶煉端 |

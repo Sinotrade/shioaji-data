@@ -232,6 +232,35 @@ relations:
     share_pct: null
     weight: 1
   transactions:
+  - amount: 約新台幣13.46億元
+    as_of: '2025-11-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 出售觀音廠部分土地
+    details:
+    - 出售觀音廠部分土地
+    - 購置桃園觀音土地
+    - 取得觀音廠房10年使用權
+    edge: ed0edd79d6577
+    event_date: '2025-11-13'
+    events:
+    - amount: 約新台幣13.46億元
+      detail: 出售觀音廠部分土地
+      event_date: '2025-11-13'
+    - amount: 約新台幣13.46億元
+      detail: 購置桃園觀音土地
+      event_date: '2025-11-07'
+    - amount: 使用權資產約新台幣6.14億元
+      detail: 取得觀音廠房10年使用權
+      event_date: '2025-11-07'
+    evidence_level: primary
+    id: tw.1905
+    name: 華紙
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 2
   - amount: 雙方共同投資新台幣3.9億元
     as_of: '2025-04-02'
     confidence: ai_cross_checked
@@ -269,31 +298,6 @@ relations:
     evidence_level: primary
     id: org.e-ink-corporation
     name: E Ink Corporation
-    ranking_basis: unranked
-    role: buyer
-    share_basis: null
-    share_pct: null
-    weight: 1
-  - amount: 約新台幣13.46億元
-    as_of: '2025-11-07'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 購置桃園觀音土地
-    details:
-    - 購置桃園觀音土地
-    - 取得觀音廠房10年使用權
-    edge: ed0edd79d6577
-    event_date: '2025-11-07'
-    events:
-    - amount: 約新台幣13.46億元
-      detail: 購置桃園觀音土地
-      event_date: '2025-11-07'
-    - amount: 使用權資產約新台幣6.14億元
-      detail: 取得觀音廠房10年使用權
-      event_date: '2025-11-07'
-    evidence_level: primary
-    id: tw.1905
-    name: 華紙
     ranking_basis: unranked
     role: buyer
     share_basis: null

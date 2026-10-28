@@ -26,51 +26,72 @@ chain_stage:
   stage_name: 板卡、電源、散熱、機構件
   tier: midstream
 primary_chain_position: upstream
-summary_short: 透過子公司製造伺服器機櫃、航太及醫療設備精密機構件。
-summary_long: 經寶精密控股透過泰國經寶精密與法國經寶歐洲等子公司，經營機殼與機構件業務。集團產品包括AI與傳統伺服器資料儲存櫃機殼、航太飛行控制電腦機殼、內視鏡主機機構件，以及電動車充電樁、電池抽換站與工業散熱系統機盒。公司簡報揭露，2024年前三季通訊業務占營收56%，航太占34%，電子占6%，其他占4%，通訊為當期最大營收來源。法國經寶歐洲旗下另有航太加工子公司Agiliteam ADE，原名為SEGNERE SAS。
+summary_short: 製造客製化精密機構件，以伺服器機櫃、電源櫃及航太零組件為主。
+summary_long: 經寶精密製造客製化精密機構件，產品涵蓋AI伺服器機櫃、電源櫃、水冷分歧管及CDU冷卻模組，航太產品包括飛行控制電腦機殼與航電機構件。公司2025年11月說明，通訊類業績占比約六成多，航太類約兩成多。集團旗下有泰國經寶及法國歐洲經寶，後者為透過泰國經寶持有的間接子公司。2025年歐洲經寶完成收購法國Segnere，擴充航太鈑金與結構組裝業務；同年泰國經寶與Amazon Data Services (Thailand) Limited簽約出售四筆土地。母公司另於2026年9月公告對泰國經寶的增資投資案。
 segments:
 - evidence_ids:
-  - e_segment
-  id: seg_communication
-  name: 通訊
-  period: 2024年前三季
-  revenue_share_pct: 56
+  - e2
+  - e4
+  id: communication
+  name: 通訊與伺服器機構件
+  period: 2025-11
+  revenue_share_pct: null
 - evidence_ids:
-  - e_segment
-  id: seg_aerospace
-  name: 航太
-  period: 2024年前三季
-  revenue_share_pct: 34
-- evidence_ids:
-  - e_segment
-  id: seg_electronics
-  name: 電子
-  period: 2024年前三季
-  revenue_share_pct: 6
-- evidence_ids:
-  - e_segment
-  id: seg_other
-  name: 其他
-  period: 2024年前三季
-  revenue_share_pct: 4
-main_theme: theme.ev
+  - e2
+  - e5
+  id: aerospace
+  name: 航太機構件與精密加工
+  period: 2025-11
+  revenue_share_pct: null
+main_theme: theme.ai_server
 themes:
-- also: []
-  stage: vehicle
-  theme: theme.ev
-  tier: downstream
 - also: []
   stage: components
   theme: theme.ai_server
   tier: midstream
+- also:
+  - stage: modules
+    tier: midstream
+  stage: parts
+  theme: theme.liquid_cooling
+  tier: upstream
 relations:
+  customers:
+  - as_of: 2024-04
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 航太零組件第一階供應商
+    details:
+    - 航太零組件第一階供應商
+    edge: e2bf901bcc04c
+    evidence_level: primary
+    id: eu.AIR
+    name: 空中巴士
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-01-25'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 泰國伺服器相關供應關係
+    details:
+    - 泰國伺服器相關供應關係
+    edge: ed4f5d086a6de
+    evidence_level: media
+    id: us.MSFT
+    name: Microsoft
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 經寶歐洲旗下航太加工子公司
+    detail: 歐洲經寶全資持有的法國間接子公司
     details:
-    - 經寶歐洲旗下航太加工子公司
+    - 歐洲經寶全資持有的法國間接子公司
     edge: e949af1ab8eef
     evidence_level: primary
     id: org.agiliteam-ade
@@ -79,12 +100,12 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-10-18'
+  - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 法國子公司
+    detail: 透過泰國經寶持有的法國間接子公司
     details:
-    - 法國子公司
+    - 透過泰國經寶持有的法國間接子公司
     edge: e69ac7f20ac19
     evidence_level: primary
     id: org.jinpao-europe
@@ -93,12 +114,12 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-10-18'
+  - as_of: '2026-09-24'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 泰國子公司
+    detail: 泰國主要營運子公司
     details:
-    - 泰國子公司
+    - 泰國主要營運子公司
     edge: edbf36a8ca3ba
     evidence_level: primary
     id: org.jinpao-precision-industry
@@ -107,89 +128,247 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  transactions:
+  - amount: 約157.5萬歐元
+    as_of: '2025-07-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 歐洲經寶收購法國航太鈑金與結構組裝公司
+    details:
+    - 歐洲經寶收購法國航太鈑金與結構組裝公司
+    edge: e60f1eee28a4c
+    event_date: '2025-07-31'
+    events:
+    - amount: 約157.5萬歐元
+      detail: 歐洲經寶收購法國航太鈑金與結構組裝公司
+      event_date: '2025-07-31'
+    evidence_level: primary
+    id: org.agiliteam-ade
+    name: Agiliteam ADE
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 泰銖405,525,000
+    as_of: '2025-07-15'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 泰國經寶出售EEC四筆土地
+    details:
+    - 泰國經寶出售EEC四筆土地
+    edge: e0582a859f352
+    event_date: '2025-07-15'
+    events:
+    - amount: 泰銖405,525,000
+      detail: 泰國經寶出售EEC四筆土地
+      event_date: '2025-07-15'
+    evidence_level: primary
+    id: org.amazon-data-services-thailand
+    name: Amazon Data Services (Thailand) Limited
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 美金100萬（認購總金額）
+    as_of: '2026-03-20'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 認購私募基金
+    details:
+    - 認購私募基金
+    edge: e6cb298c6ad8c
+    event_date: '2026-03-20'
+    events:
+    - amount: 美金100萬（認購總金額）
+      detail: 認購私募基金
+      event_date: '2026-03-20'
+    evidence_level: primary
+    id: org.golden-asia-fund-iii
+    name: Golden Asia Fund III, LPA
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 660,000仟泰銖
+    as_of: '2026-09-24'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 母公司認購泰國子公司增資股份
+    details:
+    - 母公司認購泰國子公司增資股份
+    - 2026年泰國子公司增資投資案
+    edge: ee4664581bba6
+    event_date: '2024-11-07'
+    events:
+    - amount: 1,224,250,000泰銖
+      detail: 2026年泰國子公司增資投資案
+      event_date: '2026-09-24'
+    - amount: 660,000仟泰銖
+      detail: 母公司認購泰國子公司增資股份
+      event_date: '2024-11-07'
+    evidence_level: primary
+    id: org.jinpao-precision-industry
+    name: Jinpao Precision Industry Co., Ltd.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 二億三千萬泰銖
+    as_of: '2024-10-21'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 泰國經寶購買土地及附屬建物
+    details:
+    - 泰國經寶購買土地及附屬建物
+    edge: ef1895b3ffd74
+    event_date: '2024-10-21'
+    events:
+    - amount: 二億三千萬泰銖
+      detail: 泰國經寶購買土地及附屬建物
+      event_date: '2024-10-21'
+    evidence_level: primary
+    id: org.ueno-fine-chemical-industry-thailand
+    name: Ueno Fine Chemical Industry (Thailand) Ltd.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 美系雲端服務供應商（CSP）
+- 台系電源系統方案供應商
+- 全球主要雲端服務與運算平台
+- G客戶與F客戶
+- 美系A客戶
 website: https://www.jppholding.com
 tax_id: '41173259'
 incorporated: '2012-05-17'
 listed: '2017-03-09'
 foreign_registration: KY 開曼群島
-as_of: '2026-10-18'
+as_of: '2026-10-28'
 confidence: ai_cross_checked
 has_research: true
 evidence:
-  tw.5284#e_aerospace:
+  tw.5284#e10:
+    locator: 列入合併財務報表之子公司表，經寶歐洲投資ADE列
+    published_date: '2026-04-07'
+    publisher: 經寶精密控股／FinancialFilings
+    quote_check: unreachable
+    title: 2025年第4季合併財務報告（公開申報鏡像）
+    url: https://financialfilings.com/filings/jpp-5284/annual-report/2026/60570004/
+  tw.5284#e11:
+    locator: 列入合併財務報表之子公司表註3
+    published_date: '2026-04-07'
+    publisher: 經寶精密控股／FinancialFilings
+    quote_check: unreachable
+    title: 2025年第4季合併財務報告（公開申報鏡像）
+    url: https://financialfilings.com/filings/jpp-5284/annual-report/2026/60570004/
+  tw.5284#e12:
+    locator: 2025-08-01新聞第一段
+    published_date: '2025-08-01'
+    publisher: 經寶精密控股
+    quote_check: found
+    title: JPP-KY集團孫公司歐洲經寶併購法國Segnere公司
+    url: https://www.jppholding.com/news-content
+  tw.5284#e13:
+    locator: 記者劉莞青報導第一段
+    published_date: '2025-08-05'
+    publisher: MoneyDJ
+    quote_check: found
+    title: jpp-KY完成歐洲航太廠併購；Q3業績穩居高檔
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=efbea417-e412-455a-8e4d-55da2e4e2469
+  tw.5284#e14:
+    locator: 公告說明第1至4、21點
+    published_date: '2024-10-21'
+    publisher: 公開資訊觀測站／MoneyDJ轉載
+    quote_check: found
+    title: jpp-KY：子公司泰國經寶購買土地一塊及地上附屬建築、倉庫等，計2.3億泰銖
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=630f930d-7468-4245-83f4-09969310b251
+  tw.5284#e15:
+    locator: 公告說明第1至3、18點
+    published_date: '2024-11-08'
+    publisher: 公開資訊觀測站／MoneyDJ轉載
+    quote_check: found
+    title: jpp-KY：因應公司完成現增，擬對經寶泰國投資6.6億泰銖
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=20d4e60d-c67a-4041-926d-d5d23cb377e2
+  tw.5284#e16:
+    locator: 公告說明第1至4點
+    published_date: '2025-07-15'
+    publisher: 公開資訊觀測站／MoneyDJ轉載
+    quote_check: found
+    title: jpp-KY子公司售EEC四筆土地予Amazon Data Services(Thailand) ，獲利估2億泰銖(補充)
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=313502e9-47b6-44fe-b968-c7e93e8bf4ff
+  tw.5284#e17:
+    locator: 公告說明第1至6、30點
+    published_date: '2026-09-24'
+    publisher: 公開資訊觀測站／MoneyDJ轉載
+    quote_check: found
+    title: jpp-KY取得Jinpao Precision Industry Co.增資股，計約12.2億泰銖
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=dc799a84-5169-44f2-9277-7164fb218b0c
+  tw.5284#e18:
+    locator: 公告說明第1至4、13點
+    published_date: '2026-03-20'
+    publisher: 公開資訊觀測站／MoneyDJ轉載
+    quote_check: found
+    title: jpp-KY 公告取得Golden Asia Fund III, LPA私募基金
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=2ea0e79b-5705-47a8-bbb8-5fec023ccef1
+  tw.5284#e2:
+    locator: 應用業績比重段落
+    published_date: '2025-11-06'
+    publisher: 中央通訊社
+    quote_check: found
+    title: jpp明年營運看佳　AI伺服器續為成長動能
+    url: https://www.cna.com.tw/news/afe/202511060133.aspx
+  tw.5284#e3:
+    locator: 高階AI伺服器產品線段落
+    published_date: '2025-11-06'
+    publisher: 中央通訊社
+    quote_check: found
+    title: jpp明年營運看佳　AI伺服器續為成長動能
+    url: https://www.cna.com.tw/news/afe/202511060133.aspx
+  tw.5284#e4:
+    locator: 第二季產品訂單說明
+    published_date: '2026-08-20'
+    publisher: 中央通訊社
+    quote_check: found
+    title: jpp上半年獲利創高　AI機構件助攻下半年看佳
+    url: https://www.cna.com.tw/news/afe/202608200260.aspx
+  tw.5284#e5:
     locator: 產品介紹／航太
     published_date: null
-    publisher: 經寶精密控股股份有限公司
+    publisher: 經寶精密控股
     quote_check: found
-    title: 產品介紹
+    title: 產品與服務
     url: https://www.jppholding.com/products
-  tw.5284#e_ev:
-    locator: 產品介紹／綠能
-    published_date: null
-    publisher: 經寶精密控股股份有限公司
+  tw.5284#e6:
+    locator: 記者王莞甯報導第一段
+    published_date: '2024-01-25'
+    publisher: 鉅亨網
     quote_check: found
-    title: 產品介紹
-    url: https://www.jppholding.com/products
-  tw.5284#e_industrial_cooling:
-    locator: 產品介紹／電子
+    title: 〈jpp總部曝光〉將生產AI伺服器散熱件 拚拿英業達、廣達訂單
+    url: https://news.cnyes.com/news/id/5437646
+  tw.5284#e7:
+    locator: 公司及集團沿革／2024年第3項
     published_date: null
-    publisher: 經寶精密控股股份有限公司
-    quote_check: found
-    title: 產品介紹
-    url: https://www.jppholding.com/products
-  tw.5284#e_medical:
-    locator: 產品介紹／醫療
-    published_date: null
-    publisher: 經寶精密控股股份有限公司
-    quote_check: found
-    title: 產品介紹
-    url: https://www.jppholding.com/products
-  tw.5284#e_segment:
-    locator: 第9頁，2024Q1~Q3營運分布
-    published_date: null
-    publisher: 經寶精密控股股份有限公司
-    quote_check: found
-    title: 經寶精密控股股份有限公司法人說明會簡報
-    url: https://0eb6804b-c209-4fba-b4bf-ed20b435ac32.filesusr.com/ugd/b5dbe6_e61f4c8ba5fd450699d35202a713b42c.pdf
-  tw.5284#e_server:
-    locator: 產品介紹／通訊
-    published_date: null
-    publisher: 經寶精密控股股份有限公司
-    quote_check: found
-    title: 產品介紹
-    url: https://www.jppholding.com/products
-  tw.5284#e_sub_ade:
-    locator: 列入合併財務報表之子公司／註3
-    published_date: null
-    publisher: FinancialFilings
-    quote_check: unreachable
-    title: 經寶精密控股股份有限公司2025年度合併財務報告轉載
-    url: https://financialfilings.com/filings/jpp-5284/annual-report/2026/60570004/
-  tw.5284#e_sub_chinese:
-    locator: 泰國公司組織標題
-    published_date: null
-    publisher: 經寶精密控股股份有限公司
-    quote_check: found
-    title: 組織與架構
-    url: https://www.jppholding.com/aboutjinpao/organization-structure
-  tw.5284#e_sub_europe:
-    locator: 公司及工廠之地址及電話／法國子公司
-    published_date: null
-    publisher: 經寶精密控股股份有限公司
+    publisher: 經寶精密控股
     quote_check: found
     title: 集團簡介及公司沿革
     url: https://www.jppholding.com/aboutjinpao/company-profile
-  tw.5284#e_sub_segnere:
-    locator: 公司及集團沿革／2025年第3項
-    published_date: null
-    publisher: 經寶精密控股股份有限公司
-    quote_check: found
-    title: 集團簡介及公司沿革
-    url: https://www.jppholding.com/aboutjinpao/company-profile
-  tw.5284#e_sub_thailand:
+  tw.5284#e8:
     locator: 公司及工廠之地址及電話／泰國子公司
     published_date: null
-    publisher: 經寶精密控股股份有限公司
+    publisher: 經寶精密控股
     quote_check: found
     title: 集團簡介及公司沿革
     url: https://www.jppholding.com/aboutjinpao/company-profile
+  tw.5284#e9:
+    locator: 列入合併財務報表之子公司表，JINPAO投資經寶歐洲列
+    published_date: '2026-04-07'
+    publisher: 經寶精密控股／FinancialFilings
+    quote_check: unreachable
+    title: 2025年第4季合併財務報告（公開申報鏡像）
+    url: https://financialfilings.com/filings/jpp-5284/annual-report/2026/60570004/

@@ -51,16 +51,16 @@ segments:
   name: AI與機器人應用
   period: '2025'
   revenue_share_pct: 1
-main_theme: theme.ai_server
+main_theme: theme.robotics
 themes:
-- also: []
-  stage: assembly
-  theme: theme.ai_server
-  tier: downstream
 - also: []
   stage: components
   theme: theme.robotics
   tier: upstream
+- also: []
+  stage: assembly
+  theme: theme.ai_server
+  tier: downstream
 relations:
   customers:
   - as_of: '2026-03-31'

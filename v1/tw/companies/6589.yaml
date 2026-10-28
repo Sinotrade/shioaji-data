@@ -29,132 +29,358 @@ chain_stage:
   stage_name: 製造與代工
   tier: midstream
 primary_chain_position: midstream
-summary_short: 以生物藥委託開發製造服務、藥品銷售及授權開發取得收入。
-summary_long: 台康生技經營生物藥委託開發與製造（CDMO）及生物相似藥開發，服務涵蓋製程開發、分析測試與GMP生產。2023年營收以勞務收入59.26%為最大項，另有銷貨收入26.91%及授權合作開發收入13.83%。主要藥品包括EG12014（Trastuzumab生物相似藥）、EG1206A（Pertuzumab生物相似藥），研發產品另有ADC生物相似藥EG12043及皮下注射複方EG13084。2024年刊印年報列示德國與美國兩家子公司。
+summary_short: 以生物藥CDMO開發製造服務、藥品銷售及生物相似藥授權取得收入。
+summary_long: 台康經營生物藥委託開發暨製造服務與生物相似藥開發，CDMO服務涵蓋製程開發至GMP生產。自有產品包括trastuzumab生物相似藥EG12014，以及pertuzumab生物相似藥EG1206A；兩項產品均與Sandoz建立授權商業化關係。公司與台耀化學合作提供抗體藥物複合體開發製造服務，並與台新藥維持EG12043開發分潤合作。2026年與GeneFab簽署合作，由台康供應GMP等級質體DNA，供其製造治療用慢病毒載體。海外組織包括歐洲與美國子公司。
 segments:
 - evidence_ids:
-  - e_revenue_service
-  id: seg_service
+  - e04
+  id: services
   name: 勞務收入
-  period: '2023'
-  revenue_share_pct: 59.26
+  period: 2025-01至2025-09
+  revenue_share_pct: null
 - evidence_ids:
-  - e_revenue_sales
-  id: seg_sales
+  - e04
+  id: goods
   name: 銷貨收入
-  period: '2023'
-  revenue_share_pct: 26.91
+  period: 2025-01至2025-09
+  revenue_share_pct: null
 - evidence_ids:
-  - e_revenue_licensing
-  id: seg_licensing
+  - e04
+  id: licensing
   name: 授權合作開發收入
-  period: '2023'
-  revenue_share_pct: 13.83
+  period: 2025-01至2025-09
+  revenue_share_pct: null
 relations:
-  subsidiaries:
-  - as_of: '2024-03-31'
+  customers:
+  - as_of: '2026-09-16'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 德國子公司
+    detail: GMP等級質體DNA供應
     details:
-    - 德國子公司
-    edge: ec88bd0732d0c
+    - GMP等級質體DNA供應
+    edge: ed11c17ba61c0
+    evidence_level: media
+    id: org.genefab
+    name: GeneFab
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: EG12014授權銷售
+    details:
+    - EG12014授權銷售
+    edge: ef8866a8779dc
     evidence_level: primary
-    id: org.eirgenix-europe-gmbh
+    id: org.sandoz-ag
+    name: Sandoz AG
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: HCB301臨床藥品委託製造
+    details:
+    - HCB301臨床藥品委託製造
+    edge: e11c7c5f9d370
+    evidence_level: primary
+    id: tw.7827
+    name: 漢康-KY創
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  partners:
+  - as_of: '2025-11-12'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: EG1206A授權與商業化合作
+    details:
+    - EG1206A授權與商業化合作
+    edge: e8725150fa6dc
+    evidence_level: primary
+    id: org.sandoz-ag
+    name: Sandoz AG
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: ADC與生物偶聯藥物開發製造
+    details:
+    - ADC與生物偶聯藥物開發製造
+    edge: eb3316926948d
+    evidence_level: primary
+    id: tw.4746
+    name: 台耀
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: TSY-0110（EG12043）開發分潤合作
+    details:
+    - TSY-0110（EG12043）開發分潤合作
+    edge: e0e2b678f3d35
+    evidence_level: primary
+    id: tw.6838
+    name: 台新藥
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 歐洲子公司
+    details:
+    - 歐洲子公司
+    edge: e9c0b793cf2ce
+    evidence_level: primary
+    id: org.eirgenix-europe
     name: EirGenix Europe GmbH
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2024-03-31'
+  - as_of: '2025-09-30'
     confidence: ai_cross_checked
     counterparty_shares: []
     detail: 美國子公司
     details:
     - 美國子公司
-    edge: e4b861807ebb3
+    edge: e8961e6abe81e
     evidence_level: primary
-    id: org.eirgenix-usa-inc
+    id: org.eirgenix-usa
     name: EirGenix USA Inc.
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
+  suppliers:
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 檢測服務
+    details:
+    - 檢測服務
+    edge: e6c3d29f2e0b4
+    evidence_level: primary
+    id: org.tfbs-bioscience
+    name: 啟弘生物科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 檢測服務
+    details:
+    - 檢測服務
+    edge: e9299a1200631
+    evidence_level: primary
+    id: tw.4746
+    name: 台耀
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: 新台幣1,009,470,000元（含稅）
+    as_of: '2024-11-05'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 竹北第二期廠房建置相關工程契約
+    details:
+    - 竹北第二期廠房建置相關工程契約
+    edge: ef982aec6e7d0
+    event_date: '2024-11-05'
+    events:
+    - amount: 新台幣1,009,470,000元（含稅）
+      detail: 竹北第二期廠房建置相關工程契約
+      event_date: '2024-11-05'
+    evidence_level: primary
+    id: org.exyte-taiwan
+    name: 易科德室內裝修工程股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣15,000仟元
+    as_of: '2025-01-15'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 支付有限合夥創投基金投資款
+    details:
+    - 支付有限合夥創投基金投資款
+    edge: e59d5fddb8161
+    event_date: '2025-01-15'
+    events:
+    - amount: 新台幣15,000仟元
+      detail: 支付有限合夥創投基金投資款
+      event_date: '2025-01-15'
+    evidence_level: primary
+    id: org.forward-biot-venture-capital
+    name: 富耀生醫創投有限合夥
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣551,200,000元（含稅）
+    as_of: '2024-11-05'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 竹北第二期廠房租地委建契約
+    details:
+    - 竹北第二期廠房租地委建契約
+    edge: e1264915ee6af
+    event_date: '2024-11-05'
+    events:
+    - amount: 新台幣551,200,000元（含稅）
+      detail: 竹北第二期廠房租地委建契約
+      event_date: '2024-11-05'
+    evidence_level: primary
+    id: org.lee-ming-construction
+    name: 麗明營造股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 2026年EG1206A日本授權合作公告所稱的日本製藥公司，未揭露名稱。
+- 2026年微生物二廠報導所稱承接商業化生產需求的日本客戶，未揭露名稱。
+- 財報所稱簽訂長期委託生產契約的某廠商，未揭露名稱。
+- 財報重要客戶以代稱揭露，未據收入金額推定客戶身分。
 website: http://www.eirgenix.com
 tax_id: '54150737'
 incorporated: '2012-12-21'
 listed: '2025-07-21'
-as_of: '2026-10-18'
+as_of: '2026-10-28'
 confidence: ai_cross_checked
 has_research: true
 evidence:
-  tw.6589#e_cdmo:
-    locator: 製程開發段落
+  tw.6589#e01:
+    locator: 兩大事業群介紹
     published_date: null
     publisher: 台康生技股份有限公司
     quote_check: found
-    title: CDMO 委託開發與製造
-    url: https://zh-tw.eirgenix.com/services
-  tw.6589#e_eg12014:
-    locator: 產品介紹首段
+    title: 公司簡介
+    url: https://zh-tw.eirgenix.com/about-eirgenix
+  tw.6589#e02:
+    locator: 第51頁，附註六（二十），113年度收入細分；欄序為勞務、授權合作開發、銷貨、合計，單位新台幣仟元
+    published_date: '2025-03-12'
+    publisher: 台康生技股份有限公司
+    quote_check: found
+    title: 民國113年度及112年度個體財務報告暨會計師查核報告
+    url: https://zh-tw.eirgenix.com/download/565933
+  tw.6589#e03:
+    locator: 第5頁，勞務與銷貨收入認列之關鍵查核事項
+    published_date: '2025-03-12'
+    publisher: 台康生技股份有限公司
+    quote_check: found
+    title: 民國113年度及112年度個體財務報告暨會計師查核報告
+    url: https://zh-tw.eirgenix.com/download/565933
+  tw.6589#e04:
+    locator: 第42頁，附註六（十九），2025年前三季收入細分；欄序為勞務、授權合作開發、銷貨、合計，單位新台幣仟元
+    published_date: '2025-11-12'
+    publisher: 台康生技股份有限公司
+    quote_check: found
+    title: 民國114年及113年第三季合併財務報告暨會計師核閱報告
+    url: https://zh-tw.eirgenix.com/download/565925
+  tw.6589#e05:
+    locator: EIRGASUN產品說明首段
     published_date: null
     publisher: 台康生技股份有限公司
     quote_check: found
-    title: （EIRGASUN®／HERWENDA®）Trastuzumab 生物相似藥
+    title: （EIRGASUN®／HERWENDA®）Trastuzumab生物相似藥
     url: https://zh-tw.eirgenix.com/eirgasun-herwenda-trastuzumab-biosimilar
-  tw.6589#e_eg12043:
-    locator: 產品表EG12043列；藥物類別為Antibody Drug Conjugate (ADC)
+  tw.6589#e06:
+    locator: 新聞稿首段
+    published_date: '2025-11-12'
+    publisher: EirGenix, Inc.
+    quote_check: found
+    title: EirGenix Signed The Commercial Licensing Agreement for Its Second HER2 Biosimilar Asset EG1206A
+    url: https://www.eirgenix.com/data-338384
+  tw.6589#e07:
+    locator: Herwenda歐洲商業化與上市許可持有人說明
     published_date: null
     publisher: 台康生技股份有限公司
     quote_check: found
-    title: 產品研發進度
-    url: https://zh-tw.eirgenix.com/pipeline
-  tw.6589#e_eg1206a:
-    locator: 產品表EG1206A列
+    title: （EIRGASUN®／HERWENDA®）Trastuzumab生物相似藥
+    url: https://zh-tw.eirgenix.com/eirgasun-herwenda-trastuzumab-biosimilar
+  tw.6589#e08:
+    locator: 公告第5項，主要內容
+    published_date: '2025-11-12'
+    publisher: MoneyDJ理財網／公開資訊觀測站重大訊息
+    quote_check: found
+    title: 台康生技董事會通過與Sandoz簽第二個HER2生物相似藥EG1206A授權銷售合約
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f3ea428c-1f12-471f-8c11-74e0ed73665e
+  tw.6589#e09:
+    locator: 策略合作說明；文末標示新聞為公司提供
+    published_date: '2026-09-16'
+    publisher: 環球生技月刊
+    quote_check: found
+    title: 台康竹北微生物二廠啟用！擴增商業化產能、供GeneFab細胞基因治療原料製造
+    url: https://news.gbimonthly.com/tw/article/show.php?num=90173&range=news%E3%80%81
+  tw.6589#e10:
+    locator: ADC與生物偶聯藥物服務介紹
     published_date: null
     publisher: 台康生技股份有限公司
     quote_check: found
-    title: 產品研發進度
-    url: https://zh-tw.eirgenix.com/pipeline
-  tw.6589#e_eg13084:
-    locator: 產品表EG13084列
+    title: 抗體藥物複合體與生物偶聯藥物
+    url: https://zh-tw.eirgenix.com/antibody-drug-conjugate
+  tw.6589#e11:
+    locator: 第17頁，附註6(2)ii，開發分潤協議及雙方分工
+    published_date: null
+    publisher: EirGenix, Inc.
+    quote_check: found
+    title: Consolidated Financial Statements, Six Months Ended June 30, 2025 and 2024
+    url: https://www.eirgenix.com/download/565923
+  tw.6589#e12:
+    locator: 第50至51頁，附註七（三）5檢測費；第50頁列關係人正式名稱
+    published_date: '2025-11-12'
+    publisher: 台康生技股份有限公司
+    quote_check: found
+    title: 民國114年及113年第三季合併財務報告暨會計師核閱報告
+    url: https://zh-tw.eirgenix.com/download/565925
+  tw.6589#e13:
+    locator: 第15頁納入合併財報之子公司及第71頁附表三
+    published_date: '2025-11-12'
+    publisher: 台康生技股份有限公司
+    quote_check: found
+    title: 民國114年及113年第三季合併財務報告暨會計師核閱報告
+    url: https://zh-tw.eirgenix.com/download/565925
+  tw.6589#e14:
+    locator: 第15頁納入合併財報之子公司及第71頁附表三
+    published_date: '2025-11-12'
+    publisher: 台康生技股份有限公司
+    quote_check: found
+    title: 民國114年及113年第三季合併財務報告暨會計師核閱報告
+    url: https://zh-tw.eirgenix.com/download/565925
+  tw.6589#e15:
+    locator: 公告第1至4項，租地委建、事實發生日、相對人及契約金額
+    published_date: '2024-11-06'
+    publisher: MoneyDJ理財網／公開資訊觀測站重大訊息
+    quote_check: found
+    title: 台康生技竹北廠第二期廠房建置及設備擴增案，更新契約相對人及契約總金額事宜
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=dae5463e-7a37-49ed-b735-99d191f1ef37
+  tw.6589#e16:
+    locator: 第17頁，附註六（二）4；報表金額單位為新台幣仟元
     published_date: null
     publisher: 台康生技股份有限公司
     quote_check: found
-    title: 產品研發進度
-    url: https://zh-tw.eirgenix.com/pipeline
-  tw.6589#e_revenue_licensing:
-    locator: 第109頁，營業比重表；數值依序為111年度收入及比重、112年度收入及比重
-    published_date: '2024-03-31'
-    publisher: 台康生技股份有限公司
-    quote_check: found
-    title: 台康生技112年股東會年報
-    url: https://zh-tw.eirgenix.com/download/320986
-  tw.6589#e_revenue_sales:
-    locator: 第109頁，營業比重表；數值依序為111年度收入及比重、112年度收入及比重
-    published_date: '2024-03-31'
-    publisher: 台康生技股份有限公司
-    quote_check: found
-    title: 台康生技112年股東會年報
-    url: https://zh-tw.eirgenix.com/download/320986
-  tw.6589#e_revenue_service:
-    locator: 第109頁，營業比重表；數值依序為111年度收入及比重、112年度收入及比重
-    published_date: '2024-03-31'
-    publisher: 台康生技股份有限公司
-    quote_check: found
-    title: 台康生技112年股東會年報
-    url: https://zh-tw.eirgenix.com/download/320986
-  tw.6589#e_sub_europe:
-    locator: 第165頁，關係企業間往來分工說明
-    published_date: '2024-03-31'
-    publisher: 台康生技股份有限公司
-    quote_check: found
-    title: 台康生技112年股東會年報
-    url: https://zh-tw.eirgenix.com/download/320986
-  tw.6589#e_sub_usa:
-    locator: 第165頁，關係企業間往來分工說明
-    published_date: '2024-03-31'
-    publisher: 台康生技股份有限公司
-    quote_check: found
-    title: 台康生技112年股東會年報
-    url: https://zh-tw.eirgenix.com/download/320986
+    title: 民國114年及113年第二季合併財務報告暨會計師核閱報告
+    url: https://zh-tw.eirgenix.com/download/565926

@@ -79,6 +79,10 @@ themes:
   theme: theme.apple
   tier: upstream
 - also: []
+  stage: manufacturing
+  theme: theme.cowos
+  tier: midstream
+- also: []
   stage: chips
   theme: theme.nvidia
   tier: upstream
@@ -89,10 +93,6 @@ themes:
 - also: []
   stage: packaging
   theme: theme.cpo
-  tier: midstream
-- also: []
-  stage: manufacturing
-  theme: theme.cowos
   tier: midstream
 relations:
   customers:
@@ -153,6 +153,34 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: 2004-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 晶圓代工（歷史揭露）
+    details:
+    - 晶圓代工（歷史揭露）
+    edge: e51d3d385079c
+    evidence_level: primary
+    id: tw.2401
+    name: 凌陽
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 晶圓代工
+    details:
+    - 晶圓代工
+    edge: e2204c44e78aa
+    evidence_level: primary
+    id: tw.2436
+    name: 偉詮電
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   - as_of: '2024-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
@@ -195,6 +223,20 @@ relations:
     evidence_level: primary
     id: tw.3443
     name: 創意
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 晶圓供應與代工
+    details:
+    - 晶圓供應與代工
+    edge: e2ad7410d93d2
+    evidence_level: primary
+    id: tw.3592
+    name: 瑞鼎
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -279,6 +321,20 @@ relations:
     evidence_level: primary
     id: tw.6789
     name: 采鈺
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-11-01'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 奕力科技的晶圓代工供應
+    details:
+    - 奕力科技的晶圓代工供應
+    edge: e991b85c3ec19
+    evidence_level: media
+    id: tw.6962
+    name: 奕力-KY
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -490,6 +546,20 @@ relations:
     evidence_level: other
     id: tw.6531
     name: 愛普*
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: 2026-03
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 處理器IP品質認證及OIP合作
+    details:
+    - 處理器IP品質認證及OIP合作
+    edge: eb856475ea80a
+    evidence_level: primary
+    id: tw.6533
+    name: 晶心科
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -978,6 +1048,24 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares:
+    - as_of: '2025-12-31'
+      basis: revenue
+      of: tw.2546
+      pct: 43.72
+    detail: 科技廠房及附屬建築工程
+    details:
+    - 科技廠房及附屬建築工程
+    edge: e0b69c21cab77
+    evidence_level: primary
+    id: tw.2546
+    name: 根基
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   - as_of: '2016-06-15'
     confidence: ai_cross_checked
     counterparty_shares: []
@@ -1112,6 +1200,20 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: '2024-06-12'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 分析檢測服務
+    details:
+    - 分析檢測服務
+    edge: eea98a08805ae
+    evidence_level: media
+    id: tw.3587
+    name: 閎康
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   - as_of: '2025-11-25'
     confidence: ai_cross_checked
     counterparty_shares: []
@@ -1164,6 +1266,20 @@ relations:
     evidence_level: other
     id: tw.4755
     name: 三福化
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2022-04-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 特殊氣體供貨
+    details:
+    - 特殊氣體供貨
+    edge: ec75286caeab7
+    evidence_level: media
+    id: tw.4768
+    name: 晶呈科技
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -1360,6 +1476,20 @@ relations:
     evidence_level: other
     id: tw.6425
     name: 易發
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-04-23'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 半導體自動化設備
+    details:
+    - 半導體自動化設備
+    edge: ec3d3484b23f7
+    evidence_level: media
+    id: tw.6438
+    name: 迅得
     ranking_basis: unranked
     share_basis: null
     share_pct: null
@@ -1725,6 +1855,27 @@ relations:
     name: TSMC Arizona Corporation
     ranking_basis: unranked
     role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣508,238,181元
+    as_of: '2026-07-29'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 於集中市場取得台積電普通股
+    details:
+    - 於集中市場取得台積電普通股
+    edge: eee3b351d8712
+    event_date: '2026-07-29'
+    events:
+    - amount: 新台幣508,238,181元
+      detail: 於集中市場取得台積電普通股
+      event_date: '2026-07-29'
+    evidence_level: primary
+    id: tw.1718
+    name: 中纖
+    ranking_basis: unranked
+    role: seller
     share_basis: null
     share_pct: null
     weight: 1

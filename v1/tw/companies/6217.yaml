@@ -18,57 +18,145 @@ industry:
   l3_name: 連接器與線材
   l3_name_en: Connectors & Cables
 primary_chain_position: midstream
-summary_short: 製造銷售探針式連接器、電子測試探針、測試治具與大電流連接器。
-summary_long: 中探針主要製造及銷售探針式連接器、電子測試探針與測試治具。彈簧針產品提供客製化連接器設計；測試產品涵蓋IC與PCB探針、一般終端測試及老化測試治具。大電流產品提供冠簧連接器與電動車充電連接方案，另有5G應用的高頻連接器設計服務。公司亦提供AI伺服器的大電流電源接點及相關連接方案。2025年個體營收分為探針與其他兩項，未明列占比；福建公司為子公司，東莞中探及馬鞍山冠德則為間接轉投資子公司。
+summary_short: 研製Pogo Pin連接器、半導體測試探針與治具，並透過子公司製造鎂鋁機殼。
+summary_long: 中探針主要研發製造彈簧測試針及Pogo Pin連接器，應用於消費性電子與半導體測試。依2026年9月公司說明，連接器業績占六成多，半導體相關業務約25%。測試產品涵蓋IC探針、老化測試、晶圓級封裝及記憶體測試方案，官網列富士康、Intel、Skyworks及SPIL為客戶。公司亦研發對應CoWoS測試的MEMS探針及清針紙，並提供AI伺服器大電流連接方案。集團2024年收購冠德鎂鋁機殼與福盛電鍍業務，另於2024年簽約出售大園土地，於2025年1月完成交易。
 segments:
 - evidence_ids:
-  - e10
-  id: seg_probe
-  name: 探針（個體財報口徑）
-  period: 2025年度
+  - e1
+  - e2
+  id: seg_connector
+  name: Pogo Pin與其他連接器
+  period: 2026-09
   revenue_share_pct: null
 - evidence_ids:
-  - e10
-  id: seg_other
-  name: 其他（個體財報口徑）
-  period: 2025年度
+  - e2
+  - e3
+  id: seg_semiconductor
+  name: 半導體相關業務
+  period: 2026-09
+  revenue_share_pct: 25
+- evidence_ids:
+  - e11
+  - e18
+  id: seg_metal
+  name: 鎂／鋁輕金屬外殼與成形加工
+  period: 2026-06
   revenue_share_pct: null
 main_theme: theme.ev
 themes:
 - also: []
-  stage: vehicle
+  stage: parts
   theme: theme.ev
-  tier: downstream
+  tier: midstream
 - also: []
   stage: components
   theme: theme.ai_server
   tier: midstream
 - also: []
   stage: components
-  theme: theme.5g
+  theme: theme.drone
   tier: upstream
+- also: []
+  stage: components
+  theme: theme.apple
+  tier: upstream
+- also: []
+  stage: test
+  theme: theme.cowos
+  tier: midstream
 relations:
-  subsidiaries:
-  - as_of: '2025-12-31'
+  customers:
+  - as_of: '2026-10-28'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 間接轉投資子公司
+    detail: 測試解決方案
     details:
-    - 間接轉投資子公司
-    edge: ecdb86d08e8d9
+    - 測試解決方案
+    edge: e3b00a30bcca4
     evidence_level: primary
-    id: org.ccp-contact-probes-dongguan
-    name: 東莞中探探針有限公司
+    id: org.siliconware-precision-industries
+    name: 矽品精密
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2025-12-31'
+  - as_of: '2026-10-28'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 子公司
+    detail: 測試解決方案
     details:
-    - 子公司
+    - 測試解決方案
+    edge: ecc6632296e4e
+    evidence_level: primary
+    id: org.富士康
+    name: 富士康
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-06-20'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: Apple Pencil相關連接器
+    details:
+    - Apple Pencil相關連接器
+    edge: ed3bc936c64a1
+    evidence_level: media
+    id: us.AAPL
+    name: Apple
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-06-20'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 電動機車相關連接器
+    details:
+    - 電動機車相關連接器
+    edge: e11405cfe8c9f
+    evidence_level: media
+    id: us.GGR
+    name: Gogoro
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 測試解決方案
+    details:
+    - 測試解決方案
+    edge: e7e9a3cc9ebe8
+    evidence_level: primary
+    id: us.INTC
+    name: Intel
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 測試解決方案
+    details:
+    - 測試解決方案
+    edge: eee0a07bf6ac7
+    evidence_level: primary
+    id: us.SWKS
+    name: Skyworks
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 母公司與東莞中探合計持有100%
+    details:
+    - 母公司與東莞中探合計持有100%
     edge: e8792b2fb79bd
     evidence_level: primary
     id: org.ccp-contact-probes-fujian
@@ -77,137 +165,283 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2025-12-31'
+  - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 間接轉投資子公司
+    detail: 越南全資子公司及後續增資
     details:
-    - 間接轉投資子公司
-    edge: ebc0ec809ac84
+    - 越南全資子公司及後續增資
+    edge: e5ee132383041
     evidence_level: primary
-    id: org.maanshan-guande-electronic-technology
+    id: org.ccp-contact-probes-vietnam
+    name: C.C.P. CONTACT PROBES VIETNAM COMPANY LIMITED
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團間接全資製造子公司
+    details:
+    - 集團間接全資製造子公司
+    edge: e2ff67c875f03
+    evidence_level: primary
+    id: org.dongguan-ccp-contact-probes
+    name: 東莞中探探針有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團持有94.68%的鎂／鋁成形加工子公司
+    details:
+    - 集團持有94.68%的鎂／鋁成形加工子公司
+    edge: eeff0be40ea0e
+    evidence_level: primary
+    id: org.maanshan-guande-electronics
     name: 馬鞍山冠德電子科技有限責任公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
+  transactions:
+  - amount: 新台幣1,241仟元
+    as_of: '2025-09-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 增購日本子公司20%股權
+    details:
+    - 增購日本子公司20%股權
+    edge: e588fceb915f4
+    event_date: '2025-09-30'
+    events:
+    - amount: 新台幣1,241仟元
+      detail: 增購日本子公司20%股權
+      event_date: '2025-09-30'
+    evidence_level: primary
+    id: org.ccp-japan
+    name: C.C.P. JAPAN CO., LTD.
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣129,960仟元
+    as_of: '2024-01-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團收購鎂／鋁輕金屬機殼業務
+    details:
+    - 集團收購鎂／鋁輕金屬機殼業務
+    edge: e95e606a65f78
+    event_date: '2024-01-30'
+    events:
+    - amount: 新台幣129,960仟元
+      detail: 集團收購鎂／鋁輕金屬機殼業務
+      event_date: '2024-01-30'
+    evidence_level: primary
+    id: org.maanshan-guande-electronics
+    name: 馬鞍山冠德電子科技有限責任公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣225,000仟元整(未稅)
+    as_of: 2025-01
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 出售桃園市大園區三筆土地
+    details:
+    - 出售桃園市大園區三筆土地
+    edge: e5b27c50aa892
+    event_date: '2024-11-22'
+    events:
+    - amount: 新台幣225,000仟元整(未稅)
+      detail: 出售桃園市大園區三筆土地
+      event_date: '2024-11-22'
+    evidence_level: primary
+    id: org.shang-gu-li-enterprise
+    name: 上骨力企業有限公司
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣120,886仟元
+    as_of: '2024-05-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 集團收購電鍍公司100%股權
+    details:
+    - 集團收購電鍍公司100%股權
+    edge: e070933da4d1c
+    event_date: '2024-05-28'
+    events:
+    - amount: 新台幣120,886仟元
+      detail: 集團收購電鍍公司100%股權
+      event_date: '2024-05-28'
+    evidence_level: primary
+    id: org.shishi-fusheng-hardware-electroplating
+    name: 石獅市福盛五金電鍍有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 共同研發MEMS探針與清針紙的半導體大廠，未揭露名稱。
+- 無人機與AI智慧眼鏡連接器客戶，未揭露名稱。
+- 富士康客戶關係未揭露實際採購法人。
+- 記憶體測試應用未揭露個別記憶體客戶。
 website: https://www.ccpcontactprobes.com/
 tax_id: '22059031'
 incorporated: '1986-01-22'
 listed: '2003-01-09'
-as_of: '2026-10-15'
+as_of: '2026-10-28'
 confidence: ai_cross_checked
 has_research: true
 evidence:
+  tw.6217#e1:
+    locator: 關於中探針
+    published_date: null
+    publisher: 中國探針股份有限公司
+    quote_check: found
+    title: 關於中國探針 C.C.P.
+    url: https://www.ccpcontactprobes.com/about-ccp/
   tw.6217#e10:
-    locator: 第40頁，附註六（十九）營業收入；金額單位為新台幣仟元
-    published_date: null
-    publisher: 中國探針股份有限公司
+    locator: 首段，總經理說明產品布局
+    published_date: '2026-09-03'
+    publisher: 中央通訊社
     quote_check: found
-    title: 民國114年度及113年度個體財務報告暨會計師查核報告
-    url: https://www.ccpcontactprobes.com/sites/default/files/2026-03/Unconsolidated_Financial_Statements_Annual_Report_2025_10.pdf
+    title: 中探針連接器切入無人機　開發MEMS探針和清針紙
+    url: https://www.cna.com.tw/news/afe/202609030150.aspx
   tw.6217#e11:
-    locator: 為未來充電
-    published_date: null
+    locator: 第62頁，附註六（三十二）企業合併第5點；金額單位為新台幣仟元
+    published_date: '2026-03-13'
     publisher: 中國探針股份有限公司
     quote_check: found
-    title: 了解大電流連接器構造及應用
-    url: https://www.ccpcontactprobes.com/tw/introduction-high-current
+    title: 中國探針股份有限公司及子公司民國114年度及113年度合併財務報告
+    url: https://www.ccpcontactprobes.com/sites/default/files/2026-03/Consolidated_Financial_Statements_2025Q4.pdf
   tw.6217#e12:
-    locator: EV Charging Connectors產品介紹
-    published_date: null
+    locator: 第61頁，附註六（三十二）企業合併第1點；金額單位為新台幣仟元
+    published_date: '2026-03-13'
     publisher: 中國探針股份有限公司
     quote_check: found
-    title: 電動車與能源系統連接方案
-    url: https://wp.ccpcontactprobes.com/scenario-ev-energy/
+    title: 中國探針股份有限公司及子公司民國114年度及113年度合併財務報告
+    url: https://www.ccpcontactprobes.com/sites/default/files/2026-03/Consolidated_Financial_Statements_2025Q4.pdf
   tw.6217#e13:
-    locator: 產品方案介紹
-    published_date: null
-    publisher: 中國探針股份有限公司
+    locator: 公告第1、3、4項
+    published_date: '2024-11-22'
+    publisher: 公開資訊觀測站重大訊息／Win投資轉載
     quote_check: found
-    title: AI伺服器與資料基礎設施—大電流連接與散熱方案
-    url: https://wp.ccpcontactprobes.com/scenario-ai-server/
+    title: 中探針公告本公司董事會決議授權董事長處分不動產案（簽訂買賣契約）
+    url: https://winvest.tw/News/Detail/44595
   tw.6217#e14:
-    locator: 高頻連接器
-    published_date: null
+    locator: 第44頁，附註六（十三）待出售非流動資產及停業單位
+    published_date: '2026-03-13'
     publisher: 中國探針股份有限公司
     quote_check: found
-    title: Pogo Pin彈簧針設計及功能類別
-    url: https://www.ccpcontactprobes.com/tw/pogo-pin-connectors
+    title: 中國探針股份有限公司及子公司民國114年度及113年度合併財務報告
+    url: https://www.ccpcontactprobes.com/sites/default/files/2026-03/Consolidated_Financial_Statements_2025Q4.pdf
   tw.6217#e15:
-    locator: 第46頁，附註七（一）關係人之名稱及關係
-    published_date: null
+    locator: 第18頁，合併子公司說明註6；金額單位為新台幣仟元
+    published_date: '2026-08-10'
     publisher: 中國探針股份有限公司
     quote_check: found
-    title: 民國114年度及113年度個體財務報告暨會計師查核報告
-    url: https://www.ccpcontactprobes.com/sites/default/files/2026-03/Unconsolidated_Financial_Statements_Annual_Report_2025_10.pdf
+    title: 中國探針股份有限公司及子公司民國115年及114年第二季合併財務報告
+    url: https://www.ccpcontactprobes.com/wp-content/uploads/2026/10/Consolidated_Financial_Statements_2026Q2.pdf
   tw.6217#e16:
-    locator: 第46頁，附註七（一）關係人之名稱及關係
-    published_date: null
+    locator: 第16頁，合併子公司表，世成公司持有東莞中探
+    published_date: '2026-08-10'
     publisher: 中國探針股份有限公司
     quote_check: found
-    title: 民國114年度及113年度個體財務報告暨會計師查核報告
-    url: https://www.ccpcontactprobes.com/sites/default/files/2026-03/Unconsolidated_Financial_Statements_Annual_Report_2025_10.pdf
+    title: 中國探針股份有限公司及子公司民國115年及114年第二季合併財務報告
+    url: https://www.ccpcontactprobes.com/wp-content/uploads/2026/10/Consolidated_Financial_Statements_2026Q2.pdf
   tw.6217#e17:
-    locator: 第46頁，附註七（一）關係人之名稱及關係
-    published_date: null
+    locator: 第17頁，合併子公司說明註4，中探福建
+    published_date: '2026-08-10'
     publisher: 中國探針股份有限公司
     quote_check: found
-    title: 民國114年度及113年度個體財務報告暨會計師查核報告
-    url: https://www.ccpcontactprobes.com/sites/default/files/2026-03/Unconsolidated_Financial_Statements_Annual_Report_2025_10.pdf
+    title: 中國探針股份有限公司及子公司民國115年及114年第二季合併財務報告
+    url: https://www.ccpcontactprobes.com/wp-content/uploads/2026/10/Consolidated_Financial_Statements_2026Q2.pdf
+  tw.6217#e18:
+    locator: 第17頁，合併子公司說明註3，冠德公司
+    published_date: '2026-08-10'
+    publisher: 中國探針股份有限公司
+    quote_check: found
+    title: 中國探針股份有限公司及子公司民國115年及114年第二季合併財務報告
+    url: https://www.ccpcontactprobes.com/wp-content/uploads/2026/10/Consolidated_Financial_Statements_2026Q2.pdf
+  tw.6217#e19:
+    locator: 第15頁合併子公司表及第17頁註5，越南子公司
+    published_date: '2026-08-10'
+    publisher: 中國探針股份有限公司
+    quote_check: found
+    title: 中國探針股份有限公司及子公司民國115年及114年第二季合併財務報告
+    url: https://www.ccpcontactprobes.com/wp-content/uploads/2026/10/Consolidated_Financial_Statements_2026Q2.pdf
   tw.6217#e2:
-    locator: 第5頁，關鍵查核事項
+    locator: 末段，公司說明業務占比
+    published_date: '2026-09-03'
+    publisher: 中央通訊社
+    quote_check: found
+    title: 中探針連接器切入無人機　開發MEMS探針和清針紙
+    url: https://www.cna.com.tw/news/afe/202609030150.aspx
+  tw.6217#e21:
+    locator: 其他產品線，大電流連接器
     published_date: null
     publisher: 中國探針股份有限公司
     quote_check: found
-    title: 民國114年度及113年度個體財務報告暨會計師查核報告
-    url: https://www.ccpcontactprobes.com/sites/default/files/2026-03/Unconsolidated_Financial_Statements_Annual_Report_2025_10.pdf
+    title: 彈簧針連接器 Pogo Pin｜中國探針 C.C.P.
+    url: https://www.ccpcontactprobes.com/pogo-pin-connectors/
   tw.6217#e3:
-    locator: 非標準連接器
+    locator: 測試解決方案導言
     published_date: null
     publisher: 中國探針股份有限公司
     quote_check: found
-    title: Pogo Pin彈簧針設計及功能類別
-    url: https://www.ccpcontactprobes.com/tw/pogo-pin-connectors
+    title: 測試解決方案｜中國探針 C.C.P. 半導體測試探針
+    url: https://www.ccpcontactprobes.com/test-solutions/
   tw.6217#e4:
-    locator: 王怡茹報導，連接器業務段落
-    published_date: '2025-02-03'
-    publisher: MoneyDJ理財網
+    locator: 測試解決方案導言，具名客戶
+    published_date: null
+    publisher: 中國探針股份有限公司
     quote_check: found
-    title: 半導體業務掌旗 中探針今年營收拚雙位數成長
-    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=c506277a-7245-4e41-bb11-0a33870cbb93
+    title: 測試解決方案｜中國探針 C.C.P. 半導體測試探針
+    url: https://www.ccpcontactprobes.com/test-solutions/
   tw.6217#e5:
-    locator: 測試方案產品清單
+    locator: Memory Testing／記憶體測試
     published_date: null
     publisher: 中國探針股份有限公司
     quote_check: found
-    title: Pogo Pin連接器與測試探針製造商｜中國探針股份有限公司
-    url: https://www.ccpcontactprobes.com/tw
+    title: 測試解決方案｜中國探針 C.C.P. 半導體測試探針
+    url: https://www.ccpcontactprobes.com/test-solutions/
   tw.6217#e6:
-    locator: ICT測試探針
-    published_date: null
-    publisher: 中國探針股份有限公司
+    locator: 微機電探針研發段落
+    published_date: '2026-09-03'
+    publisher: 中央通訊社
     quote_check: found
-    title: 測試治具及測試探針類別
-    url: https://www.ccpcontactprobes.com/tw/testing-solutions
+    title: 中探針連接器切入無人機　開發MEMS探針和清針紙
+    url: https://www.cna.com.tw/news/afe/202609030150.aspx
   tw.6217#e7:
-    locator: 一般終端測試
-    published_date: null
-    publisher: 中國探針股份有限公司
+    locator: 清針紙用途段落
+    published_date: '2026-09-03'
+    publisher: 中央通訊社
     quote_check: found
-    title: 測試治具及測試探針類別
-    url: https://www.ccpcontactprobes.com/tw/testing-solutions
+    title: 中探針連接器切入無人機　開發MEMS探針和清針紙
+    url: https://www.cna.com.tw/news/afe/202609030150.aspx
   tw.6217#e8:
-    locator: 老化測試方案
+    locator: C.C.P.技術能力
     published_date: null
     publisher: 中國探針股份有限公司
     quote_check: found
-    title: 測試治具及測試探針類別
-    url: https://www.ccpcontactprobes.com/tw/testing-solutions
+    title: AI伺服器連接與散熱方案｜中國探針 C.C.P.
+    url: https://www.ccpcontactprobes.com/scenario-ai-server/
   tw.6217#e9:
-    locator: PDF第1頁
-    published_date: null
-    publisher: 中國探針股份有限公司
-    quote_check: not_found
-    title: Burn In Test Solutions
-    url: https://www.ccpcontactprobes.com/sites/default/files/2022-11/CCP_Burn_In_Test_Catalog_3.pdf
+    locator: 中探針從連接器起家，如今在半導體市場有成
+    published_date: '2024-06-20'
+    publisher: 今周刊
+    quote_check: found
+    title: 中探針從連接器跨足機殼、半導體》併購陸廠拼垂直整合　下半年半導體可望佔兩成營收
+    url: https://www.businesstoday.com.tw/article/category/183015/post/202406200033/

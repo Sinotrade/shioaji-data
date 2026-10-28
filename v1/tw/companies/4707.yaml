@@ -46,10 +46,30 @@ relations:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 母公司
+    detail: 石化業子公司
     details:
+    - 石化業子公司
     - 母公司
     edge: e1b854e9c84ba
+    evidence_level: primary
+    id: tw.1718
+    name: 中纖
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 2
+  suppliers:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares:
+    - as_of: '2025-12-31'
+      basis: revenue
+      of: tw.1718
+      pct: 13
+    detail: 環氧乙烷與壬酚
+    details:
+    - 環氧乙烷與壬酚
+    edge: eb16ded55c837
     evidence_level: primary
     id: tw.1718
     name: 中纖

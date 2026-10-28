@@ -4,19 +4,19 @@
 
 - 英文：Mini / Micro LED
 - 別名：Mini LED、Micro LED
-- 成員：46 家
+- 成員：45 家
 - 完整成員與證據見同目錄同名 YAML，或 themes.json
 
 ## 磊晶與晶粒（上游，4 家）
 
 | 代號 | 名稱 | 說明 |
 | --- | --- | --- |
-| [3714](../companies/3714.md) | 富采 | Mini LED晶粒平台與Micro LED晶片 |
+| [3714](../companies/3714.md) | 富采 | Mini LED晶粒 |
 | [4956](../companies/4956.md) | 光鋐 | Mini／Micro LED晶粒研發 |
 | [6706](../companies/6706.md) | 惠特 | Mini／Micro LED晶粒測試與分選設備 |
 | [6854](../companies/6854.md) | 錼創科技-KY創 | MicroLED晶片與CoC |
 
-## 封裝與背板（中游，16 家）
+## 封裝與背板（中游，17 家）
 
 | 代號 | 名稱 | 說明 |
 | --- | --- | --- |
@@ -24,8 +24,9 @@
 | [2393](../companies/2393.md) | 億光 | Mini LED封裝 |
 | [3321](../companies/3321.md) | 同泰 | Mini LED基板製造 |
 | [3437](../companies/3437.md) | 榮創 | Mini LED封裝與燈板 |
+| [3714](../companies/3714.md) | 富采 | Mini LED背光封裝與模組 |
 | [4720](../companies/4720.md) | 德淵 | Mini／Micro LED面板封裝用UV固化膜 |
-| [4768](../companies/4768.md) | 晶呈科技 | Mini／Micro LED承載基板 |
+| [4768](../companies/4768.md) | 晶呈科技 | Mini／Micro LED用銅磁基板 |
 | [4960](../companies/4960.md) | 誠美材 | Mini LED封裝膠材 |
 | [5244](../companies/5244.md) | 弘凱 | mini LED 0603元件產品 |
 | [6141](../companies/6141.md) | 柏承 | Mini／Micro LED直顯屏用HDI電路板 |
@@ -37,7 +38,7 @@
 | [8070](../companies/8070.md) | 長華* | Mini LED封裝類BT基板通路及子公司導線架產品 |
 | [8150](../companies/8150.md) | 南茂 | Micro-LED電視顯示用雙層COF技術 |
 
-## 顯示器與終端（下游，24 家）
+## 顯示器與終端（下游，23 家）
 
 | 代號 | 名稱 | 說明 |
 | --- | --- | --- |
@@ -58,7 +59,6 @@
 | [6120](../companies/6120.md) | 達運 | Mini LED背光顯示應用 |
 | [6158](../companies/6158.md) | 禾昌 | Mini／Micro LED用客製化線材與連接器 |
 | [6176](../companies/6176.md) | 瑞儀 | Mini LED背光製程研發 |
-| [6209](../companies/6209.md) | 今國光 | AR用MicroLED投影光機 |
 | [6456](../companies/6456.md) | GIS-KY | Mini LED背光與觸控顯示整合 |
 | [6854](../companies/6854.md) | 錼創科技-KY創 | MicroLED顯示器與微顯示技術 |
 | [8049](../companies/8049.md) | 晶采 | Mini LED顯示應用 |

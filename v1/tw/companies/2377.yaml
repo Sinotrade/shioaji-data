@@ -49,12 +49,12 @@ themes:
   theme: theme.ev
   tier: downstream
 - also: []
-  stage: assembly
-  theme: theme.ai_server
-  tier: downstream
-- also: []
   stage: system
   theme: theme.robotics
+  tier: downstream
+- also: []
+  stage: assembly
+  theme: theme.ai_server
   tier: downstream
 - also: []
   stage: it
@@ -295,6 +295,20 @@ relations:
     evidence_level: media
     id: tw.6191
     name: 精成科
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2014-11-21'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 固態電容歷史供應關係
+    details:
+    - 固態電容歷史供應關係
+    edge: ed4da5ed27c09
+    evidence_level: media
+    id: tw.6449
+    name: 鈺邦
     ranking_basis: unranked
     share_basis: null
     share_pct: null

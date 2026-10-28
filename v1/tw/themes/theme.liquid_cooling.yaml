@@ -214,6 +214,14 @@ members:
   evidence:
   - tw.2428#e08
   confidence: ai_cross_checked
+- id: tw.2436
+  stage: parts
+  tier: upstream
+  detail: 液冷水泵與偵測控制IC
+  as_of: '2026-03-20'
+  evidence:
+  - tw.2436#e7
+  confidence: ai_cross_checked
 - id: tw.2438
   stage: system
   tier: downstream
@@ -620,6 +628,22 @@ members:
   evidence:
   - tw.5009#e05
   confidence: ai_cross_checked
+- id: tw.5284
+  stage: parts
+  tier: upstream
+  detail: 水冷分歧管
+  as_of: '2025-11-06'
+  evidence:
+  - tw.5284#e3
+  confidence: ai_cross_checked
+- id: tw.5284
+  stage: modules
+  tier: midstream
+  detail: CDU冷卻模組
+  as_of: '2025-11-06'
+  evidence:
+  - tw.5284#e3
+  confidence: ai_cross_checked
 - id: tw.5452
   stage: parts
   tier: upstream
@@ -850,11 +874,10 @@ members:
 - id: tw.6933
   stage: system
   tier: downstream
-  detail: 液冷機櫃與資料中心整合
-  as_of: '2025-11-05'
+  detail: 液冷整機櫃系統
+  as_of: '2025-12-31'
   evidence:
-  - tw.6933#e5
-  - tw.6933#e7
+  - tw.6933#e01
   confidence: ai_cross_checked
 - id: tw.6982
   stage: parts
@@ -877,10 +900,10 @@ members:
 - id: tw.7744
   stage: parts
   tier: upstream
-  detail: 冷板零組件
-  as_of: '2026-08-18'
+  detail: 冷板與散熱組件
+  as_of: '2026-03-20'
   evidence:
-  - tw.7744#e4
+  - tw.7744#e08
   confidence: ai_cross_checked
 - id: tw.8093
   stage: modules

@@ -17,181 +17,188 @@ industry:
   l3: consumer.furniture
   l3_name: 家具與居家用品
   l3_name_en: Furniture & Home Furnishings
-primary_chain_position: midstream
-summary_short: 製造銷售熱水器、廚房配備與系統廚具，提供整體廚房服務。
-summary_long: 台灣櫻花主要經營廚衛電與整體廚房，產品包括熱水器、瓦斯爐、除油煙機、淨水器及系統廚具。2025年合併營收以整體廚房占31.7%最高，其次為廚房配備30.5%、熱水器24.4%，其他占13.4%。整體廚房提供規劃設計、製造供應及售後服務。旗下直接持有雅適國際、櫻花家居室內裝修、櫻花企業（英屬維京群島）及新加坡控股公司全部股權，並持有愛菲爾51%股權。
+primary_chain_position: not_applicable
+summary_short: 製造銷售熱水器、廚衛電器與整體廚房，並投資居家裝修業務。
+summary_long: 台灣櫻花製造與銷售熱水器、瓦斯爐、排油煙機及整體廚房，營運核心為廚衛電與整體廚房。依公司2026年法說說明，2025年廚衛電約占營收55%，整體廚房約占32%。集團透過全資子公司雅適國際經營莊頭北品牌，另持有櫻花家居全部股權及愛菲爾51%股權。公司於2024年公告愛菲爾投資案，金額1.1億元，拓展居家裝修業務；2025年董事會通過烏日北廠拆除重建計畫，當時預估工程總金額約新台幣7.23億元。
 segments:
 - evidence_ids:
-  - e1
-  id: seg_kitchen_equipment
-  name: 廚房配備
-  period: '2025'
-  revenue_share_pct: 30.5
+  - e5
+  id: seg_kitchen_appliances
+  name: 廚衛電
+  period: 2025年度
+  revenue_share_pct: 55
 - evidence_ids:
-  - e1
-  id: seg_water_heaters
-  name: 熱水器
-  period: '2025'
-  revenue_share_pct: 24.4
-- evidence_ids:
-  - e1
-  id: seg_integrated_kitchens
+  - e5
+  id: seg_kitchen_solutions
   name: 整體廚房
-  period: '2025'
-  revenue_share_pct: 31.7
-- evidence_ids:
-  - e1
-  id: seg_other
-  name: 其他
-  period: '2025'
-  revenue_share_pct: 13.4
+  period: 2025年度
+  revenue_share_pct: 32
 relations:
+  competitors:
+  - as_of: 2022-11
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 台灣熱水器、瓦斯爐與除油煙機市場
+    details:
+    - 台灣熱水器、瓦斯爐與除油煙機市場
+    edge: ed845326bd622
+    evidence_level: media
+    id: jp.5947
+    name: 日本林內（Rinnai）
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
-  - as_of: '2025-12-31'
+  - as_of: 2026-05
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持股51%的子公司
+    detail: 持股51%的居家裝修子公司
     details:
-    - 直接持股51%的子公司
-    edge: edb461f0061ae
+    - 持股51%的居家裝修子公司
+    edge: eacd3f0a6f861
     evidence_level: primary
-    id: org.eiffel-enterprise
-    name: 愛菲爾(股)公司
+    id: org.eiffel-taiwan
+    name: 愛菲爾
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2025-12-31'
+  - as_of: 2026-05
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持股100%的子公司
+    detail: 全資子公司
     details:
-    - 直接持股100%的子公司
-    edge: e74741781be2f
+    - 全資子公司
+    edge: e76ba4cdefa3e
     evidence_level: primary
-    id: org.sakura-enterprise-bvi
-    name: 櫻花企業(英屬維京群島)有限公司
+    id: org.sakura-home
+    name: 櫻花家居
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2025-12-31'
+  - as_of: 2026-05
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持股100%的子公司
+    detail: 全資子公司，經營莊頭北品牌
     details:
-    - 直接持股100%的子公司
-    edge: e7fea6c2ae982
+    - 全資子公司，經營莊頭北品牌
+    edge: e6d72d60c481d
     evidence_level: primary
-    id: org.sakura-home-collection
-    name: 櫻花家居室內裝修(股)公司
+    id: org.topax
+    name: 雅適國際
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2025-12-31'
+  transactions:
+  - amount: 1.1億元
+    as_of: '2024-03-26'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持股100%的新加坡子公司
+    detail: 投資取得51%股權
     details:
-    - 直接持股100%的新加坡子公司
-    edge: e6aa9ff070d4e
-    evidence_level: primary
-    id: org.sakura-pan-pacific-holdings
-    name: Sakura Pan Pacific Holdings (Singapore) Pte. Ltd.
+    - 投資取得51%股權
+    edge: e9d5172db244e
+    event_date: '2024-03-26'
+    events:
+    - amount: 1.1億元
+      detail: 投資取得51%股權
+      event_date: '2024-03-26'
+    evidence_level: media
+    id: org.eiffel-taiwan
+    name: 愛菲爾
     ranking_basis: unranked
+    role: buyer
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2025-12-31'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 直接持股100%的子公司
-    details:
-    - 直接持股100%的子公司
-    edge: ef96487e2a3f1
-    evidence_level: primary
-    id: org.svago-international
-    name: 雅適國際(股)公司
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
+unresolved_mentions:
+- 建設公司客戶：所採法說與新聞來源未逐一具名，不推定個別供應關係。
+- 烏日北廠拆除重建工程承包商：董事會投資公告未具名。
 website: www.sakura.com.tw
 tax_id: '23113940'
 incorporated: '1988-10-20'
 listed: '1992-07-16'
-as_of: '2026-10-15'
+as_of: '2026-10-28'
 confidence: ai_cross_checked
 has_research: true
 evidence:
-  tw.9911#e1:
-    locator: 第59頁，114年度主要產品的營業比重
-    published_date: '2026-05-15'
-    publisher: 台灣櫻花股份有限公司
-    quote_check: found
-    title: 台灣櫻花股份有限公司114年度年報
-    url: https://doc.twse.com.tw/pdf/2025_9911_20260604F04_20261015_202920.pdf
   tw.9911#e10:
-    locator: 第1頁，114年度主要產品實際銷售量
-    published_date: '2026-05-15'
-    publisher: 台灣櫻花股份有限公司
+    locator: 第1頁，原告雅適國際股份有限公司之事實及理由
+    published_date: null
+    publisher: 智慧財產法院；經濟部智慧財產局公開
+    quote_check: unreachable
+    title: 智慧財產法院100年度民商訴字第10號民事判決
+    url: https://www1.tipo.gov.tw/trademarks-tw/dl-261285-3cae3f53f60049f6ab8b66f4bbc86c1b.html
+  tw.9911#e11:
+    locator: 內文首段
+    published_date: '2024-03-26'
+    publisher: 自由財經，楊雅民
     quote_check: found
-    title: 台灣櫻花股份有限公司114年度年報
-    url: https://doc.twse.com.tw/pdf/2025_9911_20260604F04_20261015_202920.pdf
+    title: 台灣櫻花取得愛菲爾51％股權 搶攻居家裝潢商機
+    url: https://ec.ltn.com.tw/article/breakingnews/4619980
+  tw.9911#e12:
+    locator: 公告第1至3項
+    published_date: '2025-05-08'
+    publisher: 公開資訊觀測站公司公告，鉅亨網轉載
+    quote_check: found
+    title: 櫻花：公告本公司董事會決議烏日北廠建物拆除重建工程
+    url: https://news.cnyes.com/news/id/5967664
   tw.9911#e2:
-    locator: 第1頁，主要產品銷售量表註1
-    published_date: '2026-05-15'
+    locator: 第6頁，生產基地／大雅二廠
+    published_date: null
     publisher: 台灣櫻花股份有限公司
     quote_check: found
-    title: 台灣櫻花股份有限公司114年度年報
-    url: https://doc.twse.com.tw/pdf/2025_9911_20260604F04_20261015_202920.pdf
+    title: 櫻花集團法人說明會簡報
+    url: https://mopsov.twse.com.tw/nas/STR/991120251202M001.pdf
   tw.9911#e3:
-    locator: 第60頁，整體廚房方面
-    published_date: '2026-05-15'
+    locator: 第6頁，生產基地／神岡廠
+    published_date: null
     publisher: 台灣櫻花股份有限公司
     quote_check: found
-    title: 台灣櫻花股份有限公司114年度年報
-    url: https://doc.twse.com.tw/pdf/2025_9911_20260604F04_20261015_202920.pdf
+    title: 櫻花集團法人說明會簡報
+    url: https://mopsov.twse.com.tw/nas/STR/991120251202M001.pdf
   tw.9911#e4:
-    locator: 第54頁，轉投資事業持股表，本公司投資欄
-    published_date: '2026-05-15'
+    locator: 第6頁，生產基地／烏日二廠
+    published_date: null
     publisher: 台灣櫻花股份有限公司
-    quote_check: found
-    title: 台灣櫻花股份有限公司114年度年報
-    url: https://doc.twse.com.tw/pdf/2025_9911_20260604F04_20261015_202920.pdf
+    quote_check: not_found
+    title: 櫻花集團法人說明會簡報
+    url: https://mopsov.twse.com.tw/nas/STR/991120251202M001.pdf
   tw.9911#e5:
-    locator: 第54頁，轉投資事業持股表，本公司投資欄
-    published_date: '2026-05-15'
-    publisher: 台灣櫻花股份有限公司
+    locator: 內文，2025年事業營收結構
+    published_date: '2026-05-21'
+    publisher: MoneyDJ理財網，張以忠
     quote_check: found
-    title: 台灣櫻花股份有限公司114年度年報
-    url: https://doc.twse.com.tw/pdf/2025_9911_20260604F04_20261015_202920.pdf
+    title: 櫻花深化Home In One，AI產品與建案市場成雙引擎
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=569207f9-a2ea-4d26-817c-df0fa16a42cb
   tw.9911#e6:
-    locator: 第54頁，轉投資事業持股表，本公司投資欄
-    published_date: '2026-05-15'
-    publisher: 台灣櫻花股份有限公司
+    locator: 產品戰段落，前文列舉熱水器、瓦斯爐、除油煙機與日本林內
+    published_date: '2022-11-20'
+    publisher: 台灣連鎖暨加盟協會刊載；原報導為商業周刊林洧楨
     quote_check: found
-    title: 台灣櫻花股份有限公司114年度年報
-    url: https://doc.twse.com.tw/pdf/2025_9911_20260604F04_20261015_202920.pdf
+    title: 台灣櫻花3路改革甩平價宿命 「聽媽媽的話」淨利翻倍
+    url: https://tcfa.org.tw/announce_detail.asp?id=9204940
   tw.9911#e7:
-    locator: 第54頁，轉投資事業持股表，本公司投資欄
-    published_date: '2026-05-15'
+    locator: 第7頁，投資架構／雅適國際
+    published_date: null
     publisher: 台灣櫻花股份有限公司
     quote_check: found
-    title: 台灣櫻花股份有限公司114年度年報
-    url: https://doc.twse.com.tw/pdf/2025_9911_20260604F04_20261015_202920.pdf
+    title: 櫻花集團法人說明會簡報
+    url: https://www.twse.com.tw/staticFiles/news/event/8a8216d69e2f5671019e43e9f2be0054.pdf
   tw.9911#e8:
-    locator: 第54頁，轉投資事業持股表，本公司投資欄
-    published_date: '2026-05-15'
+    locator: 第7頁，投資架構／櫻花家居
+    published_date: null
     publisher: 台灣櫻花股份有限公司
     quote_check: found
-    title: 台灣櫻花股份有限公司114年度年報
-    url: https://doc.twse.com.tw/pdf/2025_9911_20260604F04_20261015_202920.pdf
+    title: 櫻花集團法人說明會簡報
+    url: https://www.twse.com.tw/staticFiles/news/event/8a8216d69e2f5671019e43e9f2be0054.pdf
   tw.9911#e9:
-    locator: 第61頁，整體廚房產業上中下游關聯圖
-    published_date: '2026-05-15'
+    locator: 第7頁，投資架構／愛菲爾
+    published_date: null
     publisher: 台灣櫻花股份有限公司
     quote_check: found
-    title: 台灣櫻花股份有限公司114年度年報
-    url: https://doc.twse.com.tw/pdf/2025_9911_20260604F04_20261015_202920.pdf
+    title: 櫻花集團法人說明會簡報
+    url: https://www.twse.com.tw/staticFiles/news/event/8a8216d69e2f5671019e43e9f2be0054.pdf

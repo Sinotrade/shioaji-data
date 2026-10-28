@@ -41,8 +41,12 @@ segments:
   name: 其他
   period: '2024'
   revenue_share_pct: 0.18
-main_theme: theme.5g
+main_theme: theme.robotics
 themes:
+- also: []
+  stage: control
+  theme: theme.robotics
+  tier: midstream
 - also: []
   stage: components
   theme: theme.5g
@@ -51,10 +55,6 @@ themes:
   stage: components
   theme: theme.drone
   tier: upstream
-- also: []
-  stage: control
-  theme: theme.robotics
-  tier: midstream
 relations:
   subsidiaries:
   - as_of: '2026-06-30'

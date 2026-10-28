@@ -42,16 +42,16 @@ segments:
   name: 顯示器應用材料
   period: '2025'
   revenue_share_pct: null
-main_theme: theme.photoresist
+main_theme: theme.euv
 themes:
-- also: []
-  stage: make
-  theme: theme.photoresist
-  tier: midstream
 - also: []
   stage: materials
   theme: theme.euv
   tier: upstream
+- also: []
+  stage: make
+  theme: theme.photoresist
+  tier: midstream
 relations:
   customers:
   - as_of: '2023-01-18'

@@ -54,10 +54,6 @@ themes:
   theme: theme.ai_server
   tier: upstream
 - also: []
-  stage: packaging
-  theme: theme.cpo
-  tier: midstream
-- also: []
   stage: design
   theme: theme.cowos
   tier: downstream
@@ -65,6 +61,10 @@ themes:
   stage: application
   theme: theme.hbm
   tier: downstream
+- also: []
+  stage: packaging
+  theme: theme.cpo
+  tier: midstream
 relations:
   competitors:
   - as_of: '2026-03-23'
@@ -490,6 +490,27 @@ relations:
     evidence_level: primary
     id: tw.2330
     name: 台積電
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣216,600,000元
+    as_of: '2025-08-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 處分世芯-KY普通股；財務投資
+    details:
+    - 處分世芯-KY普通股；財務投資
+    edge: ece3123e5a499
+    event_date: '2025-08-13'
+    events:
+    - amount: 新台幣216,600,000元
+      detail: 處分世芯-KY普通股；財務投資
+      event_date: '2025-08-13'
+    evidence_level: primary
+    id: tw.4736
+    name: 泰博
     ranking_basis: unranked
     role: buyer
     share_basis: null

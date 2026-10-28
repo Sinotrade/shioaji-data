@@ -20,6 +20,14 @@ stages:
   tier: downstream
   name_en: Wafer Fabrication
 members:
+- id: tw.1710
+  stage: materials
+  tier: upstream
+  detail: 電子級二氧化碳的EUV設備雷射光源用途開發
+  as_of: '2023-11-07'
+  evidence:
+  - tw.1710#e09
+  confidence: ai_cross_checked
 - id: tw.3413
   stage: equipment
   tier: midstream
@@ -44,6 +52,14 @@ members:
   evidence:
   - tw.6196#e14
   confidence: ai_cross_checked
+- id: tw.6438
+  stage: equipment
+  tier: midstream
+  detail: EUV光罩載具倉儲方案
+  as_of: '2021-08-11'
+  evidence:
+  - tw.6438#e8
+  confidence: ai_cross_checked
 - id: tw.6667
   stage: equipment
   tier: midstream
@@ -51,14 +67,6 @@ members:
   as_of: '2021-09-14'
   evidence:
   - tw.6667#e7
-  confidence: ai_cross_checked
-- id: tw.6788
-  stage: equipment
-  tier: midstream
-  detail: EUV製程相關設備安裝經驗
-  as_of: 2024-12
-  evidence:
-  - tw.6788#e7
   confidence: ai_cross_checked
 - id: tw.6823
   stage: materials

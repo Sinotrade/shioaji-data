@@ -45,16 +45,16 @@ themes:
   stage: parts
   theme: theme.ev
   tier: midstream
-- also: []
-  stage: components
-  theme: theme.ai_server
-  tier: midstream
 - also:
   - stage: system
     tier: downstream
   stage: components
   theme: theme.robotics
   tier: upstream
+- also: []
+  stage: components
+  theme: theme.ai_server
+  tier: midstream
 - also: []
   stage: modules
   theme: theme.liquid_cooling

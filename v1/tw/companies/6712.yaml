@@ -32,166 +32,298 @@ chain_stage:
   stage_name: 製造與代工
   tier: midstream
 primary_chain_position: midstream
-summary_short: 以細胞製備、儲存及保健產品取得收入，並研發細胞治療產品。
-summary_long: 長聖以細胞製備與儲存等再生醫療相關業務取得收入。2025年合併營收中，儲存業務占41.69%、細胞製備占34.18%、保健產品占24.01%、基因檢測占0.12%。官網列示的技術產品包括CAR001、EXO-001活體內CAR-T、UMSC01臍帶間質幹細胞、DCV樹突細胞疫苗與GDT免疫細胞。2026年6月底，直接持有聖陽生醫、聖展生技及長博生物科技全部股權，並透過聖陽間接持有學鼎生技全部股權。
+summary_short: 以細胞製備、儲存服務及合併集團保健產品銷售取得營收。
+summary_long: 長聖提供醫療機構細胞產品委託製造服務，並開發細胞治療新藥。2025年合併營收中，儲存業務占41.69%、細胞製備占34.18%、保健產品占24.01%、基因檢測占0.12%。研發產品包括治療實體腫瘤的CAR001、多形性膠質母細胞瘤的ADCV01，以及急性心肌梗塞的UMSC01；CAR001於2026年7月公告啟動第二期a臨床試驗。中國醫藥大學附設醫院為具名客戶，2025年占長聖個體銷貨收入71.03%。公司直接持有聖陽生醫國際，並透過聖陽持有學鼎生技；2026年另以股份轉換取得聖展生技全部股權。
 segments:
 - evidence_ids:
-  - e1
+  - e01
   id: storage
   name: 儲存業務
   period: '2025'
   revenue_share_pct: 41.69
 - evidence_ids:
-  - e1
+  - e01
   id: cell_preparation
   name: 細胞製備
   period: '2025'
   revenue_share_pct: 34.18
 - evidence_ids:
-  - e1
+  - e01
   id: health_products
   name: 保健產品
   period: '2025'
   revenue_share_pct: 24.01
 - evidence_ids:
-  - e1
+  - e01
   id: genetic_testing
   name: 基因檢測
   period: '2025'
   revenue_share_pct: 0.12
 relations:
+  customers:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 細胞業務銷貨
+    details:
+    - 細胞業務銷貨
+    edge: e3a413f256602
+    evidence_level: primary
+    id: org.china-medical-university-hospital
+    name: 中國醫藥大學附設醫院
+    ranking_basis: disclosed
+    share_basis: revenue
+    share_pct: 71.03
+    weight: 1
   subsidiaries:
-  - as_of: '2026-06-30'
+  - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 透過聖陽生醫間接持股100%的子公司
+    detail: 直接持有100%股權
     details:
-    - 透過聖陽生醫間接持股100%的子公司
-    edge: e9d0e69ab71fd
+    - 直接持有100%股權
+    edge: e9020f329ceef
     evidence_level: primary
-    id: org.學鼎生技股份有限公司
-    name: 學鼎生技股份有限公司
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
-  - as_of: '2026-06-30'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 直接持股100%的子公司
-    details:
-    - 直接持股100%的子公司
-    edge: e6d77b7ba36a5
-    evidence_level: primary
-    id: org.聖展生技股份有限公司
-    name: 聖展生技股份有限公司
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
-  - as_of: '2026-06-30'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 直接持股100%的子公司
-    details:
-    - 直接持股100%的子公司
-    edge: e60a903ac4eba
-    evidence_level: primary
-    id: org.聖陽生醫國際股份有限公司
+    id: org.sheng-yang-biomedical-international
     name: 聖陽生醫國際股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2026-06-30'
+  - as_of: '2026-02-26'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 直接持股100%的子公司
+    detail: 股份轉換取得100%股權
     details:
-    - 直接持股100%的子公司
-    edge: e4c1f5b8c943f
+    - 股份轉換取得100%股權
+    edge: e05121ff0677d
     evidence_level: primary
-    id: org.長博生物科技股份有限公司
-    name: 長博生物科技股份有限公司
+    id: org.sheng-zhan-biotechnology
+    name: 聖展生技股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 透過聖陽生醫國際間接持有100%股權
+    details:
+    - 透過聖陽生醫國際間接持有100%股權
+    edge: e84b329560897
+    evidence_level: primary
+    id: org.xue-ding-biotechnology
+    name: 學鼎生技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: '2026-03-25'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 伏剋藻奈米藥物傳遞技術平台授權
+    details:
+    - 伏剋藻奈米藥物傳遞技術平台授權
+    edge: e7852c401a547
+    evidence_level: primary
+    id: org.china-medical-university
+    name: 中國醫藥大學
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 委託臨床試驗服務
+    details:
+    - 委託臨床試驗服務
+    edge: ec1bab3b35244
+    evidence_level: primary
+    id: org.艾昆緯股份有限公司
+    name: 艾昆緯股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 委託研究服務
+    details:
+    - 委託研究服務
+    edge: e80dc6820be77
+    evidence_level: primary
+    id: org.華鼎生技顧問有限公司
+    name: 華鼎生技顧問有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: null
+    as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 美國合資公司設立與技術再授權入股
+    details:
+    - 美國合資公司設立與技術再授權入股
+    edge: ee92cde666a42
+    event_date: '2024-01-19'
+    events:
+    - amount: null
+      detail: 美國合資公司設立與技術再授權入股
+      event_date: '2024-01-19'
+    evidence_level: primary
+    id: org.chironstem
+    name: ChironStem Inc.
+    ranking_basis: unranked
+    role: party
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 約新台幣17億元（公告時依最近收盤價推算）
+    as_of: '2026-02-26'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 發行新股收購聖展全部股權
+    details:
+    - 發行新股收購聖展全部股權
+    edge: e99ff7d8dbe5d
+    event_date: '2025-10-02'
+    events:
+    - amount: 約新台幣17億元（公告時依最近收盤價推算）
+      detail: 發行新股收購聖展全部股權
+      event_date: '2025-10-02'
+    evidence_level: primary
+    id: org.sheng-zhan-biotechnology
+    name: 聖展生技股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 2025年合併財報重要客戶資訊中的A客戶與B客戶未具名，不與關係人銷貨表自行對…
+- 未具名的細胞製備原物料及耗材供應商。
 website: www.ever-supreme.com.tw
 tax_id: '60274720'
 incorporated: '2016-12-06'
 listed: '2021-01-08'
-as_of: '2026-10-18'
+as_of: '2026-10-28'
 confidence: ai_cross_checked
 has_research: true
 evidence:
-  tw.6712#e1:
-    locator: 印刷頁79、PDF第83頁；肆、營運概況；一、業務內容；2.營業比重。各列依序為113年度收入、占比及114年度收入、占比。
+  tw.6712#e01:
+    locator: 第79頁，肆、一、營業比重；數字依序為113及114年度
     published_date: '2026-03-25'
     publisher: 長聖國際生技股份有限公司
     quote_check: found
-    title: 114年度年報
+    title: 長聖國際生技股份有限公司114年度年報
     url: https://www.ever-supreme.com.tw/upload/f20260420142619ccw4b1.pdf
+  tw.6712#e02:
+    locator: 第88頁，市場及產銷概況
+    published_date: '2026-03-25'
+    publisher: 長聖國際生技股份有限公司
+    quote_check: found
+    title: 長聖國際生技股份有限公司114年度年報
+    url: https://www.ever-supreme.com.tw/upload/f20260420142619ccw4b1.pdf
+  tw.6712#e03:
+    locator: 新聞標題及內文首段
+    published_date: '2026-07-01'
+    publisher: 長聖國際生技股份有限公司
+    quote_check: found
+    title: 長聖CAR001新藥完成一期安全驗證，啟動Phase IIa，瞄準全球實體腫瘤市場
+    url: https://www.ever-supreme.com.tw/news_detail/39
+  tw.6712#e04:
+    locator: ADCV01產品及臨床進度
+    published_date: null
+    publisher: 長聖國際生技股份有限公司
+    quote_check: found
+    title: 新藥研發
+    url: https://www.ever-supreme.com.tw/products2/all/1
+  tw.6712#e05:
+    locator: UMSC01急性心肌梗塞項目；同頁標示Phase IIa收案中
+    published_date: null
+    publisher: 長聖國際生技股份有限公司
+    quote_check: found
+    title: 新藥研發
+    url: https://www.ever-supreme.com.tw/products2/all/1
+  tw.6712#e06:
+    locator: 第68頁，附註十三、與關係人進銷貨；交易主體為長聖個體
+    published_date: '2026-02-26'
+    publisher: 長聖國際生技股份有限公司
+    quote_check: found
+    title: 長聖114及113年度合併財務報告
+    url: https://www.ever-supreme.com.tw/upload/f202604011756480y1691.pdf
+  tw.6712#e07:
+    locator: 第96頁，重要契約
+    published_date: '2026-03-25'
+    publisher: 長聖國際生技股份有限公司
+    quote_check: found
+    title: 長聖國際生技股份有限公司114年度年報
+    url: https://www.ever-supreme.com.tw/upload/f20260420142619ccw4b1.pdf
+  tw.6712#e08:
+    locator: 技術轉移第1項；受讓對象列為長聖國際生技股份有限公司
+    published_date: null
+    publisher: 中國醫藥大學
+    quote_check: found
+    title: 中國醫藥大學教師Eportfolio：技術轉移
+    url: https://webap.cmu.edu.tw/TchEportfolio/tec_transfer_2/D16148
+  tw.6712#e09:
+    locator: 第59頁，附註九、第13項
+    published_date: '2026-02-26'
+    publisher: 長聖國際生技股份有限公司
+    quote_check: found
+    title: 長聖114及113年度合併財務報告
+    url: https://www.ever-supreme.com.tw/upload/f202604011756480y1691.pdf
   tw.6712#e10:
-    locator: 醫藥事業：免疫細胞技術平台；產品編號及名稱
-    published_date: null
+    locator: 第59頁，附註九、第18項
+    published_date: '2026-02-26'
     publisher: 長聖國際生技股份有限公司
     quote_check: found
-    title: Gamma-Delta T Cell（γδ T）
-    url: https://www.ever-supreme.com.tw/products_detail/6/1
-  tw.6712#e2:
-    locator: 第15頁；四、重大會計政策之彙總說明；3.合併概況；115.06.30持股欄
-    published_date: '2026-08-10'
+    title: 長聖114及113年度合併財務報告
+    url: https://www.ever-supreme.com.tw/upload/f202604011756480y1691.pdf
+  tw.6712#e11:
+    locator: 第17頁，附註四、合併概況；持股欄為114及113年底
+    published_date: '2026-02-26'
     publisher: 長聖國際生技股份有限公司
     quote_check: found
-    title: 115年第2季合併財務報告暨會計師核閱報告
-    url: https://www.ever-supreme.com.tw/upload/f20261006102330ige3l1.pdf
-  tw.6712#e3:
-    locator: 第15頁；四、重大會計政策之彙總說明；3.合併概況；115.06.30持股欄
-    published_date: '2026-08-10'
+    title: 長聖114及113年度合併財務報告
+    url: https://www.ever-supreme.com.tw/upload/f202604011756480y1691.pdf
+  tw.6712#e12:
+    locator: 第17頁，附註四、合併概況
+    published_date: '2026-02-26'
     publisher: 長聖國際生技股份有限公司
     quote_check: found
-    title: 115年第2季合併財務報告暨會計師核閱報告
-    url: https://www.ever-supreme.com.tw/upload/f20261006102330ige3l1.pdf
-  tw.6712#e4:
-    locator: 第15頁；四、重大會計政策之彙總說明；3.合併概況；115.06.30持股欄
-    published_date: '2026-08-10'
+    title: 長聖114及113年度合併財務報告
+    url: https://www.ever-supreme.com.tw/upload/f202604011756480y1691.pdf
+  tw.6712#e13:
+    locator: 第59頁，附註十一、重大之期後事項
+    published_date: '2026-02-26'
     publisher: 長聖國際生技股份有限公司
     quote_check: found
-    title: 115年第2季合併財務報告暨會計師核閱報告
-    url: https://www.ever-supreme.com.tw/upload/f20261006102330ige3l1.pdf
-  tw.6712#e5:
-    locator: 第15頁；四、重大會計政策之彙總說明；3.合併概況；115.06.30持股欄
-    published_date: '2026-08-10'
+    title: 長聖114及113年度合併財務報告
+    url: https://www.ever-supreme.com.tw/upload/f202604011756480y1691.pdf
+  tw.6712#e14:
+    locator: 第5項發生緣由
+    published_date: '2025-10-02'
+    publisher: 公開資訊觀測站重大訊息公告／MoneyDJ轉載
+    quote_check: found
+    title: 長聖公告本公司召開重大訊息記者會新聞稿內容
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=67ae4d72-a2ea-418e-8ffb-ae45d949fd44
+  tw.6712#e15:
+    locator: 第5項股份轉換條件及價金估算
+    published_date: '2025-10-02'
+    publisher: 公開資訊觀測站重大訊息公告／MoneyDJ轉載
+    quote_check: found
+    title: 長聖公告本公司召開重大訊息記者會新聞稿內容
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=67ae4d72-a2ea-418e-8ffb-ae45d949fd44
+  tw.6712#e16:
+    locator: 第38頁，附註六、採用權益法之投資
+    published_date: '2026-02-26'
     publisher: 長聖國際生技股份有限公司
     quote_check: found
-    title: 115年第2季合併財務報告暨會計師核閱報告
-    url: https://www.ever-supreme.com.tw/upload/f20261006102330ige3l1.pdf
-  tw.6712#e6:
-    locator: 醫藥事業：免疫細胞技術平台；CAR001產品說明
-    published_date: null
-    publisher: 長聖國際生技股份有限公司
-    quote_check: found
-    title: CAR.BiTE-γδ T（CAR001）
-    url: https://www.ever-supreme.com.tw/products_detail/1/1
-  tw.6712#e7:
-    locator: 醫藥事業：外泌體技術平台；產品編號及名稱
-    published_date: null
-    publisher: 長聖國際生技股份有限公司
-    quote_check: found
-    title: CAR.BiTE@CD3e-Nb EV（EXO-001）
-    url: https://www.ever-supreme.com.tw/products_detail/7/1
-  tw.6712#e8:
-    locator: 臍帶間質幹細胞治療流程說明；二、細胞製備
-    published_date: null
-    publisher: 長聖國際生技股份有限公司
-    quote_check: found
-    title: Umbilical Cord Mesenchymal Stem Cell（UMSC01）
-    url: https://www.ever-supreme.com.tw/products_detail/8/1
-  tw.6712#e9:
-    locator: 醫藥事業：免疫細胞技術平台；產品編號及名稱
-    published_date: null
-    publisher: 長聖國際生技股份有限公司
-    quote_check: found
-    title: Dendritic Cell
-    url: https://www.ever-supreme.com.tw/products_detail/5/1
+    title: 長聖114及113年度合併財務報告
+    url: https://www.ever-supreme.com.tw/upload/f202604011756480y1691.pdf

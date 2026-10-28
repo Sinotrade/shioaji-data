@@ -26,83 +26,70 @@ chain_stage:
   stage_name: 通路與醫療服務
   tier: downstream
 primary_chain_position: downstream
-summary_short: 以醫療器材、透析耗材及藥品代理銷售與醫療通路服務取得收入。
-summary_long: 佳醫主要從事醫療產品代理與通路服務，產品涵蓋外科耗材、人工腎臟、血液迴路管、穿刺針及透析藥品。2025年合併營收以外科耗材占25.0%最高，藥品占19.1%，人工腎臟、血液迴路管與穿刺針占14.3%，紅血球生成素、藥水與藥粉占10.6%。集團透過子公司曜亞經營醫學美容器材與耗材，久裕從事藥品銷售及物流，佳醫資產管理經營醫療相關資產；佳醫創照則提供長期照顧、租賃及醫療耗材等服務，自2026年5月29日起納入合併財報。
+summary_short: 以醫材與藥品代理通路為主，並透過子公司經營醫美、物流及長照。
+summary_long: 佳醫以醫療產品代理、醫療通路與醫藥物流為主要業務。2025年合併營收中，外科耗材占25.0%、藥品占19.1%、人工腎臟、血液迴路管與穿刺針占14.3%，紅血球生成素及透析藥水粉占10.6%。美敦力為具名供應商，集康國際採購其代理的外科耗材，Excelsior Renal Service採購透析產品。子公司曜亞經營醫學美容，久裕提供藥品銷售與物流；集團另透過馬來西亞間接子公司製造透析濃縮液及粉劑。2026年5月29日，佳醫取得佳醫創照控制力並將其納入合併報表。
 segments:
 - evidence_ids:
   - e02
-  id: seg_surgical
+  id: surgical_consumables
   name: 外科耗材
   period: '2025'
   revenue_share_pct: 25
 - evidence_ids:
   - e02
-  id: seg_pharmaceuticals
+  id: pharmaceuticals
   name: 藥品
   period: '2025'
   revenue_share_pct: 19.1
 - evidence_ids:
   - e02
-  id: seg_dialysis_consumables
-  name: 人工腎臟、血液迴路管、穿刺針
+  id: dialysis_consumables
+  name: 人工腎臟、血液迴路管及穿刺針
   period: '2025'
   revenue_share_pct: 14.3
 - evidence_ids:
   - e02
-  id: seg_dialysis_drugs
-  name: 紅血球生成素、藥水、藥粉
+  id: dialysis_drugs
+  name: 紅血球生成素、藥水及藥粉
   period: '2025'
   revenue_share_pct: 10.6
-- evidence_ids:
-  - e03
-  id: seg_aesthetic_consumables
-  name: 醫學美容耗材及零件
-  period: '2025'
-  revenue_share_pct: 8.8
-- evidence_ids:
-  - e03
-  id: seg_beauty_services
-  name: 生活美容產品及療程服務
-  period: '2025'
-  revenue_share_pct: 4.4
-- evidence_ids:
-  - e03
-  id: seg_medical_equipment
-  name: 醫療設備
-  period: '2025'
-  revenue_share_pct: 3.6
-- evidence_ids:
-  - e03
-  id: seg_blood_ostomy
-  name: 血袋及傷造口產品
-  period: '2025'
-  revenue_share_pct: 2.6
-- evidence_ids:
-  - e04
-  id: seg_aesthetic_equipment
-  name: 醫學美容設備
-  period: '2025'
-  revenue_share_pct: 2.4
-- evidence_ids:
-  - e04
-  id: seg_appliances
-  name: 家電產品
-  period: '2025'
-  revenue_share_pct: 1.9
-- evidence_ids:
-  - e04
-  id: seg_other
-  name: 其他
-  period: '2025'
-  revenue_share_pct: 7.3
 relations:
+  customers:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 採購佳醫代理的Medtronic外科耗材，再配送醫療院所
+    details:
+    - 採購佳醫代理的Medtronic外科耗材，再配送醫療院所
+    edge: ee7ed8b6d146a
+    evidence_level: primary
+    id: org.集康國際股份有限公司
+    name: 集康國際股份有限公司
+    ranking_basis: disclosed
+    share_basis: revenue
+    share_pct: 33
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 採購血液透析相關產品
+    details:
+    - 採購血液透析相關產品
+    edge: ecc126023bfb3
+    evidence_level: primary
+    id: org.excelsior-renal-service-co-limited
+    name: Excelsior Renal Service Co., Limited
+    ranking_basis: disclosed
+    share_basis: revenue
+    share_pct: 10
+    weight: 1
   subsidiaries:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 醫學美容器材與耗材子公司
+    detail: 醫學美容子公司
     details:
-    - 醫學美容器材與耗材子公司
+    - 醫學美容子公司
     - 母公司
     edge: e638e7bf3b0ca
     evidence_level: primary
@@ -115,9 +102,9 @@ relations:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 藥品銷售及物流子公司
+    detail: 藥品銷售與物流子公司
     details:
-    - 藥品銷售及物流子公司
+    - 藥品銷售與物流子公司
     - 母公司
     edge: ebac679f4ab06
     evidence_level: primary
@@ -130,12 +117,26 @@ relations:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 長期照顧及醫療服務子公司
+    detail: 馬來西亞醫療器材製造間接子公司
     details:
-    - 長期照顧及醫療服務子公司
-    edge: e5612541905f1
+    - 馬來西亞醫療器材製造間接子公司
+    edge: ebb6374469df1
     evidence_level: primary
-    id: org.abl-healthcare
+    id: org.renal-laboratories-sdn-bhd
+    name: Renal Laboratories Sdn. Bhd.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-05-29'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 取得長期照顧事業控制力並納入合併
+    details:
+    - 取得長期照顧事業控制力並納入合併
+    edge: e5423ba54e25f
+    evidence_level: primary
+    id: org.佳醫創照健康股份有限公司
     name: 佳醫創照健康股份有限公司
     ranking_basis: unranked
     share_basis: null
@@ -144,99 +145,196 @@ relations:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 醫療相關資產與不動產子公司
+    detail: 資產管理子公司
     details:
-    - 醫療相關資產與不動產子公司
-    edge: ed1f09aad08ab
+    - 資產管理子公司
+    edge: ef425c9f5c791
     evidence_level: primary
-    id: org.excelsior-asset-management
+    id: org.佳醫資產管理事業股份有限公司
     name: 佳醫資產管理事業股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
+  suppliers:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 醫療產品進貨
+    details:
+    - 醫療產品進貨
+    edge: ed6e0d176c5dc
+    evidence_level: primary
+    id: org.美敦力醫療產品股份有限公司
+    name: 美敦力醫療產品股份有限公司
+    ranking_basis: disclosed
+    share_basis: purchases
+    share_pct: 36
+    weight: 1
+  transactions:
+  - amount: 新台幣65,076千元
+    as_of: '2024-07-01'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司曜亞認購曜勝現金增資
+    details:
+    - 子公司曜亞認購曜勝現金增資
+    edge: e1246a6f81278
+    event_date: '2024-04-24'
+    events:
+    - amount: 新台幣65,076千元
+      detail: 子公司曜亞認購曜勝現金增資
+      event_date: '2024-04-24'
+    evidence_level: primary
+    id: org.曜勝生技股份有限公司
+    name: 曜勝生技股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣159,043千元
+    as_of: '2024-05-20'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 出售150萬股曜亞普通股予集康
+    details:
+    - 出售150萬股曜亞普通股予集康
+    edge: ef027061fd572
+    event_date: '2024-05-20'
+    events:
+    - amount: 新台幣159,043千元
+      detail: 出售150萬股曜亞普通股予集康
+      event_date: '2024-05-20'
+    evidence_level: primary
+    id: org.集康國際股份有限公司
+    name: 集康國際股份有限公司
+    ranking_basis: unranked
+    role: seller
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 各公私立醫療院所及獨立經營的血液透析中心，未逐一具名。
+- 醫學美容設備耗材之醫院、診所及藥局客戶，未逐一具名。
+- 藥品銷售之醫療院所及藥局客戶，未逐一具名。
 website: www.excelsiormedical.com.tw
 tax_id: '22854522'
 incorporated: '1988-03-15'
 listed: '2007-12-31'
-as_of: '2026-10-18'
+as_of: '2026-10-28'
 confidence: ai_cross_checked
 has_research: true
 evidence:
   tw.4104#e01:
-    locator: 公司介紹及開創新紀元
-    published_date: null
-    publisher: 佳醫健康事業股份有限公司
-    quote_check: found
-    title: 關於佳醫
-    url: https://www.excelsiormedical.com.tw/about/about-excelsior-medical/
-  tw.4104#e02:
-    locator: 第78頁，一、業務內容，合併公司主要業務內容其營業比重；114年度欄
-    published_date: null
-    publisher: 佳醫健康事業股份有限公司
-    quote_check: found
-    title: 佳醫健康事業股份有限公司114年度年報
-    url: https://www.excelsiormedical.com.tw/wp-content/uploads/2026/06/股務-115年股東會年報中.pdf
-  tw.4104#e03:
-    locator: 第78頁，合併公司主要業務內容其營業比重；114年度欄
-    published_date: null
-    publisher: 佳醫健康事業股份有限公司
-    quote_check: found
-    title: 佳醫健康事業股份有限公司114年度年報
-    url: https://www.excelsiormedical.com.tw/wp-content/uploads/2026/06/股務-115年股東會年報中.pdf
-  tw.4104#e04:
-    locator: 第78頁，合併公司主要業務內容其營業比重；114年度欄
-    published_date: null
-    publisher: 佳醫健康事業股份有限公司
-    quote_check: found
-    title: 佳醫健康事業股份有限公司114年度年報
-    url: https://www.excelsiormedical.com.tw/wp-content/uploads/2026/06/股務-115年股東會年報中.pdf
-  tw.4104#e05:
-    locator: 第78頁，主要業務及目前商品服務項目
-    published_date: null
-    publisher: 佳醫健康事業股份有限公司
-    quote_check: found
-    title: 佳醫健康事業股份有限公司114年度年報
-    url: https://www.excelsiormedical.com.tw/wp-content/uploads/2026/06/股務-115年股東會年報中.pdf
-  tw.4104#e06:
-    locator: 第10頁，附註四（二）列入合併財務報告之子公司，曜亞列；115.6.30欄
-    published_date: '2026-08-07'
-    publisher: 佳醫健康事業股份有限公司
-    quote_check: found
-    title: 115年第二季合併財務報告
-    url: https://www.excelsiormedical.com.tw/wp-content/uploads/2026/10/股務_115第二季合併財務報告.pdf
-  tw.4104#e07:
-    locator: 第10頁，附註四（二）列入合併財務報告之子公司，久裕列；115.6.30欄
-    published_date: '2026-08-07'
-    publisher: 佳醫健康事業股份有限公司
-    quote_check: found
-    title: 115年第二季合併財務報告
-    url: https://www.excelsiormedical.com.tw/wp-content/uploads/2026/10/股務_115第二季合併財務報告.pdf
-  tw.4104#e08:
-    locator: 第10頁，附註四（二）列入合併財務報告之子公司，佳醫資產公司列；115.6.30欄
-    published_date: '2026-08-07'
-    publisher: 佳醫健康事業股份有限公司
-    quote_check: found
-    title: 115年第二季合併財務報告
-    url: https://www.excelsiormedical.com.tw/wp-content/uploads/2026/10/股務_115第二季合併財務報告.pdf
-  tw.4104#e09:
-    locator: 第10頁，附註四（二）列入合併財務報告之子公司，佳醫創照列；115.6.30欄
-    published_date: '2026-08-07'
-    publisher: 佳醫健康事業股份有限公司
-    quote_check: found
-    title: 115年第二季合併財務報告
-    url: https://www.excelsiormedical.com.tw/wp-content/uploads/2026/10/股務_115第二季合併財務報告.pdf
-  tw.4104#e10:
-    locator: 第6張投影片，轉投資概況註解
+    locator: 第4頁，營收概況
     published_date: '2026-09-15'
     publisher: 佳醫健康事業股份有限公司
     quote_check: found
-    title: 法人說明會－2026年9月15日
-    url: https://www.excelsiormedical.com.tw/wp-content/uploads/2026/09/３。佳醫法說會-2026Q2.pdf
-  tw.4104#e11:
-    locator: 第12頁，附註四（二）子公司表註1
-    published_date: '2026-08-07'
+    title: 佳醫2026年9月法人說明會
+    url: https://www.excelsiormedical.com.tw/wp-content/uploads/2026/09/%EF%BC%93%E3%80%82%E4%BD%B3%E9%86%AB%E6%B3%95%E8%AA%AA%E6%9C%83-2026Q2.pdf
+  tw.4104#e02:
+    locator: 印刷第78頁，合併公司主要業務內容其營業比重；單位為新台幣仟元
+    published_date: null
     publisher: 佳醫健康事業股份有限公司
     quote_check: found
-    title: 115年第二季合併財務報告
-    url: https://www.excelsiormedical.com.tw/wp-content/uploads/2026/10/股務_115第二季合併財務報告.pdf
+    title: 115年股東會年報（2025年度）
+    url: https://www.excelsiormedical.com.tw/wp-content/uploads/2026/06/%E8%82%A1%E5%8B%99-115%E5%B9%B4%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1%E4%B8%AD.pdf
+  tw.4104#e03:
+    locator: 印刷第97頁，主要進貨供應商表，114年度欄；金額為新台幣仟元，36為進貨淨額比率
+    published_date: null
+    publisher: 佳醫健康事業股份有限公司
+    quote_check: found
+    title: 115年股東會年報（2025年度）
+    url: https://www.excelsiormedical.com.tw/wp-content/uploads/2026/06/%E8%82%A1%E5%8B%99-115%E5%B9%B4%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1%E4%B8%AD.pdf
+  tw.4104#e04:
+    locator: 印刷第96頁主要銷貨客戶表及第111頁銷貨集中風險說明；集康114年度比率33%
+    published_date: null
+    publisher: 佳醫健康事業股份有限公司
+    quote_check: found
+    title: 115年股東會年報（2025年度）
+    url: https://www.excelsiormedical.com.tw/wp-content/uploads/2026/06/%E8%82%A1%E5%8B%99-115%E5%B9%B4%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1%E4%B8%AD.pdf
+  tw.4104#e05:
+    locator: 印刷第96頁主要銷貨客戶表及第111頁銷貨集中風險說明；Excelsior Renal Service之114年度比率10%
+    published_date: null
+    publisher: 佳醫健康事業股份有限公司
+    quote_check: found
+    title: 115年股東會年報（2025年度）
+    url: https://www.excelsiormedical.com.tw/wp-content/uploads/2026/06/%E8%82%A1%E5%8B%99-115%E5%B9%B4%E8%82%A1%E6%9D%B1%E6%9C%83%E5%B9%B4%E5%A0%B1%E4%B8%AD.pdf
+  tw.4104#e06:
+    locator: 印刷第10頁，附註四(二)1列入合併財務報告之子公司表，投資公司及子公司名稱欄
+    published_date: null
+    publisher: 佳醫健康事業股份有限公司
+    quote_check: found
+    title: 115年第2季合併財務報告
+    url: https://www.excelsiormedical.com.tw/wp-content/uploads/2026/10/%E8%82%A1%E5%8B%99_115%E7%AC%AC%E4%BA%8C%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf
+  tw.4104#e07:
+    locator: 印刷第10頁，附註四(二)1子公司表，久裕列；投資公司同上為本公司
+    published_date: null
+    publisher: 佳醫健康事業股份有限公司
+    quote_check: found
+    title: 115年第2季合併財務報告
+    url: https://www.excelsiormedical.com.tw/wp-content/uploads/2026/10/%E8%82%A1%E5%8B%99_115%E7%AC%AC%E4%BA%8C%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf
+  tw.4104#e08:
+    locator: 印刷第10頁，附註四(二)1子公司表，佳醫資產列；投資公司同上為本公司
+    published_date: null
+    publisher: 佳醫健康事業股份有限公司
+    quote_check: found
+    title: 115年第2季合併財務報告
+    url: https://www.excelsiormedical.com.tw/wp-content/uploads/2026/10/%E8%82%A1%E5%8B%99_115%E7%AC%AC%E4%BA%8C%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf
+  tw.4104#e09:
+    locator: 印刷第11頁，附註四(二)1子公司表；投資公司為Excelsior Investment (Malaysia) Co., Ltd.
+    published_date: null
+    publisher: 佳醫健康事業股份有限公司
+    quote_check: found
+    title: 115年第2季合併財務報告
+    url: https://www.excelsiormedical.com.tw/wp-content/uploads/2026/10/%E8%82%A1%E5%8B%99_115%E7%AC%AC%E4%BA%8C%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf
+  tw.4104#e10:
+    locator: 印刷第12頁，附註四(二)1註3
+    published_date: null
+    publisher: 佳醫健康事業股份有限公司
+    quote_check: found
+    title: 115年第2季合併財務報告
+    url: https://www.excelsiormedical.com.tw/wp-content/uploads/2026/10/%E8%82%A1%E5%8B%99_115%E7%AC%AC%E4%BA%8C%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf
+  tw.4104#e11:
+    locator: 第4頁，營收概況之事業分類
+    published_date: '2026-09-15'
+    publisher: 佳醫健康事業股份有限公司
+    quote_check: found
+    title: 佳醫2026年9月法人說明會
+    url: https://www.excelsiormedical.com.tw/wp-content/uploads/2026/09/%EF%BC%93%E3%80%82%E4%BD%B3%E9%86%AB%E6%B3%95%E8%AA%AA%E6%9C%83-2026Q2.pdf
+  tw.4104#e12:
+    locator: About Us，第二段首句
+    published_date: null
+    publisher: Renal Laboratories
+    quote_check: found
+    title: About Us – Renal Laboratories
+    url: https://www.excelsior.com.my/renallab/index.php/about-us/
+  tw.4104#e13:
+    locator: 印刷第13頁，附註四(三)2註3
+    published_date: '2025-03-07'
+    publisher: 佳醫健康事業股份有限公司
+    quote_check: found
+    title: 113年度合併財務報告
+    url: https://www.excelsiormedical.com.tw/wp-content/uploads/2025/08/%E8%82%A1%E5%8B%99-113%E5%90%88%E4%BD%B5%E4%B8%AD.pdf
+  tw.4104#e14:
+    locator: 印刷第52頁，附註七5(4)處分金融資產；單位為新台幣千元
+    published_date: '2025-03-07'
+    publisher: 佳醫健康事業股份有限公司
+    quote_check: found
+    title: 113年度個體財務報告
+    url: https://www.excelsiormedical.com.tw/wp-content/uploads/2025/08/%E8%82%A1%E5%8B%99-113%E5%80%8B%E9%AB%94%E4%B8%AD.pdf
+  tw.4104#e15:
+    locator: 印刷第13頁，附註四(三)2註6
+    published_date: '2025-03-07'
+    publisher: 佳醫健康事業股份有限公司
+    quote_check: found
+    title: 113年度合併財務報告
+    url: https://www.excelsiormedical.com.tw/wp-content/uploads/2025/08/%E8%82%A1%E5%8B%99-113%E5%90%88%E4%BD%B5%E4%B8%AD.pdf
+  tw.4104#e16:
+    locator: 第6頁，轉投資概況表下註
+    published_date: '2026-09-15'
+    publisher: 佳醫健康事業股份有限公司
+    quote_check: found
+    title: 佳醫2026年9月法人說明會
+    url: https://www.excelsiormedical.com.tw/wp-content/uploads/2026/09/%EF%BC%93%E3%80%82%E4%BD%B3%E9%86%AB%E6%B3%95%E8%AA%AA%E6%9C%83-2026Q2.pdf

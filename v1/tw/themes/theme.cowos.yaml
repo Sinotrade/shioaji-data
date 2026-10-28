@@ -32,6 +32,14 @@ stages:
   tier: downstream
   name_en: ASIC & Chip Design
 members:
+- id: tw.1710
+  stage: materials
+  tier: upstream
+  detail: 支援CoWoS封裝需求的電子應用化學品
+  as_of: '2026-09-22'
+  evidence:
+  - tw.1710#e10
+  confidence: ai_cross_checked
 - id: tw.2330
   stage: manufacturing
   tier: midstream
@@ -100,10 +108,11 @@ members:
 - id: tw.3055
   stage: equipment
   tier: upstream
-  detail: CoWoS覆晶熱壓鍵合設備
-  as_of: '2026-10-15'
+  detail: CoWoS製程覆晶熱壓鍵合設備
+  as_of: '2026-10-27'
   evidence:
-  - tw.3055#e10
+  - tw.3055#e19
+  - tw.3055#e11
   confidence: ai_cross_checked
 - id: tw.3131
   stage: null
@@ -184,14 +193,6 @@ members:
   as_of: '2026-10-13'
   evidence:
   - tw.3583#e8
-  confidence: ai_cross_checked
-- id: tw.3587
-  stage: test
-  tier: midstream
-  detail: CoWoS高功率Latch-Up可靠度測試
-  as_of: '2026-06-04'
-  evidence:
-  - tw.3587#e6
   confidence: ai_cross_checked
 - id: tw.3661
   stage: design
@@ -317,6 +318,14 @@ members:
   evidence:
   - tw.6207#e6
   confidence: ai_cross_checked
+- id: tw.6217
+  stage: test
+  tier: midstream
+  detail: 對應CoWoS測試需求的MEMS探針研發
+  as_of: '2026-09-03'
+  evidence:
+  - tw.6217#e6
+  confidence: ai_cross_checked
 - id: tw.6257
   stage: test
   tier: midstream
@@ -336,8 +345,8 @@ members:
 - id: tw.6438
   stage: equipment
   tier: upstream
-  detail: CoWoS用晶圓傳輸設備開發
-  as_of: '2026-04-15'
+  detail: CoWoS晶圓機器人傳輸技術
+  as_of: '2025-12-31'
   evidence:
   - tw.6438#e7
   confidence: ai_cross_checked
@@ -434,11 +443,10 @@ members:
 - id: tw.6788
   stage: equipment
   tier: upstream
-  detail: 先進封裝微汙染防治設備
-  as_of: 2024-12
+  detail: 先進封裝載具微污染防治設備開發
+  as_of: '2025-12-05'
   evidence:
-  - tw.6788#e5
-  - tw.6788#e6
+  - tw.6788#e8
   confidence: ai_cross_checked
 - id: tw.6937
   stage: equipment
@@ -546,4 +554,4 @@ members:
   - tw.8227#e7
   - tw.8227#e8
   confidence: ai_cross_checked
-as_of: '2026-10-25'
+as_of: '2026-10-27'

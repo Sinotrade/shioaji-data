@@ -18,30 +18,59 @@ industry:
   l3_name: 航空
   l3_name_en: Airlines
 primary_chain_position: not_applicable
-summary_short: 以低成本航空模式提供國際客運及包機服務，客運為主要收入來源。
-summary_long: 台灣虎航採低成本航空模式經營，主要提供旅客運輸及定期、不定期國際包機服務，收入以航空客運為核心。2025年度客運收入占整體營收96.14%，其他收入占3.86%，營收主要來自旅客運輸。公司亦提供貨物及包裹運送，以及機場運務、裝載管制和貨運作業等地勤代理服務。附加服務涵蓋超重行李、訂位手續費、機上銷售及餐點。中華航空股份有限公司為其母公司。
+summary_short: 以低成本航空模式提供國際客運與包機服務，客運為主要營收來源。
+summary_long: 台灣虎航以低成本航空模式經營旅客運輸及定期、不定期國際包機，2025年客運收入占營收96.14%，其他收入占3.86%。中華航空為母公司，亦提供飛機維修服務；國內航油供應商為台灣中油，餐勤與地勤服務供應商包括華膳空廚及桃園航勤。空中巴士於2026年公告台灣虎航簽約訂購四架A321neo，公司亦規劃分別向Avolon與ICBC承租七架及四架A321neo。通路方面，已查得燦星旅及旅天下的包機銷售關係；與台灣樂天信用卡的關係則為聯名卡合作。
 segments:
 - evidence_ids:
-  - e2
-  id: seg_passenger
+  - e1
+  id: passenger
   name: 客運收入
   period: '2025'
   revenue_share_pct: 96.14
 - evidence_ids:
-  - e3
-  id: seg_other
+  - e1
+  id: other
   name: 其他收入
   period: '2025'
   revenue_share_pct: 3.86
 relations:
+  customers:
+  - as_of: '2023-03-10'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 桃園至普吉島航線獨家包機銷售
+    details:
+    - 桃園至普吉島航線獨家包機銷售
+    edge: e6046859b80ed
+    evidence_level: media
+    id: tw.2719
+    name: 燦星旅
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2024-03-22'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 函館及花卷航線包機
+    details:
+    - 函館及花卷航線包機
+    edge: eb7fff5d94de1
+    evidence_level: media
+    id: tw.6961
+    name: 旅天下
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   parents:
-  - as_of: '2025-09-30'
+  - as_of: '2026-03-31'
     confidence: ai_cross_checked
     counterparty_shares: []
     detail: 台灣虎航子公司關係
     details:
     - 台灣虎航子公司關係
-    - 母公司
+    - 母公司與最終控制者
     edge: e66a75c0e99ae
     evidence_level: primary
     id: tw.2610
@@ -50,67 +79,399 @@ relations:
     share_basis: null
     share_pct: null
     weight: 2
+  partners:
+  - as_of: '2026-01-07'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 樂虎聯名信用卡
+    details:
+    - 樂虎聯名信用卡
+    edge: e6a8e845900aa
+    evidence_level: primary
+    id: org.rakuten-card-taiwan
+    name: 台灣樂天信用卡
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: '2026-02-04'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: A321neo客機製造與供應
+    details:
+    - A321neo客機製造與供應
+    edge: e88de2309d240
+    evidence_level: primary
+    id: eu.AIR
+    name: 空中巴士
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 國內航空燃油供應
+    details:
+    - 國內航空燃油供應
+    edge: ecbd2e985fb82
+    evidence_level: primary
+    id: org.cpc
+    name: 台灣中油股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-07-21'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: A320neo機隊GTF發動機
+    details:
+    - A320neo機隊GTF發動機
+    edge: e6737665ce4f8
+    evidence_level: primary
+    id: org.pratt-whitney
+    name: Pratt & Whitney
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 地勤服務
+    details:
+    - 地勤服務
+    edge: e64cc77c7710a
+    evidence_level: primary
+    id: org.taiwan-airport-services
+    name: 臺灣航勤股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 飛機維修服務
+    details:
+    - 飛機維修服務
+    edge: e8a2fef12a5bd
+    evidence_level: primary
+    id: org.tameco
+    name: 臺灣飛機維修股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 地勤服務
+    details:
+    - 地勤服務
+    edge: e597bbbef4cbb
+    evidence_level: primary
+    id: org.taoyuan-international-airport-services
+    name: 桃園航勤股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 飛機維修服務
+    details:
+    - 飛機維修服務
+    edge: e54b5a2fbcfb3
+    evidence_level: primary
+    id: tw.2610
+    name: 華航
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  transactions:
+  - amount: null
+    as_of: '2026-02-04'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 簽約採購四架A321neo
+    details:
+    - 簽約採購四架A321neo
+    edge: e330005b565c7
+    event_date: '2026-02-04'
+    events:
+    - amount: null
+      detail: 簽約採購四架A321neo
+      event_date: '2026-02-04'
+    evidence_level: primary
+    id: eu.AIR
+    name: 空中巴士
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 租用兩部備用發動機
+    details:
+    - 租用兩部備用發動機
+    edge: e911cca0db127
+    event_date: null
+    events:
+    - amount: null
+      detail: 租用兩部備用發動機
+      event_date: null
+    evidence_level: primary
+    id: org.aviation-capital-group
+    name: Aviation Capital Group
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 承租七架A321neo及取得使用權資產
+    details:
+    - 承租七架A321neo及取得使用權資產
+    edge: ebac48c1c8e5b
+    event_date: '2025-12-03'
+    events:
+    - amount: null
+      detail: 承租七架A321neo及取得使用權資產
+      event_date: '2025-12-03'
+    evidence_level: primary
+    id: org.avolon-aerospace-leasing
+    name: Avolon Aerospace Leasing Limited
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: null
+    as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 承租四架A321neo及取得使用權資產
+    details:
+    - 承租四架A321neo及取得使用權資產
+    - 租用兩部備用發動機
+    edge: ed055f806d81c
+    event_date: '2025-12-03'
+    events:
+    - amount: null
+      detail: 承租四架A321neo及取得使用權資產
+      event_date: '2025-12-03'
+    - amount: null
+      detail: 租用兩部備用發動機
+      event_date: null
+    evidence_level: primary
+    id: org.icbc-aviation-leasing
+    name: ICBC Aviation Leasing Company Limited
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 使用權資產總額約美金758萬元
+    as_of: '2026-03-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 一架A320ceo延租
+    details:
+    - 一架A320ceo延租
+    edge: eb89e06cb19e1
+    event_date: '2025-10-31'
+    events:
+    - amount: 使用權資產總額約美金758萬元
+      detail: 一架A320ceo延租
+      event_date: '2025-10-31'
+    evidence_level: primary
+    id: org.smbc-aviation-capital
+    name: SMBC Aviation Capital Limited
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 使用權資產金額約美金1,811千元
+    as_of: '2026-08-13'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 租賃兩具V2527-A5備份發動機
+    details:
+    - 租賃兩具V2527-A5備份發動機
+    edge: e56a60b051ea0
+    event_date: '2026-08-13'
+    events:
+    - amount: 使用權資產金額約美金1,811千元
+      detail: 租賃兩具V2527-A5備份發動機
+      event_date: '2026-08-13'
+    evidence_level: primary
+    id: org.umb-bank
+    name: UMB Bank N.A
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 海外各航點當地油品供應商及航勤服務公司：未逐一具名。
+- 雄獅旅行社本體是否直接購買或包銷機位：已找到的明確包機交易主體為旗下旅天下。
 website: https://www.tigerairtw.com
 tax_id: '54381049'
 incorporated: '2014-04-21'
 listed: '2023-08-15'
-as_of: '2026-10-15'
+as_of: '2026-10-28'
 confidence: ai_cross_checked
 has_research: true
 evidence:
   tw.6757#e1:
-    locator: 第10頁，市場與營運概況：市場定位
-    published_date: '2026-03-17'
+    locator: 印刷頁62，主要服務之營業比重；欄序為113年度、114年度
+    published_date: '2026-03-31'
     publisher: 台灣虎航股份有限公司
     quote_check: found
-    title: 台灣虎航2026年第一季法人說明會
-    url: https://strapi-assets.tigerairtw.com/6757_R2_V7_d3d677cd89.pdf
-  tw.6757#e2:
-    locator: 原年報第62頁，目前主要服務之營業比重；114年度欄
-    published_date: '2026-05-08'
-    publisher: FinancialFilings
+    title: 台灣虎航114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52623/2026/RNS/52623_rns_2026-06-10_6d076ec1-aaf6-4088-a78a-9b8b1e52ecc7.pdf
+  tw.6757#e10:
+    locator: 印刷頁30，關係人進銷貨表；金額單位為新台幣千元
+    published_date: '2026-05-14'
+    publisher: 台灣虎航股份有限公司
     quote_check: unreachable
-    title: 台灣虎航114年度年報（轉載全文）
-    url: https://financialfilings.com/filings/ttw-6757/annual-report/2026/48026805/
-  tw.6757#e3:
-    locator: 原年報第62頁，目前主要服務之營業比重；114年度欄
-    published_date: '2026-05-08'
-    publisher: FinancialFilings
+    title: 台灣虎航115年第一季財務報告
+    url: https://financialfilings.com/filings/ttw-6757/interim-quarterly-report/2026/46368401/
+  tw.6757#e11:
+    locator: 印刷頁27，關係人營業成本說明
+    published_date: '2026-05-14'
+    publisher: 台灣虎航股份有限公司
     quote_check: unreachable
-    title: 台灣虎航114年度年報（轉載全文）
-    url: https://financialfilings.com/filings/ttw-6757/annual-report/2026/48026805/
-  tw.6757#e4:
-    locator: 第64頁，目前之服務項目第1項
-    published_date: '2025-04-30'
+    title: 台灣虎航115年第一季財務報告
+    url: https://financialfilings.com/filings/ttw-6757/interim-quarterly-report/2026/46368401/
+  tw.6757#e12:
+    locator: 印刷頁30，關係人進銷貨表；金額單位為新台幣千元
+    published_date: '2026-05-14'
     publisher: 台灣虎航股份有限公司
-    quote_check: found
-    title: 台灣虎航113年度年報
-    url: https://strapi-assets.tigerairtw.com/_f3cdb959d3.pdf
-  tw.6757#e5:
-    locator: 原年報第62頁，目前之服務項目第2項
-    published_date: '2026-05-08'
-    publisher: FinancialFilings
     quote_check: unreachable
-    title: 台灣虎航114年度年報（轉載全文）
-    url: https://financialfilings.com/filings/ttw-6757/annual-report/2026/48026805/
-  tw.6757#e6:
-    locator: 第64頁，目前之服務項目第3項；114年度年報第62頁亦列相同服務
-    published_date: '2025-04-30'
+    title: 台灣虎航115年第一季財務報告
+    url: https://financialfilings.com/filings/ttw-6757/interim-quarterly-report/2026/46368401/
+  tw.6757#e13:
+    locator: 印刷頁29，附註九（三）
+    published_date: '2026-05-14'
     publisher: 台灣虎航股份有限公司
+    quote_check: unreachable
+    title: 台灣虎航115年第一季財務報告
+    url: https://financialfilings.com/filings/ttw-6757/interim-quarterly-report/2026/46368401/
+  tw.6757#e14:
+    locator: 重大訊息第5、6項
+    published_date: '2025-10-31'
+    publisher: 公開資訊觀測站重大訊息，鉅亨網刊載
     quote_check: found
-    title: 台灣虎航113年度年報
-    url: https://strapi-assets.tigerairtw.com/_f3cdb959d3.pdf
-  tw.6757#e7:
-    locator: 第19頁，客運收入分區域表下方註解
-    published_date: '2026-03-17'
+    title: 台灣虎航：公告本公司1架A320-232(A320ceo)租機延租之相關訊息
+    url: https://news.cnyes.com/news/id/6213305
+  tw.6757#e15:
+    locator: 印刷頁15，使用權資產
+    published_date: '2026-05-14'
     publisher: 台灣虎航股份有限公司
+    quote_check: unreachable
+    title: 台灣虎航115年第一季財務報告
+    url: https://financialfilings.com/filings/ttw-6757/interim-quarterly-report/2026/46368401/
+  tw.6757#e16:
+    locator: 印刷頁14，使用權資產
+    published_date: '2026-05-14'
+    publisher: 台灣虎航股份有限公司
+    quote_check: unreachable
+    title: 台灣虎航115年第一季財務報告
+    url: https://financialfilings.com/filings/ttw-6757/interim-quarterly-report/2026/46368401/
+  tw.6757#e17:
+    locator: 重大訊息第5、6項；標的物見第1項
+    published_date: '2026-08-13'
+    publisher: 公開資訊觀測站重大訊息，MoneyDJ刊載
     quote_check: found
-    title: 台灣虎航2026年第一季法人說明會
-    url: https://strapi-assets.tigerairtw.com/6757_R2_V7_d3d677cd89.pdf
-  tw.6757#e8:
-    locator: 第28頁，附註七、關係人交易
+    title: 台灣虎航公告租賃2具V2527-A5備份發動機
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=873a2b91-387a-4362-a07a-76f667e87af2
+  tw.6757#e18:
+    locator: 正文第一段
+    published_date: '2023-03-10'
+    publisher: 中央通訊社
+    quote_check: found
+    title: 虎航直飛普吉島 攜手燦星旅攻疫後商機
+    url: https://www.cna.com.tw/news/afe/202303100225.aspx
+  tw.6757#e19:
+    locator: 年費回饋活動
     published_date: null
+    publisher: 台灣樂天信用卡
+    quote_check: found
+    title: 樂天台灣虎航聯名卡
+    url: https://www.card.rakuten.com.tw/corp/ads/15.xhtml
+  tw.6757#e2:
+    locator: 印刷頁62，目前之服務項目
+    published_date: '2026-03-31'
     publisher: 台灣虎航股份有限公司
     quote_check: found
-    title: 台灣虎航114年及113年第三季財務報告
-    url: https://strapi-assets.tigerairtw.com/2025_Q3_52a4f39d00.pdf
+    title: 台灣虎航114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52623/2026/RNS/52623_rns_2026-06-10_6d076ec1-aaf6-4088-a78a-9b8b1e52ecc7.pdf
+  tw.6757#e20:
+    locator: 印刷頁4，115年度營業計畫概要
+    published_date: '2026-03-31'
+    publisher: 台灣虎航股份有限公司
+    quote_check: found
+    title: 台灣虎航114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52623/2026/RNS/52623_rns_2026-06-10_6d076ec1-aaf6-4088-a78a-9b8b1e52ecc7.pdf
+  tw.6757#e21:
+    locator: 正文第一段，旅天下董事長說明包機業務
+    published_date: '2024-03-22'
+    publisher: 自由時報
+    quote_check: found
+    title: 出國旺 團費漲 旅天下營運動能續強
+    url: https://ec.ltn.com.tw/article/paper/1636911
+  tw.6757#e3:
+    locator: 印刷頁26，附註七（一）母公司與最終控制者
+    published_date: '2026-05-14'
+    publisher: 台灣虎航股份有限公司
+    quote_check: unreachable
+    title: 台灣虎航115年第一季財務報告
+    url: https://financialfilings.com/filings/ttw-6757/interim-quarterly-report/2026/46368401/
+  tw.6757#e4:
+    locator: 印刷頁27，附註七（三）營業成本
+    published_date: '2026-05-14'
+    publisher: 台灣虎航股份有限公司
+    quote_check: unreachable
+    title: 台灣虎航115年第一季財務報告
+    url: https://financialfilings.com/filings/ttw-6757/interim-quarterly-report/2026/46368401/
+  tw.6757#e5:
+    locator: 印刷頁81，重要契約
+    published_date: '2026-03-31'
+    publisher: 台灣虎航股份有限公司
+    quote_check: found
+    title: 台灣虎航114年度年報
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52623/2026/RNS/52623_rns_2026-06-10_6d076ec1-aaf6-4088-a78a-9b8b1e52ecc7.pdf
+  tw.6757#e6:
+    locator: 正文第一段，台灣虎航現役機隊引擎
+    published_date: '2026-07-21'
+    publisher: RTX
+    quote_check: found
+    title: RTX's Pratt & Whitney GTF engines to power 15 additional Tigerair Taiwan A320neo family aircraft
+    url: https://www.rtx.com/news/news-center/2026/07/21/rtxs-pratt-whitney-gtf-engines-to-power-15-additional-tigerair-taiwan-a320neo
+  tw.6757#e7:
+    locator: 新聞稿第一段
+    published_date: '2026-02-04'
+    publisher: Airbus
+    quote_check: not_found
+    title: Tigerair Taiwan orders four Airbus A321neo
+    url: https://www.airbus.com/en/newsroom/press-releases/2026-02-tigerair-taiwan-orders-four-airbus-a321neo
+  tw.6757#e8:
+    locator: 印刷頁35，關係人維修服務契約
+    published_date: '2026-10-13'
+    publisher: 台灣虎航股份有限公司
+    quote_check: found
+    title: Tigerair Taiwan Financial Statements for the Six Months Ended June 30, 2026 and 2025
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52623/2026/RNS/52623_rns_2026-10-13_d043b184-03fa-419f-a3a7-c41271cc760f.pdf

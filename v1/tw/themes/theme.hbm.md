@@ -4,17 +4,16 @@
 
 - 英文：HBM (High Bandwidth Memory)
 - 別名：HBM
-- 成員：15 家
+- 成員：14 家
 - 完整成員與證據見同目錄同名 YAML，或 themes.json
 
-## 設備與材料（上游，7 家）
+## 設備與材料（上游，6 家）
 
 | 代號 | 名稱 | 說明 |
 | --- | --- | --- |
+| [1710](../companies/1710.md) | 東聯 | HBM應用化學品與CMP配方布局 |
 | [2467](../companies/2467.md) | 志聖 | HBM封裝自動烘烤設備 |
-| [3055](../companies/3055.md) | 蔚華科 | HBM相關TSV製程檢測設備 |
 | [3167](../companies/3167.md) | 大量 | HBM進料檢查AOI設備 |
-| [3305](../companies/3305.md) | 昇貿 | HBM三維堆疊製程回焊爐銷售代理 |
 | [3532](../companies/3532.md) | 台勝科 | HBM相關晶圓及貼合用carrier wafer |
 | [5434](../companies/5434.md) | 崇越 | HBM先進封裝材料布局 |
 | [6223](../companies/6223.md) | 旺矽 | 高頻寬記憶體測試技術 |

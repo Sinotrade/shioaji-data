@@ -64,6 +64,10 @@ themes:
   theme: theme.mini_led
   tier: upstream
 - also: []
+  stage: equipment
+  theme: theme.cowos
+  tier: upstream
+- also: []
   stage: devices
   theme: theme.silicon_photonics
   tier: midstream
@@ -71,10 +75,6 @@ themes:
   stage: packaging
   theme: theme.cpo
   tier: midstream
-- also: []
-  stage: equipment
-  theme: theme.cowos
-  tier: upstream
 relations:
   customers:
   - as_of: '2020-05-07'

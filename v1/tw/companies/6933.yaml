@@ -26,29 +26,29 @@ chain_stage:
   stage_name: 主機板與系統組裝
   tier: downstream
 primary_chain_position: midstream
-summary_short: 集團以AI高效能運算伺服器、液冷整機櫃及儲存系統解決方案取得營收。
-summary_long: 艾瑪斯科技控股集團提供企業級人工智慧與高效能運算解決方案，業務涵蓋伺服器、儲存設備及液冷整機櫃的設計、製造與系統整合。2025年人工智慧高效能運算解決方案占營收58.89%，液冷整機櫃占30.28%，高密度伺服器與儲存方案占6.75%，其他占4.08%。集團位於伺服器產業中游，依需求整合運算、儲存與散熱設備。產品包含空冷及液冷GPU機櫃，並提供資料中心的機櫃、電力、流體分配與熱交換設備整合。主要營運子公司包括美國AMAX Engineering Corporation及蘇州超集信息科技有限公司。
+summary_short: 透過營運子公司提供客製化AI伺服器、液冷機櫃與儲存系統。
+summary_long: AMAX-KY透過旗下營運子公司，提供人工智慧與高效能運算、液冷整機櫃，以及高密度伺服器與儲存解決方案。2025年三項業務營收占比分別為58.89%、30.28%及6.75%，其他業務占4.08%。集團業務涵蓋代工生產與系統整合，官方列出的上游通路商包括Ingram Micro及Synnex。美國營運子公司為NVIDIA DGX菁英合作夥伴，提供相關系統部署服務；2023年具名報導亦確認集團為ASML提供伺服器液冷解決方案。2026年美國子公司啟用HostMax，將服務延伸至短期託管與部署。
 segments:
 - evidence_ids:
-  - e2
+  - e01
   id: seg_ai
   name: 人工智慧高效能運算解決方案
   period: '2025'
   revenue_share_pct: 58.89
 - evidence_ids:
-  - e2
+  - e01
   id: seg_liquid
   name: 液冷整機櫃解決方案
   period: '2025'
   revenue_share_pct: 30.28
 - evidence_ids:
-  - e2
+  - e01
   id: seg_storage
-  name: 高密度伺服器與儲存解決方案
+  name: 高密度伺服器和存儲解決方案
   period: '2025'
   revenue_share_pct: 6.75
 - evidence_ids:
-  - e2
+  - e01
   id: seg_other
   name: 其他
   period: '2025'
@@ -60,25 +60,93 @@ themes:
   theme: theme.ai_server
   tier: downstream
 - also: []
-  stage: it
+  stage: operation
   theme: theme.data_center
-  tier: midstream
+  tier: downstream
 - also: []
   stage: system
   theme: theme.liquid_cooling
   tier: downstream
-- also: []
-  stage: system
-  theme: theme.nvidia
-  tier: downstream
 relations:
-  subsidiaries:
-  - as_of: '2025-12-31'
+  customers:
+  - as_of: '2023-10-20'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 美國主要營運子公司
+    detail: 客製化伺服器液冷解決方案
     details:
-    - 美國主要營運子公司
+    - 客製化伺服器液冷解決方案
+    edge: e0eff3504bdcb
+    evidence_level: media
+    id: us.ASML
+    name: ASML Holding N.V.
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  partners:
+  - as_of: '2025-06-05'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 伺服器技術交流
+    details:
+    - 伺服器技術交流
+    edge: efcc5052e71ea
+    evidence_level: media
+    id: tw.2317
+    name: 鴻海
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: AMD菁英夥伴紀錄
+    details:
+    - AMD菁英夥伴紀錄
+    edge: eecfe04844d7e
+    evidence_level: primary
+    id: us.AMD
+    name: AMD
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: OEM通路合作紀錄
+    details:
+    - OEM通路合作紀錄
+    edge: e2c5b45dcb2e4
+    evidence_level: primary
+    id: us.INTC
+    name: Intel
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: DGX系統合作與部署服務
+    details:
+    - DGX系統合作與部署服務
+    edge: e6f47c47678fb
+    evidence_level: primary
+    id: us.NVDA
+    name: NVIDIA
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  subsidiaries:
+  - as_of: '2026-10-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 美國全資營運子公司
+    details:
+    - 美國全資營運子公司
     edge: e3fbd0f808e42
     evidence_level: primary
     id: org.amax-engineering-corporation
@@ -87,82 +155,186 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2025-12-31'
+  - as_of: '2026-10-28'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 中國主要營運子公司
+    detail: 愛爾蘭間接全資子公司
     details:
-    - 中國主要營運子公司
-    edge: ea47c99b60e84
+    - 愛爾蘭間接全資子公司
+    edge: e163b546708f6
     evidence_level: primary
-    id: org.suzhou-supercluster-information-technology
+    id: org.amax-information-technologies-ireland
+    name: AMAX Information Technologies Limited
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 中國間接全資子公司
+    details:
+    - 中國間接全資子公司
+    edge: eab26d76e4aed
+    evidence_level: primary
+    id: org.amax-suzhou
     name: 蘇州超集信息科技有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
+  - as_of: '2026-10-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 台灣間接全資子公司
+    details:
+    - 台灣間接全資子公司
+    edge: e531a503d7de7
+    evidence_level: primary
+    id: org.amax-taiwan
+    name: 艾瑪斯科技股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  suppliers:
+  - as_of: '2026-10-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 電子零組件通路供應
+    details:
+    - 電子零組件通路供應
+    edge: e16f6484fdeb0
+    evidence_level: primary
+    id: tw.2347
+    name: 聯強
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-28'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 電子零組件通路供應
+    details:
+    - 電子零組件通路供應
+    edge: e5d00598dcdef
+    evidence_level: primary
+    id: us.INGM
+    name: Ingram Micro
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 年報以AG、AH、AN等代號揭露的供應商，未與具名公司配對。
+- 年報以AL、AB等代號揭露的客戶，未推定為ASML或其他具名公司。
+- 官方泛稱的新創人工智慧晶片公司及大數據設備製造商，未猜測其名稱。
+- 記憶體及其他電子零組件的實際交易法人，未完整揭露。
 website: https://www.amax.tw/
 tax_id: '92778956'
 incorporated: '2022-01-04'
 listed: '2023-11-08'
 foreign_registration: KY 開曼群島
-as_of: '2026-10-18'
+as_of: '2026-10-28'
 confidence: ai_cross_checked
 has_research: true
 evidence:
-  tw.6933#e2:
-    locator: 第62頁，伍、營運概況／一、業務內容／營業比重，2025年度
-    published_date: '2026-08-06'
-    publisher: 艾瑪斯科技控股股份有限公司；FinancialFilings年報全文鏡像
-    quote_check: unreachable
-    title: 艾瑪斯科技控股股份有限公司2025年度年報修訂本
-    url: https://financialfilings.com/filings/amax-6933/annual-report/2026/49993605/
-  tw.6933#e3:
-    locator: 營業概況首段
+  tw.6933#e01:
+    locator: 印刷頁62，伍、營運概況／營業比重，2025年度；單位為新台幣仟元及%
+    published_date: null
+    publisher: 艾瑪斯科技控股股份有限公司
+    quote_check: found
+    title: 2025年度年報（原始公司文件鏡像）
+    url: https://cdn.financialreports.eu/financialreports/media/filings/52667/2026/RNS/52667_rns_2026-08-06_cac78fb3-c7b9-492c-8647-f732d8f2da59.pdf
+  tw.6933#e02:
+    locator: 關於AMAX
+    published_date: null
+    publisher: 艾瑪斯科技控股股份有限公司
+    quote_check: found
+    title: 關於艾瑪斯
+    url: https://www.amax.tw/about.php
+  tw.6933#e03:
+    locator: 營業概況第一段，上游廠商
     published_date: null
     publisher: 艾瑪斯科技控股股份有限公司
     quote_check: found
     title: 營業概況
     url: https://www.amax.tw/overview.php
-  tw.6933#e4:
-    locator: 關於AMAX首段
+  tw.6933#e04:
+    locator: NVIDIA Elite Partner
+    published_date: null
+    publisher: AMAX Engineering Corporation
+    quote_check: found
+    title: NVIDIA DGX Platform
+    url: https://www.amax.com/nvidia-dgx-platform-solutions/
+  tw.6933#e05:
+    locator: 2020年
     published_date: null
     publisher: 艾瑪斯科技控股股份有限公司
     quote_check: found
-    title: 關於AMAX
-    url: https://www.amax.tw/about.php
-  tw.6933#e5:
-    locator: 第19頁，產品—超高效液冷GPU數據中心
-    published_date: '2025-11-05'
+    title: 公司沿革
+    url: https://www.amax.tw/milestone.php
+  tw.6933#e06:
+    locator: 2021年
+    published_date: null
     publisher: 艾瑪斯科技控股股份有限公司
     quote_check: found
-    title: AMAX-KY法人說明會簡報
-    url: https://mopsov.twse.com.tw/nas/STR/693320251105M001.pdf
-  tw.6933#e6:
-    locator: 第15頁，AMAX產品組合
-    published_date: '2025-11-05'
-    publisher: 艾瑪斯科技控股股份有限公司
+    title: 公司沿革
+    url: https://www.amax.tw/milestone.php
+  tw.6933#e07:
+    locator: 張如嫻報導，首段及ASML液冷專案段落
+    published_date: '2023-10-20'
+    publisher: 今周刊
     quote_check: found
-    title: AMAX-KY法人說明會簡報
-    url: https://mopsov.twse.com.tw/nas/STR/693320251105M001.pdf
-  tw.6933#e7:
-    locator: 第15頁，AMAX產品組合
-    published_date: '2025-11-05'
-    publisher: 艾瑪斯科技控股股份有限公司
-    quote_check: found
-    title: AMAX-KY法人說明會簡報
-    url: https://mopsov.twse.com.tw/nas/STR/693320251105M001.pdf
-  tw.6933#e8:
-    locator: 第15頁，液冷機櫃產品說明
-    published_date: '2025-11-05'
-    publisher: 艾瑪斯科技控股股份有限公司
-    quote_check: found
-    title: AMAX-KY法人說明會簡報
-    url: https://mopsov.twse.com.tw/nas/STR/693320251105M001.pdf
-  tw.6933#e9:
-    locator: 第89頁，其他風險及因應措施
-    published_date: '2026-08-06'
-    publisher: 艾瑪斯科技控股股份有限公司；FinancialFilings年報全文鏡像
+    title: 輝達、艾司摩爾都它客戶！台灣夫妻矽谷創業，專解伺服器疑難雜症，連鴻海也搶投資，怎麼辦到的？
+    url: https://www.businesstoday.com.tw/article/category/183015/post/202310200034/
+  tw.6933#e08:
+    locator: 王郁倫報導，倪小菁談雙方技術交流
+    published_date: '2025-06-05'
+    publisher: 經濟日報
     quote_check: unreachable
-    title: 艾瑪斯科技控股股份有限公司2025年度年報修訂本
-    url: https://financialfilings.com/filings/amax-6933/annual-report/2026/49993605/
+    title: 鴻海轉投資 AMAX 將私募 董座：找2優勢互補策略伙伴
+    url: https://money.udn.com/money/story/5612/8787811
+  tw.6933#e09:
+    locator: 集團組織圖，美國子公司
+    published_date: null
+    publisher: 艾瑪斯科技控股股份有限公司
+    quote_check: found
+    title: 公司組織
+    url: https://www.amax.tw/organizational_team.php
+  tw.6933#e10:
+    locator: 集團組織圖，台灣子公司
+    published_date: null
+    publisher: 艾瑪斯科技控股股份有限公司
+    quote_check: found
+    title: 公司組織
+    url: https://www.amax.tw/organizational_team.php
+  tw.6933#e11:
+    locator: 集團組織圖，愛爾蘭子公司
+    published_date: null
+    publisher: 艾瑪斯科技控股股份有限公司
+    quote_check: found
+    title: 公司組織
+    url: https://www.amax.tw/organizational_team.php
+  tw.6933#e12:
+    locator: HostMax in Operations，March 31, 2026／Ribbon-Cutting Ceremony
+    published_date: null
+    publisher: AMAX Engineering Corporation
+    quote_check: found
+    title: HostMax
+    url: https://www.amax.com/hostmax/
+  tw.6933#e13:
+    locator: Scalable without Long-Term Lock-in
+    published_date: null
+    publisher: AMAX Engineering Corporation
+    quote_check: found
+    title: HostMax
+    url: https://www.amax.com/hostmax/
+  tw.6933#e14:
+    locator: 集團組織圖，中國子公司
+    published_date: null
+    publisher: 艾瑪斯科技控股股份有限公司
+    quote_check: found
+    title: 公司組織
+    url: https://www.amax.tw/organizational_team.php

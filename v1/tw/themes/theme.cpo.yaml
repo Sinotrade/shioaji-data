@@ -108,22 +108,13 @@ members:
   - tw.3019#e18
   - tw.3019#e19
   confidence: ai_cross_checked
-- id: tw.3048
-  stage: components
-  tier: upstream
-  detail: 共同封裝光學相關元件方案
-  as_of: '2026-05-25'
-  evidence:
-  - tw.3048#e12
-  - tw.3048#e13
-  confidence: ai_cross_checked
 - id: tw.3055
   stage: packaging
   tier: midstream
-  detail: CPO相關TGV封裝檢測設備
-  as_of: '2026-10-15'
+  detail: CPO製程光學檢測設備
+  as_of: '2026-07-08'
   evidence:
-  - tw.3055#e11
+  - tw.3055#e20
   confidence: ai_cross_checked
 - id: tw.3081
   stage: components
@@ -252,6 +243,14 @@ members:
   evidence:
   - tw.3455#e14
   confidence: ai_cross_checked
+- id: tw.3498
+  stage: packaging
+  tier: midstream
+  detail: CPO自動組裝製程設備
+  as_of: '2025-12-31'
+  evidence:
+  - tw.3498#e10
+  confidence: ai_cross_checked
 - id: tw.3504
   stage: components
   tier: upstream
@@ -279,10 +278,10 @@ members:
 - id: tw.3587
   stage: packaging
   tier: midstream
-  detail: CPO封裝效能與失效分析
+  detail: CPO封裝效能與良率瓶頸分析
   as_of: '2026-08-28'
   evidence:
-  - tw.3587#e8
+  - tw.3587#e7
   confidence: ai_cross_checked
 - id: tw.3661
   stage: packaging
@@ -326,13 +325,21 @@ members:
   evidence:
   - tw.3711#e04
   confidence: ai_cross_checked
+- id: tw.3714
+  stage: components
+  tier: upstream
+  detail: CPO模組Micro LED發射光源
+  as_of: '2026-08-31'
+  evidence:
+  - tw.3714#e8
+  confidence: ai_cross_checked
 - id: tw.4768
   stage: components
   tier: upstream
-  detail: CPO光纖陣列對準玻璃平台
-  as_of: '2026-10-15'
+  detail: CPO光纖對位玻璃零組件
+  as_of: '2026-10-27'
   evidence:
-  - tw.4768#e8
+  - tw.4768#e7
   confidence: ai_cross_checked
 - id: tw.4908
   stage: components
@@ -356,8 +363,15 @@ members:
   detail: CPO外部雷射光源
   as_of: 2026-05
   evidence:
+  - tw.4977#e3
+  confidence: ai_cross_checked
+- id: tw.4977
+  stage: packaging
+  tier: midstream
+  detail: CPO雷射光學封裝
+  as_of: '2024-12-04'
+  evidence:
   - tw.4977#e5
-  - tw.4977#e6
   confidence: ai_cross_checked
 - id: tw.4979
   stage: components
@@ -395,10 +409,10 @@ members:
 - id: tw.6209
   stage: components
   tier: upstream
-  detail: CPO矽微透鏡
-  as_of: '2026-10-15'
+  detail: CPO矽微透鏡元件
+  as_of: '2026-10-28'
   evidence:
-  - tw.6209#e10
+  - tw.6209#e8
   confidence: ai_cross_checked
 - id: tw.6223
   stage: packaging
@@ -573,4 +587,4 @@ members:
   - tw.7856#e09
   - tw.7856#e10
   confidence: ai_cross_checked
-as_of: '2026-10-25'
+as_of: '2026-10-28'

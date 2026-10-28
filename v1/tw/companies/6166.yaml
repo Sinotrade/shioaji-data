@@ -57,16 +57,16 @@ segments:
   name: 其他
   period: 2026-Q1
   revenue_share_pct: 3
-main_theme: theme.ai_server
+main_theme: theme.robotics
 themes:
-- also: []
-  stage: assembly
-  theme: theme.ai_server
-  tier: downstream
 - also: []
   stage: control
   theme: theme.robotics
   tier: midstream
+- also: []
+  stage: assembly
+  theme: theme.ai_server
+  tier: downstream
 - also: []
   stage: equipment
   theme: theme.cowos

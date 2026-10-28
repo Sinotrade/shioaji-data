@@ -53,8 +53,12 @@ segments:
   name: 其他
   period: '2024'
   revenue_share_pct: 2.16
-main_theme: theme.ai_server
+main_theme: theme.robotics
 themes:
+- also: []
+  stage: components
+  theme: theme.robotics
+  tier: upstream
 - also: []
   stage: components
   theme: theme.ai_server
@@ -63,10 +67,6 @@ themes:
   stage: packaging
   theme: theme.mini_led
   tier: midstream
-- also: []
-  stage: components
-  theme: theme.robotics
-  tier: upstream
 - also: []
   stage: components
   theme: theme.leo_satellite

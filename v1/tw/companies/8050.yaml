@@ -65,8 +65,12 @@ segments:
   name: AIoT
   period: 2026年上半年
   revenue_share_pct: 0.02
-main_theme: theme.ai_server
+main_theme: theme.robotics
 themes:
+- also: []
+  stage: control
+  theme: theme.robotics
+  tier: midstream
 - also: []
   stage: assembly
   theme: theme.ai_server
@@ -74,10 +78,6 @@ themes:
 - also: []
   stage: equipment
   theme: theme.5g
-  tier: midstream
-- also: []
-  stage: control
-  theme: theme.robotics
   tier: midstream
 relations:
   subsidiaries:

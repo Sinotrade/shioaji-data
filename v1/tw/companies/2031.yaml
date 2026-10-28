@@ -29,8 +29,8 @@ chain_stage:
   stage_name: 軋延與鋼材
   tier: midstream
 primary_chain_position: midstream
-summary_short: 以鋼材銷售、裁剪加工及鋼品物流為主，另提供鋼構加工服務。
-summary_long: 新光鋼鐵以鋼材銷售、裁剪加工與鋼品物流為主要業務，提供鋼板、熱軋及鍍鋅鋼板、不鏽鋼與特殊鋼板等產品，並承作廠房、大樓的BOX與BH鋼構加工。2025年年報揭露，鋼板占主要產品銷售45.7%，熱軋及鍍鋅鋼板占30.3%，不鏽鋼占9.4%，特殊鋼板占7.2%，另有型鋼及加工等收入。集團旗下前端離岸風電設備製造從事能源設備製造，美生金屬工業從事汽車鋼板裁剪，新慶國際經營租賃倉儲，新威光電則從事發電業務。
+summary_short: 以鋼板、鋼捲等鋼材銷售、裁剪供料及鋼構加工賺取收入。
+summary_long: 新光鋼主要從事鋼材銷售、裁剪加工與供料服務，也提供BOX、BH鋼構及結構鋼管製造與工程承攬。2025年合併產品收入以鋼板45.7%最大，熱軋及鍍鋅鋼板30.3%次之，其餘為不鏽鋼9.4%、特殊鋼板7.2%、型鋼1.6%及加工與其他5.8%。中鋼與中龍是具名鋼材供應來源，世紀鋼官網則將新光鋼列為鋼板供應商。子公司包括前端離岸風電設備製造、新源投資及新澄物流。2025年增購新威光電41%股權後，持股達90%並取得控制力。2026年公告調整彰濱擴廠土地承購價款，該案原於2022年決議。
 segments:
 - evidence_ids:
   - e2
@@ -38,6 +38,12 @@ segments:
   name: 鋼板
   period: '2025'
   revenue_share_pct: 45.7
+- evidence_ids:
+  - e2
+  id: seg_special
+  name: 特殊鋼板
+  period: '2025'
+  revenue_share_pct: 7.2
 - evidence_ids:
   - e2
   id: seg_hot_galvanized
@@ -52,12 +58,6 @@ segments:
   revenue_share_pct: 9.4
 - evidence_ids:
   - e2
-  id: seg_special
-  name: 特殊鋼板
-  period: '2025'
-  revenue_share_pct: 7.2
-- evidence_ids:
-  - e2
   id: seg_sections
   name: 型鋼
   period: '2025'
@@ -70,15 +70,16 @@ segments:
   revenue_share_pct: 5.8
 relations:
   customers:
-  - as_of: 2025-12
+  - as_of: '2026-10-27'
     confidence: ai_cross_checked
     counterparty_shares:
     - as_of: 2025-12
       basis: purchases
       of: tw.9958
       pct: 19.05
-    detail: 鋼板
+    detail: 向新光鋼採購鋼板
     details:
+    - 向新光鋼採購鋼板
     - 鋼板
     edge: e36d5232b6095
     evidence_level: primary
@@ -87,17 +88,31 @@ relations:
     ranking_basis: unranked
     share_basis: null
     share_pct: null
-    weight: 1
+    weight: 2
   subsidiaries:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 發電業務子公司
+    detail: 直接持股100%的租賃及倉儲子公司
     details:
-    - 發電業務子公司
-    edge: e41b1a1220674
+    - 直接持股100%的租賃及倉儲子公司
+    edge: e713ac9aca63c
     evidence_level: primary
-    id: org.新威光電股份有限公司
+    id: org.hkssteel-xincheng-logistics
+    name: 新澄物流開發股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 直接持股90%的發電子公司
+    details:
+    - 直接持股90%的發電子公司
+    edge: e6fd9c6185977
+    evidence_level: primary
+    id: org.hkssteel-xinwei-solar
     name: 新威光電股份有限公司
     ranking_basis: unranked
     share_basis: null
@@ -106,37 +121,23 @@ relations:
   - as_of: '2025-12-31'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 租賃及倉儲子公司
+    detail: 直接持股100%的投資子公司
     details:
-    - 租賃及倉儲子公司
-    edge: e1cdfd01044d5
+    - 直接持股100%的投資子公司
+    edge: e1459cea70aaf
     evidence_level: primary
-    id: org.新慶國際股份有限公司
-    name: 新慶國際股份有限公司
+    id: org.hkssteel-xinyuan-investment
+    name: 新源投資股份有限公司
     ranking_basis: unranked
     share_basis: null
     share_pct: null
     weight: 1
-  - as_of: '2025-12-31'
+  - as_of: '2026-10-27'
     confidence: ai_cross_checked
     counterparty_shares: []
-    detail: 汽車鋼板裁剪加工子公司
+    detail: 前端風電子公司
     details:
-    - 汽車鋼板裁剪加工子公司
-    edge: ed9b1674e7816
-    evidence_level: primary
-    id: org.美生金屬工業股份有限公司
-    name: 美生金屬工業股份有限公司
-    ranking_basis: unranked
-    share_basis: null
-    share_pct: null
-    weight: 1
-  - as_of: '2025-12-31'
-    confidence: ai_cross_checked
-    counterparty_shares: []
-    detail: 金屬結構、建築組件及能源設備製造子公司
-    details:
-    - 金屬結構、建築組件及能源設備製造子公司
+    - 前端風電子公司
     edge: efd98c027a056
     evidence_level: primary
     id: tw.7702
@@ -146,6 +147,34 @@ relations:
     share_pct: null
     weight: 1
   suppliers:
+  - as_of: '2025-12-31'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 供應熱軋鋼板
+    details:
+    - 供應熱軋鋼板
+    edge: ee58808986468
+    evidence_level: primary
+    id: org.dragon-steel
+    name: 中龍鋼鐵股份有限公司
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - as_of: '2026-10-27'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 供應熱浸鍍鋅鋼材
+    details:
+    - 供應熱浸鍍鋅鋼材
+    edge: e94f9da925bf4
+    evidence_level: primary
+    id: tw.2002
+    name: 中鋼
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   - as_of: '2026-10-26'
     confidence: ai_cross_checked
     counterparty_shares: []
@@ -160,11 +189,122 @@ relations:
     share_basis: null
     share_pct: null
     weight: 1
+  transactions:
+  - amount: 新台幣90,938仟元
+    as_of: '2025-10-16'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 增購41%股權並取得控制力
+    details:
+    - 增購41%股權並取得控制力
+    edge: e6fec9e719d61
+    event_date: '2025-10-16'
+    events:
+    - amount: 新台幣90,938仟元
+      detail: 增購41%股權並取得控制力
+      event_date: '2025-10-16'
+    evidence_level: primary
+    id: org.hkssteel-xinwei-solar
+    name: 新威光電股份有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣545,912仟元
+    as_of: 2024-12
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 嘉義擴廠土地於2024年12月完成點交登記
+    details:
+    - 嘉義擴廠土地於2024年12月完成點交登記
+    edge: e4d33f6a1c9c3
+    event_date: null
+    events:
+    - amount: 新台幣545,912仟元
+      detail: 嘉義擴廠土地於2024年12月完成點交登記
+      event_date: null
+    evidence_level: primary
+    id: org.嘉義縣政府
+    name: 嘉義縣政府
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣10,000,000元
+    as_of: '2024-08-06'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司新源投資取得新源鑫股權
+    details:
+    - 子公司新源投資取得新源鑫股權
+    edge: e5ac04a8e49e3
+    event_date: '2024-08-06'
+    events:
+    - amount: 新台幣10,000,000元
+      detail: 子公司新源投資取得新源鑫股權
+      event_date: '2024-08-06'
+    evidence_level: primary
+    id: org.新源鑫工業有限公司
+    name: 新源鑫工業有限公司
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣683,157仟元
+    as_of: 2024-09
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 子公司前端風電取得彰濱生產基地土地
+    details:
+    - 子公司前端風電取得彰濱生產基地土地
+    edge: ef2f22c3b7726
+    event_date: null
+    events:
+    - amount: 新台幣683,157仟元
+      detail: 子公司前端風電取得彰濱生產基地土地
+      event_date: null
+    evidence_level: primary
+    id: org.經濟部工業局
+    name: 經濟部工業局
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+  - amount: 新台幣485,597,399元
+    as_of: '2026-04-07'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 彰濱擴廠土地承購案調整價款
+    details:
+    - 彰濱擴廠土地承購案調整價款
+    edge: e742181330e0c
+    event_date: '2026-04-07'
+    events:
+    - amount: 新台幣485,597,399元
+      detail: 彰濱擴廠土地承購案調整價款
+      event_date: '2026-04-07'
+    evidence_level: primary
+    id: org.經濟部產業發展署
+    name: 經濟部產業發展署
+    ranking_basis: unranked
+    role: buyer
+    share_basis: null
+    share_pct: null
+    weight: 1
+unresolved_mentions:
+- 候選線索中的「營造」為產業泛稱，無法對應單一客戶。
+- 年報大額進貨表使用供應商A、供應商B代稱，未能與中鋼或中龍逐一對應。
+- 世紀鋼採購鋼板的具體專案及是否用於離岸風電，該供應商頁面未揭露。
+- 中鋼普通股處分公告未具名交易相對人。
 website: www.hkssteel.com.tw
 tax_id: '35836625'
 incorporated: '1967-01-01'
 listed: '2000-09-11'
-as_of: '2026-10-18'
+as_of: '2026-10-28'
 confidence: ai_cross_checked
 has_research: true
 evidence:
@@ -174,60 +314,151 @@ evidence:
     publisher: 新光鋼鐵股份有限公司
     quote_check: found
     title: 新光鋼鐵股份有限公司官網
-    url: https://www.hkssteel.com.tw/
+    url: https://www.hkssteel.com.tw/index.html
+  tw.2031#e10:
+    locator: 第43頁／附註十二子公司／新澄物流開發列
+    published_date: '2026-03-10'
+    publisher: 新光鋼鐵股份有限公司
+    quote_check: found
+    title: 民國114及113年度合併財務報告
+    url: https://www.hkssteel.com.tw/download/fin/2025/fin_report_11404c.pdf
+  tw.2031#e11:
+    locator: 第43頁／附註十二子公司／新威光電列；欄序為2025年底、2024年底
+    published_date: '2026-03-10'
+    publisher: 新光鋼鐵股份有限公司
+    quote_check: found
+    title: 民國114及113年度合併財務報告
+    url: https://www.hkssteel.com.tw/download/fin/2025/fin_report_11404c.pdf
+  tw.2031#e12:
+    locator: 第66頁／附註二七企業合併／新威光電收購表；移轉對價單位為新台幣仟元
+    published_date: '2026-03-10'
+    publisher: 新光鋼鐵股份有限公司
+    quote_check: found
+    title: 民國114及113年度合併財務報告
+    url: https://www.hkssteel.com.tw/download/fin/2025/fin_report_11404c.pdf
+  tw.2031#e13:
+    locator: 公告標題及第23項用途
+    published_date: '2026-04-07'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ轉載
+    quote_check: found
+    title: 新光鋼承購彰濱土地案交易金額變動公告
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=1f387e4d-d067-4727-8cf4-bbb40df68559
+  tw.2031#e14:
+    locator: 第5項交易總金額；第23項明載擴廠需求
+    published_date: '2026-04-07'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ轉載
+    quote_check: found
+    title: 新光鋼承購彰濱土地案交易金額變動公告
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=1f387e4d-d067-4727-8cf4-bbb40df68559
+  tw.2031#e15:
+    locator: 第89頁／附表四／新光鋼向嘉義縣政府購地列；單位新台幣仟元
+    published_date: '2025-03-11'
+    publisher: 新光鋼鐵股份有限公司
+    quote_check: found
+    title: 民國113及112年度合併財務報告
+    url: https://www.hkssteel.com.tw/download/fin/2024/fin_report_11304c.pdf
+  tw.2031#e16:
+    locator: 第89頁／附表四／新光鋼購地列的價款支付情形
+    published_date: '2025-03-11'
+    publisher: 新光鋼鐵股份有限公司
+    quote_check: found
+    title: 民國113及112年度合併財務報告
+    url: https://www.hkssteel.com.tw/download/fin/2024/fin_report_11304c.pdf
+  tw.2031#e17:
+    locator: 第89頁／附表四／前端離岸風電向經濟部工業局購地列；單位新台幣仟元
+    published_date: '2025-03-11'
+    publisher: 新光鋼鐵股份有限公司
+    quote_check: found
+    title: 民國113及112年度合併財務報告
+    url: https://www.hkssteel.com.tw/download/fin/2024/fin_report_11304c.pdf
+  tw.2031#e18:
+    locator: 第89頁／附表四／註3
+    published_date: '2025-03-11'
+    publisher: 新光鋼鐵股份有限公司
+    quote_check: found
+    title: 民國113及112年度合併財務報告
+    url: https://www.hkssteel.com.tw/download/fin/2024/fin_report_11304c.pdf
+  tw.2031#e19:
+    locator: 公告標題及第1、2項
+    published_date: '2024-08-07'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ轉載
+    quote_check: found
+    title: 新源投資取得新源鑫工業出資額及普通股公告
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=eeea8511-14df-488a-9724-855296c6b30e
   tw.2031#e2:
-    locator: 肆、營運概況／一、業務內容／（二）營業比重；年報刊印日2026-03-31
-    published_date: '2026-05-06'
-    publisher: 新光鋼鐵股份有限公司；FinancialFilings轉載
+    locator: 肆、營運概況／一、業務內容／營業比重
+    published_date: '2026-03-31'
+    publisher: 新光鋼鐵股份有限公司／FinancialFilings
     quote_check: unreachable
-    title: 新光鋼鐵股份有限公司114年年報（公開全文轉載）
+    title: 新光鋼2025年年報原文鏡像
     url: https://financialfilings.com/filings/hkssteel-2031/annual-report/2026/46965686/
+  tw.2031#e20:
+    locator: 第12項累積持有情形；第18項董事會日期為2024-08-06
+    published_date: '2024-08-07'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ轉載
+    quote_check: found
+    title: 新源投資取得新源鑫工業出資額及普通股公告
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=eeea8511-14df-488a-9724-855296c6b30e
+  tw.2031#e21:
+    locator: 第1、2項；第4項核決日為2026-08-10
+    published_date: '2026-08-11'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ轉載
+    quote_check: found
+    title: 新光鋼處分中鋼普通股公告
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=daa4a2f8-91b1-485f-b1c3-a4c08fab01b8
+  tw.2031#e22:
+    locator: 第5項／兩類金融資產處分明細
+    published_date: '2026-08-11'
+    publisher: 公開資訊觀測站重大訊息／MoneyDJ轉載
+    quote_check: found
+    title: 新光鋼處分中鋼普通股公告
+    url: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=daa4a2f8-91b1-485f-b1c3-a4c08fab01b8
   tw.2031#e3:
-    locator: 經營理念
+    locator: 產品用途或功能／服務內容
     published_date: null
     publisher: 新光鋼鐵股份有限公司
     quote_check: found
-    title: 新光鋼鐵股份有限公司－經營理念
-    url: https://www.hkssteel.com.tw/abo_bus.html
+    title: 中厚板產品與服務
+    url: https://www.hkssteel.com.tw/ser_page02.html
   tw.2031#e4:
-    locator: 廠房、大樓鋼結構加工服務／第一項
+    locator: 服務介紹第一項
     published_date: null
     publisher: 新光鋼鐵股份有限公司
     quote_check: found
-    title: 新光鋼鐵股份有限公司－廠房、大樓鋼結構加工服務
+    title: 廠房、大樓鋼結構加工服務
     url: https://www.hkssteel.com.tw/ser_page05.html
   tw.2031#e5:
-    locator: 第43頁，附註十二「子公司」，投資公司為新光鋼鐵股份有限公司之對應列
-    published_date: '2026-03-10'
-    publisher: 新光鋼鐵股份有限公司
-    quote_check: found
-    title: 新光鋼鐵股份有限公司及子公司114及113年度合併財務報告
-    url: https://www.hkssteel.com.tw/download/fin/2025/fin_report_11404c.pdf
-  tw.2031#e6:
-    locator: 第43頁，附註十二「子公司」，投資公司為新光鋼鐵股份有限公司之對應列
-    published_date: '2026-03-10'
-    publisher: 新光鋼鐵股份有限公司
-    quote_check: found
-    title: 新光鋼鐵股份有限公司及子公司114及113年度合併財務報告
-    url: https://www.hkssteel.com.tw/download/fin/2025/fin_report_11404c.pdf
-  tw.2031#e7:
-    locator: 第43頁，附註十二「子公司」，投資公司為新光鋼鐵股份有限公司之對應列
-    published_date: '2026-03-10'
-    publisher: 新光鋼鐵股份有限公司
-    quote_check: found
-    title: 新光鋼鐵股份有限公司及子公司114及113年度合併財務報告
-    url: https://www.hkssteel.com.tw/download/fin/2025/fin_report_11404c.pdf
-  tw.2031#e8:
-    locator: 第43頁，附註十二「子公司」，投資公司為新光鋼鐵股份有限公司之對應列
-    published_date: '2026-03-10'
-    publisher: 新光鋼鐵股份有限公司
-    quote_check: found
-    title: 新光鋼鐵股份有限公司及子公司114及113年度合併財務報告
-    url: https://www.hkssteel.com.tw/download/fin/2025/fin_report_11404c.pdf
-  tw.2031#e9:
-    locator: 112.10歷程
+    locator: 風管說帖／三大益處第一項
     published_date: null
     publisher: 新光鋼鐵股份有限公司
     quote_check: found
-    title: 新光鋼鐵股份有限公司－公司歷程
+    title: 冷軋、鍍鋅鋼捲系列
+    url: https://www.hkssteel.com.tw/ser_page03.html
+  tw.2031#e6:
+    locator: 主要原料供應狀況／熱軋鋼板／主要來源欄
+    published_date: '2026-03-31'
+    publisher: 新光鋼鐵股份有限公司／FinancialFilings
+    quote_check: unreachable
+    title: 新光鋼2025年年報原文鏡像
+    url: https://financialfilings.com/filings/hkssteel-2031/annual-report/2026/46965686/
+  tw.2031#e7:
+    locator: 2.重要原物料及相關供應商
+    published_date: null
+    publisher: 世紀鋼鐵結構股份有限公司
+    quote_check: found
+    title: 世紀鋼構生產流程
+    url: https://www.century.com.tw/tw/results/14/
+  tw.2031#e8:
+    locator: '112.10'
+    published_date: null
+    publisher: 新光鋼鐵股份有限公司
+    quote_check: found
+    title: 新光鋼公司沿革
     url: https://www.hkssteel.com.tw/abo_his.html
+  tw.2031#e9:
+    locator: 第43頁／附註十二子公司／新光鋼直接投資列
+    published_date: '2026-03-10'
+    publisher: 新光鋼鐵股份有限公司
+    quote_check: found
+    title: 民國114及113年度合併財務報告
+    url: https://www.hkssteel.com.tw/download/fin/2025/fin_report_11404c.pdf
