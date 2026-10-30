@@ -47,13 +47,12 @@ segments:
   revenue_share_pct: 4.48
 relations:
   parents:
-  - as_of: '2026-06-30'
+  - as_of: '2026-04-27'
     confidence: ai_cross_checked
     counterparty_shares: []
     detail: 持股51%的手工具子公司
     details:
     - 持股51%的手工具子公司
-    - 持股51%的母公司
     edge: ee170a8c67441
     evidence_level: primary
     id: tw.6670
@@ -61,7 +60,21 @@ relations:
     ranking_basis: unranked
     share_basis: null
     share_pct: null
-    weight: 2
+    weight: 1
+  - as_of: '2026-06-30'
+    confidence: ai_cross_checked
+    counterparty_shares: []
+    detail: 持股51%的母公司
+    details:
+    - 持股51%的母公司
+    edge: e482799b63abf
+    evidence_level: primary
+    id: tw.6825
+    name: 和暢科技
+    ranking_basis: unranked
+    share_basis: null
+    share_pct: null
+    weight: 1
   subsidiaries:
   - as_of: '2026-06-30'
     confidence: ai_cross_checked
